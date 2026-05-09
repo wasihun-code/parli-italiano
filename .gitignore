@@ -1,0 +1,49 @@
+# node_modules
+node_modules/
+
+# Production
+dist/
+build/
+.vite/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Models and Large Files
+*.gguf
+*.bin
+*.pt
+*.pth
+pretrained_models/
+llama/
+Spark-TTS/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test
+coverage/
+playwright-report/
+test-results/
+
+# Gradle related (if any legacy leftovers)
+.gradle/
+.gradle-dist/
+.gradle-tmp/
+
+# Antonio Specific
+test_antonio.sh
+Modelfile_*

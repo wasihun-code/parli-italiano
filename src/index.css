@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+
+:root {
+  --primary: #4E342E;
+  --secondary: #8D6E63;
+  --accent: #D4A373;
+  --bg: #FAF9F6;
+  --surface: #FFFFFF;
+  --text: #2D2424;
+  --text-light: #5D5454;
+  --border: #E0D7D0;
+  --error: #9E2A2B;
+  --success: #386641;
+  --warning: #E39B14;
+  --shadow: 0 4px 12px rgba(78, 52, 46, 0.08);
+  --shadow-hover: 0 8px 24px rgba(78, 52, 46, 0.12);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --font-sans: 'Nunito', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface);
+  box-shadow: 0 0 40px rgba(0,0,0,0.03);
+  position: relative;
+}
+
+h1, h2, h3, h4 {
+  color: var(--primary);
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; letter-spacing: -0.02em; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.25rem; }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Scrollbar - hidden as requested */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.bounce {
+  animation: bounce 0.3s ease-in-out;
+}
+
+.shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+/* Mobile-first adjustments */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  #root {
+    box-shadow: none;
+  }
+  h1 { font-size: 2rem; }
+}
