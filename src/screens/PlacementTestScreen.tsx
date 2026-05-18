@@ -5,14 +5,13 @@ import { PrimaryButton } from '../components/PrimaryButton';
 import { Screen } from '../components/Screen';
 import { Keyboard } from '../components/Keyboard';
 import { Tts } from '../lib/tts';
-import { foundationLessons } from '@shared/data/foundations';
+import { foundationLessons, placementTest } from '@shared/data/foundations';
 import { useProgressStore } from '@shared/store/progressStore';
 import { useSrsStore } from '@shared/store/srsStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { normalizeString, levenshteinDistance } from '@shared/utils/string';
 import {
-  buildShuffledOptions,
   feedbackCardStyle,
   masterSrsItems,
   progressBar,
@@ -47,31 +46,11 @@ export const PlacementTestScreen: React.FC = () => {
   const [finished, setFinished] = useState(false);
 
   const testExercises = useMemo<PlacementExercise[]>(() => {
-    const allTerms = foundationLessons.flatMap(lesson => lesson.terms);
-    const allExercises = foundationLessons.flatMap(lesson =>
-      lesson.exercises
-        .flatMap(exercise => {
-          if (exercise.kind === 'listening') {
-            return [];
-          }
-
-          const kind: PlacementExercise['kind'] =
-            exercise.kind === 'flashcard' ? 'multipleChoice' : exercise.kind;
-          return [{
-            ...exercise,
-            kind,
-            lessonId: lesson.id,
-            options:
-              exercise.kind === 'fillBlank'
-                ? undefined
-                : buildShuffledOptions(
-                    exercise.answer,
-                    allTerms.map(term => term.italian),
-                  ),
-          }];
-        }),
-    );
-    return shuffle(allExercises).slice(0, 20);
+    return shuffle(placementTest).map(ex => ({
+      ...ex,
+      kind: (ex.kind === 'flashcard' ? 'multipleChoice' : ex.kind) as PlacementExercise['kind'],
+      lessonId: ex.lessonId ?? 0
+    }));
   }, []);
 
   const currentExercise = testExercises[exerciseIndex];

@@ -2,13 +2,14 @@ import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
-import { useAuthStore, useCurrentUser } from '@shared/store/authStore';
+import { useCurrentUser } from '@shared/store/authStore';
+import { useProfileStore } from '@shared/store/profileStore';
 
 export const Header: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const currentUser = useCurrentUser();
-  const logout = useAuthStore(state => state.logout);
+  const avatar = useProfileStore(state => state.avatar);
 
   const showBack = location.pathname !== '/' && location.pathname !== '/onboarding' && location.pathname !== '/auth';
 
@@ -74,33 +75,32 @@ export const Header: React.FC = () => {
       </div>
       {currentUser ? (
         <button
-          onClick={() => {
-            logout();
-            navigate('/auth');
-          }}
-          title={`Log out ${currentUser.name}`}
+          onClick={() => navigate('/profile')}
+          title="Profile"
           style={{
             border: `2px solid ${colors.border}`,
-            borderRadius: '12px',
+            borderRadius: '20px',
             backgroundColor: colors.surface,
-            color: colors.textSecondary,
-            padding: '8px 12px',
-            fontSize: 14,
-            fontWeight: 800,
+            width: 40,
+            height: 40,
+            fontSize: 20,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
             cursor: 'pointer',
             transition: 'all 0.2s',
             boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
           }}
           onMouseEnter={e => {
             e.currentTarget.style.borderColor = colors.accent;
-            e.currentTarget.style.color = colors.accent;
+            e.currentTarget.style.transform = 'scale(1.05)';
           }}
           onMouseLeave={e => {
             e.currentTarget.style.borderColor = colors.border;
-            e.currentTarget.style.color = colors.textSecondary;
+            e.currentTarget.style.transform = 'scale(1)';
           }}
         >
-          Logout
+          {avatar}
         </button>
       ) : (
         <div style={{ width: 40 }} />

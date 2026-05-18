@@ -1,0 +1,74 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Screen } from '../components/Screen';
+import { colors } from '@shared/theme/colors';
+import { spacing } from '@shared/theme/spacing';
+import { grammarLessons } from '@shared/data/grammarLessons';
+import { useGrammarStore } from '@shared/store/grammarStore';
+
+export const GrammarListScreen: React.FC = () => {
+  const navigate = useNavigate();
+  const completedLessons = useGrammarStore(state => state.completedLessons);
+
+  const completedCount = Object.keys(completedLessons).length;
+  const progressPercent = Math.round((completedCount / grammarLessons.length) * 100) || 0;
+
+  return (
+    <Screen style={{ backgroundColor: colors.surface }}>
+      <header style={{ marginBottom: spacing.lg }}>
+        <h1 style={{ color: colors.primary, fontSize: 32, margin: 0, fontWeight: 900 }}>Grammar 📚</h1>
+        <p style={{ color: colors.textSecondary, fontSize: 18, marginTop: spacing.xxs }}>
+          Master the rules of Italian.
+        </p>
+      </header>
+
+      <div className="card" style={{ padding: spacing.lg, marginBottom: spacing.xl }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: spacing.sm }}>
+          <span style={{ fontWeight: 'bold', color: colors.primary }}>Overall Progress</span>
+          <span style={{ fontWeight: 'bold', color: colors.accent }}>{progressPercent}%</span>
+        </div>
+        <div style={{ height: 12, backgroundColor: 'rgba(78, 52, 46, 0.1)', borderRadius: 6, overflow: 'hidden' }}>
+          <div style={{ height: '100%', width: `${progressPercent}%`, backgroundColor: colors.accent, borderRadius: 6 }} />
+        </div>
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.lg, paddingBottom: 100 }}>
+        {grammarLessons.map((lesson, index) => {
+          const isCompleted = completedLessons[lesson.id];
+          return (
+            <div 
+              key={lesson.id} 
+              className="card fade-in" 
+              onClick={() => navigate(`/grammar/${lesson.id}`)}
+              style={{ cursor: 'pointer', display: 'flex', gap: spacing.md, opacity: isCompleted ? 0.8 : 1 }}
+            >
+              <div style={{ 
+                width: 48, 
+                height: 48, 
+                borderRadius: 24, 
+                backgroundColor: isCompleted ? colors.success : 'rgba(78, 52, 46, 0.05)',
+                color: isCompleted ? colors.onPrimary : colors.primary,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: 20,
+                fontWeight: 'bold',
+                flexShrink: 0
+              }}>
+                {isCompleted ? '✓' : index + 1}
+              </div>
+              <div style={{ flex: 1 }}>
+                <h2 style={{ color: colors.primary, fontSize: 20, fontWeight: 900, margin: '0 0 4px' }}>
+                  {lesson.title}
+                </h2>
+                <p style={{ color: colors.textSecondary, fontSize: 14, margin: 0, lineHeight: '1.4' }}>
+                  {lesson.description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </Screen>
+  );
+};

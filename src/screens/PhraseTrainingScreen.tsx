@@ -27,6 +27,7 @@ import {
   feedbackCardStyle,
   progressBar,
   progressFill,
+  isLearnedByIdOrItalian,
 } from '@shared/utils/trainingUi';
 
 type FeedbackState = {
@@ -74,10 +75,15 @@ export const PhraseTrainingScreen: React.FC = () => {
   const recordAnswer = useSrsStore(state => state.recordAnswer);
   
   const activeItem = useMemo(() => {
+    const srsState = useSrsStore.getState();
     return getNextUnlearnedPhrase(
       phrases,
       currentIndex,
-      id => srsItems[id]?.learned ?? false,
+      id => {
+        const phrase = phrases.find(p => p.id === id);
+        if (!phrase) return false;
+        return isLearnedByIdOrItalian(phrase, srsState);
+      },
     );
   }, [phrases, currentIndex, srsItems]);
 

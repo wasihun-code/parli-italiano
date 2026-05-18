@@ -51,9 +51,9 @@ export const ScenarioSelectionScreen: React.FC = () => {
         </p>
       </header>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.lg }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.lg, paddingBottom: 100 }}>
         {scenarioCatalog.map(scenario => (
-          <div key={scenario.id} className="card fade-in" onClick={() => navigate(`/scenarios/${scenario.id}/vocabulary`)}>
+          <div key={scenario.id} className="card fade-in" onClick={() => navigate(`/scenarios/${scenario.id}/vocabulary`)} style={{ cursor: 'pointer' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
               <div style={{ flex: 1 }}>
                 <span style={{ 
@@ -114,17 +114,22 @@ export const ScenarioSelectionScreen: React.FC = () => {
 function getCategoryEmoji(category: string): string {
   switch (category.toLowerCase()) {
     case 'travel': return '✈️';
-    case 'food': return '🍝';
-    case 'social': return '👋';
-    case 'business': return '💼';
-    case 'daily': return '🏠';
-    case 'animals': return '🐾';
+    case 'accommodation': return '🏨';
+    case 'dining': return '🍝';
+    case 'shopping': return '🛍️';
+    case 'daily life': return '🏠';
+    case 'workstudy': return '💼';
+    case 'social': return '🎉';
+    case 'culture': return '🎭';
+    case 'health': return '🏥';
+    case 'tech': return '📱';
+    case 'miscellaneous': return '📌';
+    case 'animals': return '🐶';
     case 'verbs_are':
     case 'verbs_ere':
-    case 'verbs_ire':
-    case 'reflexive_verbs':
-      return '📝';
-    case 'adjectives': return '✨';
-    default: return '🇮🇹';
+    case 'verbs_ire': return '📖';
+    case 'reflexive_verbs': return '🔄';
+    case 'adjectives': return '🌟';
+    default: return '📘';
   }
 }

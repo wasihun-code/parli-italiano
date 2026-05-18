@@ -32,6 +32,7 @@ type SrsState = {
   getDueItems: (now?: Date) => SrsItem[];
   isLearned: (id: string) => boolean;
   markAsLearned: (ids: string[]) => void;
+  unlearnItem: (id: string) => void;
   reset: () => void;
 };
 
@@ -104,6 +105,22 @@ export const useSrsStore = create<SrsState>()(
             }
           });
           return {items: newItems};
+        }),
+      unlearnItem: id =>
+        set(state => {
+          const existing = state.items[id];
+          if (!existing) return state;
+          return {
+            items: {
+              ...state.items,
+              [id]: {
+                ...existing,
+                learned: false,
+                correctStreak: 0,
+                dueAt: new Date().toISOString(),
+              },
+            },
+          };
         }),
       reset: () => set({items: {}}),
     }),

@@ -13,6 +13,10 @@ import { ConversationHistoryScreen } from './screens/ConversationHistoryScreen';
 import { OnboardingScreen } from './screens/OnboardingScreen';
 import { PlacementTestScreen } from './screens/PlacementTestScreen';
 import { AuthScreen } from './screens/AuthScreen';
+import { ProfileScreen } from './screens/ProfileScreen';
+import { MasteredScreen } from './screens/MasteredScreen';
+import { GrammarListScreen } from './screens/GrammarListScreen';
+import { GrammarLessonScreen } from './screens/GrammarLessonScreen';
 import { useCurrentUser } from '@shared/store/authStore';
 
 const OnboardingGuard: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -54,6 +58,10 @@ export const App: React.FC = () => {
         <OnboardingGuard>
           <Routes>
             <Route path="/auth" element={<AuthScreen />} />
+            <Route path="/profile" element={<ProfileScreen />} />
+            <Route path="/mastered" element={<MasteredScreen />} />
+            <Route path="/grammar" element={<GrammarListScreen />} />
+            <Route path="/grammar/:lessonId" element={<GrammarLessonScreen />} />
             <Route path="/" element={<HomeScreen />} />
             <Route path="/onboarding" element={<OnboardingScreen />} />
             <Route path="/placement-test" element={<PlacementTestScreen />} />
