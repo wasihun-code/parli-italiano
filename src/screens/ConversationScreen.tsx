@@ -32,6 +32,12 @@ const scenarioCategories: ScenarioCategory[] = [
   'Health',
   'Tech',
   'Miscellaneous',
+  'Animals',
+  'Verbs_ARE',
+  'Verbs_ERE',
+  'Verbs_IRE',
+  'Reflexive_Verbs',
+  'Adjectives',
 ];
 
 function toScenarioCategory(category?: string): ScenarioCategory {

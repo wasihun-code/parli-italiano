@@ -1,7 +1,7 @@
 # Parla Italiano 🇮🇹
 ### Offline Italian conversation practice with a friendly AI tutor.
 
-Parla Italiano is a web-based language learning application designed to bridge the gap between basic vocabulary and real-world conversation. It features **110 immersive scenarios** and a specialized AI tutor named **Antonio**, powered by a fine-tuned LLaMA 3.1 model running locally.
+Parla Italiano is a web-based language learning application designed to bridge the gap between basic vocabulary and real-world conversation. It features immersive scenarios and a specialized AI tutor named **Antonio**, powered by **llama3.1:8b** running locally through Ollama.
 
 ---
 
@@ -12,7 +12,7 @@ Parla Italiano is a web-based language learning application designed to bridge t
   - **Foundations**: Master the essential Italian building blocks.
   - **Scenario Training**: Progressive drills covering Vocabulary, Phrases, and Sentences.
   - **Conversation**: Open-ended role-play with Antonio.
-- **Offline-First AI**: Powered by **Ollama** and a fine-tuned **LLaMA 3.1 8B** model for secure, local inference.
+- **Offline-First AI**: Powered by **Ollama** and **llama3.1:8b** for secure, local inference.
 - **Natural Italian Voice**: Integrated with high-quality TTS for authentic listening practice.
 - **SRS Review**: Spaced Repetition System to ensure long-term retention of new words.
 - **Placement Test**: Start at the right level based on your current proficiency.
@@ -25,7 +25,7 @@ Parla Italiano is a web-based language learning application designed to bridge t
 - **Frontend**: React, TypeScript, Vite
 - **State Management**: Zustand
 - **Local Database**: Dexie.js (IndexedDB)
-- **AI Engine**: Ollama (LLaMA 3.1 8B Fine-tuned)
+- **AI Engine**: Ollama (`llama3.1:8b` by default)
 - **Voice**: Spark-TTS (Optional for high-quality voice)
 
 ---
@@ -54,15 +54,16 @@ Parla Italiano is a web-based language learning application designed to bridge t
 
 3. **Configure Ollama**
    - Ensure the Ollama server is running.
-   - Register the fine-tuned model (assuming you have the GGUF file):
+   - Ensure the `llama3.1:8b` model is available:
      ```bash
-     ollama create llama-3.1-8b -f Modelfile
+     ollama pull llama3.1:8b
      ```
 
 4. **Environment Variables**
    Create a `.env` file in the root:
    ```env
    VITE_OLLAMA_URL=http://localhost:11434
+   VITE_OLLAMA_MODEL=llama3.1:8b
    ```
 
 5. **Run the Development Server**
@@ -101,6 +102,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgements
 
-- **Unsloth**: For the incredible library used to fine-tune LLaMA 3.1.
 - **Ollama**: For providing the engine for local LLM inference.
 - **Spark-TTS**: For the natural Italian speech synthesis.

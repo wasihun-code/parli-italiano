@@ -118,6 +118,13 @@ function getCategoryEmoji(category: string): string {
     case 'social': return '👋';
     case 'business': return '💼';
     case 'daily': return '🏠';
+    case 'animals': return '🐾';
+    case 'verbs_are':
+    case 'verbs_ere':
+    case 'verbs_ire':
+    case 'reflexive_verbs':
+      return '📝';
+    case 'adjectives': return '✨';
     default: return '🇮🇹';
   }
 }

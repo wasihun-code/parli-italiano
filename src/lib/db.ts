@@ -115,10 +115,17 @@ class ParlaItalianoDatabase extends Dexie {
 
 export const db = new ParlaItalianoDatabase();
 
+const SEED_VERSION = '2';
+
 export async function setupDatabase() {
   const count = await db.app_metadata.count();
   if (count === 0) {
     await seedDatabase();
+  } else {
+    const version = await db.app_metadata.get('seed_version');
+    if (version?.value !== SEED_VERSION) {
+      await seedMissingDatabaseRows();
+    }
   }
   return db;
 }
@@ -238,7 +245,87 @@ async function seedDatabase() {
       }
     }
 
-    await db.app_metadata.put({ key: 'seed_version', value: '1', updated_at: new Date().toISOString() });
+    await db.app_metadata.put({ key: 'seed_version', value: SEED_VERSION, updated_at: new Date().toISOString() });
+  });
+}
+
+async function seedMissingDatabaseRows() {
+  await db.transaction('rw', [
+    db.app_metadata,
+    db.foundation_lessons,
+    db.foundation_terms,
+    db.foundation_exercises,
+    db.scenarios,
+    db.scenario_vocabulary,
+    db.scenario_phrases,
+    db.scenario_sentences,
+    db.srs_items,
+  ], async () => {
+    for (const [index, scenario] of scenarios.entries()) {
+      await db.scenarios.put({
+        id: scenario.id,
+        category: scenario.category,
+        title: scenario.title,
+        description: scenario.description,
+        sort_order: index + 1,
+      });
+
+      for (const [vIndex, term] of scenario.vocabulary.entries()) {
+        if (!(await db.scenario_vocabulary.get(term.id))) {
+          await db.scenario_vocabulary.put({
+          id: term.id,
+          scenario_id: scenario.id,
+          italian: term.italian,
+          english: term.english,
+          correct_streak_required: 3,
+          sort_order: vIndex + 1,
+        });
+        }
+
+        if (!(await db.srs_items.get(term.id))) {
+          await db.srs_items.put({
+          item_id: term.id,
+          item_type: 'vocabulary',
+          scenario_id: scenario.id,
+          italian: term.italian,
+          english: term.english,
+          correct_streak: 0,
+          attempts: 0,
+          correct_attempts: 0,
+          due_at: new Date(0).toISOString(),
+        });
+        }
+      }
+
+      for (const [pIndex, phrase] of scenario.phrases.entries()) {
+        if (!(await db.scenario_phrases.get(phrase.id))) {
+          await db.scenario_phrases.put({
+          id: phrase.id,
+          scenario_id: scenario.id,
+          italian: phrase.italian,
+          english: phrase.english,
+          pass_score: 85,
+          sort_order: pIndex + 1,
+        });
+        }
+      }
+
+      for (const [sIndex, sentence] of scenario.sentences.entries()) {
+        if (!(await db.scenario_sentences.get(sentence.id))) {
+          await db.scenario_sentences.put({
+          id: sentence.id,
+          scenario_id: scenario.id,
+          italian: sentence.italian,
+          english: sentence.english,
+          grammar_point: sentence.grammarPoint,
+          pass_score: 80,
+          sort_order: sIndex + 1,
+        });
+        }
+      }
+    }
+
+    await db.app_metadata.put({ key: 'seed_version', value: SEED_VERSION, updated_at: new Date().toISOString() });
   });
 }
 

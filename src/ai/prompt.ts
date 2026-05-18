@@ -1,5 +1,3 @@
-import { foundationalVocabulary } from '@app/data/foundations';
-
 export const highFrequencyConversationConnectors = [
   'sì',
   'no',

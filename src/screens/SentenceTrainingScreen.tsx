@@ -17,6 +17,7 @@ import {
   hasPracticedAllSentenceExercises,
   recordSentenceAttempt,
   registerSentenceItems,
+  sortSentencesByDifficulty,
   type SentenceTrainingStats,
   type AnswerStatus,
 } from '@shared/utils/sentenceTraining';
@@ -71,8 +72,9 @@ export const SentenceTrainingScreen: React.FC = () => {
 
         setScenarioTitle(header?.title ?? `Scenario ${scenarioId}`);
         const srsState = useSrsStore.getState();
-        registerSentenceItems(scenarioSentences, srsState);
-        setSentences(scenarioSentences.filter(sentence => !isLearnedByIdOrItalian(sentence, srsState)));
+        const sortedSentences = sortSentencesByDifficulty(scenarioSentences);
+        registerSentenceItems(sortedSentences, srsState);
+        setSentences(sortedSentences.filter(sentence => !isLearnedByIdOrItalian(sentence, srsState)));
       } catch (error) {
         if (!cancelled) {
           setLoadError(error instanceof Error ? error.message : 'Unable to load sentences.');

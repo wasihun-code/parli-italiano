@@ -92,9 +92,9 @@ describe('ConversationScreen (LLaMA 3.1 Alpaca)', () => {
     const calls = vi.mocked(generateResponse).mock.calls;
     const firstCallMessages = calls[0][0] as any[];
     
-    expect(firstCallMessages[0].content).toContain('### Instruction:');
+    expect(firstCallMessages[0].content).toContain('Parla SOLO in italiano');
     expect(firstCallMessages[0].content).toContain('Scenario: Cafe');
-    expect(firstCallMessages[0].content).toContain('### Input:\nInizia la conversazione.');
+    expect(firstCallMessages[1].content).toContain('Inizia la conversazione.');
   });
 
   it('sends user message and displays assistant response', async () => {

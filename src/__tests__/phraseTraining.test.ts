@@ -14,11 +14,13 @@ import {
 } from '@shared/utils/phraseTraining';
 
 describe('getPhraseExerciseKind', () => {
-  it('cycles through listenRepeat, fillBlank, assembly', () => {
-    expect(getPhraseExerciseKind(0)).toBe('listenRepeat');
-    expect(getPhraseExerciseKind(1)).toBe('fillBlank');
-    expect(getPhraseExerciseKind(2)).toBe('assembly');
-    expect(getPhraseExerciseKind(3)).toBe('listenRepeat');
+  it('cycles through the current phrase exercise modes', () => {
+    expect(getPhraseExerciseKind(0)).toBe('multipleChoice');
+    expect(getPhraseExerciseKind(1)).toBe('assembly');
+    expect(getPhraseExerciseKind(2)).toBe('fillBlank');
+    expect(getPhraseExerciseKind(3)).toBe('dictation');
+    expect(getPhraseExerciseKind(4)).toBe('speaking');
+    expect(getPhraseExerciseKind(5)).toBe('multipleChoice');
   });
 });
 

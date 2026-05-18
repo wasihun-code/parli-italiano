@@ -4,7 +4,7 @@ export type LlmMessage = {
 };
 
 const OLLAMA_CHAT_URL = '/ollama/api/chat';
-const OLLAMA_MODEL = 'llama-3.1-8b';
+const OLLAMA_MODEL = import.meta.env.VITE_OLLAMA_MODEL || 'llama3.1:8b';
 
 type OllamaChatResponse = {
   message?: {

@@ -18,6 +18,7 @@ import {
   recordPhraseAttempt,
   registerPhraseItems,
   getNextUnlearnedPhrase,
+  sortPhrasesByDifficulty,
   type PhraseTrainingStats,
   type AnswerStatus,
 } from '@shared/utils/phraseTraining';
@@ -125,8 +126,9 @@ export const PhraseTrainingScreen: React.FC = () => {
 
         setScenarioTitle(header?.title ?? `Scenario ${scenarioId}`);
         const srsState = useSrsStore.getState();
-        registerPhraseItems(scenarioPhrases, srsState);
-        setPhrases(scenarioPhrases); // Load all, filter learned in activeItem useMemo
+        const sortedPhrases = sortPhrasesByDifficulty(scenarioPhrases);
+        registerPhraseItems(sortedPhrases, srsState);
+        setPhrases(sortedPhrases); // Load all, filter learned in activeItem useMemo
       } catch (error) {
         if (!cancelled) {
           setLoadError(error instanceof Error ? error.message : 'Unable to load phrases.');

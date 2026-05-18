@@ -5,14 +5,20 @@ test.describe('Parli Italiano E2E', () => {
     // Bypass the onboarding guard by pre-setting the flag, then clear SRS/progress
     await page.addInitScript(() => {
       window.localStorage.setItem('hasSeenOnboarding', 'true');
+      window.localStorage.setItem('parla-italiano-auth', JSON.stringify({
+        state: {
+          users: [{ id: 'e2e-user', name: 'E2E User', email: 'e2e@example.com', password: 'password' }],
+          currentUserId: 'e2e-user',
+        },
+        version: 0,
+      }));
     });
   });
 
-  test('App loads home screen with Bentornato greeting', async ({ page }) => {
+  test('App loads home screen with greeting', async ({ page }) => {
     await page.goto('/');
 
-    // The home screen shows "Bentornato!" not "Parli Italiano"
-    await expect(page.locator('h1').filter({ hasText: 'Bentornato' })).toBeVisible();
+    await expect(page.locator('h1').filter({ hasText: 'Ciao' })).toBeVisible();
 
     // Bottom nav should have all 4 nav items
     const nav = page.locator('nav');
@@ -48,6 +54,6 @@ test.describe('Parli Italiano E2E', () => {
     await expect(page.locator('h1').filter({ hasText: 'Review' })).toBeVisible();
 
     // With no items due, shows the empty state
-    await expect(page.getByText('No review items right now')).toBeVisible();
+    await expect(page.getByText('Nothing to review right now')).toBeVisible();
   });
 });

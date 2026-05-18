@@ -26,6 +26,20 @@ type ProgressApi = Pick<
   'setScenarioVocabularyCompleted'
 >;
 
+export function sortVocabularyByDifficulty<T extends {italian: string}>(
+  words: T[],
+): T[] {
+  // Sort by:
+  // 1. Word length (number of characters) – shortest first
+  // 2. If tie, alphabetical (for consistency)
+  return [...words].sort((a, b) => {
+    if (a.italian.length !== b.italian.length) {
+      return a.italian.length - b.italian.length;
+    }
+    return a.italian.localeCompare(b.italian);
+  });
+}
+
 export function registerVocabularyTerms(
   terms: ScenarioVocabularyRow[],
   srs: SrsApi,

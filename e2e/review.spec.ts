@@ -4,6 +4,13 @@ test.describe('Review Screen Test', () => {
   test.beforeEach(async ({ page }) => {
     await page.addInitScript(() => {
       window.localStorage.setItem('hasSeenOnboarding', 'true');
+      window.localStorage.setItem('parla-italiano-auth', JSON.stringify({
+        state: {
+          users: [{ id: 'e2e-user', name: 'E2E User', email: 'e2e@example.com', password: 'password' }],
+          currentUserId: 'e2e-user',
+        },
+        version: 0,
+      }));
     });
   });
 
@@ -27,7 +34,7 @@ test.describe('Review Screen Test', () => {
     await page.goto('/review');
 
     await expect(page.locator('h1').filter({ hasText: 'Review' })).toBeVisible();
-    await expect(page.getByText('No review items right now - come back later!')).toBeVisible();
+    await expect(page.getByText('Nothing to review right now - come back later!')).toBeVisible();
     await expect(page.getByText('0 learned / 0 total')).toBeVisible();
   });
 });

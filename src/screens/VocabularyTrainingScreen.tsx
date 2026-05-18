@@ -15,6 +15,7 @@ import {
   maybeCompleteVocabularyPhase,
   checkVocabularyAnswer,
   registerVocabularyTerms,
+  sortVocabularyByDifficulty,
   type AnswerStatus,
 } from '@shared/utils/vocabularyTraining';
 import type { ScenarioVocabularyRow } from '@app/db/vocabularyRepository';
@@ -128,9 +129,10 @@ export const VocabularyTrainingScreen: React.FC = () => {
 
         setScenarioTitle(header?.title ?? `Scenario ${scenarioId}`);
         const srsState = useSrsStore.getState();
-        registerVocabularyTerms(vocabulary, srsState);
-        const unlearnedVocabulary = vocabulary.filter(v => !isLearnedByIdOrItalian(v, srsState));
-        setAllTerms(vocabulary);
+        const sortedVocabulary = sortVocabularyByDifficulty(vocabulary);
+        registerVocabularyTerms(sortedVocabulary, srsState);
+        const unlearnedVocabulary = sortedVocabulary.filter(v => !isLearnedByIdOrItalian(v, srsState));
+        setAllTerms(sortedVocabulary);
         setTerms(unlearnedVocabulary);
       } catch (error) {
         if (!cancelled) {

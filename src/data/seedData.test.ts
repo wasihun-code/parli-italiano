@@ -2,12 +2,12 @@ import {foundationLessons} from './foundations';
 import {scenarios} from './scenarios';
 
 describe('seed data', () => {
-  it('contains all 110 scenarios with complete phase training material', () => {
-    expect(scenarios).toHaveLength(110);
+  it('contains all expanded scenarios with complete phase training material', () => {
+    expect(scenarios).toHaveLength(116);
 
     scenarios.forEach(scenario => {
       expect(scenario.vocabulary.length).toBeGreaterThanOrEqual(20);
-      expect(scenario.vocabulary.length).toBeLessThanOrEqual(50);
+      expect(scenario.vocabulary.length).toBeLessThanOrEqual(90);
       expect(scenario.phrases.length).toBeGreaterThanOrEqual(5);
       expect(scenario.phrases.length).toBeLessThanOrEqual(10);
       expect(scenario.sentences.length).toBeGreaterThanOrEqual(5);

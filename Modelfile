@@ -1,5 +1,5 @@
 
-FROM gemma-2-2b-it.Q8_0.gguf
+FROM llama3.1:8b
 TEMPLATE """<start_of_turn>user
 {{ if .System }}{{ .System }} {{ end }}{{ .Prompt }}<end_of_turn>
 <start_of_turn>model

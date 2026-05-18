@@ -19,7 +19,7 @@ describe('ReviewScreen', () => {
 
   it('shows the empty state when no items are due', () => {
     renderWithRouter(<ReviewScreen />);
-    expect(screen.getByText('No review items right now - come back later!')).toBeInTheDocument();
+    expect(screen.getByText('Nothing to review right now - come back later!')).toBeInTheDocument();
   });
 
   it('shows stats even when empty', () => {
@@ -66,7 +66,7 @@ describe('ReviewScreen', () => {
     // Click the card to flip
     fireEvent.click(screen.getByText('grazie'));
     expect(screen.getByText('thank you')).toBeInTheDocument();
-    expect(screen.getByText('English')).toBeInTheDocument();
+    expect(screen.getByText('Translation')).toBeInTheDocument();
   });
 
   it('records a correct answer and updates streak', () => {
@@ -84,7 +84,8 @@ describe('ReviewScreen', () => {
     }));
 
     renderWithRouter(<ReviewScreen />);
-    fireEvent.click(screen.getByText('Correct'));
+    fireEvent.click(screen.getByText('grazie'));
+    fireEvent.click(screen.getByText('REMEMBERED'));
 
     expect(useSrsStore.getState().items['i1'].correctStreak).toBe(1);
     expect(useSrsStore.getState().items['i1'].attempts).toBe(1);
@@ -107,7 +108,8 @@ describe('ReviewScreen', () => {
     }));
 
     renderWithRouter(<ReviewScreen />);
-    fireEvent.click(screen.getByText('Incorrect'));
+    fireEvent.click(screen.getByText('grazie'));
+    fireEvent.click(screen.getByText('FORGOT'));
 
     expect(useSrsStore.getState().items['i1'].correctStreak).toBe(0);
   });

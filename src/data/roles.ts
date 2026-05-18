@@ -17,6 +17,12 @@ const categoryRoleMap: Record<ScenarioCategory, RolePair> = {
   Health: { aiRole: 'un dottore o farmacista', userRole: 'un turista' },
   Tech: { aiRole: 'un tecnico informatico', userRole: 'un turista' },
   Miscellaneous: { aiRole: 'una persona disponibile', userRole: 'un turista' },
+  Animals: { aiRole: 'una guida in un parco', userRole: 'uno studente di italiano' },
+  Verbs_ARE: { aiRole: 'un insegnante di italiano', userRole: 'uno studente di italiano' },
+  Verbs_ERE: { aiRole: 'un insegnante di italiano', userRole: 'uno studente di italiano' },
+  Verbs_IRE: { aiRole: 'un insegnante di italiano', userRole: 'uno studente di italiano' },
+  Reflexive_Verbs: { aiRole: 'un insegnante di italiano', userRole: 'uno studente di italiano' },
+  Adjectives: { aiRole: 'un insegnante di italiano', userRole: 'uno studente di italiano' },
 };
 
 const specificScenarioRoleMap: Record<number, RolePair> = {};

@@ -30,6 +30,24 @@ type ProgressApi = Pick<
   'setScenarioPhraseScore'
 >;
 
+export function sortPhrasesByDifficulty<T extends {italian: string}>(
+  phrases: T[],
+): T[] {
+  return [...phrases].sort((a, b) => {
+    // Primary: number of words in Italian phrase (split by spaces)
+    const wordsA = a.italian.trim().split(/\s+/).length;
+    const wordsB = b.italian.trim().split(/\s+/).length;
+    if (wordsA !== wordsB) return wordsA - wordsB;
+
+    // Secondary: total character length
+    if (a.italian.length !== b.italian.length) {
+      return a.italian.length - b.italian.length;
+    }
+
+    return a.italian.localeCompare(b.italian);
+  });
+}
+
 export function registerPhraseItems(
   phrases: ScenarioPhraseRow[],
   srs: SrsApi,

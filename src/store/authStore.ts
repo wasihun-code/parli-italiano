@@ -8,6 +8,8 @@ type AuthUser = {
   id: string;
   name: string;
   email: string;
+  // Demo-only local auth: passwords are stored in plaintext in browser storage.
+  // Do not use this store as production authentication.
   password: string;
 };
 

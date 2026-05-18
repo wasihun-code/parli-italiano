@@ -61,6 +61,31 @@ const lowValueWords = new Set([
   'uno',
 ]);
 
+export function sortSentencesByDifficulty<T extends {italian: string}>(
+  sentences: T[],
+): T[] {
+  return [...sentences].sort((a, b) => {
+    // Primary: clause count (simple sentences with 1 verb vs compound)
+    const clauseCount = (s: string) => {
+      // Count conjugated verbs roughly (are/ere/ire endings + common irregulars)
+      const verbs = s.match(
+        /\b(?:sono|sei|è|siamo|siete|sono|ho|hai|ha|abbiamo|avete|hanno|vado|vai|va|andiamo|andate|vanno|faccio|fai|fa|facciamo|fate|fanno|posso|puoi|può|possiamo|potete|possono|devo|devi|deve|dobbiamo|dovete|devono|voglio|vuoi|vuole|vogliamo|volete|vogliono|\w+are|\w+ere|\w+ire)\b/gi,
+      );
+      return verbs ? verbs.length : 1;
+    };
+    const clausesA = clauseCount(a.italian);
+    const clausesB = clauseCount(b.italian);
+    if (clausesA !== clausesB) return clausesA - clausesB;
+
+    // Secondary: total character length
+    if (a.italian.length !== b.italian.length) {
+      return a.italian.length - b.italian.length;
+    }
+
+    return a.italian.localeCompare(b.italian);
+  });
+}
+
 export function registerSentenceItems(
   sentences: ScenarioSentenceRow[],
   srs: SrsApi,
