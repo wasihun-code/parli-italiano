@@ -17,7 +17,12 @@ import { ProfileScreen } from './screens/ProfileScreen';
 import { MasteredScreen } from './screens/MasteredScreen';
 import { GrammarListScreen } from './screens/GrammarListScreen';
 import { GrammarLessonScreen } from './screens/GrammarLessonScreen';
+import { GamesScreen } from './screens/GamesScreen';
+import { GenderGame } from './screens/GenderGame';
+import { TranslationGame } from './screens/TranslationGame';
+import { PrepositionGame } from './screens/PrepositionGame';
 import { useCurrentUser } from '@shared/store/authStore';
+import { FooterNav } from './components/FooterNav';
 
 const OnboardingGuard: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const navigate = useNavigate();
@@ -62,6 +67,10 @@ export const App: React.FC = () => {
             <Route path="/mastered" element={<MasteredScreen />} />
             <Route path="/grammar" element={<GrammarListScreen />} />
             <Route path="/grammar/:lessonId" element={<GrammarLessonScreen />} />
+            <Route path="/games" element={<GamesScreen />} />
+            <Route path="/games/gender" element={<GenderGame />} />
+            <Route path="/games/translation" element={<TranslationGame />} />
+            <Route path="/games/prepositions" element={<PrepositionGame />} />
             <Route path="/" element={<HomeScreen />} />
             <Route path="/onboarding" element={<OnboardingScreen />} />
             <Route path="/placement-test" element={<PlacementTestScreen />} />
@@ -75,6 +84,7 @@ export const App: React.FC = () => {
             <Route path="/review" element={<ReviewScreen />} />
             <Route path="/history" element={<ConversationHistoryScreen />} />
           </Routes>
+          <FooterNav />
         </OnboardingGuard>
       </AuthGuard>
     </BrowserRouter>

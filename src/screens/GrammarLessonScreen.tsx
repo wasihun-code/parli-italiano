@@ -4,20 +4,24 @@ import { Screen } from '../components/Screen';
 import { PrimaryButton } from '../components/PrimaryButton';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
-import { grammarLessons } from '@shared/data/grammarLessons';
+import grammarExpanded from '@shared/data/grammarExpanded.json';
 import { useGrammarStore } from '@shared/store/grammarStore';
+import { ProgressBar } from '../components/ProgressBar';
+import { FeedbackMessage } from '../components/FeedbackMessage';
+import { ShortcutHelp } from '../components/ShortcutHelp';
+import { getWrongAnswerExplanation } from '@shared/utils/feedbackExplanations';
 
 export const GrammarLessonScreen: React.FC = () => {
   const { lessonId } = useParams<{ lessonId: string }>();
   const navigate = useNavigate();
   const markCompleted = useGrammarStore(state => state.markCompleted);
   
-  const lesson = useMemo(() => grammarLessons.find(l => l.id === lessonId), [lessonId]);
+  const lesson = useMemo(() => grammarExpanded.find(l => l.id === lessonId), [lessonId]);
   
   const [phase, setPhase] = useState<'learn' | 'practice'>('learn');
   const [exIndex, setExIndex] = useState(0);
   const [typedAnswer, setTypedAnswer] = useState('');
-  const [feedback, setFeedback] = useState<'correct' | 'incorrect' | null>(null);
+  const [feedback, setFeedback] = useState<{ type: 'correct' | 'incorrect', explanation?: string } | null>(null);
 
   if (!lesson) return <Screen><p>Lesson not found.</p></Screen>;
 
@@ -31,9 +35,14 @@ export const GrammarLessonScreen: React.FC = () => {
     if (!submitted.trim()) return;
 
     if (submitted.toLowerCase() === exercise.answer.toLowerCase()) {
-      setFeedback('correct');
+      setFeedback({ type: 'correct' });
     } else {
-      setFeedback('incorrect');
+      const explanation = getWrongAnswerExplanation({
+        type: 'grammar',
+        category: lesson.id,
+        correctAnswer: exercise.answer
+      });
+      setFeedback({ type: 'incorrect', explanation });
     }
   };
 
@@ -56,21 +65,21 @@ export const GrammarLessonScreen: React.FC = () => {
         </header>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.lg, paddingBottom: 100 }}>
-          {lesson.explanation.map((block, idx) => (
-            <div key={idx} className="card" style={{ padding: spacing.lg }}>
-              <p style={{ color: colors.textSecondary, fontSize: 16, lineHeight: '1.5', marginTop: 0 }}>
-                {block.text}
-              </p>
-              <div style={{ backgroundColor: 'rgba(78, 52, 46, 0.05)', padding: spacing.md, borderRadius: 12 }}>
-                {block.examples.map((ex, i) => (
-                  <div key={i} style={{ marginBottom: i < block.examples.length - 1 ? spacing.sm : 0 }}>
-                    <div style={{ fontWeight: 'bold', color: colors.primary }}>{ex.it}</div>
-                    <div style={{ color: colors.textSecondary, fontSize: 14 }}>{ex.en}</div>
-                  </div>
-                ))}
-              </div>
+          <div className="card" style={{ padding: spacing.lg }}>
+            <div style={{ color: colors.textSecondary, fontSize: 16, lineHeight: '1.6', whiteSpace: 'pre-line' }}>
+              {lesson.explanation}
             </div>
-          ))}
+            
+            <h3 style={{ marginTop: spacing.xl, marginBottom: spacing.sm, color: colors.primary }}>Examples</h3>
+            <div style={{ backgroundColor: 'rgba(78, 52, 46, 0.05)', padding: spacing.md, borderRadius: 12 }}>
+              {lesson.examples.map((ex, i) => (
+                <div key={i} style={{ marginBottom: i < lesson.examples.length - 1 ? spacing.sm : 0 }}>
+                  <div style={{ fontWeight: 'bold', color: colors.primary }}>{ex.italian}</div>
+                  <div style={{ color: colors.textSecondary, fontSize: 14 }}>{ex.english}</div>
+                </div>
+              ))}
+            </div>
+          </div>
 
           <PrimaryButton label="Start Practice" onPress={handleStartPractice} />
         </div>
@@ -83,20 +92,21 @@ export const GrammarLessonScreen: React.FC = () => {
     <Screen style={{ backgroundColor: colors.surface }}>
       <header style={{ marginBottom: spacing.lg }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
-          <span style={{ color: colors.textSecondary, fontWeight: '900', fontSize: 12, textTransform: 'uppercase' }}>Practice</span>
+          <span style={{ color: colors.textSecondary, fontWeight: '900', fontSize: 12, textTransform: 'uppercase', letterSpacing: 1, display: 'flex', alignItems: 'center' }}>
+            Practice
+            <ShortcutHelp />
+          </span>
           <span style={{ color: colors.accent, fontWeight: 900, fontSize: 12 }}>{exIndex + 1} / {lesson.exercises.length}</span>
         </div>
-        <div style={{ height: 8, backgroundColor: 'rgba(78, 52, 46, 0.1)', borderRadius: 4 }}>
-          <div style={{ height: '100%', width: `${((exIndex + 1) / lesson.exercises.length) * 100}%`, backgroundColor: colors.accent, borderRadius: 4 }} />
-        </div>
+        <ProgressBar progress={((exIndex + 1) / lesson.exercises.length) * 100} />
       </header>
 
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: spacing.xl }}>
         {!feedback ? (
           <div className="fade-in">
-            <h1 style={{ color: colors.primary, fontSize: 24, margin: '0 0 24px', fontWeight: 900 }}>{exercise.prompt}</h1>
+            <h1 style={{ color: colors.primary, fontSize: 24, margin: '0 0 24px', fontWeight: 900 }}>{exercise.question}</h1>
             
-            {exercise.kind === 'multipleChoice' ? (
+            {exercise.type === 'multiple-choice' ? (
               <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.md }}>
                 {(exercise.options || []).map(opt => (
                   <button
@@ -141,33 +151,36 @@ export const GrammarLessonScreen: React.FC = () => {
                 <PrimaryButton label="Check" onPress={() => submitAnswer()} disabled={!typedAnswer.trim()} />
               </div>
             )}
+            <p style={{ textAlign: 'center', color: colors.textSecondary, fontSize: 14, margin: '16px 0 0', fontWeight: 800 }}>
+              Tip: Press 1-4 to select, Enter to submit
+            </p>
           </div>
         ) : (
-          <div className={feedback === 'correct' ? 'bounce' : 'shake'} style={{
-            backgroundColor: feedback === 'correct' ? colors.success : colors.error,
-            color: colors.onPrimary,
-            padding: spacing.xl,
-            borderRadius: 24,
-            textAlign: 'center',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: spacing.md
-          }}>
-            <div style={{ fontSize: 48 }}>{feedback === 'correct' ? '✅' : '❌'}</div>
-            <div style={{ fontSize: 24, fontWeight: 900 }}>{feedback === 'correct' ? 'Correct!' : 'Not quite'}</div>
-            {feedback === 'incorrect' && (
-              <div style={{ marginTop: spacing.md }}>
-                <div style={{ fontSize: 16, opacity: 0.9, marginBottom: 4 }}>The correct answer is:</div>
-                <div style={{ fontSize: 22, fontWeight: 'bold' }}>{exercise.answer}</div>
-              </div>
-            )}
+          <div className="fade-in" style={{ textAlign: 'center' }}>
+            <FeedbackMessage 
+              type={feedback.type} 
+              message={
+                feedback.type === 'correct' 
+                  ? 'Correct!' 
+                  : (
+                    <>
+                      <div>Not quite. The correct answer is: <br/><strong>{exercise.answer}</strong></div>
+                      {feedback.explanation && (
+                        <div style={{ marginTop: spacing.sm, fontSize: 14, fontWeight: 'normal', color: colors.textSecondary }}>
+                          {feedback.explanation}
+                        </div>
+                      )}
+                    </>
+                  )
+              } 
+            />
           </div>
         )}
       </div>
 
       {feedback && (
         <div style={{ marginTop: 'auto', paddingTop: spacing.xl }}>
-          <PrimaryButton label="Continue" onPress={advance} variant={feedback === 'incorrect' ? 'secondary' : 'primary'} />
+          <PrimaryButton label="Continue" onPress={advance} />
         </div>
       )}
     </Screen>

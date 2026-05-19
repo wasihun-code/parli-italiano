@@ -10,7 +10,10 @@ import { useSrsStore } from '@shared/store/srsStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { percentageScore } from '@shared/utils/scoring';
-import { progressBar, progressFill, feedbackCardStyle } from '@shared/utils/trainingUi';
+import { progressBar, progressFill } from '@shared/utils/trainingUi';
+import { FeedbackMessage } from '../components/FeedbackMessage';
+import { ShortcutHelp } from '../components/ShortcutHelp';
+import { getWrongAnswerExplanation } from '@shared/utils/feedbackExplanations';
 
 function normalizeAnswer(value: string): string {
   return value.trim().toLocaleLowerCase('it-IT');
@@ -30,7 +33,7 @@ export const FoundationLessonScreen: React.FC = () => {
   const [correctCount, setCorrectCount] = useState(0);
   const [typedAnswer, setTypedAnswer] = useState('');
   const [selectedAnswer, setSelectedAnswer] = useState<string>();
-  const [feedback, setFeedback] = useState<'correct' | 'incorrect'>();
+  const [feedback, setFeedback] = useState<{ type: 'correct' | 'incorrect', explanation?: string }>();
   const [finishedScore, setFinishedScore] = useState<number>();
 
   useEffect(() => {
@@ -70,10 +73,19 @@ export const FoundationLessonScreen: React.FC = () => {
   const submitAnswer = useCallback((): void => {
     if (!lesson || !exercise) return;
     const correct = normalizeAnswer(submittedAnswer) === normalizeAnswer(exercise.answer);
-    setFeedback(correct ? 'correct' : 'incorrect');
+    
     if (correct) {
+      setFeedback({ type: 'correct' });
       setCorrectCount(current => current + 1);
+    } else {
+      const explanation = getWrongAnswerExplanation({
+        type: 'grammar',
+        category: 'foundations',
+        correctAnswer: exercise.answer
+      });
+      setFeedback({ type: 'incorrect', explanation });
     }
+
     const matchingTerm = lesson.terms.find(
       term => normalizeAnswer(term.italian) === normalizeAnswer(exercise.answer),
     );
@@ -115,10 +127,18 @@ export const FoundationLessonScreen: React.FC = () => {
           const idx = parseInt(e.key) - 1;
           if (choices[idx]) {
             setSelectedAnswer(choices[idx]);
+            // Auto submit choice? The original code did that.
             const correct = normalizeAnswer(choices[idx]) === normalizeAnswer(exercise.answer);
-            setFeedback(correct ? 'correct' : 'incorrect');
             if (correct) {
+              setFeedback({ type: 'correct' });
               setCorrectCount(current => current + 1);
+            } else {
+              const explanation = getWrongAnswerExplanation({
+                type: 'grammar',
+                category: 'foundations',
+                correctAnswer: exercise.answer
+              });
+              setFeedback({ type: 'incorrect', explanation });
             }
             const matchingTerm = lesson?.terms.find(
               term => normalizeAnswer(term.italian) === normalizeAnswer(exercise.answer),
@@ -194,7 +214,10 @@ export const FoundationLessonScreen: React.FC = () => {
       <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: spacing.lg }}>
         <div style={{ flex: 1 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
-            <span style={{ color: colors.textSecondary, fontWeight: '900', fontSize: 12, textTransform: 'uppercase', letterSpacing: 1 }}>{lesson.title}</span>
+            <span style={{ color: colors.textSecondary, fontWeight: '900', fontSize: 12, textTransform: 'uppercase', letterSpacing: 1, display: 'flex', alignItems: 'center' }}>
+              {lesson.title}
+              <ShortcutHelp />
+            </span>
             <span style={{ color: colors.accent, fontWeight: 900, fontSize: 12 }}>{progressLabel}</span>
           </div>
           <div style={progressBar()}>
@@ -205,19 +228,24 @@ export const FoundationLessonScreen: React.FC = () => {
 
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: spacing.xl, paddingBottom: 100 }}>
         {feedback ? (
-          <div className={feedback === 'correct' ? 'bounce' : 'shake'} style={feedbackCardStyle(feedback === 'correct' ? 'correct' : 'incorrect')}>
-            <div style={{ fontSize: 48, marginBottom: 12 }}>
-              {feedback === 'correct' ? '✅' : '❌'}
-            </div>
-            <div>
-              {feedback === 'correct' ? 'Excellent!' : 'Ops! Not quite.'}
-            </div>
-            {feedback === 'incorrect' && (
-              <div style={{ marginTop: 12, fontSize: 16, opacity: 0.9 }}>
-                The correct answer is: <br/>
-                <span style={{ fontSize: 24, textDecoration: 'underline' }}>{exercise.answer}</span>
-              </div>
-            )}
+          <div className="fade-in" style={{ textAlign: 'center' }}>
+            <FeedbackMessage 
+              type={feedback.type} 
+              message={
+                feedback.type === 'correct' 
+                  ? 'Excellent!' 
+                  : (
+                    <>
+                      <div>Ops! Not quite. The correct answer is: <br/><strong>{exercise.answer}</strong></div>
+                      {feedback.explanation && (
+                        <div style={{ marginTop: spacing.sm, fontSize: 14, fontWeight: 'normal', color: colors.textSecondary }}>
+                          {feedback.explanation}
+                        </div>
+                      )}
+                    </>
+                  )
+              } 
+            />
           </div>
         ) : (
           <div className="fade-in" key={exerciseIndex}>
@@ -275,14 +303,23 @@ export const FoundationLessonScreen: React.FC = () => {
               </div>
             ) : (
               <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.md }}>
-                {choices.map((choice, idx) => (
+                {choices.map((choice) => (
                   <button
                     key={choice}
                     onClick={() => {
                       setSelectedAnswer(choice);
                       const correct = normalizeAnswer(choice) === normalizeAnswer(exercise.answer);
-                      setFeedback(correct ? 'correct' : 'incorrect');
-                      if (correct) setCorrectCount(c => c + 1);
+                      if (correct) {
+                        setFeedback({ type: 'correct' });
+                        setCorrectCount(c => c + 1);
+                      } else {
+                        const explanation = getWrongAnswerExplanation({
+                          type: 'grammar',
+                          category: 'foundations',
+                          correctAnswer: exercise.answer
+                        });
+                        setFeedback({ type: 'incorrect', explanation });
+                      }
                     }}
                     className={`card ${selectedAnswer === choice ? 'active' : ''}`}
                     style={{
@@ -298,26 +335,14 @@ export const FoundationLessonScreen: React.FC = () => {
                       transform: selectedAnswer === choice ? 'translateY(2px)' : 'translateY(0)',
                     }}
                   >
-                     <div style={{ 
-                      width: 32, 
-                      height: 32, 
-                      borderRadius: 16, 
-                      backgroundColor: selectedAnswer === choice ? colors.primary : colors.chipBg,
-                      color: selectedAnswer === choice ? colors.onPrimary : colors.textSecondary,
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: 14,
-                      fontWeight: 900,
-                      border: `1px solid ${colors.border}`
-                    }}>
-                      {idx + 1}
-                    </div>
                     {choice}
                   </button>
                 ))}
               </div>
             )}
+            <p style={{ textAlign: 'center', color: colors.textSecondary, fontSize: 14, margin: '16px 0 0', fontWeight: 800 }}>
+              Tip: Press 1-4 to select, Enter to submit
+            </p>
           </div>
         )}
       </div>
@@ -338,7 +363,7 @@ export const FoundationLessonScreen: React.FC = () => {
         {!feedback ? (
           <PrimaryButton label="Check" onPress={submitAnswer} disabled={!canSubmit} />
         ) : (
-          <PrimaryButton label="Continue" onPress={advance} variant={feedback === 'incorrect' ? 'secondary' : 'primary'} />
+          <PrimaryButton label="Continue" onPress={advance} />
         )}
       </div>
     </Screen>

@@ -6,6 +6,7 @@ import { PrimaryButton } from '../components/PrimaryButton';
 import { Screen } from '../components/Screen';
 import { WordChip } from '../components/WordChip';
 import { Keyboard } from '../components/Keyboard';
+import { FeedbackMessage } from '../components/FeedbackMessage';
 import { useProgressStore } from '@shared/store/progressStore';
 import { useSrsStore } from '@shared/store/srsStore';
 import { colors } from '@shared/theme/colors';
@@ -24,15 +25,16 @@ import {
 } from '@shared/utils/phraseTraining';
 import type { ScenarioPhraseRow } from '@app/db/vocabularyRepository';
 import {
-  feedbackCardStyle,
   progressBar,
   progressFill,
   isLearnedByIdOrItalian,
 } from '@shared/utils/trainingUi';
+import { getWrongAnswerExplanation } from '@shared/utils/feedbackExplanations';
 
 type FeedbackState = {
   status: AnswerStatus;
   correctAnswer: string;
+  explanation?: string;
 };
 
 type SpeechRecognitionConstructor = new () => {
@@ -190,7 +192,13 @@ export const PhraseTrainingScreen: React.FC = () => {
       }));
     }
     setStats(current => recordPhraseAttempt(current, currentPhrase.id, status !== 'incorrect'));
-    setFeedback({ status, correctAnswer: currentExercise.answer });
+    const explanation = status === 'incorrect' ? getWrongAnswerExplanation({
+      type: 'phrase',
+      italian: currentPhrase.italian,
+      correctAnswer: currentExercise.answer
+    }) : undefined;
+
+    setFeedback({ status, correctAnswer: currentExercise.answer, explanation });
   }, [currentPhrase, currentExercise, feedback, typedAnswer, selectedWords, selectedAnswer, recordAnswer]);
 
   const advance = useCallback((): void => {
@@ -290,21 +298,28 @@ export const PhraseTrainingScreen: React.FC = () => {
 
       <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: spacing.xl, paddingBottom: 100 }}>
         {feedback ? (
-          <div className={feedback.status === 'correct' ? 'bounce' : 'shake'} style={feedbackCardStyle(feedback.status)}>
-            <div style={{ fontSize: 48, marginBottom: 12 }}>
-              {feedback.status === 'correct' ? '✅' : feedback.status === 'nearly_correct' ? '⚠️' : '❌'}
-            </div>
-            <div>
-              {feedback.status === 'correct' && 'Excellent!'}
-              {feedback.status === 'nearly_correct' && 'Almost correct!'}
-              {feedback.status === 'incorrect' && 'Not quite.'}
-            </div>
-            {(feedback.status !== 'correct') && (
-              <div style={{ marginTop: 12, fontSize: 16, opacity: 0.9 }}>
-                The correct answer is: <br/>
-                <span style={{ fontSize: 24, textDecoration: 'underline' }}>{feedback.correctAnswer}</span>
-              </div>
-            )}
+          <div className="fade-in" style={{ textAlign: 'center' }}>
+            <FeedbackMessage 
+              type={feedback.status === 'correct' || feedback.status === 'nearly_correct' ? 'correct' : 'incorrect'} 
+              message={
+                <>
+                  <div style={{ fontSize: 24, marginBottom: 8 }}>
+                    {feedback.status === 'correct' ? '✅ Excellent!' : feedback.status === 'nearly_correct' ? '⚠️ Almost correct!' : '❌ Not quite.'}
+                  </div>
+                  {feedback.status !== 'correct' && (
+                    <div style={{ fontSize: 16 }}>
+                      The correct answer is: <br/>
+                      <span style={{ fontSize: 24, textDecoration: 'underline' }}>{feedback.correctAnswer}</span>
+                    </div>
+                  )}
+                  {feedback.explanation && (
+                    <div style={{ marginTop: 16, fontSize: 14, fontWeight: 'normal', color: colors.textSecondary }}>
+                      {feedback.explanation}
+                    </div>
+                  )}
+                </>
+              } 
+            />
           </div>
         ) : (
           <div className="fade-in" key={currentIndex}>

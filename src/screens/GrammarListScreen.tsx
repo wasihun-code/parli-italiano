@@ -3,15 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import { Screen } from '../components/Screen';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
-import { grammarLessons } from '@shared/data/grammarLessons';
 import { useGrammarStore } from '@shared/store/grammarStore';
+import grammarExpanded from '@shared/data/grammarExpanded.json';
+import { ProgressBar } from '../components/ProgressBar';
 
 export const GrammarListScreen: React.FC = () => {
   const navigate = useNavigate();
   const completedLessons = useGrammarStore(state => state.completedLessons);
 
-  const completedCount = Object.keys(completedLessons).length;
-  const progressPercent = Math.round((completedCount / grammarLessons.length) * 100) || 0;
+  const completedCount = grammarExpanded.filter(l => completedLessons[l.id]).length;
+  const progressPercent = Math.round((completedCount / grammarExpanded.length) * 100) || 0;
 
   return (
     <Screen style={{ backgroundColor: colors.surface }}>
@@ -27,13 +28,11 @@ export const GrammarListScreen: React.FC = () => {
           <span style={{ fontWeight: 'bold', color: colors.primary }}>Overall Progress</span>
           <span style={{ fontWeight: 'bold', color: colors.accent }}>{progressPercent}%</span>
         </div>
-        <div style={{ height: 12, backgroundColor: 'rgba(78, 52, 46, 0.1)', borderRadius: 6, overflow: 'hidden' }}>
-          <div style={{ height: '100%', width: `${progressPercent}%`, backgroundColor: colors.accent, borderRadius: 6 }} />
-        </div>
+        <ProgressBar progress={progressPercent} />
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.lg, paddingBottom: 100 }}>
-        {grammarLessons.map((lesson, index) => {
+        {grammarExpanded.map((lesson, index) => {
           const isCompleted = completedLessons[lesson.id];
           return (
             <div 
@@ -58,11 +57,14 @@ export const GrammarListScreen: React.FC = () => {
                 {isCompleted ? '✓' : index + 1}
               </div>
               <div style={{ flex: 1 }}>
-                <h2 style={{ color: colors.primary, fontSize: 20, fontWeight: 900, margin: '0 0 4px' }}>
-                  {lesson.title}
-                </h2>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <h2 style={{ color: colors.primary, fontSize: 20, fontWeight: 900, margin: '0 0 4px' }}>
+                    {lesson.title}
+                  </h2>
+                  <span style={{ fontSize: 12, fontWeight: 'bold', color: colors.accent }}>{lesson.level}</span>
+                </div>
                 <p style={{ color: colors.textSecondary, fontSize: 14, margin: 0, lineHeight: '1.4' }}>
-                  {lesson.description}
+                  10 exercises
                 </p>
               </div>
             </div>
