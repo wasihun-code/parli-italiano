@@ -3,7 +3,7 @@
  */
 
 export type ExplanationContext = {
-  type: 'gender' | 'preposition' | 'translation' | 'vocabulary' | 'phrase' | 'sentence' | 'grammar';
+  type: 'gender' | 'preposition' | 'translation' | 'vocabulary' | 'phrase' | 'sentence' | 'grammar' | 'idioms' | 'opposites' | 'numbers';
   italian?: string;
   correctAnswer?: string;
   userAnswer?: string;
@@ -26,6 +26,12 @@ export function getWrongAnswerExplanation(context: ExplanationContext): string {
       return getTranslationExplanation(type, italian || '', correctAnswer || '');
     case 'grammar':
       return getGrammarExplanation(category || '', correctAnswer || '');
+    case 'idioms':
+      return `Hint: Pay attention to the idiom's metaphor. For example, "In bocca al lupo" means "Good luck" not a literal wolf.`;
+    case 'opposites':
+      return `L'opposto di ${italian} è ${correctAnswer}. Hint: Think of common antonyms.`;
+    case 'numbers':
+      return `Hint: ${correctAnswer} is formed by combining the tens and units. Example: venti + due = ventidue.`;
     default:
       return "Keep trying! Pay attention to the word endings and common patterns.";
   }

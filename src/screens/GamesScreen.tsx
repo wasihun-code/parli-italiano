@@ -9,6 +9,10 @@ const GAMES = [
   { id: 'genderGame', title: 'Feminine or Masculine', description: 'Guess the gender of Italian nouns.', icon: '🚻', path: '/games/gender' },
   { id: 'translationGame', title: 'Sentence Translation', description: 'Translate sentences between English and Italian.', icon: '🔄', path: '/games/translation' },
   { id: 'prepositionGame', title: 'Prepositions Game', description: 'Choose the correct preposition to complete the sentence.', icon: '🔗', path: '/games/prepositions' },
+  { id: 'idiomsGame', title: 'Expressions', description: 'Learn common Italian idioms and sayings.', icon: '💬', path: '/games/idioms' },
+  { id: 'oppositesGame', title: 'Opposites', description: 'Type the antonym of the given word.', icon: '↔️', path: '/games/opposites' },
+  { id: 'numbersGame', title: 'Numbers', description: 'Practice reading and writing numbers.', icon: '🔢', path: '/games/numbers' },
+  { id: 'stories', title: 'Storie', description: 'Read Italian stories and test your comprehension.', icon: '📖', path: '/stories' },
 ];
 
 export const GamesScreen: React.FC = () => {
@@ -24,7 +28,9 @@ export const GamesScreen: React.FC = () => {
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.lg, paddingBottom: 100 }}>
         {GAMES.map(game => {
+          const isStoryGame = game.id === 'stories';
           const progress = (gameStore as any)[game.id];
+          
           return (
             <div 
               key={game.id} 
@@ -53,12 +59,26 @@ export const GamesScreen: React.FC = () => {
                   {game.description}
                 </p>
                 <div style={{ display: 'flex', gap: spacing.md, alignItems: 'center' }}>
-                  <span style={{ fontSize: 12, fontWeight: 900, color: colors.accent, textTransform: 'uppercase' }}>
-                    Level {progress.unlockedLevels}
-                  </span>
-                  <span style={{ fontSize: 12, color: colors.textSecondary }}>
-                    High Score: {progress.highScore}
-                  </span>
+                  {!isStoryGame && progress && (
+                    <>
+                      <span style={{ fontSize: 12, fontWeight: 900, color: colors.accent, textTransform: 'uppercase' }}>
+                        Level {progress.unlockedLevels}
+                      </span>
+                      <span style={{ fontSize: 12, color: colors.textSecondary }}>
+                        High Score: {progress.highScore}
+                      </span>
+                    </>
+                  )}
+                  {isStoryGame && (
+                    <>
+                      <span style={{ fontSize: 12, fontWeight: 900, color: colors.accent, textTransform: 'uppercase' }}>
+                        {gameStore.completedStories.length} Completed
+                      </span>
+                      <span style={{ fontSize: 12, color: colors.textSecondary }}>
+                        {gameStore.unlockedStories.length} Unlocked
+                      </span>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

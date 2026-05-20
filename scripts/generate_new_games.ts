@@ -1,0 +1,192 @@
+import fs from 'fs';
+import path from 'path';
+
+const idioms = [
+  // Level 1
+  { "id": 1, "italian": "Piangere sul latte versato", "literal": "Crying over spilled milk", "meaning": "Worrying about something that can’t be changed is useless.", "exampleItalian": "Ormai il danno è fatto, non piangere sul latte versato.", "exampleEnglish": "The damage is done; don't cry over spilled milk.", "difficulty": 1 },
+  { "id": 2, "italian": "In bocca al lupo!", "literal": "In the mouth of the wolf", "meaning": "Used to wish someone good luck.", "exampleItalian": "-Ho l’esame di Anatomia domani, sono un po’ preoccupata. - In bocca al lupo!", "exampleEnglish": "-I have my Anatomy exam tomorrow, I’m a bit worried. - Break a leg!", "difficulty": 1 },
+  { "id": 3, "italian": "Essere buono come il pane", "literal": "As good as bread", "meaning": "To have a heart of gold, be very good-natured.", "exampleItalian": "Rafael è sempre gentile con tutti, è proprio un pezzo di pane.", "exampleEnglish": "Rafael is always kind to everyone; he has a heart of gold.", "difficulty": 1 },
+  { "id": 4, "italian": "Acqua in bocca", "literal": "To keep water in your mouth", "meaning": "A way to tell someone to keep a secret.", "exampleItalian": "Ho deciso di andare a vivere a New York, ma è un segreto! Acqua in bocca.", "exampleEnglish": "I've decided to move to New York, but it's a secret! Mum's word.", "difficulty": 1 },
+  { "id": 5, "italian": "Avere un diavolo per capello", "literal": "To have a devil for hair", "meaning": "To be very angry or in a bad mood.", "exampleItalian": "Mario è appena stato lasciato dalla moglie, è di pessimo umore. Ha un diavolo per capello.", "exampleEnglish": "Mario was just dumped by his wife, and he’s in a foul mood.", "difficulty": 1 },
+  { "id": 6, "italian": "Essere al verde", "literal": "To be at the green", "meaning": "To be out of money.", "exampleItalian": "Ho speso quasi tutti i miei risparmi per comprare la macchina, sono al verde.", "exampleEnglish": "I spent almost all my savings on buying the car, and now I’m broke.", "difficulty": 1 },
+  { "id": 7, "italian": "Non vedere l’ora", "literal": "To not see the hour", "meaning": "To look forward to something with anticipation.", "exampleItalian": "Sono così contenta di rivederti, non vedo l’ora!", "exampleEnglish": "I am so excited to see you again, I can’t wait!", "difficulty": 1 },
+  { "id": 8, "italian": "Meglio tardi che mai", "literal": "Better late than never", "meaning": "It is better to be late to something than not to do it at all.", "exampleItalian": "Sono due ore che aspetto Gino. Ah, eccolo che arriva, meglio tardi che mai.", "exampleEnglish": "I've been waiting for Gino for two hours. Ah, here he comes, better late than never!", "difficulty": 1 },
+  { "id": 9, "italian": "Costare un occhio della testa", "literal": "To cost an eye from the head", "meaning": "To be very expensive.", "exampleItalian": "Quella borsa costa un occhio della testa.", "exampleEnglish": "That bag costs an arm and a leg.", "difficulty": 1 },
+  { "id": 10, "italian": "Non tutte le ciambelle escono col buco", "literal": "Not all doughnuts come out with a hole", "meaning": "Not everything turns out the way you want it to.", "exampleItalian": "Ho fatto bene tutti gli esercizi tranne l’ultimo. Non tutte le ciambelle escono con il buco.", "exampleEnglish": "I got all the exercises right except for the last one. Not everything goes as planned.", "difficulty": 1 },
+  { "id": 11, "italian": "Rimboccarsi le maniche", "literal": "To roll up one's sleeves", "meaning": "To get to work or to get busy.", "exampleItalian": "Giorgio non può continuare a stare in casa senza fare niente, deve rimboccarsi le maniche e trovare un lavoro.", "exampleEnglish": "Giorgio can’t keep sitting around doing nothing; he needs to roll up his sleeves and find a job.", "difficulty": 1 },
+  { "id": 12, "italian": "Gettare la spugna", "literal": "To throw in the sponge", "meaning": "To give up.", "exampleItalian": "Marta non è una persona molto tenace, appena trova una difficoltà getta la spugna.", "exampleEnglish": "Marta isn’t very persistent; she throws in the towel as soon as she faces any difficulty.", "difficulty": 1 },
+  { "id": 13, "italian": "A occhio e croce", "literal": "By eye and cross", "meaning": "To estimate something roughly.", "exampleItalian": "A occhio e croce saranno 2 km.", "exampleEnglish": "By rough estimate, it’s about 2 kilometers.", "difficulty": 1 },
+  { "id": 14, "italian": "Passare la notte in bianco", "literal": "To spend the night in white", "meaning": "To not sleep at all.", "exampleItalian": "La notte prima degli esami non riesco a dormire neanche un’ora. Passo sempre la notte in bianco.", "exampleEnglish": "The night before exams, I can’t sleep even for an hour. I always have a sleepless night.", "difficulty": 1 },
+  { "id": 15, "italian": "Essere alla mano", "literal": "To be at hand", "meaning": "To be a straightforward, genuine, and approachable person.", "exampleItalian": "Giulia è sempre a disposizione ed è sempre molto gentile, è proprio una ragazza alla mano.", "exampleEnglish": "Giulia is always available and very kind, she’s such a down-to-earth girl.", "difficulty": 1 },
+  { "id": 16, "italian": "Avere fegato", "literal": "To have liver", "meaning": "To be courageous.", "exampleItalian": "Non può continuare a accettare tutti i compiti che le vengono dati, deve avere il fegato di rifiutare.", "exampleEnglish": "She can’t keep taking on every task given to her; she needs to have the guts to refuse.", "difficulty": 1 },
+  { "id": 17, "italian": "Essere un orso", "literal": "Being a bear", "meaning": "To be an unsociable person who prefers to be alone.", "exampleItalian": "Edoardo non esce mai con gli amici e odia le feste, è proprio un orso.", "exampleEnglish": "Edoardo never goes out with friends and hates parties; he’s truly a lone wolf.", "difficulty": 1 },
+  { "id": 18, "italian": "Non essere un'aquila", "literal": "To not be an eagle", "meaning": "Not being very sharp or intelligent.", "exampleItalian": "Ha dovuto ripetere la classe terza 4 volte. Non è un'aquila.", "exampleEnglish": "He had to repeat the third grade four times. He’s not the sharpest tool in the shed.", "difficulty": 1 },
+  { "id": 19, "italian": "Fare le ore piccole", "literal": "To make small hours", "meaning": "To stay up late.", "exampleItalian": "Avevo del lavoro arretrato, ho fatto le ore piccole. Sono andato a dormire alle 3.", "exampleEnglish": "I had some backlog of work, I was up all night and went to bed at 3am.", "difficulty": 1 },
+  { "id": 20, "italian": "Chi dorme non piglia pesci", "literal": "He who sleeps doesn't catch fish", "meaning": "If you are not alert or active, you will miss out on opportunities.", "exampleItalian": "Dovresti darti da fare, chi dorme non piglia pesci!", "exampleEnglish": "You should get moving, you snooze, you lose!", "difficulty": 1 },
+
+  // Level 2
+  { "id": 21, "italian": "Cercare il pelo nell’uovo", "literal": "Finding the hair in the egg", "meaning": "Being overly precise, splitting hairs.", "exampleItalian": "Claudia trova sempre qualcosa che non va, cerca il pelo nell’uovo.", "exampleEnglish": "Claudia always finds something wrong; she's always splitting hairs.", "difficulty": 2 },
+  { "id": 22, "italian": "Essere come il prezzemolo", "literal": "Being like parsley", "meaning": "To turn up everywhere.", "exampleItalian": "È incredibile, incontro Carlo ovunque: al bar, al supermercato. Carlo è come il prezzemolo.", "exampleEnglish": "It's incredible! I ran into Carlo everywhere: at the bar, at the supermarket. Carlo turns up everywhere.", "difficulty": 2 },
+  { "id": 23, "italian": "Capitare a fagiolo", "literal": "To happen at the bean", "meaning": "Perfect timing.", "exampleItalian": "Avevamo giusto bisogno di te per spostare un mobile, in questo momento. Capiti a fagiolo!", "exampleEnglish": "We needed you to help move some furniture, and here you are. You arrived just in time!", "difficulty": 2 },
+  { "id": 24, "italian": "Essere farina del proprio sacco", "literal": "From your own flour sack", "meaning": "A personal idea, initiative, or work.", "exampleItalian": "Il tuo nuovo progetto è molto interessante... - No, è tutta farina del mio sacco.", "exampleEnglish": "Your new project is very interesting... - No, it’s all on me.", "difficulty": 2 },
+  { "id": 25, "italian": "Essere alla frutta", "literal": "At the fruit", "meaning": "Being very tired, having no more energy.", "exampleItalian": "Oggi ho lavorato 10 ore, sono stanchissima, sono proprio alla frutta.", "exampleEnglish": "I've worked 10 hours today; I'm exhausted - I'm at the end of my rope.", "difficulty": 2 },
+  { "id": 26, "italian": "Prendere fischi per fiaschi", "literal": "Taking whistles for flasks", "meaning": "Misunderstanding or misinterpreting something.", "exampleItalian": "Mario è andato in via Cavour quando gli avevo detto di venire in Piazza Duomo, prende sempre fischi per fiaschi.", "exampleEnglish": "Mario went to Cavour Street when I told him to come to Duomo Square - he always misunderstands.", "difficulty": 2 },
+  { "id": 27, "italian": "Passare dalla padella alla brace", "literal": "From the pan to the embers", "meaning": "Moving from a bad situation to a worse one.", "exampleItalian": "Elena ha cambiato lavoro perché non si trovava bene in ufficio. Si lamenta già di quello nuovo. E' passata dalla padella alla brace.", "exampleEnglish": "She’s out of the frying pan, into the fire.", "difficulty": 2 },
+  { "id": 28, "italian": "Essere in quattro gatti", "literal": "To be four cats", "meaning": "Refers to a small number of people.", "exampleItalian": "Siamo andati in gita con la scuola ma molti studenti sono rimasti a casa. Eravamo in quattro gatti.", "exampleEnglish": "We went on a school trip, but many students stayed home. There were only a few of us.", "difficulty": 2 },
+  { "id": 29, "italian": "Non sapere che pesci prendere", "literal": "Not know what fish to catch", "meaning": "Not knowing what to do or which choice to make.", "exampleItalian": "Mia figlia mi risponde sempre male... Non so più che pesci prendere.", "exampleEnglish": "I don’t know what to do anymore, I’m out of options.", "difficulty": 2 },
+  { "id": 30, "italian": "Ingoiare il rospo", "literal": "To swallow the toad", "meaning": "To endure an unpleasant situation without reacting.", "exampleItalian": "Non trovo giusto che io debba pagare per il danno... Ma credo che dovrò ingoiare il rospo e pagare.", "exampleEnglish": "I guess I’ll have to swallow the bitter pill and pay.", "difficulty": 2 },
+  { "id": 31, "italian": "Prendere due piccioni con una fava", "literal": "To take two birds with one stone", "meaning": "To achieve multiple benefits with one action.", "exampleItalian": "Marta vorrebbe prendere un gelato e io fare visita a un amico... andiamo lì così prendiamo due piccioni con una fava.", "exampleEnglish": "There’s a good ice cream shop there, so we can kill two birds with one stone.", "difficulty": 2 },
+  { "id": 32, "italian": "Avere la coda di paglia", "literal": "To have a tail of straw", "meaning": "To have a guilty conscience.", "exampleItalian": "Quando critico un certo comportamento, Michele pensa sempre che mi stia riferendo a lui. Ha la coda di paglia.", "exampleEnglish": "Whenever I criticize a behavior, Michele always thinks I’m referring to him. He has a guilty conscience.", "difficulty": 2 },
+  { "id": 33, "italian": "Occhio per occhio, dente per dente", "literal": "Eye for eye, tooth for tooth", "meaning": "To repay someone with the same treatment.", "exampleItalian": "Lui si è comportato male con me, ora io farò lo stesso. Occhio per occhio, dente per dente.", "exampleEnglish": "He treated me badly, so now I’ll do the same. An eye for an eye.", "difficulty": 2 },
+  { "id": 34, "italian": "Restare a bocca asciutta", "literal": "To remain with a dry mouth", "meaning": "To not get what one wanted, to be disappointed.", "exampleItalian": "Paolo si aspettava di avere una settimana di ferie ma non l’ha avuta. È rimasto a bocca asciutta.", "exampleEnglish": "Paolo expected a vacation, but his boss didn’t approve it. He was left empty-handed.", "difficulty": 2 },
+  { "id": 35, "italian": "Alzarsi col piede sbagliato", "literal": "To get up on the wrong foot", "meaning": "To be in a bad mood for the day.", "exampleItalian": "Oggi Mario non può vedere nessuno, risponde male a tutti. Si è alzato con il piede sbagliato.", "exampleEnglish": "Mario is snapping at everyone today. He must have gotten up on the wrong side of the bed.", "difficulty": 2 },
+  { "id": 36, "italian": "Con la testa sulle spalle", "literal": "With one's head on one's shoulders", "meaning": "To be sensible and reasonable.", "exampleItalian": "Giovanni non si è mai ubriacato... È un ragazzo con la testa sulle spalle.", "exampleEnglish": "Giovanni never gets drunk... He has his head on straight.", "difficulty": 2 },
+  { "id": 37, "italian": "Avere la testa fra le nuvole", "literal": "To have one's head among the clouds", "meaning": "To be distracted, daydreaming.", "exampleItalian": "In questi giorni ti vedo un po’ pensierosa, non sei molto presente. Hai la testa tra le nuvole.", "exampleEnglish": "You seem distracted lately, like you’re not present. You have your head in the clouds.", "difficulty": 2 },
+  { "id": 38, "italian": "Fare il passo più lungo della gamba", "literal": "To take a step longer than the leg", "meaning": "To overreach or take on something beyond one’s capacity.", "exampleItalian": "Ha voluto avviare un’attività in proprio in un periodo di crisi... Ha fatto il passo più lungo della gamba.", "exampleEnglish": "He started his own business during a crisis... He bit off more than he could chew.", "difficulty": 2 },
+  { "id": 39, "italian": "Non avere peli sulla lingua", "literal": "To not have hair on one's tongue", "meaning": "To be frank and direct, without fear.", "exampleItalian": "Quando c’è qualcosa che non va, Lucia lo dice sempre apertamente. Non ha peli sulla lingua.", "exampleEnglish": "When something is wrong, Lucia always says it directly. She doesn’t mince words.", "difficulty": 2 },
+  { "id": 40, "italian": "In quattro e quattr’otto", "literal": "In four and four eight", "meaning": "In an instant, very quickly.", "exampleItalian": "Asia riesce a risolvere le espressioni in quattro e quattr’otto.", "exampleEnglish": "Asia solves math problems in the blink of an eye.", "difficulty": 2 },
+
+  // Level 3
+  { "id": 41, "italian": "Far venire il latte alle ginocchia", "literal": "Make your knees ache", "meaning": "To be annoying, boring, or tiresome.", "exampleItalian": "Non ne posso più di ascoltare Carla, mi fa venire il latte alle ginocchia.", "exampleEnglish": "I can't listen to Carla anymore; I got so bored.", "difficulty": 3 },
+  { "id": 42, "italian": "Mettere troppa carne al fuoco", "literal": "Putting too much meat on the fire", "meaning": "Trying to do more than you can handle.", "exampleItalian": "Vorrei dare 5 esami e scrivere la tesi entro ottobre, ma ho paura di mettere troppa carne al fuoco.", "exampleEnglish": "I want to take five exams and write my thesis, but I'm afraid I’m biting off more than I can chew.", "difficulty": 3 },
+  { "id": 43, "italian": "Togliere le castagne dal fuoco", "literal": "Getting the chestnuts out of the fire", "meaning": "Solving a problematic situation for someone else’s benefit.", "exampleItalian": "Nessuno vuole parlare con il responsabile, come sempre tocca a me togliere le castagne dal fuoco.", "exampleEnglish": "No one wants to talk to the boss, so as usual, it's up to me to take care of the matter.", "difficulty": 3 },
+  { "id": 44, "italian": "Allungare il brodo", "literal": "Stretching the soup", "meaning": "Adding unnecessary content to a conversation just to make it longer.", "exampleItalian": "Sarebbe bastata una frase ma Marco ha parlato per oltre un’ora... Ha allungato il brodo.", "exampleEnglish": "One sentence would have been enough, but Marco talked for over an hour.", "difficulty": 3 },
+  { "id": 45, "italian": "Perdersi in un bicchiere d’acqua", "literal": "Getting lost in a glass of water", "meaning": "Panicking over minor difficulties.", "exampleItalian": "Gli ho fatto una domanda molto facile per aiutarlo ma si è confuso ancora di più. A volte i miei studenti si perdono in un bicchier d’acqua.", "exampleEnglish": "Sometimes my students drown in a glass of water.", "difficulty": 3 },
+  { "id": 46, "italian": "Prendere il toro per le corna", "literal": "To take the bull by the horns", "meaning": "To face a problem with courage and decisiveness.", "exampleItalian": "Giulia è troppo indecisa sul da farsi, deve prendere il toro per le corna e affrontare la situazione.", "exampleEnglish": "Giulia needs to take the bull by the horns and face the situation.", "difficulty": 3 },
+  { "id": 47, "italian": "Sputare il rospo", "literal": "To spit the toad", "meaning": "To confess something or reveal a secret.", "exampleItalian": "Ho saputo qualcosa da Maria, mi ha detto di un certo matrimonio… Sputa il rospo.", "exampleEnglish": "I heard something from Maria... Spit it out.", "difficulty": 3 },
+  { "id": 48, "italian": "Avere grilli per la testa", "literal": "To have crickets in the head", "meaning": "To have unrealistic or fanciful ideas.", "exampleItalian": "Riccardo pensa continuamente ai suoi progetti irrealizzabili, ha troppi grilli per la testa.", "exampleEnglish": "Riccardo keeps dreaming up unrealistic projects; he has his head in the clouds.", "difficulty": 3 },
+  { "id": 49, "italian": "Avere una brutta gatta da pelare", "literal": "To have a bad cat to peel", "meaning": "To have a difficult or annoying problem to solve.", "exampleItalian": "Qualcuno dovrà parlarci, è una brutta gatta da pelare.", "exampleEnglish": "Someone has to talk to him; it’s a tough nut to crack.", "difficulty": 3 },
+  { "id": 50, "italian": "Stare con le mani in mano", "literal": "To stay with one's hands in hand", "meaning": "To do nothing, to be idle.", "exampleItalian": "Aiutaci! Non vedi che siamo in difficoltà? Non startene con le mani in mano.", "exampleEnglish": "Help us! Can’t you see we’re in trouble? Don’t just sit on your hands.", "difficulty": 3 },
+  { "id": 51, "italian": "Fare i conti senza l’oste", "literal": "To count without the innkeeper", "meaning": "To make plans hastily without consulting those involved.", "exampleItalian": "Hai parlato con Pino? Mi sembra che tu stia facendo i conti senza l’oste.", "exampleEnglish": "Have you talked to Pino? You’re counting your chickens before they hatch.", "difficulty": 3 },
+  { "id": 52, "italian": "Spaccare il minuto", "literal": "To split the minute", "meaning": "To be extremely precise.", "exampleItalian": "Avevo appuntamento con Carla alle 16:00, è arrivata alle 16 in punto. Ha spaccato il minuto.", "exampleEnglish": "I had an appointment with Carla at 4 pm, she arrived at 4 pm sharp - she was right on the dot!", "difficulty": 3 },
+  { "id": 53, "italian": "Cambiare le carte in tavola", "literal": "To change the cards on the table", "meaning": "To do something differently from what was previously agreed upon.", "exampleItalian": "Aveva detto di essere d’accordo con il piano, adesso non è convinto... Vuole cambiare le carte in tavola.", "exampleEnglish": "He had agreed with the plan, but now he wants to change the game plan.", "difficulty": 3 },
+  { "id": 54, "italian": "Piantare in asso", "literal": "To plant in the ace", "meaning": "To leave someone unexpectedly without warning.", "exampleItalian": "Eravamo a cena ma a un certo punto ha ricevuto una chiamata e mi ha piantato in asso.", "exampleEnglish": "We were having dinner, but he got an important call and left me hanging.", "difficulty": 3 },
+  { "id": 55, "italian": "Darsi la zappa sui piedi", "literal": "To give oneself the hoe on the feet", "meaning": "To unintentionally make a mistake that ends up harming your own situation.", "exampleItalian": "Manuel ha accettato un lavoro che è molto noioso. Si è dato la zappa sui piedi.", "exampleEnglish": "Manuel accepted a job that is very boring. He shot himself in the foot.", "difficulty": 3 },
+  { "id": 56, "italian": "Essere in una botte di ferro", "literal": "To be in a barrel of iron", "meaning": "To be in a safe, secure, or protected situation.", "exampleItalian": "Tutte le accuse a suo carico sono crollate, è in una botte di ferro ora.", "exampleEnglish": "All the charges against him have collapsed, he’s in the clear now.", "difficulty": 3 },
+  { "id": 57, "italian": "Mettere i bastoni fra le ruote", "literal": "To put sticks between wheels", "meaning": "To obstruct someone or sabotage their plans.", "exampleItalian": "Alessandro si mette sempre in mezzo. Mette sempre i bastoni fra le ruote!", "exampleEnglish": "Alessandro always interferes. He always throws a wrench in the works!", "difficulty": 3 },
+  { "id": 58, "italian": "Fare il bastian contrario", "literal": "To play the contrary man", "meaning": "To take an opposing position just to contradict others.", "exampleItalian": "Andrea mi deve sempre contraddire, si diverte a fare il bastian contrario.", "exampleEnglish": "Andrea always has to contradict me, he enjoys playing devil’s advocate.", "difficulty": 3 },
+  { "id": 59, "italian": "Se la canta e se la suona", "literal": "To sing and play it by oneself", "meaning": "To do everything alone, often in a self-centered way.", "exampleItalian": "Alessandro fa sempre mille cose e poi si lamenta... se la canta e se la suona da solo.", "exampleEnglish": "Alessandro does a thousand things and complains... he’s a one-man band.", "difficulty": 3 },
+  { "id": 60, "italian": "Fare a scaricabarile", "literal": "To play pass-the-buck", "meaning": "When people try to avoid responsibility by shifting it to someone else.", "exampleItalian": "Quando nessuno in ufficio vuole prendersi la responsabilità, tutti iniziano a fare a scaricabarile.", "exampleEnglish": "When no one wants to take responsibility, they all start passing the buck.", "difficulty": 3 }
+];
+
+const opposites = [
+  // Difficulty 1
+  { id: 1, italian: "alto", opposite: "basso", difficulty: 1 },
+  { id: 2, italian: "grande", opposite: "piccolo", difficulty: 1 },
+  { id: 3, italian: "buono", opposite: "cattivo", difficulty: 1 },
+  { id: 4, italian: "bello", opposite: "brutto", difficulty: 1 },
+  { id: 5, italian: "nuovo", opposite: "vecchio", difficulty: 1 },
+  { id: 6, italian: "giovane", opposite: "vecchio", difficulty: 1 },
+  { id: 7, italian: "caldo", opposite: "freddo", difficulty: 1 },
+  { id: 8, italian: "aperto", opposite: "chiuso", difficulty: 1 },
+  { id: 9, italian: "giorno", opposite: "notte", difficulty: 1 },
+  { id: 10, italian: "vero", opposite: "falso", difficulty: 1 },
+  { id: 11, italian: "bianco", opposite: "nero", difficulty: 1 },
+  { id: 12, italian: "luce", opposite: "buio", difficulty: 1 },
+  { id: 13, italian: "lungo", opposite: "corto", difficulty: 1 },
+  { id: 14, italian: "facile", opposite: "difficile", difficulty: 1 },
+  { id: 15, italian: "felice", opposite: "triste", difficulty: 1 },
+  { id: 16, italian: "ricco", opposite: "povero", difficulty: 1 },
+  { id: 17, italian: "pieno", opposite: "vuoto", difficulty: 1 },
+  { id: 18, italian: "pulito", opposite: "sporco", difficulty: 1 },
+  { id: 19, italian: "veloce", opposite: "lento", difficulty: 1 },
+  { id: 20, italian: "vicino", opposite: "lontano", difficulty: 1 },
+
+  // Difficulty 2
+  { id: 21, italian: "pesante", opposite: "leggero", difficulty: 2 },
+  { id: 22, italian: "forte", opposite: "debole", difficulty: 2 },
+  { id: 23, italian: "duro", opposite: "morbido", difficulty: 2 },
+  { id: 24, italian: "dolce", opposite: "amaro", difficulty: 2 },
+  { id: 25, italian: "salato", opposite: "sciapo", difficulty: 2 },
+  { id: 26, italian: "simpatico", opposite: "antipatico", difficulty: 2 },
+  { id: 27, italian: "intelligente", opposite: "stupido", difficulty: 2 },
+  { id: 28, italian: "divertente", opposite: "noioso", difficulty: 2 },
+  { id: 29, italian: "largo", opposite: "stretto", difficulty: 2 },
+  { id: 30, italian: "spesso", opposite: "sottile", difficulty: 2 },
+  { id: 31, italian: "destra", opposite: "sinistra", difficulty: 2 },
+  { id: 32, italian: "su", opposite: "giù", difficulty: 2 },
+  { id: 33, italian: "sopra", opposite: "sotto", difficulty: 2 },
+  { id: 34, italian: "davanti", opposite: "dietro", difficulty: 2 },
+  { id: 35, italian: "prima", opposite: "dopo", difficulty: 2 },
+  { id: 36, italian: "inizio", opposite: "fine", difficulty: 2 },
+  { id: 37, italian: "entrare", opposite: "uscire", difficulty: 2 },
+  { id: 38, italian: "salire", opposite: "scendere", difficulty: 2 },
+  { id: 39, italian: "andare", opposite: "venire", difficulty: 2 },
+  { id: 40, italian: "comprare", opposite: "vendere", difficulty: 2 },
+
+  // Difficulty 3
+  { id: 41, italian: "ottimista", opposite: "pessimista", difficulty: 3 },
+  { id: 42, italian: "coraggioso", opposite: "codardo", difficulty: 3 },
+  { id: 43, italian: "generoso", opposite: "avaro", difficulty: 3 },
+  { id: 44, italian: "attento", opposite: "distratto", difficulty: 3 },
+  { id: 45, italian: "utile", opposite: "inutile", difficulty: 3 },
+  { id: 46, italian: "possibile", opposite: "impossibile", difficulty: 3 },
+  { id: 47, italian: "sicuro", opposite: "pericoloso", difficulty: 3 },
+  { id: 48, italian: "giusto", opposite: "sbagliato", difficulty: 3 },
+  { id: 49, italian: "rumoroso", opposite: "silenzioso", difficulty: 3 },
+  { id: 50, italian: "bagnato", opposite: "asciutto", difficulty: 3 },
+  { id: 51, italian: "calmo", opposite: "agitato", difficulty: 3 },
+  { id: 52, italian: "chiaro", opposite: "scuro", difficulty: 3 },
+  { id: 53, italian: "presente", opposite: "assente", difficulty: 3 },
+  { id: 54, italian: "maggioranza", opposite: "minoranza", difficulty: 3 },
+  { id: 55, italian: "accendere", opposite: "spegnere", difficulty: 3 },
+  { id: 56, italian: "amare", opposite: "odiare", difficulty: 3 },
+  { id: 57, italian: "ricordare", opposite: "dimenticare", difficulty: 3 },
+  { id: 58, italian: "piangere", opposite: "ridere", difficulty: 3 },
+  { id: 59, italian: "vincere", opposite: "perdere", difficulty: 3 },
+  { id: 60, italian: "nascere", opposite: "morire", difficulty: 3 }
+];
+
+const units = ["zero", "uno", "due", "tre", "quattro", "cinque", "sei", "sette", "otto", "nove"];
+const teens = ["dieci", "undici", "dodici", "tredici", "quattordici", "quindici", "sedici", "diciassette", "diciotto", "diciannove"];
+const tens = ["venti", "trenta", "quaranta", "cinquanta", "sessanta", "settanta", "ottanta", "novanta"];
+
+const numToItalian = (n: number) => {
+  if (n < 10) return units[n];
+  if (n < 20) return teens[n - 10];
+  if (n < 100) {
+    const t = Math.floor(n / 10);
+    const u = n % 10;
+    let base = tens[t - 2];
+    if (u === 1 || u === 8) {
+      base = base.slice(0, -1);
+    }
+    return u === 0 ? base : base + (u === 3 ? "tré" : units[u]);
+  }
+  if (n === 100) return "cento";
+  if (n < 1000) {
+    const h = Math.floor(n / 100);
+    const rest = n % 100;
+    const base = h === 1 ? "cento" : units[h] + "cento";
+    return rest === 0 ? base : base + numToItalian(rest);
+  }
+  if (n === 1000) return "mille";
+  return "N/A";
+};
+
+const numbers = [];
+let idCounter = 1;
+
+// Level 1: 1 - 20
+for (let i = 0; i <= 20; i++) {
+  numbers.push({ id: idCounter++, italian: numToItalian(i), digit: i, difficulty: 1 });
+}
+
+// Level 2: 21 - 100
+for (let i = 21; i <= 100; i++) {
+  // Take some samples instead of all to avoid massive list, or just include all.
+  // Actually, let's include all to be thorough.
+  numbers.push({ id: idCounter++, italian: numToItalian(i), digit: i, difficulty: 2 });
+}
+
+// Level 3: Hundreds, thousands, tricky ones (101, 108, etc.)
+const trickyNumbers = [101, 108, 111, 120, 150, 200, 201, 208, 300, 333, 400, 500, 600, 700, 800, 900, 999, 1000];
+trickyNumbers.forEach(n => {
+  numbers.push({ id: idCounter++, italian: numToItalian(n), digit: n, difficulty: 3 });
+});
+
+fs.writeFileSync('/home/waseageru/parli-italiano/src/data/idiomsGame.json', JSON.stringify(idioms, null, 2));
+fs.writeFileSync('/home/waseageru/parli-italiano/src/data/oppositesGame.json', JSON.stringify(opposites, null, 2));
+fs.writeFileSync('/home/waseageru/parli-italiano/src/data/numbersGame.json', JSON.stringify(numbers, null, 2));
+
+console.log('Successfully generated JSON files.');

@@ -5,6 +5,7 @@ import { spacing } from '@shared/theme/spacing';
 
 const NAV_ITEMS = [
   { label: 'Grammar', path: '/grammar', icon: '📚' },
+  { label: 'Stories', path: '/stories', icon: '📖' },
   { label: 'Review', path: '/review', icon: '🃏' },
   { label: 'Games', path: '/games', icon: '🎮' },
 ];

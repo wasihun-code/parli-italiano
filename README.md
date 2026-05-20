@@ -1,32 +1,39 @@
 # Parla Italiano 🇮🇹
 ### Offline Italian conversation practice with a friendly AI tutor.
 
-Parla Italiano is a web-based language learning application designed to bridge the gap between basic vocabulary and real-world conversation. It features immersive scenarios and a specialized AI tutor named **Antonio**, powered by **llama3.1:8b** running locally through Ollama.
+Parla Italiano is a web-based language learning application designed to bridge the gap between basic vocabulary and real-world conversation. It features immersive scenarios, comprehensive grammar lessons, a suite of interactive games, and a specialized AI tutor named **Antonio**, powered by **llama3.1:8b** running locally through Ollama.
 
 ---
 
 ## ✨ Features
 
-- **110 Real-World Scenarios**: From ordering a coffee in Rome to navigating a job interview in Milan.
-- **Phased Learning Path**: 
-  - **Foundations**: Master the essential Italian building blocks.
-  - **Scenario Training**: Progressive drills covering Vocabulary, Phrases, and Sentences.
-  - **Conversation**: Open-ended role-play with Antonio.
-- **Offline-First AI**: Powered by **Ollama** and **llama3.1:8b** for secure, local inference.
-- **Natural Italian Voice**: Integrated with high-quality TTS for authentic listening practice.
-- **SRS Review**: Spaced Repetition System to ensure long-term retention of new words.
+- **116 Validated Scenarios**: From ordering a coffee in Rome to navigating a job interview in Milan. Each scenario includes Vocabulary, Phrases, and Sentence training.
+- **7 Interactive Mini-Games**: 
+  - **Gender (Maschile o Femminile?)**: Fast-paced noun classification.
+  - **Translation**: Sentence-level translation drills.
+  - **Prepositions**: Contextual preposition mastery.
+  - **Expressions (Idioms)**: Learn common Italian sayings and their meanings.
+  - **Opposites**: Typed-answer antonym challenge.
+  - **Numbers**: Practice digits ↔ Italian word conversion (1-1000).
+  - **Stories (Storie) 📖**: Immersive book-style reader with parallel translations and comprehension quizzes.
+- **Comprehensive Grammar (A1-A2)**: 12 detailed topics with explanations, practical examples, and interactive quizzes.
+- **Phased Learning Path**: Master the essential Italian building blocks through Foundations, Scenarios, and Games.
+- **AI Conversation**: Open-ended role-play with **Antonio**, your personal AI tutor, powered by local inference.
+- **Explanatory Feedback**: Dynamic, rule-based explanations for incorrect answers to help you understand *why* a mistake was made.
+- **Offline-First**: Powered by **Ollama** and **llama3.1:8b** for secure, local inference.
+- **SRS Review**: Spaced Repetition System (Spaced Cards) to ensure long-term retention of new words.
 - **Placement Test**: Start at the right level based on your current proficiency.
-- **Progress Tracking**: Detailed stats on your journey to Italian fluency.
+- **Keyboard Shortcuts**: Power-user features (1-4 for options, Enter to submit) for a faster learning flow.
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend**: React, TypeScript, Vite
-- **State Management**: Zustand
+- **Frontend**: React 19, TypeScript, Vite
+- **State Management**: Zustand (Persisted)
 - **Local Database**: Dexie.js (IndexedDB)
 - **AI Engine**: Ollama (`llama3.1:8b` by default)
-- **Voice**: Spark-TTS (Optional for high-quality voice)
+- **Voice**: Web Speech API / Spark-TTS
 
 ---
 
@@ -79,18 +86,13 @@ Parla Italiano is a web-based language learning application designed to bridge t
 - `src/`: Main source code.
   - `ai/`: Prompt templates and AI logic.
   - `components/`: Reusable UI components.
-  - `data/`: Scenario definitions and lesson content.
+  - `data/`: Scenario definitions, lesson content, games, and stories.
   - `lib/`: Utilities (LLM, TTS, DB, etc.).
-  - `screens/`: App screens (Home, Training, Conversation).
-  - `store/`: Zustand state stores.
-- `public/`: Static assets.
+  - `screens/`: App screens (Home, Training, Conversation, Games).
+  - `store/`: Zustand state stores for auth, progress, and game state.
+- `scripts/`: Generation and validation scripts for curriculum and data.
+- `public/`: Static assets and PWA icons.
 - `e2e/`: Playwright end-to-end tests.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 ---
 
@@ -103,4 +105,4 @@ This project is licensed under the [MIT License](LICENSE).
 ## 🙏 Acknowledgements
 
 - **Ollama**: For providing the engine for local LLM inference.
-- **Spark-TTS**: For the natural Italian speech synthesis.
+- **Spark-TTS**: For high-quality Italian speech synthesis.

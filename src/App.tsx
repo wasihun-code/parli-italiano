@@ -21,6 +21,12 @@ import { GamesScreen } from './screens/GamesScreen';
 import { GenderGame } from './screens/GenderGame';
 import { TranslationGame } from './screens/TranslationGame';
 import { PrepositionGame } from './screens/PrepositionGame';
+import { IdiomsGame } from './screens/IdiomsGame';
+import { OppositesGame } from './screens/OppositesGame';
+import { NumbersGame } from './screens/NumbersGame';
+import { StoriesScreen } from './screens/StoriesScreen';
+import { StoryReaderScreen } from './screens/StoryReaderScreen';
+import { StoryFinalQuizScreen } from './screens/StoryFinalQuizScreen';
 import { useCurrentUser } from '@shared/store/authStore';
 import { FooterNav } from './components/FooterNav';
 
@@ -71,6 +77,12 @@ export const App: React.FC = () => {
             <Route path="/games/gender" element={<GenderGame />} />
             <Route path="/games/translation" element={<TranslationGame />} />
             <Route path="/games/prepositions" element={<PrepositionGame />} />
+            <Route path="/games/idioms" element={<IdiomsGame />} />
+            <Route path="/games/opposites" element={<OppositesGame />} />
+            <Route path="/games/numbers" element={<NumbersGame />} />
+            <Route path="/stories" element={<StoriesScreen />} />
+            <Route path="/stories/:storyId" element={<StoryReaderScreen />} />
+            <Route path="/stories/:storyId/quiz" element={<StoryFinalQuizScreen />} />
             <Route path="/" element={<HomeScreen />} />
             <Route path="/onboarding" element={<OnboardingScreen />} />
             <Route path="/placement-test" element={<PlacementTestScreen />} />
