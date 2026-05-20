@@ -20,6 +20,9 @@ export type ScenarioPhaseProgress = {
 };
 
 type ProgressState = {
+  xp: number;
+  streak: number;
+  lastActivityDate: string;
   foundationScores: Record<number, number>;
   scenarioProgress: Record<number, ScenarioPhaseProgress>;
   recordFoundationScore: (lessonId: number, score: number) => void;
@@ -29,6 +32,8 @@ type ProgressState = {
   setScenarioVocabularyCompleted: (scenarioId: number, completed: boolean) => void;
   setScenarioPhraseScore: (scenarioId: number, score: number) => void;
   setScenarioSentenceScore: (scenarioId: number, score: number) => void;
+  addXP: (amount: number) => void;
+  updateStreak: () => void;
 };
 
 const emptyScenarioProgress: ScenarioPhaseProgress = {
@@ -62,8 +67,22 @@ function withConversationGate(
 export const useProgressStore = create<ProgressState>()(
   persist(
     (set, get) => ({
+      xp: 0,
+      streak: 0,
+      lastActivityDate: '',
       foundationScores: {},
       scenarioProgress: {},
+      addXP: (amount) => set((state) => ({ xp: state.xp + amount })),
+      updateStreak: () => set((state) => {
+        const today = new Date().toISOString().split('T')[0];
+        if (state.lastActivityDate === today) return state;
+        
+        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+        if (state.lastActivityDate === yesterday) {
+          return { streak: state.streak + 1, lastActivityDate: today };
+        }
+        return { streak: 1, lastActivityDate: today };
+      }),
       recordFoundationScore: (lessonId, score) => {
         const previousScore = get().foundationScores[lessonId] ?? 0;
         const nextScore = Math.max(previousScore, score);

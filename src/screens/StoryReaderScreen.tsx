@@ -194,7 +194,7 @@ export const StoryReaderScreen: React.FC = () => {
           </button>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.xl }}>
+        <div className="story-reader-questions" style={{ display: 'flex', flexDirection: 'column', gap: spacing.xl }}>
           {/* Vocabulary Questions */}
           {currentPage.questions.vocabulary.length > 0 && (
             <section>

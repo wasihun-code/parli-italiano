@@ -33,7 +33,7 @@ export const FooterNav: React.FC = () => {
   if (shouldHide) return null;
 
   return (
-    <div style={{
+    <div className="mobile-only" style={{
       position: 'fixed',
       bottom: spacing.lg,
       right: spacing.lg,

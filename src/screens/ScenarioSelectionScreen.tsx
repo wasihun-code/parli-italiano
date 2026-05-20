@@ -51,7 +51,7 @@ export const ScenarioSelectionScreen: React.FC = () => {
         </p>
       </header>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.lg, paddingBottom: 100 }}>
+      <div className="games-grid">
         {scenarioCatalog.map(scenario => (
           <div key={scenario.id} className="card fade-in" onClick={() => navigate(`/scenarios/${scenario.id}/vocabulary`)} style={{ cursor: 'pointer' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>

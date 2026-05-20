@@ -26,7 +26,7 @@ export const GamesScreen: React.FC = () => {
         <p style={{ color: colors.textSecondary }}>Test your skills in a fun way.</p>
       </header>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.lg, paddingBottom: 100 }}>
+      <div className="games-grid">
         {GAMES.map(game => {
           const isStoryGame = game.id === 'stories';
           const progress = (gameStore as any)[game.id];

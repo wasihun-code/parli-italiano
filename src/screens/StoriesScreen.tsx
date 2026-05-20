@@ -27,7 +27,7 @@ export const StoriesScreen: React.FC = () => {
         <p style={{ color: colors.textSecondary }}>Read stories and test your comprehension.</p>
       </header>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.lg, paddingBottom: 100 }}>
+      <div className="games-grid">
         {storiesData.stories.map((story) => {
           const isUnlocked = unlockedStories.includes(story.title);
           const isCompleted = completedStories.includes(story.title);

@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { Header } from './Header';
 import { BottomNav } from './BottomNav';
+import { Sidebar } from './Sidebar';
 
 interface ScreenProps {
   children: React.ReactNode;
@@ -28,30 +28,27 @@ export const Screen: React.FC<ScreenProps> = ({ children, style }) => {
     <div
       className="fade-in"
       style={{
-        backgroundColor: colors.bg,
         display: 'flex',
         flexDirection: 'column',
-        height: '100dvh',
-        overflow: 'hidden',
+        minHeight: '100dvh',
         position: 'relative',
         ...style,
       }}
     >
       <Header />
-      <main style={{ 
-        flex: 1, 
-        overflowY: 'auto',
-        width: '100%', 
-        maxWidth: 700,
-        margin: '0 auto',
-        padding: isTraining ? '72px 0 0 0' : `72px ${spacing.md}px ${spacing.md}px ${spacing.md}px`,
-        paddingBottom: (showNav ? 100 : 0) + spacing.xl,
-        boxSizing: 'border-box',
-        display: 'flex',
-        flexDirection: 'column',
-      }}>
-        {children}
-      </main>
+      <div className="layout-container">
+        <main className="layout-main" style={{ 
+          padding: isTraining ? '72px 0 0 0' : `72px 0 0 0`,
+          paddingBottom: (showNav ? 100 : 0) + spacing.xl,
+        }}>
+          {children}
+        </main>
+        {showNav && (
+          <aside className="layout-sidebar">
+            <Sidebar />
+          </aside>
+        )}
+      </div>
       {showNav && <BottomNav />}
     </div>
   );

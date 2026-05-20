@@ -31,7 +31,7 @@ export const GrammarListScreen: React.FC = () => {
         <ProgressBar progress={progressPercent} />
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.lg, paddingBottom: 100 }}>
+      <div className="games-grid">
         {grammarExpanded.map((lesson, index) => {
           const isCompleted = completedLessons[lesson.id];
           return (

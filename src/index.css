@@ -38,14 +38,97 @@ body {
 
 #root {
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+  margin: 0;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  background-color: var(--surface);
-  box-shadow: 0 0 40px rgba(0,0,0,0.03);
+  background-color: var(--bg);
   position: relative;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  padding: 0 16px;
+}
+
+@media (min-width: 1024px) {
+  .layout-container {
+    flex-direction: row;
+    gap: 32px;
+    padding: 0 24px;
+  }
+}
+
+.layout-main {
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-sidebar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .layout-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    flex-shrink: 0;
+    padding-top: 72px; /* align with main content header */
+    gap: 24px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+.home-desktop-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .home-desktop-layout {
+    flex-direction: row;
+  }
+  .home-col {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .games-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 h1, h2, h3, h4 {
@@ -120,4 +203,26 @@ button {
     box-shadow: none;
   }
   h1 { font-size: 2rem; }
+}
+
+.story-reader-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
+@media (min-width: 1024px) {
+  .story-reader-layout {
+    flex-direction: row;
+  }
+  .story-reader-text {
+    flex: 3;
+    position: sticky;
+    top: 72px;
+    height: fit-content;
+  }
+  .story-reader-questions {
+    flex: 2;
+  }
 }
