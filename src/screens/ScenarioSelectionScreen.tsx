@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { PrimaryButton } from '../components/PrimaryButton';
 import { Screen } from '../components/Screen';
@@ -7,11 +7,38 @@ import { useProgressStore } from '@shared/store/progressStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 
+const CATEGORIES = [
+  'All',
+  'Travel',
+  'Accommodation',
+  'Dining',
+  'Shopping',
+  'Daily Life',
+  'WorkStudy',
+  'Social',
+  'Culture',
+  'Health',
+  'Tech',
+  'Animals',
+  'Verbs_ARE',
+  'Verbs_ERE',
+  'Verbs_IRE',
+  'Reflexive_Verbs',
+  'Adjectives',
+  'Miscellaneous'
+];
+
 export const ScenarioSelectionScreen: React.FC = () => {
   const navigate = useNavigate();
+  const [activeCategory, setActiveCategory] = useState('All');
   const areFoundationsPassed = useProgressStore(state =>
     state.areFoundationsPassed(),
   );
+
+  const filteredScenarios = useMemo(() => {
+    if (activeCategory === 'All') return scenarioCatalog;
+    return scenarioCatalog.filter(s => s.category === activeCategory);
+  }, [activeCategory]);
 
   if (!areFoundationsPassed) {
     return (
@@ -42,59 +69,74 @@ export const ScenarioSelectionScreen: React.FC = () => {
     );
   }
 
-  const groupedScenarios = scenarioCatalog.reduce((acc, scenario) => {
-    if (!acc[scenario.category]) {
-      acc[scenario.category] = [];
-    }
-    acc[scenario.category].push(scenario);
-    return acc;
-  }, {} as Record<string, typeof scenarioCatalog>);
-
   return (
     <Screen>
-      <header style={{ marginBottom: spacing.xl }}>
-        <h1 style={{ color: colors.primary, fontSize: 32, fontWeight: 900, margin: 0 }}>Scenarios 🗺️</h1>
-        <p style={{ color: colors.textSecondary, fontSize: 18, marginTop: spacing.xxs }}>
-          Practice Italian in real contexts.
-        </p>
-      </header>
+      <div className="scenario-selection-container" style={{ display: 'flex', flexDirection: 'column', gap: spacing.xl }}>
+        <header>
+          <h1 style={{ color: colors.primary, fontSize: 32, fontWeight: 900, margin: 0 }}>Scenarios 🗺️</h1>
+          <p style={{ color: colors.textSecondary, fontSize: 18, marginTop: spacing.xxs }}>
+            Practice Italian in real contexts.
+          </p>
+        </header>
 
-      {Object.entries(groupedScenarios).map(([category, scenarios]) => (
-        <section key={category} style={{ marginBottom: spacing.xl }}>
-          <h2 style={{ 
-            color: colors.primary, 
-            fontSize: 24, 
-            fontWeight: 900, 
-            marginBottom: spacing.md, 
+        <div className="scenario-layout" style={{ display: 'flex', flexDirection: 'column', gap: spacing.xl }}>
+          {/* Category Filter */}
+          <div className="category-sidebar" style={{ 
             display: 'flex', 
-            alignItems: 'center', 
+            flexDirection: 'row', 
+            overflowX: 'auto', 
             gap: spacing.sm,
-            paddingBottom: spacing.xs,
-            borderBottom: `2px solid ${colors.border}`
+            paddingBottom: spacing.sm,
+            msOverflowStyle: 'none',
+            scrollbarWidth: 'none',
           }}>
-            <span style={{ fontSize: 28 }}>{getCategoryEmoji(category)}</span>
-            {category}
-          </h2>
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
-            gap: spacing.lg,
-            marginBottom: spacing.xl
-          }}>
-            {scenarios.map(scenario => (
+            {CATEGORIES.map(cat => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                style={{
+                  padding: `${spacing.xs}px ${spacing.md}px`,
+                  borderRadius: 12,
+                  border: `2px solid ${activeCategory === cat ? colors.primary : colors.border}`,
+                  backgroundColor: activeCategory === cat ? colors.primary : '#fff',
+                  color: activeCategory === cat ? '#fff' : colors.textSecondary,
+                  fontWeight: '900',
+                  fontSize: 14,
+                  whiteSpace: 'nowrap',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 6
+                }}
+              >
+                <span>{cat === 'All' ? '🌐' : getCategoryEmoji(cat)}</span>
+                {cat.replace('_', ' ')}
+              </button>
+            ))}
+          </div>
+
+          {/* Scenario Grid */}
+          <div className="games-grid">
+            {filteredScenarios.map(scenario => (
               <div 
                 key={scenario.id} 
-                className="card fade-in" 
+                className="coffee-card fade-in" 
                 onClick={() => navigate(`/scenarios/${scenario.id}`)} 
                 style={{ 
                   cursor: 'pointer', 
-                  padding: spacing.lg,
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between'
                 }}
               >
                 <div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: spacing.sm }}>
+                    <span style={{ fontSize: 24 }}>{getCategoryEmoji(scenario.category)}</span>
+                    <span style={{ fontSize: 12, fontWeight: 900, color: colors.accent, textTransform: 'uppercase', backgroundColor: 'rgba(0,0,0,0.05)', padding: '2px 6px', borderRadius: 4 }}>
+                      {scenario.category}
+                    </span>
+                  </div>
                   <h3 style={{ color: colors.primary, fontSize: 18, fontWeight: 900, margin: '0 0 8px' }}>
                     {scenario.title}
                   </h3>
@@ -102,26 +144,42 @@ export const ScenarioSelectionScreen: React.FC = () => {
                     {scenario.description}
                   </p>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                  <div style={{ 
-                    color: colors.accent, 
-                    fontWeight: 900, 
-                    fontSize: 14, 
-                    display: 'flex', 
-                    alignItems: 'center', 
-                    gap: 4 
-                  }}>
-                    View Details
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                  </div>
-                </div>
+                
+                <PrimaryButton 
+                  label="View Details" 
+                  onPress={() => navigate(`/scenarios/${scenario.id}`)} 
+                  variant="primary"
+                />
               </div>
             ))}
           </div>
-        </section>
-      ))}
+        </div>
+      </div>
+
+      <style>{`
+        .category-sidebar::-webkit-scrollbar {
+          display: none;
+        }
+        @media (min-width: 1024px) {
+          .scenario-layout {
+            flex-direction: row !important;
+            align-items: flex-start;
+          }
+          .category-sidebar {
+            flex-direction: column !important;
+            width: 220px;
+            flex-shrink: 0;
+            overflow-x: visible !important;
+            position: sticky;
+            top: 24px;
+          }
+          .category-sidebar button {
+            width: 100%;
+            text-align: left;
+            justify-content: flex-start;
+          }
+        }
+      `}</style>
     </Screen>
   );
 };

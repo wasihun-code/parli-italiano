@@ -6,6 +6,7 @@ import { spacing } from '@shared/theme/spacing';
 import { useGameStore } from '@shared/store/gameStore';
 import storiesData from '@shared/data/stories.json';
 import { ProgressBar } from '../components/ProgressBar';
+import { PrimaryButton } from '../components/PrimaryButton';
 import { useSubscriptionStore } from '@shared/store/subscriptionStore';
 
 export const StoriesScreen: React.FC = () => {
@@ -52,19 +53,13 @@ export const StoriesScreen: React.FC = () => {
           return (
             <div 
               key={story.title} 
-              className={`card fade-in ${(!isUnlocked && !isPremiumLocked) ? 'locked' : ''}`} 
+              className={`coffee-card fade-in ${(!isUnlocked && !isPremiumLocked) ? 'locked' : ''}`} 
               onClick={handleClick}
               style={{ 
-                cursor: (isUnlocked || isPremiumLocked) ? 'pointer' : 'default', 
-                display: 'flex', 
-                flexDirection: 'column', 
-                gap: spacing.sm,
                 opacity: (isUnlocked || isPremiumLocked) ? 1 : 0.6,
-                position: 'relative',
-                padding: spacing.lg
               }}
             >
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: spacing.sm }}>
                 <h2 style={{ color: colors.primary, fontSize: 20, fontWeight: 900, margin: 0 }}>
                   {story.title}
                 </h2>
@@ -73,7 +68,7 @@ export const StoriesScreen: React.FC = () => {
                 {isCompleted && <span style={{ fontSize: 24, color: colors.success }}>✅</span>}
               </div>
 
-              <div style={{ display: 'flex', gap: spacing.md, alignItems: 'center' }}>
+              <div style={{ display: 'flex', gap: spacing.md, alignItems: 'center', marginBottom: spacing.md }}>
                 <span style={{ 
                   fontSize: 12, 
                   fontWeight: 900, 
@@ -91,7 +86,7 @@ export const StoriesScreen: React.FC = () => {
               </div>
 
               {isUnlocked && (
-                <div style={{ marginTop: spacing.xs }}>
+                <div style={{ marginBottom: spacing.lg }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4, fontSize: 12, fontWeight: 'bold' }}>
                     <span style={{ color: colors.textSecondary }}>Progress</span>
                     <span style={{ color: colors.accent }}>{progressPercent}%</span>
@@ -99,6 +94,14 @@ export const StoriesScreen: React.FC = () => {
                   <ProgressBar progress={progressPercent} />
                 </div>
               )}
+
+              <div style={{ flex: 1 }} />
+              <PrimaryButton 
+                label={isPremiumLocked ? "Unlock Premium" : (isCompleted ? "Read Again" : "Start Story")} 
+                onPress={handleClick} 
+                variant={isPremiumLocked ? 'accent' : 'primary'}
+                disabled={!isUnlocked && !isPremiumLocked}
+              />
             </div>
           );
         })}

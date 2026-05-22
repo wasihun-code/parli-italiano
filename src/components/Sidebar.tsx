@@ -14,7 +14,7 @@ const NAV_ITEMS = [
   { path: '/games', label: 'Games', icon: '🎮' },
   { path: '/stories', label: 'Stories', icon: '📖' },
   { path: '/grammar', label: 'Grammar', icon: '📚' },
-  { path: '/history', label: 'Chats', icon: '💬' },
+  { path: '/history', label: 'AI Tutor', icon: '🤖' },
   { path: '/friends', label: 'Friends', icon: '👥' },
 ];
 

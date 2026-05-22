@@ -28,12 +28,7 @@ export const GamesScreen: React.FC = () => {
         <p style={{ color: colors.textSecondary }}>Test your skills in a fun way.</p>
       </header>
 
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
-        gap: '32px',
-        paddingBottom: '100px'
-      }}>
+      <div className="games-grid">
         {GAMES.map(game => {
           const isStoryGame = game.id === 'stories';
           const progress = (gameStore as any)[game.id];
@@ -41,29 +36,10 @@ export const GamesScreen: React.FC = () => {
           return (
             <div 
               key={game.id} 
-              className="card fade-in" 
+              className="coffee-card fade-in" 
               onClick={() => navigate(game.path)}
-              style={{ 
-                cursor: 'pointer', 
-                display: 'flex', 
-                flexDirection: 'column',
-                gap: spacing.md, 
-                backgroundColor: '#FDFBF7',
-                padding: spacing.lg,
-                borderRadius: 24,
-                border: `2px solid ${colors.border}`,
-                transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-4px)';
-                e.currentTarget.style.boxShadow = '0 8px 24px rgba(78, 52, 46, 0.12)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
             >
-              <div style={{ display: 'flex', gap: spacing.md, alignItems: 'center' }}>
+              <div style={{ display: 'flex', gap: spacing.md, alignItems: 'center', marginBottom: spacing.md }}>
                 <div style={{ 
                   width: 56, 
                   height: 56, 
@@ -96,14 +72,13 @@ export const GamesScreen: React.FC = () => {
                 </div>
               </div>
               
-              <p style={{ color: colors.textSecondary, fontSize: 15, margin: 0, lineHeight: '1.5', flex: 1 }}>
+              <p style={{ color: colors.textSecondary, fontSize: 15, margin: `0 0 ${spacing.lg}px`, lineHeight: '1.5', flex: 1 }}>
                 {game.description}
               </p>
 
               <PrimaryButton 
                 label="Play" 
                 onPress={() => navigate(game.path)} 
-                style={{ marginTop: spacing.sm }}
               />
             </div>
           );

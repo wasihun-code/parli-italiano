@@ -127,6 +127,13 @@ class FriendListView(generics.ListAPIView):
 
 class ChatSendMessageView(APIView):
     def post(self, request):
+        # Premium check
+        if request.user.subscription_plan == 'free':
+            return Response(
+                {'error': 'Chat is a premium feature. Upgrade to chat with friends.'}, 
+                status=status.HTTP_403_FORBIDDEN
+            )
+
         receiver_id = request.data.get('receiver_id')
         message_text = request.data.get('message')
         receiver = get_object_or_404(User, id=receiver_id)

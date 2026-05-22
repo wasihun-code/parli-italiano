@@ -4,6 +4,9 @@ import { useFriendStore } from '../store/friendStore';
 import { apiClient } from '../lib/apiClient';
 import { Screen } from '../components/Screen';
 import { PrimaryButton } from '../components/PrimaryButton';
+import { colors } from '@shared/theme/colors';
+import { spacing } from '@shared/theme/spacing';
+import { FaSearch, FaUserPlus, FaCheck, FaTimes, FaUserFriends, FaUserClock } from 'react-icons/fa';
 
 export const FriendsScreen: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -22,7 +25,7 @@ export const FriendsScreen: React.FC = () => {
   useEffect(() => {
     fetchFriends();
     fetchFriendRequests();
-  }, []);
+  }, [fetchFriends, fetchFriendRequests]);
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -46,34 +49,70 @@ export const FriendsScreen: React.FC = () => {
   };
 
   return (
-    <Screen>
-      <header style={{ marginBottom: 24 }}>
-        <h2>Friends</h2>
+    <Screen style={{ backgroundColor: colors.surface }}>
+      <header style={{ marginBottom: spacing.xl }}>
+        <h1 style={{ color: colors.primary, fontSize: 32, fontWeight: 900, margin: 0 }}>Friends 👥</h1>
+        <p style={{ color: colors.textSecondary, fontSize: 18, marginTop: spacing.xxs }}>
+          Connect and chat with other learners.
+        </p>
       </header>
-      <div className="max-w-2xl mx-auto p-4 space-y-8">
+
+      <div className="max-w-2xl mx-auto p-0 space-y-8" style={{ paddingBottom: 100 }}>
         {/* Search Section */}
-        <section>
-          <h2 className="text-xl font-bold mb-4">Search Users</h2>
-          <form onSubmit={handleSearch} className="flex gap-2">
+        <section className="coffee-card" style={{ cursor: 'default' }}>
+          <h2 style={{ fontSize: 18, marginBottom: spacing.md, display: 'flex', alignItems: 'center', gap: 8 }}>
+            <FaSearch color={colors.accent} /> Search Users
+          </h2>
+          <form onSubmit={handleSearch} style={{ display: 'flex', gap: spacing.sm }}>
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Username or email"
-              className="flex-1 p-2 border rounded-lg dark:bg-gray-800 dark:border-gray-700"
+              placeholder="Enter username or email"
+              style={{
+                flex: 1,
+                padding: spacing.md,
+                borderRadius: 12,
+                border: `2px solid ${colors.border}`,
+                fontSize: 16,
+                backgroundColor: colors.bg,
+                outline: 'none'
+              }}
             />
             <PrimaryButton label="Search" onPress={() => handleSearch({ preventDefault: () => {} } as any)} />
           </form>
           {searchResults.length > 0 && (
-            <div className="mt-4 space-y-2">
+            <div style={{ marginTop: spacing.lg, display: 'flex', flexDirection: 'column', gap: spacing.sm }}>
               {searchResults.map(user => (
-                <div key={user.id} className="flex justify-between items-center p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-                  <span>{user.username} ({user.email})</span>
+                <div key={user.id} style={{ 
+                  display: 'flex', 
+                  justifyContent: 'space-between', 
+                  alignItems: 'center', 
+                  padding: spacing.md, 
+                  backgroundColor: '#fff', 
+                  borderRadius: 12,
+                  border: `1px solid ${colors.border}`
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: spacing.md }}>
+                    <div style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: colors.accent, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>
+                      {user.username.charAt(0).toUpperCase()}
+                    </div>
+                    <span style={{ fontWeight: 'bold' }}>{user.username}</span>
+                  </div>
                   <button
                     onClick={() => handleSendRequest(user.id)}
-                    className="text-blue-500 hover:text-blue-600 font-medium"
+                    style={{ 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      gap: 4, 
+                      color: colors.primary, 
+                      background: 'none', 
+                      border: 'none', 
+                      fontWeight: 'bold', 
+                      cursor: 'pointer' 
+                    }}
                   >
-                    Add Friend
+                    <FaUserPlus /> Add
                   </button>
                 </div>
               ))}
@@ -83,24 +122,58 @@ export const FriendsScreen: React.FC = () => {
 
         {/* Friend Requests */}
         {friendRequests.length > 0 && (
-          <section>
-            <h2 className="text-xl font-bold mb-4">Friend Requests</h2>
-            <div className="space-y-2">
+          <section className="coffee-card" style={{ borderColor: colors.accent, background: 'rgba(212, 163, 115, 0.05)', cursor: 'default' }}>
+            <h2 style={{ fontSize: 18, marginBottom: spacing.md, display: 'flex', alignItems: 'center', gap: 8 }}>
+              <FaUserClock color={colors.accent} /> Pending Requests
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.sm }}>
               {friendRequests.map(request => (
-                <div key={request.id} className="flex justify-between items-center p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-100 dark:border-blue-800">
-                  <span>{request.from_user.username}</span>
-                  <div className="flex gap-2">
+                <div key={request.id} style={{ 
+                  display: 'flex', 
+                  justifyContent: 'space-between', 
+                  alignItems: 'center', 
+                  padding: spacing.md, 
+                  backgroundColor: '#fff', 
+                  borderRadius: 12,
+                  border: `1px solid ${colors.accent}44`
+                }}>
+                  <span style={{ fontWeight: 'bold' }}>{request.from_user.username}</span>
+                  <div style={{ display: 'flex', gap: spacing.sm }}>
                     <button
                       onClick={() => acceptRequest(request.id)}
-                      className="px-3 py-1 bg-green-500 text-white rounded-md text-sm"
+                      style={{ 
+                        padding: '6px 12px', 
+                        backgroundColor: colors.success, 
+                        color: '#fff', 
+                        borderRadius: 8, 
+                        border: 'none', 
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 4,
+                        fontSize: 14,
+                        fontWeight: 'bold'
+                      }}
                     >
-                      Accept
+                      <FaCheck /> Accept
                     </button>
                     <button
                       onClick={() => declineRequest(request.id)}
-                      className="px-3 py-1 bg-red-500 text-white rounded-md text-sm"
+                      style={{ 
+                        padding: '6px 12px', 
+                        backgroundColor: '#eee', 
+                        color: colors.textPrimary, 
+                        borderRadius: 8, 
+                        border: 'none', 
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 4,
+                        fontSize: 14,
+                        fontWeight: 'bold'
+                      }}
                     >
-                      Decline
+                      <FaTimes /> Decline
                     </button>
                   </div>
                 </div>
@@ -111,26 +184,50 @@ export const FriendsScreen: React.FC = () => {
 
         {/* Friends List */}
         <section>
-          <h2 className="text-xl font-bold mb-4">Your Friends</h2>
+          <h2 style={{ fontSize: 18, marginBottom: spacing.md, display: 'flex', alignItems: 'center', gap: 8, color: colors.primary }}>
+            <FaUserFriends /> Your Friends
+          </h2>
           {friends.length === 0 ? (
-            <p className="text-gray-500">You haven't added any friends yet.</p>
+            <div className="coffee-card" style={{ textAlign: 'center', color: colors.textSecondary, padding: spacing.xl }}>
+              <p>You haven't added any friends yet. Use the search box above to find people!</p>
+            </div>
           ) : (
-            <div className="grid gap-3">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: spacing.md }}>
               {friends.map(friend => (
                 <div
                   key={friend.id}
                   onClick={() => navigate(`/chat/${friend.id}`)}
-                  className="flex justify-between items-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 cursor-pointer hover:border-blue-300 dark:hover:border-blue-700 transition-colors"
+                  className="coffee-card"
+                  style={{
+                    padding: spacing.md,
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    cursor: 'pointer'
+                  }}
                 >
-                  <div className="flex items-center gap-3">
-                    <div className={`w-3 h-3 rounded-full ${friend.is_online ? 'bg-green-500' : 'bg-gray-300'}`} />
-                    <span className="font-medium">{friend.username}</span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: spacing.md }}>
+                    <div style={{ position: 'relative' }}>
+                      <div style={{ width: 48, height: 48, borderRadius: 24, backgroundColor: 'rgba(78, 52, 46, 0.1)', color: colors.primary, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: 18 }}>
+                        {friend.username.charAt(0).toUpperCase()}
+                      </div>
+                      <div style={{ 
+                        width: 12, 
+                        height: 12, 
+                        borderRadius: 6, 
+                        backgroundColor: friend.is_online ? colors.success : '#ccc', 
+                        position: 'absolute', 
+                        bottom: 0, 
+                        right: 0,
+                        border: '2px solid #fff' 
+                      }} />
+                    </div>
+                    <div>
+                      <div style={{ fontWeight: 'bold', color: colors.primary }}>{friend.username}</div>
+                      <div style={{ fontSize: 12, color: colors.textSecondary }}>{friend.is_online ? 'Online' : 'Offline'}</div>
+                    </div>
                   </div>
-                  <span className="text-gray-400">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                    </svg>
-                  </span>
+                  <FaSearch color={colors.border} style={{ opacity: 0.5 }} />
                 </div>
               ))}
             </div>

@@ -1,17 +1,26 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useFriendStore } from '../store/friendStore';
 import { useAuthStore } from '../store/authStore';
+import { useSubscriptionStore } from '../store/subscriptionStore';
 import { Screen } from '../components/Screen';
+import { colors } from '@shared/theme/colors';
+import { spacing } from '@shared/theme/spacing';
+import { FaPaperPlane, FaLock, FaChevronLeft } from 'react-icons/fa';
+import { PrimaryButton } from '../components/PrimaryButton';
 
 export const ChatScreen: React.FC = () => {
   const { friendId } = useParams<{ friendId: string }>();
+  const navigate = useNavigate();
   const [message, setMessage] = useState('');
   const { friends, messages, fetchMessages, sendMessage, fetchFriends } = useFriendStore();
   const currentUser = useAuthStore(state => state.currentUser);
+  const { plan, isValid } = useSubscriptionStore();
+  const isPremium = plan !== 'free' && isValid;
+  
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const friend = friends.find(f => f.id === friendId);
+  const friend = friends.find(f => f.id.toString() === friendId);
   const friendMessages = friendId ? messages[friendId] || [] : [];
 
   useEffect(() => {
@@ -27,7 +36,7 @@ export const ChatScreen: React.FC = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [friendId]);
+  }, [friendId, fetchMessages, fetchFriends, friend]);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -39,6 +48,10 @@ export const ChatScreen: React.FC = () => {
     e.preventDefault();
     if (!message.trim() || !friendId) return;
     
+    if (!isPremium) {
+      return; // Handled by UI disabling, but safety check
+    }
+
     const content = message;
     setMessage('');
     try {
@@ -51,7 +64,7 @@ export const ChatScreen: React.FC = () => {
   if (!friend && !friendMessages.length) {
     return (
       <Screen>
-        <div className="flex items-center justify-center h-full">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
           <p>Loading friend info...</p>
         </div>
       </Screen>
@@ -59,32 +72,102 @@ export const ChatScreen: React.FC = () => {
   }
 
   return (
-    <Screen>
-      <header>
-        <h2>{friend?.username || 'Chat'}</h2>
-      </header>
-      <div className="flex flex-col h-[calc(100vh-120px)] max-w-2xl mx-auto border-x dark:border-gray-800">
+    <Screen style={{ backgroundColor: '#fff' }}>
+      <div style={{ 
+        display: 'flex', 
+        flexDirection: 'column', 
+        height: 'calc(100dvh - 80px)', 
+        maxWidth: 800, 
+        margin: '0 auto',
+        width: '100%'
+      }}>
+        {/* Chat Header */}
+        <header style={{ 
+          padding: spacing.md, 
+          borderBottom: `1px solid ${colors.border}`, 
+          display: 'flex', 
+          alignItems: 'center', 
+          gap: spacing.md,
+          backgroundColor: '#fff'
+        }}>
+          <button 
+            onClick={() => navigate('/friends')}
+            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 8, display: 'flex', alignItems: 'center' }}
+          >
+            <FaChevronLeft size={20} color={colors.primary} />
+          </button>
+          <div style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: 'rgba(78, 52, 46, 0.1)', color: colors.primary, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>
+            {friend?.username.charAt(0).toUpperCase()}
+          </div>
+          <div>
+            <div style={{ fontWeight: 'bold', color: colors.primary }}>{friend?.username}</div>
+            <div style={{ fontSize: 12, color: colors.success }}>{friend?.is_online ? 'Online' : 'Offline'}</div>
+          </div>
+        </header>
+
+        {/* Premium Banner */}
+        {!isPremium && (
+          <div style={{ 
+            backgroundColor: 'rgba(212, 163, 115, 0.1)', 
+            padding: spacing.sm, 
+            textAlign: 'center', 
+            fontSize: 13, 
+            color: colors.primary,
+            borderBottom: `1px solid ${colors.accent}44`,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 8
+          }}>
+            <FaLock size={12} /> Upgrade to Premium to send messages.
+          </div>
+        )}
+
         {/* Messages area */}
         <div 
           ref={scrollRef}
-          className="flex-1 overflow-y-auto p-4 space-y-3"
+          style={{ 
+            flex: 1, 
+            overflowY: 'auto', 
+            padding: spacing.lg, 
+            display: 'flex', 
+            flexDirection: 'column', 
+            gap: spacing.md,
+            backgroundColor: colors.bg
+          }}
         >
-          {friendMessages.map((msg) => {
+          {friendMessages.map((msg: any) => {
             const isMe = msg.sender_id === currentUser?.id;
             return (
               <div 
                 key={msg.id} 
-                className={`flex ${isMe ? 'justify-end' : 'justify-start'}`}
+                style={{ 
+                  display: 'flex', 
+                  justifyContent: isMe ? 'flex-end' : 'flex-start',
+                  width: '100%'
+                }}
               >
                 <div 
-                  className={`max-w-[80%] px-4 py-2 rounded-2xl ${
-                    isMe 
-                      ? 'bg-blue-600 text-white rounded-tr-none' 
-                      : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-tl-none'
-                  }`}
+                  style={{ 
+                    maxWidth: '80%', 
+                    padding: `${spacing.sm}px ${spacing.md}px`, 
+                    borderRadius: 18,
+                    borderTopRightRadius: isMe ? 4 : 18,
+                    borderTopLeftRadius: isMe ? 18 : 4,
+                    backgroundColor: isMe ? colors.primary : '#fff',
+                    color: isMe ? '#fff' : colors.textPrimary,
+                    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                    position: 'relative'
+                  }}
                 >
-                  <p>{msg.content}</p>
-                  <span className={`text-[10px] block mt-1 ${isMe ? 'text-blue-100' : 'text-gray-500'}`}>
+                  <p style={{ margin: 0, fontSize: 16 }}>{msg.message}</p>
+                  <span style={{ 
+                    fontSize: 10, 
+                    display: 'block', 
+                    marginTop: 4, 
+                    textAlign: 'right',
+                    opacity: 0.7 
+                  }}>
                     {new Date(msg.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                   </span>
                 </div>
@@ -94,23 +177,64 @@ export const ChatScreen: React.FC = () => {
         </div>
 
         {/* Input area */}
-        <form onSubmit={handleSendMessage} className="p-4 bg-white dark:bg-gray-950 border-t dark:border-gray-800 flex gap-2">
+        <form 
+          onSubmit={handleSendMessage} 
+          style={{ 
+            padding: spacing.md, 
+            backgroundColor: '#fff', 
+            borderTop: `1px solid ${colors.border}`, 
+            display: 'flex', 
+            gap: spacing.sm,
+            alignItems: 'center'
+          }}
+        >
           <input
             type="text"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Type a message..."
-            className="flex-1 p-2 border rounded-full dark:bg-gray-800 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder={isPremium ? "Type a message..." : "Upgrade to chat..."}
+            disabled={!isPremium}
+            style={{ 
+              flex: 1, 
+              padding: spacing.md, 
+              borderRadius: 24, 
+              border: `2px solid ${colors.border}`, 
+              outline: 'none',
+              fontSize: 16,
+              backgroundColor: isPremium ? '#fff' : '#f5f5f5'
+            }}
           />
-          <button 
-            type="submit"
-            disabled={!message.trim()}
-            className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 disabled:opacity-50"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-            </svg>
-          </button>
+          {isPremium ? (
+            <button 
+              type="submit"
+              disabled={!message.trim()}
+              style={{ 
+                width: 48, 
+                height: 48, 
+                borderRadius: 24, 
+                backgroundColor: colors.primary, 
+                color: '#fff', 
+                border: 'none', 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                cursor: 'pointer',
+                opacity: message.trim() ? 1 : 0.5,
+                transition: 'transform 0.2s'
+              }}
+              onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
+              onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              <FaPaperPlane />
+            </button>
+          ) : (
+            <PrimaryButton 
+              label="Upgrade" 
+              onPress={() => navigate('/premium')} 
+              variant="accent"
+              style={{ padding: '0 16px', height: 48, borderRadius: 24 }}
+            />
+          )}
         </form>
       </div>
     </Screen>

@@ -114,21 +114,27 @@ body {
 
 .games-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
   padding-bottom: 100px;
 }
 
-@media (min-width: 768px) {
-  .games-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.coffee-card {
+  background: #FDFBF7;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (min-width: 1024px) {
-  .games-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.coffee-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 24px rgba(78, 52, 46, 0.08);
 }
 
 h1, h2, h3, h4 {
