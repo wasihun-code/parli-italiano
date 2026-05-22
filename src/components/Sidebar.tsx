@@ -15,6 +15,7 @@ const NAV_ITEMS = [
   { path: '/stories', label: 'Stories', icon: '📖' },
   { path: '/grammar', label: 'Grammar', icon: '📚' },
   { path: '/history', label: 'Chats', icon: '💬' },
+  { path: '/friends', label: 'Friends', icon: '👥' },
 ];
 
 export const Sidebar: React.FC = () => {

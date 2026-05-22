@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { audioService } from '../lib/audioService';
+import { useAudioStore } from '../store/audioStore';
 
 export const FeedbackMessage: React.FC<{
   type: 'correct' | 'incorrect' | 'neutral';
   message: string | React.ReactNode;
 }> = ({ type, message }) => {
+  const soundEnabled = useAudioStore(state => state.soundEnabled);
+
+  useEffect(() => {
+    if (soundEnabled) {
+      if (type === 'correct') audioService.playCorrect();
+      else if (type === 'incorrect') audioService.playIncorrect();
+    }
+  }, [type, soundEnabled]);
+
   let bgColor = '#f5f5f5';
   let borderColor = '#9e9e9e';
   let color = '#333';

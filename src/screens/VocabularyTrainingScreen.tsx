@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState, useCallback } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { Tts } from '../lib/tts';
 import { setupDatabase, loadScenarioHeader, loadScenarioVocabulary } from '../lib/db';
 import { PrimaryButton } from '../components/PrimaryButton';
@@ -38,6 +38,9 @@ type FeedbackState = {
 export const VocabularyTrainingScreen: React.FC = () => {
   const { scenarioId } = useParams<{ scenarioId: string }>();
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const skipTestParam = searchParams.get('skipTest') === 'true';
+
   const [scenarioTitle, setScenarioTitle] = useState('Scenario Vocabulary');
   const [terms, setTerms] = useState<ScenarioVocabularyRow[]>([]);
   const [allTerms, setAllTerms] = useState<ScenarioVocabularyRow[]>([]);
@@ -69,6 +72,12 @@ export const VocabularyTrainingScreen: React.FC = () => {
     setTypedAnswer('');
     setSelectedAnswer(undefined);
   }, []);
+
+  useEffect(() => {
+    if (skipTestParam && !loading && terms.length > 0 && !isSkipTest) {
+      startSkipTest();
+    }
+  }, [skipTestParam, loading, terms.length, isSkipTest, startSkipTest]);
 
   const activeTerm = useMemo(() => {
     if (isSkipTest) {

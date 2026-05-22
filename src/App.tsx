@@ -4,6 +4,7 @@ import { HomeScreen } from './screens/HomeScreen';
 import { FoundationsScreen } from './screens/FoundationsScreen';
 import { FoundationLessonScreen } from './screens/FoundationLessonScreen';
 import { ScenarioSelectionScreen } from './screens/ScenarioSelectionScreen';
+import { ScenarioDetailScreen } from './screens/ScenarioDetailScreen';
 import { VocabularyTrainingScreen } from './screens/VocabularyTrainingScreen';
 import { PhraseTrainingScreen } from './screens/PhraseTrainingScreen';
 import { SentenceTrainingScreen } from './screens/SentenceTrainingScreen';
@@ -24,10 +25,13 @@ import { PrepositionGame } from './screens/PrepositionGame';
 import { IdiomsGame } from './screens/IdiomsGame';
 import { OppositesGame } from './screens/OppositesGame';
 import { NumbersGame } from './screens/NumbersGame';
+import { PluralGame } from './screens/PluralGame';
 import { StoriesScreen } from './screens/StoriesScreen';
 import { StoryReaderScreen } from './screens/StoryReaderScreen';
 import { StoryFinalQuizScreen } from './screens/StoryFinalQuizScreen';
 import { PremiumScreen } from './screens/PremiumScreen';
+import { FriendsScreen } from './screens/FriendsScreen';
+import { ChatScreen } from './screens/ChatScreen';
 import { useCurrentUser } from '@shared/store/authStore';
 import { useSubscriptionStore } from './store/subscriptionStore';
 import { FooterNav } from './components/FooterNav';
@@ -91,6 +95,7 @@ export const App: React.FC = () => {
             <Route path="/games/idioms" element={<IdiomsGame />} />
             <Route path="/games/opposites" element={<OppositesGame />} />
             <Route path="/games/numbers" element={<NumbersGame />} />
+            <Route path="/games/plural" element={<PluralGame />} />
             <Route path="/stories" element={<StoriesScreen />} />
             <Route path="/stories/:storyId" element={<StoryReaderScreen />} />
             <Route path="/stories/:storyId/quiz" element={<StoryFinalQuizScreen />} />
@@ -100,6 +105,7 @@ export const App: React.FC = () => {
             <Route path="/foundations" element={<FoundationsScreen />} />
             <Route path="/foundations/:lessonId" element={<FoundationLessonScreen />} />
             <Route path="/scenarios" element={<ScenarioSelectionScreen />} />
+            <Route path="/scenarios/:scenarioId" element={<ScenarioDetailScreen />} />
             <Route path="/scenarios/:scenarioId/vocabulary" element={<VocabularyTrainingScreen />} />
             <Route path="/scenarios/:scenarioId/phrases" element={<PhraseTrainingScreen />} />
             <Route path="/scenarios/:scenarioId/sentences" element={<SentenceTrainingScreen />} />
@@ -107,6 +113,8 @@ export const App: React.FC = () => {
             <Route path="/review" element={<ReviewScreen />} />
             <Route path="/history" element={<ConversationHistoryScreen />} />
             <Route path="/premium" element={<PremiumScreen />} />
+            <Route path="/friends" element={<FriendsScreen />} />
+            <Route path="/chat/:friendId" element={<ChatScreen />} />
           </Routes>
           <FooterNav />
         </OnboardingGuard>

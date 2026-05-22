@@ -15,7 +15,7 @@ export type StoryProgress = {
   translateUsesRemaining: number;
 };
 
-export type GameKey = 'genderGame' | 'translationGame' | 'prepositionGame' | 'idiomsGame' | 'oppositesGame' | 'numbersGame';
+export type GameKey = 'genderGame' | 'translationGame' | 'prepositionGame' | 'idiomsGame' | 'oppositesGame' | 'numbersGame' | 'pluralGame';
 
 export type GameState = {
   genderGame: GameProgress;
@@ -24,6 +24,7 @@ export type GameState = {
   idiomsGame: GameProgress;
   oppositesGame: GameProgress;
   numbersGame: GameProgress;
+  pluralGame: GameProgress;
   
   // Stories State
   unlockedStories: string[]; // story titles
@@ -52,6 +53,7 @@ export const useGameStore = create<GameState>()(
       idiomsGame: { unlockedLevels: 1, highScore: 0 },
       oppositesGame: { unlockedLevels: 1, highScore: 0 },
       numbersGame: { unlockedLevels: 1, highScore: 0 },
+      pluralGame: { unlockedLevels: 1, highScore: 0 },
       
       unlockedStories: [], // Initialized in a component or effect if empty
       completedStories: [],

@@ -1,17 +1,46 @@
 from rest_framework import serializers
 from django.contrib.auth import authenticate
 from rest_framework_simplejwt.tokens import RefreshToken
-from .models import User, UserLanguageProgress, ScenarioProgress, GameProgress, MasteredItem, Language
+from .models import (
+    User, UserLanguageProgress, ScenarioProgress, 
+    GameProgress, MasteredItem, Language,
+    FriendRequest, Friendship, ChatMessage
+)
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = [
             'id', 'username', 'email', 'native_language', 
-            'total_xp', 'streak_days', 'subscription_plan', 
-            'subscription_valid_until'
+            'total_xp', 'streak_days', 'last_activity_date',
+            'streak_freezes_used', 'streak_freeze_limit',
+            'subscription_plan', 'subscription_valid_until'
         ]
-        read_only_fields = ['id', 'username', 'email', 'total_xp', 'streak_days', 'subscription_plan', 'subscription_valid_until']
+        read_only_fields = [
+            'id', 'username', 'email', 'total_xp', 'streak_days', 
+            'last_activity_date', 'streak_freezes_used', 'streak_freeze_limit',
+            'subscription_plan', 'subscription_valid_until'
+        ]
+
+class FriendRequestSerializer(serializers.ModelSerializer):
+    from_user_username = serializers.ReadOnlyField(source='from_user.username')
+    to_user_username = serializers.ReadOnlyField(source='to_user.username')
+
+    class Meta:
+        model = FriendRequest
+        fields = '__all__'
+
+class FriendshipSerializer(serializers.ModelSerializer):
+    friend_details = UserSerializer(source='friend', read_only=True)
+
+    class Meta:
+        model = Friendship
+        fields = ['id', 'user', 'friend', 'friend_details', 'created_at']
+
+class ChatMessageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ChatMessage
+        fields = '__all__'
 
 class UserLanguageProgressSerializer(serializers.ModelSerializer):
     class Meta:

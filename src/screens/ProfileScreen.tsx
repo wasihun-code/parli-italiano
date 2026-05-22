@@ -4,6 +4,7 @@ import { Screen } from '../components/Screen';
 import { PrimaryButton } from '../components/PrimaryButton';
 import { useAuthStore, useCurrentUser } from '@shared/store/authStore';
 import { useProfileStore } from '@shared/store/profileStore';
+import { useAudioStore } from '@shared/store/audioStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 
@@ -117,6 +118,30 @@ export const ProfileScreen: React.FC = () => {
           </div>
 
           <PrimaryButton label="Save Changes" onPress={handleSave} />
+        </div>
+
+        {/* Settings */}
+        <div className="card" style={{ padding: spacing.lg, display: 'flex', flexDirection: 'column', gap: spacing.md }}>
+          <h2 style={{ fontSize: 18, color: colors.textSecondary, margin: 0 }}>Settings</h2>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ fontSize: 16, fontWeight: 'bold', color: colors.primary }}>Sound Effects</span>
+            <button 
+              onClick={useAudioStore.getState().toggleSound}
+              style={{
+                width: 60, height: 32, borderRadius: 16, 
+                backgroundColor: useAudioStore(s => s.soundEnabled) ? colors.success : colors.border,
+                border: 'none', position: 'relative', cursor: 'pointer',
+                transition: 'background-color 0.2s'
+              }}
+            >
+              <div style={{
+                width: 24, height: 24, borderRadius: 12, backgroundColor: '#fff',
+                position: 'absolute', top: 4, 
+                left: useAudioStore(s => s.soundEnabled) ? 32 : 4,
+                transition: 'left 0.2s'
+              }} />
+            </button>
+          </div>
         </div>
 
         {/* Navigation */}

@@ -1,4 +1,3 @@
-import {useMemo} from 'react';
 import {create} from 'zustand';
 import {persist, createJSONStorage} from 'zustand/middleware';
 
@@ -15,15 +14,15 @@ export type PublicUser = AuthUser;
 
 type AuthState = {
   currentUser?: AuthUser;
-  login: (email: string, password: string) => Promise<{ok: true} | {ok: false; error: string}>;
-  signup: (name: string, email: string, password: string) => Promise<{ok: true} | {ok: false; error: string}>;
-  googleLogin: (token: string) => Promise<{ok: true} | {ok: false; error: string}>;
+  login: (email: string, password: string) => Promise<{ok: boolean, error?: string}>;
+  signup: (name: string, email: string, password: string) => Promise<{ok: boolean, error?: string}>;
+  googleLogin: (token: string) => Promise<{ok: boolean, error?: string}>;
   logout: () => void;
 };
 
 export const useAuthStore = create<AuthState>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       currentUser: undefined,
       login: async (email, password) => {
         try {
@@ -41,7 +40,7 @@ export const useAuthStore = create<AuthState>()(
       signup: async (name, email, password) => {
         try {
           await apiClient.register({ username: name, email, password });
-          return await useAuthStore.getState().login(email, password);
+          return await get().login(email, password);
         } catch (err: any) {
           return {ok: false, error: err.message};
         }

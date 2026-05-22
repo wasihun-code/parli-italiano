@@ -136,3 +136,90 @@ class StripeWebhookTests(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.user.refresh_from_db()
         self.assertEqual(self.user.subscription_plan, 'free')
+
+class StreakAndFriendsTests(TestCase):
+    def setUp(self):
+        self.client = APIClient()
+        self.user1 = User.objects.create_user(
+            username='user1', email='user1@example.com', password='password123'
+        )
+        self.user2 = User.objects.create_user(
+            username='user2', email='user2@example.com', password='password123'
+        )
+        self.client.force_authenticate(user=self.user1)
+
+    def test_activity_streak_increment(self):
+        # Set last activity to yesterday
+        self.user1.last_activity_date = timezone.now().date() - timezone.timedelta(days=1)
+        self.user1.streak_days = 5
+        self.user1.save()
+        
+        response = self.client.post(reverse('user_activity'))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.user1.refresh_from_db()
+        self.assertEqual(self.user1.streak_days, 6)
+        self.assertEqual(self.user1.last_activity_date, timezone.now().date())
+
+    def test_activity_streak_freeze(self):
+        # Set last activity to 3 days ago (missed 2 days)
+        self.user1.last_activity_date = timezone.now().date() - timezone.timedelta(days=3)
+        self.user1.streak_days = 10
+        self.user1.streak_freezes_used = 0
+        self.user1.streak_freeze_limit = 2
+        self.user1.save()
+        
+        response = self.client.post(reverse('user_activity'))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.user1.refresh_from_db()
+        # Should have used 2 freezes and incremented streak
+        self.assertEqual(self.user1.streak_days, 11)
+        self.assertEqual(self.user1.streak_freezes_used, 2)
+
+    def test_activity_streak_reset(self):
+        # Set last activity to 4 days ago (missed 3 days, only 2 freezes)
+        self.user1.last_activity_date = timezone.now().date() - timezone.timedelta(days=4)
+        self.user1.streak_days = 10
+        self.user1.streak_freezes_used = 0
+        self.user1.streak_freeze_limit = 2
+        self.user1.save()
+        
+        response = self.client.post(reverse('user_activity'))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.user1.refresh_from_db()
+        self.assertEqual(self.user1.streak_days, 1)
+        self.assertEqual(self.user1.streak_freezes_used, 0)
+
+    def test_friend_request_flow(self):
+        # Send request
+        response = self.client.post(reverse('friend_request_create'), {'to_user_id': self.user2.id})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        
+        # Accept request (as user2)
+        self.client.force_authenticate(user=self.user2)
+        request_id = response.data['id']
+        response = self.client.post(reverse('friend_request_accept', kwargs={'pk': request_id}))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        
+        # Check friendship
+        from api.models import Friendship
+        self.assertTrue(Friendship.objects.filter(user=self.user1, friend=self.user2).exists())
+        self.assertTrue(Friendship.objects.filter(user=self.user2, friend=self.user1).exists())
+
+    def test_chat_flow(self):
+        from api.models import Friendship
+        Friendship.objects.create(user=self.user1, friend=self.user2)
+        Friendship.objects.create(user=self.user2, friend=self.user1)
+        
+        # Send message
+        response = self.client.post(reverse('chat_send'), {
+            'receiver_id': self.user2.id,
+            'message': 'Hello friend!'
+        })
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        
+        # Get messages
+        self.client.force_authenticate(user=self.user2)
+        response = self.client.get(reverse('chat_messages', kwargs={'friend_id': self.user1.id}))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), 1)
+        self.assertEqual(response.data[0]['message'], 'Hello friend!')

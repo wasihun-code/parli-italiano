@@ -24,10 +24,44 @@ class User(AbstractUser):
     total_xp = models.IntegerField(default=0)
     streak_days = models.IntegerField(default=0)
     last_activity_date = models.DateField(blank=True, null=True)
+    streak_freezes_used = models.IntegerField(default=0)
+    streak_freeze_limit = models.IntegerField(default=2)
     native_language = models.CharField(max_length=10, default='en')
 
     def __str__(self):
         return self.email or self.username
+
+class FriendRequest(models.Model):
+    STATUS_CHOICES = [
+        ('pending', 'Pending'),
+        ('accepted', 'Accepted'),
+        ('declined', 'Declined'),
+    ]
+    from_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='friend_requests_sent')
+    to_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='friend_requests_received')
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ('from_user', 'to_user')
+
+class Friendship(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='friendships')
+    friend = models.ForeignKey(User, on_delete=models.CASCADE, related_name='friend_of')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ('user', 'friend')
+
+class ChatMessage(models.Model):
+    sender = models.ForeignKey(User, on_delete=models.CASCADE, related_name='sent_messages')
+    receiver = models.ForeignKey(User, on_delete=models.CASCADE, related_name='received_messages')
+    message = models.TextField()
+    timestamp = models.DateTimeField(auto_now_add=True)
+    is_read = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"From {self.sender} to {self.receiver} at {self.timestamp}"
 
 class UserLanguageProgress(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='language_progress')

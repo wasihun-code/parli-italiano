@@ -8,17 +8,166 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404
+from django.db.models import Q
 from .models import (
     Language, UserLanguageProgress, ScenarioProgress, 
-    GameProgress, MasteredItem, SubscriptionHistory
+    GameProgress, MasteredItem, SubscriptionHistory,
+    FriendRequest, Friendship, ChatMessage
 )
 from .serializers import (
     UserSerializer, RegisterSerializer, LoginSerializer,
     UserLanguageProgressSerializer, ScenarioProgressSerializer,
-    GameProgressSerializer, MasteredItemSerializer
+    GameProgressSerializer, MasteredItemSerializer,
+    FriendRequestSerializer, FriendshipSerializer, ChatMessageSerializer
 )
 
 User = get_user_model()
+
+class ActivityUpdateView(APIView):
+    def post(self, request):
+        user = request.user
+        today = timezone.now().date()
+        
+        if user.last_activity_date is None:
+            user.streak_days = 1
+        elif user.last_activity_date == today:
+            pass # Already updated today
+        elif user.last_activity_date == today - timezone.timedelta(days=1):
+            user.streak_days += 1
+        else:
+            gap = (today - user.last_activity_date).days
+            missed_days = gap - 1
+            
+            # Update limit based on plan
+            if user.subscription_plan in ['premium', 'premium_plus']:
+                user.streak_freeze_limit = 6
+            else:
+                user.streak_freeze_limit = 2
+                
+            available_freezes = user.streak_freeze_limit - user.streak_freezes_used
+            
+            if missed_days <= available_freezes:
+                user.streak_freezes_used += missed_days
+                user.streak_days += 1
+            else:
+                user.streak_days = 1
+                user.streak_freezes_used = 0 # Reset freezes on streak loss
+        
+        user.last_activity_date = today
+        # Re-verify limit on every activity just in case
+        if user.subscription_plan in ['premium', 'premium_plus']:
+            user.streak_freeze_limit = 6
+        else:
+            user.streak_freeze_limit = 2
+            
+        user.save()
+        return Response(UserSerializer(user).data)
+
+class UserSearchView(generics.ListAPIView):
+    serializer_class = UserSerializer
+    
+    def get_queryset(self):
+        query = self.request.query_params.get('q', '')
+        if len(query) < 3:
+            return User.objects.none()
+        return User.objects.filter(
+            Q(username__icontains(query)) | Q(email__icontains(query))
+        ).exclude(id=self.request.user.id)[:20]
+
+class FriendRequestCreateView(APIView):
+    def post(self, request):
+        to_user_id = request.data.get('to_user_id')
+        to_user = get_object_or_404(User, id=to_user_id)
+        
+        if to_user == request.user:
+            return Response({'error': 'Cannot add yourself'}, status=status.HTTP_400_BAD_REQUEST)
+            
+        friend_request, created = FriendRequest.objects.get_or_create(
+            from_user=request.user,
+            to_user=to_user,
+            defaults={'status': 'pending'}
+        )
+        
+        if not created and friend_request.status != 'pending':
+            friend_request.status = 'pending'
+            friend_request.save()
+            
+        return Response(FriendRequestSerializer(friend_request).data)
+
+class FriendRequestAcceptView(APIView):
+    def post(self, request, pk):
+        friend_request = get_object_or_404(FriendRequest, id=pk, to_user=request.user, status='pending')
+        friend_request.status = 'accepted'
+        friend_request.save()
+        
+        # Create mutual friendships
+        Friendship.objects.get_or_create(user=request.user, friend=friend_request.from_user)
+        Friendship.objects.get_or_create(user=friend_request.from_user, friend=request.user)
+        
+        return Response({'status': 'accepted'})
+
+class FriendRequestDeclineView(APIView):
+    def post(self, request, pk):
+        friend_request = get_object_or_404(FriendRequest, id=pk, to_user=request.user, status='pending')
+        friend_request.status = 'declined'
+        friend_request.save()
+        return Response({'status': 'declined'})
+
+class FriendRequestListView(generics.ListAPIView):
+    serializer_class = FriendRequestSerializer
+    
+    def get_queryset(self):
+        return FriendRequest.objects.filter(to_user=self.request.user, status='pending')
+
+class FriendListView(generics.ListAPIView):
+    serializer_class = FriendshipSerializer
+    
+    def get_queryset(self):
+        return Friendship.objects.filter(user=self.request.user)
+
+class ChatSendMessageView(APIView):
+    def post(self, request):
+        receiver_id = request.data.get('receiver_id')
+        message_text = request.data.get('message')
+        receiver = get_object_or_404(User, id=receiver_id)
+        
+        # Check if they are friends
+        if not Friendship.objects.filter(user=request.user, friend=receiver).exists():
+            return Response({'error': 'You can only message friends'}, status=status.HTTP_403_FORBIDDEN)
+            
+        message = ChatMessage.objects.create(
+            sender=request.user,
+            receiver=receiver,
+            message=message_text
+        )
+        return Response(ChatMessageSerializer(message).data)
+
+class ChatMessageListView(generics.ListAPIView):
+    serializer_class = ChatMessageSerializer
+    
+    def get_queryset(self):
+        friend_id = self.kwargs.get('friend_id')
+        friend = get_object_or_404(User, id=friend_id)
+        since = self.request.query_params.get('since')
+        
+        queryset = ChatMessage.objects.filter(
+            (Q(sender=self.request.user) & Q(receiver=friend)) |
+            (Q(sender=friend) & Q(receiver=self.request.user))
+        )
+        
+        if since:
+            queryset = queryset.filter(timestamp__gt=since)
+            
+        return queryset.order_by('timestamp')
+
+class ChatMessageReadView(APIView):
+    def post(self, request):
+        message_ids = request.data.get('message_ids', [])
+        ChatMessage.objects.filter(
+            id__in=message_ids,
+            receiver=request.user
+        ).update(is_read=True)
+        return Response({'status': 'success'})
 
 class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()

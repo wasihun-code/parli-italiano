@@ -100,4 +100,65 @@ export const apiClient = {
       body: JSON.stringify({ data, language }),
     });
   },
+
+  recordActivity: async () => {
+    return request<{
+      streak_days: number;
+      last_activity_date: string;
+      streak_freezes_used: number;
+      streak_freeze_limit: number;
+    }>('/users/me/activity/', {
+      method: 'POST',
+    });
+  },
+
+  searchUsers: async (q: string) => {
+    return request<any[]>(`/users/search/?q=${encodeURIComponent(q)}`);
+  },
+
+  sendFriendRequest: async (userId: string) => {
+    return request('/friends/requests/', {
+      method: 'POST',
+      body: JSON.stringify({ to_user_id: userId }),
+    });
+  },
+
+  acceptFriendRequest: async (requestId: number) => {
+    return request(`/friends/requests/${requestId}/accept/`, {
+      method: 'POST',
+    });
+  },
+
+  declineFriendRequest: async (requestId: number) => {
+    return request(`/friends/requests/${requestId}/decline/`, {
+      method: 'POST',
+    });
+  },
+
+  getFriendRequests: async () => {
+    return request<any[]>('/friends/requests/');
+  },
+
+  getFriends: async () => {
+    return request<any[]>('/friends/');
+  },
+
+  sendMessage: async (receiverId: string, message: string) => {
+    return request<any>('/chat/messages/', {
+      method: 'POST',
+      body: JSON.stringify({ receiver_id: receiverId, content: message }),
+    });
+  },
+
+  getMessages: async (friendId: string, since?: string) => {
+    const url = `/chat/messages/?friend_id=${friendId}${since ? `&since=${since}` : ''}`;
+    return request<any[]>(url);
+  },
+
+  markMessagesRead: async (messageIds: number[]) => {
+    return request('/chat/messages/mark_read/', {
+      method: 'POST',
+      body: JSON.stringify({ message_ids: messageIds }),
+    });
+  },
 };

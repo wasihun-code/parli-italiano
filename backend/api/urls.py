@@ -5,7 +5,11 @@ from .views import (
     UserMeView, ProgressOverviewView, ScenarioSyncView,
     GameSyncView, MasteredSyncView, BatchSyncView,
     SubscriptionPlansView, CreateCheckoutSessionView,
-    StripeWebhookView, SubscriptionStatusView
+    StripeWebhookView, SubscriptionStatusView,
+    ActivityUpdateView, UserSearchView, FriendRequestCreateView,
+    FriendRequestAcceptView, FriendRequestDeclineView,
+    FriendRequestListView, FriendListView, ChatSendMessageView,
+    ChatMessageListView, ChatMessageReadView
 )
 
 urlpatterns = [
@@ -18,6 +22,20 @@ urlpatterns = [
 
     # User
     path('users/me/', UserMeView.as_view(), name='user_me'),
+    path('users/me/activity/', ActivityUpdateView.as_view(), name='user_activity'),
+    path('users/search/', UserSearchView.as_view(), name='user_search'),
+    
+    # Friends
+    path('friends/request/', FriendRequestCreateView.as_view(), name='friend_request_create'),
+    path('friends/request/<int:pk>/accept/', FriendRequestAcceptView.as_view(), name='friend_request_accept'),
+    path('friends/request/<int:pk>/decline/', FriendRequestDeclineView.as_view(), name='friend_request_decline'),
+    path('friends/requests/', FriendRequestListView.as_view(), name='friend_requests_list'),
+    path('friends/list/', FriendListView.as_view(), name='friend_list'),
+
+    # Chat
+    path('chat/send/', ChatSendMessageView.as_view(), name='chat_send'),
+    path('chat/messages/<int:friend_id>/', ChatMessageListView.as_view(), name='chat_messages'),
+    path('chat/messages/read/', ChatMessageReadView.as_view(), name='chat_messages_read'),
     
     # Progress
     path('users/me/progress/', ProgressOverviewView.as_view(), name='progress_overview'),

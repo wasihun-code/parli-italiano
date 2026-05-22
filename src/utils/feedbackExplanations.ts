@@ -3,7 +3,7 @@
  */
 
 export type ExplanationContext = {
-  type: 'gender' | 'preposition' | 'translation' | 'vocabulary' | 'phrase' | 'sentence' | 'grammar' | 'idioms' | 'opposites' | 'numbers';
+  type: 'gender' | 'preposition' | 'translation' | 'vocabulary' | 'phrase' | 'sentence' | 'grammar' | 'idioms' | 'opposites' | 'numbers' | 'plural';
   italian?: string;
   correctAnswer?: string;
   userAnswer?: string;
@@ -17,6 +17,8 @@ export function getWrongAnswerExplanation(context: ExplanationContext): string {
   switch (type) {
     case 'gender':
       return getGenderExplanation(italian || '', correctAnswer || '');
+    case 'plural':
+      return getPluralExplanation(italian || '', correctAnswer || '');
     case 'preposition':
       return getPrepositionExplanation(correctAnswer || '');
     case 'translation':
@@ -105,4 +107,20 @@ function getGrammarExplanation(category: string, _correctAnswer: string): string
   }
 
   return `Hint: ${hint} ${example ? 'Example: ' + example : ''}`;
+}
+
+function getPluralExplanation(word: string, plural: string): string {
+  let hint = "Italian plurals usually follow patterns based on the ending.";
+  
+  if (word.endsWith('o')) {
+    hint = "Nouns ending in -o (masculine) usually become -i in the plural.";
+  } else if (word.endsWith('a')) {
+    hint = "Nouns ending in -a (feminine) usually become -e in the plural.";
+  } else if (word.endsWith('e')) {
+    hint = "Nouns ending in -e (either gender) usually become -i in the plural.";
+  } else if (plural === word) {
+    hint = "Foreign loanwords or words with accents on the last vowel usually stay the same in plural.";
+  }
+
+  return `Hint: ${hint} Plural of ${word} is ${plural}.`;
 }
