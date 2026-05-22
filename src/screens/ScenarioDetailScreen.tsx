@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Screen } from '../components/Screen';
 import { scenarios } from '@shared/data/scenarios';
-import { useProgressStore } from '@shared/store/progressStore';
+import { useProgressStore, emptyScenarioProgress } from '@shared/store/progressStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { PrimaryButton } from '../components/PrimaryButton';
@@ -11,11 +11,7 @@ export const ScenarioDetailScreen: React.FC = () => {
   const { scenarioId } = useParams<{ scenarioId: string }>();
   const navigate = useNavigate();
   const scenario = scenarios.find(s => s.id === Number(scenarioId));
-  const progress = useProgressStore(state => state.scenarioProgress[Number(scenarioId)] || {
-    vocabularyCompleted: false,
-    phraseCompleted: false,
-    sentenceCompleted: false,
-  });
+  const progress = useProgressStore(state => state.scenarioProgress[Number(scenarioId)] || emptyScenarioProgress);
 
   if (!scenario) {
     return (

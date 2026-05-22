@@ -183,7 +183,7 @@ export const FriendsScreen: React.FC = () => {
         )}
 
         {/* Friends List */}
-        <section>
+        <section style={{ marginTop: 24 }}>
           <h2 style={{ fontSize: 18, marginBottom: spacing.md, display: 'flex', alignItems: 'center', gap: 8, color: colors.primary }}>
             <FaUserFriends /> Your Friends
           </h2>

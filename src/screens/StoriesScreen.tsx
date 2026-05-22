@@ -55,24 +55,22 @@ export const StoriesScreen: React.FC = () => {
               key={story.title} 
               className={`coffee-card fade-in ${(!isUnlocked && !isPremiumLocked) ? 'locked' : ''}`} 
               onClick={handleClick}
-              style={{ 
-                opacity: (isUnlocked || isPremiumLocked) ? 1 : 0.6,
-              }}
+              style={{ cursor: (isUnlocked || isPremiumLocked) ? 'pointer' : 'default' }}
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: spacing.sm }}>
-                <h2 style={{ color: colors.primary, fontSize: 20, fontWeight: 900, margin: 0 }}>
+                <h2 style={{ fontSize: 22, fontWeight: 900, margin: 0 }}>
                   {story.title}
                 </h2>
                 {isPremiumLocked && <span style={{ fontSize: 24 }} title="Premium Feature">👑</span>}
                 {!isPremiumLocked && !isUnlocked && <span style={{ fontSize: 24 }}>🔒</span>}
-                {isCompleted && <span style={{ fontSize: 24, color: colors.success }}>✅</span>}
+                {isCompleted && <span style={{ fontSize: 24 }}>✅</span>}
               </div>
 
               <div style={{ display: 'flex', gap: spacing.md, alignItems: 'center', marginBottom: spacing.md }}>
                 <span style={{ 
                   fontSize: 12, 
                   fontWeight: 900, 
-                  color: story.difficulty === 1 ? colors.success : story.difficulty === 2 ? colors.primary : colors.error,
+                  color: story.difficulty === 1 ? '#386641' : story.difficulty === 2 ? '#4E342E' : '#9E2A2B',
                   textTransform: 'uppercase',
                   backgroundColor: 'rgba(0,0,0,0.05)',
                   padding: '4px 8px',
@@ -80,7 +78,7 @@ export const StoriesScreen: React.FC = () => {
                 }}>
                   {story.difficulty === 1 ? 'Easy' : story.difficulty === 2 ? 'Medium' : 'Hard'}
                 </span>
-                <span style={{ fontSize: 12, color: colors.textSecondary }}>
+                <span style={{ fontSize: 12, opacity: 0.7 }}>
                   {totalPages} pages
                 </span>
               </div>
@@ -88,8 +86,8 @@ export const StoriesScreen: React.FC = () => {
               {isUnlocked && (
                 <div style={{ marginBottom: spacing.lg }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4, fontSize: 12, fontWeight: 'bold' }}>
-                    <span style={{ color: colors.textSecondary }}>Progress</span>
-                    <span style={{ color: colors.accent }}>{progressPercent}%</span>
+                    <span style={{ opacity: 0.7 }}>Progress</span>
+                    <span style={{ color: '#D4A373' }}>{progressPercent}%</span>
                   </div>
                   <ProgressBar progress={progressPercent} />
                 </div>

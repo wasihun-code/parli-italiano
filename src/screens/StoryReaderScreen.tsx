@@ -41,6 +41,7 @@ export const StoryReaderScreen: React.FC = () => {
   useEffect(() => {
     // Sync store on change
     updateStoryProgress(storyTitle, { currentPart: partIdx, currentPage: pageIdx });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [partIdx, pageIdx, storyTitle, updateStoryProgress]);
 
   // Reset page-specific state when moving pages
@@ -162,8 +163,8 @@ export const StoryReaderScreen: React.FC = () => {
         </div>
       </header>
 
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: spacing.xl, paddingBottom: 120 }}>
-        <div className="card" style={{ padding: spacing.xl, backgroundColor: '#fff', boxShadow: '0 4px 20px rgba(0,0,0,0.05)', borderRadius: 24 }}>
+      <div className="story-reader-layout">
+        <div className="story-reader-text coffee-card">
           <p style={{ fontSize: 20, lineHeight: '1.6', color: colors.primary, margin: 0, whiteSpace: 'pre-wrap' }}>
             {currentPage.italian_text}
           </p>

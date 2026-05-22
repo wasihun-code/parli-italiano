@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { PrimaryButton } from '../components/PrimaryButton';
 import { Screen } from '../components/Screen';
@@ -6,9 +6,7 @@ import { scenarioCatalog } from '@shared/data/scenarios';
 import { useProgressStore } from '@shared/store/progressStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
-
 const CATEGORIES = [
-  'All',
   'Travel',
   'Accommodation',
   'Dining',
@@ -20,25 +18,38 @@ const CATEGORIES = [
   'Health',
   'Tech',
   'Animals',
-  'Verbs_ARE',
-  'Verbs_ERE',
-  'Verbs_IRE',
-  'Reflexive_Verbs',
+  'Verbs ARE',
+  'Verbs ERE',
+  'Verbs IRE',
+  'Reflexive Verbs',
   'Adjectives',
   'Miscellaneous'
 ];
 
+const normalize = (s: string) => s.toLowerCase().trim().replace(/[\s_]+/g, '_');
+
 export const ScenarioSelectionScreen: React.FC = () => {
   const navigate = useNavigate();
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState('Travel');
+  const categoryScrollRef = useRef<HTMLDivElement>(null);
   const areFoundationsPassed = useProgressStore(state =>
     state.areFoundationsPassed(),
   );
 
   const filteredScenarios = useMemo(() => {
-    if (activeCategory === 'All') return scenarioCatalog;
-    return scenarioCatalog.filter(s => s.category === activeCategory);
+    const normalizedActive = normalize(activeCategory);
+    return scenarioCatalog.filter(s => normalize(s.category) === normalizedActive);
   }, [activeCategory]);
+
+  const scrollCategories = (direction: 'left' | 'right') => {
+    if (categoryScrollRef.current) {
+      const scrollAmount = 200;
+      categoryScrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   if (!areFoundationsPassed) {
     return (
@@ -79,17 +90,44 @@ export const ScenarioSelectionScreen: React.FC = () => {
           </p>
         </header>
 
-        <div className="scenario-layout" style={{ display: 'flex', flexDirection: 'column', gap: spacing.xl }}>
-          {/* Category Filter */}
-          <div className="category-sidebar" style={{ 
-            display: 'flex', 
-            flexDirection: 'row', 
-            overflowX: 'auto', 
-            gap: spacing.sm,
-            paddingBottom: spacing.sm,
-            msOverflowStyle: 'none',
-            scrollbarWidth: 'none',
-          }}>
+        {/* Horizontal Category Row */}
+        <div className="category-row-container" style={{ 
+          position: 'relative', 
+          display: 'flex', 
+          alignItems: 'center',
+          gap: spacing.sm,
+          width: '100%'
+        }}>
+          <button 
+            onClick={() => scrollCategories('left')}
+            className="scroll-btn"
+            style={{
+              width: 36, height: 36, borderRadius: 18, backgroundColor: '#fff',
+              border: `2px solid ${colors.border}`, cursor: 'pointer',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.1)', flexShrink: 0
+            }}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+
+          <div 
+            className="category-scroll-wrapper"
+            ref={categoryScrollRef}
+            style={{ 
+              display: 'flex', 
+              flexDirection: 'row', 
+              overflowX: 'auto', 
+              gap: spacing.sm,
+              padding: `${spacing.xs}px 0`,
+              scrollSnapType: 'x mandatory',
+              msOverflowStyle: 'none',
+              scrollbarWidth: 'none',
+              flex: 1
+            }}
+          >
             {CATEGORIES.map(cat => (
               <button
                 key={cat}
@@ -107,76 +145,99 @@ export const ScenarioSelectionScreen: React.FC = () => {
                   transition: 'all 0.2s',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: 6
+                  gap: 6,
+                  scrollSnapAlign: 'start'
                 }}
               >
-                <span>{cat === 'All' ? '🌐' : getCategoryEmoji(cat)}</span>
-                {cat.replace('_', ' ')}
+                <span>{getCategoryEmoji(cat)}</span>
+                {cat}
               </button>
             ))}
           </div>
 
-          {/* Scenario Grid */}
-          <div className="games-grid">
-            {filteredScenarios.map(scenario => (
-              <div 
-                key={scenario.id} 
-                className="coffee-card fade-in" 
-                onClick={() => navigate(`/scenarios/${scenario.id}`)} 
-                style={{ 
-                  cursor: 'pointer', 
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'space-between'
-                }}
-              >
-                <div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: spacing.sm }}>
-                    <span style={{ fontSize: 24 }}>{getCategoryEmoji(scenario.category)}</span>
-                    <span style={{ fontSize: 12, fontWeight: 900, color: colors.accent, textTransform: 'uppercase', backgroundColor: 'rgba(0,0,0,0.05)', padding: '2px 6px', borderRadius: 4 }}>
-                      {scenario.category}
-                    </span>
-                  </div>
-                  <h3 style={{ color: colors.primary, fontSize: 18, fontWeight: 900, margin: '0 0 8px' }}>
-                    {scenario.title}
-                  </h3>
-                  <p style={{ color: colors.textSecondary, fontSize: 14, margin: '0 0 16px', lineHeight: '1.5' }}>
-                    {scenario.description}
-                  </p>
+          <button 
+            onClick={() => scrollCategories('right')}
+            className="scroll-btn"
+            style={{
+              width: 36, height: 36, borderRadius: 18, backgroundColor: '#fff',
+              border: `2px solid ${colors.border}`, cursor: 'pointer',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.1)', flexShrink: 0
+            }}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+        </div>
+
+        {/* Scenario Grid */}
+        <div 
+          className="scenarios-grid"
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+            gap: '1.5rem',
+            width: '100%',
+            paddingBottom: spacing.xxl
+          }}
+        >
+          {filteredScenarios.map(scenario => (
+            <div 
+              key={scenario.id} 
+              className="coffee-card fade-in" 
+              onClick={() => navigate(`/scenarios/${scenario.id}`)} 
+              style={{ 
+                cursor: 'pointer', 
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                height: '100%',
+                minHeight: 220,
+              }}
+            >
+              <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: spacing.sm }}>
+                  <span style={{ fontSize: 24 }}>{getCategoryEmoji(scenario.category)}</span>
+                  <span style={{ fontSize: 12, fontWeight: 900, color: colors.accent, textTransform: 'uppercase', backgroundColor: 'rgba(0,0,0,0.05)', padding: '2px 6px', borderRadius: 4 }}>
+                    {scenario.category.replace('_', ' ')}
+                  </span>
                 </div>
-                
-                <PrimaryButton 
-                  label="View Details" 
-                  onPress={() => navigate(`/scenarios/${scenario.id}`)} 
-                  variant="primary"
-                />
+                <h3 style={{ color: colors.primary, fontSize: 18, fontWeight: 900, margin: '0 0 8px' }}>
+                  {scenario.title}
+                </h3>
+                <p style={{ color: colors.textSecondary, fontSize: 14, margin: '0 0 16px', lineHeight: '1.5' }}>
+                  {scenario.description}
+                </p>
               </div>
-            ))}
-          </div>
+              
+              <PrimaryButton 
+                label="View Details" 
+                onPress={() => navigate(`/scenarios/${scenario.id}`)} 
+                variant="primary"
+              />
+            </div>
+          ))}
         </div>
       </div>
 
       <style>{`
-        .category-sidebar::-webkit-scrollbar {
+        .category-scroll-wrapper::-webkit-scrollbar {
           display: none;
         }
         @media (min-width: 1024px) {
-          .scenario-layout {
-            flex-direction: row !important;
-            align-items: flex-start;
+          .scenarios-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
           }
-          .category-sidebar {
-            flex-direction: column !important;
-            width: 220px;
-            flex-shrink: 0;
-            overflow-x: visible !important;
-            position: sticky;
-            top: 24px;
+        }
+        @media (max-width: 768px) {
+          .scenarios-grid {
+            grid-template-columns: repeat(2, 1fr);
           }
-          .category-sidebar button {
-            width: 100%;
-            text-align: left;
-            justify-content: flex-start;
+        }
+        @media (max-width: 480px) {
+          .scenarios-grid {
+            grid-template-columns: 1fr;
           }
         }
       `}</style>
@@ -185,12 +246,13 @@ export const ScenarioSelectionScreen: React.FC = () => {
 };
 
 function getCategoryEmoji(category: string): string {
-  switch (category.toLowerCase()) {
+  const norm = normalize(category);
+  switch (norm) {
     case 'travel': return '✈️';
     case 'accommodation': return '🏨';
     case 'dining': return '🍝';
     case 'shopping': return '🛍️';
-    case 'daily life': return '🏠';
+    case 'daily_life': return '🏠';
     case 'workstudy': return '💼';
     case 'social': return '🎉';
     case 'culture': return '🎭';

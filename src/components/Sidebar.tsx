@@ -1,63 +1,18 @@
 import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { useProgressStore } from '@shared/store/progressStore';
 import { useSubscriptionStore } from '@shared/store/subscriptionStore';
 import { PrimaryButton } from './PrimaryButton';
 
-const NAV_ITEMS = [
-  { path: '/', label: 'Home', icon: '🏠' },
-  { path: '/scenarios', label: 'Scenarios', icon: '🗺️' },
-  { path: '/foundations', label: 'Foundations', icon: '🧱' },
-  { path: '/review', label: 'Review', icon: '🃏' },
-  { path: '/games', label: 'Games', icon: '🎮' },
-  { path: '/stories', label: 'Stories', icon: '📖' },
-  { path: '/grammar', label: 'Grammar', icon: '📚' },
-  { path: '/history', label: 'AI Tutor', icon: '🤖' },
-  { path: '/friends', label: 'Friends', icon: '👥' },
-];
-
 export const Sidebar: React.FC = () => {
   const { xp, streak } = useProgressStore();
   const { plan } = useSubscriptionStore();
   const navigate = useNavigate();
-  const location = useLocation();
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.xl }}>
-      <div className="card" style={{ padding: spacing.md }}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.xs }}>
-          {NAV_ITEMS.map(item => {
-            const active = location.pathname === item.path || (item.path !== '/' && location.pathname.startsWith(item.path));
-            return (
-              <button
-                key={item.path}
-                onClick={() => navigate(item.path)}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: spacing.md,
-                  padding: spacing.md,
-                  border: 'none',
-                  background: active ? 'rgba(78, 52, 46, 0.08)' : 'transparent',
-                  borderRadius: 14,
-                  cursor: 'pointer',
-                  textAlign: 'left',
-                  transition: 'background 0.2s',
-                  color: active ? colors.primary : colors.textSecondary,
-                }}
-                onMouseEnter={e => { if (!active) e.currentTarget.style.backgroundColor = 'rgba(78, 52, 46, 0.05)'; }}
-                onMouseLeave={e => { if (!active) e.currentTarget.style.backgroundColor = 'transparent'; }}
-              >
-                <span style={{ fontSize: 20 }}>{item.icon}</span>
-                <span style={{ fontSize: 16, fontWeight: 900 }}>{item.label}</span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
       {plan === 'free' && (
         <div className="card" style={{ padding: spacing.lg, background: `linear-gradient(135deg, ${colors.primary} 0%, ${colors.accent} 100%)`, border: 'none' }}>
           <h3 style={{ color: colors.onPrimary, marginBottom: spacing.sm, fontSize: 18 }}>Go Premium!</h3>
@@ -74,16 +29,20 @@ export const Sidebar: React.FC = () => {
       )}
 
       <div className="card" style={{ padding: spacing.lg, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <span style={{ fontSize: 24 }}>🔥</span>
-          <span style={{ fontWeight: 900, color: colors.primary }}>{streak || 0}</span>
-          <span style={{ fontSize: 12, color: colors.textSecondary }}>Streak</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: spacing.xs }}>
+          <span style={{ fontSize: 32 }}>🔥</span>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span style={{ fontWeight: 900, color: colors.primary, fontSize: 24, lineHeight: 1 }}>{streak || 0}</span>
+            <span style={{ fontSize: 12, color: colors.textSecondary, fontWeight: 800, textTransform: 'uppercase' }}>Streak</span>
+          </div>
         </div>
         <div style={{ height: 40, width: 2, backgroundColor: colors.border }}></div>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <span style={{ fontSize: 24 }}>⚡</span>
-          <span style={{ fontWeight: 900, color: colors.primary }}>{xp || 0}</span>
-          <span style={{ fontSize: 12, color: colors.textSecondary }}>Total XP</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: spacing.xs }}>
+          <span style={{ fontSize: 32 }}>⚡</span>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span style={{ fontWeight: 900, color: colors.primary, fontSize: 24, lineHeight: 1 }}>{xp || 0}</span>
+            <span style={{ fontSize: 12, color: colors.textSecondary, fontWeight: 800, textTransform: 'uppercase' }}>Total XP</span>
+          </div>
         </div>
       </div>
 

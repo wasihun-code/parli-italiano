@@ -24,7 +24,6 @@ export const PluralGame: React.FC = () => {
   const [gameState, setGameState] = useState<'lobby' | 'playing' | 'gameOver' | 'win'>('lobby');
   const [score, setScore] = useState(0);
   const [lives, setLives] = useState(3);
-  const [streak, setStreak] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [typedAnswer, setTypedAnswer] = useState('');
   const [feedback, setFeedback] = useState<{ isCorrect: boolean, isNearly: boolean, correctAnswer: string, explanation?: string } | null>(null);
@@ -51,7 +50,6 @@ export const PluralGame: React.FC = () => {
     if (isCorrect || isNearly) {
       if (soundEnabled) audioService.playCorrect();
       setScore(s => s + 10);
-      setStreak(s => s + 1);
       setFeedback({ isCorrect: true, isNearly, correctAnswer: currentItem.plural });
       setTimeout(() => {
         nextQuestion();
@@ -59,7 +57,6 @@ export const PluralGame: React.FC = () => {
     } else {
       if (soundEnabled) audioService.playIncorrect();
       setLives(l => l - 1);
-      setStreak(0);
       const explanation = getWrongAnswerExplanation({
         type: 'plural',
         italian: currentItem.italian,
@@ -79,8 +76,12 @@ export const PluralGame: React.FC = () => {
       if (soundEnabled) audioService.playComplete();
       setGameState('win');
       updateHighScore('pluralGame', score);
+      if (score >= 100 && level < 3) {
+        if (soundEnabled) audioService.playLevelUp();
+        unlockLevel('pluralGame', level + 1);
+      }
     }
-  }, [currentIndex, itemsForLevel.length, score, updateHighScore, soundEnabled]);
+  }, [currentIndex, itemsForLevel.length, score, updateHighScore, soundEnabled, level, unlockLevel]);
 
   useEffect(() => {
     if (lives <= 0) {
@@ -88,13 +89,6 @@ export const PluralGame: React.FC = () => {
       updateHighScore('pluralGame', score);
     }
   }, [lives, score, updateHighScore]);
-
-  useEffect(() => {
-    if (streak >= 5 && level < 3) {
-      if (soundEnabled) audioService.playLevelUp();
-      unlockLevel('pluralGame', level + 1);
-    }
-  }, [streak, level, unlockLevel, soundEnabled]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -130,7 +124,7 @@ export const PluralGame: React.FC = () => {
                 disabled={!isUnlocked}
                 onClick={() => { 
                     if (soundEnabled) audioService.playClick();
-                    setLevel(l); setGameState('playing'); setScore(0); setLives(3); setStreak(0); setCurrentIndex(0); setTypedAnswer(''); setFeedback(null); setHintsLeft(3); setShowHint(false); 
+                    setLevel(l); setGameState('playing'); setScore(0); setLives(3); setCurrentIndex(0); setTypedAnswer(''); setFeedback(null); setHintsLeft(3); setShowHint(false); 
                 }}
                 className="card"
                 style={{
@@ -166,7 +160,7 @@ export const PluralGame: React.FC = () => {
       <Screen style={{ justifyContent: 'center', textAlign: 'center' }}>
         <div className="card fade-in" style={{ padding: spacing.xl, display: 'flex', flexDirection: 'column', gap: spacing.md }}>
           <h1 style={{ fontSize: 48 }}>{gameState === 'win' ? '🎉 Vittoria!' : '😢 Game Over'}</h1>
-          <p style={{ fontSize: 24, color: colors.textSecondary }}>Final Score: {score}</p>
+          <p style={{ fontSize: 24, color: colors.textSecondary }}>Final Score: {score} / 100</p>
           <PrimaryButton label="Play Again" onPress={() => setGameState('lobby')} />
           <PrimaryButton label="Exit" onPress={() => navigate('/games')} variant="secondary" />
         </div>
@@ -174,7 +168,7 @@ export const PluralGame: React.FC = () => {
     );
   }
 
-  const progressPercent = Math.min(100, (streak / 5) * 100);
+  const progressPercent = Math.min(100, (score / 100) * 100);
 
   return (
     <Screen style={{ backgroundColor: colors.surface }}>
@@ -185,8 +179,7 @@ export const PluralGame: React.FC = () => {
             <ShortcutHelp />
           </div>
           <div style={{ display: 'flex', gap: spacing.md }}>
-            <div style={{ color: colors.accent, fontWeight: 900 }}>Score: {score}</div>
-            <div style={{ color: colors.success, fontWeight: 900 }}>Streak: {streak} / 5 🔥</div>
+            <div style={{ color: colors.accent, fontWeight: 900 }}>Score: {score} / 100</div>
             <div style={{ color: colors.error }}>{'❤️'.repeat(lives)}</div>
           </div>
         </div>

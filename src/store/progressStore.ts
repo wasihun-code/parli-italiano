@@ -26,6 +26,7 @@ type ProgressState = {
   lastActivityDate: string;
   streakFreezesUsed: number;
   streakFreezeLimit: number;
+  awardedStreakMilestones: number[];
   foundationScores: Record<number, number>;
   scenarioProgress: Record<number, ScenarioPhaseProgress>;
   recordFoundationScore: (lessonId: number, score: number) => void;
@@ -40,7 +41,7 @@ type ProgressState = {
   syncWithBackend: () => Promise<void>;
 };
 
-const emptyScenarioProgress: ScenarioPhaseProgress = {
+export const emptyScenarioProgress: ScenarioPhaseProgress = {
   vocabularyCompleted: false,
   phraseScore: 0,
   phraseCompleted: false,
@@ -76,31 +77,42 @@ export const useProgressStore = create<ProgressState>()(
       lastActivityDate: '',
       streakFreezesUsed: 0,
       streakFreezeLimit: 0,
+      awardedStreakMilestones: [],
       foundationScores: {},
       scenarioProgress: {},
       addXP: (amount) => set((state) => ({ xp: state.xp + amount })),
       updateStreak: async () => {
+        const today = new Date().toISOString().split('T')[0];
+        const { lastActivityDate, streak, awardedStreakMilestones, xp } = get();
+        
+        if (lastActivityDate === today) return;
+
+        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+        const newStreak = lastActivityDate === yesterday ? streak + 1 : 1;
+        
+        const milestones = awardedStreakMilestones || [];
+        let bonusXP = 0;
+        const newMilestones = [...milestones];
+
+        if (newStreak >= 30 && !milestones.includes(30)) {
+          bonusXP = 50;
+          newMilestones.push(30);
+        } else if (newStreak >= 7 && !milestones.includes(7)) {
+          bonusXP = 10;
+          newMilestones.push(7);
+        }
+
+        set({ 
+          streak: newStreak, 
+          lastActivityDate: today,
+          xp: xp + bonusXP,
+          awardedStreakMilestones: newMilestones,
+        });
+
         try {
-          const response = await apiClient.recordActivity();
-          set({
-            streak: response.streak_days,
-            lastActivityDate: response.last_activity_date,
-            streakFreezesUsed: response.streak_freezes_used,
-            streakFreezeLimit: response.streak_freeze_limit,
-          });
+          await apiClient.recordActivity();
         } catch (err) {
-          console.error('Failed to record activity:', err);
-          // Fallback local logic if offline or error
-          set((state) => {
-            const today = new Date().toISOString().split('T')[0];
-            if (state.lastActivityDate === today) return state;
-            
-            const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
-            if (state.lastActivityDate === yesterday) {
-              return { streak: state.streak + 1, lastActivityDate: today };
-            }
-            return { streak: 1, lastActivityDate: today };
-          });
+          console.error('Failed to sync streak with backend:', err);
         }
       },
       syncWithBackend: async () => {

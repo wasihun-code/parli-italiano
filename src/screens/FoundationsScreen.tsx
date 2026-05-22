@@ -118,6 +118,7 @@ export const FoundationsScreen: React.FC = () => {
         backgroundColor: areFoundationsPassed ? 'rgba(56, 102, 65, 0.05)' : 'rgba(78, 52, 46, 0.03)',
         borderColor: areFoundationsPassed ? colors.success : colors.primary,
         marginTop: spacing.xl,
+        padding: 24,
         display: 'flex',
         flexDirection: 'column',
         gap: spacing.md,

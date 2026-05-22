@@ -45,8 +45,8 @@ export const GenderGame: React.FC = () => {
       setCurrentIndex(i => i + 1);
     } else {
       setGameState('win');
-      updateHighScore('genderGame', score + 10);
-      if (score + 10 >= 100 && level < 3) {
+      updateHighScore('genderGame', score);
+      if (score >= 100 && level < 3) {
         unlockLevel('genderGame', level + 1);
       }
     }
@@ -171,7 +171,7 @@ export const GenderGame: React.FC = () => {
       <Screen style={{ justifyContent: 'center', textAlign: 'center' }}>
         <div className="card fade-in" style={{ padding: spacing.xl, display: 'flex', flexDirection: 'column', gap: spacing.md }}>
           <h1 style={{ fontSize: 48 }}>{gameState === 'win' ? '🎉 Bravissimo!' : '😢 Game Over'}</h1>
-          <p style={{ fontSize: 24, color: colors.textSecondary }}>Final Score: {score}</p>
+          <p style={{ fontSize: 24, color: colors.textSecondary }}>Final Score: {score} / 100</p>
           <PrimaryButton label="Play Again" onPress={() => setGameState('lobby')} />
           <PrimaryButton label="Exit" onPress={() => navigate('/games')} variant="secondary" />
         </div>
@@ -179,7 +179,7 @@ export const GenderGame: React.FC = () => {
     );
   }
 
-  const progressPercent = ((currentIndex) / 20) * 100;
+  const progressPercent = Math.min(100, (score / 100) * 100);
 
   return (
     <Screen style={{ backgroundColor: colors.surface }}>
@@ -190,7 +190,7 @@ export const GenderGame: React.FC = () => {
             <ShortcutHelp />
           </div>
           <div style={{ display: 'flex', gap: spacing.md }}>
-            <div style={{ color: colors.accent, fontWeight: 900 }}>Score: {score}</div>
+            <div style={{ color: colors.accent, fontWeight: 900 }}>Score: {score} / 100</div>
             <div style={{ color: colors.error }}>{'❤️'.repeat(lives)}</div>
           </div>
         </div>

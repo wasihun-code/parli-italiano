@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { spacing } from '@shared/theme/spacing';
 import { Header } from './Header';
-import { BottomNav } from './BottomNav';
 import { Sidebar } from './Sidebar';
+import { NavSidebar } from './NavSidebar';
+import { BottomNav } from './BottomNav';
 
 interface ScreenProps {
   children: React.ReactNode;
@@ -18,7 +18,7 @@ export const Screen: React.FC<ScreenProps> = ({ children, style }) => {
                     location.pathname.includes('/conversation') ||
                     location.pathname.includes('/placement-test') ||
                     location.pathname.includes('/foundations/') ||
-                    location.pathname.includes('/stories/');
+                    location.pathname.startsWith('/stories/'); // Keep list for reader, but not main stories list
   
   const showNav = location.pathname !== '/onboarding' && 
                   location.pathname !== '/auth' && 
@@ -36,11 +36,13 @@ export const Screen: React.FC<ScreenProps> = ({ children, style }) => {
       }}
     >
       <Header />
-      <div className="layout-container">
-        <main className="layout-main" style={{ 
-          padding: isTraining ? '72px 0 0 0' : `72px 0 0 0`,
-          paddingBottom: (showNav ? 100 : 0) + spacing.xl,
-        }}>
+      <div className={`layout-container ${showNav ? 'with-sidebars' : 'no-sidebars'}`}>
+        {showNav && (
+          <aside className="layout-nav-sidebar">
+            <NavSidebar />
+          </aside>
+        )}
+        <main className={`layout-main ${isTraining ? 'training-mode' : ''}`}>
           {children}
         </main>
         {showNav && (

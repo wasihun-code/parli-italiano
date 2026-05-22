@@ -15,18 +15,13 @@ export const Header: React.FC = () => {
 
   return (
     <div style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      height: 64,
-      backgroundColor: 'rgba(250, 249, 246, 0.95)',
-      backdropFilter: 'blur(8px)',
-      borderBottom: `1px solid ${colors.border}`,
+      height: 70,
+      backgroundColor: '#FFFFFF',
+      borderBottom: `2px solid ${colors.border}`,
       display: 'flex',
       alignItems: 'center',
       padding: `0 ${spacing.md}px`,
-      zIndex: 1000,
+      zIndex: 5,
       gap: spacing.md
     }}>
       {showBack && (

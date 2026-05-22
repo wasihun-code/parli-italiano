@@ -19,7 +19,6 @@ export const IdiomsGame: React.FC = () => {
   const [level, setLevel] = useState(1);
   const [gameState, setGameState] = useState<'lobby' | 'playing' | 'gameOver' | 'win'>('lobby');
   const [score, setScore] = useState(0);
-  const [streak, setStreak] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<{ isCorrect: boolean, explanation?: string } | null>(null);
@@ -51,21 +50,22 @@ export const IdiomsGame: React.FC = () => {
     } else {
       setGameState('win');
       updateHighScore('idiomsGame', score);
+      if (score >= 100 && level < 3) {
+        unlockLevel('idiomsGame', level + 1);
+      }
     }
-  }, [currentIndex, itemsForLevel.length, score, updateHighScore]);
+  }, [currentIndex, itemsForLevel.length, score, level, updateHighScore, unlockLevel]);
 
   const handleCheck = useCallback(() => {
     if (feedback || !currentItem || !selectedOption) return;
 
     if (selectedOption === currentItem.meaning) {
       setScore(s => s + 15);
-      setStreak(s => s + 1);
       setFeedback({ isCorrect: true });
       setTimeout(() => {
         nextQuestion();
       }, 800);
     } else {
-      setStreak(0);
       const explanation = getWrongAnswerExplanation({
         type: 'idioms',
         italian: currentItem.italian,
@@ -74,12 +74,6 @@ export const IdiomsGame: React.FC = () => {
       setFeedback({ isCorrect: false, explanation });
     }
   }, [feedback, currentItem, selectedOption, nextQuestion]);
-
-  useEffect(() => {
-    if (streak >= 5 && level < 3) {
-      unlockLevel('idiomsGame', level + 1);
-    }
-  }, [streak, level, unlockLevel]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -119,7 +113,7 @@ export const IdiomsGame: React.FC = () => {
                 key={l}
                 disabled={!isUnlocked}
                 onClick={() => { 
-                  setLevel(l); setGameState('playing'); setScore(0); setStreak(0); setCurrentIndex(0); 
+                  setLevel(l); setGameState('playing'); setScore(0); setCurrentIndex(0); 
                   setSelectedOption(null); setFeedback(null); setHintsLeft(3); setShowHint(false); 
                 }}
                 className="card"
@@ -164,7 +158,7 @@ export const IdiomsGame: React.FC = () => {
     );
   }
 
-  const progressPercent = Math.min(100, (streak / 5) * 100);
+  const progressPercent = Math.min(100, (score / 100) * 100);
 
   return (
     <Screen style={{ backgroundColor: colors.surface }}>
@@ -176,7 +170,6 @@ export const IdiomsGame: React.FC = () => {
           </div>
           <div style={{ display: 'flex', gap: spacing.md }}>
             <div style={{ color: colors.accent, fontWeight: 900 }}>Score: {score}</div>
-            <div style={{ color: colors.success, fontWeight: 900 }}>Streak: {streak} / 5 🔥</div>
           </div>
         </div>
         <ProgressBar progress={progressPercent} />

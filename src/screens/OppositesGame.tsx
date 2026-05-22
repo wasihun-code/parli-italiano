@@ -21,7 +21,6 @@ export const OppositesGame: React.FC = () => {
   const [gameState, setGameState] = useState<'lobby' | 'playing' | 'gameOver' | 'win'>('lobby');
   const [score, setScore] = useState(0);
   const [lives, setLives] = useState(3);
-  const [streak, setStreak] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [typedAnswer, setTypedAnswer] = useState('');
   const [feedback, setFeedback] = useState<{ isCorrect: boolean, isNearly: boolean, correctAnswer: string, explanation?: string } | null>(null);
@@ -47,14 +46,12 @@ export const OppositesGame: React.FC = () => {
 
     if (isCorrect || isNearly) {
       setScore(s => s + 10);
-      setStreak(s => s + 1);
       setFeedback({ isCorrect: true, isNearly, correctAnswer: currentItem.opposite });
       setTimeout(() => {
         nextQuestion();
       }, 800);
     } else {
       setLives(l => l - 1);
-      setStreak(0);
       const explanation = getWrongAnswerExplanation({
         type: 'opposites',
         italian: currentItem.italian,
@@ -73,8 +70,11 @@ export const OppositesGame: React.FC = () => {
     } else {
       setGameState('win');
       updateHighScore('oppositesGame', score);
+      if (score >= 100 && level < 3) {
+        unlockLevel('oppositesGame', level + 1);
+      }
     }
-  }, [currentIndex, itemsForLevel.length, score, updateHighScore]);
+  }, [currentIndex, itemsForLevel.length, score, level, updateHighScore, unlockLevel]);
 
   useEffect(() => {
     if (lives <= 0) {
@@ -82,12 +82,6 @@ export const OppositesGame: React.FC = () => {
       updateHighScore('oppositesGame', score);
     }
   }, [lives, score, updateHighScore]);
-
-  useEffect(() => {
-    if (streak >= 5 && level < 3) {
-      unlockLevel('oppositesGame', level + 1);
-    }
-  }, [streak, level, unlockLevel]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -121,7 +115,7 @@ export const OppositesGame: React.FC = () => {
               <button
                 key={l}
                 disabled={!isUnlocked}
-                onClick={() => { setLevel(l); setGameState('playing'); setScore(0); setLives(3); setStreak(0); setCurrentIndex(0); setTypedAnswer(''); setFeedback(null); setHintsLeft(3); setShowHint(false); }}
+                onClick={() => { setLevel(l); setGameState('playing'); setScore(0); setLives(3); setCurrentIndex(0); setTypedAnswer(''); setFeedback(null); setHintsLeft(3); setShowHint(false); }}
                 className="card"
                 style={{
                   padding: spacing.lg,
@@ -156,7 +150,7 @@ export const OppositesGame: React.FC = () => {
       <Screen style={{ justifyContent: 'center', textAlign: 'center' }}>
         <div className="card fade-in" style={{ padding: spacing.xl, display: 'flex', flexDirection: 'column', gap: spacing.md }}>
           <h1 style={{ fontSize: 48 }}>{gameState === 'win' ? '🎉 Vittoria!' : '😢 Game Over'}</h1>
-          <p style={{ fontSize: 24, color: colors.textSecondary }}>Final Score: {score}</p>
+          <p style={{ fontSize: 24, color: colors.textSecondary }}>Final Score: {score} / 100</p>
           <PrimaryButton label="Play Again" onPress={() => setGameState('lobby')} />
           <PrimaryButton label="Exit" onPress={() => navigate('/games')} variant="secondary" />
         </div>
@@ -164,7 +158,7 @@ export const OppositesGame: React.FC = () => {
     );
   }
 
-  const progressPercent = Math.min(100, (streak / 5) * 100);
+  const progressPercent = Math.min(100, (score / 100) * 100);
 
   return (
     <Screen style={{ backgroundColor: colors.surface }}>
@@ -175,8 +169,7 @@ export const OppositesGame: React.FC = () => {
             <ShortcutHelp />
           </div>
           <div style={{ display: 'flex', gap: spacing.md }}>
-            <div style={{ color: colors.accent, fontWeight: 900 }}>Score: {score}</div>
-            <div style={{ color: colors.success, fontWeight: 900 }}>Streak: {streak} / 5 🔥</div>
+            <div style={{ color: colors.accent, fontWeight: 900 }}>Score: {score} / 100</div>
             <div style={{ color: colors.error }}>{'❤️'.repeat(lives)}</div>
           </div>
         </div>

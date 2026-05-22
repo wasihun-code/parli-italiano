@@ -20,7 +20,6 @@ export const TranslationGame: React.FC = () => {
   const [level, setLevel] = useState(1);
   const [gameState, setGameState] = useState<'lobby' | 'playing' | 'gameOver' | 'win'>('lobby');
   const [score, setScore] = useState(0);
-  const [streak, setStreak] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [typedAnswer, setTypedAnswer] = useState('');
   const [feedback, setFeedback] = useState<{ isCorrect: boolean, isNearly: boolean, correctAnswer: string, explanation?: string } | null>(null);
@@ -43,10 +42,8 @@ export const TranslationGame: React.FC = () => {
 
     if (isCorrect || isNearly) {
       setScore(s => s + 20);
-      setStreak(s => s + 1);
       setFeedback({ isCorrect: true, isNearly, correctAnswer: currentItem.english });
     } else {
-      setStreak(0);
       const explanation = getWrongAnswerExplanation({
         type: 'translation',
         italian: currentItem.italian,
@@ -64,14 +61,11 @@ export const TranslationGame: React.FC = () => {
     } else {
       setGameState('win');
       updateHighScore('translationGame', score);
+      if (score >= 100 && level < 3) {
+        unlockLevel('translationGame', level + 1);
+      }
     }
-  }, [currentIndex, sentencesForLevel.length, score, updateHighScore]);
-
-  useEffect(() => {
-    if (streak >= 5 && level < 3) {
-      unlockLevel('translationGame', level + 1);
-    }
-  }, [streak, level, unlockLevel]);
+  }, [currentIndex, sentencesForLevel.length, score, level, updateHighScore, unlockLevel]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -105,7 +99,7 @@ export const TranslationGame: React.FC = () => {
               <button
                 key={l}
                 disabled={!isUnlocked}
-                onClick={() => { setLevel(l); setGameState('playing'); setScore(0); setStreak(0); setCurrentIndex(0); setTypedAnswer(''); setFeedback(null); }}
+                onClick={() => { setLevel(l); setGameState('playing'); setScore(0); setCurrentIndex(0); setTypedAnswer(''); setFeedback(null); }}
                 className="card"
                 style={{
                   padding: spacing.lg,
@@ -140,7 +134,7 @@ export const TranslationGame: React.FC = () => {
       <Screen style={{ justifyContent: 'center', textAlign: 'center' }}>
         <div className="card fade-in" style={{ padding: spacing.xl, display: 'flex', flexDirection: 'column', gap: spacing.md }}>
           <h1 style={{ fontSize: 48 }}>🎉 Livello Completato!</h1>
-          <p style={{ fontSize: 24, color: colors.textSecondary }}>Final Score: {score}</p>
+          <p style={{ fontSize: 24, color: colors.textSecondary }}>Final Score: {score} / 100</p>
           <PrimaryButton label="Play Again" onPress={() => setGameState('lobby')} />
           <PrimaryButton label="Exit" onPress={() => navigate('/games')} variant="secondary" />
         </div>
@@ -148,7 +142,7 @@ export const TranslationGame: React.FC = () => {
     );
   }
 
-  const progressPercent = Math.min(100, (streak / 5) * 100);
+  const progressPercent = Math.min(100, (score / 100) * 100);
 
   return (
     <Screen style={{ backgroundColor: colors.surface }}>
@@ -159,8 +153,7 @@ export const TranslationGame: React.FC = () => {
             <ShortcutHelp />
           </div>
           <div style={{ display: 'flex', gap: spacing.md }}>
-            <div style={{ color: colors.accent, fontWeight: 900 }}>Score: {score}</div>
-            <div style={{ color: colors.success, fontWeight: 900 }}>Streak: {streak} / 5 🔥</div>
+            <div style={{ color: colors.accent, fontWeight: 900 }}>Score: {score} / 100</div>
           </div>
         </div>
         <ProgressBar progress={progressPercent} />

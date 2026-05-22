@@ -61,20 +61,14 @@ export const BottomNav: React.FC = () => {
 
   return (
     <nav className="mobile-only" style={{
-      position: 'fixed',
-      bottom: 0,
-      left: 0,
-      right: 0,
       width: '100%',
-      maxWidth: 900,
-      margin: '0 auto',
       height: 80,
       backgroundColor: colors.surface,
       borderTop: `2px solid ${colors.border}`,
       display: 'flex',
       justifyContent: 'space-around',
       alignItems: 'center',
-      zIndex: 1000,
+      zIndex: 5,
       paddingBottom: 'env(safe-area-inset-bottom)',
       paddingTop: 8,
     }}>
