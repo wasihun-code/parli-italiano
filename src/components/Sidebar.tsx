@@ -3,6 +3,8 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { useProgressStore } from '@shared/store/progressStore';
+import { useSubscriptionStore } from '@shared/store/subscriptionStore';
+import { PrimaryButton } from './PrimaryButton';
 
 const NAV_ITEMS = [
   { path: '/', label: 'Home', icon: '🏠' },
@@ -17,6 +19,7 @@ const NAV_ITEMS = [
 
 export const Sidebar: React.FC = () => {
   const { xp, streak } = useProgressStore();
+  const { plan } = useSubscriptionStore();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -53,6 +56,21 @@ export const Sidebar: React.FC = () => {
           })}
         </div>
       </div>
+
+      {plan === 'free' && (
+        <div className="card" style={{ padding: spacing.lg, background: `linear-gradient(135deg, ${colors.primary} 0%, ${colors.accent} 100%)`, border: 'none' }}>
+          <h3 style={{ color: colors.onPrimary, marginBottom: spacing.sm, fontSize: 18 }}>Go Premium!</h3>
+          <p style={{ color: colors.onPrimary, opacity: 0.9, fontSize: 14, marginBottom: spacing.md }}>
+            Unlock all stories, grammar lessons, and offline mode.
+          </p>
+          <PrimaryButton 
+            label="Upgrade" 
+            onPress={() => navigate('/premium')}
+            variant="accent"
+            style={{ fontSize: 14, padding: spacing.sm }}
+          />
+        </div>
+      )}
 
       <div className="card" style={{ padding: spacing.lg, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

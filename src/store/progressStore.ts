@@ -9,6 +9,7 @@ import {
   trackScenarioVocabularyCompleted,
 } from '@app/utils/analytics';
 import {createPersistStorage} from './persistStorage';
+import {apiClient} from '../lib/apiClient';
 
 export type ScenarioPhaseProgress = {
   vocabularyCompleted: boolean;
@@ -34,6 +35,7 @@ type ProgressState = {
   setScenarioSentenceScore: (scenarioId: number, score: number) => void;
   addXP: (amount: number) => void;
   updateStreak: () => void;
+  syncWithBackend: () => Promise<void>;
 };
 
 const emptyScenarioProgress: ScenarioPhaseProgress = {
@@ -83,6 +85,18 @@ export const useProgressStore = create<ProgressState>()(
         }
         return { streak: 1, lastActivityDate: today };
       }),
+      syncWithBackend: async () => {
+        const state = get();
+        const data = {
+          xp: state.xp,
+          streak: state.streak,
+          lastActivityDate: state.lastActivityDate,
+          foundationScores: state.foundationScores,
+          scenarioProgress: state.scenarioProgress,
+        };
+        // Assuming 'it' for Italian as the default language
+        await apiClient.batchSync(data, 'it');
+      },
       recordFoundationScore: (lessonId, score) => {
         const previousScore = get().foundationScores[lessonId] ?? 0;
         const nextScore = Math.max(previousScore, score);

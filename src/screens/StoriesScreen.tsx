@@ -6,10 +6,13 @@ import { spacing } from '@shared/theme/spacing';
 import { useGameStore } from '@shared/store/gameStore';
 import storiesData from '@shared/data/stories.json';
 import { ProgressBar } from '../components/ProgressBar';
+import { useSubscriptionStore } from '@shared/store/subscriptionStore';
 
 export const StoriesScreen: React.FC = () => {
   const navigate = useNavigate();
   const { unlockedStories, completedStories, storyProgress, unlockStory } = useGameStore();
+  const { plan, isValid } = useSubscriptionStore();
+  const isPremium = plan !== 'free' && isValid;
 
   useEffect(() => {
     // Unlock all difficulty 1 stories initially
@@ -29,7 +32,8 @@ export const StoriesScreen: React.FC = () => {
 
       <div className="games-grid">
         {storiesData.stories.map((story) => {
-          const isUnlocked = unlockedStories.includes(story.title);
+          const isPremiumLocked = story.difficulty > 1 && !isPremium;
+          const isUnlocked = unlockedStories.includes(story.title) && !isPremiumLocked;
           const isCompleted = completedStories.includes(story.title);
           const progress = storyProgress[story.title];
           
@@ -37,17 +41,25 @@ export const StoriesScreen: React.FC = () => {
           const completedPagesCount = progress?.completedPages.length || 0;
           const progressPercent = Math.round((completedPagesCount / totalPages) * 100);
 
+          const handleClick = () => {
+            if (isPremiumLocked) {
+              navigate('/premium');
+            } else if (isUnlocked) {
+              navigate(`/stories/${encodeURIComponent(story.title)}`);
+            }
+          };
+
           return (
             <div 
               key={story.title} 
-              className={`card fade-in ${!isUnlocked ? 'locked' : ''}`} 
-              onClick={() => isUnlocked && navigate(`/stories/${encodeURIComponent(story.title)}`)}
+              className={`card fade-in ${(!isUnlocked && !isPremiumLocked) ? 'locked' : ''}`} 
+              onClick={handleClick}
               style={{ 
-                cursor: isUnlocked ? 'pointer' : 'default', 
+                cursor: (isUnlocked || isPremiumLocked) ? 'pointer' : 'default', 
                 display: 'flex', 
                 flexDirection: 'column', 
                 gap: spacing.sm,
-                opacity: isUnlocked ? 1 : 0.6,
+                opacity: (isUnlocked || isPremiumLocked) ? 1 : 0.6,
                 position: 'relative',
                 padding: spacing.lg
               }}
@@ -56,7 +68,8 @@ export const StoriesScreen: React.FC = () => {
                 <h2 style={{ color: colors.primary, fontSize: 20, fontWeight: 900, margin: 0 }}>
                   {story.title}
                 </h2>
-                {!isUnlocked && <span style={{ fontSize: 24 }}>🔒</span>}
+                {isPremiumLocked && <span style={{ fontSize: 24 }} title="Premium Feature">👑</span>}
+                {!isPremiumLocked && !isUnlocked && <span style={{ fontSize: 24 }}>🔒</span>}
                 {isCompleted && <span style={{ fontSize: 24, color: colors.success }}>✅</span>}
               </div>
 

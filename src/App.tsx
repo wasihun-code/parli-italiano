@@ -27,7 +27,9 @@ import { NumbersGame } from './screens/NumbersGame';
 import { StoriesScreen } from './screens/StoriesScreen';
 import { StoryReaderScreen } from './screens/StoryReaderScreen';
 import { StoryFinalQuizScreen } from './screens/StoryFinalQuizScreen';
+import { PremiumScreen } from './screens/PremiumScreen';
 import { useCurrentUser } from '@shared/store/authStore';
+import { useSubscriptionStore } from './store/subscriptionStore';
 import { FooterNav } from './components/FooterNav';
 
 const OnboardingGuard: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -63,6 +65,15 @@ const AuthGuard: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 };
 
 export const App: React.FC = () => {
+  const { fetchStatus } = useSubscriptionStore();
+  const currentUser = useCurrentUser();
+
+  useEffect(() => {
+    if (currentUser) {
+      fetchStatus().catch(() => {});
+    }
+  }, [currentUser, fetchStatus]);
+
   return (
     <BrowserRouter>
       <AuthGuard>
@@ -95,6 +106,7 @@ export const App: React.FC = () => {
             <Route path="/scenarios/:scenarioId/conversation" element={<ConversationScreen />} />
             <Route path="/review" element={<ReviewScreen />} />
             <Route path="/history" element={<ConversationHistoryScreen />} />
+            <Route path="/premium" element={<PremiumScreen />} />
           </Routes>
           <FooterNav />
         </OnboardingGuard>

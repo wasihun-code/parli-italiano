@@ -11,10 +11,13 @@ import { ProgressBar } from '../components/ProgressBar';
 import { FeedbackMessage } from '../components/FeedbackMessage';
 import { ShortcutHelp } from '../components/ShortcutHelp';
 import { getWrongAnswerExplanation } from '@shared/utils/feedbackExplanations';
+import { useSubscriptionStore } from '@shared/store/subscriptionStore';
 
 export const GenderGame: React.FC = () => {
   const navigate = useNavigate();
   const { genderGame, unlockLevel, updateHighScore } = useGameStore();
+  const { plan, isValid } = useSubscriptionStore();
+  const isPremium = plan !== 'free' && isValid;
   
   const [level, setLevel] = useState(1);
   const [gameState, setGameState] = useState<'lobby' | 'playing' | 'gameOver' | 'win'>('lobby');
@@ -108,23 +111,42 @@ export const GenderGame: React.FC = () => {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.lg }}>
           {[1, 2, 3].map(l => {
-            const isUnlocked = l <= genderGame.unlockedLevels;
+            const isPremiumLocked = l > 1 && !isPremium;
+            const isUnlocked = l <= genderGame.unlockedLevels && !isPremiumLocked;
+            
+            const handleClick = () => {
+              if (isPremiumLocked) {
+                navigate('/premium');
+              } else if (isUnlocked) {
+                setLevel(l); 
+                setGameState('playing'); 
+                setScore(0); 
+                setLives(3); 
+                setCurrentIndex(0); 
+                setHintsLeft(3); 
+                setShowHint(false); 
+                setSelectedGender(null); 
+                setFeedback(null);
+              }
+            };
+
             return (
               <button
                 key={l}
-                disabled={!isUnlocked}
-                onClick={() => { setLevel(l); setGameState('playing'); setScore(0); setLives(3); setCurrentIndex(0); setHintsLeft(3); setShowHint(false); setSelectedGender(null); setFeedback(null); }}
+                disabled={!isUnlocked && !isPremiumLocked}
+                onClick={handleClick}
                 className="card"
                 style={{
                   padding: spacing.lg,
                   textAlign: 'left',
-                  cursor: isUnlocked ? 'pointer' : 'default',
-                  opacity: isUnlocked ? 1 : 0.5,
+                  cursor: (isUnlocked || isPremiumLocked) ? 'pointer' : 'default',
+                  opacity: (isUnlocked || isPremiumLocked) ? 1 : 0.5,
                   display: 'flex',
                   justifyContent: 'space-between',
                   alignItems: 'center',
                   border: `2px solid ${colors.border}`,
-                  background: colors.surface
+                  background: colors.surface,
+                  width: '100%'
                 }}
               >
                 <div>
@@ -133,7 +155,8 @@ export const GenderGame: React.FC = () => {
                     {l === 1 ? 'Common nouns (o/a)' : l === 2 ? 'Nouns ending in -e' : 'Tricky exceptions'}
                   </p>
                 </div>
-                {!isUnlocked && <span>🔒</span>}
+                {isPremiumLocked && <span style={{ fontSize: 24 }}>👑</span>}
+                {!isPremiumLocked && !isUnlocked && <span>🔒</span>}
               </button>
             );
           })}

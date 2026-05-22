@@ -6,10 +6,13 @@ import { spacing } from '@shared/theme/spacing';
 import { useGrammarStore } from '@shared/store/grammarStore';
 import grammarExpanded from '@shared/data/grammarExpanded.json';
 import { ProgressBar } from '../components/ProgressBar';
+import { useSubscriptionStore } from '@shared/store/subscriptionStore';
 
 export const GrammarListScreen: React.FC = () => {
   const navigate = useNavigate();
   const completedLessons = useGrammarStore(state => state.completedLessons);
+  const { plan, isValid } = useSubscriptionStore();
+  const isPremium = plan !== 'free' && isValid;
 
   const completedCount = grammarExpanded.filter(l => completedLessons[l.id]).length;
   const progressPercent = Math.round((completedCount / grammarExpanded.length) * 100) || 0;
@@ -34,18 +37,20 @@ export const GrammarListScreen: React.FC = () => {
       <div className="games-grid">
         {grammarExpanded.map((lesson, index) => {
           const isCompleted = completedLessons[lesson.id];
+          const isPremiumLocked = lesson.level !== 'A1' && !isPremium;
+          
           return (
             <div 
               key={lesson.id} 
               className="card fade-in" 
-              onClick={() => navigate(`/grammar/${lesson.id}`)}
-              style={{ cursor: 'pointer', display: 'flex', gap: spacing.md, opacity: isCompleted ? 0.8 : 1 }}
+              onClick={() => isPremiumLocked ? navigate('/premium') : navigate(`/grammar/${lesson.id}`)}
+              style={{ cursor: 'pointer', display: 'flex', gap: spacing.md, opacity: (isCompleted || isPremiumLocked) ? 0.8 : 1 }}
             >
               <div style={{ 
                 width: 48, 
                 height: 48, 
                 borderRadius: 24, 
-                backgroundColor: isCompleted ? colors.success : 'rgba(78, 52, 46, 0.05)',
+                backgroundColor: isPremiumLocked ? 'rgba(255, 215, 0, 0.1)' : (isCompleted ? colors.success : 'rgba(78, 52, 46, 0.05)'),
                 color: isCompleted ? colors.onPrimary : colors.primary,
                 display: 'flex',
                 alignItems: 'center',
@@ -54,7 +59,7 @@ export const GrammarListScreen: React.FC = () => {
                 fontWeight: 'bold',
                 flexShrink: 0
               }}>
-                {isCompleted ? '✓' : index + 1}
+                {isPremiumLocked ? '👑' : (isCompleted ? '✓' : index + 1)}
               </div>
               <div style={{ flex: 1 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
