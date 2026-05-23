@@ -161,10 +161,10 @@ export const GrammarLessonScreen: React.FC = () => {
               type={feedback.type} 
               message={
                 feedback.type === 'correct' 
-                  ? 'Correct!' 
+                  ? 'Ottimo!' 
                   : (
                     <>
-                      <div>Not quite. The correct answer is: <br/><strong>{exercise.answer}</strong></div>
+                      <div>Non proprio. La risposta corretta è: <br/><strong>{exercise.answer}</strong></div>
                       {feedback.explanation && (
                         <div style={{ marginTop: spacing.sm, fontSize: 14, fontWeight: 'normal', color: colors.textSecondary }}>
                           {feedback.explanation}

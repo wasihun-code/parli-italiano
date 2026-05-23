@@ -22,6 +22,12 @@ class UserSerializer(serializers.ModelSerializer):
             'subscription_plan', 'subscription_valid_until'
         ]
 
+class LeaderboardSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'total_xp', 'streak_days']
+        read_only_fields = ['id', 'username', 'total_xp', 'streak_days']
+
 class FriendRequestSerializer(serializers.ModelSerializer):
     from_user_username = serializers.ReadOnlyField(source='from_user.username')
     to_user_username = serializers.ReadOnlyField(source='to_user.username')

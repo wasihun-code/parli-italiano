@@ -60,6 +60,7 @@ export const useAuthStore = create<AuthState>()(
       },
       logout: () => {
         localStorage.removeItem('auth_token');
+        localStorage.removeItem('refresh_token');
         set({currentUser: undefined});
       },
     }),

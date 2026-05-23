@@ -242,7 +242,7 @@ export const PluralGame: React.FC = () => {
               type={feedback.isCorrect ? 'correct' : 'incorrect'} 
               message={
                 <>
-                  <div>{feedback.isCorrect ? (feedback.isNearly ? 'Nearly correct!' : 'Perfetto!') : 'Incorrect'}</div>
+                  <div>{feedback.isCorrect ? (feedback.isNearly ? 'Quasi corretto!' : 'Perfetto!') : 'Non corretto'}</div>
                   {!feedback.isCorrect && feedback.explanation && (
                     <div style={{ marginTop: spacing.sm, fontSize: 14, fontWeight: 'normal', color: colors.textSecondary }}>
                       {feedback.explanation}
@@ -254,7 +254,7 @@ export const PluralGame: React.FC = () => {
             {!feedback.isCorrect && (
               <div className="card" style={{ marginBottom: spacing.md, padding: spacing.md }}>
                 <p style={{ margin: 0, fontSize: 14, color: colors.textSecondary }}>Correct plural:</p>
-                <p style={{ margin: '4px 0 0 0', fontWeight: 'bold', fontSize: 18 }}>{feedback.correctAnswer}</p>
+                <p style={{ margin: '4px 0 0 0', fontWeight: 'bold', fontSize: 18 }}>{currentItem?.plural} ({currentItem?.english})</p>
               </div>
             )}
             {!feedback.isCorrect && <PrimaryButton label="Next" onPress={nextQuestion} />}

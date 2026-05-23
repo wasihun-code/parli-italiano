@@ -8,6 +8,7 @@ import { Keyboard } from '../components/Keyboard';
 import { FeedbackMessage } from '../components/FeedbackMessage';
 import { useProgressStore } from '@shared/store/progressStore';
 import { useSrsStore } from '@shared/store/srsStore';
+import { useUserSettingsStore } from '../store/userSettingsStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import {
@@ -21,7 +22,6 @@ import {
 } from '@shared/utils/vocabularyTraining';
 import type { ScenarioVocabularyRow } from '@app/db/vocabularyRepository';
 import {
-  isLearnedByIdOrItalian,
   masterSrsItems,
   progressBar,
   progressFill,
@@ -41,7 +41,14 @@ export const VocabularyTrainingScreen: React.FC = () => {
   const [searchParams] = useSearchParams();
   const skipTestParam = searchParams.get('skipTest') === 'true';
 
-  const [scenarioTitle, setScenarioTitle] = useState('Scenario Vocabulary');
+  const scenarioProgress = useProgressStore(state => state.scenarioProgress[Number(scenarioId)]);
+  const skipTestUsed = scenarioProgress?.skipTestUsed ?? false;
+  const addXP = useProgressStore(state => state.addXP);
+
+  const { feedbackLanguage } = useUserSettingsStore();
+  const isIt = feedbackLanguage === 'it';
+
+  const [scenarioTitle, setScenarioTitle] = useState(isIt ? 'Vocabolario' : 'Vocabulary');
   const [terms, setTerms] = useState<ScenarioVocabularyRow[]>([]);
   const [allTerms, setAllTerms] = useState<ScenarioVocabularyRow[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -74,10 +81,10 @@ export const VocabularyTrainingScreen: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if (skipTestParam && !loading && terms.length > 0 && !isSkipTest) {
+    if (skipTestParam && !loading && terms.length > 0 && !isSkipTest && !skipTestUsed) {
       startSkipTest();
     }
-  }, [skipTestParam, loading, terms.length, isSkipTest, startSkipTest]);
+  }, [skipTestParam, loading, terms.length, isSkipTest, startSkipTest, skipTestUsed]);
 
   const activeTerm = useMemo(() => {
     if (isSkipTest) {
@@ -96,7 +103,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
   const exercise = useMemo(() => {
     if (!activeTerm) return null;
     if (isSkipTest) {
-      return buildVocabularyExercise(activeTerm.term, terms, 0); // 0 is flashcard
+      return buildVocabularyExercise(activeTerm.term, allTerms, 3); // 3 is multipleChoice
     }
     let ex = buildVocabularyExercise(
       activeTerm.term,
@@ -109,14 +116,11 @@ export const VocabularyTrainingScreen: React.FC = () => {
     return ex;
   }, [activeTerm, terms, termAttemptCounts, canListen, isSkipTest]);
 
-  // PROGRESS CALCULATION FIX: Based on total steps (3 per term)
-  const totalSteps = terms.length * 3;
+  const totalSteps = isSkipTest ? testTerms.length : terms.length * 3;
   const currentSteps = useMemo(() => {
     if (isSkipTest) return currentIndex;
     return terms.reduce((sum, term) => {
-      // If the term is marked as learned in SRS, it contributes 3 steps
       if (srsItems[term.id]?.learned) return sum + 3;
-      // Otherwise use the local session attempt count (max 3)
       return sum + Math.min(termAttemptCounts[term.id] ?? 0, 3);
     }, 0);
   }, [terms, termAttemptCounts, srsItems, isSkipTest, currentIndex]);
@@ -142,9 +146,8 @@ export const VocabularyTrainingScreen: React.FC = () => {
         const srsState = useSrsStore.getState();
         const sortedVocabulary = sortVocabularyByDifficulty(vocabulary);
         registerVocabularyTerms(sortedVocabulary, srsState);
-        const unlearnedVocabulary = sortedVocabulary.filter(v => !isLearnedByIdOrItalian(v, srsState));
         setAllTerms(sortedVocabulary);
-        setTerms(unlearnedVocabulary);
+        setTerms(sortedVocabulary);
       } catch (error) {
         if (!cancelled) {
           setLoadError(error instanceof Error ? error.message : 'Unable to load vocabulary.');
@@ -160,26 +163,14 @@ export const VocabularyTrainingScreen: React.FC = () => {
 
   useEffect(() => {
     if (terms.length === 0) return;
-
-    maybeCompleteVocabularyPhase(
-      Number(scenarioId),
-      terms,
-      useSrsStore.getState(),
-      useProgressStore.getState(),
-    );
-  }, [srsItems, scenarioId, terms]);
+    maybeCompleteVocabularyPhase(Number(scenarioId), terms, useSrsStore.getState(), useProgressStore.getState());
+  }, [terms, scenarioId]);
 
   const playAudio = useCallback((): void => {
     if (activeTerm) {
       Tts.speak(activeTerm.term.italian);
     }
   }, [activeTerm]);
-
-  useEffect(() => {
-    if (exercise?.kind === 'listening' && !feedback && canListen) {
-      playAudio();
-    }
-  }, [exercise, feedback, playAudio, canListen]);
 
   const submitAnswer = useCallback((ans?: string): void => {
     if (!activeTerm || !exercise || feedback) return;
@@ -192,6 +183,9 @@ export const VocabularyTrainingScreen: React.FC = () => {
     if (isSkipTest) {
       if (status !== 'incorrect') {
         setSkipTestScore(prev => prev + 1);
+        addXP(10);
+      } else {
+        addXP(-2);
       }
       const explanation = status === 'incorrect' ? getWrongAnswerExplanation({
       type: 'vocabulary',
@@ -201,6 +195,12 @@ export const VocabularyTrainingScreen: React.FC = () => {
     
     setFeedback({ status, correctAnswer: exercise.answer, explanation });
       return;
+    }
+
+    if (status !== 'incorrect') {
+      addXP(10);
+    } else {
+      addXP(-2);
     }
 
     recordAnswer(activeTerm.term.id, status !== 'incorrect');
@@ -215,7 +215,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
     }) : undefined;
     
     setFeedback({ status, correctAnswer: exercise.answer, explanation });
-  }, [activeTerm, exercise, feedback, typedAnswer, selectedAnswer, recordAnswer, isSkipTest]);
+  }, [activeTerm, exercise, feedback, typedAnswer, selectedAnswer, recordAnswer, isSkipTest, addXP]);
 
   const advance = useCallback((): void => {
     const nextIndex = currentIndex + 1;
@@ -226,6 +226,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
         useProgressStore.getState().setScenarioVocabularyCompleted(Number(scenarioId), true);
         useProgressStore.getState().setScenarioPhraseScore(Number(scenarioId), 100);
         useProgressStore.getState().setScenarioSentenceScore(Number(scenarioId), 100);
+        useProgressStore.getState().setSkipTestUsed(Number(scenarioId), true);
         masterSrsItems(
           allTerms.map(term => ({
             id: term.id,
@@ -278,17 +279,17 @@ export const VocabularyTrainingScreen: React.FC = () => {
       return (
         <Screen style={{ justifyContent: 'center' }}>
           <div className="card fade-in" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', gap: spacing.lg }}>
-            <h1 style={{ color: colors.primary }}>Test Results</h1>
+            <h1 style={{ color: colors.primary }}>{isIt ? 'Risultati del Test' : 'Test Results'}</h1>
             <div style={{ fontSize: 72, fontWeight: 900, color: passed ? colors.success : colors.error }}>{Math.round((skipTestScore / testTerms.length) * 100)}%</div>
-            <p style={{ color: colors.textSecondary, fontSize: 18 }}>{passed ? 'Phase passed! You are ready for conversation.' : 'Not enough to skip. Keep practicing!'}</p>
-            <PrimaryButton label="Continue" onPress={() => passed ? navigate(`/scenarios/${scenarioId}/conversation`) : setIsSkipTest(false)} variant={passed ? 'primary' : 'secondary'} />
+            <p style={{ color: colors.textSecondary, fontSize: 18 }}>{passed ? (isIt ? 'Fase superata! Sei pronto per la conversazione.' : 'Phase passed! You are ready for conversation.') : (isIt ? 'Non abbastanza per saltare. Continua a praticare!' : 'Not enough to skip. Keep practicing!')}</p>
+            <PrimaryButton label={isIt ? "Continua" : "Continue"} onPress={() => passed ? navigate(`/scenarios/${scenarioId}/conversation`) : setIsSkipTest(false)} variant={passed ? 'primary' : 'secondary'} />
           </div>
         </Screen>
       );
     }
   }
 
-  if (loading) return <Screen style={{ justifyContent: 'center', alignItems: 'center' }}><div className="fade-in">☕ Loading vocabulary...</div></Screen>;
+  if (loading) return <Screen style={{ justifyContent: 'center', alignItems: 'center' }}><div className="fade-in">☕ {isIt ? 'Caricamento vocabolario...' : 'Loading vocabulary...'}</div></Screen>;
   if (loadError) return <Screen><p>{loadError}</p></Screen>;
 
   if (!activeTerm) {
@@ -296,11 +297,11 @@ export const VocabularyTrainingScreen: React.FC = () => {
       <Screen style={{ justifyContent: 'center' }}>
         <div className="card fade-in" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', gap: spacing.lg }}>
           <div style={{ fontSize: 64 }}>🎯</div>
-          <h1 style={{ color: colors.primary }}>All Learned!</h1>
-          <p style={{ color: colors.textSecondary, fontSize: 18 }}>You've mastered all vocabulary for this scenario.</p>
+          <h1 style={{ color: colors.primary }}>{isIt ? 'Tutto Imparato!' : 'All Learned!'}</h1>
+          <p style={{ color: colors.textSecondary, fontSize: 18 }}>{isIt ? 'Hai imparato tutto il vocabolario per questo scenario.' : "You've mastered all vocabulary for this scenario."}</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.md }}>
-            <PrimaryButton label="Go to Phrases" onPress={() => navigate(`/scenarios/${scenarioId}/phrases`)} />
-            <PrimaryButton label="Back to Scenarios" onPress={() => navigate('/scenarios')} variant="secondary" />
+            <PrimaryButton label={isIt ? "Vai alle Frasi" : "Go to Phrases"} onPress={() => navigate(`/scenarios/${scenarioId}/phrases`)} />
+            <PrimaryButton label={isIt ? "Torna agli Scenari" : "Back to Scenarios"} onPress={() => navigate('/scenarios')} variant="secondary" />
           </div>
         </div>
       </Screen>
@@ -313,7 +314,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
         <div style={{ flex: 1 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
              <span data-testid="scenario-title" style={{ color: colors.textSecondary, fontWeight: '900', fontSize: 12, textTransform: 'uppercase', letterSpacing: 1 }}>
-              {isSkipTest ? `Skip Test: ${currentIndex + 1} / ${testTerms.length}` : scenarioTitle}
+              {isSkipTest ? `${isIt ? 'Test di Salto' : 'Skip Test'}: ${currentIndex + 1} / ${testTerms.length}` : scenarioTitle}
             </span>
             <span style={{ color: colors.accent, fontWeight: 900, fontSize: 12 }}>
               {Math.round(progressFraction * 100)}%
@@ -323,7 +324,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
             <div style={progressFill(progressFraction)} />
           </div>
         </div>
-        {!isSkipTest && (
+        {!isSkipTest && !skipTestUsed && (
           <button 
             onClick={startSkipTest}
             style={{ 
@@ -337,7 +338,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
               textDecoration: 'underline'
             }}
           >
-            SKIP
+            {isIt ? 'SALTA' : 'SKIP'}
           </button>
         )}
       </header>
@@ -350,11 +351,11 @@ export const VocabularyTrainingScreen: React.FC = () => {
               message={
                 <>
                   <div style={{ fontSize: 24, marginBottom: 8 }}>
-                    {feedback.status === 'correct' ? '✅ Excellent!' : feedback.status === 'nearly_correct' ? '⚠️ Almost correct!' : '❌ Not quite.'}
+                    {feedback.status === 'correct' ? (isIt ? '✅ Ottimo!' : '✅ Excellent!') : feedback.status === 'nearly_correct' ? (isIt ? '⚠️ Quasi corretto!' : '⚠️ Almost correct!') : (isIt ? '❌ Non corretto.' : '❌ Not quite.')}
                   </div>
                   {feedback.status !== 'correct' && (
                     <div style={{ fontSize: 16 }}>
-                      The correct answer is: <br/>
+                      {isIt ? 'La risposta corretta è:' : 'The correct answer is:'} <br/>
                       <span style={{ fontSize: 24, textDecoration: 'underline' }}>{feedback.correctAnswer}</span>
                     </div>
                   )}
@@ -371,7 +372,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
           <div className="fade-in" key={currentIndex}>
             <div style={{ marginBottom: spacing.xl }}>
                <h2 style={{ color: colors.textSecondary, fontSize: 16, textTransform: 'uppercase', letterSpacing: 1.5, marginBottom: 8, fontWeight: 900 }}>
-                {exercise?.kind === 'listening' ? 'Listen and translate' : exercise?.kind === 'spelling' ? 'Write in Italian' : 'Translate'}
+                {exercise?.kind === 'listening' ? (isIt ? 'Ascolta e traduci' : 'Listen and translate') : exercise?.kind === 'spelling' ? (isIt ? 'Scrivi in italiano' : 'Write in Italian') : (isIt ? 'Traduci' : 'Translate')}
               </h2>
               <h1 style={{ color: colors.primary, fontSize: 32, margin: 0, fontWeight: 900 }}>{exercise?.prompt}</h1>
             </div>
@@ -403,7 +404,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
                     onClick={() => setCanListen(false)}
                     style={{ color: colors.textSecondary, background: 'none', border: 'none', cursor: 'pointer', fontSize: 14, fontWeight: 700 }}
                   >
-                    I can't listen now
+                    {isIt ? 'Non posso ascoltare ora' : "I can't listen now"}
                   </button>
                 )}
               </div>
@@ -416,7 +417,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
                   type="text"
                   value={typedAnswer}
                   onChange={e => setTypedAnswer(e.target.value)}
-                  placeholder="Type here..."
+                  placeholder={isIt ? "Scrivi qui..." : "Type here..."}
                   style={{
                     width: '100%',
                     padding: spacing.lg,
@@ -495,14 +496,14 @@ export const VocabularyTrainingScreen: React.FC = () => {
       }}>
         {!feedback ? (
           exercise?.kind === 'spelling' ? (
-            <PrimaryButton label="Check" onPress={() => submitAnswer()} disabled={!typedAnswer.trim()} />
+            <PrimaryButton label={isIt ? "Controlla" : "Check"} onPress={() => submitAnswer()} disabled={!typedAnswer.trim()} />
           ) : (
             <p style={{ textAlign: 'center', color: colors.textSecondary, fontSize: 14, fontWeight: 700, margin: 0 }}>
-              Choose the correct answer
+              {isIt ? 'Scegli la risposta corretta' : 'Choose the correct answer'}
             </p>
           )
         ) : (
-          <PrimaryButton label="Continue" onPress={advance} variant={feedback.status === 'incorrect' ? 'secondary' : 'primary'} />
+          <PrimaryButton label={isIt ? "Continua" : "Continue"} onPress={advance} variant={feedback.status === 'incorrect' ? 'secondary' : 'primary'} />
         )}
       </div>
     </Screen>

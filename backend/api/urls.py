@@ -9,7 +9,8 @@ from .views import (
     ActivityUpdateView, UserSearchView, FriendRequestCreateView,
     FriendRequestAcceptView, FriendRequestDeclineView,
     FriendRequestListView, FriendListView, ChatSendMessageView,
-    ChatMessageListView, ChatMessageReadView
+    ChatMessageListView, ChatMessageReadView, LeaderboardView,
+    TTSProxyView
 )
 
 urlpatterns = [
@@ -51,4 +52,6 @@ urlpatterns = [
     path('subscription/create-checkout/', CreateCheckoutSessionView.as_view(), name='create_checkout_session'),
     path('subscription/webhook/stripe/', StripeWebhookView.as_view(), name='stripe_webhook'),
     path('subscription/status/', SubscriptionStatusView.as_view(), name='subscription_status'),
+    path('leaderboard/', LeaderboardView.as_view(), name='leaderboard'),
+    path('tts-proxy/', TTSProxyView.as_view(), name='tts_proxy'),
 ]

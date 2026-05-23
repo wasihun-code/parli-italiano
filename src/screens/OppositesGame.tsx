@@ -12,10 +12,14 @@ import { ProgressBar } from '../components/ProgressBar';
 import { FeedbackMessage } from '../components/FeedbackMessage';
 import { ShortcutHelp } from '../components/ShortcutHelp';
 import { getWrongAnswerExplanation } from '@shared/utils/feedbackExplanations';
+import { useUserSettingsStore } from '../store/userSettingsStore';
+import { audioService } from '../lib/audioService';
 
 export const OppositesGame: React.FC = () => {
   const navigate = useNavigate();
   const { oppositesGame, unlockLevel, updateHighScore } = useGameStore();
+  const { feedbackLanguage, soundEnabled } = useUserSettingsStore();
+  const isIt = feedbackLanguage === 'it';
   
   const [level, setLevel] = useState(1);
   const [gameState, setGameState] = useState<'lobby' | 'playing' | 'gameOver' | 'win'>('lobby');
@@ -45,12 +49,14 @@ export const OppositesGame: React.FC = () => {
     const isNearly = !isCorrect && normExpected.length >= 4 && levenshteinDistance(normSubmitted, normExpected) <= 1;
 
     if (isCorrect || isNearly) {
+      if (soundEnabled) audioService.playCorrect();
       setScore(s => s + 10);
       setFeedback({ isCorrect: true, isNearly, correctAnswer: currentItem.opposite });
       setTimeout(() => {
         nextQuestion();
       }, 800);
     } else {
+      if (soundEnabled) audioService.playIncorrect();
       setLives(l => l - 1);
       const explanation = getWrongAnswerExplanation({
         type: 'opposites',
@@ -59,7 +65,7 @@ export const OppositesGame: React.FC = () => {
       });
       setFeedback({ isCorrect: false, isNearly: false, correctAnswer: currentItem.opposite, explanation });
     }
-  }, [feedback, currentItem, typedAnswer]);
+  }, [feedback, currentItem, typedAnswer, soundEnabled]);
 
   const nextQuestion = useCallback(() => {
     setFeedback(null);
@@ -68,13 +74,15 @@ export const OppositesGame: React.FC = () => {
     if (currentIndex + 1 < itemsForLevel.length) {
       setCurrentIndex(i => i + 1);
     } else {
+      if (soundEnabled) audioService.playComplete();
       setGameState('win');
       updateHighScore('oppositesGame', score);
       if (score >= 100 && level < 3) {
+        if (soundEnabled) audioService.playLevelUp();
         unlockLevel('oppositesGame', level + 1);
       }
     }
-  }, [currentIndex, itemsForLevel.length, score, level, updateHighScore, unlockLevel]);
+  }, [currentIndex, itemsForLevel.length, score, level, updateHighScore, unlockLevel, soundEnabled]);
 
   useEffect(() => {
     if (lives <= 0) {
@@ -104,8 +112,8 @@ export const OppositesGame: React.FC = () => {
     return (
       <Screen>
         <header style={{ marginBottom: spacing.xl }}>
-          <h1 style={{ color: colors.primary, fontSize: 32, margin: 0, fontWeight: 900 }}>Opposites</h1>
-          <p style={{ color: colors.textSecondary }}>Type the opposite of the Italian word.</p>
+          <h1 style={{ color: colors.primary, fontSize: 32, margin: 0, fontWeight: 900 }}>{isIt ? 'Contrari' : 'Opposites'}</h1>
+          <p style={{ color: colors.textSecondary }}>{isIt ? 'Scrivi il contrario della parola italiana.' : 'Type the opposite of the Italian word.'}</p>
         </header>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.lg }}>
@@ -115,7 +123,10 @@ export const OppositesGame: React.FC = () => {
               <button
                 key={l}
                 disabled={!isUnlocked}
-                onClick={() => { setLevel(l); setGameState('playing'); setScore(0); setLives(3); setCurrentIndex(0); setTypedAnswer(''); setFeedback(null); setHintsLeft(3); setShowHint(false); }}
+                onClick={() => { 
+                  if (soundEnabled) audioService.playClick();
+                  setLevel(l); setGameState('playing'); setScore(0); setLives(3); setCurrentIndex(0); setTypedAnswer(''); setFeedback(null); setHintsLeft(3); setShowHint(false); 
+                }}
                 className="card"
                 style={{
                   padding: spacing.lg,
@@ -130,16 +141,16 @@ export const OppositesGame: React.FC = () => {
                 }}
               >
                 <div>
-                  <h3 style={{ margin: 0, color: colors.primary }}>Level {l}</h3>
+                  <h3 style={{ margin: 0, color: colors.primary }}>{isIt ? 'Livello' : 'Level'} {l}</h3>
                   <p style={{ margin: 4, fontSize: 14, color: colors.textSecondary }}>
-                    {l === 1 ? 'Basic adjectives' : l === 2 ? 'Intermediate antonyms' : 'Advanced vocabulary'}
+                    {l === 1 ? (isIt ? 'Aggettivi di base' : 'Basic adjectives') : l === 2 ? (isIt ? 'Antonimi intermedi' : 'Intermediate antonyms') : (isIt ? 'Vocabolario avanzato' : 'Advanced vocabulary')}
                   </p>
                 </div>
                 {!isUnlocked && <span>🔒</span>}
               </button>
             );
           })}
-          <PrimaryButton label="Back to Games" onPress={() => navigate('/games')} variant="secondary" />
+          <PrimaryButton label={isIt ? "Torna ai Giochi" : "Back to Games"} onPress={() => navigate('/games')} variant="secondary" />
         </div>
       </Screen>
     );
@@ -149,27 +160,27 @@ export const OppositesGame: React.FC = () => {
     return (
       <Screen style={{ justifyContent: 'center', textAlign: 'center' }}>
         <div className="card fade-in" style={{ padding: spacing.xl, display: 'flex', flexDirection: 'column', gap: spacing.md }}>
-          <h1 style={{ fontSize: 48 }}>{gameState === 'win' ? '🎉 Vittoria!' : '😢 Game Over'}</h1>
-          <p style={{ fontSize: 24, color: colors.textSecondary }}>Final Score: {score} / 100</p>
-          <PrimaryButton label="Play Again" onPress={() => setGameState('lobby')} />
-          <PrimaryButton label="Exit" onPress={() => navigate('/games')} variant="secondary" />
+          <h1 style={{ fontSize: 48 }}>{gameState === 'win' ? (isIt ? '🎉 Vittoria!' : '🎉 Victory!') : (isIt ? '😢 Fine Partita' : '😢 Game Over')}</h1>
+          <p style={{ fontSize: 24, color: colors.textSecondary }}>{isIt ? 'Punteggio Finale' : 'Final Score'}: {score} / 100</p>
+          <PrimaryButton label={isIt ? "Gioca Ancora" : "Play Again"} onPress={() => setGameState('lobby')} />
+          <PrimaryButton label={isIt ? "Esci" : "Exit"} onPress={() => navigate('/games')} variant="secondary" />
         </div>
       </Screen>
     );
   }
 
-  const progressPercent = Math.min(100, (score / 100) * 100);
+  const progressPercent = Math.min(100, (currentIndex / itemsForLevel.length) * 100);
 
   return (
     <Screen style={{ backgroundColor: colors.surface }}>
       <header style={{ display: 'flex', flexDirection: 'column', gap: spacing.sm, marginBottom: spacing.xl }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ fontSize: 18, fontWeight: 900, color: colors.primary, display: 'flex', alignItems: 'center' }}>
-            Level {level}
+            {isIt ? 'Livello' : 'Level'} {level}
             <ShortcutHelp />
           </div>
           <div style={{ display: 'flex', gap: spacing.md }}>
-            <div style={{ color: colors.accent, fontWeight: 900 }}>Score: {score} / 100</div>
+            <div style={{ color: colors.accent, fontWeight: 900 }}>{isIt ? 'Punteggio' : 'Score'}: {score} / 100</div>
             <div style={{ color: colors.error }}>{'❤️'.repeat(lives)}</div>
           </div>
         </div>
@@ -187,7 +198,7 @@ export const OppositesGame: React.FC = () => {
               color: colors.onPrimary, fontWeight: 'bold', cursor: hintsLeft > 0 ? 'pointer' : 'default', opacity: hintsLeft > 0 ? 1 : 0.5
             }}
           >
-            Hint ({hintsLeft} left)
+            {isIt ? 'Suggerimento' : 'Hint'} ({hintsLeft} {isIt ? 'rimasti' : 'left'})
           </button>
         </div>
 
@@ -196,7 +207,7 @@ export const OppositesGame: React.FC = () => {
         }}>
           {currentItem?.italian}
           {showHint && <div className="fade-in" style={{ fontSize: 16, color: colors.textSecondary, marginTop: spacing.sm }}>
-            <strong>Hint:</strong> Starts with "{currentItem?.opposite.charAt(0).toUpperCase()}..."
+            <strong>{isIt ? 'Suggerimento' : 'Hint'}:</strong> {isIt ? 'Inizia con' : 'Starts with'} "{currentItem?.opposite.charAt(0).toUpperCase()}..."
           </div>}
         </div>
 
@@ -207,7 +218,7 @@ export const OppositesGame: React.FC = () => {
               type="text"
               value={typedAnswer}
               onChange={e => setTypedAnswer(e.target.value)}
-              placeholder="Type the opposite..."
+              placeholder={isIt ? "Scrivi il contrario..." : "Type the opposite..."}
               style={{
                 padding: spacing.lg,
                 borderRadius: 16,
@@ -218,9 +229,9 @@ export const OppositesGame: React.FC = () => {
                 textAlign: 'center'
               }}
             />
-            <PrimaryButton label="Check" onPress={handleCheck} disabled={!typedAnswer.trim()} />
+            <PrimaryButton label={isIt ? "Controlla" : "Check"} onPress={handleCheck} disabled={!typedAnswer.trim()} />
             <p style={{ textAlign: 'center', color: colors.textSecondary, fontSize: 14, margin: 0, fontWeight: 800 }}>
-              Tip: Press Enter to submit
+              {isIt ? 'Suggerimento: Premi Invio per inviare' : 'Tip: Press Enter to submit'}
             </p>
           </div>
         ) : (
@@ -229,7 +240,7 @@ export const OppositesGame: React.FC = () => {
               type={feedback.isCorrect ? 'correct' : 'incorrect'} 
               message={
                 <>
-                  <div>{feedback.isCorrect ? (feedback.isNearly ? 'Nearly correct!' : 'Perfetto!') : 'Incorrect'}</div>
+                  <div>{feedback.isCorrect ? (feedback.isNearly ? (isIt ? 'Quasi corretto!' : 'Almost correct!') : (isIt ? 'Perfetto!' : 'Perfect!')) : (isIt ? 'Non corretto' : 'Incorrect')}</div>
                   {!feedback.isCorrect && feedback.explanation && (
                     <div style={{ marginTop: spacing.sm, fontSize: 14, fontWeight: 'normal', color: colors.textSecondary }}>
                       {feedback.explanation}
@@ -240,14 +251,15 @@ export const OppositesGame: React.FC = () => {
             />
             {!feedback.isCorrect && (
               <div className="card" style={{ marginBottom: spacing.md, padding: spacing.md }}>
-                <p style={{ margin: 0, fontSize: 14, color: colors.textSecondary }}>Correct answer:</p>
-                <p style={{ margin: '4px 0 0 0', fontWeight: 'bold', fontSize: 18 }}>{feedback.correctAnswer}</p>
+                <p style={{ margin: 0, fontSize: 14, color: colors.textSecondary }}>{isIt ? 'Contrario corretto:' : 'Correct opposite:'}</p>
+                <p style={{ margin: '4px 0 0 0', fontWeight: 'bold', fontSize: 18 }}>{feedback.correctAnswer} ({currentItem.oppositeEnglish})</p>
+                <p style={{ margin: '8px 0 0 0', fontSize: 14, color: colors.textSecondary }}>"{currentItem.italian}" {isIt ? 'significa' : 'means'} "{currentItem.english}"</p>
               </div>
             )}
-            {!feedback.isCorrect && <PrimaryButton label="Next" onPress={nextQuestion} />}
+            {!feedback.isCorrect && <PrimaryButton label={isIt ? "Avanti" : "Next"} onPress={nextQuestion} />}
             {!feedback.isCorrect && (
               <p style={{ textAlign: 'center', color: colors.textSecondary, fontSize: 14, margin: 0, marginTop: 8, fontWeight: 800 }}>
-                Tip: Press Enter to continue
+                {isIt ? 'Suggerimento: Premi Invio per continuare' : 'Tip: Press Enter to continue'}
               </p>
             )}
           </div>
@@ -255,7 +267,7 @@ export const OppositesGame: React.FC = () => {
       </div>
 
       <div style={{ marginTop: 'auto' }}>
-        <PrimaryButton label="Quit" onPress={() => setGameState('lobby')} variant="secondary" />
+        <PrimaryButton label={isIt ? "Esci" : "Quit"} onPress={() => setGameState('lobby')} variant="secondary" />
       </div>
     </Screen>
   );

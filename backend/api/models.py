@@ -131,3 +131,12 @@ class SubscriptionHistory(models.Model):
 
     def __str__(self):
         return f"{self.user} changed from {self.old_plan} to {self.new_plan} on {self.changed_at}"
+
+class XPHistory(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='xp_history')
+    amount = models.IntegerField()
+    source = models.CharField(max_length=100) # e.g., 'vocabulary_training', 'game_gender'
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user}: {self.amount} XP from {self.source} at {self.created_at}"

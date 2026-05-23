@@ -26,7 +26,18 @@ const CATEGORIES = [
   'Miscellaneous'
 ];
 
-const normalize = (s: string) => s.toLowerCase().trim().replace(/[\s_]+/g, '_');
+const categoryMapping: Record<string, string> = {
+  'Verbs ARE': 'Verbs_ARE',
+  'Verbs ERE': 'Verbs_ERE',
+  'Verbs IRE': 'Verbs_IRE',
+  'Reflexive Verbs': 'Reflexive_Verbs',
+  'Daily Life': 'Daily_Life',
+};
+
+const normalize = (s: string) => {
+  const mapped = categoryMapping[s] || s;
+  return mapped.toLowerCase().trim().replace(/[\s_]+/g, '_');
+};
 
 export const ScenarioSelectionScreen: React.FC = () => {
   const navigate = useNavigate();
@@ -38,7 +49,10 @@ export const ScenarioSelectionScreen: React.FC = () => {
 
   const filteredScenarios = useMemo(() => {
     const normalizedActive = normalize(activeCategory);
-    return scenarioCatalog.filter(s => normalize(s.category) === normalizedActive);
+    return scenarioCatalog.filter(s => {
+      const normalizedScenarioCat = normalize(s.category);
+      return normalizedScenarioCat === normalizedActive;
+    });
   }, [activeCategory]);
 
   const scrollCategories = (direction: 'left' | 'right') => {
@@ -176,7 +190,7 @@ export const ScenarioSelectionScreen: React.FC = () => {
           className="scenarios-grid"
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
             gap: '1.5rem',
             width: '100%',
             paddingBottom: spacing.xxl
@@ -227,7 +241,7 @@ export const ScenarioSelectionScreen: React.FC = () => {
         }
         @media (min-width: 1024px) {
           .scenarios-grid {
-            grid-template-columns: repeat(3, 1fr) !important;
+            grid-template-columns: repeat(2, 1fr) !important;
           }
         }
         @media (max-width: 768px) {

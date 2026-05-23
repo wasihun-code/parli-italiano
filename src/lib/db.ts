@@ -86,6 +86,12 @@ export interface SrsItem {
   last_reviewed_at?: string;
 }
 
+export interface TtsCache {
+  text: string;
+  audio: Blob;
+  updated_at: string;
+}
+
 class ParlaItalianoDatabase extends Dexie {
   app_metadata!: EntityTable<AppMetadata, 'key'>;
   foundation_lessons!: EntityTable<FoundationLesson, 'id'>;
@@ -96,6 +102,7 @@ class ParlaItalianoDatabase extends Dexie {
   scenario_phrases!: EntityTable<ScenarioPhrase, 'id'>;
   scenario_sentences!: EntityTable<ScenarioSentence, 'id'>;
   srs_items!: EntityTable<SrsItem, 'item_id'>;
+  tts_cache!: EntityTable<TtsCache, 'text'>;
 
   constructor() {
     super('ParlaItalianoDB');
@@ -109,6 +116,7 @@ class ParlaItalianoDatabase extends Dexie {
       scenario_phrases: 'id, scenario_id, sort_order',
       scenario_sentences: 'id, scenario_id, sort_order',
       srs_items: 'item_id, item_type, scenario_id, foundation_lesson_id, due_at',
+      tts_cache: 'text',
     });
   }
 }

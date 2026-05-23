@@ -83,9 +83,9 @@ export const StoryFinalQuizScreen: React.FC = () => {
     return (
       <Screen style={{ justifyContent: 'center', textAlign: 'center' }}>
         <div className="card fade-in" style={{ padding: spacing.xl, display: 'flex', flexDirection: 'column', gap: spacing.md }}>
-          <h1 style={{ fontSize: 48 }}>{passed ? '🎉 Well Done!' : '😕 Try Again'}</h1>
-          <p style={{ fontSize: 24, color: colors.textSecondary }}>Your Score: {score}%</p>
-          <p>{passed ? 'You have successfully completed the story!' : 'You need at least 70% to pass.'}</p>
+          <h1 style={{ fontSize: 48 }}>{passed ? '🎉 Bravo!' : '😕 Riprova'}</h1>
+          <p style={{ fontSize: 24, color: colors.textSecondary }}>Il tuo punteggio: {score}%</p>
+          <p>{passed ? 'Hai completato la storia con successo!' : 'Ti serve almeno il 70% per passare.'}</p>
           <PrimaryButton label={passed ? "Back to Stories" : "Retry Quiz"} onPress={handleFinish} />
         </div>
       </Screen>

@@ -25,35 +25,44 @@ export const AuthScreen: React.FC = () => {
   const [error, setError] = useState<string>();
   const [isLoading, setIsLoading] = useState(false);
   const googleButtonRef = useRef<HTMLDivElement>(null);
+  const isInitialized = useRef(false);
 
   useEffect(() => {
-    // Load Google Identity Services script
-    const script = document.createElement('script');
-    script.src = "https://accounts.google.com/gsi/client";
-    script.async = true;
-    script.defer = true;
-    script.onload = () => {
-      if (window.google) {
+    // Prevent multiple initializations
+    if (isInitialized.current) return;
+
+    const scriptId = 'google-gsi-client';
+    let script = document.getElementById(scriptId) as HTMLScriptElement;
+
+    const initGoogle = () => {
+      if (window.google && !isInitialized.current) {
         window.google.accounts.id.initialize({
           client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
           callback: handleGoogleResponse,
         });
+        isInitialized.current = true;
         
         if (googleButtonRef.current) {
           window.google.accounts.id.renderButton(googleButtonRef.current, {
             theme: "outline",
             size: "large",
-            width: googleButtonRef.current.offsetWidth || 400,
+            width: googleButtonRef.current.offsetWidth || 368,
           });
         }
       }
     };
-    document.body.appendChild(script);
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
+
+    if (!script) {
+      script = document.createElement('script');
+      script.id = scriptId;
+      script.src = "https://accounts.google.com/gsi/client";
+      script.async = true;
+      script.defer = true;
+      script.onload = initGoogle;
+      document.body.appendChild(script);
+    } else {
+      initGoogle();
+    }
   }, []);
 
   const handleGoogleResponse = async (response: any) => {

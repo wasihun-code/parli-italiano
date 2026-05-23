@@ -37,53 +37,53 @@ describe('VocabularyTrainingScreen', () => {
 
   it('renders loading state initially then shows content', async () => {
     renderScreen();
-    expect(screen.getByText(/Loading vocabulary/)).toBeInTheDocument();
+    expect(screen.getByText(/Caricamento vocabolario/)).toBeInTheDocument();
     await waitFor(() => expect(screen.getByText('Test Scenario')).toBeInTheDocument());
   });
 
   it('shows the SKIP button after loading', async () => {
     renderScreen();
-    await waitFor(() => expect(screen.getByText('SKIP')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText('SALTA')).toBeInTheDocument());
   });
 
   it('entering skip test shows multiple choice option buttons', async () => {
     renderScreen();
-    await waitFor(() => expect(screen.getByText('SKIP')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText('SALTA')).toBeInTheDocument());
 
-    fireEvent.click(screen.getByText('SKIP'));
+    fireEvent.click(screen.getByText('SALTA'));
 
     // Skip test uses multiple-choice: at least 2 buttons with numbered options should appear
     // The numbered option buttons have a span inside with the number
     await waitFor(() => {
-      // Look for "1." number label text characteristic of multiple choice options
+      // Look for "1" number label text characteristic of multiple choice options
       expect(screen.getByText('1')).toBeInTheDocument();
     });
   });
 
   it('clicking a multiple-choice option shows feedback', async () => {
     renderScreen();
-    await waitFor(() => expect(screen.getByText('SKIP')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText('SALTA')).toBeInTheDocument());
 
-    fireEvent.click(screen.getByText('SKIP'));
+    fireEvent.click(screen.getByText('SALTA'));
 
     // Wait for numbered options to appear
     await waitFor(() => expect(screen.getByText('1')).toBeInTheDocument());
 
     // Find the option buttons (they contain a numbered span + text).
-    // Get all buttons, find those that have a '1.' span sibling (the option buttons)
+    // Get all buttons, find those that have a '1' span sibling (the option buttons)
     const allButtons = screen.getAllByRole('button');
     const optionButton = allButtons.find(b =>
-      ['ciao', 'grazie', 'prego'].some(text => b.textContent?.includes(text)),
+      ['hello', 'thank you', 'you are welcome'].some(text => b.textContent?.includes(text)),
     );
     expect(optionButton).toBeDefined();
 
     fireEvent.click(optionButton!);
 
     // After answering, either feedback shows or the next question loads
-    // Either Continue button appears or the exercise advances
+    // Either Continua button appears or the exercise advances
     await waitFor(() => {
-      const continueBtn = screen.queryByRole('button', { name: /Continue/i });
-      const playAudio = screen.queryByRole('button', { name: /Play Audio/i });
+      const continueBtn = screen.queryByRole('button', { name: /Continua/i });
+      const playAudio = screen.queryByRole('button', { name: /Ascolta Audio/i });
       // At least one of these should be visible after answering
       expect(continueBtn || playAudio).toBeTruthy();
     }, { timeout: 2000 });
@@ -91,9 +91,9 @@ describe('VocabularyTrainingScreen', () => {
 
   it('completes the skip test with success and updates stores', async () => {
     renderScreen();
-    await waitFor(() => expect(screen.getByText('SKIP')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText('SALTA')).toBeInTheDocument());
 
-    fireEvent.click(screen.getByText('SKIP'));
+    fireEvent.click(screen.getByText('SALTA'));
 
     const vocabulary = [
       { id: 'v1', italian: 'ciao', english: 'hello' },
@@ -103,18 +103,19 @@ describe('VocabularyTrainingScreen', () => {
 
     for (let i = 0; i < 3; i++) {
       await waitFor(() => expect(screen.getByText('1')).toBeInTheDocument());
-      const prompt = screen.getByRole('heading', { level: 1 }).textContent;
-      const term = vocabulary.find(v => v.english === prompt);
+      const prompt = screen.getByRole('heading', { level: 1 }).textContent?.toLowerCase().trim();
+      const term = vocabulary.find(v => v.italian.toLowerCase() === prompt);
       if (!term) throw new Error(`Could not find term for prompt: ${prompt}`);
-      
-      fireEvent.click(screen.getByText(term.italian));
-      
-      const continueBtn = await screen.findByRole('button', { name: /Continue/i });
+
+      fireEvent.click(screen.getByText(term.english));
+
+      const continueBtn = await screen.findByRole('button', { name: /Continua/i });
       fireEvent.click(continueBtn);
     }
 
+
     // Results screen should appear
-    await waitFor(() => expect(screen.getByText('Test Results')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText('Risultati del Test')).toBeInTheDocument());
     
     // Verify stores are updated
     const srsState = useSrsStore.getState();

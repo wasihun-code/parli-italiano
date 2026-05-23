@@ -10,6 +10,7 @@ export type GameProgress = {
 export type StoryProgress = {
   currentPart: number;
   currentPage: number;
+  currentSubPage: number;
   completedPages: string[]; // partIndex_pageIndex
   completedParts: number[];
   translateUsesRemaining: number;
@@ -40,6 +41,7 @@ export type GameState = {
   completeStory: (storyTitle: string, score: number) => void;
   updateStoryProgress: (storyTitle: string, progress: Partial<StoryProgress>) => void;
   resetStoryTranslateUses: (storyTitle: string) => void;
+  resetProgress: () => void;
 };
 
 const INITIAL_TRANSLATE_USES = 10;
@@ -93,6 +95,7 @@ export const useGameStore = create<GameState>()(
         const currentProgress = state.storyProgress[storyTitle] || {
           currentPart: 0,
           currentPage: 0,
+          currentSubPage: 0,
           completedPages: [],
           completedParts: [],
           translateUsesRemaining: INITIAL_TRANSLATE_USES
@@ -109,6 +112,7 @@ export const useGameStore = create<GameState>()(
         const currentProgress = state.storyProgress[storyTitle] || {
           currentPart: 0,
           currentPage: 0,
+          currentSubPage: 0,
           completedPages: [],
           completedParts: [],
           translateUsesRemaining: INITIAL_TRANSLATE_USES
@@ -119,6 +123,20 @@ export const useGameStore = create<GameState>()(
             [storyTitle]: { ...currentProgress, translateUsesRemaining: INITIAL_TRANSLATE_USES }
           }
         };
+      }),
+
+      resetProgress: () => set({
+        genderGame: { unlockedLevels: 1, highScore: 0 },
+        translationGame: { unlockedLevels: 1, highScore: 0 },
+        prepositionGame: { unlockedLevels: 1, highScore: 0 },
+        idiomsGame: { unlockedLevels: 1, highScore: 0 },
+        oppositesGame: { unlockedLevels: 1, highScore: 0 },
+        numbersGame: { unlockedLevels: 1, highScore: 0 },
+        pluralGame: { unlockedLevels: 1, highScore: 0 },
+        unlockedStories: [],
+        completedStories: [],
+        storyProgress: {},
+        storyScores: {},
       }),
     }),
     {

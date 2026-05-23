@@ -18,7 +18,8 @@ from .serializers import (
     UserSerializer, RegisterSerializer, LoginSerializer,
     UserLanguageProgressSerializer, ScenarioProgressSerializer,
     GameProgressSerializer, MasteredItemSerializer,
-    FriendRequestSerializer, FriendshipSerializer, ChatMessageSerializer
+    FriendRequestSerializer, FriendshipSerializer, ChatMessageSerializer,
+    LeaderboardSerializer
 )
 
 User = get_user_model()
@@ -334,22 +335,40 @@ class BatchSyncView(ProgressBaseView):
         language = self.get_language(request)
         user = request.user
         
+        # Sync User stats
+        if 'xp' in request.data:
+            user.total_xp = request.data.get('xp')
+        if 'streak' in request.data:
+            user.streak_days = request.data.get('streak')
+        if 'last_activity_date' in request.data:
+            user.last_activity_date = request.data.get('last_activity_date')
+        user.save()
+
         # Sync Scenarios
-        for s in request.data.get('scenarios', []):
-            ScenarioProgress.objects.update_or_create(
-                user=user, language=language, 
-                scenario_id=s.get('scenario_id'), phase=s.get('phase'),
-                defaults={'completed': s.get('completed'), 'score': s.get('score')}
-            )
+        scenarios_data = request.data.get('scenarioProgress', {})
+        for scenario_id, progress in scenarios_data.items():
+            # Flatten phases into records
+            for phase in ['vocabulary', 'phrase', 'sentence']:
+                completed_key = f"{phase}Completed"
+                score_key = f"{phase}Score"
+                
+                ScenarioProgress.objects.update_or_create(
+                    user=user, language=language, 
+                    scenario_id=int(scenario_id), phase=phase,
+                    defaults={
+                        'completed': progress.get(completed_key, False),
+                        'score': progress.get(score_key, 0)
+                    }
+                )
         
         # Sync Games
         for g in request.data.get('games', []):
             GameProgress.objects.update_or_create(
                 user=user, language=language, game_name=g.get('game_name'),
                 defaults={
-                    'level': g.get('level'), 
-                    'high_score': g.get('high_score'),
-                    'unlocked_levels': g.get('unlocked_levels')
+                    'level': g.get('level', 1), 
+                    'high_score': g.get('high_score', 0),
+                    'unlocked_levels': g.get('unlocked_levels', [1])
                 }
             )
             
@@ -514,3 +533,35 @@ class SubscriptionStatusView(APIView):
             'subscription_valid_until': request.user.subscription_valid_until,
             'stripe_customer_id': request.user.stripe_customer_id,
         })
+
+import requests
+from django.http import HttpResponse
+
+class TTSProxyView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get(self, request):
+        text = request.query_params.get('q')
+        if not text:
+            return Response({'error': 'No text provided'}, status=status.HTTP_400_BAD_REQUEST)
+
+        url = f'https://translate.google.com/translate_tts?ie=UTF-8&tl=it-IT&client=tw-ob&q={requests.utils.quote(text)}'
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+        
+        try:
+            response = requests.get(url, headers=headers)
+            if response.status_code == 200:
+                return HttpResponse(response.content, content_type='audio/mpeg')
+            else:
+                return Response({'error': 'Failed to fetch TTS from source'}, status=response.status_code)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class LeaderboardView(generics.ListAPIView):
+    serializer_class = LeaderboardSerializer
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get_queryset(self):
+        return User.objects.all().order_by('-total_xp')[:10]

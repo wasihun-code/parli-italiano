@@ -10,7 +10,7 @@ export const colors = {
   textPrimary: '#2D2424', // Coffee Bean
   textSecondary: '#5D5454', // Ground Coffee
   warning: '#E39B14', // Amber Roast
-  success: '#386641', // Italian Olive
+  success: '#2e7d32', // Dark Green
   cardBg: '#FFFFFF',
   chipBg: '#EAE3D9', // Darker chip bg
 } as const;

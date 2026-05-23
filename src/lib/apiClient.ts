@@ -18,17 +18,62 @@ export type AuthResponse = {
 };
 
 async function request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
-  const token = localStorage.getItem('auth_token');
-  const headers = {
+  let token = localStorage.getItem('auth_token');
+  const headers: any = {
     'Content-Type': 'application/json',
     ...(token ? { 'Authorization': `Bearer ${token}` } : {}),
     ...options.headers,
   };
 
-  const response = await fetch(`${BASE_URL}${endpoint}`, {
+  let response = await fetch(`${BASE_URL}${endpoint}`, {
     ...options,
     headers,
   });
+
+  // Handle 401 Unauthorized
+  if (response.status === 401 && !endpoint.includes('/auth/login/') && !endpoint.includes('/auth/token/refresh/')) {
+    const refreshToken = localStorage.getItem('refresh_token');
+    if (refreshToken) {
+      try {
+        const refreshResponse = await fetch(`${BASE_URL}/auth/token/refresh/`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ refresh: refreshToken }),
+        });
+
+        if (refreshResponse.ok) {
+          const data = await refreshResponse.json();
+          localStorage.setItem('auth_token', data.access);
+          
+          // Retry original request with new token
+          headers['Authorization'] = `Bearer ${data.access}`;
+          response = await fetch(`${BASE_URL}${endpoint}`, {
+            ...options,
+            headers,
+          });
+        } else {
+          // Refresh failed, clear tokens and force reload to auth
+          localStorage.removeItem('auth_token');
+          localStorage.removeItem('refresh_token');
+          localStorage.removeItem('parla-italiano-auth'); // Clear authStore persistence
+          window.location.href = '/auth';
+          return {} as T;
+        }
+      } catch (err) {
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('refresh_token');
+        localStorage.removeItem('parla-italiano-auth');
+        window.location.href = '/auth';
+        return {} as T;
+      }
+    } else {
+      // No refresh token, clear and redirect
+      localStorage.removeItem('auth_token');
+      localStorage.removeItem('parla-italiano-auth');
+      window.location.href = '/auth';
+      return {} as T;
+    }
+  }
 
   if (!response.ok) {
     const errorData = await response.json().catch(() => ({}));
@@ -60,6 +105,7 @@ export const apiClient = {
       body: JSON.stringify({ email, password }),
     });
     localStorage.setItem('auth_token', data.tokens.access);
+    localStorage.setItem('refresh_token', data.tokens.refresh);
     return data;
   },
 
@@ -76,6 +122,7 @@ export const apiClient = {
       body: JSON.stringify({ access_token: accessToken }),
     });
     localStorage.setItem('auth_token', data.tokens.access);
+    localStorage.setItem('refresh_token', data.tokens.refresh);
     return data;
   },
 
@@ -116,21 +163,25 @@ export const apiClient = {
     return request<any[]>(`/users/search/?q=${encodeURIComponent(q)}`);
   },
 
+  getLeaderboard: async () => {
+    return request<any[]>('/leaderboard/');
+  },
+
   sendFriendRequest: async (userId: string) => {
-    return request('/friends/requests/', {
+    return request('/friends/request/', {
       method: 'POST',
       body: JSON.stringify({ to_user_id: userId }),
     });
   },
 
   acceptFriendRequest: async (requestId: number) => {
-    return request(`/friends/requests/${requestId}/accept/`, {
+    return request(`/friends/request/${requestId}/accept/`, {
       method: 'POST',
     });
   },
 
   declineFriendRequest: async (requestId: number) => {
-    return request(`/friends/requests/${requestId}/decline/`, {
+    return request(`/friends/request/${requestId}/decline/`, {
       method: 'POST',
     });
   },
@@ -140,7 +191,7 @@ export const apiClient = {
   },
 
   getFriends: async () => {
-    return request<any[]>('/friends/');
+    return request<any[]>('/friends/list/');
   },
 
   sendMessage: async (receiverId: string, message: string) => {

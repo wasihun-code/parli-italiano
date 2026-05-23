@@ -15,6 +15,7 @@ import {
 } from '@shared/ai/prompt';
 import {useConversationStore} from '@shared/store/conversationStore';
 import {useProgressStore} from '@shared/store/progressStore';
+import {Tts} from '../lib/tts';
 import {colors} from '@shared/theme/colors';
 import {spacing} from '@shared/theme/spacing';
 import {getScenarioRoles} from '@app/data/roles';
@@ -84,6 +85,15 @@ export const ConversationScreen: React.FC = () => {
   const lastTranscript = useRef('');
   const introStarted = useRef(false);
   const speech = useSpeechRecognition('it-IT');
+
+  useEffect(() => {
+    if (messages.length > 0) {
+      const lastMessage = messages[messages.length - 1];
+      if (lastMessage.role === 'assistant') {
+        Tts.speak(lastMessage.text);
+      }
+    }
+  }, [messages]);
 
   const systemPrompt = useMemo(
     () => {

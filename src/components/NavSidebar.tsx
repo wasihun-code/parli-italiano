@@ -11,13 +11,22 @@ const NAV_ITEMS = [
   { path: '/games', label: 'Games', icon: '🎮' },
   { path: '/stories', label: 'Stories', icon: '📖' },
   { path: '/grammar', label: 'Grammar', icon: '📚' },
-  { path: '/history', label: 'AI Tutor', icon: '🤖' },
+  { path: '/history', label: 'AI Tutor', icon: '🤖', disabled: true },
   { path: '/friends', label: 'Friends', icon: '👥' },
+  { path: '/settings', label: 'Settings', icon: '⚙️' },
 ];
 
 export const NavSidebar: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
+
+  const handleNav = (item: typeof NAV_ITEMS[0]) => {
+    if (item.disabled) {
+      alert(`${item.label} is coming soon! Stay tuned.`);
+      return;
+    }
+    navigate(item.path);
+  };
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.md }}>
@@ -28,7 +37,7 @@ export const NavSidebar: React.FC = () => {
             return (
               <button
                 key={item.path}
-                onClick={() => navigate(item.path)}
+                onClick={() => handleNav(item)}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -37,13 +46,14 @@ export const NavSidebar: React.FC = () => {
                   border: 'none',
                   background: active ? 'rgba(78, 52, 46, 0.08)' : 'transparent',
                   borderRadius: 14,
-                  cursor: 'pointer',
+                  cursor: item.disabled ? 'not-allowed' : 'pointer',
                   textAlign: 'left',
                   transition: 'background 0.2s',
                   color: active ? colors.primary : colors.textSecondary,
+                  opacity: item.disabled ? 0.5 : 1,
                 }}
-                onMouseEnter={e => { if (!active) e.currentTarget.style.backgroundColor = 'rgba(78, 52, 46, 0.05)'; }}
-                onMouseLeave={e => { if (!active) e.currentTarget.style.backgroundColor = 'transparent'; }}
+                onMouseEnter={e => { if (!active && !item.disabled) e.currentTarget.style.backgroundColor = 'rgba(78, 52, 46, 0.05)'; }}
+                onMouseLeave={e => { if (!active && !item.disabled) e.currentTarget.style.backgroundColor = 'transparent'; }}
               >
                 <span style={{ fontSize: 20 }}>{item.icon}</span>
                 <span style={{ fontSize: 16, fontWeight: 900 }}>{item.label}</span>

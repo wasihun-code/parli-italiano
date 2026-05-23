@@ -29,32 +29,32 @@ export function getWrongAnswerExplanation(context: ExplanationContext): string {
     case 'grammar':
       return getGrammarExplanation(category || '', correctAnswer || '');
     case 'idioms':
-      return `Hint: Pay attention to the idiom's metaphor. For example, "In bocca al lupo" means "Good luck" not a literal wolf.`;
+      return `Suggerimento: Fai attenzione alla metafora dell'idioma. Ad esempio, "In bocca al lupo" significa "Buona fortuna", non un lupo letterale.`;
     case 'opposites':
-      return `L'opposto di ${italian} è ${correctAnswer}. Hint: Think of common antonyms.`;
+      return `L'opposto di ${italian} è ${correctAnswer}. Suggerimento: Pensa ai contrari comuni.`;
     case 'numbers':
-      return `Hint: ${correctAnswer} is formed by combining the tens and units. Example: venti + due = ventidue.`;
+      return `Suggerimento: ${correctAnswer} si forma combinando le decine e le unità. Esempio: venti + due = ventidue.`;
     default:
-      return "Keep trying! Pay attention to the word endings and common patterns.";
+      return "Continua a provare! Fai attenzione alle desinenze delle parole e agli schemi comuni.";
   }
 }
 
 function getGenderExplanation(word: string, correctGender: string): string {
-  let hint = `Nouns ending in -o are usually masculine, and -a are usually feminine.`;
+  let hint = `I nomi che finiscono in -o sono solitamente maschili, e quelli in -a sono solitamente femminili.`;
   
   if (word.toLowerCase() === 'mano') {
-    hint = "Exceptions: 'mano' ends in -o but is feminine.";
+    hint = "Eccezioni: 'mano' finisce in -o ma è femminile.";
   } else if (word.toLowerCase().endsWith('ma') && correctGender === 'm') {
-    hint = "Nouns of Greek origin ending in -ma (like 'problema', 'clima') are often masculine.";
+    hint = "I nomi di origine greca che terminano in -ma (come 'problema', 'clima') sono spesso maschili.";
   } else if (word.toLowerCase().endsWith('e')) {
-    hint = "Nouns ending in -e can be either masculine or feminine and must be memorized.";
+    hint = "I nomi che terminano in -e possono essere sia maschili che femminili e devono essere memorizzati.";
   } else if (word.toLowerCase().endsWith('ione')) {
-    hint = "Nouns ending in -ione are almost always feminine.";
+    hint = "I nomi che terminano in -ione sono quasi sempre femminili.";
   }
 
-  const example = correctGender === 'm' ? "il libro (the book)" : "la casa (the house)";
+  const example = correctGender === 'm' ? "il libro" : "la casa";
   
-  return `Hint: ${hint} Example of correct usage: ${example}.`;
+  return `Suggerimento: ${hint} Esempio di utilizzo corretto: ${example}.`;
 }
 
 function getPrepositionExplanation(preposition: string): string {
@@ -63,64 +63,64 @@ function getPrepositionExplanation(preposition: string): string {
   let example = "";
 
   if (p === 'a') {
-    hint = "Use 'a' for cities (a Roma) and specific places like 'a casa', 'a scuola'.";
+    hint = "Usa 'a' per le città (a Roma) e luoghi specifici come 'a casa', 'a scuola'.";
     example = "Vado a Milano.";
   } else if (p === 'in') {
-    hint = "Use 'in' for countries (in Italia), regions, and large islands.";
+    hint = "Usa 'in' per i paesi (in Italia), le regioni e le grandi isole.";
     example = "Vivo in Toscana.";
   } else if (p === 'da') {
-    hint = "Use 'da' for origin or when going to a person's place.";
+    hint = "Usa 'da' per l'origine o quando si va a casa di qualcuno.";
     example = "Vengo da Parigi.";
   } else if (p === 'di') {
-    hint = "Use 'di' for possession or origin with the verb 'essere'.";
+    hint = "Usa 'di' per il possesso o l'origine con il verbo 'essere'.";
     example = "Il libro è di Marco.";
   } else if (p === 'sul' || p === 'sullo' || p === 'sulla') {
-    hint = "Use 'su' (on) combined with an article for objects on surfaces.";
+    hint = "Usa 'su' combinato con un articolo per oggetti su superfici.";
     example = "Il gatto è sul divano.";
   } else {
-    hint = "Prepositions often depend on the verb they follow or the destination type.";
+    hint = "Le preposizioni spesso dipendono dal verbo che seguono o dal tipo di destinazione.";
     example = "Vado al cinema (a + il).";
   }
 
-  return `Hint: ${hint} Example: ${example}`;
+  return `Suggerimento: ${hint} Esempio: ${example}`;
 }
 
 function getTranslationExplanation(type: string, _italian: string, _correctAnswer: string): string {
-  const hint = "Pay close attention to verb conjugations and the gender of nouns/adjectives.";
+  const hint = "Presta molta attenzione alle coniugazioni verbali e al genere di nomi/aggettivi.";
   const example = type === 'vocabulary' 
-    ? "Il ragazzo (The boy) vs La ragazza (The girl)."
-    : "Io parlo (I speak) vs Lui parla (He speaks).";
+    ? "Il ragazzo vs La ragazza."
+    : "Io parlo vs Lui parla.";
   
-  return `Hint: ${hint} Example: ${example}`;
+  return `Suggerimento: ${hint} Esempio: ${example}`;
 }
 
 function getGrammarExplanation(category: string, _correctAnswer: string): string {
-  let hint = "Check the grammar rules for this section.";
+  let hint = "Controlla le regole grammaticali per questa sezione.";
   let example = "";
 
   if (category === 'articles') {
-    hint = "Articles must match the gender, number, and the starting letter of the noun.";
-    example = "lo zaino (s+consonant), l'amico (vowel), il libro (consonant).";
+    hint = "Gli articoli devono corrispondere al genere, al numero e alla lettera iniziale del nome.";
+    example = "lo zaino (s+consonante), l'amico (vocale), il libro (consonante).";
   } else if (category.includes('verbs')) {
-    hint = "Check the subject of the sentence to find the matching verb ending.";
+    hint = "Controlla il soggetto della frase per trovare la desinenza verbale corrispondente.";
     example = "io -o, tu -i, lui/lei -a/-e.";
   }
 
-  return `Hint: ${hint} ${example ? 'Example: ' + example : ''}`;
+  return `Suggerimento: ${hint} ${example ? 'Esempio: ' + example : ''}`;
 }
 
 function getPluralExplanation(word: string, plural: string): string {
-  let hint = "Italian plurals usually follow patterns based on the ending.";
+  let hint = "I plurali italiani di solito seguono schemi basati sulla desinenza.";
   
   if (word.endsWith('o')) {
-    hint = "Nouns ending in -o (masculine) usually become -i in the plural.";
+    hint = "I nomi che terminano in -o (maschili) di solito diventano -i al plurale.";
   } else if (word.endsWith('a')) {
-    hint = "Nouns ending in -a (feminine) usually become -e in the plural.";
+    hint = "I nomi che terminano in -a (femminili) di solito diventano -e al plurale.";
   } else if (word.endsWith('e')) {
-    hint = "Nouns ending in -e (either gender) usually become -i in the plural.";
+    hint = "I nomi che terminano in -e (di entrambi i generi) di solito diventano -i al plurale.";
   } else if (plural === word) {
-    hint = "Foreign loanwords or words with accents on the last vowel usually stay the same in plural.";
+    hint = "I prestiti stranieri o le parole con accenti sull'ultima vocale di solito rimangono invariati al plurale.";
   }
 
-  return `Hint: ${hint} Plural of ${word} is ${plural}.`;
+  return `Suggerimento: ${hint} Il plurale di ${word} è ${plural}.`;
 }

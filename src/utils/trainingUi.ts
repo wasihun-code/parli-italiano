@@ -88,7 +88,7 @@ export function progressFill(progress: number): CSSProperties {
   return {
     height: '100%',
     width: `${clamped * 100}%`,
-    backgroundColor: colors.accent,
+    backgroundColor: colors.success,
     transition: 'width 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
     borderRadius: 999
   };

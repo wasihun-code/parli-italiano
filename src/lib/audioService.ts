@@ -1,8 +1,15 @@
 
+import { useUserSettingsStore } from '../store/userSettingsStore';
+
 class AudioService {
   private context: AudioContext | null = null;
 
+  private isSoundEnabled() {
+    return useUserSettingsStore.getState().soundEnabled;
+  }
+
   private initContext() {
+    if (!this.isSoundEnabled()) return;
     if (!this.context) {
       const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
       if (!AudioCtx) return;
@@ -14,6 +21,7 @@ class AudioService {
   }
 
   private playTone(freq: number, type: OscillatorType, duration: number, volume: number = 0.1) {
+    if (!this.isSoundEnabled()) return;
     this.initContext();
     if (!this.context) return;
 
@@ -39,8 +47,7 @@ class AudioService {
   }
 
   playIncorrect() {
-    this.playTone(220, 'sawtooth', 0.3, 0.05); // A3
-    setTimeout(() => this.playTone(196, 'sawtooth', 0.4, 0.05), 100); // G3
+    this.playTone(200, 'sine', 0.2, 0.05); // Short soft buzz
   }
 
   playLevelUp() {

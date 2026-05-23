@@ -32,6 +32,8 @@ import { StoryFinalQuizScreen } from './screens/StoryFinalQuizScreen';
 import { PremiumScreen } from './screens/PremiumScreen';
 import { FriendsScreen } from './screens/FriendsScreen';
 import { ChatScreen } from './screens/ChatScreen';
+import { SettingsScreen } from './screens/SettingsScreen';
+import { LeaderboardScreen } from './screens/LeaderboardScreen';
 import { useCurrentUser } from '@shared/store/authStore';
 import { useSubscriptionStore } from './store/subscriptionStore';
 import { FooterNav } from './components/FooterNav';
@@ -69,14 +71,19 @@ const AuthGuard: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 };
 
 export const App: React.FC = () => {
-  const { fetchStatus } = useSubscriptionStore();
+  const { fetchStatus, forcePremiumForTesting } = useSubscriptionStore();
   const currentUser = useCurrentUser();
 
   useEffect(() => {
     if (currentUser) {
-      fetchStatus().catch(() => {});
+      const isDevPremium = localStorage.getItem('premium_test') === 'true' || window.location.search.includes('premium=true');
+      if (isDevPremium) {
+        forcePremiumForTesting();
+      } else {
+        fetchStatus().catch(() => {});
+      }
     }
-  }, [currentUser, fetchStatus]);
+  }, [currentUser, fetchStatus, forcePremiumForTesting]);
 
   return (
     <BrowserRouter>
@@ -115,6 +122,8 @@ export const App: React.FC = () => {
             <Route path="/premium" element={<PremiumScreen />} />
             <Route path="/friends" element={<FriendsScreen />} />
             <Route path="/chat/:friendId" element={<ChatScreen />} />
+            <Route path="/settings" element={<SettingsScreen />} />
+            <Route path="/leaderboard" element={<LeaderboardScreen />} />
           </Routes>
           <FooterNav />
         </OnboardingGuard>

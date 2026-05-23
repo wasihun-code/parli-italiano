@@ -9,6 +9,7 @@ import { Keyboard } from '../components/Keyboard';
 import { FeedbackMessage } from '../components/FeedbackMessage';
 import { useProgressStore } from '@shared/store/progressStore';
 import { useSrsStore } from '@shared/store/srsStore';
+import { useUserSettingsStore } from '../store/userSettingsStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import {
@@ -58,7 +59,12 @@ const SpeechRecognition =
 export const PhraseTrainingScreen: React.FC = () => {
   const { scenarioId } = useParams<{ scenarioId: string }>();
   const navigate = useNavigate();
-  const [scenarioTitle, setScenarioTitle] = useState('Scenario Phrases');
+  const addXP = useProgressStore(state => state.addXP);
+
+  const { feedbackLanguage } = useUserSettingsStore();
+  const isIt = feedbackLanguage === 'it';
+
+  const [scenarioTitle, setScenarioTitle] = useState(isIt ? 'Frasi' : 'Phrases');
   const [phrases, setPhrases] = useState<ScenarioPhraseRow[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [stats, setStats] = useState<PhraseTrainingStats>({});
@@ -184,22 +190,29 @@ export const PhraseTrainingScreen: React.FC = () => {
 
     const status = checkPhraseAnswer(submitted, currentExercise.answer);
 
-    recordAnswer(currentPhrase.id, status !== 'incorrect');
-    if (status !== 'incorrect') {
+    const isCorrect = status !== 'incorrect';
+    if (isCorrect) {
+      addXP(10);
+    } else {
+      addXP(-2);
+    }
+
+    recordAnswer(currentPhrase.id, isCorrect);
+    if (isCorrect) {
       setPhraseAttemptCounts(current => ({
         ...current,
         [currentPhrase.id]: (current[currentPhrase.id] ?? 0) + 1,
       }));
     }
-    setStats(current => recordPhraseAttempt(current, currentPhrase.id, status !== 'incorrect'));
-    const explanation = status === 'incorrect' ? getWrongAnswerExplanation({
+    setStats(current => recordPhraseAttempt(current, currentPhrase.id, isCorrect));
+    const explanation = !isCorrect ? getWrongAnswerExplanation({
       type: 'phrase',
       italian: currentPhrase.italian,
       correctAnswer: currentExercise.answer
     }) : undefined;
 
     setFeedback({ status, correctAnswer: currentExercise.answer, explanation });
-  }, [currentPhrase, currentExercise, feedback, typedAnswer, selectedWords, selectedAnswer, recordAnswer]);
+  }, [currentPhrase, currentExercise, feedback, typedAnswer, selectedWords, selectedAnswer, recordAnswer, addXP]);
 
   const advance = useCallback((): void => {
     setFeedback(undefined);
@@ -259,7 +272,7 @@ export const PhraseTrainingScreen: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [feedback, advance, submitAnswer, typedAnswer, selectedWords, selectedAnswer, currentExercise]);
 
-  if (loading) return <Screen style={{ justifyContent: 'center', alignItems: 'center' }}>Loading phrases...</Screen>;
+  if (loading) return <Screen style={{ justifyContent: 'center', alignItems: 'center' }}>{isIt ? 'Caricamento frasi...' : 'Loading phrases...'}</Screen>;
   if (loadError) return <Screen><p>{loadError}</p></Screen>;
 
   if (!activeItem) {
@@ -267,11 +280,11 @@ export const PhraseTrainingScreen: React.FC = () => {
       <Screen style={{ justifyContent: 'center' }}>
         <div className="card fade-in" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', gap: spacing.lg }}>
           <div style={{ fontSize: 64 }}>🎯</div>
-          <h1 style={{ color: colors.primary }}>All Learned!</h1>
-          <p style={{ color: colors.textSecondary, fontSize: 18 }}>You've mastered all phrases for this scenario.</p>
+          <h1 style={{ color: colors.primary }}>{isIt ? 'Tutto Imparato!' : 'All Learned!'}</h1>
+          <p style={{ color: colors.textSecondary, fontSize: 18 }}>{isIt ? 'Hai imparato tutte le frasi per questo scenario.' : "You've mastered all phrases for this scenario."}</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.md }}>
-            <PrimaryButton label="Go to Sentences" onPress={() => navigate(`/scenarios/${scenarioId}/sentences`)} />
-            <PrimaryButton label="Back to Scenarios" onPress={() => navigate('/scenarios')} variant="secondary" />
+            <PrimaryButton label={isIt ? "Vai alle Frasi Complesse" : "Go to Sentences"} onPress={() => navigate(`/scenarios/${scenarioId}/sentences`)} />
+            <PrimaryButton label={isIt ? "Torna agli Scenari" : "Back to Scenarios"} onPress={() => navigate('/scenarios')} variant="secondary" />
           </div>
         </div>
       </Screen>
@@ -304,11 +317,11 @@ export const PhraseTrainingScreen: React.FC = () => {
               message={
                 <>
                   <div style={{ fontSize: 24, marginBottom: 8 }}>
-                    {feedback.status === 'correct' ? '✅ Excellent!' : feedback.status === 'nearly_correct' ? '⚠️ Almost correct!' : '❌ Not quite.'}
+                    {feedback.status === 'correct' ? (isIt ? '✅ Ottimo!' : '✅ Excellent!') : feedback.status === 'nearly_correct' ? (isIt ? '⚠️ Quasi corretto!' : '⚠️ Almost correct!') : (isIt ? '❌ Non corretto.' : '❌ Not quite.')}
                   </div>
                   {feedback.status !== 'correct' && (
                     <div style={{ fontSize: 16 }}>
-                      The correct answer is: <br/>
+                      {isIt ? 'La risposta corretta è:' : 'The correct answer is:'} <br/>
                       <span style={{ fontSize: 24, textDecoration: 'underline' }}>{feedback.correctAnswer}</span>
                     </div>
                   )}
@@ -325,7 +338,7 @@ export const PhraseTrainingScreen: React.FC = () => {
           <div className="fade-in" key={currentIndex}>
             <div style={{ marginBottom: spacing.xl }}>
                <h2 style={{ color: colors.textSecondary, fontSize: 16, textTransform: 'uppercase', letterSpacing: 1.5, marginBottom: 8, fontWeight: 900 }}>
-                {currentExercise?.kind === 'speaking' ? 'Speak aloud' : currentExercise?.kind === 'assembly' ? 'Assemble the phrase' : currentExercise?.kind === 'dictation' ? 'Listen and write' : 'Translate'}
+                {currentExercise?.kind === 'speaking' ? (isIt ? 'Parla a voce alta' : 'Speak aloud') : currentExercise?.kind === 'assembly' ? (isIt ? 'Assembla la frase' : 'Assemble the phrase') : currentExercise?.kind === 'dictation' ? (isIt ? 'Ascolta e scrivi' : 'Listen and write') : (isIt ? 'Traduci' : 'Translate')}
               </h2>
               <h1 style={{ color: colors.primary, fontSize: 32, margin: 0, fontWeight: 900 }}>
                 {currentExercise?.prompt}
@@ -482,7 +495,7 @@ export const PhraseTrainingScreen: React.FC = () => {
                   type="text"
                   value={typedAnswer}
                   onChange={e => setTypedAnswer(e.target.value)}
-                  placeholder={currentExercise.kind === 'fillBlank' ? "Missing word..." : "Type in Italian..."}
+                  placeholder={currentExercise.kind === 'fillBlank' ? (isIt ? "Parola mancante..." : "Missing word...") : (isIt ? "Scrivi in italiano..." : "Type in Italian...")}
                   style={{
                     width: '100%',
                     padding: spacing.lg,
@@ -518,12 +531,12 @@ export const PhraseTrainingScreen: React.FC = () => {
       }}>
         {!feedback ? (
           <PrimaryButton 
-            label="Check" 
+            label={isIt ? "Controlla" : "Check"} 
             onPress={() => submitAnswer()} 
             disabled={(currentExercise?.kind === 'assembly' && selectedWords.length === 0) || (currentExercise?.kind === 'multipleChoice' && !selectedAnswer) || (['fillBlank', 'dictation'].includes(currentExercise?.kind || '') && !typedAnswer.trim())} 
           />
         ) : (
-          <PrimaryButton label="Continue" onPress={advance} variant={feedback.status === 'incorrect' ? 'secondary' : 'primary'} />
+          <PrimaryButton label={isIt ? "Continua" : "Continue"} onPress={advance} variant={feedback.status === 'incorrect' ? 'secondary' : 'primary'} />
         )}
       </div>
     </Screen>

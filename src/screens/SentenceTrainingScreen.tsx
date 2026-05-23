@@ -8,6 +8,7 @@ import { Keyboard } from '../components/Keyboard';
 import { FeedbackMessage } from '../components/FeedbackMessage';
 import { useProgressStore } from '@shared/store/progressStore';
 import { useSrsStore } from '@shared/store/srsStore';
+import { useUserSettingsStore } from '../store/userSettingsStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import {
@@ -39,8 +40,13 @@ type FeedbackState = {
 export const SentenceTrainingScreen: React.FC = () => {
   const { scenarioId } = useParams<{ scenarioId: string }>();
   const navigate = useNavigate();
-  const [scenarioTitle, setScenarioTitle] = useState('Scenario Sentences');
+  const addXP = useProgressStore(state => state.addXP);
+  const { feedbackLanguage } = useUserSettingsStore();
+  const isIt = feedbackLanguage === 'it';
+
+  const [scenarioTitle, setScenarioTitle] = useState(isIt ? 'Frasi Complesse' : 'Complex Sentences');
   const [sentences, setSentences] = useState<ScenarioSentenceRow[]>([]);
+
   const [exerciseIndex, setExerciseIndex] = useState(0);
   const [stats, setStats] = useState<SentenceTrainingStats>({});
   const [typedAnswer, setTypedAnswer] = useState('');
@@ -108,16 +114,24 @@ export const SentenceTrainingScreen: React.FC = () => {
     if (!currentSentence || !currentExercise || feedback) return;
 
     const status = checkSentenceAnswer(typedAnswer, currentExercise.answer);
-    recordAnswer(currentSentence.id, status !== 'incorrect');
-    setStats(current => recordSentenceAttempt(current, currentSentence.id, status !== 'incorrect'));
-    const explanation = status === 'incorrect' ? getWrongAnswerExplanation({
+    const isCorrect = status !== 'incorrect';
+
+    if (isCorrect) {
+      addXP(10);
+    } else {
+      addXP(-2);
+    }
+
+    recordAnswer(currentSentence.id, isCorrect);
+    setStats(current => recordSentenceAttempt(current, currentSentence.id, isCorrect));
+    const explanation = !isCorrect ? getWrongAnswerExplanation({
       type: 'sentence',
       italian: currentSentence.italian,
       correctAnswer: currentExercise.answer
     }) : undefined;
 
     setFeedback({ status, correctAnswer: currentExercise.answer, explanation });
-  }, [currentExercise, currentSentence, feedback, recordAnswer, typedAnswer]);
+  }, [currentExercise, currentSentence, feedback, recordAnswer, typedAnswer, addXP]);
 
   const advance = useCallback((): void => {
     setFeedback(undefined);
@@ -148,7 +162,7 @@ export const SentenceTrainingScreen: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [advance, canSubmit, feedback, submitAnswer]);
 
-  if (loading) return <Screen style={{ justifyContent: 'center', alignItems: 'center' }}>Loading sentences...</Screen>;
+  if (loading) return <Screen style={{ justifyContent: 'center', alignItems: 'center' }}>{isIt ? 'Caricamento frasi...' : 'Loading sentences...'}</Screen>;
   if (loadError) return <Screen><p>{loadError}</p></Screen>;
 
   if (sentences.length === 0) {
@@ -156,26 +170,28 @@ export const SentenceTrainingScreen: React.FC = () => {
       <Screen style={{ justifyContent: 'center' }}>
         <div className="card fade-in" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', gap: spacing.lg }}>
           <div style={{ fontSize: 64 }}>🎯</div>
-          <h1 style={{ color: colors.primary }}>All Learned!</h1>
-          <p style={{ color: colors.textSecondary, fontSize: 18 }}>You've mastered all sentences for this scenario.</p>
+          <h1 style={{ color: colors.primary }}>{isIt ? 'Tutto Imparato!' : 'All Learned!'}</h1>
+          <p style={{ color: colors.textSecondary, fontSize: 18 }}>{isIt ? 'Hai imparato tutte le frasi complesse per questo scenario.' : "You've mastered all sentences for this scenario."}</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.md }}>
-            <PrimaryButton label="Start Conversation" onPress={() => navigate(`/scenarios/${scenarioId}/conversation`)} />
-            <PrimaryButton label="Back to Scenarios" onPress={() => navigate('/scenarios')} variant="secondary" />
+            <PrimaryButton label={isIt ? "Inizia Conversazione" : "Start Conversation"} onPress={() => navigate(`/scenarios/${scenarioId}/conversation`)} />
+            <PrimaryButton label={isIt ? "Torna agli Scenari" : "Back to Scenarios"} onPress={() => navigate('/scenarios')} variant="secondary" />
           </div>
         </div>
       </Screen>
     );
   }
 
+
   if (finishedScore !== undefined) {
     const passed = finishedScore >= 80;
     return (
       <Screen style={{ justifyContent: 'center' }}>
         <div className="card fade-in" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', gap: spacing.lg }}>
-          <h1 style={{ color: colors.primary }}>Phase Complete</h1>
+          <h1 style={{ color: colors.primary }}>{isIt ? 'Fase Completata' : 'Phase Complete'}</h1>
+
           <div style={{ fontSize: 72, fontWeight: 900, color: passed ? colors.success : colors.error }}>{finishedScore}%</div>
-          <p style={{ color: colors.textSecondary, fontSize: 18 }}>{passed ? 'Great job! You passed the sentence phase.' : 'Almost there! Try again to reach 80%.'}</p>
-          <PrimaryButton label={passed ? 'Start Conversation' : 'Try Again'} onPress={() => {
+          <p style={{ color: colors.textSecondary, fontSize: 18 }}>{passed ? 'Ottimo lavoro! Hai superato la fase delle frasi.' : 'Ci sei quasi! Riprova per raggiungere l\'80%.'}</p>
+          <PrimaryButton label={passed ? 'Inizia Conversazione' : 'Riprova'} onPress={() => {
             if (passed) {
               navigate(`/scenarios/${scenarioId}/conversation`);
             } else {
@@ -198,7 +214,7 @@ export const SentenceTrainingScreen: React.FC = () => {
               {scenarioTitle}
             </span>
             <span style={{ color: colors.accent, fontWeight: 900, fontSize: 12 }}>
-              Score: {currentScore}%
+              {isIt ? 'Punteggio' : 'Score'}: {currentScore}%
             </span>
           </div>
           <div style={progressBar()}>
@@ -215,11 +231,11 @@ export const SentenceTrainingScreen: React.FC = () => {
               message={
                 <>
                   <div style={{ fontSize: 24, marginBottom: 8 }}>
-                    {feedback.status === 'correct' ? '✅ Excellent!' : feedback.status === 'nearly_correct' ? '⚠️ Almost correct!' : '❌ Not quite.'}
+                    {feedback.status === 'correct' ? (isIt ? '✅ Ottimo!' : '✅ Excellent!') : feedback.status === 'nearly_correct' ? (isIt ? '⚠️ Quasi corretto!' : '⚠️ Almost correct!') : (isIt ? '❌ Non corretto.' : '❌ Not quite.')}
                   </div>
                   {feedback.status !== 'correct' && (
                     <div style={{ fontSize: 16 }}>
-                      The correct answer is: <br/>
+                      {isIt ? 'La risposta corretta è:' : 'The correct answer is:'} <br/>
                       <span style={{ fontSize: 24, textDecoration: 'underline' }}>{feedback.correctAnswer}</span>
                     </div>
                   )}
@@ -236,7 +252,7 @@ export const SentenceTrainingScreen: React.FC = () => {
           <div className="fade-in" key={exerciseIndex}>
             <div style={{ marginBottom: spacing.xl }}>
                <h2 style={{ color: colors.textSecondary, fontSize: 16, textTransform: 'uppercase', letterSpacing: 1.5, marginBottom: 8, fontWeight: 900 }}>
-                {currentExercise?.kind === 'dictation' ? 'Listen and write' : currentExercise?.kind === 'completion' ? 'Complete the sentence' : 'Translate'}
+                {currentExercise?.kind === 'dictation' ? (isIt ? 'Ascolta e scrivi' : 'Listen and write') : currentExercise?.kind === 'completion' ? (isIt ? 'Completa la frase' : 'Complete the sentence') : (isIt ? 'Traduci' : 'Translate')}
               </h2>
               <h1 style={{ color: colors.primary, fontSize: 32, margin: 0, fontWeight: 900 }}>{currentExercise?.prompt}</h1>
             </div>
@@ -282,7 +298,7 @@ export const SentenceTrainingScreen: React.FC = () => {
                   type="text"
                   value={typedAnswer}
                   onChange={e => setTypedAnswer(e.target.value)}
-                  placeholder={currentExercise?.kind === 'completion' ? "Type the word..." : "Type the Italian sentence..."}
+                  placeholder={currentExercise?.kind === 'completion' ? (isIt ? "Scrivi la parola..." : "Type the word...") : (isIt ? "Scrivi la frase in italiano..." : "Type the Italian sentence...")}
                   style={{
                     width: '100%',
                     padding: spacing.lg,
@@ -317,9 +333,9 @@ export const SentenceTrainingScreen: React.FC = () => {
         zIndex: 10
       }}>
         {!feedback ? (
-          <PrimaryButton label="Check" onPress={submitAnswer} disabled={!canSubmit} />
+          <PrimaryButton label={isIt ? "Controlla" : "Check"} onPress={submitAnswer} disabled={!canSubmit} />
         ) : (
-          <PrimaryButton label="Continue" onPress={advance} variant={feedback.status === 'incorrect' ? 'secondary' : 'primary'} />
+          <PrimaryButton label={isIt ? "Continua" : "Continue"} onPress={advance} variant={feedback.status === 'incorrect' ? 'secondary' : 'primary'} />
         )}
       </div>
     </Screen>

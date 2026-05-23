@@ -245,7 +245,7 @@ export const IdiomsGame: React.FC = () => {
                         {feedback.explanation}
                       </div>
                       <div style={{ marginTop: spacing.sm, fontSize: 16, fontWeight: 'bold' }}>
-                        Meaning: {currentItem?.meaning}
+                        Meaning: {currentItem?.meaning} ({currentItem?.literal})
                       </div>
                     </>
                   )

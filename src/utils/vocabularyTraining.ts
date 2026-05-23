@@ -29,9 +29,6 @@ type ProgressApi = Pick<
 export function sortVocabularyByDifficulty<T extends {italian: string}>(
   words: T[],
 ): T[] {
-  // Sort by:
-  // 1. Word length (number of characters) – shortest first
-  // 2. If tie, alphabetical (for consistency)
   return [...words].sort((a, b) => {
     if (a.italian.length !== b.italian.length) {
       return a.italian.length - b.italian.length;
@@ -120,19 +117,14 @@ function shuffle<T>(array: T[]): T[] {
   return result;
 }
 
-function buildOptions(
+function buildShuffledOptions(
   correct: string,
   allDistractors: string[],
   maxOptions = 4,
 ): string[] {
-  // Filter out the correct answer from distractors
   const otherOptions = allDistractors.filter(d => d.toLowerCase() !== correct.toLowerCase());
-  
-  // Shuffle distractors and pick some
   const shuffledDistractors = shuffle([...new Set(otherOptions)]);
   const selectedDistractors = shuffledDistractors.slice(0, maxOptions - 1);
-  
-  // Combine, shuffle again so correct answer isn't always first
   return shuffle([correct, ...selectedDistractors]);
 }
 
@@ -142,14 +134,13 @@ export function buildVocabularyExercise(
   attemptCount: number,
 ): VocabularyExercise {
   const kind = getVocabularyExerciseKind(attemptCount);
-  // No need to filter otherTerms if unused
 
   if (kind === 'listening') {
     return {
       kind,
       prompt: 'Listen and choose the English translation.',
       answer: term.english,
-      options: buildOptions(
+      options: buildShuffledOptions(
         term.english,
         allTerms.map(t => t.english),
       ),
@@ -170,7 +161,7 @@ export function buildVocabularyExercise(
       kind,
       prompt: term.italian,
       answer: term.english,
-      options: buildOptions(
+      options: buildShuffledOptions(
         term.english,
         allTerms.map(t => t.english),
       ),
@@ -181,7 +172,7 @@ export function buildVocabularyExercise(
     kind,
     prompt: term.english,
     answer: term.italian,
-    options: buildOptions(
+    options: buildShuffledOptions(
       term.italian,
       allTerms.map(t => t.italian),
     ),
@@ -205,7 +196,6 @@ export function checkVocabularyAnswer(
     return 'correct';
   }
 
-  // Levenshtein distance of 1 is "nearly correct" for words >= 3 chars
   if (normExpected.length >= 3 && levenshteinDistance(normSubmitted, normExpected) === 1) {
     return 'nearly_correct';
   }

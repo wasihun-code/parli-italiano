@@ -11,6 +11,56 @@ import { FeedbackMessage } from '../components/FeedbackMessage';
 import { normalizeString, levenshteinDistance } from '@shared/utils/string';
 import { shuffle } from '@shared/utils/trainingUi';
 
+interface ComprehensionQuestionProps {
+  q: any;
+  index: number;
+  storyTitle: string;
+  partIdx: number;
+  pageIdx: number;
+  feedback: Record<string, any>;
+  validateComp: (opt: string, answer: string, index: number) => void;
+}
+
+const ComprehensionQuestion: React.FC<ComprehensionQuestionProps> = ({ 
+  q, index, storyTitle, partIdx, pageIdx, feedback, validateComp 
+}) => {
+  const key = `comprehension_${index}`;
+  const f = feedback[key];
+  const distractorKey = `${storyTitle}_${partIdx + 1}_${pageIdx + 1}_${index}`;
+  const distractors = (distractorsData as any)[distractorKey] || ["Distractor 1", "Distractor 2", "Distractor 3"];
+  const options = useMemo(() => shuffle([q.answer, ...distractors]), [q.answer, distractors]);
+
+  return (
+    <div style={{ marginBottom: spacing.lg }}>
+      <p style={{ fontWeight: 'bold', marginBottom: 12 }}>{q.question}</p>
+      {f ? (
+        <FeedbackMessage type={f.type} message={f.type === 'correct' ? 'Correct!' : f.message} />
+      ) : (
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.sm }}>
+          {options.map(opt => (
+            <button 
+              key={opt}
+              onClick={() => validateComp(opt, q.answer, index)}
+              style={{ 
+                padding: spacing.md, 
+                textAlign: 'left', 
+                borderRadius: 12, 
+                border: `2px solid ${colors.border}`, 
+                backgroundColor: '#fff',
+                fontWeight: 'bold',
+                color: colors.primary,
+                cursor: 'pointer'
+              }}
+            >
+              {opt}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
 export const StoryReaderScreen: React.FC = () => {
   const { storyId } = useParams<{ storyId: string }>();
   const navigate = useNavigate();
@@ -21,6 +71,7 @@ export const StoryReaderScreen: React.FC = () => {
   const progress = storyProgress[storyTitle] || {
     currentPart: 0,
     currentPage: 0,
+    currentSubPage: 0,
     completedPages: [],
     completedParts: [],
     translateUsesRemaining: 10
@@ -28,6 +79,7 @@ export const StoryReaderScreen: React.FC = () => {
 
   const [partIdx, setPartIndex] = useState(progress.currentPart);
   const [pageIdx, setPageIndex] = useState(progress.currentPage);
+  const [subPageIdx, setSubPageIdx] = useState(progress.currentSubPage || 0);
   const [showEnglish, setShowEnglish] = useState(false);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [feedback, setFeedback] = useState<Record<string, { type: 'correct' | 'incorrect', message?: string }>>({});
@@ -38,11 +90,33 @@ export const StoryReaderScreen: React.FC = () => {
   const totalParts = story?.parts.length || 0;
   const totalPagesInPart = currentPart?.pages.length || 0;
 
+  const splitIntoSubPages = (text: string) => {
+    if (!text) return [];
+    // Split by punctuation followed by space or end of string
+    const sentences = text.match(/[^.!?]+[.!?]+(?:\s+|$)|[^.!?]+$/g) || [text];
+    const subPages: string[] = [];
+    for (let i = 0; i < sentences.length; i += 2) {
+      subPages.push(sentences.slice(i, i + 2).join('').trim());
+    }
+    return subPages;
+  };
+
+  const italianSubPages = useMemo(() => splitIntoSubPages(currentPage?.italian_text || ''), [currentPage]);
+  const englishSubPages = useMemo(() => splitIntoSubPages(currentPage?.english_text || ''), [currentPage]);
+
   useEffect(() => {
     // Sync store on change
-    updateStoryProgress(storyTitle, { currentPart: partIdx, currentPage: pageIdx });
+    updateStoryProgress(storyTitle, { currentPart: partIdx, currentPage: pageIdx, currentSubPage: subPageIdx });
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [partIdx, pageIdx, storyTitle, updateStoryProgress]);
+  }, [partIdx, pageIdx, subPageIdx, storyTitle, updateStoryProgress]);
+
+  // Reset subPageIdx when page changes from outside (e.g. restoration)
+  useEffect(() => {
+    if (progress.currentPage !== pageIdx) {
+       // Only reset if it's a different page than what's in progress
+       // but wait, progress is also updated by us.
+    }
+  }, [pageIdx]);
 
   // Reset page-specific state when moving pages
   useEffect(() => {
@@ -55,9 +129,9 @@ export const StoryReaderScreen: React.FC = () => {
     if (isCompleted) {
       // Pre-fill feedback as correct if already passed
       const newFeedback: Record<string, { type: 'correct' | 'incorrect', message?: string }> = {};
-      currentPage.questions.vocabulary.forEach((_, i) => newFeedback[`vocabulary_${i}`] = { type: 'correct' });
-      currentPage.questions.translation.forEach((_, i) => newFeedback[`translation_${i}`] = { type: 'correct' });
-      currentPage.questions.comprehension.forEach((_, i) => newFeedback[`comprehension_${i}`] = { type: 'correct' });
+      currentPage?.questions.vocabulary.forEach((_, i) => newFeedback[`vocabulary_${i}`] = { type: 'correct' });
+      currentPage?.questions.translation.forEach((_, i) => newFeedback[`translation_${i}`] = { type: 'correct' });
+      currentPage?.questions.comprehension.forEach((_, i) => newFeedback[`comprehension_${i}`] = { type: 'correct' });
       setFeedback(newFeedback);
     } else {
       setFeedback({});
@@ -112,7 +186,14 @@ export const StoryReaderScreen: React.FC = () => {
     return correctCount === totalQuestions;
   };
 
+  const isLastSubPage = subPageIdx === italianSubPages.length - 1;
+
   const handleNext = () => {
+    if (subPageIdx < italianSubPages.length - 1) {
+      setSubPageIdx(subPageIdx + 1);
+      return;
+    }
+
     if (!isPageComplete()) return;
 
     // Save page completion
@@ -123,6 +204,7 @@ export const StoryReaderScreen: React.FC = () => {
 
     if (pageIdx + 1 < totalPagesInPart) {
       setPageIndex(pageIdx + 1);
+      setSubPageIdx(0);
     } else if (partIdx + 1 < totalParts) {
       // Mark part as complete
       if (!progress.completedParts.includes(partIdx)) {
@@ -130,9 +212,33 @@ export const StoryReaderScreen: React.FC = () => {
       }
       setPartIndex(partIdx + 1);
       setPageIndex(0);
+      setSubPageIdx(0);
     } else {
       // Final quiz
       navigate(`/stories/${encodeURIComponent(storyTitle)}/quiz`);
+    }
+  };
+
+  const handleBack = () => {
+    if (subPageIdx > 0) {
+      setSubPageIdx(subPageIdx - 1);
+    } else if (pageIdx > 0) {
+      const prevPageIndex = pageIdx - 1;
+      const prevPage = currentPart?.pages[prevPageIndex];
+      const prevItalianSubPages = splitIntoSubPages(prevPage?.italian_text || '');
+      setPageIndex(prevPageIndex);
+      setSubPageIdx(prevItalianSubPages.length - 1);
+    } else if (partIdx > 0) {
+      const prevPartIndex = partIdx - 1;
+      const prevPart = story.parts[prevPartIndex];
+      const prevPageIndex = prevPart.pages.length - 1;
+      const prevPage = prevPart.pages[prevPageIndex];
+      const prevItalianSubPages = splitIntoSubPages(prevPage?.italian_text || '');
+      setPartIndex(prevPartIndex);
+      setPageIndex(prevPageIndex);
+      setSubPageIdx(prevItalianSubPages.length - 1);
+    } else {
+      navigate('/stories');
     }
   };
 
@@ -161,17 +267,20 @@ export const StoryReaderScreen: React.FC = () => {
             </span>
           )}
         </div>
+        <div style={{ marginTop: 8, fontSize: 12, color: colors.textSecondary, textAlign: 'right' }}>
+          Section {subPageIdx + 1} of {italianSubPages.length}
+        </div>
       </header>
 
       <div className="story-reader-layout">
         <div className="story-reader-text coffee-card">
           <p style={{ fontSize: 20, lineHeight: '1.6', color: colors.primary, margin: 0, whiteSpace: 'pre-wrap' }}>
-            {currentPage.italian_text}
+            {italianSubPages[subPageIdx]}
           </p>
           
           {showEnglish && (
             <div className="fade-in" style={{ marginTop: spacing.lg, paddingTop: spacing.lg, borderTop: `1px solid ${colors.border}`, color: colors.textSecondary, fontStyle: 'italic' }}>
-              {currentPage.english_text}
+              {englishSubPages[subPageIdx] || englishSubPages[englishSubPages.length - 1]}
             </div>
           )}
 
@@ -195,25 +304,73 @@ export const StoryReaderScreen: React.FC = () => {
           </button>
         </div>
 
-        <div className="story-reader-questions" style={{ display: 'flex', flexDirection: 'column', gap: spacing.xl }}>
-          {/* Vocabulary Questions */}
-          {currentPage.questions.vocabulary.length > 0 && (
-            <section>
-              <h3 style={{ color: colors.accent, textTransform: 'uppercase', fontSize: 14, letterSpacing: 1.2, marginBottom: spacing.md }}>Vocabulary</h3>
-              {currentPage.questions.vocabulary.map((q, i) => {
-                const key = `vocabulary_${i}`;
-                const f = feedback[key];
-                return (
-                  <div key={key} style={{ marginBottom: spacing.lg }}>
-                    <p style={{ fontWeight: 'bold', marginBottom: 8 }}>{q.question}</p>
-                    {f && f.type === 'correct' ? (
-                      <FeedbackMessage type="correct" message="Correct!" />
-                    ) : (
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.sm }}>
-                        <div style={{ display: 'flex', gap: spacing.sm }}>
-                          <input 
-                            type="text" 
-                            placeholder="Type answer..." 
+        {isLastSubPage && (
+          <div className="story-reader-questions" style={{ display: 'flex', flexDirection: 'column', gap: spacing.xl, marginTop: spacing.xl }}>
+            {/* Vocabulary Questions */}
+            {currentPage.questions.vocabulary.length > 0 && (
+              <section>
+                <h3 style={{ color: colors.accent, textTransform: 'uppercase', fontSize: 14, letterSpacing: 1.2, marginBottom: spacing.md }}>Vocabulary</h3>
+                {currentPage.questions.vocabulary.map((q, i) => {
+                  const key = `vocabulary_${i}`;
+                  const f = feedback[key];
+                  return (
+                    <div key={key} style={{ marginBottom: spacing.lg }}>
+                      <p style={{ fontWeight: 'bold', marginBottom: 8 }}>{q.question}</p>
+                      {f && f.type === 'correct' ? (
+                        <FeedbackMessage type="correct" message="Ottimo!" />
+                      ) : (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.sm }}>
+                          <div style={{ display: 'flex', gap: spacing.sm }}>
+                            <input 
+                              type="text" 
+                              placeholder="Type answer..." 
+                              value={answers[key] || ''}
+                              onChange={e => {
+                                setAnswers(prev => ({ ...prev, [key]: e.target.value }));
+                                if (f?.type === 'incorrect') {
+                                  setFeedback(prev => {
+                                    const next = { ...prev };
+                                    delete next[key];
+                                    return next;
+                                  });
+                                }
+                              }}
+                              style={{ flex: 1, padding: spacing.md, borderRadius: 12, border: `2px solid ${colors.border}`, outline: 'none' }}
+                            />
+                            <button 
+                              onClick={() => validateTyped(answers[key] || '', q.answer, 'vocabulary', i)}
+                              style={{ padding: '0 20px', borderRadius: 12, backgroundColor: colors.primary, color: '#fff', border: 'none', fontWeight: 'bold', cursor: 'pointer' }}
+                            >
+                              Check
+                            </button>
+                          </div>
+                          {f?.type === 'incorrect' && (
+                            <div style={{ color: colors.error, fontSize: 14, fontWeight: 'bold', marginLeft: 4 }}>{f.message}</div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </section>
+            )}
+
+            {/* Translation Questions */}
+            {currentPage.questions.translation.length > 0 && (
+              <section>
+                <h3 style={{ color: colors.accent, textTransform: 'uppercase', fontSize: 14, letterSpacing: 1.2, marginBottom: spacing.md }}>Translation</h3>
+                {currentPage.questions.translation.map((q, i) => {
+                  const key = `translation_${i}`;
+                  const f = feedback[key];
+                  return (
+                    <div key={key} style={{ marginBottom: spacing.lg }}>
+                      <p style={{ fontWeight: 'bold', marginBottom: 8 }}>{q.question}</p>
+                      {f && f.type === 'correct' ? (
+                        <FeedbackMessage type="correct" message="Ottimo!" />
+                      ) : (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.sm }}>
+                          <textarea 
+                            placeholder="Type translation..." 
                             value={answers[key] || ''}
                             onChange={e => {
                               setAnswers(prev => ({ ...prev, [key]: e.target.value }));
@@ -225,145 +382,73 @@ export const StoryReaderScreen: React.FC = () => {
                                 });
                               }
                             }}
-                            style={{ flex: 1, padding: spacing.md, borderRadius: 12, border: `2px solid ${colors.border}`, outline: 'none' }}
+                            style={{ padding: spacing.md, borderRadius: 12, border: `2px solid ${colors.border}`, outline: 'none', minHeight: 80, resize: 'none' }}
                           />
-                          <button 
-                            onClick={() => validateTyped(answers[key] || '', q.answer, 'vocabulary', i)}
-                            style={{ padding: '0 20px', borderRadius: 12, backgroundColor: colors.primary, color: '#fff', border: 'none', fontWeight: 'bold', cursor: 'pointer' }}
-                          >
-                            Check
-                          </button>
+                          <PrimaryButton label="Check" onPress={() => validateTyped(answers[key] || '', q.answer, 'translation', i)} disabled={!(answers[key] || '').trim()} />
+                          {f?.type === 'incorrect' && (
+                            <div style={{ color: colors.error, fontSize: 14, fontWeight: 'bold', marginTop: 4, textAlign: 'center' }}>{f.message}</div>
+                          )}
                         </div>
-                        {f?.type === 'incorrect' && (
-                          <div style={{ color: colors.error, fontSize: 14, fontWeight: 'bold', marginLeft: 4 }}>{f.message}</div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </section>
-          )}
+                      )}
+                    </div>
+                  );
+                })}
+              </section>
+            )}
 
-          {/* Translation Questions */}
-          {currentPage.questions.translation.length > 0 && (
-            <section>
-              <h3 style={{ color: colors.accent, textTransform: 'uppercase', fontSize: 14, letterSpacing: 1.2, marginBottom: spacing.md }}>Translation</h3>
-              {currentPage.questions.translation.map((q, i) => {
-                const key = `translation_${i}`;
-                const f = feedback[key];
-                return (
-                  <div key={key} style={{ marginBottom: spacing.lg }}>
-                    <p style={{ fontWeight: 'bold', marginBottom: 8 }}>{q.question}</p>
-                    {f && f.type === 'correct' ? (
-                      <FeedbackMessage type="correct" message="Correct!" />
-                    ) : (
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.sm }}>
-                        <textarea 
-                          placeholder="Type translation..." 
-                          value={answers[key] || ''}
-                          onChange={e => {
-                            setAnswers(prev => ({ ...prev, [key]: e.target.value }));
-                            if (f?.type === 'incorrect') {
-                              setFeedback(prev => {
-                                const next = { ...prev };
-                                delete next[key];
-                                return next;
-                              });
-                            }
-                          }}
-                          style={{ padding: spacing.md, borderRadius: 12, border: `2px solid ${colors.border}`, outline: 'none', minHeight: 80, resize: 'none' }}
-                        />
-                        <PrimaryButton label="Check" onPress={() => validateTyped(answers[key] || '', q.answer, 'translation', i)} disabled={!(answers[key] || '').trim()} />
-                        {f?.type === 'incorrect' && (
-                          <div style={{ color: colors.error, fontSize: 14, fontWeight: 'bold', marginTop: 4, textAlign: 'center' }}>{f.message}</div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </section>
-          )}
+            {/* Comprehension Questions */}
+            {currentPage.questions.comprehension.length > 0 && (
+              <section>
+                <h3 style={{ color: colors.accent, textTransform: 'uppercase', fontSize: 14, letterSpacing: 1.2, marginBottom: spacing.md }}>Comprehension</h3>
+                {currentPage.questions.comprehension.map((q, i) => (
+                  <ComprehensionQuestion 
+                    key={`comp_${i}`}
+                    q={q}
+                    index={i}
+                    storyTitle={story.title}
+                    partIdx={partIdx}
+                    pageIdx={pageIdx}
+                    feedback={feedback}
+                    validateComp={validateComp}
+                  />
+                ))}
+              </section>
+            )}
+            </div>
+            )}
+            </div>
 
-          {/* Comprehension Questions */}
-          {currentPage.questions.comprehension.length > 0 && (
-            <section>
-              <h3 style={{ color: colors.accent, textTransform: 'uppercase', fontSize: 14, letterSpacing: 1.2, marginBottom: spacing.md }}>Comprehension</h3>
-              {currentPage.questions.comprehension.map((q, i) => {
-                const key = `comprehension_${i}`;
-                const f = feedback[key];
-                const distractorKey = `${story.title}_${partIdx + 1}_${pageIdx + 1}_${i}`;
-                const distractors = (distractorsData as any)[distractorKey] || ["Distractor 1", "Distractor 2", "Distractor 3"];
-                const options = useMemo(() => shuffle([q.answer, ...distractors]), [q.answer, distractors]);
+            <div style={{
+            position: 'fixed',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            padding: spacing.lg,
+            paddingBottom: `calc(${spacing.lg}px + env(safe-area-inset-bottom))`,
+            backgroundColor: colors.surface,
+            borderTop: `2px solid ${colors.border}`,
+            display: 'flex',
+            gap: spacing.md,
+            maxWidth: 700,
+            margin: '0 auto',
+            zIndex: 50
+            }}>
+            <PrimaryButton
+            label={subPageIdx > 0 ? "Previous Section" : "Back"}
+            variant="secondary"
+            onPress={handleBack}
+            />
+            <PrimaryButton
+            label={
+            subPageIdx < italianSubPages.length - 1
+              ? "Next Section"
+              : (partIdx === totalParts - 1 && pageIdx === totalPagesInPart - 1 ? "Finish Story" : "Next Page")
+            }
+            onPress={handleNext}
+            disabled={isLastSubPage && !isPageComplete()}
+            />
+            </div>
 
-                return (
-                  <div key={key} style={{ marginBottom: spacing.lg }}>
-                    <p style={{ fontWeight: 'bold', marginBottom: 12 }}>{q.question}</p>
-                    {f ? (
-                      <FeedbackMessage type={f.type} message={f.type === 'correct' ? 'Correct!' : f.message} />
-                    ) : (
-                      <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.sm }}>
-                        {options.map(opt => (
-                          <button 
-                            key={opt}
-                            onClick={() => validateComp(opt, q.answer, i)}
-                            style={{ 
-                              padding: spacing.md, 
-                              textAlign: 'left', 
-                              borderRadius: 12, 
-                              border: `2px solid ${colors.border}`, 
-                              backgroundColor: '#fff',
-                              fontWeight: 'bold',
-                              color: colors.primary,
-                              cursor: 'pointer'
-                            }}
-                          >
-                            {opt}
-                          </button>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </section>
-          )}
-        </div>
-      </div>
-
-      <div style={{
-        position: 'fixed',
-        bottom: 0,
-        left: 0,
-        right: 0,
-        padding: spacing.lg,
-        paddingBottom: `calc(${spacing.lg}px + env(safe-area-inset-bottom))`,
-        backgroundColor: colors.surface,
-        borderTop: `2px solid ${colors.border}`,
-        display: 'flex',
-        gap: spacing.md,
-        maxWidth: 700,
-        margin: '0 auto',
-        zIndex: 50
-      }}>
-        <PrimaryButton 
-          label="Back" 
-          variant="secondary" 
-          onPress={() => {
-            if (pageIdx > 0) setPageIndex(pageIdx - 1);
-            else if (partIdx > 0) {
-              setPartIndex(partIdx - 1);
-              setPageIndex(story.parts[partIdx - 1].pages.length - 1);
-            } else navigate('/stories');
-          }} 
-        />
-        <PrimaryButton 
-          label={partIdx === totalParts - 1 && pageIdx === totalPagesInPart - 1 ? "Finish Story" : "Next Page"} 
-          onPress={handleNext}
-          disabled={!isPageComplete()}
-        />
-      </div>
     </Screen>
   );
 };

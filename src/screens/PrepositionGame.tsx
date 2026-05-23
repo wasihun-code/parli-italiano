@@ -11,10 +11,14 @@ import { ProgressBar } from '../components/ProgressBar';
 import { FeedbackMessage } from '../components/FeedbackMessage';
 import { ShortcutHelp } from '../components/ShortcutHelp';
 import { getWrongAnswerExplanation } from '@shared/utils/feedbackExplanations';
+import { useUserSettingsStore } from '../store/userSettingsStore';
+import { audioService } from '../lib/audioService';
 
 export const PrepositionGame: React.FC = () => {
   const navigate = useNavigate();
   const { prepositionGame, unlockLevel, updateHighScore } = useGameStore();
+  const { feedbackLanguage, soundEnabled } = useUserSettingsStore();
+  const isIt = feedbackLanguage === 'it';
   
   const [level, setLevel] = useState(1);
   const [gameState, setGameState] = useState<'lobby' | 'playing' | 'gameOver' | 'win'>('lobby');
@@ -46,24 +50,28 @@ export const PrepositionGame: React.FC = () => {
     if (currentIndex + 1 < sentencesForLevel.length) {
       setCurrentIndex(i => i + 1);
     } else {
+      if (soundEnabled) audioService.playComplete();
       setGameState('win');
       updateHighScore('prepositionGame', score);
       if (score >= 100 && level < 3) {
+        if (soundEnabled) audioService.playLevelUp();
         unlockLevel('prepositionGame', level + 1);
       }
     }
-  }, [currentIndex, sentencesForLevel.length, score, level, updateHighScore, unlockLevel]);
+  }, [currentIndex, sentencesForLevel.length, score, level, updateHighScore, unlockLevel, soundEnabled]);
 
   const handleCheck = useCallback(() => {
     if (feedback || !currentItem || !selectedOption) return;
 
     if (selectedOption === currentItem.correctPreposition) {
+      if (soundEnabled) audioService.playCorrect();
       setScore(s => s + 15);
       setFeedback({ isCorrect: true });
       setTimeout(() => {
         nextSentence();
       }, 800);
     } else {
+      if (soundEnabled) audioService.playIncorrect();
       setLives(l => l - 1);
       const explanation = getWrongAnswerExplanation({
         type: 'preposition',
@@ -71,7 +79,7 @@ export const PrepositionGame: React.FC = () => {
       });
       setFeedback({ isCorrect: false, explanation });
     }
-  }, [feedback, currentItem, selectedOption, nextSentence]);
+  }, [feedback, currentItem, selectedOption, nextSentence, soundEnabled]);
 
   useEffect(() => {
     if (lives <= 0) {
@@ -106,8 +114,8 @@ export const PrepositionGame: React.FC = () => {
     return (
       <Screen>
         <header style={{ marginBottom: spacing.xl }}>
-          <h1 style={{ color: colors.primary, fontSize: 32, margin: 0, fontWeight: 900 }}>Preposizioni</h1>
-          <p style={{ color: colors.textSecondary }}>Choose the correct preposition.</p>
+          <h1 style={{ color: colors.primary, fontSize: 32, margin: 0, fontWeight: 900 }}>{isIt ? 'Preposizioni' : 'Prepositions'}</h1>
+          <p style={{ color: colors.textSecondary }}>{isIt ? 'Scegli la preposizione corretta.' : 'Choose the correct preposition.'}</p>
         </header>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.lg }}>
@@ -118,6 +126,7 @@ export const PrepositionGame: React.FC = () => {
                 key={l}
                 disabled={!isUnlocked}
                 onClick={() => { 
+                  if (soundEnabled) audioService.playClick();
                   setLevel(l); setGameState('playing'); setScore(0); setLives(3); setCurrentIndex(0); 
                   setSelectedOption(null); setFeedback(null); setHintsLeft(3); setShowHint(false); 
                 }}
@@ -135,16 +144,16 @@ export const PrepositionGame: React.FC = () => {
                 }}
               >
                 <div>
-                  <h3 style={{ margin: 0, color: colors.primary }}>Level {l}</h3>
+                  <h3 style={{ margin: 0, color: colors.primary }}>{isIt ? 'Livello' : 'Level'} {l}</h3>
                   <p style={{ margin: 4, fontSize: 14, color: colors.textSecondary }}>
-                    {l === 1 ? 'Basic prepositions' : l === 2 ? 'City vs Country & Combinations' : 'Tricky & Idiomatic usage'}
+                    {l === 1 ? (isIt ? 'Preposizioni di base' : 'Basic prepositions') : l === 2 ? (isIt ? 'Città vs Nazione e Combinazioni' : 'City vs Country & Combinations') : (isIt ? 'Uso particolare e idiomatico' : 'Tricky & Idiomatic usage')}
                   </p>
                 </div>
                 {!isUnlocked && <span>🔒</span>}
               </button>
             );
           })}
-          <PrimaryButton label="Back to Games" onPress={() => navigate('/games')} variant="secondary" />
+          <PrimaryButton label={isIt ? "Torna ai Giochi" : "Back to Games"} onPress={() => navigate('/games')} variant="secondary" />
         </div>
       </Screen>
     );
@@ -154,10 +163,10 @@ export const PrepositionGame: React.FC = () => {
     return (
       <Screen style={{ justifyContent: 'center', textAlign: 'center' }}>
         <div className="card fade-in" style={{ padding: spacing.xl, display: 'flex', flexDirection: 'column', gap: spacing.md }}>
-          <h1 style={{ fontSize: 48 }}>{gameState === 'win' ? '🎉 Vittoria!' : '😢 Riprova!'}</h1>
-          <p style={{ fontSize: 24, color: colors.textSecondary }}>Final Score: {score} / 100</p>
-          <PrimaryButton label="Play Again" onPress={() => setGameState('lobby')} />
-          <PrimaryButton label="Exit" onPress={() => navigate('/games')} variant="secondary" />
+          <h1 style={{ fontSize: 48 }}>{gameState === 'win' ? (isIt ? '🎉 Vittoria!' : '🎉 Victory!') : (isIt ? '😢 Riprova!' : '😢 Try Again!')}</h1>
+          <p style={{ fontSize: 24, color: colors.textSecondary }}>{isIt ? 'Punteggio Finale' : 'Final Score'}: {score} / 100</p>
+          <PrimaryButton label={isIt ? "Gioca Ancora" : "Play Again"} onPress={() => setGameState('lobby')} />
+          <PrimaryButton label={isIt ? "Esci" : "Exit"} onPress={() => navigate('/games')} variant="secondary" />
         </div>
       </Screen>
     );
@@ -170,11 +179,11 @@ export const PrepositionGame: React.FC = () => {
       <header style={{ display: 'flex', flexDirection: 'column', gap: spacing.sm, marginBottom: spacing.xl }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ fontSize: 18, fontWeight: 900, color: colors.primary, display: 'flex', alignItems: 'center' }}>
-            Level {level}
+            {isIt ? 'Livello' : 'Level'} {level}
             <ShortcutHelp />
           </div>
           <div style={{ display: 'flex', gap: spacing.md }}>
-            <div style={{ color: colors.accent, fontWeight: 900 }}>Score: {score} / 100</div>
+            <div style={{ color: colors.accent, fontWeight: 900 }}>{isIt ? 'Punteggio' : 'Score'}: {score} / 100</div>
             <div style={{ color: colors.error }}>{'❤️'.repeat(lives)}</div>
           </div>
         </div>
@@ -192,7 +201,7 @@ export const PrepositionGame: React.FC = () => {
               color: colors.onPrimary, fontWeight: 'bold', cursor: hintsLeft > 0 ? 'pointer' : 'default', opacity: hintsLeft > 0 ? 1 : 0.5
             }}
           >
-            Translate ({hintsLeft} left)
+            {isIt ? 'Traduci' : 'Translate'} ({hintsLeft} {isIt ? 'rimasti' : 'left'})
           </button>
         </div>
 
@@ -229,9 +238,9 @@ export const PrepositionGame: React.FC = () => {
                 );
               })}
             </div>
-            <PrimaryButton label="Check" onPress={handleCheck} disabled={!selectedOption} />
+            <PrimaryButton label={isIt ? "Controlla" : "Check"} onPress={handleCheck} disabled={!selectedOption} />
             <p style={{ textAlign: 'center', color: colors.textSecondary, fontSize: 14, margin: 0, fontWeight: 800 }}>
-              Tip: Press 1-4 to select, Enter to submit
+              {isIt ? 'Suggerimento: Premi 1-4 per selezionare, Invio per inviare' : 'Tip: Press 1-4 to select, Enter to submit'}
             </p>
           </div>
         ) : (
@@ -240,10 +249,10 @@ export const PrepositionGame: React.FC = () => {
               type={feedback.isCorrect ? 'correct' : 'incorrect'} 
               message={
                 feedback.isCorrect 
-                  ? 'Correct!' 
+                  ? (isIt ? 'Corretto!' : 'Correct!') 
                   : (
                     <>
-                      <div>Incorrect</div>
+                      <div>{isIt ? 'Non corretto' : 'Incorrect'}</div>
                       <div style={{ marginTop: spacing.sm, fontSize: 14, fontWeight: 'normal', color: colors.textSecondary }}>
                         {feedback.explanation}
                       </div>
@@ -251,16 +260,23 @@ export const PrepositionGame: React.FC = () => {
                   )
               }
             />
-            {!feedback.isCorrect && <PrimaryButton label="Next" onPress={nextSentence} />}
+            {!feedback.isCorrect && (
+              <div className="card" style={{ marginBottom: spacing.md, padding: spacing.md }}>
+                <p style={{ margin: 0, fontSize: 14, color: colors.textSecondary }}>{isIt ? 'Risposta corretta:' : 'Correct answer:'}</p>
+                <p style={{ margin: '4px 0 0 0', fontWeight: 'bold', fontSize: 18 }}>{currentItem.correctPreposition}</p>
+                <p style={{ margin: '8px 0 0 0', fontSize: 16, color: colors.primary }}>{currentItem.english}</p>
+              </div>
+            )}
+            <PrimaryButton label={isIt ? "Avanti" : "Next"} onPress={nextSentence} />
             <p style={{ textAlign: 'center', color: colors.textSecondary, fontSize: 14, margin: 0, marginTop: 8, fontWeight: 800 }}>
-              Tip: Press Enter to continue
+              {isIt ? 'Suggerimento: Premi Invio per continuare' : 'Tip: Press Enter to continue'}
             </p>
           </div>
         )}
       </div>
 
       <div style={{ marginTop: 'auto' }}>
-        <PrimaryButton label="Quit" onPress={() => setGameState('lobby')} variant="secondary" />
+        <PrimaryButton label={isIt ? "Esci" : "Quit"} onPress={() => setGameState('lobby')} variant="secondary" />
       </div>
     </Screen>
   );

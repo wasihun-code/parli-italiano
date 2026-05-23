@@ -12,6 +12,7 @@ interface SubscriptionState {
   error: string | null;
   fetchStatus: () => Promise<void>;
   setPlan: (plan: PlanType, isValid: boolean) => void;
+  forcePremiumForTesting: () => void;
 }
 
 export const useSubscriptionStore = create<SubscriptionState>()(
@@ -24,6 +25,13 @@ export const useSubscriptionStore = create<SubscriptionState>()(
       fetchStatus: async () => {
         set({ isLoading: true, error: null });
         try {
+          // Check for URL param or localStorage flag for testing
+          const isDevPremium = localStorage.getItem('premium_test') === 'true' || window.location.search.includes('premium=true');
+          if (isDevPremium) {
+            set({ plan: 'premium', isValid: true, isLoading: false });
+            return;
+          }
+
           const status = await apiClient.getSubscriptionStatus();
           set({ plan: status.plan, isValid: status.is_valid, isLoading: false });
         } catch (err: any) {
@@ -31,6 +39,7 @@ export const useSubscriptionStore = create<SubscriptionState>()(
         }
       },
       setPlan: (plan, isValid) => set({ plan, isValid }),
+      forcePremiumForTesting: () => set({ plan: 'premium', isValid: true }),
     }),
     {
       name: 'parla-italiano-subscription',

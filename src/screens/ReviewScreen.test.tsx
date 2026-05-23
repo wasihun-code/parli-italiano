@@ -19,12 +19,12 @@ describe('ReviewScreen', () => {
 
   it('shows the empty state when no items are due', () => {
     renderWithRouter(<ReviewScreen />);
-    expect(screen.getByText('Nothing to review right now - come back later!')).toBeInTheDocument();
+    expect(screen.getByText('Ripasso completato')).toBeInTheDocument();
   });
 
   it('shows stats even when empty', () => {
     renderWithRouter(<ReviewScreen />);
-    expect(screen.getByText('0 learned / 0 total')).toBeInTheDocument();
+    expect(screen.getByText('0 imparati / 0 totali')).toBeInTheDocument();
   });
 
   it('displays a due item on the flashcard', () => {
@@ -38,17 +38,17 @@ describe('ReviewScreen', () => {
     useSrsStore.setState(state => ({
       items: {
         ...state.items,
-        i1: { ...state.items['i1'], dueAt: new Date(Date.now() - 10_000).toISOString() },
+        i1: { ...state.items['i1'], learned: true, dueAt: new Date(Date.now() - 10_000).toISOString() },
       },
     }));
 
     renderWithRouter(<ReviewScreen />);
-    // Italian side shown first
-    expect(screen.getByText('grazie')).toBeInTheDocument();
-    expect(screen.getByText('Italian')).toBeInTheDocument();
+    // English side shown first by default (Task 7 reverse order)
+    expect(screen.getByText('thank you')).toBeInTheDocument();
+    expect(screen.getByText('Inglese')).toBeInTheDocument();
   });
 
-  it('flips the card to show English on click', () => {
+  it('flips the card to show Italian on click', () => {
     useSrsStore.getState().registerItem({
       id: 'i1',
       type: 'vocabulary',
@@ -58,15 +58,15 @@ describe('ReviewScreen', () => {
     useSrsStore.setState(state => ({
       items: {
         ...state.items,
-        i1: { ...state.items['i1'], dueAt: new Date(Date.now() - 10_000).toISOString() },
+        i1: { ...state.items['i1'], learned: true, dueAt: new Date(Date.now() - 10_000).toISOString() },
       },
     }));
 
     renderWithRouter(<ReviewScreen />);
     // Click the card to flip
-    fireEvent.click(screen.getByText('grazie'));
-    expect(screen.getByText('thank you')).toBeInTheDocument();
-    expect(screen.getByText('Translation')).toBeInTheDocument();
+    fireEvent.click(screen.getByText('thank you'));
+    expect(screen.getByText('grazie')).toBeInTheDocument();
+    expect(screen.getByText('Italiano')).toBeInTheDocument();
   });
 
   it('records a correct answer and updates streak', () => {
@@ -79,13 +79,13 @@ describe('ReviewScreen', () => {
     useSrsStore.setState(state => ({
       items: {
         ...state.items,
-        i1: { ...state.items['i1'], dueAt: new Date(Date.now() - 10_000).toISOString() },
+        i1: { ...state.items['i1'], learned: true, dueAt: new Date(Date.now() - 10_000).toISOString() },
       },
     }));
 
     renderWithRouter(<ReviewScreen />);
-    fireEvent.click(screen.getByText('grazie'));
-    fireEvent.click(screen.getByText('REMEMBERED'));
+    fireEvent.click(screen.getByText('thank you'));
+    fireEvent.click(screen.getByText('RICORDATO'));
 
     expect(useSrsStore.getState().items['i1'].correctStreak).toBe(1);
     expect(useSrsStore.getState().items['i1'].attempts).toBe(1);
@@ -103,13 +103,13 @@ describe('ReviewScreen', () => {
     useSrsStore.setState(state => ({
       items: {
         ...state.items,
-        i1: { ...state.items['i1'], dueAt: new Date(Date.now() - 10_000).toISOString() },
+        i1: { ...state.items['i1'], learned: true, dueAt: new Date(Date.now() - 10_000).toISOString() },
       },
     }));
 
     renderWithRouter(<ReviewScreen />);
-    fireEvent.click(screen.getByText('grazie'));
-    fireEvent.click(screen.getByText('FORGOT'));
+    fireEvent.click(screen.getByText('thank you'));
+    fireEvent.click(screen.getByText('DIMENTICATO'));
 
     expect(useSrsStore.getState().items['i1'].correctStreak).toBe(0);
   });

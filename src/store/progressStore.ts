@@ -18,6 +18,7 @@ export type ScenarioPhaseProgress = {
   sentenceScore: number;
   sentenceCompleted: boolean;
   conversationUnlocked: boolean;
+  skipTestUsed?: boolean;
 };
 
 type ProgressState = {
@@ -36,9 +37,11 @@ type ProgressState = {
   setScenarioVocabularyCompleted: (scenarioId: number, completed: boolean) => void;
   setScenarioPhraseScore: (scenarioId: number, score: number) => void;
   setScenarioSentenceScore: (scenarioId: number, score: number) => void;
+  setSkipTestUsed: (scenarioId: number, used: boolean) => void;
   addXP: (amount: number) => void;
   updateStreak: () => Promise<void>;
   syncWithBackend: () => Promise<void>;
+  resetProgress: () => void;
 };
 
 export const emptyScenarioProgress: ScenarioPhaseProgress = {
@@ -48,6 +51,7 @@ export const emptyScenarioProgress: ScenarioPhaseProgress = {
   sentenceScore: 0,
   sentenceCompleted: false,
   conversationUnlocked: false,
+  skipTestUsed: false,
 };
 
 function resolveScenarioProgress(
@@ -80,7 +84,28 @@ export const useProgressStore = create<ProgressState>()(
       awardedStreakMilestones: [],
       foundationScores: {},
       scenarioProgress: {},
-      addXP: (amount) => set((state) => ({ xp: state.xp + amount })),
+      addXP: (amount) => {
+        set((state) => ({ xp: Math.max(0, state.xp + amount) }));
+        get().syncWithBackend().catch(() => {});
+      },
+      setSkipTestUsed: (scenarioId, used) => {
+        set(state => {
+          const existing = resolveScenarioProgress(
+            state.scenarioProgress,
+            scenarioId,
+          );
+          return {
+            scenarioProgress: {
+              ...state.scenarioProgress,
+              [scenarioId]: {
+                ...existing,
+                skipTestUsed: used,
+              },
+            },
+          };
+        });
+        get().syncWithBackend().catch(() => {});
+      },
       updateStreak: async () => {
         const today = new Date().toISOString().split('T')[0];
         const { lastActivityDate, streak, awardedStreakMilestones, xp } = get();
@@ -127,6 +152,18 @@ export const useProgressStore = create<ProgressState>()(
         // Assuming 'it' for Italian as the default language
         await apiClient.batchSync(data, 'it');
       },
+      resetProgress: () => {
+        set({
+          xp: 0,
+          streak: 0,
+          lastActivityDate: '',
+          streakFreezesUsed: 0,
+          streakFreezeLimit: 0,
+          awardedStreakMilestones: [],
+          foundationScores: {},
+          scenarioProgress: {},
+        });
+      },
       recordFoundationScore: (lessonId, score) => {
         const previousScore = get().foundationScores[lessonId] ?? 0;
         const nextScore = Math.max(previousScore, score);
@@ -140,6 +177,7 @@ export const useProgressStore = create<ProgressState>()(
         if (nextScore >= 90 && previousScore < 90) {
           trackFoundationLessonCompleted(lessonId, nextScore).catch(() => undefined);
         }
+        get().syncWithBackend().catch(() => {});
       },
       resetFoundationLesson: lessonId =>
         set(state => {
@@ -174,6 +212,7 @@ export const useProgressStore = create<ProgressState>()(
           trackScenarioVocabularyCompleted(scenarioId).catch(() => undefined);
           get().updateStreak().catch(() => undefined);
         }
+        get().syncWithBackend().catch(() => {});
       },
       setScenarioPhraseScore: (scenarioId, score) => {
         const previous = get().scenarioProgress[scenarioId];
@@ -197,6 +236,7 @@ export const useProgressStore = create<ProgressState>()(
         if (score >= 85 && !previous?.phraseCompleted) {
           trackScenarioPhraseCompleted(scenarioId, score).catch(() => undefined);
         }
+        get().syncWithBackend().catch(() => {});
       },
       setScenarioSentenceScore: (scenarioId, score) => {
         const previous = get().scenarioProgress[scenarioId];
@@ -220,6 +260,7 @@ export const useProgressStore = create<ProgressState>()(
         if (score >= 80 && !previous?.sentenceCompleted) {
           trackScenarioSentenceCompleted(scenarioId, score).catch(() => undefined);
         }
+        get().syncWithBackend().catch(() => {});
       },
     }),
     {
