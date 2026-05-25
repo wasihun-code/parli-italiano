@@ -1,104 +1,522 @@
 [
   {
-    "id": "s31-s5",
-    "italian": "Senza panna, grazie.",
-    "english": "Without cream, thank you.",
+    "id": "s22-s1",
+    "italian": "\"Buonasera! Vorrei un gelato. Che gusti avete oggi?\" \"Abbiamo cioccolato, pistacchio, fragola e il gusto del mese.\"",
+    "english": "\"Good evening! I'd like a gelato. What flavors do you have today?\" \"We have chocolate, pistachio, strawberry, and the flavor of the month.\"",
     "type": "sentence",
-    "choices": [
-      "Mi dà una coppetta alla fragola?",
-      "Il pistacchio di Bronte è delizioso.",
-      "Senza panna, grazie.",
-      "È possibile avere tre gusti in questo cono?"
+    "choicesItalian": [
+      "\"Buonasera! Vorrei un gelato. Che gusti avete oggi?\" \"Abbiamo cioccolato, pistacchio, fragola e il gusto del mese.\"",
+      "\"Ciao. Dove vai stasera?\" \"Vado al bar con un vecchio amico.\"",
+      "\"Salve. Chi ha vinto ieri?\" \"La squadra del borgo rari.\"",
+      "\"Buonasera. Quando chiude il bar?\" \"Tra un'ora esatta.\""
     ],
-    "correctAnswer": "Senza panna, grazie.",
+    "choicesEnglish": [
+      "\"Good evening! I'd like a gelato. What flavors do you have today?\" \"We have chocolate, pistachio, strawberry, and the flavor of the month.\"",
+      "\"Hi. Where are you going tonight?\" \"I'm going to the bar with an old friend.\"",
+      "\"Hello. Who won yesterday?\" \"The team from the rare village.\"",
+      "\"Good evening. When does the bar close?\" \"In exactly one hour.\""
+    ],
+    "correctAnswerItalian": "\"Buonasera! Vorrei un gelato. Che gusti avete oggi?\" \"Abbiamo cioccolato, pistacchio, fragola e il gusto del mese.\"",
+    "correctAnswerEnglish": "\"Good evening! I'd like a gelato. What flavors do you have today?\" \"We have chocolate, pistachio, strawberry, and the flavor of the month.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Senza panna, grazie.\"."
+      "correctItalian": "Ottimo! Una classica interazione iniziale in gelateria.",
+      "incorrectItalian": "No, questa conversazione descrive la richiesta dei gusti disponibili.",
+      "correctEnglish": "Great! A classic initial interaction at a gelato shop.",
+      "incorrectEnglish": "No, this conversation describes requesting the available flavors."
     }
   },
   {
-    "id": "s31-s2",
-    "italian": "Mi dà una coppetta alla fragola?",
-    "english": "Can I have a strawberry cup?",
+    "id": "s22-s2",
+    "italian": "\"Com'è il gusto del mese?\" \"È molto buono, ha pezzetti di fichi veri. Vuole assaggiarlo?\"",
+    "english": "\"How is the flavor of the month?\" \"It's very good, it has pieces of real figs. Do you want to taste it?\"",
     "type": "sentence",
-    "choices": [
-      "È possibile avere tre gusti in questo cono?",
-      "Mi dà una coppetta alla fragola?",
-      "Senza panna, grazie.",
-      "Il pistacchio di Bronte è delizioso."
+    "choicesItalian": [
+      "\"Com'è il gusto del mese?\" \"È molto buono, ha pezzetti di fichi veri. Vuole assaggiarlo?\"",
+      "\"Chi è il re del porto?\" \"È molto saggio, ha borse di baci rari. Vuole ridere?\"",
+      "\"Dove è la via del bar?\" \"È molto sporca, ha pezzi di fango nero. Vuole correre?\"",
+      "\"Quando è la news della gita?\" \"È molto finta, ha note di news falsa. Vuole gridare?\""
     ],
-    "correctAnswer": "Mi dà una coppetta alla fragola?",
+    "choicesEnglish": [
+      "\"How is the flavor of the month?\" \"It's very good, it has pieces of real figs. Do you want to taste it?\"",
+      "\"Who is the king of the port?\" \"He is very wise, he has bags of rare kisses. Do you want to laugh?\"",
+      "\"Where is the street of the bar?\" \"It's very dirty, it has pieces of black mud. Do you want to run?\"",
+      "\"When is the news of the trip?\" \"It's very fake, it has notes of fake news. Do you want to shout?\""
+    ],
+    "correctAnswerItalian": "\"Com'è il gusto del mese?\" \"È molto buono, ha pezzetti di fichi veri. Vuole assaggiarlo?\"",
+    "correctAnswerEnglish": "\"What's the flavor of the month like?\" \"It's very good, it has pieces of real figs. Do you want to taste it?\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi dà una coppetta alla fragola?\"."
+      "correctItalian": "Esatto! Chiedere informazioni sulla specialità e ricevere l'offerta di un assaggio.",
+      "incorrectItalian": "No, si parla della descrizione e della prova del gusto del mese.",
+      "correctEnglish": "Exactly! Asking for info on the specialty and receiving an offer for a sample.",
+      "incorrectEnglish": "No, it's about the description and tasting of the flavor of the month."
     }
   },
   {
-    "id": "s31-s3",
-    "italian": "Il pistacchio di Bronte è delizioso.",
-    "english": "The pistachio from Bronte is delicious.",
+    "id": "s22-s3",
+    "italian": "\"Prendo un cono piccolo con due gusti.\" \"Perfetto, fichi e noci e cioccolato. Senza panna?\"",
+    "english": "\"I'll take a small cone with two flavors.\" \"Perfect, figs and walnuts and chocolate. Without cream?\"",
     "type": "sentence",
-    "choices": [
-      "È possibile avere tre gusti in questo cono?",
-      "Prendo un cono con cioccolato e pistacchio.",
-      "Il pistacchio di Bronte è delizioso.",
-      "Mi dà una coppetta alla fragola?"
+    "choicesItalian": [
+      "\"Prendo un cono piccolo con due gusti.\" \"Perfetto, fichi e noci e cioccolato. Senza panna?\"",
+      "\"Perdo una via sporca con due borse.\" \"Falso, fango e baci e news. Senza re?\"",
+      "\"Vedo una news finta con due re.\" \"Vero, baci e note e gite. Senza tour?\"",
+      "\"Chiamo un porto rari con due tour.\" \"No, gita e piazza e via. Senza conto?\""
     ],
-    "correctAnswer": "Il pistacchio di Bronte è delizioso.",
+    "choicesEnglish": [
+      "\"I'll take a small cone with two flavors.\" \"Perfect, figs and walnuts and chocolate. Without cream?\"",
+      "\"I lose a dirty street with two bags.\" \"False, mud and kisses and news. Without a king?\"",
+      "\"I see a fake news with two kings.\" \"True, kisses and notes and trips. Without a tour?\"",
+      "\"I call a rare port with two tours.\" \"No, trip and square and street. Without a bill?\""
+    ],
+    "correctAnswerItalian": "\"Prendo un cono piccolo con due gusti.\" \"Perfetto, fichi e noci e cioccolato. Senza panna?\"",
+    "correctAnswerEnglish": "\"I'll take a small cone with two flavors.\" \"Perfect, figs and walnuts and chocolate. No cream?\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Il pistacchio di Bronte è delizioso.\"."
+      "correctItalian": "Giusto! Definire l'ordine del gelato e precisare l'assenza della guarnizione.",
+      "incorrectItalian": "No, questa conversazione descrive la scelta della taglia e dei sapori.",
+      "correctEnglish": "Right! Defining the gelato order and specifying the absence of topping.",
+      "incorrectEnglish": "No, this conversation describes choosing the size and flavors."
     }
   },
   {
-    "id": "s31-s4",
-    "italian": "Vorrei assaggiare il gusto del mese.",
-    "english": "I would like to taste the flavor of the month.",
+    "id": "s22-s4",
+    "italian": "\"Per la bambina un cono piccolo, cioccolato e fragola.\" \"E per lei, signora?\" \"Coppetta media pistacchio e stracciatella.\"",
+    "english": "\"For the little girl a small cone, chocolate and strawberry.\" \"And for you, ma'am?\" \"Medium cup pistachio and stracciatella.\"",
     "type": "sentence",
-    "choices": [
-      "È possibile avere tre gusti in questo cono?",
-      "Senza panna, grazie.",
-      "Vorrei assaggiare il gusto del mese.",
-      "Mi dà una coppetta alla fragola?"
+    "choicesItalian": [
+      "\"Per la bambina un cono piccolo, cioccolato e fragola.\" \"E per lei, signora?\" \"Coppetta media pistacchio e stracciatella.\"",
+      "\"Per la via una borsa sporca, fango e bacio.\" \"E per te, porto?\" \"Cassa raria news e nota.\"",
+      "\"Per il re una news finta, bacio e re.\" \"E per lui, torre?\" \"Gita lunga tour e piazza.\"",
+      "\"Per la gita un tour saggio, via e porto.\" \"E per noi, cassa?\" \"Prezzo caro debito e fischio.\""
     ],
-    "correctAnswer": "Vorrei assaggiare il gusto del mese.",
+    "choicesEnglish": [
+      "\"For the little girl a small cone, chocolate and strawberry.\" \"And for you, ma'am?\" \"Medium cup pistachio and stracciatella.\"",
+      "\"For the street a dirty bag, mud and kiss.\" \"And for you, port?\" \"Rare register news and note.\"",
+      "\"For the king a fake news, kiss and king.\" \"And for him, tower?\" \"Long trip tour and square.\"",
+      "\"For the trip a wise tour, street and port.\" \"And for us, register?\" \"Expensive price debt and whistle.\""
+    ],
+    "correctAnswerItalian": "\"Per la bambina un cono piccolo, cioccolato e fragola.\" \"E per lei, signora?\" \"Coppetta media pistacchio e stracciatella.\"",
+    "correctAnswerEnglish": "\"For the little girl a small cone, chocolate and strawberry.\" \"And for you, ma'am?\" \"Medium cup pistachio and stracciatella.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Vorrei assaggiare il gusto del mese.\"."
+      "correctItalian": "Ottimo! Gestire un'ordinazione multipla per due persone diverse.",
+      "incorrectItalian": "No, si parla delle diverse scelte di formati e gusti tra madre e figlia.",
+      "correctEnglish": "Great! Managing a multiple order for two different people.",
+      "incorrectEnglish": "No, it's about the different choices of sizes and flavors between mother and daughter."
     }
   },
   {
-    "id": "s31-s6",
-    "italian": "È possibile avere tre gusti in questo cono?",
-    "english": "Is it possible to have three flavors in this cone?",
+    "id": "s22-s5",
+    "italian": "\"Vi faccio anche un po' di cioccolato fuso sopra?\" \"Sì, ma solo un pochino per la bambina, grazie.\"",
+    "english": "\"Shall I also add some melted chocolate on top?\" \"Yes, but just a little bit for the little girl, thanks.\"",
     "type": "sentence",
-    "choices": [
-      "Mi dà una coppetta alla fragola?",
-      "Il pistacchio di Bronte è delizioso.",
-      "È possibile avere tre gusti in questo cono?",
-      "Vorrei assaggiare il gusto del mese."
+    "choicesItalian": [
+      "\"Vi faccio anche un po' di cioccolato fuso sopra?\" \"Sì, ma solo un pochino per la bambina, grazie.\"",
+      "\"Vi perdo anche un po' di borsa sporca sotto?\" \"No, ma solo un metro per la via, prego.\"",
+      "\"Vi rido anche un po' di news finta prima?\" \"Vero, ma solo un bacio per il re, salve.\"",
+      "\"Vi corro anche un po' di gita lunga dopo?\" \"Falso, ma solo un tour per il porto, ciao.\""
     ],
-    "correctAnswer": "È possibile avere tre gusti in questo cono?",
+    "choicesEnglish": [
+      "\"Shall I also add some melted chocolate on top?\" \"Yes, but just a little bit for the little girl, thanks.\"",
+      "\"Do I also lose for you a bit of dirty bag underneath?\" \"No, but only a meter for the street, please.\"",
+      "\"Do I also laugh for you a bit of fake news before?\" \"True, but only a kiss for the king, hello.\"",
+      "\"Do I also run for you a bit of long trip after?\" \"False, but only a tour for the port, bye.\""
+    ],
+    "correctAnswerItalian": "\"Vi faccio anche un po' di cioccolato fuso sopra?\" \"Sì, ma solo un pochino per la bambina, grazie.\"",
+    "correctAnswerEnglish": "\"Shall I also add some melted chocolate on top?\" \"Yes, but just a little bit for the little girl, thanks.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"È possibile avere tre gusti in questo cono?\"."
+      "correctItalian": "Esatto! Accettare l'aggiunta golosa limitandone la quantità per motivi di salute o pulizia.",
+      "incorrectItalian": "No, questa conversazione descrive la personalizzazione del cono con cioccolato liquido.",
+      "correctEnglish": "Exactly! Accepting the tasty addition while limiting its quantity for health or cleanliness reasons.",
+      "incorrectEnglish": "No, this conversation describes customizing the cone with liquid chocolate."
     }
   },
   {
-    "id": "s31-s1",
-    "italian": "Prendo un cono con cioccolato e pistacchio.",
-    "english": "I'll take a cone with chocolate and pistachio.",
+    "id": "s22-s6",
+    "italian": "\"Quali gusti avete alla frutta senza latte?\" \"Abbiamo fragola, limone, mango e lampone.\"",
+    "english": "\"What fruit flavors do you have without milk?\" \"We have strawberry, lemon, mango, and raspberry.\"",
     "type": "sentence",
-    "choices": [
-      "Senza panna, grazie.",
-      "Prendo un cono con cioccolato e pistacchio.",
-      "Il pistacchio di Bronte è delizioso.",
-      "Vorrei assaggiare il gusto del mese."
+    "choicesItalian": [
+      "\"Quali gusti avete alla frutta senza latte?\" \"Abbiamo fragola, limone, mango e lampone.\"",
+      "\"Quali borse avete alla via senza fango?\" \"Abbiamo nera, russa, sporca e cara.\"",
+      "\"Quali news avete alla news senza re?\" \"Abbiamo finta, vera, raria e nota.\"",
+      "\"Quali gite avete alla gita senza tour?\" \"Abbiamo lunga, breve, saggia e nuova.\""
     ],
-    "correctAnswer": "Prendo un cono con cioccolato e pistacchio.",
+    "choicesEnglish": [
+      "\"What fruit flavors do you have without milk?\" \"We have strawberry, lemon, mango, and raspberry.\"",
+      "\"What bags do you have on the street without mud?\" \"We have black, Russian, dirty, and expensive.\"",
+      "\"What news do you have on the news without a king?\" \"We have fake, true, rare, and known.\"",
+      "\"What trips do you have on the trip without a tour?\" \"We have long, short, wise, and new.\""
+    ],
+    "correctAnswerItalian": "\"Quali gusti avete alla frutta senza latte?\" \"Abbiamo fragola, limone, mango e lampone.\"",
+    "correctAnswerEnglish": "\"What fruit flavors do you have without milk?\" \"We have strawberry, lemon, mango, and raspberry.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Prendo un cono con cioccolato e pistacchio.\"."
+      "correctItalian": "Giusto! Chiedere opzioni per chi non può mangiare latticini e conoscere i sorbetti disponibili.",
+      "incorrectItalian": "No, si parla della selezione di gusti a base d'acqua.",
+      "correctEnglish": "Right! Asking for options for those who cannot eat dairy and knowing the available sorbets.",
+      "incorrectEnglish": "No, it's about the selection of water-based flavors."
+    }
+  },
+  {
+    "id": "s22-s7",
+    "italian": "\"Il cioccolato fuso contiene latte?\" \"No, è puro cioccolato fondente, glielo metto?\"",
+    "english": "\"Does the melted chocolate contain milk?\" \"No, it's pure dark chocolate, shall I add it?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il cioccolato fuso contiene latte?\" \"No, è puro cioccolato fondente, glielo metto?\"",
+      "\"Il fango sporco contiene borsa?\" \"Sì, è pura via nera, gliela perdo?\"",
+      "\"Il bacio finto contiene news?\" \"No, è pura nota raria, gliela rido?\"",
+      "\"Il tour lungo contiene gita?\" \"Sì, è pura piazza saggia, gliela corro?\""
+    ],
+    "choicesEnglish": [
+      "\"Does the melted chocolate contain milk?\" \"No, it's pure dark chocolate, shall I add it?\"",
+      "\"Does the dirty mud contain a bag?\" \"Yes, it's pure black street, shall I lose it for you?\"",
+      "\"Does the fake kiss contain news?\" \"No, it's pure rare note, shall I laugh at it for you?\"",
+      "\"Does the long tour contain a trip?\" \"Yes, it's pure wise square, shall I run it for you?\""
+    ],
+    "correctAnswerItalian": "\"Il cioccolato fuso contiene latte?\" \"No, è puro cioccolato fondente, glielo metto?\"",
+    "correctAnswerEnglish": "\"Does the melted chocolate contain milk?\" \"No, it's pure dark chocolate, shall I add it?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Verificare la presenza di allergeni in una guarnizione specifica.",
+      "incorrectItalian": "No, questa conversazione chiarisce la natura vegetale del cioccolato liquido.",
+      "correctEnglish": "Great! Verifying the presence of allergens in a specific topping.",
+      "incorrectEnglish": "No, this conversation clarifies the plant-based nature of the liquid chocolate."
+    }
+  },
+  {
+    "id": "s22-s8",
+    "italian": "\"Il pistacchio di Bronte ha latte?\" \"Sì, è una crema con latte. Per lei meglio evitare.\"",
+    "english": "\"Does the Bronte pistachio have milk?\" \"Yes, it's a cream with milk. Better for you to avoid it.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il pistacchio di Bronte ha latte?\" \"Sì, è una crema con latte. Per lei meglio evitare.\"",
+      "\"Il fango di via ha borsa?\" \"No, è una via con fango. Per te meglio correre.\"",
+      "\"Il bacio di re ha news?\" \"Sì, è una news con bacio. Per lui meglio ridere.\"",
+      "\"Il tour di porto ha gita?\" \"No, è una gita con tour. Per noi meglio tacere.\""
+    ],
+    "choicesEnglish": [
+      "\"Does the Bronte pistachio have milk?\" \"Yes, it's a cream with milk. Better for you to avoid it.\"",
+      "\"Does the street mud have a bag?\" \"No, it's a street with mud. Better for you to run.\"",
+      "\"Does the king's kiss have news?\" \"Yes, it's a news with a kiss. Better for him to laugh.\"",
+      "\"Does the port tour have a trip?\" \"No, it's a trip with a tour. Better for us to be silent.\""
+    ],
+    "correctAnswerItalian": "\"Il pistacchio di Bronte ha latte?\" \"Sì, è una crema con latte. Per lei meglio evitare.\"",
+    "correctAnswerEnglish": "\"Does the Bronte pistachio have milk?\" \"Yes, it's a cream with milk. Better for you to avoid it.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Ricevere un avvertimento utile per la propria salute alimentare.",
+      "incorrectItalian": "No, specifica che quel gusto pregiato non è adatto agli intolleranti al latte.",
+      "correctEnglish": "Exactly! Receiving a useful warning for your dietary health.",
+      "incorrectEnglish": "No, it specifies that that premium flavor is not suitable for those intolerant to milk."
+    }
+  },
+  {
+    "id": "s22-s9",
+    "italian": "\"Gusto del mese cosa significa?\" \"È una specialità che cambia sempre, ora è cassata siciliana.\"",
+    "english": "\"What does 'flavor of the month' mean?\" \"It's a specialty that always changes, now it's Sicilian cassata.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Gusto del mese cosa significa?\" \"È una specialità che cambia sempre, ora è cassata siciliana.\"",
+      "\"Prezzo della via cosa significa?\" \"È una borsa che perde sempre, ora è via sporca.\"",
+      "\"News del re cosa significa?\" \"È una news che rida sempre, ora è news finta.\"",
+      "\"Gita del porto cosa significa?\" \"È un tour che corre sempre, ora è gita lunga.\""
+    ],
+    "choicesEnglish": [
+      "\"What does 'flavor of the month' mean?\" \"It's a specialty that always changes, now it's Sicilian cassata.\"",
+      "\"What does 'street price' mean?\" \"It's a bag that always loses, now it's a dirty street.\"",
+      "\"What does 'king's news' mean?\" \"It's a news that always laughs, now it's a fake news.\"",
+      "\"What does 'port trip' mean?\" \"It's a tour that always runs, now it's a long trip.\""
+    ],
+    "correctAnswerItalian": "\"Gusto del mese cosa significa?\" \"È una specialità che cambia sempre, ora è cassata siciliana.\"",
+    "correctAnswerEnglish": "\"What does 'flavor of the month' mean?\" \"It's a specialty that always changes, now it's Sicilian cassata.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Comprendere l'offerta promozionale e temporale della gelateria.",
+      "incorrectItalian": "No, si parla della rotazione dei gusti e della specialità regionale corrente.",
+      "correctEnglish": "Right! Understanding the promotional and seasonal offer of the gelato shop.",
+      "incorrectEnglish": "No, it's about the rotation of flavors and the current regional specialty."
+    }
+  },
+  {
+    "id": "s22-s10",
+    "italian": "\"Posso avere tre gusti in un cono medio?\" \"Sì, tre gusti e se vuole anche la panna.\"",
+    "english": "\"Can I have three flavors in a medium cone?\" \"Yes, three flavors and if you want also cream.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso avere tre gusti in un cono medio?\" \"Sì, tre gusti e se vuole anche la panna.\"",
+      "\"Posso perdere tre borse in una via sporca?\" \"No, tre borse e se chiama anche il fango.\"",
+      "\"Posso ridere tre news in una news finta?\" \"Sì, tre news e se vede anche il re.\"",
+      "\"Posso correre tre gite in un tour saggio?\" \"No, tre gite e se tace anche il porto.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I have three flavors in a medium cone?\" \"Yes, three flavors and if you want also cream.\"",
+      "\"Can I lose three bags on a dirty street?\" \"No, three bags and if you call even the mud.\"",
+      "\"Can I laugh at three news in a fake news?\" \"Yes, three news and if you see even the king.\"",
+      "\"Can I run three trips on a wise tour?\" \"No, three trips and if you are silent even the port.\""
+    ],
+    "correctAnswerItalian": "\"Posso avere tre gusti in un cono medio?\" \"Sì, tre gusti e se vuole anche la panna.\"",
+    "correctAnswerEnglish": "\"Can I have three flavors in a medium cone?\" \"Yes, three flavors and if you want also cream.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Verificare la capacità del formato medio e le opzioni di guarnizione.",
+      "incorrectItalian": "No, questa conversazione specifica le regole per comporre il cono di taglia 2.",
+      "correctEnglish": "Great! Verifying the capacity of the medium size and topping options.",
+      "incorrectEnglish": "No, this conversation specifies the rules for composing the size-2 cone."
+    }
+  },
+  {
+    "id": "s22-s11",
+    "italian": "\"Metta un po' di menta sulla coppetta grande.\" \"Le metto lo sciroppo, è ancora più fresco.\"",
+    "english": "\"Put some mint on the large cup.\" \"I'll add the syrup, it's even more refreshing.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Metta un po' di menta sulla coppetta grande.\" \"Le metto lo sciroppo, è ancora più fresco.\"",
+      "\"Perda un po' di fango sulla borsa sporca.\" \"Le chiamo la via, è ancora più cara.\"",
+      "\"Rida un po' di bacio sulla news finta.\" \"Le vedo il re, è ancora più finto.\"",
+      "\"Corra un po' di gita sul tour saggio.\" \"Le taccio il porto, è ancora più rari.\""
+    ],
+    "choicesEnglish": [
+      "\"Put some mint on the large cup.\" \"I'll add the syrup, it's even more refreshing.\"",
+      "\"Lose a bit of mud on the dirty bag.\" \"I'll call the street for you, it's even more expensive.\"",
+      "\"Laugh a bit of a kiss on the fake news.\" \"I'll see the king for you, he's even more fake.\"",
+      "\"Run a bit of a trip on the wise tour.\" \"I'll silence the port for you, it's even rarer.\""
+    ],
+    "correctAnswerItalian": "\"Metta un po' di menta sulla coppetta grande.\" \"Le metto lo sciroppo, è ancora più fresco.\"",
+    "correctAnswerEnglish": "\"Put some mint on the large cup.\" \"I'll add the syrup, it's even more refreshing.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedere una guarnizione e ricevere un consiglio per aumentare la sensazione di freschezza.",
+      "incorrectItalian": "No, si parla del condimento alla menta in formato liquido.",
+      "correctEnglish": "Exactly! Asking for a topping and receiving advice to increase the sensation of freshness.",
+      "incorrectEnglish": "No, it's about the mint topping in liquid format."
+    }
+  },
+  {
+    "id": "s22-s12",
+    "italian": "\"Mi dà un tovagliolo? Sto sudando moltissimo.\" \"Ecco a lei, fa davvero caldissimo stasera.\"",
+    "english": "\"Can you give me a napkin? I'm sweating a lot.\" \"Here you go, it's truly very hot tonight.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi dà un tovagliolo? Sto sudando moltissimo.\" \"Ecco a lei, fa davvero caldissimo stasera.\"",
+      "\"Mi perde una borsa? Sto correndo moltissimo.\" \"Ecco a te, fa davvero sporchissimo stasera.\"",
+      "\"Mi rida un bacio? Sto ridendo moltissimo.\" \"Ecco a lui, fa davvero falsissimo stasera.\"",
+      "\"Mi chiama un re? Sto parlando moltissimo.\" \"Ecco a noi, fa davvero rarissimo stasera.\""
+    ],
+    "choicesEnglish": [
+      "\"Can you give me a napkin? I'm sweating a lot.\" \"Here you go, it's truly very hot tonight.\"",
+      "\"Do you lose a bag for me? I'm running a lot.\" \"Here you go, it's truly very dirty tonight.\"",
+      "\"Do you laugh at a kiss for me? I'm laughing a lot.\" \"Here he is, it's truly very fake tonight.\"",
+      "\"Do you call a king for me? I'm talking a lot.\" \"Here we are, it's truly very rare tonight.\""
+    ],
+    "correctAnswerItalian": "\"Mi dà un tovagliolo? Sto sudando moltissimo.\" \"Ecco a lei, fa davvero caldissimo stasera.\"",
+    "correctAnswerEnglish": "\"Can you give me a napkin? I'm sweating a lot.\" \"Here you go, it's truly very hot tonight.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Una richiesta di cortesia legata alle condizioni climatiche.",
+      "incorrectItalian": "No, questa conversazione sottolinea il disagio del caldo e la necessità di carta per pulirsi.",
+      "correctEnglish": "Right! A courtesy request linked to weather conditions.",
+      "incorrectEnglish": "No, this conversation emphasizes the heat's discomfort and the need for paper to clean oneself."
+    }
+  },
+  {
+    "id": "s22-s13",
+    "italian": "\"Ecco i due coni piccoli. Sono 4,80 euro.\" \"Grazie, mangiamoli prima che si sciolgano!\"",
+    "english": "\"Here are the two small cones. They are 4.80 euros.\" \"Thanks, let's eat them before they melt!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ecco i due coni piccoli. Sono 4,80 euro.\" \"Grazie, mangiamoli prima che si sciolgano!\"",
+      "\"Ecco le due borse sporche. Sono 4,80 metri.\" \"Prego, perdiamole prima che si sporchino!\"",
+      "\"Ecco i due re finti. Sono 4,80 baci.\" \"Salve, ridiamoli prima che tacciano!\"",
+      "\"Ecco le due gite lunghe. Sono 4,80 ore.\" \"Ciao, corriamole prima che finiscano!\""
+    ],
+    "choicesEnglish": [
+      "\"Here are the two small cones. They are 4.80 euros.\" \"Thanks, let's eat them before they melt!\"",
+      "\"Here are the two dirty bags. They are 4.80 meters.\" \"You're welcome, let's lose them before they get dirty!\"",
+      "\"Here are the two fake kings. They are 4.80 kisses.\" \"Hello, let's laugh at them before they are silent!\"",
+      "\"Here are the two long trips. They are 4.80 hours.\" \"Bye, let's run them before they finish!\""
+    ],
+    "correctAnswerItalian": "\"Ecco i due coni piccoli. Sono 4,80 euro.\" \"Grazie, mangiamoli prima che si sciolgano!\"",
+    "correctAnswerEnglish": "\"Here are the two small cones. They are 4.80 euros.\" \"Thanks, let's eat them before they melt!\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Concludere l'acquisto e affrettarsi a gustare il dolce freddo.",
+      "incorrectItalian": "No, si parla del pagamento e del timore che il gelato diventi liquido.",
+      "correctEnglish": "Great! Concluding the purchase and hurrying to enjoy the cold sweet.",
+      "incorrectEnglish": "No, it's about the payment and the fear that the gelato will become liquid."
+    }
+  },
+  {
+    "id": "s22-s14",
+    "italian": "\"Volevo fragola e limone, non cioccolato!\" \"Scusa, che confusione. Te lo cambio subito.\"",
+    "english": "\"I wanted strawberry and lemon, not chocolate!\" \"Sorry, what a mix-up. I'll change it for you right away.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Volevo fragola e limone, non cioccolato!\" \"Scusa, che confusione. Te lo cambio subito.\"",
+      "\"Volevo borsa e via, non fango!\" \"Prego, che sporco. Te lo perdo dopo.\"",
+      "\"Volevo news e re, non bacio!\" \"Salve, che finto. Te lo rido ora.\"",
+      "\"Volevo tour e gita, non via!\" \"Ciao, che rari. Te lo corro mai.\""
+    ],
+    "choicesEnglish": [
+      "\"I wanted strawberry and lemon, not chocolate!\" \"Sorry, what a mix-up. I'll change it for you right away.\"",
+      "\"I wanted a bag and a street, not mud!\" \"You're welcome, how dirty. I'll lose it for you later.\"",
+      "\"I wanted news and a king, not a kiss!\" \"Hello, how fake. I'll give it back to you now.\"",
+      "\"I wanted a tour and a trip, not a street!\" \"Bye, how rare. I'll never run it for you.\""
+    ],
+    "correctAnswerItalian": "\"Volevo fragola e limone, non cioccolato!\" \"Scusa, che confusione. Te lo cambio subito.\"",
+    "correctAnswerEnglish": "\"I wanted strawberry and lemon, not chocolate!\" \"Sorry, what a mix-up. I'll change it for you right away.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Segnalare un errore nell'ordinazione e ottenere la sostituzione immediata.",
+      "incorrectItalian": "No, questa conversazione risolve un malinteso tra il cliente e il gelataio.",
+      "correctEnglish": "Exactly! Reporting an order error and getting an immediate replacement.",
+      "incorrectEnglish": "No, this conversation resolves a misunderstanding between the customer and the gelato maker."
+    }
+  },
+  {
+    "id": "s22-s15",
+    "italian": "\"Il gelato al mango è squisito stasera.\" \"Sì, è fatto con frutta fresca maturata al sole.\"",
+    "english": "\"The mango gelato is exquisite tonight.\" \"Yes, it's made with fresh sun-ripened fruit.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il gelato al mango è squisito stasera.\" \"Sì, è fatto con frutta fresca maturata al sole.\"",
+      "\"Il fango al porto è sporco stasera.\" \"No, è fatto con via nera persa al bar.\"",
+      "\"Il bacio al re è finto stasera.\" \"Sì, è fatto con news raria risa al re.\"",
+      "\"Il tour alla gita è lungo stasera.\" \"No, è fatto con gita nuova corsa al porto.\""
+    ],
+    "choicesEnglish": [
+      "\"The mango gelato is exquisite tonight.\" \"Yes, it's made with fresh sun-ripened fruit.\"",
+      "\"The mud at the port is dirty tonight.\" \"No, it's made with black street lost at the bar.\"",
+      "\"The kiss to the king is fake tonight.\" \"Yes, it's made with rare news laughed at the king.\"",
+      "\"The tour on the trip is long tonight.\" \"No, it's made with a new trip run to the port.\""
+    ],
+    "correctAnswerItalian": "\"Il gelato al mango è squisito stasera.\" \"Sì, è fatto con frutta fresca maturata al sole.\"",
+    "correctAnswerEnglish": "\"The mango gelato is exquisite tonight.\" \"Yes, it's made with fresh sun-ripened fruit.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Apprezzare la qualità delle materie prime usate per il sorbetto.",
+      "incorrectItalian": "No, sottolinea la genuinità e la provenienza degli ingredienti naturali.",
+      "correctEnglish": "Right! Appreciating the quality of raw materials used for the sorbet.",
+      "incorrectEnglish": "No, it emphasizes the authenticity and origin of the natural ingredients."
+    }
+  },
+  {
+    "id": "s22-s16",
+    "italian": "\"Tieni da parte lo scontrino per favore.\" \"Certamente, deve consegnarlo al gelataio.\"",
+    "english": "\"Keep the receipt aside, please.\" \"Certainly, you must hand it over to the gelato maker.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Tieni da parte lo scontrino per favore.\" \"Certamente, deve consegnarlo al gelataio.\"",
+      "\"Perdi da parte la borsa per favore.\" \"No male, deve chiederla alla via.\"",
+      "\"Ridi da parte la news per favore.\" \"Sì bene, deve vederla al re.\"",
+      "\"Corri da parte la gita per favore.\" \"Saggio rari, deve tacerla al tour.\""
+    ],
+    "choicesEnglish": [
+      "\"Keep the receipt aside, please.\" \"Certainly, you must hand it over to the gelato maker.\"",
+      "\"Lose the bag aside, please.\" \"Not bad, you must ask for it at the street.\"",
+      "\"Laugh at the news aside, please.\" \"Yes fine, you must see it at the king's.\"",
+      "\"Run the trip aside, please.\" \"Wise rare, you must keep quiet about it at the tour.\""
+    ],
+    "correctAnswerItalian": "\"Tieni da parte lo scontrino per favore.\" \"Certamente, deve consegnarlo al gelataio.\"",
+    "correctAnswerEnglish": "\"Keep the receipt aside, please.\" \"Certainly, you must hand it over to the gelato maker.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire correttamente la prova di pagamento al banco.",
+      "incorrectItalian": "No, si parla del documento fiscale necessario per avere il gelato.",
+      "correctEnglish": "Great! Correctly managing proof of payment at the counter.",
+      "incorrectEnglish": "No, it's about the fiscal document needed to get the gelato."
+    }
+  },
+  {
+    "id": "s22-s17",
+    "italian": "\"Quanto pesa una vaschetta da mezzo chilo?\" \"Pesa cinquecento grammi, perfetta per tre persone.\"",
+    "english": "\"How much does a half-kilo tub weigh?\" \"It weighs five hundred grams, perfect for three people.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto pesa una vaschetta da mezzo chilo?\" \"Pesa cinquecento grammi, perfetta per tre persone.\"",
+      "\"Quanto corre una via da mezzo metro?\" \"Corre cinquecento passi, saggia per tre borse.\"",
+      "\"Quanto grida un re da mezzo bacio?\" \"Grida cinquecento note, finta per tre news.\"",
+      "\"Quanto ride una news da mezzo tour?\" \"Ride cinquecento volte, raria per tre gite.\""
+    ],
+    "choicesEnglish": [
+      "\"How much does a half-kilo tub weigh?\" \"It weighs five hundred grams, perfect for three people.\"",
+      "\"How far does a half-meter street run?\" \"It runs five hundred steps, wise for three bags.\"",
+      "\"How much does a half-kiss king shout?\" \"He shouts five hundred notes, fake for three news.\"",
+      "\"How much does a half-tour news laugh?\" \"It laughs five hundred times, rare for three trips.\""
+    ],
+    "correctAnswerItalian": "\"Quanto pesa una vaschetta da mezzo chilo?\" \"Pesa cinquecento grammi, perfetta per tre persone.\"",
+    "correctAnswerEnglish": "\"How much does a half-kilo tub weigh?\" \"It weighs five hundred grams, perfect for three people.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedere informazioni sul formato da asporto e ricevere un consiglio sulla dose.",
+      "incorrectItalian": "No, questa conversazione chiarisce il peso e la resa della confezione per casa.",
+      "correctEnglish": "Exactly! Asking for information on the takeaway format and receiving dosage advice.",
+      "incorrectEnglish": "No, this conversation clarifies the weight and yield of the home package."
+    }
+  },
+  {
+    "id": "s22-s18",
+    "italian": "\"È possibile avere lo sciroppo al cioccolato?\" \"Abbiamo solo cioccolato fuso, lo vuole?\"",
+    "english": "\"Is it possible to have chocolate syrup?\" \"We only have melted chocolate, do you want it?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"È possibile avere lo sciroppo al cioccolato?\" \"Abbiamo solo cioccolato fuso, lo vuole?\"",
+      "\"È possibile perdere la borsa al fango?\" \"Abbiamo solo via sporca, la chiami?\"",
+      "\"È possibile ridere la news al re?\" \"Abbiamo solo news finta, la vedi?\"",
+      "\"È possibile correre la gita al porto?\" \"Abbiamo solo tour lungo, lo corri?\""
+    ],
+    "choicesEnglish": [
+      "\"Is it possible to have chocolate syrup?\" \"We only have melted chocolate, do you want it?\"",
+      "\"Is it possible to lose the bag in the mud?\" \"We only have a dirty street, will you call for it?\"",
+      "\"Is it possible to laugh at the news at the king's?\" \"We only have fake news, will you see it?\"",
+      "\"Is it possible to run the trip at the port?\" \"We only have a long tour, will you run it?\""
+    ],
+    "correctAnswerItalian": "\"È possibile avere lo sciroppo al cioccolato?\" \"Abbiamo solo cioccolato fuso, lo vuole?\"",
+    "correctAnswerEnglish": "\"Can I have chocolate syrup?\" \"We only have melted chocolate, do you want it?\"",
+    "feedback": {
+      "correctItalian": "Giusto! Precisare il tipo di guarnizione disponibile al banco.",
+      "incorrectItalian": "No, il barista corregge la richiesta indicando l'alternativa di qualità superiore.",
+      "correctEnglish": "Right! Specifying the type of topping available at the counter.",
+      "incorrectEnglish": "No, the barista corrects the request by indicating the higher quality alternative."
+    }
+  },
+  {
+    "id": "s22-s19",
+    "italian": "\"Le mette un po' di granella di nocciole?\" \"Sì, per rendere il cono più croccante, ecco qui.\"",
+    "english": "\"Will you add some hazelnut grains?\" \"Yes, to make the cone crunchier, here you go.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Le mette un po' di granella di nocciole?\" \"Sì, per rendere il cono più croccante, ecco qui.\"",
+      "\"Le perde un po' di fango di borsa?\" \"No, per rendere la via più sporca, ecco là.\"",
+      "\"Le rida un po' di bacio di re?\" \"Sì, per rendere la news più finta, ecco qui.\"",
+      "\"Le chiama un po' di nota di news?\" \"No, per rendere la gita più lunga, ecco là.\""
+    ],
+    "choicesEnglish": [
+      "\"Will you add some hazelnut grains?\" \"Yes, to make the cone crunchier, here you go.\"",
+      "\"Do you lose a bit of bag mud for for me?\" \"No, to make the street dirtier, here it is over there.\"",
+      "\"Do you give me back a bit of a king's kiss?\" \"Yes, to make the news faker, here it is.\"",
+      "\"Do you call me for a bit of a news note?\" \"No, to make the trip longer, here it is over there.\""
+    ],
+    "correctAnswerItalian": "\"Le mette un po' di granella di nocciole?\" \"Sì, per rendere il cono più croccante, ecco qui.\"",
+    "correctAnswerEnglish": "\"Will you add some hazelnut grains?\" \"Yes, to make the cone crunchier, here you go.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Richiedere una decorazione solida e riceverne il beneficio sensoriale.",
+      "incorrectItalian": "No, si parla dell'aggiunta di piccoli pezzi di frutta a guscio sopra il gelato.",
+      "correctEnglish": "Great! Requesting a solid decoration and receiving its sensory benefit.",
+      "incorrectEnglish": "No, it's about adding small pieces of nuts on top of the gelato."
+    }
+  },
+  {
+    "id": "s22-s20",
+    "italian": "\"Che serata emozionante con questo gelato!\" \"Vero, e la cassata siciliana è stupenda.\"",
+    "english": "\"What an exciting evening with this gelato!\" \"True, and the Sicilian cassata is stupendous.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Che serata emozionante con questo gelato!\" \"Vero, e la cassata siciliana è stupenda.\"",
+      "\"Che via noiosa con questo fango!\" \"Falso, e la borsa nera è brutta.\"",
+      "\"Che news falsa con questo re!\" \"Vero, e il bacio finto è saggio.\"",
+      "\"Che gita lunga con questo tour!\" \"No, e il porto rari è sporco.\""
+    ],
+    "choicesEnglish": [
+      "\"What an exciting evening with this gelato!\" \"True, and the Sicilian cassata is stupendous.\"",
+      "\"What a boring street with this mud!\" \"False, and the black bag is ugly.\"",
+      "\"What a fake news with this king!\" \"True, and the fake kiss is wise.\"",
+      "\"What a long trip with this tour!\" \"No, and the rare port is dirty.\""
+    ],
+    "correctAnswerItalian": "\"Che serata emozionante con questo gelato!\" \"Vero, e la cassata siciliana è stupenda.\"",
+    "correctAnswerEnglish": "\"What an exciting evening with this gelato!\" \"True, and the Sicilian cassata is stupendous.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Esprimere soddisfazione per l'evento sociale e per il sapore del dolce.",
+      "incorrectItalian": "No, descrive il piacere della condivisione di un gelato di alta qualità.",
+      "correctEnglish": "Exactly! Expressing satisfaction for the social event and the sweet's flavor.",
+      "incorrectEnglish": "No, it describes the pleasure of sharing a high-quality gelato."
     }
   }
 ]

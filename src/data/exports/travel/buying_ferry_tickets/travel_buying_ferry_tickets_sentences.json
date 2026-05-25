@@ -1,104 +1,1562 @@
 [
   {
-    "id": "s14-s5",
-    "italian": "Fa freddo sul ponte, rientriamo.",
-    "english": "It is cold on the deck, let's go back inside.",
-    "type": "sentence",
-    "choices": [
-      "L'imbarco inizia un'ora prima della partenza.",
-      "Fa freddo sul ponte, rientriamo.",
-      "Vorrei due biglietti per il traghetto verso l'isola.",
-      "Abbiamo preso una cabina perché il viaggio dura tutta la notte."
-    ],
-    "correctAnswer": "Fa freddo sul ponte, rientriamo.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Fa freddo sul ponte, rientriamo.\"."
-    }
-  },
-  {
-    "id": "s14-s3",
-    "italian": "L'imbarco inizia un'ora prima della partenza.",
-    "english": "Boarding starts an hour before departure.",
-    "type": "sentence",
-    "choices": [
-      "Dobbiamo arrivare al porto in anticipo.",
-      "L'orario traghetto è cambiato a causa del mare mosso.",
-      "Fa freddo sul ponte, rientriamo.",
-      "L'imbarco inizia un'ora prima della partenza."
-    ],
-    "correctAnswer": "L'imbarco inizia un'ora prima della partenza.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"L'imbarco inizia un'ora prima della partenza.\"."
-    }
-  },
-  {
     "id": "s14-s1",
-    "italian": "Vorrei due biglietti per il traghetto verso l'isola.",
-    "english": "I would like two ferry tickets to the island.",
+    "italian": "\"Vorrei due biglietti per il traghetto per Capri.\" \"Solo andata o anche ritorno?\"",
+    "english": "\"I'd like two tickets for the ferry to Capri.\" \"One way or return too?\"",
     "type": "sentence",
-    "choices": [
-      "Vorrei due biglietti per il traghetto verso l'isola.",
-      "Fa freddo sul ponte, rientriamo.",
-      "L'imbarco inizia un'ora prima della partenza.",
-      "L'orario traghetto è cambiato a causa del mare mosso."
+    "choicesItalian": [
+      "\"Siamo in ritardo per la coincidenza?\" \"No, la nave recupererà tempo in mare.\"",
+      "\"Il traghetto delle dieci è già partito?\" \"Sì, è partito con cinque minuti di anticipo.\"",
+      "\"Dobbiamo consegnare le chiavi della cabina?\" \"Sì, alla reception prima di scendere.\"",
+      "\"Vorrei due biglietti per il traghetto per Capri.\" \"Solo andata o anche ritorno?\""
     ],
-    "correctAnswer": "Vorrei due biglietti per il traghetto verso l'isola.",
+    "choicesEnglish": [
+      "\"Are we late for the connection?\" \"No, the ship will make up time at sea.\"",
+      "\"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\"",
+      "\"Do we need to hand in the cabin keys?\" \"Yes, at the reception before going down.\"",
+      "\"I'd like two tickets for the ferry to Capri.\" \"One way or return too?\""
+    ],
+    "correctAnswerItalian": "\"Vorrei due biglietti per il traghetto per Capri.\" \"Solo andata o anche ritorno?\"",
+    "correctAnswerEnglish": "\"I'd like two tickets for the ferry to Capri.\" \"One way or return too?\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Vorrei due biglietti per il traghetto verso l'isola.\"."
+      "correctItalian": "Ottimo! Acquistare biglietti.",
+      "incorrectItalian": "No, questo dialogo significa: \"I'd like two tickets for the ferry to Capri.\" \"One way or return too?\"",
+      "correctEnglish": "Great! This means: \"I'd like two tickets for the ferry to Capri.\" \"One way or return too?\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I'd like two tickets for the ferry to Capri.\" \"One way or return too?\""
     }
   },
   {
     "id": "s14-s2",
-    "italian": "L'orario traghetto è cambiato a causa del mare mosso.",
-    "english": "The ferry time changed due to rough seas.",
+    "italian": "\"Andata e ritorno, per favore.\" \"Il prossimo parte tra venti minuti.\"",
+    "english": "\"Round trip, please.\" \"The next one leaves in twenty minutes.\"",
     "type": "sentence",
-    "choices": [
-      "Abbiamo preso una cabina perché il viaggio dura tutta la notte.",
-      "L'imbarco inizia un'ora prima della partenza.",
-      "L'orario traghetto è cambiato a causa del mare mosso.",
-      "Vorrei due biglietti per il traghetto verso l'isola."
+    "choicesItalian": [
+      "\"Devo fare il check-in online?\" \"Sì, le invieremo un codice sul telefono.\"",
+      "\"Dobbiamo lasciare l'auto aperta nel garage?\" \"No, la chiuda e inserisca l'allarme.\"",
+      "\"Vorrei anticipare la partenza alle tredici.\" \"Vediamo se c'è disponibilità.\"",
+      "\"Andata e ritorno, per favore.\" \"Il prossimo parte tra venti minuti.\""
     ],
-    "correctAnswer": "L'orario traghetto è cambiato a causa del mare mosso.",
+    "choicesEnglish": [
+      "\"Do I need to check in online?\" \"Yes, we will send you a code on your phone.\"",
+      "\"Do we need to leave the car open in the garage?\" \"No, close it and set the alarm.\"",
+      "\"I'd like to move up the departure to 1 PM.\" \"Let's see if there is availability.\"",
+      "\"Round trip, please.\" \"The next one leaves in twenty minutes.\""
+    ],
+    "correctAnswerItalian": "\"Andata e ritorno, per favore.\" \"Il prossimo parte tra venti minuti.\"",
+    "correctAnswerEnglish": "\"Round trip, please.\" \"The next one leaves in twenty minutes.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"L'orario traghetto è cambiato a causa del mare mosso.\"."
+      "correctItalian": "Ottimo! Specificare tipo e orario.",
+      "incorrectItalian": "No, questo dialogo significa: \"Round trip, please.\" \"The next one leaves in twenty minutes.\"",
+      "correctEnglish": "Great! This means: \"Round trip, please.\" \"The next one leaves in twenty minutes.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Round trip, please.\" \"The next one leaves in twenty minutes.\""
+    }
+  },
+  {
+    "id": "s14-s3",
+    "italian": "\"Quanto costano i biglietti?\" \"In totale sono quaranta euro.\"",
+    "english": "\"How much are the tickets?\" \"In total they are forty euros.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Dobbiamo lasciare l'auto aperta nel garage?\" \"No, la chiuda e inserisca l'allarme.\"",
+      "\"Quanto costano i biglietti?\" \"In totale sono quaranta euro.\"",
+      "\"Guardate, ci sono i delfini!\" \"Dove? Ah sì, li vedo a destra della nave.\"",
+      "\"Quanto dura la traversata per l'isola?\" \"Circa un'ora e mezza.\""
+    ],
+    "choicesEnglish": [
+      "\"Do we need to leave the car open in the garage?\" \"No, close it and set the alarm.\"",
+      "\"How much are the tickets?\" \"In total they are forty euros.\"",
+      "\"Look, there are dolphins!\" \"Where? Ah yes, I see them to the right of the ship.\"",
+      "\"How long does the crossing to the island take?\" \"About an hour and a half.\""
+    ],
+    "correctAnswerItalian": "\"Quanto costano i biglietti?\" \"In totale sono quaranta euro.\"",
+    "correctAnswerEnglish": "\"How much are the tickets?\" \"In total they are forty euros.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere il prezzo.",
+      "incorrectItalian": "No, questo dialogo significa: \"How much are the tickets?\" \"In total they are forty euros.\"",
+      "correctEnglish": "Great! This means: \"How much are the tickets?\" \"In total they are forty euros.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"How much are the tickets?\" \"In total they are forty euros.\""
     }
   },
   {
     "id": "s14-s4",
-    "italian": "Abbiamo preso una cabina perché il viaggio dura tutta la notte.",
-    "english": "We got a cabin because the trip lasts all night.",
+    "italian": "\"Da quale molo parte la nave?\" \"Dal molo numero tre, a destra.\"",
+    "english": "\"From which pier does the ship leave?\" \"From pier number three, on the right.\"",
     "type": "sentence",
-    "choices": [
-      "Vorrei due biglietti per il traghetto verso l'isola.",
-      "Dobbiamo arrivare al porto in anticipo.",
-      "Fa freddo sul ponte, rientriamo.",
-      "Abbiamo preso una cabina perché il viaggio dura tutta la notte."
+    "choicesItalian": [
+      "\"Vorrei anticipare la partenza alle tredici.\" \"Vediamo se c'è disponibilità.\"",
+      "\"Dove sono i giubbotti di salvataggio?\" \"Sotto ogni poltrona e in cabina.\"",
+      "\"Da quale molo parte la nave?\" \"Dal molo numero tre, a destra.\"",
+      "\"Il traghetto delle dieci è già partito?\" \"Sì, è partito con cinque minuti di anticipo.\""
     ],
-    "correctAnswer": "Abbiamo preso una cabina perché il viaggio dura tutta la notte.",
+    "choicesEnglish": [
+      "\"I'd like to move up the departure to 1 PM.\" \"Let's see if there is availability.\"",
+      "\"Where are the life jackets?\" \"Under every seat and in the cabin.\"",
+      "\"From which pier does the ship leave?\" \"From pier number three, on the right.\"",
+      "\"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\""
+    ],
+    "correctAnswerItalian": "\"Da quale molo parte la nave?\" \"Dal molo numero tre, a destra.\"",
+    "correctAnswerEnglish": "\"From which pier does the ship leave?\" \"From pier number three, on the right.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Abbiamo preso una cabina perché il viaggio dura tutta la notte.\"."
+      "correctItalian": "Ottimo! Chiedere il molo.",
+      "incorrectItalian": "No, questo dialogo significa: \"From which pier does the ship leave?\" \"From pier number three, on the right.\"",
+      "correctEnglish": "Great! This means: \"From which pier does the ship leave?\" \"From pier number three, on the right.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"From which pier does the ship leave?\" \"From pier number three, on the right.\""
+    }
+  },
+  {
+    "id": "s14-s5",
+    "italian": "\"Vorrei imbarcare anche l'auto per la Sardegna.\" \"Qual è la lunghezza del veicolo?\"",
+    "english": "\"I'd like to board the car for Sardinia too.\" \"What is the length of the vehicle?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il panorama della costa è bellissimo.\" \"Sì, facciamo una foto insieme.\"",
+      "\"Buongiorno, biglietti per l'Elba per favore.\" \"Auto o solo passeggeri?\"",
+      "\"Quanto costa il supplemento per la cabina?\" \"Trenta euro per una doppia.\"",
+      "\"Vorrei imbarcare anche l'auto per la Sardegna.\" \"Qual è la lunghezza del veicolo?\""
+    ],
+    "choicesEnglish": [
+      "\"The view of the coast is beautiful.\" \"Yes, let's take a photo together.\"",
+      "\"Good morning, tickets for Elba please.\" \"Car or passengers only?\"",
+      "\"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\"",
+      "\"I'd like to board the car for Sardinia too.\" \"What is the length of the vehicle?\""
+    ],
+    "correctAnswerItalian": "\"Vorrei imbarcare anche l'auto per la Sardegna.\" \"Qual è la lunghezza del veicolo?\"",
+    "correctAnswerEnglish": "\"I'd like to board the car for Sardinia too.\" \"What is the length of the vehicle?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Trasporto auto.",
+      "incorrectItalian": "No, questo dialogo significa: \"I'd like to board the car for Sardinia too.\" \"What is the length of the vehicle?\"",
+      "correctEnglish": "Great! This means: \"I'd like to board the car for Sardinia too.\" \"What is the length of the vehicle?\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I'd like to board the car for Sardinia too.\" \"What is the length of the vehicle?\""
     }
   },
   {
     "id": "s14-s6",
-    "italian": "Dobbiamo arrivare al porto in anticipo.",
-    "english": "We must arrive at the port early.",
+    "italian": "\"È una Fiat 500, è piccola.\" \"Va bene, il supplemento è di sessanta euro.\"",
+    "english": "\"It's a Fiat 500, it's small.\" \"Alright, the surcharge is sixty euros.\"",
     "type": "sentence",
-    "choices": [
-      "L'orario traghetto è cambiato a causa del mare mosso.",
-      "Abbiamo preso una cabina perché il viaggio dura tutta la notte.",
-      "Dobbiamo arrivare al porto in anticipo.",
-      "Fa freddo sul ponte, rientriamo."
+    "choicesItalian": [
+      "\"Posso avere una coperta per la notte?\" \"Sì, la chieda al personale in cabina.\"",
+      "\"Il traghetto delle dieci è già partito?\" \"Sì, è partito con cinque minuti di anticipo.\"",
+      "\"A che ora dobbiamo essere al porto?\" \"Almeno un'ora prima della partenza.\"",
+      "\"È una Fiat 500, è piccola.\" \"Va bene, il supplemento è di sessanta euro.\""
     ],
-    "correctAnswer": "Dobbiamo arrivare al porto in anticipo.",
+    "choicesEnglish": [
+      "\"Can I have a blanket for the night?\" \"Yes, ask the cabin staff for it.\"",
+      "\"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\"",
+      "\"What time should we be at the port?\" \"At least one hour before departure.\"",
+      "\"It's a Fiat 500, it's small.\" \"Alright, the surcharge is sixty euros.\""
+    ],
+    "correctAnswerItalian": "\"È una Fiat 500, è piccola.\" \"Va bene, il supplemento è di sessanta euro.\"",
+    "correctAnswerEnglish": "\"It's a Fiat 500, it's small.\" \"Alright, the surcharge is sixty euros.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Dobbiamo arrivare al porto in anticipo.\"."
+      "correctItalian": "Ottimo! Dettagli veicolo e costo.",
+      "incorrectItalian": "No, questo dialogo significa: \"It's a Fiat 500, it's small.\" \"Alright, the surcharge is sixty euros.\"",
+      "correctEnglish": "Great! This means: \"It's a Fiat 500, it's small.\" \"Alright, the surcharge is sixty euros.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"It's a Fiat 500, it's small.\" \"Alright, the surcharge is sixty euros.\""
+    }
+  },
+  {
+    "id": "s14-s7",
+    "italian": "\"C'è ancora posto nel garage della nave?\" \"Sì, ma deve sbrigarsi con l'imbarco.\"",
+    "english": "\"Is there still room in the ship's garage?\" \"Yes, but you must hurry with boarding.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è ancora posto nel garage della nave?\" \"Sì, ma deve sbrigarsi con l'imbarco.\"",
+      "\"Buongiorno, biglietti per l'Elba per favore.\" \"Auto o solo passeggeri?\"",
+      "\"Il portellone del garage si sta aprendo.\" \"Torniamo in macchina per sbarcare.\"",
+      "\"Vorrei due biglietti per il traghetto per Capri.\" \"Solo andata o anche ritorno?\""
+    ],
+    "choicesEnglish": [
+      "\"Is there still room in the ship's garage?\" \"Yes, but you must hurry with boarding.\"",
+      "\"Good morning, tickets for Elba please.\" \"Car or passengers only?\"",
+      "\"The garage hatch is opening.\" \"Let's get back in the car to disembark.\"",
+      "\"I'd like two tickets for the ferry to Capri.\" \"One way or return too?\""
+    ],
+    "correctAnswerItalian": "\"C'è ancora posto nel garage della nave?\" \"Sì, ma deve sbrigarsi con l'imbarco.\"",
+    "correctAnswerEnglish": "\"Is there still room in the ship's garage?\" \"Yes, but you must hurry with boarding.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Disponibilità garage.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there still room in the ship's garage?\" \"Yes, but you must hurry with boarding.\"",
+      "correctEnglish": "Great! This means: \"Is there still room in the ship's garage?\" \"Yes, but you must hurry with boarding.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there still room in the ship's garage?\" \"Yes, but you must hurry with boarding.\""
+    }
+  },
+  {
+    "id": "s14-s8",
+    "italian": "\"Vorrei anticipare la partenza alle tredici.\" \"Vediamo se c'è disponibilità.\"",
+    "english": "\"I'd like to move up the departure to 1 PM.\" \"Let's see if there is availability.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Si può scendere in garage durante la navigazione?\" \"No, è vietato per motivi di sicurezza.\"",
+      "\"C'è ancora posto nel garage della nave?\" \"Sì, ma deve sbrigarsi con l'imbarco.\"",
+      "\"Vorrei anticipare la partenza alle tredici.\" \"Vediamo se c'è disponibilità.\"",
+      "\"Qual è il numero del molo per la Sardegna?\" \"Il molo dieci, in fondo a sinistra.\""
+    ],
+    "choicesEnglish": [
+      "\"Can one go down to the garage during navigation?\" \"No, it's forbidden for security reasons.\"",
+      "\"Is there still room in the ship's garage?\" \"Yes, but you must hurry with boarding.\"",
+      "\"I'd like to move up the departure to 1 PM.\" \"Let's see if there is availability.\"",
+      "\"What is the pier number for Sardinia?\" \"Pier ten, at the far left.\""
+    ],
+    "correctAnswerItalian": "\"Vorrei anticipare la partenza alle tredici.\" \"Vediamo se c'è disponibilità.\"",
+    "correctAnswerEnglish": "\"I'd like to move up the departure to 1 PM.\" \"Let's see if there is availability.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Cambiare orario.",
+      "incorrectItalian": "No, questo dialogo significa: \"I'd like to move up the departure to 1 PM.\" \"Let's see if there is availability.\"",
+      "correctEnglish": "Great! This means: \"I'd like to move up the departure to 1 PM.\" \"Let's see if there is availability.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I'd like to move up the departure to 1 PM.\" \"Let's see if there is availability.\""
+    }
+  },
+  {
+    "id": "s14-s9",
+    "italian": "\"C'è un costo per cambiare il biglietto?\" \"No, per questa tariffa è gratuito.\"",
+    "english": "\"Is there a cost to change the ticket?\" \"No, for this fare it's free.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Qual è il numero del molo per la Sardegna?\" \"Il molo dieci, in fondo a sinistra.\"",
+      "\"C'è un costo per cambiare il biglietto?\" \"No, per questa tariffa è gratuito.\"",
+      "\"Quanti passeggeri può portare questa nave?\" \"Fino a duemila persone.\"",
+      "\"Siamo arrivati in porto?\" \"Sì, stiamo attraccando proprio ora.\""
+    ],
+    "choicesEnglish": [
+      "\"What is the pier number for Sardinia?\" \"Pier ten, at the far left.\"",
+      "\"Is there a cost to change the ticket?\" \"No, for this fare it's free.\"",
+      "\"How many passengers can this ship carry?\" \"Up to two thousand people.\"",
+      "\"Have we arrived at the port?\" \"Yes, we are docking right now.\""
+    ],
+    "correctAnswerItalian": "\"C'è un costo per cambiare il biglietto?\" \"No, per questa tariffa è gratuito.\"",
+    "correctAnswerEnglish": "\"Is there a cost to change the ticket?\" \"No, for this fare it's free.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Costi di modifica.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there a cost to change the ticket?\" \"No, for this fare it's free.\"",
+      "correctEnglish": "Great! This means: \"Is there a cost to change the ticket?\" \"No, for this fare it's free.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there a cost to change the ticket?\" \"No, for this fare it's free.\""
+    }
+  },
+  {
+    "id": "s14-s10",
+    "italian": "\"Ecco il mio biglietto originale.\" \"Grazie, le stampo subito quello nuovo.\"",
+    "english": "\"Here is my original ticket.\" \"Thank you, I'll print the new one for you right away.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ecco il mio biglietto originale.\" \"Grazie, le stampo subito quello nuovo.\"",
+      "\"C'è la connessione internet in mezzo al mare?\" \"C'è il Wi-Fi a pagamento sul ponte.\"",
+      "\"Speriamo di vedere il tramonto dal mare.\" \"Sì, sarà uno spettacolo fantastico.\"",
+      "\"Da quale molo parte la nave?\" \"Dal molo numero tre, a destra.\""
+    ],
+    "choicesEnglish": [
+      "\"Here is my original ticket.\" \"Thank you, I'll print the new one for you right away.\"",
+      "\"Is there internet connection in the middle of the sea?\" \"There is paid Wi-Fi on the deck.\"",
+      "\"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\"",
+      "\"From which pier does the ship leave?\" \"From pier number three, on the right.\""
+    ],
+    "correctAnswerItalian": "\"Ecco il mio biglietto originale.\" \"Grazie, le stampo subito quello nuovo.\"",
+    "correctAnswerEnglish": "\"Here is my original ticket.\" \"Thank you, I'll print the new one for you right away.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Sostituzione biglietto.",
+      "incorrectItalian": "No, questo dialogo significa: \"Here is my original ticket.\" \"Thank you, I'll print the new one for you right away.\"",
+      "correctEnglish": "Great! This means: \"Here is my original ticket.\" \"Thank you, I'll print the new one for you right away.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Here is my original ticket.\" \"Thank you, I'll print the new one for you right away.\""
+    }
+  },
+  {
+    "id": "s14-s11",
+    "italian": "\"Quanto dura la traversata per l'isola?\" \"Circa un'ora e mezza.\"",
+    "english": "\"How long does the crossing to the island take?\" \"About an hour and a half.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto dista il porto dal centro città?\" \"Circa un chilometro, c'è un bus navetta.\"",
+      "\"Il biglietto è andata e ritorno per lo stesso giorno?\" \"Sì, è un'offerta giornaliera.\"",
+      "\"Quanto dura la traversata per l'isola?\" \"Circa un'ora e mezza.\"",
+      "\"Il portellone del garage si sta aprendo.\" \"Torniamo in macchina per sbarcare.\""
+    ],
+    "choicesEnglish": [
+      "\"How far is the port from the city center?\" \"About one kilometer, there is a shuttle bus.\"",
+      "\"Is the ticket round trip for the same day?\" \"Yes, it's a daily offer.\"",
+      "\"How long does the crossing to the island take?\" \"About an hour and a half.\"",
+      "\"The garage hatch is opening.\" \"Let's get back in the car to disembark.\""
+    ],
+    "correctAnswerItalian": "\"Quanto dura la traversata per l'isola?\" \"Circa un'ora e mezza.\"",
+    "correctAnswerEnglish": "\"How long does the crossing to the island take?\" \"About an hour and a half.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Durata del viaggio.",
+      "incorrectItalian": "No, questo dialogo significa: \"How long does the crossing to the island take?\" \"About an hour and a half.\"",
+      "correctEnglish": "Great! This means: \"How long does the crossing to the island take?\" \"About an hour and a half.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"How long does the crossing to the island take?\" \"About an hour and a half.\""
+    }
+  },
+  {
+    "id": "s14-s12",
+    "italian": "\"Soffre di mal di mare?\" \"Sì, a volte, se il mare è molto mosso.\"",
+    "english": "\"Do you suffer from seasickness?\" \"Yes, sometimes, if the sea is very rough.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"È una Fiat 500, è piccola.\" \"Va bene, il supplemento è di sessanta euro.\"",
+      "\"Dove sono i giubbotti di salvataggio?\" \"Sotto ogni poltrona e in cabina.\"",
+      "\"Soffre di mal di mare?\" \"Sì, a volte, se il mare è molto mosso.\"",
+      "\"Dove posso caricare il telefono?\" \"Ci sono delle prese vicino alle poltrone.\""
+    ],
+    "choicesEnglish": [
+      "\"It's a Fiat 500, it's small.\" \"Alright, the surcharge is sixty euros.\"",
+      "\"Where are the life jackets?\" \"Under every seat and in the cabin.\"",
+      "\"Do you suffer from seasickness?\" \"Yes, sometimes, if the sea is very rough.\"",
+      "\"Where can I charge my phone?\" \"There are sockets near the armchairs.\""
+    ],
+    "correctAnswerItalian": "\"Soffre di mal di mare?\" \"Sì, a volte, se il mare è molto mosso.\"",
+    "correctAnswerEnglish": "\"Do you suffer from seasickness?\" \"Yes, sometimes, if the sea is very rough.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Conversazione sulla salute.",
+      "incorrectItalian": "No, questo dialogo significa: \"Do you suffer from seasickness?\" \"Yes, sometimes, if the sea is very rough.\"",
+      "correctEnglish": "Great! This means: \"Do you suffer from seasickness?\" \"Yes, sometimes, if the sea is very rough.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Do you suffer from seasickness?\" \"Yes, sometimes, if the sea is very rough.\""
+    }
+  },
+  {
+    "id": "s14-s13",
+    "italian": "\"Dove sono i giubbotti di salvataggio?\" \"Sotto ogni poltrona e in cabina.\"",
+    "english": "\"Where are the life jackets?\" \"Under every seat and in the cabin.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Dove sono i giubbotti di salvataggio?\" \"Sotto ogni poltrona e in cabina.\"",
+      "\"C'è l'aria condizionata troppo forte qui.\" \"Spostiamoci in una zona più calda.\"",
+      "\"Quanto costano i biglietti?\" \"In totale sono quaranta euro.\"",
+      "\"Mi scusi, dov'è l'uscita per i passeggeri a piedi?\" \"Segua le frecce gialle per il molo.\""
+    ],
+    "choicesEnglish": [
+      "\"Where are the life jackets?\" \"Under every seat and in the cabin.\"",
+      "\"The air conditioning is too strong here.\" \"Let's move to a warmer area.\"",
+      "\"How much are the tickets?\" \"In total they are forty euros.\"",
+      "\"Excuse me, where is the exit for foot passengers?\" \"Follow the yellow arrows to the pier.\""
+    ],
+    "correctAnswerItalian": "\"Dove sono i giubbotti di salvataggio?\" \"Sotto ogni poltrona e in cabina.\"",
+    "correctAnswerEnglish": "\"Where are the life jackets?\" \"Under every seat and in the cabin.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Sicurezza di bordo.",
+      "incorrectItalian": "No, questo dialogo significa: \"Where are the life jackets?\" \"Under every seat and in the cabin.\"",
+      "correctEnglish": "Great! This means: \"Where are the life jackets?\" \"Under every seat and in the cabin.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Where are the life jackets?\" \"Under every seat and in the cabin.\""
+    }
+  },
+  {
+    "id": "s14-s14",
+    "italian": "\"C'è un bar sul ponte superiore?\" \"Sì, serve anche panini e snack.\"",
+    "english": "\"Is there a bar on the upper deck?\" \"Yes, it also serves sandwiches and snacks.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è un bar sul ponte superiore?\" \"Sì, serve anche panini e snack.\"",
+      "\"C'è un costo per cambiare il biglietto?\" \"No, per questa tariffa è gratuito.\"",
+      "\"Dov'è il bagno più vicino?\" \"In fondo al corridoio, dopo il bar.\"",
+      "\"Andata e ritorno, per favore.\" \"Il prossimo parte tra venti minuti.\""
+    ],
+    "choicesEnglish": [
+      "\"Is there a bar on the upper deck?\" \"Yes, it also serves sandwiches and snacks.\"",
+      "\"Is there a cost to change the ticket?\" \"No, for this fare it's free.\"",
+      "\"Where is the nearest bathroom?\" \"At the end of the hallway, after the bar.\"",
+      "\"Round trip, please.\" \"The next one leaves in twenty minutes.\""
+    ],
+    "correctAnswerItalian": "\"C'è un bar sul ponte superiore?\" \"Sì, serve anche panini e snack.\"",
+    "correctAnswerEnglish": "\"Is there a bar on the upper deck?\" \"Yes, it also serves sandwiches and snacks.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Servizi di ristorazione.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there a bar on the upper deck?\" \"Yes, it also serves sandwiches and snacks.\"",
+      "correctEnglish": "Great! This means: \"Is there a bar on the upper deck?\" \"Yes, it also serves sandwiches and snacks.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there a bar on the upper deck?\" \"Yes, it also serves sandwiches and snacks.\""
+    }
+  },
+  {
+    "id": "s14-s15",
+    "italian": "\"Devo fare il check-in online?\" \"Sì, le invieremo un codice sul telefono.\"",
+    "english": "\"Do I need to check in online?\" \"Yes, we will send you a code on your phone.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto costa un biglietto per l'auto lunga?\" \"Dipende, se supera i cinque metri costa di più.\"",
+      "\"C'è un costo per cambiare il biglietto?\" \"No, per questa tariffa è gratuito.\"",
+      "\"Devo fare il check-in online?\" \"Sì, le invieremo un codice sul telefono.\"",
+      "\"Posso pagare con la carta di debito?\" \"Sì, accettiamo tutti i circuiti principali.\""
+    ],
+    "choicesEnglish": [
+      "\"How much is a ticket for a long car?\" \"It depends, if it exceeds five meters it costs more.\"",
+      "\"Is there a cost to change the ticket?\" \"No, for this fare it's free.\"",
+      "\"Do I need to check in online?\" \"Yes, we will send you a code on your phone.\"",
+      "\"Can I pay with a debit card?\" \"Yes, we accept all major circuits.\""
+    ],
+    "correctAnswerItalian": "\"Devo fare il check-in online?\" \"Sì, le invieremo un codice sul telefono.\"",
+    "correctAnswerEnglish": "\"Do I need to check in online?\" \"Yes, we will send you a code on your phone.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Procedure digitali.",
+      "incorrectItalian": "No, questo dialogo significa: \"Do I need to check in online?\" \"Yes, we will send you a code on your phone.\"",
+      "correctEnglish": "Great! This means: \"Do I need to check in online?\" \"Yes, we will send you a code on your phone.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Do I need to check in online?\" \"Yes, we will send you a code on your phone.\""
+    }
+  },
+  {
+    "id": "s14-s16",
+    "italian": "\"A che ora dobbiamo essere al porto?\" \"Almeno un'ora prima della partenza.\"",
+    "english": "\"What time should we be at the port?\" \"At least one hour before departure.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il capitano ha annunciato un breve ritardo.\" \"Peccato, arriveremo tardi a cena.\"",
+      "\"Dov'è il bagno più vicino?\" \"In fondo al corridoio, dopo il bar.\"",
+      "\"Vorrei due biglietti per il traghetto per Capri.\" \"Solo andata o anche ritorno?\"",
+      "\"A che ora dobbiamo essere al porto?\" \"Almeno un'ora prima della partenza.\""
+    ],
+    "choicesEnglish": [
+      "\"The captain announced a short delay.\" \"Too bad, we'll arrive late for dinner.\"",
+      "\"Where is the nearest bathroom?\" \"At the end of the hallway, after the bar.\"",
+      "\"I'd like two tickets for the ferry to Capri.\" \"One way or return too?\"",
+      "\"What time should we be at the port?\" \"At least one hour before departure.\""
+    ],
+    "correctAnswerItalian": "\"A che ora dobbiamo essere al porto?\" \"Almeno un'ora prima della partenza.\"",
+    "correctAnswerEnglish": "\"What time should we be at the port?\" \"At least one hour before departure.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Orari di arrivo.",
+      "incorrectItalian": "No, questo dialogo significa: \"What time should we be at the port?\" \"At least one hour before departure.\"",
+      "correctEnglish": "Great! This means: \"What time should we be at the port?\" \"At least one hour before departure.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"What time should we be at the port?\" \"At least one hour before departure.\""
+    }
+  },
+  {
+    "id": "s14-s17",
+    "italian": "\"C'è lo sconto per i residenti siciliani?\" \"Sì, mostri un documento valido.\"",
+    "english": "\"Is there a discount for Sicilian residents?\" \"Yes, show a valid document.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso pagare con la carta di debito?\" \"Sì, accettiamo tutti i circuiti principali.\"",
+      "\"C'è lo sconto per i residenti siciliani?\" \"Sì, mostri un documento valido.\"",
+      "\"Quanto dura la traversata per l'isola?\" \"Circa un'ora e mezza.\"",
+      "\"C'è ancora posto nel garage della nave?\" \"Sì, ma deve sbrigarsi con l'imbarco.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I pay with a debit card?\" \"Yes, we accept all major circuits.\"",
+      "\"Is there a discount for Sicilian residents?\" \"Yes, show a valid document.\"",
+      "\"How long does the crossing to the island take?\" \"About an hour and a half.\"",
+      "\"Is there still room in the ship's garage?\" \"Yes, but you must hurry with boarding.\""
+    ],
+    "correctAnswerItalian": "\"C'è lo sconto per i residenti siciliani?\" \"Sì, mostri un documento valido.\"",
+    "correctAnswerEnglish": "\"Is there a discount for Sicilian residents?\" \"Yes, show a valid document.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Tariffe speciali.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there a discount for Sicilian residents?\" \"Yes, show a valid document.\"",
+      "correctEnglish": "Great! This means: \"Is there a discount for Sicilian residents?\" \"Yes, show a valid document.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there a discount for Sicilian residents?\" \"Yes, show a valid document.\""
+    }
+  },
+  {
+    "id": "s14-s18",
+    "italian": "\"Possiamo portare il cane sul traghetto?\" \"Sì, ma deve restare sul ponte esterno.\"",
+    "english": "\"Can we bring the dog on the ferry?\" \"Yes, but it must stay on the outer deck.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso fumare in cabina?\" \"Assolutamente no, è vietato ovunque al chiuso.\"",
+      "\"C'è un costo per cambiare il biglietto?\" \"No, per questa tariffa è gratuito.\"",
+      "\"Possiamo portare il cane sul traghetto?\" \"Sì, ma deve restare sul ponte esterno.\"",
+      "\"Posso pagare con la carta di debito?\" \"Sì, accettiamo tutti i circuiti principali.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I smoke in the cabin?\" \"Absolutely not, it's forbidden everywhere indoors.\"",
+      "\"Is there a cost to change the ticket?\" \"No, for this fare it's free.\"",
+      "\"Can we bring the dog on the ferry?\" \"Yes, but it must stay on the outer deck.\"",
+      "\"Can I pay with a debit card?\" \"Yes, we accept all major circuits.\""
+    ],
+    "correctAnswerItalian": "\"Possiamo portare il cane sul traghetto?\" \"Sì, ma deve restare sul ponte esterno.\"",
+    "correctAnswerEnglish": "\"Can we bring the dog on the ferry?\" \"Yes, but it must stay on the outer deck.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Animali a bordo.",
+      "incorrectItalian": "No, questo dialogo significa: \"Can we bring the dog on the ferry?\" \"Yes, but it must stay on the outer deck.\"",
+      "correctEnglish": "Great! This means: \"Can we bring the dog on the ferry?\" \"Yes, but it must stay on the outer deck.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Can we bring the dog on the ferry?\" \"Yes, but it must stay on the outer deck.\""
+    }
+  },
+  {
+    "id": "s14-s19",
+    "italian": "\"La nave è molto grande, ha dodici piani.\" \"Speriamo di non perderci!\"",
+    "english": "\"The ship is very large, it has twelve floors.\" \"Let's hope we don't get lost!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è molta aria sul ponte, fa freddo.\" \"Entriamo nel salone principale.\"",
+      "\"Quanto costa il supplemento per la cabina?\" \"Trenta euro per una doppia.\"",
+      "\"La nave è molto grande, ha dodici piani.\" \"Speriamo di non perderci!\"",
+      "\"Posso fumare in cabina?\" \"Assolutamente no, è vietato ovunque al chiuso.\""
+    ],
+    "choicesEnglish": [
+      "\"There's a lot of wind on the deck, it's cold.\" \"Let's go into the main lounge.\"",
+      "\"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\"",
+      "\"The ship is very large, it has twelve floors.\" \"Let's hope we don't get lost!\"",
+      "\"Can I smoke in the cabin?\" \"Absolutely not, it's forbidden everywhere indoors.\""
+    ],
+    "correctAnswerItalian": "\"La nave è molto grande, ha dodici piani.\" \"Speriamo di non perderci!\"",
+    "correctAnswerEnglish": "\"The ship is very large, it has twelve floors.\" \"Let's hope we don't get lost!\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Impressioni sulla nave.",
+      "incorrectItalian": "No, questo dialogo significa: \"The ship is very large, it has twelve floors.\" \"Let's hope we don't get lost!\"",
+      "correctEnglish": "Great! This means: \"The ship is very large, it has twelve floors.\" \"Let's hope we don't get lost!\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The ship is very large, it has twelve floors.\" \"Let's hope we don't get lost!\""
+    }
+  },
+  {
+    "id": "s14-s20",
+    "italian": "\"Il capitano ha annunciato un breve ritardo.\" \"Peccato, arriveremo tardi a cena.\"",
+    "english": "\"The captain announced a short delay.\" \"Too bad, we'll arrive late for dinner.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il capitano ha annunciato un breve ritardo.\" \"Peccato, arriveremo tardi a cena.\"",
+      "\"Posso avere una coperta per la notte?\" \"Sì, la chieda al personale in cabina.\"",
+      "\"Quanto dura la traversata per l'isola?\" \"Circa un'ora e mezza.\"",
+      "\"Qual è il numero del molo per la Sardegna?\" \"Il molo dieci, in fondo a sinistra.\""
+    ],
+    "choicesEnglish": [
+      "\"The captain announced a short delay.\" \"Too bad, we'll arrive late for dinner.\"",
+      "\"Can I have a blanket for the night?\" \"Yes, ask the cabin staff for it.\"",
+      "\"How long does the crossing to the island take?\" \"About an hour and a half.\"",
+      "\"What is the pier number for Sardinia?\" \"Pier ten, at the far left.\""
+    ],
+    "correctAnswerItalian": "\"Il capitano ha annunciato un breve ritardo.\" \"Peccato, arriveremo tardi a cena.\"",
+    "correctAnswerEnglish": "\"The captain announced a short delay.\" \"Too bad, we'll arrive late for dinner.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Notizie sul viaggio.",
+      "incorrectItalian": "No, questo dialogo significa: \"The captain announced a short delay.\" \"Too bad, we'll arrive late for dinner.\"",
+      "correctEnglish": "Great! This means: \"The captain announced a short delay.\" \"Too bad, we'll arrive late for dinner.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The captain announced a short delay.\" \"Too bad, we'll arrive late for dinner.\""
+    }
+  },
+  {
+    "id": "s14-s21",
+    "italian": "\"C'è una zona per bambini a bordo?\" \"Sì, al piano quattro vicino al cinema.\"",
+    "english": "\"Is there a kids' area on board?\" \"Yes, on floor four near the cinema.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è un bar sul ponte superiore?\" \"Sì, serve anche panini e snack.\"",
+      "\"Il mare sembra molto calmo oggi.\" \"Sì, sarà una traversata piacevole.\"",
+      "\"C'è una zona per bambini a bordo?\" \"Sì, al piano quattro vicino al cinema.\"",
+      "\"Speriamo di vedere il tramonto dal mare.\" \"Sì, sarà uno spettacolo fantastico.\""
+    ],
+    "choicesEnglish": [
+      "\"Is there a bar on the upper deck?\" \"Yes, it also serves sandwiches and snacks.\"",
+      "\"The sea looks very calm today.\" \"Yes, it will be a pleasant crossing.\"",
+      "\"Is there a kids' area on board?\" \"Yes, on floor four near the cinema.\"",
+      "\"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\""
+    ],
+    "correctAnswerItalian": "\"C'è una zona per bambini a bordo?\" \"Sì, al piano quattro vicino al cinema.\"",
+    "correctAnswerEnglish": "\"Is there a kids' area on board?\" \"Yes, on floor four near the cinema.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Servizi per famiglie.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there a kids' area on board?\" \"Yes, on floor four near the cinema.\"",
+      "correctEnglish": "Great! This means: \"Is there a kids' area on board?\" \"Yes, on floor four near the cinema.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there a kids' area on board?\" \"Yes, on floor four near the cinema.\""
+    }
+  },
+  {
+    "id": "s14-s22",
+    "italian": "\"Posso fumare in cabina?\" \"Assolutamente no, è vietato ovunque al chiuso.\"",
+    "english": "\"Can I smoke in the cabin?\" \"Absolutely not, it's forbidden everywhere indoors.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il traghetto delle dieci è già partito?\" \"Sì, è partito con cinque minuti di anticipo.\"",
+      "\"Posso fumare in cabina?\" \"Assolutamente no, è vietato ovunque al chiuso.\"",
+      "\"Il portellone del garage si sta aprendo.\" \"Torniamo in macchina per sbarcare.\"",
+      "\"Quanti passeggeri può portare questa nave?\" \"Fino a duemila persone.\""
+    ],
+    "choicesEnglish": [
+      "\"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\"",
+      "\"Can I smoke in the cabin?\" \"Absolutely not, it's forbidden everywhere indoors.\"",
+      "\"The garage hatch is opening.\" \"Let's get back in the car to disembark.\"",
+      "\"How many passengers can this ship carry?\" \"Up to two thousand people.\""
+    ],
+    "correctAnswerItalian": "\"Posso fumare in cabina?\" \"Assolutamente no, è vietato ovunque al chiuso.\"",
+    "correctAnswerEnglish": "\"Can I smoke in the cabin?\" \"Absolutely not, it's forbidden everywhere indoors.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Regole di sicurezza.",
+      "incorrectItalian": "No, questo dialogo significa: \"Can I smoke in the cabin?\" \"Absolutely not, it's forbidden everywhere indoors.\"",
+      "correctEnglish": "Great! This means: \"Can I smoke in the cabin?\" \"Absolutely not, it's forbidden everywhere indoors.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Can I smoke in the cabin?\" \"Absolutely not, it's forbidden everywhere indoors.\""
+    }
+  },
+  {
+    "id": "s14-s23",
+    "italian": "\"Il mare sembra molto calmo oggi.\" \"Sì, sarà una traversata piacevole.\"",
+    "english": "\"The sea looks very calm today.\" \"Yes, it will be a pleasant crossing.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi, dov'è l'uscita per i passeggeri a piedi?\" \"Segua le frecce gialle per il molo.\"",
+      "\"Speriamo di vedere il tramonto dal mare.\" \"Sì, sarà uno spettacolo fantastico.\"",
+      "\"Il mare sembra molto calmo oggi.\" \"Sì, sarà una traversata piacevole.\"",
+      "\"Vorrei anticipare la partenza alle tredici.\" \"Vediamo se c'è disponibilità.\""
+    ],
+    "choicesEnglish": [
+      "\"Excuse me, where is the exit for foot passengers?\" \"Follow the yellow arrows to the pier.\"",
+      "\"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\"",
+      "\"The sea looks very calm today.\" \"Yes, it will be a pleasant crossing.\"",
+      "\"I'd like to move up the departure to 1 PM.\" \"Let's see if there is availability.\""
+    ],
+    "correctAnswerItalian": "\"Il mare sembra molto calmo oggi.\" \"Sì, sarà una traversata piacevole.\"",
+    "correctAnswerEnglish": "\"The sea looks very calm today.\" \"Yes, it will be a pleasant crossing.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Condizioni meteo.",
+      "incorrectItalian": "No, questo dialogo significa: \"The sea looks very calm today.\" \"Yes, it will be a pleasant crossing.\"",
+      "correctEnglish": "Great! This means: \"The sea looks very calm today.\" \"Yes, it will be a pleasant crossing.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The sea looks very calm today.\" \"Yes, it will be a pleasant crossing.\""
+    }
+  },
+  {
+    "id": "s14-s24",
+    "italian": "\"Dobbiamo lasciare l'auto aperta nel garage?\" \"No, la chiuda e inserisca l'allarme.\"",
+    "english": "\"Do we need to leave the car open in the garage?\" \"No, close it and set the alarm.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il biglietto è andata e ritorno per lo stesso giorno?\" \"Sì, è un'offerta giornaliera.\"",
+      "\"Posso pagare con la carta di debito?\" \"Sì, accettiamo tutti i circuiti principali.\"",
+      "\"Dobbiamo lasciare l'auto aperta nel garage?\" \"No, la chiuda e inserisca l'allarme.\"",
+      "\"Posso fumare in cabina?\" \"Assolutamente no, è vietato ovunque al chiuso.\""
+    ],
+    "choicesEnglish": [
+      "\"Is the ticket round trip for the same day?\" \"Yes, it's a daily offer.\"",
+      "\"Can I pay with a debit card?\" \"Yes, we accept all major circuits.\"",
+      "\"Do we need to leave the car open in the garage?\" \"No, close it and set the alarm.\"",
+      "\"Can I smoke in the cabin?\" \"Absolutely not, it's forbidden everywhere indoors.\""
+    ],
+    "correctAnswerItalian": "\"Dobbiamo lasciare l'auto aperta nel garage?\" \"No, la chiuda e inserisca l'allarme.\"",
+    "correctAnswerEnglish": "\"Do we need to leave the car open in the garage?\" \"No, close it and set the alarm.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Istruzioni per l'auto.",
+      "incorrectItalian": "No, questo dialogo significa: \"Do we need to leave the car open in the garage?\" \"No, close it and set the alarm.\"",
+      "correctEnglish": "Great! This means: \"Do we need to leave the car open in the garage?\" \"No, close it and set the alarm.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Do we need to leave the car open in the garage?\" \"No, close it and set the alarm.\""
+    }
+  },
+  {
+    "id": "s14-s25",
+    "italian": "\"Qual è il numero del molo per la Sardegna?\" \"Il molo dieci, in fondo a sinistra.\"",
+    "english": "\"What is the pier number for Sardinia?\" \"Pier ten, at the far left.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Qual è il numero del molo per la Sardegna?\" \"Il molo dieci, in fondo a sinistra.\"",
+      "\"Quanto costa un biglietto per l'auto lunga?\" \"Dipende, se supera i cinque metri costa di più.\"",
+      "\"Grazie mille per l'aiuto con i bagagli.\" \"Prego, è un piacere.\"",
+      "\"Quanti passeggeri può portare questa nave?\" \"Fino a duemila persone.\""
+    ],
+    "choicesEnglish": [
+      "\"What is the pier number for Sardinia?\" \"Pier ten, at the far left.\"",
+      "\"How much is a ticket for a long car?\" \"It depends, if it exceeds five meters it costs more.\"",
+      "\"Thank you very much for the help with the luggage.\" \"You're welcome, it's a pleasure.\"",
+      "\"How many passengers can this ship carry?\" \"Up to two thousand people.\""
+    ],
+    "correctAnswerItalian": "\"Qual è il numero del molo per la Sardegna?\" \"Il molo dieci, in fondo a sinistra.\"",
+    "correctAnswerEnglish": "\"What is the pier number for Sardinia?\" \"Pier ten, at the far left.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Trovare l'imbarco.",
+      "incorrectItalian": "No, questo dialogo significa: \"What is the pier number for Sardinia?\" \"Pier ten, at the far left.\"",
+      "correctEnglish": "Great! This means: \"What is the pier number for Sardinia?\" \"Pier ten, at the far left.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"What is the pier number for Sardinia?\" \"Pier ten, at the far left.\""
+    }
+  },
+  {
+    "id": "s14-s26",
+    "italian": "\"C'è la connessione internet in mezzo al mare?\" \"C'è il Wi-Fi a pagamento sul ponte.\"",
+    "english": "\"Is there internet connection in the middle of the sea?\" \"There is paid Wi-Fi on the deck.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Possiamo portare il cane sul traghetto?\" \"Sì, ma deve restare sul ponte esterno.\"",
+      "\"C'è la connessione internet in mezzo al mare?\" \"C'è il Wi-Fi a pagamento sul ponte.\"",
+      "\"Si può scendere in garage durante la navigazione?\" \"No, è vietato per motivi di sicurezza.\"",
+      "\"Quanti passeggeri può portare questa nave?\" \"Fino a duemila persone.\""
+    ],
+    "choicesEnglish": [
+      "\"Can we bring the dog on the ferry?\" \"Yes, but it must stay on the outer deck.\"",
+      "\"Is there internet connection in the middle of the sea?\" \"There is paid Wi-Fi on the deck.\"",
+      "\"Can one go down to the garage during navigation?\" \"No, it's forbidden for security reasons.\"",
+      "\"How many passengers can this ship carry?\" \"Up to two thousand people.\""
+    ],
+    "correctAnswerItalian": "\"C'è la connessione internet in mezzo al mare?\" \"C'è il Wi-Fi a pagamento sul ponte.\"",
+    "correctAnswerEnglish": "\"Is there internet connection in the middle of the sea?\" \"There is paid Wi-Fi on the deck.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Tecnologia.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there internet connection in the middle of the sea?\" \"There is paid Wi-Fi on the deck.\"",
+      "correctEnglish": "Great! This means: \"Is there internet connection in the middle of the sea?\" \"There is paid Wi-Fi on the deck.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there internet connection in the middle of the sea?\" \"There is paid Wi-Fi on the deck.\""
+    }
+  },
+  {
+    "id": "s14-s27",
+    "italian": "\"Mi scusi, dov'è l'uscita per i passeggeri a piedi?\" \"Segua le frecce gialle per il molo.\"",
+    "english": "\"Excuse me, where is the exit for foot passengers?\" \"Follow the yellow arrows to the pier.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi, dov'è l'uscita per i passeggeri a piedi?\" \"Segua le frecce gialle per il molo.\"",
+      "\"Il biglietto vale anche per il bus sull'isola?\" \"No, deve comprarlo a bordo del bus.\"",
+      "\"Guardate, ci sono i delfini!\" \"Dove? Ah sì, li vedo a destra della nave.\"",
+      "\"C'è un'area fumatori esterna?\" \"Sì, a poppa sul ponte sei.\""
+    ],
+    "choicesEnglish": [
+      "\"Excuse me, where is the exit for foot passengers?\" \"Follow the yellow arrows to the pier.\"",
+      "\"Is the ticket valid for the bus on the island too?\" \"No, you must buy it on the bus.\"",
+      "\"Look, there are dolphins!\" \"Where? Ah yes, I see them to the right of the ship.\"",
+      "\"Is there an outdoor smoking area?\" \"Yes, at the stern on deck six.\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, dov'è l'uscita per i passeggeri a piedi?\" \"Segua le frecce gialle per il molo.\"",
+    "correctAnswerEnglish": "\"Excuse me, where is the exit for foot passengers?\" \"Follow the yellow arrows to the pier.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Sbarco.",
+      "incorrectItalian": "No, questo dialogo significa: \"Excuse me, where is the exit for foot passengers?\" \"Follow the yellow arrows to the pier.\"",
+      "correctEnglish": "Great! This means: \"Excuse me, where is the exit for foot passengers?\" \"Follow the yellow arrows to the pier.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Excuse me, where is the exit for foot passengers?\" \"Follow the yellow arrows to the pier.\""
+    }
+  },
+  {
+    "id": "s14-s28",
+    "italian": "\"Ho dimenticato la borsa in auto!\" \"Deve chiedere il permesso per scendere in garage.\"",
+    "english": "\"I forgot my bag in the car!\" \"You must ask for permission to go down to the garage.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il mare sembra molto calmo oggi.\" \"Sì, sarà una traversata piacevole.\"",
+      "\"Ho dimenticato la borsa in auto!\" \"Deve chiedere il permesso per scendere in garage.\"",
+      "\"Quanto costa un biglietto per l'auto lunga?\" \"Dipende, se supera i cinque metri costa di più.\"",
+      "\"Possiamo portare il cane sul traghetto?\" \"Sì, ma deve restare sul ponte esterno.\""
+    ],
+    "choicesEnglish": [
+      "\"The sea looks very calm today.\" \"Yes, it will be a pleasant crossing.\"",
+      "\"I forgot my bag in the car!\" \"You must ask for permission to go down to the garage.\"",
+      "\"How much is a ticket for a long car?\" \"It depends, if it exceeds five meters it costs more.\"",
+      "\"Can we bring the dog on the ferry?\" \"Yes, but it must stay on the outer deck.\""
+    ],
+    "correctAnswerItalian": "\"Ho dimenticato la borsa in auto!\" \"Deve chiedere il permesso per scendere in garage.\"",
+    "correctAnswerEnglish": "\"I forgot my bag in the car!\" \"You must ask for permission to go down to the garage.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Dimenticanza.",
+      "incorrectItalian": "No, questo dialogo significa: \"I forgot my bag in the car!\" \"You must ask for permission to go down to the garage.\"",
+      "correctEnglish": "Great! This means: \"I forgot my bag in the car!\" \"You must ask for permission to go down to the garage.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I forgot my bag in the car!\" \"You must ask for permission to go down to the garage.\""
+    }
+  },
+  {
+    "id": "s14-s29",
+    "italian": "\"C'è un ristorante alla carta o solo self-service?\" \"Ci sono entrambi al piano sei.\"",
+    "english": "\"Is there an a la carte restaurant or only self-service?\" \"There are both on floor six.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Dove sono i giubbotti di salvataggio?\" \"Sotto ogni poltrona e in cabina.\"",
+      "\"Ecco il mio biglietto originale.\" \"Grazie, le stampo subito quello nuovo.\"",
+      "\"Abbiamo preso il traghetto sbagliato!\" \"No, guardi, il nome sulla fiancata è corretto.\"",
+      "\"C'è un ristorante alla carta o solo self-service?\" \"Ci sono entrambi al piano sei.\""
+    ],
+    "choicesEnglish": [
+      "\"Where are the life jackets?\" \"Under every seat and in the cabin.\"",
+      "\"Here is my original ticket.\" \"Thank you, I'll print the new one for you right away.\"",
+      "\"We took the wrong ferry!\" \"No, look, the name on the side is correct.\"",
+      "\"Is there an a la carte restaurant or only self-service?\" \"There are both on floor six.\""
+    ],
+    "correctAnswerItalian": "\"C'è un ristorante alla carta o solo self-service?\" \"Ci sono entrambi al piano sei.\"",
+    "correctAnswerEnglish": "\"Is there an a la carte restaurant or only self-service?\" \"There are both on floor six.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Opzioni per mangiare.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there an a la carte restaurant or only self-service?\" \"There are both on floor six.\"",
+      "correctEnglish": "Great! This means: \"Is there an a la carte restaurant or only self-service?\" \"There are both on floor six.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there an a la carte restaurant or only self-service?\" \"There are both on floor six.\""
+    }
+  },
+  {
+    "id": "s14-s30",
+    "italian": "\"Siamo arrivati in porto?\" \"Sì, stiamo attraccando proprio ora.\"",
+    "english": "\"Have we arrived at the port?\" \"Yes, we are docking right now.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto costa il supplemento per la cabina?\" \"Trenta euro per una doppia.\"",
+      "\"Siamo arrivati in porto?\" \"Sì, stiamo attraccando proprio ora.\"",
+      "\"Il capitano ha annunciato un breve ritardo.\" \"Peccato, arriveremo tardi a cena.\"",
+      "\"C'è un bar sul ponte superiore?\" \"Sì, serve anche panini e snack.\""
+    ],
+    "choicesEnglish": [
+      "\"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\"",
+      "\"Have we arrived at the port?\" \"Yes, we are docking right now.\"",
+      "\"The captain announced a short delay.\" \"Too bad, we'll arrive late for dinner.\"",
+      "\"Is there a bar on the upper deck?\" \"Yes, it also serves sandwiches and snacks.\""
+    ],
+    "correctAnswerItalian": "\"Siamo arrivati in porto?\" \"Sì, stiamo attraccando proprio ora.\"",
+    "correctAnswerEnglish": "\"Have we arrived at the port?\" \"Yes, we are docking right now.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Arrivo.",
+      "incorrectItalian": "No, questo dialogo significa: \"Have we arrived at the port?\" \"Yes, we are docking right now.\"",
+      "correctEnglish": "Great! This means: \"Have we arrived at the port?\" \"Yes, we are docking right now.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Have we arrived at the port?\" \"Yes, we are docking right now.\""
+    }
+  },
+  {
+    "id": "s14-s31",
+    "italian": "\"Buongiorno, biglietti per l'Elba per favore.\" \"Auto o solo passeggeri?\"",
+    "english": "\"Good morning, tickets for Elba please.\" \"Car or passengers only?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Buongiorno, biglietti per l'Elba per favore.\" \"Auto o solo passeggeri?\"",
+      "\"C'è un medico a bordo in caso di emergenza?\" \"Sì, c'è un'infermeria al piano tre.\"",
+      "\"Grazie mille per l'aiuto con i bagagli.\" \"Prego, è un piacere.\"",
+      "\"C'è ancora posto nel garage della nave?\" \"Sì, ma deve sbrigarsi con l'imbarco.\""
+    ],
+    "choicesEnglish": [
+      "\"Good morning, tickets for Elba please.\" \"Car or passengers only?\"",
+      "\"Is there a doctor on board in case of emergency?\" \"Yes, there is an infirmary on floor three.\"",
+      "\"Thank you very much for the help with the luggage.\" \"You're welcome, it's a pleasure.\"",
+      "\"Is there still room in the ship's garage?\" \"Yes, but you must hurry with boarding.\""
+    ],
+    "correctAnswerItalian": "\"Buongiorno, biglietti per l'Elba per favore.\" \"Auto o solo passeggeri?\"",
+    "correctAnswerEnglish": "\"Good morning, tickets for Elba please.\" \"Car or passengers only?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Acquisto rapido.",
+      "incorrectItalian": "No, questo dialogo significa: \"Good morning, tickets for Elba please.\" \"Car or passengers only?\"",
+      "correctEnglish": "Great! This means: \"Good morning, tickets for Elba please.\" \"Car or passengers only?\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Good morning, tickets for Elba please.\" \"Car or passengers only?\""
+    }
+  },
+  {
+    "id": "s14-s32",
+    "italian": "\"Quanto costa il supplemento per la cabina?\" \"Trenta euro per una doppia.\"",
+    "english": "\"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto dura la traversata per l'isola?\" \"Circa un'ora e mezza.\"",
+      "\"Quanto costa il supplemento per la cabina?\" \"Trenta euro per una doppia.\"",
+      "\"Il mare sembra molto calmo oggi.\" \"Sì, sarà una traversata piacevole.\"",
+      "\"Speriamo di vedere il tramonto dal mare.\" \"Sì, sarà uno spettacolo fantastico.\""
+    ],
+    "choicesEnglish": [
+      "\"How long does the crossing to the island take?\" \"About an hour and a half.\"",
+      "\"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\"",
+      "\"The sea looks very calm today.\" \"Yes, it will be a pleasant crossing.\"",
+      "\"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\""
+    ],
+    "correctAnswerItalian": "\"Quanto costa il supplemento per la cabina?\" \"Trenta euro per una doppia.\"",
+    "correctAnswerEnglish": "\"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Upgrade viaggio.",
+      "incorrectItalian": "No, questo dialogo significa: \"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\"",
+      "correctEnglish": "Great! This means: \"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\""
+    }
+  },
+  {
+    "id": "s14-s33",
+    "italian": "\"Il traghetto delle dieci è già partito?\" \"Sì, è partito con cinque minuti di anticipo.\"",
+    "english": "\"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Abbiamo preso il traghetto sbagliato!\" \"No, guardi, il nome sulla fiancata è corretto.\"",
+      "\"Il traghetto delle dieci è già partito?\" \"Sì, è partito con cinque minuti di anticipo.\"",
+      "\"C'è molta aria sul ponte, fa freddo.\" \"Entriamo nel salone principale.\"",
+      "\"Quanti passeggeri può portare questa nave?\" \"Fino a duemila persone.\""
+    ],
+    "choicesEnglish": [
+      "\"We took the wrong ferry!\" \"No, look, the name on the side is correct.\"",
+      "\"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\"",
+      "\"There's a lot of wind on the deck, it's cold.\" \"Let's go into the main lounge.\"",
+      "\"How many passengers can this ship carry?\" \"Up to two thousand people.\""
+    ],
+    "correctAnswerItalian": "\"Il traghetto delle dieci è già partito?\" \"Sì, è partito con cinque minuti di anticipo.\"",
+    "correctAnswerEnglish": "\"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Informazione orari.",
+      "incorrectItalian": "No, questo dialogo significa: \"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\"",
+      "correctEnglish": "Great! This means: \"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\""
+    }
+  },
+  {
+    "id": "s14-s34",
+    "italian": "\"È possibile rimborsare il biglietto?\" \"Solo se ha l'assicurazione annullamento.\"",
+    "english": "\"Is it possible to refund the ticket?\" \"Only if you have cancellation insurance.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il portellone del garage si sta aprendo.\" \"Torniamo in macchina per sbarcare.\"",
+      "\"È possibile rimborsare il biglietto?\" \"Solo se ha l'assicurazione annullamento.\"",
+      "\"La nave è molto grande, ha dodici piani.\" \"Speriamo di non perderci!\"",
+      "\"C'è l'aria condizionata troppo forte qui.\" \"Spostiamoci in una zona più calda.\""
+    ],
+    "choicesEnglish": [
+      "\"The garage hatch is opening.\" \"Let's get back in the car to disembark.\"",
+      "\"Is it possible to refund the ticket?\" \"Only if you have cancellation insurance.\"",
+      "\"The ship is very large, it has twelve floors.\" \"Let's hope we don't get lost!\"",
+      "\"The air conditioning is too strong here.\" \"Let's move to a warmer area.\""
+    ],
+    "correctAnswerItalian": "\"È possibile rimborsare il biglietto?\" \"Solo se ha l'assicurazione annullamento.\"",
+    "correctAnswerEnglish": "\"Is it possible to refund the ticket?\" \"Only if you have cancellation insurance.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Politiche di rimborso.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is it possible to refund the ticket?\" \"Only if you have cancellation insurance.\"",
+      "correctEnglish": "Great! This means: \"Is it possible to refund the ticket?\" \"Only if you have cancellation insurance.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is it possible to refund the ticket?\" \"Only if you have cancellation insurance.\""
+    }
+  },
+  {
+    "id": "s14-s35",
+    "italian": "\"Dove posso caricare il telefono?\" \"Ci sono delle prese vicino alle poltrone.\"",
+    "english": "\"Where can I charge my phone?\" \"There are sockets near the armchairs.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Dove sono i giubbotti di salvataggio?\" \"Sotto ogni poltrona e in cabina.\"",
+      "\"Dove posso caricare il telefono?\" \"Ci sono delle prese vicino alle poltrone.\"",
+      "\"La nave oscilla un po'.\" \"Non si preoccupi, è normale con questo vento.\"",
+      "\"La nave è molto grande, ha dodici piani.\" \"Speriamo di non perderci!\""
+    ],
+    "choicesEnglish": [
+      "\"Where are the life jackets?\" \"Under every seat and in the cabin.\"",
+      "\"Where can I charge my phone?\" \"There are sockets near the armchairs.\"",
+      "\"The ship is swaying a bit.\" \"Don't worry, it's normal with this wind.\"",
+      "\"The ship is very large, it has twelve floors.\" \"Let's hope we don't get lost!\""
+    ],
+    "correctAnswerItalian": "\"Dove posso caricare il telefono?\" \"Ci sono delle prese vicino alle poltrone.\"",
+    "correctAnswerEnglish": "\"Where can I charge my phone?\" \"There are sockets near the armchairs.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Energia.",
+      "incorrectItalian": "No, questo dialogo significa: \"Where can I charge my phone?\" \"There are sockets near the armchairs.\"",
+      "correctEnglish": "Great! This means: \"Where can I charge my phone?\" \"There are sockets near the armchairs.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Where can I charge my phone?\" \"There are sockets near the armchairs.\""
+    }
+  },
+  {
+    "id": "s14-s36",
+    "italian": "\"C'è molta aria sul ponte, fa freddo.\" \"Entriamo nel salone principale.\"",
+    "english": "\"There's a lot of wind on the deck, it's cold.\" \"Let's go into the main lounge.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il biglietto vale anche per il bus sull'isola?\" \"No, deve comprarlo a bordo del bus.\"",
+      "\"C'è molta aria sul ponte, fa freddo.\" \"Entriamo nel salone principale.\"",
+      "\"Quanto dista il porto dal centro città?\" \"Circa un chilometro, c'è un bus navetta.\"",
+      "\"C'è l'aria condizionata troppo forte qui.\" \"Spostiamoci in una zona più calda.\""
+    ],
+    "choicesEnglish": [
+      "\"Is the ticket valid for the bus on the island too?\" \"No, you must buy it on the bus.\"",
+      "\"There's a lot of wind on the deck, it's cold.\" \"Let's go into the main lounge.\"",
+      "\"How far is the port from the city center?\" \"About one kilometer, there is a shuttle bus.\"",
+      "\"The air conditioning is too strong here.\" \"Let's move to a warmer area.\""
+    ],
+    "correctAnswerItalian": "\"C'è molta aria sul ponte, fa freddo.\" \"Entriamo nel salone principale.\"",
+    "correctAnswerEnglish": "\"There's a lot of wind on the deck, it's cold.\" \"Let's go into the main lounge.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Meteo di bordo.",
+      "incorrectItalian": "No, questo dialogo significa: \"There's a lot of wind on the deck, it's cold.\" \"Let's go into the main lounge.\"",
+      "correctEnglish": "Great! This means: \"There's a lot of wind on the deck, it's cold.\" \"Let's go into the main lounge.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"There's a lot of wind on the deck, it's cold.\" \"Let's go into the main lounge.\""
+    }
+  },
+  {
+    "id": "s14-s37",
+    "italian": "\"Guardate, ci sono i delfini!\" \"Dove? Ah sì, li vedo a destra della nave.\"",
+    "english": "\"Look, there are dolphins!\" \"Where? Ah yes, I see them to the right of the ship.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi, dov'è l'uscita per i passeggeri a piedi?\" \"Segua le frecce gialle per il molo.\"",
+      "\"Andata e ritorno, per favore.\" \"Il prossimo parte tra venti minuti.\"",
+      "\"C'è molta aria sul ponte, fa freddo.\" \"Entriamo nel salone principale.\"",
+      "\"Guardate, ci sono i delfini!\" \"Dove? Ah sì, li vedo a destra della nave.\""
+    ],
+    "choicesEnglish": [
+      "\"Excuse me, where is the exit for foot passengers?\" \"Follow the yellow arrows to the pier.\"",
+      "\"Round trip, please.\" \"The next one leaves in twenty minutes.\"",
+      "\"There's a lot of wind on the deck, it's cold.\" \"Let's go into the main lounge.\"",
+      "\"Look, there are dolphins!\" \"Where? Ah yes, I see them to the right of the ship.\""
+    ],
+    "correctAnswerItalian": "\"Guardate, ci sono i delfini!\" \"Dove? Ah sì, li vedo a destra della nave.\"",
+    "correctAnswerEnglish": "\"Look, there are dolphins!\" \"Where? Ah yes, I see them to the right of the ship.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Avvistamenti.",
+      "incorrectItalian": "No, questo dialogo significa: \"Look, there are dolphins!\" \"Where? Ah yes, I see them to the right of the ship.\"",
+      "correctEnglish": "Great! This means: \"Look, there are dolphins!\" \"Where? Ah yes, I see them to the right of the ship.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Look, there are dolphins!\" \"Where? Ah yes, I see them to the right of the ship.\""
+    }
+  },
+  {
+    "id": "s14-s38",
+    "italian": "\"Il portellone del garage si sta aprendo.\" \"Torniamo in macchina per sbarcare.\"",
+    "english": "\"The garage hatch is opening.\" \"Let's get back in the car to disembark.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è un ristorante alla carta o solo self-service?\" \"Ci sono entrambi al piano sei.\"",
+      "\"C'è molta aria sul ponte, fa freddo.\" \"Entriamo nel salone principale.\"",
+      "\"C'è lo sconto per i residenti siciliani?\" \"Sì, mostri un documento valido.\"",
+      "\"Il portellone del garage si sta aprendo.\" \"Torniamo in macchina per sbarcare.\""
+    ],
+    "choicesEnglish": [
+      "\"Is there an a la carte restaurant or only self-service?\" \"There are both on floor six.\"",
+      "\"There's a lot of wind on the deck, it's cold.\" \"Let's go into the main lounge.\"",
+      "\"Is there a discount for Sicilian residents?\" \"Yes, show a valid document.\"",
+      "\"The garage hatch is opening.\" \"Let's get back in the car to disembark.\""
+    ],
+    "correctAnswerItalian": "\"Il portellone del garage si sta aprendo.\" \"Torniamo in macchina per sbarcare.\"",
+    "correctAnswerEnglish": "\"The garage hatch is opening.\" \"Let's get back in the car to disembark.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Fase di sbarco.",
+      "incorrectItalian": "No, questo dialogo significa: \"The garage hatch is opening.\" \"Let's get back in the car to disembark.\"",
+      "correctEnglish": "Great! This means: \"The garage hatch is opening.\" \"Let's get back in the car to disembark.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The garage hatch is opening.\" \"Let's get back in the car to disembark.\""
+    }
+  },
+  {
+    "id": "s14-s39",
+    "italian": "\"Siamo in ritardo per la coincidenza?\" \"No, la nave recupererà tempo in mare.\"",
+    "english": "\"Are we late for the connection?\" \"No, the ship will make up time at sea.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è una zona per bambini a bordo?\" \"Sì, al piano quattro vicino al cinema.\"",
+      "\"Il traghetto delle dieci è già partito?\" \"Sì, è partito con cinque minuti di anticipo.\"",
+      "\"Siamo in ritardo per la coincidenza?\" \"No, la nave recupererà tempo in mare.\"",
+      "\"Il portellone del garage si sta aprendo.\" \"Torniamo in macchina per sbarcare.\""
+    ],
+    "choicesEnglish": [
+      "\"Is there a kids' area on board?\" \"Yes, on floor four near the cinema.\"",
+      "\"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\"",
+      "\"Are we late for the connection?\" \"No, the ship will make up time at sea.\"",
+      "\"The garage hatch is opening.\" \"Let's get back in the car to disembark.\""
+    ],
+    "correctAnswerItalian": "\"Siamo in ritardo per la coincidenza?\" \"No, la nave recupererà tempo in mare.\"",
+    "correctAnswerEnglish": "\"Are we late for the connection?\" \"No, the ship will make up time at sea.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Preoccupazione ritardi.",
+      "incorrectItalian": "No, questo dialogo significa: \"Are we late for the connection?\" \"No, the ship will make up time at sea.\"",
+      "correctEnglish": "Great! This means: \"Are we late for the connection?\" \"No, the ship will make up time at sea.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Are we late for the connection?\" \"No, the ship will make up time at sea.\""
+    }
+  },
+  {
+    "id": "s14-s40",
+    "italian": "\"Posso pagare con la carta di debito?\" \"Sì, accettiamo tutti i circuiti principali.\"",
+    "english": "\"Can I pay with a debit card?\" \"Yes, we accept all major circuits.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è l'aria condizionata troppo forte qui.\" \"Spostiamoci in una zona più calda.\"",
+      "\"Posso pagare con la carta di debito?\" \"Sì, accettiamo tutti i circuiti principali.\"",
+      "\"Vorrei anticipare la partenza alle tredici.\" \"Vediamo se c'è disponibilità.\"",
+      "\"C'è un'area fumatori esterna?\" \"Sì, a poppa sul ponte sei.\""
+    ],
+    "choicesEnglish": [
+      "\"The air conditioning is too strong here.\" \"Let's move to a warmer area.\"",
+      "\"Can I pay with a debit card?\" \"Yes, we accept all major circuits.\"",
+      "\"I'd like to move up the departure to 1 PM.\" \"Let's see if there is availability.\"",
+      "\"Is there an outdoor smoking area?\" \"Yes, at the stern on deck six.\""
+    ],
+    "correctAnswerItalian": "\"Posso pagare con la carta di debito?\" \"Sì, accettiamo tutti i circuiti principali.\"",
+    "correctAnswerEnglish": "\"Can I pay with a debit card?\" \"Yes, we accept all major circuits.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Pagamento.",
+      "incorrectItalian": "No, questo dialogo significa: \"Can I pay with a debit card?\" \"Yes, we accept all major circuits.\"",
+      "correctEnglish": "Great! This means: \"Can I pay with a debit card?\" \"Yes, we accept all major circuits.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Can I pay with a debit card?\" \"Yes, we accept all major circuits.\""
+    }
+  },
+  {
+    "id": "s14-s41",
+    "italian": "\"C'è l'aria condizionata troppo forte qui.\" \"Spostiamoci in una zona più calda.\"",
+    "english": "\"The air conditioning is too strong here.\" \"Let's move to a warmer area.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è l'aria condizionata troppo forte qui.\" \"Spostiamoci in una zona più calda.\"",
+      "\"C'è un bar sul ponte superiore?\" \"Sì, serve anche panini e snack.\"",
+      "\"Speriamo di vedere il tramonto dal mare.\" \"Sì, sarà uno spettacolo fantastico.\"",
+      "\"Mi scusi, dov'è l'uscita per i passeggeri a piedi?\" \"Segua le frecce gialle per il molo.\""
+    ],
+    "choicesEnglish": [
+      "\"The air conditioning is too strong here.\" \"Let's move to a warmer area.\"",
+      "\"Is there a bar on the upper deck?\" \"Yes, it also serves sandwiches and snacks.\"",
+      "\"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\"",
+      "\"Excuse me, where is the exit for foot passengers?\" \"Follow the yellow arrows to the pier.\""
+    ],
+    "correctAnswerItalian": "\"C'è l'aria condizionata troppo forte qui.\" \"Spostiamoci in una zona più calda.\"",
+    "correctAnswerEnglish": "\"The air conditioning is too strong here.\" \"Let's move to a warmer area.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Comfort.",
+      "incorrectItalian": "No, questo dialogo significa: \"The air conditioning is too strong here.\" \"Let's move to a warmer area.\"",
+      "correctEnglish": "Great! This means: \"The air conditioning is too strong here.\" \"Let's move to a warmer area.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The air conditioning is too strong here.\" \"Let's move to a warmer area.\""
+    }
+  },
+  {
+    "id": "s14-s42",
+    "italian": "\"Il biglietto vale anche per il bus sull'isola?\" \"No, deve comprarlo a bordo del bus.\"",
+    "english": "\"Is the ticket valid for the bus on the island too?\" \"No, you must buy it on the bus.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Guardate, ci sono i delfini!\" \"Dove? Ah sì, li vedo a destra della nave.\"",
+      "\"Dobbiamo consegnare le chiavi della cabina?\" \"Sì, alla reception prima di scendere.\"",
+      "\"Il biglietto vale anche per il bus sull'isola?\" \"No, deve comprarlo a bordo del bus.\"",
+      "\"C'è un medico a bordo in caso di emergenza?\" \"Sì, c'è un'infermeria al piano tre.\""
+    ],
+    "choicesEnglish": [
+      "\"Look, there are dolphins!\" \"Where? Ah yes, I see them to the right of the ship.\"",
+      "\"Do we need to hand in the cabin keys?\" \"Yes, at the reception before going down.\"",
+      "\"Is the ticket valid for the bus on the island too?\" \"No, you must buy it on the bus.\"",
+      "\"Is there a doctor on board in case of emergency?\" \"Yes, there is an infirmary on floor three.\""
+    ],
+    "correctAnswerItalian": "\"Il biglietto vale anche per il bus sull'isola?\" \"No, deve comprarlo a bordo del bus.\"",
+    "correctAnswerEnglish": "\"Is the ticket valid for the bus on the island too?\" \"No, you must buy it on the bus.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Integrazione trasporti.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is the ticket valid for the bus on the island too?\" \"No, you must buy it on the bus.\"",
+      "correctEnglish": "Great! This means: \"Is the ticket valid for the bus on the island too?\" \"No, you must buy it on the bus.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is the ticket valid for the bus on the island too?\" \"No, you must buy it on the bus.\""
+    }
+  },
+  {
+    "id": "s14-s43",
+    "italian": "\"Quanti passeggeri può portare questa nave?\" \"Fino a duemila persone.\"",
+    "english": "\"How many passengers can this ship carry?\" \"Up to two thousand people.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto costa il supplemento per la cabina?\" \"Trenta euro per una doppia.\"",
+      "\"Quanti passeggeri può portare questa nave?\" \"Fino a duemila persone.\"",
+      "\"Vorrei imbarcare anche l'auto per la Sardegna.\" \"Qual è la lunghezza del veicolo?\"",
+      "\"La nave oscilla un po'.\" \"Non si preoccupi, è normale con questo vento.\""
+    ],
+    "choicesEnglish": [
+      "\"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\"",
+      "\"How many passengers can this ship carry?\" \"Up to two thousand people.\"",
+      "\"I'd like to board the car for Sardinia too.\" \"What is the length of the vehicle?\"",
+      "\"The ship is swaying a bit.\" \"Don't worry, it's normal with this wind.\""
+    ],
+    "correctAnswerItalian": "\"Quanti passeggeri può portare questa nave?\" \"Fino a duemila persone.\"",
+    "correctAnswerEnglish": "\"How many passengers can this ship carry?\" \"Up to two thousand people.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Curiosità.",
+      "incorrectItalian": "No, questo dialogo significa: \"How many passengers can this ship carry?\" \"Up to two thousand people.\"",
+      "correctEnglish": "Great! This means: \"How many passengers can this ship carry?\" \"Up to two thousand people.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"How many passengers can this ship carry?\" \"Up to two thousand people.\""
+    }
+  },
+  {
+    "id": "s14-s44",
+    "italian": "\"Dobbiamo consegnare le chiavi della cabina?\" \"Sì, alla reception prima di scendere.\"",
+    "english": "\"Do we need to hand in the cabin keys?\" \"Yes, at the reception before going down.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"È possibile rimborsare il biglietto?\" \"Solo se ha l'assicurazione annullamento.\"",
+      "\"Quanti passeggeri può portare questa nave?\" \"Fino a duemila persone.\"",
+      "\"Il traghetto delle dieci è già partito?\" \"Sì, è partito con cinque minuti di anticipo.\"",
+      "\"Dobbiamo consegnare le chiavi della cabina?\" \"Sì, alla reception prima di scendere.\""
+    ],
+    "choicesEnglish": [
+      "\"Is it possible to refund the ticket?\" \"Only if you have cancellation insurance.\"",
+      "\"How many passengers can this ship carry?\" \"Up to two thousand people.\"",
+      "\"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\"",
+      "\"Do we need to hand in the cabin keys?\" \"Yes, at the reception before going down.\""
+    ],
+    "correctAnswerItalian": "\"Dobbiamo consegnare le chiavi della cabina?\" \"Sì, alla reception prima di scendere.\"",
+    "correctAnswerEnglish": "\"Do we need to hand in the cabin keys?\" \"Yes, at the reception before going down.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Fine soggiorno.",
+      "incorrectItalian": "No, questo dialogo significa: \"Do we need to hand in the cabin keys?\" \"Yes, at the reception before going down.\"",
+      "correctEnglish": "Great! This means: \"Do we need to hand in the cabin keys?\" \"Yes, at the reception before going down.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Do we need to hand in the cabin keys?\" \"Yes, at the reception before going down.\""
+    }
+  },
+  {
+    "id": "s14-s45",
+    "italian": "\"Il panorama della costa è bellissimo.\" \"Sì, facciamo una foto insieme.\"",
+    "english": "\"The view of the coast is beautiful.\" \"Yes, let's take a photo together.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Le scialuppe sono state controllate ieri.\" \"Bene, mi sento più sicuro.\"",
+      "\"Si può scendere in garage durante la navigazione?\" \"No, è vietato per motivi di sicurezza.\"",
+      "\"Il panorama della costa è bellissimo.\" \"Sì, facciamo una foto insieme.\"",
+      "\"Il biglietto vale anche per il bus sull'isola?\" \"No, deve comprarlo a bordo del bus.\""
+    ],
+    "choicesEnglish": [
+      "\"The lifeboats were checked yesterday.\" \"Good, I feel safer.\"",
+      "\"Can one go down to the garage during navigation?\" \"No, it's forbidden for security reasons.\"",
+      "\"The view of the coast is beautiful.\" \"Yes, let's take a photo together.\"",
+      "\"Is the ticket valid for the bus on the island too?\" \"No, you must buy it on the bus.\""
+    ],
+    "correctAnswerItalian": "\"Il panorama della costa è bellissimo.\" \"Sì, facciamo una foto insieme.\"",
+    "correctAnswerEnglish": "\"The view of the coast is beautiful.\" \"Yes, let's take a photo together.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Turismo.",
+      "incorrectItalian": "No, questo dialogo significa: \"The view of the coast is beautiful.\" \"Yes, let's take a photo together.\"",
+      "correctEnglish": "Great! This means: \"The view of the coast is beautiful.\" \"Yes, let's take a photo together.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The view of the coast is beautiful.\" \"Yes, let's take a photo together.\""
+    }
+  },
+  {
+    "id": "s14-s46",
+    "italian": "\"C'è un medico a bordo in caso di emergenza?\" \"Sì, c'è un'infermeria al piano tre.\"",
+    "english": "\"Is there a doctor on board in case of emergency?\" \"Yes, there is an infirmary on floor three.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Da quale molo parte la nave?\" \"Dal molo numero tre, a destra.\"",
+      "\"Il biglietto vale anche per il bus sull'isola?\" \"No, deve comprarlo a bordo del bus.\"",
+      "\"Il capitano ha annunciato un breve ritardo.\" \"Peccato, arriveremo tardi a cena.\"",
+      "\"C'è un medico a bordo in caso di emergenza?\" \"Sì, c'è un'infermeria al piano tre.\""
+    ],
+    "choicesEnglish": [
+      "\"From which pier does the ship leave?\" \"From pier number three, on the right.\"",
+      "\"Is the ticket valid for the bus on the island too?\" \"No, you must buy it on the bus.\"",
+      "\"The captain announced a short delay.\" \"Too bad, we'll arrive late for dinner.\"",
+      "\"Is there a doctor on board in case of emergency?\" \"Yes, there is an infirmary on floor three.\""
+    ],
+    "correctAnswerItalian": "\"C'è un medico a bordo in caso di emergenza?\" \"Sì, c'è un'infermeria al piano tre.\"",
+    "correctAnswerEnglish": "\"Is there a doctor on board in case of emergency?\" \"Yes, there is an infirmary on floor three.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Salute.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there a doctor on board in case of emergency?\" \"Yes, there is an infirmary on floor three.\"",
+      "correctEnglish": "Great! This means: \"Is there a doctor on board in case of emergency?\" \"Yes, there is an infirmary on floor three.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there a doctor on board in case of emergency?\" \"Yes, there is an infirmary on floor three.\""
+    }
+  },
+  {
+    "id": "s14-s47",
+    "italian": "\"Quanto dista il porto dal centro città?\" \"Circa un chilometro, c'è un bus navetta.\"",
+    "english": "\"How far is the port from the city center?\" \"About one kilometer, there is a shuttle bus.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Vorrei anticipare la partenza alle tredici.\" \"Vediamo se c'è disponibilità.\"",
+      "\"Quanto costa il supplemento per la cabina?\" \"Trenta euro per una doppia.\"",
+      "\"Quanto dista il porto dal centro città?\" \"Circa un chilometro, c'è un bus navetta.\"",
+      "\"C'è ancora posto nel garage della nave?\" \"Sì, ma deve sbrigarsi con l'imbarco.\""
+    ],
+    "choicesEnglish": [
+      "\"I'd like to move up the departure to 1 PM.\" \"Let's see if there is availability.\"",
+      "\"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\"",
+      "\"How far is the port from the city center?\" \"About one kilometer, there is a shuttle bus.\"",
+      "\"Is there still room in the ship's garage?\" \"Yes, but you must hurry with boarding.\""
+    ],
+    "correctAnswerItalian": "\"Quanto dista il porto dal centro città?\" \"Circa un chilometro, c'è un bus navetta.\"",
+    "correctAnswerEnglish": "\"How far is the port from the city center?\" \"About one kilometer, there is a shuttle bus.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Logistica.",
+      "incorrectItalian": "No, questo dialogo significa: \"How far is the port from the city center?\" \"About one kilometer, there is a shuttle bus.\"",
+      "correctEnglish": "Great! This means: \"How far is the port from the city center?\" \"About one kilometer, there is a shuttle bus.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"How far is the port from the city center?\" \"About one kilometer, there is a shuttle bus.\""
+    }
+  },
+  {
+    "id": "s14-s48",
+    "italian": "\"Abbiamo preso il traghetto sbagliato!\" \"No, guardi, il nome sulla fiancata è corretto.\"",
+    "english": "\"We took the wrong ferry!\" \"No, look, the name on the side is correct.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Abbiamo preso il traghetto sbagliato!\" \"No, guardi, il nome sulla fiancata è corretto.\"",
+      "\"C'è la connessione internet in mezzo al mare?\" \"C'è il Wi-Fi a pagamento sul ponte.\"",
+      "\"Posso avere una coperta per la notte?\" \"Sì, la chieda al personale in cabina.\"",
+      "\"Qual è il numero del molo per la Sardegna?\" \"Il molo dieci, in fondo a sinistra.\""
+    ],
+    "choicesEnglish": [
+      "\"We took the wrong ferry!\" \"No, look, the name on the side is correct.\"",
+      "\"Is there internet connection in the middle of the sea?\" \"There is paid Wi-Fi on the deck.\"",
+      "\"Can I have a blanket for the night?\" \"Yes, ask the cabin staff for it.\"",
+      "\"What is the pier number for Sardinia?\" \"Pier ten, at the far left.\""
+    ],
+    "correctAnswerItalian": "\"Abbiamo preso il traghetto sbagliato!\" \"No, guardi, il nome sulla fiancata è corretto.\"",
+    "correctAnswerEnglish": "\"We took the wrong ferry!\" \"No, look, the name on the side is correct.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Paura di sbagliare.",
+      "incorrectItalian": "No, questo dialogo significa: \"We took the wrong ferry!\" \"No, look, the name on the side is correct.\"",
+      "correctEnglish": "Great! This means: \"We took the wrong ferry!\" \"No, look, the name on the side is correct.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"We took the wrong ferry!\" \"No, look, the name on the side is correct.\""
+    }
+  },
+  {
+    "id": "s14-s49",
+    "italian": "\"Si può scendere in garage durante la navigazione?\" \"No, è vietato per motivi di sicurezza.\"",
+    "english": "\"Can one go down to the garage during navigation?\" \"No, it's forbidden for security reasons.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo pronti per la manovra di attracco?\" \"Sì, tutti i passeggeri devono lasciare i ponti esterni.\"",
+      "\"C'è un ristorante alla carta o solo self-service?\" \"Ci sono entrambi al piano sei.\"",
+      "\"Si può scendere in garage durante la navigazione?\" \"No, è vietato per motivi di sicurezza.\"",
+      "\"C'è un'area fumatori esterna?\" \"Sì, a poppa sul ponte sei.\""
+    ],
+    "choicesEnglish": [
+      "\"Are we ready for the docking maneuver?\" \"Yes, all passengers must leave the outer decks.\"",
+      "\"Is there an a la carte restaurant or only self-service?\" \"There are both on floor six.\"",
+      "\"Can one go down to the garage during navigation?\" \"No, it's forbidden for security reasons.\"",
+      "\"Is there an outdoor smoking area?\" \"Yes, at the stern on deck six.\""
+    ],
+    "correctAnswerItalian": "\"Si può scendere in garage durante la navigazione?\" \"No, è vietato per motivi di sicurezza.\"",
+    "correctAnswerEnglish": "\"Can one go down to the garage during navigation?\" \"No, it's forbidden for security reasons.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Regole strette.",
+      "incorrectItalian": "No, questo dialogo significa: \"Can one go down to the garage during navigation?\" \"No, it's forbidden for security reasons.\"",
+      "correctEnglish": "Great! This means: \"Can one go down to the garage during navigation?\" \"No, it's forbidden for security reasons.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Can one go down to the garage during navigation?\" \"No, it's forbidden for security reasons.\""
+    }
+  },
+  {
+    "id": "s14-s50",
+    "italian": "\"Grazie mille per l'aiuto con i bagagli.\" \"Prego, è un piacere.\"",
+    "english": "\"Thank you very much for the help with the luggage.\" \"You're welcome, it's a pleasure.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Da quale molo parte la nave?\" \"Dal molo numero tre, a destra.\"",
+      "\"Grazie mille per l'aiuto con i bagagli.\" \"Prego, è un piacere.\"",
+      "\"Vorrei due biglietti per il traghetto per Capri.\" \"Solo andata o anche ritorno?\"",
+      "\"Quanti passeggeri può portare questa nave?\" \"Fino a duemila persone.\""
+    ],
+    "choicesEnglish": [
+      "\"From which pier does the ship leave?\" \"From pier number three, on the right.\"",
+      "\"Thank you very much for the help with the luggage.\" \"You're welcome, it's a pleasure.\"",
+      "\"I'd like two tickets for the ferry to Capri.\" \"One way or return too?\"",
+      "\"How many passengers can this ship carry?\" \"Up to two thousand people.\""
+    ],
+    "correctAnswerItalian": "\"Grazie mille per l'aiuto con i bagagli.\" \"Prego, è un piacere.\"",
+    "correctAnswerEnglish": "\"Thank you very much for the help with the luggage.\" \"You're welcome, it's a pleasure.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Cortesia personale.",
+      "incorrectItalian": "No, questo dialogo significa: \"Thank you very much for the help with the luggage.\" \"You're welcome, it's a pleasure.\"",
+      "correctEnglish": "Great! This means: \"Thank you very much for the help with the luggage.\" \"You're welcome, it's a pleasure.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Thank you very much for the help with the luggage.\" \"You're welcome, it's a pleasure.\""
+    }
+  },
+  {
+    "id": "s14-s51",
+    "italian": "\"Il bar chiude trenta minuti prima dell'arrivo.\" \"Allora prendiamo l'ultimo caffè subito.\"",
+    "english": "\"The bar closes thirty minutes before arrival.\" \"Then let's have the last coffee now.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto costa il supplemento per la cabina?\" \"Trenta euro per una doppia.\"",
+      "\"Quanto costa un biglietto per l'auto lunga?\" \"Dipende, se supera i cinque metri costa di più.\"",
+      "\"Il bar chiude trenta minuti prima dell'arrivo.\" \"Allora prendiamo l'ultimo caffè subito.\"",
+      "\"Siamo pronti per la manovra di attracco?\" \"Sì, tutti i passeggeri devono lasciare i ponti esterni.\""
+    ],
+    "choicesEnglish": [
+      "\"How much is the surcharge for the cabin?\" \"Thirty euros for a double.\"",
+      "\"How much is a ticket for a long car?\" \"It depends, if it exceeds five meters it costs more.\"",
+      "\"The bar closes thirty minutes before arrival.\" \"Then let's have the last coffee now.\"",
+      "\"Are we ready for the docking maneuver?\" \"Yes, all passengers must leave the outer decks.\""
+    ],
+    "correctAnswerItalian": "\"Il bar chiude trenta minuti prima dell'arrivo.\" \"Allora prendiamo l'ultimo caffè subito.\"",
+    "correctAnswerEnglish": "\"The bar closes thirty minutes before arrival.\" \"Then let's have the last coffee now.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Orari servizi.",
+      "incorrectItalian": "No, questo dialogo significa: \"The bar closes thirty minutes before arrival.\" \"Then let's have the last coffee now.\"",
+      "correctEnglish": "Great! This means: \"The bar closes thirty minutes before arrival.\" \"Then let's have the last coffee now.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The bar closes thirty minutes before arrival.\" \"Then let's have the last coffee now.\""
+    }
+  },
+  {
+    "id": "s14-s52",
+    "italian": "\"C'è un'area fumatori esterna?\" \"Sì, a poppa sul ponte sei.\"",
+    "english": "\"Is there an outdoor smoking area?\" \"Yes, at the stern on deck six.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è un'area fumatori esterna?\" \"Sì, a poppa sul ponte sei.\"",
+      "\"Il panorama della costa è bellissimo.\" \"Sì, facciamo una foto insieme.\"",
+      "\"Il portellone del garage si sta aprendo.\" \"Torniamo in macchina per sbarcare.\"",
+      "\"C'è la connessione internet in mezzo al mare?\" \"C'è il Wi-Fi a pagamento sul ponte.\""
+    ],
+    "choicesEnglish": [
+      "\"Is there an outdoor smoking area?\" \"Yes, at the stern on deck six.\"",
+      "\"The view of the coast is beautiful.\" \"Yes, let's take a photo together.\"",
+      "\"The garage hatch is opening.\" \"Let's get back in the car to disembark.\"",
+      "\"Is there internet connection in the middle of the sea?\" \"There is paid Wi-Fi on the deck.\""
+    ],
+    "correctAnswerItalian": "\"C'è un'area fumatori esterna?\" \"Sì, a poppa sul ponte sei.\"",
+    "correctAnswerEnglish": "\"Is there an outdoor smoking area?\" \"Yes, at the stern on deck six.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Servizi fumatori.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there an outdoor smoking area?\" \"Yes, at the stern on deck six.\"",
+      "correctEnglish": "Great! This means: \"Is there an outdoor smoking area?\" \"Yes, at the stern on deck six.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there an outdoor smoking area?\" \"Yes, at the stern on deck six.\""
+    }
+  },
+  {
+    "id": "s14-s53",
+    "italian": "\"Le scialuppe sono state controllate ieri.\" \"Bene, mi sento più sicuro.\"",
+    "english": "\"The lifeboats were checked yesterday.\" \"Good, I feel safer.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso pagare con la carta di debito?\" \"Sì, accettiamo tutti i circuiti principali.\"",
+      "\"Il bar chiude trenta minuti prima dell'arrivo.\" \"Allora prendiamo l'ultimo caffè subito.\"",
+      "\"Quanto costa un biglietto per l'auto lunga?\" \"Dipende, se supera i cinque metri costa di più.\"",
+      "\"Le scialuppe sono state controllate ieri.\" \"Bene, mi sento più sicuro.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I pay with a debit card?\" \"Yes, we accept all major circuits.\"",
+      "\"The bar closes thirty minutes before arrival.\" \"Then let's have the last coffee now.\"",
+      "\"How much is a ticket for a long car?\" \"It depends, if it exceeds five meters it costs more.\"",
+      "\"The lifeboats were checked yesterday.\" \"Good, I feel safer.\""
+    ],
+    "correctAnswerItalian": "\"Le scialuppe sono state controllate ieri.\" \"Bene, mi sento più sicuro.\"",
+    "correctAnswerEnglish": "\"The lifeboats were checked yesterday.\" \"Good, I feel safer.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Sicurezza.",
+      "incorrectItalian": "No, questo dialogo significa: \"The lifeboats were checked yesterday.\" \"Good, I feel safer.\"",
+      "correctEnglish": "Great! This means: \"The lifeboats were checked yesterday.\" \"Good, I feel safer.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The lifeboats were checked yesterday.\" \"Good, I feel safer.\""
+    }
+  },
+  {
+    "id": "s14-s54",
+    "italian": "\"Quanto costa un biglietto per l'auto lunga?\" \"Dipende, se supera i cinque metri costa di più.\"",
+    "english": "\"How much is a ticket for a long car?\" \"It depends, if it exceeds five meters it costs more.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto costa un biglietto per l'auto lunga?\" \"Dipende, se supera i cinque metri costa di più.\"",
+      "\"C'è la connessione internet in mezzo al mare?\" \"C'è il Wi-Fi a pagamento sul ponte.\"",
+      "\"Il biglietto è andata e ritorno per lo stesso giorno?\" \"Sì, è un'offerta giornaliera.\"",
+      "\"Il capitano ha annunciato un breve ritardo.\" \"Peccato, arriveremo tardi a cena.\""
+    ],
+    "choicesEnglish": [
+      "\"How much is a ticket for a long car?\" \"It depends, if it exceeds five meters it costs more.\"",
+      "\"Is there internet connection in the middle of the sea?\" \"There is paid Wi-Fi on the deck.\"",
+      "\"Is the ticket round trip for the same day?\" \"Yes, it's a daily offer.\"",
+      "\"The captain announced a short delay.\" \"Too bad, we'll arrive late for dinner.\""
+    ],
+    "correctAnswerItalian": "\"Quanto costa un biglietto per l'auto lunga?\" \"Dipende, se supera i cinque metri costa di più.\"",
+    "correctAnswerEnglish": "\"How much is a ticket for a long car?\" \"It depends, if it exceeds five meters it costs more.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Tariffe veicoli.",
+      "incorrectItalian": "No, questo dialogo significa: \"How much is a ticket for a long car?\" \"It depends, if it exceeds five meters it costs more.\"",
+      "correctEnglish": "Great! This means: \"How much is a ticket for a long car?\" \"It depends, if it exceeds five meters it costs more.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"How much is a ticket for a long car?\" \"It depends, if it exceeds five meters it costs more.\""
+    }
+  },
+  {
+    "id": "s14-s55",
+    "italian": "\"Siamo pronti per la manovra di attracco?\" \"Sì, tutti i passeggeri devono lasciare i ponti esterni.\"",
+    "english": "\"Are we ready for the docking maneuver?\" \"Yes, all passengers must leave the outer decks.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo pronti per la manovra di attracco?\" \"Sì, tutti i passeggeri devono lasciare i ponti esterni.\"",
+      "\"Speriamo di vedere il tramonto dal mare.\" \"Sì, sarà uno spettacolo fantastico.\"",
+      "\"Il mare sembra molto calmo oggi.\" \"Sì, sarà una traversata piacevole.\"",
+      "\"Si può scendere in garage durante la navigazione?\" \"No, è vietato per motivi di sicurezza.\""
+    ],
+    "choicesEnglish": [
+      "\"Are we ready for the docking maneuver?\" \"Yes, all passengers must leave the outer decks.\"",
+      "\"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\"",
+      "\"The sea looks very calm today.\" \"Yes, it will be a pleasant crossing.\"",
+      "\"Can one go down to the garage during navigation?\" \"No, it's forbidden for security reasons.\""
+    ],
+    "correctAnswerItalian": "\"Siamo pronti per la manovra di attracco?\" \"Sì, tutti i passeggeri devono lasciare i ponti esterni.\"",
+    "correctAnswerEnglish": "\"Are we ready for the docking maneuver?\" \"Yes, all passengers must leave the outer decks.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Fine viaggio.",
+      "incorrectItalian": "No, questo dialogo significa: \"Are we ready for the docking maneuver?\" \"Yes, all passengers must leave the outer decks.\"",
+      "correctEnglish": "Great! This means: \"Are we ready for the docking maneuver?\" \"Yes, all passengers must leave the outer decks.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Are we ready for the docking maneuver?\" \"Yes, all passengers must leave the outer decks.\""
+    }
+  },
+  {
+    "id": "s14-s56",
+    "italian": "\"Posso avere una coperta per la notte?\" \"Sì, la chieda al personale in cabina.\"",
+    "english": "\"Can I have a blanket for the night?\" \"Yes, ask the cabin staff for it.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è lo sconto per i residenti siciliani?\" \"Sì, mostri un documento valido.\"",
+      "\"Posso avere una coperta per la notte?\" \"Sì, la chieda al personale in cabina.\"",
+      "\"Il biglietto è andata e ritorno per lo stesso giorno?\" \"Sì, è un'offerta giornaliera.\"",
+      "\"A che ora dobbiamo essere al porto?\" \"Almeno un'ora prima della partenza.\""
+    ],
+    "choicesEnglish": [
+      "\"Is there a discount for Sicilian residents?\" \"Yes, show a valid document.\"",
+      "\"Can I have a blanket for the night?\" \"Yes, ask the cabin staff for it.\"",
+      "\"Is the ticket round trip for the same day?\" \"Yes, it's a daily offer.\"",
+      "\"What time should we be at the port?\" \"At least one hour before departure.\""
+    ],
+    "correctAnswerItalian": "\"Posso avere una coperta per la notte?\" \"Sì, la chieda al personale in cabina.\"",
+    "correctAnswerEnglish": "\"Can I have a blanket for the night?\" \"Yes, ask the cabin staff for it.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Richiesta comfort.",
+      "incorrectItalian": "No, questo dialogo significa: \"Can I have a blanket for the night?\" \"Yes, ask the cabin staff for it.\"",
+      "correctEnglish": "Great! This means: \"Can I have a blanket for the night?\" \"Yes, ask the cabin staff for it.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Can I have a blanket for the night?\" \"Yes, ask the cabin staff for it.\""
+    }
+  },
+  {
+    "id": "s14-s57",
+    "italian": "\"Il biglietto è andata e ritorno per lo stesso giorno?\" \"Sì, è un'offerta giornaliera.\"",
+    "english": "\"Is the ticket round trip for the same day?\" \"Yes, it's a daily offer.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Speriamo di vedere il tramonto dal mare.\" \"Sì, sarà uno spettacolo fantastico.\"",
+      "\"Il biglietto è andata e ritorno per lo stesso giorno?\" \"Sì, è un'offerta giornaliera.\"",
+      "\"Grazie mille per l'aiuto con i bagagli.\" \"Prego, è un piacere.\"",
+      "\"C'è un bar sul ponte superiore?\" \"Sì, serve anche panini e snack.\""
+    ],
+    "choicesEnglish": [
+      "\"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\"",
+      "\"Is the ticket round trip for the same day?\" \"Yes, it's a daily offer.\"",
+      "\"Thank you very much for the help with the luggage.\" \"You're welcome, it's a pleasure.\"",
+      "\"Is there a bar on the upper deck?\" \"Yes, it also serves sandwiches and snacks.\""
+    ],
+    "correctAnswerItalian": "\"Il biglietto è andata e ritorno per lo stesso giorno?\" \"Sì, è un'offerta giornaliera.\"",
+    "correctAnswerEnglish": "\"Is the ticket round trip for the same day?\" \"Yes, it's a daily offer.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Dettagli offerta.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is the ticket round trip for the same day?\" \"Yes, it's a daily offer.\"",
+      "correctEnglish": "Great! This means: \"Is the ticket round trip for the same day?\" \"Yes, it's a daily offer.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is the ticket round trip for the same day?\" \"Yes, it's a daily offer.\""
+    }
+  },
+  {
+    "id": "s14-s58",
+    "italian": "\"La nave oscilla un po'.\" \"Non si preoccupi, è normale con questo vento.\"",
+    "english": "\"The ship is swaying a bit.\" \"Don't worry, it's normal with this wind.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Buongiorno, biglietti per l'Elba per favore.\" \"Auto o solo passeggeri?\"",
+      "\"La nave oscilla un po'.\" \"Non si preoccupi, è normale con questo vento.\"",
+      "\"Quanti passeggeri può portare questa nave?\" \"Fino a duemila persone.\"",
+      "\"Il panorama della costa è bellissimo.\" \"Sì, facciamo una foto insieme.\""
+    ],
+    "choicesEnglish": [
+      "\"Good morning, tickets for Elba please.\" \"Car or passengers only?\"",
+      "\"The ship is swaying a bit.\" \"Don't worry, it's normal with this wind.\"",
+      "\"How many passengers can this ship carry?\" \"Up to two thousand people.\"",
+      "\"The view of the coast is beautiful.\" \"Yes, let's take a photo together.\""
+    ],
+    "correctAnswerItalian": "\"La nave oscilla un po'.\" \"Non si preoccupi, è normale con questo vento.\"",
+    "correctAnswerEnglish": "\"The ship is swaying a bit.\" \"Don't worry, it's normal with this wind.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Rassicurazione.",
+      "incorrectItalian": "No, questo dialogo significa: \"The ship is swaying a bit.\" \"Don't worry, it's normal with this wind.\"",
+      "correctEnglish": "Great! This means: \"The ship is swaying a bit.\" \"Don't worry, it's normal with this wind.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The ship is swaying a bit.\" \"Don't worry, it's normal with this wind.\""
+    }
+  },
+  {
+    "id": "s14-s59",
+    "italian": "\"Dov'è il bagno più vicino?\" \"In fondo al corridoio, dopo il bar.\"",
+    "english": "\"Where is the nearest bathroom?\" \"At the end of the hallway, after the bar.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"È una Fiat 500, è piccola.\" \"Va bene, il supplemento è di sessanta euro.\"",
+      "\"È possibile rimborsare il biglietto?\" \"Solo se ha l'assicurazione annullamento.\"",
+      "\"Dov'è il bagno più vicino?\" \"In fondo al corridoio, dopo il bar.\"",
+      "\"Il traghetto delle dieci è già partito?\" \"Sì, è partito con cinque minuti di anticipo.\""
+    ],
+    "choicesEnglish": [
+      "\"It's a Fiat 500, it's small.\" \"Alright, the surcharge is sixty euros.\"",
+      "\"Is it possible to refund the ticket?\" \"Only if you have cancellation insurance.\"",
+      "\"Where is the nearest bathroom?\" \"At the end of the hallway, after the bar.\"",
+      "\"Has the 10 AM ferry already left?\" \"Yes, it left five minutes early.\""
+    ],
+    "correctAnswerItalian": "\"Dov'è il bagno più vicino?\" \"In fondo al corridoio, dopo il bar.\"",
+    "correctAnswerEnglish": "\"Where is the nearest bathroom?\" \"At the end of the hallway, after the bar.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Necessità.",
+      "incorrectItalian": "No, questo dialogo significa: \"Where is the nearest bathroom?\" \"At the end of the hallway, after the bar.\"",
+      "correctEnglish": "Great! This means: \"Where is the nearest bathroom?\" \"At the end of the hallway, after the bar.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Where is the nearest bathroom?\" \"At the end of the hallway, after the bar.\""
+    }
+  },
+  {
+    "id": "s14-s60",
+    "italian": "\"Speriamo di vedere il tramonto dal mare.\" \"Sì, sarà uno spettacolo fantastico.\"",
+    "english": "\"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Guardate, ci sono i delfini!\" \"Dove? Ah sì, li vedo a destra della nave.\"",
+      "\"Le scialuppe sono state controllate ieri.\" \"Bene, mi sento più sicuro.\"",
+      "\"Devo fare il check-in online?\" \"Sì, le invieremo un codice sul telefono.\"",
+      "\"Speriamo di vedere il tramonto dal mare.\" \"Sì, sarà uno spettacolo fantastico.\""
+    ],
+    "choicesEnglish": [
+      "\"Look, there are dolphins!\" \"Where? Ah yes, I see them to the right of the ship.\"",
+      "\"The lifeboats were checked yesterday.\" \"Good, I feel safer.\"",
+      "\"Do I need to check in online?\" \"Yes, we will send you a code on your phone.\"",
+      "\"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\""
+    ],
+    "correctAnswerItalian": "\"Speriamo di vedere il tramonto dal mare.\" \"Sì, sarà uno spettacolo fantastico.\"",
+    "correctAnswerEnglish": "\"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Desiderio.",
+      "incorrectItalian": "No, questo dialogo significa: \"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\"",
+      "correctEnglish": "Great! This means: \"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Let's hope to see the sunset from the sea.\" \"Yes, it will be a fantastic sight.\""
     }
   }
 ]

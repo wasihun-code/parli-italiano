@@ -1,104 +1,1202 @@
 [
   {
-    "id": "s7-p4",
-    "italian": "Posso chiedere all'autista.",
-    "english": "I can ask the driver.",
-    "type": "phrase",
-    "choices": [
-      "Qual è l'orario del bus?",
-      "Devo validare il biglietto qui?",
-      "Posso chiedere all'autista.",
-      "Che linea devo prendere?"
-    ],
-    "correctAnswer": "Posso chiedere all'autista.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Posso chiedere all'autista.\"."
-    }
-  },
-  {
-    "id": "s7-p5",
-    "italian": "Che linea devo prendere?",
-    "english": "Which line should I take?",
-    "type": "phrase",
-    "choices": [
-      "Qual è l'orario del bus?",
-      "Che linea devo prendere?",
-      "Vorrei un biglietto urbano.",
-      "Posso chiedere all'autista."
-    ],
-    "correctAnswer": "Che linea devo prendere?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Che linea devo prendere?\"."
-    }
-  },
-  {
     "id": "s7-p1",
-    "italian": "Dove trovo una tabaccheria?",
-    "english": "Where can I find a tobacco shop?",
+    "italian": "Vorrei due biglietti",
+    "english": "I would like two tickets",
     "type": "phrase",
-    "choices": [
-      "Dove trovo una tabaccheria?",
-      "Qual è l'orario del bus?",
-      "Posso chiedere all'autista.",
-      "Che linea devo prendere?"
+    "choicesItalian": [
+      "Va bene, grazie",
+      "Dov'è la fermata?",
+      "Validare il biglietto",
+      "Vorrei due biglietti"
     ],
-    "correctAnswer": "Dove trovo una tabaccheria?",
+    "choicesEnglish": [
+      "Okay, thank you",
+      "Where is the stop?",
+      "Validate the ticket",
+      "I would like two tickets"
+    ],
+    "correctAnswerItalian": "Vorrei due biglietti",
+    "correctAnswerEnglish": "I would like two tickets",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Dove trovo una tabaccheria?\"."
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Vorrei due biglietti (I would like two tickets)"
     }
   },
   {
     "id": "s7-p2",
-    "italian": "Vorrei un biglietto urbano.",
-    "english": "I would like a city ticket.",
+    "italian": "Autobus urbano",
+    "english": "City bus",
     "type": "phrase",
-    "choices": [
-      "Qual è l'orario del bus?",
-      "Dove trovo una tabaccheria?",
-      "Vorrei un biglietto urbano.",
-      "Devo validare il biglietto qui?"
+    "choicesItalian": [
+      "Validatrice rotta",
+      "Orario bus",
+      "Dov'è la fermata?",
+      "Autobus urbano"
     ],
-    "correctAnswer": "Vorrei un biglietto urbano.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Vorrei un biglietto urbano.\"."
-    }
-  },
-  {
-    "id": "s7-p6",
-    "italian": "Qual è l'orario del bus?",
-    "english": "What is the bus schedule?",
-    "type": "phrase",
-    "choices": [
-      "Posso chiedere all'autista.",
-      "Vorrei un biglietto urbano.",
-      "Che linea devo prendere?",
-      "Qual è l'orario del bus?"
+    "choicesEnglish": [
+      "Broken validator",
+      "Bus schedule",
+      "Where is the stop?",
+      "City bus"
     ],
-    "correctAnswer": "Qual è l'orario del bus?",
+    "correctAnswerItalian": "Autobus urbano",
+    "correctAnswerEnglish": "City bus",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Qual è l'orario del bus?\"."
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Autobus urbano (City bus)"
     }
   },
   {
     "id": "s7-p3",
-    "italian": "Devo validare il biglietto qui?",
-    "english": "Do I have to validate the ticket here?",
+    "italian": "Biglietti singoli",
+    "english": "Single tickets",
     "type": "phrase",
-    "choices": [
-      "Devo validare il biglietto qui?",
-      "Che linea devo prendere?",
-      "Qual è l'orario del bus?",
-      "Posso chiedere all'autista."
+    "choicesItalian": [
+      "Validare il biglietto",
+      "Biglietti singoli",
+      "Autobus affollato",
+      "La prendo"
     ],
-    "correctAnswer": "Devo validare il biglietto qui?",
+    "choicesEnglish": [
+      "Validate the ticket",
+      "Single tickets",
+      "Crowded bus",
+      "I'll take it"
+    ],
+    "correctAnswerItalian": "Biglietti singoli",
+    "correctAnswerEnglish": "Single tickets",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Devo validare il biglietto qui?\"."
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Biglietti singoli (Single tickets)"
+    }
+  },
+  {
+    "id": "s7-p4",
+    "italian": "Intera giornata",
+    "english": "Entire day",
+    "type": "phrase",
+    "choicesItalian": [
+      "Area urbana",
+      "Abbonamento settimanale",
+      "Vorrei due biglietti",
+      "Intera giornata"
+    ],
+    "choicesEnglish": [
+      "Urban area",
+      "Weekly pass",
+      "I would like two tickets",
+      "Entire day"
+    ],
+    "correctAnswerItalian": "Intera giornata",
+    "correctAnswerEnglish": "Entire day",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Intera giornata (Entire day)"
+    }
+  },
+  {
+    "id": "s7-p5",
+    "italian": "Tre euro in tutto",
+    "english": "Three euros in total",
+    "type": "phrase",
+    "choicesItalian": [
+      "Vorrei due biglietti",
+      "Tre euro in tutto",
+      "Costa ventiquattro euro",
+      "Autobus urbano"
+    ],
+    "choicesEnglish": [
+      "I would like two tickets",
+      "Three euros in total",
+      "Costs twenty-four euros",
+      "City bus"
+    ],
+    "correctAnswerItalian": "Tre euro in tutto",
+    "correctAnswerEnglish": "Three euros in total",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Tre euro in tutto (Three euros in total)"
+    }
+  },
+  {
+    "id": "s7-p6",
+    "italian": "Ricordi di convalidarli",
+    "english": "Remember to validate them",
+    "type": "phrase",
+    "choicesItalian": [
+      "Uscita posteriore",
+      "Ricordi di convalidarli",
+      "Meno male!",
+      "Prego, si figuri"
+    ],
+    "choicesEnglish": [
+      "Rear exit",
+      "Remember to validate them",
+      "Thank goodness!",
+      "You're welcome, don't mention it"
+    ],
+    "correctAnswerItalian": "Ricordi di convalidarli",
+    "correctAnswerEnglish": "Remember to validate them",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Ricordi di convalidarli (Remember to validate them)"
+    }
+  },
+  {
+    "id": "s7-p7",
+    "italian": "Appena sale a bordo",
+    "english": "As soon as you board",
+    "type": "phrase",
+    "choicesItalian": [
+      "Alla fermata",
+      "Appena sale a bordo",
+      "Validare il biglietto",
+      "Controllo biglietti"
+    ],
+    "choicesEnglish": [
+      "At the stop",
+      "As soon as you board",
+      "Validate the ticket",
+      "Ticket inspection"
+    ],
+    "correctAnswerItalian": "Appena sale a bordo",
+    "correctAnswerEnglish": "As soon as you board",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Appena sale a bordo (As soon as you board)"
+    }
+  },
+  {
+    "id": "s7-p8",
+    "italian": "Va bene, grazie",
+    "english": "Okay, thank you",
+    "type": "phrase",
+    "choicesItalian": [
+      "Vorrei due biglietti",
+      "Tabaccheria vicina",
+      "Va bene, grazie",
+      "La prendo"
+    ],
+    "choicesEnglish": [
+      "I would like two tickets",
+      "Nearby tobacco shop",
+      "Okay, thank you",
+      "I'll take it"
+    ],
+    "correctAnswerItalian": "Va bene, grazie",
+    "correctAnswerEnglish": "Okay, thank you",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Va bene, grazie (Okay, thank you)"
+    }
+  },
+  {
+    "id": "s7-p9",
+    "italian": "Passa per il Colosseo?",
+    "english": "Does it pass by the Colosseum?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Passa per il Colosseo?",
+      "Tabaccheria vicina",
+      "Della strada",
+      "Senza biglietto"
+    ],
+    "choicesEnglish": [
+      "Does it pass by the Colosseum?",
+      "Nearby tobacco shop",
+      "Of the street",
+      "Without a ticket"
+    ],
+    "correctAnswerItalian": "Passa per il Colosseo?",
+    "correctAnswerEnglish": "Does it pass by the Colosseum?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Passa per il Colosseo? (Does it pass by the Colosseum?)"
+    }
+  },
+  {
+    "id": "s7-p10",
+    "italian": "Verso la stazione",
+    "english": "Towards the station",
+    "type": "phrase",
+    "choicesItalian": [
+      "Entrata anteriore",
+      "Della strada",
+      "Biglietti singoli",
+      "Verso la stazione"
+    ],
+    "choicesEnglish": [
+      "Front entrance",
+      "Of the street",
+      "Single tickets",
+      "Towards the station"
+    ],
+    "correctAnswerItalian": "Verso la stazione",
+    "correctAnswerEnglish": "Towards the station",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Verso la stazione (Towards the station)"
+    }
+  },
+  {
+    "id": "s7-p11",
+    "italian": "Deve prendere la linea 85",
+    "english": "You must take line 85",
+    "type": "phrase",
+    "choicesItalian": [
+      "Valido per una settimana",
+      "Deve prendere la linea 85",
+      "Validatrice rotta",
+      "Area urbana"
+    ],
+    "choicesEnglish": [
+      "Valid for a week",
+      "You must take line 85",
+      "Broken validator",
+      "Urban area"
+    ],
+    "correctAnswerItalian": "Deve prendere la linea 85",
+    "correctAnswerEnglish": "You must take line 85",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Deve prendere la linea 85 (You must take line 85)"
+    }
+  },
+  {
+    "id": "s7-p12",
+    "italian": "Alla fermata",
+    "english": "At the stop",
+    "type": "phrase",
+    "choicesItalian": [
+      "Autobus urbano",
+      "Prego, si figuri",
+      "Alla fermata",
+      "Uscita posteriore"
+    ],
+    "choicesEnglish": [
+      "City bus",
+      "You're welcome, don't mention it",
+      "At the stop",
+      "Rear exit"
+    ],
+    "correctAnswerItalian": "Alla fermata",
+    "correctAnswerEnglish": "At the stop",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Alla fermata (At the stop)"
+    }
+  },
+  {
+    "id": "s7-p13",
+    "italian": "Dall'altro lato",
+    "english": "On the other side",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dall'altro lato",
+      "Prendere la linea",
+      "Validatrice rotta",
+      "Valido per una settimana"
+    ],
+    "choicesEnglish": [
+      "On the other side",
+      "Take the line",
+      "Broken validator",
+      "Valid for a week"
+    ],
+    "correctAnswerItalian": "Dall'altro lato",
+    "correctAnswerEnglish": "On the other side",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Dall'altro lato (On the other side)"
+    }
+  },
+  {
+    "id": "s7-p14",
+    "italian": "Della strada",
+    "english": "Of the street",
+    "type": "phrase",
+    "choicesItalian": [
+      "Della strada",
+      "Grazie mille",
+      "Ho chiesto",
+      "Autobus affollato"
+    ],
+    "choicesEnglish": [
+      "Of the street",
+      "Thank you very much",
+      "I asked",
+      "Crowded bus"
+    ],
+    "correctAnswerItalian": "Della strada",
+    "correctAnswerEnglish": "Of the street",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Della strada (Of the street)"
+    }
+  },
+  {
+    "id": "s7-p15",
+    "italian": "Meno male!",
+    "english": "Thank goodness!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Valido per una settimana",
+      "Bus e metro",
+      "C'è una multa",
+      "Meno male!"
+    ],
+    "choicesEnglish": [
+      "Valid for a week",
+      "Bus and metro",
+      "There is a fine",
+      "Thank goodness!"
+    ],
+    "correctAnswerItalian": "Meno male!",
+    "correctAnswerEnglish": "Thank goodness!",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Meno male! (Thank goodness!)"
+    }
+  },
+  {
+    "id": "s7-p16",
+    "italian": "Ho chiesto",
+    "english": "I asked",
+    "type": "phrase",
+    "choicesItalian": [
+      "Autobus affollato",
+      "A che ora passa?",
+      "Intera giornata",
+      "Ho chiesto"
+    ],
+    "choicesEnglish": [
+      "Crowded bus",
+      "What time does it come?",
+      "Entire day",
+      "I asked"
+    ],
+    "correctAnswerItalian": "Ho chiesto",
+    "correctAnswerEnglish": "I asked",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Ho chiesto (I asked)"
+    }
+  },
+  {
+    "id": "s7-p17",
+    "italian": "Grazie mille",
+    "english": "Thank you very much",
+    "type": "phrase",
+    "choicesItalian": [
+      "Passa per il Colosseo?",
+      "Grazie mille",
+      "Area urbana",
+      "Sola andata"
+    ],
+    "choicesEnglish": [
+      "Does it pass by the Colosseum?",
+      "Thank you very much",
+      "Urban area",
+      "One way"
+    ],
+    "correctAnswerItalian": "Grazie mille",
+    "correctAnswerEnglish": "Thank you very much",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Grazie mille (Thank you very much)"
+    }
+  },
+  {
+    "id": "s7-p18",
+    "italian": "Prego, si figuri",
+    "english": "You're welcome, don't mention it",
+    "type": "phrase",
+    "choicesItalian": [
+      "Posto a sedere",
+      "Validatrice rotta",
+      "Prego, si figuri",
+      "Uscita posteriore"
+    ],
+    "choicesEnglish": [
+      "Seat",
+      "Broken validator",
+      "You're welcome, don't mention it",
+      "Rear exit"
+    ],
+    "correctAnswerItalian": "Prego, si figuri",
+    "correctAnswerEnglish": "You're welcome, don't mention it",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Prego, si figuri (You're welcome, don't mention it)"
+    }
+  },
+  {
+    "id": "s7-p19",
+    "italian": "Abbonamento settimanale",
+    "english": "Weekly pass",
+    "type": "phrase",
+    "choicesItalian": [
+      "Uscita posteriore",
+      "Autobus affollato",
+      "Direzione centro",
+      "Abbonamento settimanale"
+    ],
+    "choicesEnglish": [
+      "Rear exit",
+      "Crowded bus",
+      "Center direction",
+      "Weekly pass"
+    ],
+    "correctAnswerItalian": "Abbonamento settimanale",
+    "correctAnswerEnglish": "Weekly pass",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Abbonamento settimanale (Weekly pass)"
+    }
+  },
+  {
+    "id": "s7-p20",
+    "italian": "Mezzi pubblici",
+    "english": "Public transport",
+    "type": "phrase",
+    "choicesItalian": [
+      "Valido per una settimana",
+      "Vorrei due biglietti",
+      "Fermata giusta",
+      "Mezzi pubblici"
+    ],
+    "choicesEnglish": [
+      "Valid for a week",
+      "I would like two tickets",
+      "Right stop",
+      "Public transport"
+    ],
+    "correctAnswerItalian": "Mezzi pubblici",
+    "correctAnswerEnglish": "Public transport",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Mezzi pubblici (Public transport)"
+    }
+  },
+  {
+    "id": "s7-p21",
+    "italian": "Valido per una settimana",
+    "english": "Valid for a week",
+    "type": "phrase",
+    "choicesItalian": [
+      "Fermata giusta",
+      "Valido per una settimana",
+      "Posto a sedere",
+      "Entrata anteriore"
+    ],
+    "choicesEnglish": [
+      "Right stop",
+      "Valid for a week",
+      "Seat",
+      "Front entrance"
+    ],
+    "correctAnswerItalian": "Valido per una settimana",
+    "correctAnswerEnglish": "Valid for a week",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Valido per una settimana (Valid for a week)"
+    }
+  },
+  {
+    "id": "s7-p22",
+    "italian": "Carta trasporti",
+    "english": "Transport card",
+    "type": "phrase",
+    "choicesItalian": [
+      "Prossima corsa",
+      "Ho chiesto",
+      "Grazie mille",
+      "Carta trasporti"
+    ],
+    "choicesEnglish": [
+      "Next ride",
+      "I asked",
+      "Thank you very much",
+      "Transport card"
+    ],
+    "correctAnswerItalian": "Carta trasporti",
+    "correctAnswerEnglish": "Transport card",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Carta trasporti (Transport card)"
+    }
+  },
+  {
+    "id": "s7-p23",
+    "italian": "Costa ventiquattro euro",
+    "english": "Costs twenty-four euros",
+    "type": "phrase",
+    "choicesItalian": [
+      "Validatrice rotta",
+      "Grazie mille",
+      "Costa ventiquattro euro",
+      "Valido per una settimana"
+    ],
+    "choicesEnglish": [
+      "Broken validator",
+      "Thank you very much",
+      "Costs twenty-four euros",
+      "Valid for a week"
+    ],
+    "correctAnswerItalian": "Costa ventiquattro euro",
+    "correctAnswerEnglish": "Costs twenty-four euros",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Costa ventiquattro euro (Costs twenty-four euros)"
+    }
+  },
+  {
+    "id": "s7-p24",
+    "italian": "Bus e metro",
+    "english": "Bus and metro",
+    "type": "phrase",
+    "choicesItalian": [
+      "Bus e metro",
+      "Biglietti singoli",
+      "Valido per una settimana",
+      "Carta trasporti"
+    ],
+    "choicesEnglish": [
+      "Bus and metro",
+      "Single tickets",
+      "Valid for a week",
+      "Transport card"
+    ],
+    "correctAnswerItalian": "Bus e metro",
+    "correctAnswerEnglish": "Bus and metro",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Bus e metro (Bus and metro)"
+    }
+  },
+  {
+    "id": "s7-p25",
+    "italian": "Area urbana",
+    "english": "Urban area",
+    "type": "phrase",
+    "choicesItalian": [
+      "Area urbana",
+      "Prendere la linea",
+      "Biglietto giornaliero",
+      "Quanto costa?"
+    ],
+    "choicesEnglish": [
+      "Urban area",
+      "Take the line",
+      "Daily ticket",
+      "How much is it?"
+    ],
+    "correctAnswerItalian": "Area urbana",
+    "correctAnswerEnglish": "Urban area",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Area urbana (Urban area)"
+    }
+  },
+  {
+    "id": "s7-p26",
+    "italian": "La prendo",
+    "english": "I'll take it",
+    "type": "phrase",
+    "choicesItalian": [
+      "Autobus urbano",
+      "Intera giornata",
+      "La prendo",
+      "In ritardo"
+    ],
+    "choicesEnglish": [
+      "City bus",
+      "Entire day",
+      "I'll take it",
+      "Late"
+    ],
+    "correctAnswerItalian": "La prendo",
+    "correctAnswerEnglish": "I'll take it",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: La prendo (I'll take it)"
+    }
+  },
+  {
+    "id": "s7-p27",
+    "italian": "Dov'è la fermata?",
+    "english": "Where is the stop?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dov'è la fermata?",
+      "Passa per il Colosseo?",
+      "La prendo",
+      "Quanto costa?"
+    ],
+    "choicesEnglish": [
+      "Where is the stop?",
+      "Does it pass by the Colosseum?",
+      "I'll take it",
+      "How much is it?"
+    ],
+    "correctAnswerItalian": "Dov'è la fermata?",
+    "correctAnswerEnglish": "Where is the stop?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Dov'è la fermata? (Where is the stop?)"
+    }
+  },
+  {
+    "id": "s7-p28",
+    "italian": "A che ora passa?",
+    "english": "What time does it come?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Grazie mille",
+      "Validare il biglietto",
+      "A che ora passa?",
+      "Intera giornata"
+    ],
+    "choicesEnglish": [
+      "Thank you very much",
+      "Validate the ticket",
+      "What time does it come?",
+      "Entire day"
+    ],
+    "correctAnswerItalian": "A che ora passa?",
+    "correctAnswerEnglish": "What time does it come?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: A che ora passa? (What time does it come?)"
+    }
+  },
+  {
+    "id": "s7-p29",
+    "italian": "Biglietto giornaliero",
+    "english": "Daily ticket",
+    "type": "phrase",
+    "choicesItalian": [
+      "Fermata giusta",
+      "Passa per il Colosseo?",
+      "Biglietto giornaliero",
+      "Bus e metro"
+    ],
+    "choicesEnglish": [
+      "Right stop",
+      "Does it pass by the Colosseum?",
+      "Daily ticket",
+      "Bus and metro"
+    ],
+    "correctAnswerItalian": "Biglietto giornaliero",
+    "correctAnswerEnglish": "Daily ticket",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Biglietto giornaliero (Daily ticket)"
+    }
+  },
+  {
+    "id": "s7-p30",
+    "italian": "Validare il biglietto",
+    "english": "Validate the ticket",
+    "type": "phrase",
+    "choicesItalian": [
+      "Sola andata",
+      "Tre euro in tutto",
+      "Validare il biglietto",
+      "Deve prendere la linea 85"
+    ],
+    "choicesEnglish": [
+      "One way",
+      "Three euros in total",
+      "Validate the ticket",
+      "You must take line 85"
+    ],
+    "correctAnswerItalian": "Validare il biglietto",
+    "correctAnswerEnglish": "Validate the ticket",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Validare il biglietto (Validate the ticket)"
+    }
+  },
+  {
+    "id": "s7-p31",
+    "italian": "Chiedere all'autista",
+    "english": "Ask the driver",
+    "type": "phrase",
+    "choicesItalian": [
+      "Costa ventiquattro euro",
+      "Chiedere all'autista",
+      "Ho chiesto",
+      "In ritardo"
+    ],
+    "choicesEnglish": [
+      "Costs twenty-four euros",
+      "Ask the driver",
+      "I asked",
+      "Late"
+    ],
+    "correctAnswerItalian": "Chiedere all'autista",
+    "correctAnswerEnglish": "Ask the driver",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Chiedere all'autista (Ask the driver)"
+    }
+  },
+  {
+    "id": "s7-p32",
+    "italian": "Fermata giusta",
+    "english": "Right stop",
+    "type": "phrase",
+    "choicesItalian": [
+      "Prossima corsa",
+      "Verso la stazione",
+      "Fermata giusta",
+      "Deve prendere la linea 85"
+    ],
+    "choicesEnglish": [
+      "Next ride",
+      "Towards the station",
+      "Right stop",
+      "You must take line 85"
+    ],
+    "correctAnswerItalian": "Fermata giusta",
+    "correctAnswerEnglish": "Right stop",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Fermata giusta (Right stop)"
+    }
+  },
+  {
+    "id": "s7-p33",
+    "italian": "Direzione centro",
+    "english": "Center direction",
+    "type": "phrase",
+    "choicesItalian": [
+      "Passa per il Colosseo?",
+      "Tabaccheria vicina",
+      "Direzione centro",
+      "La prendo"
+    ],
+    "choicesEnglish": [
+      "Does it pass by the Colosseum?",
+      "Nearby tobacco shop",
+      "Center direction",
+      "I'll take it"
+    ],
+    "correctAnswerItalian": "Direzione centro",
+    "correctAnswerEnglish": "Center direction",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Direzione centro (Center direction)"
+    }
+  },
+  {
+    "id": "s7-p34",
+    "italian": "Orario bus",
+    "english": "Bus schedule",
+    "type": "phrase",
+    "choicesItalian": [
+      "Area urbana",
+      "Orario bus",
+      "Grazie mille",
+      "Autobus urbano"
+    ],
+    "choicesEnglish": [
+      "Urban area",
+      "Bus schedule",
+      "Thank you very much",
+      "City bus"
+    ],
+    "correctAnswerItalian": "Orario bus",
+    "correctAnswerEnglish": "Bus schedule",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Orario bus (Bus schedule)"
+    }
+  },
+  {
+    "id": "s7-p35",
+    "italian": "Prendere la linea",
+    "english": "Take the line",
+    "type": "phrase",
+    "choicesItalian": [
+      "Posto a sedere",
+      "Prendere la linea",
+      "Biglietti singoli",
+      "Area urbana"
+    ],
+    "choicesEnglish": [
+      "Seat",
+      "Take the line",
+      "Single tickets",
+      "Urban area"
+    ],
+    "correctAnswerItalian": "Prendere la linea",
+    "correctAnswerEnglish": "Take the line",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Prendere la linea (Take the line)"
+    }
+  },
+  {
+    "id": "s7-p36",
+    "italian": "Tabaccheria vicina",
+    "english": "Nearby tobacco shop",
+    "type": "phrase",
+    "choicesItalian": [
+      "Della strada",
+      "Entrata anteriore",
+      "Carta trasporti",
+      "Tabaccheria vicina"
+    ],
+    "choicesEnglish": [
+      "Of the street",
+      "Front entrance",
+      "Transport card",
+      "Nearby tobacco shop"
+    ],
+    "correctAnswerItalian": "Tabaccheria vicina",
+    "correctAnswerEnglish": "Nearby tobacco shop",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Tabaccheria vicina (Nearby tobacco shop)"
+    }
+  },
+  {
+    "id": "s7-p37",
+    "italian": "C'è una multa",
+    "english": "There is a fine",
+    "type": "phrase",
+    "choicesItalian": [
+      "C'è una multa",
+      "Prego, si figuri",
+      "Validatrice rotta",
+      "Deve prendere la linea 85"
+    ],
+    "choicesEnglish": [
+      "There is a fine",
+      "You're welcome, don't mention it",
+      "Broken validator",
+      "You must take line 85"
+    ],
+    "correctAnswerItalian": "C'è una multa",
+    "correctAnswerEnglish": "There is a fine",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: C'è una multa (There is a fine)"
+    }
+  },
+  {
+    "id": "s7-p38",
+    "italian": "Senza biglietto",
+    "english": "Without a ticket",
+    "type": "phrase",
+    "choicesItalian": [
+      "Senza biglietto",
+      "Deve prendere la linea 85",
+      "Valido per una settimana",
+      "Prego, si figuri"
+    ],
+    "choicesEnglish": [
+      "Without a ticket",
+      "You must take line 85",
+      "Valid for a week",
+      "You're welcome, don't mention it"
+    ],
+    "correctAnswerItalian": "Senza biglietto",
+    "correctAnswerEnglish": "Without a ticket",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Senza biglietto (Without a ticket)"
+    }
+  },
+  {
+    "id": "s7-p39",
+    "italian": "Controllo biglietti",
+    "english": "Ticket inspection",
+    "type": "phrase",
+    "choicesItalian": [
+      "Della strada",
+      "Controllo biglietti",
+      "Direzione centro",
+      "Bus e metro"
+    ],
+    "choicesEnglish": [
+      "Of the street",
+      "Ticket inspection",
+      "Center direction",
+      "Bus and metro"
+    ],
+    "correctAnswerItalian": "Controllo biglietti",
+    "correctAnswerEnglish": "Ticket inspection",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Controllo biglietti (Ticket inspection)"
+    }
+  },
+  {
+    "id": "s7-p40",
+    "italian": "Scendere alla prossima",
+    "english": "Get off at the next one",
+    "type": "phrase",
+    "choicesItalian": [
+      "Passa per il Colosseo?",
+      "Scendere alla prossima",
+      "La prendo",
+      "Abbonamento settimanale"
+    ],
+    "choicesEnglish": [
+      "Does it pass by the Colosseum?",
+      "Get off at the next one",
+      "I'll take it",
+      "Weekly pass"
+    ],
+    "correctAnswerItalian": "Scendere alla prossima",
+    "correctAnswerEnglish": "Get off at the next one",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Scendere alla prossima (Get off at the next one)"
+    }
+  },
+  {
+    "id": "s7-p41",
+    "italian": "Prossima corsa",
+    "english": "Next ride",
+    "type": "phrase",
+    "choicesItalian": [
+      "Alla fermata",
+      "Prossima corsa",
+      "Carta trasporti",
+      "Va bene, grazie"
+    ],
+    "choicesEnglish": [
+      "At the stop",
+      "Next ride",
+      "Transport card",
+      "Okay, thank you"
+    ],
+    "correctAnswerItalian": "Prossima corsa",
+    "correctAnswerEnglish": "Next ride",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Prossima corsa (Next ride)"
+    }
+  },
+  {
+    "id": "s7-p42",
+    "italian": "In ritardo",
+    "english": "Late",
+    "type": "phrase",
+    "choicesItalian": [
+      "Posto a sedere",
+      "Intera giornata",
+      "In ritardo",
+      "Prendere la linea"
+    ],
+    "choicesEnglish": [
+      "Seat",
+      "Entire day",
+      "Late",
+      "Take the line"
+    ],
+    "correctAnswerItalian": "In ritardo",
+    "correctAnswerEnglish": "Late",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: In ritardo (Late)"
+    }
+  },
+  {
+    "id": "s7-p43",
+    "italian": "Quanto costa?",
+    "english": "How much is it?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Tabaccheria vicina",
+      "Abbonamento settimanale",
+      "Validatrice rotta",
+      "Quanto costa?"
+    ],
+    "choicesEnglish": [
+      "Nearby tobacco shop",
+      "Weekly pass",
+      "Broken validator",
+      "How much is it?"
+    ],
+    "correctAnswerItalian": "Quanto costa?",
+    "correctAnswerEnglish": "How much is it?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Quanto costa? (How much is it?)"
+    }
+  },
+  {
+    "id": "s7-p44",
+    "italian": "Biglietto a bordo",
+    "english": "Ticket on board",
+    "type": "phrase",
+    "choicesItalian": [
+      "Intera giornata",
+      "Validatrice rotta",
+      "Biglietto a bordo",
+      "Tre euro in tutto"
+    ],
+    "choicesEnglish": [
+      "Entire day",
+      "Broken validator",
+      "Ticket on board",
+      "Three euros in total"
+    ],
+    "correctAnswerItalian": "Biglietto a bordo",
+    "correctAnswerEnglish": "Ticket on board",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Biglietto a bordo (Ticket on board)"
+    }
+  },
+  {
+    "id": "s7-p45",
+    "italian": "Sola andata",
+    "english": "One way",
+    "type": "phrase",
+    "choicesItalian": [
+      "Fermata giusta",
+      "Quanto costa?",
+      "Verso la stazione",
+      "Sola andata"
+    ],
+    "choicesEnglish": [
+      "Right stop",
+      "How much is it?",
+      "Towards the station",
+      "One way"
+    ],
+    "correctAnswerItalian": "Sola andata",
+    "correctAnswerEnglish": "One way",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Sola andata (One way)"
+    }
+  },
+  {
+    "id": "s7-p46",
+    "italian": "Posto a sedere",
+    "english": "Seat",
+    "type": "phrase",
+    "choicesItalian": [
+      "Autobus affollato",
+      "Posto a sedere",
+      "Orario bus",
+      "Chiedere all'autista"
+    ],
+    "choicesEnglish": [
+      "Crowded bus",
+      "Seat",
+      "Bus schedule",
+      "Ask the driver"
+    ],
+    "correctAnswerItalian": "Posto a sedere",
+    "correctAnswerEnglish": "Seat",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Posto a sedere (Seat)"
+    }
+  },
+  {
+    "id": "s7-p47",
+    "italian": "Autobus affollato",
+    "english": "Crowded bus",
+    "type": "phrase",
+    "choicesItalian": [
+      "Prossima corsa",
+      "Uscita posteriore",
+      "Autobus affollato",
+      "In ritardo"
+    ],
+    "choicesEnglish": [
+      "Next ride",
+      "Rear exit",
+      "Crowded bus",
+      "Late"
+    ],
+    "correctAnswerItalian": "Autobus affollato",
+    "correctAnswerEnglish": "Crowded bus",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Autobus affollato (Crowded bus)"
+    }
+  },
+  {
+    "id": "s7-p48",
+    "italian": "Uscita posteriore",
+    "english": "Rear exit",
+    "type": "phrase",
+    "choicesItalian": [
+      "Senza biglietto",
+      "Scendere alla prossima",
+      "Autobus urbano",
+      "Uscita posteriore"
+    ],
+    "choicesEnglish": [
+      "Without a ticket",
+      "Get off at the next one",
+      "City bus",
+      "Rear exit"
+    ],
+    "correctAnswerItalian": "Uscita posteriore",
+    "correctAnswerEnglish": "Rear exit",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Uscita posteriore (Rear exit)"
+    }
+  },
+  {
+    "id": "s7-p49",
+    "italian": "Entrata anteriore",
+    "english": "Front entrance",
+    "type": "phrase",
+    "choicesItalian": [
+      "Tre euro in tutto",
+      "Quanto costa?",
+      "Verso la stazione",
+      "Entrata anteriore"
+    ],
+    "choicesEnglish": [
+      "Three euros in total",
+      "How much is it?",
+      "Towards the station",
+      "Front entrance"
+    ],
+    "correctAnswerItalian": "Entrata anteriore",
+    "correctAnswerEnglish": "Front entrance",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Entrata anteriore (Front entrance)"
+    }
+  },
+  {
+    "id": "s7-p50",
+    "italian": "Validatrice rotta",
+    "english": "Broken validator",
+    "type": "phrase",
+    "choicesItalian": [
+      "Biglietto giornaliero",
+      "Entrata anteriore",
+      "Biglietti singoli",
+      "Validatrice rotta"
+    ],
+    "choicesEnglish": [
+      "Daily ticket",
+      "Front entrance",
+      "Single tickets",
+      "Broken validator"
+    ],
+    "correctAnswerItalian": "Validatrice rotta",
+    "correctAnswerEnglish": "Broken validator",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Validatrice rotta (Broken validator)"
     }
   }
 ]

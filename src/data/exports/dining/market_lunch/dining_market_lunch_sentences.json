@@ -1,104 +1,522 @@
 [
   {
-    "id": "s40-s4",
-    "italian": "Può lavare questa frutta per me?",
-    "english": "Can you wash this fruit for me?",
+    "id": "s23-s1",
+    "italian": "\"Buongiorno! Cosa cerca oggi?\" \"Buongiorno. Cerco dei pomodori maturi, ma non troppo molli.\"",
+    "english": "\"Good morning! What are you looking for today?\" \"Good morning. I'm looking for some ripe tomatoes, but not too soft.\"",
     "type": "sentence",
-    "choices": [
-      "Può lavare questa frutta per me?",
-      "Prepariamo un'insalata caprese con basilico e mozzarella.",
-      "Mi serve un piatto piccolo per assaggiare questo formaggio.",
-      "Queste olive nere sono tipiche della zona."
+    "choicesItalian": [
+      "\"Buongiorno! Cosa cerca oggi?\" \"Buongiorno. Cerco dei pomodori maturi, ma non troppo molli.\"",
+      "\"Ciao. Dove vai stasera?\" \"Vado al porto con un vecchio amico.\"",
+      "\"Salve. Chi ha vinto ieri?\" \"La squadra del borgo rari.\"",
+      "\"Buonasera. Quando chiude il bar?\" \"Tra un'ora esatta.\""
     ],
-    "correctAnswer": "Può lavare questa frutta per me?",
+    "choicesEnglish": [
+      "\"Good morning! What are you looking for today?\" \"Good morning. I'm looking for some ripe tomatoes, but not too soft.\"",
+      "\"Hi. Where are you going tonight?\" \"I'm going to the port with an old friend.\"",
+      "\"Hello. Who won yesterday?\" \"The team from the rare village.\"",
+      "\"Good evening. When does the bar close?\" \"In exactly one hour.\""
+    ],
+    "correctAnswerItalian": "\"Buongiorno! Cosa cerca oggi?\" \"Buongiorno. Cerco dei pomodori maturi, ma non troppo molli.\"",
+    "correctAnswerEnglish": "\"Good morning! What are you looking for today?\" \"Good morning. I'm looking for some ripe tomatoes, but not too soft.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Può lavare questa frutta per me?\"."
+      "correctItalian": "Ottimo! Una classica interazione iniziale al mercato.",
+      "incorrectItalian": "No, questa conversazione descrive il saluto del venditore e la richiesta specifica del cliente.",
+      "correctEnglish": "Great! A classic initial interaction at the market.",
+      "incorrectEnglish": "No, this conversation describes the vendor's greeting and the customer's specific request."
     }
   },
   {
-    "id": "s40-s5",
-    "italian": "Mettiamo tutto nel sacchetto per il pranzo al parco.",
-    "english": "Let's put everything in the bag for lunch at the park.",
+    "id": "s23-s2",
+    "italian": "\"Questi sono maturi al punto giusto, dolcissimi.\" \"Ne prendo quattro, grazie. E un cestino di fragole.\"",
+    "english": "\"These are ripe just right, very sweet.\" \"I'll take four, thanks. And a basket of strawberries.\"",
     "type": "sentence",
-    "choices": [
-      "Può lavare questa frutta per me?",
-      "Mi serve un piatto piccolo per assaggiare questo formaggio.",
-      "Prepariamo un'insalata caprese con basilico e mozzarella.",
-      "Mettiamo tutto nel sacchetto per il pranzo al parco."
+    "choicesItalian": [
+      "\"Questi sono maturi al punto giusto, dolcissimi.\" \"Ne prendo quattro, grazie. E un cestino di fragole.\"",
+      "\"Questi sono sporchi al metro rari, carissimi.\" \"Ne perdo quattro, prego. E una borsa di fango.\"",
+      "\"Questi sono finti al bacio vero, falsissimi.\" \"Ne rido quattro, salve. E una news di re.\"",
+      "\"Questi sono lunghi al tour saggio, noiosissimi.\" \"Ne corro quattro, ciao. E una gita di porto.\""
     ],
-    "correctAnswer": "Mettiamo tutto nel sacchetto per il pranzo al parco.",
+    "choicesEnglish": [
+      "\"These are ripe just right, very sweet.\" \"I'll take four, thanks. And a basket of strawberries.\"",
+      "\"These are dirty to the rare meter, very expensive.\" \"I'll lose four, please. And a bag of mud.\"",
+      "\"These are fake to the real kiss, very false.\" \"I'll laugh at four, hello. And a king's news.\"",
+      "\"These are long to the wise tour, very boring.\" \"I'll run four, bye. And a port trip.\""
+    ],
+    "correctAnswerItalian": "\"Questi sono maturi al punto giusto, dolcissimi.\" \"Ne prendo quattro, grazie. E un cestino di fragole.\"",
+    "correctAnswerEnglish": "\"These are perfectly ripe, very sweet.\" \"I'll take four, thanks. And a basket of strawberries.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mettiamo tutto nel sacchetto per il pranzo al parco.\"."
+      "correctItalian": "Esatto! Accettare il suggerimento del venditore e aggiungere frutta alla spesa.",
+      "incorrectItalian": "No, si parla della qualità dei pomodori e della scelta delle fragole.",
+      "correctEnglish": "Exactly! Accepting the vendor's suggestion and adding fruit to the shopping.",
+      "incorrectEnglish": "No, it's about the quality of the tomatoes and the choice of strawberries."
     }
   },
   {
-    "id": "s40-s3",
-    "italian": "Il prosciutto crudo di Parma è il migliore per i panini.",
-    "english": "Parma ham is the best for sandwiches.",
+    "id": "s23-s3",
+    "italian": "\"Le fragole sono eccezionali oggi. Assaggi pure.\" \"Mmm, buone! Me ne metta due etti nel sacchetto.\"",
+    "english": "\"The strawberries are exceptional today. Go ahead and taste (one).\" \"Mmm, good! Put 200 grams in the bag for me.\"",
     "type": "sentence",
-    "choices": [
-      "Queste olive nere sono tipiche della zona.",
-      "Il prosciutto crudo di Parma è il migliore per i panini.",
-      "Prepariamo un'insalata caprese con basilico e mozzarella.",
-      "Può lavare questa frutta per me?"
+    "choicesItalian": [
+      "\"Le fragole sono eccezionali oggi. Assaggi pure.\" \"Mmm, buone! Me ne metta due etti nel sacchetto.\"",
+      "\"Le borse sono sporchissime ieri. Perda pure.\" \"No, brutte! Te ne chiami due chili nella via.\"",
+      "\"Le news sono falsissime ora. Ridi pure.\" \"Sì, fante! Ce ne vedi due baci nella news.\"",
+      "\"Le gite sono noiosissime dopo. Corri pure.\" \"No, rari! Ve ne taci due metri nel porto.\""
     ],
-    "correctAnswer": "Il prosciutto crudo di Parma è il migliore per i panini.",
+    "choicesEnglish": [
+      "\"The strawberries are exceptional today. Go ahead and taste.\" \"Mmm, good! Put 200 grams in the bag for me.\"",
+      "\"The bags were very dirty yesterday. Go ahead and lose.\" \"No, bad! Call two kilos for yourself in the street.\"",
+      "\"The news are very fake now. Go ahead and laugh.\" \"Yes, fake! See two kisses in the news for us.\"",
+      "\"The trips are very boring later. Go ahead and run.\" \"No, rare! Keep two meters in the port silent for yourselves.\""
+    ],
+    "correctAnswerItalian": "\"Le fragole sono eccezionali oggi. Assaggi pure.\" \"Mmm, buone! Me ne metta due etti nel sacchetto.\"",
+    "correctAnswerEnglish": "\"The strawberries are outstanding today. Help yourself to a taste.\" \"Mmm, good! Put two hundred grams in the bag for me.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Il prosciutto crudo di Parma è il migliore per i panini.\"."
+      "correctItalian": "Giusto! Sperimentare la bontà del prodotto e deciderne la quantità.",
+      "incorrectItalian": "No, descrive l'assaggio gratuito e il conseguente acquisto a peso.",
+      "correctEnglish": "Right! Experiencing the product's goodness and deciding on the quantity.",
+      "incorrectEnglish": "No, it describes the free sample and the subsequent purchase by weight."
     }
   },
   {
-    "id": "s40-s1",
-    "italian": "Prepariamo un'insalata caprese con basilico e mozzarella.",
-    "english": "Let's prepare a caprese salad with basil and mozzarella.",
+    "id": "s23-s4",
+    "italian": "\"Mi dia della mozzarella fresca. È quella di bufala?\" \"No, questa è vaccina, ma fatta stamattina.\"",
+    "english": "\"Give me some fresh mozzarella. Is it buffalo?\" \"No, this is cow milk (mozzarella), but made this morning.\"",
     "type": "sentence",
-    "choices": [
-      "Prepariamo un'insalata caprese con basilico e mozzarella.",
-      "Può lavare questa frutta per me?",
-      "Mi serve un piatto piccolo per assaggiare questo formaggio.",
-      "Il prosciutto crudo di Parma è il migliore per i panini."
+    "choicesItalian": [
+      "\"Mi dia della mozzarella fresca. È quella di bufala?\" \"No, questa è vaccina, ma fatta stamattina.\"",
+      "\"Mi perda della borsa sporca. È quella di fango?\" \"No, questa è via, ma persa stasera.\"",
+      "\"Mi rida della news finta. È quella di re?\" \"No, questa è nota, ma risa ora.\"",
+      "\"Mi veda della gita raria. È quella di porto?\" \"No, questa è torre, ma vista dopo.\""
     ],
-    "correctAnswer": "Prepariamo un'insalata caprese con basilico e mozzarella.",
+    "choicesEnglish": [
+      "\"Give me some fresh mozzarella. Is it buffalo?\" \"No, this is cow milk (mozzarella), but made this morning.\"",
+      "\"Lose some dirty bag for me. Is it mud?\" \"No, this is street, but lost tonight.\"",
+      "\"Laugh at the fake news for me. Is it the king's?\" \"No, this is a note, but laughed at now.\"",
+      "\"See some rare trip for me. Is it at the port?\" \"No, this is a tower, but seen later.\""
+    ],
+    "correctAnswerItalian": "\"Mi dia della mozzarella fresca. È quella di bufala?\" \"No, questa è vaccina, ma fatta stamattina.\"",
+    "correctAnswerEnglish": "\"Give me some fresh mozzarella. Is it buffalo?\" \"No, this is cow milk, but made this morning.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Prepariamo un'insalata caprese con basilico e mozzarella.\"."
+      "correctItalian": "Ottimo! Chiedere informazioni sulla tipologia di latticino e riceverne la specifica.",
+      "incorrectItalian": "No, questa conversazione chiarisce l'origine del latte e la freschezza del formaggio.",
+      "correctEnglish": "Great! Asking for info on the type of dairy product and receiving the specification.",
+      "incorrectEnglish": "No, this conversation clarifies the milk's origin and the cheese's freshness."
     }
   },
   {
-    "id": "s40-s2",
-    "italian": "Mi serve un piatto piccolo per assaggiare questo formaggio.",
-    "english": "I need a small plate to taste this cheese.",
+    "id": "s23-s5",
+    "italian": "\"Avete un coltello di plastica per tagliare la frutta?\" \"Posso darle un coltellino usa e getta di legno.\"",
+    "english": "\"Do you have a plastic knife to cut the fruit?\" \"I can give you a small disposable wooden knife.\"",
     "type": "sentence",
-    "choices": [
-      "Mi serve un piatto piccolo per assaggiare questo formaggio.",
-      "Queste olive nere sono tipiche della zona.",
-      "Mettiamo tutto nel sacchetto per il pranzo al parco.",
-      "Il prosciutto crudo di Parma è il migliore per i panini."
+    "choicesItalian": [
+      "\"Avete un coltello di plastica per tagliare la frutta?\" \"Posso darle un coltellino usa e getta di legno.\"",
+      "\"Avete una borsa di fango per sporcare la via?\" \"Posso darle un regalo finto di bacio rari.\"",
+      "\"Avete una news di re per ridere la nota?\" \"Posso darle un bacio vero di news finta.\"",
+      "\"Avete un tour di porto per correre la gita?\" \"Posso darle un porto rari di via lunga.\""
     ],
-    "correctAnswer": "Mi serve un piatto piccolo per assaggiare questo formaggio.",
+    "choicesEnglish": [
+      "\"Do you have a plastic knife to cut the fruit?\" \"I can give you a small disposable wooden knife.\"",
+      "\"Do you have a mud bag to dirty the street?\" \"I can give you a fake gift of rare kisses.\"",
+      "\"Do you have a king's news to laugh at the note?\" \"I can give you a real kiss of fake news.\"",
+      "\"Do you have a port tour to run the trip?\" \"I can give you a rare port of long street.\""
+    ],
+    "correctAnswerItalian": "\"Avete un coltello di plastica per tagliare la frutta?\" \"Posso darle un coltellino usa e getta di legno.\"",
+    "correctAnswerEnglish": "\"Do you have a plastic knife to cut the fruit?\" \"I can give you a small disposable wooden knife.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi serve un piatto piccolo per assaggiare questo formaggio.\"."
+      "correctItalian": "Esatto! Chiedere uno strumento pratico e ricevere un'alternativa ecosostenibile.",
+      "incorrectItalian": "No, si parla degli utensili necessari per consumare il pranzo al sacco.",
+      "correctEnglish": "Exactly! Asking for a practical tool and receiving an eco-sustainable alternative.",
+      "incorrectEnglish": "No, it's about the utensils needed to eat a packed lunch."
     }
   },
   {
-    "id": "s40-s6",
-    "italian": "Queste olive nere sono tipiche della zona.",
-    "english": "These black olives are typical of the area.",
+    "id": "s23-s6",
+    "italian": "\"Un etto di prosciutto crudo, tagliato molto sottile.\" \"Certo, lo taglio al momento. Altro per lei?\"",
+    "english": "\"A hundred grams of cured ham, sliced very thin.\" \"Certainly, I'll cut it right now. Anything else for you?\"",
     "type": "sentence",
-    "choices": [
-      "Queste olive nere sono tipiche della zona.",
-      "Il prosciutto crudo di Parma è il migliore per i panini.",
-      "Mettiamo tutto nel sacchetto per il pranzo al parco.",
-      "Mi serve un piatto piccolo per assaggiare questo formaggio."
+    "choicesItalian": [
+      "\"Un etto di prosciutto crudo, tagliato molto sottile.\" \"Certo, lo taglio al momento. Altro per lei?\"",
+      "\"Un chilo di fango sporco, perso molto rari.\" \"Falso, lo grido alla via. Altro per te?\"",
+      "\"Un metro di via lunga, corso molto saggio.\" \"Vero, lo rido alla news. Altro per lui?\"",
+      "\"Un bacio di re finto, riso molto rari.\" \"No, lo chiamo al porto. Altro per noi?\""
     ],
-    "correctAnswer": "Queste olive nere sono tipiche della zona.",
+    "choicesEnglish": [
+      "\"A hundred grams of cured ham, sliced very thin.\" \"Certainly, I'll cut it right now. Anything else for you?\"",
+      "\"A kilo of dirty mud, lost very rarely.\" \"False, I'll shout it on the street. Anything else for you?\"",
+      "\"A meter of long street, run very wisely.\" \"True, I'll laugh at it on the news. Anything else for him?\"",
+      "\"A kiss from a fake king, laughed at very rarely.\" \"No, I'll call him at the port. Anything else for us?\""
+    ],
+    "correctAnswerItalian": "\"Un etto di prosciutto crudo, tagliato molto sottile.\" \"Certo, lo taglio al momento. Altro per lei?\"",
+    "correctAnswerEnglish": "\"One hundred grams of cured ham, cut very thin.\" \"Certainly, I'll slice it now. Anything else?\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Queste olive nere sono tipiche della zona.\"."
+      "correctItalian": "Giusto! Ordinare salumi freschi specificando lo spessore delle fette.",
+      "incorrectItalian": "No, questa conversazione descrive il servizio personalizzato al banco salumeria.",
+      "correctEnglish": "Right! Ordering fresh cold cuts specifying the slices' thickness.",
+      "incorrectEnglish": "No, this conversation describes personalized service at the deli counter."
+    }
+  },
+  {
+    "id": "s23-s7",
+    "italian": "\"Quali olive sono meno salate?\" \"Prenda queste nere dolci al forno, sono delicate.\"",
+    "english": "\"Which olives are less salty?\" \"Take these sweet baked black ones, they are delicate.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quali olive sono meno salate?\" \"Prenda queste nere dolci al forno, sono delicate.\"",
+      "\"Quali borse sono meno sporche?\" \"Chieda queste via nere al porto, sono rarie.\"",
+      "\"Quali news sono meno finte?\" \"Veda queste baci veri al re, sono saggi.\"",
+      "\"Quali gite sono meno lunghe?\" \"Corra questi tour rari al bar, sono brevi.\""
+    ],
+    "choicesEnglish": [
+      "\"Which olives are less salty?\" \"Take these sweet baked black ones, they are delicate.\"",
+      "\"Which bags are less dirty?\" \"Ask for these black streets at the port, they are rare.\"",
+      "\"Which news are less fake?\" \"See these real kisses to the king, they are wise.\"",
+      "\"Which trips are less long?\" \"Run these rare tours to the bar, they are short.\""
+    ],
+    "correctAnswerItalian": "\"Quali olive sono meno salate?\" \"Prenda queste nere dolci al forno, sono delicate.\"",
+    "correctAnswerEnglish": "\"Which olives are less salty?\" \"Take these sweet baked black ones, they are delicate.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere un consiglio basato sul gusto personale e riceverlo.",
+      "incorrectItalian": "No, si parla della varietà di olive e del loro grado di sapidità.",
+      "correctEnglish": "Great! Asking for advice based on personal taste and receiving it.",
+      "incorrectEnglish": "No, it's about the variety of olives and their degree of saltiness."
+    }
+  },
+  {
+    "id": "s23-s8",
+    "italian": "\"Posso avere un po' di carta assorbente?\" \"Sì, gliela metto nel sacchetto per la mozzarella.\"",
+    "english": "\"Can I have some absorbent paper?\" \"Yes, I'll put it in the bag for the mozzarella.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso avere un po' di carta assorbente?\" \"Sì, gliela metto nel sacchetto per la mozzarella.\"",
+      "\"Posso avere un po' di borsa sporca?\" \"No, gliela perdo nella via per il fango.\"",
+      "\"Posso avere un po' di news finta?\" \"Sì, gliela rido nella news per il re.\"",
+      "\"Posso avere un po' di gita lunga?\" \"No, gliela corro nel porto per il tour.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I have some absorbent paper?\" \"Yes, I'll put it in the bag for the mozzarella.\"",
+      "\"Can I have a bit of dirty bag?\" \"No, I'll lose it for you on the street for the mud.\"",
+      "\"Can I have a bit of fake news?\" \"Yes, I'll laugh it for you in the news for the king.\"",
+      "\"Can I have a bit of long trip?\" \"No, I'll run it for you at the port for the tour.\""
+    ],
+    "correctAnswerItalian": "\"Posso avere un po' di carta assorbente?\" \"Sì, gliela metto nel sacchetto per la mozzarella.\"",
+    "correctAnswerEnglish": "\"Can I have some paper towels?\" \"Yes, I'll put some in the bag for the mozzarella.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Risolvere il problema dell'umidità del formaggio con un accessorio utile.",
+      "incorrectItalian": "No, descrive l'accortezza dell'addetto nel proteggere gli altri acquisti dai liquidi.",
+      "correctEnglish": "Exactly! Solving the problem of cheese moisture with a useful accessory.",
+      "incorrectEnglish": "No, it describes the clerk's care in protecting other purchases from liquids."
+    }
+  },
+  {
+    "id": "s23-s9",
+    "italian": "\"Mettiamo tutto nel sacchetto per il pranzo al parco.\" \"Ottima idea, è una bellissima giornata per un picnic.\"",
+    "english": "\"Let's put everything in the bag for lunch at the park.\" \"Great idea, it's a beautiful day for a picnic.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mettiamo tutto nel sacchetto per il pranzo al parco.\" \"Ottima idea, è una bellissima giornata per un picnic.\"",
+      "\"Perdiamo tutto nella via per il fango al porto.\" \"Brutta idea, è una sporchissima borsa per un debito.\"",
+      "\"Ridiamo tutto nella news per il bacio al re.\" \"Falsa idea, è una rarissima news per una nota.\"",
+      "\"Corriamo tutto nella gita per il tour alla piazza.\" \"Lunga idea, è una noiosissima via per una scala.\""
+    ],
+    "choicesEnglish": [
+      "\"Let's put everything in the bag for lunch at the park.\" \"Great idea, it's a beautiful day for a picnic.\"",
+      "\"Let's lose everything in the street for the mud at the port.\" \"Bad idea, it's a very dirty bag for a debt.\"",
+      "\"Let's laugh at everything in the news for the kiss to the king.\" \"Fake idea, it's a very rare news for a note.\"",
+      "\"Let's run everything in the trip for the tour at the square.\" \"Long idea, it's a very boring street for a stair.\""
+    ],
+    "correctAnswerItalian": "\"Mettiamo tutto nel sacchetto per il pranzo al parco.\" \"Ottima idea, è una bellissima giornata per un picnic.\"",
+    "correctAnswerEnglish": "\"Let's put everything in the bag for lunch in the park.\" \"Excellent idea, it's a beautiful day for a picnic.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Organizzare un pasto all'aperto approfittando del bel tempo.",
+      "incorrectItalian": "No, questa conversazione prepara lo spirito per il consumo del pranzo comprato al mercato.",
+      "correctEnglish": "Right! Organizing an outdoor meal by taking advantage of the good weather.",
+      "incorrectEnglish": "No, this conversation prepares the spirit for consuming the lunch bought at the market."
+    }
+  },
+  {
+    "id": "s23-s10",
+    "italian": "\"Può lavare questa frutta per me? Vorrei mangiarla subito.\" \"Certamente, vado alla fontanella là dietro.\"",
+    "english": "\"Can you wash this fruit for me? I'd like to eat it right away.\" \"Certainly, I'm going to the fountain back there.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Può lavare questa frutta per me? Vorrei mangiarla subito.\" \"Certamente, vado alla fontanella là dietro.\"",
+      "\"Può perdere questa borsa per te? Vorrei chiederla dopo.\" \"Falsamente, vado alla via là sopra.\"",
+      "\"Può ridere questa news per lui? Vorrei vederla ora.\" \"Vero, vado al re là prima.\"",
+      "\"Può correre questa gita per noi? Vorrei tacerla mai.\" \"No, vado al porto là dopo.\""
+    ],
+    "choicesEnglish": [
+      "\"Can you wash this fruit for me? I'd like to eat it right away.\" \"Certainly, I'm going to the fountain back there.\"",
+      "\"Can you lose this bag for you? I'd like to ask for it later.\" \"Falsely, I'm going to the street up there.\"",
+      "\"Can you laugh at this news for him? I'd like to see it now.\" \"True, I'm going to the king there first.\"",
+      "\"Can you run this trip for us? I'd like to never keep quiet about it.\" \"No, I'm going to the port there later.\""
+    ],
+    "correctAnswerItalian": "\"Può lavare questa frutta per me? Vorrei mangiarla subito.\" \"Certamente, vado alla fontanella là dietro.\"",
+    "correctAnswerEnglish": "\"Can you wash this fruit for me? I'd like to eat it right away.\" \"Certainly, I'm going to the fountain back there.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Ottenere un servizio extra di pulizia per un consumo immediato.",
+      "incorrectItalian": "No, si parla della disponibilità del venditore a sciacquare i frutti freschi.",
+      "correctEnglish": "Great! Obtaining an extra cleaning service for immediate consumption.",
+      "incorrectEnglish": "No, it's about the vendor's willingness to rinse fresh fruit."
+    }
+  },
+  {
+    "id": "s23-s11",
+    "italian": "\"Cerco pomodori datterini gialli e rossi.\" \"Ecco un cestino misto, sono ottimi per l'insalata caprese.\"",
+    "english": "\"I'm looking for yellow and red datterini tomatoes.\" \"Here's a mixed basket, they are excellent for Caprese salad.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Cerco pomodori datterini gialli e rossi.\" \"Ecco un cestino misto, sono ottimi per l'insalata caprese.\"",
+      "\"Perdo borse rarie sporche e care.\" \"Ecco una via nera, sono brutti per il fango russi.\"",
+      "\"Vedo news fante vere e rarie.\" \"Ecco un re sordo, sono falsi per la nota finta.\"",
+      "\"Corro gite lunghe brevi e nuove.\" \"Ecco un tour saggio, sono noiosi per la gita lunga.\""
+    ],
+    "choicesEnglish": [
+      "\"I'm looking for yellow and red datterini tomatoes.\" \"Here's a mixed basket, they are excellent for Caprese salad.\"",
+      "\"I lose rare dirty and expensive bags.\" \"Here is a black street, they are bad for the Russian mud.\"",
+      "\"I see fake real and rare news.\" \"Here is a deaf king, they are false for the fake note.\"",
+      "\"I run long short and new trips.\" \"Here is a wise tour, they are boring for the long trip.\""
+    ],
+    "correctAnswerItalian": "\"Cerco pomodori datterini gialli e rossi.\" \"Ecco un cestino misto, sono ottimi per l'insalata caprese.\"",
+    "correctAnswerEnglish": "\"I'm looking for yellow and red datterini tomatoes.\" \"Here is a mixed basket, they are excellent for Caprese salad.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Scegliere una varietà di pomodori piccoli e saporiti per una ricetta specifica.",
+      "incorrectItalian": "No, questa conversazione suggerisce l'uso dei datterini per il piatto freddo tricolore.",
+      "correctEnglish": "Exactly! Choosing a variety of small and flavorful tomatoes for a specific recipe.",
+      "incorrectEnglish": "No, this conversation suggests using datterini for the tricolor cold dish."
+    }
+  },
+  {
+    "id": "s23-s12",
+    "italian": "\"Mi serve anche del basilico fresco e mozzarella di bufala.\" \"Il basilico è in mazzetti, la bufala in questa confezione.\"",
+    "english": "\"I also need some fresh basil and buffalo mozzarella.\" \"The basil is in small bunches, the buffalo (mozzarella) in this package.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi serve anche del basilico fresco e mozzarella di bufala.\" \"Il basilico è in mazzetti, la bufala in questa confezione.\"",
+      "\"Mi perde anche del fango sporco e borsa nera.\" \"La via è in metri, la borsa in questa cassa.\"",
+      "\"Mi rida anche della news finta e re muto.\" \"La news è in note, il re in questa piazza.\"",
+      "\"Mi chiama anche della gita raria e tour lungo.\" \"Il porto è in gite, il tour in questa torre.\""
+    ],
+    "choicesEnglish": [
+      "\"I also need some fresh basil and buffalo mozzarella.\" \"The basil is in small bunches, the buffalo (mozzarella) in this package.\"",
+      "\"I also lose some dirty mud and black bag.\" \"The street is in meters, the bag is in this register.\"",
+      "\"I also give back some fake news and mute king.\" \"The news is in notes, the king is in this square.\"",
+      "\"I also call for some rare trip and long tour.\" \"The port is in trips, the tour is in this tower.\""
+    ],
+    "correctAnswerItalian": "\"Mi serve anche del basilico fresco e mozzarella di bufala.\" \"Il basilico è in mazzetti, la bufala in questa confezione.\"",
+    "correctAnswerEnglish": "\"I also need some fresh basil and buffalo mozzarella.\" \"The basil is in bunches, the buffalo mozzarella in this pack.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Completare la lista degli ingredienti per l'insalata simbolo dell'Italia.",
+      "incorrectItalian": "No, specifica il formato di vendita dell'erba aromatica e del formaggio pregiato.",
+      "correctEnglish": "Right! Completing the ingredient list for Italy's symbolic salad.",
+      "incorrectEnglish": "No, it specifies the sales format of the aromatic herb and the premium cheese."
+    }
+  },
+  {
+    "id": "s23-s13",
+    "italian": "\"Posso avere un assaggio di quel pecorino?\" \"Certo, ne tagliamo un pezzettino subito.\"",
+    "english": "\"Can I have a taste of that pecorino?\" \"Certainly, we'll cut a tiny piece right away.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso avere un assaggio di quel pecorino?\" \"Certo, ne tagliamo un pezzettino subito.\"",
+      "\"Posso avere una borsa di quella via?\" \"Falso, ne perdiamo un metro subito.\"",
+      "\"Posso avere un bacio di quella news?\" \"Vero, ne ridiamo una nota subito.\"",
+      "\"Posso avere un tour di quella gita?\" \"No, ne corriamo un porto subito.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I have a taste of that pecorino?\" \"Certainly, we'll cut a tiny piece right away.\"",
+      "\"Can I have a bag from that street?\" \"False, we'll lose a meter of it right away.\"",
+      "\"Can I have a kiss from that news?\" \"True, we'll laugh at a note of it right away.\"",
+      "\"Can I have a tour from that trip?\" \"No, we'll run a port of it right away.\""
+    ],
+    "correctAnswerItalian": "\"Posso avere un assaggio di quel pecorino?\" \"Certo, ne tagliamo un pezzettino subito.\"",
+    "correctAnswerEnglish": "\"Can I have a sample of that pecorino?\" \"Sure, we'll cut a small piece right now.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Richiedere una prova del formaggio stagionato e ricevere un servizio rapido.",
+      "incorrectItalian": "No, descrive l'interazione tipica per testare la qualità dei prodotti caseari.",
+      "correctEnglish": "Great! Requesting a sample of the aged cheese and receiving quick service.",
+      "incorrectEnglish": "No, it describes the typical interaction for testing dairy products' quality."
+    }
+  },
+  {
+    "id": "s23-s14",
+    "italian": "\"Il prosciutto di Parma è il migliore per i panini.\" \"Vero, ma oggi ne prendo solo un etto.\"",
+    "english": "\"Parma ham is the best for sandwiches.\" \"True, but today I'm only taking 100 grams.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il prosciutto di Parma è il migliore per i panini.\" \"Vero, ma oggi ne prendo solo un etto.\"",
+      "\"Il fango di via è il peggiore per le borse.\" \"Falso, ma oggi ne perdo solo un chilo.\"",
+      "\"Il bacio di re è il finto per le news.\" \"Vero, ma oggi ne rido solo una nota.\"",
+      "\"Il tour di porto è il saggio per le gite.\" \"No, ma oggi ne corro solo un metro.\""
+    ],
+    "choicesEnglish": [
+      "\"Parma ham is the best for sandwiches.\" \"True, but today I'm only taking 100 grams.\"",
+      "\"The street mud is the worst for bags.\" \"False, but today I'm only losing a kilo.\"",
+      "\"The king's kiss is the fake one for the news.\" \"True, but today I'm only laughing at a note.\"",
+      "\"The port tour is the wise one for the trips.\" \"No, but today I'm only running a meter.\""
+    ],
+    "correctAnswerItalian": "\"Il prosciutto di Parma è il migliore per i panini.\" \"Vero, ma oggi ne prendo solo un etto.\"",
+    "correctAnswerEnglish": "\"Parma ham is the best for sandwiches.\" \"True, but today I'm only taking one etto.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Esprimere un parere di alta qualità e limitare l'acquisto alla dose minima.",
+      "incorrectItalian": "No, si parla della bontà del crudo emiliano e della quantità richiesta.",
+      "correctEnglish": "Exactly! Expressing a high-quality opinion and limiting the purchase to the minimum dose.",
+      "incorrectEnglish": "No, it's about the goodness of the Emilian cured ham and the quantity requested."
+    }
+  },
+  {
+    "id": "s23-s15",
+    "italian": "\"Quanto viene il totale con la bufala e il basilico?\" \"Sono sei euro e cinquanta centesimi, ecco a lei.\"",
+    "english": "\"How much is the total with the buffalo (mozzarella) and basil?\" \"It's six euros and fifty cents, here you go.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto viene il totale con la bufala e il basilico?\" \"Sono sei euro e cinquanta centesimi, ecco a lei.\"",
+      "\"Quanto corre la via con la borsa e il fango?\" \"Sono sei metri e cinquanta passi, ecco a te.\"",
+      "\"Quanto grida il re con la news e il bacio?\" \"Sono sei baci e cinquanta note, ecco a lui.\"",
+      "\"Quanto rida la gita con il tour e il porto?\" \"Sono sei ore e cinquanta minuti, ecco a noi.\""
+    ],
+    "choicesEnglish": [
+      "\"How much is the total with the buffalo and basil?\" \"It's six euros and fifty cents, here you go.\"",
+      "\"How far does the street run with the bag and the mud?\" \"It's six meters and fifty steps, here you go.\"",
+      "\"How much does the king shout with the news and the kiss?\" \"It's six kisses and fifty notes, here he is.\"",
+      "\"How much does the trip laugh with the tour and the port?\" \"It's six hours and fifty minutes, here we are.\""
+    ],
+    "correctAnswerItalian": "\"Quanto viene il totale con la bufala e il basilico?\" \"Sono sei euro e cinquanta centesimi, ecco a lei.\"",
+    "correctAnswerEnglish": "\"How much is the total with the buffalo mozzarella and basil?\" \"It's six euros and fifty cents, here you go.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere il conto e ricevere il prezzo finale della spesa.",
+      "incorrectItalian": "No, questa conversazione chiarisce il costo di alcuni ingredienti per la Caprese.",
+      "correctEnglish": "Right! Asking for the bill and receiving the final shopping price.",
+      "incorrectEnglish": "No, this conversation clarifies the cost of some Caprese ingredients."
+    }
+  },
+  {
+    "id": "s23-s16",
+    "italian": "\"Le pesche noci sono dolci?\" \"Sì, sono della zona, appena raccolte. Assaggi pure.\"",
+    "english": "\"Are the nectarines sweet?\" \"Yes, they're local, just picked. Go ahead and taste (one).\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Le pesche noci sono dolci?\" \"Sì, sono della zona, appena raccolte. Assaggi pure.\"",
+      "\"Le borse sporche sono care?\" \"No, sono della via, appena perse. Perda pure.\"",
+      "\"Le news finte sono rarie?\" \"Sì, sono del re, appena risa. Ridi pure.\"",
+      "\"Le gite lunghe sono noiosissime?\" \"No, sono del porto, appena corse. Corra pure.\""
+    ],
+    "choicesEnglish": [
+      "\"Are the nectarines sweet?\" \"Yes, they're local, just picked. Go ahead and taste.\"",
+      "\"Are the dirty bags expensive?\" \"No, they're from the street, just lost. Go ahead and lose.\"",
+      "\"Are the fake news rare?\" \"Yes, they're from the king, just laughed at. Go ahead and laugh.\"",
+      "\"Are the long trips very boring?\" \"No, they're from the port, just run. Go ahead and run.\""
+    ],
+    "correctAnswerItalian": "\"Le pesche noci sono dolci?\" \"Sì, sono della zona, appena raccolte. Assaggi pure.\"",
+    "correctAnswerEnglish": "\"Are the nectarines sweet?\" \"Yes, they are from the area, just harvested. Feel free to taste.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Verificare la qualità della frutta e ricevere conferma della provenienza locale.",
+      "incorrectItalian": "No, sottolinea la freschezza e la tipicità dei prodotti del territorio.",
+      "correctEnglish": "Great! Verifying the fruit's quality and receiving confirmation of its local origin.",
+      "incorrectEnglish": "No, it emphasizes the freshness and typicality of local products."
+    }
+  },
+  {
+    "id": "s23-s17",
+    "italian": "\"Prendo le pesche, due. E un cestino di fragole.\"" ,
+    "english": "\"I'll take the peaches, two. And a basket of strawberries.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Prendo le pesche, due. E un cestino di fragole.\"",
+      "\"Perdo le borse, due. E un fango di via.\"",
+      "\"Vedo le news, due. E un bacio di re.\"",
+      "\"Corro le gite, due. E un tour di porto.\""
+    ],
+    "choicesEnglish": [
+      "\"I'll take the peaches, two. And a basket of strawberries.\"",
+      "\"I'll lose the bags, two. And a street mud.\"",
+      "\"I see the news, two. And a king's kiss.\"",
+      "\"I'll run the trips, two. And a port tour.\""
+    ],
+    "correctAnswerItalian": "\"Prendo le pesche, due. E un cestino di fragole.\"",
+    "correctAnswerEnglish": "\"I'll take two peaches and a basket of strawberries.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Effettuare l'ordinazione di frutta di stagione al banco.",
+      "incorrectItalian": "No, stai specificando i pezzi e la confezione dei frutti desiderati.",
+      "correctEnglish": "Exactly! Making a seasonal fruit order at the counter.",
+      "incorrectEnglish": "No, you are specifying the pieces and packaging of the desired fruits."
+    }
+  },
+  {
+    "id": "s23-s18",
+    "italian": "\"Mi serve un piatto piccolo per assaggiare questo formaggio.\"" ,
+    "english": "\"I need a small plate to taste this cheese.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi serve un piatto piccolo per assaggiare questo formaggio.\"",
+      "\"Mi perdi una via sporca per chiamare questa borsa.\"",
+      "\"Mi ridi una news finta per vedere questo re.\"",
+      "\"Mi corri una gita lunga per tacere questo tour.\""
+    ],
+    "choicesEnglish": [
+      "\"I need a small plate to taste this cheese.\"",
+      "\"You lose a dirty street for me to call this bag.\"",
+      "\"You laugh at a fake news for me to see this king.\"",
+      "\"You run a long trip for me to silence this tour.\""
+    ],
+    "correctAnswerItalian": "\"Mi serve un piatto piccolo per assaggiare questo formaggio.\"",
+    "correctAnswerEnglish": "\"I need a small plate to sample this cheese.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere un supporto per la degustazione immediata dei prodotti.",
+      "incorrectItalian": "No, cerchi uno strumento per consumare la merce appena comprata.",
+      "correctEnglish": "Right! Asking for support for immediate product tasting.",
+      "incorrectEnglish": "No, you're looking for a tool to consume the goods just bought."
+    }
+  },
+  {
+    "id": "s23-s19",
+    "italian": "\"C'è una fontanella là dietro. Gliela lavo volentieri.\"" ,
+    "english": "\"There's a fountain back there. I'll gladly wash it (the fruit) for you.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è una fontanella là dietro. Gliela lavo volentieri.\"",
+      "\"C'è una borsa là sopra. Gliela perdo raramente.\"",
+      "\"C'è una news là prima. Gliela rido finto.\"",
+      "\"C'è un re là dopo. Glielo chiamo saggio.\""
+    ],
+    "choicesEnglish": [
+      "\"There's a fountain back there. I'll gladly wash it for you.\"",
+      "\"There's a bag up there. I rarely lose it for you.\"",
+      "\"There's a news item before that. I laugh at it for you fake.\"",
+      "\"There's a king after that. I call him wise for you.\""
+    ],
+    "correctAnswerItalian": "\"C'è una fontanella là dietro. Gliela lavo volentieri.\"",
+    "correctAnswerEnglish": "\"There is a drinking fountain back there. I'll gladly wash it for you.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Un servizio di cortesia del venditore per facilitare il cliente.",
+      "incorrectItalian": "No, indica la disponibilità a pulire la frutta con l'acqua pubblica vicina.",
+      "correctEnglish": "Great! A vendor's courtesy service to facilitate the customer.",
+      "incorrectEnglish": "No, it indicates the willingness to clean the fruit with the nearby public water."
+    }
+  },
+  {
+    "id": "s23-s20",
+    "italian": "\"Le olive verdi sono in salamoia, quelle nere sono al forno.\"" ,
+    "english": "\"The green olives are in brine, the black ones are baked.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Le olive verdi sono in salamoia, quelle nere sono al forno.\"",
+      "\"Le vie sporche sono in porto, quelle nere sono al bar.\"",
+      "\"Le news finte sono in re, quelle rarie sono alla piazza.\"",
+      "\"Le gite lunghe sono in tour, quelle brevi sono alla via.\""
+    ],
+    "choicesEnglish": [
+      "\"The green olives are in brine, the black ones are baked.\"",
+      "\"The dirty streets are in the port, the black ones are at the bar.\"",
+      "\"The fake news are in the king, the rare ones are at the square.\"",
+      "\"The long trips are on tour, the short ones are on the street.\""
+    ],
+    "correctAnswerItalian": "\"Le olive verdi sono in salamoia, quelle nere sono al forno.\"",
+    "correctAnswerEnglish": "\"Green olives are in brine, black ones are oven-roasted.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Spiegare le differenze di conservazione e sapore tra i tipi di olive.",
+      "incorrectItalian": "No, questa conversazione elenca i metodi di preparazione disponibili.",
+      "correctEnglish": "Exactly! Explaining the storage and flavor differences between types of olives.",
+      "incorrectEnglish": "No, this conversation lists the available preparation methods."
     }
   }
 ]

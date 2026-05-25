@@ -1,104 +1,402 @@
 [
   {
-    "id": "s3-p3",
-    "italian": "Dov'è l'ufficio bagagli?",
-    "english": "Where is the baggage office?",
-    "type": "phrase",
-    "choices": [
-      "Dov'è l'ufficio bagagli?",
-      "Ho perso la mia valigia.",
-      "È una borsa grande.",
-      "La mia valigia è nera."
-    ],
-    "correctAnswer": "Dov'è l'ufficio bagagli?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Dov'è l'ufficio bagagli?\"."
-    }
+    "choicesItalian": ["La mia valigia non è arrivata.", "Il mio bagaglio è rotto.", "Dov'è il nastro numero cinque?", "Ho perso la mia borsa."],
+    "choicesEnglish": ["My suitcase has not arrived.", "My luggage is broken.", "Where is belt number five?", "I lost my bag."],
+    "correctAnswerItalian": "La mia valigia non è arrivata.",
+    "correctAnswerEnglish": "My suitcase has not arrived.",
+    "feedbackItalian": "Frase per segnalare un bagaglio mancante.",
+    "feedbackEnglish": "Phrase to report missing luggage."
   },
   {
-    "id": "s3-p6",
-    "italian": "È una borsa grande.",
-    "english": "It is a large bag.",
-    "type": "phrase",
-    "choices": [
-      "La mia valigia è nera.",
-      "Dov'è l'ufficio bagagli?",
-      "È una borsa grande.",
-      "Non trovo la mia borsa."
-    ],
-    "correctAnswer": "È una borsa grande.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"È una borsa grande.\"."
-    }
+    "choicesItalian": ["Qual era il suo numero di volo?", "Da dove veniva?", "A che ora è atterrato?", "Qual è il suo nome?"],
+    "choicesEnglish": ["What was your flight number?", "Where were you coming from?", "What time did you land?", "What is your name?"],
+    "correctAnswerItalian": "Qual era il suo numero di volo?",
+    "correctAnswerEnglish": "What was your flight number?",
+    "feedbackItalian": "Domanda dell'impiegato per rintracciare il bagaglio.",
+    "feedbackEnglish": "Clerk's question to track the luggage."
   },
   {
-    "id": "s3-p2",
-    "italian": "La mia valigia è nera.",
-    "english": "My suitcase is black.",
-    "type": "phrase",
-    "choices": [
-      "La mia valigia è nera.",
-      "Dov'è l'ufficio bagagli?",
-      "Non trovo la mia borsa.",
-      "È una borsa grande."
-    ],
-    "correctAnswer": "La mia valigia è nera.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"La mia valigia è nera.\"."
-    }
+    "choicesItalian": ["Era il volo AZ204 da Londra.", "Vengo da Parigi con il volo AF.", "Il volo è arrivato in orario.", "Ho preso il treno da Milano."],
+    "choicesEnglish": ["It was flight AZ204 from London.", "I'm coming from Paris with the AF flight.", "The flight arrived on time.", "I took the train from Milan."],
+    "correctAnswerItalian": "Era il volo AZ204 da Londra.",
+    "correctAnswerEnglish": "It was flight AZ204 from London.",
+    "feedbackItalian": "Specifica i dettagli del volo.",
+    "feedbackEnglish": "Specifies flight details."
   },
   {
-    "id": "s3-p1",
-    "italian": "Non trovo la mia borsa.",
-    "english": "I can't find my bag.",
-    "type": "phrase",
-    "choices": [
-      "Questa è l'etichetta del volo.",
-      "Non trovo la mia borsa.",
-      "Dov'è l'ufficio bagagli?",
-      "La mia valigia è nera."
-    ],
-    "correctAnswer": "Non trovo la mia borsa.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Non trovo la mia borsa.\"."
-    }
+    "choicesItalian": ["Mi serve l'etichetta del bagaglio.", "Mi dia il suo passaporto.", "Voglio vedere il biglietto.", "Faccia una foto alla valigia."],
+    "choicesEnglish": ["I need the luggage tag.", "Give me your passport.", "I want to see the ticket.", "Take a photo of the suitcase."],
+    "correctAnswerItalian": "Mi serve l'etichetta del bagaglio.",
+    "correctAnswerEnglish": "I need the luggage tag.",
+    "feedbackItalian": "Richiesta del talloncino identificativo.",
+    "feedbackEnglish": "Request for the identification tag."
   },
   {
-    "id": "s3-p4",
-    "italian": "Ho perso la mia valigia.",
-    "english": "I lost my suitcase.",
-    "type": "phrase",
-    "choices": [
-      "Ho perso la mia valigia.",
-      "La mia valigia è nera.",
-      "Questa è l'etichetta del volo.",
-      "Dov'è l'ufficio bagagli?"
-    ],
-    "correctAnswer": "Ho perso la mia valigia.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho perso la mia valigia.\"."
-    }
+    "choicesItalian": ["Ecco l'etichetta.", "Ecco il documento.", "Ecco la borsa.", "Ecco il codice."],
+    "choicesEnglish": ["Here is the tag.", "Here is the document.", "Here is the bag.", "Here is the code."],
+    "correctAnswerItalian": "Ecco l'etichetta.",
+    "correctAnswerEnglish": "Here is the tag.",
+    "feedbackItalian": "Si dice quando si consegna il talloncino.",
+    "feedbackEnglish": "It is said when handing over the tag."
   },
   {
-    "id": "s3-p5",
-    "italian": "Questa è l'etichetta del volo.",
-    "english": "This is the flight tag.",
-    "type": "phrase",
-    "choices": [
-      "La mia valigia è nera.",
-      "Non trovo la mia borsa.",
-      "Questa è l'etichetta del volo.",
-      "Dov'è l'ufficio bagagli?"
-    ],
-    "correctAnswer": "Questa è l'etichetta del volo.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Questa è l'etichetta del volo.\"."
-    }
+    "choicesItalian": ["È una valigia rigida blu.", "È uno zaino verde grande.", "È un borsone nero pesante.", "È una borsa piccola rossa."],
+    "choicesEnglish": ["It's a hard blue suitcase.", "It's a big green backpack.", "It's a heavy black duffel bag.", "It's a small red bag."],
+    "correctAnswerItalian": "È una valigia rigida blu.",
+    "correctAnswerEnglish": "It's a hard blue suitcase.",
+    "feedbackItalian": "Fornisce una descrizione del bagaglio.",
+    "feedbackEnglish": "Provides a description of the luggage."
+  },
+  {
+    "choicesItalian": ["Di medie dimensioni.", "Molto grande.", "Piuttosto piccola.", "Di taglia normale."],
+    "choicesEnglish": ["Medium sized.", "Very large.", "Rather small.", "Normal sized."],
+    "correctAnswerItalian": "Di medie dimensioni.",
+    "correctAnswerEnglish": "Medium sized.",
+    "feedbackItalian": "Specifica la grandezza dell'oggetto.",
+    "feedbackEnglish": "Specifies the size of the object."
+  },
+  {
+    "choicesItalian": ["Vorrei fare un reclamo.", "Vorrei chiedere un aiuto.", "Vorrei comprare una borsa.", "Vorrei partire subito."],
+    "choicesEnglish": ["I would like to make a complaint.", "I would like to ask for help.", "I would like to buy a bag.", "I would like to leave immediately."],
+    "correctAnswerItalian": "Vorrei fare un reclamo.",
+    "correctAnswerEnglish": "I would like to make a complaint.",
+    "feedbackItalian": "Usato per segnalare un problema ufficiale.",
+    "feedbackEnglish": "Used to report an official problem."
+  },
+  {
+    "choicesItalian": ["La valigia ha una ruota rotta.", "Il manico è staccato.", "La cerniera non chiude.", "C'è un buco sul lato."],
+    "choicesEnglish": ["The suitcase has a broken wheel.", "The handle is detached.", "The zipper doesn't close.", "There is a hole on the side."],
+    "correctAnswerItalian": "La valigia ha una ruota rotta.",
+    "correctAnswerEnglish": "The suitcase has a broken wheel.",
+    "feedbackItalian": "Descrive il danno al bagaglio.",
+    "feedbackEnglish": "Describes the damage to the luggage."
+  },
+  {
+    "choicesItalian": ["Dobbiamo compilare un modulo PIR.", "Dobbiamo chiamare la polizia.", "Dobbiamo andare in hotel.", "Dobbiamo aspettare ancora."],
+    "choicesEnglish": ["We must fill out a PIR form.", "We must call the police.", "We must go to the hotel.", "We must wait longer."],
+    "correctAnswerItalian": "Dobbiamo compilare un modulo PIR.",
+    "correctAnswerEnglish": "We must fill out a PIR form.",
+    "feedbackItalian": "Indica la procedura burocratica necessaria.",
+    "feedbackEnglish": "Indicates the necessary bureaucratic procedure."
+  },
+  {
+    "choicesItalian": ["L'ho comprata appena un mese fa.", "È un regalo di mia madre.", "È una valigia molto vecchia.", "Non ricordo quando l'ho presa."],
+    "choicesEnglish": ["I bought it just a month ago.", "It's a gift from my mother.", "It's a very old suitcase.", "I don't remember when I got it."],
+    "correctAnswerItalian": "L'ho comprata appena un mese fa.",
+    "correctAnswerEnglish": "I bought it just a month ago.",
+    "feedbackItalian": "Sottolinea che l'oggetto era nuovo.",
+    "feedbackEnglish": "Emphasizes that the object was new."
+  },
+  {
+    "choicesItalian": ["Mi mostri il danno, per favore.", "Mi dia la sua mano.", "Mi dica la verità.", "Mi faccia un sorriso."],
+    "choicesEnglish": ["Show me the damage, please.", "Give me your hand.", "Tell me the truth.", "Give me a smile."],
+    "correctAnswerItalian": "Mi mostri il danno, per favore.",
+    "correctAnswerEnglish": "Show me the damage, please.",
+    "feedbackItalian": "Richiesta dell'impiegato per verificare il problema.",
+    "feedbackEnglish": "Clerk's request to verify the problem."
+  },
+  {
+    "choicesItalian": ["La ruota è completamente staccata.", "La valigia è solo graffiata.", "Il lucchetto è bloccato.", "La borsa è bagnata dentro."],
+    "choicesEnglish": ["The wheel is completely detached.", "The suitcase is only scratched.", "The padlock is jammed.", "The bag is wet inside."],
+    "correctAnswerItalian": "La ruota è completamente staccata.",
+    "correctAnswerEnglish": "The wheel is completely detached.",
+    "feedbackItalian": "Specifica l'entità del danno.",
+    "feedbackEnglish": "Specifies the extent of the damage."
+  },
+  {
+    "choicesItalian": ["Su quale nastro arrivano i bagagli?", "Dove posso trovare un carrello?", "A che ora chiude il deposito?", "Chi mi aiuta con il peso?"],
+    "choicesEnglish": ["On which belt does the luggage arrive?", "Where can I find a cart?", "What time does the storage close?", "Who helps me with the weight?"],
+    "correctAnswerItalian": "Su quale nastro arrivano i bagagli?",
+    "correctAnswerEnglish": "On which belt does the luggage arrive?",
+    "feedbackItalian": "Domanda per localizzare il proprio bagaglio.",
+    "feedbackEnglish": "Question to locate one's luggage."
+  },
+  {
+    "choicesItalian": ["Guardi lo schermo lì in alto.", "Segua i cartelli gialli.", "Chieda all'ufficio informazioni.", "Vada verso l'uscita."],
+    "choicesEnglish": ["Look at the screen up there.", "Follow the yellow signs.", "Ask the information office.", "Go towards the exit."],
+    "correctAnswerItalian": "Guardi lo schermo lì in alto.",
+    "correctAnswerEnglish": "Look at the screen up there.",
+    "feedbackItalian": "Suggerimento per trovare informazioni visive.",
+    "feedbackEnglish": "Suggestion to find visual information."
+  },
+  {
+    "choicesItalian": ["Nastro numero cinque.", "Binario numero dieci.", "Porta numero tre.", "Posto numero sei."],
+    "choicesEnglish": ["Belt number five.", "Platform number ten.", "Gate number three.", "Seat number six."],
+    "correctAnswerItalian": "Nastro numero cinque.",
+    "correctAnswerEnglish": "Belt number five.",
+    "feedbackItalian": "Indica il luogo esatto del ritiro.",
+    "feedbackEnglish": "Indicates the exact collection location."
+  },
+  {
+    "choicesItalian": ["Dovrebbero uscire tra pochi minuti.", "Sono già usciti tutti.", "Saranno pronti domani.", "Non usciranno affatto."],
+    "choicesEnglish": ["They should come out in a few minutes.", "They have all come out already.", "They will be ready tomorrow.", "They won't come out at all."],
+    "correctAnswerItalian": "Dovrebbero uscire tra pochi minuti.",
+    "correctAnswerEnglish": "They should come out in a few minutes.",
+    "feedbackItalian": "Stima del tempo di attesa al nastro.",
+    "feedbackEnglish": "Estimate of waiting time at the belt."
+  },
+  {
+    "choicesItalian": ["Grazie mille per l'aiuto.", "Prego, non c'è di che.", "Mi dispiace molto.", "Buona giornata a lei."],
+    "choicesEnglish": ["Thank you very much for the help.", "You're welcome.", "I'm very sorry.", "Good day to you."],
+    "correctAnswerItalian": "Grazie mille per l'aiuto.",
+    "correctAnswerEnglish": "Thank you very much for the help.",
+    "feedbackItalian": "Ringraziamento per l'assistenza ricevuta.",
+    "feedbackEnglish": "Thank you for the assistance received."
+  },
+  {
+    "choicesItalian": ["Il mio volo era da Parigi.", "Sono arrivato da Roma.", "Vengo da New York.", "Il volo partiva da Berlino."],
+    "choicesEnglish": ["My flight was from Paris.", "I arrived from Rome.", "I come from New York.", "The flight left from Berlin."],
+    "correctAnswerItalian": "Il mio volo era da Parigi.",
+    "correctAnswerEnglish": "My flight was from Paris.",
+    "feedbackItalian": "Indica la città di partenza del volo.",
+    "feedbackEnglish": "Indicates the flight's departure city."
+  },
+  {
+    "choicesItalian": ["Mi dispiace, faremo una ricerca.", "Va bene, aspetti qui.", "Ok, compiliamo il modulo.", "Sì, la valigia è qui."],
+    "choicesEnglish": ["I'm sorry, we will do a search.", "Alright, wait here.", "Ok, let's fill out the form.", "Yes, the suitcase is here."],
+    "correctAnswerItalian": "Mi dispiace, faremo una ricerca.",
+    "correctAnswerEnglish": "I'm sorry, we will do a search.",
+    "feedbackItalian": "Risposta dell'impiegato a uno smarrimento.",
+    "feedbackEnglish": "Clerk's response to a loss."
+  },
+  {
+    "choicesItalian": ["La valigia è rigida.", "La borsa è morbida.", "Lo zaino è leggero.", "Il pacco è piccolo."],
+    "choicesEnglish": ["The suitcase is hard.", "The bag is soft.", "The backpack is light.", "The package is small."],
+    "correctAnswerItalian": "La valigia è rigida.",
+    "correctAnswerEnglish": "The suitcase is hard.",
+    "feedbackItalian": "Descrive la struttura del bagaglio.",
+    "feedbackEnglish": "Describes the luggage structure."
+  },
+  {
+    "choicesItalian": ["È di colore blu scuro.", "È rosso fuoco.", "È verde brillante.", "È nero carbone."],
+    "choicesEnglish": ["It's dark blue in color.", "It's fire red.", "It's bright green.", "It's coal black."],
+    "correctAnswerItalian": "È di colore blu scuro.",
+    "correctAnswerEnglish": "It's dark blue in color.",
+    "feedbackItalian": "Specifica il colore dell'oggetto.",
+    "feedbackEnglish": "Specifies the color of the object."
+  },
+  {
+    "choicesItalian": ["Ha una targhetta col nome?", "C'è un segno particolare?", "Porta un lucchetto?", "Ha delle ruote grandi?"],
+    "choicesEnglish": ["Does it have a name tag?", "Is there a particular mark?", "Does it have a padlock?", "Does it have big wheels?"],
+    "correctAnswerItalian": "Ha una targhetta col nome?",
+    "correctAnswerEnglish": "Does it have a name tag?",
+    "feedbackItalian": "Chiede dettagli per l'identificazione.",
+    "feedbackEnglish": "Asks for identification details."
+  },
+  {
+    "choicesItalian": ["Sì, c'è il mio indirizzo.", "No, non c'è nulla.", "Forse, non ricordo bene.", "Sì, c'è un nastro rosso."],
+    "choicesEnglish": ["Yes, my address is on it.", "No, there is nothing.", "Maybe, I don't remember well.", "Yes, there is a red ribbon."],
+    "correctAnswerItalian": "Sì, c'è il mio indirizzo.",
+    "correctAnswerEnglish": "Yes, my address is on it.",
+    "feedbackItalian": "Conferma la presenza di dati personali.",
+    "feedbackEnglish": "Confirms the presence of personal data."
+  },
+  {
+    "choicesItalian": ["Dobbiamo fare il PIR.", "Serve la denuncia.", "Chiami l'assicurazione.", "Vada alla polizia."],
+    "choicesEnglish": ["We must do the PIR.", "The report is needed.", "Call the insurance.", "Go to the police."],
+    "correctAnswerItalian": "Dobbiamo fare il PIR.",
+    "correctAnswerEnglish": "We must do the PIR.",
+    "feedbackItalian": "Usa l'acronimo tecnico aeroportuale.",
+    "feedbackEnglish": "Uses the technical airport acronym."
+  },
+  {
+    "choicesItalian": ["Quanto tempo ci vorrà?", "Quando arriverà a casa?", "Chi la porterà?", "Quanto costa il servizio?"],
+    "choicesEnglish": ["How long will it take?", "When will it arrive at home?", "Who will bring it?", "How much does the service cost?"],
+    "correctAnswerItalian": "Quanto tempo ci vorrà?",
+    "correctAnswerEnglish": "How long will it take?",
+    "feedbackItalian": "Chiede la durata della ricerca.",
+    "feedbackEnglish": "Asks for the duration of the search."
+  },
+  {
+    "choicesItalian": ["Di solito due o tre giorni.", "Al massimo una settimana.", "Speriamo entro stasera.", "Purtroppo non lo sappiamo."],
+    "choicesEnglish": ["Usually two or three days.", "At most one week.", "We hope by tonight.", "Unfortunately we don't know."],
+    "correctAnswerItalian": "Di solito due o tre giorni.",
+    "correctAnswerEnglish": "Usually two or three days.",
+    "feedbackItalian": "Fornisce una tempistica media.",
+    "feedbackEnglish": "Provides an average timeframe."
+  },
+  {
+    "choicesItalian": ["La consegneremo a domicilio.", "Deve venire a prenderla.", "La spediremo per posta.", "Resterà qui in deposito."],
+    "choicesEnglish": ["We will deliver it to your home.", "You must come and get it.", "We will send it by mail.", "It will stay here in storage."],
+    "correctAnswerItalian": "La consegneremo a domicilio.",
+    "correctAnswerEnglish": "We will deliver it to your home.",
+    "feedbackItalian": "Promette la consegna a casa.",
+    "feedbackEnglish": "Promises home delivery."
+  },
+  {
+    "choicesItalian": ["Qual è il suo indirizzo?", "Dove abita lei?", "Qual è il numero civico?", "In che città si trova?"],
+    "choicesEnglish": ["What is your address?", "Where do you live?", "What is the house number?", "In what city is it located?"],
+    "correctAnswerItalian": "Qual è il suo indirizzo?",
+    "correctAnswerEnglish": "What is your address?",
+    "feedbackItalian": "Richiesta necessaria per la consegna.",
+    "feedbackEnglish": "Necessary request for delivery."
+  },
+  {
+    "choicesItalian": ["Abito all'Hotel Centrale.", "Sto in Via Roma dieci.", "Sono in un appartamento.", "Vivo fuori città."],
+    "choicesEnglish": ["I stay at Hotel Centrale.", "I'm at Via Roma ten.", "I'm in an apartment.", "I live outside the city."],
+    "correctAnswerItalian": "Abito all'Hotel Centrale.",
+    "correctAnswerEnglish": "I stay at Hotel Centrale.",
+    "feedbackItalian": "Indica il luogo del soggiorno.",
+    "feedbackEnglish": "Indicates the place of stay."
+  },
+  {
+    "choicesItalian": ["Mi lasci un numero di telefono.", "Mi dia la sua email.", "Mi scriva il suo nome.", "Mi mostri la carta."],
+    "choicesEnglish": ["Leave me a phone number.", "Give me your email.", "Write me your name.", "Show me the card."],
+    "correctAnswerItalian": "Mi lasci un numero di telefono.",
+    "correctAnswerEnglish": "Leave me a phone number.",
+    "feedbackItalian": "Richiesta di un contatto rapido.",
+    "feedbackEnglish": "Request for a quick contact."
+  },
+  {
+    "choicesItalian": ["La chiameremo noi.", "Ci chiami lei domani.", "Non si faccia sentire.", "Aspetti una nostra mail."],
+    "choicesEnglish": ["We will call you.", "Call us tomorrow.", "Don't get in touch.", "Wait for our email."],
+    "correctAnswerItalian": "La chiameremo noi.",
+    "correctAnswerEnglish": "We will call you.",
+    "feedbackItalian": "Rassicura sul prossimo passo.",
+    "feedbackEnglish": "Reassures on the next step."
+  },
+  {
+    "choicesItalian": ["È una valigia nuova.", "È un oggetto vecchio.", "È una borsa usata.", "È un pacco antico."],
+    "choicesEnglish": ["It's a new suitcase.", "It's an old object.", "It's a used bag.", "It's an ancient package."],
+    "correctAnswerItalian": "È una valigia nuova.",
+    "correctAnswerEnglish": "It's a new suitcase.",
+    "feedbackItalian": "Descrive l'età del bagaglio.",
+    "feedbackEnglish": "Describes the luggage age."
+  },
+  {
+    "choicesItalian": ["Spero di ritrovarla presto.", "Non la voglio più.", "Ne comprerò un'altra.", "Pazienza, non importa."],
+    "choicesEnglish": ["I hope to find it soon.", "I don't want it anymore.", "I'll buy another one.", "Patience, it doesn't matter."],
+    "correctAnswerItalian": "Spero di ritrovarla presto.",
+    "correctAnswerEnglish": "I hope to find it soon.",
+    "feedbackItalian": "Esprime un desiderio positivo.",
+    "feedbackEnglish": "Expresses a positive wish."
+  },
+  {
+    "choicesItalian": ["Ho tutto dentro.", "Non c'è nulla di valore.", "Ci sono solo vestiti.", "È quasi vuota."],
+    "choicesEnglish": ["I have everything inside.", "There is nothing of value.", "There are only clothes.", "It's almost empty."],
+    "correctAnswerItalian": "Ho tutto dentro.",
+    "correctAnswerEnglish": "I have everything inside.",
+    "feedbackItalian": "Sottolinea l'importanza del contenuto.",
+    "feedbackEnglish": "Emphasizes the importance of the content."
+  },
+  {
+    "choicesItalian": ["Anche i miei farmaci.", "Solo i miei scarpe.", "Tutti i miei libri.", "I miei documenti importanti."],
+    "choicesEnglish": ["Also my medications.", "Only my shoes.", "All my books.", "My important documents."],
+    "correctAnswerItalian": "Anche i miei farmaci.",
+    "correctAnswerEnglish": "Also my medications.",
+    "feedbackItalian": "Menziona oggetti critici smarriti.",
+    "feedbackEnglish": "Mentions critical lost objects."
+  },
+  {
+    "choicesItalian": ["Faremo il possibile.", "Non possiamo fare nulla.", "Ci proviamo, ma è difficile.", "Torni domani mattina."],
+    "choicesEnglish": ["We will do our best.", "We can't do anything.", "We'll try, but it's hard.", "Come back tomorrow morning."],
+    "correctAnswerItalian": "Faremo il possibile.",
+    "correctAnswerEnglish": "We will do our best.",
+    "feedbackItalian": "Frase di rassicurazione standard.",
+    "feedbackEnglish": "Standard reassurance phrase."
+  },
+  {
+    "choicesItalian": ["Mi dia la ricevuta.", "Ecco lo scontrino.", "Prenda il modulo.", "Tenga il talloncino."],
+    "choicesEnglish": ["Give me the receipt.", "Here is the receipt.", "Take the form.", "Keep the stub."],
+    "correctAnswerItalian": "Mi dia la ricevuta.",
+    "correctAnswerEnglish": "Give me the receipt.",
+    "feedbackItalian": "Richiesta di prova della segnalazione.",
+    "feedbackEnglish": "Request for proof of the report."
+  },
+  {
+    "choicesItalian": ["Ecco il codice PIR.", "Ecco il numero verde.", "Ecco la mia firma.", "Ecco il suo nome."],
+    "choicesEnglish": ["Here is the PIR code.", "Here is the toll-free number.", "Here is my signature.", "Here is your name."],
+    "correctAnswerItalian": "Ecco il codice PIR.",
+    "correctAnswerEnglish": "Here is the PIR code.",
+    "feedbackItalian": "Consegna l'identificativo della pratica.",
+    "feedbackEnglish": "Hands over the case identifier."
+  },
+  {
+    "choicesItalian": ["Può controllare online.", "Deve chiamare ogni ora.", "Venga qui di persona.", "Aspetti una lettera."],
+    "choicesEnglish": ["You can check online.", "You must call every hour.", "Come here in person.", "Wait for a letter."],
+    "correctAnswerItalian": "Può controllare online.",
+    "correctAnswerEnglish": "You can check online.",
+    "feedbackItalian": "Suggerisce un modo moderno di verifica.",
+    "feedbackEnglish": "Suggests a modern way of checking."
+  },
+  {
+    "choicesItalian": ["La ruota è rotta.", "Il manico manca.", "La zip è bloccata.", "C'è un graffio."],
+    "choicesEnglish": ["The wheel is broken.", "The handle is missing.", "The zip is stuck.", "There is a scratch."],
+    "correctAnswerItalian": "La ruota è rotta.",
+    "correctAnswerEnglish": "The wheel is broken.",
+    "feedbackItalian": "Descrive un danno specifico.",
+    "feedbackEnglish": "Describes a specific damage."
+  },
+  {
+    "choicesItalian": ["Guardi qui, è staccata.", "Senta qui, è bagnato.", "Veda qui, è aperto.", "Tocchi qui, è rotto."],
+    "choicesEnglish": ["Look here, it's detached.", "Feel here, it's wet.", "See here, it's open.", "Touch here, it's broken."],
+    "correctAnswerItalian": "Guardi qui, è staccata.",
+    "correctAnswerEnglish": "Look here, it's detached.",
+    "feedbackItalian": "Mostra il punto del danno.",
+    "feedbackEnglish": "Shows the point of damage."
+  },
+  {
+    "choicesItalian": ["È un danno grave.", "È solo un piccolo segno.", "Non è nulla di serio.", "Si può riparare subito."],
+    "choicesEnglish": ["It's serious damage.", "It's just a small mark.", "It's nothing serious.", "It can be repaired right away."],
+    "correctAnswerItalian": "È un danno grave.",
+    "correctAnswerEnglish": "It's serious damage.",
+    "feedbackItalian": "Valuta l'entità del problema.",
+    "feedbackEnglish": "Evaluates the extent of the problem."
+  },
+  {
+    "choicesItalian": ["Chi paga per questo?", "Quanto costa ripararla?", "La compagnia rimborsa?", "Voglio una valigia nuova."],
+    "choicesEnglish": ["Who pays for this?", "How much to repair it?", "Does the company reimburse?", "I want a new suitcase."],
+    "correctAnswerItalian": "Chi paga per questo?",
+    "correctAnswerEnglish": "Who pays for this?",
+    "feedbackItalian": "Domanda sulla responsabilità economica.",
+    "feedbackEnglish": "Question about economic responsibility."
+  },
+  {
+    "choicesItalian": ["Deve fare il reclamo ora.", "Può farlo tra un mese.", "Non serve fare nulla.", "Scriva una mail domani."],
+    "choicesEnglish": ["You must make the complaint now.", "You can do it in a month.", "No need to do anything.", "Write an email tomorrow."],
+    "correctAnswerItalian": "Deve fare il reclamo ora.",
+    "correctAnswerEnglish": "You must make the complaint now.",
+    "feedbackItalian": "Indica l'urgenza dell'azione.",
+    "feedbackEnglish": "Indicates the urgency of the action."
+  },
+  {
+    "choicesItalian": ["Ecco il mio biglietto aereo.", "Ecco il mio passaporto.", "Ecco la mia borsa.", "Ecco i miei soldi."],
+    "choicesEnglish": ["Here is my plane ticket.", "Here is my passport.", "Here is my bag.", "Here is my money."],
+    "correctAnswerItalian": "Ecco il mio biglietto aereo.",
+    "correctAnswerEnglish": "Here is my plane ticket.",
+    "feedbackItalian": "Consegna il documento di viaggio.",
+    "feedbackEnglish": "Hands over the travel document."
+  },
+  {
+    "choicesItalian": ["Volo AF1432 da Parigi.", "Volo AZ201 da Roma.", "Volo LH302 da Berlino.", "Volo BA405 da Londra."],
+    "choicesEnglish": ["Flight AF1432 from Paris.", "Flight AZ201 from Rome.", "Flight LH302 from Berlin.", "Flight BA405 from London."],
+    "correctAnswerItalian": "Volo AF1432 da Parigi.",
+    "correctAnswerEnglish": "Flight AF1432 from Paris.",
+    "feedbackItalian": "Specifica volo e provenienza.",
+    "feedbackEnglish": "Specifies flight and origin."
+  },
+  {
+    "choicesItalian": ["Sul nastro numero cinque.", "Al binario numero tre.", "Alla porta numero otto.", "Al posto numero dieci."],
+    "choicesEnglish": ["On belt number five.", "At platform number three.", "At gate number eight.", "At seat number ten."],
+    "correctAnswerItalian": "Sul nastro numero cinque.",
+    "correctAnswerEnglish": "On belt number five.",
+    "feedbackItalian": "Indica la posizione di arrivo.",
+    "feedbackEnglish": "Indicates the arrival location."
+  },
+  {
+    "choicesItalian": ["Dovrebbero uscire tra poco.", "Sono già finiti tutti.", "Non arrivano più.", "Hanno cambiato nastro."],
+    "choicesEnglish": ["They should come out shortly.", "They are all finished already.", "They aren't coming anymore.", "They changed belts."],
+    "correctAnswerItalian": "Dovrebbero uscire tra poco.",
+    "correctAnswerEnglish": "They should come out shortly.",
+    "feedbackItalian": "Informazione sull'attesa imminente.",
+    "feedbackEnglish": "Information about the imminent wait."
+  },
+  {
+    "choicesItalian": ["Mi scusi, un'informazione.", "Scusa, sai dov'è il bagno?", "Per favore, mi aiuti.", "Senta, vorrei parlare."],
+    "choicesEnglish": ["Excuse me, some information.", "Sorry, do you know where the bathroom is?", "Please, help me.", "Listen, I'd like to talk."],
+    "correctAnswerItalian": "Mi scusi, un'informazione.",
+    "correctAnswerEnglish": "Excuse me, some information.",
+    "feedbackItalian": "Inizia una richiesta di aiuto.",
+    "feedbackEnglish": "Starts a request for help."
   }
 ]

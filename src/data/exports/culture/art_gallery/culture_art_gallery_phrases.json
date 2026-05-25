@@ -1,104 +1,502 @@
 [
   {
-    "id": "s86-p3",
-    "italian": "Preferisco l'arte moderna.",
-    "english": "I prefer modern art.",
+    "id": "s39-p1",
+    "italian": "Vorrei un biglietto intero.",
+    "english": "I would like a full price ticket.",
     "type": "phrase",
-    "choices": [
-      "Vorrei comprare il catalogo.",
-      "Preferisco l'arte moderna.",
-      "I colori sono molto vivaci.",
-      "Questa galleria è molto famosa."
-    ],
-    "correctAnswer": "Preferisco l'arte moderna.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Preferisco l'arte moderna.\"."
-    }
+    "choicesItalian": ["Vorrei un biglietto intero.", "Cerco un tavolo libero.", "Voglio un caffè macchiato.", "Cerco la stazione centrale."],
+    "choicesEnglish": ["I would like a full price ticket.", "I am looking for a free table.", "I want a macchiato coffee.", "I am looking for the central station."],
+    "correctAnswerItalian": "Vorrei un biglietto intero.",
+    "correctAnswerEnglish": "I would like a full price ticket."
   },
   {
-    "id": "s86-p6",
-    "italian": "Vorrei comprare il catalogo.",
-    "english": "I would like to buy the catalog.",
+    "id": "s39-p2",
+    "italian": "C'è uno sconto per studenti?",
+    "english": "Is there a discount for students?",
     "type": "phrase",
-    "choices": [
-      "Preferisco l'arte moderna.",
-      "Chi è l'artista di questa opera?",
-      "Questa galleria è molto famosa.",
-      "Vorrei comprare il catalogo."
-    ],
-    "correctAnswer": "Vorrei comprare il catalogo.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Vorrei comprare il catalogo.\"."
-    }
+    "choicesItalian": ["C'è uno sconto per studenti?", "Dov'è il supermercato?", "A che ora parte il treno?", "Vorrei un gelato."],
+    "choicesEnglish": ["Is there a discount for students?", "Where is the supermarket?", "What time does the train leave?", "I would like an ice cream."],
+    "correctAnswerItalian": "C'è uno sconto per studenti?",
+    "correctAnswerEnglish": "Is there a discount for students."
   },
   {
-    "id": "s86-p5",
+    "id": "s39-p3",
+    "italian": "Il biglietto è ridotto per i bambini?",
+    "english": "Is the ticket reduced for children?",
+    "type": "phrase",
+    "choicesItalian": ["Il biglietto è ridotto per i bambini?", "Il pane è fresco?", "Posso avere il conto?", "Quanto costa questa maglia?"],
+    "choicesEnglish": ["Is the ticket reduced for children?", "Is the bread fresh?", "Can I have the bill?", "How much is this shirt?"],
+    "correctAnswerItalian": "Il biglietto è ridotto per i bambini?",
+    "correctAnswerEnglish": "Is the ticket reduced for children?"
+  },
+  {
+    "id": "s39-p4",
+    "italian": "Avete un'audioguida in inglese?",
+    "english": "Do you have an audio guide in English?",
+    "type": "phrase",
+    "choicesItalian": ["Avete un'audioguida in inglese?", "Parla tedesco?", "C'è una banca qui vicino?", "Avete una camera libera?"],
+    "choicesEnglish": ["Do you have an audio guide in English?", "Do you speak German?", "Is there a bank nearby?", "Do you have a free room?"],
+    "correctAnswerItalian": "Avete un'audioguida in inglese?",
+    "correctAnswerEnglish": "Do you have an audio guide in English?"
+  },
+  {
+    "id": "s39-p5",
+    "italian": "Quanto costa l'audioguida?",
+    "english": "How much does the audio guide cost?",
+    "type": "phrase",
+    "choicesItalian": ["Quanto costa l'audioguida?", "Quanto costa il giornale?", "A che ora chiude il bar?", "Dove si mangia bene?"],
+    "choicesEnglish": ["How much does the audio guide cost?", "How much is the newspaper?", "What time does the bar close?", "Where can one eat well?"],
+    "correctAnswerItalian": "Quanto costa l'audioguida?",
+    "correctAnswerEnglish": "How much does the audio guide cost?"
+  },
+  {
+    "id": "s39-p6",
+    "italian": "Dove inizia la mostra?",
+    "english": "Where does the exhibition start?",
+    "type": "phrase",
+    "choicesItalian": ["Dove inizia la mostra?", "Dove finisce la strada?", "C'è un parco qui?", "Dove posso parcheggiare?"],
+    "choicesEnglish": ["Where does the exhibition start?", "Where does the road end?", "Is there a park here?", "Where can I park?"],
+    "correctAnswerItalian": "Dove inizia la mostra?",
+    "correctAnswerEnglish": "Where does the exhibition start?"
+  },
+  {
+    "id": "s39-p7",
+    "italian": "Qual è il percorso consigliato?",
+    "english": "What is the recommended route?",
+    "type": "phrase",
+    "choicesItalian": ["Qual è il percorso consigliato?", "Qual è il tuo nome?", "Dove andiamo stasera?", "C'è un ristorante tipico?"],
+    "choicesEnglish": ["What is the recommended route?", "What is your name?", "Where are we going tonight?", "Is there a typical restaurant?"],
+    "correctAnswerItalian": "Qual è il percorso consigliato?",
+    "correctAnswerEnglish": "What is the recommended route?"
+  },
+  {
+    "id": "s39-p8",
+    "italian": "Si possono fare foto?",
+    "english": "Are photos allowed?",
+    "type": "phrase",
+    "choicesItalian": ["Si possono fare foto?", "Si può fumare?", "Si può entrare?", "Si può pagare con carta?"],
+    "choicesEnglish": ["Are photos allowed?", "Is smoking allowed?", "Can one enter?", "Can one pay by card?"],
+    "correctAnswerItalian": "Si possono fare foto?",
+    "correctAnswerEnglish": "Are photos allowed?"
+  },
+  {
+    "id": "s39-p9",
+    "italian": "È vietato usare il flash.",
+    "english": "It is forbidden to use the flash.",
+    "type": "phrase",
+    "choicesItalian": ["È vietato usare il flash.", "È vietato correre.", "È vietato mangiare.", "È vietato gridare."],
+    "choicesEnglish": ["It is forbidden to use the flash.", "Running is forbidden.", "Eating is forbidden.", "Shouting is forbidden."],
+    "correctAnswerItalian": "È vietato usare il flash.",
+    "correctAnswerEnglish": "It is forbidden to use the flash."
+  },
+  {
+    "id": "s39-p10",
+    "italian": "Non toccare le opere d'arte.",
+    "english": "Do not touch the artworks.",
+    "type": "phrase",
+    "choicesItalian": ["Non toccare le opere d'arte.", "Non chiudere la porta.", "Non bere l'acqua.", "Non salire sulle sedie."],
+    "choicesEnglish": ["Do not touch the artworks.", "Do not close the door.", "Do not drink the water.", "Do not climb on the chairs."],
+    "correctAnswerItalian": "Non toccare le opere d'arte.",
+    "correctAnswerEnglish": "Do not touch the artworks."
+  },
+  {
+    "id": "s39-p11",
+    "italian": "Dov'è il guardaroba?",
+    "english": "Where is the cloakroom?",
+    "type": "phrase",
+    "choicesItalian": ["Dov'è il guardaroba?", "Dov'è la farmacia?", "Dov'è l'ufficio?", "Dov'è la piazza?"],
+    "choicesEnglish": ["Where is the cloakroom?", "Where is the pharmacy?", "Where is the office?", "Where is the square?"],
+    "correctAnswerItalian": "Dov'è il guardaroba?",
+    "correctAnswerEnglish": "Where is the cloakroom?"
+  },
+  {
+    "id": "s39-p12",
+    "italian": "Devo lasciare lo zaino qui?",
+    "english": "Do I have to leave my backpack here?",
+    "type": "phrase",
+    "choicesItalian": ["Devo lasciare lo zaino qui?", "Posso portare il cane?", "Dove compro i biglietti?", "C'è un telefono?"],
+    "choicesEnglish": ["Do I have to leave my backpack here?", "Can I bring the dog?", "Where do I buy tickets?", "Is there a phone?"],
+    "correctAnswerItalian": "Devo lasciare lo zaino qui?",
+    "correctAnswerEnglish": "Do I have to leave my backpack here?"
+  },
+  {
+    "id": "s39-p13",
+    "italian": "C'è un catalogo della mostra?",
+    "english": "Is there a catalog of the exhibition?",
+    "type": "phrase",
+    "choicesItalian": ["C'è un catalogo della mostra?", "C'è un menu turistico?", "Avete un giornale?", "Dov'è la libreria?"],
+    "choicesEnglish": ["Is there a catalog of the exhibition?", "Is there a tourist menu?", "Do you have a newspaper?", "Where is the bookstore?"],
+    "correctAnswerItalian": "C'è un catalogo della mostra?",
+    "correctAnswerEnglish": "Is there a catalog of the exhibition?"
+  },
+  {
+    "id": "s39-p14",
+    "italian": "Dove si trova il bookshop?",
+    "english": "Where is the bookshop located?",
+    "type": "phrase",
+    "choicesItalian": ["Dove si trova il bookshop?", "Dove si trova l'hotel?", "Dove si trova la banca?", "Dove si trova il porto?"],
+    "choicesEnglish": ["Where is the bookshop located?", "Where is the hotel located?", "Where is the bank located?", "Where is the port located?"],
+    "correctAnswerItalian": "Dove si trova il bookshop?",
+    "correctAnswerEnglish": "Where is the bookshop located?"
+  },
+  {
+    "id": "s39-p15",
+    "italian": "Dov'è il bagno più vicino?",
+    "english": "Where is the nearest bathroom?",
+    "type": "phrase",
+    "choicesItalian": ["Dov'è il bagno più vicino?", "Dov'è la fermata dell'autobus?", "Dov'è il centro?", "Dov'è il mare?"],
+    "choicesEnglish": ["Where is the nearest bathroom?", "Where is the bus stop?", "Where is the center?", "Where is the sea?"],
+    "correctAnswerItalian": "Dov'è il bagno più vicino?",
+    "correctAnswerEnglish": "Where is the nearest bathroom?"
+  },
+  {
+    "id": "s39-p16",
+    "italian": "Questo quadro è bellissimo.",
+    "english": "This painting is beautiful.",
+    "type": "phrase",
+    "choicesItalian": ["Questo quadro è bellissimo.", "Questa mela è rossa.", "Questo libro è lungo.", "Questo film è noioso."],
+    "choicesEnglish": ["This painting is beautiful.", "This apple is red.", "This book is long.", "This movie is boring."],
+    "correctAnswerItalian": "Questo quadro è bellissimo.",
+    "correctAnswerEnglish": "This painting is beautiful."
+  },
+  {
+    "id": "s39-p17",
+    "italian": "Mi piace molto l'uso del colore.",
+    "english": "I really like the use of color.",
+    "type": "phrase",
+    "choicesItalian": ["Mi piace molto l'uso del colore.", "Mi piace molto la musica.", "Mi piace molto il cibo.", "Mi piace molto lo sport."],
+    "choicesEnglish": ["I really like the use of color.", "I really like music.", "I really like the food.", "I really like sport."],
+    "correctAnswerItalian": "Mi piace molto l'uso del colore.",
+    "correctAnswerEnglish": "I really like the use of color."
+  },
+  {
+    "id": "s39-p18",
+    "italian": "È un'opera molto interessante.",
+    "english": "It is a very interesting work.",
+    "type": "phrase",
+    "choicesItalian": ["È un'opera molto interessante.", "È un giorno molto caldo.", "È una strada molto stretta.", "È un ragazzo molto alto."],
+    "choicesEnglish": ["It is a very interesting work.", "It is a very hot day.", "It is a very narrow street.", "He is a very tall boy."],
+    "correctAnswerItalian": "È un'opera molto interessante.",
+    "correctAnswerEnglish": "It is a very interesting work."
+  },
+  {
+    "id": "s39-p19",
+    "italian": "Chi è l'autore di questo dipinto?",
+    "english": "Who is the author of this painting?",
+    "type": "phrase",
+    "choicesItalian": ["Chi è l'autore di questo dipinto?", "Chi è il tuo dottore?", "Chi è il proprietario?", "Chi è alla porta?"],
+    "choicesEnglish": ["Who is the author of this painting?", "Who is your doctor?", "Who is the owner?", "Who is at the door?"],
+    "correctAnswerItalian": "Chi è l'autore di questo dipinto?",
+    "correctAnswerEnglish": "Who is the author of this painting?"
+  },
+  {
+    "id": "s39-p20",
+    "italian": "In che anno è stata fatta questa scultura?",
+    "english": "In what year was this sculpture made?",
+    "type": "phrase",
+    "choicesItalian": ["In che anno è stata fatta questa scultura?", "In che anno sei nato?", "In che anno è finita la guerra?", "In che mese siamo?"],
+    "choicesEnglish": ["In what year was this sculpture made?", "In what year were you born?", "In what year did the war end?", "What month is it?"],
+    "correctAnswerItalian": "In che anno è stata fatta questa scultura?",
+    "correctAnswerEnglish": "In what year was this sculpture made?"
+  },
+  {
+    "id": "s39-p21",
+    "italian": "È arte contemporanea o classica?",
+    "english": "Is it contemporary or classical art?",
+    "type": "phrase",
+    "choicesItalian": ["È arte contemporanea o classica?", "È carne o pesce?", "È bianco o nero?", "È aperto o chiuso?"],
+    "choicesEnglish": ["Is it contemporary or classical art?", "Is it meat or fish?", "Is it white or black?", "Is it open or closed?"],
+    "correctAnswerItalian": "È arte contemporanea o classica?",
+    "correctAnswerEnglish": "Is it contemporary or classical art?"
+  },
+  {
+    "id": "s39-p22",
+    "italian": "Questa è una mostra temporanea.",
+    "english": "This is a temporary exhibition.",
+    "type": "phrase",
+    "choicesItalian": ["Questa è una mostra temporanea.", "Questa è una casa antica.", "Questa è una scuola privata.", "Questa è una banca centrale."],
+    "choicesEnglish": ["This is a temporary exhibition.", "This is an old house.", "This is a private school.", "This is a central bank."],
+    "correctAnswerItalian": "Questa è una mostra temporanea.",
+    "correctAnswerEnglish": "This is a temporary exhibition."
+  },
+  {
+    "id": "s39-p23",
+    "italian": "La collezione permanente è al primo piano.",
+    "english": "The permanent collection is on the first floor.",
+    "type": "phrase",
+    "choicesItalian": ["La collezione permanente è al primo piano.", "La camera è al secondo piano.", "Il ristorante è al piano terra.", "L'ufficio è all'ultimo piano."],
+    "choicesEnglish": ["The permanent collection is on the first floor.", "The room is on the second floor.", "The restaurant is on the ground floor.", "The office is on the top floor."],
+    "correctAnswerItalian": "La collezione permanente è al primo piano.",
+    "correctAnswerEnglish": "The permanent collection is on the first floor."
+  },
+  {
+    "id": "s39-p24",
+    "italian": "C'è una caffetteria nel museo?",
+    "english": "Is there a cafeteria in the museum?",
+    "type": "phrase",
+    "choicesItalian": ["C'è una caffetteria nel museo?", "C'è un ufficio postale?", "C'è un distributore?", "C'è un teatro?"],
+    "choicesEnglish": ["Is there a cafeteria in the museum?", "Is there a post office?", "Is there a vending machine?", "Is there a theater?"],
+    "correctAnswerItalian": "C'è una caffetteria nel museo?",
+    "correctAnswerEnglish": "Is there a cafeteria in the museum?"
+  },
+  {
+    "id": "s39-p25",
+    "italian": "A che ora chiude il museo?",
+    "english": "What time does the museum close?",
+    "type": "phrase",
+    "choicesItalian": ["A che ora chiude il museo?", "A che ora inizia il film?", "A che ora arriva il bus?", "A che ora pranziamo?"],
+    "choicesEnglish": ["What time does the museum close?", "What time does the movie start?", "What time does the bus arrive?", "What time do we have lunch?"],
+    "correctAnswerItalian": "A che ora chiude il museo?",
+    "correctAnswerEnglish": "What time does the museum close?"
+  },
+  {
+    "id": "s39-p26",
+    "italian": "Quali sono gli orari di apertura?",
+    "english": "What are the opening hours?",
+    "type": "phrase",
+    "choicesItalian": ["Quali sono gli orari di apertura?", "Quali sono i tuoi hobby?", "Dove sono le chiavi?", "Come sono i prezzi?"],
+    "choicesEnglish": ["What are the opening hours?", "What are your hobbies?", "Where are the keys?", "How are the prices?"],
+    "correctAnswerItalian": "Quali sono gli orari di apertura?",
+    "correctAnswerEnglish": "What are the opening hours?"
+  },
+  {
+    "id": "s39-p27",
+    "italian": "L'ingresso è gratuito oggi?",
+    "english": "Is entry free today?",
+    "type": "phrase",
+    "choicesItalian": ["L'ingresso è gratuito oggi?", "L'acqua è potabile?", "L'hotel è vicino?", "L'autobus è in ritardo?"],
+    "choicesEnglish": ["Is entry free today?", "Is the water drinkable?", "Is the hotel nearby?", "Is the bus late?"],
+    "correctAnswerItalian": "L'ingresso è gratuito oggi?",
+    "correctAnswerEnglish": "Is entry free today?"
+  },
+  {
+    "id": "s39-p28",
+    "italian": "Ho prenotato il biglietto online.",
+    "english": "I booked the ticket online.",
+    "type": "phrase",
+    "choicesItalian": ["Ho prenotato il biglietto online.", "Ho perso il portafoglio.", "Ho fame e sete.", "Ho comprato un libro."],
+    "choicesEnglish": ["I booked the ticket online.", "I lost my wallet.", "I am hungry and thirsty.", "I bought a book."],
+    "correctAnswerItalian": "Ho prenotato il biglietto online.",
+    "correctAnswerEnglish": "I booked the ticket online."
+  },
+  {
+    "id": "s39-p29",
+    "italian": "Ecco il mio codice QR.",
+    "english": "Here is my QR code.",
+    "type": "phrase",
+    "choicesItalian": ["Ecco il mio codice QR.", "Ecco il mio passaporto.", "Ecco la mia borsa.", "Ecco il mio indirizzo."],
+    "choicesEnglish": ["Here is my QR code.", "Here is my passport.", "Here is my bag.", "Here is my address."],
+    "correctAnswerItalian": "Ecco il mio codice QR.",
+    "correctAnswerEnglish": "Here is my QR code."
+  },
+  {
+    "id": "s39-p30",
+    "italian": "C'è molta gente oggi.",
+    "english": "There are many people today.",
+    "type": "phrase",
+    "choicesItalian": ["C'è molta gente oggi.", "C'è molto vento.", "C'è un cane piccolo.", "C'è un grande ponte."],
+    "choicesEnglish": ["There are many people today.", "It is very windy.", "There is a small dog.", "There is a large bridge."],
+    "correctAnswerItalian": "C'è molta gente oggi.",
+    "correctAnswerEnglish": "There are many people today."
+  },
+  {
+    "id": "s39-p31",
+    "italian": "Questa sala è dedicata al Rinascimento.",
+    "english": "This room is dedicated to the Renaissance.",
+    "type": "phrase",
+    "choicesItalian": ["Questa sala è dedicata al Rinascimento.", "Questa strada porta al mare.", "Questa borsa è di pelle.", "Questa sedia è rotta."],
+    "choicesEnglish": ["This room is dedicated to the Renaissance.", "This road leads to the sea.", "This bag is made of leather.", "This chair is broken."],
+    "correctAnswerItalian": "Questa sala è dedicata al Rinascimento.",
+    "correctAnswerEnglish": "This room is dedicated to the Renaissance."
+  },
+  {
+    "id": "s39-p32",
+    "italian": "Amo lo stile di questo artista.",
+    "english": "I love the style of this artist.",
+    "type": "phrase",
+    "choicesItalian": ["Amo lo stile di questo artista.", "Amo il mare d'estate.", "Amo la cucina italiana.", "Amo camminare nel parco."],
+    "choicesEnglish": ["I love the style of this artist.", "I love the sea in summer.", "I love Italian cuisine.", "I love walking in the park."],
+    "correctAnswerItalian": "Amo lo stile di questo artista.",
+    "correctAnswerEnglish": "I love the style of this artist."
+  },
+  {
+    "id": "s39-p33",
+    "italian": "È un dipinto a olio su tela.",
+    "english": "It is an oil painting on canvas.",
+    "type": "phrase",
+    "choicesItalian": ["È un dipinto a olio su tela.", "È un libro di storia.", "È una maglia di cotone.", "È una torta di mele."],
+    "choicesEnglish": ["It is an oil painting on canvas.", "It is a history book.", "It is a cotton shirt.", "It is an apple cake."],
+    "correctAnswerItalian": "È un dipinto a olio su tela.",
+    "correctAnswerEnglish": "It is an oil painting on canvas."
+  },
+  {
+    "id": "s39-p34",
+    "italian": "Questa scultura è in marmo.",
+    "english": "This sculpture is in marble.",
+    "type": "phrase",
+    "choicesItalian": ["Questa scultura è in marmo.", "Questa sedia è in plastica.", "Questa casa è in mattoni.", "Questa porta è in vetro."],
+    "choicesEnglish": ["This sculpture is in marble.", "This chair is in plastic.", "This house is in bricks.", "This door is in glass."],
+    "correctAnswerItalian": "Questa scultura è in marmo.",
+    "correctAnswerEnglish": "This sculpture is in marble."
+  },
+  {
+    "id": "s39-p35",
+    "italian": "Mi scusi, dov'è l'uscita?",
+    "english": "Excuse me, where is the exit?",
+    "type": "phrase",
+    "choicesItalian": ["Mi scusi, dov'è l'uscita?", "Mi scusi, che ora è?", "Mi scusi, dove vado?", "Mi scusi, quanto costa?"],
+    "choicesEnglish": ["Excuse me, where is the exit?", "Excuse me, what time is it?", "Excuse me, where am I going?", "Excuse me, how much is it?"],
+    "correctAnswerItalian": "Mi scusi, dov'è l'uscita?",
+    "correctAnswerEnglish": "Excuse me, where is the exit?"
+  },
+  {
+    "id": "s39-p36",
+    "italian": "Posso sedermi su questa panchina?",
+    "english": "Can I sit on this bench?",
+    "type": "phrase",
+    "choicesItalian": ["Posso sedermi su questa panchina?", "Posso bere l'acqua?", "Posso entrare ora?", "Posso usare il bagno?"],
+    "choicesEnglish": ["Can I sit on this bench?", "Can I drink the water?", "Can I enter now?", "Can I use the bathroom?"],
+    "correctAnswerItalian": "Posso sedermi su questa panchina?",
+    "correctAnswerEnglish": "Can I sit on this bench?"
+  },
+  {
+    "id": "s39-p37",
+    "italian": "C'è una guida cartacea?",
+    "english": "Is there a paper guide?",
+    "type": "phrase",
+    "choicesItalian": ["C'è una guida cartacea?", "C'è un medico qui?", "C'è una farmacia?", "C'è un mercato?"],
+    "choicesEnglish": ["Is there a paper guide?", "Is there a doctor here?", "Is there a pharmacy?", "Is there a market?"],
+    "correctAnswerItalian": "C'è una guida cartacea?",
+    "correctAnswerEnglish": "Is there a paper guide?"
+  },
+  {
+    "id": "s39-p38",
+    "italian": "La mostra è molto affollata.",
+    "english": "The exhibition is very crowded.",
+    "type": "phrase",
+    "choicesItalian": ["La mostra è molto affollata.", "La spiaggia è pulita.", "La pizza è calda.", "La stanza è buia."],
+    "choicesEnglish": ["The exhibition is very crowded.", "The beach is clean.", "The pizza is hot.", "The room is dark."],
+    "correctAnswerItalian": "La mostra è molto affollata.",
+    "correctAnswerEnglish": "The exhibition is very crowded."
+  },
+  {
+    "id": "s39-p39",
+    "italian": "Questo autore è molto famoso in Italia.",
+    "english": "This author is very famous in Italy.",
+    "type": "phrase",
+    "choicesItalian": ["Questo autore è molto famoso in Italia.", "Questo treno va a Milano.", "Questo bar è aperto sempre.", "Questo libro è antico."],
+    "choicesEnglish": ["This author is very famous in Italy.", "This train goes to Milan.", "This bar is always open.", "This book is old."],
+    "correctAnswerItalian": "Questo autore è molto famoso in Italia.",
+    "correctAnswerEnglish": "This author is very famous in Italy."
+  },
+  {
+    "id": "s39-p40",
+    "italian": "È un capolavoro assoluto.",
+    "english": "It is an absolute masterpiece.",
+    "type": "phrase",
+    "choicesItalian": ["È un capolavoro assoluto.", "È un errore stupido.", "È un giorno speciale.", "È un posto tranquillo."],
+    "choicesEnglish": ["It is an absolute masterpiece.", "It is a stupid mistake.", "It is a special day.", "It is a quiet place."],
+    "correctAnswerItalian": "È un capolavoro assoluto.",
+    "correctAnswerEnglish": "It is an absolute masterpiece."
+  },
+  {
+    "id": "s39-p41",
     "italian": "I colori sono molto vivaci.",
-    "english": "The colors are very vivid.",
+    "english": "The colors are very bright.",
     "type": "phrase",
-    "choices": [
-      "Vorrei comprare il catalogo.",
-      "Questa galleria è molto famosa.",
-      "I colori sono molto vivaci.",
-      "Preferisco l'arte moderna."
-    ],
-    "correctAnswer": "I colori sono molto vivaci.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"I colori sono molto vivaci.\"."
-    }
+    "choicesItalian": ["I colori sono molto vivaci.", "Le scarpe sono nuove.", "Le strade sono larghe.", "Le finestre sono aperte."],
+    "choicesEnglish": ["The colors are very bright.", "The shoes are new.", "The streets are wide.", "The windows are open."],
+    "correctAnswerItalian": "I colori sono molto vivaci.",
+    "correctAnswerEnglish": "The colors are very bright."
   },
   {
-    "id": "s86-p4",
-    "italian": "Mi piace lo stile classico.",
-    "english": "I like the classical style.",
+    "id": "s39-p42",
+    "italian": "La luce in questo quadro è incredibile.",
+    "english": "The light in this painting is incredible.",
     "type": "phrase",
-    "choices": [
-      "Preferisco l'arte moderna.",
-      "Mi piace lo stile classico.",
-      "Questa galleria è molto famosa.",
-      "Vorrei comprare il catalogo."
-    ],
-    "correctAnswer": "Mi piace lo stile classico.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi piace lo stile classico.\"."
-    }
+    "choicesItalian": ["La luce in questo quadro è incredibile.", "La borsa è sul tavolo.", "La porta è chiusa a chiave.", "La mela è dolce."],
+    "choicesEnglish": ["The light in this painting is incredible.", "The bag is on the table.", "The door is locked.", "The apple is sweet."],
+    "correctAnswerItalian": "La luce in questo quadro è incredibile.",
+    "correctAnswerEnglish": "The light in this painting is incredible."
   },
   {
-    "id": "s86-p1",
-    "italian": "Questa galleria è molto famosa.",
-    "english": "This gallery is very famous.",
+    "id": "s39-p43",
+    "italian": "C'è un ascensore per il secondo piano?",
+    "english": "Is there an elevator to the second floor?",
     "type": "phrase",
-    "choices": [
-      "Vorrei comprare il catalogo.",
-      "Questa galleria è molto famosa.",
-      "Chi è l'artista di questa opera?",
-      "Mi piace lo stile classico."
-    ],
-    "correctAnswer": "Questa galleria è molto famosa.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Questa galleria è molto famosa.\"."
-    }
+    "choicesItalian": ["C'è un ascensore per il secondo piano?", "C'è un balcone in camera?", "C'è un garage privato?", "C'è un giardino fuori?"],
+    "choicesEnglish": ["Is there an elevator to the second floor?", "Is there a balcony in the room?", "Is there a private garage?", "Is there a garden outside?"],
+    "correctAnswerItalian": "C'è un ascensore per il secondo piano?",
+    "correctAnswerEnglish": "Is there an elevator to the second floor?"
   },
   {
-    "id": "s86-p2",
-    "italian": "Chi è l'artista di questa opera?",
-    "english": "Who is the artist of this work?",
+    "id": "s39-p44",
+    "italian": "La mostra prosegue di là.",
+    "english": "The exhibition continues over there.",
     "type": "phrase",
-    "choices": [
-      "Vorrei comprare il catalogo.",
-      "Chi è l'artista di questa opera?",
-      "Preferisco l'arte moderna.",
-      "Mi piace lo stile classico."
-    ],
-    "correctAnswer": "Chi è l'artista di questa opera?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Chi è l'artista di questa opera?\"."
-    }
+    "choicesItalian": ["La mostra prosegue di là.", "Il film finisce ora.", "Il treno parte subito.", "Il pane cuoce qui."],
+    "choicesEnglish": ["The exhibition continues over there.", "The movie ends now.", "The train leaves immediately.", "The bread bakes here."],
+    "correctAnswerItalian": "La mostra prosegue di là.",
+    "correctAnswerEnglish": "The exhibition continues over there."
+  },
+  {
+    "id": "s39-p45",
+    "italian": "Dov'è la sezione sull'impressionismo?",
+    "english": "Where is the section on Impressionism?",
+    "type": "phrase",
+    "choicesItalian": ["Dov'è la sezione sull'impressionismo?", "Dov'è il reparto ortofrutta?", "Dov'è l'ufficio oggetti smarriti?", "Dov'è la stazione di polizia?"],
+    "choicesEnglish": ["Where is the section on Impressionism?", "Where is the produce section?", "Where is the lost and found office?", "Where is the police station?"],
+    "correctAnswerItalian": "Dov'è la sezione sull'impressionismo?",
+    "correctAnswerEnglish": "Where is the section on Impressionism?"
+  },
+  {
+    "id": "s39-p46",
+    "italian": "Questo ritratto è molto espressivo.",
+    "english": "This portrait is very expressive.",
+    "type": "phrase",
+    "choicesItalian": ["Questo ritratto è molto espressivo.", "Questo cane è molto grande.", "Questo fiore è molto profumato.", "Questo gelato è molto freddo."],
+    "choicesEnglish": ["This portrait is very expressive.", "This dog is very big.", "This flower is very fragrant.", "This ice cream is very cold."],
+    "correctAnswerItalian": "Questo ritratto è molto espressivo.",
+    "correctAnswerEnglish": "This portrait is very expressive."
+  },
+  {
+    "id": "s39-p47",
+    "italian": "Mi piace l'atmosfera di questa sala.",
+    "english": "I like the atmosphere of this room.",
+    "type": "phrase",
+    "choicesItalian": ["Mi piace l'atmosfera di questa sala.", "Mi piace il profumo del caffè.", "Mi piace la pioggia d'inverno.", "Mi piace il colore blu."],
+    "choicesEnglish": ["I like the atmosphere of this room.", "I like the smell of coffee.", "I like rain in winter.", "I like the color blue."],
+    "correctAnswerItalian": "Mi piace l'atmosfera di questa sala.",
+    "correctAnswerEnglish": "I like the atmosphere of this room."
+  },
+  {
+    "id": "s39-p48",
+    "italian": "È permesso disegnare?",
+    "english": "Is drawing allowed?",
+    "type": "phrase",
+    "choicesItalian": ["È permesso disegnare?", "È permesso fumare?", "È permesso entrare?", "È permesso gridare?"],
+    "choicesEnglish": ["Is drawing allowed?", "Is smoking allowed?", "Is entering allowed?", "Is shouting allowed?"],
+    "correctAnswerItalian": "È permesso disegnare?",
+    "correctAnswerEnglish": "Is drawing allowed?"
+  },
+  {
+    "id": "s39-p49",
+    "italian": "Posso portare una borsa piccola?",
+    "english": "Can I bring a small bag?",
+    "type": "phrase",
+    "choicesItalian": ["Posso portare una borsa piccola?", "Posso bere una birra?", "Posso avere uno sconto?", "Posso chiamare un taxi?"],
+    "choicesEnglish": ["Can I bring a small bag?", "Can I drink a beer?", "Can I have a discount?", "Can I call a taxi?"],
+    "correctAnswerItalian": "Posso portare una borsa piccola?",
+    "correctAnswerEnglish": "Can I bring a small bag?"
+  },
+  {
+    "id": "s39-p50",
+    "italian": "Grazie, è stata una visita splendida.",
+    "english": "Thank you, it was a splendid visit.",
+    "type": "phrase",
+    "choicesItalian": ["Grazie, è stata una visita splendida.", "Grazie, il cibo era buono.", "Grazie, sono molto stanco.", "Grazie, arrivederci a presto."],
+    "choicesEnglish": ["Thank you, it was a splendid visit.", "Thank you, the food was good.", "Thank you, I am very tired.", "Thank you, see you soon."],
+    "correctAnswerItalian": "Grazie, è stata una visita splendida.",
+    "correctAnswerEnglish": "Thank you, it was a splendid visit."
   }
 ]

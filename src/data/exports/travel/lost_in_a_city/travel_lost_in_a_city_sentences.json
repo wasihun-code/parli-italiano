@@ -1,104 +1,1562 @@
 [
   {
     "id": "s13-s1",
-    "italian": "Non conosco questa zona, mi sono perso.",
-    "english": "I do not know this area, I am lost.",
+    "italian": "\"Mi scusi, mi sono perso.\" \"Non si preoccupi, dove deve andare?\"",
+    "english": "\"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\"",
     "type": "sentence",
-    "choices": [
-      "Ho il telefono scarico e non posso chiamare nessuno.",
-      "Non conosco questa zona, mi sono perso.",
-      "Meno male che ho scaricato una mappa offline di questa zona.",
-      "Non trovo l'indirizzo dell'hotel, ho solo il nome."
+    "choicesItalian": [
+      "\"Mi scusi, mi sono perso.\" \"Non si preoccupi, dove deve andare?\"",
+      "\"Sulla mappa questo è un parco?\" \"Sì, è Villa Borghese.\"",
+      "\"Il navigatore dice che siamo arrivati.\" \"Ma qui non c'è nulla!\"",
+      "\"Siamo vicini alla fontana?\" \"Sì, senta il rumore dell'acqua.\""
     ],
-    "correctAnswer": "Non conosco questa zona, mi sono perso.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Non conosco questa zona, mi sono perso.\"."
-    }
-  },
-  {
-    "id": "s13-s3",
-    "italian": "Qualcuno può aiutarmi a ritornare in centro?",
-    "english": "Can someone help me get back to the city center?",
-    "type": "sentence",
-    "choices": [
-      "Dovremmo chiedere indicazioni alla polizia locale.",
-      "Qualcuno può aiutarmi a ritornare in centro?",
-      "Ho il telefono scarico e non posso chiamare nessuno.",
-      "Non conosco questa zona, mi sono perso."
+    "choicesEnglish": [
+      "\"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\"",
+      "\"On the map is this a park?\" \"Yes, it's Villa Borghese.\"",
+      "\"The navigator says we have arrived.\" \"But there's nothing here!\"",
+      "\"Are we near the fountain?\" \"Yes, listen to the sound of the water.\""
     ],
-    "correctAnswer": "Qualcuno può aiutarmi a ritornare in centro?",
+    "correctAnswerItalian": "\"Mi scusi, mi sono perso.\" \"Non si preoccupi, dove deve andare?\"",
+    "correctAnswerEnglish": "\"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Qualcuno può aiutarmi a ritornare in centro?\"."
-    }
-  },
-  {
-    "id": "s13-s6",
-    "italian": "Dovremmo chiedere indicazioni alla polizia locale.",
-    "english": "We should ask the local police for directions.",
-    "type": "sentence",
-    "choices": [
-      "Qualcuno può aiutarmi a ritornare in centro?",
-      "Meno male che ho scaricato una mappa offline di questa zona.",
-      "Non conosco questa zona, mi sono perso.",
-      "Dovremmo chiedere indicazioni alla polizia locale."
-    ],
-    "correctAnswer": "Dovremmo chiedere indicazioni alla polizia locale.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Dovremmo chiedere indicazioni alla polizia locale.\"."
-    }
-  },
-  {
-    "id": "s13-s4",
-    "italian": "Non trovo l'indirizzo dell'hotel, ho solo il nome.",
-    "english": "I cannot find the hotel address, I only have the name.",
-    "type": "sentence",
-    "choices": [
-      "Ho il telefono scarico e non posso chiamare nessuno.",
-      "Dovremmo chiedere indicazioni alla polizia locale.",
-      "Non trovo l'indirizzo dell'hotel, ho solo il nome.",
-      "Non conosco questa zona, mi sono perso."
-    ],
-    "correctAnswer": "Non trovo l'indirizzo dell'hotel, ho solo il nome.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Non trovo l'indirizzo dell'hotel, ho solo il nome.\"."
-    }
-  },
-  {
-    "id": "s13-s5",
-    "italian": "Meno male che ho scaricato una mappa offline di questa zona.",
-    "english": "Thank goodness I downloaded an offline map of this area.",
-    "type": "sentence",
-    "choices": [
-      "Meno male che ho scaricato una mappa offline di questa zona.",
-      "Qualcuno può aiutarmi a ritornare in centro?",
-      "Ho il telefono scarico e non posso chiamare nessuno.",
-      "Non trovo l'indirizzo dell'hotel, ho solo il nome."
-    ],
-    "correctAnswer": "Meno male che ho scaricato una mappa offline di questa zona.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Meno male che ho scaricato una mappa offline di questa zona.\"."
+      "correctItalian": "Ottimo! Inizio di una richiesta di aiuto.",
+      "incorrectItalian": "No, questo dialogo significa: \"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\"",
+      "correctEnglish": "Great! This means: \"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\""
     }
   },
   {
     "id": "s13-s2",
-    "italian": "Ho il telefono scarico e non posso chiamare nessuno.",
-    "english": "My phone is dead and I cannot call anyone.",
+    "italian": "\"Sto cercando Piazza Navona.\" \"Deve tornare indietro fino all'incrocio.\"",
+    "english": "\"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\"",
     "type": "sentence",
-    "choices": [
-      "Non trovo l'indirizzo dell'hotel, ho solo il nome.",
-      "Ho il telefono scarico e non posso chiamare nessuno.",
-      "Qualcuno può aiutarmi a ritornare in centro?",
-      "Dovremmo chiedere indicazioni alla polizia locale."
+    "choicesItalian": [
+      "\"Sto cercando Piazza Navona.\" \"Deve tornare indietro fino all'incrocio.\"",
+      "\"Giri a destra al semaforo.\" \"Va bene, grazie per l'aiuto!\"",
+      "\"Siamo nella direzione giusta per il Colosseo?\" \"No, state andando verso il Vaticano.\"",
+      "\"Quanto tempo ci vuole per arrivare al porto?\" \"Circa venti minuti a piedi.\""
     ],
-    "correctAnswer": "Ho il telefono scarico e non posso chiamare nessuno.",
+    "choicesEnglish": [
+      "\"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\"",
+      "\"Turn right at the traffic light.\" \"Okay, thanks for the help!\"",
+      "\"Are we in the right direction for the Colosseum?\" \"No, you are going towards the Vatican.\"",
+      "\"How long does it take to get to the port?\" \"About twenty minutes on foot.\""
+    ],
+    "correctAnswerItalian": "\"Sto cercando Piazza Navona.\" \"Deve tornare indietro fino all'incrocio.\"",
+    "correctAnswerEnglish": "\"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho il telefono scarico e non posso chiamare nessuno.\"."
+      "correctItalian": "Ottimo! Indicazioni per una piazza famosa.",
+      "incorrectItalian": "No, questo dialogo significa: \"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\"",
+      "correctEnglish": "Great! This means: \"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\""
+    }
+  },
+  {
+    "id": "s13-s3",
+    "italian": "\"Stavo andando nella direzione sbagliata?\" \"Sì, deve girare a destra.\"",
+    "english": "\"Was I going in the wrong direction?\" \"Yes, you must turn right.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Può scrivermi l'indirizzo sulla mappa?\" \"Certo, ecco qui il punto esatto.\"",
+      "\"Stavo andando nella direzione sbagliata?\" \"Sì, deve girare a destra.\"",
+      "\"C'è un ufficio turistico qui vicino?\" \"Sì, in Piazza del Popolo.\"",
+      "\"Mi sono perso, non trovo più la macchina.\" \"Dove l'aveva parcheggiata?\""
+    ],
+    "choicesEnglish": [
+      "\"Can you write the address on the map for me?\" \"Sure, here is the exact point.\"",
+      "\"Was I going in the wrong direction?\" \"Yes, you must turn right.\"",
+      "\"Is there a tourist office nearby?\" \"Yes, in Piazza del Popolo.\"",
+      "\"I'm lost, I can't find the car anymore.\" \"Where had you parked it?\""
+    ],
+    "correctAnswerItalian": "\"Stavo andando nella direzione sbagliata?\" \"Sì, deve girare a destra.\"",
+    "correctAnswerEnglish": "\"Was I going in the wrong direction?\" \"Yes, you must turn right.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Conferma di un errore di percorso.",
+      "incorrectItalian": "No, questo dialogo significa: \"Was I going in the wrong direction?\" \"Yes, you must turn right.\"",
+      "correctEnglish": "Great! This means: \"Was I going in the wrong direction?\" \"Yes, you must turn right.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Was I going in the wrong direction?\" \"Yes, you must turn right.\""
+    }
+  },
+  {
+    "id": "s13-s4",
+    "italian": "\"Può mostrarmi sulla mappa dove siamo?\" \"Siamo all'angolo di questa via.\"",
+    "english": "\"Can you show me on the map where we are?\" \"We are at the corner of this street.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Può mostrarmi sulla mappa dove siamo?\" \"Siamo all'angolo di questa via.\"",
+      "\"Mi sono smarrito in questo quartiere.\" \"Non si agiti, il centro è da quella parte.\"",
+      "\"Giri a destra al semaforo.\" \"Va bene, grazie per l'aiuto!\"",
+      "\"C'è un ufficio turistico qui vicino?\" \"Sì, in Piazza del Popolo.\""
+    ],
+    "choicesEnglish": [
+      "\"Can you show me on the map where we are?\" \"We are at the corner of this street.\"",
+      "\"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\"",
+      "\"Turn right at the traffic light.\" \"Okay, thanks for the help!\"",
+      "\"Is there a tourist office nearby?\" \"Yes, in Piazza del Popolo.\""
+    ],
+    "correctAnswerItalian": "\"Può mostrarmi sulla mappa dove siamo?\" \"Siamo all'angolo di questa via.\"",
+    "correctAnswerEnglish": "\"Can you show me on the map where we are?\" \"We are at the corner of this street.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Uso della mappa.",
+      "incorrectItalian": "No, questo dialogo significa: \"Can you show me on the map where we are?\" \"We are at the corner of this street.\"",
+      "correctEnglish": "Great! This means: \"Can you show me on the map where we are?\" \"We are at the corner of this street.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Can you show me on the map where we are?\" \"We are at the corner of this street.\""
+    }
+  },
+  {
+    "id": "s13-s5",
+    "italian": "\"La Fontana di Trevi è lontana?\" \"No, è a pochi passi da qui.\"",
+    "english": "\"Is the Trevi Fountain far?\" \"No, it's a few steps from here.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Sulla mappa questo è un parco?\" \"Sì, è Villa Borghese.\"",
+      "\"Mi scusi, cerco via Veneto.\" \"È la terza traversa a sinistra.\"",
+      "\"La Fontana di Trevi è lontana?\" \"No, è a pochi passi da qui.\"",
+      "\"Chiediamo a quel poliziotto?\" \"Sì, è l'idea migliore.\""
+    ],
+    "choicesEnglish": [
+      "\"On the map is this a park?\" \"Yes, it's Villa Borghese.\"",
+      "\"Excuse me, I'm looking for via Veneto.\" \"It's the third side street on the left.\"",
+      "\"Is the Trevi Fountain far?\" \"No, it's a few steps from here.\"",
+      "\"Shall we ask that policeman?\" \"Yes, it's the best idea.\""
+    ],
+    "correctAnswerItalian": "\"La Fontana di Trevi è lontana?\" \"No, è a pochi passi da qui.\"",
+    "correctAnswerEnglish": "\"Is the Trevi Fountain far?\" \"No, it's a few steps from here.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere la distanza per un monumento.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is the Trevi Fountain far?\" \"No, it's a few steps from here.\"",
+      "correctEnglish": "Great! This means: \"Is the Trevi Fountain far?\" \"No, it's a few steps from here.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is the Trevi Fountain far?\" \"No, it's a few steps from here.\""
+    }
+  },
+  {
+    "id": "s13-s6",
+    "italian": "\"Il mio telefono è scarico, cerco un hotel.\" \"Quale hotel sta cercando?\"",
+    "english": "\"My phone is dead, I'm looking for a hotel.\" \"Which hotel are you looking for?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il mio telefono è scarico, cerco un hotel.\" \"Quale hotel sta cercando?\"",
+      "\"Cercate il teatro?\" \"Sì, abbiamo uno spettacolo tra poco.\"",
+      "\"Mi sono smarrito in questo quartiere.\" \"Non si agiti, il centro è da quella parte.\"",
+      "\"Quanto dista il fiume?\" \"È proprio in fondo alla via.\""
+    ],
+    "choicesEnglish": [
+      "\"My phone is dead, I'm looking for a hotel.\" \"Which hotel are you looking for?\"",
+      "\"Are you looking for the theater?\" \"Yes, we have a show soon.\"",
+      "\"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\"",
+      "\"How far is the river?\" \"It's right at the end of the street.\""
+    ],
+    "correctAnswerItalian": "\"Il mio telefono è scarico, cerco un hotel.\" \"Quale hotel sta cercando?\"",
+    "correctAnswerEnglish": "\"My phone is dead, I'm looking for a hotel.\" \"Which hotel are you looking for?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Problema tecnico e meta.",
+      "incorrectItalian": "No, questo dialogo significa: \"My phone is dead, I'm looking for a hotel.\" \"Which hotel are you looking for?\"",
+      "correctEnglish": "Great! This means: \"My phone is dead, I'm looking for a hotel.\" \"Which hotel are you looking for?\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"My phone is dead, I'm looking for a hotel.\" \"Which hotel are you looking for?\""
+    }
+  },
+  {
+    "id": "s13-s7",
+    "italian": "\"L'hotel Astoria è in fondo a questa strada?\" \"Sì, circa cinquecento metri sulla sinistra.\"",
+    "english": "\"Is the Astoria hotel at the end of this street?\" \"Yes, about five hundred meters on the left.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"L'hotel Astoria è in fondo a questa strada?\" \"Sì, circa cinquecento metri sulla sinistra.\"",
+      "\"Mi sono perso, cerco un taxi.\" \"C'è un posteggio taxi in quella piazza.\"",
+      "\"Questa mappa è troppo piccola.\" \"Ne compriamo una più grande in edicola.\"",
+      "\"Siamo tornati al punto di partenza!\" \"Abbiamo fatto un giro a vuoto.\""
+    ],
+    "choicesEnglish": [
+      "\"Is the Astoria hotel at the end of this street?\" \"Yes, about five hundred meters on the left.\"",
+      "\"I'm lost, I'm looking for a taxi.\" \"There's a taxi stand in that square.\"",
+      "\"This map is too small.\" \"Let's buy a larger one at the newsstand.\"",
+      "\"We are back at the starting point!\" \"We went in a circle.\""
+    ],
+    "correctAnswerItalian": "\"L'hotel Astoria è in fondo a questa strada?\" \"Sì, circa cinquecento metri sulla sinistra.\"",
+    "correctAnswerEnglish": "\"Is the Astoria hotel at the end of this street?\" \"Yes, about five hundred meters on the left.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Specificare la posizione dell'hotel.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is the Astoria hotel at the end of this street?\" \"Yes, about five hundred meters on the left.\"",
+      "correctEnglish": "Great! This means: \"Is the Astoria hotel at the end of this street?\" \"Yes, about five hundred meters on the left.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is the Astoria hotel at the end of this street?\" \"Yes, about five hundred meters on the left.\""
+    }
+  },
+  {
+    "id": "s13-s8",
+    "italian": "\"Vede quell'insegna luminosa?\" \"Sì, la vedo, grazie infinite!\"",
+    "english": "\"Do you see that bright sign?\" \"Yes, I see it, thank you so much!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Vada oltre quel grande arco.\" \"D'accordo, grazie mille.\"",
+      "\"Vede quell'insegna luminosa?\" \"Sì, la vedo, grazie infinite!\"",
+      "\"Cerco il consolato, mi sono perso.\" \"È in quella villa dietro gli alberi.\"",
+      "\"Il navigatore dice di girare, ma c'è un muro.\" \"Forse la mappa non è aggiornata.\""
+    ],
+    "choicesEnglish": [
+      "\"Go beyond that large arch.\" \"Alright, thank you very much.\"",
+      "\"Do you see that bright sign?\" \"Yes, I see it, thank you so much!\"",
+      "\"I'm looking for the consulate, I'm lost.\" \"It's in that villa behind the trees.\"",
+      "\"The navigator says to turn, but there's a wall.\" \"Maybe the map is not updated.\""
+    ],
+    "correctAnswerItalian": "\"Vede quell'insegna luminosa?\" \"Sì, la vedo, grazie infinite!\"",
+    "correctAnswerEnglish": "\"Do you see that bright sign?\" \"Yes, I see it, thank you so much!\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Identificare un punto di riferimento.",
+      "incorrectItalian": "No, questo dialogo significa: \"Do you see that bright sign?\" \"Yes, I see it, thank you so much!\"",
+      "correctEnglish": "Great! This means: \"Do you see that bright sign?\" \"Yes, I see it, thank you so much!\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Do you see that bright sign?\" \"Yes, I see it, thank you so much!\""
+    }
+  },
+  {
+    "id": "s13-s9",
+    "italian": "\"Scusi, cerco la fermata della metro.\" \"Vada dritto per duecento metri.\"",
+    "english": "\"Excuse me, I'm looking for the metro stop.\" \"Go straight for two hundred meters.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo tornati al punto di partenza!\" \"Abbiamo fatto un giro a vuoto.\"",
+      "\"Scusi, cerco la fermata della metro.\" \"Vada dritto per duecento metri.\"",
+      "\"Ho perso la bussola, non capisco il Nord.\" \"Guardi dove tramonta il sole.\"",
+      "\"Siamo nella piazza giusta?\" \"Sì, questa è Piazza del Campo.\""
+    ],
+    "choicesEnglish": [
+      "\"We are back at the starting point!\" \"We went in a circle.\"",
+      "\"Excuse me, I'm looking for the metro stop.\" \"Go straight for two hundred meters.\"",
+      "\"I lost my bearings, I don't understand North.\" \"Look where the sun sets.\"",
+      "\"Are we in the right square?\" \"Yes, this is Piazza del Campo.\""
+    ],
+    "correctAnswerItalian": "\"Scusi, cerco la fermata della metro.\" \"Vada dritto per duecento metri.\"",
+    "correctAnswerEnglish": "\"Excuse me, I'm looking for the metro stop.\" \"Go straight for two hundred meters.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Cercare il trasporto pubblico.",
+      "incorrectItalian": "No, questo dialogo significa: \"Excuse me, I'm looking for the metro stop.\" \"Go straight for two hundred meters.\"",
+      "correctEnglish": "Great! This means: \"Excuse me, I'm looking for the metro stop.\" \"Go straight for two hundred meters.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Excuse me, I'm looking for the metro stop.\" \"Go straight for two hundred meters.\""
+    }
+  },
+  {
+    "id": "s13-s10",
+    "italian": "\"È meglio andare a piedi o in bus?\" \"A piedi è più veloce, è vicino.\"",
+    "english": "\"Is it better to go on foot or by bus?\" \"On foot is faster, it's nearby.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"È questa la via per il mercato?\" \"Sì, è proprio questa qui.\"",
+      "\"Questa mappa è troppo piccola.\" \"Ne compriamo una più grande in edicola.\"",
+      "\"È meglio andare a piedi o in bus?\" \"A piedi è più veloce, è vicino.\"",
+      "\"Grazie della pazienza, siamo un po' confusi.\" \"È normale, la città è un labirinto!\""
+    ],
+    "choicesEnglish": [
+      "\"Is this the way to the market?\" \"Yes, it's this one right here.\"",
+      "\"This map is too small.\" \"Let's buy a larger one at the newsstand.\"",
+      "\"Is it better to go on foot or by bus?\" \"On foot is faster, it's nearby.\"",
+      "\"Thanks for your patience, we're a bit confused.\" \"It's normal, the city is a labyrinth!\""
+    ],
+    "correctAnswerItalian": "\"È meglio andare a piedi o in bus?\" \"A piedi è più veloce, è vicino.\"",
+    "correctAnswerEnglish": "\"Is it better to go on foot or by bus?\" \"On foot is faster, it's nearby.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Confrontare opzioni di movimento.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is it better to go on foot or by bus?\" \"On foot is faster, it's nearby.\"",
+      "correctEnglish": "Great! This means: \"Is it better to go on foot or by bus?\" \"On foot is faster, it's nearby.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is it better to go on foot or by bus?\" \"On foot is faster, it's nearby.\""
+    }
+  },
+  {
+    "id": "s13-s11",
+    "italian": "\"Mi sono smarrito in questo quartiere.\" \"Non si agiti, il centro è da quella parte.\"",
+    "english": "\"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi sono smarrito in questo quartiere.\" \"Non si agiti, il centro è da quella parte.\"",
+      "\"Questo incrocio è molto confusionario.\" \"Segua la folla verso la piazza.\"",
+      "\"Cercate la torre?\" \"Sì, dove l'hanno nascosta?\"",
+      "\"Il navigatore dice che siamo arrivati.\" \"Ma qui non c'è nulla!\""
+    ],
+    "choicesEnglish": [
+      "\"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\"",
+      "\"This intersection is very confusing.\" \"Follow the crowd towards the square.\"",
+      "\"Are you looking for the tower?\" \"Yes, where did they hide it?\"",
+      "\"The navigator says we have arrived.\" \"But there's nothing here!\""
+    ],
+    "correctAnswerItalian": "\"Mi sono smarrito in questo quartiere.\" \"Non si agiti, il centro è da quella parte.\"",
+    "correctAnswerEnglish": "\"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Rassicurazione.",
+      "incorrectItalian": "No, questo dialogo significa: \"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\"",
+      "correctEnglish": "Great! This means: \"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\""
+    }
+  },
+  {
+    "id": "s13-s12",
+    "italian": "\"C'è un ufficio turistico qui vicino?\" \"Sì, in Piazza del Popolo.\"",
+    "english": "\"Is there a tourist office nearby?\" \"Yes, in Piazza del Popolo.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Sulla mappa questo è un parco?\" \"Sì, è Villa Borghese.\"",
+      "\"Vede quell'insegna luminosa?\" \"Sì, la vedo, grazie infinite!\"",
+      "\"C'è un ufficio turistico qui vicino?\" \"Sì, in Piazza del Popolo.\"",
+      "\"L'hotel Astoria è in fondo a questa strada?\" \"Sì, circa cinquecento metri sulla sinistra.\""
+    ],
+    "choicesEnglish": [
+      "\"On the map is this a park?\" \"Yes, it's Villa Borghese.\"",
+      "\"Do you see that bright sign?\" \"Yes, I see it, thank you so much!\"",
+      "\"Is there a tourist office nearby?\" \"Yes, in Piazza del Popolo.\"",
+      "\"Is the Astoria hotel at the end of this street?\" \"Yes, about five hundred meters on the left.\""
+    ],
+    "correctAnswerItalian": "\"C'è un ufficio turistico qui vicino?\" \"Sì, in Piazza del Popolo.\"",
+    "correctAnswerEnglish": "\"Is there a tourist office nearby?\" \"Yes, in Piazza del Popolo.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Cercare informazioni ufficiali.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there a tourist office nearby?\" \"Yes, in Piazza del Popolo.\"",
+      "correctEnglish": "Great! This means: \"Is there a tourist office nearby?\" \"Yes, in Piazza del Popolo.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there a tourist office nearby?\" \"Yes, in Piazza del Popolo.\""
+    }
+  },
+  {
+    "id": "s13-s13",
+    "italian": "\"Posso usare il suo navigatore?\" \"Certo, guardi pure il mio schermo.\"",
+    "english": "\"Can I use your navigator?\" \"Of course, feel free to look at my screen.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso usare il suo navigatore?\" \"Certo, guardi pure il mio schermo.\"",
+      "\"Chiediamo a quel poliziotto?\" \"Sì, è l'idea migliore.\"",
+      "\"Mi scusi, un passante mi ha detto di girare qui.\" \"Ha ragione, il museo è lì.\"",
+      "\"Sto cercando Piazza Navona.\" \"Deve tornare indietro fino all'incrocio.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I use your navigator?\" \"Of course, feel free to look at my screen.\"",
+      "\"Shall we ask that policeman?\" \"Yes, it's the best idea.\"",
+      "\"Excuse me, a passerby told me to turn here.\" \"He's right, the museum is there.\"",
+      "\"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\""
+    ],
+    "correctAnswerItalian": "\"Posso usare il suo navigatore?\" \"Certo, guardi pure il mio schermo.\"",
+    "correctAnswerEnglish": "\"Can I use your navigator?\" \"Of course, feel free to look at my screen.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gentilezza di un passante.",
+      "incorrectItalian": "No, questo dialogo significa: \"Can I use your navigator?\" \"Of course, feel free to look at my screen.\"",
+      "correctEnglish": "Great! This means: \"Can I use your navigator?\" \"Of course, feel free to look at my screen.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Can I use your navigator?\" \"Of course, feel free to look at my screen.\""
+    }
+  },
+  {
+    "id": "s13-s14",
+    "italian": "\"Sulla mappa vedo un ponte, è quello?\" \"Sì, quello è Ponte Sisto.\"",
+    "english": "\"On the map I see a bridge, is that it?\" \"Yes, that is Ponte Sisto.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Sulla mappa vedo un ponte, è quello?\" \"Sì, quello è Ponte Sisto.\"",
+      "\"Scusi, cerco la fermata della metro.\" \"Vada dritto per duecento metri.\"",
+      "\"Mi sono perso cercando il museo.\" \"Giri a sinistra dopo la chiesa.\"",
+      "\"Sto cercando Piazza Navona.\" \"Deve tornare indietro fino all'incrocio.\""
+    ],
+    "choicesEnglish": [
+      "\"On the map I see a bridge, is that it?\" \"Yes, that is Ponte Sisto.\"",
+      "\"Excuse me, I'm looking for the metro stop.\" \"Go straight for two hundred meters.\"",
+      "\"I got lost looking for the museum.\" \"Turn left after the church.\"",
+      "\"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\""
+    ],
+    "correctAnswerItalian": "\"Sulla mappa vedo un ponte, è quello?\" \"Sì, quello è Ponte Sisto.\"",
+    "correctAnswerEnglish": "\"On the map I see a bridge, is that it?\" \"Yes, that is Ponte Sisto.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Verifica sulla mappa.",
+      "incorrectItalian": "No, questo dialogo significa: \"On the map I see a bridge, is that it?\" \"Yes, that is Ponte Sisto.\"",
+      "correctEnglish": "Great! This means: \"On the map I see a bridge, is that it?\" \"Yes, that is Ponte Sisto.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"On the map I see a bridge, is that it?\" \"Yes, that is Ponte Sisto.\""
+    }
+  },
+  {
+    "id": "s13-s15",
+    "italian": "\"Mi sono perso cercando il museo.\" \"Giri a sinistra dopo la chiesa.\"",
+    "english": "\"I got lost looking for the museum.\" \"Turn left after the church.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Vede quell'insegna luminosa?\" \"Sì, la vedo, grazie infinite!\"",
+      "\"Quanto tempo ci vuole per arrivare al porto?\" \"Circa venti minuti a piedi.\"",
+      "\"Mi sono perso cercando il museo.\" \"Giri a sinistra dopo la chiesa.\"",
+      "\"Giri a destra al semaforo.\" \"Va bene, grazie per l'aiuto!\""
+    ],
+    "choicesEnglish": [
+      "\"Do you see that bright sign?\" \"Yes, I see it, thank you so much!\"",
+      "\"How long does it take to get to the port?\" \"About twenty minutes on foot.\"",
+      "\"I got lost looking for the museum.\" \"Turn left after the church.\"",
+      "\"Turn right at the traffic light.\" \"Okay, thanks for the help!\""
+    ],
+    "correctAnswerItalian": "\"Mi sono perso cercando il museo.\" \"Giri a sinistra dopo la chiesa.\"",
+    "correctAnswerEnglish": "\"I got lost looking for the museum.\" \"Turn left after the church.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Indicazioni con punti di riferimento.",
+      "incorrectItalian": "No, questo dialogo significa: \"I got lost looking for the museum.\" \"Turn left after the church.\"",
+      "correctEnglish": "Great! This means: \"I got lost looking for the museum.\" \"Turn left after the church.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I got lost looking for the museum.\" \"Turn left after the church.\""
+    }
+  },
+  {
+    "id": "s13-s16",
+    "italian": "\"Questa è via del Corso?\" \"No, questa è via Ripetta.\"",
+    "english": "\"Is this via del Corso?\" \"No, this is via Ripetta.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo nella direzione giusta per il Colosseo?\" \"No, state andando verso il Vaticano.\"",
+      "\"C'è un punto di riferimento famoso?\" \"Sì, il Pantheon è dietro l'angolo.\"",
+      "\"Questa è via del Corso?\" \"No, questa è via Ripetta.\"",
+      "\"Mi sono smarrito in questo quartiere.\" \"Non si agiti, il centro è da quella parte.\""
+    ],
+    "choicesEnglish": [
+      "\"Are we in the right direction for the Colosseum?\" \"No, you are going towards the Vatican.\"",
+      "\"Is there a famous landmark?\" \"Yes, the Pantheon is around the corner.\"",
+      "\"Is this via del Corso?\" \"No, this is via Ripetta.\"",
+      "\"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\""
+    ],
+    "correctAnswerItalian": "\"Questa è via del Corso?\" \"No, questa è via Ripetta.\"",
+    "correctAnswerEnglish": "\"Is this via del Corso?\" \"No, this is via Ripetta.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere conferma del nome della via.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is this via del Corso?\" \"No, this is via Ripetta.\"",
+      "correctEnglish": "Great! This means: \"Is this via del Corso?\" \"No, this is via Ripetta.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is this via del Corso?\" \"No, this is via Ripetta.\""
+    }
+  },
+  {
+    "id": "s13-s17",
+    "italian": "\"Il segnale GPS non funziona bene.\" \"Succede tra questi palazzi alti.\"",
+    "english": "\"The GPS signal isn't working well.\" \"It happens between these tall buildings.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Cercate il teatro?\" \"Sì, abbiamo uno spettacolo tra poco.\"",
+      "\"Il segnale GPS non funziona bene.\" \"Succede tra questi palazzi alti.\"",
+      "\"Dobbiamo attraversare la strada?\" \"Sì, sulle strisce pedonali laggiù.\"",
+      "\"Chiediamo a quel poliziotto?\" \"Sì, è l'idea migliore.\""
+    ],
+    "choicesEnglish": [
+      "\"Are you looking for the theater?\" \"Yes, we have a show soon.\"",
+      "\"The GPS signal isn't working well.\" \"It happens between these tall buildings.\"",
+      "\"Do we need to cross the street?\" \"Yes, on the crosswalk over there.\"",
+      "\"Shall we ask that policeman?\" \"Yes, it's the best idea.\""
+    ],
+    "correctAnswerItalian": "\"Il segnale GPS non funziona bene.\" \"Succede tra questi palazzi alti.\"",
+    "correctAnswerEnglish": "\"The GPS signal isn't working well.\" \"It happens between these tall buildings.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Problemi di tecnologia in città.",
+      "incorrectItalian": "No, questo dialogo significa: \"The GPS signal isn't working well.\" \"It happens between these tall buildings.\"",
+      "correctEnglish": "Great! This means: \"The GPS signal isn't working well.\" \"It happens between these tall buildings.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The GPS signal isn't working well.\" \"It happens between these tall buildings.\""
+    }
+  },
+  {
+    "id": "s13-s18",
+    "italian": "\"Quanto dista il fiume?\" \"È proprio in fondo alla via.\"",
+    "english": "\"How far is the river?\" \"It's right at the end of the street.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Vada sempre dritto finché non vede il mare.\" \"Grazie, ora è tutto chiaro.\"",
+      "\"Il navigatore dice che siamo arrivati.\" \"Ma qui non c'è nulla!\"",
+      "\"Quanto dista il fiume?\" \"È proprio in fondo alla via.\"",
+      "\"Dobbiamo attraversare la strada?\" \"Sì, sulle strisce pedonali laggiù.\""
+    ],
+    "choicesEnglish": [
+      "\"Go straight until you see the sea.\" \"Thanks, everything is clear now.\"",
+      "\"The navigator says we have arrived.\" \"But there's nothing here!\"",
+      "\"How far is the river?\" \"It's right at the end of the street.\"",
+      "\"Do we need to cross the street?\" \"Yes, on the crosswalk over there.\""
+    ],
+    "correctAnswerItalian": "\"Quanto dista il fiume?\" \"È proprio in fondo alla via.\"",
+    "correctAnswerEnglish": "\"How far is the river?\" \"It's right at the end of the street.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Distanza da un punto naturale.",
+      "incorrectItalian": "No, questo dialogo significa: \"How far is the river?\" \"It's right at the end of the street.\"",
+      "correctEnglish": "Great! This means: \"How far is the river?\" \"It's right at the end of the street.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"How far is the river?\" \"It's right at the end of the street.\""
+    }
+  },
+  {
+    "id": "s13-s19",
+    "italian": "\"C'è un punto di riferimento famoso?\" \"Sì, il Pantheon è dietro l'angolo.\"",
+    "english": "\"Is there a famous landmark?\" \"Yes, the Pantheon is around the corner.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è un punto di riferimento famoso?\" \"Sì, il Pantheon è dietro l'angolo.\"",
+      "\"Siamo vicini alla fontana?\" \"Sì, senta il rumore dell'acqua.\"",
+      "\"Chiediamo a quel poliziotto?\" \"Sì, è l'idea migliore.\"",
+      "\"Mi sono perso, non trovo più la macchina.\" \"Dove l'aveva parcheggiata?\""
+    ],
+    "choicesEnglish": [
+      "\"Is there a famous landmark?\" \"Yes, the Pantheon is around the corner.\"",
+      "\"Are we near the fountain?\" \"Yes, listen to the sound of the water.\"",
+      "\"Shall we ask that policeman?\" \"Yes, it's the best idea.\"",
+      "\"I'm lost, I can't find the car anymore.\" \"Where had you parked it?\""
+    ],
+    "correctAnswerItalian": "\"C'è un punto di riferimento famoso?\" \"Sì, il Pantheon è dietro l'angolo.\"",
+    "correctAnswerEnglish": "\"Is there a famous landmark?\" \"Yes, the Pantheon is around the corner.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Cercare monumenti.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there a famous landmark?\" \"Yes, the Pantheon is around the corner.\"",
+      "correctEnglish": "Great! This means: \"Is there a famous landmark?\" \"Yes, the Pantheon is around the corner.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there a famous landmark?\" \"Yes, the Pantheon is around the corner.\""
+    }
+  },
+  {
+    "id": "s13-s20",
+    "italian": "\"Siamo nella direzione giusta per il Colosseo?\" \"No, state andando verso il Vaticano.\"",
+    "english": "\"Are we in the right direction for the Colosseum?\" \"No, you are going towards the Vatican.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è un bar dove posso caricare il telefono?\" \"Sì, provi quello all'angolo.\"",
+      "\"Sto cercando Piazza Navona.\" \"Deve tornare indietro fino all'incrocio.\"",
+      "\"Siamo nella direzione giusta per il Colosseo?\" \"No, state andando verso il Vaticano.\"",
+      "\"Mi scusi, un passante mi ha detto di girare qui.\" \"Ha ragione, il museo è lì.\""
+    ],
+    "choicesEnglish": [
+      "\"Is there a bar where I can charge my phone?\" \"Yes, try the one on the corner.\"",
+      "\"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\"",
+      "\"Are we in the right direction for the Colosseum?\" \"No, you are going towards the Vatican.\"",
+      "\"Excuse me, a passerby told me to turn here.\" \"He's right, the museum is there.\""
+    ],
+    "correctAnswerItalian": "\"Siamo nella direzione giusta per il Colosseo?\" \"No, state andando verso il Vaticano.\"",
+    "correctAnswerEnglish": "\"Are we in the right direction for the Colosseum?\" \"No, you are going towards the Vatican.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Correzione di rotta.",
+      "incorrectItalian": "No, questo dialogo significa: \"Are we in the right direction for the Colosseum?\" \"No, you are going towards the Vatican.\"",
+      "correctEnglish": "Great! This means: \"Are we in the right direction for the Colosseum?\" \"No, you are going towards the Vatican.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Are we in the right direction for the Colosseum?\" \"No, you are going towards the Vatican.\""
+    }
+  },
+  {
+    "id": "s13-s21",
+    "italian": "\"Mi scusi, per andare alla stazione?\" \"Prenda il bus numero sessantaquattro.\"",
+    "english": "\"Excuse me, to go to the station?\" \"Take bus number sixty-four.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Può mostrarmi sulla mappa dove siamo?\" \"Siamo all'angolo di questa via.\"",
+      "\"Mi scusi, per andare alla stazione?\" \"Prenda il bus numero sessantaquattro.\"",
+      "\"Mi scusi, mi sono perso.\" \"Non si preoccupi, dove deve andare?\"",
+      "\"Mi sono perso, non ricordo il nome dell'hotel.\" \"Ha una ricevuta o un'email?\""
+    ],
+    "choicesEnglish": [
+      "\"Can you show me on the map where we are?\" \"We are at the corner of this street.\"",
+      "\"Excuse me, to go to the station?\" \"Take bus number sixty-four.\"",
+      "\"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\"",
+      "\"I'm lost, I don't remember the hotel name.\" \"Do you have a receipt or an email?\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, per andare alla stazione?\" \"Prenda il bus numero sessantaquattro.\"",
+    "correctAnswerEnglish": "\"Excuse me, to go to the station?\" \"Take bus number sixty-four.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere il bus per la stazione.",
+      "incorrectItalian": "No, questo dialogo significa: \"Excuse me, to go to the station?\" \"Take bus number sixty-four.\"",
+      "correctEnglish": "Great! This means: \"Excuse me, to go to the station?\" \"Take bus number sixty-four.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Excuse me, to go to the station?\" \"Take bus number sixty-four.\""
+    }
+  },
+  {
+    "id": "s13-s22",
+    "italian": "\"C'è una mappa in questa piazza?\" \"Sì, sul cartello marrone laggiù.\"",
+    "english": "\"Is there a map in this square?\" \"Yes, on the brown sign over there.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è una mappa in questa piazza?\" \"Sì, sul cartello marrone laggiù.\"",
+      "\"Cercate il teatro?\" \"Sì, abbiamo uno spettacolo tra poco.\"",
+      "\"L'hotel Astoria è in fondo a questa strada?\" \"Sì, circa cinquecento metri sulla sinistra.\"",
+      "\"Mi scusi, mi sono perso.\" \"Non si preoccupi, dove deve andare?\""
+    ],
+    "choicesEnglish": [
+      "\"Is there a map in this square?\" \"Yes, on the brown sign over there.\"",
+      "\"Are you looking for the theater?\" \"Yes, we have a show soon.\"",
+      "\"Is the Astoria hotel at the end of this street?\" \"Yes, about five hundred meters on the left.\"",
+      "\"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\""
+    ],
+    "correctAnswerItalian": "\"C'è una mappa in questa piazza?\" \"Sì, sul cartello marrone laggiù.\"",
+    "correctAnswerEnglish": "\"Is there a map in this square?\" \"Yes, on the brown sign over there.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Cercare mappe pubbliche.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there a map in this square?\" \"Yes, on the brown sign over there.\"",
+      "correctEnglish": "Great! This means: \"Is there a map in this square?\" \"Yes, on the brown sign over there.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there a map in this square?\" \"Yes, on the brown sign over there.\""
+    }
+  },
+  {
+    "id": "s13-s23",
+    "italian": "\"Siamo molto lontani dal nostro hotel?\" \"No, mancano solo dieci minuti a piedi.\"",
+    "english": "\"Are we very far from our hotel?\" \"No, it's only ten minutes away on foot.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"La Fontana di Trevi è lontana?\" \"No, è a pochi passi da qui.\"",
+      "\"Mi sono perso cercando il museo.\" \"Giri a sinistra dopo la chiesa.\"",
+      "\"Il mio amico ha la mappa, ma si è allontanato.\" \"Proviamo a chiamarlo.\"",
+      "\"Siamo molto lontani dal nostro hotel?\" \"No, mancano solo dieci minuti a piedi.\""
+    ],
+    "choicesEnglish": [
+      "\"Is the Trevi Fountain far?\" \"No, it's a few steps from here.\"",
+      "\"I got lost looking for the museum.\" \"Turn left after the church.\"",
+      "\"My friend has the map, but he walked away.\" \"Let's try to call him.\"",
+      "\"Are we very far from our hotel?\" \"No, it's only ten minutes away on foot.\""
+    ],
+    "correctAnswerItalian": "\"Siamo molto lontani dal nostro hotel?\" \"No, mancano solo dieci minuti a piedi.\"",
+    "correctAnswerEnglish": "\"Are we very far from our hotel?\" \"No, it's only ten minutes away on foot.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Rassicurazione sulla distanza.",
+      "incorrectItalian": "No, questo dialogo significa: \"Are we very far from our hotel?\" \"No, it's only ten minutes away on foot.\"",
+      "correctEnglish": "Great! This means: \"Are we very far from our hotel?\" \"No, it's only ten minutes away on foot.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Are we very far from our hotel?\" \"No, it's only ten minutes away on foot.\""
+    }
+  },
+  {
+    "id": "s13-s24",
+    "italian": "\"Giri a destra al semaforo.\" \"Va bene, grazie per l'aiuto!\"",
+    "english": "\"Turn right at the traffic light.\" \"Okay, thanks for the help!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è un punto di riferimento famoso?\" \"Sì, il Pantheon è dietro l'angolo.\"",
+      "\"Cercate la torre?\" \"Sì, dove l'hanno nascosta?\"",
+      "\"Giri a destra al semaforo.\" \"Va bene, grazie per l'aiuto!\"",
+      "\"Il navigatore dice che siamo arrivati.\" \"Ma qui non c'è nulla!\""
+    ],
+    "choicesEnglish": [
+      "\"Is there a famous landmark?\" \"Yes, the Pantheon is around the corner.\"",
+      "\"Are you looking for the tower?\" \"Yes, where did they hide it?\"",
+      "\"Turn right at the traffic light.\" \"Okay, thanks for the help!\"",
+      "\"The navigator says we have arrived.\" \"But there's nothing here!\""
+    ],
+    "correctAnswerItalian": "\"Giri a destra al semaforo.\" \"Va bene, grazie per l'aiuto!\"",
+    "correctAnswerEnglish": "\"Turn right at the traffic light.\" \"Okay, thanks for the help!\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Seguire istruzioni semplici.",
+      "incorrectItalian": "No, questo dialogo significa: \"Turn right at the traffic light.\" \"Okay, thanks for the help!\"",
+      "correctEnglish": "Great! This means: \"Turn right at the traffic light.\" \"Okay, thanks for the help!\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Turn right at the traffic light.\" \"Okay, thanks for the help!\""
+    }
+  },
+  {
+    "id": "s13-s25",
+    "italian": "\"Mi sono perso, non trovo più la macchina.\" \"Dove l'aveva parcheggiata?\"",
+    "english": "\"I'm lost, I can't find the car anymore.\" \"Where had you parked it?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi sono perso, non trovo più la macchina.\" \"Dove l'aveva parcheggiata?\"",
+      "\"Mi scusi, cerco via Veneto.\" \"È la terza traversa a sinistra.\"",
+      "\"Mi sono perso cercando il museo.\" \"Giri a sinistra dopo la chiesa.\"",
+      "\"Mi scusi, mi sono perso.\" \"Non si preoccupi, dove deve andare?\""
+    ],
+    "choicesEnglish": [
+      "\"I'm lost, I can't find the car anymore.\" \"Where had you parked it?\"",
+      "\"Excuse me, I'm looking for via Veneto.\" \"It's the third side street on the left.\"",
+      "\"I got lost looking for the museum.\" \"Turn left after the church.\"",
+      "\"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\""
+    ],
+    "correctAnswerItalian": "\"Mi sono perso, non trovo più la macchina.\" \"Dove l'aveva parcheggiata?\"",
+    "correctAnswerEnglish": "\"I'm lost, I can't find the car anymore.\" \"Where had you parked it?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Perdere l'auto.",
+      "incorrectItalian": "No, questo dialogo significa: \"I'm lost, I can't find the car anymore.\" \"Where had you parked it?\"",
+      "correctEnglish": "Great! This means: \"I'm lost, I can't find the car anymore.\" \"Where had you parked it?\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I'm lost, I can't find the car anymore.\" \"Where had you parked it?\""
+    }
+  },
+  {
+    "id": "s13-s26",
+    "italian": "\"Il mio amico ha la mappa, ma si è allontanato.\" \"Proviamo a chiamarlo.\"",
+    "english": "\"My friend has the map, but he walked away.\" \"Let's try to call him.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Chiediamo a quel poliziotto?\" \"Sì, è l'idea migliore.\"",
+      "\"Ho perso la bussola, non capisco il Nord.\" \"Guardi dove tramonta il sole.\"",
+      "\"Il mio amico ha la mappa, ma si è allontanato.\" \"Proviamo a chiamarlo.\"",
+      "\"Vede quell'insegna luminosa?\" \"Sì, la vedo, grazie infinite!\""
+    ],
+    "choicesEnglish": [
+      "\"Shall we ask that policeman?\" \"Yes, it's the best idea.\"",
+      "\"I lost my bearings, I don't understand North.\" \"Look where the sun sets.\"",
+      "\"My friend has the map, but he walked away.\" \"Let's try to call him.\"",
+      "\"Do you see that bright sign?\" \"Yes, I see it, thank you so much!\""
+    ],
+    "correctAnswerItalian": "\"Il mio amico ha la mappa, ma si è allontanato.\" \"Proviamo a chiamarlo.\"",
+    "correctAnswerEnglish": "\"My friend has the map, but he walked away.\" \"Let's try to call him.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Amico smarrito.",
+      "incorrectItalian": "No, questo dialogo significa: \"My friend has the map, but he walked away.\" \"Let's try to call him.\"",
+      "correctEnglish": "Great! This means: \"My friend has the map, but he walked away.\" \"Let's try to call him.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"My friend has the map, but he walked away.\" \"Let's try to call him.\""
+    }
+  },
+  {
+    "id": "s13-s27",
+    "italian": "\"Scusi, questa strada porta al porto?\" \"No, questa va verso la montagna.\"",
+    "english": "\"Excuse me, does this road lead to the port?\" \"No, this one goes towards the mountain.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è un ufficio turistico qui vicino?\" \"Sì, in Piazza del Popolo.\"",
+      "\"Sulla mappa vedo un ponte, è quello?\" \"Sì, quello è Ponte Sisto.\"",
+      "\"È meglio andare a piedi o in bus?\" \"A piedi è più veloce, è vicino.\"",
+      "\"Scusi, questa strada porta al porto?\" \"No, questa va verso la montagna.\""
+    ],
+    "choicesEnglish": [
+      "\"Is there a tourist office nearby?\" \"Yes, in Piazza del Popolo.\"",
+      "\"On the map I see a bridge, is that it?\" \"Yes, that is Ponte Sisto.\"",
+      "\"Is it better to go on foot or by bus?\" \"On foot is faster, it's nearby.\"",
+      "\"Excuse me, does this road lead to the port?\" \"No, this one goes towards the mountain.\""
+    ],
+    "correctAnswerItalian": "\"Scusi, questa strada porta al porto?\" \"No, questa va verso la montagna.\"",
+    "correctAnswerEnglish": "\"Excuse me, does this road lead to the port?\" \"No, this one goes towards the mountain.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere la meta della strada.",
+      "incorrectItalian": "No, questo dialogo significa: \"Excuse me, does this road lead to the port?\" \"No, this one goes towards the mountain.\"",
+      "correctEnglish": "Great! This means: \"Excuse me, does this road lead to the port?\" \"No, this one goes towards the mountain.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Excuse me, does this road lead to the port?\" \"No, this one goes towards the mountain.\""
+    }
+  },
+  {
+    "id": "s13-s28",
+    "italian": "\"Cercate il centro storico?\" \"Sì, ci siamo persi nei vicoli.\"",
+    "english": "\"Are you looking for the historic center?\" \"Yes, we got lost in the alleys.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo tornati al punto di partenza!\" \"Abbiamo fatto un giro a vuoto.\"",
+      "\"Cercate il centro storico?\" \"Sì, ci siamo persi nei vicoli.\"",
+      "\"C'è una mappa in questa piazza?\" \"Sì, sul cartello marrone laggiù.\"",
+      "\"Vada sempre dritto finché non vede il mare.\" \"Grazie, ora è tutto chiaro.\""
+    ],
+    "choicesEnglish": [
+      "\"We are back at the starting point!\" \"We went in a circle.\"",
+      "\"Are you looking for the historic center?\" \"Yes, we got lost in the alleys.\"",
+      "\"Is there a map in this square?\" \"Yes, on the brown sign over there.\"",
+      "\"Go straight until you see the sea.\" \"Thanks, everything is clear now.\""
+    ],
+    "correctAnswerItalian": "\"Cercate il centro storico?\" \"Sì, ci siamo persi nei vicoli.\"",
+    "correctAnswerEnglish": "\"Are you looking for the historic center?\" \"Yes, we got lost in the alleys.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Persi nei vicoli.",
+      "incorrectItalian": "No, questo dialogo significa: \"Are you looking for the historic center?\" \"Yes, we got lost in the alleys.\"",
+      "correctEnglish": "Great! This means: \"Are you looking for the historic center?\" \"Yes, we got lost in the alleys.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Are you looking for the historic center?\" \"Yes, we got lost in the alleys.\""
+    }
+  },
+  {
+    "id": "s13-s29",
+    "italian": "\"Vada sempre dritto finché non vede il mare.\" \"Grazie, ora è tutto chiaro.\"",
+    "english": "\"Go straight until you see the sea.\" \"Thanks, everything is clear now.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Chiediamo a quel poliziotto?\" \"Sì, è l'idea migliore.\"",
+      "\"Siamo tornati al punto di partenza!\" \"Abbiamo fatto un giro a vuoto.\"",
+      "\"Vada sempre dritto finché non vede il mare.\" \"Grazie, ora è tutto chiaro.\"",
+      "\"Può mostrarmi sulla mappa dove siamo?\" \"Siamo all'angolo di questa via.\""
+    ],
+    "choicesEnglish": [
+      "\"Shall we ask that policeman?\" \"Yes, it's the best idea.\"",
+      "\"We are back at the starting point!\" \"We went in a circle.\"",
+      "\"Go straight until you see the sea.\" \"Thanks, everything is clear now.\"",
+      "\"Can you show me on the map where we are?\" \"We are at the corner of this street.\""
+    ],
+    "correctAnswerItalian": "\"Vada sempre dritto finché non vede il mare.\" \"Grazie, ora è tutto chiaro.\"",
+    "correctAnswerEnglish": "\"Go straight until you see the sea.\" \"Thanks, everything is clear now.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Indicazioni semplici.",
+      "incorrectItalian": "No, questo dialogo significa: \"Go straight until you see the sea.\" \"Thanks, everything is clear now.\"",
+      "correctEnglish": "Great! This means: \"Go straight until you see the sea.\" \"Thanks, everything is clear now.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Go straight until you see the sea.\" \"Thanks, everything is clear now.\""
+    }
+  },
+  {
+    "id": "s13-s30",
+    "italian": "\"Mi scusi, un passante mi ha detto di girare qui.\" \"Ha ragione, il museo è lì.\"",
+    "english": "\"Excuse me, a passerby told me to turn here.\" \"He's right, the museum is there.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi, un passante mi ha detto di girare qui.\" \"Ha ragione, il museo è lì.\"",
+      "\"Mi sono perso, cerco la spiaggia.\" \"Segua il profumo del mare.\"",
+      "\"È meglio andare a piedi o in bus?\" \"A piedi è più veloce, è vicino.\"",
+      "\"La mappa digitale non carica.\" \"Usi quella cartacea del ristorante.\""
+    ],
+    "choicesEnglish": [
+      "\"Excuse me, a passerby told me to turn here.\" \"He's right, the museum is there.\"",
+      "\"I'm lost, I'm looking for the beach.\" \"Follow the scent of the sea.\"",
+      "\"Is it better to go on foot or by bus?\" \"On foot is faster, it's nearby.\"",
+      "\"The digital map isn't loading.\" \"Use the paper one from the restaurant.\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, un passante mi ha detto di girare qui.\" \"Ha ragione, il museo è lì.\"",
+    "correctAnswerEnglish": "\"Excuse me, a passerby told me to turn here.\" \"He's right, the museum is there.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Conferma di indicazioni precedenti.",
+      "incorrectItalian": "No, questo dialogo significa: \"Excuse me, a passerby told me to turn here.\" \"He's right, the museum is there.\"",
+      "correctEnglish": "Great! This means: \"Excuse me, a passerby told me to turn here.\" \"He's right, the museum is there.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Excuse me, a passerby told me to turn here.\" \"He's right, the museum is there.\""
+    }
+  },
+  {
+    "id": "s13-s31",
+    "italian": "\"Sulla mappa questo è un parco?\" \"Sì, è Villa Borghese.\"",
+    "english": "\"On the map is this a park?\" \"Yes, it's Villa Borghese.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Sulla mappa questo è un parco?\" \"Sì, è Villa Borghese.\"",
+      "\"L'hotel Astoria è in fondo a questa strada?\" \"Sì, circa cinquecento metri sulla sinistra.\"",
+      "\"C'è una mappa in questa piazza?\" \"Sì, sul cartello marrone laggiù.\"",
+      "\"Vada oltre quel grande arco.\" \"D'accordo, grazie mille.\""
+    ],
+    "choicesEnglish": [
+      "\"On the map is this a park?\" \"Yes, it's Villa Borghese.\"",
+      "\"Is the Astoria hotel at the end of this street?\" \"Yes, about five hundred meters on the left.\"",
+      "\"Is there a map in this square?\" \"Yes, on the brown sign over there.\"",
+      "\"Go beyond that large arch.\" \"Alright, thank you very much.\""
+    ],
+    "correctAnswerItalian": "\"Sulla mappa questo è un parco?\" \"Sì, è Villa Borghese.\"",
+    "correctAnswerEnglish": "\"On the map is this a park?\" \"Yes, it's Villa Borghese.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Identificare zone verdi.",
+      "incorrectItalian": "No, questo dialogo significa: \"On the map is this a park?\" \"Yes, it's Villa Borghese.\"",
+      "correctEnglish": "Great! This means: \"On the map is this a park?\" \"Yes, it's Villa Borghese.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"On the map is this a park?\" \"Yes, it's Villa Borghese.\""
+    }
+  },
+  {
+    "id": "s13-s32",
+    "italian": "\"Il navigatore dice di girare, ma c'è un muro.\" \"Forse la mappa non è aggiornata.\"",
+    "english": "\"The navigator says to turn, but there's a wall.\" \"Maybe the map is not updated.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il navigatore dice di girare, ma c'è un muro.\" \"Forse la mappa non è aggiornata.\"",
+      "\"Cercate la torre?\" \"Sì, dove l'hanno nascosta?\"",
+      "\"Dobbiamo attraversare la strada?\" \"Sì, sulle strisce pedonali laggiù.\"",
+      "\"Siamo in una zona a traffico limitato?\" \"Sì, solo per i residenti.\""
+    ],
+    "choicesEnglish": [
+      "\"The navigator says to turn, but there's a wall.\" \"Maybe the map is not updated.\"",
+      "\"Are you looking for the tower?\" \"Yes, where did they hide it?\"",
+      "\"Do we need to cross the street?\" \"Yes, on the crosswalk over there.\"",
+      "\"Are we in a limited traffic zone?\" \"Yes, for residents only.\""
+    ],
+    "correctAnswerItalian": "\"Il navigatore dice di girare, ma c'è un muro.\" \"Forse la mappa non è aggiornata.\"",
+    "correctAnswerEnglish": "\"The navigator says to turn, but there's a wall.\" \"Maybe the map is not updated.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Errori del navigatore.",
+      "incorrectItalian": "No, questo dialogo significa: \"The navigator says to turn, but there's a wall.\" \"Maybe the map is not updated.\"",
+      "correctEnglish": "Great! This means: \"The navigator says to turn, but there's a wall.\" \"Maybe the map is not updated.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The navigator says to turn, but there's a wall.\" \"Maybe the map is not updated.\""
+    }
+  },
+  {
+    "id": "s13-s33",
+    "italian": "\"Mi sono perso, cerco un taxi.\" \"C'è un posteggio taxi in quella piazza.\"",
+    "english": "\"I'm lost, I'm looking for a taxi.\" \"There's a taxi stand in that square.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"La mappa digitale non carica.\" \"Usi quella cartacea del ristorante.\"",
+      "\"Cerco il consolato, mi sono perso.\" \"È in quella villa dietro gli alberi.\"",
+      "\"Mi sono perso, cerco un taxi.\" \"C'è un posteggio taxi in quella piazza.\"",
+      "\"Sulla mappa vedo un ponte, è quello?\" \"Sì, quello è Ponte Sisto.\""
+    ],
+    "choicesEnglish": [
+      "\"The digital map isn't loading.\" \"Use the paper one from the restaurant.\"",
+      "\"I'm looking for the consulate, I'm lost.\" \"It's in that villa behind the trees.\"",
+      "\"I'm lost, I'm looking for a taxi.\" \"There's a taxi stand in that square.\"",
+      "\"On the map I see a bridge, is that it?\" \"Yes, that is Ponte Sisto.\""
+    ],
+    "correctAnswerItalian": "\"Mi sono perso, cerco un taxi.\" \"C'è un posteggio taxi in quella piazza.\"",
+    "correctAnswerEnglish": "\"I'm lost, I'm looking for a taxi.\" \"There's a taxi stand in that square.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Cercare un taxi.",
+      "incorrectItalian": "No, questo dialogo significa: \"I'm lost, I'm looking for a taxi.\" \"There's a taxi stand in that square.\"",
+      "correctEnglish": "Great! This means: \"I'm lost, I'm looking for a taxi.\" \"There's a taxi stand in that square.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I'm lost, I'm looking for a taxi.\" \"There's a taxi stand in that square.\""
+    }
+  },
+  {
+    "id": "s13-s34",
+    "italian": "\"Può scrivermi l'indirizzo sulla mappa?\" \"Certo, ecco qui il punto esatto.\"",
+    "english": "\"Can you write the address on the map for me?\" \"Sure, here is the exact point.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Può scrivermi l'indirizzo sulla mappa?\" \"Certo, ecco qui il punto esatto.\"",
+      "\"Mi scusi, sono straniero e mi sono perso.\" \"Non si preoccupi, l'aiuto io.\"",
+      "\"Mi sono perso, non trovo più la macchina.\" \"Dove l'aveva parcheggiata?\"",
+      "\"Mi sono smarrito in questo quartiere.\" \"Non si agiti, il centro è da quella parte.\""
+    ],
+    "choicesEnglish": [
+      "\"Can you write the address on the map for me?\" \"Sure, here is the exact point.\"",
+      "\"Excuse me, I'm a foreigner and I'm lost.\" \"Don't worry, I'll help you.\"",
+      "\"I'm lost, I can't find the car anymore.\" \"Where had you parked it?\"",
+      "\"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\""
+    ],
+    "correctAnswerItalian": "\"Può scrivermi l'indirizzo sulla mappa?\" \"Certo, ecco qui il punto esatto.\"",
+    "correctAnswerEnglish": "\"Can you write the address on the map for me?\" \"Sure, here is the exact point.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Aiuto scritto.",
+      "incorrectItalian": "No, questo dialogo significa: \"Can you write the address on the map for me?\" \"Sure, here is the exact point.\"",
+      "correctEnglish": "Great! This means: \"Can you write the address on the map for me?\" \"Sure, here is the exact point.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Can you write the address on the map for me?\" \"Sure, here is the exact point.\""
+    }
+  },
+  {
+    "id": "s13-s35",
+    "italian": "\"Siamo vicini alla fontana?\" \"Sì, senta il rumore dell'acqua.\"",
+    "english": "\"Are we near the fountain?\" \"Yes, listen to the sound of the water.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Vada oltre quel grande arco.\" \"D'accordo, grazie mille.\"",
+      "\"Siamo vicini alla fontana?\" \"Sì, senta il rumore dell'acqua.\"",
+      "\"Questo incrocio è molto confusionario.\" \"Segua la folla verso la piazza.\"",
+      "\"Cercate il centro storico?\" \"Sì, ci siamo persi nei vicoli.\""
+    ],
+    "choicesEnglish": [
+      "\"Go beyond that large arch.\" \"Alright, thank you very much.\"",
+      "\"Are we near the fountain?\" \"Yes, listen to the sound of the water.\"",
+      "\"This intersection is very confusing.\" \"Follow the crowd towards the square.\"",
+      "\"Are you looking for the historic center?\" \"Yes, we got lost in the alleys.\""
+    ],
+    "correctAnswerItalian": "\"Siamo vicini alla fontana?\" \"Sì, senta il rumore dell'acqua.\"",
+    "correctAnswerEnglish": "\"Are we near the fountain?\" \"Yes, listen to the sound of the water.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Usare i sensi per orientarsi.",
+      "incorrectItalian": "No, questo dialogo significa: \"Are we near the fountain?\" \"Yes, listen to the sound of the water.\"",
+      "correctEnglish": "Great! This means: \"Are we near the fountain?\" \"Yes, listen to the sound of the water.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Are we near the fountain?\" \"Yes, listen to the sound of the water.\""
+    }
+  },
+  {
+    "id": "s13-s36",
+    "italian": "\"Ho perso la bussola, non capisco il Nord.\" \"Guardi dove tramonta il sole.\"",
+    "english": "\"I lost my bearings, I don't understand North.\" \"Look where the sun sets.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ho perso la bussola, non capisco il Nord.\" \"Guardi dove tramonta il sole.\"",
+      "\"È meglio andare a piedi o in bus?\" \"A piedi è più veloce, è vicino.\"",
+      "\"Mi sono perso, non ricordo il nome dell'hotel.\" \"Ha una ricevuta o un'email?\"",
+      "\"Scusi, questa strada porta al porto?\" \"No, questa va verso la montagna.\""
+    ],
+    "choicesEnglish": [
+      "\"I lost my bearings, I don't understand North.\" \"Look where the sun sets.\"",
+      "\"Is it better to go on foot or by bus?\" \"On foot is faster, it's nearby.\"",
+      "\"I'm lost, I don't remember the hotel name.\" \"Do you have a receipt or an email?\"",
+      "\"Excuse me, does this road lead to the port?\" \"No, this one goes towards the mountain.\""
+    ],
+    "correctAnswerItalian": "\"Ho perso la bussola, non capisco il Nord.\" \"Guardi dove tramonta il sole.\"",
+    "correctAnswerEnglish": "\"I lost my bearings, I don't understand North.\" \"Look where the sun sets.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Orientamento naturale.",
+      "incorrectItalian": "No, questo dialogo significa: \"I lost my bearings, I don't understand North.\" \"Look where the sun sets.\"",
+      "correctEnglish": "Great! This means: \"I lost my bearings, I don't understand North.\" \"Look where the sun sets.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I lost my bearings, I don't understand North.\" \"Look where the sun sets.\""
+    }
+  },
+  {
+    "id": "s13-s37",
+    "italian": "\"Questo incrocio è molto confusionario.\" \"Segua la folla verso la piazza.\"",
+    "english": "\"This intersection is very confusing.\" \"Follow the crowd towards the square.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto tempo ci vuole per arrivare al porto?\" \"Circa venti minuti a piedi.\"",
+      "\"Mi sono perso, cerco la spiaggia.\" \"Segua il profumo del mare.\"",
+      "\"Posso usare il suo navigatore?\" \"Certo, guardi pure il mio schermo.\"",
+      "\"Questo incrocio è molto confusionario.\" \"Segua la folla verso la piazza.\""
+    ],
+    "choicesEnglish": [
+      "\"How long does it take to get to the port?\" \"About twenty minutes on foot.\"",
+      "\"I'm lost, I'm looking for the beach.\" \"Follow the scent of the sea.\"",
+      "\"Can I use your navigator?\" \"Of course, feel free to look at my screen.\"",
+      "\"This intersection is very confusing.\" \"Follow the crowd towards the square.\""
+    ],
+    "correctAnswerItalian": "\"Questo incrocio è molto confusionario.\" \"Segua la folla verso la piazza.\"",
+    "correctAnswerEnglish": "\"This intersection is very confusing.\" \"Follow the crowd towards the square.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire il caos.",
+      "incorrectItalian": "No, questo dialogo significa: \"This intersection is very confusing.\" \"Follow the crowd towards the square.\"",
+      "correctEnglish": "Great! This means: \"This intersection is very confusing.\" \"Follow the crowd towards the square.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"This intersection is very confusing.\" \"Follow the crowd towards the square.\""
+    }
+  },
+  {
+    "id": "s13-s38",
+    "italian": "\"Mi scusi, cerco via Veneto.\" \"È la terza traversa a sinistra.\"",
+    "english": "\"Excuse me, I'm looking for via Veneto.\" \"It's the third side street on the left.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Vada sempre dritto finché non vede il mare.\" \"Grazie, ora è tutto chiaro.\"",
+      "\"Questa è via del Corso?\" \"No, questa è via Ripetta.\"",
+      "\"Mi scusi, cerco via Veneto.\" \"È la terza traversa a sinistra.\"",
+      "\"Dobbiamo attraversare la strada?\" \"Sì, sulle strisce pedonali laggiù.\""
+    ],
+    "choicesEnglish": [
+      "\"Go straight until you see the sea.\" \"Thanks, everything is clear now.\"",
+      "\"Is this via del Corso?\" \"No, this is via Ripetta.\"",
+      "\"Excuse me, I'm looking for via Veneto.\" \"It's the third side street on the left.\"",
+      "\"Do we need to cross the street?\" \"Yes, on the crosswalk over there.\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, cerco via Veneto.\" \"È la terza traversa a sinistra.\"",
+    "correctAnswerEnglish": "\"Excuse me, I'm looking for via Veneto.\" \"It's the third side street on the left.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Contare le traverse.",
+      "incorrectItalian": "No, questo dialogo significa: \"Excuse me, I'm looking for via Veneto.\" \"It's the third side street on the left.\"",
+      "correctEnglish": "Great! This means: \"Excuse me, I'm looking for via Veneto.\" \"It's the third side street on the left.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Excuse me, I'm looking for via Veneto.\" \"It's the third side street on the left.\""
+    }
+  },
+  {
+    "id": "s13-s39",
+    "italian": "\"Siamo finiti in una zona residenziale.\" \"Dobbiamo tornare sulla strada principale.\"",
+    "english": "\"We ended up in a residential area.\" \"We need to get back on the main road.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto dista il fiume?\" \"È proprio in fondo alla via.\"",
+      "\"C'è un punto di riferimento famoso?\" \"Sì, il Pantheon è dietro l'angolo.\"",
+      "\"Siamo finiti in una zona residenziale.\" \"Dobbiamo tornare sulla strada principale.\"",
+      "\"Può mostrarmi sulla mappa dove siamo?\" \"Siamo all'angolo di questa via.\""
+    ],
+    "choicesEnglish": [
+      "\"How far is the river?\" \"It's right at the end of the street.\"",
+      "\"Is there a famous landmark?\" \"Yes, the Pantheon is around the corner.\"",
+      "\"We ended up in a residential area.\" \"We need to get back on the main road.\"",
+      "\"Can you show me on the map where we are?\" \"We are at the corner of this street.\""
+    ],
+    "correctAnswerItalian": "\"Siamo finiti in una zona residenziale.\" \"Dobbiamo tornare sulla strada principale.\"",
+    "correctAnswerEnglish": "\"We ended up in a residential area.\" \"We need to get back on the main road.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Sbagliare zona.",
+      "incorrectItalian": "No, questo dialogo significa: \"We ended up in a residential area.\" \"We need to get back on the main road.\"",
+      "correctEnglish": "Great! This means: \"We ended up in a residential area.\" \"We need to get back on the main road.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"We ended up in a residential area.\" \"We need to get back on the main road.\""
+    }
+  },
+  {
+    "id": "s13-s40",
+    "italian": "\"C'è un bar dove posso caricare il telefono?\" \"Sì, provi quello all'angolo.\"",
+    "english": "\"Is there a bar where I can charge my phone?\" \"Yes, try the one on the corner.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso usare il suo navigatore?\" \"Certo, guardi pure il mio schermo.\"",
+      "\"C'è un punto di riferimento famoso?\" \"Sì, il Pantheon è dietro l'angolo.\"",
+      "\"Questa mappa è troppo piccola.\" \"Ne compriamo una più grande in edicola.\"",
+      "\"C'è un bar dove posso caricare il telefono?\" \"Sì, provi quello all'angolo.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I use your navigator?\" \"Of course, feel free to look at my screen.\"",
+      "\"Is there a famous landmark?\" \"Yes, the Pantheon is around the corner.\"",
+      "\"This map is too small.\" \"Let's buy a larger one at the newsstand.\"",
+      "\"Is there a bar where I can charge my phone?\" \"Yes, try the one on the corner.\""
+    ],
+    "correctAnswerItalian": "\"C'è un bar dove posso caricare il telefono?\" \"Sì, provi quello all'angolo.\"",
+    "correctAnswerEnglish": "\"Is there a bar where I can charge my phone?\" \"Yes, try the one on the corner.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Cercare ricarica.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is there a bar where I can charge my phone?\" \"Yes, try the one on the corner.\"",
+      "correctEnglish": "Great! This means: \"Is there a bar where I can charge my phone?\" \"Yes, try the one on the corner.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is there a bar where I can charge my phone?\" \"Yes, try the one on the corner.\""
+    }
+  },
+  {
+    "id": "s13-s41",
+    "italian": "\"Cerco il consolato, mi sono perso.\" \"È in quella villa dietro gli alberi.\"",
+    "english": "\"I'm looking for the consulate, I'm lost.\" \"It's in that villa behind the trees.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Giri a destra al semaforo.\" \"Va bene, grazie per l'aiuto!\"",
+      "\"Siamo nella piazza giusta?\" \"Sì, questa è Piazza del Campo.\"",
+      "\"C'è un bar dove posso caricare il telefono?\" \"Sì, provi quello all'angolo.\"",
+      "\"Cerco il consolato, mi sono perso.\" \"È in quella villa dietro gli alberi.\""
+    ],
+    "choicesEnglish": [
+      "\"Turn right at the traffic light.\" \"Okay, thanks for the help!\"",
+      "\"Are we in the right square?\" \"Yes, this is Piazza del Campo.\"",
+      "\"Is there a bar where I can charge my phone?\" \"Yes, try the one on the corner.\"",
+      "\"I'm looking for the consulate, I'm lost.\" \"It's in that villa behind the trees.\""
+    ],
+    "correctAnswerItalian": "\"Cerco il consolato, mi sono perso.\" \"È in quella villa dietro gli alberi.\"",
+    "correctAnswerEnglish": "\"I'm looking for the consulate, I'm lost.\" \"It's in that villa behind the trees.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Cercare edifici istituzionali.",
+      "incorrectItalian": "No, questo dialogo significa: \"I'm looking for the consulate, I'm lost.\" \"It's in that villa behind the trees.\"",
+      "correctEnglish": "Great! This means: \"I'm looking for the consulate, I'm lost.\" \"It's in that villa behind the trees.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I'm looking for the consulate, I'm lost.\" \"It's in that villa behind the trees.\""
+    }
+  },
+  {
+    "id": "s13-s42",
+    "italian": "\"Quanto tempo ci vuole per arrivare al porto?\" \"Circa venti minuti a piedi.\"",
+    "english": "\"How long does it take to get to the port?\" \"About twenty minutes on foot.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo molto lontani dal nostro hotel?\" \"No, mancano solo dieci minuti a piedi.\"",
+      "\"Mi scusi, mi sono perso.\" \"Non si preoccupi, dove deve andare?\"",
+      "\"Quanto tempo ci vuole per arrivare al porto?\" \"Circa venti minuti a piedi.\"",
+      "\"Mi scusi, un passante mi ha detto di girare qui.\" \"Ha ragione, il museo è lì.\""
+    ],
+    "choicesEnglish": [
+      "\"Are we very far from our hotel?\" \"No, it's only ten minutes away on foot.\"",
+      "\"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\"",
+      "\"How long does it take to get to the port?\" \"About twenty minutes on foot.\"",
+      "\"Excuse me, a passerby told me to turn here.\" \"He's right, the museum is there.\""
+    ],
+    "correctAnswerItalian": "\"Quanto tempo ci vuole per arrivare al porto?\" \"Circa venti minuti a piedi.\"",
+    "correctAnswerEnglish": "\"How long does it take to get to the port?\" \"About twenty minutes on foot.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Tempo di percorrenza.",
+      "incorrectItalian": "No, questo dialogo significa: \"How long does it take to get to the port?\" \"About twenty minutes on foot.\"",
+      "correctEnglish": "Great! This means: \"How long does it take to get to the port?\" \"About twenty minutes on foot.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"How long does it take to get to the port?\" \"About twenty minutes on foot.\""
+    }
+  },
+  {
+    "id": "s13-s43",
+    "italian": "\"La mappa digitale non carica.\" \"Usi quella cartacea del ristorante.\"",
+    "english": "\"The digital map isn't loading.\" \"Use the paper one from the restaurant.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Sulla mappa questo è un parco?\" \"Sì, è Villa Borghese.\"",
+      "\"Vede quell'insegna luminosa?\" \"Sì, la vedo, grazie infinite!\"",
+      "\"La mappa digitale non carica.\" \"Usi quella cartacea del ristorante.\"",
+      "\"Mi sono smarrito in questo quartiere.\" \"Non si agiti, il centro è da quella parte.\""
+    ],
+    "choicesEnglish": [
+      "\"On the map is this a park?\" \"Yes, it's Villa Borghese.\"",
+      "\"Do you see that bright sign?\" \"Yes, I see it, thank you so much!\"",
+      "\"The digital map isn't loading.\" \"Use the paper one from the restaurant.\"",
+      "\"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\""
+    ],
+    "correctAnswerItalian": "\"La mappa digitale non carica.\" \"Usi quella cartacea del ristorante.\"",
+    "correctAnswerEnglish": "\"The digital map isn't loading.\" \"Use the paper one from the restaurant.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Alternativa alla tecnologia.",
+      "incorrectItalian": "No, questo dialogo significa: \"The digital map isn't loading.\" \"Use the paper one from the restaurant.\"",
+      "correctEnglish": "Great! This means: \"The digital map isn't loading.\" \"Use the paper one from the restaurant.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The digital map isn't loading.\" \"Use the paper one from the restaurant.\""
+    }
+  },
+  {
+    "id": "s13-s44",
+    "italian": "\"Siamo nella piazza giusta?\" \"Sì, questa è Piazza del Campo.\"",
+    "english": "\"Are we in the right square?\" \"Yes, this is Piazza del Campo.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto tempo ci vuole per arrivare al porto?\" \"Circa venti minuti a piedi.\"",
+      "\"Grazie della pazienza, siamo un po' confusi.\" \"È normale, la città è un labirinto!\"",
+      "\"Siamo nella piazza giusta?\" \"Sì, questa è Piazza del Campo.\"",
+      "\"Siamo sulla riva destra o sinistra?\" \"Siamo sulla riva sinistra del Tevere.\""
+    ],
+    "choicesEnglish": [
+      "\"How long does it take to get to the port?\" \"About twenty minutes on foot.\"",
+      "\"Thanks for your patience, we're a bit confused.\" \"It's normal, the city is a labyrinth!\"",
+      "\"Are we in the right square?\" \"Yes, this is Piazza del Campo.\"",
+      "\"Are we on the right or left bank?\" \"We are on the left bank of the Tiber.\""
+    ],
+    "correctAnswerItalian": "\"Siamo nella piazza giusta?\" \"Sì, questa è Piazza del Campo.\"",
+    "correctAnswerEnglish": "\"Are we in the right square?\" \"Yes, this is Piazza del Campo.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Verifica della posizione.",
+      "incorrectItalian": "No, questo dialogo significa: \"Are we in the right square?\" \"Yes, this is Piazza del Campo.\"",
+      "correctEnglish": "Great! This means: \"Are we in the right square?\" \"Yes, this is Piazza del Campo.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Are we in the right square?\" \"Yes, this is Piazza del Campo.\""
+    }
+  },
+  {
+    "id": "s13-s45",
+    "italian": "\"Cercate la torre?\" \"Sì, dove l'hanno nascosta?\"",
+    "english": "\"Are you looking for the tower?\" \"Yes, where did they hide it?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto dista il fiume?\" \"È proprio in fondo alla via.\"",
+      "\"Questa mappa è troppo piccola.\" \"Ne compriamo una più grande in edicola.\"",
+      "\"La mappa digitale non carica.\" \"Usi quella cartacea del ristorante.\"",
+      "\"Cercate la torre?\" \"Sì, dove l'hanno nascosta?\""
+    ],
+    "choicesEnglish": [
+      "\"How far is the river?\" \"It's right at the end of the street.\"",
+      "\"This map is too small.\" \"Let's buy a larger one at the newsstand.\"",
+      "\"The digital map isn't loading.\" \"Use the paper one from the restaurant.\"",
+      "\"Are you looking for the tower?\" \"Yes, where did they hide it?\""
+    ],
+    "correctAnswerItalian": "\"Cercate la torre?\" \"Sì, dove l'hanno nascosta?\"",
+    "correctAnswerEnglish": "\"Are you looking for the tower?\" \"Yes, where did they hide it?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Ironia tra turisti.",
+      "incorrectItalian": "No, questo dialogo significa: \"Are you looking for the tower?\" \"Yes, where did they hide it?\"",
+      "correctEnglish": "Great! This means: \"Are you looking for the tower?\" \"Yes, where did they hide it?\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Are you looking for the tower?\" \"Yes, where did they hide it?\""
+    }
+  },
+  {
+    "id": "s13-s46",
+    "italian": "\"Mi scusi, sono straniero e mi sono perso.\" \"Non si preoccupi, l'aiuto io.\"",
+    "english": "\"Excuse me, I'm a foreigner and I'm lost.\" \"Don't worry, I'll help you.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Cerco il consolato, mi sono perso.\" \"È in quella villa dietro gli alberi.\"",
+      "\"Sulla mappa vedo un ponte, è quello?\" \"Sì, quello è Ponte Sisto.\"",
+      "\"Siamo in una zona a traffico limitato?\" \"Sì, solo per i residenti.\"",
+      "\"Mi scusi, sono straniero e mi sono perso.\" \"Non si preoccupi, l'aiuto io.\""
+    ],
+    "choicesEnglish": [
+      "\"I'm looking for the consulate, I'm lost.\" \"It's in that villa behind the trees.\"",
+      "\"On the map I see a bridge, is that it?\" \"Yes, that is Ponte Sisto.\"",
+      "\"Are we in a limited traffic zone?\" \"Yes, for residents only.\"",
+      "\"Excuse me, I'm a foreigner and I'm lost.\" \"Don't worry, I'll help you.\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, sono straniero e mi sono perso.\" \"Non si preoccupi, l'aiuto io.\"",
+    "correctAnswerEnglish": "\"Excuse me, I'm a foreigner and I'm lost.\" \"Don't worry, I'll help you.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gentilezza locale.",
+      "incorrectItalian": "No, questo dialogo significa: \"Excuse me, I'm a foreigner and I'm lost.\" \"Don't worry, I'll help you.\"",
+      "correctEnglish": "Great! This means: \"Excuse me, I'm a foreigner and I'm lost.\" \"Don't worry, I'll help you.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Excuse me, I'm a foreigner and I'm lost.\" \"Don't worry, I'll help you.\""
+    }
+  },
+  {
+    "id": "s13-s47",
+    "italian": "\"È questa la via per il mercato?\" \"Sì, è proprio questa qui.\"",
+    "english": "\"Is this the way to the market?\" \"Yes, it's this one right here.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto dista il fiume?\" \"È proprio in fondo alla via.\"",
+      "\"Mi scusi, mi sono perso.\" \"Non si preoccupi, dove deve andare?\"",
+      "\"È questa la via per il mercato?\" \"Sì, è proprio questa qui.\"",
+      "\"Il mio amico ha la mappa, ma si è allontanato.\" \"Proviamo a chiamarlo.\""
+    ],
+    "choicesEnglish": [
+      "\"How far is the river?\" \"It's right at the end of the street.\"",
+      "\"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\"",
+      "\"Is this the way to the market?\" \"Yes, it's this one right here.\"",
+      "\"My friend has the map, but he walked away.\" \"Let's try to call him.\""
+    ],
+    "correctAnswerItalian": "\"È questa la via per il mercato?\" \"Sì, è proprio questa qui.\"",
+    "correctAnswerEnglish": "\"Is this the way to the market?\" \"Yes, it's this one right here.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Conferma del percorso.",
+      "incorrectItalian": "No, questo dialogo significa: \"Is this the way to the market?\" \"Yes, it's this one right here.\"",
+      "correctEnglish": "Great! This means: \"Is this the way to the market?\" \"Yes, it's this one right here.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Is this the way to the market?\" \"Yes, it's this one right here.\""
+    }
+  },
+  {
+    "id": "s13-s48",
+    "italian": "\"Dobbiamo attraversare la strada?\" \"Sì, sulle strisce pedonali laggiù.\"",
+    "english": "\"Do we need to cross the street?\" \"Yes, on the crosswalk over there.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Dobbiamo attraversare la strada?\" \"Sì, sulle strisce pedonali laggiù.\"",
+      "\"Mi scusi, sono straniero e mi sono perso.\" \"Non si preoccupi, l'aiuto io.\"",
+      "\"Stavo andando nella direzione sbagliata?\" \"Sì, deve girare a destra.\"",
+      "\"La Fontana di Trevi è lontana?\" \"No, è a pochi passi da qui.\""
+    ],
+    "choicesEnglish": [
+      "\"Do we need to cross the street?\" \"Yes, on the crosswalk over there.\"",
+      "\"Excuse me, I'm a foreigner and I'm lost.\" \"Don't worry, I'll help you.\"",
+      "\"Was I going in the wrong direction?\" \"Yes, you must turn right.\"",
+      "\"Is the Trevi Fountain far?\" \"No, it's a few steps from here.\""
+    ],
+    "correctAnswerItalian": "\"Dobbiamo attraversare la strada?\" \"Sì, sulle strisce pedonali laggiù.\"",
+    "correctAnswerEnglish": "\"Do we need to cross the street?\" \"Yes, on the crosswalk over there.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Istruzioni di sicurezza.",
+      "incorrectItalian": "No, questo dialogo significa: \"Do we need to cross the street?\" \"Yes, on the crosswalk over there.\"",
+      "correctEnglish": "Great! This means: \"Do we need to cross the street?\" \"Yes, on the crosswalk over there.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Do we need to cross the street?\" \"Yes, on the crosswalk over there.\""
+    }
+  },
+  {
+    "id": "s13-s49",
+    "italian": "\"Mi sono perso, cerco la spiaggia.\" \"Segua il profumo del mare.\"",
+    "english": "\"I'm lost, I'm looking for the beach.\" \"Follow the scent of the sea.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il navigatore dice che siamo arrivati.\" \"Ma qui non c'è nulla!\"",
+      "\"Mi sono perso, cerco un taxi.\" \"C'è un posteggio taxi in quella piazza.\"",
+      "\"Mi sono perso, cerco la spiaggia.\" \"Segua il profumo del mare.\"",
+      "\"Stavo andando nella direzione sbagliata?\" \"Sì, deve girare a destra.\""
+    ],
+    "choicesEnglish": [
+      "\"The navigator says we have arrived.\" \"But there's nothing here!\"",
+      "\"I'm lost, I'm looking for a taxi.\" \"There's a taxi stand in that square.\"",
+      "\"I'm lost, I'm looking for the beach.\" \"Follow the scent of the sea.\"",
+      "\"Was I going in the wrong direction?\" \"Yes, you must turn right.\""
+    ],
+    "correctAnswerItalian": "\"Mi sono perso, cerco la spiaggia.\" \"Segua il profumo del mare.\"",
+    "correctAnswerEnglish": "\"I'm lost, I'm looking for the beach.\" \"Follow the scent of the sea.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Orientamento sensoriale.",
+      "incorrectItalian": "No, questo dialogo significa: \"I'm lost, I'm looking for the beach.\" \"Follow the scent of the sea.\"",
+      "correctEnglish": "Great! This means: \"I'm lost, I'm looking for the beach.\" \"Follow the scent of the sea.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I'm lost, I'm looking for the beach.\" \"Follow the scent of the sea.\""
+    }
+  },
+  {
+    "id": "s13-s50",
+    "italian": "\"Questa mappa è troppo piccola.\" \"Ne compriamo una più grande in edicola.\"",
+    "english": "\"This map is too small.\" \"Let's buy a larger one at the newsstand.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Questa mappa è troppo piccola.\" \"Ne compriamo una più grande in edicola.\"",
+      "\"Sulla mappa questo è un parco?\" \"Sì, è Villa Borghese.\"",
+      "\"Posso usare il suo navigatore?\" \"Certo, guardi pure il mio schermo.\"",
+      "\"Quanto tempo ci vuole per arrivare al porto?\" \"Circa venti minuti a piedi.\""
+    ],
+    "choicesEnglish": [
+      "\"This map is too small.\" \"Let's buy a larger one at the newsstand.\"",
+      "\"On the map is this a park?\" \"Yes, it's Villa Borghese.\"",
+      "\"Can I use your navigator?\" \"Of course, feel free to look at my screen.\"",
+      "\"How long does it take to get to the port?\" \"About twenty minutes on foot.\""
+    ],
+    "correctAnswerItalian": "\"Questa mappa è troppo piccola.\" \"Ne compriamo una più grande in edicola.\"",
+    "correctAnswerEnglish": "\"This map is too small.\" \"Let's buy a larger one at the newsstand.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Problemi di scala.",
+      "incorrectItalian": "No, questo dialogo significa: \"This map is too small.\" \"Let's buy a larger one at the newsstand.\"",
+      "correctEnglish": "Great! This means: \"This map is too small.\" \"Let's buy a larger one at the newsstand.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"This map is too small.\" \"Let's buy a larger one at the newsstand.\""
+    }
+  },
+  {
+    "id": "s13-s51",
+    "italian": "\"Dov'è il castello?\" \"Guardi in alto, sulla collina.\"",
+    "english": "\"Where is the castle?\" \"Look up, on the hill.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo sulla riva destra o sinistra?\" \"Siamo sulla riva sinistra del Tevere.\"",
+      "\"Sulla mappa vedo un ponte, è quello?\" \"Sì, quello è Ponte Sisto.\"",
+      "\"Dov'è il castello?\" \"Guardi in alto, sulla collina.\"",
+      "\"Sulla mappa questo è un parco?\" \"Sì, è Villa Borghese.\""
+    ],
+    "choicesEnglish": [
+      "\"Are we on the right or left bank?\" \"We are on the left bank of the Tiber.\"",
+      "\"On the map I see a bridge, is that it?\" \"Yes, that is Ponte Sisto.\"",
+      "\"Where is the castle?\" \"Look up, on the hill.\"",
+      "\"On the map is this a park?\" \"Yes, it's Villa Borghese.\""
+    ],
+    "correctAnswerItalian": "\"Dov'è il castello?\" \"Guardi in alto, sulla collina.\"",
+    "correctAnswerEnglish": "\"Where is the castle?\" \"Look up, on the hill.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Punto di riferimento elevato.",
+      "incorrectItalian": "No, questo dialogo significa: \"Where is the castle?\" \"Look up, on the hill.\"",
+      "correctEnglish": "Great! This means: \"Where is the castle?\" \"Look up, on the hill.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Where is the castle?\" \"Look up, on the hill.\""
+    }
+  },
+  {
+    "id": "s13-s52",
+    "italian": "\"Siamo tornati al punto di partenza!\" \"Abbiamo fatto un giro a vuoto.\"",
+    "english": "\"We are back at the starting point!\" \"We went in a circle.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"La mappa digitale non carica.\" \"Usi quella cartacea del ristorante.\"",
+      "\"Quanto tempo ci vuole per arrivare al porto?\" \"Circa venti minuti a piedi.\"",
+      "\"Siamo tornati al punto di partenza!\" \"Abbiamo fatto un giro a vuoto.\"",
+      "\"Mi sono perso, cerco un taxi.\" \"C'è un posteggio taxi in quella piazza.\""
+    ],
+    "choicesEnglish": [
+      "\"The digital map isn't loading.\" \"Use the paper one from the restaurant.\"",
+      "\"How long does it take to get to the port?\" \"About twenty minutes on foot.\"",
+      "\"We are back at the starting point!\" \"We went in a circle.\"",
+      "\"I'm lost, I'm looking for a taxi.\" \"There's a taxi stand in that square.\""
+    ],
+    "correctAnswerItalian": "\"Siamo tornati al punto di partenza!\" \"Abbiamo fatto un giro a vuoto.\"",
+    "correctAnswerEnglish": "\"We are back at the starting point!\" \"We went in a circle.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Errore di orientamento.",
+      "incorrectItalian": "No, questo dialogo significa: \"We are back at the starting point!\" \"We went in a circle.\"",
+      "correctEnglish": "Great! This means: \"We are back at the starting point!\" \"We went in a circle.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"We are back at the starting point!\" \"We went in a circle.\""
+    }
+  },
+  {
+    "id": "s13-s53",
+    "italian": "\"Il navigatore dice che siamo arrivati.\" \"Ma qui non c'è nulla!\"",
+    "english": "\"The navigator says we have arrived.\" \"But there's nothing here!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Sto cercando Piazza Navona.\" \"Deve tornare indietro fino all'incrocio.\"",
+      "\"Il navigatore dice che siamo arrivati.\" \"Ma qui non c'è nulla!\"",
+      "\"Dobbiamo attraversare la strada?\" \"Sì, sulle strisce pedonali laggiù.\"",
+      "\"La Fontana di Trevi è lontana?\" \"No, è a pochi passi da qui.\""
+    ],
+    "choicesEnglish": [
+      "\"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\"",
+      "\"The navigator says we have arrived.\" \"But there's nothing here!\"",
+      "\"Do we need to cross the street?\" \"Yes, on the crosswalk over there.\"",
+      "\"Is the Trevi Fountain far?\" \"No, it's a few steps from here.\""
+    ],
+    "correctAnswerItalian": "\"Il navigatore dice che siamo arrivati.\" \"Ma qui non c'è nulla!\"",
+    "correctAnswerEnglish": "\"The navigator says we have arrived.\" \"But there's nothing here!\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Incongruenza del GPS.",
+      "incorrectItalian": "No, questo dialogo significa: \"The navigator says we have arrived.\" \"But there's nothing here!\"",
+      "correctEnglish": "Great! This means: \"The navigator says we have arrived.\" \"But there's nothing here!\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"The navigator says we have arrived.\" \"But there's nothing here!\""
+    }
+  },
+  {
+    "id": "s13-s54",
+    "italian": "\"Chiediamo a quel poliziotto?\" \"Sì, è l'idea migliore.\"",
+    "english": "\"Shall we ask that policeman?\" \"Yes, it's the best idea.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Sto cercando Piazza Navona.\" \"Deve tornare indietro fino all'incrocio.\"",
+      "\"Chiediamo a quel poliziotto?\" \"Sì, è l'idea migliore.\"",
+      "\"Mi scusi, un passante mi ha detto di girare qui.\" \"Ha ragione, il museo è lì.\"",
+      "\"Sulla mappa questo è un parco?\" \"Sì, è Villa Borghese.\""
+    ],
+    "choicesEnglish": [
+      "\"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\"",
+      "\"Shall we ask that policeman?\" \"Yes, it's the best idea.\"",
+      "\"Excuse me, a passerby told me to turn here.\" \"He's right, the museum is there.\"",
+      "\"On the map is this a park?\" \"Yes, it's Villa Borghese.\""
+    ],
+    "correctAnswerItalian": "\"Chiediamo a quel poliziotto?\" \"Sì, è l'idea migliore.\"",
+    "correctAnswerEnglish": "\"Shall we ask that policeman?\" \"Yes, it's the best idea.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Cercare autorità.",
+      "incorrectItalian": "No, questo dialogo significa: \"Shall we ask that policeman?\" \"Yes, it's the best idea.\"",
+      "correctEnglish": "Great! This means: \"Shall we ask that policeman?\" \"Yes, it's the best idea.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Shall we ask that policeman?\" \"Yes, it's the best idea.\""
+    }
+  },
+  {
+    "id": "s13-s55",
+    "italian": "\"Siamo sulla riva destra o sinistra?\" \"Siamo sulla riva sinistra del Tevere.\"",
+    "english": "\"Are we on the right or left bank?\" \"We are on the left bank of the Tiber.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è un ufficio turistico qui vicino?\" \"Sì, in Piazza del Popolo.\"",
+      "\"Mi sono perso, cerco un taxi.\" \"C'è un posteggio taxi in quella piazza.\"",
+      "\"Siamo sulla riva destra o sinistra?\" \"Siamo sulla riva sinistra del Tevere.\"",
+      "\"C'è una mappa in questa piazza?\" \"Sì, sul cartello marrone laggiù.\""
+    ],
+    "choicesEnglish": [
+      "\"Is there a tourist office nearby?\" \"Yes, in Piazza del Popolo.\"",
+      "\"I'm lost, I'm looking for a taxi.\" \"There's a taxi stand in that square.\"",
+      "\"Are we on the right or left bank?\" \"We are on the left bank of the Tiber.\"",
+      "\"Is there a map in this square?\" \"Yes, on the brown sign over there.\""
+    ],
+    "correctAnswerItalian": "\"Siamo sulla riva destra o sinistra?\" \"Siamo sulla riva sinistra del Tevere.\"",
+    "correctAnswerEnglish": "\"Are we on the right or left bank?\" \"We are on the left bank of the Tiber.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Orientamento fluviale.",
+      "incorrectItalian": "No, questo dialogo significa: \"Are we on the right or left bank?\" \"We are on the left bank of the Tiber.\"",
+      "correctEnglish": "Great! This means: \"Are we on the right or left bank?\" \"We are on the left bank of the Tiber.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Are we on the right or left bank?\" \"We are on the left bank of the Tiber.\""
+    }
+  },
+  {
+    "id": "s13-s56",
+    "italian": "\"Cercate il teatro?\" \"Sì, abbiamo uno spettacolo tra poco.\"",
+    "english": "\"Are you looking for the theater?\" \"Yes, we have a show soon.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi sono smarrito in questo quartiere.\" \"Non si agiti, il centro è da quella parte.\"",
+      "\"Cercate il teatro?\" \"Sì, abbiamo uno spettacolo tra poco.\"",
+      "\"Quanto dista il fiume?\" \"È proprio in fondo alla via.\"",
+      "\"Posso usare il suo navigatore?\" \"Certo, guardi pure il mio schermo.\""
+    ],
+    "choicesEnglish": [
+      "\"I got lost in this neighborhood.\" \"Don't panic, the center is that way.\"",
+      "\"Are you looking for the theater?\" \"Yes, we have a show soon.\"",
+      "\"How far is the river?\" \"It's right at the end of the street.\"",
+      "\"Can I use your navigator?\" \"Of course, feel free to look at my screen.\""
+    ],
+    "correctAnswerItalian": "\"Cercate il teatro?\" \"Sì, abbiamo uno spettacolo tra poco.\"",
+    "correctAnswerEnglish": "\"Are you looking for the theater?\" \"Yes, we have a show soon.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Urgenza di trovare la via.",
+      "incorrectItalian": "No, questo dialogo significa: \"Are you looking for the theater?\" \"Yes, we have a show soon.\"",
+      "correctEnglish": "Great! This means: \"Are you looking for the theater?\" \"Yes, we have a show soon.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Are you looking for the theater?\" \"Yes, we have a show soon.\""
+    }
+  },
+  {
+    "id": "s13-s57",
+    "italian": "\"Mi sono perso, non ricordo il nome dell'hotel.\" \"Ha una ricevuta o un'email?\"",
+    "english": "\"I'm lost, I don't remember the hotel name.\" \"Do you have a receipt or an email?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi sono perso, non ricordo il nome dell'hotel.\" \"Ha una ricevuta o un'email?\"",
+      "\"Cercate la torre?\" \"Sì, dove l'hanno nascosta?\"",
+      "\"Sulla mappa questo è un parco?\" \"Sì, è Villa Borghese.\"",
+      "\"Posso usare il suo navigatore?\" \"Certo, guardi pure il mio schermo.\""
+    ],
+    "choicesEnglish": [
+      "\"I'm lost, I don't remember the hotel name.\" \"Do you have a receipt or an email?\"",
+      "\"Are you looking for the tower?\" \"Yes, where did they hide it?\"",
+      "\"On the map is this a park?\" \"Yes, it's Villa Borghese.\"",
+      "\"Can I use your navigator?\" \"Of course, feel free to look at my screen.\""
+    ],
+    "correctAnswerItalian": "\"Mi sono perso, non ricordo il nome dell'hotel.\" \"Ha una ricevuta o un'email?\"",
+    "correctAnswerEnglish": "\"I'm lost, I don't remember the hotel name.\" \"Do you have a receipt or an email?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Dimenticanza.",
+      "incorrectItalian": "No, questo dialogo significa: \"I'm lost, I don't remember the hotel name.\" \"Do you have a receipt or an email?\"",
+      "correctEnglish": "Great! This means: \"I'm lost, I don't remember the hotel name.\" \"Do you have a receipt or an email?\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"I'm lost, I don't remember the hotel name.\" \"Do you have a receipt or an email?\""
+    }
+  },
+  {
+    "id": "s13-s58",
+    "italian": "\"Vada oltre quel grande arco.\" \"D'accordo, grazie mille.\"",
+    "english": "\"Go beyond that large arch.\" \"Alright, thank you very much.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"L'hotel Astoria è in fondo a questa strada?\" \"Sì, circa cinquecento metri sulla sinistra.\"",
+      "\"Vada oltre quel grande arco.\" \"D'accordo, grazie mille.\"",
+      "\"Sto cercando Piazza Navona.\" \"Deve tornare indietro fino all'incrocio.\"",
+      "\"Mi sono perso, cerco un taxi.\" \"C'è un posteggio taxi in quella piazza.\""
+    ],
+    "choicesEnglish": [
+      "\"Is the Astoria hotel at the end of this street?\" \"Yes, about five hundred meters on the left.\"",
+      "\"Go beyond that large arch.\" \"Alright, thank you very much.\"",
+      "\"I'm looking for Piazza Navona.\" \"You must go back to the intersection.\"",
+      "\"I'm lost, I'm looking for a taxi.\" \"There's a taxi stand in that square.\""
+    ],
+    "correctAnswerItalian": "\"Vada oltre quel grande arco.\" \"D'accordo, grazie mille.\"",
+    "correctAnswerEnglish": "\"Go beyond that large arch.\" \"Alright, thank you very much.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Seguire indicazioni architettoniche.",
+      "incorrectItalian": "No, questo dialogo significa: \"Go beyond that large arch.\" \"Alright, thank you very much.\"",
+      "correctEnglish": "Great! This means: \"Go beyond that large arch.\" \"Alright, thank you very much.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Go beyond that large arch.\" \"Alright, thank you very much.\""
+    }
+  },
+  {
+    "id": "s13-s59",
+    "italian": "\"Siamo in una zona a traffico limitato?\" \"Sì, solo per i residenti.\"",
+    "english": "\"Are we in a limited traffic zone?\" \"Yes, for residents only.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi sono perso, non trovo più la macchina.\" \"Dove l'aveva parcheggiata?\"",
+      "\"Il segnale GPS non funziona bene.\" \"Succede tra questi palazzi alti.\"",
+      "\"Siamo sulla riva destra o sinistra?\" \"Siamo sulla riva sinistra del Tevere.\"",
+      "\"Siamo in una zona a traffico limitato?\" \"Sì, solo per i residenti.\""
+    ],
+    "choicesEnglish": [
+      "\"I'm lost, I can't find the car anymore.\" \"Where had you parked it?\"",
+      "\"The GPS signal isn't working well.\" \"It happens between these tall buildings.\"",
+      "\"Are we on the right or left bank?\" \"We are on the left bank of the Tiber.\"",
+      "\"Are we in a limited traffic zone?\" \"Yes, for residents only.\""
+    ],
+    "correctAnswerItalian": "\"Siamo in una zona a traffico limitato?\" \"Sì, solo per i residenti.\"",
+    "correctAnswerEnglish": "\"Are we in a limited traffic zone?\" \"Yes, for residents only.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Regole della città.",
+      "incorrectItalian": "No, questo dialogo significa: \"Are we in a limited traffic zone?\" \"Yes, for residents only.\"",
+      "correctEnglish": "Great! This means: \"Are we in a limited traffic zone?\" \"Yes, for residents only.\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Are we in a limited traffic zone?\" \"Yes, for residents only.\""
+    }
+  },
+  {
+    "id": "s13-s60",
+    "italian": "\"Grazie della pazienza, siamo un po' confusi.\" \"È normale, la città è un labirinto!\"",
+    "english": "\"Thanks for your patience, we're a bit confused.\" \"It's normal, the city is a labyrinth!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Grazie della pazienza, siamo un po' confusi.\" \"È normale, la città è un labirinto!\"",
+      "\"Siamo finiti in una zona residenziale.\" \"Dobbiamo tornare sulla strada principale.\"",
+      "\"Mi scusi, mi sono perso.\" \"Non si preoccupi, dove deve andare?\"",
+      "\"Vada oltre quel grande arco.\" \"D'accordo, grazie mille.\""
+    ],
+    "choicesEnglish": [
+      "\"Thanks for your patience, we're a bit confused.\" \"It's normal, the city is a labyrinth!\"",
+      "\"We ended up in a residential area.\" \"We need to get back on the main road.\"",
+      "\"Excuse me, I'm lost.\" \"Don't worry, where do you need to go?\"",
+      "\"Go beyond that large arch.\" \"Alright, thank you very much.\""
+    ],
+    "correctAnswerItalian": "\"Grazie della pazienza, siamo un po' confusi.\" \"È normale, la città è un labirinto!\"",
+    "correctAnswerEnglish": "\"Thanks for your patience, we're a bit confused.\" \"It's normal, the city is a labyrinth!\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Comprensione finale.",
+      "incorrectItalian": "No, questo dialogo significa: \"Thanks for your patience, we're a bit confused.\" \"It's normal, the city is a labyrinth!\"",
+      "correctEnglish": "Great! This means: \"Thanks for your patience, we're a bit confused.\" \"It's normal, the city is a labyrinth!\"",
+      "incorrectEnglish": "No, the correct dialogue is: \"Thanks for your patience, we're a bit confused.\" \"It's normal, the city is a labyrinth!\""
     }
   }
 ]

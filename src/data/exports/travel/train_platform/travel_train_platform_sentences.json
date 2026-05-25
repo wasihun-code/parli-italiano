@@ -1,104 +1,1442 @@
 [
   {
-    "id": "s6-s5",
-    "italian": "Scusate, questo è il posto vicino al finestrino?",
-    "english": "Excuse me, is this the window seat?",
-    "type": "sentence",
-    "choices": [
-      "Hanno appena fatto un annuncio per il cambio di binario.",
-      "Per raggiungere il binario due, devi prendere il sottopassaggio.",
-      "Scusate, questo è il posto vicino al finestrino?",
-      "Se il treno è in ritardo, perderemo la coincidenza."
-    ],
-    "correctAnswer": "Scusate, questo è il posto vicino al finestrino?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Scusate, questo è il posto vicino al finestrino?\"."
-    }
-  },
-  {
     "id": "s6-s1",
-    "italian": "Ascolta l'annuncio, il nostro treno è in ritardo.",
-    "english": "Listen to the announcement, our train is delayed.",
+    "italian": "Scusi, sa da quale binario parte il treno per Firenze?",
+    "english": "Excuse me, do you know from which platform the train to Florence leaves?",
     "type": "sentence",
-    "choices": [
+    "choicesItalian": [
       "Scusate, questo è il posto vicino al finestrino?",
-      "Se il treno è in ritardo, perderemo la coincidenza.",
-      "Ascolta l'annuncio, il nostro treno è in ritardo.",
-      "Per raggiungere il binario due, devi prendere il sottopassaggio."
+      "Il binario quindici è in fondo al corridoio a destra.",
+      "Il treno per Firenze parte dal binario dodici oggi.",
+      "Scusi, sa da quale binario parte il treno per Firenze?"
     ],
-    "correctAnswer": "Ascolta l'annuncio, il nostro treno è in ritardo.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ascolta l'annuncio, il nostro treno è in ritardo.\"."
-    }
-  },
-  {
-    "id": "s6-s3",
-    "italian": "Se il treno è in ritardo, perderemo la coincidenza.",
-    "english": "If the train is delayed, we will miss the connection.",
-    "type": "sentence",
-    "choices": [
-      "Se il treno è in ritardo, perderemo la coincidenza.",
-      "Hanno appena fatto un annuncio per il cambio di binario.",
-      "La carrozza numero cinque è vicino alla testa del treno.",
-      "Scusate, questo è il posto vicino al finestrino?"
+    "choicesEnglish": [
+      "Excuse me, is this the window seat?",
+      "Platform fifteen is at the end of the hallway to the right.",
+      "The train to Florence leaves from platform twelve today.",
+      "Excuse me, do you know from which platform the train to Florence leaves?"
     ],
-    "correctAnswer": "Se il treno è in ritardo, perderemo la coincidenza.",
+    "correctAnswerItalian": "Scusi, sa da quale binario parte il treno per Firenze?",
+    "correctAnswerEnglish": "Excuse me, do you know from which platform the train to Florence leaves?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Se il treno è in ritardo, perderemo la coincidenza.\"."
-    }
-  },
-  {
-    "id": "s6-s6",
-    "italian": "Hanno appena fatto un annuncio per il cambio di binario.",
-    "english": "They just made an announcement for the platform change.",
-    "type": "sentence",
-    "choices": [
-      "Scusate, questo è il posto vicino al finestrino?",
-      "Hanno appena fatto un annuncio per il cambio di binario.",
-      "Per raggiungere il binario due, devi prendere il sottopassaggio.",
-      "Ascolta l'annuncio, il nostro treno è in ritardo."
-    ],
-    "correctAnswer": "Hanno appena fatto un annuncio per il cambio di binario.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Hanno appena fatto un annuncio per il cambio di binario.\"."
-    }
-  },
-  {
-    "id": "s6-s4",
-    "italian": "La carrozza numero cinque è vicino alla testa del treno.",
-    "english": "Coach number five is near the front of the train.",
-    "type": "sentence",
-    "choices": [
-      "Scusate, questo è il posto vicino al finestrino?",
-      "La carrozza numero cinque è vicino alla testa del treno.",
-      "Se il treno è in ritardo, perderemo la coincidenza.",
-      "Per raggiungere il binario due, devi prendere il sottopassaggio."
-    ],
-    "correctAnswer": "La carrozza numero cinque è vicino alla testa del treno.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"La carrozza numero cinque è vicino alla testa del treno.\"."
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Scusi, sa da quale binario parte il treno per Firenze? (Excuse me, do you know from which platform the train to Florence leaves?)"
     }
   },
   {
     "id": "s6-s2",
+    "italian": "Il treno per Firenze parte dal binario dodici oggi.",
+    "english": "The train to Florence leaves from platform twelve today.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Quanto costa un biglietto per il treno notturno?",
+      "Il treno per l'aeroporto parte ogni trenta minuti circa.",
+      "Il treno per Firenze parte dal binario dodici oggi.",
+      "Dov'è l'ufficio degli oggetti smarriti in questa stazione?"
+    ],
+    "choicesEnglish": [
+      "How much does a ticket for the night train cost?",
+      "The train to the airport leaves approximately every thirty minutes.",
+      "The train to Florence leaves from platform twelve today.",
+      "Where is the lost and found office in this station?"
+    ],
+    "correctAnswerItalian": "Il treno per Firenze parte dal binario dodici oggi.",
+    "correctAnswerEnglish": "The train to Florence leaves from platform twelve today.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il treno per Firenze parte dal binario dodici oggi. (The train to Florence leaves from platform twelve today.)"
+    }
+  },
+  {
+    "id": "s6-s3",
+    "italian": "Il treno è già al binario o deve ancora arrivare?",
+    "english": "Is the train already at the platform or is it yet to arrive?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il treno è già al binario o deve ancora arrivare?",
+      "Grazie mille, corro subito al binario per non perderlo!",
+      "Dov'è l'ufficio degli oggetti smarriti in questa stazione?",
+      "No, il binario di partenza rimane il numero sette."
+    ],
+    "choicesEnglish": [
+      "Is the train already at the platform or is it yet to arrive?",
+      "Thank you very much, I'm running to the platform now so I don't miss it!",
+      "Where is the lost and found office in this station?",
+      "No, the departure platform remains number seven."
+    ],
+    "correctAnswerItalian": "Il treno è già al binario o deve ancora arrivare?",
+    "correctAnswerEnglish": "Is the train already at the platform or is it yet to arrive?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il treno è già al binario o deve ancora arrivare? (Is the train already at the platform or is it yet to arrive?)"
+    }
+  },
+  {
+    "id": "s6-s4",
+    "italian": "Sì, è arrivato proprio ora al binario sette.",
+    "english": "Yes, it just arrived now at platform seven.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La stazione di Santa Maria Novella è bellissima.",
+      "Ci sono armadietti per il deposito bagagli qui?",
+      "Sì, è arrivato proprio ora al binario sette.",
+      "Prenda l'ascensore se ha bagagli molto pesanti con sé."
+    ],
+    "choicesEnglish": [
+      "Santa Maria Novella station is beautiful.",
+      "Are there lockers for luggage storage here?",
+      "Yes, it just arrived now at platform seven.",
+      "Take the elevator if you have very heavy luggage with you."
+    ],
+    "correctAnswerItalian": "Sì, è arrivato proprio ora al binario sette.",
+    "correctAnswerEnglish": "Yes, it just arrived now at platform seven.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Sì, è arrivato proprio ora al binario sette. (Yes, it just arrived now at platform seven.)"
+    }
+  },
+  {
+    "id": "s6-s5",
+    "italian": "Deve solo convalidare il biglietto prima di salire a bordo.",
+    "english": "You just need to validate the ticket before boarding.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Non sostare oltre la linea gialla sulla banchina.",
+      "Ascolta l'annuncio, il nostro treno è in forte ritardo.",
+      "Deve solo convalidare il biglietto prima di salire a bordo.",
+      "Sì, hanno appena detto che parte dal binario quattro."
+    ],
+    "choicesEnglish": [
+      "Do not stand beyond the yellow line on the platform.",
+      "Listen to the announcement, our train is seriously delayed.",
+      "You just need to validate the ticket before boarding.",
+      "Yes, they just said it leaves from platform four."
+    ],
+    "correctAnswerItalian": "Deve solo convalidare il biglietto prima di salire a bordo.",
+    "correctAnswerEnglish": "You just need to validate the ticket before boarding.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Deve solo convalidare il biglietto prima di salire a bordo. (You just need to validate the ticket before boarding.)"
+    }
+  },
+  {
+    "id": "s6-s6",
+    "italian": "Grazie mille, corro subito al binario per non perderlo!",
+    "english": "Thank you very much, I'm running to the platform now so I don't miss it!",
+    "type": "sentence",
+    "choicesItalian": [
+      "C'è un problema tecnico sulla linea tra Roma e Firenze.",
+      "Grazie mille, corro subito al binario per non perderlo!",
+      "Il tabellone indica che il treno è puntuale.",
+      "La carrozza numero cinque è vicino alla testa del treno."
+    ],
+    "choicesEnglish": [
+      "There is a technical problem on the line between Rome and Florence.",
+      "Thank you very much, I'm running to the platform now so I don't miss it!",
+      "The board indicates that the train is on time.",
+      "Coach number five is near the front of the train."
+    ],
+    "correctAnswerItalian": "Grazie mille, corro subito al binario per non perderlo!",
+    "correctAnswerEnglish": "Thank you very much, I'm running to the platform now so I don't miss it!",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Grazie mille, corro subito al binario per non perderlo! (Thank you very much, I'm running to the platform now so I don't miss it!)"
+    }
+  },
+  {
+    "id": "s6-s7",
+    "italian": "Mi scusi, il treno per Milano ha molto ritardo?",
+    "english": "Excuse me, is the train to Milan very late?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi scusi, il treno per Milano ha molto ritardo?",
+      "C'è un problema tecnico sulla linea tra Roma e Firenze.",
+      "Non sostare oltre la linea gialla sulla banchina.",
+      "Cambierà il binario di partenza per il treno delle dieci?"
+    ],
+    "choicesEnglish": [
+      "Excuse me, is the train to Milan very late?",
+      "There is a technical problem on the line between Rome and Florence.",
+      "Do not stand beyond the yellow line on the platform.",
+      "Will the departure platform change for the ten o'clock train?"
+    ],
+    "correctAnswerItalian": "Mi scusi, il treno per Milano ha molto ritardo?",
+    "correctAnswerEnglish": "Excuse me, is the train to Milan very late?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Mi scusi, il treno per Milano ha molto ritardo? (Excuse me, is the train to Milan very late?)"
+    }
+  },
+  {
+    "id": "s6-s8",
+    "italian": "Al momento segnalano venti minuti di ritardo per un problema.",
+    "english": "At the moment they are reporting twenty minutes of delay due to a problem.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il treno sta arrivando, allontanatevi dal bordo della banchina.",
+      "Il treno Alta Velocità per Milano è in transito al binario uno.",
+      "Al momento segnalano venti minuti di ritardo per un problema.",
+      "Spero che la coincidenza ci aspetti a Bologna."
+    ],
+    "choicesEnglish": [
+      "The train is arriving, move away from the edge of the platform.",
+      "The high-speed train to Milan is transiting through platform one.",
+      "At the moment they are reporting twenty minutes of delay due to a problem.",
+      "I hope the connection waits for us in Bologna."
+    ],
+    "correctAnswerItalian": "Al momento segnalano venti minuti di ritardo per un problema.",
+    "correctAnswerEnglish": "At the moment they are reporting twenty minutes of delay due to a problem.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Al momento segnalano venti minuti di ritardo per un problema. (At the moment they are reporting twenty minutes of delay due to a problem.)"
+    }
+  },
+  {
+    "id": "s6-s9",
+    "italian": "C'è un problema tecnico sulla linea tra Roma e Firenze.",
+    "english": "There is a technical problem on the line between Rome and Florence.",
+    "type": "sentence",
+    "choicesItalian": [
+      "C'è un problema tecnico sulla linea tra Roma e Firenze.",
+      "La porta si apre automaticamente alla fermata.",
+      "Il treno è già al binario o deve ancora arrivare?",
+      "La carrozza numero cinque è vicino alla testa del treno."
+    ],
+    "choicesEnglish": [
+      "There is a technical problem on the line between Rome and Florence.",
+      "The door opens automatically at the stop.",
+      "Is the train already at the platform or is it yet to arrive?",
+      "Coach number five is near the front of the train."
+    ],
+    "correctAnswerItalian": "C'è un problema tecnico sulla linea tra Roma e Firenze.",
+    "correctAnswerEnglish": "There is a technical problem on the line between Rome and Florence.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: C'è un problema tecnico sulla linea tra Roma e Firenze. (There is a technical problem on the line between Rome and Florence.)"
+    }
+  },
+  {
+    "id": "s6-s10",
+    "italian": "Cambierà il binario di partenza per il treno delle dieci?",
+    "english": "Will the departure platform change for the ten o'clock train?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Al momento segnalano venti minuti di ritardo per un problema.",
+      "Il tabellone indica che il treno è puntuale.",
+      "Cambierà il binario di partenza per il treno delle dieci?",
+      "Il sottopassaggio è molto affollato a quest'ora del pomeriggio."
+    ],
+    "choicesEnglish": [
+      "At the moment they are reporting twenty minutes of delay due to a problem.",
+      "The board indicates that the train is on time.",
+      "Will the departure platform change for the ten o'clock train?",
+      "The underpass is very crowded at this time of the afternoon."
+    ],
+    "correctAnswerItalian": "Cambierà il binario di partenza per il treno delle dieci?",
+    "correctAnswerEnglish": "Will the departure platform change for the ten o'clock train?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Cambierà il binario di partenza per il treno delle dieci? (Will the departure platform change for the ten o'clock train?)"
+    }
+  },
+  {
+    "id": "s6-s11",
+    "italian": "No, il binario di partenza rimane il numero sette.",
+    "english": "No, the departure platform remains number seven.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sì, hanno appena detto che parte dal binario quattro.",
+      "Scusate, questo è il posto vicino al finestrino?",
+      "Il treno partirà dal binario quattro anziché dal binario nove.",
+      "No, il binario di partenza rimane il numero sette."
+    ],
+    "choicesEnglish": [
+      "Yes, they just said it leaves from platform four.",
+      "Excuse me, is this the window seat?",
+      "The train will leave from platform four instead of platform nine.",
+      "No, the departure platform remains number seven."
+    ],
+    "correctAnswerItalian": "No, il binario di partenza rimane il numero sette.",
+    "correctAnswerEnglish": "No, the departure platform remains number seven.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: No, il binario di partenza rimane il numero sette. (No, the departure platform remains number seven.)"
+    }
+  },
+  {
+    "id": "s6-s12",
+    "italian": "Controlli comunque il tabellone luminoso tra poco per sicurezza.",
+    "english": "Check the luminous board in a little while anyway for safety.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il treno per Torino è in partenza dal binario quindici.",
+      "Controlli comunque il tabellone luminoso tra poco per sicurezza.",
+      "Dov'è l'ufficio degli oggetti smarriti in questa stazione?",
+      "Dobbiamo fare il sottopassaggio per raggiungere l'altra banchina."
+    ],
+    "choicesEnglish": [
+      "The train to Turin is departing from platform fifteen.",
+      "Check the luminous board in a little while anyway for safety.",
+      "Where is the lost and found office in this station?",
+      "We have to take the underpass to reach the other platform."
+    ],
+    "correctAnswerItalian": "Controlli comunque il tabellone luminoso tra poco per sicurezza.",
+    "correctAnswerEnglish": "Check the luminous board in a little while anyway for safety.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Controlli comunque il tabellone luminoso tra poco per sicurezza. (Check the luminous board in a little while anyway for safety.)"
+    }
+  },
+  {
+    "id": "s6-s13",
+    "italian": "D'accordo, grazie per l'informazione e buona giornata.",
+    "english": "Agreed, thanks for the information and have a good day.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Si sbrighi, mancano solo tre minuti alla partenza del treno!",
+      "Il treno sta arrivando, allontanatevi dal bordo della banchina.",
+      "Il treno per Firenze parte dal binario dodici oggi.",
+      "D'accordo, grazie per l'informazione e buona giornata."
+    ],
+    "choicesEnglish": [
+      "Hurry up, there are only three minutes left until the train departs!",
+      "The train is arriving, move away from the edge of the platform.",
+      "The train to Florence leaves from platform twelve today.",
+      "Agreed, thanks for the information and have a good day."
+    ],
+    "correctAnswerItalian": "D'accordo, grazie per l'informazione e buona giornata.",
+    "correctAnswerEnglish": "Agreed, thanks for the information and have a good day.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: D'accordo, grazie per l'informazione e buona giornata. (Agreed, thanks for the information and have a good day.)"
+    }
+  },
+  {
+    "id": "s6-s14",
+    "italian": "Attenzione, il treno per Pisa partirà dal binario quattro.",
+    "english": "Attention, the train to Pisa will leave from platform four.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dobbiamo fare il sottopassaggio per raggiungere l'altra banchina.",
+      "Attenzione, il treno per Pisa partirà dal binario quattro.",
+      "D'accordo, grazie per l'informazione e buona giornata.",
+      "Mi scusi, il treno per Milano ha molto ritardo?"
+    ],
+    "choicesEnglish": [
+      "We have to take the underpass to reach the other platform.",
+      "Attention, the train to Pisa will leave from platform four.",
+      "Agreed, thanks for the information and have a good day.",
+      "Excuse me, is the train to Milan very late?"
+    ],
+    "correctAnswerItalian": "Attenzione, il treno per Pisa partirà dal binario quattro.",
+    "correctAnswerEnglish": "Attention, the train to Pisa will leave from platform four.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Attenzione, il treno per Pisa partirà dal binario quattro. (Attention, the train to Pisa will leave from platform four.)"
+    }
+  },
+  {
+    "id": "s6-s15",
+    "italian": "Il treno partirà dal binario quattro anziché dal binario nove.",
+    "english": "The train will leave from platform four instead of platform nine.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ho perso la coincidenza per un minuto soltanto.",
+      "Il capotreno è sulla banchina per dare il via.",
+      "C'è un problema tecnico sulla linea tra Roma e Firenze.",
+      "Il treno partirà dal binario quattro anziché dal binario nove."
+    ],
+    "choicesEnglish": [
+      "I missed the connection by only one minute.",
+      "The conductor is on the platform to give the signal.",
+      "There is a technical problem on the line between Rome and Florence.",
+      "The train will leave from platform four instead of platform nine."
+    ],
+    "correctAnswerItalian": "Il treno partirà dal binario quattro anziché dal binario nove.",
+    "correctAnswerEnglish": "The train will leave from platform four instead of platform nine.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il treno partirà dal binario quattro anziché dal binario nove. (The train will leave from platform four instead of platform nine.)"
+    }
+  },
+  {
+    "id": "s6-s16",
+    "italian": "Scusi, ho capito bene? Il treno ha cambiato binario?",
+    "english": "Excuse me, did I understand correctly? Has the train changed platforms?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Scusi, ho capito bene? Il treno ha cambiato binario?",
+      "Attenzione, il treno per Pisa partirà dal binario quattro.",
+      "Sì, è arrivato proprio ora al binario sette.",
+      "Il viaggio in treno è molto rilassante e panoramico."
+    ],
+    "choicesEnglish": [
+      "Excuse me, did I understand correctly? Has the train changed platforms?",
+      "Attention, the train to Pisa will leave from platform four.",
+      "Yes, it just arrived now at platform seven.",
+      "The train journey is very relaxing and scenic."
+    ],
+    "correctAnswerItalian": "Scusi, ho capito bene? Il treno ha cambiato binario?",
+    "correctAnswerEnglish": "Excuse me, did I understand correctly? Has the train changed platforms?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Scusi, ho capito bene? Il treno ha cambiato binario? (Excuse me, did I understand correctly? Has the train changed platforms?)"
+    }
+  },
+  {
+    "id": "s6-s17",
+    "italian": "Sì, hanno appena detto che parte dal binario quattro.",
+    "english": "Yes, they just said it leaves from platform four.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Si sbrighi, mancano solo tre minuti alla partenza del treno!",
+      "Scusi, sa da quale binario parte il treno per Firenze?",
+      "Sì, hanno appena detto che parte dal binario quattro.",
+      "Deve solo convalidare il biglietto prima di salire a bordo."
+    ],
+    "choicesEnglish": [
+      "Hurry up, there are only three minutes left until the train departs!",
+      "Excuse me, do you know from which platform the train to Florence leaves?",
+      "Yes, they just said it leaves from platform four.",
+      "You just need to validate the ticket before boarding."
+    ],
+    "correctAnswerItalian": "Sì, hanno appena detto che parte dal binario quattro.",
+    "correctAnswerEnglish": "Yes, they just said it leaves from platform four.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Sì, hanno appena detto che parte dal binario quattro. (Yes, they just said it leaves from platform four.)"
+    }
+  },
+  {
+    "id": "s6-s18",
+    "italian": "Dobbiamo fare il sottopassaggio per raggiungere l'altra banchina.",
+    "english": "We have to take the underpass to reach the other platform.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dobbiamo fare il sottopassaggio per raggiungere l'altra banchina.",
+      "Spero che la coincidenza ci aspetti a Bologna.",
+      "C'è un bar vicino al binario dieci?",
+      "Ascolta l'annuncio, il nostro treno è in forte ritardo."
+    ],
+    "choicesEnglish": [
+      "We have to take the underpass to reach the other platform.",
+      "I hope the connection waits for us in Bologna.",
+      "Is there a bar near platform ten?",
+      "Listen to the announcement, our train is seriously delayed."
+    ],
+    "correctAnswerItalian": "Dobbiamo fare il sottopassaggio per raggiungere l'altra banchina.",
+    "correctAnswerEnglish": "We have to take the underpass to reach the other platform.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Dobbiamo fare il sottopassaggio per raggiungere l'altra banchina. (We have to take the underpass to reach the other platform.)"
+    }
+  },
+  {
+    "id": "s6-s19",
+    "italian": "Le valigie sono molto pesanti, spero di fare in tempo.",
+    "english": "The suitcases are very heavy, I hope to make it on time.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il treno per Torino è in partenza dal binario quindici.",
+      "No, il binario di partenza rimane il numero sette.",
+      "Le valigie sono molto pesanti, spero di fare in tempo.",
+      "Il treno per l'aeroporto parte ogni trenta minuti circa."
+    ],
+    "choicesEnglish": [
+      "The train to Turin is departing from platform fifteen.",
+      "No, the departure platform remains number seven.",
+      "The suitcases are very heavy, I hope to make it on time.",
+      "The train to the airport leaves approximately every thirty minutes."
+    ],
+    "correctAnswerItalian": "Le valigie sono molto pesanti, spero di fare in tempo.",
+    "correctAnswerEnglish": "The suitcases are very heavy, I hope to make it on time.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Le valigie sono molto pesanti, spero di fare in tempo. (The suitcases are very heavy, I hope to make it on time.)"
+    }
+  },
+  {
+    "id": "s6-s20",
+    "italian": "Si sbrighi, mancano solo tre minuti alla partenza del treno!",
+    "english": "Hurry up, there are only three minutes left until the train departs!",
+    "type": "sentence",
+    "choicesItalian": [
+      "Si sbrighi, mancano solo tre minuti alla partenza del treno!",
+      "Deve convalidare il biglietto nelle macchinette gialle o verdi.",
+      "Il sottopassaggio è molto affollato a quest'ora del pomeriggio.",
+      "Sulle carrozze è obbligatorio l'uso della mascherina?"
+    ],
+    "choicesEnglish": [
+      "Hurry up, there are only three minutes left until the train departs!",
+      "You must validate the ticket in the yellow or green machines.",
+      "The underpass is very crowded at this time of the afternoon.",
+      "Is it mandatory to use a mask on the coaches?"
+    ],
+    "correctAnswerItalian": "Si sbrighi, mancano solo tre minuti alla partenza del treno!",
+    "correctAnswerEnglish": "Hurry up, there are only three minutes left until the train departs!",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Si sbrighi, mancano solo tre minuti alla partenza del treno! (Hurry up, there are only three minutes left until the train departs!)"
+    }
+  },
+  {
+    "id": "s6-s21",
+    "italian": "Ascolta l'annuncio, il nostro treno è in forte ritardo.",
+    "english": "Listen to the announcement, our train is seriously delayed.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il sottopassaggio è molto affollato a quest'ora del pomeriggio.",
+      "Prenda l'ascensore se ha bagagli molto pesanti con sé.",
+      "Il viaggio in treno è molto rilassante e panoramico.",
+      "Ascolta l'annuncio, il nostro treno è in forte ritardo."
+    ],
+    "choicesEnglish": [
+      "The underpass is very crowded at this time of the afternoon.",
+      "Take the elevator if you have very heavy luggage with you.",
+      "The train journey is very relaxing and scenic.",
+      "Listen to the announcement, our train is seriously delayed."
+    ],
+    "correctAnswerItalian": "Ascolta l'annuncio, il nostro treno è in forte ritardo.",
+    "correctAnswerEnglish": "Listen to the announcement, our train is seriously delayed.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Ascolta l'annuncio, il nostro treno è in forte ritardo. (Listen to the announcement, our train is seriously delayed.)"
+    }
+  },
+  {
+    "id": "s6-s22",
     "italian": "Per raggiungere il binario due, devi prendere il sottopassaggio.",
     "english": "To reach platform two, you have to take the underpass.",
     "type": "sentence",
-    "choices": [
-      "Hanno appena fatto un annuncio per il cambio di binario.",
+    "choicesItalian": [
+      "Sulle carrozze è obbligatorio l'uso della mascherina?",
       "Per raggiungere il binario due, devi prendere il sottopassaggio.",
-      "Ascolta l'annuncio, il nostro treno è in ritardo.",
+      "Non sostare oltre la linea gialla sulla banchina.",
+      "Prenda l'ascensore se ha bagagli molto pesanti con sé."
+    ],
+    "choicesEnglish": [
+      "Is it mandatory to use a mask on the coaches?",
+      "To reach platform two, you have to take the underpass.",
+      "Do not stand beyond the yellow line on the platform.",
+      "Take the elevator if you have very heavy luggage with you."
+    ],
+    "correctAnswerItalian": "Per raggiungere il binario due, devi prendere il sottopassaggio.",
+    "correctAnswerEnglish": "To reach platform two, you have to take the underpass.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Per raggiungere il binario due, devi prendere il sottopassaggio. (To reach platform two, you have to take the underpass.)"
+    }
+  },
+  {
+    "id": "s6-s23",
+    "italian": "Se il treno è in ritardo, perderemo sicuramente la coincidenza.",
+    "english": "If the train is delayed, we will surely miss the connection.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Le valigie sono molto pesanti, spero di fare in tempo.",
+      "Se il treno è in ritardo, perderemo sicuramente la coincidenza.",
+      "Il capotreno è sulla banchina per dare il via.",
+      "Il treno per l'aeroporto parte ogni trenta minuti circa."
+    ],
+    "choicesEnglish": [
+      "The suitcases are very heavy, I hope to make it on time.",
+      "If the train is delayed, we will surely miss the connection.",
+      "The conductor is on the platform to give the signal.",
+      "The train to the airport leaves approximately every thirty minutes."
+    ],
+    "correctAnswerItalian": "Se il treno è in ritardo, perderemo sicuramente la coincidenza.",
+    "correctAnswerEnglish": "If the train is delayed, we will surely miss the connection.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Se il treno è in ritardo, perderemo sicuramente la coincidenza. (If the train is delayed, we will surely miss the connection.)"
+    }
+  },
+  {
+    "id": "s6-s24",
+    "italian": "La carrozza numero cinque è vicino alla testa del treno.",
+    "english": "Coach number five is near the front of the train.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La carrozza numero cinque è vicino alla testa del treno.",
+      "Il treno per Firenze parte dal binario dodici oggi.",
+      "Spero che la coincidenza ci aspetti a Bologna.",
+      "La scala mobile per il primo piano è fuori servizio."
+    ],
+    "choicesEnglish": [
+      "Coach number five is near the front of the train.",
+      "The train to Florence leaves from platform twelve today.",
+      "I hope the connection waits for us in Bologna.",
+      "The escalator to the first floor is out of order."
+    ],
+    "correctAnswerItalian": "La carrozza numero cinque è vicino alla testa del treno.",
+    "correctAnswerEnglish": "Coach number five is near the front of the train.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: La carrozza numero cinque è vicino alla testa del treno. (Coach number five is near the front of the train.)"
+    }
+  },
+  {
+    "id": "s6-s25",
+    "italian": "Scusate, questo è il posto vicino al finestrino?",
+    "english": "Excuse me, is this the window seat?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Scusate, questo è il posto vicino al finestrino?",
+      "La carrozza numero cinque è vicino alla testa del treno.",
+      "Deve solo convalidare il biglietto prima di salire a bordo.",
+      "Attenzione, il treno per Pisa partirà dal binario quattro."
+    ],
+    "choicesEnglish": [
+      "Excuse me, is this the window seat?",
+      "Coach number five is near the front of the train.",
+      "You just need to validate the ticket before boarding.",
+      "Attention, the train to Pisa will leave from platform four."
+    ],
+    "correctAnswerItalian": "Scusate, questo è il posto vicino al finestrino?",
+    "correctAnswerEnglish": "Excuse me, is this the window seat?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Scusate, questo è il posto vicino al finestrino? (Excuse me, is this the window seat?)"
+    }
+  },
+  {
+    "id": "s6-s26",
+    "italian": "Hanno appena fatto un annuncio per il cambio di binario.",
+    "english": "They just made an announcement for the platform change.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Prenda l'ascensore se ha bagagli molto pesanti con sé.",
+      "La scala mobile per il primo piano è fuori servizio.",
+      "Il treno è composto da otto carrozze passeggeri.",
+      "Hanno appena fatto un annuncio per il cambio di binario."
+    ],
+    "choicesEnglish": [
+      "Take the elevator if you have very heavy luggage with you.",
+      "The escalator to the first floor is out of order.",
+      "The train consists of eight passenger coaches.",
+      "They just made an announcement for the platform change."
+    ],
+    "correctAnswerItalian": "Hanno appena fatto un annuncio per il cambio di binario.",
+    "correctAnswerEnglish": "They just made an announcement for the platform change.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Hanno appena fatto un annuncio per il cambio di binario. (They just made an announcement for the platform change.)"
+    }
+  },
+  {
+    "id": "s6-s27",
+    "italian": "Non sostare oltre la linea gialla sulla banchina.",
+    "english": "Do not stand beyond the yellow line on the platform.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Scusi, sa da quale binario parte il treno per Firenze?",
+      "Non sostare oltre la linea gialla sulla banchina.",
+      "Il tabellone indica che il treno è puntuale.",
+      "Il binario quindici è in fondo al corridoio a destra."
+    ],
+    "choicesEnglish": [
+      "Excuse me, do you know from which platform the train to Florence leaves?",
+      "Do not stand beyond the yellow line on the platform.",
+      "The board indicates that the train is on time.",
+      "Platform fifteen is at the end of the hallway to the right."
+    ],
+    "correctAnswerItalian": "Non sostare oltre la linea gialla sulla banchina.",
+    "correctAnswerEnglish": "Do not stand beyond the yellow line on the platform.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Non sostare oltre la linea gialla sulla banchina. (Do not stand beyond the yellow line on the platform.)"
+    }
+  },
+  {
+    "id": "s6-s28",
+    "italian": "Il treno regionale in arrivo al binario tre si ferma in tutte le stazioni.",
+    "english": "The regional train arriving at platform three stops at all stations.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ci sono venti minuti di attesa per il prossimo treno.",
+      "Il treno regionale in arrivo al binario tre si ferma in tutte le stazioni.",
+      "Sì, hanno appena detto che parte dal binario quattro.",
+      "Il treno è già al binario o deve ancora arrivare?"
+    ],
+    "choicesEnglish": [
+      "There is a twenty-minute wait for the next train.",
+      "The regional train arriving at platform three stops at all stations.",
+      "Yes, they just said it leaves from platform four.",
+      "Is the train already at the platform or is it yet to arrive?"
+    ],
+    "correctAnswerItalian": "Il treno regionale in arrivo al binario tre si ferma in tutte le stazioni.",
+    "correctAnswerEnglish": "The regional train arriving at platform three stops at all stations.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il treno regionale in arrivo al binario tre si ferma in tutte le stazioni. (The regional train arriving at platform three stops at all stations.)"
+    }
+  },
+  {
+    "id": "s6-s29",
+    "italian": "Il treno Alta Velocità per Milano è in transito al binario uno.",
+    "english": "The high-speed train to Milan is transiting through platform one.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La stazione di Santa Maria Novella è bellissima.",
+      "Prenda l'ascensore se ha bagagli molto pesanti con sé.",
+      "Il treno Alta Velocità per Milano è in transito al binario uno.",
+      "Questo treno ha solo posti di seconda classe."
+    ],
+    "choicesEnglish": [
+      "Santa Maria Novella station is beautiful.",
+      "Take the elevator if you have very heavy luggage with you.",
+      "The high-speed train to Milan is transiting through platform one.",
+      "This train only has second-class seats."
+    ],
+    "correctAnswerItalian": "Il treno Alta Velocità per Milano è in transito al binario uno.",
+    "correctAnswerEnglish": "The high-speed train to Milan is transiting through platform one.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il treno Alta Velocità per Milano è in transito al binario uno. (The high-speed train to Milan is transiting through platform one.)"
+    }
+  },
+  {
+    "id": "s6-s30",
+    "italian": "Dov'è l'ufficio degli oggetti smarriti in questa stazione?",
+    "english": "Where is the lost and found office in this station?",
+    "type": "sentence",
+    "choicesItalian": [
+      "C'è un bar vicino al binario dieci?",
+      "Dov'è l'ufficio degli oggetti smarriti in questa stazione?",
+      "Scusi, sa da quale binario parte il treno per Firenze?",
+      "Mi scusi, il treno per Milano ha molto ritardo?"
+    ],
+    "choicesEnglish": [
+      "Is there a bar near platform ten?",
+      "Where is the lost and found office in this station?",
+      "Excuse me, do you know from which platform the train to Florence leaves?",
+      "Excuse me, is the train to Milan very late?"
+    ],
+    "correctAnswerItalian": "Dov'è l'ufficio degli oggetti smarriti in questa stazione?",
+    "correctAnswerEnglish": "Where is the lost and found office in this station?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Dov'è l'ufficio degli oggetti smarriti in questa stazione? (Where is the lost and found office in this station?)"
+    }
+  },
+  {
+    "id": "s6-s31",
+    "italian": "Prenda l'ascensore se ha bagagli molto pesanti con sé.",
+    "english": "Take the elevator if you have very heavy luggage with you.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il tabellone indica che il treno è puntuale.",
+      "Scusi, questo treno ferma anche a Prato Centrale?",
+      "Prenda l'ascensore se ha bagagli molto pesanti con sé.",
+      "Il binario quindici è in fondo al corridoio a destra."
+    ],
+    "choicesEnglish": [
+      "The board indicates that the train is on time.",
+      "Excuse me, does this train also stop at Prato Centrale?",
+      "Take the elevator if you have very heavy luggage with you.",
+      "Platform fifteen is at the end of the hallway to the right."
+    ],
+    "correctAnswerItalian": "Prenda l'ascensore se ha bagagli molto pesanti con sé.",
+    "correctAnswerEnglish": "Take the elevator if you have very heavy luggage with you.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Prenda l'ascensore se ha bagagli molto pesanti con sé. (Take the elevator if you have very heavy luggage with you.)"
+    }
+  },
+  {
+    "id": "s6-s32",
+    "italian": "La scala mobile per il primo piano è fuori servizio.",
+    "english": "The escalator to the first floor is out of order.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il binario quindici è in fondo al corridoio a destra.",
+      "La scala mobile per il primo piano è fuori servizio.",
+      "Questo treno ha solo posti di seconda classe.",
+      "Grazie mille, corro subito al binario per non perderlo!"
+    ],
+    "choicesEnglish": [
+      "Platform fifteen is at the end of the hallway to the right.",
+      "The escalator to the first floor is out of order.",
+      "This train only has second-class seats.",
+      "Thank you very much, I'm running to the platform now so I don't miss it!"
+    ],
+    "correctAnswerItalian": "La scala mobile per il primo piano è fuori servizio.",
+    "correctAnswerEnglish": "The escalator to the first floor is out of order.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: La scala mobile per il primo piano è fuori servizio. (The escalator to the first floor is out of order.)"
+    }
+  },
+  {
+    "id": "s6-s33",
+    "italian": "Il treno per Torino è in partenza dal binario quindici.",
+    "english": "The train to Turin is departing from platform fifteen.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Questo treno ha solo posti di seconda classe.",
+      "Il treno per Torino è in partenza dal binario quindici.",
+      "Scusate, questo è il posto vicino al finestrino?",
+      "Il treno sta arrivando, allontanatevi dal bordo della banchina."
+    ],
+    "choicesEnglish": [
+      "This train only has second-class seats.",
+      "The train to Turin is departing from platform fifteen.",
+      "Excuse me, is this the window seat?",
+      "The train is arriving, move away from the edge of the platform."
+    ],
+    "correctAnswerItalian": "Il treno per Torino è in partenza dal binario quindici.",
+    "correctAnswerEnglish": "The train to Turin is departing from platform fifteen.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il treno per Torino è in partenza dal binario quindici. (The train to Turin is departing from platform fifteen.)"
+    }
+  },
+  {
+    "id": "s6-s34",
+    "italian": "Ci sono venti minuti di attesa per il prossimo treno.",
+    "english": "There is a twenty-minute wait for the next train.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Deve solo convalidare il biglietto prima di salire a bordo.",
+      "C'è un bar vicino al binario dieci?",
+      "Si sbrighi, mancano solo tre minuti alla partenza del treno!",
+      "Ci sono venti minuti di attesa per il prossimo treno."
+    ],
+    "choicesEnglish": [
+      "You just need to validate the ticket before boarding.",
+      "Is there a bar near platform ten?",
+      "Hurry up, there are only three minutes left until the train departs!",
+      "There is a twenty-minute wait for the next train."
+    ],
+    "correctAnswerItalian": "Ci sono venti minuti di attesa per il prossimo treno.",
+    "correctAnswerEnglish": "There is a twenty-minute wait for the next train.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Ci sono venti minuti di attesa per il prossimo treno. (There is a twenty-minute wait for the next train.)"
+    }
+  },
+  {
+    "id": "s6-s35",
+    "italian": "Il sottopassaggio è molto affollato a quest'ora del pomeriggio.",
+    "english": "The underpass is very crowded at this time of the afternoon.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Attenzione, il treno per Pisa partirà dal binario quattro.",
+      "Si sbrighi, mancano solo tre minuti alla partenza del treno!",
+      "Hanno appena fatto un annuncio per il cambio di binario.",
+      "Il sottopassaggio è molto affollato a quest'ora del pomeriggio."
+    ],
+    "choicesEnglish": [
+      "Attention, the train to Pisa will leave from platform four.",
+      "Hurry up, there are only three minutes left until the train departs!",
+      "They just made an announcement for the platform change.",
+      "The underpass is very crowded at this time of the afternoon."
+    ],
+    "correctAnswerItalian": "Il sottopassaggio è molto affollato a quest'ora del pomeriggio.",
+    "correctAnswerEnglish": "The underpass is very crowded at this time of the afternoon.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il sottopassaggio è molto affollato a quest'ora del pomeriggio. (The underpass is very crowded at this time of the afternoon.)"
+    }
+  },
+  {
+    "id": "s6-s36",
+    "italian": "Deve convalidare il biglietto nelle macchinette gialle o verdi.",
+    "english": "You must validate the ticket in the yellow or green machines.",
+    "type": "sentence",
+    "choicesItalian": [
+      "C'è un bar vicino al binario dieci?",
+      "Deve solo convalidare il biglietto prima di salire a bordo.",
+      "Il treno per Firenze parte dal binario dodici oggi.",
+      "Deve convalidare il biglietto nelle macchinette gialle o verdi."
+    ],
+    "choicesEnglish": [
+      "Is there a bar near platform ten?",
+      "You just need to validate the ticket before boarding.",
+      "The train to Florence leaves from platform twelve today.",
+      "You must validate the ticket in the yellow or green machines."
+    ],
+    "correctAnswerItalian": "Deve convalidare il biglietto nelle macchinette gialle o verdi.",
+    "correctAnswerEnglish": "You must validate the ticket in the yellow or green machines.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Deve convalidare il biglietto nelle macchinette gialle o verdi. (You must validate the ticket in the yellow or green machines.)"
+    }
+  },
+  {
+    "id": "s6-s37",
+    "italian": "Scusi, questo treno ferma anche a Prato Centrale?",
+    "english": "Excuse me, does this train also stop at Prato Centrale?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il treno partirà dal binario quattro anziché dal binario nove.",
+      "Il treno Alta Velocità per Milano è in transito al binario uno.",
+      "La scala mobile per il primo piano è fuori servizio.",
+      "Scusi, questo treno ferma anche a Prato Centrale?"
+    ],
+    "choicesEnglish": [
+      "The train will leave from platform four instead of platform nine.",
+      "The high-speed train to Milan is transiting through platform one.",
+      "The escalator to the first floor is out of order.",
+      "Excuse me, does this train also stop at Prato Centrale?"
+    ],
+    "correctAnswerItalian": "Scusi, questo treno ferma anche a Prato Centrale?",
+    "correctAnswerEnglish": "Excuse me, does this train also stop at Prato Centrale?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Scusi, questo treno ferma anche a Prato Centrale? (Excuse me, does this train also stop at Prato Centrale?)"
+    }
+  },
+  {
+    "id": "s6-s38",
+    "italian": "Il capotreno è sulla banchina per dare il via.",
+    "english": "The conductor is on the platform to give the signal.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il capotreno è sulla banchina per dare il via.",
+      "La scala mobile per il primo piano è fuori servizio.",
+      "Il binario quindici è in fondo al corridoio a destra.",
+      "Attenzione ai borseggiatori nelle zone affollate della stazione."
+    ],
+    "choicesEnglish": [
+      "The conductor is on the platform to give the signal.",
+      "The escalator to the first floor is out of order.",
+      "Platform fifteen is at the end of the hallway to the right.",
+      "Watch out for pickpockets in crowded areas of the station."
+    ],
+    "correctAnswerItalian": "Il capotreno è sulla banchina per dare il via.",
+    "correctAnswerEnglish": "The conductor is on the platform to give the signal.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il capotreno è sulla banchina per dare il via. (The conductor is on the platform to give the signal.)"
+    }
+  },
+  {
+    "id": "s6-s39",
+    "italian": "Ho perso la coincidenza per un minuto soltanto.",
+    "english": "I missed the connection by only one minute.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sì, hanno appena detto che parte dal binario quattro.",
+      "Ho perso la coincidenza per un minuto soltanto.",
+      "Il treno partirà dal binario quattro anziché dal binario nove.",
+      "Il treno Alta Velocità per Milano è in transito al binario uno."
+    ],
+    "choicesEnglish": [
+      "Yes, they just said it leaves from platform four.",
+      "I missed the connection by only one minute.",
+      "The train will leave from platform four instead of platform nine.",
+      "The high-speed train to Milan is transiting through platform one."
+    ],
+    "correctAnswerItalian": "Ho perso la coincidenza per un minuto soltanto.",
+    "correctAnswerEnglish": "I missed the connection by only one minute.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Ho perso la coincidenza per un minuto soltanto. (I missed the connection by only one minute.)"
+    }
+  },
+  {
+    "id": "s6-s40",
+    "italian": "Dove posso trovare un carrello per le mie valigie?",
+    "english": "Where can I find a trolley for my suitcases?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Controlli comunque il tabellone luminoso tra poco per sicurezza.",
+      "Ho perso la coincidenza per un minuto soltanto.",
+      "Al momento segnalano venti minuti di ritardo per un problema.",
+      "Dove posso trovare un carrello per le mie valigie?"
+    ],
+    "choicesEnglish": [
+      "Check the luminous board in a little while anyway for safety.",
+      "I missed the connection by only one minute.",
+      "At the moment they are reporting twenty minutes of delay due to a problem.",
+      "Where can I find a trolley for my suitcases?"
+    ],
+    "correctAnswerItalian": "Dove posso trovare un carrello per le mie valigie?",
+    "correctAnswerEnglish": "Where can I find a trolley for my suitcases?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Dove posso trovare un carrello per le mie valigie? (Where can I find a trolley for my suitcases?)"
+    }
+  },
+  {
+    "id": "s6-s41",
+    "italian": "Il tabellone indica che il treno è puntuale.",
+    "english": "The board indicates that the train is on time.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Le valigie sono molto pesanti, spero di fare in tempo.",
+      "Il tabellone indica che il treno è puntuale.",
+      "Per raggiungere il binario due, devi prendere il sottopassaggio.",
+      "Sì, hanno appena detto che parte dal binario quattro."
+    ],
+    "choicesEnglish": [
+      "The suitcases are very heavy, I hope to make it on time.",
+      "The board indicates that the train is on time.",
+      "To reach platform two, you have to take the underpass.",
+      "Yes, they just said it leaves from platform four."
+    ],
+    "correctAnswerItalian": "Il tabellone indica che il treno è puntuale.",
+    "correctAnswerEnglish": "The board indicates that the train is on time.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il tabellone indica che il treno è puntuale. (The board indicates that the train is on time.)"
+    }
+  },
+  {
+    "id": "s6-s42",
+    "italian": "Attenzione ai borseggiatori nelle zone affollate della stazione.",
+    "english": "Watch out for pickpockets in crowded areas of the station.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Attenzione ai borseggiatori nelle zone affollate della stazione.",
+      "Ci sono venti minuti di attesa per il prossimo treno.",
+      "Quanto costa un biglietto per il treno notturno?",
+      "Per raggiungere il binario due, devi prendere il sottopassaggio."
+    ],
+    "choicesEnglish": [
+      "Watch out for pickpockets in crowded areas of the station.",
+      "There is a twenty-minute wait for the next train.",
+      "How much does a ticket for the night train cost?",
+      "To reach platform two, you have to take the underpass."
+    ],
+    "correctAnswerItalian": "Attenzione ai borseggiatori nelle zone affollate della stazione.",
+    "correctAnswerEnglish": "Watch out for pickpockets in crowded areas of the station.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Attenzione ai borseggiatori nelle zone affollate della stazione. (Watch out for pickpockets in crowded areas of the station.)"
+    }
+  },
+  {
+    "id": "s6-s43",
+    "italian": "C'è un bar vicino al binario dieci?",
+    "english": "Is there a bar near platform ten?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il treno partirà dal binario quattro anziché dal binario nove.",
+      "Dov'è l'ufficio degli oggetti smarriti in questa stazione?",
+      "C'è un bar vicino al binario dieci?",
+      "Controlli comunque il tabellone luminoso tra poco per sicurezza."
+    ],
+    "choicesEnglish": [
+      "The train will leave from platform four instead of platform nine.",
+      "Where is the lost and found office in this station?",
+      "Is there a bar near platform ten?",
+      "Check the luminous board in a little while anyway for safety."
+    ],
+    "correctAnswerItalian": "C'è un bar vicino al binario dieci?",
+    "correctAnswerEnglish": "Is there a bar near platform ten?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: C'è un bar vicino al binario dieci? (Is there a bar near platform ten?)"
+    }
+  },
+  {
+    "id": "s6-s44",
+    "italian": "Il treno per l'aeroporto parte ogni trenta minuti circa.",
+    "english": "The train to the airport leaves approximately every thirty minutes.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Non sostare oltre la linea gialla sulla banchina.",
+      "Il treno per l'aeroporto parte ogni trenta minuti circa.",
+      "Il treno partirà dal binario quattro anziché dal binario nove.",
+      "Sì, hanno appena detto che parte dal binario quattro."
+    ],
+    "choicesEnglish": [
+      "Do not stand beyond the yellow line on the platform.",
+      "The train to the airport leaves approximately every thirty minutes.",
+      "The train will leave from platform four instead of platform nine.",
+      "Yes, they just said it leaves from platform four."
+    ],
+    "correctAnswerItalian": "Il treno per l'aeroporto parte ogni trenta minuti circa.",
+    "correctAnswerEnglish": "The train to the airport leaves approximately every thirty minutes.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il treno per l'aeroporto parte ogni trenta minuti circa. (The train to the airport leaves approximately every thirty minutes.)"
+    }
+  },
+  {
+    "id": "s6-s45",
+    "italian": "Deve scendere alla prossima fermata per il centro.",
+    "english": "You must get off at the next stop for the center.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il treno partirà dal binario quattro anziché dal binario nove.",
+      "Grazie mille, corro subito al binario per non perderlo!",
+      "Al momento segnalano venti minuti di ritardo per un problema.",
+      "Deve scendere alla prossima fermata per il centro."
+    ],
+    "choicesEnglish": [
+      "The train will leave from platform four instead of platform nine.",
+      "Thank you very much, I'm running to the platform now so I don't miss it!",
+      "At the moment they are reporting twenty minutes of delay due to a problem.",
+      "You must get off at the next stop for the center."
+    ],
+    "correctAnswerItalian": "Deve scendere alla prossima fermata per il centro.",
+    "correctAnswerEnglish": "You must get off at the next stop for the center.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Deve scendere alla prossima fermata per il centro. (You must get off at the next stop for the center.)"
+    }
+  },
+  {
+    "id": "s6-s46",
+    "italian": "La carrozza ristorante si trova al centro del treno.",
+    "english": "The dining car is located in the middle of the train.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ci sono armadietti per il deposito bagagli qui?",
+      "La carrozza ristorante si trova al centro del treno.",
+      "No, il binario di partenza rimane il numero sette.",
+      "Dove posso trovare un carrello per le mie valigie?"
+    ],
+    "choicesEnglish": [
+      "Are there lockers for luggage storage here?",
+      "The dining car is located in the middle of the train.",
+      "No, the departure platform remains number seven.",
+      "Where can I find a trolley for my suitcases?"
+    ],
+    "correctAnswerItalian": "La carrozza ristorante si trova al centro del treno.",
+    "correctAnswerEnglish": "The dining car is located in the middle of the train.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: La carrozza ristorante si trova al centro del treno. (The dining car is located in the middle of the train.)"
+    }
+  },
+  {
+    "id": "s6-s47",
+    "italian": "Questo treno ha solo posti di seconda classe.",
+    "english": "This train only has second-class seats.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Questo treno ha solo posti di seconda classe.",
+      "Deve convalidare il biglietto nelle macchinette gialle o verdi.",
+      "Buona permanenza in città a tutti i viaggiatori.",
+      "Ci sono armadietti per il deposito bagagli qui?"
+    ],
+    "choicesEnglish": [
+      "This train only has second-class seats.",
+      "You must validate the ticket in the yellow or green machines.",
+      "Enjoy your stay in the city to all travelers.",
+      "Are there lockers for luggage storage here?"
+    ],
+    "correctAnswerItalian": "Questo treno ha solo posti di seconda classe.",
+    "correctAnswerEnglish": "This train only has second-class seats.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Questo treno ha solo posti di seconda classe. (This train only has second-class seats.)"
+    }
+  },
+  {
+    "id": "s6-s48",
+    "italian": "Sulle carrozze è obbligatorio l'uso della mascherina?",
+    "english": "Is it mandatory to use a mask on the coaches?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il treno partirà dal binario quattro anziché dal binario nove.",
+      "Sulle carrozze è obbligatorio l'uso della mascherina?",
+      "Grazie mille, corro subito al binario per non perderlo!",
+      "Cambierà il binario di partenza per il treno delle dieci?"
+    ],
+    "choicesEnglish": [
+      "The train will leave from platform four instead of platform nine.",
+      "Is it mandatory to use a mask on the coaches?",
+      "Thank you very much, I'm running to the platform now so I don't miss it!",
+      "Will the departure platform change for the ten o'clock train?"
+    ],
+    "correctAnswerItalian": "Sulle carrozze è obbligatorio l'uso della mascherina?",
+    "correctAnswerEnglish": "Is it mandatory to use a mask on the coaches?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Sulle carrozze è obbligatorio l'uso della mascherina? (Is it mandatory to use a mask on the coaches?)"
+    }
+  },
+  {
+    "id": "s6-s49",
+    "italian": "Il treno sta arrivando, allontanatevi dal bordo della banchina.",
+    "english": "The train is arriving, move away from the edge of the platform.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ascolta l'annuncio, il nostro treno è in forte ritardo.",
+      "Grazie mille, corro subito al binario per non perderlo!",
+      "Il treno sta arrivando, allontanatevi dal bordo della banchina.",
+      "Scusi, ho capito bene? Il treno ha cambiato binario?"
+    ],
+    "choicesEnglish": [
+      "Listen to the announcement, our train is seriously delayed.",
+      "Thank you very much, I'm running to the platform now so I don't miss it!",
+      "The train is arriving, move away from the edge of the platform.",
+      "Excuse me, did I understand correctly? Has the train changed platforms?"
+    ],
+    "correctAnswerItalian": "Il treno sta arrivando, allontanatevi dal bordo della banchina.",
+    "correctAnswerEnglish": "The train is arriving, move away from the edge of the platform.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il treno sta arrivando, allontanatevi dal bordo della banchina. (The train is arriving, move away from the edge of the platform.)"
+    }
+  },
+  {
+    "id": "s6-s50",
+    "italian": "Il binario quindici è in fondo al corridoio a destra.",
+    "english": "Platform fifteen is at the end of the hallway to the right.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sulle carrozze è obbligatorio l'uso della mascherina?",
+      "Il binario quindici è in fondo al corridoio a destra.",
+      "Deve solo convalidare il biglietto prima di salire a bordo.",
+      "Al momento segnalano venti minuti di ritardo per un problema."
+    ],
+    "choicesEnglish": [
+      "Is it mandatory to use a mask on the coaches?",
+      "Platform fifteen is at the end of the hallway to the right.",
+      "You just need to validate the ticket before boarding.",
+      "At the moment they are reporting twenty minutes of delay due to a problem."
+    ],
+    "correctAnswerItalian": "Il binario quindici è in fondo al corridoio a destra.",
+    "correctAnswerEnglish": "Platform fifteen is at the end of the hallway to the right.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il binario quindici è in fondo al corridoio a destra. (Platform fifteen is at the end of the hallway to the right.)"
+    }
+  },
+  {
+    "id": "s6-s51",
+    "italian": "Spero che la coincidenza ci aspetti a Bologna.",
+    "english": "I hope the connection waits for us in Bologna.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Spero che la coincidenza ci aspetti a Bologna.",
+      "Dobbiamo fare il sottopassaggio per raggiungere l'altra banchina.",
+      "No, il binario di partenza rimane il numero sette.",
+      "Dove posso trovare un carrello per le mie valigie?"
+    ],
+    "choicesEnglish": [
+      "I hope the connection waits for us in Bologna.",
+      "We have to take the underpass to reach the other platform.",
+      "No, the departure platform remains number seven.",
+      "Where can I find a trolley for my suitcases?"
+    ],
+    "correctAnswerItalian": "Spero che la coincidenza ci aspetti a Bologna.",
+    "correctAnswerEnglish": "I hope the connection waits for us in Bologna.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Spero che la coincidenza ci aspetti a Bologna. (I hope the connection waits for us in Bologna.)"
+    }
+  },
+  {
+    "id": "s6-s52",
+    "italian": "Il viaggio in treno è molto rilassante e panoramico.",
+    "english": "The train journey is very relaxing and scenic.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Non sostare oltre la linea gialla sulla banchina.",
+      "Il viaggio in treno è molto rilassante e panoramico.",
+      "Dov'è l'ufficio degli oggetti smarriti in questa stazione?",
+      "La stazione di Santa Maria Novella è bellissima."
+    ],
+    "choicesEnglish": [
+      "Do not stand beyond the yellow line on the platform.",
+      "The train journey is very relaxing and scenic.",
+      "Where is the lost and found office in this station?",
+      "Santa Maria Novella station is beautiful."
+    ],
+    "correctAnswerItalian": "Il viaggio in treno è molto rilassante e panoramico.",
+    "correctAnswerEnglish": "The train journey is very relaxing and scenic.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il viaggio in treno è molto rilassante e panoramico. (The train journey is very relaxing and scenic.)"
+    }
+  },
+  {
+    "id": "s6-s53",
+    "italian": "Quanto costa un biglietto per il treno notturno?",
+    "english": "How much does a ticket for the night train cost?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il binario quindici è in fondo al corridoio a destra.",
+      "Il tabellone indica che il treno è puntuale.",
+      "Quanto costa un biglietto per il treno notturno?",
+      "Ascolta l'annuncio, il nostro treno è in forte ritardo."
+    ],
+    "choicesEnglish": [
+      "Platform fifteen is at the end of the hallway to the right.",
+      "The board indicates that the train is on time.",
+      "How much does a ticket for the night train cost?",
+      "Listen to the announcement, our train is seriously delayed."
+    ],
+    "correctAnswerItalian": "Quanto costa un biglietto per il treno notturno?",
+    "correctAnswerEnglish": "How much does a ticket for the night train cost?",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Quanto costa un biglietto per il treno notturno? (How much does a ticket for the night train cost?)"
+    }
+  },
+  {
+    "id": "s6-s54",
+    "italian": "La stazione di Santa Maria Novella è bellissima.",
+    "english": "Santa Maria Novella station is beautiful.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Deve scendere alla prossima fermata per il centro.",
+      "Ci sono venti minuti di attesa per il prossimo treno.",
+      "La stazione di Santa Maria Novella è bellissima.",
+      "Il treno per Firenze parte dal binario dodici oggi."
+    ],
+    "choicesEnglish": [
+      "You must get off at the next stop for the center.",
+      "There is a twenty-minute wait for the next train.",
+      "Santa Maria Novella station is beautiful.",
+      "The train to Florence leaves from platform twelve today."
+    ],
+    "correctAnswerItalian": "La stazione di Santa Maria Novella è bellissima.",
+    "correctAnswerEnglish": "Santa Maria Novella station is beautiful.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: La stazione di Santa Maria Novella è bellissima. (Santa Maria Novella station is beautiful.)"
+    }
+  },
+  {
+    "id": "s6-s55",
+    "italian": "Ci sono armadietti per il deposito bagagli qui?",
+    "english": "Are there lockers for luggage storage here?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ci sono armadietti per il deposito bagagli qui?",
+      "Dobbiamo fare il sottopassaggio per raggiungere l'altra banchina.",
+      "Il treno sta arrivando, allontanatevi dal bordo della banchina.",
       "Scusate, questo è il posto vicino al finestrino?"
     ],
-    "correctAnswer": "Per raggiungere il binario due, devi prendere il sottopassaggio.",
+    "choicesEnglish": [
+      "Are there lockers for luggage storage here?",
+      "We have to take the underpass to reach the other platform.",
+      "The train is arriving, move away from the edge of the platform.",
+      "Excuse me, is this the window seat?"
+    ],
+    "correctAnswerItalian": "Ci sono armadietti per il deposito bagagli qui?",
+    "correctAnswerEnglish": "Are there lockers for luggage storage here?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Per raggiungere il binario due, devi prendere il sottopassaggio.\"."
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Ci sono armadietti per il deposito bagagli qui? (Are there lockers for luggage storage here?)"
+    }
+  },
+  {
+    "id": "s6-s56",
+    "italian": "Il treno è composto da otto carrozze passeggeri.",
+    "english": "The train consists of eight passenger coaches.",
+    "type": "sentence",
+    "choicesItalian": [
+      "No, il binario di partenza rimane il numero sette.",
+      "Il treno è composto da otto carrozze passeggeri.",
+      "Attenzione, il treno per Pisa partirà dal binario quattro.",
+      "Deve scendere alla prossima fermata per il centro."
+    ],
+    "choicesEnglish": [
+      "No, the departure platform remains number seven.",
+      "The train consists of eight passenger coaches.",
+      "Attention, the train to Pisa will leave from platform four.",
+      "You must get off at the next stop for the center."
+    ],
+    "correctAnswerItalian": "Il treno è composto da otto carrozze passeggeri.",
+    "correctAnswerEnglish": "The train consists of eight passenger coaches.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il treno è composto da otto carrozze passeggeri. (The train consists of eight passenger coaches.)"
+    }
+  },
+  {
+    "id": "s6-s57",
+    "italian": "Si prega di non gettare oggetti dal finestrino.",
+    "english": "Please do not throw objects from the window.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La scala mobile per il primo piano è fuori servizio.",
+      "C'è un problema tecnico sulla linea tra Roma e Firenze.",
+      "Prenda l'ascensore se ha bagagli molto pesanti con sé.",
+      "Si prega di non gettare oggetti dal finestrino."
+    ],
+    "choicesEnglish": [
+      "The escalator to the first floor is out of order.",
+      "There is a technical problem on the line between Rome and Florence.",
+      "Take the elevator if you have very heavy luggage with you.",
+      "Please do not throw objects from the window."
+    ],
+    "correctAnswerItalian": "Si prega di non gettare oggetti dal finestrino.",
+    "correctAnswerEnglish": "Please do not throw objects from the window.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Si prega di non gettare oggetti dal finestrino. (Please do not throw objects from the window.)"
+    }
+  },
+  {
+    "id": "s6-s58",
+    "italian": "Il controllore sta verificando i titoli di viaggio.",
+    "english": "The conductor is checking the travel tickets.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La porta si apre automaticamente alla fermata.",
+      "Scusi, sa da quale binario parte il treno per Firenze?",
+      "Il controllore sta verificando i titoli di viaggio.",
+      "La stazione di Santa Maria Novella è bellissima."
+    ],
+    "choicesEnglish": [
+      "The door opens automatically at the stop.",
+      "Excuse me, do you know from which platform the train to Florence leaves?",
+      "The conductor is checking the travel tickets.",
+      "Santa Maria Novella station is beautiful."
+    ],
+    "correctAnswerItalian": "Il controllore sta verificando i titoli di viaggio.",
+    "correctAnswerEnglish": "The conductor is checking the travel tickets.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Il controllore sta verificando i titoli di viaggio. (The conductor is checking the travel tickets.)"
+    }
+  },
+  {
+    "id": "s6-s59",
+    "italian": "La porta si apre automaticamente alla fermata.",
+    "english": "The door opens automatically at the stop.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La stazione di Santa Maria Novella è bellissima.",
+      "Il treno è già al binario o deve ancora arrivare?",
+      "La porta si apre automaticamente alla fermata.",
+      "Per raggiungere il binario due, devi prendere il sottopassaggio."
+    ],
+    "choicesEnglish": [
+      "Santa Maria Novella station is beautiful.",
+      "Is the train already at the platform or is it yet to arrive?",
+      "The door opens automatically at the stop.",
+      "To reach platform two, you have to take the underpass."
+    ],
+    "correctAnswerItalian": "La porta si apre automaticamente alla fermata.",
+    "correctAnswerEnglish": "The door opens automatically at the stop.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: La porta si apre automaticamente alla fermata. (The door opens automatically at the stop.)"
+    }
+  },
+  {
+    "id": "s6-s60",
+    "italian": "Buona permanenza in città a tutti i viaggiatori.",
+    "english": "Enjoy your stay in the city to all travelers.",
+    "type": "sentence",
+    "choicesItalian": [
+      "D'accordo, grazie per l'informazione e buona giornata.",
+      "Buona permanenza in città a tutti i viaggiatori.",
+      "Il binario quindici è in fondo al corridoio a destra.",
+      "Sì, hanno appena detto che parte dal binario quattro."
+    ],
+    "choicesEnglish": [
+      "Agreed, thanks for the information and have a good day.",
+      "Enjoy your stay in the city to all travelers.",
+      "Platform fifteen is at the end of the hallway to the right.",
+      "Yes, they just said it leaves from platform four."
+    ],
+    "correctAnswerItalian": "Buona permanenza in città a tutti i viaggiatori.",
+    "correctAnswerEnglish": "Enjoy your stay in the city to all travelers.",
+    "feedback": {
+      "correct": "Ottimo! / Great!",
+      "incorrect": "La risposta corretta è / The correct answer is: Buona permanenza in città a tutti i viaggiatori. (Enjoy your stay in the city to all travelers.)"
     }
   }
 ]

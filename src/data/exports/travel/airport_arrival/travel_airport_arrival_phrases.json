@@ -1,104 +1,402 @@
 [
   {
-    "id": "s1-p1",
-    "italian": "Dov'è l'uscita?",
-    "english": "Where is the exit?",
-    "type": "phrase",
-    "choices": [
-      "Devo passare la dogana.",
-      "Dov'è l'uscita?",
-      "Cerco il ritiro bagagli.",
-      "Qual è il mio terminal?"
-    ],
-    "correctAnswer": "Dov'è l'uscita?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Dov'è l'uscita?\"."
-    }
+    "choicesItalian": ["Dove posso trovare l'autobus?", "Dove si trova il bagno?", "Quanto costa il biglietto?", "A che ora parte il treno?"],
+    "choicesEnglish": ["Where can I find the bus?", "Where is the bathroom?", "How much does the ticket cost?", "What time does the train leave?"],
+    "correctAnswerItalian": "Dove posso trovare l'autobus?",
+    "correctAnswerEnglish": "Where can I find the bus?",
+    "feedbackItalian": "Questa frase è utile per chiedere indicazioni per l'autobus.",
+    "feedbackEnglish": "This phrase is useful for asking directions for the bus."
   },
   {
-    "id": "s1-p5",
-    "italian": "Devo passare la dogana.",
-    "english": "I need to go through customs.",
-    "type": "phrase",
-    "choices": [
-      "Dove prendo la navetta?",
-      "Qual è il mio terminal?",
-      "Il controllo passaporti è di qua.",
-      "Devo passare la dogana."
-    ],
-    "correctAnswer": "Devo passare la dogana.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Devo passare la dogana.\"."
-    }
+    "choicesItalian": ["Giri a destra.", "Vada dritto.", "Giri a sinistra.", "Si fermi qui."],
+    "choicesEnglish": ["Turn right.", "Go straight.", "Turn left.", "Stop here."],
+    "correctAnswerItalian": "Giri a destra.",
+    "correctAnswerEnglish": "Turn right.",
+    "feedbackItalian": "Un'indicazione stradale comune.",
+    "feedbackEnglish": "A common road direction."
   },
   {
-    "id": "s1-p3",
-    "italian": "Dove prendo la navetta?",
-    "english": "Where do I catch the shuttle?",
-    "type": "phrase",
-    "choices": [
-      "Qual è il mio terminal?",
-      "Dov'è l'uscita?",
-      "Dove prendo la navetta?",
-      "Il controllo passaporti è di qua."
-    ],
-    "correctAnswer": "Dove prendo la navetta?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Dove prendo la navetta?\"."
-    }
+    "choicesItalian": ["Dove posso comprare il biglietto?", "Quanto tempo ci vuole?", "Qual è il tasso di cambio?", "Posso pagare con carta?"],
+    "choicesEnglish": ["Where can I buy the ticket?", "How long does it take?", "What is the exchange rate?", "Can I pay by card?"],
+    "correctAnswerItalian": "Dove posso comprare il biglietto?",
+    "correctAnswerEnglish": "Where can I buy the ticket?",
+    "feedbackItalian": "Frase essenziale per i trasporti pubblici.",
+    "feedbackEnglish": "Essential phrase for public transport."
   },
   {
-    "id": "s1-p2",
-    "italian": "Cerco il ritiro bagagli.",
-    "english": "I am looking for the baggage claim.",
-    "type": "phrase",
-    "choices": [
-      "Qual è il mio terminal?",
-      "Devo passare la dogana.",
-      "Il controllo passaporti è di qua.",
-      "Cerco il ritiro bagagli."
-    ],
-    "correctAnswer": "Cerco il ritiro bagagli.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Cerco il ritiro bagagli.\"."
-    }
+    "choicesItalian": ["Buona giornata.", "Buonanotte.", "Buonasera.", "Arrivederci."],
+    "choicesEnglish": ["Have a good day.", "Good night.", "Good evening.", "Goodbye."],
+    "correctAnswerItalian": "Buona giornata.",
+    "correctAnswerEnglish": "Have a good day.",
+    "feedbackItalian": "Un modo gentile per salutare qualcuno di giorno.",
+    "feedbackEnglish": "A polite way to greet someone during the day."
   },
   {
-    "id": "s1-p6",
-    "italian": "Qual è il mio terminal?",
-    "english": "Which one is my terminal?",
-    "type": "phrase",
-    "choices": [
-      "Qual è il mio terminal?",
-      "Dov'è l'uscita?",
-      "Dove prendo la navetta?",
-      "Devo passare la dogana."
-    ],
-    "correctAnswer": "Qual è il mio terminal?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Qual è il mio terminal?\"."
-    }
+    "choicesItalian": ["Quanto tempo ci vorrà?", "Quanto costa?", "Dove andiamo?", "Chi è lei?"],
+    "choicesEnglish": ["How long will it take?", "How much is it?", "Where are we going?", "Who are you?"],
+    "correctAnswerItalian": "Quanto tempo ci vorrà?",
+    "correctAnswerEnglish": "How long will it take?",
+    "feedbackItalian": "Utile per chiedere la durata del viaggio.",
+    "feedbackEnglish": "Useful for asking the duration of the trip."
   },
   {
-    "id": "s1-p4",
-    "italian": "Il controllo passaporti è di qua.",
-    "english": "Passport control is this way.",
-    "type": "phrase",
-    "choices": [
-      "Qual è il mio terminal?",
-      "Dov'è l'uscita?",
-      "Il controllo passaporti è di qua.",
-      "Devo passare la dogana."
-    ],
-    "correctAnswer": "Il controllo passaporti è di qua.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Il controllo passaporti è di qua.\"."
-    }
+    "choicesItalian": ["Vorrei cambiare degli euro.", "Ho bisogno di un taxi.", "Dov'è il mio bagaglio?", "Il volo è in ritardo."],
+    "choicesEnglish": ["I would like to change some euros.", "I need a taxi.", "Where is my luggage?", "The flight is late."],
+    "correctAnswerItalian": "Vorrei cambiare degli euro.",
+    "correctAnswerEnglish": "I would like to change some euros.",
+    "feedbackItalian": "Frase per l'ufficio di cambio valuta.",
+    "feedbackEnglish": "Phrase for the currency exchange office."
+  },
+  {
+    "choicesItalian": ["Ecco il mio passaporto.", "Ecco la mia carta.", "Ecco il biglietto.", "Ecco le valigie."],
+    "choicesEnglish": ["Here is my passport.", "Here is my card.", "Here is the ticket.", "Here are the suitcases."],
+    "correctAnswerItalian": "Ecco il mio passaporto.",
+    "correctAnswerEnglish": "Here is my passport.",
+    "feedbackItalian": "Si dice quando si consegna il documento.",
+    "feedbackEnglish": "It is said when handing over the document."
+  },
+  {
+    "choicesItalian": ["Piacere di conoscerla.", "Come sta?", "Tutto bene?", "A presto."],
+    "choicesEnglish": ["Pleased to meet you.", "How are you?", "Everything okay?", "See you soon."],
+    "correctAnswerItalian": "Piacere di conoscerla.",
+    "correctAnswerEnglish": "Pleased to meet you.",
+    "feedbackItalian": "Un saluto formale quando si incontra qualcuno.",
+    "feedbackEnglish": "A formal greeting when meeting someone."
+  },
+  {
+    "choicesItalian": ["Mi dia pure le valigie.", "Porti lei la borsa.", "Lasci qui il pacco.", "Prenda questo."],
+    "choicesEnglish": ["Give me the suitcases.", "You carry the bag.", "Leave the package here.", "Take this."],
+    "correctAnswerItalian": "Mi dia pure le valigie.",
+    "correctAnswerEnglish": "Give me the suitcases.",
+    "feedbackItalian": "L'autista si offre di aiutare con i bagagli.",
+    "feedbackEnglish": "The driver offers to help with the luggage."
+  },
+  {
+    "choicesItalian": ["C'è un po' di traffico.", "La strada è libera.", "Siamo arrivati.", "Partiamo subito."],
+    "choicesEnglish": ["There is a bit of traffic.", "The road is clear.", "We have arrived.", "We are leaving now."],
+    "correctAnswerItalian": "C'è un po' di traffico.",
+    "correctAnswerEnglish": "There is a bit of traffic.",
+    "feedbackItalian": "Una spiegazione per un possibile ritardo.",
+    "feedbackEnglish": "An explanation for a possible delay."
+  },
+  {
+    "choicesItalian": ["Dietro l'angolo.", "In fondo alla via.", "Sopra il tavolo.", "Sotto la sedia."],
+    "choicesEnglish": ["Around the corner.", "At the end of the street.", "On the table.", "Under the chair."],
+    "correctAnswerItalian": "Dietro l'angolo.",
+    "correctAnswerEnglish": "Around the corner.",
+    "feedbackItalian": "Indica una posizione molto vicina.",
+    "feedbackEnglish": "Indicates a very close position."
+  },
+  {
+    "choicesItalian": ["Alle macchinette automatiche.", "Al banco informazioni.", "In banca.", "Al ristorante."],
+    "choicesEnglish": ["At the automatic machines.", "At the information desk.", "In the bank.", "At the restaurant."],
+    "correctAnswerItalian": "Alle macchinette automatiche.",
+    "correctAnswerEnglish": "At the automatic machines.",
+    "feedbackItalian": "Indica dove comprare i biglietti.",
+    "feedbackEnglish": "Indicates where to buy tickets."
+  },
+  {
+    "choicesItalian": ["Esca dalla porta principale.", "Entri nell'ascensore.", "Salga le scale.", "Scenda al piano terra."],
+    "choicesEnglish": ["Exit through the main door.", "Enter the elevator.", "Go up the stairs.", "Go down to the ground floor."],
+    "correctAnswerItalian": "Esca dalla porta principale.",
+    "correctAnswerEnglish": "Exit through the main door.",
+    "feedbackItalian": "Un'istruzione per uscire da un luogo.",
+    "feedbackEnglish": "An instruction to exit a place."
+  },
+  {
+    "choicesItalian": ["La zona degli arrivi.", "L'area delle partenze.", "La sala d'attesa.", "Il terminal dei bus."],
+    "choicesEnglish": ["The arrivals area.", "The departures area.", "The waiting room.", "The bus terminal."],
+    "correctAnswerItalian": "La zona degli arrivi.",
+    "correctAnswerEnglish": "The arrivals area.",
+    "feedbackItalian": "Il luogo dove si incontrano le persone che arrivano.",
+    "feedbackEnglish": "The place where arriving people are met."
+  },
+  {
+    "choicesItalian": ["Per il centro.", "Per la stazione.", "Per l'aeroporto.", "Per il mare."],
+    "choicesEnglish": ["For the center.", "For the station.", "For the airport.", "For the sea."],
+    "correctAnswerItalian": "Per il centro.",
+    "correctAnswerEnglish": "For the center.",
+    "feedbackItalian": "Indica la direzione verso il cuore della città.",
+    "feedbackEnglish": "Indicates the direction towards the heart of the city."
+  },
+  {
+    "choicesItalian": ["Qual è il tasso di cambio?", "Quanto costa il pane?", "Dove sono i soldi?", "Chi ha vinto?"],
+    "choicesEnglish": ["What is the exchange rate?", "How much is the bread?", "Where is the money?", "Who won?"],
+    "correctAnswerItalian": "Qual è il tasso di cambio?",
+    "correctAnswerEnglish": "What is the exchange rate?",
+    "feedbackItalian": "Domanda essenziale per cambiare valuta.",
+    "feedbackEnglish": "Essential question for changing currency."
+  },
+  {
+    "choicesItalian": ["Una commissione fissa.", "Uno sconto speciale.", "Un prezzo variabile.", "Un costo aggiuntivo."],
+    "choicesEnglish": ["A fixed fee.", "A special discount.", "A variable price.", "An additional cost."],
+    "correctAnswerItalian": "Una commissione fissa.",
+    "correctAnswerEnglish": "A fixed fee.",
+    "feedbackItalian": "Un costo che non cambia.",
+    "feedbackEnglish": "A cost that does not change."
+  },
+  {
+    "choicesItalian": ["Mi servirebbe un documento.", "Voglio un caffè.", "Cerco un amico.", "Ho perso le chiavi."],
+    "choicesEnglish": ["I would need a document.", "I want a coffee.", "I'm looking for a friend.", "I lost my keys."],
+    "correctAnswerItalian": "Mi servirebbe un documento.",
+    "correctAnswerEnglish": "I would need a document.",
+    "feedbackItalian": "Richiesta formale di identificazione.",
+    "feedbackEnglish": "Formal request for identification."
+  },
+  {
+    "choicesItalian": ["Circa quaranta minuti.", "Esattamente un'ora.", "Meno di dieci minuti.", "Più di due ore."],
+    "choicesEnglish": ["About forty minutes.", "Exactly one hour.", "Less than ten minutes.", "More than two hours."],
+    "correctAnswerItalian": "Circa quaranta minuti.",
+    "correctAnswerEnglish": "About forty minutes.",
+    "feedbackItalian": "Una stima del tempo necessario.",
+    "feedbackEnglish": "An estimate of the time needed."
+  },
+  {
+    "choicesItalian": ["Proprio davanti alla zona.", "Molto lontano da qui.", "Sotto il ponte.", "Accanto al bar."],
+    "choicesEnglish": ["Right in front of the area.", "Very far from here.", "Under the bridge.", "Next to the bar."],
+    "correctAnswerItalian": "Proprio davanti alla zona.",
+    "correctAnswerEnglish": "Right in front of the area.",
+    "feedbackItalian": "Indica una posizione precisa.",
+    "feedbackEnglish": "Indicates a precise location."
+  },
+  {
+    "choicesItalian": ["Mi scusi.", "Mi perdoni.", "Mi aiuti.", "Mi chiami."],
+    "choicesEnglish": ["Excuse me.", "Forgive me.", "Help me.", "Call me."],
+    "correctAnswerItalian": "Mi scusi.",
+    "correctAnswerEnglish": "Excuse me.",
+    "feedbackItalian": "Usato per rivolgersi gentilmente a qualcuno.",
+    "feedbackEnglish": "Used to politely address someone."
+  },
+  {
+    "choicesItalian": ["In tabaccheria.", "In edicola.", "Al supermercato.", "In farmacia."],
+    "choicesEnglish": ["At the tobacco shop.", "At the newsstand.", "At the supermarket.", "At the pharmacy."],
+    "correctAnswerItalian": "In tabaccheria.",
+    "correctAnswerEnglish": "At the tobacco shop.",
+    "feedbackItalian": "Luogo dove si vendono anche i biglietti.",
+    "feedbackEnglish": "Place where tickets are also sold."
+  },
+  {
+    "choicesItalian": ["Gentilissimo.", "Bravissimo.", "Bellissimo.", "Carissimo."],
+    "choicesEnglish": ["Very kind.", "Very good.", "Very beautiful.", "Very dear."],
+    "correctAnswerItalian": "Gentilissimo.",
+    "correctAnswerEnglish": "Very kind.",
+    "feedbackItalian": "Un complimento per la cortesia di qualcuno.",
+    "feedbackEnglish": "A compliment for someone's courtesy."
+  },
+  {
+    "choicesItalian": ["Mi dia pure.", "Prenda pure.", "Vada pure.", "Dica pure."],
+    "choicesEnglish": ["Feel free to give me.", "Feel free to take.", "Feel free to go.", "Feel free to say."],
+    "correctAnswerItalian": "Mi dia pure.",
+    "correctAnswerEnglish": "Feel free to give me.",
+    "feedbackItalian": "Invito a consegnare qualcosa.",
+    "feedbackEnglish": "Invitation to hand something over."
+  },
+  {
+    "choicesItalian": ["Le sistemo io.", "Le porto io.", "Le compro io.", "Le mangio io."],
+    "choicesEnglish": ["I will arrange them.", "I will carry them.", "I will buy them.", "I will eat them."],
+    "correctAnswerItalian": "Le sistemo io.",
+    "correctAnswerEnglish": "I will arrange them.",
+    "feedbackItalian": "Offerta di aiuto con gli oggetti.",
+    "feedbackEnglish": "Offer of help with objects."
+  },
+  {
+    "choicesItalian": ["Circa quaranta.", "Circa trenta.", "Circa venti.", "Circa dieci."],
+    "choicesEnglish": ["About forty.", "About thirty.", "About twenty.", "About ten."],
+    "correctAnswerItalian": "Circa quaranta.",
+    "correctAnswerEnglish": "About forty.",
+    "feedbackItalian": "Indica una quantità approssimativa.",
+    "feedbackEnglish": "Indicates an approximate quantity."
+  },
+  {
+    "choicesItalian": ["A quest'ora.", "A quel tempo.", "In quel momento.", "Oggi pomeriggio."],
+    "choicesEnglish": ["At this hour.", "At that time.", "In that moment.", "This afternoon."],
+    "correctAnswerItalian": "A quest'ora.",
+    "correctAnswerEnglish": "At this hour.",
+    "feedbackItalian": "Si riferisce al momento attuale.",
+    "feedbackEnglish": "Refers to the current moment."
+  },
+  {
+    "choicesItalian": ["Vorrei cambiare.", "Vorrei comprare.", "Vorrei vendere.", "Vorrei pagare."],
+    "choicesEnglish": ["I would like to change.", "I would like to buy.", "I would like to sell.", "I would like to pay."],
+    "correctAnswerItalian": "Vorrei cambiare.",
+    "correctAnswerEnglish": "I would like to change.",
+    "feedbackItalian": "Esprime un desiderio o una necessità.",
+    "feedbackEnglish": "Expresses a desire or a necessity."
+  },
+  {
+    "choicesItalian": ["Per i dollari.", "Per gli euro.", "Per le sterline.", "Per i franchi."],
+    "choicesEnglish": ["For dollars.", "For euros.", "For pounds.", "For francs."],
+    "correctAnswerItalian": "Per i dollari.",
+    "correctAnswerEnglish": "For dollars.",
+    "feedbackItalian": "Specifica la valuta di riferimento.",
+    "feedbackEnglish": "Specifies the reference currency."
+  },
+  {
+    "choicesItalian": ["Certamente.", "Assolutamente.", "Forse.", "Mai."],
+    "choicesEnglish": ["Certainly.", "Absolutely.", "Maybe.", "Never."],
+    "correctAnswerItalian": "Certamente.",
+    "correctAnswerEnglish": "Certainly.",
+    "feedbackItalian": "Una risposta affermativa decisa.",
+    "feedbackEnglish": "A strong affirmative response."
+  },
+  {
+    "choicesItalian": ["Sì, sono io.", "No, non sono io.", "Forse sono io.", "Chi sono io?"],
+    "choicesEnglish": ["Yes, it's me.", "No, it's not me.", "Maybe it's me.", "Who am I?"],
+    "correctAnswerItalian": "Sì, sono io.",
+    "correctAnswerEnglish": "Yes, it's me.",
+    "feedbackItalian": "Conferma la propria identità.",
+    "feedbackEnglish": "Confirms one's identity."
+  },
+  {
+    "choicesItalian": ["Piacere, sono Marco.", "Salve, sono Paolo.", "Ehi, sono Luca.", "Ciao, sono Andrea."],
+    "choicesEnglish": ["Pleasure, I'm Marco.", "Hi, I'm Paolo.", "Hey, I'm Luca.", "Hello, I'm Andrea."],
+    "correctAnswerItalian": "Piacere, sono Marco.",
+    "correctAnswerEnglish": "Pleasure, I'm Marco.",
+    "feedbackItalian": "Un modo per presentarsi.",
+    "feedbackEnglish": "A way to introduce oneself."
+  },
+  {
+    "choicesItalian": ["Le valigie.", "I bagagli.", "Le borse.", "I pacchi."],
+    "choicesEnglish": ["The suitcases.", "The luggage.", "The bags.", "The packages."],
+    "correctAnswerItalian": "Le valigie.",
+    "correctAnswerEnglish": "The suitcases.",
+    "feedbackItalian": "Sostantivo plurale per i contenitori da viaggio.",
+    "feedbackEnglish": "Plural noun for travel containers."
+  },
+  {
+    "choicesItalian": ["Nel bagagliaio.", "Sui sedili.", "Sul tetto.", "Sotto l'auto."],
+    "choicesEnglish": ["In the trunk.", "On the seats.", "On the roof.", "Under the car."],
+    "correctAnswerItalian": "Nel bagagliaio.",
+    "correctAnswerEnglish": "In the trunk.",
+    "feedbackItalian": "Indica dove mettere i bagagli in auto.",
+    "feedbackEnglish": "Indicates where to put luggage in the car."
+  },
+  {
+    "choicesItalian": ["In hotel.", "A casa.", "Al lavoro.", "A scuola."],
+    "choicesEnglish": ["In the hotel.", "At home.", "At work.", "At school."],
+    "correctAnswerItalian": "In hotel.",
+    "correctAnswerEnglish": "In the hotel.",
+    "feedbackItalian": "La destinazione finale di molti viaggiatori.",
+    "feedbackEnglish": "The final destination for many travelers."
+  },
+  {
+    "choicesItalian": ["C'è traffico.", "C'è silenzio.", "C'è confusione.", "C'è pace."],
+    "choicesEnglish": ["There is traffic.", "There is silence.", "There is confusion.", "There is peace."],
+    "correctAnswerItalian": "C'è traffico.",
+    "correctAnswerEnglish": "There is traffic.",
+    "feedbackItalian": "Descrive la condizione stradale.",
+    "feedbackEnglish": "Describes the road condition."
+  },
+  {
+    "choicesItalian": ["Direi circa.", "Penso circa.", "Spero circa.", "Voglio circa."],
+    "choicesEnglish": ["I would say about.", "I think about.", "I hope about.", "I want about."],
+    "correctAnswerItalian": "Direi circa.",
+    "correctAnswerEnglish": "I would say about.",
+    "feedbackItalian": "Esprime un'opinione approssimativa.",
+    "feedbackEnglish": "Expresses an approximate opinion."
+  },
+  {
+    "choicesItalian": ["Qual è il tasso?", "Qual è il prezzo?", "Qual è il nome?", "Qual è il posto?"],
+    "choicesEnglish": ["What is the rate?", "What is the price?", "What is the name?", "What is the place?"],
+    "correctAnswerItalian": "Qual è il tasso?",
+    "correctAnswerEnglish": "What is the rate?",
+    "feedbackItalian": "Domanda specifica per l'economia o il cambio.",
+    "feedbackEnglish": "Specific question for economics or exchange."
+  },
+  {
+    "choicesItalian": ["Oggi.", "Domani.", "Ieri.", "Sempre."],
+    "choicesEnglish": ["Today.", "Tomorrow.", "Yesterday.", "Always."],
+    "correctAnswerItalian": "Oggi.",
+    "correctAnswerEnglish": "Today.",
+    "feedbackItalian": "Indica il giorno corrente.",
+    "feedbackEnglish": "Indicates the current day."
+  },
+  {
+    "choicesItalian": ["Più una commissione.", "Meno uno sconto.", "Senza costi.", "Con un premio."],
+    "choicesEnglish": ["Plus a fee.", "Minus a discount.", "Without costs.", "With a prize."],
+    "correctAnswerItalian": "Più una commissione.",
+    "correctAnswerEnglish": "Plus a fee.",
+    "feedbackItalian": "Indica un costo aggiuntivo.",
+    "feedbackEnglish": "Indicates an additional cost."
+  },
+  {
+    "choicesItalian": ["Duecento dollari.", "Cento euro.", "Mille sterline.", "Dieci yen."],
+    "choicesEnglish": ["Two hundred dollars.", "One hundred euros.", "One thousand pounds.", "Ten yen."],
+    "correctAnswerItalian": "Duecento dollari.",
+    "correctAnswerEnglish": "Two hundred dollars.",
+    "feedbackItalian": "Una quantità specifica di denaro.",
+    "feedbackEnglish": "A specific amount of money."
+  },
+  {
+    "choicesItalian": ["Ecco il mio.", "Ecco il tuo.", "Ecco il suo.", "Ecco il loro."],
+    "choicesEnglish": ["Here is mine.", "Here is yours.", "Here is his/hers.", "Here is theirs."],
+    "correctAnswerItalian": "Ecco il mio.",
+    "correctAnswerEnglish": "Here is mine.",
+    "feedbackItalian": "Si usa per presentare qualcosa di proprio.",
+    "feedbackEnglish": "Used to present something of one's own."
+  },
+  {
+    "choicesItalian": ["Mi servirebbe.", "Ti servirebbe.", "Gli servirebbe.", "Le servirebbe."],
+    "choicesEnglish": ["I would need.", "You would need.", "He would need.", "She would need."],
+    "correctAnswerItalian": "Mi servirebbe.",
+    "correctAnswerEnglish": "I would need.",
+    "feedbackItalian": "Un modo cortese per esprimere un bisogno.",
+    "feedbackEnglish": "A polite way to express a need."
+  },
+  {
+    "choicesItalian": ["Buona giornata.", "Buona serata.", "Buon pomeriggio.", "Buona notte."],
+    "choicesEnglish": ["Good day.", "Good evening.", "Good afternoon.", "Good night."],
+    "correctAnswerItalian": "Buona giornata.",
+    "correctAnswerEnglish": "Good day.",
+    "feedbackItalian": "Augurio di trascorrere bene il giorno.",
+    "feedbackEnglish": "Wish to spend the day well."
+  },
+  {
+    "choicesItalian": ["Alle sei.", "Alle sette.", "Alle otto.", "Alle nove."],
+    "choicesEnglish": ["At six.", "At seven.", "At eight.", "At nine."],
+    "correctAnswerItalian": "Alle sei.",
+    "correctAnswerEnglish": "At six.",
+    "feedbackItalian": "Specifica un orario.",
+    "feedbackEnglish": "Specifies a time."
+  },
+  {
+    "choicesItalian": ["Il mio passaporto.", "La mia carta.", "Il mio zaino.", "La mia valigia."],
+    "choicesEnglish": ["My passport.", "My card.", "My backpack.", "My suitcase."],
+    "correctAnswerItalian": "Il mio passaporto.",
+    "correctAnswerEnglish": "My passport.",
+    "feedbackItalian": "Il documento di viaggio principale.",
+    "feedbackEnglish": "The primary travel document."
+  },
+  {
+    "choicesItalian": ["Grazie mille.", "Tante grazie.", "Mille grazie.", "Grazie tante."],
+    "choicesEnglish": ["Thank you very much.", "Many thanks.", "A thousand thanks.", "Thanks a lot."],
+    "correctAnswerItalian": "Grazie mille.",
+    "correctAnswerEnglish": "Thank you very much.",
+    "feedbackItalian": "Un ringraziamento molto sentito.",
+    "feedbackEnglish": "A very heartfelt thank you."
+  },
+  {
+    "choicesItalian": ["Per il centro.", "Per la città.", "Per il paese.", "Per la piazza."],
+    "choicesEnglish": ["For the center.", "For the city.", "For the town.", "For the square."],
+    "correctAnswerItalian": "Per il centro.",
+    "correctAnswerEnglish": "For the center.",
+    "feedbackItalian": "Indica la destinazione principale.",
+    "feedbackEnglish": "Indicates the main destination."
+  },
+  {
+    "choicesItalian": ["In tabaccheria.", "In ufficio.", "In negozio.", "In banca."],
+    "choicesEnglish": ["At the tobacco shop.", "In the office.", "In the shop.", "In the bank."],
+    "correctAnswerItalian": "In tabaccheria.",
+    "correctAnswerEnglish": "At the tobacco shop.",
+    "feedbackItalian": "Luogo di acquisto biglietti e altro.",
+    "feedbackEnglish": "Place to buy tickets and more."
+  },
+  {
+    "choicesItalian": ["Buongiorno.", "Ciao.", "Salve.", "Ehi."],
+    "choicesEnglish": ["Good morning.", "Hi.", "Hello.", "Hey."],
+    "correctAnswerItalian": "Buongiorno.",
+    "correctAnswerEnglish": "Good morning.",
+    "feedbackItalian": "Saluto formale mattutino.",
+    "feedbackEnglish": "Formal morning greeting."
   }
 ]

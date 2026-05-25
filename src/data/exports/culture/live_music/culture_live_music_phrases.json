@@ -1,104 +1,1562 @@
 [
   {
-    "id": "s85-p6",
-    "italian": "Vogliamo il bis!",
-    "english": "We want an encore!",
-    "type": "phrase",
-    "choices": [
-      "Vogliamo il bis!",
-      "La band suona molto bene.",
-      "Quando inizia il concerto?",
-      "Ho comprato il biglietto online."
-    ],
-    "correctAnswer": "Vogliamo il bis!",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Vogliamo il bis!\"."
-    }
-  },
-  {
-    "id": "s85-p1",
+    "id": "s92-p1",
     "italian": "Quando inizia il concerto?",
     "english": "When does the concert start?",
     "type": "phrase",
-    "choices": [
-      "È un posto in piedi?",
-      "Ho comprato il biglietto online.",
+    "choicesItalian": [
       "Quando inizia il concerto?",
-      "Vogliamo il bis!"
+      "Quanto costa il biglietto?",
+      "Dov'è il palco principale?",
+      "A che ora finisce il giro?"
     ],
-    "correctAnswer": "Quando inizia il concerto?",
+    "choicesEnglish": [
+      "When does the concert start?",
+      "How much is the ticket?",
+      "Where is the main stage?",
+      "What time does the tour end?"
+    ],
+    "correctAnswerItalian": "Quando inizia il concerto?",
+    "correctAnswerEnglish": "When does the concert start?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Quando inizia il concerto?\"."
+      "correctItalian": "Ottimo! Una domanda fondamentale per organizzarsi.",
+      "incorrectItalian": "No, stai chiedendo l'orario di inizio dello spettacolo.",
+      "correctEnglish": "Great! A fundamental question for organizing yourself.",
+      "incorrectEnglish": "No, you are asking for the start time of the show."
     }
   },
   {
-    "id": "s85-p5",
-    "italian": "È un posto in piedi?",
-    "english": "Is it a standing place?",
+    "id": "s92-p2",
+    "italian": "Due biglietti in piedi, per favore.",
+    "english": "Two standing tickets, please.",
     "type": "phrase",
-    "choices": [
-      "Il cantante ha una bella voce.",
-      "È un posto in piedi?",
-      "La band suona molto bene.",
-      "Quando inizia il concerto?"
+    "choicesItalian": [
+      "Due biglietti in piedi, per favore.",
+      "Due posti a sedere in alto.",
+      "Una mappa del locale, grazie.",
+      "Un braccialetto rosso, per me."
     ],
-    "correctAnswer": "È un posto in piedi?",
+    "choicesEnglish": [
+      "Two standing tickets, please.",
+      "Two seats at the top.",
+      "A map of the venue, thanks.",
+      "A red wristband, for me."
+    ],
+    "correctAnswerItalian": "Due biglietti in piedi, per favore.",
+    "correctAnswerEnglish": "Two standing tickets, please.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"È un posto in piedi?\"."
+      "correctItalian": "Esatto! Scegliere la modalità di fruizione del concerto.",
+      "incorrectItalian": "No, stai specificando che vuoi stare in piedi davanti al palco.",
+      "correctEnglish": "Exactly! Choosing how to experience the concert.",
+      "incorrectEnglish": "No, you are specifying that you want to stand in front of the stage."
     }
   },
   {
-    "id": "s85-p2",
-    "italian": "La band suona molto bene.",
-    "english": "The band plays very well.",
+    "id": "s92-p3",
+    "italian": "Posti a sedere quasi finiti.",
+    "english": "Seating is almost sold out.",
     "type": "phrase",
-    "choices": [
-      "Ho comprato il biglietto online.",
-      "La band suona molto bene.",
-      "Il cantante ha una bella voce.",
-      "È un posto in piedi?"
+    "choicesItalian": [
+      "Posti a sedere quasi finiti.",
+      "Biglietti online non validi.",
+      "Ingresso gratuito per tutti.",
+      "Uscita di sicurezza bloccata."
     ],
-    "correctAnswer": "La band suona molto bene.",
+    "choicesEnglish": [
+      "Seating is almost sold out.",
+      "Online tickets not valid.",
+      "Free entry for everyone.",
+      "Emergency exit blocked."
+    ],
+    "correctAnswerItalian": "Posti a sedere quasi finiti.",
+    "correctAnswerEnglish": "Seating is almost sold out.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"La band suona molto bene.\"."
+      "correctItalian": "Giusto! Un'avvertenza del cassiere sulla disponibilità.",
+      "incorrectItalian": "No, indica che rimangono pochissime sedie libere.",
+      "correctEnglish": "Right! A warning from the cashier about availability.",
+      "incorrectEnglish": "No, it indicates that very few seats are left."
     }
   },
   {
-    "id": "s85-p4",
+    "id": "s92-p4",
+    "italian": "Il mio codice QR non funziona.",
+    "english": "My QR code isn't working.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Il mio codice QR non funziona.",
+      "La mia carta è scaduta.",
+      "Il mio amico è già dentro.",
+      "La mia birra è calda."
+    ],
+    "choicesEnglish": [
+      "My QR code isn't working.",
+      "My card is expired.",
+      "My friend is already inside.",
+      "My beer is warm."
+    ],
+    "correctAnswerItalian": "Il mio codice QR non funziona.",
+    "correctAnswerEnglish": "My QR code isn't working.",
+    "feedback": {
+      "correctItalian": "Ottimo! Segnalare un problema tecnico all'ingresso.",
+      "incorrectItalian": "No, hai difficoltà con la scansione del biglietto digitale.",
+      "correctEnglish": "Great! Reporting a technical problem at the entrance.",
+      "incorrectEnglish": "No, you're having trouble scanning the digital ticket."
+    }
+  },
+  {
+    "id": "s92-p5",
+    "italian": "Mi può dare un biglietto fisico?",
+    "english": "Can you give me a physical ticket?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mi può dare un biglietto fisico?",
+      "Mi può dare un bicchiere d'acqua?",
+      "Mi può dare un tappo per orecchie?",
+      "Mi può dare un autografo?"
+    ],
+    "choicesEnglish": [
+      "Can you give me a physical ticket?",
+      "Can you give me a glass of water?",
+      "Can you give me an earplug?",
+      "Can you give me an autograph?"
+    ],
+    "correctAnswerItalian": "Mi può dare un biglietto fisico?",
+    "correctAnswerEnglish": "Can you give me a physical ticket?",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedere una stampa cartacea se il digitale fallisce.",
+      "incorrectItalian": "No, stai chiedendo il biglietto di carta.",
+      "correctEnglish": "Exactly! Asking for a paper print if the digital one fails.",
+      "incorrectEnglish": "No, you are asking for the paper ticket."
+    }
+  },
+  {
+    "id": "s92-p6",
+    "italian": "C'è molta gente davanti al palco.",
+    "english": "There are many people in front of the stage.",
+    "type": "phrase",
+    "choicesItalian": [
+      "C'è molta gente davanti al palco.",
+      "C'è molta luce in sala.",
+      "C'è molto fumo fuori.",
+      "C'è molta coda al bar."
+    ],
+    "choicesEnglish": [
+      "There are many people in front of the stage.",
+      "There is a lot of light in the room.",
+      "There is a lot of smoke outside.",
+      "There is a long queue at the bar."
+    ],
+    "correctAnswerItalian": "C'è molta gente davanti al palco.",
+    "correctAnswerEnglish": "There are many people in front of the stage.",
+    "feedback": {
+      "correctItalian": "Giusto! Notare la folla nella zona principale.",
+      "incorrectItalian": "No, parla del grande afflusso di persone sotto il palco.",
+      "correctEnglish": "Right! Noticing the crowd in the main area.",
+      "incorrectEnglish": "No, it's about the large influx of people under the stage."
+    }
+  },
+  {
+    "id": "s92-p7",
+    "italian": "Spostiamoci vicino alle casse.",
+    "english": "Let's move near the speakers.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Spostiamoci vicino alle casse.",
+      "Andiamo verso l'uscita ora.",
+      "Saliamo sulla gradinata.",
+      "Restiamo qui in silenzio."
+    ],
+    "choicesEnglish": [
+      "Let's move near the speakers.",
+      "Let's go towards the exit now.",
+      "Let's go up the bleachers.",
+      "Let's stay here in silence."
+    ],
+    "correctAnswerItalian": "Spostiamoci vicino alle casse.",
+    "correctAnswerEnglish": "Let's move near the speakers.",
+    "feedback": {
+      "correctItalian": "Ottimo! Proposta per sentire meglio (o più forte) la musica.",
+      "incorrectItalian": "No, suggerisci di avvicinarti alla fonte del suono.",
+      "correctEnglish": "Great! Proposal to hear the music better (or louder).",
+      "incorrectEnglish": "No, you're suggesting moving closer to the sound source."
+    }
+  },
+  {
+    "id": "s92-p8",
+    "italian": "Il volume è troppo alto.",
+    "english": "The volume is too high.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Il volume è troppo alto.",
+      "La musica è troppo lenta.",
+      "Il locale è troppo vuoto.",
+      "Il tour è troppo breve."
+    ],
+    "choicesEnglish": [
+      "The volume is too high.",
+      "The music is too slow.",
+      "The venue is too empty.",
+      "The tour is too short."
+    ],
+    "correctAnswerItalian": "Il volume è troppo alto.",
+    "correctAnswerEnglish": "The volume is too high.",
+    "feedback": {
+      "correctItalian": "Esatto! Lamentarsi dell'intensità sonora eccessiva.",
+      "incorrectItalian": "No, parla del suono che dà fastidio alle orecchie.",
+      "correctEnglish": "Exactly! Complaining about excessive sound intensity.",
+      "incorrectEnglish": "No, it's about the sound bothering the ears."
+    }
+  },
+  {
+    "id": "s92-p9",
+    "italian": "Hai dei tappi di riserva?",
+    "english": "Do you have spare earplugs?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Hai dei tappi di riserva?",
+      "Hai una birra media?",
+      "Hai il biglietto online?",
+      "Hai perso il berretto?"
+    ],
+    "choicesEnglish": [
+      "Do you have spare earplugs?",
+      "Do you have a medium beer?",
+      "Do you have the online ticket?",
+      "Did you lose your cap?"
+    ],
+    "correctAnswerItalian": "Hai dei tappi di riserva?",
+    "correctAnswerEnglish": "Do you have spare earplugs?",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere protezione per l'udito a un amico.",
+      "incorrectItalian": "No, stai cercando qualcosa da mettere nelle orecchie.",
+      "correctEnglish": "Right! Asking a friend for hearing protection.",
+      "incorrectEnglish": "No, you are looking for something to put in your ears."
+    }
+  },
+  {
+    "id": "s92-p10",
+    "italian": "Il chitarrista è bravissimo.",
+    "english": "The guitarist is very good.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Il chitarrista è bravissimo.",
+      "Il batterista è stanchissimo.",
+      "Il cantante è stonatissimo.",
+      "Il basso è rottissimo."
+    ],
+    "choicesEnglish": [
+      "The guitarist is very good.",
+      "The drummer is very tired.",
+      "The singer is very out of tune.",
+      "The bass is very broken."
+    ],
+    "correctAnswerItalian": "Il chitarrista è bravissimo.",
+    "correctAnswerEnglish": "The guitarist is very good.",
+    "feedback": {
+      "correctItalian": "Ottimo! Un complimento alla tecnica del musicista.",
+      "incorrectItalian": "No, stai lodando chi suona la chitarra.",
+      "correctEnglish": "Great! A compliment to the musician's technique.",
+      "incorrectEnglish": "No, you are praising the guitar player."
+    }
+  },
+  {
+    "id": "s92-p11",
+    "italian": "Che bella voce!",
+    "english": "What a beautiful voice!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Che bella voce!",
+      "Che brutto tempo!",
+      "Che calca assurda!",
+      "Che birra amara!"
+    ],
+    "choicesEnglish": [
+      "What a beautiful voice!",
+      "What bad weather!",
+      "What an absurd crowd!",
+      "What a bitter beer!"
+    ],
+    "correctAnswerItalian": "Che bella voce!",
+    "correctAnswerEnglish": "What a beautiful voice!",
+    "feedback": {
+      "correctItalian": "Esatto! Ammirare la dote canora del frontman o frontwoman.",
+      "incorrectItalian": "No, è un'esclamazione positiva sul canto.",
+      "correctEnglish": "Exactly! Admiring the singing talent of the frontman or frontwoman.",
+      "incorrectEnglish": "No, it's a positive exclamation about singing."
+    }
+  },
+  {
+    "id": "s92-p12",
+    "italian": "Vogliamo il bis!",
+    "english": "We want an encore!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Vogliamo il bis!",
+      "Vogliamo uscire!",
+      "Vogliamo bere!",
+      "Vogliamo dormire!"
+    ],
+    "choicesEnglish": [
+      "We want an encore!",
+      "We want to leave!",
+      "We want to drink!",
+      "We want to sleep!"
+    ],
+    "correctAnswerItalian": "Vogliamo il bis!",
+    "correctAnswerEnglish": "We want an encore!",
+    "feedback": {
+      "correctItalian": "Giusto! Il coro tipico del pubblico alla fine del concerto.",
+      "incorrectItalian": "No, state chiedendo alla band di tornare sul palco.",
+      "correctEnglish": "Right! The typical chant of the audience at the end of the concert.",
+      "incorrectEnglish": "No, you are asking the band to come back on stage."
+    }
+  },
+  {
+    "id": "s92-p13",
+    "italian": "Hanno suonato tre bis.",
+    "english": "They played three encores.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Hanno suonato tre bis.",
+      "Hanno rotto tre casse.",
+      "Hanno bevuto tre birre.",
+      "Hanno perso tre biglietti."
+    ],
+    "choicesEnglish": [
+      "They played three encores.",
+      "They broke three speakers.",
+      "They drank three beers.",
+      "They lost three tickets."
+    ],
+    "correctAnswerItalian": "Hanno suonato tre bis.",
+    "correctAnswerEnglish": "They played three encores.",
+    "feedback": {
+      "correctItalian": "Esatto! Indicare la generosità finale della band.",
+      "incorrectItalian": "No, parla della quantità di brani extra eseguiti.",
+      "correctEnglish": "Exactly! Indicating the final generosity of the band.",
+      "incorrectEnglish": "No, it speaks about the amount of extra tracks performed."
+    }
+  },
+  {
+    "id": "s92-p14",
+    "italian": "La mia canzone preferita!",
+    "english": "My favorite song!",
+    "type": "phrase",
+    "choicesItalian": [
+      "La mia canzone preferita!",
+      "La mia band deludente!",
+      "La mia birra media!",
+      "La mia maglietta sporca!"
+    ],
+    "choicesEnglish": [
+      "My favorite song!",
+      "My disappointing band!",
+      "My medium beer!",
+      "My dirty t-shirt!"
+    ],
+    "correctAnswerItalian": "La mia canzone preferita!",
+    "correctAnswerEnglish": "My favorite song!",
+    "feedback": {
+      "correctItalian": "Ottimo! Esclamazione di gioia quando inizia il brano che ami di più.",
+      "incorrectItalian": "No, stai parlando della traccia che ti piace di più.",
+      "correctEnglish": "Great! Exclamation of joy when the track you love most starts.",
+      "incorrectEnglish": "No, you are talking about the track you like most."
+    }
+  },
+  {
+    "id": "s92-p15",
+    "italian": "Ti tengo il posto.",
+    "english": "I'll save your spot.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ti tengo il posto.",
+      "Ti compro il biglietto.",
+      "Ti porto la birra.",
+      "Ti chiamo un taxi."
+    ],
+    "choicesEnglish": [
+      "I'll save your spot.",
+      "I'll buy your ticket.",
+      "I'll bring you beer.",
+      "I'll call you a taxi."
+    ],
+    "correctAnswerItalian": "Ti tengo il posto.",
+    "correctAnswerEnglish": "I'll save your spot.",
+    "feedback": {
+      "correctItalian": "Giusto! Un favore comune tra amici durante il concerto.",
+      "incorrectItalian": "No, significa che manterrai la posizione per l'amico che si allontana.",
+      "correctEnglish": "Right! A common favor among friends during the concert.",
+      "incorrectEnglish": "No, it means you will keep the position for the friend who steps away."
+    }
+  },
+  {
+    "id": "s92-p16",
+    "italian": "Attento alla calca!",
+    "english": "Watch out for the crowd!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Attento alla calca!",
+      "Attento alla musica!",
+      "Attento alla porta!",
+      "Attento alla pizza!"
+    ],
+    "choicesEnglish": [
+      "Watch out for the crowd!",
+      "Watch out for the music!",
+      "Watch out for the door!",
+      "Watch out for the pizza!"
+    ],
+    "correctAnswerItalian": "Attento alla calca!",
+    "correctAnswerEnglish": "Watch out for the crowd!",
+    "feedback": {
+      "correctItalian": "Esatto! Un avvertimento per non farsi travolgere dalla gente.",
+      "incorrectItalian": "No, è un invito alla prudenza in mezzo a troppe persone.",
+      "correctEnglish": "Exactly! A warning not to get overwhelmed by the people.",
+      "incorrectEnglish": "No, it's a call for caution amidst too many people."
+    }
+  },
+  {
+    "id": "s92-p17",
+    "italian": "Ho la maglietta zuppa di sudore.",
+    "english": "My t-shirt is soaked in sweat.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ho la maglietta zuppa di sudore.",
+      "Ho la borsa piena di soldi.",
+      "Ho la scarpa rotta dal ballo.",
+      "Ho la birra vuota sul tavolo."
+    ],
+    "choicesEnglish": [
+      "My t-shirt is soaked in sweat.",
+      "My bag is full of money.",
+      "My shoe is broken from dancing.",
+      "My beer is empty on the table."
+    ],
+    "correctAnswerItalian": "Ho la maglietta zuppa di sudore.",
+    "correctAnswerEnglish": "My t-shirt is soaked in sweat.",
+    "feedback": {
+      "correctItalian": "Ottimo! Descrive l'effetto di una serata passata a ballare.",
+      "incorrectItalian": "No, significa che sei molto bagnato per lo sforzo fisico.",
+      "correctEnglish": "Great! Describes the effect of an evening spent dancing.",
+      "incorrectEnglish": "No, it means you are very wet from physical effort."
+    }
+  },
+  {
+    "id": "s92-p18",
+    "italian": "I miei piedi gridano vendetta.",
+    "english": "My feet are killing me.",
+    "type": "phrase",
+    "choicesItalian": [
+      "I miei piedi gridano vendetta.",
+      "I miei occhi vedono tutto.",
+      "I miei capelli sono biondi.",
+      "I miei amici sono felici."
+    ],
+    "choicesEnglish": [
+      "My feet are killing me.",
+      "My eyes see everything.",
+      "My hair is blonde.",
+      "My friends are happy."
+    ],
+    "correctAnswerItalian": "I miei piedi gridano vendetta.",
+    "correctAnswerEnglish": "My feet are killing me.",
+    "feedback": {
+      "correctItalian": "Giusto! Un'espressione ironica per dire che hai camminato o ballato troppo.",
+      "incorrectItalian": "No, è un modo colorito per dire che hai i piedi stanchi.",
+      "correctEnglish": "Right! An ironic expression to say you've walked or danced too much.",
+      "incorrectEnglish": "No, it's a colorful way to say your feet are tired."
+    }
+  },
+  {
+    "id": "s92-p19",
+    "italian": "Dobbiamo prendere i biglietti appena escono.",
+    "english": "We must get the tickets as soon as they come out.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dobbiamo prendere i biglietti appena escono.",
+      "Dobbiamo mangiare la pizza appena arriva.",
+      "Dobbiamo chiamare l'host appena entriamo.",
+      "Dobbiamo scansionare il codice appena scendiamo."
+    ],
+    "choicesEnglish": [
+      "We must get the tickets as soon as they come out.",
+      "We must eat the pizza as soon as it arrives.",
+      "We must call the host as soon as we enter.",
+      "We must scan the code as soon as we get off."
+    ],
+    "correctAnswerItalian": "Dobbiamo prendere i biglietti appena escono.",
+    "correctAnswerEnglish": "We must get the tickets as soon as they come out.",
+    "feedback": {
+      "correctItalian": "Esatto! Un piano per non rischiare il sold-out.",
+      "incorrectItalian": "No, si parla di tempestività nell'acquisto.",
+      "correctEnglish": "Exactly! A plan to avoid the risk of sold-out.",
+      "incorrectEnglish": "No, it's about timeliness in the purchase."
+    }
+  },
+  {
+    "id": "s92-p20",
+    "italian": "Ho una fame da lupi.",
+    "english": "I'm starving / hungry as a wolf.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ho una fame da lupi.",
+      "Ho una sete da matti.",
+      "Ho un sonno profondo.",
+      "Ho un'idea brillante."
+    ],
+    "choicesEnglish": [
+      "I'm starving / hungry as a wolf.",
+      "I'm crazy thirsty.",
+      "I'm in a deep sleep.",
+      "I have a brilliant idea."
+    ],
+    "correctAnswerItalian": "Ho una fame da lupi.",
+    "correctAnswerEnglish": "I'm starving / hungry as a wolf.",
+    "feedback": {
+      "correctItalian": "Ottimo! Quello che provi dopo ore di concerto.",
+      "incorrectItalian": "No, è l'espressione tipica per la grande fame.",
+      "correctEnglish": "Great! What you feel after hours of a concert.",
+      "incorrectEnglish": "No, it's the typical expression for great hunger."
+    }
+  },
+  {
+    "id": "s92-p21",
+    "italian": "Una birra media e un'acqua.",
+    "english": "A medium beer and a water.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Una birra media e un'acqua.",
+      "Un vino rosso e un caffè.",
+      "Un tè freddo e un succo.",
+      "Una pizza margherita e basta."
+    ],
+    "choicesEnglish": [
+      "A medium beer and a water.",
+      "A red wine and a coffee.",
+      "An iced tea and a juice.",
+      "A margherita pizza and that's it."
+    ],
+    "correctAnswerItalian": "Una birra media e un'acqua.",
+    "correctAnswerEnglish": "A medium beer and a water.",
+    "feedback": {
+      "correctItalian": "Giusto! Un'ordinazione classica al bar del locale.",
+      "incorrectItalian": "No, stai chiedendo due bevande specifiche.",
+      "correctEnglish": "Right! A classic order at the venue's bar.",
+      "incorrectEnglish": "No, you are asking for two specific drinks."
+    }
+  },
+  {
+    "id": "s92-p22",
+    "italian": "Hanno cambiato genere.",
+    "english": "They changed genres.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Hanno cambiato genere.",
+      "Hanno cambiato cantante.",
+      "Hanno cambiato locale.",
+      "Hanno cambiato orario."
+    ],
+    "choicesEnglish": [
+      "They changed genres.",
+      "They changed singers.",
+      "They changed venues.",
+      "They changed the time."
+    ],
+    "correctAnswerItalian": "Hanno cambiato genere.",
+    "correctAnswerEnglish": "They changed genres.",
+    "feedback": {
+      "correctItalian": "Esatto! Parla dell'evoluzione musicale della band.",
+      "incorrectItalian": "No, si riferisce allo stile di musica che suonano.",
+      "correctEnglish": "Exactly! It speaks about the band's musical evolution.",
+      "incorrectEnglish": "No, it refers to the style of music they play."
+    }
+  },
+  {
+    "id": "s92-p23",
+    "italian": "L'acustica non è perfetta.",
+    "english": "The acoustics aren't perfect.",
+    "type": "phrase",
+    "choicesItalian": [
+      "L'acustica non è perfetta.",
+      "La luce non è chiara.",
+      "La birra non è fresca.",
+      "Il posto non è libero."
+    ],
+    "choicesEnglish": [
+      "The acoustics aren't perfect.",
+      "The light isn't clear.",
+      "The beer isn't cool.",
+      "The place isn't free."
+    ],
+    "correctAnswerItalian": "L'acustica non è perfetta.",
+    "correctAnswerEnglish": "The acoustics aren't perfect.",
+    "feedback": {
+      "correctItalian": "Ottimo! Un commento tecnico sulla qualità del suono nel locale.",
+      "incorrectItalian": "No, parla di come si sente la musica nell'ambiente.",
+      "correctEnglish": "Great! A technical comment on the sound quality in the venue.",
+      "incorrectEnglish": "No, it's about how the music is heard in the room."
+    }
+  },
+  {
+    "id": "s92-p24",
+    "italian": "Il locale è molto intimo.",
+    "english": "The venue is very intimate.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Il locale è molto intimo.",
+      "Il locale è molto sporco.",
+      "Il locale è molto rumoroso.",
+      "Il locale è molto lontano."
+    ],
+    "choicesEnglish": [
+      "The venue is very intimate.",
+      "The venue is very dirty.",
+      "The venue is very noisy.",
+      "The venue is very far."
+    ],
+    "correctAnswerItalian": "Il locale è molto intimo.",
+    "correctAnswerEnglish": "The venue is very intimate.",
+    "feedback": {
+      "correctItalian": "Giusto! Apprezzare un posto piccolo e accogliente.",
+      "incorrectItalian": "No, descrive l'atmosfera raccolta del posto.",
+      "correctEnglish": "Right! Appreciating a small and cozy place.",
+      "incorrectEnglish": "No, it describes the cozy atmosphere of the place."
+    }
+  },
+  {
+    "id": "s92-p25",
+    "italian": "Ho perso il mio berretto.",
+    "english": "I lost my cap.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ho perso il mio berretto.",
+      "Ho perso il mio biglietto.",
+      "Ho perso la mia voce.",
+      "Ho perso il mio amico."
+    ],
+    "choicesEnglish": [
+      "I lost my cap.",
+      "I lost my ticket.",
+      "I lost my voice.",
+      "I lost my friend."
+    ],
+    "correctAnswerItalian": "Ho perso il mio berretto.",
+    "correctAnswerEnglish": "I lost my cap.",
+    "feedback": {
+      "correctItalian": "Esatto! Segnalare la perdita di un oggetto personale.",
+      "incorrectItalian": "No, stai dicendo che non trovi più il tuo cappello.",
+      "correctEnglish": "Exactly! Reporting the loss of a personal item.",
+      "incorrectEnglish": "No, you are saying that you can no longer find your hat."
+    }
+  },
+  {
+    "id": "s92-p26",
+    "italian": "Ufficio oggetti smarriti.",
+    "english": "Lost and found office.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ufficio oggetti smarriti.",
+      "Ufficio informazioni turistiche.",
+      "Ufficio postale centrale.",
+      "Ufficio del personale tecnico."
+    ],
+    "choicesEnglish": [
+      "Lost and found office.",
+      "Tourist information office.",
+      "Central post office.",
+      "Technical staff office."
+    ],
+    "correctAnswerItalian": "Ufficio oggetti smarriti.",
+    "correctAnswerEnglish": "Lost and found office.",
+    "feedback": {
+      "correctItalian": "Ottimo! Il posto dove andare a cercare ciò che hai perso.",
+      "incorrectItalian": "No, è il luogo preposto al ritrovamento delle cose perse.",
+      "correctEnglish": "Great! The place to go look for what you lost.",
+      "incorrectEnglish": "No, it's the place assigned for finding lost things."
+    }
+  },
+  {
+    "id": "s92-p27",
+    "italian": "Chieda al ragazzo con la pettorina gialla.",
+    "english": "Ask the guy with the yellow vest.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Chieda al ragazzo con la pettorina gialla.",
+      "Guardi la ragazza col vestito rosso.",
+      "Parli con l'uomo col cappello nero.",
+      "Cerchi il bambino col palloncino blu."
+    ],
+    "choicesEnglish": [
+      "Ask the guy with the yellow vest.",
+      "Look at the girl in the red dress.",
+      "Talk to the man with the black hat.",
+      "Look for the child with the blue balloon."
+    ],
+    "correctAnswerItalian": "Chieda al ragazzo con la pettorina gialla.",
+    "correctAnswerEnglish": "Ask the guy with the yellow vest.",
+    "feedback": {
+      "correctItalian": "Giusto! Identificare un membro dello staff dalla divisa.",
+      "incorrectItalian": "No, stai indirizzando qualcuno verso un addetto alla sicurezza.",
+      "correctEnglish": "Right! Identifying a staff member by their uniform.",
+      "incorrectEnglish": "No, you are directing someone to a security officer."
+    }
+  },
+  {
+    "id": "s92-p28",
+    "italian": "Buon proseguimento!",
+    "english": "Enjoy the rest of it!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Buon proseguimento!",
+      "Buon viaggio!",
+      "Buon lavoro!",
+      "Buon appetito!"
+    ],
+    "choicesEnglish": [
+      "Enjoy the rest of it!",
+      "Have a good trip!",
+      "Have a good workday!",
+      "Enjoy your meal!"
+    ],
+    "correctAnswerItalian": "Buon proseguimento!",
+    "correctAnswerEnglish": "Enjoy the rest of it!",
+    "feedback": {
+      "correctItalian": "Esatto! Un saluto cortese per chi resta a godersi l'evento.",
+      "incorrectItalian": "No, è un augurio di buon proseguimento di serata o attività.",
+      "correctEnglish": "Exactly! A polite greeting for those staying to enjoy the event.",
+      "incorrectEnglish": "No, it's a wish for the successful continuation of the evening or activity."
+    }
+  },
+  {
+    "id": "s92-p29",
+    "italian": "Speriamo che tornino presto.",
+    "english": "Let's hope they come back soon.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Speriamo che tornino presto.",
+      "Speriamo che piova poco.",
+      "Speriamo che aprano ora.",
+      "Speriamo che vincano loro."
+    ],
+    "choicesEnglish": [
+      "Let's hope they come back soon.",
+      "Let's hope it rains a little.",
+      "Let's hope they open now.",
+      "Let's hope they win."
+    ],
+    "correctAnswerItalian": "Speriamo che tornino presto.",
+    "correctAnswerEnglish": "Let's hope they come back soon.",
+    "feedback": {
+      "correctItalian": "Ottimo! Esprimere il desiderio di rivedere la band dal vivo.",
+      "incorrectItalian": "No, stai auspicando un nuovo concerto a breve.",
+      "correctEnglish": "Great! Expressing the desire to see the band live again.",
+      "incorrectEnglish": "No, you are hoping for a new concert soon."
+    }
+  },
+  {
+    "id": "s92-p30",
+    "italian": "Aprono le prevendite sei mesi prima.",
+    "english": "They open presales six months in advance.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Aprono le prevendite sei mesi prima.",
+      "Chiudono il bar dieci minuti dopo.",
+      "Iniziano il tour tre giorni prima.",
+      "Finiscono il disco un anno dopo."
+    ],
+    "choicesEnglish": [
+      "They open presales six months in advance.",
+      "They close the bar ten minutes later.",
+      "They start the tour three days earlier.",
+      "They finish the record a year later."
+    ],
+    "correctAnswerItalian": "Aprono le prevendite sei mesi prima.",
+    "correctAnswerEnglish": "They open presales six months in advance.",
+    "feedback": {
+      "correctItalian": "Giusto! Un'informazione utile sull'acquisto anticipato.",
+      "incorrectItalian": "No, parla dei tempi di vendita dei biglietti.",
+      "correctEnglish": "Right! Useful information about advance purchasing.",
+      "incorrectEnglish": "No, it speaks about the timing of ticket sales."
+    }
+  },
+  {
+    "id": "s92-p31",
+    "italian": "Ingresso consentito dalle venti.",
+    "english": "Entry allowed from 8 PM.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ingresso consentito dalle venti.",
+      "Uscita vietata dalle diciannove.",
+      "Pausa prevista alle ventuno.",
+      "Concerto finito alle ventidue."
+    ],
+    "choicesEnglish": [
+      "Entry allowed from 8 PM.",
+      "Exit forbidden from 7 PM.",
+      "Break planned at 9 PM.",
+      "Concert finished at 10 PM."
+    ],
+    "correctAnswerItalian": "Ingresso consentito dalle venti.",
+    "correctAnswerEnglish": "Entry allowed from 8 PM.",
+    "feedback": {
+      "correctItalian": "Esatto! L'orario di apertura dei cancelli o delle porte.",
+      "incorrectItalian": "No, specifica da quando si può entrare nel locale.",
+      "correctEnglish": "Exactly! The opening time for gates or doors.",
+      "incorrectEnglish": "No, it specifies when you can enter the venue."
+    }
+  },
+  {
+    "id": "s92-p32",
+    "italian": "Hanno cambiato album.",
+    "english": "They changed albums.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Hanno cambiato album.",
+      "Hanno cambiato palco.",
+      "Hanno cambiato treno.",
+      "Hanno cambiato idea."
+    ],
+    "choicesEnglish": [
+      "They changed albums.",
+      "They changed stages.",
+      "They changed trains.",
+      "They changed their minds."
+    ],
+    "correctAnswerItalian": "Hanno cambiato album.",
+    "correctAnswerEnglish": "They changed albums.",
+    "feedback": {
+      "correctItalian": "Ottimo! Significa che stanno suonando canzoni nuove.",
+      "incorrectItalian": "No, si riferisce alla produzione discografica recente.",
+      "correctEnglish": "Great! It means they are playing new songs.",
+      "incorrectEnglish": "No, it refers to recent record production."
+    }
+  },
+  {
+    "id": "s92-p33",
+    "italian": "Mi sto abituando al volume.",
+    "english": "I'm getting used to the volume.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mi sto abituando al volume.",
+      "Mi sto stancando della coda.",
+      "Mi sto divertendo un sacco.",
+      "Mi sto bagnando di sudore."
+    ],
+    "choicesEnglish": [
+      "I'm getting used to the volume.",
+      "I'm getting tired of the queue.",
+      "I'm having a lot of fun.",
+      "I'm getting soaked in sweat."
+    ],
+    "correctAnswerItalian": "Mi sto abituando al volume.",
+    "correctAnswerEnglish": "I'm getting used to the volume.",
+    "feedback": {
+      "correctItalian": "Giusto! Un processo di adattamento al rumore forte.",
+      "incorrectItalian": "No, indica che le orecchie non soffrono più come all'inizio.",
+      "correctEnglish": "Right! A process of adapting to loud noise.",
+      "incorrectEnglish": "No, it indicates that the ears no longer suffer as they did at the beginning."
+    }
+  },
+  {
+    "id": "s92-p34",
+    "italian": "L'anno prossimo faranno un tour.",
+    "english": "Next year they will tour.",
+    "type": "phrase",
+    "choicesItalian": [
+      "L'anno prossimo faranno un tour.",
+      "Il mese prossimo faranno un disco.",
+      "Domani faranno una festa.",
+      "Tra poco faranno il bis."
+    ],
+    "choicesEnglish": [
+      "Next year they will tour.",
+      "Next month they will make a record.",
+      "Tomorrow they will have a party.",
+      "Shortly they will do an encore."
+    ],
+    "correctAnswerItalian": "L'anno prossimo faranno un tour.",
+    "correctAnswerEnglish": "Next year they will tour.",
+    "feedback": {
+      "correctItalian": "Esatto! Un'informazione sui piani futuri della band.",
+      "incorrectItalian": "No, parla della serie di concerti in programma nel futuro.",
+      "correctEnglish": "Exactly! Information about the band's future plans.",
+      "incorrectEnglish": "No, it speaks about the series of scheduled concerts in the future."
+    }
+  },
+  {
+    "id": "s92-p35",
+    "italian": "Speriamo di trovarlo.",
+    "english": "Let's hope to find it.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Speriamo di trovarlo.",
+      "Speriamo di perderlo.",
+      "Speriamo di venderlo.",
+      "Speriamo di romperlo."
+    ],
+    "choicesEnglish": [
+      "Let's hope to find it.",
+      "Let's hope to lose it.",
+      "Let's hope to sell it.",
+      "Let's hope to break it."
+    ],
+    "correctAnswerItalian": "Speriamo di trovarlo.",
+    "correctAnswerEnglish": "Let's hope to find it.",
+    "feedback": {
+      "correctItalian": "Ottimo! Quello che dici quando cerchi un oggetto smarrito.",
+      "incorrectItalian": "No, stai esprimendo speranza in un ritrovamento.",
+      "correctEnglish": "Great! What you say when looking for a lost item.",
+      "incorrectEnglish": "No, you are expressing hope for a discovery."
+    }
+  },
+  {
+    "id": "s92-p36",
+    "italian": "Si entra da quella porta.",
+    "english": "You enter through that door.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Si entra da quella porta.",
+      "Si esce da questa finestra.",
+      "Si mangia su quel tavolo.",
+      "Si balla sopra il palco."
+    ],
+    "choicesEnglish": [
+      "You enter through that door.",
+      "You exit through this window.",
+      "You eat on that table.",
+      "You dance on top of the stage."
+    ],
+    "correctAnswerItalian": "Si entra da quella porta.",
+    "correctAnswerEnglish": "You enter through that door.",
+    "feedback": {
+      "correctItalian": "Giusto! Un'indicazione per accedere al locale.",
+      "incorrectItalian": "No, specifica l'ingresso corretto.",
+      "correctEnglish": "Right! An indication to access the venue.",
+      "incorrectEnglish": "No, it specifies the correct entrance."
+    }
+  },
+  {
+    "id": "s92-p37",
+    "italian": "Buon concerto!",
+    "english": "Enjoy the concert!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Buon concerto!",
+      "Buona pizza!",
+      "Buona notte!",
+      "Buon viaggio!"
+    ],
+    "choicesEnglish": [
+      "Enjoy the concert!",
+      "Good pizza!",
+      "Good night!",
+      "Have a good trip!"
+    ],
+    "correctAnswerItalian": "Buon concerto!",
+    "correctAnswerEnglish": "Enjoy the concert!",
+    "feedback": {
+      "correctItalian": "Esatto! Un augurio classico prima che inizi la musica.",
+      "incorrectItalian": "No, stai augurando a qualcuno di godersi lo spettacolo.",
+      "correctEnglish": "Exactly! A classic wish before the music starts.",
+      "incorrectEnglish": "No, you are wishing someone to enjoy the show."
+    }
+  },
+  {
+    "id": "s92-p38",
+    "italian": "Sbrigati che sta per iniziare!",
+    "english": "Hurry up, it's about to start!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Sbrigati che sta per iniziare!",
+      "Fermati che è appena finito!",
+      "Ridi che è molto divertente!",
+      "Dormi che è molto tardi!"
+    ],
+    "choicesEnglish": [
+      "Hurry up, it's about to start!",
+      "Stop, it just finished!",
+      "Laugh, it's very funny!",
+      "Sleep, it's very late!"
+    ],
+    "correctAnswerItalian": "Sbrigati che sta per iniziare!",
+    "correctAnswerEnglish": "Hurry up, it's about to start!",
+    "feedback": {
+      "correctItalian": "Ottimo! Un incitamento a fare in fretta.",
+      "incorrectItalian": "No, indica che manca pochissimo all'inizio.",
+      "correctEnglish": "Great! An encouragement to hurry up.",
+      "incorrectEnglish": "No, it indicates that it's very close to starting."
+    }
+  },
+  {
+    "id": "s92-p39",
+    "italian": "Non si capiscono le parole.",
+    "english": "The words cannot be understood.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Non si capiscono le parole.",
+      "Non si sentono le note.",
+      "Non si vedono le luci.",
+      "Non si beve la birra."
+    ],
+    "choicesEnglish": [
+      "The words cannot be understood.",
+      "The notes cannot be heard.",
+      "The lights cannot be seen.",
+      "The beer is not drunk."
+    ],
+    "correctAnswerItalian": "Non si capiscono le parole.",
+    "correctAnswerEnglish": "The words cannot be understood.",
+    "feedback": {
+      "correctItalian": "Giusto! Succede spesso quando il volume è troppo alto o l'acustica è pessima.",
+      "incorrectItalian": "No, parla della difficoltà di comprendere il testo delle canzoni.",
+      "correctEnglish": "Right! It often happens when the volume is too high or the acoustics are poor.",
+      "incorrectEnglish": "No, it speaks of the difficulty of understanding the lyrics of the songs."
+    }
+  },
+  {
+    "id": "s92-p40",
+    "italian": "Ne valeva la pena.",
+    "english": "It was worth it.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ne valeva la pena.",
+      "Era tempo perso.",
+      "Non era divertente.",
+      "Costava troppo caro."
+    ],
+    "choicesEnglish": [
+      "It was worth it.",
+      "It was a waste of time.",
+      "It wasn't fun.",
+      "It was too expensive."
+    ],
+    "correctAnswerItalian": "Ne valeva la pena.",
+    "correctAnswerEnglish": "It was worth it.",
+    "feedback": {
+      "correctItalian": "Esatto! Un commento positivo sull'esperienza vissuta.",
+      "incorrectItalian": "No, indica che la fatica o il prezzo sono stati ripagati dal piacere.",
+      "correctEnglish": "Exactly! A positive comment on the experience lived.",
+      "incorrectEnglish": "No, it indicates that the effort or the price were rewarded by pleasure."
+    }
+  },
+  {
+    "id": "s92-p41",
     "italian": "Ho comprato il biglietto online.",
     "english": "I bought the ticket online.",
     "type": "phrase",
-    "choices": [
-      "La band suona molto bene.",
-      "Quando inizia il concerto?",
-      "Vogliamo il bis!",
-      "Ho comprato il biglietto online."
+    "choicesItalian": [
+      "Ho comprato il biglietto online.",
+      "Ho perso il mio berretto rosso.",
+      "Ho chiesto aiuto alla cassa.",
+      "Ho bevuto una birra media."
     ],
-    "correctAnswer": "Ho comprato il biglietto online.",
+    "choicesEnglish": [
+      "I bought the ticket online.",
+      "I lost my red cap.",
+      "I asked for help at the desk.",
+      "I drank a medium beer."
+    ],
+    "correctAnswerItalian": "Ho comprato il biglietto online.",
+    "correctAnswerEnglish": "I bought the ticket online.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho comprato il biglietto online.\"."
+      "correctItalian": "Ottimo! Informare sulla modalità di acquisto digitale.",
+      "incorrectItalian": "No, stai parlando di un acquisto fatto sul web.",
+      "correctEnglish": "Great! Informing about the digital purchase method.",
+      "incorrectEnglish": "No, you are talking about a purchase made on the web."
     }
   },
   {
-    "id": "s85-p3",
-    "italian": "Il cantante ha una bella voce.",
-    "english": "The singer has a beautiful voice.",
+    "id": "s92-p42",
+    "italian": "Controlla la mail di conferma.",
+    "english": "Check the confirmation email.",
     "type": "phrase",
-    "choices": [
-      "Quando inizia il concerto?",
-      "Vogliamo il bis!",
-      "È un posto in piedi?",
-      "Il cantante ha una bella voce."
+    "choicesItalian": [
+      "Controlla la mail di conferma.",
+      "Chiama il tuo amico subito.",
+      "Cerca il codice QR qui.",
+      "Paga il conto al bar."
     ],
-    "correctAnswer": "Il cantante ha una bella voce.",
+    "choicesEnglish": [
+      "Check the confirmation email.",
+      "Call your friend right away.",
+      "Look for the QR code here.",
+      "Pay the bill at the bar."
+    ],
+    "correctAnswerItalian": "Controlla la mail di conferma.",
+    "correctAnswerEnglish": "Check the confirmation email.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Il cantante ha una bella voce.\"."
+      "correctItalian": "Giusto! Un consiglio se il biglietto digitale non si trova.",
+      "incorrectItalian": "No, è un invito a guardare nella posta elettronica.",
+      "correctEnglish": "Right! Advice if the digital ticket is not found.",
+      "incorrectEnglish": "No, it is an invitation to look in the email."
+    }
+  },
+  {
+    "id": "s92-p43",
+    "italian": "Hai guardato nello spam?",
+    "english": "Did you look in the spam folder?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Hai guardato nello spam?",
+      "Hai bevuto troppa birra?",
+      "Hai visto il cantante?",
+      "Hai perso il documento?"
+    ],
+    "choicesEnglish": [
+      "Did you look in the spam folder?",
+      "Did you drink too much beer?",
+      "Did you see the singer?",
+      "Did you lose the document?"
+    ],
+    "correctAnswerItalian": "Hai guardato nello spam?",
+    "correctAnswerEnglish": "Did you look in the spam folder?",
+    "feedback": {
+      "correctItalian": "Esatto! Un posto tipico dove finiscono le mail importanti.",
+      "incorrectItalian": "No, chiedi se ha controllato la posta indesiderata.",
+      "correctEnglish": "Exactly! A typical place where important emails end up.",
+      "incorrectEnglish": "No, you're asking if they checked the junk mail."
+    }
+  },
+  {
+    "id": "s92-p44",
+    "italian": "Dicono che il codice non funziona.",
+    "english": "They say the code doesn't work.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dicono che il codice non funziona.",
+      "Dicono che il bar è chiuso.",
+      "Dicono che la band è arrivata.",
+      "Dicono che il tour è finito."
+    ],
+    "choicesEnglish": [
+      "They say the code doesn't work.",
+      "They say the bar is closed.",
+      "They say the band has arrived.",
+      "They say the tour is over."
+    ],
+    "correctAnswerItalian": "Dicono che il codice non funziona.",
+    "correctAnswerEnglish": "They say the code doesn't work.",
+    "feedback": {
+      "correctItalian": "Ottimo! Riportare il problema segnalato dallo staff.",
+      "incorrectItalian": "No, stai spiegando l'errore tecnico all'amico.",
+      "correctEnglish": "Great! Reporting the problem flagged by the staff.",
+      "incorrectEnglish": "No, you are explaining the technical error to your friend."
+    }
+  },
+  {
+    "id": "s92-p45",
+    "italian": "È un problema tecnico.",
+    "english": "It's a technical problem.",
+    "type": "phrase",
+    "choicesItalian": [
+      "È un problema tecnico.",
+      "È una fortuna incredibile.",
+      "È un regalo gradito.",
+      "È una canzone noiosa."
+    ],
+    "choicesEnglish": [
+      "It's a technical problem.",
+      "It's incredible luck.",
+      "It's a welcome gift.",
+      "It's a boring song."
+    ],
+    "correctAnswerItalian": "È un problema tecnico.",
+    "correctAnswerEnglish": "It's a technical problem.",
+    "feedback": {
+      "correctItalian": "Giusto! Spiegazione data spesso alla cassa.",
+      "incorrectItalian": "No, indica che qualcosa a livello digitale non va bene.",
+      "correctEnglish": "Right! Explanation often given at the ticket counter.",
+      "incorrectEnglish": "No, it indicates that something at the digital level is wrong."
+    }
+  },
+  {
+    "id": "s92-p46",
+    "italian": "Scusi l'attesa.",
+    "english": "Sorry for the wait.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Scusi l'attesa.",
+      "Scusi il disturbo.",
+      "Scusi l'errore.",
+      "Scusi il ritardo."
+    ],
+    "choicesEnglish": [
+      "Sorry for the wait.",
+      "Excuse the disturbance.",
+      "Sorry for the mistake.",
+      "Sorry for the delay."
+    ],
+    "correctAnswerItalian": "Scusi l'attesa.",
+    "correctAnswerEnglish": "Sorry for the wait.",
+    "feedback": {
+      "correctItalian": "Esatto! Una frase di cortesia usata dal personale.",
+      "incorrectItalian": "No, si scusano perché ti hanno fatto aspettare.",
+      "correctEnglish": "Exactly! A polite phrase used by the staff.",
+      "incorrectEnglish": "No, they are apologizing because they made you wait."
+    }
+  },
+  {
+    "id": "s92-p47",
+    "italian": "Sbrigati che sta per iniziare!",
+    "english": "Hurry up, it's about to start!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Sbrigati che sta per iniziare!",
+      "Vieni che è appena finito!",
+      "Ridi che è molto bello!",
+      "Balla che è molto veloce!"
+    ],
+    "choicesEnglish": [
+      "Hurry up, it's about to start!",
+      "Come, it just finished!",
+      "Laugh, it's very nice!",
+      "Dance, it's very fast!"
+    ],
+    "correctAnswerItalian": "Sbrigati che sta per iniziare!",
+    "correctAnswerEnglish": "Hurry up, it's about to start!",
+    "feedback": {
+      "correctItalian": "Ottimo! Un incitamento urgente a un amico.",
+      "incorrectItalian": "No, indica l'imminenza dell'inizio del concerto.",
+      "correctEnglish": "Great! An urgent encouragement to a friend.",
+      "incorrectEnglish": "No, it indicates the imminence of the start of the concert."
+    }
+  },
+  {
+    "id": "s92-p48",
+    "italian": "Non si capiscono le parole.",
+    "english": "The words aren't clear.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Non si capiscono le parole.",
+      "Non si vedono i colori.",
+      "Non si mangiano i dolci.",
+      "Non si perdono i codici."
+    ],
+    "choicesEnglish": [
+      "The words aren't clear.",
+      "The colors aren't visible.",
+      "Desserts aren't eaten.",
+      "Codes aren't lost."
+    ],
+    "correctAnswerItalian": "Non si capiscono le parole.",
+    "correctAnswerEnglish": "The words aren't clear.",
+    "feedback": {
+      "correctItalian": "Giusto! Un problema comune nei locali con acustica difficile.",
+      "incorrectItalian": "No, indica che non riesci a seguire il testo della canzone.",
+      "correctEnglish": "Right! A common problem in venues with difficult acoustics.",
+      "incorrectEnglish": "No, it indicates that you can't follow the song lyrics."
+    }
+  },
+  {
+    "id": "s92-p49",
+    "italian": "Hanno cambiato genere musicale.",
+    "english": "They changed musical genres.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Hanno cambiato genere musicale.",
+      "Hanno cambiato vestito ora.",
+      "Hanno cambiato chitarra.",
+      "Hanno cambiato città."
+    ],
+    "choicesEnglish": [
+      "They changed musical genres.",
+      "They changed clothes now.",
+      "They changed guitars.",
+      "They changed cities."
+    ],
+    "correctAnswerItalian": "Hanno cambiato genere musicale.",
+    "correctAnswerEnglish": "They changed musical genres.",
+    "feedback": {
+      "correctItalian": "Esatto! Commentare la nuova direzione artistica della band.",
+      "incorrectItalian": "No, parla dello stile di musica che propongono.",
+      "correctEnglish": "Exactly! Commenting on the band's new artistic direction.",
+      "incorrectEnglish": "No, it's about the style of music they're offering."
+    }
+  },
+  {
+    "id": "s92-p50",
+    "italian": "L'acustica del locale è pessima.",
+    "english": "The acoustics of the venue are terrible.",
+    "type": "phrase",
+    "choicesItalian": [
+      "L'acustica del locale è pessima.",
+      "La birra del bar è gelata.",
+      "La gente della piazza è felice.",
+      "La luce del palco è accecante."
+    ],
+    "choicesEnglish": [
+      "The acoustics of the venue are terrible.",
+      "The bar's beer is ice cold.",
+      "The people in the square are happy.",
+      "The stage light is blinding."
+    ],
+    "correctAnswerItalian": "L'acustica del locale è pessima.",
+    "correctAnswerEnglish": "The acoustics of the venue are terrible.",
+    "feedback": {
+      "correctItalian": "Ottimo! Una critica negativa alla qualità sonora.",
+      "incorrectItalian": "No, ti stai lamentando di come si sente male.",
+      "correctEnglish": "Great! A negative review of sound quality.",
+      "incorrectEnglish": "No, you are complaining about how bad it sounds."
+    }
+  },
+  {
+    "id": "s92-p51",
+    "italian": "Vogliamo il bis subito!",
+    "english": "We want an encore right away!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Vogliamo il bis subito!",
+      "Vogliamo il conto ora!",
+      "Vogliamo la birra fredda!",
+      "Vogliamo la musica lenta!"
+    ],
+    "choicesEnglish": [
+      "We want an encore right away!",
+      "We want the bill now!",
+      "We want cold beer!",
+      "We want slow music!"
+    ],
+    "correctAnswerItalian": "Vogliamo il bis subito!",
+    "correctAnswerEnglish": "We want an encore right away!",
+    "feedback": {
+      "correctItalian": "Giusto! Un incitamento forte del pubblico alla band.",
+      "incorrectItalian": "No, state chiedendo a gran voce altre canzoni.",
+      "correctEnglish": "Right! A loud call from the audience to the band.",
+      "incorrectEnglish": "No, you are loudly asking for more songs."
+    }
+  },
+  {
+    "id": "s92-p52",
+    "italian": "Il basso era troppo forte.",
+    "english": "The bass was too loud.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Il basso era troppo forte.",
+      "Il cantante era troppo stanco.",
+      "Il biglietto era troppo caro.",
+      "Il locale era troppo pieno."
+    ],
+    "choicesEnglish": [
+      "The bass was too loud.",
+      "The singer was too tired.",
+      "The ticket was too expensive.",
+      "The venue was too full."
+    ],
+    "correctAnswerItalian": "Il basso era troppo forte.",
+    "correctAnswerEnglish": "The bass was too loud.",
+    "feedback": {
+      "correctItalian": "Esatto! Una critica a un elemento specifico del suono.",
+      "incorrectItalian": "No, ti lamenti che lo strumento basso copriva il resto.",
+      "correctEnglish": "Exactly! A critique of a specific element of the sound.",
+      "incorrectEnglish": "No, you're complaining that the bass instrument was drowning out the rest."
+    }
+  },
+  {
+    "id": "s92-p53",
+    "italian": "Non sento più le orecchie.",
+    "english": "I can't feel my ears anymore.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Non sento più le orecchie.",
+      "Non vedo più le luci.",
+      "Non trovo più la borsa.",
+      "Non voglio più ballare."
+    ],
+    "choicesEnglish": [
+      "I can't feel my ears anymore.",
+      "I can't see the lights anymore.",
+      "I can't find my bag anymore.",
+      "I don't want to dance anymore."
+    ],
+    "correctAnswerItalian": "Non sento più le orecchie.",
+    "correctAnswerEnglish": "I can't feel my ears anymore.",
+    "feedback": {
+      "correctItalian": "Ottimo! Un'esagerazione ironica per il volume troppo alto.",
+      "incorrectItalian": "No, indica che hai le orecchie intontite dal casino.",
+      "correctEnglish": "Great! An ironic exaggeration for the too-high volume.",
+      "incorrectEnglish": "No, it indicates that your ears are numbed by the noise."
+    }
+  },
+  {
+    "id": "s92-p54",
+    "italian": "Ne valeva la pena!",
+    "english": "It was worth it!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ne valeva la pena!",
+      "Era un errore brutto!",
+      "Non era divertente affatto!",
+      "Costava troppo poco!"
+    ],
+    "choicesEnglish": [
+      "It was worth it!",
+      "It was a bad mistake!",
+      "It wasn't fun at all!",
+      "It cost too little!"
+    ],
+    "correctAnswerItalian": "Ne valeva la pena!",
+    "correctAnswerEnglish": "It was worth it!",
+    "feedback": {
+      "correctItalian": "Giusto! Molto soddisfatto del concerto nonostante la stanchezza.",
+      "incorrectItalian": "No, indica un giudizio positivo finale.",
+      "correctEnglish": "Right! Very satisfied with the concert despite the tiredness.",
+      "incorrectEnglish": "No, it indicates a final positive judgment."
+    }
+  },
+  {
+    "id": "s92-p55",
+    "italian": "Andiamo a mangiare una pizza?",
+    "english": "Shall we go eat a pizza?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Andiamo a mangiare una pizza?",
+      "Andiamo a dormire subito?",
+      "Andiamo a comprare un disco?",
+      "Andiamo a ballare ancora?"
+    ],
+    "choicesEnglish": [
+      "Shall we go eat a pizza?",
+      "Shall we go to sleep right away?",
+      "Shall we go buy a record?",
+      "Shall we go dancing again?"
+    ],
+    "correctAnswerItalian": "Andiamo a mangiare una pizza?",
+    "correctAnswerEnglish": "Shall we go eat a pizza?",
+    "feedback": {
+      "correctItalian": "Esatto! Un piano perfetto per il post-concerto.",
+      "incorrectItalian": "No, proponi di andare al ristorante.",
+      "correctEnglish": "Exactly! A perfect plan for after the concert.",
+      "incorrectEnglish": "No, you're proposing going to the restaurant."
+    }
+  },
+  {
+    "id": "s92-p56",
+    "italian": "Ho perso il mio berretto vicino al palco.",
+    "english": "I lost my cap near the stage.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ho perso il mio berretto vicino al palco.",
+      "Ho visto il mio amico vicino al bar.",
+      "Ho chiesto il mio resto vicino alla cassa.",
+      "Ho scansionato il mio codice vicino all'entrata."
+    ],
+    "choicesEnglish": [
+      "I lost my cap near the stage.",
+      "I saw my friend near the bar.",
+      "I asked for my change near the register.",
+      "I scanned my code near the entrance."
+    ],
+    "correctAnswerItalian": "Ho perso il mio berretto vicino al palco.",
+    "correctAnswerEnglish": "I lost my cap near the stage.",
+    "feedback": {
+      "correctItalian": "Ottimo! Spiegare dove si è smarrito un oggetto.",
+      "incorrectItalian": "No, specifichi la zona della perdita.",
+      "correctEnglish": "Great! Explaining where an item was lost.",
+      "incorrectEnglish": "No, you specify the area of the loss."
+    }
+  },
+  {
+    "id": "s92-p57",
+    "italian": "C'è un ufficio oggetti smarriti?",
+    "english": "Is there a lost and found office?",
+    "type": "phrase",
+    "choicesItalian": [
+      "C'è un ufficio oggetti smarriti?",
+      "C'è un ufficio turistico aperto?",
+      "C'è un bar con musica jazz?",
+      "C'è un'uscita di emergenza libera?"
+    ],
+    "choicesEnglish": [
+      "Is there a lost and found office?",
+      "Is there a tourist office open?",
+      "Is there a bar with jazz music?",
+      "Is there an open emergency exit?"
+    ],
+    "correctAnswerItalian": "C'è un ufficio oggetti smarriti?",
+    "correctAnswerEnglish": "Is there a lost and found office?",
+    "feedback": {
+      "correctItalian": "Giusto! Cercare assistenza per recuperare qualcosa.",
+      "incorrectItalian": "No, stai cercando il posto dove portano le cose ritrovate.",
+      "correctEnglish": "Right! Seeking assistance to recover something.",
+      "incorrectEnglish": "No, you're looking for the place where they take found things."
+    }
+  },
+  {
+    "id": "s92-p58",
+    "italian": "Chieda al ragazzo con la pettorina.",
+    "english": "Ask the guy with the vest.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Chieda al ragazzo con la pettorina.",
+      "Guardi l'uomo con la chitarra.",
+      "Senta la donna col microfono.",
+      "Cerchi il tecnico col mixer."
+    ],
+    "choicesEnglish": [
+      "Ask the guy with the vest.",
+      "Look at the man with the guitar.",
+      "Listen to the woman with the microphone.",
+      "Look for the technician with the mixer."
+    ],
+    "correctAnswerItalian": "Chieda al ragazzo con la pettorina.",
+    "correctAnswerEnglish": "Ask the guy with the vest.",
+    "feedback": {
+      "correctItalian": "Esatto! Un consiglio su chi contattare per aiuto.",
+      "incorrectItalian": "No, indica un addetto riconoscibile dall'abbigliamento.",
+      "correctEnglish": "Exactly! Advice on who to contact for help.",
+      "incorrectEnglish": "No, it indicates a worker recognizable by their clothing."
+    }
+  },
+  {
+    "id": "s92-p59",
+    "italian": "Le prevendite aprono sei mesi prima.",
+    "english": "Presales open six months in advance.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Le prevendite aprono sei mesi prima.",
+      "Le porte chiudono dieci minuti prima.",
+      "Le birre arrivano tre secondi dopo.",
+      "Le code finiscono un'ora dopo."
+    ],
+    "choicesEnglish": [
+      "Presales open six months in advance.",
+      "The doors close ten minutes earlier.",
+      "Beers arrive three seconds later.",
+      "The queues end an hour later."
+    ],
+    "correctAnswerItalian": "Le prevendite aprono sei mesi prima.",
+    "correctAnswerEnglish": "Presales open six months in advance.",
+    "feedback": {
+      "correctItalian": "Ottimo! Informazione sulle tempistiche di acquisto biglietti.",
+      "incorrectItalian": "No, specifica quando inizia la vendita anticipata.",
+      "correctEnglish": "Great! Information on ticket purchase timing.",
+      "incorrectEnglish": "No, it specifies when early sales begin."
+    }
+  },
+  {
+    "id": "s92-p60",
+    "italian": "Buona serata e buon concerto!",
+    "english": "Have a good evening and a good concert!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Buona serata e buon concerto!",
+      "Buongiorno e buon lavoro!",
+      "Buona notte e sogni d'oro!",
+      "Buona vacanza e divertiti!"
+    ],
+    "choicesEnglish": [
+      "Have a good evening and a good concert!",
+      "Good morning and have a good workday!",
+      "Good night and sweet dreams!",
+      "Have a good vacation and have fun!"
+    ],
+    "correctAnswerItalian": "Buona serata e buon concerto!",
+    "correctAnswerEnglish": "Have a good evening and a good concert!",
+    "feedback": {
+      "correctItalian": "Giusto! Un saluto di congedo perfetto in questa situazione.",
+      "incorrectItalian": "No, stai augurando il meglio per l'evento imminente.",
+      "correctEnglish": "Right! A perfect parting greeting in this situation.",
+      "incorrectEnglish": "No, you are wishing the best for the upcoming event."
     }
   }
 ]

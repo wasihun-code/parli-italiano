@@ -1,104 +1,1382 @@
 [
   {
-    "id": "s51-s4",
-    "italian": "Lo sportello chiude tra dieci minuti.",
-    "english": "The counter closes in ten minutes.",
-    "type": "sentence",
-    "choices": [
-      "Vorrei versare questo assegno sul mio conto corrente.",
-      "Lo sportello chiude tra dieci minuti.",
-      "Ho dimenticato il codice fiscale a casa.",
-      "Qual è il limite giornaliero per il prelievo al bancomat?"
-    ],
-    "correctAnswer": "Lo sportello chiude tra dieci minuti.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Lo sportello chiude tra dieci minuti.\"."
-    }
-  },
-  {
-    "id": "s51-s5",
-    "italian": "Ho dimenticato il codice fiscale a casa.",
-    "english": "I forgot my tax code at home.",
-    "type": "sentence",
-    "choices": [
-      "Qual è il limite giornaliero per il prelievo al bancomat?",
-      "Vorrei versare questo assegno sul mio conto corrente.",
-      "Mi serve un modulo per richiedere una nuova carta.",
-      "Ho dimenticato il codice fiscale a casa."
-    ],
-    "correctAnswer": "Ho dimenticato il codice fiscale a casa.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho dimenticato il codice fiscale a casa.\"."
-    }
-  },
-  {
-    "id": "s51-s3",
-    "italian": "Mi serve un modulo per richiedere una nuova carta.",
-    "english": "I need a form to request a new card.",
-    "type": "sentence",
-    "choices": [
-      "Mi serve un modulo per richiedere una nuova carta.",
-      "Posso fare un deposito in contanti qui?",
-      "Lo sportello chiude tra dieci minuti.",
-      "Ho dimenticato il codice fiscale a casa."
-    ],
-    "correctAnswer": "Mi serve un modulo per richiedere una nuova carta.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi serve un modulo per richiedere una nuova carta.\"."
-    }
-  },
-  {
     "id": "s51-s1",
-    "italian": "Vorrei versare questo assegno sul mio conto corrente.",
-    "english": "I would like to deposit this check into my bank account.",
-    "type": "sentence",
-    "choices": [
-      "Lo sportello chiude tra dieci minuti.",
-      "Mi serve un modulo per richiedere una nuova carta.",
-      "Ho dimenticato il codice fiscale a casa.",
-      "Vorrei versare questo assegno sul mio conto corrente."
+    "choicesItalian": [
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido.",
+      "Ha anche il codice fiscale?"
     ],
-    "correctAnswer": "Vorrei versare questo assegno sul mio conto corrente.",
+    "choicesEnglish": [
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document.",
+      "Do you also have the tax code?"
+    ],
+    "correctAnswerItalian": "Buongiorno, vorrei aprire un conto corrente.",
+    "correctAnswerEnglish": "Good morning, I would like to open a checking account.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Vorrei versare questo assegno sul mio conto corrente.\"."
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Buongiorno, vorrei aprire un conto corrente.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Good morning, I would like to open a checking account.'"
     }
   },
   {
     "id": "s51-s2",
-    "italian": "Qual è il limite giornaliero per il prelievo al bancomat?",
-    "english": "What is the daily limit for ATM withdrawals?",
-    "type": "sentence",
-    "choices": [
-      "Ho dimenticato il codice fiscale a casa.",
-      "Lo sportello chiude tra dieci minuti.",
-      "Qual è il limite giornaliero per il prelievo al bancomat?",
-      "Vorrei versare questo assegno sul mio conto corrente."
+    "choicesItalian": [
+      "Cosa serve per l'apertura?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Le serve un documento d'identità valido.",
+      "Ha anche il codice fiscale?"
     ],
-    "correctAnswer": "Qual è il limite giornaliero per il prelievo al bancomat?",
+    "choicesEnglish": [
+      "What is needed for the opening?",
+      "Good morning, I would like to open a checking account.",
+      "You need a valid identity document.",
+      "Do you also have the tax code?"
+    ],
+    "correctAnswerItalian": "Cosa serve per l'apertura?",
+    "correctAnswerEnglish": "What is needed for the opening?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Qual è il limite giornaliero per il prelievo al bancomat?\"."
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Cosa serve per l'apertura?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'What is needed for the opening?'"
+    }
+  },
+  {
+    "id": "s51-s3",
+    "choicesItalian": [
+      "Le serve un documento d'identità valido.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Ha anche il codice fiscale?"
+    ],
+    "choicesEnglish": [
+      "You need a valid identity document.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "Do you also have the tax code?"
+    ],
+    "correctAnswerItalian": "Le serve un documento d'identità valido.",
+    "correctAnswerEnglish": "You need a valid identity document.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Le serve un documento d'identità valido.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You need a valid identity document.'"
+    }
+  },
+  {
+    "id": "s51-s4",
+    "choicesItalian": [
+      "Ha anche il codice fiscale?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Do you also have the tax code?",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Ha anche il codice fiscale?",
+    "correctAnswerEnglish": "Do you also have the tax code?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Ha anche il codice fiscale?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Do you also have the tax code?'"
+    }
+  },
+  {
+    "id": "s51-s5",
+    "choicesItalian": [
+      "Sì, ecco tutto.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Yes, here is everything.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Sì, ecco tutto.",
+    "correctAnswerEnglish": "Yes, here is everything.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Sì, ecco tutto.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Yes, here is everything.'"
     }
   },
   {
     "id": "s51-s6",
-    "italian": "Posso fare un deposito in contanti qui?",
-    "english": "Can I make a cash deposit here?",
-    "type": "sentence",
-    "choices": [
-      "Lo sportello chiude tra dieci minuti.",
-      "Posso fare un deposito in contanti qui?",
-      "Vorrei versare questo assegno sul mio conto corrente.",
-      "Ho dimenticato il codice fiscale a casa."
+    "choicesItalian": [
+      "Vorrei un conto con poche spese.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
     ],
-    "correctAnswer": "Posso fare un deposito in contanti qui?",
+    "choicesEnglish": [
+      "I would like an account with low fees.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Vorrei un conto con poche spese.",
+    "correctAnswerEnglish": "I would like an account with low fees.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Posso fare un deposito in contanti qui?\"."
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Vorrei un conto con poche spese.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I would like an account with low fees.'"
+    }
+  },
+  {
+    "id": "s51-s7",
+    "choicesItalian": [
+      "Lo uso per lo stipendio.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I use it for my salary.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Lo uso per lo stipendio.",
+    "correctAnswerEnglish": "I use it for my salary.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Lo uso per lo stipendio.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I use it for my salary.'"
+    }
+  },
+  {
+    "id": "s51-s8",
+    "choicesItalian": [
+      "Abbiamo il conto online gratuito.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "We have the free online account.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Abbiamo il conto online gratuito.",
+    "correctAnswerEnglish": "We have the free online account.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Abbiamo il conto online gratuito.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'We have the free online account.'"
+    }
+  },
+  {
+    "id": "s51-s9",
+    "choicesItalian": [
+      "Per quanto tempo è gratuito?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "For how long is it free?",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Per quanto tempo è gratuito?",
+    "correctAnswerEnglish": "For how long is it free?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Per quanto tempo è gratuito?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'For how long is it free?'"
+    }
+  },
+  {
+    "id": "s51-s10",
+    "choicesItalian": [
+      "Per i primi due anni.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "For the first two years.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Per i primi due anni.",
+    "correctAnswerEnglish": "For the first two years.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Per i primi due anni.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'For the first two years.'"
+    }
+  },
+  {
+    "id": "s51-s11",
+    "choicesItalian": [
+      "Va bene, mi interessa.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Fine, I'm interested.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Va bene, mi interessa.",
+    "correctAnswerEnglish": "Fine, I'm interested.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Va bene, mi interessa.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Fine, I'm interested.'"
+    }
+  },
+  {
+    "id": "s51-s12",
+    "choicesItalian": [
+      "Deve compilare questo modulo.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "You have to fill out this form.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Deve compilare questo modulo.",
+    "correctAnswerEnglish": "You have to fill out this form.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Deve compilare questo modulo.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You have to fill out this form.'"
+    }
+  },
+  {
+    "id": "s51-s13",
+    "choicesItalian": [
+      "Firmi qui in basso.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Sign here at the bottom.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Firmi qui in basso.",
+    "correctAnswerEnglish": "Sign here at the bottom.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Firmi qui in basso.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Sign here at the bottom.'"
+    }
+  },
+  {
+    "id": "s51-s14",
+    "choicesItalian": [
+      "Posso avere una carta di debito?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Can I have a debit card?",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Posso avere una carta di debito?",
+    "correctAnswerEnglish": "Can I have a debit card?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Posso avere una carta di debito?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Can I have a debit card?'"
+    }
+  },
+  {
+    "id": "s51-s15",
+    "choicesItalian": [
+      "Sì, gliela spediamo a casa.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Yes, we will send it to your home.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Sì, gliela spediamo a casa.",
+    "correctAnswerEnglish": "Yes, we will send it to your home.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Sì, gliela spediamo a casa.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Yes, we will send it to your home.'"
+    }
+  },
+  {
+    "id": "s51-s16",
+    "choicesItalian": [
+      "Scusi, il bancomat non funziona.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Excuse me, the ATM is not working.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Scusi, il bancomat non funziona.",
+    "correctAnswerEnglish": "Excuse me, the ATM is not working.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Scusi, il bancomat non funziona.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Excuse me, the ATM is not working.'"
+    }
+  },
+  {
+    "id": "s51-s17",
+    "choicesItalian": [
+      "Mi ha dato un messaggio d'errore.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "It gave me an error message.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Mi ha dato un messaggio d'errore.",
+    "correctAnswerEnglish": "It gave me an error message.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Mi ha dato un messaggio d'errore.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'It gave me an error message.'"
+    }
+  },
+  {
+    "id": "s51-s18",
+    "choicesItalian": [
+      "Forse è finito il rotolo della carta.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Maybe the paper roll is finished.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Forse è finito il rotolo della carta.",
+    "correctAnswerEnglish": "Maybe the paper roll is finished.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Forse è finito il rotolo della carta.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Maybe the paper roll is finished.'"
+    }
+  },
+  {
+    "id": "s51-s19",
+    "choicesItalian": [
+      "La mia carta è rimasta dentro.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "My card stayed inside.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "La mia carta è rimasta dentro.",
+    "correctAnswerEnglish": "My card stayed inside.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'La mia carta è rimasta dentro.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'My card stayed inside.'"
+    }
+  },
+  {
+    "id": "s51-s20",
+    "choicesItalian": [
+      "Dobbiamo bloccare la carta immediatamente.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "We must block the card immediately.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Dobbiamo bloccare la carta immediatamente.",
+    "correctAnswerEnglish": "We must block the card immediately.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Dobbiamo bloccare la carta immediatamente.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'We must block the card immediately.'"
+    }
+  },
+  {
+    "id": "s51-s21",
+    "choicesItalian": [
+      "Ho dimenticato il mio codice PIN.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I forgot my PIN code.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Ho dimenticato il mio codice PIN.",
+    "correctAnswerEnglish": "I forgot my PIN code.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Ho dimenticato il mio codice PIN.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I forgot my PIN code.'"
+    }
+  },
+  {
+    "id": "s51-s22",
+    "choicesItalian": [
+      "Può richiederne uno nuovo allo sportello.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "You can request a new one at the counter.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Può richiederne uno nuovo allo sportello.",
+    "correctAnswerEnglish": "You can request a new one at the counter.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Può richiederne uno nuovo allo sportello.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You can request a new one at the counter.'"
+    }
+  },
+  {
+    "id": "s51-s23",
+    "choicesItalian": [
+      "Vorrei prelevare duecento euro.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I would like to withdraw two hundred euros.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Vorrei prelevare duecento euro.",
+    "correctAnswerEnglish": "I would like to withdraw two hundred euros.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Vorrei prelevare duecento euro.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I would like to withdraw two hundred euros.'"
+    }
+  },
+  {
+    "id": "s51-s24",
+    "choicesItalian": [
+      "Inserisca la carta nel lettore.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Insert the card into the reader.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Inserisca la carta nel lettore.",
+    "correctAnswerEnglish": "Insert the card into the reader.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Inserisca la carta nel lettore.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Insert the card into the reader.'"
+    }
+  },
+  {
+    "id": "s51-s25",
+    "choicesItalian": [
+      "Digiti il codice segreto.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Type the secret code.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Digiti il codice segreto.",
+    "correctAnswerEnglish": "Type the secret code.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Digiti il codice segreto.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Type the secret code.'"
+    }
+  },
+  {
+    "id": "s51-s26",
+    "choicesItalian": [
+      "Ritiri il contante e la ricevuta.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Take the cash and the receipt.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Ritiri il contante e la ricevuta.",
+    "correctAnswerEnglish": "Take the cash and the receipt.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Ritiri il contante e la ricevuta.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Take the cash and the receipt.'"
+    }
+  },
+  {
+    "id": "s51-s27",
+    "choicesItalian": [
+      "Vorrei fare un bonifico all'estero.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I would like to make a transfer abroad.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Vorrei fare un bonifico all'estero.",
+    "correctAnswerEnglish": "I would like to make a transfer abroad.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Vorrei fare un bonifico all'estero.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I would like to make a transfer abroad.'"
+    }
+  },
+  {
+    "id": "s51-s28",
+    "choicesItalian": [
+      "Mi serve il codice BIC o SWIFT.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I need the BIC or SWIFT code.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Mi serve il codice BIC o SWIFT.",
+    "correctAnswerEnglish": "I need the BIC or SWIFT code.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Mi serve il codice BIC o SWIFT.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I need the BIC or SWIFT code.'"
+    }
+  },
+  {
+    "id": "s51-s29",
+    "choicesItalian": [
+      "Quanto tempo ci vuole?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "How long does it take?",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Quanto tempo ci vuole?",
+    "correctAnswerEnglish": "How long does it take?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Quanto tempo ci vuole?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'How long does it take?'"
+    }
+  },
+  {
+    "id": "s51-s30",
+    "choicesItalian": [
+      "Di solito due o tre giorni lavorativi.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Usually two or three working days.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Di solito due o tre giorni lavorativi.",
+    "correctAnswerEnglish": "Usually two or three working days.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Di solito due o tre giorni lavorativi.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Usually two or three working days.'"
+    }
+  },
+  {
+    "id": "s51-s31",
+    "choicesItalian": [
+      "Vorrei cambiare dei dollari in euro.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I would like to change some dollars into euros.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Vorrei cambiare dei dollari in euro.",
+    "correctAnswerEnglish": "I would like to change some dollars into euros.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Vorrei cambiare dei dollari in euro.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I would like to change some dollars into euros.'"
+    }
+  },
+  {
+    "id": "s51-s32",
+    "choicesItalian": [
+      "Qual è il tasso di cambio oggi?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "What is the exchange rate today?",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Qual è il tasso di cambio oggi?",
+    "correctAnswerEnglish": "What is the exchange rate today?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Qual è il tasso di cambio oggi?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'What is the exchange rate today?'"
+    }
+  },
+  {
+    "id": "s51-s33",
+    "choicesItalian": [
+      "C'è una commissione fissa di cinque euro.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "There is a fixed commission of five euros.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "C'è una commissione fissa di cinque euro.",
+    "correctAnswerEnglish": "There is a fixed commission of five euros.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'C'è una commissione fissa di cinque euro.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'There is a fixed commission of five euros.'"
+    }
+  },
+  {
+    "id": "s51-s34",
+    "choicesItalian": [
+      "Ho bisogno dell'estratto conto di aprile.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I need the bank statement for April.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Ho bisogno dell'estratto conto di aprile.",
+    "correctAnswerEnglish": "I need the bank statement for April.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Ho bisogno dell'estratto conto di aprile.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I need the bank statement for April.'"
+    }
+  },
+  {
+    "id": "s51-s35",
+    "choicesItalian": [
+      "Può scaricarlo dall'app della banca.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "You can download it from the bank's app.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Può scaricarlo dall'app della banca.",
+    "correctAnswerEnglish": "You can download it from the bank's app.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Può scaricarlo dall'app della banca.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You can download it from the bank's app.'"
+    }
+  },
+  {
+    "id": "s51-s36",
+    "choicesItalian": [
+      "Non riesco ad accedere al sito.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I can't log in to the site.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Non riesco ad accedere al sito.",
+    "correctAnswerEnglish": "I can't log in to the site.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Non riesco ad accedere al sito.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I can't log in to the site.'"
+    }
+  },
+  {
+    "id": "s51-s37",
+    "choicesItalian": [
+      "Ha provato a resettare la password?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Have you tried resetting the password?",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Ha provato a resettare la password?",
+    "correctAnswerEnglish": "Have you tried resetting the password?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Ha provato a resettare la password?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Have you tried resetting the password?'"
+    }
+  },
+  {
+    "id": "s51-s38",
+    "choicesItalian": [
+      "Sì, ma non ho ricevuto l'email.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Yes, but I didn't receive the email.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Sì, ma non ho ricevuto l'email.",
+    "correctAnswerEnglish": "Yes, but I didn't receive the email.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Sì, ma non ho ricevuto l'email.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Yes, but I didn't receive the email.'"
+    }
+  },
+  {
+    "id": "s51-s39",
+    "choicesItalian": [
+      "Controlli nella cartella spam.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Check in the spam folder.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Controlli nella cartella spam.",
+    "correctAnswerEnglish": "Check in the spam folder.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Controlli nella cartella spam.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Check in the spam folder.'"
+    }
+  },
+  {
+    "id": "s51-s40",
+    "choicesItalian": [
+      "Vorrei chiedere informazioni su un mutuo.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I would like to ask for information about a mortgage.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Vorrei chiedere informazioni su un mutuo.",
+    "correctAnswerEnglish": "I would like to ask for information about a mortgage.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Vorrei chiedere informazioni su un mutuo.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I would like to ask for information about a mortgage.'"
+    }
+  },
+  {
+    "id": "s51-s41",
+    "choicesItalian": [
+      "Deve prendere un appuntamento con un consulente.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "You must make an appointment with a consultant.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Deve prendere un appuntamento con un consulente.",
+    "correctAnswerEnglish": "You must make an appointment with a consultant.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Deve prendere un appuntamento con un consulente.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You must make an appointment with a consultant.'"
+    }
+  },
+  {
+    "id": "s51-s42",
+    "choicesItalian": [
+      "È possibile farlo ora?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Is it possible to do it now?",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "È possibile farlo ora?",
+    "correctAnswerEnglish": "Is it possible to do it now?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'È possibile farlo ora?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Is it possible to do it now?'"
+    }
+  },
+  {
+    "id": "s51-s43",
+    "choicesItalian": [
+      "No, oggi siamo al completo.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "No, today we are fully booked.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "No, oggi siamo al completo.",
+    "correctAnswerEnglish": "No, today we are fully booked.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'No, oggi siamo al completo.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'No, today we are fully booked.'"
+    }
+  },
+  {
+    "id": "s51-s44",
+    "choicesItalian": [
+      "Va bene per martedì alle undici?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Is Tuesday at eleven okay?",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Va bene per martedì alle undici?",
+    "correctAnswerEnglish": "Is Tuesday at eleven okay?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Va bene per martedì alle undici?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Is Tuesday at eleven okay?'"
+    }
+  },
+  {
+    "id": "s51-s45",
+    "choicesItalian": [
+      "Sì, perfetto, grazie.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Yes, perfect, thank you.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Sì, perfetto, grazie.",
+    "correctAnswerEnglish": "Yes, perfect, thank you.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Sì, perfetto, grazie.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Yes, perfect, thank you.'"
+    }
+  },
+  {
+    "id": "s51-s46",
+    "choicesItalian": [
+      "Vorrei versare questi contanti.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I would like to deposit this cash.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Vorrei versare questi contanti.",
+    "correctAnswerEnglish": "I would like to deposit this cash.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Vorrei versare questi contanti.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I would like to deposit this cash.'"
+    }
+  },
+  {
+    "id": "s51-s47",
+    "choicesItalian": [
+      "Usi la macchina per i versamenti.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Use the deposit machine.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Usi la macchina per i versamenti.",
+    "correctAnswerEnglish": "Use the deposit machine.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Usi la macchina per i versamenti.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Use the deposit machine.'"
+    }
+  },
+  {
+    "id": "s51-s48",
+    "choicesItalian": [
+      "Accetta anche le monete?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Does it also accept coins?",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Accetta anche le monete?",
+    "correctAnswerEnglish": "Does it also accept coins?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Accetta anche le monete?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Does it also accept coins?'"
+    }
+  },
+  {
+    "id": "s51-s49",
+    "choicesItalian": [
+      "No, solo banconote.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "No, only banknotes.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "No, solo banconote.",
+    "correctAnswerEnglish": "No, only banknotes.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'No, solo banconote.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'No, only banknotes.'"
+    }
+  },
+  {
+    "id": "s51-s50",
+    "choicesItalian": [
+      "Ho un problema con un pagamento.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I have a problem with a payment.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Ho un problema con un pagamento.",
+    "correctAnswerEnglish": "I have a problem with a payment.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Ho un problema con un pagamento.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I have a problem with a payment.'"
+    }
+  },
+  {
+    "id": "s51-s51",
+    "choicesItalian": [
+      "Vedo un addebito che non riconosco.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I see a charge I don't recognize.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Vedo un addebito che non riconosco.",
+    "correctAnswerEnglish": "I see a charge I don't recognize.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Vedo un addebito che non riconosco.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I see a charge I don't recognize.'"
+    }
+  },
+  {
+    "id": "s51-s52",
+    "choicesItalian": [
+      "Dobbiamo fare una contestazione.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "We need to make a dispute.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Dobbiamo fare una contestazione.",
+    "correctAnswerEnglish": "We need to make a dispute.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Dobbiamo fare una contestazione.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'We need to make a dispute.'"
+    }
+  },
+  {
+    "id": "s51-s53",
+    "choicesItalian": [
+      "Quanto è il saldo del mio conto?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "How much is the balance of my account?",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Quanto è il saldo del mio conto?",
+    "correctAnswerEnglish": "How much is the balance of my account?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Quanto è il saldo del mio conto?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'How much is the balance of my account?'"
+    }
+  },
+  {
+    "id": "s51-s54",
+    "choicesItalian": [
+      "Ha trecento euro disponibili.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "You have three hundred euros available.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Ha trecento euro disponibili.",
+    "correctAnswerEnglish": "You have three hundred euros available.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Ha trecento euro disponibili.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You have three hundred euros available.'"
+    }
+  },
+  {
+    "id": "s51-s55",
+    "choicesItalian": [
+      "La banca chiude tra dieci minuti.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "The bank closes in ten minutes.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "La banca chiude tra dieci minuti.",
+    "correctAnswerEnglish": "The bank closes in ten minutes.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'La banca chiude tra dieci minuti.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'The bank closes in ten minutes.'"
+    }
+  },
+  {
+    "id": "s51-s56",
+    "choicesItalian": [
+      "Faccio in tempo a fare un'operazione?",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Do I have time to do a transaction?",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Faccio in tempo a fare un'operazione?",
+    "correctAnswerEnglish": "Do I have time to do a transaction?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Faccio in tempo a fare un'operazione?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Do I have time to do a transaction?'"
+    }
+  },
+  {
+    "id": "s51-s57",
+    "choicesItalian": [
+      "Sì, ma faccia presto.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Yes, but be quick.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Sì, ma faccia presto.",
+    "correctAnswerEnglish": "Yes, but be quick.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Sì, ma faccia presto.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Yes, but be quick.'"
+    }
+  },
+  {
+    "id": "s51-s58",
+    "choicesItalian": [
+      "Grazie per l'aiuto.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "Thanks for the help.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Grazie per l'aiuto.",
+    "correctAnswerEnglish": "Thanks for the help.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Grazie per l'aiuto.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Thanks for the help.'"
+    }
+  },
+  {
+    "id": "s51-s59",
+    "choicesItalian": [
+      "Di nulla, arrivederci.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "You're welcome, goodbye.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Di nulla, arrivederci.",
+    "correctAnswerEnglish": "You're welcome, goodbye.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Di nulla, arrivederci.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You're welcome, goodbye.'"
+    }
+  },
+  {
+    "id": "s51-s60",
+    "choicesItalian": [
+      "Mi serve un nuovo libretto degli assegni.",
+      "Buongiorno, vorrei aprire un conto corrente.",
+      "Cosa serve per l'apertura?",
+      "Le serve un documento d'identità valido."
+    ],
+    "choicesEnglish": [
+      "I need a new checkbook.",
+      "Good morning, I would like to open a checking account.",
+      "What is needed for the opening?",
+      "You need a valid identity document."
+    ],
+    "correctAnswerItalian": "Mi serve un nuovo libretto degli assegni.",
+    "correctAnswerEnglish": "I need a new checkbook.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Mi serve un nuovo libretto degli assegni.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I need a new checkbook.'"
     }
   }
 ]

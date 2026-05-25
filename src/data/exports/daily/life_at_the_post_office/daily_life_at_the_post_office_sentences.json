@@ -1,104 +1,1382 @@
 [
   {
-    "id": "s52-s4",
-    "italian": "Mi serve un modulo per la spedizione internazionale.",
-    "english": "I need a form for international shipping.",
-    "type": "sentence",
-    "choices": [
-      "Il pacco arriverà a destinazione entro una settimana.",
-      "Mi serve un modulo per la spedizione internazionale.",
-      "Quanto costa la spedizione prioritaria per gli Stati Uniti?",
-      "Ricordati di scrivere l'indirizzo del mittente sul retro."
-    ],
-    "correctAnswer": "Mi serve un modulo per la spedizione internazionale.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi serve un modulo per la spedizione internazionale.\"."
-    }
-  },
-  {
-    "id": "s52-s5",
-    "italian": "Il pacco arriverà a destinazione entro una settimana.",
-    "english": "The package will arrive at its destination within a week.",
-    "type": "sentence",
-    "choices": [
-      "Mi serve un modulo per la spedizione internazionale.",
-      "Il pacco arriverà a destinazione entro una settimana.",
-      "Deve prendere il biglietto per fare la coda.",
-      "Quanto costa la spedizione prioritaria per gli Stati Uniti?"
-    ],
-    "correctAnswer": "Il pacco arriverà a destinazione entro una settimana.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Il pacco arriverà a destinazione entro una settimana.\"."
-    }
-  },
-  {
-    "id": "s52-s6",
-    "italian": "Ricordati di scrivere l'indirizzo del mittente sul retro.",
-    "english": "Remember to write the sender's address on the back.",
-    "type": "sentence",
-    "choices": [
-      "Ricordati di scrivere l'indirizzo del mittente sul retro.",
-      "Il pacco arriverà a destinazione entro una settimana.",
-      "Mi serve un modulo per la spedizione internazionale.",
-      "Quanto costa la spedizione prioritaria per gli Stati Uniti?"
-    ],
-    "correctAnswer": "Ricordati di scrivere l'indirizzo del mittente sul retro.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ricordati di scrivere l'indirizzo del mittente sul retro.\"."
-    }
-  },
-  {
-    "id": "s52-s3",
-    "italian": "La raccomandata è il modo più sicuro per spedire documenti.",
-    "english": "Registered mail is the safest way to send documents.",
-    "type": "sentence",
-    "choices": [
-      "La raccomandata è il modo più sicuro per spedire documenti.",
-      "Il pacco arriverà a destinazione entro una settimana.",
-      "Ricordati di scrivere l'indirizzo del mittente sul retro.",
-      "Mi serve un modulo per la spedizione internazionale."
-    ],
-    "correctAnswer": "La raccomandata è il modo più sicuro per spedire documenti.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"La raccomandata è il modo più sicuro per spedire documenti.\"."
-    }
-  },
-  {
     "id": "s52-s1",
-    "italian": "Quanto costa la spedizione prioritaria per gli Stati Uniti?",
-    "english": "How much is priority shipping to the United States?",
-    "type": "sentence",
-    "choices": [
-      "Quanto costa la spedizione prioritaria per gli Stati Uniti?",
-      "Deve prendere il biglietto per fare la coda.",
-      "La raccomandata è il modo più sicuro per spedire documenti.",
-      "Il pacco arriverà a destinazione entro una settimana."
+    "choicesItalian": [
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro.",
+      "È un regalo per un amico."
     ],
-    "correctAnswer": "Quanto costa la spedizione prioritaria per gli Stati Uniti?",
+    "choicesEnglish": [
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book.",
+      "It is a gift for a friend."
+    ],
+    "correctAnswerItalian": "Buongiorno, vorrei spedire questo pacco in Germania.",
+    "correctAnswerEnglish": "Good morning, I would like to send this package to Germany.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Quanto costa la spedizione prioritaria per gli Stati Uniti?\"."
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Buongiorno, vorrei spedire questo pacco in Germania.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Good morning, I would like to send this package to Germany.'"
     }
   },
   {
     "id": "s52-s2",
-    "italian": "Deve prendere il biglietto per fare la coda.",
-    "english": "You must take a ticket to stand in line.",
-    "type": "sentence",
-    "choices": [
-      "Deve prendere il biglietto per fare la coda.",
-      "Mi serve un modulo per la spedizione internazionale.",
-      "La raccomandata è il modo più sicuro per spedire documenti.",
-      "Quanto costa la spedizione prioritaria per gli Stati Uniti?"
+    "choicesItalian": [
+      "Cosa contiene il pacco?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Contiene solo dei vestiti e un libro.",
+      "È un regalo per un amico."
     ],
-    "correctAnswer": "Deve prendere il biglietto per fare la coda.",
+    "choicesEnglish": [
+      "What does the package contain?",
+      "Good morning, I would like to send this package to Germany.",
+      "It contains only clothes and a book.",
+      "It is a gift for a friend."
+    ],
+    "correctAnswerItalian": "Cosa contiene il pacco?",
+    "correctAnswerEnglish": "What does the package contain?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Deve prendere il biglietto per fare la coda.\"."
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Cosa contiene il pacco?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'What does the package contain?'"
+    }
+  },
+  {
+    "id": "s52-s3",
+    "choicesItalian": [
+      "Contiene solo dei vestiti e un libro.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "È un regalo per un amico."
+    ],
+    "choicesEnglish": [
+      "It contains only clothes and a book.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It is a gift for a friend."
+    ],
+    "correctAnswerItalian": "Contiene solo dei vestiti e un libro.",
+    "correctAnswerEnglish": "It contains only clothes and a book.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Contiene solo dei vestiti e un libro.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'It contains only clothes and a book.'"
+    }
+  },
+  {
+    "id": "s52-s4",
+    "choicesItalian": [
+      "È un regalo per un amico.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "It is a gift for a friend.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "È un regalo per un amico.",
+    "correctAnswerEnglish": "It is a gift for a friend.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'È un regalo per un amico.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'It is a gift for a friend.'"
+    }
+  },
+  {
+    "id": "s52-s5",
+    "choicesItalian": [
+      "Lo metta sulla bilancia per favore.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Put it on the scale please.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Lo metta sulla bilancia per favore.",
+    "correctAnswerEnglish": "Put it on the scale please.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Lo metta sulla bilancia per favore.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Put it on the scale please.'"
+    }
+  },
+  {
+    "id": "s52-s6",
+    "choicesItalian": [
+      "Il peso totale è di tre chili.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "The total weight is three kilos.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Il peso totale è di tre chili.",
+    "correctAnswerEnglish": "The total weight is three kilos.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Il peso totale è di tre chili.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'The total weight is three kilos.'"
+    }
+  },
+  {
+    "id": "s52-s7",
+    "choicesItalian": [
+      "Vuole una spedizione ordinaria o veloce?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Do you want ordinary or fast shipping?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Vuole una spedizione ordinaria o veloce?",
+    "correctAnswerEnglish": "Do you want ordinary or fast shipping?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Vuole una spedizione ordinaria o veloce?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Do you want ordinary or fast shipping?'"
+    }
+  },
+  {
+    "id": "s52-s8",
+    "choicesItalian": [
+      "Qual è la differenza di prezzo?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "What is the price difference?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Qual è la differenza di prezzo?",
+    "correctAnswerEnglish": "What is the price difference?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Qual è la differenza di prezzo?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'What is the price difference?'"
+    }
+  },
+  {
+    "id": "s52-s9",
+    "choicesItalian": [
+      "Quella veloce arriva in due giorni.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "The fast one arrives in two days.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Quella veloce arriva in due giorni.",
+    "correctAnswerEnglish": "The fast one arrives in two days.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Quella veloce arriva in due giorni.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'The fast one arrives in two days.'"
+    }
+  },
+  {
+    "id": "s52-s10",
+    "choicesItalian": [
+      "Preferisco la spedizione tracciabile.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "I prefer trackable shipping.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Preferisco la spedizione tracciabile.",
+    "correctAnswerEnglish": "I prefer trackable shipping.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Preferisco la spedizione tracciabile.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I prefer trackable shipping.'"
+    }
+  },
+  {
+    "id": "s52-s11",
+    "choicesItalian": [
+      "Quanto costa la raccomandata internazionale?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "How much does the international registered mail cost?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Quanto costa la raccomandata internazionale?",
+    "correctAnswerEnglish": "How much does the international registered mail cost?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Quanto costa la raccomandata internazionale?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'How much does the international registered mail cost?'"
+    }
+  },
+  {
+    "id": "s52-s12",
+    "choicesItalian": [
+      "Il totale è di venticinque euro.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "The total is twenty-five euros.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Il totale è di venticinque euro.",
+    "correctAnswerEnglish": "The total is twenty-five euros.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Il totale è di venticinque euro.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'The total is twenty-five euros.'"
+    }
+  },
+  {
+    "id": "s52-s13",
+    "choicesItalian": [
+      "Deve compilare il modulo per la dogana.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "You must fill out the customs form.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Deve compilare il modulo per la dogana.",
+    "correctAnswerEnglish": "You must fill out the customs form.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Deve compilare il modulo per la dogana.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You must fill out the customs form.'"
+    }
+  },
+  {
+    "id": "s52-s14",
+    "choicesItalian": [
+      "Scriva l'indirizzo del destinatario chiaramente.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Write the recipient's address clearly.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Scriva l'indirizzo del destinatario chiaramente.",
+    "correctAnswerEnglish": "Write the recipient's address clearly.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Scriva l'indirizzo del destinatario chiaramente.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Write the recipient's address clearly.'"
+    }
+  },
+  {
+    "id": "s52-s15",
+    "choicesItalian": [
+      "Non dimentichi il codice postale.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Don't forget the postal code.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Non dimentichi il codice postale.",
+    "correctAnswerEnglish": "Don't forget the postal code.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Non dimentichi il codice postale.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Don't forget the postal code.'"
+    }
+  },
+  {
+    "id": "s52-s16",
+    "choicesItalian": [
+      "Devo scrivere anche il mio indirizzo?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Do I have to write my address too?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Devo scrivere anche il mio indirizzo?",
+    "correctAnswerEnglish": "Do I have to write my address too?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Devo scrivere anche il mio indirizzo?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Do I have to write my address too?'"
+    }
+  },
+  {
+    "id": "s52-s17",
+    "choicesItalian": [
+      "Sì, il mittente va scritto sul retro.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Yes, the sender goes on the back.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Sì, il mittente va scritto sul retro.",
+    "correctAnswerEnglish": "Yes, the sender goes on the back.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Sì, il mittente va scritto sul retro.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Yes, the sender goes on the back.'"
+    }
+  },
+  {
+    "id": "s52-s18",
+    "choicesItalian": [
+      "Buongiorno, dovrei pagare questo bollettino della luce.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Good morning, I need to pay this electricity slip.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Buongiorno, dovrei pagare questo bollettino della luce.",
+    "correctAnswerEnglish": "Good morning, I need to pay this electricity slip.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Buongiorno, dovrei pagare questo bollettino della luce.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Good morning, I need to pay this electricity slip.'"
+    }
+  },
+  {
+    "id": "s52-s19",
+    "choicesItalian": [
+      "Posso pagare con il Bancomat?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Can I pay with the debit card?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Posso pagare con il Bancomat?",
+    "correctAnswerEnglish": "Can I pay with the debit card?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Posso pagare con il Bancomat?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Can I pay with the debit card?'"
+    }
+  },
+  {
+    "id": "s52-s20",
+    "choicesItalian": [
+      "Certamente, inserisca la carta e il PIN.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Certainly, insert the card and the PIN.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Certamente, inserisca la carta e il PIN.",
+    "correctAnswerEnglish": "Certainly, insert the card and the PIN.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Certamente, inserisca la carta e il PIN.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Certainly, insert the card and the PIN.'"
+    }
+  },
+  {
+    "id": "s52-s21",
+    "choicesItalian": [
+      "C'è una commissione di un euro e cinquanta.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "There is a fee of one euro and fifty.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "C'è una commissione di un euro e cinquanta.",
+    "correctAnswerEnglish": "There is a fee of one euro and fifty.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'C'è una commissione di un euro e cinquanta.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'There is a fee of one euro and fifty.'"
+    }
+  },
+  {
+    "id": "s52-s22",
+    "choicesItalian": [
+      "Ecco la sua ricevuta di pagamento.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Here is your payment receipt.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Ecco la sua ricevuta di pagamento.",
+    "correctAnswerEnglish": "Here is your payment receipt.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Ecco la sua ricevuta di pagamento.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Here is your payment receipt.'"
+    }
+  },
+  {
+    "id": "s52-s23",
+    "choicesItalian": [
+      "La conservi per sicurezza.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Keep it for safety.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "La conservi per sicurezza.",
+    "correctAnswerEnglish": "Keep it for safety.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'La conservi per sicurezza.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Keep it for safety.'"
+    }
+  },
+  {
+    "id": "s52-s24",
+    "choicesItalian": [
+      "Vorrei comprare dieci francobolli per l'Italia.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "I would like to buy ten stamps for Italy.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Vorrei comprare dieci francobolli per l'Italia.",
+    "correctAnswerEnglish": "I would like to buy ten stamps for Italy.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Vorrei comprare dieci francobolli per l'Italia.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I would like to buy ten stamps for Italy.'"
+    }
+  },
+  {
+    "id": "s52-s25",
+    "choicesItalian": [
+      "Sono francobolli per lettera ordinaria?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Are they stamps for ordinary letters?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Sono francobolli per lettera ordinaria?",
+    "correctAnswerEnglish": "Are they stamps for ordinary letters?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Sono francobolli per lettera ordinaria?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Are they stamps for ordinary letters?'"
+    }
+  },
+  {
+    "id": "s52-s26",
+    "choicesItalian": [
+      "Sì, quelli da un euro e dieci.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Yes, those for one euro and ten cents.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Sì, quelli da un euro e dieci.",
+    "correctAnswerEnglish": "Yes, those for one euro and ten cents.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Sì, quelli da un euro e dieci.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Yes, those for one euro and ten cents.'"
+    }
+  },
+  {
+    "id": "s52-s27",
+    "choicesItalian": [
+      "Avete anche buste imbottite?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Do you also have padded envelopes?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Avete anche buste imbottite?",
+    "correctAnswerEnglish": "Do you also have padded envelopes?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Avete anche buste imbottite?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Do you also have padded envelopes?'"
+    }
+  },
+  {
+    "id": "s52-s28",
+    "choicesItalian": [
+      "Sì, le trova in quell'espositore.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Yes, you find them in that display rack.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Sì, le trova in quell'espositore.",
+    "correctAnswerEnglish": "Yes, you find them in that display rack.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Sì, le trova in quell'espositore.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Yes, you find them in that display rack.'"
+    }
+  },
+  {
+    "id": "s52-s29",
+    "choicesItalian": [
+      "Ho ricevuto un avviso di giacenza per una raccomandata.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "I received a delivery notice for a registered mail.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Ho ricevuto un avviso di giacenza per una raccomandata.",
+    "correctAnswerEnglish": "I received a delivery notice for a registered mail.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Ho ricevuto un avviso di giacenza per una raccomandata.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I received a delivery notice for a registered mail.'"
+    }
+  },
+  {
+    "id": "s52-s30",
+    "choicesItalian": [
+      "Può ritirarla solo a partire da domani.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "You can pick it up only starting from tomorrow.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Può ritirarla solo a partire da domani.",
+    "correctAnswerEnglish": "You can pick it up only starting from tomorrow.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Può ritirarla solo a partire da domani.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You can pick it up only starting from tomorrow.'"
+    }
+  },
+  {
+    "id": "s52-s31",
+    "choicesItalian": [
+      "A che ora apre l'ufficio postale domani?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "What time does the post office open tomorrow?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "A che ora apre l'ufficio postale domani?",
+    "correctAnswerEnglish": "What time does the post office open tomorrow?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'A che ora apre l'ufficio postale domani?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'What time does the post office open tomorrow?'"
+    }
+  },
+  {
+    "id": "s52-s32",
+    "choicesItalian": [
+      "Apriamo alle otto e un quarto.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "We open at eight fifteen.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Apriamo alle otto e un quarto.",
+    "correctAnswerEnglish": "We open at eight fifteen.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Apriamo alle otto e un quarto.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'We open at eight fifteen.'"
+    }
+  },
+  {
+    "id": "s52-s33",
+    "choicesItalian": [
+      "Mi serve un documento d'identità per il ritiro.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "I need an identity document for the collection.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Mi serve un documento d'identità per il ritiro.",
+    "correctAnswerEnglish": "I need an identity document for the collection.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Mi serve un documento d'identità per il ritiro.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I need an identity document for the collection.'"
+    }
+  },
+  {
+    "id": "s52-s34",
+    "choicesItalian": [
+      "La patente di guida va bene?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Is the driver's license okay?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "La patente di guida va bene?",
+    "correctAnswerEnglish": "Is the driver's license okay?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'La patente di guida va bene?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Is the driver's license okay?'"
+    }
+  },
+  {
+    "id": "s52-s35",
+    "choicesItalian": [
+      "Sì, è un documento valido.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Yes, it is a valid document.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Sì, è un documento valido.",
+    "correctAnswerEnglish": "Yes, it is a valid document.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Sì, è un documento valido.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Yes, it is a valid document.'"
+    }
+  },
+  {
+    "id": "s52-s36",
+    "choicesItalian": [
+      "Deve anche firmare sul tablet.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "You also have to sign on the tablet.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Deve anche firmare sul tablet.",
+    "correctAnswerEnglish": "You also have to sign on the tablet.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Deve anche firmare sul tablet.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You also have to sign on the tablet.'"
+    }
+  },
+  {
+    "id": "s52-s37",
+    "choicesItalian": [
+      "Vorrei inviare una cartolina negli Stati Uniti.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "I would like to send a postcard to the United States.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Vorrei inviare una cartolina negli Stati Uniti.",
+    "correctAnswerEnglish": "I would like to send a postcard to the United States.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Vorrei inviare una cartolina negli Stati Uniti.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I would like to send a postcard to the United States.'"
+    }
+  },
+  {
+    "id": "s52-s38",
+    "choicesItalian": [
+      "Serve un francobollo per zona tre.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "A stamp for zone three is needed.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Serve un francobollo per zona tre.",
+    "correctAnswerEnglish": "A stamp for zone three is needed.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Serve un francobollo per zona tre.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'A stamp for zone three is needed.'"
+    }
+  },
+  {
+    "id": "s52-s39",
+    "choicesItalian": [
+      "Quanto tempo ci mette ad arrivare?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "How long does it take to arrive?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Quanto tempo ci mette ad arrivare?",
+    "correctAnswerEnglish": "How long does it take to arrive?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Quanto tempo ci mette ad arrivare?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'How long does it take to arrive?'"
+    }
+  },
+  {
+    "id": "s52-s40",
+    "choicesItalian": [
+      "Circa una settimana o dieci giorni.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "About a week or ten days.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Circa una settimana o dieci giorni.",
+    "correctAnswerEnglish": "About a week or ten days.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Circa una settimana o dieci giorni.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'About a week or ten days.'"
+    }
+  },
+  {
+    "id": "s52-s41",
+    "choicesItalian": [
+      "C'è troppa fila oggi.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "There is too much of a line today.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "C'è troppa fila oggi.",
+    "correctAnswerEnglish": "There is too much of a line today.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'C'è troppa fila oggi.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'There is too much of a line today.'"
+    }
+  },
+  {
+    "id": "s52-s42",
+    "choicesItalian": [
+      "Può prenotare il turno con l'app.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "You can book your turn with the app.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Può prenotare il turno con l'app.",
+    "correctAnswerEnglish": "You can book your turn with the app.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Può prenotare il turno con l'app.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You can book your turn with the app.'"
+    }
+  },
+  {
+    "id": "s52-s43",
+    "choicesItalian": [
+      "Così non deve aspettare qui fuori.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "That way you don't have to wait out here.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Così non deve aspettare qui fuori.",
+    "correctAnswerEnglish": "That way you don't have to wait out here.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Così non deve aspettare qui fuori.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'That way you don't have to wait out here.'"
+    }
+  },
+  {
+    "id": "s52-s44",
+    "choicesItalian": [
+      "Mi dà un modulo per il pacco celere?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Can you give me a form for the express parcel?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Mi dà un modulo per il pacco celere?",
+    "correctAnswerEnglish": "Can you give me a form for the express parcel?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Mi dà un modulo per il pacco celere?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Can you give me a form for the express parcel?'"
+    }
+  },
+  {
+    "id": "s52-s45",
+    "choicesItalian": [
+      "Eccoli, sono sul bancone a sinistra.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Here they are, they are on the counter to the left.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Eccoli, sono sul bancone a sinistra.",
+    "correctAnswerEnglish": "Here they are, they are on the counter to the left.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Eccoli, sono sul bancone a sinistra.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Here they are, they are on the counter to the left.'"
+    }
+  },
+  {
+    "id": "s52-s46",
+    "choicesItalian": [
+      "Serve del nastro adesivo per chiudere la scatola.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Some adhesive tape is needed to close the box.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Serve del nastro adesivo per chiudere la scatola.",
+    "correctAnswerEnglish": "Some adhesive tape is needed to close the box.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Serve del nastro adesivo per chiudere la scatola.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Some adhesive tape is needed to close the box.'"
+    }
+  },
+  {
+    "id": "s52-s47",
+    "choicesItalian": [
+      "Lo può comprare allo sportello cinque.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "You can buy it at counter five.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Lo può comprare allo sportello cinque.",
+    "correctAnswerEnglish": "You can buy it at counter five.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Lo può comprare allo sportello cinque.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You can buy it at counter five.'"
+    }
+  },
+  {
+    "id": "s52-s48",
+    "choicesItalian": [
+      "Assicurate anche i pacchi di valore?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Do you also insure valuable packages?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Assicurate anche i pacchi di valore?",
+    "correctAnswerEnglish": "Do you also insure valuable packages?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Assicurate anche i pacchi di valore?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Do you also insure valuable packages?'"
+    }
+  },
+  {
+    "id": "s52-s49",
+    "choicesItalian": [
+      "Sì, c'è un costo aggiuntivo in base al valore.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Yes, there is an additional cost based on the value.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Sì, c'è un costo aggiuntivo in base al valore.",
+    "correctAnswerEnglish": "Yes, there is an additional cost based on the value.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Sì, c'è un costo aggiuntivo in base al valore.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Yes, there is an additional cost based on the value.'"
+    }
+  },
+  {
+    "id": "s52-s50",
+    "choicesItalian": [
+      "Quanto è assicurato il mio pacco?",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "How much is my package insured for?",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Quanto è assicurato il mio pacco?",
+    "correctAnswerEnglish": "How much is my package insured for?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Quanto è assicurato il mio pacco?'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'How much is my package insured for?'"
+    }
+  },
+  {
+    "id": "s52-s51",
+    "choicesItalian": [
+      "Fino a cinquecento euro.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Up to five hundred euros.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Fino a cinquecento euro.",
+    "correctAnswerEnglish": "Up to five hundred euros.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Fino a cinquecento euro.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Up to five hundred euros.'"
+    }
+  },
+  {
+    "id": "s52-s52",
+    "choicesItalian": [
+      "Va bene, procediamo con l'assicurazione.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Fine, let's proceed with the insurance.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Va bene, procediamo con l'assicurazione.",
+    "correctAnswerEnglish": "Fine, let's proceed with the insurance.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Va bene, procediamo con l'assicurazione.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Fine, let's proceed with the insurance.'"
+    }
+  },
+  {
+    "id": "s52-s53",
+    "choicesItalian": [
+      "Vorrei cambiare l'indirizzo di consegna.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "I would like to change the delivery address.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Vorrei cambiare l'indirizzo di consegna.",
+    "correctAnswerEnglish": "I would like to change the delivery address.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Vorrei cambiare l'indirizzo di consegna.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I would like to change the delivery address.'"
+    }
+  },
+  {
+    "id": "s52-s54",
+    "choicesItalian": [
+      "Purtroppo il pacco è già partito.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Unfortunately the package has already left.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Purtroppo il pacco è già partito.",
+    "correctAnswerEnglish": "Unfortunately the package has already left.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Purtroppo il pacco è già partito.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Unfortunately the package has already left.'"
+    }
+  },
+  {
+    "id": "s52-s55",
+    "choicesItalian": [
+      "Può provare a chiamare il numero verde.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "You can try calling the toll-free number.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Può provare a chiamare il numero verde.",
+    "correctAnswerEnglish": "You can try calling the toll-free number.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Può provare a chiamare il numero verde.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'You can try calling the toll-free number.'"
+    }
+  },
+  {
+    "id": "s52-s56",
+    "choicesItalian": [
+      "Grazie per le informazioni.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Thanks for the information.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Grazie per le informazioni.",
+    "correctAnswerEnglish": "Thanks for the information.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Grazie per le informazioni.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Thanks for the information.'"
+    }
+  },
+  {
+    "id": "s52-s57",
+    "choicesItalian": [
+      "Buona giornata e buon lavoro.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "Have a nice day and good work.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Buona giornata e buon lavoro.",
+    "correctAnswerEnglish": "Have a nice day and good work.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Buona giornata e buon lavoro.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'Have a nice day and good work.'"
+    }
+  },
+  {
+    "id": "s52-s58",
+    "choicesItalian": [
+      "Altrettanto a lei, arrivederci.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "The same to you, goodbye.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Altrettanto a lei, arrivederci.",
+    "correctAnswerEnglish": "The same to you, goodbye.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Altrettanto a lei, arrivederci.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'The same to you, goodbye.'"
+    }
+  },
+  {
+    "id": "s52-s59",
+    "choicesItalian": [
+      "Non ho ricevuto la ricevuta del bonifico.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "I didn't receive the transfer receipt.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Non ho ricevuto la ricevuta del bonifico.",
+    "correctAnswerEnglish": "I didn't receive the transfer receipt.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Non ho ricevuto la ricevuta del bonifico.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I didn't receive the transfer receipt.'"
+    }
+  },
+  {
+    "id": "s52-s60",
+    "choicesItalian": [
+      "Gliela stampo subito.",
+      "Buongiorno, vorrei spedire questo pacco in Germania.",
+      "Cosa contiene il pacco?",
+      "Contiene solo dei vestiti e un libro."
+    ],
+    "choicesEnglish": [
+      "I'll print it for you right away.",
+      "Good morning, I would like to send this package to Germany.",
+      "What does the package contain?",
+      "It contains only clothes and a book."
+    ],
+    "correctAnswerItalian": "Gliela stampo subito.",
+    "correctAnswerEnglish": "I'll print it for you right away.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No: 'Gliela stampo subito.'",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No: 'I'll print it for you right away.'"
     }
   }
 ]

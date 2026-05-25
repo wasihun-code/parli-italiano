@@ -1,104 +1,1302 @@
 [
   {
-    "id": "s64-p3",
-    "italian": "Rispondo subito.",
-    "english": "I'll reply right away.",
+    "id": "s64-p1",
+    "italian": "Ho mandato un'email.",
+    "english": "I sent an email.",
     "type": "phrase",
-    "choices": [
-      "Rispondo subito.",
-      "Qual è l'oggetto?",
-      "Hai visto l'allegato?",
-      "Ho ricevuto tutto."
+    "choicesItalian": [
+      "Ho mandato un'email.",
+      "Ho ricevuto un'email.",
+      "Ho letto un'email.",
+      "Ho scritto un'email."
     ],
-    "correctAnswer": "Rispondo subito.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Rispondo subito.\"."
-    }
-  },
-  {
-    "id": "s64-p5",
-    "italian": "Qual è l'oggetto?",
-    "english": "What is the subject?",
-    "type": "phrase",
-    "choices": [
-      "Ho ricevuto tutto.",
-      "Qual è l'oggetto?",
-      "Rispondo subito.",
-      "Inoltro il messaggio."
+    "choicesEnglish": [
+      "I sent an email.",
+      "I received an email.",
+      "I read an email.",
+      "I wrote an email."
     ],
-    "correctAnswer": "Qual è l'oggetto?",
+    "correctAnswerItalian": "Ho mandato un'email.",
+    "correctAnswerEnglish": "I sent an email.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Qual è l'oggetto?\"."
-    }
-  },
-  {
-    "id": "s64-p6",
-    "italian": "Ho ricevuto tutto.",
-    "english": "I received everything.",
-    "type": "phrase",
-    "choices": [
-      "Inoltro il messaggio.",
-      "Ho ricevuto tutto.",
-      "Qual è l'oggetto?",
-      "Ti ho inviato un'email."
-    ],
-    "correctAnswer": "Ho ricevuto tutto.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho ricevuto tutto.\"."
+      "correctItalian": "Esatto! Passato prossimo di mandare.",
+      "incorrectItalian": "No, significa 'I sent an email'.",
+      "correctEnglish": "Exactly! Past tense of to send.",
+      "incorrectEnglish": "No, it means 'I sent an email'."
     }
   },
   {
     "id": "s64-p2",
-    "italian": "Hai visto l'allegato?",
-    "english": "Did you see the attachment?",
+    "italian": "Hai visto la mia email?",
+    "english": "Did you see my email?",
     "type": "phrase",
-    "choices": [
-      "Rispondo subito.",
-      "Qual è l'oggetto?",
-      "Hai visto l'allegato?",
-      "Ti ho inviato un'email."
+    "choicesItalian": [
+      "Hai visto la mia email?",
+      "Hai preso la mia email?",
+      "Hai perso la mia email?",
+      "Hai dato la mia email?"
     ],
-    "correctAnswer": "Hai visto l'allegato?",
+    "choicesEnglish": [
+      "Did you see my email?",
+      "Did you take my email?",
+      "Did you lose my email?",
+      "Did you give my email?"
+    ],
+    "correctAnswerItalian": "Hai visto la mia email?",
+    "correctAnswerEnglish": "Did you see my email?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Hai visto l'allegato?\"."
+      "correctItalian": "Ottimo! Chiedere conferma.",
+      "incorrectItalian": "No, è 'Hai visto...?'.",
+      "correctEnglish": "Great! Asking for confirmation.",
+      "incorrectEnglish": "No, it's 'Did you see...?'."
+    }
+  },
+  {
+    "id": "s64-p3",
+    "italian": "Non ho ricevuto nulla.",
+    "english": "I haven't received anything.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Non ho ricevuto nulla.",
+      "Non ho visto nulla.",
+      "Non ho detto nulla.",
+      "Non ho fatto nulla."
+    ],
+    "choicesEnglish": [
+      "I haven't received anything.",
+      "I haven't seen anything.",
+      "I haven't said anything.",
+      "I haven't done anything."
+    ],
+    "correctAnswerItalian": "Non ho ricevuto nulla.",
+    "correctAnswerEnglish": "I haven't received anything.",
+    "feedback": {
+      "correctItalian": "Esatto! Negazione della ricezione.",
+      "incorrectItalian": "No, significa 'I haven't received anything'.",
+      "correctEnglish": "Exactly! Negation of receipt.",
+      "incorrectEnglish": "No, it means 'I haven't received anything'."
     }
   },
   {
     "id": "s64-p4",
-    "italian": "Inoltro il messaggio.",
-    "english": "I'm forwarding the message.",
+    "italian": "Controlla nello spam.",
+    "english": "Check in the spam.",
     "type": "phrase",
-    "choices": [
-      "Inoltro il messaggio.",
-      "Ti ho inviato un'email.",
-      "Hai visto l'allegato?",
-      "Qual è l'oggetto?"
+    "choicesItalian": [
+      "Controlla nello spam.",
+      "Guarda nella cartella.",
+      "Apri l'allegato.",
+      "Invia il file."
     ],
-    "correctAnswer": "Inoltro il messaggio.",
+    "choicesEnglish": [
+      "Check in the spam.",
+      "Look in the folder.",
+      "Open the attachment.",
+      "Send the file."
+    ],
+    "correctAnswerItalian": "Controlla nello spam.",
+    "correctAnswerEnglish": "Check in the spam.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Inoltro il messaggio.\"."
+      "correctItalian": "Giusto! Un consiglio comune.",
+      "incorrectItalian": "No, è 'Controlla nello spam'.",
+      "correctEnglish": "Right! Common advice.",
+      "incorrectEnglish": "No, it's 'Check in the spam'."
     }
   },
   {
-    "id": "s64-p1",
-    "italian": "Ti ho inviato un'email.",
-    "english": "I sent you an email.",
+    "id": "s64-p5",
+    "italian": "Ti rispondo subito.",
+    "english": "I'll reply to you right away.",
     "type": "phrase",
-    "choices": [
-      "Qual è l'oggetto?",
-      "Ti ho inviato un'email.",
-      "Rispondo subito.",
-      "Hai visto l'allegato?"
+    "choicesItalian": [
+      "Ti rispondo subito.",
+      "Ti chiamo dopo.",
+      "Ti scrivo domani.",
+      "Ti vedo stasera."
     ],
-    "correctAnswer": "Ti ho inviato un'email.",
+    "choicesEnglish": [
+      "I'll reply to you right away.",
+      "I'll call you later.",
+      "I'll write to you tomorrow.",
+      "I'll see you tonight."
+    ],
+    "correctAnswerItalian": "Ti rispondo subito.",
+    "correctAnswerEnglish": "I'll reply to you right away.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ti ho inviato un'email.\"."
+      "correctItalian": "Perfetto! Indica immediatezza.",
+      "incorrectItalian": "No, significa 'I'll reply right away'.",
+      "correctEnglish": "Perfect! Indicates immediacy.",
+      "incorrectEnglish": "No, it means 'I'll reply right away'."
+    }
+  },
+  {
+    "id": "s64-p6",
+    "italian": "Le faccio sapere.",
+    "english": "I'll let you know.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Le faccio sapere.",
+      "Le dico tutto.",
+      "Le porto il file.",
+      "Le mando l'email."
+    ],
+    "choicesEnglish": [
+      "I'll let you know.",
+      "I'll tell you everything.",
+      "I'll bring you the file.",
+      "I'll send you the email."
+    ],
+    "correctAnswerItalian": "Le faccio sapere.",
+    "correctAnswerEnglish": "I'll let you know.",
+    "feedback": {
+      "correctItalian": "Esatto! Espressione formale.",
+      "incorrectItalian": "No, significa 'I'll let you know'.",
+      "correctEnglish": "Exactly! Formal expression.",
+      "incorrectEnglish": "No, it means 'I'll let you know'."
+    }
+  },
+  {
+    "id": "s64-p7",
+    "italian": "Dare seguito a...",
+    "english": "To follow up on...",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dare seguito a...",
+      "Iniziare a...",
+      "Finire di...",
+      "Cercare di..."
+    ],
+    "choicesEnglish": [
+      "To follow up on...",
+      "To start to...",
+      "To finish...",
+      "To try to..."
+    ],
+    "correctAnswerItalian": "Dare seguito a...",
+    "correctAnswerEnglish": "To follow up on...",
+    "feedback": {
+      "correctItalian": "Ottimo! Espressione chiave.",
+      "incorrectItalian": "No, è 'Dare seguito a...'.",
+      "correctEnglish": "Great! Key expression.",
+      "incorrectEnglish": "No, it's 'To follow up on...'."
+    }
+  },
+  {
+    "id": "s64-p8",
+    "italian": "La spedizione è urgente.",
+    "english": "The shipping is urgent.",
+    "type": "phrase",
+    "choicesItalian": [
+      "La spedizione è urgente.",
+      "L'ordine è pronto.",
+      "Il pacco è arrivato.",
+      "La merce è finita."
+    ],
+    "choicesEnglish": [
+      "The shipping is urgent.",
+      "The order is ready.",
+      "The package has arrived.",
+      "The goods are finished."
+    ],
+    "correctAnswerItalian": "La spedizione è urgente.",
+    "correctAnswerEnglish": "The shipping is urgent.",
+    "feedback": {
+      "correctItalian": "Esatto! Indica priorità.",
+      "incorrectItalian": "No, significa 'The shipping is urgent'.",
+      "correctEnglish": "Exactly! Indicates priority.",
+      "incorrectEnglish": "No, it means 'The shipping is urgent'."
+    }
+  },
+  {
+    "id": "s64-p9",
+    "italian": "Mi serve entro domani.",
+    "english": "I need it by tomorrow.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mi serve entro domani.",
+      "Lo voglio per ieri.",
+      "Arriva tra poco.",
+      "È pronto adesso."
+    ],
+    "choicesEnglish": [
+      "I need it by tomorrow.",
+      "I want it for yesterday.",
+      "It's arriving soon.",
+      "It's ready now."
+    ],
+    "correctAnswerItalian": "Mi serve entro domani.",
+    "correctAnswerEnglish": "I need it by tomorrow.",
+    "feedback": {
+      "correctItalian": "Giusto! Una scadenza vicina.",
+      "incorrectItalian": "No, è 'entro domani'.",
+      "correctEnglish": "Right! A close deadline.",
+      "incorrectEnglish": "No, it's 'by tomorrow'."
+    }
+  },
+  {
+    "id": "s64-p10",
+    "italian": "Grazie per il feedback.",
+    "english": "Thanks for the feedback.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Grazie per il feedback.",
+      "Prego per l'aiuto.",
+      "Scusa per il ritardo.",
+      "Ciao per ora."
+    ],
+    "choicesEnglish": [
+      "Thanks for the feedback.",
+      "You're welcome for the help.",
+      "Sorry for the delay.",
+      "Bye for now."
+    ],
+    "correctAnswerItalian": "Grazie per il feedback.",
+    "correctAnswerEnglish": "Thanks for the feedback.",
+    "feedback": {
+      "correctItalian": "Ottimo! Ringraziamento comune.",
+      "incorrectItalian": "No, è 'Grazie per il feedback'.",
+      "correctEnglish": "Great! Common thanks.",
+      "incorrectEnglish": "No, it's 'Thanks for the feedback'."
+    }
+  },
+  {
+    "id": "s64-p11",
+    "italian": "Scusa il ritardo.",
+    "english": "Sorry for the delay.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Scusa il ritardo.",
+      "Prego il disturbo.",
+      "Guarda l'email.",
+      "Leggi il file."
+    ],
+    "choicesEnglish": [
+      "Sorry for the delay.",
+      "You're welcome for the bother.",
+      "Look at the email.",
+      "Read the file."
+    ],
+    "correctAnswerItalian": "Scusa il ritardo.",
+    "correctAnswerEnglish": "Sorry for the delay.",
+    "feedback": {
+      "correctItalian": "Esatto! Scusa formale/informale.",
+      "incorrectItalian": "No, è 'Scusa il ritardo'.",
+      "correctEnglish": "Exactly! Formal/informal apology.",
+      "incorrectEnglish": "No, it's 'Sorry for the delay'."
+    }
+  },
+  {
+    "id": "s64-p12",
+    "italian": "Ho dimenticato l'allegato.",
+    "english": "I forgot the attachment.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ho dimenticato l'allegato.",
+      "Ho perso l'email.",
+      "Ho visto il link.",
+      "Ho inviato la bozza."
+    ],
+    "choicesEnglish": [
+      "I forgot the attachment.",
+      "I lost the email.",
+      "I saw the link.",
+      "I sent the draft."
+    ],
+    "correctAnswerItalian": "Ho dimenticato l'allegato.",
+    "correctAnswerEnglish": "I forgot the attachment.",
+    "feedback": {
+      "correctItalian": "Giusto! Errore molto comune.",
+      "incorrectItalian": "No, significa 'I forgot the attachment'.",
+      "correctEnglish": "Right! Very common error.",
+      "incorrectEnglish": "No, it means 'I forgot the attachment'."
+    }
+  },
+  {
+    "id": "s64-p13",
+    "italian": "Qual è l'oggetto?",
+    "english": "What is the subject?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Qual è l'oggetto?",
+      "Chi è il mittente?",
+      "Dove è il file?",
+      "Quando è l'invio?"
+    ],
+    "choicesEnglish": [
+      "What is the subject?",
+      "Who is the sender?",
+      "Where is the file?",
+      "When is the sending?"
+    ],
+    "correctAnswerItalian": "Qual è l'oggetto?",
+    "correctAnswerEnglish": "What is the subject?",
+    "feedback": {
+      "correctItalian": "Perfetto! Chiedere il titolo.",
+      "incorrectItalian": "No, è 'Qual è l'oggetto?'.",
+      "correctEnglish": "Perfect! Asking for the title.",
+      "incorrectEnglish": "No, it's 'What is the subject?'."
+    }
+  },
+  {
+    "id": "s64-p14",
+    "italian": "Inoltro l'email a Mario.",
+    "english": "I'm forwarding the email to Mario.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Inoltro l'email a Mario.",
+      "Scrivo l'email a Mario.",
+      "Leggo l'email di Mario.",
+      "Cancello l'email per Mario."
+    ],
+    "choicesEnglish": [
+      "I'm forwarding the email to Mario.",
+      "I'm writing the email to Mario.",
+      "I'm reading Mario's email.",
+      "I'm deleting the email for Mario."
+    ],
+    "correctAnswerItalian": "Inoltro l'email a Mario.",
+    "correctAnswerEnglish": "I'm forwarding the email to Mario.",
+    "feedback": {
+      "correctItalian": "Esatto! Azione di inoltrare.",
+      "incorrectItalian": "No, significa 'I'm forwarding...'.",
+      "correctEnglish": "Exactly! Action of forwarding.",
+      "incorrectEnglish": "No, it means 'I'm forwarding...'."
+    }
+  },
+  {
+    "id": "s64-p15",
+    "italian": "Ci sentiamo più tardi.",
+    "english": "We'll talk later.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ci sentiamo più tardi.",
+      "Ci vediamo domani.",
+      "Ci scriviamo ora.",
+      "Ci sentiamo subito."
+    ],
+    "choicesEnglish": [
+      "We'll talk later.",
+      "We'll see each other tomorrow.",
+      "We'll write each other now.",
+      "We'll talk right away."
+    ],
+    "correctAnswerItalian": "Ci sentiamo più tardi.",
+    "correctAnswerEnglish": "We'll talk later.",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiusura di conversazione.",
+      "incorrectItalian": "No, significa 'We'll talk later'.",
+      "correctEnglish": "Great! Conversation closer.",
+      "incorrectEnglish": "No, it means 'We'll talk later'."
+    }
+  },
+  {
+    "id": "s64-p16",
+    "italian": "Rimango in attesa.",
+    "english": "I'll wait / I remain waiting.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Rimango in attesa.",
+      "Vado via ora.",
+      "Torno subito.",
+      "Spero bene."
+    ],
+    "choicesEnglish": [
+      "I'll wait / I remain waiting.",
+      "I'm leaving now.",
+      "I'll be right back.",
+      "I hope so."
+    ],
+    "correctAnswerItalian": "Rimango in attesa.",
+    "correctAnswerEnglish": "I'll wait / I remain waiting.",
+    "feedback": {
+      "correctItalian": "Giusto! Chiusura formale.",
+      "incorrectItalian": "No, significa 'I remain waiting'.",
+      "correctEnglish": "Right! Formal closing.",
+      "incorrectEnglish": "No, it means 'I remain waiting'."
+    }
+  },
+  {
+    "id": "s64-p17",
+    "italian": "Cordiali saluti.",
+    "english": "Best regards.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Cordiali saluti.",
+      "Cari amici.",
+      "Tanti auguri.",
+      "Buona fortuna."
+    ],
+    "choicesEnglish": [
+      "Best regards.",
+      "Dear friends.",
+      "Best wishes.",
+      "Good luck."
+    ],
+    "correctAnswerItalian": "Cordiali saluti.",
+    "correctAnswerEnglish": "Best regards.",
+    "feedback": {
+      "correctItalian": "Esatto! Saluto formale.",
+      "incorrectItalian": "No, è 'Cordiali saluti'.",
+      "correctEnglish": "Exactly! Formal greeting.",
+      "incorrectEnglish": "No, it's 'Best regards'."
+    }
+  },
+  {
+    "id": "s64-p18",
+    "italian": "Fammi sapere cosa ne pensi.",
+    "english": "Let me know what you think.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Fammi sapere cosa ne pensi.",
+      "Dimmi dove vai.",
+      "Chiedimi aiuto.",
+      "Senti questo."
+    ],
+    "choicesEnglish": [
+      "Let me know what you think.",
+      "Tell me where you go.",
+      "Ask me for help.",
+      "Hear this."
+    ],
+    "correctAnswerItalian": "Fammi sapere cosa ne pensi.",
+    "correctAnswerEnglish": "Let me know what you think.",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere un parere.",
+      "incorrectItalian": "No, significa 'Let me know...'.",
+      "correctEnglish": "Great! Asking for an opinion.",
+      "incorrectEnglish": "No, it means 'Let me know...'."
+    }
+  },
+  {
+    "id": "s64-p19",
+    "italian": "Ne parliamo in riunione.",
+    "english": "We'll talk about it in the meeting.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ne parliamo in riunione.",
+      "Lo scriviamo in email.",
+      "Lo vediamo dopo.",
+      "Ci pensiamo domani."
+    ],
+    "choicesEnglish": [
+      "We'll talk about it in the meeting.",
+      "We'll write it in email.",
+      "We'll see it later.",
+      "We'll think about it tomorrow."
+    ],
+    "correctAnswerItalian": "Ne parliamo in riunione.",
+    "correctAnswerEnglish": "We'll talk about it in the meeting.",
+    "feedback": {
+      "correctItalian": "Esatto! Rimandare alla riunione.",
+      "incorrectItalian": "No, è 'in riunione'.",
+      "correctEnglish": "Exactly! Postponing to the meeting.",
+      "incorrectEnglish": "No, it's 'in the meeting'."
+    }
+  },
+  {
+    "id": "s64-p20",
+    "italian": "Verifica la disponibilità.",
+    "english": "Verify the availability.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Verifica la disponibilità.",
+      "Controlla il prezzo.",
+      "Compra l'oggetto.",
+      "Vendi tutto."
+    ],
+    "choicesEnglish": [
+      "Verify the availability.",
+      "Check the price.",
+      "Buy the object.",
+      "Sell everything."
+    ],
+    "correctAnswerItalian": "Verifica la disponibilità.",
+    "correctAnswerEnglish": "Verify the availability.",
+    "feedback": {
+      "correctItalian": "Giusto! Un ordine o richiesta.",
+      "incorrectItalian": "No, è 'Verifica la...'.",
+      "correctEnglish": "Right! A command or request.",
+      "incorrectEnglish": "No, it's 'Verify the...'."
+    }
+  },
+  {
+    "id": "s64-p21",
+    "italian": "Mi dia un attimo.",
+    "english": "Give me a second.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mi dia un attimo.",
+      "Mi porti il file.",
+      "Mi scusi ora.",
+      "Mi dica tutto."
+    ],
+    "choicesEnglish": [
+      "Give me a second.",
+      "Bring me the file.",
+      "Excuse me now.",
+      "Tell me everything."
+    ],
+    "correctAnswerItalian": "Mi dia un attimo.",
+    "correctAnswerEnglish": "Give me a second.",
+    "feedback": {
+      "correctItalian": "Perfetto! Chiedere tempo.",
+      "incorrectItalian": "No, significa 'Give me a second'.",
+      "correctEnglish": "Perfect! Asking for time.",
+      "incorrectEnglish": "No, it means 'Give me a second'."
+    }
+  },
+  {
+    "id": "s64-p22",
+    "italian": "Controllo subito.",
+    "english": "I'll check right away.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Controllo subito.",
+      "Leggo dopo.",
+      "Scrivo domani.",
+      "Vado ora."
+    ],
+    "choicesEnglish": [
+      "I'll check right away.",
+      "I'll read later.",
+      "I'll write tomorrow.",
+      "I'm going now."
+    ],
+    "correctAnswerItalian": "Controllo subito.",
+    "correctAnswerEnglish": "I'll check right away.",
+    "feedback": {
+      "correctItalian": "Esatto! Risposta solerte.",
+      "incorrectItalian": "No, significa 'I'll check right away'.",
+      "correctEnglish": "Exactly! Prompt response.",
+      "incorrectEnglish": "No, it means 'I'll check right away'."
+    }
+  },
+  {
+    "id": "s64-p23",
+    "italian": "Conferma ricevuta.",
+    "english": "Confirmation received.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Conferma ricevuta.",
+      "Email inviata.",
+      "File perso.",
+      "Dati errati."
+    ],
+    "choicesEnglish": [
+      "Confirmation received.",
+      "Email sent.",
+      "File lost.",
+      "Wrong data."
+    ],
+    "correctAnswerItalian": "Conferma ricevuta.",
+    "correctAnswerEnglish": "Confirmation received.",
+    "feedback": {
+      "correctItalian": "Giusto! Stato di un processo.",
+      "incorrectItalian": "No, è 'Conferma ricevuta'.",
+      "correctEnglish": "Right! State of a process.",
+      "incorrectEnglish": "No, it's 'Confirmation received'."
+    }
+  },
+  {
+    "id": "s64-p24",
+    "italian": "La policy aziendale.",
+    "english": "The company policy.",
+    "type": "phrase",
+    "choicesItalian": [
+      "La policy aziendale.",
+      "Il piano di studi.",
+      "L'orario delle lezioni.",
+      "Il regolamento scolastico."
+    ],
+    "choicesEnglish": [
+      "The company policy.",
+      "The study plan.",
+      "The class schedule.",
+      "The school regulation."
+    ],
+    "correctAnswerItalian": "La policy aziendale.",
+    "correctAnswerEnglish": "The company policy.",
+    "feedback": {
+      "correctItalian": "Ottimo! Contesto lavorativo.",
+      "incorrectItalian": "No, è 'La policy aziendale'.",
+      "correctEnglish": "Great! Work context.",
+      "incorrectEnglish": "No, it's 'The company policy'."
+    }
+  },
+  {
+    "id": "s64-p25",
+    "italian": "Ho visto l'email ieri.",
+    "english": "I saw the email yesterday.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ho visto l'email ieri.",
+      "Ho letto il libro oggi.",
+      "Ho scritto la nota ora.",
+      "Ho perso la chiave poi."
+    ],
+    "choicesEnglish": [
+      "I saw the email yesterday.",
+      "I read the book today.",
+      "I wrote the note now.",
+      "I lost the key then."
+    ],
+    "correctAnswerItalian": "Ho visto l'email ieri.",
+    "correctAnswerEnglish": "I saw the email yesterday.",
+    "feedback": {
+      "correctItalian": "Esatto! Riferimento temporale.",
+      "incorrectItalian": "No, è 'ieri'.",
+      "correctEnglish": "Exactly! Time reference.",
+      "incorrectEnglish": "No, it's 'yesterday'."
+    }
+  },
+  {
+    "id": "s64-p26",
+    "italian": "Può rispondere entro oggi?",
+    "english": "Can you reply by today?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Può rispondere entro oggi?",
+      "Può venire domani?",
+      "Può chiamare ora?",
+      "Può andare via?"
+    ],
+    "choicesEnglish": [
+      "Can you reply by today?",
+      "Can you come tomorrow?",
+      "Can you call now?",
+      "Can you go away?"
+    ],
+    "correctAnswerItalian": "Può rispondere entro oggi?",
+    "correctAnswerEnglish": "Can you reply by today?",
+    "feedback": {
+      "correctItalian": "Giusto! Richiesta di urgenza.",
+      "incorrectItalian": "No, è 'entro oggi?'.",
+      "correctEnglish": "Right! Urgent request.",
+      "incorrectEnglish": "No, it's 'by today?'."
+    }
+  },
+  {
+    "id": "s64-p27",
+    "italian": "È molto importante.",
+    "english": "It's very important.",
+    "type": "phrase",
+    "choicesItalian": [
+      "È molto importante.",
+      "È poco utile.",
+      "È troppo caro.",
+      "È molto bello."
+    ],
+    "choicesEnglish": [
+      "It's very important.",
+      "It's not very useful.",
+      "It's too expensive.",
+      "It's very beautiful."
+    ],
+    "correctAnswerItalian": "È molto importante.",
+    "correctAnswerEnglish": "It's very important.",
+    "feedback": {
+      "correctItalian": "Perfetto! Sottolineare rilievo.",
+      "incorrectItalian": "No, significa 'important'.",
+      "correctEnglish": "Perfect! Emphasizing importance.",
+      "incorrectEnglish": "No, it means 'important'."
+    }
+  },
+  {
+    "id": "s64-p28",
+    "italian": "Non ho ancora deciso.",
+    "english": "I haven't decided yet.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Non ho ancora deciso.",
+      "Non ho ancora finito.",
+      "Non ho ancora visto.",
+      "Non ho ancora detto."
+    ],
+    "choicesEnglish": [
+      "I haven't decided yet.",
+      "I haven't finished yet.",
+      "I haven't seen yet.",
+      "I haven't said yet."
+    ],
+    "correctAnswerItalian": "Non ho ancora deciso.",
+    "correctAnswerEnglish": "I haven't decided yet.",
+    "feedback": {
+      "correctItalian": "Esatto! Stato di incertezza.",
+      "incorrectItalian": "No, significa 'I haven't decided yet'.",
+      "correctEnglish": "Exactly! State of uncertainty.",
+      "incorrectEnglish": "No, it means 'I haven't decided yet'."
+    }
+  },
+  {
+    "id": "s64-p29",
+    "italian": "Scrivimi pure.",
+    "english": "Feel free to write to me.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Scrivimi pure.",
+      "Chiamami dopo.",
+      "Vieni qui.",
+      "Guarda questo."
+    ],
+    "choicesEnglish": [
+      "Feel free to write to me.",
+      "Call me later.",
+      "Come here.",
+      "Look at this."
+    ],
+    "correctAnswerItalian": "Scrivimi pure.",
+    "correctAnswerEnglish": "Feel free to write to me.",
+    "feedback": {
+      "correctItalian": "Ottimo! Invito amichevole.",
+      "incorrectItalian": "No, è 'Scrivimi pure'.",
+      "correctEnglish": "Great! Friendly invitation.",
+      "incorrectEnglish": "No, it's 'Feel free to write to me'."
+    }
+  },
+  {
+    "id": "s64-p30",
+    "italian": "Mandami il link.",
+    "english": "Send me the link.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mandami il link.",
+      "Portami il file.",
+      "Dami l'email.",
+      "Fammi la bozza."
+    ],
+    "choicesEnglish": [
+      "Send me the link.",
+      "Bring me the file.",
+      "Give me the email.",
+      "Make me the draft."
+    ],
+    "correctAnswerItalian": "Mandami il link.",
+    "correctAnswerEnglish": "Send me the link.",
+    "feedback": {
+      "correctItalian": "Esatto! Richiesta di risorsa.",
+      "incorrectItalian": "No, è 'Mandami il link'.",
+      "correctEnglish": "Exactly! Resource request.",
+      "incorrectEnglish": "No, it's 'Send me the link'."
+    }
+  },
+  {
+    "id": "s64-p31",
+    "italian": "Hai letto la bozza?",
+    "english": "Did you read the draft?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Hai letto la bozza?",
+      "Hai visto il film?",
+      "Hai scritto l'email?",
+      "Hai inviato il file?"
+    ],
+    "choicesEnglish": [
+      "Did you read the draft?",
+      "Did you see the movie?",
+      "Did you write the email?",
+      "Did you send the file?"
+    ],
+    "correctAnswerItalian": "Hai letto la bozza?",
+    "correctAnswerEnglish": "Did you read the draft?",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere parere.",
+      "incorrectItalian": "No, è 'la bozza?'.",
+      "correctEnglish": "Right! Asking for an opinion.",
+      "incorrectEnglish": "No, it's 'the draft?'."
+    }
+  },
+  {
+    "id": "s64-p32",
+    "italian": "Clicca sull'allegato.",
+    "english": "Click on the attachment.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Clicca sull'allegato.",
+      "Apri la porta.",
+      "Guarda lo schermo.",
+      "Chiudi il file."
+    ],
+    "choicesEnglish": [
+      "Click on the attachment.",
+      "Open the door.",
+      "Look at the screen.",
+      "Close the file."
+    ],
+    "correctAnswerItalian": "Clicca sull'allegato.",
+    "correctAnswerEnglish": "Click on the attachment.",
+    "feedback": {
+      "correctItalian": "Perfetto! Istruzione tecnica.",
+      "incorrectItalian": "No, significa 'Click on the attachment'.",
+      "correctEnglish": "Perfect! Technical instruction.",
+      "incorrectEnglish": "No, it means 'Click on the attachment'."
+    }
+  },
+  {
+    "id": "s64-p33",
+    "italian": "La riunione è alle dieci.",
+    "english": "The meeting is at ten.",
+    "type": "phrase",
+    "choicesItalian": [
+      "La riunione è alle dieci.",
+      "La lezione è alle nove.",
+      "Il pranzo è a mezzogiorno.",
+      "La cena è alle otto."
+    ],
+    "choicesEnglish": [
+      "The meeting is at ten.",
+      "The lesson is at nine.",
+      "The lunch is at noon.",
+      "The dinner is at eight."
+    ],
+    "correctAnswerItalian": "La riunione è alle dieci.",
+    "correctAnswerEnglish": "The meeting is at ten.",
+    "feedback": {
+      "correctItalian": "Esatto! Orario di lavoro.",
+      "incorrectItalian": "No, è 'alle dieci'.",
+      "correctEnglish": "Exactly! Work time.",
+      "incorrectEnglish": "No, it's 'at ten'."
+    }
+  },
+  {
+    "id": "s64-p34",
+    "italian": "Serve una risposta.",
+    "english": "A response is needed.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Serve una risposta.",
+      "Manca un file.",
+      "C'è un problema.",
+      "Va tutto bene."
+    ],
+    "choicesEnglish": [
+      "A response is needed.",
+      "A file is missing.",
+      "There is a problem.",
+      "Everything is fine."
+    ],
+    "correctAnswerItalian": "Serve una risposta.",
+    "correctAnswerEnglish": "A response is needed.",
+    "feedback": {
+      "correctItalian": "Giusto! Necessità di feedback.",
+      "incorrectItalian": "No, significa 'A response is needed'.",
+      "correctEnglish": "Right! Need for feedback.",
+      "incorrectEnglish": "No, it means 'A response is needed'."
+    }
+  },
+  {
+    "id": "s64-p35",
+    "italian": "Tutto chiaro?",
+    "english": "Everything clear?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Tutto chiaro?",
+      "Tutto pronto?",
+      "Tutto fatto?",
+      "Tutto vero?"
+    ],
+    "choicesEnglish": [
+      "Everything clear?",
+      "Everything ready?",
+      "Everything done?",
+      "Everything true?"
+    ],
+    "correctAnswerItalian": "Tutto chiaro?",
+    "correctAnswerEnglish": "Everything clear?",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere conferma.",
+      "incorrectItalian": "No, è 'Tutto chiaro?'.",
+      "correctEnglish": "Great! Asking for confirmation.",
+      "incorrectEnglish": "No, it's 'Everything clear?'."
+    }
+  },
+  {
+    "id": "s64-p36",
+    "italian": "Ci sono novità?",
+    "english": "Any news?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ci sono novità?",
+      "Ci sono problemi?",
+      "Ci sono file?",
+      "Ci sono amici?"
+    ],
+    "choicesEnglish": [
+      "Any news?",
+      "Any problems?",
+      "Any files?",
+      "Any friends?"
+    ],
+    "correctAnswerItalian": "Ci sono novità?",
+    "correctAnswerEnglish": "Any news?",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedere aggiornamenti.",
+      "incorrectItalian": "No, significa 'Any news?'.",
+      "correctEnglish": "Exactly! Asking for updates.",
+      "incorrectEnglish": "No, it means 'Any news?'."
+    }
+  },
+  {
+    "id": "s64-p37",
+    "italian": "Nessuna novità.",
+    "english": "No news.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Nessuna novità.",
+      "Qualche novità.",
+      "Molte novità.",
+      "Troppe novità."
+    ],
+    "choicesEnglish": [
+      "No news.",
+      "Some news.",
+      "Many news.",
+      "Too many news."
+    ],
+    "correctAnswerItalian": "Nessuna novità.",
+    "correctAnswerEnglish": "No news.",
+    "feedback": {
+      "correctItalian": "Giusto! Risposta negativa.",
+      "incorrectItalian": "No, è 'Nessuna novità'.",
+      "correctEnglish": "Right! Negative response.",
+      "incorrectEnglish": "No, it's 'No news'."
+    }
+  },
+  {
+    "id": "s64-p38",
+    "italian": "Sono in ferie.",
+    "english": "I'm on vacation.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Sono in ferie.",
+      "Sono in ufficio.",
+      "Sono a casa.",
+      "Sono in riunione."
+    ],
+    "choicesEnglish": [
+      "I'm on vacation.",
+      "I'm in the office.",
+      "I'm at home.",
+      "I'm in a meeting."
+    ],
+    "correctAnswerItalian": "Sono in ferie.",
+    "correctAnswerEnglish": "I'm on vacation.",
+    "feedback": {
+      "correctItalian": "Perfetto! Assenza dal lavoro.",
+      "incorrectItalian": "No, significa 'on vacation'.",
+      "correctEnglish": "Perfect! Absence from work.",
+      "incorrectEnglish": "No, it means 'on vacation'."
+    }
+  },
+  {
+    "id": "s64-p39",
+    "italian": "Ufficio acquisti.",
+    "english": "Purchasing office.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ufficio acquisti.",
+      "Ufficio tecnico.",
+      "Ufficio vendite.",
+      "Ufficio personale."
+    ],
+    "choicesEnglish": [
+      "Purchasing office.",
+      "Technical office.",
+      "Sales office.",
+      "Personnel office."
+    ],
+    "correctAnswerItalian": "Ufficio acquisti.",
+    "correctAnswerEnglish": "Purchasing office.",
+    "feedback": {
+      "correctItalian": "Esatto! Reparto aziendale.",
+      "incorrectItalian": "No, è 'Ufficio acquisti'.",
+      "correctEnglish": "Exactly! Company department.",
+      "incorrectEnglish": "No, it's 'Purchasing office'."
+    }
+  },
+  {
+    "id": "s64-p40",
+    "italian": "Segreteria studenti.",
+    "english": "Student office.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Segreteria studenti.",
+      "Aula magna.",
+      "Mensa scolastica.",
+      "Biblioteca centrale."
+    ],
+    "choicesEnglish": [
+      "Student office.",
+      "Great hall.",
+      "School canteen.",
+      "Central library."
+    ],
+    "correctAnswerItalian": "Segreteria studenti.",
+    "correctAnswerEnglish": "Student office.",
+    "feedback": {
+      "correctItalian": "Giusto! Contesto universitario.",
+      "incorrectItalian": "No, è 'Segreteria studenti'.",
+      "correctEnglish": "Right! University context.",
+      "incorrectEnglish": "No, it's 'Student office'."
+    }
+  },
+  {
+    "id": "s64-p41",
+    "italian": "Professore, le ho scritto.",
+    "english": "Professor, I wrote to you.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Professore, le ho scritto.",
+      "Dottore, la chiamo.",
+      "Amico, ti vedo.",
+      "Capo, le parlo."
+    ],
+    "choicesEnglish": [
+      "Professor, I wrote to you.",
+      "Doctor, I'm calling you.",
+      "Friend, I see you.",
+      "Boss, I'm talking to you."
+    ],
+    "correctAnswerItalian": "Professore, le ho scritto.",
+    "correctAnswerEnglish": "Professor, I wrote to you.",
+    "feedback": {
+      "correctItalian": "Ottimo! Approccio formale.",
+      "incorrectItalian": "No, è 'le ho scritto'.",
+      "correctEnglish": "Great! Formal approach.",
+      "incorrectEnglish": "No, it's 'I wrote to you'."
+    }
+  },
+  {
+    "id": "s64-p42",
+    "italian": "Seguendo la nostra conversazione...",
+    "english": "Following our conversation...",
+    "type": "phrase",
+    "choicesItalian": [
+      "Seguendo la nostra conversazione...",
+      "Iniziando la nostra giornata...",
+      "Finendo il nostro lavoro...",
+      "Cambiando il nostro piano..."
+    ],
+    "choicesEnglish": [
+      "Following our conversation...",
+      "Starting our day...",
+      "Finishing our work...",
+      "Changing our plan..."
+    ],
+    "correctAnswerItalian": "Seguendo la nostra conversazione...",
+    "correctAnswerEnglish": "Following our conversation...",
+    "feedback": {
+      "correctItalian": "Esatto! Chiusura/Apertura formale.",
+      "incorrectItalian": "No, è 'Seguendo la...'.",
+      "correctEnglish": "Exactly! Formal closing/opening.",
+      "incorrectEnglish": "No, it's 'Following our...'."
+    }
+  },
+  {
+    "id": "s64-p43",
+    "italian": "Come concordato...",
+    "english": "As agreed...",
+    "type": "phrase",
+    "choicesItalian": [
+      "Come concordato...",
+      "Come scritto...",
+      "Come visto...",
+      "Come detto..."
+    ],
+    "choicesEnglish": [
+      "As agreed...",
+      "As written...",
+      "As seen...",
+      "As said..."
+    ],
+    "correctAnswerItalian": "Come concordato...",
+    "correctAnswerEnglish": "As agreed...",
+    "feedback": {
+      "correctItalian": "Giusto! Riferimento a patti presi.",
+      "incorrectItalian": "No, significa 'As agreed'.",
+      "correctEnglish": "Right! Reference to agreements made.",
+      "incorrectEnglish": "No, it means 'As agreed'."
+    }
+  },
+  {
+    "id": "s64-p44",
+    "italian": "In allegato i documenti.",
+    "english": "Attached are the documents.",
+    "type": "phrase",
+    "choicesItalian": [
+      "In allegato i documenti.",
+      "In ufficio i file.",
+      "In borsa le chiavi.",
+      "In posta le lettere."
+    ],
+    "choicesEnglish": [
+      "Attached are the documents.",
+      "In the office the files.",
+      "In the bag the keys.",
+      "In the mail the letters."
+    ],
+    "correctAnswerItalian": "In allegato i documenti.",
+    "correctAnswerEnglish": "Attached are the documents.",
+    "feedback": {
+      "correctItalian": "Perfetto! Segnalare allegati.",
+      "incorrectItalian": "No, è 'In allegato...'.",
+      "correctEnglish": "Perfect! Pointing out attachments.",
+      "incorrectEnglish": "No, it's 'Attached are...'."
+    }
+  },
+  {
+    "id": "s64-p45",
+    "italian": "Grazie per l'attesa.",
+    "english": "Thanks for waiting.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Grazie per l'attesa.",
+      "Scusa per il ritardo.",
+      "Prego per l'aiuto.",
+      "Ciao per sempre."
+    ],
+    "choicesEnglish": [
+      "Thanks for waiting.",
+      "Sorry for the delay.",
+      "You're welcome for the help.",
+      "Bye forever."
+    ],
+    "correctAnswerItalian": "Grazie per l'attesa.",
+    "correctAnswerEnglish": "Thanks for waiting.",
+    "feedback": {
+      "correctItalian": "Esatto! Cortesia verso il cliente.",
+      "incorrectItalian": "No, è 'l'attesa'.",
+      "correctEnglish": "Exactly! Courtesy towards the client.",
+      "incorrectEnglish": "No, it's 'waiting'."
+    }
+  },
+  {
+    "id": "s64-p46",
+    "italian": "Mi scusi ancora.",
+    "english": "I apologize again.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mi scusi ancora.",
+      "Mi chiami dopo.",
+      "Mi dica ora.",
+      "Mi porti via."
+    ],
+    "choicesEnglish": [
+      "I apologize again.",
+      "Call me later.",
+      "Tell me now.",
+      "Take me away."
+    ],
+    "correctAnswerItalian": "Mi scusi ancora.",
+    "correctAnswerEnglish": "I apologize again.",
+    "feedback": {
+      "correctItalian": "Giusto! Ribadire le scuse.",
+      "incorrectItalian": "No, significa 'I apologize again'.",
+      "correctEnglish": "Right! Repeating apologies.",
+      "incorrectEnglish": "No, it means 'I apologize again'."
+    }
+  },
+  {
+    "id": "s64-p47",
+    "italian": "Buona giornata.",
+    "english": "Have a good day.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Buona giornata.",
+      "Buona sera.",
+      "Buon appetito.",
+      "Buon viaggio."
+    ],
+    "choicesEnglish": [
+      "Have a good day.",
+      "Good evening.",
+      "Enjoy your meal.",
+      "Have a good trip."
+    ],
+    "correctAnswerItalian": "Buona giornata.",
+    "correctAnswerEnglish": "Have a good day.",
+    "feedback": {
+      "correctItalian": "Ottimo! Augurio comune.",
+      "incorrectItalian": "No, è 'Buona giornata'.",
+      "correctEnglish": "Great! Common wish.",
+      "incorrectEnglish": "No, it's 'Have a good day'."
+    }
+  },
+  {
+    "id": "s64-p48",
+    "italian": "Buon lavoro.",
+    "english": "Have a good workday.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Buon lavoro.",
+      "Buon studio.",
+      "Buon divertimento.",
+      "Buon riposo."
+    ],
+    "choicesEnglish": [
+      "Have a good workday.",
+      "Good study.",
+      "Have fun.",
+      "Good rest."
+    ],
+    "correctAnswerItalian": "Buon lavoro.",
+    "correctAnswerEnglish": "Have a good workday.",
+    "feedback": {
+      "correctItalian": "Esatto! Augurio ai colleghi.",
+      "incorrectItalian": "No, è 'Buon lavoro'.",
+      "correctEnglish": "Exactly! Wish for colleagues.",
+      "incorrectEnglish": "No, it's 'Have a good workday'."
+    }
+  },
+  {
+    "id": "s64-p49",
+    "italian": "A presto.",
+    "english": "See you soon.",
+    "type": "phrase",
+    "choicesItalian": [
+      "A presto.",
+      "A dopo.",
+      "A domani.",
+      "A mai più."
+    ],
+    "choicesEnglish": [
+      "See you soon.",
+      "See you later.",
+      "See you tomorrow.",
+      "See you never."
+    ],
+    "correctAnswerItalian": "A presto.",
+    "correctAnswerEnglish": "See you soon.",
+    "feedback": {
+      "correctItalian": "Giusto! Saluto informale/formale.",
+      "incorrectItalian": "No, è 'A presto'.",
+      "correctEnglish": "Right! Informal/formal greeting.",
+      "incorrectEnglish": "No, it's 'See you soon'."
+    }
+  },
+  {
+    "id": "s64-p50",
+    "italian": "Cordiali saluti.",
+    "english": "Kind regards.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Cordiali saluti.",
+      "Cari amici.",
+      "Distinti saluti.",
+      "Migliori auguri."
+    ],
+    "choicesEnglish": [
+      "Kind regards.",
+      "Dear friends.",
+      "Yours faithfully.",
+      "Best wishes."
+    ],
+    "correctAnswerItalian": "Cordiali saluti.",
+    "correctAnswerEnglish": "Kind regards.",
+    "feedback": {
+      "correctItalian": "Perfetto! Variante di chiusura.",
+      "incorrectItalian": "No, è 'Cordiali saluti'.",
+      "correctEnglish": "Perfect! Closing variant.",
+      "incorrectEnglish": "No, it's 'Kind regards'."
     }
   }
 ]

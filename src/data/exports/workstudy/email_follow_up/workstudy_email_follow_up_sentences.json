@@ -1,87 +1,1562 @@
 [
   {
-    "id": "s64-s4",
-    "italian": "Può rispondere entro stasera?",
-    "english": "Can you reply by tonight?",
-    "type": "sentence",
-    "choices": [
-      "Le invio la bozza del progetto.",
-      "Ho dimenticato di aggiungere l'allegato.",
-      "Può rispondere entro stasera?",
-      "Ho salvato l'email nelle bozze."
-    ],
-    "correctAnswer": "Può rispondere entro stasera?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Può rispondere entro stasera?\"."
-    }
-  },
-  {
-    "id": "s64-s5",
-    "italian": "Ho salvato l'email nelle bozze.",
-    "english": "I saved the email in the drafts.",
-    "type": "sentence",
-    "choices": [
-      "Ho salvato l'email nelle bozze.",
-      "Può rispondere entro stasera?",
-      "Le invio la bozza del progetto.",
-      "Ho dimenticato di aggiungere l'allegato."
-    ],
-    "correctAnswer": "Ho salvato l'email nelle bozze.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho salvato l'email nelle bozze.\"."
-    }
-  },
-  {
     "id": "s64-s1",
-    "italian": "Le invio la bozza del progetto.",
-    "english": "I am sending you the project draft.",
+    "italian": "Ho inviato l'email ieri ma non ho avuto risposta.",
+    "english": "I sent the email yesterday but I didn't get a reply.",
     "type": "sentence",
-    "choices": [
-      "Può rispondere entro stasera?",
-      "Ho salvato l'email nelle bozze.",
-      "Le invio la bozza del progetto.",
-      "Non dimenticare la scadenza di domani."
+    "choicesItalian": [
+      "Ho inviato l'email ieri ma non ho avuto risposta.",
+      "Ho letto l'email oggi e ho dato risposta.",
+      "Ho perso l'email ieri e non ho cercato risposta.",
+      "Ho inviato il file ieri ma non ho avuto conferma."
     ],
-    "correctAnswer": "Le invio la bozza del progetto.",
+    "choicesEnglish": [
+      "I sent the email yesterday but I didn't get a reply.",
+      "I read the email today and I gave a reply.",
+      "I lost the email yesterday and I didn't look for a reply.",
+      "I sent the file yesterday but I didn't get confirmation."
+    ],
+    "correctAnswerItalian": "Ho inviato l'email ieri ma non ho avuto risposta.",
+    "correctAnswerEnglish": "I sent the email yesterday but I didn't get a reply.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Le invio la bozza del progetto.\"."
+      "correctItalian": "Esatto! Una lamentela comune.",
+      "incorrectItalian": "No, significa 'I sent the email yesterday but didn't get a reply'.",
+      "correctEnglish": "Exactly! A common complaint.",
+      "incorrectEnglish": "No, it means 'I sent the email yesterday but didn't get a reply'."
     }
   },
   {
     "id": "s64-s2",
-    "italian": "Non dimenticare la scadenza di domani.",
-    "english": "Don't forget tomorrow's deadline.",
+    "italian": "Potrebbe controllare se l'email è finita nello spam?",
+    "english": "Could you check if the email ended up in the spam?",
     "type": "sentence",
-    "choices": [
-      "Ho dimenticato di aggiungere l'allegato.",
-      "Ho salvato l'email nelle bozze.",
-      "Non dimenticare la scadenza di domani.",
-      "Può rispondere entro stasera?"
+    "choicesItalian": [
+      "Potrebbe controllare se l'email è finita nello spam?",
+      "Potrebbe vedere se l'email è nella posta inviata?",
+      "Potrebbe inviare l'email di nuovo allo spam?",
+      "Potrebbe cancellare l'email dallo spam subito?"
     ],
-    "correctAnswer": "Non dimenticare la scadenza di domani.",
+    "choicesEnglish": [
+      "Could you check if the email ended up in the spam?",
+      "Could you see if the email is in the sent mail?",
+      "Could you send the email again to the spam?",
+      "Could you delete the email from the spam right away?"
+    ],
+    "correctAnswerItalian": "Potrebbe controllare se l'email è finita nello spam?",
+    "correctAnswerEnglish": "Could you check if the email ended up in the spam?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Non dimenticare la scadenza di domani.\"."
+      "correctItalian": "Ottimo! Richiesta di verifica.",
+      "incorrectItalian": "No, è 'nello spam?'.",
+      "correctEnglish": "Great! Request for verification.",
+      "incorrectEnglish": "No, it's 'in the spam?'."
     }
   },
   {
     "id": "s64-s3",
-    "italian": "Ho dimenticato di aggiungere l'allegato.",
-    "english": "I forgot to add the attachment.",
+    "italian": "Ti ho mandato il file mezz'ora fa, l'hai ricevuto?",
+    "english": "I sent you the file half an hour ago, did you get it?",
     "type": "sentence",
-    "choices": [
-      "Può rispondere entro stasera?",
-      "Ho dimenticato di aggiungere l'allegato.",
-      "Non dimenticare la scadenza di domani.",
-      "Ho salvato l'email nelle bozze."
+    "choicesItalian": [
+      "Ti ho mandato il file mezz'ora fa, l'hai ricevuto?",
+      "Ti ho dato il libro un'ora fa, l'hai letto?",
+      "Ti ho scritto l'email dieci minuti fa, l'hai vista?",
+      "Ti ho mandato il link poco fa, l'hai aperto?"
     ],
-    "correctAnswer": "Ho dimenticato di aggiungere l'allegato.",
+    "choicesEnglish": [
+      "I sent you the file half an hour ago, did you get it?",
+      "I gave you the book an hour ago, did you read it?",
+      "I wrote you the email ten minutes ago, did you see it?",
+      "I sent you the link a while ago, did you open it?"
+    ],
+    "correctAnswerItalian": "Ti ho mandato il file mezz'ora fa, l'hai ricevuto?",
+    "correctAnswerEnglish": "I sent you the file half an hour ago, did you get it?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho dimenticato di aggiungere l'allegato.\"."
+      "correctItalian": "Esatto! Chiedere conferma di ricezione.",
+      "incorrectItalian": "No, significa 'I sent the file half an hour ago...'.",
+      "correctEnglish": "Exactly! Asking for confirmation of receipt.",
+      "incorrectEnglish": "No, it means 'I sent the file half an hour ago...'."
+    }
+  },
+  {
+    "id": "s64-s4",
+    "italian": "Mi scusi, ho dimenticato di includere l'allegato nell'email.",
+    "english": "I'm sorry, I forgot to include the attachment in the email.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi scusi, ho dimenticato di includere l'allegato nell'email.",
+      "Mi dispiace, ho scordato di scrivere l'oggetto nell'email.",
+      "Scusami, ho mancato di inviare l'email con l'allegato.",
+      "Mi scusi, ho dimenticato di firmare l'email alla fine."
+    ],
+    "choicesEnglish": [
+      "I'm sorry, I forgot to include the attachment in the email.",
+      "I'm sorry, I forgot to write the subject in the email.",
+      "Sorry, I failed to send the email with the attachment.",
+      "I'm sorry, I forgot to sign the email at the end."
+    ],
+    "correctAnswerItalian": "Mi scusi, ho dimenticato di includere l'allegato nell'email.",
+    "correctAnswerEnglish": "I'm sorry, I forgot to include the attachment in the email.",
+    "feedback": {
+      "correctItalian": "Giusto! Un errore classico.",
+      "incorrectItalian": "No, è 'l'allegato'.",
+      "correctEnglish": "Right! A classic error.",
+      "incorrectEnglish": "No, it's 'the attachment'."
+    }
+  },
+  {
+    "id": "s64-s5",
+    "italian": "Darei seguito volentieri alla tua richiesta entro oggi.",
+    "english": "I would gladly follow up on your request by today.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Darei seguito volentieri alla tua richiesta entro oggi.",
+      "Inizierei volentieri la tua pratica entro domani.",
+      "Finirei volentieri il tuo lavoro entro stasera.",
+      "Manderei volentieri la tua email entro le sedici."
+    ],
+    "choicesEnglish": [
+      "I would gladly follow up on your request by today.",
+      "I would gladly start your file by tomorrow.",
+      "I would gladly finish your work by tonight.",
+      "I would gladly send your email by 4 PM."
+    ],
+    "correctAnswerItalian": "Darei seguito volentieri alla tua richiesta entro oggi.",
+    "correctAnswerEnglish": "I would gladly follow up on your request by today.",
+    "feedback": {
+      "correctItalian": "Perfetto! Disponibilità immediata.",
+      "incorrectItalian": "No, significa 'I would gladly follow up...'.",
+      "correctEnglish": "Perfect! Immediate availability.",
+      "incorrectEnglish": "No, it means 'I would gladly follow up...'."
+    }
+  },
+  {
+    "id": "s64-s6",
+    "italian": "Abbiamo verificato in magazzino e il prodotto non c'è.",
+    "english": "We checked the warehouse and the product isn't there.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Abbiamo verificato in magazzino e il prodotto non c'è.",
+      "Abbiamo cercato in ufficio e il file non si trova.",
+      "Abbiamo visto in negozio e il prezzo è alto.",
+      "Abbiamo controllato in banca e il conto è vuoto."
+    ],
+    "choicesEnglish": [
+      "We checked the warehouse and the product isn't there.",
+      "We looked in the office and the file isn't found.",
+      "We saw in the store and the price is high.",
+      "We checked in the bank and the account is empty."
+    ],
+    "correctAnswerItalian": "Abbiamo verificato in magazzino e il prodotto non c'è.",
+    "correctAnswerEnglish": "We checked the warehouse and the product isn't there.",
+    "feedback": {
+      "correctItalian": "Esatto! Riscontro negativo.",
+      "incorrectItalian": "No, significa 'the product isn't there'.",
+      "correctEnglish": "Exactly! Negative feedback.",
+      "incorrectEnglish": "No, it means 'the product isn't there'."
+    }
+  },
+  {
+    "id": "s64-s7",
+    "italian": "La spedizione dell'ordine 504 è prevista per domani.",
+    "english": "The shipping of order 504 is scheduled for tomorrow.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La spedizione dell'ordine 504 è prevista per domani.",
+      "La consegna del pacco 302 è fatta per oggi.",
+      "L'invio del file 101 è previsto per stasera.",
+      "La vendita della merce 504 è prevista per domani."
+    ],
+    "choicesEnglish": [
+      "The shipping of order 504 is scheduled for tomorrow.",
+      "The delivery of package 302 is done for today.",
+      "The sending of file 101 is scheduled for tonight.",
+      "The sale of goods 504 is scheduled for tomorrow."
+    ],
+    "correctAnswerItalian": "La spedizione dell'ordine 504 è prevista per domani.",
+    "correctAnswerEnglish": "The shipping of order 504 is scheduled for tomorrow.",
+    "feedback": {
+      "correctItalian": "Giusto! Informazione logistica.",
+      "incorrectItalian": "No, è 'prevista per domani'.",
+      "correctEnglish": "Right! Logistic information.",
+      "incorrectEnglish": "No, it's 'scheduled for tomorrow'."
+    }
+  },
+  {
+    "id": "s64-s8",
+    "italian": "Mi serve il tuo feedback sulla nuova policy entro domani.",
+    "english": "I need your feedback on the new policy by tomorrow.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi serve il tuo feedback sulla nuova policy entro domani.",
+      "Mi serve il tuo aiuto sulla nuova bozza entro stasera.",
+      "Mi serve il tuo parere sulla nuova riunione entro domani.",
+      "Mi serve la tua firma sulla nuova policy entro ora."
+    ],
+    "choicesEnglish": [
+      "I need your feedback on the new policy by tomorrow.",
+      "I need your help on the new draft by tonight.",
+      "I need your opinion on the new meeting by tomorrow.",
+      "I need your signature on the new policy by now."
+    ],
+    "correctAnswerItalian": "Mi serve il tuo feedback sulla nuova policy entro domani.",
+    "correctAnswerEnglish": "I need your feedback on the new policy by tomorrow.",
+    "feedback": {
+      "correctItalian": "Ottimo! Richiesta di collaborazione.",
+      "incorrectItalian": "No, significa 'I need your feedback...'.",
+      "correctEnglish": "Great! Request for collaboration.",
+      "incorrectEnglish": "No, it means 'I need your feedback...'."
+    }
+  },
+  {
+    "id": "s64-s9",
+    "italian": "Non preoccuparti, leggo l'email adesso e ti faccio sapere.",
+    "english": "Don't worry, I'm reading the email now and I'll let you know.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Non preoccuparti, leggo l'email adesso e ti faccio sapere.",
+      "Non temere, scrivo l'email dopo e ti chiamo subito.",
+      "Stai tranquillo, vedo il file ora e ti mando tutto.",
+      "Non preoccuparti, leggo la nota poi e ti dico cosa fare."
+    ],
+    "choicesEnglish": [
+      "Don't worry, I'm reading the email now and I'll let you know.",
+      "Don't fear, I'm writing the email later and I'll call you right away.",
+      "Stay calm, I'm seeing the file now and I'll send you everything.",
+      "Don't worry, I'll read the note later and tell you what to do."
+    ],
+    "correctAnswerItalian": "Non preoccuparti, leggo l'email adesso e ti faccio sapere.",
+    "correctAnswerEnglish": "Don't worry, I'm reading the email now and I'll let you know.",
+    "feedback": {
+      "correctItalian": "Esatto! Rassicurazione al collega.",
+      "incorrectItalian": "No, significa 'I'm reading the email now...'.",
+      "correctEnglish": "Exactly! Reassurance to the colleague.",
+      "incorrectEnglish": "No, it means 'I'm reading the email now...'."
+    }
+  },
+  {
+    "id": "s64-s10",
+    "italian": "Ho inoltrato la tua richiesta all'ufficio competente.",
+    "english": "I forwarded your request to the relevant office.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ho inoltrato la tua richiesta all'ufficio competente.",
+      "Ho mandato la tua domanda all'ufficio postale.",
+      "Ho inviato la tua nota all'ufficio tecnico.",
+      "Ho inoltrato il tuo file all'ufficio acquisti."
+    ],
+    "choicesEnglish": [
+      "I forwarded your request to the relevant office.",
+      "I sent your question to the post office.",
+      "I sent your note to the technical office.",
+      "I forwarded your file to the purchasing office."
+    ],
+    "correctAnswerItalian": "Ho inoltrato la tua richiesta all'ufficio competente.",
+    "correctAnswerEnglish": "I forwarded your request to the relevant office.",
+    "feedback": {
+      "correctItalian": "Giusto! Gestione della pratica.",
+      "incorrectItalian": "No, è 'all'ufficio competente'.",
+      "correctEnglish": "Right! Managing the file.",
+      "incorrectEnglish": "No, it's 'to the relevant office'."
+    }
+  },
+  {
+    "id": "s64-s11",
+    "italian": "Potrebbe darmi una risposta definitiva entro le sedici?",
+    "english": "Could you give me a final answer by 4 PM?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Potrebbe darmi una risposta definitiva entro le sedici?",
+      "Potrebbe dirmi una cosa importante entro le cinque?",
+      "Potrebbe darmi un file nuovo entro le quattro?",
+      "Potrebbe darmi una risposta breve entro le sedici?"
+    ],
+    "choicesEnglish": [
+      "Could you give me a final answer by 4 PM?",
+      "Could you tell me an important thing by 5 PM?",
+      "Could you give me a new file by 4 PM?",
+      "Could you give me a short answer by 4 PM?"
+    ],
+    "correctAnswerItalian": "Potrebbe darmi una risposta definitiva entro le sedici?",
+    "correctAnswerEnglish": "Could you give me a final answer by 4 PM?",
+    "feedback": {
+      "correctItalian": "Perfetto! Richiesta di termine ultimo.",
+      "incorrectItalian": "No, è 'entro le sedici' (4 PM).",
+      "correctEnglish": "Perfect! Request for final deadline.",
+      "incorrectEnglish": "No, it's 'by 4 PM'."
+    }
+  },
+  {
+    "id": "s64-s12",
+    "italian": "La ringrazio per la sua email e per l'interesse.",
+    "english": "Thank you for your email and for the interest.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La ringrazio per la sua email e per l'interesse.",
+      "La scuso per la sua nota e per il ritardo.",
+      "La prego per la sua risposta e per l'aiuto.",
+      "La saluto per la sua email e per il tempo."
+    ],
+    "choicesEnglish": [
+      "Thank you for your email and for the interest.",
+      "I excuse you for your note and for the delay.",
+      "I beg you for your answer and for the help.",
+      "I greet you for your email and for the time."
+    ],
+    "correctAnswerItalian": "La ringrazio per la sua email e per l'interesse.",
+    "correctAnswerEnglish": "Thank you for your email and for the interest.",
+    "feedback": {
+      "correctItalian": "Esatto! Risposta formale di cortesia.",
+      "incorrectItalian": "No, è 'per l'interesse'.",
+      "correctEnglish": "Exactly! Formal courtesy response.",
+      "incorrectEnglish": "No, it's 'for the interest'."
+    }
+  },
+  {
+    "id": "s64-s13",
+    "italian": "Scusa, mi era sfuggita l'email tra i tanti messaggi.",
+    "english": "Sorry, I missed the email among the many messages.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Scusa, mi era sfuggita l'email tra i tanti messaggi.",
+      "Scusa, ho perso l'email tra i tanti file.",
+      "Scusa, ho cancellato l'email tra i tanti spam.",
+      "Scusa, ho visto l'email tra i tanti avvisi."
+    ],
+    "choicesEnglish": [
+      "Sorry, I missed the email among the many messages.",
+      "Sorry, I lost the email among the many files.",
+      "Sorry, I deleted the email among the many spams.",
+      "Sorry, I saw the email among the many notices."
+    ],
+    "correctAnswerItalian": "Scusa, mi era sfuggita l'email tra i tanti messaggi.",
+    "correctAnswerEnglish": "Sorry, I missed the email among the many messages.",
+    "feedback": {
+      "correctItalian": "Giusto! Giustificazione per il ritardo.",
+      "incorrectItalian": "No, significa 'I missed the email'.",
+      "correctEnglish": "Right! Justification for the delay.",
+      "incorrectEnglish": "No, it means 'I missed the email'."
+    }
+  },
+  {
+    "id": "s64-s14",
+    "italian": "L'oggetto dell'email era poco chiaro, per questo non l'ho aperta.",
+    "english": "The email subject was unclear, that's why I didn't open it.",
+    "type": "sentence",
+    "choicesItalian": [
+      "L'oggetto dell'email era poco chiaro, per questo non l'ho aperta.",
+      "Il testo dell'email era molto lungo, per questo non l'ho letto.",
+      "Il file dell'email era troppo grande, per questo non l'ho scaricato.",
+      "L'indirizzo dell'email era sbagliato, per questo non l'ho mandato."
+    ],
+    "choicesEnglish": [
+      "The email subject was unclear, that's why I didn't open it.",
+      "The email text was very long, that's why I didn't read it.",
+      "The email file was too large, that's why I didn't download it.",
+      "The email address was wrong, that's why I didn't send it."
+    ],
+    "correctAnswerItalian": "L'oggetto dell'email era poco chiaro, per questo non l'ho aperta.",
+    "correctAnswerEnglish": "The email subject was unclear, that's why I didn't open it.",
+    "feedback": {
+      "correctItalian": "Perfetto! Spiegazione del problema.",
+      "incorrectItalian": "No, significa 'the subject was unclear'.",
+      "correctEnglish": "Perfect! Explanation of the problem.",
+      "incorrectEnglish": "No, it means 'the subject was unclear'."
+    }
+  },
+  {
+    "id": "s64-s15",
+    "italian": "Rimango in attesa di un suo gentile riscontro.",
+    "english": "I remain waiting for your kind feedback.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Rimango in attesa di un suo gentile riscontro.",
+      "Vado in attesa di un suo pronto aiuto.",
+      "Spero in attesa di un suo caro saluto.",
+      "Resto in attesa di un suo nuovo file."
+    ],
+    "choicesEnglish": [
+      "I remain waiting for your kind feedback.",
+      "I go waiting for your prompt help.",
+      "I hope waiting for your dear greeting.",
+      "I stay waiting for your new file."
+    ],
+    "correctAnswerItalian": "Rimango in attesa di un suo gentile riscontro.",
+    "correctAnswerEnglish": "I remain waiting for your kind feedback.",
+    "feedback": {
+      "correctItalian": "Esatto! Chiusura email formale classica.",
+      "incorrectItalian": "No, è 'un suo gentile riscontro'.",
+      "correctEnglish": "Exactly! Classic formal email closing.",
+      "incorrectEnglish": "No, it's 'your kind feedback'."
+    }
+  },
+  {
+    "id": "s64-s16",
+    "italian": "Come abbiamo discusso al telefono, ecco i dettagli.",
+    "english": "As we discussed on the phone, here are the details.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Come abbiamo discusso al telefono, ecco i dettagli.",
+      "Come abbiamo scritto in email, ecco i file.",
+      "Come abbiamo visto in ufficio, ecco i dati.",
+      "Come abbiamo detto in riunione, ecco le note."
+    ],
+    "choicesEnglish": [
+      "As we discussed on the phone, here are the details.",
+      "As we wrote in email, here are the files.",
+      "As we saw in the office, here are the data.",
+      "As we said in the meeting, here are the notes."
+    ],
+    "correctAnswerItalian": "Come abbiamo discusso al telefono, ecco i dettagli.",
+    "correctAnswerEnglish": "As we discussed on the phone, here are the details.",
+    "feedback": {
+      "correctItalian": "Giusto! Riferimento a colloquio precedente.",
+      "incorrectItalian": "No, è 'al telefono'.",
+      "correctEnglish": "Right! Reference to previous call.",
+      "incorrectEnglish": "No, it's 'on the phone'."
+    }
+  },
+  {
+    "id": "s64-s17",
+    "italian": "Ti invio la bozza del progetto per suggerimenti.",
+    "english": "I'm sending you the project draft for suggestions.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ti invio la bozza del progetto per suggerimenti.",
+      "Ti mando la copia del file per correzioni.",
+      "Ti do l'originale del piano per aiuti.",
+      "Ti invio la nota del lavoro per pareri."
+    ],
+    "choicesEnglish": [
+      "I'm sending you the project draft for suggestions.",
+      "I'm sending you the file copy for corrections.",
+      "I'm giving you the plan original for help.",
+      "I'm sending you the work note for opinions."
+    ],
+    "correctAnswerItalian": "Ti invio la bozza del progetto per suggerimenti.",
+    "correctAnswerEnglish": "I'm sending you the project draft for suggestions.",
+    "feedback": {
+      "correctItalian": "Ottimo! Collaborazione sul lavoro.",
+      "incorrectItalian": "No, è 'la bozza'.",
+      "correctEnglish": "Great! Collaboration at work.",
+      "incorrectEnglish": "No, it's 'the draft'."
+    }
+  },
+  {
+    "id": "s64-s18",
+    "italian": "Non dimenticare di mettere in copia il responsabile.",
+    "english": "Don't forget to CC the manager.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Non dimenticare di mettere in copia il responsabile.",
+      "Non scordare di inviare il file al capo.",
+      "Non dimenticare di scrivere l'oggetto al collega.",
+      "Non scordare di allegare il file al messaggio."
+    ],
+    "choicesEnglish": [
+      "Don't forget to CC the manager.",
+      "Don't forget to send the file to the boss.",
+      "Don't forget to write the subject to the colleague.",
+      "Don't forget to attach the file to the message."
+    ],
+    "correctAnswerItalian": "Non dimenticare di mettere in copia il responsabile.",
+    "correctAnswerEnglish": "Don't forget to CC the manager.",
+    "feedback": {
+      "correctItalian": "Esatto! Istruzione per CC.",
+      "incorrectItalian": "No, è 'mettere in copia'.",
+      "correctEnglish": "Exactly! Instruction for CC.",
+      "incorrectEnglish": "No, it's 'to CC'."
+    }
+  },
+  {
+    "id": "s64-s19",
+    "italian": "Ho ricevuto la conferma dell'ordine ma mancano dati.",
+    "english": "I received the order confirmation but data is missing.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ho ricevuto la conferma dell'ordine ma mancano dati.",
+      "Ho visto la nota dell'acquisto ma manca il prezzo.",
+      "Ho mandato la conferma del file ma manca il link.",
+      "Ho perso la conferma dell'ordine e mancano le info."
+    ],
+    "choicesEnglish": [
+      "I received the order confirmation but data is missing.",
+      "I saw the purchase note but the price is missing.",
+      "I sent the file confirmation but the link is missing.",
+      "I lost the order confirmation and info is missing."
+    ],
+    "correctAnswerItalian": "Ho ricevuto la conferma dell'ordine ma mancano dati.",
+    "correctAnswerEnglish": "I received the order confirmation but data is missing.",
+    "feedback": {
+      "correctItalian": "Giusto! Segnalazione incompleta.",
+      "incorrectItalian": "No, è 'mancano dati'.",
+      "correctEnglish": "Right! Reporting incompleteness.",
+      "incorrectEnglish": "No, it's 'data is missing'."
+    }
+  },
+  {
+    "id": "s64-s20",
+    "italian": "La policy aziendale è cambiata e dobbiamo aggiornare tutto.",
+    "english": "The company policy has changed and we must update everything.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La policy aziendale è cambiata e dobbiamo aggiornare tutto.",
+      "Il piano di studi è cambiato e dobbiamo rifare l'esame.",
+      "L'orario è cambiato e dobbiamo venire prima.",
+      "La legge è cambiata e dobbiamo pagare tutto."
+    ],
+    "choicesEnglish": [
+      "The company policy has changed and we must update everything.",
+      "The study plan has changed and we must redo the exam.",
+      "The schedule has changed and we must come earlier.",
+      "The law has changed and we must pay everything."
+    ],
+    "correctAnswerItalian": "La policy aziendale è cambiata e dobbiamo aggiornare tutto.",
+    "correctAnswerEnglish": "The company policy has changed and we must update everything.",
+    "feedback": {
+      "correctItalian": "Perfetto! Annuncio di cambiamenti.",
+      "incorrectItalian": "No, è 'La policy aziendale'.",
+      "correctEnglish": "Perfect! Announcing changes.",
+      "incorrectEnglish": "No, it's 'The company policy'."
+    }
+  },
+  {
+    "id": "s64-s21",
+    "italian": "Mi dispiace, il server ha avuto un problema ieri.",
+    "english": "I'm sorry, the server had a problem yesterday.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi dispiace, il server ha avuto un problema ieri.",
+      "Scusami, il computer ha avuto un guasto oggi.",
+      "Mi spiace, l'email ha avuto un ritardo poi.",
+      "Scusi, il sistema ha avuto un errore ora."
+    ],
+    "choicesEnglish": [
+      "I'm sorry, the server had a problem yesterday.",
+      "Sorry, the computer had a breakdown today.",
+      "I'm sorry, the email had a delay then.",
+      "Excuse me, the system had an error now."
+    ],
+    "correctAnswerItalian": "Mi dispiace, il server ha avuto un problema ieri.",
+    "correctAnswerEnglish": "I'm sorry, the server had a problem yesterday.",
+    "feedback": {
+      "correctItalian": "Esatto! Scusa tecnica.",
+      "incorrectItalian": "No, è 'il server'.",
+      "correctEnglish": "Exactly! Technical apology.",
+      "incorrectEnglish": "No, it's 'the server'."
+    }
+  },
+  {
+    "id": "s64-s22",
+    "italian": "Se hai bisogno di informazioni, contattami pure.",
+    "english": "If you need information, feel free to contact me.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Se hai bisogno di informazioni, contattami pure.",
+      "Se vuoi un aiuto, chiamami dopo.",
+      "Se hai tempo ora, vediamoci qui.",
+      "Se serve un file, mandami un link."
+    ],
+    "choicesEnglish": [
+      "If you need information, feel free to contact me.",
+      "If you want help, call me later.",
+      "If you have time now, let's meet here.",
+      "If a file is needed, send me a link."
+    ],
+    "correctAnswerItalian": "Se hai bisogno di informazioni, contattami pure.",
+    "correctAnswerEnglish": "If you need information, feel free to contact me.",
+    "feedback": {
+      "correctItalian": "Giusto! Disponibilità finale.",
+      "incorrectItalian": "No, significa 'feel free to contact me'.",
+      "correctEnglish": "Right! Final availability.",
+      "incorrectEnglish": "No, it means 'feel free to contact me'."
+    }
+  },
+  {
+    "id": "s64-s23",
+    "italian": "Hai già risposto alla segreteria per l'esame?",
+    "english": "Have you already replied to the office for the exam?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Hai già risposto alla segreteria per l'esame?",
+      "Hai già scritto al professore per la tesi?",
+      "Hai già visto l'avviso per il corso?",
+      "Hai già pagato la tassa per lo studio?"
+    ],
+    "choicesEnglish": [
+      "Have you already replied to the office for the exam?",
+      "Have you already written to the professor for the thesis?",
+      "Have you already seen the notice for the course?",
+      "Have you already paid the fee for the study?"
+    ],
+    "correctAnswerItalian": "Hai già risposto alla segreteria per l'esame?",
+    "correctAnswerEnglish": "Have you already replied to the office for the exam?",
+    "feedback": {
+      "correctItalian": "Ottimo! Contesto accademico.",
+      "incorrectItalian": "No, è 'alla segreteria'.",
+      "correctEnglish": "Great! Academic context.",
+      "incorrectEnglish": "No, it's 'to the office'."
+    }
+  },
+  {
+    "id": "s64-s24",
+    "italian": "Il professore non ha ancora visto l'email con la tesi.",
+    "english": "The professor hasn't seen the email with the thesis yet.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il professore non ha ancora visto l'email con la tesi.",
+      "Il dottore non ha ancora letto la nota con i dati.",
+      "Il capo non ha ancora firmato l'email con il piano.",
+      "Il collega non ha ancora inoltrato l'email con il file."
+    ],
+    "choicesEnglish": [
+      "The professor hasn't seen the email with the thesis yet.",
+      "The doctor hasn't read the note with the data yet.",
+      "The boss hasn't signed the email with the plan yet.",
+      "The colleague hasn't forwarded the email with the file yet."
+    ],
+    "correctAnswerItalian": "Il professore non ha ancora visto l'email con la tesi.",
+    "correctAnswerEnglish": "The professor hasn't seen the email with the thesis yet.",
+    "feedback": {
+      "correctItalian": "Esatto! Problema di attesa in università.",
+      "incorrectItalian": "No, è 'con la tesi'.",
+      "correctEnglish": "Exactly! Waiting problem at university.",
+      "incorrectEnglish": "No, it's 'with the thesis'."
+    }
+  },
+  {
+    "id": "s64-s25",
+    "italian": "Ti ricordi di inviarmi quel link di ieri?",
+    "english": "Do you remember to send me that link from yesterday?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ti ricordi di inviarmi quel link di ieri?",
+      "Ti scordi di portarmi quel file di oggi?",
+      "Ti ricordi di scrivermi quell'email di domani?",
+      "Ti scordi di vedermi quel film di poi?"
+    ],
+    "choicesEnglish": [
+      "Do you remember to send me that link from yesterday?",
+      "Do you forget to bring me that file from today?",
+      "Do you remember to write me that email from tomorrow?",
+      "Do you forget to see me that movie from then?"
+    ],
+    "correctAnswerItalian": "Ti ricordi di inviarmi quel link di ieri?",
+    "correctAnswerEnglish": "Do you remember to send me that link from yesterday?",
+    "feedback": {
+      "correctItalian": "Giusto! Promemoria informale.",
+      "incorrectItalian": "No, è 'quel link di ieri'.",
+      "correctEnglish": "Right! Informal reminder.",
+      "incorrectEnglish": "No, it's 'that link from yesterday'."
+    }
+  },
+  {
+    "id": "s64-s26",
+    "italian": "La posta in arrivo è piena e non ricevo messaggi.",
+    "english": "The inbox is full and I'm not receiving messages.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La posta in arrivo è piena e non ricevo messaggi.",
+      "La cartella dei file è vuota e non trovo nulla.",
+      "La borsa della spesa è piena e non porto altro.",
+      "La classe di studio è piena e non entro oggi."
+    ],
+    "choicesEnglish": [
+      "The inbox is full and I'm not receiving messages.",
+      "The files folder is empty and I find nothing.",
+      "The grocery bag is full and I carry nothing else.",
+      "The study class is full and I'm not entering today."
+    ],
+    "correctAnswerItalian": "La posta in arrivo è piena e non ricevo messaggi.",
+    "correctAnswerEnglish": "The inbox is full and I'm not receiving messages.",
+    "feedback": {
+      "correctItalian": "Perfetto! Problema tecnico comune.",
+      "incorrectItalian": "No, è 'piena'.",
+      "correctEnglish": "Perfect! Common technical problem.",
+      "incorrectEnglish": "No, it's 'full'."
+    }
+  },
+  {
+    "id": "s64-s27",
+    "italian": "Ho salvato l'email importante in una cartella.",
+    "english": "I saved the important email in a folder.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ho salvato l'email importante in una cartella.",
+      "Ho perso l'email inutile in un cestino.",
+      "Ho inviato l'email urgente in un attimo.",
+      "Ho letto l'email lunga in un'ora."
+    ],
+    "choicesEnglish": [
+      "I saved the important email in a folder.",
+      "I lost the useless email in a trash can.",
+      "I sent the urgent email in a second.",
+      "I read the long email in an hour."
+    ],
+    "correctAnswerItalian": "Ho salvato l'email importante in una cartella.",
+    "correctAnswerEnglish": "I saved the important email in a folder.",
+    "feedback": {
+      "correctItalian": "Esatto! Organizzazione digitale.",
+      "incorrectItalian": "No, è 'in una cartella'.",
+      "correctEnglish": "Exactly! Digital organization.",
+      "incorrectEnglish": "No, it's 'in a folder'."
+    }
+  },
+  {
+    "id": "s64-s28",
+    "italian": "Grazie per avermi segnalato l'errore nell'ultimo invio.",
+    "english": "Thanks for pointing out the error in the last send-out.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Grazie per avermi segnalato l'errore nell'ultimo invio.",
+      "Prego per avermi detto la verità nell'ultimo file.",
+      "Scusa per avermi fatto lo sbaglio nell'ultimo link.",
+      "Grazie per avermi visto il problema nell'ultimo piano."
+    ],
+    "choicesEnglish": [
+      "Thanks for pointing out the error in the last send-out.",
+      "You're welcome for telling me the truth in the last file.",
+      "Sorry for making me the mistake in the last link.",
+      "Thanks for seeing the problem in the last plan."
+    ],
+    "correctAnswerItalian": "Grazie per avermi segnalato l'errore nell'ultimo invio.",
+    "correctAnswerEnglish": "Thanks for pointing out the error in the last send-out.",
+    "feedback": {
+      "correctItalian": "Giusto! Riconoscimento di un errore.",
+      "incorrectItalian": "No, è 'segnalato l'errore'.",
+      "correctEnglish": "Right! Acknowledging an error.",
+      "incorrectEnglish": "No, it's 'pointed out the error'."
+    }
+  },
+  {
+    "id": "s64-s29",
+    "italian": "Ci aggiorniamo via email appena avrò novità.",
+    "english": "We'll update each other via email as soon as I have news.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ci aggiorniamo via email appena avrò novità.",
+      "Ci vediamo via Zoom appena avrai tempo.",
+      "Ci scriviamo via chat appena saremo pronti.",
+      "Ci sentiamo via telefono appena sarò a casa."
+    ],
+    "choicesEnglish": [
+      "We'll update each other via email as soon as I have news.",
+      "We'll see each other via Zoom as soon as you have time.",
+      "We'll write each other via chat as soon as we're ready.",
+      "We'll talk via phone as soon as I'm at home."
+    ],
+    "correctAnswerItalian": "Ci aggiorniamo via email appena avrò novità.",
+    "correctAnswerEnglish": "We'll update each other via email as soon as I have news.",
+    "feedback": {
+      "correctItalian": "Ottimo! Promessa di aggiornamento.",
+      "incorrectItalian": "No, è 'appena avrò novità'.",
+      "correctEnglish": "Great! Promise of update.",
+      "incorrectEnglish": "No, it's 'as soon as I have news'."
+    }
+  },
+  {
+    "id": "s64-s30",
+    "italian": "Per favore, conferma la ricezione di questo messaggio.",
+    "english": "Please confirm receipt of this message.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Per favore, conferma la ricezione di questo messaggio.",
+      "Per cortesia, leggi la nota di questo file.",
+      "Per piacere, invia la bozza di questo piano.",
+      "Per favore, cancella l'email di questo mittente."
+    ],
+    "choicesEnglish": [
+      "Please confirm receipt of this message.",
+      "Please read the note of this file.",
+      "Please send the draft of this plan.",
+      "Please delete the email of this sender."
+    ],
+    "correctAnswerItalian": "Per favore, conferma la ricezione di questo messaggio.",
+    "correctAnswerEnglish": "Please confirm receipt of this message.",
+    "feedback": {
+      "correctItalian": "Esatto! Richiesta di conferma formale.",
+      "incorrectItalian": "No, è 'la ricezione'.",
+      "correctEnglish": "Exactly! Formal confirmation request.",
+      "incorrectEnglish": "No, it's 'receipt'."
+    }
+  },
+  {
+    "id": "s64-s31",
+    "italian": "Mi serve un attimo per controllare i dati nel database.",
+    "english": "I need a moment to check the data in the database.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi serve un attimo per controllare i dati nel database.",
+      "Mi serve un giorno per scrivere i file nel disco.",
+      "Mi serve un'ora per leggere le note nel foglio.",
+      "Mi serve un secondo per vedere il link nel sito."
+    ],
+    "choicesEnglish": [
+      "I need a moment to check the data in the database.",
+      "I need a day to write the files on the disk.",
+      "I need an hour to read the notes on the sheet.",
+      "I need a second to see the link on the site."
+    ],
+    "correctAnswerItalian": "Mi serve un attimo per controllare i dati nel database.",
+    "correctAnswerEnglish": "I need a moment to check the data in the database.",
+    "feedback": {
+      "correctItalian": "Giusto! Tempo per verifica tecnica.",
+      "incorrectItalian": "No, è 'nel database'.",
+      "correctEnglish": "Right! Time for technical verification.",
+      "incorrectEnglish": "No, it's 'in the database'."
+    }
+  },
+  {
+    "id": "s64-s32",
+    "italian": "L'ordine sarà evaso appena riceveremo il pagamento.",
+    "english": "The order will be processed as soon as we receive payment.",
+    "type": "sentence",
+    "choicesItalian": [
+      "L'ordine sarà evaso appena riceveremo il pagamento.",
+      "Il pacco sarà mandato appena vedremo l'email.",
+      "La merce sarà venduta appena avremo lo sconto.",
+      "Il file sarà inviato appena riceveremo la bozza."
+    ],
+    "choicesEnglish": [
+      "The order will be processed as soon as we receive payment.",
+      "The package will be sent as soon as we see the email.",
+      "The goods will be sold as soon as we have the discount.",
+      "The file will be sent as soon as we receive the draft."
+    ],
+    "correctAnswerItalian": "L'ordine sarà evaso appena riceveremo il pagamento.",
+    "correctAnswerEnglish": "The order will be processed as soon as we receive payment.",
+    "feedback": {
+      "correctItalian": "Perfetto! Procedura commerciale.",
+      "incorrectItalian": "No, è 'appena riceveremo il pagamento'.",
+      "correctEnglish": "Perfect! Commercial procedure.",
+      "incorrectEnglish": "No, it's 'as soon as we receive payment'."
+    }
+  },
+  {
+    "id": "s64-s33",
+    "italian": "Scrivo per sollecitare una risposta alla mia email.",
+    "english": "I am writing to urge a response to my email.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Scrivo per sollecitare una risposta alla mia email.",
+      "Chiamo per chiedere un aiuto alla mia domanda.",
+      "Vengo per dare un parere alla mia bozza.",
+      "Scrivo per annullare una nota alla mia cartella."
+    ],
+    "choicesEnglish": [
+      "I am writing to urge a response to my email.",
+      "I'm calling to ask for help with my question.",
+      "I'm coming to give an opinion on my draft.",
+      "I'm writing to cancel a note in my folder."
+    ],
+    "correctAnswerItalian": "Scrivo per sollecitare una risposta alla mia email.",
+    "correctAnswerEnglish": "I am writing to urge a response to my email.",
+    "feedback": {
+      "correctItalian": "Esatto! Sollecito formale.",
+      "incorrectItalian": "No, è 'per sollecitare'.",
+      "correctEnglish": "Exactly! Formal reminder.",
+      "incorrectEnglish": "No, it's 'to urge'."
+    }
+  },
+  {
+    "id": "s64-s34",
+    "italian": "Spero di aver chiarito ogni dubbio con questa spiegazione.",
+    "english": "I hope I have cleared every doubt with this explanation.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Spero di aver chiarito ogni dubbio con questa spiegazione.",
+      "Credo di aver perso ogni file con questa azione.",
+      "Penso di aver visto ogni link con questa ricerca.",
+      "Spero di aver dato ogni aiuto con questa email."
+    ],
+    "choicesEnglish": [
+      "I hope I have cleared every doubt with this explanation.",
+      "I believe I lost every file with this action.",
+      "I think I saw every link with this search.",
+      "I hope I gave every help with this email."
+    ],
+    "correctAnswerItalian": "Spero di aver chiarito ogni dubbio con questa spiegazione.",
+    "correctAnswerEnglish": "I hope I have cleared every doubt with this explanation.",
+    "feedback": {
+      "correctItalian": "Giusto! Chiusura chiarificatrice.",
+      "incorrectItalian": "No, è 'ogni dubbio'.",
+      "correctEnglish": "Right! Clarifying closing.",
+      "incorrectEnglish": "No, it's 'every doubt'."
+    }
+  },
+  {
+    "id": "s64-s35",
+    "italian": "Cordiali saluti e buon proseguimento di giornata.",
+    "english": "Best regards and have a good rest of the day.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Cordiali saluti e buon proseguimento di giornata.",
+      "Cari amici e buona fortuna a tutti.",
+      "Tanti auguri e felice anno nuovo.",
+      "Distinti saluti e arrivederci a presto."
+    ],
+    "choicesEnglish": [
+      "Best regards and have a good rest of the day.",
+      "Dear friends and good luck to everyone.",
+      "Best wishes and happy new year.",
+      "Yours faithfully and see you soon."
+    ],
+    "correctAnswerItalian": "Cordiali saluti e buon proseguimento di giornata.",
+    "correctAnswerEnglish": "Best regards and have a good rest of the day.",
+    "feedback": {
+      "correctItalian": "Ottimo! Augurio formale completo.",
+      "incorrectItalian": "No, è 'proseguimento di giornata'.",
+      "correctEnglish": "Great! Complete formal wish.",
+      "incorrectEnglish": "No, it's 'rest of the day'."
+    }
+  },
+  {
+    "id": "s64-s36",
+    "italian": "Hai visto l'avviso sulla bacheca aziendale stamattina?",
+    "english": "Did you see the notice on the company bulletin board this morning?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Hai visto l'avviso sulla bacheca aziendale stamattina?",
+      "Hai letto il file sulla scrivania personale oggi?",
+      "Hai scritto la nota sulla lavagna scolastica ora?",
+      "Hai perso la chiave sulla porta dell'ufficio ieri?"
+    ],
+    "choicesEnglish": [
+      "Did you see the notice on the company bulletin board this morning?",
+      "Did you read the file on the personal desk today?",
+      "Did you write the note on the school blackboard now?",
+      "Did you lose the key on the office door yesterday?"
+    ],
+    "correctAnswerItalian": "Hai visto l'avviso sulla bacheca aziendale stamattina?",
+    "correctAnswerEnglish": "Did you see the notice on the company bulletin board this morning?",
+    "feedback": {
+      "correctItalian": "Esatto! Comunicazione interna.",
+      "incorrectItalian": "No, è 'sulla bacheca aziendale'.",
+      "correctEnglish": "Exactly! Internal communication.",
+      "incorrectEnglish": "No, it's 'on the company bulletin board'."
+    }
+  },
+  {
+    "id": "s64-s37",
+    "italian": "Non riesco ad aprire l'allegato, forse il formato è errato.",
+    "english": "I can't open the attachment, maybe the format is wrong.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Non riesco ad aprire l'allegato, forse il formato è errato.",
+      "Non posso vedere il file, forse il nome è lungo.",
+      "Non voglio leggere l'email, forse il testo è brutto.",
+      "Non riesco a trovare il link, forse il sito è chiuso."
+    ],
+    "choicesEnglish": [
+      "I can't open the attachment, maybe the format is wrong.",
+      "I can't see the file, maybe the name is long.",
+      "I don't want to read the email, maybe the text is bad.",
+      "I can't find the link, maybe the site is closed."
+    ],
+    "correctAnswerItalian": "Non riesco ad aprire l'allegato, forse il formato è errato.",
+    "correctAnswerEnglish": "I can't open the attachment, maybe the format is wrong.",
+    "feedback": {
+      "correctItalian": "Giusto! Problema tecnico comune.",
+      "incorrectItalian": "No, è 'il formato è errato'.",
+      "correctEnglish": "Right! Common technical problem.",
+      "incorrectEnglish": "No, it's 'the format is wrong'."
+    }
+  },
+  {
+    "id": "s64-s38",
+    "italian": "Ti ho messo in copia conoscenza nell'email al capo.",
+    "english": "I put you in CC in the email to the boss.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ti ho messo in copia conoscenza nell'email al capo.",
+      "Ti ho dato in regalo un libro nell'ufficio al piano.",
+      "Ti ho visto in riunione nell'aula al centro.",
+      "Ti ho scritto in fretta nell'email al collega."
+    ],
+    "choicesEnglish": [
+      "I put you in CC in the email to the boss.",
+      "I gave you a book as a gift in the office on the floor.",
+      "I saw you in a meeting in the room in the center.",
+      "I wrote you in a hurry in the email to the colleague."
+    ],
+    "correctAnswerItalian": "Ti ho messo in copia conoscenza nell'email al capo.",
+    "correctAnswerEnglish": "I put you in CC in the email to the boss.",
+    "feedback": {
+      "correctItalian": "Perfetto! Gergo da ufficio.",
+      "incorrectItalian": "No, è 'in copia conoscenza' (CC).",
+      "correctEnglish": "Perfect! Office jargon.",
+      "incorrectEnglish": "No, it's 'in CC'."
+    }
+  },
+  {
+    "id": "s64-s39",
+    "italian": "La riunione è stata posticipata alla prossima settimana.",
+    "english": "The meeting has been postponed to next week.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La riunione è stata posticipata alla prossima settimana.",
+      "La lezione è stata annullata per questa mattina.",
+      "La festa è stata anticipata a domani sera.",
+      "Il pranzo è stato spostato in un altro posto."
+    ],
+    "choicesEnglish": [
+      "The meeting has been postponed to next week.",
+      "The lesson has been cancelled for this morning.",
+      "The party has been moved up to tomorrow evening.",
+      "The lunch has been moved to another place."
+    ],
+    "correctAnswerItalian": "La riunione è stata posticipata alla prossima settimana.",
+    "correctAnswerEnglish": "The meeting has been postponed to next week.",
+    "feedback": {
+      "correctItalian": "Esatto! Cambio di programma.",
+      "incorrectItalian": "No, è 'posticipata'.",
+      "correctEnglish": "Exactly! Change of plans.",
+      "incorrectEnglish": "No, it's 'postponed'."
+    }
+  },
+  {
+    "id": "s64-s40",
+    "italian": "Grazie per la collaborazione e per la tempestività.",
+    "english": "Thanks for the cooperation and for the promptness.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Grazie per la collaborazione e per la tempestività.",
+      "Prego per l'aiuto e per la gentilezza.",
+      "Scusa per il ritardo e per la confusione.",
+      "Grazie per la visita e per il tempo."
+    ],
+    "choicesEnglish": [
+      "Thanks for the cooperation and for the promptness.",
+      "You're welcome for the help and for the kindness.",
+      "Sorry for the delay and for the confusion.",
+      "Thanks for the visit and for the time."
+    ],
+    "correctAnswerItalian": "Grazie per la collaborazione e per la tempestività.",
+    "correctAnswerEnglish": "Thanks for the cooperation and for the promptness.",
+    "feedback": {
+      "correctItalian": "Giusto! Ringraziamento professionale.",
+      "incorrectItalian": "No, è 'per la tempestività'.",
+      "correctEnglish": "Right! Professional thanks.",
+      "incorrectEnglish": "No, it's 'for the promptness'."
+    }
+  },
+  {
+    "id": "s64-s41",
+    "italian": "Potrebbe inoltrare questa comunicazione a tutto il team?",
+    "english": "Could you forward this communication to the whole team?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Potrebbe inoltrare questa comunicazione a tutto il team?",
+      "Potrebbe mandare questo file a tutto l'ufficio?",
+      "Potrebbe dare questa nota a tutti i colleghi?",
+      "Potrebbe scrivere questa email a tutto il mondo?"
+    ],
+    "choicesEnglish": [
+      "Could you forward this communication to the whole team?",
+      "Could you send this file to the whole office?",
+      "Could you give this note to all colleagues?",
+      "Could you write this email to the whole world?"
+    ],
+    "correctAnswerItalian": "Potrebbe inoltrare questa comunicazione a tutto il team?",
+    "correctAnswerEnglish": "Could you forward this communication to the whole team?",
+    "feedback": {
+      "correctItalian": "Perfetto! Richiesta di diffusione info.",
+      "incorrectItalian": "No, è 'inoltrare'.",
+      "correctEnglish": "Perfect! Request to spread info.",
+      "incorrectEnglish": "No, it's 'forward'."
+    }
+  },
+  {
+    "id": "s64-s42",
+    "italian": "Ho appena finito di scrivere la bozza della presentazione.",
+    "english": "I just finished writing the presentation draft.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ho appena finito di scrivere la bozza della presentazione.",
+      "Ho appena iniziato a leggere il libro della scuola.",
+      "Ho appena visto di perdere la chiave della casa.",
+      "Ho appena sentito di fare la riunione della ditta."
+    ],
+    "choicesEnglish": [
+      "I just finished writing the presentation draft.",
+      "I just started reading the school book.",
+      "I just saw losing the house key.",
+      "I just heard of having the company meeting."
+    ],
+    "correctAnswerItalian": "Ho appena finito di scrivere la bozza della presentazione.",
+    "correctAnswerEnglish": "I just finished writing the presentation draft.",
+    "feedback": {
+      "correctItalian": "Esatto! Stato del lavoro.",
+      "incorrectItalian": "No, è 'la bozza'.",
+      "correctEnglish": "Exactly! Work status.",
+      "incorrectEnglish": "No, it's 'the draft'."
+    }
+  },
+  {
+    "id": "s64-s43",
+    "italian": "Mi servirebbe il tuo parere professionale su questo.",
+    "english": "I would need your professional opinion on this.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi servirebbe il tuo parere professionale su questo.",
+      "Mi vorrebbe il tuo aiuto personale per quello.",
+      "Mi darebbe il tuo file tecnico su tutto.",
+      "Mi scriverebbe il tuo nome completo qui."
+    ],
+    "choicesEnglish": [
+      "I would need your professional opinion on this.",
+      "I would want your personal help for that.",
+      "I would give your technical file on everything.",
+      "I would write your full name here."
+    ],
+    "correctAnswerItalian": "Mi servirebbe il tuo parere professionale su questo.",
+    "correctAnswerEnglish": "I would need your professional opinion on this.",
+    "feedback": {
+      "correctItalian": "Giusto! Richiesta di consulenza interna.",
+      "incorrectItalian": "No, è 'il tuo parere professionale'.",
+      "correctEnglish": "Right! Request for internal consultation.",
+      "incorrectEnglish": "No, it's 'your professional opinion'."
+    }
+  },
+  {
+    "id": "s64-s44",
+    "italian": "La conferma definitiva arriverà entro la fine del turno.",
+    "english": "The final confirmation will arrive by the end of the shift.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La conferma definitiva arriverà entro la fine del turno.",
+      "La risposta breve verrà entro l'inizio della lezione.",
+      "La nota nuova sarà entro la pausa del pranzo.",
+      "La bozza finale andrà entro la fine del lavoro."
+    ],
+    "choicesEnglish": [
+      "The confirmation will arrive by the end of the shift.",
+      "The short answer will come by the start of the lesson.",
+      "The new note will be by the lunch break.",
+      "The final draft will go by the end of the work."
+    ],
+    "correctAnswerItalian": "La conferma definitiva arriverà entro la fine del turno.",
+    "correctAnswerEnglish": "The final confirmation will arrive by the end of the shift.",
+    "feedback": {
+      "correctItalian": "Perfetto! Tempistica lavorativa.",
+      "incorrectItalian": "No, è 'fine del turno'.",
+      "correctEnglish": "Perfect! Work timing.",
+      "incorrectEnglish": "No, it's 'end of the shift'."
+    }
+  },
+  {
+    "id": "s64-s45",
+    "italian": "Mi scusi, ma l'email indicata non è mai arrivata.",
+    "english": "I'm sorry, but the indicated email never arrived.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi scusi, ma l'email indicata non è mai arrivata.",
+      "Scusami, ma il file detto non è mai stato visto.",
+      "Mi spiace, ma la nota scritta non è mai stata letta.",
+      "Scusi, ma il link messo non è mai stato aperto."
+    ],
+    "choicesEnglish": [
+      "I'm sorry, but the indicated email never arrived.",
+      "Sorry, but the said file was never seen.",
+      "I'm sorry, but the written note was never read.",
+      "Excuse me, but the put link was never opened."
+    ],
+    "correctAnswerItalian": "Mi scusi, ma l'email indicata non è mai arrivata.",
+    "correctAnswerEnglish": "I'm sorry, but the indicated email never arrived.",
+    "feedback": {
+      "correctItalian": "Esatto! Segnalazione di mancato arrivo.",
+      "incorrectItalian": "No, è 'mai arrivata'.",
+      "correctEnglish": "Exactly! Reporting non-arrival.",
+      "incorrectEnglish": "No, it's 'never arrived'."
+    }
+  },
+  {
+    "id": "s64-s46",
+    "italian": "Ho verificato e l'errore era nel mio indirizzo email.",
+    "english": "I checked and the error was in my email address.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ho verificato e l'errore era nel mio indirizzo email.",
+      "Ho visto e lo sbaglio era nel tuo numero di telefono.",
+      "Ho controllato e il problema era nel suo nome utente.",
+      "Ho trovato e l'errore era nella mia cartella file."
+    ],
+    "choicesEnglish": [
+      "I checked and the error was in my email address.",
+      "I saw and the mistake was in your phone number.",
+      "I checked and the problem was in his username.",
+      "I found and the error was in my file folder."
+    ],
+    "correctAnswerItalian": "Ho verificato e l'errore era nel mio indirizzo email.",
+    "correctAnswerEnglish": "I checked and the error was in my email address.",
+    "feedback": {
+      "correctItalian": "Giusto! Ammissione di errore.",
+      "incorrectItalian": "No, è 'nel mio indirizzo email'.",
+      "correctEnglish": "Right! Admission of error.",
+      "incorrectEnglish": "No, it's 'in my email address'."
+    }
+  },
+  {
+    "id": "s64-s47",
+    "italian": "Ti invio nuovamente i documenti corretti in allegato.",
+    "english": "I'm sending you the corrected documents again as an attachment.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ti invio nuovamente i documenti corretti in allegato.",
+      "Ti mando subito i file sbagliati in ufficio.",
+      "Ti do ancora le note brevi in borsa.",
+      "Ti scrivo poi le email lunghe in spam."
+    ],
+    "choicesEnglish": [
+      "I'm sending you the corrected documents again as an attachment.",
+      "I'm sending you the wrong files to the office immediately.",
+      "I'm giving you the short notes in the bag again.",
+      "I'm writing you the long emails in spam later."
+    ],
+    "correctAnswerItalian": "Ti invio nuovamente i documenti corretti in allegato.",
+    "correctAnswerEnglish": "I'm sending you the corrected documents again as an attachment.",
+    "feedback": {
+      "correctItalian": "Perfetto! Correzione e rinvio.",
+      "incorrectItalian": "No, è 'in allegato'.",
+      "correctEnglish": "Perfect! Correction and resending.",
+      "incorrectEnglish": "No, it's 'as an attachment'."
+    }
+  },
+  {
+    "id": "s64-s48",
+    "italian": "Resto a disposizione per qualsiasi chiarimento in merito.",
+    "english": "I remain available for any clarification on the matter.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Resto a disposizione per qualsiasi chiarimento in merito.",
+      "Vado a casa per ogni aiuto nel lavoro.",
+      "Spero a disposizione per qualche nota nel file.",
+      "Torno a disposizione per nessuno sbaglio nel link."
+    ],
+    "choicesEnglish": [
+      "I remain available for any clarification on the matter.",
+      "I go home for every help in the work.",
+      "I hope available for some note in the file.",
+      "I come back available for no mistake in the link."
+    ],
+    "correctAnswerItalian": "Resto a disposizione per qualsiasi chiarimento in merito.",
+    "correctAnswerEnglish": "I remain available for any clarification on the matter.",
+    "feedback": {
+      "correctItalian": "Esatto! Chiusura email formale tipica.",
+      "incorrectItalian": "No, è 'a disposizione'.",
+      "correctEnglish": "Exactly! Typical formal email closing.",
+      "incorrectEnglish": "No, it's 'available'."
+    }
+  },
+  {
+    "id": "s64-s49",
+    "italian": "Grazie per il feedback, lo terrò in considerazione.",
+    "english": "Thanks for the feedback, I will take it into consideration.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Grazie per il feedback, lo terrò in considerazione.",
+      "Prego per la nota, la vedrò in ufficio.",
+      "Scusa per lo sbaglio, lo farò in fretta.",
+      "Grazie per l'aiuto, lo darò in omaggio."
+    ],
+    "choicesEnglish": [
+      "Thanks for the feedback, I will take it into consideration.",
+      "You're welcome for the note, I'll see it in the office.",
+      "Sorry for the mistake, I'll do it quickly.",
+      "Thanks for the help, I'll give it as a gift."
+    ],
+    "correctAnswerItalian": "Grazie per il feedback, lo terrò in considerazione.",
+    "correctAnswerEnglish": "Thanks for the feedback, I will take it into consideration.",
+    "feedback": {
+      "correctItalian": "Giusto! Accoglienza di suggerimenti.",
+      "incorrectItalian": "No, è 'in considerazione'.",
+      "correctEnglish": "Right! Welcoming suggestions.",
+      "incorrectEnglish": "No, it's 'into consideration'."
+    }
+  },
+  {
+    "id": "s64-s50",
+    "italian": "La scadenza per la consegna è stata fissata per venerdì.",
+    "english": "The delivery deadline has been set for Friday.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La scadenza per la consegna è stata fissata per venerdì.",
+      "L'inizio per la vendita è stato messo per lunedì.",
+      "La fine per lo studio è stata data per sabato.",
+      "Il termine per l'invio è stato fatto per giovedì."
+    ],
+    "choicesEnglish": [
+      "The delivery deadline has been set for Friday.",
+      "The start for the sale has been put for Monday.",
+      "The end for the study has been given for Saturday.",
+      "The term for the sending has been made for Thursday."
+    ],
+    "correctAnswerItalian": "La scadenza per la consegna è stata fissata per venerdì.",
+    "correctAnswerEnglish": "The delivery deadline has been set for Friday.",
+    "feedback": {
+      "correctItalian": "Perfetto! Definizione di scadenza.",
+      "incorrectItalian": "No, è 'venerdì'.",
+      "correctEnglish": "Perfect! Defining a deadline.",
+      "incorrectEnglish": "No, it's 'Friday'."
+    }
+  },
+  {
+    "id": "s64-s51",
+    "italian": "Hai già controllato se ci sono nuove email importanti?",
+    "english": "Have you already checked if there are new important emails?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Hai già controllato se ci sono nuove email importanti?",
+      "Hai già visto se ci sono nuovi file grandi?",
+      "Hai già letto se ci sono nuove note brevi?",
+      "Hai già trovato se ci sono nuovi link utili?"
+    ],
+    "choicesEnglish": [
+      "Have you already checked if there are new important emails?",
+      "Have you already seen if there are new large files?",
+      "Have you already read if there are new short notes?",
+      "Have you already found if there are new useful links?"
+    ],
+    "correctAnswerItalian": "Hai già controllato se ci sono nuove email importanti?",
+    "correctAnswerEnglish": "Have you already checked if there are new important emails?",
+    "feedback": {
+      "correctItalian": "Esatto! Controllo periodico.",
+      "incorrectItalian": "No, è 'email importanti'.",
+      "correctEnglish": "Exactly! Periodic check.",
+      "incorrectEnglish": "No, it's 'important emails'."
+    }
+  },
+  {
+    "id": "s64-s52",
+    "italian": "Non ho avuto il tempo di rispondere a tutti oggi.",
+    "english": "I didn't have time to reply to everyone today.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Non ho avuto il tempo di rispondere a tutti oggi.",
+      "Non ho avuto la voglia di scrivere a nessuno ora.",
+      "Non ho avuto il modo di parlare a tutti ieri.",
+      "Non ho avuto il file di dare a nessuno poi."
+    ],
+    "choicesEnglish": [
+      "I didn't have time to reply to everyone today.",
+      "I didn't have the desire to write to anyone now.",
+      "I didn't have the way to talk to everyone yesterday.",
+      "I didn't have the file to give to anyone then."
+    ],
+    "correctAnswerItalian": "Non ho avuto il tempo di rispondere a tutti oggi.",
+    "correctAnswerEnglish": "I didn't have time to reply to everyone today.",
+    "feedback": {
+      "correctItalian": "Giusto! Giustificazione per pendenza.",
+      "incorrectItalian": "No, significa 'I didn't have time to reply'.",
+      "correctEnglish": "Right! Justification for pending tasks.",
+      "incorrectEnglish": "No, it means 'I didn't have time to reply'."
+    }
+  },
+  {
+    "id": "s64-s53",
+    "italian": "Mi scuso per la risposta tardiva alla tua richiesta.",
+    "english": "I apologize for the late response to your request.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi scuso per la risposta tardiva alla tua richiesta.",
+      "Mi prego per la nota breve alla tua domanda.",
+      "Mi scuso per il file perso alla tua nota.",
+      "Mi scuso per il link errato alla tua email."
+    ],
+    "choicesEnglish": [
+      "I apologize for the late response to your request.",
+      "I beg for the short note to your question.",
+      "I apologize for the lost file to your note.",
+      "I apologize for the wrong link to your email."
+    ],
+    "correctAnswerItalian": "Mi scuso per la risposta tardiva alla tua richiesta.",
+    "correctAnswerEnglish": "I apologize for the late response to your request.",
+    "feedback": {
+      "correctItalian": "Perfetto! Scusa per il ritardo.",
+      "incorrectItalian": "No, è 'risposta tardiva'.",
+      "correctEnglish": "Perfect! Apology for delay.",
+      "incorrectEnglish": "No, it's 'late response'."
+    }
+  },
+  {
+    "id": "s64-s54",
+    "italian": "Ti invio il link per partecipare alla riunione online.",
+    "english": "I'm sending you the link to join the online meeting.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ti invio il link per partecipare alla riunione online.",
+      "Ti mando il file per vedere la lezione a casa.",
+      "Ti do la nota per fare la festa in ufficio.",
+      "Ti scrivo l'email per annullare il pranzo poi."
+    ],
+    "choicesEnglish": [
+      "I'm sending you the link to join the online meeting.",
+      "I'm sending you the file to see the lesson at home.",
+      "I'm giving you the note to have the party in the office.",
+      "I'm writing you the email to cancel the lunch then."
+    ],
+    "correctAnswerItalian": "Ti invio il link per partecipare alla riunione online.",
+    "correctAnswerEnglish": "I'm sending you the link to join the online meeting.",
+    "feedback": {
+      "correctItalian": "Esatto! Invito digitale.",
+      "incorrectItalian": "No, è 'riunione online'.",
+      "correctEnglish": "Exactly! Digital invitation.",
+      "incorrectEnglish": "No, it's 'online meeting'."
+    }
+  },
+  {
+    "id": "s64-s55",
+    "italian": "Hai ricevuto la notifica della nuova policy?",
+    "english": "Did you receive the notification of the new policy?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Hai ricevuto la notifica della nuova policy?",
+      "Hai visto l'avviso della nuova regola?",
+      "Hai letto la bozza della nuova legge?",
+      "Hai perso la nota della nuova ditta?"
+    ],
+    "choicesEnglish": [
+      "Did you receive the notification of the new policy?",
+      "Did you see the notice of the new rule?",
+      "Did you read the draft of the new law?",
+      "Did you lose the note of the new company?"
+    ],
+    "correctAnswerItalian": "Hai ricevuto la notifica della nuova policy?",
+    "correctAnswerEnglish": "Did you receive the notification of the new policy?",
+    "feedback": {
+      "correctItalian": "Giusto! Verifica ricezione info.",
+      "incorrectItalian": "No, è 'la notifica'.",
+      "correctEnglish": "Right! Verifying info receipt.",
+      "incorrectEnglish": "No, it's 'the notification'."
+    }
+  },
+  {
+    "id": "s64-s56",
+    "italian": "Il problema è stato risolto e il sistema è attivo.",
+    "english": "The problem has been resolved and the system is active.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il problema è stato risolto e il sistema è attivo.",
+      "Lo sbaglio è stato fatto e il disco è rotto.",
+      "Il guasto è stato visto e il computer è spento.",
+      "L'errore è stato trovato e il file è perso."
+    ],
+    "choicesEnglish": [
+      "The problem has been resolved and the system is active.",
+      "The mistake has been made and the disk is broken.",
+      "The breakdown has been seen and the computer is off.",
+      "The error has been found and the file is lost."
+    ],
+    "correctAnswerItalian": "Il problema è stato risolto e il sistema è attivo.",
+    "correctAnswerEnglish": "The problem has been resolved and the system is active.",
+    "feedback": {
+      "correctItalian": "Perfetto! Risoluzione di un problema.",
+      "incorrectItalian": "No, è 'risolto'.",
+      "correctEnglish": "Perfect! Resolving a problem.",
+      "incorrectEnglish": "No, it's 'resolved'."
+    }
+  },
+  {
+    "id": "s64-s57",
+    "italian": "Per favore, fammi sapere se hai ricevuto tutto.",
+    "english": "Please, let me know if you received everything.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Per favore, fammi sapere se hai ricevuto tutto.",
+      "Per cortesia, dimmi se hai visto nessuno.",
+      "Per piacere, scrivi se hai perso qualcosa.",
+      "Per favore, chiama se hai trovato nulla."
+    ],
+    "choicesEnglish": [
+      "Please, let me know if you received everything.",
+      "Please, tell me if you saw no one.",
+      "Please, write if you lost something.",
+      "Please, call if you found nothing."
+    ],
+    "correctAnswerItalian": "Per favore, fammi sapere se hai ricevuto tutto.",
+    "correctAnswerEnglish": "Please, let me know if you received everything.",
+    "feedback": {
+      "correctItalian": "Esatto! Chiusura con richiesta di conferma.",
+      "incorrectItalian": "No, è 'se hai ricevuto tutto'.",
+      "correctEnglish": "Exactly! Closing with confirmation request.",
+      "incorrectEnglish": "No, it's 'if you received everything'."
+    }
+  },
+  {
+    "id": "s64-s58",
+    "italian": "Grazie ancora per il tuo aiuto prezioso in questo.",
+    "english": "Thanks again for your valuable help in this.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Grazie ancora per il tuo aiuto prezioso in questo.",
+      "Prego ancora per il tuo file utile in quello.",
+      "Scusa ancora per il tuo errore grave in tutto.",
+      "Grazie ancora per il tuo tempo lungo in poi."
+    ],
+    "choicesEnglish": [
+      "Thanks again for your valuable help in this.",
+      "You're welcome again for your useful file in that.",
+      "Sorry again for your serious mistake in everything.",
+      "Thanks again for your long time then."
+    ],
+    "correctAnswerItalian": "Grazie ancora per il tuo aiuto prezioso in questo.",
+    "correctAnswerEnglish": "Thanks again for your valuable help in this.",
+    "feedback": {
+      "correctItalian": "Giusto! Ringraziamento sentito.",
+      "incorrectItalian": "No, è 'aiuto prezioso'.",
+      "correctEnglish": "Right! Heartfelt thanks.",
+      "incorrectEnglish": "No, it's 'valuable help'."
+    }
+  },
+  {
+    "id": "s64-s59",
+    "italian": "Ci vediamo domani per discutere i dettagli della spedizione.",
+    "english": "See you tomorrow to discuss the shipping details.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ci vediamo domani per discutere i dettagli della spedizione.",
+      "Ci sentiamo oggi per vedere le note del file.",
+      "Ci scriviamo ora per fare i piani del lavoro.",
+      "Ci vediamo poi per cancellare le bozze della ditta."
+    ],
+    "choicesEnglish": [
+      "See you tomorrow to discuss the shipping details.",
+      "We'll talk today to see the file notes.",
+      "We'll write each other now to make the work plans.",
+      "We'll see each other later to cancel the company drafts."
+    ],
+    "correctAnswerItalian": "Ci vediamo domani per discutere i dettagli della spedizione.",
+    "correctAnswerEnglish": "See you tomorrow to discuss the shipping details.",
+    "feedback": {
+      "correctItalian": "Perfetto! Appuntamento di lavoro.",
+      "incorrectItalian": "No, è 'i dettagli della spedizione'.",
+      "correctEnglish": "Perfect! Work appointment.",
+      "incorrectEnglish": "No, it's 'the shipping details'."
+    }
+  },
+  {
+    "id": "s64-s60",
+    "italian": "Buona serata e a risentirci presto via email.",
+    "english": "Good evening and talk to you soon via email.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Buona serata e a risentirci presto via email.",
+      "Buon giorno e a rivederci dopo in ufficio.",
+      "Buona notte e a risentirci mai più via chat.",
+      "Buon pranzo e a risentirci domani via telefono."
+    ],
+    "choicesEnglish": [
+      "Good evening and talk to you soon via email.",
+      "Good day and see you later in the office.",
+      "Good night and never talk to you again via chat.",
+      "Good lunch and talk to you tomorrow via phone."
+    ],
+    "correctAnswerItalian": "Buona serata e a risentirci presto via email.",
+    "correctAnswerEnglish": "Good evening and talk to you soon via email.",
+    "feedback": {
+      "correctItalian": "Esatto! Saluto finale cordiale.",
+      "incorrectItalian": "No, è 'via email'.",
+      "correctEnglish": "Exactly! Friendly final greeting.",
+      "incorrectEnglish": "No, it's 'via email'."
     }
   }
 ]

@@ -1,104 +1,1562 @@
 [
   {
-    "id": "s27-s3",
-    "italian": "Mi dispiace, ma la terrazza è già tutta prenotata.",
-    "english": "I am sorry, but the terrace is already fully booked.",
+    "id": "s35-s1",
+    "italian": "\"Buongiorno, vorrei prenotare un tavolo per stasera.\" \"Buongiorno. Per quante persone sarebbe?\"",
+    "english": "\"Good morning, I would like to book a table for tonight.\" \"Good morning. For how many people would it be?\"",
     "type": "sentence",
-    "choices": [
-      "Mi dispiace, ma la terrazza è già tutta prenotata.",
-      "Vorrei prenotare un tavolo per due persone alle otto.",
-      "Potete confermare la prenotazione a nome di Rossi?",
-      "Chiamo per confermare il nostro tavolo di questa sera."
+    "choicesItalian": [
+      "\"Buongiorno, vorrei prenotare un tavolo per stasera.\" \"Buongiorno. Per quante persone sarebbe?\"",
+      "\"Ciao, vorrei perdere una borsa per la via.\" \"No male. Per quante borse perderebbe?\"",
+      "\"Salve, vorrei ridere una news per il re.\" \"Vero saggio. Per quante news riderebbe?\"",
+      "\"Buongiorno, vorrei correre una gita per il porto.\" \"Rari svelto. Per quante gite correrebbe?\""
     ],
-    "correctAnswer": "Mi dispiace, ma la terrazza è già tutta prenotata.",
+    "choicesEnglish": [
+      "\"Good morning, I'd like to book a table for tonight.\" \"Good morning. For how many people?\"",
+      "\"Hi, I'd like to lose a bag on the street.\" \"Not bad. For how many bags would you lose?\"",
+      "\"Hello, I'd like to laugh at a news for the king.\" \"True wise. For how many news would you laugh?\"",
+      "\"Good morning, I'd like to run a trip to the port.\" \"Rare quick. For how many trips would you run?\""
+    ],
+    "correctAnswerItalian": "\"Buongiorno, vorrei prenotare un tavolo per stasera.\" \"Buongiorno. Per quante persone sarebbe?\"",
+    "correctAnswerEnglish": "\"Good morning, I'd like to reserve a table for this evening.\" \"Good morning. For how many people will that be?\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi dispiace, ma la terrazza è già tutta prenotata.\"."
+      "correctItalian": "Ottimo! L'inizio standard di una prenotazione telefonica.",
+      "incorrectItalian": "No, questa conversazione riguarda l'apertura della prenotazione e la richiesta del numero di posti.",
+      "correctEnglish": "Great! The standard start of a phone reservation.",
+      "incorrectEnglish": "No, this conversation is about opening the reservation and asking for the number of seats."
     }
   },
   {
-    "id": "s27-s1",
-    "italian": "Vorrei prenotare un tavolo per due persone alle otto.",
-    "english": "I would like to book a table for two people at eight o'clock.",
+    "id": "s35-s2",
+    "italian": "\"Siamo in quattro. Verso le otto e mezza, è possibile?\" \"Vediamo... per quell'ora siamo purtroppo al completo.\"",
+    "english": "\"There are four of us. Around eight-thirty, is it possible?\" \"Let's see... for that time we are unfortunately full.\"",
     "type": "sentence",
-    "choices": [
-      "Vorrei prenotare un tavolo per due persone alle otto.",
-      "Mi dispiace, ma la terrazza è già tutta prenotata.",
-      "Chiamo per confermare il nostro tavolo di questa sera.",
-      "Potete confermare la prenotazione a nome di Rossi?"
+    "choicesItalian": [
+      "\"Siamo in quattro. Verso le otto e mezza, è possibile?\" \"Vediamo... per quell'ora siamo purtroppo al completo.\"",
+      "\"Perdiamo in quattro. Verso le otto borse, è sporco?\" \"Chiamiamo... per quell'area siamo furbi al fango.\"",
+      "\"Ridiamo in quattro. Verso le otto news, è finto?\" \"Vediamo... per quel re siamo sordi al bacio.\"",
+      "\"Corriamo in quattro. Verso le otto gite, è saggio?\" \"Tacciamo... per quel porto siamo lunghi al tour.\""
     ],
-    "correctAnswer": "Vorrei prenotare un tavolo per due persone alle otto.",
+    "choicesEnglish": [
+      "\"We're four. Around 8:30, is it possible?\" \"Let's see... for that time we're unfortunately full.\"",
+      "\"We lose in four. Around eight bags, is it dirty?\" \"Let's call... for that area we're clever at mud.\"",
+      "\"We laugh in four. Around eight news, is it fake?\" \"Let's see... for that king we're deaf to the kiss.\"",
+      "\"We run in four. Around eight trips, is it wise?\" \"Let's be silent... for that port we're long for the tour.\""
+    ],
+    "correctAnswerItalian": "\"Siamo in quattro. Verso le otto e mezza, è possibile?\" \"Vediamo... per quell'ora siamo purtroppo al completo.\"",
+    "correctAnswerEnglish": "\"There are four of us. Would eight-thirty be possible?\" \"Let me check... unfortunately, we're fully booked for that time.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Vorrei prenotare un tavolo per due persone alle otto.\"."
+      "correctItalian": "Esatto! Negoziare l'orario e ricevere un rifiuto per mancanza di posti.",
+      "incorrectItalian": "No, si parla della proposta di un orario e della constatazione che il locale è pieno.",
+      "correctEnglish": "Exactly! Negotiating the time and receiving a refusal due to lack of seats.",
+      "incorrectEnglish": "No, it's about proposing a time and noting that the place is full."
     }
   },
   {
-    "id": "s27-s6",
-    "italian": "Chiamo per confermare il nostro tavolo di questa sera.",
-    "english": "I am calling to confirm our table for this evening.",
+    "id": "s35-s3",
+    "italian": "\"Avrei posto però per le nove o per le otto.\" \"Va bene per le nove allora, a che nome segno?\"",
+    "english": "\"I'd have space (though) for nine or for eight.\" \"Nine is fine then, in what name shall I mark (it)?\"",
     "type": "sentence",
-    "choices": [
-      "Mi dispiace, ma la terrazza è già tutta prenotata.",
-      "Chiamo per confermare il nostro tavolo di questa sera.",
-      "Il locale è occupato, dovete aspettare venti minuti.",
-      "Potete confermare la prenotazione a nome di Rossi?"
+    "choicesItalian": [
+      "\"Avrei posto però per le nove o per le otto.\" \"Va bene per le nove allora, a che nome segno?\"",
+      "\"Perderei via però per le nove o per le otto.\" \"No male per le nove dopo, a che borsa perdo?\"",
+      "\"Riderei news però per le nove o per le otto.\" \"Vero bene per le nove ora, a che bacio rido?\"",
+      "\"Correrei gita però per le nove o per le otto.\" \"Saggio rari per le nove mai, a che porto corro?\""
     ],
-    "correctAnswer": "Chiamo per confermare il nostro tavolo di questa sera.",
+    "choicesEnglish": [
+      "\"I'd have space for nine or eight.\" \"Nine is fine then, what name for the booking?\"",
+      "\"I'd lose the street for nine or eight.\" \"Not bad for nine later, what bag do I lose?\"",
+      "\"I'd laugh at news for nine or eight.\" \"Very well for nine now, what kiss do I laugh at?\"",
+      "\"I'd run the trip for nine or eight.\" \"Wise rare for nine never, what port do I run to?\""
+    ],
+    "correctAnswerItalian": "\"Avrei posto però per le nove o per le otto.\" \"Va bene per le nove allora, a che nome segno?\"",
+    "correctAnswerEnglish": "\"I do have room at either eight or nine, though.\" \"Nine o'clock works for us; what name should I give you?\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Chiamo per confermare il nostro tavolo di questa sera.\"."
+      "correctItalian": "Giusto! Accettare l'alternativa proposta e procedere all'identificazione.",
+      "incorrectItalian": "No, il personale offre altre fasce orarie e il cliente ne sceglie una.",
+      "correctEnglish": "Right! Accepting the proposed alternative and proceeding to identification.",
+      "incorrectEnglish": "No, the staff offers other time slots and the customer chooses one."
     }
   },
   {
-    "id": "s27-s5",
-    "italian": "Abbiamo un tavolo libero all'interno, vicino alla finestra.",
-    "english": "We have a free table inside, near the window.",
+    "id": "s35-s4",
+    "italian": "\"A nome Rossi. Un tavolo per quattro per le ventuno.\" \"Benissimo, signor Rossi. A stasera!\"",
+    "english": "\"In the name of Rossi. A table for four for nine PM.\" \"Very well, Mr. Rossi. See you tonight!\"",
     "type": "sentence",
-    "choices": [
-      "Abbiamo un tavolo libero all'interno, vicino alla finestra.",
-      "Il locale è occupato, dovete aspettare venti minuti.",
-      "Mi dispiace, ma la terrazza è già tutta prenotata.",
-      "Chiamo per confermare il nostro tavolo di questa sera."
+    "choicesItalian": [
+      "\"A nome Rossi. Un tavolo per quattro per le ventuno.\" \"Benissimo, signor Rossi. A stasera!\"",
+      "\"A via Rossi. Una borsa per quattro per le ventuno.\" \"No male, furbi Rossi. A ieri!\"",
+      "\"A cassa Rossi. Una news per quattro per le ventuno.\" \"Vero bene, sordi Rossi. A domani!\"",
+      "\"A porto Rossi. Una gita per quattro per le ventuno.\" \"Rari svelto, saggi Rossi. A mai!\""
     ],
-    "correctAnswer": "Abbiamo un tavolo libero all'interno, vicino alla finestra.",
+    "choicesEnglish": [
+      "\"For Rossi. A table for four at 9 PM.\" \"Excellent, Mr. Rossi. See you tonight!\"",
+      "\"To Rossi street. A bag for four at 9 PM.\" \"Not bad, clever Rossi. See you yesterday!\"",
+      "\"To Rossi register. A news for four at 9 PM.\" \"Very well, deaf Rossi. See you tomorrow!\"",
+      "\"To Rossi port. A trip for four at 9 PM.\" \"Rare quick, wise Rossi. See you never!\""
+    ],
+    "correctAnswerItalian": "\"A nome Rossi. Un tavolo per quattro per le ventuno.\" \"Benissimo, signor Rossi. A stasera!\"",
+    "correctAnswerEnglish": "\"Under Rossi. Table for four at 9:00 PM.\" \"Perfect, Mr. Rossi. We'll see you this evening!\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Abbiamo un tavolo libero all'interno, vicino alla finestra.\"."
+      "correctItalian": "Ottimo! Confermare i dati e chiudere la telefonata con un saluto cordiale.",
+      "incorrectItalian": "No, questa conversazione finalizza l'accordo con il cognome e l'ora ufficiale.",
+      "correctEnglish": "Great! Confirming the details and ending the call with a cordial greeting.",
+      "incorrectEnglish": "No, this conversation finalizes the agreement with the surname and the official time."
     }
   },
   {
-    "id": "s27-s2",
-    "italian": "Potete confermare la prenotazione a nome di Rossi?",
-    "english": "Can you confirm the reservation under the name Rossi?",
+    "id": "s35-s5",
+    "italian": "\"Preferite stare dentro o all'aperto?\" \"Se possibile vorremmo un tavolo fuori, in veranda.\"",
+    "english": "\"Do you (plural) prefer to be inside or outdoors?\" \"If possible we'd like a table outside, on the veranda.\"",
     "type": "sentence",
-    "choices": [
-      "Il locale è occupato, dovete aspettare venti minuti.",
-      "Vorrei prenotare un tavolo per due persone alle otto.",
-      "Potete confermare la prenotazione a nome di Rossi?",
-      "Chiamo per confermare il nostro tavolo di questa sera."
+    "choicesItalian": [
+      "\"Preferite stare dentro o all'aperto?\" \"Se possibile vorremmo un tavolo fuori, in veranda.\"",
+      "\"Volete perdere via o fango?\" \"Se rario vorremmo una borsa fuori, in cassa.\"",
+      "\"Dovete ridere news o bacio?\" \"Se saggio vorremmo una nota fuori, in re.\"",
+      "\"Potete correre gita o porto?\" \"Se svelto vorremmo un tour fuori, in piazza.\""
     ],
-    "correctAnswer": "Potete confermare la prenotazione a nome di Rossi?",
+    "choicesEnglish": [
+      "\"Inside or outside?\" \"If possible, we'd like a table outdoors on the porch.\"",
+      "\"Want to lose street or mud?\" \"If rare we'd like a bag outside, in the register.\"",
+      "\"Must you laugh at news or kiss?\" \"If wise we'd like a note outside, in the king.\"",
+      "\"Can you run trip or port?\" \"If quick we'd like a tour outside, in the square.\""
+    ],
+    "correctAnswerItalian": "\"Preferite stare dentro o all'aperto?\" \"Se possibile vorremmo un tavolo fuori, in veranda.\"",
+    "correctAnswerEnglish": "\"Would you like to sit inside or out?\" \"We'd prefer a table outdoors on the veranda, if possible.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Potete confermare la prenotazione a nome di Rossi?\"."
+      "correctItalian": "Esatto! Esprimere una preferenza di posizionamento per godersi l'esterno.",
+      "incorrectItalian": "No, si parla della scelta tra la sala interna e l'area all'aperto riparata.",
+      "correctEnglish": "Exactly! Expressing a seating preference to enjoy the outdoors.",
+      "incorrectEnglish": "No, it's about choosing between the indoor hall and the sheltered outdoor area."
     }
   },
   {
-    "id": "s27-s4",
-    "italian": "Il locale è occupato, dovete aspettare venti minuti.",
-    "english": "The place is busy, you have to wait twenty minutes.",
+    "id": "s35-s6",
+    "italian": "\"Purtroppo fuori sono già tutti occupati, ma posso mettervi vicino alla finestra.\" \"Va bene lo stesso, grazie.\"",
+    "english": "\"Unfortunately outside they are all taken already, but I can put you near the window.\" \"That's fine anyway, thanks.\"",
     "type": "sentence",
-    "choices": [
-      "Vorrei prenotare un tavolo per due persone alle otto.",
-      "Il locale è occupato, dovete aspettare venti minuti.",
-      "Mi dispiace, ma la terrazza è già tutta prenotata.",
-      "Chiamo per confermare il nostro tavolo di questa sera."
+    "choicesItalian": [
+      "\"Purtroppo fuori sono già tutti occupati, ma posso mettervi vicino alla finestra.\" \"Va bene lo stesso, grazie.\"",
+      "\"Falso dentro sono già tutti finti, ma posso perdervi vicino alla via.\" \"Perde lo sporco, prego.\"",
+      "\"Vero saggio sono già tutti sordi, ma posso ridervi vicino alla news.\" \"Rida il finto, salve.\"",
+      "\"No rari sono già tutti lunghi, ma posso corrervi vicino al porto.\" \"Corra il saggio, ciao.\""
     ],
-    "correctAnswer": "Il locale è occupato, dovete aspettare venti minuti.",
+    "choicesEnglish": [
+      "\"Unfortunately the outdoor tables are full, but I can seat you by the window.\" \"That works, thank you.\"",
+      "\"False inside they are all fake, but I can lose you near the street.\" \"Lose the dirt, please.\"",
+      "\"True wise they are all deaf, but I can laugh at you near the news.\" \"Laugh at the fake, hello.\"",
+      "\"No rare they are all long, but I can run you near the port.\" \"Run the wise, bye.\""
+    ],
+    "correctAnswerItalian": "\"Purtroppo fuori sono già tutti occupati, ma posso mettervi vicino alla finestra.\" \"Va bene lo stesso, grazie.\"",
+    "correctAnswerEnglish": "\"I'm afraid the outdoor tables are all taken, but I can seat you right by the window.\" \"That's fine; thank you anyway.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Il locale è occupato, dovete aspettare venti minuti.\"."
+      "correctItalian": "Giusto! Accettare un compromesso di posizionamento quando la prima scelta non è disponibile.",
+      "incorrectItalian": "No, il cliente accetta un tavolo interno che offre comunque una buona vista.",
+      "correctEnglish": "Right! Accepting a seating compromise when the first choice is unavailable.",
+      "incorrectEnglish": "No, the customer accepts an indoor table that still offers a good view."
+    }
+  },
+  {
+    "id": "s35-s7",
+    "italian": "\"Siamo in cinque adulti e un bambino, avete bisogno di un seggiolone?\" \"Sì, grazie. E se possibile un tavolo in un angolo, più tranquillo.\"",
+    "english": "\"We are five adults and a child, do you (plural) need a high chair?\" \"Yes, thanks. And if possible a table in a corner, quieter.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo in cinque adulti e un bambino, avete bisogno di un seggiolone?\" \"Sì, grazie. E se possibile un tavolo in un angolo, più tranquillo.\"",
+      "\"Perdiamo in cinque borse e un fango, avete voglia di un fischio?\" \"No rari. E se sporco una via in un porto, più caro.\"",
+      "\"Ridiamo in cinque news e un bacio, avete news di una nota?\" \"Vero bene. E se finto un re in un bacio, più sordo.\"",
+      "\"Corriamo in cinque gite e un tour, avete porto di una piazza?\" \"Saggio svelto. E se lungo un tour in un saggio, più saggio.\""
+    ],
+    "choicesEnglish": [
+      "\"Five adults and a kid; do you need a high chair?\" \"Yes, please. And a corner table if possible, somewhere quiet.\"",
+      "\"We lose in five bags and a mud, do you want a whistle?\" \"No rare. And if I dirty a street in a port, more expensive.\"",
+      "\"We laugh in five news and a kiss, have news of a note?\" \"Very well. And if I fake a king in a kiss, deafer.\"",
+      "\"We run in five trips and a tour, have port of a square?\" \"Wise quick. And if I long a tour in a wise, wiser.\""
+    ],
+    "correctAnswerItalian": "\"Siamo in cinque adulti e un bambino, avete bisogno di un seggiolone?\" \"Sì, grazie. E se possibile un tavolo in un angolo, più tranquillo.\"",
+    "correctAnswerEnglish": "\"There are five adults and one child; will you be needing a high chair?\" \"Yes, please. And if possible, a corner table so it's a bit quieter.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire le necessità di una famiglia e richiedere un ambiente adatto.",
+      "incorrectItalian": "No, questa conversazione coordina l'uso del seggiolone e la preferenza per un posto isolato.",
+      "correctEnglish": "Great! Managing a family's needs and requesting a suitable environment.",
+      "incorrectEnglish": "No, this conversation coordinates high chair use and the preference for an isolated spot."
+    }
+  },
+  {
+    "id": "s35-s8",
+    "italian": "\"Ci sono allergie o intolleranze?\" \"Sì, una persona è celiaca, avremmo bisogno di opzioni senza glutine.\"",
+    "english": "\"Are there allergies or intolerances?\" \"Yes, one person is celiac, we would need gluten-free options.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ci sono allergie o intolleranze?\" \"Sì, una persona è celiaca, avremmo bisogno di opzioni senza glutine.\"",
+      "\"Ci sono borse o vie?\" \"No, una cassa è sporca, avremmo perdita di fango senza via.\"",
+      "\"Ci sono news o baci?\" \"Sì, una nota è finta, avremmo risata di news senza re.\"",
+      "\"Ci sono porti o piazze?\" \"No, un tour è lungo, avremmo corsa di gita senza porto.\""
+    ],
+    "choicesEnglish": [
+      "\"Any allergies or intolerances?\" \"Yes, one person is celiac, we'd need gluten-free choices.\"",
+      "\"Are there bags or streets?\" \"No, one register is dirty, we'd have mud loss without a street.\"",
+      "\"Are there news or kisses?\" \"Yes, one note is fake, we'd have a news laugh without a king.\"",
+      "\"Are there ports or squares?\" \"No, one tour is long, we'd have a trip run without a port.\""
+    ],
+    "correctAnswerItalian": "\"Ci sono allergie o intolleranze?\" \"Sì, una persona è celiaca, avremmo bisogno di opzioni senza glutine.\"",
+    "correctAnswerEnglish": "\"Are there any allergies or intolerances?\" \"Yes, one person in our party is celiac; we'll need some gluten-free options.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Comunicare requisiti sanitari fondamentali per la preparazione dei piatti.",
+      "incorrectItalian": "No, si parla della necessità di un menù sicuro per chi non può mangiare glutine.",
+      "correctEnglish": "Exactly! Communicating fundamental health requirements for dish preparation.",
+      "incorrectEnglish": "No, it's about the need for a safe menu for those who cannot eat gluten."
+    }
+  },
+  {
+    "id": "s35-s9",
+    "italian": "\"Certamente, la nostra cucina è attrezzata e segno tutto.\" \"Grazie mille per l'attenzione.\"",
+    "english": "\"Certainly, our kitchen is equipped and I'll mark (note) everything.\" \"Thanks a lot for the attention.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Certamente, la nostra cucina è attrezzata e segno tutto.\" \"Grazie mille per l'attenzione.\"",
+      "\"Falsamente, la nostra via è sporca e perdo tutto.\" \"Prego rari per lo sporco.\"",
+      "\"Vero saggio, la nostra news è finta e rido tutto.\" \"Salve finto per la news.\"",
+      "\"Raramente, il nostro porto è lungo e corro tutto.\" \"Ciao svelto per il porto.\""
+    ],
+    "choicesEnglish": [
+      "\"Certainly, our kitchen is set up and I'm noting it all down.\" \"Thank you very much for the attention.\"",
+      "\"Falsely, our street is dirty and I lose everything.\" \"You're welcome rare for the dirt.\"",
+      "\"True wise, our news is fake and I laugh at everything.\" \"Hello fake for the news.\"",
+      "\"Rarely, our port is long and I run everything.\" \"Bye quick for the port.\""
+    ],
+    "correctAnswerItalian": "\"Certamente, la nostra cucina è attrezzata e segno tutto.\" \"Grazie mille per l'attenzione.\"",
+    "correctAnswerEnglish": "\"Of course; our kitchen is fully set up for that, and I'll make a note of it.\" \"Thank you so much for the care.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Ricevere rassicurazioni professionali sulla gestione delle allergie.",
+      "incorrectItalian": "No, lo staff conferma di poter soddisfare la richiesta e il cliente ringrazia.",
+      "correctEnglish": "Right! Receiving professional reassurances on allergy management.",
+      "incorrectEnglish": "No, the staff confirms being able to satisfy the request and the customer thanks them."
+    }
+  },
+  {
+    "id": "s35-s10",
+    "italian": "\"Chiamo per spostare una prenotazione a nome Bianchi per stasera.\" \"Invece che per le otto, potremmo venire alle nove?\"",
+    "english": "\"I'm calling to move a reservation under the name Bianchi for tonight.\" \"Instead of for eight, could we come at nine?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Chiamo per spostare una prenotazione a nome Bianchi per stasera.\" \"Invece che per le otto, potremmo venire alle nove?\"",
+      "\"Chiamo per perdere una via a nome Rossi per la cassa.\" \"Dopo che per le otto, potremmo sporcare alle nove?\"",
+      "\"Chiamo per ridere una news a nome Verdi per il re.\" \"Prima che per le otto, potremmo finto alle nove?\"",
+      "\"Chiamo per correre una gita a nome Neri per il porto.\" \"Subito che per le otto, potremmo saggio alle nove?\""
+    ],
+    "choicesEnglish": [
+      "\"I'm calling to change a reservation for Bianchi tonight.\" \"Could we come at nine instead of eight?\"",
+      "\"I'm calling to lose a street for Rossi for the register.\" \"After eight, could we dirty at nine?\"",
+      "\"I'm calling to laugh at a news for Verdi for the king.\" \"Before eight, could we fake at nine?\"",
+      "\"I'm calling to run a trip for Neri for the port.\" \"Immediately after eight, could we wise at nine?\""
+    ],
+    "correctAnswerItalian": "\"Chiamo per spostare una prenotazione a nome Bianchi per stasera.\" \"Invece che per le otto, potremmo venire alle nove?\"",
+    "correctAnswerEnglish": "\"I'm calling to reschedule a reservation for the Bianchi party tonight.\" \"Would it be possible to come at nine instead of eight?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere una variazione di orario per una prenotazione esistente.",
+      "incorrectItalian": "No, il cliente vuole posticipare l'arrivo al ristorante di un'ora.",
+      "correctEnglish": "Great! Asking for a time variation for an existing reservation.",
+      "incorrectEnglish": "No, the customer wants to postpone the arrival at the restaurant by one hour."
+    }
+  },
+  {
+    "id": "s35-s11",
+    "italian": "\"Saremo in sei invece di quattro, ha un tavolo più grande?\" \"Un attimo che controllo... sì, sposto subito la vostra prenotazione.\"",
+    "english": "\"We will be six instead of four, do you have a larger table?\" \"Just a second while I check... yes, I'll move your reservation immediately.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Saremo in sei invece di quattro, ha un tavolo più grande?\" \"Un attimo che controllo... sì, sposto subito la vostra prenotazione.\"",
+      "\"Perderemo in sei invece di quattro, ha una via più sporca?\" \"Un'ora che perdo... no, chiamo subito la vostra borsa.\"",
+      "\"Rideremo in sei invece di quattro, ha una news più finta?\" \"Un bacio che rido... sì, vedi subito la vostra nota.\"",
+      "\"Correremo in sei invece di quattro, ha una gita più lunga?\" \"Un tour che corro... no, taci subito il vostro porto.\""
+    ],
+    "choicesEnglish": [
+      "\"There will be six rather than four; is there a bigger table?\" \"Wait a second while I check... yes, I'll move your booking now.\"",
+      "\"We'll lose in six instead of four, have a dirtier street?\" \"An hour that I lose... no, I'll call your bag now.\"",
+      "\"We'll laugh in six instead of four, have a faker news?\" \"A kiss that I laugh... yes, see your note now.\"",
+      "\"We'll run in six instead of four, have a longer trip?\" \"A tour that I run... no, silence your port now.\""
+    ],
+    "correctAnswerItalian": "\"Saremo in sei invece di quattro, ha un tavolo più grande?\" \"Un attimo che controllo... sì, sposto subito la vostra prenotazione.\"",
+    "correctAnswerEnglish": "\"There'll be six of us instead of four; do you have a larger table available?\" \"Let me check just a moment... yes, I'll update your reservation right now.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Gestire l'aggiunta di persone e la ricerca di uno spazio adeguato.",
+      "incorrectItalian": "No, si parla dell'aumento del numero di ospiti e della conferma della disponibilità.",
+      "correctEnglish": "Exactly! Managing the addition of people and searching for adequate space.",
+      "incorrectEnglish": "No, it's about increasing the number of guests and confirming availability."
+    }
+  },
+  {
+    "id": "s35-s12",
+    "italian": "\"Buonasera, abbiamo una prenotazione per le otto e mezza a nome Ferrari.\" \"Buonasera. Ferrari per quattro persone, il vostro tavolo è pronto.\"",
+    "english": "\"Good evening, we have a reservation for eight-thirty under the name Ferrari.\" \"Good evening. Ferrari for four people, your table is ready.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Buonasera, abbiamo una prenotazione per le otto e mezza a nome Ferrari.\" \"Buonasera. Ferrari per quattro persone, il vostro tavolo è pronto.\"",
+      "\"Ciao, abbiamo una via sporca per le otto borse a via Ferrari.\" \"No male. Ferrari per quattro fanghi, la vostra cassa è raria.\"",
+      "\"Salve, abbiamo una news finta per le otto note a re Ferrari.\" \"Vero bene. Ferrari per quattro baci, la vostra nota è finta.\"",
+      "\"Buongiorno, abbiamo una gita saggia per le otto gite a porto Ferrari.\" \"Rari svelto. Ferrari per quattro tour, il vostro porto è saggio.\""
+    ],
+    "choicesEnglish": [
+      "\"Good evening, we've got a reservation for 8:30 for Ferrari.\" \"Good evening. Ferrari, party of four, your table is all set.\"",
+      "\"Hi, we have a dirty street for the eight bags at Ferrari street.\" \"Not bad. Ferrari for four muds, your register is rare.\"",
+      "\"Hello, we have a fake news for the eight notes for King Ferrari.\" \"Very well. Ferrari for four kisses, your note is fake.\"",
+      "\"Good morning, we have a wise trip for the eight trips to Port Ferrari.\" \"Rare quick. Ferrari for four tours, your port is wise.\""
+    ],
+    "correctAnswerItalian": "\"Buonasera, abbiamo una prenotazione per le otto e mezza a nome Ferrari.\" \"Buonasera. Ferrari per quattro persone, il vostro tavolo è pronto.\"",
+    "correctAnswerEnglish": "\"Good evening, we have a reservation for 8:30 under the name Ferrari.\" \"Good evening. Ferrari, party of four; your table is ready.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Presentarsi al ristorante e ricevere la conferma dell'accoglienza.",
+      "incorrectItalian": "No, questa conversazione mostra l'arrivo dei clienti e la disponibilità immediata del tavolo.",
+      "correctEnglish": "Right! Showing up at the restaurant and receiving confirmation of the welcome.",
+      "incorrectEnglish": "No, this conversation shows the customers' arrival and the table's immediate availability."
+    }
+  },
+  {
+    "id": "s35-s13",
+    "italian": "\"Seguitemi pure, il tavolo è da questa parte.\" \"Grazie. Possiamo lasciare i cappotti all'ingresso?\"",
+    "english": "\"Please follow me, the table is this way.\" \"Thanks. Can we leave the coats at the entrance?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Seguitemi pure, il tavolo è da questa parte.\" \"Grazie. Possiamo lasciare i cappotti all'ingresso?\"",
+      "\"Perdetemi svelto, la via è da quel porto.\" \"Prego. Possiamo perdere le borse alla cassa?\"",
+      "\"Ridetemi rari, la news è da quel re.\" \"Salve. Possiamo ridere i baci alla news?\"",
+      "\"Corretemi sordo, la gita è da quel tour.\" \"Ciao. Possiamo correre i tour alla gita?\""
+    ],
+    "choicesEnglish": [
+      "\"Follow me, the table is over here.\" \"Thanks. Can we leave our coats at the entrance?\"",
+      "\"Lose me quickly, the street is from that port.\" \"You're welcome. Can we lose the bags at the register?\"",
+      "\"Laugh at me rarely, the news is from that king.\" \"Hello. Can we laugh at the kisses in the news?\"",
+      "\"Run to me deafly, the trip is from that tour.\" \"Bye. Can we run the tours on the trip?\""
+    ],
+    "correctAnswerItalian": "\"Seguitemi pure, il tavolo è da questa parte.\" \"Grazie. Possiamo lasciare i cappotti all'ingresso?\"",
+    "correctAnswerEnglish": "\"Follow me, please; your table is this way.\" \"Thank you. May we leave our coats at the entrance?\"",
+    "feedback": {
+      "correctItalian": "Esatto! Accompagnare gli ospiti e gestire i bagagli o vestiti ingombranti.",
+      "incorrectItalian": "No, il cameriere guida il gruppo e il cliente chiede del guardaroba.",
+      "correctEnglish": "Exactly! Escorting guests and managing bulky luggage or clothing.",
+      "incorrectEnglish": "No, the waiter leads the group and the customer asks about the cloakroom."
+    }
+  },
+  {
+    "id": "s35-s14",
+    "italian": "\"Certamente, ve li prendo io e li metto nel guardaroba.\" \"Molto gentile, a presto al tavolo allora.\"",
+    "english": "\"Certainly, I'll take them (for you) and put them in the cloakroom.\" \"Very kind, see you soon at the table then.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Certamente, ve li prendo io e li metto nel guardaroba.\" \"Molto gentile, a presto al tavolo allora.\"",
+      "\"Falsamente, te li perdo io e li metto nella cassa.\" \"Assai caro, a mai alla via allora.\"",
+      "\"Vero saggio, ce li rido io e li metto nella news.\" \"Troppo finto, a ieri alla nota allora.\"",
+      "\"Raramente, vi li corro io e li metto nel porto.\" \"Molto saggio, a domani alla gita allora.\""
+    ],
+    "choicesEnglish": [
+      "\"Certainly, I'll take them and put them in the cloakroom.\" \"Very kind, see you at the table shortly.\"",
+      "\"Falsely, I'll lose them and put them in the register.\" \"Very expensive, see you never on the street then.\"",
+      "\"True wise, I'll laugh them off and put them in the news.\" \"Too fake, see you yesterday at the note then.\"",
+      "\"Rarely, I'll run them and put them in the port.\" \"Very wise, see you tomorrow on the trip then.\""
+    ],
+    "correctAnswerItalian": "\"Certamente, ve li prendo io e li metto nel guardaroba.\" \"Molto gentile, a presto al tavolo allora.\"",
+    "correctAnswerEnglish": "\"Of course; I'll take those and put them in the cloakroom for you.\" \"That's very kind; see you at the table in a bit then.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Completare il servizio di accoglienza con la sistemazione dei cappotti.",
+      "incorrectItalian": "No, questa conversazione suggella il momento dell'ingresso prima di sedersi.",
+      "correctEnglish": "Right! Completing the welcome service with the coat storage.",
+      "incorrectEnglish": "No, this conversation seals the entrance moment before sitting down."
+    }
+  },
+  {
+    "id": "s35-s15",
+    "italian": "\"Buonasera, avete un tavolo per due persone? Non abbiamo prenotato.\" \"Buonasera. Al momento siamo pieni, purtroppo.\"",
+    "english": "\"Good evening, do you (plural) have a table for two people? We haven't booked.\" \"Good evening. At the moment we are full, unfortunately.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Buonasera, avete un tavolo per due persone? Non abbiamo prenotato.\" \"Buonasera. Al momento siamo pieni, purtroppo.\"",
+      "\"Ciao, avete una borsa per due vie? Non abbiamo perso.\" \"No male. Al saggio siamo sporchi, rari.\"",
+      "\"Salve, avete una news per due baci? Non abbiamo riso.\" \"Vero bene. Al porto siamo finti, sordo.\"",
+      "\"Buongiorno, avete una gita per due tour? Non abbiamo corso.\" \"Rari svelto. Al re siamo sordi, saggio.\""
+    ],
+    "choicesEnglish": [
+      "\"Good evening, have you a table for two? We didn't book.\" \"Good evening. We are full now, unfortunately.\"",
+      "\"Hi, have you a bag for two streets? We didn't lose.\" \"Not bad. At the wise we're dirty, rare.\"",
+      "\"Hello, have you a news for two kisses? We didn't laugh.\" \"Very well. At the port we're fake, deaf.\"",
+      "\"Good morning, have you a trip for two tours? We didn't run.\" \"Rare quick. At the king we're deaf, wise.\""
+    ],
+    "correctAnswerItalian": "\"Buonasera, avete un tavolo per due persone? Non abbiamo prenotato.\" \"Buonasera. Al momento siamo pieni, purtroppo.\"",
+    "correctAnswerEnglish": "\"Good evening; do you have a table for two? We don't have a reservation.\" \"Good evening. I'm afraid we're fully booked at the moment.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire l'arrivo imprevisto in un locale affollato.",
+      "incorrectItalian": "No, i clienti cercano posto senza prenotazione e ricevono una risposta negativa immediata.",
+      "correctEnglish": "Great! Managing an unexpected arrival in a crowded venue.",
+      "incorrectEnglish": "No, the customers look for a spot without a reservation and receive an immediate negative answer."
+    }
+  },
+  {
+    "id": "s35-s16",
+    "italian": "\"Se volete aspettare una decina di minuti si dovrebbe liberare un tavolo.\" \"Va bene, possiamo aspettare al bar nel frattempo?\"",
+    "english": "\"If you (plural) want to wait about ten minutes a table should become free.\" \"Alright, can we wait at the bar in the meantime?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Se volete aspettare una decina di minuti si dovrebbe liberare un tavolo.\" \"Va bene, possiamo aspettare al bar nel frattempo?\"",
+      "\"Se dovete perdere un'ora di via si vorrebbe sporcare una borsa.\" \"No male, possiamo perdere alla cassa dopo via?\"",
+      "\"Se potete ridere dieci baci di news si potrebbe finto un re.\" \"Vero bene, possiamo ridere alla nota prima news?\"",
+      "\"Se volete correre cento tour di gita si andrebbe saggio un porto.\" \"Rari rari, possiamo correre alla torre mai porto?\""
+    ],
+    "choicesEnglish": [
+      "\"If you want to wait ten minutes a table should open up.\" \"Okay, can we wait at the bar meanwhile?\"",
+      "\"If you must lose a street hour one would like to dirty a bag.\" \"Not bad, can we lose at the register after the street?\"",
+      "\"If you can laugh at ten news kisses one could fake a king.\" \"Very well, can we laugh at the note before the news?\"",
+      "\"If you want to run a hundred trip tours one would wisely go to a port.\" \"Rare rare, can we run to the tower never port?\""
+    ],
+    "correctAnswerItalian": "\"Se volete aspettare una decina di minuti si dovrebbe liberare un tavolo.\" \"Va bene, possiamo aspettare al bar nel frattempo?\"",
+    "correctAnswerEnglish": "\"If you don't mind waiting about ten minutes, a table should be opening up.\" \"That's fine; could we wait at the bar in the meantime?\"",
+    "feedback": {
+      "correctItalian": "Esatto! Accettare un breve ritardo e proporre una sosta nell'area d'attesa.",
+      "incorrectItalian": "No, si parla della previsione di disponibilità a breve e della scelta del bar come zona di sosta.",
+      "correctEnglish": "Exactly! Accepting a short delay and proposing a stay in the waiting area.",
+      "incorrectEnglish": "No, it's about the short-term availability forecast and choosing the bar as a waiting area."
+    }
+  },
+  {
+    "id": "s35-s17",
+    "italian": "\"Certo, vi chiamo io appena è pronto. Volete ordinare qualcosa da bere?\" \"Prendiamo due prosecco, grazie mille.\"",
+    "english": "\"Sure, I'll call you as soon as it's ready. Do you want to order something to drink?\" \"We'll have two prosecco, thanks a lot.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Certo, vi chiamo io appena è pronto. Volete ordinare qualcosa da bere?\" \"Prendiamo due prosecco, grazie mille.\"",
+      "\"No, te perdo io appena è sporco. Volete perdere qualcosa da via?\" \"Perdiamo due borse, prego rari.\"",
+      "\"Vero, ce rido io appena è finto. Volete ridere qualcosa da news?\" \"Ridiamo due baci, salve finto.\"",
+      "\"Rari, ci corro io appena è saggio. Volete correre qualcosa da porto?\" \"Corriamo due tour, ciao svelto.\""
+    ],
+    "choicesEnglish": [
+      "\"Sure, I'll call you when it's ready. Want a drink?\" \"We'll have two proseccos, thanks.\"",
+      "\"No, I'll lose you as soon as it's dirty. Want to lose something on the street?\" \"We lose two bags, you're welcome rare.\"",
+      "\"True, I'll laugh at you as soon as it's fake. Want to laugh at something in the news?\" \"We laugh at two kisses, hello fake.\"",
+      "\"Rare, I'll run to you as soon as it's wise. Want to run something in the port?\" \"We run two tours, bye quick.\""
+    ],
+    "correctAnswerItalian": "\"Certo, vi chiamo io appena è pronto. Volete ordinare qualcosa da bere?\" \"Prendiamo due prosecco, grazie mille.\"",
+    "correctAnswerEnglish": "\"Of course, I'll come get you as soon as it's all set. Would you like to order a drink?\" \"We'll have two glasses of prosecco, thank you.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Trasformare l'attesa in un momento di aperitivo al bar.",
+      "incorrectItalian": "No, il personale offre un servizio al bar mentre il tavolo viene liberato.",
+      "correctEnglish": "Right! Turning the wait into an aperitif moment at the bar.",
+      "incorrectEnglish": "No, the staff offers bar service while the table is being cleared."
+    }
+  },
+  {
+    "id": "s35-s18",
+    "italian": "\"Mi dispiace, ma devo disdire la prenotazione per stasera alle venti.\" \"Nessun problema, la ringrazio per aver avvisato per tempo.\"",
+    "english": "\"I'm sorry, but I have to cancel the reservation for tonight at eight PM.\" \"No problem, I thank you for having notified (us) in time.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi dispiace, ma devo disdire la prenotazione per stasera alle venti.\" \"Nessun problema, la ringrazio per aver avvisato per tempo.\"",
+      "\"Mi chiami, ma devo perdere la via per la cassa alle venti.\" \"Nessun fango, la perdo per aver chiamato per via.\"",
+      "\"Mi ridi, ma devo ridere la news per il re alle venti.\" \"Nessuna nota, la rido per aver visto per news.\"",
+      "\"Mi tacci, ma devo correre la gita per il porto alle venti.\" \"Nessun porto, la corro per aver taciuto per gita.\""
+    ],
+    "choicesEnglish": [
+      "\"I'm sorry, but I must cancel the booking for 8 PM tonight.\" \"No problem, thanks for letting us know in time.\"",
+      "\"Call me, but I must lose the street for the register at eight.\" \"No mud, I lose her for calling for the street.\"",
+      "\"Laugh at me, but I must laugh at the news for the king at eight.\" \"No note, I laugh at her for seeing for news.\"",
+      "\"Silence me, but I must run the trip for the port at eight.\" \"No port, I run her for being silent for trip.\""
+    ],
+    "correctAnswerItalian": "\"Mi dispiace, ma devo disdire la prenotazione per stasera alle venti.\" \"Nessun problema, la ringrazio per aver avvisato per tempo.\"",
+    "correctAnswerEnglish": "\"I'm afraid I have to cancel our reservation for eight o'clock tonight.\" \"That's no problem at all; thank you for giving us advanced notice.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Gestire la cancellazione corretta di un tavolo riservato.",
+      "incorrectItalian": "No, il cliente annulla l'impegno e riceve una risposta di apprezzamento per la comunicazione tempestiva.",
+      "correctEnglish": "Exactly! Managing the correct cancellation of a reserved table.",
+      "incorrectEnglish": "No, the customer cancels the commitment and receives a response of appreciation for timely communication."
+    }
+  },
+  {
+    "id": "s35-s19",
+    "italian": "\"Siamo in sette, ha un tavolo tondo così possiamo parlare meglio?\" \"Sì, per gruppi numerosi abbiamo proprio un grande tavolo rotondo in fondo.\"",
+    "english": "\"There are seven of us, do you have a round table so we can talk better?\" \"Yes, for large groups we have a large round table at the back.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo in sette, ha un tavolo tondo così possiamo parlare meglio?\" \"Sì, per gruppi numerosi abbiamo proprio un grande tavolo rotondo in fondo.\"",
+      "\"Perdiamo in sette, ha una via sporca così possiamo perdere meglio?\" \"No, per borse rarie abbiamo proprio un fango saggio in via.\"",
+      "\"Ridiamo in sette, ha una news finta così possiamo ridere meglio?\" \"Sì, per baci sordi abbiamo proprio una nota raria in news.\"",
+      "\"Corriamo in sette, ha una gita lunga così possiamo correre meglio?\" \"No, per tour lunghi abbiamo proprio una piazza saggia in porto.\""
+    ],
+    "choicesEnglish": [
+      "\"We are seven, do you have a round table to talk better?\" \"Yes, for big groups we have a large round table in the back.\"",
+      "\"We lose in seven, have a dirty street to lose better?\" \"No, for rare bags we have a wise mud in the street.\"",
+      "\"We laugh in seven, have a fake news to laugh better?\" \"Yes, for deaf kisses we have a rare note in news.\"",
+      "\"We run in seven, have a long trip to run better?\" \"No, for long tours we have a wise square in port.\""
+    ],
+    "correctAnswerItalian": "\"Siamo in sette, ha un tavolo tondo così possiamo parlare meglio?\" \"Sì, per gruppi numerosi abbiamo proprio un grande tavolo rotondo in fondo.\"",
+    "correctAnswerEnglish": "\"There are seven of us; do you have a round table so it's easier for us to chat?\" \"Yes, for larger groups we have a nice big round table right at the back.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere una disposizione specifica del tavolo per favorire la convivialità.",
+      "incorrectItalian": "No, si parla della preferenza per una forma del tavolo che permetta a tutti di vedersi.",
+      "correctEnglish": "Right! Asking for a specific table arrangement to favor conviviality.",
+      "incorrectEnglish": "No, it's about the preference for a table shape that allows everyone to see each other."
+    }
+  },
+  {
+    "id": "s35-s20",
+    "italian": "\"Devo compilare qualche modulo per la prenotazione online?\" \"Sì, sul nostro sito trova una scheda semplice da completare.\"",
+    "english": "\"Must I fill out some form for the online booking?\" \"Yes, on our site you (singular polite) find a simple form to complete.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Devo compilare qualche modulo per la prenotazione online?\" \"Sì, sul nostro sito trova una scheda semplice da completare.\"",
+      "\"Devo perdere qualche via per la borsa sporca?\" \"No, sulla nostra cassa perdi un fango rari da chiamare.\"",
+      "\"Devo ridere qualche news per la nota finta?\" \"Sì, sulla nostra news vedi un bacio sordo da ridere.\"",
+      "\"Devo correre qualche gita per il porto saggio?\" \"No, sulla nostra piazza taci un tour lungo da correre.\""
+    ],
+    "choicesEnglish": [
+      "\"Should I fill out a form for online booking?\" \"Yes, on our website you'll find a simple form to fill in.\"",
+      "\"Must I lose some street for the dirty bag?\" \"No, at our register you lose a rare mud to call.\"",
+      "\"Must I laugh at some news for the fake note?\" \"Yes, in our news you see a deaf kiss to laugh at.\"",
+      "\"Must I run some trip for the wise port?\" \"No, in our square you silence a long tour to run.\""
+    ],
+    "correctAnswerItalian": "\"Devo compilare qualche modulo per la prenotazione online?\" \"Sì, sul nostro sito trova una scheda semplice da completare.\"",
+    "correctAnswerEnglish": "\"Do I need to fill out any forms for an online reservation?\" \"Yes; you'll find a simple form to complete on our website.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedere istruzioni sulle procedure digitali di riservazione.",
+      "incorrectItalian": "No, si parla del metodo per riservare un tavolo tramite internet.",
+      "correctEnglish": "Exactly! Asking for instructions on digital reservation procedures.",
+      "incorrectEnglish": "No, it's about the method for reserving a table via internet."
+    }
+  },
+  {
+    "id": "s35-s21",
+    "italian": "\"Buongiorno, vorrei un tavolo per due per domani a pranzo.\" \"Certamente. Preferite stare dentro o all'aperto?\"",
+    "english": "\"Good morning, I'd like a table for two for tomorrow at lunch.\" \"Certainly. Do you (plural) prefer to be inside or outdoors?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Buongiorno, vorrei un tavolo per due per domani a pranzo.\" \"Certamente. Preferite stare dentro o all'aperto?\"",
+      "\"Ciao, vorrei una borsa per due vie per ieri a cassa.\" \"No male. Perdete borsa dentro o al fango?\"",
+      "\"Salve, vorrei una news per due baci per ora a re.\" \"Vero bene. Ridete news dentro o al finto?\"",
+      "\"Buongiorno, vorrei una gita per due tour per mai a porto.\" \"Rari svelto. Correte gita dentro o al saggio?\""
+    ],
+    "choicesEnglish": [
+      "\"Good morning, I'd like a table for two for lunch tomorrow.\" \"Certainly. Indoors or outdoors?\"",
+      "\"Hi, I'd like a bag for two streets for yesterday at the register.\" \"Not bad. Do you lose the bag inside or in the mud?\"",
+      "\"Hello, I'd like a news for two kisses for now for the king.\" \"Very well. Do you laugh at the news inside or at the fake?\"",
+      "\"Good morning, I'd like a trip for two tours for never at the port.\" \"Rare quick. Do you run the trip inside or at the wise?\""
+    ],
+    "correctAnswerItalian": "\"Buongiorno, vorrei un tavolo per due per domani a pranzo.\" \"Certamente. Preferite stare dentro o all'aperto?\"",
+    "correctAnswerEnglish": "\"Good morning; I'd like to book a table for two for lunch tomorrow.\" \"Certainly. Would you prefer a table inside or outdoors?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Prenotare un pasto diurno e scegliere l'ambiente.",
+      "incorrectItalian": "No, la conversazione fissa un pranzo per due persone offrendo la scelta della zona.",
+      "correctEnglish": "Great! Booking a daytime meal and choosing the setting.",
+      "incorrectEnglish": "No, the conversation sets a lunch for two people offering the choice of area."
+    }
+  },
+  {
+    "id": "s35-s22",
+    "italian": "\"Se possibile vorremmo un tavolo fuori, in veranda.\" \"Purtroppo fuori sono già tutti occupati.\"",
+    "english": "\"If possible we would like a table outside, on the veranda.\" \"Unfortunately outside they are all occupied already.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Se possibile vorremmo un tavolo fuori, in veranda.\" \"Purtroppo fuori sono già tutti occupati.\"",
+      "\"Se rario vorremmo una borsa fuori, in via.\" \"Caro fango fuori sono già tutti rari.\"",
+      "\"Se saggio vorremmo un bacio fuori, in re.\" \"Vero bacio fuori sono già tutti finti.\"",
+      "\"Se svelto vorremmo un tour fuori, in porto.\" \"Rari porto fuori sono già tutti saggi.\""
+    ],
+    "choicesEnglish": [
+      "\"If possible we'd like a table outside, on the veranda.\" \"Unfortunately the outdoor ones are all taken.\"",
+      "\"If rare we'd like a bag outside, in the street.\" \"Dear mud outside they are all rare.\"",
+      "\"If wise we'd like a kiss outside, in the king.\" \"True kiss outside they are all fake.\"",
+      "\"If quick we'd like a tour outside, in the port.\" \"Rare port outside they are all wise.\""
+    ],
+    "correctAnswerItalian": "\"Se possibile vorremmo un tavolo fuori, in veranda.\" \"Purtroppo fuori sono già tutti occupati.\"",
+    "correctAnswerEnglish": "\"We'd prefer a table outside on the veranda if one is available.\" \"I'm afraid all the outdoor tables are taken already.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Esprimere un desiderio e ricevere un diniego per mancanza di spazio.",
+      "incorrectItalian": "No, i clienti chiedono di stare all'aperto ma il ristorante è pieno nella zona esterna.",
+      "correctEnglish": "Right! Expressing a wish and receiving a refusal due to lack of space.",
+      "incorrectEnglish": "No, the customers ask to be outdoors but the restaurant is full in the outdoor area."
+    }
+  },
+  {
+    "id": "s35-s23",
+    "italian": "\"Posso mettervi vicino alla finestra?\" \"Va bene lo stesso, grazie.\"",
+    "english": "\"Can I put you (plural) near the window?\" \"That's fine anyway, thanks.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso mettervi vicino alla finestra?\" \"Va bene lo stesso, grazie.\"",
+      "\"Posso perdervi vicino alla via?\" \"Perde lo sporco, prego.\"",
+      "\"Posso ridervi vicino alla news?\" \"Rida il finto, salve.\"",
+      "\"Posso corrervi vicino al porto?\" \"Corra il saggio, ciao.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I seat you near the window?\" \"That'll be fine, thank you.\"",
+      "\"Can I lose you near the street?\" \"Lose the dirt, please.\"",
+      "\"Can I laugh at you near the news?\" \"Laugh at the fake, hello.\"",
+      "\"Can I run you near the port?\" \"Run the wise, bye.\""
+    ],
+    "correctAnswerItalian": "\"Posso mettervi vicino alla finestra?\" \"Va bene lo stesso, grazie.\"",
+    "correctAnswerEnglish": "\"How about a table near the window?\" \"That works just as well, thank you.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Accettare la proposta alternativa del cameriere.",
+      "incorrectItalian": "No, il personale offre un'ottima posizione interna e il cliente acconsente.",
+      "correctEnglish": "Exactly! Accepting the waiter's alternative proposal.",
+      "incorrectEnglish": "No, the staff offers a great indoor position and the customer agrees."
+    }
+  },
+  {
+    "id": "s35-s24",
+    "italian": "\"Vorrei prenotare per sabato sera alle venti, siamo in sei.\" \"Va bene. Avete bisogno di un seggiolone?\"",
+    "english": "\"I would like to book for Saturday night at eight PM, we are six.\" \"Alright. Do you (plural) need a high chair?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Vorrei prenotare per sabato sera alle venti, siamo in sei.\" \"Va bene. Avete bisogno di un seggiolone?\"",
+      "\"Vorrei perdere per via raria alle venti, siamo in borsa.\" \"Caro fango. Avete voglia di un fischio?\"",
+      "\"Vorrei ridere per news finta alle venti, siamo in re.\" \"Vero bene. Avete news di una nota?\"",
+      "\"Vorrei correre per gita lunga alle venti, siamo in porto.\" \"Rari svelto. Avete porto di una piazza?\""
+    ],
+    "choicesEnglish": [
+      "\"I'd like to book for Saturday at 8:00 PM; there are six of us.\" \"Okay. Will you need a high chair?\"",
+      "\"I'd like to lose by rare street at eight, we are in bag.\" \"Dear mud. Do you want a whistle?\"",
+      "\"I'd like to laugh at fake news at eight, we are in king.\" \"Very well. Have you news of a note?\"",
+      "\"I'd like to run for long trip at eight, we are in port.\" \"Rare quick. Have you port of a square?\""
+    ],
+    "correctAnswerItalian": "\"Vorrei prenotare per sabato sera alle venti, siamo in sei.\" \"Va bene. Avete bisogno di un seggiolone?\"",
+    "correctAnswerEnglish": "\"I'd like to book a table for Saturday night at eight; there'll be six of us.\" \"Got it. Will you be needing a high chair?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire una prenotazione di gruppo con attenzione ai dettagli per bambini.",
+      "incorrectItalian": "No, si parla di una cena di sei persone e della necessità di attrezzatura per infanzia.",
+      "correctEnglish": "Great! Managing a group booking with attention to details for children.",
+      "incorrectEnglish": "No, it's about a dinner for six people and the need for childcare equipment."
+    }
+  },
+  {
+    "id": "s35-s25",
+    "italian": "\"Sì, un seggiolone per il piccolo, e se possibile un tavolo tranquillo.\" \"Nessun problema. Ci sono allergie o intolleranze?\"",
+    "english": "\"Yes, a high chair for the little one, and if possible a quiet table.\" \"No problem. Are there allergies or intolerances?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Sì, un seggiolone per il piccolo, e se possibile un tavolo tranquillo.\" \"Nessun problema. Ci sono allergie o intolleranze?\"",
+      "\"No, una borsa per il fango, e se sporco una via cara.\" \"Nessun fischio. Ci sono news o note?\"",
+      "\"Sì, un bacio per il finto, e se sordo un re rari.\" \"Nessuna nota. Ci sono baci o news?\"",
+      "\"No, un tour per il saggio, e se svelto un porto lungo.\" \"Nessun porto. Ci sono gite o piazze?\""
+    ],
+    "choicesEnglish": [
+      "\"Yes, a high chair for the little one, and a quiet table if possible.\" \"No problem. Any allergies or intolerances?\"",
+      "\"No, a bag for the mud, and if dirty an expensive street.\" \"No whistle. Are there news or notes?\"",
+      "\"Yes, a kiss for the fake, and if deaf a rare king.\" \"No note. Are there kisses or news?\"",
+      "\"No, a tour for the wise, and if quick a long port.\" \"No port. Are there trips or squares?\""
+    ],
+    "correctAnswerItalian": "\"Sì, un seggiolone per il piccolo, e se possibile un tavolo tranquillo.\" \"Nessun problema. Ci sono allergie o intolleranze?\"",
+    "correctAnswerEnglish": "\"Yes, a high chair for the little one, and a quiet table if you have one.\" \"No problem. Are there any allergies or intolerances I should know about?\"",
+    "feedback": {
+      "correctItalian": "Giusto! Fornire specifiche sulla posizione del tavolo e rispondere a domande sulla salute.",
+      "incorrectItalian": "No, questa conversazione coordina le preferenze ambientali e le necessità dietetiche.",
+      "correctEnglish": "Right! Providing specifications on table position and answering health-related questions.",
+      "incorrectEnglish": "No, this conversation coordinates environmental preferences and dietary needs."
+    }
+  },
+  {
+    "id": "s35-s26",
+    "italian": "\"Sì, una persona è celiaca, avremmo bisogno di opzioni senza glutine.\" \"Certamente, la nostra cucina è attrezzata. Segno tutto.\"",
+    "english": "\"Yes, one person is celiac, we would need gluten-free options.\" \"Certainly, our kitchen is equipped. I'll mark (note) everything.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Sì, una persona è celiaca, avremmo bisogno di opzioni senza glutine.\" \"Certamente, la nostra cucina è attrezzata. Segno tutto.\"",
+      "\"No, una borsa è sporca, avremmo perdita di fango senza via.\" \"Falso, la nostra cassa è raria. Perdo tutto.\"",
+      "\"Sì, una news è finta, avremmo risata di baci senza re.\" \"Vero, la nostra nota è sorda. Rido tutto.\"",
+      "\"No, una gita è lunga, avremmo corsa di tour senza porto.\" \"Rari, la nostra piazza è saggia. Corro tutto.\""
+    ],
+    "choicesEnglish": [
+      "\"Yes, one person is celiac, we'd need gluten-free choices.\" \"Certainly, our kitchen is set up. I'm noting it all.\"",
+      "\"No, a bag is dirty, we'd have mud loss without a street.\" \"False, our register is rare. I lose everything.\"",
+      "\"Yes, a news is fake, we'd have a laugh of kisses without a king.\" \"True, our note is deaf. I laugh at everything.\"",
+      "\"No, a trip is long, we'd have a tour run without a port.\" \"Rare, our square is wise. I run everything.\""
+    ],
+    "correctAnswerItalian": "\"Sì, una persona è celiaca, avremmo bisogno di opzioni senza glutine.\" \"Certamente, la nostra cucina è attrezzata. Segno tutto.\"",
+    "correctAnswerEnglish": "\"Yes, one person in our party is celiac; we'll need some gluten-free options.\" \"Of course; our kitchen is set up for that. I'm noting it all down.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Garantire la sicurezza alimentare per ospiti con esigenze specifiche.",
+      "incorrectItalian": "No, si parla della richiesta di piatti per celiaci e della conferma dell'adeguatezza della cucina.",
+      "correctEnglish": "Exactly! Ensuring food safety for guests with specific needs.",
+      "incorrectEnglish": "No, it's about the request for celiac-friendly dishes and the confirmation of the kitchen's adequacy."
+    }
+  },
+  {
+    "id": "s35-s27",
+    "italian": "\"Buonasera, chiamo per spostare una prenotazione a nome Bianchi.\" \"Invece che per le otto, potremmo venire alle nove?\"",
+    "english": "\"Good evening, I'm calling to move a reservation under the name Bianchi.\" \"Instead of for eight, could we come at nine?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Buonasera, chiamo per spostare una prenotazione a nome Bianchi.\" \"Invece che per le otto, potremmo venire alle nove?\"",
+      "\"Ciao, chiamo per perdere una via a nome Rossi.\" \"Dopo che per le otto, potremmo sporcare alle nove?\"",
+      "\"Salve, chiamo per ridere una news a nome Verdi.\" \"Prima che per le otto, potremmo finto alle nove?\"",
+      "\"Buongiorno, chiamo per correre una gita a nome Neri.\" \"Subito che per le otto, potremmo saggio alle nove?\""
+    ],
+    "choicesEnglish": [
+      "\"Good evening, I'm calling to reschedule for the Bianchi party.\" \"Could we come at nine instead of eight?\"",
+      "\"Hi, I'm calling to lose a street for the Rossi party.\" \"After eight, could we dirty at nine?\"",
+      "\"Hello, I'm calling to laugh at a news for the Verdi party.\" \"Before eight, could we fake at nine?\"",
+      "\"Good morning, I'm calling to run a trip for the Neri party.\" \"Immediately after eight, could we wise at nine?\""
+    ],
+    "correctAnswerItalian": "\"Buonasera, chiamo per spostare una prenotazione a nome Bianchi.\" \"Invece che per le otto, potremmo venire alle nove?\"",
+    "correctAnswerEnglish": "\"Good evening; I'm calling to change a reservation for the Bianchi party.\" \"Could we move our time from eight to nine?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire le variazioni di orario via telefono.",
+      "incorrectItalian": "No, il cliente desidera posticipare la cena e fornisce il cognome di riferimento.",
+      "correctEnglish": "Great! Managing time variations over the phone.",
+      "incorrectEnglish": "No, the customer wishes to postpone the dinner and provides the reference surname."
+    }
+  },
+  {
+    "id": "s35-s28",
+    "italian": "\"Saremo in sei invece di quattro, ha un tavolo più grande?\" \"Un attimo che controllo... sì, per le nove è possibile.\"",
+    "english": "\"We will be six instead of four, do you have a larger table?\" \"A moment while I check... yes, for nine it's possible.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Saremo in sei invece di quattro, ha un tavolo più grande?\" \"Un attimo che controllo... sì, per le nove è possibile.\"",
+      "\"Perderemo in sei invece di quattro, ha una via più sporca?\" \"Un'ora che perdo... no, per le nove è finto.\"",
+      "\"Rideremo in sei invece di quattro, ha una news più finta?\" \"Un bacio che rido... sì, per le nove è sordo.\"",
+      "\"Correremo in sei instead di quattro, ha una gita più lunga?\" \"Un tour che corro... no, per le nove è rari.\""
+    ],
+    "choicesEnglish": [
+      "\"There will be six of us, not four; is there a bigger table?\" \"Let me check... yes, at nine that's doable.\"",
+      "\"We'll lose in six instead of four, have a dirtier street?\" \"An hour that I lose... no, for nine it's fake.\"",
+      "\"We'll laugh in six instead of four, have a faker news?\" \"A kiss that I laugh... yes, for nine it's deaf.\"",
+      "\"We'll run in six instead of four, have a longer trip?\" \"A tour that I run... no, for nine it's rare.\""
+    ],
+    "correctAnswerItalian": "\"Saremo in sei invece di quattro, ha un tavolo più grande?\" \"Un attimo che controllo... sì, per le nove è possibile.\"",
+    "correctAnswerEnglish": "\"There'll be six of us now instead of four; do you have a larger table?\" \"One moment while I check... yes, nine o'clock works for six people.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Verificare la nuova disponibilità in base al numero di ospiti aumentato.",
+      "incorrectItalian": "No, si parla del cambio simultaneo di orario e di posti a sedere.",
+      "correctEnglish": "Exactly! Verifying new availability based on the increased number of guests.",
+      "incorrectEnglish": "No, it's about the simultaneous change of time and seating."
+    }
+  },
+  {
+    "id": "s35-s29",
+    "italian": "\"Grazie mille per la disponibilità, sposto subito la vostra prenotazione.\" \"Perfetto, allora a stasera alle ventuno.\"",
+    "english": "\"Thanks a lot for the availability, I'll move your booking immediately.\" \"Perfect, then see you tonight at 9 PM (twenty-one).\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Grazie mille per la disponibilità, sposto subito la vostra prenotazione.\" \"Perfetto, allora a stasera alle ventuno.\"",
+      "\"Prego rari per lo sporco, perdo subito la vostra borsa.\" \"Caro, allora a ieri alle ventuno.\"",
+      "\"Salve finto per la news, rido subito la vostra nota.\" \"Finto, allora a domani alle ventuno.\"",
+      "\"Ciao svelto per il porto, corro subito la vostra gita.\" \"Saggio, allora a mai alle ventuno.\""
+    ],
+    "choicesEnglish": [
+      "\"Thanks for being so helpful; I'll move your reservation now.\" \"Great; see you tonight at nine then.\"",
+      "\"You're welcome rare for the dirt, I lose your bag immediately.\" \"Dear, then at yesterday at twenty-one.\"",
+      "\"Hello fake for the news, I laugh at your note immediately.\" \"Fake, then at tomorrow at twenty-one.\"",
+      "\"Bye quick for the port, I run your trip immediately.\" \"Wise, then at never at twenty-one.\""
+    ],
+    "correctAnswerItalian": "\"Grazie mille per la disponibilità, sposto subito la vostra prenotazione.\" \"Perfetto, allora a stasera alle ventuno.\"",
+    "correctAnswerEnglish": "\"Thank you so much for the help; I'm updating your reservation now.\" \"Great; see you tonight at nine, then.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Concludere la modifica dell'accordo con la conferma finale.",
+      "incorrectItalian": "No, questa conversazione suggella il nuovo appuntamento serale.",
+      "correctEnglish": "Right! Concluding the agreement modification with final confirmation.",
+      "incorrectEnglish": "No, this conversation seals the new evening appointment."
+    }
+  },
+  {
+    "id": "s35-s30",
+    "italian": "\"Buonasera, abbiamo una prenotazione per le otto e mezza a nome Ferrari.\" \"Buonasera. Il vostro tavolo è pronto, seguitemi pure.\"",
+    "english": "\"Good evening, we have a reservation for eight-thirty under the name Ferrari.\" \"Good evening. Your table is ready, please follow me.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Buonasera, abbiamo una prenotazione per le otto e mezza a nome Ferrari.\" \"Buonasera. Il vostro tavolo è pronto, seguitemi pure.\"",
+      "\"Ciao, abbiamo una via sporca per le otto borse a via Ferrari.\" \"No male. La vostra cassa è raria, perdetemi svelto.\"",
+      "\"Salve, abbiamo una news finta per le otto note a re Ferrari.\" \"Vero bene. La vostra nota è finta, ridetemi rari.\"",
+      "\"Buongiorno, abbiamo una gita saggia per le otto gite a porto Ferrari.\" \"Rari svelto. Il vostro porto è saggio, corretemi sordo.\""
+    ],
+    "choicesEnglish": [
+      "\"Good evening, we've got a reservation for 8:30 for Ferrari.\" \"Good evening. Your table is ready; right this way.\"",
+      "\"Hi, we have a dirty street for the eight bags at Ferrari street.\" \"Not bad. Your register is rare, lose me fast.\"",
+      "\"Hello, we have a fake news for the eight notes for King Ferrari.\" \"Very well. Your note is fake, laugh at me rare.\"",
+      "\"Good morning, we have a wise trip for the eight trips to Port Ferrari.\" \"Rare quick. Your port is wise, run to me deaf.\""
+    ],
+    "correctAnswerItalian": "\"Buonasera, abbiamo una prenotazione per le otto e mezza a nome Ferrari.\" \"Buonasera. Il vostro tavolo è pronto, seguitemi pure.\"",
+    "correctAnswerEnglish": "\"Good evening, we have a reservation for 8:30 for the Ferrari party.\" \"Good evening. Your table is all set; follow me, please.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Presentarsi all'arrivo e farsi accompagnare al posto riservato.",
+      "incorrectItalian": "No, si parla dell'accoglienza dei clienti che hanno già prenotato.",
+      "correctEnglish": "Exactly! Introducing oneself on arrival and being escorted to the reserved spot.",
+      "incorrectEnglish": "No, it's about welcoming customers who have already booked."
+    }
+  },
+  {
+    "id": "s35-s31",
+    "italian": "\"Il tavolo è da questa parte, vicino alla finestra come richiesto.\" \"Grazie, è proprio una bella posizione, molto tranquilla.\"",
+    "english": "\"The table is this way, near the window as requested.\" \"Thanks, it's really a nice position, very quiet.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il tavolo è da questa parte, vicino alla finestra come richiesto.\" \"Grazie, è proprio una bella posizione, molto tranquilla.\"",
+      "\"La via è da quel porto, vicino alla cassa come sporco.\" \"Prego, è proprio una cara borsa, molto raria.\"",
+      "\"La news è da quel re, vicino alla nota come finto.\" \"Salve, è proprio una finta news, molto sorda.\"",
+      "\"La gita è da quel tour, vicino al porto come saggio.\" \"Ciao, è proprio una lunga piazza, molto saggia.\""
+    ],
+    "choicesEnglish": [
+      "\"The table is over here, by the window as you asked.\" \"Thanks, it's a great spot, very peaceful.\"",
+      "\"The street is from that port, near the register as dirty.\" \"You're welcome, it's really an expensive bag, very rare.\"",
+      "\"The news is from that king, near the note as fake.\" \"Hello, it's really a fake news, very deaf.\"",
+      "\"The trip is from that tour, near the port as wise.\" \"Bye, it's really a long square, very wise.\""
+    ],
+    "correctAnswerItalian": "\"Il tavolo è da questa parte, vicino alla finestra come richiesto.\" \"Grazie, è proprio una bella posizione, molto tranquilla.\"",
+    "correctAnswerEnglish": "\"Your table is right this way, by the window as you requested.\" \"Thank you; it's a wonderful spot, very nice and quiet.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Confermare che la richiesta speciale sulla posizione è stata soddisfatta.",
+      "incorrectItalian": "No, il cameriere mostra il tavolo scelto e il cliente esprime soddisfazione per la vista e la calma.",
+      "correctEnglish": "Great! Confirming that the special request on position has been satisfied.",
+      "incorrectEnglish": "No, the waiter shows the chosen table and the customer expresses satisfaction with the view and the calm."
+    }
+  },
+  {
+    "id": "s35-s32",
+    "italian": "\"Possiamo lasciare i cappotti all'ingresso o c'è un guardaroba?\" \"Ve li prendo io e li metto al sicuro, non si preoccupi.\"",
+    "english": "\"Can we leave our coats at the entrance or is there a cloakroom?\" \"I'll take them (for you) and put them in a safe place, don't worry.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Possiamo lasciare i cappotti all'ingresso o c'è un guardaroba?\" \"Ve li prendo io e li metto al sicuro, non si preoccupi.\"",
+      "\"Dobbiamo perdere le borse alla via o c'è un fango?\" \"Te li chiamo io e li metto al caro, non si perda.\"",
+      "\"Vorremmo ridere i baci alla news o c'è un re?\" \"Ce li rido io e li metto al finto, non si vedi.\"",
+      "\"Potreste correre i tour alla gita o c'è un porto?\" \"Vi li corro io e li metto al saggio, non si corra.\""
+    ],
+    "choicesEnglish": [
+      "\"Can we leave our coats here or is there a cloakroom?\" \"I'll take them and keep them safe, don't worry.\"",
+      "\"Must we lose the bags at the street or is there a mud?\" \"I'll call them for you and put them at the expensive, don't get lost.\"",
+      "\"Would we like to laugh at the kisses in the news or is there a king?\" \"I'll laugh at them for us and put them in the fake, don't be seen.\"",
+      "\"Could you run the tours at the trip or is there a port?\" \"I'll run them for you and put them in the wise, don't run.\""
+    ],
+    "correctAnswerItalian": "\"Possiamo lasciare i cappotti all'ingresso o c'è un guardaroba?\" \"Ve li prendo io e li metto al sicuro, non si preoccupi.\"",
+    "correctAnswerEnglish": "\"Should we leave our coats at the entrance, or is there a cloakroom?\" \"I'll take those for you and keep them safe; don't you worry.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Gestire il deposito dei vestiti esterni all'arrivo nel ristorante.",
+      "incorrectItalian": "No, si parla del servizio di ritiro dei cappotti per permettere ai clienti di sedersi comodamente.",
+      "correctEnglish": "Right! Managing the storage of outdoor clothing upon arrival at the restaurant.",
+      "incorrectEnglish": "No, it's about the coat collection service to allow customers to sit comfortably."
+    }
+  },
+  {
+    "id": "s35-s33",
+    "italian": "\"Buonasera, avete un tavolo per due? Non abbiamo prenotato.\" \"Siamo spiacenti, al momento siamo pieni, tutto occupato.\"",
+    "english": "\"Good evening, have you a table for two? We haven't booked.\" \"We're sorry, at the moment we are full, everything occupied.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Buonasera, avete un tavolo per due? Non abbiamo prenotato.\" \"Siamo spiacenti, al momento siamo pieni, tutto occupato.\"",
+      "\"Ciao, avete una borsa per due? Non abbiamo perso.\" \"No male, al saggio siamo sporchi, tutto rari.\"",
+      "\"Salve, avete una news per due? Non abbiamo riso.\" \"Vero bene, al porto siamo finti, tutto finto.\"",
+      "\"Buongiorno, avete una gita per due? Non abbiamo corso.\" \"Rari svelto, al re siamo sordi, tutto sordo.\""
+    ],
+    "choicesEnglish": [
+      "\"Good evening, do you have a table for two? We didn't book.\" \"We're sorry, we're currently full; every table is taken.\"",
+      "\"Hi, do you have a bag for two? We didn't lose.\" \"Not bad, at the wise we're dirty, everything's rare.\"",
+      "\"Hello, do you have a news for two? We didn't laugh.\" \"Very well, at the port we're fake, everything's fake.\"",
+      "\"Good morning, do you have a trip for two? We didn't run.\" \"Rare quick, at the king we're deaf, everything's deaf.\""
+    ],
+    "correctAnswerItalian": "\"Buonasera, avete un tavolo per due? Non abbiamo prenotato.\" \"Siamo spiacenti, al momento siamo pieni, tutto occupato.\"",
+    "correctAnswerEnglish": "\"Good evening; do you have a table for two available? We don't have a reservation.\" \"I'm so sorry; we're full up at the moment, all our tables are taken.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Gestire la situazione comune di un ristorante senza disponibilità immediata per i clienti di passaggio.",
+      "incorrectItalian": "No, i clienti chiedono posto senza preavviso e ricevono una risposta negativa di cortesia.",
+      "correctEnglish": "Exactly! Managing the common situation of a restaurant without immediate availability for walk-in customers.",
+      "incorrectEnglish": "No, the customers ask for a spot without notice and receive a polite negative answer."
+    }
+  },
+  {
+    "id": "s35-s34",
+    "italian": "\"Se volete aspettare una decina di minuti, si dovrebbe liberare un tavolo.\" \"Va bene, aspettiamo volentieri, c'è molta attesa?\"",
+    "english": "\"If you (plural) want to wait about ten minutes, a table should become free.\" \"Alright, we'll gladly wait, is there a long wait?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Se volete aspettare una decina di minuti, si dovrebbe liberare un tavolo.\" \"Va bene, aspettiamo volentieri, c'è molta attesa?\"",
+      "\"Se dovete perdere un'ora di via, si vorrebbe sporcare una borsa.\" \"No male, perdiamo svelto, c'è molta via?\"",
+      "\"Se potete ridere dieci baci di news, si potrebbe finto un re.\" \"Vero bene, ridiamo rari, c'è molta news?\"",
+      "\"Se volete correre cento tour di gita, si andrebbe saggio un porto.\" \"Rari rari, corriamo sordo, c'è molto porto?\""
+    ],
+    "choicesEnglish": [
+      "\"If you want to wait ten minutes, a table should open up.\" \"Okay, we'll wait, is it a long wait?\"",
+      "\"If you must lose a street hour, one would like to dirty a bag.\" \"Not bad, we lose fast, is there a lot of street?\"",
+      "\"If you can laugh at ten news kisses, one could fake a king.\" \"Very well, we laugh rarely, is there a lot of news?\"",
+      "\"If you want to run a hundred trip tours, one would wisely go to a port.\" \"Rare rare, we run deafly, is there a lot of port?\""
+    ],
+    "correctAnswerItalian": "\"Se volete aspettare una decina di minuti, si dovrebbe liberare un tavolo.\" \"Va bene, aspettiamo volentieri, c'è molta attesa?\"",
+    "correctAnswerEnglish": "\"If you'd like to wait about ten minutes, a table should be coming free.\" \"That's fine; we're happy to wait. Is it usually a long wait here?\"",
+    "feedback": {
+      "correctItalian": "Giusto! Accettare la proposta di attesa e chiedere chiarimenti sul tempo necessario.",
+      "incorrectItalian": "No, il cameriere prospetta una soluzione a breve termine e il cliente chiede conferma sulla durata.",
+      "correctEnglish": "Right! Accepting the wait proposal and asking for clarification on the time needed.",
+      "incorrectEnglish": "No, the waiter suggests a short-term solution and the customer asks for confirmation on the duration."
+    }
+  },
+  {
+    "id": "s35-s35",
+    "italian": "\"Vi chiamo io appena è pronto, potete aspettare al bar nel frattempo.\" \"Perfetto, prendiamo qualcosa da bere allora.\"",
+    "english": "\"I'll call you (plural) as soon as it's ready, you can wait at the bar in the meantime.\" \"Perfect, let's have a drink then.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Vi chiamo io appena è pronto, potete aspettare al bar nel frattempo.\" \"Perfetto, prendiamo qualcosa da bere allora.\"",
+      "\"Te perdo io appena è sporco, potete perdere alla cassa dopo via.\" \"Caro rari, perdiamo qualcosa da fango allora.\"",
+      "\"Ce rido io appena è finto, potete ridere alla news prima re.\" \"Vero finto, ridiamo qualcosa da bacio allora.\"",
+      "\"Ci corro io appena è saggio, potete correre al porto mai gita.\" \"Saggio svelto, corriamo qualcosa da tour allora.\""
+    ],
+    "choicesEnglish": [
+      "\"I'll call you when it's ready, you can wait at the bar meanwhile.\" \"Perfect, let's get something to drink then.\"",
+      "\"I'll lose you as soon as it's dirty, you can lose at the counter after the street.\" \"Dear rare, let's lose some mud then.\"",
+      "\"I'll laugh at us as soon as it's fake, you can laugh at the news before the king.\" \"Truly fake, let's laugh at a kiss then.\"",
+      "\"I'll run to us as soon as it's wise, you can run at the port never trip.\" \"Wise quick, let's run a tour then.\""
+    ],
+    "correctAnswerItalian": "\"Vi chiamo io appena è pronto, potete aspettare al bar nel frattempo.\" \"Perfetto, prendiamo qualcosa da bere allora.\"",
+    "correctAnswerEnglish": "\"I'll come get you as soon as it's ready; you can wait at the bar in the meantime.\" \"Perfect; we'll grab a drink while we wait, then.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire l'attesa con un consumo aggiuntivo e ricevere istruzioni dal personale.",
+      "incorrectItalian": "No, questa conversazione organizza il tempo intermedio prima dell'assegnazione del tavolo.",
+      "correctEnglish": "Great! Managing the wait with an additional drink and receiving instructions from the staff.",
+      "incorrectEnglish": "No, this conversation organizes the intermediate time before table assignment."
+    }
+  },
+  {
+    "id": "s35-s36",
+    "italian": "\"Cosa vuol dire 'tavolo al completo'?\" \"Significa che tutti i tavoli sono stati prenotati o occupati.\"",
+    "english": "\"What does 'table fully booked' mean?\" \"It means all tables have been reserved or occupied.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Cosa vuol dire 'tavolo al completo'?\" \"Significa che tutti i tavoli sono stati prenotati o occupati.\"",
+      "\"Cosa vuol dire 'via al fango'?\" \"Significa che tutte le vie sono state perse o sporcate.\"",
+      "\"Cosa vuol dire 're al finto'?\" \"Significa che tutti i baci sono stati risi o visti.\"",
+      "\"Cosa vuol dire 'porto al saggio'?\" \"Significa che tutte le gite sono state corse o taciute.\""
+    ],
+    "choicesEnglish": [
+      "\"What does 'fully booked' mean?\" \"It means all tables have been booked or taken.\"",
+      "\"What does 'street at mud' mean?\" \"It means all streets have been lost or dirtied.\"",
+      "\"What does 'king at fake' mean?\" \"It means all kisses have been laughed at or seen.\"",
+      "\"What does 'port at wise' mean?\" \"It means all trips have been run or silenced.\""
+    ],
+    "correctAnswerItalian": "\"Cosa vuol dire 'tavolo al completo'?\" \"Significa che tutti i tavoli sono stati prenotati o occupati.\"",
+    "correctAnswerEnglish": "\"What does it mean when you say the restaurant is 'al completo'?\" \"It means that every single table has either been reserved or is currently taken.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Definire un termine tecnico fondamentale per la disponibilità dei posti.",
+      "incorrectItalian": "No, spiega lo stato di saturazione dei posti a sedere nel locale.",
+      "correctEnglish": "Exactly! Defining a fundamental technical term for seat availability.",
+      "incorrectEnglish": "No, it explains the seating saturation state in the venue."
+    }
+  },
+  {
+    "id": "s35-s37",
+    "italian": "\"Per che ora vorrebbe la conferma della prenotazione?\" \"Basta che ci faccia sapere entro domani mattina alle dieci.\"",
+    "english": "\"By what time would you (singular polite) like the confirmation of the booking?\" \"It's enough that you let us know by tomorrow morning at ten.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Per che ora vorrebbe la conferma della prenotazione?\" \"Basta che ci faccia sapere entro domani mattina alle dieci.\"",
+      "\"Per che via perderebbe la borsa della via sporca?\" \"No saggio che ci perdi svelto dopo ieri mattina alle dieci.\"",
+      "\"Per che news riderebbe il bacio della nota finta?\" \"Sì bene che ci rida rari prima oggi mattina alle dieci.\"",
+      "\"Per che porto correrebbe il tour della gita saggia?\" \"Rari svelto che ci corra sordo mai domani mattina alle dieci.\""
+    ],
+    "choicesEnglish": [
+      "\"What time for the booking confirmation?\" \"Just let us know by 10:00 AM tomorrow.\"",
+      "\"Which way would you lose the dirty street bag?\" \"Not wise to lose quickly after yesterday morning at ten.\"",
+      "\"Which news would you laugh at the fake note kiss?\" \"Yes fine to laugh rarely before today morning at ten.\"",
+      "\"Which port would you run the wise trip tour?\" \"Rare quick to run deafly never tomorrow morning at ten.\""
+    ],
+    "correctAnswerItalian": "\"Per che ora vorrebbe la conferma della prenotazione?\" \"Basta che ci faccia sapere entro domani mattina alle dieci.\"",
+    "correctAnswerEnglish": "\"By what time do you need me to confirm the reservation?\" \"Just give us a call by ten o'clock tomorrow morning.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Stabilire i termini temporali per la validazione definitiva del tavolo.",
+      "incorrectItalian": "No, il cameriere indica il limite massimo per ricevere la risposta del cliente.",
+      "correctEnglish": "Right! Establishing the time terms for the final table validation.",
+      "incorrectEnglish": "No, the waiter indicates the maximum limit to receive the customer's response."
+    }
+  },
+  {
+    "id": "s35-s38",
+    "italian": "\"Siamo in ritardo di dieci minuti, tenete comunque il tavolo?\" \"Sì, per le prenotazioni teniamo il tavolo per un quarto d'ora.\"",
+    "english": "\"We are ten minutes late, do you (plural) keep the table anyway?\" \"Yes, for reservations we keep the table for a quarter of an hour.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo in ritardo di dieci minuti, tenete comunque il tavolo?\" \"Sì, per le prenotazioni teniamo il tavolo per un quarto d'ora.\"",
+      "\"Perdiamo in borsa di dieci metri, perdete comunque la via?\" \"No, per le vie sporche perdiamo la borsa per un saggio di ora.\"",
+      "\"Ridiamo in news di dieci baci, ridete comunque il re?\" \"Sì, per le note finte ridiamo il bacio per un finto di ora.\"",
+      "\"Corriamo in gita di dieci tour, correte comunque il porto?\" \"No, per i tour lunghi corriamo il porto per un rari di ora.\""
+    ],
+    "choicesEnglish": [
+      "\"We're ten minutes late; will you still hold the table?\" \"Yes, we hold reservations for fifteen minutes.\"",
+      "\"We lose in a ten-meter bag, do you still lose the way?\" \"No, for dirty streets we lose the bag for a wise hour.\"",
+      "\"We laugh in ten-kiss news, do you still laugh at the king?\" \"Yes, for fake notes we laugh at the kiss for a fake hour.\"",
+      "\"We run on a ten-tour trip, do you still run the port?\" \"No, for long tours we run the port for a rare hour.\""
+    ],
+    "correctAnswerItalian": "\"Siamo in ritardo di dieci minuti, tenete comunque il tavolo?\" \"Sì, per le prenotazioni teniamo il tavolo per un quarto d'ora.\"",
+    "correctAnswerEnglish": "\"We're running ten minutes late; will you still keep our table for us?\" \"Yes; we usually hold tables for fifteen minutes past the reservation time.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiarire la politica di tolleranza del ristorante per i ritardi degli ospiti.",
+      "incorrectItalian": "No, si parla del tempo di attesa massimo prima che il tavolo venga ceduto ad altri.",
+      "correctEnglish": "Great! Clarifying the restaurant's tolerance policy for guest delays.",
+      "incorrectEnglish": "No, it's about the maximum wait time before the table is given to others."
+    }
+  },
+  {
+    "id": "s35-s39",
+    "italian": "\"Ho provato a prenotare online ma dava tutto occupato oggi.\" \"Purtroppo nel weekend siamo sempre pieni con molto anticipo.\"",
+    "english": "\"I tried to book online but it showed everything occupied today.\" \"Unfortunately on the weekend we are always full well in advance.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ho provato a prenotare online ma dava tutto occupato oggi.\" \"Purtroppo nel weekend siamo sempre pieni con molto anticipo.\"",
+      "\"Ho provato a perdere via sporca ma dava tutto fango ieri.\" \"Caro nel fischio siamo sempre rari con molto sporco.\"",
+      "\"Ho provato a ridere news finta ma dava tutto finto ora.\" \"Vero nella nota siamo sempre sordi con molto finto.\"",
+      "\"Ho provato a correre gita lunga ma dava tutto saggio mai.\" \"Rari nel porto siamo sempre lunghi con molto saggio.\""
+    ],
+    "choicesEnglish": [
+      "\"I tried to book online but it said full today.\" \"Unfortunately we're always fully booked for weekends way ahead of time.\"",
+      "\"I tried to lose dirty street but it said all mud yesterday.\" \"Expensive in the whistle we're always rare with much dirt.\"",
+      "\"I tried to laugh at fake news but it said all fake now.\" \"True in the note we're always deaf with much fake.\"",
+      "\"I tried to run long trip but it said all wise never.\" \"Rare in the port we're always long with much wisdom.\""
+    ],
+    "correctAnswerItalian": "\"Ho provato a prenotare online ma dava tutto occupato oggi.\" \"Purtroppo nel weekend siamo sempre pieni con molto anticipo.\"",
+    "correctAnswerEnglish": "\"I tried booking online, but it showed everything was taken for today.\" \"Unfortunately, we're always fully booked for the weekend well in advance.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Constatare l'alta richiesta del locale durante i giorni festivi.",
+      "incorrectItalian": "No, lo staff spiega che il sabato e la domenica è necessario riservare con giorni di distacco.",
+      "correctEnglish": "Exactly! Noting the high demand for the venue during holidays.",
+      "incorrectEnglish": "No, the staff explains that for Saturday and Sunday it is necessary to book days in advance."
+    }
+  },
+  {
+    "id": "s35-s40",
+    "italian": "\"Grazie per la disponibilità e per il tavolo vicino all'angolo.\" \"È stato un piacere accontentarvi, buona cena!\"",
+    "english": "\"Thanks for the availability and for the table near the corner.\" \"It was a pleasure to satisfy you (plural), enjoy your dinner!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Grazie per la disponibilità e per il tavolo vicino all'angolo.\" \"È stato un piacere accontentarvi, buona cena!\"",
+      "\"Prego per la via sporca e per la borsa vicino al fango.\" \"È stato un fischio perdervi, buona via!\"",
+      "\"Salve per la news finta e per il bacio vicino al re.\" \"È stato un bacio ridervi, buona news!\"",
+      "\"Ciao per la gita saggia e per il porto vicino alla torre.\" \"È stato un tour corrervi, buona gita!\""
+    ],
+    "choicesEnglish": [
+      "\"Thanks for the help and the corner table.\" \"A pleasure to help, enjoy your dinner!\"",
+      "\"You're welcome for the dirty street and the bag near the mud.\" \"It was a whistle to lose you, good street!\"",
+      "\"Hello for the fake news and the kiss near the king.\" \"It was a kiss to laugh at you, good news!\"",
+      "\"Bye for the wise trip and the port near the tower.\" \"It was a tour to run you, good trip!\""
+    ],
+    "correctAnswerItalian": "\"Grazie per la disponibilità e per il tavolo vicino all'angolo.\" \"È stato un piacere accontentarvi, buona cena!\"",
+    "correctAnswerEnglish": "\"Thank you for being so accommodating and for giving us that corner table.\" \"It was our pleasure to help you; enjoy your meal!\"",
+    "feedback": {
+      "correctItalian": "Giusto! Un ringraziamento finale reciproco per l'ottima accoglienza.",
+      "incorrectItalian": "No, questa conversazione suggella il momento dell'inizio del pasto dopo la prenotazione.",
+      "correctEnglish": "Right! A final mutual thank you for the excellent welcome.",
+      "incorrectEnglish": "No, this conversation seals the moment of the start of the meal after the reservation."
+    }
+  },
+  {
+    "id": "s35-s41",
+    "italian": "\"Vorrei spostare la prenotazione di stasera dalle otto alle nove e mezza.\" \"Un attimo... per le nove e mezza ho solo un tavolo alto al bancone.\"",
+    "english": "\"I'd like to move tonight's booking from eight to nine-thirty.\" \"Just a second... for nine-thirty I only have a high table at the counter.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Vorrei spostare la prenotazione di stasera dalle otto alle nove e mezza.\" \"Un attimo... per le nove e mezza ho solo un tavolo alto al bancone.\"",
+      "\"Vorrei perdere la via di stasera dalle otto alle nove e mezza.\" \"Un'ora... per le nove e mezza ho solo una borsa sporca alla cassa.\"",
+      "\"Vorrei ridere la news di stasera dalle otto alle nove e mezza.\" \"Un bacio... per le nove e mezza ho solo un re finto alla nota.\"",
+      "\"Vorrei correre la gita di stasera dalle otto alle nove e mezza.\" \"Un tour... per le nove e mezza ho solo un porto saggio al porto.\""
+    ],
+    "choicesEnglish": [
+      "\"I want to move tonight's reservation from 8:00 to 9:30.\" \"One moment... for 9:30 I only have a high table at the bar.\"",
+      "\"I want to lose tonight's street from 8:00 to 9:30.\" \"One hour... for 9:30 I only have a dirty bag at the counter.\"",
+      "\"I want to laugh at tonight's news from 8:00 to 9:30.\" \"One kiss... for 9:30 I only have a fake king at the note.\"",
+      "\"I want to run tonight's trip from 8:00 to 9:30.\" \"One tour... for 9:30 I only have a wise port at the port.\""
+    ],
+    "correctAnswerItalian": "\"Vorrei spostare la prenotazione di stasera dalle otto alle nove e mezza.\" \"Un attimo... per le nove e mezza ho solo un tavolo alto al bancone.\"",
+    "correctAnswerEnglish": "\"I'd like to push our reservation tonight from eight back to nine-thirty.\" \"One moment... at nine-thirty, all I have left is a high-top table at the bar.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Gestire una modifica dell'ultimo minuto con opzioni limitate.",
+      "incorrectItalian": "No, il cliente chiede un cambio di orario significativo e riceve un'offerta di posizionamento informale.",
+      "correctEnglish": "Exactly! Managing a last-minute change with limited options.",
+      "incorrectEnglish": "No, the customer asks for a significant time change and receives an informal seating offer."
+    }
+  },
+  {
+    "id": "s35-s42",
+    "italian": "\"Siamo in tre, ma forse si aggiunge una persona più tardi.\" \"Va bene, vi segno un tavolo per quattro così siete comodi comunque.\"",
+    "english": "\"There are three of us, but maybe one person will join later.\" \"Alright, I'll mark (note) a table for four so you are comfortable anyway.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo in tre, ma forse si aggiunge una persona più tardi.\" \"Va bene, vi segno un tavolo per quattro così siete comodi comunque.\"",
+      "\"Perdiamo in tre, ma forse si sporca una borsa più tardi.\" \"No male, vi chiamo una via per quattro così siete sporchi mai.\"",
+      "\"Ridiamo in tre, ma forse si rida un bacio più tardi.\" \"Vero bene, vi vedi una news per quattro così siete finti ora.\"",
+      "\"Corriamo in tre, ma forse si corre un tour più tardi.\" \"Saggio rari, vi tacci un porto per quattro così siete saggi dopo.\""
+    ],
+    "choicesEnglish": [
+      "\"We're three, but maybe someone joins later.\" \"Fine, I'll book you a table for four so you're comfortable anyway.\"",
+      "\"We lose in three, but maybe a bag gets dirty later.\" \"Not bad, I'll call a street for four so you're never dirty.\"",
+      "\"We laugh in three, but maybe a kiss is laughed later.\" \"Very well, I see a news for four so you're fake now.\"",
+      "\"We run in three, but maybe a tour is run later.\" \"Wise rare, I silence a port for four so you're wise later.\""
+    ],
+    "correctAnswerItalian": "\"Siamo in tre, ma forse si aggiunge una persona più tardi.\" \"Va bene, vi segno un tavolo per quattro così siete comodi comunque.\"",
+    "correctAnswerEnglish": "\"There are three of us, but someone else might join us later on.\" \"No problem; I'll put you down for a table for four just so you have the extra space anyway.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire l'incertezza sul numero dei partecipanti con previdenza.",
+      "incorrectItalian": "No, lo staff assegna preventivamente un posto in più per evitare disagi futuri.",
+      "correctEnglish": "Great! Managing uncertainty about the number of participants with foresight.",
+      "incorrectEnglish": "No, the staff preemptively assigns an extra seat to avoid future inconveniences."
+    }
+  },
+  {
+    "id": "s35-s43",
+    "italian": "\"Dobbiamo dare una conferma definitiva entro quando?\" \"Chiamateci pure entro le sei di pomeriggio, per favore.\"",
+    "english": "\"By when must we give a final confirmation?\" \"Please call us by six in the afternoon.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Dobbiamo dare una conferma definitiva entro quando?\" \"Chiamateci pure entro le sei di pomeriggio, per favore.\"",
+      "\"Dobbiamo perdere una via sporca entro quando?\" \"Perdeteci pure entro le sei di fango, grazie.\"",
+      "\"Dobbiamo ridere una news finta entro quando?\" \"Rideteci pure entro le sei di baci, prego.\"",
+      "\"Dobbiamo correre una gita saggia entro quando?\" \"Correcci pure entro le sei di tour, salve.\""
+    ],
+    "choicesEnglish": [
+      "\"When do we need to confirm for sure?\" \"Go ahead and call us by 6:00 PM, please.\"",
+      "\"When must we lose a dirty street?\" \"Lose us by six of mud, thanks.\"",
+      "\"When must we laugh at a fake news?\" \"Laugh at us by six of kisses, please.\"",
+      "\"When must we run a wise trip?\" \"Run us by six of tours, hello.\""
+    ],
+    "correctAnswerItalian": "\"Dobbiamo dare una conferma definitiva entro quando?\" \"Chiamateci pure entro le sei di pomeriggio, per favore.\"",
+    "correctAnswerEnglish": "\"When is the latest we can give you a final confirmation?\" \"Just give us a call by 6:00 PM, if you could.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Stabilire l'orario limite per assicurarsi il tavolo.",
+      "incorrectItalian": "No, si parla del termine ultimo per la validazione della prenotazione telefonica.",
+      "correctEnglish": "Right! Establishing the deadline for securing the table.",
+      "incorrectEnglish": "No, it's about the deadline for validating the phone reservation."
+    }
+  },
+  {
+    "id": "s35-s44",
+    "italian": "\"Siamo pronti, il tavolo è a nome Rossi?\" \"Sì, Rossi per quattro, seguitemi in veranda.\"",
+    "english": "\"We are ready, is the table in the name of Rossi?\" \"Yes, Rossi for four, follow me to the veranda.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo pronti, il tavolo è a nome Rossi?\" \"Sì, Rossi per quattro, seguitemi in veranda.\"",
+      "\"Siamo sordi, la via è a fango Rossi?\" \"No, Rossi per quattro borse, perdetemi in cassa.\"",
+      "\"Siamo finti, la news è a bacio Rossi?\" \"Sì, Rossi per quattro baci, ridetemi in nota.\"",
+      "\"Siamo saggi, il porto è a tour Rossi?\" \"No, Rossi per quattro gite, correte in piazza.\""
+    ],
+    "choicesEnglish": [
+      "\"We're ready; is the table for Rossi?\" \"Yes, Rossi, party of four. Follow me to the veranda.\"",
+      "\"We're deaf, is the street for Rossi mud?\" \"No, Rossi for four bags, lose me at the counter.\"",
+      "\"We're fake, is the news for Rossi kiss?\" \"Yes, Rossi for four kisses, laugh at me in the note.\"",
+      "\"We're wise, is the port for Rossi tour?\" \"No, Rossi for four trips, run to the square.\""
+    ],
+    "correctAnswerItalian": "\"Siamo pronti, il tavolo è a nome Rossi?\" \"Sì, Rossi per quattro, seguitemi in veranda.\"",
+    "correctAnswerEnglish": "\"We're here; is there a table for Rossi?\" \"Yes; Rossi, party of four. Follow me out to the veranda, please.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Identificarsi all'ingresso e lasciarsi guidare al proprio posto.",
+      "incorrectItalian": "No, questa conversazione mostra il check-in immediato dei clienti prenotati.",
+      "correctEnglish": "Exactly! Identifying oneself on arrival and being led to one's seat.",
+      "incorrectEnglish": "No, this conversation shows the immediate check-in of reserved customers."
+    }
+  },
+  {
+    "id": "s35-s45",
+    "italian": "\"È possibile avere un tavolo in un angolo tranquillo per parlare di lavoro?\" \"Certamente, vi metto nell'ultima sala, è molto silenziosa oggi.\"",
+    "english": "\"Is it possible to have a table in a quiet corner to talk about work?\" \"Certainly, I'll put you (plural) in the last room, it's very silent today.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"È possibile avere un tavolo in un angolo tranquillo per parlare di lavoro?\" \"Certamente, vi metto nell'ultima sala, è molto silenziosa oggi.\"",
+      "\"Dovrebbe perdere una via in un fango sporco per perdere la borsa?\" \"No male, vi perdo nell'ultima cassa, è molto cara ora.\"",
+      "\"Vorrebbe ridere una news in un bacio finto per ridere il re?\" \"Vero rari, vi rido nell'ultima nota, è molto finta mai.\"",
+      "\"Potrebbe correre una gita in un porto saggio per correre il tour?\" \"Rari svelto, vi corro nell'ultima piazza, è molto saggia dopo.\""
+    ],
+    "choicesEnglish": [
+      "\"Can we get a quiet corner table for a business talk?\" \"Certainly; I'll seat you in the back room; it's very quiet today.\"",
+      "\"Should he lose a street in a dirty mud to lose the bag?\" \"Not bad, I'll lose you in the last register, it's very expensive now.\"",
+      "\"Would he laugh at a news in a fake kiss to laugh at the king?\" \"True rare, I'll laugh at you in the last note, it's very fake ever.\"",
+      "\"Could he run a trip in a wise port to run the tour?\" \"Rare quick, I'll run you in the last square, it's very wise later.\""
+    ],
+    "correctAnswerItalian": "\"È possibile avere un tavolo in un angolo tranquillo per parlare di lavoro?\" \"Certamente, vi metto nell'ultima sala, è molto silenziosa oggi.\"",
+    "correctAnswerEnglish": "\"Could we have a table in a quiet corner? We need to discuss some business.\" \"Of course; I'll seat you in the back dining room; it's very peaceful today.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Esprimere una necessità professionale e ricevere un servizio mirato.",
+      "incorrectItalian": "No, il cliente cerca riservatezza e il cameriere offre lo spazio più idoneo del locale.",
+      "correctEnglish": "Right! Expressing a professional need and receiving a targeted service.",
+      "incorrectEnglish": "No, the customer looks for privacy and the waiter offers the most suitable space in the venue."
+    }
+  },
+  {
+    "id": "s35-s46",
+    "italian": "\"Abbiamo un seggiolone per il bambino, lo mettiamo a capotavola?\" \"Sì, grazie mille, così non intralcia il passaggio.\"",
+    "english": "\"We have a high chair for the child, shall we put it at the head of the table?\" \"Yes, thanks a lot, so it doesn't obstruct the passage.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Abbiamo un seggiolone per il bambino, lo mettiamo a capotavola?\" \"Sì, grazie mille, così non intralcia il passaggio.\"",
+      "\"Abbiamo una borsa per il fango, lo perdiamo a via sporca?\" \"No male, prego rari, così non sporca la cassa.\"",
+      "\"Abbiamo un bacio per il finto, lo ridiamo a nota finta?\" \"Vero saggio, salve finto, così non rida il re.\"",
+      "\"Abbiamo un tour per il saggio, lo corriamo a porto lungo?\" \"Rari svelto, ciao saggio, così non corre la piazza.\""
+    ],
+    "choicesEnglish": [
+      "\"We have a high chair; shall we put it at the end of the table?\" \"Yes, thank you; that way it's not in the way.\"",
+      "\"We have a bag for the mud; shall we lose it on the dirty street?\" \"Not bad, thanks; that way it doesn't dirty the register.\"",
+      "\"We have a kiss for the fake; shall we laugh at it for a fake note?\" \"True wise, hello; that way the king doesn't laugh.\"",
+      "\"We have a tour for the wise; shall we run it at the long port?\" \"Rare quick, bye; that way the square doesn't run.\""
+    ],
+    "correctAnswerItalian": "\"Abbiamo un seggiolone per il bambino, lo mettiamo a capotavola?\" \"Sì, grazie mille, così non intralcia il passaggio.\"",
+    "correctAnswerEnglish": "\"We've got a high chair for the baby; shall we set it up at the head of the table?\" \"Yes, thank you; that way it won't block the walkway.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Coordinare la disposizione degli arredi per la comodità di tutti.",
+      "incorrectItalian": "No, si parla del posizionamento logistico del seggiolone per non disturbare il transito nel ristorante.",
+      "correctEnglish": "Great! Coordinating the furniture arrangement for everyone's comfort.",
+      "incorrectEnglish": "No, it's about the logistical positioning of the high chair so as not to disturb transit in the restaurant."
+    }
+  },
+  {
+    "id": "s35-s47",
+    "italian": "\"Siete attrezzati per clienti celiaci con menù dedicato?\" \"Sì, abbiamo una carta a parte con molti piatti senza glutine certificati.\"",
+    "english": "\"Are you (plural) equipped for celiac customers with a dedicated menu?\" \"Yes, we have a separate card with many certified gluten-free dishes.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siete attrezzati per clienti celiaci con menù dedicato?\" \"Sì, abbiamo una carta a parte con molti piatti senza glutine certificati.\"",
+      "\"Siete sporchi per borse rarie con via dedicata?\" \"No, abbiamo una cassa a parte con fango senza via saggio.\"",
+      "\"Siete finti per baci sordi con news dedicata?\" \"Sì, abbiamo una nota a parte con baci senza re finti.\"",
+      "\"Siete saggi per tour lunghi con gita dedicata?\" \"No, abbiamo una piazza a parte con tour senza porto saggi.\""
+    ],
+    "choicesEnglish": [
+      "\"Are you set up for celiac guests with a special menu?\" \"Yes, we have a separate list with many certified gluten-free options.\"",
+      "\"Are you dirty for rare bags with a dedicated street?\" \"No, we have a separate register with mud without a wise street.\"",
+      "\"Are you fake for deaf kisses with dedicated news?\" \"Yes, we have a separate note with kisses without fake kings.\"",
+      "\"Are you wise for long tours with a dedicated trip?\" \"No, we have a separate square with tours without wise ports.\""
+    ],
+    "correctAnswerItalian": "\"Siete attrezzati per clienti celiaci con menù dedicato?\" \"Sì, abbiamo una carta a parte con molti piatti senza glutine certificati.\"",
+    "correctAnswerEnglish": "\"Do you have a dedicated menu for celiac guests?\" \"Yes; we provide a separate menu with various certified gluten-free choices.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Verificare l'affidabilità del locale sulla gestione delle intolleranze gravi.",
+      "incorrectItalian": "No, lo staff conferma l'esistenza di un'ampia scelta di cibi sicuri per celiaci.",
+      "correctEnglish": "Right! Verifying the venue's reliability in handling severe intolerances.",
+      "incorrectEnglish": "No, the staff confirms the existence of a wide choice of safe foods for celiacs."
+    }
+  },
+  {
+    "id": "s35-s48",
+    "italian": "\"Cosa vuol dire 'segno tutto' in una prenotazione?\" \"Significa che il cameriere sta prendendo nota di ogni vostra richiesta particolare.\"",
+    "english": "\"What does 'I note down everything' mean in a reservation?\" \"It means the waiter is taking note of every particular request of yours (plural).\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Cosa vuol dire 'segno tutto' in una prenotazione?\" \"Significa che il cameriere sta prendendo nota di ogni vostra richiesta particolare.\"",
+      "\"Cosa vuol dire 'perdo via' in una borsa?\" \"Significa che lo sporco sta prendendo fango di ogni vostra via saggia.\"",
+      "\"Cosa vuol dire 'rido news' in un bacio?\" \"Significa che il finto sta prendendo baci di ogni vostra nota finta.\"",
+      "\"Cosa vuol dire 'corro porto' in una gita?\" \"Significa che il saggio sta prendendo tour di ogni vostro porto lungo.\""
+    ],
+    "choicesEnglish": [
+      "\"What does 'noting it all' mean in a booking?\" \"It means the waiter is making a note of each of your special requests.\"",
+      "\"What does 'lose street' mean in a bag?\" \"It means the dirt is taking mud from every wise street of yours.\"",
+      "\"What does 'laugh at news' mean in a kiss?\" \"It means the fake is taking kisses from every fake note of yours.\"",
+      "\"What does 'run port' mean in a trip?\" \"It means the wise is taking tours from every long port of yours.\""
+    ],
+    "correctAnswerItalian": "\"Cosa vuol dire 'segno tutto' in una prenotazione?\" \"Significa che il cameriere sta prendendo nota di ogni vostra richiesta particolare.\"",
+    "correctAnswerEnglish": "\"What does the waiter mean by 'I'll note everything down'?\" \"It means they're recording every specific request you've made for your reservation.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Definire un'espressione gergale del servizio clienti.",
+      "incorrectItalian": "No, spiega l'atto di registrare meticolosamente le esigenze del cliente sul libro dei tavoli.",
+      "correctEnglish": "Exactly! Defining a customer service slang expression.",
+      "incorrectEnglish": "No, it explains the act of meticulously recording customer needs in the table book."
+    }
+  },
+  {
+    "id": "s35-s49",
+    "italian": "\"Siamo spiacenti, ma senza prenotazione oggi è impossibile farvi sedere.\" \"Capisco, allora proveremo a tornare un altro giorno in settimana.\"",
+    "english": "\"We are sorry, but without a reservation today it's impossible to seat you (plural).\" \"I understand, then we'll try to come back another day during the week.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo spiacenti, ma senza prenotazione oggi è impossibile farvi sedere.\" \"Capisco, allora proveremo a tornare un altro giorno in settimana.\"",
+      "\"Siamo sporchi, ma senza via oggi è rario farvi perdere.\" \"Perdo, allora proveremo a sporcare un altro fango in borsa.\"",
+      "\"Siamo finti, ma senza bacio oggi è sordo farvi ridere.\" \"Vedo, allora proveremo a finto un altro re in news.\"",
+      "\"Siamo saggi, ma senza porto oggi è lungo farvi correre.\" \"Taccio, allora proveremo a saggio un altro tour in gita.\""
+    ],
+    "choicesEnglish": [
+      "\"Sorry, but we can't seat you without a booking today.\" \"I see; we'll try coming back on a weekday instead.\"",
+      "\"We're dirty, but without a street today it's rare to let you lose.\" \"I lose, then we'll try to dirty another mud in a bag.\"",
+      "\"We're fake, but without a kiss today it's deaf to let you laugh.\" \"I see, then we'll try to fake another king in the news.\"",
+      "\"We're wise, but without a port today it's long to let you run.\" \"I'm silent, then we'll try to wise another tour on a trip.\""
+    ],
+    "correctAnswerItalian": "\"Siamo spiacenti, ma senza prenotazione oggi è impossibile farvi sedere.\" \"Capisco, allora proveremo a tornare un altro giorno in settimana.\"",
+    "correctAnswerEnglish": "\"I'm sorry; we really can't fit you in without a reservation today.\" \"I understand; we'll try coming back some other time during the week then.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Gestire il rifiuto definitivo con educazione e programmare un ritorno.",
+      "incorrectItalian": "No, il ristorante è saturo e il cliente accetta la situazione rimandando la visita.",
+      "correctEnglish": "Right! Handling a final refusal politely and planning a return.",
+      "incorrectEnglish": "No, the restaurant is full and the customer accepts the situation by postponing the visit."
+    }
+  },
+  {
+    "id": "s35-s50",
+    "italian": "\"Abbiamo un posto che si libera tra poco, volete entrare nella lista d'attesa?\" \"Sì, grazie. Quanto tempo dovremmo aspettare circa?\"",
+    "english": "\"We have a spot opening up shortly, do you (plural) want to join the waiting list?\" \"Yes, thanks. Roughly how long should we have to wait?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Abbiamo un posto che si libera tra poco, volete entrare nella lista d'attesa?\" \"Sì, grazie. Quanto tempo dovremmo aspettare circa?\"",
+      "\"Abbiamo una via che si sporca tra un metro, volete perdere nella borsa sporca?\" \"No saggio. Quanto fango dovremmo chiamare rari?\"",
+      "\"Abbiamo un re che si rida tra un bacio, volete ridere nella news finta?\" \"Sì bene. Quanto bacio dovremmo vedere sordo?\"",
+      "\"Abbiamo un porto che si corre tra un tour, volete correre nella gita saggia?\" \"Rari svelto. Quanto tour dovremmo tacerlo lungo?\""
+    ],
+    "choicesEnglish": [
+      "\"We have a seat opening soon; want to go on the waitlist?\" \"Yes, thanks. About how long will the wait be?\"",
+      "\"We have a street getting dirty in a meter; want to lose in the dirty bag?\" \"Not wise. How much mud should we call rare?\"",
+      "\"We have a king laughing in a kiss; want to laugh in the fake news?\" \"Yes fine. How much kiss should we see deaf?\"",
+      "\"We have a port running in a tour; want to run in the wise trip?\" \"Rare quick. How much tour should we silence long?\""
+    ],
+    "correctAnswerItalian": "\"Abbiamo un posto che si libera tra poco, volete entrare nella lista d'attesa?\" \"Sì, grazie. Quanto tempo dovremmo aspettare circa?\"",
+    "correctAnswerEnglish": "\"A table should be free shortly; would you like to be added to the waiting list?\" \"Yes, please. About how long do you think the wait will be?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Proporre una gestione dei turni e chiedere stime temporali.",
+      "incorrectItalian": "No, si parla dell'inserimento nell'elenco di attesa e della richiesta sulla durata del ritardo.",
+      "correctEnglish": "Great! Proposing queue management and asking for time estimates.",
+      "incorrectEnglish": "No, it's about joining the waitlist and inquiring about the delay duration."
+    }
+  },
+  {
+    "id": "s35-s51",
+    "italian": "\"Per che ora vorrebbe prenotare per sabato?\" \"Dovremmo essere lì per le venti e trenta, se va bene.\"",
+    "english": "\"For what time would you (singular polite) like to book for Saturday?\" \"We should be there by eight-thirty PM, if that's alright.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Per che ora vorrebbe prenotare per sabato?\" \"Dovremmo essere lì per le venti e trenta, se va bene.\"",
+      "\"Per che via perderebbe la borsa sporca?\" \"No male essere là per le venti borse, se chiama.\"",
+      "\"Per che news riderebbe il bacio finto?\" \"Vero bene essere qui per le venti note, se vedi.\"",
+      "\"Per che porto correrebbe il tour saggio?\" \"Rari svelto essere là per i venti tour, se taci.\""
+    ],
+    "choicesEnglish": [
+      "\"What time would you like to reserve for Saturday?\" \"We should be there by 8:30 PM, if that works.\"",
+      "\"Which way would he lose the dirty bag?\" \"Not bad to be there for the twenty bags, if you call.\"",
+      "\"Which news would he laugh at the fake kiss?\" \"Very well to be here for the twenty notes, if you see.\"",
+      "\"Which port would he run the wise tour?\" \"Rare quick to be there for the twenty tours, if you're silent.\""
+    ],
+    "correctAnswerItalian": "\"Per che ora vorrebbe prenotare per sabato?\" \"Dovremmo essere lì per le venti e trenta, se va bene.\"",
+    "correctAnswerEnglish": "\"What time would you like to book for Saturday?\" \"We're planning to arrive at eight-thirty, if that's okay.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Precisare l'orario di arrivo per un giorno festivo.",
+      "incorrectItalian": "No, il cliente comunica la propria preferenza oraria per il fine settimana.",
+      "correctEnglish": "Right! Specifying the arrival time for a holiday.",
+      "incorrectEnglish": "No, the customer communicates his hourly preference for the weekend."
+    }
+  },
+  {
+    "id": "s35-s52",
+    "italian": "\"Ho bisogno di una conferma via messaggio, è possibile?\" \"Certamente, le invio subito un SMS con i dettagli del tavolo.\"",
+    "english": "\"I need a confirmation via message, is it possible?\" \"Certainly, I'll send you an SMS right away with the table details.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ho bisogno di una conferma via messaggio, è possibile?\" \"Certamente, le invio subito un SMS con i dettagli del tavolo.\"",
+      "\"Ho voglia di una via sporca via fango, è rario?\" \"No male, le perdo subito una borsa con i fischio della via.\"",
+      "\"Ho news di una nota finta via bacio, è finto?\" \"Vero rari, le rido subito un bacio con i re della news.\"",
+      "\"Ho porto di una gita saggia via tour, è lungo?\" \"Saggio svelto, le corro subito una gita con i tour del porto.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I get a text confirmation?\" \"Of course; I'll send a message with your table details now.\"",
+      "\"I want a dirty street via mud, is it rare?\" \"Not bad, I'll lose a bag for you now with the street whistles.\"",
+      "\"I have news of a fake note via kiss, is it fake?\" \"True rare, I'll laugh a kiss for you now with the news kings.\"",
+      "\"I have port of a wise trip via tour, is it long?\" \"Wise quick, I'll run a trip for you now with the port tours.\""
+    ],
+    "correctAnswerItalian": "\"Ho bisogno di una conferma via messaggio, è possibile?\" \"Certamente, le invio subito un SMS con i dettagli del tavolo.\"",
+    "correctAnswerEnglish": "\"Could you send me a text confirmation, please?\" \"Certainly; I'll send an SMS with your table details right away.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Utilizzare la tecnologia mobile per validare l'appuntamento.",
+      "incorrectItalian": "No, il cliente richiede una prova scritta digitale e lo staff acconsente.",
+      "correctEnglish": "Great! Using mobile technology to validate the appointment.",
+      "incorrectEnglish": "No, the customer requests a digital written proof and the staff agrees."
+    }
+  },
+  {
+    "id": "s35-s53",
+    "italian": "\"Siamo spiacenti, ma il tavolo è riservato per un tempo massimo di due ore.\" \"Nessun problema, finiremo sicuramente prima.\"",
+    "english": "\"We are sorry, but the table is reserved for a maximum time of two hours.\" \"No problem, we will definitely finish before (then).\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo spiacenti, ma il tavolo è riservato per un tempo massimo di due ore.\" \"Nessun problema, finiremo sicuramente prima.\"",
+      "\"Siamo sporchi, ma la via è persa per un metro massimo di fango.\" \"Nessun fischio, perderemo svelto là.\"",
+      "\"Siamo finti, ma la news è risa per un bacio massimo di re.\" \"Nessuna nota, rideremo rari qui.\"",
+      "\"Siamo saggi, ma il porto è corso per un tour massimo di gita.\" \"Nessun porto, correremo lungo mai.\""
+    ],
+    "choicesEnglish": [
+      "\"Sorry, the table is only available for two hours max.\" \"No problem, we'll be done before that.\"",
+      "\"We're dirty, but the street is lost for a maximum meter of mud.\" \"No whistle, we'll lose quickly there.\"",
+      "\"We're fake, but the news is laughed for a maximum king's kiss.\" \"No note, we'll laugh rarely here.\"",
+      "\"We're wise, but the port is run for a maximum trip tour.\" \"No port, we'll run long never.\""
+    ],
+    "correctAnswerItalian": "\"Siamo spiacenti, ma il tavolo è riservato per un tempo massimo di due ore.\" \"Nessun problema, finiremo sicuramente prima.\"",
+    "correctAnswerEnglish": "\"I'm sorry; we have this table reserved again in two hours.\" \"That's fine; we'll definitely be finished by then.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Accettare i limiti temporali imposti dal ristorante per la rotazione dei tavoli.",
+      "incorrectItalian": "No, il personale avvisa del limite di sosta e il cliente garantisce di rispettarlo.",
+      "correctEnglish": "Exactly! Accepting the time limits imposed by the restaurant for table rotation.",
+      "incorrectEnglish": "No, the staff warns of the stay limit and the customer guarantees to respect it."
+    }
+  },
+  {
+    "id": "s35-s54",
+    "italian": "\"Posso spostare la prenotazione dal pomeriggio alla sera?\" \"Un attimo che controllo... per stasera abbiamo ancora un posto libero fuori.\"",
+    "english": "\"Can I move the booking from the afternoon to the evening?\" \"A moment while I check... for tonight we still have a free spot outside.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso spostare la prenotazione dal pomeriggio alla sera?\" \"Un attimo che controllo... per stasera abbiamo ancora un posto libero fuori.\"",
+      "\"Posso perdere la via sporca dalla borsa alla cassa?\" \"Un'ora che perdo... no, per ieri abbiamo ancora un fango rari là.\"",
+      "\"Posso ridere la news finta dal bacio al re?\" \"Un bacio che rido... sì, per ora abbiamo ancora una nota finta qui.\"",
+      "\"Posso correre la gita lunga dal tour al porto?\" \"Un tour che corro... no, per mai abbiamo ancora una piazza saggia svelto.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I change the booking from afternoon to evening?\" \"Let me check... we have one table left outdoors tonight.\"",
+      "\"Can I lose the dirty street from the bag to the register?\" \"An hour that I lose... no, for yesterday we still have a rare mud there.\"",
+      "\"Can I laugh at the fake news from the kiss to the king?\" \"A kiss that I laugh... yes, for now we still have a fake note here.\"",
+      "\"Can I run the long trip from the tour to the port?\" \"A tour that I run... no, for never we still have a wise square quickly.\""
+    ],
+    "correctAnswerItalian": "\"Posso spostare la prenotazione dal pomeriggio alla sera?\" \"Un attimo che controllo... per stasera abbiamo ancora un posto libero fuori.\"",
+    "correctAnswerEnglish": "\"Could I move my reservation from this afternoon to this evening?\" \"Let me check... we actually have one table left available outdoors for tonight.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Cambiare la fascia oraria del pasto e ricevere un'opzione di posizionamento.",
+      "incorrectItalian": "No, il cliente chiede un posticipo e lo staff trova l'ultima disponibilità all'aperto.",
+      "correctEnglish": "Right! Changing the meal's time slot and receiving a seating option.",
+      "incorrectEnglish": "No, the customer asks for a postponement and the staff finds the last outdoor availability."
+    }
+  },
+  {
+    "id": "s35-s55",
+    "italian": "\"Siamo in dieci, avete un tavolo unico o dobbiamo dividerci?\" \"Per dieci persone abbiamo una sala riservata molto comoda.\"",
+    "english": "\"There are ten of us, do you (plural) have a single table or must we split up?\" \"For ten people we have a very comfortable private room (reserved hall).\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo in dieci, avete un tavolo unico o dobbiamo dividerci?\" \"Per dieci persone abbiamo una sala riservata molto comoda.\"",
+      "\"Perdiamo in dieci, avete una via sporca o dobbiamo chiamarci?\" \"Per dieci borse abbiamo una cassa raria molto cara.\"",
+      "\"Ridiamo in dieci, avete una news finta o dobbiamo vederci?\" \"Per dieci baci abbiamo una nota sorda molto finta.\"",
+      "\"Corriamo in dieci, avete una gita lunga o dobbiamo tacerci?\" \"Per dieci tour abbiamo una piazza saggia molto lunga.\""
+    ],
+    "choicesEnglish": [
+      "\"We are ten; one table or split up?\" \"For ten we have a private room that's very comfortable.\"",
+      "\"We lose in ten; dirty street or call ourselves?\" \"For ten bags we have a rare register that's very expensive.\"",
+      "\"We laugh in ten; fake news or see ourselves?\" \"For ten kisses we have a deaf note that's very fake.\"",
+      "\"We run in ten; long trip or be silent?\" \"For ten tours we have a wise square that's very long.\""
+    ],
+    "correctAnswerItalian": "\"Siamo in dieci, avete un tavolo unico o dobbiamo dividerci?\" \"Per dieci persone abbiamo una sala riservata molto comoda.\"",
+    "correctAnswerEnglish": "\"There are ten of us; can we all sit together at one table?\" \"For a party of ten, we have a very nice private dining area available.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Organizzare un grande evento di gruppo con una soluzione spaziosa.",
+      "incorrectItalian": "No, si parla della gestione di una tavolata numerosa in uno spazio dedicato del ristorante.",
+      "correctEnglish": "Great! Organizing a large group event with a spacious solution.",
+      "incorrectEnglish": "No, it's about managing a large table in a dedicated area of the restaurant."
+    }
+  },
+  {
+    "id": "s35-s56",
+    "italian": "\"Il nostro sito per prenotare online è in manutenzione, chiami più tardi.\" \"Va bene, riproverò tra un'ora per telefono allora.\"",
+    "english": "\"Our site for online booking is under maintenance, call later.\" \"Alright, I'll try again in an hour by phone then.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il nostro sito per prenotare online è in manutenzione, chiami più tardi.\" \"Va bene, riproverò tra un'ora per telefono allora.\"",
+      "\"La nostra via per perdere borsa è in fango, chiami rari.\" \"No male, riperderò tra un'ora per cassa allora.\"",
+      "\"La nostra news per ridere bacio è in finto, chiami sordo.\" \"Sì bene, ririderò tra un'ora per nota allora.\"",
+      "\"Il nostro porto per correre tour è in saggio, chiami lungo.\" \"Rari svelto, ricorderò tra un'ora per gita allora.\""
+    ],
+    "choicesEnglish": [
+      "\"Our online booking site is down; call back later.\" \"Okay, I'll try calling you in an hour then.\"",
+      "\"Our way to lose the bag is in mud, call rare.\" \"Not bad, I'll lose again in an hour by register then.\"",
+      "\"Our news to laugh at the kiss is in fake, call deaf.\" \"Yes fine, I'll laugh again in an hour by note then.\"",
+      "\"Our port to run the tour is in wise, call long.\" \"Rare quick, I'll run again in an hour by trip then.\""
+    ],
+    "correctAnswerItalian": "\"Il nostro sito per prenotare online è in manutenzione, chiami più tardi.\" \"Va bene, riproverò tra un'ora per telefono allora.\"",
+    "correctAnswerEnglish": "\"Our online reservation system is currently down; could you call back later?\" \"Alright; I'll try you again by phone in about an hour then.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Gestire un problema tecnico del canale digitale passando a quello vocale.",
+      "incorrectItalian": "No, lo staff avvisa del disservizio web e il cliente opta per la chiamata classica.",
+      "correctEnglish": "Exactly! Managing a technical problem of the digital channel by switching to the vocal one.",
+      "incorrectEnglish": "No, the staff warns of the web service interruption and the customer opts for the classic call."
+    }
+  },
+  {
+    "id": "s35-s57",
+    "italian": "\"Abbiamo spostato il vostro tavolo all'aperto, c'è un bel sole stasera.\" \"Fantastico, era proprio quello che desideravamo, grazie!\"",
+    "english": "\"We moved your (plural) table outdoors, there's a nice sun tonight.\" \"Fantastic, it was exactly what we desired, thanks!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Abbiamo spostato il vostro tavolo all'aperto, c'è un bel sole stasera.\" \"Fantastico, era proprio quello che desideravamo, grazie!\"",
+      "\"Abbiamo perso la vostra via al fango, c'è un caro sporco ora.\" \"Rari, era proprio quello che chiamavamo, prego!\"",
+      "\"Abbiamo riso la vostra nota al finto, c'è un vero bacio mai.\" \"Finto, era proprio quello che ridavamo, salve!\"",
+      "\"Abbiamo corso il vostro tour al porto, c'è un saggio tour dopo.\" \"Svelto, era proprio quello che corravamo, ciao!\""
+    ],
+    "choicesEnglish": [
+      "\"We moved your table outside; it's a beautiful evening.\" \"Fantastic; that's exactly what we wanted! Thanks!\"",
+      "\"We lost your street to the mud; it's very dirty now.\" \"Rare; that's exactly what we called! You're welcome!\"",
+      "\"We laughed at your note fakingly; it's a real kiss never.\" \"Fake; that's exactly what we laughed at! Hello!\"",
+      "\"We ran your tour to the port; it's a wise tour later.\" \"Quick; that's exactly what we ran! Bye!\""
+    ],
+    "correctAnswerItalian": "\"Abbiamo spostato il vostro tavolo all'aperto, c'è un bel sole stasera.\" \"Fantastico, era proprio quello che desideravamo, grazie!\"",
+    "correctAnswerEnglish": "\"We've moved your table outside since it's such a lovely evening.\" \"That's fantastic; that's exactly what we were hoping for. Thank you!\"",
+    "feedback": {
+      "correctItalian": "Giusto! Ricevere una gradita sorpresa dallo staff sulla posizione del tavolo.",
+      "incorrectItalian": "No, questa conversazione mostra il miglioramento del servizio basato sul clima favorevole.",
+      "correctEnglish": "Right! Receiving a welcome surprise from the staff regarding the table's location.",
+      "incorrectEnglish": "No, this conversation shows service improvement based on favorable weather."
+    }
+  },
+  {
+    "id": "s35-s58",
+    "italian": "\"Siamo in sei adulti e un neonato, serve spazio per il passeggino?\" \"Sì, se possibile un tavolo laterale così non ingombra la sala.\"",
+    "english": "\"We are six adults and a newborn, is space needed for the stroller?\" \"Yes, if possible a side table so it doesn't clutter the room.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo in sei adulti e un neonato, serve spazio per il passeggino?\" \"Sì, se possibile un tavolo laterale così non ingombra la sala.\"",
+      "\"Perdiamo in sei borse e un fango, serve fischio per la via?\" \"No rari, se possibile una cassa raria così non sporca la via.\"",
+      "\"Ridiamo in sei news e un bacio, serve nota per la news?\" \"Vero bene, se finto un re sordo così non rida la news.\"",
+      "\"Corriamo in sei gite e un tour, serve porto per la gita?\" \"Saggio svelto, se lungo un tour saggio così non corre la piazza.\""
+    ],
+    "choicesEnglish": [
+      "\"Six adults and a baby; do you need room for a stroller?\" \"Yes, a side table if possible so it's not in the way.\"",
+      "\"We lose in six bags and a mud, need whistle for the street?\" \"No rare, if possible a rare register so it doesn't dirty the street.\"",
+      "\"We laugh in six news and a kiss, need note for the news?\" \"Very well, if faked a deaf king so it doesn't laugh at the news.\"",
+      "\"We run in six trips and a tour, need port for the trip?\" \"Wise quick, if long a wise tour so it doesn't run the square.\""
+    ],
+    "correctAnswerItalian": "\"Siamo in sei adulti e un neonato, serve spazio per il passeggino?\" \"Sì, grazie mille, un tavolo laterale sarebbe perfetto.\"",
+    "correctAnswerEnglish": "\"There are six adults and an infant; will you need room for a stroller?\" \"Yes, thank you; a table off to the side would be perfect.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire la logistica degli arredi infantili per non disturbare gli altri clienti.",
+      "incorrectItalian": "No, si parla dell'ingombro del passeggino e della ricerca di una posizione defilata.",
+      "correctEnglish": "Great! Managing childcare furniture logistics so as not to disturb other customers.",
+      "incorrectEnglish": "No, it's about the stroller's clutter and searching for a secluded position."
+    }
+  },
+  {
+    "id": "s35-s59",
+    "italian": "\"Il totale della prenotazione è confermato per le venti?\" \"Sì, tutto confermato. Vi aspettiamo stasera nel nostro locale.\"",
+    "english": "\"Is the reservation total confirmed for eight PM?\" \"Yes, all confirmed. We wait for you tonight in our establishment.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il totale della prenotazione è confermato per le venti?\" \"Sì, tutto confermato. Vi aspettiamo stasera nel nostro locale.\"",
+      "\"Lo sporco della via raria è perso per le venti?\" \"No, tutto rari. Vi perdiamo stasera nel nostro fango.\"",
+      "\"Il finto della news finta è riso per le venti?\" \"Sì, tutto finto. Vi ridiamo stasera nel nostro re.\"",
+      "\"Il saggio della gita lunga è corso per le venti?\" \"No, tutto saggio. Vi corriamo stasera nel nostro porto.\""
+    ],
+    "choicesEnglish": [
+      "\"Is the booking confirmed for 8 PM?\" \"Yes, all set. We'll see you at the restaurant tonight.\"",
+      "\"Is the rare street dirt lost for eight?\" \"No, all rare. We lose you tonight in our mud.\"",
+      "\"Is the fake news laughed at for eight?\" \"Yes, all fake. We laugh at you tonight in our king.\"",
+      "\"Is the long trip wise for eight?\" \"No, all wise. We run you tonight in our port.\""
+    ],
+    "correctAnswerItalian": "\"Il totale della prenotazione è confermato per le venti?\" \"Sì, tutto confermato. Vi aspettiamo stasera nel nostro locale.\"",
+    "correctAnswerEnglish": "\"Is the reservation all set for eight o'clock?\" \"Yes; it's all confirmed. We look forward to seeing you this evening.\"",
+    "feedback": {
+      "correctItalian": "Esatto! La validazione finale dell'impegno tra cliente e ristoratore.",
+      "incorrectItalian": "No, questa conversazione chiude la fase di prenotazione con reciproca certezza.",
+      "correctEnglish": "Exactly! The final validation of the commitment between customer and restaurateur.",
+      "incorrectEnglish": "No, this conversation closes the reservation phase with mutual certainty."
+    }
+  },
+  {
+    "id": "s35-s60",
+    "italian": "\"Potremmo avere la ricevuta fiscale per la prenotazione aziendale?\" \"Certamente, la preparo subito alla cassa centrale per lei.\"",
+    "english": "\"Could we have the tax receipt for the business booking?\" \"Certainly, I'll prepare it for you (singular polite) at the central till immediately.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Potremmo avere la ricevuta fiscale per la prenotazione aziendale?\" \"Certamente, la preparo subito alla cassa centrale per lei.\"",
+      "\"Potremmo perdere la via sporca per la borsa raria?\" \"No saggio, la chiamo subito alla cassa nera per lui.\"",
+      "\"Potremmo ridere la news finta per la nota finta?\" \"Vero rari, la rido subito alla nota sorda per loro.\"",
+      "\"Potremmo correre la gita saggia per la piazza lunga?\" \"Saggio svelto, la corro subito al porto lungo per noi.\""
+    ],
+    "choicesEnglish": [
+      "\"Can we get a tax receipt for a business booking?\" \"Certainly; I'll get that ready at the main register for you.\"",
+      "\"Could we lose the dirty street for the rare bag?\" \"Not wise; I'll call it now at the black counter for him.\"",
+      "\"Could we laugh at the fake news for the fake note?\" \"True rare; I'll laugh at it now at the deaf note for them.\"",
+      "\"Could we run the wise trip for the long square?\" \"Wise quick; I'll run it now at the long port for us.\""
+    ],
+    "correctAnswerItalian": "\"Potremmo avere la ricevuta fiscale per la prenotazione aziendale?\" \"Certamente, la preparo subito alla cassa centrale per lei.\"",
+    "correctAnswerEnglish": "\"Could we get a formal tax receipt for this business reservation?\" \"Of course; I'll have that ready for you at the main counter.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Gestire la documentazione burocratica necessaria per pranzi o cene di lavoro.",
+      "incorrectItalian": "No, si parla della richiesta di un documento fiscale specifico e della disponibilità dello staff.",
+      "correctEnglish": "Right! Managing the bureaucratic documentation necessary for business lunches or dinners.",
+      "incorrectEnglish": "No, it's about the request for a specific tax document and the staff's availability."
     }
   }
 ]

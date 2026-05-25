@@ -1,104 +1,1562 @@
 [
   {
-    "id": "s32-s2",
-    "italian": "Il servizio è incluso nel totale?",
-    "english": "Is service included in the total?",
+    "id": "s32-s1",
+    "italian": "\"Scusi, possiamo avere il conto?\" \"Certamente, arrivo subito al vostro tavolo.\"",
+    "english": "\"Excuse me, can we have the bill?\" \"Certainly, I'll be right at your table.\"",
     "type": "sentence",
-    "choices": [
-      "Facciamo conti separati, per favore.",
-      "Mi scusi, credo ci sia un errore nel conto.",
-      "Il servizio è incluso nel totale?",
-      "Posso avere lo scontrino?"
+    "choicesItalian": [
+      "\"Scusi, possiamo avere il conto?\" \"Certamente, arrivo subito al vostro tavolo.\"",
+      "\"Ciao, possiamo perdere la via?\" \"No male, arrivo dopo alla vostra cassa.\"",
+      "\"Salve, possiamo ridere la news?\" \"Vero saggio, arrivo ora al vostro re.\"",
+      "\"Buongiorno, possiamo correre il tour?\" \"Sordo rari, arrivo mai alla vostra gita.\""
     ],
-    "correctAnswer": "Il servizio è incluso nel totale?",
+    "choicesEnglish": [
+      "\"Excuse me, can we have the bill?\" \"Certainly, I'll be right at your table.\"",
+      "\"Hi, can we lose the way?\" \"Not bad, I'll arrive later at your register.\"",
+      "\"Hello, can we laugh at the news?\" \"True wise, I'll arrive now at your king.\"",
+      "\"Good morning, can we run the tour?\" \"Deaf rare, I'll never arrive at your trip.\""
+    ],
+    "correctAnswerItalian": "\"Scusi, possiamo avere il conto?\" \"Certamente, arrivo subito al vostro tavolo.\"",
+    "correctAnswerEnglish": "\"Excuse me, could we get the check?\" \"Of course, I'll be right there at your table.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Il servizio è incluso nel totale?\"."
+      "correctItalian": "Ottimo! La richiesta classica per concludere il pasto al ristorante.",
+      "incorrectItalian": "No, questa conversazione riguarda la richiesta formale del conto al cameriere.",
+      "correctEnglish": "Great! The classic request to conclude a meal at a restaurant.",
+      "incorrectEnglish": "No, this conversation is about the formal request for the bill from the waiter."
+    }
+  },
+  {
+    "id": "s32-s2",
+    "italian": "\"Grazie. Possiamo pagare con la carta o accettate solo contanti?\" \"Sì, accettiamo tutte le carte di credito.\"",
+    "english": "\"Thanks. Can we pay by card or do you only accept cash?\" \"Yes, we accept all credit cards.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Grazie. Possiamo pagare con la carta o accettate solo contanti?\" \"Sì, accettiamo tutte le carte di credito.\"",
+      "\"Prego. Possiamo perdere con la via o chiamate solo borse?\" \"No, perdiamo tutte le vie di fango.\"",
+      "\"Salve. Possiamo ridere con la nota o vedete solo news?\" \"Vero, ridiamo tutte le news di re.\"",
+      "\"Ciao. Possiamo correre con il porto o tacciano solo gite?\" \"Saggio, corriamo tutti i tour di piazza.\""
+    ],
+    "choicesEnglish": [
+      "\"Thanks. Can we pay by card or only cash?\" \"Yes, we accept all credit cards.\"",
+      "\"You're welcome. Can we lose with the street or only call bags?\" \"No, we lose all mud streets.\"",
+      "\"Hello. Can we laugh with the note or only see news?\" \"True, we laugh at all king's news.\"",
+      "\"Bye. Can we run with the port or only silence trips?\" \"Wise, we run all square tours.\""
+    ],
+    "correctAnswerItalian": "\"Grazie. Possiamo pagare con la carta o accettate solo contanti?\" \"Sì, accettiamo tutte le carte di credito.\"",
+    "correctAnswerEnglish": "\"Thanks. Can we pay by card, or do you only take cash?\" \"Yes, we accept all major credit cards.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Chiarire i metodi di pagamento elettronici disponibili.",
+      "incorrectItalian": "No, si parla della scelta tra moneta fisica e pagamento con carta.",
+      "correctEnglish": "Exactly! Clarifying the available electronic payment methods.",
+      "incorrectEnglish": "No, it's about choosing between physical money and card payment."
     }
   },
   {
     "id": "s32-s3",
-    "italian": "Vorrei pagare con la carta, grazie.",
-    "english": "I would like to pay by card, thank you.",
+    "italian": "\"Portate il POS al tavolo o dobbiamo venire alla cassa?\" \"Purtroppo dovete passare alla cassa per il pagamento elettronico.\"",
+    "english": "\"Do you bring the card reader to the table or must we come to the till?\" \"Unfortunately you (plural) must go to the desk for electronic payment.\"",
     "type": "sentence",
-    "choices": [
-      "Posso avere lo scontrino?",
-      "Possiamo dividere il conto a metà?",
-      "Vorrei pagare con la carta, grazie.",
-      "Facciamo conti separati, per favore."
+    "choicesItalian": [
+      "\"Portate il POS al tavolo o dobbiamo venire alla cassa?\" \"Purtroppo dovete passare alla cassa per il pagamento elettronico.\"",
+      "\"Perdete la via al porto o dobbiamo ridere la news?\" \"Falso dovete correre la gita per il tour saggio.\"",
+      "\"Ridete il finto al re o dobbiamo tacere la nota?\" \"Vero dovete perdere la borsa per il fango sporco.\"",
+      "\"Correte il tour alla torre o dobbiamo chiamare la via?\" \"Rari dovete vedere il porto per la piazza lunga.\""
     ],
-    "correctAnswer": "Vorrei pagare con la carta, grazie.",
+    "choicesEnglish": [
+      "\"Do you bring the POS to the table or should we go to the register?\" \"Unfortunately you must go to the register for electronic payment.\"",
+      "\"Do you lose the way to the port or should we laugh at the news?\" \"False, you must run the trip for the wise tour.\"",
+      "\"Do you laugh at the fake to the king or should we silence the note?\" \"True, you must lose the bag for the dirty mud.\"",
+      "\"Do you run the tour to the tower or should we call the street?\" \"Rare, you must see the port for the long square.\""
+    ],
+    "correctAnswerItalian": "\"Portate il POS al tavolo o dobbiamo venire alla cassa?\" \"Purtroppo dovete passare alla cassa per il pagamento elettronico.\"",
+    "correctAnswerEnglish": "\"Do you bring the card reader to the table, or do we go to the counter?\" \"Unfortunately, you'll need to step up to the register for card payments.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Vorrei pagare con la carta, grazie.\"."
+      "correctItalian": "Giusto! Sapere dove recarsi per concludere la transazione.",
+      "incorrectItalian": "No, questa conversazione chiarisce la logistica del pagamento nel locale.",
+      "correctEnglish": "Right! Knowing where to go to conclude the transaction.",
+      "incorrectEnglish": "No, this conversation clarifies the logistics of payment in the establishment."
     }
   },
   {
     "id": "s32-s4",
-    "italian": "Facciamo conti separati, per favore.",
-    "english": "Separate bills, please.",
+    "italian": "\"Allora, quanto dobbiamo in tutto?\" \"Il totale è di ottanta euro, siamo in quattro.\"",
+    "english": "\"So, how much do we owe in all?\" \"The total is eighty euros, we are four (people).\"",
     "type": "sentence",
-    "choices": [
-      "Il servizio è incluso nel totale?",
-      "Facciamo conti separati, per favore.",
-      "Possiamo dividere il conto a metà?",
-      "Vorrei pagare con la carta, grazie."
+    "choicesItalian": [
+      "\"Allora, quanto dobbiamo in tutto?\" \"Il totale è di ottanta euro, siamo in quattro.\"",
+      "\"Quindi, quanto perdiamo in via?\" \"Lo sporco è di ottanta metri, siamo in borsa.\"",
+      "\"Ora, quanto ridiamo in news?\" \"Il finto è di ottanta baci, siamo in re.\"",
+      "\"Sempre, quanto corriamo in gita?\" \"Il saggio è di ottanta tour, siamo in porto.\""
     ],
-    "correctAnswer": "Facciamo conti separati, per favore.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Facciamo conti separati, per favore.\"."
-    }
-  },
-  {
-    "id": "s32-s6",
-    "italian": "Mi scusi, credo ci sia un errore nel conto.",
-    "english": "Excuse me, I think there is a mistake in the bill.",
-    "type": "sentence",
-    "choices": [
-      "Mi scusi, credo ci sia un errore nel conto.",
-      "Il servizio è incluso nel totale?",
-      "Posso avere lo scontrino?",
-      "Vorrei pagare con la carta, grazie."
+    "choicesEnglish": [
+      "\"So, how much do we owe in all?\" \"The total is eighty euros, there are four of us.\"",
+      "\"So, how much do we lose on the street?\" \"The dirt is eighty meters, we are in the bag.\"",
+      "\"Now, how much do we laugh at news?\" \"The fake is eighty kisses, we are in king.\"",
+      "\"Always, how much do we run on trip?\" \"The wise is eighty tours, we are in port.\""
     ],
-    "correctAnswer": "Mi scusi, credo ci sia un errore nel conto.",
+    "correctAnswerItalian": "\"Allora, quanto dobbiamo in tutto?\" \"Il totale è di ottanta euro, siamo in quattro.\"",
+    "correctAnswerEnglish": "\"So, how much is the total?\" \"The total comes to eighty euros, and there are four of us.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi scusi, credo ci sia un errore nel conto.\"."
+      "correctItalian": "Ottimo! Iniziare il calcolo per la divisione del conto tra amici.",
+      "incorrectItalian": "No, si parla del debito complessivo e del numero di persone presenti.",
+      "correctEnglish": "Great! Starting the calculation for splitting the bill among friends.",
+      "incorrectEnglish": "No, it's about the total debt and the number of people present."
     }
   },
   {
     "id": "s32-s5",
-    "italian": "Posso avere lo scontrino?",
-    "english": "Can I have the receipt?",
+    "italian": "\"Facciamo alla romana? Dividiamo in parti uguali?\" \"Sì, perfetto, quindi venti euro a testa.\"",
+    "english": "\"Shall we split it equally? Divide in equal parts?\" \"Yes, perfect, so twenty euros each.\"",
     "type": "sentence",
-    "choices": [
-      "Mi scusi, credo ci sia un errore nel conto.",
-      "Posso avere lo scontrino?",
-      "Vorrei pagare con la carta, grazie.",
-      "Il servizio è incluso nel totale?"
+    "choicesItalian": [
+      "\"Facciamo alla romana? Dividiamo in parti uguali?\" \"Sì, perfetto, quindi venti euro a testa.\"",
+      "\"Perdiamo alla via? Perdiamo in metri sporchi?\" \"No male, quindi venti borse a via.\"",
+      "\"Ridiamo alla news? Ridiamo in baci finti?\" \"Vero bene, quindi venti baci a re.\"",
+      "\"Corriamo alla gita? Corriamo in tour saggi?\" \"Rari rari, quindi venti tour a porto.\""
     ],
-    "correctAnswer": "Posso avere lo scontrino?",
+    "choicesEnglish": [
+      "\"Shall we split it? Divide into equal parts?\" \"Yes, perfect, so twenty euros each.\"",
+      "\"Shall we lose on the street? Lose in dirty meters?\" \"Not bad, so twenty bags per street.\"",
+      "\"Shall we laugh at news? Laugh in fake kisses?\" \"Very well, so twenty kisses per king.\"",
+      "\"Shall we run on the trip? Run in wise tours?\" \"Rare rare, so twenty tours per port.\""
+    ],
+    "correctAnswerItalian": "\"Facciamo alla romana? Dividiamo in parti uguali?\" \"Sì, perfetto, quindi venti euro a testa.\"",
+    "correctAnswerEnglish": "\"Should we split it 'alla romana'? Even shares?\" \"Yes, that's perfect; twenty euros each then.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Posso avere lo scontrino?\"."
+      "correctItalian": "Esatto! La modalità più comune per pagare in gruppo in Italia.",
+      "incorrectItalian": "No, questa conversazione propone e accetta la spartizione equa del conto.",
+      "correctEnglish": "Exactly! The most common way to pay in a group in Italy.",
+      "incorrectEnglish": "No, this conversation proposes and accepts an equal split of the bill."
     }
   },
   {
-    "id": "s32-s1",
-    "italian": "Possiamo dividere il conto a metà?",
-    "english": "Can we split the bill in half?",
+    "id": "s32-s6",
+    "italian": "\"Io ho solo contanti, voi pagate con la carta?\" \"Io pago la mia parte col bancomat alla cassa, tranquillo.\"",
+    "english": "\"I only have cash, are you (plural) paying by card?\" \"I'll pay my share with the card at the till, don't worry.\"",
     "type": "sentence",
-    "choices": [
-      "Possiamo dividere il conto a metà?",
-      "Vorrei pagare con la carta, grazie.",
-      "Mi scusi, credo ci sia un errore nel conto.",
-      "Posso avere lo scontrino?"
+    "choicesItalian": [
+      "\"Io ho solo contanti, voi pagate con la carta?\" \"Io pago la mia parte col bancomat alla cassa, tranquillo.\"",
+      "\"Io ho solo borse, voi perdete con la via?\" \"Io perdo la mia parte col fango alla cassa, svelto.\"",
+      "\"Io ho solo news, voi ridete con la nota?\" \"Io rido la mia parte col bacio al re, finto.\"",
+      "\"Io ho solo gite, voi correte con il tour?\" \"Io corro la mia parte col porto alla torre, saggio.\""
     ],
-    "correctAnswer": "Possiamo dividere il conto a metà?",
+    "choicesEnglish": [
+      "\"I only have cash, do you pay with the card?\" \"I'll pay my share with the card at the register, don't worry.\"",
+      "\"I only have bags, do you lose with the street?\" \"I'll lose my share with the mud at the register, quick.\"",
+      "\"I only have news, do you laugh with the note?\" \"I'll laugh my share with the kiss to the king, fake.\"",
+      "\"I only have trips, do you run with the tour?\" \"I'll run my share with the port at the tower, wise.\""
+    ],
+    "correctAnswerItalian": "\"Io ho solo contanti, voi pagate con la carta?\" \"Io pago la mia parte col bancomat alla cassa, tranquillo.\"",
+    "correctAnswerEnglish": "\"I've only got cash; are you guys using cards?\" \"I'm paying my part with my card at the desk, no problem.\"",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Possiamo dividere il conto a metà?\"."
+      "correctItalian": "Giusto! Coordinare i diversi strumenti di pagamento tra amici.",
+      "incorrectItalian": "No, si parla della gestione mista tra denaro fisico e moneta elettronica.",
+      "correctEnglish": "Right! Coordinating different payment tools among friends.",
+      "incorrectEnglish": "No, it's about mixed management between physical money and electronic currency."
+    }
+  },
+  {
+    "id": "s32-s7",
+    "italian": "\"Mi scusi, credo ci sia un errore nel conto del tavolo dieci.\" \"Vediamo... cosa c'è che non va secondo lei?\"",
+    "english": "\"Excuse me, I think there's a mistake in the bill for table ten.\" \"Let's see... what is wrong in your opinion?\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi, credo ci sia un errore nel conto del tavolo dieci.\" \"Vediamo... cosa c'è che non va secondo lei?\"",
+      "\"Mi chiami, credo ci sia un fango nella via del porto rari.\" \"Perdiamo... chi c'è che non perde secondo lui?\"",
+      "\"Mi ridi, credo ci sia un bacio nella news del re sordo.\" \"Ridiamo... dove c'è che non rida secondo loro?\"",
+      "\"Mi taci, credo ci sia un tour nella gita della torre lunga.\" \"Corriamo... quando c'è che non corra secondo voi?\""
+    ],
+    "choicesEnglish": [
+      "\"Excuse me, I think there's an error in the bill for table ten.\" \"Let's see... what is wrong according to you?\"",
+      "\"Call me, I think there is a mud in the street of the rare port.\" \"Let's lose... who is there not losing according to him?\"",
+      "\"Laugh at me, I think there is a kiss in the news of the deaf king.\" \"Let's laugh... where is there not laughing according to them?\"",
+      "\"Be silent for me, I think there is a tour in the trip of the long tower.\" \"Let's run... when is there not running according to you?\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, credo ci sia un errore nel conto del tavolo dieci.\" \"Vediamo... cosa c'è che non va secondo lei?\"",
+    "correctAnswerEnglish": "\"Pardon me, I think there's a mistake on the bill for table ten.\" \"Let me see... what seems to be the problem?\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Segnalare un'incongruenza in modo educato e ricevere una richiesta di chiarimento.",
+      "incorrectItalian": "No, il cliente contesta il totale e il cameriere si mostra disponibile al controllo.",
+      "correctEnglish": "Great! Reporting a discrepancy politely and receiving a request for clarification.",
+      "incorrectEnglish": "No, the customer disputes the total and the waiter shows willingness to check."
+    }
+  },
+  {
+    "id": "s32-s8",
+    "italian": "\"Qui c'è segnata una bottiglia di vino che non abbiamo mai preso.\" \"Ah, ha ragione, deve essere stato un errore del sistema.\"",
+    "english": "\"A bottle of wine is marked here that we never had (took).\" \"Ah, you're right, it must have been a system error.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Qui c'è segnata una bottiglia di vino che non abbiamo mai preso.\" \"Ah, ha ragione, deve essere stato un errore del sistema.\"",
+      "\"Là c'è persa una borsa di fango che non abbiamo mai sporcato.\" \"No, ha via, deve essere stato un fango della cassa.\"",
+      "\"Qui c'è risa una news di bacio che non abbiamo mai finto.\" \"Sì, ha bacio, deve essere stata una news del re.\"",
+      "\"Là c'è corsa una gita di tour che non abbiamo mai taciuto.\" \"Rari, ha porto, deve essere stata una gita della torre.\""
+    ],
+    "choicesEnglish": [
+      "\"A bottle of wine is marked here that we never took.\" \"Ah, you're right, it must have been a system error.\"",
+      "\"There is a mud bag lost that we never dirtied.\" \"No, you have a street, it must have been a register mud.\"",
+      "\"Here is a kiss news laughed that we never faked.\" \"Yes, you have a kiss, it must have been a king's news.\"",
+      "\"There is a trip tour run that we never silenced.\" \"Rare, you have a port, it must have been a tower trip.\""
+    ],
+    "correctAnswerItalian": "\"Qui c'è segnata una bottiglia di vino che non abbiamo mai preso.\" \"Ah, ha ragione, deve essere stato un errore del sistema.\"",
+    "correctAnswerEnglish": "\"There's a bottle of wine listed here that we never ordered.\" \"Ah, you're right; it must have been a computer error.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Identificare l'articolo sbagliato e ottenere l'ammissione dell'errore.",
+      "incorrectItalian": "No, si parla della contestazione di una voce specifica del conto non consumata.",
+      "correctEnglish": "Right! Identifying the wrong item and getting admission of the mistake.",
+      "incorrectEnglish": "No, it's about disputing a specific unconsumed bill entry."
+    }
+  },
+  {
+    "id": "s32-s9",
+    "italian": "\"Mi scusi tanto, le rifaccio subito lo scontrino corretto.\" \"Grazie mille, molto gentile da parte sua.\"",
+    "english": "\"I'm so sorry, I'll redo the correct receipt for you right away.\" \"Thanks a lot, very kind of you.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi tanto, le rifaccio subito lo scontrino corretto.\" \"Grazie mille, molto gentile da parte sua.\"",
+      "\"Mi perda tanto, le perdo subito la borsa sporca.\" \"Prego rari, molto caro da parte sua.\"",
+      "\"Mi rida tanto, le rido subito la news finta.\" \"Salve finto, molto finto da parte sua.\"",
+      "\"Mi taccia tanto, le taccio subito la gita saggia.\" \"Ciao svelto, molto saggio da parte sua.\""
+    ],
+    "choicesEnglish": [
+      "\"I am so sorry, I'll redo the correct receipt for you immediately.\" \"Thanks a lot, very kind of you.\"",
+      "\"Lose me so much, I'll lose the dirty bag for you immediately.\" \"You're welcome rare, very expensive of you.\"",
+      "\"Laugh at me so much, I'll laugh at the fake news for you immediately.\" \"Hello fake, very fake of you.\"",
+      "\"Silence me so much, I'll silence the wise trip for you immediately.\" \"Bye quickly, very wise of you.\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi tanto, le rifaccio subito lo scontrino corretto.\" \"Grazie mille, molto gentile da parte sua.\"",
+    "correctAnswerEnglish": "\"I apologize; I'll print the corrected receipt for you now.\" \"Thank you so much; that's very kind of you.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Risolvere il disguido con professionalità e cortesia.",
+      "incorrectItalian": "No, questa conversazione mostra la risoluzione positiva di un errore sul conto.",
+      "correctEnglish": "Exactly! Resolving the mix-up with professionalism and courtesy.",
+      "incorrectEnglish": "No, this conversation shows the positive resolution of a bill error."
+    }
+  },
+  {
+    "id": "s32-s10",
+    "italian": "\"Il servizio è incluso nel prezzo totale della cena?\" \"Sì, il coperto e il servizio sono già calcolati nel conto.\"",
+    "english": "\"Is service included in the total price of the dinner?\" \"Yes, the cover and service are already calculated in the bill.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il servizio è incluso nel prezzo totale della cena?\" \"Sì, il coperto e il servizio sono già calcolati nel conto.\"",
+      "\"Lo sporco è perso nel metro totale della via?\" \"No, il fango e la borsa sono già chiamati nel re.\"",
+      "\"Il finto è riso nella nota totale della news?\" \"Sì, il bacio e la news sono già visti nel finto.\"",
+      "\"Il saggio è corso nel porto totale della gita?\" \"No, il tour e la gita sono già taciuti nel saggio.\""
+    ],
+    "choicesEnglish": [
+      "\"Is service included in the total dinner price?\" \"Yes, cover and service are already calculated in the check.\"",
+      "\"Is the dirt lost in the total meter of the street?\" \"No, the mud and the bag are already called in the king.\"",
+      "\"Is the fake laughed in the total news note?\" \"Yes, the kiss and the news are already seen in the fake.\"",
+      "\"Is the wise run in the total trip port?\" \"No, the tour and the trip are already silenced in the wise.\""
+    ],
+    "correctAnswerItalian": "\"Il servizio è incluso nel prezzo totale della cena?\" \"Sì, il coperto e il servizio sono già calcolati nel conto.\"",
+    "correctAnswerEnglish": "\"Is service included in the total price of the meal?\" \"Yes, both the cover charge and service are already in the total.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere informazioni sui costi accessori tipici dei ristoranti italiani.",
+      "incorrectItalian": "No, si parla della verifica se bisogna aggiungere o meno soldi per il servizio.",
+      "correctEnglish": "Right! Asking for information on accessory costs typical of Italian restaurants.",
+      "incorrectEnglish": "No, it's about verifying whether or not to add money for service."
+    }
+  },
+  {
+    "id": "s32-s11",
+    "italian": "\"Ecco comunque una piccola mancia per lei, il servizio è stato ottimo.\" \"Grazie mille, molto gentile da parte sua. Buona serata!\"",
+    "english": "\"Here's a small tip for you anyway, the service was excellent.\" \"Thanks a lot, very kind of you. Have a good evening!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ecco comunque una piccola mancia per lei, il servizio è stato ottimo.\" \"Grazie mille, molto gentile da parte sua. Buona serata!\"",
+      "\"Prego comunque una grande borsa per te, lo sporco è stato caro.\" \"Prego rari, molto sporco da parte sua. Ciao!\"",
+      "\"Salve comunque una raria news per lui, il finto è stato sordo.\" \"Vero saggio, molto finto da parte sua. Auguri!\"",
+      "\"Ciao comunque una lunga gita per noi, il saggio è stato lungo.\" \"Rari svelto, molto saggio da parte sua. Baci!\""
+    ],
+    "choicesEnglish": [
+      "\"Here's a small tip for you anyway, the service was great.\" \"Thanks a lot, very kind of you. Good evening!\"",
+      "\"You're welcome a big bag anyway, the dirt was expensive.\" \"You're welcome rare, very dirty of you. Bye!\"",
+      "\"Hello a rare news anyway, the fake was deaf.\" \"True wise, very fake of you. Best wishes!\"",
+      "\"Bye a long trip anyway, the wise was long.\" \"Rare quick, very wise of you. Kisses!\""
+    ],
+    "correctAnswerItalian": "\"Ecco comunque una piccola mancia per lei, il servizio è stato ottimo.\" \"Grazie mille, molto gentile da parte sua. Buona serata!\"",
+    "correctAnswerEnglish": "\"I'd like to leave a little tip anyway; the service was excellent.\" \"Thank you so much; that's very kind of you. Have a nice night!\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Premiare l'eccellenza con un gesto di cortesia e congedarsi.",
+      "incorrectItalian": "No, il cliente decide di lasciare una mancia nonostante sia già inclusa, per merito.",
+      "correctEnglish": "Great! Rewarding excellence with a gesture of courtesy and taking leave.",
+      "incorrectEnglish": "No, the customer decides to leave a tip despite it being already included, due to merit."
+    }
+  },
+  {
+    "id": "s32-s12",
+    "italian": "\"Altrettanto! Ci vediamo presto, spero.\"",
+    "english": "\"The same to you! See you soon, I hope.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Altrettanto! Ci vediamo presto, spero.\"",
+      "\"Raramente! Ci perdiamo là, caro.\"",
+      "\"Fintamente! Ci ridiamo dopo, vero.\"",
+      "\"Saggiamente! Ci corriamo mai, svelto.\""
+    ],
+    "choicesEnglish": [
+      "\"The same to you! We'll see each other soon, I hope.\"",
+      "\"Rarely! We lose each other there, dear.\"",
+      "\"Fakingly! We laugh at each other later, true.\"",
+      "\"Wisely! We never run, quick.\""
+    ],
+    "correctAnswerItalian": "\"Altrettanto! Ci vediamo presto, spero.\"",
+    "correctAnswerEnglish": "\"You too! Hope to see you again soon.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Ricambiare il saluto con la promessa amichevole di tornare.",
+      "incorrectItalian": "No, rispondi gentilmente all'augurio del cameriere.",
+      "correctEnglish": "Exactly! Reciprocating the greeting with a friendly promise to return.",
+      "incorrectEnglish": "No, you're responding kindly to the waiter's wish."
+    }
+  },
+  {
+    "id": "s32-s13",
+    "italian": "\"Quanto le devo per i due caffè e il cornetto al bancone?\" \"Sono tre euro e cinquanta in tutto, ecco lo scontrino.\"",
+    "english": "\"How much do I owe you for the two coffees and the croissant at the counter?\" \"It's three euros and fifty in all, here's the receipt.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto le devo per i due caffè e il cornetto al bancone?\" \"Sono tre euro e cinquanta in tutto, ecco lo scontrino.\"",
+      "\"Quando te perdo per le due borse e il fango alla via?\" \"Sono tre metri e fango in tutto, ecco la cassa.\"",
+      "\"Chi ci rido per le due news e il bacio al re?\" \"Sono tre baci e news in tutto, ecco la nota.\"",
+      "\"Dove vi corro per le due gite e il porto alla torre?\" \"Sono tre tour e gita in tutto, ecco il porto.\""
+    ],
+    "choicesEnglish": [
+      "\"How much do I owe you for the two coffees and croissant at the counter?\" \"Three fifty total, here is the receipt.\"",
+      "\"When do I lose you for the two bags and mud on the street?\" \"Three meters and mud total, here is the counter.\"",
+      "\"Who do I laugh at for the two news and kiss to the king?\" \"Three kisses and news total, here is the note.\"",
+      "\"Where do I run for the two trips and port to the tower?\" \"Three tours and trip total, here is the port.\""
+    ],
+    "correctAnswerItalian": "\"Quanto le devo per i due caffè e il cornetto al bancone?\" \"Sono tre euro e cinquanta in tutto, ecco lo scontrino.\"",
+    "correctAnswerEnglish": "\"How much do I owe you for the two coffees and the croissant?\" \"That'll be three fifty in total; here's your receipt.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Gestire il pagamento rapido di una colazione o spuntino al bar.",
+      "incorrectItalian": "No, questa conversazione riguarda il saldo immediato di articoli da bar consumati in piedi.",
+      "correctEnglish": "Right! Managing the quick payment of a breakfast or snack at the bar.",
+      "incorrectEnglish": "No, this conversation is about the immediate settlement of bar items consumed while standing."
+    }
+  },
+  {
+    "id": "s32-s14",
+    "italian": "\"Ecco a lei cinque euro.\" \"Grazie, ecco il resto di un euro e cinquanta.\"",
+    "english": "\"Here's five euros for you.\" \"Thanks, here's the change of one euro and fifty (cents).\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ecco a lei five euro.\" \"Grazie, ecco il resto di un euro e cinquanta.\"",
+      "\"Prego a te cinque borse.\" \"No male, ecco la via di un metro e fango.\"",
+      "\"Salve a loro cinque news.\" \"Vero saggio, ecco la nota di un bacio e news.\"",
+      "\"Ciao a tutti cinque gite.\" \"Rari svelto, ecco il porto di un tour e piazza.\""
+    ],
+    "choicesEnglish": [
+      "\"Here is five euros.\" \"Thanks, here is the change of one fifty.\"",
+      "\"You're welcome five bags.\" \"Not bad, here is the street of one meter and mud.\"",
+      "\"Hello five news.\" \"True wise, here is the note of one kiss and news.\"",
+      "\"Bye five trips.\" \"Rare quick, here is the port of one tour and square.\""
+    ],
+    "correctAnswerItalian": "\"Ecco a lei cinque euro.\" \"Grazie, ecco il resto di un euro e cinquanta.\"",
+    "correctAnswerEnglish": "\"Here's five euros.\" \"Thank you, and here is one-fifty in change.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Completare lo scambio di moneta fisica e ricevere il resto corretto.",
+      "incorrectItalian": "No, si parla del pagamento in contanti e del calcolo del resto dovuto.",
+      "correctEnglish": "Exactly! Completing the physical money exchange and receiving the correct change.",
+      "incorrectEnglish": "No, it's about cash payment and calculating the change due."
+    }
+  },
+  {
+    "id": "s32-s15",
+    "italian": "\"Grazie, arrivederci e buona giornata!\" \"Altrettanto a lei, arrivederci!\"",
+    "english": "\"Thanks, goodbye and have a good day!\" \"The same to you, goodbye!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Grazie, arrivederci e buona giornata!\" \"Altrettanto a lei, arrivederci!\"",
+      "\"Prego, ci perdiamo e buona via!\" \"Raramente a te, ci perdiamo!\"",
+      "\"Salve, ci ridiamo e buona news!\" \"Fintamente a lui, ci ridiamo!\"",
+      "\"Ciao, ci corriamo e buona gita!\" \"Saggiamente a loro, ci corriamo!\""
+    ],
+    "choicesEnglish": [
+      "\"Thanks, goodbye and have a nice day!\" \"Same to you, goodbye!\"",
+      "\"You're welcome, we lose each other and good street!\" \"Rarely to you, we lose each other!\"",
+      "\"Hello, we laugh and good news!\" \"Fakingly to him, we laugh!\"",
+      "\"Bye, we run and good trip!\" \"Wisely to them, we run!\""
+    ],
+    "correctAnswerItalian": "\"Grazie, arrivederci e buona giornata!\" \"Altrettanto a lei, arrivederci!\"",
+    "correctAnswerEnglish": "\"Thanks, goodbye and have a great day!\" \"The same to you, goodbye!\"",
+    "feedback": {
+      "correctItalian": "Giusto! Il congedo finale reciproco tra cliente e personale.",
+      "incorrectItalian": "No, questa conversazione chiude l'interazione con cortesia standard.",
+      "correctEnglish": "Right! The final mutual farewell between customer and staff.",
+      "incorrectEnglish": "No, this conversation closes the interaction with standard courtesy."
+    }
+  },
+  {
+    "id": "s32-s16",
+    "italian": "\"Vorremmo fare conti separati, se possibile, per il nostro gruppo.\" \"Purtroppo nelle ore di punta preferiamo un conto unico al tavolo.\"",
+    "english": "\"We would like to have separate checks, if possible, for our group.\" \"Unfortunately in peak hours we prefer a single bill at the table.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Vorremmo fare conti separati, se possibile, per il nostro gruppo.\" \"Purtroppo nelle ore di punta preferiamo un conto unico al tavolo.\"",
+      "\"Vorremmo perdere borse sporche, se rario, per la nostra via.\" \"Falso nelle news finte ridiamo un bacio sordo al porto.\"",
+      "\"Vorremmo ridere news finte, se saggio, per il nostro re.\" \"Vero nelle gite lunghe corriamo un tour lungo alla torre.\"",
+      "\"Vorremmo correre gite sagge, se svelto, per il nostro porto.\" \"Rari nelle vie sporche perdiamo una borsa cara alla cassa.\""
+    ],
+    "choicesEnglish": [
+      "\"We'd like separate checks for our group if possible.\" \"Unfortunately during rush hours we prefer one bill per table.\"",
+      "\"We'd like to lose dirty bags, if rare, for our street.\" \"False in fake news we laugh a deaf kiss at the port.\"",
+      "\"We'd like to laugh at fake news, if wise, for our king.\" \"True in long trips we run a long tour to the tower.\"",
+      "\"We'd like to run wise trips, if quick, for our port.\" \"Rare in dirty streets we lose an expensive bag at the register.\""
+    ],
+    "correctAnswerItalian": "\"Vorremmo fare conti separati, se possibile, per il nostro gruppo.\" \"Purtroppo nelle ore di punta preferiamo un conto unico al tavolo.\"",
+    "correctAnswerEnglish": "\"We'd like to do separate checks for our group if possible.\" \"Unfortunately, during busy times we prefer to issue a single bill per table.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire la negoziazione sulla divisione del conto in momenti di affollamento.",
+      "incorrectItalian": "No, il personale spiega la politica del locale sulla gestione dei pagamenti multipli.",
+      "correctEnglish": "Great! Managing the negotiation on bill splitting during busy times.",
+      "incorrectEnglish": "No, the staff explains the establishment's policy on managing multiple payments."
+    }
+  },
+  {
+    "id": "s32-s17",
+    "italian": "\"Ok, allora paghiamo insieme e poi ci regoliamo noi fuori.\" \"Grazie della comprensione, ecco il totale aggiornato.\"",
+    "english": "\"Ok, then we (will) pay together and then we'll settle it ourselves outside.\" \"Thanks for understanding, here is the updated total.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ok, allora paghiamo insieme e poi ci regoliamo noi fuori.\" \"Grazie della comprensione, ecco il totale aggiornato.\"",
+      "\"No, dopo perdiamo insieme e ora ci chiamiamo noi là.\" \"Prego della perdita, ecco la via sporca.\"",
+      "\"Sì, prima ridiamo insieme e sempre ci vediamo noi qui.\" \"Salve della risata, ecco la news finta.\"",
+      "\"Mai, subito corriamo insieme e quasi ci tacciamo noi ora.\" \"Ciao della corsa, ecco il tour saggio.\""
+    ],
+    "choicesEnglish": [
+      "\"Ok, then we'll pay together and sort it out among ourselves outside.\" \"Thanks for understanding, here's the updated total.\"",
+      "\"No, after we lose together and now we call ourselves there.\" \"You're welcome for the loss, here's the dirty street.\"",
+      "\"Yes, first we laugh together and always we see ourselves here.\" \"Hello for the laugh, here is the fake news.\"",
+      "\"Never, immediately we run together and almost we are silent now.\" \"Bye for the run, here is the wise tour.\""
+    ],
+    "correctAnswerItalian": "\"Ok, allora paghiamo insieme e poi ci regoliamo noi fuori.\" \"Grazie della comprensione, ecco il totale aggiornato.\"",
+    "correctAnswerEnglish": "\"Alright, we'll just pay together and settle up among ourselves later.\" \"Thank you for understanding; here is the updated total.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Accettare la richiesta del ristorante e gestire la spesa internamente.",
+      "incorrectItalian": "No, questa conversazione mostra il compromesso tra il gruppo di amici e il cameriere.",
+      "correctEnglish": "Exactly! Accepting the restaurant's request and managing the expense internally.",
+      "incorrectEnglish": "No, this conversation shows the compromise between the group of friends and the waiter."
+    }
+  },
+  {
+    "id": "s32-s18",
+    "italian": "\"Mi scusi, la transazione è stata negata. Vuole riprovare?\" \"Strano. Forse è un problema del chip della mia carta.\"",
+    "english": "\"Excuse me, the transaction was denied. Do you want to try again?\" \"Strange. Maybe it's a problem with my card's chip.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi, la transazione è stata negata. Vuole riprovare?\" \"Strano. Forse è un problema del chip della mia carta.\"",
+      "\"Mi chiami, la via è stata sporca. Vuole perdere?\" \"Caro. Forse è un fango della borsa della mia via.\"",
+      "\"Mi ridi, la news è stata finta. Vuole ridere?\" \"Finto. Forse è un bacio della news della mia nota.\"",
+      "\"Mi tacci, la gita è stata lunga. Vuole correre?\" \"Saggio. Forse è un tour della gita del mio porto.\""
+    ],
+    "choicesEnglish": [
+      "\"Excuse me, the transaction was denied. Do you want to try again?\" \"Strange. Maybe it's a problem with my card's chip.\"",
+      "\"Call me, the street was dirty. Do you want to lose?\" \"Expensive. Maybe it's a bag mud of my street.\"",
+      "\"Laugh at me, the news was fake. Do you want to laugh?\" \"Fake. Maybe it's a news kiss of my note.\"",
+      "\"Silence me, the trip was long. Do you want to run?\" \"Wise. Maybe it's a trip tour of my port.\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, la transazione è stata negata. Vuole riprovare?\" \"Strano. Forse è un problema del chip della mia carta.\"",
+    "correctAnswerEnglish": "\"I'm sorry, the transaction was declined. Would you like to try again?\" \"That's odd. Maybe there's an issue with the chip on my card.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Gestire un imprevisto tecnico durante il pagamento elettronico.",
+      "incorrectItalian": "No, si parla del fallimento del prelievo e del sospetto malfunzionamento della carta.",
+      "correctEnglish": "Right! Managing a technical hitch during electronic payment.",
+      "incorrectEnglish": "No, it's about the withdrawal failure and the suspected card malfunction."
+    }
+  },
+  {
+    "id": "s32-s19",
+    "italian": "\"Provi col contactless, a volte funziona meglio.\" \"Ecco, ora è passata. Meno male, grazie dell'aiuto!\"",
+    "english": "\"Try with contactless, sometimes it works better.\" \"Here, it went through now. Thank goodness, thanks for the help!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Provi col contactless, a volte funziona meglio.\", \"Ecco, ora è passata. Meno male, grazie dell'aiuto!\"",
+      "\"Perda col fango, a metri perde meglio.\", \"Ecco, ora è sporca. Più caro, prego della via!\"",
+      "\"Ridi col bacio, a baci rida meglio.\", \"Ecco, ora è finta. Troppo rari, salve della news!\"",
+      "\"Corra col tour, a tour corra meglio.\", \"Ecco, ora è lunga. Assai saggio, ciao della gita!\""
+    ],
+    "choicesEnglish": [
+      "\"Try contactless, sometimes it works better.\" \"There, it went through now. Thank goodness, thanks for the help!\"",
+      "\"Lose with mud, by meters lose better.\" \"There, now it's dirty. More expensive, you're welcome for the street!\"",
+      "\"Laugh with the kiss, by kisses laugh better.\" \"There, now it's fake. Too rare, hello for the news!\"",
+      "\"Run with the tour, by tours run better.\" \"There, now it's long. Very wise, bye for the trip!\""
+    ],
+    "correctAnswerItalian": "\"Provi col contactless, a volte funziona meglio.\" \"Ecco, ora è passata. Meno male, grazie dell'aiuto!\"",
+    "correctAnswerEnglish": "\"Try the contactless reader; sometimes it works better.\" \"There we go, it went through. Thank goodness, thanks for your help!\"",
+    "feedback": {
+      "correctItalian": "Esatto! Trovare una soluzione alternativa di successo per pagare.",
+      "incorrectItalian": "No, questa conversazione mostra il successo del pagamento tramite sensore di prossimità.",
+      "correctEnglish": "Exactly! Finding a successful alternative solution for paying.",
+      "incorrectEnglish": "No, this conversation shows payment success via the proximity sensor."
+    }
+  },
+  {
+    "id": "s32-s20",
+    "italian": "\"Volete anche un amaro? Offre la casa per concludere la serata.\" \"Molto volentieri, grazie del pensiero!\"",
+    "english": "\"Would you (plural) like a digestif too? It's on the house to finish the evening.\" \"Very gladly, thanks for the thought!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Volete anche un amaro? Offre la casa per concludere la serata.\" \"Molto volentieri, grazie del pensiero!\"",
+      "\"Volete anche un fango? Perde la via per concludere lo sporco.\" \"Caro rari, prego della borsa!\"",
+      "\"Volete anche un bacio? Rida la news per concludere il finto.\" \"Vero bene, salve della nota!\"",
+      "\"Volete anche un tour? Corra la gita per concludere il saggio.\" \"Rari svelto, ciao del porto!\""
+    ],
+    "choicesEnglish": [
+      "\"Do you want a digestif? It's on the house to end the night.\" \"Gladly, thanks for the thought!\"",
+      "\"Do you want a mud? It loses the street to end the dirt.\" \"Dear rare, you're welcome for the bag!\"",
+      "\"Do you want a kiss? It laughs at the news to end the fake.\" \"Very well, hello for the note!\"",
+      "\"Do you want a tour? It runs the trip to end the wise.\" \"Rare quick, bye for the port!\""
+    ],
+    "correctAnswerItalian": "\"Volete anche un amaro? Offre la casa per concludere la serata.\" \"Molto volentieri, grazie del pensiero!\"",
+    "correctAnswerEnglish": "\"Would you like a digestif? The house is buying to end the night.\" \"We'd love to, thank you for the offer!\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Ricevere e accettare un omaggio tradizionale della ristorazione italiana.",
+      "incorrectItalian": "No, si parla del liquore finale offerto gratuitamente dal ristorante.",
+      "correctEnglish": "Great! Receiving and accepting a traditional Italian restaurant gift.",
+      "incorrectEnglish": "No, it's about the final liqueur offered for free by the restaurant."
+    }
+  },
+  {
+    "id": "s32-s21",
+    "italian": "\"Il totale è corretto, ma lo scontrino non è ancora uscito.\" \"Aspetti un attimo, la carta termica è finita.\"",
+    "english": "\"The total is correct, but the receipt hasn't come out yet.\" \"Wait a moment, the thermal paper has run out.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il totale è corretto, ma lo scontrino non è ancora uscito.\" \"Aspetti un attimo, la carta termica è finita.\"",
+      "\"Lo sporco è finto, ma la borsa non è ancora persa.\" \"Chiami un metro, la via sporca è raria.\"",
+      "\"Il fischio è sordo, ma la news non è ancora risa.\" \"Veda un bacio, la nota finta è sorda.\"",
+      "\"Il porto è rari, ma la gita non è ancora corsa.\" \"Taci un tour, la piazza lunga è saggia.\""
+    ],
+    "choicesEnglish": [
+      "\"The total is right, but the receipt hasn't come out yet.\" \"Wait a second, the thermal paper is finished.\"",
+      "\"The dirt is fake, but the bag isn't lost yet.\" \"Call a meter, the dirty street is rare.\"",
+      "\"The whistle is deaf, but the news isn't laughed yet.\" \"See a kiss, the fake note is deaf.\"",
+      "\"The port is rare, but the trip isn't run yet.\" \"Be silent for a tour, the long square is wise.\""
+    ],
+    "correctAnswerItalian": "\"Il totale è corretto, ma lo scontrino non è ancora uscito.\" \"Aspetti un attimo, la carta termica è finita.\"",
+    "correctAnswerEnglish": "\"The total is right, but the receipt didn't print yet.\" \"Hang on a second; the thermal paper roll is empty.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Gestire un piccolo inconveniente tecnico con la stampante della cassa.",
+      "incorrectItalian": "No, il personale deve ricaricare la carta per emettere la prova di pagamento.",
+      "correctEnglish": "Right! Managing a small technical hitch with the till printer.",
+      "incorrectEnglish": "No, the staff needs to refill the paper to issue the payment proof."
+    }
+  },
+  {
+    "id": "s32-s22",
+    "italian": "\"Accettate American Express? Di solito non passa ovunque.\" \"Sì, accettiamo tutti i circuiti principali, compresa quella.\"",
+    "english": "\"Do you accept American Express? Usually it doesn't go everywhere.\" \"Yes, we accept all major circuits, including that one.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Accettate American Express? Di solito non passa ovunque.\" \"Sì, accettiamo tutti i circuiti principali, compresa quella.\"",
+      "\"Perdete borse sporche? Di solito non chiama ovunque.\" \"No, perdiamo tutte le vie rarie, compresa quella.\"",
+      "\"Ridete news finte? Di solito non rida ovunque.\" \"Sì, ridiamo tutti i baci sordi, compresa quella.\"",
+      "\"Correte gite lunghe? Di solito non corre ovunque.\" \"No, corriamo tutti i tour saggi, compresa quella.\""
+    ],
+    "choicesEnglish": [
+      "\"Do you take Amex? Usually it's not taken everywhere.\" \"Yes, we take all main circuits, including that.\"",
+      "\"Do you lose dirty bags? Usually it's not called everywhere.\" \"No, we lose all rare streets, including that.\"",
+      "\"Do you laugh at fake news? Usually it's not laughed everywhere.\" \"Yes, we laugh at all deaf kisses, including that.\"",
+      "\"Do you run long trips? Usually it's not run everywhere.\" \"No, we run all wise tours, including that.\""
+    ],
+    "correctAnswerItalian": "\"Accettate American Express? Di solito non passa ovunque.\" \"Sì, accettiamo tutti i circuiti principali, compresa quella.\"",
+    "correctAnswerEnglish": "\"Do you take American Express? It's often not accepted everywhere.\" \"Yes, we accept all major networks, including that one.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Verificare la compatibilità di carte meno comuni nei piccoli esercizi.",
+      "incorrectItalian": "No, il cliente chiede conferma per un circuito specifico e riceve risposta affermativa.",
+      "correctEnglish": "Exactly! Verifying the compatibility of less common cards in small establishments.",
+      "incorrectEnglish": "No, the customer asks for confirmation for a specific circuit and receives an affirmative answer."
+    }
+  },
+  {
+    "id": "s32-s23",
+    "italian": "\"Posso avere una ricevuta fiscale dettagliata per motivi di lavoro?\" \"Certamente, la compilo subito a mano se preferisce.\"",
+    "english": "\"Can I have a detailed tax receipt for work reasons?\" \"Certainly, I'll fill it out by hand right away if you prefer.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso avere una ricevuta fiscale dettagliata per motivi di lavoro?\" \"Certamente, la compilo subito a mano se preferisce.\"",
+      "\"Posso avere una borsa sporca raria per motivi di via?\" \"No saggio, la perdo subito a cassa se chiama.\"",
+      "\"Posso avere una news finta sorda per motivi di bacio?\" \"Vero rari, la rido subito a news se vede.\"",
+      "\"Posso avere una gita lunga svelta per motivi di porto?\" \"Rari sordo, la corro subito a torre se tace.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I have a detailed tax receipt for business reasons?\" \"Certainly, I'll fill it in by hand now if you prefer.\"",
+      "\"Can I have a rare dirty bag for street reasons?\" \"Not wise, I'll lose it now at the register if you call.\"",
+      "\"Can I have a deaf fake news for kiss reasons?\" \"True rare, I'll laugh at it now in the news if you see.\"",
+      "\"Can I have a quick long trip for port reasons?\" \"Rare deaf, I'll run it now at the tower if you're silent.\""
+    ],
+    "correctAnswerItalian": "\"Posso avere una ricevuta fiscale dettagliata per motivi di lavoro?\" \"Certamente, la compilo subito a mano se preferisce.\"",
+    "correctAnswerEnglish": "\"Could I have a detailed tax receipt for business purposes?\" \"Of course; I can fill one out by hand for you right now if you like.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Richiedere documentazione specifica per il rimborso spese aziendale.",
+      "incorrectItalian": "No, si parla della necessità di un documento più formale del semplice scontrino.",
+      "correctEnglish": "Right! Requesting specific documentation for corporate expense reimbursement.",
+      "incorrectEnglish": "No, it's about needing a more formal document than a simple receipt."
+    }
+  },
+  {
+    "id": "s32-s24",
+    "italian": "\"Quanto viene a testa se dividiamo per sei?\" \"Dovrebbero essere quindici euro e ottanta centesimi ognuno.\"",
+    "english": "\"How much is it per head if we divide by six?\" \"It should be fifteen euros and eighty cents each.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto viene a testa se dividiamo per sei?\" \"Dovrebbero essere quindici euro e ottanta centesimi ognuno.\"",
+      "\"Quando perde a via se perdiamo per sei?\" \"Dovrebbero essere quindici borse e fango sporco ognuno.\"",
+      "\"Chi rida a news se ridiamo per sei?\" \"Dovrebbero essere quindici baci e news finta ognuno.\"",
+      "\"Dove corre a gita se corriamo per sei?\" \"Dovrebbero essere quindici tour e piazza saggia ognuno.\""
+    ],
+    "choicesEnglish": [
+      "\"How much is it each if we divide by six?\" \"It should be fifteen euros and eighty cents each.\"",
+      "\"When does it lose on the street if we lose for six?\" \"It should be fifteen bags and dirty mud each.\"",
+      "\"Who laughs at news if we laugh for six?\" \"It should be fifteen kisses and fake news each.\"",
+      "\"Where does it run on trip if we run for six?\" \"It should be fifteen tours and wise square each.\""
+    ],
+    "correctAnswerItalian": "\"Quanto viene a testa se dividiamo per sei?\" \"Dovrebbero essere quindici euro e ottanta centesimi ognuno.\"",
+    "correctAnswerEnglish": "\"What's the per-person share if we split it six ways?\" \"It should be fifteen euros and eighty cents apiece.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Fare i calcoli precisi per dividere la spesa tra i partecipanti.",
+      "incorrectItalian": "No, questa conversazione stabilisce la quota esatta per una divisione tra sei persone.",
+      "correctEnglish": "Great! Doing the precise math to split the expense among participants.",
+      "incorrectEnglish": "No, this conversation establishes the exact share for a split among six people."
+    }
+  },
+  {
+    "id": "s32-s25",
+    "italian": "\"Stasera offro io, è il mio compleanno!\" \"Ma no, non dovevi! Allora grazie mille e auguri!\"",
+    "english": "\"Tonight I'm treating (everyone), it's my birthday!\" \"Oh no, you didn't have to! Well, thanks a lot and best wishes!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Stasera offro io, è il mio compleanno!\" \"Ma no, non dovevi! Allora grazie mille e auguri!\"",
+      "\"Domani perdo io, è la mia via sporca!\" \"Ma rari, non perdevi! Allora prego rari e fango!\"",
+      "\"Oggi rido io, è la mia news finta!\" \"Ma vero, non ridevi! Allora salve finto e baci!\"",
+      "\"Sempre corro io, è la mia gita lunga!\" \"Ma saggio, non correvi! Allora ciao svelto e tour!\""
+    ],
+    "choicesEnglish": [
+      "\"Tonight it's on me, it's my birthday!\" \"Oh no, you shouldn't have! Well, thanks so much and happy birthday!\"",
+      "\"Tomorrow I lose, it's my dirty street!\" \"But rare, you weren't losing! Then you're welcome rare and mud!\"",
+      "\"Today I laugh, it's my fake news!\" \"But true, you weren't laughing! Then hello fake and kisses!\"",
+      "\"Always I run, it's my long trip!\" \"But wise, you weren't running! Then bye quick and tours!\""
+    ],
+    "correctAnswerItalian": "\"Stasera offro io, è il mio compleanno!\" \"Ma no, non dovevi! Allora grazie mille e auguri!\"",
+    "correctAnswerEnglish": "\"It's my treat tonight; it's my birthday!\" \"Oh, you really shouldn't have! Well, thank you very much, and happy birthday!\"",
+    "feedback": {
+      "correctItalian": "Esatto! Un gesto generoso per festeggiare una ricorrenza speciale.",
+      "incorrectItalian": "No, uno degli amici decide di pagare per tutti per celebrare il suo compleanno.",
+      "correctEnglish": "Exactly! A generous gesture to celebrate a special occasion.",
+      "incorrectEnglish": "No, one of the friends decides to pay for everyone to celebrate his birthday."
+    }
+  },
+  {
+    "id": "s32-s26",
+    "italian": "\"Mi scusi, ma credo che abbiate contato un dolce in più.\" \"Ha ragione, tolgo subito la voce errata dal totale.\"",
+    "english": "\"Excuse me, but I think you counted one dessert too many.\" \"You're right, I'll remove the wrong item from the total immediately.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi, ma credo che abbiate contato un dolce in più.\" \"Ha ragione, tolgo subito la voce errata dal totale.\"",
+      "\"Mi chiami, ma credo che abbiate perso un fango in via.\" \"Falso, perdo subito la borsa sporca dal porto.\"",
+      "\"Mi ridi, ma credo che abbiate riso un bacio in news.\" \"Vero, rido subito la nota finta dal re.\"",
+      "\"Mi tacci, ma credo che abbiate corso un tour in gita.\" \"Rari, corro subito la piazza lunga dal saggio.\""
+    ],
+    "choicesEnglish": [
+      "\"Excuse me, but I think you counted one dessert too many.\" \"You're right, I'll remove the wrong entry from the total now.\"",
+      "\"Call me, but I think you lost a mud on the street.\" \"False, I'll lose the dirty bag from the port now.\"",
+      "\"Laugh at me, but I think you laughed a kiss in news.\" \"True, I'll laugh at the fake note from the king now.\"",
+      "\"Silence me, but I think you ran a tour on trip.\" \"Rare, I'll run the long square from the wise now.\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, ma credo che abbiate contato un dolce in più.\" \"Ha ragione, tolgo subito la voce errata dal totale.\"",
+    "correctAnswerEnglish": "\"I'm sorry, but I think you've charged us for an extra dessert.\" \"You're right; I'll take that incorrect item off the total right now.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Correggere un'imprecisione del conto relativa alla quantità dei prodotti.",
+      "incorrectItalian": "No, il cliente nota un addebito in eccesso e riceve lo storno immediato.",
+      "correctEnglish": "Right! Correcting a bill inaccuracy regarding product quantity.",
+      "incorrectEnglish": "No, the customer notices an overcharge and receives an immediate reversal."
+    }
+  },
+  {
+    "id": "s32-s27",
+    "italian": "\"Il POS dà errore di connessione, riproviamo tra un minuto?\" \"Va bene, nessun problema. Nel frattempo prendiamo un caffè.\"",
+    "english": "\"The POS (terminal) gives a connection error, shall we try again in a minute?\" \"Alright, no problem. In the meantime let's have a coffee.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il POS dà errore di connessione, riproviamo tra un minuto?\" \"Va bene, nessun problema. Nel frattempo prendiamo un caffè.\"",
+      "\"La via dà sporco di fango, perdiamo tra un metro?\" \"No male, nessun fischio. Dopo via perdiamo una borsa.\"",
+      "\"La news dà finto di bacio, ridiamo tra un re?\" \"Sì bene, nessuna nota. Prima news ridiamo un bacio.\"",
+      "\"Il porto dà saggio di tour, corriamo tra un porto?\" \"Rari saggio, nessuna gita. Mai porto corriamo un tour.\""
+    ],
+    "choicesEnglish": [
+      "\"The terminal shows a connection error, shall we retry in a minute?\" \"Okay, no problem. Meanwhile let's have a coffee.\"",
+      "\"The street shows mud dirt, shall we lose in a meter?\" \"Not bad, no whistle. After street let's lose a bag.\"",
+      "\"The news shows fake kiss, shall we laugh in a king?\" \"Yes fine, no note. Before news let's laugh at a kiss.\"",
+      "\"The port shows wise tour, shall we run in a port?\" \"Rare wise, no trip. Never port let's run a tour.\""
+    ],
+    "correctAnswerItalian": "\"Il POS dà errore di connessione, riproviamo tra un minuto?\" \"Va bene, nessun problema. Nel frattempo prendiamo un caffè.\"",
+    "correctAnswerEnglish": "\"The card reader has a connection error; shall we try again in a minute?\" \"That's fine, no problem. We'll have a coffee in the meantime.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire con calma un piccolo ritardo tecnico.",
+      "incorrectItalian": "No, il pagamento è sospeso per un problema di linea e i clienti aspettano bevendo qualcosa.",
+      "correctEnglish": "Great! Calmly managing a small technical delay.",
+      "incorrectEnglish": "No, payment is suspended due to a line issue and the customers wait while drinking something."
+    }
+  },
+  {
+    "id": "s32-s28",
+    "italian": "\"Ecco lo scontrino pagato. Grazie e buona giornata!\" \"Grazie a lei, arrivederci e alla prossima!\"",
+    "english": "\"Here's the paid receipt. Thanks and have a good day!\" \"Thank you, goodbye and see you next time!\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ecco lo scontrino pagato. Grazie e buona giornata!\" \"Grazie a lei, arrivederci e alla prossima!\"",
+      "\"Prego la borsa persa. Scusa e buona via!\" \"Prego a te, ci perdiamo e alla borsa!\"",
+      "\"Salve la news risa. Auguri e buona news!\" \"Vero a lui, ci ridiamo e alla nota!\"",
+      "\"Ciao la gita corsa. Baci e buona gita!\" \"Saggio a loro, ci corriamo e alla torre!\""
+    ],
+    "choicesEnglish": [
+      "\"Here's the paid receipt. Thanks and good day!\" \"Thanks to you, goodbye and until next time!\"",
+      "\"You're welcome for the lost bag. Sorry and good street!\" \"You're welcome to you, we lose each other and to the bag!\"",
+      "\"Hello for the laughed news. Wishes and good news!\" \"True to him, we laugh and to the note!\"",
+      "\"Bye for the run trip. Kisses and good trip!\" \"Wise to them, we run and to the tower!\""
+    ],
+    "correctAnswerItalian": "\"Ecco lo scontrino pagato. Grazie e buona giornata!\" \"Grazie a lei, arrivederci e alla prossima!\"",
+    "correctAnswerEnglish": "\"Here's your paid receipt. Thank you and have a nice day!\" \"Thank you; goodbye and see you again!\"",
+    "feedback": {
+      "correctItalian": "Esatto! La conclusione standard di ogni transazione commerciale in Italia.",
+      "incorrectItalian": "No, questa conversazione suggella il pagamento avvenuto con saluti amichevoli.",
+      "correctEnglish": "Exactly! The standard conclusion of every commercial transaction in Italy.",
+      "incorrectEnglish": "No, this conversation seals the payment made with friendly greetings."
+    }
+  },
+  {
+    "id": "s32-s29",
+    "italian": "\"Potete portarci il conto separato per favore? Siamo tre coppie.\" \"Purtroppo oggi è sabato sera e il sistema non lo permette.\"",
+    "english": "\"Can you bring us the separate bill please? We are three couples.\" \"Unfortunately today is Saturday night and the system doesn't allow it.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Potete portarci il conto separato per favore? Siamo tre coppie.\" \"Purtroppo oggi è sabato sera e il sistema non lo permette.\"",
+      "\"Potete perdere la via sporca per favore? Siamo tre borse.\" \"Falso oggi è via raria e il fango non lo perde.\"",
+      "\"Potete ridere la news finta per favore? Siamo tre baci.\" \"Vero oggi è news sorda e la nota non lo rida.\"",
+      "\"Potete correre la gita lunga per favore? Siamo tre tour.\" \"Saggio oggi è porto lungo e la piazza non lo corre.\""
+    ],
+    "choicesEnglish": [
+      "\"Can you bring us separate checks please? We are three couples.\" \"Unfortunately today is Saturday night and the system doesn't allow it.\"",
+      "\"Can you lose the dirty street please? We are three bags.\" \"False today is rare street and the mud doesn't lose it.\"",
+      "\"Can you laugh at the fake news please? We are three kisses.\" \"True today is deaf news and the note doesn't laugh it.\"",
+      "\"Can you run the long trip please? We are three tours.\" \"Wise today is long port and the square doesn't run it.\""
+    ],
+    "correctAnswerItalian": "\"Potete portarci il conto separato per favore? Siamo tre coppie.\" \"Purtroppo oggi è sabato sera e il sistema non lo permette.\"",
+    "correctAnswerEnglish": "\"Could you bring us separate bills, please? There are three couples.\" \"Unfortunately, it's Saturday night and the system won't let me do that.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Affrontare le limitazioni di servizio durante le serate di massima affluenza.",
+      "incorrectItalian": "No, il personale rifiuta la divisione complessa del conto per motivi logistici o tecnici.",
+      "correctEnglish": "Right! Addressing service limitations during peak evenings.",
+      "incorrectEnglish": "No, the staff refuses complex bill splitting for logistical or technical reasons."
+    }
+  },
+  {
+    "id": "s32-s30",
+    "italian": "\"Nessun problema, paghiamo tutto insieme allora.\" \"Grazie della disponibilità, vi faccio subito il totale.\"",
+    "english": "\"No problem, we'll pay all together then.\" \"Thanks for your availability, I'll make the total for you immediately.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Nessun problema, paghiamo tutto insieme allora.\" \"Grazie della disponibilità, vi faccio subito il totale.\"",
+      "\"Nessun fischio, perdiamo tutto insieme là.\" \"Prego della via sporca, vi faccio subito lo sporco.\"",
+      "\"Nessuna nota, ridiamo tutto insieme ora.\" \"Salve della news finta, vi faccio subito il finto.\"",
+      "\"Nessun porto, corriamo tutto insieme mai.\" \"Ciao della gita saggia, vi faccio subito il saggio.\""
+    ],
+    "choicesEnglish": [
+      "\"No problem, we pay together then.\" \"Thanks for being helpful, I'll do the total now.\"",
+      "\"No whistle, we lose together there.\" \"You're welcome for the dirty street, I'll do the dirt now.\"",
+      "\"No note, we laugh together now.\" \"Hello for the fake news, I'll do the fake now.\"",
+      "\"No port, we run together never.\" \"Bye for the wise trip, I'll do the wise now.\""
+    ],
+    "correctAnswerItalian": "\"Nessun problema, paghiamo tutto insieme allora.\" \"Grazie della disponibilità, vi faccio subito il totale.\"",
+    "correctAnswerEnglish": "\"No problem; we'll just pay the whole thing together then.\" \"Thank you for being so flexible; I'll get the total for you right away.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Accettare il conto unico per facilitare il lavoro del ristorante.",
+      "incorrectItalian": "No, i clienti si adattano alla richiesta del cameriere in modo collaborativo.",
+      "correctEnglish": "Exactly! Accepting a single bill to facilitate the restaurant's work.",
+      "incorrectEnglish": "No, the customers adapt to the waiter's request in a collaborative way."
+    }
+  },
+  {
+    "id": "s32-s31",
+    "italian": "\"C'è un supplemento di due euro per la mozzarella di bufala.\" \"Ah, è vero, l'avevo dimenticato. Tutto corretto.\"",
+    "english": "\"There's a surcharge of two euros for the buffalo mozzarella.\" \"Ah, that's right, I had forgotten. All correct.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"C'è un supplemento di due euro per la mozzarella di bufala.\" \"Ah, è vero, l'avevo dimenticato. Tutto corretto.\"",
+      "\"C'è un fango di due metri per la via sporca.\" \"Ah, è rario, l'avevo perso. Tutto finto.\"",
+      "\"C'è un bacio di due baci per la news finta.\" \"Ah, è finto, l'avevo riso. Tutto sordo.\"",
+      "\"C'è un tour di due ore per la gita saggia.\" \"Ah, è saggio, l'avevo corso. Tutto svelto.\""
+    ],
+    "choicesEnglish": [
+      "\"There is a two euro surcharge for buffalo mozzarella.\" \"Ah, true, I forgot. All correct.\"",
+      "\"There is a two-meter mud for the dirty street.\" \"Ah, it's rare, I lost it. All fake.\"",
+      "\"There is a two-kiss kiss for the fake news.\" \"Ah, it's fake, I laughed. All deaf.\"",
+      "\"There is a two-hour tour for the wise trip.\" \"Ah, it's wise, I ran it. All quick.\""
+    ],
+    "correctAnswerItalian": "\"C'è un supplemento di due euro per la mozzarella di bufala.\" \"Ah, è vero, l'avevo dimenticato. Tutto corretto.\"",
+    "correctAnswerEnglish": "\"There's a two-euro extra charge for the buffalo mozzarella.\" \"Oh, that's right; I'd forgotten about that. It's all correct.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Chiarire un costo extra previsto dal menù per ingredienti pregiati.",
+      "incorrectItalian": "No, il cliente ricorda la variazione di prezzo richiesta e approva il conto.",
+      "correctEnglish": "Right! Clarifying an extra cost listed in the menu for premium ingredients.",
+      "incorrectEnglish": "No, the customer remembers the requested price variation and approves the bill."
+    }
+  },
+  {
+    "id": "s32-s32",
+    "italian": "\"Il portafoglio è vuoto! Avete visto i miei dieci euro?\" \"Eccoli, erano caduti sotto la sedia vicino alla borsa.\"",
+    "english": "\"The wallet is empty! Have you (plural) seen my ten euros?\" \"Here they are, they had fallen under the chair near the bag.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il portafoglio è vuoto! Avete visto i miei dieci euro?\" \"Eccoli, erano caduti sotto la sedia vicino alla borsa.\"",
+      "\"Il fango è rari! Avete perso le mie dieci vie?\" \"Eccole, erano perse sotto la cassa vicino al fischio.\"",
+      "\"Il re è sordo! Avete riso i miei dieci baci?\" \"Eccoli, erano risi sotto la nota vicino alla news.\"",
+      "\"Il porto è lungo! Avete corso i miei dieci tour?\" \"Eccoli, erano corsi sotto la piazza vicino alla gita.\""
+    ],
+    "choicesEnglish": [
+      "\"The wallet is empty! Did you see my ten euros?\" \"Here they are, they fell under the chair by the bag.\"",
+      "\"The mud is rare! Did you lose my ten streets?\" \"Here they are, they were lost under the counter by the whistle.\"",
+      "\"The king is deaf! Did you laugh at my ten kisses?\" \"Here they are, they were laughed under the note by the news.\"",
+      "\"The port is long! Did you run my ten tours?\" \"Here they are, they were run under the square by the trip.\""
+    ],
+    "correctAnswerItalian": "\"Il portafoglio è vuoto! Avete visto i miei dieci euro?\" \"Eccoli, erano caduti sotto la sedia vicino alla borsa.\"",
+    "correctAnswerEnglish": "\"My wallet is empty! Has anyone seen my ten-euro bill?\" \"Here it is; it had fallen under the chair next to the bag.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire un piccolo allarme per lo smarrimento di denaro contante.",
+      "incorrectItalian": "No, si parla del ritrovamento fortuito di una banconota perduta al tavolo.",
+      "correctEnglish": "Great! Managing a small alarm over the loss of cash.",
+      "incorrectEnglish": "No, it's about the fortuitous finding of a banknote lost at the table."
+    }
+  },
+  {
+    "id": "s32-s33",
+    "italian": "\"Quanto viene il caffè se lo prendo al banco?\" \"Un euro e venti, se si siede invece costa di più.\"",
+    "english": "\"How much is the coffee if I take it at the counter?\" \"One euro and twenty, if you sit down instead it costs more.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto viene il caffè se lo prendo al banco?\" \"Un euro e venti, se si siede invece costa di più.\"",
+      "\"Quando perde la via se la perdo al porto?\" \"Un metro e fango, se si perde invece sporca di più.\"",
+      "\"Chi rida la news se la rido al re?\" \"Un bacio e news, se si rida invece finto di più.\"",
+      "\"Dove corre la gita se la corro alla torre?\" \"Un tour e gita, se si corra invece saggio di più.\""
+    ],
+    "choicesEnglish": [
+      "\"How much is the coffee at the counter?\" \"One twenty, if you sit it costs more.\"",
+      "\"When does it lose the street if I lose it at the port?\" \"A meter and mud, if you get lost it's dirtier.\"",
+      "\"Who laughs at the news if I laugh at the king?\" \"A kiss and news, if you laugh it's faked more.\"",
+      "\"Where does the trip run if I run it to the tower?\" \"A tour and trip, if you run it's wiser.\""
+    ],
+    "correctAnswerItalian": "\"Quanto viene il caffè se lo prendo al banco?\" \"Un euro e venti, se si siede invece costa di più.\"",
+    "correctAnswerEnglish": "\"How much for a coffee if I drink it at the bar?\" \"One-twenty; if you take a table, it costs more.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Comprendere la doppia tariffazione tipica dei bar italiani (banco vs tavolo).",
+      "incorrectItalian": "No, il barista spiega la differenza di prezzo basata sulla modalità di consumo.",
+      "correctEnglish": "Exactly! Understanding the double pricing typical of Italian bars (counter vs. table).",
+      "incorrectEnglish": "No, the barista explains the price difference based on the consumption mode."
+    }
+  },
+  {
+    "id": "s32-s34",
+    "italian": "\"Ecco lo scontrino per i due gelati. Pagate in contanti?\" \"Sì, ecco una moneta da due euro e una da cinquanta centesimi.\"",
+    "english": "\"Here's the receipt for the two ice creams. Are you paying in cash?\" \"Yes, here's a two-euro coin and a fifty-cent one.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ecco lo scontrino per i due gelati. Pagate in contanti?\" \"Sì, ecco una moneta da due euro e una da cinquanta centesimi.\"",
+      "\"Prego la borsa per le due vie. Perdete in fango?\" \"No, ecco una via da due metri e una da cinquanta borse.\"",
+      "\"Salve la news per i due baci. Ridete in news?\" \"Sì, ecco un re da due baci e uno da cinquanta note.\"",
+      "\"Ciao la gita per i due tour. Correte in gite?\" \"Rari, ecco un porto da due tour e uno da cinquanta piazze.\""
+    ],
+    "choicesEnglish": [
+      "\"Here's the receipt for the two ice creams. Paying in cash?\" \"Yes, here's a two euro coin and a fifty cent one.\"",
+      "\"You're welcome for the bag for the two streets. Losing in mud?\" \"No, here is a two-meter street and a fifty-bag one.\"",
+      "\"Hello for the news for the two kisses. Laughing in news?\" \"Yes, here is a two-kiss king and a fifty-note one.\"",
+      "\"Bye for the trip for the two tours. Running in trips?\" \"Rare, here is a two-tour port and a fifty-square one.\""
+    ],
+    "correctAnswerItalian": "\"Ecco lo scontrino per i due gelati. Pagate in contanti?\" \"Sì, ecco una moneta da due euro e una da cinquanta centesimi.\"",
+    "correctAnswerEnglish": "\"Here is the receipt for the two gelatos. Cash?\" \"Yes, here is a two-euro coin and a fifty-cent piece.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Usare monete metalliche per piccoli acquisti quotidiani.",
+      "incorrectItalian": "No, si parla del pagamento manuale di una somma esatta per il gelato.",
+      "correctEnglish": "Right! Using metal coins for small daily purchases.",
+      "incorrectEnglish": "No, it's about the manual payment of an exact sum for ice cream."
+    }
+  },
+  {
+    "id": "s32-s35",
+    "italian": "\"Mi scusi, la mia carta è scaduta e non ho contanti.\" \"Non si preoccupi, può fare un bonifico o tornare domani.\"",
+    "english": "\"I'm sorry, my card has expired and I don't have cash.\" \"Don't worry, you can do a bank transfer or come back tomorrow.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi, la mia carta è scaduta e non ho contanti.\" \"Non si preoccupi, può fare un bonifico o tornare domani.\"",
+      "\"Mi chiami, la mia via è raria e non ho borse.\" \"Non si perda, può fare un fango o perdere ieri.\"",
+      "\"Mi ridi, la mia news è finta e non ho baci.\" \"Non si vedi, può fare un finto o ridere ora.\"",
+      "\"Mi tacci, la mia gita è lunga e non ho tour.\" \"Non si corra, può fare un saggio o correre mai.\""
+    ],
+    "choicesEnglish": [
+      "\"Pardon me, my card is expired and I have no cash.\" \"Don't worry, you can do a wire transfer or return tomorrow.\"",
+      "\"Call me, my street is rare and I have no bags.\" \"Don't get lost, you can make a mud or lose yesterday.\"",
+      "\"Laugh at me, my news is fake and I have no kisses.\" \"Don't be seen, you can make a fake or laugh now.\"",
+      "\"Silence me, my trip is long and I have no tours.\" \"Don't run, you can do a wise one or never run.\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, la mia carta è scaduta e non ho contanti.\" \"Non si preoccupi, può fare un bonifico o tornare domani.\"",
+    "correctAnswerEnglish": "\"I am so sorry, my card is expired and I don't have any cash on me.\" \"Don't fret; you can do a bank transfer or just come back tomorrow.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Trovare una soluzione di fiducia per un problema di pagamento imprevisto.",
+      "incorrectItalian": "No, questa conversazione mostra la flessibilità del titolare verso un cliente in difficoltà.",
+      "correctEnglish": "Great! Finding a trust-based solution for an unexpected payment problem.",
+      "incorrectEnglish": "No, this conversation shows the owner's flexibility toward a customer in trouble."
+    }
+  },
+  {
+    "id": "s32-s36",
+    "italian": "\"Quanto costa il coperto in questo ristorante?\" \"Due euro e cinquanta a persona, include pane e grissini.\"",
+    "english": "\"How much does the cover charge cost in this restaurant?\" \"Two euros and fifty per person, it includes bread and breadsticks.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Quanto costa il coperto in questo ristorante?\" \"Due euro e cinquanta a persona, include pane e grissini.\"",
+      "\"Quanto fischia lo sporco in questa via?\" \"Due metri e fango a borsa, include via e cassa.\"",
+      "\"Quanto rida il finto in questa news?\" \"Due baci e news a re, include nota e re.\"",
+      "\"Quanto corre il saggio in questa gita?\" \"Due tour e gita a porto, include piazza e torre.\""
+    ],
+    "choicesEnglish": [
+      "\"How much is the cover charge here?\" \"Two fifty per person, bread and breadsticks included.\"",
+      "\"How much does the dirt whistle in this street?\" \"Two meters and mud per bag, includes street and register.\"",
+      "\"How much does the fake laugh in this news?\" \"Two kisses and news per king, includes note and king.\"",
+      "\"How much does the wise run in this trip?\" \"Two tours and trip per port, includes square and tower.\""
+    ],
+    "correctAnswerItalian": "\"Quanto costa il coperto in questo ristorante?\" \"Due euro e cinquanta a persona, include pane e grissini.\"",
+    "correctAnswerEnglish": "\"What's the cover charge at this restaurant?\" \"It's two-fifty per person, which covers the bread and breadsticks.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedere il dettaglio di un costo fisso obbligatorio.",
+      "incorrectItalian": "No, si parla del prezzo del servizio base al tavolo.",
+      "correctEnglish": "Exactly! Asking for details on a mandatory fixed cost.",
+      "incorrectEnglish": "No, it's about the price of the basic table service."
+    }
+  },
+  {
+    "id": "s32-s37",
+    "italian": "\"Posso avere lo scontrino fiscale per favore?\" \"Certamente, glielo stampo subito dalla cassa centrale.\"",
+    "english": "\"Can I have the tax receipt please?\" \"Certainly, I'll print it for you right away from the central register.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Posso avere lo scontrino fiscale per favore?\" \"Certamente, glielo stampo subito dalla cassa centrale.\"",
+      "\"Posso perdere la via sporca grazie?\" \"No saggio, gliela chiamo subito dalla cassa raria.\"",
+      "\"Posso ridere la news finta prego?\" \"Vero rari, gliela rido subito dalla nota finta.\"",
+      "\"Posso correre la gita saggia salve?\" \"Saggio sordo, gliela corro subito dal porto lungo.\""
+    ],
+    "choicesEnglish": [
+      "\"Can I have the tax receipt please?\" \"Certainly, I'll print it now from the central counter.\"",
+      "\"Can I lose the dirty street please?\" \"Not wise, I'll call it for you now from the rare counter.\"",
+      "\"Can I laugh at the fake news please?\" \"True rare, I'll laugh at it for you now from the fake note.\"",
+      "\"Can I run the wise trip please?\" \"Wise deaf, I'll run it for you now from the long port.\""
+    ],
+    "correctAnswerItalian": "\"Posso avere lo scontrino fiscale per favore?\" \"Certamente, glielo stampo subito dalla cassa centrale.\"",
+    "correctAnswerEnglish": "\"Could I get the tax receipt, please?\" \"Of course; I'll print that out for you right now at the main register.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Richiedere la prova legale del pagamento effettuato.",
+      "incorrectItalian": "No, il cliente chiede il documento ufficiale e riceve risposta affermativa.",
+      "correctEnglish": "Right! Requesting legal proof of the payment made.",
+      "incorrectEnglish": "No, the customer asks for the official document and receives an affirmative answer."
+    }
+  },
+  {
+    "id": "s32-s38",
+    "italian": "\"Il totale è di centoventi euro, siamo in sei, quindi sono venti euro a testa.\" \"Perfetto, ecco i miei venti in contanti.\"",
+    "english": "\"The total is one hundred twenty euros, we are six, so it's twenty euros each.\" \"Perfect, here are my twenty in cash.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il totale è di centoventi euro, siamo in sei, quindi sono venti euro a testa.\" \"Perfetto, ecco i miei venti in contanti.\"",
+      "\"Lo sporco è di centoventi metri, siamo in sei, quindi sono venti borse a via.\" \"Caro, ecco i miei venti in fango.\"",
+      "\"Il finto è di centoventi baci, siamo in sei, quindi sono venti baci a re.\" \"Vero, ecco i miei venti in news.\"",
+      "\"Il saggio è di centoventi tour, siamo in sei, quindi sono venti tour a porto.\" \"Rari, ecco i miei venti in gita.\""
+    ],
+    "choicesEnglish": [
+      "\"The total is 120 euros, there are six of us, so it's 20 euros each.\" \"Perfect, here is my 20 in cash.\"",
+      "\"The dirt is 120 meters, there are six of us, so it's 20 bags per street.\" \"Dear, here is my 20 in mud.\"",
+      "\"The fake is 120 kisses, there are six of us, so it's 20 kisses per king.\" \"True, here is my 20 in news.\"",
+      "\"The wise is 120 tours, there are six of us, so it's 20 tours per port.\" \"Rare, here is my 20 in trip.\""
+    ],
+    "correctAnswerItalian": "\"Il totale è di centoventi euro, siamo in sei, quindi sono venti euro a testa.\" \"Perfetto, ecco i miei venti in contanti.\"",
+    "correctAnswerEnglish": "\"The bill is 120 euros; for six of us, that's 20 each.\" \"Perfect; here's my 20-euro bill.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Coordinare la raccolta delle quote individuali per saldare il conto unico.",
+      "incorrectItalian": "No, si parla del calcolo della parte spettante a ogni persona del gruppo.",
+      "correctEnglish": "Great! Coordinating the collection of individual shares to settle the single bill.",
+      "incorrectEnglish": "No, it's about calculating the portion due for each person in the group."
+    }
+  },
+  {
+    "id": "s32-s39",
+    "italian": "\"Accettate pagamenti contactless col telefono?\" \"Certamente, basta avvicinare il cellulare al lettore.\"",
+    "english": "\"Do you accept contactless payments with the phone?\" \"Certainly, just bring the cell phone close to the reader.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Accettate pagamenti contactless col telefono?\" \"Certamente, basta avvicinare il cellulare al lettore.\"",
+      "\"Perdete borse sporche col fischio?\" \"No saggio, basta chiamare la cassa alla via.\"",
+      "\"Ridete news finte col bacio?\" \"Vero rari, basta vedere la nota alla news.\"",
+      "\"Correte gite sagge col tour?\" \"Saggio svelto, basta correre il porto alla torre.\""
+    ],
+    "choicesEnglish": [
+      "\"Do you accept contactless phone payments?\" \"Certainly, just bring the phone to the reader.\"",
+      "\"Do you lose dirty bags with a whistle?\" \"Not wise, just call the register to the street.\"",
+      "\"Do you laugh at fake news with a kiss?\" \"True rare, just see the note in the news.\"",
+      "\"Do you run wise trips with a tour?\" \"Wise quick, just run the port to the tower.\""
+    ],
+    "correctAnswerItalian": "\"Accettate pagamenti contactless col telefono?\" \"Certamente, basta avvicinare il cellulare al lettore.\"",
+    "correctAnswerEnglish": "\"Can I pay contactless with my phone?\" \"Certainly; just hold your phone near the reader.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Usare le tecnologie digitali più moderne per il saldo del conto.",
+      "incorrectItalian": "No, il cliente chiede se può usare lo smartphone e riceve istruzioni semplici.",
+      "correctEnglish": "Exactly! Using the most modern digital technologies to settle the bill.",
+      "incorrectEnglish": "No, the customer asks if he can use his smartphone and receives simple instructions."
+    }
+  },
+  {
+    "id": "s32-s40",
+    "italian": "\"Il servizio non è incluso, lasciamo dieci euro di mancia?\" \"Sì, mi sembra giusto, sono stati molto veloci oggi.\"",
+    "english": "\"Service is not included, shall we leave ten euros tip?\" \"Yes, seems fair to me, they were very fast today.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il servizio non è incluso, lasciamo dieci euro di mancia?\" \"Sì, mi sembra giusto, sono stati molto veloci oggi.\"",
+      "\"Lo sporco non è rari, perdiamo dieci metri di fango?\" \"No, mi sembra caro, sono stati molto sporchi ora.\"",
+      "\"Il finto non è sordo, ridiamo dieci baci di news?\" \"Vero, mi sembra finto, sono stati molto finti mai.\"",
+      "\"Il lungo non è saggio, corriamo dieci tour di gita?\" \"Saggio, mi sembra lungo, sono stati molto saggi dopo.\""
+    ],
+    "choicesEnglish": [
+      "\"Service is not included, shall we leave a ten euro tip?\" \"Yes, seems right, they were very fast today.\"",
+      "\"Dirt is not rare, shall we lose ten meters of mud?\" \"No, seems expensive, they were very dirty now.\"",
+      "\"Fake is not deaf, shall we laugh ten news kisses?\" \"True, seems fake, they were very fake never.\"",
+      "\"Long is not wise, shall we run ten trip tours?\" \"Wise, seems long, they were very wise later.\""
+    ],
+    "correctAnswerItalian": "\"Il servizio non è incluso, lasciamo dieci euro di mancia?\" \"Sì, mi sembra giusto, sono stati molto veloci oggi.\"",
+    "correctAnswerEnglish": "\"Service isn't included; should we leave a ten-euro tip?\" \"Yes, I think so; they were really quick today.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Valutare l'opportunità di premiare il personale in base all'efficienza.",
+      "incorrectItalian": "No, i commensali decidono di aggiungere una somma extra per la rapidità del servizio.",
+      "correctEnglish": "Right! Assessing the opportunity to reward staff based on efficiency.",
+      "incorrectEnglish": "No, the diners decide to add an extra sum for the service speed."
+    }
+  },
+  {
+    "id": "s32-s41",
+    "italian": "\"Possiamo pagare con due carte diverse lo stesso conto?\" \"Sì, dividiamo il totale sul terminale in due transazioni.\"",
+    "english": "\"Can we pay the same bill with two different cards?\" \"Yes, we (will) divide the total on the terminal into two transactions.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Possiamo pagare con due carte diverse lo stesso conto?\" \"Sì, dividiamo il totale sul terminale in due transazioni.\"",
+      "\"Possiamo perdere con due borse sporche la stessa via?\" \"No, perdiamo lo sporco sul fango in due fischio.\"",
+      "\"Possiamo ridere con due baci finti la stessa news?\" \"Vero, ridiamo il finto sulla nota in due baci.\"",
+      "\"Possiamo correre con due tour saggi la stessa gita?\" \"Saggio, corriamo il lungo sul porto in due tour.\""
+    ],
+    "choicesEnglish": [
+      "\"Can we pay the same bill with two different cards?\" \"Yes, we divide the total on the terminal into two transactions.\"",
+      "\"Can we lose with two dirty bags the same street?\" \"No, we lose the dirt on the mud in two whistles.\"",
+      "\"Can we laugh with two fake kisses at the same news?\" \"True, we laugh at the fake on the note in two kisses.\"",
+      "\"Can we run with two wise tours the same trip?\" \"Wise, we run the long on the port in two tours.\""
+    ],
+    "correctAnswerItalian": "\"Possiamo pagare con due carte diverse lo stesso conto?\" \"Sì, dividiamo il totale sul terminale in due transazioni.\"",
+    "correctAnswerEnglish": "\"Can we pay one bill using two different cards?\" \"Yes, we can split the total into two separate transactions on the reader.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire la suddivisione elettronica del debito tra due persone.",
+      "incorrectItalian": "No, si parla della possibilità di strisciare più carte per saldare un'unica voce.",
+      "correctEnglish": "Great! Managing the electronic split of the debt between two people.",
+      "incorrectEnglish": "No, it's about the possibility of swiping multiple cards to settle a single item."
+    }
+  },
+  {
+    "id": "s32-s42",
+    "italian": "\"Il calcolo è sbagliato, manca lo sconto del dieci percento.\" \"Ha ragione, mi scusi, applico subito lo sconto promesso.\"",
+    "english": "\"The calculation is wrong, the ten percent discount is missing.\" \"You're right, I'm sorry, I'll apply the promised discount immediately.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il calcolo è sbagliato, manca lo sconto del dieci percento.\" \"Ha ragione, mi scusi, applico subito lo sconto promesso.\"",
+      "\"Lo sporco è rari, manca la via del dieci metri.\" \"Caro fango, mi perda, chiamo subito lo sporco rari.\"",
+      "\"Il finto è sordo, manca la news del dieci baci.\" \"Vero bacio, mi ridi, vedo subito la news finta.\"",
+      "\"Il saggio è lungo, manca la gita del dieci tour.\" \"Rari svelto, mi taci, corro subito la gita saggia.\""
+    ],
+    "choicesEnglish": [
+      "\"The calculation is wrong, the 10% discount is missing.\" \"You're right, sorry, I'll apply the discount now.\"",
+      "\"The dirt is rare, the 10-meter street is missing.\" \"Dear mud, lose me, I'll call the rare dirt now.\"",
+      "\"The fake is deaf, the 10-kiss news is missing.\" \"True kiss, laugh at me, I'll see the fake news now.\"",
+      "\"The wise is long, the 10-tour trip is missing.\" \"Rare quick, silence me, I'll run the wise trip now.\""
+    ],
+    "correctAnswerItalian": "\"Il calcolo è sbagliato, manca lo sconto del dieci percento.\" \"Ha ragione, mi scusi, applico subito lo sconto promesso.\"",
+    "correctAnswerEnglish": "\"The math is wrong; the 10% discount wasn't applied.\" \"You're right; I apologize. I'll add the discount we promised right away.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Verificare che le promozioni siano state inserite correttamente nel totale.",
+      "incorrectItalian": "No, il cliente reclama una riduzione di prezzo non conteggiata e riceve scuse.",
+      "correctEnglish": "Right! Verifying that promotions have been correctly entered in the total.",
+      "incorrectEnglish": "No, the customer claims an uncounted price reduction and receives an apology."
+    }
+  },
+  {
+    "id": "s32-s43",
+    "italian": "\"Siamo pronti, dove si paga?\" \"Potete venire al bancone centrale o aspettare che arrivi il mio collega.\"",
+    "english": "\"We are ready, where do we pay?\" \"You (plural) can come to the central counter or wait for my colleague to arrive.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo pronti, dove si paga?\" \"Potete venire al bancone centrale o aspettare che arrivi il mio collega.\"",
+      "\"Siamo sordi, chi si perde?\" \"Potete perdere al porto saggio o aspettare che chiami la mia borsa.\"",
+      "\"Siamo finti, quando si rida?\" \"Potete ridere alla news finta o aspettare che vedi il mio bacio.\"",
+      "\"Siamo saggi, come si corre?\" \"Potete correre alla gita lunga o aspettare che taci il mio tour.\""
+    ],
+    "choicesEnglish": [
+      "\"We're ready, where do we pay?\" \"You can come to the main counter or wait for my colleague.\"",
+      "\"We're deaf, who is losing?\" \"You can lose at the wise port or wait for my bag to be called.\"",
+      "\"We're fake, when do we laugh?\" \"You can laugh at the fake news or wait for my kiss to be seen.\"",
+      "\"We're wise, how do we run?\" \"You can run on the long trip or wait for my tour to be silent.\""
+    ],
+    "correctAnswerItalian": "\"Siamo pronti, dove si paga?\" \"Potete venire al bancone centrale o aspettare che arrivi il mio collega.\"",
+    "correctAnswerEnglish": "\"We're ready to go; where should we pay?\" \"You can step up to the main counter, or wait for my colleague to come by.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere indicazioni logistiche per saldare il conto.",
+      "incorrectItalian": "No, il cliente cerca il punto di pagamento e riceve due opzioni di servizio.",
+      "correctEnglish": "Great! Asking for logistical directions to settle the bill.",
+      "incorrectEnglish": "No, the customer looks for the payment point and receives two service options."
+    }
+  },
+  {
+    "id": "s32-s44",
+    "italian": "\"Accettate anche banconote da cinquanta euro?\" \"Certamente, abbiamo abbastanza resto in cassa oggi.\"",
+    "english": "\"Do you also accept fifty-euro banknotes?\" \"Certainly, we have enough change in the till today.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Accettate anche banconote da cinquanta euro?\" \"Certamente, abbiamo abbastanza resto in cassa oggi.\"",
+      "\"Perdete anche borse da cinquanta metri?\" \"Falso, abbiamo abbastanza fango in via ora.\"",
+      "\"Ridete anche news da cinquanta baci?\" \"Vero, abbiamo abbastanza nota in re mai.\"",
+      "\"Correte anche gite da cinquanta tour?\" \"Saggio, abbiamo abbastanza porto in gita dopo.\""
+    ],
+    "choicesEnglish": [
+      "\"Do you take fifty euro bills?\" \"Certainly, we have enough change in the register today.\"",
+      "\"Do you lose bags from fifty meters?\" \"False, we have enough mud on the street now.\"",
+      "\"Do you laugh at news from fifty kisses?\" \"True, we have enough note for the king ever.\"",
+      "\"Do you run trips from fifty tours?\" \"Wise, we have enough port on the trip later.\""
+    ],
+    "correctAnswerItalian": "\"Accettate anche banconote da cinquanta euro?\" \"Certamente, abbiamo abbastanza resto in cassa oggi.\"",
+    "correctAnswerEnglish": "\"Do you take fifty-euro bills?\" \"Of course; we have plenty of change in the drawer today.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Verificare la disponibilità di spiccioli per taglie di banconote grandi.",
+      "incorrectItalian": "No, il cliente vuole usare un pezzo da cinquanta e il gestore lo rassicura.",
+      "correctEnglish": "Exactly! Verifying the availability of small change for large banknote denominations.",
+      "incorrectEnglish": "No, the customer wants to use a fifty-euro piece and the manager reassures him."
+    }
+  },
+  {
+    "id": "s32-s45",
+    "italian": "\"Il servizio è stato davvero speciale, ecco la mancia per lei.\" \"La ringrazio di cuore, è stato un piacere servirvi.\"",
+    "english": "\"The service was truly special, here is the tip for you.\" \"I thank you from the heart, it was a pleasure serving you (plural).\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il servizio è stato davvero speciale, ecco la mancia per lei.\" \"La ringrazio di cuore, è stato un piacere servirvi.\"",
+      "\"Lo sporco è stato davvero rari, ecco la borsa per te.\" \"Ti perdo di borsa, è stato un fango perdervi.\"",
+      "\"Il finto è stato davvero sordo, ecco la news per lui.\" \"Ci rido di news, è stato un bacio ridervi.\"",
+      "\"Il saggio è stato davvero lungo, ecco la gita per noi.\" \"Vi corro di gita, è stato un tour corrervi.\""
+    ],
+    "choicesEnglish": [
+      "\"The service was truly special, here's the tip for you.\" \"I thank you sincerely, it was a pleasure serving you.\"",
+      "\"The dirt was truly rare, here's the bag for you.\" \"I lose you by bag, it was a mud to lose you.\"",
+      "\"The fake was truly deaf, here's the news for him.\" \"I laugh at you by news, it was a kiss to laugh at you.\"",
+      "\"The wise was truly long, here's the trip for us.\" \"I run you by trip, it was a tour to run you.\""
+    ],
+    "correctAnswerItalian": "\"Il servizio è stato davvero speciale, ecco la mancia per lei.\" \"La ringrazio di cuore, è stato un piacere servirvi.\"",
+    "correctAnswerEnglish": "\"The service was exceptional; this tip is for you.\" \"Thank you so much; it was truly a pleasure serving you.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Uno scambio di cortesie basato sulla reciproca soddisfazione.",
+      "incorrectItalian": "No, questa conversazione esprime gratitudine profonda alla fine del pasto.",
+      "correctEnglish": "Right! An exchange of courtesies based on mutual satisfaction.",
+      "incorrectEnglish": "No, this conversation expresses deep gratitude at the end of the meal."
+    }
+  },
+  {
+    "id": "s32-s46",
+    "italian": "\"Avete un portamonete? Ho troppi spiccioli sparsi.\" \"No, mi spiace, ma le posso dare un sacchettino di carta.\"",
+    "english": "\"Do you have a coin purse? I have too many scattered coins.\" \"No, I'm sorry, but I can give you a small paper bag.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Avete un portamonete? Ho troppi spiccioli sparsi.\" \"No, mi spiace, ma le posso dare un sacchettino di carta.\"",
+      "\"Avete un portadocumenti? Ho troppe borse perse.\" \"No rari, ma le posso dare un fango di via.\"",
+      "\"Avete una news? Ho troppi baci finti.\" \"No sordo, ma le posso dare una nota di re.\"",
+      "\"Avete un porto? Ho troppe gite lunghe.\" \"No svelto, ma le posso dare un tour di piazza.\""
+    ],
+    "choicesEnglish": [
+      "\"Do you have a coin purse? I have too many loose coins.\" \"No, sorry, but I can give you a small paper bag.\"",
+      "\"Do you have a file folder? I have too many lost bags.\" \"No rare, but I can give you a street mud.\"",
+      "\"Do you have a news? I have too many fake kisses.\" \"No deaf, but I can give you a king's note.\"",
+      "\"Do you have a port? I have too many long trips.\" \"No quick, but I can give you a square tour.\""
+    ],
+    "correctAnswerItalian": "\"Avete un portamonete? Ho troppi spiccioli sparsi.\" \"No, mi spiace, ma le posso dare un sacchettino di carta.\"",
+    "correctAnswerEnglish": "\"Do you have a coin purse? I have too many loose coins everywhere.\" \"I don't, sorry, but I can give you a little paper bag instead.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestire la scomodità della moneta metallica dopo aver ricevuto il resto.",
+      "incorrectItalian": "No, il cliente cerca un modo per tenere in ordine i soldi e riceve una soluzione di fortuna.",
+      "correctEnglish": "Great! Managing the inconvenience of metal coins after receiving change.",
+      "incorrectEnglish": "No, the customer looks for a way to keep the money organized and receives a temporary solution."
+    }
+  },
+  {
+    "id": "s32-s47",
+    "italian": "\"Il costo della cena è di novanta euro, iva inclusa.\" \"Va bene, dividiamo in tre da trenta euro ciascuno.\"",
+    "english": "\"The cost of the dinner is ninety euros, VAT included.\" \"Alright, let's divide into three of thirty euros each.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il costo della cena è di novanta euro, iva inclusa.\" \"Va bene, dividiamo in tre da trenta euro ciascuno.\"",
+      "\"La via della borsa è di novanta metri, fango perso.\" \"No male, perdiamo in tre da trenta borse ognuno.\"",
+      "\"La nota della news è di novanta baci, news finta.\" \"Sì bene, ridiamo in tre da trenta baci sordi.\"",
+      "\"Il porto della gita è di novanta tour, gita saggia.\" \"Rari svelto, corriamo in tre da trenta tour lunghi.\""
+    ],
+    "choicesEnglish": [
+      "\"The dinner cost is ninety euros, VAT included.\" \"Alright, we divide by three, thirty euros each.\"",
+      "\"The bag street is ninety meters, mud lost.\" \"Not bad, we lose by three, thirty bags each.\"",
+      "\"The news note is ninety kisses, fake news.\" \"Yes fine, we laugh by three, thirty deaf kisses each.\"",
+      "\"The trip port is ninety tours, wise trip.\" \"Rare quick, we run by three, thirty long tours each.\""
+    ],
+    "correctAnswerItalian": "\"Il costo della cena è di novanta euro, iva inclusa.\" \"Va bene, dividiamo in tre da trenta euro ciascuno.\"",
+    "correctAnswerEnglish": "\"The total dinner cost is ninety euros, including VAT.\" \"Alright, we'll split it three ways for thirty euros apiece.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Comprendere l'inclusione delle tasse e procedere alla spartizione equa.",
+      "incorrectItalian": "No, si parla del calcolo matematico per dividere un totale tondo tra tre persone.",
+      "correctEnglish": "Exactly! Understanding the inclusion of taxes and proceeding to an equal split.",
+      "incorrectEnglish": "No, it's about the mathematical calculation to split a round total among three people."
+    }
+  },
+  {
+    "id": "s32-s48",
+    "italian": "\"Mi scusi, può verificare questa voce del conto?\" \"Certo, è il supplemento per il tartufo fresco aggiunto dopo.\"",
+    "english": "\"Excuse me, can you verify this item on the bill?\" \"Sure, it's the surcharge for the fresh truffle added afterwards.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi, può verificare questa voce del conto?\" \"Certo, è il supplemento per il tartufo fresco aggiunto dopo.\"",
+      "\"Mi chiami, può perdere questa via della cassa?\" \"No saggio, è il fango per la borsa sporca perso ora.\"",
+      "\"Mi ridi, può ridere questa news del re?\" \"Vero rari, è il bacio per la news finta riso dopo.\"",
+      "\"Mi tacci, può correre questo tour della gita?\" \"Rari svelto, è la gita per il porto saggio corsa mai.\""
+    ],
+    "choicesEnglish": [
+      "\"Excuse me, can you check this item on the bill?\" \"Sure, it's the surcharge for fresh truffle added later.\"",
+      "\"Call me, can you lose this street from the register?\" \"Not wise, it's the mud for the dirty bag lost now.\"",
+      "\"Laugh at me, can you laugh at this king's news?\" \"True rare, it's the kiss for the fake news laughed later.\"",
+      "\"Silence me, can you run this trip tour?\" \"Rare quick, it's the trip for the wise port run never.\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, può verificare questa voce del conto?\" \"Certo, è il supplemento per il tartufo fresco aggiunto dopo.\"",
+    "correctAnswerEnglish": "\"Excuse me, could you check this entry on the check?\" \"Certainly; that's the extra charge for the fresh truffle added at the end.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere spiegazioni su un costo specifico che appare inaspettato.",
+      "incorrectItalian": "No, il cameriere chiarisce la natura di un supplemento per un ingrediente di lusso.",
+      "correctEnglish": "Right! Asking for explanations on a specific cost that appears unexpected.",
+      "incorrectEnglish": "No, the waiter clarifies the nature of a surcharge for a luxury ingredient."
+    }
+  },
+  {
+    "id": "s32-s49",
+    "italian": "\"Il totale è cento euro esatti. Pagato!\" \"Grazie mille, le auguro una splendida serata.\"",
+    "english": "\"The total is exactly one hundred euros. Paid!\" \"Thanks a lot, I wish you a splendid evening.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il totale è cento euro esatti. Pagato!\" \"Grazie mille, le auguro una splendida serata.\"",
+      "\"Lo sporco è cento metri rari. Perso!\" \"Prego rari, le perdo una cara via.\"",
+      "\"Il finto è cento baci finti. Riso!\" \"Vero saggio, le rido una sorda news.\"",
+      "\"Il saggio è cento tour saggi. Corso!\" \"Ciao svelto, le corro una lunga gita.\""
+    ],
+    "choicesEnglish": [
+      "\"The total is exactly 100 euros. Paid!\" \"Thanks a lot, I wish you a splendid evening.\"",
+      "\"The dirt is 100 rare meters. Lost!\" \"You're welcome rare, I lose an expensive street for you.\"",
+      "\"The fake is 100 fake kisses. Laughed!\" \"True wise, I laugh at a deaf news for you.\"",
+      "\"The wise is 100 wise tours. Run!\" \"Bye quick, I run a long trip for you.\""
+    ],
+    "correctAnswerItalian": "\"Il totale è cento euro esatti. Pagato!\" \"Grazie mille, le auguro una splendida serata.\"",
+    "correctAnswerEnglish": "\"The total is precisely one hundred euros. Done!\" \"Thank you very much; have a wonderful evening.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Dichiarare il saldo del debito e ricevere un augurio cordiale.",
+      "incorrectItalian": "No, questa conversazione chiude definitivamente il momento del pagamento.",
+      "correctEnglish": "Great! Declaring the debt settled and receiving a cordial wish.",
+      "incorrectEnglish": "No, this conversation definitively closes the payment moment."
+    }
+  },
+  {
+    "id": "s32-s50",
+    "italian": "\"Mi dispiace, ma devo andare a prelevare, il bancomat non funziona.\" \"Nessun problema, la banca più vicina è proprio girato l'angolo.\"",
+    "english": "\"I'm sorry, but I have to go withdraw (money), the debit card isn't working.\" \"No problem, the nearest bank is just around the corner.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi dispiace, ma devo andare a prelevare, il bancomat non funziona.\" \"Nessun problema, la banca più vicina è proprio girato l'angolo.\"",
+      "\"Mi chiami, ma devo andare a perdere, la via non sporca.\" \"Nessun fango, la borsa più raria è proprio persa la via.\"",
+      "\"Mi ridi, ma devo andare a ridere, la news non finta.\" \"Nessun bacio, la nota più finta è proprio risa la news.\"",
+      "\"Mi tacci, ma devo andare a correre, la gita non saggia.\" \"Nessun porto, la piazza più lunga è proprio corsa la gita.\""
+    ],
+    "choicesEnglish": [
+      "\"I'm sorry, but I have to withdraw, the card isn't working.\" \"No problem, the nearest bank is just around the corner.\"",
+      "\"Call me, but I have to go lose, the street isn't dirty.\" \"No mud, the rarest bag is just lost the street.\"",
+      "\"Laugh at me, but I have to go laugh, the news isn't fake.\" \"No kiss, the fakest note is just laughed at the news.\"",
+      "\"Silence me, but I have to go run, the trip isn't wise.\" \"No port, the longest square is just run the trip.\""
+    ],
+    "correctAnswerItalian": "\"Mi dispiace, ma devo andare a prelevare, il bancomat non funziona.\" \"Nessun problema, la banca più vicina è proprio girato l'angolo.\"",
+    "correctAnswerEnglish": "\"I'm sorry, I need to go find an ATM; my card isn't working.\" \"No problem; the closest bank is just around the corner.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Gestire una situazione di emergenza per mancanza di contante o malfunzionamento elettronico.",
+      "incorrectItalian": "No, il cliente comunica la necessità di reperire denaro fisico e riceve indicazioni stradali.",
+      "correctEnglish": "Exactly! Managing an emergency situation due to lack of cash or electronic malfunction.",
+      "incorrectEnglish": "No, the customer communicates the need to find physical money and receives directions."
+    }
+  },
+  {
+    "id": "s32-s51",
+    "italian": "\"Il totale della spesa fiscale deve essere registrato subito.\" \"Certo, emetto immediatamente il documento fiscale obbligatorio.\"",
+    "english": "\"The total tax expenditure must be recorded immediately.\" \"Sure, I'll immediately issue the mandatory tax document.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il totale della spesa fiscale deve essere registrato subito.\" \"Certo, emetto immediatamente il documento fiscale obbligatorio.\"",
+      "\"Lo sporco della via raria deve essere perso ora.\" \"No, chiamo immediatamente la borsa sporca saggia.\"",
+      "\"Il finto della news finta deve essere riso mai.\" \"Sì, vedi immediatamente il bacio sordo rari.\"",
+      "\"Il saggio della gita lunga deve essere corso svelto.\" \"Rari, taccio immediatamente il tour saggio dopo.\""
+    ],
+    "choicesEnglish": [
+      "\"The tax total must be recorded now.\" \"Sure, I'll issue the mandatory tax document immediately.\"",
+      "\"The rare street dirt must be lost now.\" \"No, I'll call the wise dirty bag immediately.\"",
+      "\"The fake news fake must be laughed at never.\" \"Yes, see the rare deaf kiss immediately.\"",
+      "\"The long trip wise must be run quickly.\" \"Rare, I'll silence the wise tour immediately after.\""
+    ],
+    "correctAnswerItalian": "\"Il totale della spesa fiscale deve essere registrato subito.\" \"Certo, emetto immediatamente il documento fiscale obbligatorio.\"",
+    "correctAnswerEnglish": "\"The total must be officially recorded for tax purposes.\" \"Of course; I'm issuing the required tax document right now.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Sottolineare l'importanza della regolarità fiscale nel pagamento.",
+      "incorrectItalian": "No, si parla del dovere del commerciante di rilasciare la ricevuta corretta.",
+      "correctEnglish": "Right! Emphasizing the importance of tax regularity in payment.",
+      "incorrectEnglish": "No, it's about the merchant's duty to issue the correct receipt."
+    }
+  },
+  {
+    "id": "s32-s52",
+    "italian": "\"Ecco il resto esatto di due euro e trenta centesimi.\" \"Grazie, li metto subito nel mio portamonete.\"",
+    "english": "\"Here is the exact change of two euros and thirty cents.\" \"Thanks, I'll put them in my coin purse right away.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Ecco il resto esatto di due euro e trenta centesimi.\" \"Grazie, li metto subito nel mio portamonete.\"",
+      "\"Prego la borsa cara di due metri e trenta vie.\" \"Caro, le perdo subito nella mia cassa sporca.\"",
+      "\"Salve la nota finta di due baci e trenta news.\" \"Finto, le rido subito nel mio re sordo.\"",
+      "\"Ciao il porto saggio di due tour e trenta gite.\" \"Svelto, le corro subito nel mio porto saggio.\""
+    ],
+    "choicesEnglish": [
+      "\"Here's the exact change: two-thirty.\" \"Thanks, I'll put it in my coin purse now.\"",
+      "\"You're welcome expensive bag of 2.30 streets.\" \"Dear, I lose them in my dirty register now.\"",
+      "\"Hello fake note of two kisses and thirty news.\" \"Fake, I laugh them into my deaf king now.\"",
+      "\"Bye wise port of two tours and thirty trips.\" \"Quick, I run them into my wise port now.\""
+    ],
+    "correctAnswerItalian": "\"Ecco il resto esatto di due euro e trenta centesimi.\" \"Grazie, li metto subito nel mio portamonete.\"",
+    "correctAnswerEnglish": "\"Here is your exact change: two euros and thirty cents.\" \"Thanks, I'll just pop those into my coin purse.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Ricevere il denaro spicciolo e riporlo con cura.",
+      "incorrectItalian": "No, la conversazione riguarda lo scambio finale di monete metalliche.",
+      "correctEnglish": "Great! Receiving small change and storing it carefully.",
+      "incorrectEnglish": "No, the conversation is about the final exchange of metal coins."
+    }
+  },
+  {
+    "id": "s32-s53",
+    "italian": "\"Abbiamo pagato separato o alla romana l'ultima volta?\" \"L'ultima volta abbiamo fatto un conto unico e offerto noi.\"",
+    "english": "\"Did we pay separately or split equally last time?\" \"Last time we did a single bill and treated (offered for) you (plural).\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Abbiamo pagato separato o alla romana l'ultima volta?\" \"L'ultima volta abbiamo fatto un conto unico e offerto noi.\"",
+      "\"Abbiamo perso borsa sporca o alla via l'ultima gita?\" \"L'ultima via abbiamo perso un fango rari e chiamato noi.\"",
+      "\"Abbiamo riso news finta o alla nota l'ultima news?\" \"L'ultima news abbiamo riso un bacio sordo e visto noi.\"",
+      "\"Abbiamo corso tour saggio o al porto l'ultimo tour?\" \"L'ultimo porto abbiamo corso una gita lunga e taciuto noi.\""
+    ],
+    "choicesEnglish": [
+      "\"Did we pay separate or equally last time?\" \"Last time we did one bill and we paid.\"",
+      "\"Did we lose dirty bag or on the street last trip?\" \"Last street we lost a rare mud and we called.\"",
+      "\"Did we laugh at fake news or the note last news?\" \"Last news we laughed at a deaf kiss and we saw.\"",
+      "\"Did we run wise tour or at the port last tour?\" \"Last port we ran a long trip and we were silent.\""
+    ],
+    "correctAnswerItalian": "\"Abbiamo pagato separato o alla romana l'ultima volta?\" \"L'ultima volta abbiamo fatto un conto unico e offerto noi.\"",
+    "correctAnswerEnglish": "\"Did we pay separately or split the bill last time?\" \"Last time we just did one bill and it was our treat.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Ricordare le precedenti abitudini di pagamento tra amici.",
+      "incorrectItalian": "No, si parla del confronto tra diverse modalità di spartizione delle spese passate.",
+      "correctEnglish": "Exactly! Remembering previous payment habits among friends.",
+      "incorrectEnglish": "No, it's about comparing different ways of splitting past expenses."
+    }
+  },
+  {
+    "id": "s32-s54",
+    "italian": "\"Il debito totale del tavolo dodici è stato estinto?\" \"Sì, hanno pagato tutto con la carta di credito alla cassa.\"",
+    "english": "\"Has the total debt for table twelve been cleared (extinguished)?\" \"Yes, they paid everything with the credit card at the cash desk.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il debito totale del tavolo dodici è stato estinto?\" \"Sì, hanno pagato tutto con la carta di credito alla cassa.\"",
+      "\"Lo sporco totale della via dodici è stato perso?\" \"No, hanno perso tutto con la borsa cara alla via.\"",
+      "\"Il finto totale della news dodici è stato riso?\" \"Sì, hanno riso tutto con la nota finta al re.\"",
+      "\"Il saggio totale della gita dodici è stato corso?\" \"No, hanno corso tutto con il tour lungo al porto.\""
+    ],
+    "choicesEnglish": [
+      "\"Is the total debt for table 12 settled?\" \"Yes, they paid everything by credit card at the counter.\"",
+      "\"Is the total dirt for street 12 lost?\" \"No, they lost everything with the expensive bag on the street.\"",
+      "\"Is the total fake for news 12 laughed?\" \"Yes, they laughed everything with the fake note to the king.\"",
+      "\"Is the total wise for trip 12 run?\" \"No, they ran everything with the long tour at the port.\""
+    ],
+    "correctAnswerItalian": "\"Il debito totale del tavolo dodici è stato estinto?\" \"Sì, hanno pagato tutto con la carta di credito alla cassa.\"",
+    "correctAnswerEnglish": "\"Has the total amount for table twelve been settled?\" \"Yes; they paid the full balance by credit card at the register.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Confermare il saldo delle pendenze economiche tra lo staff del ristorante.",
+      "incorrectItalian": "No, questa conversazione interna verifica l'avvenuto incasso del conto di un tavolo.",
+      "correctEnglish": "Right! Confirming the settlement of economic balances among restaurant staff.",
+      "incorrectEnglish": "No, this internal conversation verifies the collection of a table's bill."
+    }
+  },
+  {
+    "id": "s32-s55",
+    "italian": "\"La valuta del conto è in Euro, vero?\" \"Certamente, in Italia usiamo solo l'Euro fiscalmente.\"",
+    "english": "\"The currency of the bill is in Euros, right?\" \"Certainly, in Italy we only use the Euro for tax purposes.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"La valuta del conto è in Euro, vero?\" \"Certamente, in Italia usiamo solo l'Euro fiscalmente.\"",
+      "\"La news della borsa è in Euro, raria?\" \"No, in via perdiamo solo il fango saggiamente.\"",
+      "\"Il bacio della nota è in Euro, finta?\" \"Sì, in re ridiamo solo la news fintamente.\"",
+      "\"Il tour della gita è in Euro, saggia?\" \"No, in porto corriamo solo il tour raramente.\""
+    ],
+    "choicesEnglish": [
+      "\"Is the bill in Euros?\" \"Certainly, in Italy we only use Euros officially.\"",
+      "\"Is the bag news in Euros, rare?\" \"No, on the street we only lose mud wisely.\"",
+      "\"Is the note kiss in Euros, fake?\" \"Yes, with the king we only laugh at news fakingly.\"",
+      "\"Is the trip tour in Euros, wise?\" \"No, at the port we only run the tour rarely.\""
+    ],
+    "correctAnswerItalian": "\"La valuta del conto è in Euro, vero?\" \"Certamente, in Italia usiamo solo l'Euro fiscalmente.\"",
+    "correctAnswerEnglish": "\"The bill is in Euros, isn't it?\" \"Of course; in Italy, the Euro is the only currency used for all transactions.\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiarire il sistema monetario ufficiale del paese.",
+      "incorrectItalian": "No, si parla della moneta legale utilizzata per i pagamenti nel territorio italiano.",
+      "correctEnglish": "Great! Clarifying the official monetary system of the country.",
+      "incorrectEnglish": "No, it's about the legal tender used for payments in Italian territory."
+    }
+  },
+  {
+    "id": "s32-s56",
+    "italian": "\"Mi scusi, ma l'iva è già conteggiata in questa voce?\" \"Sì, tutti i prezzi che vede sul menù sono già comprensivi di tasse.\"",
+    "english": "\"Excuse me, but is VAT already counted in this item?\" \"Yes, all the prices you see on the menu are already inclusive of taxes.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi, ma l'iva è già conteggiata in questa voce?\" \"Sì, tutti i prezzi che vede sul menù sono già comprensivi di tasse.\"",
+      "\"Mi chiami, ma lo sporco è già perso in questa borsa?\" \"No, tutti i fischio che vedi sulla via sono già saggi di fango.\"",
+      "\"Mi ridi, ma il finto è già riso in questa nota?\" \"Sì, tutte le news che vedi sul re sono già finta di baci.\"",
+      "\"Mi tacci, ma il lungo è già corso in questa gita?\" \"No, tutti i tour che vedi sul porto sono già saggia di torre.\""
+    ],
+    "choicesEnglish": [
+      "\"Pardon me, is VAT already included here?\" \"Yes, all menu prices already include tax.\"",
+      "\"Call me, but is the dirt already lost in this bag?\" \"No, all the whistles you see on the street are already wise of mud.\"",
+      "\"Laugh at me, but is the fake already laughed in this note?\" \"Yes, all the news you see on the king are already fake of kisses.\"",
+      "\"Silence me, but is the long already run in this trip?\" \"No, all the tours you see on the port are already wise of tower.\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, ma l'iva è già conteggiata in questa voce?\" \"Sì, tutti i prezzi che vede sul menù sono già comprensivi di tasse.\"",
+    "correctAnswerEnglish": "\"Excuse me, is the VAT already included in this price?\" \"Yes; all the prices listed on our menu are tax-inclusive.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Comprendere come vengono esposti i prezzi al pubblico in Italia.",
+      "incorrectItalian": "No, il cameriere conferma che non ci saranno tasse aggiunte alla fine del calcolo.",
+      "correctEnglish": "Exactly! Understanding how prices are displayed to the public in Italy.",
+      "incorrectEnglish": "No, the waiter confirms that no taxes will be added at the end of the calculation."
+    }
+  },
+  {
+    "id": "s32-s57",
+    "italian": "\"Siamo in sette, possiamo fare sette conti separati alla cassa?\" \"Preferiremmo di no, ma se avete pazienza proverò a accontentarvi.\"",
+    "english": "\"There are seven of us, can we have seven separate bills at the till?\" \"We would prefer not to, but if you have patience I will try to satisfy you (plural).\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Siamo in sette, possiamo fare sette conti separati alla cassa?\" \"Preferiremmo di no, ma se avete pazienza proverò a accontentarvi.\"",
+      "\"Siamo in borsa, possiamo perdere sette borse sporche alla via?\" \"Falso no, ma se avete fango perderò a chiamarvi.\"",
+      "\"Siamo in news, possiamo ridere sette news finte al re?\" \"Vero no, ma se avete baci riderò a vederli.\"",
+      "\"Siamo in gita, possiamo correre sette gite lunghe al porto?\" \"Saggio no, ma se avete tour correrò a tacerli.\""
+    ],
+    "choicesEnglish": [
+      "\"We are seven, can we do seven separate checks?\" \"We'd prefer not, but with patience I'll try to satisfy you.\"",
+      "\"We are in bag, can we lose seven dirty bags on the street?\" \"False no, but with mud I'll lose by calling you.\"",
+      "\"We are in news, can we laugh seven fake news at the king?\" \"True no, but with kisses I'll laugh by seeing them.\"",
+      "\"We are in trip, can we run seven long trips at the port?\" \"Wise no, but with tours I'll run by silencing them.\""
+    ],
+    "correctAnswerItalian": "\"Siamo in sette, possiamo fare sette conti separati alla cassa?\" \"Preferiremmo di no, ma se avete pazienza proverò a accontentarvi.\"",
+    "correctAnswerEnglish": "\"There are seven of us; can we each pay separately at the counter?\" \"We'd rather not, but if you can be patient, I'll see what I can do.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Gestire una richiesta complessa di pagamento multiplo per un gruppo numeroso.",
+      "incorrectItalian": "No, si parla della negoziazione tra un gruppo di amici e un cassiere indaffarato.",
+      "correctEnglish": "Right! Managing a complex multiple payment request for a large group.",
+      "incorrectEnglish": "No, it's about the negotiation between a group of friends and a busy cashier."
+    }
+  },
+  {
+    "id": "s32-s58",
+    "italian": "\"Il totale è di trentotto euro. Vuole tenere il resto come mancia?\" \"Oh, grazie mille! È davvero molto gentile, le auguro il meglio.\"",
+    "english": "\"The total is thirty-eight euros. Do you want to keep the change as a tip?\" \"Oh, thanks a lot! It's truly very kind, I wish you the best.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il totale è di trentotto euro. Vuole tenere il resto come mancia?\" \"Oh, grazie mille! È davvero molto gentile, le auguro il meglio.\"",
+      "\"Lo sporco è di trentotto metri. Vuole perdere la via come borsa?\" \"No rari! È davvero molto caro, le perdo il fango.\"",
+      "\"Il finto è di trentotto baci. Vuole ridere la news come bacio?\" \"Vero saggio! È davvero molto finto, le rido la nota.\"",
+      "\"Il saggio è di trentotto tour. Vuole correre la gita come tour?\" \"Saggio svelto! È davvero molto lungo, le corro il porto.\""
+    ],
+    "choicesEnglish": [
+      "\"The total is 38 euros. Want to keep the change as a tip?\" \"Oh, thanks! Very kind, I wish you the best.\"",
+      "\"The dirt is 38 meters. Want to lose the street as a bag?\" \"No rare! Truly very expensive, I lose the mud for you.\"",
+      "\"The fake is 38 kisses. Want to laugh at the news as a kiss?\" \"True wise! Truly very fake, I laugh at the note for you.\"",
+      "\"The wise is 38 tours. Want to run the trip as a tour?\" \"Wise quick! Truly very long, I run the port for you.\""
+    ],
+    "correctAnswerItalian": "\"Il totale è di trentotto euro. Vuole tenere il resto come mancia?\" \"Oh, grazie mille! È davvero molto gentile, le auguro il meglio.\"",
+    "correctAnswerEnglish": "\"The bill comes to thirty-eight euros. Keep the change for yourself?\" \"Oh, thank you so much! That's very kind of you; all the best!\"",
+    "feedback": {
+      "correctItalian": "Ottimo! Un modo pratico per lasciare la mancia arrotondando la cifra pagata.",
+      "incorrectItalian": "No, il cliente offre la differenza tra il costo e la banconota data al cameriere.",
+      "correctEnglish": "Great! A practical way to leave a tip by rounding up the paid amount.",
+      "incorrectEnglish": "No, the customer offers the difference between the cost and the banknote given to the waiter."
+    }
+  },
+  {
+    "id": "s32-s59",
+    "italian": "\"Mi scusi, la transazione è passata, ma il POS non ha emesso lo scontrino.\" \"Non si preoccupi, lo stampo io manualmente dalla cassa principale.\"",
+    "english": "\"Excuse me, the transaction went through, but the POS didn't issue the receipt.\" \"Don't worry, I'll print it manually from the main register.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Mi scusi, la transazione è passata, ma il POS non ha emesso lo scontrino.\" \"Non si preoccupi, lo stampo io manualmente dalla cassa principale.\"",
+      "\"Mi chiami, la via è persa, ma la borsa non ha chiamato il fango.\" \"Non si perda, lo chiamo io saggiamente dalla via raria.\"",
+      "\"Mi ridi, la news è risa, ma il bacio non ha visto la news.\" \"Non si vedi, lo rido io fintamente dalla nota finta.\"",
+      "\"Mi tacci, la gita è corsa, ma il tour non ha taciuto il porto.\" \"Non si corra, lo corro io svelto dal porto saggio.\""
+    ],
+    "choicesEnglish": [
+      "\"Pardon, the transaction went through but no receipt printed.\" \"No worries, I'll print it manually from the main desk.\"",
+      "\"Call me, the street is lost, but the bag didn't call the mud.\" \"Don't get lost, I'll call it wisely from the rare street.\"",
+      "\"Laugh at me, the news is laughed at, but the kiss didn't see the news.\" \"Don't be seen, I'll laugh at it fakingly from the fake note.\"",
+      "\"Silence me, the trip is run, but the tour didn't silence the port.\" \"Don't run, I'll run it quickly from the wise port.\""
+    ],
+    "correctAnswerItalian": "\"Mi scusi, la transazione è passata, ma il POS non ha emesso lo scontrino.\" \"Non si preoccupi, lo stampo io manualmente dalla cassa principale.\"",
+    "correctAnswerEnglish": "\"Excuse me, the payment went through, but the receipt didn't print out.\" \"Don't worry; I can print that manually for you from the main till.\"",
+    "feedback": {
+      "correctItalian": "Esatto! Gestire un malfunzionamento della stampante portatile.",
+      "incorrectItalian": "No, si parla del recupero della prova fiscale dopo un intoppo tecnico del terminale.",
+      "correctEnglish": "Exactly! Managing a portable printer malfunction.",
+      "incorrectEnglish": "No, it's about recovering the tax proof after a terminal technical glitch."
+    }
+  },
+  {
+    "id": "s32-s60",
+    "italian": "\"Il conto è di centodieci euro, come vogliamo pagare?\" \"Dividiamo per cinque, quindi sono ventidue euro ciascuno.\"",
+    "english": "\"The bill is 110 euros, how do we want to pay?\" \"We divide by five, so it's twenty-two euros each.\"",
+    "type": "sentence",
+    "choicesItalian": [
+      "\"Il conto è di centodieci euro, come vogliamo pagare?\" \"Dividiamo per cinque, quindi sono ventidue euro ciascuno.\"",
+      "\"La via è di centodieci metri, chi vogliamo perdere?\" \"Perdiamo per cinque, quindi sono ventidue borse ognuno.\"",
+      "\"La news è di centodieci baci, dove vogliamo ridere?\" \"Ridiamo per cinque, quindi sono ventidue baci finti ciascuno.\"",
+      "\"Il porto è di centodieci tour, quando vogliamo correre?\" \"Corriamo per cinque, quindi sono ventidue tour saggi ciascuno.\""
+    ],
+    "choicesEnglish": [
+      "\"The bill is 110 euros, how do we pay?\" \"We divide by five, so it's 22 euros each.\"",
+      "\"The street is 110 meters, who do we want to lose?\" \"We lose by five, so it's 22 bags each.\"",
+      "\"The news is 110 kisses, where do we want to laugh?\" \"We laugh by five, so it's 22 fake kisses each.\"",
+      "\"The port is 110 tours, when do we want to run?\" \"We run by five, so it's 22 wise tours each.\""
+    ],
+    "correctAnswerItalian": "\"Il conto è di centodieci euro, come vogliamo pagare?\" \"Dividiamo per cinque, quindi sono ventidue euro ciascuno.\"",
+    "correctAnswerEnglish": "\"The bill comes to 110 euros; how are we handling this?\" \"Let's split it five ways; that makes it twenty-two euros a head.\"",
+    "feedback": {
+      "correctItalian": "Giusto! Concludere il pasto in gruppo con un calcolo rapido e preciso.",
+      "incorrectItalian": "No, questa conversazione stabilisce la quota pro capite per un gruppo di cinque persone.",
+      "correctEnglish": "Right! Concluding the group meal with a quick and precise calculation.",
+      "incorrectEnglish": "No, this conversation establishes the per-capita share for a group of five people."
     }
   }
 ]
