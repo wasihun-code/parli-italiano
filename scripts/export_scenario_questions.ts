@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { scenarios } from '../src/data/scenarios';
 
-const EXPORT_DIR = path.join(process.cwd(), 'src/data/exports');
+const EXPORT_DIR = path.join(process.cwd(), 'src/data/exports2');
 
 if (!fs.existsSync(EXPORT_DIR)) {
   fs.mkdirSync(EXPORT_DIR, { recursive: true });

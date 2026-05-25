@@ -1275,6 +1275,7 @@ export const italianToEnglish: Record<string, string> = {
   "windsurf": "windsurfing",
   "zanzara": "mosquito",
   "zebra": "zebra",
+  "zerbino": "doormat",
   "zucchero": "sugar",
   "zucchina": "zucchini",
   "zuppa": "soup",

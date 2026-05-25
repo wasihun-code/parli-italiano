@@ -1,0 +1,128 @@
+Parla Italiano – Complete App Overview
+What is it?
+
+Parla Italiano is a comprehensive, gamified web application for learning Italian. It teaches A1–A2 level Italian through real‑world scenarios, interactive games, short stories, grammar lessons, and an AI conversation tutor. The app works offline, syncs progress to the cloud, and includes social features (friends, chat) and a premium subscription model.
+
+The app is built as a Progressive Web App (PWA) – it runs in any modern browser, can be installed on a phone or desktop, and feels like a native app.
+Core Features
+1. Scenario‑Based Learning (116 scenarios)
+
+The heart of the app. Each scenario simulates a real situation: “Airport Arrival”, “Ordering Coffee”, “Hotel Check‑In”, “Lost in a City”, etc.
+
+Each scenario has three training phases:
+
+    Vocabulary – learn key words (Italian → English and English → Italian).
+
+    Phrases – short, useful sentences.
+
+    Sentences – longer, more complex sentences.
+
+Users progress through the phases; the app tracks what they’ve mastered. Once all phases of a scenario are completed, the user can have a free‑form AI conversation with “Antonio”, the Italian tutor.
+2. Grammar Lessons
+
+Structured lessons covering all essential Italian grammar:
+
+    Articles (definite, indefinite, partitive)
+
+    Nouns and adjectives (gender, number, agreement)
+
+    Pronouns (subject, direct, indirect, reflexive, possessive)
+
+    Verbs (present, passato prossimo, imperfetto, future, conditional, imperative, subjunctive)
+
+    Prepositions, negation, comparatives, conjunctions
+
+Each lesson includes explanations, examples, and interactive quizzes.
+3. Games (8 interactive games)
+
+Learning is reinforced through engaging mini‑games:
+
+    Gender Game (masculine/feminine with articles)
+
+    Sentence Translation (English ↔ Italian)
+
+    Prepositions Game (fill the blank with the correct preposition)
+
+    Opposites Game (type the opposite word)
+
+    Numbers Game (convert digits ↔ Italian words)
+
+    Idioms / Expressions Game (match Italian idioms to their meanings)
+
+    Singular / Plural Game (type the plural form)
+
+    Flashcards (SRS review of mastered words)
+
+Each game has difficulty levels, scoring, lives, progress bars, and keyboard shortcuts for a desktop experience.
+4. Stories (18 graded readers)
+
+Users read short Italian stories (adapted from classic literature) in a parallel text format (Italian and English). Stories are split into parts and pages, with sub‑page navigation (one‑to‑two sentences per screen). After each sub‑page, users answer:
+
+    Vocabulary questions
+
+    Translation exercises
+
+    Comprehension multiple‑choice questions
+
+After finishing a story, a final quiz tests overall understanding. Premium users have access to all stories; free users see only a few.
+5. AI Conversation Tutor (“Antonio”)
+
+After completing a scenario’s three phases, users can talk freely with an AI tutor. Antonio speaks only in simple Italian, stays in character (e.g., airport clerk, waiter), and helps users practice real conversation. The tutor runs on a local Ollama model (Llama 3.1 or Qwen2.5) – no internet required once set up. It uses text‑to‑speech (SparkTTS) for human‑like voice (coming soon).
+6. SRS Review System
+
+A Spaced Repetition System (flashcards) helps users retain vocabulary, phrases, and sentences. The system schedules reviews based on how well the user knows each item. The Review screen shows cards with English or Italian first (user can choose direction) and tracks mastery.
+7. Friends & Chat
+
+Users can search for other users, send friend requests, and chat with friends. Chat is a premium feature – only paying users can send messages, but anyone can receive them. The chat uses polling (no real‑time WebSockets) for simplicity.
+8. Streaks & XP
+
+A daily streak counter encourages consistent practice. Users earn XP for correct answers and lose small amounts for incorrect ones. Bonuses are awarded for 7‑day and 30‑day streaks. A leaderboard shows top users by total XP, and a global XP system tracks all learning activities.
+9. Progress Tracking & Mastery
+
+The app remembers everything the user has done, even offline. Progress syncs to the cloud when online. Users can see which scenarios they’ve completed, which games they’ve mastered, and their overall mastery of all vocabulary (the “Words Learned” page shows every word, phrase, and sentence they’ve mastered across the whole app).
+10. Monetisation / Premium Features
+
+    Free tier: All 116 scenarios, basic grammar, some games, SRS review, limited stories, AI tutor (limited conversation), offline mode.
+
+    Premium (monthly/annual subscription): Full stories, advanced grammar (A2+), all game levels, unlimited AI chat, send messages to friends, higher streak freezes, offline sync, and more coming.
+
+The app uses Stripe for subscriptions, with a self‑hosted Django backend handling authentication, progress sync, and subscriptions.
+11. Desktop & Mobile Responsive
+
+The app works beautifully on both desktop and mobile. On desktop, it uses a three‑column layout:
+
+    Left sidebar: main navigation (Home, Scenarios, Foundations, Review, Games, Stories, Grammar, AI Tutor, Friends)
+
+    Center: main content (scenario list, game, story, etc.)
+
+    Right sidebar: user stats (streak, XP, daily quests, leaderboard, premium upgrade)
+
+On mobile, the sidebars collapse into a bottom navigation bar and a top header.
+Technical Architecture (brief)
+
+    Frontend: React 19, TypeScript, Vite, Zustand (state), Dexie/IndexedDB (offline storage), React Router.
+
+    Backend: Django + Django REST Framework, PostgreSQL (or SQLite for dev), JWT authentication, Google OAuth, Stripe.
+
+    AI: Ollama (local LLM) for the Antonio tutor; SparkTTS for voice (planned).
+
+    Deployment: Can be deployed on any VPS (DigitalOcean, Railway, etc.) or as a static site + backend API.
+
+Current Status
+
+The app is functional and ready for beta testing. All core features work, but some enhancements are ongoing:
+
+    Improved audio (human‑like TTS)
+
+    Better question quality and feedback
+
+    Balancing of games (e.g., equal masculine/feminine in Gender game)
+
+    Story sub‑page navigation (already implemented)
+
+The team is currently focusing on polish, user acquisition, and scaling to more languages (French, Spanish, German).
+Why It’s Different
+
+Unlike Duolingo (which teaches isolated sentences) or Babbel (which is mostly formal lessons), Parla Italiano focuses on practical, scenario‑based learning with a real AI conversation partner. It’s offline‑first, privacy‑friendly (AI runs locally), and designed for travellers, expats, and serious beginners who want to survive in Italian‑speaking environments.
+
+The app is self‑contained – once you download the course data, you can use it entirely offline, making it perfect for areas with poor internet.

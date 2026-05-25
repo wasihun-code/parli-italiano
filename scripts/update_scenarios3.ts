@@ -404,20 +404,28 @@ const allBlueprints = [
   {
     id: 22,
     phrases: [
-      ['Ho affittato questo appartamento.', 'I rented this apartment.'],
-      ['Sto aspettando l\'host.', 'I am waiting for the host.'],
-      ['A quale nome devo suonare sul citofono?', 'Which name should I ring on the intercom?'],
+      ['Sono appena arrivato.', 'I just arrived.'],
+      ['Sono davanti al palazzo.', 'I am in front of the building.'],
       ['Il portone è chiuso.', 'The building door is closed.'],
+      ['Non ho il codice per entrare.', 'I don\'t have the code to enter.'],
+      ['Dove trovo il codice?', 'Where do I find the code?'],
+      ['A quale nome devo suonare?', 'Which name should I ring?'],
+      ['La chiave è sotto lo zerbino.', 'The key is under the doormat.'],
       ['Questa serratura è dura.', 'This lock is stiff.'],
-      ['Dove avviene la consegna chiavi?', 'Where does the key handoff happen?']
+      ['La chiave gira ma non si apre.', 'The key turns but it doesn\'t open.'],
+      ['Ti faccio vedere come funziona.', 'I\'ll show you how it works.']
     ],
     sentences: [
-      ['L\'host mi ha inviato le regole della casa via mail.', 'The host sent me the house rules via email.', {grammarPoint: 'Passato prossimo with indirect object pronoun "mi".'}],
-      ['Il codice porta per entrare è nel messaggio.', 'The door code to enter is in the message.', {grammarPoint: 'Preposition "in" + article = "nel".'}],
-      ['Devo digitare il codice e poi suonare il citofono.', 'I have to type the code and then ring the intercom.', {grammarPoint: 'Sequence "e poi".'}],
-      ['La serratura fa un po\' di fatica ad aprirsi.', 'The lock struggles a bit to open.', {grammarPoint: 'Expression "fare fatica a".'}],
-      ['Incontrerò l\'host per la consegna chiavi alle tre.', 'I will meet the host for the key handoff at three.', {grammarPoint: 'Future tense of "incontrare".'}],
-      ['Assicurati di chiudere il portone quando esci.', 'Make sure to close the building door when you leave.', {grammarPoint: 'Imperative reflexive "assicurati di".'}]
+      ['Il codice per il portone è 4832, poi premi il tasto chiave.', 'The building door code is 4832, then press the key button.', {grammarPoint: 'Combined instruction for building entry.'}],
+      ['L\'ascensore è in fondo a sinistra, devi salire al terzo piano.', 'The elevator is at the end on the left, you have to go up to the third floor.', {grammarPoint: 'Navigating the building interior.'}],
+      ['Sulla porta c\'è una cassetta di sicurezza grigia con le chiavi.', 'On the door there is a gray lockbox with the keys.', {grammarPoint: 'Locating the key pickup point.'}],
+      ['Ruota i numeri, allinea il codice e poi tira la levetta verso di te.', 'Rotate the numbers, align the code, and then pull the lever towards you.', {grammarPoint: 'Detailed instruction for a mechanical lockbox.'}],
+      ['La levetta della cassetta va tirata verso il basso, non verso l\'alto.', 'The box lever should be pulled downwards, not upwards.', {grammarPoint: 'Clarifying the direction of the movement.'}],
+      ['Questa chiave è per il portone e questa invece è per l\'appartamento.', 'This key is for the building door and this one instead is for the apartment.', {grammarPoint: 'Distinguishing between different keys.'}],
+      ['Il wifi è scritto sul retro del router che si trova in salone.', 'The wifi is written on the back of the router located in the living room.', {grammarPoint: 'Finding the wifi information.'}],
+      ['La chiave dell\'appartamento è sotto lo zerbino marrone all\'ingresso.', 'The apartment key is under the brown doormat at the entrance.', {grammarPoint: 'Finding the hidden key.'}],
+      ['Spinga la porta verso l\'interno mentre gira la chiave nella serratura.', 'Push the door inwards while turning the key in the lock.', {grammarPoint: 'Instruction for a stiff or old door.'}],
+      ['Dentro troverà un foglio con le istruzioni per il wifi e la raccolta differenziata.', 'Inside you will find a sheet with instructions for the wifi and recycling.', {grammarPoint: 'Locating important guest information.'}]
     ]
   },
   {

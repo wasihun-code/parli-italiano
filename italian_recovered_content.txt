@@ -1,0 +1,895 @@
+
+const apartmentKeyPickUpVocabularyData = [
+  ['appartamento', 'apartment', ['building', 'room', 'staircase']],
+  ['palazzo', 'building', ['apartment', 'courtyard', 'staircase']],
+  ['scala', 'staircase', ['hallway', 'elevator', 'building']],
+  ['ascensore', 'elevator', ['staircase', 'landing', 'hallway']],
+  ['portone', 'building door', ['front door', 'gate', 'intercom']],
+  ['porta d’ingresso', 'front door', ['building door', 'lock', 'gate']],
+  ['cortile', 'courtyard', ['hallway', 'landing', 'building']],
+  ['pianerottolo', 'landing', ['staircase', 'hallway', 'courtyard']],
+  ['citofono', 'intercom', ['doorbell', 'building door', 'door code']],
+  ['campanello', 'doorbell', ['intercom', 'lock', 'door handle']],
+  ['chiave', 'key', ['lock', 'keychain', 'code']],
+  ['mazzo di chiavi', 'set of keys', ['single key', 'remote control', 'house rules']],
+  ['serratura', 'lock', ['key', 'handle', 'hinge']],
+  ['maniglia', 'handle', ['lock', 'button', 'intercom']],
+  ['codice', 'code', ['password', 'nameplate', 'key']],
+  ['codice del portone', 'building door code', ['wifi password', 'apartment number', 'key handoff']],
+  ['numero civico', 'street number', ['floor number', 'apartment number', 'postal code']],
+  ['interno', 'apartment number', ['street number', 'floor', 'building code']],
+  ['piano', 'floor', ['elevator', 'staircase', 'landing']],
+  ['terzo piano', 'third floor', ['second floor', 'ground floor', 'street level']],
+  ['host', 'host', ['guest', 'owner', 'neighbor']],
+  ['proprietario', 'owner', ['host', 'tenant', 'guest']],
+  ['ospite', 'guest', ['host', 'owner', 'neighbor']],
+  ['prenotazione', 'booking', ['message', 'payment', 'apartment']],
+  ['messaggio', 'message', ['call', 'document', 'receipt']],
+  ['telefono', 'phone', ['message', 'charger', 'intercom']],
+  ['documento', 'ID', ['booking', 'receipt', 'keychain']],
+  ['consegna delle chiavi', 'key handoff', ['self check-in', 'house rules', 'door code']],
+  ['self check-in', 'self check-in', ['key handoff', 'check-out', 'wifi login']],
+  ['istruzioni', 'instructions', ['receipt', 'directions', 'rules']],
+  ['regole della casa', 'house rules', ['building code', 'booking details', 'wifi password']],
+  ['wifi', 'wifi', ['intercom', 'elevator', 'heating']],
+  ['password del wifi', 'wifi password', ['door code', 'street number', 'host name']],
+  ['rete', 'network', ['password', 'signal', 'charger']],
+  ['segnale', 'signal', ['network', 'charger', 'keychain']],
+  ['aprire', 'to open', ['to ring', 'to enter', 'to close']],
+  ['chiudere', 'to close', ['to open', 'to leave', 'to wait']],
+  ['suonare', 'to ring', ['to knock', 'to open', 'to call']],
+  ['aspettare', 'to wait', ['to enter', 'to leave', 'to call']],
+  ['entrare', 'to enter', ['to go up', 'to wait', 'to send']],
+  ['salire', 'to go up', ['to enter', 'to go down', 'to open']],
+  ['scendere', 'to go down', ['to go up', 'to leave', 'to turn']],
+  ['girare', 'to turn', ['to push', 'to ring', 'to type']],
+  ['spingere', 'to push', ['to pull', 'to turn', 'to type']],
+  ['tirare', 'to pull', ['to push', 'to ring', 'to open']],
+  ['funzionare', 'to work', ['to open', 'to ring', 'to fit']],
+  ['bloccato', 'stuck', ['open', 'broken', 'empty']],
+  ['occupato', 'busy', ['available', 'empty', 'late']],
+  ['subito', 'right away', ['carefully', 'outside', 'tomorrow']],
+  ['tra poco', 'in a moment', ['upstairs', 'yesterday', 'right away']],
+  ['un attimo', 'one moment', ['one key', 'one floor', 'one message']],
+  ['mi scusi', 'excuse me', ['thank you', 'you are welcome', 'good evening']],
+  ['non funziona', "it doesn't work", ["it's open", "it's mine", "it's downstairs"]],
+  ['non riesco ad aprire', "I can't open it", ["I can't hear", "I can't find it", "I can't stay"]],
+  ['ho capito', 'I understand', ["I forgot", "I'm waiting", "I checked"]],
+  ['va bene', 'okay', ['too much', 'already', 'closed']]
+];
+
+const apartmentKeyPickUpPhraseGroups = [
+  [
+    ["Sono davanti al portone.", "I'm in front of the building door."],
+    ["Sto arrivando.", "I'm coming."],
+    ["Mi sente dal citofono?", "Can you hear me on the intercom?"],
+    ["Un attimo, apro io.", "One moment, I'll open it."]
+  ],
+  [
+    ["A quale nome devo suonare?", "Which name should I ring?"],
+    ["C'è scritto Rossi.", "It says Rossi."],
+    ["Sì, proprio quello.", "Yes, that one."],
+    ["Ok, allora suono.", "Ok, then I'll ring."]
+  ],
+  [
+    ["Il portone non si apre.", "The building door won't open."],
+    ["Ha digitato il codice?", "Did you enter the code?"],
+    ["Sì, ma non funziona.", "Yes, but it isn't working."],
+    ["Provi ancora una volta.", "Try one more time."]
+  ],
+  [
+    ["Aspetti sotto, scendo io.", "Wait downstairs, I'll come down."],
+    ["Perfetto, la aspetto qui.", "Perfect, I'll wait here."],
+    ["Ha una valigia grande?", "Do you have a big suitcase?"],
+    ["Sì, abbastanza pesante.", "Yes, pretty heavy."]
+  ],
+  [
+    ["Le lascio le chiavi qui.", "I'll leave the keys here for you."],
+    ["Quante chiavi ci sono?", "How many keys are there?"],
+    ["Una per il portone, una per la porta.", "One for the building door, one for the door."],
+    ["C'è anche il telecomando.", "There's also the remote."]
+  ],
+  [
+    ["Questo è il terzo piano.", "This is the third floor."],
+    ["L'ascensore è piccolo.", "The elevator is small."],
+    ["Preferisco fare le scale.", "I'd rather take the stairs."],
+    ["Va bene, andiamo su.", "Okay, let's go up."]
+  ],
+  [
+    ["La chiave gira male.", "The key turns badly."],
+    ["Deve spingere un po'.", "You need to push a little."],
+    ["Ah, adesso sì.", "Ah, now yes."],
+    ["La serratura è un po' dura.", "The lock is a bit stiff."]
+  ],
+  [
+    ["Mi fa vedere come si apre?", "Can you show me how it opens?"],
+    ["Certo, guardi qui.", "Sure, look here."],
+    ["Prima giri, poi tiri.", "First turn, then pull."],
+    ["Ok, adesso provo io.", "Ok, now I'll try."]
+  ],
+  [
+    ["Il wifi qual è?", "What's the wifi?"],
+    ["La rete si chiama CasaGiulia.", "The network is called CasaGiulia."],
+    ["E la password?", "And the password?"],
+    ["Gliela mando in messaggio.", "I'll send it to you by message."]
+  ],
+  [
+    ["Il bagno è in fondo.", "The bathroom is at the end."],
+    ["La cucina è in comune?", "Is the kitchen shared?"],
+    ["No, è solo per lei.", "No, it's only for you."],
+    ["Perfetto, grazie.", "Perfect, thanks."]
+  ],
+  [
+    ["Se ha problemi, mi scriva.", "If you have problems, message me."],
+    ["Va bene, grazie mille.", "Alright, thanks a lot."],
+    ["Di solito rispondo subito.", "I usually reply right away."],
+    ["Ottimo, allora ci sentiamo dopo.", "Great, then we'll talk later."]
+  ],
+  [
+    ["Domani a che ora parte?", "What time are you leaving tomorrow?"],
+    ["Verso le dieci.", "Around ten."],
+    ["Allora può lasciare le chiavi sul tavolo.", "Then you can leave the keys on the table."],
+    ["Sì, nessun problema.", "Yes, no problem."]
+  ],
+  [
+    ["Scusi, ho sbagliato campanello.", "Sorry, I rang the wrong doorbell."],
+    ["Nessun problema, succede.", "No problem, it happens."],
+    ["Il suo nome non c'è fuori.", "Your name isn't outside."],
+    ["Infatti, c'è quello di mia madre.", "Exactly, my mother's name is there."]
+  ]
+];
+
+const apartmentKeyPickUpSentenceGroups = [
+  [
+    ["Buonasera, sono davanti al numero 18 ma il portone è ancora chiuso.", "Good evening, I'm in front of number 18 but the building door is still closed."],
+    ["Ho digitato il codice due volte e il citofono continua a non rispondere.", "I entered the code twice and the intercom still isn't answering."],
+    ["Mi scusi, forse sono nel palazzo sbagliato perché qui non vedo il suo nome.", "Excuse me, maybe I'm at the wrong building because I don't see your name here."],
+    ["Aspetti lì un minuto, scendo io così facciamo prima.", "Wait there a minute, I'll come down so it's quicker."]
+  ],
+  [
+    ["La prenotazione è a nome Miller e arrivo con una valigia blu.", "The booking is under the name Miller and I'm arriving with a blue suitcase."],
+    ["Se preferisce, possiamo fare la consegna delle chiavi direttamente davanti al portone.", "If you prefer, we can do the key handoff right in front of the building door."],
+    ["Sono quasi arrivato, mi mancano due minuti a piedi dalla fermata.", "I'm almost there, I'm two minutes' walk from the stop."],
+    ["Perfetto, io sono sotto casa con le chiavi in mano.", "Perfect, I'm downstairs with the keys in my hand."]
+  ],
+  [
+    ["Per entrare deve digitare 3821 e poi spingere forte il portone.", "To get in you need to type 3821 and then push the building door hard."],
+    ["Dopo il portone trova il cortile, poi la scala è subito a destra.", "After the building door you'll find the courtyard, then the staircase is immediately on the right."],
+    ["L'appartamento è al terzo piano, ma se vuole c'è anche l'ascensore.", "The apartment is on the third floor, but if you want there's also an elevator."],
+    ["Quando arriva sul pianerottolo, la porta è l'ultima a sinistra.", "When you get to the landing, the door is the last one on the left."]
+  ],
+  [
+    ["La chiave del portone entra bene, ma quella dell'appartamento gira male.", "The building key goes in fine, but the apartment one turns badly."],
+    ["Non riesco ad aprire: devo spingere la porta o tirarla verso di me?", "I can't open it: do I need to push the door or pull it toward me?"],
+    ["No, non sta sbagliando lei, la serratura è dura e a volte si blocca.", "No, you're not doing it wrong, the lock is stiff and sometimes it jams."],
+    ["Provi a girare tutta la chiave e poi ad alzare leggermente la maniglia.", "Try turning the key all the way and then lifting the handle slightly."]
+  ],
+  [
+    ["Se il citofono non funziona, mi chiami e le apro dal telefono.", "If the intercom doesn't work, call me and I'll open it from my phone."],
+    ["Oddio, adesso si è aperto, forse prima avevo digitato male il codice.", "Oh wow, now it opened, maybe I typed the code wrong before."],
+    ["Non si preoccupi, con questo portone capita spesso ai nuovi ospiti.", "Don't worry, this building door often causes problems for new guests."],
+    ["L'importante è chiudere bene quando esce, altrimenti resta socchiuso.", "The important thing is to close it properly when you leave, otherwise it stays half-open."]
+  ],
+  [
+    ["Le mando subito un messaggio con la rete wifi e la password aggiornata.", "I'll send you a message right away with the wifi network and the updated password."],
+    ["Nel messaggio trova anche le regole della casa e l'orario del check-out.", "In the message you'll also find the house rules and check-out time."],
+    ["Se il segnale in camera è debole, vicino alla finestra prende meglio.", "If the signal in the room is weak, it works better near the window."],
+    ["La cucina è privata, quindi può usare il frigo senza problemi.", "The kitchen is private, so you can use the fridge without any problems."]
+  ],
+  [
+    ["Mi scusi, ho suonato al campanello sbagliato e mi ha risposto un vicino.", "Excuse me, I rang the wrong doorbell and a neighbor answered me."],
+    ["Sul citofono non c'è il suo cognome, c'è scritto Bianchi come nel messaggio?", "Your last name isn't on the intercom, does it say Bianchi like in the message?"],
+    ["Sì, esatto, Bianchi è il cognome di mia madre, deve suonare lì.", "Yes, exactly, Bianchi is my mother's last name, you need to ring there."],
+    ["Ah ok, allora torno giù e provo quel campanello.", "Ah ok, then I'll go back down and try that doorbell."]
+  ],
+  [
+    ["Quando esce, lasci il mazzo di chiavi sul tavolo vicino all'ingresso.", "When you leave, leave the set of keys on the table near the entrance."],
+    ["Se perde una chiave, me lo dica subito perché il duplicato costa molto.", "If you lose a key, tell me right away because the duplicate costs a lot."],
+    ["Domani parto presto, quindi preferisco fare un check-out semplice e veloce.", "Tomorrow I'm leaving early, so I'd prefer to do a simple and quick check-out."],
+    ["Va bene, allora non serve incontrarci di nuovo domattina.", "Alright, then we don't need to meet again tomorrow morning."]
+  ],
+  [
+    ["Sto aspettando sotto la pioggia, quindi se riesce ad aprirmi sarebbe meglio.", "I'm waiting in the rain, so if you can open for me that would be better."],
+    ["Arrivo subito, ho solo un altro ospite al secondo piano e poi scendo.", "I'm coming right away, I just have another guest on the second floor and then I'll come down."],
+    ["Non si preoccupi, aspetto qui sotto al portico.", "Don't worry, I'll wait here under the arcade."],
+    ["Grazie, appena apro il portone le faccio un cenno dalla scala.", "Thanks, as soon as I open the building door I'll wave to you from the stairs."]
+  ],
+  [
+    ["Dentro l'appartamento trova anche una mappa del quartiere e i numeri utili.", "Inside the apartment you'll also find a map of the neighborhood and useful numbers."],
+    ["Se stasera torna tardi, porti sempre con sé il codice perché il portone si chiude.", "If you come back late tonight, always carry the code because the building door locks."],
+    ["Il riscaldamento si accende da quel pulsante vicino alla cucina.", "The heating turns on from that button near the kitchen."],
+    ["Per qualsiasi dubbio mi scriva pure su WhatsApp, rispondo appena posso.", "If you have any questions, just message me on WhatsApp, I'll reply as soon as I can."]
+  ],
+  [
+    ["La porta si apre verso l'interno, per questo prima sembrava bloccata.", "The door opens inward, that's why it seemed stuck before."],
+    ["Adesso ho capito, prima tiravo invece di spingere.", "Now I get it, before I was pulling instead of pushing."],
+    ["Succede spesso perché la maniglia è un po' lenta e inganna.", "It happens often because the handle is a bit loose and misleading."],
+    ["Se vuole, facciamo un'altra prova così è tranquillo per stasera.", "If you want, let's try one more time so you feel okay for tonight."]
+  ],
+  [
+    ["Il vicino del primo piano si lamenta se il portone resta aperto troppo a lungo.", "The neighbor on the first floor complains if the building door stays open too long."],
+    ["Per favore non lasci le chiavi inserite nella serratura quando esce.", "Please don't leave the keys in the lock when you go out."],
+    ["Va bene, allora faccio attenzione ogni volta che rientro.", "Okay, then I'll be careful every time I come back."],
+    ["Perfetto, per il resto l'appartamento è tutto suo.", "Perfect, other than that the apartment is all yours."]
+  ],
+  [
+    ["Se non trova l'ingresso, guardi il numero civico accanto alla farmacia.", "If you can't find the entrance, look for the street number next to the pharmacy."],
+    ["Sono davanti alla farmacia, ma vedo due portoni diversi e non so quale sia.", "I'm in front of the pharmacy, but I see two different building doors and I don't know which one it is."],
+    ["Prenda quello a sinistra con la targa in ottone e il citofono nero.", "Take the one on the left with the brass plaque and the black intercom."],
+    ["Perfetto, adesso l'ho trovato e sto entrando.", "Perfect, now I've found it and I'm going in."]
+  ],
+  [
+    ["Il telecomando apre il cancello del cortile, non il portone principale.", "The remote opens the courtyard gate, not the main building door."],
+    ["Ah, ecco perché continuavo a premere senza risultato.", "Ah, that's why I kept pressing it with no result."],
+    ["Prima entri dal portone, poi dentro usi il telecomando.", "First go in through the building door, then inside use the remote."],
+    ["Chiaro, grazie per la spiegazione.", "Clear, thanks for the explanation."]
+  ]
+];
+
+const vocabularyData = [
+  ['appartamento', 'apartment', ['building', 'room', 'staircase']],
+  ['palazzo', 'building', ['apartment', 'courtyard', 'staircase']],
+  ['scala', 'staircase', ['hallway', 'elevator', 'building']],
+  ['ascensore', 'elevator', ['staircase', 'landing', 'hallway']],
+  ['portone', 'building door', ['front door', 'gate', 'intercom']],
+  ['porta d’ingresso', 'front door', ['building door', 'lock', 'gate']],
+  ['cortile', 'courtyard', ['hallway', 'landing', 'building']],
+  ['pianerottolo', 'landing', ['staircase', 'hallway', 'courtyard']],
+  ['citofono', 'intercom', ['doorbell', 'building door', 'door code']],
+  ['campanello', 'doorbell', ['intercom', 'lock', 'door handle']],
+  ['chiave', 'key', ['lock', 'keychain', 'code']],
+  ['mazzo di chiavi', 'set of keys', ['single key', 'remote control', 'house rules']],
+  ['serratura', 'lock', ['key', 'handle', 'hinge']],
+  ['maniglia', 'handle', ['lock', 'button', 'intercom']],
+  ['codice', 'code', ['password', 'nameplate', 'key']],
+  ['codice del portone', 'building door code', ['wifi password', 'apartment number', 'key handoff']],
+  ['numero civico', 'street number', ['floor number', 'apartment number', 'postal code']],
+  ['interno', 'apartment number', ['street number', 'floor', 'building code']],
+  ['piano', 'floor', ['elevator', 'staircase', 'landing']],
+  ['terzo piano', 'third floor', ['second floor', 'ground floor', 'street level']],
+  ['host', 'host', ['guest', 'owner', 'neighbor']],
+  ['proprietario', 'owner', ['host', 'tenant', 'guest']],
+  ['ospite', 'guest', ['host', 'owner', 'neighbor']],
+  ['prenotazione', 'booking', ['message', 'payment', 'apartment']],
+  ['messaggio', 'message', ['call', 'document', 'receipt']],
+  ['telefono', 'phone', ['message', 'charger', 'intercom']],
+  ['documento', 'ID', ['booking', 'receipt', 'keychain']],
+  ['consegna delle chiavi', 'key handoff', ['self check-in', 'house rules', 'door code']],
+  ['self check-in', 'self check-in', ['key handoff', 'check-out', 'wifi login']],
+  ['istruzioni', 'instructions', ['receipt', 'directions', 'rules']],
+  ['regole della casa', 'house rules', ['building code', 'booking details', 'wifi password']],
+  ['wifi', 'wifi', ['intercom', 'elevator', 'heating']],
+  ['password del wifi', 'wifi password', ['door code', 'street number', 'host name']],
+  ['rete', 'network', ['password', 'signal', 'charger']],
+  ['segnale', 'signal', ['network', 'charger', 'keychain']],
+  ['aprire', 'to open', ['to ring', 'to enter', 'to close']],
+  ['chiudere', 'to close', ['to open', 'to leave', 'to wait']],
+  ['suonare', 'to ring', ['to knock', 'to open', 'to call']],
+  ['aspettare', 'to wait', ['to enter', 'to leave', 'to call']],
+  ['entrare', 'to enter', ['to go up', 'to wait', 'to send']],
+  ['salire', 'to go up', ['to enter', 'to go down', 'to open']],
+  ['scendere', 'to go down', ['to go up', 'to leave', 'to turn']],
+  ['girare', 'to turn', ['to push', 'to ring', 'to type']],
+  ['spingere', 'to push', ['to pull', 'to turn', 'to type']],
+  ['tirare', 'to pull', ['to push', 'to ring', 'to open']],
+  ['funzionare', 'to work', ['to open', 'to ring', 'to fit']],
+  ['bloccato', 'stuck', ['open', 'broken', 'empty']],
+  ['occupato', 'busy', ['available', 'empty', 'late']],
+  ['subito', 'right away', ['carefully', 'outside', 'tomorrow']],
+  ['tra poco', 'in a moment', ['upstairs', 'yesterday', 'right away']],
+  ['un attimo', 'one moment', ['one key', 'one floor', 'one message']],
+  ['mi scusi', 'excuse me', ['thank you', 'you are welcome', 'good evening']],
+  ['non funziona', "it doesn't work", ["it's open", "it's mine", "it's downstairs"]],
+  ['non riesco ad aprire', "I can't open it", ["I can't hear", "I can't find it", "I can't stay"]],
+  ['ho capito', 'I understand', ["I forgot", "I'm waiting", "I checked"]],
+  ['va bene', 'okay', ['too much', 'already', 'closed']]
+];
+
+const phraseGroups = [
+  [
+    ["Sono davanti al portone.", "I'm in front of the building door."],
+    ["Sto arrivando.", "I'm coming."],
+    ["Mi sente dal citofono?", "Can you hear me on the intercom?"],
+    ["Un attimo, apro io.", "One moment, I'll open it."]
+  ],
+  [
+    ["A quale nome devo suonare?", "Which name should I ring?"],
+    ["C'è scritto Rossi.", "It says Rossi."],
+    ["Sì, proprio quello.", "Yes, that one."],
+    ["Ok, allora suono.", "Ok, then I'll ring."]
+  ],
+  [
+    ["Il portone non si apre.", "The building door won't open."],
+    ["Ha digitato il codice?", "Did you enter the code?"],
+    ["Sì, ma non funziona.", "Yes, but it isn't working."],
+    ["Provi ancora una volta.", "Try one more time."]
+  ],
+  [
+    ["Aspetti sotto, scendo io.", "Wait downstairs, I'll come down."],
+    ["Perfetto, la aspetto qui.", "Perfect, I'll wait here."],
+    ["Ha una valigia grande?", "Do you have a big suitcase?"],
+    ["Sì, abbastanza pesante.", "Yes, pretty heavy."]
+  ],
+  [
+    ["Le lascio le chiavi qui.", "I'll leave the keys here for you."],
+    ["Quante chiavi ci sono?", "How many keys are there?"],
+    ["Una per il portone, una per la porta.", "One for the building door, one for the door."],
+    ["C'è anche il telecomando.", "There's also the remote."]
+  ],
+  [
+    ["Questo è il terzo piano.", "This is the third floor."],
+    ["L'ascensore è piccolo.", "The elevator is small."],
+    ["Preferisco fare le scale.", "I'd rather take the stairs."],
+    ["Va bene, andiamo su.", "Okay, let's go up."]
+  ],
+  [
+    ["La chiave gira male.", "The key turns badly."],
+    ["Deve spingere un po'.", "You need to push a little."],
+    ["Ah, adesso sì.", "Ah, now yes."],
+    ["La serratura è un po' dura.", "The lock is a bit stiff."]
+  ],
+  [
+    ["Mi fa vedere come si apre?", "Can you show me how it opens?"],
+    ["Certo, guardi qui.", "Sure, look here."],
+    ["Prima giri, poi tiri.", "First turn, then pull."],
+    ["Ok, adesso provo io.", "Ok, now I'll try."]
+  ],
+  [
+    ["Il wifi qual è?", "What's the wifi?"],
+    ["La rete si chiama CasaGiulia.", "The network is called CasaGiulia."],
+    ["E la password?", "And the password?"],
+    ["Gliela mando in messaggio.", "I'll send it to you by message."]
+  ],
+  [
+    ["Il bagno è in fondo.", "The bathroom is at the end."],
+    ["La cucina è in comune?", "Is the kitchen shared?"],
+    ["No, è solo per lei.", "No, it's only for you."],
+    ["Perfetto, grazie.", "Perfect, thanks."]
+  ],
+  [
+    ["Se ha problemi, mi scriva.", "If you have problems, message me."],
+    ["Va bene, grazie mille.", "Alright, thanks a lot."],
+    ["Di solito rispondo subito.", "I usually reply right away."],
+    ["Ottimo, allora ci sentiamo dopo.", "Great, then we'll talk later."]
+  ],
+  [
+    ["Domani a che ora parte?", "What time are you leaving tomorrow?"],
+    ["Verso le dieci.", "Around ten."],
+    ["Allora può lasciare le chiavi sul tavolo.", "Then you can leave the keys on the table."],
+    ["Sì, nessun problema.", "Yes, no problem."]
+  ],
+  [
+    ["Scusi, ho sbagliato campanello.", "Sorry, I rang the wrong doorbell."],
+    ["Nessun problema, succede.", "No problem, it happens."],
+    ["Il suo nome non c'è fuori.", "Your name isn't outside."],
+    ["Infatti, c'è quello di mia madre.", "Exactly, my mother's name is there."]
+  ]
+];
+
+const sentenceGroups = [
+  [
+    ["Buonasera, sono davanti al numero 18 ma il portone è ancora chiuso.", "Good evening, I'm in front of number 18 but the building door is still closed."],
+    ["Ho digitato il codice due volte e il citofono continua a non rispondere.", "I entered the code twice and the intercom still isn't answering."],
+    ["Mi scusi, forse sono nel palazzo sbagliato perché qui non vedo il suo nome.", "Excuse me, maybe I'm at the wrong building because I don't see your name here."],
+    ["Aspetti lì un minuto, scendo io così facciamo prima.", "Wait there a minute, I'll come down so it's quicker."]
+  ],
+  [
+    ["La prenotazione è a nome Miller e arrivo con una valigia blu.", "The booking is under the name Miller and I'm arriving with a blue suitcase."],
+    ["Se preferisce, possiamo fare la consegna delle chiavi direttamente davanti al portone.", "If you prefer, we can do the key handoff right in front of the building door."],
+    ["Sono quasi arrivato, mi mancano due minuti a piedi dalla fermata.", "I'm almost there, I'm two minutes' walk from the stop."],
+    ["Perfetto, io sono sotto casa con le chiavi in mano.", "Perfect, I'm downstairs with the keys in my hand."]
+  ],
+  [
+    ["Per entrare deve digitare 3821 e poi spingere forte il portone.", "To get in you need to type 3821 and then push the building door hard."],
+    ["Dopo il portone trova il cortile, poi la scala è subito a destra.", "After the building door you'll find the courtyard, then the staircase is immediately on the right."],
+    ["L'appartamento è al terzo piano, ma se vuole c'è anche l'ascensore.", "The apartment is on the third floor, but if you want there's also an elevator."],
+    ["Quando arriva sul pianerottolo, la porta è l'ultima a sinistra.", "When you get to the landing, the door is the last one on the left."]
+  ],
+  [
+    ["La chiave del portone entra bene, ma quella dell'appartamento gira male.", "The building key goes in fine, but the apartment one turns badly."],
+    ["Non riesco ad aprire: devo spingere la porta o tirarla verso di me?", "I can't open it: do I need to push the door or pull it toward me?"],
+    ["No, non sta sbagliando lei, la serratura è dura e a volte si blocca.", "No, you're not doing it wrong, the lock is stiff and sometimes it jams."],
+    ["Provi a girare tutta la chiave e poi ad alzare leggermente la maniglia.", "Try turning the key all the way and then lifting the handle slightly."]
+  ],
+  [
+    ["Se il citofono non funziona, mi chiami e le apro dal telefono.", "If the intercom doesn't work, call me and I'll open it from my phone."],
+    ["Oddio, adesso si è aperto, forse prima avevo digitato male il codice.", "Oh wow, now it opened, maybe I typed the code wrong before."],
+    ["Non si preoccupi, con questo portone capita spesso ai nuovi ospiti.", "Don't worry, this building door often causes problems for new guests."],
+    ["L'importante è chiudere bene quando esce, altrimenti resta socchiuso.", "The important thing is to close it properly when you leave, otherwise it stays half-open."]
+  ],
+  [
+    ["Le mando subito un messaggio con la rete wifi e la password aggiornata.", "I'll send you a message right away with the wifi network and the updated password."],
+    ["Nel messaggio trova anche le regole della casa e l'orario del check-out.", "In the message you'll also find the house rules and check-out time."],
+    ["Se il segnale in camera è debole, vicino alla finestra prende meglio.", "If the signal in the room is weak, it works better near the window."],
+    ["La cucina è privata, quindi può usare il frigo senza problemi.", "The kitchen is private, so you can use the fridge without any problems."]
+  ],
+  [
+    ["Mi scusi, ho suonato al campanello sbagliato e mi ha risposto un vicino.", "Excuse me, I rang the wrong doorbell and a neighbor answered me."],
+    ["Sul citofono non c'è il suo cognome, c'è scritto Bianchi come nel messaggio?", "Your last name isn't on the intercom, does it say Bianchi like in the message?"],
+    ["Sì, esatto, Bianchi è il cognome di mia madre, deve suonare lì.", "Yes, exactly, Bianchi is my mother's last name, you need to ring there."],
+    ["Ah ok, allora torno giù e provo quel campanello.", "Ah ok, then I'll go back down and try that doorbell."]
+  ],
+  [
+    ["Quando esce, lasci il mazzo di chiavi sul tavolo vicino all'ingresso.", "When you leave, leave the set of keys on the table near the entrance."],
+    ["Se perde una chiave, me lo dica subito perché il duplicato costa molto.", "If you lose a key, tell me right away because the duplicate costs a lot."],
+    ["Domani parto presto, quindi preferisco fare un check-out semplice e veloce.", "Tomorrow I'm leaving early, so I'd prefer to do a simple and quick check-out."],
+    ["Va bene, allora non serve incontrarci di nuovo domattina.", "Alright, then we don't need to meet again tomorrow morning."]
+  ],
+  [
+    ["Sto aspettando sotto la pioggia, quindi se riesce ad aprirmi sarebbe meglio.", "I'm waiting in the rain, so if you can open for me that would be better."],
+    ["Arrivo subito, ho solo un altro ospite al secondo piano e poi scendo.", "I'm coming right away, I just have another guest on the second floor and then I'll come down."],
+    ["Non si preoccupi, aspetto qui sotto al portico.", "Don't worry, I'll wait here under the arcade."],
+    ["Grazie, appena apro il portone le faccio un cenno dalla scala.", "Thanks, as soon as I open the building door I'll wave to you from the stairs."]
+  ],
+  [
+    ["Dentro l'appartamento trova anche una mappa del quartiere e i numeri utili.", "Inside the apartment you'll also find a map of the neighborhood and useful numbers."],
+    ["Se stasera torna tardi, porti sempre con sé il codice perché il portone si chiude.", "If you come back late tonight, always carry the code because the building door locks."],
+    ["Il riscaldamento si accende da quel pulsante vicino alla cucina.", "The heating turns on from that button near the kitchen."],
+    ["Per qualsiasi dubbio mi scriva pure su WhatsApp, rispondo appena posso.", "If you have any questions, just message me on WhatsApp, I'll reply as soon as I can."]
+  ],
+  [
+    ["La porta si apre verso l'interno, per questo prima sembrava bloccata.", "The door opens inward, that's why it seemed stuck before."],
+    ["Adesso ho capito, prima tiravo invece di spingere.", "Now I get it, before I was pulling instead of pushing."],
+    ["Succede spesso perché la maniglia è un po' lenta e inganna.", "It happens often because the handle is a bit loose and misleading."],
+    ["Se vuole, facciamo un'altra prova così è tranquillo per stasera.", "If you want, let's try one more time so you feel okay for tonight."]
+  ],
+  [
+    ["Il vicino del primo piano si lamenta se il portone resta aperto troppo a lungo.", "The neighbor on the first floor complains if the building door stays open too long."],
+    ["Per favore non lasci le chiavi inserite nella serratura quando esce.", "Please don't leave the keys in the lock when you go out."],
+    ["Va bene, allora faccio attenzione ogni volta che rientro.", "Okay, then I'll be careful every time I come back."],
+    ["Perfetto, per il resto l'appartamento è tutto suo.", "Perfect, other than that the apartment is all yours."]
+  ],
+  [
+    ["Se non trova l'ingresso, guardi il numero civico accanto alla farmacia.", "If you can't find the entrance, look for the street number next to the pharmacy."],
+    ["Sono davanti alla farmacia, ma vedo due portoni diversi e non so quale sia.", "I'm in front of the pharmacy, but I see two different building doors and I don't know which one it is."],
+    ["Prenda quello a sinistra con la targa in ottone e il citofono nero.", "Take the one on the left with the brass plaque and the black intercom."],
+    ["Perfetto, adesso l'ho trovato e sto entrando.", "Perfect, now I've found it and I'm going in."]
+  ],
+  [
+    ["Il telecomando apre il cancello del cortile, non il portone principale.", "The remote opens the courtyard gate, not the main building door."],
+    ["Ah, ecco perché continuavo a premere senza risultato.", "Ah, that's why I kept pressing it with no result."],
+    ["Prima entri dal portone, poi dentro usi il telecomando.", "First go in through the building door, then inside use the remote."],
+    ["Chiaro, grazie per la spiegazione.", "Clear, thanks for the explanation."]
+  ]
+];
+
+
+
+const askingForTowelsVocabulary = [
+  ['asciugamano', 'towel', ['blanket', 'pillow', 'sheet']],
+  ['asciugamani puliti', 'clean towels', ['clean sheets', 'extra blankets', 'bathroom supplies']],
+  ['telo da bagno', 'bath towel', ['hand towel', 'bath mat', 'bedsheet']],
+  ['asciugamano piccolo', 'hand towel', ['bath towel', 'blanket', 'pillowcase']],
+  ['bagno', 'bathroom', ['bedroom', 'hallway', 'elevator']],
+  ['stanza', 'room', ['bathroom', 'reception', 'hallway']],
+  ['camera', 'hotel room', ['floor', 'hallway', 'reception desk']],
+  ['reception', 'front desk', ['housekeeping', 'elevator', 'hallway']],
+  ['pulizia', 'cleaning', ['check-out', 'heating', 'booking']],
+  ['pulire', 'to clean', ['to change', 'to bring', 'to wait']],
+  ['cambio', 'change', ['delay', 'message', 'problem']],
+  ['cambiare', 'to change', ['to leave', 'to clean', 'to send']],
+  ['sporco', 'dirty', ['clean', 'cold', 'broken']],
+  ['pulito', 'clean', ['dirty', 'late', 'cold']],
+  ['macchia', 'stain', ['shelf', 'key', 'blanket']],
+  ['bagnato', 'wet', ['dry', 'clean', 'late']],
+  ['sapone', 'soap', ['shampoo', 'toilet paper', 'towel']],
+  ['carta igienica', 'toilet paper', ['paper towels', 'soap', 'bedsheet']],
+  ['phon', 'hair dryer', ['heater', 'elevator', 'pillow']],
+  ['coperta', 'blanket', ['towel', 'sheet', 'pillow']],
+  ['cuscino', 'pillow', ['blanket', 'mattress', 'towel']],
+  ['lenzuolo', 'sheet', ['towel', 'blanket', 'pillowcase']],
+  ['federa', 'pillowcase', ['sheet', 'hand towel', 'blanket']],
+  ['riscaldamento', 'heating', ['cleaning', 'intercom', 'wifi']],
+  ['freddissimo', 'freezing cold', ['very clean', 'very hot', 'very loud']],
+  ['magazzino', 'storage room', ['front desk', 'courtyard', 'garage']],
+  ['subito', 'right away', ['tomorrow', 'later', 'upstairs']],
+  ['tra poco', 'in a little while', ['right away', 'yesterday', 'downstairs']],
+  ['adesso', 'now', ['tomorrow', 'tonight', 'before']],
+  ['domani', 'tomorrow', ['now', 'tonight', 'later']],
+  ['più tardi', 'later', ['right away', 'outside', 'yesterday']],
+  ['passare', 'to come by', ['to leave', 'to ring', 'to sleep']],
+  ['portare', 'to bring', ['to take away', 'to change', 'to wash']],
+  ['mandare', 'to send', ['to bring', 'to wait', 'to check']],
+  ['servire', 'to be needed', ['to open', 'to sleep', 'to find']],
+  ['ne servono due', 'we need two', ['there are two', 'room two', 'it takes two']],
+  ['quanto', 'how many', ['which', 'where', 'when']],
+  ['numero di camera', 'room number', ['floor number', 'street number', 'door code']],
+  ['malinteso', 'misunderstanding', ['discount', 'delay', 'appointment']],
+  ['cartello', 'sign', ['shelf', 'tray', 'receipt']],
+  ['non disturbare', 'do not disturb', ['please clean', 'right away', 'come in']],
+  ['per favore pulire', 'please clean', ['do not disturb', 'please wait', 'please call']],
+  ['guardo', "I'll check", ["I'll send", "I'll wait", "I'll call"]],
+  ['mi dispiace', "I'm sorry", ['thank you', 'I understand', 'see you later']],
+  ['va bene', 'okay', ['too late', 'already', 'outside']],
+  ['di nuovi', 'new ones', ['by hand', 'for tomorrow', 'upstairs']],
+  ['qualcuno', 'someone', ['something', 'nobody', 'everywhere']],
+  ['subito subito', 'straight away', ['in an hour', 'later on', 'tomorrow morning']]
+];
+
+const askingForTowelsPhraseGroups = [
+  [
+    ["Buonasera, avrei bisogno di asciugamani puliti.", "Good evening, I need clean towels."],
+    ["In bagno non ci sono asciugamani.", "There aren't any towels in the bathroom."],
+    ["Ne può mandare due, per favore?", "Can you send two, please?"],
+    ["Certo, glieli mando subito.", "Of course, I'll send them right away."]
+  ],
+  [
+    ["Gli asciugamani ci sono, ma sono sporchi.", "The towels are there, but they're dirty."],
+    ["Forse non sono stati cambiati.", "Maybe they weren't changed."],
+    ["Mi dispiace molto.", "I'm very sorry."],
+    ["Gliene porto di nuovi.", "I'll bring you new ones."]
+  ],
+  [
+    ["Mi serve anche altra carta igienica.", "I also need more toilet paper."],
+    ["E magari un po' di sapone.", "And maybe some soap too."],
+    ["Va bene, aggiungo tutto.", "Alright, I'll add everything."],
+    ["Grazie, così è perfetto.", "Thanks, that would be perfect."]
+  ],
+  [
+    ["Quanti asciugamani le servono?", "How many towels do you need?"],
+    ["Due grandi e due piccoli.", "Two big ones and two small ones."],
+    ["Per stasera o per domani?", "For tonight or for tomorrow?"],
+    ["Per stasera, se possibile.", "For tonight, if possible."]
+  ],
+  [
+    ["Che numero di camera ha?", "What room number do you have?"],
+    ["La 208.", "208."],
+    ["Un attimo che segno.", "One moment while I note it down."],
+    ["Sì, grazie.", "Yes, thanks."]
+  ],
+  [
+    ["Può lasciarli fuori dalla porta?", "Can you leave them outside the door?"],
+    ["Sì, certo.", "Yes, of course."],
+    ["Adesso non sono in camera.", "I'm not in the room right now."],
+    ["Nessun problema, li lasciamo lì.", "No problem, we'll leave them there."]
+  ],
+  [
+    ["Sto uscendo adesso.", "I'm going out now."],
+    ["Allora posso passare più tardi.", "Then I can come by later."],
+    ["Tra un'ora va bene?", "Is in an hour okay?"],
+    ["Sì, va benissimo.", "Yes, that's perfect."]
+  ],
+  [
+    ["La pulizia oggi non è passata.", "Cleaning didn't come today."],
+    ["Avevo chiesto il cambio degli asciugamani.", "I had asked for the towel change."],
+    ["Forse c'è stato un malinteso.", "Maybe there was a misunderstanding."],
+    ["Controllo subito.", "I'll check right away."]
+  ],
+  [
+    ["Aveva il cartello fuori?", "Did you have the sign outside?"],
+    ["No, ho messo 'per favore pulire'.", "No, I put 'please clean'."],
+    ["Ah, allora devono aver saltato la camera.", "Ah, then they must have skipped the room."],
+    ["Capisco.", "I understand."]
+  ],
+  [
+    ["Se vuole, mando qualcuno adesso.", "If you want, I'll send someone now."],
+    ["Adesso no, torno più tardi.", "Not now, I'm coming back later."],
+    ["Va bene, quando rientra?", "Okay, when are you coming back?"],
+    ["Verso le sei.", "Around six."]
+  ],
+  [
+    ["Mi può portare anche una coperta?", "Can you bring me a blanket too?"],
+    ["Sì, ne porto una insieme agli asciugamani.", "Yes, I'll bring one together with the towels."],
+    ["Perfetto, grazie mille.", "Perfect, thanks a lot."],
+    ["Di niente.", "You're welcome."]
+  ],
+  [
+    ["Il bagno è ancora bagnato.", "The bathroom is still wet."],
+    ["Allora le mando qualcuno per sistemare.", "Then I'll send someone to sort it out."],
+    ["Va bene, basta anche un telo pulito.", "Okay, even just a clean bath towel is enough."],
+    ["Ricevuto.", "Got it."]
+  ],
+  [
+    ["Passate voi o devo scendere?", "Are you coming up or do I need to come down?"],
+    ["Passiamo noi in camera.", "We'll come up to the room."],
+    ["Perfetto, allora aspetto lì.", "Perfect, then I'll wait there."],
+    ["Arriviamo tra poco.", "We'll arrive shortly."]
+  ]
+];
+
+const askingForTowelsSentenceGroups = [
+  [
+    ["Buonasera, in bagno non ho trovato neanche un asciugamano pulito.", "Good evening, I didn't find even one clean towel in the bathroom."],
+    ["Ci sono degli asciugamani, ma sono umidi e hanno una macchia.", "There are towels, but they're damp and have a stain."],
+    ["Mi dispiace molto, gliene faccio portare subito di nuovi.", "I'm very sorry, I'll have new ones brought up right away."],
+    ["Se vuole, possiamo ritirare subito quelli sporchi e lasciarle i puliti.", "If you want, we can take the dirty ones right away and leave you clean ones."]
+  ],
+  [
+    ["Per favore, me ne servono due grandi e due piccoli per questa sera.", "Please, I need two big ones and two small ones for this evening."],
+    ["Va benissimo, segno due teli da bagno e due asciugamani piccoli.", "That's fine, I'll note two bath towels and two small towels."],
+    ["Se possibile, aggiunga anche un tappetino per il bagno.", "If possible, add a bath mat too."],
+    ["Certo, controllo in magazzino e le mando tutto insieme.", "Of course, I'll check the storage room and send everything together."]
+  ],
+  [
+    ["Sono in camera 208, ma adesso sto uscendo e torno tra un'ora circa.", "I'm in room 208, but I'm going out now and I'll be back in about an hour."],
+    ["Nessun problema, possiamo lasciare gli asciugamani fuori dalla porta.", "No problem, we can leave the towels outside the door."],
+    ["Perfetto, così quando rientro trovo già tutto.", "Perfect, that way when I come back I'll find everything already there."],
+    ["Va bene, allora avviso subito la collega ai piani.", "Alright, then I'll let the floor staff know right away."]
+  ],
+  [
+    ["Ieri avevo chiesto il cambio degli asciugamani, ma non è passato nessuno.", "Yesterday I asked for the towel change, but nobody came by."],
+    ["Davvero? Mi dispiace, forse c'è stato un malinteso con la pulizia.", "Really? I'm sorry, maybe there was a misunderstanding with housekeeping."],
+    ["No, il cartello sulla porta diceva chiaramente 'per favore pulire'.", "No, the sign on the door clearly said 'please clean'."],
+    ["Capisco, allora la faccio rifare appena torna in camera.", "I understand, then I'll have it redone as soon as you return to the room."]
+  ],
+  [
+    ["Mi può mandare anche carta igienica e sapone? In bagno è finito tutto.", "Can you send toilet paper and soap too? Everything in the bathroom has run out."],
+    ["Sì, aggiungo sapone, carta igienica e due asciugamani puliti.", "Yes, I'll add soap, toilet paper, and two clean towels."],
+    ["Grazie, così non devo richiamare più tardi.", "Thanks, that way I won't have to call again later."],
+    ["Figurarsi, meglio sistemare tutto in una volta.", "Not at all, better to sort everything out in one go."]
+  ],
+  [
+    ["Se preferisce, glieli faccio trovare piegati sul letto invece che in bagno.", "If you prefer, I'll have them left folded on the bed instead of in the bathroom."],
+    ["Sì, meglio sul letto, così li vedo subito.", "Yes, better on the bed, that way I see them right away."],
+    ["Va bene, lo scrivo nella richiesta così non ci sono dubbi.", "Okay, I'll write that in the request so there are no doubts."],
+    ["Perfetto, grazie per l'attenzione.", "Perfect, thanks for the attention."]
+  ],
+  [
+    ["Adesso non sono in camera, quindi per favore non bussate troppo forte.", "I'm not in the room right now, so please don't knock too loudly."],
+    ["Va bene, lasciamo tutto fuori e passiamo via subito.", "Okay, we'll leave everything outside and move on right away."],
+    ["Ottimo, così non disturbate il mio compagno che dorme.", "Great, that way you won't disturb my partner who is sleeping."],
+    ["Certo, facciamo piano e lasciamo anche un biglietto.", "Of course, we'll be quiet and leave a note as well."]
+  ],
+  [
+    ["Ho usato tutti gli asciugamani perché il bagno era ancora bagnato dopo la doccia.", "I used all the towels because the bathroom was still wet after the shower."],
+    ["Capisco, allora oltre al cambio le mando anche un telo extra.", "I understand, then besides the replacement I'll send you an extra bath towel too."],
+    ["Grazie, perché domattina parto presto e preferisco avere già tutto.", "Thanks, because I leave early tomorrow morning and I'd rather have everything already ready."],
+    ["Nessun problema, entro dieci minuti dovrebbe ricevere tutto.", "No problem, you should receive everything within ten minutes."]
+  ],
+  [
+    ["Scusi, gli asciugamani nuovi sono arrivati, ma manca ancora quello piccolo per le mani.", "Excuse me, the new towels arrived, but the small hand towel is still missing."],
+    ["Mi scusi davvero, probabilmente hanno contato male il set.", "I'm really sorry, they probably counted the set wrong."],
+    ["Se può, me ne mandi uno appena possibile.", "If you can, send me one as soon as possible."],
+    ["Sì, glielo faccio portare subito senza farla aspettare ancora.", "Yes, I'll have it brought right away without making you wait any longer."]
+  ],
+  [
+    ["Il mio bagno non è stato rifornito dopo la pulizia di stamattina.", "My bathroom wasn't restocked after this morning's cleaning."],
+    ["Strano, di solito lasciano sempre almeno due asciugamani e il sapone.", "That's strange, they usually always leave at least two towels and soap."],
+    ["Infatti per questo pensavo si fossero dimenticati della mia camera.", "Exactly, that's why I thought they had forgotten my room."],
+    ["Controllo subito con il personale del piano e la richiamo.", "I'll check with the floor staff right away and call you back."]
+  ],
+  [
+    ["Se vuole, posso portarle anche una coperta perché la stanza è piuttosto fredda.", "If you want, I can bring you a blanket too because the room is rather cold."],
+    ["Sì, grazie, così uso meno gli asciugamani per coprirmi.", "Yes, thanks, that way I won't use towels to cover myself."],
+    ["Ha ragione, non è proprio il massimo.", "You're right, that's really not ideal."],
+    ["Grazie, con una coperta in più va già molto meglio.", "Thanks, with an extra blanket it's already much better."]
+  ],
+  [
+    ["Per favore, può segnare che domani vorrei il cambio degli asciugamani entro le dieci?", "Please, can you note that tomorrow I'd like the towels changed by ten?"],
+    ["Certo, lo scrivo subito nella richiesta per la pulizia del mattino.", "Of course, I'll write it right away in the request for morning cleaning."],
+    ["Perfetto, perché dopo le dieci esco e non torno fino a sera.", "Perfect, because after ten I'm going out and I won't be back until evening."],
+    ["Va bene, allora chiedo di passare presto.", "Okay, then I'll ask them to come early."]
+  ],
+  [
+    ["Non so se devo lasciare gli asciugamani sul pavimento o nel lavandino per farli cambiare.", "I don't know if I should leave the towels on the floor or in the sink to have them changed."],
+    ["Se vuole il cambio, basta lasciarli sul pavimento del bagno.", "If you want them changed, just leave them on the bathroom floor."],
+    ["Ah, ecco, allora ieri li avevo lasciati appesi e nessuno li ha toccati.", "Ah, I see, then yesterday I left them hanging and nobody touched them."],
+    ["Esatto, probabilmente per questo li hanno lasciati dov'erano.", "Exactly, that's probably why they left them where they were."]
+  ],
+  [
+    ["Sto aspettando da mezz'ora e gli asciugamani ancora non arrivano.", "I've been waiting for half an hour and the towels still haven't arrived."],
+    ["Mi dispiace, controllo subito se la richiesta è partita davvero.", "I'm sorry, I'll check right away whether the request was actually sent."],
+    ["Grazie, perché tra poco devo uscire e non vorrei restare senza.", "Thanks, because I have to go out soon and I don't want to be left without them."],
+    ["Capito, la tratto come priorità e la richiamo tra due minuti.", "Understood, I'll treat it as a priority and call you back in two minutes."]
+  ]
+];
+
+const breakfastAtHotelvocabulary = [
+  ['colazione', 'breakfast', ['lunch', 'dinner', 'snack']],
+  ['buffet', 'buffet', ['counter', 'kitchen', 'menu']],
+  ['sala colazione', 'breakfast room', ['hotel room', 'dining table', 'front desk']],
+  ['tavolo', 'table', ['chair', 'plate', 'tray']],
+  ['vassoio', 'tray', ['plate', 'napkin', 'counter']],
+  ['tazza', 'cup', ['glass', 'plate', 'fork']],
+  ['bicchiere', 'glass', ['cup', 'bottle', 'tray']],
+  ['piatto', 'plate', ['bowl', 'tray', 'napkin']],
+  ['posate', 'cutlery', ['napkins', 'plates', 'glasses']],
+  ['tovagliolo', 'napkin', ['tablecloth', 'tray', 'fork']],
+  ['cappuccino', 'cappuccino', ['espresso', 'latte', 'tea']],
+  ['caffè', 'coffee', ['juice', 'tea', 'milk']],
+  ['espresso', 'espresso', ['cappuccino', 'juice', 'tea']],
+  ['latte', 'milk', ['butter', 'cream', 'water']],
+  ['tè', 'tea', ['coffee', 'juice', 'milk']],
+  ['succo di frutta', 'fruit juice', ['sparkling water', 'coffee', 'milk']],
+  ["succo d'arancia", 'orange juice', ['grapefruit juice', 'apple juice', 'tea']],
+  ['spremuto', 'freshly squeezed', ['heated', 'sweetened', 'packaged']],
+  ['cornetto', 'croissant', ['biscuit', 'toast', 'cake']],
+  ['vuoto', 'plain', ['filled', 'hot', 'fresh']],
+  ['ripieno', 'filled', ['plain', 'empty', 'cold']],
+  ['crema', 'custard', ['jam', 'butter', 'honey']],
+  ['marmellata', 'jam', ['custard', 'butter', 'yogurt']],
+  ['pane', 'bread', ['biscuit', 'fruit', 'cheese']],
+  ['biscotti', 'cookies', ['crackers', 'eggs', 'fruit']],
+  ['burro', 'butter', ['jam', 'oil', 'milk']],
+  ['frutta', 'fruit', ['cheese', 'bread', 'eggs']],
+  ['uova strapazzate', 'scrambled eggs', ['boiled eggs', 'toast', 'cheese']],
+  ['formaggio', 'cheese', ['ham', 'butter', 'yogurt']],
+  ['formaggio fresco', 'fresh cheese', ['hard cheese', 'butter', 'yogurt']],
+  ['senza glutine', 'gluten-free', ['sugar-free', 'lactose-free', 'fresh']],
+  ['confezione', 'package', ['tray', 'napkin', 'counter']],
+  ['orario', 'time slot', ['bill', 'room', 'floor']],
+  ['finire', 'to end', ['to start', 'to bring', 'to squeeze']],
+  ['subito', 'right away', ['later', 'tomorrow', 'downstairs']],
+  ['tra poco', 'in a moment', ['right away', 'yesterday', 'outside']],
+  ['appena', 'just / freshly', ['already', 'slowly', 'almost']],
+  ['fresco', 'fresh', ['cold', 'finished', 'empty']],
+  ['finito', 'finished / run out', ['fresh', 'full', 'warm']],
+  ['scaldare', 'to heat up', ['to change', 'to pour', 'to refill']],
+  ['tiepido', 'lukewarm', ['boiling hot', 'cold', 'sweet']],
+  ['cambiare', 'to replace', ['to order', 'to sit', 'to finish']],
+  ['portare', 'to bring', ['to heat', 'to leave', 'to pay']],
+  ['preparare', 'to prepare', ['to bring', 'to open', 'to pay']],
+  ['accomodarsi', 'to have a seat', ['to leave', 'to pay', 'to queue']],
+  ['complimenti', 'compliments', ['complaints', 'directions', 'requests']],
+  ['servono altre cose', 'do you need anything else', ['what room number', 'what time is it', 'is breakfast included']],
+  ['non li vedo', "I can't see them", ["I can't hear you", "I can't open it", "I can't stay"]],
+  ['buonissimo', 'delicious', ['too cold', 'expensive', 'late']]
+];
+
+const breakfastAtHotelPhraseGroups = [
+  [
+    ["Buongiorno, dov'è il buffet?", "Good morning, where is the buffet?"],
+    ["In fondo a destra.", "At the back on the right."],
+    ["A che ora finisce la colazione?", "What time does breakfast end?"],
+    ["Alle dieci e mezza.", "At ten thirty."]
+  ],
+  [
+    ["Vorrei un cappuccino, per favore.", "I'd like a cappuccino, please."],
+    ["E anche un cornetto.", "And also a croissant."],
+    ["Vuoto o ripieno?", "Plain or filled?"],
+    ["Vuoto, grazie.", "Plain, thanks."]
+  ],
+  [
+    ["Posso avere anche un succo?", "Can I also have a juice?"],
+    ["È appena spremuto?", "Is it freshly squeezed?"],
+    ["Sì, lo facciamo ogni mattina.", "Yes, we make it every morning."],
+    ["Allora arancia.", "Then orange."]
+  ],
+  [
+    ["Le uova strapazzate sono finite.", "The scrambled eggs are gone."],
+    ["Le preparo subito.", "I'll prepare them right away."],
+    ["Le vuole con formaggio?", "Do you want them with cheese?"],
+    ["Sì, volentieri.", "Yes, gladly."]
+  ],
+  [
+    ["Avete prodotti senza glutine?", "Do you have gluten-free products?"],
+    ["Sì, sul tavolo in fondo.", "Yes, on the table at the back."],
+    ["Scusi, non li vedo.", "Sorry, I can't see them."],
+    ["Sono vicino alla frutta.", "They're near the fruit."]
+  ],
+  [
+    ["Questo cornetto è buonissimo.", "This croissant is delicious."],
+    ["Grazie per i complimenti.", "Thanks for the compliments."],
+    ["Posso avere ancora un po' di formaggio?", "Can I have a bit more cheese?"],
+    ["Certo, prego.", "Of course, here you go."]
+  ],
+  [
+    ["Il cappuccino è freddo.", "The cappuccino is cold."],
+    ["Mi dispiace, glielo cambio subito.", "I'm sorry, I'll replace it right away."],
+    ["Sì, è solo tiepido.", "Yes, it's only lukewarm."],
+    ["Ecco quello nuovo.", "Here's the new one."]
+  ],
+  [
+    ["C'è ancora posto in sala?", "Is there still space in the breakfast room?"],
+    ["Sì, può sedersi lì.", "Yes, you can sit there."],
+    ["Perfetto, grazie.", "Perfect, thanks."],
+    ["Buona colazione.", "Enjoy your breakfast."]
+  ],
+  [
+    ["Avete del pane fresco?", "Do you have fresh bread?"],
+    ["Sì, arriva tra poco.", "Yes, it's coming in a moment."],
+    ["Allora aspetto un attimo.", "Then I'll wait a moment."],
+    ["Va bene.", "Okay."]
+  ],
+  [
+    ["Posso prendere un altro tovagliolo?", "Can I take another napkin?"],
+    ["Certo, sono qui sul banco.", "Of course, they're here on the counter."],
+    ["Grazie mille.", "Thanks a lot."],
+    ["Di niente.", "You're welcome."]
+  ],
+  [
+    ["C'è anche del tè?", "Is there tea too?"],
+    ["Sì, accanto al caffè.", "Yes, next to the coffee."],
+    ["Perfetto, prendo quello.", "Perfect, I'll take that."],
+    ["Prego.", "Here you are."]
+  ],
+  [
+    ["La spremuta è compresa?", "Is the fresh juice included?"],
+    ["Sì, è inclusa nella colazione.", "Yes, it's included in breakfast."],
+    ["Ottimo, allora ne prendo una.", "Great, then I'll have one."],
+    ["Subito.", "Right away."]
+  ],
+  [
+    ["Posso sedermi fuori?", "Can I sit outside?"],
+    ["Sì, se preferisce la terrazza.", "Yes, if you prefer the terrace."],
+    ["Perfetto, porto io il vassoio.", "Perfect, I'll carry the tray myself."],
+    ["Va benissimo.", "That's perfectly fine."]
+  ]
+];
+
+const breakfastAtHotelSentenceGroups = [
+  [
+    ["Buongiorno, sto cercando la sala colazione ma non la trovo da nessuna parte.", "Good morning, I'm looking for the breakfast room but I can't find it anywhere."],
+    ["È in fondo a destra, dopo la sala grande con i tavoli rotondi.", "It's at the back on the right, after the large room with the round tables."],
+    ["Perfetto, e fino a che ora posso scendere a fare colazione?", "Perfect, and until what time can I come down for breakfast?"],
+    ["Fino alle dieci e mezza, quindi ha ancora un po' di tempo.", "Until ten thirty, so you still have a bit of time."]
+  ],
+  [
+    ["Vorrei un cappuccino, un cornetto vuoto e magari anche un succo d'arancia.", "I'd like a cappuccino, a plain croissant, and maybe also an orange juice."],
+    ["Va bene, il succo lo preferisce appena spremuto o dal buffet?", "Alright, would you prefer the juice freshly squeezed or from the buffet?"],
+    ["Se possibile appena spremuto, grazie.", "If possible freshly squeezed, thanks."],
+    ["Certo, le porto tutto io al tavolo.", "Of course, I'll bring everything to your table."]
+  ],
+  [
+    ["Scusi, le uova strapazzate sono finite e non vedo altro salato.", "Excuse me, the scrambled eggs are gone and I don't see any other savory food."],
+    ["Mi dispiace, ne stiamo preparando un'altra teglia proprio adesso.", "I'm sorry, we're preparing another tray right now."],
+    ["Perfetto, allora aspetto perché le volevo con un po' di formaggio.", "Perfect, then I'll wait because I wanted them with a bit of cheese."],
+    ["Nessun problema, le metto anche del formaggio fresco accanto.", "No problem, I'll put some fresh cheese next to them too."]
+  ],
+  [
+    ["Avete qualcosa senza glutine? Non vorrei prendere il cornetto normale per sbaglio.", "Do you have anything gluten-free? I wouldn't want to take the regular croissant by mistake."],
+    ["Sì, abbiamo pane e biscotti senza glutine in confezione separata.", "Yes, we have gluten-free bread and cookies in separate packaging."],
+    ["Non li vedo sul buffet, mi indica dove sono?", "I can't see them on the buffet, can you point out where they are?"],
+    ["Sono sul tavolo in fondo, vicino alla frutta e allo yogurt.", "They're on the table at the back, near the fruit and yogurt."]
+  ],
+  [
+    ["Questo cornetto è davvero buonissimo e la spremuta si sente che è fresca.", "This croissant is really delicious and you can tell the juice is fresh."],
+    ["Grazie mille, prepariamo tutto ogni mattina qui in hotel.", "Thank you very much, we prepare everything here at the hotel every morning."],
+    ["Allora posso avere ancora un po' di formaggio prima di andare?", "Then can I have a little more cheese before I go?"],
+    ["Certo, glielo porto subito così non deve alzarsi.", "Of course, I'll bring it right away so you don't have to get up."]
+  ],
+  [
+    ["Mi scusi, il cappuccino è un po' freddo: potrebbe scaldarlo o rifarlo?", "Excuse me, the cappuccino is a bit cold: could you heat it up or make it again?"],
+    ["Mi dispiace davvero, gliene preparo subito uno nuovo.", "I'm really sorry, I'll prepare a new one for you right away."],
+    ["Grazie, perché questo è appena tiepido e si sente.", "Thanks, because this one is only lukewarm and you can tell."],
+    ["Capisco, ecco il nuovo cappuccino, molto più caldo stavolta.", "I understand, here's the new cappuccino, much hotter this time."]
+  ],
+  [
+    ["Scusi, c'è ancora posto in sala o conviene aspettare un attimo?", "Excuse me, is there still space in the breakfast room or is it better to wait a moment?"],
+    ["C'è un tavolo libero vicino alla finestra, se vuole la accompagno.", "There's a free table near the window, if you want I'll show you there."],
+    ["Perfetto, grazie, così appoggio subito il vassoio.", "Perfect, thanks, that way I can put my tray down right away."],
+    ["Prego, si accomodi pure con calma.", "You're welcome, please have a seat."]
+  ],
+  [
+    ["Avete ancora del pane fresco o per oggi è già finito?", "Do you still have fresh bread or has it already run out for today?"],
+    ["Sta arrivando dalla cucina proprio adesso, serve solo un minuto.", "It's coming from the kitchen right now, it only needs a minute."],
+    ["Va bene, allora aspetto qui prima di prendere il resto.", "Alright, then I'll wait here before taking the rest."],
+    ["Se vuole intanto le porto burro e marmellata al tavolo.", "If you want, in the meantime I'll bring butter and jam to your table."]
+  ],
+  [
+    ["La spremuta d'arancia è inclusa oppure si paga a parte?", "Is the orange juice included or do you pay extra for it?"],
+    ["È inclusa nella colazione dell'hotel, quindi può prenderla tranquillamente.", "It's included in the hotel breakfast, so you can take it without worry."],
+    ["Ottimo, allora ne vorrei una insieme al cappuccino.", "Great, then I'd like one together with the cappuccino."],
+    ["Perfetto, le porto tutto in un attimo.", "Perfect, I'll bring everything in a moment."]
+  ],
+  [
+    ["Posso sedermi fuori in terrazza o il servizio è solo dentro la sala?", "Can I sit outside on the terrace or is service only inside the room?"],
+    ["Può sedersi anche fuori, basta portare con sé il vassoio.", "You can sit outside too, you just need to take the tray with you."],
+    ["Va bene, allora prendo io piatto e bicchiere e mi sposto fuori.", "Okay, then I'll take my plate and glass and move outside."],
+    ["Benissimo, se le serve altro veniamo noi da lei.", "Very good, if you need anything else we'll come to you."]
+  ],
+  [
+    ["Non trovo più i biscotti senza glutine che ho visto prima sul tavolo in fondo.", "I can't find the gluten-free cookies I saw earlier on the table at the back."],
+    ["Probabilmente li abbiamo spostati vicino al pane confezionato.", "We probably moved them near the packaged bread."],
+    ["Ah, ecco, allora guardavo dalla parte sbagliata.", "Ah, I see, then I was looking in the wrong area."],
+    ["Succede spesso quando il buffet è pieno di gente.", "It often happens when the buffet is crowded."]
+  ],
+  [
+    ["Mi può dire se questo cornetto è alla crema o alla marmellata?", "Can you tell me whether this croissant is filled with custard or jam?"],
+    ["Quello lucido è alla marmellata, mentre l'altro è alla crema.", "The shiny one is jam-filled, while the other one is custard-filled."],
+    ["Perfetto, allora prendo quello alla marmellata.", "Perfect, then I'll take the jam-filled one."],
+    ["Va bene, se vuole gliene porto anche uno vuoto da assaggiare.", "Alright, if you want I can also bring you a plain one to try."]
+  ],
+  [
+    ["Mi scusi, non trovo più tazze pulite vicino alla macchina del caffè.", "Excuse me, I can't find any more clean cups near the coffee machine."],
+    ["Ha ragione, sono finite proprio adesso, ma gliene porto subito una.", "You're right, they've just run out, but I'll bring you one right away."],
+    ["Grazie, così posso prendere il tè senza aspettare troppo.", "Thanks, that way I can have tea without waiting too long."],
+    ["Certo, e le aggiungo anche un altro tovagliolo se le serve.", "Of course, and I'll add another napkin too if you need one."]
+  ],
+  [
+    ["Vorrei fare colazione in fretta perché devo lasciare l'hotel tra poco.", "I'd like to have breakfast quickly because I have to leave the hotel shortly."],
+    ["Allora le conviene ordinare al banco cappuccino e cornetto, così fa prima.", "Then it's better to order cappuccino and croissant at the counter, that way it's quicker."],
+    ["Sì, grazie, prendo solo quello e una spremuta.", "Yes, thanks, I'll just have that and a fresh juice."],
+    ["Perfetto, preparo tutto subito così riesce a mangiare con calma.", "Perfect, I'll prepare everything right away so you can still eat calmly."]
+  ]
+];
