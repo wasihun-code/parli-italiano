@@ -1,104 +1,1562 @@
 [
   {
-    "id": "s95-s2",
-    "italian": "C'è stato un brutto incidente sulla strada.",
-    "english": "There was a bad accident on the road.",
-    "type": "sentence",
-    "choices": [
-      "Il paziente ha difficoltà a respirare da solo.",
-      "Sento un dolore molto forte alla gamba destra.",
-      "C'è stato un brutto incidente sulla strada.",
-      "L'infermiere sta arrivando per aiutarla subito."
-    ],
-    "correctAnswer": "C'è stato un brutto incidente sulla strada.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"C'è stato un brutto incidente sulla strada.\"."
-    }
-  },
-  {
-    "id": "s95-s6",
-    "italian": "L'attesa al pronto soccorso può essere lunga.",
-    "english": "The wait at the emergency room can be long.",
-    "type": "sentence",
-    "choices": [
-      "L'attesa al pronto soccorso può essere lunga.",
-      "Portatelo subito al pronto soccorso, è un'emergenza.",
-      "C'è stato un brutto incidente sulla strada.",
-      "Sento un dolore molto forte alla gamba destra."
-    ],
-    "correctAnswer": "L'attesa al pronto soccorso può essere lunga.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"L'attesa al pronto soccorso può essere lunga.\"."
-    }
-  },
-  {
-    "id": "s95-s5",
-    "italian": "Sento un dolore molto forte alla gamba destra.",
-    "english": "I feel a very strong pain in my right leg.",
-    "type": "sentence",
-    "choices": [
-      "Portatelo subito al pronto soccorso, è un'emergenza.",
-      "Il paziente ha difficoltà a respirare da solo.",
-      "C'è stato un brutto incidente sulla strada.",
-      "Sento un dolore molto forte alla gamba destra."
-    ],
-    "correctAnswer": "Sento un dolore molto forte alla gamba destra.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Sento un dolore molto forte alla gamba destra.\"."
-    }
-  },
-  {
-    "id": "s95-s4",
-    "italian": "L'infermiere sta arrivando per aiutarla subito.",
-    "english": "The nurse is coming to help you immediately.",
-    "type": "sentence",
-    "choices": [
-      "L'attesa al pronto soccorso può essere lunga.",
-      "L'infermiere sta arrivando per aiutarla subito.",
-      "Il paziente ha difficoltà a respirare da solo.",
-      "Sento un dolore molto forte alla gamba destra."
-    ],
-    "correctAnswer": "L'infermiere sta arrivando per aiutarla subito.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"L'infermiere sta arrivando per aiutarla subito.\"."
-    }
-  },
-  {
     "id": "s95-s1",
-    "italian": "Portatelo subito al pronto soccorso, è un'emergenza.",
-    "english": "Take him to the emergency room immediately, it's an emergency.",
+    "italian": "Dov'è il pronto soccorso? Segua la linea rossa sul pavimento.",
+    "english": "Where is the emergency room? Follow the red line on the floor.",
     "type": "sentence",
-    "choices": [
-      "Sento un dolore molto forte alla gamba destra.",
-      "L'infermiere sta arrivando per aiutarla subito.",
-      "Portatelo subito al pronto soccorso, è un'emergenza.",
-      "Il paziente ha difficoltà a respirare da solo."
+    "choicesItalian": [
+      "Dov'è la farmacia? Giri a destra.",
+      "Dov'è il pronto soccorso? Segua la linea rossa sul pavimento.",
+      "Dov'è l'uscita? Vada dritto.",
+      "Dov'è il dottore? È in ufficio."
     ],
-    "correctAnswer": "Portatelo subito al pronto soccorso, è un'emergenza.",
+    "choicesEnglish": [
+      "Where is the pharmacy? Turn right.",
+      "Where is the emergency room? Follow the red line on the floor.",
+      "Where is the exit? Go straight.",
+      "Where is the doctor? He is in the office."
+    ],
+    "correctAnswerItalian": "Dov'è il pronto soccorso? Segua la linea rossa sul pavimento.",
+    "correctAnswerEnglish": "Where is the emergency room? Follow the red line on the floor.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Portatelo subito al pronto soccorso, è un'emergenza.\"."
+      "correctItalian": "Perfetto! Un'interazione tipica all'arrivo in ospedale.",
+      "incorrectItalian": "No, la risposta corretta riguarda il pronto soccorso e la linea rossa.",
+      "correctEnglish": "Perfect! A typical interaction upon arriving at the hospital.",
+      "incorrectEnglish": "No, the correct answer is about the emergency room and the red line."
+    }
+  },
+  {
+    "id": "s95-s2",
+    "italian": "Ho un dolore fortissimo al petto. Si sieda subito, chiamo l'infermiere.",
+    "english": "I have a very strong pain in my chest. Sit down immediately, I'll call the nurse.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi fa male la testa. Prenda un'aspirina.",
+      "Ho un dolore fortissimo al petto. Si sieda subito, chiamo l'infermiere.",
+      "Ho fame. Il bar è laggiù.",
+      "Sono stanco. C'è una sedia lì."
+    ],
+    "choicesEnglish": [
+      "My head hurts. Take an aspirin.",
+      "I have a very strong pain in my chest. Sit down immediately, I'll call the nurse.",
+      "I am hungry. The bar is over there.",
+      "I am tired. There is a chair there."
+    ],
+    "correctAnswerItalian": "Ho un dolore fortissimo al petto. Si sieda subito, chiamo l'infermiere.",
+    "correctAnswerEnglish": "I have a very strong pain in my chest. Sit down immediately, I'll call the nurse.",
+    "feedback": {
+      "correctItalian": "Esatto! Un dialogo che mostra l'urgenza di un possibile problema cardiaco.",
+      "incorrectItalian": "No, il dialogo riguarda il dolore al petto e l'infermiere.",
+      "correctEnglish": "Correct! A dialogue showing the urgency of a possible heart problem.",
+      "incorrectEnglish": "No, the dialogue is about chest pain and the nurse."
     }
   },
   {
     "id": "s95-s3",
-    "italian": "Il paziente ha difficoltà a respirare da solo.",
-    "english": "The patient has difficulty breathing on his own.",
+    "italian": "Mio figlio è caduto e perde sangue. Resti calma, lo portiamo subito in triage.",
+    "english": "My son fell and is bleeding. Stay calm, we're taking him to triage right away.",
     "type": "sentence",
-    "choices": [
-      "Il paziente ha difficoltà a respirare da solo.",
-      "L'attesa al pronto soccorso può essere lunga.",
-      "C'è stato un brutto incidente sulla strada.",
-      "Portatelo subito al pronto soccorso, è un'emergenza."
+    "choicesItalian": [
+      "Mio figlio ha fame. Compri un panino.",
+      "Mio figlio è caduto e perde sangue. Resti calma, lo portiamo subito in triage.",
+      "Mio figlio dorme. Non lo svegli.",
+      "Mio figlio gioca. È felice."
     ],
-    "correctAnswer": "Il paziente ha difficoltà a respirare da solo.",
+    "choicesEnglish": [
+      "My son is hungry. Buy a sandwich.",
+      "My son fell and is bleeding. Stay calm, we're taking him to triage right away.",
+      "My son is sleeping. Don't wake him up.",
+      "My son is playing. He is happy."
+    ],
+    "correctAnswerItalian": "Mio figlio è caduto e perde sangue. Resti calma, lo portiamo subito in triage.",
+    "correctAnswerEnglish": "My son fell and is bleeding. Stay calm, we're taking him to triage right away.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Il paziente ha difficoltà a respirare da solo.\"."
+      "correctItalian": "Ben fatto! Mostra la gestione di un'emergenza pediatrica.",
+      "incorrectItalian": "No, il dialogo corretto riguarda la caduta e il triage.",
+      "correctEnglish": "Well done! It shows the management of a pediatric emergency.",
+      "incorrectEnglish": "No, the correct dialogue is about the fall and triage."
+    }
+  },
+  {
+    "id": "s95-s4",
+    "italian": "Qual è il suo nome? Mi chiamo Mario Rossi, ho 45 anni.",
+    "english": "What is your name? My name is Mario Rossi, I am 45 years old.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dove vive? Vivo a Roma.",
+      "Qual è il suo nome? Mi chiamo Mario Rossi, ho 45 anni.",
+      "Cosa fa? Sono un ingegnere.",
+      "Come sta? Sto bene, grazie."
+    ],
+    "choicesEnglish": [
+      "Where do you live? I live in Rome.",
+      "What is your name? My name is Mario Rossi, I am 45 years old.",
+      "What do you do? I am an engineer.",
+      "How are you? I am fine, thank you."
+    ],
+    "correctAnswerItalian": "Qual è il suo nome? Mi chiamo Mario Rossi, ho 45 anni.",
+    "correctAnswerEnglish": "What is your name? My name is Mario Rossi, I am 45 years old.",
+    "feedback": {
+      "correctItalian": "Esatto! La registrazione dei dati all'accoglienza.",
+      "incorrectItalian": "No, la risposta riguarda il nome e l'età.",
+      "correctEnglish": "Correct! Data registration at the reception.",
+      "incorrectEnglish": "No, the answer is about the name and age."
+    }
+  },
+  {
+    "id": "s95-s5",
+    "italian": "Ha delle allergie ai farmaci? Sì, sono allergico alla penicillina.",
+    "english": "Do you have any drug allergies? Yes, I am allergic to penicillin.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ha dei figli? No, non ne ho.",
+      "Ha delle allergie ai farmaci? Sì, sono allergico alla penicillina.",
+      "Ha dei soldi? Sì, ho la carta.",
+      "Ha freddo? No, sto bene."
+    ],
+    "choicesEnglish": [
+      "Do you have children? No, I don't have any.",
+      "Do you have any drug allergies? Yes, I am allergic to penicillin.",
+      "Do you have money? Yes, I have the card.",
+      "Are you cold? No, I am fine."
+    ],
+    "correctAnswerItalian": "Ha delle allergie ai farmaci? Sì, sono allergico alla penicillina.",
+    "correctAnswerEnglish": "Do you have any drug allergies? Yes, I am allergic to penicillin.",
+    "feedback": {
+      "correctItalian": "Ottimo! Una domanda di sicurezza fondamentale.",
+      "incorrectItalian": "No, si parla di allergie ai farmaci.",
+      "correctEnglish": "Great! A fundamental safety question.",
+      "incorrectEnglish": "No, it's about drug allergies."
+    }
+  },
+  {
+    "id": "s95-s6",
+    "italian": "A che ora è iniziato il dolore? Circa un'ora fa, all'improvviso.",
+    "english": "What time did the pain start? About an hour ago, suddenly.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dove fa male? Qui, al braccio.",
+      "A che ora è iniziato il dolore? Circa un'ora fa, all'improvviso.",
+      "Quanto è forte? Moltissimo.",
+      "Ha preso qualcosa? Un'aspirina."
+    ],
+    "choicesEnglish": [
+      "Where does it hurt? Here, in the arm.",
+      "What time did the pain start? About an hour ago, suddenly.",
+      "How strong is it? Very much.",
+      "Did you take anything? An aspirin."
+    ],
+    "correctAnswerItalian": "A che ora è iniziato il dolore? Circa un'ora fa, all'improvviso.",
+    "correctAnswerEnglish": "What time did the pain start? About an hour ago, suddenly.",
+    "feedback": {
+      "correctItalian": "Esatto! Informazione temporale importante per la diagnosi.",
+      "incorrectItalian": "No, si parla dell'ora di inizio del dolore.",
+      "correctEnglish": "Correct! Important temporal information for the diagnosis.",
+      "incorrectEnglish": "No, it's about the time the pain started."
+    }
+  },
+  {
+    "id": "s95-s7",
+    "italian": "Sente un peso sul petto? Sì, come se non riuscissi a respirare bene.",
+    "english": "Do you feel a weight on your chest? Yes, as if I couldn't breathe well.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ha la tosse? No, solo febbre.",
+      "Sente un peso sul petto? Sì, come se non riuscissi a respirare bene.",
+      "Sente freddo? No, ho caldo.",
+      "Sente dolore? Solo alla gamba."
+    ],
+    "choicesEnglish": [
+      "Do you have a cough? No, only fever.",
+      "Do you feel a weight on your chest? Yes, as if I couldn't breathe well.",
+      "Are you cold? No, I'm hot.",
+      "Do you feel pain? Only in my leg."
+    ],
+    "correctAnswerItalian": "Sente un peso sul petto? Sì, come se non riuscissi a respirare bene.",
+    "correctAnswerEnglish": "Do you feel a weight on your chest? Yes, as if I couldn't breathe well.",
+    "feedback": {
+      "correctItalian": "Perfetto! Descrive la sensazione di oppressione toracica.",
+      "incorrectItalian": "No, si parla del peso sul petto e del respiro.",
+      "correctEnglish": "Perfect! Describes the feeling of chest tightness.",
+      "incorrectEnglish": "No, it's about the weight on the chest and breathing."
+    }
+  },
+  {
+    "id": "s95-s8",
+    "italian": "Il dolore si sposta al braccio? Sì, sento un formicolio al braccio sinistro.",
+    "english": "Does the pain move to your arm? Yes, I feel a tingling in my left arm.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il braccio è rotto? Penso di sì.",
+      "Il dolore si sposta al braccio? Sì, sento un formicolio al braccio sinistro.",
+      "Può muovere la mano? No, è bloccata.",
+      "Sente formicolio ai piedi? No, solo alle mani."
+    ],
+    "choicesEnglish": [
+      "Is the arm broken? I think so.",
+      "Does the pain move to your arm? Yes, I feel a tingling in my left arm.",
+      "Can you move your hand? No, it's stuck.",
+      "Do you feel tingling in your feet? No, only in the hands."
+    ],
+    "correctAnswerItalian": "Il dolore si sposta al braccio? Sì, sento un formicolio al braccio sinistro.",
+    "correctAnswerEnglish": "Does the pain move to your arm? Yes, I feel a tingling in my left arm.",
+    "feedback": {
+      "correctItalian": "Esatto! Un segnale tipico di problemi cardiaci.",
+      "incorrectItalian": "No, si parla del dolore che si irradia al braccio.",
+      "correctEnglish": "Correct! A typical sign of heart problems.",
+      "incorrectEnglish": "No, it's about the pain radiating to the arm."
+    }
+  },
+  {
+    "id": "s95-s9",
+    "italian": "Dobbiamo fare una radiografia. Pensa che sia rotto?",
+    "english": "We need to do an X-ray. Do you think it's broken?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dobbiamo operare. È pericoloso?",
+      "Dobbiamo fare una radiografia. Pensa che sia rotto?",
+      "Dobbiamo aspettare. Quanto tempo?",
+      "Dobbiamo andare via. Perché?"
+    ],
+    "choicesEnglish": [
+      "We need to operate. Is it dangerous?",
+      "We need to do an X-ray. Do you think it's broken?",
+      "We need to wait. How long?",
+      "We need to go. Why?"
+    ],
+    "correctAnswerItalian": "Dobbiamo fare una radiografia. Pensa che sia rotto?",
+    "correctAnswerEnglish": "We need to do an X-ray. Do you think it's broken?",
+    "feedback": {
+      "correctItalian": "Esatto! Il passaggio successivo per un sospetto trauma osseo.",
+      "incorrectItalian": "No, si parla di radiografia e sospetta frattura.",
+      "correctEnglish": "Correct! The next step for a suspected bone trauma.",
+      "incorrectEnglish": "No, it's about X-rays and suspected fractures."
+    }
+  },
+  {
+    "id": "s95-s10",
+    "italian": "L'attesa è di circa due ore. Ma sto male, non posso aspettare così tanto!",
+    "english": "The wait is about two hours. But I'm sick, I can't wait that long!",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il bar è aperto. Voglio un caffè.",
+      "L'attesa è di circa due ore. Ma sto male, non posso aspettare così tanto!",
+      "Il dottore arriva subito. Meno male.",
+      "La visita è finita. Posso andare?"
+    ],
+    "choicesEnglish": [
+      "The bar is open. I want a coffee.",
+      "The wait is about two hours. But I'm sick, I can't wait that long!",
+      "The doctor is coming soon. Thank goodness.",
+      "The visit is over. Can I go?"
+    ],
+    "correctAnswerItalian": "L'attesa è di circa due ore. Ma sto male, non posso aspettare così tanto!",
+    "correctAnswerEnglish": "The wait is about two hours. But I'm sick, I can't wait that long!",
+    "feedback": {
+      "correctItalian": "Esatto! Esprime la frustrazione e il malessere dell'attesa.",
+      "incorrectItalian": "No, il dialogo riguarda l'attesa lunga.",
+      "correctEnglish": "Correct! Expresses frustration and discomfort with the wait.",
+      "incorrectEnglish": "No, the dialogue is about the long wait."
+    }
+  },
+  {
+    "id": "s95-s11",
+    "italian": "Il suo codice è verde. Perché verde? Ho molto dolore!",
+    "english": "Your code is green. Why green? I have a lot of pain!",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il suo nome è Rossi. Come lo sa?",
+      "Il suo codice è verde. Perché verde? Ho molto dolore!",
+      "Il suo dottore è Bianchi. È bravo?",
+      "La sua stanza è la dieci. Grazie."
+    ],
+    "choicesEnglish": [
+      "Your name is Rossi. How do you know?",
+      "Your code is green. Why green? I have a lot of pain!",
+      "Your doctor is Bianchi. Is he good?",
+      "Your room is number ten. Thank you."
+    ],
+    "correctAnswerItalian": "Il suo codice è verde. Perché verde? Ho molto dolore!",
+    "correctAnswerEnglish": "Your code is green. Why green? I have a lot of pain!",
+    "feedback": {
+      "correctItalian": "Ottimo! Mostra la reazione all'assegnazione del codice di priorità.",
+      "incorrectItalian": "No, si parla del codice verde e del dolore.",
+      "correctEnglish": "Great! Shows the reaction to the priority code assignment.",
+      "incorrectEnglish": "No, it's about the green code and pain."
+    }
+  },
+  {
+    "id": "s95-s12",
+    "italian": "Il codice rosso ha la precedenza. Capisco, ma mio marito sta svenendo.",
+    "english": "Code red has priority. I understand, but my husband is fainting.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il dottore è impegnato. Aspetterò.",
+      "Il codice rosso ha la precedenza. Capisco, ma mio marito sta svenendo.",
+      "L'infermiere è stanco. Mi dispiace.",
+      "L'ambulanza è arrivata. Chi c'è dentro?"
+    ],
+    "choicesEnglish": [
+      "The doctor is busy. I will wait.",
+      "Code red has priority. I understand, but my husband is fainting.",
+      "The nurse is tired. I'm sorry.",
+      "The ambulance has arrived. Who is inside?"
+    ],
+    "correctAnswerItalian": "Il codice rosso ha la precedenza. Capisco, ma mio marito sta svenendo.",
+    "correctAnswerEnglish": "Il codice rosso ha la precedenza. Capisco, ma mio marito sta svenendo.",
+    "feedback": {
+      "correctItalian": "Esatto! Un momento di tensione per la precedenza delle emergenze.",
+      "incorrectItalian": "No, il dialogo riguarda la precedenza e lo svenimento.",
+      "correctEnglish": "Correct! A moment of tension regarding emergency priority.",
+      "incorrectEnglish": "No, the dialogue is about priority and fainting."
+    }
+  },
+  {
+    "id": "s95-s13",
+    "italian": "Si sdrai sulla barella, per favore. Faccia piano, la gamba mi fa male.",
+    "english": "Lie down on the stretcher, please. Take it easy, my leg hurts.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Si sieda sulla sedia. È comoda?",
+      "Si sdrai sulla barella, per favore. Faccia piano, la gamba mi fa male.",
+      "Cammini piano. Non posso.",
+      "Alzi le braccia. Così?"
+    ],
+    "choicesEnglish": [
+      "Sit on the chair. Is it comfortable?",
+      "Lie down on the stretcher, please. Take it easy, my leg hurts.",
+      "Walk slowly. I can't.",
+      "Raise your arms. Like this?"
+    ],
+    "correctAnswerItalian": "Si sdrai sulla barella, per favore. Faccia piano, la gamba mi fa male.",
+    "correctAnswerEnglish": "Lie down on the stretcher, please. Take it easy, my leg hurts.",
+    "feedback": {
+      "correctItalian": "Esatto! Un'interazione durante il trasporto del paziente.",
+      "incorrectItalian": "No, si parla della barella e del dolore alla gamba.",
+      "correctEnglish": "Correct! An interaction during patient transport.",
+      "incorrectEnglish": "No, it's about the stretcher and the leg pain."
+    }
+  },
+  {
+    "id": "s95-s14",
+    "italian": "Dobbiamo mettere dei punti. Quanti punti servono?",
+    "english": "We need to put in stitches. How many stitches are needed?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dobbiamo mettere un cerotto. È piccolo?",
+      "Dobbiamo mettere dei punti. Quanti punti servono?",
+      "Dobbiamo fare un esame. Quale?",
+      "Dobbiamo pulire la ferita. Brucia?"
+    ],
+    "choicesEnglish": [
+      "We need to put on a band-aid. Is it small?",
+      "We need to put in stitches. How many stitches are needed?",
+      "We need to do a test. Which one?",
+      "We need to clean the wound. Does it burn?"
+    ],
+    "correctAnswerItalian": "Dobbiamo mettere dei punti. Quanti punti servono?",
+    "correctAnswerEnglish": "We need to put in stitches. How many stitches are needed?",
+    "feedback": {
+      "correctItalian": "Esatto! Trattamento di una ferita profonda.",
+      "incorrectItalian": "No, si parla di punti di sutura.",
+      "correctEnglish": "Correct! Treatment of a deep wound.",
+      "incorrectEnglish": "No, it's about stitches."
+    }
+  },
+  {
+    "id": "s95-s15",
+    "italian": "Le faccio un'iniezione per il dolore. Farà male?",
+    "english": "I'm giving you an injection for the pain. Will it hurt?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Le do una pillola. Funziona subito?",
+      "Le faccio un'iniezione per il dolore. Farà male?",
+      "Le metto del ghiaccio. È freddo?",
+      "Le misuro la pressione. È alta?"
+    ],
+    "choicesEnglish": [
+      "I'm giving you a pill. Does it work right away?",
+      "I'm giving you an injection for the pain. Will it hurt?",
+      "I'm putting ice on you. Is it cold?",
+      "I'm measuring your blood pressure. Is it high?"
+    ],
+    "correctAnswerItalian": "Le faccio un'iniezione per il dolore. Farà male?",
+    "correctAnswerEnglish": "I'm giving you an injection for the pain. Will it hurt?",
+    "feedback": {
+      "correctItalian": "Ottimo! La classica preoccupazione per le iniezioni.",
+      "incorrectItalian": "No, si parla di iniezione e dolore.",
+      "correctEnglish": "Great! The classic worry about injections.",
+      "incorrectEnglish": "No, it's about an injection and pain."
+    }
+  },
+  {
+    "id": "s95-s16",
+    "italian": "Devo restare ricoverato? Sì, dobbiamo monitorarla per 24 ore.",
+    "english": "Do I have to be admitted? Yes, we need to monitor you for 24 hours.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Posso andare a casa? No, non ancora.",
+      "Devo restare ricoverato? Sì, dobbiamo monitorarla per 24 ore.",
+      "Devo fare altri esami? Sì, domani mattina.",
+      "Chi mi aiuta? L'infermiere di turno."
+    ],
+    "choicesEnglish": [
+      "Can I go home? No, not yet.",
+      "Do I have to be admitted? Yes, we need to monitor you for 24 hours.",
+      "Do I need more tests? Yes, tomorrow morning.",
+      "Who helps me? The nurse on duty."
+    ],
+    "correctAnswerItalian": "Devo restare ricoverato? Sì, dobbiamo monitorarla per 24 ore.",
+    "correctAnswerEnglish": "Do I have to be admitted? Yes, we need to monitor you for 24 hours.",
+    "feedback": {
+      "correctItalian": "Esatto! Informazioni sulla degenza in ospedale.",
+      "incorrectItalian": "No, si parla di ricovero e monitoraggio.",
+      "correctEnglish": "Correct! Information about the hospital stay.",
+      "incorrectEnglish": "No, it's about admission and monitoring."
+    }
+  },
+  {
+    "id": "s95-s17",
+    "italian": "Le analisi del sangue sono pronte. Cosa dicono i risultati?",
+    "english": "The blood tests are ready. What do the results say?",
+    "type": "sentence",
+    "choicesItalian": [
+      "La cena è pronta. Cosa c'è da mangiare?",
+      "Le analisi del sangue sono pronte. Cosa dicono i risultati?",
+      "Il medico è pronto. Cosa dice?",
+      "La ricetta è pronta. Dove la prendo?"
+    ],
+    "choicesEnglish": [
+      "Dinner is ready. What is there to eat?",
+      "The blood tests are ready. What do the results say?",
+      "The doctor is ready. What does he say?",
+      "The prescription is ready. Where do I get it?"
+    ],
+    "correctAnswerItalian": "Le analisi del sangue sono pronte. Cosa dicono i risultati?",
+    "correctAnswerEnglish": "The blood tests are ready. What do the results say?",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere informazioni sugli esiti degli esami.",
+      "incorrectItalian": "No, si parla di analisi del sangue e risultati.",
+      "correctEnglish": "Great! Asking for information about test results.",
+      "incorrectEnglish": "No, it's about blood tests and results."
+    }
+  },
+  {
+    "id": "s95-s18",
+    "italian": "Può muovere le dita del piede? Sì, ma con molta difficoltà.",
+    "english": "Can you move your toes? Yes, but with great difficulty.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Può alzare il braccio? No, è bloccato.",
+      "Può muovere le dita del piede? Sì, ma con molta difficoltà.",
+      "Sente la mia mano? No, non sento nulla.",
+      "Le fa male qui? Sì, moltissimo."
+    ],
+    "choicesEnglish": [
+      "Can you raise your arm? No, it's stuck.",
+      "Can you move your toes? Yes, but with great difficulty.",
+      "Can you feel my hand? No, I don't feel anything.",
+      "Does it hurt here? Yes, very much."
+    ],
+    "correctAnswerItalian": "Può muovere le dita del piede? Sì, ma con molta difficoltà.",
+    "correctAnswerEnglish": "Can you move your toes? Yes, but with great difficulty.",
+    "feedback": {
+      "correctItalian": "Esatto! Un test motorio comune dopo un trauma.",
+      "incorrectItalian": "No, il dialogo riguarda le dita del piede.",
+      "correctEnglish": "Correct! A common motor test after a trauma.",
+      "incorrectEnglish": "No, the dialogue is about toes."
+    }
+  },
+  {
+    "id": "s95-s19",
+    "italian": "Ha sbattuto la testa? Sì, e ora ho molta nausea.",
+    "english": "Did you hit your head? Yes, and now I have a lot of nausea.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ha mal di gola? No, solo tosse.",
+      "Ha sbattuto la testa? Sì, e ora ho molta nausea.",
+      "Si sente svenire? No, sto meglio.",
+      "Ha perso sangue? Solo un po'."
+    ],
+    "choicesEnglish": [
+      "Do you have a sore throat? No, only a cough.",
+      "Did you hit your head? Yes, and now I have a lot of nausea.",
+      "Do you feel like fainting? No, I'm better.",
+      "Did you lose blood? Just a bit."
+    ],
+    "correctAnswerItalian": "Ha sbattuto la testa? Sì, e ora ho molta nausea.",
+    "correctAnswerEnglish": "Did you hit your head? Yes, and now I have a lot of nausea.",
+    "feedback": {
+      "correctItalian": "Esatto! Sintomi di commozione cerebrale.",
+      "incorrectItalian": "No, si parla di trauma cranico e nausea.",
+      "correctEnglish": "Correct! Symptoms of a concussion.",
+      "incorrectEnglish": "No, it's about head trauma and nausea."
+    }
+  },
+  {
+    "id": "s95-s20",
+    "italian": "Dov'è il medico di guardia? Sta arrivando, è impegnato in un'emergenza.",
+    "english": "Where is the doctor on duty? He's coming, he's busy with an emergency.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dov'è l'infermiere? È in pausa.",
+      "Dov'è il medico di guardia? Sta arrivando, è impegnato in un'emergenza.",
+      "Chi è il primario? È il dottor Rossi.",
+      "Dov'è l'ambulanza? È fuori."
+    ],
+    "choicesEnglish": [
+      "Where is the nurse? He is on break.",
+      "Where is the doctor on duty? He's coming, he's busy with an emergency.",
+      "Who is the head doctor? It's Dr. Rossi.",
+      "Where is the ambulance? It's outside."
+    ],
+    "correctAnswerItalian": "Dov'è il medico di guardia? Sta arrivando, è impegnato in un'emergenza.",
+    "correctAnswerEnglish": "Where is the doctor on duty? He's coming, he's busy with an emergency.",
+    "feedback": {
+      "correctItalian": "Esatto! Spiega il motivo dell'attesa del medico.",
+      "incorrectItalian": "No, si parla del medico di guardia e di un'emergenza.",
+      "correctEnglish": "Correct! Explaining the reason for the doctor's delay.",
+      "incorrectEnglish": "No, it's about the on-duty doctor and an emergency."
+    }
+  },
+  {
+    "id": "s95-s21",
+    "italian": "Mio padre ha perso conoscenza. Da quanto tempo è svenuto?",
+    "english": "My father lost consciousness. How long has he been fainted?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mio padre non sente. Da quando?",
+      "Mio padre ha perso conoscenza. Da quanto tempo è svenuto?",
+      "Mio padre è stanco. Ha dormito?",
+      "Mio padre è uscito. Dove è andato?"
+    ],
+    "choicesEnglish": [
+      "My father can't hear. Since when?",
+      "My father lost consciousness. How long has he been fainted?",
+      "My father is tired. Did he sleep?",
+      "My father went out. Where did he go?"
+    ],
+    "correctAnswerItalian": "Mio padre ha perso conoscenza. Da quanto tempo è svenuto?",
+    "correctAnswerEnglish": "My father lost consciousness. How long has he been fainted?",
+    "feedback": {
+      "correctItalian": "Perfetto! Una situazione critica riportata dai familiari.",
+      "incorrectItalian": "No, si parla di perdita di conoscenza.",
+      "correctEnglish": "Perfect! A critical situation reported by family members.",
+      "incorrectEnglish": "No, it's about loss of consciousness."
+    }
+  },
+  {
+    "id": "s95-s22",
+    "italian": "Sente vertigini se si alza? Sì, mi gira tutto e voglio vomitare.",
+    "english": "Do you feel dizzy if you stand up? Yes, everything is spinning and I want to vomit.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sente dolore se cammina? No, solo se sto seduto.",
+      "Sente vertigini se si alza? Sì, mi gira tutto e voglio vomitare.",
+      "Ha fame se non mangia? Sì, certo.",
+      "Ha freddo se esce? No, ho la giacca."
+    ],
+    "choicesEnglish": [
+      "Do you feel pain if you walk? No, only if I'm sitting.",
+      "Do you feel dizzy if you stand up? Yes, everything is spinning and I want to vomit.",
+      "Are you hungry if you don't eat? Yes, of course.",
+      "Are you cold if you go out? No, I have a jacket."
+    ],
+    "correctAnswerItalian": "Sente vertigini se si alza? Sì, mi gira tutto e voglio vomitare.",
+    "correctAnswerEnglish": "Do you feel dizzy if you stand up? Yes, everything is spinning and I want to vomit.",
+    "feedback": {
+      "correctItalian": "Esatto! Descrive un forte malessere e instabilità.",
+      "incorrectItalian": "No, si parla di vertigini e nausea.",
+      "correctEnglish": "Correct! Describes a strong feeling of illness and instability.",
+      "incorrectEnglish": "No, it's about dizziness and nausea."
+    }
+  },
+  {
+    "id": "s95-s23",
+    "italian": "Dobbiamo mettere il gesso. Per quanto tempo dovrò portarlo?",
+    "english": "We need to put on a cast. How long will I have to wear it?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dobbiamo fare un bendaggio. È stretto?",
+      "Dobbiamo mettere il gesso. Per quanto tempo dovrò portarlo?",
+      "Dobbiamo usare le stampelle. Dove sono?",
+      "Dobbiamo restare qui. Ancora?"
+    ],
+    "choicesEnglish": [
+      "We need to do a bandage. Is it tight?",
+      "We need to put on a cast. How long will I have to wear it?",
+      "We need to use crutches. Where are they?",
+      "We need to stay here. Again?"
+    ],
+    "correctAnswerItalian": "Dobbiamo mettere il gesso. Per quanto tempo dovrò portarlo?",
+    "correctAnswerEnglish": "We need to put on a cast. How long will I have to wear it?",
+    "feedback": {
+      "correctItalian": "Ottimo! La domanda tipica dopo una frattura.",
+      "incorrectItalian": "No, si parla di gesso e durata del trattamento.",
+      "correctEnglish": "Great! The typical question after a fracture.",
+      "incorrectEnglish": "No, it's about a cast and treatment duration."
+    }
+  },
+  {
+    "id": "s95-s24",
+    "italian": "La ferita è molto profonda. Bisogna operare subito?",
+    "english": "The wound is very deep. Do we need to operate immediately?",
+    "type": "sentence",
+    "choicesItalian": [
+      "La ferita è piccola. Basta un cerotto.",
+      "La ferita è molto profonda. Bisogna operare subito?",
+      "La ferita è pulita. Va bene così.",
+      "La ferita fa male. Prenda questo."
+    ],
+    "choicesEnglish": [
+      "The wound is small. A band-aid is enough.",
+      "The wound is very deep. Do we need to operate immediately?",
+      "The wound is clean. It's fine like this.",
+      "The wound hurts. Take this."
+    ],
+    "correctAnswerItalian": "La ferita è molto profonda. Bisogna operare subito?",
+    "correctAnswerEnglish": "La ferita è molto profonda. Bisogna operare subito?",
+    "feedback": {
+      "correctItalian": "Esatto! Preoccupazione per la gravità di un taglio.",
+      "incorrectItalian": "No, si parla di ferita profonda e operazione.",
+      "correctEnglish": "Correct! Worry about the severity of a cut.",
+      "incorrectEnglish": "No, it's about a deep wound and operation."
+    }
+  },
+  {
+    "id": "s95-s25",
+    "italian": "Ha mangiato qualcosa di particolare? Sì, dei crostacei al ristorante.",
+    "english": "Did you eat anything in particular? Yes, some shellfish at the restaurant.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Cosa ha bevuto? Solo acqua.",
+      "Ha mangiato qualcosa di particolare? Sì, dei crostacei al ristorante.",
+      "Ha fame ora? No, ho nausea.",
+      "Le piace il pesce? Sì, molto."
+    ],
+    "choicesEnglish": [
+      "What did you drink? Just water.",
+      "Did you eat anything in particular? Yes, some shellfish at the restaurant.",
+      "Are you hungry now? No, I'm nauseous.",
+      "Do you like fish? Yes, very much."
+    ],
+    "correctAnswerItalian": "Ha mangiato qualcosa di particolare? Sì, dei crostacei al ristorante.",
+    "correctAnswerEnglish": "Did you eat anything in particular? Yes, some shellfish at the restaurant.",
+    "feedback": {
+      "correctItalian": "Ottimo! Indagine su una possibile intossicazione o allergia.",
+      "incorrectItalian": "No, si parla di cibo e crostacei.",
+      "correctEnglish": "Great! Investigation into possible food poisoning or allergy.",
+      "incorrectEnglish": "No, it's about food and shellfish."
+    }
+  },
+  {
+    "id": "s95-s26",
+    "italian": "Usa regolarmente dei farmaci? Solo la pastiglia per la pressione.",
+    "english": "Do you use medications regularly? Only the blood pressure pill.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Prende vitamine? Ogni tanto.",
+      "Usa regolarmente dei farmaci? Solo la pastiglia per la pressione.",
+      "Ha finito le medicine? Sì, ieri.",
+      "Dove sono i farmaci? Nell'armadietto."
+    ],
+    "choicesEnglish": [
+      "Do you take vitamins? Every now and then.",
+      "Do you use medications regularly? Only the blood pressure pill.",
+      "Are you out of medicine? Yes, yesterday.",
+      "Where are the medicines? In the cabinet."
+    ],
+    "correctAnswerItalian": "Usa regolarmente dei farmaci? Solo la pastiglia per la pressione.",
+    "correctAnswerEnglish": "Do you use medications regularly? Only the blood pressure pill.",
+    "feedback": {
+      "correctItalian": "Esatto! Informazione sulla storia clinica del paziente.",
+      "incorrectItalian": "No, si parla di farmaci regolari e pressione.",
+      "correctEnglish": "Correct! Information about the patient's medical history.",
+      "incorrectEnglish": "No, it's about regular medications and blood pressure."
+    }
+  },
+  {
+    "id": "s95-s27",
+    "italian": "Le dimissioni sono previste per stasera. Meno male, non vedo l'ora di tornare a casa.",
+    "english": "Discharge is scheduled for tonight. Thank goodness, I can't wait to go home.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il ricovero inizia ora. Mi dispiace.",
+      "Le dimissioni sono previste per stasera. Meno male, non vedo l'ora di tornare a casa.",
+      "La visita è domani. Va bene.",
+      "L'intervento è andato bene. Grazie."
+    ],
+    "choicesEnglish": [
+      "Admission starts now. I'm sorry.",
+      "Discharge is scheduled for tonight. Thank goodness, I can't wait to go home.",
+      "The visit is tomorrow. Okay.",
+      "The surgery went well. Thank you."
+    ],
+    "correctAnswerItalian": "Le dimissioni sono previste per stasera. Meno male, non vedo l'ora di tornare a casa.",
+    "correctAnswerEnglish": "Le dimissioni sono previste per stasera. Meno male, non vedo l'ora di tornare a casa.",
+    "feedback": {
+      "correctItalian": "Ottimo! Il sollievo di poter lasciare l'ospedale.",
+      "incorrectItalian": "No, si parla di dimissioni e ritorno a casa.",
+      "correctEnglish": "Great! The relief of being able to leave the hospital.",
+      "incorrectEnglish": "No, it's about discharge and going home."
+    }
+  },
+  {
+    "id": "s95-s28",
+    "italian": "Ha bisogno di assistenza a casa? No, mia moglie si occuperà di me.",
+    "english": "Do you need assistance at home? No, my wife will take care of me.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ha bisogno di un taxi? Sì, grazie.",
+      "Ha bisogno di assistenza a casa? No, mia moglie si occuperà di me.",
+      "Ha bisogno di riposo? Sì, molto.",
+      "Ha bisogno di farmaci? Sì, ho la ricetta."
+    ],
+    "choicesEnglish": [
+      "Do you need a taxi? Yes, please.",
+      "Do you need assistance at home? No, my wife will take care of me.",
+      "Do you need rest? Yes, a lot.",
+      "Do you need medications? Yes, I have the prescription."
+    ],
+    "correctAnswerItalian": "Ha bisogno di assistenza a casa? No, mia moglie si occuperà di me.",
+    "correctAnswerEnglish": "Do you need assistance at home? No, my wife will take care of me.",
+    "feedback": {
+      "correctItalian": "Esatto! Organizzazione delle cure post-dimissione.",
+      "incorrectItalian": "No, si parla di assistenza domiciliare.",
+      "correctEnglish": "Correct! Organizing post-discharge care.",
+      "incorrectEnglish": "No, it's about home assistance."
+    }
+  },
+  {
+    "id": "s95-s29",
+    "italian": "Dov'è la farmacia aperta? C'è n'è una proprio fuori dall'ospedale.",
+    "english": "Where is an open pharmacy? There is one right outside the hospital.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dov'è il bar più vicino? All'angolo.",
+      "Dov'è la farmacia aperta? C'è n'è una proprio fuori dall'ospedale.",
+      "Dov'è il mio ufficio? In via Roma.",
+      "Dov'è l'uscita? Segua i cartelli."
+    ],
+    "choicesEnglish": [
+      "Where is the nearest bar? On the corner.",
+      "Where is an open pharmacy? There is one right outside the hospital.",
+      "Where is my office? In via Roma.",
+      "Where is the exit? Follow the signs."
+    ],
+    "correctAnswerItalian": "Dov'è la farmacia aperta? C'è n'è una proprio fuori dall'ospedale.",
+    "correctAnswerEnglish": "Where is an open pharmacy? There is one right outside the hospital.",
+    "feedback": {
+      "correctItalian": "Perfetto! Molto utile per chi deve comprare subito dei medicinali.",
+      "incorrectItalian": "No, si chiede della farmacia aperta.",
+      "correctEnglish": "Perfect! Very useful for those who need to buy medicines right away.",
+      "incorrectEnglish": "No, the question is about an open pharmacy."
+    }
+  },
+  {
+    "id": "s95-s30",
+    "italian": "Mi serve il certificato medico. Lo chieda all'accoglienza prima di uscire.",
+    "english": "I need the medical certificate. Ask for it at the reception before leaving.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi serve il conto. Paghi lì.",
+      "Mi serve il certificato medico. Lo chieda all'accoglienza prima di uscire.",
+      "Mi serve l'indirizzo. È scritto qui.",
+      "Mi serve una penna. Tenga."
+    ],
+    "choicesEnglish": [
+      "I need the bill. Pay there.",
+      "I need the medical certificate. Ask for it at the reception before leaving.",
+      "I need the address. It's written here.",
+      "I need a pen. Here."
+    ],
+    "correctAnswerItalian": "Mi serve il certificato medico. Lo chieda all'accoglienza prima di uscire.",
+    "correctAnswerEnglish": "I need the medical certificate. Ask for it at the reception before leaving.",
+    "feedback": {
+      "correctItalian": "Esatto! Documento necessario per il lavoro o l'assicurazione.",
+      "incorrectItalian": "No, si parla del certificato medico.",
+      "correctEnglish": "Correct! Necessary document for work or insurance.",
+      "incorrectEnglish": "No, it's about the medical certificate."
+    }
+  },
+  {
+    "id": "s95-s31",
+    "italian": "Il dolore è forte da 1 a 10? Direi un 8, è insopportabile.",
+    "english": "How strong is the pain from 1 to 10? I'd say an 8, it's unbearable.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Quanti anni ha? Ne ho 30.",
+      "Il dolore è forte da 1 a 10? Direi un 8, è insopportabile.",
+      "Quanto pesa? Circa 70 chili.",
+      "Che ore sono? Sono le otto."
+    ],
+    "choicesEnglish": [
+      "How old are you? I'm 30.",
+      "How strong is the pain from 1 to 10? I'd say an 8, it's unbearable.",
+      "How much do you weigh? About 70 kilos.",
+      "What time is it? It's eight o'clock."
+    ],
+    "correctAnswerItalian": "Il dolore è forte da 1 a 10? Direi un 8, è insopportabile.",
+    "correctAnswerEnglish": "How strong is the pain from 1 to 10? I'd say an 8, it's unbearable.",
+    "feedback": {
+      "correctItalian": "Esatto! La scala del dolore usata nel triage.",
+      "incorrectItalian": "No, si parla della scala del dolore.",
+      "correctEnglish": "Correct! The pain scale used in triage.",
+      "incorrectEnglish": "No, it's about the pain scale."
+    }
+  },
+  {
+    "id": "s95-s32",
+    "italian": "Avete avvisato mia moglie? Sì, sta arrivando in ospedale.",
+    "english": "Have you notified my wife? Yes, she is coming to the hospital.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dove sono le chiavi? Le ho io.",
+      "Avete avvisato mia moglie? Sì, sta arrivando in ospedale.",
+      "Chi è lei? Sono un infermiere.",
+      "È arrivato il taxi? No, non ancora."
+    ],
+    "choicesEnglish": [
+      "Where are the keys? I have them.",
+      "Have you notified my wife? Yes, she is coming to the hospital.",
+      "Who are you? I am a nurse.",
+      "Is the taxi here? No, not yet."
+    ],
+    "correctAnswerItalian": "Avete avvisato mia moglie? Sì, sta arrivando in ospedale.",
+    "correctAnswerEnglish": "Have you notified my wife? Yes, she is coming to the hospital.",
+    "feedback": {
+      "correctItalian": "Ottimo! Preoccupazione per i familiari.",
+      "incorrectItalian": "No, si parla di avvisare la moglie.",
+      "correctEnglish": "Great! Worrying about family members.",
+      "incorrectEnglish": "No, it's about notifying the wife."
+    }
+  },
+  {
+    "id": "s95-s33",
+    "italian": "Mi sento mancare l'aria. Le metto subito la maschera per l'ossigeno.",
+    "english": "I feel like I'm running out of air. I'll put the oxygen mask on you right away.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ho freddo. Le porto una coperta.",
+      "Mi sento mancare l'aria. Le metto subito la maschera per l'ossigeno.",
+      "Ho sete. Ecco un bicchiere.",
+      "Voglio uscire. Non può ora."
+    ],
+    "choicesEnglish": [
+      "I'm cold. I'll bring you a blanket.",
+      "I feel like I'm running out of air. I'll put the oxygen mask on you right away.",
+      "I'm thirsty. Here's a glass.",
+      "I want to go out. You can't right now."
+    ],
+    "correctAnswerItalian": "Mi sento mancare l'aria. Le metto subito la maschera per l'ossigeno.",
+    "correctAnswerEnglish": "Mi sento mancare l'aria. Le metto subito la maschera per l'ossigeno.",
+    "feedback": {
+      "correctItalian": "Esatto! Intervento d'urgenza per difficoltà respiratoria.",
+      "incorrectItalian": "No, si parla di mancanza d'aria e ossigeno.",
+      "correctEnglish": "Correct! Emergency intervention for breathing difficulty.",
+      "incorrectEnglish": "No, it's about running out of air and oxygen."
+    }
+  },
+  {
+    "id": "s95-s34",
+    "italian": "Ha assunto sostanze particolari? No, non bevo e non fumo.",
+    "english": "Have you taken any particular substances? No, I don't drink or smoke.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Cosa fa stasera? Nulla di speciale.",
+      "Ha assunto sostanze particolari? No, non bevo e non fumo.",
+      "Vuole un caffè? No, grazie.",
+      "È allergico a qualcosa? Solo al polline."
+    ],
+    "choicesEnglish": [
+      "What are you doing tonight? Nothing special.",
+      "Have you taken any particular substances? No, I don't drink or smoke.",
+      "Do you want a coffee? No, thank you.",
+      "Are you allergic to anything? Just pollen."
+    ],
+    "correctAnswerItalian": "Ha assunto sostanze particolari? No, non bevo e non fumo.",
+    "correctAnswerEnglish": "Have you taken any particular substances? No, I don't drink or smoke.",
+    "feedback": {
+      "correctItalian": "Esatto! Indagine su possibili cause tossicologiche.",
+      "incorrectItalian": "No, si parla di assunzione di sostanze.",
+      "correctEnglish": "Correct! Investigation into possible toxicological causes.",
+      "incorrectEnglish": "No, it's about substance intake."
+    }
+  },
+  {
+    "id": "s95-s35",
+    "italian": "Il braccio è molto gonfio. Facciamo subito una radiografia.",
+    "english": "The arm is very swollen. Let's do an X-ray right away.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il braccio è stanco. Riposi.",
+      "Il braccio è molto gonfio. Facciamo subito una radiografia.",
+      "Il braccio è sporco. Lo lavi.",
+      "Il braccio è tatuato. È bello."
+    ],
+    "choicesEnglish": [
+      "The arm is tired. Rest.",
+      "The arm is very swollen. Let's do an X-ray right away.",
+      "The arm is dirty. Wash it.",
+      "The arm is tattooed. It's nice."
+    ],
+    "correctAnswerItalian": "Il braccio è molto gonfio. Facciamo subito una radiografia.",
+    "correctAnswerEnglish": "The arm is very swollen. Let's do an X-ray right away.",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestione di un sospetto trauma osseo con gonfiore.",
+      "incorrectItalian": "No, si parla di braccio gonfio e radiografia.",
+      "correctEnglish": "Great! Managing suspected bone trauma with swelling.",
+      "incorrectEnglish": "No, it's about a swollen arm and an X-ray."
+    }
+  },
+  {
+    "id": "s95-s36",
+    "italian": "Può descrivere il dolore? È come una morsa che stringe.",
+    "english": "Can you describe the pain? It's like a vice tightening.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Quanto è alto? Un metro e ottanta.",
+      "Può descrivere il dolore? È come una morsa che stringe.",
+      "Chi è lei? Un paziente.",
+      "Dove va? In sala d'attesa."
+    ],
+    "choicesEnglish": [
+      "How tall are you? One meter eighty.",
+      "Can you describe the pain? It's like a vice tightening.",
+      "Who are you? A patient.",
+      "Where are you going? To the waiting room."
+    ],
+    "correctAnswerItalian": "Può descrivere il dolore? È come una morsa che stringe.",
+    "correctAnswerEnglish": "Can you describe the pain? It's like a vice tightening.",
+    "feedback": {
+      "correctItalian": "Esatto! Descrizione accurata di un sintomo.",
+      "incorrectItalian": "No, si chiede di descrivere il dolore.",
+      "correctEnglish": "Correct! Accurate description of a symptom.",
+      "incorrectEnglish": "No, the question is to describe the pain."
+    }
+  },
+  {
+    "id": "s95-s37",
+    "italian": "Mi sento tutto girare. Cerchi di stare fermo, la porto in sedia a rotelle.",
+    "english": "Everything is spinning for me. Try to stay still, I'll take you in a wheelchair.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Voglio correre. Non può ora.",
+      "Mi sento tutto girare. Cerchi di stare fermo, la porto in sedia a rotelle.",
+      "Sento freddo. Ecco un gilet.",
+      "Mi fa male tutto. Prenda questo."
+    ],
+    "choicesEnglish": [
+      "I want to run. You can't right now.",
+      "Everything is spinning. Try to stay still, I'll take you in a wheelchair.",
+      "I'm cold. Here's a vest.",
+      "Everything hurts. Take this."
+    ],
+    "correctAnswerItalian": "Mi sento tutto girare. Cerchi di stare fermo, la porto in sedia a rotelle.",
+    "correctAnswerEnglish": "Everything is spinning for me. Try to stay still, I'll take you in a wheelchair.",
+    "feedback": {
+      "correctItalian": "Perfetto! Assistenza a un paziente con vertigini.",
+      "incorrectItalian": "No, si parla di giramento di testa e sedia a rotelle.",
+      "correctEnglish": "Perfect! Assisting a patient with dizziness.",
+      "incorrectEnglish": "No, it's about spinning head and a wheelchair."
+    }
+  },
+  {
+    "id": "s95-s38",
+    "italian": "Ha perso conoscenza dopo la caduta? Solo per pochi secondi.",
+    "english": "Did you lose consciousness after the fall? Only for a few seconds.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ha perso le chiavi? Sì, non le trovo.",
+      "Ha perso conoscenza dopo la caduta? Solo per pochi secondi.",
+      "È caduto spesso? No, mai.",
+      "Le scale sono scivolose? Penso di sì."
+    ],
+    "choicesEnglish": [
+      "Did you lose your keys? Yes, I can't find them.",
+      "Did you lose consciousness after the fall? Only for a few seconds.",
+      "Do you fall often? No, never.",
+      "Are the stairs slippery? I think so."
+    ],
+    "correctAnswerItalian": "Ha perso conoscenza dopo la caduta? Solo per pochi secondi.",
+    "correctAnswerEnglish": "Did you lose consciousness after the fall? Only for a few seconds.",
+    "feedback": {
+      "correctItalian": "Esatto! Informazione cruciale per valutare il trauma cranico.",
+      "incorrectItalian": "No, si parla di perdita di conoscenza dopo una caduta.",
+      "correctEnglish": "Correct! Crucial information for assessing head trauma.",
+      "incorrectEnglish": "No, it's about loss of consciousness after a fall."
+    }
+  },
+  {
+    "id": "s95-s39",
+    "italian": "Sente un formicolio alle dita? Sì, sento come dei piccoli aghi.",
+    "english": "Do you feel a tingling in your fingers? Yes, it feels like small needles.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ha le mani sporche? No, sono pulite.",
+      "Sente un formicolio alle dita? Sì, sento come dei piccoli aghi.",
+      "Le dita sono rotte? Speriamo di no.",
+      "Può chiudere la mano? No, non ci riesco."
+    ],
+    "choicesEnglish": [
+      "Are your hands dirty? No, they are clean.",
+      "Do you feel a tingling in your fingers? Yes, it feels like small needles.",
+      "Are your fingers broken? Let's hope not.",
+      "Can you close your hand? No, I can't."
+    ],
+    "correctAnswerItalian": "Sente un formicolio alle dita? Sì, sento come dei piccoli aghi.",
+    "correctAnswerEnglish": "Do you feel a tingling in your fingers? Yes, it feels like small needles.",
+    "feedback": {
+      "correctItalian": "Ottimo! Descrizione di una sensazione neurologica.",
+      "incorrectItalian": "No, si parla di formicolio alle dita.",
+      "correctEnglish": "Great! Description of a neurological sensation.",
+      "incorrectEnglish": "No, it's about tingling in the fingers."
+    }
+  },
+  {
+    "id": "s95-s40",
+    "italian": "È la prima volta che succede? No, è successo anche l'anno scorso.",
+    "english": "Is it the first time this has happened? No, it happened last year too.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Le piace l'ospedale? Non molto.",
+      "È la prima volta che succede? No, è successo anche l'anno scorso.",
+      "Quando è successo? Dieci minuti fa.",
+      "Perché è qui? Sto male."
+    ],
+    "choicesEnglish": [
+      "Do you like the hospital? Not much.",
+      "Is it the first time this has happened? No, it happened last year too.",
+      "When did it happen? Ten minutes ago.",
+      "Why are you here? I'm sick."
+    ],
+    "correctAnswerItalian": "È la prima volta che succede? No, è successo anche l'anno scorso.",
+    "correctAnswerEnglish": "Is it the first time this has happened? No, it happened last year too.",
+    "feedback": {
+      "correctItalian": "Esatto! Informazione sulla ricorrenza del problema.",
+      "incorrectItalian": "No, si chiede se sia la prima volta.",
+      "correctEnglish": "Correct! Information about the recurrence of the problem.",
+      "incorrectEnglish": "No, the question is if it's the first time."
+    }
+  },
+  {
+    "id": "s95-s41",
+    "italian": "Dobbiamo pulire la ferita prima di mettere i punti. Brucerà un po'?",
+    "english": "We need to clean the wound before putting in stitches. Will it burn a bit?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dobbiamo coprire la ferita. Va bene.",
+      "Dobbiamo pulire la ferita prima di mettere i punti. Brucerà un po'?",
+      "Dobbiamo guardare la ferita. È profonda.",
+      "Dobbiamo medicare la ferita. Fa male."
+    ],
+    "choicesEnglish": [
+      "We need to cover the wound. Okay.",
+      "We need to clean the wound before putting in stitches. Will it burn a bit?",
+      "We need to look at the wound. It's deep.",
+      "We need to dress the wound. It hurts."
+    ],
+    "correctAnswerItalian": "Dobbiamo pulire la ferita prima di mettere i punti. Brucerà un po'?",
+    "correctAnswerEnglish": "We need to clean the wound before putting in stitches. Will it burn a bit?",
+    "feedback": {
+      "correctItalian": "Ottimo! Preparazione alla medicazione.",
+      "incorrectItalian": "No, si parla di pulizia della ferita e bruciore.",
+      "correctEnglish": "Great! Preparing for the dressing.",
+      "incorrectEnglish": "No, it's about cleaning the wound and burning."
+    }
+  },
+  {
+    "id": "s95-s42",
+    "italian": "Può aspettare in sala d'attesa? Sì, ma mio marito sta molto male.",
+    "english": "Can you wait in the waiting room? Yes, but my husband is very sick.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Volete dell'acqua? No, grazie.",
+      "Può aspettare in sala d'attesa? Sì, ma mio marito sta molto male.",
+      "Chi aspetta? Mia figlia.",
+      "Dov'è la sala? In fondo al corridoio."
+    ],
+    "choicesEnglish": [
+      "Do you want some water? No, thank you.",
+      "Can you wait in the waiting room? Yes, but my husband is very sick.",
+      "Who is waiting? My daughter.",
+      "Where is the room? At the end of the hallway."
+    ],
+    "correctAnswerItalian": "Può aspettare in sala d'attesa? Sì, ma mio marito sta molto male.",
+    "correctAnswerEnglish": "Può aspettare in sala d'attesa? Sì, ma mio marito sta molto male.",
+    "feedback": {
+      "correctItalian": "Esatto! Un dialogo tra personale e accompagnatore.",
+      "incorrectItalian": "No, si parla di sala d'attesa e urgenza.",
+      "correctEnglish": "Correct! A dialogue between staff and a companion.",
+      "incorrectEnglish": "No, it's about the waiting room and urgency."
+    }
+  },
+  {
+    "id": "s95-s43",
+    "italian": "Mi fa male quando premo qui? Sì, sento una fitta improvvisa.",
+    "english": "Does it hurt when I press here? Yes, I feel a sudden sharp pain.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi sente quando parlo? Sì, forte e chiaro.",
+      "Mi fa male quando premo qui? Sì, sento una fitta improvvisa.",
+      "Le piace quando mangia? Certo.",
+      "Cosa sente qui? Niente."
+    ],
+    "choicesEnglish": [
+      "Do you hear me when I speak? Yes, loud and clear.",
+      "Does it hurt when I press here? Yes, I feel a sudden sharp pain.",
+      "Do you like it when you eat? Of course.",
+      "What do you feel here? Nothing."
+    ],
+    "correctAnswerItalian": "Mi fa male quando premo qui? Sì, sento una fitta improvvisa.",
+    "correctAnswerEnglish": "Does it hurt when I press here? Yes, I feel a sudden sharp pain.",
+    "feedback": {
+      "correctItalian": "Perfetto! Esplorazione tattile durante la visita.",
+      "incorrectItalian": "No, si parla di dolore alla pressione.",
+      "correctEnglish": "Perfect! Tactile exploration during the exam.",
+      "incorrectEnglish": "No, it's about pain upon pressure."
+    }
+  },
+  {
+    "id": "s95-s44",
+    "italian": "Dobbiamo tenerla sotto osservazione. Per quanto tempo ancora?",
+    "english": "We need to keep you under observation. For how much longer?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dobbiamo operare. Quando?",
+      "Dobbiamo tenerla sotto osservazione. Per quanto tempo ancora?",
+      "Dobbiamo fare una foto. Perché?",
+      "Dobbiamo pulire la stanza. Devo uscire?"
+    ],
+    "choicesEnglish": [
+      "We need to operate. When?",
+      "We need to keep you under observation. For how much longer?",
+      "We need to take a photo. Why?",
+      "We need to clean the room. Should I leave?"
+    ],
+    "correctAnswerItalian": "Dobbiamo tenerla sotto osservazione. Per quanto tempo ancora?",
+    "correctAnswerEnglish": "We need to keep you under observation. For how much longer?",
+    "feedback": {
+      "correctItalian": "Esatto! Richiesta di informazioni sulla durata del monitoraggio.",
+      "incorrectItalian": "No, si parla di osservazione medica.",
+      "correctEnglish": "Correct! Requesting information on the duration of monitoring.",
+      "incorrectEnglish": "No, it's about medical observation."
+    }
+  },
+  {
+    "id": "s95-s45",
+    "italian": "Prende pillole per il cuore? Sì, una ogni mattina.",
+    "english": "Do you take heart pills? Yes, one every morning.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ha mal di cuore? Solo ogni tanto.",
+      "Prende pillole per il cuore? Sì, una ogni mattina.",
+      "Le serve una medicina? Forse.",
+      "Dove sono le pillole? Le ho dimenticate."
+    ],
+    "choicesEnglish": [
+      "Do you have heart pain? Only every now and then.",
+      "Do you take heart pills? Yes, one every morning.",
+      "Do you need medicine? Maybe.",
+      "Where are the pills? I forgot them."
+    ],
+    "correctAnswerItalian": "Prende pillole per il cuore? Sì, una ogni mattina.",
+    "correctAnswerEnglish": "Do you take heart pills? Yes, one every morning.",
+    "feedback": {
+      "correctItalian": "Ottimo! Anamnesi farmacologica specifica.",
+      "incorrectItalian": "No, si parla di pillole per il cuore.",
+      "correctEnglish": "Great! Specific pharmacological anamnesis.",
+      "incorrectEnglish": "No, it's about heart pills."
+    }
+  },
+  {
+    "id": "s95-s46",
+    "italian": "La sua pressione è molto alta. È normale per me quando sono agitato.",
+    "english": "Your blood pressure is very high. It's normal for me when I'm agitated.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La sua febbre è sparita. Meno male.",
+      "La sua pressione è molto alta. È normale per me quando sono agitato.",
+      "La sua macchina è fuori. Grazie.",
+      "La sua borsa è qui. La prenda."
+    ],
+    "choicesEnglish": [
+      "Your fever is gone. Thank goodness.",
+      "Your blood pressure is very high. It's normal for me when I'm agitated.",
+      "Your car is outside. Thank you.",
+      "Your bag is here. Take it."
+    ],
+    "correctAnswerItalian": "La sua pressione è molto alta. È normale per me quando sono agitato.",
+    "correctAnswerEnglish": "Your blood pressure is very high. It's normal for me when I'm agitated.",
+    "feedback": {
+      "correctItalian": "Esatto! Un dialogo tipico durante la misurazione dei parametri.",
+      "incorrectItalian": "No, si parla di pressione alta e agitazione.",
+      "correctEnglish": "Correct! A typical dialogue during parameter measurement.",
+      "incorrectEnglish": "No, it's about high blood pressure and agitation."
+    }
+  },
+  {
+    "id": "s95-s47",
+    "italian": "Ha dolore quando respira? Sì, sento una punta al lato sinistro.",
+    "english": "Do you have pain when you breathe? Yes, I feel a sharp pain on the left side.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ha tosse quando parla? Solo un po'.",
+      "Ha dolore quando respira? Sì, sento una punta al lato sinistro.",
+      "Sente freddo quando esce? Sì, certo.",
+      "Le fa male la gola? Sì, molto."
+    ],
+    "choicesEnglish": [
+      "Do you have a cough when you speak? Just a bit.",
+      "Do you have pain when you breathe? Yes, I feel a sharp pain on the left side.",
+      "Do you feel cold when you go out? Yes, of course.",
+      "Does your throat hurt? Yes, very much."
+    ],
+    "correctAnswerItalian": "Ha dolore quando respira? Sì, sento una punta al lato sinistro.",
+    "correctAnswerEnglish": "Do you have pain when you breathe? Yes, I feel a sharp pain on the left side.",
+    "feedback": {
+      "correctItalian": "Perfetto! Descrizione di un dolore pleurico o intercostale.",
+      "incorrectItalian": "No, si parla di dolore durante la respirazione.",
+      "correctEnglish": "Perfect! Description of pleural or intercostal pain.",
+      "incorrectEnglish": "No, it's about pain during breathing."
+    }
+  },
+  {
+    "id": "s95-s48",
+    "italian": "Mi serve un antidolorifico forte. Glielo mettiamo subito in flebo.",
+    "english": "I need a strong painkiller. We'll put it in your IV right away.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mi serve dell'acqua fresca. Gliela porto subito.",
+      "Mi serve un antidolorifico forte. Glielo mettiamo subito in flebo.",
+      "Mi serve un cuscino morbido. Lo cerco.",
+      "Mi serve una sedia. Si sieda qui."
+    ],
+    "choicesEnglish": [
+      "I need some cool water. I'll bring it right away.",
+      "I need a strong painkiller. We'll put it in your IV right away.",
+      "I need a soft pillow. I'll look for it.",
+      "I need a chair. Sit here."
+    ],
+    "correctAnswerItalian": "Mi serve un antidolorifico forte. Glielo mettiamo subito in flebo.",
+    "correctAnswerEnglish": "Mi serve un antidolorifico forte. Glielo mettiamo subito in flebo.",
+    "feedback": {
+      "correctItalian": "Ottimo! Gestione del dolore acuto in pronto soccorso.",
+      "incorrectItalian": "No, si parla di antidolorifico e flebo.",
+      "correctEnglish": "Great! Managing acute pain in the emergency room.",
+      "incorrectEnglish": "No, it's about painkiller and IV."
+    }
+  },
+  {
+    "id": "s95-s49",
+    "italian": "Dov'è il bagno più vicino? Esca dalla sala e vada a destra.",
+    "english": "Where is the nearest bathroom? Exit the room and go right.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dov'è il medico? È in reparto.",
+      "Dov'è il bagno più vicino? Esca dalla sala e vada a destra.",
+      "Dov'è l'uscita? È laggiù.",
+      "Dov'è il bar? È chiuso ora."
+    ],
+    "choicesEnglish": [
+      "Where is the doctor? He is in the ward.",
+      "Where is the nearest bathroom? Exit the room and go right.",
+      "Where is the exit? It's over there.",
+      "Where is the bar? It's closed now."
+    ],
+    "correctAnswerItalian": "Dov'è il bagno più vicino? Esca dalla sala e vada a destra.",
+    "correctAnswerEnglish": "Where is the nearest bathroom? Exit the room and go right.",
+    "feedback": {
+      "correctItalian": "Esatto! Indicazioni pratiche all'interno dell'ospedale.",
+      "incorrectItalian": "No, si chiede del bagno.",
+      "correctEnglish": "Correct! Practical directions within the hospital.",
+      "incorrectEnglish": "No, the question is about the bathroom."
+    }
+  },
+  {
+    "id": "s95-s50",
+    "italian": "Può chiamare mio figlio? Certo, mi dia il numero di telefono.",
+    "english": "Can you call my son? Of course, give me the phone number.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Può chiamare un taxi? Sì, subito.",
+      "Può chiamare mio figlio? Certo, mi dia il numero di telefono.",
+      "Può chiamare l'host? Non risponde.",
+      "Può chiamare il dottore? È già qui."
+    ],
+    "choicesEnglish": [
+      "Can you call a taxi? Yes, right away.",
+      "Can you call my son? Of course, give me the phone number.",
+      "Can you call the host? He's not answering.",
+      "Can you call the doctor? He's already here."
+    ],
+    "correctAnswerItalian": "Può chiamare mio figlio? Certo, mi dia il numero di telefono.",
+    "correctAnswerEnglish": "Can you call my son? Of course, give me the phone number.",
+    "feedback": {
+      "correctItalian": "Ottimo! Richiesta di contatto con i familiari.",
+      "incorrectItalian": "No, si parla di chiamare il figlio.",
+      "correctEnglish": "Great! Requesting contact with family members.",
+      "incorrectEnglish": "No, it's about calling the son."
+    }
+  },
+  {
+    "id": "s95-s51",
+    "italian": "Sente questo rumore nel respiro? Sì, è come un fischio costante.",
+    "english": "Do you hear this noise in your breath? Yes, it's like a constant whistle.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sente la musica? È troppo forte.",
+      "Sente questo rumore nel respiro? Sì, è come un fischio costante.",
+      "Sente il mio battito? È regolare.",
+      "Sente freddo? Sì, molto."
+    ],
+    "choicesEnglish": [
+      "Do you hear the music? It's too loud.",
+      "Do you hear this noise in your breath? Yes, it's like a constant whistle.",
+      "Do you hear my heartbeat? It's regular.",
+      "Are you cold? Yes, very."
+    ],
+    "correctAnswerItalian": "Sente questo rumore nel respiro? Sì, è come un fischio costante.",
+    "correctAnswerEnglish": "Do you hear this noise in your breath? Yes, it's like a constant whistle.",
+    "feedback": {
+      "correctItalian": "Esatto! Descrizione di un sibilo respiratorio.",
+      "incorrectItalian": "No, si parla del rumore del respiro.",
+      "correctEnglish": "Correct! Description of a wheezing sound.",
+      "incorrectEnglish": "No, it's about the breathing noise."
+    }
+  },
+  {
+    "id": "s95-s52",
+    "italian": "Da quanto tempo non si sente bene? Da stamattina presto, appena sveglio.",
+    "english": "How long have you been feeling unwell? Since early this morning, as soon as I woke up.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dove non si sente bene? Ovunque.",
+      "Da quanto tempo non si sente bene? Da stamattina presto, appena sveglio.",
+      "Perché non si sente bene? Forse il cibo.",
+      "Con chi non si sente bene? Da solo."
+    ],
+    "choicesEnglish": [
+      "Where do you feel unwell? Everywhere.",
+      "How long have you been feeling unwell? Since early this morning, as soon as I woke up.",
+      "Why do you feel unwell? Maybe the food.",
+      "With whom do you feel unwell? Alone."
+    ],
+    "correctAnswerItalian": "Da quanto tempo non si sente bene? Da stamattina presto, appena sveglio.",
+    "correctAnswerEnglish": "How long have you been feeling unwell? Since early this morning, as soon as I woke up.",
+    "feedback": {
+      "correctItalian": "Ottimo! Precisazione sulla durata del malessere.",
+      "incorrectItalian": "No, si chiede da quanto tempo dura il malessere.",
+      "correctEnglish": "Great! Clarifying the duration of the illness.",
+      "incorrectEnglish": "No, the question is about how long it's been lasting."
+    }
+  },
+  {
+    "id": "s95-s53",
+    "italian": "Ho sbattuto la testa e ho perso sangue. Resti fermo, dobbiamo metterle dei punti.",
+    "english": "I hit my head and I'm bleeding. Stay still, we need to give you stitches.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ho rotto il dente. Vada dal dentista.",
+      "Ho sbattuto la testa e ho perso sangue. Resti fermo, dobbiamo metterle dei punti.",
+      "Ho perso l'equilibrio. Succede.",
+      "Ho male all'orecchio. È un'infezione."
+    ],
+    "choicesEnglish": [
+      "I broke my tooth. Go to the dentist.",
+      "I hit my head and I'm bleeding. Stay still, we need to give you stitches.",
+      "I lost my balance. It happens.",
+      "My ear hurts. It's an infection."
+    ],
+    "correctAnswerItalian": "Ho sbattuto la testa e ho perso sangue. Resti fermo, dobbiamo metterle dei punti.",
+    "correctAnswerEnglish": "I hit my head and I'm bleeding. Stay still, we need to give you stitches.",
+    "feedback": {
+      "correctItalian": "Esatto! Gestione di una ferita alla testa.",
+      "incorrectItalian": "No, si parla di trauma cranico e punti di sutura.",
+      "correctEnglish": "Correct! Managing a head wound.",
+      "incorrectEnglish": "No, it's about head trauma and stitches."
+    }
+  },
+  {
+    "id": "s95-s54",
+    "italian": "Le fa male qui quando premo? Sì, è un dolore molto acuto.",
+    "english": "Does it hurt here when I press? Yes, it's a very sharp pain.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Le piace questo colore? Non molto.",
+      "Le fa male qui quando premo? Sì, è un dolore molto acuto.",
+      "Sente la mia voce? Sì, bene.",
+      "Ha freddo alle mani? Sì, gelate."
+    ],
+    "choicesEnglish": [
+      "Do you like this color? Not much.",
+      "Does it hurt here when I press? Yes, it's a very sharp pain.",
+      "Can you hear my voice? Yes, well.",
+      "Are your hands cold? Yes, freezing."
+    ],
+    "correctAnswerItalian": "Le fa male qui quando premo? Sì, è un dolore molto acuto.",
+    "correctAnswerEnglish": "Does it hurt here when I press? Yes, it's a very sharp pain.",
+    "feedback": {
+      "correctItalian": "Perfetto! Valutazione del dolore durante la visita.",
+      "incorrectItalian": "No, si parla di dolore alla pressione.",
+      "correctEnglish": "Perfect! Pain assessment during the exam.",
+      "incorrectEnglish": "No, it's about pain upon pressure."
+    }
+  },
+  {
+    "id": "s95-s55",
+    "italian": "Sente come un formicolio alle gambe? Sì, e non riesco a muoverle bene.",
+    "english": "Do you feel like a tingling in your legs? Yes, and I can't move them well.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sente la musica? Sì, è bella.",
+      "Sente come un formicolio alle gambe? Sì, e non riesco a muoverle bene.",
+      "Ha le gambe stanche? Molto.",
+      "Le sue scarpe sono strette? Un po'."
+    ],
+    "choicesEnglish": [
+      "Do you hear the music? Yes, it's nice.",
+      "Do you feel like a tingling in your legs? Yes, and I can't move them well.",
+      "Are your legs tired? Very.",
+      "Are your shoes tight? A bit."
+    ],
+    "correctAnswerItalian": "Sente come un formicolio alle gambe? Sì, e non riesco a muoverle bene.",
+    "correctAnswerEnglish": "Do you feel like a tingling in your legs? Yes, and I can't move them well.",
+    "feedback": {
+      "correctItalian": "Ottimo! Sintomo neurologico importante.",
+      "incorrectItalian": "No, si parla di formicolio e movimento delle gambe.",
+      "correctEnglish": "Great! Important neurological symptom.",
+      "incorrectEnglish": "No, it's about tingling and leg movement."
+    }
+  },
+  {
+    "id": "s95-s56",
+    "italian": "Ha mangiato crostacei stasera? Sì, e ora non riesco a respirare.",
+    "english": "Did you eat shellfish tonight? Yes, and now I can't breathe.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ha bevuto vino? Solo un bicchiere.",
+      "Ha mangiato crostacei stasera? Sì, e ora non riesco a respirare.",
+      "Le è piaciuta la cena? Molto.",
+      "Vuole il dolce? No, grazie."
+    ],
+    "choicesEnglish": [
+      "Did you drink wine? Just a glass.",
+      "Did you eat shellfish tonight? Yes, and now I can't breathe.",
+      "Did you like the dinner? Very much.",
+      "Do you want dessert? No, thank you."
+    ],
+    "correctAnswerItalian": "Ha mangiato crostacei stasera? Sì, e ora non riesco a respirare.",
+    "correctAnswerEnglish": "Did you eat shellfish tonight? Yes, and now I can't breathe.",
+    "feedback": {
+      "correctItalian": "Esatto! Reazione allergica grave (shock anafilattico).",
+      "incorrectItalian": "No, si parla di crostacei e difficoltà respiratoria.",
+      "correctEnglish": "Correct! Severe allergic reaction (anaphylactic shock).",
+      "incorrectEnglish": "No, it's about shellfish and breathing difficulty."
+    }
+  },
+  {
+    "id": "s95-s57",
+    "italian": "Dov'è il mio portafoglio? Lo abbiamo messo nel cassetto della scrivania.",
+    "english": "Where is my wallet? We put it in the desk drawer.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dov'è il mio telefono? È sul tavolo.",
+      "Dov'è il mio portafoglio? Lo abbiamo messo nel cassetto della scrivania.",
+      "Dov'è la mia borsa? È sotto la sedia.",
+      "Dove sono i miei vestiti? In quell'armadio."
+    ],
+    "choicesEnglish": [
+      "Where is my phone? It's on the table.",
+      "Where is my wallet? We put it in the desk drawer.",
+      "Where is my bag? It's under the chair.",
+      "Where are my clothes? In that wardrobe."
+    ],
+    "correctAnswerItalian": "Dov'è il mio portafoglio? Lo abbiamo messo nel cassetto della scrivania.",
+    "correctAnswerEnglish": "Where is my wallet? We put it in the desk drawer.",
+    "feedback": {
+      "correctItalian": "Esatto! Gestione degli oggetti personali del paziente.",
+      "incorrectItalian": "No, si parla del portafoglio.",
+      "correctEnglish": "Correct! Managing the patient's personal belongings.",
+      "incorrectEnglish": "No, it's about the wallet."
+    }
+  },
+  {
+    "id": "s95-s58",
+    "italian": "Mio padre è cardiopatico. È un'informazione fondamentale, grazie.",
+    "english": "My father is a heart patient. That's essential information, thank you.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Mio padre è alto. Va bene.",
+      "Mio padre è cardiopatico. È un'informazione fondamentale, grazie.",
+      "Mio padre è qui. Lo vedo.",
+      "Mio padre è medico. Bene."
+    ],
+    "choicesEnglish": [
+      "My father is tall. Okay.",
+      "My father is a heart patient. That's essential information, thank you.",
+      "My father is here. I see him.",
+      "My father is a doctor. Good."
+    ],
+    "correctAnswerItalian": "Mio padre è cardiopatico. È un'informazione fondamentale, grazie.",
+    "correctAnswerEnglish": "My father is a heart patient. That's essential information, thank you.",
+    "feedback": {
+      "correctItalian": "Ottimo! Fornire dati sulla storia clinica familiare.",
+      "incorrectItalian": "No, si parla di problemi cardiaci del padre.",
+      "correctEnglish": "Great! Providing data on family medical history.",
+      "incorrectEnglish": "No, it's about the father's heart problems."
+    }
+  },
+  {
+    "id": "s95-s59",
+    "italian": "Quando posso riprendere a lavorare? Tra almeno due settimane, deve riposare.",
+    "english": "When can I return to work? In at least two weeks, you must rest.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Quando posso uscire? Tra un'ora.",
+      "Quando posso riprendere a lavorare? Tra almeno due settimane, deve riposare.",
+      "Quando posso mangiare? Stasera.",
+      "Quando posso tornare? Domani."
+    ],
+    "choicesEnglish": [
+      "When can I go out? In an hour.",
+      "When can I return to work? In at least two weeks, you must rest.",
+      "When can I eat? Tonight.",
+      "When can I come back? Tomorrow."
+    ],
+    "correctAnswerItalian": "Quando posso riprendere a lavorare? Tra almeno due settimane, deve riposare.",
+    "correctAnswerEnglish": "When can I return to work? In at least two weeks, you must rest.",
+    "feedback": {
+      "correctItalian": "Esatto! Consigli post-dimissione sull'attività lavorativa.",
+      "incorrectItalian": "No, si parla di ritorno al lavoro e riposo.",
+      "correctEnglish": "Correct! Post-discharge advice on work activity.",
+      "incorrectEnglish": "No, it's about returning to work and rest."
+    }
+  },
+  {
+    "id": "s95-s60",
+    "italian": "Mi sento molto meglio, grazie di tutto. Prego, si riguardi e buona fortuna.",
+    "english": "I feel much better, thank you for everything. You're welcome, take care and good luck.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sto ancora male. Mi dispiace.",
+      "Mi sento molto meglio, grazie di tutto. Prego, si riguardi e buona fortuna.",
+      "Voglio andare via. Un attimo.",
+      "Dove sono i miei farmaci? Eccoli."
+    ],
+    "choicesEnglish": [
+      "I still feel sick. I'm sorry.",
+      "I feel much better, thank you for everything. You're welcome, take care and good luck.",
+      "I want to leave. One moment.",
+      "Where are my medications? Here they are."
+    ],
+    "correctAnswerItalian": "Mi sento molto meglio, grazie di tutto. Prego, si riguardi e buona fortuna.",
+    "correctAnswerEnglish": "I feel much better, thank you for everything. You're welcome, take care and good luck.",
+    "feedback": {
+      "correctItalian": "Perfetto! Un congedo cortese e incoraggiante.",
+      "incorrectItalian": "No, si tratta del ringraziamento finale e dei saluti.",
+      "correctEnglish": "Perfect! A polite and encouraging farewell.",
+      "incorrectEnglish": "No, it's about final thanks and goodbyes."
     }
   }
 ]

@@ -7,8 +7,14 @@
 - travel ✅
 - shopping ✅
 - culture ✅
+- health ✅
 
 ## Completed Scenarios
+- buying_medicine ✅ (upgraded, health)
+- dental_problem ✅ (upgraded, health)
+- doctor_appointment ✅ (upgraded, health)
+- emergency_room ✅ (upgraded, health)
+- pharmacy_symptoms ✅ (upgraded, health)
 - at_the_bank ✅ (s36, daily_life)
 - at_the_gym ✅ (s32, daily_life)
 - at_the_library ✅ (s38, daily_life)
@@ -83,15 +89,7 @@
 - art_gallery ✅ (upgraded, culture)
 
 ## Categories Requiring Audit
-- health (undersized phrases/sentences)
 - social (undersized phrases/sentences)
-
-## Scenarios Requiring Upgrade (Health)
-- buying_medicine
-- dental_problem
-- doctor_appointment
-- emergency_room
-- pharmacy_symptoms
 
 ## Scenarios Requiring Upgrade (Social)
 - apologizing

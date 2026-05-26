@@ -1,104 +1,827 @@
 [
   {
-    "id": "s97-p5",
-    "italian": "Due volte al giorno.",
-    "english": "Twice a day.",
-    "type": "phrase",
-    "choices": [
-      "Ha il farmaco generico?",
-      "Da prendere prima dei pasti.",
-      "È una compressa o una capsula?",
-      "Due volte al giorno."
-    ],
-    "correctAnswer": "Due volte al giorno.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Due volte al giorno.\"."
-    }
-  },
-  {
-    "id": "s97-p6",
-    "italian": "Ha il farmaco generico?",
-    "english": "Do you have the generic drug?",
-    "type": "phrase",
-    "choices": [
-      "È una compressa o una capsula?",
-      "Vorrei una scatola di aspirina.",
-      "Da prendere dopo i pasti.",
-      "Ha il farmaco generico?"
-    ],
-    "correctAnswer": "Ha il farmaco generico?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ha il farmaco generico?\"."
-    }
-  },
-  {
-    "id": "s97-p4",
-    "italian": "Da prendere dopo i pasti.",
-    "english": "To be taken after meals.",
-    "type": "phrase",
-    "choices": [
-      "Da prendere prima dei pasti.",
-      "Da prendere dopo i pasti.",
-      "Due volte al giorno.",
-      "Vorrei una scatola di aspirina."
-    ],
-    "correctAnswer": "Da prendere dopo i pasti.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Da prendere dopo i pasti.\"."
-    }
-  },
-  {
-    "id": "s97-p3",
-    "italian": "Da prendere prima dei pasti.",
-    "english": "To be taken before meals.",
-    "type": "phrase",
-    "choices": [
-      "Ha il farmaco generico?",
-      "Da prendere prima dei pasti.",
-      "È una compressa o una capsula?",
-      "Due volte al giorno."
-    ],
-    "correctAnswer": "Da prendere prima dei pasti.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Da prendere prima dei pasti.\"."
-    }
-  },
-  {
     "id": "s97-p1",
-    "italian": "Vorrei una scatola di aspirina.",
-    "english": "I would like a box of aspirin.",
+    "italian": "Buongiorno, vorrei un'aspirina.",
+    "english": "Good morning, I would like an aspirin.",
     "type": "phrase",
-    "choices": [
-      "Vorrei una scatola di aspirina.",
-      "Da prendere dopo i pasti.",
-      "È una compressa o una capsula?",
-      "Da prendere prima dei pasti."
-    ],
-    "correctAnswer": "Vorrei una scatola di aspirina.",
+    "choicesItalian": ["Buongiorno, vorrei un'aspirina.", "Ciao, come stai?", "Scusi, dov'è il bagno?", "Vorrei un caffè."],
+    "choicesEnglish": ["Good morning, I would like an aspirin.", "Hi, how are you?", "Excuse me, where is the bathroom?", "I would like a coffee."],
+    "correctAnswer": "Buongiorno, vorrei un'aspirina.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Vorrei una scatola di aspirina.\"."
+      "correctItalian": "Ben fatto!",
+      "incorrectItalian": "No, significa 'Buongiorno, vorrei un'aspirina'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'Good morning, I would like an aspirin'."
     }
   },
   {
     "id": "s97-p2",
-    "italian": "È una compressa o una capsula?",
-    "english": "Is it a tablet or a capsule?",
+    "italian": "Ho un forte mal di gola.",
+    "english": "I have a severe sore throat.",
     "type": "phrase",
-    "choices": [
-      "Da prendere prima dei pasti.",
-      "Vorrei una scatola di aspirina.",
-      "Due volte al giorno.",
-      "È una compressa o una capsula?"
-    ],
-    "correctAnswer": "È una compressa o una capsula?",
+    "choicesItalian": ["Ho un forte mal di gola.", "Ho mal di testa.", "Mi fa male il braccio.", "Ho la febbre."],
+    "choicesEnglish": ["I have a severe sore throat.", "I have a headache.", "My arm hurts.", "I have a fever."],
+    "correctAnswer": "Ho un forte mal di gola.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"È una compressa o una capsula?\"."
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Ho un forte mal di gola'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'I have a severe sore throat'."
+    }
+  },
+  {
+    "id": "s97-p3",
+    "italian": "Cosa mi consiglia?",
+    "english": "What do you recommend?",
+    "type": "phrase",
+    "choicesItalian": ["Cosa mi consiglia?", "Quanto costa?", "Dove posso andare?", "C'è un dottore?"],
+    "choicesEnglish": ["What do you recommend?", "How much does it cost?", "Where can I go?", "Is there a doctor?"],
+    "correctAnswer": "Cosa mi consiglia?",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Cosa mi consiglia?'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'What do you recommend?'."
+    }
+  },
+  {
+    "id": "s97-p4",
+    "italian": "Mi serve qualcosa per la tosse.",
+    "english": "I need something for a cough.",
+    "type": "phrase",
+    "choicesItalian": ["Mi serve qualcosa per la tosse.", "Vorrei del disinfettante.", "Mi servono dei cerotti.", "Ho bisogno di una crema."],
+    "choicesEnglish": ["I need something for a cough.", "I'd like some disinfectant.", "I need some plasters.", "I need a cream."],
+    "correctAnswer": "Mi serve qualcosa per la tosse.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Mi serve qualcosa per la tosse'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'I need something for a cough'."
+    }
+  },
+  {
+    "id": "s97-p5",
+    "italian": "Ha anche la febbre?",
+    "english": "Do you also have a fever?",
+    "type": "phrase",
+    "choicesItalian": ["Ha anche la febbre?", "Ha mal di stomaco?", "Le serve una ricetta?", "È allergico a qualcosa?"],
+    "choicesEnglish": ["Do you also have a fever?", "Do you have a stomachache?", "Do you need a prescription?", "Are you allergic to anything?"],
+    "correctAnswer": "Ha anche la febbre?",
+    "feedback": {
+      "correctItalian": "Corretto!",
+      "incorrectItalian": "No, significa 'Ha anche la febbre?'.",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No, it means 'Do you also have a fever?'."
+    }
+  },
+  {
+    "id": "s97-p6",
+    "italian": "Ne prenda una ogni otto ore.",
+    "english": "Take one every eight hours.",
+    "type": "phrase",
+    "choicesItalian": ["Ne prenda una ogni otto ore.", "Ne prenda due al giorno.", "Una volta alla settimana.", "Prima di dormire."],
+    "choicesEnglish": ["Take one every eight hours.", "Take two a day.", "Once a week.", "Before sleeping."],
+    "correctAnswer": "Ne prenda una ogni otto ore.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Ne prenda una ogni otto ore'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'Take one every eight hours'."
+    }
+  },
+  {
+    "id": "s97-p7",
+    "italian": "A stomaco pieno o vuoto?",
+    "english": "On a full or empty stomach?",
+    "type": "phrase",
+    "choicesItalian": ["A stomaco pieno o vuoto?", "Prima o dopo i pasti?", "Con acqua o senza?", "Mattina o sera?"],
+    "choicesEnglish": ["On a full or empty stomach?", "Before or after meals?", "With water or without?", "Morning or evening?"],
+    "correctAnswer": "A stomaco pieno o vuoto?",
+    "feedback": {
+      "correctItalian": "Bravissimo!",
+      "incorrectItalian": "No, significa 'A stomaco pieno o vuoto?'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'On a full or empty stomach?'."
+    }
+  },
+  {
+    "id": "s97-p8",
+    "italian": "È meglio a stomaco pieno.",
+    "english": "It's better on a full stomach.",
+    "type": "phrase",
+    "choicesItalian": ["È meglio a stomaco pieno.", "Prenda questa medicina.", "Non serve la ricetta.", "Le consiglio il generico."],
+    "choicesEnglish": ["It's better on a full stomach.", "Take this medicine.", "No prescription needed.", "I recommend the generic one."],
+    "correctAnswer": "È meglio a stomaco pieno.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'È meglio a stomaco pieno'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'It's better on a full stomach'."
+    }
+  },
+  {
+    "id": "s97-p9",
+    "italian": "Serve la ricetta medica?",
+    "english": "Do I need a prescription?",
+    "type": "phrase",
+    "choicesItalian": ["Serve la ricetta medica?", "Quanto costa questo?", "Posso pagare con carta?", "Avete il farmaco generico?"],
+    "choicesEnglish": ["Do I need a prescription?", "How much does this cost?", "Can I pay by card?", "Do you have the generic drug?"],
+    "correctAnswer": "Serve la ricetta medica?",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Serve la ricetta medica?'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'Do I need a prescription?'."
+    }
+  },
+  {
+    "id": "s97-p10",
+    "italian": "No, è un farmaco da banco.",
+    "english": "No, it's an over-the-counter drug.",
+    "type": "phrase",
+    "choicesItalian": ["No, è un farmaco da banco.", "Sì, serve la ricetta.", "Deve andare dal medico.", "Non abbiamo questo farmaco."],
+    "choicesEnglish": ["No, it's an over-the-counter drug.", "Yes, you need a prescription.", "You must go to the doctor.", "We don't have this drug."],
+    "correctAnswer": "No, è un farmaco da banco.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'No, è un farmaco da banco'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'No, it's an over-the-counter drug'."
+    }
+  },
+  {
+    "id": "s97-p11",
+    "italian": "Vorrei il farmaco generico.",
+    "english": "I would like the generic drug.",
+    "type": "phrase",
+    "choicesItalian": ["Vorrei il farmaco generico.", "Mi dia quello più caro.", "Preferisco la marca famosa.", "Non voglio il generico."],
+    "choicesEnglish": ["I would like the generic drug.", "Give me the most expensive one.", "I prefer the famous brand.", "I don't want the generic one."],
+    "correctAnswer": "Vorrei il farmaco generico.",
+    "feedback": {
+      "correctItalian": "Ben fatto!",
+      "incorrectItalian": "No, significa 'Vorrei il farmaco generico'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'I would like the generic drug'."
+    }
+  },
+  {
+    "id": "s97-p12",
+    "italian": "Costa meno del prodotto di marca.",
+    "english": "It costs less than the brand-name product.",
+    "type": "phrase",
+    "choicesItalian": ["Costa meno del prodotto di marca.", "È molto più efficace.", "Ha molti effetti collaterali.", "Non è disponibile."],
+    "choicesEnglish": ["It costs less than the brand-name product.", "It is much more effective.", "It has many side effects.", "It is not available."],
+    "correctAnswer": "Costa meno del prodotto di marca.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Costa meno del prodotto di marca'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'It costs less than the brand-name product'."
+    }
+  },
+  {
+    "id": "s97-p13",
+    "italian": "Ha delle controindicazioni?",
+    "english": "Does it have any contraindications?",
+    "type": "phrase",
+    "choicesItalian": ["Ha delle controindicazioni?", "È buono per i bambini?", "Quanto tempo dura?", "Come devo conservarlo?"],
+    "choicesEnglish": ["Does it have any contraindications?", "Is it good for children?", "How long does it last?", "How should I store it?"],
+    "correctAnswer": "Ha delle controindicazioni?",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Ha delle controindicazioni?'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'Does it have any contraindications?'."
+    }
+  },
+  {
+    "id": "s97-p14",
+    "italian": "Legga il foglietto illustrativo.",
+    "english": "Read the package leaflet.",
+    "type": "phrase",
+    "choicesItalian": ["Legga il foglietto illustrativo.", "Chieda al suo medico.", "Non si preoccupi.", "Lo prenda subito."],
+    "choicesEnglish": ["Read the package leaflet.", "Ask your doctor.", "Don't worry.", "Take it immediately."],
+    "correctAnswer": "Legga il foglietto illustrativo.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Legga il foglietto illustrativo'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'Read the package leaflet'."
+    }
+  },
+  {
+    "id": "s97-p15",
+    "italian": "Ho preso troppa pioggia.",
+    "english": "I got caught in too much rain.",
+    "type": "phrase",
+    "choicesItalian": ["Ho preso troppa pioggia.", "Ho preso troppo sole.", "Ho mangiato troppo.", "Ho dormito poco."],
+    "choicesEnglish": ["I got caught in too much rain.", "I got too much sun.", "I ate too much.", "I slept too little."],
+    "correctAnswer": "Ho preso troppa pioggia.",
+    "feedback": {
+      "correctItalian": "Bravissimo!",
+      "incorrectItalian": "No, significa 'Ho preso troppa pioggia'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'I got caught in too much rain'."
+    }
+  },
+  {
+    "id": "s97-p16",
+    "italian": "Mi serve uno spray nasale.",
+    "english": "I need a nasal spray.",
+    "type": "phrase",
+    "choicesItalian": ["Mi serve uno spray nasale.", "Mi serve uno sciroppo.", "Mi servono dei cerotti.", "Vorrei una crema."],
+    "choicesEnglish": ["I need a nasal spray.", "I need a syrup.", "I need some plasters.", "I'd like a cream."],
+    "correctAnswer": "Mi serve uno spray nasale.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Mi serve uno spray nasale'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'I need a nasal spray'."
+    }
+  },
+  {
+    "id": "s97-p17",
+    "italian": "Preferisce compresse o bustine?",
+    "english": "Do you prefer tablets or sachets?",
+    "type": "phrase",
+    "choicesItalian": ["Preferisce compresse o bustine?", "Vuole lo sciroppo o le gocce?", "Meglio la crema o il gel?", "Cerca un farmaco specifico?"],
+    "choicesEnglish": ["Do you prefer tablets or sachets?", "Do you want syrup or drops?", "Better the cream or the gel?", "Are you looking for a specific drug?"],
+    "correctAnswer": "Preferisce compresse o bustine?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Preferisce compresse o bustine?'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'Do you prefer tablets or sachets?'."
+    }
+  },
+  {
+    "id": "s97-p18",
+    "italian": "Prendo le bustine effervescenti.",
+    "english": "I'll take the effervescent sachets.",
+    "type": "phrase",
+    "choicesItalian": ["Prendo le bustine effervescenti.", "Prendo le capsule classiche.", "Preferisco lo sciroppo.", "Mi dia la crema."],
+    "choicesEnglish": ["I'll take the effervescent sachets.", "I'll take the classic capsules.", "I prefer the syrup.", "Give me the cream."],
+    "correctAnswer": "Prendo le bustine effervescenti.",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Prendo le bustine effervescenti'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'I'll take the effervescent sachets'."
+    }
+  },
+  {
+    "id": "s97-p19",
+    "italian": "Ecco a lei, sono dodici euro.",
+    "english": "Here you go, that's twelve euros.",
+    "type": "phrase",
+    "choicesItalian": ["Ecco a lei, sono dodici euro.", "Grazie, arrivederci.", "Quanto costa in tutto?", "Posso pagare con carta?"],
+    "choicesEnglish": ["Here you go, that's twelve euros.", "Thank you, goodbye.", "How much is it in total?", "Can I pay by card?"],
+    "correctAnswer": "Ecco a lei, sono dodici euro.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Ecco a lei, sono dodici euro'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'Here you go, that's twelve euros'."
+    }
+  },
+  {
+    "id": "s97-p20",
+    "italian": "Posso pagare con il bancomat?",
+    "english": "Can I pay with a debit card?",
+    "type": "phrase",
+    "choicesItalian": ["Posso pagare con il bancomat?", "Accettate solo contanti?", "Quanto costa questo?", "Dove posso prelevare?"],
+    "choicesEnglish": ["Can I pay with a debit card?", "Do you only accept cash?", "How much does this cost?", "Where can I withdraw money?"],
+    "correctAnswer": "Posso pagare con il bancomat?",
+    "feedback": {
+      "correctItalian": "Bravissimo!",
+      "incorrectItalian": "No, significa 'Posso pagare con il bancomat?'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'Can I pay with a debit card?'."
+    }
+  },
+  {
+    "id": "s97-p21",
+    "italian": "Sì, certo. Altro?",
+    "english": "Yes, of course. Anything else?",
+    "type": "phrase",
+    "choicesItalian": ["Sì, certo. Altro?", "No, grazie.", "Va bene così.", "Arrivederci."],
+    "choicesEnglish": ["Yes, of course. Anything else?", "No, thank you.", "It's fine as it is.", "Goodbye."],
+    "correctAnswer": "Sì, certo. Altro?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Sì, certo. Altro?'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'Yes, of course. Anything else?'."
+    }
+  },
+  {
+    "id": "s97-p22",
+    "italian": "No grazie, va bene così.",
+    "english": "No thanks, that's all.",
+    "type": "phrase",
+    "choicesItalian": ["No grazie, va bene così.", "Sì, mi serve altro.", "Quanto devo pagare?", "Prendo anche questo."],
+    "choicesEnglish": ["No thanks, that's all.", "Yes, I need something else.", "How much do I have to pay?", "I'll take this too."],
+    "correctAnswer": "No grazie, va bene così.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'No grazie, va bene così'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'No thanks, that's all'."
+    }
+  },
+  {
+    "id": "s97-p23",
+    "italian": "Ecco lo scontrino.",
+    "english": "Here is the receipt.",
+    "type": "phrase",
+    "choicesItalian": ["Ecco lo scontrino.", "Ecco il resto.", "Prego, torni presto.", "Buona giornata."],
+    "choicesEnglish": ["Here is the receipt.", "Here is the change.", "You're welcome, come back soon.", "Have a nice day."],
+    "correctAnswer": "Ecco lo scontrino.",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Ecco lo scontrino'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'Here is the receipt'."
+    }
+  },
+  {
+    "id": "s97-p24",
+    "italian": "Arrivederci e buona giornata.",
+    "english": "Goodbye and have a nice day.",
+    "type": "phrase",
+    "choicesItalian": ["Arrivederci e buona giornata.", "A presto.", "Buonasera.", "Buonanotte."],
+    "choicesEnglish": ["Goodbye and have a nice day.", "See you soon.", "Good evening.", "Good night."],
+    "correctAnswer": "Arrivederci e buona giornata.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Arrivederci e buona giornata'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'Goodbye and have a nice day'."
+    }
+  },
+  {
+    "id": "s97-p25",
+    "italian": "Ho una scottatura sulle spalle.",
+    "english": "I have a sunburn on my shoulders.",
+    "type": "phrase",
+    "choicesItalian": ["Ho una scottatura sulle spalle.", "Ho mal di schiena.", "Mi sono tagliato un dito.", "Ho un livido sulla gamba."],
+    "choicesEnglish": ["I have a sunburn on my shoulders.", "I have back pain.", "I cut a finger.", "I have a bruise on my leg."],
+    "correctAnswer": "Ho una scottatura sulle spalle.",
+    "feedback": {
+      "correctItalian": "Bravissimo!",
+      "incorrectItalian": "No, significa 'Ho una scottatura sulle spalle'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'I have a sunburn on my shoulders'."
+    }
+  },
+  {
+    "id": "s97-p26",
+    "italian": "Le consiglio questo gel all'aloe.",
+    "english": "I recommend this aloe gel.",
+    "type": "phrase",
+    "choicesItalian": ["Le consiglio questo gel all'aloe.", "Metta questa crema solare.", "Prenda un'aspirina.", "Usi del disinfettante."],
+    "choicesEnglish": ["I recommend this aloe gel.", "Put on this sunscreen.", "Take an aspirin.", "Use some disinfectant."],
+    "correctAnswer": "Le consiglio questo gel all'aloe.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Le consiglio questo gel all'aloe'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'I recommend this aloe gel'."
+    }
+  },
+  {
+    "id": "s97-p27",
+    "italian": "È rinfrescante e naturale.",
+    "english": "It's refreshing and natural.",
+    "type": "phrase",
+    "choicesItalian": ["È rinfrescante e naturale.", "È molto forte.", "È un prodotto chimico.", "Costa molto."],
+    "choicesEnglish": ["It's refreshing and natural.", "It's very strong.", "It's a chemical product.", "It costs a lot."],
+    "correctAnswer": "È rinfrescante e naturale.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'È rinfrescante e naturale'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'It's refreshing and natural'."
+    }
+  },
+  {
+    "id": "s97-p28",
+    "italian": "Va bene anche per i bambini?",
+    "english": "Is it okay for children too?",
+    "type": "phrase",
+    "choicesItalian": ["Va bene anche per i bambini?", "Posso usarlo sugli occhi?", "È adatto agli anziani?", "Va bene per le donne incinte?"],
+    "choicesEnglish": ["Is it okay for children too?", "Can I use it on the eyes?", "Is it suitable for the elderly?", "Is it okay for pregnant women?"],
+    "correctAnswer": "Va bene anche per i bambini?",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Va bene anche per i bambini?'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'Is it okay for children too?'."
+    }
+  },
+  {
+    "id": "s97-p29",
+    "italian": "Sì, non ci sono problemi.",
+    "english": "Yes, there are no problems.",
+    "type": "phrase",
+    "choicesItalian": ["Sì, non ci sono problemi.", "No, è pericoloso.", "Meglio chiedere al pediatra.", "Solo per adulti."],
+    "choicesEnglish": ["Yes, there are no problems.", "No, it is dangerous.", "Better to ask the pediatrician.", "Only for adults."],
+    "correctAnswer": "Sì, non ci sono problemi.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Sì, non ci sono problemi'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'Yes, there are no problems'."
+    }
+  },
+  {
+    "id": "s97-p30",
+    "italian": "Mi fa male lo stomaco.",
+    "english": "My stomach hurts.",
+    "type": "phrase",
+    "choicesItalian": ["Mi fa male lo stomaco.", "Ho fame.", "Ho mangiato bene.", "Mi fa male la testa."],
+    "choicesEnglish": ["My stomach hurts.", "I am hungry.", "I ate well.", "My head hurts."],
+    "correctAnswer": "Mi fa male lo stomaco.",
+    "feedback": {
+      "correctItalian": "Ben fatto!",
+      "incorrectItalian": "No, significa 'Mi fa male lo stomaco'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'My stomach hurts'."
+    }
+  },
+  {
+    "id": "s97-p31",
+    "italian": "Ha mangiato qualcosa di pesante?",
+    "english": "Did you eat something heavy?",
+    "type": "phrase",
+    "choicesItalian": ["Ha mangiato qualcosa di pesante?", "Ha fame?", "Le piace cucinare?", "Vuole un caffè?"],
+    "choicesEnglish": ["Did you eat something heavy?", "Are you hungry?", "Do you like cooking?", "Do you want a coffee?"],
+    "correctAnswer": "Ha mangiato qualcosa di pesante?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Ha mangiato qualcosa di pesante?'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'Did you eat something heavy?'."
+    }
+  },
+  {
+    "id": "s97-p32",
+    "italian": "Forse i funghi ieri sera.",
+    "english": "Maybe the mushrooms last night.",
+    "type": "phrase",
+    "choicesItalian": ["Forse i funghi ieri sera.", "Non ho mangiato nulla.", "Solo un po' di pasta.", "Ho bevuto troppa acqua."],
+    "choicesEnglish": ["Maybe the mushrooms last night.", "I didn't eat anything.", "Just some pasta.", "I drank too much water."],
+    "correctAnswer": "Forse i funghi ieri sera.",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Forse i funghi ieri sera'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'Maybe the mushrooms last night'."
+    }
+  },
+  {
+    "id": "s97-p33",
+    "italian": "Prenda questo digestivo.",
+    "english": "Take this digestive aid.",
+    "type": "phrase",
+    "choicesItalian": ["Prenda questo digestivo.", "Beve molta acqua.", "Vada a correre.", "Non mangi più."],
+    "choicesEnglish": ["Take this digestive aid.", "Drink a lot of water.", "Go for a run.", "Don't eat anymore."],
+    "correctAnswer": "Prenda questo digestivo.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Prenda questo digestivo'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'Take this digestive aid'."
+    }
+  },
+  {
+    "id": "s97-p34",
+    "italian": "Sciolga una bustina in acqua.",
+    "english": "Dissolve one sachet in water.",
+    "type": "phrase",
+    "choicesItalian": ["Sciolga una bustina in acqua.", "Mandi giù la pillola.", "Applichi la crema.", "Usi lo spray."],
+    "choicesEnglish": ["Dissolve one sachet in water.", "Swallow the pill.", "Apply the cream.", "Use the spray."],
+    "correctAnswer": "Sciolga una bustina in acqua.",
+    "feedback": {
+      "correctItalian": "Bravissimo!",
+      "incorrectItalian": "No, significa 'Sciolga una bustina in acqua'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'Dissolve one sachet in water'."
+    }
+  },
+  {
+    "id": "s97-p35",
+    "italian": "Mi sento tutto bagnato.",
+    "english": "I feel all wet.",
+    "type": "phrase",
+    "choicesItalian": ["Mi sento tutto bagnato.", "Ho caldo.", "Mi sento stanco.", "Ho freddo."],
+    "choicesEnglish": ["I feel all wet.", "I am hot.", "I feel tired.", "I am cold."],
+    "correctAnswer": "Mi sento tutto bagnato.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Mi sento tutto bagnato'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'I feel all wet'."
+    }
+  },
+  {
+    "id": "s97-p36",
+    "italian": "Deve cambiarsi subito.",
+    "english": "You must change clothes immediately.",
+    "type": "phrase",
+    "choicesItalian": ["Deve cambiarsi subito.", "Resti così.", "Vada fuori.", "Non faccia nulla."],
+    "choicesEnglish": ["You must change clothes immediately.", "Stay like that.", "Go outside.", "Do nothing."],
+    "correctAnswer": "Deve cambiarsi subito.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Deve cambiarsi subito'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'You must change clothes immediately'."
+    }
+  },
+  {
+    "id": "s97-p37",
+    "italian": "Ho anche i brividi.",
+    "english": "I also have the chills.",
+    "type": "phrase",
+    "choicesItalian": ["Ho anche i brividi.", "Ho sudore freddo.", "Mi sento bene.", "Sono molto felice."],
+    "choicesEnglish": ["I also have the chills.", "I have a cold sweat.", "I feel good.", "I am very happy."],
+    "correctAnswer": "Ho anche i brividi.",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Ho anche i brividi'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'I also have the chills'."
+    }
+  },
+  {
+    "id": "s97-p38",
+    "italian": "Controlli la temperatura.",
+    "english": "Check your temperature.",
+    "type": "phrase",
+    "choicesItalian": ["Controlli la temperatura.", "Guardi l'ora.", "Mangi qualcosa.", "Beve un tè."],
+    "choicesEnglish": ["Check your temperature.", "Look at the time.", "Eat something.", "Drink a tea."],
+    "correctAnswer": "Controlli la temperatura.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Controlli la temperatura'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'Check your temperature'."
+    }
+  },
+  {
+    "id": "s97-p39",
+    "italian": "Ho trentotto di febbre.",
+    "english": "I have a fever of thirty-eight.",
+    "type": "phrase",
+    "choicesItalian": ["Ho trentotto di febbre.", "Ho trentasei di febbre.", "Non ho la febbre.", "La febbre è passata."],
+    "choicesEnglish": ["I have a fever of thirty-eight.", "I have a fever of thirty-six.", "I don't have a fever.", "The fever is gone."],
+    "correctAnswer": "Ho trentotto di febbre.",
+    "feedback": {
+      "correctItalian": "Ben fatto!",
+      "incorrectItalian": "No, significa 'Ho trentotto di febbre'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'I have a fever of thirty-eight'."
+    }
+  },
+  {
+    "id": "s97-p40",
+    "italian": "Prenda un antipiretico.",
+    "english": "Take an antipyretic (fever reducer).",
+    "type": "phrase",
+    "choicesItalian": ["Prenda un antipiretico.", "Prenda una vitamina.", "Usi un cerotto.", "Mangi una mela."],
+    "choicesEnglish": ["Take an antipyretic.", "Take a vitamin.", "Use a plaster.", "Eat an apple."],
+    "correctAnswer": "Prenda un antipiretico.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Prenda un antipiretico'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'Take a fever reducer'."
+    }
+  },
+  {
+    "id": "s97-p41",
+    "italian": "Mi prude la pelle.",
+    "english": "My skin is itchy.",
+    "type": "phrase",
+    "choicesItalian": ["Mi prude la pelle.", "Ho la pelle secca.", "Ho la pelle rossa.", "Mi fa male la pelle."],
+    "choicesEnglish": ["My skin is itchy.", "I have dry skin.", "I have red skin.", "My skin hurts."],
+    "correctAnswer": "Mi prude la pelle.",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Mi prude la pelle'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'My skin is itchy'."
+    }
+  },
+  {
+    "id": "s97-p42",
+    "italian": "È un'allergia stagionale?",
+    "english": "Is it a seasonal allergy?",
+    "type": "phrase",
+    "choicesItalian": ["È un'allergia stagionale?", "È un'allergia alimentare?", "È un raffreddore?", "È un'infezione?"],
+    "choicesEnglish": ["Is it a seasonal allergy?", "Is it a food allergy?", "Is it a cold?", "Is it an infection?"],
+    "correctAnswer": "È un'allergia stagionale?",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'È un'allergia stagionale?'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'Is it a seasonal allergy?'."
+    }
+  },
+  {
+    "id": "s97-p43",
+    "italian": "Credo di sì, c'è molto polline.",
+    "english": "I think so, there is a lot of pollen.",
+    "type": "phrase",
+    "choicesItalian": ["Credo di sì, c'è molto polline.", "No, non credo.", "Forse è la polvere.", "Non lo so proprio."],
+    "choicesEnglish": ["I think so, there is a lot of pollen.", "No, I don't think so.", "Maybe it's the dust.", "I really don't know."],
+    "correctAnswer": "Credo di sì, c'è molto polline.",
+    "feedback": {
+      "correctItalian": "Bravissimo!",
+      "incorrectItalian": "No, significa 'Credo di sì, c'è molto polline'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'I think so, there is a lot of pollen'."
+    }
+  },
+  {
+    "id": "s97-p44",
+    "italian": "Le serve un antistaminico.",
+    "english": "You need an antihistamine.",
+    "type": "phrase",
+    "choicesItalian": ["Le serve un antistaminico.", "Le serve un antibiotico.", "Le serve un cerotto.", "Le serve una crema."],
+    "choicesEnglish": ["You need an antihistamine.", "You need an antibiotic.", "You need a plaster.", "You need a cream."],
+    "correctAnswer": "Le serve un antistaminico.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Le serve un antistaminico'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'You need an antihistamine'."
+    }
+  },
+  {
+    "id": "s97-p45",
+    "italian": "Quante compresse al giorno?",
+    "english": "How many tablets a day?",
+    "type": "phrase",
+    "choicesItalian": ["Quante compresse al giorno?", "Quante gocce?", "Quanto sciroppo?", "Quante volte?"],
+    "choicesEnglish": ["How many tablets a day?", "How many drops?", "How much syrup?", "How many times?"],
+    "correctAnswer": "Quante compresse al giorno?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Quante compresse al giorno?'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'How many tablets a day?'."
+    }
+  },
+  {
+    "id": "s97-p46",
+    "italian": "Basta una sola al mattino.",
+    "english": "Just one in the morning.",
+    "type": "phrase",
+    "choicesItalian": ["Basta una sola al mattino.", "Due alla sera.", "Tre volte al giorno.", "Ogni quattro ore."],
+    "choicesEnglish": ["Just one in the morning.", "Two in the evening.", "Three times a day.", "Every four hours."],
+    "correctAnswer": "Basta una sola al mattino.",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Basta una sola al mattino'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'Just one in the morning'."
+    }
+  },
+  {
+    "id": "s97-p47",
+    "italian": "Porti pazienza, passerà.",
+    "english": "Be patient, it will pass.",
+    "type": "phrase",
+    "choicesItalian": ["Porti pazienza, passerà.", "Vada subito in ospedale.", "Non c'è cura.", "Si senta meglio."],
+    "choicesEnglish": ["Be patient, it will pass.", "Go to the hospital immediately.", "There is no cure.", "Feel better."],
+    "correctAnswer": "Porti pazienza, passerà.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Porti pazienza, passerà'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'Be patient, it will pass'."
+    }
+  },
+  {
+    "id": "s97-p48",
+    "italian": "Speriamo bene, grazie.",
+    "english": "Let's hope so, thank you.",
+    "type": "phrase",
+    "choicesItalian": ["Speriamo bene, grazie.", "Non credo.", "Sono preoccupato.", "Va bene."],
+    "choicesEnglish": ["Let's hope so, thank you.", "I don't think so.", "I'm worried.", "Okay."],
+    "correctAnswer": "Speriamo bene, grazie.",
+    "feedback": {
+      "correctItalian": "Ben fatto!",
+      "incorrectItalian": "No, significa 'Speriamo bene, grazie'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'Let's hope so, thank you'."
+    }
+  },
+  {
+    "id": "s97-p49",
+    "italian": "Mi serve del disinfettante.",
+    "english": "I need some disinfectant.",
+    "type": "phrase",
+    "choicesItalian": ["Mi serve del disinfettante.", "Mi serve del sapone.", "Mi serve dell'alcol.", "Mi serve dell'acqua."],
+    "choicesEnglish": ["I need some disinfectant.", "I need some soap.", "I need some alcohol.", "I need some water."],
+    "correctAnswer": "Mi serve del disinfettante.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Mi serve del disinfettante'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'I need some disinfectant'."
+    }
+  },
+  {
+    "id": "s97-p50",
+    "italian": "E anche dei cerotti, per favore.",
+    "english": "And some plasters too, please.",
+    "type": "phrase",
+    "choicesItalian": ["E anche dei cerotti, per favore.", "E delle bende.", "E della garza.", "E del cotone."],
+    "choicesEnglish": ["And some plasters too, please.", "And some bandages.", "And some gauze.", "And some cotton."],
+    "correctAnswer": "E anche dei cerotti, per favore.",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'E anche dei cerotti, per favore'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'And some plasters too, please'."
+    }
+  },
+  {
+    "id": "s97-p51",
+    "italian": "Grandi o piccoli?",
+    "english": "Large or small?",
+    "type": "phrase",
+    "choicesItalian": ["Grandi o piccoli?", "Rossi o blu?", "Tanti o pochi?", "Nuovi o vecchi?"],
+    "choicesEnglish": ["Large or small?", "Red or blue?", "Many or few?", "New or old?"],
+    "correctAnswer": "Grandi o piccoli?",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Grandi o piccoli?'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'Large or small?'."
+    }
+  },
+  {
+    "id": "s97-p52",
+    "italian": "Una scatola mista va bene.",
+    "english": "A mixed box is fine.",
+    "type": "phrase",
+    "choicesItalian": ["Una scatola mista va bene.", "Solo quelli grandi.", "Solo quelli piccoli.", "Non lo so."],
+    "choicesEnglish": ["A mixed box is fine.", "Only the large ones.", "Only the small ones.", "I don't know."],
+    "correctAnswer": "Una scatola mista va bene.",
+    "feedback": {
+      "correctItalian": "Bravissimo!",
+      "incorrectItalian": "No, significa 'Una scatola mista va bene'.",
+      "correctEnglish": "Well done!",
+      "incorrectEnglish": "No, it means 'A mixed box is fine'."
+    }
+  },
+  {
+    "id": "s97-p53",
+    "italian": "Va bene, ecco a lei.",
+    "english": "Alright, here you go.",
+    "type": "phrase",
+    "choicesItalian": ["Va bene, ecco a lei.", "Prego, arrivederci.", "Quanto costa?", "Altro?"],
+    "choicesEnglish": ["Alright, here you go.", "You're welcome, goodbye.", "How much does it cost?", "Anything else?"],
+    "correctAnswer": "Va bene, ecco a lei.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Va bene, ecco a lei'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'Alright, here you go'."
+    }
+  },
+  {
+    "id": "s97-p54",
+    "italian": "Quanto le devo?",
+    "english": "How much do I owe you?",
+    "type": "phrase",
+    "choicesItalian": ["Quanto le devo?", "Quanto costa?", "Qual è il prezzo?", "Quanto pago?"],
+    "choicesEnglish": ["How much do I owe you?", "How much does it cost?", "What is the price?", "How much do I pay?"],
+    "correctAnswer": "Quanto le devo?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Quanto le devo?'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'How much do I owe you?'."
+    }
+  },
+  {
+    "id": "s97-p55",
+    "italian": "Sono otto euro e cinquanta.",
+    "english": "It's eight euros and fifty cents.",
+    "type": "phrase",
+    "choicesItalian": ["Sono otto euro e cinquanta.", "Sono dieci euro.", "Costa cinque euro.", "Nove euro."],
+    "choicesEnglish": ["It's eight euros and fifty cents.", "It's ten euros.", "It costs five euros.", "Nine euros."],
+    "correctAnswer": "Sono otto euro e cinquanta.",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Sono otto euro e cinquanta'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'It's eight euros and fifty cents'."
     }
   }
 ]
