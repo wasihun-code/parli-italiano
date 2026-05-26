@@ -1,212 +1,392 @@
 [
   {
-    "id": "s22-s01",
-    "italian": "Ciao, sono appena arrivato e sono davanti al palazzo.",
-    "english": "Hi, I just arrived and I'm in front of the building.",
+    "id": "s22-s1",
+    "italian": "Pronto? Sono davanti al palazzo ma il portone è chiuso.",
+    "english": "Hello? I'm in front of the building but the main door is closed.",
     "type": "sentence",
-    "choicesItalian": ["Ciao, sono appena arrivato e sono davanti al palazzo.", "Buongiorno, sto partendo dall'appartamento ora.", "Salve, non trovo l'indirizzo del palazzo.", "Ciao, sono al bar qui accanto."],
-    "choicesEnglish": ["Hi, I just arrived and I'm in front of the building.", "Good morning, I'm leaving the apartment now.", "Hello, I can't find the building's address.", "Hi, I'm at the café next door."],
-    "correctAnswerItalian": "Ciao, sono appena arrivato e sono davanti al palazzo.",
-    "correctAnswerEnglish": "Hi, I just arrived and I'm in front of the building.",
+    "choicesItalian": [
+      "C'è un ingresso secondario dietro il palazzo, nel cortile.",
+      "Niente da fare, non si muove. Puoi venire ad aiutarmi?",
+      "Pronto? Sono davanti al palazzo ma il portone è chiuso.",
+      "Ah, finalmente sono dentro! Che fatica con queste chiavi."
+    ],
+    "choicesEnglish": [
+      "There is a secondary entrance behind the building, in the courtyard.",
+      "Nothing to do, it won't move. Can you come help me?",
+      "Hello? I'm in front of the building but the main door is closed.",
+      "Ah, finally I'm in! What a struggle with these keys."
+    ],
+    "correctAnswerItalian": "Pronto? Sono davanti al palazzo ma il portone è chiuso.",
+    "correctAnswerEnglish": "Hello? I'm in front of the building but the main door is closed.",
     "feedback": {
-      "correct": "Ottimo! Hai avvisato l'host del tuo arrivo. / Great! You notified the host of your arrival.",
-      "incorrect": "Ops! La frase corretta indicava l'arrivo davanti al palazzo. / Oops! The correct sentence indicated arrival in front of the building."
+      "correctItalian": "Esatto! Urgent report.",
+      "incorrectItalian": "No, 'Pronto? Sono davanti al palazzo ma il portone è chiuso.' significa urgent report.",
+      "correctEnglish": "Correct! Hello? I'm in front of the building but the main door is closed. refers to Pronto? Sono davanti al palazzo ma il portone è chiuso..",
+      "incorrectEnglish": "No, the correct word is Hello? I'm in front of the building but the main door is closed.."
     }
   },
   {
-    "id": "s22-s02",
-    "italian": "Il portone è chiuso e non ho il codice per entrare.",
-    "english": "The main door is closed and I don't have the code to enter.",
+    "id": "s22-s2",
+    "italian": "Hai guardato le istruzioni sulla piattaforma?",
+    "english": "Did you look at the instructions on the platform?",
     "type": "sentence",
-    "choicesItalian": ["Il portone è chiuso e non ho il codice per entrare.", "La porta è aperta ma non trovo le chiavi.", "Il cancello è bloccato e serve una chiave.", "Il citofono non funziona, come entro?"],
-    "choicesEnglish": ["The main door is closed and I don't have the code to enter.", "The door is open but I can't find the keys.", "The gate is blocked and a key is needed.", "The intercom doesn't work, how do I enter?"],
-    "correctAnswerItalian": "Il portone è chiuso e non ho il codice per entrare.",
-    "correctAnswerEnglish": "The main door is closed and I don't have the code to enter.",
+    "choicesItalian": [
+      "Dentro troverai un foglio con tutte le informazioni utili.",
+      "A quale nome devo suonare sul citofono?",
+      "Ho suonato a tutti i nomi ma non risponde nessuno.",
+      "Hai guardato le istruzioni sulla piattaforma?"
+    ],
+    "choicesEnglish": [
+      "Inside you will find a sheet with all the useful information.",
+      "Which name should I ring on the intercom?",
+      "I rang all the names but nobody answers.",
+      "Did you look at the instructions on the platform?"
+    ],
+    "correctAnswerItalian": "Hai guardato le istruzioni sulla piattaforma?",
+    "correctAnswerEnglish": "Did you look at the instructions on the platform?",
     "feedback": {
-      "correct": "Bravo! Stai spiegando il problema chiaramente. / Well done! You are explaining the problem clearly.",
-      "incorrect": "Riprova! Mancava il codice per il portone chiuso. / Try again! The code for the closed main door was missing."
+      "correctItalian": "Esatto! Host question.",
+      "incorrectItalian": "No, 'Hai guardato le istruzioni sulla piattaforma?' significa host question.",
+      "correctEnglish": "Correct! Did you look at the instructions on the platform? refers to Hai guardato le istruzioni sulla piattaforma?.",
+      "incorrectEnglish": "No, the correct word is Did you look at the instructions on the platform?."
     }
   },
   {
-    "id": "s22-s03",
-    "italian": "Hai guardato il messaggio sulla piattaforma con le istruzioni?",
-    "english": "Have you looked at the message on the platform with the instructions?",
-    "type": "sentence",
-    "choicesItalian": ["Hai guardato il messaggio sulla piattaforma con le istruzioni?", "Ti ho mandato un'email stamattina, l'hai letta?", "Le istruzioni sono scritte dietro la porta.", "Controlla la posta elettronica per il codice."],
-    "choicesEnglish": ["Have you looked at the message on the platform with the instructions?", "I sent you an email this morning, did you read it?", "The instructions are written behind the door.", "Check your email for the code."],
-    "correctAnswerItalian": "Hai guardato il messaggio sulla piattaforma con le istruzioni?",
-    "correctAnswerEnglish": "Have you looked at the message on the platform with the instructions?",
-    "feedback": {
-      "correct": "Eccellente! Spesso le informazioni sono già inviate. / Excellent! Often the information is already sent.",
-      "incorrect": "Sbagliato! L'host suggeriva di guardare i messaggi sulla piattaforma. / Wrong! The host suggested looking at the messages on the platform."
-    }
-  },
-  {
-    "id": "s22-s04",
-    "italian": "Trovo solo l'indirizzo e l'orario di arrivo nei messaggi.",
-    "english": "I only find the address and arrival time in the messages.",
-    "type": "sentence",
-    "choicesItalian": ["Trovo solo l'indirizzo e l'orario di arrivo nei messaggi.", "C'è scritto tutto tranne il numero civico.", "Il codice non c'è, ho cercato ovunque.", "Vedo solo le regole della casa."],
-    "choicesEnglish": ["I only find the address and arrival time in the messages.", "Everything is written except the street number.", "The code isn't there, I looked everywhere.", "I only see the house rules."],
-    "correctAnswerItalian": "Trovo solo l'indirizzo e l'orario di arrivo nei messaggi.",
-    "correctAnswerEnglish": "I only find the address and arrival time in the messages.",
-    "feedback": {
-      "correct": "Molto bene! Stai confermando cosa vedi. / Very well! You are confirming what you see.",
-      "incorrect": "Riprova! Mancavano informazioni importanti nei messaggi. / Try again! Important information was missing in the messages."
-    }
-  },
-  {
-    "id": "s22-s05",
+    "id": "s22-s3",
     "italian": "Il codice è 4832, poi premi il tasto con la chiave.",
-    "english": "The code is 4832, then press the key button.",
+    "english": "The code is 4832, then press the button with the key.",
     "type": "sentence",
-    "choicesItalian": ["Il codice è 4832, poi premi il tasto con la chiave.", "Digita 1122 e spingi il portone forte.", "Metti il codice 7788 nella cassetta grigia.", "Suona al citofono e ti apro io."],
-    "choicesEnglish": ["The code is 4832, then press the key button.", "Type 1122 and push the main door hard.", "Put the code 7788 in the gray lockbox.", "Ring the intercom and I'll open for you."],
+    "choicesItalian": [
+      "Sali al secondo piano, l'appartamento è il numero 7.",
+      "La serratura è antica e bisogna avere un po' di pazienza.",
+      "Se non riesci a entrare, chiamami che scendo subito.",
+      "Il codice è 4832, poi premi il tasto con la chiave."
+    ],
+    "choicesEnglish": [
+      "Go up to the second floor, the apartment is number 7.",
+      "The lock is ancient and you need to have a bit of patience.",
+      "If you can't get in, call me and I'll come down immediately.",
+      "The code is 4832, then press the button with the key."
+    ],
     "correctAnswerItalian": "Il codice è 4832, poi premi il tasto con la chiave.",
-    "correctAnswerEnglish": "The code is 4832, then press the key button.",
+    "correctAnswerEnglish": "The code is 4832, then press the button with the key.",
     "feedback": {
-      "correct": "Perfetto! Hai ricevuto le istruzioni numeriche. / Perfect! You received numerical instructions.",
-      "incorrect": "Ops! Il codice era differente. / Oops! The code was different."
+      "correctItalian": "Esatto! Step-by-step guide.",
+      "incorrectItalian": "No, 'Il codice è 4832, poi premi il tasto con la chiave.' significa step-by-step guide.",
+      "correctEnglish": "Correct! The code is 4832, then press the button with the key. refers to Il codice è 4832, poi premi il tasto con la chiave..",
+      "incorrectEnglish": "No, the correct word is The code is 4832, then press the button with the key.."
     }
   },
   {
-    "id": "s22-s06",
-    "italian": "Ha funzionato, il portone si è aperto grazie.",
-    "english": "It worked, the main door opened thanks.",
+    "id": "s22-s4",
+    "italian": "L'ascensore è in fondo a sinistra, sali al terzo piano.",
+    "english": "The elevator is at the end on the left, go up to the third floor.",
     "type": "sentence",
-    "choicesItalian": ["Ha funzionato, il portone si è aperto grazie.", "Niente da fare, il codice è sbagliato.", "La porta è ancora chiusa, cosa faccio?", "Sono entrato nel cortile ora."],
-    "choicesEnglish": ["It worked, the main door opened thanks.", "Nothing to do, the code is wrong.", "The door is still closed, what do I do?", "I entered the courtyard now."],
-    "correctAnswerItalian": "Ha funzionato, il portone si è aperto grazie.",
-    "correctAnswerEnglish": "It worked, the main door opened thanks.",
+    "choicesItalian": [
+      "La chiave gira ma la porta non si apre, cosa faccio?",
+      "Posso avere un altro asciugamano per la doccia?",
+      "L'ascensore è in fondo a sinistra, sali al terzo piano.",
+      "Se hai bisogno di lasciare le valigie, fammi sapere."
+    ],
+    "choicesEnglish": [
+      "The key turns but the door doesn't open, what do I do?",
+      "Can I have another towel for the shower?",
+      "The elevator is at the end on the left, go up to the third floor.",
+      "If you need to leave your luggage, let me know."
+    ],
+    "correctAnswerItalian": "L'ascensore è in fondo a sinistra, sali al terzo piano.",
+    "correctAnswerEnglish": "The elevator is at the end on the left, go up to the third floor.",
     "feedback": {
-      "correct": "Bravo! Sei riuscito a entrare nel palazzo. / Well done! You managed to enter the building.",
-      "incorrect": "Riprova! La frase confermava il successo. / Try again! The sentence confirmed success."
+      "correctItalian": "Esatto! Navigation.",
+      "incorrectItalian": "No, 'L'ascensore è in fondo a sinistra, sali al terzo piano.' significa navigation.",
+      "correctEnglish": "Correct! The elevator is at the end on the left, go up to the third floor. refers to L'ascensore è in fondo a sinistra, sali al terzo piano..",
+      "incorrectEnglish": "No, the correct word is The elevator is at the end on the left, go up to the third floor.."
     }
   },
   {
-    "id": "s22-s07",
-    "italian": "Sali al terzo piano, la porta dell'appartamento è la B.",
-    "english": "Go up to the third floor, the apartment door is B.",
+    "id": "s22-s5",
+    "italian": "Sulla porta c'è una cassetta di sicurezza grigia.",
+    "english": "On the door there is a gray lockbox.",
     "type": "sentence",
-    "choicesItalian": ["Sali al terzo piano, la porta dell'appartamento è la B.", "L'appartamento è al primo piano, porta numero 5.", "Prendi l'ascensore fino all'ultimo piano.", "La porta è subito a sinistra dell'ingresso."],
-    "choicesEnglish": ["Go up to the third floor, the apartment door is B.", "The apartment is on the first floor, door number 5.", "Take the elevator to the top floor.", "The door is immediately to the left of the entrance."],
-    "correctAnswerItalian": "Sali al terzo piano, la porta dell'appartamento è la B.",
-    "correctAnswerEnglish": "Go up to the third floor, the apartment door is B.",
+    "choicesItalian": [
+      "Sulla porta c'è una cassetta di sicurezza grigia.",
+      "Questa chiave è per il portone, questa per l'appartamento.",
+      "Vai al bar accanto, ti raggiungo tra dieci minuti.",
+      "Imposta il termostato a 20 gradi, non di più."
+    ],
+    "choicesEnglish": [
+      "On the door there is a gray lockbox.",
+      "This key is for the main door, this one for the apartment.",
+      "Go to the bar next door, I'll reach you in ten minutes.",
+      "Set the thermostat to 20 degrees, no more."
+    ],
+    "correctAnswerItalian": "Sulla porta c'è una cassetta di sicurezza grigia.",
+    "correctAnswerEnglish": "On the door there is a gray lockbox.",
     "feedback": {
-      "correct": "Ottimo! Hai le indicazioni per trovare la porta. / Great! You have directions to find the door.",
-      "incorrect": "Sbagliato! Il piano era il terzo e la porta la B. / Wrong! The floor was the third and the door was B."
+      "correctItalian": "Esatto! Visual landmark.",
+      "incorrectItalian": "No, 'Sulla porta c'è una cassetta di sicurezza grigia.' significa visual landmark.",
+      "correctEnglish": "Correct! On the door there is a gray lockbox. refers to Sulla porta c'è una cassetta di sicurezza grigia..",
+      "incorrectEnglish": "No, the correct word is On the door there is a gray lockbox.."
     }
   },
   {
-    "id": "s22-s08",
-    "italian": "C'è una cassetta di sicurezza grigia con le chiavi sulla porta.",
-    "english": "There is a gray lockbox with the keys on the door.",
+    "id": "s22-s6",
+    "italian": "Ruota i numeri, allinea il codice e poi tira la levetta.",
+    "english": "Rotate the numbers, align the code and then pull the lever.",
     "type": "sentence",
-    "choicesItalian": ["C'è una cassetta di sicurezza grigia con le chiavi sulla porta.", "Le chiavi sono sotto lo zerbino all'ingresso.", "Troverai una busta con il tuo nome vicino all'ascensore.", "La cassetta delle lettere è piena di pubblicità."],
-    "choicesEnglish": ["There is a gray lockbox with the keys on the door.", "The keys are under the doormat at the entrance.", "You will find an envelope with your name near the elevator.", "The mailbox is full of advertisements."],
-    "correctAnswerItalian": "C'è una cassetta di sicurezza grigia con le chiavi sulla porta.",
-    "correctAnswerEnglish": "There is a gray lockbox with the keys on the door.",
+    "choicesItalian": [
+      "Il codice è 4832, poi premi il tasto con la chiave.",
+      "A quale nome devo suonare sul citofono?",
+      "Ruota i numeri, allinea il codice e poi tira la levetta.",
+      "Se non riesci a entrare, chiamami che scendo subito."
+    ],
+    "choicesEnglish": [
+      "The code is 4832, then press the button with the key.",
+      "Which name should I ring on the intercom?",
+      "Rotate the numbers, align the code and then pull the lever.",
+      "If you can't get in, call me and I'll come down immediately."
+    ],
+    "correctAnswerItalian": "Ruota i numeri, allinea il codice e poi tira la levetta.",
+    "correctAnswerEnglish": "Rotate the numbers, align the code and then pull the lever.",
     "feedback": {
-      "correct": "Eccellente! La cassetta grigia è il tuo obiettivo. / Excellent! The gray box is your target.",
-      "incorrect": "Ops! Cercavi la cassetta di sicurezza grigia. / Oops! You were looking for the gray lockbox."
+      "correctItalian": "Esatto! Action sequence.",
+      "incorrectItalian": "No, 'Ruota i numeri, allinea il codice e poi tira la levetta.' significa action sequence.",
+      "correctEnglish": "Correct! Rotate the numbers, align the code and then pull the lever. refers to Ruota i numeri, allinea il codice e poi tira la levetta..",
+      "incorrectEnglish": "No, the correct word is Rotate the numbers, align the code and then pull the lever.."
     }
   },
   {
-    "id": "s22-s09",
-    "italian": "Il codice della cassetta è 7788, ruota i numeri.",
-    "english": "The lockbox code is 7788, turn the numbers.",
+    "id": "s22-s7",
+    "italian": "A volte è un po' dura, ma con calma si apre.",
+    "english": "Sometimes it's a bit hard, but it opens if you're calm.",
     "type": "sentence",
-    "choicesItalian": ["Il codice della cassetta è 7788, ruota i numeri.", "Digita 5566 e sposta la levetta a destra.", "Allinea i numeri 1234 perfettamente al centro.", "Metti 0000 e tira forte verso di te."],
-    "choicesEnglish": ["The lockbox code is 7788, turn the numbers.", "Type 5566 and move the lever to the right.", "Align the numbers 1234 perfectly in the center.", "Put 0000 and pull hard towards you."],
-    "correctAnswerItalian": "Il codice della cassetta è 7788, ruota i numeri.",
-    "correctAnswerEnglish": "The lockbox code is 7788, turn the numbers.",
+    "choicesItalian": [
+      "La password del wifi è scritta sul retro del router.",
+      "L'ascensore è piccolo e a volte si blocca, meglio le scale.",
+      "C'è un ingresso secondario dietro il palazzo, nel cortile.",
+      "A volte è un po' dura, ma con calma si apre."
+    ],
+    "choicesEnglish": [
+      "The wifi password is written on the back of the router.",
+      "The elevator is small and sometimes gets stuck, better the stairs.",
+      "There is a secondary entrance behind the building, in the courtyard.",
+      "Sometimes it's a bit hard, but it opens if you're calm."
+    ],
+    "correctAnswerItalian": "A volte è un po' dura, ma con calma si apre.",
+    "correctAnswerEnglish": "Sometimes it's a bit hard, but it opens if you're calm.",
     "feedback": {
-      "correct": "Ben fatto! Hai il codice per le chiavi. / Well done! You have the code for the keys.",
-      "incorrect": "No! Il codice indicato era 7788. / No! The indicated code was 7788."
+      "correctItalian": "Esatto! Managing expectations.",
+      "incorrectItalian": "No, 'A volte è un po' dura, ma con calma si apre.' significa managing expectations.",
+      "correctEnglish": "Correct! Sometimes it's a bit hard, but it opens if you're calm. refers to A volte è un po' dura, ma con calma si apre..",
+      "incorrectEnglish": "No, the correct word is Sometimes it's a bit hard, but it opens if you're calm.."
+    }
+  },
+  {
+    "id": "s22-s8",
+    "italian": "Se non riesci a entrare, chiamami che scendo subito.",
+    "english": "If you can't get in, call me and I'll come down immediately.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Le regole della casa sono sul tavolo in cucina.",
+      "Se non riesci a entrare, chiamami che scendo subito.",
+      "La cassettina si è aperta al primo colpo, che sollievo!",
+      "Vai al bar accanto, ti raggiungo tra dieci minuti."
+    ],
+    "choicesEnglish": [
+      "The house rules are on the table in the kitchen.",
+      "If you can't get in, call me and I'll come down immediately.",
+      "The lockbox opened on the first try, what a relief!",
+      "Go to the bar next door, I'll reach you in ten minutes."
+    ],
+    "correctAnswerItalian": "Se non riesci a entrare, chiamami che scendo subito.",
+    "correctAnswerEnglish": "If you can't get in, call me and I'll come down immediately.",
+    "feedback": {
+      "correctItalian": "Esatto! Assurance.",
+      "incorrectItalian": "No, 'Se non riesci a entrare, chiamami che scendo subito.' significa assurance.",
+      "correctEnglish": "Correct! If you can't get in, call me and I'll come down immediately. refers to Se non riesci a entrare, chiamami che scendo subito..",
+      "incorrectEnglish": "No, the correct word is If you can't get in, call me and I'll come down immediately.."
+    }
+  },
+  {
+    "id": "s22-s9",
+    "italian": "Ho messo il codice giusto, ma la levetta non si muove.",
+    "english": "I put the right code, but the lever doesn't move.",
+    "type": "sentence",
+    "choicesItalian": [
+      "C'è un ingresso secondario dietro il palazzo, nel cortile.",
+      "La chiave è sotto lo zerbino marrone all'ingresso.",
+      "Ho messo il codice giusto, ma la levetta non si muove.",
+      "Sulla porta c'è una cassetta di sicurezza grigia."
+    ],
+    "choicesEnglish": [
+      "There is a secondary entrance behind the building, in the courtyard.",
+      "The key is under the brown doormat at the entrance.",
+      "I put the right code, but the lever doesn't move.",
+      "On the door there is a gray lockbox."
+    ],
+    "correctAnswerItalian": "Ho messo il codice giusto, ma la levetta non si muove.",
+    "correctAnswerEnglish": "I put the right code, but the lever doesn't move.",
+    "feedback": {
+      "correctItalian": "Esatto! Problem report.",
+      "incorrectItalian": "No, 'Ho messo il codice giusto, ma la levetta non si muove.' significa problem report.",
+      "correctEnglish": "Correct! I put the right code, but the lever doesn't move. refers to Ho messo il codice giusto, ma la levetta non si muove..",
+      "incorrectEnglish": "No, the correct word is I put the right code, but the lever doesn't move.."
     }
   },
   {
     "id": "s22-s10",
-    "italian": "Allinea il codice al centro e poi tira verso il basso la levetta.",
-    "english": "Align the code in the center and then pull the lever downwards.",
+    "italian": "Controlla se i numeri sono allineati perfettamente al centro.",
+    "english": "Check if the numbers are perfectly aligned in the center.",
     "type": "sentence",
-    "choicesItalian": ["Allinea il codice al centro e poi tira verso il basso la levetta.", "Spingi la levetta verso l'alto dopo aver messo il codice.", "Gira la manopola a sinistra fino allo scatto.", "Premi il tasto rosso per aprire la cassetta."],
-    "choicesEnglish": ["Align the code in the center and then pull the lever downwards.", "Push the lever upwards after putting the code.", "Turn the knob to the left until it clicks.", "Press the red button to open the box."],
-    "correctAnswerItalian": "Allinea il codice al centro e poi tira verso il basso la levetta.",
-    "correctAnswerEnglish": "Align the code in the center and then pull the lever downwards.",
+    "choicesItalian": [
+      "Forza un po' la serratura, vedi? Si è aperta.",
+      "C'è un ingresso secondario dietro il palazzo, nel cortile.",
+      "Controlla se i numeri sono allineati perfettamente al centro.",
+      "Se hai freddo, c'è una coperta in più nell'armadio."
+    ],
+    "choicesEnglish": [
+      "Force the lock a bit, see? It opened.",
+      "There is a secondary entrance behind the building, in the courtyard.",
+      "Check if the numbers are perfectly aligned in the center.",
+      "If you're cold, there's an extra blanket in the wardrobe."
+    ],
+    "correctAnswerItalian": "Controlla se i numeri sono allineati perfettamente al centro.",
+    "correctAnswerEnglish": "Check if the numbers are perfectly aligned in the center.",
     "feedback": {
-      "correct": "Ottimo! Spiegazione tecnica perfetta. / Great! Perfect technical explanation.",
-      "incorrect": "Riprova! La levetta va tirata verso il basso. / Try again! The lever must be pulled downwards."
+      "correctItalian": "Esatto! Correction.",
+      "incorrectItalian": "No, 'Controlla se i numeri sono allineati perfettamente al centro.' significa correction.",
+      "correctEnglish": "Correct! Check if the numbers are perfectly aligned in the center. refers to Controlla se i numeri sono allineati perfettamente al centro..",
+      "incorrectEnglish": "No, the correct word is Check if the numbers are perfectly aligned in the center.."
     }
   },
   {
     "id": "s22-s11",
-    "italian": "Ho messo il codice ma la levetta non si muove.",
-    "english": "I put the code but the lever doesn't move.",
+    "italian": "Non preoccuparti, tra tre minuti sono lì da te.",
+    "english": "Don't worry, I'll be there with you in three minutes.",
     "type": "sentence",
-    "choicesItalian": ["Ho messo il codice ma la levetta non si muove.", "La cassetta si è aperta subito, grazie.", "Non trovo la cassetta grigia sulla porta.", "Le chiavi non sono dentro la cassetta."],
-    "choicesEnglish": ["I put the code but the lever doesn't move.", "The box opened immediately, thanks.", "I can't find the gray box on the door.", "The keys are not inside the box."],
-    "correctAnswerItalian": "Ho messo il codice ma la levetta non si muove.",
-    "correctAnswerEnglish": "I put the code but the lever doesn't move.",
+    "choicesItalian": [
+      "Scusa il ritardo, il traffico in centro è terribile oggi.",
+      "La serratura è antica e bisogna avere un po' di pazienza.",
+      "Non preoccuparti, tra tre minuti sono lì da te.",
+      "Il check-out è entro le 11 del mattino, va bene?"
+    ],
+    "choicesEnglish": [
+      "Sorry for the delay, the traffic downtown is terrible today.",
+      "The lock is ancient and you need to have a bit of patience.",
+      "Don't worry, I'll be there with you in three minutes.",
+      "Check-out is by 11 AM, is that okay?"
+    ],
+    "correctAnswerItalian": "Non preoccuparti, tra tre minuti sono lì da te.",
+    "correctAnswerEnglish": "Don't worry, I'll be there with you in three minutes.",
     "feedback": {
-      "correct": "Bravo! Stai segnalando una difficoltà. / Well done! You are reporting a difficulty.",
-      "incorrect": "Sbagliato! Il problema era la levetta bloccata. / Wrong! The problem was the blocked lever."
+      "correctItalian": "Esatto! Support.",
+      "incorrectItalian": "No, 'Non preoccuparti, tra tre minuti sono lì da te.' significa support.",
+      "correctEnglish": "Correct! Don't worry, I'll be there with you in three minutes. refers to Non preoccuparti, tra tre minuti sono lì da te..",
+      "incorrectEnglish": "No, the correct word is Don't worry, I'll be there with you in three minutes.."
     }
   },
   {
     "id": "s22-s12",
-    "italian": "Controlla se i numeri sono allineati perfettamente al centro.",
-    "english": "Check if the numbers are aligned perfectly in the center.",
+    "italian": "Forza un po' la serratura, vedi? Si è aperta.",
+    "english": "Force the lock a bit, see? It opened.",
     "type": "sentence",
-    "choicesItalian": ["Controlla se i numeri sono allineati perfettamente al centro.", "Riprova a mettere il codice da capo.", "Forse hai sbagliato l'ultima cifra del codice.", "Spingi forte la porta mentre tiri la levetta."],
-    "choicesEnglish": ["Check if the numbers are aligned perfectly in the center.", "Try putting the code in again from scratch.", "Maybe you got the last digit of the code wrong.", "Push the door hard while pulling the lever."],
-    "correctAnswerItalian": "Controlla se i numeri sono allineati perfettamente al centro.",
-    "correctAnswerEnglish": "Check if the numbers are aligned perfectly in the center.",
+    "choicesItalian": [
+      "Solleva leggermente la maniglia verso l'alto mentre giri.",
+      "Forza un po' la serratura, vedi? Si è aperta.",
+      "Sulla porta c'è una cassetta di sicurezza grigia.",
+      "Spingi la porta verso l'interno mentre giri la chiave."
+    ],
+    "choicesEnglish": [
+      "Lift the handle slightly upwards while you turn.",
+      "Force the lock a bit, see? It opened.",
+      "On the door there is a gray lockbox.",
+      "Push the door inwards while you turn the key."
+    ],
+    "correctAnswerItalian": "Forza un po' la serratura, vedi? Si è aperta.",
+    "correctAnswerEnglish": "Force the lock a bit, see? It opened.",
     "feedback": {
-      "correct": "Eccellente! L'allineamento è spesso il segreto. / Excellent! Alignment is often the secret.",
-      "incorrect": "Ops! L'host suggeriva di controllare l'allineamento. / Oops! The host suggested checking the alignment."
+      "correctItalian": "Esatto! Solution.",
+      "incorrectItalian": "No, 'Forza un po' la serratura, vedi? Si è aperta.' significa solution.",
+      "correctEnglish": "Correct! Force the lock a bit, see? It opened. refers to Forza un po' la serratura, vedi? Si è aperta..",
+      "incorrectEnglish": "No, the correct word is Force the lock a bit, see? It opened.."
     }
   },
   {
     "id": "s22-s13",
-    "italian": "Probabilmente la cassetta è inceppata, vengo su io.",
-    "english": "The box is probably jammed, I'm coming up.",
+    "italian": "Questa chiave è per il portone, questa per l'appartamento.",
+    "english": "This key is for the main door, this one for the apartment.",
     "type": "sentence",
-    "choicesItalian": ["Probabilmente la cassetta è inceppata, vengo su io.", "Aspetta un attimo, chiamo il tecnico.", "La cassetta è vecchia, bisogna fare forza.", "Provo a guidarti al telefono ancora per un po'."],
-    "choicesEnglish": ["The box is probably jammed, I'm coming up.", "Wait a moment, I'll call the technician.", "The box is old, you need to use force.", "I'll try to guide you on the phone for a bit longer."],
-    "correctAnswerItalian": "Probabilmente la cassetta è inceppata, vengo su io.",
-    "correctAnswerEnglish": "The box is probably jammed, I'm coming up.",
+    "choicesItalian": [
+      "A quale nome devo suonare sul citofono?",
+      "Grazie ancora, l'appartamento è davvero molto carino.",
+      "Questa chiave è per il portone, questa per l'appartamento.",
+      "Se vai al bar e dici che sei mio ospite, ti fanno lo sconto."
+    ],
+    "choicesEnglish": [
+      "Which name should I ring on the intercom?",
+      "Thanks again, the apartment is really very nice.",
+      "This key is for the main door, this one for the apartment.",
+      "If you go to the bar and say you're my guest, they'll give you a discount."
+    ],
+    "correctAnswerItalian": "Questa chiave è per il portone, questa per l'appartamento.",
+    "correctAnswerEnglish": "This key is for the main door, this one for the apartment.",
     "feedback": {
-      "correct": "Perfetto! L'host sta venendo in aiuto di persona. / Perfect! The host is coming to help in person.",
-      "incorrect": "Riprova! La parola 'inceppata' indica un blocco meccanico. / Try again! The word 'inceppata' indicates a mechanical block."
+      "correctItalian": "Esatto! Identification.",
+      "incorrectItalian": "No, 'Questa chiave è per il portone, questa per l'appartamento.' significa identification.",
+      "correctEnglish": "Correct! This key is for the main door, this one for the apartment. refers to Questa chiave è per il portone, questa per l'appartamento..",
+      "incorrectEnglish": "No, the correct word is This key is for the main door, this one for the apartment.."
     }
   },
   {
     "id": "s22-s14",
-    "italian": "Questa è per il portone e questa per l'appartamento.",
-    "english": "This one is for the main door and this one for the apartment.",
+    "italian": "La password del wifi è scritta sul retro del router.",
+    "english": "The wifi password is written on the back of the router.",
     "type": "sentence",
-    "choicesItalian": ["Questa è per il portone e questa per l'appartamento.", "Ti lascio due mazzi di chiavi sul tavolo.", "La chiave piccola apre anche il cancello esterno.", "Usa questa chiave per l'ascensore se serve."],
-    "choicesEnglish": ["This one is for the main door and this one for the apartment.", "I'm leaving two sets of keys on the table.", "The small key also opens the outer gate.", "Use this key for the elevator if needed."],
-    "correctAnswerItalian": "Questa è per il portone e questa per l'appartamento.",
-    "correctAnswerEnglish": "This one is for the main door and this one for the apartment.",
+    "choicesItalian": [
+      "Ah ok, ho capito tutto. Grazie mille per l'aiuto!",
+      "La password del wifi è scritta sul retro del router.",
+      "Gira la chiave a sinistra e tira la porta verso di te.",
+      "Pronto? Sono davanti al palazzo ma il portone è chiuso."
+    ],
+    "choicesEnglish": [
+      "Ah ok, I understood everything. Thanks a lot for the help!",
+      "The wifi password is written on the back of the router.",
+      "Turn the key to the left and pull the door towards you.",
+      "Hello? I'm in front of the building but the main door is closed."
+    ],
+    "correctAnswerItalian": "La password del wifi è scritta sul retro del router.",
+    "correctAnswerEnglish": "The wifi password is written on the back of the router.",
     "feedback": {
-      "correct": "Molto bene! Hai distinto le due chiavi. / Very well! You distinguished the two keys.",
-      "incorrect": "Sbagliato! La distinzione era tra portone e appartamento. / Wrong! The distinction was between main door and apartment."
+      "correctItalian": "Esatto! Instruction.",
+      "incorrectItalian": "No, 'La password del wifi è scritta sul retro del router.' significa instruction.",
+      "correctEnglish": "Correct! The wifi password is written on the back of the router. refers to La password del wifi è scritta sul retro del router..",
+      "incorrectEnglish": "No, the correct word is The wifi password is written on the back of the router.."
     }
   },
   {
     "id": "s22-s15",
-    "italian": "Il wifi è scritto sul retro del router in salone.",
-    "english": "The wifi is written on the back of the router in the living room.",
+    "italian": "Le regole della casa sono sul tavolo in cucina.",
+    "english": "The house rules are on the table in the kitchen.",
     "type": "sentence",
-    "choicesItalian": ["Il wifi è scritto sul retro del router in salone.", "Troverai la password del wifi sul tavolo della cucina.", "Il router è nascosto dietro la televisione.", "La rete wifi si chiama Casa Vacanze."],
-    "choicesEnglish": ["The wifi is written on the back of the router in the living room.", "You will find the wifi password on the kitchen table.", "The router is hidden behind the television.", "The wifi network is called Holiday Home."],
-    "correctAnswerItalian": "Il wifi è scritto sul retro del router in salone.",
-    "correctAnswerEnglish": "The wifi is written on the back of the router in the living room.",
+    "choicesItalian": [
+      "Le regole della casa sono sul tavolo in cucina.",
+      "Non preoccuparti, tra tre minuti sono lì da te.",
+      "La chiave gira ma la porta non si apre, cosa faccio?",
+      "L'ascensore è in fondo a sinistra, sali al terzo piano."
+    ],
+    "choicesEnglish": [
+      "The house rules are on the table in the kitchen.",
+      "Don't worry, I'll be there with you in three minutes.",
+      "The key turns but the door doesn't open, what do I do?",
+      "The elevator is at the end on the left, go up to the third floor."
+    ],
+    "correctAnswerItalian": "Le regole della casa sono sul tavolo in cucina.",
+    "correctAnswerEnglish": "The house rules are on the table in the kitchen.",
     "feedback": {
-      "correct": "Ottimo! Informazione fondamentale per ogni viaggiatore. / Great! Fundamental information for every traveler.",
-      "incorrect": "Ops! La password era sul retro del router. / Oops! The password was on the back of the router."
+      "correctItalian": "Esatto! Information.",
+      "incorrectItalian": "No, 'Le regole della casa sono sul tavolo in cucina.' significa information.",
+      "correctEnglish": "Correct! The house rules are on the table in the kitchen. refers to Le regole della casa sono sul tavolo in cucina..",
+      "incorrectEnglish": "No, the correct word is The house rules are on the table in the kitchen.."
     }
   },
   {
@@ -214,643 +394,1299 @@
     "italian": "A quale nome devo suonare sul citofono?",
     "english": "Which name should I ring on the intercom?",
     "type": "sentence",
-    "choicesItalian": ["A quale nome devo suonare sul citofono?", "C'è il tuo cognome sul campanello?", "Suono a tutti finché qualcuno risponde?", "Il citofono è rotto, come ti avviso?"],
-    "choicesEnglish": ["Which name should I ring on the intercom?", "Is your surname on the doorbell?", "Do I ring everyone until someone answers?", "The intercom is broken, how do I notify you?"],
+    "choicesItalian": [
+      "Vai al bar accanto, ti raggiungo tra dieci minuti.",
+      "A quale nome devo suonare sul citofono?",
+      "Posso avere un altro asciugamano per la doccia?",
+      "Dov'è il bidone per la raccolta differenziata della carta?"
+    ],
+    "choicesEnglish": [
+      "Go to the bar next door, I'll reach you in ten minutes.",
+      "Which name should I ring on the intercom?",
+      "Can I have another towel for the shower?",
+      "Where is the bin for paper waste sorting?"
+    ],
     "correctAnswerItalian": "A quale nome devo suonare sul citofono?",
     "correctAnswerEnglish": "Which name should I ring on the intercom?",
     "feedback": {
-      "correct": "Bravo! Chiedere il nome è necessario in Italia. / Well done! Asking for the name is necessary in Italy.",
-      "incorrect": "Riprova! Stavi chiedendo il nome sul citofono. / Try again! You were asking for the name on the intercom."
+      "correctItalian": "Esatto! Question.",
+      "incorrectItalian": "No, 'A quale nome devo suonare sul citofono?' significa question.",
+      "correctEnglish": "Correct! Which name should I ring on the intercom? refers to A quale nome devo suonare sul citofono?.",
+      "incorrectEnglish": "No, the correct word is Which name should I ring on the intercom?."
     }
   },
   {
     "id": "s22-s17",
-    "italian": "Suoni a Bianchi, terzo piano, è il mio vicino.",
-    "english": "Ring Bianchi, third floor, he is my neighbor.",
+    "italian": "Suona a Bianchi, è il vicino che mi fa da appoggio.",
+    "english": "Ring Bianchi, it's the neighbor who helps me out.",
     "type": "sentence",
-    "choicesItalian": ["Suoni a Bianchi, terzo piano, è il mio vicino.", "Cerca il nome Verdi al secondo piano.", "L'host abita al piano terra, suona lì.", "Non c'è nessun nome, spingi il portone."],
-    "choicesEnglish": ["Ring Bianchi, third floor, he is my neighbor.", "Look for the name Verdi on the second floor.", "The host lives on the ground floor, ring there.", "There is no name, push the main door."],
-    "correctAnswerItalian": "Suoni a Bianchi, terzo piano, è il mio vicino.",
-    "correctAnswerEnglish": "Ring Bianchi, third floor, he is my neighbor.",
+    "choicesItalian": [
+      "Suona a Bianchi, è il vicino che mi fa da appoggio.",
+      "Apri la cassetta e prendi la busta con il tuo nome.",
+      "Se hai freddo, c'è una coperta in più nell'armadio.",
+      "Ho messo il codice giusto, ma la levetta non si muove."
+    ],
+    "choicesEnglish": [
+      "Ring Bianchi, it's the neighbor who helps me out.",
+      "Open the box and take the envelope with your name.",
+      "If you're cold, there's an extra blanket in the wardrobe.",
+      "I put the right code, but the lever doesn't move."
+    ],
+    "correctAnswerItalian": "Suona a Bianchi, è il vicino che mi fa da appoggio.",
+    "correctAnswerEnglish": "Ring Bianchi, it's the neighbor who helps me out.",
     "feedback": {
-      "correct": "Perfetto! Hai capito a chi suonare. / Perfect! You understood who to ring.",
-      "incorrect": "Sbagliato! Il nome era Bianchi al terzo piano. / Wrong! The name was Bianchi on the third floor."
+      "correctItalian": "Esatto! Context.",
+      "incorrectItalian": "No, 'Suona a Bianchi, è il vicino che mi fa da appoggio.' significa context.",
+      "correctEnglish": "Correct! Ring Bianchi, it's the neighbor who helps me out. refers to Suona a Bianchi, è il vicino che mi fa da appoggio..",
+      "incorrectEnglish": "No, the correct word is Ring Bianchi, it's the neighbor who helps me out.."
     }
   },
   {
     "id": "s22-s18",
-    "italian": "Sono l'ospite di Marco, mi apre il portone per favore?",
-    "english": "I'm Marco's guest, can you open the main door for me please?",
+    "italian": "Dì pure che sei l'ospite di Marco e ti aprirà.",
+    "english": "Just say you are Marco's guest and they will open for you.",
     "type": "sentence",
-    "choicesItalian": ["Sono l'ospite di Marco, mi apre il portone per favore?", "Salve, ho una prenotazione a nome Bianchi.", "Buongiorno, sono qui per le chiavi dell'appartamento.", "Ciao, Marco è in casa?"],
-    "choicesEnglish": ["I'm Marco's guest, can you open the main door for me please?", "Hello, I have a reservation under the name Bianchi.", "Good morning, I'm here for the apartment keys.", "Hi, is Marco at home?"],
-    "correctAnswerItalian": "Sono l'ospite di Marco, mi apre il portone per favore?",
-    "correctAnswerEnglish": "I'm Marco's guest, can you open the main door for me please?",
+    "choicesItalian": [
+      "Dì pure che sei l'ospite di Marco e ti aprirà.",
+      "La levetta è un po' dura, prova a tirare più forte.",
+      "La porta è la lettera B, proprio accanto all'ascensore.",
+      "La chiave è sotto lo zerbino marrone all'ingresso."
+    ],
+    "choicesEnglish": [
+      "Just say you are Marco's guest and they will open for you.",
+      "The lever is a bit hard, try pulling harder.",
+      "The door is letter B, right next to the elevator.",
+      "The key is under the brown doormat at the entrance."
+    ],
+    "correctAnswerItalian": "Dì pure che sei l'ospite di Marco e ti aprirà.",
+    "correctAnswerEnglish": "Just say you are Marco's guest and they will open for you.",
     "feedback": {
-      "correct": "Eccellente! Ti sei presentato correttamente al vicino. / Excellent! You introduced yourself correctly to the neighbor.",
-      "incorrect": "Ops! Dovevi dire di essere l'ospite di Marco. / Oops! You had to say you were Marco's guest."
+      "correctItalian": "Esatto! Social interaction.",
+      "incorrectItalian": "No, 'Dì pure che sei l'ospite di Marco e ti aprirà.' significa social interaction.",
+      "correctEnglish": "Correct! Just say you are Marco's guest and they will open for you. refers to Dì pure che sei l'ospite di Marco e ti aprirà..",
+      "incorrectEnglish": "No, the correct word is Just say you are Marco's guest and they will open for you.."
     }
   },
   {
     "id": "s22-s19",
-    "italian": "La chiave è sotto lo zerbino in una bustina di plastica.",
-    "english": "The key is under the doormat in a small plastic bag.",
+    "italian": "La chiave è sotto lo zerbino marrone all'ingresso.",
+    "english": "The key is under the brown doormat at the entrance.",
     "type": "sentence",
-    "choicesItalian": ["La chiave è sotto lo zerbino in una bustina di plastica.", "Troverai le chiavi dentro la cassetta delle lettere.", "L'host ti aspetta davanti alla porta con le chiavi.", "Le chiavi sono appese al gancio nel corridoio."],
-    "choicesEnglish": ["The key is under the doormat in a small plastic bag.", "You will find the keys inside the mailbox.", "The host is waiting for you at the door with the keys.", "The keys are hanging on the hook in the hallway."],
-    "correctAnswerItalian": "La chiave è sotto lo zerbino in una bustina di plastica.",
-    "correctAnswerEnglish": "The key is under the doormat in a small plastic bag.",
+    "choicesItalian": [
+      "C'è un problema con la caldaia, il tecnico arriva domani.",
+      "La cassettina si è aperta al primo colpo, che sollievo!",
+      "La chiave è sotto lo zerbino marrone all'ingresso.",
+      "Se non riesci a entrare, chiamami che scendo subito."
+    ],
+    "choicesEnglish": [
+      "There's a problem with the boiler, the technician arrives tomorrow.",
+      "The lockbox opened on the first try, what a relief!",
+      "The key is under the brown doormat at the entrance.",
+      "If you can't get in, call me and I'll come down immediately."
+    ],
+    "correctAnswerItalian": "La chiave è sotto lo zerbino marrone all'ingresso.",
+    "correctAnswerEnglish": "The key is under the brown doormat at the entrance.",
     "feedback": {
-      "correct": "Molto bene! Un metodo di consegna classico. / Very well! A classic delivery method.",
-      "incorrect": "Riprova! La posizione era sotto lo zerbino. / Try again! The location was under the doormat."
+      "correctItalian": "Esatto! Location.",
+      "incorrectItalian": "No, 'La chiave è sotto lo zerbino marrone all'ingresso.' significa location.",
+      "correctEnglish": "Correct! The key is under the brown doormat at the entrance. refers to La chiave è sotto lo zerbino marrone all'ingresso..",
+      "incorrectEnglish": "No, the correct word is The key is under the brown doormat at the entrance.."
     }
   },
   {
     "id": "s22-s20",
-    "italian": "Spinga la porta verso l'interno mentre gira la chiave.",
-    "english": "Push the door inwards while turning the key.",
+    "italian": "La chiave gira ma la porta non si apre, cosa faccio?",
+    "english": "The key turns but the door doesn't open, what do I do?",
     "type": "sentence",
-    "choicesItalian": ["Spinga la porta verso l'interno mentre gira la chiave.", "Tiri la porta verso di lei e poi giri a destra.", "Deve sollevare la maniglia prima di aprire.", "Giri la chiave due volte a sinistra senza spingere."],
-    "choicesEnglish": ["Push the door inwards while turning the key.", "Pull the door towards you and then turn right.", "You must lift the handle before opening.", "Turn the key twice to the left without pushing."],
-    "correctAnswerItalian": "Spinga la porta verso l'interno mentre gira la chiave.",
-    "correctAnswerEnglish": "Push the door inwards while turning the key.",
+    "choicesItalian": [
+      "La chiave gira ma la porta non si apre, cosa faccio?",
+      "Ti faccio vedere come funziona il riscaldamento e la serratura.",
+      "La cassettina si è aperta al primo colpo, che sollievo!",
+      "Non preoccuparti, tra tre minuti sono lì da te."
+    ],
+    "choicesEnglish": [
+      "The key turns but the door doesn't open, what do I do?",
+      "I'll show you how the heating and the lock work.",
+      "The lockbox opened on the first try, what a relief!",
+      "Don't worry, I'll be there with you in three minutes."
+    ],
+    "correctAnswerItalian": "La chiave gira ma la porta non si apre, cosa faccio?",
+    "correctAnswerEnglish": "The key turns but the door doesn't open, what do I do?",
     "feedback": {
-      "correct": "Ottimo! Hai capito il trucco per aprire la porta. / Great! You understood the trick to open the door.",
-      "incorrect": "Sbagliato! Bisognava spingere mentre si girava la chiave. / Wrong! You had to push while turning the key."
+      "correctItalian": "Esatto! Frustration.",
+      "incorrectItalian": "No, 'La chiave gira ma la porta non si apre, cosa faccio?' significa frustration.",
+      "correctEnglish": "Correct! The key turns but the door doesn't open, what do I do? refers to La chiave gira ma la porta non si apre, cosa faccio?.",
+      "incorrectEnglish": "No, the correct word is The key turns but the door doesn't open, what do I do?."
     }
   },
   {
     "id": "s22-s21",
-    "italian": "Nel mobiletto del bagno ce ne sono altri due puliti.",
-    "english": "In the bathroom cabinet there are two more clean ones.",
+    "italian": "Spingi la porta verso l'interno mentre giri la chiave.",
+    "english": "Push the door inwards while you turn the key.",
     "type": "sentence",
-    "choicesItalian": ["Nel mobiletto del bagno ce ne sono altri due puliti.", "Troverai altre coperte nell'armadio in camera.", "Ci sono piatti puliti nella dispensa in cucina.", "Gli asciugamani sono appesi dietro la porta del bagno."],
-    "choicesEnglish": ["In the bathroom cabinet there are two more clean ones.", "You will find more blankets in the bedroom wardrobe.", "There are clean plates in the kitchen pantry.", "The towels are hanging behind the bathroom door."],
-    "correctAnswerItalian": "Nel mobiletto del bagno ce ne sono altri due puliti.",
-    "correctAnswerEnglish": "In the bathroom cabinet there are two more clean ones.",
+    "choicesItalian": [
+      "La chiave è sotto lo zerbino marrone all'ingresso.",
+      "Hai guardato le istruzioni sulla piattaforma?",
+      "Se hai bisogno di lasciare le valigie, fammi sapere.",
+      "Spingi la porta verso l'interno mentre giri la chiave."
+    ],
+    "choicesEnglish": [
+      "The key is under the brown doormat at the entrance.",
+      "Did you look at the instructions on the platform?",
+      "If you need to leave your luggage, let me know.",
+      "Push the door inwards while you turn the key."
+    ],
+    "correctAnswerItalian": "Spingi la porta verso l'interno mentre giri la chiave.",
+    "correctAnswerEnglish": "Push the door inwards while you turn the key.",
     "feedback": {
-      "correct": "Bravo! Stai parlando degli asciugamani di scorta. / Well done! You are talking about the spare towels.",
-      "incorrect": "Ops! Si riferiva al mobiletto del bagno. / Oops! It referred to the bathroom cabinet."
+      "correctItalian": "Esatto! Physical instruction.",
+      "incorrectItalian": "No, 'Spingi la porta verso l'interno mentre giri la chiave.' significa physical instruction.",
+      "correctEnglish": "Correct! Push the door inwards while you turn the key. refers to Spingi la porta verso l'interno mentre giri la chiave..",
+      "incorrectEnglish": "No, the correct word is Push the door inwards while you turn the key.."
     }
   },
   {
     "id": "s22-s22",
-    "italian": "Sono in ritardo di dieci minuti a causa del traffico.",
-    "english": "I'm ten minutes late due to traffic.",
+    "italian": "Dentro troverai un foglio con tutte le informazioni utili.",
+    "english": "Inside you will find a sheet with all the useful information.",
     "type": "sentence",
-    "choicesItalian": ["Sono in ritardo di dieci minuti a causa del traffico.", "Sto arrivando con un anticipo di mezz'ora.", "Sono puntuale davanti al bar come concordato.", "Il treno ha avuto un ritardo di un'ora."],
-    "choicesEnglish": ["I'm ten minutes late due to traffic.", "I'm arriving half an hour early.", "I'm on time in front of the bar as agreed.", "The train had an hour delay."],
-    "correctAnswerItalian": "Sono in ritardo di dieci minuti a causa del traffico.",
-    "correctAnswerEnglish": "I'm ten minutes late due to traffic.",
+    "choicesItalian": [
+      "Imposta il termostato a 20 gradi, non di più.",
+      "Se vai al bar e dici che sei mio ospite, ti fanno lo sconto.",
+      "La levetta è un po' dura, prova a tirare più forte.",
+      "Dentro troverai un foglio con tutte le informazioni utili."
+    ],
+    "choicesEnglish": [
+      "Set the thermostat to 20 degrees, no more.",
+      "If you go to the bar and say you're my guest, they'll give you a discount.",
+      "The lever is a bit hard, try pulling harder.",
+      "Inside you will find a sheet with all the useful information."
+    ],
+    "correctAnswerItalian": "Dentro troverai un foglio con tutte le informazioni utili.",
+    "correctAnswerEnglish": "Inside you will find a sheet with all the useful information.",
     "feedback": {
-      "correct": "Perfetto! Hai scusato il ritardo correttamente. / Perfect! You excused the delay correctly.",
-      "incorrect": "Riprova! La causa del ritardo era il traffico. / Try again! The cause of the delay was traffic."
+      "correctItalian": "Esatto! Promise of info.",
+      "incorrectItalian": "No, 'Dentro troverai un foglio con tutte le informazioni utili.' significa promise of info.",
+      "correctEnglish": "Correct! Inside you will find a sheet with all the useful information. refers to Dentro troverai un foglio con tutte le informazioni utili..",
+      "incorrectEnglish": "No, the correct word is Inside you will find a sheet with all the useful information.."
     }
   },
   {
     "id": "s22-s23",
-    "italian": "Entra nel bar Caffè del Corso e offro io un caffè.",
-    "english": "Go into the Caffè del Corso bar and I'll buy you a coffee.",
+    "italian": "Scusa il ritardo, il traffico in centro è terribile oggi.",
+    "english": "Sorry for the delay, the traffic downtown is terrible today.",
     "type": "sentence",
-    "choicesItalian": ["Entra nel bar Caffè del Corso e offro io un caffè.", "Aspettami fuori dal portone, arrivo subito.", "Vieni a trovarmi al ristorante qui vicino.", "Prendi un taxi e raggiungimi all'indirizzo."],
-    "choicesEnglish": ["Go into the Caffè del Corso bar and I'll buy you a coffee.", "Wait for me outside the main door, I'll be right there.", "Come meet me at the restaurant nearby.", "Take a taxi and meet me at the address."],
-    "correctAnswerItalian": "Entra nel bar Caffè del Corso e offro io un caffè.",
-    "correctAnswerEnglish": "Entra nel bar Caffè del Corso e offro io un caffè.",
+    "choicesItalian": [
+      "Non trovo la password del wifi, puoi dirmela tu?",
+      "Ti faccio vedere come funziona il riscaldamento e la serratura.",
+      "Scusa il ritardo, il traffico in centro è terribile oggi.",
+      "Non preoccuparti, tra tre minuti sono lì da te."
+    ],
+    "choicesEnglish": [
+      "I can't find the wifi password, can you tell me?",
+      "I'll show you how the heating and the lock work.",
+      "Sorry for the delay, the traffic downtown is terrible today.",
+      "Don't worry, I'll be there with you in three minutes."
+    ],
+    "correctAnswerItalian": "Scusa il ritardo, il traffico in centro è terribile oggi.",
+    "correctAnswerEnglish": "Sorry for the delay, the traffic downtown is terrible today.",
     "feedback": {
-      "correct": "Eccellente! Un host molto gentile e ospitale. / Excellent! A very kind and hospitable host.",
-      "incorrect": "Sbagliato! L'host offriva un caffè al bar. / Wrong! The host was offering a coffee at the bar."
+      "correctItalian": "Esatto! Apology.",
+      "incorrectItalian": "No, 'Scusa il ritardo, il traffico in centro è terribile oggi.' significa apology.",
+      "correctEnglish": "Correct! Sorry for the delay, the traffic downtown is terrible today. refers to Scusa il ritardo, il traffico in centro è terribile oggi..",
+      "incorrectEnglish": "No, the correct word is Sorry for the delay, the traffic downtown is terrible today.."
     }
   },
   {
     "id": "s22-s24",
-    "italian": "Ti vengo a prendere al bar e saliamo insieme.",
-    "english": "I'll come pick you up at the bar and we'll go up together.",
+    "italian": "Piove forte e non ho un posto al coperto dove aspettare.",
+    "english": "It's raining hard and I don't have a sheltered place to wait.",
     "type": "sentence",
-    "choicesItalian": ["Ti vengo a prendere al bar e saliamo insieme.", "Ti lascio le chiavi al bancone del bar.", "Raggiungimi direttamente al terzo piano.", "Ci vediamo domani mattina per il check-in."],
-    "choicesEnglish": ["I'll come pick you up at the bar and we'll go up together.", "I'll leave the keys for you at the bar counter.", "Meet me directly on the third floor.", "See you tomorrow morning for check-in."],
-    "correctAnswerItalian": "Ti vengo a prendere al bar e saliamo insieme.",
-    "correctAnswerEnglish": "I'll come pick you up at the bar and we'll go up together.",
+    "choicesItalian": [
+      "Piove forte e non ho un posto al coperto dove aspettare.",
+      "Pronto? Sono davanti al palazzo ma il portone è chiuso.",
+      "Posso avere un altro asciugamano per la doccia?",
+      "Dov'è il bidone per la raccolta differenziata della carta?"
+    ],
+    "choicesEnglish": [
+      "It's raining hard and I don't have a sheltered place to wait.",
+      "Hello? I'm in front of the building but the main door is closed.",
+      "Can I have another towel for the shower?",
+      "Where is the bin for paper waste sorting?"
+    ],
+    "correctAnswerItalian": "Piove forte e non ho un posto al coperto dove aspettare.",
+    "correctAnswerEnglish": "It's raining hard and I don't have a sheltered place to wait.",
     "feedback": {
-      "correct": "Molto bene! L'incontro avverrà al bar. / Very well! The meeting will take place at the bar.",
-      "incorrect": "Ops! L'host sta venendo a prenderti. / Oops! The host is coming to pick you up."
+      "correctItalian": "Esatto! Complaint.",
+      "incorrectItalian": "No, 'Piove forte e non ho un posto al coperto dove aspettare.' significa complaint.",
+      "correctEnglish": "Correct! It's raining hard and I don't have a sheltered place to wait. refers to Piove forte e non ho un posto al coperto dove aspettare..",
+      "incorrectEnglish": "No, the correct word is It's raining hard and I don't have a sheltered place to wait.."
     }
   },
   {
     "id": "s22-s25",
-    "italian": "Quando esci devi dare due mandate verso l'alto.",
-    "english": "When you leave you must give two turns upwards.",
+    "italian": "Vai al bar accanto, ti raggiungo tra dieci minuti.",
+    "english": "Go to the bar next door, I'll reach you in ten minutes.",
     "type": "sentence",
-    "choicesItalian": ["Quando esci devi dare due mandate verso l'alto.", "Ricordati di chiudere la porta a chiave con un giro.", "Non serve chiudere a chiave se esci per poco.", "Tira solo la maniglia forte per chiudere."],
-    "choicesEnglish": ["When you leave you must give two turns upwards.", "Remember to lock the door with one turn.", "No need to lock if you go out for a bit.", "Just pull the handle hard to close."],
-    "correctAnswerItalian": "Quando esci devi dare due mandate verso l'alto.",
-    "correctAnswerEnglish": "When you leave you must give two turns upwards.",
+    "choicesItalian": [
+      "C'è un problema con la caldaia, il tecnico arriva domani.",
+      "Vai al bar accanto, ti raggiungo tra dieci minuti.",
+      "Ho suonato a tutti i nomi ma non risponde nessuno.",
+      "Dentro troverai un foglio con tutte le informazioni utili."
+    ],
+    "choicesEnglish": [
+      "There's a problem with the boiler, the technician arrives tomorrow.",
+      "Go to the bar next door, I'll reach you in ten minutes.",
+      "I rang all the names but nobody answers.",
+      "Inside you will find a sheet with all the useful information."
+    ],
+    "correctAnswerItalian": "Vai al bar accanto, ti raggiungo tra dieci minuti.",
+    "correctAnswerEnglish": "Go to the bar next door, I'll reach you in ten minutes.",
     "feedback": {
-      "correct": "Bravo! Istruzione importante per la sicurezza. / Well done! Important instruction for safety.",
-      "incorrect": "Riprova! Servivano due mandate verso l'alto. / Try again! Two turns upwards were needed."
+      "correctItalian": "Esatto! Suggestion.",
+      "incorrectItalian": "No, 'Vai al bar accanto, ti raggiungo tra dieci minuti.' significa suggestion.",
+      "correctEnglish": "Correct! Go to the bar next door, I'll reach you in ten minutes. refers to Vai al bar accanto, ti raggiungo tra dieci minuti..",
+      "incorrectEnglish": "No, the correct word is Go to the bar next door, I'll reach you in ten minutes.."
     }
   },
   {
     "id": "s22-s26",
-    "italian": "Il termostato va impostato a 20 gradi, non di più.",
-    "english": "The thermostat should be set to 20 degrees, no more.",
+    "italian": "Ti faccio vedere come funziona il riscaldamento e la serratura.",
+    "english": "I'll show you how the heating and the lock work.",
     "type": "sentence",
-    "choicesItalian": ["Il termostato va impostato a 20 gradi, non di più.", "Puoi alzare il riscaldamento quanto vuoi.", "Il riscaldamento è spento durante la notte.", "Spegni il termostato quando esci di casa."],
-    "choicesEnglish": ["The thermostat should be set to 20 degrees, no more.", "You can turn up the heating as much as you want.", "The heating is off during the night.", "Turn off the thermostat when you leave the house."],
-    "correctAnswerItalian": "Il termostato va impostato a 20 gradi, non di più.",
-    "correctAnswerEnglish": "The thermostat should be set to 20 degrees, no more.",
+    "choicesItalian": [
+      "Controlla se i numeri sono allineati perfettamente al centro.",
+      "Forza un po' la serratura, vedi? Si è aperta.",
+      "Ti faccio vedere come funziona il riscaldamento e la serratura.",
+      "Grazie ancora, l'appartamento è davvero molto carino."
+    ],
+    "choicesEnglish": [
+      "Check if the numbers are perfectly aligned in the center.",
+      "Force the lock a bit, see? It opened.",
+      "I'll show you how the heating and the lock work.",
+      "Thanks again, the apartment is really very nice."
+    ],
+    "correctAnswerItalian": "Ti faccio vedere come funziona il riscaldamento e la serratura.",
+    "correctAnswerEnglish": "I'll show you how the heating and the lock work.",
     "feedback": {
-      "correct": "Ottimo! Stai seguendo le regole sul riscaldamento. / Great! You are following the rules on heating.",
-      "incorrect": "Sbagliato! Il limite era di 20 gradi. / Wrong! The limit was 20 degrees."
+      "correctItalian": "Esatto! Walkthrough.",
+      "incorrectItalian": "No, 'Ti faccio vedere come funziona il riscaldamento e la serratura.' significa walkthrough.",
+      "correctEnglish": "Correct! I'll show you how the heating and the lock work. refers to Ti faccio vedere come funziona il riscaldamento e la serratura..",
+      "incorrectEnglish": "No, the correct word is I'll show you how the heating and the lock work.."
     }
   },
   {
     "id": "s22-s27",
-    "italian": "Dietro il palazzo c'è un ingresso secondario con un cancelletto.",
-    "english": "Behind the building there is a secondary entrance with a small gate.",
+    "italian": "L'ascensore è piccolo e a volte si blocca, meglio le scale.",
+    "english": "The elevator is small and sometimes gets stuck, better the stairs.",
     "type": "sentence",
-    "choicesItalian": ["Dietro il palazzo c'è un ingresso secondario con un cancelletto.", "L'entrata principale è sempre aperta di giorno.", "C'è un garage sotterraneo per gli ospiti.", "Il cortile interno è riservato ai condomini."],
-    "choicesEnglish": ["Behind the building there is a secondary entrance with a small gate.", "The main entrance is always open during the day.", "There is an underground garage for guests.", "The inner courtyard is reserved for residents."],
-    "correctAnswerItalian": "Dietro il palazzo c'è un ingresso secondario con un cancelletto.",
-    "correctAnswerEnglish": "Behind the building there is a secondary entrance with a small gate.",
+    "choicesItalian": [
+      "Non preoccuparti, tra tre minuti sono lì da te.",
+      "La porta è la lettera B, proprio accanto all'ascensore.",
+      "L'ascensore è piccolo e a volte si blocca, meglio le scale.",
+      "Oddio, hai ragione, questa serratura è veramente durissima!"
+    ],
+    "choicesEnglish": [
+      "Don't worry, I'll be there with you in three minutes.",
+      "The door is letter B, right next to the elevator.",
+      "The elevator is small and sometimes gets stuck, better the stairs.",
+      "Oh god, you're right, this lock is really very hard!"
+    ],
+    "correctAnswerItalian": "L'ascensore è piccolo e a volte si blocca, meglio le scale.",
+    "correctAnswerEnglish": "The elevator is small and sometimes gets stuck, better the stairs.",
     "feedback": {
-      "correct": "Perfetto! Hai trovato l'ingresso alternativo. / Perfect! You found the alternative entrance.",
-      "incorrect": "Ops! Cercavi l'ingresso secondario con il cancelletto. / Oops! You were looking for the secondary entrance with the small gate."
+      "correctItalian": "Esatto! Warning.",
+      "incorrectItalian": "No, 'L'ascensore è piccolo e a volte si blocca, meglio le scale.' significa warning.",
+      "correctEnglish": "Correct! The elevator is small and sometimes gets stuck, better the stairs. refers to L'ascensore è piccolo e a volte si blocca, meglio le scale..",
+      "incorrectEnglish": "No, the correct word is The elevator is small and sometimes gets stuck, better the stairs.."
     }
   },
   {
     "id": "s22-s28",
-    "italian": "Gira a destra e troverai un cancello di ferro verde.",
-    "english": "Turn right and you will find a green iron gate.",
+    "italian": "Quando esci, ricordati di dare due mandate alla porta.",
+    "english": "When you go out, remember to give the door two turns.",
     "type": "sentence",
-    "choicesItalian": ["Gira a destra e troverai un cancello di ferro verde.", "Vai dritto fino alla fine della strada.", "Il cancello è nero e molto grande.", "La porta è di legno antico e pesante."],
-    "choicesEnglish": ["Turn right and you will find a green iron gate.", "Go straight until the end of the street.", "The gate is black and very large.", "The door is made of ancient and heavy wood."],
-    "correctAnswerItalian": "Gira a destra e troverai un cancello di ferro verde.",
-    "correctAnswerEnglish": "Gira a destra e troverai un cancello di ferro verde.",
+    "choicesItalian": [
+      "Non preoccuparti, tra tre minuti sono lì da te.",
+      "Le regole della casa sono sul tavolo in cucina.",
+      "Speriamo che il citofono venga riparato presto dal tecnico.",
+      "Quando esci, ricordati di dare due mandate alla porta."
+    ],
+    "choicesEnglish": [
+      "Don't worry, I'll be there with you in three minutes.",
+      "The house rules are on the table in the kitchen.",
+      "Let's hope the intercom is repaired soon by the technician.",
+      "When you go out, remember to give the door two turns."
+    ],
+    "correctAnswerItalian": "Quando esci, ricordati di dare due mandate alla porta.",
+    "correctAnswerEnglish": "When you go out, remember to give the door two turns.",
     "feedback": {
-      "correct": "Bravo! Stai seguendo le indicazioni stradali. / Well done! You are following the street directions.",
-      "incorrect": "Riprova! Il cancello era di ferro verde a destra. / Try again! The gate was green iron on the right."
+      "correctItalian": "Esatto! Security.",
+      "incorrectItalian": "No, 'Quando esci, ricordati di dare due mandate alla porta.' significa security.",
+      "correctEnglish": "Correct! When you go out, remember to give the door two turns. refers to Quando esci, ricordati di dare due mandate alla porta..",
+      "incorrectEnglish": "No, the correct word is When you go out, remember to give the door two turns.."
     }
   },
   {
     "id": "s22-s29",
-    "italian": "Digita 5590 sul cancelletto e spingi forte.",
-    "english": "Type 5590 on the small gate and push hard.",
+    "italian": "Imposta il termostato a 20 gradi, non di più.",
+    "english": "Set the thermostat to 20 degrees, no more.",
     "type": "sentence",
-    "choicesItalian": ["Digita 5590 sul cancelletto e spingi forte.", "Metti il codice 1234 e tira verso di te.", "Suona il campanello per farti aprire.", "Usa la chiave magnetica sul lettore."],
-    "choicesEnglish": ["Type 5590 on the small gate and push hard.", "Put the code 1234 and pull towards you.", "Ring the doorbell to be let in.", "Use the magnetic key on the reader."],
-    "correctAnswerItalian": "Digita 5590 sul cancelletto e spingi forte.",
-    "correctAnswerEnglish": "Type 5590 on the small gate and push hard.",
+    "choicesItalian": [
+      "Controlla se i numeri sono allineati perfettamente al centro.",
+      "Se non riesci a entrare, chiamami che scendo subito.",
+      "C'è un cappuccino pronto per te al bar qui sotto.",
+      "Imposta il termostato a 20 gradi, non di più."
+    ],
+    "choicesEnglish": [
+      "Check if the numbers are perfectly aligned in the center.",
+      "If you can't get in, call me and I'll come down immediately.",
+      "There's a cappuccino ready for you at the bar down here.",
+      "Set the thermostat to 20 degrees, no more."
+    ],
+    "correctAnswerItalian": "Imposta il termostato a 20 gradi, non di più.",
+    "correctAnswerEnglish": "Set the thermostat to 20 degrees, no more.",
     "feedback": {
-      "correct": "Eccellente! Codice inserito e porta aperta. / Excellent! Code entered and door opened.",
-      "incorrect": "Sbagliato! Il codice era 5590. / Wrong! The code was 5590."
+      "correctItalian": "Esatto! House rule.",
+      "incorrectItalian": "No, 'Imposta il termostato a 20 gradi, non di più.' significa house rule.",
+      "correctEnglish": "Correct! Set the thermostat to 20 degrees, no more. refers to Imposta il termostato a 20 gradi, non di più..",
+      "incorrectEnglish": "No, the correct word is Set the thermostat to 20 degrees, no more.."
     }
   },
   {
     "id": "s22-s30",
-    "italian": "La cassettina si è aperta al primo colpo, che sollievo.",
-    "english": "The small box opened on the first try, what a relief.",
+    "italian": "Se vai al bar e dici che sei mio ospite, ti fanno lo sconto.",
+    "english": "If you go to the bar and say you're my guest, they'll give you a discount.",
     "type": "sentence",
-    "choicesItalian": ["La cassettina si è aperta al primo colpo, che sollievo.", "Ancora non riesco ad aprire la cassetta.", "Il codice sembra sbagliato, riprovo.", "Ho rotto la chiave dentro la serratura."],
-    "choicesEnglish": ["The small box opened on the first try, what a relief.", "I still can't open the box.", "The code seems wrong, I'll try again.", "I broke the key inside the lock."],
-    "correctAnswerItalian": "La cassettina si è aperta al primo colpo, che sollievo.",
-    "correctAnswerEnglish": "The small box opened on the first try, what a relief.",
+    "choicesItalian": [
+      "La levetta è un po' dura, prova a tirare più forte.",
+      "Ricordati di chiudere bene il portone quando entri.",
+      "Piove forte e non ho un posto al coperto dove aspettare.",
+      "Se vai al bar e dici che sei mio ospite, ti fanno lo sconto."
+    ],
+    "choicesEnglish": [
+      "The lever is a bit hard, try pulling harder.",
+      "Remember to close the main door well when you enter.",
+      "It's raining hard and I don't have a sheltered place to wait.",
+      "If you go to the bar and say you're my guest, they'll give you a discount."
+    ],
+    "correctAnswerItalian": "Se vai al bar e dici che sei mio ospite, ti fanno lo sconto.",
+    "correctAnswerEnglish": "If you go to the bar and say you're my guest, they'll give you a discount.",
     "feedback": {
-      "correct": "Molto bene! La fortuna è dalla tua parte. / Very well! Luck is on your side.",
-      "incorrect": "Ops! La frase esprimeva sollievo per l'apertura. / Oops! The sentence expressed relief at the opening."
+      "correctItalian": "Esatto! Perk.",
+      "incorrectItalian": "No, 'Se vai al bar e dici che sei mio ospite, ti fanno lo sconto.' significa perk.",
+      "correctEnglish": "Correct! If you go to the bar and say you're my guest, they'll give you a discount. refers to Se vai al bar e dici che sei mio ospite, ti fanno lo sconto..",
+      "incorrectEnglish": "No, the correct word is If you go to the bar and say you're my guest, they'll give you a discount.."
     }
   },
   {
     "id": "s22-s31",
-    "italian": "Devi sollevare leggermente la maniglia mentre giri la chiave.",
-    "english": "You must lift the handle slightly while turning the key.",
+    "italian": "Ho suonato a tutti i nomi ma non risponde nessuno.",
+    "english": "I rang all the names but nobody answers.",
     "type": "sentence",
-    "choicesItalian": ["Devi sollevare leggermente la maniglia mentre giri la chiave.", "Spingi forte la porta con la spalla.", "Gira la chiave velocemente tre volte.", "Tira la maniglia verso il basso con forza."],
-    "choicesEnglish": ["You must lift the handle slightly while turning the key.", "Push the door hard with your shoulder.", "Turn the key quickly three times.", "Pull the handle downwards with force."],
-    "correctAnswerItalian": "Devi sollevare leggermente la maniglia mentre giri la chiave.",
-    "correctAnswerEnglish": "You must lift the handle slightly while turning the key.",
+    "choicesItalian": [
+      "Dov'è il bidone per la raccolta differenziata della carta?",
+      "Ho suonato a tutti i nomi ma non risponde nessuno.",
+      "Suona a Bianchi, è il vicino che mi fa da appoggio.",
+      "A quale nome devo suonare sul citofono?"
+    ],
+    "choicesEnglish": [
+      "Where is the bin for paper waste sorting?",
+      "I rang all the names but nobody answers.",
+      "Ring Bianchi, it's the neighbor who helps me out.",
+      "Which name should I ring on the intercom?"
+    ],
+    "correctAnswerItalian": "Ho suonato a tutti i nomi ma non risponde nessuno.",
+    "correctAnswerEnglish": "I rang all the names but nobody answers.",
     "feedback": {
-      "correct": "Ottimo! Un consiglio utile per serrature vecchie. / Great! A useful tip for old locks.",
-      "incorrect": "Riprova! Bisognava sollevare la maniglia. / Try again! You had to lift the handle."
+      "correctItalian": "Esatto! Troubleshooting.",
+      "incorrectItalian": "No, 'Ho suonato a tutti i nomi ma non risponde nessuno.' significa troubleshooting.",
+      "correctEnglish": "Correct! I rang all the names but nobody answers. refers to Ho suonato a tutti i nomi ma non risponde nessuno..",
+      "incorrectEnglish": "No, the correct word is I rang all the names but nobody answers.."
     }
   },
   {
     "id": "s22-s32",
-    "italian": "Non avere paura, la chiave non si rompe se forzi un po'.",
-    "english": "Don't be afraid, the key won't break if you force it a bit.",
+    "italian": "C'è un ingresso secondario dietro il palazzo, nel cortile.",
+    "english": "There is a secondary entrance behind the building, in the courtyard.",
     "type": "sentence",
-    "choicesItalian": ["Non avere paura, la chiave non si rompe se forzi un po'.", "Fai attenzione, la chiave è molto fragile.", "Usa solo la punta della chiave per aprire.", "Se la chiave non gira, non forzare mai."],
-    "choicesEnglish": ["Don't be afraid, the key won't break if you force it a bit.", "Be careful, the key is very fragile.", "Use only the tip of the key to open.", "If the key doesn't turn, never force it."],
-    "correctAnswerItalian": "Non avere paura, la chiave non si rompe se forzi un po'.",
-    "correctAnswerEnglish": "Non avere paura, la chiave non si rompe se forzi un po'.",
+    "choicesItalian": [
+      "Sali al secondo piano, l'appartamento è il numero 7.",
+      "La chiave entra ma ho paura di romperla se giro troppo.",
+      "C'è un ingresso secondario dietro il palazzo, nel cortile.",
+      "Ti faccio vedere come funziona il riscaldamento e la serratura."
+    ],
+    "choicesEnglish": [
+      "Go up to the second floor, the apartment is number 7.",
+      "The key goes in but I'm afraid of breaking it if I turn too much.",
+      "There is a secondary entrance behind the building, in the courtyard.",
+      "I'll show you how the heating and the lock work."
+    ],
+    "correctAnswerItalian": "C'è un ingresso secondario dietro il palazzo, nel cortile.",
+    "correctAnswerEnglish": "There is a secondary entrance behind the building, in the courtyard.",
     "feedback": {
-      "correct": "Bravo! L'host ti sta rassicurando. / Well done! The host is reassuring you.",
-      "incorrect": "Sbagliato! L'host suggeriva di forzare senza paura. / Wrong! The host suggested forcing without fear."
+      "correctItalian": "Esatto! Navigation.",
+      "incorrectItalian": "No, 'C'è un ingresso secondario dietro il palazzo, nel cortile.' significa navigation.",
+      "correctEnglish": "Correct! There is a secondary entrance behind the building, in the courtyard. refers to C'è un ingresso secondario dietro il palazzo, nel cortile..",
+      "incorrectEnglish": "No, the correct word is There is a secondary entrance behind the building, in the courtyard.."
     }
   },
   {
     "id": "s22-s33",
-    "italian": "Gira la chiave a sinistra e tira la porta verso di te.",
-    "english": "Turn the key to the left and pull the door towards you.",
+    "italian": "Il codice per il cancelletto di ferro verde è 5590.",
+    "english": "The code for the green iron gate is 5590.",
     "type": "sentence",
-    "choicesItalian": ["Gira la chiave a sinistra e tira la porta verso di te.", "Sposta la chiave a destra e spingi forte.", "Solleva la maniglia e gira a destra.", "Lascia la chiave nella toppa quando esci."],
-    "choicesEnglish": ["Turn the key to the left and pull the door towards you.", "Move the key to the right and push hard.", "Lift the handle and turn right.", "Leave the key in the keyhole when you leave."],
-    "correctAnswerItalian": "Gira la chiave a sinistra e tira la porta verso di te.",
-    "correctAnswerEnglish": "Turn the key to the left and pull the door towards you.",
+    "choicesItalian": [
+      "Sulla porta c'è una cassetta di sicurezza grigia.",
+      "Ho suonato a tutti i nomi ma non risponde nessuno.",
+      "Ruota i numeri, allinea il codice e poi tira la levetta.",
+      "Il codice per il cancelletto di ferro verde è 5590."
+    ],
+    "choicesEnglish": [
+      "On the door there is a gray lockbox.",
+      "I rang all the names but nobody answers.",
+      "Rotate the numbers, align the code and then pull the lever.",
+      "The code for the green iron gate is 5590."
+    ],
+    "correctAnswerItalian": "Il codice per il cancelletto di ferro verde è 5590.",
+    "correctAnswerEnglish": "The code for the green iron gate is 5590.",
     "feedback": {
-      "correct": "Perfetto! Hai capito come chiudere correttamente. / Perfect! You understood how to close correctly.",
-      "incorrect": "Ops! Dovevi girare a sinistra e tirare. / Oops! You had to turn left and pull."
+      "correctItalian": "Esatto! Specific code.",
+      "incorrectItalian": "No, 'Il codice per il cancelletto di ferro verde è 5590.' significa specific code.",
+      "correctEnglish": "Correct! The code for the green iron gate is 5590. refers to Il codice per il cancelletto di ferro verde è 5590..",
+      "incorrectEnglish": "No, the correct word is The code for the green iron gate is 5590.."
     }
   },
   {
     "id": "s22-s34",
-    "italian": "La cassetta delle chiavi è al primo piano dietro una pianta.",
-    "english": "The key box is on the first floor behind a plant.",
+    "italian": "Attraversa il cortile e prendi le scale interne.",
+    "english": "Cross the courtyard and take the internal stairs.",
     "type": "sentence",
-    "choicesItalian": ["La cassetta delle chiavi è al primo piano dietro una pianta.", "Troverai le chiavi al secondo piano, porta 7.", "Cerca la cassetta grigia fuori dal portone principale.", "L'host ti aspetta al bar con le chiavi."],
-    "choicesEnglish": ["The key box is on the first floor behind a plant.", "You will find the keys on the second floor, door 7.", "Look for the gray box outside the main door.", "The host is waiting for you at the bar with the keys."],
-    "correctAnswerItalian": "La cassetta delle chiavi è al primo piano dietro una pianta.",
-    "correctAnswerEnglish": "The key box is on the first floor behind a plant.",
+    "choicesItalian": [
+      "L'ascensore è in fondo a sinistra, sali al terzo piano.",
+      "Scusami ancora per il disturbo a quest'ora tarda.",
+      "Attraversa il cortile e prendi le scale interne.",
+      "La chiave è sotto lo zerbino marrone all'ingresso."
+    ],
+    "choicesEnglish": [
+      "The elevator is at the end on the left, go up to the third floor.",
+      "Sorry again for the disturbance at this late hour.",
+      "Cross the courtyard and take the internal stairs.",
+      "The key is under the brown doormat at the entrance."
+    ],
+    "correctAnswerItalian": "Attraversa il cortile e prendi le scale interne.",
+    "correctAnswerEnglish": "Cross the courtyard and take the internal stairs.",
     "feedback": {
-      "correct": "Eccellente! Luogo insolito ma sicuro. / Excellent! Unusual but safe place.",
-      "incorrect": "Sbagliato! Era al primo piano dietro una pianta. / Wrong! It was on the first floor behind a plant."
+      "correctItalian": "Esatto! Path.",
+      "incorrectItalian": "No, 'Attraversa il cortile e prendi le scale interne.' significa path.",
+      "correctEnglish": "Correct! Cross the courtyard and take the internal stairs. refers to Attraversa il cortile e prendi le scale interne..",
+      "incorrectEnglish": "No, the correct word is Cross the courtyard and take the internal stairs.."
     }
   },
   {
     "id": "s22-s35",
-    "italian": "Prendi la busta con il tuo nome dentro la cassetta.",
-    "english": "Take the envelope with your name inside the box.",
+    "italian": "La cassettina si è aperta al primo colpo, che sollievo!",
+    "english": "The lockbox opened on the first try, what a relief!",
     "type": "sentence",
-    "choicesItalian": ["Prendi la busta con il tuo nome dentro la cassetta.", "Le chiavi sono sciolte dentro la scatola di metallo.", "C'è un biglietto per te con le istruzioni del wifi.", "Prendi solo la chiave grande, quella piccola non serve."],
-    "choicesEnglish": ["Take the envelope with your name inside the box.", "The keys are loose inside the metal box.", "There is a note for you with wifi instructions.", "Take only the large key, the small one is not needed."],
-    "correctAnswerItalian": "Prendi la busta con il tuo nome dentro la cassetta.",
-    "correctAnswerEnglish": "Take the envelope with your name inside the box.",
+    "choicesItalian": [
+      "Sulla porta c'è una cassetta di sicurezza grigia.",
+      "A quale nome devo suonare sul citofono?",
+      "La cassettina si è aperta al primo colpo, che sollievo!",
+      "Apri la cassetta e prendi la busta con il tuo nome."
+    ],
+    "choicesEnglish": [
+      "On the door there is a gray lockbox.",
+      "Which name should I ring on the intercom?",
+      "The lockbox opened on the first try, what a relief!",
+      "Open the box and take the envelope with your name."
+    ],
+    "correctAnswerItalian": "La cassettina si è aperta al primo colpo, che sollievo!",
+    "correctAnswerEnglish": "The lockbox opened on the first try, what a relief!",
     "feedback": {
-      "correct": "Molto bene! Hai trovato il tuo pacchetto. / Very well! You found your package.",
-      "incorrect": "Riprova! Dovevi cercare la busta con il tuo nome. / Try again! You had to look for the envelope with your name."
+      "correctItalian": "Esatto! Emotional reaction.",
+      "incorrectItalian": "No, 'La cassettina si è aperta al primo colpo, che sollievo!' significa emotional reaction.",
+      "correctEnglish": "Correct! The lockbox opened on the first try, what a relief! refers to La cassettina si è aperta al primo colpo, che sollievo!.",
+      "incorrectEnglish": "No, the correct word is The lockbox opened on the first try, what a relief!."
     }
   },
   {
     "id": "s22-s36",
-    "italian": "A che ora devo lasciare l'appartamento l'ultimo giorno?",
-    "english": "What time do I have to leave the apartment on the last day?",
+    "italian": "La chiave entra ma ho paura di romperla se giro troppo.",
+    "english": "The key goes in but I'm afraid of breaking it if I turn too much.",
     "type": "sentence",
-    "choicesItalian": ["A che ora devo lasciare l'appartamento l'ultimo giorno?", "Posso restare fino a tardi domenica?", "Quando è previsto il check-in domani?", "Quanto costa il deposito bagagli?"],
-    "choicesEnglish": ["What time do I have to leave the apartment on the last day?", "Can I stay until late on Sunday?", "When is check-in scheduled for tomorrow?", "How much does luggage storage cost?"],
-    "correctAnswerItalian": "A che ora devo lasciare l'appartamento l'ultimo giorno?",
-    "correctAnswerEnglish": "What time do I have to leave the apartment on the last day?",
+    "choicesItalian": [
+      "La serratura è antica e bisogna avere un po' di pazienza.",
+      "Se non riesci a entrare, chiamami che scendo subito.",
+      "Se hai bisogno di lasciare le valigie, fammi sapere.",
+      "La chiave entra ma ho paura di romperla se giro troppo."
+    ],
+    "choicesEnglish": [
+      "The lock is ancient and you need to have a bit of patience.",
+      "If you can't get in, call me and I'll come down immediately.",
+      "If you need to leave your luggage, let me know.",
+      "The key goes in but I'm afraid of breaking it if I turn too much."
+    ],
+    "correctAnswerItalian": "La chiave entra ma ho paura di romperla se giro troppo.",
+    "correctAnswerEnglish": "The key goes in but I'm afraid of breaking it if I turn too much.",
     "feedback": {
-      "correct": "Ottimo! Chiedere l'orario di check-out è saggio. / Great! Asking for the check-out time is wise.",
-      "incorrect": "Ops! Stavi chiedendo l'orario di partenza. / Oops! You were asking for the departure time."
+      "correctItalian": "Esatto! Anxiety.",
+      "incorrectItalian": "No, 'La chiave entra ma ho paura di romperla se giro troppo.' significa anxiety.",
+      "correctEnglish": "Correct! The key goes in but I'm afraid of breaking it if I turn too much. refers to La chiave entra ma ho paura di romperla se giro troppo..",
+      "incorrectEnglish": "No, the correct word is The key goes in but I'm afraid of breaking it if I turn too much.."
     }
   },
   {
     "id": "s22-s37",
-    "italian": "Il check-out è entro le 11, ma posso essere flessibile.",
-    "english": "Check-out is by 11, but I can be flexible.",
+    "italian": "Solleva leggermente la maniglia verso l'alto mentre giri.",
+    "english": "Lift the handle slightly upwards while you turn.",
     "type": "sentence",
-    "choicesItalian": ["Il check-out è entro le 11, ma posso essere flessibile.", "Dovete uscire entro le 9 in punto.", "Non è possibile posticipare la partenza.", "L'appartamento deve essere libero alle 10."],
-    "choicesEnglish": ["Check-out is by 11, but I can be flexible.", "You must leave by 9 sharp.", "It's not possible to postpone the departure.", "The apartment must be free by 10."],
-    "correctAnswerItalian": "Il check-out è entro le 11, ma posso essere flessibile.",
-    "correctAnswerEnglish": "Il check-out è entro le 11, ma posso essere flessibile.",
+    "choicesItalian": [
+      "Solleva leggermente la maniglia verso l'alto mentre giri.",
+      "Grazie ancora, l'appartamento è davvero molto carino.",
+      "Il check-out è entro le 11 del mattino, va bene?",
+      "A volte è un po' dura, ma con calma si apre."
+    ],
+    "choicesEnglish": [
+      "Lift the handle slightly upwards while you turn.",
+      "Thanks again, the apartment is really very nice.",
+      "Check-out is by 11 AM, is that okay?",
+      "Sometimes it's a bit hard, but it opens if you're calm."
+    ],
+    "correctAnswerItalian": "Solleva leggermente la maniglia verso l'alto mentre giri.",
+    "correctAnswerEnglish": "Lift the handle slightly upwards while you turn.",
     "feedback": {
-      "correct": "Bravo! Un host flessibile è un tesoro. / Well done! A flexible host is a treasure.",
-      "incorrect": "Sbagliato! L'orario era le 11 con flessibilità. / Wrong! The time was 11 with flexibility."
+      "correctItalian": "Esatto! Tip.",
+      "incorrectItalian": "No, 'Solleva leggermente la maniglia verso l'alto mentre giri.' significa tip.",
+      "correctEnglish": "Correct! Lift the handle slightly upwards while you turn. refers to Solleva leggermente la maniglia verso l'alto mentre giri..",
+      "incorrectEnglish": "No, the correct word is Lift the handle slightly upwards while you turn.."
     }
   },
   {
     "id": "s22-s38",
-    "italian": "Le regole della casa sono nel cassetto del tavolo in cucina.",
-    "english": "The house rules are in the kitchen table drawer.",
+    "italian": "Prova a spingere con la spalla, senza paura di rompere nulla.",
+    "english": "Try to push with your shoulder, without fear of breaking anything.",
     "type": "sentence",
-    "choicesItalian": ["Le regole della casa sono nel cassetto del tavolo in cucina.", "Le istruzioni sono appese al muro del corridoio.", "Troverai tutto quello che ti serve nell'armadio.", "Le chiavi di scorta sono in salotto."],
-    "choicesEnglish": ["The house rules are in the kitchen table drawer.", "The instructions are hanging on the hallway wall.", "You will find everything you need in the wardrobe.", "The spare keys are in the living room."],
-    "correctAnswerItalian": "Le regole della casa sono nel cassetto del tavolo in cucina.",
-    "correctAnswerEnglish": "The house rules are in the kitchen table drawer.",
+    "choicesItalian": [
+      "Dentro troverai un foglio con tutte le informazioni utili.",
+      "Prova a spingere con la spalla, senza paura di rompere nulla.",
+      "Solleva leggermente la maniglia verso l'alto mentre giri.",
+      "Piove forte e non ho un posto al coperto dove aspettare."
+    ],
+    "choicesEnglish": [
+      "Inside you will find a sheet with all the useful information.",
+      "Try to push with your shoulder, without fear of breaking anything.",
+      "Lift the handle slightly upwards while you turn.",
+      "It's raining hard and I don't have a sheltered place to wait."
+    ],
+    "correctAnswerItalian": "Prova a spingere con la spalla, senza paura di rompere nulla.",
+    "correctAnswerEnglish": "Try to push with your shoulder, without fear of breaking anything.",
     "feedback": {
-      "correct": "Perfetto! Sai dove trovare le informazioni. / Perfect! You know where to find the information.",
-      "incorrect": "Riprova! Erano nel cassetto del tavolo in cucina. / Try again! They were in the kitchen table drawer."
+      "correctItalian": "Esatto! Using force.",
+      "incorrectItalian": "No, 'Prova a spingere con la spalla, senza paura di rompere nulla.' significa using force.",
+      "correctEnglish": "Correct! Try to push with your shoulder, without fear of breaking anything. refers to Prova a spingere con la spalla, senza paura di rompere nulla..",
+      "incorrectEnglish": "No, the correct word is Try to push with your shoulder, without fear of breaking anything.."
     }
   },
   {
     "id": "s22-s39",
-    "italian": "Imposti 21 gradi sul termostato e si scalda in fretta.",
-    "english": "Set 21 degrees on the thermostat and it heats up quickly.",
+    "italian": "Gira la chiave a sinistra e tira la porta verso di te.",
+    "english": "Turn the key to the left and pull the door towards you.",
     "type": "sentence",
-    "choicesItalian": ["Imposti 21 gradi sul termostato e si scalda in fretta.", "Accenda il riscaldamento solo di sera.", "Il termostato è automatico, non lo tocchi.", "Spegni tutto prima di andare a dormire."],
-    "choicesEnglish": ["Set 21 degrees on the thermostat and it heats up quickly.", "Turn on the heating only in the evening.", "The thermostat is automatic, don't touch it.", "Turn everything off before going to sleep."],
-    "correctAnswerItalian": "Imposti 21 gradi sul termostato e si scalda in fretta.",
-    "correctAnswerEnglish": "Set 21 degrees on the thermostat and it heats up quickly.",
+    "choicesItalian": [
+      "Gira la chiave a sinistra e tira la porta verso di te.",
+      "Se hai freddo, c'è una coperta in più nell'armadio.",
+      "Prova a spingere con la spalla, senza paura di rompere nulla.",
+      "Pronto? Sono davanti al palazzo ma il portone è chiuso."
+    ],
+    "choicesEnglish": [
+      "Turn the key to the left and pull the door towards you.",
+      "If you're cold, there's an extra blanket in the wardrobe.",
+      "Try to push with your shoulder, without fear of breaking anything.",
+      "Hello? I'm in front of the building but the main door is closed."
+    ],
+    "correctAnswerItalian": "Gira la chiave a sinistra e tira la porta verso di te.",
+    "correctAnswerEnglish": "Turn the key to the left and pull the door towards you.",
     "feedback": {
-      "correct": "Eccellente! Hai imparato a gestire il clima. / Excellent! You learned how to manage the climate.",
-      "incorrect": "Sbagliato! Dovevi impostare 21 gradi. / Wrong! You had to set it to 21 degrees."
+      "correctItalian": "Esatto! Closing instruction.",
+      "incorrectItalian": "No, 'Gira la chiave a sinistra e tira la porta verso di te.' significa closing instruction.",
+      "correctEnglish": "Correct! Turn the key to the left and pull the door towards you. refers to Gira la chiave a sinistra e tira la porta verso di te..",
+      "incorrectEnglish": "No, the correct word is Turn the key to the left and pull the door towards you.."
     }
   },
   {
     "id": "s22-s40",
-    "italian": "Ho suonato a tutti i nomi ma nessuno risponde.",
-    "english": "I rang all the names but no one answers.",
+    "italian": "Se hai freddo, c'è una coperta in più nell'armadio.",
+    "english": "If you're cold, there's an extra blanket in the wardrobe.",
     "type": "sentence",
-    "choicesItalian": ["Ho suonato a tutti i nomi ma nessuno risponde.", "Ho chiamato l'host ma il telefono è spento.", "Nessuno mi apre il portone, sono fuori.", "Ho trovato il nome giusto sul citofono."],
-    "choicesEnglish": ["I rang all the names but no one answers.", "I called the host but the phone is off.", "No one is opening the door for me, I'm outside.", "I found the right name on the intercom."],
-    "correctAnswerItalian": "Ho suonato a tutti i nomi ma nessuno risponde.",
-    "correctAnswerEnglish": "I rang all the names but no one answers.",
+    "choicesItalian": [
+      "Ah, finalmente sono dentro! Che fatica con queste chiavi.",
+      "Se hai freddo, c'è una coperta in più nell'armadio.",
+      "Grazie ancora, l'appartamento è davvero molto carino.",
+      "L'ascensore è in fondo a sinistra, sali al terzo piano."
+    ],
+    "choicesEnglish": [
+      "Ah, finally I'm in! What a struggle with these keys.",
+      "If you're cold, there's an extra blanket in the wardrobe.",
+      "Thanks again, the apartment is really very nice.",
+      "The elevator is at the end on the left, go up to the third floor."
+    ],
+    "correctAnswerItalian": "Se hai freddo, c'è una coperta in più nell'armadio.",
+    "correctAnswerEnglish": "If you're cold, there's an extra blanket in the wardrobe.",
     "feedback": {
-      "correct": "Bravo! Stai spiegando la situazione di stallo. / Well done! You are explaining the deadlock situation.",
-      "incorrect": "Ops! Nessuno rispondeva al citofono. / Oops! No one was answering the intercom."
+      "correctItalian": "Esatto! Comfort.",
+      "incorrectItalian": "No, 'Se hai freddo, c'è una coperta in più nell'armadio.' significa comfort.",
+      "correctEnglish": "Correct! If you're cold, there's an extra blanket in the wardrobe. refers to Se hai freddo, c'è una coperta in più nell'armadio..",
+      "incorrectEnglish": "No, the correct word is If you're cold, there's an extra blanket in the wardrobe.."
     }
   },
   {
     "id": "s22-s41",
-    "italian": "Attraversa il cortile interno e troverai una porta a vetri.",
-    "english": "Cross the inner courtyard and you will find a glass door.",
+    "italian": "La cassetta delle chiavi è al primo piano, dietro la pianta.",
+    "english": "The key box is on the first floor, behind the plant.",
     "type": "sentence",
-    "choicesItalian": ["Attraversa il cortile interno e troverai una porta a vetri.", "Sali le scale fino al secondo piano a destra.", "Prendi l'ascensore e scendi nel seminterrato.", "Esci dal palazzo e gira subito a sinistra."],
-    "choicesEnglish": ["Cross the inner courtyard and you will find a glass door.", "Go up the stairs to the second floor on the right.", "Take the elevator and go down to the basement.", "Leave the building and turn immediately left."],
-    "correctAnswerItalian": "Attraversa il cortile interno e troverai una porta a vetri.",
-    "correctAnswerEnglish": "Cross the inner courtyard and you will find a glass door.",
+    "choicesItalian": [
+      "Ho messo il codice giusto, ma la levetta non si muove.",
+      "C'è un ingresso secondario dietro il palazzo, nel cortile.",
+      "Ho suonato a tutti i nomi ma non risponde nessuno.",
+      "La cassetta delle chiavi è al primo piano, dietro la pianta."
+    ],
+    "choicesEnglish": [
+      "I put the right code, but the lever doesn't move.",
+      "There is a secondary entrance behind the building, in the courtyard.",
+      "I rang all the names but nobody answers.",
+      "The key box is on the first floor, behind the plant."
+    ],
+    "correctAnswerItalian": "La cassetta delle chiavi è al primo piano, dietro la pianta.",
+    "correctAnswerEnglish": "The key box is on the first floor, behind the plant.",
     "feedback": {
-      "correct": "Molto bene! Hai capito il percorso. / Very well! You understood the path.",
-      "incorrect": "Riprova! Cercavi la porta a vetri dopo il cortile. / Try again! You were looking for the glass door after the courtyard."
+      "correctItalian": "Esatto! Hiding spot.",
+      "incorrectItalian": "No, 'La cassetta delle chiavi è al primo piano, dietro la pianta.' significa hiding spot.",
+      "correctEnglish": "Correct! The key box is on the first floor, behind the plant. refers to La cassetta delle chiavi è al primo piano, dietro la pianta..",
+      "incorrectEnglish": "No, the correct word is The key box is on the first floor, behind the plant.."
     }
   },
   {
     "id": "s22-s42",
-    "italian": "La cassettina si è aperta subito, che sollievo!",
-    "english": "The small box opened immediately, what a relief!",
+    "italian": "Apri la cassetta e prendi la busta con il tuo nome.",
+    "english": "Open the box and take the envelope with your name.",
     "type": "sentence",
-    "choicesItalian": ["La cassettina si è aperta subito, che sollievo!", "Ho dovuto riprovare tre volte il codice.", "La chiave è bloccata dentro la cassetta.", "Non riesco a trovare il codice giusto."],
-    "choicesEnglish": ["The small box opened immediately, what a relief!", "I had to try the code three times.", "The key is stuck inside the box.", "I can't find the right code."],
-    "correctAnswerItalian": "La cassettina si è aperta subito, che sollievo!",
-    "correctAnswerEnglish": "The small box opened immediately, what a relief!",
+    "choicesItalian": [
+      "Un attimo, sto provando a inserire il codice... ecco.",
+      "Scusami ancora per il disturbo a quest'ora tarda.",
+      "Apri la cassetta e prendi la busta con il tuo nome.",
+      "C'è un ingresso secondario dietro il palazzo, nel cortile."
+    ],
+    "choicesEnglish": [
+      "One moment, I'm trying to enter the code... there.",
+      "Sorry again for the disturbance at this late hour.",
+      "Open the box and take the envelope with your name.",
+      "There is a secondary entrance behind the building, in the courtyard."
+    ],
+    "correctAnswerItalian": "Apri la cassetta e prendi la busta con il tuo nome.",
+    "correctAnswerEnglish": "Open the box and take the envelope with your name.",
     "feedback": {
-      "correct": "Ottimo! Finalmente le chiavi sono tue. / Great! Finally the keys are yours.",
-      "incorrect": "Sbagliato! La frase indicava un'apertura immediata. / Wrong! The sentence indicated an immediate opening."
+      "correctItalian": "Esatto! Action.",
+      "incorrectItalian": "No, 'Apri la cassetta e prendi la busta con il tuo nome.' significa action.",
+      "correctEnglish": "Correct! Open the box and take the envelope with your name. refers to Apri la cassetta e prendi la busta con il tuo nome..",
+      "incorrectEnglish": "No, the correct word is Open the box and take the envelope with your name.."
     }
   },
   {
     "id": "s22-s43",
-    "italian": "Ho fatto le pulizie ieri, è tutto in ordine.",
-    "english": "I did the cleaning yesterday, everything is in order.",
+    "italian": "Il check-out è entro le 11 del mattino, va bene?",
+    "english": "Check-out is by 11 AM, is that okay?",
     "type": "sentence",
-    "choicesItalian": ["Ho fatto le pulizie ieri, è tutto in ordine.", "L'appartamento è sporco, puoi venire a vedere?", "Le pulizie verranno fatte domani mattina.", "Non ho avuto tempo di pulire, mi dispiace."],
-    "choicesEnglish": ["I did the cleaning yesterday, everything is in order.", "The apartment is dirty, can you come see?", "The cleaning will be done tomorrow morning.", "I didn't have time to clean, I'm sorry."],
-    "correctAnswerItalian": "Ho fatto le pulizie ieri, è tutto in ordine.",
-    "correctAnswerEnglish": "I did the cleaning yesterday, everything is in order.",
+    "choicesItalian": [
+      "Il check-out è entro le 11 del mattino, va bene?",
+      "Sulla porta c'è una cassetta di sicurezza grigia.",
+      "Se hai freddo, c'è una coperta in più nell'armadio.",
+      "Dov'è il bidone per la raccolta differenziata della carta?"
+    ],
+    "choicesEnglish": [
+      "Check-out is by 11 AM, is that okay?",
+      "On the door there is a gray lockbox.",
+      "If you're cold, there's an extra blanket in the wardrobe.",
+      "Where is the bin for paper waste sorting?"
+    ],
+    "correctAnswerItalian": "Il check-out è entro le 11 del mattino, va bene?",
+    "correctAnswerEnglish": "Check-out is by 11 AM, is that okay?",
     "feedback": {
-      "correct": "Perfetto! Un appartamento pulito è essenziale. / Perfect! A clean apartment is essential.",
-      "incorrect": "Ops! L'host garantiva la pulizia dell'appartamento. / Oops! The host guaranteed the apartment's cleanliness."
+      "correctItalian": "Esatto! Scheduling.",
+      "incorrectItalian": "No, 'Il check-out è entro le 11 del mattino, va bene?' significa scheduling.",
+      "correctEnglish": "Correct! Check-out is by 11 AM, is that okay? refers to Il check-out è entro le 11 del mattino, va bene?.",
+      "incorrectEnglish": "No, the correct word is Check-out is by 11 AM, is that okay?."
     }
   },
   {
     "id": "s22-s44",
-    "italian": "Se hai freddo c'è una coperta in più nell'armadio.",
-    "english": "If you are cold there is an extra blanket in the wardrobe.",
+    "italian": "Se hai bisogno di lasciare le valigie, fammi sapere.",
+    "english": "If you need to leave your luggage, let me know.",
     "type": "sentence",
-    "choicesItalian": ["Se hai freddo c'è una coperta in più nell'armadio.", "Il riscaldamento è molto potente, non serve altro.", "Puoi accendere il camino in salotto se vuoi.", "Ti porto io un'altra coperta tra poco."],
-    "choicesEnglish": ["If you are cold there is an extra blanket in the wardrobe.", "The heating is very powerful, nothing else is needed.", "You can light the fireplace in the living room if you want.", "I'll bring you another blanket soon."],
-    "correctAnswerItalian": "Se hai freddo c'è una coperta in più nell'armadio.",
-    "correctAnswerEnglish": "Se hai freddo c'è una coperta in più nell'armadio.",
+    "choicesItalian": [
+      "Scusami ancora per il disturbo a quest'ora tarda.",
+      "Se hai bisogno di lasciare le valigie, fammi sapere.",
+      "C'è un problema con la caldaia, il tecnico arriva domani.",
+      "Sali al secondo piano, l'appartamento è il numero 7."
+    ],
+    "choicesEnglish": [
+      "Sorry again for the disturbance at this late hour.",
+      "If you need to leave your luggage, let me know.",
+      "There's a problem with the boiler, the technician arrives tomorrow.",
+      "Go up to the second floor, the apartment is number 7."
+    ],
+    "correctAnswerItalian": "Se hai bisogno di lasciare le valigie, fammi sapere.",
+    "correctAnswerEnglish": "If you need to leave your luggage, let me know.",
     "feedback": {
-      "correct": "Bravo! Hai trovato come stare al caldo. / Well done! You found how to stay warm.",
-      "incorrect": "Riprova! La coperta era nell'armadio. / Try again! The blanket was in the wardrobe."
+      "correctItalian": "Esatto! Support.",
+      "incorrectItalian": "No, 'Se hai bisogno di lasciare le valigie, fammi sapere.' significa support.",
+      "correctEnglish": "Correct! If you need to leave your luggage, let me know. refers to Se hai bisogno di lasciare le valigie, fammi sapere..",
+      "incorrectEnglish": "No, the correct word is If you need to leave your luggage, let me know.."
     }
   },
   {
     "id": "s22-s45",
-    "italian": "Il tecnico del citofono arriverà domani mattina.",
-    "english": "The intercom technician will arrive tomorrow morning.",
+    "italian": "Ah ok, ho capito tutto. Grazie mille per l'aiuto!",
+    "english": "Ah ok, I understood everything. Thanks a lot for the help!",
     "type": "sentence",
-    "choicesItalian": ["Il tecnico del citofono arriverà domani mattina.", "Ho già riparato il citofono, ora funziona.", "Non serve il tecnico, basta spingere forte.", "Il tecnico è già passato oggi pomeriggio."],
-    "choicesEnglish": ["The intercom technician will arrive tomorrow morning.", "I already fixed the intercom, it works now.", "No need for a technician, just push hard.", "The technician already came this afternoon."],
-    "correctAnswerItalian": "Il tecnico del citofono arriverà domani mattina.",
-    "correctAnswerEnglish": "The intercom technician will arrive tomorrow morning.",
+    "choicesItalian": [
+      "Ah ok, ho capito tutto. Grazie mille per l'aiuto!",
+      "Il check-out è entro le 11 del mattino, va bene?",
+      "Speriamo che il citofono venga riparato presto dal tecnico.",
+      "C'è un cappuccino pronto per te al bar qui sotto."
+    ],
+    "choicesEnglish": [
+      "Ah ok, I understood everything. Thanks a lot for the help!",
+      "Check-out is by 11 AM, is that okay?",
+      "Let's hope the intercom is repaired soon by the technician.",
+      "There's a cappuccino ready for you at the bar down here."
+    ],
+    "correctAnswerItalian": "Ah ok, ho capito tutto. Grazie mille per l'aiuto!",
+    "correctAnswerEnglish": "Ah ok, I understood everything. Thanks a lot for the help!",
     "feedback": {
-      "correct": "Ottimo! Il problema verrà risolto presto. / Great! The problem will be solved soon.",
-      "incorrect": "Sbagliato! Il tecnico arriverà domani mattina. / Wrong! The technician will arrive tomorrow morning."
+      "correctItalian": "Esatto! Acknowledgment.",
+      "incorrectItalian": "No, 'Ah ok, ho capito tutto. Grazie mille per l'aiuto!' significa acknowledgment.",
+      "correctEnglish": "Correct! Ah ok, I understood everything. Thanks a lot for the help! refers to Ah ok, ho capito tutto. Grazie mille per l'aiuto!.",
+      "incorrectEnglish": "No, the correct word is Ah ok, I understood everything. Thanks a lot for the help!."
     }
   },
   {
     "id": "s22-s46",
-    "italian": "Scusa per il ritardo, ho parcheggiato lontano.",
-    "english": "Sorry for the delay, I parked far away.",
+    "italian": "Speriamo che il citofono venga riparato presto dal tecnico.",
+    "english": "Let's hope the intercom is repaired soon by the technician.",
     "type": "sentence",
-    "choicesItalian": ["Scusa per il ritardo, ho parcheggiato lontano.", "Sono arrivato prima perché non c'era traffico.", "Non trovavo il palazzo, mi sono perso.", "Ho avuto un contrattempo all'ultimo minuto."],
-    "choicesEnglish": ["Sorry for the delay, I parked far away.", "I arrived earlier because there was no traffic.", "I couldn't find the building, I got lost.", "I had a setback at the last minute."],
-    "correctAnswerItalian": "Scusa per il ritardo, ho parcheggiato lontano.",
-    "correctAnswerEnglish": "Sorry for the delay, I parked far away.",
+    "choicesItalian": [
+      "Il codice è 4832, poi premi il tasto con la chiave.",
+      "Speriamo che il citofono venga riparato presto dal tecnico.",
+      "Se non riesci a entrare, chiamami che scendo subito.",
+      "Niente da fare, non si muove. Puoi venire ad aiutarmi?"
+    ],
+    "choicesEnglish": [
+      "The code is 4832, then press the button with the key.",
+      "Let's hope the intercom is repaired soon by the technician.",
+      "If you can't get in, call me and I'll come down immediately.",
+      "Nothing to do, it won't move. Can you come help me?"
+    ],
+    "correctAnswerItalian": "Speriamo che il citofono venga riparato presto dal tecnico.",
+    "correctAnswerEnglish": "Let's hope the intercom is repaired soon by the technician.",
     "feedback": {
-      "correct": "Bravo! Una scusa valida per il ritardo. / Well done! A valid excuse for the delay.",
-      "incorrect": "Ops! Il parcheggio lontano era la causa del ritardo. / Oops! Parking far away was the cause of the delay."
+      "correctItalian": "Esatto! Wishing.",
+      "incorrectItalian": "No, 'Speriamo che il citofono venga riparato presto dal tecnico.' significa wishing.",
+      "correctEnglish": "Correct! Let's hope the intercom is repaired soon by the technician. refers to Speriamo che il citofono venga riparato presto dal tecnico..",
+      "incorrectEnglish": "No, the correct word is Let's hope the intercom is repaired soon by the technician.."
     }
   },
   {
     "id": "s22-s47",
-    "italian": "Piacere di conoscerti di persona, benvenuto!",
-    "english": "Nice to meet you in person, welcome!",
+    "italian": "Non trovo la password del wifi, puoi dirmela tu?",
+    "english": "I can't find the wifi password, can you tell me?",
     "type": "sentence",
-    "choicesItalian": ["Piacere di conoscerti di persona, benvenuto!", "Arrivederci, ci sentiamo per il check-out.", "Buongiorno, come è andato il viaggio?", "Salve, sono Marco, il proprietario."],
-    "choicesEnglish": ["Nice to meet you in person, welcome!", "Goodbye, we'll talk for check-out.", "Good morning, how was the trip?", "Hello, I'm Marco, the owner."],
-    "correctAnswerItalian": "Piacere di conoscerti di persona, benvenuto!",
-    "correctAnswerEnglish": "Nice to meet you in person, welcome!",
+    "choicesItalian": [
+      "Non trovo la password del wifi, puoi dirmela tu?",
+      "La porta è la lettera B, proprio accanto all'ascensore.",
+      "Hai ricevuto la notifica con i codici di accesso?",
+      "La levetta è un po' dura, prova a tirare più forte."
+    ],
+    "choicesEnglish": [
+      "I can't find the wifi password, can you tell me?",
+      "The door is letter B, right next to the elevator.",
+      "Did you receive the notification with the access codes?",
+      "The lever is a bit hard, try pulling harder."
+    ],
+    "correctAnswerItalian": "Non trovo la password del wifi, puoi dirmela tu?",
+    "correctAnswerEnglish": "I can't find the wifi password, can you tell me?",
     "feedback": {
-      "correct": "Perfetto! Un'accoglienza molto cordiale. / Perfect! A very cordial welcome.",
-      "incorrect": "Riprova! La frase esprimeva piacere nel conoscersi. / Try again! The sentence expressed pleasure in meeting."
+      "correctItalian": "Esatto! Request.",
+      "incorrectItalian": "No, 'Non trovo la password del wifi, puoi dirmela tu?' significa request.",
+      "correctEnglish": "Correct! I can't find the wifi password, can you tell me? refers to Non trovo la password del wifi, puoi dirmela tu?.",
+      "incorrectEnglish": "No, the correct word is I can't find the wifi password, can you tell me?."
     }
   },
   {
     "id": "s22-s48",
-    "italian": "Solo questa valigia e uno zaino, posso fare le scale.",
-    "english": "Only this suitcase and a backpack, I can take the stairs.",
+    "italian": "La serratura è antica e bisogna avere un po' di pazienza.",
+    "english": "The lock is ancient and you need to have a bit of patience.",
     "type": "sentence",
-    "choicesItalian": ["Solo questa valigia e uno zaino, posso fare le scale.", "Ho troppi bagagli, mi serve l'ascensore.", "Posso lasciare qui la valigia grande?", "Il mio zaino è molto pesante, mi aiuti?"],
-    "choicesEnglish": ["Only this suitcase and a backpack, I can take the stairs.", "I have too much luggage, I need the elevator.", "Can I leave the large suitcase here?", "My backpack is very heavy, can you help me?"],
-    "correctAnswerItalian": "Solo questa valigia e uno zaino, posso fare le scale.",
-    "correctAnswerEnglish": "Only this suitcase and a backpack, I can take the stairs.",
+    "choicesItalian": [
+      "C'è un cappuccino pronto per te al bar qui sotto.",
+      "A volte è un po' dura, ma con calma si apre.",
+      "La serratura è antica e bisogna avere un po' di pazienza.",
+      "Suona a Bianchi, è il vicino che mi fa da appoggio."
+    ],
+    "choicesEnglish": [
+      "There's a cappuccino ready for you at the bar down here.",
+      "Sometimes it's a bit hard, but it opens if you're calm.",
+      "The lock is ancient and you need to have a bit of patience.",
+      "Ring Bianchi, it's the neighbor who helps me out."
+    ],
+    "correctAnswerItalian": "La serratura è antica e bisogna avere un po' di pazienza.",
+    "correctAnswerEnglish": "The lock is ancient and you need to have a bit of patience.",
     "feedback": {
-      "correct": "Molto bene! Sei in forma e pronto a salire. / Very well! You are fit and ready to go up.",
-      "incorrect": "Sbagliato! Potevi fare le scale con i tuoi bagagli. / Wrong! You could take the stairs with your luggage."
+      "correctItalian": "Esatto! Philosophy.",
+      "incorrectItalian": "No, 'La serratura è antica e bisogna avere un po' di pazienza.' significa philosophy.",
+      "correctEnglish": "Correct! The lock is ancient and you need to have a bit of patience. refers to La serratura è antica e bisogna avere un po' di pazienza..",
+      "incorrectEnglish": "No, the correct word is The lock is ancient and you need to have a bit of patience.."
     }
   },
   {
     "id": "s22-s49",
-    "italian": "Apro io per farti vedere come funziona la serratura.",
-    "english": "I'll open it to show you how the lock works.",
+    "italian": "Dov'è il bidone per la raccolta differenziata della carta?",
+    "english": "Where is the bin for paper waste sorting?",
     "type": "sentence",
-    "choicesItalian": ["Apro io per farti vedere come funziona la serratura.", "Prova tu ad aprire la porta ora.", "La serratura è nuova e molto semplice.", "Non serve vedere come funziona, ho capito."],
-    "choicesEnglish": ["I'll open it to show you how the lock works.", "You try opening the door now.", "The lock is new and very simple.", "No need to see how it works, I understand."],
-    "correctAnswerItalian": "Apro io per farti vedere come funziona la serratura.",
-    "correctAnswerEnglish": "I'll open it to show you how the lock works.",
+    "choicesItalian": [
+      "Dov'è il bidone per la raccolta differenziata della carta?",
+      "Ricordati di chiudere bene il portone quando entri.",
+      "Scusami ancora per il disturbo a quest'ora tarda.",
+      "Posso avere un altro asciugamano per la doccia?"
+    ],
+    "choicesEnglish": [
+      "Where is the bin for paper waste sorting?",
+      "Remember to close the main door well when you enter.",
+      "Sorry again for the disturbance at this late hour.",
+      "Can I have another towel for the shower?"
+    ],
+    "correctAnswerItalian": "Dov'è il bidone per la raccolta differenziata della carta?",
+    "correctAnswerEnglish": "Where is the bin for paper waste sorting?",
     "feedback": {
-      "correct": "Eccellente! Una dimostrazione pratica è sempre meglio. / Excellent! A practical demonstration is always better.",
-      "incorrect": "Ops! L'host voleva mostrarti la serratura. / Oops! The host wanted to show you the lock."
+      "correctItalian": "Esatto! Housekeeping.",
+      "incorrectItalian": "No, 'Dov'è il bidone per la raccolta differenziata della carta?' significa housekeeping.",
+      "correctEnglish": "Correct! Where is the bin for paper waste sorting? refers to Dov'è il bidone per la raccolta differenziata della carta?.",
+      "incorrectEnglish": "No, the correct word is Where is the bin for paper waste sorting?."
     }
   },
   {
     "id": "s22-s50",
-    "italian": "Se hai bisogno di più tempo per il check-out dimmelo.",
-    "english": "If you need more time for check-out tell me.",
+    "italian": "C'è un cappuccino pronto per te al bar qui sotto.",
+    "english": "There's a cappuccino ready for you at the bar down here.",
     "type": "sentence",
-    "choicesItalian": ["Se hai bisogno di più tempo per il check-out dimmelo.", "L'orario di uscita è fisso e non cambia.", "Devi lasciarmi le chiavi sul tavolo alle 10.", "Ti chiamo io l'ultimo giorno per l'orario."],
-    "choicesEnglish": ["If you need more time for check-out tell me.", "The exit time is fixed and doesn't change.", "You must leave the keys for me on the table at 10.", "I'll call you on the last day for the time."],
-    "correctAnswerItalian": "Se hai bisogno di più tempo per il check-out dimmelo.",
-    "correctAnswerEnglish": "If you need more time for check-out tell me.",
+    "choicesItalian": [
+      "Oddio, hai ragione, questa serratura è veramente durissima!",
+      "Se hai freddo, c'è una coperta in più nell'armadio.",
+      "La chiave è sotto lo zerbino marrone all'ingresso.",
+      "C'è un cappuccino pronto per te al bar qui sotto."
+    ],
+    "choicesEnglish": [
+      "Oh god, you're right, this lock is really very hard!",
+      "If you're cold, there's an extra blanket in the wardrobe.",
+      "The key is under the brown doormat at the entrance.",
+      "There's a cappuccino ready for you at the bar down here."
+    ],
+    "correctAnswerItalian": "C'è un cappuccino pronto per te al bar qui sotto.",
+    "correctAnswerEnglish": "There's a cappuccino ready for you at the bar down here.",
     "feedback": {
-      "correct": "Ottimo! Flessibilità molto apprezzata dai viaggiatori. / Great! Flexibility much appreciated by travelers.",
-      "incorrect": "Riprova! L'host offriva tempo extra se necessario. / Try again! The host offered extra time if needed."
+      "correctItalian": "Esatto! Hospitality.",
+      "incorrectItalian": "No, 'C'è un cappuccino pronto per te al bar qui sotto.' significa hospitality.",
+      "correctEnglish": "Correct! There's a cappuccino ready for you at the bar down here. refers to C'è un cappuccino pronto per te al bar qui sotto..",
+      "incorrectEnglish": "No, the correct word is There's a cappuccino ready for you at the bar down here.."
     }
   },
   {
     "id": "s22-s51",
-    "italian": "La serratura è antica e va inserita la chiave fino in fondo.",
-    "english": "The lock is ancient and the key must be inserted all the way.",
+    "italian": "Sali al secondo piano, l'appartamento è il numero 7.",
+    "english": "Go up to the second floor, the apartment is number 7.",
     "type": "sentence",
-    "choicesItalian": ["La serratura è antica e va inserita la chiave fino in fondo.", "Basta inserire la punta della chiave e girare.", "La serratura è elettronica, serve un codice.", "Usa solo la chiave grande per aprire la porta."],
-    "choicesEnglish": ["The lock is ancient and the key must be inserted all the way.", "Just insert the tip of the key and turn.", "The lock is electronic, a code is needed.", "Use only the large key to open the door."],
-    "correctAnswerItalian": "La serratura è antica e va inserita la chiave fino in fondo.",
-    "correctAnswerEnglish": "The lock is ancient and the key must be inserted all the way.",
+    "choicesItalian": [
+      "Sulla porta c'è una cassetta di sicurezza grigia.",
+      "Se non riesci a entrare, chiamami che scendo subito.",
+      "Sali al secondo piano, l'appartamento è il numero 7.",
+      "Il codice per il cancelletto di ferro verde è 5590."
+    ],
+    "choicesEnglish": [
+      "On the door there is a gray lockbox.",
+      "If you can't get in, call me and I'll come down immediately.",
+      "Go up to the second floor, the apartment is number 7.",
+      "The code for the green iron gate is 5590."
+    ],
+    "correctAnswerItalian": "Sali al secondo piano, l'appartamento è il numero 7.",
+    "correctAnswerEnglish": "Go up to the second floor, the apartment is number 7.",
     "feedback": {
-      "correct": "Bravo! Un dettaglio tecnico fondamentale. / Well done! A fundamental technical detail.",
-      "incorrect": "Sbagliato! La chiave va inserita fino in fondo. / Wrong! The key must be inserted all the way."
+      "correctItalian": "Esatto! Direction.",
+      "incorrectItalian": "No, 'Sali al secondo piano, l'appartamento è il numero 7.' significa direction.",
+      "correctEnglish": "Correct! Go up to the second floor, the apartment is number 7. refers to Sali al secondo piano, l'appartamento è il numero 7..",
+      "incorrectEnglish": "No, the correct word is Go up to the second floor, the apartment is number 7.."
     }
   },
   {
     "id": "s22-s52",
-    "italian": "Fai attenzione a non chiuderti fuori senza chiavi.",
-    "english": "Be careful not to lock yourself out without keys.",
+    "italian": "Ricordati di chiudere bene il portone quando entri.",
+    "english": "Remember to close the main door well when you enter.",
     "type": "sentence",
-    "choicesItalian": ["Fai attenzione a non chiuderti fuori senza chiavi.", "Puoi lasciare le chiavi dentro casa quando esci.", "Porta sempre con te il mazzo di chiavi.", "La porta si chiude da sola dietro di te."],
-    "choicesEnglish": ["Be careful not to lock yourself out without keys.", "You can leave the keys inside the house when you go out.", "Always carry the set of keys with you.", "The door closes by itself behind you."],
-    "correctAnswerItalian": "Fai attenzione a non chiuderti fuori senza chiavi.",
-    "correctAnswerEnglish": "Fai attenzione a non chiuderti fuori senza chiavi.",
+    "choicesItalian": [
+      "Se non riesci a entrare, chiamami che scendo subito.",
+      "Ricordati di chiudere bene il portone quando entri.",
+      "Gira la chiave a sinistra e tira la porta verso di te.",
+      "La cassettina si è aperta al primo colpo, che sollievo!"
+    ],
+    "choicesEnglish": [
+      "If you can't get in, call me and I'll come down immediately.",
+      "Remember to close the main door well when you enter.",
+      "Turn the key to the left and pull the door towards you.",
+      "The lockbox opened on the first try, what a relief!"
+    ],
+    "correctAnswerItalian": "Ricordati di chiudere bene il portone quando entri.",
+    "correctAnswerEnglish": "Remember to close the main door well when you enter.",
     "feedback": {
-      "correct": "Perfetto! Un consiglio di sopravvivenza urbana. / Perfect! A tip for urban survival.",
-      "incorrect": "Ops! L'avvertimento era di non restare fuori senza chiavi. / Oops! The warning was not to stay out without keys."
+      "correctItalian": "Esatto! Security.",
+      "incorrectItalian": "No, 'Ricordati di chiudere bene il portone quando entri.' significa security.",
+      "correctEnglish": "Correct! Remember to close the main door well when you enter. refers to Ricordati di chiudere bene il portone quando entri..",
+      "incorrectEnglish": "No, the correct word is Remember to close the main door well when you enter.."
     }
   },
   {
     "id": "s22-s53",
-    "italian": "La cassetta delle chiavi è nascosta dietro una pianta finta.",
-    "english": "The key box is hidden behind a fake plant.",
+    "italian": "La levetta è un po' dura, prova a tirare più forte.",
+    "english": "The lever is a bit hard, try pulling harder.",
     "type": "sentence",
-    "choicesItalian": ["La cassetta delle chiavi è nascosta dietro una pianta finta.", "Troverai le chiavi sotto un vaso di fiori veri.", "La cassetta è ben visibile accanto alla porta.", "Cerca la chiave appesa all'ingresso del palazzo."],
-    "choicesEnglish": ["The key box is hidden behind a fake plant.", "You will find the keys under a real flower pot.", "The box is clearly visible next to the door.", "Look for the key hanging at the building entrance."],
-    "correctAnswerItalian": "La cassetta delle chiavi è nascosta dietro una pianta finta.",
-    "correctAnswerEnglish": "The key box is hidden behind a fake plant.",
+    "choicesItalian": [
+      "Ho suonato a tutti i nomi ma non risponde nessuno.",
+      "Gira la chiave a sinistra e tira la porta verso di te.",
+      "La levetta è un po' dura, prova a tirare più forte.",
+      "Se hai bisogno di lasciare le valigie, fammi sapere."
+    ],
+    "choicesEnglish": [
+      "I rang all the names but nobody answers.",
+      "Turn the key to the left and pull the door towards you.",
+      "The lever is a bit hard, try pulling harder.",
+      "If you need to leave your luggage, let me know."
+    ],
+    "correctAnswerItalian": "La levetta è un po' dura, prova a tirare più forte.",
+    "correctAnswerEnglish": "The lever is a bit hard, try pulling harder.",
     "feedback": {
-      "correct": "Ottimo! Hai capito il nascondiglio. / Great! You understood the hiding place.",
-      "incorrect": "Riprova! La pianta era finta. / Try again! The plant was fake."
+      "correctItalian": "Esatto! Help.",
+      "incorrectItalian": "No, 'La levetta è un po' dura, prova a tirare più forte.' significa help.",
+      "correctEnglish": "Correct! The lever is a bit hard, try pulling harder. refers to La levetta è un po' dura, prova a tirare più forte..",
+      "incorrectEnglish": "No, the correct word is The lever is a bit hard, try pulling harder.."
     }
   },
   {
     "id": "s22-s54",
-    "italian": "Prendi la busta con su scritto il tuo cognome.",
-    "english": "Take the envelope with your surname written on it.",
+    "italian": "Hai ricevuto la notifica con i codici di accesso?",
+    "english": "Did you receive the notification with the access codes?",
     "type": "sentence",
-    "choicesItalian": ["Prendi la busta con su scritto il tuo cognome.", "Cerca il tuo nome sulla porta dell'appartamento.", "Le chiavi sono dentro una scatola anonima.", "Prendi la prima busta che trovi nella cassetta."],
-    "choicesEnglish": ["Take the envelope with your surname written on it.", "Look for your name on the apartment door.", "The keys are inside an anonymous box.", "Take the first envelope you find in the box."],
-    "correctAnswerItalian": "Prendi la busta con su scritto il tuo cognome.",
-    "correctAnswerEnglish": "Take the envelope with your surname written on it.",
+    "choicesItalian": [
+      "Hai ricevuto la notifica con i codici di accesso?",
+      "Niente da fare, non si muove. Puoi venire ad aiutarmi?",
+      "Vai al bar accanto, ti raggiungo tra dieci minuti.",
+      "Ricordati di chiudere bene il portone quando entri."
+    ],
+    "choicesEnglish": [
+      "Did you receive the notification with the access codes?",
+      "Nothing to do, it won't move. Can you come help me?",
+      "Go to the bar next door, I'll reach you in ten minutes.",
+      "Remember to close the main door well when you enter."
+    ],
+    "correctAnswerItalian": "Hai ricevuto la notifica con i codici di accesso?",
+    "correctAnswerEnglish": "Did you receive the notification with the access codes?",
     "feedback": {
-      "correct": "Molto bene! Hai identificato il tuo pacchetto. / Very well! You identified your package.",
-      "incorrect": "Sbagliato! Cercavi la busta con il tuo cognome. / Wrong! You were looking for the envelope with your surname."
+      "correctItalian": "Esatto! Check.",
+      "incorrectItalian": "No, 'Hai ricevuto la notifica con i codici di accesso?' significa check.",
+      "correctEnglish": "Correct! Did you receive the notification with the access codes? refers to Hai ricevuto la notifica con i codici di accesso?.",
+      "incorrectEnglish": "No, the correct word is Did you receive the notification with the access codes?."
     }
   },
   {
     "id": "s22-s55",
-    "italian": "La chiave piccola è per il portone e quella grande per l'appartamento.",
-    "english": "The small key is for the main door and the large one for the apartment.",
+    "italian": "Sono nel vicolo ma non vedo il cancello verde.",
+    "english": "I'm in the alley but I don't see the green gate.",
     "type": "sentence",
-    "choicesItalian": ["La chiave piccola è per il portone e quella grande per l'appartamento.", "Usa la chiave grande per tutto.", "La chiave magnetica serve per il portone esterno.", "Le due chiavi sono identiche, non puoi sbagliare."],
-    "choicesEnglish": ["The small key is for the main door and the large one for the apartment.", "Use the large key for everything.", "The magnetic key is for the external door.", "The two keys are identical, you can't go wrong."],
-    "correctAnswerItalian": "La chiave piccola è per il portone e quella grande per l'appartamento.",
-    "correctAnswerEnglish": "La chiave piccola è per il portone e quella grande per l'appartamento.",
+    "choicesItalian": [
+      "Grazie ancora, l'appartamento è davvero molto carino.",
+      "C'è un cappuccino pronto per te al bar qui sotto.",
+      "Scusami ancora per il disturbo a quest'ora tarda.",
+      "Sono nel vicolo ma non vedo il cancello verde."
+    ],
+    "choicesEnglish": [
+      "Thanks again, the apartment is really very nice.",
+      "There's a cappuccino ready for you at the bar down here.",
+      "Sorry again for the disturbance at this late hour.",
+      "I'm in the alley but I don't see the green gate."
+    ],
+    "correctAnswerItalian": "Sono nel vicolo ma non vedo il cancello verde.",
+    "correctAnswerEnglish": "I'm in the alley but I don't see the green gate.",
     "feedback": {
-      "correct": "Bravo! Hai capito la differenza tra le chiavi. / Well done! You understood the difference between the keys.",
-      "incorrect": "Ops! La piccola era per il portone. / Oops! The small one was for the main door."
+      "correctItalian": "Esatto! Lost.",
+      "incorrectItalian": "No, 'Sono nel vicolo ma non vedo il cancello verde.' significa lost.",
+      "correctEnglish": "Correct! I'm in the alley but I don't see the green gate. refers to Sono nel vicolo ma non vedo il cancello verde..",
+      "incorrectEnglish": "No, the correct word is I'm in the alley but I don't see the green gate.."
     }
   },
   {
     "id": "s22-s56",
-    "italian": "Dì che stai nel mio appartamento e ti fanno lo sconto al bar.",
-    "english": "Say you are staying in my apartment and they'll give you a discount at the bar.",
+    "italian": "Il riscaldamento si accende automaticamente la sera.",
+    "english": "The heating turns on automatically in the evening.",
     "type": "sentence",
-    "choicesItalian": ["Dì che stai nel mio appartamento e ti fanno lo sconto al bar.", "Il bar è molto caro, ti sconsiglio di andarci.", "Non serve dire nulla, i prezzi sono fissi.", "Chiedi lo sconto per studenti se puoi."],
-    "choicesEnglish": ["Say you are staying in my apartment and they'll give you a discount at the bar.", "The bar is very expensive, I advise against going.", "No need to say anything, the prices are fixed.", "Ask for the student discount if you can."],
-    "correctAnswerItalian": "Dì che stai nel mio appartamento e ti fanno lo sconto al bar.",
-    "correctAnswerEnglish": "Dì che stai nel mio appartamento e ti fanno lo sconto al bar.",
+    "choicesItalian": [
+      "La porta è la lettera B, proprio accanto all'ascensore.",
+      "Il riscaldamento si accende automaticamente la sera.",
+      "Ruota i numeri, allinea il codice e poi tira la levetta.",
+      "Suona a Bianchi, è il vicino che mi fa da appoggio."
+    ],
+    "choicesEnglish": [
+      "The door is letter B, right next to the elevator.",
+      "The heating turns on automatically in the evening.",
+      "Rotate the numbers, align the code and then pull the lever.",
+      "Ring Bianchi, it's the neighbor who helps me out."
+    ],
+    "correctAnswerItalian": "Il riscaldamento si accende automaticamente la sera.",
+    "correctAnswerEnglish": "The heating turns on automatically in the evening.",
     "feedback": {
-      "correct": "Perfetto! Un vantaggio extra molto gradito. / Perfect! A very welcome extra benefit.",
-      "incorrect": "Sbagliato! Lo sconto era legato all'appartamento dell'host. / Wrong! The discount was linked to the host's apartment."
+      "correctItalian": "Esatto! Info.",
+      "incorrectItalian": "No, 'Il riscaldamento si accende automaticamente la sera.' significa info.",
+      "correctEnglish": "Correct! The heating turns on automatically in the evening. refers to Il riscaldamento si accende automaticamente la sera..",
+      "incorrectEnglish": "No, the correct word is The heating turns on automatically in the evening.."
     }
   },
   {
     "id": "s22-s57",
-    "italian": "Il riscaldamento si scalda in fretta, non si preoccupi.",
-    "english": "The heating warms up quickly, don't worry.",
+    "italian": "C'è un problema con la caldaia, il tecnico arriva domani.",
+    "english": "There's a problem with the boiler, the technician arrives tomorrow.",
     "type": "sentence",
-    "choicesItalian": ["Il riscaldamento si scalda in fretta, non si preoccupi.", "Ci vuole molto tempo prima di avere caldo.", "Il riscaldamento è lento e rumoroso.", "L'appartamento è sempre freddo d'inverno."],
-    "choicesEnglish": ["The heating warms up quickly, don't worry.", "It takes a long time before getting warm.", "The heating is slow and noisy.", "The apartment is always cold in winter."],
-    "correctAnswerItalian": "Il riscaldamento si scalda in fretta, non si preoccupi.",
-    "correctAnswerEnglish": "The heating warms up quickly, don't worry.",
+    "choicesItalian": [
+      "Ti faccio vedere come funziona il riscaldamento e la serratura.",
+      "C'è un problema con la caldaia, il tecnico arriva domani.",
+      "L'ascensore è in fondo a sinistra, sali al terzo piano.",
+      "C'è un cappuccino pronto per te al bar qui sotto."
+    ],
+    "choicesEnglish": [
+      "I'll show you how the heating and the lock work.",
+      "There's a problem with the boiler, the technician arrives tomorrow.",
+      "The elevator is at the end on the left, go up to the third floor.",
+      "There's a cappuccino ready for you at the bar down here."
+    ],
+    "correctAnswerItalian": "C'è un problema con la caldaia, il tecnico arriva domani.",
+    "correctAnswerEnglish": "There's a problem with the boiler, the technician arrives tomorrow.",
     "feedback": {
-      "correct": "Ottimo! Comfort garantito in breve tempo. / Great! Comfort guaranteed in a short time.",
-      "incorrect": "Ops! L'host rassicurava sulla velocità del riscaldamento. / Oops! The host reassured on the heating speed."
+      "correctItalian": "Esatto! Bad news.",
+      "incorrectItalian": "No, 'C'è un problema con la caldaia, il tecnico arriva domani.' significa bad news.",
+      "correctEnglish": "Correct! There's a problem with the boiler, the technician arrives tomorrow. refers to C'è un problema con la caldaia, il tecnico arriva domani..",
+      "incorrectEnglish": "No, the correct word is There's a problem with the boiler, the technician arrives tomorrow.."
     }
   },
   {
     "id": "s22-s58",
-    "italian": "L'appartamento è al secondo piano, porta numero 7.",
-    "english": "The apartment is on the second floor, door number 7.",
+    "italian": "Posso avere un altro asciugamano per la doccia?",
+    "english": "Can I have another towel for the shower?",
     "type": "sentence",
-    "choicesItalian": ["L'appartamento è al secondo piano, porta numero 7.", "Sali al terzo piano e cerca la porta A.", "L'ingresso è al piano terra subito a destra.", "Prendi l'ascensore fino al quarto piano."],
-    "choicesEnglish": ["The apartment is on the second floor, door number 7.", "Go up to the third floor and look for door A.", "The entrance is on the ground floor immediately on the right.", "Take the elevator to the fourth floor."],
-    "correctAnswerItalian": "L'appartamento è al secondo piano, porta numero 7.",
-    "correctAnswerEnglish": "The apartment is on the second floor, door number 7.",
+    "choicesItalian": [
+      "Posso avere un altro asciugamano per la doccia?",
+      "Solleva leggermente la maniglia verso l'alto mentre giri.",
+      "Se hai bisogno di lasciare le valigie, fammi sapere.",
+      "Dì pure che sei l'ospite di Marco e ti aprirà."
+    ],
+    "choicesEnglish": [
+      "Can I have another towel for the shower?",
+      "Lift the handle slightly upwards while you turn.",
+      "If you need to leave your luggage, let me know.",
+      "Just say you are Marco's guest and they will open for you."
+    ],
+    "correctAnswerItalian": "Posso avere un altro asciugamano per la doccia?",
+    "correctAnswerEnglish": "Can I have another towel for the shower?",
     "feedback": {
-      "correct": "Bravo! Hai le coordinate giuste per entrare. / Well done! You have the right coordinates to enter.",
-      "incorrect": "Sbagliato! Era il secondo piano, porta 7. / Wrong! It was the second floor, door 7."
+      "correctItalian": "Esatto! Request.",
+      "incorrectItalian": "No, 'Posso avere un altro asciugamano per la doccia?' significa request.",
+      "correctEnglish": "Correct! Can I have another towel for the shower? refers to Posso avere un altro asciugamano per la doccia?.",
+      "incorrectEnglish": "No, the correct word is Can I have another towel for the shower?."
     }
   },
   {
     "id": "s22-s59",
-    "italian": "Scusa ancora per il problema con il citofono.",
-    "english": "Sorry again for the problem with the intercom.",
+    "italian": "La porta è la lettera B, proprio accanto all'ascensore.",
+    "english": "The door is letter B, right next to the elevator.",
     "type": "sentence",
-    "choicesItalian": ["Scusa ancora per il problema con il citofono.", "Mi scusi se la cassetta era dura da aprire.", "Spero che l'appartamento le piaccia comunque.", "Grazie per la pazienza con le chiavi."],
-    "choicesEnglish": ["Sorry again for the problem with the intercom.", "Sorry if the box was hard to open.", "I hope you like the apartment anyway.", "Thanks for the patience with the keys."],
-    "correctAnswerItalian": "Scusa ancora per il problema con il citofono.",
-    "correctAnswerEnglish": "Sorry again for the problem with the intercom.",
+    "choicesItalian": [
+      "Pronto? Sono davanti al palazzo ma il portone è chiuso.",
+      "Ruota i numeri, allinea il codice e poi tira la levetta.",
+      "La porta è la lettera B, proprio accanto all'ascensore.",
+      "Sali al secondo piano, l'appartamento è il numero 7."
+    ],
+    "choicesEnglish": [
+      "Hello? I'm in front of the building but the main door is closed.",
+      "Rotate the numbers, align the code and then pull the lever.",
+      "The door is letter B, right next to the elevator.",
+      "Go up to the second floor, the apartment is number 7."
+    ],
+    "correctAnswerItalian": "La porta è la lettera B, proprio accanto all'ascensore.",
+    "correctAnswerEnglish": "The door is letter B, right next to the elevator.",
     "feedback": {
-      "correct": "Perfetto! Le scuse per i disservizi sono educate. / Perfect! Apologies for inconveniences are polite.",
-      "incorrect": "Ops! L'host si scusava per il citofono. / Oops! The host was apologizing for the intercom."
+      "correctItalian": "Esatto! Final step.",
+      "incorrectItalian": "No, 'La porta è la lettera B, proprio accanto all'ascensore.' significa final step.",
+      "correctEnglish": "Correct! The door is letter B, right next to the elevator. refers to La porta è la lettera B, proprio accanto all'ascensore..",
+      "incorrectEnglish": "No, the correct word is The door is letter B, right next to the elevator.."
     }
   },
   {
     "id": "s22-s60",
-    "italian": "Domani chiamo il tecnico per riparare tutto.",
-    "english": "Tomorrow I'll call the technician to fix everything.",
+    "italian": "Grazie ancora, l'appartamento è davvero molto carino.",
+    "english": "Thanks again, the apartment is really very nice.",
     "type": "sentence",
-    "choicesItalian": ["Domani chiamo il tecnico per riparare tutto.", "Il tecnico è già venuto stamattina presto.", "Non serve riparare nulla per ora.", "Dovrai aspettare la fine della settimana."],
-    "choicesEnglish": ["Tomorrow I'll call the technician to fix everything.", "The technician already came early this morning.", "No need to fix anything for now.", "You'll have to wait until the end of the week."],
-    "correctAnswerItalian": "Domani chiamo il tecnico per riparare tutto.",
-    "correctAnswerEnglish": "Tomorrow I'll call the technician to fix everything.",
+    "choicesItalian": [
+      "La chiave gira ma la porta non si apre, cosa faccio?",
+      "Suona a Bianchi, è il vicino che mi fa da appoggio.",
+      "Grazie ancora, l'appartamento è davvero molto carino.",
+      "Scusa il ritardo, il traffico in centro è terribile oggi."
+    ],
+    "choicesEnglish": [
+      "The key turns but the door doesn't open, what do I do?",
+      "Ring Bianchi, it's the neighbor who helps me out.",
+      "Thanks again, the apartment is really very nice.",
+      "Sorry for the delay, the traffic downtown is terrible today."
+    ],
+    "correctAnswerItalian": "Grazie ancora, l'appartamento è davvero molto carino.",
+    "correctAnswerEnglish": "Thanks again, the apartment is really very nice.",
     "feedback": {
-      "correct": "Molto bene! Il proprietario è solerte. / Very well! The owner is prompt.",
-      "incorrect": "Sbagliato! Il tecnico verrà chiamato domani. / Wrong! The technician will be called tomorrow."
+      "correctItalian": "Esatto! Gratitude.",
+      "incorrectItalian": "No, 'Grazie ancora, l'appartamento è davvero molto carino.' significa gratitude.",
+      "correctEnglish": "Correct! Thanks again, the apartment is really very nice. refers to Grazie ancora, l'appartamento è davvero molto carino..",
+      "incorrectEnglish": "No, the correct word is Thanks again, the apartment is really very nice.."
     }
   },
   {
     "id": "s22-s61",
-    "italian": "Goditi l'appartamento e buon soggiorno!",
-    "english": "Enjoy the apartment and have a good stay!",
+    "italian": "Oddio, hai ragione, questa serratura è veramente durissima!",
+    "english": "Oh god, you're right, this lock is really very hard!",
     "type": "sentence",
-    "choicesItalian": ["Goditi l'appartamento e buon soggiorno!", "Ti auguro una buona permanenza in città.", "Spero che tu possa divertirti molto.", "Ci vediamo presto per la riconsegna chiavi."],
-    "choicesEnglish": ["Enjoy the apartment and have a good stay!", "I wish you a good stay in the city.", "I hope you can have a lot of fun.", "See you soon for the key return."],
-    "correctAnswerItalian": "Goditi l'appartamento e buon soggiorno!",
-    "correctAnswerEnglish": "Enjoy the apartment and have a good stay!",
+    "choicesItalian": [
+      "Il check-out è entro le 11 del mattino, va bene?",
+      "Controlla se i numeri sono allineati perfettamente al centro.",
+      "Ah ok, ho capito tutto. Grazie mille per l'aiuto!",
+      "Oddio, hai ragione, questa serratura è veramente durissima!"
+    ],
+    "choicesEnglish": [
+      "Check-out is by 11 AM, is that okay?",
+      "Check if the numbers are perfectly aligned in the center.",
+      "Ah ok, I understood everything. Thanks a lot for the help!",
+      "Oh god, you're right, this lock is really very hard!"
+    ],
+    "correctAnswerItalian": "Oddio, hai ragione, questa serratura è veramente durissima!",
+    "correctAnswerEnglish": "Oh god, you're right, this lock is really very hard!",
     "feedback": {
-      "correct": "Eccellente! Un augurio finale perfetto. / Excellent! A perfect final wish.",
-      "incorrect": "Ops! L'host ti augurava un buon soggiorno. / Oops! The host wished you a good stay."
+      "correctItalian": "Esatto! Spoken reaction.",
+      "incorrectItalian": "No, 'Oddio, hai ragione, questa serratura è veramente durissima!' significa spoken reaction.",
+      "correctEnglish": "Correct! Oh god, you're right, this lock is really very hard! refers to Oddio, hai ragione, questa serratura è veramente durissima!.",
+      "incorrectEnglish": "No, the correct word is Oh god, you're right, this lock is really very hard!."
+    }
+  },
+  {
+    "id": "s22-s62",
+    "italian": "Ah, finalmente sono dentro! Che fatica con queste chiavi.",
+    "english": "Ah, finally I'm in! What a struggle with these keys.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Dì pure che sei l'ospite di Marco e ti aprirà.",
+      "Ah, finalmente sono dentro! Che fatica con queste chiavi.",
+      "Gira la chiave a sinistra e tira la porta verso di te.",
+      "Se non riesci a entrare, chiamami che scendo subito."
+    ],
+    "choicesEnglish": [
+      "Just say you are Marco's guest and they will open for you.",
+      "Ah, finally I'm in! What a struggle with these keys.",
+      "Turn the key to the left and pull the door towards you.",
+      "If you can't get in, call me and I'll come down immediately."
+    ],
+    "correctAnswerItalian": "Ah, finalmente sono dentro! Che fatica con queste chiavi.",
+    "correctAnswerEnglish": "Ah, finally I'm in! What a struggle with these keys.",
+    "feedback": {
+      "correctItalian": "Esatto! Relief.",
+      "incorrectItalian": "No, 'Ah, finalmente sono dentro! Che fatica con queste chiavi.' significa relief.",
+      "correctEnglish": "Correct! Ah, finally I'm in! What a struggle with these keys. refers to Ah, finalmente sono dentro! Che fatica con queste chiavi..",
+      "incorrectEnglish": "No, the correct word is Ah, finally I'm in! What a struggle with these keys.."
+    }
+  },
+  {
+    "id": "s22-s63",
+    "italian": "Scusami ancora per il disturbo a quest'ora tarda.",
+    "english": "Sorry again for the disturbance at this late hour.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Oddio, hai ragione, questa serratura è veramente durissima!",
+      "Scusami ancora per il disturbo a quest'ora tarda.",
+      "Ti faccio vedere come funziona il riscaldamento e la serratura.",
+      "C'è un problema con la caldaia, il tecnico arriva domani."
+    ],
+    "choicesEnglish": [
+      "Oh god, you're right, this lock is really very hard!",
+      "Sorry again for the disturbance at this late hour.",
+      "I'll show you how the heating and the lock work.",
+      "There's a problem with the boiler, the technician arrives tomorrow."
+    ],
+    "correctAnswerItalian": "Scusami ancora per il disturbo a quest'ora tarda.",
+    "correctAnswerEnglish": "Sorry again for the disturbance at this late hour.",
+    "feedback": {
+      "correctItalian": "Esatto! Politeness.",
+      "incorrectItalian": "No, 'Scusami ancora per il disturbo a quest'ora tarda.' significa politeness.",
+      "correctEnglish": "Correct! Sorry again for the disturbance at this late hour. refers to Scusami ancora per il disturbo a quest'ora tarda..",
+      "incorrectEnglish": "No, the correct word is Sorry again for the disturbance at this late hour.."
+    }
+  },
+  {
+    "id": "s22-s64",
+    "italian": "Un attimo, sto provando a inserire il codice... ecco.",
+    "english": "One moment, I'm trying to enter the code... there.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La serratura è antica e bisogna avere un po' di pazienza.",
+      "Un attimo, sto provando a inserire il codice... ecco.",
+      "Vai al bar accanto, ti raggiungo tra dieci minuti.",
+      "Questa chiave è per il portone, questa per l'appartamento."
+    ],
+    "choicesEnglish": [
+      "The lock is ancient and you need to have a bit of patience.",
+      "One moment, I'm trying to enter the code... there.",
+      "Go to the bar next door, I'll reach you in ten minutes.",
+      "This key is for the main door, this one for the apartment."
+    ],
+    "correctAnswerItalian": "Un attimo, sto provando a inserire il codice... ecco.",
+    "correctAnswerEnglish": "One moment, I'm trying to enter the code... there.",
+    "feedback": {
+      "correctItalian": "Esatto! In-action.",
+      "incorrectItalian": "No, 'Un attimo, sto provando a inserire il codice... ecco.' significa in-action.",
+      "correctEnglish": "Correct! One moment, I'm trying to enter the code... there. refers to Un attimo, sto provando a inserire il codice... ecco..",
+      "incorrectEnglish": "No, the correct word is One moment, I'm trying to enter the code... there.."
+    }
+  },
+  {
+    "id": "s22-s65",
+    "italian": "Niente da fare, non si muove. Puoi venire ad aiutarmi?",
+    "english": "Nothing to do, it won't move. Can you come help me?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Vai al bar accanto, ti raggiungo tra dieci minuti.",
+      "Hai guardato le istruzioni sulla piattaforma?",
+      "Niente da fare, non si muove. Puoi venire ad aiutarmi?",
+      "Apri la cassetta e prendi la busta con il tuo nome."
+    ],
+    "choicesEnglish": [
+      "Go to the bar next door, I'll reach you in ten minutes.",
+      "Did you look at the instructions on the platform?",
+      "Nothing to do, it won't move. Can you come help me?",
+      "Open the box and take the envelope with your name."
+    ],
+    "correctAnswerItalian": "Niente da fare, non si muove. Puoi venire ad aiutarmi?",
+    "correctAnswerEnglish": "Nothing to do, it won't move. Can you come help me?",
+    "feedback": {
+      "correctItalian": "Esatto! Despair.",
+      "incorrectItalian": "No, 'Niente da fare, non si muove. Puoi venire ad aiutarmi?' significa despair.",
+      "correctEnglish": "Correct! Nothing to do, it won't move. Can you come help me? refers to Niente da fare, non si muove. Puoi venire ad aiutarmi?.",
+      "incorrectEnglish": "No, the correct word is Nothing to do, it won't move. Can you come help me?."
     }
   }
 ]

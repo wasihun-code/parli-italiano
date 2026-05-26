@@ -1,1202 +1,722 @@
 [
   {
-    "id": "s5-v1",
-    "italian": "biglietto",
-    "english": "ticket",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "scelta",
-      "pomeriggio",
-      "biglietto",
-      "ritardo"
-    ],
-    "choicesEnglish": [
-      "choice",
-      "afternoon",
-      "ticket",
-      "delay"
-    ],
+    "choicesItalian": ["biglietto", "scelta", "pomeriggio", "ritardo"],
+    "choicesEnglish": ["ticket", "choice", "afternoon", "delay"],
     "correctAnswerItalian": "biglietto",
     "correctAnswerEnglish": "ticket",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: biglietto (ticket)"
+      "correctItalian": "Esatto! Senza il biglietto non si può salire sul treno.",
+      "incorrectItalian": "No, per viaggiare serve il biglietto.",
+      "correctEnglish": "Exact! Without a ticket you cannot board the train.",
+      "incorrectEnglish": "No, to travel you need a ticket."
     }
   },
   {
-    "id": "s5-v2",
-    "italian": "treno",
-    "english": "train",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "tastiera",
-      "sedersi",
-      "macchinetta",
-      "treno"
-    ],
-    "choicesEnglish": [
-      "keyboard",
-      "to sit",
-      "machine",
-      "train"
-    ],
-    "correctAnswerItalian": "treno",
-    "correctAnswerEnglish": "train",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: treno (train)"
-    }
-  },
-  {
-    "id": "s5-v3",
-    "italian": "stazione",
-    "english": "station",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "stazione",
-      "scelta",
-      "sottopassaggio",
-      "valigia"
-    ],
-    "choicesEnglish": [
-      "station",
-      "choice",
-      "underpass",
-      "suitcase"
-    ],
-    "correctAnswerItalian": "stazione",
-    "correctAnswerEnglish": "station",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: stazione (station)"
-    }
-  },
-  {
-    "id": "s5-v4",
-    "italian": "binario",
-    "english": "platform",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "binario",
-      "coincidenza",
-      "disponibile",
-      "orario"
-    ],
-    "choicesEnglish": [
-      "platform",
-      "connection",
-      "available",
-      "schedule"
-    ],
-    "correctAnswerItalian": "binario",
-    "correctAnswerEnglish": "platform",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: binario (platform)"
-    }
-  },
-  {
-    "id": "s5-v5",
-    "italian": "partenza",
-    "english": "departure",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "coincidenza",
-      "partenza",
-      "frecciarossa",
-      "passeggero"
-    ],
-    "choicesEnglish": [
-      "connection",
-      "departure",
-      "high-speed train",
-      "passenger"
-    ],
-    "correctAnswerItalian": "partenza",
-    "correctAnswerEnglish": "departure",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: partenza (departure)"
-    }
-  },
-  {
-    "id": "s5-v6",
-    "italian": "arrivo",
-    "english": "arrival",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "convalidare",
-      "treno",
-      "orario",
-      "arrivo"
-    ],
-    "choicesEnglish": [
-      "validate",
-      "train",
-      "schedule",
-      "arrival"
-    ],
-    "correctAnswerItalian": "arrivo",
-    "correctAnswerEnglish": "arrival",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: arrivo (arrival)"
-    }
-  },
-  {
-    "id": "s5-v7",
-    "italian": "ritardo",
-    "english": "delay",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "euro",
-      "controllore",
-      "borsa",
-      "ritardo"
-    ],
-    "choicesEnglish": [
-      "euro",
-      "conductor",
-      "bag",
-      "delay"
-    ],
-    "correctAnswerItalian": "ritardo",
-    "correctAnswerEnglish": "delay",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: ritardo (delay)"
-    }
-  },
-  {
-    "id": "s5-v8",
-    "italian": "posto",
-    "english": "seat",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "biglietto",
-      "carta",
-      "partenza",
-      "posto"
-    ],
-    "choicesEnglish": [
-      "ticket",
-      "card",
-      "departure",
-      "seat"
-    ],
-    "correctAnswerItalian": "posto",
-    "correctAnswerEnglish": "seat",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: posto (seat)"
-    }
-  },
-  {
-    "id": "s5-v9",
-    "italian": "classe",
-    "english": "class",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "seconda",
-      "classe",
-      "controllore",
-      "euro"
-    ],
-    "choicesEnglish": [
-      "second",
-      "class",
-      "conductor",
-      "euro"
-    ],
-    "correctAnswerItalian": "classe",
-    "correctAnswerEnglish": "class",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: classe (class)"
-    }
-  },
-  {
-    "id": "s5-v10",
-    "italian": "prenotazione",
-    "english": "reservation",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "prenotazione",
-      "frecciarossa",
-      "valigia",
-      "scadenza"
-    ],
-    "choicesEnglish": [
-      "reservation",
-      "high-speed train",
-      "suitcase",
-      "expiration"
-    ],
-    "correctAnswerItalian": "prenotazione",
-    "correctAnswerEnglish": "reservation",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: prenotazione (reservation)"
-    }
-  },
-  {
-    "id": "s5-v11",
-    "italian": "macchinetta",
-    "english": "machine",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "ufficio",
-      "macchinetta",
-      "tratta",
-      "carta"
-    ],
-    "choicesEnglish": [
-      "office",
-      "machine",
-      "route",
-      "card"
-    ],
+    "choicesItalian": ["macchinetta", "treno", "stazione", "binario"],
+    "choicesEnglish": ["ticket machine", "train", "station", "platform"],
     "correctAnswerItalian": "macchinetta",
-    "correctAnswerEnglish": "machine",
+    "correctAnswerEnglish": "ticket machine",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: macchinetta (machine)"
+      "correctItalian": "Giusto! La macchinetta automatica vende i biglietti.",
+      "incorrectItalian": "No, è la macchinetta dei biglietti.",
+      "correctEnglish": "Right! The automatic machine sells tickets.",
+      "incorrectEnglish": "No, it's the ticket machine."
     }
   },
   {
-    "id": "s5-v12",
-    "italian": "tastiera",
-    "english": "keyboard",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "viaggio",
-      "sedersi",
-      "tastiera",
-      "biglietto"
-    ],
-    "choicesEnglish": [
-      "trip",
-      "to sit",
-      "keyboard",
-      "ticket"
-    ],
-    "correctAnswerItalian": "tastiera",
-    "correctAnswerEnglish": "keyboard",
+    "choicesItalian": ["biglietteria", "ufficio", "banco", "sportello"],
+    "choicesEnglish": ["ticket office", "office", "desk", "counter"],
+    "correctAnswerItalian": "biglietteria",
+    "correctAnswerEnglish": "ticket office",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: tastiera (keyboard)"
+      "correctItalian": "Ottimo! La biglietteria è il luogo fisico dove comprare titoli di viaggio.",
+      "incorrectItalian": "No, devi andare in biglietteria.",
+      "correctEnglish": "Great! The ticket office is the physical place to buy travel documents.",
+      "incorrectEnglish": "No, you must go to the ticket office."
     }
   },
   {
-    "id": "s5-v13",
-    "italian": "schermo",
-    "english": "screen",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "oggi",
-      "fermata",
-      "partenza",
-      "schermo"
-    ],
-    "choicesEnglish": [
-      "today",
-      "stop",
-      "departure",
-      "screen"
-    ],
-    "correctAnswerItalian": "schermo",
-    "correctAnswerEnglish": "screen",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: schermo (screen)"
-    }
-  },
-  {
-    "id": "s5-v14",
-    "italian": "pagamento",
-    "english": "payment",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "destinazione",
-      "ritardo",
-      "pagamento",
-      "posto"
-    ],
-    "choicesEnglish": [
-      "destination",
-      "delay",
-      "payment",
-      "seat"
-    ],
-    "correctAnswerItalian": "pagamento",
-    "correctAnswerEnglish": "payment",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: pagamento (payment)"
-    }
-  },
-  {
-    "id": "s5-v15",
-    "italian": "regionale",
-    "english": "regional",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "pagamento",
-      "euro",
-      "tasto",
-      "regionale"
-    ],
-    "choicesEnglish": [
-      "payment",
-      "euro",
-      "button",
-      "regional"
-    ],
-    "correctAnswerItalian": "regionale",
-    "correctAnswerEnglish": "regional",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: regionale (regional)"
-    }
-  },
-  {
-    "id": "s5-v16",
-    "italian": "frecciarossa",
-    "english": "high-speed train",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "frecciarossa",
-      "classe",
-      "viaggio",
-      "scelta"
-    ],
-    "choicesEnglish": [
-      "high-speed train",
-      "class",
-      "trip",
-      "choice"
-    ],
-    "correctAnswerItalian": "frecciarossa",
-    "correctAnswerEnglish": "high-speed train",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: frecciarossa (high-speed train)"
-    }
-  },
-  {
-    "id": "s5-v17",
-    "italian": "venezia",
-    "english": "Venice",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "cambio",
-      "fermata",
-      "venezia",
-      "sedersi"
-    ],
-    "choicesEnglish": [
-      "change",
-      "stop",
-      "Venice",
-      "to sit"
-    ],
-    "correctAnswerItalian": "venezia",
-    "correctAnswerEnglish": "Venice",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: venezia (Venice)"
-    }
-  },
-  {
-    "id": "s5-v18",
-    "italian": "pomeriggio",
-    "english": "afternoon",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "euro",
-      "tratta",
-      "pomeriggio",
-      "destinazione"
-    ],
-    "choicesEnglish": [
-      "euro",
-      "route",
-      "afternoon",
-      "destination"
-    ],
-    "correctAnswerItalian": "pomeriggio",
-    "correctAnswerEnglish": "afternoon",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: pomeriggio (afternoon)"
-    }
-  },
-  {
-    "id": "s5-v19",
-    "italian": "oggi",
-    "english": "today",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "partenza",
-      "sedersi",
-      "coincidenza",
-      "oggi"
-    ],
-    "choicesEnglish": [
-      "departure",
-      "to sit",
-      "connection",
-      "today"
-    ],
-    "correctAnswerItalian": "oggi",
-    "correctAnswerEnglish": "today",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: oggi (today)"
-    }
-  },
-  {
-    "id": "s5-v20",
-    "italian": "domani",
-    "english": "tomorrow",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "oggi",
-      "domani",
-      "pagamento",
-      "elenco"
-    ],
-    "choicesEnglish": [
-      "today",
-      "tomorrow",
-      "payment",
-      "list"
-    ],
-    "correctAnswerItalian": "domani",
-    "correctAnswerEnglish": "tomorrow",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: domani (tomorrow)"
-    }
-  },
-  {
-    "id": "s5-v21",
-    "italian": "orario",
-    "english": "schedule",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "orario",
-      "sottopassaggio",
-      "schermo",
-      "scadenza"
-    ],
-    "choicesEnglish": [
-      "schedule",
-      "underpass",
-      "screen",
-      "expiration"
-    ],
-    "correctAnswerItalian": "orario",
-    "correctAnswerEnglish": "schedule",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: orario (schedule)"
-    }
-  },
-  {
-    "id": "s5-v22",
-    "italian": "disponibile",
-    "english": "available",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "aiuto",
-      "tastiera",
-      "ufficio",
-      "disponibile"
-    ],
-    "choicesEnglish": [
-      "help",
-      "keyboard",
-      "office",
-      "available"
-    ],
-    "correctAnswerItalian": "disponibile",
-    "correctAnswerEnglish": "available",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: disponibile (available)"
-    }
-  },
-  {
-    "id": "s5-v23",
-    "italian": "scelta",
-    "english": "choice",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "carta",
-      "treno",
-      "convalidare",
-      "scelta"
-    ],
-    "choicesEnglish": [
-      "card",
-      "train",
-      "validate",
-      "choice"
-    ],
-    "correctAnswerItalian": "scelta",
-    "correctAnswerEnglish": "choice",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: scelta (choice)"
-    }
-  },
-  {
-    "id": "s5-v24",
-    "italian": "convalidare",
-    "english": "validate",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "pagamento",
-      "totale",
-      "scadenza",
-      "convalidare"
-    ],
-    "choicesEnglish": [
-      "payment",
-      "total",
-      "expiration",
-      "validate"
-    ],
-    "correctAnswerItalian": "convalidare",
-    "correctAnswerEnglish": "validate",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: convalidare (validate)"
-    }
-  },
-  {
-    "id": "s5-v25",
-    "italian": "scadenza",
-    "english": "expiration",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "scadenza",
-      "biglietto",
-      "frecciarossa",
-      "binario"
-    ],
-    "choicesEnglish": [
-      "expiration",
-      "ticket",
-      "high-speed train",
-      "platform"
-    ],
-    "correctAnswerItalian": "scadenza",
-    "correctAnswerEnglish": "expiration",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: scadenza (expiration)"
-    }
-  },
-  {
-    "id": "s5-v26",
-    "italian": "tratta",
-    "english": "route",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "domani",
-      "passeggero",
-      "ritardo",
-      "tratta"
-    ],
-    "choicesEnglish": [
-      "tomorrow",
-      "passenger",
-      "delay",
-      "route"
-    ],
-    "correctAnswerItalian": "tratta",
-    "correctAnswerEnglish": "route",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: tratta (route)"
-    }
-  },
-  {
-    "id": "s5-v27",
-    "italian": "aiuto",
-    "english": "help",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "aiuto",
-      "totale",
-      "sottopassaggio",
-      "domani"
-    ],
-    "choicesEnglish": [
-      "help",
-      "total",
-      "underpass",
-      "tomorrow"
-    ],
-    "correctAnswerItalian": "aiuto",
-    "correctAnswerEnglish": "help",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: aiuto (help)"
-    }
-  },
-  {
-    "id": "s5-v28",
-    "italian": "città",
-    "english": "city",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "tasto",
-      "domani",
-      "convalidare",
-      "città"
-    ],
-    "choicesEnglish": [
-      "button",
-      "tomorrow",
-      "validate",
-      "city"
-    ],
-    "correctAnswerItalian": "città",
-    "correctAnswerEnglish": "city",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: città (city)"
-    }
-  },
-  {
-    "id": "s5-v29",
-    "italian": "nome",
-    "english": "name",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "scadenza",
-      "cambio",
-      "regionale",
-      "nome"
-    ],
-    "choicesEnglish": [
-      "expiration",
-      "change",
-      "regional",
-      "name"
-    ],
-    "correctAnswerItalian": "nome",
-    "correctAnswerEnglish": "name",
-    "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: nome (name)"
-    }
-  },
-  {
-    "id": "s5-v30",
-    "italian": "destinazione",
-    "english": "destination",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "domani",
-      "controllore",
-      "destinazione",
-      "aiuto"
-    ],
-    "choicesEnglish": [
-      "tomorrow",
-      "conductor",
-      "destination",
-      "help"
-    ],
+    "choicesItalian": ["destinazione", "partenza", "arrivo", "scalo"],
+    "choicesEnglish": ["destination", "departure", "arrival", "layover"],
     "correctAnswerItalian": "destinazione",
     "correctAnswerEnglish": "destination",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: destinazione (destination)"
+      "correctItalian": "Perfetto! La destinazione è la meta finale del viaggio.",
+      "incorrectItalian": "Sbagliato, si dice destinazione.",
+      "correctEnglish": "Perfect! The destination is the final goal of the trip.",
+      "incorrectEnglish": "Wrong, it's called destination."
     }
   },
   {
-    "id": "s5-v31",
-    "italian": "elenco",
-    "english": "list",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "valigia",
-      "controllore",
-      "elenco",
-      "prima"
-    ],
-    "choicesEnglish": [
-      "suitcase",
-      "conductor",
-      "list",
-      "first"
-    ],
-    "correctAnswerItalian": "elenco",
-    "correctAnswerEnglish": "list",
+    "choicesItalian": ["prenotazione", "scelta", "acquisto", "pagamento"],
+    "choicesEnglish": ["reservation", "choice", "purchase", "payment"],
+    "correctAnswerItalian": "prenotazione",
+    "correctAnswerEnglish": "reservation",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: elenco (list)"
+      "correctItalian": "Esatto! La prenotazione assicura un posto a sedere.",
+      "incorrectItalian": "No, serve la prenotazione del posto.",
+      "correctEnglish": "Exact! The reservation ensures a seat.",
+      "incorrectEnglish": "No, you need a seat reservation."
     }
   },
   {
-    "id": "s5-v32",
-    "italian": "tasto",
-    "english": "button",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "frecciarossa",
-      "tasto",
-      "oggi",
-      "convalidare"
-    ],
-    "choicesEnglish": [
-      "high-speed train",
-      "button",
-      "today",
-      "validate"
-    ],
-    "correctAnswerItalian": "tasto",
-    "correctAnswerEnglish": "button",
+    "choicesItalian": ["classe", "grado", "livello", "ordine"],
+    "choicesEnglish": ["class", "grade", "level", "order"],
+    "correctAnswerItalian": "classe",
+    "correctAnswerEnglish": "class",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: tasto (button)"
+      "correctItalian": "Giusto! In treno c'è la prima e la seconda classe.",
+      "incorrectItalian": "No, si dice classe.",
+      "correctEnglish": "Right! On the train there is first and second class.",
+      "incorrectEnglish": "No, it's called class."
     }
   },
   {
-    "id": "s5-v33",
-    "italian": "contanti",
-    "english": "cash",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "partenza",
-      "domani",
-      "contanti",
-      "tastiera"
-    ],
-    "choicesEnglish": [
-      "departure",
-      "tomorrow",
-      "cash",
-      "keyboard"
-    ],
+    "choicesItalian": ["supplemento", "sconto", "prezzo", "costo"],
+    "choicesEnglish": ["supplement/extra charge", "discount", "price", "cost"],
+    "correctAnswerItalian": "supplemento",
+    "correctAnswerEnglish": "supplement/extra charge",
+    "feedback": {
+      "correctItalian": "Corretto! Il supplemento è un costo aggiuntivo.",
+      "incorrectItalian": "No, è un supplemento da pagare.",
+      "correctEnglish": "Correct! The supplement is an additional cost.",
+      "incorrectEnglish": "No, it's a supplement to be paid."
+    }
+  },
+  {
+    "choicesItalian": ["scadenza", "fine", "termine", "chiusura"],
+    "choicesEnglish": ["expiration", "end", "deadline", "closing"],
+    "correctAnswerItalian": "scadenza",
+    "correctAnswerEnglish": "expiration",
+    "feedback": {
+      "correctItalian": "Ottimo! Controlla la scadenza della validità del biglietto.",
+      "incorrectItalian": "No, si parla di scadenza.",
+      "correctEnglish": "Great! Check the expiration of the ticket validity.",
+      "incorrectEnglish": "No, we're talking about expiration."
+    }
+  },
+  {
+    "choicesItalian": ["convalidare", "timbrare", "obliterare", "tutti"],
+    "choicesEnglish": ["to validate", "to stamp", "to cancel/stamp", "all"],
+    "correctAnswerItalian": "convalidare",
+    "correctAnswerEnglish": "to validate",
+    "feedback": {
+      "correctItalian": "Perfetto! Convalidare significa rendere valido il biglietto.",
+      "incorrectItalian": "No, il verbo corretto è convalidare.",
+      "correctEnglish": "Perfect! To validate means making the ticket valid.",
+      "incorrectEnglish": "No, the correct verb is to validate."
+    }
+  },
+  {
+    "choicesItalian": ["tratta", "strada", "viaggio", "percorso"],
+    "choicesEnglish": ["route/stretch", "road", "trip", "path"],
+    "correctAnswerItalian": "tratta",
+    "correctAnswerEnglish": "route/stretch",
+    "feedback": {
+      "correctItalian": "Esatto! La tratta è il percorso tra due stazioni.",
+      "incorrectItalian": "No, si dice tratta ferroviaria.",
+      "correctEnglish": "Exact! The route is the path between two stations.",
+      "incorrectEnglish": "No, it's called a railway route."
+    }
+  },
+  {
+    "choicesItalian": ["disponibile", "occupato", "pieno", "libero"],
+    "choicesEnglish": ["available", "occupied", "full", "free"],
+    "correctAnswerItalian": "disponibile",
+    "correctAnswerEnglish": "available",
+    "feedback": {
+      "correctItalian": "Giusto! Se ci sono posti disponibili puoi prenotare.",
+      "incorrectItalian": "No, è disponibile.",
+      "correctEnglish": "Right! If there are seats available you can book.",
+      "incorrectEnglish": "No, it's available."
+    }
+  },
+  {
+    "choicesItalian": ["tariffa", "costo", "spesa", "prezzo"],
+    "choicesEnglish": ["fare/rate", "cost", "expense", "price"],
+    "correctAnswerItalian": "tariffa",
+    "correctAnswerEnglish": "fare/rate",
+    "feedback": {
+      "correctItalian": "Corretto! La tariffa indica il prezzo del biglietto.",
+      "incorrectItalian": "No, è la tariffa.",
+      "correctEnglish": "Correct! The fare indicates the price of the ticket.",
+      "incorrectEnglish": "No, it's the fare."
+    }
+  },
+  {
+    "choicesItalian": ["regionale", "veloce", "rapido", "diretto"],
+    "choicesEnglish": ["regional", "fast", "rapid", "direct"],
+    "correctAnswerItalian": "regionale",
+    "correctAnswerEnglish": "regional",
+    "feedback": {
+      "correctItalian": "Ottimo! Il treno regionale è più economico ma più lento.",
+      "incorrectItalian": "Sbagliato, è regionale.",
+      "correctEnglish": "Great! The regional train is cheaper but slower.",
+      "incorrectEnglish": "Wrong, it's regional."
+    }
+  },
+  {
+    "choicesItalian": ["sconto", "aumento", "riduzione", "bonus"],
+    "choicesEnglish": ["discount", "increase", "reduction", "bonus"],
+    "correctAnswerItalian": "sconto",
+    "correctAnswerEnglish": "discount",
+    "feedback": {
+      "correctItalian": "Perfetto! Gli studenti hanno spesso uno sconto.",
+      "incorrectItalian": "No, cerchi uno sconto.",
+      "correctEnglish": "Perfect! Students often have a discount.",
+      "incorrectEnglish": "No, you're looking for a discount."
+    }
+  },
+  {
+    "choicesItalian": ["contanti", "carta", "moneta", "banconote"],
+    "choicesEnglish": ["cash", "card", "coin", "banknotes"],
     "correctAnswerItalian": "contanti",
     "correctAnswerEnglish": "cash",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: contanti (cash)"
+      "correctItalian": "Esatto! Pagare in contanti significa usare le banconote.",
+      "incorrectItalian": "No, sono contanti.",
+      "correctEnglish": "Exact! Paying in cash means using banknotes.",
+      "incorrectEnglish": "No, it's cash."
     }
   },
   {
-    "id": "s5-v34",
-    "italian": "carta",
-    "english": "card",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "posto",
-      "pomeriggio",
-      "valigia",
-      "carta"
-    ],
-    "choicesEnglish": [
-      "seat",
-      "afternoon",
-      "suitcase",
-      "card"
-    ],
-    "correctAnswerItalian": "carta",
-    "correctAnswerEnglish": "card",
+    "choicesItalian": ["ricevuta", "scontrino", "foglio", "stampa"],
+    "choicesEnglish": ["receipt", "receipt/slip", "paper", "printout"],
+    "correctAnswerItalian": "ricevuta",
+    "correctAnswerEnglish": "receipt",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: carta (card)"
+      "correctItalian": "Giusto! Chiedere la ricevuta dopo il pagamento.",
+      "incorrectItalian": "No, è la ricevuta.",
+      "correctEnglish": "Right! Asking for the receipt after payment.",
+      "incorrectEnglish": "No, it's the receipt."
     }
   },
   {
-    "id": "s5-v35",
-    "italian": "euro",
-    "english": "euro",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "euro",
-      "totale",
-      "ritardo",
-      "prenotazione"
-    ],
-    "choicesEnglish": [
-      "euro",
-      "total",
-      "delay",
-      "reservation"
-    ],
-    "correctAnswerItalian": "euro",
-    "correctAnswerEnglish": "euro",
+    "choicesItalian": ["elettronico", "cartaceo", "finto", "digitale"],
+    "choicesEnglish": ["electronic", "paper-based", "fake", "digital"],
+    "correctAnswerItalian": "elettronico",
+    "correctAnswerEnglish": "electronic",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: euro (euro)"
+      "correctItalian": "Corretto! Il biglietto elettronico si mostra sul telefono.",
+      "incorrectItalian": "No, è elettronico.",
+      "correctEnglish": "Correct! The electronic ticket is shown on the phone.",
+      "incorrectEnglish": "No, it's electronic."
     }
   },
   {
-    "id": "s5-v36",
-    "italian": "totale",
-    "english": "total",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "tasto",
-      "totale",
-      "sedersi",
-      "coincidenza"
-    ],
-    "choicesEnglish": [
-      "button",
-      "total",
-      "to sit",
-      "connection"
-    ],
-    "correctAnswerItalian": "totale",
-    "correctAnswerEnglish": "total",
+    "choicesItalian": ["tastiera", "schermo", "vetro", "tasto"],
+    "choicesEnglish": ["keyboard", "screen", "glass", "button"],
+    "correctAnswerItalian": "tastiera",
+    "correctAnswerEnglish": "keyboard",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: totale (total)"
+      "correctItalian": "Ottimo! Usi la tastiera a schermo per scrivere il nome.",
+      "incorrectItalian": "No, è la tastiera.",
+      "correctEnglish": "Great! You use the on-screen keyboard to write the name.",
+      "incorrectEnglish": "No, it's the keyboard."
     }
   },
   {
-    "id": "s5-v37",
-    "italian": "prima",
-    "english": "first",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "prenotazione",
-      "prima",
-      "tastiera",
-      "contanti"
-    ],
-    "choicesEnglish": [
-      "reservation",
-      "first",
-      "keyboard",
-      "cash"
-    ],
-    "correctAnswerItalian": "prima",
-    "correctAnswerEnglish": "first",
+    "choicesItalian": ["orario", "tempo", "ora", "minuto"],
+    "choicesEnglish": ["schedule/time", "time", "hour", "minute"],
+    "correctAnswerItalian": "orario",
+    "correctAnswerEnglish": "schedule/time",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: prima (first)"
+      "correctItalian": "Perfetto! Scegli l'orario di partenza.",
+      "incorrectItalian": "Sbagliato, è orario.",
+      "correctEnglish": "Perfect! Choose the departure time.",
+      "incorrectEnglish": "Wrong, it's schedule."
     }
   },
   {
-    "id": "s5-v38",
-    "italian": "seconda",
-    "english": "second",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "seconda",
-      "coincidenza",
-      "valigia",
-      "arrivo"
-    ],
-    "choicesEnglish": [
-      "second",
-      "connection",
-      "suitcase",
-      "arrival"
-    ],
-    "correctAnswerItalian": "seconda",
-    "correctAnswerEnglish": "second",
+    "choicesItalian": ["andata e ritorno", "solo andata", "giro tondo", "percorso"],
+    "choicesEnglish": ["round trip", "one way", "roundabout", "path"],
+    "correctAnswerItalian": "andata e ritorno",
+    "correctAnswerEnglish": "round trip",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: seconda (second)"
+      "correctItalian": "Esatto! Un biglietto per andare e tornare.",
+      "incorrectItalian": "No, è andata e ritorno.",
+      "correctEnglish": "Exact! A ticket to go and come back.",
+      "incorrectEnglish": "No, it's a round trip."
     }
   },
   {
-    "id": "s5-v39",
-    "italian": "sedersi",
-    "english": "to sit",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "tratta",
-      "schermo",
-      "sedersi",
-      "pomeriggio"
-    ],
-    "choicesEnglish": [
-      "route",
-      "screen",
-      "to sit",
-      "afternoon"
-    ],
-    "correctAnswerItalian": "sedersi",
-    "correctAnswerEnglish": "to sit",
+    "choicesItalian": ["solo andata", "ritorno", "passaggio", "corsa"],
+    "choicesEnglish": ["one way", "return", "passage", "run"],
+    "correctAnswerItalian": "solo andata",
+    "correctAnswerEnglish": "one way",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: sedersi (to sit)"
+      "correctItalian": "Giusto! Se non torni, compri solo l'andata.",
+      "incorrectItalian": "No, è solo andata.",
+      "correctEnglish": "Right! If you're not returning, you buy only one way.",
+      "incorrectEnglish": "No, it's one way."
     }
   },
   {
-    "id": "s5-v40",
-    "italian": "assegnato",
-    "english": "assigned",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "domani",
-      "elenco",
-      "assegnato",
-      "valigia"
-    ],
-    "choicesEnglish": [
-      "tomorrow",
-      "list",
-      "assigned",
-      "suitcase"
-    ],
+    "choicesItalian": ["posto assegnato", "posto libero", "posto rotto", "posto occupato"],
+    "choicesEnglish": ["assigned seat", "free seat", "broken seat", "occupied seat"],
+    "correctAnswerItalian": "posto assegnato",
+    "correctAnswerEnglish": "assigned seat",
+    "feedback": {
+      "correctItalian": "Corretto! Su molti treni veloci il posto è assegnato.",
+      "incorrectItalian": "No, è posto assegnato.",
+      "correctEnglish": "Correct! On many fast trains the seat is assigned.",
+      "incorrectEnglish": "No, it's assigned seat."
+    }
+  },
+  {
+    "choicesItalian": ["obliterare", "validare", "timbrare", "tutti"],
+    "choicesEnglish": ["to stamp/validate", "to validate", "to stamp", "all"],
+    "correctAnswerItalian": "obliterare",
+    "correctAnswerEnglish": "to stamp/validate",
+    "feedback": {
+      "correctItalian": "Ottimo! Obliterare è il termine tecnico per timbrare.",
+      "incorrectItalian": "No, è obliterare.",
+      "correctEnglish": "Great! 'Obliterare' is the technical term for stamping.",
+      "incorrectEnglish": "No, it's 'obliterare'."
+    }
+  },
+  {
+    "choicesItalian": ["multa", "tassa", "costo", "prezzo"],
+    "choicesEnglish": ["fine/penalty", "tax", "cost", "price"],
+    "correctAnswerItalian": "multa",
+    "correctAnswerEnglish": "fine/penalty",
+    "feedback": {
+      "correctItalian": "Perfetto! Se non hai il biglietto, prendi la multa.",
+      "incorrectItalian": "Sbagliato, è una multa.",
+      "correctEnglish": "Perfect! If you don't have a ticket, you get a fine.",
+      "incorrectEnglish": "Wrong, it's a fine."
+    }
+  },
+  {
+    "choicesItalian": ["controllore", "bigliettaio", "capotreno", "ferroviere"],
+    "choicesEnglish": ["ticket inspector", "ticket seller", "conductor", "railway worker"],
+    "correctAnswerItalian": "controllore",
+    "correctAnswerEnglish": "ticket inspector",
+    "feedback": {
+      "correctItalian": "Esatto! Il controllore chiede i biglietti sul treno.",
+      "incorrectItalian": "No, è il controllore.",
+      "correctEnglish": "Exact! The ticket inspector asks for tickets on the train.",
+      "incorrectEnglish": "No, it's the ticket inspector."
+    }
+  },
+  {
+    "choicesItalian": ["bigliettaio", "venditore", "agente", "impiegato"],
+    "choicesEnglish": ["ticket seller", "seller", "agent", "employee"],
+    "correctAnswerItalian": "bigliettaio",
+    "correctAnswerEnglish": "ticket seller",
+    "feedback": {
+      "correctItalian": "Giusto! La persona che vende i biglietti allo sportello.",
+      "incorrectItalian": "No, è il bigliettaio.",
+      "correctEnglish": "Right! The person who sells tickets at the counter.",
+      "incorrectEnglish": "No, it's the ticket seller."
+    }
+  },
+  {
+    "choicesItalian": ["sportello", "finestra", "porta", "scaffale"],
+    "choicesEnglish": ["counter/window", "window", "door", "shelf"],
+    "correctAnswerItalian": "sportello",
+    "correctAnswerEnglish": "counter/window",
+    "feedback": {
+      "correctItalian": "Corretto! Vai allo sportello per parlare con l'impiegato.",
+      "incorrectItalian": "No, è lo sportello.",
+      "correctEnglish": "Correct! You go to the counter to talk to the employee.",
+      "incorrectEnglish": "No, it's the counter."
+    }
+  },
+  {
+    "choicesItalian": ["transito", "passaggio", "attesa", "fermata"],
+    "choicesEnglish": ["transit", "passage", "wait", "stop"],
+    "correctAnswerItalian": "transito",
+    "correctAnswerEnglish": "transit",
+    "feedback": {
+      "correctItalian": "Ottimo! Un treno in transito non effettua fermata.",
+      "incorrectItalian": "No, è transito.",
+      "correctEnglish": "Great! A train in transit does not make a stop.",
+      "incorrectEnglish": "No, it's transit."
+    }
+  },
+  {
+    "choicesItalian": ["sciopero", "lavoro", "pausa", "festa"],
+    "choicesEnglish": ["strike", "work", "break", "holiday"],
+    "correctAnswerItalian": "sciopero",
+    "correctAnswerEnglish": "strike",
+    "feedback": {
+      "correctItalian": "Perfetto! Lo sciopero interrompe il servizio ferroviario.",
+      "incorrectItalian": "Sbagliato, è sciopero.",
+      "correctEnglish": "Perfect! The strike interrupts the railway service.",
+      "incorrectEnglish": "Wrong, it's a strike."
+    }
+  },
+  {
+    "choicesItalian": ["conferma", "negazione", "dubbio", "domanda"],
+    "choicesEnglish": ["confirmation", "denial", "doubt", "question"],
+    "correctAnswerItalian": "conferma",
+    "correctAnswerEnglish": "confirmation",
+    "feedback": {
+      "correctItalian": "Esatto! Ricevere la conferma della prenotazione.",
+      "incorrectItalian": "No, è una conferma.",
+      "correctEnglish": "Exact! Receiving the confirmation of the reservation.",
+      "incorrectEnglish": "No, it's a confirmation."
+    }
+  },
+  {
+    "choicesItalian": ["pagamento", "incasso", "dare", "prendere"],
+    "choicesEnglish": ["payment", "collection", "give", "take"],
+    "correctAnswerItalian": "pagamento",
+    "correctAnswerEnglish": "payment",
+    "feedback": {
+      "correctItalian": "Giusto! Procedere al pagamento del biglietto.",
+      "incorrectItalian": "No, è il pagamento.",
+      "correctEnglish": "Right! Proceed to the payment of the ticket.",
+      "incorrectEnglish": "No, it's the payment."
+    }
+  },
+  {
+    "choicesItalian": ["tasto", "pulsante", "bottone", "segno"],
+    "choicesEnglish": ["key/button", "button", "button", "sign"],
+    "correctAnswerItalian": "tasto",
+    "correctAnswerEnglish": "key/button",
+    "feedback": {
+      "correctItalian": "Corretto! Premi il tasto 'conferma'.",
+      "incorrectItalian": "No, è il tasto.",
+      "correctEnglish": "Correct! Press the 'confirm' key.",
+      "incorrectEnglish": "No, it's the key."
+    }
+  },
+  {
+    "choicesItalian": ["elenco", "lista", "serie", "gruppo"],
+    "choicesEnglish": ["list", "list", "series", "group"],
+    "correctAnswerItalian": "elenco",
+    "correctAnswerEnglish": "list",
+    "feedback": {
+      "correctItalian": "Ottimo! Scegli la stazione dall'elenco.",
+      "incorrectItalian": "No, è l'elenco.",
+      "correctEnglish": "Great! Choose the station from the list.",
+      "incorrectEnglish": "No, it's the list."
+    }
+  },
+  {
+    "choicesItalian": ["assegnato", "libero", "casuale", "fisso"],
+    "choicesEnglish": ["assigned", "free", "random", "fixed"],
     "correctAnswerItalian": "assegnato",
     "correctAnswerEnglish": "assigned",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: assegnato (assigned)"
+      "correctItalian": "Perfetto! Il posto assegnato è obbligatorio.",
+      "incorrectItalian": "Sbagliato, è assegnato.",
+      "correctEnglish": "Perfect! The assigned seat is mandatory.",
+      "incorrectEnglish": "Wrong, it's assigned."
     }
   },
   {
-    "id": "s5-v41",
-    "italian": "valigia",
-    "english": "suitcase",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "macchinetta",
-      "valigia",
-      "seconda",
-      "pomeriggio"
-    ],
-    "choicesEnglish": [
-      "machine",
-      "suitcase",
-      "second",
-      "afternoon"
-    ],
-    "correctAnswerItalian": "valigia",
-    "correctAnswerEnglish": "suitcase",
+    "choicesItalian": ["sedersi", "stare", "mettersi", "porsi"],
+    "choicesEnglish": ["to sit", "to stay", "to put oneself", "to place oneself"],
+    "correctAnswerItalian": "sedersi",
+    "correctAnswerEnglish": "to sit",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: valigia (suitcase)"
+      "correctItalian": "Esatto! Puoi sedersi dove vuoi.",
+      "incorrectItalian": "No, il verbo è sedersi.",
+      "correctEnglish": "Exact! You can sit wherever you want.",
+      "incorrectEnglish": "No, the verb is to sit."
     }
   },
   {
-    "id": "s5-v42",
-    "italian": "borsa",
-    "english": "bag",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "borsa",
-      "carta",
-      "stazione",
-      "schermo"
-    ],
-    "choicesEnglish": [
-      "bag",
-      "card",
-      "station",
-      "screen"
-    ],
-    "correctAnswerItalian": "borsa",
-    "correctAnswerEnglish": "bag",
+    "choicesItalian": ["valido", "nullo", "scaduto", "vecchio"],
+    "choicesEnglish": ["valid", "null", "expired", "old"],
+    "correctAnswerItalian": "valido",
+    "correctAnswerEnglish": "valid",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: borsa (bag)"
+      "correctItalian": "Giusto! Il biglietto deve essere valido per la tratta.",
+      "incorrectItalian": "No, è valido.",
+      "correctEnglish": "Right! The ticket must be valid for the route.",
+      "incorrectEnglish": "No, it's valid."
     }
   },
   {
-    "id": "s5-v43",
-    "italian": "passeggero",
-    "english": "passenger",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "ritardo",
-      "domani",
-      "nome",
-      "passeggero"
-    ],
-    "choicesEnglish": [
-      "delay",
-      "tomorrow",
-      "name",
-      "passenger"
-    ],
-    "correctAnswerItalian": "passeggero",
-    "correctAnswerEnglish": "passenger",
+    "choicesItalian": ["stesso", "identico", "uguale", "altro"],
+    "choicesEnglish": ["same", "identical", "equal", "other"],
+    "correctAnswerItalian": "stesso",
+    "correctAnswerEnglish": "same",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: passeggero (passenger)"
+      "correctItalian": "Corretto! Puoi usare lo stesso biglietto.",
+      "incorrectItalian": "No, è stesso.",
+      "correctEnglish": "Correct! You can use the same ticket.",
+      "incorrectEnglish": "No, it's same."
     }
   },
   {
-    "id": "s5-v44",
-    "italian": "controllore",
-    "english": "conductor",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "prima",
-      "pomeriggio",
-      "prenotazione",
-      "controllore"
-    ],
-    "choicesEnglish": [
-      "first",
-      "afternoon",
-      "reservation",
-      "conductor"
-    ],
-    "correctAnswerItalian": "controllore",
-    "correctAnswerEnglish": "conductor",
+    "choicesItalian": ["multa", "multone", "sanzione", "pena"],
+    "choicesEnglish": ["fine", "big fine", "sanction", "penalty"],
+    "correctAnswerItalian": "multa",
+    "correctAnswerEnglish": "fine",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: controllore (conductor)"
+      "correctItalian": "Ottimo! Pagare la multa al capotreno.",
+      "incorrectItalian": "No, è una multa.",
+      "correctEnglish": "Great! Paying the fine to the conductor.",
+      "incorrectEnglish": "No, it's a fine."
     }
   },
   {
-    "id": "s5-v45",
-    "italian": "viaggio",
-    "english": "trip",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "euro",
-      "prenotazione",
-      "posto",
-      "viaggio"
-    ],
-    "choicesEnglish": [
-      "euro",
-      "reservation",
-      "seat",
-      "trip"
-    ],
-    "correctAnswerItalian": "viaggio",
-    "correctAnswerEnglish": "trip",
+    "choicesItalian": ["finestrino", "vetro", "finestra", "luce"],
+    "choicesEnglish": ["window (on a vehicle)", "glass", "window", "light"],
+    "correctAnswerItalian": "finestrino",
+    "correctAnswerEnglish": "window (on a vehicle)",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: viaggio (trip)"
+      "correctItalian": "Perfetto! Un posto vicino al finestrino.",
+      "incorrectItalian": "Sbagliato, è il finestrino.",
+      "correctEnglish": "Perfect! A seat by the window.",
+      "incorrectEnglish": "Wrong, it's the window."
     }
   },
   {
-    "id": "s5-v46",
-    "italian": "fermata",
-    "english": "stop",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "scelta",
-      "orario",
-      "disponibile",
-      "fermata"
-    ],
-    "choicesEnglish": [
-      "choice",
-      "schedule",
-      "available",
-      "stop"
-    ],
-    "correctAnswerItalian": "fermata",
-    "correctAnswerEnglish": "stop",
+    "choicesItalian": ["corridoio", "passaggio", "strada", "via"],
+    "choicesEnglish": ["aisle/corridor", "passage", "road", "way"],
+    "correctAnswerItalian": "corridoio",
+    "correctAnswerEnglish": "aisle/corridor",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: fermata (stop)"
+      "correctItalian": "Esatto! Un posto vicino al corridoio.",
+      "incorrectItalian": "No, è il corridoio.",
+      "correctEnglish": "Exact! A seat by the aisle.",
+      "incorrectEnglish": "No, it's the aisle."
     }
   },
   {
-    "id": "s5-v47",
-    "italian": "cambio",
-    "english": "change",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "tasto",
-      "cambio",
-      "euro",
-      "assegnato"
-    ],
-    "choicesEnglish": [
-      "button",
-      "change",
-      "euro",
-      "assigned"
-    ],
+    "choicesItalian": ["cambio", "sostituzione", "modifica", "variazione"],
+    "choicesEnglish": ["change", "substitution", "modification", "variation"],
     "correctAnswerItalian": "cambio",
     "correctAnswerEnglish": "change",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: cambio (change)"
+      "correctItalian": "Giusto! Fare un cambio treno a Bologna.",
+      "incorrectItalian": "No, è un cambio.",
+      "correctEnglish": "Right! Making a train change in Bologna.",
+      "incorrectEnglish": "No, it's a change."
     }
   },
   {
-    "id": "s5-v48",
-    "italian": "coincidenza",
-    "english": "connection",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "sottopassaggio",
-      "coincidenza",
-      "stazione",
-      "aiuto"
-    ],
-    "choicesEnglish": [
-      "underpass",
-      "connection",
-      "station",
-      "help"
-    ],
-    "correctAnswerItalian": "coincidenza",
-    "correctAnswerEnglish": "connection",
+    "choicesItalian": ["ritardo", "lentezza", "attesa", "fermo"],
+    "choicesEnglish": ["delay", "slowness", "wait", "stationary"],
+    "correctAnswerItalian": "ritardo",
+    "correctAnswerEnglish": "delay",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: coincidenza (connection)"
+      "correctItalian": "Corretto! Il treno ha trenta minuti di ritardo.",
+      "incorrectItalian": "No, è un ritardo.",
+      "correctEnglish": "Correct! The train is thirty minutes late (delay).",
+      "incorrectEnglish": "No, it's a delay."
     }
   },
   {
-    "id": "s5-v49",
-    "italian": "sottopassaggio",
-    "english": "underpass",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "sottopassaggio",
-      "seconda",
-      "macchinetta",
-      "destinazione"
-    ],
-    "choicesEnglish": [
-      "underpass",
-      "second",
-      "machine",
-      "destination"
-    ],
-    "correctAnswerItalian": "sottopassaggio",
-    "correctAnswerEnglish": "underpass",
+    "choicesItalian": ["biglietto cartaceo", "foglietto", "stampa", "carta"],
+    "choicesEnglish": ["paper ticket", "small sheet", "printout", "paper"],
+    "correctAnswerItalian": "biglietto cartaceo",
+    "correctAnswerEnglish": "paper ticket",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: sottopassaggio (underpass)"
+      "correctItalian": "Ottimo! Il biglietto cartaceo va timbrato.",
+      "incorrectItalian": "No, è il biglietto cartaceo.",
+      "correctEnglish": "Great! The paper ticket must be stamped.",
+      "incorrectEnglish": "No, it's the paper ticket."
     }
   },
   {
-    "id": "s5-v50",
-    "italian": "ufficio",
-    "english": "office",
-    "type": "vocabulary",
-    "choicesItalian": [
-      "oggi",
-      "ufficio",
-      "posto",
-      "coincidenza"
-    ],
-    "choicesEnglish": [
-      "today",
-      "office",
-      "seat",
-      "connection"
-    ],
-    "correctAnswerItalian": "ufficio",
-    "correctAnswerEnglish": "office",
+    "choicesItalian": ["biglietto digitale", "online", "virtuale", "finto"],
+    "choicesEnglish": ["digital ticket", "online", "virtual", "fake"],
+    "correctAnswerItalian": "biglietto digitale",
+    "correctAnswerEnglish": "digital ticket",
     "feedback": {
-      "correct": "Ottimo! / Great!",
-      "incorrect": "La risposta corretta è / The correct answer is: ufficio (office)"
+      "correctItalian": "Perfetto! Comprato sul sito o via app.",
+      "incorrectItalian": "No, è il biglietto digitale.",
+      "correctEnglish": "Perfect! Bought on the site or via app.",
+      "incorrectEnglish": "No, it's the digital ticket."
+    }
+  },
+  {
+    "choicesItalian": ["codice PNR", "numero", "segno", "bollo"],
+    "choicesEnglish": ["PNR code", "number", "sign", "stamp"],
+    "correctAnswerItalian": "codice PNR",
+    "correctAnswerEnglish": "PNR code",
+    "feedback": {
+      "correctItalian": "Esatto! Serve il codice PNR per il controllo.",
+      "incorrectItalian": "No, è il codice PNR.",
+      "correctEnglish": "Exact! The PNR code is needed for the check.",
+      "incorrectEnglish": "No, it's the PNR code."
+    }
+  },
+  {
+    "choicesItalian": ["tessera", "carta", "scheda", "bollino"],
+    "choicesEnglish": ["card/pass", "card", "card", "small stamp"],
+    "correctAnswerItalian": "tessera",
+    "correctAnswerEnglish": "card/pass",
+    "feedback": {
+      "correctItalian": "Giusto! Una tessera per l'abbonamento mensile.",
+      "incorrectItalian": "No, è la tessera.",
+      "correctEnglish": "Right! A card for the monthly subscription.",
+      "incorrectEnglish": "No, it's the card."
+    }
+  },
+  {
+    "choicesItalian": ["abbonamento", "biglietto", "pass", "tessera"],
+    "choicesEnglish": ["subscription/pass", "ticket", "pass", "card"],
+    "correctAnswerItalian": "abbonamento",
+    "correctAnswerEnglish": "subscription/pass",
+    "feedback": {
+      "correctItalian": "Corretto! L'abbonamento serve per chi viaggia ogni giorno.",
+      "incorrectItalian": "No, è l'abbonamento.",
+      "correctEnglish": "Correct! The subscription is for those who travel every day.",
+      "incorrectEnglish": "No, it's the subscription."
+    }
+  },
+  {
+    "choicesItalian": ["validità", "fine", "scadenza", "termine"],
+    "choicesEnglish": ["validity", "end", "expiration", "deadline"],
+    "correctAnswerItalian": "validità",
+    "correctAnswerEnglish": "validity",
+    "feedback": {
+      "correctItalian": "Ottimo! Controlla la validità del titolo.",
+      "incorrectItalian": "No, è la validità.",
+      "correctEnglish": "Great! Check the validity of the document.",
+      "incorrectEnglish": "No, it's the validity."
+    }
+  },
+  {
+    "choicesItalian": ["multa", "sanzione", "costo", "prezzo"],
+    "choicesEnglish": ["fine", "sanction", "cost", "price"],
+    "correctAnswerItalian": "multa",
+    "correctAnswerEnglish": "fine",
+    "feedback": {
+      "correctItalian": "Perfetto! Pagare la multa subito per evitare problemi.",
+      "incorrectItalian": "Sbagliato, è una multa.",
+      "correctEnglish": "Perfect! Pay the fine immediately to avoid problems.",
+      "incorrectEnglish": "Wrong, it's a fine."
+    }
+  },
+  {
+    "choicesItalian": ["ricevuta", "scontrino", "bollo", "foglio"],
+    "choicesEnglish": ["receipt", "receipt", "stamp", "paper"],
+    "correctAnswerItalian": "ricevuta",
+    "correctAnswerEnglish": "receipt",
+    "feedback": {
+      "correctItalian": "Esatto! La ricevuta fiscale del pagamento.",
+      "incorrectItalian": "No, è la ricevuta.",
+      "correctEnglish": "Exact! The fiscal receipt of the payment.",
+      "incorrectEnglish": "No, it's the receipt."
+    }
+  },
+  {
+    "choicesItalian": ["banconota", "moneta", "centesimo", "euro"],
+    "choicesEnglish": ["banknote/bill", "coin", "cent", "euro"],
+    "correctAnswerItalian": "banconota",
+    "correctAnswerEnglish": "banknote/bill",
+    "feedback": {
+      "correctItalian": "Giusto! Inserire la banconota nella fessura.",
+      "incorrectItalian": "No, è la banconota.",
+      "correctEnglish": "Right! Insert the banknote into the slot.",
+      "incorrectEnglish": "No, it's the banknote."
+    }
+  },
+  {
+    "choicesItalian": ["moneta", "banconota", "carta", "bollo"],
+    "choicesEnglish": ["coin", "banknote", "card", "stamp"],
+    "correctAnswerItalian": "moneta",
+    "correctAnswerEnglish": "coin",
+    "feedback": {
+      "correctItalian": "Corretto! La macchinetta dà il resto in monete.",
+      "incorrectItalian": "No, è la moneta.",
+      "correctEnglish": "Correct! The machine gives change in coins.",
+      "incorrectEnglish": "No, it's the coin."
+    }
+  },
+  {
+    "choicesItalian": ["resto", "cambio", "avanzo", "sopra"],
+    "choicesEnglish": ["change (money returned)", "change", "leftover", "above"],
+    "correctAnswerItalian": "resto",
+    "correctAnswerEnglish": "change (money returned)",
+    "feedback": {
+      "correctItalian": "Ottimo! Non dimenticare il resto nella macchinetta.",
+      "incorrectItalian": "No, si dice resto.",
+      "correctEnglish": "Great! Don't forget the change in the machine.",
+      "incorrectEnglish": "No, it's called change."
+    }
+  },
+  {
+    "choicesItalian": ["PIN", "codice", "segno", "nome"],
+    "choicesEnglish": ["PIN", "code", "sign", "name"],
+    "correctAnswerItalian": "PIN",
+    "correctAnswerEnglish": "PIN",
+    "feedback": {
+      "correctItalian": "Perfetto! Inserire il codice PIN della carta.",
+      "incorrectItalian": "Sbagliato, è il PIN.",
+      "correctEnglish": "Perfect! Insert the PIN code of the card.",
+      "incorrectEnglish": "Wrong, it's the PIN."
+    }
+  },
+  {
+    "choicesItalian": ["fessura", "buco", "taglio", "porta"],
+    "choicesEnglish": ["slot", "hole", "cut", "door"],
+    "correctAnswerItalian": "fessura",
+    "correctAnswerEnglish": "slot",
+    "feedback": {
+      "correctItalian": "Esatto! Inserire la carta nella fessura.",
+      "incorrectItalian": "No, è la fessura.",
+      "correctEnglish": "Exact! Insert the card into the slot.",
+      "incorrectEnglish": "No, it's the slot."
+    }
+  },
+  {
+    "choicesItalian": ["sportello", "banco", "tavolo", "ufficio"],
+    "choicesEnglish": ["counter", "desk", "table", "office"],
+    "correctAnswerItalian": "sportello",
+    "correctAnswerEnglish": "counter",
+    "feedback": {
+      "correctItalian": "Giusto! Sportello numero uno.",
+      "incorrectItalian": "No, è lo sportello.",
+      "correctEnglish": "Right! Counter number one.",
+      "incorrectEnglish": "No, it's the counter."
+    }
+  },
+  {
+    "choicesItalian": ["impiegato", "bigliettaio", "capo", "servo"],
+    "choicesEnglish": ["employee", "ticket seller", "boss", "servant"],
+    "correctAnswerItalian": "impiegato",
+    "correctAnswerEnglish": "employee",
+    "feedback": {
+      "correctItalian": "Corretto! Parla con l'impiegato delle ferrovie.",
+      "incorrectItalian": "No, è l'impiegato.",
+      "correctEnglish": "Correct! Talk to the railway employee.",
+      "incorrectEnglish": "No, it's the employee."
+    }
+  },
+  {
+    "choicesItalian": ["biglietto", "carta", "titolo", "bollo"],
+    "choicesEnglish": ["ticket", "card", "title/document", "stamp"],
+    "correctAnswerItalian": "biglietto",
+    "correctAnswerEnglish": "ticket",
+    "feedback": {
+      "correctItalian": "Ottimo! Comprare un biglietto per Roma.",
+      "incorrectItalian": "No, è il biglietto.",
+      "correctEnglish": "Great! Buying a ticket to Rome.",
+      "incorrectEnglish": "No, it's the ticket."
+    }
+  },
+  {
+    "choicesItalian": ["destinazione", "meta", "fine", "arrivo"],
+    "choicesEnglish": ["destination", "goal", "end", "arrival"],
+    "correctAnswerItalian": "destinazione",
+    "correctAnswerEnglish": "destination",
+    "feedback": {
+      "correctItalian": "Perfetto! Qual è la sua destinazione?",
+      "incorrectItalian": "Sbagliato, è la destinazione.",
+      "correctEnglish": "Perfect! What is your destination?",
+      "incorrectEnglish": "Wrong, it's the destination."
+    }
+  },
+  {
+    "choicesItalian": ["tariffa", "costo", "prezzo", "valore"],
+    "choicesEnglish": ["fare", "cost", "price", "value"],
+    "correctAnswerItalian": "tariffa",
+    "correctAnswerEnglish": "fare",
+    "feedback": {
+      "correctItalian": "Esatto! La tariffa economica.",
+      "incorrectItalian": "No, è la tariffa.",
+      "correctEnglish": "Exact! The economical fare.",
+      "incorrectEnglish": "No, it's the fare."
     }
   }
 ]

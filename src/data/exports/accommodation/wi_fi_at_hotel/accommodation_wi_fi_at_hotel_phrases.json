@@ -1,512 +1,1250 @@
 [
   {
-    "id": "s23-p01",
-    "italian": "Scusi, non trovo la password.",
-    "english": "Excuse me, I can't find the password.",
+    "id": "s31-p1",
+    "italian": "C'è il wifi?",
+    "english": "Is there Wi-Fi?",
     "type": "phrase",
-    "choicesItalian": ["Scusi, non trovo la password.", "Salve, non ho il wifi.", "Buongiorno, dov'è la rete?", "Scusi, la password è errata."],
-    "choicesEnglish": ["Excuse me, I can't find the password.", "Hello, I don't have wifi.", "Good morning, where is the network?", "Excuse me, the password is wrong."],
-    "correctAnswerItalian": "Scusi, non trovo la password.",
-    "correctAnswerEnglish": "Excuse me, I can't find the password."
+    "choicesItalian": [
+      "È molto lento.",
+      "Riavvio il computer.",
+      "C'è il wifi?",
+      "Password errata."
+    ],
+    "choicesEnglish": [
+      "It's very slow.",
+      "I'm restarting the computer.",
+      "Is there Wi-Fi?",
+      "Wrong password."
+    ],
+    "correctAnswerItalian": "C'è il wifi?",
+    "correctAnswerEnglish": "Is there Wi-Fi?",
+    "feedback": {
+      "correctItalian": "Esatto! Per chiedere la disponibilità.",
+      "incorrectItalian": "No, 'C'è il wifi?' significa per chiedere la disponibilità.",
+      "correctEnglish": "Correct! Is there Wi-Fi? refers to C'è il wifi?.",
+      "incorrectEnglish": "No, the correct word is Is there Wi-Fi?."
+    }
   },
   {
-    "id": "s23-p02",
-    "italian": "Qual è la rete?",
-    "english": "What is the network?",
+    "id": "s31-p2",
+    "italian": "Qual è la password?",
+    "english": "What is the password?",
     "type": "phrase",
-    "choicesItalian": ["Qual è la rete?", "Qual è la password?", "Come si chiama l'hotel?", "Dove sono le camere?"],
-    "choicesEnglish": ["What is the network?", "What is the password?", "What is the hotel's name?", "Where are the rooms?"],
-    "correctAnswerItalian": "Qual è la rete?",
-    "correctAnswerEnglish": "What is the network?"
+    "choicesItalian": [
+      "È lentissimo.",
+      "È incluso nel prezzo?",
+      "Ho un errore di login.",
+      "Qual è la password?"
+    ],
+    "choicesEnglish": [
+      "It's extremely slow.",
+      "Is it included in the price?",
+      "I have a login error.",
+      "What is the password?"
+    ],
+    "correctAnswerItalian": "Qual è la password?",
+    "correctAnswerEnglish": "What is the password?",
+    "feedback": {
+      "correctItalian": "Esatto! Per chiedere l'accesso.",
+      "incorrectItalian": "No, 'Qual è la password?' significa per chiedere l'accesso.",
+      "correctEnglish": "Correct! What is the password? refers to Qual è la password?.",
+      "incorrectEnglish": "No, the correct word is What is the password?."
+    }
   },
   {
-    "id": "s23-p03",
-    "italian": "Come si chiama la rete?",
+    "id": "s31-p3",
+    "italian": "Il wifi è gratuito?",
+    "english": "Is the Wi-Fi free?",
+    "type": "phrase",
+    "choicesItalian": [
+      "È molto lento.",
+      "Il wifi è gratuito?",
+      "La rete non appare.",
+      "Devo pagare?"
+    ],
+    "choicesEnglish": [
+      "It's very slow.",
+      "Is the Wi-Fi free?",
+      "The network doesn't appear.",
+      "Do I have to pay?"
+    ],
+    "correctAnswerItalian": "Il wifi è gratuito?",
+    "correctAnswerEnglish": "Is the Wi-Fi free?",
+    "feedback": {
+      "correctItalian": "Esatto! Per sapere se si paga.",
+      "incorrectItalian": "No, 'Il wifi è gratuito?' significa per sapere se si paga.",
+      "correctEnglish": "Correct! Is the Wi-Fi free? refers to Il wifi è gratuito?.",
+      "incorrectEnglish": "No, the correct word is Is the Wi-Fi free?."
+    }
+  },
+  {
+    "id": "s31-p4",
+    "italian": "Non funziona il wifi.",
+    "english": "The Wi-Fi isn't working.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Riavvio il telefono.",
+      "Non funziona il wifi.",
+      "Ho una chiamata Zoom.",
+      "C'è un tecnico?"
+    ],
+    "choicesEnglish": [
+      "I'm restarting the phone.",
+      "The Wi-Fi isn't working.",
+      "I have a Zoom call.",
+      "Is there a technician?"
+    ],
+    "correctAnswerItalian": "Non funziona il wifi.",
+    "correctAnswerEnglish": "The Wi-Fi isn't working.",
+    "feedback": {
+      "correctItalian": "Esatto! Per segnalare un problema.",
+      "incorrectItalian": "No, 'Non funziona il wifi.' significa per segnalare un problema.",
+      "correctEnglish": "Correct! The Wi-Fi isn't working. refers to Non funziona il wifi..",
+      "incorrectEnglish": "No, the correct word is The Wi-Fi isn't working.."
+    }
+  },
+  {
+    "id": "s31-p5",
+    "italian": "Il segnale è debole.",
+    "english": "The signal is weak.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Il segnale è debole.",
+      "Devo pagare?",
+      "È molto lento.",
+      "C'è un tecnico?"
+    ],
+    "choicesEnglish": [
+      "The signal is weak.",
+      "Do I have to pay?",
+      "It's very slow.",
+      "Is there a technician?"
+    ],
+    "correctAnswerItalian": "Il segnale è debole.",
+    "correctAnswerEnglish": "The signal is weak.",
+    "feedback": {
+      "correctItalian": "Esatto! Quando prende poco.",
+      "incorrectItalian": "No, 'Il segnale è debole.' significa quando prende poco.",
+      "correctEnglish": "Correct! The signal is weak. refers to Il segnale è debole..",
+      "incorrectEnglish": "No, the correct word is The signal is weak.."
+    }
+  },
+  {
+    "id": "s31-p6",
+    "italian": "Come mi collego?",
+    "english": "How do I connect?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Come mi collego?",
+      "Mi serve per lavoro.",
+      "Eccola.",
+      "Riprovi più tardi."
+    ],
+    "choicesEnglish": [
+      "How do I connect?",
+      "I need it for work.",
+      "Here it is.",
+      "Try again later."
+    ],
+    "correctAnswerItalian": "Come mi collego?",
+    "correctAnswerEnglish": "How do I connect?",
+    "feedback": {
+      "correctItalian": "Esatto! Per chiedere istruzioni.",
+      "incorrectItalian": "No, 'Come mi collego?' significa per chiedere istruzioni.",
+      "correctEnglish": "Correct! How do I connect? refers to Come mi collego?.",
+      "incorrectEnglish": "No, the correct word is How do I connect?."
+    }
+  },
+  {
+    "id": "s31-p7",
+    "italian": "Mi serve il codice.",
+    "english": "I need the code.",
+    "type": "phrase",
+    "choicesItalian": [
+      "È scritta qui.",
+      "Prego.",
+      "Mi serve il codice.",
+      "Finalmente!"
+    ],
+    "choicesEnglish": [
+      "It's written here.",
+      "You're welcome.",
+      "I need the code.",
+      "Finally!"
+    ],
+    "correctAnswerItalian": "Mi serve il codice.",
+    "correctAnswerEnglish": "I need the code.",
+    "feedback": {
+      "correctItalian": "Esatto! Per chiedere le credenziali.",
+      "incorrectItalian": "No, 'Mi serve il codice.' significa per chiedere le credenziali.",
+      "correctEnglish": "Correct! I need the code. refers to Mi serve il codice..",
+      "incorrectEnglish": "No, the correct word is I need the code.."
+    }
+  },
+  {
+    "id": "s31-p8",
+    "italian": "La rete non appare.",
+    "english": "The network doesn't appear.",
+    "type": "phrase",
+    "choicesItalian": [
+      "È scritta qui.",
+      "Non carica la pagina.",
+      "La rete non appare.",
+      "Riavvio il computer."
+    ],
+    "choicesEnglish": [
+      "It's written here.",
+      "The page doesn't load.",
+      "The network doesn't appear.",
+      "I'm restarting the computer."
+    ],
+    "correctAnswerItalian": "La rete non appare.",
+    "correctAnswerEnglish": "The network doesn't appear.",
+    "feedback": {
+      "correctItalian": "Esatto! Quando non si vede il nome.",
+      "incorrectItalian": "No, 'La rete non appare.' significa quando non si vede il nome.",
+      "correctEnglish": "Correct! The network doesn't appear. refers to La rete non appare..",
+      "incorrectEnglish": "No, the correct word is The network doesn't appear.."
+    }
+  },
+  {
+    "id": "s31-p9",
+    "italian": "È molto lento.",
+    "english": "It's very slow.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Il wifi è gratuito?",
+      "È molto lento.",
+      "Riavvio il telefono.",
+      "La connessione è instabile."
+    ],
+    "choicesEnglish": [
+      "Is the Wi-Fi free?",
+      "It's very slow.",
+      "I'm restarting the phone.",
+      "The connection is unstable."
+    ],
+    "correctAnswerItalian": "È molto lento.",
+    "correctAnswerEnglish": "It's very slow.",
+    "feedback": {
+      "correctItalian": "Esatto! Per lamentarsi della velocità.",
+      "incorrectItalian": "No, 'È molto lento.' significa per lamentarsi della velocità.",
+      "correctEnglish": "Correct! It's very slow. refers to È molto lento..",
+      "incorrectEnglish": "No, the correct word is It's very slow.."
+    }
+  },
+  {
+    "id": "s31-p10",
+    "italian": "Cade la connessione.",
+    "english": "The connection drops.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Cade la connessione.",
+      "Prego.",
+      "La rete non appare.",
+      "Come mi collego?"
+    ],
+    "choicesEnglish": [
+      "The connection drops.",
+      "You're welcome.",
+      "The network doesn't appear.",
+      "How do I connect?"
+    ],
+    "correctAnswerItalian": "Cade la connessione.",
+    "correctAnswerEnglish": "The connection drops.",
+    "feedback": {
+      "correctItalian": "Esatto! Quando si stacca spesso.",
+      "incorrectItalian": "No, 'Cade la connessione.' significa quando si stacca spesso.",
+      "correctEnglish": "Correct! The connection drops. refers to Cade la connessione..",
+      "incorrectEnglish": "No, the correct word is The connection drops.."
+    }
+  },
+  {
+    "id": "s31-p11",
+    "italian": "Non riesco ad accedere.",
+    "english": "I can't access it.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Non riesco ad accedere.",
+      "Prego.",
+      "Niente, non va.",
+      "La connessione è instabile."
+    ],
+    "choicesEnglish": [
+      "I can't access it.",
+      "You're welcome.",
+      "Nothing, it's not working.",
+      "The connection is unstable."
+    ],
+    "correctAnswerItalian": "Non riesco ad accedere.",
+    "correctAnswerEnglish": "I can't access it.",
+    "feedback": {
+      "correctItalian": "Esatto! In caso di problemi di login.",
+      "incorrectItalian": "No, 'Non riesco ad accedere.' significa in caso di problemi di login.",
+      "correctEnglish": "Correct! I can't access it. refers to Non riesco ad accedere..",
+      "incorrectEnglish": "No, the correct word is I can't access it.."
+    }
+  },
+  {
+    "id": "s31-p12",
+    "italian": "Posso avere la password?",
+    "english": "Can I have the password?",
+    "type": "phrase",
+    "choicesItalian": [
+      "È incluso nel prezzo?",
+      "Posso avere la password?",
+      "Provi a riavviare.",
+      "La connessione è instabile."
+    ],
+    "choicesEnglish": [
+      "Is it included in the price?",
+      "Can I have the password?",
+      "Try restarting.",
+      "The connection is unstable."
+    ],
+    "correctAnswerItalian": "Posso avere la password?",
+    "correctAnswerEnglish": "Can I have the password?",
+    "feedback": {
+      "correctItalian": "Esatto! Richiesta gentile.",
+      "incorrectItalian": "No, 'Posso avere la password?' significa richiesta gentile.",
+      "correctEnglish": "Correct! Can I have the password? refers to Posso avere la password?.",
+      "incorrectEnglish": "No, the correct word is Can I have the password?."
+    }
+  },
+  {
+    "id": "s31-p13",
+    "italian": "Dove trovo il codice?",
+    "english": "Where do I find the code?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Prego.",
+      "Adesso funziona.",
+      "Provi a riavviare.",
+      "Dove trovo il codice?"
+    ],
+    "choicesEnglish": [
+      "You're welcome.",
+      "Now it works.",
+      "Try restarting.",
+      "Where do I find the code?"
+    ],
+    "correctAnswerItalian": "Dove trovo il codice?",
+    "correctAnswerEnglish": "Where do I find the code?",
+    "feedback": {
+      "correctItalian": "Esatto! Per cercare le credenziali.",
+      "incorrectItalian": "No, 'Dove trovo il codice?' significa per cercare le credenziali.",
+      "correctEnglish": "Correct! Where do I find the code? refers to Dove trovo il codice?.",
+      "incorrectEnglish": "No, the correct word is Where do I find the code?."
+    }
+  },
+  {
+    "id": "s31-p14",
+    "italian": "Funziona in camera?",
+    "english": "Does it work in the room?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Funziona in camera?",
+      "Riprovi più tardi.",
+      "Ho un errore di login.",
+      "Non riesco ad accedere."
+    ],
+    "choicesEnglish": [
+      "Does it work in the room?",
+      "Try again later.",
+      "I have a login error.",
+      "I can't access it."
+    ],
+    "correctAnswerItalian": "Funziona in camera?",
+    "correctAnswerEnglish": "Does it work in the room?",
+    "feedback": {
+      "correctItalian": "Esatto! Sulla copertura.",
+      "incorrectItalian": "No, 'Funziona in camera?' significa sulla copertura.",
+      "correctEnglish": "Correct! Does it work in the room? refers to Funziona in camera?.",
+      "incorrectEnglish": "No, the correct word is Does it work in the room?."
+    }
+  },
+  {
+    "id": "s31-p15",
+    "italian": "Solo nella hall.",
+    "english": "Only in the lobby.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Finalmente!",
+      "Riprovi più tardi.",
+      "Provi a riavviare.",
+      "Solo nella hall."
+    ],
+    "choicesEnglish": [
+      "Finally!",
+      "Try again later.",
+      "Try restarting.",
+      "Only in the lobby."
+    ],
+    "correctAnswerItalian": "Solo nella hall.",
+    "correctAnswerEnglish": "Only in the lobby.",
+    "feedback": {
+      "correctItalian": "Esatto! Sulla limitazione del segnale.",
+      "incorrectItalian": "No, 'Solo nella hall.' significa sulla limitazione del segnale.",
+      "correctEnglish": "Correct! Only in the lobby. refers to Solo nella hall..",
+      "incorrectEnglish": "No, the correct word is Only in the lobby.."
+    }
+  },
+  {
+    "id": "s31-p16",
+    "italian": "C'è un tecnico?",
+    "english": "Is there a technician?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Non funziona il wifi.",
+      "È lentissimo.",
+      "C'è un tecnico?",
+      "È scritta qui."
+    ],
+    "choicesEnglish": [
+      "The Wi-Fi isn't working.",
+      "It's extremely slow.",
+      "Is there a technician?",
+      "It's written here."
+    ],
+    "correctAnswerItalian": "C'è un tecnico?",
+    "correctAnswerEnglish": "Is there a technician?",
+    "feedback": {
+      "correctItalian": "Esatto! Richiesta di aiuto esperto.",
+      "incorrectItalian": "No, 'C'è un tecnico?' significa richiesta di aiuto esperto.",
+      "correctEnglish": "Correct! Is there a technician? refers to C'è un tecnico?.",
+      "incorrectEnglish": "No, the correct word is Is there a technician?."
+    }
+  },
+  {
+    "id": "s31-p17",
+    "italian": "Può aiutarmi?",
+    "english": "Can you help me?",
+    "type": "phrase",
+    "choicesItalian": [
+      "È urgente.",
+      "Può aiutarmi?",
+      "Cade la connessione.",
+      "Ho un errore di login."
+    ],
+    "choicesEnglish": [
+      "It's urgent.",
+      "Can you help me?",
+      "The connection drops.",
+      "I have a login error."
+    ],
+    "correctAnswerItalian": "Può aiutarmi?",
+    "correctAnswerEnglish": "Can you help me?",
+    "feedback": {
+      "correctItalian": "Esatto! Richiesta di assistenza.",
+      "incorrectItalian": "No, 'Può aiutarmi?' significa richiesta di assistenza.",
+      "correctEnglish": "Correct! Can you help me? refers to Può aiutarmi?.",
+      "incorrectEnglish": "No, the correct word is Can you help me?."
+    }
+  },
+  {
+    "id": "s31-p18",
+    "italian": "Qual è il nome della rete?",
     "english": "What is the network name?",
     "type": "phrase",
-    "choicesItalian": ["Come si chiama la rete?", "Come si chiama l'ospite?", "Qual è il nome del wifi?", "Dov'è il router?"],
-    "choicesEnglish": ["What is the network name?", "What is the guest's name?", "What is the wifi name?", "Where is the router?"],
-    "correctAnswerItalian": "Come si chiama la rete?",
-    "correctAnswerEnglish": "What is the network name?"
+    "choicesItalian": [
+      "Riprovi più tardi.",
+      "Qual è il nome della rete?",
+      "È scritta qui.",
+      "È incluso nel prezzo?"
+    ],
+    "choicesEnglish": [
+      "Try again later.",
+      "What is the network name?",
+      "It's written here.",
+      "Is it included in the price?"
+    ],
+    "correctAnswerItalian": "Qual è il nome della rete?",
+    "correctAnswerEnglish": "What is the network name?",
+    "feedback": {
+      "correctItalian": "Esatto! Per identificare il wifi.",
+      "incorrectItalian": "No, 'Qual è il nome della rete?' significa per identificare il wifi.",
+      "correctEnglish": "Correct! What is the network name? refers to Qual è il nome della rete?.",
+      "incorrectEnglish": "No, the correct word is What is the network name?."
+    }
   },
   {
-    "id": "s23-p04",
-    "italian": "Tutto minuscolo.",
-    "english": "All lowercase.",
-    "type": "phrase",
-    "choicesItalian": ["Tutto minuscolo.", "Tutto maiuscolo.", "Senza spazi.", "Con i numeri."],
-    "choicesEnglish": ["All lowercase.", "All uppercase.", "Without spaces.", "With numbers."],
-    "correctAnswerItalian": "Tutto minuscolo.",
-    "correctAnswerEnglish": "All lowercase."
-  },
-  {
-    "id": "s23-p05",
-    "italian": "Stella duemila ventiquattro.",
-    "english": "Stella twenty twenty-four.",
-    "type": "phrase",
-    "choicesItalian": ["Stella duemila ventiquattro.", "Password dell'hotel.", "Nome della rete.", "Codice di accesso."],
-    "choicesEnglish": ["Stella twenty twenty-four.", "Hotel password.", "Network name.", "Access code."],
-    "correctAnswerItalian": "Stella duemila ventiquattro.",
-    "correctAnswerEnglish": "Stella twenty twenty-four."
-  },
-  {
-    "id": "s23-p06",
-    "italian": "Limite di dispositivi.",
-    "english": "Device limit.",
-    "type": "phrase",
-    "choicesItalian": ["Limite di dispositivi.", "Numero di ospiti.", "Massimo di connessioni.", "Senza limiti."],
-    "choicesEnglish": ["Device limit.", "Number of guests.", "Maximum connections.", "Without limits."],
-    "correctAnswerItalian": "Limite di dispositivi.",
-    "correctAnswerEnglish": "Device limit."
-  },
-  {
-    "id": "s23-p07",
-    "italian": "Collegare più dispositivi.",
-    "english": "Connect more devices.",
-    "type": "phrase",
-    "choicesItalian": ["Collegare più dispositivi.", "Staccare il cellulare.", "Usare un solo tablet.", "Disconnettere tutto."],
-    "choicesEnglish": ["Connect more devices.", "Detach the cell phone.", "Use only one tablet.", "Disconnect everything."],
-    "correctAnswerItalian": "Collegare più dispositivi.",
-    "correctAnswerEnglish": "Connect more devices."
-  },
-  {
-    "id": "s23-p08",
-    "italian": "Connessione abbastanza veloce.",
-    "english": "Connection fast enough.",
-    "type": "phrase",
-    "choicesItalian": ["Connessione abbastanza veloce.", "Rete troppo lenta.", "Internet non va.", "Segnale forte."],
-    "choicesEnglish": ["Connection fast enough.", "Network too slow.", "Internet doesn't work.", "Strong signal."],
-    "correctAnswerItalian": "Connessione abbastanza veloce.",
-    "correctAnswerEnglish": "Connection fast enough."
-  },
-  {
-    "id": "s23-p09",
-    "italian": "Fare una videochiamata.",
-    "english": "Make a video call.",
-    "type": "phrase",
-    "choicesItalian": ["Fare una videochiamata.", "Mandare un'email.", "Scaricare un film.", "Navigare sul web."],
-    "choicesEnglish": ["Make a video call.", "Send an email.", "Download a movie.", "Browse the web."],
-    "correctAnswerItalian": "Fare una videochiamata.",
-    "correctAnswerEnglish": "Make a video call."
-  },
-  {
-    "id": "s23-p10",
-    "italian": "Fibra ottica in hotel.",
-    "english": "Fiber optics in the hotel.",
-    "type": "phrase",
-    "choicesItalian": ["Fibra ottica in hotel.", "Cavo di rete rotto.", "Wifi gratuito ovunque.", "Rete lenta oggi."],
-    "choicesEnglish": ["Fiber optics in the hotel.", "Network cable broken.", "Free wifi everywhere.", "Slow network today."],
-    "correctAnswerItalian": "Fibra ottica in hotel.",
-    "correctAnswerEnglish": "Fiber optics in the hotel."
-  },
-  {
-    "id": "s23-p11",
-    "italian": "Continua a disconnettersi.",
-    "english": "It keeps disconnecting.",
-    "type": "phrase",
-    "choicesItalian": ["Continua a disconnettersi.", "Resta sempre collegato.", "Non si connette mai.", "Si spegne da solo."],
-    "choicesEnglish": ["It keeps disconnecting.", "It always stays connected.", "It never connects.", "It turns off by itself."],
-    "correctAnswerItalian": "Continua a disconnettersi.",
-    "correctAnswerEnglish": "It keeps disconnecting."
-  },
-  {
-    "id": "s23-p12",
-    "italian": "Segnale molto debole.",
-    "english": "Very weak signal.",
-    "type": "phrase",
-    "choicesItalian": ["Segnale molto debole.", "Segnale eccellente.", "Rete non trovata.", "Wifi spento."],
-    "choicesEnglish": ["Very weak signal.", "Excellent signal.", "Network not found.", "Wifi off."],
-    "correctAnswerItalian": "Segnale molto debole.",
-    "correctAnswerEnglish": "Very weak signal."
-  },
-  {
-    "id": "s23-p13",
-    "italian": "Angolo della stanza.",
-    "english": "Corner of the room.",
-    "type": "phrase",
-    "choicesItalian": ["Angolo della stanza.", "Centro della hall.", "Dietro la porta.", "Vicino alla finestra."],
-    "choicesEnglish": ["Corner of the room.", "Center of the lobby.", "Behind the door.", "Near the window."],
-    "correctAnswerItalian": "Angolo della stanza.",
-    "correctAnswerEnglish": "Corner of the room."
-  },
-  {
-    "id": "s23-p14",
-    "italian": "Prova a riavviare.",
-    "english": "Try to restart.",
-    "type": "phrase",
-    "choicesItalian": ["Prova a riavviare.", "Prova a spegnere.", "Prova a resettare.", "Prova a chiamare."],
-    "choicesEnglish": ["Try to restart.", "Try to turn off.", "Try to reset.", "Try to call."],
-    "correctAnswerItalian": "Prova a riavviare.",
-    "correctAnswerEnglish": "Try to restart."
-  },
-  {
-    "id": "s23-p15",
-    "italian": "Resettare il ripetitore.",
-    "english": "Reset the repeater.",
-    "type": "phrase",
-    "choicesItalian": ["Resettare il ripetitore.", "Cambiare la password.", "Spostare il router.", "Accendere la luce."],
-    "choicesEnglish": ["Reset the repeater.", "Change the password.", "Move the router.", "Turn on the light."],
-    "correctAnswerItalian": "Resettare il ripetitore.",
-    "correctAnswerEnglish": "Reset the repeater."
-  },
-  {
-    "id": "s23-p16",
-    "italian": "Dammi cinque minuti.",
-    "english": "Give me five minutes.",
-    "type": "phrase",
-    "choicesItalian": ["Dammi cinque minuti.", "Aspetta un'ora.", "Arrivo subito.", "Faccio presto."],
-    "choicesEnglish": ["Give me five minutes.", "Wait an hour.", "I'm coming right away.", "I'll be quick."],
-    "correctAnswerItalian": "Dammi cinque minuti.",
-    "correctAnswerEnglish": "Give me five minutes."
-  },
-  {
-    "id": "s23-p17",
-    "italian": "Lavorare nella hall.",
-    "english": "Work in the lobby.",
-    "type": "phrase",
-    "choicesItalian": ["Lavorare nella hall.", "Dormire in camera.", "Mangiare al buffet.", "Uscire dall'hotel."],
-    "choicesEnglish": ["Work in the lobby.", "Sleep in the room.", "Eat at the buffet.", "Leave the hotel."],
-    "correctAnswerItalian": "Lavorare nella hall.",
-    "correctAnswerEnglish": "Work in the lobby."
-  },
-  {
-    "id": "s23-p18",
-    "italian": "Presa di corrente libera.",
-    "english": "Free power outlet.",
-    "type": "phrase",
-    "choicesItalian": ["Presa di corrente libera.", "Cavo di rete connesso.", "Pulsante di accensione.", "Luce di emergenza."],
-    "choicesEnglish": ["Free power outlet.", "Network cable connected.", "Power button.", "Emergency light."],
-    "correctAnswerItalian": "Presa di corrente libera.",
-    "correctAnswerEnglish": "Free power outlet."
-  },
-  {
-    "id": "s23-p19",
-    "italian": "Segnale eccellente.",
-    "english": "Excellent signal.",
-    "type": "phrase",
-    "choicesItalian": ["Segnale eccellente.", "Segnale pessimo.", "Senza segnale.", "Rete instabile."],
-    "choicesEnglish": ["Excellent signal.", "Terrible signal.", "No signal.", "Unstable network."],
-    "correctAnswerItalian": "Segnale eccellente.",
-    "correctAnswerEnglish": "Excellent signal."
-  },
-  {
-    "id": "s23-p20",
-    "italian": "Nessun problema.",
-    "english": "No problem.",
-    "type": "phrase",
-    "choicesItalian": ["Nessun problema.", "Un grande problema.", "Tutto difficile.", "Non lo so."],
-    "choicesEnglish": ["No problem.", "A big problem.", "Everything difficult.", "I don't know."],
-    "correctAnswerItalian": "Nessun problema.",
-    "correctAnswerEnglish": "No problem."
-  },
-  {
-    "id": "s23-p21",
-    "italian": "Mi dispiace per il guasto.",
-    "english": "I'm sorry for the failure.",
-    "type": "phrase",
-    "choicesItalian": ["Mi dispiace per il guasto.", "Sono felice del wifi.", "Il guasto è risolto.", "Non c'è nessun guasto."],
-    "choicesEnglish": ["I'm sorry for the failure.", "I'm happy with the wifi.", "The failure is fixed.", "There is no failure."],
-    "correctAnswerItalian": "Mi dispiace per il guasto.",
-    "correctAnswerEnglish": "I'm sorry for the failure."
-  },
-  {
-    "id": "s23-p22",
-    "italian": "Internet non funziona.",
-    "english": "Internet doesn't work.",
-    "type": "phrase",
-    "choicesItalian": ["Internet non funziona.", "La rete è ottima.", "Sono online ora.", "Password corretta."],
-    "choicesEnglish": ["Internet doesn't work.", "The network is great.", "I'm online now.", "Correct password."],
-    "correctAnswerItalian": "Internet non funziona.",
-    "correctAnswerEnglish": "Internet doesn't work."
-  },
-  {
-    "id": "s23-p23",
-    "italian": "Caricare un file.",
-    "english": "Upload a file.",
-    "type": "phrase",
-    "choicesItalian": ["Caricare un file.", "Scaricare un'app.", "Cancellare una foto.", "Inviare un video."],
-    "choicesEnglish": ["Upload a file.", "Download an app.", "Delete a photo.", "Send a video."],
-    "correctAnswerItalian": "Caricare un file.",
-    "correctAnswerEnglish": "Upload a file."
-  },
-  {
-    "id": "s23-p24",
-    "italian": "Scaricare la posta.",
-    "english": "Download mail.",
-    "type": "phrase",
-    "choicesItalian": ["Scaricare la posta.", "Leggere il giornale.", "Scrivere un messaggio.", "Chiudere il browser."],
-    "choicesEnglish": ["Download mail.", "Read the newspaper.", "Write a message.", "Close the browser."],
-    "correctAnswerItalian": "Scaricare la posta.",
-    "correctAnswerEnglish": "Download mail."
-  },
-  {
-    "id": "s23-p25",
-    "italian": "Inserire le credenziali.",
-    "english": "Enter credentials.",
-    "type": "phrase",
-    "choicesItalian": ["Inserire le credenziali.", "Dimenticare la password.", "Sbagliare l'utente.", "Perdere l'accesso."],
-    "choicesEnglish": ["Enter credentials.", "Forget the password.", "Get the user wrong.", "Lose access."],
-    "correctAnswerItalian": "Inserire le credenziali.",
-    "correctAnswerEnglish": "Enter credentials."
-  },
-  {
-    "id": "s23-p26",
-    "italian": "Fare il login.",
-    "english": "Log in.",
-    "type": "phrase",
-    "choicesItalian": ["Fare il login.", "Uscire dal sito.", "Sconnettere tutto.", "Spegnere il pc."],
-    "choicesEnglish": ["Log in.", "Exit the site.", "Disconnect everything.", "Turn off the pc."],
-    "correctAnswerItalian": "Fare il login.",
-    "correctAnswerEnglish": "Log in."
-  },
-  {
-    "id": "s23-p27",
-    "italian": "Pagina di accesso.",
-    "english": "Access page.",
-    "type": "phrase",
-    "choicesItalian": ["Pagina di accesso.", "Sito web hotel.", "Link interrotto.", "Errore di rete."],
-    "choicesEnglish": ["Access page.", "Hotel website.", "Broken link.", "Network error."],
-    "correctAnswerItalian": "Pagina di accesso.",
-    "correctAnswerEnglish": "Access page."
-  },
-  {
-    "id": "s23-p28",
-    "italian": "Connessione gratuita.",
-    "english": "Free connection.",
-    "type": "phrase",
-    "choicesItalian": ["Connessione gratuita.", "Servizio a pagamento.", "Rete protetta.", "Abbonamento mensile."],
-    "choicesEnglish": ["Free connection.", "Paid service.", "Protected network.", "Monthly subscription."],
-    "correctAnswerItalian": "Connessione gratuita.",
-    "correctAnswerEnglish": "Free connection."
-  },
-  {
-    "id": "s23-p29",
-    "italian": "Navigare senza limiti.",
-    "english": "Browse without limits.",
-    "type": "phrase",
-    "choicesItalian": ["Navigare senza limiti.", "Tempo scaduto.", "Dati terminati.", "Accesso limitato."],
-    "choicesEnglish": ["Browse without limits.", "Time expired.", "Data finished.", "Limited access."],
-    "correctAnswerItalian": "Navigare senza limiti.",
-    "correctAnswerEnglish": "Browse without limits."
-  },
-  {
-    "id": "s23-p30",
-    "italian": "Problemi di linea.",
-    "english": "Line problems.",
-    "type": "phrase",
-    "choicesItalian": ["Problemi di linea.", "Tutto funziona.", "Segnale ottimo.", "Cavo inserito."],
-    "choicesEnglish": ["Line problems.", "Everything works.", "Great signal.", "Cable inserted."],
-    "correctAnswerItalian": "Problemi di linea.",
-    "correctAnswerEnglish": "Line problems."
-  },
-  {
-    "id": "s23-p31",
-    "italian": "Chiamare l'assistenza.",
-    "english": "Call support.",
-    "type": "phrase",
-    "choicesItalian": ["Chiamare l'assistenza.", "Risolvere da soli.", "Spegnere il router.", "Aspettare domani."],
-    "choicesEnglish": ["Call support.", "Fix it alone.", "Turn off the router.", "Wait for tomorrow."],
-    "correctAnswerItalian": "Chiamare l'assistenza.",
-    "correctAnswerEnglish": "Call support."
-  },
-  {
-    "id": "s23-p32",
-    "italian": "Aspettare il tecnico.",
-    "english": "Wait for the technician.",
-    "type": "phrase",
-    "choicesItalian": ["Aspettare il tecnico.", "Uscire subito.", "Provare ancora.", "Dimenticare tutto."],
-    "choicesEnglish": ["Wait for the technician.", "Leave immediately.", "Try again.", "Forget everything."],
-    "correctAnswerItalian": "Aspettare il tecnico.",
-    "correctAnswerEnglish": "Wait for the technician."
-  },
-  {
-    "id": "s23-p33",
-    "italian": "Rete per gli ospiti.",
-    "english": "Guest network.",
-    "type": "phrase",
-    "choicesItalian": ["Rete per gli ospiti.", "Rete privata.", "Wifi dipendenti.", "Accesso libero."],
-    "choicesEnglish": ["Guest network.", "Private network.", "Staff wifi.", "Free access."],
-    "correctAnswerItalian": "Rete per gli ospiti.",
-    "correctAnswerEnglish": "Guest network."
-  },
-  {
-    "id": "s23-p34",
-    "italian": "Password smarrita.",
-    "english": "Lost password.",
-    "type": "phrase",
-    "choicesItalian": ["Password smarrita.", "Codice trovato.", "Password nuova.", "Accesso negato."],
-    "choicesEnglish": ["Lost password.", "Code found.", "New password.", "Access denied."],
-    "correctAnswerItalian": "Password smarrita.",
-    "correctAnswerEnglish": "Lost password."
-  },
-  {
-    "id": "s23-p35",
+    "id": "s31-p19",
     "italian": "Password errata.",
     "english": "Wrong password.",
     "type": "phrase",
-    "choicesItalian": ["Password errata.", "Login corretto.", "Dati giusti.", "Rete aperta."],
-    "choicesEnglish": ["Wrong password.", "Correct login.", "Right data.", "Open network."],
+    "choicesItalian": [
+      "Non carica la pagina.",
+      "Password errata.",
+      "Il segnale è debole.",
+      "Il wifi è gratuito?"
+    ],
+    "choicesEnglish": [
+      "The page doesn't load.",
+      "Wrong password.",
+      "The signal is weak.",
+      "Is the Wi-Fi free?"
+    ],
     "correctAnswerItalian": "Password errata.",
-    "correctAnswerEnglish": "Wrong password."
+    "correctAnswerEnglish": "Wrong password.",
+    "feedback": {
+      "correctItalian": "Esatto! Errore di inserimento.",
+      "incorrectItalian": "No, 'Password errata.' significa errore di inserimento.",
+      "correctEnglish": "Correct! Wrong password. refers to Password errata..",
+      "incorrectEnglish": "No, the correct word is Wrong password.."
+    }
   },
   {
-    "id": "s23-p36",
-    "italian": "Segnale assente.",
-    "english": "No signal.",
+    "id": "s31-p20",
+    "italian": "Riprovi più tardi.",
+    "english": "Try again later.",
     "type": "phrase",
-    "choicesItalian": ["Segnale assente.", "Copertura totale.", "Una tacchetta.", "Pieno segnale."],
-    "choicesEnglish": ["No signal.", "Total coverage.", "One bar.", "Full signal."],
-    "correctAnswerItalian": "Segnale assente.",
-    "correctAnswerEnglish": "No signal."
+    "choicesItalian": [
+      "Un attimo solo.",
+      "Riprovi più tardi.",
+      "La rete non appare.",
+      "C'è il wifi?"
+    ],
+    "choicesEnglish": [
+      "Just a moment.",
+      "Try again later.",
+      "The network doesn't appear.",
+      "Is there Wi-Fi?"
+    ],
+    "correctAnswerItalian": "Riprovi più tardi.",
+    "correctAnswerEnglish": "Try again later.",
+    "feedback": {
+      "correctItalian": "Esatto! Consiglio in caso di errore.",
+      "incorrectItalian": "No, 'Riprovi più tardi.' significa consiglio in caso di errore.",
+      "correctEnglish": "Correct! Try again later. refers to Riprovi più tardi..",
+      "incorrectEnglish": "No, the correct word is Try again later.."
+    }
   },
   {
-    "id": "s23-p37",
-    "italian": "Router difettoso.",
-    "english": "Defective router.",
+    "id": "s31-p21",
+    "italian": "Devo pagare?",
+    "english": "Do I have to pay?",
     "type": "phrase",
-    "choicesItalian": ["Router difettoso.", "Modem nuovo.", "Cavo scollegato.", "Anta chiusa."],
-    "choicesEnglish": ["Defective router.", "New modem.", "Cable disconnected.", "Door closed."],
-    "correctAnswerItalian": "Router difettoso.",
-    "correctAnswerEnglish": "Defective router."
+    "choicesItalian": [
+      "Posso avere la password?",
+      "Non c'è di che.",
+      "È molto lento.",
+      "Devo pagare?"
+    ],
+    "choicesEnglish": [
+      "Can I have the password?",
+      "Not at all.",
+      "It's very slow.",
+      "Do I have to pay?"
+    ],
+    "correctAnswerItalian": "Devo pagare?",
+    "correctAnswerEnglish": "Do I have to pay?",
+    "feedback": {
+      "correctItalian": "Esatto! Sui costi.",
+      "incorrectItalian": "No, 'Devo pagare?' significa sui costi.",
+      "correctEnglish": "Correct! Do I have to pay? refers to Devo pagare?.",
+      "incorrectEnglish": "No, the correct word is Do I have to pay?."
+    }
   },
   {
-    "id": "s23-p38",
-    "italian": "Portatile collegato.",
-    "english": "Laptop connected.",
+    "id": "s31-p22",
+    "italian": "È incluso nel prezzo?",
+    "english": "Is it included in the price?",
     "type": "phrase",
-    "choicesItalian": ["Portatile collegato.", "Cellulare staccato.", "Tablet in carica.", "Pc spento."],
-    "choicesEnglish": ["Laptop connected.", "Phone detached.", "Tablet charging.", "Pc off."],
-    "correctAnswerItalian": "Portatile collegato.",
-    "correctAnswerEnglish": "Laptop connected."
+    "choicesItalian": [
+      "È incluso nel prezzo?",
+      "È molto lento.",
+      "Ho un errore di login.",
+      "Provi a riavviare."
+    ],
+    "choicesEnglish": [
+      "Is it included in the price?",
+      "It's very slow.",
+      "I have a login error.",
+      "Try restarting."
+    ],
+    "correctAnswerItalian": "È incluso nel prezzo?",
+    "correctAnswerEnglish": "Is it included in the price?",
+    "feedback": {
+      "correctItalian": "Esatto! Sui servizi compresi.",
+      "incorrectItalian": "No, 'È incluso nel prezzo?' significa sui servizi compresi.",
+      "correctEnglish": "Correct! Is it included in the price? refers to È incluso nel prezzo?.",
+      "incorrectEnglish": "No, the correct word is Is it included in the price?."
+    }
   },
   {
-    "id": "s23-p39",
-    "italian": "Tablet connesso.",
-    "english": "Tablet connected.",
+    "id": "s31-p23",
+    "italian": "Non carica la pagina.",
+    "english": "The page doesn't load.",
     "type": "phrase",
-    "choicesItalian": ["Tablet connesso.", "iPad rotto.", "Schermo nero.", "App aperta."],
-    "choicesEnglish": ["Tablet connected.", "Broken iPad.", "Black screen.", "App open."],
-    "correctAnswerItalian": "Tablet connesso.",
-    "correctAnswerEnglish": "Tablet connected."
+    "choicesItalian": [
+      "Qual è la password?",
+      "Posso avere la password?",
+      "Riavvio il telefono.",
+      "Non carica la pagina."
+    ],
+    "choicesEnglish": [
+      "What is the password?",
+      "Can I have the password?",
+      "I'm restarting the phone.",
+      "The page doesn't load."
+    ],
+    "correctAnswerItalian": "Non carica la pagina.",
+    "correctAnswerEnglish": "The page doesn't load.",
+    "feedback": {
+      "correctItalian": "Esatto! Problema di navigazione.",
+      "incorrectItalian": "No, 'Non carica la pagina.' significa problema di navigazione.",
+      "correctEnglish": "Correct! The page doesn't load. refers to Non carica la pagina..",
+      "incorrectEnglish": "No, the correct word is The page doesn't load.."
+    }
   },
   {
-    "id": "s23-p40",
-    "italian": "Smartphone senza rete.",
-    "english": "Smartphone without network.",
+    "id": "s31-p24",
+    "italian": "Ho un errore di login.",
+    "english": "I have a login error.",
     "type": "phrase",
-    "choicesItalian": ["Smartphone senza rete.", "Cellulare con wifi.", "Telefono occupato.", "Appartamento senza segnale."],
-    "choicesEnglish": ["Smartphone without network.", "Cell phone with wifi.", "Phone busy.", "Apartment without signal."],
-    "correctAnswerItalian": "Smartphone senza rete.",
-    "correctAnswerEnglish": "Smartphone without network."
+    "choicesItalian": [
+      "Non c'è di che.",
+      "Può aiutarmi?",
+      "Ho un errore di login.",
+      "Eccola."
+    ],
+    "choicesEnglish": [
+      "Not at all.",
+      "Can you help me?",
+      "I have a login error.",
+      "Here it is."
+    ],
+    "correctAnswerItalian": "Ho un errore di login.",
+    "correctAnswerEnglish": "I have a login error.",
+    "feedback": {
+      "correctItalian": "Esatto! Problema di accesso.",
+      "incorrectItalian": "No, 'Ho un errore di login.' significa problema di accesso.",
+      "correctEnglish": "Correct! I have a login error. refers to Ho un errore di login..",
+      "incorrectEnglish": "No, the correct word is I have a login error.."
+    }
   },
   {
-    "id": "s23-p41",
-    "italian": "Verificare la connessione.",
-    "english": "Check the connection.",
+    "id": "s31-p25",
+    "italian": "Il wifi è giù.",
+    "english": "The Wi-Fi is down.",
     "type": "phrase",
-    "choicesItalian": ["Verificare la connessione.", "Perdere il segnale.", "Ignorare il problema.", "Spegnere internet."],
-    "choicesEnglish": ["Check the connection.", "Lose the signal.", "Ignore the problem.", "Turn off internet."],
-    "correctAnswerItalian": "Verificare la connessione.",
-    "correctAnswerEnglish": "Check the connection."
+    "choicesItalian": [
+      "Provi a riavviare.",
+      "Il wifi è giù.",
+      "È scritta qui.",
+      "Ho un errore di login."
+    ],
+    "choicesEnglish": [
+      "Try restarting.",
+      "The Wi-Fi is down.",
+      "It's written here.",
+      "I have a login error."
+    ],
+    "correctAnswerItalian": "Il wifi è giù.",
+    "correctAnswerEnglish": "The Wi-Fi is down.",
+    "feedback": {
+      "correctItalian": "Esatto! Quando non funziona proprio.",
+      "incorrectItalian": "No, 'Il wifi è giù.' significa quando non funziona proprio.",
+      "correctEnglish": "Correct! The Wi-Fi is down. refers to Il wifi è giù..",
+      "incorrectEnglish": "No, the correct word is The Wi-Fi is down.."
+    }
   },
   {
-    "id": "s23-p42",
-    "italian": "Segnale instabile.",
-    "english": "Unstable signal.",
+    "id": "s31-p26",
+    "italian": "Manca la connessione.",
+    "english": "There's no connection.",
     "type": "phrase",
-    "choicesItalian": ["Segnale instabile.", "Rete sicura.", "Connessione fissa.", "Wifi stabile."],
-    "choicesEnglish": ["Unstable signal.", "Secure network.", "Fixed connection.", "Stable wifi."],
-    "correctAnswerItalian": "Segnale instabile.",
-    "correctAnswerEnglish": "Unstable signal."
+    "choicesItalian": [
+      "Ho un errore di login.",
+      "Manca la connessione.",
+      "Mi serve il codice.",
+      "Il wifi è giù."
+    ],
+    "choicesEnglish": [
+      "I have a login error.",
+      "There's no connection.",
+      "I need the code.",
+      "The Wi-Fi is down."
+    ],
+    "correctAnswerItalian": "Manca la connessione.",
+    "correctAnswerEnglish": "There's no connection.",
+    "feedback": {
+      "correctItalian": "Esatto! Assenza di segnale.",
+      "incorrectItalian": "No, 'Manca la connessione.' significa assenza di segnale.",
+      "correctEnglish": "Correct! There's no connection. refers to Manca la connessione..",
+      "incorrectEnglish": "No, the correct word is There's no connection.."
+    }
   },
   {
-    "id": "s23-p43",
-    "italian": "Risolvere il problema.",
-    "english": "Solve the problem.",
+    "id": "s31-p27",
+    "italian": "Mi dà la password?",
+    "english": "Can you give me the password?",
     "type": "phrase",
-    "choicesItalian": ["Risolvere il problema.", "Causare un errore.", "Aumentare il guasto.", "Non fare nulla."],
-    "choicesEnglish": ["Solve the problem.", "Cause an error.", "Increase the failure.", "Do nothing."],
-    "correctAnswerItalian": "Risolvere il problema.",
-    "correctAnswerEnglish": "Solve the problem."
+    "choicesItalian": [
+      "Non funziona il wifi.",
+      "Provi a riavviare.",
+      "La connessione è instabile.",
+      "Mi dà la password?"
+    ],
+    "choicesEnglish": [
+      "The Wi-Fi isn't working.",
+      "Try restarting.",
+      "The connection is unstable.",
+      "Can you give me the password?"
+    ],
+    "correctAnswerItalian": "Mi dà la password?",
+    "correctAnswerEnglish": "Can you give me the password?",
+    "feedback": {
+      "correctItalian": "Esatto! Richiesta diretta.",
+      "incorrectItalian": "No, 'Mi dà la password?' significa richiesta diretta.",
+      "correctEnglish": "Correct! Can you give me the password? refers to Mi dà la password?.",
+      "incorrectEnglish": "No, the correct word is Can you give me the password?."
+    }
   },
   {
-    "id": "s23-p44",
-    "italian": "Connessione sicura.",
-    "english": "Secure connection.",
+    "id": "s31-p28",
+    "italian": "È scritta qui.",
+    "english": "It's written here.",
     "type": "phrase",
-    "choicesItalian": ["Connessione sicura.", "Rete aperta.", "Wifi pubblico.", "Pericolo virus."],
-    "choicesEnglish": ["Secure connection.", "Open network.", "Public wifi.", "Virus danger."],
-    "correctAnswerItalian": "Connessione sicura.",
-    "correctAnswerEnglish": "Secure connection."
+    "choicesItalian": [
+      "È scritta qui.",
+      "È incluso nel prezzo?",
+      "Manca la connessione.",
+      "Il segnale è debole."
+    ],
+    "choicesEnglish": [
+      "It's written here.",
+      "Is it included in the price?",
+      "There's no connection.",
+      "The signal is weak."
+    ],
+    "correctAnswerItalian": "È scritta qui.",
+    "correctAnswerEnglish": "It's written here.",
+    "feedback": {
+      "correctItalian": "Esatto! Indicando dove trovarla.",
+      "incorrectItalian": "No, 'È scritta qui.' significa indicando dove trovarla.",
+      "correctEnglish": "Correct! It's written here. refers to È scritta qui..",
+      "incorrectEnglish": "No, the correct word is It's written here.."
+    }
   },
   {
-    "id": "s23-p45",
-    "italian": "Rete protetta.",
-    "english": "Protected network.",
+    "id": "s31-p29",
+    "italian": "Eccola.",
+    "english": "Here it is.",
     "type": "phrase",
-    "choicesItalian": ["Rete protetta.", "Senza password.", "Accesso libero.", "Wifi hotel."],
-    "choicesEnglish": ["Protected network.", "Without password.", "Free access.", "Hotel wifi."],
-    "correctAnswerItalian": "Rete protetta.",
-    "correctAnswerEnglish": "Protected network."
+    "choicesItalian": [
+      "Il wifi è gratuito?",
+      "Un attimo solo.",
+      "Eccola.",
+      "Chiamo la reception."
+    ],
+    "choicesEnglish": [
+      "Is the Wi-Fi free?",
+      "Just a moment.",
+      "Here it is.",
+      "I'll call the reception."
+    ],
+    "correctAnswerItalian": "Eccola.",
+    "correctAnswerEnglish": "Here it is.",
+    "feedback": {
+      "correctItalian": "Esatto! Consegnando qualcosa.",
+      "incorrectItalian": "No, 'Eccola.' significa consegnando qualcosa.",
+      "correctEnglish": "Correct! Here it is. refers to Eccola..",
+      "incorrectEnglish": "No, the correct word is Here it is.."
+    }
   },
   {
-    "id": "s23-p46",
-    "italian": "Chiave di sicurezza.",
-    "english": "Security key.",
+    "id": "s31-p30",
+    "italian": "Grazie mille.",
+    "english": "Thanks a lot.",
     "type": "phrase",
-    "choicesItalian": ["Chiave di sicurezza.", "Password della porta.", "Codice cassaforte.", "Numero camera."],
-    "choicesEnglish": ["Security key.", "Door password.", "Safe code.", "Room number."],
-    "correctAnswerItalian": "Chiave di sicurezza.",
-    "correctAnswerEnglish": "Security key."
+    "choicesItalian": [
+      "Dove trovo il codice?",
+      "Grazie mille.",
+      "Riavvio il computer.",
+      "Devo pagare?"
+    ],
+    "choicesEnglish": [
+      "Where do I find the code?",
+      "Thanks a lot.",
+      "I'm restarting the computer.",
+      "Do I have to pay?"
+    ],
+    "correctAnswerItalian": "Grazie mille.",
+    "correctAnswerEnglish": "Thanks a lot.",
+    "feedback": {
+      "correctItalian": "Esatto! Ringraziamento.",
+      "incorrectItalian": "No, 'Grazie mille.' significa ringraziamento.",
+      "correctEnglish": "Correct! Thanks a lot. refers to Grazie mille..",
+      "incorrectEnglish": "No, the correct word is Thanks a lot.."
+    }
   },
   {
-    "id": "s23-p47",
-    "italian": "Codice di accesso.",
-    "english": "Access code.",
+    "id": "s31-p31",
+    "italian": "Prego.",
+    "english": "You're welcome.",
     "type": "phrase",
-    "choicesItalian": ["Codice di accesso.", "Nome utente.", "Email ospite.", "Sito web."],
-    "choicesEnglish": ["Access code.", "Username.", "Guest email.", "Website."],
-    "correctAnswerItalian": "Codice di accesso.",
-    "correctAnswerEnglish": "Access code."
+    "choicesItalian": [
+      "Adesso funziona.",
+      "Non funziona il wifi.",
+      "Manca la connessione.",
+      "Prego."
+    ],
+    "choicesEnglish": [
+      "Now it works.",
+      "The Wi-Fi isn't working.",
+      "There's no connection.",
+      "You're welcome."
+    ],
+    "correctAnswerItalian": "Prego.",
+    "correctAnswerEnglish": "You're welcome.",
+    "feedback": {
+      "correctItalian": "Esatto! Risposta al grazie.",
+      "incorrectItalian": "No, 'Prego.' significa risposta al grazie.",
+      "correctEnglish": "Correct! You're welcome. refers to Prego..",
+      "incorrectEnglish": "No, the correct word is You're welcome.."
+    }
   },
   {
-    "id": "s23-p48",
-    "italian": "Copertura wifi.",
-    "english": "Wifi coverage.",
+    "id": "s31-p32",
+    "italian": "Non c'è di che.",
+    "english": "Not at all.",
     "type": "phrase",
-    "choicesItalian": ["Copertura wifi.", "Segnale basso.", "Zona d'ombra.", "Antenna rotta."],
-    "choicesEnglish": ["Wifi coverage.", "Low signal.", "Dead zone.", "Broken antenna."],
-    "correctAnswerItalian": "Copertura wifi.",
-    "correctAnswerEnglish": "Wifi coverage."
+    "choicesItalian": [
+      "Mi dà la password?",
+      "Non c'è di che.",
+      "Grazie per l'aiuto.",
+      "È urgente."
+    ],
+    "choicesEnglish": [
+      "Can you give me the password?",
+      "Not at all.",
+      "Thanks for the help.",
+      "It's urgent."
+    ],
+    "correctAnswerItalian": "Non c'è di che.",
+    "correctAnswerEnglish": "Not at all.",
+    "feedback": {
+      "correctItalian": "Esatto! Altra risposta al grazie.",
+      "incorrectItalian": "No, 'Non c'è di che.' significa altra risposta al grazie.",
+      "correctEnglish": "Correct! Not at all. refers to Non c'è di che..",
+      "incorrectEnglish": "No, the correct word is Not at all.."
+    }
   },
   {
-    "id": "s23-p49",
-    "italian": "Area comune.",
-    "english": "Common area.",
+    "id": "s31-p33",
+    "italian": "Provi a riavviare.",
+    "english": "Try restarting.",
     "type": "phrase",
-    "choicesItalian": ["Area comune.", "Stanza privata.", "Bagno interno.", "Balcone piccolo."],
-    "choicesEnglish": ["Common area.", "Private room.", "En-suite bathroom.", "Small balcony."],
-    "correctAnswerItalian": "Area comune.",
-    "correctAnswerEnglish": "Common area."
+    "choicesItalian": [
+      "Finalmente!",
+      "Cade la connessione.",
+      "Provi a riavviare.",
+      "Mi passi il tecnico."
+    ],
+    "choicesEnglish": [
+      "Finally!",
+      "The connection drops.",
+      "Try restarting.",
+      "Put the technician on."
+    ],
+    "correctAnswerItalian": "Provi a riavviare.",
+    "correctAnswerEnglish": "Try restarting.",
+    "feedback": {
+      "correctItalian": "Esatto! Suggerimento tecnico.",
+      "incorrectItalian": "No, 'Provi a riavviare.' significa suggerimento tecnico.",
+      "correctEnglish": "Correct! Try restarting. refers to Provi a riavviare..",
+      "incorrectEnglish": "No, the correct word is Try restarting.."
+    }
   },
   {
-    "id": "s23-p50",
-    "italian": "Zona hall.",
-    "english": "Lobby area.",
+    "id": "s31-p34",
+    "italian": "Riavvio il telefono.",
+    "english": "I'm restarting the phone.",
     "type": "phrase",
-    "choicesItalian": ["Zona hall.", "Zona notte.", "Cucina comune.", "Garage hotel."],
-    "choicesEnglish": ["Lobby area.", "Sleeping area.", "Shared kitchen.", "Hotel garage."],
-    "correctAnswerItalian": "Zona hall.",
-    "correctAnswerEnglish": "Lobby area."
+    "choicesItalian": [
+      "Non funziona il wifi.",
+      "C'è il wifi?",
+      "Riavvio il telefono.",
+      "La rete non appare."
+    ],
+    "choicesEnglish": [
+      "The Wi-Fi isn't working.",
+      "Is there Wi-Fi?",
+      "I'm restarting the phone.",
+      "The network doesn't appear."
+    ],
+    "correctAnswerItalian": "Riavvio il telefono.",
+    "correctAnswerEnglish": "I'm restarting the phone.",
+    "feedback": {
+      "correctItalian": "Esatto! Azione dell'utente.",
+      "incorrectItalian": "No, 'Riavvio il telefono.' significa azione dell'utente.",
+      "correctEnglish": "Correct! I'm restarting the phone. refers to Riavvio il telefono..",
+      "incorrectEnglish": "No, the correct word is I'm restarting the phone.."
+    }
   },
   {
-    "id": "s23-p51",
-    "italian": "Fibra velocissima.",
-    "english": "Very fast fiber.",
+    "id": "s31-p35",
+    "italian": "Riavvio il computer.",
+    "english": "I'm restarting the computer.",
     "type": "phrase",
-    "choicesItalian": ["Fibra velocissima.", "Adsl lenta.", "Senza internet.", "Cavo staccato."],
-    "choicesEnglish": ["Very fast fiber.", "Slow ADSL.", "No internet.", "Cable detached."],
-    "correctAnswerItalian": "Fibra velocissima.",
-    "correctAnswerEnglish": "Very fast fiber."
+    "choicesItalian": [
+      "Riavvio il computer.",
+      "Adesso funziona.",
+      "Il segnale è debole.",
+      "Eccola."
+    ],
+    "choicesEnglish": [
+      "I'm restarting the computer.",
+      "Now it works.",
+      "The signal is weak.",
+      "Here it is."
+    ],
+    "correctAnswerItalian": "Riavvio il computer.",
+    "correctAnswerEnglish": "I'm restarting the computer.",
+    "feedback": {
+      "correctItalian": "Esatto! Azione dell'utente.",
+      "incorrectItalian": "No, 'Riavvio il computer.' significa azione dell'utente.",
+      "correctEnglish": "Correct! I'm restarting the computer. refers to Riavvio il computer..",
+      "incorrectEnglish": "No, the correct word is I'm restarting the computer.."
+    }
+  },
+  {
+    "id": "s31-p36",
+    "italian": "Niente, non va.",
+    "english": "Nothing, it's not working.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mi dà la password?",
+      "È incluso nel prezzo?",
+      "Un attimo solo.",
+      "Niente, non va."
+    ],
+    "choicesEnglish": [
+      "Can you give me the password?",
+      "Is it included in the price?",
+      "Just a moment.",
+      "Nothing, it's not working."
+    ],
+    "correctAnswerItalian": "Niente, non va.",
+    "correctAnswerEnglish": "Nothing, it's not working.",
+    "feedback": {
+      "correctItalian": "Esatto! Frustrazione.",
+      "incorrectItalian": "No, 'Niente, non va.' significa frustrazione.",
+      "correctEnglish": "Correct! Nothing, it's not working. refers to Niente, non va..",
+      "incorrectEnglish": "No, the correct word is Nothing, it's not working.."
+    }
+  },
+  {
+    "id": "s31-p37",
+    "italian": "Adesso funziona.",
+    "english": "Now it works.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Il wifi è gratuito?",
+      "Provi a riavviare.",
+      "Posso avere la password?",
+      "Adesso funziona."
+    ],
+    "choicesEnglish": [
+      "Is the Wi-Fi free?",
+      "Try restarting.",
+      "Can I have the password?",
+      "Now it works."
+    ],
+    "correctAnswerItalian": "Adesso funziona.",
+    "correctAnswerEnglish": "Now it works.",
+    "feedback": {
+      "correctItalian": "Esatto! Sollievo.",
+      "incorrectItalian": "No, 'Adesso funziona.' significa sollievo.",
+      "correctEnglish": "Correct! Now it works. refers to Adesso funziona..",
+      "incorrectEnglish": "No, the correct word is Now it works.."
+    }
+  },
+  {
+    "id": "s31-p38",
+    "italian": "Finalmente!",
+    "english": "Finally!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mi passi il tecnico.",
+      "È urgente.",
+      "Ho un errore di login.",
+      "Finalmente!"
+    ],
+    "choicesEnglish": [
+      "Put the technician on.",
+      "It's urgent.",
+      "I have a login error.",
+      "Finally!"
+    ],
+    "correctAnswerItalian": "Finalmente!",
+    "correctAnswerEnglish": "Finally!",
+    "feedback": {
+      "correctItalian": "Esatto! Espressione di gioia.",
+      "incorrectItalian": "No, 'Finalmente!' significa espressione di gioia.",
+      "correctEnglish": "Correct! Finally! refers to Finalmente!.",
+      "incorrectEnglish": "No, the correct word is Finally!."
+    }
+  },
+  {
+    "id": "s31-p39",
+    "italian": "È lentissimo.",
+    "english": "It's extremely slow.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Riprovi più tardi.",
+      "È lentissimo.",
+      "Grazie per l'aiuto.",
+      "Un attimo solo."
+    ],
+    "choicesEnglish": [
+      "Try again later.",
+      "It's extremely slow.",
+      "Thanks for the help.",
+      "Just a moment."
+    ],
+    "correctAnswerItalian": "È lentissimo.",
+    "correctAnswerEnglish": "It's extremely slow.",
+    "feedback": {
+      "correctItalian": "Esatto! Lamentela forte.",
+      "incorrectItalian": "No, 'È lentissimo.' significa lamentela forte.",
+      "correctEnglish": "Correct! It's extremely slow. refers to È lentissimo..",
+      "incorrectEnglish": "No, the correct word is It's extremely slow.."
+    }
+  },
+  {
+    "id": "s31-p40",
+    "italian": "Devo mandare una mail.",
+    "english": "I need to send an email.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Qual è la password?",
+      "Devo mandare una mail.",
+      "Prego.",
+      "La rete non appare."
+    ],
+    "choicesEnglish": [
+      "What is the password?",
+      "I need to send an email.",
+      "You're welcome.",
+      "The network doesn't appear."
+    ],
+    "correctAnswerItalian": "Devo mandare una mail.",
+    "correctAnswerEnglish": "I need to send an email.",
+    "feedback": {
+      "correctItalian": "Esatto! Spiegazione necessità.",
+      "incorrectItalian": "No, 'Devo mandare una mail.' significa spiegazione necessità.",
+      "correctEnglish": "Correct! I need to send an email. refers to Devo mandare una mail..",
+      "incorrectEnglish": "No, the correct word is I need to send an email.."
+    }
+  },
+  {
+    "id": "s31-p41",
+    "italian": "Ho una chiamata Zoom.",
+    "english": "I have a Zoom call.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ho una chiamata Zoom.",
+      "Grazie mille.",
+      "Riavvio il computer.",
+      "È scritta qui."
+    ],
+    "choicesEnglish": [
+      "I have a Zoom call.",
+      "Thanks a lot.",
+      "I'm restarting the computer.",
+      "It's written here."
+    ],
+    "correctAnswerItalian": "Ho una chiamata Zoom.",
+    "correctAnswerEnglish": "I have a Zoom call.",
+    "feedback": {
+      "correctItalian": "Esatto! Urgenza lavorativa.",
+      "incorrectItalian": "No, 'Ho una chiamata Zoom.' significa urgenza lavorativa.",
+      "correctEnglish": "Correct! I have a Zoom call. refers to Ho una chiamata Zoom..",
+      "incorrectEnglish": "No, the correct word is I have a Zoom call.."
+    }
+  },
+  {
+    "id": "s31-p42",
+    "italian": "La connessione è instabile.",
+    "english": "The connection is unstable.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Funziona in camera?",
+      "È scritta qui.",
+      "Riavvio il computer.",
+      "La connessione è instabile."
+    ],
+    "choicesEnglish": [
+      "Does it work in the room?",
+      "It's written here.",
+      "I'm restarting the computer.",
+      "The connection is unstable."
+    ],
+    "correctAnswerItalian": "La connessione è instabile.",
+    "correctAnswerEnglish": "The connection is unstable.",
+    "feedback": {
+      "correctItalian": "Esatto! Descrizione problema.",
+      "incorrectItalian": "No, 'La connessione è instabile.' significa descrizione problema.",
+      "correctEnglish": "Correct! The connection is unstable. refers to La connessione è instabile..",
+      "incorrectEnglish": "No, the correct word is The connection is unstable.."
+    }
+  },
+  {
+    "id": "s31-p43",
+    "italian": "Mi serve per lavoro.",
+    "english": "I need it for work.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mi serve per lavoro.",
+      "Non riesco ad accedere.",
+      "Può aiutarmi?",
+      "Un attimo solo."
+    ],
+    "choicesEnglish": [
+      "I need it for work.",
+      "I can't access it.",
+      "Can you help me?",
+      "Just a moment."
+    ],
+    "correctAnswerItalian": "Mi serve per lavoro.",
+    "correctAnswerEnglish": "I need it for work.",
+    "feedback": {
+      "correctItalian": "Esatto! Motivazione.",
+      "incorrectItalian": "No, 'Mi serve per lavoro.' significa motivazione.",
+      "correctEnglish": "Correct! I need it for work. refers to Mi serve per lavoro..",
+      "incorrectEnglish": "No, the correct word is I need it for work.."
+    }
+  },
+  {
+    "id": "s31-p44",
+    "italian": "È urgente.",
+    "english": "It's urgent.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Il segnale è debole.",
+      "È urgente.",
+      "È scritta qui.",
+      "Non carica la pagina."
+    ],
+    "choicesEnglish": [
+      "The signal is weak.",
+      "It's urgent.",
+      "It's written here.",
+      "The page doesn't load."
+    ],
+    "correctAnswerItalian": "È urgente.",
+    "correctAnswerEnglish": "It's urgent.",
+    "feedback": {
+      "correctItalian": "Esatto! Per mettere fretta.",
+      "incorrectItalian": "No, 'È urgente.' significa per mettere fretta.",
+      "correctEnglish": "Correct! It's urgent. refers to È urgente..",
+      "incorrectEnglish": "No, the correct word is It's urgent.."
+    }
+  },
+  {
+    "id": "s31-p45",
+    "italian": "Grazie per l'aiuto.",
+    "english": "Thanks for the help.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mi serve il codice.",
+      "Grazie per l'aiuto.",
+      "C'è il wifi?",
+      "Riavvio il computer."
+    ],
+    "choicesEnglish": [
+      "I need the code.",
+      "Thanks for the help.",
+      "Is there Wi-Fi?",
+      "I'm restarting the computer."
+    ],
+    "correctAnswerItalian": "Grazie per l'aiuto.",
+    "correctAnswerEnglish": "Thanks for the help.",
+    "feedback": {
+      "correctItalian": "Esatto! Ringraziamento finale.",
+      "incorrectItalian": "No, 'Grazie per l'aiuto.' significa ringraziamento finale.",
+      "correctEnglish": "Correct! Thanks for the help. refers to Grazie per l'aiuto..",
+      "incorrectEnglish": "No, the correct word is Thanks for the help.."
+    }
+  },
+  {
+    "id": "s31-p46",
+    "italian": "Chiamo la reception.",
+    "english": "I'll call the reception.",
+    "type": "phrase",
+    "choicesItalian": [
+      "C'è un tecnico?",
+      "Chiamo la reception.",
+      "Non riesco ad accedere.",
+      "Posso avere la password?"
+    ],
+    "choicesEnglish": [
+      "Is there a technician?",
+      "I'll call the reception.",
+      "I can't access it.",
+      "Can I have the password?"
+    ],
+    "correctAnswerItalian": "Chiamo la reception.",
+    "correctAnswerEnglish": "I'll call the reception.",
+    "feedback": {
+      "correctItalian": "Esatto! Azione da intraprendere.",
+      "incorrectItalian": "No, 'Chiamo la reception.' significa azione da intraprendere.",
+      "correctEnglish": "Correct! I'll call the reception. refers to Chiamo la reception..",
+      "incorrectEnglish": "No, the correct word is I'll call the reception.."
+    }
+  },
+  {
+    "id": "s31-p47",
+    "italian": "Mi passi il tecnico.",
+    "english": "Put the technician on.",
+    "type": "phrase",
+    "choicesItalian": [
+      "C'è il wifi?",
+      "Mi passi il tecnico.",
+      "Password errata.",
+      "Qual è il nome della rete?"
+    ],
+    "choicesEnglish": [
+      "Is there Wi-Fi?",
+      "Put the technician on.",
+      "Wrong password.",
+      "What is the network name?"
+    ],
+    "correctAnswerItalian": "Mi passi il tecnico.",
+    "correctAnswerEnglish": "Put the technician on.",
+    "feedback": {
+      "correctItalian": "Esatto! Richiesta telefonica.",
+      "incorrectItalian": "No, 'Mi passi il tecnico.' significa richiesta telefonica.",
+      "correctEnglish": "Correct! Put the technician on. refers to Mi passi il tecnico..",
+      "incorrectEnglish": "No, the correct word is Put the technician on.."
+    }
+  },
+  {
+    "id": "s31-p48",
+    "italian": "Un attimo solo.",
+    "english": "Just a moment.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Qual è il nome della rete?",
+      "Adesso funziona.",
+      "Un attimo solo.",
+      "Grazie per l'aiuto."
+    ],
+    "choicesEnglish": [
+      "What is the network name?",
+      "Now it works.",
+      "Just a moment.",
+      "Thanks for the help."
+    ],
+    "correctAnswerItalian": "Un attimo solo.",
+    "correctAnswerEnglish": "Just a moment.",
+    "feedback": {
+      "correctItalian": "Esatto! Richiesta di attesa.",
+      "incorrectItalian": "No, 'Un attimo solo.' significa richiesta di attesa.",
+      "correctEnglish": "Correct! Just a moment. refers to Un attimo solo..",
+      "incorrectEnglish": "No, the correct word is Just a moment.."
+    }
   }
 ]

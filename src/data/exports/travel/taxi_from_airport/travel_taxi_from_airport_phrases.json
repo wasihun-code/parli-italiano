@@ -1,104 +1,554 @@
 [
   {
-    "id": "s4-p4",
-    "italian": "Giri a destra.",
-    "english": "Turn right.",
-    "type": "phrase",
-    "choices": [
-      "Qual è la tariffa?",
-      "Giri a destra.",
-      "Mi porti a questo indirizzo.",
-      "Qui va bene, grazie."
-    ],
-    "correctAnswer": "Giri a destra.",
+    "choicesItalian": ["Buongiorno, mi porta in Via Veneto?", "Buongiorno, mi porta alla stazione?", "Buongiorno, mi porta all'hotel?", "Buongiorno, mi porta in centro?"],
+    "choicesEnglish": ["Good morning, can you take me to Via Veneto?", "Good morning, can you take me to the station?", "Good morning, can you take me to the hotel?", "Good morning, can you take me downtown?"],
+    "correctAnswerItalian": "Buongiorno, mi porta in Via Veneto?",
+    "correctAnswerEnglish": "Good morning, can you take me to Via Veneto?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Giri a destra.\"."
+      "correctItalian": "Esatto! Un modo classico per indicare la destinazione.",
+      "incorrectItalian": "No, Via Veneto è una strada famosa di Roma.",
+      "correctEnglish": "Exactly! A classic way to indicate the destination.",
+      "incorrectEnglish": "No, Via Veneto is a famous street in Rome."
     }
   },
   {
-    "id": "s4-p2",
-    "italian": "Andiamo in centro.",
-    "english": "We are going to the city center.",
-    "type": "phrase",
-    "choices": [
-      "Giri a sinistra al semaforo.",
-      "Andiamo in centro.",
-      "Giri a destra.",
-      "Qual è la tariffa?"
-    ],
-    "correctAnswer": "Andiamo in centro.",
+    "choicesItalian": ["C'è la tariffa fissa di cinquanta euro.", "C'è lo sconto del dieci per cento.", "C'è un supplemento per il bagaglio.", "C'è da aspettare dieci minuti."],
+    "choicesEnglish": ["There is a fixed rate of fifty euros.", "There is a ten percent discount.", "There is a surcharge for luggage.", "There is a ten-minute wait."],
+    "correctAnswerItalian": "C'è la tariffa fissa di cinquanta euro.",
+    "correctAnswerEnglish": "There is a fixed rate of fifty euros.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Andiamo in centro.\"."
+      "correctItalian": "Giusto! Molte città hanno tariffe fisse dagli aeroporti.",
+      "incorrectItalian": "Sbagliato. Si parla della tariffa fissa per il centro.",
+      "correctEnglish": "Right! Many cities have fixed rates from airports.",
+      "incorrectEnglish": "Wrong. We are talking about the fixed rate for the center."
     }
   },
   {
-    "id": "s4-p3",
-    "italian": "Qual è la tariffa?",
-    "english": "What is the fare?",
-    "type": "phrase",
-    "choices": [
-      "Andiamo in centro.",
-      "Qual è la tariffa?",
-      "Giri a sinistra al semaforo.",
-      "Qui va bene, grazie."
-    ],
-    "correctAnswer": "Qual è la tariffa?",
+    "choicesItalian": ["Accetta la carta di credito?", "Accetta solo contanti?", "Accetta assegni bancari?", "Accetta monete straniere?"],
+    "choicesEnglish": ["Do you accept credit cards?", "Do you accept only cash?", "Do you accept bank checks?", "Do you accept foreign coins?"],
+    "correctAnswerItalian": "Accetta la carta di credito?",
+    "correctAnswerEnglish": "Do you accept credit cards?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Qual è la tariffa?\"."
+      "correctItalian": "Ottimo! Chiedere il metodo di pagamento prima di partire.",
+      "incorrectItalian": "No, carta di credito significa credit card.",
+      "correctEnglish": "Great! Asking for the payment method before leaving.",
+      "incorrectEnglish": "No, credit card is carta di credito."
     }
   },
   {
-    "id": "s4-p6",
-    "italian": "Qui va bene, grazie.",
-    "english": "Here is fine, thank you.",
-    "type": "phrase",
-    "choices": [
-      "Qui va bene, grazie.",
-      "Andiamo in centro.",
-      "Giri a destra.",
-      "Giri a sinistra al semaforo."
-    ],
-    "correctAnswer": "Qui va bene, grazie.",
+    "choicesItalian": ["Sì, ho il POS a bordo.", "No, deve pagare in contanti.", "Forse, se la linea funziona.", "Sì, ma solo per grandi cifre."],
+    "choicesEnglish": ["Yes, I have the POS on board.", "No, you must pay in cash.", "Maybe, if the line works.", "Yes, but only for large amounts."],
+    "correctAnswerItalian": "Sì, ho il POS a bordo.",
+    "correctAnswerEnglish": "Yes, I have the POS on board.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Qui va bene, grazie.\"."
+      "correctItalian": "Esatto! Molti taxi sono ormai attrezzati per i pagamenti elettronici.",
+      "incorrectItalian": "No, POS a bordo significa card machine on board.",
+      "correctEnglish": "Exactly! Many taxis are now equipped for electronic payments.",
+      "incorrectEnglish": "No, POS on board is POS a bordo."
     }
   },
   {
-    "id": "s4-p5",
-    "italian": "Giri a sinistra al semaforo.",
-    "english": "Turn left at the traffic light.",
-    "type": "phrase",
-    "choices": [
-      "Giri a sinistra al semaforo.",
-      "Andiamo in centro.",
-      "Giri a destra.",
-      "Qui va bene, grazie."
-    ],
-    "correctAnswer": "Giri a sinistra al semaforo.",
+    "choicesItalian": ["C'è molto traffico oggi?", "C'è molto sole oggi?", "C'è molta gente oggi?", "C'è molto vento oggi?"],
+    "choicesEnglish": ["Is there a lot of traffic today?", "Is it very sunny today?", "Are there many people today?", "Is it very windy today?"],
+    "correctAnswerItalian": "C'è molto traffico oggi?",
+    "correctAnswerEnglish": "Is there a lot of traffic today?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Giri a sinistra al semaforo.\"."
+      "correctItalian": "Giusto! Un'osservazione comune durante il tragitto.",
+      "incorrectItalian": "Sbagliato. Si chiede del traffico stradale.",
+      "correctEnglish": "Right! A common observation during the ride.",
+      "incorrectEnglish": "Wrong. You are asking about road traffic."
     }
   },
   {
-    "id": "s4-p1",
-    "italian": "Mi porti a questo indirizzo.",
-    "english": "Take me to this address.",
-    "type": "phrase",
-    "choices": [
-      "Giri a destra.",
-      "Mi porti a questo indirizzo.",
-      "Giri a sinistra al semaforo.",
-      "Qual è la tariffa?"
-    ],
-    "correctAnswer": "Mi porti a questo indirizzo.",
+    "choicesItalian": ["C'è stato un incidente stradale.", "C'è stato un concerto grande.", "C'è stato un mercato locale.", "C'è stato un temporale forte."],
+    "choicesEnglish": ["There has been a road accident.", "There has been a big concert.", "There has been a local market.", "There has been a strong thunderstorm."],
+    "correctAnswerItalian": "C'è stato un incidente stradale.",
+    "correctAnswerEnglish": "There has been a road accident.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi porti a questo indirizzo.\"."
+      "correctItalian": "Ottimo! Spiega il motivo del possibile ritardo.",
+      "incorrectItalian": "No, incidente significa accident.",
+      "correctEnglish": "Great! Explains the reason for the possible delay.",
+      "incorrectEnglish": "No, accident is incidente."
+    }
+  },
+  {
+    "choicesItalian": ["Faremo una strada alternativa.", "Faremo la solita strada veloce.", "Faremo la strada più lunga.", "Faremo la strada più bella."],
+    "choicesEnglish": ["We will take an alternative road.", "We will take the usual fast road.", "We will take the longest road.", "We will take the most beautiful road."],
+    "correctAnswerItalian": "Faremo una strada alternativa.",
+    "correctAnswerEnglish": "We will take an alternative road.",
+    "feedback": {
+      "correctItalian": "Esatto! Il tassista cerca di evitare l'ingorgo.",
+      "incorrectItalian": "No, alternativa significa alternative.",
+      "correctEnglish": "Exactly! The taxi driver tries to avoid the traffic jam.",
+      "incorrectEnglish": "No, alternative is alternativa."
+    }
+  },
+  {
+    "choicesItalian": ["Massimo dieci minuti di ritardo.", "Minimo un'ora di attesa.", "Circa due ore di viaggio.", "Esattamente cinque minuti."],
+    "choicesEnglish": ["Maximum ten minutes delay.", "Minimum one hour wait.", "About two hours journey.", "Exactly five minutes."],
+    "correctAnswerItalian": "Massimo dieci minuti di ritardo.",
+    "correctAnswerEnglish": "Maximum ten minutes delay.",
+    "feedback": {
+      "correctItalian": "Giusto! Una stima del tempo perso nel traffico.",
+      "incorrectItalian": "Sbagliato. Massimo significa maximum.",
+      "correctEnglish": "Right! An estimate of the time lost in traffic.",
+      "incorrectEnglish": "Wrong. Maximum is massimo."
+    }
+  },
+  {
+    "choicesItalian": ["Va bene, non ho fretta.", "No, ho molta fretta.", "Scusi, ma ho un appuntamento.", "Presto, devo arrivare subito!"],
+    "choicesEnglish": ["Alright, I'm not in a hurry.", "No, I'm in a big hurry.", "Sorry, but I have an appointment.", "Quickly, I must arrive immediately!"],
+    "correctAnswerItalian": "Va bene, non ho fretta.",
+    "correctAnswerEnglish": "Alright, I'm not in a hurry.",
+    "feedback": {
+      "correctItalian": "Ottimo! Rassicura il tassista che non c'è urgenza.",
+      "incorrectItalian": "No, fretta significa hurry.",
+      "correctEnglish": "Great! Reassures the taxi driver that there's no urgency.",
+      "incorrectEnglish": "No, hurry is fretta."
+    }
+  },
+  {
+    "choicesItalian": ["Siamo arrivati. Quanto le devo?", "Siamo partiti. Quanto costa?", "Siamo a metà. Quanto manca?", "Siamo vicini. Dove andiamo?"],
+    "choicesEnglish": ["We have arrived. How much do I owe you?", "We have left. How much does it cost?", "We are halfway. How much longer?", "We are close. Where are we going?"],
+    "correctAnswerItalian": "Siamo arrivati. Quanto le devo?",
+    "correctAnswerEnglish": "We have arrived. How much do I owe you?",
+    "feedback": {
+      "correctItalian": "Esatto! La frase per chiedere il totale alla fine della corsa.",
+      "incorrectItalian": "No, devo significa I owe.",
+      "correctEnglish": "Exactly! The phrase to ask for the total at the end of the ride.",
+      "incorrectEnglish": "No, I owe is devo."
+    }
+  },
+  {
+    "choicesItalian": ["Tenga pure il resto come mancia.", "Mi dia il resto, per favore.", "Non ho monete per il resto.", "Il resto è sbagliato, conti bene."],
+    "choicesEnglish": ["Keep the change as a tip.", "Give me the change, please.", "I don't have coins for the change.", "The change is wrong, count well."],
+    "correctAnswerItalian": "Tenga pure il resto come mancia.",
+    "correctAnswerEnglish": "Keep the change as a tip.",
+    "feedback": {
+      "correctItalian": "Giusto! Un gesto di cortesia verso il tassista.",
+      "incorrectItalian": "Sbagliato. Si lascia la mancia.",
+      "correctEnglish": "Right! A gesture of courtesy towards the taxi driver.",
+      "incorrectEnglish": "Wrong. You're leaving a tip."
+    }
+  },
+  {
+    "choicesItalian": ["Le serve la ricevuta?", "Le serve un aiuto?", "Le serve una borsa?", "Le serve il biglietto?"],
+    "choicesEnglish": ["Do you need a receipt?", "Do you need help?", "Do I need a bag?", "Do you need the ticket?"],
+    "correctAnswerItalian": "Le serve la ricevuta?",
+    "correctAnswerEnglish": "Do you need a receipt?",
+    "feedback": {
+      "correctItalian": "Ottimo! Proposta standard alla fine del servizio.",
+      "incorrectItalian": "No, ricevuta significa receipt.",
+      "correctEnglish": "Great! Standard offer at the end of the service.",
+      "incorrectEnglish": "No, receipt is ricevuta."
+    }
+  },
+  {
+    "choicesItalian": ["Sì, mi serve per il rimborso spese.", "Sì, mi serve per il viaggio.", "Sì, mi serve per la polizia.", "Sì, mi serve per la mia famiglia."],
+    "choicesEnglish": ["Yes, I need it for expense reimbursement.", "Yes, I need it for the trip.", "Yes, I need it for the police.", "Yes, I need it for my family."],
+    "correctAnswerItalian": "Sì, mi serve per il rimborso spese.",
+    "correctAnswerEnglish": "Yes, I need it for expense reimbursement.",
+    "feedback": {
+      "correctItalian": "Esatto! Molti viaggiatori d'affari chiedono la ricevuta.",
+      "incorrectItalian": "No, rimborso significa reimbursement.",
+      "correctEnglish": "Exactly! Many business travelers ask for a receipt.",
+      "incorrectEnglish": "No, reimbursement is rimborso."
+    }
+  },
+  {
+    "choicesItalian": ["È possibile prenotare un taxi per domani?", "È possibile comprare un taxi per domani?", "È possibile guidare un taxi per domani?", "È possibile lavare un taxi per domani?"],
+    "choicesEnglish": ["Is it possible to book a taxi for tomorrow?", "Is it possible to buy a taxi for tomorrow?", "Is it possible to drive a taxi for tomorrow?", "Is it possible to wash a taxi for tomorrow?"],
+    "correctAnswerItalian": "È possibile prenotare un taxi per domani?",
+    "correctAnswerEnglish": "Is it possible to book a taxi for tomorrow?",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere una prenotazione anticipata.",
+      "incorrectItalian": "Sbagliato. Chiedi di prenotare.",
+      "correctEnglish": "Right! Asking for an advance reservation.",
+      "incorrectEnglish": "Wrong. Ask to book."
+    }
+  },
+  {
+    "choicesItalian": ["Chiami la nostra centrale radiotaxi.", "Chiami la stazione dei treni.", "Chiami l'aeroporto subito.", "Chiami la sua famiglia ora."],
+    "choicesEnglish": ["Call our taxi dispatch.", "Call the train station.", "Call the airport right away.", "Call your family now."],
+    "correctAnswerItalian": "Chiami la nostra centrale radiotaxi.",
+    "correctAnswerEnglish": "Call our taxi dispatch.",
+    "feedback": {
+      "correctItalian": "Ottimo! Il tassista suggerisce il modo corretto per prenotare.",
+      "incorrectItalian": "No, centrale radiotaxi significa taxi dispatch.",
+      "correctEnglish": "Great! The taxi driver suggests the correct way to book.",
+      "incorrectEnglish": "No, taxi dispatch is centrale radiotaxi."
+    }
+  },
+  {
+    "choicesItalian": ["Può accendere l'aria condizionata?", "Può aprire la porta?", "Può spegnere la radio?", "Può fermarsi qui?"],
+    "choicesEnglish": ["Can you turn on the air conditioning?", "Can you open the door?", "Can you turn off the radio?", "Can you stop here?"],
+    "correctAnswerItalian": "Può accendere l'aria condizionata?",
+    "correctAnswerEnglish": "Can you turn on the air conditioning?",
+    "feedback": {
+      "correctItalian": "Esatto! Una richiesta comune per il comfort durante il viaggio.",
+      "incorrectItalian": "No, aria condizionata significa air conditioning.",
+      "correctEnglish": "Exactly! A common request for comfort during the ride.",
+      "incorrectEnglish": "No, air conditioning is aria condizionata."
+    }
+  },
+  {
+    "choicesItalian": ["Metta pure le valigie nel bagagliaio.", "Metta pure le valigie sul tetto.", "Metta pure le valigie sul sedile.", "Metta pure le valigie per terra."],
+    "choicesEnglish": ["Feel free to put the suitcases in the trunk.", "Feel free to put the suitcases on the roof.", "Feel free to put the suitcases on the seat.", "Feel free to put the suitcases on the ground."],
+    "correctAnswerItalian": "Metta pure le valigie nel bagagliaio.",
+    "correctAnswerEnglish": "Feel free to put the suitcases in the trunk.",
+    "feedback": {
+      "correctItalian": "Giusto! Il posto corretto per i bagagli ingombranti.",
+      "incorrectItalian": "Sbagliato. Bagagliaio significa trunk.",
+      "correctEnglish": "Right! The correct place for bulky luggage.",
+      "incorrectEnglish": "Wrong. Trunk is bagagliaio."
+    }
+  },
+  {
+    "choicesItalian": ["Quanto tempo ci vuole per arrivare?", "Quanto costa il viaggio in totale?", "Chi guida il taxi oggi?", "Dove siamo adesso?"],
+    "choicesEnglish": ["How long does it take to arrive?", "How much does the trip cost in total?", "Who is driving the taxi today?", "Where are we now?"],
+    "correctAnswerItalian": "Quanto tempo ci vuole per arrivare?",
+    "correctAnswerEnglish": "How long does it take to arrive?",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere la durata prevista del tragitto.",
+      "incorrectItalian": "No, tempo ci vuole significa how long it takes.",
+      "correctEnglish": "Great! Asking for the expected duration of the ride.",
+      "incorrectEnglish": "No, how long it takes is quanto tempo ci vuole."
+    }
+  },
+  {
+    "choicesItalian": ["Giri a destra al prossimo incrocio.", "Giri a sinistra dopo la piazza.", "Vada dritto fino alla chiesa.", "Si fermi davanti all'hotel."],
+    "choicesEnglish": ["Turn right at the next intersection.", "Turn left after the square.", "Go straight until the church.", "Stop in front of the hotel."],
+    "correctAnswerItalian": "Giri a destra al prossimo incrocio.",
+    "correctAnswerEnglish": "Turn right at the next intersection.",
+    "feedback": {
+      "correctItalian": "Esatto! Fornire indicazioni stradali al tassista.",
+      "incorrectItalian": "No, destra significa right.",
+      "correctEnglish": "Exactly! Providing road directions to the taxi driver.",
+      "incorrectEnglish": "No, right is destra."
+    }
+  },
+  {
+    "choicesItalian": ["Mi può dare una mano con il bagaglio?", "Mi può dare un consiglio sulla città?", "Mi può prestare un ombrello?", "Mi può chiamare un amico?"],
+    "choicesEnglish": ["Can you give me a hand with the luggage?", "Can you give me advice about the city?", "Can you lend me an umbrella?", "Can you call me a friend?"],
+    "correctAnswerItalian": "Mi può dare una mano con il bagaglio?",
+    "correctAnswerEnglish": "Can you give me a hand with the luggage?",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere assistenza fisica per le valigie.",
+      "incorrectItalian": "Sbagliato. Dare una mano significa help.",
+      "correctEnglish": "Right! Asking for physical assistance with the suitcases.",
+      "incorrectEnglish": "Wrong. Give a hand means to help."
+    }
+  },
+  {
+    "choicesItalian": ["Sì, la aiuto io volentieri.", "No, faccia da solo, grazie.", "Non posso, ho mal di schiena.", "Aspetti un altro tassista."],
+    "choicesEnglish": ["Yes, I'll gladly help you.", "No, do it yourself, thanks.", "I can't, I have a backache.", "Wait for another taxi driver."],
+    "correctAnswerItalian": "Sì, la aiuto io volentieri.",
+    "correctAnswerEnglish": "Yes, I'll gladly help you.",
+    "feedback": {
+      "correctItalian": "Ottimo! Risposta cortese e disponibile.",
+      "incorrectItalian": "No, la aiuto significa I help you.",
+      "correctEnglish": "Great! Polite and helpful response.",
+      "incorrectEnglish": "No, I help you is la aiuto."
+    }
+  },
+  {
+    "choicesItalian": ["Si fermi qui davanti al cancello.", "Si fermi qui sotto l'albero.", "Si fermi qui vicino al bar.", "Si fermi qui all'angolo."],
+    "choicesEnglish": ["Stop here in front of the gate.", "Stop here under the tree.", "Stop here near the bar.", "Stop here on the corner."],
+    "correctAnswerItalian": "Si fermi qui davanti al cancello.",
+    "correctAnswerEnglish": "Stop here in front of the gate.",
+    "feedback": {
+      "correctItalian": "Esatto! Specificare il punto esatto di arrivo.",
+      "incorrectItalian": "No, cancello significa gate.",
+      "correctEnglish": "Exactly! Specifying the exact point of arrival.",
+      "incorrectEnglish": "No, gate is cancello."
+    }
+  },
+  {
+    "choicesItalian": ["Può abbassare il volume della radio?", "Può cambiare stazione radio?", "Può spegnere la radio del tutto?", "Può alzare il volume, mi piace!"],
+    "choicesEnglish": ["Can you lower the radio volume?", "Can you change the radio station?", "Can you turn off the radio completely?", "Can you turn up the volume, I like it!"],
+    "correctAnswerItalian": "Può abbassare il volume della radio?",
+    "correctAnswerEnglish": "Can you lower the radio volume?",
+    "feedback": {
+      "correctItalian": "Giusto! Richiesta per un viaggio più tranquillo.",
+      "incorrectItalian": "Sbagliato. Abbassare significa to lower.",
+      "correctEnglish": "Right! Request for a quieter ride.",
+      "incorrectEnglish": "Wrong. To lower is abbassare."
+    }
+  },
+  {
+    "choicesItalian": ["Qual è il numero della centrale?", "Qual è il nome del tassista?", "Qual è il costo del taxi?", "Qual è l'orario del volo?"],
+    "choicesEnglish": ["What is the dispatch number?", "What is the taxi driver's name?", "What is the taxi cost?", "What is the flight time?"],
+    "correctAnswerItalian": "Qual è il numero della centrale?",
+    "correctAnswerEnglish": "What is the dispatch number?",
+    "feedback": {
+      "correctItalian": "Ottimo! Informazione utile per prenotazioni future.",
+      "incorrectItalian": "No, numero della centrale significa dispatch number.",
+      "correctEnglish": "Great! Useful information for future bookings.",
+      "incorrectEnglish": "No, dispatch number is numero della centrale."
+    }
+  },
+  {
+    "choicesItalian": ["È lo 06 3535, rispondono subito.", "È il 113, chiami in emergenza.", "È l'800 123 456, è gratuito.", "È il mio numero privato, eccolo."],
+    "choicesEnglish": ["It's 06 3535, they answer right away.", "It's 113, call in an emergency.", "It's 800 123 456, it's free.", "It's my private number, here it is."],
+    "correctAnswerItalian": "È lo 06 3535, rispondono subito.",
+    "correctAnswerEnglish": "It's 06 3535, they answer right away.",
+    "feedback": {
+      "correctItalian": "Esatto! Fornire il recapito telefonico richiesto.",
+      "incorrectItalian": "No, risponde col numero della centrale.",
+      "correctEnglish": "Exactly! Providing the requested phone number.",
+      "incorrectEnglish": "No, he answers with the dispatch number."
+    }
+  },
+  {
+    "choicesItalian": ["Mi può dare una ricevuta, per favore?", "Mi può dare un biglietto, per favore?", "Mi può dare un resto, per favore?", "Mi può dare un aiuto, per favore?"],
+    "choicesEnglish": ["Can you give me a receipt, please?", "Can you give me a ticket, please?", "Can you give me some change, please?", "Can you give me some help, please?"],
+    "correctAnswerItalian": "Mi può dare una ricevuta, per favore?",
+    "correctAnswerEnglish": "Can you give me a receipt, please?",
+    "feedback": {
+      "correctItalian": "Giusto! Richiesta formale a fine corsa.",
+      "incorrectItalian": "Sbagliato. Ricevuta significa receipt.",
+      "correctEnglish": "Right! Formal request at the end of the ride.",
+      "incorrectEnglish": "Wrong. Receipt is ricevuta."
+    }
+  },
+  {
+    "choicesItalian": ["Certo, la faccio immediatamente.", "No, ho finito la carta oggi.", "Sì, ma costa un euro in più.", "La cerchi sul sedile dietro."],
+    "choicesEnglish": ["Certainly, I'll make it immediately.", "No, I ran out of paper today.", "Yes, but it costs one euro more.", "Look for it on the back seat."],
+    "correctAnswerItalian": "Certo, la faccio immediatamente.",
+    "correctAnswerEnglish": "Certainly, I'll make it immediately.",
+    "feedback": {
+      "correctItalian": "Ottimo! Disponibilità del tassista.",
+      "incorrectItalian": "No, immediatamente significa immediately.",
+      "correctEnglish": "Great! The taxi driver's availability.",
+      "incorrectEnglish": "No, immediately is immediatamente."
+    }
+  },
+  {
+    "choicesItalian": ["Siamo arrivati a destinazione.", "Siamo partiti dall'aeroporto.", "Siamo in ritardo di poco.", "Siamo ancora nel traffico."],
+    "choicesEnglish": ["We have arrived at the destination.", "We have left from the airport.", "We are a little late.", "We are still in traffic."],
+    "correctAnswerItalian": "Siamo arrivati a destinazione.",
+    "correctAnswerEnglish": "We have arrived at the destination.",
+    "feedback": {
+      "correctItalian": "Esatto! Annuncio della fine del viaggio.",
+      "incorrectItalian": "No, arrivati significa arrived.",
+      "correctEnglish": "Exactly! Announcement of the end of the trip.",
+      "incorrectEnglish": "No, arrived is arrivati."
+    }
+  },
+  {
+    "choicesItalian": ["Può aprire il bagagliaio?", "Può aprire la porta?", "Può aprire il finestrino?", "Può aprire la borsa?"],
+    "choicesEnglish": ["Can you open the trunk?", "Can you open the door?", "Can you open the window?", "Can you open the bag?"],
+    "correctAnswerItalian": "Può aprire il bagagliaio?",
+    "correctAnswerEnglish": "Can you open the trunk?",
+    "feedback": {
+      "correctItalian": "Giusto! Per poter prendere le valigie.",
+      "incorrectItalian": "Sbagliato. Bagagliaio significa trunk.",
+      "correctEnglish": "Right! To be able to get the suitcases.",
+      "incorrectEnglish": "Wrong. Trunk is bagagliaio."
+    }
+  },
+  {
+    "choicesItalian": ["Ecco a lei, arrivederci.", "Ecco a lei, buongiorno.", "Ecco a lei, buona notte.", "Ecco a lei, buon viaggio."],
+    "choicesEnglish": ["Here you go, goodbye.", "Here you go, good morning.", "Here you go, good night.", "Here you go, have a good trip."],
+    "correctAnswerItalian": "Ecco a lei, arrivederci.",
+    "correctAnswerEnglish": "Here you go, goodbye.",
+    "feedback": {
+      "correctItalian": "Ottimo! Saluto finale cordiale.",
+      "incorrectItalian": "No, arrivederci significa goodbye.",
+      "correctEnglish": "Great! Cordial final greeting.",
+      "incorrectEnglish": "No, goodbye is arrivederci."
+    }
+  },
+  {
+    "choicesItalian": ["Grazie mille, molto gentile.", "Grazie tante, molto bravo.", "Grazie caro, molto bello.", "Grazie amico, molto forte."],
+    "choicesEnglish": ["Thank you very much, very kind.", "Thank you so much, very good.", "Thank you dear, very beautiful.", "Thank you friend, very strong."],
+    "correctAnswerItalian": "Grazie mille, molto gentile.",
+    "correctAnswerEnglish": "Thank you very much, very kind.",
+    "feedback": {
+      "correctItalian": "Esatto! Un ringraziamento sincero.",
+      "incorrectItalian": "No, gentile significa kind.",
+      "correctEnglish": "Exactly! A sincere thank you.",
+      "incorrectEnglish": "No, kind is gentile."
+    }
+  },
+  {
+    "choicesItalian": ["C'è un supplemento notturno?", "C'è un supplemento festivo?", "C'è un supplemento bagaglio?", "C'è un supplemento velocità?"],
+    "choicesEnglish": ["Is there a night surcharge?", "Is there a holiday surcharge?", "Is there a luggage surcharge?", "Is there a speed surcharge?"],
+    "correctAnswerItalian": "C'è un supplemento notturno?",
+    "correctAnswerEnglish": "C'è un supplemento notturno?",
+    "feedback": {
+      "correctItalian": "Giusto! Informarsi su eventuali costi extra.",
+      "incorrectItalian": "Sbagliato. Notturno significa night.",
+      "correctEnglish": "Right! Inquiring about any extra costs.",
+      "incorrectEnglish": "Wrong. Night is notturno."
+    }
+  },
+  {
+    "choicesItalian": ["Si fermi al numero venti.", "Si fermi al numero cento.", "Si fermi al numero dieci.", "Si fermi al numero due."],
+    "choicesEnglish": ["Stop at number twenty.", "Stop at number one hundred.", "Stop at number ten.", "Stop at number two."],
+    "correctAnswerItalian": "Si fermi al numero venti.",
+    "correctAnswerEnglish": "Stop at number twenty.",
+    "feedback": {
+      "correctItalian": "Ottimo! Indicare il numero civico preciso.",
+      "incorrectItalian": "No, venti significa twenty.",
+      "correctEnglish": "Great! Indicating the precise street number.",
+      "incorrectEnglish": "No, twenty is venti."
+    }
+  },
+  {
+    "choicesItalian": ["Accetta pagamenti con lo smartphone?", "Accetta pagamenti con assegno?", "Accetta pagamenti con monete?", "Accetta pagamenti con la spesa?"],
+    "choicesEnglish": ["Do you accept smartphone payments?", "Do you accept check payments?", "Do you accept coin payments?", "Do you accept grocery payments?"],
+    "correctAnswerItalian": "Accetta pagamenti con lo smartphone?",
+    "correctAnswerEnglish": "Do you accept smartphone payments?",
+    "feedback": {
+      "correctItalian": "Esatto! Verificare le opzioni di pagamento digitale.",
+      "incorrectItalian": "No, smartphone significa smartphone.",
+      "correctEnglish": "Exactly! Verifying digital payment options.",
+      "incorrectEnglish": "No, smartphone is smartphone."
+    }
+  },
+  {
+    "choicesItalian": ["Sì, tramite Apple Pay o Google Pay.", "No, solo con la carta fisica.", "Sì, ma solo per piccole cifre.", "Non so cosa sia uno smartphone."],
+    "choicesEnglish": ["Yes, via Apple Pay or Google Pay.", "No, only with a physical card.", "Yes, but only for small amounts.", "I don't know what a smartphone is."],
+    "correctAnswerItalian": "Sì, tramite Apple Pay o Google Pay.",
+    "correctAnswerEnglish": "Yes, via Apple Pay or Google Pay.",
+    "feedback": {
+      "correctItalian": "Giusto! Conferma delle opzioni moderne di pagamento.",
+      "incorrectItalian": "No, tramite significa through/via.",
+      "correctEnglish": "Right! Confirmation of modern payment options.",
+      "incorrectEnglish": "No, via is tramite."
+    }
+  },
+  {
+    "choicesItalian": ["Qual è la via più veloce?", "Qual è la via più lunga?", "Qual è la via più bella?", "Qual è la via più cara?"],
+    "choicesEnglish": ["Which is the fastest way?", "Which is the longest way?", "Which is the most beautiful way?", "Which is the most expensive way?"],
+    "correctAnswerItalian": "Qual è la via più veloce?",
+    "correctAnswerEnglish": "Which is the fastest way?",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere l'itinerario migliore per risparmiare tempo.",
+      "incorrectItalian": "No, veloce significa fast.",
+      "correctEnglish": "Great! Asking for the best itinerary to save time.",
+      "incorrectEnglish": "No, fast is veloce."
+    }
+  },
+  {
+    "choicesItalian": ["L'autostrada è solitamente la migliore.", "La via interna è sempre chiusa.", "La piazza è troppo affollata ora.", "Il sentiero è impraticabile oggi."],
+    "choicesEnglish": ["The highway is usually the best one.", "The inner road is always closed.", "The square is too crowded now.", "The trail is impassable today."],
+    "correctAnswerItalian": "L'autostrada è solitamente la migliore.",
+    "correctAnswerEnglish": "The highway is usually the best one.",
+    "feedback": {
+      "correctItalian": "Esatto! Suggerimento sulla strada principale.",
+      "incorrectItalian": "No, autostrada significa highway.",
+      "correctEnglish": "Exactly! Suggestion on the main road.",
+      "incorrectEnglish": "No, highway is autostrada."
+    }
+  },
+  {
+    "choicesItalian": ["È possibile fumare nel taxi?", "È possibile mangiare nel taxi?", "È possibile dormire nel taxi?", "È possibile cantare nel taxi?"],
+    "choicesEnglish": ["Is it possible to smoke in the taxi?", "Is it possible to eat in the taxi?", "Is it possible to sleep in the taxi?", "Is it possible to sing in the taxi?"],
+    "correctAnswerItalian": "È possibile fumare nel taxi?",
+    "correctAnswerEnglish": "Is it possible to smoke in the taxi?",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere il permesso per un comportamento specifico.",
+      "incorrectItalian": "Sbagliato. Fumare significa smoke.",
+      "correctEnglish": "Right! Asking permission for a specific behavior.",
+      "incorrectEnglish": "Wrong. To smoke is fumare."
+    }
+  },
+  {
+    "choicesItalian": ["No, è assolutamente vietato.", "Sì, può fare come vuole.", "Sì, ma solo con il finestrino aperto.", "Non lo so, non è mio il taxi."],
+    "choicesEnglish": ["No, it is strictly forbidden.", "Yes, you can do as you wish.", "Yes, but only with the window open.", "I don't know, it's not my taxi."],
+    "correctAnswerItalian": "No, è assolutamente vietato.",
+    "correctAnswerEnglish": "No, it is strictly forbidden.",
+    "feedback": {
+      "correctItalian": "Ottimo! Regola chiara di comportamento a bordo.",
+      "incorrectItalian": "No, vietato significa forbidden.",
+      "correctEnglish": "Great! Clear rule of behavior on board.",
+      "incorrectEnglish": "No, forbidden is vietato."
+    }
+  },
+  {
+    "choicesItalian": ["Quanto dista il centro dall'aeroporto?", "Quanto dista il mare dall'hotel?", "Quanto dista la stazione da qui?", "Quanto dista il parco dalla piazza?"],
+    "choicesEnglish": ["How far is the center from the airport?", "How far is the sea from the hotel?", "How far is the station from here?", "How far is the park from the square?"],
+    "correctAnswerItalian": "Quanto dista il centro dall'aeroporto?",
+    "correctAnswerEnglish": "How far is the center from the airport?",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedere la distanza geografica.",
+      "incorrectItalian": "No, dista significa is distant.",
+      "correctEnglish": "Exactly! Asking for geographic distance.",
+      "incorrectEnglish": "No, is distant is dista."
+    }
+  },
+  {
+    "choicesItalian": ["Sono circa trenta chilometri.", "Sono circa dieci metri.", "Sono circa cento passi.", "Sono circa due ore."],
+    "choicesEnglish": ["It's about thirty kilometers.", "It's about ten meters.", "It's about a hundred steps.", "It's about two hours."],
+    "correctAnswerItalian": "Sono circa trenta chilometri.",
+    "correctAnswerEnglish": "It's about thirty kilometers.",
+    "feedback": {
+      "correctItalian": "Giusto! Una stima della distanza chilometrica.",
+      "incorrectItalian": "Sbagliato. Chilometri significa kilometers.",
+      "correctEnglish": "Right! An estimate of the kilometric distance.",
+      "incorrectEnglish": "Wrong. Kilometers is chilometri."
+    }
+  },
+  {
+    "choicesItalian": ["Può andare un po' più piano?", "Può andare un po' più veloce?", "Può andare un po' più dritto?", "Può andare un po' più lontano?"],
+    "choicesEnglish": ["Can you go a bit slower?", "Can you go a bit faster?", "Can you go a bit straighter?", "Can you go a bit further?"],
+    "correctAnswerItalian": "Può andare un po' più piano?",
+    "correctAnswerEnglish": "Can you go a bit slower?",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere di moderare la velocità.",
+      "incorrectItalian": "No, piano significa slow/quiet.",
+      "correctEnglish": "Great! Asking to moderate the speed.",
+      "incorrectEnglish": "No, slow is piano."
+    }
+  },
+  {
+    "choicesItalian": ["Certamente, scusi la fretta.", "No, devo arrivare subito.", "Sì, ma costa di più allora.", "Non posso, c'è il traffico."],
+    "choicesEnglish": ["Certainly, sorry for the rush.", "No, I must arrive right away.", "Yes, but it costs more then.", "I can't, there is traffic."],
+    "correctAnswerItalian": "Certamente, scusi la fretta.",
+    "correctAnswerEnglish": "Certainly, sorry for the rush.",
+    "feedback": {
+      "correctItalian": "Esatto! Risposta accomodante del tassista.",
+      "incorrectItalian": "No, fretta significa rush.",
+      "correctEnglish": "Exactly! Accommodating response from the taxi driver.",
+      "incorrectEnglish": "No, rush is fretta."
+    }
+  },
+  {
+    "choicesItalian": ["Mi può svegliare quando arriviamo?", "Mi può chiamare quando arriviamo?", "Mi può dire quando arriviamo?", "Mi può salutare quando arriviamo?"],
+    "choicesEnglish": ["Can you wake me up when we arrive?", "Can you call me when we arrive?", "Can you tell me when we arrive?", "Can you greet me when we arrive?"],
+    "correctAnswerItalian": "Mi può svegliare quando arriviamo?",
+    "correctAnswerEnglish": "Can you wake me up when we arrive?",
+    "feedback": {
+      "correctItalian": "Giusto! Per chi vuole riposare durante il tragitto.",
+      "incorrectItalian": "Sbagliato. Svegliare significa wake up.",
+      "correctEnglish": "Right! For those who want to rest during the ride.",
+      "incorrectEnglish": "Wrong. To wake up is svegliare."
+    }
+  },
+  {
+    "choicesItalian": ["Sì, non si preoccupi, riposi pure.", "No, non è permesso dormire qui.", "Sì, ma solo se russa forte.", "Lo faccia da solo, grazie."],
+    "choicesEnglish": ["Yes, don't worry, feel free to rest.", "No, it is not allowed to sleep here.", "Yes, but only if you snore loudly.", "Do it yourself, thanks."],
+    "correctAnswerItalian": "Sì, non si preoccupi, riposi pure.",
+    "correctAnswerEnglish": "Yes, don't worry, feel free to rest.",
+    "feedback": {
+      "correctItalian": "Ottimo! Risposta gentile e rassicurante.",
+      "incorrectItalian": "No, riposi significa rest.",
+      "correctEnglish": "Great! Kind and reassuring response.",
+      "incorrectEnglish": "No, rest is riposi."
+    }
+  },
+  {
+    "choicesItalian": ["Grazie per il viaggio e per la chiacchierata.", "Grazie per il pranzo e per il vino.", "Grazie per il libro e per la storia.", "Grazie per il regalo e per la festa."],
+    "choicesEnglish": ["Thanks for the ride and for the chat.", "Thanks for the lunch and for the wine.", "Thanks for the book and for the story.", "Thanks for the gift and for the party."],
+    "correctAnswerItalian": "Grazie per il viaggio e per la chiacchierata.",
+    "correctAnswerEnglish": "Thanks for the ride and for the chat.",
+    "feedback": {
+      "correctItalian": "Esatto! Un saluto amichevole a fine corsa.",
+      "incorrectItalian": "No, chiacchierata significa chat.",
+      "correctEnglish": "Exactly! A friendly greeting at the end of the ride.",
+      "incorrectEnglish": "No, chat is chiacchierata."
     }
   }
 ]

@@ -1,402 +1,602 @@
 [
   {
-    "choicesItalian": ["autobus", "treno", "aereo", "taxi"],
-    "choicesEnglish": ["bus", "train", "airplane", "taxi"],
-    "correctAnswerItalian": "autobus",
-    "correctAnswerEnglish": "bus",
-    "feedbackItalian": "L'autobus è un mezzo di trasporto comune dall'aeroporto.",
-    "feedbackEnglish": "The bus is a common means of transport from the airport."
+    "choicesItalian": ["Arrivi", "Partenze", "Transito", "Uscita"],
+    "choicesEnglish": ["Arrivals", "Departures", "Transit", "Exit"],
+    "correctAnswerItalian": "Arrivi",
+    "correctAnswerEnglish": "Arrivals",
+    "feedback": {
+      "correctItalian": "Esatto! Segui le indicazioni per 'Arrivi' appena atterri.",
+      "incorrectItalian": "No, 'Arrivi' è dove arrivano i voli; 'Partenze' è dove decollano.",
+      "correctEnglish": "Exactly! Follow the 'Arrivals' signs as soon as you land.",
+      "incorrectEnglish": "No, 'Arrivals' is where flights arrive; 'Departures' is where they take off."
+    }
   },
   {
-    "choicesItalian": ["biglietto", "passaporto", "valigia", "mappa"],
-    "choicesEnglish": ["ticket", "passport", "suitcase", "map"],
-    "correctAnswerItalian": "biglietto",
-    "correctAnswerEnglish": "ticket",
-    "feedbackItalian": "Hai bisogno di un biglietto per l'autobus.",
-    "feedbackEnglish": "You need a ticket for the bus."
+    "choicesItalian": ["Ritiro bagagli", "Controllo passaporti", "Dogana", "Biglietteria"],
+    "choicesEnglish": ["Baggage claim", "Passport control", "Customs", "Ticket office"],
+    "correctAnswerItalian": "Ritiro bagagli",
+    "correctAnswerEnglish": "Baggage claim",
+    "feedback": {
+      "correctItalian": "Giusto! Il 'Ritiro bagagli' è dove prendi le valigie.",
+      "incorrectItalian": "No, è 'Ritiro bagagli'. La 'Dogana' è per i controlli merci.",
+      "correctEnglish": "Right! 'Baggage claim' is where you pick up your suitcases.",
+      "incorrectEnglish": "No, it's 'Baggage claim'. 'Customs' is for goods inspection."
+    }
   },
   {
-    "choicesItalian": ["centro", "periferia", "stazione", "aeroporto"],
-    "choicesEnglish": ["center", "suburbs", "station", "airport"],
-    "correctAnswerItalian": "centro",
-    "correctAnswerEnglish": "center",
-    "feedbackItalian": "Il centro è la parte principale della città.",
-    "feedbackEnglish": "The center is the main part of the city."
+    "choicesItalian": ["Uscita", "Entrata", "Ascensore", "Parcheggio"],
+    "choicesEnglish": ["Exit", "Entrance", "Elevator", "Parking"],
+    "correctAnswerItalian": "Uscita",
+    "correctAnswerEnglish": "Exit",
+    "feedback": {
+      "correctItalian": "Sì! Cerca il cartello 'Uscita' per andare fuori.",
+      "incorrectItalian": "No, 'Uscita' è per andare fuori dall'aeroporto.",
+      "correctEnglish": "Yes! Look for the 'Exit' sign to go outside.",
+      "incorrectEnglish": "No, 'Exit' is for going out of the airport."
+    }
   },
   {
-    "choicesItalian": ["destra", "sinistra", "dritto", "dietro"],
-    "choicesEnglish": ["right", "left", "straight", "behind"],
-    "correctAnswerItalian": "destra",
-    "correctAnswerEnglish": "right",
-    "feedbackItalian": "Giri a destra per trovare la fermata.",
-    "feedbackEnglish": "Turn right to find the stop."
+    "choicesItalian": ["Ufficio informazioni", "Cambio valuta", "Deposito bagagli", "Noleggio auto"],
+    "choicesEnglish": ["Information office", "Currency exchange", "Luggage storage", "Car rental"],
+    "correctAnswerItalian": "Ufficio informazioni",
+    "correctAnswerEnglish": "Information office",
+    "feedback": {
+      "correctItalian": "Esatto! L'ufficio informazioni ti aiuta per ogni dubbio.",
+      "incorrectItalian": "No, è l'ufficio informazioni. Il cambio valuta serve per i soldi.",
+      "correctEnglish": "Exactly! The information office helps you with any doubts.",
+      "incorrectEnglish": "No, it's the information office. Currency exchange is for money."
+    }
   },
   {
-    "choicesItalian": ["fermata", "stazione", "aeroporto", "uscita"],
-    "choicesEnglish": ["stop", "station", "airport", "exit"],
-    "correctAnswerItalian": "fermata",
-    "correctAnswerEnglish": "stop",
-    "feedbackItalian": "La fermata dell'autobus è qui vicino.",
-    "feedbackEnglish": "The bus stop is nearby."
+    "choicesItalian": ["Navetta", "Treno", "Taxi", "Autobus"],
+    "choicesEnglish": ["Shuttle", "Train", "Taxi", "Bus"],
+    "correctAnswerItalian": "Navetta",
+    "correctAnswerEnglish": "Shuttle",
+    "feedback": {
+      "correctItalian": "Ottimo! La 'Navetta' collega spesso l'aeroporto alla città o ai parcheggi.",
+      "incorrectItalian": "No, è la navetta. Il taxi è un'auto privata.",
+      "correctEnglish": "Great! The 'Shuttle' often connects the airport to the city or parking lots.",
+      "incorrectEnglish": "No, it's the shuttle. A taxi is a private car."
+    }
   },
   {
-    "choicesItalian": ["arrivi", "partenze", "transito", "bagagli"],
-    "choicesEnglish": ["arrivals", "departures", "transit", "luggage"],
-    "correctAnswerItalian": "arrivi",
-    "correctAnswerEnglish": "arrivals",
-    "feedbackItalian": "La zona arrivi è dove atterrano i voli.",
-    "feedbackEnglish": "The arrivals area is where flights land."
+    "choicesItalian": ["Fermata", "Stazione", "Binario", "Corsia"],
+    "choicesEnglish": ["Stop", "Station", "Platform", "Lane"],
+    "correctAnswerItalian": "Fermata",
+    "correctAnswerEnglish": "Stop",
+    "feedback": {
+      "correctItalian": "Giusto! Aspetta l'autobus alla fermata corretta.",
+      "incorrectItalian": "No, è 'Fermata'. 'Binario' si usa per i treni.",
+      "correctEnglish": "Right! Wait for the bus at the correct stop.",
+      "incorrectEnglish": "No, it's 'Stop'. 'Platform' is used for trains."
+    }
   },
   {
-    "choicesItalian": ["valigia", "zaino", "borsa", "pacco"],
-    "choicesEnglish": ["suitcase", "backpack", "bag", "package"],
-    "correctAnswerItalian": "valigia",
-    "correctAnswerEnglish": "suitcase",
-    "feedbackItalian": "La valigia contiene i tuoi vestiti.",
-    "feedbackEnglish": "The suitcase contains your clothes."
+    "choicesItalian": ["Biglietteria", "Tabaccheria", "Edicola", "Farmacia"],
+    "choicesEnglish": ["Ticket office", "Tobacco shop", "Newsstand", "Pharmacy"],
+    "correctAnswerItalian": "Biglietteria",
+    "correctAnswerEnglish": "Ticket office",
+    "feedback": {
+      "correctItalian": "Esatto! Vai in biglietteria per comprare i ticket di viaggio.",
+      "incorrectItalian": "No, è la biglietteria. La tabaccheria vende sigarette e a volte biglietti.",
+      "correctEnglish": "Exactly! Go to the ticket office to buy travel tickets.",
+      "incorrectEnglish": "No, it's the ticket office. A tobacco shop sells cigarettes and sometimes tickets."
+    }
   },
   {
-    "choicesItalian": ["passaporto", "visto", "carta", "patente"],
-    "choicesEnglish": ["passport", "visa", "card", "license"],
-    "correctAnswerItalian": "passaporto",
-    "correctAnswerEnglish": "passport",
-    "feedbackItalian": "Il passaporto è necessario per viaggiare.",
-    "feedbackEnglish": "The passport is necessary for traveling."
+    "choicesItalian": ["Tabaccheria", "Bar", "Ristorante", "Negozio"],
+    "choicesEnglish": ["Tobacco shop", "Bar", "Restaurant", "Shop"],
+    "correctAnswerItalian": "Tabaccheria",
+    "correctAnswerEnglish": "Tobacco shop",
+    "feedback": {
+      "correctItalian": "Sì! In Italia le tabaccherie vendono spesso anche biglietti per i mezzi.",
+      "incorrectItalian": "No, è la tabaccheria. Il bar serve caffè e cibo.",
+      "correctEnglish": "Yes! In Italy, tobacco shops often also sell public transport tickets.",
+      "incorrectEnglish": "No, it's the tobacco shop. A bar serves coffee and food."
+    }
   },
   {
-    "choicesItalian": ["autista", "pilota", "capitano", "macchinista"],
-    "choicesEnglish": ["driver", "pilot", "captain", "train driver"],
-    "correctAnswerItalian": "autista",
-    "correctAnswerEnglish": "driver",
-    "feedbackItalian": "L'autista ti porterà in hotel.",
-    "feedbackEnglish": "The driver will take you to the hotel."
+    "choicesItalian": ["Macchinetta automatica", "Sportello", "Cassa", "Bancomat"],
+    "choicesEnglish": ["Automatic machine", "Counter", "Cash desk", "ATM"],
+    "correctAnswerItalian": "Macchinetta automatica",
+    "correctAnswerEnglish": "Automatic machine",
+    "feedback": {
+      "correctItalian": "Giusto! Puoi fare il biglietto da solo alla macchinetta automatica.",
+      "incorrectItalian": "No, è la macchinetta automatica. Il bancomat serve per prelevare.",
+      "correctEnglish": "Right! You can buy the ticket yourself at the automatic machine.",
+      "incorrectEnglish": "No, it's the automatic machine. The ATM is for withdrawing money."
+    }
   },
   {
-    "choicesItalian": ["hotel", "casa", "ufficio", "negozio"],
-    "choicesEnglish": ["hotel", "house", "office", "shop"],
-    "correctAnswerItalian": "hotel",
-    "correctAnswerEnglish": "hotel",
-    "feedbackItalian": "L'hotel è dove dormirai.",
-    "feedbackEnglish": "The hotel is where you will sleep."
+    "choicesItalian": ["Cambio valuta", "Banca", "Posta", "Ufficio"],
+    "choicesEnglish": ["Currency exchange", "Bank", "Post office", "Office"],
+    "correctAnswerItalian": "Cambio valuta",
+    "correctAnswerEnglish": "Currency exchange",
+    "feedback": {
+      "correctItalian": "Esatto! Al cambio valuta trasformi i tuoi soldi in euro.",
+      "incorrectItalian": "No, è il cambio valuta. La posta serve per spedire lettere.",
+      "correctEnglish": "Exactly! At the currency exchange, you turn your money into euros.",
+      "incorrectEnglish": "No, it's the currency exchange. The post office is for sending letters."
+    }
   },
   {
-    "choicesItalian": ["traffico", "silenzio", "folla", "pace"],
-    "choicesEnglish": ["traffic", "silence", "crowd", "peace"],
-    "correctAnswerItalian": "traffico",
-    "correctAnswerEnglish": "traffic",
-    "feedbackItalian": "C'è molto traffico in città oggi.",
-    "feedbackEnglish": "There is a lot of traffic in the city today."
+    "choicesItalian": ["Tasso di cambio", "Prezzo", "Costo", "Commissione"],
+    "choicesEnglish": ["Exchange rate", "Price", "Cost", "Fee"],
+    "correctAnswerItalian": "Tasso di cambio",
+    "correctAnswerEnglish": "Exchange rate",
+    "feedback": {
+      "correctItalian": "Giusto! Controlla sempre il tasso di cambio prima di cambiare i soldi.",
+      "incorrectItalian": "No, è il tasso di cambio. La commissione è il costo extra del servizio.",
+      "correctEnglish": "Right! Always check the exchange rate before changing money.",
+      "incorrectEnglish": "No, it's the exchange rate. The fee is the extra cost of the service."
+    }
   },
   {
-    "choicesItalian": ["minuti", "ore", "giorni", "secondi"],
-    "choicesEnglish": ["minutes", "hours", "days", "seconds"],
-    "correctAnswerItalian": "minuti",
-    "correctAnswerEnglish": "minutes",
-    "feedbackItalian": "Ci vorranno quaranta minuti.",
-    "feedbackEnglish": "It will take forty minutes."
+    "choicesItalian": ["Commissione", "Sconto", "Mancia", "Tassa"],
+    "choicesEnglish": ["Fee", "Discount", "Tip", "Tax"],
+    "correctAnswerItalian": "Commissione",
+    "correctAnswerEnglish": "Fee",
+    "feedback": {
+      "correctItalian": "Sì! Spesso c'è una commissione fissa da pagare per il cambio.",
+      "incorrectItalian": "No, è la commissione. Lo sconto riduce il prezzo.",
+      "correctEnglish": "Yes! Often there is a fixed fee to pay for the exchange.",
+      "incorrectEnglish": "No, it's the fee. A discount reduces the price."
+    }
   },
   {
-    "choicesItalian": ["euro", "dollari", "sterline", "yen"],
-    "choicesEnglish": ["euros", "dollars", "pounds", "yen"],
-    "correctAnswerItalian": "euro",
-    "correctAnswerEnglish": "euros",
-    "feedbackItalian": "L'euro è la valuta in Italia.",
-    "feedbackEnglish": "The euro is the currency in Italy."
+    "choicesItalian": ["Documento d'identità", "Patente", "Codice fiscale", "Tessera"],
+    "choicesEnglish": ["Identity document", "Driver's license", "Tax code", "Card"],
+    "correctAnswerItalian": "Documento d'identità",
+    "correctAnswerEnglish": "Identity document",
+    "feedback": {
+      "correctItalian": "Esatto! Serve sempre un documento d'identità per le operazioni ufficiali.",
+      "incorrectItalian": "No, è il documento d'identità. La patente serve per guidare.",
+      "correctEnglish": "Exactly! An identity document is always needed for official operations.",
+      "incorrectEnglish": "No, it's the identity document. A license is for driving."
+    }
   },
   {
-    "choicesItalian": ["tasso", "prezzo", "costo", "valore"],
-    "choicesEnglish": ["rate", "price", "cost", "value"],
-    "correctAnswerItalian": "tasso",
-    "correctAnswerEnglish": "rate",
-    "feedbackItalian": "Qual è il tasso di cambio oggi?",
-    "feedbackEnglish": "What is the exchange rate today?"
+    "choicesItalian": ["Passaporto", "Visto", "Biglietto", "Prenotazione"],
+    "choicesEnglish": ["Passport", "Visa", "Ticket", "Booking"],
+    "correctAnswerItalian": "Passaporto",
+    "correctAnswerEnglish": "Passport",
+    "feedback": {
+      "correctItalian": "Ottimo! Il passaporto è il documento principale per i viaggi internazionali.",
+      "incorrectItalian": "No, è il passaporto. Il visto è un permesso speciale.",
+      "correctEnglish": "Great! The passport is the main document for international travel.",
+      "incorrectEnglish": "No, it's the passport. A visa is a special permit."
+    }
   },
   {
-    "choicesItalian": ["commissione", "sconto", "mancia", "tassa"],
-    "choicesEnglish": ["fee", "discount", "tip", "tax"],
-    "correctAnswerItalian": "commissione",
-    "correctAnswerEnglish": "fee",
-    "feedbackItalian": "C'è una commissione fissa di cinque euro.",
-    "feedbackEnglish": "There is a fixed fee of five euros."
+    "choicesItalian": ["Autista", "Pilota", "Controllore", "Vigile"],
+    "choicesEnglish": ["Driver", "Pilot", "Controller", "Traffic officer"],
+    "correctAnswerItalian": "Autista",
+    "correctAnswerEnglish": "Driver",
+    "feedback": {
+      "correctItalian": "Giusto! L'autista ti aspetta per portarti in hotel.",
+      "incorrectItalian": "No, è l'autista. Il pilota guida l'aereo.",
+      "correctEnglish": "Right! The driver is waiting for you to take you to the hotel.",
+      "incorrectEnglish": "No, it's the driver. The pilot flies the plane."
+    }
   },
   {
-    "choicesItalian": ["identità", "nascita", "residenza", "stato"],
-    "choicesEnglish": ["identity", "birth", "residence", "status"],
-    "correctAnswerItalian": "identità",
-    "correctAnswerEnglish": "identity",
-    "feedbackItalian": "Serve un documento d'identità.",
-    "feedbackEnglish": "An identity document is needed."
+    "choicesItalian": ["Bagagliaio", "Sedile", "Motore", "Ruota"],
+    "choicesEnglish": ["Trunk", "Seat", "Engine", "Wheel"],
+    "correctAnswerItalian": "Bagagliaio",
+    "correctAnswerEnglish": "Trunk",
+    "feedback": {
+      "correctItalian": "Sì! Metti le valigie nel bagagliaio dell'auto.",
+      "incorrectItalian": "No, è il bagagliaio. Il sedile è dove ti siedi.",
+      "correctEnglish": "Yes! Put the suitcases in the trunk of the car.",
+      "incorrectEnglish": "No, it's the trunk. The seat is where you sit."
+    }
   },
   {
-    "choicesItalian": ["buongiorno", "buonasera", "buonanotte", "ciao"],
-    "choicesEnglish": ["good morning", "good evening", "good night", "hello"],
-    "correctAnswerItalian": "buongiorno",
-    "correctAnswerEnglish": "good morning",
-    "feedbackItalian": "Si dice buongiorno al mattino.",
-    "feedbackEnglish": "You say good morning in the morning."
+    "choicesItalian": ["Valigia", "Zaino", "Borsa", "Tracolla"],
+    "choicesEnglish": ["Suitcase", "Backpack", "Bag", "Shoulder bag"],
+    "correctAnswerItalian": "Valigia",
+    "correctAnswerEnglish": "Suitcase",
+    "feedback": {
+      "correctItalian": "Esatto! La valigia è fondamentale per i tuoi vestiti.",
+      "incorrectItalian": "No, è la valigia. Lo zaino si porta sulle spalle.",
+      "correctEnglish": "Exactly! The suitcase is essential for your clothes.",
+      "incorrectEnglish": "No, it's the suitcase. A backpack is worn on the shoulders."
+    }
   },
   {
-    "choicesItalian": ["scusi", "prego", "grazie", "salve"],
-    "choicesEnglish": ["excuse me", "you're welcome", "thank you", "hello"],
-    "correctAnswerItalian": "scusi",
-    "correctAnswerEnglish": "excuse me",
-    "feedbackItalian": "Scusi è usato per attirare l'attenzione.",
-    "feedbackEnglish": "Scusi is used to get attention."
+    "choicesItalian": ["Traffico", "Coda", "Folla", "Rumore"],
+    "choicesEnglish": ["Traffic", "Queue", "Crowd", "Noise"],
+    "correctAnswerItalian": "Traffico",
+    "correctAnswerEnglish": "Traffic",
+    "feedback": {
+      "correctItalian": "Giusto! In città c'è spesso molto traffico all'ora di punta.",
+      "incorrectItalian": "No, è il traffico. La coda è la fila di persone.",
+      "correctEnglish": "Right! In the city, there is often a lot of traffic at rush hour.",
+      "incorrectEnglish": "No, it's the traffic. A queue is a line of people."
+    }
   },
   {
-    "choicesItalian": ["dove", "quando", "perché", "come"],
-    "choicesEnglish": ["where", "when", "why", "how"],
-    "correctAnswerItalian": "dove",
-    "correctAnswerEnglish": "where",
-    "feedbackItalian": "Dove si usa per chiedere il luogo.",
-    "feedbackEnglish": "Dove is used to ask for the location."
+    "choicesItalian": ["Destinazione", "Partenza", "Sosta", "Direzione"],
+    "choicesEnglish": ["Destination", "Departure", "Stop", "Direction"],
+    "correctAnswerItalian": "Destinazione",
+    "correctAnswerEnglish": "Destination",
+    "feedback": {
+      "correctItalian": "Ottimo! L'hotel è la tua destinazione finale.",
+      "incorrectItalian": "No, è la destinazione. La partenza è da dove inizi.",
+      "correctEnglish": "Great! The hotel is your final destination.",
+      "incorrectEnglish": "No, it's the destination. Departure is where you start."
+    }
   },
   {
-    "choicesItalian": ["trovare", "cercare", "perdere", "comprare"],
-    "choicesEnglish": ["to find", "to look for", "to lose", "to buy"],
-    "correctAnswerItalian": "trovare",
-    "correctAnswerEnglish": "to find",
-    "feedbackItalian": "Dove posso trovare l'autobus?",
-    "feedbackEnglish": "Where can I find the bus?"
+    "choicesItalian": ["Contanti", "Carta", "Assegno", "Monete"],
+    "choicesEnglish": ["Cash", "Card", "Check", "Coins"],
+    "correctAnswerItalian": "Contanti",
+    "correctAnswerEnglish": "Cash",
+    "feedback": {
+      "correctItalian": "Sì! Se non hai la carta, devi pagare in contanti.",
+      "incorrectItalian": "No, sono i contanti. La carta è di plastica.",
+      "correctEnglish": "Yes! If you don't have a card, you must pay in cash.",
+      "incorrectEnglish": "No, it's cash. The card is plastic."
+    }
   },
   {
-    "choicesItalian": ["uscire", "entrare", "salire", "scendere"],
-    "choicesEnglish": ["to go out", "to enter", "to go up", "to go down"],
-    "correctAnswerItalian": "uscire",
-    "correctAnswerEnglish": "to go out",
-    "feedbackItalian": "Esca dalla porta principale.",
-    "feedbackEnglish": "Exit through the main door."
+    "choicesItalian": ["Ricevuta", "Fattura", "Conto", "Resto"],
+    "choicesEnglish": ["Receipt", "Invoice", "Bill", "Change"],
+    "correctAnswerItalian": "Ricevuta",
+    "correctAnswerEnglish": "Receipt",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedi la ricevuta all'autista per il rimborso.",
+      "incorrectItalian": "No, è la ricevuta. Il resto sono i soldi che ti ridanno.",
+      "correctEnglish": "Exactly! Ask the driver for the receipt for reimbursement.",
+      "incorrectEnglish": "No, it's the receipt. The change is the money they give back to you."
+    }
   },
   {
-    "choicesItalian": ["porta", "finestra", "muro", "tetto"],
-    "choicesEnglish": ["door", "window", "wall", "roof"],
-    "correctAnswerItalian": "porta",
-    "correctAnswerEnglish": "door",
-    "feedbackItalian": "La porta è l'ingresso dell'edificio.",
-    "feedbackEnglish": "The door is the entrance to the building."
+    "choicesItalian": ["Resto", "Mancia", "Costo", "Prezzo"],
+    "choicesEnglish": ["Change", "Tip", "Cost", "Price"],
+    "correctAnswerItalian": "Resto",
+    "correctAnswerEnglish": "Change",
+    "feedback": {
+      "correctItalian": "Giusto! Il resto sono i soldi che ricevi indietro se paghi troppo.",
+      "incorrectItalian": "No, è il resto. La mancia è un extra per il servizio.",
+      "correctEnglish": "Right! Change is the money you get back if you pay too much.",
+      "incorrectEnglish": "No, it's change. A tip is an extra for the service."
+    }
   },
   {
-    "choicesItalian": ["principale", "secondario", "laterale", "nascosto"],
-    "choicesEnglish": ["main", "secondary", "side", "hidden"],
-    "correctAnswerItalian": "principale",
-    "correctAnswerEnglish": "main",
-    "feedbackItalian": "Usi la porta principale.",
-    "feedbackEnglish": "Use the main door."
+    "choicesItalian": ["Mancia", "Regalo", "Premio", "Donazione"],
+    "choicesEnglish": ["Tip", "Gift", "Prize", "Donation"],
+    "correctAnswerItalian": "Mancia",
+    "correctAnswerEnglish": "Tip",
+    "feedback": {
+      "correctItalian": "Sì! In Italia la mancia è gradita ma non obbligatoria.",
+      "incorrectItalian": "No, è la mancia. Il regalo si fa agli amici.",
+      "correctEnglish": "Yes! In Italy, a tip is appreciated but not mandatory.",
+      "incorrectEnglish": "No, it's a tip. A gift is given to friends."
+    }
   },
   {
-    "choicesItalian": ["girare", "andare", "correre", "saltare"],
-    "choicesEnglish": ["to turn", "to go", "to run", "to jump"],
-    "correctAnswerItalian": "girare",
-    "correctAnswerEnglish": "to turn",
-    "feedbackItalian": "Giri a destra dopo l'uscita.",
-    "feedbackEnglish": "Turn right after the exit."
+    "choicesItalian": ["Bancomat", "Sportello", "Cassiere", "Banca"],
+    "choicesEnglish": ["ATM", "Counter", "Cashier", "Bank"],
+    "correctAnswerItalian": "Bancomat",
+    "correctAnswerEnglish": "ATM",
+    "feedback": {
+      "correctItalian": "Esatto! Cerca un bancomat per prelevare euro.",
+      "incorrectItalian": "No, è il bancomat. Lo sportello richiede una persona.",
+      "correctEnglish": "Exactly! Look for an ATM to withdraw euros.",
+      "incorrectEnglish": "No, it's the ATM. A counter requires a person."
+    }
   },
   {
-    "choicesItalian": ["davanti", "dietro", "sopra", "sotto"],
-    "choicesEnglish": ["in front of", "behind", "on top of", "under"],
-    "correctAnswerItalian": "davanti",
-    "correctAnswerEnglish": "in front of",
-    "feedbackItalian": "La fermata è davanti alla zona arrivi.",
-    "feedbackEnglish": "The stop is in front of the arrivals area."
+    "choicesItalian": ["Prelevare", "Versare", "Cambiare", "Spendere"],
+    "choicesEnglish": ["To withdraw", "To deposit", "To change", "To spend"],
+    "correctAnswerItalian": "Prelevare",
+    "correctAnswerEnglish": "To withdraw",
+    "feedback": {
+      "correctItalian": "Ottimo! 'Prelevare' significa prendere soldi dal conto.",
+      "incorrectItalian": "No, è prelevare. Versare significa mettere soldi sul conto.",
+      "correctEnglish": "Great! 'To withdraw' means taking money from the account.",
+      "incorrectEnglish": "No, it's withdraw. To deposit means putting money into the account."
+    }
   },
   {
-    "choicesItalian": ["grazie", "prego", "scusi", "ciao"],
-    "choicesEnglish": ["thank you", "you're welcome", "excuse me", "bye"],
-    "correctAnswerItalian": "grazie",
-    "correctAnswerEnglish": "thank you",
-    "feedbackItalian": "Grazie si usa per ringraziare.",
-    "feedbackEnglish": "Grazie is used to say thank you."
+    "choicesItalian": ["Destra", "Sinistra", "Dritto", "Dietro"],
+    "choicesEnglish": ["Right", "Left", "Straight", "Behind"],
+    "correctAnswerItalian": "Destra",
+    "correctAnswerEnglish": "Right",
+    "feedback": {
+      "correctItalian": "Giusto! Giri a destra per trovare l'uscita.",
+      "incorrectItalian": "No, è destra. Sinistra è la direzione opposta.",
+      "correctEnglish": "Right! Turn right to find the exit.",
+      "incorrectEnglish": "No, it's right. Left is the opposite direction."
+    }
   },
   {
-    "choicesItalian": ["comprare", "vendere", "pagare", "cambiare"],
-    "choicesEnglish": ["to buy", "to sell", "to pay", "to change"],
-    "correctAnswerItalian": "comprare",
-    "correctAnswerEnglish": "to buy",
-    "feedbackItalian": "Dove posso comprare il biglietto?",
-    "feedbackEnglish": "Where can I buy the ticket?"
+    "choicesItalian": ["Sinistra", "Destra", "Sopra", "Sotto"],
+    "choicesEnglish": ["Left", "Right", "Above", "Below"],
+    "correctAnswerItalian": "Sinistra",
+    "correctAnswerEnglish": "Left",
+    "feedback": {
+      "correctItalian": "Sì! La fermata è sulla sinistra della strada.",
+      "incorrectItalian": "No, è sinistra. Destra è dall'altra parte.",
+      "correctEnglish": "Yes! The stop is on the left of the road.",
+      "incorrectEnglish": "No, it's left. Right is on the other side."
+    }
   },
   {
-    "choicesItalian": ["automatico", "manuale", "veloce", "lento"],
-    "choicesEnglish": ["automatic", "manual", "fast", "slow"],
-    "correctAnswerItalian": "automatico",
-    "correctAnswerEnglish": "automatic",
-    "feedbackItalian": "Usi la macchinetta automatica.",
-    "feedbackEnglish": "Use the automatic machine."
+    "choicesItalian": ["Dritto", "Curva", "Angolo", "Piazza"],
+    "choicesEnglish": ["Straight", "Curve", "Corner", "Square"],
+    "correctAnswerItalian": "Dritto",
+    "correctAnswerEnglish": "Straight",
+    "feedback": {
+      "correctItalian": "Esatto! Vai dritto fino alla porta principale.",
+      "incorrectItalian": "No, è dritto. L'angolo è dove due strade si incrociano.",
+      "correctEnglish": "Exactly! Go straight until the main door.",
+      "incorrectEnglish": "No, it's straight. A corner is where two roads cross."
+    }
   },
   {
-    "choicesItalian": ["tabaccheria", "farmacia", "libreria", "edicola"],
-    "choicesEnglish": ["tobacco shop", "pharmacy", "bookstore", "newsstand"],
-    "correctAnswerItalian": "tabaccheria",
-    "correctAnswerEnglish": "tobacco shop",
-    "feedbackItalian": "I biglietti si vendono in tabaccheria.",
-    "feedbackEnglish": "Tickets are sold at the tobacco shop."
+    "choicesItalian": ["Angolo", "Incrocio", "Semaforo", "Rotatoria"],
+    "choicesEnglish": ["Corner", "Intersection", "Traffic light", "Roundabout"],
+    "correctAnswerItalian": "Angolo",
+    "correctAnswerEnglish": "Corner",
+    "feedback": {
+      "correctItalian": "Giusto! La tabaccheria è proprio dietro l'angolo.",
+      "incorrectItalian": "No, è l'angolo. Il semaforo ha le luci colorate.",
+      "correctEnglish": "Right! The tobacco shop is right around the corner.",
+      "incorrectEnglish": "No, it's the corner. A traffic light has colored lights."
+    }
   },
   {
-    "choicesItalian": ["angolo", "centro", "piazza", "via"],
-    "choicesEnglish": ["corner", "center", "square", "street"],
-    "correctAnswerItalian": "angolo",
-    "correctAnswerEnglish": "corner",
-    "feedbackItalian": "La tabaccheria è dietro l'angolo.",
-    "feedbackEnglish": "The tobacco shop is around the corner."
+    "choicesItalian": ["Ascensore", "Scale", "Scala mobile", "Rampe"],
+    "choicesEnglish": ["Elevator", "Stairs", "Escalator", "Ramps"],
+    "correctAnswerItalian": "Ascensore",
+    "correctAnswerEnglish": "Elevator",
+    "feedback": {
+      "correctItalian": "Sì! Prendi l'ascensore se hai bagagli pesanti.",
+      "incorrectItalian": "No, è l'ascensore. Le scale si fanno a piedi.",
+      "correctEnglish": "Yes! Take the elevator if you have heavy luggage.",
+      "incorrectEnglish": "No, it's the elevator. Stairs are taken on foot."
+    }
   },
   {
-    "choicesItalian": ["prego", "grazie", "scusi", "salve"],
-    "choicesEnglish": ["you're welcome", "thank you", "excuse me", "hello"],
-    "correctAnswerItalian": "prego",
-    "correctAnswerEnglish": "you're welcome",
-    "feedbackItalian": "Prego è la risposta a grazie.",
-    "feedbackEnglish": "Prego is the response to thank you."
+    "choicesItalian": ["Piano", "Livello", "Piano terra", "Sottosuolo"],
+    "choicesEnglish": ["Floor", "Level", "Ground floor", "Underground"],
+    "correctAnswerItalian": "Piano",
+    "correctAnswerEnglish": "Floor",
+    "feedback": {
+      "correctItalian": "Esatto! A che piano si trovano le partenze?",
+      "incorrectItalian": "No, è il piano. Il sottosuolo è sotto terra.",
+      "correctEnglish": "Exactly! On what floor are the departures?",
+      "incorrectEnglish": "No, it's the floor. The underground is below ground."
+    }
   },
   {
-    "choicesItalian": ["arrivederci", "addio", "ciao", "salve"],
-    "choicesEnglish": ["goodbye", "farewell", "bye", "hello"],
-    "correctAnswerItalian": "arrivederci",
-    "correctAnswerEnglish": "goodbye",
-    "feedbackItalian": "Arrivederci si usa per congedarsi.",
-    "feedbackEnglish": "Arrivederci is used to say goodbye."
+    "choicesItalian": ["Piano terra", "Primo piano", "Secondo piano", "Attico"],
+    "choicesEnglish": ["Ground floor", "First floor", "Second floor", "Penthouse"],
+    "correctAnswerItalian": "Piano terra",
+    "correctAnswerEnglish": "Ground floor",
+    "feedback": {
+      "correctItalian": "Ottimo! In Italia il 'Piano terra' è il livello zero.",
+      "incorrectItalian": "No, è il piano terra. Il primo piano è sopra.",
+      "correctEnglish": "Great! In Italy, the 'Ground floor' is level zero.",
+      "incorrectEnglish": "No, it's the ground floor. The first floor is above."
+    }
   },
   {
-    "choicesItalian": ["piacere", "dispiacere", "odio", "amore"],
-    "choicesEnglish": ["pleasure", "displeasure", "hate", "love"],
-    "correctAnswerItalian": "piacere",
-    "correctAnswerEnglish": "pleasure",
-    "feedbackItalian": "Piacere di conoscerti.",
-    "feedbackEnglish": "Pleased to meet you."
+    "choicesItalian": ["Minuti", "Ore", "Secondi", "Giorni"],
+    "choicesEnglish": ["Minutes", "Hours", "Seconds", "Days"],
+    "correctAnswerItalian": "Minuti",
+    "correctAnswerEnglish": "Minutes",
+    "feedback": {
+      "correctItalian": "Giusto! Ci vorranno circa venti minuti.",
+      "incorrectItalian": "No, sono minuti. Le ore durano molto di più.",
+      "correctEnglish": "Right! It will take about twenty minutes.",
+      "incorrectEnglish": "No, it's minutes. Hours last much longer."
+    }
   },
   {
-    "choicesItalian": ["sistemare", "rompere", "perdere", "cercare"],
-    "choicesEnglish": ["to arrange", "to break", "to lose", "to search"],
-    "correctAnswerItalian": "sistemare",
-    "correctAnswerEnglish": "to arrange",
-    "feedbackItalian": "Sistemo le valigie nel bagagliaio.",
-    "feedbackEnglish": "I'll arrange the suitcases in the trunk."
+    "choicesItalian": ["Ritardo", "Anticipo", "Orario", "Puntualità"],
+    "choicesEnglish": ["Delay", "Early arrival", "Schedule", "Punctuality"],
+    "correctAnswerItalian": "Ritardo",
+    "correctAnswerEnglish": "Delay",
+    "feedback": {
+      "correctItalian": "Sì! Scusi, l'autobus è in ritardo a causa del traffico.",
+      "incorrectItalian": "No, è ritardo. L'orario è il tempo previsto.",
+      "correctEnglish": "Yes! Sorry, the bus is delayed due to traffic.",
+      "incorrectEnglish": "No, it's delay. The schedule is the planned time."
+    }
   },
   {
-    "choicesItalian": ["bagagliaio", "sedile", "motore", "ruota"],
-    "choicesEnglish": ["trunk", "seat", "engine", "wheel"],
-    "correctAnswerItalian": "bagagliaio",
-    "correctAnswerEnglish": "trunk",
-    "feedbackItalian": "Il bagagliaio è il retro dell'auto.",
-    "feedbackEnglish": "The trunk is the back of the car."
+    "choicesItalian": ["Prenotazione", "Acquisto", "Vendita", "Noleggio"],
+    "choicesEnglish": ["Booking", "Purchase", "Sale", "Rental"],
+    "correctAnswerItalian": "Prenotazione",
+    "correctAnswerEnglish": "Booking",
+    "feedback": {
+      "correctItalian": "Esatto! Hai una prenotazione per il taxi?",
+      "incorrectItalian": "No, è la prenotazione. L'acquisto è quando paghi subito.",
+      "correctEnglish": "Exactly! Do you have a booking for the taxi?",
+      "incorrectEnglish": "No, it's the booking. Purchase is when you pay right away."
+    }
   },
   {
-    "choicesItalian": ["tempo", "spazio", "denaro", "lavoro"],
-    "choicesEnglish": ["time", "space", "money", "work"],
-    "correctAnswerItalian": "tempo",
-    "correctAnswerEnglish": "time",
-    "feedbackItalian": "Quanto tempo ci vorrà?",
-    "feedbackEnglish": "How much time will it take?"
+    "choicesItalian": ["Informazione", "Domanda", "Risposta", "Consiglio"],
+    "choicesEnglish": ["Information", "Question", "Answer", "Advice"],
+    "correctAnswerItalian": "Informazione",
+    "correctAnswerEnglish": "Information",
+    "feedback": {
+      "correctItalian": "Giusto! Posso chiederle un'informazione?",
+      "incorrectItalian": "No, è informazione. Il consiglio è un suggerimento.",
+      "correctEnglish": "Right! Can I ask you for some information?",
+      "incorrectEnglish": "No, it's information. Advice is a suggestion."
+    }
   },
   {
-    "choicesItalian": ["arrivare", "partire", "restare", "tornare"],
-    "choicesEnglish": ["to arrive", "to leave", "to stay", "to return"],
-    "correctAnswerItalian": "arrivare",
-    "correctAnswerEnglish": "to arrive",
-    "feedbackItalian": "Siamo pronti per arrivare in hotel.",
-    "feedbackEnglish": "We are ready to arrive at the hotel."
+    "choicesItalian": ["Aiuto", "Soccorso", "Assistenza", "Appoggio"],
+    "choicesEnglish": ["Help", "Rescue", "Assistance", "Support"],
+    "correctAnswerItalian": "Aiuto",
+    "correctAnswerEnglish": "Help",
+    "feedback": {
+      "correctItalian": "Sì! Mi serve aiuto con queste valigie.",
+      "incorrectItalian": "No, è aiuto. Il soccorso è per le emergenze mediche.",
+      "correctEnglish": "Yes! I need help with these suitcases.",
+      "incorrectEnglish": "No, it's help. Rescue is for medical emergencies."
+    }
   },
   {
-    "choicesItalian": ["ora", "ieri", "domani", "oggi"],
-    "choicesEnglish": ["now", "yesterday", "tomorrow", "today"],
-    "correctAnswerItalian": "ora",
-    "correctAnswerEnglish": "now",
-    "feedbackItalian": "C'è traffico a quest'ora.",
-    "feedbackEnglish": "There is traffic at this hour."
+    "choicesItalian": ["Mappa", "Guida", "Cartina", "Libro"],
+    "choicesEnglish": ["Map", "Guide", "Chart", "Book"],
+    "correctAnswerItalian": "Mappa",
+    "correctAnswerEnglish": "Map",
+    "feedback": {
+      "correctItalian": "Esatto! Prendi una mappa aeroportuale all'ufficio informazioni.",
+      "incorrectItalian": "No, è la mappa. Il libro ha molte pagine di testo.",
+      "correctEnglish": "Exactly! Get an airport map at the info office.",
+      "incorrectEnglish": "No, it's the map. A book has many pages of text."
+    }
   },
   {
-    "choicesItalian": ["quaranta", "trenta", "cinquanta", "venti"],
-    "choicesEnglish": ["forty", "thirty", "fifty", "twenty"],
-    "correctAnswerItalian": "quaranta",
-    "correctAnswerEnglish": "forty",
-    "feedbackItalian": "Ci vorranno quaranta minuti.",
-    "feedbackEnglish": "It will take forty minutes."
+    "choicesItalian": ["Volo", "Viaggio", "Spostamento", "Percorso"],
+    "choicesEnglish": ["Flight", "Journey", "Move", "Route"],
+    "correctAnswerItalian": "Volo",
+    "correctAnswerEnglish": "Flight",
+    "feedback": {
+      "correctItalian": "Ottimo! Com'è andato il volo?",
+      "incorrectItalian": "No, è il volo. Il viaggio è l'esperienza completa.",
+      "correctEnglish": "Great! How was the flight?",
+      "incorrectEnglish": "No, it's the flight. Journey is the whole experience."
+    }
   },
   {
-    "choicesItalian": ["perfetto", "brutto", "cattivo", "sbagliato"],
-    "choicesEnglish": ["perfect", "ugly", "bad", "wrong"],
-    "correctAnswerItalian": "perfetto",
-    "correctAnswerEnglish": "perfect",
-    "feedbackItalian": "Perfetto significa senza errori.",
-    "feedbackEnglish": "Perfect means without errors."
+    "choicesItalian": ["Scalo", "Sosta", "Fermata", "Arrivo"],
+    "choicesEnglish": ["Layover", "Stop", "Stopover", "Arrival"],
+    "correctAnswerItalian": "Scalo",
+    "correctAnswerEnglish": "Layover",
+    "feedback": {
+      "correctItalian": "Giusto! Ho fatto uno scalo di tre ore a Roma.",
+      "incorrectItalian": "No, è scalo. L'arrivo è la fine del viaggio.",
+      "correctEnglish": "Right! I had a three-hour layover in Rome.",
+      "incorrectEnglish": "No, it's layover. Arrival is the end of the trip."
+    }
   },
   {
-    "choicesItalian": ["cambiare", "mantenere", "fissare", "comprare"],
-    "choicesEnglish": ["to change", "to keep", "to fix", "to buy"],
-    "correctAnswerItalian": "cambiare",
-    "correctAnswerEnglish": "to change",
-    "feedbackItalian": "Vorrei cambiare degli euro.",
-    "feedbackEnglish": "I would like to change some euros."
+    "choicesItalian": ["Connessione", "Collegamento", "Wifi", "Rete"],
+    "choicesEnglish": ["Connection", "Link", "Wifi", "Network"],
+    "correctAnswerItalian": "Wifi",
+    "correctAnswerEnglish": "Wifi",
+    "feedback": {
+      "correctItalian": "Sì! C'è il wifi gratuito in aeroporto?",
+      "incorrectItalian": "No, è il wifi. La connessione può essere anche fisica.",
+      "correctEnglish": "Yes! Is there free wifi at the airport?",
+      "incorrectEnglish": "No, it's the wifi. A connection can also be physical."
+    }
   },
   {
-    "choicesItalian": ["valuta", "moneta", "soldi", "cambio"],
-    "choicesEnglish": ["currency", "coin", "money", "exchange"],
-    "correctAnswerItalian": "valuta",
-    "correctAnswerEnglish": "currency",
-    "feedbackItalian": "La valuta è il denaro di un paese.",
-    "feedbackEnglish": "Currency is the money of a country."
+    "choicesItalian": ["Password", "Codice", "Chiave", "Segnale"],
+    "choicesEnglish": ["Password", "Code", "Key", "Signal"],
+    "correctAnswerItalian": "Password",
+    "correctAnswerEnglish": "Password",
+    "feedback": {
+      "correctItalian": "Esatto! Qual è la password per internet?",
+      "incorrectItalian": "No, è la password. La chiave apre le porte.",
+      "correctEnglish": "Exactly! What is the password for the internet?",
+      "incorrectEnglish": "No, it's the password. A key opens doors."
+    }
   },
   {
-    "choicesItalian": ["dollari", "euro", "pesos", "rubli"],
-    "choicesEnglish": ["dollars", "euros", "pesos", "rubles"],
-    "correctAnswerItalian": "dollari",
-    "correctAnswerEnglish": "dollars",
-    "feedbackItalian": "I dollari sono la valuta americana.",
-    "feedbackEnglish": "Dollars are the American currency."
+    "choicesItalian": ["Bagaglio a mano", "Valigia", "Zaino", "Borsone"],
+    "choicesEnglish": ["Carry-on luggage", "Suitcase", "Backpack", "Duffel bag"],
+    "correctAnswerItalian": "Bagaglio a mano",
+    "correctAnswerEnglish": "Carry-on luggage",
+    "feedback": {
+      "correctItalian": "Giusto! Il bagaglio a mano si porta in aereo con sé.",
+      "incorrectItalian": "No, è il bagaglio a mano. Lo zaino è più generico.",
+      "correctEnglish": "Right! Carry-on luggage is taken on the plane with you.",
+      "incorrectEnglish": "No, it's carry-on. A backpack is more generic."
+    }
   },
   {
-    "choicesItalian": ["fissa", "variabile", "alta", "bassa"],
-    "choicesEnglish": ["fixed", "variable", "high", "low"],
-    "correctAnswerItalian": "fissa",
-    "correctAnswerEnglish": "fixed",
-    "feedbackItalian": "La commissione è fissa.",
-    "feedbackEnglish": "The fee is fixed."
+    "choicesItalian": ["Personale", "Staff", "Impiegati", "Equipaggio"],
+    "choicesEnglish": ["Personnel", "Staff", "Employees", "Crew"],
+    "correctAnswerItalian": "Personale",
+    "correctAnswerEnglish": "Personnel",
+    "feedback": {
+      "correctItalian": "Sì! Chiedi al personale di terra dove andare.",
+      "incorrectItalian": "No, è il personale. L'equipaggio lavora sull'aereo.",
+      "correctEnglish": "Yes! Ask the ground personnel where to go.",
+      "incorrectEnglish": "No, it's personnel. The crew works on the plane."
+    }
   },
   {
-    "choicesItalian": ["documento", "libro", "foglio", "giornale"],
-    "choicesEnglish": ["document", "book", "sheet", "newspaper"],
-    "correctAnswerItalian": "documento",
-    "correctAnswerEnglish": "document",
-    "feedbackItalian": "Serve un documento per il cambio.",
-    "feedbackEnglish": "A document is needed for the exchange."
+    "choicesItalian": ["Varco", "Passaggio", "Porta", "Uscita"],
+    "choicesEnglish": ["Gate", "Passage", "Door", "Exit"],
+    "correctAnswerItalian": "Varco",
+    "correctAnswerEnglish": "Gate",
+    "feedback": {
+      "correctItalian": "Esatto! Supera il varco di sicurezza.",
+      "incorrectItalian": "No, è il varco. La porta è quella di casa.",
+      "correctEnglish": "Exactly! Go through the security gate.",
+      "incorrectEnglish": "No, it's the gate. A door is what you have at home."
+    }
   },
   {
-    "choicesItalian": ["informazioni", "domande", "risposte", "scuse"],
-    "choicesEnglish": ["information", "questions", "answers", "excuses"],
-    "correctAnswerItalian": "informazioni",
-    "correctAnswerEnglish": "information",
-    "feedbackItalian": "L'ufficio informazioni aiuta i turisti.",
-    "feedbackEnglish": "The information office helps tourists."
+    "choicesItalian": ["Metropolitana", "Metro", "Sottoterra", "Treno"],
+    "choicesEnglish": ["Metropolitan", "Metro", "Underground", "Train"],
+    "correctAnswerItalian": "Metropolitana",
+    "correctAnswerEnglish": "Metropolitan",
+    "feedback": {
+      "correctItalian": "Giusto! C'è la metropolitana che porta in centro?",
+      "incorrectItalian": "No, è la metropolitana. Il treno va tra le città.",
+      "correctEnglish": "Right! Is there a metro that goes to the center?",
+      "incorrectEnglish": "No, it's the metro. A train goes between cities."
+    }
   },
   {
-    "choicesItalian": ["macchinetta", "macchina", "treno", "bus"],
-    "choicesEnglish": ["vending machine", "car", "train", "bus"],
-    "correctAnswerItalian": "macchinetta",
-    "correctAnswerEnglish": "vending machine",
-    "feedbackItalian": "Usi la macchinetta per i biglietti.",
-    "feedbackEnglish": "Use the machine for tickets."
+    "choicesItalian": ["Città", "Centro", "Paese", "Borgo"],
+    "choicesEnglish": ["City", "Center", "Village", "Hamlet"],
+    "correctAnswerItalian": "Città",
+    "correctAnswerEnglish": "City",
+    "feedback": {
+      "correctItalian": "Sì! Quanto dista l'aeroporto dalla città?",
+      "incorrectItalian": "No, è la città. Il borgo è molto piccolo.",
+      "correctEnglish": "Yes! How far is the airport from the city?",
+      "incorrectEnglish": "No, it's the city. A 'borgo' is very small."
+    }
   },
   {
-    "choicesItalian": ["dietro", "davanti", "sopra", "sotto"],
-    "choicesEnglish": ["behind", "in front of", "above", "below"],
-    "correctAnswerItalian": "dietro",
-    "correctAnswerEnglish": "behind",
-    "feedbackItalian": "La tabaccheria è dietro l'angolo.",
-    "feedbackEnglish": "The tobacco shop is behind the corner."
+    "choicesItalian": ["Distanza", "Lontananza", "Spazio", "Tragitto"],
+    "choicesEnglish": ["Distance", "Remoteness", "Space", "Journey"],
+    "correctAnswerItalian": "Distanza",
+    "correctAnswerEnglish": "Distance",
+    "feedback": {
+      "correctItalian": "Esatto! La distanza è breve, circa dieci chilometri.",
+      "incorrectItalian": "No, è la distanza. Il tragitto è il percorso che fai.",
+      "correctEnglish": "Exactly! The distance is short, about ten kilometers.",
+      "incorrectEnglish": "No, it's distance. The journey is the path you take."
+    }
   },
   {
-    "choicesItalian": ["gentile", "maleducato", "serio", "allegro"],
-    "choicesEnglish": ["kind", "rude", "serious", "cheerful"],
-    "correctAnswerItalian": "gentile",
-    "correctAnswerEnglish": "kind",
-    "feedbackItalian": "L'impiegato è stato molto gentile.",
-    "feedbackEnglish": "The clerk was very kind."
+    "choicesItalian": ["Chilometri", "Metri", "Miglia", "Passi"],
+    "choicesEnglish": ["Kilometers", "Meters", "Miles", "Steps"],
+    "correctAnswerItalian": "Chilometri",
+    "correctAnswerEnglish": "Kilometers",
+    "feedback": {
+      "correctItalian": "Ottimo! In Italia usiamo i chilometri per le distanze.",
+      "incorrectItalian": "No, sono chilometri. Le miglia si usano in altri paesi.",
+      "correctEnglish": "Great! In Italy, we use kilometers for distances.",
+      "incorrectEnglish": "No, it's kilometers. Miles are used in other countries."
+    }
   },
   {
-    "choicesItalian": ["giornata", "notte", "mattina", "sera"],
-    "choicesEnglish": ["day", "night", "morning", "evening"],
-    "correctAnswerItalian": "giornata",
-    "correctAnswerEnglish": "day",
-    "feedbackItalian": "Buona giornata è un saluto d'augurio.",
-    "feedbackEnglish": "Buona giornata is a well-wishing greeting."
+    "choicesItalian": ["Costo", "Prezzo", "Valore", "Importo"],
+    "choicesEnglish": ["Cost", "Price", "Value", "Amount"],
+    "correctAnswerItalian": "Costo",
+    "correctAnswerEnglish": "Cost",
+    "feedback": {
+      "correctItalian": "Giusto! Qual è il costo totale del biglietto?",
+      "incorrectItalian": "No, è il costo. Il valore è l'importanza di una cosa.",
+      "correctEnglish": "Right! What is the total cost of the ticket?",
+      "incorrectEnglish": "No, it's the cost. Value is the importance of something."
+    }
   }
 ]
