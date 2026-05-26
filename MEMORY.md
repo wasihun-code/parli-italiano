@@ -10,8 +10,23 @@
 - health ✅
 - social ✅
 - workstudy ✅
+- miscellaneous ✅
+- tech ✅
 
 ## Completed Scenarios
+- asking_for_help ✅ (upgraded, miscellaneous)
+- explaining_a_mistake ✅ (upgraded, miscellaneous)
+- police_report ✅ (upgraded, miscellaneous)
+- talking_about_money ✅ (upgraded, miscellaneous)
+- time_and_dates ✅ (upgraded, miscellaneous)
+- atm_machine ✅ (upgraded, tech)
+- buying_a_sim_card ✅ (upgraded, tech)
+- charging_devices ✅ (upgraded, tech)
+- online_booking ✅ (upgraded, tech)
+- phone_repair ✅ (upgraded, tech)
+- using_a_map_app ✅ (upgraded, tech)
+- video_call ✅ (upgraded, tech)
+- wi_fi_problem ✅ (upgraded, tech)
 - asking_for_clarification ✅ (upgraded, workstudy)
 - coworking_space ✅ (upgraded, workstudy)
 - email_follow_up ✅ (validated, workstudy)
@@ -111,16 +126,14 @@
 - souvenir_shop ✅ (upgraded, shopping)
 
 ## Categories Requiring Audit
-- miscellaneous (asking_for_help, explaining_a_mistake, police_report, talking_about_money, time_and_dates)
-- tech (atm_machine, sim_card, etc.)
 - verbs (are, ere, ire)
 - adjectives
 - reflexive
 - animals
 
 ## Known Quality Problems
-- missing four-part feedback in older datasets (miscellaneous, tech, verbs, etc.)
-- undersized datasets in older scenarios (miscellaneous, tech, etc.)
+- missing four-part feedback in older datasets (verbs, adjectives, etc.)
+- undersized datasets in older scenarios (verbs, adjectives, etc.)
 
 ## Important Architectural Decisions
 - sentence stage should feel spoken

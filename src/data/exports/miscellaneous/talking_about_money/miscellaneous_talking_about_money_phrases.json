@@ -1,104 +1,1252 @@
 [
   {
-    "id": "s108-p5",
-    "italian": "Hai una moneta?",
-    "english": "Do you have a coin?",
+    "id": "s110-p1",
+    "italian": "Quanto costa?",
+    "english": "How much does it cost?",
     "type": "phrase",
-    "choices": [
-      "Mi manca un centesimo.",
-      "Costa dieci euro.",
-      "Hai una moneta?",
-      "È molto economico."
+    "choicesItalian": [
+      "Vorrei prelevare cento euro.",
+      "Quanto costa?",
+      "Mi mancano due euro.",
+      "Qual è il tasso di cambio?"
     ],
-    "correctAnswer": "Hai una moneta?",
+    "choicesEnglish": [
+      "I would like to withdraw one hundred euros.",
+      "How much does it cost?",
+      "I'm missing two euros.",
+      "What is the exchange rate?"
+    ],
+    "correctAnswer": "Quanto costa?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Hai una moneta?\"."
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Quanto costa?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"How much does it cost?\"."
     }
   },
   {
-    "id": "s108-p1",
-    "italian": "Costa dieci euro.",
-    "english": "It costs ten euros.",
+    "id": "s110-p2",
+    "italian": "È troppo caro.",
+    "english": "It's too expensive.",
     "type": "phrase",
-    "choices": [
-      "Hai una moneta?",
+    "choicesItalian": [
+      "Il conto, per favore.",
+      "Ho bisogno di un prestito.",
+      "Avete sconti?",
+      "È troppo caro."
+    ],
+    "choicesEnglish": [
+      "The bill, please.",
+      "I need a loan.",
+      "Do you have discounts?",
+      "It's too expensive."
+    ],
+    "correctAnswer": "È troppo caro.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"È troppo caro.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"It's too expensive.\"."
+    }
+  },
+  {
+    "id": "s110-p3",
+    "italian": "Avete sconti?",
+    "english": "Do you have discounts?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Avete sconti?",
+      "Ti faccio un bonifico.",
+      "Dov'è l'ufficio di cambio?",
+      "Pago io per tutti."
+    ],
+    "choicesEnglish": [
+      "Do you have discounts?",
+      "I'll make a bank transfer to you.",
+      "Where is the exchange office?",
+      "I'll pay for everyone."
+    ],
+    "correctAnswer": "Avete sconti?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Avete sconti?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Do you have discounts?\"."
+    }
+  },
+  {
+    "id": "s110-p4",
+    "italian": "Posso pagare con la carta?",
+    "english": "Can I pay with the card?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Posso pagare con la carta?",
+      "Ecco i tuoi soldi.",
+      "Ci sono commissioni?",
+      "Ecco lo scontrino."
+    ],
+    "choicesEnglish": [
+      "Can I pay with the card?",
+      "Here is your money.",
+      "Are there fees?",
+      "Here is the receipt."
+    ],
+    "correctAnswer": "Posso pagare con la carta?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Posso pagare con la carta?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Can I pay with the card?\"."
+    }
+  },
+  {
+    "id": "s110-p5",
+    "italian": "Accettate solo contanti?",
+    "english": "Do you only accept cash?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Il bancomat ha mangiato la carta.",
+      "Accettate solo contanti?",
+      "Mi mancano due euro.",
+      "Quanto costa?"
+    ],
+    "choicesEnglish": [
+      "The ATM ate the card.",
+      "Do you only accept cash?",
+      "I'm missing two euros.",
+      "How much does it cost?"
+    ],
+    "correctAnswer": "Accettate solo contanti?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Accettate solo contanti?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Do you only accept cash?\"."
+    }
+  },
+  {
+    "id": "s110-p6",
+    "italian": "Dov'è un bancomat?",
+    "english": "Where is an ATM?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dov'è un bancomat?",
+      "Qual è il tasso di cambio?",
+      "È un buon prezzo.",
+      "Ho bisogno di un prestito."
+    ],
+    "choicesEnglish": [
+      "Where is an ATM?",
+      "What is the exchange rate?",
+      "It's a good price.",
+      "I need a loan."
+    ],
+    "correctAnswer": "Dov'è un bancomat?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Dov'è un bancomat?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Where is an ATM?\"."
+    }
+  },
+  {
+    "id": "s110-p7",
+    "italian": "Vorrei prelevare cento euro.",
+    "english": "I would like to withdraw one hundred euros.",
+    "type": "phrase",
+    "choicesItalian": [
+      "È un investimento.",
+      "Ho bisogno di un prestito.",
+      "Qual è il tuo IBAN?",
+      "Vorrei prelevare cento euro."
+    ],
+    "choicesEnglish": [
+      "It's an investment.",
+      "I need a loan.",
+      "What is your IBAN?",
+      "I would like to withdraw one hundred euros."
+    ],
+    "correctAnswer": "Vorrei prelevare cento euro.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Vorrei prelevare cento euro.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I would like to withdraw one hundred euros.\"."
+    }
+  },
+  {
+    "id": "s110-p8",
+    "italian": "Può cambiarmi questa banconota?",
+    "english": "Can you change this banknote for me?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dov'è un bancomat?",
+      "Può cambiarmi questa banconota?",
+      "Ti faccio un bonifico.",
+      "È troppo caro."
+    ],
+    "choicesEnglish": [
+      "Where is an ATM?",
+      "Can you change this banknote for me?",
+      "I'll make a bank transfer to you.",
+      "It's too expensive."
+    ],
+    "correctAnswer": "Può cambiarmi questa banconota?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Può cambiarmi questa banconota?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Can you change this banknote for me?\"."
+    }
+  },
+  {
+    "id": "s110-p9",
+    "italian": "Mi può dare degli spiccioli?",
+    "english": "Can you give me some small change?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Avete sconti?",
+      "Mi può dare degli spiccioli?",
+      "Non preoccuparti dei soldi.",
+      "Ho bisogno di un prestito."
+    ],
+    "choicesEnglish": [
+      "Do you have discounts?",
+      "Can you give me some small change?",
+      "Don't worry about the money.",
+      "I need a loan."
+    ],
+    "correctAnswer": "Mi può dare degli spiccioli?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Mi può dare degli spiccioli?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Can you give me some small change?\"."
+    }
+  },
+  {
+    "id": "s110-p10",
+    "italian": "Tenga pure il resto.",
+    "english": "Keep the change.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ci sono commissioni?",
+      "È un investimento.",
+      "Tenga pure il resto.",
+      "Può cambiarmi questa banconota?"
+    ],
+    "choicesEnglish": [
+      "Are there fees?",
+      "It's an investment.",
+      "Keep the change.",
+      "Can you change this banknote for me?"
+    ],
+    "correctAnswer": "Tenga pure il resto.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Tenga pure il resto.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Keep the change.\"."
+    }
+  },
+  {
+    "id": "s110-p11",
+    "italian": "Il conto, per favore.",
+    "english": "The bill, please.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Le restituisco i soldi domani.",
+      "Quanto costa l'affitto?",
+      "È compresa la mancia?",
+      "Il conto, per favore."
+    ],
+    "choicesEnglish": [
+      "I'll give the money back to you tomorrow.",
+      "How much is the rent?",
+      "Is the tip included?",
+      "The bill, please."
+    ],
+    "correctAnswer": "Il conto, per favore.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Il conto, per favore.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"The bill, please.\"."
+    }
+  },
+  {
+    "id": "s110-p12",
+    "italian": "Dividiamo il conto?",
+    "english": "Shall we split the bill?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ti faccio un bonifico.",
+      "Dividiamo il conto?",
+      "Quanto ti devo?",
+      "Mi mancano due euro."
+    ],
+    "choicesEnglish": [
+      "I'll make a bank transfer to you.",
+      "Shall we split the bill?",
+      "How much do I owe you?",
+      "I'm missing two euros."
+    ],
+    "correctAnswer": "Dividiamo il conto?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Dividiamo il conto?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Shall we split the bill?\"."
+    }
+  },
+  {
+    "id": "s110-p13",
+    "italian": "Paghiamo separati.",
+    "english": "We are paying separately.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Avete sconti?",
+      "Grazie mille.",
+      "Paghiamo separati.",
+      "Non preoccuparti dei soldi."
+    ],
+    "choicesEnglish": [
+      "Do you have discounts?",
+      "Thanks a lot.",
+      "We are paying separately.",
+      "Don't worry about the money."
+    ],
+    "correctAnswer": "Paghiamo separati.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Paghiamo separati.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"We are paying separately.\"."
+    }
+  },
+  {
+    "id": "s110-p14",
+    "italian": "Ho dimenticato il portafoglio.",
+    "english": "I forgot my wallet.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Sono al verde.",
+      "Ho molti debiti.",
+      "Voglio risparmiare un po'.",
+      "Ho dimenticato il portafoglio."
+    ],
+    "choicesEnglish": [
+      "I'm broke (literally: in the green).",
+      "I have many debts.",
+      "I want to save a bit.",
+      "I forgot my wallet."
+    ],
+    "correctAnswer": "Ho dimenticato il portafoglio.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Ho dimenticato il portafoglio.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I forgot my wallet.\"."
+    }
+  },
+  {
+    "id": "s110-p15",
+    "italian": "Mi può prestare dieci euro?",
+    "english": "Can you lend me ten euros?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dov'è un bancomat?",
+      "Mi può prestare dieci euro?",
+      "Sei a posto così.",
+      "Controlla il conto."
+    ],
+    "choicesEnglish": [
+      "Where is an ATM?",
+      "Can you lend me ten euros?",
+      "You're all set / We're even.",
+      "Check the account."
+    ],
+    "correctAnswer": "Mi può prestare dieci euro?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Mi può prestare dieci euro?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Can you lend me ten euros?\"."
+    }
+  },
+  {
+    "id": "s110-p16",
+    "italian": "Le restituisco i soldi domani.",
+    "english": "I'll give the money back to you tomorrow.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ho molti debiti.",
+      "È troppo caro.",
+      "Le restituisco i soldi domani.",
+      "Dividiamo il conto?"
+    ],
+    "choicesEnglish": [
+      "I have many debts.",
+      "It's too expensive.",
+      "I'll give the money back to you tomorrow.",
+      "Shall we split the bill?"
+    ],
+    "correctAnswer": "Le restituisco i soldi domani.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Le restituisco i soldi domani.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I'll give the money back to you tomorrow.\"."
+    }
+  },
+  {
+    "id": "s110-p17",
+    "italian": "Qual è il tasso di cambio?",
+    "english": "What is the exchange rate?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Può cambiarmi questa banconota?",
+      "È un buon prezzo.",
+      "La mia carta non funziona.",
+      "Qual è il tasso di cambio?"
+    ],
+    "choicesEnglish": [
+      "Can you change this banknote for me?",
+      "It's a good price.",
+      "My card isn't working.",
+      "What is the exchange rate?"
+    ],
+    "correctAnswer": "Qual è il tasso di cambio?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Qual è il tasso di cambio?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"What is the exchange rate?\"."
+    }
+  },
+  {
+    "id": "s110-p18",
+    "italian": "Ci sono commissioni?",
+    "english": "Are there fees?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ci sono commissioni?",
+      "Dividiamo il conto?",
+      "Devo cambiare i dollari in euro.",
+      "Non preoccuparti dei soldi."
+    ],
+    "choicesEnglish": [
+      "Are there fees?",
+      "Shall we split the bill?",
+      "I need to change dollars into euros.",
+      "Don't worry about the money."
+    ],
+    "correctAnswer": "Ci sono commissioni?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Ci sono commissioni?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Are there fees?\"."
+    }
+  },
+  {
+    "id": "s110-p19",
+    "italian": "Ecco lo scontrino.",
+    "english": "Here is the receipt.",
+    "type": "phrase",
+    "choicesItalian": [
       "È molto economico.",
-      "Costa dieci euro.",
-      "È una banconota da venti."
+      "Ecco lo scontrino.",
+      "La mia carta non funziona.",
+      "Non preoccuparti dei soldi."
     ],
-    "correctAnswer": "Costa dieci euro.",
+    "choicesEnglish": [
+      "It's very cheap.",
+      "Here is the receipt.",
+      "My card isn't working.",
+      "Don't worry about the money."
+    ],
+    "correctAnswer": "Ecco lo scontrino.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Costa dieci euro.\"."
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Ecco lo scontrino.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Here is the receipt.\"."
     }
   },
   {
-    "id": "s108-p6",
+    "id": "s110-p20",
+    "italian": "Grazie mille.",
+    "english": "Thanks a lot.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Grazie mille.",
+      "I soldi non sono tutto.",
+      "Ho bisogno di un prestito.",
+      "Paghiamo separati."
+    ],
+    "choicesEnglish": [
+      "Thanks a lot.",
+      "Money isn't everything.",
+      "I need a loan.",
+      "We are paying separately."
+    ],
+    "correctAnswer": "Grazie mille.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Grazie mille.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Thanks a lot.\"."
+    }
+  },
+  {
+    "id": "s110-p21",
+    "italian": "Non ho contanti con me.",
+    "english": "I don't have cash with me.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Pago io per tutti.",
+      "Non ho contanti con me.",
+      "Ho dimenticato il portafoglio.",
+      "Qual è il tuo IBAN?"
+    ],
+    "choicesEnglish": [
+      "I'll pay for everyone.",
+      "I don't have cash with me.",
+      "I forgot my wallet.",
+      "What is your IBAN?"
+    ],
+    "correctAnswer": "Non ho contanti con me.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Non ho contanti con me.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I don't have cash with me.\"."
+    }
+  },
+  {
+    "id": "s110-p22",
+    "italian": "La mia carta non funziona.",
+    "english": "My card isn't working.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Sei a posto così.",
+      "Sono al verde.",
+      "Ho dimenticato il portafoglio.",
+      "La mia carta non funziona."
+    ],
+    "choicesEnglish": [
+      "You're all set / We're even.",
+      "I'm broke (literally: in the green).",
+      "I forgot my wallet.",
+      "My card isn't working."
+    ],
+    "correctAnswer": "La mia carta non funziona.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"La mia carta non funziona.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"My card isn't working.\"."
+    }
+  },
+  {
+    "id": "s110-p23",
+    "italian": "Il bancomat ha mangiato la carta.",
+    "english": "The ATM ate the card.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Voglio guadagnare di più.",
+      "Il bancomat ha mangiato la carta.",
+      "Voglio risparmiare un po'.",
+      "Devo cambiare i dollari in euro."
+    ],
+    "choicesEnglish": [
+      "I want to earn more.",
+      "The ATM ate the card.",
+      "I want to save a bit.",
+      "I need to change dollars into euros."
+    ],
+    "correctAnswer": "Il bancomat ha mangiato la carta.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Il bancomat ha mangiato la carta.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"The ATM ate the card.\"."
+    }
+  },
+  {
+    "id": "s110-p24",
+    "italian": "Devo cambiare i dollari in euro.",
+    "english": "I need to change dollars into euros.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dov'è un bancomat?",
+      "Quanto costa l'affitto?",
+      "Tenga pure il resto.",
+      "Devo cambiare i dollari in euro."
+    ],
+    "choicesEnglish": [
+      "Where is an ATM?",
+      "How much is the rent?",
+      "Keep the change.",
+      "I need to change dollars into euros."
+    ],
+    "correctAnswer": "Devo cambiare i dollari in euro.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Devo cambiare i dollari in euro.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I need to change dollars into euros.\"."
+    }
+  },
+  {
+    "id": "s110-p25",
+    "italian": "Dov'è l'ufficio di cambio?",
+    "english": "Where is the exchange office?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dov'è un bancomat?",
+      "Avete sconti?",
+      "Ho speso troppo oggi.",
+      "Dov'è l'ufficio di cambio?"
+    ],
+    "choicesEnglish": [
+      "Where is an ATM?",
+      "Do you have discounts?",
+      "I spent too much today.",
+      "Where is the exchange office?"
+    ],
+    "correctAnswer": "Dov'è l'ufficio di cambio?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Dov'è l'ufficio di cambio?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Where is the exchange office?\"."
+    }
+  },
+  {
+    "id": "s110-p26",
+    "italian": "Quanto costa l'affitto?",
+    "english": "How much is the rent?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Quanto costa l'affitto?",
+      "Quanto costa?",
+      "Pago io per tutti.",
+      "Controlla il conto."
+    ],
+    "choicesEnglish": [
+      "How much is the rent?",
+      "How much does it cost?",
+      "I'll pay for everyone.",
+      "Check the account."
+    ],
+    "correctAnswer": "Quanto costa l'affitto?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Quanto costa l'affitto?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"How much is the rent?\"."
+    }
+  },
+  {
+    "id": "s110-p27",
+    "italian": "È un buon prezzo.",
+    "english": "It's a good price.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Grazie mille.",
+      "È un buon prezzo.",
+      "Controlla il conto.",
+      "Il conto, per favore."
+    ],
+    "choicesEnglish": [
+      "Thanks a lot.",
+      "It's a good price.",
+      "Check the account.",
+      "The bill, please."
+    ],
+    "correctAnswer": "È un buon prezzo.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"È un buon prezzo.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"It's a good price.\"."
+    }
+  },
+  {
+    "id": "s110-p28",
     "italian": "È molto economico.",
-    "english": "It is very cheap.",
+    "english": "It's very cheap.",
     "type": "phrase",
-    "choices": [
-      "Posso avere il cambio?",
+    "choicesItalian": [
+      "È un buon prezzo.",
       "È molto economico.",
-      "Costa dieci euro.",
-      "È una banconota da venti."
+      "La banca è chiusa.",
+      "Qual è il tuo IBAN?"
+    ],
+    "choicesEnglish": [
+      "It's a good price.",
+      "It's very cheap.",
+      "The bank is closed.",
+      "What is your IBAN?"
     ],
     "correctAnswer": "È molto economico.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"È molto economico.\"."
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"È molto economico.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"It's very cheap.\"."
     }
   },
   {
-    "id": "s108-p2",
-    "italian": "Mi manca un centesimo.",
-    "english": "I am missing a cent.",
+    "id": "s110-p29",
+    "italian": "Voglio risparmiare un po'.",
+    "english": "I want to save a bit.",
     "type": "phrase",
-    "choices": [
-      "È una banconota da venti.",
-      "È molto economico.",
-      "Posso avere il cambio?",
-      "Mi manca un centesimo."
+    "choicesItalian": [
+      "È un investimento.",
+      "Voglio risparmiare un po'.",
+      "Voglio guadagnare di più.",
+      "Dov'è un bancomat?"
     ],
-    "correctAnswer": "Mi manca un centesimo.",
+    "choicesEnglish": [
+      "It's an investment.",
+      "I want to save a bit.",
+      "I want to earn more.",
+      "Where is an ATM?"
+    ],
+    "correctAnswer": "Voglio risparmiare un po'.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi manca un centesimo.\"."
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Voglio risparmiare un po'.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I want to save a bit.\"."
     }
   },
   {
-    "id": "s108-p3",
-    "italian": "Posso avere il cambio?",
-    "english": "Can I have the change?",
+    "id": "s110-p30",
+    "italian": "Ho speso troppo oggi.",
+    "english": "I spent too much today.",
     "type": "phrase",
-    "choices": [
-      "Mi manca un centesimo.",
-      "È molto economico.",
-      "Posso avere il cambio?",
-      "Costa dieci euro."
+    "choicesItalian": [
+      "Vorrei prelevare cento euro.",
+      "Ho speso troppo oggi.",
+      "Sono al verde.",
+      "Ho dimenticato il portafoglio."
     ],
-    "correctAnswer": "Posso avere il cambio?",
+    "choicesEnglish": [
+      "I would like to withdraw one hundred euros.",
+      "I spent too much today.",
+      "I'm broke (literally: in the green).",
+      "I forgot my wallet."
+    ],
+    "correctAnswer": "Ho speso troppo oggi.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Posso avere il cambio?\"."
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Ho speso troppo oggi.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I spent too much today.\"."
     }
   },
   {
-    "id": "s108-p4",
-    "italian": "È una banconota da venti.",
-    "english": "It is a twenty banknote.",
+    "id": "s110-p31",
+    "italian": "Mi mancano due euro.",
+    "english": "I'm missing two euros.",
     "type": "phrase",
-    "choices": [
-      "Costa dieci euro.",
-      "È una banconota da venti.",
-      "È molto economico.",
-      "Hai una moneta?"
+    "choicesItalian": [
+      "La banca è chiusa.",
+      "Ti faccio un bonifico.",
+      "Pago io per tutti.",
+      "Mi mancano due euro."
     ],
-    "correctAnswer": "È una banconota da venti.",
+    "choicesEnglish": [
+      "The bank is closed.",
+      "I'll make a bank transfer to you.",
+      "I'll pay for everyone.",
+      "I'm missing two euros."
+    ],
+    "correctAnswer": "Mi mancano due euro.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"È una banconota da venti.\"."
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Mi mancano due euro.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I'm missing two euros.\"."
+    }
+  },
+  {
+    "id": "s110-p32",
+    "italian": "Può farmi uno sconto?",
+    "english": "Can you give me a discount?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Può farmi uno sconto?",
+      "Quanto costa?",
+      "Ho bisogno di un prestito.",
+      "Controlla il conto."
+    ],
+    "choicesEnglish": [
+      "Can you give me a discount?",
+      "How much does it cost?",
+      "I need a loan.",
+      "Check the account."
+    ],
+    "correctAnswer": "Può farmi uno sconto?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Può farmi uno sconto?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Can you give me a discount?\"."
+    }
+  },
+  {
+    "id": "s110-p33",
+    "italian": "È compresa la mancia?",
+    "english": "Is the tip included?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Devo cambiare i dollari in euro.",
+      "Qual è il tuo IBAN?",
+      "Le restituisco i soldi domani.",
+      "È compresa la mancia?"
+    ],
+    "choicesEnglish": [
+      "I need to change dollars into euros.",
+      "What is your IBAN?",
+      "I'll give the money back to you tomorrow.",
+      "Is the tip included?"
+    ],
+    "correctAnswer": "È compresa la mancia?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"È compresa la mancia?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Is the tip included?\"."
+    }
+  },
+  {
+    "id": "s110-p34",
+    "italian": "Pago io per tutti.",
+    "english": "I'll pay for everyone.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Pago io per tutti.",
+      "Ho dimenticato il portafoglio.",
+      "Sei a posto così.",
+      "Avete sconti?"
+    ],
+    "choicesEnglish": [
+      "I'll pay for everyone.",
+      "I forgot my wallet.",
+      "You're all set / We're even.",
+      "Do you have discounts?"
+    ],
+    "correctAnswer": "Pago io per tutti.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Pago io per tutti.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I'll pay for everyone.\"."
+    }
+  },
+  {
+    "id": "s110-p35",
+    "italian": "Offro io!",
+    "english": "My treat! / I'm offering!",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dov'è un bancomat?",
+      "Ti faccio un bonifico.",
+      "Ecco i tuoi soldi.",
+      "Offro io!"
+    ],
+    "choicesEnglish": [
+      "Where is an ATM?",
+      "I'll make a bank transfer to you.",
+      "Here is your money.",
+      "My treat! / I'm offering!"
+    ],
+    "correctAnswer": "Offro io!",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Offro io!\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"My treat! / I'm offering!\"."
+    }
+  },
+  {
+    "id": "s110-p36",
+    "italian": "Facciamo a metà.",
+    "english": "Let's go halves.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Può farmi uno sconto?",
+      "Facciamo a metà.",
+      "Avete sconti?",
+      "Ecco lo scontrino."
+    ],
+    "choicesEnglish": [
+      "Can you give me a discount?",
+      "Let's go halves.",
+      "Do you have discounts?",
+      "Here is the receipt."
+    ],
+    "correctAnswer": "Facciamo a metà.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Facciamo a metà.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Let's go halves.\"."
+    }
+  },
+  {
+    "id": "s110-p37",
+    "italian": "Quanto ti devo?",
+    "english": "How much do I owe you?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Sono al verde.",
+      "Grazie mille.",
+      "Quanto ti devo?",
+      "Controlla il conto."
+    ],
+    "choicesEnglish": [
+      "I'm broke (literally: in the green).",
+      "Thanks a lot.",
+      "How much do I owe you?",
+      "Check the account."
+    ],
+    "correctAnswer": "Quanto ti devo?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Quanto ti devo?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"How much do I owe you?\"."
+    }
+  },
+  {
+    "id": "s110-p38",
+    "italian": "Ecco i tuoi soldi.",
+    "english": "Here is your money.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Posso pagare con la carta?",
+      "Ecco i tuoi soldi.",
+      "Facciamo a metà.",
+      "Ci sono commissioni?"
+    ],
+    "choicesEnglish": [
+      "Can I pay with the card?",
+      "Here is your money.",
+      "Let's go halves.",
+      "Are there fees?"
+    ],
+    "correctAnswer": "Ecco i tuoi soldi.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Ecco i tuoi soldi.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Here is your money.\"."
+    }
+  },
+  {
+    "id": "s110-p39",
+    "italian": "Sei a posto così.",
+    "english": "You're all set / We're even.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ho dimenticato il portafoglio.",
+      "Può cambiarmi questa banconota?",
+      "Sei a posto così.",
+      "Ecco lo scontrino."
+    ],
+    "choicesEnglish": [
+      "I forgot my wallet.",
+      "Can you change this banknote for me?",
+      "You're all set / We're even.",
+      "Here is the receipt."
+    ],
+    "correctAnswer": "Sei a posto così.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Sei a posto così.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"You're all set / We're even.\"."
+    }
+  },
+  {
+    "id": "s110-p40",
+    "italian": "Non preoccuparti dei soldi.",
+    "english": "Don't worry about the money.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Non ho contanti con me.",
+      "Può cambiarmi questa banconota?",
+      "Non preoccuparti dei soldi.",
+      "La mia carta non funziona."
+    ],
+    "choicesEnglish": [
+      "I don't have cash with me.",
+      "Can you change this banknote for me?",
+      "Don't worry about the money.",
+      "My card isn't working."
+    ],
+    "correctAnswer": "Non preoccuparti dei soldi.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Non preoccuparti dei soldi.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Don't worry about the money.\"."
+    }
+  },
+  {
+    "id": "s110-p41",
+    "italian": "È un investimento.",
+    "english": "It's an investment.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Qual è il tasso di cambio?",
+      "Mi può prestare dieci euro?",
+      "È un investimento.",
+      "Quanto ti devo?"
+    ],
+    "choicesEnglish": [
+      "What is the exchange rate?",
+      "Can you lend me ten euros?",
+      "It's an investment.",
+      "How much do I owe you?"
+    ],
+    "correctAnswer": "È un investimento.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"È un investimento.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"It's an investment.\"."
+    }
+  },
+  {
+    "id": "s110-p42",
+    "italian": "Ho bisogno di un prestito.",
+    "english": "I need a loan.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Grazie mille.",
+      "Mi mancano due euro.",
+      "La mia carta non funziona.",
+      "Ho bisogno di un prestito."
+    ],
+    "choicesEnglish": [
+      "Thanks a lot.",
+      "I'm missing two euros.",
+      "My card isn't working.",
+      "I need a loan."
+    ],
+    "correctAnswer": "Ho bisogno di un prestito.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Ho bisogno di un prestito.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I need a loan.\"."
+    }
+  },
+  {
+    "id": "s110-p43",
+    "italian": "La banca è chiusa.",
+    "english": "The bank is closed.",
+    "type": "phrase",
+    "choicesItalian": [
+      "La banca è chiusa.",
+      "Non preoccuparti dei soldi.",
+      "Quanto costa l'affitto?",
+      "Grazie mille."
+    ],
+    "choicesEnglish": [
+      "The bank is closed.",
+      "Don't worry about the money.",
+      "How much is the rent?",
+      "Thanks a lot."
+    ],
+    "correctAnswer": "La banca è chiusa.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"La banca è chiusa.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"The bank is closed.\"."
+    }
+  },
+  {
+    "id": "s110-p44",
+    "italian": "Qual è il tuo IBAN?",
+    "english": "What is your IBAN?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Quanto ti devo?",
+      "Qual è il tuo IBAN?",
+      "Dividiamo il conto?",
+      "Paghiamo separati."
+    ],
+    "choicesEnglish": [
+      "How much do I owe you?",
+      "What is your IBAN?",
+      "Shall we split the bill?",
+      "We are paying separately."
+    ],
+    "correctAnswer": "Qual è il tuo IBAN?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Qual è il tuo IBAN?\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"What is your IBAN?\"."
+    }
+  },
+  {
+    "id": "s110-p45",
+    "italian": "Ti faccio un bonifico.",
+    "english": "I'll make a bank transfer to you.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Grazie mille.",
+      "Ti faccio un bonifico.",
+      "I soldi non sono tutto.",
+      "Pago io per tutti."
+    ],
+    "choicesEnglish": [
+      "Thanks a lot.",
+      "I'll make a bank transfer to you.",
+      "Money isn't everything.",
+      "I'll pay for everyone."
+    ],
+    "correctAnswer": "Ti faccio un bonifico.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Ti faccio un bonifico.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I'll make a bank transfer to you.\"."
+    }
+  },
+  {
+    "id": "s110-p46",
+    "italian": "Controlla il conto.",
+    "english": "Check the account.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mi può prestare dieci euro?",
+      "Controlla il conto.",
+      "Vorrei prelevare cento euro.",
+      "Quanto ti devo?"
+    ],
+    "choicesEnglish": [
+      "Can you lend me ten euros?",
+      "Check the account.",
+      "I would like to withdraw one hundred euros.",
+      "How much do I owe you?"
+    ],
+    "correctAnswer": "Controlla il conto.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Controlla il conto.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Check the account.\"."
+    }
+  },
+  {
+    "id": "s110-p47",
+    "italian": "Sono al verde.",
+    "english": "I'm broke (literally: in the green).",
+    "type": "phrase",
+    "choicesItalian": [
+      "Grazie mille.",
+      "Qual è il tasso di cambio?",
+      "È troppo caro.",
+      "Sono al verde."
+    ],
+    "choicesEnglish": [
+      "Thanks a lot.",
+      "What is the exchange rate?",
+      "It's too expensive.",
+      "I'm broke (literally: in the green)."
+    ],
+    "correctAnswer": "Sono al verde.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Sono al verde.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I'm broke (literally: in the green).\"."
+    }
+  },
+  {
+    "id": "s110-p48",
+    "italian": "Ho molti debiti.",
+    "english": "I have many debts.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Ho speso troppo oggi.",
+      "Avete sconti?",
+      "I soldi non sono tutto.",
+      "Ho molti debiti."
+    ],
+    "choicesEnglish": [
+      "I spent too much today.",
+      "Do you have discounts?",
+      "Money isn't everything.",
+      "I have many debts."
+    ],
+    "correctAnswer": "Ho molti debiti.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Ho molti debiti.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I have many debts.\"."
+    }
+  },
+  {
+    "id": "s110-p49",
+    "italian": "Voglio guadagnare di più.",
+    "english": "I want to earn more.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Voglio guadagnare di più.",
+      "Avete sconti?",
+      "Accettate solo contanti?",
+      "Dividiamo il conto?"
+    ],
+    "choicesEnglish": [
+      "I want to earn more.",
+      "Do you have discounts?",
+      "Do you only accept cash?",
+      "Shall we split the bill?"
+    ],
+    "correctAnswer": "Voglio guadagnare di più.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"Voglio guadagnare di più.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"I want to earn more.\"."
+    }
+  },
+  {
+    "id": "s110-p50",
+    "italian": "I soldi non sono tutto.",
+    "english": "Money isn't everything.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Pago io per tutti.",
+      "Il bancomat ha mangiato la carta.",
+      "La banca è chiusa.",
+      "I soldi non sono tutto."
+    ],
+    "choicesEnglish": [
+      "I'll pay for everyone.",
+      "The ATM ate the card.",
+      "The bank is closed.",
+      "Money isn't everything."
+    ],
+    "correctAnswer": "I soldi non sono tutto.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa \"I soldi non sono tutto.\".",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means \"Money isn't everything.\"."
     }
   }
 ]

@@ -1,104 +1,752 @@
 [
   {
-    "id": "s105-p3",
-    "italian": "Controllo il conto.",
-    "english": "I check the account.",
+    "id": "atm-p1",
+    "italian": "Scusi, c'è un bancomat qui vicino?",
+    "english": "Excuse me, is there an ATM near here?",
     "type": "phrase",
-    "choices": [
-      "Qual è il mio saldo?",
-      "Controllo il conto.",
-      "La carta è inserita.",
-      "L'operazione è conclusa."
-    ],
-    "correctAnswer": "Controllo il conto.",
+    "choicesItalian": ["Scusi, c'è un bancomat qui vicino?", "Dove posso comprare una carta?", "Il telefono non funziona.", "C'è un ufficio postale?"],
+    "choicesEnglish": ["Excuse me, is there an ATM near here?", "Where can I buy a card?", "The phone is not working.", "Is there a post office?"],
+    "correctAnswer": "Scusi, c'è un bancomat qui vicino?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Controllo il conto.\"."
+      "correctItalian": "Esatto! Un modo perfetto per chiedere dove prelevare.",
+      "incorrectItalian": "No, devi chiedere del bancomat.",
+      "correctEnglish": "Exact! A perfect way to ask where to withdraw.",
+      "incorrectEnglish": "No, you need to ask about the ATM."
     }
   },
   {
-    "id": "s105-p6",
-    "italian": "L'operazione è conclusa.",
-    "english": "The operation is finished.",
+    "id": "atm-p2",
+    "italian": "Devo prelevare dei contanti.",
+    "english": "I need to withdraw some cash.",
     "type": "phrase",
-    "choices": [
-      "Dice che il pin è errato.",
-      "La carta è inserita.",
-      "Controllo il conto.",
-      "L'operazione è conclusa."
-    ],
-    "correctAnswer": "L'operazione è conclusa.",
+    "choicesItalian": ["Devo prelevare dei contanti.", "Voglio versare dei soldi.", "Ho perso la carta.", "Il PIN è sbagliato."],
+    "choicesEnglish": ["I need to withdraw some cash.", "I want to deposit some money.", "I lost the card.", "The PIN is wrong."],
+    "correctAnswer": "Devo prelevare dei contanti.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"L'operazione è conclusa.\"."
+      "correctItalian": "Bene! Questa è l'intenzione principale all'ATM.",
+      "incorrectItalian": "No, vuoi prelevare contanti.",
+      "correctEnglish": "Good! This is the main intention at the ATM.",
+      "incorrectEnglish": "No, you want to withdraw cash."
     }
   },
   {
-    "id": "s105-p4",
-    "italian": "La carta è inserita.",
-    "english": "The card is inserted.",
+    "id": "atm-p3",
+    "italian": "Inserisca la carta, per favore.",
+    "english": "Insert the card, please.",
     "type": "phrase",
-    "choices": [
-      "L'operazione è conclusa.",
-      "Dice che il pin è errato.",
-      "Controllo il conto.",
-      "La carta è inserita."
-    ],
-    "correctAnswer": "La carta è inserita.",
+    "choicesItalian": ["Inserisca la carta, per favore.", "Ritiri la ricevuta.", "Digiti il PIN.", "Scelga la lingua."],
+    "choicesEnglish": ["Insert the card, please.", "Collect the receipt.", "Type the PIN.", "Choose the language."],
+    "correctAnswer": "Inserisca la carta, per favore.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"La carta è inserita.\"."
+      "correctItalian": "Giusto! Spesso è la prima istruzione sullo schermo.",
+      "incorrectItalian": "No, devi inserire la carta.",
+      "correctEnglish": "Right! It's often the first instruction on the screen.",
+      "incorrectEnglish": "No, you must insert the card."
     }
   },
   {
-    "id": "s105-p1",
-    "italian": "Devo prelevare dei soldi.",
-    "english": "I need to withdraw some money.",
+    "id": "atm-p4",
+    "italian": "Digiti il suo codice PIN.",
+    "english": "Enter your PIN code.",
     "type": "phrase",
-    "choices": [
-      "Devo prelevare dei soldi.",
-      "Controllo il conto.",
-      "L'operazione è conclusa.",
-      "La carta è inserita."
-    ],
-    "correctAnswer": "Devo prelevare dei soldi.",
+    "choicesItalian": ["Digiti il suo codice PIN.", "Ritiri i contanti.", "Prenda lo scontrino.", "Attendere prego."],
+    "choicesEnglish": ["Enter your PIN code.", "Collect the cash.", "Take the receipt.", "Please wait."],
+    "correctAnswer": "Digiti il suo codice PIN.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Devo prelevare dei soldi.\"."
+      "correctItalian": "Esatto! Devi inserire il codice segreto.",
+      "incorrectItalian": "No, devi digitare il PIN.",
+      "correctEnglish": "Exact! You must enter the secret code.",
+      "incorrectEnglish": "No, you must type the PIN."
     }
   },
   {
-    "id": "s105-p2",
-    "italian": "Qual è il mio saldo?",
-    "english": "What is my balance?",
+    "id": "atm-p5",
+    "italian": "Qual è il limite di prelievo giornaliero?",
+    "english": "What is the daily withdrawal limit?",
     "type": "phrase",
-    "choices": [
-      "Qual è il mio saldo?",
-      "Controllo il conto.",
-      "Dice che il pin è errato.",
-      "La carta è inserita."
-    ],
-    "correctAnswer": "Qual è il mio saldo?",
+    "choicesItalian": ["Qual è il limite di prelievo giornaliero?", "Quanto costa la commissione?", "Posso avere la ricevuta?", "Il bancomat è rotto?"],
+    "choicesEnglish": ["What is the daily withdrawal limit?", "How much is the fee?", "Can I have the receipt?", "Is the ATM broken?"],
+    "correctAnswer": "Qual è il limite di prelievo giornaliero?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Qual è il mio saldo?\"."
+      "correctItalian": "Ottimo! Utile per sapere quanto puoi ritirare.",
+      "incorrectItalian": "No, chiedi del limite giornaliero.",
+      "correctEnglish": "Great! Useful to know how much you can withdraw.",
+      "incorrectEnglish": "No, you're asking about the daily limit."
     }
   },
   {
-    "id": "s105-p5",
-    "italian": "Dice che il pin è errato.",
-    "english": "It says the PIN is wrong.",
+    "id": "atm-p6",
+    "italian": "Vorrei controllare il saldo del mio conto.",
+    "english": "I would like to check my account balance.",
     "type": "phrase",
-    "choices": [
-      "Qual è il mio saldo?",
-      "Dice che il pin è errato.",
-      "La carta è inserita.",
-      "Controllo il conto."
-    ],
-    "correctAnswer": "Dice che il pin è errato.",
+    "choicesItalian": ["Vorrei controllare il saldo del mio conto.", "Voglio cambiare il PIN.", "Devo bloccare la carta.", "Vorrei versare assegni."],
+    "choicesEnglish": ["I would like to check my account balance.", "I want to change the PIN.", "I need to block the card.", "I would like to deposit checks."],
+    "correctAnswer": "Vorrei controllare il saldo del mio conto.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Dice che il pin è errato.\"."
+      "correctItalian": "Bene! Per sapere quanti soldi hai.",
+      "incorrectItalian": "No, vuoi vedere il saldo.",
+      "correctEnglish": "Good! To know how much money you have.",
+      "incorrectEnglish": "No, you want to see the balance."
+    }
+  },
+  {
+    "id": "atm-p7",
+    "italian": "Ci sono commissioni per il prelievo?",
+    "english": "Are there fees for the withdrawal?",
+    "type": "phrase",
+    "choicesItalian": ["Ci sono commissioni per il prelievo?", "Il bancomat accetta carte straniere?", "Posso prelevare cinquanta euro?", "La banca è aperta?"],
+    "choicesEnglish": ["Are there fees for the withdrawal?", "Does the ATM accept foreign cards?", "Can I withdraw fifty euros?", "Is the bank open?"],
+    "correctAnswer": "Ci sono commissioni per il prelievo?",
+    "feedback": {
+      "correctItalian": "Giusto! Importante se usi una banca diversa.",
+      "incorrectItalian": "No, chiedi delle commissioni.",
+      "correctEnglish": "Right! Important if you use a different bank.",
+      "incorrectEnglish": "No, ask about the fees."
+    }
+  },
+  {
+    "id": "atm-p8",
+    "italian": "Ho sbagliato a digitare il PIN.",
+    "english": "I entered the wrong PIN.",
+    "type": "phrase",
+    "choicesItalian": ["Ho sbagliato a digitare il PIN.", "La carta è scaduta.", "Non c'è carta nella stampante.", "Il tastierino è sporco."],
+    "choicesEnglish": ["I entered the wrong PIN.", "The card is expired.", "There is no paper in the printer.", "The keypad is dirty."],
+    "correctAnswer": "Ho sbagliato a digitare il PIN.",
+    "feedback": {
+      "correctItalian": "Attenzione! Hai ancora due tentativi.",
+      "incorrectItalian": "No, hai sbagliato il PIN.",
+      "correctEnglish": "Watch out! You still have two attempts.",
+      "incorrectEnglish": "No, you got the PIN wrong."
+    }
+  },
+  {
+    "id": "atm-p9",
+    "italian": "Selezioni la lingua desiderata.",
+    "english": "Select the desired language.",
+    "type": "phrase",
+    "choicesItalian": ["Selezioni la lingua desiderata.", "Inserisca l'importo.", "Confermi l'operazione.", "Ritiri la carta."],
+    "choicesEnglish": ["Select the desired language.", "Enter the amount.", "Confirm the operation.", "Collect the card."],
+    "correctAnswer": "Selezioni la lingua desiderata.",
+    "feedback": {
+      "correctItalian": "Bene! Per usare l'ATM in inglese o italiano.",
+      "incorrectItalian": "No, devi scegliere la lingua.",
+      "correctEnglish": "Good! To use the ATM in English or Italian.",
+      "incorrectEnglish": "No, you must choose the language."
+    }
+  },
+  {
+    "id": "atm-p10",
+    "italian": "Attendere l'autorizzazione della banca.",
+    "english": "Waiting for bank authorization.",
+    "type": "phrase",
+    "choicesItalian": ["Attendere l'autorizzazione della banca.", "L'operazione è stata annullata.", "Inserisca di nuovo la carta.", "Controlli il tastierino."],
+    "choicesEnglish": ["Waiting for bank authorization.", "The operation was cancelled.", "Insert the card again.", "Check the keypad."],
+    "correctAnswer": "Attendere l'autorizzazione della banca.",
+    "feedback": {
+      "correctItalian": "Esatto! Un messaggio comune durante l'operazione.",
+      "incorrectItalian": "No, sta aspettando l'autorizzazione.",
+      "correctEnglish": "Exact! A common message during the operation.",
+      "incorrectEnglish": "No, it's waiting for authorization."
+    }
+  },
+  {
+    "id": "atm-p11",
+    "italian": "Scegliere l'importo da prelevare.",
+    "english": "Choose the amount to withdraw.",
+    "type": "phrase",
+    "choicesItalian": ["Scegliere l'importo da prelevare.", "Scegliere il tipo di conto.", "Scegliere se si vuole la ricevuta.", "Scegliere di uscire."],
+    "choicesEnglish": ["Choose the amount to withdraw.", "Choose the account type.", "Choose if you want a receipt.", "Choose to exit."],
+    "correctAnswer": "Scegliere l'importo da prelevare.",
+    "feedback": {
+      "correctItalian": "Bene! Seleziona quanto denaro vuoi.",
+      "incorrectItalian": "No, devi scegliere l'importo.",
+      "correctEnglish": "Good! Select how much money you want.",
+      "incorrectEnglish": "No, you must choose the amount."
+    }
+  },
+  {
+    "id": "atm-p12",
+    "italian": "Operazione completata con successo.",
+    "english": "Operation completed successfully.",
+    "type": "phrase",
+    "choicesItalian": ["Operazione completata con successo.", "Operazione rifiutata.", "Errore di sistema.", "Carta non valida."],
+    "choicesEnglish": ["Operation completed successfully.", "Operation declined.", "System error.", "Invalid card."],
+    "correctAnswer": "Operazione completata con successo.",
+    "feedback": {
+      "correctItalian": "Ottimo! Tutto è andato bene.",
+      "incorrectItalian": "No, l'operazione è finita bene.",
+      "correctEnglish": "Great! Everything went well.",
+      "incorrectEnglish": "No, the operation ended well."
+    }
+  },
+  {
+    "id": "atm-p13",
+    "italian": "Vuole la ricevuta dell'operazione?",
+    "english": "Do you want the receipt for the operation?",
+    "type": "phrase",
+    "choicesItalian": ["Vuole la ricevuta dell'operazione?", "Vuole cambiare lingua?", "Vuole prelevare ancora?", "Vuole aiuto?"],
+    "choicesEnglish": ["Do you want the receipt for the operation?", "Do you want to change language?", "Do you want to withdraw again?", "Do you want help?"],
+    "correctAnswer": "Vuole la ricevuta dell'operazione?",
+    "feedback": {
+      "correctItalian": "Giusto! Puoi scegliere 'Sì' o 'No'.",
+      "incorrectItalian": "No, chiede della ricevuta.",
+      "correctEnglish": "Right! You can choose 'Yes' or 'No'.",
+      "incorrectEnglish": "No, it's asking about the receipt."
+    }
+  },
+  {
+    "id": "atm-p14",
+    "italian": "Ritiri il denaro e la carta.",
+    "english": "Collect the money and the card.",
+    "type": "phrase",
+    "choicesItalian": ["Ritiri il denaro e la carta.", "Lasci la carta nello sportello.", "Aspetti il prossimo cliente.", "Chiami la polizia."],
+    "choicesEnglish": ["Collect the money and the card.", "Leave the card in the machine.", "Wait for the next customer.", "Call the police."],
+    "correctAnswer": "Ritiri il denaro e la carta.",
+    "feedback": {
+      "correctItalian": "Esatto! Non dimenticare nulla!",
+      "incorrectItalian": "No, devi ritirare tutto.",
+      "correctEnglish": "Exact! Don't forget anything!",
+      "incorrectEnglish": "No, you must collect everything."
+    }
+  },
+  {
+    "id": "atm-p15",
+    "italian": "Mi dispiace, non ci sono contanti disponibili.",
+    "english": "I'm sorry, there is no cash available.",
+    "type": "phrase",
+    "choicesItalian": ["Mi dispiace, non ci sono contanti disponibili.", "Il bancomat è pieno di soldi.", "Può prelevare quanto vuole.", "La banca è chiusa per ferie."],
+    "choicesEnglish": ["I'm sorry, there is no cash available.", "The ATM is full of money.", "You can withdraw as much as you want.", "The bank is closed for holidays."],
+    "correctAnswer": "Mi dispiace, non ci sono contanti disponibili.",
+    "feedback": {
+      "correctItalian": "Purtroppo capita! Devi cercare un altro sportello.",
+      "incorrectItalian": "No, non ci sono soldi.",
+      "correctEnglish": "Unfortunately it happens! You have to look for another machine.",
+      "incorrectEnglish": "No, there is no money."
+    }
+  },
+  {
+    "id": "atm-p16",
+    "italian": "La carta è stata ritirata per sicurezza.",
+    "english": "The card has been captured for security.",
+    "type": "phrase",
+    "choicesItalian": ["La carta è stata ritirata per sicurezza.", "La carta è stata accettata.", "La carta è nuova.", "La carta è sul pavimento."],
+    "choicesEnglish": ["The card has been captured for security.", "The card has been accepted.", "The card is new.", "The card is on the floor."],
+    "correctAnswer": "La carta è stata ritirata per sicurezza.",
+    "feedback": {
+      "correctItalian": "Un'emergenza! Devi contattare subito la banca.",
+      "incorrectItalian": "No, la carta è stata 'mangiata'.",
+      "correctEnglish": "An emergency! You must contact the bank immediately.",
+      "incorrectEnglish": "No, the card has been 'swallowed'."
+    }
+  },
+  {
+    "id": "atm-p17",
+    "italian": "Posso usare una carta di credito straniera?",
+    "english": "Can I use a foreign credit card?",
+    "type": "phrase",
+    "choicesItalian": ["Posso usare una carta di credito straniera?", "Devo avere un conto italiano?", "La commissione è fissa?", "Dove posso cambiare i dollari?"],
+    "choicesEnglish": ["Can I use a foreign credit card?", "Do I need to have an Italian account?", "Is the fee fixed?", "Where can I change dollars?"],
+    "correctAnswer": "Posso usare una carta di credito straniera?",
+    "feedback": {
+      "correctItalian": "Ottimo! Domanda tipica per i turisti.",
+      "incorrectItalian": "No, chiedi della carta straniera.",
+      "correctEnglish": "Great! A typical question for tourists.",
+      "incorrectEnglish": "No, you're asking about a foreign card."
+    }
+  },
+  {
+    "id": "atm-p18",
+    "italian": "Digitare l'importo desiderato.",
+    "english": "Type the desired amount.",
+    "type": "phrase",
+    "choicesItalian": ["Digitare l'importo desiderato.", "Digitare il proprio nome.", "Digitare il numero di telefono.", "Digitare l'indirizzo."],
+    "choicesEnglish": ["Type the desired amount.", "Type your name.", "Type the phone number.", "Type the address."],
+    "correctAnswer": "Digitare l'importo desiderato.",
+    "feedback": {
+      "correctItalian": "Bene! Inserisci la cifra che vuoi prelevare.",
+      "incorrectItalian": "No, devi scrivere l'importo.",
+      "correctEnglish": "Good! Enter the figure you want to withdraw.",
+      "incorrectEnglish": "No, you must type the amount."
+    }
+  },
+  {
+    "id": "atm-p19",
+    "italian": "Annullare l'operazione in corso.",
+    "english": "Cancel the operation in progress.",
+    "type": "phrase",
+    "choicesItalian": ["Annullare l'operazione in corso.", "Continuare l'operazione.", "Iniziare una nuova operazione.", "Salvare l'operazione."],
+    "choicesEnglish": ["Cancel the operation in progress.", "Continue the operation.", "Start a new operation.", "Save the operation."],
+    "correctAnswer": "Annullare l'operazione in corso.",
+    "feedback": {
+      "correctItalian": "Giusto! Se vuoi fermare tutto.",
+      "incorrectItalian": "No, vuoi annullare.",
+      "correctEnglish": "Right! If you want to stop everything.",
+      "incorrectEnglish": "No, you want to cancel."
+    }
+  },
+  {
+    "id": "atm-p20",
+    "italian": "Il PIN non è corretto, riprovare.",
+    "english": "The PIN is not correct, try again.",
+    "type": "phrase",
+    "choicesItalian": ["Il PIN non è corretto, riprovare.", "La carta non è corretta.", "L'importo non è corretto.", "La lingua non è corretta."],
+    "choicesEnglish": ["The PIN is not correct, try again.", "The card is not correct.", "The amount is not correct.", "The language is not correct."],
+    "correctAnswer": "Il PIN non è corretto, riprovare.",
+    "feedback": {
+      "correctItalian": "Attenzione! Fai attenzione ai numeri.",
+      "incorrectItalian": "No, il PIN è sbagliato.",
+      "correctEnglish": "Watch out! Pay attention to the numbers.",
+      "incorrectEnglish": "No, the PIN is wrong."
+    }
+  },
+  {
+    "id": "atm-p21",
+    "italian": "Premere il tasto 'Conferma'.",
+    "english": "Press the 'Confirm' button.",
+    "type": "phrase",
+    "choicesItalian": ["Premere il tasto 'Conferma'.", "Premere il tasto 'Annulla'.", "Premere il tasto 'Correzione'.", "Premere il tasto 'Aiuto'."],
+    "choicesEnglish": ["Press the 'Confirm' button.", "Press the 'Cancel' button.", "Press the 'Correction' button.", "Press the 'Help' button."],
+    "correctAnswer": "Premere il tasto 'Conferma'.",
+    "feedback": {
+      "correctItalian": "Bene! Per andare avanti con l'operazione.",
+      "incorrectItalian": "No, devi confermare.",
+      "correctEnglish": "Good! To go ahead with the operation.",
+      "incorrectEnglish": "No, you must confirm."
+    }
+  },
+  {
+    "id": "atm-p22",
+    "italian": "Lo sportello è temporaneamente fuori servizio.",
+    "english": "The machine is temporarily out of service.",
+    "type": "phrase",
+    "choicesItalian": ["Lo sportello è temporaneamente fuori servizio.", "Lo sportello è aperto tutto il giorno.", "Lo sportello è nuovo di zecca.", "Lo sportello accetta solo monete."],
+    "choicesEnglish": ["The machine is temporarily out of service.", "The machine is open all day.", "The machine is brand new.", "The machine accepts only coins."],
+    "correctAnswer": "Lo sportello è temporaneamente fuori servizio.",
+    "feedback": {
+      "correctItalian": "Peccato! Devi cercare un altro bancomat.",
+      "incorrectItalian": "No, non funziona al momento.",
+      "correctEnglish": "Too bad! You have to look for another ATM.",
+      "incorrectEnglish": "No, it's not working at the moment."
+    }
+  },
+  {
+    "id": "atm-p23",
+    "italian": "Controllare se la fessura è manomessa.",
+    "english": "Check if the slot is tampered with.",
+    "type": "phrase",
+    "choicesItalian": ["Controllare se la fessura è manomessa.", "Controllare se la carta è pulita.", "Controllare se il PIN è facile.", "Controllare se c'è gente."],
+    "choicesEnglish": ["Check if the slot is tampered with.", "Check if the card is clean.", "Check if the PIN is easy.", "Check if there are people."],
+    "correctAnswer": "Controllare se la fessura è manomessa.",
+    "feedback": {
+      "correctItalian": "Molto importante per la sicurezza!",
+      "incorrectItalian": "No, controlla se è manomessa.",
+      "correctEnglish": "Very important for security!",
+      "incorrectEnglish": "No, check if it's tampered with."
+    }
+  },
+  {
+    "id": "atm-p24",
+    "italian": "Prendere le banconote dallo scomparto.",
+    "english": "Take the banknotes from the compartment.",
+    "type": "phrase",
+    "choicesItalian": ["Prendere le banconote dallo scomparto.", "Prendere le monete dal vassoio.", "Prendere la ricevuta dalla stampante.", "Prendere la borsa da terra."],
+    "choicesEnglish": ["Take the banknotes from the compartment.", "Take the coins from the tray.", "Take the receipt from the printer.", "Take the bag from the ground."],
+    "correctAnswer": "Prendere le banconote dallo scomparto.",
+    "feedback": {
+      "correctItalian": "Esatto! Prendi i tuoi soldi.",
+      "incorrectItalian": "No, prendi le banconote.",
+      "correctEnglish": "Exact! Take your money.",
+      "incorrectEnglish": "No, take the banknotes."
+    }
+  },
+  {
+    "id": "atm-p25",
+    "italian": "Non ho abbastanza soldi sul conto.",
+    "english": "I don't have enough money in the account.",
+    "type": "phrase",
+    "choicesItalian": ["Non ho abbastanza soldi sul conto.", "Il conto è pieno di soldi.", "Ho perso il numero del conto.", "Voglio chiudere il conto."],
+    "choicesEnglish": ["I don't have enough money in the account.", "The account is full of money.", "I lost the account number.", "I want to close the account."],
+    "correctAnswer": "Non ho abbastanza soldi sul conto.",
+    "feedback": {
+      "correctItalian": "Succede! Il saldo è insufficiente.",
+      "incorrectItalian": "No, mancano i soldi.",
+      "correctEnglish": "It happens! The balance is insufficient.",
+      "incorrectEnglish": "No, money is missing."
+    }
+  },
+  {
+    "id": "atm-p26",
+    "italian": "Inserisca l'importo multiplo di dieci.",
+    "english": "Insert an amount in multiples of ten.",
+    "type": "phrase",
+    "choicesItalian": ["Inserisca l'importo multiplo di dieci.", "Inserisca l'importo multiplo di cinque.", "Inserisca l'importo esatto.", "Inserisca solo monete."],
+    "choicesEnglish": ["Insert an amount in multiples of ten.", "Insert an amount in multiples of five.", "Insert the exact amount.", "Insert only coins."],
+    "correctAnswer": "Inserisca l'importo multiplo di dieci.",
+    "feedback": {
+      "correctItalian": "Bene! Gli ATM spesso danno solo tagli da 10, 20 o 50.",
+      "incorrectItalian": "No, deve essere multiplo di dieci.",
+      "correctEnglish": "Good! ATMs often give only 10, 20 or 50 bills.",
+      "incorrectEnglish": "No, it must be a multiple of ten."
+    }
+  },
+  {
+    "id": "atm-p27",
+    "italian": "La carta è scaduta il mese scorso.",
+    "english": "The card expired last month.",
+    "type": "phrase",
+    "choicesItalian": ["La carta è scaduta il mese scorso.", "La carta è stata emessa ieri.", "La carta è bloccata per errore.", "La carta è nel portafoglio."],
+    "choicesEnglish": ["The card expired last month.", "The card was issued yesterday.", "The card is blocked by mistake.", "The card is in the wallet."],
+    "correctAnswer": "La carta è scaduta il mese scorso.",
+    "feedback": {
+      "correctItalian": "Peccato! Non puoi più usarla.",
+      "incorrectItalian": "No, è scaduta.",
+      "correctEnglish": "Too bad! You can't use it anymore.",
+      "incorrectEnglish": "No, it's expired."
+    }
+  },
+  {
+    "id": "atm-p28",
+    "italian": "Qual è la commissione per le carte estere?",
+    "english": "What is the fee for foreign cards?",
+    "type": "phrase",
+    "choicesItalian": ["Qual è la commissione per le carte estere?", "Qual è la commissione per il saldo?", "Qual è la commissione per il versamento?", "La commissione è gratuita?"],
+    "choicesEnglish": ["What is the fee for foreign cards?", "What is the fee for the balance?", "What is the fee for the deposit?", "Is the fee free?"],
+    "correctAnswer": "Qual è la commissione per le carte estere?",
+    "feedback": {
+      "correctItalian": "Giusto! Meglio controllare prima di prelevare.",
+      "incorrectItalian": "No, chiedi delle carte estere.",
+      "correctEnglish": "Right! Better to check before withdrawing.",
+      "incorrectEnglish": "No, ask about foreign cards."
+    }
+  },
+  {
+    "id": "atm-p29",
+    "italian": "Vorrei cambiare il mio codice PIN.",
+    "english": "I would like to change my PIN code.",
+    "type": "phrase",
+    "choicesItalian": ["Vorrei cambiare il mio codice PIN.", "Vorrei cambiare banca.", "Vorrei cambiare lingua.", "Vorrei cambiare banconote."],
+    "choicesEnglish": ["I would like to change my PIN code.", "I would like to change bank.", "I would like to change language.", "I would like to change banknotes."],
+    "correctAnswer": "Vorrei cambiare il mio codice PIN.",
+    "feedback": {
+      "correctItalian": "Bene! Alcuni ATM permettono di farlo.",
+      "incorrectItalian": "No, vuoi cambiare il PIN.",
+      "correctEnglish": "Good! Some ATMs allow you to do this.",
+      "incorrectEnglish": "No, you want to change the PIN."
+    }
+  },
+  {
+    "id": "atm-p30",
+    "italian": "Prelevare dal conto corrente o risparmio?",
+    "english": "Withdraw from checking or savings account?",
+    "type": "phrase",
+    "choicesItalian": ["Prelevare dal conto corrente o risparmio?", "Prelevare dal conto di un amico?", "Prelevare dal conto aziendale?", "Prelevare senza conto?"],
+    "choicesEnglish": ["Withdraw from checking or savings account?", "Withdraw from a friend's account?", "Withdraw from the business account?", "Withdraw without an account?"],
+    "correctAnswer": "Prelevare dal conto corrente o risparmio?",
+    "feedback": {
+      "correctItalian": "Esatto! Una scelta comune in molti paesi.",
+      "incorrectItalian": "No, devi scegliere il tipo di conto.",
+      "correctEnglish": "Exact! A common choice in many countries.",
+      "incorrectEnglish": "No, you must choose the account type."
+    }
+  },
+  {
+    "id": "atm-p31",
+    "italian": "Il bancomat non accetta la mia carta.",
+    "english": "The ATM does not accept my card.",
+    "type": "phrase",
+    "choicesItalian": ["Il bancomat non accetta la mia carta.", "Il bancomat non ha carta per ricevute.", "Il bancomat è troppo alto.", "Il bancomat è in banca."],
+    "choicesEnglish": ["The ATM does not accept my card.", "The ATM has no paper for receipts.", "The ATM is too high.", "The ATM is in the bank."],
+    "correctAnswer": "Il bancomat non accetta la mia carta.",
+    "feedback": {
+      "correctItalian": "Peccato! Forse il circuito non è supportato.",
+      "incorrectItalian": "No, non accetta la carta.",
+      "correctEnglish": "Too bad! Maybe the circuit is not supported.",
+      "incorrectEnglish": "No, it doesn't accept the card."
+    }
+  },
+  {
+    "id": "atm-p32",
+    "italian": "Ho dimenticato la carta nel bancomat!",
+    "english": "I forgot the card in the ATM!",
+    "type": "phrase",
+    "choicesItalian": ["Ho dimenticato la carta nel bancomat!", "Ho dimenticato il PIN a casa.", "Ho dimenticato di prelevare.", "Ho dimenticato i soldi."],
+    "choicesEnglish": ["I forgot the card in the ATM!", "I forgot the PIN at home.", "I forgot to withdraw.", "I forgot the money."],
+    "correctAnswer": "Ho dimenticato la carta nel bancomat!",
+    "feedback": {
+      "correctItalian": "Corri subito a riprenderla o bloccala!",
+      "incorrectItalian": "No, hai lasciato la carta lì.",
+      "correctEnglish": "Run back to get it or block it!",
+      "incorrectEnglish": "No, you left the card there."
+    }
+  },
+  {
+    "id": "atm-p33",
+    "italian": "Può aiutarmi a usare questo sportello?",
+    "english": "Can you help me use this machine?",
+    "type": "phrase",
+    "choicesItalian": ["Può aiutarmi a usare questo sportello?", "Può prestarmi dieci euro?", "Sa dov'è la banca?", "Vuole la mia ricevuta?"],
+    "choicesEnglish": ["Can you help me use this machine?", "Can you lend me ten euros?", "Do you know where the bank is?", "Do you want my receipt?"],
+    "correctAnswer": "Può aiutarmi a usare questo sportello?",
+    "feedback": {
+      "correctItalian": "Bene! Chiedere aiuto è sempre un'opzione.",
+      "incorrectItalian": "No, chiedi aiuto per lo sportello.",
+      "correctEnglish": "Good! Asking for help is always an option.",
+      "incorrectEnglish": "No, ask for help with the machine."
+    }
+  },
+  {
+    "id": "atm-p34",
+    "italian": "C'è un limite massimo per ogni prelievo.",
+    "english": "There is a maximum limit for each withdrawal.",
+    "type": "phrase",
+    "choicesItalian": ["C'è un limite massimo per ogni prelievo.", "Non c'è nessun limite.", "Il limite è solo per i turisti.", "Il limite è deciso da me."],
+    "choicesEnglish": ["There is a maximum limit for each withdrawal.", "There is no limit.", "The limit is only for tourists.", "The limit is decided by me."],
+    "correctAnswer": "C'è un limite massimo per ogni prelievo.",
+    "feedback": {
+      "correctItalian": "Esatto! Spesso è di 250 o 500 euro.",
+      "incorrectItalian": "No, c'è un limite.",
+      "correctEnglish": "Exact! It's often 250 or 500 euros.",
+      "incorrectEnglish": "No, there is a limit."
+    }
+  },
+  {
+    "id": "atm-p35",
+    "italian": "Voglio prelevare cento euro, per favore.",
+    "english": "I want to withdraw one hundred euros, please.",
+    "type": "phrase",
+    "choicesItalian": ["Voglio prelevare cento euro, per favore.", "Voglio cambiare cento euro.", "Voglio spendere cento euro.", "Voglio prestare cento euro."],
+    "choicesEnglish": ["I want to withdraw one hundred euros, please.", "I want to change one hundred euros.", "I want to spend one hundred euros.", "I want to lend one hundred euros."],
+    "correctAnswer": "Voglio prelevare cento euro, per favore.",
+    "feedback": {
+      "correctItalian": "Bene! Una cifra chiara da prelevare.",
+      "incorrectItalian": "No, vuoi prelevare cento euro.",
+      "correctEnglish": "Good! A clear amount to withdraw.",
+      "incorrectEnglish": "No, you want to withdraw one hundred euros."
+    }
+  },
+  {
+    "id": "atm-p36",
+    "italian": "La banca ha bloccato la mia operazione.",
+    "english": "The bank blocked my transaction.",
+    "type": "phrase",
+    "choicesItalian": ["La banca ha bloccato la mia operazione.", "La banca ha regalato dei soldi.", "La banca ha chiuso il bancomat.", "La banca è lontana."],
+    "choicesEnglish": ["The bank blocked my transaction.", "The bank gave away money.", "The bank closed the ATM.", "The bank is far away."],
+    "correctAnswer": "La banca ha bloccato la mia operazione.",
+    "feedback": {
+      "correctItalian": "Accidenti! Forse per motivi di sicurezza.",
+      "incorrectItalian": "No, l'operazione è bloccata.",
+      "correctEnglish": "Darn! Maybe for security reasons.",
+      "incorrectEnglish": "No, the transaction is blocked."
+    }
+  },
+  {
+    "id": "atm-p37",
+    "italian": "Inserire la carta con il chip verso l'alto.",
+    "english": "Insert the card with the chip facing up.",
+    "type": "phrase",
+    "choicesItalian": ["Inserire la carta con il chip verso l'alto.", "Inserire la carta al contrario.", "Inserire la carta nel portafoglio.", "Inserire la carta lentamente."],
+    "choicesEnglish": ["Insert the card with the chip facing up.", "Insert the card backwards.", "Insert the card in the wallet.", "Insert the card slowly."],
+    "correctAnswer": "Inserire la carta con il chip verso l'alto.",
+    "feedback": {
+      "correctItalian": "Esatto! È il modo corretto di inserirla.",
+      "incorrectItalian": "No, il chip deve andare verso l'alto.",
+      "correctEnglish": "Exact! It's the correct way to insert it.",
+      "incorrectEnglish": "No, the chip must face up."
+    }
+  },
+  {
+    "id": "atm-p38",
+    "italian": "L'ATM non eroga banconote da venti euro.",
+    "english": "The ATM does not dispense twenty-euro bills.",
+    "type": "phrase",
+    "choicesItalian": ["L'ATM non eroga banconote da venti euro.", "L'ATM non accetta banconote da venti euro.", "L'ATM regala banconote da venti euro.", "L'ATM è fatto di banconote."],
+    "choicesEnglish": ["The ATM does not dispense twenty-euro bills.", "The ATM does not accept twenty-euro bills.", "The ATM gives away twenty-euro bills.", "The ATM is made of banknotes."],
+    "correctAnswer": "L'ATM non eroga banconote da venti euro.",
+    "feedback": {
+      "correctItalian": "Bene! Alcuni sportelli hanno tagli limitati.",
+      "incorrectItalian": "No, non le eroga.",
+      "correctEnglish": "Good! Some machines have limited denominations.",
+      "incorrectEnglish": "No, it doesn't dispense them."
+    }
+  },
+  {
+    "id": "atm-p39",
+    "italian": "Voglio prelevare il massimo consentito.",
+    "english": "I want to withdraw the maximum allowed.",
+    "type": "phrase",
+    "choicesItalian": ["Voglio prelevare il massimo consentito.", "Voglio prelevare il minimo.", "Voglio prelevare solo dieci euro.", "Voglio prelevare tutto il conto."],
+    "choicesEnglish": ["I want to withdraw the maximum allowed.", "I want to withdraw the minimum.", "I want to withdraw only ten euros.", "I want to withdraw the whole account."],
+    "correctAnswer": "Voglio prelevare il massimo consentito.",
+    "feedback": {
+      "correctItalian": "Esatto! Quando hai bisogno di molti contanti.",
+      "incorrectItalian": "No, vuoi il massimo.",
+      "correctEnglish": "Exact! When you need a lot of cash.",
+      "incorrectEnglish": "No, you want the maximum."
+    }
+  },
+  {
+    "id": "atm-p40",
+    "italian": "Ho perso il mio PIN, cosa devo fare?",
+    "english": "I lost my PIN, what should I do?",
+    "type": "phrase",
+    "choicesItalian": ["Ho perso il mio PIN, cosa devo fare?", "Ho perso la strada per la banca.", "Ho perso i soldi prelevati.", "Ho perso la pazienza."],
+    "choicesEnglish": ["I lost my PIN, what should I do?", "I lost my way to the bank.", "I lost the withdrawn money.", "I lost my patience."],
+    "correctAnswer": "Ho perso il mio PIN, cosa devo fare?",
+    "feedback": {
+      "correctItalian": "Devi chiamare la banca o andare in filiale.",
+      "incorrectItalian": "No, hai perso il PIN.",
+      "correctEnglish": "You must call the bank or go to the branch.",
+      "incorrectEnglish": "No, you lost the PIN."
+    }
+  },
+  {
+    "id": "atm-p41",
+    "italian": "Si prega di ritirare la carta entro 30 secondi.",
+    "english": "Please collect your card within 30 seconds.",
+    "type": "phrase",
+    "choicesItalian": ["Si prega di ritirare la carta entro 30 secondi.", "La carta sarà ritirata tra un'ora.", "Può lasciare la carta per un minuto.", "La carta è già stata ritirata."],
+    "choicesEnglish": ["Please collect your card within 30 seconds.", "The card will be collected in an hour.", "You can leave the card for a minute.", "The card has already been collected."],
+    "correctAnswer": "Si prega di ritirare la carta entro 30 secondi.",
+    "feedback": {
+      "correctItalian": "Sbrigati! Altrimenti lo sportello la ritira.",
+      "incorrectItalian": "No, hai solo 30 secondi.",
+      "correctEnglish": "Hurry up! Otherwise the machine will swallow it.",
+      "incorrectEnglish": "No, you only have 30 seconds."
+    }
+  },
+  {
+    "id": "atm-p42",
+    "italian": "Controlli che nessuno legga il suo PIN.",
+    "english": "Check that no one reads your PIN.",
+    "type": "phrase",
+    "choicesItalian": ["Controlli che nessuno legga il suo PIN.", "Mostri il PIN a tutti.", "Dica il PIN ad alta voce.", "Scriva il PIN sullo schermo."],
+    "choicesEnglish": ["Check that no one reads your PIN.", "Show the PIN to everyone.", "Say the PIN out loud.", "Write the PIN on the screen."],
+    "correctAnswer": "Controlli che nessuno legga il suo PIN.",
+    "feedback": {
+      "correctItalian": "Giusto! Copri sempre il tastierino con la mano.",
+      "incorrectItalian": "No, devi proteggere il PIN.",
+      "correctEnglish": "Right! Always cover the keypad with your hand.",
+      "incorrectEnglish": "No, you must protect the PIN."
+    }
+  },
+  {
+    "id": "atm-p43",
+    "italian": "L'operazione richiede alcuni minuti.",
+    "english": "The transaction takes a few minutes.",
+    "type": "phrase",
+    "choicesItalian": ["L'operazione richiede alcuni minuti.", "L'operazione è istantanea.", "L'operazione richiede un giorno.", "L'operazione è già finita."],
+    "choicesEnglish": ["The transaction takes a few minutes.", "The transaction is instantaneous.", "The transaction takes a day.", "The transaction is already finished."],
+    "correctAnswer": "L'operazione richiede alcuni minuti.",
+    "feedback": {
+      "correctItalian": "Bene! Sii paziente mentre il sistema elabora.",
+      "incorrectItalian": "No, ci vogliono dei minuti.",
+      "correctEnglish": "Good! Be patient while the system processes.",
+      "incorrectEnglish": "No, it takes a few minutes."
+    }
+  },
+  {
+    "id": "atm-p44",
+    "italian": "Vuole fare un'altra operazione?",
+    "english": "Do you want to perform another transaction?",
+    "type": "phrase",
+    "choicesItalian": ["Vuole fare un'altra operazione?", "Vuole andare via?", "Vuole chiudere tutto?", "Vuole mangiare?"],
+    "choicesEnglish": ["Do you want to perform another transaction?", "Do you want to go away?", "Do you want to close everything?", "Do you want to eat?"],
+    "correctAnswer": "Vuole fare un'altra operazione?",
+    "feedback": {
+      "correctItalian": "Bene! Se hai altro da fare, premi 'Sì'.",
+      "incorrectItalian": "No, chiede se vuoi continuare.",
+      "correctEnglish": "Good! If you have more to do, press 'Yes'.",
+      "incorrectEnglish": "No, it's asking if you want to continue."
+    }
+  },
+  {
+    "id": "atm-p45",
+    "italian": "Il tasto per cancellare è di colore rosso.",
+    "english": "The button to cancel is red.",
+    "type": "phrase",
+    "choicesItalian": ["Il tasto per cancellare è di colore rosso.", "Il tasto per confermare è rosso.", "Il tasto Aiuto è rosso.", "Non ci sono tasti rossi."],
+    "choicesEnglish": ["The button to cancel is red.", "The button to confirm is red.", "The Help button is red.", "There are no red buttons."],
+    "correctAnswer": "Il tasto per cancellare è di colore rosso.",
+    "feedback": {
+      "correctItalian": "Esatto! È uno standard negli ATM.",
+      "incorrectItalian": "No, il tasto rosso è per cancellare.",
+      "correctEnglish": "Exact! It's a standard in ATMs.",
+      "incorrectEnglish": "No, the red button is for cancelling."
+    }
+  },
+  {
+    "id": "atm-p46",
+    "italian": "Il tasto per confermare è di colore verde.",
+    "english": "The button to confirm is green.",
+    "type": "phrase",
+    "choicesItalian": ["Il tasto per confermare è di colore verde.", "Il tasto per cancellare è verde.", "Il tasto Aiuto è verde.", "Il bancomat è verde."],
+    "choicesEnglish": ["The button to confirm is green.", "The button to cancel is green.", "The Help button is green.", "The ATM is green."],
+    "correctAnswer": "Il tasto per confermare è di colore verde.",
+    "feedback": {
+      "correctItalian": "Giusto! Il verde indica 'vai avanti'.",
+      "incorrectItalian": "No, il tasto verde è per confermare.",
+      "correctEnglish": "Right! Green means 'go ahead'.",
+      "incorrectEnglish": "No, the green button is for confirming."
+    }
+  },
+  {
+    "id": "atm-p47",
+    "italian": "Non c'è carta per la ricevuta, continuare?",
+    "english": "There is no paper for the receipt, continue?",
+    "type": "phrase",
+    "choicesItalian": ["Non c'è carta per la ricevuta, continuare?", "La stampante è rotta, uscire?", "Vuole una ricevuta digitale?", "Il bancomat è senza soldi."],
+    "choicesEnglish": ["There is no paper for the receipt, continue?", "The printer is broken, exit?", "Do you want a digital receipt?", "The ATM is out of money."],
+    "correctAnswer": "Non c'è carta per la ricevuta, continuare?",
+    "feedback": {
+      "correctItalian": "Bene! Puoi prelevare anche senza scontrino.",
+      "incorrectItalian": "No, manca la carta per la ricevuta.",
+      "correctEnglish": "Good! You can withdraw even without a slip.",
+      "incorrectEnglish": "No, there's no paper for the receipt."
+    }
+  },
+  {
+    "id": "atm-p48",
+    "italian": "C'è troppa coda a questo bancomat.",
+    "english": "There is too much of a line at this ATM.",
+    "type": "phrase",
+    "choicesItalian": ["C'è troppa coda a questo bancomat.", "Non c'è nessuno qui.", "Il bancomat è vuoto.", "Sono il primo della fila."],
+    "choicesEnglish": ["There is too much of a line at this ATM.", "There is no one here.", "The ATM is empty.", "I am first in line."],
+    "correctAnswer": "C'è troppa coda a questo bancomat.",
+    "feedback": {
+      "correctItalian": "Peccato! Forse meglio tornare più tardi.",
+      "incorrectItalian": "No, c'è molta gente che aspetta.",
+      "correctEnglish": "Too bad! Maybe better to come back later.",
+      "incorrectEnglish": "No, there are many people waiting."
+    }
+  },
+  {
+    "id": "atm-p49",
+    "italian": "Posso versare dei contanti su questo conto?",
+    "english": "Can I deposit cash into this account?",
+    "type": "phrase",
+    "choicesItalian": ["Posso versare dei contanti su questo conto?", "Posso prelevare solo monete?", "Posso chiudere il conto qui?", "Posso avere uno sconto?"],
+    "choicesEnglish": ["Can I deposit cash into this account?", "Can I withdraw only coins?", "Can I close the account here?", "Can I have a discount?"],
+    "correctAnswer": "Posso versare dei contanti su questo conto?",
+    "feedback": {
+      "correctItalian": "Bene! Alcuni ATM moderni permettono i versamenti.",
+      "incorrectItalian": "No, chiedi di versare soldi.",
+      "correctEnglish": "Good! Some modern ATMs allow deposits.",
+      "incorrectEnglish": "No, you're asking to deposit money."
+    }
+  },
+  {
+    "id": "atm-p50",
+    "italian": "Grazie, arrivederci.",
+    "english": "Thank you, goodbye.",
+    "type": "phrase",
+    "choicesItalian": ["Grazie, arrivederci.", "Prego, entri.", "Ciao, come va?", "Scusi, aiuto."],
+    "choicesEnglish": ["Thank you, goodbye.", "You're welcome, come in.", "Hi, how's it going?", "Excuse me, help."],
+    "correctAnswer": "Grazie, arrivederci.",
+    "feedback": {
+      "correctItalian": "Bene! Un saluto cortese alla fine.",
+      "incorrectItalian": "No, è un saluto di commiato.",
+      "correctEnglish": "Good! A polite greeting at the end.",
+      "incorrectEnglish": "No, it's a parting greeting."
     }
   }
 ]

@@ -1,104 +1,902 @@
 [
   {
-    "id": "s102-p3",
-    "italian": "Avvia la navigazione.",
-    "english": "Start the navigation.",
+    "id": "tech-map-p1",
+    "italian": "Dove devo andare?",
+    "english": "Where do I have to go?",
     "type": "phrase",
-    "choices": [
-      "Ci andiamo a piedi.",
-      "Funziona anche offline.",
-      "Avvia la navigazione.",
-      "Condivido la mia posizione."
-    ],
+    "choicesItalian": ["Dove devo andare?", "Come ti chiami?", "Cosa fai?", "Perché sei qui?"],
+    "choicesEnglish": ["Where do I have to go?", "What is your name?", "What are you doing?", "Why are you here?"],
+    "correctAnswer": "Dove devo andare?",
+    "feedback": {
+      "correctItalian": "Esatto! Una domanda classica quando si è persi.",
+      "incorrectItalian": "No, chiedi la tua destinazione.",
+      "correctEnglish": "Exactly! A classic question when lost.",
+      "incorrectEnglish": "No, you're asking for your destination."
+    }
+  },
+  {
+    "id": "tech-map-p2",
+    "italian": "Inserisci l'indirizzo.",
+    "english": "Enter the address.",
+    "type": "phrase",
+    "choicesItalian": ["Inserisci l'indirizzo.", "Scrivi il nome.", "Chiama il numero.", "Apri la mappa."],
+    "choicesEnglish": ["Enter the address.", "Write the name.", "Call the number.", "Open the map."],
+    "correctAnswer": "Inserisci l'indirizzo.",
+    "feedback": {
+      "correctItalian": "Giusto! Il primo passo per la navigazione.",
+      "incorrectItalian": "No, significa digitare dove vuoi andare.",
+      "correctEnglish": "Right! The first step for navigation.",
+      "incorrectEnglish": "No, it means typing where you want to go."
+    }
+  },
+  {
+    "id": "tech-map-p3",
+    "italian": "Cerca un ristorante.",
+    "english": "Search for a restaurant.",
+    "type": "phrase",
+    "choicesItalian": ["Cerca un ristorante.", "Trova un hotel.", "Guarda un film.", "Compra un giornale."],
+    "choicesEnglish": ["Search for a restaurant.", "Find a hotel.", "Watch a movie.", "Buy a newspaper."],
+    "correctAnswer": "Cerca un ristorante.",
+    "feedback": {
+      "correctItalian": "Bravo! Usare la mappa per trovare servizi vicini.",
+      "incorrectItalian": "No, stai cercando un posto dove mangiare.",
+      "correctEnglish": "Well done! Using the map to find nearby services.",
+      "incorrectEnglish": "No, you are looking for a place to eat."
+    }
+  },
+  {
+    "id": "tech-map-p4",
+    "italian": "Dov'è il supermercato?",
+    "english": "Where is the supermarket?",
+    "type": "phrase",
+    "choicesItalian": ["Dov'è il supermercato?", "Dov'è la farmacia?", "Dov'è l'hotel?", "Dov'è il museo?"],
+    "choicesEnglish": ["Where is the supermarket?", "Where is the pharmacy?", "Where is the hotel?", "Where is the museum?"],
+    "correctAnswer": "Dov'è il supermercato?",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedere la posizione di un negozio.",
+      "incorrectItalian": "No, cerchi un negozio di alimentari.",
+      "correctEnglish": "Exactly! Asking for the location of a shop.",
+      "incorrectEnglish": "No, you're looking for a grocery store."
+    }
+  },
+  {
+    "id": "tech-map-p5",
+    "italian": "Avvia la navigazione.",
+    "english": "Start navigation.",
+    "type": "phrase",
+    "choicesItalian": ["Avvia la navigazione.", "Ferma il video.", "Chiudi l'app.", "Cancella tutto."],
+    "choicesEnglish": ["Start navigation.", "Stop the video.", "Close the app.", "Delete everything."],
     "correctAnswer": "Avvia la navigazione.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Avvia la navigazione.\"."
+      "correctItalian": "Ottimo! Far partire le indicazioni stradali.",
+      "incorrectItalian": "No, significa iniziare il percorso guidato.",
+      "correctEnglish": "Great! Starting the road directions.",
+      "incorrectEnglish": "No, it means starting the guided route."
     }
   },
   {
-    "id": "s102-p6",
-    "italian": "Funziona anche offline.",
-    "english": "It works offline too.",
+    "id": "tech-map-p6",
+    "italian": "Percorso a piedi.",
+    "english": "Walking route.",
     "type": "phrase",
-    "choices": [
-      "Posso salvare la mappa.",
-      "Ci andiamo a piedi.",
-      "Funziona anche offline.",
-      "Sto calcolando il percorso."
-    ],
-    "correctAnswer": "Funziona anche offline.",
+    "choicesItalian": ["Percorso a piedi.", "In auto.", "Con il treno.", "In bicicletta."],
+    "choicesEnglish": ["Walking route.", "By car.", "By train.", "By bicycle."],
+    "correctAnswer": "Percorso a piedi.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Funziona anche offline.\"."
+      "correctItalian": "Giusto! Scegliere la modalità camminata.",
+      "incorrectItalian": "No, indica che vuoi andare a piedi.",
+      "correctEnglish": "Right! Choosing the walking mode.",
+      "incorrectEnglish": "No, it indicates that you want to go on foot."
     }
   },
   {
-    "id": "s102-p4",
-    "italian": "Ci andiamo a piedi.",
-    "english": "We are walking there.",
+    "id": "tech-map-p7",
+    "italian": "Quanto tempo ci vuole?",
+    "english": "How much time does it take?",
     "type": "phrase",
-    "choices": [
-      "Posso salvare la mappa.",
-      "Ci andiamo a piedi.",
-      "Funziona anche offline.",
-      "Sto calcolando il percorso."
-    ],
-    "correctAnswer": "Ci andiamo a piedi.",
+    "choicesItalian": ["Quanto tempo ci vuole?", "Quanti chilometri sono?", "Che ore sono?", "Quando partiamo?"],
+    "choicesEnglish": ["How much time does it take?", "How many kilometers is it?", "What time is it?", "When do we leave?"],
+    "correctAnswer": "Quanto tempo ci vuole?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ci andiamo a piedi.\"."
+      "correctItalian": "Esatto! Chiedere la durata del viaggio.",
+      "incorrectItalian": "No, chiedi quanto tempo serve.",
+      "correctEnglish": "Exactly! Asking for the duration of the trip.",
+      "incorrectEnglish": "No, you're asking how much time is needed."
     }
   },
   {
-    "id": "s102-p5",
-    "italian": "Posso salvare la mappa.",
-    "english": "I can save the map.",
+    "id": "tech-map-p8",
+    "italian": "C'è molto traffico?",
+    "english": "Is there a lot of traffic?",
     "type": "phrase",
-    "choices": [
-      "Ci andiamo a piedi.",
-      "Posso salvare la mappa.",
-      "Avvia la navigazione.",
-      "Condivido la mia posizione."
-    ],
-    "correctAnswer": "Posso salvare la mappa.",
+    "choicesItalian": ["C'è molto traffico?", "La strada è libera?", "Piove?", "C'è nebbia?"],
+    "choicesEnglish": ["Is there a lot of traffic?", "Is the road clear?", "Is it raining?", "Is it foggy?"],
+    "correctAnswer": "C'è molto traffico?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Posso salvare la mappa.\"."
+      "correctItalian": "Perfetto! Verificare le condizioni stradali.",
+      "incorrectItalian": "No, chiedi se ci sono troppe macchine.",
+      "correctEnglish": "Perfect! Checking road conditions.",
+      "incorrectEnglish": "No, you're asking if there are too many cars."
     }
   },
   {
-    "id": "s102-p1",
-    "italian": "Condivido la mia posizione.",
-    "english": "I share my location.",
+    "id": "tech-map-p9",
+    "italian": "Gira a destra.",
+    "english": "Turn right.",
     "type": "phrase",
-    "choices": [
-      "Posso salvare la mappa.",
-      "Condivido la mia posizione.",
-      "Ci andiamo a piedi.",
-      "Avvia la navigazione."
-    ],
-    "correctAnswer": "Condivido la mia posizione.",
+    "choicesItalian": ["Gira a destra.", "Gira a sinistra.", "Vai dritto.", "Torna indietro."],
+    "choicesEnglish": ["Turn right.", "Turn left.", "Go straight.", "Go back."],
+    "correctAnswer": "Gira a destra.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Condivido la mia posizione.\"."
+      "correctItalian": "Bravo! Un'indicazione di direzione base.",
+      "incorrectItalian": "No, devi andare verso destra.",
+      "correctEnglish": "Well done! A basic direction instruction.",
+      "incorrectEnglish": "No, you must go to the right."
     }
   },
   {
-    "id": "s102-p2",
-    "italian": "Sto calcolando il percorso.",
-    "english": "I am calculating the route.",
+    "id": "tech-map-p10",
+    "italian": "Vai dritto.",
+    "english": "Go straight.",
     "type": "phrase",
-    "choices": [
-      "Sto calcolando il percorso.",
-      "Funziona anche offline.",
-      "Avvia la navigazione.",
-      "Posso salvare la mappa."
-    ],
-    "correctAnswer": "Sto calcolando il percorso.",
+    "choicesItalian": ["Vai dritto.", "Fermati.", "Gira subito.", "Sali."],
+    "choicesEnglish": ["Go straight.", "Stop.", "Turn immediately.", "Go up."],
+    "correctAnswer": "Vai dritto.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Sto calcolando il percorso.\"."
+      "correctItalian": "Esatto! Non cambiare direzione.",
+      "incorrectItalian": "No, significa proseguire senza girare.",
+      "correctEnglish": "Exactly! Do not change direction.",
+      "incorrectEnglish": "No, it means to continue without turning."
+    }
+  },
+  {
+    "id": "tech-map-p11",
+    "italian": "Seconda uscita.",
+    "english": "Second exit.",
+    "type": "phrase",
+    "choicesItalian": ["Seconda uscita.", "Prima strada.", "Terzo piano.", "Quarta porta."],
+    "choicesEnglish": ["Second exit.", "First street.", "Third floor.", "Fourth door."],
+    "correctAnswer": "Seconda uscita.",
+    "feedback": {
+      "correctItalian": "Giusto! Spesso usato alle rotonde.",
+      "incorrectItalian": "No, parla dell'uscita numero due.",
+      "correctEnglish": "Right! Often used at roundabouts.",
+      "incorrectEnglish": "No, it talks about exit number two."
+    }
+  },
+  {
+    "id": "tech-map-p12",
+    "italian": "Hai sbagliato strada.",
+    "english": "You took the wrong road.",
+    "type": "phrase",
+    "choicesItalian": ["Hai sbagliato strada.", "Sei arrivato.", "La strada è giusta.", "Corri!"],
+    "choicesEnglish": ["You took the wrong road.", "You arrived.", "The road is right.", "Run!"],
+    "correctAnswer": "Hai sbagliato strada.",
+    "feedback": {
+      "correctItalian": "Ottimo! Quando non segui il percorso corretto.",
+      "incorrectItalian": "No, significa che sei sulla via errata.",
+      "correctEnglish": "Great! When you don't follow the correct route.",
+      "incorrectEnglish": "No, it means you are on the wrong way."
+    }
+  },
+  {
+    "id": "tech-map-p13",
+    "italian": "Ricalcolo in corso.",
+    "english": "Rerouting / recalculating.",
+    "type": "phrase",
+    "choicesItalian": ["Ricalcolo in corso.", "Arrivo a breve.", "Mappa caricata.", "Segnale perso."],
+    "choicesEnglish": ["Rerouting / recalculating.", "Arrival shortly.", "Map loaded.", "Signal lost."],
+    "correctAnswer": "Ricalcolo in corso.",
+    "feedback": {
+      "correctItalian": "Esatto! L'app sta cercando un nuovo percorso.",
+      "incorrectItalian": "No, l'app sta ricalcolando la strada.",
+      "correctEnglish": "Exactly! The app is looking for a new route.",
+      "incorrectEnglish": "No, the app is recalculating the road."
+    }
+  },
+  {
+    "id": "tech-map-p14",
+    "italian": "Manca il segnale GPS.",
+    "english": "GPS signal is missing.",
+    "type": "phrase",
+    "choicesItalian": ["Manca il segnale GPS.", "Il GPS è attivo.", "Spegni il GPS.", "Cerca il GPS."],
+    "choicesEnglish": ["GPS signal is missing.", "GPS is active.", "Turn off GPS.", "Search for GPS."],
+    "correctAnswer": "Manca il segnale GPS.",
+    "feedback": {
+      "correctItalian": "Giusto! Il telefono non sa dove sei.",
+      "incorrectItalian": "No, significa che non c'è ricezione satellitare.",
+      "correctEnglish": "Right! The phone doesn't know where you are.",
+      "incorrectEnglish": "No, it means there is no satellite reception."
+    }
+  },
+  {
+    "id": "tech-map-p15",
+    "italian": "Mappa offline.",
+    "english": "Offline map.",
+    "type": "phrase",
+    "choicesItalian": ["Mappa offline.", "Mappa digitale.", "Mappa di carta.", "Mappa turistica."],
+    "choicesEnglish": ["Offline map.", "Digital map.", "Paper map.", "Tourist map."],
+    "correctAnswer": "Mappa offline.",
+    "feedback": {
+      "correctItalian": "Bravo! Utile quando non hai internet.",
+      "incorrectItalian": "No, è la mappa scaricata sul telefono.",
+      "correctEnglish": "Well done! Useful when you don't have internet.",
+      "incorrectEnglish": "No, it's the map downloaded on the phone."
+    }
+  },
+  {
+    "id": "tech-map-p16",
+    "italian": "Scarica la mappa.",
+    "english": "Download the map.",
+    "type": "phrase",
+    "choicesItalian": ["Scarica la mappa.", "Guarda la mappa.", "Chiudi la mappa.", "Invia la mappa."],
+    "choicesEnglish": ["Download the map.", "Look at the map.", "Close the map.", "Send the map."],
+    "correctAnswer": "Scarica la mappa.",
+    "feedback": {
+      "correctItalian": "Esatto! Salvare i dati cartografici.",
+      "incorrectItalian": "No, significa fare il download.",
+      "correctEnglish": "Exactly! Saving cartographic data.",
+      "incorrectEnglish": "No, it means downloading."
+    }
+  },
+  {
+    "id": "tech-map-p17",
+    "italian": "La batteria è scarica.",
+    "english": "The battery is dead / low.",
+    "type": "phrase",
+    "choicesItalian": ["La batteria è scarica.", "Il telefono è nuovo.", "C'è molta luce.", "Ho il caricatore."],
+    "choicesEnglish": ["The battery is dead / low.", "The phone is new.", "There's a lot of light.", "I have the charger."],
+    "correctAnswer": "La batteria è scarica.",
+    "feedback": {
+      "correctItalian": "Ottimo! Un problema quando usi molto il GPS.",
+      "incorrectItalian": "No, significa che manca energia.",
+      "correctEnglish": "Great! A problem when you use GPS a lot.",
+      "incorrectEnglish": "No, it means energy is missing."
+    }
+  },
+  {
+    "id": "tech-map-p18",
+    "italian": "Siamo arrivati.",
+    "english": "We have arrived.",
+    "type": "phrase",
+    "choicesItalian": ["Siamo arrivati.", "Partiamo ora.", "Torniamo indietro.", "Siamo persi."],
+    "choicesEnglish": ["We have arrived.", "We're leaving now.", "We're going back.", "We're lost."],
+    "correctAnswer": "Siamo arrivati.",
+    "feedback": {
+      "correctItalian": "Giusto! Hai raggiunto la meta.",
+      "incorrectItalian": "No, indica la fine del viaggio.",
+      "correctEnglish": "Right! You have reached your destination.",
+      "incorrectEnglish": "No, it indicates the end of the trip."
+    }
+  },
+  {
+    "id": "tech-map-p19",
+    "italian": "Sulla sinistra.",
+    "english": "On the left.",
+    "type": "phrase",
+    "choicesItalian": ["Sulla sinistra.", "Sulla destra.", "Davanti.", "Dietro."],
+    "choicesEnglish": ["On the left.", "On the right.", "In front.", "Behind."],
+    "correctAnswer": "Sulla sinistra.",
+    "feedback": {
+      "correctItalian": "Perfetto! Indica il lato dove si trova il posto.",
+      "incorrectItalian": "No, significa dal lato sinistro.",
+      "correctEnglish": "Perfect! Indicates the side where the place is located.",
+      "incorrectEnglish": "No, it means on the left side."
+    }
+  },
+  {
+    "id": "tech-map-p20",
+    "italian": "Grazie dell'aiuto.",
+    "english": "Thanks for the help.",
+    "type": "phrase",
+    "choicesItalian": ["Grazie dell'aiuto.", "Prego.", "Scusa.", "Per favore."],
+    "choicesEnglish": ["Thanks for the help.", "You're welcome.", "Sorry.", "Please."],
+    "correctAnswer": "Grazie dell'aiuto.",
+    "feedback": {
+      "correctItalian": "Bravo! Gentilezza dopo aver ricevuto indicazioni.",
+      "incorrectItalian": "No, stai ringraziando.",
+      "correctEnglish": "Well done! Kindness after receiving directions.",
+      "incorrectEnglish": "No, you are thanking."
+    }
+  },
+  {
+    "id": "tech-map-p21",
+    "italian": "Prendi l'autostrada.",
+    "english": "Take the highway.",
+    "type": "phrase",
+    "choicesItalian": ["Prendi l'autostrada.", "Vai in centro.", "Usa la bici.", "Cammina piano."],
+    "choicesEnglish": ["Take the highway.", "Go downtown.", "Use the bike.", "Walk slowly."],
+    "correctAnswer": "Prendi l'autostrada.",
+    "feedback": {
+      "correctItalian": "Esatto! Una strada veloce a più corsie.",
+      "incorrectItalian": "No, parla della grande arteria stradale.",
+      "correctEnglish": "Exactly! A fast multi-lane road.",
+      "incorrectEnglish": "No, it talks about the major road artery."
+    }
+  },
+  {
+    "id": "tech-map-p22",
+    "italian": "Evita il pedaggio.",
+    "english": "Avoid tolls.",
+    "type": "phrase",
+    "choicesItalian": ["Evita il pedaggio.", "Paga il biglietto.", "Usa il tunnel.", "Gira a destra."],
+    "choicesEnglish": ["Avoid tolls.", "Pay the ticket.", "Use the tunnel.", "Turn right."],
+    "correctAnswer": "Evita il pedaggio.",
+    "feedback": {
+      "correctItalian": "Giusto! Per non pagare le strade a pagamento.",
+      "incorrectItalian": "No, significa non passare dove si paga.",
+      "correctEnglish": "Right! So as not to pay for toll roads.",
+      "incorrectEnglish": "No, it means not passing where you pay."
+    }
+  },
+  {
+    "id": "tech-map-p23",
+    "italian": "Traffico intenso.",
+    "english": "Heavy traffic.",
+    "type": "phrase",
+    "choicesItalian": ["Traffico intenso.", "Strada libera.", "Lavori in corso.", "Incidente."],
+    "choicesEnglish": ["Heavy traffic.", "Clear road.", "Work in progress.", "Accident."],
+    "correctAnswer": "Traffico intenso.",
+    "feedback": {
+      "correctItalian": "Ottimo! Quando ci sono troppe macchine.",
+      "incorrectItalian": "No, significa traffico pesante.",
+      "correctEnglish": "Great! When there are too many cars.",
+      "incorrectEnglish": "No, it means heavy traffic."
+    }
+  },
+  {
+    "id": "tech-map-p24",
+    "italian": "C'è un incidente.",
+    "english": "There is an accident.",
+    "type": "phrase",
+    "choicesItalian": ["C'è un incidente.", "Tutto ok.", "Il meteo è bello.", "Siamo arrivati."],
+    "choicesEnglish": ["There is an accident.", "Everything ok.", "The weather is nice.", "We have arrived."],
+    "correctAnswer": "C'è un incidente.",
+    "feedback": {
+      "correctItalian": "Esatto! Un imprevisto sulla strada.",
+      "incorrectItalian": "No, parla di uno scontro tra veicoli.",
+      "correctEnglish": "Exactly! An unexpected event on the road.",
+      "incorrectEnglish": "No, it talks about a collision between vehicles."
+    }
+  },
+  {
+    "id": "tech-map-p25",
+    "italian": "Lavori in corso.",
+    "english": "Work in progress.",
+    "type": "phrase",
+    "choicesItalian": ["Lavori in corso.", "Strada aperta.", "Nuova via.", "Semaforo verde."],
+    "choicesEnglish": ["Work in progress.", "Open road.", "New street.", "Green light."],
+    "correctAnswer": "Lavori in corso.",
+    "feedback": {
+      "correctItalian": "Bravo! Cantieri sulla carreggiata.",
+      "incorrectItalian": "No, significa che stanno aggiustando la strada.",
+      "correctEnglish": "Well done! Construction sites on the roadway.",
+      "incorrectEnglish": "No, it means they are fixing the road."
+    }
+  },
+  {
+    "id": "tech-map-p26",
+    "italian": "Quanto dista?",
+    "english": "How far is it?",
+    "type": "phrase",
+    "choicesItalian": ["Quanto dista?", "Quanto costa?", "Come va?", "Dov'è?"],
+    "choicesEnglish": ["How far is it?", "How much is it?", "How is it going?", "Where is it?"],
+    "correctAnswer": "Quanto dista?",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere la distanza fisica.",
+      "incorrectItalian": "No, chiedi la lontananza.",
+      "correctEnglish": "Right! Asking for physical distance.",
+      "incorrectEnglish": "No, you're asking about the distance."
+    }
+  },
+  {
+    "id": "tech-map-p27",
+    "italian": "Destinazione raggiunta.",
+    "english": "Destination reached.",
+    "type": "phrase",
+    "choicesItalian": ["Destinazione raggiunta.", "Inizio viaggio.", "Errore mappa.", "Segnale debole."],
+    "choicesEnglish": ["Destination reached.", "Start trip.", "Map error.", "Weak signal."],
+    "correctAnswer": "Destinazione raggiunta.",
+    "feedback": {
+      "correctItalian": "Perfetto! Sei arrivato dove volevi.",
+      "incorrectItalian": "No, indica la fine della navigazione.",
+      "correctEnglish": "Perfect! You arrived where you wanted.",
+      "incorrectEnglish": "No, it indicates the end of navigation."
+    }
+  },
+  {
+    "id": "tech-map-p28",
+    "italian": "Usa la voce.",
+    "english": "Use voice.",
+    "type": "phrase",
+    "choicesItalian": ["Usa la voce.", "Scrivi tu.", "Guarda bene.", "Ascolta musica."],
+    "choicesEnglish": ["Use voice.", "You write.", "Look carefully.", "Listen to music."],
+    "correctAnswer": "Usa la voce.",
+    "feedback": {
+      "correctItalian": "Esatto! Comandi vocali per la sicurezza.",
+      "incorrectItalian": "No, significa parlare all'app.",
+      "correctEnglish": "Exactly! Voice commands for safety.",
+      "incorrectEnglish": "No, it means talking to the app."
+    }
+  },
+  {
+    "id": "tech-map-p29",
+    "italian": "Metti l'audio.",
+    "english": "Turn on audio.",
+    "type": "phrase",
+    "choicesItalian": ["Metti l'audio.", "Spegni tutto.", "Abbassa volume.", "Metti muto."],
+    "choicesEnglish": ["Turn on audio.", "Turn off everything.", "Lower volume.", "Mute."],
+    "correctAnswer": "Metti l'audio.",
+    "feedback": {
+      "correctItalian": "Ottimo! Per sentire le indicazioni a voce.",
+      "incorrectItalian": "No, vuoi attivare il suono.",
+      "correctEnglish": "Great! To hear voice directions.",
+      "incorrectEnglish": "No, you want to activate the sound."
+    }
+  },
+  {
+    "id": "tech-map-p30",
+    "italian": "Dov'è il parcheggio?",
+    "english": "Where is the parking?",
+    "type": "phrase",
+    "choicesItalian": ["Dov'è il parcheggio?", "Dov'è la piazza?", "Dov'è il bar?", "Dov'è l'uscita?"],
+    "choicesEnglish": ["Where is the parking?", "Where is the square?", "Where is the bar?", "Where is the exit?"],
+    "correctAnswer": "Dov'è il parcheggio?",
+    "feedback": {
+      "correctItalian": "Bravo! Cercare un posto per l'auto.",
+      "incorrectItalian": "No, cerchi dove lasciare la macchina.",
+      "correctEnglish": "Well done! Searching for a place for the car.",
+      "incorrectEnglish": "No, you're looking for where to leave the car."
+    }
+  },
+  {
+    "id": "tech-map-p31",
+    "italian": "Il percorso è lungo.",
+    "english": "The route is long.",
+    "type": "phrase",
+    "choicesItalian": ["Il percorso è lungo.", "La strada è breve.", "È vicino.", "Siamo qui."],
+    "choicesEnglish": ["The route is long.", "The road is short.", "It is near.", "We are here."],
+    "correctAnswer": "Il percorso è lungo.",
+    "feedback": {
+      "correctItalian": "Esatto! Ci vorrà molto tempo.",
+      "incorrectItalian": "No, indica che c'è molta strada.",
+      "correctEnglish": "Exactly! It will take a lot of time.",
+      "incorrectEnglish": "No, it indicates there is a long way."
+    }
+  },
+  {
+    "id": "tech-map-p32",
+    "italian": "Guarda il tragitto.",
+    "english": "Look at the journey / path.",
+    "type": "phrase",
+    "choicesItalian": ["Guarda il tragitto.", "Chiudi l'app.", "Chiama casa.", "Invia indirizzo."],
+    "choicesEnglish": ["Look at the journey / path.", "Close the app.", "Call home.", "Send address."],
+    "correctAnswer": "Guarda il tragitto.",
+    "feedback": {
+      "correctItalian": "Giusto! Esaminare la strada programmata.",
+      "incorrectItalian": "No, significa controllare il percorso.",
+      "correctEnglish": "Right! Examining the planned road.",
+      "incorrectEnglish": "No, it means checking the route."
+    }
+  },
+  {
+    "id": "tech-map-p33",
+    "italian": "Spegni lo schermo.",
+    "english": "Turn off the screen.",
+    "type": "phrase",
+    "choicesItalian": ["Spegni lo schermo.", "Accendi luce.", "Guarda qui.", "Tocca piano."],
+    "choicesEnglish": ["Turn off the screen.", "Turn on light.", "Look here.", "Touch gently."],
+    "correctAnswer": "Spegni lo schermo.",
+    "feedback": {
+      "correctItalian": "Bravo! Per risparmiare batteria.",
+      "incorrectItalian": "No, significa spegnere il display.",
+      "correctEnglish": "Well done! To save battery.",
+      "incorrectEnglish": "No, it means turning off the display."
+    }
+  },
+  {
+    "id": "tech-map-p34",
+    "italian": "Distanza in metri.",
+    "english": "Distance in meters.",
+    "type": "phrase",
+    "choicesItalian": ["Distanza in metri.", "Tempo in minuti.", "Velocità in km/h.", "Peso in chili."],
+    "choicesEnglish": ["Distance in meters.", "Time in minutes.", "Speed in km/h.", "Weight in kilos."],
+    "correctAnswer": "Distanza in metri.",
+    "feedback": {
+      "correctItalian": "Esatto! Un'unità di misura per brevi distanze.",
+      "incorrectItalian": "No, parla di metri.",
+      "correctEnglish": "Exactly! A unit of measurement for short distances.",
+      "incorrectEnglish": "No, it talks about meters."
+    }
+  },
+  {
+    "id": "tech-map-p35",
+    "italian": "Inversione a U.",
+    "english": "U-turn.",
+    "type": "phrase",
+    "choicesItalian": ["Inversione a U.", "Gira a destra.", "Vai dritto.", "Fermati subito."],
+    "choicesEnglish": ["U-turn.", "Turn right.", "Go straight.", "Stop immediately."],
+    "correctAnswer": "Inversione a U.",
+    "feedback": {
+      "correctItalian": "Ottimo! Tornare indietro sulla stessa strada.",
+      "incorrectItalian": "No, significa cambiare senso di marcia.",
+      "correctEnglish": "Great! Going back on the same road.",
+      "incorrectEnglish": "No, it means changing direction of travel."
+    }
+  },
+  {
+    "id": "tech-map-p36",
+    "italian": "Metti il muto.",
+    "english": "Mute.",
+    "type": "phrase",
+    "choicesItalian": ["Metti il muto.", "Alza audio.", "Parla ora.", "Spegni app."],
+    "choicesEnglish": ["Mute.", "Turn up audio.", "Speak now.", "Turn off app."],
+    "correctAnswer": "Metti il muto.",
+    "feedback": {
+      "correctItalian": "Giusto! Togliere il suono delle indicazioni.",
+      "incorrectItalian": "No, significa silenziare.",
+      "correctEnglish": "Right! Removing the sound of directions.",
+      "incorrectEnglish": "No, it means to silence."
+    }
+  },
+  {
+    "id": "tech-map-p37",
+    "italian": "Zoom avanti.",
+    "english": "Zoom in.",
+    "type": "phrase",
+    "choicesItalian": ["Zoom avanti.", "Zoom indietro.", "Sposta mappa.", "Chiudi tutto."],
+    "choicesEnglish": ["Zoom in.", "Zoom out.", "Move map.", "Close everything."],
+    "correctAnswer": "Zoom avanti.",
+    "feedback": {
+      "correctItalian": "Perfetto! Ingrandire la mappa.",
+      "incorrectItalian": "No, significa ingrandire la visuale.",
+      "correctEnglish": "Perfect! Enlarge the map.",
+      "incorrectEnglish": "No, it means to enlarge the view."
+    }
+  },
+  {
+    "id": "tech-map-p38",
+    "italian": "Vicina all'arrivo.",
+    "english": "Near the arrival.",
+    "type": "phrase",
+    "choicesItalian": ["Vicina all'arrivo.", "Lontano dal via.", "Siamo a metà.", "Torniamo."],
+    "choicesEnglish": ["Near the arrival.", "Far from the start.", "We're halfway.", "Let's return."],
+    "correctAnswer": "Vicina all'arrivo.",
+    "feedback": {
+      "correctItalian": "Bravo! Stai per raggiungere la destinazione.",
+      "incorrectItalian": "No, indica che manca pochissimo.",
+      "correctEnglish": "Well done! You are about to reach the destination.",
+      "incorrectEnglish": "No, it indicates that very little is left."
+    }
+  },
+  {
+    "id": "tech-map-p39",
+    "italian": "Cerca distributore.",
+    "english": "Search for gas station.",
+    "type": "phrase",
+    "choicesItalian": ["Cerca distributore.", "Cerca bar.", "Cerca hotel.", "Cerca banca."],
+    "choicesEnglish": ["Search for gas station.", "Search for bar.", "Search for hotel.", "Search for bank."],
+    "correctAnswer": "Cerca distributore.",
+    "feedback": {
+      "correctItalian": "Esatto! Per fare benzina o ricaricare l'auto.",
+      "incorrectItalian": "No, cerchi carburante.",
+      "correctEnglish": "Exactly! To get gas or recharge the car.",
+      "incorrectEnglish": "No, you're looking for fuel."
+    }
+  },
+  {
+    "id": "tech-map-p40",
+    "italian": "Mappa satellitare.",
+    "english": "Satellite map.",
+    "type": "phrase",
+    "choicesItalian": ["Mappa satellitare.", "Mappa stradale.", "Mappa 3D.", "Mappa politica."],
+    "choicesEnglish": ["Satellite map.", "Street map.", "3D map.", "Political map."],
+    "correctAnswer": "Mappa satellitare.",
+    "feedback": {
+      "correctItalian": "Giusto! Visuale con foto dal satellite.",
+      "incorrectItalian": "No, è la visuale realistica.",
+      "correctEnglish": "Right! View with satellite photos.",
+      "incorrectEnglish": "No, it's the realistic view."
+    }
+  },
+  {
+    "id": "tech-map-p41",
+    "italian": "Qual è il tragitto?",
+    "english": "What is the journey?",
+    "type": "phrase",
+    "choicesItalian": ["Qual è il tragitto?", "Dove vai?", "Che ora è?", "Come stai?"],
+    "choicesEnglish": ["What is the journey?", "Where are you going?", "What time is it?", "How are you?"],
+    "correctAnswer": "Qual è il tragitto?",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere informazioni sul percorso.",
+      "incorrectItalian": "No, chiedi la strada programmata.",
+      "correctEnglish": "Great! Asking for information about the route.",
+      "incorrectEnglish": "No, you're asking about the planned road."
+    }
+  },
+  {
+    "id": "tech-map-p42",
+    "italian": "Andiamo a piedi.",
+    "english": "Let's go on foot.",
+    "type": "phrase",
+    "choicesItalian": ["Andiamo a piedi.", "Prendiamo l'auto.", "Usa il bus.", "Chiama taxi."],
+    "choicesEnglish": ["Let's go on foot.", "Let's take the car.", "Use the bus.", "Call a taxi."],
+    "correctAnswer": "Andiamo a piedi.",
+    "feedback": {
+      "correctItalian": "Bravo! Una decisione sulla modalità di spostamento.",
+      "incorrectItalian": "No, significa camminare.",
+      "correctEnglish": "Well done! A decision on the mode of travel.",
+      "incorrectEnglish": "No, it means walking."
+    }
+  },
+  {
+    "id": "tech-map-p43",
+    "italian": "Spegni il navigatore.",
+    "english": "Turn off the navigator.",
+    "type": "phrase",
+    "choicesItalian": ["Spegni il navigatore.", "Accendi radio.", "Guarda strada.", "Fermati."],
+    "choicesEnglish": ["Turn off the navigator.", "Turn on radio.", "Look at the road.", "Stop."],
+    "correctAnswer": "Spegni il navigatore.",
+    "feedback": {
+      "correctItalian": "Esatto! Non servono più le indicazioni.",
+      "incorrectItalian": "No, significa chiudere la guida.",
+      "correctEnglish": "Exactly! Directions are no longer needed.",
+      "incorrectEnglish": "No, it means closing the guide."
+    }
+  },
+  {
+    "id": "tech-map-p44",
+    "italian": "Ho perso la bussola.",
+    "english": "I've lost my bearings / compass.",
+    "type": "phrase",
+    "choicesItalian": ["Ho perso la bussola.", "Ho la bussola.", "Dov'è il nord?", "Guarda qui."],
+    "choicesEnglish": ["I've lost my bearings / compass.", "I have the compass.", "Where is north?", "Look here."],
+    "correctAnswer": "Ho perso la bussola.",
+    "feedback": {
+      "correctItalian": "Giusto! Un modo di dire per dire che sei confuso.",
+      "incorrectItalian": "No, significa essere smarriti.",
+      "correctEnglish": "Right! An idiom to say you are confused.",
+      "incorrectEnglish": "No, it means being lost."
+    }
+  },
+  {
+    "id": "tech-map-p45",
+    "italian": "Condividi posizione.",
+    "english": "Share location.",
+    "type": "phrase",
+    "choicesItalian": ["Condividi posizione.", "Nascondi tutto.", "Invia foto.", "Chiama ora."],
+    "choicesEnglish": ["Share location.", "Hide everything.", "Send photo.", "Call now."],
+    "correctAnswer": "Condividi posizione.",
+    "feedback": {
+      "correctItalian": "Ottimo! Far sapere agli altri dove sei.",
+      "incorrectItalian": "No, significa mandare le tue coordinate.",
+      "correctEnglish": "Great! Letting others know where you are.",
+      "incorrectEnglish": "No, it means sending your coordinates."
+    }
+  },
+  {
+    "id": "tech-map-p46",
+    "italian": "Metti nei preferiti.",
+    "english": "Put in favorites.",
+    "type": "phrase",
+    "choicesItalian": ["Metti nei preferiti.", "Cancella posto.", "Non salvare.", "Guarda dopo."],
+    "choicesEnglish": ["Put in favorites.", "Delete place.", "Don't save.", "Look later."],
+    "correctAnswer": "Metti nei preferiti.",
+    "feedback": {
+      "correctItalian": "Bravo! Per ritrovare il posto facilmente.",
+      "incorrectItalian": "No, significa salvare tra i preferiti.",
+      "correctEnglish": "Well done! To find the place easily.",
+      "incorrectEnglish": "No, it means saving among favorites."
+    }
+  },
+  {
+    "id": "tech-map-p47",
+    "italian": "Quale linea prendo?",
+    "english": "Which line do I take?",
+    "type": "phrase",
+    "choicesItalian": ["Quale linea prendo?", "Dove vado?", "Chi chiamo?", "Cosa mangio?"],
+    "choicesEnglish": ["Which line do I take?", "Where do I go?", "Who do I call?", "What do I eat?"],
+    "correctAnswer": "Quale linea prendo?",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedere informazioni sui mezzi pubblici.",
+      "incorrectItalian": "No, chiedi del bus o della metro.",
+      "correctEnglish": "Exactly! Asking for information on public transport.",
+      "incorrectEnglish": "No, you're asking about the bus or metro."
+    }
+  },
+  {
+    "id": "tech-map-p48",
+    "italian": "Dov'è la fermata?",
+    "english": "Where is the stop?",
+    "type": "phrase",
+    "choicesItalian": ["Dov'è la fermata?", "Dov'è la stazione?", "Dov'è il porto?", "Dov'è l'aeroporto?"],
+    "choicesEnglish": ["Where is the stop?", "Where is the station?", "Where is the port?", "Where is the airport?"],
+    "correctAnswer": "Dov'è la fermata?",
+    "feedback": {
+      "correctItalian": "Giusto! Cerchi il punto di sosta del bus.",
+      "incorrectItalian": "No, cerchi dove fermarti.",
+      "correctEnglish": "Right! You're looking for the bus stop.",
+      "incorrectEnglish": "No, you're looking for where to stop."
+    }
+  },
+  {
+    "id": "tech-map-p49",
+    "italian": "Tempo rimanente.",
+    "english": "Time remaining.",
+    "type": "phrase",
+    "choicesItalian": ["Tempo rimanente.", "Ora di arrivo.", "Durata totale.", "Inizio viaggio."],
+    "choicesEnglish": ["Time remaining.", "Arrival time.", "Total duration.", "Trip start."],
+    "correctAnswer": "Tempo rimanente.",
+    "feedback": {
+      "correctItalian": "Ottimo! Quanto manca alla fine del percorso.",
+      "incorrectItalian": "No, è il tempo che resta.",
+      "correctEnglish": "Great! How much is left until the end of the route.",
+      "incorrectEnglish": "No, it's the time that remains."
+    }
+  },
+  {
+    "id": "tech-map-p50",
+    "italian": "Destinazione a destra.",
+    "english": "Destination on the right.",
+    "type": "phrase",
+    "choicesItalian": ["Destinazione a destra.", "Gira a sinistra.", "Vai dritto.", "Torna via."],
+    "choicesEnglish": ["Destination on the right.", "Turn left.", "Go straight.", "Go away."],
+    "correctAnswer": "Destinazione a destra.",
+    "feedback": {
+      "correctItalian": "Perfetto! Il punto d'arrivo è dal lato destro.",
+      "incorrectItalian": "No, significa che sei quasi arrivato a destra.",
+      "correctEnglish": "Perfect! The arrival point is on the right side.",
+      "incorrectEnglish": "No, it means you've almost arrived on the right."
+    }
+  },
+  {
+    "id": "tech-map-p51",
+    "italian": "Percorso più veloce.",
+    "english": "Fastest route.",
+    "type": "phrase",
+    "choicesItalian": ["Percorso più veloce.", "Strada panoramica.", "Via più breve.", "Senza traffico."],
+    "choicesEnglish": ["Fastest route.", "Scenic route.", "Shortest way.", "No traffic."],
+    "correctAnswer": "Percorso più veloce.",
+    "feedback": {
+      "correctItalian": "Esatto! La strada che richiede meno tempo.",
+      "incorrectItalian": "No, scegli la via più rapida.",
+      "correctEnglish": "Exactly! The road that takes the least time.",
+      "incorrectEnglish": "No, you choose the quickest way."
+    }
+  },
+  {
+    "id": "tech-map-p52",
+    "italian": "Mappa 3D.",
+    "english": "3D map.",
+    "type": "phrase",
+    "choicesItalian": ["Mappa 3D.", "Mappa piatta.", "Foto aerea.", "Schizzo."],
+    "choicesEnglish": ["3D map.", "Flat map.", "Aerial photo.", "Sketch."],
+    "correctAnswer": "Mappa 3D.",
+    "feedback": {
+      "correctItalian": "Giusto! Visualizzazione tridimensionale degli edifici.",
+      "incorrectItalian": "No, è la visuale in tre dimensioni.",
+      "correctEnglish": "Right! Three-dimensional visualization of buildings.",
+      "incorrectEnglish": "No, it's the three-dimensional view."
+    }
+  },
+  {
+    "id": "tech-map-p53",
+    "italian": "Segui le indicazioni.",
+    "english": "Follow the directions.",
+    "type": "phrase",
+    "choicesItalian": ["Segui le indicazioni.", "Guarda i cartelli.", "Non ascoltare.", "Fai da te."],
+    "choicesEnglish": ["Follow the directions.", "Look at the signs.", "Don't listen.", "Do it yourself."],
+    "correctAnswer": "Segui le indicazioni.",
+    "feedback": {
+      "correctItalian": "Bravo! Fai quello che dice il navigatore.",
+      "incorrectItalian": "No, significa obbedire alle istruzioni.",
+      "correctEnglish": "Well done! Do what the navigator says.",
+      "incorrectEnglish": "No, it means obeying the instructions."
+    }
+  },
+  {
+    "id": "tech-map-p54",
+    "italian": "C'è un autovelox.",
+    "english": "There is a speed camera.",
+    "type": "phrase",
+    "choicesItalian": ["C'è un autovelox.", "C'è la polizia.", "Strada chiusa.", "Zona ZTL."],
+    "choicesEnglish": ["There is a speed camera.", "There is police.", "Closed road.", "ZTL zone."],
+    "correctAnswer": "C'è un autovelox.",
+    "feedback": {
+      "correctItalian": "Esatto! Controllo della velocità in corso.",
+      "incorrectItalian": "No, parla del rilevatore di velocità.",
+      "correctEnglish": "Exactly! Speed control in progress.",
+      "incorrectEnglish": "No, it talks about the speed detector."
+    }
+  },
+  {
+    "id": "tech-map-p55",
+    "italian": "Zona a traffico limitato.",
+    "english": "Limited traffic zone (ZTL).",
+    "type": "phrase",
+    "choicesItalian": ["Zona a traffico limitato.", "Parcheggio libero.", "Centro storico.", "Area pedonale."],
+    "choicesEnglish": ["Limited traffic zone (ZTL).", "Free parking.", "Historic center.", "Pedestrian area."],
+    "correctAnswer": "Zona a traffico limitato.",
+    "feedback": {
+      "correctItalian": "Ottimo! Attenzione a non entrare senza permesso.",
+      "incorrectItalian": "No, è la zona dove non tutti possono guidare.",
+      "correctEnglish": "Great! Be careful not to enter without permission.",
+      "incorrectEnglish": "No, it's the zone where not everyone can drive."
+    }
+  },
+  {
+    "id": "tech-map-p56",
+    "italian": "Vicolo stretto.",
+    "english": "Narrow alley.",
+    "type": "phrase",
+    "choicesItalian": ["Vicolo stretto.", "Viale largo.", "Piazza grande.", "Tunnel lungo."],
+    "choicesEnglish": ["Narrow alley.", "Wide avenue.", "Big square.", "Long tunnel."],
+    "correctAnswer": "Vicolo stretto.",
+    "feedback": {
+      "correctItalian": "Giusto! Una stradina molto piccola.",
+      "incorrectItalian": "No, parla di una via angusta.",
+      "correctEnglish": "Right! A very small street.",
+      "incorrectEnglish": "No, it talks about a narrow way."
+    }
+  },
+  {
+    "id": "tech-map-p57",
+    "italian": "Spegni la voce.",
+    "english": "Turn off the voice.",
+    "type": "phrase",
+    "choicesItalian": ["Spegni la voce.", "Alza volume.", "Metti musica.", "Parla forte."],
+    "choicesEnglish": ["Turn off the voice.", "Turn up volume.", "Play music.", "Speak loud."],
+    "correctAnswer": "Spegni la voce.",
+    "feedback": {
+      "correctItalian": "Bravo! Se non vuoi sentire le istruzioni.",
+      "incorrectItalian": "No, significa silenziare la guida vocale.",
+      "correctEnglish": "Well done! If you don't want to hear the instructions.",
+      "incorrectEnglish": "No, it means muting the voice guidance."
+    }
+  },
+  {
+    "id": "tech-map-p58",
+    "italian": "Naviga verso casa.",
+    "english": "Navigate towards home.",
+    "type": "phrase",
+    "choicesItalian": ["Naviga verso casa.", "Vai al lavoro.", "Cerca hotel.", "Torna indietro."],
+    "choicesEnglish": ["Navigate towards home.", "Go to work.", "Search for hotel.", "Go back."],
+    "correctAnswer": "Naviga verso casa.",
+    "feedback": {
+      "correctItalian": "Esatto! Imposta il percorso per tornare a casa.",
+      "incorrectItalian": "No, la destinazione è la tua abitazione.",
+      "correctEnglish": "Exactly! Set the route to return home.",
+      "incorrectEnglish": "No, the destination is your home."
+    }
+  },
+  {
+    "id": "tech-map-p59",
+    "italian": "Aggiorna posizione.",
+    "english": "Update location.",
+    "type": "phrase",
+    "choicesItalian": ["Aggiorna posizione.", "Ferma tutto.", "Chiudi mappa.", "Invia SMS."],
+    "choicesEnglish": ["Update location.", "Stop everything.", "Close map.", "Send SMS."],
+    "correctAnswer": "Aggiorna posizione.",
+    "feedback": {
+      "correctItalian": "Giusto! Ricaricare la propria posizione GPS.",
+      "incorrectItalian": "No, significa rinfrescare le coordinate.",
+      "correctEnglish": "Right! Reloading your own GPS position.",
+      "incorrectEnglish": "No, it means refreshing the coordinates."
+    }
+  },
+  {
+    "id": "tech-map-p60",
+    "italian": "Siamo arrivati a destinazione.",
+    "english": "We have arrived at destination.",
+    "type": "phrase",
+    "choicesItalian": ["Siamo arrivati a destinazione.", "Iniziamo ora.", "Manca molto.", "Siamo persi."],
+    "choicesEnglish": ["We have arrived at destination.", "We start now.", "A lot is left.", "We're lost."],
+    "correctAnswer": "Siamo arrivati a destinazione.",
+    "feedback": {
+      "correctItalian": "Perfetto! Fine del viaggio programmato.",
+      "incorrectItalian": "No, indica che sei giunto alla meta.",
+      "correctEnglish": "Perfect! End of the planned trip.",
+      "incorrectEnglish": "No, it indicates that you have reached the goal."
     }
   }
 ]

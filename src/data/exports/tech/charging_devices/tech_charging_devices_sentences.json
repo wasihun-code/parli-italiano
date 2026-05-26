@@ -1,87 +1,1252 @@
 [
   {
-    "id": "s101-s5",
-    "italian": "C'è una presa USB disponibile sull'aereo o in aeroporto?",
-    "english": "Is there a USB port available on the plane or at the airport?",
-    "type": "sentence",
-    "choices": [
-      "C'è una presa USB disponibile sull'aereo o in aeroporto?",
-      "Mi scusi, c'è una presa libera per caricare il cellulare?",
-      "Ho portato il mio power bank per i lunghi viaggi in treno.",
-      "Non posso usare la spina senza un adattatore europeo."
-    ],
-    "correctAnswer": "C'è una presa USB disponibile sull'aereo o in aeroporto?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"C'è una presa USB disponibile sull'aereo o in aeroporto?\"."
-    }
-  },
-  {
-    "id": "s101-s3",
-    "italian": "Ho portato il mio power bank per i lunghi viaggi in treno.",
-    "english": "I brought my power bank for long train trips.",
-    "type": "sentence",
-    "choices": [
-      "C'è una presa USB disponibile sull'aereo o in aeroporto?",
-      "Ho portato il mio power bank per i lunghi viaggi in treno.",
-      "Mi scusi, c'è una presa libera per caricare il cellulare?",
-      "Non posso usare la spina senza un adattatore europeo."
-    ],
-    "correctAnswer": "Ho portato il mio power bank per i lunghi viaggi in treno.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho portato il mio power bank per i lunghi viaggi in treno.\"."
-    }
-  },
-  {
-    "id": "s101-s4",
-    "italian": "Non posso usare la spina senza un adattatore europeo.",
-    "english": "I cannot use the plug without a European adapter.",
-    "type": "sentence",
-    "choices": [
-      "Non posso usare la spina senza un adattatore europeo.",
-      "Ho portato il mio power bank per i lunghi viaggi in treno.",
-      "Mi scusi, c'è una presa libera per caricare il cellulare?",
-      "Devo caricare il portatile perché la batteria è scarica."
-    ],
-    "correctAnswer": "Non posso usare la spina senza un adattatore europeo.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Non posso usare la spina senza un adattatore europeo.\"."
-    }
-  },
-  {
-    "id": "s101-s1",
-    "italian": "Devo caricare il portatile perché la batteria è scarica.",
-    "english": "I need to charge the laptop because the battery is low.",
-    "type": "sentence",
-    "choices": [
-      "C'è una presa USB disponibile sull'aereo o in aeroporto?",
-      "Devo caricare il portatile perché la batteria è scarica.",
-      "Mi scusi, c'è una presa libera per caricare il cellulare?",
-      "Ho portato il mio power bank per i lunghi viaggi in treno."
-    ],
-    "correctAnswer": "Devo caricare il portatile perché la batteria è scarica.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Devo caricare il portatile perché la batteria è scarica.\"."
-    }
-  },
-  {
-    "id": "s101-s2",
-    "italian": "Mi scusi, c'è una presa libera per caricare il cellulare?",
+    "id": "charge-s1",
+    "italian": "Scusi, c'è una presa libera per caricare il cellulare?",
     "english": "Excuse me, is there a free outlet to charge the cell phone?",
     "type": "sentence",
-    "choices": [
-      "Mi scusi, c'è una presa libera per caricare il cellulare?",
-      "Devo caricare il portatile perché la batteria è scarica.",
-      "C'è una presa USB disponibile sull'aereo o in aeroporto?",
-      "Non posso usare la spina senza un adattatore europeo."
+    "choicesItalian": [
+      "Scusi, c'è una presa libera per caricare il cellulare?",
+      "Mi dà un caricabatterie per favore?",
+      "Dov'è il negozio di telefonia più vicino?",
+      "Il mio telefono è rotto, può aiutarmi?"
     ],
-    "correctAnswer": "Mi scusi, c'è una presa libera per caricare il cellulare?",
+    "choicesEnglish": [
+      "Excuse me, is there a free outlet to charge the cell phone?",
+      "Can you give me a charger please?",
+      "Where is the nearest phone shop?",
+      "My phone is broken, can you help me?"
+    ],
+    "correctAnswer": "Scusi, c'è una presa libera per caricare il cellulare?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi scusi, c'è una presa libera per caricare il cellulare?\"."
+      "correctItalian": "Ottimo! Una domanda molto utile nei luoghi pubblici.",
+      "incorrectItalian": "No, stai cercando una presa libera.",
+      "correctEnglish": "Great! A very useful question in public places.",
+      "incorrectEnglish": "No, you are looking for a free outlet."
+    }
+  },
+  {
+    "id": "charge-s2",
+    "italian": "Certo, c'è una presa proprio dietro quel tavolo.",
+    "english": "Sure, there's an outlet right behind that table.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Certo, c'è una presa proprio dietro quel tavolo.",
+      "Mi dispiace, non abbiamo caricatori qui.",
+      "Il tavolo è occupato, deve aspettare.",
+      "La spina è rotta, non la usi."
+    ],
+    "choicesEnglish": [
+      "Sure, there's an outlet right behind that table.",
+      "I'm sorry, we don't have chargers here.",
+      "The table is occupied, you have to wait.",
+      "The plug is broken, don't use it."
+    ],
+    "correctAnswer": "Certo, c'è una presa proprio dietro quel tavolo.",
+    "feedback": {
+      "correctItalian": "Bene! Una risposta cortese che indica la posizione della presa.",
+      "incorrectItalian": "No, stai indicando dove si trova la presa.",
+      "correctEnglish": "Good! A polite response indicating the outlet's location.",
+      "incorrectEnglish": "No, you're indicating where the outlet is."
+    }
+  },
+  {
+    "id": "charge-s3",
+    "italian": "Ho dimenticato il mio cavetto, posso prestargli il suo?",
+    "english": "I forgot my cable, can I borrow yours?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ho dimenticato il mio cavetto, posso prestargli il suo?",
+      "Mi vende un cavetto USB per favore?",
+      "Ho perso il caricabatterie in treno.",
+      "Il mio telefono non si carica bene."
+    ],
+    "choicesEnglish": [
+      "I forgot my cable, can I borrow yours?",
+      "Can you sell me a USB cable please?",
+      "I lost my charger on the train.",
+      "My phone doesn't charge well."
+    ],
+    "correctAnswer": "Ho dimenticato il mio cavetto, posso prestargli il suo?",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere un prestito con cortesia.",
+      "incorrectItalian": "No, chiedi di prendere in prestito un cavetto.",
+      "correctEnglish": "Right! Asking for a loan with courtesy.",
+      "incorrectEnglish": "No, you're asking to borrow a cable."
+    }
+  },
+  {
+    "id": "charge-s4",
+    "italian": "Sì, ma è un cavo USB-C, va bene lo stesso?",
+    "english": "Yes, but it's a USB-C cable, is that okay anyway?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sì, ma è un cavo USB-C, va bene lo stesso?",
+      "No, il mio telefono è un vecchio modello.",
+      "Sì, il caricabatterie è universale.",
+      "Certo, ecco la mia power bank."
+    ],
+    "choicesEnglish": [
+      "Yes, but it's a USB-C cable, is that okay anyway?",
+      "No, my phone is an old model.",
+      "Yes, the charger is universal.",
+      "Sure, here is my power bank."
+    ],
+    "correctAnswer": "Sì, ma è un cavo USB-C, va bene lo stesso?",
+    "feedback": {
+      "correctItalian": "Ottimo! Verificare il tipo di connettore è fondamentale.",
+      "incorrectItalian": "No, stai specificando che il cavo è USB-C.",
+      "correctEnglish": "Great! Checking the connector type is fundamental.",
+      "incorrectEnglish": "No, you're specifying that the cable is USB-C."
+    }
+  },
+  {
+    "id": "charge-s5",
+    "italian": "La batteria del mio portatile è quasi a zero.",
+    "english": "My laptop battery is almost at zero.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La batteria del mio portatile è quasi a zero.",
+      "Il mio computer è molto veloce.",
+      "Devo spegnere il portatile subito.",
+      "Non trovo la presa del caricatore."
+    ],
+    "choicesEnglish": [
+      "My laptop battery is almost at zero.",
+      "My computer is very fast.",
+      "I need to turn off the laptop immediately.",
+      "I can't find the charger port."
+    ],
+    "correctAnswer": "La batteria del mio portatile è quasi a zero.",
+    "feedback": {
+      "correctItalian": "Bene! Esprimere l'urgenza di una ricarica.",
+      "incorrectItalian": "No, dici che la batteria è finita.",
+      "correctEnglish": "Good! Expressing the urgency of a recharge.",
+      "incorrectEnglish": "No, you're saying the battery is out."
+    }
+  },
+  {
+    "id": "charge-s6",
+    "italian": "Ti serve l'adattatore per le prese italiane?",
+    "english": "Do you need the adapter for Italian outlets?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ti serve l'adattatore per le prese italiane?",
+      "Hai comprato un nuovo telefono?",
+      "La spina è rotta o funziona?",
+      "Dove hai messo il caricatore?"
+    ],
+    "choicesEnglish": [
+      "Do you need the adapter for Italian outlets?",
+      "Did you buy a new phone?",
+      "Is the plug broken or does it work?",
+      "Where did you put the charger?"
+    ],
+    "correctAnswer": "Ti serve l'adattatore per le prese italiane?",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedere se serve un adattatore specifico.",
+      "incorrectItalian": "No, offri o chiedi di un adattatore per l'Italia.",
+      "correctEnglish": "Exactly! Asking if a specific adapter is needed.",
+      "incorrectEnglish": "No, you're offering or asking about an adapter for Italy."
+    }
+  },
+  {
+    "id": "charge-s7",
+    "italian": "Sì, grazie, la mia spina americana non entra.",
+    "english": "Yes, thanks, my American plug won't go in.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sì, grazie, la mia spina americana non entra.",
+      "No, il voltaggio è diverso.",
+      "Certo, la presa è libera.",
+      "Va bene, uso la power bank."
+    ],
+    "choicesEnglish": [
+      "Yes, thanks, my American plug won't go in.",
+      "No, the voltage is different.",
+      "Sure, the outlet is free.",
+      "Okay, I'll use the power bank."
+    ],
+    "correctAnswer": "Sì, grazie, la mia spina americana non entra.",
+    "feedback": {
+      "correctItalian": "Bene! Spiegare il motivo per cui serve l'adattatore.",
+      "incorrectItalian": "No, dici che la spina americana non è compatibile.",
+      "correctEnglish": "Good! Explaining why the adapter is needed.",
+      "incorrectEnglish": "No, you're saying the American plug is not compatible."
+    }
+  },
+  {
+    "id": "charge-s8",
+    "italian": "Il telefono dice 'batteria scarica', devo caricarlo subito.",
+    "english": "The phone says 'low battery', I need to charge it immediately.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il telefono dice 'batteria scarica', devo caricarlo subito.",
+      "Il telefono è spento, non posso chiamare.",
+      "Voglio un telefono con una batteria migliore.",
+      "Non trovo il tasto di accensione."
+    ],
+    "choicesEnglish": [
+      "The phone says 'low battery', I need to charge it immediately.",
+      "The phone is off, I can't call.",
+      "I want a phone with a better battery.",
+      "I can't find the power button."
+    ],
+    "correctAnswer": "Il telefono dice 'batteria scarica', devo caricarlo subito.",
+    "feedback": {
+      "correctItalian": "Giusto! Un avviso del sistema operativo molto comune.",
+      "incorrectItalian": "No, riporti il messaggio del telefono sulla batteria.",
+      "correctEnglish": "Right! A very common operating system warning.",
+      "incorrectEnglish": "No, you're reporting the phone's battery message."
+    }
+  },
+  {
+    "id": "charge-s9",
+    "italian": "Non trovo una presa libera, sono tutte occupate.",
+    "english": "I can't find a free outlet, they are all occupied.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Non trovo una presa libera, sono tutte occupate.",
+      "C'è una presa libera nell'angolo.",
+      "Mi dà una ciabatta elettrica?",
+      "Il caricatore è staccato."
+    ],
+    "choicesEnglish": [
+      "I can't find a free outlet, they are all occupied.",
+      "There's a free outlet in the corner.",
+      "Can you give me a power strip?",
+      "The charger is unplugged."
+    ],
+    "correctAnswer": "Non trovo una presa libera, sono tutte occupate.",
+    "feedback": {
+      "correctItalian": "Ottimo! Una situazione frequente nei treni affollati.",
+      "incorrectItalian": "No, dici che non ci sono posti per caricare.",
+      "correctEnglish": "Great! A frequent situation on crowded trains.",
+      "incorrectEnglish": "No, you're saying there are no places to charge."
+    }
+  },
+  {
+    "id": "charge-s10",
+    "italian": "Se vuoi puoi usare la mia ciabatta, ci sono tre posti.",
+    "english": "If you want you can use my power strip, there are three slots.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Se vuoi puoi usare la mia ciabatta, ci sono tre posti.",
+      "No, la mia ciabatta è già piena.",
+      "Mi serve un'altra presa per il PC.",
+      "La ciabatta è rotta, fai attenzione."
+    ],
+    "choicesEnglish": [
+      "If you want you can use my power strip, there are three slots.",
+      "No, my power strip is already full.",
+      "I need another outlet for the PC.",
+      "The power strip is broken, be careful."
+    ],
+    "correctAnswer": "Se vuoi puoi usare la mia ciabatta, ci sono tre posti.",
+    "feedback": {
+      "correctItalian": "Bene! Un'offerta gentile di condivisione.",
+      "incorrectItalian": "No, offri di usare la tua presa multipla.",
+      "correctEnglish": "Good! A kind offer of sharing.",
+      "incorrectEnglish": "No, you're offering to use your power strip."
+    }
+  },
+  {
+    "id": "charge-s11",
+    "italian": "Il mio caricabatterie si scalda moltissimo, è normale?",
+    "english": "My charger gets very hot, is that normal?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il mio caricabatterie si scalda moltissimo, è normale?",
+      "Il telefono è freddo quando carica.",
+      "Il caricabatterie è nuovo di pacca.",
+      "Non sento nessun rumore strano."
+    ],
+    "choicesEnglish": [
+      "My charger gets very hot, is that normal?",
+      "The phone is cold when charging.",
+      "The charger is brand new.",
+      "I don't hear any strange noise."
+    ],
+    "correctAnswer": "Il mio caricabatterie si scalda moltissimo, è normale?",
+    "feedback": {
+      "correctItalian": "Giusto! Esprimere preoccupazione per il calore.",
+      "incorrectItalian": "No, chiedi se il surriscaldamento è normale.",
+      "correctEnglish": "Right! Expressing concern about the heat.",
+      "incorrectEnglish": "No, you're asking if the overheating is normal."
+    }
+  },
+  {
+    "id": "charge-s12",
+    "italian": "No, staccalo subito, potrebbe essere pericoloso.",
+    "english": "No, unplug it immediately, it could be dangerous.",
+    "type": "sentence",
+    "choicesItalian": [
+      "No, staccalo subito, potrebbe essere pericoloso.",
+      "Sì, è normale che si scaldi un po'.",
+      "Aspetta che finisca la ricarica.",
+      "Lascialo attaccato tutta la notte."
+    ],
+    "choicesEnglish": [
+      "No, unplug it immediately, it could be dangerous.",
+      "Yes, it's normal for it to heat up a bit.",
+      "Wait for the charging to finish.",
+      "Leave it plugged in all night."
+    ],
+    "correctAnswer": "No, staccalo subito, potrebbe essere pericoloso.",
+    "feedback": {
+      "correctItalian": "Esatto! Un consiglio di sicurezza fondamentale.",
+      "incorrectItalian": "No, dai l'ordine di staccare la spina.",
+      "correctEnglish": "Exactly! A fundamental safety tip.",
+      "incorrectEnglish": "No, you're giving the order to unplug it."
+    }
+  },
+  {
+    "id": "charge-s13",
+    "italian": "La ricarica wireless è più comoda ma più lenta.",
+    "english": "Wireless charging is more convenient but slower.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La ricarica wireless è più comoda ma più lenta.",
+      "Preferisco usare il cavo per fare prima.",
+      "Il mio telefono non ha il wireless.",
+      "Quanto costa il caricatore wireless?"
+    ],
+    "choicesEnglish": [
+      "Wireless charging is more convenient but slower.",
+      "I prefer using the cable to finish sooner.",
+      "My phone doesn't have wireless.",
+      "How much does the wireless charger cost?"
+    ],
+    "correctAnswer": "La ricarica wireless è più comoda ma più lenta.",
+    "feedback": {
+      "correctItalian": "Bene! Un confronto tra due modalità di ricarica.",
+      "incorrectItalian": "No, confronti comodità e velocità del wireless.",
+      "correctEnglish": "Good! A comparison between two charging modes.",
+      "incorrectEnglish": "No, you're comparing convenience and speed of wireless."
+    }
+  },
+  {
+    "id": "charge-s14",
+    "italian": "Ho perso il mio caricabatterie universale in aeroporto.",
+    "english": "I lost my universal charger at the airport.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ho perso il mio caricabatterie universale in aeroporto.",
+      "Ho trovato un caricabatterie per terra.",
+      "Mi hanno rubato lo zaino con tutto dentro.",
+      "Devo comprare un nuovo adattatore."
+    ],
+    "choicesEnglish": [
+      "I lost my universal charger at the airport.",
+      "I found a charger on the ground.",
+      "My backpack with everything inside was stolen.",
+      "I need to buy a new adapter."
+    ],
+    "correctAnswer": "Ho perso il mio caricabatterie universale in aeroporto.",
+    "feedback": {
+      "correctItalian": "Giusto! Segnali la perdita di un oggetto importante.",
+      "incorrectItalian": "No, dici di aver perso il caricatore universale.",
+      "correctEnglish": "Right! You're signaling the loss of an important object.",
+      "incorrectEnglish": "No, you're saying you lost your universal charger."
+    }
+  },
+  {
+    "id": "charge-s15",
+    "italian": "Può caricarmi il cellulare dietro al bancone?",
+    "english": "Can you charge my cell phone behind the counter?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Può caricarmi il cellulare dietro al bancone?",
+      "Posso sedermi al bancone per favore?",
+      "Mi dà un caffè e un cornetto?",
+      "Dov'è il bagno di questo bar?"
+    ],
+    "choicesEnglish": [
+      "Can you charge my cell phone behind the counter?",
+      "Can I sit at the counter please?",
+      "Can I have a coffee and a croissant?",
+      "Where is the bathroom of this bar?"
+    ],
+    "correctAnswer": "Può caricarmi il cellulare dietro al bancone?",
+    "feedback": {
+      "correctItalian": "Ottimo! Una richiesta comune nei bar italiani.",
+      "incorrectItalian": "No, chiedi di caricare il telefono al barista.",
+      "correctEnglish": "Great! A common request in Italian bars.",
+      "incorrectEnglish": "No, you're asking the bartender to charge your phone."
+    }
+  },
+  {
+    "id": "charge-s16",
+    "italian": "Sì, mi dia pure il telefono e il cavetto.",
+    "english": "Yes, give me the phone and the cable.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sì, mi dia pure il telefono e il cavetto.",
+      "No, non abbiamo spazio qui dietro.",
+      "Certo, ma deve pagare un euro.",
+      "Il caricabatterie è già occupato."
+    ],
+    "choicesEnglish": [
+      "Yes, give me the phone and the cable.",
+      "No, we don't have space back here.",
+      "Sure, but you have to pay one euro.",
+      "The charger is already occupied."
+    ],
+    "correctAnswer": "Sì, mi dia pure il telefono e il cavetto.",
+    "feedback": {
+      "correctItalian": "Bene! Il barista accetta di aiutarti.",
+      "incorrectItalian": "No, accetti di prendere telefono e cavo.",
+      "correctEnglish": "Good! The bartender agrees to help you.",
+      "incorrectEnglish": "No, you're agreeing to take the phone and cable."
+    }
+  },
+  {
+    "id": "charge-s17",
+    "italian": "La mia batteria non dura nemmeno mezza giornata.",
+    "english": "My battery doesn't even last half a day.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La mia batteria non dura nemmeno mezza giornata.",
+      "La batteria è ancora nuova e potente.",
+      "Il telefono è sempre acceso.",
+      "Uso molto il GPS quando viaggio."
+    ],
+    "choicesEnglish": [
+      "My battery doesn't even last half a day.",
+      "The battery is still new and powerful.",
+      "The phone is always on.",
+      "I use GPS a lot when I travel."
+    ],
+    "correctAnswer": "La mia batteria non dura nemmeno mezza giornata.",
+    "feedback": {
+      "correctItalian": "Giusto! Ti lamenti della scarsa durata della batteria.",
+      "incorrectItalian": "No, dici che la batteria dura pochissimo.",
+      "correctEnglish": "Right! You're complaining about the short battery life.",
+      "incorrectEnglish": "No, you're saying the battery lasts very little."
+    }
+  },
+  {
+    "id": "charge-s18",
+    "italian": "Forse dovresti cambiare la batteria o il telefono.",
+    "english": "Maybe you should change the battery or the phone.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Forse dovresti cambiare la batteria o il telefono.",
+      "Non preoccuparti, è normale.",
+      "Usa meno il cellulare allora.",
+      "Compra una power bank esterna."
+    ],
+    "choicesEnglish": [
+      "Maybe you should change the battery or the phone.",
+      "Don't worry, it's normal.",
+      "Use the cell phone less then.",
+      "Buy an external power bank."
+    ],
+    "correctAnswer": "Forse dovresti cambiare la batteria o il telefono.",
+    "feedback": {
+      "correctItalian": "Bene! Un suggerimento per risolvere il problema.",
+      "incorrectItalian": "No, consigli di sostituire la batteria o il cellulare.",
+      "correctEnglish": "Good! A suggestion to solve the problem.",
+      "incorrectEnglish": "No, you're advising to replace the battery or the cell phone."
+    }
+  },
+  {
+    "id": "charge-s19",
+    "italian": "C'è uno sbalzo di tensione, stacca tutto!",
+    "english": "There's a power surge, unplug everything!",
+    "type": "sentence",
+    "choicesItalian": [
+      "C'è uno sbalzo di tensione, stacca tutto!",
+      "La corrente è andata via, siamo al buio.",
+      "Tutto funziona perfettamente.",
+      "Attacca il computer alla presa."
+    ],
+    "choicesEnglish": [
+      "There's a power surge, unplug everything!",
+      "The power went out, we're in the dark.",
+      "Everything is working perfectly.",
+      "Plug the computer into the outlet."
+    ],
+    "correctAnswer": "C'è uno sbalzo di tensione, stacca tutto!",
+    "feedback": {
+      "correctItalian": "Ottimo! Un avvertimento durante un temporale o guasto.",
+      "incorrectItalian": "No, avverti di uno sbalzo di tensione.",
+      "correctEnglish": "Great! A warning during a storm or fault.",
+      "incorrectEnglish": "No, you're warning of a power surge."
+    }
+  },
+  {
+    "id": "charge-s20",
+    "italian": "Il cavetto USB-C è reversibile, molto comodo.",
+    "english": "The USB-C cable is reversible, very convenient.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il cavetto USB-C è reversibile, molto comodo.",
+      "Il vecchio cavo era più difficile da inserire.",
+      "Non trovo il verso giusto per la spina.",
+      "Il cavo è rotto da entrambi i lati."
+    ],
+    "choicesEnglish": [
+      "The USB-C cable is reversible, very convenient.",
+      "The old cable was harder to insert.",
+      "I can't find the right way for the plug.",
+      "The cable is broken on both sides."
+    ],
+    "correctAnswer": "Il cavetto USB-C è reversibile, molto comodo.",
+    "feedback": {
+      "correctItalian": "Bene! Una nota tecnica sulla praticità del cavo.",
+      "incorrectItalian": "No, parli della reversibilità del cavo USB-C.",
+      "correctEnglish": "Good! A technical note on the cable's practicality.",
+      "incorrectEnglish": "No, you're talking about the reversibility of the USB-C cable."
+    }
+  },
+  {
+    "id": "charge-s21",
+    "italian": "La mia power bank è da diecimila milliampere.",
+    "english": "My power bank is ten thousand milliampere.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La mia power bank è da diecimila milliampere.",
+      "La mia power bank è molto piccola.",
+      "Posso caricare il telefono cinque volte.",
+      "Quanto è costata la tua batteria?"
+    ],
+    "choicesEnglish": [
+      "My power bank is ten thousand milliampere.",
+      "My power bank is very small.",
+      "I can charge my phone five times.",
+      "How much did your battery cost?"
+    ],
+    "correctAnswer": "La mia power bank è da diecimila milliampere.",
+    "feedback": {
+      "correctItalian": "Giusto! Specificare la capacità della batteria esterna.",
+      "incorrectItalian": "No, parli della capacità tecnica della power bank.",
+      "correctEnglish": "Right! Specifying the external battery's capacity.",
+      "incorrectEnglish": "No, you're talking about the power bank's technical capacity."
+    }
+  },
+  {
+    "id": "charge-s22",
+    "italian": "È sufficiente per caricare il tablet?",
+    "english": "Is it enough to charge the tablet?",
+    "type": "sentence",
+    "choicesItalian": [
+      "È sufficiente per caricare il tablet?",
+      "Il tablet è già carico al massimo.",
+      "Non voglio caricare il tablet ora.",
+      "Dov'è finito il tablet?"
+    ],
+    "choicesEnglish": [
+      "Is it enough to charge the tablet?",
+      "The tablet is already fully charged.",
+      "I don't want to charge the tablet now.",
+      "Where did the tablet go?"
+    ],
+    "correctAnswer": "È sufficiente per caricare il tablet?",
+    "feedback": {
+      "correctItalian": "Bene! Chiedere se la potenza è adeguata.",
+      "incorrectItalian": "No, chiedi se la carica basta per il tablet.",
+      "correctEnglish": "Good! Asking if the power is adequate.",
+      "incorrectEnglish": "No, you're asking if the charge is enough for the tablet."
+    }
+  },
+  {
+    "id": "charge-s23",
+    "italian": "Lo stato della batteria è all'ottanta per cento.",
+    "english": "The battery health is at eighty percent.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Lo stato della batteria è all'ottanta per cento.",
+      "Ho ancora molta carica disponibile.",
+      "La batteria è quasi nuova.",
+      "Devo ricaricare il telefono."
+    ],
+    "choicesEnglish": [
+      "The battery health is at eighty percent.",
+      "I still have a lot of charge available.",
+      "The battery is almost new.",
+      "I need to recharge the phone."
+    ],
+    "correctAnswer": "Lo stato della batteria è all'ottanta per cento.",
+    "feedback": {
+      "correctItalian": "Esatto! Si riferisce all'efficienza massima della batteria.",
+      "incorrectItalian": "No, parli dello stato di salute della batteria.",
+      "correctEnglish": "Exactly! It refers to the battery's maximum efficiency.",
+      "incorrectEnglish": "No, you're talking about the battery's health status."
+    }
+  },
+  {
+    "id": "charge-s24",
+    "italian": "Spegni il risparmio energetico se vuoi la ricarica rapida.",
+    "english": "Turn off power saving if you want fast charging.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Spegni il risparmio energetico se vuoi la ricarica rapida.",
+      "Attiva il risparmio energetico subito.",
+      "Il telefono non carica se è acceso.",
+      "Usa un altro caricabatterie."
+    ],
+    "choicesEnglish": [
+      "Turn off power saving if you want fast charging.",
+      "Turn on power saving immediately.",
+      "The phone doesn't charge if it's on.",
+      "Use another charger."
+    ],
+    "correctAnswer": "Spegni il risparmio energetico se vuoi la ricarica rapida.",
+    "feedback": {
+      "correctItalian": "Bene! Un consiglio tecnico per velocizzare i tempi.",
+      "incorrectItalian": "No, suggerisci di togliere il risparmio energetico.",
+      "correctEnglish": "Good! A technical tip to speed up times.",
+      "incorrectEnglish": "No, you're suggesting to remove power saving."
+    }
+  },
+  {
+    "id": "charge-s25",
+    "italian": "Ho inserito la spina ma non succede nulla.",
+    "english": "I inserted the plug but nothing is happening.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ho inserito la spina ma non succede nulla.",
+      "Il telefono sta caricando bene.",
+      "La presa è accesa.",
+      "Ho tolto la spina dalla presa."
+    ],
+    "choicesEnglish": [
+      "I inserted the plug but nothing is happening.",
+      "The phone is charging well.",
+      "The outlet is on.",
+      "I took the plug out of the outlet."
+    ],
+    "correctAnswer": "Ho inserito la spina ma non succede nulla.",
+    "feedback": {
+      "correctItalian": "Giusto! Segnali un malfunzionamento durante il collegamento.",
+      "incorrectItalian": "No, dici che non c'è reazione alla ricarica.",
+      "correctEnglish": "Right! You're signaling a malfunction during the connection.",
+      "incorrectEnglish": "No, you're saying there's no reaction to charging."
+    }
+  },
+  {
+    "id": "charge-s26",
+    "italian": "Prova a cambiare presa o cavetto.",
+    "english": "Try changing the outlet or the cable.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Prova a cambiare presa o cavetto.",
+      "Non toccare nulla, è pericoloso.",
+      "Compra un nuovo telefono allora.",
+      "Aspetta cinque minuti."
+    ],
+    "choicesEnglish": [
+      "Try changing the outlet or the cable.",
+      "Don't touch anything, it's dangerous.",
+      "Buy a new phone then.",
+      "Wait five minutes."
+    ],
+    "correctAnswer": "Prova a cambiare presa o cavetto.",
+    "feedback": {
+      "correctItalian": "Ottimo! I primi passi per il troubleshooting.",
+      "incorrectItalian": "No, suggerisci di provare un'altra presa o cavo.",
+      "correctEnglish": "Great! The first steps for troubleshooting.",
+      "incorrectEnglish": "No, you're suggesting trying another outlet or cable."
+    }
+  },
+  {
+    "id": "charge-s27",
+    "italian": "La ricarica lenta protegge la vita della batteria.",
+    "english": "Slow charging protects the battery life.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La ricarica lenta protegge la vita della batteria.",
+      "La ricarica rapida è sempre la migliore.",
+      "Non caricare mai il telefono di notte.",
+      "La batteria si rompe se carichi piano."
+    ],
+    "choicesEnglish": [
+      "Slow charging protects the battery life.",
+      "Fast charging is always the best.",
+      "Never charge the phone at night.",
+      "The battery breaks if you charge slowly."
+    ],
+    "correctAnswer": "La ricarica lenta protegge la vita della batteria.",
+    "feedback": {
+      "correctItalian": "Bene! Un fatto tecnico sulla salute della batteria.",
+      "incorrectItalian": "No, parli dei vantaggi della ricarica lenta.",
+      "correctEnglish": "Good! A technical fact about battery health.",
+      "incorrectEnglish": "No, you're talking about the benefits of slow charging."
+    }
+  },
+  {
+    "id": "charge-s28",
+    "italian": "Il mio portatile ha solo una porta USB-C per la ricarica.",
+    "english": "My laptop only has one USB-C port for charging.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il mio portatile ha solo una porta USB-C per la ricarica.",
+      "Il mio portatile ha molte porte USB.",
+      "Non posso caricare il computer ora.",
+      "Dov'è il buco per il caricabatterie?"
+    ],
+    "choicesEnglish": [
+      "My laptop only has one USB-C port for charging.",
+      "My laptop has many USB ports.",
+      "I can't charge the computer now.",
+      "Where is the hole for the charger?"
+    ],
+    "correctAnswer": "Il mio portatile ha solo una porta USB-C per la ricarica.",
+    "feedback": {
+      "correctItalian": "Giusto! Descrivere le caratteristiche del proprio dispositivo.",
+      "incorrectItalian": "No, specifichi che c'è solo una porta USB-C.",
+      "correctEnglish": "Right! Describing your device's features.",
+      "incorrectEnglish": "No, you're specifying there's only one USB-C port."
+    }
+  },
+  {
+    "id": "charge-s29",
+    "italian": "È una spina a tre poli, mi serve un riduttore.",
+    "english": "It's a three-prong plug, I need a reducer.",
+    "type": "sentence",
+    "choicesItalian": [
+      "È una spina a tre poli, mi serve un riduttore.",
+      "È una spina a due poli, va bene ovunque.",
+      "Non ho bisogno di riduttori.",
+      "La spina è piatta."
+    ],
+    "choicesEnglish": [
+      "It's a three-prong plug, I need a reducer.",
+      "It's a two-prong plug, it works everywhere.",
+      "I don't need reducers.",
+      "The plug is flat."
+    ],
+    "correctAnswer": "È una spina a tre poli, mi serve un riduttore.",
+    "feedback": {
+      "correctItalian": "Ottimo! 'Riduttore' è un termine comune per adattatore semplice.",
+      "incorrectItalian": "No, dici che serve un riduttore per la spina a tre poli.",
+      "correctEnglish": "Great! 'Riduttore' is a common term for a simple adapter.",
+      "incorrectEnglish": "No, you're saying a reducer is needed for the three-prong plug."
+    }
+  },
+  {
+    "id": "charge-s30",
+    "italian": "Ecco, questo adattatore va bene per le prese schuko.",
+    "english": "Here, this adapter is fine for Schuko outlets.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ecco, questo adattatore va bene per le prese schuko.",
+      "Questo adattatore è per le prese americane.",
+      "Non abbiamo adattatori in questo negozio.",
+      "La presa schuko è rotta."
+    ],
+    "choicesEnglish": [
+      "Here, this adapter is fine for Schuko outlets.",
+      "This adapter is for American outlets.",
+      "We don't have adapters in this store.",
+      "The Schuko outlet is broken."
+    ],
+    "correctAnswer": "Ecco, questo adattatore va bene per le prese schuko.",
+    "feedback": {
+      "correctItalian": "Bene! Identificare l'adattatore corretto.",
+      "incorrectItalian": "No, indichi un adattatore per prese schuko.",
+      "correctEnglish": "Good! Identifying the correct adapter.",
+      "incorrectEnglish": "No, you're indicating an adapter for Schuko outlets."
+    }
+  },
+  {
+    "id": "charge-s31",
+    "italian": "Il telefono è caldo ma la spia è ancora rossa.",
+    "english": "The phone is hot but the light is still red.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il telefono è caldo ma la spia è ancora rossa.",
+      "Il telefono è freddo e la spia è verde.",
+      "La batteria è carica al cento per cento.",
+      "Non vedo nessuna luce sul telefono."
+    ],
+    "choicesEnglish": [
+      "The phone is hot but the light is still red.",
+      "The phone is cold and the light is green.",
+      "The battery is one hundred percent charged.",
+      "I don't see any light on the phone."
+    ],
+    "correctAnswer": "Il telefono è caldo ma la spia è ancora rossa.",
+    "feedback": {
+      "correctItalian": "Giusto! Segnali che la ricarica è in corso ma lenta.",
+      "incorrectItalian": "No, descrivi lo stato attuale della ricarica.",
+      "correctEnglish": "Right! You're signaling that charging is in progress but slow.",
+      "incorrectEnglish": "No, you're describing the current state of the charge."
+    }
+  },
+  {
+    "id": "charge-s32",
+    "italian": "Devo staccare il cellulare, devo scendere dal treno.",
+    "english": "I have to unplug my cell phone, I have to get off the train.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Devo staccare il cellulare, devo scendere dal treno.",
+      "Posso restare sul treno a caricare?",
+      "Dimentico sempre il telefono sul treno.",
+      "Il treno è in ritardo, ho tempo."
+    ],
+    "choicesEnglish": [
+      "I have to unplug my cell phone, I have to get off the train.",
+      "Can I stay on the train to charge?",
+      "I always forget my phone on the train.",
+      "The train is late, I have time."
+    ],
+    "correctAnswer": "Devo staccare il cellulare, devo scendere dal treno.",
+    "feedback": {
+      "correctItalian": "Bene! Una necessità pratica dovuta al viaggio.",
+      "incorrectItalian": "No, dici che devi staccare il telefono perché scendi.",
+      "correctEnglish": "Good! A practical necessity due to travel.",
+      "incorrectEnglish": "No, you're saying you have to unplug the phone because you're getting off."
+    }
+  },
+  {
+    "id": "charge-s33",
+    "italian": "Hai visto dove ho messo la spina?",
+    "english": "Did you see where I put the plug?",
+    "type": "sentence",
+    "choicesItalian": [
+      "Hai visto dove ho messo la spina?",
+      "Dov'è il caricabatterie?",
+      "Ho perso la mia spina italiana.",
+      "La spina è nella borsa."
+    ],
+    "choicesEnglish": [
+      "Did you see where I put the plug?",
+      "Where is the charger?",
+      "I lost my Italian plug.",
+      "The plug is in the bag."
+    ],
+    "correctAnswer": "Hai visto dove ho messo la spina?",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere aiuto per trovare un piccolo oggetto.",
+      "incorrectItalian": "No, cerchi la spina.",
+      "correctEnglish": "Great! Asking for help to find a small object.",
+      "incorrectEnglish": "No, you're looking for the plug."
+    }
+  },
+  {
+    "id": "charge-s34",
+    "italian": "Sì, è caduta sotto la scrivania.",
+    "english": "Yes, it fell under the desk.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sì, è caduta sotto la scrivania.",
+      "No, non l'ho vista.",
+      "È qui sopra il tavolo.",
+      "L'ho messa via io."
+    ],
+    "choicesEnglish": [
+      "Yes, it fell under the desk.",
+      "No, I haven't seen it.",
+      "It's here on the table.",
+      "I put it away."
+    ],
+    "correctAnswer": "Sì, è caduta sotto la scrivania.",
+    "feedback": {
+      "correctItalian": "Bene! Una risposta che aiuta a ritrovare l'oggetto.",
+      "incorrectItalian": "No, indichi che la spina è sotto la scrivania.",
+      "correctEnglish": "Good! An answer that helps find the object.",
+      "incorrectEnglish": "No, you're indicating the plug is under the desk."
+    }
+  },
+  {
+    "id": "charge-s35",
+    "italian": "Il mio computer si spegne se non è collegato alla corrente.",
+    "english": "My computer turns off if it's not plugged into power.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il mio computer si spegne se non è collegato alla corrente.",
+      "La batteria del mio PC dura dieci ore.",
+      "Uso il computer solo senza cavo.",
+      "Il computer è rotto, non si accende."
+    ],
+    "choicesEnglish": [
+      "My computer turns off if it's not plugged into power.",
+      "My PC's battery lasts ten hours.",
+      "I only use the computer without a cable.",
+      "The computer is broken, it won't turn on."
+    ],
+    "correctAnswer": "Il mio computer si spegne se non è collegato alla corrente.",
+    "feedback": {
+      "correctItalian": "Giusto! Segnali che la batteria del PC è completamente andata.",
+      "incorrectItalian": "No, dici che il PC serve sempre collegato.",
+      "correctEnglish": "Right! You're signaling that the PC's battery is completely gone.",
+      "incorrectEnglish": "No, you're saying the PC always needs to be plugged in."
+    }
+  },
+  {
+    "id": "charge-s36",
+    "italian": "Può capitare se la batteria è molto vecchia.",
+    "english": "It can happen if the battery is very old.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Può capitare se la batteria è molto vecchia.",
+      "Sì, succede anche a me.",
+      "Devi comprare un cavo nuovo.",
+      "La corrente è debole oggi."
+    ],
+    "choicesEnglish": [
+      "It can happen if the battery is very old.",
+      "Yes, it happens to me too.",
+      "You need to buy a new cable.",
+      "The current is weak today."
+    ],
+    "correctAnswer": "Può capitare se la batteria è molto vecchia.",
+    "feedback": {
+      "correctItalian": "Bene! Una spiegazione logica per il problema.",
+      "incorrectItalian": "No, spieghi che la vecchiaia della batteria è il motivo.",
+      "correctEnglish": "Good! A logical explanation for the problem.",
+      "incorrectEnglish": "No, you're explaining that the battery's age is the reason."
+    }
+  },
+  {
+    "id": "charge-s37",
+    "italian": "La ricarica wireless non è compatibile con questo modello.",
+    "english": "Wireless charging is not compatible with this model.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La ricarica wireless non è compatibile con questo modello.",
+      "Il wireless funziona benissimo qui.",
+      "Voglio un telefono con ricarica a induzione.",
+      "Dov'è la base di ricarica?"
+    ],
+    "choicesEnglish": [
+      "Wireless charging is not compatible with this model.",
+      "Wireless works great here.",
+      "I want a phone with induction charging.",
+      "Where is the charging base?"
+    ],
+    "correctAnswer": "La ricarica wireless non è compatibile con questo modello.",
+    "feedback": {
+      "correctItalian": "Ottimo! Specificare una mancanza tecnica del dispositivo.",
+      "incorrectItalian": "No, dici che il wireless non va con quel telefono.",
+      "correctEnglish": "Great! Specifying a technical lack of the device.",
+      "incorrectEnglish": "No, you're saying wireless doesn't work with that phone."
+    }
+  },
+  {
+    "id": "charge-s38",
+    "italian": "Peccato, dovrò usare il cavetto classico.",
+    "english": "Too bad, I'll have to use the classic cable.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Peccato, dovrò usare il cavetto classico.",
+      "Meno male, il cavetto è più sicuro.",
+      "Non ho un cavetto classico con me.",
+      "Dov'è il negozio più vicino?"
+    ],
+    "choicesEnglish": [
+      "Too bad, I'll have to use the classic cable.",
+      "Good thing, the cable is safer.",
+      "I don't have a classic cable with me.",
+      "Where is the nearest store?"
+    ],
+    "correctAnswer": "Peccato, dovrò usare il cavetto classico.",
+    "feedback": {
+      "correctItalian": "Bene! Accettare la soluzione alternativa.",
+      "incorrectItalian": "No, dici che userai il cavo normale.",
+      "correctEnglish": "Good! Accepting the alternative solution.",
+      "incorrectEnglish": "No, you're saying you'll use the normal cable."
+    }
+  },
+  {
+    "id": "charge-s39",
+    "italian": "C'è un'entrata USB per caricare dietro al sedile.",
+    "english": "There is a USB input for charging behind the seat.",
+    "type": "sentence",
+    "choicesItalian": [
+      "C'è un'entrata USB per caricare dietro al sedile.",
+      "Il sedile è molto comodo per dormire.",
+      "Non trovo la mia borsa sotto al sedile.",
+      "La presa USB è rotta, non carichi."
+    ],
+    "choicesEnglish": [
+      "There is a USB input for charging behind the seat.",
+      "The seat is very comfortable for sleeping.",
+      "I can't find my bag under the seat.",
+      "The USB port is broken, it won't charge."
+    ],
+    "correctAnswer": "C'è un'entrata USB per caricare dietro al sedile.",
+    "feedback": {
+      "correctItalian": "Giusto! Indicare un servizio utile sui mezzi pubblici.",
+      "incorrectItalian": "No, indichi la posizione della porta USB.",
+      "correctEnglish": "Right! Indicating a useful service on public transport.",
+      "incorrectEnglish": "No, you're indicating the USB port's location."
+    }
+  },
+  {
+    "id": "charge-s40",
+    "italian": "Ottimo, così posso ricaricare durante il viaggio.",
+    "english": "Great, so I can recharge during the journey.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ottimo, così posso ricaricare durante il viaggio.",
+      "Peccato, volevo dormire un po'.",
+      "Non ho il cavetto per caricare.",
+      "Il viaggio è troppo breve per caricare."
+    ],
+    "choicesEnglish": [
+      "Great, so I can recharge during the journey.",
+      "Too bad, I wanted to sleep a bit.",
+      "I don't have the cable to charge.",
+      "The journey is too short to charge."
+    ],
+    "correctAnswer": "Ottimo, così posso ricaricare durante il viaggio.",
+    "feedback": {
+      "correctItalian": "Bene! Esprimere soddisfazione per la possibilità di ricarica.",
+      "incorrectItalian": "No, dici che caricherai mentre viaggi.",
+      "correctEnglish": "Good! Expressing satisfaction at the possibility of recharging.",
+      "incorrectEnglish": "No, you're saying you'll charge while traveling."
+    }
+  },
+  {
+    "id": "charge-s41",
+    "italian": "La spina italiana è diversa da quella britannica.",
+    "english": "The Italian plug is different from the British one.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La spina italiana è diversa da quella britannica.",
+      "In Inghilterra usano le stesse prese.",
+      "Ho comprato una spina universale.",
+      "La presa britannica è più piccola."
+    ],
+    "choicesEnglish": [
+      "The Italian plug is different from the British one.",
+      "In England they use the same outlets.",
+      "I bought a universal plug.",
+      "The British outlet is smaller."
+    ],
+    "correctAnswer": "La spina italiana è diversa da quella britannica.",
+    "feedback": {
+      "correctItalian": "Ottimo! Una constatazione importante per chi viaggia.",
+      "incorrectItalian": "No, confronti le spine di Italia e Gran Bretagna.",
+      "correctEnglish": "Great! An important observation for travelers.",
+      "incorrectEnglish": "No, you're comparing Italian and British plugs."
+    }
+  },
+  {
+    "id": "charge-s42",
+    "italian": "Sì, ti serve un adattatore UK-Italia.",
+    "english": "Yes, you need a UK-Italy adapter.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Sì, ti serve un adattatore UK-Italia.",
+      "No, basta spingere forte.",
+      "Puoi comprare un cavo nuovo.",
+      "Il voltaggio è uguale."
+    ],
+    "choicesEnglish": [
+      "Yes, you need a UK-Italy adapter.",
+      "No, just push hard.",
+      "You can buy a new cable.",
+      "The voltage is the same."
+    ],
+    "correctAnswer": "Sì, ti serve un adattatore UK-Italia.",
+    "feedback": {
+      "correctItalian": "Bene! Un consiglio specifico per il tipo di adattatore.",
+      "incorrectItalian": "No, suggerisci l'adattatore corretto.",
+      "correctEnglish": "Good! A specific tip for the adapter type.",
+      "incorrectEnglish": "No, you're suggesting the correct adapter."
+    }
+  },
+  {
+    "id": "charge-s43",
+    "italian": "Il mio telefono è al cinque per cento, si spegnerà a breve.",
+    "english": "My phone is at five percent, it will turn off shortly.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Il mio telefono è al cinque per cento, si spegnerà a breve.",
+      "Ho ancora metà batteria, sto tranquillo.",
+      "Il telefono è già spento da un'ora.",
+      "Non so quanta batteria rimane."
+    ],
+    "choicesEnglish": [
+      "My phone is at five percent, it will turn off shortly.",
+      "I still have half battery, I'm calm.",
+      "The phone has been off for an hour.",
+      "I don't know how much battery remains."
+    ],
+    "correctAnswer": "Il mio telefono è al cinque per cento, si spegnerà a breve.",
+    "feedback": {
+      "correctItalian": "Giusto! Esprimere l'imminente spegnimento del dispositivo.",
+      "incorrectItalian": "No, dici che il telefono sta per morire.",
+      "correctEnglish": "Right! Expressing the imminent shutdown of the device.",
+      "incorrectEnglish": "No, you're saying the phone is about to die."
+    }
+  },
+  {
+    "id": "charge-s44",
+    "italian": "Tieni, usa la mia power bank, è carica.",
+    "english": "Here, use my power bank, it's charged.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Tieni, usa la mia power bank, è carica.",
+      "No, la mia power bank è scarica.",
+      "Metti il telefono in carica a casa.",
+      "Non ho caricatori con me."
+    ],
+    "choicesEnglish": [
+      "Here, use my power bank, it's charged.",
+      "No, my power bank is dead.",
+      "Put the phone to charge at home.",
+      "I don't have chargers with me."
+    ],
+    "correctAnswer": "Tieni, usa la mia power bank, è carica.",
+    "feedback": {
+      "correctItalian": "Bene! Un gesto di aiuto molto apprezzato.",
+      "incorrectItalian": "No, offri la tua power bank.",
+      "correctEnglish": "Good! A very appreciated gesture of help.",
+      "incorrectEnglish": "No, you're offering your power bank."
+    }
+  },
+  {
+    "id": "charge-s45",
+    "italian": "Grazie mille, mi hai salvato la vita!",
+    "english": "Thank you so much, you saved my life!",
+    "type": "sentence",
+    "choicesItalian": [
+      "Grazie mille, mi hai salvato la vita!",
+      "Grazie per il caffè!",
+      "Sei stato molto gentile.",
+      "Non importa, grazie lo stesso."
+    ],
+    "choicesEnglish": [
+      "Thank you so much, you saved my life!",
+      "Thanks for the coffee!",
+      "You were very kind.",
+      "It doesn't matter, thanks anyway."
+    ],
+    "correctAnswer": "Grazie mille, mi hai salvato la vita!",
+    "feedback": {
+      "correctItalian": "Ottimo! Un'esagerazione comune per ringraziare di un grande favore.",
+      "incorrectItalian": "No, stai ringraziando calorosamente.",
+      "correctEnglish": "Great! A common exaggeration to thank for a big favor.",
+      "incorrectEnglish": "No, you are thanking warmly."
+    }
+  },
+  {
+    "id": "charge-s46",
+    "italian": "Figurati, non c'è di che.",
+    "english": "Don't mention it, you're welcome.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Figurati, non c'è di che.",
+      "Prego, mi dia pure i soldi.",
+      "No, non l'ho fatto per te.",
+      "Arrivederci a presto."
+    ],
+    "choicesEnglish": [
+      "Don't mention it, you're welcome.",
+      "You're welcome, give me the money.",
+      "No, I didn't do it for you.",
+      "See you soon."
+    ],
+    "correctAnswer": "Figurati, non c'è di che.",
+    "feedback": {
+      "correctItalian": "Bene! Una risposta standard e cortese a un ringraziamento.",
+      "incorrectItalian": "No, rispondi al ringraziamento.",
+      "correctEnglish": "Good! A standard and polite response to a thank you.",
+      "incorrectEnglish": "No, you're responding to the thank you."
+    }
+  },
+  {
+    "id": "charge-s47",
+    "italian": "La batteria è carica, la spia è diventata blu.",
+    "english": "The battery is charged, the light has turned blue.",
+    "type": "sentence",
+    "choicesItalian": [
+      "La batteria è carica, la spia è diventata blu.",
+      "La spia è ancora rossa, aspetta.",
+      "Il telefono non carica, la luce è spenta.",
+      "Voglio una luce più forte."
+    ],
+    "choicesEnglish": [
+      "The battery is charged, the light has turned blue.",
+      "The light is still red, wait.",
+      "The phone isn't charging, the light is off.",
+      "I want a stronger light."
+    ],
+    "correctAnswer": "La batteria è carica, la spia è diventata blu.",
+    "feedback": {
+      "correctItalian": "Giusto! Alcuni dispositivi usano il blu per indicare la ricarica completa.",
+      "incorrectItalian": "No, dici che la luce blu indica la ricarica finita.",
+      "correctEnglish": "Right! Some devices use blue to indicate full charge.",
+      "incorrectEnglish": "No, you're saying the blue light indicates finished charging."
+    }
+  },
+  {
+    "id": "charge-s48",
+    "italian": "Va bene, allora scollego il caricatore.",
+    "english": "Okay, then I'll disconnect the charger.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Va bene, allora scollego il caricatore.",
+      "No, lascialo attaccato ancora.",
+      "Il caricatore è rotto, buttalo.",
+      "Scollega anche il computer."
+    ],
+    "choicesEnglish": [
+      "Okay, then I'll disconnect the charger.",
+      "No, leave it plugged in longer.",
+      "The charger is broken, throw it away.",
+      "Disconnect the computer too."
+    ],
+    "correctAnswer": "Va bene, allora scollego il caricatore.",
+    "feedback": {
+      "correctItalian": "Bene! L'azione corretta dopo la ricarica.",
+      "incorrectItalian": "No, dici che stacchi il caricatore.",
+      "correctEnglish": "Good! The correct action after recharging.",
+      "incorrectEnglish": "No, you're saying you're unplugging the charger."
+    }
+  },
+  {
+    "id": "charge-s49",
+    "italian": "Ricordati di staccare anche l'adattatore dalla presa.",
+    "english": "Remember to also unplug the adapter from the outlet.",
+    "type": "sentence",
+    "choicesItalian": [
+      "Ricordati di staccare anche l'adattatore dalla presa.",
+      "Lascia l'adattatore lì, serve dopo.",
+      "L'adattatore è mio, non toccarlo.",
+      "Dov'è finito l'adattatore?"
+    ],
+    "choicesEnglish": [
+      "Remember to also unplug the adapter from the outlet.",
+      "Leave the adapter there, it's needed later.",
+      "The adapter is mine, don't touch it.",
+      "Where did the adapter go?"
+    ],
+    "correctAnswer": "Ricordati di staccare anche l'adattatore dalla presa.",
+    "feedback": {
+      "correctItalian": "Giusto! Un consiglio utile per non dimenticare nulla.",
+      "incorrectItalian": "No, ricordi di togliere l'adattatore.",
+      "correctEnglish": "Right! A useful tip to not forget anything.",
+      "incorrectEnglish": "No, you're reminding to remove the adapter."
+    }
+  },
+  {
+    "id": "charge-s50",
+    "italian": "Giusto, grazie per avermelo ricordato!",
+    "english": "Right, thanks for reminding me!",
+    "type": "sentence",
+    "choicesItalian": [
+      "Giusto, grazie per avermelo ricordato!",
+      "No, non mi serve il tuo aiuto.",
+      "Me ne ero già ricordato.",
+      "Arrivederci e grazie ancora."
+    ],
+    "choicesEnglish": [
+      "Right, thanks for reminding me!",
+      "No, I don't need your help.",
+      "I had already remembered.",
+      "Goodbye and thanks again."
+    ],
+    "correctAnswer": "Giusto, grazie per avermelo ricordato!",
+    "feedback": {
+      "correctItalian": "Perfetto! Un ringraziamento finale per il promemoria.",
+      "incorrectItalian": "No, ringrazi per il promemoria.",
+      "correctEnglish": "Perfect! A final thank you for the reminder.",
+      "incorrectEnglish": "No, you're thanking for the reminder."
     }
   }
 ]

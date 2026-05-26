@@ -1,104 +1,902 @@
 [
   {
-    "id": "s99-p3",
-    "italian": "Prova a riavviare.",
-    "english": "Try to restart it.",
+    "id": "wifi-p1",
+    "italian": "Qual è la password del wifi?",
+    "english": "What is the wifi password?",
     "type": "phrase",
-    "choices": [
-      "Qual è il nome della rete?",
-      "Il segnale è debole.",
-      "Il telefono non si collega.",
-      "Prova a riavviare."
-    ],
-    "correctAnswer": "Prova a riavviare.",
+    "choicesItalian": ["Qual è la password del wifi?", "Dov'è il bagno?", "Quanto costa?", "Come ti chiami?"],
+    "choicesEnglish": ["What is the wifi password?", "Where is the bathroom?", "How much does it cost?", "What is your name?"],
+    "correctAnswer": "Qual è la password del wifi?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Prova a riavviare.\"."
+      "correctItalian": "Esatto! La domanda più importante.",
+      "incorrectItalian": "No, chiedi la password.",
+      "correctEnglish": "Exactly! The most important question.",
+      "incorrectEnglish": "No, you ask for the password."
     }
   },
   {
-    "id": "s99-p4",
+    "id": "wifi-p2",
+    "italian": "Il wifi non funziona.",
+    "english": "The wifi is not working.",
+    "type": "phrase",
+    "choicesItalian": ["Il wifi non funziona.", "Il wifi è veloce.", "Ho il wifi.", "Spegni il wifi."],
+    "choicesEnglish": ["The wifi is not working.", "The wifi is fast.", "I have wifi.", "Turn off the wifi."],
+    "correctAnswer": "Il wifi non funziona.",
+    "feedback": {
+      "correctItalian": "Giusto! Segnali il problema.",
+      "incorrectItalian": "No, dici che non funziona.",
+      "correctEnglish": "Right! You're signaling the problem.",
+      "incorrectEnglish": "No, you say it's not working."
+    }
+  },
+  {
+    "id": "wifi-p3",
+    "italian": "Non riesco a connettermi.",
+    "english": "I can't connect.",
+    "type": "phrase",
+    "choicesItalian": ["Non riesco a connettermi.", "Sono connesso.", "Mi piace internet.", "Chiudi il browser."],
+    "choicesEnglish": ["I can't connect.", "I am connected.", "I like the internet.", "Close the browser."],
+    "correctAnswer": "Non riesco a connettermi.",
+    "feedback": {
+      "correctItalian": "Ottimo! Non riesci a entrare in rete.",
+      "incorrectItalian": "No, dici che non riesci.",
+      "correctEnglish": "Great! You can't get on the network.",
+      "incorrectEnglish": "No, you say you can't."
+    }
+  },
+  {
+    "id": "wifi-p4",
+    "italian": "La password è errata.",
+    "english": "The password is wrong.",
+    "type": "phrase",
+    "choicesItalian": ["La password è errata.", "La password è giusta.", "Non ho la password.", "Scrivi la password."],
+    "choicesEnglish": ["The password is wrong.", "The password is right.", "I don't have the password.", "Write the password."],
+    "correctAnswer": "La password è errata.",
+    "feedback": {
+      "correctItalian": "Esatto! Hai sbagliato a scriverla.",
+      "incorrectItalian": "No, dici che è sbagliata.",
+      "correctEnglish": "Exactly! You mistyped it.",
+      "incorrectEnglish": "No, you say it's wrong."
+    }
+  },
+  {
+    "id": "wifi-p5",
     "italian": "Il segnale è debole.",
     "english": "The signal is weak.",
     "type": "phrase",
-    "choices": [
-      "Sono di nuovo online.",
-      "Il segnale è debole.",
-      "Dice che il codice è errato.",
-      "Il telefono non si collega."
-    ],
+    "choicesItalian": ["Il segnale è debole.", "Il segnale è forte.", "Dov'è il router?", "Spegni tutto."],
+    "choicesEnglish": ["The signal is weak.", "The signal is strong.", "Where is the router?", "Turn off everything."],
     "correctAnswer": "Il segnale è debole.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Il segnale è debole.\"."
+      "correctItalian": "Giusto! C'è poca ricezione.",
+      "incorrectItalian": "No, il segnale è debole.",
+      "correctEnglish": "Right! There is poor reception.",
+      "incorrectEnglish": "No, the signal is weak."
     }
   },
   {
-    "id": "s99-p6",
-    "italian": "Sono di nuovo online.",
-    "english": "I am back online.",
+    "id": "wifi-p6",
+    "italian": "Il segnale è forte qui.",
+    "english": "The signal is strong here.",
     "type": "phrase",
-    "choices": [
-      "Prova a riavviare.",
-      "Qual è il nome della rete?",
-      "Il segnale è debole.",
-      "Sono di nuovo online."
-    ],
-    "correctAnswer": "Sono di nuovo online.",
+    "choicesItalian": ["Il segnale è forte qui.", "Non c'è segnale.", "Il wifi è lento.", "Cambia stanza."],
+    "choicesEnglish": ["The signal is strong here.", "There is no signal.", "The wifi is slow.", "Change rooms."],
+    "correctAnswer": "Il segnale è forte qui.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Sono di nuovo online.\"."
+      "correctItalian": "Bravo! Qui internet va bene.",
+      "incorrectItalian": "No, dici che è forte.",
+      "correctEnglish": "Well done! Internet is fine here.",
+      "incorrectEnglish": "No, you say it's strong."
     }
   },
   {
-    "id": "s99-p1",
-    "italian": "Il telefono non si collega.",
-    "english": "The phone does not connect.",
+    "id": "wifi-p7",
+    "italian": "Prova a riavviare il modem.",
+    "english": "Try to restart the modem.",
     "type": "phrase",
-    "choices": [
-      "Qual è il nome della rete?",
-      "Dice che il codice è errato.",
-      "Sono di nuovo online.",
-      "Il telefono non si collega."
-    ],
-    "correctAnswer": "Il telefono non si collega.",
+    "choicesItalian": ["Prova a riavviare il modem.", "Spegni la luce.", "Chiama un amico.", "Vai a dormire."],
+    "choicesEnglish": ["Try to restart the modem.", "Turn off the light.", "Call a friend.", "Go to sleep."],
+    "correctAnswer": "Prova a riavviare il modem.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Il telefono non si collega.\"."
+      "correctItalian": "Esatto! Il primo consiglio tecnico.",
+      "incorrectItalian": "No, suggerisci il riavvio.",
+      "correctEnglish": "Exactly! The first technical tip.",
+      "incorrectEnglish": "No, you suggest restarting."
     }
   },
   {
-    "id": "s99-p2",
+    "id": "wifi-p8",
+    "italian": "Dov'è il router?",
+    "english": "Where is the router?",
+    "type": "phrase",
+    "choicesItalian": ["Dov'è il router?", "Cos'è il router?", "Chi ha il router?", "Spegni il router."],
+    "choicesEnglish": ["Where is the router?", "What is the router?", "Who has the router?", "Turn off the router."],
+    "correctAnswer": "Dov'è il router?",
+    "feedback": {
+      "correctItalian": "Ottimo! Lo cerchi fisicamente.",
+      "incorrectItalian": "No, chiedi dove si trova.",
+      "correctEnglish": "Great! You're looking for it physically.",
+      "incorrectEnglish": "No, you ask where it is."
+    }
+  },
+  {
+    "id": "wifi-p9",
+    "italian": "La luce è rossa.",
+    "english": "The light is red.",
+    "type": "phrase",
+    "choicesItalian": ["La luce è rossa.", "La luce è verde.", "Non c'è luce.", "Tutto okay."],
+    "choicesEnglish": ["The light is red.", "The light is green.", "There is no light.", "Everything okay."],
+    "correctAnswer": "La luce è rossa.",
+    "feedback": {
+      "correctItalian": "Giusto! Indica un errore.",
+      "incorrectItalian": "No, è rossa.",
+      "correctEnglish": "Right! It indicates an error.",
+      "incorrectEnglish": "No, it's red."
+    }
+  },
+  {
+    "id": "wifi-p10",
+    "italian": "La luce è verde.",
+    "english": "The light is green.",
+    "type": "phrase",
+    "choicesItalian": ["La luce è verde.", "C'è un problema.", "Il modem è spento.", "Spegni tutto."],
+    "choicesEnglish": ["The light is green.", "There is a problem.", "The modem is off.", "Turn off everything."],
+    "correctAnswer": "La luce è verde.",
+    "feedback": {
+      "correctItalian": "Bravo! Significa che funziona.",
+      "incorrectItalian": "No, è verde.",
+      "correctEnglish": "Well done! It means it's working.",
+      "incorrectEnglish": "No, it's green."
+    }
+  },
+  {
+    "id": "wifi-p11",
+    "italian": "Internet è lento oggi.",
+    "english": "Internet is slow today.",
+    "type": "phrase",
+    "choicesItalian": ["Internet è lento oggi.", "Internet è veloce.", "Non ho internet.", "Manca la corrente."],
+    "choicesEnglish": ["Internet is slow today.", "Internet is fast.", "I don't have internet.", "The power is out."],
+    "correctAnswer": "Internet è lento oggi.",
+    "feedback": {
+      "correctItalian": "Esatto! Ti lamenti della velocità.",
+      "incorrectItalian": "No, dici che è lento.",
+      "correctEnglish": "Exactly! You're complaining about the speed.",
+      "incorrectEnglish": "No, you say it's slow."
+    }
+  },
+  {
+    "id": "wifi-p12",
+    "italian": "Non c'è campo qui.",
+    "english": "There is no signal here.",
+    "type": "phrase",
+    "choicesItalian": ["Non c'è campo qui.", "C'è molto spazio.", "Siamo in giardino.", "Vedo bene."],
+    "choicesEnglish": ["There is no signal here.", "There is a lot of space.", "We are in the garden.", "I see well."],
+    "correctAnswer": "Non c'è campo qui.",
+    "feedback": {
+      "correctItalian": "Ottimo! Spieghi che non c'è ricezione.",
+      "incorrectItalian": "No, si dice così.",
+      "correctEnglish": "Great! You explain there's no reception.",
+      "incorrectEnglish": "No, that's how you say it."
+    }
+  },
+  {
+    "id": "wifi-p13",
     "italian": "Qual è il nome della rete?",
     "english": "What is the network name?",
     "type": "phrase",
-    "choices": [
-      "Sono di nuovo online.",
-      "Dice che il codice è errato.",
-      "Qual è il nome della rete?",
-      "Il segnale è debole."
-    ],
+    "choicesItalian": ["Qual è il nome della rete?", "Come ti chiami?", "Dov'è l'ufficio?", "Che ora è?"],
+    "choicesEnglish": ["What is the network name?", "What is your name?", "Where is the office?", "What time is it?"],
     "correctAnswer": "Qual è il nome della rete?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Qual è il nome della rete?\"."
+      "correctItalian": "Corretto! Cerchi l'SSID.",
+      "incorrectItalian": "No, chiedi il nome della rete.",
+      "correctEnglish": "Correct! You're looking for the SSID.",
+      "incorrectEnglish": "No, you ask for the network name."
     }
   },
   {
-    "id": "s99-p5",
-    "italian": "Dice che il codice è errato.",
-    "english": "It says the code is wrong.",
+    "id": "wifi-p14",
+    "italian": "Attiva il wifi sul telefono.",
+    "english": "Turn on the wifi on the phone.",
     "type": "phrase",
-    "choices": [
-      "Prova a riavviare.",
-      "Il segnale è debole.",
-      "Qual è il nome della rete?",
-      "Dice che il codice è errato."
-    ],
-    "correctAnswer": "Dice che il codice è errato.",
+    "choicesItalian": ["Attiva il wifi sul telefono.", "Spegni il telefono.", "Compra un telefono.", "Cerca il telefono."],
+    "choicesEnglish": ["Turn on the wifi on the phone.", "Turn off the phone.", "Buy a phone.", "Search for the phone."],
+    "correctAnswer": "Attiva il wifi sul telefono.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Dice che il codice è errato.\"."
+      "correctItalian": "Esatto! Un'istruzione per connettersi.",
+      "incorrectItalian": "No, dici di attivarlo.",
+      "correctEnglish": "Exactly! An instruction to connect.",
+      "incorrectEnglish": "No, you say to turn it on."
+    }
+  },
+  {
+    "id": "wifi-p15",
+    "italian": "Spegni e riaccendi.",
+    "english": "Turn off and on again.",
+    "type": "phrase",
+    "choicesItalian": ["Spegni e riaccendi.", "Lascia stare.", "Vieni qui.", "Chiama aiuto."],
+    "choicesEnglish": ["Turn off and on again.", "Leave it alone.", "Come here.", "Call for help."],
+    "correctAnswer": "Spegni e riaccendi.",
+    "feedback": {
+      "correctItalian": "Giusto! La soluzione universale.",
+      "incorrectItalian": "No, si dice così.",
+      "correctEnglish": "Right! The universal solution.",
+      "incorrectEnglish": "No, that's how you say it."
+    }
+  },
+  {
+    "id": "wifi-p16",
+    "italian": "La linea è caduta.",
+    "english": "The line dropped.",
+    "type": "phrase",
+    "choicesItalian": ["La linea è caduta.", "La linea è nuova.", "C'è traffico.", "Siamo arrivati."],
+    "choicesEnglish": ["The line dropped.", "The line is new.", "There's traffic.", "We have arrived."],
+    "correctAnswer": "La linea è caduta.",
+    "feedback": {
+      "correctItalian": "Bravo! Quando internet sparisce all'improvviso.",
+      "incorrectItalian": "No, si dice così.",
+      "correctEnglish": "Well done! When internet suddenly disappears.",
+      "incorrectEnglish": "No, that's how you say it."
+    }
+  },
+  {
+    "id": "wifi-p17",
+    "italian": "Chiamo l'assistenza tecnica.",
+    "english": "I'm calling technical support.",
+    "type": "phrase",
+    "choicesItalian": ["Chiamo l'assistenza tecnica.", "Chiamo mia madre.", "Vado a casa.", "Non faccio niente."],
+    "choicesEnglish": ["I'm calling technical support.", "I'm calling my mother.", "I'm going home.", "I'm doing nothing."],
+    "correctAnswer": "Chiamo l'assistenza tecnica.",
+    "feedback": {
+      "correctItalian": "Esatto! Per risolvere il guasto.",
+      "incorrectItalian": "No, chiami l'assistenza.",
+      "correctEnglish": "Exactly! To fix the breakdown.",
+      "incorrectEnglish": "No, you're calling support."
+    }
+  },
+  {
+    "id": "wifi-p18",
+    "italian": "Il modem è caldo.",
+    "english": "The modem is hot.",
+    "type": "phrase",
+    "choicesItalian": ["Il modem è caldo.", "Il modem è freddo.", "Il modem è rotto.", "Dov'è il modem?"],
+    "choicesEnglish": ["The modem is hot.", "The modem is cold.", "The modem is broken.", "Where is the modem?"],
+    "correctAnswer": "Il modem è caldo.",
+    "feedback": {
+      "correctItalian": "Ottimo! Forse sta surriscaldando.",
+      "incorrectItalian": "No, dici che è caldo.",
+      "correctEnglish": "Great! Maybe it's overheating.",
+      "incorrectEnglish": "No, you say it's hot."
+    }
+  },
+  {
+    "id": "wifi-p19",
+    "italian": "Stacca il cavo.",
+    "english": "Unplug the cable.",
+    "type": "phrase",
+    "choicesItalian": ["Stacca il cavo.", "Attacca il cavo.", "Taglia il cavo.", "Cerca il cavo."],
+    "choicesEnglish": ["Unplug the cable.", "Plug in the cable.", "Cut the cable.", "Look for the cable."],
+    "correctAnswer": "Stacca il cavo.",
+    "feedback": {
+      "correctItalian": "Corretto! Per resettare o spostare.",
+      "incorrectItalian": "No, dici di staccarlo.",
+      "correctEnglish": "Correct! To reset or move.",
+      "incorrectEnglish": "No, you say to unplug it."
+    }
+  },
+  {
+    "id": "wifi-p20",
+    "italian": "La password è sul router.",
+    "english": "The password is on the router.",
+    "type": "phrase",
+    "choicesItalian": ["La password è sul router.", "La password è segreta.", "Non c'è password.", "Scrivila tu."],
+    "choicesEnglish": ["The password is on the router.", "The password is secret.", "There is no password.", "You write it."],
+    "correctAnswer": "La password è sul router.",
+    "feedback": {
+      "correctItalian": "Giusto! Di solito è sull'etichetta.",
+      "incorrectItalian": "No, si trova sul router.",
+      "correctEnglish": "Right! It's usually on the label.",
+      "incorrectEnglish": "No, it's on the router."
+    }
+  },
+  {
+    "id": "wifi-p21",
+    "italian": "Non carica la pagina.",
+    "english": "The page is not loading.",
+    "type": "phrase",
+    "choicesItalian": ["Non carica la pagina.", "La pagina è bella.", "Ho finito di leggere.", "Chiudi il libro."],
+    "choicesEnglish": ["The page is not loading.", "The page is beautiful.", "I've finished reading.", "Close the book."],
+    "correctAnswer": "Non carica la pagina.",
+    "feedback": {
+      "correctItalian": "Esatto! Un problema di caricamento browser.",
+      "incorrectItalian": "No, dici che non carica.",
+      "correctEnglish": "Exactly! A browser loading problem.",
+      "incorrectEnglish": "No, you say it's not loading."
+    }
+  },
+  {
+    "id": "wifi-p22",
+    "italian": "La connessione è instabile.",
+    "english": "The connection is unstable.",
+    "type": "phrase",
+    "choicesItalian": ["La connessione è instabile.", "La connessione è fissa.", "Siamo sicuri.", "Tutto bene."],
+    "choicesEnglish": ["The connection is unstable.", "The connection is fixed.", "We are sure.", "All good."],
+    "correctAnswer": "La connessione è instabile.",
+    "feedback": {
+      "correctItalian": "Bravo! Va e viene.",
+      "incorrectItalian": "No, è instabile.",
+      "correctEnglish": "Well done! It comes and goes.",
+      "incorrectEnglish": "No, it's unstable."
+    }
+  },
+  {
+    "id": "wifi-p23",
+    "italian": "Devo resettare tutto.",
+    "english": "I need to reset everything.",
+    "type": "phrase",
+    "choicesItalian": ["Devo resettare tutto.", "Devo pulire casa.", "Voglio dormire.", "Parla con me."],
+    "choicesEnglish": ["I need to reset everything.", "I need to clean the house.", "I want to sleep.", "Talk to me."],
+    "correctAnswer": "Devo resettare tutto.",
+    "feedback": {
+      "correctItalian": "Ottimo! Per tornare alle impostazioni iniziali.",
+      "incorrectItalian": "No, dici di resettare.",
+      "correctEnglish": "Great! To return to initial settings.",
+      "incorrectEnglish": "No, you say to reset."
+    }
+  },
+  {
+    "id": "wifi-p24",
+    "italian": "La fibra è molto veloce.",
+    "english": "Fiber is very fast.",
+    "type": "phrase",
+    "choicesItalian": ["La fibra è molto veloce.", "La fibra è rotta.", "Cos'è la fibra?", "Preferisco il 4G."],
+    "choicesEnglish": ["Fiber is very fast.", "Fiber is broken.", "What is fiber?", "I prefer 4G."],
+    "correctAnswer": "La fibra è molto veloce.",
+    "feedback": {
+      "correctItalian": "Esatto! Un commento sulla tecnologia.",
+      "incorrectItalian": "No, dici che è veloce.",
+      "correctEnglish": "Exactly! A comment on the technology.",
+      "incorrectEnglish": "No, you say it's fast."
+    }
+  },
+  {
+    "id": "wifi-p25",
+    "italian": "Manca internet da un'ora.",
+    "english": "Internet has been down for an hour.",
+    "type": "phrase",
+    "choicesItalian": ["Manca internet da un'ora.", "Internet è tornato ora.", "Siamo felici.", "Guarda il film."],
+    "choicesEnglish": ["Internet has been down for an hour.", "Internet is back now.", "We are happy.", "Watch the movie."],
+    "correctAnswer": "Manca internet da un'ora.",
+    "feedback": {
+      "correctItalian": "Giusto! Spieghi la durata del guasto.",
+      "incorrectItalian": "No, si dice così.",
+      "correctEnglish": "Right! You explain the duration of the failure.",
+      "incorrectEnglish": "No, that's how you say it."
+    }
+  },
+  {
+    "id": "wifi-p26",
+    "italian": "È un problema di zona.",
+    "english": "It's an area problem.",
+    "type": "phrase",
+    "choicesItalian": ["È un problema di zona.", "È un problema mio.", "Non c'è problema.", "Siamo a Roma."],
+    "choicesEnglish": ["It's an area problem.", "It's my problem.", "There is no problem.", "We are in Rome."],
+    "correctAnswer": "È un problema di zona.",
+    "feedback": {
+      "correctItalian": "Bravo! Riguarda tutto il quartiere.",
+      "incorrectItalian": "No, è di zona.",
+      "correctEnglish": "Well done! It affects the whole neighborhood.",
+      "incorrectEnglish": "No, it's an area problem."
+    }
+  },
+  {
+    "id": "wifi-p27",
+    "italian": "Il tecnico arriva domani.",
+    "english": "The technician arrives tomorrow.",
+    "type": "phrase",
+    "choicesItalian": ["Il tecnico arriva domani.", "Il tecnico è qui.", "Non viene nessuno.", "Chiamalo subito."],
+    "choicesEnglish": ["The technician arrives tomorrow.", "The technician is here.", "No one is coming.", "Call him immediately."],
+    "correctAnswer": "Il tecnico arriva domani.",
+    "feedback": {
+      "correctItalian": "Esatto! Un appuntamento per la riparazione.",
+      "incorrectItalian": "No, arriva domani.",
+      "correctEnglish": "Exactly! An appointment for the repair.",
+      "incorrectEnglish": "No, he arrives tomorrow."
+    }
+  },
+  {
+    "id": "wifi-p28",
+    "italian": "Controlla le impostazioni.",
+    "english": "Check the settings.",
+    "type": "phrase",
+    "choicesItalian": ["Controlla le impostazioni.", "Guarda fuori.", "Scrivi un libro.", "Fai colazione."],
+    "choicesEnglish": ["Check the settings.", "Look outside.", "Write a book.", "Have breakfast."],
+    "correctAnswer": "Controlla le impostazioni.",
+    "feedback": {
+      "correctItalian": "Ottimo! Un suggerimento utile.",
+      "incorrectItalian": "No, dici di controllare.",
+      "correctEnglish": "Great! A useful suggestion.",
+      "incorrectEnglish": "No, you say to check."
+    }
+  },
+  {
+    "id": "wifi-p29",
+    "italian": "Spegni il wifi e riaccendi.",
+    "english": "Turn off the wifi and turn it on again.",
+    "type": "phrase",
+    "choicesItalian": ["Spegni il wifi e riaccendi.", "Lascia tutto acceso.", "Butta il telefono.", "Vieni a cena."],
+    "choicesEnglish": ["Turn off the wifi and turn it on again.", "Leave everything on.", "Throw away the phone.", "Come to dinner."],
+    "correctAnswer": "Spegni il wifi e riaccendi.",
+    "feedback": {
+      "correctItalian": "Giusto! Per resettare la connessione sul dispositivo.",
+      "incorrectItalian": "No, si dice così.",
+      "correctEnglish": "Right! To reset the connection on the device.",
+      "incorrectEnglish": "No, that's how you say it."
+    }
+  },
+  {
+    "id": "wifi-p30",
+    "italian": "Sei connesso?",
+    "english": "Are you connected?",
+    "type": "phrase",
+    "choicesItalian": ["Sei connesso?", "Sei stanco?", "Chi sei?", "Dove sei?"],
+    "choicesEnglish": ["Are you connected?", "Are you tired?", "Who are you?", "Where are you?"],
+    "correctAnswer": "Sei connesso?",
+    "feedback": {
+      "correctItalian": "Bravo! Una domanda per verificare.",
+      "incorrectItalian": "No, chiedi della connessione.",
+      "correctEnglish": "Well done! A question to verify.",
+      "incorrectEnglish": "No, you ask about the connection."
+    }
+  },
+  {
+    "id": "wifi-p31",
+    "italian": "Sì, sono online ora.",
+    "english": "Yes, I am online now.",
+    "type": "phrase",
+    "choicesItalian": ["Sì, sono online ora.", "No, sono offline.", "Dormo ancora.", "Vado via."],
+    "choicesEnglish": ["Yes, I am online now.", "No, I am offline.", "I am still sleeping.", "I am leaving."],
+    "correctAnswer": "Sì, sono online ora.",
+    "feedback": {
+      "correctItalian": "Esatto! Tutto funziona.",
+      "incorrectItalian": "No, sei online.",
+      "correctEnglish": "Exactly! Everything is working.",
+      "incorrectEnglish": "No, you are online."
+    }
+  },
+  {
+    "id": "wifi-p32",
+    "italian": "Non trovo la rete.",
+    "english": "I can't find the network.",
+    "type": "phrase",
+    "choicesItalian": ["Non trovo la rete.", "La rete è qui.", "Vedo la rete.", "Spegni la rete."],
+    "choicesEnglish": ["I can't find the network.", "The network is here.", "I see the network.", "Turn off the network."],
+    "correctAnswer": "Non trovo la rete.",
+    "feedback": {
+      "correctItalian": "Ottimo! L'SSID non appare nella lista.",
+      "incorrectItalian": "No, non la trovi.",
+      "correctEnglish": "Great! The SSID doesn't appear in the list.",
+      "incorrectEnglish": "No, you can't find it."
+    }
+  },
+  {
+    "id": "wifi-p33",
+    "italian": "Avvicinati al router.",
+    "english": "Move closer to the router.",
+    "type": "phrase",
+    "choicesItalian": ["Avvicinati al router.", "Vai lontano.", "Chiudi la porta.", "Sali sopra."],
+    "choicesEnglish": ["Move closer to the router.", "Go far away.", "Close the door.", "Go upstairs."],
+    "correctAnswer": "Avvicinati al router.",
+    "feedback": {
+      "correctItalian": "Giusto! Per avere un segnale migliore.",
+      "incorrectItalian": "No, dici di avvicinarsi.",
+      "correctEnglish": "Right! To get a better signal.",
+      "incorrectEnglish": "No, you say to move closer."
+    }
+  },
+  {
+    "id": "wifi-p34",
+    "italian": "Usa il cavo ethernet.",
+    "english": "Use the ethernet cable.",
+    "type": "phrase",
+    "choicesItalian": ["Usa il cavo ethernet.", "Usa il wifi.", "Senza cavi.", "Butta il cavo."],
+    "choicesEnglish": ["Use the ethernet cable.", "Use the wifi.", "Without cables.", "Throw away the cable."],
+    "correctAnswer": "Usa il cavo ethernet.",
+    "feedback": {
+      "correctItalian": "Bravo! Per una connessione più stabile.",
+      "incorrectItalian": "No, suggerisci il cavo.",
+      "correctEnglish": "Well done! For a more stable connection.",
+      "incorrectEnglish": "No, you suggest the cable."
+    }
+  },
+  {
+    "id": "wifi-p35",
+    "italian": "Qual è il tuo provider?",
+    "english": "Who is your provider?",
+    "type": "phrase",
+    "choicesItalian": ["Qual è il tuo provider?", "Come stai?", "Dove lavori?", "Cosa compri?"],
+    "choicesEnglish": ["Who is your provider?", "How are you?", "Where do you work?", "What are you buying?"],
+    "correctAnswer": "Qual è il tuo provider?",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedi chi fornisce internet.",
+      "incorrectItalian": "No, chiedi del provider.",
+      "correctEnglish": "Exactly! You ask who provides the internet.",
+      "incorrectEnglish": "No, you ask about the provider."
+    }
+  },
+  {
+    "id": "wifi-p36",
+    "italian": "Ho pagato la bolletta.",
+    "english": "I paid the bill.",
+    "type": "phrase",
+    "choicesItalian": ["Ho pagato la bolletta.", "Devo pagare ancora.", "Non pago.", "Dov'è il conto?"],
+    "choicesEnglish": ["I paid the bill.", "I still have to pay.", "I'm not paying.", "Where is the bill?"],
+    "correctAnswer": "Ho pagato la bolletta.",
+    "feedback": {
+      "correctItalian": "Ottimo! Quindi non è un problema di credito.",
+      "incorrectItalian": "No, l'hai pagata.",
+      "correctEnglish": "Great! So it's not a credit problem.",
+      "incorrectEnglish": "No, you paid it."
+    }
+  },
+  {
+    "id": "wifi-p37",
+    "italian": "C'è un guasto tecnico.",
+    "english": "There is a technical fault.",
+    "type": "phrase",
+    "choicesItalian": ["C'è un guasto tecnico.", "Tutto è a posto.", "Non so cosa fare.", "Vado via."],
+    "choicesEnglish": ["There is a technical fault.", "Everything is fine.", "I don't know what to do.", "I'm leaving."],
+    "correctAnswer": "C'è un guasto tecnico.",
+    "feedback": {
+      "correctItalian": "Corretto! Qualcosa si è rotto.",
+      "incorrectItalian": "No, c'è un guasto.",
+      "correctEnglish": "Correct! Something broke.",
+      "incorrectEnglish": "No, there is a fault."
+    }
+  },
+  {
+    "id": "wifi-p38",
+    "italian": "Aspetta un attimo.",
+    "english": "Wait a moment.",
+    "type": "phrase",
+    "choicesItalian": ["Aspetta un attimo.", "Vai subito.", "Non ho tempo.", "Vieni domani."],
+    "choicesEnglish": ["Wait a moment.", "Go immediately.", "I don't have time.", "Come tomorrow."],
+    "correctAnswer": "Aspetta un attimo.",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedi di attendere.",
+      "incorrectItalian": "No, chiedi di aspettare.",
+      "correctEnglish": "Right! You ask to wait.",
+      "incorrectEnglish": "No, you ask to wait."
+    }
+  },
+  {
+    "id": "wifi-p39",
+    "italian": "Prova a cambiare canale.",
+    "english": "Try to change the channel.",
+    "type": "phrase",
+    "choicesItalian": ["Prova a cambiare canale.", "Guarda la TV.", "Cambia stanza.", "Spegni tutto."],
+    "choicesEnglish": ["Try to change the channel.", "Watch TV.", "Change rooms.", "Turn off everything."],
+    "correctAnswer": "Prova a cambiare canale.",
+    "feedback": {
+      "correctItalian": "Bravo! Un trucco per migliorare il wifi.",
+      "incorrectItalian": "No, suggerisci il canale.",
+      "correctEnglish": "Well done! A trick to improve wifi.",
+      "incorrectEnglish": "No, you suggest the channel."
+    }
+  },
+  {
+    "id": "wifi-p40",
+    "italian": "Il modem si sta accendendo.",
+    "english": "The modem is turning on.",
+    "type": "phrase",
+    "choicesItalian": ["Il modem si sta accendendo.", "Il modem è spento.", "Il modem è rotto.", "Vedo la luce."],
+    "choicesEnglish": ["The modem is turning on.", "The modem is off.", "The modem is broken.", "I see the light."],
+    "correctAnswer": "Il modem si sta accendendo.",
+    "feedback": {
+      "correctItalian": "Esatto! Sta facendo il boot.",
+      "incorrectItalian": "No, si sta accendendo.",
+      "correctEnglish": "Exactly! It's booting up.",
+      "incorrectEnglish": "No, it's turning on."
+    }
+  },
+  {
+    "id": "wifi-p41",
+    "italian": "Non si collega.",
+    "english": "It doesn't connect.",
+    "type": "phrase",
+    "choicesItalian": ["Non si collega.", "È collegato.", "Mi piace.", "Cosa fai?"],
+    "choicesEnglish": ["It doesn't connect.", "It is connected.", "I like it.", "What are you doing?"],
+    "correctAnswer": "Non si collega.",
+    "feedback": {
+      "correctItalian": "Ottimo! Il problema persiste.",
+      "incorrectItalian": "No, non si collega.",
+      "correctEnglish": "Great! The problem persists.",
+      "incorrectEnglish": "No, it doesn't connect."
+    }
+  },
+  {
+    "id": "wifi-p42",
+    "italian": "La password è lunga.",
+    "english": "The password is long.",
+    "type": "phrase",
+    "choicesItalian": ["La password è lunga.", "La password è corta.", "Non c'è password.", "È facile."],
+    "choicesEnglish": ["The password is long.", "The password is short.", "There is no password.", "It is easy."],
+    "correctAnswer": "La password è lunga.",
+    "feedback": {
+      "correctItalian": "Giusto! Difficile da ricordare.",
+      "incorrectItalian": "No, è lunga.",
+      "correctEnglish": "Right! Hard to remember.",
+      "incorrectEnglish": "No, it's long."
+    }
+  },
+  {
+    "id": "wifi-p43",
+    "italian": "Posso usare il tuo wifi?",
+    "english": "Can I use your wifi?",
+    "type": "phrase",
+    "choicesItalian": ["Posso usare il tuo wifi?", "Vuoi un caffè?", "Dove abiti?", "Chi sei?"],
+    "choicesEnglish": ["Can I use your wifi?", "Do you want a coffee?", "Where do you live?", "Who are you?"],
+    "correctAnswer": "Posso usare il tuo wifi?",
+    "feedback": {
+      "correctItalian": "Bravo! Chiedi il permesso.",
+      "incorrectItalian": "No, chiedi del wifi.",
+      "correctEnglish": "Well done! You ask for permission.",
+      "incorrectEnglish": "No, you ask about the wifi."
+    }
+  },
+  {
+    "id": "wifi-p44",
+    "italian": "Certo, ecco la password.",
+    "english": "Sure, here is the password.",
+    "type": "phrase",
+    "choicesItalian": ["Certo, ecco la password.", "No, non posso.", "Dov'è?", "Chiudi tutto."],
+    "choicesEnglish": ["Sure, here is the password.", "No, I can't.", "Where is it?", "Close everything."],
+    "correctAnswer": "Certo, ecco la password.",
+    "feedback": {
+      "correctItalian": "Esatto! Una risposta gentile.",
+      "incorrectItalian": "No, dai la password.",
+      "correctEnglish": "Exactly! A kind answer.",
+      "incorrectEnglish": "No, you give the password."
+    }
+  },
+  {
+    "id": "wifi-p45",
+    "italian": "Scrivila qui, per favore.",
+    "english": "Write it here, please.",
+    "type": "phrase",
+    "choicesItalian": ["Scrivila qui, per favore.", "Dilla a voce.", "Non scrivere.", "Vai via."],
+    "choicesEnglish": ["Write it here, please.", "Say it out loud.", "Don't write.", "Go away."],
+    "correctAnswer": "Scrivila qui, per favore.",
+    "feedback": {
+      "correctItalian": "Ottimo! Per non sbagliare.",
+      "incorrectItalian": "No, chiedi di scrivere.",
+      "correctEnglish": "Great! So as not to make a mistake.",
+      "incorrectEnglish": "No, you ask to write."
+    }
+  },
+  {
+    "id": "wifi-p46",
+    "italian": "La rete è protetta.",
+    "english": "The network is protected.",
+    "type": "phrase",
+    "choicesItalian": ["La rete è protetta.", "La rete è aperta.", "Non c'è rete.", "Chiudi tutto."],
+    "choicesEnglish": ["The network is protected.", "The network is open.", "There is no network.", "Close everything."],
+    "correctAnswer": "La rete è protetta.",
+    "feedback": {
+      "correctItalian": "Giusto! Serve una password.",
+      "incorrectItalian": "No, è protetta.",
+      "correctEnglish": "Right! A password is needed.",
+      "incorrectEnglish": "No, it's protected."
+    }
+  },
+  {
+    "id": "wifi-p47",
+    "italian": "La rete è libera.",
+    "english": "The network is free / open.",
+    "type": "phrase",
+    "choicesItalian": ["La rete è libera.", "La rete è chiusa.", "Paga ora.", "Spegni tutto."],
+    "choicesEnglish": ["The network is free / open.", "The network is closed.", "Pay now.", "Turn off everything."],
+    "correctAnswer": "La rete è libera.",
+    "feedback": {
+      "correctItalian": "Bravo! Senza password.",
+      "incorrectItalian": "No, è libera.",
+      "correctEnglish": "Well done! No password.",
+      "incorrectEnglish": "No, it's free/open."
+    }
+  },
+  {
+    "id": "wifi-p48",
+    "italian": "C'è un limite di tempo?",
+    "english": "Is there a time limit?",
+    "type": "phrase",
+    "choicesItalian": ["C'è un limite di tempo?", "Quanto costa?", "Dove siamo?", "Chi parla?"],
+    "choicesEnglish": ["Is there a time limit?", "How much does it cost?", "Where are we?", "Who is speaking?"],
+    "correctAnswer": "C'è un limite di tempo?",
+    "feedback": {
+      "correctItalian": "Esatto! Comune negli hotel o bar.",
+      "incorrectItalian": "No, chiedi del tempo.",
+      "correctEnglish": "Exactly! Common in hotels or bars.",
+      "incorrectEnglish": "No, you ask about time."
+    }
+  },
+  {
+    "id": "wifi-p49",
+    "italian": "Il modem non riceve segnale.",
+    "english": "The modem is not receiving signal.",
+    "type": "phrase",
+    "choicesItalian": ["Il modem non riceve segnale.", "Il modem è nuovo.", "Siamo connessi.", "Guarda la luce."],
+    "choicesEnglish": ["The modem is not receiving signal.", "The modem is new.", "We are connected.", "Look at the light."],
+    "correctAnswer": "Il modem non riceve segnale.",
+    "feedback": {
+      "correctItalian": "Ottimo! Un problema della linea esterna.",
+      "incorrectItalian": "No, si dice così.",
+      "correctEnglish": "Great! A problem with the external line.",
+      "incorrectEnglish": "No, that's how you say it."
+    }
+  },
+  {
+    "id": "wifi-p50",
+    "italian": "Dobbiamo aspettare il tecnico.",
+    "english": "We have to wait for the technician.",
+    "type": "phrase",
+    "choicesItalian": ["Dobbiamo aspettare il tecnico.", "Il tecnico è qui.", "Facciamo noi.", "Chiama la polizia."],
+    "choicesEnglish": ["We have to wait for the technician.", "The technician is here.", "Let's do it ourselves.", "Call the police."],
+    "correctAnswer": "Dobbiamo aspettare il tecnico.",
+    "feedback": {
+      "correctItalian": "Giusto! Non possiamo risolvere da soli.",
+      "incorrectItalian": "No, bisogna aspettare.",
+      "correctEnglish": "Right! We can't solve it ourselves.",
+      "incorrectEnglish": "No, we have to wait."
+    }
+  },
+  {
+    "id": "wifi-p51",
+    "italian": "Metti il ripetitore in corridoio.",
+    "english": "Put the repeater in the hallway.",
+    "type": "phrase",
+    "choicesItalian": ["Metti il ripetitore in corridoio.", "Metti il modem in bagno.", "Butta tutto.", "Vieni qui."],
+    "choicesEnglish": ["Put the repeater in the hallway.", "Put the modem in the bathroom.", "Throw everything away.", "Come here."],
+    "correctAnswer": "Metti il ripetitore in corridoio.",
+    "feedback": {
+      "correctItalian": "Bravo! Per portare il segnale in altre stanze.",
+      "incorrectItalian": "No, dici di metterlo in corridoio.",
+      "correctEnglish": "Well done! To bring the signal to other rooms.",
+      "incorrectEnglish": "No, you say to put it in the hallway."
+    }
+  },
+  {
+    "id": "wifi-p52",
+    "italian": "La velocità è bassa.",
+    "english": "The speed is low.",
+    "type": "phrase",
+    "choicesItalian": ["La velocità è bassa.", "La velocità è alta.", "Siamo veloci.", "Chiudi internet."],
+    "choicesEnglish": ["The speed is low.", "The speed is high.", "We are fast.", "Close the internet."],
+    "correctAnswer": "La velocità è bassa.",
+    "feedback": {
+      "correctItalian": "Esatto! Internet va piano.",
+      "incorrectItalian": "No, è bassa.",
+      "correctEnglish": "Exactly! Internet is slow.",
+      "incorrectEnglish": "No, it's low."
+    }
+  },
+  {
+    "id": "wifi-p53",
+    "italian": "Ho riavviato ma non va.",
+    "english": "I restarted but it's not working.",
+    "type": "phrase",
+    "choicesItalian": ["Ho riavviato ma non va.", "Ho riavviato e funziona.", "Non ho riavviato.", "Cos'è successo?"],
+    "choicesEnglish": ["I restarted but it's not working.", "I restarted and it works.", "I didn't restart.", "What happened?"],
+    "correctAnswer": "Ho riavviato ma non va.",
+    "feedback": {
+      "correctItalian": "Ottimo! Hai provato ma il problema resta.",
+      "incorrectItalian": "No, si dice così.",
+      "correctEnglish": "Great! You tried but the problem remains.",
+      "incorrectEnglish": "No, that's how you say it."
+    }
+  },
+  {
+    "id": "wifi-p54",
+    "italian": "Cambia il canale wifi.",
+    "english": "Change the wifi channel.",
+    "type": "phrase",
+    "choicesItalian": ["Cambia il canale wifi.", "Cambia la TV.", "Cambia casa.", "Cambia nome."],
+    "choicesEnglish": ["Change the wifi channel.", "Change the TV.", "Change house.", "Change name."],
+    "correctAnswer": "Cambia il canale wifi.",
+    "feedback": {
+      "correctItalian": "Giusto! Un consiglio tecnico avanzato.",
+      "incorrectItalian": "No, dici di cambiare canale.",
+      "correctEnglish": "Right! An advanced technical tip.",
+      "incorrectEnglish": "No, you say to change channel."
+    }
+  },
+  {
+    "id": "wifi-p55",
+    "italian": "C'è troppa interferenza.",
+    "english": "There is too much interference.",
+    "type": "phrase",
+    "choicesItalian": ["C'è troppa interferenza.", "Tutto è pulito.", "Mi piace la radio.", "Spegni tutto."],
+    "choicesEnglish": ["There is too much interference.", "Everything is clean.", "I like the radio.", "Turn off everything."],
+    "correctAnswer": "C'è troppa interferenza.",
+    "feedback": {
+      "correctItalian": "Bravo! Altri segnali disturbano.",
+      "incorrectItalian": "No, c'è interferenza.",
+      "correctEnglish": "Well done! Other signals are disturbing.",
+      "incorrectEnglish": "No, there is interference."
+    }
+  },
+  {
+    "id": "wifi-p56",
+    "italian": "Il segnale non arriva qui.",
+    "english": "The signal doesn't reach here.",
+    "type": "phrase",
+    "choicesItalian": ["Il segnale non arriva qui.", "Il segnale è perfetto.", "Vedo internet.", "Chi sei?"],
+    "choicesEnglish": ["The signal doesn't reach here.", "The signal is perfect.", "I see internet.", "Who are you?"],
+    "correctAnswer": "Il segnale non arriva qui.",
+    "feedback": {
+      "correctItalian": "Esatto! Siamo fuori portata.",
+      "incorrectItalian": "No, non arriva.",
+      "correctEnglish": "Exactly! We are out of range.",
+      "incorrectEnglish": "No, it doesn't reach."
+    }
+  },
+  {
+    "id": "wifi-p57",
+    "italian": "Metti il modem più in alto.",
+    "english": "Put the modem higher up.",
+    "type": "phrase",
+    "choicesItalian": ["Metti il modem più in alto.", "Metti il modem a terra.", "Nascondi il modem.", "Buttalo via."],
+    "choicesEnglish": ["Put the modem higher up.", "Put the modem on the ground.", "Hide the modem.", "Throw it away."],
+    "correctAnswer": "Metti il modem più in alto.",
+    "feedback": {
+      "correctItalian": "Ottimo! Per migliorare la diffusione.",
+      "incorrectItalian": "No, dici più in alto.",
+      "correctEnglish": "Great! To improve diffusion.",
+      "incorrectEnglish": "No, you say higher up."
+    }
+  },
+  {
+    "id": "wifi-p58",
+    "italian": "La rete è instabile.",
+    "english": "The network is unstable.",
+    "type": "phrase",
+    "choicesItalian": ["La rete è instabile.", "La rete è forte.", "Tutto okay.", "Chiudi internet."],
+    "choicesEnglish": ["The network is unstable.", "The network is strong.", "Everything okay.", "Close internet."],
+    "correctAnswer": "La rete è instabile.",
+    "feedback": {
+      "correctItalian": "Giusto! Va e viene continuamente.",
+      "incorrectItalian": "No, è instabile.",
+      "correctEnglish": "Right! It comes and goes continuously.",
+      "incorrectEnglish": "No, it's unstable."
+    }
+  },
+  {
+    "id": "wifi-p59",
+    "italian": "Devo configurare il router.",
+    "english": "I need to configure the router.",
+    "type": "phrase",
+    "choicesItalian": ["Devo configurare il router.", "Devo comprare il router.", "Ho rotto il router.", "Dov'è?"],
+    "choicesEnglish": ["I need to configure the router.", "I need to buy the router.", "I broke the router.", "Where is it?"],
+    "correctAnswer": "Devo configurare il router.",
+    "feedback": {
+      "correctItalian": "Bravo! Per impostare la rete.",
+      "incorrectItalian": "No, devi configurarlo.",
+      "correctEnglish": "Well done! To set up the network.",
+      "incorrectEnglish": "No, you need to configure it."
+    }
+  },
+  {
+    "id": "wifi-p60",
+    "italian": "Finalmente funziona!",
+    "english": "Finally it's working!",
+    "type": "phrase",
+    "choicesItalian": ["Finalmente funziona!", "Non funziona ancora.", "Basta internet.", "Vado via."],
+    "choicesEnglish": ["Finally it's working!", "It's still not working.", "No more internet.", "I'm leaving."],
+    "correctAnswer": "Finalmente funziona!",
+    "feedback": {
+      "correctItalian": "Esatto! Il problema è risolto.",
+      "incorrectItalian": "No, dici che funziona.",
+      "correctEnglish": "Exactly! The problem is solved.",
+      "incorrectEnglish": "No, you say it's working."
     }
   }
 ]
