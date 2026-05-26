@@ -8,13 +8,36 @@
 - shopping ✅
 - culture ✅
 - health ✅
+- social ✅
 
 ## Completed Scenarios
+- apologizing ✅ (upgraded, social)
+- at_a_party ✅ (upgraded, social)
+- birthday_wishes ✅ (upgraded, social)
+- compliments ✅ (upgraded, social)
+- introducing_yourself ✅ (upgraded, social)
+- inviting_a_friend ✅ (upgraded, social)
+- making_plans ✅ (upgraded, social)
+- phone_call ✅ (upgraded, social)
+- saying_goodbye ✅ (upgraded, social)
+- texting_a_friend ✅ (upgraded, social)
 - buying_medicine ✅ (upgraded, health)
 - dental_problem ✅ (upgraded, health)
 - doctor_appointment ✅ (upgraded, health)
 - emergency_room ✅ (upgraded, health)
 - pharmacy_symptoms ✅ (upgraded, health)
+- art_gallery ✅ (upgraded, culture)
+- church_visit ✅ (validated, culture)
+- cinema_tickets ✅ (upgraded, culture)
+- festival ✅ (upgraded, culture)
+- guided_tour ✅ (upgraded, culture)
+- historic_site ✅ (validated, culture)
+- italian_customs ✅ (validated, culture)
+- live_music ✅ (validated, culture)
+- local_history ✅ (validated, culture)
+- museum_tickets ✅ (validated, culture)
+- sports_match ✅ (validated, culture)
+- theater_evening ✅ (validated, culture)
 - at_the_bank ✅ (s36, daily_life)
 - at_the_gym ✅ (s32, daily_life)
 - at_the_library ✅ (s38, daily_life)
@@ -75,37 +98,14 @@
 - returning_an_item ✅ (validated, shopping)
 - shoe_store ✅ (upgraded, shopping)
 - souvenir_shop ✅ (upgraded, shopping)
-- church_visit ✅ (validated, culture)
-- festival ✅ (upgraded, culture)
-- historic_site ✅ (validated, culture)
-- italian_customs ✅ (validated, culture)
-- live_music ✅ (validated, culture)
-- local_history ✅ (validated, culture)
-- museum_tickets ✅ (validated, culture)
-- sports_match ✅ (validated, culture)
-- theater_evening ✅ (validated, culture)
-- guided_tour ✅ (upgraded, culture)
-- cinema_tickets ✅ (upgraded, culture)
-- art_gallery ✅ (upgraded, culture)
 
 ## Categories Requiring Audit
-- social (undersized phrases/sentences)
-
-## Scenarios Requiring Upgrade (Social)
-- apologizing
-- at_a_party
-- birthday_wishes
-- compliments
-- introducing_yourself
-- inviting_a_friend
-- making_plans
-- phone_call
-- saying_goodbye
-- texting_a_friend
+- work_study (s60-s64)
+- miscellaneous
 
 ## Known Quality Problems
-- missing four-part feedback in older datasets (culture, workstudy, etc.)
-- undersized datasets in older scenarios (culture, workstudy, etc.)
+- missing four-part feedback in older datasets (work_study, etc.)
+- undersized datasets in older scenarios (work_study, etc.)
 
 ## Important Architectural Decisions
 - sentence stage should feel spoken
@@ -117,3 +117,4 @@
 - shorter spoken interactions produce better realism
 - mini-dialogue sentence structures work best
 - emotional realism improves immersion
+- social category requires ultra-high realism (fillers, fragments, imperfections)

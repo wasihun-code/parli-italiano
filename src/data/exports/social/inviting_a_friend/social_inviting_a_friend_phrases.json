@@ -1,104 +1,902 @@
 [
   {
-    "id": "s73-p6",
-    "italian": "Che fai domenica?",
-    "english": "What are you doing Sunday?",
+    "id": "s73-p1",
+    "italian": "Ehi, come va?",
+    "english": "Hey, how's it going?",
     "type": "phrase",
-    "choices": [
-      "Facciamo un aperitivo?",
-      "Sì, vengo volentieri!",
-      "Fammi sapere se puoi.",
-      "Che fai domenica?"
-    ],
-    "correctAnswer": "Che fai domenica?",
+    "choicesItalian": ["Ehi, come va?", "Tutto bene?", "Che si dice?", "Ciao, come stai?"],
+    "choicesEnglish": ["Hey, how's it going?", "Is everything okay?", "What's up?", "Hi, how are you?"],
+    "correctAnswer": "Ehi, come va?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Che fai domenica?\"."
-    }
-  },
-  {
-    "id": "s73-p5",
-    "italian": "Sì, vengo volentieri!",
-    "english": "Yes, I'd love to come!",
-    "type": "phrase",
-    "choices": [
-      "Che fai domenica?",
-      "Sì, vengo volentieri!",
-      "Facciamo un aperitivo?",
-      "Vuoi venire con noi?"
-    ],
-    "correctAnswer": "Sì, vengo volentieri!",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Sì, vengo volentieri!\"."
+      "correctItalian": "Ottimo! Un saluto casual per iniziare.",
+      "incorrectItalian": "No, 'Ehi, come va?' è un saluto informale.",
+      "correctEnglish": "Great! A casual greeting to start.",
+      "incorrectEnglish": "No, 'Ehi, come va?' is an informal greeting."
     }
   },
   {
     "id": "s73-p2",
-    "italian": "Facciamo un aperitivo?",
-    "english": "Shall we have an aperitif?",
+    "italian": "Che fai stasera?",
+    "english": "What are you doing tonight?",
     "type": "phrase",
-    "choices": [
-      "Sì, vengo volentieri!",
-      "Ho trovato un posto carino.",
-      "Che fai domenica?",
-      "Facciamo un aperitivo?"
-    ],
-    "correctAnswer": "Facciamo un aperitivo?",
+    "choicesItalian": ["Che fai stasera?", "Sei libero?", "Dove vai?", "Esci stasera?"],
+    "choicesEnglish": ["What are you doing tonight?", "Are you free?", "Where are you going?", "Are you going out tonight?"],
+    "correctAnswer": "Che fai stasera?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Facciamo un aperitivo?\"."
-    }
-  },
-  {
-    "id": "s73-p1",
-    "italian": "Vuoi venire con noi?",
-    "english": "Do you want to come with us?",
-    "type": "phrase",
-    "choices": [
-      "Che fai domenica?",
-      "Fammi sapere se puoi.",
-      "Vuoi venire con noi?",
-      "Sì, vengo volentieri!"
-    ],
-    "correctAnswer": "Vuoi venire con noi?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Vuoi venire con noi?\"."
-    }
-  },
-  {
-    "id": "s73-p4",
-    "italian": "Fammi sapere se puoi.",
-    "english": "Let me know if you can.",
-    "type": "phrase",
-    "choices": [
-      "Vuoi venire con noi?",
-      "Fammi sapere se puoi.",
-      "Sì, vengo volentieri!",
-      "Che fai domenica?"
-    ],
-    "correctAnswer": "Fammi sapere se puoi.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Fammi sapere se puoi.\"."
+      "correctItalian": "Esatto! La domanda classica prima di un invito.",
+      "incorrectItalian": "No, 'Che fai stasera?' chiede i programmi per la serata.",
+      "correctEnglish": "Exactly! The classic question before an invitation.",
+      "incorrectEnglish": "No, 'Che fai stasera?' asks for tonight's plans."
     }
   },
   {
     "id": "s73-p3",
-    "italian": "Ho trovato un posto carino.",
+    "italian": "Sei libero sabato?",
+    "english": "Are you free Saturday?",
+    "type": "phrase",
+    "choicesItalian": ["Sei libero sabato?", "Lavori sabato?", "Che fai sabato?", "Ci sei sabato?"],
+    "choicesEnglish": ["Are you free Saturday?", "Are you working Saturday?", "What are you doing Saturday?", "Are you around Saturday?"],
+    "correctAnswer": "Sei libero sabato?",
+    "feedback": {
+      "correctItalian": "Bravo! Controllare la disponibilità è il primo passo.",
+      "incorrectItalian": "No, chiedi se la persona è libera.",
+      "correctEnglish": "Well done! Checking availability is the first step.",
+      "incorrectEnglish": "No, you're asking if the person is free."
+    }
+  },
+  {
+    "id": "s73-p4",
+    "italian": "Ti va una pizza?",
+    "english": "Do you feel like a pizza?",
+    "type": "phrase",
+    "choicesItalian": ["Ti va una pizza?", "Vuoi la pizza?", "Mangiamo pizza?", "Prendiamo pizza?"],
+    "choicesEnglish": ["Do you feel like a pizza?", "Do you want pizza?", "Shall we eat pizza?", "Shall we get pizza?"],
+    "correctAnswer": "Ti va una pizza?",
+    "feedback": {
+      "correctItalian": "Giusto! 'Ti va...?' è perfetto per proporre qualcosa.",
+      "incorrectItalian": "No, 'Ti va...?' significa 'Do you feel like...?'.",
+      "correctEnglish": "Correct! 'Ti va...?' is perfect for proposing something.",
+      "incorrectEnglish": "No, 'Ti va...?' means 'Do you feel like...?'."
+    }
+  },
+  {
+    "id": "s73-p5",
+    "italian": "Ci becchiamo dopo?",
+    "english": "Shall we meet up later?",
+    "type": "phrase",
+    "choicesItalian": ["Ci vediamo dopo?", "Ci becchiamo dopo?", "A dopo!", "Ci sei dopo?"],
+    "choicesEnglish": ["See you later?", "Shall we meet up later?", "See you later!", "Are you there later?"],
+    "correctAnswer": "Ci becchiamo dopo?",
+    "feedback": {
+      "correctItalian": "Sì! Molto colloquiale.",
+      "incorrectItalian": "No, 'beccarsi' qui significa incontrarsi.",
+      "correctEnglish": "Yes! Very colloquial.",
+      "incorrectEnglish": "No, 'beccarsi' here means to meet up."
+    }
+  },
+  {
+    "id": "s73-p6",
+    "italian": "Facciamo un aperitivo?",
+    "english": "Shall we have drinks?",
+    "type": "phrase",
+    "choicesItalian": ["Facciamo un aperitivo?", "Andiamo al bar?", "Beviamo qualcosa?", "Ci sei per un drink?"],
+    "choicesEnglish": ["Shall we have drinks?", "Shall we go to the bar?", "Shall we drink something?", "Are you up for a drink?"],
+    "correctAnswer": "Facciamo un aperitivo?",
+    "feedback": {
+      "correctItalian": "Ottimo! Un classico invito italiano.",
+      "incorrectItalian": "No, l'aperitivo è l'invito sociale per eccellenza.",
+      "correctEnglish": "Great! A classic Italian invitation.",
+      "incorrectEnglish": "No, the aperitivo is the social invitation par excellence."
+    }
+  },
+  {
+    "id": "s73-p7",
+    "italian": "Vieni anche tu?",
+    "english": "Are you coming too?",
+    "type": "phrase",
+    "choicesItalian": ["Vieni anche tu?", "Ci sei anche tu?", "Vuoi venire?", "Te ne vai?"],
+    "choicesEnglish": ["Are you coming too?", "Are you there too?", "Do you want to come?", "Are you leaving?"],
+    "correctAnswer": "Vieni anche tu?",
+    "feedback": {
+      "correctItalian": "Esatto! Per includere qualcuno in un piano esistente.",
+      "incorrectItalian": "No, chiedi se la persona partecipa.",
+      "correctEnglish": "Exactly! To include someone in an existing plan.",
+      "incorrectEnglish": "No, you're asking if the person is participating."
+    }
+  },
+  {
+    "id": "s73-p8",
+    "italian": "volentieri, grazie!",
+    "english": "gladly, thanks!",
+    "type": "phrase",
+    "choicesItalian": ["volentieri, grazie!", "va bene, dai", "sì, certo", "magari un'altra volta"],
+    "choicesEnglish": ["gladly, thanks!", "okay, come on", "yes, sure", "maybe another time"],
+    "correctAnswer": "volentieri, grazie!",
+    "feedback": {
+      "correctItalian": "Perfetto! Un modo educato ed entusiasta di accettare.",
+      "incorrectItalian": "No, 'volentieri' indica un sì convinto.",
+      "correctEnglish": "Perfect! A polite and enthusiastic way to accept.",
+      "incorrectEnglish": "No, 'volentieri' indicates a convinced yes."
+    }
+  },
+  {
+    "id": "s73-p9",
+    "italian": "mi piacerebbe molto!",
+    "english": "I'd really like to!",
+    "type": "phrase",
+    "choicesItalian": ["mi piacerebbe molto!", "non posso proprio", "forse ci sono", "va bene"],
+    "choicesEnglish": ["I'd really like to!", "I really can't", "maybe I'll be there", "alright"],
+    "correctAnswer": "mi piacerebbe molto!",
+    "feedback": {
+      "correctItalian": "Bravo! Esprime forte interesse.",
+      "incorrectItalian": "No, esprime il desiderio di partecipare.",
+      "correctEnglish": "Well done! It expresses strong interest.",
+      "incorrectEnglish": "No, it expresses the desire to participate."
+    }
+  },
+  {
+    "id": "s73-p10",
+    "italian": "purtroppo non posso.",
+    "english": "unfortunately I can't.",
+    "type": "phrase",
+    "choicesItalian": ["non voglio venire", "purtroppo non posso", "non ci sono", "sono impegnato"],
+    "choicesEnglish": ["I don't want to come", "unfortunately I can't", "I'm not there", "I'm busy"],
+    "correctAnswer": "purtroppo non posso.",
+    "feedback": {
+      "correctItalian": "Giusto! Un rifiuto gentile.",
+      "incorrectItalian": "No, 'purtroppo' addolcisce il rifiuto.",
+      "correctEnglish": "Correct! A polite refusal.",
+      "incorrectEnglish": "No, 'unfortunately' softens the refusal."
+    }
+  },
+  {
+    "id": "s73-p11",
+    "italian": "ho già un impegno.",
+    "english": "I already have plans.",
+    "type": "phrase",
+    "choicesItalian": ["sono libero", "ho già un impegno", "non ho nulla da fare", "devo studiare"],
+    "choicesEnglish": ["I'm free", "I already have plans", "I have nothing to do", "I have to study"],
+    "correctAnswer": "ho già un impegno.",
+    "feedback": {
+      "correctItalian": "Esatto! Una scusa comune per declinare.",
+      "incorrectItalian": "No, significa che sei già occupato.",
+      "correctEnglish": "Exactly! A common excuse for declining.",
+      "incorrectEnglish": "No, it means you're already busy."
+    }
+  },
+  {
+    "id": "s73-p12",
+    "italian": "facciamo un'altra volta?",
+    "english": "shall we do it another time?",
+    "type": "phrase",
+    "choicesItalian": ["facciamo un'altra volta?", "ci vediamo dopo?", "quando ci sei?", "mai più"],
+    "choicesEnglish": ["shall we do it another time?", "shall we see each other later?", "when are you around?", "never again"],
+    "correctAnswer": "facciamo un'altra volta?",
+    "feedback": {
+      "correctItalian": "Ottimo! Per rimandare l'invito.",
+      "incorrectItalian": "No, proponi di spostare l'incontro.",
+      "correctEnglish": "Great! To postpone the invitation.",
+      "incorrectEnglish": "No, you're proposing to move the meeting."
+    }
+  },
+  {
+    "id": "s73-p13",
+    "italian": "A che ora?",
+    "english": "At what time?",
+    "type": "phrase",
+    "choicesItalian": ["A che ora?", "Quando?", "Quanto tempo?", "A che giorno?"],
+    "choicesEnglish": ["At what time?", "When?", "How much time?", "What day?"],
+    "correctAnswer": "A che ora?",
+    "feedback": {
+      "correctItalian": "Sì! Per definire i dettagli.",
+      "incorrectItalian": "No, chiedi l'orario preciso.",
+      "correctEnglish": "Yes! To define the details.",
+      "incorrectEnglish": "No, you're asking for the precise time."
+    }
+  },
+  {
+    "id": "s73-p14",
+    "italian": "Dove ci vediamo?",
+    "english": "Where shall we meet?",
+    "type": "phrase",
+    "choicesItalian": ["Dove ci vediamo?", "Come ci andiamo?", "Chi viene?", "Cosa facciamo?"],
+    "choicesEnglish": ["Where shall we meet?", "How are we going there?", "Who's coming?", "What are we doing?"],
+    "correctAnswer": "Dove ci vediamo?",
+    "feedback": {
+      "correctItalian": "Bravo! Per stabilire il luogo.",
+      "incorrectItalian": "No, chiedi il posto dell'incontro.",
+      "correctEnglish": "Well done! To establish the place.",
+      "incorrectEnglish": "No, you're asking for the meeting spot."
+    }
+  },
+  {
+    "id": "s73-p15",
+    "italian": "ci sentiamo domani.",
+    "english": "we'll talk tomorrow.",
+    "type": "phrase",
+    "choicesItalian": ["ci sentiamo domani", "ci vediamo domani", "a domani", "scrivimi domani"],
+    "choicesEnglish": ["we'll talk tomorrow", "we'll see each other tomorrow", "see you tomorrow", "write to me tomorrow"],
+    "correctAnswer": "ci sentiamo domani.",
+    "feedback": {
+      "correctItalian": "Giusto! Per rimandare la decisione finale.",
+      "incorrectItalian": "No, 'sentirsi' si riferisce a telefono o messaggi.",
+      "correctEnglish": "Correct! To postpone the final decision.",
+      "incorrectEnglish": "No, 'sentirsi' refers to phone or messages."
+    }
+  },
+  {
+    "id": "s73-p16",
+    "italian": "Ti faccio sapere.",
+    "english": "I'll let you know.",
+    "type": "phrase",
+    "choicesItalian": ["Ti dico tutto", "Ti faccio sapere", "Mi fai sapere", "So tutto"],
+    "choicesEnglish": ["I'll tell you everything", "I'll let you know", "You let me know", "I know everything"],
+    "correctAnswer": "Ti faccio sapere.",
+    "feedback": {
+      "correctItalian": "Esatto! Molto comune se non sei sicuro.",
+      "incorrectItalian": "No, prometti di dare una risposta più tardi.",
+      "correctEnglish": "Exactly! Very common if you're not sure.",
+      "incorrectEnglish": "No, you're promising to give an answer later."
+    }
+  },
+  {
+    "id": "s73-p17",
+    "italian": "fammi sapere se puoi.",
+    "english": "let me know if you can.",
+    "type": "phrase",
+    "choicesItalian": ["fammi sapere se puoi", "dimmi che fai", "vieni?", "puoi venire?"],
+    "choicesEnglish": ["let me know if you can", "tell me what you're doing", "are you coming?", "can you come?"],
+    "correctAnswer": "fammi sapere se puoi.",
+    "feedback": {
+      "correctItalian": "Ottimo! Lascia la porta aperta alla risposta dell'altro.",
+      "incorrectItalian": "No, chiedi un feedback all'invito.",
+      "correctEnglish": "Great! It leaves the door open for the other's response.",
+      "incorrectEnglish": "No, you're asking for feedback on the invitation."
+    }
+  },
+  {
+    "id": "s73-p18",
+    "italian": "Ci sei per un caffè?",
+    "english": "Are you up for a coffee?",
+    "type": "phrase",
+    "choicesItalian": ["Vuoi un caffè?", "Ci sei per un caffè?", "Prendiamo un caffè?", "Ti va il caffè?"],
+    "choicesEnglish": ["Do you want a coffee?", "Are you up for a coffee?", "Shall we have a coffee?", "Do you feel like coffee?"],
+    "correctAnswer": "Ci sei per un caffè?",
+    "feedback": {
+      "correctItalian": "Sì! 'Ci sei per...?' è molto naturale.",
+      "incorrectItalian": "No, è un modo colloquiale per invitare.",
+      "correctEnglish": "Yes! 'Are you up for...?' is very natural.",
+      "incorrectEnglish": "No, it's a colloquial way to invite."
+    }
+  },
+  {
+    "id": "s73-p19",
+    "italian": "che programmi hai?",
+    "english": "what plans do you have?",
+    "type": "phrase",
+    "choicesItalian": ["che fai di bello?", "che programmi hai?", "che progetti hai?", "che studi?"],
+    "choicesEnglish": ["what are you doing?", "what plans do you have?", "what projects do you have?", "what are you studying?"],
+    "correctAnswer": "che programmi hai?",
+    "feedback": {
+      "correctItalian": "Bravo! Un modo un po' più formale ma molto usato.",
+      "incorrectItalian": "No, chiedi cosa ha intenzione di fare l'altro.",
+      "correctEnglish": "Well done! A bit more formal but very common.",
+      "incorrectEnglish": "No, you're asking what the other person intends to do."
+    }
+  },
+  {
+    "id": "s73-p20",
+    "italian": "niente di speciale.",
+    "english": "nothing special.",
+    "type": "phrase",
+    "choicesItalian": ["molte cose", "niente di speciale", "tutto bene", "scusa"],
+    "choicesEnglish": ["many things", "nothing special", "all good", "sorry"],
+    "correctAnswer": "niente di speciale.",
+    "feedback": {
+      "correctItalian": "Giusto! La risposta tipica se sei libero.",
+      "incorrectItalian": "No, significa che non hai impegni particolari.",
+      "correctEnglish": "Correct! The typical answer if you are free.",
+      "incorrectEnglish": "No, it means you have no particular plans."
+    }
+  },
+  {
+    "id": "s73-p21",
+    "italian": "ti andrebbe di uscire?",
+    "english": "would you like to go out?",
+    "type": "phrase",
+    "choicesItalian": ["vuoi uscire?", "ti andrebbe di uscire?", "esci?", "ci vediamo fuori?"],
+    "choicesEnglish": ["do you want to go out?", "would you like to go out?", "are you going out?", "shall we meet outside?"],
+    "correctAnswer": "ti andrebbe di uscire?",
+    "feedback": {
+      "correctItalian": "Esatto! 'Ti andrebbe di...?' è molto gentile.",
+      "incorrectItalian": "No, è un modo ipotetico e cortese per invitare.",
+      "correctEnglish": "Exactly! 'Ti andrebbe di...?' is very polite.",
+      "incorrectEnglish": "No, it's a hypothetical and polite way to invite."
+    }
+  },
+  {
+    "id": "s73-p22",
+    "italian": "volentieri, ma non posso.",
+    "english": "I'd love to, but I can't.",
+    "type": "phrase",
+    "choicesItalian": ["volentieri, ma non posso", "non voglio venire", "no, grazie", "forse dopo"],
+    "choicesEnglish": ["I'd love to, but I can't", "I don't want to come", "no, thanks", "maybe later"],
+    "correctAnswer": "volentieri, ma non posso.",
+    "feedback": {
+      "correctItalian": "Ottimo! Rifiuto perfetto: positivo ma fermo.",
+      "incorrectItalian": "No, indica che vorresti ma hai un ostacolo.",
+      "correctEnglish": "Great! Perfect refusal: positive but firm.",
+      "incorrectEnglish": "No, it indicates you would like to but have an obstacle."
+    }
+  },
+  {
+    "id": "s73-p23",
+    "italian": "organizziamo qualcosa?",
+    "english": "shall we organize something?",
+    "type": "phrase",
+    "choicesItalian": ["che facciamo?", "organizziamo qualcosa?", "usciamo?", "andiamo?"],
+    "choicesEnglish": ["what are we doing?", "shall we organize something?", "shall we go out?", "shall we go?"],
+    "correctAnswer": "organizziamo qualcosa?",
+    "feedback": {
+      "correctItalian": "Sì! Per stimolare il gruppo a fare piani.",
+      "incorrectItalian": "No, proponi di pensare a un'attività.",
+      "correctEnglish": "Yes! To stimulate the group to make plans.",
+      "incorrectEnglish": "No, you're proposing to think of an activity."
+    }
+  },
+  {
+    "id": "s73-p24",
+    "italian": "dai, vieni!",
+    "english": "come on, come!",
+    "type": "phrase",
+    "choicesItalian": ["dai, vieni!", "vai via", "fermati", "aspetta"],
+    "choicesEnglish": ["come on, come!", "go away", "stop", "wait"],
+    "correctAnswer": "dai, vieni!",
+    "feedback": {
+      "correctItalian": "Bravo! Per convincere qualcuno che è indeciso.",
+      "incorrectItalian": "No, è un'esortazione amichevole.",
+      "correctEnglish": "Well done! To convince someone who is undecided.",
+      "incorrectEnglish": "No, it's a friendly exhortation."
+    }
+  },
+  {
+    "id": "s73-p25",
+    "italian": "ci sentiamo più tardi.",
+    "english": "we'll talk later.",
+    "type": "phrase",
+    "choicesItalian": ["a dopo", "ci sentiamo più tardi", "parliamo ora", "ciao"],
+    "choicesEnglish": ["see you later", "we'll talk later", "let's talk now", "bye"],
+    "correctAnswer": "ci sentiamo più tardi.",
+    "feedback": {
+      "correctItalian": "Giusto! Per rimandare la telefonata o il messaggio.",
+      "incorrectItalian": "No, significa che vi aggiornerete dopo.",
+      "correctEnglish": "Correct! To postpone the call or message.",
+      "incorrectEnglish": "No, it means you'll update each other later."
+    }
+  },
+  {
+    "id": "s73-p26",
+    "italian": "magari un'altra volta.",
+    "english": "maybe another time.",
+    "type": "phrase",
+    "choicesItalian": ["mai più", "magari un'altra volta", "domani", "subito"],
+    "choicesEnglish": ["never again", "maybe another time", "tomorrow", "immediately"],
+    "correctAnswer": "magari un'altra volta.",
+    "feedback": {
+      "correctItalian": "Esatto! Un modo vago per dire di no.",
+      "incorrectItalian": "No, rimanda a un futuro indefinito.",
+      "correctEnglish": "Exactly! A vague way to say no.",
+      "incorrectEnglish": "No, it postpones to an indefinite future."
+    }
+  },
+  {
+    "id": "s73-p27",
+    "italian": "Ho trovato un bel posto.",
     "english": "I found a nice place.",
     "type": "phrase",
-    "choices": [
-      "Vuoi venire con noi?",
-      "Sì, vengo volentieri!",
-      "Ho trovato un posto carino.",
-      "Che fai domenica?"
-    ],
-    "correctAnswer": "Ho trovato un posto carino.",
+    "choicesItalian": ["Ho trovato un bel posto", "Conosco un locale", "C'è un bar nuovo", "Andiamo lì"],
+    "choicesEnglish": ["I found a nice place", "I know a venue", "There's a new bar", "Let's go there"],
+    "correctAnswer": "Ho trovato un bel posto.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho trovato un posto carino.\"."
+      "correctItalian": "Ottimo! Per convincere gli altri a seguirti.",
+      "incorrectItalian": "No, indichi di aver scoperto un luogo piacevole.",
+      "correctEnglish": "Great! To convince others to follow you.",
+      "incorrectEnglish": "No, you're indicating you've discovered a pleasant place."
+    }
+  },
+  {
+    "id": "s73-p28",
+    "italian": "Ti mando l'indirizzo.",
+    "english": "I'll send you the address.",
+    "type": "phrase",
+    "choicesItalian": ["Ti scrivo la via", "Ti mando l'indirizzo", "Dimmi dove sei", "Vieni qui"],
+    "choicesEnglish": ["I'll write you the street", "I'll send you the address", "Tell me where you are", "Come here"],
+    "correctAnswer": "Ti mando l'indirizzo.",
+    "feedback": {
+      "correctItalian": "Sì! Informazione pratica necessaria.",
+      "incorrectItalian": "No, prometti di inviare i dettagli del luogo.",
+      "correctEnglish": "Yes! Necessary practical information.",
+      "incorrectEnglish": "No, you're promising to send the place details."
+    }
+  },
+  {
+    "id": "s73-p29",
+    "italian": "Ci vediamo lì alle otto?",
+    "english": "Shall we meet there at eight?",
+    "type": "phrase",
+    "choicesItalian": ["A che ora?", "Ci vediamo lì alle otto?", "Sei lì?", "Vieni alle otto?"],
+    "choicesEnglish": ["At what time?", "Shall we meet there at eight?", "Are you there?", "Are you coming at eight?"],
+    "correctAnswer": "Ci vediamo lì alle otto?",
+    "feedback": {
+      "correctItalian": "Bravo! Proposta concreta di orario e luogo.",
+      "incorrectItalian": "No, è una domanda di conferma.",
+      "correctEnglish": "Well done! Concrete proposal of time and place.",
+      "incorrectEnglish": "No, it's a confirmation question."
+    }
+  },
+  {
+    "id": "s73-p30",
+    "italian": "Per me va bene.",
+    "english": "It's fine for me.",
+    "type": "phrase",
+    "choicesItalian": ["Per me va bene", "Non mi piace", "Forse sì", "Ok, dai"],
+    "choicesEnglish": ["It's fine for me", "I don't like it", "Maybe yes", "Ok, come on"],
+    "correctAnswer": "Per me va bene.",
+    "feedback": {
+      "correctItalian": "Giusto! Accettazione semplice della proposta.",
+      "incorrectItalian": "No, esprimi il tuo accordo.",
+      "correctEnglish": "Correct! Simple acceptance of the proposal.",
+      "incorrectEnglish": "No, you're expressing your agreement."
+    }
+  },
+  {
+    "id": "s73-p31",
+    "italian": "A che ora facciamo?",
+    "english": "What time shall we make it?",
+    "type": "phrase",
+    "choicesItalian": ["A che ora facciamo?", "Quando ci vediamo?", "Che ore sono?", "Quanto manca?"],
+    "choicesEnglish": ["What time shall we make it?", "When shall we meet?", "What time is it?", "How much is left?"],
+    "correctAnswer": "A che ora facciamo?",
+    "feedback": {
+      "correctItalian": "Esatto! 'Fare' si usa spesso per fissare l'orario.",
+      "incorrectItalian": "No, chiedi di decidere l'orario.",
+      "correctEnglish": "Exactly! 'Fare' is often used to set the time.",
+      "incorrectEnglish": "No, you're asking to decide the time."
+    }
+  },
+  {
+    "id": "s73-p32",
+    "italian": "va bene verso le nove?",
+    "english": "is around nine okay?",
+    "type": "phrase",
+    "choicesItalian": ["va bene verso le nove?", "sono le nove", "ci vediamo alle nove", "vieni alle nove?"],
+    "choicesEnglish": ["is around nine okay?", "it's nine o'clock", "see you at nine", "are you coming at nine?"],
+    "correctAnswer": "va bene verso le nove?",
+    "feedback": {
+      "correctItalian": "Ottimo! 'Verso' indica un orario approssimativo.",
+      "incorrectItalian": "No, proponi un orario flessibile.",
+      "correctEnglish": "Great! 'Verso' indicates an approximate time.",
+      "incorrectEnglish": "No, you're proposing a flexible time."
+    }
+  },
+  {
+    "id": "s73-p33",
+    "italian": "Cosa posso portare?",
+    "english": "What can I bring?",
+    "type": "phrase",
+    "choicesItalian": ["Cosa porto?", "Cosa posso portare?", "Cosa mangio?", "Cosa faccio?"],
+    "choicesEnglish": ["What shall I bring?", "What can I bring?", "What shall I eat?", "What shall I do?"],
+    "correctAnswer": "Cosa posso portare?",
+    "feedback": {
+      "correctItalian": "Sì! Molto educato quando si è invitati a casa.",
+      "incorrectItalian": "No, chiedi se devi contribuire con cibo o bevande.",
+      "correctEnglish": "Yes! Very polite when invited to someone's home.",
+      "incorrectEnglish": "No, you're asking if you should contribute with food or drinks."
+    }
+  },
+  {
+    "id": "s73-p34",
+    "italian": "non preoccuparti di nulla.",
+    "english": "don't worry about anything.",
+    "type": "phrase",
+    "choicesItalian": ["non preoccuparti di nulla", "porta tutto", "stai calmo", "fai pure"],
+    "choicesEnglish": ["don't worry about anything", "bring everything", "stay calm", "go ahead"],
+    "correctAnswer": "non preoccuparti di nulla.",
+    "feedback": {
+      "correctItalian": "Bravo! La risposta tipica dell'ospite.",
+      "incorrectItalian": "No, significa che l'ospite ha già tutto.",
+      "correctEnglish": "Well done! The host's typical response.",
+      "incorrectEnglish": "No, it means the host already has everything."
+    }
+  },
+  {
+    "id": "s73-p35",
+    "italian": "porto io da bere.",
+    "english": "I'll bring the drinks.",
+    "type": "phrase",
+    "choicesItalian": ["porto io da bere", "bevo tutto io", "cosa bevi?", "voglio bere"],
+    "choicesEnglish": ["I'll bring the drinks", "I'll drink everything", "what are you drinking?", "I want to drink"],
+    "correctAnswer": "porto io da bere.",
+    "feedback": {
+      "correctItalian": "Giusto! Un modo carino di contribuire.",
+      "incorrectItalian": "No, ti offri di portare le bevande.",
+      "correctEnglish": "Correct! A nice way to contribute.",
+      "incorrectEnglish": "No, you're offering to bring the drinks."
+    }
+  },
+  {
+    "id": "s73-p36",
+    "italian": "chi altro viene?",
+    "english": "who else is coming?",
+    "type": "phrase",
+    "choicesItalian": ["chi c'è?", "chi altro viene?", "quanti siamo?", "vieni tu?"],
+    "choicesEnglish": ["who is there?", "who else is coming?", "how many are we?", "are you coming?"],
+    "correctAnswer": "chi altro viene?",
+    "feedback": {
+      "correctItalian": "Esatto! Per sapere chi farà parte del gruppo.",
+      "incorrectItalian": "No, chiedi quali altre persone partecipano.",
+      "correctEnglish": "Exactly! To know who will be part of the group.",
+      "incorrectEnglish": "No, you're asking which other people are participating."
+    }
+  },
+  {
+    "id": "s73-p37",
+    "italian": "siamo i soliti.",
+    "english": "it's the usual (crowd).",
+    "type": "phrase",
+    "choicesItalian": ["siamo in molti", "siamo i soliti", "siamo pochi", "non so"],
+    "choicesEnglish": ["there are many of us", "it's the usual crowd", "we are few", "I don't know"],
+    "correctAnswer": "siamo i soliti.",
+    "feedback": {
+      "correctItalian": "Ottimo! Si riferisce al gruppo storico di amici.",
+      "incorrectItalian": "No, significa che non ci sono persone nuove.",
+      "correctEnglish": "Great! It refers to the core group of friends.",
+      "incorrectEnglish": "No, it means there are no new people."
+    }
+  },
+  {
+    "id": "s73-p38",
+    "italian": "ci sarà anche Luca.",
+    "english": "Luca will be there too.",
+    "type": "phrase",
+    "choicesItalian": ["Luca viene", "ci sarà anche Luca", "Luca non c'è", "chi è Luca?"],
+    "choicesEnglish": ["Luca is coming", "Luca will be there too", "Luca isn't there", "who is Luca?"],
+    "correctAnswer": "ci sarà anche Luca.",
+    "feedback": {
+      "correctItalian": "Sì! Per dare informazioni sui partecipanti.",
+      "incorrectItalian": "No, indichi la presenza di un'altra persona.",
+      "correctEnglish": "Yes! To give information about the participants.",
+      "incorrectEnglish": "No, you're indicating another person's presence."
+    }
+  },
+  {
+    "id": "s73-p39",
+    "italian": "non lo conosco, chi è?",
+    "english": "I don't know him, who is he?",
+    "type": "phrase",
+    "choicesItalian": ["chi è?", "non lo conosco, chi è?", "com'è?", "lo conosco"],
+    "choicesEnglish": ["who is he?", "I don't know him, who is he?", "how is he?", "I know him"],
+    "correctAnswer": "non lo conosco, chi è?",
+    "feedback": {
+      "correctItalian": "Bravo! Reazione naturale se c'è qualcuno di nuovo.",
+      "incorrectItalian": "No, chiedi informazioni su un estraneo.",
+      "correctEnglish": "Well done! Natural reaction if there's someone new.",
+      "incorrectEnglish": "No, you're asking for info about a stranger."
+    }
+  },
+  {
+    "id": "s73-p40",
+    "italian": "un mio caro amico.",
+    "english": "a dear friend of mine.",
+    "type": "phrase",
+    "choicesItalian": ["un mio amico", "un mio caro amico", "uno che conosco", "un collega"],
+    "choicesEnglish": ["a friend of mine", "a dear friend of mine", "someone I know", "a colleague"],
+    "correctAnswer": "un mio caro amico.",
+    "feedback": {
+      "correctItalian": "Giusto! Per presentare qualcuno a parole.",
+      "incorrectItalian": "No, descrivi il tipo di legame.",
+      "correctEnglish": "Correct! To introduce someone in words.",
+      "incorrectEnglish": "No, you're describing the type of bond."
+    }
+  },
+  {
+    "id": "s73-p41",
+    "italian": "che bella idea!",
+    "english": "what a great idea!",
+    "type": "phrase",
+    "choicesItalian": ["che bella idea!", "mi piace", "bravo", "va bene"],
+    "choicesEnglish": ["what a great idea!", "I like it", "well done", "alright"],
+    "correctAnswer": "che bella idea!",
+    "feedback": {
+      "correctItalian": "Esatto! Un commento entusiasta alla proposta.",
+      "incorrectItalian": "No, esprimi apprezzamento per l'invito.",
+      "correctEnglish": "Exactly! An enthusiastic comment on the proposal.",
+      "incorrectEnglish": "No, you're expressing appreciation for the invitation."
+    }
+  },
+  {
+    "id": "s73-p42",
+    "italian": "non vedo l'ora!",
+    "english": "I can't wait!",
+    "type": "phrase",
+    "choicesItalian": ["ho fretta", "non vedo l'ora!", "aspetto", "quando?"],
+    "choicesEnglish": ["I'm in a hurry", "I can't wait!", "I wait", "when?"],
+    "correctAnswer": "non vedo l'ora!",
+    "feedback": {
+      "correctItalian": "Ottimo! Per mostrare eccitazione per l'evento.",
+      "incorrectItalian": "No, è l'espressione standard per l'impazienza positiva.",
+      "correctEnglish": "Great! To show excitement for the event.",
+      "incorrectEnglish": "No, it's the standard expression for positive impatience."
+    }
+  },
+  {
+    "id": "s73-p43",
+    "italian": "ci becchiamo lì, allora.",
+    "english": "we'll catch each other there, then.",
+    "type": "phrase",
+    "choicesItalian": ["a dopo", "ci becchiamo lì, allora", "vieni lì", "ci sei?"],
+    "choicesEnglish": ["see you later", "we'll catch each other there, then", "come there", "are you there?"],
+    "correctAnswer": "ci becchiamo lì, allora.",
+    "feedback": {
+      "correctItalian": "Sì! Per chiudere l'accordo.",
+      "incorrectItalian": "No, conferma l'appuntamento finale.",
+      "correctEnglish": "Yes! To close the deal.",
+      "incorrectEnglish": "No, it confirms the final appointment."
+    }
+  },
+  {
+    "id": "s73-p44",
+    "italian": "perfetto, a stasera!",
+    "english": "perfect, see you tonight!",
+    "type": "phrase",
+    "choicesItalian": ["ciao", "perfetto, a stasera!", "a domani", "ci vediamo"],
+    "choicesEnglish": ["bye", "perfect, see you tonight!", "see you tomorrow", "see you"],
+    "correctAnswer": "perfetto, a stasera!",
+    "feedback": {
+      "correctItalian": "Bravo! Un saluto finale classico.",
+      "incorrectItalian": "No, conferma l'incontro per la sera stessa.",
+      "correctEnglish": "Well done! A classic final greeting.",
+      "incorrectEnglish": "No, it confirms meeting that same evening."
+    }
+  },
+  {
+    "id": "s73-p45",
+    "italian": "scusa il ritardo.",
+    "english": "sorry I'm late.",
+    "type": "phrase",
+    "choicesItalian": ["sono in ritardo", "scusa il ritardo", "eccomi", "arrivo"],
+    "choicesEnglish": ["I'm late", "sorry I'm late", "here I am", "I'm coming"],
+    "correctAnswer": "scusa il ritardo.",
+    "feedback": {
+      "correctItalian": "Giusto! Molto utile se arrivi dopo l'ora fissata.",
+      "incorrectItalian": "No, è la formula di scuse per il ritardo.",
+      "correctEnglish": "Correct! Very useful if you arrive after the set time.",
+      "incorrectEnglish": "No, it's the apology formula for lateness."
+    }
+  },
+  {
+    "id": "s73-p46",
+    "italian": "sto arrivando!",
+    "english": "I'm on my way!",
+    "type": "phrase",
+    "choicesItalian": ["vengo ora", "sto arrivando!", "sono qui", "parto"],
+    "choicesEnglish": ["I'm coming now", "I'm on my way!", "I'm here", "I'm leaving"],
+    "correctAnswer": "sto arrivando!",
+    "feedback": {
+      "correctItalian": "Esatto! Lo diciamo tutti, anche se siamo ancora a casa.",
+      "incorrectItalian": "No, indica che sei in movimento verso il posto.",
+      "correctEnglish": "Exactly! We all say it, even if we're still at home.",
+      "incorrectEnglish": "No, it indicates you're moving towards the place."
+    }
+  },
+  {
+    "id": "s73-p47",
+    "italian": "un attimo e ci sono.",
+    "english": "one moment and I'm there.",
+    "type": "phrase",
+    "choicesItalian": ["aspetta", "un attimo e ci sono", "arrivo subito", "eccomi"],
+    "choicesEnglish": ["wait", "one moment and I'm there", "I'll be right there", "here I am"],
+    "correctAnswer": "un attimo e ci sono.",
+    "feedback": {
+      "correctItalian": "Ottimo! Per chiedere un po' di pazienza.",
+      "incorrectItalian": "No, significa che mancano pochi minuti.",
+      "correctEnglish": "Great! To ask for a little patience.",
+      "incorrectEnglish": "No, it means just a few minutes are left."
+    }
+  },
+  {
+    "id": "s73-p48",
+    "italian": "dove siete finiti?",
+    "english": "where did you all end up?",
+    "type": "phrase",
+    "choicesItalian": ["dove siete?", "dove siete finiti?", "ci siete?", "che fate?"],
+    "choicesEnglish": ["where are you?", "where did you all end up?", "are you there?", "what are you doing?"],
+    "correctAnswer": "dove siete finiti?",
+    "feedback": {
+      "correctItalian": "Sì! Se non trovi i tuoi amici al posto dell'appuntamento.",
+      "incorrectItalian": "No, è un modo un po' scherzoso di chiedere la posizione.",
+      "correctEnglish": "Yes! If you can't find your friends at the meeting spot.",
+      "incorrectEnglish": "No, it's a slightly playful way to ask for the location."
+    }
+  },
+  {
+    "id": "s73-p49",
+    "italian": "siamo qui fuori.",
+    "english": "we are here outside.",
+    "type": "phrase",
+    "choicesItalian": ["siamo dentro", "siamo qui fuori", "siamo arrivati", "vi aspettiamo"],
+    "choicesEnglish": ["we are inside", "we are here outside", "we have arrived", "we are waiting for you"],
+    "correctAnswer": "siamo qui fuori.",
+    "feedback": {
+      "correctItalian": "Bravo! Per aiutare gli altri a trovarvi.",
+      "incorrectItalian": "No, indichi che siete all'esterno del locale.",
+      "correctEnglish": "Well done! To help others find you.",
+      "incorrectEnglish": "No, you're indicating you're outside the venue."
+    }
+  },
+  {
+    "id": "s73-p50",
+    "italian": "ti tengo il posto.",
+    "english": "I'll save you a seat.",
+    "type": "phrase",
+    "choicesItalian": ["prendi il posto", "ti tengo il posto", "siediti qui", "c'è posto?"],
+    "choicesEnglish": ["take the seat", "I'll save you a seat", "sit here", "is there room?"],
+    "correctAnswer": "ti tengo il posto.",
+    "feedback": {
+      "correctItalian": "Giusto! Un gesto gentile se arrivano in ritardo.",
+      "incorrectItalian": "No, assicuri a qualcuno un posto a sedere.",
+      "correctEnglish": "Correct! A kind gesture if they arrive late.",
+      "incorrectEnglish": "No, you're securing a seat for someone."
+    }
+  },
+  {
+    "id": "s73-p51",
+    "italian": "vieni spesso qui?",
+    "english": "do you come here often?",
+    "type": "phrase",
+    "choicesItalian": ["sei nuovo?", "vieni spesso qui?", "ti piace?", "conosci il posto?"],
+    "choicesEnglish": ["are you new?", "do you come here often?", "do you like it?", "do you know the place?"],
+    "correctAnswer": "vieni spesso qui?",
+    "feedback": {
+      "correctItalian": "Esatto! Un classico per rompere il ghiaccio.",
+      "incorrectItalian": "No, chiedi delle abitudini dell'altro.",
+      "correctEnglish": "Exactly! A classic icebreaker.",
+      "incorrectEnglish": "No, you're asking about the other's habits."
+    }
+  },
+  {
+    "id": "s73-p52",
+    "italian": "è la prima volta.",
+    "english": "it's the first time.",
+    "type": "phrase",
+    "choicesItalian": ["non lo so", "è la prima volta", "vengo sempre", "mai visto"],
+    "choicesEnglish": ["I don't know", "it's the first time", "I always come", "never seen"],
+    "correctAnswer": "è la prima volta.",
+    "feedback": {
+      "correctItalian": "Ottimo! Risposta alla domanda precedente.",
+      "incorrectItalian": "No, indichi che non conoscevi il posto.",
+      "correctEnglish": "Great! Answer to the previous question.",
+      "incorrectEnglish": "No, you're indicating you didn't know the place."
+    }
+  },
+  {
+    "id": "s73-p53",
+    "italian": "com'è il posto?",
+    "english": "how's the place?",
+    "type": "phrase",
+    "choicesItalian": ["dove siamo?", "com'è il posto?", "ti piace?", "è bello?"],
+    "choicesEnglish": ["where are we?", "how's the place?", "do you like it?", "is it beautiful?"],
+    "correctAnswer": "com'è il posto?",
+    "feedback": {
+      "correctItalian": "Sì! Chiedi un parere sul locale.",
+      "incorrectItalian": "No, vuoi sapere se il locale è carino.",
+      "correctEnglish": "Yes! You're asking for an opinion on the venue.",
+      "incorrectEnglish": "No, you want to know if the place is nice."
+    }
+  },
+  {
+    "id": "s73-p54",
+    "italian": "è molto alla moda.",
+    "english": "it's very trendy.",
+    "type": "phrase",
+    "choicesItalian": ["è vecchio", "è molto alla moda", "è brutto", "è economico"],
+    "choicesEnglish": ["it's old", "it's very trendy", "it's ugly", "it's cheap"],
+    "correctAnswer": "è molto alla moda.",
+    "feedback": {
+      "correctItalian": "Bravo! Una descrizione comune per i locali.",
+      "incorrectItalian": "No, significa che è frequentato e moderno.",
+      "correctEnglish": "Well done! A common description for venues.",
+      "incorrectEnglish": "No, it means it's popular and modern."
+    }
+  },
+  {
+    "id": "s73-p55",
+    "italian": "ci facciamo un altro giro?",
+    "english": "shall we have another round?",
+    "type": "phrase",
+    "choicesItalian": ["andiamo via?", "ci facciamo un altro giro?", "basta così", "paghi tu?"],
+    "choicesEnglish": ["shall we leave?", "shall we have another round?", "that's enough", "are you paying?"],
+    "correctAnswer": "ci facciamo un altro giro?",
+    "feedback": {
+      "correctItalian": "Giusto! Per ordinare un'altra birra o cocktail.",
+      "incorrectItalian": "No, proponi di continuare a bere.",
+      "correctEnglish": "Correct! To order another beer or cocktail.",
+      "incorrectEnglish": "No, you're proposing to keep drinking."
+    }
+  },
+  {
+    "id": "s73-p56",
+    "italian": "offro io stasera!",
+    "english": "it's on me tonight!",
+    "type": "phrase",
+    "choicesItalian": ["paghi tu?", "offro io stasera!", "dividiamo?", "conto per favore"],
+    "choicesEnglish": ["are you paying?", "it's on me tonight!", "shall we split?", "the bill please"],
+    "correctAnswer": "offro io stasera!",
+    "feedback": {
+      "correctItalian": "Esatto! Un gesto molto generoso.",
+      "incorrectItalian": "No, dichiari che pagherai tu per tutti.",
+      "correctEnglish": "Exactly! A very generous gesture.",
+      "incorrectEnglish": "No, you're declaring that you'll pay for everyone."
+    }
+  },
+  {
+    "id": "s73-p57",
+    "italian": "facciamo a metà?",
+    "english": "shall we go halves?",
+    "type": "phrase",
+    "choicesItalian": ["pago io", "facciamo a metà?", "quanto ti devo?", "è gratis"],
+    "choicesEnglish": ["I'll pay", "shall we go halves?", "how much do I owe you?", "it's free"],
+    "correctAnswer": "facciamo a metà?",
+    "feedback": {
+      "correctItalian": "Ottimo! Per dividere il conto.",
+      "incorrectItalian": "No, proponi di dividere la spesa in parti uguali.",
+      "correctEnglish": "Great! To split the bill.",
+      "incorrectEnglish": "No, you're proposing to divide the cost equally."
+    }
+  },
+  {
+    "id": "s73-p58",
+    "italian": "è stata una bella serata.",
+    "english": "it was a nice evening.",
+    "type": "phrase",
+    "choicesItalian": ["mi sono annoiato", "è stata una bella serata", "grazie", "a domani"],
+    "choicesEnglish": ["I was bored", "it was a nice evening", "thanks", "see you tomorrow"],
+    "correctAnswer": "è stata una bella serata.",
+    "feedback": {
+      "correctItalian": "Sì! Per chiudere bene l'incontro.",
+      "incorrectItalian": "No, esprimi soddisfazione per l'uscita.",
+      "correctEnglish": "Yes! To close the meeting well.",
+      "incorrectEnglish": "No, you're expressing satisfaction with the outing."
+    }
+  },
+  {
+    "id": "s73-p59",
+    "italian": "dobbiamo rifarlo presto!",
+    "english": "we must do it again soon!",
+    "type": "phrase",
+    "choicesItalian": ["mai più", "dobbiamo rifarlo presto!", "quando?", "forse"],
+    "choicesEnglish": ["never again", "we must do it again soon!", "when?", "maybe"],
+    "correctAnswer": "dobbiamo rifarlo presto!",
+    "feedback": {
+      "correctItalian": "Bravo! Per promettere nuovi incontri.",
+      "incorrectItalian": "No, indica che ti sei divertito e vuoi ripetere.",
+      "correctEnglish": "Well done! To promise new meetings.",
+      "incorrectEnglish": "No, it indicates you had fun and want to repeat."
+    }
+  },
+  {
+    "id": "s73-p60",
+    "italian": "mi ha fatto piacere vederti.",
+    "english": "it was nice seeing you.",
+    "type": "phrase",
+    "choicesItalian": ["ciao ciao", "mi ha fatto piacere vederti", "a dopo", "grazie"],
+    "choicesEnglish": ["bye bye", "it was nice seeing you", "see you later", "thanks"],
+    "correctAnswer": "mi ha fatto piacere vederti.",
+    "feedback": {
+      "correctItalian": "Giusto! Un saluto finale affettuoso.",
+      "incorrectItalian": "No, è una frase di congedo molto comune.",
+      "correctEnglish": "Correct! An affectionate final greeting.",
+      "incorrectEnglish": "No, it's a very common parting phrase."
     }
   }
 ]

@@ -1,104 +1,902 @@
 [
   {
-    "id": "s75-p6",
-    "italian": "A dopo allora!",
-    "english": "See you later then!",
-    "type": "phrase",
-    "choices": [
-      "Ti richiamo tra un minuto.",
-      "Non ti sento bene.",
-      "A dopo allora!",
-      "Scusi, ho sbagliato numero."
-    ],
-    "correctAnswer": "A dopo allora!",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"A dopo allora!\"."
-    }
-  },
-  {
     "id": "s75-p1",
-    "italian": "Pronto, chi parla?",
-    "english": "Hello, who is speaking?",
+    "italian": "Pronto?",
+    "english": "Hello?",
     "type": "phrase",
-    "choices": [
-      "Pronto, chi parla?",
-      "A dopo allora!",
-      "Ti richiamo tra un minuto.",
-      "Non ti sento bene."
-    ],
-    "correctAnswer": "Pronto, chi parla?",
+    "choicesItalian": ["Pronto?", "Chi è?", "Ciao!", "Ehi!"],
+    "choicesEnglish": ["Hello?", "Who is it?", "Hi!", "Hey!"],
+    "correctAnswer": "Pronto?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Pronto, chi parla?\"."
+      "correctItalian": "Perfetto! È il modo standard di rispondere.",
+      "incorrectItalian": "No, si risponde sempre 'Pronto?'.",
+      "correctEnglish": "Perfect! It's the standard way to answer.",
+      "incorrectEnglish": "No, you always answer 'Pronto?'."
     }
   },
   {
     "id": "s75-p2",
-    "italian": "Non ti sento bene.",
-    "english": "I can't hear you well.",
+    "italian": "Chi parla?",
+    "english": "Who is speaking?",
     "type": "phrase",
-    "choices": [
-      "A dopo allora!",
-      "Pronto, chi parla?",
-      "Non ti sento bene.",
-      "Scusi, ho sbagliato numero."
-    ],
-    "correctAnswer": "Non ti sento bene.",
+    "choicesItalian": ["Chi parla?", "Chi sei?", "Come ti chiami?", "Dove sei?"],
+    "choicesEnglish": ["Who is speaking?", "Who are you?", "What is your name?", "Where are you?"],
+    "correctAnswer": "Chi parla?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Non ti sento bene.\"."
-    }
-  },
-  {
-    "id": "s75-p5",
-    "italian": "Lascia un messaggio vocale.",
-    "english": "Leave a voice message.",
-    "type": "phrase",
-    "choices": [
-      "Ti richiamo tra un minuto.",
-      "Lascia un messaggio vocale.",
-      "Pronto, chi parla?",
-      "A dopo allora!"
-    ],
-    "correctAnswer": "Lascia un messaggio vocale.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Lascia un messaggio vocale.\"."
-    }
-  },
-  {
-    "id": "s75-p4",
-    "italian": "Scusi, ho sbagliato numero.",
-    "english": "Sorry, I have the wrong number.",
-    "type": "phrase",
-    "choices": [
-      "Non ti sento bene.",
-      "A dopo allora!",
-      "Lascia un messaggio vocale.",
-      "Scusi, ho sbagliato numero."
-    ],
-    "correctAnswer": "Scusi, ho sbagliato numero.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Scusi, ho sbagliato numero.\"."
+      "correctItalian": "Esatto! Per chiedere l'identità di chi chiama.",
+      "incorrectItalian": "No, si chiede 'Chi parla?'.",
+      "correctEnglish": "Exact! To ask the identity of the caller.",
+      "incorrectEnglish": "No, you ask 'Chi parla?'."
     }
   },
   {
     "id": "s75-p3",
-    "italian": "Ti richiamo tra un minuto.",
-    "english": "I'll call you back in a minute.",
+    "italian": "C'è Marco?",
+    "english": "Is Marco there?",
     "type": "phrase",
-    "choices": [
-      "Pronto, chi parla?",
-      "Scusi, ho sbagliato numero.",
-      "Ti richiamo tra un minuto.",
-      "A dopo allora!"
-    ],
-    "correctAnswer": "Ti richiamo tra un minuto.",
+    "choicesItalian": ["C'è Marco?", "Dov'è Marco?", "Chi è Marco?", "Viene Marco?"],
+    "choicesEnglish": ["Is Marco there?", "Where is Marco?", "Who is Marco?", "Is Marco coming?"],
+    "correctAnswer": "C'è Marco?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ti richiamo tra un minuto.\"."
+      "correctItalian": "Ottimo! Per chiedere di qualcuno.",
+      "incorrectItalian": "No, si usa 'C'è...?'.",
+      "correctEnglish": "Great! To ask for someone.",
+      "incorrectEnglish": "No, you use 'C'è...?'."
+    }
+  },
+  {
+    "id": "s75-p4",
+    "italian": "Sì, sono io.",
+    "english": "Yes, it's me.",
+    "type": "phrase",
+    "choicesItalian": ["Sì, sono io.", "Sì, c'è.", "No, non c'è.", "Chi sei?"],
+    "choicesEnglish": ["Yes, it's me.", "Yes, he's here.", "No, he's not here.", "Who are you?"],
+    "correctAnswer": "Sì, sono io.",
+    "feedback": {
+      "correctItalian": "Giusto! Per confermare la propria identità.",
+      "incorrectItalian": "No, si dice 'sono io'.",
+      "correctEnglish": "Right! To confirm your identity.",
+      "incorrectEnglish": "No, you say 'it's me'."
+    }
+  },
+  {
+    "id": "s75-p5",
+    "italian": "Disturbo?",
+    "english": "Am I bothering you?",
+    "type": "phrase",
+    "choicesItalian": ["Disturbo?", "Come va?", "Che fai?", "Sei libero?"],
+    "choicesEnglish": ["Am I bothering you?", "How's it going?", "What are you doing?", "Are you free?"],
+    "correctAnswer": "Disturbo?",
+    "feedback": {
+      "correctItalian": "Esatto! Molto educato chiederlo all'inizio.",
+      "incorrectItalian": "No, si chiede 'Disturbo?'.",
+      "correctEnglish": "Exact! Very polite to ask at the beginning.",
+      "incorrectEnglish": "No, you ask 'Disturbo?'."
+    }
+  },
+  {
+    "id": "s75-p6",
+    "italian": "Hai un minuto?",
+    "english": "Do you have a minute?",
+    "type": "phrase",
+    "choicesItalian": ["Hai un minuto?", "Che ore sono?", "Quanto tempo?", "Aspetta."],
+    "choicesEnglish": ["Do you have a minute?", "What time is it?", "How long?", "Wait."],
+    "correctAnswer": "Hai un minuto?",
+    "feedback": {
+      "correctItalian": "Corretto! Per sapere se l'altro può parlare.",
+      "incorrectItalian": "No, si usa 'Hai un minuto?'.",
+      "correctEnglish": "Correct! To find out if the other person can talk.",
+      "incorrectEnglish": "No, 'Hai un minuto?' is used."
+    }
+  },
+  {
+    "id": "s75-p7",
+    "italian": "Ti richiamo tra poco.",
+    "english": "I'll call you back shortly.",
+    "type": "phrase",
+    "choicesItalian": ["Ti richiamo tra poco.", "Chiamami tu.", "Non rispondere.", "A dopo."],
+    "choicesEnglish": ["I'll call you back shortly.", "You call me.", "Don't answer.", "See you later."],
+    "correctAnswer": "Ti richiamo tra poco.",
+    "feedback": {
+      "correctItalian": "Ottimo! Se non puoi parlare subito.",
+      "incorrectItalian": "No, si dice 'ti richiamo'.",
+      "correctEnglish": "Great! If you can't talk right away.",
+      "incorrectEnglish": "No, you say 'I'll call you back'."
+    }
+  },
+  {
+    "id": "s75-p8",
+    "italian": "Puoi parlare?",
+    "english": "Can you talk?",
+    "type": "phrase",
+    "choicesItalian": ["Puoi parlare?", "Vuoi parlare?", "Devi parlare?", "Sai parlare?"],
+    "choicesEnglish": ["Can you talk?", "Do you want to talk?", "Do you have to talk?", "Can you speak?"],
+    "correctAnswer": "Puoi parlare?",
+    "feedback": {
+      "correctItalian": "Giusto! Per verificare la disponibilità.",
+      "incorrectItalian": "No, si chiede 'Puoi parlare?'.",
+      "correctEnglish": "Right! To check availability.",
+      "incorrectEnglish": "No, you ask 'Can you talk?'."
+    }
+  },
+  {
+    "id": "s75-p9",
+    "italian": "Sono un po' occupato.",
+    "english": "I'm a bit busy.",
+    "type": "phrase",
+    "choicesItalian": ["Sono un po' occupato.", "Sono libero.", "Sono a casa.", "Sono stanco."],
+    "choicesEnglish": ["I'm a bit busy.", "I'm free.", "I'm at home.", "I'm tired."],
+    "correctAnswer": "Sono un po' occupato.",
+    "feedback": {
+      "correctItalian": "Esatto! Se hai da fare.",
+      "incorrectItalian": "No, si dice 'sono occupato'.",
+      "correctEnglish": "Exact! If you have things to do.",
+      "incorrectEnglish": "No, you say 'I'm busy'."
+    }
+  },
+  {
+    "id": "s75-p10",
+    "italian": "Volevo chiederti una cosa.",
+    "english": "I wanted to ask you something.",
+    "type": "phrase",
+    "choicesItalian": ["Volevo chiederti una cosa.", "Volevo dirti una cosa.", "Volevo darti una cosa.", "Volevo fare una cosa."],
+    "choicesEnglish": ["I wanted to ask you something.", "I wanted to tell you something.", "I wanted to give you something.", "I wanted to do something."],
+    "correctAnswer": "Volevo chiederti una cosa.",
+    "feedback": {
+      "correctItalian": "Ottimo! Un modo comune per iniziare.",
+      "incorrectItalian": "No, si usa 'chiederti' per fare una domanda.",
+      "correctEnglish": "Great! A common way to start.",
+      "incorrectEnglish": "No, you use 'ask you' to pose a question."
+    }
+  },
+  {
+    "id": "s75-p11",
+    "italian": "Ti chiamo dopo.",
+    "english": "I'll call you later.",
+    "type": "phrase",
+    "choicesItalian": ["Ti chiamo dopo.", "Chiamami ora.", "Rispondi subito.", "A dopo."],
+    "choicesEnglish": ["I'll call you later.", "Call me now.", "Answer immediately.", "See you later."],
+    "correctAnswer": "Ti chiamo dopo.",
+    "feedback": {
+      "correctItalian": "Esatto! Ci sentiamo più tardi.",
+      "incorrectItalian": "No, significa posticipare la chiamata.",
+      "correctEnglish": "Exact! We'll talk later.",
+      "incorrectEnglish": "No, it means postponing the call."
+    }
+  },
+  {
+    "id": "s75-p12",
+    "italian": "Non ti sento bene.",
+    "english": "I can't hear you well.",
+    "type": "phrase",
+    "choicesItalian": ["Non ti sento bene.", "Non ti vedo bene.", "Non ti capisco.", "Parla piano."],
+    "choicesEnglish": ["I can't hear you well.", "I can't see you well.", "I don't understand you.", "Speak slowly."],
+    "correctAnswer": "Non ti sento bene.",
+    "feedback": {
+      "correctItalian": "Giusto! Se la linea è disturbata.",
+      "incorrectItalian": "No, si usa il verbo 'sentire'.",
+      "correctEnglish": "Right! If the line is noisy.",
+      "incorrectEnglish": "No, the verb 'sentire' is used."
+    }
+  },
+  {
+    "id": "s75-p13",
+    "italian": "Si sente male.",
+    "english": "The sound is bad / I can't hear well.",
+    "type": "phrase",
+    "choicesItalian": ["Si sente male.", "Si vede male.", "Va tutto bene.", "Sto male."],
+    "choicesEnglish": ["The sound is bad / I can't hear well.", "The image is bad.", "Everything is fine.", "I feel sick."],
+    "correctAnswer": "Si sente male.",
+    "feedback": {
+      "correctItalian": "Esatto! Quando la qualità audio è scarsa.",
+      "incorrectItalian": "No, si riferisce alla qualità della chiamata.",
+      "correctEnglish": "Exact! When the audio quality is poor.",
+      "incorrectEnglish": "No, it refers to the call quality."
+    }
+  },
+  {
+    "id": "s75-p14",
+    "italian": "Cade la linea.",
+    "english": "The line is dropping.",
+    "type": "phrase",
+    "choicesItalian": ["Cade la linea.", "La linea è occupata.", "Il telefono è rotto.", "Ho perso il telefono."],
+    "choicesEnglish": ["The line is dropping.", "The line is busy.", "The phone is broken.", "I lost my phone."],
+    "correctAnswer": "Cade la linea.",
+    "feedback": {
+      "correctItalian": "Ottimo! Quando la comunicazione si interrompe.",
+      "incorrectItalian": "No, si dice che 'cade' la linea.",
+      "correctEnglish": "Great! When the communication is cut off.",
+      "incorrectEnglish": "No, you say the line 'drops'."
+    }
+  },
+  {
+    "id": "s75-p15",
+    "italian": "C'è poco campo.",
+    "english": "There's poor reception.",
+    "type": "phrase",
+    "choicesItalian": ["C'è poco campo.", "C'è molto sole.", "C'è rumore.", "C'è vento."],
+    "choicesEnglish": ["There's poor reception.", "It's very sunny.", "There's noise.", "It's windy."],
+    "correctAnswer": "C'è poco campo.",
+    "feedback": {
+      "correctItalian": "Giusto! Quando il segnale è debole.",
+      "incorrectItalian": "No, si usa 'campo' per il segnale.",
+      "correctEnglish": "Right! When the signal is weak.",
+      "incorrectEnglish": "No, you use 'campo' for signal."
+    }
+  },
+  {
+    "id": "s75-p16",
+    "italian": "Puoi parlare più forte?",
+    "english": "Can you speak louder?",
+    "type": "phrase",
+    "choicesItalian": ["Puoi parlare più forte?", "Puoi parlare più piano?", "Vuoi parlare ora?", "Senti questo?"],
+    "choicesEnglish": ["Can you speak louder?", "Can you speak softer?", "Do you want to talk now?", "Do you hear this?"],
+    "correctAnswer": "Puoi parlare più forte?",
+    "feedback": {
+      "correctItalian": "Esatto! Se non senti bene l'altro.",
+      "incorrectItalian": "No, si chiede di parlare 'più forte'.",
+      "correctEnglish": "Exact! If you can't hear the other person well.",
+      "incorrectEnglish": "No, you ask to speak 'louder'."
+    }
+  },
+  {
+    "id": "s75-p17",
+    "italian": "Mi senti?",
+    "english": "Can you hear me?",
+    "type": "phrase",
+    "choicesItalian": ["Mi senti?", "Mi vedi?", "Mi chiami?", "Mi capisci?"],
+    "choicesEnglish": ["Can you hear me?", "Can you see me?", "Are you calling me?", "Do you understand me?"],
+    "correctAnswer": "Mi senti?",
+    "feedback": {
+      "correctItalian": "Ottimo! Fondamentale se sospetti problemi tecnici.",
+      "incorrectItalian": "No, si dice 'mi senti?'.",
+      "correctEnglish": "Great! Essential if you suspect technical issues.",
+      "incorrectEnglish": "No, you say 'mi senti?'."
+    }
+  },
+  {
+    "id": "s75-p18",
+    "italian": "Volevo dirti che...",
+    "english": "I wanted to tell you that...",
+    "type": "phrase",
+    "choicesItalian": ["Volevo dirti che...", "Volevo chiederti...", "Volevo fare...", "Volevo andare..."],
+    "choicesEnglish": ["I wanted to tell you that...", "I wanted to ask you...", "I wanted to do...", "I wanted to go..."],
+    "correctAnswer": "Volevo dirti che...",
+    "feedback": {
+      "correctItalian": "Giusto! Per dare un'informazione.",
+      "incorrectItalian": "No, si usa 'dirti' per informare.",
+      "correctEnglish": "Right! To give information.",
+      "incorrectEnglish": "No, you use 'tell you' to inform."
+    }
+  },
+  {
+    "id": "s75-p19",
+    "italian": "Dimmi tutto.",
+    "english": "Tell me everything / I'm listening.",
+    "type": "phrase",
+    "choicesItalian": ["Dimmi tutto.", "Fai tutto.", "Dammi tutto.", "Va bene tutto."],
+    "choicesEnglish": ["Tell me everything / I'm listening.", "Do everything.", "Give me everything.", "Everything is fine."],
+    "correctAnswer": "Dimmi tutto.",
+    "feedback": {
+      "correctItalian": "Esatto! Un modo informale per dire 'ti ascolto'.",
+      "incorrectItalian": "No, è un'espressione tipica: 'dimmi tutto'.",
+      "correctEnglish": "Exact! An informal way to say 'I'm listening'.",
+      "incorrectEnglish": "No, it's a typical expression: 'dimmi tutto'."
+    }
+  },
+  {
+    "id": "s75-p20",
+    "italian": "Un attimo, per favore.",
+    "english": "One moment, please.",
+    "type": "phrase",
+    "choicesItalian": ["Un attimo, per favore.", "Un'ora, grazie.", "Subito, prego.", "Aspetta."],
+    "choicesEnglish": ["One moment, please.", "One hour, thanks.", "Immediately, you're welcome.", "Wait."],
+    "correctAnswer": "Un attimo, per favore.",
+    "feedback": {
+      "correctItalian": "Corretto! Molto educato.",
+      "incorrectItalian": "No, si chiede 'un attimo'.",
+      "correctEnglish": "Correct! Very polite.",
+      "incorrectEnglish": "No, you ask for 'a moment'."
+    }
+  },
+  {
+    "id": "s75-p21",
+    "italian": "Mi richiami tra dieci minuti?",
+    "english": "Can you call me back in ten minutes?",
+    "type": "phrase",
+    "choicesItalian": ["Mi richiami tra dieci minuti?", "Ti chiamo tra dieci minuti?", "Chiamami subito.", "Non chiamarmi."],
+    "choicesEnglish": ["Can you call me back in ten minutes?", "Shall I call you back in ten minutes?", "Call me immediately.", "Don't call me."],
+    "correctAnswer": "Mi richiami tra dieci minuti?",
+    "feedback": {
+      "correctItalian": "Ottimo! Se sei impegnato al momento.",
+      "incorrectItalian": "No, chiedi all'altro di richiamare.",
+      "correctEnglish": "Great! If you are busy at the moment.",
+      "incorrectEnglish": "No, you ask the other person to call back."
+    }
+  },
+  {
+    "id": "s75-p22",
+    "italian": "Ho il telefono scarico.",
+    "english": "My phone is dying / battery is low.",
+    "type": "phrase",
+    "choicesItalian": ["Ho il telefono scarico.", "Ho il telefono rotto.", "Ho il telefono nuovo.", "Il telefono è spento."],
+    "choicesEnglish": ["My phone is dying / battery is low.", "My phone is broken.", "My phone is new.", "The phone is off."],
+    "correctAnswer": "Ho il telefono scarico.",
+    "feedback": {
+      "correctItalian": "Giusto! Per avvisare che la chiamata potrebbe finire.",
+      "incorrectItalian": "No, 'scarico' si riferisce alla batteria.",
+      "correctEnglish": "Right! To warn that the call might end.",
+      "incorrectEnglish": "No, 'scarico' refers to the battery."
+    }
+  },
+  {
+    "id": "s75-p23",
+    "italian": "Si è spento il cellulare.",
+    "english": "The cell phone turned off.",
+    "type": "phrase",
+    "choicesItalian": ["Si è spento il cellulare.", "Si è rotto il cellulare.", "Ho perso il cellulare.", "Dov'è il cellulare?"],
+    "choicesEnglish": ["The cell phone turned off.", "The cell phone broke.", "I lost the cell phone.", "Where is the cell phone?"],
+    "correctAnswer": "Si è spento il cellulare.",
+    "feedback": {
+      "correctItalian": "Esatto! Magari per la batteria finita.",
+      "incorrectItalian": "No, si usa il verbo 'spegnersi'.",
+      "correctEnglish": "Exact! Maybe because the battery ran out.",
+      "incorrectEnglish": "No, the verb 'spegnersi' (to turn off) is used."
+    }
+  },
+  {
+    "id": "s75-p24",
+    "italian": "Scusa, ho sbagliato numero.",
+    "english": "Sorry, I have the wrong number.",
+    "type": "phrase",
+    "choicesItalian": ["Scusa, ho sbagliato numero.", "Scusa, chi sei?", "Grazie, a dopo.", "Pronto, ci sei?"],
+    "choicesEnglish": ["Sorry, I have the wrong number.", "Sorry, who are you?", "Thanks, see you later.", "Hello, are you there?"],
+    "correctAnswer": "Scusa, ho sbagliato numero.",
+    "feedback": {
+      "correctItalian": "Ottimo! Molto comune.",
+      "incorrectItalian": "No, si dice 'ho sbagliato numero'.",
+      "correctEnglish": "Great! Very common.",
+      "incorrectEnglish": "No, you say 'I have the wrong number'."
+    }
+  },
+  {
+    "id": "s75-p25",
+    "italian": "Nessun problema, si figuri.",
+    "english": "No problem, don't mention it (formal).",
+    "type": "phrase",
+    "choicesItalian": ["Nessun problema, si figuri.", "Non farlo più.", "Chi parla?", "Va bene."],
+    "choicesEnglish": ["No problem, don't mention it (formal).", "Don't do it anymore.", "Who is speaking?", "Okay."],
+    "correctAnswer": "Nessun problema, si figuri.",
+    "feedback": {
+      "correctItalian": "Giusto! La risposta cortese a un errore.",
+      "incorrectItalian": "No, si usa 'si figuri' in contesti formali.",
+      "correctEnglish": "Right! The polite response to a mistake.",
+      "incorrectEnglish": "No, 'si figuri' is used in formal contexts."
+    }
+  },
+  {
+    "id": "s75-p26",
+    "italian": "Lascia un messaggio.",
+    "english": "Leave a message.",
+    "type": "phrase",
+    "choicesItalian": ["Lascia un messaggio.", "Dammi un messaggio.", "Fai un messaggio.", "Scrivi un messaggio."],
+    "choicesEnglish": ["Leave a message.", "Give me a message.", "Make a message.", "Write a message."],
+    "correctAnswer": "Lascia un messaggio.",
+    "feedback": {
+      "correctItalian": "Esatto! In segreteria o a una persona.",
+      "incorrectItalian": "No, si usa il verbo 'lasciare'.",
+      "correctEnglish": "Exact! In voicemail or to a person.",
+      "incorrectEnglish": "No, the verb 'lasciare' (to leave) is used."
+    }
+  },
+  {
+    "id": "s75-p27",
+    "italian": "Ti mando un WhatsApp.",
+    "english": "I'll send you a WhatsApp.",
+    "type": "phrase",
+    "choicesItalian": ["Ti mando un WhatsApp.", "Ti chiamo su WhatsApp.", "Scrivimi su WhatsApp.", "Dov'è WhatsApp?"],
+    "choicesEnglish": ["I'll send you a WhatsApp.", "I'll call you on WhatsApp.", "Write to me on WhatsApp.", "Where is WhatsApp?"],
+    "correctAnswer": "Ti mando un WhatsApp.",
+    "feedback": {
+      "correctItalian": "Ottimo! Molto moderno.",
+      "incorrectItalian": "No, significa inviare un messaggio.",
+      "correctEnglish": "Great! Very modern.",
+      "incorrectEnglish": "No, it means sending a message."
+    }
+  },
+  {
+    "id": "s75-p28",
+    "italian": "Mandami la posizione.",
+    "english": "Send me your location.",
+    "type": "phrase",
+    "choicesItalian": ["Mandami la posizione.", "Mandami una foto.", "Mandami un bacio.", "Dov'è la posizione?"],
+    "choicesEnglish": ["Send me your location.", "Send me a photo.", "Send me a kiss.", "Where is the location?"],
+    "correctAnswer": "Mandami la posizione.",
+    "feedback": {
+      "correctItalian": "Giusto! Molto utile per incontrarsi.",
+      "incorrectItalian": "No, si chiede la 'posizione' GPS.",
+      "correctEnglish": "Right! Very useful for meeting up.",
+      "incorrectEnglish": "No, you ask for the GPS 'position'."
+    }
+  },
+  {
+    "id": "s75-p29",
+    "italian": "Sono quasi arrivato.",
+    "english": "I'm almost there.",
+    "type": "phrase",
+    "choicesItalian": ["Sono quasi arrivato.", "Sono già qui.", "Sto partendo.", "Sono a casa."],
+    "choicesEnglish": ["I'm almost there.", "I'm already here.", "I'm leaving.", "I'm at home."],
+    "correctAnswer": "Sono quasi arrivato.",
+    "feedback": {
+      "correctItalian": "Esatto! Una frase tipica quando sei in ritardo.",
+      "incorrectItalian": "No, significa che mancano pochi minuti.",
+      "correctEnglish": "Exact! A typical phrase when you are late.",
+      "incorrectEnglish": "No, it means only a few minutes are left."
+    }
+  },
+  {
+    "id": "s75-p30",
+    "italian": "Aspettami lì.",
+    "english": "Wait for me there.",
+    "type": "phrase",
+    "choicesItalian": ["Aspettami lì.", "Vieni qui.", "Vai via.", "Resta a casa."],
+    "choicesEnglish": ["Wait for me there.", "Come here.", "Go away.", "Stay home."],
+    "correctAnswer": "Aspettami lì.",
+    "feedback": {
+      "correctItalian": "Ottimo! Per dare un'istruzione.",
+      "incorrectItalian": "No, si dice 'aspettami'.",
+      "correctEnglish": "Great! To give an instruction.",
+      "incorrectEnglish": "No, you say 'aspettami'."
+    }
+  },
+  {
+    "id": "s75-p31",
+    "italian": "A che ora ci vediamo?",
+    "english": "What time are we meeting?",
+    "type": "phrase",
+    "choicesItalian": ["A che ora ci vediamo?", "Dove ci vediamo?", "Chi vediamo?", "Come ci vediamo?"],
+    "choicesEnglish": ["What time are we meeting?", "Where are we meeting?", "Who are we seeing?", "How are we meeting?"],
+    "correctAnswer": "A che ora ci vediamo?",
+    "feedback": {
+      "correctItalian": "Giusto! Per fissare l'orario.",
+      "incorrectItalian": "No, si chiede 'A che ora...?'.",
+      "correctEnglish": "Right! To set the time.",
+      "incorrectEnglish": "No, you ask 'At what time...?'."
+    }
+  },
+  {
+    "id": "s75-p32",
+    "italian": "Facciamo alle otto.",
+    "english": "Let's make it at eight.",
+    "type": "phrase",
+    "choicesItalian": ["Facciamo alle otto.", "Sono le otto.", "Vado alle otto.", "Esco alle otto."],
+    "choicesEnglish": ["Let's make it at eight.", "It's eight o'clock.", "I'm going at eight.", "I'm going out at eight."],
+    "correctAnswer": "Facciamo alle otto.",
+    "feedback": {
+      "correctItalian": "Esatto! Per proporre un orario.",
+      "incorrectItalian": "No, si usa 'facciamo' per decidere insieme.",
+      "correctEnglish": "Exact! To propose a time.",
+      "incorrectEnglish": "No, 'facciamo' is used to decide together."
+    }
+  },
+  {
+    "id": "s75-p33",
+    "italian": "Va benissimo.",
+    "english": "That's perfectly fine.",
+    "type": "phrase",
+    "choicesItalian": ["Va benissimo.", "Va male.", "Non va.", "Forse."],
+    "choicesEnglish": ["That's perfectly fine.", "It's going badly.", "It doesn't work.", "Maybe."],
+    "correctAnswer": "Va benissimo.",
+    "feedback": {
+      "correctItalian": "Ottimo! Per confermare con entusiasmo.",
+      "incorrectItalian": "No, significa che sei d'accordo.",
+      "correctEnglish": "Great! To confirm with enthusiasm.",
+      "incorrectEnglish": "No, it means you agree."
+    }
+  },
+  {
+    "id": "s75-p34",
+    "italian": "Non credo.",
+    "english": "I don't think so.",
+    "type": "phrase",
+    "choicesItalian": ["Non credo.", "Non so.", "Non voglio.", "Non posso."],
+    "choicesEnglish": ["I don't think so.", "I don't know.", "I don't want to.", "I can't."],
+    "correctAnswer": "Non credo.",
+    "feedback": {
+      "correctItalian": "Giusto! Per esprimere dubbio.",
+      "incorrectItalian": "No, significa 'non penso che sia così'.",
+      "correctEnglish": "Right! To express doubt.",
+      "incorrectEnglish": "No, it means 'I don't think that's the case'."
+    }
+  },
+  {
+    "id": "s75-p35",
+    "italian": "Ah, ok, capito.",
+    "english": "Ah, okay, I understand.",
+    "type": "phrase",
+    "choicesItalian": ["Ah, ok, capito.", "Cosa dici?", "Non capisco.", "Ripeti."],
+    "choicesEnglish": ["Ah, okay, I understand.", "What are you saying?", "I don't understand.", "Repeat."],
+    "correctAnswer": "Ah, ok, capito.",
+    "feedback": {
+      "correctItalian": "Esatto! Una reazione molto naturale.",
+      "incorrectItalian": "No, è un modo per confermare di aver ricevuto l'info.",
+      "correctEnglish": "Exact! A very natural reaction.",
+      "incorrectEnglish": "No, it's a way to confirm you've received the info."
+    }
+  },
+  {
+    "id": "s75-p36",
+    "italian": "Sei sicuro?",
+    "english": "Are you sure?",
+    "type": "phrase",
+    "choicesItalian": ["Sei sicuro?", "Sei pronto?", "Sei felice?", "Sei stanco?"],
+    "choicesEnglish": ["Are you sure?", "Are you ready?", "Are you happy?", "Are you tired?"],
+    "correctAnswer": "Sei sicuro?",
+    "feedback": {
+      "correctItalian": "Ottimo! Per chiedere conferma.",
+      "incorrectItalian": "No, si chiede se l'altro ne è certo.",
+      "correctEnglish": "Great! To ask for confirmation.",
+      "incorrectEnglish": "No, you ask if the other is certain."
+    }
+  },
+  {
+    "id": "s75-p37",
+    "italian": "Non ti preoccupare.",
+    "english": "Don't worry.",
+    "type": "phrase",
+    "choicesItalian": ["Non ti preoccupare.", "Preoccupati.", "Sei preoccupato?", "Va bene."],
+    "choicesEnglish": ["Don't worry.", "Get worried.", "Are you worried?", "Okay."],
+    "correctAnswer": "Non ti preoccupare.",
+    "feedback": {
+      "correctItalian": "Giusto! Molto rassicurante.",
+      "incorrectItalian": "No, significa 'tranquillo'.",
+      "correctEnglish": "Right! Very reassuring.",
+      "incorrectEnglish": "No, it means 'stay calm'."
+    }
+  },
+  {
+    "id": "s75-p38",
+    "italian": "Tutto a posto?",
+    "english": "Everything okay?",
+    "type": "phrase",
+    "choicesItalian": ["Tutto a posto?", "Com'è?", "Dove sei?", "Che fai?"],
+    "choicesEnglish": ["Everything okay?", "How is it?", "Where are you?", "What are you doing?"],
+    "correctAnswer": "Tutto a posto?",
+    "feedback": {
+      "correctItalian": "Esatto! Un saluto molto comune.",
+      "incorrectItalian": "No, si chiede se va tutto bene.",
+      "correctEnglish": "Exact! A very common greeting.",
+      "incorrectEnglish": "No, you ask if everything is fine."
+    }
+  },
+  {
+    "id": "s75-p39",
+    "italian": "Sì, tutto bene.",
+    "english": "Yes, all good.",
+    "type": "phrase",
+    "choicesItalian": ["Sì, tutto bene.", "No, male.", "Così così.", "Sempre lo stesso."],
+    "choicesEnglish": ["Yes, all good.", "No, bad.", "So-so.", "Always the same."],
+    "correctAnswer": "Sì, tutto bene.",
+    "feedback": {
+      "correctItalian": "Ottimo! La risposta standard.",
+      "incorrectItalian": "No, è la risposta a 'Tutto a posto?'.",
+      "correctEnglish": "Great! The standard answer.",
+      "incorrectEnglish": "No, it's the answer to 'Tutto a posto?'."
+    }
+  },
+  {
+    "id": "s75-p40",
+    "italian": "Fammi sapere.",
+    "english": "Let me know.",
+    "type": "phrase",
+    "choicesItalian": ["Fammi sapere.", "Dimmi dopo.", "Chiamami.", "Scrivimi."],
+    "choicesEnglish": ["Let me know.", "Tell me later.", "Call me.", "Write to me."],
+    "correctAnswer": "Fammi sapere.",
+    "feedback": {
+      "correctItalian": "Giusto! Per restare in attesa di notizie.",
+      "incorrectItalian": "No, significa 'dammi aggiornamenti'.",
+      "correctEnglish": "Right! To stay tuned for news.",
+      "incorrectEnglish": "No, it means 'give me updates'."
+    }
+  },
+  {
+    "id": "s75-p41",
+    "italian": "Ti faccio sapere più tardi.",
+    "english": "I'll let you know later.",
+    "type": "phrase",
+    "choicesItalian": ["Ti faccio sapere più tardi.", "Ti chiamo ora.", "So tutto.", "Non lo so."],
+    "choicesEnglish": ["I'll let you know later.", "I'll call you now.", "I know everything.", "I don't know."],
+    "correctAnswer": "Ti faccio sapere più tardi.",
+    "feedback": {
+      "correctItalian": "Esatto! Quando non hai ancora una risposta.",
+      "incorrectItalian": "No, posticipi l'informazione.",
+      "correctEnglish": "Exact! When you don't have an answer yet.",
+      "incorrectEnglish": "No, you postpone the information."
+    }
+  },
+  {
+    "id": "s75-p42",
+    "italian": "Speriamo bene!",
+    "english": "Let's hope for the best!",
+    "type": "phrase",
+    "choicesItalian": ["Speriamo bene!", "Va bene.", "Peccato.", "Che fortuna!"],
+    "choicesEnglish": ["Let's hope for the best!", "Okay.", "Too bad.", "What luck!"],
+    "correctAnswer": "Speriamo bene!",
+    "feedback": {
+      "correctItalian": "Ottimo! Per augurarsi qualcosa di positivo.",
+      "incorrectItalian": "No, si usa per essere ottimisti.",
+      "correctEnglish": "Great! To wish for something positive.",
+      "incorrectEnglish": "No, it's used to be optimistic."
+    }
+  },
+  {
+    "id": "s75-p43",
+    "italian": "Che peccato!",
+    "english": "What a pity!",
+    "type": "phrase",
+    "choicesItalian": ["Che peccato!", "Che bello!", "Che noia!", "Che roba!"],
+    "choicesEnglish": ["What a pity!", "How nice!", "How boring!", "What stuff!"],
+    "correctAnswer": "Che peccato!",
+    "feedback": {
+      "correctItalian": "Giusto! Per esprimere dispiacere.",
+      "incorrectItalian": "No, si dice quando qualcosa va male.",
+      "correctEnglish": "Right! To express regret.",
+      "incorrectEnglish": "No, it's said when something goes wrong."
+    }
+  },
+  {
+    "id": "s75-p44",
+    "italian": "Meno male!",
+    "english": "Thank goodness!",
+    "type": "phrase",
+    "choicesItalian": ["Meno male!", "Più male!", "Tutto bene.", "Va bene."],
+    "choicesEnglish": ["Thank goodness!", "Worse!", "Everything is fine.", "Okay."],
+    "correctAnswer": "Meno male!",
+    "feedback": {
+      "correctItalian": "Esatto! Esprime sollievo.",
+      "incorrectItalian": "No, si usa per il sollievo.",
+      "correctEnglish": "Exact! Expresses relief.",
+      "incorrectEnglish": "No, it's used for relief."
+    }
+  },
+  {
+    "id": "s75-p45",
+    "italian": "Davvero?",
+    "english": "Really?",
+    "type": "phrase",
+    "choicesItalian": ["Davvero?", "Forse?", "Sicuro?", "Sempre?"],
+    "choicesEnglish": ["Really?", "Maybe?", "Sure?", "Always?"],
+    "correctAnswer": "Davvero?",
+    "feedback": {
+      "correctItalian": "Ottimo! Reazione di sorpresa.",
+      "incorrectItalian": "No, si usa per chiedere conferma.",
+      "correctEnglish": "Great! Reaction of surprise.",
+      "incorrectEnglish": "No, it's used to ask for confirmation."
+    }
+  },
+  {
+    "id": "s75-p46",
+    "italian": "Non ci credo!",
+    "english": "I don't believe it!",
+    "type": "phrase",
+    "choicesItalian": ["Non ci credo!", "Ci credo.", "Lo so.", "Capisco."],
+    "choicesEnglish": ["I don't believe it!", "I believe it.", "I know it.", "I understand."],
+    "correctAnswer": "Non ci credo!",
+    "feedback": {
+      "correctItalian": "Giusto! Per forte sorpresa o incredulità.",
+      "incorrectItalian": "No, significa 'è incredibile'.",
+      "correctEnglish": "Right! For strong surprise or disbelief.",
+      "incorrectEnglish": "No, it means 'it's incredible'."
+    }
+  },
+  {
+    "id": "s75-p47",
+    "italian": "Ma dai!",
+    "english": "Come on! / No way!",
+    "type": "phrase",
+    "choicesItalian": ["Ma dai!", "Vieni!", "Vai!", "Fai!"],
+    "choicesEnglish": ["Come on! / No way!", "Come!", "Go!", "Do!"],
+    "correctAnswer": "Ma dai!",
+    "feedback": {
+      "correctItalian": "Esatto! Esclamazione molto naturale.",
+      "incorrectItalian": "No, è un'espressione di stupore.",
+      "correctEnglish": "Exact! A very natural exclamation.",
+      "incorrectEnglish": "No, it's an expression of amazement."
+    }
+  },
+  {
+    "id": "s75-p48",
+    "italian": "Pazienza, non importa.",
+    "english": "Never mind, it doesn't matter.",
+    "type": "phrase",
+    "choicesItalian": ["Pazienza, non importa.", "Importa molto.", "Va bene.", "No."],
+    "choicesEnglish": ["Never mind, it doesn't matter.", "It matters a lot.", "Okay.", "No."],
+    "correctAnswer": "Pazienza, non importa.",
+    "feedback": {
+      "correctItalian": "Ottimo! Per chiudere un discorso senza successo.",
+      "incorrectItalian": "No, significa 'fa niente'.",
+      "correctEnglish": "Great! To close a discussion without success.",
+      "incorrectEnglish": "No, it means 'it's nothing'."
+    }
+  },
+  {
+    "id": "s75-p49",
+    "italian": "Ti devo lasciare.",
+    "english": "I have to let you go / I have to hang up.",
+    "type": "phrase",
+    "choicesItalian": ["Ti devo lasciare.", "Ti devo chiamare.", "Ti devo vedere.", "Ti devo dare."],
+    "choicesEnglish": ["I have to let you go / I have to hang up.", "I have to call you.", "I have to see you.", "I have to give you."],
+    "correctAnswer": "Ti devo lasciare.",
+    "feedback": {
+      "correctItalian": "Giusto! Per terminare la chiamata.",
+      "incorrectItalian": "No, è il modo per dire che devi riagganciare.",
+      "correctEnglish": "Right! To end the call.",
+      "incorrectEnglish": "No, it's the way to say you have to hang up."
+    }
+  },
+  {
+    "id": "s75-p50",
+    "italian": "Ci sentiamo dopo.",
+    "english": "Talk to you later.",
+    "type": "phrase",
+    "choicesItalian": ["Ci sentiamo dopo.", "Ci vediamo dopo.", "Ci sentiamo ora.", "Non sentiamoci."],
+    "choicesEnglish": ["Talk to you later.", "See you later.", "We're talking now.", "Let's not talk."],
+    "correctAnswer": "Ci sentiamo dopo.",
+    "feedback": {
+      "correctItalian": "Esatto! Molto comune per salutarsi al telefono.",
+      "incorrectItalian": "No, si usa il verbo 'sentirsi'.",
+      "correctEnglish": "Exact! Very common for saying goodbye on the phone.",
+      "incorrectEnglish": "No, the verb 'sentirsi' (to hear from each other) is used."
+    }
+  },
+  {
+    "id": "s75-p51",
+    "italian": "A presto!",
+    "english": "See you soon!",
+    "type": "phrase",
+    "choicesItalian": ["A presto!", "A tardi!", "A dopo!", "A mai!"],
+    "choicesEnglish": ["See you soon!", "See you late!", "See you later!", "See you never!"],
+    "correctAnswer": "A presto!",
+    "feedback": {
+      "correctItalian": "Ottimo! Un saluto generico.",
+      "incorrectItalian": "No, significa 'a tra poco'.",
+      "correctEnglish": "Great! A generic greeting.",
+      "incorrectEnglish": "No, it means 'see you in a bit'."
+    }
+  },
+  {
+    "id": "s75-p52",
+    "italian": "Un bacio.",
+    "english": "A kiss.",
+    "type": "phrase",
+    "choicesItalian": ["Un bacio.", "Un saluto.", "Un abbraccio.", "Un colpo."],
+    "choicesEnglish": ["A kiss.", "A greeting.", "A hug.", "A hit."],
+    "correctAnswer": "Un bacio.",
+    "feedback": {
+      "correctItalian": "Giusto! Molto affettuoso.",
+      "incorrectItalian": "No, è un modo tipico per salutare cari e amici.",
+      "correctEnglish": "Right! Very affectionate.",
+      "incorrectEnglish": "No, it's a typical way to greet loved ones and friends."
+    }
+  },
+  {
+    "id": "s75-p53",
+    "italian": "Un abbraccio forte.",
+    "english": "A big hug.",
+    "type": "phrase",
+    "choicesItalian": ["Un abbraccio forte.", "Un bacio forte.", "Un saluto caro.", "Ciao."],
+    "choicesEnglish": ["A big hug.", "A big kiss.", "A dear greeting.", "Bye."],
+    "correctAnswer": "Un abbraccio forte.",
+    "feedback": {
+      "correctItalian": "Esatto! Molto amichevole.",
+      "incorrectItalian": "No, è un abbraccio 'forte'.",
+      "correctEnglish": "Exact! Very friendly.",
+      "incorrectEnglish": "No, it's a 'strong' hug."
+    }
+  },
+  {
+    "id": "s75-p54",
+    "italian": "Ciao ciao!",
+    "english": "Bye bye!",
+    "type": "phrase",
+    "choicesItalian": ["Ciao ciao!", "Pronto pronto!", "Sì sì!", "No no!"],
+    "choicesEnglish": ["Bye bye!", "Hello hello!", "Yes yes!", "No no!"],
+    "correctAnswer": "Ciao ciao!",
+    "feedback": {
+      "correctItalian": "Ottimo! Per chiudere la chiamata in modo informale.",
+      "incorrectItalian": "No, si ripete 'ciao' alla fine.",
+      "correctEnglish": "Great! To end the call informally.",
+      "incorrectEnglish": "No, you repeat 'ciao' at the end."
+    }
+  },
+  {
+    "id": "s75-p55",
+    "italian": "Stammi bene.",
+    "english": "Take care.",
+    "type": "phrase",
+    "choicesItalian": ["Stammi bene.", "Stai male.", "Sii buono.", "Vedi bene."],
+    "choicesEnglish": ["Take care.", "Stay sick.", "Be good.", "See well."],
+    "correctAnswer": "Stammi bene.",
+    "feedback": {
+      "correctItalian": "Giusto! Un augurio di salute.",
+      "incorrectItalian": "No, significa 'aver cura di sé'.",
+      "correctEnglish": "Right! A wish for good health.",
+      "incorrectEnglish": "No, it means 'take care of yourself'."
+    }
+  },
+  {
+    "id": "s75-p56",
+    "italian": "Saluta tutti.",
+    "english": "Say hi to everyone.",
+    "type": "phrase",
+    "choicesItalian": ["Saluta tutti.", "Vedi tutti.", "Chiama tutti.", "Senti tutti."],
+    "choicesEnglish": ["Say hi to everyone.", "See everyone.", "Call everyone.", "Hear everyone."],
+    "correctAnswer": "Saluta tutti.",
+    "feedback": {
+      "correctItalian": "Esatto! Per estendere i saluti alla famiglia o agli amici.",
+      "incorrectItalian": "No, è un invito a dare saluti.",
+      "correctEnglish": "Exact! To extend greetings to family or friends.",
+      "incorrectEnglish": "No, it's an invitation to give greetings."
+    }
+  },
+  {
+    "id": "s75-p57",
+    "italian": "Ci sentiamo presto.",
+    "english": "We'll talk soon.",
+    "type": "phrase",
+    "choicesItalian": ["Ci sentiamo presto.", "Ci vediamo presto.", "Non chiamarmi.", "A dopo."],
+    "choicesEnglish": ["We'll talk soon.", "We'll see each other soon.", "Don't call me.", "See you later."],
+    "correctAnswer": "Ci sentiamo presto.",
+    "feedback": {
+      "correctItalian": "Ottimo! Un saluto finale molto comune.",
+      "incorrectItalian": "No, indica un contatto futuro imminente.",
+      "correctEnglish": "Great! A very common final greeting.",
+      "incorrectEnglish": "No, it indicates imminent future contact."
+    }
+  },
+  {
+    "id": "s75-p58",
+    "italian": "Grazie della chiamata.",
+    "english": "Thanks for the call.",
+    "type": "phrase",
+    "choicesItalian": ["Grazie della chiamata.", "Grazie del messaggio.", "Prego.", "Chiamami."],
+    "choicesEnglish": ["Thanks for the call.", "Thanks for the message.", "You're welcome.", "Call me."],
+    "correctAnswer": "Grazie della chiamata.",
+    "feedback": {
+      "correctItalian": "Giusto! Per ringraziare l'altro.",
+      "incorrectItalian": "No, ringrazi per la telefonata.",
+      "correctEnglish": "Right! To thank the other person.",
+      "incorrectEnglish": "No, you're thanking for the phone call."
+    }
+  },
+  {
+    "id": "s75-p59",
+    "italian": "Grazie a te.",
+    "english": "Thank YOU.",
+    "type": "phrase",
+    "choicesItalian": ["Grazie a te.", "Grazie a me.", "Prego.", "Niente."],
+    "choicesEnglish": ["Thank YOU.", "Thanks to me.", "You're welcome.", "Nothing."],
+    "correctAnswer": "Grazie a te.",
+    "feedback": {
+      "correctItalian": "Esatto! Ricambiando il ringraziamento.",
+      "incorrectItalian": "No, restituisci il grazie.",
+      "correctEnglish": "Exact! Returning the thanks.",
+      "incorrectEnglish": "No, you return the thank you."
+    }
+  },
+  {
+    "id": "s75-p60",
+    "italian": "Buon proseguimento.",
+    "english": "Have a good rest of your day / evening (formal).",
+    "type": "phrase",
+    "choicesItalian": ["Buon proseguimento.", "Buona giornata.", "Buona sera.", "Ciao."],
+    "choicesEnglish": ["Have a good rest of your day / evening (formal).", "Good day.", "Good evening.", "Bye."],
+    "correctAnswer": "Buon proseguimento.",
+    "feedback": {
+      "correctItalian": "Ottimo! Molto formale ed elegante.",
+      "incorrectItalian": "No, si usa per augurare buon lavoro o giornata.",
+      "correctEnglish": "Great! Very formal and elegant.",
+      "incorrectEnglish": "No, it's used to wish a good continuation of work or day."
     }
   }
 ]
