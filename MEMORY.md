@@ -6,6 +6,7 @@
 - dining ✅
 - travel ✅
 - shopping ✅
+- culture ✅
 
 ## Completed Scenarios
 - at_the_bank ✅ (s36, daily_life)
@@ -68,9 +69,41 @@
 - returning_an_item ✅ (validated, shopping)
 - shoe_store ✅ (upgraded, shopping)
 - souvenir_shop ✅ (upgraded, shopping)
+- church_visit ✅ (validated, culture)
+- festival ✅ (upgraded, culture)
+- historic_site ✅ (validated, culture)
+- italian_customs ✅ (validated, culture)
+- live_music ✅ (validated, culture)
+- local_history ✅ (validated, culture)
+- museum_tickets ✅ (validated, culture)
+- sports_match ✅ (validated, culture)
+- theater_evening ✅ (validated, culture)
+- guided_tour ✅ (upgraded, culture)
+- cinema_tickets ✅ (upgraded, culture)
+- art_gallery ✅ (upgraded, culture)
 
 ## Categories Requiring Audit
-- all audited
+- health (undersized phrases/sentences)
+- social (undersized phrases/sentences)
+
+## Scenarios Requiring Upgrade (Health)
+- buying_medicine
+- dental_problem
+- doctor_appointment
+- emergency_room
+- pharmacy_symptoms
+
+## Scenarios Requiring Upgrade (Social)
+- apologizing
+- at_a_party
+- birthday_wishes
+- compliments
+- introducing_yourself
+- inviting_a_friend
+- making_plans
+- phone_call
+- saying_goodbye
+- texting_a_friend
 
 ## Known Quality Problems
 - missing four-part feedback in older datasets (culture, workstudy, etc.)
