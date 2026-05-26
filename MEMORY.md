@@ -5,6 +5,7 @@
 - daily_life ✅
 - dining ✅
 - travel ✅
+- shopping ✅
 
 ## Completed Scenarios
 - at_the_bank ✅ (s36, daily_life)
@@ -57,12 +58,22 @@
 - train_platform ✅ (upgraded, travel)
 - train_ticket ✅ (upgraded, travel)
 - travel_emergency ✅ (validated, travel)
+- bookstore ✅ (validated, shopping)
+- clothing_store ✅ (upgraded, shopping)
+- electronics_store ✅ (upgraded, shopping)
+- grocery_store ✅ (upgraded, shopping)
+- outdoor_market ✅ (upgraded, shopping)
+- paying_by_card ✅ (validated, shopping)
+- pharmacy_purchase ✅ (upgraded, shopping)
+- returning_an_item ✅ (validated, shopping)
+- shoe_store ✅ (upgraded, shopping)
+- souvenir_shop ✅ (upgraded, shopping)
 
 ## Categories Requiring Audit
 - all audited
 
 ## Known Quality Problems
-- missing four-part feedback in older datasets (shopping, culture, etc.)
+- missing four-part feedback in older datasets (culture, workstudy, etc.)
 - undersized datasets in older scenarios (culture, workstudy, etc.)
 
 ## Important Architectural Decisions

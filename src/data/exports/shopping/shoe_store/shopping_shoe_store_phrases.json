@@ -1,1102 +1,702 @@
 [
   {
-    "id": "s42-p1",
+    "id": "shop_shoe_p1",
     "type": "phrase",
-    "choicesItalian": [
-      "Che numero porta?",
-      "Modello stringato",
-      "Scarpe da trekking",
-      "In fondo al negozio"
-    ],
-    "choicesEnglish": [
-      "What size do you wear?",
-      "Lace-up model",
-      "Hiking shoes",
-      "In the back of the store"
-    ],
+    "choicesItalian": ["Che numero porta?", "Qual è la sua taglia?", "Quanto misura il piede?", "Che numero preferisce?"],
+    "choicesEnglish": ["What size do you wear?", "What is your size?", "How much does the foot measure?", "Which size do you prefer?"],
     "correctAnswerItalian": "Che numero porta?",
     "correctAnswerEnglish": "What size do you wear?",
     "feedback": {
-      "correct": "Ottimo! 'Che numero porta?' si dice 'What size do you wear?'. / Great! 'Che numero porta?' is said as 'What size do you wear?'.",
-      "incorrect": "Sbagliato. 'Che numero porta?' si traduce 'What size do you wear?'. / Wrong. 'Che numero porta?' translates to 'What size do you wear?'."
+      "correctItalian": "Esatto! In Italia per le scarpe si chiede il 'numero'.",
+      "incorrectItalian": "No, la domanda corretta è 'Che numero porta?'.",
+      "correctEnglish": "Exactly! In Italy, for shoes, we ask for the 'numero' (number).",
+      "incorrectEnglish": "No, the correct question is 'What size (number) do you wear?'."
     }
   },
   {
-    "id": "s42-p2",
+    "id": "shop_shoe_p2",
     "type": "phrase",
-    "choicesItalian": [
-      "Porto il 42",
-      "Pelle marrone",
-      "Per una cerimonia",
-      "Sconto del 30%"
-    ],
-    "choicesEnglish": [
-      "I wear size 42",
-      "Brown leather",
-      "For a ceremony",
-      "30% discount"
-    ],
-    "correctAnswerItalian": "Porto il 42",
-    "correctAnswerEnglish": "I wear size 42",
+    "choicesItalian": ["Porto il 42.", "Ho il 42.", "Voglio il 42.", "Misuro il 42."],
+    "choicesEnglish": ["I wear size 42.", "I have the 42.", "I want the 42.", "I measure the 42."],
+    "correctAnswerItalian": "Porto il 42.",
+    "correctAnswerEnglish": "I wear size 42.",
     "feedback": {
-      "correct": "Ottimo! 'Porto il 42' si dice 'I wear size 42'. / Great! 'Porto il 42' is said as 'I wear size 42'.",
-      "incorrect": "Sbagliato. 'Porto il 42' si traduce 'I wear size 42'. / Wrong. 'Porto il 42' translates to 'I wear size 42'."
+      "correctItalian": "Giusto! Si usa il verbo 'portare' per indicare la propria misura.",
+      "incorrectItalian": "No, si dice 'Porto il [numero]'.",
+      "correctEnglish": "Right! The verb 'portare' is used to indicate one's size.",
+      "incorrectEnglish": "No, you say 'I wear size [number]'."
     }
   },
   {
-    "id": "s42-p3",
+    "id": "shop_shoe_p3",
     "type": "phrase",
-    "choicesItalian": [
-      "Modello stringato",
-      "In vetrina",
-      "Scarpe da trekking",
-      "Meglio il 42 e mezzo"
-    ],
-    "choicesEnglish": [
-      "Lace-up model",
-      "In the window",
-      "Hiking shoes",
-      "42.5 is better"
-    ],
-    "correctAnswerItalian": "In vetrina",
-    "correctAnswerEnglish": "In the window",
+    "choicesItalian": ["Posso provarle?", "Posso vederle?", "Posso toccarle?", "Posso comprarle?"],
+    "choicesEnglish": ["Can I try them on?", "Can I see them?", "Can I touch them?", "Can I buy them?"],
+    "correctAnswerItalian": "Posso provarle?",
+    "correctAnswerEnglish": "Can I try them on?",
     "feedback": {
-      "correct": "Ottimo! 'In vetrina' si dice 'In the window'. / Great! 'In vetrina' is said as 'In the window'.",
-      "incorrect": "Sbagliato. 'In vetrina' si traduce 'In the window'. / Wrong. 'In vetrina' translates to 'In the window'."
+      "correctItalian": "Bravo! Fondamentale prima di decidere l'acquisto.",
+      "incorrectItalian": "No, il verbo per testare le scarpe è 'provare'.",
+      "correctEnglish": "Well done! Essential before deciding on the purchase.",
+      "incorrectEnglish": "No, the verb for testing shoes is 'to try on' (provare)."
     }
   },
   {
-    "id": "s42-p4",
+    "id": "shop_shoe_p4",
     "type": "phrase",
-    "choicesItalian": [
-      "Le prendo!",
-      "Scarpe da ginnastica",
-      "Impermeabili all'acqua",
-      "Un po' scomode"
-    ],
-    "choicesEnglish": [
-      "I'll take them!",
-      "Sneakers",
-      "Waterproof",
-      "A bit uncomfortable"
-    ],
-    "correctAnswerItalian": "Scarpe da ginnastica",
-    "correctAnswerEnglish": "Sneakers",
+    "choicesItalian": ["Mi stanno strette.", "Mi stanno larghe.", "Mi stanno bene.", "Mi fanno male."],
+    "choicesEnglish": ["They are tight on me.", "They are loose on me.", "They fit me well.", "They hurt me."],
+    "correctAnswerItalian": "Mi stanno strette.",
+    "correctAnswerEnglish": "They are tight on me.",
     "feedback": {
-      "correct": "Ottimo! 'Scarpe da ginnastica' si dice 'Sneakers'. / Great! 'Scarpe da ginnastica' is said as 'Sneakers'.",
-      "incorrect": "Sbagliato. 'Scarpe da ginnastica' si traduce 'Sneakers'. / Wrong. 'Scarpe da ginnastica' translates to 'Sneakers'."
+      "correctItalian": "Esatto! Se non c'è abbastanza spazio, 'stanno strette'.",
+      "incorrectItalian": "No, 'strette' significa che premono troppo.",
+      "correctEnglish": "Exactly! If there isn't enough space, they are 'strette' (tight).",
+      "incorrectEnglish": "No, 'strette' means they press too much."
     }
   },
   {
-    "id": "s42-p5",
+    "id": "shop_shoe_p5",
     "type": "phrase",
-    "choicesItalian": [
-      "Un po' stretto",
-      "Sconto del 30%",
-      "Faccia due passi",
-      "Le prendo!"
-    ],
-    "choicesEnglish": [
-      "A bit tight",
-      "30% discount",
-      "Take a few steps",
-      "I'll take them!"
-    ],
-    "correctAnswerItalian": "Un po' stretto",
-    "correctAnswerEnglish": "A bit tight",
+    "choicesItalian": ["Sono molto comode.", "Sono molto pesanti.", "Sono molto alte.", "Sono molto dure."],
+    "choicesEnglish": ["They are very comfortable.", "They are very heavy.", "They are very high.", "They are very hard."],
+    "correctAnswerItalian": "Sono molto comode.",
+    "correctAnswerEnglish": "They are very comfortable.",
     "feedback": {
-      "correct": "Ottimo! 'Un po' stretto' si dice 'A bit tight'. / Great! 'Un po' stretto' is said as 'A bit tight'.",
-      "incorrect": "Sbagliato. 'Un po' stretto' si traduce 'A bit tight'. / Wrong. 'Un po' stretto' translates to 'A bit tight'."
+      "correctItalian": "Ottimo! Una caratteristica essenziale per una buona scarpa.",
+      "incorrectItalian": "No, cerchiamo l'aggettivo per 'confortevole'.",
+      "correctEnglish": "Great! An essential feature for a good shoe.",
+      "incorrectEnglish": "No, we are looking for the adjective for 'comfortable'."
     }
   },
   {
-    "id": "s42-p6",
+    "id": "shop_shoe_p6",
     "type": "phrase",
-    "choicesItalian": [
-      "Calze di cotone",
-      "Pelle marrone",
-      "Meglio il 42 e mezzo",
-      "Sconto del 30%"
-    ],
-    "choicesEnglish": [
-      "Cotton socks",
-      "Brown leather",
-      "42.5 is better",
-      "30% discount"
-    ],
-    "correctAnswerItalian": "Meglio il 42 e mezzo",
-    "correctAnswerEnglish": "42.5 is better",
+    "choicesItalian": ["Avete il 42 e mezzo?", "Avete il 42 e un quarto?", "Avete il 42 quasi?", "Avete il 42 circa?"],
+    "choicesEnglish": ["Do you have 42.5?", "Do you have 42 and a quarter?", "Do you have almost 42?", "Do you have about 42?"],
+    "correctAnswerItalian": "Avete il 42 e mezzo?",
+    "correctAnswerEnglish": "Do you have 42.5?",
     "feedback": {
-      "correct": "Ottimo! 'Meglio il 42 e mezzo' si dice '42.5 is better'. / Great! 'Meglio il 42 e mezzo' is said as '42.5 is better'.",
-      "incorrect": "Sbagliato. 'Meglio il 42 e mezzo' si traduce '42.5 is better'. / Wrong. 'Meglio il 42 e mezzo' translates to '42.5 is better'."
+      "correctItalian": "Giusto! In Italia si usano le mezze misure.",
+      "incorrectItalian": "No, si dice 'e mezzo' per indicare il .5.",
+      "correctEnglish": "Right! Half sizes are used in Italy.",
+      "incorrectEnglish": "No, you say 'e mezzo' (and a half) to indicate .5."
     }
   },
   {
-    "id": "s42-p7",
+    "id": "shop_shoe_p7",
     "type": "phrase",
-    "choicesItalian": [
-      "Stivali da pioggia",
-      "Molto confortevoli",
-      "Scarpe da corsa",
-      "Scarpe eleganti"
-    ],
-    "choicesEnglish": [
-      "Rain boots",
-      "Very comfortable",
-      "Running shoes",
-      "Formal shoes"
-    ],
-    "correctAnswerItalian": "Scarpe eleganti",
-    "correctAnswerEnglish": "Formal shoes",
-    "feedback": {
-      "correct": "Ottimo! 'Scarpe eleganti' si dice 'Formal shoes'. / Great! 'Scarpe eleganti' is said as 'Formal shoes'.",
-      "incorrect": "Sbagliato. 'Scarpe eleganti' si traduce 'Formal shoes'. / Wrong. 'Scarpe eleganti' translates to 'Formal shoes'."
-    }
-  },
-  {
-    "id": "s42-p8",
-    "type": "phrase",
-    "choicesItalian": [
-      "Scarpe da trekking",
-      "Modello stringato",
-      "Pelle marrone",
-      "Vanno bene?"
-    ],
-    "choicesEnglish": [
-      "Hiking shoes",
-      "Lace-up model",
-      "Brown leather",
-      "Do they fit?"
-    ],
-    "correctAnswerItalian": "Modello stringato",
-    "correctAnswerEnglish": "Lace-up model",
-    "feedback": {
-      "correct": "Ottimo! 'Modello stringato' si dice 'Lace-up model'. / Great! 'Modello stringato' is said as 'Lace-up model'.",
-      "incorrect": "Sbagliato. 'Modello stringato' si traduce 'Lace-up model'. / Wrong. 'Modello stringato' translates to 'Lace-up model'."
-    }
-  },
-  {
-    "id": "s42-p9",
-    "type": "phrase",
-    "choicesItalian": [
-      "Vuole un calzascarpe?",
-      "Suola antiscivolo",
-      "Plateau interno",
-      "Le prendo!"
-    ],
-    "choicesEnglish": [
-      "Do you want a shoehorn?",
-      "Non-slip sole",
-      "Internal platform",
-      "I'll take them!"
-    ],
-    "correctAnswerItalian": "Vuole un calzascarpe?",
-    "correctAnswerEnglish": "Do you want a shoehorn?",
-    "feedback": {
-      "correct": "Ottimo! 'Vuole un calzascarpe?' si dice 'Do you want a shoehorn?'. / Great! 'Vuole un calzascarpe?' is said as 'Do you want a shoehorn?'.",
-      "incorrect": "Sbagliato. 'Vuole un calzascarpe?' si traduce 'Do you want a shoehorn?'. / Wrong. 'Vuole un calzascarpe?' translates to 'Do you want a shoehorn?'."
-    }
-  },
-  {
-    "id": "s42-p10",
-    "type": "phrase",
-    "choicesItalian": [
-      "Vanno bene?",
-      "Scarpe col tacco",
-      "Pianta larga",
-      "Scarpe da ginnastica"
-    ],
-    "choicesEnglish": [
-      "Do they fit?",
-      "High-heeled shoes",
-      "Wide fit",
-      "Sneakers"
-    ],
-    "correctAnswerItalian": "Scarpe col tacco",
-    "correctAnswerEnglish": "High-heeled shoes",
-    "feedback": {
-      "correct": "Ottimo! 'Scarpe col tacco' si dice 'High-heeled shoes'. / Great! 'Scarpe col tacco' is said as 'High-heeled shoes'.",
-      "incorrect": "Sbagliato. 'Scarpe col tacco' si traduce 'High-heeled shoes'. / Wrong. 'Scarpe col tacco' translates to 'High-heeled shoes'."
-    }
-  },
-  {
-    "id": "s42-p11",
-    "type": "phrase",
-    "choicesItalian": [
-      "Posso provare queste?",
-      "Tacco basso",
-      "Di questa marca",
-      "Plateau interno"
-    ],
-    "choicesEnglish": [
-      "Can I try these on?",
-      "Low heel",
-      "Of this brand",
-      "Internal platform"
-    ],
-    "correctAnswerItalian": "Plateau interno",
-    "correctAnswerEnglish": "Internal platform",
-    "feedback": {
-      "correct": "Ottimo! 'Plateau interno' si dice 'Internal platform'. / Great! 'Plateau interno' is said as 'Internal platform'.",
-      "incorrect": "Sbagliato. 'Plateau interno' si traduce 'Internal platform'. / Wrong. 'Plateau interno' translates to 'Internal platform'."
-    }
-  },
-  {
-    "id": "s42-p12",
-    "type": "phrase",
-    "choicesItalian": [
-      "Faccia due passi",
-      "Sconto del 30%",
-      "Sono molto stabili",
-      "Tacco alto"
-    ],
-    "choicesEnglish": [
-      "Take a few steps",
-      "30% discount",
-      "They are very stable",
-      "High heel"
-    ],
-    "correctAnswerItalian": "Faccia due passi",
-    "correctAnswerEnglish": "Take a few steps",
-    "feedback": {
-      "correct": "Ottimo! 'Faccia due passi' si dice 'Take a few steps'. / Great! 'Faccia due passi' is said as 'Take a few steps'.",
-      "incorrect": "Sbagliato. 'Faccia due passi' si traduce 'Take a few steps'. / Wrong. 'Faccia due passi' translates to 'Take a few steps'."
-    }
-  },
-  {
-    "id": "s42-p13",
-    "type": "phrase",
-    "choicesItalian": [
-      "Lucidare le scarpe",
-      "Mi stringono",
-      "In fondo al negozio",
-      "Sono molto stabili"
-    ],
-    "choicesEnglish": [
-      "To polish shoes",
-      "They pinch me",
-      "In the back of the store",
-      "They are very stable"
-    ],
-    "correctAnswerItalian": "Sono molto stabili",
-    "correctAnswerEnglish": "They are very stable",
-    "feedback": {
-      "correct": "Ottimo! 'Sono molto stabili' si dice 'They are very stable'. / Great! 'Sono molto stabili' is said as 'They are very stable'.",
-      "incorrect": "Sbagliato. 'Sono molto stabili' si traduce 'They are very stable'. / Wrong. 'Sono molto stabili' translates to 'They are very stable'."
-    }
-  },
-  {
-    "id": "s42-p14",
-    "type": "phrase",
-    "choicesItalian": [
-      "Impermeabili all'acqua",
-      "Un po' stretto",
-      "Le prendo!",
-      "Vado a vedere"
-    ],
-    "choicesEnglish": [
-      "Waterproof",
-      "A bit tight",
-      "I'll take them!",
-      "I'll go see"
-    ],
+    "choicesItalian": ["Le prendo!", "Le lascio!", "Le vendo!", "Le provo!"],
+    "choicesEnglish": ["I'll take them!", "I'll leave them!", "I'll sell them!", "I'll try them!"],
     "correctAnswerItalian": "Le prendo!",
     "correctAnswerEnglish": "I'll take them!",
     "feedback": {
-      "correct": "Ottimo! 'Le prendo!' si dice 'I'll take them!'. / Great! 'Le prendo!' is said as 'I'll take them!'.",
-      "incorrect": "Sbagliato. 'Le prendo!' si traduce 'I'll take them!'. / Wrong. 'Le prendo!' translates to 'I'll take them!'."
+      "correctItalian": "Perfetto! La frase tipica per confermare l'acquisto.",
+      "incorrectItalian": "No, 'le prendo' significa che hai deciso di comprarle.",
+      "correctEnglish": "Perfect! The typical phrase to confirm the purchase.",
+      "incorrectEnglish": "No, 'le prendo' means you've decided to buy them."
     }
   },
   {
-    "id": "s42-p15",
+    "id": "shop_shoe_p8",
     "type": "phrase",
-    "choicesItalian": [
-      "Scarpe da trekking",
-      "Di questa marca",
-      "Pianta larga",
-      "Posso provare queste?"
-    ],
-    "choicesEnglish": [
-      "Hiking shoes",
-      "Of this brand",
-      "Wide fit",
-      "Can I try these on?"
-    ],
-    "correctAnswerItalian": "Di questa marca",
-    "correctAnswerEnglish": "Of this brand",
+    "choicesItalian": ["In vetrina", "Sullo scaffale", "Sotto il bancone", "Nel magazzino"],
+    "choicesEnglish": ["In the window", "On the shelf", "Under the counter", "In the warehouse"],
+    "correctAnswerItalian": "In vetrina",
+    "correctAnswerEnglish": "In the window",
     "feedback": {
-      "correct": "Ottimo! 'Di questa marca' si dice 'Of this brand'. / Great! 'Di questa marca' is said as 'Of this brand'.",
-      "incorrect": "Sbagliato. 'Di questa marca' si traduce 'Of this brand'. / Wrong. 'Di questa marca' translates to 'Of this brand'."
+      "correctItalian": "Esatto! La vetrina è dove i prodotti sono esposti all'esterno.",
+      "incorrectItalian": "No, stiamo parlando della parte visibile dalla strada.",
+      "correctEnglish": "Exactly! The 'vetrina' is where products are displayed on the outside.",
+      "incorrectEnglish": "No, we are talking about the part visible from the street."
     }
   },
   {
-    "id": "s42-p16",
+    "id": "shop_shoe_p9",
     "type": "phrase",
-    "choicesItalian": [
-      "Pelle nera",
-      "Tacco basso",
-      "Meglio il 42 e mezzo",
-      "Scarpe da trekking"
-    ],
-    "choicesEnglish": [
-      "Black leather",
-      "Low heel",
-      "42.5 is better",
-      "Hiking shoes"
-    ],
-    "correctAnswerItalian": "Pelle nera",
-    "correctAnswerEnglish": "Black leather",
+    "choicesItalian": ["Scarpe da ginnastica", "Scarpe da ufficio", "Scarpe da ballo", "Scarpe da neve"],
+    "choicesEnglish": ["Sneakers", "Office shoes", "Dance shoes", "Snow shoes"],
+    "correctAnswerItalian": "Scarpe da ginnastica",
+    "correctAnswerEnglish": "Sneakers",
     "feedback": {
-      "correct": "Ottimo! 'Pelle nera' si dice 'Black leather'. / Great! 'Pelle nera' is said as 'Black leather'.",
-      "incorrect": "Sbagliato. 'Pelle nera' si traduce 'Black leather'. / Wrong. 'Pelle nera' translates to 'Black leather'."
+      "correctItalian": "Bravo! Termine comune per tutte le scarpe sportive.",
+      "incorrectItalian": "No, sono le scarpe che si usano per lo sport o il tempo libero.",
+      "correctEnglish": "Well done! Common term for all sports shoes.",
+      "incorrectEnglish": "No, these are the shoes used for sports or leisure."
     }
   },
   {
-    "id": "s42-p17",
+    "id": "shop_shoe_p10",
     "type": "phrase",
-    "choicesItalian": [
-      "Di questa marca",
-      "Ottima qualità",
-      "Pelle marrone",
-      "Vuole un calzascarpe?"
-    ],
-    "choicesEnglish": [
-      "Of this brand",
-      "Great quality",
-      "Brown leather",
-      "Do you want a shoehorn?"
-    ],
+    "choicesItalian": ["Modello stringato", "Modello aperto", "Modello alto", "Modello basso"],
+    "choicesEnglish": ["Lace-up model", "Open model", "High model", "Low model"],
+    "correctAnswerItalian": "Modello stringato",
+    "correctAnswerEnglish": "Lace-up model",
+    "feedback": {
+      "correctItalian": "Giusto! Un modello che ha le stringhe (o lacci).",
+      "incorrectItalian": "No, 'stringato' significa che si chiude con le stringhe.",
+      "correctEnglish": "Right! A model that has strings (or laces).",
+      "incorrectEnglish": "No, 'stringato' means it closes with shoestrings."
+    }
+  },
+  {
+    "id": "shop_shoe_p11",
+    "type": "phrase",
+    "choicesItalian": ["Vuole un calzascarpe?", "Vuole un calzino?", "Vuole un laccio?", "Vuole un tacco?"],
+    "choicesEnglish": ["Do you want a shoehorn?", "Do you want a sock?", "Do you want a lace?", "Do you want a heel?"],
+    "correctAnswerItalian": "Vuole un calzascarpe?",
+    "correctAnswerEnglish": "Do you want a shoehorn?",
+    "feedback": {
+      "correctItalian": "Esatto! Molto utile per infilare le scarpe eleganti.",
+      "incorrectItalian": "No, è lo strumento per aiutare il piede a entrare.",
+      "correctEnglish": "Exactly! Very useful for putting on dress shoes.",
+      "incorrectEnglish": "No, it's the tool to help the foot get in."
+    }
+  },
+  {
+    "id": "shop_shoe_p12",
+    "type": "phrase",
+    "choicesItalian": ["Mi stringono in punta.", "Mi scivolano dietro.", "Mi sono grandi.", "Mi sono comode."],
+    "choicesEnglish": ["They pinch at the toe.", "They slip at the back.", "They are big for me.", "They are comfortable for me."],
+    "correctAnswerItalian": "Mi stringono in punta.",
+    "correctAnswerEnglish": "They pinch at the toe.",
+    "feedback": {
+      "correctItalian": "Bravo! 'Punta' è la parte anteriore della scarpa.",
+      "incorrectItalian": "No, stiamo parlando della pressione sulle dita dei piedi.",
+      "correctEnglish": "Well done! 'Punta' is the front part of the shoe.",
+      "incorrectEnglish": "No, we are talking about pressure on the toes."
+    }
+  },
+  {
+    "id": "shop_shoe_p13",
+    "type": "phrase",
+    "choicesItalian": ["Faccia due passi.", "Faccia una corsa.", "Faccia un salto.", "Faccia un giro."],
+    "choicesEnglish": ["Take a few steps.", "Take a run.", "Take a jump.", "Take a turn."],
+    "correctAnswerItalian": "Faccia due passi.",
+    "correctAnswerEnglish": "Take a few steps.",
+    "feedback": {
+      "correctItalian": "Giusto! Il commesso ti invita a camminare per provare la scarpa.",
+      "incorrectItalian": "No, è l'espressione tipica per testare la comodità camminando.",
+      "correctEnglish": "Right! The shop assistant invites you to walk to try the shoe.",
+      "incorrectEnglish": "No, it's the typical expression for testing comfort by walking."
+    }
+  },
+  {
+    "id": "shop_shoe_p14",
+    "type": "phrase",
+    "choicesItalian": ["Sono molto stabili.", "Sono molto fragili.", "Sono molto mobili.", "Sono molto leggere."],
+    "choicesEnglish": ["They are very stable.", "They are very fragile.", "They are very mobile.", "They are very light."],
+    "correctAnswerItalian": "Sono molto stabili.",
+    "correctAnswerEnglish": "They are very stable.",
+    "feedback": {
+      "correctItalian": "Esatto! Importante specialmente per le scarpe col tacco.",
+      "incorrectItalian": "No, significa che danno sicurezza nel camminare.",
+      "correctEnglish": "Exactly! Especially important for high-heeled shoes.",
+      "incorrectEnglish": "No, it means they provide safety while walking."
+    }
+  },
+  {
+    "id": "shop_shoe_p15",
+    "type": "phrase",
+    "choicesItalian": ["Pelle marrone", "Pelle blu", "Pelle verde", "Pelle rossa"],
+    "choicesEnglish": ["Brown leather", "Blue leather", "Green leather", "Red leather"],
     "correctAnswerItalian": "Pelle marrone",
     "correctAnswerEnglish": "Brown leather",
     "feedback": {
-      "correct": "Ottimo! 'Pelle marrone' si dice 'Brown leather'. / Great! 'Pelle marrone' is said as 'Brown leather'.",
-      "incorrect": "Sbagliato. 'Pelle marrone' si traduce 'Brown leather'. / Wrong. 'Pelle marrone' translates to 'Brown leather'."
+      "correctItalian": "Bravo! Un classico per le calzature di qualità.",
+      "incorrectItalian": "No, stiamo parlando del colore marrone.",
+      "correctEnglish": "Well done! A classic for quality footwear.",
+      "incorrectEnglish": "No, we are talking about the color brown."
     }
   },
   {
-    "id": "s42-p18",
+    "id": "shop_shoe_p16",
     "type": "phrase",
-    "choicesItalian": [
-      "Un po' scomode",
-      "Tacco alto",
-      "Nuovo arrivo",
-      "Senza lacci"
-    ],
-    "choicesEnglish": [
-      "A bit uncomfortable",
-      "High heel",
-      "New arrival",
-      "Without laces"
-    ],
-    "correctAnswerItalian": "Senza lacci",
-    "correctAnswerEnglish": "Without laces",
-    "feedback": {
-      "correct": "Ottimo! 'Senza lacci' si dice 'Without laces'. / Great! 'Senza lacci' is said as 'Without laces'.",
-      "incorrect": "Sbagliato. 'Senza lacci' si traduce 'Without laces'. / Wrong. 'Senza lacci' translates to 'Without laces'."
-    }
-  },
-  {
-    "id": "s42-p19",
-    "type": "phrase",
-    "choicesItalian": [
-      "Vuole un calzascarpe?",
-      "Sconto del 30%",
-      "Nuovo arrivo",
-      "Suola di gomma"
-    ],
-    "choicesEnglish": [
-      "Do you want a shoehorn?",
-      "30% discount",
-      "New arrival",
-      "Rubber sole"
-    ],
-    "correctAnswerItalian": "Suola di gomma",
-    "correctAnswerEnglish": "Rubber sole",
-    "feedback": {
-      "correct": "Ottimo! 'Suola di gomma' si dice 'Rubber sole'. / Great! 'Suola di gomma' is said as 'Rubber sole'.",
-      "incorrect": "Sbagliato. 'Suola di gomma' si traduce 'Rubber sole'. / Wrong. 'Suola di gomma' translates to 'Rubber sole'."
-    }
-  },
-  {
-    "id": "s42-p20",
-    "type": "phrase",
-    "choicesItalian": [
-      "Sandali estivi",
-      "Pianta larga",
-      "Modello stringato",
-      "Tacco basso"
-    ],
-    "choicesEnglish": [
-      "Summer sandals",
-      "Wide fit",
-      "Lace-up model",
-      "Low heel"
-    ],
-    "correctAnswerItalian": "Pianta larga",
-    "correctAnswerEnglish": "Wide fit",
-    "feedback": {
-      "correct": "Ottimo! 'Pianta larga' si dice 'Wide fit'. / Great! 'Pianta larga' is said as 'Wide fit'.",
-      "incorrect": "Sbagliato. 'Pianta larga' si traduce 'Wide fit'. / Wrong. 'Pianta larga' translates to 'Wide fit'."
-    }
-  },
-  {
-    "id": "s42-p21",
-    "type": "phrase",
-    "choicesItalian": [
-      "Stringere i lacci",
-      "Un po' stretto",
-      "Impermeabili all'acqua",
-      "Scarpe da ginnastica"
-    ],
-    "choicesEnglish": [
-      "To tighten the laces",
-      "A bit tight",
-      "Waterproof",
-      "Sneakers"
-    ],
-    "correctAnswerItalian": "Impermeabili all'acqua",
-    "correctAnswerEnglish": "Waterproof",
-    "feedback": {
-      "correct": "Ottimo! 'Impermeabili all'acqua' si dice 'Waterproof'. / Great! 'Impermeabili all'acqua' is said as 'Waterproof'.",
-      "incorrect": "Sbagliato. 'Impermeabili all'acqua' si traduce 'Waterproof'. / Wrong. 'Impermeabili all'acqua' translates to 'Waterproof'."
-    }
-  },
-  {
-    "id": "s42-p22",
-    "type": "phrase",
-    "choicesItalian": [
-      "Scarpe da trekking",
-      "Calze di cotone",
-      "Prezzo scontato",
-      "Per una cerimonia"
-    ],
-    "choicesEnglish": [
-      "Hiking shoes",
-      "Cotton socks",
-      "Discounted price",
-      "For a ceremony"
-    ],
-    "correctAnswerItalian": "Per una cerimonia",
-    "correctAnswerEnglish": "For a ceremony",
-    "feedback": {
-      "correct": "Ottimo! 'Per una cerimonia' si dice 'For a ceremony'. / Great! 'Per una cerimonia' is said as 'For a ceremony'.",
-      "incorrect": "Sbagliato. 'Per una cerimonia' si traduce 'For a ceremony'. / Wrong. 'Per una cerimonia' translates to 'For a ceremony'."
-    }
-  },
-  {
-    "id": "s42-p23",
-    "type": "phrase",
-    "choicesItalian": [
-      "Sandali estivi",
-      "Scarpe da ginnastica",
-      "Modello stringato",
-      "Molto confortevoli"
-    ],
-    "choicesEnglish": [
-      "Summer sandals",
-      "Sneakers",
-      "Lace-up model",
-      "Very comfortable"
-    ],
-    "correctAnswerItalian": "Molto confortevoli",
-    "correctAnswerEnglish": "Very comfortable",
-    "feedback": {
-      "correct": "Ottimo! 'Molto confortevoli' si dice 'Very comfortable'. / Great! 'Molto confortevoli' is said as 'Very comfortable'.",
-      "incorrect": "Sbagliato. 'Molto confortevoli' si traduce 'Very comfortable'. / Wrong. 'Molto confortevoli' translates to 'Very comfortable'."
-    }
-  },
-  {
-    "id": "s42-p24",
-    "type": "phrase",
-    "choicesItalian": [
-      "Impermeabili all'acqua",
-      "Plateau interno",
-      "Un po' scomode",
-      "Scarpe eleganti"
-    ],
-    "choicesEnglish": [
-      "Waterproof",
-      "Internal platform",
-      "A bit uncomfortable",
-      "Formal shoes"
-    ],
-    "correctAnswerItalian": "Un po' scomode",
-    "correctAnswerEnglish": "A bit uncomfortable",
-    "feedback": {
-      "correct": "Ottimo! 'Un po' scomode' si dice 'A bit uncomfortable'. / Great! 'Un po' scomode' is said as 'A bit uncomfortable'.",
-      "incorrect": "Sbagliato. 'Un po' scomode' si traduce 'A bit uncomfortable'. / Wrong. 'Un po' scomode' translates to 'A bit uncomfortable'."
-    }
-  },
-  {
-    "id": "s42-p25",
-    "type": "phrase",
-    "choicesItalian": [
-      "Vanno bene?",
-      "Pantofole da casa",
-      "Impermeabili all'acqua",
-      "Consegna a domicilio"
-    ],
-    "choicesEnglish": [
-      "Do they fit?",
-      "House slippers",
-      "Waterproof",
-      "Home delivery"
-    ],
-    "correctAnswerItalian": "Vanno bene?",
-    "correctAnswerEnglish": "Do they fit?",
-    "feedback": {
-      "correct": "Ottimo! 'Vanno bene?' si dice 'Do they fit?'. / Great! 'Vanno bene?' is said as 'Do they fit?'.",
-      "incorrect": "Sbagliato. 'Vanno bene?' si traduce 'Do they fit?'. / Wrong. 'Vanno bene?' translates to 'Do they fit?'."
-    }
-  },
-  {
-    "id": "s42-p26",
-    "type": "phrase",
-    "choicesItalian": [
-      "Sconto del 30%",
-      "Mi stringono",
-      "Porto il 42",
-      "Sandali estivi"
-    ],
-    "choicesEnglish": [
-      "30% discount",
-      "They pinch me",
-      "I wear size 42",
-      "Summer sandals"
-    ],
-    "correctAnswerItalian": "Mi stringono",
-    "correctAnswerEnglish": "They pinch me",
-    "feedback": {
-      "correct": "Ottimo! 'Mi stringono' si dice 'They pinch me'. / Great! 'Mi stringono' is said as 'They pinch me'.",
-      "incorrect": "Sbagliato. 'Mi stringono' si traduce 'They pinch me'. / Wrong. 'Mi stringono' translates to 'They pinch me'."
-    }
-  },
-  {
-    "id": "s42-p27",
-    "type": "phrase",
-    "choicesItalian": [
-      "Lucidare le scarpe",
-      "Sono larghe",
-      "Per una cerimonia",
-      "Stringere i lacci"
-    ],
-    "choicesEnglish": [
-      "To polish shoes",
-      "They are loose",
-      "For a ceremony",
-      "To tighten the laces"
-    ],
-    "correctAnswerItalian": "Sono larghe",
-    "correctAnswerEnglish": "They are loose",
-    "feedback": {
-      "correct": "Ottimo! 'Sono larghe' si dice 'They are loose'. / Great! 'Sono larghe' is said as 'They are loose'.",
-      "incorrect": "Sbagliato. 'Sono larghe' si traduce 'They are loose'. / Wrong. 'Sono larghe' translates to 'They are loose'."
-    }
-  },
-  {
-    "id": "s42-p28",
-    "type": "phrase",
-    "choicesItalian": [
-      "Posso provare queste?",
-      "Mi stringono",
-      "Per una cerimonia",
-      "Consegna a domicilio"
-    ],
-    "choicesEnglish": [
-      "Can I try these on?",
-      "They pinch me",
-      "For a ceremony",
-      "Home delivery"
-    ],
-    "correctAnswerItalian": "Posso provare queste?",
-    "correctAnswerEnglish": "Can I try these on?",
-    "feedback": {
-      "correct": "Ottimo! 'Posso provare queste?' si dice 'Can I try these on?'. / Great! 'Posso provare queste?' is said as 'Can I try these on?'.",
-      "incorrect": "Sbagliato. 'Posso provare queste?' si traduce 'Can I try these on?'. / Wrong. 'Posso provare queste?' translates to 'Can I try these on?'."
-    }
-  },
-  {
-    "id": "s42-p29",
-    "type": "phrase",
-    "choicesItalian": [
-      "In fondo al negozio",
-      "In magazzino",
-      "Scarpe eleganti",
-      "Pianta larga"
-    ],
-    "choicesEnglish": [
-      "In the back of the store",
-      "In the stockroom",
-      "Formal shoes",
-      "Wide fit"
-    ],
-    "correctAnswerItalian": "In fondo al negozio",
-    "correctAnswerEnglish": "In the back of the store",
-    "feedback": {
-      "correct": "Ottimo! 'In fondo al negozio' si dice 'In the back of the store'. / Great! 'In fondo al negozio' is said as 'In the back of the store'.",
-      "incorrect": "Sbagliato. 'In fondo al negozio' si traduce 'In the back of the store'. / Wrong. 'In fondo al negozio' translates to 'In the back of the store'."
-    }
-  },
-  {
-    "id": "s42-p30",
-    "type": "phrase",
-    "choicesItalian": [
-      "Un po' stretto",
-      "Un po' scomode",
-      "Nuovo arrivo",
-      "Stivali da pioggia"
-    ],
-    "choicesEnglish": [
-      "A bit tight",
-      "A bit uncomfortable",
-      "New arrival",
-      "Rain boots"
-    ],
-    "correctAnswerItalian": "Nuovo arrivo",
-    "correctAnswerEnglish": "New arrival",
-    "feedback": {
-      "correct": "Ottimo! 'Nuovo arrivo' si dice 'New arrival'. / Great! 'Nuovo arrivo' is said as 'New arrival'.",
-      "incorrect": "Sbagliato. 'Nuovo arrivo' si traduce 'New arrival'. / Wrong. 'Nuovo arrivo' translates to 'New arrival'."
-    }
-  },
-  {
-    "id": "s42-p31",
-    "type": "phrase",
-    "choicesItalian": [
-      "Pelle marrone",
-      "Scarpe da corsa",
-      "Sconto del 30%",
-      "Mi stringono"
-    ],
-    "choicesEnglish": [
-      "Brown leather",
-      "Running shoes",
-      "30% discount",
-      "They pinch me"
-    ],
-    "correctAnswerItalian": "Sconto del 30%",
-    "correctAnswerEnglish": "30% discount",
-    "feedback": {
-      "correct": "Ottimo! 'Sconto del 30%' si dice '30% discount'. / Great! 'Sconto del 30%' is said as '30% discount'.",
-      "incorrect": "Sbagliato. 'Sconto del 30%' si traduce '30% discount'. / Wrong. 'Sconto del 30%' translates to '30% discount'."
-    }
-  },
-  {
-    "id": "s42-p32",
-    "type": "phrase",
-    "choicesItalian": [
-      "Stringere i lacci",
-      "Scarpe da corsa",
-      "Prezzo scontato",
-      "In magazzino"
-    ],
-    "choicesEnglish": [
-      "To tighten the laces",
-      "Running shoes",
-      "Discounted price",
-      "In the stockroom"
-    ],
-    "correctAnswerItalian": "Prezzo scontato",
-    "correctAnswerEnglish": "Discounted price",
-    "feedback": {
-      "correct": "Ottimo! 'Prezzo scontato' si dice 'Discounted price'. / Great! 'Prezzo scontato' is said as 'Discounted price'.",
-      "incorrect": "Sbagliato. 'Prezzo scontato' si traduce 'Discounted price'. / Wrong. 'Prezzo scontato' translates to 'Discounted price'."
-    }
-  },
-  {
-    "id": "s42-p33",
-    "type": "phrase",
-    "choicesItalian": [
-      "Vuole un calzascarpe?",
-      "Calze di cotone",
-      "Ottima qualità",
-      "Un po' scomode"
-    ],
-    "choicesEnglish": [
-      "Do you want a shoehorn?",
-      "Cotton socks",
-      "Great quality",
-      "A bit uncomfortable"
-    ],
-    "correctAnswerItalian": "Ottima qualità",
-    "correctAnswerEnglish": "Great quality",
-    "feedback": {
-      "correct": "Ottimo! 'Ottima qualità' si dice 'Great quality'. / Great! 'Ottima qualità' is said as 'Great quality'.",
-      "incorrect": "Sbagliato. 'Ottima qualità' si traduce 'Great quality'. / Wrong. 'Ottima qualità' translates to 'Great quality'."
-    }
-  },
-  {
-    "id": "s42-p34",
-    "type": "phrase",
-    "choicesItalian": [
-      "Stivali da pioggia",
-      "Lucidare le scarpe",
-      "Prezzo scontato",
-      "Plateau interno"
-    ],
-    "choicesEnglish": [
-      "Rain boots",
-      "To polish shoes",
-      "Discounted price",
-      "Internal platform"
-    ],
-    "correctAnswerItalian": "Stivali da pioggia",
-    "correctAnswerEnglish": "Rain boots",
-    "feedback": {
-      "correct": "Ottimo! 'Stivali da pioggia' si dice 'Rain boots'. / Great! 'Stivali da pioggia' is said as 'Rain boots'.",
-      "incorrect": "Sbagliato. 'Stivali da pioggia' si traduce 'Rain boots'. / Wrong. 'Stivali da pioggia' translates to 'Rain boots'."
-    }
-  },
-  {
-    "id": "s42-p35",
-    "type": "phrase",
-    "choicesItalian": [
-      "Posso provare queste?",
-      "Senza lacci",
-      "Scarpe da corsa",
-      "Sandali estivi"
-    ],
-    "choicesEnglish": [
-      "Can I try these on?",
-      "Without laces",
-      "Running shoes",
-      "Summer sandals"
-    ],
-    "correctAnswerItalian": "Sandali estivi",
-    "correctAnswerEnglish": "Summer sandals",
-    "feedback": {
-      "correct": "Ottimo! 'Sandali estivi' si dice 'Summer sandals'. / Great! 'Sandali estivi' is said as 'Summer sandals'.",
-      "incorrect": "Sbagliato. 'Sandali estivi' si traduce 'Summer sandals'. / Wrong. 'Sandali estivi' translates to 'Summer sandals'."
-    }
-  },
-  {
-    "id": "s42-p36",
-    "type": "phrase",
-    "choicesItalian": [
-      "Pantofole da casa",
-      "Vuole un calzascarpe?",
-      "Sconto del 30%",
-      "Per una cerimonia"
-    ],
-    "choicesEnglish": [
-      "House slippers",
-      "Do you want a shoehorn?",
-      "30% discount",
-      "For a ceremony"
-    ],
-    "correctAnswerItalian": "Pantofole da casa",
-    "correctAnswerEnglish": "House slippers",
-    "feedback": {
-      "correct": "Ottimo! 'Pantofole da casa' si dice 'House slippers'. / Great! 'Pantofole da casa' is said as 'House slippers'.",
-      "incorrect": "Sbagliato. 'Pantofole da casa' si traduce 'House slippers'. / Wrong. 'Pantofole da casa' translates to 'House slippers'."
-    }
-  },
-  {
-    "id": "s42-p37",
-    "type": "phrase",
-    "choicesItalian": [
-      "Scarpe eleganti",
-      "Tacco basso",
-      "Senza lacci",
-      "Scarpe da trekking"
-    ],
-    "choicesEnglish": [
-      "Formal shoes",
-      "Low heel",
-      "Without laces",
-      "Hiking shoes"
-    ],
-    "correctAnswerItalian": "Scarpe da trekking",
-    "correctAnswerEnglish": "Hiking shoes",
-    "feedback": {
-      "correct": "Ottimo! 'Scarpe da trekking' si dice 'Hiking shoes'. / Great! 'Scarpe da trekking' is said as 'Hiking shoes'.",
-      "incorrect": "Sbagliato. 'Scarpe da trekking' si traduce 'Hiking shoes'. / Wrong. 'Scarpe da trekking' translates to 'Hiking shoes'."
-    }
-  },
-  {
-    "id": "s42-p38",
-    "type": "phrase",
-    "choicesItalian": [
-      "Un po' scomode",
-      "Pelle marrone",
-      "Suola antiscivolo",
-      "Che numero porta?"
-    ],
-    "choicesEnglish": [
-      "A bit uncomfortable",
-      "Brown leather",
-      "Non-slip sole",
-      "What size do you wear?"
-    ],
+    "choicesItalian": ["Suola antiscivolo", "Suola di legno", "Suola di carta", "Suola liscia"],
+    "choicesEnglish": ["Non-slip sole", "Wooden sole", "Paper sole", "Smooth sole"],
     "correctAnswerItalian": "Suola antiscivolo",
     "correctAnswerEnglish": "Non-slip sole",
     "feedback": {
-      "correct": "Ottimo! 'Suola antiscivolo' si dice 'Non-slip sole'. / Great! 'Suola antiscivolo' is said as 'Non-slip sole'.",
-      "incorrect": "Sbagliato. 'Suola antiscivolo' si traduce 'Non-slip sole'. / Wrong. 'Suola antiscivolo' translates to 'Non-slip sole'."
+      "correctItalian": "Giusto! Per non cadere quando il pavimento è bagnato.",
+      "incorrectItalian": "No, è la suola che garantisce aderenza.",
+      "correctEnglish": "Right! To avoid falling when the floor is wet.",
+      "incorrectEnglish": "No, it's the sole that guarantees grip."
     }
   },
   {
-    "id": "s42-p39",
+    "id": "shop_shoe_p17",
     "type": "phrase",
-    "choicesItalian": [
-      "Un po' stretto",
-      "Pelle nera",
-      "Tacco alto",
-      "Un po' scomode"
-    ],
-    "choicesEnglish": [
-      "A bit tight",
-      "Black leather",
-      "High heel",
-      "A bit uncomfortable"
-    ],
-    "correctAnswerItalian": "Tacco alto",
-    "correctAnswerEnglish": "High heel",
+    "choicesItalian": ["Plateau interno", "Tacco a spillo", "Zeppa alta", "Suola piatta"],
+    "choicesEnglish": ["Internal platform", "Stiletto heel", "High wedge", "Flat sole"],
+    "correctAnswerItalian": "Plateau interno",
+    "correctAnswerEnglish": "Internal platform",
     "feedback": {
-      "correct": "Ottimo! 'Tacco alto' si dice 'High heel'. / Great! 'Tacco alto' is said as 'High heel'.",
-      "incorrect": "Sbagliato. 'Tacco alto' si traduce 'High heel'. / Wrong. 'Tacco alto' translates to 'High heel'."
+      "correctItalian": "Esatto! Serve a rendere il tacco meno faticoso.",
+      "incorrectItalian": "No, è il rialzo anteriore nascosto dentro la scarpa.",
+      "correctEnglish": "Exactly! It serves to make the heel less tiring.",
+      "incorrectEnglish": "No, it's the hidden front lift inside the shoe."
     }
   },
   {
-    "id": "s42-p40",
+    "id": "shop_shoe_p18",
     "type": "phrase",
-    "choicesItalian": [
-      "Tacco basso",
-      "Stivali da pioggia",
-      "Porto il 42",
-      "Ottima qualità"
-    ],
-    "choicesEnglish": [
-      "Low heel",
-      "Rain boots",
-      "I wear size 42",
-      "Great quality"
-    ],
-    "correctAnswerItalian": "Tacco basso",
-    "correctAnswerEnglish": "Low heel",
+    "choicesItalian": ["Mi faccia vedere...", "Mi faccia sentire...", "Mi faccia provare...", "Mi faccia toccare..."],
+    "choicesEnglish": ["Let me see...", "Let me feel...", "Let me try...", "Let me touch..."],
+    "correctAnswerItalian": "Mi faccia vedere...",
+    "correctAnswerEnglish": "Let me see...",
     "feedback": {
-      "correct": "Ottimo! 'Tacco basso' si dice 'Low heel'. / Great! 'Tacco basso' is said as 'Low heel'.",
-      "incorrect": "Sbagliato. 'Tacco basso' si traduce 'Low heel'. / Wrong. 'Tacco basso' translates to 'Low heel'."
+      "correctItalian": "Bravo! Un modo cortese per chiedere di guardare qualcosa.",
+      "incorrectItalian": "No, è l'espressione per chiedere di esaminare un prodotto.",
+      "correctEnglish": "Well done! A polite way to ask to look at something.",
+      "incorrectEnglish": "No, it's the expression to ask to examine a product."
     }
   },
   {
-    "id": "s42-p41",
+    "id": "shop_shoe_p19",
     "type": "phrase",
-    "choicesItalian": [
-      "Pelle nera",
-      "Plateau interno",
-      "Scarpe col tacco",
-      "Scarpe da corsa"
-    ],
-    "choicesEnglish": [
-      "Black leather",
-      "Internal platform",
-      "High-heeled shoes",
-      "Running shoes"
-    ],
-    "correctAnswerItalian": "Scarpe da corsa",
-    "correctAnswerEnglish": "Running shoes",
+    "choicesItalian": ["Un paio di stivali", "Un paio di guanti", "Un paio di occhiali", "Un paio di calze"],
+    "choicesEnglish": ["A pair of boots", "A pair of gloves", "A pair of glasses", "A pair of socks"],
+    "correctAnswerItalian": "Un paio di stivali",
+    "correctAnswerEnglish": "A pair of boots",
     "feedback": {
-      "correct": "Ottimo! 'Scarpe da corsa' si dice 'Running shoes'. / Great! 'Scarpe da corsa' is said as 'Running shoes'.",
-      "incorrect": "Sbagliato. 'Scarpe da corsa' si traduce 'Running shoes'. / Wrong. 'Scarpe da corsa' translates to 'Running shoes'."
+      "correctItalian": "Giusto! Calzature tipiche per l'inverno o la pioggia.",
+      "incorrectItalian": "No, stiamo parlando di calzature alte.",
+      "correctEnglish": "Right! Typical footwear for winter or rain.",
+      "incorrectEnglish": "No, we are talking about high footwear."
     }
   },
   {
-    "id": "s42-p42",
+    "id": "shop_shoe_p20",
     "type": "phrase",
-    "choicesItalian": [
-      "Plateau interno",
-      "Faccia due passi",
-      "Numero mancante",
-      "In fondo al negozio"
-    ],
-    "choicesEnglish": [
-      "Internal platform",
-      "Take a few steps",
-      "Missing size",
-      "In the back of the store"
-    ],
-    "correctAnswerItalian": "Numero mancante",
-    "correctAnswerEnglish": "Missing size",
+    "choicesItalian": ["Sconto del 20%", "Prezzo del 20%", "Costo del 20%", "Numero del 20%"],
+    "choicesEnglish": ["20% discount", "20% price", "20% cost", "20% number"],
+    "correctAnswerItalian": "Sconto del 20%",
+    "correctAnswerEnglish": "20% discount",
     "feedback": {
-      "correct": "Ottimo! 'Numero mancante' si dice 'Missing size'. / Great! 'Numero mancante' is said as 'Missing size'.",
-      "incorrect": "Sbagliato. 'Numero mancante' si traduce 'Missing size'. / Wrong. 'Numero mancante' translates to 'Missing size'."
+      "correctItalian": "Esatto! Un ribasso sul prezzo originale.",
+      "incorrectItalian": "No, cerchiamo il termine per la riduzione di prezzo.",
+      "correctEnglish": "Exactly! A reduction from the original price.",
+      "incorrectEnglish": "No, we are looking for the term for price reduction."
     }
   },
   {
-    "id": "s42-p43",
+    "id": "shop_shoe_p21",
     "type": "phrase",
-    "choicesItalian": [
-      "Vado a vedere",
-      "Tacco basso",
-      "Pantofole da casa",
-      "Faccia due passi"
-    ],
-    "choicesEnglish": [
-      "I'll go see",
-      "Low heel",
-      "House slippers",
-      "Take a few steps"
-    ],
-    "correctAnswerItalian": "Vado a vedere",
-    "correctAnswerEnglish": "I'll go see",
+    "choicesItalian": ["Vanno bene?", "Sono rotte?", "Sono sporche?", "Sono vecchie?"],
+    "choicesEnglish": ["Do they fit? / Are they okay?", "Are they broken?", "Are they dirty?", "Are they old?"],
+    "correctAnswerItalian": "Vanno bene?",
+    "correctAnswerEnglish": "Do they fit? / Are they okay?",
     "feedback": {
-      "correct": "Ottimo! 'Vado a vedere' si dice 'I'll go see'. / Great! 'Vado a vedere' is said as 'I'll go see'.",
-      "incorrect": "Sbagliato. 'Vado a vedere' si traduce 'I'll go see'. / Wrong. 'Vado a vedere' translates to 'I'll go see'."
+      "correctItalian": "Bravo! La domanda classica del commesso dopo la prova.",
+      "incorrectItalian": "No, il commesso vuole sapere se la misura e la comodità sono giuste.",
+      "correctEnglish": "Well done! The classic question from the clerk after trying on.",
+      "incorrectEnglish": "No, the clerk wants to know if the size and comfort are right."
     }
   },
   {
-    "id": "s42-p44",
+    "id": "shop_shoe_p22",
     "type": "phrase",
-    "choicesItalian": [
-      "In magazzino",
-      "Nuovo arrivo",
-      "Per una cerimonia",
-      "Scarpe eleganti"
-    ],
-    "choicesEnglish": [
-      "In the stockroom",
-      "New arrival",
-      "For a ceremony",
-      "Formal shoes"
-    ],
+    "choicesItalian": ["Per una cerimonia", "Per la spiaggia", "Per la palestra", "Per la montagna"],
+    "choicesEnglish": ["For a ceremony", "For the beach", "For the gym", "For the mountains"],
+    "correctAnswerItalian": "Per una cerimonia",
+    "correctAnswerEnglish": "For a ceremony",
+    "feedback": {
+      "correctItalian": "Giusto! Si cercano scarpe eleganti per matrimoni o eventi.",
+      "incorrectItalian": "No, stiamo parlando di un evento formale.",
+      "correctEnglish": "Right! You look for elegant shoes for weddings or events.",
+      "incorrectEnglish": "No, we are talking about a formal event."
+    }
+  },
+  {
+    "id": "shop_shoe_p23",
+    "type": "phrase",
+    "choicesItalian": ["Vado a vedere.", "Vado a dormire.", "Vado a mangiare.", "Vado a correre."],
+    "choicesEnglish": ["I'll go see.", "I'll go to sleep.", "I'll go to eat.", "I'll go to run."],
+    "correctAnswerItalian": "Vado a vedere.",
+    "correctAnswerEnglish": "I'll go see.",
+    "feedback": {
+      "correctItalian": "Esatto! Lo dice il commesso quando va a cercare il numero in magazzino.",
+      "incorrectItalian": "No, significa che il commesso andrà a controllare la disponibilità.",
+      "correctEnglish": "Exactly! The shop assistant says this when going to look for the size in the stockroom.",
+      "incorrectEnglish": "No, it means the clerk will go check availability."
+    }
+  },
+  {
+    "id": "shop_shoe_p24",
+    "type": "phrase",
+    "choicesItalian": ["In magazzino", "In cucina", "In ufficio", "In garage"],
+    "choicesEnglish": ["In the stockroom", "In the kitchen", "In the office", "In the garage"],
     "correctAnswerItalian": "In magazzino",
     "correctAnswerEnglish": "In the stockroom",
     "feedback": {
-      "correct": "Ottimo! 'In magazzino' si dice 'In the stockroom'. / Great! 'In magazzino' is said as 'In the stockroom'.",
-      "incorrect": "Sbagliato. 'In magazzino' si traduce 'In the stockroom'. / Wrong. 'In magazzino' translates to 'In the stockroom'."
+      "correctItalian": "Bravo! Dove vengono tenute le scatole non esposte.",
+      "incorrectItalian": "No, è il deposito del negozio.",
+      "correctEnglish": "Well done! Where the unexposed boxes are kept.",
+      "incorrectEnglish": "No, it's the shop's storage."
     }
   },
   {
-    "id": "s42-p45",
+    "id": "shop_shoe_p25",
     "type": "phrase",
-    "choicesItalian": [
-      "Pelle marrone",
-      "Stringere i lacci",
-      "Tacco basso",
-      "Consegna a domicilio"
-    ],
-    "choicesEnglish": [
-      "Brown leather",
-      "To tighten the laces",
-      "Low heel",
-      "Home delivery"
-    ],
-    "correctAnswerItalian": "Consegna a domicilio",
-    "correctAnswerEnglish": "Home delivery",
+    "choicesItalian": ["Un attimo solo.", "Un'ora sola.", "Un giorno solo.", "Un anno solo."],
+    "choicesEnglish": ["Just a moment.", "Just an hour.", "Just a day.", "Just a year."],
+    "correctAnswerItalian": "Un attimo solo.",
+    "correctAnswerEnglish": "Just a moment.",
     "feedback": {
-      "correct": "Ottimo! 'Consegna a domicilio' si dice 'Home delivery'. / Great! 'Consegna a domicilio' is said as 'Home delivery'.",
-      "incorrect": "Sbagliato. 'Consegna a domicilio' si traduce 'Home delivery'. / Wrong. 'Consegna a domicilio' translates to 'Home delivery'."
+      "correctItalian": "Giusto! Per chiedere al cliente di aspettare un pochino.",
+      "incorrectItalian": "No, è la frase per chiedere una breve attesa.",
+      "correctEnglish": "Right! To ask the customer to wait a little bit.",
+      "incorrectEnglish": "No, it's the phrase to request a brief wait."
     }
   },
   {
-    "id": "s42-p46",
+    "id": "shop_shoe_p26",
     "type": "phrase",
-    "choicesItalian": [
-      "Garanzia due anni",
-      "Lucidare le scarpe",
-      "Sconto del 30%",
-      "Calze di cotone"
-    ],
-    "choicesEnglish": [
-      "Two-year warranty",
-      "To polish shoes",
-      "30% discount",
-      "Cotton socks"
-    ],
-    "correctAnswerItalian": "Garanzia due anni",
-    "correctAnswerEnglish": "Two-year warranty",
+    "choicesItalian": ["Non c'è problema.", "Non c'è posto.", "Non c'è tempo.", "Non c'è modo."],
+    "choicesEnglish": ["No problem.", "No room.", "No time.", "No way."],
+    "correctAnswerItalian": "Non c'è problema.",
+    "correctAnswerEnglish": "No problem.",
     "feedback": {
-      "correct": "Ottimo! 'Garanzia due anni' si dice 'Two-year warranty'. / Great! 'Garanzia due anni' is said as 'Two-year warranty'.",
-      "incorrect": "Sbagliato. 'Garanzia due anni' si traduce 'Two-year warranty'. / Wrong. 'Garanzia due anni' translates to 'Two-year warranty'."
+      "correctItalian": "Esatto! Una frase rassicurante molto comune.",
+      "incorrectItalian": "No, è la risposta classica per dire che va bene.",
+      "correctEnglish": "Exactly! A very common reassuring phrase.",
+      "incorrectEnglish": "No, it's the classic response to say that it's okay."
     }
   },
   {
-    "id": "s42-p47",
+    "id": "shop_shoe_p27",
     "type": "phrase",
-    "choicesItalian": [
-      "Scarpe eleganti",
-      "Spray protettivo",
-      "Pelle marrone",
-      "Pianta larga"
-    ],
-    "choicesEnglish": [
-      "Formal shoes",
-      "Protective spray",
-      "Brown leather",
-      "Wide fit"
-    ],
-    "correctAnswerItalian": "Spray protettivo",
-    "correctAnswerEnglish": "Protective spray",
+    "choicesItalian": ["Prezzo scontato", "Prezzo caro", "Prezzo pieno", "Prezzo basso"],
+    "choicesEnglish": ["Discounted price", "Expensive price", "Full price", "Low price"],
+    "correctAnswerItalian": "Prezzo scontato",
+    "correctAnswerEnglish": "Discounted price",
     "feedback": {
-      "correct": "Ottimo! 'Spray protettivo' si dice 'Protective spray'. / Great! 'Spray protettivo' is said as 'Protective spray'.",
-      "incorrect": "Sbagliato. 'Spray protettivo' si traduce 'Protective spray'. / Wrong. 'Spray protettivo' translates to 'Protective spray'."
+      "correctItalian": "Bravo! Il prezzo dopo l'applicazione dello sconto.",
+      "incorrectItalian": "No, è il costo ridotto dell'articolo.",
+      "correctEnglish": "Well done! The price after the discount is applied.",
+      "incorrectEnglish": "No, it's the reduced cost of the item."
     }
   },
   {
-    "id": "s42-p48",
+    "id": "shop_shoe_p28",
     "type": "phrase",
-    "choicesItalian": [
-      "Vuole un calzascarpe?",
-      "Lucidare le scarpe",
-      "Stringere i lacci",
-      "Le prendo!"
-    ],
-    "choicesEnglish": [
-      "Do you want a shoehorn?",
-      "To polish shoes",
-      "To tighten the laces",
-      "I'll take them!"
-    ],
-    "correctAnswerItalian": "Lucidare le scarpe",
-    "correctAnswerEnglish": "To polish shoes",
+    "choicesItalian": ["Ottima qualità", "Pessima qualità", "Bassa qualità", "Semplice qualità"],
+    "choicesEnglish": ["Great quality", "Terrible quality", "Low quality", "Simple quality"],
+    "correctAnswerItalian": "Ottima qualità",
+    "correctAnswerEnglish": "Great quality",
     "feedback": {
-      "correct": "Ottimo! 'Lucidare le scarpe' si dice 'To polish shoes'. / Great! 'Lucidare le scarpe' is said as 'To polish shoes'.",
-      "incorrect": "Sbagliato. 'Lucidare le scarpe' si traduce 'To polish shoes'. / Wrong. 'Lucidare le scarpe' translates to 'To polish shoes'."
+      "correctItalian": "Giusto! Quando un prodotto è fatto molto bene.",
+      "incorrectItalian": "No, cerchiamo un aggettivo molto positivo per la fattura.",
+      "correctEnglish": "Right! When a product is made very well.",
+      "incorrectEnglish": "No, we are looking for a very positive adjective for the craftsmanship."
     }
   },
   {
-    "id": "s42-p49",
+    "id": "shop_shoe_p29",
     "type": "phrase",
-    "choicesItalian": [
-      "Scarpe da ginnastica",
-      "Suola di gomma",
-      "Calze di cotone",
-      "Sandali estivi"
-    ],
-    "choicesEnglish": [
-      "Sneakers",
-      "Rubber sole",
-      "Cotton socks",
-      "Summer sandals"
-    ],
-    "correctAnswerItalian": "Calze di cotone",
-    "correctAnswerEnglish": "Cotton socks",
+    "choicesItalian": ["Sono di moda.", "Sono di legno.", "Sono di fretta.", "Sono di vetro."],
+    "choicesEnglish": ["They are in fashion.", "They are made of wood.", "They are in a hurry.", "They are made of glass."],
+    "correctAnswerItalian": "Sono di moda.",
+    "correctAnswerEnglish": "They are in fashion.",
     "feedback": {
-      "correct": "Ottimo! 'Calze di cotone' si dice 'Cotton socks'. / Great! 'Calze di cotone' is said as 'Cotton socks'.",
-      "incorrect": "Sbagliato. 'Calze di cotone' si traduce 'Cotton socks'. / Wrong. 'Calze di cotone' translates to 'Cotton socks'."
+      "correctItalian": "Esatto! Seguire le tendenze del momento.",
+      "incorrectItalian": "No, significa che sono attuali e popolari.",
+      "correctEnglish": "Exactly! Following current trends.",
+      "incorrectEnglish": "No, it means they are current and popular."
     }
   },
   {
-    "id": "s42-p50",
+    "id": "shop_shoe_p30",
     "type": "phrase",
-    "choicesItalian": [
-      "Nuovo arrivo",
-      "Stringere i lacci",
-      "Senza lacci",
-      "Scarpe da ginnastica"
-    ],
-    "choicesEnglish": [
-      "New arrival",
-      "To tighten the laces",
-      "Without laces",
-      "Sneakers"
-    ],
+    "choicesItalian": ["Calzano a pennello.", "Calzano a matita.", "Calzano a penna.", "Calzano a gomma."],
+    "choicesEnglish": ["They fit perfectly.", "They fit like a pencil.", "They fit like a pen.", "They fit like an eraser."],
+    "correctAnswerItalian": "Calzano a pennello.",
+    "correctAnswerEnglish": "They fit perfectly.",
+    "feedback": {
+      "correctItalian": "Bravo! Un modo di dire per dire che la misura è perfetta.",
+      "incorrectItalian": "No, è un'espressione idiomatica per una calzata ideale.",
+      "correctEnglish": "Well done! An idiom to say that the size is perfect.",
+      "incorrectEnglish": "No, it's an idiomatic expression for an ideal fit."
+    }
+  },
+  {
+    "id": "shop_shoe_p31",
+    "type": "phrase",
+    "choicesItalian": ["Nuova collezione", "Vecchia collezione", "Prima collezione", "Fine collezione"],
+    "choicesEnglish": ["New collection", "Old collection", "First collection", "End of collection"],
+    "correctAnswerItalian": "Nuova collezione",
+    "correctAnswerEnglish": "New collection",
+    "feedback": {
+      "correctItalian": "Giusto! Gli ultimi arrivi stagionali.",
+      "incorrectItalian": "No, stiamo parlando degli articoli più recenti.",
+      "correctEnglish": "Right! The latest seasonal arrivals.",
+      "incorrectEnglish": "No, we are talking about the most recent items."
+    }
+  },
+  {
+    "id": "shop_shoe_p32",
+    "type": "phrase",
+    "choicesItalian": ["Punta arrotondata", "Punta quadrata", "Punta aguzza", "Punta sfilata"],
+    "choicesEnglish": ["Rounded toe", "Square toe", "Sharp toe", "Pointed toe"],
+    "correctAnswerItalian": "Punta arrotondata",
+    "correctAnswerEnglish": "Rounded toe",
+    "feedback": {
+      "correctItalian": "Esatto! Una forma classica e comoda per le dita.",
+      "incorrectItalian": "No, stiamo descrivendo la forma circolare della punta.",
+      "correctEnglish": "Exactly! A classic and comfortable shape for the toes.",
+      "incorrectEnglish": "No, we are describing the circular shape of the tip."
+    }
+  },
+  {
+    "id": "shop_shoe_p33",
+    "type": "phrase",
+    "choicesItalian": ["Stringere i lacci", "Tagliare i lacci", "Rompere i lacci", "Perdere i lacci"],
+    "choicesEnglish": ["To tighten the laces", "To cut the laces", "To break the laces", "To lose the laces"],
     "correctAnswerItalian": "Stringere i lacci",
     "correctAnswerEnglish": "To tighten the laces",
     "feedback": {
-      "correct": "Ottimo! 'Stringere i lacci' si dice 'To tighten the laces'. / Great! 'Stringere i lacci' is said as 'To tighten the laces'.",
-      "incorrect": "Sbagliato. 'Stringere i lacci' si traduce 'To tighten the laces'. / Wrong. 'Stringere i lacci' translates to 'To tighten the laces'."
+      "correctItalian": "Bravo! Per far aderire meglio la scarpa al piede.",
+      "incorrectItalian": "No, cerchiamo l'azione di tirare le stringhe.",
+      "correctEnglish": "Well done! To make the shoe fit better to the foot.",
+      "incorrectEnglish": "No, we are looking for the action of pulling the laces."
+    }
+  },
+  {
+    "id": "shop_shoe_p34",
+    "type": "phrase",
+    "choicesItalian": ["Tacco basso", "Tacco alto", "Tacco medio", "Tacco largo"],
+    "choicesEnglish": ["Low heel", "High heel", "Medium heel", "Wide heel"],
+    "correctAnswerItalian": "Tacco basso",
+    "correctAnswerEnglish": "Low heel",
+    "feedback": {
+      "correctItalian": "Giusto! Ideale per camminare tutto il giorno senza stancarsi.",
+      "incorrectItalian": "No, cerchiamo il tacco con poca altezza.",
+      "correctEnglish": "Right! Ideal for walking all day without getting tired.",
+      "incorrectEnglish": "No, we are looking for the heel with little height."
+    }
+  },
+  {
+    "id": "shop_shoe_p35",
+    "type": "phrase",
+    "choicesItalian": ["Pianta larga", "Pianta stretta", "Pianta media", "Pianta alta"],
+    "choicesEnglish": ["Wide fit", "Narrow fit", "Medium fit", "High fit"],
+    "correctAnswerItalian": "Pianta larga",
+    "correctAnswerEnglish": "Wide fit",
+    "feedback": {
+      "correctItalian": "Esatto! Per chi ha il piede un po' più cicciottello o largo.",
+      "incorrectItalian": "No, si riferisce allo spazio per la base del piede.",
+      "correctEnglish": "Exactly! For those with a slightly chubbier or wider foot.",
+      "incorrectEnglish": "No, it refers to the space for the base of the foot."
+    }
+  },
+  {
+    "id": "shop_shoe_p36",
+    "type": "phrase",
+    "choicesItalian": ["Spray protettivo", "Spray colorante", "Spray profumato", "Spray adesivo"],
+    "choicesEnglish": ["Protective spray", "Coloring spray", "Scented spray", "Adhesive spray"],
+    "correctAnswerItalian": "Spray protettivo",
+    "correctAnswerEnglish": "Protective spray",
+    "feedback": {
+      "correctItalian": "Bravo! Utile per proteggere la pelle dalla pioggia e dalle macchie.",
+      "incorrectItalian": "No, serve a creare una barriera contro lo sporco.",
+      "correctEnglish": "Well done! Useful for protecting leather from rain and stains.",
+      "incorrectEnglish": "No, it is used to create a barrier against dirt."
+    }
+  },
+  {
+    "id": "shop_shoe_p37",
+    "type": "phrase",
+    "choicesItalian": ["Lucidare le scarpe", "Lavare le scarpe", "Sporcare le scarpe", "Buttare le scarpe"],
+    "choicesEnglish": ["To polish shoes", "To wash shoes", "To dirty shoes", "To throw away shoes"],
+    "correctAnswerItalian": "Lucidare le scarpe",
+    "correctAnswerEnglish": "To polish shoes",
+    "feedback": {
+      "correctItalian": "Giusto! L'azione per rendere le scarpe in pelle lucide.",
+      "incorrectItalian": "No, è l'azione di pulizia profonda per farle splendere.",
+      "correctEnglish": "Right! The action to make leather shoes shine.",
+      "incorrectEnglish": "No, it's the deep cleaning action to make them shine."
+    }
+  },
+  {
+    "id": "shop_shoe_p38",
+    "type": "phrase",
+    "choicesItalian": ["Calze di cotone", "Calze di lana", "Calze di seta", "Calze di carta"],
+    "choicesEnglish": ["Cotton socks", "Wool socks", "Silk socks", "Paper socks"],
+    "correctAnswerItalian": "Calze di cotone",
+    "correctAnswerEnglish": "Cotton socks",
+    "feedback": {
+      "correctItalian": "Esatto! Il materiale più comune per le calze estive e sportive.",
+      "incorrectItalian": "No, stiamo parlando del materiale vegetale leggero.",
+      "correctEnglish": "Exactly! The most common material for summer and sports socks.",
+      "incorrectEnglish": "No, we are talking about the light plant material."
+    }
+  },
+  {
+    "id": "shop_shoe_p39",
+    "type": "phrase",
+    "choicesItalian": ["Suola di gomma", "Suola di cuoio", "Suola di plastica", "Suola di ferro"],
+    "choicesEnglish": ["Rubber sole", "Leather sole", "Plastic sole", "Iron sole"],
+    "correctAnswerItalian": "Suola di gomma",
+    "correctAnswerEnglish": "Rubber sole",
+    "feedback": {
+      "correctItalian": "Bravo! Flessibile e ammortizzante, tipica delle scarpe da ginnastica.",
+      "incorrectItalian": "No, è il materiale elastico per eccellenza per le suole.",
+      "correctEnglish": "Well done! Flexible and cushioning, typical of sneakers.",
+      "incorrectEnglish": "No, it's the elastic material par excellence for soles."
+    }
+  },
+  {
+    "id": "shop_shoe_p40",
+    "type": "phrase",
+    "choicesItalian": ["Numero mancante", "Numero sbagliato", "Numero giusto", "Numero alto"],
+    "choicesEnglish": ["Missing size", "Wrong size", "Right size", "High size"],
+    "correctAnswerItalian": "Numero mancante",
+    "correctAnswerEnglish": "Missing size",
+    "feedback": {
+      "correctItalian": "Giusto! Quando la taglia desiderata è esaurita.",
+      "incorrectItalian": "No, significa che quella specifica misura non è disponibile.",
+      "correctEnglish": "Right! When the desired size is sold out.",
+      "incorrectEnglish": "No, it means that specific size is not available."
+    }
+  },
+  {
+    "id": "shop_shoe_p41",
+    "type": "phrase",
+    "choicesItalian": ["Sandali estivi", "Sandali invernali", "Sandali pesanti", "Sandali chiusi"],
+    "choicesEnglish": ["Summer sandals", "Winter sandals", "Heavy sandals", "Closed sandals"],
+    "correctAnswerItalian": "Sandali estivi",
+    "correctAnswerEnglish": "Summer sandals",
+    "feedback": {
+      "correctItalian": "Esatto! Calzature aperte e fresche per la stagione calda.",
+      "incorrectItalian": "No, i sandali sono tipicamente usati in estate.",
+      "correctEnglish": "Exactly! Open and fresh footwear for the hot season.",
+      "incorrectEnglish": "No, sandals are typically used in summer."
+    }
+  },
+  {
+    "id": "shop_shoe_p42",
+    "type": "phrase",
+    "choicesItalian": ["Garanzia due anni", "Garanzia due mesi", "Garanzia due giorni", "Garanzia due ore"],
+    "choicesEnglish": ["Two-year warranty", "Two-month warranty", "Two-day warranty", "Two-hour warranty"],
+    "correctAnswerItalian": "Garanzia due anni",
+    "correctAnswerEnglish": "Two-year warranty",
+    "feedback": {
+      "correctItalian": "Bravo! La durata standard della garanzia legale in Europa.",
+      "incorrectItalian": "No, la legge prevede solitamente 24 mesi di garanzia.",
+      "correctEnglish": "Well done! The standard duration of the legal warranty in Europe.",
+      "incorrectEnglish": "No, the law usually provides 24 months of warranty."
+    }
+  },
+  {
+    "id": "shop_shoe_p43",
+    "type": "phrase",
+    "choicesItalian": ["Vanno bene di numero?", "Vanno bene di colore?", "Vanno bene di prezzo?", "Vanno bene di marca?"],
+    "choicesEnglish": ["Is the size okay?", "Is the color okay?", "Is the price okay?", "Is the brand okay?"],
+    "correctAnswerItalian": "Vanno bene di numero?",
+    "correctAnswerEnglish": "Is the size okay?",
+    "feedback": {
+      "correctItalian": "Giusto! Per chiedere se la taglia è quella corretta.",
+      "incorrectItalian": "No, 'numero' si riferisce alla taglia della scarpa.",
+      "correctEnglish": "Right! To ask if the size is the correct one.",
+      "incorrectEnglish": "No, 'numero' refers to the shoe size."
+    }
+  },
+  {
+    "id": "shop_shoe_p44",
+    "type": "phrase",
+    "choicesItalian": ["Sono un po' rigide.", "Sono un po' molli.", "Sono un po' rotte.", "Sono un po' sporche."],
+    "choicesEnglish": ["They are a bit stiff.", "They are a bit soft/flimsy.", "They are a bit broken.", "They are a bit dirty."],
+    "correctAnswerItalian": "Sono un po' rigide.",
+    "correctAnswerEnglish": "They are a bit stiff.",
+    "feedback": {
+      "correctItalian": "Esatto! Quando la pelle è nuova e deve ancora ammorbidirsi.",
+      "incorrectItalian": "No, cerchiamo l'aggettivo per una scarpa non ancora flessibile.",
+      "correctEnglish": "Exactly! When the leather is new and still needs to soften.",
+      "incorrectEnglish": "No, we are looking for the adjective for a shoe that is not yet flexible."
+    }
+  },
+  {
+    "id": "shop_shoe_p45",
+    "type": "phrase",
+    "choicesItalian": ["Consegna a domicilio", "Consegna in negozio", "Consegna a mano", "Consegna postale"],
+    "choicesEnglish": ["Home delivery", "In-store delivery", "Hand delivery", "Postal delivery"],
+    "correctAnswerItalian": "Consegna a domicilio",
+    "correctAnswerEnglish": "Home delivery",
+    "feedback": {
+      "correctItalian": "Bravo! Se il numero non è disponibile, possono spedirtelo a casa.",
+      "incorrectItalian": "No, significa ricevere l'acquisto direttamente alla propria abitazione.",
+      "correctEnglish": "Well done! If the size is not available, they can ship it to your home.",
+      "incorrectEnglish": "No, it means receiving the purchase directly at your own home."
+    }
+  },
+  {
+    "id": "shop_shoe_p46",
+    "type": "phrase",
+    "choicesItalian": ["In fondo al negozio", "All'inizio del negozio", "Fuori dal negozio", "Sopra il negozio"],
+    "choicesEnglish": ["In the back of the store", "At the front of the store", "Outside the store", "Above the store"],
+    "correctAnswerItalian": "In fondo al negozio",
+    "correctAnswerEnglish": "In the back of the store",
+    "feedback": {
+      "correctItalian": "Giusto! Per indicare una zona distante dall'entrata.",
+      "incorrectItalian": "No, 'in fondo' indica la parte più interna.",
+      "correctEnglish": "Right! To indicate an area far from the entrance.",
+      "incorrectEnglish": "No, 'in fondo' indicates the innermost part."
+    }
+  },
+  {
+    "id": "shop_shoe_p47",
+    "type": "phrase",
+    "choicesItalian": ["Ottimo affare!", "Pessimo affare!", "Nessun affare!", "Grande lavoro!"],
+    "choicesEnglish": ["Great deal!", "Bad deal!", "No deal!", "Great work!"],
+    "correctAnswerItalian": "Ottimo affare!",
+    "correctAnswerEnglish": "Great deal!",
+    "feedback": {
+      "correctItalian": "Esatto! Quando compri qualcosa di buono a un prezzo basso.",
+      "incorrectItalian": "No, è un'espressione di soddisfazione per un acquisto vantaggioso.",
+      "correctEnglish": "Exactly! When you buy something good at a low price.",
+      "incorrectEnglish": "No, it's an expression of satisfaction for an advantageous purchase."
+    }
+  },
+  {
+    "id": "shop_shoe_p48",
+    "type": "phrase",
+    "choicesItalian": ["Senza lacci", "Senza tacchi", "Senza suola", "Senza punta"],
+    "choicesEnglish": ["Without laces", "Without heels", "Without sole", "Without toe"],
+    "correctAnswerItalian": "Senza lacci",
+    "correctAnswerEnglish": "Without laces",
+    "feedback": {
+      "correctItalian": "Bravo! Scarpe tipo mocassini o slip-on.",
+      "incorrectItalian": "No, stiamo parlando di calzature che non hanno stringhe.",
+      "correctEnglish": "Well done! Shoes like loafers or slip-ons.",
+      "incorrectEnglish": "No, we are talking about footwear that has no strings."
+    }
+  },
+  {
+    "id": "shop_shoe_p49",
+    "type": "phrase",
+    "choicesItalian": ["Arrivederci e grazie!", "Buongiorno e prego!", "Buonanotte e scusa!", "Salve e niente!"],
+    "choicesEnglish": ["Goodbye and thank you!", "Good morning and you're welcome!", "Goodnight and sorry!", "Hello and nothing!"],
+    "correctAnswerItalian": "Arrivederci e grazie!",
+    "correctAnswerEnglish": "Goodbye and thank you!",
+    "feedback": {
+      "correctItalian": "Giusto! La formula cortese per congedarsi dopo l'acquisto.",
+      "incorrectItalian": "No, è il saluto finale standard in un negozio.",
+      "correctEnglish": "Right! The polite formula for taking leave after the purchase.",
+      "incorrectEnglish": "No, it is the standard final greeting in a shop."
+    }
+  },
+  {
+    "id": "shop_shoe_p50",
+    "type": "phrase",
+    "choicesItalian": ["Posso pagare con carta?", "Posso pagare con sassi?", "Posso pagare con baci?", "Posso pagare con canti?"],
+    "choicesEnglish": ["Can I pay by card?", "Can I pay with stones?", "Can I pay with kisses?", "Can I pay with songs?"],
+    "correctAnswerItalian": "Posso pagare con carta?",
+    "correctAnswerEnglish": "Can I pay by card?",
+    "feedback": {
+      "correctItalian": "Esatto! Molto utile se non hai contanti con te.",
+      "incorrectItalian": "No, cerchiamo il metodo di pagamento elettronico.",
+      "correctEnglish": "Exactly! Very useful if you don't have cash with you.",
+      "incorrectEnglish": "No, we are looking for the electronic payment method."
     }
   }
 ]

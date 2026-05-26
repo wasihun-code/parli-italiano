@@ -1,1102 +1,632 @@
 [
   {
-    "id": "s41-p1",
-    "type": "phrase",
-    "choicesItalian": [
-      "Quanto costa?",
-      "In fondo a sinistra",
-      "Una taglia in più",
-      "Solo bianco"
-    ],
-    "choicesEnglish": [
-      "How much does it cost?",
-      "In the back on the left",
-      "A size up",
-      "Only white"
-    ],
+    "id": "shop_cloth_p1",
+    "type": "phrases",
+    "choicesItalian": ["Posso provarlo?", "Posso comprarlo?", "Posso venderlo?", "Posso pagarlo?"],
+    "choicesEnglish": ["Can I try it on?", "Can I buy it?", "Can I sell it?", "Can I pay for it?"],
+    "correctAnswerItalian": "Posso provarlo?",
+    "correctAnswerEnglish": "Can I try it on?",
+    "feedback": {
+      "correctItalian": "Esatto! È la domanda più comune in un negozio.",
+      "incorrectItalian": "No, 'provare' si usa per i vestiti.",
+      "correctEnglish": "Correct! It's the most common question in a store.",
+      "incorrectEnglish": "No, 'provare' is used for clothes."
+    }
+  },
+  {
+    "id": "shop_cloth_p2",
+    "type": "phrases",
+    "choicesItalian": ["Dove sono i camerini?", "Dove sono le casse?", "Dove sono le uscite?", "Dove sono i vestiti?"],
+    "choicesEnglish": ["Where are the changing rooms?", "Where are the cash desks?", "Where are the exits?", "Where are the clothes?"],
+    "correctAnswerItalian": "Dove sono i camerini?",
+    "correctAnswerEnglish": "Where are the changing rooms?",
+    "feedback": {
+      "correctItalian": "Bravo! Ti serve saperlo per provare i capi.",
+      "incorrectItalian": "No, i 'camerini' sono dove ci si cambia.",
+      "correctEnglish": "Well done! You need to know this to try on items.",
+      "incorrectEnglish": "No, 'camerini' are where you change."
+    }
+  },
+  {
+    "id": "shop_cloth_p3",
+    "type": "phrases",
+    "choicesItalian": ["Quanto costa?", "Quanto pesa?", "Quanto misura?", "Quanto dura?"],
+    "choicesEnglish": ["How much does it cost?", "How much does it weigh?", "How much does it measure?", "How much does it last?"],
     "correctAnswerItalian": "Quanto costa?",
     "correctAnswerEnglish": "How much does it cost?",
     "feedback": {
-      "correct": "Ottimo! 'Quanto costa?' si traduce 'How much does it cost?'. / Great! 'Quanto costa?' translates to 'How much does it cost?'.",
-      "incorrect": "Non proprio. 'Quanto costa?' è 'How much does it cost?'. / Not quite. 'Quanto costa?' is 'How much does it cost?'."
+      "correctItalian": "Giusto! Fondamentale per conoscere il prezzo.",
+      "incorrectItalian": "No, 'costa' si riferisce al prezzo.",
+      "correctEnglish": "Right! Essential to know the price.",
+      "incorrectEnglish": "No, 'costa' refers to the price."
     }
   },
   {
-    "id": "s41-p2",
-    "type": "phrase",
-    "choicesItalian": [
-      "Vicino alle giacche",
-      "Celeste chiaro",
-      "Posso provare?",
-      "Camicia di lino"
-    ],
-    "choicesEnglish": [
-      "Near the jackets",
-      "Light blue",
-      "Can I try it on?",
-      "Linen shirt"
-    ],
-    "correctAnswerItalian": "Posso provare?",
+    "id": "shop_cloth_p4",
+    "type": "phrases",
+    "choicesItalian": ["Avete una taglia in più?", "Avete un colore in più?", "Avete un prezzo in più?", "Avete uno sconto in più?"],
+    "choicesEnglish": ["Do you have a size up?", "Do you have an extra color?", "Do you have an extra price?", "Do you have an extra discount?"],
+    "correctAnswerItalian": "Avete una taglia in più?",
+    "correctAnswerEnglish": "Do you have a size up?",
+    "feedback": {
+      "correctItalian": "Ottimo! Se il capo è stretto, chiedi una 'taglia in più'.",
+      "incorrectItalian": "No, si chiede una taglia diversa se non va bene.",
+      "correctEnglish": "Great! If the item is tight, ask for a 'size up'.",
+      "incorrectEnglish": "No, you ask for a different size if it doesn't fit."
+    }
+  },
+  {
+    "id": "shop_cloth_p5",
+    "type": "phrases",
+    "choicesItalian": ["Avete una taglia in meno?", "Avete una camicia in meno?", "Avete una gonna in meno?", "Avete una giacca in meno?"],
+    "choicesEnglish": ["Do you have a size down?", "Do you have one less shirt?", "Do you have one less skirt?", "Do you have one less jacket?"],
+    "correctAnswerItalian": "Avete una taglia in meno?",
+    "correctAnswerEnglish": "Do you have a size down?",
+    "feedback": {
+      "correctItalian": "Esatto! Se il vestito è largo, chiedi una 'taglia in meno'.",
+      "incorrectItalian": "No, 'taglia in meno' significa una dimensione più piccola.",
+      "correctEnglish": "Correct! If the dress is loose, ask for a 'size down'.",
+      "incorrectEnglish": "No, 'taglia in meno' means a smaller size."
+    }
+  },
+  {
+    "id": "shop_cloth_p6",
+    "type": "phrases",
+    "choicesItalian": ["C'è lo sconto?", "C'è il prezzo?", "C'è la taglia?", "C'è il colore?"],
+    "choicesEnglish": ["Is there a discount?", "Is there a price?", "Is there a size?", "Is there a color?"],
+    "correctAnswerItalian": "C'è lo sconto?",
+    "correctAnswerEnglish": "Is there a discount?",
+    "feedback": {
+      "correctItalian": "Giusto! Soprattutto durante i saldi.",
+      "incorrectItalian": "No, si chiede dello sconto per risparmiare.",
+      "correctEnglish": "Right! Especially during sales.",
+      "incorrectEnglish": "No, you ask for a discount to save money."
+    }
+  },
+  {
+    "id": "shop_cloth_p7",
+    "type": "phrases",
+    "choicesItalian": ["È disponibile in blu?", "È disponibile in ufficio?", "È disponibile in banca?", "È disponibile in chiesa?"],
+    "choicesEnglish": ["Is it available in blue?", "Is it available in the office?", "Is it available in the bank?", "Is it available in the church?"],
+    "correctAnswerItalian": "È disponibile in blu?",
+    "correctAnswerEnglish": "Is it available in blue?",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedi della disponibilità di altri colori.",
+      "incorrectItalian": "No, 'blu' è un colore per i vestiti.",
+      "correctEnglish": "Correct! You ask about the availability of other colors.",
+      "incorrectEnglish": "No, 'blue' is a color for clothes."
+    }
+  },
+  {
+    "id": "shop_cloth_p8",
+    "type": "phrases",
+    "choicesItalian": ["Cerco un abito elegante.", "Cerco un abito sporco.", "Cerco un abito rotto.", "Cerco un abito vecchio."],
+    "choicesEnglish": ["I'm looking for an elegant dress.", "I'm looking for a dirty dress.", "I'm looking for a broken dress.", "I'm looking for an old dress."],
+    "correctAnswerItalian": "Cerco un abito elegante.",
+    "correctAnswerEnglish": "I'm looking for an elegant dress.",
+    "feedback": {
+      "correctItalian": "Perfetto! Ottimo per un evento speciale.",
+      "incorrectItalian": "No, di solito si cerca qualcosa di 'elegante'.",
+      "correctEnglish": "Perfect! Great for a special event.",
+      "incorrectEnglish": "No, usually you look for something 'elegant'."
+    }
+  },
+  {
+    "id": "shop_cloth_p9",
+    "type": "phrases",
+    "choicesItalian": ["Lo prendo!", "Lo perdo!", "Lo vendo!", "Lo rompo!"],
+    "choicesEnglish": ["I'll take it!", "I'll lose it!", "I'll sell it!", "I'll break it!"],
+    "correctAnswerItalian": "Lo prendo!",
+    "correctAnswerEnglish": "I'll take it!",
+    "feedback": {
+      "correctItalian": "Bravo! Hai deciso di acquistarlo.",
+      "incorrectItalian": "No, 'lo prendo' significa che vuoi comprarlo.",
+      "correctEnglish": "Well done! You've decided to buy it.",
+      "incorrectEnglish": "No, 'lo prendo' means you want to buy it."
+    }
+  },
+  {
+    "id": "shop_cloth_p10",
+    "type": "phrases",
+    "choicesItalian": ["Pago con carta.", "Pago con calma.", "Pago con gioia.", "Pago con gli occhi."],
+    "choicesEnglish": ["I'll pay by card.", "I'll pay calmly.", "I'll pay with joy.", "I'll pay with my eyes."],
+    "correctAnswerItalian": "Pago con carta.",
+    "correctAnswerEnglish": "I'll pay by card.",
+    "feedback": {
+      "correctItalian": "Giusto! Il metodo più veloce alla cassa.",
+      "incorrectItalian": "No, 'carta' si riferisce alla carta di credito o bancomat.",
+      "correctEnglish": "Right! The fastest method at the cash desk.",
+      "incorrectEnglish": "No, 'carta' refers to a credit or debit card."
+    }
+  },
+  {
+    "id": "shop_cloth_p11",
+    "type": "phrases",
+    "choicesItalian": ["Mi sta bene?", "Mi sta male?", "Mi sta simpatico?", "Mi sta lontano?"],
+    "choicesEnglish": ["Does it look good on me?", "Does it look bad on me?", "Is he nice to me?", "Is it far from me?"],
+    "correctAnswerItalian": "Mi sta bene?",
+    "correctAnswerEnglish": "Does it look good on me?",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedi un parere sulla vestibilità.",
+      "incorrectItalian": "No, 'stare bene' si usa per l'aspetto fisico con un vestito.",
+      "correctEnglish": "Correct! You're asking for an opinion on the fit.",
+      "incorrectEnglish": "No, 'stare bene' is used for physical appearance with a garment."
+    }
+  },
+  {
+    "id": "shop_cloth_p12",
+    "type": "phrases",
+    "choicesItalian": ["È troppo stretto.", "È troppo largo.", "È troppo lungo.", "È troppo corto."],
+    "choicesEnglish": ["It's too tight.", "It's too wide/loose.", "It's too long.", "It's too short."],
+    "correctAnswerItalian": "È troppo stretto.",
+    "correctAnswerEnglish": "It's too tight.",
+    "feedback": {
+      "correctItalian": "Ottimo! Spiega perché ti serve una taglia diversa.",
+      "incorrectItalian": "No, 'stretto' significa che comprime troppo.",
+      "correctEnglish": "Great! Explain why you need a different size.",
+      "incorrectEnglish": "No, 'stretto' means it compresses too much."
+    }
+  },
+  {
+    "id": "shop_cloth_p13",
+    "type": "phrases",
+    "choicesItalian": ["È troppo caro.", "È troppo bello.", "È troppo nuovo.", "È troppo pulito."],
+    "choicesEnglish": ["It's too expensive.", "It's too beautiful.", "It's too new.", "It's too clean."],
+    "correctAnswerItalian": "È troppo caro.",
+    "correctAnswerEnglish": "It's too expensive.",
+    "feedback": {
+      "correctItalian": "Giusto! Una ragione comune per non comprare qualcosa.",
+      "incorrectItalian": "No, 'caro' significa che il prezzo è elevato.",
+      "correctEnglish": "Right! A common reason not to buy something.",
+      "incorrectEnglish": "No, 'caro' means the price is high."
+    }
+  },
+  {
+    "id": "shop_cloth_p14",
+    "type": "phrases",
+    "choicesItalian": ["Vorrei una camicia bianca.", "Vorrei una camicia rossa.", "Vorrei una camicia verde.", "Vorrei una camicia gialla."],
+    "choicesEnglish": ["I'd like a white shirt.", "I'd like a red shirt.", "I'd like a green shirt.", "I'd like a yellow shirt."],
+    "correctAnswerItalian": "Vorrei una camicia bianca.",
+    "correctAnswerEnglish": "I'd like a white shirt.",
+    "feedback": {
+      "correctItalian": "Bravo! Un classico per ogni guardaroba.",
+      "incorrectItalian": "No, 'bianca' è il colore della neve.",
+      "correctEnglish": "Well done! A classic for every wardrobe.",
+      "incorrectEnglish": "No, 'bianca' is the color of snow."
+    }
+  },
+  {
+    "id": "shop_cloth_p15",
+    "type": "phrases",
+    "choicesItalian": ["Vado a controllare.", "Vado a dormire.", "Vado a mangiare.", "Vado a correre."],
+    "choicesEnglish": ["I'm going to check.", "I'm going to sleep.", "I'm going to eat.", "I'm going to run."],
+    "correctAnswerItalian": "Vado a controllare.",
+    "correctAnswerEnglish": "I'm going to check.",
+    "feedback": {
+      "correctItalian": "Esatto! Quello che dice il commesso quando cerca una taglia.",
+      "incorrectItalian": "No, 'controllare' significa verificare la disponibilità.",
+      "correctEnglish": "Correct! What the shop assistant says when looking for a size.",
+      "incorrectEnglish": "No, 'controllare' means verifying availability."
+    }
+  },
+  {
+    "id": "shop_cloth_p16",
+    "type": "phrases",
+    "choicesItalian": ["C'è uno sconto del venti per cento.", "C'è un aumento del venti per cento.", "C'è un errore del venti per cento.", "C'è un regalo del venti per cento."],
+    "choicesEnglish": ["There's a twenty percent discount.", "There's a twenty percent increase.", "There's an error of twenty percent.", "There's a gift of twenty percent."],
+    "correctAnswerItalian": "C'è uno sconto del venti per cento.",
+    "correctAnswerEnglish": "There's a twenty percent discount.",
+    "feedback": {
+      "correctItalian": "Perfetto! Un buon risparmio.",
+      "incorrectItalian": "No, si parla di 'sconto' in un negozio.",
+      "correctEnglish": "Perfect! A good saving.",
+      "incorrectEnglish": "No, we talk about 'discount' in a store."
+    }
+  },
+  {
+    "id": "shop_cloth_p17",
+    "type": "phrases",
+    "choicesItalian": ["In fondo a sinistra.", "In alto a destra.", "Davanti alla porta.", "Sotto il tavolo."],
+    "choicesEnglish": ["At the back on the left.", "At the top on the right.", "In front of the door.", "Under the table."],
+    "correctAnswerItalian": "In fondo a sinistra.",
+    "correctAnswerEnglish": "At the back on the left.",
+    "feedback": {
+      "correctItalian": "Giusto! Indicazioni comuni per trovare i camerini.",
+      "incorrectItalian": "No, 'in fondo' indica la parte più lontana.",
+      "correctEnglish": "Right! Common directions to find the changing rooms.",
+      "incorrectEnglish": "No, 'in fondo' indicates the furthest part."
+    }
+  },
+  {
+    "id": "shop_cloth_p18",
+    "type": "phrases",
+    "choicesItalian": ["Che taglia porta?", "Che macchina guida?", "Che libro legge?", "Che musica ascolta?"],
+    "choicesEnglish": ["What size do you wear?", "What car do you drive?", "What book do you read?", "What music do you listen to?"],
+    "correctAnswerItalian": "Che taglia porta?",
+    "correctAnswerEnglish": "What size do you wear?",
+    "feedback": {
+      "correctItalian": "Esatto! La domanda standard del commesso.",
+      "incorrectItalian": "No, si chiede della 'taglia' in un negozio di abbigliamento.",
+      "correctEnglish": "Correct! The shop assistant's standard question.",
+      "incorrectEnglish": "No, you ask about 'size' in a clothing store."
+    }
+  },
+  {
+    "id": "shop_cloth_p19",
+    "type": "phrases",
+    "choicesItalian": ["Porto la quarantadue.", "Porto la pizza.", "Porto la borsa.", "Porto la macchina."],
+    "choicesEnglish": ["I wear a size forty-two.", "I'm bringing the pizza.", "I'm carrying the bag.", "I'm bringing the car."],
+    "correctAnswerItalian": "Porto la quarantadue.",
+    "correctAnswerEnglish": "I wear a size forty-two.",
+    "feedback": {
+      "correctItalian": "Ottimo! 'Portare' si usa per indicare la propria taglia.",
+      "incorrectItalian": "No, in questo contesto 'porto' indica la misura dei vestiti.",
+      "correctEnglish": "Great! 'Portare' is used to indicate one's size.",
+      "incorrectEnglish": "No, in this context 'porto' indicates the clothing size."
+    }
+  },
+  {
+    "id": "shop_cloth_p20",
+    "type": "phrases",
+    "choicesItalian": ["È di puro lino.", "È di pura lana.", "È di puro cotone.", "È di pura seta."],
+    "choicesEnglish": ["It's pure linen.", "It's pure wool.", "It's pure cotton.", "It's pure silk."],
+    "correctAnswerItalian": "È di puro lino.",
+    "correctAnswerEnglish": "It's pure linen.",
+    "feedback": {
+      "correctItalian": "Giusto! Il lino è un materiale molto apprezzato in estate.",
+      "incorrectItalian": "No, 'lino' è la risposta corretta basata sulla conversazione.",
+      "correctEnglish": "Right! Linen is a very appreciated material in summer.",
+      "incorrectEnglish": "No, 'linen' is the correct answer based on the conversation."
+    }
+  },
+  {
+    "id": "shop_cloth_p21",
+    "type": "phrases",
+    "choicesItalian": ["Mi serve una taglia in più.", "Mi serve un caffè.", "Mi serve un passaggio.", "Mi serve un aiuto."],
+    "choicesEnglish": ["I need a size up.", "I need a coffee.", "I need a ride.", "I need some help."],
+    "correctAnswerItalian": "Mi serve una taglia in più.",
+    "correctAnswerEnglish": "I need a size up.",
+    "feedback": {
+      "correctItalian": "Bravo! Frase utile se il vestito è stretto.",
+      "incorrectItalian": "No, 'una taglia in più' è la richiesta specifica.",
+      "correctEnglish": "Well done! Useful phrase if the dress is tight.",
+      "incorrectEnglish": "No, 'a size up' is the specific request."
+    }
+  },
+  {
+    "id": "shop_cloth_p22",
+    "type": "phrases",
+    "choicesItalian": ["I camerini sono liberi.", "I camerini sono occupati.", "I camerini sono chiusi.", "I camerini sono rotti."],
+    "choicesEnglish": ["The changing rooms are free/available.", "The changing rooms are occupied.", "The changing rooms are closed.", "The changing rooms are broken."],
+    "correctAnswerItalian": "I camerini sono liberi.",
+    "correctAnswerEnglish": "The changing rooms are free/available.",
+    "feedback": {
+      "correctItalian": "Esatto! Puoi andare a provare i vestiti.",
+      "incorrectItalian": "No, 'liberi' significa che non c'è nessuno dentro.",
+      "correctEnglish": "Correct! You can go try on the clothes.",
+      "incorrectEnglish": "No, 'liberi' means no one is inside."
+    }
+  },
+  {
+    "id": "shop_cloth_p23",
+    "type": "phrases",
+    "choicesItalian": ["Vuole riprovarli?", "Vuole mangiarli?", "Vuole venderli?", "Vuole perderli?"],
+    "choicesEnglish": ["Do you want to try them on again?", "Do you want to eat them?", "Do you want to sell them?", "Do you want to lose them?"],
+    "correctAnswerItalian": "Vuole riprovarli?",
+    "correctAnswerEnglish": "Do you want to try them on again?",
+    "feedback": {
+      "correctItalian": "Ottimo! Una domanda cortese del commesso.",
+      "incorrectItalian": "No, 'riprovare' si riferisce ai vestiti già provati una volta.",
+      "correctEnglish": "Great! A polite question from the shop assistant.",
+      "incorrectEnglish": "No, 'riprovare' refers to clothes already tried on once."
+    }
+  },
+  {
+    "id": "shop_cloth_p24",
+    "type": "phrases",
+    "choicesItalian": ["È l'ultima moda.", "È l'ultima spiaggia.", "È l'ultima corsa.", "È l'ultima parola."],
+    "choicesEnglish": ["It's the latest fashion.", "It's the last resort.", "It's the last race.", "It's the last word."],
+    "correctAnswerItalian": "È l'ultima moda.",
+    "correctAnswerEnglish": "It's the latest fashion.",
+    "feedback": {
+      "correctItalian": "Perfetto! Per chi segue le tendenze.",
+      "incorrectItalian": "No, 'moda' è il termine corretto in questo contesto.",
+      "correctEnglish": "Perfect! For those who follow trends.",
+      "incorrectEnglish": "No, 'fashion' is the correct term in this context."
+    }
+  },
+  {
+    "id": "shop_cloth_p25",
+    "type": "phrases",
+    "choicesItalian": ["Posso pagare in contanti?", "Posso pagare con un bacio?", "Posso pagare domani?", "Posso pagare a rate?"],
+    "choicesEnglish": ["Can I pay in cash?", "Can I pay with a kiss?", "Can I pay tomorrow?", "Can I pay in installments?"],
+    "correctAnswerItalian": "Posso pagare in contanti?",
+    "correctAnswerEnglish": "Can I pay in cash?",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedi se accettano banconote.",
+      "incorrectItalian": "No, 'contanti' è il termine per il denaro fisico.",
+      "correctEnglish": "Right! You're asking if they accept banknotes.",
+      "incorrectEnglish": "No, 'cash' is the term for physical money."
+    }
+  },
+  {
+    "id": "shop_cloth_p26",
+    "type": "phrases",
+    "choicesItalian": ["Ecco lo scontrino.", "Ecco il regalo.", "Ecco il giornale.", "Ecco il biglietto."],
+    "choicesEnglish": ["Here is the receipt.", "Here is the gift.", "Here is the newspaper.", "Here is the ticket."],
+    "correctAnswerItalian": "Ecco lo scontrino.",
+    "correctAnswerEnglish": "Here is the receipt.",
+    "feedback": {
+      "correctItalian": "Bravo! La prova d'acquisto è importante.",
+      "incorrectItalian": "No, 'scontrino' è quello che ti danno in negozio.",
+      "correctEnglish": "Well done! Proof of purchase is important.",
+      "incorrectEnglish": "No, 'receipt' is what they give you in a store."
+    }
+  },
+  {
+    "id": "shop_cloth_p27",
+    "type": "phrases",
+    "choicesItalian": ["Avete questo in nero?", "Avete questo in ufficio?", "Avete questo in tasca?", "Avete questo in testa?"],
+    "choicesEnglish": ["Do you have this in black?", "Do you have this in the office?", "Do you have this in your pocket?", "Do you have this on your head?"],
+    "correctAnswerItalian": "Avete questo in nero?",
+    "correctAnswerEnglish": "Do you have this in black?",
+    "feedback": {
+      "correctItalian": "Esatto! Chiedere una variante di colore.",
+      "incorrectItalian": "No, 'nero' è un colore classico per i vestiti.",
+      "correctEnglish": "Correct! Asking for a color variant.",
+      "incorrectEnglish": "No, 'black' is a classic color for clothes."
+    }
+  },
+  {
+    "id": "shop_cloth_p28",
+    "type": "phrases",
+    "choicesItalian": ["Lo vorrei provare.", "Lo vorrei mangiare.", "Lo vorrei bere.", "Lo vorrei rompere."],
+    "choicesEnglish": ["I would like to try it on.", "I would like to eat it.", "I would like to drink it.", "I would like to break it."],
+    "correctAnswerItalian": "Lo vorrei provare.",
+    "correctAnswerEnglish": "I would like to try it on.",
+    "feedback": {
+      "correctItalian": "Ottimo! Modo educato per chiedere di usare il camerino.",
+      "incorrectItalian": "No, 'provare' è l'azione corretta per i vestiti.",
+      "correctEnglish": "Great! Polite way to ask to use the changing room.",
+      "incorrectEnglish": "No, 'try on' is the correct action for clothes."
+    }
+  },
+  {
+    "id": "shop_cloth_p29",
+    "type": "phrases",
+    "choicesItalian": ["Le consiglio questo abito.", "Le vendo questo abito.", "Le regalo questo abito.", "Le porto questo abito."],
+    "choicesEnglish": ["I recommend this dress to you.", "I'm selling you this dress.", "I'm giving you this dress for free.", "I'm bringing you this dress."],
+    "correctAnswerItalian": "Le consiglio questo abito.",
+    "correctAnswerEnglish": "I recommend this dress to you.",
+    "feedback": {
+      "correctItalian": "Esatto! Un suggerimento della commessa.",
+      "incorrectItalian": "No, 'consigliare' significa dare un parere professionale.",
+      "correctEnglish": "Correct! A suggestion from the shop assistant.",
+      "incorrectEnglish": "No, 'consigliare' means giving a professional opinion."
+    }
+  },
+  {
+    "id": "shop_cloth_p30",
+    "type": "phrases",
+    "choicesItalian": ["È molto di moda quest'anno.", "È molto di fretta quest'anno.", "È molto di lusso quest'anno.", "È molto di noia quest'anno."],
+    "choicesEnglish": ["It's very fashionable this year.", "It's very in a hurry this year.", "It's very luxury this year.", "It's very boring this year."],
+    "correctAnswerItalian": "È molto di moda quest'anno.",
+    "correctAnswerEnglish": "It's very fashionable this year.",
+    "feedback": {
+      "correctItalian": "Giusto! Un argomento di vendita efficace.",
+      "incorrectItalian": "No, 'di moda' indica che segue le tendenze attuali.",
+      "correctEnglish": "Right! An effective sales pitch.",
+      "incorrectEnglish": "No, 'fashionable' indicates it follows current trends."
+    }
+  },
+  {
+    "id": "shop_cloth_p31",
+    "type": "phrases",
+    "choicesItalian": ["Mi sta un po' stretto.", "Mi sta un po' simpatico.", "Mi sta un po' lontano.", "Mi sta un po' bene."],
+    "choicesEnglish": ["It's a bit tight on me.", "He's a bit nice to me.", "It's a bit far from me.", "It fits me a bit well."],
+    "correctAnswerItalian": "Mi sta un po' stretto.",
+    "correctAnswerEnglish": "It's a bit tight on me.",
+    "feedback": {
+      "correctItalian": "Esatto! Motivo per cui chiedi una taglia in più.",
+      "incorrectItalian": "No, 'stretto' descrive la vestibilità ridotta.",
+      "correctEnglish": "Correct! Reason why you ask for a size up.",
+      "incorrectEnglish": "No, 'stretto' describes the tight fit."
+    }
+  },
+  {
+    "id": "shop_cloth_p32",
+    "type": "phrases",
+    "choicesItalian": ["È solo bianco e celeste chiaro.", "È solo rosso e verde scuro.", "È solo giallo e viola.", "È solo nero e grigio."],
+    "choicesEnglish": ["It's only white and light blue.", "It's only red and dark green.", "It's only yellow and purple.", "It's only black and gray."],
+    "correctAnswerItalian": "È solo bianco e celeste chiaro.",
+    "correctAnswerEnglish": "It's only white and light blue.",
+    "feedback": {
+      "correctItalian": "Ottimo! Colori disponibili citati nella conversazione.",
+      "incorrectItalian": "No, questi sono i colori della camicia di lino.",
+      "correctEnglish": "Great! Available colors mentioned in the conversation.",
+      "incorrectEnglish": "No, these are the colors of the linen shirt."
+    }
+  },
+  {
+    "id": "shop_cloth_p33",
+    "type": "phrases",
+    "choicesItalian": ["Viene trentasei euro.", "Viene trentasei anni.", "Viene trentasei metri.", "Viene trentasei litri."],
+    "choicesEnglish": ["It comes to thirty-six euros.", "He's thirty-six years old.", "It's thirty-six meters long.", "It's thirty-six liters."],
+    "correctAnswerItalian": "Viene trentasei euro.",
+    "correctAnswerEnglish": "It comes to thirty-six euros.",
+    "feedback": {
+      "correctItalian": "Perfetto! Il prezzo finale dopo lo sconto.",
+      "incorrectItalian": "No, 'euro' è la valuta corretta.",
+      "correctEnglish": "Perfect! The final price after the discount.",
+      "incorrectEnglish": "No, 'euros' is the correct currency."
+    }
+  },
+  {
+    "id": "shop_cloth_p34",
+    "type": "phrases",
+    "choicesItalian": ["I saldi iniziano la prossima settimana.", "I saldi iniziano tra due anni.", "I saldi iniziano ieri.", "I saldi iniziano mai."],
+    "choicesEnglish": ["The sales start next week.", "The sales start in two years.", "The sales start yesterday.", "The sales never start."],
+    "correctAnswerItalian": "I saldi iniziano la prossima settimana.",
+    "correctAnswerEnglish": "The sales start next week.",
+    "feedback": {
+      "correctItalian": "Bravo! Informazione utile per chi cerca sconti.",
+      "incorrectItalian": "No, 'prossima settimana' è l'indicazione temporale corretta.",
+      "correctEnglish": "Well done! Useful info for those looking for discounts.",
+      "incorrectEnglish": "No, 'next week' is the correct time indication."
+    }
+  },
+  {
+    "id": "shop_cloth_p35",
+    "type": "phrases",
+    "choicesItalian": ["È già scontata?", "È già finita?", "È già rotta?", "È già pulita?"],
+    "choicesEnglish": ["Is it already discounted?", "Is it already finished?", "Is it already broken?", "Is it already clean?"],
+    "correctAnswerItalian": "È già scontata?",
+    "correctAnswerEnglish": "Is it already discounted?",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere se il prezzo è quello finale.",
+      "incorrectItalian": "No, 'scontata' si riferisce alla riduzione di prezzo.",
+      "correctEnglish": "Right! Asking if the price is the final one.",
+      "incorrectEnglish": "No, 'discounted' refers to the price reduction."
+    }
+  },
+  {
+    "id": "shop_cloth_p36",
+    "type": "phrases",
+    "choicesItalian": ["Cerca qualcosa di elegante?", "Cerca qualcosa di economico?", "Cerca qualcosa di sportivo?", "Cerca qualcosa di nuovo?"],
+    "choicesEnglish": ["Are you looking for something elegant?", "Are you looking for something cheap?", "Are you looking for something sporty?", "Are you looking for something new?"],
+    "correctAnswerItalian": "Cerca qualcosa di elegante?",
+    "correctAnswerEnglish": "Are you looking for something elegant?",
+    "feedback": {
+      "correctItalian": "Esatto! Il commesso cerca di capire i tuoi gusti.",
+      "incorrectItalian": "No, 'elegante' è la parola chiave per il matrimonio.",
+      "correctEnglish": "Correct! The shop assistant is trying to understand your tastes.",
+      "incorrectEnglish": "No, 'elegant' is the keyword for the wedding."
+    }
+  },
+  {
+    "id": "shop_cloth_p37",
+    "type": "phrases",
+    "choicesItalian": ["Non troppo formale.", "Non troppo caro.", "Non troppo grande.", "Non troppo piccolo."],
+    "choicesEnglish": ["Not too formal.", "Not too expensive.", "Not too big.", "Not too small."],
+    "correctAnswerItalian": "Non troppo formale.",
+    "correctAnswerEnglish": "Not too formal.",
+    "feedback": {
+      "correctItalian": "Ottimo! Una specifica importante sullo stile.",
+      "incorrectItalian": "No, 'formale' si riferisce all'etichetta del vestiario.",
+      "correctEnglish": "Great! An important specification about style.",
+      "incorrectEnglish": "No, 'formal' refers to the clothing etiquette."
+    }
+  },
+  {
+    "id": "shop_cloth_p38",
+    "type": "phrases",
+    "choicesItalian": ["Posso provarlo?", "Posso guidarlo?", "Posso ascoltarlo?", "Posso leggerlo?"],
+    "choicesEnglish": ["Can I try it on?", "Can I drive it?", "Can I listen to it?", "Can I read it?"],
+    "correctAnswerItalian": "Posso provarlo?",
     "correctAnswerEnglish": "Can I try it on?",
     "feedback": {
-      "correct": "Ottimo! 'Posso provare?' si traduce 'Can I try it on?'. / Great! 'Posso provare?' translates to 'Can I try it on?'.",
-      "incorrect": "Non proprio. 'Posso provare?' è 'Can I try it on?'. / Not quite. 'Posso provare?' is 'Can I try it on?'."
+      "correctItalian": "Perfetto! La frase chiave prima dell'acquisto.",
+      "incorrectItalian": "No, si provano i vestiti nei camerini.",
+      "correctEnglish": "Perfect! The key phrase before purchasing.",
+      "incorrectEnglish": "No, you try on clothes in the changing rooms."
     }
   },
   {
-    "id": "s41-p3",
-    "type": "phrase",
-    "choicesItalian": [
-      "Che taglia?",
-      "Posso cambiare?",
-      "Taglia media",
-      "Maniche lunghe"
-    ],
-    "choicesEnglish": [
-      "What size?",
-      "Can I exchange it?",
-      "Medium size",
-      "Long sleeves"
-    ],
-    "correctAnswerItalian": "Che taglia?",
-    "correctAnswerEnglish": "What size?",
+    "id": "shop_cloth_p39",
+    "type": "phrases",
+    "choicesItalian": ["C'è un'offerta speciale.", "C'è un errore speciale.", "C'è un problema speciale.", "C'è un regalo speciale."],
+    "choicesEnglish": ["There is a special offer.", "There is a special error.", "There is a special problem.", "There is a special gift."],
+    "correctAnswerItalian": "C'è un'offerta speciale.",
+    "correctAnswerEnglish": "There is a special offer.",
     "feedback": {
-      "correct": "Ottimo! 'Che taglia?' si traduce 'What size?'. / Great! 'Che taglia?' translates to 'What size?'.",
-      "incorrect": "Non proprio. 'Che taglia?' è 'What size?'. / Not quite. 'Che taglia?' is 'What size?'."
+      "correctItalian": "Giusto! Per attirare l'attenzione dei clienti.",
+      "incorrectItalian": "No, 'offerta' indica un prezzo vantaggioso.",
+      "correctEnglish": "Right! To attract customers' attention.",
+      "incorrectEnglish": "No, 'offer' indicates an advantageous price."
     }
   },
   {
-    "id": "s41-p4",
-    "type": "phrase",
-    "choicesItalian": [
-      "Taglia 42",
-      "Veste grande",
-      "Taglia media",
-      "Una taglia in meno"
-    ],
-    "choicesEnglish": [
-      "Size 42",
-      "It runs large",
-      "Medium size",
-      "A size down"
-    ],
-    "correctAnswerItalian": "Taglia media",
-    "correctAnswerEnglish": "Medium size",
+    "id": "shop_cloth_p40",
+    "type": "phrases",
+    "choicesItalian": ["Le sta benissimo!", "Le sta malissimo!", "Le sta antipatico!", "Le sta lontano!"],
+    "choicesEnglish": ["It looks great on you!", "It looks terrible on you!", "He's very unpleasant to you!", "It's very far from you!"],
+    "correctAnswerItalian": "Le sta benissimo!",
+    "correctAnswerEnglish": "It looks great on you!",
     "feedback": {
-      "correct": "Ottimo! 'Taglia media' si traduce 'Medium size'. / Great! 'Taglia media' translates to 'Medium size'.",
-      "incorrect": "Non proprio. 'Taglia media' è 'Medium size'. / Not quite. 'Taglia media' is 'Medium size'."
+      "correctItalian": "Bravo! Un complimento tipico della commessa.",
+      "incorrectItalian": "No, 'stare benissimo' significa che il capo è perfetto per la persona.",
+      "correctEnglish": "Well done! A typical compliment from the shop assistant.",
+      "incorrectEnglish": "No, 'stare benissimo' means the item is perfect for the person."
     }
   },
   {
-    "id": "s41-p5",
-    "type": "phrase",
-    "choicesItalian": [
-      "Tutto esaurito",
-      "Provatelo pure",
-      "Seta naturale",
-      "In magazzino"
-    ],
-    "choicesEnglish": [
-      "Sold out",
-      "Go ahead and try it",
-      "Natural silk",
-      "In stock"
-    ],
-    "correctAnswerItalian": "In magazzino",
-    "correctAnswerEnglish": "In stock",
+    "id": "shop_cloth_p41",
+    "type": "phrases",
+    "choicesItalian": ["Serve altro?", "Serve un aiuto?", "Serve un caffè?", "Serve un taxi?"],
+    "choicesEnglish": ["Do you need anything else?", "Do you need help?", "Do you need a coffee?", "Do you need a taxi?"],
+    "correctAnswerItalian": "Serve altro?",
+    "correctAnswerEnglish": "Do you need anything else?",
     "feedback": {
-      "correct": "Ottimo! 'In magazzino' si traduce 'In stock'. / Great! 'In magazzino' translates to 'In stock'.",
-      "incorrect": "Non proprio. 'In magazzino' è 'In stock'. / Not quite. 'In magazzino' is 'In stock'."
+      "correctItalian": "Esatto! La domanda finale prima di andare in cassa.",
+      "incorrectItalian": "No, 'altro' si riferisce ad altri acquisti.",
+      "correctEnglish": "Correct! The final question before going to the cash desk.",
+      "incorrectEnglish": "No, 'anything else' refers to more purchases."
     }
   },
   {
-    "id": "s41-p6",
-    "type": "phrase",
-    "choicesItalian": [
-      "Abito floreale",
-      "Veste piccolo",
-      "I saldi",
-      "Nuova collezione"
-    ],
-    "choicesEnglish": [
-      "Floral dress",
-      "It runs small",
-      "The sales",
-      "New collection"
-    ],
-    "correctAnswerItalian": "I saldi",
-    "correctAnswerEnglish": "The sales",
+    "id": "shop_cloth_p42",
+    "type": "phrases",
+    "choicesItalian": ["Prendo anche questo.", "Perdo anche questo.", "Vendo anche questo.", "Rompo anche questo."],
+    "choicesEnglish": ["I'll take this too.", "I'll lose this too.", "I'm selling this too.", "I'm breaking this too."],
+    "correctAnswerItalian": "Prendo anche questo.",
+    "correctAnswerEnglish": "I'll take this too.",
     "feedback": {
-      "correct": "Ottimo! 'I saldi' si traduce 'The sales'. / Great! 'I saldi' translates to 'The sales'.",
-      "incorrect": "Non proprio. 'I saldi' è 'The sales'. / Not quite. 'I saldi' is 'The sales'."
+      "correctItalian": "Ottimo! Quando aggiungi un altro capo all'acquisto.",
+      "incorrectItalian": "No, 'prendere' qui significa scegliere di comprare.",
+      "correctEnglish": "Great! When you add another item to the purchase.",
+      "incorrectEnglish": "No, 'prendere' here means choosing to buy."
     }
   },
   {
-    "id": "s41-p7",
-    "type": "phrase",
-    "choicesItalian": [
-      "Disponibile in blu",
-      "Celeste chiaro",
-      "Lo sconto",
-      "Elegante ma informale"
-    ],
-    "choicesEnglish": [
-      "Available in blue",
-      "Light blue",
-      "The discount",
-      "Elegant but informal"
-    ],
-    "correctAnswerItalian": "Lo sconto",
-    "correctAnswerEnglish": "The discount",
+    "id": "shop_cloth_p43",
+    "type": "phrases",
+    "choicesItalian": ["Accettate carte di credito?", "Accettate sogni?", "Accettate promesse?", "Accettate baratti?"],
+    "choicesEnglish": ["Do you accept credit cards?", "Do you accept dreams?", "Do you accept promises?", "Do you accept bartering?"],
+    "correctAnswerItalian": "Accettate carte di credito?",
+    "correctAnswerEnglish": "Do you accept credit cards?",
     "feedback": {
-      "correct": "Ottimo! 'Lo sconto' si traduce 'The discount'. / Great! 'Lo sconto' translates to 'The discount'.",
-      "incorrect": "Non proprio. 'Lo sconto' è 'The discount'. / Not quite. 'Lo sconto' is 'The discount'."
+      "correctItalian": "Giusto! Fondamentale per sapere come pagare.",
+      "incorrectItalian": "No, si chiede del metodo di pagamento elettronico.",
+      "correctEnglish": "Right! Essential to know how to pay.",
+      "incorrectEnglish": "No, you're asking about the electronic payment method."
     }
   },
   {
-    "id": "s41-p8",
-    "type": "phrase",
-    "choicesItalian": [
-      "Solo contanti",
-      "Prezzo finale",
-      "Troppo stretto",
-      "Elegante ma informale"
-    ],
-    "choicesEnglish": [
-      "Only cash",
-      "Final price",
-      "Too tight",
-      "Elegant but informal"
-    ],
-    "correctAnswerItalian": "Prezzo finale",
-    "correctAnswerEnglish": "Final price",
+    "id": "shop_cloth_p44",
+    "type": "phrases",
+    "choicesItalian": ["Dov'è il reparto uomo?", "Dov'è il reparto cibo?", "Dov'è il reparto libri?", "Dov'è il reparto musica?"],
+    "choicesEnglish": ["Where is the men's department?", "Where is the food department?", "Where is the book department?", "Where is the music department?"],
+    "correctAnswerItalian": "Dov'è il reparto uomo?",
+    "correctAnswerEnglish": "Where is the men's department?",
     "feedback": {
-      "correct": "Ottimo! 'Prezzo finale' si traduce 'Final price'. / Great! 'Prezzo finale' translates to 'Final price'.",
-      "incorrect": "Non proprio. 'Prezzo finale' è 'Final price'. / Not quite. 'Prezzo finale' is 'Final price'."
+      "correctItalian": "Esatto! Per orientarsi nel negozio.",
+      "incorrectItalian": "No, 'reparto uomo' è la sezione corretta per vestiti maschili.",
+      "correctEnglish": "Correct! To find your way in the store.",
+      "incorrectEnglish": "No, 'men's department' is the correct section for male clothing."
     }
   },
   {
-    "id": "s41-p9",
-    "type": "phrase",
-    "choicesItalian": [
-      "Camerini liberi",
-      "Taglia 42",
-      "Prezzo finale",
-      "Posso provare?"
-    ],
-    "choicesEnglish": [
-      "Free fitting rooms",
-      "Size 42",
-      "Final price",
-      "Can I try it on?"
-    ],
-    "correctAnswerItalian": "Camerini liberi",
-    "correctAnswerEnglish": "Free fitting rooms",
+    "id": "shop_cloth_p45",
+    "type": "phrases",
+    "choicesItalian": ["C'è uno sconto per studenti?", "C'è uno sconto per gatti?", "C'è uno sconto per alberi?", "C'è uno sconto per sassi?"],
+    "choicesEnglish": ["Is there a student discount?", "Is there a discount for cats?", "Is there a discount for trees?", "Is there a discount for rocks?"],
+    "correctAnswerItalian": "C'è uno sconto per studenti?",
+    "correctAnswerEnglish": "Is there a student discount?",
     "feedback": {
-      "correct": "Ottimo! 'Camerini liberi' si traduce 'Free fitting rooms'. / Great! 'Camerini liberi' translates to 'Free fitting rooms'.",
-      "incorrect": "Non proprio. 'Camerini liberi' è 'Free fitting rooms'. / Not quite. 'Camerini liberi' is 'Free fitting rooms'."
-    }
-  },
-  {
-    "id": "s41-p10",
-    "type": "phrase",
-    "choicesItalian": [
-      "Sciarpa di lana",
-      "Ottimo prezzo",
-      "Sconto del 20%",
-      "Cerco un abito"
-    ],
-    "choicesEnglish": [
-      "Woolen scarf",
-      "Great price",
-      "20% discount",
-      "I'm looking for a dress"
-    ],
-    "correctAnswerItalian": "Cerco un abito",
-    "correctAnswerEnglish": "I'm looking for a dress",
-    "feedback": {
-      "correct": "Ottimo! 'Cerco un abito' si traduce 'I'm looking for a dress'. / Great! 'Cerco un abito' translates to 'I'm looking for a dress'.",
-      "incorrect": "Non proprio. 'Cerco un abito' è 'I'm looking for a dress'. / Not quite. 'Cerco un abito' is 'I'm looking for a dress'."
-    }
-  },
-  {
-    "id": "s41-p11",
-    "type": "phrase",
-    "choicesItalian": [
-      "Cintura nera",
-      "Posso cambiare?",
-      "Troppo stretto",
-      "Camicia di lino"
-    ],
-    "choicesEnglish": [
-      "Black belt",
-      "Can I exchange it?",
-      "Too tight",
-      "Linen shirt"
-    ],
-    "correctAnswerItalian": "Troppo stretto",
-    "correctAnswerEnglish": "Too tight",
-    "feedback": {
-      "correct": "Ottimo! 'Troppo stretto' si traduce 'Too tight'. / Great! 'Troppo stretto' translates to 'Too tight'.",
-      "incorrect": "Non proprio. 'Troppo stretto' è 'Too tight'. / Not quite. 'Troppo stretto' is 'Too tight'."
-    }
-  },
-  {
-    "id": "s41-p12",
-    "type": "phrase",
-    "choicesItalian": [
-      "Un po' largo",
-      "Puro cotone",
-      "Provatelo pure",
-      "Veste piccolo"
-    ],
-    "choicesEnglish": [
-      "A bit loose",
-      "Pure cotton",
-      "Go ahead and try it",
-      "It runs small"
-    ],
-    "correctAnswerItalian": "Un po' largo",
-    "correctAnswerEnglish": "A bit loose",
-    "feedback": {
-      "correct": "Ottimo! 'Un po' largo' si traduce 'A bit loose'. / Great! 'Un po' largo' translates to 'A bit loose'.",
-      "incorrect": "Non proprio. 'Un po' largo' è 'A bit loose'. / Not quite. 'Un po' largo' is 'A bit loose'."
-    }
-  },
-  {
-    "id": "s41-p13",
-    "type": "phrase",
-    "choicesItalian": [
-      "Quanto costa?",
-      "Una taglia in meno",
-      "Taglia 42",
-      "Senza maniche"
-    ],
-    "choicesEnglish": [
-      "How much does it cost?",
-      "A size down",
-      "Size 42",
-      "Sleeveless"
-    ],
-    "correctAnswerItalian": "Senza maniche",
-    "correctAnswerEnglish": "Sleeveless",
-    "feedback": {
-      "correct": "Ottimo! 'Senza maniche' si traduce 'Sleeveless'. / Great! 'Senza maniche' translates to 'Sleeveless'.",
-      "incorrect": "Non proprio. 'Senza maniche' è 'Sleeveless'. / Not quite. 'Senza maniche' is 'Sleeveless'."
-    }
-  },
-  {
-    "id": "s41-p14",
-    "type": "phrase",
-    "choicesItalian": [
-      "Maniche lunghe",
-      "Una taglia in più",
-      "Troppo stretto",
-      "Vicino alle giacche"
-    ],
-    "choicesEnglish": [
-      "Long sleeves",
-      "A size up",
-      "Too tight",
-      "Near the jackets"
-    ],
-    "correctAnswerItalian": "Maniche lunghe",
-    "correctAnswerEnglish": "Long sleeves",
-    "feedback": {
-      "correct": "Ottimo! 'Maniche lunghe' si traduce 'Long sleeves'. / Great! 'Maniche lunghe' translates to 'Long sleeves'.",
-      "incorrect": "Non proprio. 'Maniche lunghe' è 'Long sleeves'. / Not quite. 'Maniche lunghe' is 'Long sleeves'."
-    }
-  },
-  {
-    "id": "s41-p15",
-    "type": "phrase",
-    "choicesItalian": [
-      "Maniche lunghe",
-      "I saldi",
-      "In saldo",
-      "Veste bene"
-    ],
-    "choicesEnglish": [
-      "Long sleeves",
-      "The sales",
-      "On sale",
-      "It fits well"
-    ],
-    "correctAnswerItalian": "In saldo",
-    "correctAnswerEnglish": "On sale",
-    "feedback": {
-      "correct": "Ottimo! 'In saldo' si traduce 'On sale'. / Great! 'In saldo' translates to 'On sale'.",
-      "incorrect": "Non proprio. 'In saldo' è 'On sale'. / Not quite. 'In saldo' is 'On sale'."
-    }
-  },
-  {
-    "id": "s41-p16",
-    "type": "phrase",
-    "choicesItalian": [
-      "Lo sconto",
-      "Nuova collezione",
-      "Seta naturale",
-      "Guanti caldi"
-    ],
-    "choicesEnglish": [
-      "The discount",
-      "New collection",
-      "Natural silk",
-      "Warm gloves"
-    ],
-    "correctAnswerItalian": "Nuova collezione",
-    "correctAnswerEnglish": "New collection",
-    "feedback": {
-      "correct": "Ottimo! 'Nuova collezione' si traduce 'New collection'. / Great! 'Nuova collezione' translates to 'New collection'.",
-      "incorrect": "Non proprio. 'Nuova collezione' è 'New collection'. / Not quite. 'Nuova collezione' is 'New collection'."
-    }
-  },
-  {
-    "id": "s41-p17",
-    "type": "phrase",
-    "choicesItalian": [
-      "Lo sconto",
-      "Tutto esaurito",
-      "Cappotto invernale",
-      "I saldi"
-    ],
-    "choicesEnglish": [
-      "The discount",
-      "Sold out",
-      "Winter coat",
-      "The sales"
-    ],
-    "correctAnswerItalian": "Tutto esaurito",
-    "correctAnswerEnglish": "Sold out",
-    "feedback": {
-      "correct": "Ottimo! 'Tutto esaurito' si traduce 'Sold out'. / Great! 'Tutto esaurito' translates to 'Sold out'.",
-      "incorrect": "Non proprio. 'Tutto esaurito' è 'Sold out'. / Not quite. 'Tutto esaurito' is 'Sold out'."
-    }
-  },
-  {
-    "id": "s41-p18",
-    "type": "phrase",
-    "choicesItalian": [
-      "Lo sconto",
-      "Disponibile in blu",
-      "Camicia di lino",
-      "Cerco un abito"
-    ],
-    "choicesEnglish": [
-      "The discount",
-      "Available in blue",
-      "Linen shirt",
-      "I'm looking for a dress"
-    ],
-    "correctAnswerItalian": "Disponibile in blu",
-    "correctAnswerEnglish": "Available in blue",
-    "feedback": {
-      "correct": "Ottimo! 'Disponibile in blu' si traduce 'Available in blue'. / Great! 'Disponibile in blu' translates to 'Available in blue'.",
-      "incorrect": "Non proprio. 'Disponibile in blu' è 'Available in blue'. / Not quite. 'Disponibile in blu' is 'Available in blue'."
-    }
-  },
-  {
-    "id": "s41-p19",
-    "type": "phrase",
-    "choicesItalian": [
-      "Provatelo pure",
-      "Cerco un abito",
-      "Puro cotone",
-      "Sciarpa di lana"
-    ],
-    "choicesEnglish": [
-      "Go ahead and try it",
-      "I'm looking for a dress",
-      "Pure cotton",
-      "Woolen scarf"
-    ],
-    "correctAnswerItalian": "Puro cotone",
-    "correctAnswerEnglish": "Pure cotton",
-    "feedback": {
-      "correct": "Ottimo! 'Puro cotone' si traduce 'Pure cotton'. / Great! 'Puro cotone' translates to 'Pure cotton'.",
-      "incorrect": "Non proprio. 'Puro cotone' è 'Pure cotton'. / Not quite. 'Puro cotone' is 'Pure cotton'."
-    }
-  },
-  {
-    "id": "s41-p20",
-    "type": "phrase",
-    "choicesItalian": [
-      "Veste bene",
-      "Taglia media",
-      "Borsa di pelle",
-      "Solo bianco"
-    ],
-    "choicesEnglish": [
-      "It fits well",
-      "Medium size",
-      "Leather bag",
-      "Only white"
-    ],
-    "correctAnswerItalian": "Solo bianco",
-    "correctAnswerEnglish": "Only white",
-    "feedback": {
-      "correct": "Ottimo! 'Solo bianco' si traduce 'Only white'. / Great! 'Solo bianco' translates to 'Only white'.",
-      "incorrect": "Non proprio. 'Solo bianco' è 'Only white'. / Not quite. 'Solo bianco' is 'Only white'."
-    }
-  },
-  {
-    "id": "s41-p21",
-    "type": "phrase",
-    "choicesItalian": [
-      "Dove sono i camerini?",
-      "Taglia 42",
-      "Vado a controllare",
-      "Pagamento con carta"
-    ],
-    "choicesEnglish": [
-      "Where are the fitting rooms?",
-      "Size 42",
-      "I'll go check",
-      "Payment by card"
-    ],
-    "correctAnswerItalian": "Taglia 42",
-    "correctAnswerEnglish": "Size 42",
-    "feedback": {
-      "correct": "Ottimo! 'Taglia 42' si traduce 'Size 42'. / Great! 'Taglia 42' translates to 'Size 42'.",
-      "incorrect": "Non proprio. 'Taglia 42' è 'Size 42'. / Not quite. 'Taglia 42' is 'Size 42'."
-    }
-  },
-  {
-    "id": "s41-p22",
-    "type": "phrase",
-    "choicesItalian": [
-      "Una taglia in più",
-      "In magazzino",
-      "I saldi",
-      "Taglia media"
-    ],
-    "choicesEnglish": [
-      "A size up",
-      "In stock",
-      "The sales",
-      "Medium size"
-    ],
-    "correctAnswerItalian": "Una taglia in più",
-    "correctAnswerEnglish": "A size up",
-    "feedback": {
-      "correct": "Ottimo! 'Una taglia in più' si traduce 'A size up'. / Great! 'Una taglia in più' translates to 'A size up'.",
-      "incorrect": "Non proprio. 'Una taglia in più' è 'A size up'. / Not quite. 'Una taglia in più' is 'A size up'."
-    }
-  },
-  {
-    "id": "s41-p23",
-    "type": "phrase",
-    "choicesItalian": [
-      "Vado a controllare",
-      "Posso provare?",
-      "Giacca estiva",
-      "Una taglia in meno"
-    ],
-    "choicesEnglish": [
-      "I'll go check",
-      "Can I try it on?",
-      "Summer jacket",
-      "A size down"
-    ],
-    "correctAnswerItalian": "Una taglia in meno",
-    "correctAnswerEnglish": "A size down",
-    "feedback": {
-      "correct": "Ottimo! 'Una taglia in meno' si traduce 'A size down'. / Great! 'Una taglia in meno' translates to 'A size down'.",
-      "incorrect": "Non proprio. 'Una taglia in meno' è 'A size down'. / Not quite. 'Una taglia in meno' is 'A size down'."
-    }
-  },
-  {
-    "id": "s41-p24",
-    "type": "phrase",
-    "choicesItalian": [
-      "Veste bene",
-      "Sciarpa di lana",
-      "Un po' largo",
-      "Dove sono i camerini?"
-    ],
-    "choicesEnglish": [
-      "It fits well",
-      "Woolen scarf",
-      "A bit loose",
-      "Where are the fitting rooms?"
-    ],
-    "correctAnswerItalian": "Dove sono i camerini?",
-    "correctAnswerEnglish": "Where are the fitting rooms?",
-    "feedback": {
-      "correct": "Ottimo! 'Dove sono i camerini?' si traduce 'Where are the fitting rooms?'. / Great! 'Dove sono i camerini?' translates to 'Where are the fitting rooms?'.",
-      "incorrect": "Non proprio. 'Dove sono i camerini?' è 'Where are the fitting rooms?'. / Not quite. 'Dove sono i camerini?' is 'Where are the fitting rooms?'."
-    }
-  },
-  {
-    "id": "s41-p25",
-    "type": "phrase",
-    "choicesItalian": [
-      "Senza maniche",
-      "Troppo stretto",
-      "Venti per cento",
-      "Vicino alle giacche"
-    ],
-    "choicesEnglish": [
-      "Sleeveless",
-      "Too tight",
-      "Twenty percent",
-      "Near the jackets"
-    ],
-    "correctAnswerItalian": "Vicino alle giacche",
-    "correctAnswerEnglish": "Near the jackets",
-    "feedback": {
-      "correct": "Ottimo! 'Vicino alle giacche' si traduce 'Near the jackets'. / Great! 'Vicino alle giacche' translates to 'Near the jackets'.",
-      "incorrect": "Non proprio. 'Vicino alle giacche' è 'Near the jackets'. / Not quite. 'Vicino alle giacche' is 'Near the jackets'."
-    }
-  },
-  {
-    "id": "s41-p26",
-    "type": "phrase",
-    "choicesItalian": [
-      "Cintura nera",
-      "Veste bene",
-      "Provatelo pure",
-      "In fondo a sinistra"
-    ],
-    "choicesEnglish": [
-      "Black belt",
-      "It fits well",
-      "Go ahead and try it",
-      "In the back on the left"
-    ],
-    "correctAnswerItalian": "In fondo a sinistra",
-    "correctAnswerEnglish": "In the back on the left",
-    "feedback": {
-      "correct": "Ottimo! 'In fondo a sinistra' si traduce 'In the back on the left'. / Great! 'In fondo a sinistra' translates to 'In the back on the left'.",
-      "incorrect": "Non proprio. 'In fondo a sinistra' è 'In the back on the left'. / Not quite. 'In fondo a sinistra' is 'In the back on the left'."
-    }
-  },
-  {
-    "id": "s41-p27",
-    "type": "phrase",
-    "choicesItalian": [
-      "Dove sono i camerini?",
-      "Solo contanti",
-      "Vado a controllare",
-      "In saldo"
-    ],
-    "choicesEnglish": [
-      "Where are the fitting rooms?",
-      "Only cash",
-      "I'll go check",
-      "On sale"
-    ],
-    "correctAnswerItalian": "Vado a controllare",
-    "correctAnswerEnglish": "I'll go check",
-    "feedback": {
-      "correct": "Ottimo! 'Vado a controllare' si traduce 'I'll go check'. / Great! 'Vado a controllare' translates to 'I'll go check'.",
-      "incorrect": "Non proprio. 'Vado a controllare' è 'I'll go check'. / Not quite. 'Vado a controllare' is 'I'll go check'."
-    }
-  },
-  {
-    "id": "s41-p28",
-    "type": "phrase",
-    "choicesItalian": [
-      "Elegante ma informale",
-      "Giacca estiva",
-      "Veste piccolo",
-      "In saldo"
-    ],
-    "choicesEnglish": [
-      "Elegant but informal",
-      "Summer jacket",
-      "It runs small",
-      "On sale"
-    ],
-    "correctAnswerItalian": "Elegante ma informale",
-    "correctAnswerEnglish": "Elegant but informal",
-    "feedback": {
-      "correct": "Ottimo! 'Elegante ma informale' si traduce 'Elegant but informal'. / Great! 'Elegante ma informale' translates to 'Elegant but informal'.",
-      "incorrect": "Non proprio. 'Elegante ma informale' è 'Elegant but informal'. / Not quite. 'Elegante ma informale' is 'Elegant but informal'."
-    }
-  },
-  {
-    "id": "s41-p29",
-    "type": "phrase",
-    "choicesItalian": [
-      "Che taglia?",
-      "Di moda quest'anno",
-      "Maniche lunghe",
-      "Lo sconto"
-    ],
-    "choicesEnglish": [
-      "What size?",
-      "Fashionable this year",
-      "Long sleeves",
-      "The discount"
-    ],
-    "correctAnswerItalian": "Di moda quest'anno",
-    "correctAnswerEnglish": "Fashionable this year",
-    "feedback": {
-      "correct": "Ottimo! 'Di moda quest'anno' si traduce 'Fashionable this year'. / Great! 'Di moda quest'anno' translates to 'Fashionable this year'.",
-      "incorrect": "Non proprio. 'Di moda quest'anno' è 'Fashionable this year'. / Not quite. 'Di moda quest'anno' is 'Fashionable this year'."
-    }
-  },
-  {
-    "id": "s41-p30",
-    "type": "phrase",
-    "choicesItalian": [
-      "Provatelo pure",
-      "Abito floreale",
-      "Borsa di pelle",
-      "Seta naturale"
-    ],
-    "choicesEnglish": [
-      "Go ahead and try it",
-      "Floral dress",
-      "Leather bag",
-      "Natural silk"
-    ],
-    "correctAnswerItalian": "Abito floreale",
-    "correctAnswerEnglish": "Floral dress",
-    "feedback": {
-      "correct": "Ottimo! 'Abito floreale' si traduce 'Floral dress'. / Great! 'Abito floreale' translates to 'Floral dress'.",
-      "incorrect": "Non proprio. 'Abito floreale' è 'Floral dress'. / Not quite. 'Abito floreale' is 'Floral dress'."
-    }
-  },
-  {
-    "id": "s41-p31",
-    "type": "phrase",
-    "choicesItalian": [
-      "Quanto costa?",
-      "Vicino alle giacche",
-      "Senza maniche",
-      "Camicia di lino"
-    ],
-    "choicesEnglish": [
-      "How much does it cost?",
-      "Near the jackets",
-      "Sleeveless",
-      "Linen shirt"
-    ],
-    "correctAnswerItalian": "Camicia di lino",
-    "correctAnswerEnglish": "Linen shirt",
-    "feedback": {
-      "correct": "Ottimo! 'Camicia di lino' si traduce 'Linen shirt'. / Great! 'Camicia di lino' translates to 'Linen shirt'.",
-      "incorrect": "Non proprio. 'Camicia di lino' è 'Linen shirt'. / Not quite. 'Camicia di lino' is 'Linen shirt'."
-    }
-  },
-  {
-    "id": "s41-p32",
-    "type": "phrase",
-    "choicesItalian": [
-      "Taglia media",
-      "Pagamento con carta",
-      "Prezzo finale",
-      "Venti per cento"
-    ],
-    "choicesEnglish": [
-      "Medium size",
-      "Payment by card",
-      "Final price",
-      "Twenty percent"
-    ],
-    "correctAnswerItalian": "Venti per cento",
-    "correctAnswerEnglish": "Twenty percent",
-    "feedback": {
-      "correct": "Ottimo! 'Venti per cento' si traduce 'Twenty percent'. / Great! 'Venti per cento' translates to 'Twenty percent'.",
-      "incorrect": "Non proprio. 'Venti per cento' è 'Twenty percent'. / Not quite. 'Venti per cento' is 'Twenty percent'."
-    }
-  },
-  {
-    "id": "s41-p33",
-    "type": "phrase",
-    "choicesItalian": [
-      "Celeste chiaro",
-      "Sconto del 20%",
-      "Cerco un abito",
-      "In fondo a sinistra"
-    ],
-    "choicesEnglish": [
-      "Light blue",
-      "20% discount",
-      "I'm looking for a dress",
-      "In the back on the left"
-    ],
-    "correctAnswerItalian": "Sconto del 20%",
-    "correctAnswerEnglish": "20% discount",
-    "feedback": {
-      "correct": "Ottimo! 'Sconto del 20%' si traduce '20% discount'. / Great! 'Sconto del 20%' translates to '20% discount'.",
-      "incorrect": "Non proprio. 'Sconto del 20%' è '20% discount'. / Not quite. 'Sconto del 20%' is '20% discount'."
-    }
-  },
-  {
-    "id": "s41-p34",
-    "type": "phrase",
-    "choicesItalian": [
-      "Sciarpa di lana",
-      "Solo contanti",
-      "Celeste chiaro",
-      "Ottimo prezzo"
-    ],
-    "choicesEnglish": [
-      "Woolen scarf",
-      "Only cash",
-      "Light blue",
-      "Great price"
-    ],
-    "correctAnswerItalian": "Celeste chiaro",
-    "correctAnswerEnglish": "Light blue",
-    "feedback": {
-      "correct": "Ottimo! 'Celeste chiaro' si traduce 'Light blue'. / Great! 'Celeste chiaro' translates to 'Light blue'.",
-      "incorrect": "Non proprio. 'Celeste chiaro' è 'Light blue'. / Not quite. 'Celeste chiaro' is 'Light blue'."
-    }
-  },
-  {
-    "id": "s41-p35",
-    "type": "phrase",
-    "choicesItalian": [
-      "In saldo",
-      "Ottimo prezzo",
-      "Troppo stretto",
-      "Abito floreale"
-    ],
-    "choicesEnglish": [
-      "On sale",
-      "Great price",
-      "Too tight",
-      "Floral dress"
-    ],
-    "correctAnswerItalian": "Ottimo prezzo",
-    "correctAnswerEnglish": "Great price",
-    "feedback": {
-      "correct": "Ottimo! 'Ottimo prezzo' si traduce 'Great price'. / Great! 'Ottimo prezzo' translates to 'Great price'.",
-      "incorrect": "Non proprio. 'Ottimo prezzo' è 'Great price'. / Not quite. 'Ottimo prezzo' is 'Great price'."
-    }
-  },
-  {
-    "id": "s41-p36",
-    "type": "phrase",
-    "choicesItalian": [
-      "Elegante ma informale",
-      "Prezzo finale",
-      "Dove sono i camerini?",
-      "Veste bene"
-    ],
-    "choicesEnglish": [
-      "Elegant but informal",
-      "Final price",
-      "Where are the fitting rooms?",
-      "It fits well"
-    ],
-    "correctAnswerItalian": "Veste bene",
-    "correctAnswerEnglish": "It fits well",
-    "feedback": {
-      "correct": "Ottimo! 'Veste bene' si traduce 'It fits well'. / Great! 'Veste bene' translates to 'It fits well'.",
-      "incorrect": "Non proprio. 'Veste bene' è 'It fits well'. / Not quite. 'Veste bene' is 'It fits well'."
-    }
-  },
-  {
-    "id": "s41-p37",
-    "type": "phrase",
-    "choicesItalian": [
-      "Solo contanti",
-      "Quanto costa?",
-      "Seta naturale",
-      "Veste piccolo"
-    ],
-    "choicesEnglish": [
-      "Only cash",
-      "How much does it cost?",
-      "Natural silk",
-      "It runs small"
-    ],
-    "correctAnswerItalian": "Veste piccolo",
-    "correctAnswerEnglish": "It runs small",
-    "feedback": {
-      "correct": "Ottimo! 'Veste piccolo' si traduce 'It runs small'. / Great! 'Veste piccolo' translates to 'It runs small'.",
-      "incorrect": "Non proprio. 'Veste piccolo' è 'It runs small'. / Not quite. 'Veste piccolo' is 'It runs small'."
-    }
-  },
-  {
-    "id": "s41-p38",
-    "type": "phrase",
-    "choicesItalian": [
-      "Solo bianco",
-      "Dove sono i camerini?",
-      "Veste grande",
-      "Veste piccolo"
-    ],
-    "choicesEnglish": [
-      "Only white",
-      "Where are the fitting rooms?",
-      "It runs large",
-      "It runs small"
-    ],
-    "correctAnswerItalian": "Veste grande",
-    "correctAnswerEnglish": "It runs large",
-    "feedback": {
-      "correct": "Ottimo! 'Veste grande' si traduce 'It runs large'. / Great! 'Veste grande' translates to 'It runs large'.",
-      "incorrect": "Non proprio. 'Veste grande' è 'It runs large'. / Not quite. 'Veste grande' is 'It runs large'."
-    }
-  },
-  {
-    "id": "s41-p39",
-    "type": "phrase",
-    "choicesItalian": [
-      "Abito floreale",
-      "Posso cambiare?",
-      "Elegante ma informale",
-      "Sciarpa di lana"
-    ],
-    "choicesEnglish": [
-      "Floral dress",
-      "Can I exchange it?",
-      "Elegant but informal",
-      "Woolen scarf"
-    ],
-    "correctAnswerItalian": "Posso cambiare?",
-    "correctAnswerEnglish": "Can I exchange it?",
-    "feedback": {
-      "correct": "Ottimo! 'Posso cambiare?' si traduce 'Can I exchange it?'. / Great! 'Posso cambiare?' translates to 'Can I exchange it?'.",
-      "incorrect": "Non proprio. 'Posso cambiare?' è 'Can I exchange it?'. / Not quite. 'Posso cambiare?' is 'Can I exchange it?'."
-    }
-  },
-  {
-    "id": "s41-p40",
-    "type": "phrase",
-    "choicesItalian": [
-      "Ottimo prezzo",
-      "Quanto costa?",
-      "Veste bene",
-      "Ho lo scontrino"
-    ],
-    "choicesEnglish": [
-      "Great price",
-      "How much does it cost?",
-      "It fits well",
-      "I have the receipt"
-    ],
-    "correctAnswerItalian": "Ho lo scontrino",
-    "correctAnswerEnglish": "I have the receipt",
-    "feedback": {
-      "correct": "Ottimo! 'Ho lo scontrino' si traduce 'I have the receipt'. / Great! 'Ho lo scontrino' translates to 'I have the receipt'.",
-      "incorrect": "Non proprio. 'Ho lo scontrino' è 'I have the receipt'. / Not quite. 'Ho lo scontrino' is 'I have the receipt'."
-    }
-  },
-  {
-    "id": "s41-p41",
-    "type": "phrase",
-    "choicesItalian": [
-      "Pagamento con carta",
-      "Camicia di lino",
-      "Ho lo scontrino",
-      "Taglia 42"
-    ],
-    "choicesEnglish": [
-      "Payment by card",
-      "Linen shirt",
-      "I have the receipt",
-      "Size 42"
-    ],
-    "correctAnswerItalian": "Pagamento con carta",
-    "correctAnswerEnglish": "Payment by card",
-    "feedback": {
-      "correct": "Ottimo! 'Pagamento con carta' si traduce 'Payment by card'. / Great! 'Pagamento con carta' translates to 'Payment by card'.",
-      "incorrect": "Non proprio. 'Pagamento con carta' è 'Payment by card'. / Not quite. 'Pagamento con carta' is 'Payment by card'."
-    }
-  },
-  {
-    "id": "s41-p42",
-    "type": "phrase",
-    "choicesItalian": [
-      "Solo contanti",
-      "Maniche lunghe",
-      "Veste grande",
-      "Giacca estiva"
-    ],
-    "choicesEnglish": [
-      "Only cash",
-      "Long sleeves",
-      "It runs large",
-      "Summer jacket"
-    ],
-    "correctAnswerItalian": "Solo contanti",
-    "correctAnswerEnglish": "Only cash",
-    "feedback": {
-      "correct": "Ottimo! 'Solo contanti' si traduce 'Only cash'. / Great! 'Solo contanti' translates to 'Only cash'.",
-      "incorrect": "Non proprio. 'Solo contanti' è 'Only cash'. / Not quite. 'Solo contanti' is 'Only cash'."
-    }
-  },
-  {
-    "id": "s41-p43",
-    "type": "phrase",
-    "choicesItalian": [
-      "Borsa di pelle",
-      "Quanto costa?",
-      "Una taglia in meno",
-      "Taglia media"
-    ],
-    "choicesEnglish": [
-      "Leather bag",
-      "How much does it cost?",
-      "A size down",
-      "Medium size"
-    ],
-    "correctAnswerItalian": "Borsa di pelle",
-    "correctAnswerEnglish": "Leather bag",
-    "feedback": {
-      "correct": "Ottimo! 'Borsa di pelle' si traduce 'Leather bag'. / Great! 'Borsa di pelle' translates to 'Leather bag'.",
-      "incorrect": "Non proprio. 'Borsa di pelle' è 'Leather bag'. / Not quite. 'Borsa di pelle' is 'Leather bag'."
-    }
-  },
-  {
-    "id": "s41-p44",
-    "type": "phrase",
-    "choicesItalian": [
-      "Sciarpa di lana",
-      "Abito floreale",
-      "Cintura nera",
-      "Una taglia in meno"
-    ],
-    "choicesEnglish": [
-      "Woolen scarf",
-      "Floral dress",
-      "Black belt",
-      "A size down"
-    ],
-    "correctAnswerItalian": "Cintura nera",
-    "correctAnswerEnglish": "Black belt",
-    "feedback": {
-      "correct": "Ottimo! 'Cintura nera' si traduce 'Black belt'. / Great! 'Cintura nera' translates to 'Black belt'.",
-      "incorrect": "Non proprio. 'Cintura nera' è 'Black belt'. / Not quite. 'Cintura nera' is 'Black belt'."
-    }
-  },
-  {
-    "id": "s41-p45",
-    "type": "phrase",
-    "choicesItalian": [
-      "Elegante ma informale",
-      "Ottimo prezzo",
-      "Veste grande",
-      "Giacca estiva"
-    ],
-    "choicesEnglish": [
-      "Elegant but informal",
-      "Great price",
-      "It runs large",
-      "Summer jacket"
-    ],
-    "correctAnswerItalian": "Giacca estiva",
-    "correctAnswerEnglish": "Summer jacket",
-    "feedback": {
-      "correct": "Ottimo! 'Giacca estiva' si traduce 'Summer jacket'. / Great! 'Giacca estiva' translates to 'Summer jacket'.",
-      "incorrect": "Non proprio. 'Giacca estiva' è 'Summer jacket'. / Not quite. 'Giacca estiva' is 'Summer jacket'."
-    }
-  },
-  {
-    "id": "s41-p46",
-    "type": "phrase",
-    "choicesItalian": [
-      "Camerini liberi",
-      "Tutto esaurito",
-      "Cintura nera",
-      "Cappotto invernale"
-    ],
-    "choicesEnglish": [
-      "Free fitting rooms",
-      "Sold out",
-      "Black belt",
-      "Winter coat"
-    ],
-    "correctAnswerItalian": "Cappotto invernale",
-    "correctAnswerEnglish": "Winter coat",
-    "feedback": {
-      "correct": "Ottimo! 'Cappotto invernale' si traduce 'Winter coat'. / Great! 'Cappotto invernale' translates to 'Winter coat'.",
-      "incorrect": "Non proprio. 'Cappotto invernale' è 'Winter coat'. / Not quite. 'Cappotto invernale' is 'Winter coat'."
-    }
-  },
-  {
-    "id": "s41-p47",
-    "type": "phrase",
-    "choicesItalian": [
-      "Cappotto invernale",
-      "Sciarpa di lana",
-      "Guanti caldi",
-      "Che taglia?"
-    ],
-    "choicesEnglish": [
-      "Winter coat",
-      "Woolen scarf",
-      "Warm gloves",
-      "What size?"
-    ],
-    "correctAnswerItalian": "Sciarpa di lana",
-    "correctAnswerEnglish": "Woolen scarf",
-    "feedback": {
-      "correct": "Ottimo! 'Sciarpa di lana' si traduce 'Woolen scarf'. / Great! 'Sciarpa di lana' translates to 'Woolen scarf'.",
-      "incorrect": "Non proprio. 'Sciarpa di lana' è 'Woolen scarf'. / Not quite. 'Sciarpa di lana' is 'Woolen scarf'."
-    }
-  },
-  {
-    "id": "s41-p48",
-    "type": "phrase",
-    "choicesItalian": [
-      "Taglia 42",
-      "Che taglia?",
-      "Guanti caldi",
-      "In magazzino"
-    ],
-    "choicesEnglish": [
-      "Size 42",
-      "What size?",
-      "Warm gloves",
-      "In stock"
-    ],
-    "correctAnswerItalian": "Guanti caldi",
-    "correctAnswerEnglish": "Warm gloves",
-    "feedback": {
-      "correct": "Ottimo! 'Guanti caldi' si traduce 'Warm gloves'. / Great! 'Guanti caldi' translates to 'Warm gloves'.",
-      "incorrect": "Non proprio. 'Guanti caldi' è 'Warm gloves'. / Not quite. 'Guanti caldi' is 'Warm gloves'."
-    }
-  },
-  {
-    "id": "s41-p49",
-    "type": "phrase",
-    "choicesItalian": [
-      "Camerini liberi",
-      "Una taglia in meno",
-      "Seta naturale",
-      "Solo bianco"
-    ],
-    "choicesEnglish": [
-      "Free fitting rooms",
-      "A size down",
-      "Natural silk",
-      "Only white"
-    ],
-    "correctAnswerItalian": "Seta naturale",
-    "correctAnswerEnglish": "Natural silk",
-    "feedback": {
-      "correct": "Ottimo! 'Seta naturale' si traduce 'Natural silk'. / Great! 'Seta naturale' translates to 'Natural silk'.",
-      "incorrect": "Non proprio. 'Seta naturale' è 'Natural silk'. / Not quite. 'Seta naturale' is 'Natural silk'."
-    }
-  },
-  {
-    "id": "s41-p50",
-    "type": "phrase",
-    "choicesItalian": [
-      "Provatelo pure",
-      "Camerini liberi",
-      "Quanto costa?",
-      "Posso provare?"
-    ],
-    "choicesEnglish": [
-      "Go ahead and try it",
-      "Free fitting rooms",
-      "How much does it cost?",
-      "Can I try it on?"
-    ],
-    "correctAnswerItalian": "Provatelo pure",
-    "correctAnswerEnglish": "Go ahead and try it",
-    "feedback": {
-      "correct": "Ottimo! 'Provatelo pure' si traduce 'Go ahead and try it'. / Great! 'Provatelo pure' translates to 'Go ahead and try it'.",
-      "incorrect": "Non proprio. 'Provatelo pure' è 'Go ahead and try it'. / Not quite. 'Provatelo pure' is 'Go ahead and try it'."
+      "correctItalian": "Perfetto! Un modo per risparmiare se sei uno studente.",
+      "incorrectItalian": "No, 'studenti' è il gruppo di persone che riceve spesso sconti.",
+      "correctEnglish": "Perfect! A way to save if you are a student.",
+      "incorrectEnglish": "No, 'students' is the group of people who often receive discounts."
     }
   }
 ]
