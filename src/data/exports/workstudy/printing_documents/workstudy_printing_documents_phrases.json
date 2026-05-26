@@ -1,87 +1,17 @@
 [
   {
-    "id": "s69-p3",
-    "italian": "Quante pagine sono?",
-    "english": "How many pages are they?",
-    "type": "phrase",
-    "choices": [
-      "Ho una chiavetta USB.",
-      "Quante pagine sono?",
-      "Voglio la stampa fronte retro.",
-      "Può scannerizzare questo?"
-    ],
-    "correctAnswer": "Quante pagine sono?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Quante pagine sono?\"."
-    }
-  },
-  {
-    "id": "s69-p6",
-    "italian": "Può scannerizzare questo?",
-    "english": "Can you scan this?",
-    "type": "phrase",
-    "choices": [
-      "Ho una chiavetta USB.",
-      "Quante pagine sono?",
-      "Può scannerizzare questo?",
-      "In bianco e nero o a colori?"
-    ],
-    "correctAnswer": "Può scannerizzare questo?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Può scannerizzare questo?\"."
-    }
-  },
-  {
-    "id": "s69-p4",
-    "italian": "Ho una chiavetta USB.",
-    "english": "I have a USB stick.",
-    "type": "phrase",
-    "choices": [
-      "Voglio la stampa fronte retro.",
-      "Ho una chiavetta USB.",
-      "Quante pagine sono?",
-      "Può scannerizzare questo?"
-    ],
-    "correctAnswer": "Ho una chiavetta USB.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho una chiavetta USB.\"."
-    }
-  },
-  {
     "id": "s69-p1",
     "italian": "Devo stampare un file.",
     "english": "I need to print a file.",
     "type": "phrase",
-    "choices": [
-      "Devo stampare un file.",
-      "Può scannerizzare questo?",
-      "Voglio la stampa fronte retro.",
-      "Quante pagine sono?"
-    ],
+    "choicesItalian": ["Devo stampare un file.", "Posso usare lo scanner?", "Dov'è il bagno?", "Voglio un caffè."],
+    "choicesEnglish": ["I need to print a file.", "Can I use the scanner?", "Where is the bathroom?", "I want a coffee."],
     "correctAnswer": "Devo stampare un file.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Devo stampare un file.\"."
-    }
-  },
-  {
-    "id": "s69-p5",
-    "italian": "Voglio la stampa fronte retro.",
-    "english": "I want double-sided printing.",
-    "type": "phrase",
-    "choices": [
-      "Può scannerizzare questo?",
-      "Quante pagine sono?",
-      "In bianco e nero o a colori?",
-      "Voglio la stampa fronte retro."
-    ],
-    "correctAnswer": "Voglio la stampa fronte retro.",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Voglio la stampa fronte retro.\"."
+      "correctItalian": "Esatto! Tipica frase per iniziare.",
+      "incorrectItalian": "No, significa 'I need to print a file'.",
+      "correctEnglish": "Correct! A typical phrase to start.",
+      "incorrectEnglish": "No, it means 'I need to print a file'."
     }
   },
   {
@@ -89,16 +19,884 @@
     "italian": "In bianco e nero o a colori?",
     "english": "In black and white or in color?",
     "type": "phrase",
-    "choices": [
-      "In bianco e nero o a colori?",
-      "Devo stampare un file.",
-      "Voglio la stampa fronte retro.",
-      "Quante pagine sono?"
-    ],
+    "choicesItalian": ["In bianco e nero o a colori?", "Grande o piccolo?", "Sì o no?", "Fronte o retro?"],
+    "choicesEnglish": ["In black and white or in color?", "Large or small?", "Yes or no?", "Front or back?"],
     "correctAnswer": "In bianco e nero o a colori?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"In bianco e nero o a colori?\"."
+      "correctItalian": "Giusto! Una scelta comune.",
+      "incorrectItalian": "No, chiede se vuoi i colori.",
+      "correctEnglish": "Right! A common choice.",
+      "incorrectEnglish": "No, it asks if you want colors."
+    }
+  },
+  {
+    "id": "s69-p3",
+    "italian": "Quanto costa una copia?",
+    "english": "How much does a copy cost?",
+    "type": "phrase",
+    "choicesItalian": ["Quanto costa una copia?", "Dov'è la stampante?", "Che ore sono?", "Come ti chiami?"],
+    "choicesEnglish": ["How much does a copy cost?", "Where is the printer?", "What time is it?", "What is your name?"],
+    "correctAnswer": "Quanto costa una copy?",
+    "feedback": {
+      "correctItalian": "Perfetto! Chiedere il prezzo è importante.",
+      "incorrectItalian": "No, chiede il costo della copia.",
+      "correctEnglish": "Perfect! Asking the price is important.",
+      "incorrectEnglish": "No, it asks for the cost of the copy."
+    }
+  },
+  {
+    "id": "s69-p4",
+    "italian": "Ho una chiavetta USB.",
+    "english": "I have a USB stick.",
+    "type": "phrase",
+    "choicesItalian": ["Ho una chiavetta USB.", "Ho un libro.", "Non ho documenti.", "Dov'è il computer?"],
+    "choicesEnglish": ["I have a USB stick.", "I have a book.", "I don't have documents.", "Where is the computer?"],
+    "correctAnswer": "Ho una chiavetta USB.",
+    "feedback": {
+      "correctItalian": "Ottimo! La chiavetta è utile per i file.",
+      "incorrectItalian": "No, significa avere una chiavetta USB.",
+      "correctEnglish": "Great! The stick is useful for files.",
+      "incorrectEnglish": "No, it means having a USB stick."
+    }
+  },
+  {
+    "id": "s69-p5",
+    "italian": "Voglio la stampa fronte retro.",
+    "english": "I want double-sided printing.",
+    "type": "phrase",
+    "choicesItalian": ["Voglio la stampa fronte retro.", "Voglio solo una pagina.", "Non voglio stampare.", "Può scannerizzare?"],
+    "choicesEnglish": ["I want double-sided printing.", "I only want one page.", "I don't want to print.", "Can you scan?"],
+    "correctAnswer": "Voglio la stampa fronte retro.",
+    "feedback": {
+      "correctItalian": "Esatto! Per risparmiare carta.",
+      "incorrectItalian": "No, si riferisce a entrambi i lati.",
+      "correctEnglish": "Correct! To save paper.",
+      "incorrectEnglish": "No, it refers to both sides."
+    }
+  },
+  {
+    "id": "s69-p6",
+    "italian": "La carta è finita.",
+    "english": "The paper is finished.",
+    "type": "phrase",
+    "choicesItalian": ["La carta è finita.", "La stampante è rotta.", "Il toner è pieno.", "Manca il file."],
+    "choicesEnglish": ["The paper is finished.", "The printer is broken.", "The toner is full.", "The file is missing."],
+    "correctAnswer": "La carta è finita.",
+    "feedback": {
+      "correctItalian": "Giusto! Un problema comune.",
+      "incorrectItalian": "No, significa che non ci sono più fogli.",
+      "correctEnglish": "Right! A common problem.",
+      "incorrectEnglish": "No, it means there are no more sheets."
+    }
+  },
+  {
+    "id": "s69-p7",
+    "italian": "Si è inceppata la carta.",
+    "english": "The paper is jammed.",
+    "type": "phrase",
+    "choicesItalian": ["Si è inceppata la carta.", "Il file è pronto.", "La luce è verde.", "Scegli il formato."],
+    "choicesEnglish": ["The paper is jammed.", "The file is ready.", "The light is green.", "Choose the format."],
+    "correctAnswer": "Si è inceppata la carta.",
+    "feedback": {
+      "correctItalian": "Perfetto! Quando il foglio resta bloccato.",
+      "incorrectItalian": "No, si riferisce a un inceppamento.",
+      "correctEnglish": "Perfect! When the sheet gets stuck.",
+      "incorrectEnglish": "No, it refers to a jam."
+    }
+  },
+  {
+    "id": "s69-p8",
+    "italian": "Può aiutarmi, per favore?",
+    "english": "Can you help me, please?",
+    "type": "phrase",
+    "choicesItalian": ["Può aiutarmi, per favore?", "Posso andare via?", "Cosa mangiamo?", "Quanto costa questo?"],
+    "choicesEnglish": ["Can you help me, please?", "Can I go away?", "What are we eating?", "How much is this?"],
+    "correctAnswer": "Può aiutarmi, per favore?",
+    "feedback": {
+      "correctItalian": "Esatto! Molto educato.",
+      "incorrectItalian": "No, è una richiesta di aiuto.",
+      "correctEnglish": "Correct! Very polite.",
+      "incorrectEnglish": "No, it's a request for help."
+    }
+  },
+  {
+    "id": "s69-p9",
+    "italian": "Devo fare una scansione.",
+    "english": "I need to make a scan.",
+    "type": "phrase",
+    "choicesItalian": ["Devo fare una scansione.", "Devo scrivere un'email.", "Voglio una fotocopia.", "Dov'è lo scanner?"],
+    "choicesEnglish": ["I need to make a scan.", "I need to write an email.", "I want a photocopy.", "Where is the scanner?"],
+    "correctAnswer": "Devo fare una scansione.",
+    "feedback": {
+      "correctItalian": "Ottimo! Usare lo scanner.",
+      "incorrectItalian": "No, si riferisce alla scansione.",
+      "correctEnglish": "Great! Using the scanner.",
+      "incorrectEnglish": "No, it refers to scanning."
+    }
+  },
+  {
+    "id": "s69-p10",
+    "italian": "Invia il file alla mia email.",
+    "english": "Send the file to my email.",
+    "type": "phrase",
+    "choicesItalian": ["Invia il file alla mia email.", "Salva sulla chiavetta.", "Stampa tutto ora.", "Chiudi il computer."],
+    "choicesEnglish": ["Send the file to my email.", "Save to the stick.", "Print everything now.", "Close the computer."],
+    "correctAnswer": "Invia il file alla mia email.",
+    "feedback": {
+      "correctItalian": "Giusto! Un modo per salvare documenti.",
+      "incorrectItalian": "No, significa mandare via email.",
+      "correctEnglish": "Right! A way to save documents.",
+      "incorrectEnglish": "No, it means sending via email."
+    }
+  },
+  {
+    "id": "s69-p11",
+    "italian": "Ho finito il credito.",
+    "english": "I'm out of credit.",
+    "type": "phrase",
+    "choicesItalian": ["Ho finito il credito.", "Ho molti soldi.", "La tessera è nuova.", "Non ho la chiave."],
+    "choicesEnglish": ["I'm out of credit.", "I have a lot of money.", "The card is new.", "I don't have the key."],
+    "correctAnswer": "Ho finito il credito.",
+    "feedback": {
+      "correctItalian": "Perfetto! Quando servono altri soldi sulla tessera.",
+      "incorrectItalian": "No, significa che il credito è zero.",
+      "correctEnglish": "Perfect! When more money is needed on the card.",
+      "incorrectEnglish": "No, it means credit is zero."
+    }
+  },
+  {
+    "id": "s69-p12",
+    "italian": "Dove sono i fogli?",
+    "english": "Where is the paper?",
+    "type": "phrase",
+    "choicesItalian": ["Dove sono i fogli?", "Dov'è l'inchiostro?", "Quanto costa?", "È rotto?"],
+    "choicesEnglish": ["Where is the paper?", "Where is the ink?", "How much is it?", "Is it broken?"],
+    "correctAnswer": "Dove sono i fogli?",
+    "feedback": {
+      "correctItalian": "Esatto! Cercare la carta da inserire.",
+      "incorrectItalian": "No, chiede la posizione dei fogli.",
+      "correctEnglish": "Correct! Looking for paper to insert.",
+      "incorrectEnglish": "No, it asks for the paper's location."
+    }
+  },
+  {
+    "id": "s69-p13",
+    "italian": "Un attimo, controllo io.",
+    "english": "One moment, I'll check.",
+    "type": "phrase",
+    "choicesItalian": ["Un attimo, controllo io.", "Vado via subito.", "Non lo so.", "Chiama il tecnico."],
+    "choicesEnglish": ["One moment, I'll check.", "I'm leaving right away.", "I don't know.", "Call the technician."],
+    "correctAnswer": "Un attimo, controllo io.",
+    "feedback": {
+      "correctItalian": "Giusto! Frase molto comune in ufficio.",
+      "incorrectItalian": "No, significa 'I'll check'.",
+      "correctEnglish": "Right! Very common phrase in the office.",
+      "incorrectEnglish": "No, it means 'I'll check'."
+    }
+  },
+  {
+    "id": "s69-p14",
+    "italian": "Accetta monete?",
+    "english": "Does it accept coins?",
+    "type": "phrase",
+    "choicesItalian": ["Accetta monete?", "Vuole la carta?", "Quanto costa?", "È aperta?"],
+    "choicesEnglish": ["Does it accept coins?", "Do you want the card?", "How much is it?", "Is it open?"],
+    "correctAnswer": "Accetta monete?",
+    "feedback": {
+      "correctItalian": "Perfetto! Per pagare alla macchinetta.",
+      "incorrectItalian": "No, chiede se accetta gli spiccioli.",
+      "correctEnglish": "Perfect! To pay at the machine.",
+      "incorrectEnglish": "No, it asks if it accepts coins."
+    }
+  },
+  {
+    "id": "s69-p15",
+    "italian": "Solo banconote, mi dispiace.",
+    "english": "Only banknotes, I'm sorry.",
+    "type": "phrase",
+    "choicesItalian": ["Solo banconote, mi dispiace.", "Prego, entri pure.", "Non ho soldi.", "Accetto tutto."],
+    "choicesEnglish": ["Only banknotes, I'm sorry.", "Please, come in.", "I don't have money.", "I accept everything."],
+    "correctAnswer": "Solo banconote, mi dispiace.",
+    "feedback": {
+      "correctItalian": "Esatto! Informazione sul pagamento.",
+      "incorrectItalian": "No, esclude le monete.",
+      "correctEnglish": "Correct! Payment information.",
+      "incorrectEnglish": "No, it excludes coins."
+    }
+  },
+  {
+    "id": "s69-p16",
+    "italian": "Può cambiarmi dieci euro?",
+    "english": "Can you change ten euros for me?",
+    "type": "phrase",
+    "choicesItalian": ["Può cambiarmi dieci euro?", "Mi presti dieci euro?", "Quanto costa?", "Ho dieci euro."],
+    "choicesEnglish": ["Can you change ten euros for me?", "Can you lend me ten euros?", "How much is it?", "I have ten euros."],
+    "correctAnswer": "Può cambiarmi dieci euro?",
+    "feedback": {
+      "correctItalian": "Ottimo! Chiedere monete in cambio.",
+      "incorrectItalian": "No, è una richiesta di cambio.",
+      "correctEnglish": "Great! Asking for coins in exchange.",
+      "incorrectEnglish": "No, it's a request for change."
+    }
+  },
+  {
+    "id": "s69-p17",
+    "italian": "Appoggia la tessera sul lettore.",
+    "english": "Place the card on the reader.",
+    "type": "phrase",
+    "choicesItalian": ["Appoggia la tessera sul lettore.", "Inserisci il codice.", "Chiama il tecnico.", "Apri il vassoio."],
+    "choicesEnglish": ["Place the card on the reader.", "Enter the code.", "Call the technician.", "Open the tray."],
+    "correctAnswer": "Appoggia la tessera sul lettore.",
+    "feedback": {
+      "correctItalian": "Giusto! Istruzione per usare la tessera.",
+      "incorrectItalian": "No, si riferisce al lettore.",
+      "correctEnglish": "Right! Instruction for using the card.",
+      "incorrectEnglish": "No, it refers to the reader."
+    }
+  },
+  {
+    "id": "s69-p18",
+    "italian": "Chiudi il coperchio bene.",
+    "english": "Close the lid well.",
+    "type": "phrase",
+    "choicesItalian": ["Chiudi il coperchio bene.", "Apri la finestra.", "Spegni la luce.", "Scegli il file."],
+    "choicesEnglish": ["Close the lid well.", "Open the window.", "Turn off the light.", "Choose the file."],
+    "correctAnswer": "Chiudi il coperchio bene.",
+    "feedback": {
+      "correctItalian": "Perfetto! Importante per le fotocopie.",
+      "incorrectItalian": "No, significa chiudere il sopra.",
+      "correctEnglish": "Perfect! Important for photocopies.",
+      "incorrectEnglish": "No, it means closing the top."
+    }
+  },
+  {
+    "id": "s69-p19",
+    "italian": "È uscito un foglio tutto nero.",
+    "english": "A completely black sheet came out.",
+    "type": "phrase",
+    "choicesItalian": ["È uscito un foglio tutto nero.", "La stampa è perfetta.", "Il foglio è bianco.", "Manca l'inchiostro."],
+    "choicesEnglish": ["A completely black sheet came out.", "The print is perfect.", "The sheet is white.", "Ink is missing."],
+    "correctAnswer": "È uscito un foglio tutto nero.",
+    "feedback": {
+      "correctItalian": "Esatto! Spesso succede se il coperchio è aperto.",
+      "incorrectItalian": "No, descrive un errore di stampa.",
+      "correctEnglish": "Correct! Often happens if the lid is open.",
+      "incorrectEnglish": "No, it describes a printing error."
+    }
+  },
+  {
+    "id": "s69-p20",
+    "italian": "Mi servono tre copie.",
+    "english": "I need three copies.",
+    "type": "phrase",
+    "choicesItalian": ["Mi servono tre copie.", "Ho solo una pagina.", "Voglio stampare due volte.", "Dov'è lo scanner?"],
+    "choicesEnglish": ["I need three copies.", "I only have one page.", "I want to print twice.", "Where is the scanner?"],
+    "correctAnswer": "Mi servono tre copie.",
+    "feedback": {
+      "correctItalian": "Ottimo! Specificare la quantità.",
+      "incorrectItalian": "No, indica il numero di copie.",
+      "correctEnglish": "Great! Specifying the quantity.",
+      "incorrectEnglish": "No, it indicates the number of copies."
+    }
+  },
+  {
+    "id": "s69-p21",
+    "italian": "Formato A4, grazie.",
+    "english": "A4 size, please.",
+    "type": "phrase",
+    "choicesItalian": ["Formato A4, grazie.", "A colori, per favore.", "Solo fronte.", "Due fogli."],
+    "choicesEnglish": ["A4 size, please.", "In color, please.", "Front only.", "Two sheets."],
+    "correctAnswer": "Formato A4, grazie.",
+    "feedback": {
+      "correctItalian": "Giusto! Il formato più comune.",
+      "incorrectItalian": "No, specifica la dimensione.",
+      "correctEnglish": "Right! The most common size.",
+      "incorrectEnglish": "No, it specifies the size."
+    }
+  },
+  {
+    "id": "s69-p22",
+    "italian": "Il toner è scarico.",
+    "english": "The toner is low.",
+    "type": "phrase",
+    "choicesItalian": ["Il toner è scarico.", "La carta è finita.", "Il wifi non va.", "Tutto ok."],
+    "choicesEnglish": ["The toner is low.", "The paper is out.", "The wifi is down.", "Everything is ok."],
+    "correctAnswer": "Il toner è scarico.",
+    "feedback": {
+      "correctItalian": "Perfetto! Quando la stampa viene chiara.",
+      "incorrectItalian": "No, si riferisce al toner.",
+      "correctEnglish": "Perfect! When the print comes out light.",
+      "incorrectEnglish": "No, it refers to the toner."
+    }
+  },
+  {
+    "id": "s69-p23",
+    "italian": "Chiamo il tecnico subito.",
+    "english": "I'll call the technician right away.",
+    "type": "phrase",
+    "choicesItalian": ["Chiamo il tecnico subito.", "Vado a casa ora.", "Non capisco il problema.", "Aspetta un minuto."],
+    "choicesEnglish": ["I'll call the technician right away.", "I'm going home now.", "I don't understand the problem.", "Wait a minute."],
+    "correctAnswer": "Chiamo il tecnico subito.",
+    "feedback": {
+      "correctItalian": "Esatto! Per riparare la macchina.",
+      "incorrectItalian": "No, significa chiamare assistenza.",
+      "correctEnglish": "Correct! To fix the machine.",
+      "incorrectEnglish": "No, it means calling for help."
+    }
+  },
+  {
+    "id": "s69-p24",
+    "italian": "Serve aiuto con lo scanner?",
+    "english": "Do you need help with the scanner?",
+    "type": "phrase",
+    "choicesItalian": ["Serve aiuto con lo scanner?", "Vuoi stampare ora?", "Dov'è il bagno?", "Quanto costa?"],
+    "choicesEnglish": ["Do you need help with the scanner?", "Do you want to print now?", "Where is the bathroom?", "How much is it?"],
+    "correctAnswer": "Serve aiuto con lo scanner?",
+    "feedback": {
+      "correctItalian": "Ottimo! Offrire assistenza.",
+      "incorrectItalian": "No, è una domanda di aiuto.",
+      "correctEnglish": "Great! Offering help.",
+      "incorrectEnglish": "No, it's a question for help."
+    }
+  },
+  {
+    "id": "s69-p25",
+    "italian": "Salva il file come PDF.",
+    "english": "Save the file as a PDF.",
+    "type": "phrase",
+    "choicesItalian": ["Salva il file come PDF.", "Invia un'email.", "Cancella tutto.", "Stampa subito."],
+    "choicesEnglish": ["Save the file as a PDF.", "Send an email.", "Delete everything.", "Print immediately."],
+    "correctAnswer": "Salva il file come PDF.",
+    "feedback": {
+      "correctItalian": "Giusto! Istruzione utile.",
+      "incorrectItalian": "No, specifica il formato di salvataggio.",
+      "correctEnglish": "Right! Useful instruction.",
+      "incorrectEnglish": "No, it specifies the save format."
+    }
+  },
+  {
+    "id": "s69-p26",
+    "italian": "Ecco la tua ricevuta.",
+    "english": "Here is your receipt.",
+    "type": "phrase",
+    "choicesItalian": ["Ecco la tua ricevuta.", "Ecco il tuo file.", "Dov'è la carta?", "Quanto pago?"],
+    "choicesEnglish": ["Here is your receipt.", "Here is your file.", "Where is the paper?", "How much do I pay?"],
+    "correctAnswer": "Ecco la tua ricevuta.",
+    "feedback": {
+      "correctItalian": "Perfetto! Dopo il pagamento.",
+      "incorrectItalian": "No, è lo scontrino.",
+      "correctEnglish": "Perfect! After payment.",
+      "incorrectEnglish": "No, it's the receipt."
+    }
+  },
+  {
+    "id": "s69-p27",
+    "italian": "Non trovo il mio documento.",
+    "english": "I can't find my document.",
+    "type": "phrase",
+    "choicesItalian": ["Non trovo il mio documento.", "Ho perso la chiavetta.", "Il file è qui.", "Tutto pronto."],
+    "choicesEnglish": ["I can't find my document.", "I lost the stick.", "The file is here.", "All ready."],
+    "correctAnswer": "Non trovo il mio documento.",
+    "feedback": {
+      "correctItalian": "Esatto! Un problema di ricerca.",
+      "incorrectItalian": "No, non trova il foglio.",
+      "correctEnglish": "Correct! A search problem.",
+      "incorrectEnglish": "No, can't find the paper."
+    }
+  },
+  {
+    "id": "s69-p28",
+    "italian": "Scegli l'opzione a colori.",
+    "english": "Choose the color option.",
+    "type": "phrase",
+    "choicesItalian": ["Scegli l'opzione a colori.", "Scegli bianco e nero.", "Non stampare niente.", "Chiudi il menù."],
+    "choicesEnglish": ["Choose the color option.", "Choose black and white.", "Don't print anything.", "Close the menu."],
+    "correctAnswer": "Scegli l'opzione a colori.",
+    "feedback": {
+      "correctItalian": "Giusto! Istruzione sul colore.",
+      "incorrectItalian": "No, dice di scegliere i colori.",
+      "correctEnglish": "Right! Instruction on color.",
+      "incorrectEnglish": "No, it says to choose colors."
+    }
+  },
+  {
+    "id": "s69-p29",
+    "italian": "Mancano solo due pagine.",
+    "english": "Only two pages are missing.",
+    "type": "phrase",
+    "choicesItalian": ["Mancano solo due pagine.", "Ho finito tutto.", "Ci sono molti fogli.", "Quanto costa?"],
+    "choicesEnglish": ["Only two pages are missing.", "I've finished everything.", "There are many sheets.", "How much is it?"],
+    "correctAnswer": "Mancano solo due pagine.",
+    "feedback": {
+      "correctItalian": "Ottimo! Per indicare quanto manca.",
+      "incorrectItalian": "No, si riferisce alle pagine mancanti.",
+      "correctEnglish": "Great! To indicate how much is left.",
+      "incorrectEnglish": "No, it refers to missing pages."
+    }
+  },
+  {
+    "id": "s69-p30",
+    "italian": "La stampa è troppo chiara.",
+    "english": "The print is too light.",
+    "type": "phrase",
+    "choicesItalian": ["La stampa è troppo chiara.", "Il foglio è nero.", "Va benissimo così.", "Manca la carta."],
+    "choicesEnglish": ["The print is too light.", "The sheet is black.", "It's fine like this.", "Paper is missing."],
+    "correctAnswer": "La stampa è troppo chiara.",
+    "feedback": {
+      "correctItalian": "Esatto! Spesso succede quando il toner finisce.",
+      "incorrectItalian": "No, descrive un problema di intensità.",
+      "correctEnglish": "Correct! Often happens when toner runs out.",
+      "incorrectEnglish": "No, it describes an intensity problem."
+    }
+  },
+  {
+    "id": "s69-p31",
+    "italian": "Posso inserire la chiavetta qui?",
+    "english": "Can I insert the stick here?",
+    "type": "phrase",
+    "choicesItalian": ["Posso inserire la chiavetta qui?", "Dov'è il computer?", "Quanto pago ora?", "È rotto questo?"],
+    "choicesEnglish": ["Can I insert the stick here?", "Where is the computer?", "How much do I pay now?", "Is this broken?"],
+    "correctAnswer": "Posso inserire la chiavetta qui?",
+    "feedback": {
+      "correctItalian": "Giusto! Chiedere conferma prima di agire.",
+      "incorrectItalian": "No, chiede dove mettere la chiavetta.",
+      "correctEnglish": "Right! Asking for confirmation before acting.",
+      "incorrectEnglish": "No, asks where to put the stick."
+    }
+  },
+  {
+    "id": "s69-p32",
+    "italian": "Il mio credito è zero.",
+    "english": "My credit is zero.",
+    "type": "phrase",
+    "choicesItalian": ["Il mio credito è zero.", "Ho molti soldi.", "La tessera non va.", "Manca la ricarica."],
+    "choicesEnglish": ["My credit is zero.", "I have a lot of money.", "The card doesn't work.", "Missing recharge."],
+    "correctAnswer": "Il mio credito è zero.",
+    "feedback": {
+      "correctItalian": "Perfetto! Bisogna ricaricare.",
+      "incorrectItalian": "No, significa nessun credito.",
+      "correctEnglish": "Perfect! Need to recharge.",
+      "incorrectEnglish": "No, it means no credit."
+    }
+  },
+  {
+    "id": "s69-p33",
+    "italian": "Basta una sola copia.",
+    "english": "Just one copy is enough.",
+    "type": "phrase",
+    "choicesItalian": ["Basta una sola copia.", "Voglio dieci copie.", "Non stampare nulla.", "Quante ne servono?"],
+    "choicesEnglish": ["Just one copy is enough.", "I want ten copies.", "Don't print anything.", "How many are needed?"],
+    "correctAnswer": "Basta una sola copia.",
+    "feedback": {
+      "correctItalian": "Esatto! Per indicare una piccola quantità.",
+      "incorrectItalian": "No, ne basta una.",
+      "correctEnglish": "Correct! To indicate a small quantity.",
+      "incorrectEnglish": "No, one is enough."
+    }
+  },
+  {
+    "id": "s69-p34",
+    "italian": "Qual è il tuo indirizzo email?",
+    "english": "What is your email address?",
+    "type": "phrase",
+    "choicesItalian": ["Qual è il tuo indirizzo email?", "Dov'è il tuo ufficio?", "Come ti chiami?", "Hai la chiavetta?"],
+    "choicesEnglish": ["What is your email address?", "Where is your office?", "What is your name?", "Do you have the stick?"],
+    "correctAnswer": "Qual è il tuo indirizzo email?",
+    "feedback": {
+      "correctItalian": "Giusto! Per inviare file scannerizzati.",
+      "incorrectItalian": "No, chiede l'email.",
+      "correctEnglish": "Right! To send scanned files.",
+      "incorrectEnglish": "No, it asks for the email."
+    }
+  },
+  {
+    "id": "s69-p35",
+    "italian": "Aspetta che finisca di stampare.",
+    "english": "Wait until it finishes printing.",
+    "type": "phrase",
+    "choicesItalian": ["Aspetta che finisca di stampare.", "Puoi andare ora.", "Spegni tutto subito.", "Chiama aiuto."],
+    "choicesEnglish": ["Wait until it finishes printing.", "You can go now.", "Turn off everything now.", "Call for help."],
+    "correctAnswer": "Aspetta che finisca di stampare.",
+    "feedback": {
+      "correctItalian": "Perfetto! Bisogna avere pazienza.",
+      "incorrectItalian": "No, dice di aspettare la fine.",
+      "correctEnglish": "Perfect! Need to be patient.",
+      "incorrectEnglish": "No, says to wait for the end."
+    }
+  },
+  {
+    "id": "s69-p36",
+    "italian": "La stampante è di nuovo rotta.",
+    "english": "The printer is broken again.",
+    "type": "phrase",
+    "choicesItalian": ["La stampante è di nuovo rotta.", "Funziona benissimo.", "C'è la carta.", "Tutto ok."],
+    "choicesEnglish": ["The printer is broken again.", "It works very well.", "The paper is there.", "Everything is ok."],
+    "correctAnswer": "La stampante è di nuovo rotta.",
+    "feedback": {
+      "correctItalian": "Esatto! Frase di frustrazione comune.",
+      "incorrectItalian": "No, indica un guasto ricorrente.",
+      "correctEnglish": "Correct! A common phrase of frustration.",
+      "incorrectEnglish": "No, indicates a recurring fault."
+    }
+  },
+  {
+    "id": "s69-p37",
+    "italian": "Dove trovo il codice d'accesso?",
+    "english": "Where do I find the access code?",
+    "type": "phrase",
+    "choicesItalian": ["Dove trovo il codice d'accesso?", "Quanto costa questo?", "Dov'è lo scanner?", "Hai la password?"],
+    "choicesEnglish": ["Where do I find the access code?", "How much is this?", "Where is the scanner?", "Do you have the password?"],
+    "correctAnswer": "Dove trovo il codice d'accesso?",
+    "feedback": {
+      "correctItalian": "Ottimo! Per loggarsi al sistema.",
+      "incorrectItalian": "No, chiede del codice.",
+      "correctEnglish": "Great! To log into the system.",
+      "incorrectEnglish": "No, it asks for the code."
+    }
+  },
+  {
+    "id": "s69-p38",
+    "italian": "Hai salvato tutto?",
+    "english": "Did you save everything?",
+    "type": "phrase",
+    "choicesItalian": ["Hai salvato tutto?", "Hai stampato tutto?", "Hai finito?", "Tutto bene?"],
+    "choicesEnglish": ["Did you save everything?", "Did you print everything?", "Are you finished?", "Everything okay?"],
+    "correctAnswer": "Hai salvato tutto?",
+    "feedback": {
+      "correctItalian": "Giusto! Importante prima di chiudere.",
+      "incorrectItalian": "No, chiede se il salvataggio è fatto.",
+      "correctEnglish": "Right! Important before closing.",
+      "incorrectEnglish": "No, it asks if saving is done."
+    }
+  },
+  {
+    "id": "s69-p39",
+    "italian": "La macchina è in pausa.",
+    "english": "The machine is on pause.",
+    "type": "phrase",
+    "choicesItalian": ["La macchina è in pausa.", "La macchina è rotta.", "La macchina va veloce.", "La macchina è spenta."],
+    "choicesEnglish": ["The machine is on pause.", "The machine is broken.", "The machine goes fast.", "The machine is off."],
+    "correctAnswer": "La macchina è in pausa.",
+    "feedback": {
+      "correctItalian": "Perfetto! Quando si ferma temporaneamente.",
+      "incorrectItalian": "No, è solo in pausa.",
+      "correctEnglish": "Perfect! When it stops temporarily.",
+      "incorrectEnglish": "No, it's just on pause."
+    }
+  },
+  {
+    "id": "s69-p40",
+    "italian": "Scegli il computer numero tre.",
+    "english": "Choose computer number three.",
+    "type": "phrase",
+    "choicesItalian": ["Scegli il computer numero tre.", "Vieni qui subito.", "Guarda quel monitor.", "Usa la chiavetta."],
+    "choicesEnglish": ["Choose computer number three.", "Come here right away.", "Look at that monitor.", "Use the stick."],
+    "correctAnswer": "Scegli il computer numero tre.",
+    "feedback": {
+      "correctItalian": "Esatto! Un'istruzione specifica.",
+      "incorrectItalian": "No, indica un numero preciso.",
+      "correctEnglish": "Correct! A specific instruction.",
+      "incorrectEnglish": "No, it indicates a precise number."
+    }
+  },
+  {
+    "id": "s69-p41",
+    "italian": "Mi servono cinque euro in monete.",
+    "english": "I need five euros in coins.",
+    "type": "phrase",
+    "choicesItalian": ["Mi servono cinque euro in monete.", "Ho solo banconote.", "Quanto costa?", "Prendi questi soldi."],
+    "choicesEnglish": ["I need five euros in coins.", "I only have banknotes.", "How much is it?", "Take this money."],
+    "correctAnswer": "Mi servono cinque euro in monete.",
+    "feedback": {
+      "correctItalian": "Ottimo! Per ricaricare la tessera.",
+      "incorrectItalian": "No, specifica monete.",
+      "correctEnglish": "Great! To recharge the card.",
+      "incorrectEnglish": "No, it specifies coins."
+    }
+  },
+  {
+    "id": "s69-p42",
+    "italian": "L'inchiostro è finito di nuovo.",
+    "english": "The ink has run out again.",
+    "type": "phrase",
+    "choicesItalian": ["L'inchiostro è finito di nuovo.", "La carta c'è.", "Il wifi funziona.", "Ho il file."],
+    "choicesEnglish": ["The ink has run out again.", "The paper is there.", "The wifi works.", "I have the file."],
+    "correctAnswer": "L'inchiostro è finito di nuovo.",
+    "feedback": {
+      "correctItalian": "Giusto! Un altro problema ricorrente.",
+      "incorrectItalian": "No, si riferisce all'inchiostro.",
+      "correctEnglish": "Right! Another recurring problem.",
+      "incorrectEnglish": "No, it refers to ink."
+    }
+  },
+  {
+    "id": "s69-p43",
+    "italian": "Prova ad aprire il vassoio.",
+    "english": "Try opening the tray.",
+    "type": "phrase",
+    "choicesItalian": ["Prova ad aprire il vassoio.", "Chiudi il computer.", "Scegli il colore.", "Invia l'email."],
+    "choicesEnglish": ["Try opening the tray.", "Close the computer.", "Choose the color.", "Send the email."],
+    "correctAnswer": "Prova ad aprire il vassoio.",
+    "feedback": {
+      "correctItalian": "Perfetto! Per risolvere un problema.",
+      "incorrectItalian": "No, suggerisce di aprire.",
+      "correctEnglish": "Perfect! To solve a problem.",
+      "incorrectEnglish": "No, it suggests opening."
+    }
+  },
+  {
+    "id": "s69-p44",
+    "italian": "Non ho mai usato questa macchina.",
+    "english": "I have never used this machine.",
+    "type": "phrase",
+    "choicesItalian": ["Non ho mai usato questa macchina.", "La conosco bene.", "È facile da usare.", "Dov'è il manuale?"],
+    "choicesEnglish": ["I have never used this machine.", "I know it well.", "It's easy to use.", "Where is the manual?"],
+    "correctAnswer": "Non ho mai usato questa macchina.",
+    "feedback": {
+      "correctItalian": "Esatto! Per chiedere aiuto.",
+      "incorrectItalian": "No, indica mancanza di esperienza.",
+      "correctEnglish": "Correct! To ask for help.",
+      "incorrectEnglish": "No, indicates lack of experience."
+    }
+  },
+  {
+    "id": "s69-p45",
+    "italian": "È meglio in bianco e nero.",
+    "english": "It's better in black and white.",
+    "type": "phrase",
+    "choicesItalian": ["È meglio in bianco e nero.", "Voglio i colori.", "Il grigio è brutto.", "Tutto nero."],
+    "choicesEnglish": ["It's better in black and white.", "I want colors.", "Gray is ugly.", "All black."],
+    "correctAnswer": "È meglio in bianco e nero.",
+    "feedback": {
+      "correctItalian": "Ottimo! Spesso per risparmiare.",
+      "incorrectItalian": "No, suggerisce senza colori.",
+      "correctEnglish": "Great! Often to save money.",
+      "incorrectEnglish": "No, suggests without colors."
+    }
+  },
+  {
+    "id": "s69-p46",
+    "italian": "Il file è troppo grande.",
+    "english": "The file is too large.",
+    "type": "phrase",
+    "choicesItalian": ["Il file è troppo grande.", "Il file è piccolo.", "Manca il file.", "File pronto."],
+    "choicesEnglish": ["The file is too large.", "The file is small.", "File is missing.", "File ready."],
+    "correctAnswer": "Il file è troppo grande.",
+    "feedback": {
+      "correctItalian": "Giusto! Potrebbe non essere inviato.",
+      "incorrectItalian": "No, descrive la dimensione del file.",
+      "correctEnglish": "Right! It might not be sent.",
+      "incorrectEnglish": "No, it describes the file size."
+    }
+  },
+  {
+    "id": "s69-p47",
+    "italian": "Posso pagare con la carta?",
+    "english": "Can I pay by card?",
+    "type": "phrase",
+    "choicesItalian": ["Posso pagare con la carta?", "Accetta monete?", "Ho dei contanti.", "Dov'è il bancomat?"],
+    "choicesEnglish": ["Can I pay by card?", "Does it accept coins?", "I have some cash.", "Where is the ATM?"],
+    "correctAnswer": "Posso pagare con la carta?",
+    "feedback": {
+      "correctItalian": "Perfetto! Molto utile oggi.",
+      "incorrectItalian": "No, chiede della carta di credito.",
+      "correctEnglish": "Perfect! Very useful today.",
+      "incorrectEnglish": "No, asks about credit card."
+    }
+  },
+  {
+    "id": "s69-p48",
+    "italian": "La scansione è finita.",
+    "english": "The scan is finished.",
+    "type": "phrase",
+    "choicesItalian": ["La scansione è finita.", "Inizia ora.", "Aspetta un attimo.", "Errore scansione."],
+    "choicesEnglish": ["The scan is finished.", "Start now.", "Wait a moment.", "Scan error."],
+    "correctAnswer": "La scansione è finita.",
+    "feedback": {
+      "correctItalian": "Esatto! Puoi ritirare il foglio.",
+      "incorrectItalian": "No, indica che è completata.",
+      "correctEnglish": "Correct! You can take the paper.",
+      "incorrectEnglish": "No, indicates it's completed."
+    }
+  },
+  {
+    "id": "s69-p49",
+    "italian": "C'è un errore sul display.",
+    "english": "There is an error on the display.",
+    "type": "phrase",
+    "choicesItalian": ["C'è un errore sul display.", "Tutto funziona.", "Guarda lo schermo.", "Spegni tutto."],
+    "choicesEnglish": ["There is an error on the display.", "Everything works.", "Look at the screen.", "Turn everything off."],
+    "correctAnswer": "C'è un errore sul display.",
+    "feedback": {
+      "correctItalian": "Giusto! Bisogna leggere cosa dice.",
+      "incorrectItalian": "No, segnala un problema.",
+      "correctEnglish": "Right! Need to read what it says.",
+      "incorrectEnglish": "No, signals a problem."
+    }
+  },
+  {
+    "id": "s69-p50",
+    "italian": "Grazie per l'aiuto.",
+    "english": "Thanks for the help.",
+    "type": "phrase",
+    "choicesItalian": ["Grazie per l'aiuto.", "Prego.", "Non importa.", "Mi scusi."],
+    "choicesEnglish": ["Thanks for the help.", "You're welcome.", "Never mind.", "Excuse me."],
+    "correctAnswer": "Grazie per l'aiuto.",
+    "feedback": {
+      "correctItalian": "Perfetto! Molto gentile.",
+      "incorrectItalian": "No, è un ringraziamento.",
+      "correctEnglish": "Perfect! Very kind.",
+      "incorrectEnglish": "No, it's a thank you."
+    }
+  },
+  {
+    "id": "s69-p51",
+    "italian": "Ho perso il mio badge.",
+    "english": "I lost my badge.",
+    "type": "phrase",
+    "choicesItalian": ["Ho perso il mio badge.", "Ho la mia tessera.", "Dov'è il mio zaino?", "Manca la chiave."],
+    "choicesEnglish": ["I lost my badge.", "I have my card.", "Where is my backpack?", "Missing key."],
+    "correctAnswer": "Ho perso il mio badge.",
+    "feedback": {
+      "correctItalian": "Esatto! Un problema per entrare o pagare.",
+      "incorrectItalian": "No, significa smarrire il badge.",
+      "correctEnglish": "Correct! A problem for entering or paying.",
+      "incorrectEnglish": "No, it means losing the badge."
+    }
+  },
+  {
+    "id": "s69-p52",
+    "italian": "Non tirare troppo forte.",
+    "english": "Don't pull too hard.",
+    "type": "phrase",
+    "choicesItalian": ["Non tirare troppo forte.", "Spingi forte.", "Apri piano.", "Chiudi tutto."],
+    "choicesEnglish": ["Don't pull too hard.", "Push hard.", "Open slowly.", "Close everything."],
+    "correctAnswer": "Non tirare troppo forte.",
+    "feedback": {
+      "correctItalian": "Ottimo! Per non strappare la carta.",
+      "incorrectItalian": "No, è un avvertimento di non tirare.",
+      "correctEnglish": "Great! Not to tear the paper.",
+      "incorrectEnglish": "No, it's a warning not to pull."
+    }
+  },
+  {
+    "id": "s69-p53",
+    "italian": "Dov'è la macchinetta automatica?",
+    "english": "Where is the automatic machine?",
+    "type": "phrase",
+    "choicesItalian": ["Dov'è la macchinetta automatica?", "Cerco la stampante.", "Dov'è il bagno?", "Quanto pago?"],
+    "choicesEnglish": ["Where is the automatic machine?", "Looking for the printer.", "Where is the bathroom?", "How much do I pay?"],
+    "correctAnswer": "Dov'è la macchinetta automatica?",
+    "feedback": {
+      "correctItalian": "Giusto! Per ricaricare o pagare.",
+      "incorrectItalian": "No, cerca la macchinetta.",
+      "correctEnglish": "Right! To recharge or pay.",
+      "incorrectEnglish": "No, looking for the machine."
+    }
+  },
+  {
+    "id": "s69-p54",
+    "italian": "Va bene questo formato?",
+    "english": "Is this format okay?",
+    "type": "phrase",
+    "choicesItalian": ["Va bene questo formato?", "È troppo grande?", "Voglio l'A4.", "Scegli tu."],
+    "choicesEnglish": ["Is this format okay?", "Is it too large?", "I want A4.", "You choose."],
+    "correctAnswer": "Va bene questo formato?",
+    "feedback": {
+      "correctItalian": "Perfetto! Chiedere conferma.",
+      "incorrectItalian": "No, chiede del formato.",
+      "correctEnglish": "Perfect! Asking for confirmation.",
+      "incorrectEnglish": "No, it asks about the format."
+    }
+  },
+  {
+    "id": "s69-p55",
+    "italian": "Mi serve aiuto subito.",
+    "english": "I need help right away.",
+    "type": "phrase",
+    "choicesItalian": ["Mi serve aiuto subito.", "Aspetto un attimo.", "Non importa ora.", "Vado via."],
+    "choicesEnglish": ["I need help right away.", "I'm waiting a moment.", "It doesn't matter now.", "I'm leaving."],
+    "correctAnswer": "Mi serve aiuto subito.",
+    "feedback": {
+      "correctItalian": "Esatto! Situazione urgente.",
+      "incorrectItalian": "No, è una richiesta immediata.",
+      "correctEnglish": "Correct! Urgent situation.",
+      "incorrectEnglish": "No, it's an immediate request."
+    }
+  },
+  {
+    "id": "s69-p56",
+    "italian": "Il mio file è sparito.",
+    "english": "My file has disappeared.",
+    "type": "phrase",
+    "choicesItalian": ["Il mio file è sparito.", "Ho trovato il file.", "Manca la carta.", "Computer spento."],
+    "choicesEnglish": ["My file has disappeared.", "I found the file.", "Paper is missing.", "Computer off."],
+    "correctAnswer": "Il mio file è sparito.",
+    "feedback": {
+      "correctItalian": "Ottimo! Un problema tecnico comune.",
+      "incorrectItalian": "No, il file non c'è più.",
+      "correctEnglish": "Great! A common technical problem.",
+      "incorrectEnglish": "No, the file is gone."
+    }
+  },
+  {
+    "id": "s69-p57",
+    "italian": "Puoi ripetere, per favore?",
+    "english": "Can you repeat, please?",
+    "type": "phrase",
+    "choicesItalian": ["Puoi ripetere, per favore?", "Cosa hai detto?", "Non ho capito.", "Parla forte."],
+    "choicesEnglish": ["Can you repeat, please?", "What did you say?", "I didn't understand.", "Speak loud."],
+    "correctAnswer": "Può ripetere, per favore?",
+    "feedback": {
+      "correctItalian": "Giusto! Molto utile se non capisci.",
+      "incorrectItalian": "No, chiede di ridire.",
+      "correctEnglish": "Right! Very useful if you don't understand.",
+      "incorrectEnglish": "No, asks to say again."
+    }
+  },
+  {
+    "id": "s69-p58",
+    "italian": "Tutto a posto, grazie.",
+    "english": "Everything is fine, thanks.",
+    "type": "phrase",
+    "choicesItalian": ["Tutto a posto, grazie.", "Niente va bene.", "Aiutami ancora.", "Dov'è l'uscita?"],
+    "choicesEnglish": ["Everything is fine, thanks.", "Nothing is okay.", "Help me again.", "Where is the exit?"],
+    "correctAnswer": "Tutto a posto, grazie.",
+    "feedback": {
+      "correctItalian": "Perfetto! Per chiudere la conversazione.",
+      "incorrectItalian": "No, significa che tutto è ok.",
+      "correctEnglish": "Perfect! To close the conversation.",
+      "incorrectEnglish": "No, it means everything is ok."
+    }
+  },
+  {
+    "id": "s69-p59",
+    "italian": "Voglio stampare tutto il libro.",
+    "english": "I want to print the whole book.",
+    "type": "phrase",
+    "choicesItalian": ["Voglio stampare tutto il libro.", "Solo due pagine.", "Non voglio libri.", "Dove sono le copie?"],
+    "choicesEnglish": ["I want to print the whole book.", "Only two pages.", "I don't want books.", "Where are the copies?"],
+    "correctAnswer": "Voglio stampare tutto il libro.",
+    "feedback": {
+      "correctItalian": "Esatto! Un lavoro grande.",
+      "incorrectItalian": "No, indica tutto il volume.",
+      "correctEnglish": "Correct! A large job.",
+      "incorrectEnglish": "No, it indicates the whole volume."
+    }
+  },
+  {
+    "id": "s69-p60",
+    "italian": "Ci vediamo dopo, ciao!",
+    "english": "See you later, bye!",
+    "type": "phrase",
+    "choicesItalian": ["Ci vediamo dopo, ciao!", "Addio.", "Buongiorno.", "Arrivo subito."],
+    "choicesEnglish": ["See you later, bye!", "Goodbye.", "Good morning.", "I'm coming soon."],
+    "correctAnswer": "Ci vediamo dopo, ciao!",
+    "feedback": {
+      "correctItalian": "Ottimo! Un saluto informale.",
+      "incorrectItalian": "No, è un saluto di commiato.",
+      "correctEnglish": "Great! An informal greeting.",
+      "incorrectEnglish": "No, it's a parting greeting."
     }
   }
 ]

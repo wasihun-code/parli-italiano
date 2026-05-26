@@ -4,16 +4,24 @@
     "italian": "Scusi?",
     "english": "Excuse me? / Pardon?",
     "type": "phrase",
-    "choices": [
-      "Nessun dubbio.",
-      "A pagina tre.",
-      "Grazie per la spiegazione.",
-      "Scusi?"
+    "choicesItalian": [
+      "Scusi?",
+      "Grazie.",
+      "Prego.",
+      "Ciao."
+    ],
+    "choicesEnglish": [
+      "Excuse me?",
+      "Thank you.",
+      "You're welcome.",
+      "Hi."
     ],
     "correctAnswer": "Scusi?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Scusi?\"."
+      "correctItalian": "Esatto! Per chiedere di ripetere gentilmente.",
+      "incorrectItalian": "No, \"Scusi?\" si usa per chiedere di ripetere.",
+      "correctEnglish": "Exactly! Used to politely ask someone to repeat.",
+      "incorrectEnglish": "No, \"Scusi?\" is used to ask someone to repeat."
     }
   },
   {
@@ -21,849 +29,1474 @@
     "italian": "Come?",
     "english": "Pardon? / What?",
     "type": "phrase",
-    "choices": [
-      "Quale punto?",
-      "Nel report.",
+    "choicesItalian": [
       "Come?",
-      "Può rispiegare?"
+      "Dove?",
+      "Quando?",
+      "Chi?"
+    ],
+    "choicesEnglish": [
+      "What?",
+      "Where?",
+      "When?",
+      "Who?"
     ],
     "correctAnswer": "Come?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Come?\"."
+      "correctItalian": "Giusto! Un modo comune per dire \"non ho capito\".",
+      "incorrectItalian": "No, in questo contesto significa \"What?\" o \"Pardon?\".",
+      "correctEnglish": "Right! A common way to say \"I didn't understand\".",
+      "incorrectEnglish": "No, in this context it means \"What?\" or \"Pardon?\"."
     }
   },
   {
     "id": "s63-p3",
-    "italian": "Cosa?",
-    "english": "What?",
+    "italian": "Non capisco.",
+    "english": "I don't understand.",
     "type": "phrase",
-    "choices": [
-      "Un attimo.",
-      "Cosa?",
-      "Hai ragione.",
-      "Ho capito bene?"
+    "choicesItalian": [
+      "Non capisco.",
+      "Capisco tutto.",
+      "Parlo bene.",
+      "Ascolto ora."
     ],
-    "correctAnswer": "Cosa?",
+    "choicesEnglish": [
+      "I don't understand.",
+      "I understand everything.",
+      "I speak well.",
+      "I am listening now."
+    ],
+    "correctAnswer": "Non capisco.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Cosa?\"."
+      "correctItalian": "Ottimo! Indica che non comprendi il concetto.",
+      "incorrectItalian": "No, significa \"I don't understand\".",
+      "correctEnglish": "Great! Indicates you don't understand the concept.",
+      "incorrectEnglish": "No, it means I don't understand."
     }
   },
   {
     "id": "s63-p4",
-    "italian": "Non capisco.",
-    "english": "I don't understand.",
+    "italian": "Può ripetere?",
+    "english": "Can you repeat?",
     "type": "phrase",
-    "choices": [
-      "Può rispiegare?",
-      "È corretto?",
-      "Non mi è chiaro.",
-      "Non capisco."
+    "choicesItalian": [
+      "Può ripetere?",
+      "Può uscire?",
+      "Può entrare?",
+      "Può sedersi?"
     ],
-    "correctAnswer": "Non capisco.",
+    "choicesEnglish": [
+      "Can you repeat?",
+      "Can you go out?",
+      "Can you come in?",
+      "Can you sit down?"
+    ],
+    "correctAnswer": "Può ripetere?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Non capisco.\"."
+      "correctItalian": "Perfetto! Molto utile in ufficio o a lezione.",
+      "incorrectItalian": "No, significa \"Can you repeat?\".",
+      "correctEnglish": "Perfect! Very useful in the office or in class.",
+      "incorrectEnglish": "No, it means can you repeat?"
     }
   },
   {
     "id": "s63-p5",
-    "italian": "Non ho capito.",
-    "english": "I didn't understand.",
+    "italian": "Non mi è chiaro.",
+    "english": "It's not clear to me.",
     "type": "phrase",
-    "choices": [
-      "Tutto chiaro.",
-      "Esattamente.",
-      "Mi può aiutare?",
-      "Non ho capito."
+    "choicesItalian": [
+      "Non mi è chiaro.",
+      "È tutto chiaro.",
+      "Mi piace molto.",
+      "Non lo so."
     ],
-    "correctAnswer": "Non ho capito.",
+    "choicesEnglish": [
+      "It's not clear to me.",
+      "Everything is clear.",
+      "I like it a lot.",
+      "I don't know."
+    ],
+    "correctAnswer": "Non mi è chiaro.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Non ho capito.\"."
+      "correctItalian": "Esatto! Si usa per esprimere confusione.",
+      "incorrectItalian": "No, significa \"It's not clear to me\".",
+      "correctEnglish": "Exactly! Used to express confusion.",
+      "incorrectEnglish": "No, it means it's not clear to me."
     }
   },
   {
     "id": "s63-p6",
-    "italian": "Può ripetere?",
-    "english": "Can you repeat?",
+    "italian": "Quale parte?",
+    "english": "Which part?",
     "type": "phrase",
-    "choices": [
-      "Tutto bene.",
-      "Ora è chiaro.",
-      "Può ripetere?",
-      "Come si scrive?"
+    "choicesItalian": [
+      "Quale parte?",
+      "Quale ora?",
+      "Quale giorno?",
+      "Quale ufficio?"
     ],
-    "correctAnswer": "Può ripetere?",
+    "choicesEnglish": [
+      "Which part?",
+      "Which hour?",
+      "Which day?",
+      "Which office?"
+    ],
+    "correctAnswer": "Quale parte?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Può ripetere?\"."
+      "correctItalian": "Giusto! Per specificare il dubbio.",
+      "incorrectItalian": "No, significa \"Which part?\".",
+      "correctEnglish": "Right! To specify the doubt.",
+      "incorrectEnglish": "No, it means which part?"
     }
   },
   {
     "id": "s63-p7",
-    "italian": "Può rispiegare?",
-    "english": "Can you re-explain?",
+    "italian": "Dimmi pure.",
+    "english": "Go ahead and tell me. / Tell me.",
     "type": "phrase",
-    "choices": [
-      "È corretto?",
-      "Può rispiegare?",
-      "Quale parte?",
-      "Un secondo."
+    "choicesItalian": [
+      "Dimmi pure.",
+      "Stai zitto.",
+      "Vai via.",
+      "Aspetta qui."
     ],
-    "correctAnswer": "Può rispiegare?",
+    "choicesEnglish": [
+      "Go ahead and tell me.",
+      "Be quiet.",
+      "Go away.",
+      "Wait here."
+    ],
+    "correctAnswer": "Dimmi pure.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Può rispiegare?\"."
+      "correctItalian": "Ottimo! Un modo gentile per invitare a parlare.",
+      "incorrectItalian": "No, significa \"Tell me\".",
+      "correctEnglish": "Great! A polite way to invite someone to speak.",
+      "incorrectEnglish": "No, it means tell me."
     }
   },
   {
     "id": "s63-p8",
-    "italian": "Più lentamente, per favore.",
-    "english": "More slowly, please.",
+    "italian": "Hai ragione.",
+    "english": "You are right.",
     "type": "phrase",
-    "choices": [
-      "Grazie mille.",
-      "È corretto?",
-      "Più lentamente, per favore.",
-      "Come?"
+    "choicesItalian": [
+      "Hai ragione.",
+      "Hai torto.",
+      "Hai fame.",
+      "Hai tempo."
     ],
-    "correctAnswer": "Più lentamente, per favore.",
+    "choicesEnglish": [
+      "You are right.",
+      "You are wrong.",
+      "You are hungry.",
+      "You have time."
+    ],
+    "correctAnswer": "Hai ragione.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Più lentamente, per favore.\"."
+      "correctItalian": "Bravo! Per dare ragione a qualcuno.",
+      "incorrectItalian": "No, significa \"You are right\".",
+      "correctEnglish": "Good! To agree with someone.",
+      "incorrectEnglish": "No, it means you are right."
     }
   },
   {
     "id": "s63-p9",
-    "italian": "Cosa significa?",
-    "english": "What does it mean?",
+    "italian": "In pratica...",
+    "english": "Basically... / In practice...",
     "type": "phrase",
-    "choices": [
-      "Prego.",
-      "A pagina tre.",
-      "Cosa?",
-      "Cosa significa?"
+    "choicesItalian": [
+      "In pratica...",
+      "In teoria...",
+      "In ufficio...",
+      "In ritardo..."
     ],
-    "correctAnswer": "Cosa significa?",
+    "choicesEnglish": [
+      "Basically...",
+      "In theory...",
+      "In the office...",
+      "Late..."
+    ],
+    "correctAnswer": "In pratica...",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Cosa significa?\"."
+      "correctItalian": "Esatto! Si usa per riassumere o spiegare.",
+      "incorrectItalian": "No, significa \"Basically\" o \"In practice\".",
+      "correctEnglish": "Exactly! Used to summarize or explain.",
+      "incorrectEnglish": "No, it means basically or in practice."
     }
   },
   {
     "id": "s63-p10",
-    "italian": "Ho un dubbio.",
-    "english": "I have a doubt.",
+    "italian": "Guarda qui.",
+    "english": "Look here.",
     "type": "phrase",
-    "choices": [
-      "Prego.",
-      "Ho un dubbio.",
-      "Cosa significa?",
-      "A pagina tre."
+    "choicesItalian": [
+      "Guarda qui.",
+      "Ascolta bene.",
+      "Scrivi tutto.",
+      "Vieni qui."
     ],
-    "correctAnswer": "Ho un dubbio.",
+    "choicesEnglish": [
+      "Look here.",
+      "Listen well.",
+      "Write everything.",
+      "Come here."
+    ],
+    "correctAnswer": "Guarda qui.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho un dubbio.\"."
+      "correctItalian": "Sì! Per attirare l'attenzione su qualcosa.",
+      "incorrectItalian": "No, significa \"Look here\".",
+      "correctEnglish": "Yes! To draw attention to something.",
+      "incorrectEnglish": "No, it means look here."
     }
   },
   {
     "id": "s63-p11",
-    "italian": "Ho una domanda.",
-    "english": "I have a question.",
+    "italian": "Ora ho capito!",
+    "english": "Now I understand!",
     "type": "phrase",
-    "choices": [
-      "Non capisco.",
-      "Spieghi meglio.",
-      "Ora è chiaro.",
-      "Ho una domanda."
+    "choicesItalian": [
+      "Ora ho capito!",
+      "Ancora non so.",
+      "Voglio capire.",
+      "Spero di capire."
     ],
-    "correctAnswer": "Ho una domanda.",
+    "choicesEnglish": [
+      "Now I understand!",
+      "I still don't know.",
+      "I want to understand.",
+      "I hope to understand."
+    ],
+    "correctAnswer": "Ora ho capito!",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho una domanda.\"."
+      "correctItalian": "Perfetto! Quando finalmente afferri il concetto.",
+      "incorrectItalian": "No, significa \"Now I understand!\".",
+      "correctEnglish": "Perfect! When you finally grasp the concept.",
+      "incorrectEnglish": "No, it means now I understand!"
     }
   },
   {
     "id": "s63-p12",
-    "italian": "Un attimo.",
-    "english": "One moment.",
+    "italian": "Ho un dubbio.",
+    "english": "I have a doubt. / I'm not sure about something.",
     "type": "phrase",
-    "choices": [
-      "Un attimo.",
-      "Come?",
-      "Va bene.",
-      "Ripeta pure."
+    "choicesItalian": [
+      "Ho un dubbio.",
+      "Ho un'idea.",
+      "Ho un problema.",
+      "Ho un appuntamento."
     ],
-    "correctAnswer": "Un attimo.",
+    "choicesEnglish": [
+      "I have a doubt.",
+      "I have an idea.",
+      "I have a problem.",
+      "I have an appointment."
+    ],
+    "correctAnswer": "Ho un dubbio.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Un attimo.\"."
+      "correctItalian": "Corretto! Per introdurre una domanda.",
+      "incorrectItalian": "No, significa \"I have a doubt\".",
+      "correctEnglish": "Correct! To introduce a question.",
+      "incorrectEnglish": "No, it means I have a doubt."
     }
   },
   {
     "id": "s63-p13",
-    "italian": "Mi scusi.",
-    "english": "Excuse me (formal).",
+    "italian": "Cosa significa?",
+    "english": "What does it mean?",
     "type": "phrase",
-    "choices": [
-      "A pagina tre.",
-      "Mi scusi.",
-      "Non capisco.",
-      "Cosa significa?"
+    "choicesItalian": [
+      "Cosa significa?",
+      "Chi lo sa?",
+      "Come si fa?",
+      "Dove si trova?"
     ],
-    "correctAnswer": "Mi scusi.",
+    "choicesEnglish": [
+      "What does it mean?",
+      "Who knows?",
+      "How is it done?",
+      "Where is it found?"
+    ],
+    "correctAnswer": "Cosa significa?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi scusi.\"."
+      "correctItalian": "Giusto! Per chiedere il significato di una parola.",
+      "incorrectItalian": "No, significa \"What does it mean?\".",
+      "correctEnglish": "Right! To ask for the meaning of a word.",
+      "incorrectEnglish": "No, it means what does it mean?"
     }
   },
   {
     "id": "s63-p14",
-    "italian": "Tutto chiaro.",
-    "english": "Everything clear.",
+    "italian": "Può rispiegare?",
+    "english": "Can you re-explain?",
     "type": "phrase",
-    "choices": [
-      "Scusi?",
-      "Tutto chiaro.",
-      "Può ripetere?",
-      "Non mi è chiaro."
+    "choicesItalian": [
+      "Può rispiegare?",
+      "Può richiamare?",
+      "Può riportare?",
+      "Può riparare?"
     ],
-    "correctAnswer": "Tutto chiaro.",
+    "choicesEnglish": [
+      "Can you re-explain?",
+      "Can you call back?",
+      "Can you bring back?",
+      "Can you repair?"
+    ],
+    "correctAnswer": "Può rispiegare?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Tutto chiaro.\"."
+      "correctItalian": "Ottimo! Chiedere una nuova spiegazione.",
+      "incorrectItalian": "No, significa \"Can you re-explain?\".",
+      "correctEnglish": "Great! Asking for a new explanation.",
+      "incorrectEnglish": "No, it means can you re-explain?"
     }
   },
   {
     "id": "s63-p15",
-    "italian": "Quasi chiaro.",
-    "english": "Almost clear.",
+    "italian": "Mi sono perso.",
+    "english": "I'm lost. / I got lost.",
     "type": "phrase",
-    "choices": [
-      "Grazie mille.",
-      "Mi conferma?",
-      "Quasi chiaro.",
-      "Può rispiegare?"
+    "choicesItalian": [
+      "Mi sono perso.",
+      "Mi sono svegliato.",
+      "Mi sono stancato.",
+      "Mi sono fermato."
     ],
-    "correctAnswer": "Quasi chiaro.",
+    "choicesEnglish": [
+      "I'm lost.",
+      "I woke up.",
+      "I got tired.",
+      "I stopped."
+    ],
+    "correctAnswer": "Mi sono perso.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Quasi chiaro.\"."
+      "correctItalian": "Esatto! In senso figurato, non segui più il discorso.",
+      "incorrectItalian": "No, significa \"I'm lost\".",
+      "correctEnglish": "Exactly! Figuratively, you're no longer following the conversation.",
+      "incorrectEnglish": "No, it means I'm lost."
     }
   },
   {
     "id": "s63-p16",
-    "italian": "Non mi è chiaro.",
-    "english": "It's not clear to me.",
+    "italian": "Più lentamente, per favore.",
+    "english": "More slowly, please.",
     "type": "phrase",
-    "choices": [
-      "Non mi è chiaro.",
-      "Mi scusi.",
-      "Dimmi pure.",
-      "Cosa?"
+    "choicesItalian": [
+      "Più lentamente, per favore.",
+      "Più velocemente, per favore.",
+      "Più forte, per favore.",
+      "Più piano, per favore."
     ],
-    "correctAnswer": "Non mi è chiaro.",
+    "choicesEnglish": [
+      "More slowly, please.",
+      "Faster, please.",
+      "Louder, please.",
+      "Quieter, please."
+    ],
+    "correctAnswer": "Più lentamente, per favore.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Non mi è chiaro.\"."
+      "correctItalian": "Bravo! Per chiedere a qualcuno di rallentare.",
+      "incorrectItalian": "No, significa \"More slowly, please\".",
+      "correctEnglish": "Good! To ask someone to slow down.",
+      "incorrectEnglish": "No, it means more slowly, please."
     }
   },
   {
     "id": "s63-p17",
-    "italian": "Quale parte?",
-    "english": "Which part?",
+    "italian": "Un attimo.",
+    "english": "Just a moment. / One second.",
     "type": "phrase",
-    "choices": [
-      "Dimmi pure.",
-      "Quale parte?",
-      "Mi può aiutare?",
-      "In pratica."
+    "choicesItalian": [
+      "Un attimo.",
+      "Un giorno.",
+      "Un mese.",
+      "Un anno."
     ],
-    "correctAnswer": "Quale parte?",
+    "choicesEnglish": [
+      "Just a moment.",
+      "One day.",
+      "One month.",
+      "One year."
+    ],
+    "correctAnswer": "Un attimo.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Quale parte?\"."
+      "correctItalian": "Sì! Per chiedere di aspettare.",
+      "incorrectItalian": "No, significa \"Just a moment\".",
+      "correctEnglish": "Yes! To ask someone to wait.",
+      "incorrectEnglish": "No, it means just a moment."
     }
   },
   {
     "id": "s63-p18",
-    "italian": "Dimmi pure.",
-    "english": "Go ahead and tell me.",
+    "italian": "Tutto chiaro?",
+    "english": "Everything clear?",
     "type": "phrase",
-    "choices": [
-      "Questo termine?",
-      "Mi scusi.",
-      "Mi conferma?",
-      "Dimmi pure."
+    "choicesItalian": [
+      "Tutto chiaro?",
+      "Tutto bene?",
+      "Tutto pronto?",
+      "Tutto a posto?"
     ],
-    "correctAnswer": "Dimmi pure.",
+    "choicesEnglish": [
+      "Everything clear?",
+      "Everything fine?",
+      "Everything ready?",
+      "Everything in place?"
+    ],
+    "correctAnswer": "Tutto chiaro?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Dimmi pure.\"."
+      "correctItalian": "Perfetto! Per verificare la comprensione.",
+      "incorrectItalian": "No, significa \"Everything clear?\".",
+      "correctEnglish": "Perfect! To verify understanding.",
+      "incorrectEnglish": "No, it means everything clear?"
     }
   },
   {
     "id": "s63-p19",
-    "italian": "Hai ragione.",
-    "english": "You are right.",
+    "italian": "In che senso?",
+    "english": "In what sense? / What do you mean?",
     "type": "phrase",
-    "choices": [
-      "Hai ragione.",
-      "Ripeta pure.",
-      "In pratica.",
-      "Nessun dubbio."
+    "choicesItalian": [
+      "In che senso?",
+      "In che modo?",
+      "In che ufficio?",
+      "In che città?"
     ],
-    "correctAnswer": "Hai ragione.",
+    "choicesEnglish": [
+      "In what sense?",
+      "In what way?",
+      "In which office?",
+      "In which city?"
+    ],
+    "correctAnswer": "In che senso?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Hai ragione.\"."
+      "correctItalian": "Ottimo! Per chiedere chiarimenti su un concetto.",
+      "incorrectItalian": "No, significa \"In what sense?\".",
+      "correctEnglish": "Great! To ask for clarification on a concept.",
+      "incorrectEnglish": "No, it means in what sense?"
     }
   },
   {
     "id": "s63-p20",
-    "italian": "Certamente.",
-    "english": "Certainly.",
+    "italian": "Cosa intende?",
+    "english": "What do you mean? (formal)",
     "type": "phrase",
-    "choices": [
-      "Dimmi pure.",
-      "Cosa?",
-      "Un attimo.",
-      "Certamente."
+    "choicesItalian": [
+      "Cosa intende?",
+      "Cosa mangia?",
+      "Cosa scrive?",
+      "Cosa guarda?"
     ],
-    "correctAnswer": "Certamente.",
+    "choicesEnglish": [
+      "What do you mean?",
+      "What are you eating?",
+      "What are you writing?",
+      "What are you looking at?"
+    ],
+    "correctAnswer": "Cosa intende?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Certamente.\"."
+      "correctItalian": "Corretto! Forma di cortesia per chiedere chiarimenti.",
+      "incorrectItalian": "No, significa \"What do you mean?\".",
+      "correctEnglish": "Correct! Polite way to ask for clarification.",
+      "incorrectEnglish": "No, it means what do you mean?"
     }
   },
   {
     "id": "s63-p21",
-    "italian": "Esattamente.",
-    "english": "Exactly.",
+    "italian": "Per esempio?",
+    "english": "For example?",
     "type": "phrase",
-    "choices": [
-      "Ancora una volta.",
-      "Esattamente.",
-      "In ufficio.",
-      "Mi scusi."
+    "choicesItalian": [
+      "Per esempio?",
+      "Per favore?",
+      "Per caso?",
+      "Per forza?"
     ],
-    "correctAnswer": "Esattamente.",
+    "choicesEnglish": [
+      "For example?",
+      "Please?",
+      "By chance?",
+      "Necessarily?"
+    ],
+    "correctAnswer": "Per esempio?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Esattamente.\"."
+      "correctItalian": "Giusto! Per chiedere un caso concreto.",
+      "incorrectItalian": "No, significa \"For example?\".",
+      "correctEnglish": "Right! To ask for a concrete case.",
+      "incorrectEnglish": "No, it means for example?"
     }
   },
   {
     "id": "s63-p22",
-    "italian": "In pratica.",
-    "english": "In practice / basically.",
+    "italian": "Ho capito bene?",
+    "english": "Did I understand correctly?",
     "type": "phrase",
-    "choices": [
-      "Mi sono perso.",
-      "Cosa?",
-      "In pratica.",
-      "Durante la lezione."
+    "choicesItalian": [
+      "Ho capito bene?",
+      "Ho parlato bene?",
+      "Ho scritto bene?",
+      "Ho visto bene?"
     ],
-    "correctAnswer": "In pratica.",
+    "choicesEnglish": [
+      "Did I understand correctly?",
+      "Did I speak well?",
+      "Did I write well?",
+      "Did I see correctly?"
+    ],
+    "correctAnswer": "Ho capito bene?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"In pratica.\"."
+      "correctItalian": "Bravo! Per confermare la propria comprensione.",
+      "incorrectItalian": "No, significa \"Did I understand correctly?\".",
+      "correctEnglish": "Good! To confirm your understanding.",
+      "incorrectEnglish": "No, it means did I understand correctly?"
     }
   },
   {
     "id": "s63-p23",
-    "italian": "Per esempio?",
-    "english": "For example?",
+    "italian": "Mi può aiutare?",
+    "english": "Can you help me?",
     "type": "phrase",
-    "choices": [
-      "Nel report.",
-      "Per esempio?",
-      "Ho una domanda.",
-      "Mi aiuti."
+    "choicesItalian": [
+      "Mi può aiutare?",
+      "Mi può chiamare?",
+      "Mi può sentire?",
+      "Mi può vedere?"
     ],
-    "correctAnswer": "Per esempio?",
+    "choicesEnglish": [
+      "Can you help me?",
+      "Can you call me?",
+      "Can you hear me?",
+      "Can you see me?"
+    ],
+    "correctAnswer": "Mi può aiutare?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Per esempio?\"."
+      "correctItalian": "Esatto! Una richiesta di aiuto generica.",
+      "incorrectItalian": "No, significa \"Can you help me?\".",
+      "correctEnglish": "Exactly! A general request for help.",
+      "incorrectEnglish": "No, it means can you help me?"
     }
   },
   {
     "id": "s63-p24",
-    "italian": "Come si dice?",
-    "english": "How do you say?",
+    "italian": "Non ho sentito.",
+    "english": "I didn't hear.",
     "type": "phrase",
-    "choices": [
-      "Come si dice?",
-      "Hai ragione.",
-      "Scusi?",
-      "Dimmi pure."
+    "choicesItalian": [
+      "Non ho sentito.",
+      "Non ho capito.",
+      "Non ho visto.",
+      "Non ho mangiato."
     ],
-    "correctAnswer": "Come si dice?",
+    "choicesEnglish": [
+      "I didn't hear.",
+      "I didn't understand.",
+      "I didn't see.",
+      "I didn't eat."
+    ],
+    "correctAnswer": "Non ho sentito.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Come si dice?\"."
+      "correctItalian": "Sì! Quando c'è rumore o qualcuno parla piano.",
+      "incorrectItalian": "No, significa \"I didn't hear\".",
+      "correctEnglish": "Yes! When there's noise or someone speaks quietly.",
+      "incorrectEnglish": "No, it means I didn't hear."
     }
   },
   {
     "id": "s63-p25",
-    "italian": "Come si scrive?",
-    "english": "How do you write?",
+    "italian": "Può parlare più forte?",
+    "english": "Can you speak louder?",
     "type": "phrase",
-    "choices": [
-      "Come si scrive?",
-      "Ho capito bene?",
-      "Ho un dubbio.",
-      "Ora è chiaro."
+    "choicesItalian": [
+      "Può parlare più forte?",
+      "Può parlare più piano?",
+      "Può parlare più lento?",
+      "Può parlare più veloce?"
     ],
-    "correctAnswer": "Come si scrive?",
+    "choicesEnglish": [
+      "Can you speak louder?",
+      "Can you speak quieter?",
+      "Can you speak slower?",
+      "Can you speak faster?"
+    ],
+    "correctAnswer": "Può parlare più forte?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Come si scrive?\"."
+      "correctItalian": "Perfetto! Quando non senti bene l'altra persona.",
+      "incorrectItalian": "No, significa \"Can you speak louder?\".",
+      "correctEnglish": "Perfect! When you can't hear the other person well.",
+      "incorrectEnglish": "No, it means can you speak louder?"
     }
   },
   {
     "id": "s63-p26",
-    "italian": "Ancora una volta.",
-    "english": "One more time.",
+    "italian": "Come si dice...?",
+    "english": "How do you say...?",
     "type": "phrase",
-    "choices": [
-      "Come si scrive?",
-      "Ancora una volta.",
-      "Non sono sicuro.",
-      "Grazie mille."
+    "choicesItalian": [
+      "Come si dice...?",
+      "Come si scrive...?",
+      "Come si legge...?",
+      "Come si chiama...?"
     ],
-    "correctAnswer": "Ancora una volta.",
+    "choicesEnglish": [
+      "How do you say...?",
+      "How do you write...?",
+      "How do you read...?",
+      "What is it called...?"
+    ],
+    "correctAnswer": "Come si dice...?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ancora una volta.\"."
+      "correctItalian": "Ottimo! Essenziale per imparare nuove parole.",
+      "incorrectItalian": "No, significa \"How do you say...?\".",
+      "correctEnglish": "Great! Essential for learning new words.",
+      "incorrectEnglish": "No, it means how do you say...?"
     }
   },
   {
     "id": "s63-p27",
-    "italian": "Tutto bene.",
-    "english": "All good.",
+    "italian": "Come si scrive?",
+    "english": "How do you write/spell it?",
     "type": "phrase",
-    "choices": [
-      "Tutto bene.",
-      "Cosa?",
-      "Quale punto?",
-      "Mi aiuti."
+    "choicesItalian": [
+      "Come si scrive?",
+      "Come si mangia?",
+      "Come si balla?",
+      "Come si gioca?"
     ],
-    "correctAnswer": "Tutto bene.",
+    "choicesEnglish": [
+      "How do you write it?",
+      "How do you eat it?",
+      "How do you dance it?",
+      "How do you play it?"
+    ],
+    "correctAnswer": "Come si scrive?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Tutto bene.\"."
+      "correctItalian": "Corretto! Per chiedere lo spelling.",
+      "incorrectItalian": "No, significa \"How do you write it?\".",
+      "correctEnglish": "Correct! To ask for the spelling.",
+      "incorrectEnglish": "No, it means how do you write it?"
     }
   },
   {
     "id": "s63-p28",
-    "italian": "Nessun dubbio.",
-    "english": "No doubts.",
+    "italian": "Lo può scrivere?",
+    "english": "Can you write it down?",
     "type": "phrase",
-    "choices": [
-      "Non c'è problema.",
-      "Nessun dubbio.",
-      "Un secondo.",
-      "Può rispiegare?"
+    "choicesItalian": [
+      "Lo può scrivere?",
+      "Lo può leggere?",
+      "Lo può dire?",
+      "Lo può fare?"
     ],
-    "correctAnswer": "Nessun dubbio.",
+    "choicesEnglish": [
+      "Can you write it down?",
+      "Can you read it?",
+      "Can you say it?",
+      "Can you do it?"
+    ],
+    "correctAnswer": "Lo può scrivere?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Nessun dubbio.\"."
+      "correctItalian": "Giusto! Molto utile se non capisci a voce.",
+      "incorrectItalian": "No, significa \"Can you write it down?\".",
+      "correctEnglish": "Right! Very useful if you don't understand orally.",
+      "incorrectEnglish": "No, it means can you write it down?"
     }
   },
   {
     "id": "s63-p29",
-    "italian": "Grazie mille.",
-    "english": "Thanks a lot.",
+    "italian": "Grazie per la spiegazione.",
+    "english": "Thank you for the explanation.",
     "type": "phrase",
-    "choices": [
-      "In pratica.",
-      "Grazie mille.",
-      "Non sono sicuro.",
-      "Un attimo."
+    "choicesItalian": [
+      "Grazie per la spiegazione.",
+      "Grazie per l'invito.",
+      "Grazie per il regalo.",
+      "Grazie per l'aiuto."
     ],
-    "correctAnswer": "Grazie mille.",
+    "choicesEnglish": [
+      "Thank you for the explanation.",
+      "Thank you for the invitation.",
+      "Thank you for the gift.",
+      "Thank you for the help."
+    ],
+    "correctAnswer": "Grazie per la spiegazione.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Grazie mille.\"."
+      "correctItalian": "Bravo! Un modo cortese per concludere.",
+      "incorrectItalian": "No, significa \"Thank you for the explanation\".",
+      "correctEnglish": "Good! A polite way to conclude.",
+      "incorrectEnglish": "No, it means thank you for the explanation."
     }
   },
   {
     "id": "s63-p30",
-    "italian": "Prego.",
-    "english": "You're welcome.",
+    "italian": "Ora è tutto chiaro.",
+    "english": "Now everything is clear.",
     "type": "phrase",
-    "choices": [
-      "Come?",
-      "Prego.",
-      "Ripeta pure.",
-      "Cosa?"
+    "choicesItalian": [
+      "Ora è tutto chiaro.",
+      "Ancora è confuso.",
+      "Sempre è difficile.",
+      "Mai è semplice."
     ],
-    "correctAnswer": "Prego.",
+    "choicesEnglish": [
+      "Now everything is clear.",
+      "It's still confusing.",
+      "It's always difficult.",
+      "It's never simple."
+    ],
+    "correctAnswer": "Ora è tutto chiaro.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Prego.\"."
+      "correctItalian": "Esatto! Per confermare che hai capito.",
+      "incorrectItalian": "No, significa \"Now everything is clear\".",
+      "correctEnglish": "Exactly! To confirm that you understood.",
+      "incorrectEnglish": "No, it means now everything is clear."
     }
   },
   {
     "id": "s63-p31",
-    "italian": "Va bene.",
-    "english": "Okay.",
+    "italian": "Ho capito.",
+    "english": "I understood. / I get it.",
     "type": "phrase",
-    "choices": [
-      "Non sono sicuro.",
-      "Un attimo.",
-      "Dimmi pure.",
-      "Va bene."
+    "choicesItalian": [
+      "Ho capito.",
+      "Ho finito.",
+      "Ho perso.",
+      "Ho fame."
     ],
-    "correctAnswer": "Va bene.",
+    "choicesEnglish": [
+      "I understood.",
+      "I finished.",
+      "I lost.",
+      "I am hungry."
+    ],
+    "correctAnswer": "Ho capito.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Va bene.\"."
+      "correctItalian": "Sì! Breve e naturale.",
+      "incorrectItalian": "No, significa \"I understood\".",
+      "correctEnglish": "Yes! Short and natural.",
+      "incorrectEnglish": "No, it means I understood."
     }
   },
   {
     "id": "s63-p32",
-    "italian": "Di nulla.",
-    "english": "Not at all.",
+    "italian": "Ah, ok.",
+    "english": "Ah, okay.",
     "type": "phrase",
-    "choices": [
-      "Di nulla.",
-      "Può ripetere?",
-      "Mi aiuti.",
-      "Un secondo."
+    "choicesItalian": [
+      "Ah, ok.",
+      "Oh, no.",
+      "Eh, sì.",
+      "Bah, forse."
     ],
-    "correctAnswer": "Di nulla.",
+    "choicesEnglish": [
+      "Ah, okay.",
+      "Oh, no.",
+      "Well, yes.",
+      "Well, maybe."
+    ],
+    "correctAnswer": "Ah, ok.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Di nulla.\"."
+      "correctItalian": "Perfetto! Molto colloquiale e comune.",
+      "incorrectItalian": "No, significa \"Ah, okay\".",
+      "correctEnglish": "Perfect! Very colloquial and common.",
+      "incorrectEnglish": "No, it means ah, okay."
     }
   },
   {
     "id": "s63-p33",
-    "italian": "Non c'è problema.",
-    "english": "No problem.",
+    "italian": "Non sono sicuro.",
+    "english": "I'm not sure.",
     "type": "phrase",
-    "choices": [
-      "Come?",
-      "Può ripetere?",
-      "Non c'è problema.",
-      "Di nulla."
+    "choicesItalian": [
+      "Non sono sicuro.",
+      "Sono sicurissimo.",
+      "Sono felice.",
+      "Sono stanco."
     ],
-    "correctAnswer": "Non c'è problema.",
+    "choicesEnglish": [
+      "I'm not sure.",
+      "I'm very sure.",
+      "I'm happy.",
+      "I'm tired."
+    ],
+    "correctAnswer": "Non sono sicuro.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Non c'è problema.\"."
+      "correctItalian": "Ottimo! Esprime incertezza.",
+      "incorrectItalian": "No, significa \"I'm not sure\".",
+      "correctEnglish": "Great! Expresses uncertainty.",
+      "incorrectEnglish": "No, it means I'm not sure."
     }
   },
   {
     "id": "s63-p34",
-    "italian": "Un secondo.",
-    "english": "A second.",
+    "italian": "Mi può confermare?",
+    "english": "Can you confirm (for me)?",
     "type": "phrase",
-    "choices": [
-      "A pagina tre.",
-      "Mi scusi.",
-      "Può rispiegare?",
-      "Un secondo."
+    "choicesItalian": [
+      "Mi può confermare?",
+      "Mi può rispondere?",
+      "Mi può scrivere?",
+      "Mi può guardare?"
     ],
-    "correctAnswer": "Un secondo.",
+    "choicesEnglish": [
+      "Can you confirm?",
+      "Can you answer me?",
+      "Can you write to me?",
+      "Can you look at me?"
+    ],
+    "correctAnswer": "Mi può confermare?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Un secondo.\"."
+      "correctItalian": "Corretto! Per essere sicuri al 100%.",
+      "incorrectItalian": "No, significa \"Can you confirm?\".",
+      "correctEnglish": "Correct! To be 100% sure.",
+      "incorrectEnglish": "No, it means can you confirm?"
     }
   },
   {
     "id": "s63-p35",
-    "italian": "Ripeta pure.",
-    "english": "Go ahead and repeat.",
+    "italian": "Quale punto?",
+    "english": "Which point?",
     "type": "phrase",
-    "choices": [
-      "Ripeta pure.",
-      "Non mi è chiaro.",
-      "Mi sono perso.",
-      "Più lentamente, per favore."
+    "choicesItalian": [
+      "Quale punto?",
+      "Quale piano?",
+      "Quale posto?",
+      "Quale pezzo?"
     ],
-    "correctAnswer": "Ripeta pure.",
+    "choicesEnglish": [
+      "Which point?",
+      "Which floor?",
+      "Which place?",
+      "Which piece?"
+    ],
+    "correctAnswer": "Quale punto?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ripeta pure.\"."
+      "correctItalian": "Giusto! Per focalizzare il dubbio.",
+      "incorrectItalian": "No, significa \"Which point?\".",
+      "correctEnglish": "Right! To focus the doubt.",
+      "incorrectEnglish": "No, it means which point?"
     }
   },
   {
     "id": "s63-p36",
-    "italian": "Spieghi meglio.",
-    "english": "Explain better (formal).",
+    "italian": "Questo termine qui.",
+    "english": "This term here.",
     "type": "phrase",
-    "choices": [
-      "Come si dice?",
-      "Dimmi pure.",
-      "Mi può aiutare?",
-      "Spieghi meglio."
+    "choicesItalian": [
+      "Questo termine qui.",
+      "Quel libro là.",
+      "Questa email oggi.",
+      "Quel report ieri."
     ],
-    "correctAnswer": "Spieghi meglio.",
+    "choicesEnglish": [
+      "This term here.",
+      "That book there.",
+      "This email today.",
+      "That report yesterday."
+    ],
+    "correctAnswer": "Questo termine qui.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Spieghi meglio.\"."
+      "correctItalian": "Esatto! Per indicare una parola specifica.",
+      "incorrectItalian": "No, significa \"This term here\".",
+      "correctEnglish": "Exactly! To indicate a specific word.",
+      "incorrectEnglish": "No, it means this term here."
     }
   },
   {
     "id": "s63-p37",
-    "italian": "Mi aiuti.",
-    "english": "Help me.",
+    "italian": "Scusi l'interruzione.",
+    "english": "Sorry for the interruption.",
     "type": "phrase",
-    "choices": [
-      "Come si scrive?",
-      "Più lentamente, per favore.",
-      "Mi aiuti.",
-      "È corretto?"
+    "choicesItalian": [
+      "Scusi l'interruzione.",
+      "Scusi il disturbo.",
+      "Scusi il ritardo.",
+      "Scusi il rumore."
     ],
-    "correctAnswer": "Mi aiuti.",
+    "choicesEnglish": [
+      "Sorry for the interruption.",
+      "Sorry for the bother.",
+      "Sorry for the delay.",
+      "Sorry for the noise."
+    ],
+    "correctAnswer": "Scusi l'interruzione.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi aiuti.\"."
+      "correctItalian": "Bravo! Molto educato prima di fare una domanda.",
+      "incorrectItalian": "No, significa \"Sorry for the interruption\".",
+      "correctEnglish": "Good! Very polite before asking a question.",
+      "incorrectEnglish": "No, it means sorry for the interruption."
     }
   },
   {
     "id": "s63-p38",
-    "italian": "Non sono sicuro.",
-    "english": "I'm not sure.",
+    "italian": "Può fare un esempio?",
+    "english": "Can you give an example?",
     "type": "phrase",
-    "choices": [
-      "Quasi chiaro.",
-      "È corretto?",
-      "Ho una domanda.",
-      "Non sono sicuro."
+    "choicesItalian": [
+      "Può fare un esempio?",
+      "Può fare un errore?",
+      "Può fare un regalo?",
+      "Può fare un favore?"
     ],
-    "correctAnswer": "Non sono sicuro.",
+    "choicesEnglish": [
+      "Can you give an example?",
+      "Can you make a mistake?",
+      "Can you give a gift?",
+      "Can you do a favor?"
+    ],
+    "correctAnswer": "Può fare un esempio?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Non sono sicuro.\"."
+      "correctItalian": "Sì! Per capire meglio la teoria.",
+      "incorrectItalian": "No, significa \"Can you give an example?\".",
+      "correctEnglish": "Yes! To better understand the theory.",
+      "incorrectEnglish": "No, it means can you give an example?"
     }
   },
   {
     "id": "s63-p39",
-    "italian": "Mi sono perso.",
-    "english": "I'm lost / I got lost.",
+    "italian": "A che pagina?",
+    "english": "On what page?",
     "type": "phrase",
-    "choices": [
-      "Non capisco.",
-      "Mi sono perso.",
-      "Hai ragione.",
-      "Questo termine?"
+    "choicesItalian": [
+      "A che pagina?",
+      "A che ora?",
+      "A che piano?",
+      "A che ufficio?"
     ],
-    "correctAnswer": "Mi sono perso.",
+    "choicesEnglish": [
+      "On what page?",
+      "At what time?",
+      "On which floor?",
+      "In which office?"
+    ],
+    "correctAnswer": "A che pagina?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi sono perso.\"."
+      "correctItalian": "Perfetto! Per orientarsi nel documento.",
+      "incorrectItalian": "No, significa \"On what page?\".",
+      "correctEnglish": "Perfect! To orient yourself in the document.",
+      "incorrectEnglish": "No, it means on what page?"
     }
   },
   {
     "id": "s63-p40",
-    "italian": "Quale punto?",
-    "english": "Which point?",
+    "italian": "È corretto?",
+    "english": "Is it correct?",
     "type": "phrase",
-    "choices": [
-      "A pagina tre.",
-      "Quale punto?",
-      "Può rispiegare?",
-      "Ancora una volta."
+    "choicesItalian": [
+      "È corretto?",
+      "È sbagliato?",
+      "È difficile?",
+      "È lontano?"
     ],
-    "correctAnswer": "Quale punto?",
+    "choicesEnglish": [
+      "Is it correct?",
+      "Is it wrong?",
+      "Is it difficult?",
+      "Is it far?"
+    ],
+    "correctAnswer": "È corretto?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Quale punto?\"."
+      "correctItalian": "Ottimo! Per chiedere conferma.",
+      "incorrectItalian": "No, significa \"Is it correct?\".",
+      "correctEnglish": "Great! To ask for confirmation.",
+      "incorrectEnglish": "No, it means is it correct?"
     }
   },
   {
     "id": "s63-p41",
-    "italian": "Questo termine?",
-    "english": "This term?",
+    "italian": "Non ho capito bene.",
+    "english": "I didn't quite understand.",
     "type": "phrase",
-    "choices": [
-      "Questo termine?",
-      "Come si scrive?",
-      "Ripeta pure.",
-      "Hai ragione."
+    "choicesItalian": [
+      "Non ho capito bene.",
+      "Ho capito tutto.",
+      "Non parlo bene.",
+      "Sto molto bene."
     ],
-    "correctAnswer": "Questo termine?",
+    "choicesEnglish": [
+      "I didn't quite understand.",
+      "I understood everything.",
+      "I don't speak well.",
+      "I am very well."
+    ],
+    "correctAnswer": "Non ho capito bene.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Questo termine?\"."
+      "correctItalian": "Corretto! Più sfumato di \"non capisco\".",
+      "incorrectItalian": "No, significa \"I didn't quite understand\".",
+      "correctEnglish": "Correct! More nuanced than \"I don't understand\".",
+      "incorrectEnglish": "No, it means I didn't quite understand."
     }
   },
   {
     "id": "s63-p42",
-    "italian": "A pagina tre.",
-    "english": "On page three.",
+    "italian": "Può parlare più piano?",
+    "english": "Can you speak more slowly? / Can you speak quieter?",
     "type": "phrase",
-    "choices": [
-      "In pratica.",
-      "A pagina tre.",
-      "Mi aiuti.",
-      "Grazie per la spiegazione."
+    "choicesItalian": [
+      "Può parlare più piano?",
+      "Può parlare più forte?",
+      "Può parlare più veloce?",
+      "Può parlare più alto?"
     ],
-    "correctAnswer": "A pagina tre.",
+    "choicesEnglish": [
+      "Can you speak more slowly?",
+      "Can you speak louder?",
+      "Can you speak faster?",
+      "Can you speak higher?"
+    ],
+    "correctAnswer": "Può parlare più piano?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"A pagina tre.\"."
+      "correctItalian": "Giusto! Nota: \"piano\" può significare sia \"slowly\" che \"quietly\".",
+      "incorrectItalian": "No, significa \"Can you speak more slowly/quietly?\".",
+      "correctEnglish": "Right! Note: \"piano\" can mean both \"slowly\" and \"quietly\".",
+      "incorrectEnglish": "No, it means can you speak more slowly or quietly?"
     }
   },
   {
     "id": "s63-p43",
-    "italian": "Nel report.",
-    "english": "In the report.",
+    "italian": "Scusi, ripeterebbe?",
+    "english": "Excuse me, would you repeat? (formal/polite)",
     "type": "phrase",
-    "choices": [
-      "Ho capito bene?",
-      "In pratica.",
-      "Spieghi meglio.",
-      "Nel report."
+    "choicesItalian": [
+      "Scusi, ripeterebbe?",
+      "Scusi, mangerebbe?",
+      "Scusi, scriverebbe?",
+      "Scusi, guarderebbe?"
     ],
-    "correctAnswer": "Nel report.",
+    "choicesEnglish": [
+      "Excuse me, would you repeat?",
+      "Excuse me, would you eat?",
+      "Excuse me, would you write?",
+      "Excuse me, would you look?"
+    ],
+    "correctAnswer": "Scusi, ripeterebbe?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Nel report.\"."
+      "correctItalian": "Bravo! Molto formale e gentile.",
+      "incorrectItalian": "No, significa \"Excuse me, would you repeat?\".",
+      "correctEnglish": "Good! Very formal and polite.",
+      "incorrectEnglish": "No, it means excuse me, would you repeat?"
     }
   },
   {
     "id": "s63-p44",
-    "italian": "Durante la lezione.",
-    "english": "During the lesson.",
+    "italian": "Non saprei.",
+    "english": "I wouldn't know. / I'm not sure.",
     "type": "phrase",
-    "choices": [
-      "Cosa?",
-      "Durante la lezione.",
-      "Ancora una volta.",
-      "Un secondo."
+    "choicesItalian": [
+      "Non saprei.",
+      "Non sapete.",
+      "Non sanno.",
+      "Non sappiamo."
     ],
-    "correctAnswer": "Durante la lezione.",
+    "choicesEnglish": [
+      "I wouldn't know.",
+      "You wouldn't know.",
+      "They wouldn't know.",
+      "We wouldn't know."
+    ],
+    "correctAnswer": "Non saprei.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Durante la lezione.\"."
+      "correctItalian": "Esatto! Indica incertezza nel rispondere.",
+      "incorrectItalian": "No, significa \"I wouldn't know\".",
+      "correctEnglish": "Exactly! Indicates uncertainty in answering.",
+      "incorrectEnglish": "No, it means I wouldn't know."
     }
   },
   {
     "id": "s63-p45",
-    "italian": "In ufficio.",
-    "english": "In the office.",
+    "italian": "In breve...",
+    "english": "In short... / Briefly...",
     "type": "phrase",
-    "choices": [
-      "Tutto chiaro.",
-      "Non c'è problema.",
-      "Ripeta pure.",
-      "In ufficio."
+    "choicesItalian": [
+      "In breve...",
+      "In tempo...",
+      "In ufficio...",
+      "In casa..."
     ],
-    "correctAnswer": "In ufficio.",
+    "choicesEnglish": [
+      "In short...",
+      "In time...",
+      "In the office...",
+      "In the house..."
+    ],
+    "correctAnswer": "In breve...",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"In ufficio.\"."
+      "correctItalian": "Sì! Per riassumere un concetto.",
+      "incorrectItalian": "No, significa \"In short\".",
+      "correctEnglish": "Yes! To summarize a concept.",
+      "incorrectEnglish": "No, it means in short."
     }
   },
   {
     "id": "s63-p46",
-    "italian": "Mi conferma?",
-    "english": "Can you confirm?",
+    "italian": "Cosa voleva dire?",
+    "english": "What did you want to say? / What did you mean?",
     "type": "phrase",
-    "choices": [
-      "Mi conferma?",
-      "Tutto chiaro.",
-      "A pagina tre.",
-      "Ho capito bene?"
+    "choicesItalian": [
+      "Cosa voleva dire?",
+      "Cosa voleva fare?",
+      "Cosa voleva vedere?",
+      "Cosa voleva scrivere?"
     ],
-    "correctAnswer": "Mi conferma?",
+    "choicesEnglish": [
+      "What did you want to say?",
+      "What did you want to do?",
+      "What did you want to see?",
+      "What did you want to write?"
+    ],
+    "correctAnswer": "Cosa voleva dire?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi conferma?\"."
+      "correctItalian": "Perfetto! Per chiarire un'affermazione passata.",
+      "incorrectItalian": "No, significa \"What did you mean?\".",
+      "correctEnglish": "Perfect! To clarify a past statement.",
+      "incorrectEnglish": "No, it means what did you mean?"
     }
   },
   {
     "id": "s63-p47",
-    "italian": "È corretto?",
-    "english": "Is it correct?",
+    "italian": "Quale formula?",
+    "english": "Which formula?",
     "type": "phrase",
-    "choices": [
-      "È corretto?",
-      "Ho un dubbio.",
-      "A pagina tre.",
-      "Come si dice?"
+    "choicesItalian": [
+      "Quale formula?",
+      "Quale forma?",
+      "Quale forza?",
+      "Quale foglio?"
     ],
-    "correctAnswer": "È corretto?",
+    "choicesEnglish": [
+      "Which formula?",
+      "Which shape?",
+      "Which strength?",
+      "Which sheet?"
+    ],
+    "correctAnswer": "Quale formula?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"È corretto?\"."
+      "correctItalian": "Giusto! Per specificare il dubbio matematico.",
+      "incorrectItalian": "No, significa \"Which formula?\".",
+      "correctEnglish": "Right! To specify the mathematical doubt.",
+      "incorrectEnglish": "No, it means which formula?"
     }
   },
   {
     "id": "s63-p48",
-    "italian": "Ho capito bene?",
-    "english": "Did I understand correctly?",
+    "italian": "Mi può rispiegare questo?",
+    "english": "Can you re-explain this to me?",
     "type": "phrase",
-    "choices": [
-      "Grazie mille.",
-      "Un secondo.",
-      "Grazie per la spiegazione.",
-      "Ho capito bene?"
+    "choicesItalian": [
+      "Mi può rispiegare questo?",
+      "Mi può ridare questo?",
+      "Mi può rifare questo?",
+      "Mi può rivedere questo?"
     ],
-    "correctAnswer": "Ho capito bene?",
+    "choicesEnglish": [
+      "Can you re-explain this?",
+      "Can you give this back?",
+      "Can you redo this?",
+      "Can you see this again?"
+    ],
+    "correctAnswer": "Mi può rispiegare questo?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho capito bene?\"."
+      "correctItalian": "Ottimo! Indica un punto preciso da rispiegare.",
+      "incorrectItalian": "No, significa \"Can you re-explain this?\".",
+      "correctEnglish": "Great! Indicates a precise point to be re-explained.",
+      "incorrectEnglish": "No, it means can you re-explain this?"
     }
   },
   {
     "id": "s63-p49",
-    "italian": "Mi può aiutare?",
-    "english": "Can you help me?",
+    "italian": "Ancora una volta.",
+    "english": "One more time.",
     "type": "phrase",
-    "choices": [
-      "Mi può aiutare?",
-      "Tutto bene.",
-      "Prego.",
-      "Di nulla."
+    "choicesItalian": [
+      "Ancora una volta.",
+      "Sempre una volta.",
+      "Mai una volta.",
+      "Solo una volta."
     ],
-    "correctAnswer": "Mi può aiutare?",
+    "choicesEnglish": [
+      "One more time.",
+      "Always one time.",
+      "Never once.",
+      "Only once."
+    ],
+    "correctAnswer": "Ancora una volta.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Mi può aiutare?\"."
+      "correctItalian": "Sì! Per chiedere un'ultima ripetizione.",
+      "incorrectItalian": "No, significa \"One more time\".",
+      "correctEnglish": "Yes! To ask for one last repetition.",
+      "incorrectEnglish": "No, it means one more time."
     }
   },
   {
     "id": "s63-p50",
-    "italian": "Grazie per la spiegazione.",
-    "english": "Thanks for the explanation.",
+    "italian": "Capito!",
+    "english": "Got it! / Understood!",
     "type": "phrase",
-    "choices": [
-      "Ancora una volta.",
-      "Grazie per la spiegazione.",
-      "Non capisco.",
-      "Questo termine?"
+    "choicesItalian": [
+      "Capito!",
+      "Finito!",
+      "Visto!",
+      "Sentito!"
     ],
-    "correctAnswer": "Grazie per la spiegazione.",
+    "choicesEnglish": [
+      "Got it!",
+      "Finished!",
+      "Seen!",
+      "Heard!"
+    ],
+    "correctAnswer": "Capito!",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Grazie per la spiegazione.\"."
+      "correctItalian": "Esatto! Esclamazione di successo.",
+      "incorrectItalian": "No, significa \"Got it!\".",
+      "correctEnglish": "Exactly! Exclamation of success.",
+      "incorrectEnglish": "No, it means got it!"
     }
   },
   {
     "id": "s63-p51",
-    "italian": "Ora è chiaro.",
-    "english": "Now it's clear.",
+    "italian": "Ho perso il filo.",
+    "english": "I lost my train of thought. / I got lost.",
     "type": "phrase",
-    "choices": [
-      "Ora è chiaro.",
-      "Non c'è problema.",
-      "Esattamente.",
-      "Come?"
+    "choicesItalian": [
+      "Ho perso il filo.",
+      "Ho perso il libro.",
+      "Ho perso il tempo.",
+      "Ho perso il treno."
     ],
-    "correctAnswer": "Ora è chiaro.",
+    "choicesEnglish": [
+      "I lost my train of thought.",
+      "I lost the book.",
+      "I lost time.",
+      "I missed the train."
+    ],
+    "correctAnswer": "Ho perso il filo.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ora è chiaro.\"."
+      "correctItalian": "Bravo! Idiomatismo per dire che non segui più.",
+      "incorrectItalian": "No, significa \"I lost my train of thought\".",
+      "correctEnglish": "Well done! Idiom to say you're no longer following.",
+      "incorrectEnglish": "No, it means I lost my train of thought."
+    }
+  },
+  {
+    "id": "s63-p52",
+    "italian": "Può specificare?",
+    "english": "Can you specify?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Può specificare?",
+      "Può sperare?",
+      "Può spostare?",
+      "Può spendere?"
+    ],
+    "choicesEnglish": [
+      "Can you specify?",
+      "Can you hope?",
+      "Can you move?",
+      "Can you spend?"
+    ],
+    "correctAnswer": "Può specificare?",
+    "feedback": {
+      "correctItalian": "Ottimo! Per chiedere più precisione.",
+      "incorrectItalian": "No, significa \"Can you specify?\".",
+      "correctEnglish": "Great! To ask for more precision.",
+      "incorrectEnglish": "No, it means can you specify?"
+    }
+  },
+  {
+    "id": "s63-p53",
+    "italian": "Tutto bene.",
+    "english": "All good. / Everything is fine.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Tutto bene.",
+      "Tutto male.",
+      "Tutto nuovo.",
+      "Tutto vecchio."
+    ],
+    "choicesEnglish": [
+      "All good.",
+      "All bad.",
+      "All new.",
+      "All old."
+    ],
+    "correctAnswer": "Tutto bene.",
+    "feedback": {
+      "correctItalian": "Sì! Per rassicurare l'interlocutore.",
+      "incorrectItalian": "No, significa \"All good\".",
+      "correctEnglish": "Yes! To reassure the interlocutor.",
+      "incorrectEnglish": "No, it means all good."
+    }
+  },
+  {
+    "id": "s63-p54",
+    "italian": "Nessun dubbio.",
+    "english": "No doubt. / No doubts.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Nessun dubbio.",
+      "Nessun errore.",
+      "Nessun problema.",
+      "Nessun aiuto."
+    ],
+    "choicesEnglish": [
+      "No doubt.",
+      "No error.",
+      "No problem.",
+      "No help."
+    ],
+    "correctAnswer": "Nessun dubbio.",
+    "feedback": {
+      "correctItalian": "Perfetto! Quando è tutto chiaro.",
+      "incorrectItalian": "No, significa \"No doubt\".",
+      "correctEnglish": "Perfect! When everything is clear.",
+      "incorrectEnglish": "No, it means no doubt."
+    }
+  },
+  {
+    "id": "s63-p55",
+    "italian": "Prego?",
+    "english": "Pardon? / What did you say?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Prego?",
+      "Scusi?",
+      "Grazie?",
+      "Ciao?"
+    ],
+    "choicesEnglish": [
+      "Pardon?",
+      "Excuse me?",
+      "Thanks?",
+      "Hi?"
+    ],
+    "correctAnswer": "Prego?",
+    "feedback": {
+      "correctItalian": "Esatto! Un modo molto cortese per dire \"Come?\".",
+      "incorrectItalian": "No, in questo contesto è una domanda per chiedere di ripetere.",
+      "correctEnglish": "Exactly! A very polite way to say \"What?\".",
+      "incorrectEnglish": "No, in this context it's a question to ask someone to repeat."
+    }
+  },
+  {
+    "id": "s63-p56",
+    "italian": "Dica pure.",
+    "english": "Please, go ahead (speaking).",
+    "type": "phrase",
+    "choicesItalian": [
+      "Dica pure.",
+      "Faccia pure.",
+      "Vada pure.",
+      "Venga pure."
+    ],
+    "choicesEnglish": [
+      "Go ahead (speaking).",
+      "Go ahead (doing).",
+      "Go ahead (going).",
+      "Go ahead (coming)."
+    ],
+    "correctAnswer": "Dica pure.",
+    "feedback": {
+      "correctItalian": "Ottimo! Forma formale per \"Dimmi pure\".",
+      "incorrectItalian": "No, significa \"Go ahead (speaking)\".",
+      "correctEnglish": "Great! Formal version of \"Dimmi pure\".",
+      "incorrectEnglish": "No, it means go ahead (speaking)."
+    }
+  },
+  {
+    "id": "s63-p57",
+    "italian": "Mi scusi.",
+    "english": "I'm sorry. / Excuse me.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Mi scusi.",
+      "Mi perdoni.",
+      "Mi aiuti.",
+      "Mi chiami."
+    ],
+    "choicesEnglish": [
+      "Excuse me.",
+      "Forgive me.",
+      "Help me.",
+      "Call me."
+    ],
+    "correctAnswer": "Mi scusi.",
+    "feedback": {
+      "correctItalian": "Giusto! Per attirare l'attenzione in modo educato.",
+      "incorrectItalian": "No, significa \"Excuse me\".",
+      "correctEnglish": "Right! To get attention politely.",
+      "incorrectEnglish": "No, it means excuse me."
+    }
+  },
+  {
+    "id": "s63-p58",
+    "italian": "Non ho capito questo passaggio.",
+    "english": "I didn't understand this step.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Non ho capito questo passaggio.",
+      "Non ho visto questo film.",
+      "Non ho mangiato questo dolce.",
+      "Non ho letto questo libro."
+    ],
+    "choicesEnglish": [
+      "I didn't understand this step.",
+      "I haven't seen this film.",
+      "I haven't eaten this cake.",
+      "I haven't read this book."
+    ],
+    "correctAnswer": "Non ho capito questo passaggio.",
+    "feedback": {
+      "correctItalian": "Sì! Per indicare un punto specifico di una spiegazione.",
+      "incorrectItalian": "No, significa \"I didn't understand this step\".",
+      "correctEnglish": "Yes! To indicate a specific point in an explanation.",
+      "incorrectEnglish": "No, it means I didn't understand this step."
+    }
+  },
+  {
+    "id": "s63-p59",
+    "italian": "Può chiarire?",
+    "english": "Can you clarify?",
+    "type": "phrase",
+    "choicesItalian": [
+      "Può chiarire?",
+      "Può chiamare?",
+      "Può chiudere?",
+      "Può chiedere?"
+    ],
+    "choicesEnglish": [
+      "Can you clarify?",
+      "Can you call?",
+      "Can you close?",
+      "Can you ask?"
+    ],
+    "correctAnswer": "Può chiarire?",
+    "feedback": {
+      "correctItalian": "Perfetto! Chiedere una spiegazione più precisa.",
+      "incorrectItalian": "No, significa \"Can you clarify?\".",
+      "correctEnglish": "Perfect! To ask for a more precise explanation.",
+      "incorrectEnglish": "No, it means can you clarify?"
+    }
+  },
+  {
+    "id": "s63-p60",
+    "italian": "Va bene così.",
+    "english": "It's fine like this. / That's fine.",
+    "type": "phrase",
+    "choicesItalian": [
+      "Va bene così.",
+      "Va male così.",
+      "Va tutto così.",
+      "Va bene colà."
+    ],
+    "choicesEnglish": [
+      "It's fine like this.",
+      "It's bad like this.",
+      "Everything goes like this.",
+      "It's fine over there."
+    ],
+    "correctAnswer": "Va bene così.",
+    "feedback": {
+      "correctItalian": "Esatto! Per dire che non servono altri chiarimenti.",
+      "incorrectItalian": "No, significa \"It's fine like this\".",
+      "correctEnglish": "Exactly! To say that no further clarification is needed.",
+      "incorrectEnglish": "No, it means it's fine like this."
     }
   }
 ]

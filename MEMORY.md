@@ -9,8 +9,19 @@
 - culture ✅
 - health ✅
 - social ✅
+- workstudy ✅
 
 ## Completed Scenarios
+- asking_for_clarification ✅ (upgraded, workstudy)
+- coworking_space ✅ (upgraded, workstudy)
+- email_follow_up ✅ (validated, workstudy)
+- first_day_at_work ✅ (validated, workstudy)
+- job_interview ✅ (validated, workstudy)
+- language_school ✅ (upgraded, workstudy)
+- printing_documents ✅ (upgraded, workstudy)
+- study_group ✅ (upgraded, workstudy)
+- team_meeting ✅ (validated, workstudy)
+- university_class ✅ (validated, workstudy)
 - apologizing ✅ (upgraded, social)
 - at_a_party ✅ (upgraded, social)
 - birthday_wishes ✅ (upgraded, social)
@@ -100,12 +111,16 @@
 - souvenir_shop ✅ (upgraded, shopping)
 
 ## Categories Requiring Audit
-- work_study (s60-s64)
-- miscellaneous
+- miscellaneous (asking_for_help, explaining_a_mistake, police_report, talking_about_money, time_and_dates)
+- tech (atm_machine, sim_card, etc.)
+- verbs (are, ere, ire)
+- adjectives
+- reflexive
+- animals
 
 ## Known Quality Problems
-- missing four-part feedback in older datasets (work_study, etc.)
-- undersized datasets in older scenarios (work_study, etc.)
+- missing four-part feedback in older datasets (miscellaneous, tech, verbs, etc.)
+- undersized datasets in older scenarios (miscellaneous, tech, etc.)
 
 ## Important Architectural Decisions
 - sentence stage should feel spoken

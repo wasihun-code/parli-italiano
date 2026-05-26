@@ -1,597 +1,902 @@
 [
   {
-    "id": "s69-v2-no",
-    "italian": "no",
-    "english": "no",
+    "id": "s69-v1",
+    "italian": "stampante",
+    "english": "printer",
     "type": "vocabulary",
-    "choices": [
-      "collega",
-      "computer",
-      "no",
-      "orario"
-    ],
-    "correctAnswer": "no",
+    "choicesItalian": ["stampante", "scanner", "computer", "schermo"],
+    "choicesEnglish": ["printer", "scanner", "computer", "screen"],
+    "correctAnswer": "stampante",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"no\"."
+      "correctItalian": "Esatto! Questa è la stampante.",
+      "incorrectItalian": "No, 'stampante' significa 'printer'.",
+      "correctEnglish": "Correct! This is the printer.",
+      "incorrectEnglish": "No, 'stampante' means 'printer'."
     }
   },
   {
-    "id": "s69-v1-si",
-    "italian": "sì",
-    "english": "yes",
+    "id": "s69-v2",
+    "italian": "scanner",
+    "english": "scanner",
     "type": "vocabulary",
-    "choices": [
-      "domanda",
-      "posso",
-      "fronte retro",
-      "sì"
-    ],
-    "correctAnswer": "sì",
+    "choicesItalian": ["scanner", "fotocopia", "foglio", "toner"],
+    "choicesEnglish": ["scanner", "photocopy", "sheet", "toner"],
+    "correctAnswer": "scanner",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"sì\"."
+      "correctItalian": "Perfetto! È lo scanner.",
+      "incorrectItalian": "No, si riferisce allo scanner.",
+      "correctEnglish": "Perfect! It's the scanner.",
+      "incorrectEnglish": "No, it refers to the scanner."
     }
   },
   {
-    "id": "s69-v11-devo",
-    "italian": "devo",
-    "english": "I must",
+    "id": "s69-v3",
+    "italian": "fotocopiatrice",
+    "english": "photocopier",
     "type": "vocabulary",
-    "choices": [
-      "devo",
-      "per favore",
-      "chiavetta USB",
-      "orario"
-    ],
-    "correctAnswer": "devo",
+    "choicesItalian": ["fotocopiatrice", "stampante", "inchiostro", "vassoio"],
+    "choicesEnglish": ["photocopier", "printer", "ink", "tray"],
+    "correctAnswer": "fotocopiatrice",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"devo\"."
+      "correctItalian": "Ottimo! La fotocopiatrice.",
+      "incorrectItalian": "No, questa è la fotocopiatrice.",
+      "correctEnglish": "Great! The photocopier.",
+      "incorrectEnglish": "No, this is the photocopier."
     }
   },
   {
-    "id": "s69-v21-email",
-    "italian": "email",
-    "english": "email",
-    "type": "vocabulary",
-    "choices": [
-      "non capisco",
-      "prego",
-      "email",
-      "posso"
-    ],
-    "correctAnswer": "email",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"email\"."
-    }
-  },
-  {
-    "id": "s69-v27-pausa",
-    "italian": "pausa",
-    "english": "break",
-    "type": "vocabulary",
-    "choices": [
-      "lezione",
-      "risposta",
-      "pausa",
-      "va bene"
-    ],
-    "correctAnswer": "pausa",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"pausa\"."
-    }
-  },
-  {
-    "id": "s69-v10-posso",
-    "italian": "posso",
-    "english": "I can / may I",
-    "type": "vocabulary",
-    "choices": [
-      "riunione",
-      "fronte retro",
-      "posso",
-      "no"
-    ],
-    "correctAnswer": "posso",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"posso\"."
-    }
-  },
-  {
-    "id": "s69-v4-prego",
-    "italian": "prego",
-    "english": "you are welcome",
-    "type": "vocabulary",
-    "choices": [
-      "grazie",
-      "prego",
-      "no",
-      "fronte retro"
-    ],
-    "correctAnswer": "prego",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"prego\"."
-    }
-  },
-  {
-    "id": "s69-v5-scusi",
-    "italian": "scusi",
-    "english": "excuse me",
-    "type": "vocabulary",
-    "choices": [
-      "posso",
-      "scusi",
-      "no",
-      "fronte retro"
-    ],
-    "correctAnswer": "scusi",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"scusi\"."
-    }
-  },
-  {
-    "id": "s69-v32-colore",
-    "italian": "colore",
-    "english": "color",
-    "type": "vocabulary",
-    "choices": [
-      "computer",
-      "no",
-      "formato A4",
-      "colore"
-    ],
-    "correctAnswer": "colore",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"colore\"."
-    }
-  },
-  {
-    "id": "s69-v3-grazie",
-    "italian": "grazie",
-    "english": "thank you",
-    "type": "vocabulary",
-    "choices": [
-      "scuola",
-      "prego",
-      "pausa",
-      "grazie"
-    ],
-    "correctAnswer": "grazie",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"grazie\"."
-    }
-  },
-  {
-    "id": "s69-v22-orario",
-    "italian": "orario",
-    "english": "schedule",
-    "type": "vocabulary",
-    "choices": [
-      "bianco e nero",
-      "orario",
-      "non capisco",
-      "per favore"
-    ],
-    "correctAnswer": "orario",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"orario\"."
-    }
-  },
-  {
-    "id": "s69-v33-pagina",
-    "italian": "pagina",
-    "english": "page",
-    "type": "vocabulary",
-    "choices": [
-      "pagina",
-      "no",
-      "studente",
-      "compito"
-    ],
-    "correctAnswer": "pagina",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"pagina\"."
-    }
-  },
-  {
-    "id": "s69-v14-scuola",
-    "italian": "scuola",
-    "english": "school",
-    "type": "vocabulary",
-    "choices": [
-      "scannerizzare",
-      "scuola",
-      "orario",
-      "email"
-    ],
-    "correctAnswer": "scuola",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"scuola\"."
-    }
-  },
-  {
-    "id": "s69-v12-voglio",
-    "italian": "voglio",
-    "english": "I want",
-    "type": "vocabulary",
-    "choices": [
-      "scannerizzare",
-      "voglio",
-      "no",
-      "collega"
-    ],
-    "correctAnswer": "voglio",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"voglio\"."
-    }
-  },
-  {
-    "id": "s69-v9-vorrei",
-    "italian": "vorrei",
-    "english": "I would like",
-    "type": "vocabulary",
-    "choices": [
-      "sì",
-      "devo",
-      "non capisco",
-      "vorrei"
-    ],
-    "correctAnswer": "vorrei",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"vorrei\"."
-    }
-  },
-  {
-    "id": "s69-v17-collega",
-    "italian": "collega",
-    "english": "colleague",
-    "type": "vocabulary",
-    "choices": [
-      "collega",
-      "colore",
-      "no",
-      "prego"
-    ],
-    "correctAnswer": "collega",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"collega\"."
-    }
-  },
-  {
-    "id": "s69-v23-compito",
-    "italian": "compito",
-    "english": "assignment",
-    "type": "vocabulary",
-    "choices": [
-      "no",
-      "per favore",
-      "scusi",
-      "compito"
-    ],
-    "correctAnswer": "compito",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"compito\"."
-    }
-  },
-  {
-    "id": "s69-v24-domanda",
-    "italian": "domanda",
-    "english": "question",
-    "type": "vocabulary",
-    "choices": [
-      "scuola",
-      "bianco e nero",
-      "computer",
-      "domanda"
-    ],
-    "correctAnswer": "domanda",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"domanda\"."
-    }
-  },
-  {
-    "id": "s69-v15-lezione",
-    "italian": "lezione",
-    "english": "lesson",
-    "type": "vocabulary",
-    "choices": [
-      "non capisco",
-      "computer",
-      "lezione",
-      "stampare"
-    ],
-    "correctAnswer": "lezione",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"lezione\"."
-    }
-  },
-  {
-    "id": "s69-v13-ufficio",
-    "italian": "ufficio",
-    "english": "office",
-    "type": "vocabulary",
-    "choices": [
-      "prego",
-      "vorrei",
-      "ufficio",
-      "non capisco"
-    ],
-    "correctAnswer": "ufficio",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"ufficio\"."
-    }
-  },
-  {
-    "id": "s69-v7-va-bene",
-    "italian": "va bene",
-    "english": "okay",
-    "type": "vocabulary",
-    "choices": [
-      "va bene",
-      "studente",
-      "scannerizzare",
-      "email"
-    ],
-    "correctAnswer": "va bene",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"va bene\"."
-    }
-  },
-  {
-    "id": "s69-v20-computer",
-    "italian": "computer",
-    "english": "computer",
-    "type": "vocabulary",
-    "choices": [
-      "devo",
-      "riunione",
-      "computer",
-      "scuola"
-    ],
-    "correctAnswer": "computer",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"computer\"."
-    }
-  },
-  {
-    "id": "s69-v26-progetto",
-    "italian": "progetto",
-    "english": "project",
-    "type": "vocabulary",
-    "choices": [
-      "progetto",
-      "lezione",
-      "pausa",
-      "email"
-    ],
-    "correctAnswer": "progetto",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"progetto\"."
-    }
-  },
-  {
-    "id": "s69-v25-risposta",
-    "italian": "risposta",
-    "english": "answer",
-    "type": "vocabulary",
-    "choices": [
-      "per favore",
-      "risposta",
-      "scusi",
-      "bianco e nero"
-    ],
-    "correctAnswer": "risposta",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"risposta\"."
-    }
-  },
-  {
-    "id": "s69-v16-riunione",
-    "italian": "riunione",
-    "english": "meeting",
-    "type": "vocabulary",
-    "choices": [
-      "email",
-      "riunione",
-      "colore",
-      "formato A4"
-    ],
-    "correctAnswer": "riunione",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"riunione\"."
-    }
-  },
-  {
-    "id": "s69-v28-stampare",
-    "italian": "stampare",
-    "english": "print",
-    "type": "vocabulary",
-    "choices": [
-      "stampare",
-      "bianco e nero",
-      "computer",
-      "scusi"
-    ],
-    "correctAnswer": "stampare",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"stampare\"."
-    }
-  },
-  {
-    "id": "s69-v18-studente",
-    "italian": "studente",
-    "english": "student",
-    "type": "vocabulary",
-    "choices": [
-      "colore",
-      "no",
-      "studente",
-      "fronte retro"
-    ],
-    "correctAnswer": "studente",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"studente\"."
-    }
-  },
-  {
-    "id": "s69-v34-formato-a4",
-    "italian": "formato A4",
-    "english": "A4 size",
-    "type": "vocabulary",
-    "choices": [
-      "computer",
-      "sì",
-      "formato A4",
-      "pausa"
-    ],
-    "correctAnswer": "formato A4",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"formato A4\"."
-    }
-  },
-  {
-    "id": "s69-v19-insegnante",
-    "italian": "insegnante",
-    "english": "teacher",
-    "type": "vocabulary",
-    "choices": [
-      "insegnante",
-      "devo",
-      "scusi",
-      "posso"
-    ],
-    "correctAnswer": "insegnante",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"insegnante\"."
-    }
-  },
-  {
-    "id": "s69-v6-per-favore",
-    "italian": "per favore",
-    "english": "please",
-    "type": "vocabulary",
-    "choices": [
-      "pausa",
-      "per favore",
-      "scusi",
-      "lezione"
-    ],
-    "correctAnswer": "per favore",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"per favore\"."
-    }
-  },
-  {
-    "id": "s69-v8-non-capisco",
-    "italian": "non capisco",
-    "english": "I do not understand",
-    "type": "vocabulary",
-    "choices": [
-      "scusi",
-      "pagina",
-      "per favore",
-      "non capisco"
-    ],
-    "correctAnswer": "non capisco",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"non capisco\"."
-    }
-  },
-  {
-    "id": "s69-v30-fronte-retro",
-    "italian": "fronte retro",
-    "english": "double-sided",
-    "type": "vocabulary",
-    "choices": [
-      "computer",
-      "fronte retro",
-      "per favore",
-      "scannerizzare"
-    ],
-    "correctAnswer": "fronte retro",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"fronte retro\"."
-    }
-  },
-  {
-    "id": "s69-v31-bianco-e-nero",
-    "italian": "bianco e nero",
-    "english": "black and white",
-    "type": "vocabulary",
-    "choices": [
-      "bianco e nero",
-      "risposta",
-      "formato A4",
-      "lezione"
-    ],
-    "correctAnswer": "bianco e nero",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"bianco e nero\"."
-    }
-  },
-  {
-    "id": "s69-v35-chiavetta-usb",
+    "id": "s69-v4",
     "italian": "chiavetta USB",
     "english": "USB stick",
     "type": "vocabulary",
-    "choices": [
-      "chiavetta USB",
-      "prego",
-      "stampare",
-      "pausa"
-    ],
+    "choicesItalian": ["chiavetta USB", "tessera", "codice", "file"],
+    "choicesEnglish": ["USB stick", "card", "code", "file"],
     "correctAnswer": "chiavetta USB",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"chiavetta USB\"."
+      "correctItalian": "Giusto! La chiavetta USB.",
+      "incorrectItalian": "No, è la chiavetta USB.",
+      "correctEnglish": "Right! The USB stick.",
+      "incorrectEnglish": "No, it's the USB stick."
     }
   },
   {
-    "id": "s69-v29-scannerizzare",
-    "italian": "scannerizzare",
+    "id": "s69-v5",
+    "italian": "documento",
+    "english": "document",
+    "type": "vocabulary",
+    "choicesItalian": ["documento", "pagina", "libro", "appunti"],
+    "choicesEnglish": ["document", "page", "book", "notes"],
+    "correctAnswer": "documento",
+    "feedback": {
+      "correctItalian": "Esatto! Un documento.",
+      "incorrectItalian": "No, significa 'documento'.",
+      "correctEnglish": "Correct! A document.",
+      "incorrectEnglish": "No, it means 'document'."
+    }
+  },
+  {
+    "id": "s69-v6",
+    "italian": "file",
+    "english": "file",
+    "type": "vocabulary",
+    "choicesItalian": ["file", "cartella", "email", "allegato"],
+    "choicesEnglish": ["file", "folder", "email", "attachment"],
+    "correctAnswer": "file",
+    "feedback": {
+      "correctItalian": "Ben fatto! È il file.",
+      "incorrectItalian": "No, si dice 'file'.",
+      "correctEnglish": "Well done! It's the file.",
+      "incorrectEnglish": "No, it's called 'file'."
+    }
+  },
+  {
+    "id": "s69-v7",
+    "italian": "PDF",
+    "english": "PDF",
+    "type": "vocabulary",
+    "choicesItalian": ["PDF", "immagine", "testo", "formato"],
+    "choicesEnglish": ["PDF", "image", "text", "format"],
+    "correctAnswer": "PDF",
+    "feedback": {
+      "correctItalian": "Corretto! Il formato PDF.",
+      "incorrectItalian": "No, è il PDF.",
+      "correctEnglish": "Correct! The PDF format.",
+      "incorrectEnglish": "No, it's the PDF."
+    }
+  },
+  {
+    "id": "s69-v8",
+    "italian": "foglio",
+    "english": "sheet",
+    "type": "vocabulary",
+    "choicesItalian": ["foglio", "libro", "quaderno", "copertina"],
+    "choicesEnglish": ["sheet", "book", "notebook", "cover"],
+    "correctAnswer": "foglio",
+    "feedback": {
+      "correctItalian": "Ottimo! Un foglio di carta.",
+      "incorrectItalian": "No, 'foglio' significa 'sheet'.",
+      "correctEnglish": "Great! A sheet of paper.",
+      "incorrectEnglish": "No, 'foglio' means 'sheet'."
+    }
+  },
+  {
+    "id": "s69-v9",
+    "italian": "carta",
+    "english": "paper",
+    "type": "vocabulary",
+    "choicesItalian": ["carta", "inchiostro", "toner", "plastica"],
+    "choicesEnglish": ["paper", "ink", "toner", "plastic"],
+    "correctAnswer": "carta",
+    "feedback": {
+      "correctItalian": "Esatto! La carta.",
+      "incorrectItalian": "No, è la carta.",
+      "correctEnglish": "Correct! The paper.",
+      "incorrectEnglish": "No, it's the paper."
+    }
+  },
+  {
+    "id": "s69-v10",
+    "italian": "toner",
+    "english": "toner",
+    "type": "vocabulary",
+    "choicesItalian": ["toner", "inchiostro", "polvere", "rullo"],
+    "choicesEnglish": ["toner", "ink", "dust", "roller"],
+    "correctAnswer": "toner",
+    "feedback": {
+      "correctItalian": "Giusto! Il toner per la stampante.",
+      "incorrectItalian": "No, è il toner.",
+      "correctEnglish": "Right! The printer toner.",
+      "incorrectEnglish": "No, it's the toner."
+    }
+  },
+  {
+    "id": "s69-v11",
+    "italian": "inchiostro",
+    "english": "ink",
+    "type": "vocabulary",
+    "choicesItalian": ["inchiostro", "colore", "vernice", "penna"],
+    "choicesEnglish": ["ink", "color", "paint", "pen"],
+    "correctAnswer": "inchiostro",
+    "feedback": {
+      "correctItalian": "Perfetto! L'inchiostro.",
+      "incorrectItalian": "No, significa 'inchiostro'.",
+      "correctEnglish": "Perfect! The ink.",
+      "incorrectEnglish": "No, it means 'ink'."
+    }
+  },
+  {
+    "id": "s69-v12",
+    "italian": "cassetto",
+    "english": "drawer",
+    "type": "vocabulary",
+    "choicesItalian": ["cassetto", "scaffale", "vassoio", "tavolo"],
+    "choicesEnglish": ["drawer", "shelf", "tray", "table"],
+    "correctAnswer": "cassetto",
+    "feedback": {
+      "correctItalian": "Esatto! Il cassetto della carta.",
+      "incorrectItalian": "No, è il cassetto.",
+      "correctEnglish": "Correct! The paper drawer.",
+      "incorrectEnglish": "No, it's the drawer."
+    }
+  },
+  {
+    "id": "s69-v13",
+    "italian": "vassoio",
+    "english": "tray",
+    "type": "vocabulary",
+    "choicesItalian": ["vassoio", "piatto", "supporto", "uscita"],
+    "choicesEnglish": ["tray", "plate", "support", "exit"],
+    "correctAnswer": "vassoio",
+    "feedback": {
+      "correctItalian": "Corretto! Il vassoio della stampante.",
+      "incorrectItalian": "No, si chiama vassoio.",
+      "correctEnglish": "Correct! The printer tray.",
+      "incorrectEnglish": "No, it's called a tray."
+    }
+  },
+  {
+    "id": "s69-v14",
+    "italian": "display",
+    "english": "display",
+    "type": "vocabulary",
+    "choicesItalian": ["display", "tasto", "luce", "vetro"],
+    "choicesEnglish": ["display", "button", "light", "glass"],
+    "correctAnswer": "display",
+    "feedback": {
+      "correctItalian": "Ottimo! Il display o schermo.",
+      "incorrectItalian": "No, è il display.",
+      "correctEnglish": "Great! The display or screen.",
+      "incorrectEnglish": "No, it's the display."
+    }
+  },
+  {
+    "id": "s69-v15",
+    "italian": "tasto",
+    "english": "button",
+    "type": "vocabulary",
+    "choicesItalian": ["tasto", "schermo", "cavo", "presa"],
+    "choicesEnglish": ["button", "screen", "cable", "plug"],
+    "correctAnswer": "tasto",
+    "feedback": {
+      "correctItalian": "Esatto! Il tasto da premere.",
+      "incorrectItalian": "No, 'tasto' significa 'button'.",
+      "correctEnglish": "Correct! The button to press.",
+      "incorrectEnglish": "No, 'tasto' means 'button'."
+    }
+  },
+  {
+    "id": "s69-v16",
+    "italian": "menù",
+    "english": "menu",
+    "type": "vocabulary",
+    "choicesItalian": ["menù", "lista", "opzioni", "scelta"],
+    "choicesEnglish": ["menu", "list", "options", "choice"],
+    "correctAnswer": "menù",
+    "feedback": {
+      "correctItalian": "Perfetto! Il menù delle impostazioni.",
+      "incorrectItalian": "No, è il menù.",
+      "correctEnglish": "Perfect! The settings menu.",
+      "incorrectEnglish": "No, it's the menu."
+    }
+  },
+  {
+    "id": "s69-v17",
+    "italian": "impostazioni",
+    "english": "settings",
+    "type": "vocabulary",
+    "choicesItalian": ["impostazioni", "regole", "ordini", "strumenti"],
+    "choicesEnglish": ["settings", "rules", "orders", "tools"],
+    "correctAnswer": "impostazioni",
+    "feedback": {
+      "correctItalian": "Giusto! Le impostazioni di stampa.",
+      "incorrectItalian": "No, significa 'settings'.",
+      "correctEnglish": "Right! The print settings.",
+      "incorrectEnglish": "No, it means 'settings'."
+    }
+  },
+  {
+    "id": "s69-v18",
+    "italian": "stampa",
+    "english": "print",
+    "type": "vocabulary",
+    "choicesItalian": ["stampa", "copia", "scansione", "invio"],
+    "choicesEnglish": ["print", "copy", "scan", "sending"],
+    "correctAnswer": "stampa",
+    "feedback": {
+      "correctItalian": "Esatto! Una stampa.",
+      "incorrectItalian": "No, è una stampa.",
+      "correctEnglish": "Correct! A print.",
+      "incorrectEnglish": "No, it's a print."
+    }
+  },
+  {
+    "id": "s69-v19",
+    "italian": "scansione",
     "english": "scan",
     "type": "vocabulary",
-    "choices": [
-      "scannerizzare",
-      "pagina",
-      "computer",
-      "fronte retro"
-    ],
+    "choicesItalian": ["scansione", "foto", "lettura", "scrittura"],
+    "choicesEnglish": ["scan", "photo", "reading", "writing"],
+    "correctAnswer": "scansione",
+    "feedback": {
+      "correctItalian": "Ottimo! La scansione del documento.",
+      "incorrectItalian": "No, è la scansione.",
+      "correctEnglish": "Great! The scan of the document.",
+      "incorrectEnglish": "No, it's the scan."
+    }
+  },
+  {
+    "id": "s69-v20",
+    "italian": "fotocopia",
+    "english": "photocopy",
+    "type": "vocabulary",
+    "choicesItalian": ["fotocopia", "originale", "bozza", "disegno"],
+    "choicesEnglish": ["photocopy", "original", "draft", "drawing"],
+    "correctAnswer": "fotocopia",
+    "feedback": {
+      "correctItalian": "Corretto! Una fotocopia.",
+      "incorrectItalian": "No, è una fotocopia.",
+      "correctEnglish": "Correct! A photocopy.",
+      "incorrectEnglish": "No, it's a photocopy."
+    }
+  },
+  {
+    "id": "s69-v21",
+    "italian": "fronte retro",
+    "english": "double-sided",
+    "type": "vocabulary",
+    "choicesItalian": ["fronte retro", "solo fronte", "una pagina", "doppio"],
+    "choicesEnglish": ["double-sided", "front only", "one page", "double"],
+    "correctAnswer": "fronte retro",
+    "feedback": {
+      "correctItalian": "Perfetto! Stampa fronte retro.",
+      "incorrectItalian": "No, significa su entrambi i lati.",
+      "correctEnglish": "Perfect! Double-sided printing.",
+      "incorrectEnglish": "No, it means on both sides."
+    }
+  },
+  {
+    "id": "s69-v22",
+    "italian": "bianco e nero",
+    "english": "black and white",
+    "type": "vocabulary",
+    "choicesItalian": ["bianco e nero", "a colori", "grigio", "scuro"],
+    "choicesEnglish": ["black and white", "in color", "gray", "dark"],
+    "correctAnswer": "bianco e nero",
+    "feedback": {
+      "correctItalian": "Esatto! Senza colori.",
+      "incorrectItalian": "No, è bianco e nero.",
+      "correctEnglish": "Correct! Without colors.",
+      "incorrectEnglish": "No, it's black and white."
+    }
+  },
+  {
+    "id": "s69-v23",
+    "italian": "a colori",
+    "english": "in color",
+    "type": "vocabulary",
+    "choicesItalian": ["a colori", "bianco e nero", "chiaro", "vivace"],
+    "choicesEnglish": ["in color", "black and white", "clear", "vivid"],
+    "correctAnswer": "a colori",
+    "feedback": {
+      "correctItalian": "Giusto! Stampa a colori.",
+      "incorrectItalian": "No, significa 'in color'.",
+      "correctEnglish": "Right! Color print.",
+      "incorrectEnglish": "No, it means 'in color'."
+    }
+  },
+  {
+    "id": "s69-v24",
+    "italian": "formato A4",
+    "english": "A4 size",
+    "type": "vocabulary",
+    "choicesItalian": ["formato A4", "formato A3", "lettera", "busta"],
+    "choicesEnglish": ["A4 size", "A3 size", "letter", "envelope"],
+    "correctAnswer": "formato A4",
+    "feedback": {
+      "correctItalian": "Corretto! Il formato standard.",
+      "incorrectItalian": "No, è il formato A4.",
+      "correctEnglish": "Correct! The standard size.",
+      "incorrectEnglish": "No, it's the A4 size."
+    }
+  },
+  {
+    "id": "s69-v25",
+    "italian": "tessera",
+    "english": "card",
+    "type": "vocabulary",
+    "choicesItalian": ["tessera", "biglietto", "soldi", "chiave"],
+    "choicesEnglish": ["card", "ticket", "money", "key"],
+    "correctAnswer": "tessera",
+    "feedback": {
+      "correctItalian": "Ottimo! La tessera per la stampante.",
+      "incorrectItalian": "No, è la tessera.",
+      "correctEnglish": "Great! The card for the printer.",
+      "incorrectEnglish": "No, it's the card."
+    }
+  },
+  {
+    "id": "s69-v26",
+    "italian": "credito",
+    "english": "credit",
+    "type": "vocabulary",
+    "choicesItalian": ["credito", "debito", "conto", "prezzo"],
+    "choicesEnglish": ["credit", "debt", "account", "price"],
+    "correctAnswer": "credito",
+    "feedback": {
+      "correctItalian": "Esatto! Il credito sulla tessera.",
+      "incorrectItalian": "No, significa 'credit'.",
+      "correctEnglish": "Correct! The credit on the card.",
+      "incorrectEnglish": "No, it means 'credit'."
+    }
+  },
+  {
+    "id": "s69-v27",
+    "italian": "ricarica",
+    "english": "recharge",
+    "type": "vocabulary",
+    "choicesItalian": ["ricarica", "scarico", "invio", "acquisto"],
+    "choicesEnglish": ["recharge", "discharge", "sending", "purchase"],
+    "correctAnswer": "ricarica",
+    "feedback": {
+      "correctItalian": "Perfetto! Fare una ricarica.",
+      "incorrectItalian": "No, è la ricarica.",
+      "correctEnglish": "Perfect! Making a recharge.",
+      "incorrectEnglish": "No, it's the recharge."
+    }
+  },
+  {
+    "id": "s69-v28",
+    "italian": "costo",
+    "english": "cost",
+    "type": "vocabulary",
+    "choicesItalian": ["costo", "guadagno", "offerta", "regalo"],
+    "choicesEnglish": ["cost", "gain", "offer", "gift"],
+    "correctAnswer": "costo",
+    "feedback": {
+      "correctItalian": "Giusto! Il costo della copia.",
+      "incorrectItalian": "No, 'costo' significa 'cost'.",
+      "correctEnglish": "Right! The cost of the copy.",
+      "incorrectEnglish": "No, 'costo' means 'cost'."
+    }
+  },
+  {
+    "id": "s69-v29",
+    "italian": "centesimi",
+    "english": "cents",
+    "type": "vocabulary",
+    "choicesItalian": ["centesimi", "euro", "monete", "spicci"],
+    "choicesEnglish": ["cents", "euros", "coins", "change"],
+    "correctAnswer": "centesimi",
+    "feedback": {
+      "correctItalian": "Esatto! I centesimi di euro.",
+      "incorrectItalian": "No, sono centesimi.",
+      "correctEnglish": "Correct! The euro cents.",
+      "incorrectEnglish": "No, they are cents."
+    }
+  },
+  {
+    "id": "s69-v30",
+    "italian": "monete",
+    "english": "coins",
+    "type": "vocabulary",
+    "choicesItalian": ["monete", "banconote", "carte", "assegni"],
+    "choicesEnglish": ["coins", "banknotes", "cards", "checks"],
+    "correctAnswer": "monete",
+    "feedback": {
+      "correctItalian": "Ottimo! Le monete di metallo.",
+      "incorrectItalian": "No, 'monete' significa 'coins'.",
+      "correctEnglish": "Great! The metal coins.",
+      "incorrectEnglish": "No, 'monete' means 'coins'."
+    }
+  },
+  {
+    "id": "s69-v31",
+    "italian": "banconota",
+    "english": "banknote",
+    "type": "vocabulary",
+    "choicesItalian": ["banconota", "moneta", "centesimo", "tessera"],
+    "choicesEnglish": ["banknote", "coin", "cent", "card"],
+    "correctAnswer": "banconota",
+    "feedback": {
+      "correctItalian": "Corretto! Una banconota di carta.",
+      "incorrectItalian": "No, è una banconota.",
+      "correctEnglish": "Correct! A paper banknote.",
+      "incorrectEnglish": "No, it's a banknote."
+    }
+  },
+  {
+    "id": "s69-v32",
+    "italian": "email",
+    "english": "email",
+    "type": "vocabulary",
+    "choicesItalian": ["email", "posta", "messaggio", "chiamata"],
+    "choicesEnglish": ["email", "mail", "message", "call"],
+    "correctAnswer": "email",
+    "feedback": {
+      "correctItalian": "Esatto! La posta elettronica.",
+      "incorrectItalian": "No, è l'email.",
+      "correctEnglish": "Correct! Electronic mail.",
+      "incorrectEnglish": "No, it's email."
+    }
+  },
+  {
+    "id": "s69-v33",
+    "italian": "allegato",
+    "english": "attachment",
+    "type": "vocabulary",
+    "choicesItalian": ["allegato", "testo", "link", "firma"],
+    "choicesEnglish": ["attachment", "text", "link", "signature"],
+    "correctAnswer": "allegato",
+    "feedback": {
+      "correctItalian": "Perfetto! Un allegato all'email.",
+      "incorrectItalian": "No, significa 'attachment'.",
+      "correctEnglish": "Perfect! An email attachment.",
+      "incorrectEnglish": "No, it means 'attachment'."
+    }
+  },
+  {
+    "id": "s69-v34",
+    "italian": "coperchio",
+    "english": "lid",
+    "type": "vocabulary",
+    "choicesItalian": ["coperchio", "base", "vassoio", "tasto"],
+    "choicesEnglish": ["lid", "base", "tray", "button"],
+    "correctAnswer": "coperchio",
+    "feedback": {
+      "correctItalian": "Giusto! Il coperchio dello scanner.",
+      "incorrectItalian": "No, è il coperchio.",
+      "correctEnglish": "Right! The scanner lid.",
+      "incorrectEnglish": "No, it's the lid."
+    }
+  },
+  {
+    "id": "s69-v35",
+    "italian": "ricezione",
+    "english": "reception/receiving",
+    "type": "vocabulary",
+    "choicesItalian": ["ricezione", "invio", "attesa", "consegna"],
+    "choicesEnglish": ["reception/receiving", "sending", "wait", "delivery"],
+    "correctAnswer": "ricezione",
+    "feedback": {
+      "correctItalian": "Corretto! Ricezione documenti.",
+      "incorrectItalian": "No, significa ricevere.",
+      "correctEnglish": "Correct! Receiving documents.",
+      "incorrectEnglish": "No, it means receiving."
+    }
+  },
+  {
+    "id": "s69-v36",
+    "italian": "invio",
+    "english": "sending",
+    "type": "vocabulary",
+    "choicesItalian": ["invio", "ricezione", "ritorno", "fine"],
+    "choicesEnglish": ["sending", "reception", "return", "end"],
+    "correctAnswer": "invio",
+    "feedback": {
+      "correctItalian": "Ottimo! L'invio del file.",
+      "incorrectItalian": "No, significa mandare.",
+      "correctEnglish": "Great! Sending the file.",
+      "incorrectEnglish": "No, it means sending."
+    }
+  },
+  {
+    "id": "s69-v37",
+    "italian": "errore",
+    "english": "error",
+    "type": "vocabulary",
+    "choicesItalian": ["errore", "successo", "prova", "scelta"],
+    "choicesEnglish": ["error", "success", "trial", "choice"],
+    "correctAnswer": "errore",
+    "feedback": {
+      "correctItalian": "Esatto! Un errore di sistema.",
+      "incorrectItalian": "No, è un errore.",
+      "correctEnglish": "Correct! A system error.",
+      "incorrectEnglish": "No, it's an error."
+    }
+  },
+  {
+    "id": "s69-v38",
+    "italian": "inceppamento",
+    "english": "jam",
+    "type": "vocabulary",
+    "choicesItalian": ["inceppamento", "rottura", "blocco", "guasto"],
+    "choicesEnglish": ["jam", "breakage", "block", "fault"],
+    "correctAnswer": "inceppamento",
+    "feedback": {
+      "correctItalian": "Perfetto! Inceppamento della carta.",
+      "incorrectItalian": "No, significa che si è bloccato.",
+      "correctEnglish": "Perfect! Paper jam.",
+      "incorrectEnglish": "No, it means it's blocked."
+    }
+  },
+  {
+    "id": "s69-v39",
+    "italian": "guasto",
+    "english": "fault/broken",
+    "type": "vocabulary",
+    "choicesItalian": ["guasto", "funzionante", "nuovo", "veloce"],
+    "choicesEnglish": ["fault/broken", "working", "new", "fast"],
+    "correctAnswer": "guasto",
+    "feedback": {
+      "correctItalian": "Giusto! Qualcosa che non va.",
+      "incorrectItalian": "No, 'guasto' significa 'broken'.",
+      "correctEnglish": "Right! Something wrong.",
+      "incorrectEnglish": "No, 'guasto' means 'broken'."
+    }
+  },
+  {
+    "id": "s69-v40",
+    "italian": "tecnico",
+    "english": "technician",
+    "type": "vocabulary",
+    "choicesItalian": ["tecnico", "impiegato", "studente", "professore"],
+    "choicesEnglish": ["technician", "clerk", "student", "professor"],
+    "correctAnswer": "tecnico",
+    "feedback": {
+      "correctItalian": "Corretto! Il tecnico della stampante.",
+      "incorrectItalian": "No, è il tecnico.",
+      "correctEnglish": "Correct! The printer technician.",
+      "incorrectEnglish": "No, it's the technician."
+    }
+  },
+  {
+    "id": "s69-v41",
+    "italian": "codice",
+    "english": "code",
+    "type": "vocabulary",
+    "choicesItalian": ["codice", "nome", "indirizzo", "numero"],
+    "choicesEnglish": ["code", "name", "address", "number"],
+    "correctAnswer": "codice",
+    "feedback": {
+      "correctItalian": "Ottimo! Il codice d'accesso.",
+      "incorrectItalian": "No, significa 'code'.",
+      "correctEnglish": "Great! The access code.",
+      "incorrectEnglish": "No, it means 'code'."
+    }
+  },
+  {
+    "id": "s69-v42",
+    "italian": "password",
+    "english": "password",
+    "type": "vocabulary",
+    "choicesItalian": ["password", "chiave", "tessera", "account"],
+    "choicesEnglish": ["password", "key", "card", "account"],
+    "correctAnswer": "password",
+    "feedback": {
+      "correctItalian": "Esatto! La password segreta.",
+      "incorrectItalian": "No, è la password.",
+      "correctEnglish": "Correct! The secret password.",
+      "incorrectEnglish": "No, it's the password."
+    }
+  },
+  {
+    "id": "s69-v43",
+    "italian": "wifi",
+    "english": "wifi",
+    "type": "vocabulary",
+    "choicesItalian": ["wifi", "cavo", "rete", "connessione"],
+    "choicesEnglish": ["wifi", "cable", "network", "connection"],
+    "correctAnswer": "wifi",
+    "feedback": {
+      "correctItalian": "Perfetto! La connessione wifi.",
+      "incorrectItalian": "No, è il wifi.",
+      "correctEnglish": "Perfect! The wifi connection.",
+      "incorrectEnglish": "No, it's the wifi."
+    }
+  },
+  {
+    "id": "s69-v44",
+    "italian": "computer",
+    "english": "computer",
+    "type": "vocabulary",
+    "choicesItalian": ["computer", "telefono", "tablet", "schermo"],
+    "choicesEnglish": ["computer", "phone", "tablet", "screen"],
+    "correctAnswer": "computer",
+    "feedback": {
+      "correctItalian": "Giusto! Il computer.",
+      "incorrectItalian": "No, è il computer.",
+      "correctEnglish": "Right! The computer.",
+      "incorrectEnglish": "No, it's the computer."
+    }
+  },
+  {
+    "id": "s69-v45",
+    "italian": "schermo",
+    "english": "screen",
+    "type": "vocabulary",
+    "choicesItalian": ["schermo", "vetro", "tasto", "cavo"],
+    "choicesEnglish": ["screen", "glass", "button", "cable"],
+    "correctAnswer": "schermo",
+    "feedback": {
+      "correctItalian": "Corretto! Lo schermo del PC.",
+      "incorrectItalian": "No, significa 'screen'.",
+      "correctEnglish": "Correct! The PC screen.",
+      "incorrectEnglish": "No, it means 'screen'."
+    }
+  },
+  {
+    "id": "s69-v46",
+    "italian": "stampare",
+    "english": "to print",
+    "type": "vocabulary",
+    "choicesItalian": ["stampare", "leggere", "scrivere", "cancellare"],
+    "choicesEnglish": ["to print", "to read", "to write", "to delete"],
+    "correctAnswer": "stampare",
+    "feedback": {
+      "correctItalian": "Ottimo! Il verbo stampare.",
+      "incorrectItalian": "No, 'stampare' significa 'to print'.",
+      "correctEnglish": "Great! The verb to print.",
+      "incorrectEnglish": "No, 'stampare' means 'to print'."
+    }
+  },
+  {
+    "id": "s69-v47",
+    "italian": "scannerizzare",
+    "english": "to scan",
+    "type": "vocabulary",
+    "choicesItalian": ["scannerizzare", "fotografare", "copiare", "inviare"],
+    "choicesEnglish": ["to scan", "to photograph", "to copy", "to send"],
     "correctAnswer": "scannerizzare",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"scannerizzare\"."
+      "correctItalian": "Esatto! Scannerizzare un foglio.",
+      "incorrectItalian": "No, è scannerizzare.",
+      "correctEnglish": "Correct! To scan a sheet.",
+      "incorrectEnglish": "No, it's to scan."
+    }
+  },
+  {
+    "id": "s69-v48",
+    "italian": "fotocopiare",
+    "english": "to photocopy",
+    "type": "vocabulary",
+    "choicesItalian": ["fotocopiare", "disegnare", "stampare", "ritagliare"],
+    "choicesEnglish": ["to photocopy", "to draw", "to print", "to cut out"],
+    "correctAnswer": "fotocopiare",
+    "feedback": {
+      "correctItalian": "Perfetto! Fare una fotocopia.",
+      "incorrectItalian": "No, è fotocopiare.",
+      "correctEnglish": "Perfect! To make a photocopy.",
+      "incorrectEnglish": "No, it's to photocopy."
+    }
+  },
+  {
+    "id": "s69-v49",
+    "italian": "inserire",
+    "english": "to insert",
+    "type": "vocabulary",
+    "choicesItalian": ["inserire", "togliere", "buttare", "aprire"],
+    "choicesEnglish": ["to insert", "to remove", "to throw away", "to open"],
+    "correctAnswer": "inserire",
+    "feedback": {
+      "correctItalian": "Giusto! Inserire la chiavetta.",
+      "incorrectItalian": "No, 'inserire' significa 'to insert'.",
+      "correctEnglish": "Right! To insert the stick.",
+      "incorrectEnglish": "No, 'inserire' means 'to insert'."
+    }
+  },
+  {
+    "id": "s69-v50",
+    "italian": "inviare",
+    "english": "to send",
+    "type": "vocabulary",
+    "choicesItalian": ["inviare", "ricevere", "aspettare", "fermare"],
+    "choicesEnglish": ["to send", "to receive", "to wait", "to stop"],
+    "correctAnswer": "inviare",
+    "feedback": {
+      "correctItalian": "Corretto! Inviare un file.",
+      "incorrectItalian": "No, significa mandare.",
+      "correctEnglish": "Correct! To send a file.",
+      "incorrectEnglish": "No, it means to send."
+    }
+  },
+  {
+    "id": "s69-v51",
+    "italian": "caricare",
+    "english": "to upload/load",
+    "type": "vocabulary",
+    "choicesItalian": ["caricare", "scaricare", "svuotare", "pulire"],
+    "choicesEnglish": ["to upload/load", "to download", "to empty", "to clean"],
+    "correctAnswer": "caricare",
+    "feedback": {
+      "correctItalian": "Ottimo! Caricare i fogli o un file.",
+      "incorrectItalian": "No, significa 'to load' o 'to upload'.",
+      "correctEnglish": "Great! To load sheets or upload a file.",
+      "incorrectEnglish": "No, it means 'to load' or 'to upload'."
+    }
+  },
+  {
+    "id": "s69-v52",
+    "italian": "scaricare",
+    "english": "to download",
+    "type": "vocabulary",
+    "choicesItalian": ["scaricare", "caricare", "salvare", "cancellare"],
+    "choicesEnglish": ["to download", "to upload", "to save", "to delete"],
+    "correctAnswer": "scaricare",
+    "feedback": {
+      "correctItalian": "Esatto! Scaricare da internet.",
+      "incorrectItalian": "No, 'scaricare' significa 'to download'.",
+      "correctEnglish": "Correct! To download from the internet.",
+      "incorrectEnglish": "No, 'scaricare' means 'to download'."
+    }
+  },
+  {
+    "id": "s69-v53",
+    "italian": "scegliere",
+    "english": "to choose",
+    "type": "vocabulary",
+    "choicesItalian": ["scegliere", "obbedire", "guardare", "sentire"],
+    "choicesEnglish": ["to choose", "to obey", "to look", "to hear"],
+    "correctAnswer": "scegliere",
+    "feedback": {
+      "correctItalian": "Perfetto! Scegliere un'opzione.",
+      "incorrectItalian": "No, significa 'to choose'.",
+      "correctEnglish": "Perfect! To choose an option.",
+      "incorrectEnglish": "No, it means 'to choose'."
+    }
+  },
+  {
+    "id": "s69-v54",
+    "italian": "selezionare",
+    "english": "to select",
+    "type": "vocabulary",
+    "choicesItalian": ["selezionare", "cancellare", "unire", "dividere"],
+    "choicesEnglish": ["to select", "to delete", "to join", "to divide"],
+    "correctAnswer": "selezionare",
+    "feedback": {
+      "correctItalian": "Giusto! Selezionare il formato.",
+      "incorrectItalian": "No, significa 'to select'.",
+      "correctEnglish": "Right! To select the format.",
+      "incorrectEnglish": "No, it means 'to select'."
+    }
+  },
+  {
+    "id": "s69-v55",
+    "italian": "incepparsi",
+    "english": "to get jammed",
+    "type": "vocabulary",
+    "choicesItalian": ["incepparsi", "rompersi", "chiudersi", "bruciarsi"],
+    "choicesEnglish": ["to get jammed", "to break", "to close", "to burn"],
+    "correctAnswer": "incepparsi",
+    "feedback": {
+      "correctItalian": "Corretto! La carta si è inceppata.",
+      "incorrectItalian": "No, significa bloccarsi.",
+      "correctEnglish": "Correct! The paper is jammed.",
+      "incorrectEnglish": "No, it means to get stuck."
+    }
+  },
+  {
+    "id": "s69-v56",
+    "italian": "funzionare",
+    "english": "to work",
+    "type": "vocabulary",
+    "choicesItalian": ["funzionare", "dormire", "giocare", "correre"],
+    "choicesEnglish": ["to work", "to sleep", "to play", "to run"],
+    "correctAnswer": "funzionare",
+    "feedback": {
+      "correctItalian": "Ottimo! Funziona tutto bene.",
+      "incorrectItalian": "No, significa 'to work' (macchina).",
+      "correctEnglish": "Great! Everything works well.",
+      "incorrectEnglish": "No, it means 'to work' (machine)."
+    }
+  },
+  {
+    "id": "s69-v57",
+    "italian": "ricaricare",
+    "english": "to recharge",
+    "type": "vocabulary",
+    "choicesItalian": ["ricaricare", "vendere", "pagare", "rubare"],
+    "choicesEnglish": ["to recharge", "to sell", "to pay", "to steal"],
+    "correctAnswer": "ricaricare",
+    "feedback": {
+      "correctItalian": "Esatto! Ricaricare il credito.",
+      "incorrectItalian": "No, significa aggiungere soldi.",
+      "correctEnglish": "Correct! To recharge credit.",
+      "incorrectEnglish": "No, it means adding money."
+    }
+  },
+  {
+    "id": "s69-v58",
+    "italian": "cambiare",
+    "english": "to change",
+    "type": "vocabulary",
+    "choicesItalian": ["cambiare", "tenere", "lasciare", "perdere"],
+    "choicesEnglish": ["to change", "to keep", "to leave", "to lose"],
+    "correctAnswer": "cambiare",
+    "feedback": {
+      "correctItalian": "Perfetto! Cambiare i soldi.",
+      "incorrectItalian": "No, significa 'to change'.",
+      "correctEnglish": "Perfect! To change money.",
+      "incorrectEnglish": "No, it means 'to change'."
+    }
+  },
+  {
+    "id": "s69-v59",
+    "italian": "rotto",
+    "english": "broken",
+    "type": "vocabulary",
+    "choicesItalian": ["rotto", "nuovo", "pulito", "chiuso"],
+    "choicesEnglish": ["broken", "new", "clean", "closed"],
+    "correctAnswer": "rotto",
+    "feedback": {
+      "correctItalian": "Giusto! Non funziona, è rotto.",
+      "incorrectItalian": "No, 'rotto' significa 'broken'.",
+      "correctEnglish": "Right! It doesn't work, it's broken.",
+      "incorrectEnglish": "No, 'rotto' means 'broken'."
+    }
+  },
+  {
+    "id": "s69-v60",
+    "italian": "esaurito",
+    "english": "run out/finished",
+    "type": "vocabulary",
+    "choicesItalian": ["esaurito", "pieno", "pronto", "bello"],
+    "choicesEnglish": ["run out/finished", "full", "ready", "beautiful"],
+    "correctAnswer": "esaurito",
+    "feedback": {
+      "correctItalian": "Corretto! Il toner è esaurito.",
+      "incorrectItalian": "No, significa finito.",
+      "correctEnglish": "Correct! The toner has run out.",
+      "incorrectEnglish": "No, it means finished."
     }
   }
 ]

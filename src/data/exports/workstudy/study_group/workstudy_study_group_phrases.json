@@ -1,104 +1,902 @@
 [
   {
-    "id": "s70-p5",
-    "italian": "Hai delle domande?",
-    "english": "Do you have any questions?",
-    "type": "phrase",
-    "choices": [
-      "Facciamo una pausa caffè?",
-      "Hai delle domande?",
-      "Studiamo insieme oggi?",
-      "Facciamo un ripasso veloce."
-    ],
-    "correctAnswer": "Hai delle domande?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Hai delle domande?\"."
-    }
-  },
-  {
     "id": "s70-p1",
     "italian": "Studiamo insieme oggi?",
     "english": "Shall we study together today?",
     "type": "phrase",
-    "choices": [
-      "Facciamo un ripasso veloce.",
-      "Hai delle domande?",
-      "Ci vediamo in biblioteca.",
-      "Studiamo insieme oggi?"
-    ],
+    "choicesItalian": ["Studiamo insieme oggi?", "Andiamo al cinema?", "Mangi fuori stasera?", "Lavori da solo?"],
+    "choicesEnglish": ["Shall we study together today?", "Shall we go to the cinema?", "Are you eating out tonight?", "Are you working alone?"],
     "correctAnswer": "Studiamo insieme oggi?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Studiamo insieme oggi?\"."
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Studiamo insieme oggi?'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'Shall we study together today?'."
     }
   },
   {
     "id": "s70-p2",
-    "italian": "Ci vediamo in biblioteca.",
-    "english": "See you at the library.",
+    "italian": "A che ora ci vediamo?",
+    "english": "What time shall we meet?",
     "type": "phrase",
-    "choices": [
-      "Hai delle domande?",
-      "Ci vediamo in biblioteca.",
-      "Ho finito il primo capitolo.",
-      "Studiamo insieme oggi?"
-    ],
-    "correctAnswer": "Ci vediamo in biblioteca.",
+    "choicesItalian": ["A che ora ci vediamo?", "Dove vai?", "Come stai?", "Perché sei qui?"],
+    "choicesEnglish": ["What time shall we meet?", "Where are you going?", "How are you?", "Why are you here?"],
+    "correctAnswer": "A che ora ci vediamo?",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ci vediamo in biblioteca.\"."
-    }
-  },
-  {
-    "id": "s70-p6",
-    "italian": "Facciamo una pausa caffè?",
-    "english": "Shall we take a coffee break?",
-    "type": "phrase",
-    "choices": [
-      "Facciamo un ripasso veloce.",
-      "Ci vediamo in biblioteca.",
-      "Hai delle domande?",
-      "Facciamo una pausa caffè?"
-    ],
-    "correctAnswer": "Facciamo una pausa caffè?",
-    "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Facciamo una pausa caffè?\"."
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'A che ora ci vediamo?'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'What time shall we meet?'."
     }
   },
   {
     "id": "s70-p3",
-    "italian": "Facciamo un ripasso veloce.",
-    "english": "Let's do a quick review.",
+    "italian": "Ci vediamo in biblioteca.",
+    "english": "See you at the library.",
     "type": "phrase",
-    "choices": [
-      "Hai delle domande?",
-      "Studiamo insieme oggi?",
-      "Facciamo un ripasso veloce.",
-      "Ci vediamo in biblioteca."
-    ],
-    "correctAnswer": "Facciamo un ripasso veloce.",
+    "choicesItalian": ["Ci vediamo in biblioteca.", "Andiamo a casa.", "Siamo in ufficio.", "Resto a scuola."],
+    "choicesEnglish": ["See you at the library.", "Let's go home.", "We are in the office.", "I'm staying at school."],
+    "correctAnswer": "Ci vediamo in biblioteca.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Facciamo un ripasso veloce.\"."
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Ci vediamo in biblioteca.'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'See you at the library.'."
     }
   },
   {
     "id": "s70-p4",
-    "italian": "Ho finito il primo capitolo.",
-    "english": "I finished the first chapter.",
+    "italian": "Ho prenotato un tavolo.",
+    "english": "I booked a table.",
     "type": "phrase",
-    "choices": [
-      "Ho finito il primo capitolo.",
-      "Ci vediamo in biblioteca.",
-      "Hai delle domande?",
-      "Facciamo un ripasso veloce."
-    ],
-    "correctAnswer": "Ho finito il primo capitolo.",
+    "choicesItalian": ["Ho prenotato un tavolo.", "Ho comprato un libro.", "Ho perso la penna.", "Ho finito il compito."],
+    "choicesEnglish": ["I booked a table.", "I bought a book.", "I lost my pen.", "I finished the assignment."],
+    "correctAnswer": "Ho prenotato un tavolo.",
     "feedback": {
-      "correct": "Ottimo!",
-      "incorrect": "Quasi! La risposta corretta è \"Ho finito il primo capitolo.\"."
+      "correctItalian": "Corretto!",
+      "incorrectItalian": "No, significa 'Ho prenotato un tavolo.'.",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No, it means 'I booked a table.'."
+    }
+  },
+  {
+    "id": "s70-p5",
+    "italian": "Hai letto il primo capitolo?",
+    "english": "Did you read the first chapter?",
+    "type": "phrase",
+    "choicesItalian": ["Hai letto il primo capitolo?", "Hai visto il film?", "Hai mangiato la mela?", "Hai fatto la spesa?"],
+    "choicesEnglish": ["Did you read the first chapter?", "Did you see the movie?", "Did you eat the apple?", "Did you do the shopping?"],
+    "correctAnswer": "Hai letto il primo capitolo?",
+    "feedback": {
+      "correctItalian": "Bravo!",
+      "incorrectItalian": "No, significa 'Hai letto il primo capitolo?'.",
+      "correctEnglish": "Good job!",
+      "incorrectEnglish": "No, it means 'Did you read the first chapter?'."
+    }
+  },
+  {
+    "id": "s70-p6",
+    "italian": "Non capisco questo esercizio.",
+    "english": "I don't understand this exercise.",
+    "type": "phrase",
+    "choicesItalian": ["Non capisco questo esercizio.", "Mi piace questa canzone.", "Voglio un gelato.", "Dov'è il bagno?"],
+    "choicesEnglish": ["I don't understand this exercise.", "I like this song.", "I want an ice cream.", "Where is the bathroom?"],
+    "correctAnswer": "Non capisco questo esercizio.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Non capisco questo esercizio.'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'I don't understand this exercise.'."
+    }
+  },
+  {
+    "id": "s70-p7",
+    "italian": "Puoi spiegarmelo?",
+    "english": "Can you explain it to me?",
+    "type": "phrase",
+    "choicesItalian": ["Puoi spiegarmelo?", "Puoi darmelo?", "Puoi portarmelo?", "Puoi scriverlo?"],
+    "choicesEnglish": ["Can you explain it to me?", "Can you give it to me?", "Can you bring it to me?", "Can you write it?"],
+    "correctAnswer": "Puoi spiegarmelo?",
+    "feedback": {
+      "correctItalian": "Molto bene!",
+      "incorrectItalian": "No, significa 'Puoi spiegarmelo?'.",
+      "correctEnglish": "Very well!",
+      "incorrectEnglish": "No, it means 'Can you explain it to me?'."
+    }
+  },
+  {
+    "id": "s70-p8",
+    "italian": "Facciamo una pausa?",
+    "english": "Shall we take a break?",
+    "type": "phrase",
+    "choicesItalian": ["Facciamo una pausa?", "Facciamo una torta?", "Facciamo un giro?", "Facciamo silenzio?"],
+    "choicesEnglish": ["Shall we take a break?", "Shall we make a cake?", "Shall we take a walk?", "Shall we be quiet?"],
+    "correctAnswer": "Facciamo una pausa?",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Facciamo una pausa?'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'Shall we take a break?'."
+    }
+  },
+  {
+    "id": "s70-p9",
+    "italian": "Prendiamo un caffè?",
+    "english": "Shall we get a coffee?",
+    "type": "phrase",
+    "choicesItalian": ["Prendiamo un caffè?", "Prendiamo l'autobus?", "Prendiamo un libro?", "Prendiamo la penna?"],
+    "choicesEnglish": ["Shall we get a coffee?", "Shall we take the bus?", "Shall we take a book?", "Shall we take the pen?"],
+    "correctAnswer": "Prendiamo un caffè?",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Prendiamo un caffè?'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'Shall we get a coffee?'."
+    }
+  },
+  {
+    "id": "s70-p10",
+    "italian": "Dobbiamo ripassare tutto.",
+    "english": "We must review everything.",
+    "type": "phrase",
+    "choicesItalian": ["Dobbiamo ripassare tutto.", "Dobbiamo mangiare tutto.", "Dobbiamo pulire tutto.", "Dobbiamo leggere tutto."],
+    "choicesEnglish": ["We must review everything.", "We must eat everything.", "We must clean everything.", "We must read everything."],
+    "correctAnswer": "Dobbiamo ripassare tutto.",
+    "feedback": {
+      "correctItalian": "Corretto!",
+      "incorrectItalian": "No, significa 'Dobbiamo ripassare tutto.'.",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No, it means 'We must review everything.'."
+    }
+  },
+  {
+    "id": "s70-p11",
+    "italian": "Hai gli appunti?",
+    "english": "Do you have the notes?",
+    "type": "phrase",
+    "choicesItalian": ["Hai gli appunti?", "Hai i soldi?", "Hai le chiavi?", "Hai gli occhiali?"],
+    "choicesEnglish": ["Do you have the notes?", "Do you have the money?", "Do you have the keys?", "Do you have the glasses?"],
+    "correctAnswer": "Hai gli appunti?",
+    "feedback": {
+      "correctItalian": "Bravo!",
+      "incorrectItalian": "No, significa 'Hai gli appunti?'.",
+      "correctEnglish": "Good job!",
+      "incorrectEnglish": "No, it means 'Do you have the notes?'."
+    }
+  },
+  {
+    "id": "s70-p12",
+    "italian": "Posso vedere i tuoi appunti?",
+    "english": "Can I see your notes?",
+    "type": "phrase",
+    "choicesItalian": ["Posso vedere i tuoi appunti?", "Posso usare il tuo telefono?", "Posso leggere il tuo libro?", "Posso avere la tua penna?"],
+    "choicesEnglish": ["Can I see your notes?", "Can I use your phone?", "Can I read your book?", "Can I have your pen?"],
+    "correctAnswer": "Posso vedere i tuoi appunti?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Posso vedere i tuoi appunti?'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'Can I see your notes?'."
+    }
+  },
+  {
+    "id": "s70-p13",
+    "italian": "Qual è la scadenza?",
+    "english": "What is the deadline?",
+    "type": "phrase",
+    "choicesItalian": ["Qual è la scadenza?", "Qual è l'orario?", "Qual è il prezzo?", "Qual è il tuo nome?"],
+    "choicesEnglish": ["What is the deadline?", "What is the schedule?", "What is the price?", "What is your name?"],
+    "correctAnswer": "Qual è la scadenza?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Qual è la scadenza?'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'What is the deadline?'."
+    }
+  },
+  {
+    "id": "s70-p14",
+    "italian": "Dobbiamo finire entro domani.",
+    "english": "We must finish by tomorrow.",
+    "type": "phrase",
+    "choicesItalian": ["Dobbiamo finire entro domani.", "Dobbiamo uscire entro domani.", "Dobbiamo pagare entro domani.", "Dobbiamo partire entro domani."],
+    "choicesEnglish": ["We must finish by tomorrow.", "We must go out by tomorrow.", "We must pay by tomorrow.", "We must leave by tomorrow."],
+    "correctAnswer": "Dobbiamo finire entro domani.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Dobbiamo finire entro domani.'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'We must finish by tomorrow.'."
+    }
+  },
+  {
+    "id": "s70-p15",
+    "italian": "Ho dimenticato il caricabatterie.",
+    "english": "I forgot the charger.",
+    "type": "phrase",
+    "choicesItalian": ["Ho dimenticato il caricabatterie.", "Ho dimenticato il portafoglio.", "Ho dimenticato le chiavi.", "Ho dimenticato il libro."],
+    "choicesEnglish": ["I forgot the charger.", "I forgot the wallet.", "I forgot the keys.", "I forgot the book."],
+    "correctAnswer": "Ho dimenticato il caricabatterie.",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Ho dimenticato il caricabatterie.'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'I forgot the charger.'."
+    }
+  },
+  {
+    "id": "s70-p16",
+    "italian": "Qual è la password del wifi?",
+    "english": "What is the wifi password?",
+    "type": "phrase",
+    "choicesItalian": ["Qual è la password del wifi?", "Dov'è il router?", "Come ti chiami?", "C'è il wifi?"],
+    "choicesEnglish": ["What is the wifi password?", "Where is the router?", "What is your name?", "Is there wifi?"],
+    "correctAnswer": "Qual è la password del wifi?",
+    "feedback": {
+      "correctItalian": "Corretto!",
+      "incorrectItalian": "No, significa 'Qual è la password del wifi?'.",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No, it means 'What is the wifi password?'."
+    }
+  },
+  {
+    "id": "s70-p17",
+    "italian": "Non c'è segnale qui.",
+    "english": "There is no signal here.",
+    "type": "phrase",
+    "choicesItalian": ["Non c'è segnale qui.", "Non c'è posto qui.", "Non c'è acqua qui.", "Non c'è luce qui."],
+    "choicesEnglish": ["There is no signal here.", "There is no space here.", "There is no water here.", "There is no light here."],
+    "correctAnswer": "Non c'è segnale qui.",
+    "feedback": {
+      "correctItalian": "Molto bene!",
+      "incorrectItalian": "No, significa 'Non c'è segnale qui.'.",
+      "correctEnglish": "Very well!",
+      "incorrectEnglish": "No, it means 'There is no signal here.'."
+    }
+  },
+  {
+    "id": "s70-p18",
+    "italian": "Hai una penna in più?",
+    "english": "Do you have an extra pen?",
+    "type": "phrase",
+    "choicesItalian": ["Hai una penna in più?", "Hai un libro in più?", "Hai un foglio in più?", "Hai una matita in più?"],
+    "choicesEnglish": ["Do you have an extra pen?", "Do you have an extra book?", "Do you have an extra sheet?", "Do you have an extra pencil?"],
+    "correctAnswer": "Hai una penna in più?",
+    "feedback": {
+      "correctItalian": "Bravo!",
+      "incorrectItalian": "No, significa 'Hai una penna in più?'.",
+      "correctEnglish": "Good job!",
+      "incorrectEnglish": "No, it means 'Do you have an extra pen?'."
+    }
+  },
+  {
+    "id": "s70-p19",
+    "italian": "Possiamo studiare a casa mia.",
+    "english": "We can study at my house.",
+    "type": "phrase",
+    "choicesItalian": ["Possiamo studiare a casa mia.", "Dobbiamo andare a scuola.", "Vogliamo mangiare al ristorante.", "Siamo in aula."],
+    "choicesEnglish": ["We can study at my house.", "We must go to school.", "We want to eat at the restaurant.", "We are in the classroom."],
+    "correctAnswer": "Possiamo studiare a casa mia.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Possiamo studiare a casa mia.'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'We can study at my house.'."
+    }
+  },
+  {
+    "id": "s70-p20",
+    "italian": "Iniziamo dal primo capitolo.",
+    "english": "Let's start from the first chapter.",
+    "type": "phrase",
+    "choicesItalian": ["Iniziamo dal primo capitolo.", "Finiamo il primo capitolo.", "Leggiamo l'ultimo capitolo.", "Saltiamo il primo capitolo."],
+    "choicesEnglish": ["Let's start from the first chapter.", "Let's finish the first chapter.", "Let's read the last chapter.", "Let's skip the first chapter."],
+    "correctAnswer": "Iniziamo dal primo capitolo.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Iniziamo dal primo capitolo.'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'Let's start from the first chapter.'."
+    }
+  },
+  {
+    "id": "s70-p21",
+    "italian": "Ti mando il link.",
+    "english": "I'll send you the link.",
+    "type": "phrase",
+    "choicesItalian": ["Ti mando il link.", "Ti porto il libro.", "Ti scrivo un'email.", "Ti chiamo dopo."],
+    "choicesEnglish": ["I'll send you the link.", "I'll bring you the book.", "I'll write you an email.", "I'll call you later."],
+    "correctAnswer": "Ti mando il link.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Ti mando il link.'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'I'll send you the link.'."
+    }
+  },
+  {
+    "id": "s70-p22",
+    "italian": "Hai ricevuto il file?",
+    "english": "Did you receive the file?",
+    "type": "phrase",
+    "choicesItalian": ["Hai ricevuto il file?", "Hai perso il file?", "Hai aperto il file?", "Hai salvato il file?"],
+    "choicesEnglish": ["Did you receive the file?", "Did you lose the file?", "Did you open the file?", "Did you save the file?"],
+    "correctAnswer": "Hai ricevuto il file?",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Hai ricevuto il file?'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'Did you receive the file?'."
+    }
+  },
+  {
+    "id": "s70-p23",
+    "italian": "Dobbiamo fare silenzio.",
+    "english": "We must be quiet.",
+    "type": "phrase",
+    "choicesItalian": ["Dobbiamo fare silenzio.", "Dobbiamo parlare forte.", "Dobbiamo cantare.", "Dobbiamo correre."],
+    "choicesEnglish": ["We must be quiet.", "We must speak loudly.", "We must sing.", "We must run."],
+    "correctAnswer": "Dobbiamo fare silenzio.",
+    "feedback": {
+      "correctItalian": "Corretto!",
+      "incorrectItalian": "No, significa 'Dobbiamo fare silenzio.'.",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No, it means 'We must be quiet.'."
+    }
+  },
+  {
+    "id": "s70-p24",
+    "italian": "La biblioteca chiude alle otto.",
+    "english": "The library closes at eight.",
+    "type": "phrase",
+    "choicesItalian": ["La biblioteca chiude alle otto.", "La scuola apre alle otto.", "Il bar chiude a mezzanotte.", "Il negozio apre alle nove."],
+    "choicesEnglish": ["The library closes at eight.", "The school opens at eight.", "The bar closes at midnight.", "The shop opens at nine."],
+    "correctAnswer": "La biblioteca chiude alle otto.",
+    "feedback": {
+      "correctItalian": "Molto bene!",
+      "incorrectItalian": "No, significa 'La biblioteca chiude alle otto.'.",
+      "correctEnglish": "Very well!",
+      "incorrectEnglish": "No, it means 'The library closes at eight.'."
+    }
+  },
+  {
+    "id": "s70-p25",
+    "italian": "Facciamo un ripasso veloce.",
+    "english": "Let's do a quick review.",
+    "type": "phrase",
+    "choicesItalian": ["Facciamo un ripasso veloce.", "Facciamo un lungo viaggio.", "Facciamo una cena lenta.", "Facciamo un salto fuori."],
+    "choicesEnglish": ["Let's do a quick review.", "Let's take a long trip.", "Let's have a slow dinner.", "Let's jump outside."],
+    "correctAnswer": "Facciamo un ripasso veloce.",
+    "feedback": {
+      "correctItalian": "Bravo!",
+      "incorrectItalian": "No, significa 'Facciamo un ripasso veloce.'.",
+      "correctEnglish": "Good job!",
+      "incorrectEnglish": "No, it means 'Let's do a quick review.'."
+    }
+  },
+  {
+    "id": "s70-p26",
+    "italian": "Qualcuno ha capito?",
+    "english": "Did anyone understand?",
+    "type": "phrase",
+    "choicesItalian": ["Qualcuno ha capito?", "Qualcuno ha visto?", "Qualcuno ha mangiato?", "Qualcuno ha chiamato?"],
+    "choicesEnglish": ["Did anyone understand?", "Did anyone see?", "Did anyone eat?", "Did anyone call?"],
+    "correctAnswer": "Qualcuno ha capito?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Qualcuno ha capito?'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'Did anyone understand?'."
+    }
+  },
+  {
+    "id": "s70-p27",
+    "italian": "Io non ho capito bene.",
+    "english": "I didn't understand well.",
+    "type": "phrase",
+    "choicesItalian": ["Io non ho capito bene.", "Io ho capito tutto.", "Io non lo so.", "Io non ci credo."],
+    "choicesEnglish": ["I didn't understand well.", "I understood everything.", "I don't know.", "I don't believe it."],
+    "correctAnswer": "Io non ho capito bene.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Io non ho capito bene.'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'I didn't understand well.'."
+    }
+  },
+  {
+    "id": "s70-p28",
+    "italian": "Possiamo chiedere al tutor.",
+    "english": "We can ask the tutor.",
+    "type": "phrase",
+    "choicesItalian": ["Possiamo chiedere al tutor.", "Dobbiamo chiedere al capo.", "Vogliamo chiedere al medico.", "Posso chiedere a te?"],
+    "choicesEnglish": ["We can ask the tutor.", "We must ask the boss.", "We want to ask the doctor.", "Can I ask you?"],
+    "correctAnswer": "Possiamo chiedere al tutor.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Possiamo chiedere al tutor.'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'We can ask the tutor.'."
+    }
+  },
+  {
+    "id": "s70-p29",
+    "italian": "Dove sono le dispense?",
+    "english": "Where are the handouts?",
+    "type": "phrase",
+    "choicesItalian": ["Dove sono le dispense?", "Dove sono i libri?", "Dove sono le chiavi?", "Dove sono i bagni?"],
+    "choicesEnglish": ["Where are the handouts?", "Where are the books?", "Where are the keys?", "Where are the bathrooms?"],
+    "correctAnswer": "Dove sono le dispense?",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Dove sono le dispense?'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'Where are the handouts?'."
+    }
+  },
+  {
+    "id": "s70-p30",
+    "italian": "Sono nella cartella condivisa.",
+    "english": "They are in the shared folder.",
+    "type": "phrase",
+    "choicesItalian": ["Sono nella cartella condivisa.", "Sono nello zaino.", "Sono sul tavolo.", "Sono in ufficio."],
+    "choicesEnglish": ["They are in the shared folder.", "They are in the backpack.", "They are on the table.", "They are in the office."],
+    "correctAnswer": "Sono nella cartella condivisa.",
+    "feedback": {
+      "correctItalian": "Corretto!",
+      "incorrectItalian": "No, significa 'Sono nella cartella condivisa.'.",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No, it means 'They are in the shared folder.'."
+    }
+  },
+  {
+    "id": "s70-p31",
+    "italian": "Spegni il telefono, per favore.",
+    "english": "Turn off your phone, please.",
+    "type": "phrase",
+    "choicesItalian": ["Spegni il telefono, per favore.", "Accendi la luce, per favore.", "Apri la finestra, per favore.", "Chiudi la porta, per favore."],
+    "choicesEnglish": ["Turn off your phone, please.", "Turn on the light, please.", "Open the window, please.", "Close the door, please."],
+    "correctAnswer": "Spegni il telefono, per favore.",
+    "feedback": {
+      "correctItalian": "Molto bene!",
+      "incorrectItalian": "No, significa 'Spegni il telefono, per favore.'.",
+      "correctEnglish": "Very well!",
+      "incorrectEnglish": "No, it means 'Turn off your phone, please.'."
+    }
+  },
+  {
+    "id": "s70-p32",
+    "italian": "Mi serve una sedia.",
+    "english": "I need a chair.",
+    "type": "phrase",
+    "choicesItalian": ["Mi serve una sedia.", "Mi serve un libro.", "Mi serve un caffè.", "Mi serve aiuto."],
+    "choicesEnglish": ["I need a chair.", "I need a book.", "I need a coffee.", "I need help."],
+    "correctAnswer": "Mi serve una sedia.",
+    "feedback": {
+      "correctItalian": "Bravo!",
+      "incorrectItalian": "No, significa 'Mi serve una sedia.'.",
+      "correctEnglish": "Good job!",
+      "incorrectEnglish": "No, it means 'I need a chair.'."
+    }
+  },
+  {
+    "id": "s70-p33",
+    "italian": "C'è un posto libero qui?",
+    "english": "Is there a free seat here?",
+    "type": "phrase",
+    "choicesItalian": ["C'è un posto libero qui?", "C'è un tavolo libero qui?", "C'è una stanza libera qui?", "C'è un bagno qui?"],
+    "choicesEnglish": ["Is there a free seat here?", "Is there a free table here?", "Is there a free room here?", "Is there a bathroom here?"],
+    "correctAnswer": "C'è un posto libero qui?",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'C'è un posto libero qui?'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'Is there a free seat here?'."
+    }
+  },
+  {
+    "id": "s70-p34",
+    "italian": "Siamo al completo.",
+    "english": "We are full.",
+    "type": "phrase",
+    "choicesItalian": ["Siamo al completo.", "Siamo in ritardo.", "Siamo pronti.", "Siamo stanchi."],
+    "choicesEnglish": ["We are full.", "We are late.", "We are ready.", "We are tired."],
+    "correctAnswer": "Siamo al completo.",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Siamo al completo.'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'We are full.'."
+    }
+  },
+  {
+    "id": "s70-p35",
+    "italian": "Ho finito gli esercizi.",
+    "english": "I finished the exercises.",
+    "type": "phrase",
+    "choicesItalian": ["Ho finito gli esercizi.", "Ho iniziato gli esercizi.", "Non faccio gli esercizi.", "Ho perso gli esercizi."],
+    "choicesEnglish": ["I finished the exercises.", "I started the exercises.", "I don't do the exercises.", "I lost the exercises."],
+    "correctAnswer": "Ho finito gli esercizi.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Ho finito gli esercizi.'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'I finished the exercises.'."
+    }
+  },
+  {
+    "id": "s70-p36",
+    "italian": "Dobbiamo consegnare il progetto.",
+    "english": "We must submit the project.",
+    "type": "phrase",
+    "choicesItalian": ["Dobbiamo consegnare il progetto.", "Dobbiamo finire il progetto.", "Dobbiamo cambiare il progetto.", "Dobbiamo iniziare il progetto."],
+    "choicesEnglish": ["We must submit the project.", "We must finish the project.", "We must change the project.", "We must start the project."],
+    "correctAnswer": "Dobbiamo consegnare il progetto.",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Dobbiamo consegnare il progetto.'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'We must submit the project.'."
+    }
+  },
+  {
+    "id": "s70-p37",
+    "italian": "Ti aiuto io.",
+    "english": "I'll help you.",
+    "type": "phrase",
+    "choicesItalian": ["Ti aiuto io.", "Ti chiamo io.", "Ti porto io.", "Ti scrivo io."],
+    "choicesEnglish": ["I'll help you.", "I'll call you.", "I'll bring you.", "I'll write you."],
+    "correctAnswer": "Ti aiuto io.",
+    "feedback": {
+      "correctItalian": "Corretto!",
+      "incorrectItalian": "No, significa 'Ti aiuto io.'.",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No, it means 'I'll help you.'."
+    }
+  },
+  {
+    "id": "s70-p38",
+    "italian": "Grazie mille per l'aiuto.",
+    "english": "Thanks a lot for the help.",
+    "type": "phrase",
+    "choicesItalian": ["Grazie mille per l'aiuto.", "Prego mille.", "Scusa per il ritardo.", "Buongiorno a tutti."],
+    "choicesEnglish": ["Thanks a lot for the help.", "You're very welcome.", "Sorry for the delay.", "Good morning to everyone."],
+    "correctAnswer": "Grazie mille per l'aiuto.",
+    "feedback": {
+      "correctItalian": "Molto bene!",
+      "incorrectItalian": "No, significa 'Grazie mille per l'aiuto.'.",
+      "correctEnglish": "Very well!",
+      "incorrectEnglish": "No, it means 'Thanks a lot for the help.'."
+    }
+  },
+  {
+    "id": "s70-p39",
+    "italian": "Di niente, figurati!",
+    "english": "You're welcome, don't mention it!",
+    "type": "phrase",
+    "choicesItalian": ["Di niente, figurati!", "Grazie mille!", "Prego, entri pure.", "Scusi, non volevo."],
+    "choicesEnglish": ["You're welcome, don't mention it!", "Thanks a lot!", "Please, come in.", "Sorry, I didn't mean to."],
+    "correctAnswer": "Di niente, figurati!",
+    "feedback": {
+      "correctItalian": "Bravo!",
+      "incorrectItalian": "No, significa 'Di niente, figurati!'.",
+      "correctEnglish": "Good job!",
+      "incorrectEnglish": "No, it means 'You're welcome, don't mention it!'."
+    }
+  },
+  {
+    "id": "s70-p40",
+    "italian": "Sono molto stanco oggi.",
+    "english": "I'm very tired today.",
+    "type": "phrase",
+    "choicesItalian": ["Sono molto stanco oggi.", "Sono molto felice oggi.", "Sono molto arrabbiato oggi.", "Sono molto occupato oggi."],
+    "choicesEnglish": ["I'm very tired today.", "I'm very happy today.", "I'm very angry today.", "I'm very busy today."],
+    "correctAnswer": "Sono molto stanco oggi.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Sono molto stanco oggi.'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'I'm very tired today.'."
+    }
+  },
+  {
+    "id": "s70-p41",
+    "italian": "Hai visto l'email?",
+    "english": "Did you see the email?",
+    "type": "phrase",
+    "choicesItalian": ["Hai visto l'email?", "Hai scritto l'email?", "Hai mandato l'email?", "Hai cancellato l'email?"],
+    "choicesEnglish": ["Did you see the email?", "Did you write the email?", "Did you send the email?", "Did you delete the email?"],
+    "correctAnswer": "Hai visto l'email?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Hai visto l'email?'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'Did you see the email?'."
+    }
+  },
+  {
+    "id": "s70-p42",
+    "italian": "L'ho mandata ieri sera.",
+    "english": "I sent it yesterday evening.",
+    "type": "phrase",
+    "choicesItalian": ["L'ho mandata ieri sera.", "L'ho ricevuta ieri sera.", "L'ho letta ieri sera.", "L'ho scritta ieri sera."],
+    "choicesEnglish": ["I sent it yesterday evening.", "I received it yesterday evening.", "I read it yesterday evening.", "I wrote it yesterday evening."],
+    "correctAnswer": "L'ho mandata ieri sera.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'L'ho mandata ieri sera.'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'I sent it yesterday evening.'."
+    }
+  },
+  {
+    "id": "s70-p43",
+    "italian": "Non trovo il libro.",
+    "english": "I can't find the book.",
+    "type": "phrase",
+    "choicesItalian": ["Non trovo il libro.", "Non voglio il libro.", "Non leggo il libro.", "Non ho il libro."],
+    "choicesEnglish": ["I can't find the book.", "I don't want the book.", "I don't read the book.", "I don't have the book."],
+    "correctAnswer": "Non trovo il libro.",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Non trovo il libro.'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'I can't find the book.'."
+    }
+  },
+  {
+    "id": "s70-p44",
+    "italian": "Guarda sotto il tavolo.",
+    "english": "Look under the table.",
+    "type": "phrase",
+    "choicesItalian": ["Guarda sotto il tavolo.", "Guarda sopra il tavolo.", "Guarda dietro il tavolo.", "Guarda davanti al tavolo."],
+    "choicesEnglish": ["Look under the table.", "Look on top of the table.", "Look behind the table.", "Look in front of the table."],
+    "correctAnswer": "Guarda sotto il tavolo.",
+    "feedback": {
+      "correctItalian": "Corretto!",
+      "incorrectItalian": "No, significa 'Guarda sotto il tavolo.'.",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No, it means 'Look under the table.'."
+    }
+  },
+  {
+    "id": "s70-p45",
+    "italian": "Hai una gomma?",
+    "english": "Do you have an eraser?",
+    "type": "phrase",
+    "choicesItalian": ["Hai una gomma?", "Hai una matita?", "Hai un righello?", "Hai un libro?"],
+    "choicesEnglish": ["Do you have an eraser?", "Do you have a pencil?", "Do you have a ruler?", "Do you have a book?"],
+    "correctAnswer": "Hai una gomma?",
+    "feedback": {
+      "correctItalian": "Molto bene!",
+      "incorrectItalian": "No, significa 'Hai una gomma?'.",
+      "correctEnglish": "Very well!",
+      "incorrectEnglish": "No, it means 'Do you have an eraser?'."
+    }
+  },
+  {
+    "id": "s70-p46",
+    "italian": "Posso usare la tua matita?",
+    "english": "Can I use your pencil?",
+    "type": "phrase",
+    "choicesItalian": ["Posso usare la tua matita?", "Posso usare la tua penna?", "Posso usare il tuo computer?", "Posso usare il tuo caricabatterie?"],
+    "choicesEnglish": ["Can I use your pencil?", "Can I use your pen?", "Can I use your computer?", "Can I use your charger?"],
+    "correctAnswer": "Posso usare la tua matita?",
+    "feedback": {
+      "correctItalian": "Bravo!",
+      "incorrectItalian": "No, significa 'Posso usare la tua matita?'.",
+      "correctEnglish": "Good job!",
+      "incorrectEnglish": "No, it means 'Can I use your pencil?'."
+    }
+  },
+  {
+    "id": "s70-p47",
+    "italian": "Vado a prendere l'acqua.",
+    "english": "I'm going to get some water.",
+    "type": "phrase",
+    "choicesItalian": ["Vado a prendere l'acqua.", "Vado a prendere un caffè.", "Vado a prendere il libro.", "Vado a prendere lo zaino."],
+    "choicesEnglish": ["I'm going to get some water.", "I'm going to get a coffee.", "I'm going to get the book.", "I'm going to get the backpack."],
+    "correctAnswer": "Vado a prendere l'acqua.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Vado a prendere l'acqua.'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'I'm going to get some water.'."
+    }
+  },
+  {
+    "id": "s70-p48",
+    "italian": "Hai fame?",
+    "english": "Are you hungry?",
+    "type": "phrase",
+    "choicesItalian": ["Hai fame?", "Hai sete?", "Hai sonno?", "Hai freddo?"],
+    "choicesEnglish": ["Are you hungry?", "Are you thirsty?", "Are you sleepy?", "Are you cold?"],
+    "correctAnswer": "Hai fame?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Hai fame?'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'Are you hungry?'."
+    }
+  },
+  {
+    "id": "s70-p49",
+    "italian": "Ho un po' di fame.",
+    "english": "I'm a little hungry.",
+    "type": "phrase",
+    "choicesItalian": ["Ho un po' di fame.", "Ho molta fame.", "Non ho fame.", "Ho sete."],
+    "choicesEnglish": ["I'm a little hungry.", "I'm very hungry.", "I'm not hungry.", "I'm thirsty."],
+    "correctAnswer": "Ho un po' di fame.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Ho un po' di fame.'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'I'm a little hungry.'."
+    }
+  },
+  {
+    "id": "s70-p50",
+    "italian": "Andiamo a mangiare qualcosa?",
+    "english": "Shall we go eat something?",
+    "type": "phrase",
+    "choicesItalian": ["Andiamo a mangiare qualcosa?", "Andiamo a bere qualcosa?", "Andiamo a vedere un film?", "Andiamo a studiare?"],
+    "choicesEnglish": ["Shall we go eat something?", "Shall we go drink something?", "Shall we go see a movie?", "Shall we go study?"],
+    "correctAnswer": "Andiamo a mangiare qualcosa?",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'Andiamo a mangiare qualcosa?'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'Shall we go eat something?'."
+    }
+  },
+  {
+    "id": "s70-p51",
+    "italian": "A che pagina siamo?",
+    "english": "What page are we on?",
+    "type": "phrase",
+    "choicesItalian": ["A che pagina siamo?", "A che capitolo siamo?", "A che ora siamo?", "Dove siamo?"],
+    "choicesEnglish": ["What page are we on?", "What chapter are we on?", "What time is it?", "Where are we?"],
+    "correctAnswer": "A che pagina siamo?",
+    "feedback": {
+      "correctItalian": "Corretto!",
+      "incorrectItalian": "No, significa 'A che pagina siamo?'.",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No, it means 'What page are we on?'."
+    }
+  },
+  {
+    "id": "s70-p52",
+    "italian": "Siamo a pagina quaranta.",
+    "english": "We are on page forty.",
+    "type": "phrase",
+    "choicesItalian": ["Siamo a pagina quaranta.", "Siamo al capitolo due.", "Siamo in aula dieci.", "Siamo a metà."],
+    "choicesEnglish": ["We are on page forty.", "We are at chapter two.", "We are in room ten.", "We are halfway."],
+    "correctAnswer": "Siamo a pagina quaranta.",
+    "feedback": {
+      "correctItalian": "Molto bene!",
+      "incorrectItalian": "No, significa 'Siamo a pagina quaranta.'.",
+      "correctEnglish": "Very well!",
+      "incorrectEnglish": "No, it means 'We are on page forty.'."
+    }
+  },
+  {
+    "id": "s70-p53",
+    "italian": "È quasi ora di andare.",
+    "english": "It's almost time to go.",
+    "type": "phrase",
+    "choicesItalian": ["È quasi ora di andare.", "È ora di iniziare.", "È tardi.", "È presto."],
+    "choicesEnglish": ["It's almost time to go.", "It's time to start.", "It's late.", "It's early."],
+    "correctAnswer": "È quasi ora di andare.",
+    "feedback": {
+      "correctItalian": "Bravo!",
+      "incorrectItalian": "No, significa 'È quasi ora di andare.'.",
+      "correctEnglish": "Good job!",
+      "incorrectEnglish": "No, it means 'It's almost time to go.'."
+    }
+  },
+  {
+    "id": "s70-p54",
+    "italian": "Finiamo quest'ultimo punto.",
+    "english": "Let's finish this last point.",
+    "type": "phrase",
+    "choicesItalian": ["Finiamo quest'ultimo punto.", "Iniziamo un nuovo punto.", "Saltiamo questo punto.", "Cambiamo punto."],
+    "choicesEnglish": ["Let's finish this last point.", "Let's start a new point.", "Let's skip this point.", "Let's change points."],
+    "correctAnswer": "Finiamo quest'ultimo punto.",
+    "feedback": {
+      "correctItalian": "Perfetto!",
+      "incorrectItalian": "No, significa 'Finiamo quest'ultimo punto.'.",
+      "correctEnglish": "Perfect!",
+      "incorrectEnglish": "No, it means 'Let's finish this last point.'."
+    }
+  },
+  {
+    "id": "s70-p55",
+    "italian": "Ci vediamo domani alla stessa ora?",
+    "english": "Shall we meet tomorrow at the same time?",
+    "type": "phrase",
+    "choicesItalian": ["Ci vediamo domani alla stessa ora?", "Ci vediamo stasera?", "Ci vediamo lunedì?", "Ci vediamo dopo?"],
+    "choicesEnglish": ["Shall we meet tomorrow at the same time?", "See you tonight?", "See you on Monday?", "See you later?"],
+    "correctAnswer": "Ci vediamo domani alla stessa ora?",
+    "feedback": {
+      "correctItalian": "Esatto!",
+      "incorrectItalian": "No, significa 'Ci vediamo domani alla stessa ora?'.",
+      "correctEnglish": "Exactly!",
+      "incorrectEnglish": "No, it means 'Shall we meet tomorrow at the same time?'."
+    }
+  },
+  {
+    "id": "s70-p56",
+    "italian": "Per me va bene.",
+    "english": "It's fine with me.",
+    "type": "phrase",
+    "choicesItalian": ["Per me va bene.", "Per me è uguale.", "Non posso.", "Non voglio."],
+    "choicesEnglish": ["It's fine with me.", "It's all the same to me.", "I can't.", "I don't want to."],
+    "correctAnswer": "Per me va bene.",
+    "feedback": {
+      "correctItalian": "Ottimo!",
+      "incorrectItalian": "No, significa 'Per me va bene.'.",
+      "correctEnglish": "Great!",
+      "incorrectEnglish": "No, it means 'It's fine with me.'."
+    }
+  },
+  {
+    "id": "s70-p57",
+    "italian": "A domani allora!",
+    "english": "See you tomorrow then!",
+    "type": "phrase",
+    "choicesItalian": ["A domani allora!", "A dopo!", "Ciao a tutti!", "Buonanotte!"],
+    "choicesEnglish": ["See you tomorrow then!", "See you later!", "Bye everyone!", "Goodnight!"],
+    "correctAnswer": "A domani allora!",
+    "feedback": {
+      "correctItalian": "Giusto!",
+      "incorrectItalian": "No, significa 'A domani allora!'.",
+      "correctEnglish": "Right!",
+      "incorrectEnglish": "No, it means 'See you tomorrow then!'."
+    }
+  },
+  {
+    "id": "s70-p58",
+    "italian": "Buono studio!",
+    "english": "Happy studying!",
+    "type": "phrase",
+    "choicesItalian": ["Buono studio!", "Buon appetito!", "Buon viaggio!", "Buon lavoro!"],
+    "choicesEnglish": ["Happy studying!", "Enjoy your meal!", "Have a good trip!", "Good luck with work!"],
+    "correctAnswer": "Buono studio!",
+    "feedback": {
+      "correctItalian": "Corretto!",
+      "incorrectItalian": "No, significa 'Buono studio!'.",
+      "correctEnglish": "Correct!",
+      "incorrectEnglish": "No, it means 'Happy studying!'."
+    }
+  },
+  {
+    "id": "s70-p59",
+    "italian": "In bocca al lupo per l'esame!",
+    "english": "Good luck with the exam!",
+    "type": "phrase",
+    "choicesItalian": ["In bocca al lupo per l'esame!", "Buona fortuna per tutto!", "Spero che vada bene.", "Complimenti!"],
+    "choicesEnglish": ["Good luck with the exam!", "Good luck with everything!", "I hope it goes well.", "Congratulations!"],
+    "correctAnswer": "In bocca al lupo per l'esame!",
+    "feedback": {
+      "correctItalian": "Molto bene!",
+      "incorrectItalian": "No, significa 'In bocca al lupo per l'esame!'.",
+      "correctEnglish": "Very well!",
+      "incorrectEnglish": "No, it means 'Good luck with the exam!'."
+    }
+  },
+  {
+    "id": "s70-p60",
+    "italian": "Crepi il lupo!",
+    "english": "Thanks! (response to good luck)",
+    "type": "phrase",
+    "choicesItalian": ["Crepi il lupo!", "Grazie mille!", "Altrettanto!", "Speriamo!"],
+    "choicesEnglish": ["Thanks! (response to good luck)", "Thanks a lot!", "The same to you!", "Let's hope!"],
+    "correctAnswer": "Crepi il lupo!",
+    "feedback": {
+      "correctItalian": "Bravo!",
+      "incorrectItalian": "No, è la risposta a 'In bocca al lupo!'.",
+      "correctEnglish": "Good job!",
+      "incorrectEnglish": "No, it's the response to 'In bocca al lupo!'."
     }
   }
 ]
