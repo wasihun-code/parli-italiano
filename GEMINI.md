@@ -1,678 +1,708 @@
-# Persistent Project Memory
+# Parla Italiano — Corpus & Audio Infrastructure Specification
 
-A persistent memory file MUST exist at:
+# Overview
 
-```txt
-MEMORY.md
-```
-
-If MEMORY.md does not exist:
-- create it automatically
-
-Before starting work:
-- read MEMORY.md completely
-
-After completing work:
-- update MEMORY.md
-
-The memory file is used for:
-- resumable execution
-- tracking completed categories
-- tracking completed scenarios
-- recording quality issues
-- preserving architectural decisions
-- recording discovered schema quirks
-- preventing duplicate work
-- improving consistency across subagents
-
----
-
-# MEMORY.md Responsibilities
-
-The agent MUST maintain:
-
-## Completed Categories
-Track categories that are fully completed and validated.
-
-Example:
-
-```md
-## Completed Categories
-- accommodation ✅
-- dining ✅
-- travel ⚠ partial
-```
-
----
-
-## Completed Scenarios
-Track scenarios already upgraded successfully.
-
----
-
-## Categories Requiring Audit
-Track categories needing:
-- regeneration
-- realism improvements
-- schema fixes
-- distractor improvements
-
----
-
-## Known Quality Problems
-Track recurring issues discovered during generation.
-
-Examples:
-- overly formal sentence-stage content
-- repetitive distractors
-- weak conversational realism
-- unnatural English translations
-
----
-
-## Important Architectural Decisions
-Persist important project-wide decisions.
-
-Examples:
-- sentence stage should feel spoken
-- all datasets require bidirectional support
-- choicesItalian + choicesEnglish required
-- feedback must exist in both languages
-
----
-
-## Agent Lessons Learned
-Store important generation heuristics discovered during execution.
-
-Examples:
-- shorter spoken interactions produce better realism
-- mini-dialogue sentence structures work best
-- emotional realism improves immersion
-
----
-
-# CRITICAL MEMORY RULES
-
-The memory file must:
-- remain concise
-- remain structured
-- avoid duplication
-- avoid unnecessary verbosity
-- preserve only useful long-term operational knowledge
-
-Do NOT:
-- dump huge logs
-- store temporary token-level reasoning
-- store irrelevant execution details
-
-The goal is:
-persistent project intelligence.
-
-
-# Parla Italiano — Scenario Content Rebuilder
-
-## Overview
-
-You are an autonomous content-generation agent working on the language-learning application **Parla Italiano**.
-
-Your ONLY responsibility is improving educational scenario JSON datasets.
-
-You are NOT allowed to:
-- modify application code
-- refactor the app
-- redesign architecture
-- implement features
-- alter frontend/backend systems
-- modify routing/state/configuration
-- change build systems
-- create migrations
-- install dependencies
-- touch unrelated files
-
-You ONLY work on:
-- vocabulary JSON
-- phrases JSON
-- sentences JSON
-
-inside scenario directories.
-
----
-
-# Project Philosophy
-
-Parla Italiano teaches Italian through:
-- realistic scenarios
-- conversational immersion
-- spoken interaction
+Parla Italiano is a production-grade immersive Italian learning platform focused on:
 - survival communication
-- practical comprehension
+- realistic spoken interaction
+- conversational immersion
+- practical Italian
+- offline-first learning
 
-The app philosophy is:
-
-## NOT
-- textbook memorization
-- robotic grammar drills
-- artificial educational dialogue
-
-## BUT
-- real-world interaction
-- communicative competence
-- conversational realism
-- immersion-based learning
+The platform uses:
+- deterministic educational corpora
+- reusable audio assets
+- resumable infrastructure
+- stabilization-oriented workflows
+- production-grade validation systems
 
 The learner should feel:
-
-> “I could genuinely survive this situation in Italy.”
+“I could genuinely survive this interaction in Italy.”
 
 ---
 
-# Project Structure
+# Core Philosophy
 
-Base directory:
+The app must feel like:
+REAL PEOPLE SPEAKING REAL ITALIAN.
+
+NOT:
+- robotic educational content
+- textbook grammar exposition
+- disconnected phrase dumps
+- unnatural AI dialogue
+- grammar-demo sentences
+
+BUT:
+- spoken mini-dialogues
+- interruptions
+- emotional realism
+- uncertainty
+- reactive communication
+- practical survival interaction
+
+The corpus is now considered:
+PRODUCTION-STABILIZED.
+
+Avoid:
+- uncontrolled rewrites
+- mass regeneration
+- destabilizing modifications
+
+Prefer:
+- deterministic upgrades
+- surgical fixes
+- validation-first workflows
+- infrastructure stabilization
+
+---
+
+# Repository Scope Restrictions
+
+You MAY modify:
+- corpus JSON files
+- audio manifests
+- audio infrastructure tooling
+- validation tooling
+- MEMORY.md
+- synthesis scripts
+
+You MAY NOT:
+- redesign frontend
+- refactor backend
+- alter routing
+- modify application architecture
+- redesign state management
+- rewrite unrelated source files
+- perform destructive repo-wide rewrites
+
+---
+
+# Corpus Architecture
+
+Base corpus directory:
 
 ```txt
 src/data/exports
 ```
 
-Structure:
-
-```txt
-src/data/exports/
-├── accommodation/
-│   ├── apartment_key_pickup/
-│   ├── hotel_check_in/
-│   └── ...
-├── dining/
-├── travel/
-├── shopping/
-└── ...
-```
-
-Each scenario folder contains:
+Each scenario may contain:
 - vocabulary JSON
 - phrases JSON
 - sentences JSON
-- conversation corpus (optional)
+- conversations.txt
+- future audio metadata
 
 ---
 
-# Core Task
+# Corpus Lifecycle
 
-For each scenario:
+Each category progresses through:
 
-1. Read existing JSON files
-2. Read conversation corpus if available
-3. Analyze scenario context
-4. Rebuild educational content
-5. Save improved JSONs back into the SAME scenario folder
+1. Audit
+2. Generation
+3. Validation
+4. Repair
+5. Stabilization
+6. Locked/Completed
 
-You MUST preserve:
-- schema
-- field names
-- compatibility
-
-You MUST NOT:
-- redesign JSON schema
-- rename fields
-- remove required fields
+Never mark categories completed before:
+- JSON validation
+- schema validation
+- realism validation
+- consistency validation
+- audio validation (when applicable)
 
 ---
 
-# CRITICAL: RESUMABLE EXECUTION
+# Conversational Standards
 
-Your execution MUST be resumable.
-
-Before processing a scenario:
-- inspect whether the scenario already contains upgraded production-quality JSONs
-- inspect dataset size
-- inspect schema completeness
-- inspect bidirectional support
-- inspect feedback support
-- inspect realism quality
-
-If the scenario ALREADY satisfies the requirements:
-- SKIP the scenario
-- DO NOT regenerate it
-- DO NOT overwrite it
-
-This is EXTREMELY important.
-
-Do NOT redo already completed work.
-
----
-
-# CRITICAL: CATEGORY COMPLETION CHECK
-
-Before processing a category:
-
-1. Inspect ALL scenarios inside the category
-2. Determine whether ALL scenarios already meet requirements
-
-If ALL scenarios already satisfy requirements:
-- SKIP the ENTIRE category
-
-Do NOT waste tokens regenerating completed categories.
-
----
-
-# CRITICAL: PARALLEL CATEGORY PROCESSING
-
-Process categories independently.
-
-Spawn a SUBAGENT for EACH category.
-
-Example:
-- accommodation → subagent
-- dining → subagent
-- travel → subagent
-- shopping → subagent
-
-Each subagent should:
-- work ONLY inside its assigned category
-- independently process unfinished scenarios
-- skip completed scenarios
-- save improved JSONs
-
-This enables:
-- resumability
-- parallelism
-- token efficiency
-- better scalability
-
----
-
-# Production Quality Standard
-
-This is NOT low-quality autogenerated content.
-
-This is:
-- production educational material
-- conversational training content
-- immersion-based language learning
-
-The quality must exceed:
-- Duolingo-style random exercises
-- textbook phrase dumps
-- generic AI-generated quizzes
-
-The content should feel:
-professionally handcrafted.
-
----
-
-# Primary Source of Truth
-
-The realistic conversation corpus is the PRIMARY SOURCE OF TRUTH.
-
-The old JSON files are ONLY:
-- rough references
-- incomplete datasets
-- partial material
-
-Exercises MUST emerge naturally from:
-- realistic conversations
-- practical interaction
-- communicative situations
-- spoken Italian usage
-
-If the generated exercises feel disconnected from the conversations,
-you failed.
-
----
-
-# Dataset Size Requirements
-
-Do NOT generate tiny datasets.
-
-Minimum sizes:
-
-| Dataset | Minimum |
-|---|---|
-| Vocabulary | 35–60 items |
-| Phrases | 45–80 items |
-| Sentences | 45–80 items |
-
-Generate MORE if the scenario naturally supports it.
-
-The learner needs:
-- broad exposure
-- repetition
-- contextual reinforcement
-- communicative variety
-
----
-
-# Scenario Immersion
-
-Every item must belong naturally inside the scenario world.
-
-Example:
-Scenario = Apartment Key Pickup
-
-Relevant:
-- chiave
-- portone
-- citofono
-- ascensore
-- prenotazione
-- wifi
-- serratura
-
-NOT:
-- airport customs
-- bicycle rental
-- random travel vocabulary
-
-No random content.
-
----
-
-# Vocabulary Design
-
-The vocabulary phase teaches:
-- recognition
-- survival understanding
-- environmental awareness
-
-Vocabulary should include:
-- nouns
-- verbs
-- adjectives
-- functional expressions
-- navigation terms
-- interaction vocabulary
-- problem-solving vocabulary
-
----
-
-# Vocabulary Distractor Rules
-
-Distractors MUST:
-- belong to same semantic category
-- have similar difficulty
-- feel plausibly confusable
-- require actual understanding
+Italian must feel:
+- spoken
+- compressed
+- reactive
+- emotionally believable
+- conversational
 
 Avoid:
-- absurd distractors
-- grammar mismatch
-- trivial elimination
+- textbook stiffness
+- overly formal written rhythm
+- narration-heavy structures
+- exposition-heavy dialogue
+
+Sentence-stage content should resemble:
+- mini-dialogues
+- clarification
+- interruptions
+- uncertainty
+- emotional realism
+- practical interaction
 
 ---
 
-# Bidirectional Training Support
+# Bidirectional Training Requirements
 
-The app supports:
+All production datasets must support:
 - Italian → English
 - English → Italian
 
-ALL exercises MUST support BOTH directions.
-
-Generate:
+Every exercise should support:
 - choicesItalian
 - choicesEnglish
 
-Both sets MUST remain semantically aligned.
-
-Example:
-
-```json
-"choicesItalian": [
-  "Il wifi non funziona.",
-  "La porta è aperta.",
-  "Il bagno è occupato.",
-  "La chiave è sul tavolo."
-],
-
-"choicesEnglish": [
-  "The wifi is not working.",
-  "The door is open.",
-  "The bathroom is occupied.",
-  "The key is on the table."
-]
-```
-
-Choice ordering MUST remain semantically aligned.
+Choices must remain semantically aligned.
 
 ---
 
 # Feedback Requirements
 
-Generate BOTH:
-- Italian feedback
-- English feedback
-
-Example:
+Production schema:
 
 ```json
 "feedback": {
-  "correctItalian": "Perfetto!",
-  "incorrectItalian": "No, significa che il wifi non funziona.",
-  "correctEnglish": "Perfect!",
-  "incorrectEnglish": "No, this means the wifi is not working."
+  "correctItalian": "...",
+  "incorrectItalian": "...",
+  "correctEnglish": "...",
+  "incorrectEnglish": "..."
 }
 ```
 
 Feedback should:
-- feel human
+- sound human
 - remain concise
-- sound encouraging
+- encourage immersion
 - avoid robotic educational tone
 
 ---
 
-# Phrases Design
+# ID Requirements
 
-The phrase phase teaches:
-- practical communication
-- survival interaction
-- transactional fluency
+All corpus entries must contain:
+- deterministic IDs
+- unique IDs within datasets
 
-Phrases should:
-- sound spoken
-- feel useful immediately
-- emerge naturally from conversations
-- progressively build interaction ability
-
-Progression:
-1. Orientation
-2. Asking questions
-3. Clarification
-4. Requesting help
-5. Handling problems
-6. Follow-up interaction
-
----
-
-# CRITICAL: Spoken Italian
-
-Avoid:
-- textbook stiffness
-- robotic politeness
-- formal written structures
-
-Prefer:
-- spoken beginner Italian
-- short interaction
-- realistic rhythm
-
-GOOD:
-- "Il wifi?"
-- "Terzo piano."
-- "Un attimo."
-- "Ah ok."
-
----
-
-# CRITICAL: Sentences Must Feel Spoken
-
-The sentence phase must NOT contain:
-- long formal exposition
-- written-style educational statements
-- unnatural complete grammar
-
-The sentence phase should feel like:
-REAL SPOKEN INTERACTION.
-
-Real spoken Italian is:
-- shorter
-- fragmented
-- reactive
-- conversational
-- emotionally responsive
-
-Prefer:
-- "Non funziona."
-instead of:
-- "La connessione internet non funziona correttamente."
-
-Prefer:
-- "A che piano?"
-instead of:
-- "Potrebbe dirmi a quale piano si trova l'appartamento?"
-
----
-
-# Sentence Design Philosophy
-
-Sentence-stage exercises should feel like:
-- mini-dialogues
-- realistic interaction
-- conversational fragments
-- clarification
-- problem-solving
-- emotional realism
-
-GOOD:
+Preferred structure:
 
 ```txt
-"Il citofono non funziona."
-"Ah, provo ad aprire io."
+travel_airport_arrival_s042
 ```
 
+Avoid:
+- unstable numbering
+- duplicate identifiers
+- random IDs
+
+IDs are critical for:
+- SRS
+- analytics
+- progress tracking
+- audio mapping
+- migrations
+
+---
+
+# Audio Infrastructure
+
+The platform supports:
+- deterministic reusable audio generation
+- offline-first delivery
+- resumable synthesis workflows
+- future persona systems
+- future premium voice packs
+- future local TTS engines
+
+---
+
+# CRITICAL AUDIO RULE
+
+Generate audio:
+PER UNIQUE ITALIAN TEXT + VOICE COMBINATION,
+NOT per exercise.
+
+If the same Italian text appears:
+- across categories
+- across games
+- across review systems
+
+the SAME audio asset should be reused IF:
+- the voice is identical
+
+Different voices MUST generate different assets.
+
+---
+
+# Future-Safe Audio Hashing
+
+Audio hashing must support:
+- persona systems
+- premium voices
+- regeneration workflows
+- voice replacement
+
+Preferred strategy:
+
+```txt
+sha1(normalized_text + voice_id)
+```
+
+Example:
+- "Un attimo." + Elsa
+- "Un attimo." + Diego
+
+must generate DIFFERENT audio assets.
+
+Avoid:
+- text-only hashing for future systems.
+
+Current default voice:
+- it-IT-ElsaNeural
+
+---
+
+# Audio Format
+
+Preferred production format:
+- .opus
+
+Reasons:
+- excellent speech compression
+- ideal for PWAs
+- smaller offline footprint
+- excellent streaming behavior
+
+Avoid:
+- wav in production
+- duplicate mp3 storage
+
+---
+
+# Audio Storage
+
+Store audio inside:
+
+```txt
+public/audio/
+```
+
+Use:
+- flat hash-based structure
+
 GOOD:
 
 ```txt
-"Non trovo la chiave."
-"Guarda sul tavolo."
+public/audio/7cc91a.opus
 ```
 
 BAD:
 
 ```txt
-"La processione inizia alle sei."
+public/audio/travel/airport/file.mp3
 ```
 
-unless the scenario genuinely requires that style.
-
 ---
 
-# Conversational Realism
+# Audio Schema
 
-Include:
-- hesitation
-- interruption
-- clarification
-- uncertainty
-- emotional reaction
-- correction
-- misunderstanding
+Exercises should support:
 
-Examples:
-- "Aspetta..."
-- "Ah ok."
-- "Un attimo."
-- "Forse."
-- "Capito."
-- "Davvero?"
+```json
+"audio": {
+  "italian": "/audio/7cc91a.opus"
+}
+```
 
-The learner should feel:
-prepared for REAL interaction.
-
----
-
-# Conversational Recycling
-
-Important vocabulary should naturally reappear across:
+Preserve compatibility across:
 - vocabulary
 - phrases
 - sentences
 
-The learner should repeatedly encounter:
-- key words
-- interaction patterns
-- scenario concepts
+---
 
-through increasing contextual complexity.
+# Audio Manifest System
+
+The pipeline must support:
+- manifest generation
+- resumable synthesis
+- regeneration workflows
+- missing-audio detection
+- validation tooling
+
+Manifest responsibilities:
+- extract unique Italian text
+- deduplicate globally
+- map text + voice → deterministic hash
+- track generation state
 
 ---
 
-# Avoid AI-Generated Feel
+# Manifest Scalability
 
-DO NOT generate:
-- repetitive templates
-- robotic tone
-- grammar-demo content
-- perfectly balanced dialogue
-- artificial educational phrasing
+Large-scale manifests should eventually support:
+- sharded manifests
+- category manifests
+- incremental updates
+- resumable synchronization
 
-Italian must feel:
-human and spoken.
+Avoid:
+- repeatedly rewriting extremely large monolithic manifests
 
----
+Preferred future structure:
 
-# Final Output Requirements
+```txt
+public/audio/manifests/
+```
 
-For each unfinished scenario:
+Examples:
+- travel_manifest.json
+- dining_manifest.json
+- shard_001.json
 
-1. Read scenario files
-2. Analyze conversations
-3. Rebuild datasets
-4. Save improved JSONs
-5. Preserve schema compatibility
-6. Ensure production readiness
-
-DO NOT print datasets into chat.
-
-SAVE FILES DIRECTLY.
+Current single-manifest architecture is acceptable during stabilization.
 
 ---
 
-# Final Validation Checklist
+# Audio Workflow
 
-Before saving:
+Preferred workflow:
 
-- [ ] Content feels immersive
-- [ ] Conversations influenced exercises
-- [ ] Vocabulary is scenario-relevant
-- [ ] No random vocabulary exists
-- [ ] Dataset size is sufficient
-- [ ] Progression exists
-- [ ] Italian sounds natural
-- [ ] English sounds natural
-- [ ] Distractors are plausible
-- [ ] No trivial questions exist
-- [ ] No repetitive AI patterns exist
-- [ ] Learner is prepared for real communication
-- [ ] Vocabulary recycling exists
-- [ ] Problem-solving interaction exists
-- [ ] Feedback exists in BOTH languages
-- [ ] Choices exist in BOTH languages
-- [ ] Sentence stage feels spoken
-- [ ] JSON is valid
-- [ ] Files are production-ready
-- [ ] Files were successfully saved
+JSON corpus
+→ extract text
+→ deduplicate
+→ generate manifests
+→ synthesize audio
+→ validate audio
+→ inject paths
+→ validate corpus
+
+Avoid:
+- manual scenario-by-scenario synthesis
+- duplicate generation
+- uncontrolled regeneration
 
 ---
 
-# Success Condition
+# Current Audio Engine
 
-A successful run means:
-- ONLY scenario JSON files were modified
-- completed scenarios were skipped
-- completed categories were skipped
-- subagents processed categories independently
-- the app code remains untouched
-- schema compatibility is preserved
-- educational quality is significantly improved
-- datasets feel immersive and realistic
+Current engine:
+- Edge-TTS
+
+Current preferred voice:
+- it-IT-ElsaNeural
+
+Architecture must remain flexible enough to support:
+- premium voices
+- local engines
+- persona systems
+- downloadable packs
+- slow-speed variants
+
+without destabilizing corpus structure.
+
+---
+
+# Edge-TTS Safety Rules
+
+Edge-TTS uses remote Microsoft speech services.
+
+Therefore the pipeline MUST behave conservatively.
+
+Prioritize:
+- reliability
+- resumability
+- stability
+
+over:
+- maximum throughput
+
+---
+
+# Audio Generation Constraints
+
+The synthesis pipeline MUST include:
+- randomized delays
+- retry logic
+- resumable execution
+- skip-existing behavior
+- failure logging
+- controlled concurrency
+
+---
+
+# Concurrency Limits
+
+Recommended:
+- 2–4 concurrent workers
+
+Avoid:
+- aggressive parallelism
+- uncontrolled bursts
+
+---
+
+# Delay Strategy
+
+Use randomized delays:
+
+Recommended:
+- 300ms–1000ms
+
+Example:
+
+```python
+await asyncio.sleep(random.uniform(0.3, 1.0))
+```
+
+This reduces:
+- throttling
+- temporary blocking
+- instability
+
+---
+
+# Retry Strategy
+
+The pipeline must:
+- retry failures
+- use exponential backoff
+- log failures persistently
+
+Recommended:
+- 3–5 retries
+
+---
+
+# Resumable Generation
+
+Audio generation MUST:
+- skip existing files
+- preserve completed assets
+- survive interruptions
+- resume safely
+
+Treat synthesis as:
+a resumable build pipeline.
+
+---
+
+# Audio Normalization Requirements
+
+Audio consistency is critical for immersion.
+
+The synthesis pipeline should eventually support:
+- loudness normalization
+- silence trimming
+- consistent bitrate
+- playback consistency
+- conversational pacing consistency
+
+Future normalization may include:
+- ffmpeg loudnorm
+- silence removal
+- opus optimization
+
+Avoid:
+- inconsistent loudness
+- long silence
+- abrupt clipping
+- inconsistent pacing
+
+Audio UX consistency is more important than:
+- maximum synthesis speed.
+
+---
+
+# Validation Requirements
+
+Validation must include:
+- JSON integrity
+- schema consistency
+- missing audio
+- broken paths
+- invalid manifests
+- invalid filenames
+- duplicate IDs
+- missing IDs
+- bidirectional alignment
+
+---
+
+# Conversational Audio QA
+
+Audio validation must include:
+- pronunciation realism
+- pacing comfort
+- listening fatigue evaluation
+- emotional realism
+- conversational flow
+- speaker consistency
+
+Validation is NOT limited to:
+- file existence
+- synthesis completion
+- manifest integrity
+
+Immersion quality is a primary production concern.
+
+---
+
+# Conversational Persona Audio System
+
+The platform supports:
+- role-aware immersion
+- controlled multi-speaker synthesis
+- conversational speaker consistency
+
+This exists ONLY to improve:
+- realism
+- immersion
+- listening quality
+- scenario authenticity
+
+NOT:
+- random novelty
+- chaotic speaker switching
+- uncontrolled variation
+
+---
+
+# CRITICAL PERSONA RULE
+
+Voices must be assigned:
+BY ROLE,
+NOT randomly.
+
+GOOD:
+- waiter → consistent waiter voice
+- receptionist → consistent receptionist voice
+- traveler → consistent traveler voice
+
+BAD:
+- arbitrary voice changes
+- inconsistent role identity
+- random gender switching
+
+---
+
+# Persona Usage Guidelines
+
+## Vocabulary Stage
+Use:
+- single consistent voice
+
+Reason:
+- pronunciation consistency
+- learner familiarity
+- lower cognitive load
+
+Avoid:
+- multi-speaker vocabulary synthesis
+
+---
+
+# Phrase Stage
+
+Prefer:
+- mostly single voice
+
+Avoid:
+- excessive switching
+
+---
+
+# Sentence Stage
+
+Sentence-stage mini-dialogues MAY support:
+- role-based personas
+- conversational differentiation
+- immersive dialogue synthesis
+
+This is the PRIMARY layer where personas provide educational value.
+
+---
+
+# Current Recommended Voice Strategy
+
+| Layer | Voice Strategy |
+|---|---|
+| Vocabulary | single voice |
+| Phrases | mostly single voice |
+| Sentences | role-based personas |
+| AI Tutor | dedicated unique voice |
+
+---
+
+# Dialogue Synthesis
+
+Future dialogue systems may support:
+- concatenated synthesis
+- pause timing
+- conversational rhythm
+- role-aware playback
+
+However:
+- speaker mappings must remain stable
+- dialogue synthesis must remain deterministic
+- persona consistency must be preserved
+
+---
+
+# Persona Stability Rule
+
+Do NOT inject persona metadata corpus-wide until:
+- stable role taxonomy exists
+- stable voice mappings exist
+- deterministic assignment rules exist
+
+Prototype carefully before large-scale rollout.
+
+---
+
+# Category-Based Audio Rollout
+
+Do NOT synthesize the entire corpus at once.
+
+Prefer:
+- category-by-category rollout
+- validation checkpoints
+- incremental QA
+- progressive deployment
+
+Recommended rollout order:
+1. travel
+2. accommodation
+3. dining
+4. social
+5. health
+
+These categories provide the highest immersion value.
+
+---
+
+# Audio UX Philosophy
+
+Audio immersion quality is now more important than:
+- raw synthesis volume
+- maximum throughput
+- maximum voice variety
+
+Prioritize:
+- listening comfort
+- realism
+- pacing
+- immersion
+- consistency
+- comprehension
+
+---
+
+# Final Success Condition
+
+A successful task means:
+- corpus integrity preserved
+- schema consistency preserved
+- deterministic infrastructure preserved
+- resumability preserved
+- realism preserved
+- immersion preserved
+- validation passed
+- audio UX quality maintained

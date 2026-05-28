@@ -90,7 +90,7 @@ export const ConversationScreen: React.FC = () => {
     if (messages.length > 0) {
       const lastMessage = messages[messages.length - 1];
       if (lastMessage.role === 'assistant') {
-        Tts.speak(lastMessage.text);
+        void Tts.speak(lastMessage.text);
       }
     }
   }, [messages]);

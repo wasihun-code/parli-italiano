@@ -1,3 +1,14 @@
+export type ScenarioFeedback = {
+  correctItalian: string;
+  incorrectItalian: string;
+  correctEnglish: string;
+  incorrectEnglish: string;
+};
+
+export type ScenarioAudio = {
+  italian: string;
+};
+
 export type ScenarioVocabularyRow = {
   id: string;
   scenarioId: number;
@@ -5,6 +16,10 @@ export type ScenarioVocabularyRow = {
   english: string;
   correctStreakRequired: number;
   sortOrder: number;
+  choicesItalian?: string[];
+  choicesEnglish?: string[];
+  feedback?: ScenarioFeedback;
+  audio?: ScenarioAudio;
 };
 
 export type ScenarioPhraseRow = {
@@ -14,6 +29,10 @@ export type ScenarioPhraseRow = {
   english: string;
   passScore: number;
   sortOrder: number;
+  choicesItalian?: string[];
+  choicesEnglish?: string[];
+  feedback?: ScenarioFeedback;
+  audio?: ScenarioAudio;
 };
 
 export type ScenarioSentenceRow = {
@@ -24,4 +43,8 @@ export type ScenarioSentenceRow = {
   grammarPoint: string;
   passScore: number;
   sortOrder: number;
+  choicesItalian?: string[];
+  choicesEnglish?: string[];
+  feedback?: ScenarioFeedback;
+  audio?: ScenarioAudio;
 };

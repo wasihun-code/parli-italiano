@@ -96,6 +96,7 @@ export function registerSentenceItems(
       type: 'sentence',
       italian: sentence.italian,
       english: sentence.english,
+      audio: sentence.audio,
     }),
   );
 }

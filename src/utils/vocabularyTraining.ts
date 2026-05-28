@@ -47,6 +47,7 @@ export function registerVocabularyTerms(
       type: 'vocabulary',
       italian: term.italian,
       english: term.english,
+      audio: term.audio,
     }),
   );
 }
@@ -140,10 +141,12 @@ export function buildVocabularyExercise(
       kind,
       prompt: 'Listen and choose the English translation.',
       answer: term.english,
-      options: buildShuffledOptions(
-        term.english,
-        allTerms.map(t => t.english),
-      ),
+      options: term.choicesEnglish 
+        ? shuffle([...term.choicesEnglish])
+        : buildShuffledOptions(
+            term.english,
+            allTerms.map(t => t.english),
+          ),
     };
   }
 
@@ -161,10 +164,12 @@ export function buildVocabularyExercise(
       kind,
       prompt: term.italian,
       answer: term.english,
-      options: buildShuffledOptions(
-        term.english,
-        allTerms.map(t => t.english),
-      ),
+      options: term.choicesEnglish 
+        ? shuffle([...term.choicesEnglish])
+        : buildShuffledOptions(
+            term.english,
+            allTerms.map(t => t.english),
+          ),
     };
   }
 
@@ -172,10 +177,12 @@ export function buildVocabularyExercise(
     kind,
     prompt: term.english,
     answer: term.italian,
-    options: buildShuffledOptions(
-      term.italian,
-      allTerms.map(t => t.italian),
-    ),
+    options: term.choicesItalian 
+      ? shuffle([...term.choicesItalian])
+      : buildShuffledOptions(
+          term.italian,
+          allTerms.map(t => t.italian),
+        ),
   };
 }
 

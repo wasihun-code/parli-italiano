@@ -100,7 +100,7 @@ export const SentenceTrainingScreen: React.FC = () => {
 
   const playAudio = useCallback((): void => {
     if (currentSentence) {
-      Tts.speak(currentSentence.italian);
+      void Tts.speak(currentSentence.italian, currentSentence.audio);
     }
   }, [currentSentence]);
 
@@ -124,14 +124,24 @@ export const SentenceTrainingScreen: React.FC = () => {
 
     recordAnswer(currentSentence.id, isCorrect);
     setStats(current => recordSentenceAttempt(current, currentSentence.id, isCorrect));
-    const explanation = !isCorrect ? getWrongAnswerExplanation({
-      type: 'sentence',
-      italian: currentSentence.italian,
-      correctAnswer: currentExercise.answer
-    }) : undefined;
+    
+    let explanation: string | undefined;
+    if (currentSentence.feedback) {
+      if (status === 'correct' || status === 'nearly_correct') {
+        explanation = isIt ? currentSentence.feedback.correctItalian : currentSentence.feedback.correctEnglish;
+      } else {
+        explanation = isIt ? currentSentence.feedback.incorrectItalian : currentSentence.feedback.incorrectEnglish;
+      }
+    } else if (status === 'incorrect') {
+      explanation = getWrongAnswerExplanation({
+        type: 'sentence',
+        italian: currentSentence.italian,
+        correctAnswer: currentExercise.answer
+      });
+    }
 
     setFeedback({ status, correctAnswer: currentExercise.answer, explanation });
-  }, [currentExercise, currentSentence, feedback, recordAnswer, typedAnswer, addXP]);
+  }, [currentExercise, currentSentence, feedback, recordAnswer, typedAnswer, addXP, isIt]);
 
   const advance = useCallback((): void => {
     setFeedback(undefined);

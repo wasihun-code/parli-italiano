@@ -16,7 +16,6 @@ export const SettingsScreen: React.FC = () => {
     feedbackLanguage, setFeedbackLanguage, 
     soundEnabled, setSoundEnabled,
     flashcardDirection, setFlashcardDirection,
-    ttsProvider, setTtsProvider
   } = useUserSettingsStore();
   
   const resetProgress = useProgressStore(state => state.resetProgress);
@@ -105,41 +104,6 @@ export const SettingsScreen: React.FC = () => {
                 transition: 'left 0.2s'
               }} />
             </button>
-          </div>
-
-          {/* TTS Provider */}
-          <div className="card" style={{ padding: spacing.lg }}>
-            <h3 style={{ color: colors.primary, marginBottom: spacing.md }}>Voce (TTS)</h3>
-            <div style={{ display: 'flex', gap: spacing.md }}>
-              <button
-                onClick={() => setTtsProvider('api')}
-                style={{
-                  flex: 1,
-                  padding: spacing.md,
-                  borderRadius: 12,
-                  border: ttsProvider === 'api' ? `2px solid ${colors.accent}` : `1px solid ${colors.border}`,
-                  backgroundColor: ttsProvider === 'api' ? 'rgba(212, 163, 115, 0.1)' : 'transparent',
-                  fontWeight: 800,
-                  cursor: 'pointer'
-                }}
-              >
-                Alta Qualità (API)
-              </button>
-              <button
-                onClick={() => setTtsProvider('browser')}
-                style={{
-                  flex: 1,
-                  padding: spacing.md,
-                  borderRadius: 12,
-                  border: ttsProvider === 'browser' ? `2px solid ${colors.accent}` : `1px solid ${colors.border}`,
-                  backgroundColor: ttsProvider === 'browser' ? 'rgba(212, 163, 115, 0.1)' : 'transparent',
-                  fontWeight: 800,
-                  cursor: 'pointer'
-                }}
-              >
-                Browser
-              </button>
-            </div>
           </div>
 
           {/* Flashcard Direction */}

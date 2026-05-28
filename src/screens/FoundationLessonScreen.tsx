@@ -57,7 +57,7 @@ export const FoundationLessonScreen: React.FC = () => {
 
   const speak = useCallback((): void => {
     if (exercise) {
-      Tts.speak(exercise.answer);
+      void Tts.speak(exercise.answer);
     }
   }, [exercise]);
 

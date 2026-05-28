@@ -58,6 +58,7 @@ export function registerPhraseItems(
       type: 'phrase',
       italian: phrase.italian,
       english: phrase.english,
+      audio: phrase.audio,
     }),
   );
 }
@@ -162,7 +163,9 @@ export function buildPhraseExercise(
       prompt: phrase.english,
       answer: phrase.italian,
       assemblyWords: [],
-      options: buildOptions(phrase.italian, allPhrases.map(p => p.italian)),
+      options: phrase.choicesItalian 
+        ? shuffle([...phrase.choicesItalian])
+        : buildOptions(phrase.italian, allPhrases.map(p => p.italian)),
     };
   }
 

@@ -51,6 +51,10 @@ export interface ScenarioVocabulary {
   english: string;
   correct_streak_required: number;
   sort_order: number;
+  choices_italian_json?: string;
+  choices_english_json?: string;
+  feedback_json?: string;
+  audio_json?: string;
 }
 
 export interface ScenarioPhrase {
@@ -60,6 +64,10 @@ export interface ScenarioPhrase {
   english: string;
   pass_score: number;
   sort_order: number;
+  choices_italian_json?: string;
+  choices_english_json?: string;
+  feedback_json?: string;
+  audio_json?: string;
 }
 
 export interface ScenarioSentence {
@@ -70,6 +78,10 @@ export interface ScenarioSentence {
   grammar_point: string;
   pass_score: number;
   sort_order: number;
+  choices_italian_json?: string;
+  choices_english_json?: string;
+  feedback_json?: string;
+  audio_json?: string;
 }
 
 export interface SrsItem {
@@ -84,6 +96,7 @@ export interface SrsItem {
   correct_attempts: number;
   due_at: string;
   last_reviewed_at?: string;
+  audio_json?: string;
 }
 
 export interface TtsCache {
@@ -123,7 +136,7 @@ class ParlaItalianoDatabase extends Dexie {
 
 export const db = new ParlaItalianoDatabase();
 
-const SEED_VERSION = '2';
+const SEED_VERSION = '3';
 
 export async function setupDatabase() {
   const count = await db.app_metadata.count();
@@ -214,6 +227,10 @@ async function seedDatabase() {
           english: term.english,
           correct_streak_required: 3,
           sort_order: vIndex + 1,
+          choices_italian_json: term.choicesItalian ? JSON.stringify(term.choicesItalian) : undefined,
+          choices_english_json: term.choicesEnglish ? JSON.stringify(term.choicesEnglish) : undefined,
+          feedback_json: term.feedback ? JSON.stringify(term.feedback) : undefined,
+          audio_json: term.audio ? JSON.stringify(term.audio) : undefined,
         });
 
         await db.srs_items.put({
@@ -226,6 +243,7 @@ async function seedDatabase() {
           attempts: 0,
           correct_attempts: 0,
           due_at: new Date(0).toISOString(),
+          audio_json: term.audio ? JSON.stringify(term.audio) : undefined,
         });
       }
 
@@ -237,6 +255,10 @@ async function seedDatabase() {
           english: phrase.english,
           pass_score: 85,
           sort_order: pIndex + 1,
+          choices_italian_json: phrase.choicesItalian ? JSON.stringify(phrase.choicesItalian) : undefined,
+          choices_english_json: phrase.choicesEnglish ? JSON.stringify(phrase.choicesEnglish) : undefined,
+          feedback_json: phrase.feedback ? JSON.stringify(phrase.feedback) : undefined,
+          audio_json: phrase.audio ? JSON.stringify(phrase.audio) : undefined,
         });
       }
 
@@ -246,9 +268,13 @@ async function seedDatabase() {
           scenario_id: scenario.id,
           italian: sentence.italian,
           english: sentence.english,
-          grammar_point: sentence.grammarPoint,
+          grammar_point: sentence.grammarPoint || 'Spoken pattern.',
           pass_score: 80,
           sort_order: sIndex + 1,
+          choices_italian_json: sentence.choicesItalian ? JSON.stringify(sentence.choicesItalian) : undefined,
+          choices_english_json: sentence.choicesEnglish ? JSON.stringify(sentence.choicesEnglish) : undefined,
+          feedback_json: sentence.feedback ? JSON.stringify(sentence.feedback) : undefined,
+          audio_json: sentence.audio ? JSON.stringify(sentence.audio) : undefined,
         });
       }
     }
@@ -279,57 +305,64 @@ async function seedMissingDatabaseRows() {
       });
 
       for (const [vIndex, term] of scenario.vocabulary.entries()) {
-        if (!(await db.scenario_vocabulary.get(term.id))) {
-          await db.scenario_vocabulary.put({
+        await db.scenario_vocabulary.put({
           id: term.id,
           scenario_id: scenario.id,
           italian: term.italian,
           english: term.english,
           correct_streak_required: 3,
           sort_order: vIndex + 1,
+          choices_italian_json: term.choicesItalian ? JSON.stringify(term.choicesItalian) : undefined,
+          choices_english_json: term.choicesEnglish ? JSON.stringify(term.choicesEnglish) : undefined,
+          feedback_json: term.feedback ? JSON.stringify(term.feedback) : undefined,
+          audio_json: term.audio ? JSON.stringify(term.audio) : undefined,
         });
-        }
 
         if (!(await db.srs_items.get(term.id))) {
           await db.srs_items.put({
-          item_id: term.id,
-          item_type: 'vocabulary',
-          scenario_id: scenario.id,
-          italian: term.italian,
-          english: term.english,
-          correct_streak: 0,
-          attempts: 0,
-          correct_attempts: 0,
-          due_at: new Date(0).toISOString(),
-        });
+            item_id: term.id,
+            item_type: 'vocabulary',
+            scenario_id: scenario.id,
+            italian: term.italian,
+            english: term.english,
+            correct_streak: 0,
+            attempts: 0,
+            correct_attempts: 0,
+            due_at: new Date(0).toISOString(),
+            audio_json: term.audio ? JSON.stringify(term.audio) : undefined,
+          });
         }
       }
 
       for (const [pIndex, phrase] of scenario.phrases.entries()) {
-        if (!(await db.scenario_phrases.get(phrase.id))) {
-          await db.scenario_phrases.put({
+        await db.scenario_phrases.put({
           id: phrase.id,
           scenario_id: scenario.id,
           italian: phrase.italian,
           english: phrase.english,
           pass_score: 85,
           sort_order: pIndex + 1,
+          choices_italian_json: phrase.choicesItalian ? JSON.stringify(phrase.choicesItalian) : undefined,
+          choices_english_json: phrase.choicesEnglish ? JSON.stringify(phrase.choicesEnglish) : undefined,
+          feedback_json: phrase.feedback ? JSON.stringify(phrase.feedback) : undefined,
+          audio_json: phrase.audio ? JSON.stringify(phrase.audio) : undefined,
         });
-        }
       }
 
       for (const [sIndex, sentence] of scenario.sentences.entries()) {
-        if (!(await db.scenario_sentences.get(sentence.id))) {
-          await db.scenario_sentences.put({
+        await db.scenario_sentences.put({
           id: sentence.id,
           scenario_id: scenario.id,
           italian: sentence.italian,
           english: sentence.english,
-          grammar_point: sentence.grammarPoint,
+          grammar_point: sentence.grammarPoint || 'Spoken pattern.',
           pass_score: 80,
           sort_order: sIndex + 1,
+          choices_italian_json: sentence.choicesItalian ? JSON.stringify(sentence.choicesItalian) : undefined,
+          choices_english_json: sentence.choicesEnglish ? JSON.stringify(sentence.choicesEnglish) : undefined,
+          feedback_json: sentence.feedback ? JSON.stringify(sentence.feedback) : undefined,
+          audio_json: sentence.audio ? JSON.stringify(sentence.audio) : undefined,
         });
-        }
       }
     }
 
@@ -354,6 +387,10 @@ export async function loadScenarioVocabulary(scenarioId: number) {
     english: r.english,
     correctStreakRequired: r.correct_streak_required,
     sortOrder: r.sort_order,
+    choicesItalian: r.choices_italian_json ? JSON.parse(r.choices_italian_json) : undefined,
+    choicesEnglish: r.choices_english_json ? JSON.parse(r.choices_english_json) : undefined,
+    feedback: r.feedback_json ? JSON.parse(r.feedback_json) : undefined,
+    audio: r.audio_json ? JSON.parse(r.audio_json) : undefined,
   }));
 }
 
@@ -369,6 +406,10 @@ export async function loadScenarioPhrases(scenarioId: number) {
     english: r.english,
     passScore: r.pass_score,
     sortOrder: r.sort_order,
+    choicesItalian: r.choices_italian_json ? JSON.parse(r.choices_italian_json) : undefined,
+    choicesEnglish: r.choices_english_json ? JSON.parse(r.choices_english_json) : undefined,
+    feedback: r.feedback_json ? JSON.parse(r.feedback_json) : undefined,
+    audio: r.audio_json ? JSON.parse(r.audio_json) : undefined,
   }));
 }
 
@@ -385,6 +426,10 @@ export async function loadScenarioSentences(scenarioId: number) {
     grammarPoint: r.grammar_point,
     passScore: r.pass_score,
     sortOrder: r.sort_order,
+    choicesItalian: r.choices_italian_json ? JSON.parse(r.choices_italian_json) : undefined,
+    choicesEnglish: r.choices_english_json ? JSON.parse(r.choices_english_json) : undefined,
+    feedback: r.feedback_json ? JSON.parse(r.feedback_json) : undefined,
+    audio: r.audio_json ? JSON.parse(r.audio_json) : undefined,
   }));
 }
 

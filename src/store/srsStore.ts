@@ -16,6 +16,7 @@ export type SrsItem = {
   learned: boolean;
   dueAt: string;
   lastReviewedAt?: string;
+  audio?: any;
 };
 
 type RegisterSrsItemInput = {
@@ -23,6 +24,7 @@ type RegisterSrsItemInput = {
   type: SrsItemType;
   italian: string;
   english: string;
+  audio?: any;
 };
 
 type SrsState = {

@@ -44,7 +44,7 @@ export const ReviewScreen: React.FC = () => {
 
   const playAudio = (): void => {
     if (currentItem) {
-      Tts.speak(currentItem.italian);
+      void Tts.speak(currentItem.italian, currentItem.audio);
     }
   };
 

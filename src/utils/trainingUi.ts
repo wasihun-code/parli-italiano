@@ -44,7 +44,7 @@ export function buildShuffledOptions(
 }
 
 export function masterSrsItems(
-  items: Array<{id: string; type: SrsItemType; italian: string; english: string}>,
+  items: Array<{id: string; type: SrsItemType; italian: string; english: string; audio?: any}>,
   srs: ReturnType<typeof useSrsStore.getState>,
 ): void {
   items.forEach(item => {

@@ -123,7 +123,7 @@ export const PlacementTestScreen: React.FC = () => {
       if (currentExercise?.kind !== 'fillBlank' && e.key >= '1' && e.key <= '4') {
         const choice = currentExercise.options?.[Number(e.key) - 1];
         if (choice) {
-          Tts.speak(choice);
+          void Tts.speak(choice);
           setSelectedAnswer(choice);
           submitAnswer(choice);
         }
@@ -205,7 +205,7 @@ export const PlacementTestScreen: React.FC = () => {
                   <button
                     key={choice}
                     onClick={() => {
-                      Tts.speak(choice);
+                      void Tts.speak(choice);
                       setSelectedAnswer(choice);
                       submitAnswer(choice);
                     }}

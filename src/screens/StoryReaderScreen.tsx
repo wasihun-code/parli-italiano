@@ -5,6 +5,7 @@ import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { useGameStore } from '@shared/store/gameStore';
 import storiesData from '@shared/data/stories.json';
+import { Tts } from '../lib/tts';
 import distractorsData from '@shared/data/stories_distractors.json';
 import { PrimaryButton } from '../components/PrimaryButton';
 import { FeedbackMessage } from '../components/FeedbackMessage';
@@ -103,6 +104,13 @@ export const StoryReaderScreen: React.FC = () => {
 
   const italianSubPages = useMemo(() => splitIntoSubPages(currentPage?.italian_text || ''), [currentPage]);
   const englishSubPages = useMemo(() => splitIntoSubPages(currentPage?.english_text || ''), [currentPage]);
+
+  const playAudio = () => {
+    const text = italianSubPages[subPageIdx];
+    if (text) {
+      void Tts.speak(text, (currentPage as any).audio);
+    }
+  };
 
   useEffect(() => {
     // Sync store on change
@@ -277,31 +285,54 @@ export const StoryReaderScreen: React.FC = () => {
           <p style={{ fontSize: 20, lineHeight: '1.6', color: colors.primary, margin: 0, whiteSpace: 'pre-wrap' }}>
             {italianSubPages[subPageIdx]}
           </p>
+
+          <div style={{ display: 'flex', gap: spacing.md, marginTop: spacing.lg }}>
+            <button 
+              onClick={playAudio}
+              style={{
+                background: colors.primary,
+                border: 'none',
+                color: 'white',
+                padding: '8px 16px',
+                borderRadius: 8,
+                cursor: 'pointer',
+                fontSize: 14,
+                fontWeight: 'bold',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 8
+              }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+              </svg>
+              Listen
+            </button>
+            
+            <button 
+              onClick={handleTranslate}
+              disabled={!showEnglish && story.difficulty > 1 && progress.translateUsesRemaining <= 0}
+              style={{
+                background: 'none',
+                border: `1px dashed ${colors.primary}`,
+                color: colors.primary,
+                padding: '8px 16px',
+                borderRadius: 8,
+                cursor: 'pointer',
+                fontSize: 14,
+                fontWeight: 'bold',
+                opacity: (!showEnglish && story.difficulty > 1 && progress.translateUsesRemaining <= 0) ? 0.5 : 1
+              }}
+            >
+              {showEnglish ? 'Undo Translation' : (story.difficulty === 1 ? 'Show Translation' : 'Use Hint (Show Translation)')}
+            </button>
+          </div>
           
           {showEnglish && (
             <div className="fade-in" style={{ marginTop: spacing.lg, paddingTop: spacing.lg, borderTop: `1px solid ${colors.border}`, color: colors.textSecondary, fontStyle: 'italic' }}>
               {englishSubPages[subPageIdx] || englishSubPages[englishSubPages.length - 1]}
             </div>
           )}
-
-          <button 
-            onClick={handleTranslate}
-            disabled={!showEnglish && story.difficulty > 1 && progress.translateUsesRemaining <= 0}
-            style={{
-              marginTop: spacing.lg,
-              background: 'none',
-              border: `1px dashed ${colors.primary}`,
-              color: colors.primary,
-              padding: '8px 16px',
-              borderRadius: 8,
-              cursor: 'pointer',
-              fontSize: 14,
-              fontWeight: 'bold',
-              opacity: (!showEnglish && story.difficulty > 1 && progress.translateUsesRemaining <= 0) ? 0.5 : 1
-            }}
-          >
-            {showEnglish ? 'Undo Translation' : (story.difficulty === 1 ? 'Show Translation' : 'Use Hint (Show Translation)')}
-          </button>
         </div>
 
         {isLastSubPage && (

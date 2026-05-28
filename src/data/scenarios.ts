@@ -20,23 +20,52 @@ export type ScenarioCategory =
   | 'Reflexive_Verbs'
   | 'Adjectives';
 
+export type ScenarioFeedback = {
+  correctItalian: string;
+  incorrectItalian: string;
+  correctEnglish: string;
+  incorrectEnglish: string;
+};
+
+export type ScenarioAudio = {
+  italian: string;
+};
+
 export type ScenarioTerm = {
   id: string;
   italian: string;
   english: string;
+  choicesItalian?: string[];
+  choicesEnglish?: string[];
+  correctAnswerItalian?: string;
+  correctAnswerEnglish?: string;
+  feedback?: ScenarioFeedback;
+  audio?: ScenarioAudio;
 };
 
 export type ScenarioPhrase = {
   id: string;
   italian: string;
   english: string;
+  choicesItalian?: string[];
+  choicesEnglish?: string[];
+  correctAnswerItalian?: string;
+  correctAnswerEnglish?: string;
+  feedback?: ScenarioFeedback;
+  audio?: ScenarioAudio;
 };
 
 export type ScenarioSentence = {
   id: string;
   italian: string;
   english: string;
-  grammarPoint: string;
+  grammarPoint?: string;
+  choicesItalian?: string[];
+  choicesEnglish?: string[];
+  correctAnswerItalian?: string;
+  correctAnswerEnglish?: string;
+  feedback?: ScenarioFeedback;
+  audio?: ScenarioAudio;
 };
 
 export type Scenario = {
@@ -481,10 +510,22 @@ function buildSentences(blueprint: ScenarioBlueprint): ScenarioSentence[] {
   }));
 }
 
+import { loadProductionScenarioData } from './corpusLoader';
+
 export const scenarios: Scenario[] = blueprints.map(blueprint => {
-  const vocabulary = buildVocabulary(blueprint);
-  const phrases = buildPhrases(blueprint);
-  const sentences = buildSentences(blueprint);
+  const productionData = loadProductionScenarioData(blueprint.id);
+
+  const vocabulary: ScenarioTerm[] = productionData 
+    ? productionData.vocabulary 
+    : buildVocabulary(blueprint);
+    
+  const phrases: ScenarioPhrase[] = productionData 
+    ? productionData.phrases 
+    : buildPhrases(blueprint);
+    
+  const sentences: ScenarioSentence[] = productionData 
+    ? productionData.sentences 
+    : buildSentences(blueprint);
 
   // Sort vocabulary by length, then alphabetical
   vocabulary.sort((a, b) => {

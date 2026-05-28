@@ -168,7 +168,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
 
   const playAudio = useCallback((): void => {
     if (activeTerm) {
-      Tts.speak(activeTerm.term.italian);
+      void Tts.speak(activeTerm.term.italian, activeTerm.term.audio);
     }
   }, [activeTerm]);
 
@@ -208,14 +208,23 @@ export const VocabularyTrainingScreen: React.FC = () => {
       ...current,
       [activeTerm.term.id]: (current[activeTerm.term.id] ?? 0) + (status !== 'incorrect' ? 1 : 0),
     }));
-    const explanation = status === 'incorrect' ? getWrongAnswerExplanation({
-      type: 'vocabulary',
-      italian: activeTerm.term.italian,
-      correctAnswer: exercise.answer
-    }) : undefined;
+    let explanation: string | undefined;
+    if (activeTerm.term.feedback) {
+      if (status === 'correct' || status === 'nearly_correct') {
+        explanation = isIt ? activeTerm.term.feedback.correctItalian : activeTerm.term.feedback.correctEnglish;
+      } else {
+        explanation = isIt ? activeTerm.term.feedback.incorrectItalian : activeTerm.term.feedback.incorrectEnglish;
+      }
+    } else if (status === 'incorrect') {
+      explanation = getWrongAnswerExplanation({
+        type: 'vocabulary',
+        italian: activeTerm.term.italian,
+        correctAnswer: exercise.answer
+      });
+    }
     
     setFeedback({ status, correctAnswer: exercise.answer, explanation });
-  }, [activeTerm, exercise, feedback, typedAnswer, selectedAnswer, recordAnswer, isSkipTest, addXP]);
+  }, [activeTerm, exercise, feedback, typedAnswer, selectedAnswer, recordAnswer, isSkipTest, addXP, isIt]);
 
   const advance = useCallback((): void => {
     const nextIndex = currentIndex + 1;
@@ -233,6 +242,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
             type: 'vocabulary' as const,
             italian: term.italian,
             english: term.english,
+            audio: term.audio,
           })),
           useSrsStore.getState(),
         );
@@ -261,7 +271,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
           const idx = parseInt(e.key) - 1;
           if (exercise?.options[idx]) {
             const ans = exercise.options[idx];
-            Tts.speak(ans);
+            void Tts.speak(ans);
             setSelectedAnswer(ans);
             submitAnswer(ans);
           }
@@ -439,7 +449,7 @@ export const VocabularyTrainingScreen: React.FC = () => {
                   <button
                     key={choice}
                     onClick={() => {
-                      Tts.speak(choice);
+                      void Tts.speak(choice);
                       setSelectedAnswer(choice);
                       submitAnswer(choice);
                     }}

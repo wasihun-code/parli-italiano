@@ -158,7 +158,7 @@ export const PhraseTrainingScreen: React.FC = () => {
 
   const playAudio = useCallback((): void => {
     if (currentPhrase) {
-      Tts.speak(currentPhrase.italian);
+      void Tts.speak(currentPhrase.italian, currentPhrase.audio);
     }
   }, [currentPhrase]);
 
@@ -205,14 +205,24 @@ export const PhraseTrainingScreen: React.FC = () => {
       }));
     }
     setStats(current => recordPhraseAttempt(current, currentPhrase.id, isCorrect));
-    const explanation = !isCorrect ? getWrongAnswerExplanation({
-      type: 'phrase',
-      italian: currentPhrase.italian,
-      correctAnswer: currentExercise.answer
-    }) : undefined;
+    
+    let explanation: string | undefined;
+    if (currentPhrase.feedback) {
+      if (status === 'correct' || status === 'nearly_correct') {
+        explanation = isIt ? currentPhrase.feedback.correctItalian : currentPhrase.feedback.correctEnglish;
+      } else {
+        explanation = isIt ? currentPhrase.feedback.incorrectItalian : currentPhrase.feedback.incorrectEnglish;
+      }
+    } else if (status === 'incorrect') {
+      explanation = getWrongAnswerExplanation({
+        type: 'phrase',
+        italian: currentPhrase.italian,
+        correctAnswer: currentExercise.answer
+      });
+    }
 
     setFeedback({ status, correctAnswer: currentExercise.answer, explanation });
-  }, [currentPhrase, currentExercise, feedback, typedAnswer, selectedWords, selectedAnswer, recordAnswer, addXP]);
+  }, [currentPhrase, currentExercise, feedback, typedAnswer, selectedWords, selectedAnswer, recordAnswer, addXP, isIt]);
 
   const advance = useCallback((): void => {
     setFeedback(undefined);
@@ -260,7 +270,7 @@ export const PhraseTrainingScreen: React.FC = () => {
           const idx = parseInt(e.key) - 1;
           if (currentExercise.options[idx]) {
             const ans = currentExercise.options[idx];
-            Tts.speak(ans);
+            void Tts.speak(ans);
             setSelectedAnswer(ans);
             submitAnswer(ans);
           }
@@ -407,7 +417,7 @@ export const PhraseTrainingScreen: React.FC = () => {
                   <button
                     key={choice}
                     onClick={() => {
-                      Tts.speak(choice);
+                      void Tts.speak(choice);
                       setSelectedAnswer(choice);
                       submitAnswer(choice);
                     }}
@@ -461,7 +471,7 @@ export const PhraseTrainingScreen: React.FC = () => {
                 }}>
                   {selectedWords.map((word, idx) => (
                     <WordChip key={idx} word={word} onPress={() => {
-                      Tts.speak(word);
+                      void Tts.speak(word);
                       setSelectedWords(prev => prev.filter((_, i) => i !== idx));
                     }} />
                   ))}
@@ -477,7 +487,7 @@ export const PhraseTrainingScreen: React.FC = () => {
                 }}>
                   {currentExercise.assemblyWords.filter((word: string) => !selectedWords.includes(word) || currentExercise.assemblyWords.filter((w: string) => w === word).length > selectedWords.filter((w: string) => w === word).length).map((word: string, idx: number) => (
                     <WordChip key={idx} word={word} onPress={() => {
-                      Tts.speak(word);
+                      void Tts.speak(word);
                       setSelectedWords(prev => [...prev, word]);
                     }} />
                   ))}
