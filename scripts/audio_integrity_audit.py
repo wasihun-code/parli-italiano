@@ -162,11 +162,15 @@ def run_audit():
         return text, (valid, msg)
 
     print(f"Auditing {len(all_texts)} unique audio assets...")
-    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+    processed = 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=64) as executor:
         future_to_text = {executor.submit(check_asset, t): t for t in all_texts}
         for future in concurrent.futures.as_completed(future_to_text):
             text, result = future.result()
             asset_status[text] = result
+            processed += 1
+            if processed % 1000 == 0:
+                print(f"Processed {processed}/{len(all_texts)} assets...")
 
     # 4. Compile Asset Reports
     for text, (valid, msg) in asset_status.items():
