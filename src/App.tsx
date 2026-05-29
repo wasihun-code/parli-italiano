@@ -34,6 +34,9 @@ import { FriendsScreen } from './screens/FriendsScreen';
 import { ChatScreen } from './screens/ChatScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { LeaderboardScreen } from './screens/LeaderboardScreen';
+import { MiniLessonIntroScreen } from './screens/MiniLessonIntroScreen';
+import { MiniLessonTrainingScreen } from './screens/MiniLessonTrainingScreen';
+import { MiniLessonCompleteScreen } from './screens/MiniLessonCompleteScreen';
 import { useCurrentUser } from '@shared/store/authStore';
 import { useSubscriptionStore } from './store/subscriptionStore';
 import { FooterNav } from './components/FooterNav';
@@ -116,6 +119,9 @@ export const App: React.FC = () => {
             <Route path="/scenarios/:scenarioId/vocabulary" element={<VocabularyTrainingScreen />} />
             <Route path="/scenarios/:scenarioId/phrases" element={<PhraseTrainingScreen />} />
             <Route path="/scenarios/:scenarioId/sentences" element={<SentenceTrainingScreen />} />
+            <Route path="/scenarios/:scenarioId/lesson/:lessonId/intro" element={<MiniLessonIntroScreen />} />
+            <Route path="/scenarios/:scenarioId/lesson/:lessonId/train" element={<MiniLessonTrainingScreen />} />
+            <Route path="/scenarios/:scenarioId/lesson/:lessonId/complete" element={<MiniLessonCompleteScreen />} />
             <Route path="/scenarios/:scenarioId/conversation" element={<ConversationScreen />} />
             <Route path="/review" element={<ReviewScreen />} />
             <Route path="/history" element={<ConversationHistoryScreen />} />

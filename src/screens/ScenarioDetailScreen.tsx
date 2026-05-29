@@ -6,6 +6,7 @@ import { useProgressStore, emptyScenarioProgress } from '@shared/store/progressS
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { PrimaryButton } from '../components/PrimaryButton';
+import { MiniLessonScenarioView } from './MiniLessonScenarioView';
 
 export const ScenarioDetailScreen: React.FC = () => {
   const { scenarioId } = useParams<{ scenarioId: string }>();
@@ -20,6 +21,14 @@ export const ScenarioDetailScreen: React.FC = () => {
           <h1 style={{ color: colors.primary }}>Scenario not found</h1>
           <PrimaryButton label="Go Back" onPress={() => navigate('/scenarios')} />
         </div>
+      </Screen>
+    );
+  }
+
+  if (scenario.miniLessons && scenario.miniLessons.length > 0) {
+    return (
+      <Screen>
+        <MiniLessonScenarioView scenario={scenario} />
       </Screen>
     );
   }

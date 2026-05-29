@@ -5,7 +5,8 @@ import { useAudioStore } from '../store/audioStore';
 export const FeedbackMessage: React.FC<{
   type: 'correct' | 'incorrect' | 'neutral';
   message: string | React.ReactNode;
-}> = ({ type, message }) => {
+  explanation?: string | React.ReactNode;
+}> = ({ type, message, explanation }) => {
   const soundEnabled = useAudioStore(state => state.soundEnabled);
 
   useEffect(() => {
@@ -36,12 +37,16 @@ export const FeedbackMessage: React.FC<{
       backgroundColor: bgColor,
       border: `2px solid ${borderColor}`,
       color: color,
-      fontWeight: 'bold',
       textAlign: 'center',
       marginBottom: '16px',
       width: '100%'
     }}>
-      {message}
+      <div style={{ fontWeight: 'bold' }}>{message}</div>
+      {explanation && (
+        <div style={{ marginTop: '8px', fontSize: '0.9em', opacity: 0.9 }}>
+          {explanation}
+        </div>
+      )}
     </div>
   );
 };

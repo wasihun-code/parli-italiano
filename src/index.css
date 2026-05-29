@@ -54,7 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1500px;
+  max-width: 100%;
   margin: 0 auto;
   min-height: calc(100dvh - 150px);
   padding: 0 16px;
@@ -64,14 +64,14 @@ body {
   .layout-container.with-sidebars {
     display: grid;
     grid-template-columns: 260px 1fr 320px;
-    gap: 32px;
-    padding: 24px;
+    gap: 48px;
+    padding: 24px 48px;
     align-items: start;
   }
 
   .layout-container.no-sidebars {
     display: block;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 24px;
   }

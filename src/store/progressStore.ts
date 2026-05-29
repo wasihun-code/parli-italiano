@@ -19,6 +19,7 @@ export type ScenarioPhaseProgress = {
   sentenceCompleted: boolean;
   conversationUnlocked: boolean;
   skipTestUsed?: boolean;
+  miniLessonsCompleted?: string[];
 };
 
 type ProgressState = {
@@ -37,6 +38,7 @@ type ProgressState = {
   setScenarioVocabularyCompleted: (scenarioId: number, completed: boolean) => void;
   setScenarioPhraseScore: (scenarioId: number, score: number) => void;
   setScenarioSentenceScore: (scenarioId: number, score: number) => void;
+  completeMiniLesson: (scenarioId: number, lessonId: string) => void;
   setSkipTestUsed: (scenarioId: number, used: boolean) => void;
   addXP: (amount: number) => void;
   updateStreak: () => Promise<void>;
@@ -52,6 +54,7 @@ export const emptyScenarioProgress: ScenarioPhaseProgress = {
   sentenceCompleted: false,
   conversationUnlocked: false,
   skipTestUsed: false,
+  miniLessonsCompleted: [],
 };
 
 function resolveScenarioProgress(
@@ -67,9 +70,10 @@ function withConversationGate(
   return {
     ...progress,
     conversationUnlocked:
-      progress.vocabularyCompleted &&
+      (progress.vocabularyCompleted &&
       progress.phraseCompleted &&
-      progress.sentenceCompleted,
+      progress.sentenceCompleted) || 
+      (progress.miniLessonsCompleted && progress.miniLessonsCompleted.length >= 6), // Quick hack for prototype conversation unlock
   };
 }
 
@@ -86,6 +90,27 @@ export const useProgressStore = create<ProgressState>()(
       scenarioProgress: {},
       addXP: (amount) => {
         set((state) => ({ xp: Math.max(0, state.xp + amount) }));
+        get().syncWithBackend().catch(() => {});
+      },
+      completeMiniLesson: (scenarioId, lessonId) => {
+        set(state => {
+          const existing = resolveScenarioProgress(
+            state.scenarioProgress,
+            scenarioId,
+          );
+          const currentCompleted = existing.miniLessonsCompleted || [];
+          if (currentCompleted.includes(lessonId)) return state;
+          
+          return {
+            scenarioProgress: {
+              ...state.scenarioProgress,
+              [scenarioId]: withConversationGate({
+                ...existing,
+                miniLessonsCompleted: [...currentCompleted, lessonId],
+              }),
+            },
+          };
+        });
         get().syncWithBackend().catch(() => {});
       },
       setSkipTestUsed: (scenarioId, used) => {

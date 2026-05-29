@@ -1,60 +1,108 @@
 # MEMORY.md
 
-## Completed Categories ✅
-- accommodation ✅
-- daily_life ✅
-- dining ✅
-- travel ✅
-- shopping ✅
-- culture ✅
-- health ✅
-- social ✅
-- workstudy ✅
-- miscellaneous ✅
-- tech ✅
-- verbs ✅
-- adjectives ✅
-- animals ✅
-- reflexive ✅
-- foundations ✅
+# Mini Lesson Migration Phase
 
-## Audio Infrastructure Phase ✅
-- Scalable Architecture: Migrated to a nested manifest structure.
-- Voice-Aware Hashing: Audio filenames are now `sha1(text + voice_id)`.
-- Production-Grade Format: All assets converted to Ogg Opus.
-- Loudness Normalization: Integrated `ffmpeg loudnorm` (-16 LUFS).
-- Deterministic Offline Audio Enforcement: ALL runtime synthetic TTS (browser/API/diagnostic) removed.
-- Runtime Audio Schema compatibility Repair ✅: Centralized `resolveAudioPath` implemented to handle both legacy (string) and production (object) schemas.
-- Deterministic Text Fallback ✅: Client-side SHA-1 hashing implemented to resolve plain text to deterministic asset paths automatically.
+Current Phase:
+Mini Lesson Architecture Validation
 
-## End-to-End Audio Integrity Audit ✅
-- **Global Integrity**: PASS
-- **Coverage**: 100.00% (44,136 unique audio assets)
-- **Media Validation**: All 44,136 files programmatically validated via `ffprobe` as playable, non-zero duration Ogg Opus containers.
-- **Schema Consistency**: Verified zero schema inconsistencies across all JSON corpus data.
-- **Orphan Prevention**: Verified zero orphaned files on disk and zero orphaned manifest entries.
-- **Total Storage Size**: 523 MB (High-quality, offline-ready).
+Status:
+COMPLETED
 
-## Synthesis Progress (Final Audit)
-- **Travel**: 100% Complete ✅
-- **Accommodation**: 100% Complete ✅
-- **Dining**: 100% Complete ✅
-- **Social**: 100% Complete ✅
-- **Health**: 100% Complete ✅
-- **Culture**: 100% Complete ✅
-- **Shopping**: 100% Complete ✅
-- **Workstudy**: 100% Complete ✅
-- **Tech**: 100% Complete ✅
-- **Miscellaneous**: 100% Complete ✅
-- **Daily Life**: 100% Complete ✅
-- **Foundations**: 100% Complete ✅
-- **Grammar/Vocab (Verbs, Adjectives, Animals, Reflexive)**: 100% Complete ✅
+---
 
-## Next Phase: Final Deployment & Stabilization
-- The corpus is fully production-ready with 100% deterministic offline audio.
-- The project has successfully reached its stabilization milestone.
+# Categories
 
-## Agent Lessons Learned
-- Large-scale FFmpeg audits (`ffprobe`) require significant parallelism (e.g., 64 threads) to complete within reasonable timeframes.
-- When validating media integrity, checking file existence is insufficient; actual header/container validation prevents silent runtime failures.
-- A fully offline-first, asset-driven architecture requires generating audio not just for main text, but for *all* possible distractors in multiple-choice scenarios to ensure seamless immersion.
+## Accommodation
+
+* apartment_key_pickup ✅ TEST SCENARIO VALIDATED
+* asking_for_towels ⏸
+* breakfast_at_hotel ⏸
+* extending_stay ⏸
+* hostel_dorm ⏸
+* hotel_check_in ⏸
+* hotel_check_out ⏸
+* laundry_service ⏸
+* room_problem ⏸
+* wi_fi_at_hotel ⏸
+
+---
+
+# Migration Objectives
+
+Replace:
+
+* vocabulary stage
+* phrase stage
+* sentence stage
+
+With:
+
+* named mini lessons
+* progressive unlocks
+* mastery-based structure
+
+---
+
+# Validation Checklist
+
+The test scenario must verify:
+
+✓ lessons have meaningful names
+
+✓ lesson goals are clear
+
+✓ lesson length feels achievable
+
+✓ progression feels natural
+
+✓ words appear before phrases
+
+✓ phrases appear before dialogues
+
+✓ learner knowledge accumulates
+
+✓ no lesson feels disconnected
+
+✓ no lesson exceeds 15 exercises
+
+✓ scenario remains immersive
+
+---
+
+# Current Test Scenario
+
+accommodation/apartment_key_pickup
+
+Status:
+Validated
+
+No additional scenarios may be migrated until this scenario is approved.
+
+---
+
+# Lessons Learned
+
+- Distributing the 100+ items inside a scenario into 6 focused mini-lessons is highly effective for reducing cognitive load.
+- Extracting thematic steps (e.g., "Finding the Entrance", "Keys and Codes") maps perfectly to real-world communicative milestones.
+- By adhering to the dependency rule (Word -> Phrase -> Sentence), each lesson functions as a self-contained, 2-3 minute communicative building block.
+
+---
+
+# Next Phase
+
+If approved:
+
+Migrate all accommodation scenarios.
+
+After accommodation:
+
+daily_life
+
+Then:
+
+travel
+
+Then:
+
+remaining categories.
+

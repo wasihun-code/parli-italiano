@@ -136,22 +136,36 @@ class ParlaItalianoDatabase extends Dexie {
 
 export const db = new ParlaItalianoDatabase();
 
-const SEED_VERSION = '3';
+const SEED_VERSION = '10';
+
+let setupPromise: Promise<ParlaItalianoDatabase> | null = null;
 
 export async function setupDatabase() {
-  const count = await db.app_metadata.count();
-  if (count === 0) {
-    await seedDatabase();
-  } else {
+  if (setupPromise) return setupPromise;
+
+  setupPromise = (async () => {
+    const timestamp = () => new Date().toLocaleTimeString('it-IT', { hour12: false }) + '.' + new Date().getMilliseconds().toString().padStart(3, '0');
+    console.log(`[${timestamp()}] [DB] setupDatabase (V${SEED_VERSION}) start`);
+    
+    const count = await db.app_metadata.count();
     const version = await db.app_metadata.get('seed_version');
-    if (version?.value !== SEED_VERSION) {
-      await seedMissingDatabaseRows();
+    
+    if (count === 0 || version?.value !== SEED_VERSION) {
+      console.log(`[${timestamp()}] [DB] Seeding required (${version?.value} -> ${SEED_VERSION})`);
+      await seedDatabase();
     }
-  }
-  return db;
+    
+    console.log(`[${timestamp()}] [DB] setupDatabase complete`);
+    return db;
+  })();
+
+  return setupPromise;
 }
 
 async function seedDatabase() {
+  const timestamp = () => new Date().toLocaleTimeString('it-IT', { hour12: false }) + '.' + new Date().getMilliseconds().toString().padStart(3, '0');
+  console.log(`[${timestamp()}] [DB] seedDatabase start`);
+
   await db.transaction('rw', [
     db.app_metadata,
     db.foundation_lessons,
@@ -163,64 +177,46 @@ async function seedDatabase() {
     db.scenario_sentences,
     db.srs_items,
   ], async () => {
-    // Seed Foundation Lessons
+    // Atomic Clear
+    console.log(`[${timestamp()}] [DB] Clearing tables...`);
+    await Promise.all([
+      db.scenario_vocabulary.clear(),
+      db.scenario_phrases.clear(),
+      db.scenario_sentences.clear(),
+      db.scenarios.clear(),
+      db.foundation_lessons.clear(),
+      db.foundation_terms.clear(),
+      db.foundation_exercises.clear(),
+      db.srs_items.clear(),
+    ]);
+
+    const fLessons: FoundationLesson[] = [];
+    const fTerms: FoundationTerm[] = [];
+    const fExercises: FoundationExercise[] = [];
+    const srsItems: SrsItem[] = [];
+    const sScenarios: Scenario[] = [];
+    const sVocab: ScenarioVocabulary[] = [];
+    const sPhrases: ScenarioPhrase[] = [];
+    const sSentences: ScenarioSentence[] = [];
+
+    // Foundation
     for (const [index, lesson] of foundationLessons.entries()) {
-      await db.foundation_lessons.put({
-        id: lesson.id,
-        title: lesson.title,
-        description: lesson.description,
-        pass_score: 90,
-        sort_order: index + 1,
+      fLessons.push({ id: lesson.id, title: lesson.title, description: lesson.description, pass_score: 90, sort_order: index + 1 });
+      lesson.terms.forEach((term, tIndex) => {
+        fTerms.push({ id: term.id, lesson_id: lesson.id, italian: term.italian, english: term.english, note: term.note, sort_order: tIndex + 1 });
+        srsItems.push({ item_id: term.id, item_type: 'foundation', foundation_lesson_id: lesson.id, italian: term.italian, english: term.english, correct_streak: 0, attempts: 0, correct_attempts: 0, due_at: new Date(0).toISOString() });
       });
-
-      for (const [tIndex, term] of lesson.terms.entries()) {
-        await db.foundation_terms.put({
-          id: term.id,
-          lesson_id: lesson.id,
-          italian: term.italian,
-          english: term.english,
-          note: term.note,
-          sort_order: tIndex + 1,
-        });
-
-        await db.srs_items.put({
-          item_id: term.id,
-          item_type: 'foundation',
-          foundation_lesson_id: lesson.id,
-          italian: term.italian,
-          english: term.english,
-          correct_streak: 0,
-          attempts: 0,
-          correct_attempts: 0,
-          due_at: new Date(0).toISOString(),
-        });
-      }
-
-      for (const [eIndex, exercise] of lesson.exercises.entries()) {
-        await db.foundation_exercises.put({
-          id: exercise.id,
-          lesson_id: lesson.id,
-          kind: exercise.kind,
-          prompt: exercise.prompt,
-          answer: exercise.answer,
-          options_json: exercise.options ? JSON.stringify(exercise.options) : undefined,
-          sort_order: eIndex + 1,
-        });
-      }
+      lesson.exercises.forEach((exercise, eIndex) => {
+        fExercises.push({ id: exercise.id, lesson_id: lesson.id, kind: exercise.kind, prompt: exercise.prompt, answer: exercise.answer, options_json: exercise.options ? JSON.stringify(exercise.options) : undefined, sort_order: eIndex + 1 });
+      });
     }
 
-    // Seed Scenarios
+    // Scenarios
     for (const [index, scenario] of scenarios.entries()) {
-      await db.scenarios.put({
-        id: scenario.id,
-        category: scenario.category,
-        title: scenario.title,
-        description: scenario.description,
-        sort_order: index + 1,
-      });
-
-      for (const [vIndex, term] of scenario.vocabulary.entries()) {
-        await db.scenario_vocabulary.put({
+      sScenarios.push({ id: scenario.id, category: scenario.category, title: scenario.title, description: scenario.description, sort_order: index + 1 });
+      
+      scenario.vocabulary.forEach((term, vIndex) => {
+        sVocab.push({
           id: term.id,
           scenario_id: scenario.id,
           italian: term.italian,
@@ -232,23 +228,11 @@ async function seedDatabase() {
           feedback_json: term.feedback ? JSON.stringify(term.feedback) : undefined,
           audio_json: term.audio ? JSON.stringify(term.audio) : undefined,
         });
+        srsItems.push({ item_id: term.id, item_type: 'vocabulary', scenario_id: scenario.id, italian: term.italian, english: term.english, correct_streak: 0, attempts: 0, correct_attempts: 0, due_at: new Date(0).toISOString(), audio_json: term.audio ? JSON.stringify(term.audio) : undefined });
+      });
 
-        await db.srs_items.put({
-          item_id: term.id,
-          item_type: 'vocabulary',
-          scenario_id: scenario.id,
-          italian: term.italian,
-          english: term.english,
-          correct_streak: 0,
-          attempts: 0,
-          correct_attempts: 0,
-          due_at: new Date(0).toISOString(),
-          audio_json: term.audio ? JSON.stringify(term.audio) : undefined,
-        });
-      }
-
-      for (const [pIndex, phrase] of scenario.phrases.entries()) {
-        await db.scenario_phrases.put({
+      scenario.phrases.forEach((phrase, pIndex) => {
+        sPhrases.push({
           id: phrase.id,
           scenario_id: scenario.id,
           italian: phrase.italian,
@@ -260,10 +244,10 @@ async function seedDatabase() {
           feedback_json: phrase.feedback ? JSON.stringify(phrase.feedback) : undefined,
           audio_json: phrase.audio ? JSON.stringify(phrase.audio) : undefined,
         });
-      }
+      });
 
-      for (const [sIndex, sentence] of scenario.sentences.entries()) {
-        await db.scenario_sentences.put({
+      scenario.sentences.forEach((sentence, sIndex) => {
+        sSentences.push({
           id: sentence.id,
           scenario_id: scenario.id,
           italian: sentence.italian,
@@ -276,101 +260,31 @@ async function seedDatabase() {
           feedback_json: sentence.feedback ? JSON.stringify(sentence.feedback) : undefined,
           audio_json: sentence.audio ? JSON.stringify(sentence.audio) : undefined,
         });
-      }
-    }
-
-    await db.app_metadata.put({ key: 'seed_version', value: SEED_VERSION, updated_at: new Date().toISOString() });
-  });
-}
-
-async function seedMissingDatabaseRows() {
-  await db.transaction('rw', [
-    db.app_metadata,
-    db.foundation_lessons,
-    db.foundation_terms,
-    db.foundation_exercises,
-    db.scenarios,
-    db.scenario_vocabulary,
-    db.scenario_phrases,
-    db.scenario_sentences,
-    db.srs_items,
-  ], async () => {
-    for (const [index, scenario] of scenarios.entries()) {
-      await db.scenarios.put({
-        id: scenario.id,
-        category: scenario.category,
-        title: scenario.title,
-        description: scenario.description,
-        sort_order: index + 1,
       });
-
-      for (const [vIndex, term] of scenario.vocabulary.entries()) {
-        await db.scenario_vocabulary.put({
-          id: term.id,
-          scenario_id: scenario.id,
-          italian: term.italian,
-          english: term.english,
-          correct_streak_required: 3,
-          sort_order: vIndex + 1,
-          choices_italian_json: term.choicesItalian ? JSON.stringify(term.choicesItalian) : undefined,
-          choices_english_json: term.choicesEnglish ? JSON.stringify(term.choicesEnglish) : undefined,
-          feedback_json: term.feedback ? JSON.stringify(term.feedback) : undefined,
-          audio_json: term.audio ? JSON.stringify(term.audio) : undefined,
-        });
-
-        if (!(await db.srs_items.get(term.id))) {
-          await db.srs_items.put({
-            item_id: term.id,
-            item_type: 'vocabulary',
-            scenario_id: scenario.id,
-            italian: term.italian,
-            english: term.english,
-            correct_streak: 0,
-            attempts: 0,
-            correct_attempts: 0,
-            due_at: new Date(0).toISOString(),
-            audio_json: term.audio ? JSON.stringify(term.audio) : undefined,
-          });
-        }
-      }
-
-      for (const [pIndex, phrase] of scenario.phrases.entries()) {
-        await db.scenario_phrases.put({
-          id: phrase.id,
-          scenario_id: scenario.id,
-          italian: phrase.italian,
-          english: phrase.english,
-          pass_score: 85,
-          sort_order: pIndex + 1,
-          choices_italian_json: phrase.choicesItalian ? JSON.stringify(phrase.choicesItalian) : undefined,
-          choices_english_json: phrase.choicesEnglish ? JSON.stringify(phrase.choicesEnglish) : undefined,
-          feedback_json: phrase.feedback ? JSON.stringify(phrase.feedback) : undefined,
-          audio_json: phrase.audio ? JSON.stringify(phrase.audio) : undefined,
-        });
-      }
-
-      for (const [sIndex, sentence] of scenario.sentences.entries()) {
-        await db.scenario_sentences.put({
-          id: sentence.id,
-          scenario_id: scenario.id,
-          italian: sentence.italian,
-          english: sentence.english,
-          grammar_point: sentence.grammarPoint || 'Spoken pattern.',
-          pass_score: 80,
-          sort_order: sIndex + 1,
-          choices_italian_json: sentence.choicesItalian ? JSON.stringify(sentence.choicesItalian) : undefined,
-          choices_english_json: sentence.choicesEnglish ? JSON.stringify(sentence.choicesEnglish) : undefined,
-          feedback_json: sentence.feedback ? JSON.stringify(sentence.feedback) : undefined,
-          audio_json: sentence.audio ? JSON.stringify(sentence.audio) : undefined,
-        });
-      }
     }
 
+    console.log(`[${timestamp()}] [DB] Bulk inserting ${sVocab.length} vocabulary items...`);
+    await Promise.all([
+      db.foundation_lessons.bulkPut(fLessons),
+      db.foundation_terms.bulkPut(fTerms),
+      db.foundation_exercises.bulkPut(fExercises),
+      db.scenarios.bulkPut(sScenarios),
+      db.scenario_vocabulary.bulkPut(sVocab),
+      db.scenario_phrases.bulkPut(sPhrases),
+      db.scenario_sentences.bulkPut(sSentences),
+      db.srs_items.bulkPut(srsItems),
+    ]);
+
     await db.app_metadata.put({ key: 'seed_version', value: SEED_VERSION, updated_at: new Date().toISOString() });
+    
+    const count22 = sVocab.filter(v => v.scenario_id === 22).length;
+    console.log(`[${timestamp()}] [DB] Seeded. Scenario 22 count: ${count22}`);
+    const v2 = await db.scenario_vocabulary.get('s22-v2');
+    console.log(`[${timestamp()}] [DB] s22-v2 in DB? ${!!v2} (${v2?.italian})`);
   });
+  console.log(`[${timestamp()}] [DB] seedDatabase complete`);
 }
 
-// Repository functions matching vocabularyRepository.ts
 export async function loadScenarioHeader(scenarioId: number) {
   return await db.scenarios.get(scenarioId);
 }

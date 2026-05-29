@@ -68,6 +68,23 @@ export type ScenarioSentence = {
   audio?: ScenarioAudio;
 };
 
+export type MiniLessonSection = {
+  type: 'vocabulary' | 'phrase' | 'dialogue' | 'mastery';
+  title: string;
+  description: string;
+  exerciseIds: string[];
+};
+
+export type MiniLesson = {
+  id: string;
+  title: string;
+  goal: string;
+  estimatedDuration: string;
+  unlockCriteria: string;
+  nextLesson: string | null;
+  sections: MiniLessonSection[];
+};
+
 export type Scenario = {
   id: number;
   category: ScenarioCategory;
@@ -76,6 +93,7 @@ export type Scenario = {
   vocabulary: ScenarioTerm[];
   phrases: ScenarioPhrase[];
   sentences: ScenarioSentence[];
+  miniLessons?: MiniLesson[];
 };
 
 type TermPair = readonly [italian: string, english: string];
@@ -514,54 +532,58 @@ import { loadProductionScenarioData } from './corpusLoader';
 
 export const scenarios: Scenario[] = blueprints.map(blueprint => {
   const productionData = loadProductionScenarioData(blueprint.id);
+  
+  // JSON SOURCE OF TRUTH: If production data exists, return it exactly as written
+  if (productionData) {
+    return {
+      ...blueprint,
+      vocabulary: productionData.vocabulary,
+      phrases: productionData.phrases,
+      sentences: productionData.sentences,
+      miniLessons: productionData.miniLessons,
+    };
+  }
 
-  const vocabulary: ScenarioTerm[] = productionData 
-    ? productionData.vocabulary 
-    : buildVocabulary(blueprint);
-    
-  const phrases: ScenarioPhrase[] = productionData 
-    ? productionData.phrases 
-    : buildPhrases(blueprint);
-    
-  const sentences: ScenarioSentence[] = productionData 
-    ? productionData.sentences 
-    : buildSentences(blueprint);
+  // LEGACY FALLBACK: Only used for scenarios without production JSON
+  const vocabulary = buildVocabulary(blueprint);
+  const phrases = buildPhrases(blueprint);
+  const sentences = buildSentences(blueprint);
 
-  // Sort vocabulary by length, then alphabetical
+  // Sorting only for legacy data
   vocabulary.sort((a, b) => {
     if (a.italian.length !== b.italian.length) return a.italian.length - b.italian.length;
     return a.italian.localeCompare(b.italian);
   });
 
-  // Sort phrases by word count, then character length, then alphabetical
   phrases.sort((a, b) => {
     const wordsA = a.italian.trim().split(/\s+/).length;
     const wordsB = b.italian.trim().split(/\s+/).length;
     if (wordsA !== wordsB) return wordsA - wordsB;
-    if (a.italian.length !== b.italian.length) return a.italian.length - b.italian.length;
     return a.italian.localeCompare(b.italian);
   });
 
-  // Sort sentences by clause count, then character length, then alphabetical
   const clauseCount = (s: string) => {
-    const verbs = s.match(
-      /\b(?:sono|sei|è|siamo|siete|sono|ho|hai|ha|abbiamo|avete|hanno|vado|vai|va|andiamo|andate|vanno|faccio|fai|fa|facciamo|fate|fanno|posso|puoi|può|possiamo|potete|possono|devo|devi|deve|dobbiamo|dovete|devono|voglio|vuoi|vuole|vogliamo|volete|vogliono|\w+are|\w+ere|\w+ire)\b/gi,
-    );
+    const verbs = s.match(/\b(?:sono|sei|è|siamo|siete|sono|ho|hai|ha|abbiamo|avete|hanno|vado|vai|va|andiamo|andate|vanno|faccio|fai|fa|facciamo|fate|fanno|posso|puoi|può|possiamo|potete|possono|devo|devi|deve|dobbiamo|dovete|devono|voglio|vuoi|vuole|vogliamo|volete|vogliono|\w+are|\w+ere|\w+ire)\b/gi);
     return verbs ? verbs.length : 1;
   };
   sentences.sort((a, b) => {
     const clausesA = clauseCount(a.italian);
     const clausesB = clauseCount(b.italian);
     if (clausesA !== clausesB) return clausesA - clausesB;
-    if (a.italian.length !== b.italian.length) return a.italian.length - b.italian.length;
     return a.italian.localeCompare(b.italian);
   });
+
+  // Apply sequential IDs for legacy data
+  vocabulary.forEach((v, idx) => { v.id = `s${blueprint.id}-v${idx + 1}`; });
+  phrases.forEach((p, idx) => { p.id = `s${blueprint.id}-p${idx + 1}`; });
+  sentences.forEach((s, idx) => { s.id = `s${blueprint.id}-s${idx + 1}`; });
 
   return {
     ...blueprint,
     vocabulary,
     phrases,
     sentences,
+    miniLessons: undefined,
   };
 });
 
