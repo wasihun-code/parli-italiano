@@ -319,11 +319,29 @@ export const VocabularyTrainingScreen: React.FC = () => {
   }
 
   return (
-    <Screen style={{ backgroundColor: colors.surface }}>
-      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: spacing.lg }}>
+    <Screen style={{ padding: 0, backgroundColor: colors.bg }}>
+      {/* Immersive Header */}
+      <div style={{
+        padding: spacing.md, 
+        borderBottom: `1px solid ${colors.border}`, 
+        backgroundColor: colors.surface,
+        display: 'flex',
+        alignItems: 'center',
+        gap: spacing.md,
+        zIndex: 5
+      }}>
+        <button 
+          onClick={() => navigate(`/scenarios/${scenarioId}`)}
+          style={{ background: 'none', border: 'none', cursor: 'pointer', color: colors.primary, padding: 0 }}
+          title="Back"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+        </button>
         <div style={{ flex: 1 }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
-             <span data-testid="scenario-title" style={{ color: colors.textSecondary, fontWeight: '900', fontSize: 12, textTransform: 'uppercase', letterSpacing: 1 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+             <span style={{ color: colors.textSecondary, fontWeight: '900', fontSize: 12, textTransform: 'uppercase', letterSpacing: 1 }}>
               {isSkipTest ? `${isIt ? 'Test di Salto' : 'Skip Test'}: ${currentIndex + 1} / ${testTerms.length}` : scenarioTitle}
             </span>
             <span style={{ color: colors.accent, fontWeight: 900, fontSize: 12 }}>
@@ -337,184 +355,183 @@ export const VocabularyTrainingScreen: React.FC = () => {
         {!isSkipTest && !skipTestUsed && (
           <button 
             onClick={startSkipTest}
-            style={{ 
-              color: colors.primary, 
-              background: 'none', 
-              border: 'none', 
-              cursor: 'pointer', 
-              fontWeight: 800, 
-              fontSize: 12,
-              marginLeft: spacing.md,
-              textDecoration: 'underline'
-            }}
+            style={{ color: colors.primary, background: 'none', border: 'none', cursor: 'pointer', fontWeight: 800, fontSize: 12, marginLeft: spacing.md, textDecoration: 'underline' }}
           >
             {isIt ? 'SALTA' : 'SKIP'}
           </button>
         )}
-      </header>
-
-      <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: spacing.xl, paddingBottom: 100 }}>
-        {feedback ? (
-          <div className="fade-in" style={{ textAlign: 'center' }}>
-            <FeedbackMessage 
-              type={feedback.status === 'correct' || feedback.status === 'nearly_correct' ? 'correct' : 'incorrect'} 
-              message={
-                <>
-                  <div style={{ fontSize: 24, marginBottom: 8 }}>
-                    {feedback.status === 'correct' ? (isIt ? '✅ Ottimo!' : '✅ Excellent!') : feedback.status === 'nearly_correct' ? (isIt ? '⚠️ Quasi corretto!' : '⚠️ Almost correct!') : (isIt ? '❌ Non corretto.' : '❌ Not quite.')}
-                  </div>
-                  {feedback.status !== 'correct' && (
-                    <div style={{ fontSize: 16 }}>
-                      {isIt ? 'La risposta corretta è:' : 'The correct answer is:'} <br/>
-                      <span style={{ fontSize: 24, textDecoration: 'underline' }}>{feedback.correctAnswer}</span>
-                    </div>
-                  )}
-                  {feedback.explanation && (
-                    <div style={{ marginTop: 16, fontSize: 14, fontWeight: 'normal', color: colors.textSecondary }}>
-                      {feedback.explanation}
-                    </div>
-                  )}
-                </>
-              } 
-            />
-          </div>
-        ) : (
-          <div className="fade-in" key={currentIndex}>
-            <div style={{ marginBottom: spacing.xl }}>
-               <h2 style={{ color: colors.textSecondary, fontSize: 16, textTransform: 'uppercase', letterSpacing: 1.5, marginBottom: 8, fontWeight: 900 }}>
-                {exercise?.kind === 'listening' ? (isIt ? 'Ascolta e traduci' : 'Listen and translate') : exercise?.kind === 'spelling' ? (isIt ? 'Scrivi in italiano' : 'Write in Italian') : (isIt ? 'Traduci' : 'Translate')}
-              </h2>
-              <h1 style={{ color: colors.primary, fontSize: 32, margin: 0, fontWeight: 900 }}>{exercise?.prompt}</h1>
-            </div>
-
-            {(exercise?.kind === 'listening' || exercise?.kind === 'flashcard') && (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.md, alignItems: 'center', marginBottom: spacing.xl }}>
-                <button 
-                  onClick={playAudio}
-                  className="card active"
-                  style={{ 
-                    width: 100, 
-                    height: 100, 
-                    borderRadius: 50, 
-                    display: 'flex', 
-                    alignItems: 'center', 
-                    justifyContent: 'center',
-                    borderWidth: 3,
-                    boxShadow: `0 8px 0 rgba(78, 52, 46, 0.1)`
-                  }}
-                >
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-                  </svg>
-                </button>
-                {exercise?.kind === 'listening' && (
-                  <button
-                    onClick={() => setCanListen(false)}
-                    style={{ color: colors.textSecondary, background: 'none', border: 'none', cursor: 'pointer', fontSize: 14, fontWeight: 700 }}
-                  >
-                    {isIt ? 'Non posso ascoltare ora' : "I can't listen now"}
-                  </button>
-                )}
-              </div>
-            )}
-
-            {exercise?.kind === 'spelling' ? (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.lg }}>
-                <input
-                  autoFocus
-                  type="text"
-                  value={typedAnswer}
-                  onChange={e => setTypedAnswer(e.target.value)}
-                  placeholder={isIt ? "Scrivi qui..." : "Type here..."}
-                  style={{
-                    width: '100%',
-                    padding: spacing.lg,
-                    borderRadius: 20,
-                    border: `2px solid ${colors.border}`,
-                    fontSize: 22,
-                    outline: 'none',
-                    backgroundColor: colors.bg,
-                    textAlign: 'center',
-                    fontWeight: 700,
-                    color: colors.primary
-                  }}
-                />
-                <Keyboard onKeyPress={char => setTypedAnswer(prev => prev + char)} />
-              </div>
-            ) : (
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.md }}>
-                {exercise?.options.map((choice, idx) => (
-                  <button
-                    key={choice}
-                    onClick={() => {
-                      void Tts.speak(choice);
-                      setSelectedAnswer(choice);
-                      submitAnswer(choice);
-                    }}
-                    className={`card ${selectedAnswer === choice ? 'active' : ''}`}
-                    style={{
-                      padding: spacing.lg,
-                      textAlign: 'left',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: spacing.md,
-                      fontSize: 18,
-                      fontWeight: 700,
-                      color: colors.primary,
-                      borderBottomWidth: selectedAnswer === choice ? 2 : 4,
-                      transform: selectedAnswer === choice ? 'translateY(2px)' : 'translateY(0)',
-                    }}
-                  >
-                    <div style={{ 
-                      width: 32, 
-                      height: 32, 
-                      borderRadius: 16, 
-                      backgroundColor: selectedAnswer === choice ? colors.primary : colors.chipBg,
-                      color: selectedAnswer === choice ? colors.onPrimary : colors.textSecondary,
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: 14,
-                      fontWeight: 900,
-                      border: `1px solid ${colors.border}`
-                    }}>
-                      {idx + 1}
-                    </div>
-                    {choice}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        )}
       </div>
 
+      {/* Main Content */}
       <div style={{
-        position: 'fixed',
-        bottom: 0,
-        left: 0,
-        right: 0,
+        flex: 1, 
+        overflowY: 'auto', 
+        padding: `${spacing.xl}px ${spacing.md}px`,
+        display: 'flex', 
+        flexDirection: 'column', 
+        width: '100%'
+      }}>
+        <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: spacing.xl }}>
+          {feedback ? (
+            <div className="fade-in" style={{ textAlign: 'center' }}>
+              <FeedbackMessage 
+                type={feedback.status === 'correct' || feedback.status === 'nearly_correct' ? 'correct' : 'incorrect'} 
+                message={
+                  <>
+                    <div style={{ fontSize: 24, marginBottom: 8 }}>
+                      {feedback.status === 'correct' ? (isIt ? '✅ Ottimo!' : '✅ Excellent!') : feedback.status === 'nearly_correct' ? (isIt ? '⚠️ Quasi corretto!' : '⚠️ Almost correct!') : (isIt ? '❌ Non corretto.' : '❌ Not quite.')}
+                    </div>
+                    {feedback.status !== 'correct' && (
+                      <div style={{ fontSize: 16 }}>
+                        {isIt ? 'La risposta corretta è:' : 'The correct answer is:'} <br/>
+                        <span style={{ fontSize: 24, textDecoration: 'underline' }}>{feedback.correctAnswer}</span>
+                      </div>
+                    )}
+                    {feedback.explanation && (
+                      <div style={{ marginTop: 16, fontSize: 14, fontWeight: 'normal', color: colors.textSecondary }}>
+                        {feedback.explanation}
+                      </div>
+                    )}
+                  </>
+                } 
+              />
+            </div>
+          ) : (
+            <div className="fade-in" key={currentIndex} style={{ width: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ marginBottom: spacing.xl, textAlign: 'center' }}>
+                 <h2 style={{ color: colors.textSecondary, fontSize: 16, textTransform: 'uppercase', letterSpacing: 1.5, marginBottom: 8, fontWeight: 900 }}>
+                  {exercise?.kind === 'listening' ? (isIt ? 'Ascolta e traduci' : 'Listen and translate') : exercise?.kind === 'spelling' ? (isIt ? 'Scrivi in italiano' : 'Write in Italian') : (isIt ? 'Traduci' : 'Translate')}
+                </h2>
+                <h1 style={{ color: colors.primary, fontSize: 32, margin: 0, fontWeight: 900 }}>{exercise?.prompt}</h1>
+              </div>
+
+              {(exercise?.kind === 'listening' || exercise?.kind === 'flashcard') && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.md, alignItems: 'center', marginBottom: spacing.xl }}>
+                  <button 
+                    onClick={playAudio}
+                    className="card active"
+                    style={{ 
+                      width: 100, 
+                      height: 100, 
+                      borderRadius: 50, 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      justifyContent: 'center',
+                      borderWidth: 3,
+                      boxShadow: `0 8px 0 rgba(78, 52, 46, 0.1)`
+                    }}
+                  >
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                    </svg>
+                  </button>
+                  {exercise?.kind === 'listening' && (
+                    <button
+                      onClick={() => setCanListen(false)}
+                      style={{ color: colors.textSecondary, background: 'none', border: 'none', cursor: 'pointer', fontSize: 14, fontWeight: 700 }}
+                    >
+                      {isIt ? 'Non posso ascoltare ora' : "I can't listen now"}
+                    </button>
+                  )}
+                </div>
+              )}
+
+              {exercise?.kind === 'spelling' ? (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.lg }}>
+                  <input
+                    autoFocus
+                    type="text"
+                    value={typedAnswer}
+                    onChange={e => setTypedAnswer(e.target.value)}
+                    placeholder={isIt ? "Scrivi qui..." : "Type here..."}
+                    style={{
+                      width: '100%',
+                      padding: spacing.lg,
+                      borderRadius: 20,
+                      border: `2px solid ${colors.border}`,
+                      fontSize: 22,
+                      outline: 'none',
+                      backgroundColor: colors.surface,
+                      textAlign: 'center',
+                      fontWeight: 700,
+                      color: colors.primary
+                    }}
+                  />
+                  <Keyboard onKeyPress={char => setTypedAnswer(prev => prev + char)} />
+                </div>
+              ) : (
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.md }}>
+                  {exercise?.options.map((choice, idx) => (
+                    <button
+                      key={choice}
+                      onClick={() => {
+                        void Tts.speak(choice);
+                        setSelectedAnswer(choice);
+                        submitAnswer(choice);
+                      }}
+                      className={`card ${selectedAnswer === choice ? 'active' : ''}`}
+                      style={{
+                        padding: spacing.lg,
+                        textAlign: 'left',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: spacing.md,
+                        fontSize: 18,
+                        fontWeight: 700,
+                        color: colors.primary,
+                        borderBottomWidth: selectedAnswer === choice ? 2 : 4,
+                        transform: selectedAnswer === choice ? 'translateY(2px)' : 'translateY(0)',
+                      }}
+                    >
+                      <div style={{ 
+                        width: 32, 
+                        height: 32, 
+                        borderRadius: 16, 
+                        backgroundColor: selectedAnswer === choice ? colors.primary : colors.chipBg,
+                        color: selectedAnswer === choice ? colors.onPrimary : colors.textSecondary,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontSize: 14,
+                        fontWeight: 900,
+                        border: `1px solid ${colors.border}`
+                      }}>
+                        {idx + 1}
+                      </div>
+                      {choice}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Sticky Footer */}
+      <div style={{
         padding: spacing.lg,
         paddingBottom: `calc(${spacing.lg}px + env(safe-area-inset-bottom))`,
         backgroundColor: colors.surface,
         borderTop: `2px solid ${colors.border}`,
-        maxWidth: 900,
-        margin: '0 auto',
+        width: '100%',
         zIndex: 10
       }}>
-        {!feedback ? (
-          exercise?.kind === 'spelling' ? (
-            <PrimaryButton label={isIt ? "Controlla" : "Check"} onPress={() => submitAnswer()} disabled={!typedAnswer.trim()} />
+        <div style={{ width: '100%' }}>
+          {!feedback ? (
+            exercise?.kind === 'spelling' ? (
+              <PrimaryButton label={isIt ? "Controlla" : "Check"} onPress={() => submitAnswer()} disabled={!typedAnswer.trim()} />
+            ) : (
+              <p style={{ textAlign: 'center', color: colors.textSecondary, fontSize: 14, fontWeight: 700, margin: 0 }}>
+                {isIt ? 'Scegli la risposta corretta' : 'Choose the correct answer'}
+              </p>
+            )
           ) : (
-            <p style={{ textAlign: 'center', color: colors.textSecondary, fontSize: 14, fontWeight: 700, margin: 0 }}>
-              {isIt ? 'Scegli la risposta corretta' : 'Choose the correct answer'}
-            </p>
-          )
-        ) : (
-          <PrimaryButton label={isIt ? "Continua" : "Continue"} onPress={advance} variant={feedback.status === 'incorrect' ? 'secondary' : 'primary'} />
-        )}
+            <PrimaryButton label={isIt ? "Continua" : "Continue"} onPress={advance} variant={feedback.status === 'incorrect' ? 'secondary' : 'primary'} />
+          )}
+        </div>
       </div>
     </Screen>
   );

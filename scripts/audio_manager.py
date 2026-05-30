@@ -59,6 +59,22 @@ def extract_corpus_data(base_dir):
                                 if c_text not in text_to_categories:
                                     text_to_categories[c_text] = set()
                                 text_to_categories[c_text].add(category)
+                elif isinstance(data, dict):
+                    if "conversations" in data:
+                        for conv in data["conversations"]:
+                            for msg in conv.get("messages", []):
+                                text = msg.get("text", "").strip()
+                                if text:
+                                    if text not in text_to_categories:
+                                        text_to_categories[text] = set()
+                                    text_to_categories[text].add(category)
+                                for choice in msg.get("choices", []):
+                                    c_text = choice.get("text", "").strip()
+                                    if c_text:
+                                        if c_text not in text_to_categories:
+                                            text_to_categories[c_text] = set()
+                                        text_to_categories[c_text].add(category)
+
         except Exception as e:
             print(f"Error reading {file_path}: {e}")
             
@@ -160,6 +176,24 @@ def inject_audio_paths(base_dir, manifest):
                             "italian": info["path"]
                         }
                         modified = True
+            elif isinstance(data, dict) and "conversations" in data:
+                for conv in data["conversations"]:
+                    for msg in conv.get("messages", []):
+                        text = msg.get("text", "").strip()
+                        if text and text in registry and DEFAULT_VOICE_ID in registry[text] and registry[text][DEFAULT_VOICE_ID]["status"] == "completed":
+                            info = registry[text][DEFAULT_VOICE_ID]
+                            msg["audio"] = {
+                                "italian": info["path"]
+                            }
+                            modified = True
+                        for choice in msg.get("choices", []):
+                            c_text = choice.get("text", "").strip()
+                            if c_text and c_text in registry and DEFAULT_VOICE_ID in registry[c_text] and registry[c_text][DEFAULT_VOICE_ID]["status"] == "completed":
+                                info = registry[c_text][DEFAULT_VOICE_ID]
+                                choice["audio"] = {
+                                    "italian": info["path"]
+                                }
+                                modified = True
             
             if modified:
                 with open(file_path, 'w', encoding='utf-8') as f:

@@ -85,6 +85,28 @@ export type MiniLesson = {
   sections: MiniLessonSection[];
 };
 
+export type ScriptedChoice = {
+  text: string;
+  isCorrect: boolean;
+  feedback?: string;
+  hint?: string;
+  nextMessageId?: string;
+};
+
+export type ScriptedMessage = {
+  id: string;
+  role: 'host' | 'user';
+  text: string;
+  choices?: ScriptedChoice[];
+};
+
+export type ScriptedConversation = {
+  id: string;
+  title: string;
+  description: string;
+  messages: ScriptedMessage[];
+};
+
 export type Scenario = {
   id: number;
   category: ScenarioCategory;
@@ -94,6 +116,7 @@ export type Scenario = {
   phrases: ScenarioPhrase[];
   sentences: ScenarioSentence[];
   miniLessons?: MiniLesson[];
+  scriptedConversations?: ScriptedConversation[];
 };
 
 type TermPair = readonly [italian: string, english: string];
@@ -533,14 +556,15 @@ import { loadProductionScenarioData } from './corpusLoader';
 export const scenarios: Scenario[] = blueprints.map(blueprint => {
   const productionData = loadProductionScenarioData(blueprint.id);
   
-  // JSON SOURCE OF TRUTH: If production data exists, return it exactly as written
   if (productionData) {
+    // JSON SOURCE OF TRUTH: If production data exists, return it exactly as written
     return {
       ...blueprint,
       vocabulary: productionData.vocabulary,
       phrases: productionData.phrases,
       sentences: productionData.sentences,
       miniLessons: productionData.miniLessons,
+      scriptedConversations: productionData.scriptedConversations,
     };
   }
 

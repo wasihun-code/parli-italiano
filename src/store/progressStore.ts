@@ -38,7 +38,7 @@ type ProgressState = {
   setScenarioVocabularyCompleted: (scenarioId: number, completed: boolean) => void;
   setScenarioPhraseScore: (scenarioId: number, score: number) => void;
   setScenarioSentenceScore: (scenarioId: number, score: number) => void;
-  completeMiniLesson: (scenarioId: number, lessonId: string) => void;
+  completeMiniLesson: (scenarioId: number, lessonId: string, totalLessons: number) => void;
   setSkipTestUsed: (scenarioId: number, used: boolean) => void;
   addXP: (amount: number) => void;
   updateStreak: () => Promise<void>;
@@ -66,14 +66,19 @@ function resolveScenarioProgress(
 
 function withConversationGate(
   progress: ScenarioPhaseProgress,
+  totalLessons?: number,
 ): ScenarioPhaseProgress {
+  const allMiniLessonsDone = totalLessons !== undefined && 
+                             progress.miniLessonsCompleted && 
+                             progress.miniLessonsCompleted.length >= totalLessons;
+
   return {
     ...progress,
     conversationUnlocked:
       (progress.vocabularyCompleted &&
       progress.phraseCompleted &&
       progress.sentenceCompleted) || 
-      (progress.miniLessonsCompleted && progress.miniLessonsCompleted.length >= 6), // Quick hack for prototype conversation unlock
+      allMiniLessonsDone,
   };
 }
 
@@ -92,22 +97,24 @@ export const useProgressStore = create<ProgressState>()(
         set((state) => ({ xp: Math.max(0, state.xp + amount) }));
         get().syncWithBackend().catch(() => {});
       },
-      completeMiniLesson: (scenarioId, lessonId) => {
+      completeMiniLesson: (scenarioId, lessonId, totalLessons) => {
         set(state => {
           const existing = resolveScenarioProgress(
             state.scenarioProgress,
             scenarioId,
           );
           const currentCompleted = existing.miniLessonsCompleted || [];
-          if (currentCompleted.includes(lessonId)) return state;
+          const nextCompleted = currentCompleted.includes(lessonId) 
+            ? currentCompleted 
+            : [...currentCompleted, lessonId];
           
           return {
             scenarioProgress: {
               ...state.scenarioProgress,
               [scenarioId]: withConversationGate({
                 ...existing,
-                miniLessonsCompleted: [...currentCompleted, lessonId],
-              }),
+                miniLessonsCompleted: nextCompleted,
+              }, totalLessons),
             },
           };
         });

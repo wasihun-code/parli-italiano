@@ -18,8 +18,8 @@ import {useProgressStore} from '@shared/store/progressStore';
 import {Tts} from '../lib/tts';
 import {colors} from '@shared/theme/colors';
 import {spacing} from '@shared/theme/spacing';
+import {scenarios, type ScenarioCategory} from '@shared/data/scenarios';
 import {getScenarioRoles} from '@app/data/roles';
-import type {ScenarioCategory} from '@app/data/scenarios';
 
 const scenarioCategories: ScenarioCategory[] = [
   'Travel',
@@ -65,9 +65,16 @@ export const ConversationScreen: React.FC = () => {
   const speed = useConversationStore(state => state.speed);
   const startScenario = useConversationStore(state => state.startScenario);
 
-  const conversationUnlocked = useProgressStore(
-    state => state.scenarioProgress[numericScenarioId]?.conversationUnlocked ?? false,
-  );
+  const scenario = scenarios.find(s => s.id === numericScenarioId);
+  const totalLessons = scenario?.miniLessons?.length || 0;
+  
+  const progress = useProgressStore(state => state.scenarioProgress[numericScenarioId]);
+  const completedCount = progress?.miniLessonsCompleted?.length || 0;
+  
+  const conversationUnlocked = useMemo(() => {
+    if (!progress) return false;
+    return progress.conversationUnlocked || (totalLessons > 0 && completedCount >= totalLessons);
+  }, [progress, totalLessons, completedCount]);
 
   const [scenarioTitle, setScenarioTitle] = useState('Conversazione');
   const [roles, setRoles] = useState({aiRole: 'tutor', userRole: 'learner'});

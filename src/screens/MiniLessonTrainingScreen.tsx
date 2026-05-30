@@ -97,26 +97,25 @@ export const MiniLessonTrainingScreen: React.FC = () => {
     }
   }, [currentItem, feedback, showMasterySplash, currentIndex, items, masterySplashShownForIndex]);
 
-  const playAudio = useCallback((): void => {
-    if (currentItem) {
-      void Tts.speak(currentItem.data?.italian || '', currentItem.data?.audio);
+  const playAudio = useCallback((text?: string, audioData?: any): void => {
+    const targetText = text || currentItem?.data?.italian || '';
+    const targetAudio = audioData || currentItem?.data?.audio;
+    if (targetText) {
+      void Tts.speak(targetText, targetAudio);
     }
   }, [currentItem]);
 
-  // Auto-play audio on new item
-  useEffect(() => {
-    if (currentItem && !feedback && !showMasterySplash) {
-      playAudio();
-    }
-  }, [currentItem, feedback, showMasterySplash, playAudio]);
+  // Removed redundant post-submission autoplay useEffect to prevent double playback
 
   const submitAnswer = useCallback((ans: string): void => {
     if (!currentItem || feedback) return;
-    
-    // For this prototype, all exercises are simple multiple choice
+
+    // Play selected audio immediately (regardless of correctness)
+    void Tts.speak(ans);
+
     const isCorrect = ans === currentItem.data?.italian;
     const status = isCorrect ? 'correct' : 'incorrect';
-    
+
     let explanation: string | undefined;
     if (currentItem.data?.feedback) {
       if (status === 'correct') {
@@ -156,6 +155,49 @@ export const MiniLessonTrainingScreen: React.FC = () => {
     return shuffle([currentItem.data?.italian || '', "Distractor 1", "Distractor 2", "Distractor 3"]);
   }, [currentItem]);
 
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        navigate(`/scenarios/${scenarioId}`);
+        return;
+      }
+
+      if (showMasterySplash) {
+        if (e.key === 'Enter') {
+          setShowMasterySplash(false);
+        }
+        return;
+      }
+      
+      if (e.key === ' ') {
+        e.preventDefault();
+        playAudio();
+        return;
+      }
+
+      if (e.key === 'Enter') {
+        if (feedback) {
+          advance();
+        }
+        return;
+      }
+
+      // Choice selection (1-4)
+      if (!feedback && options.length > 0) {
+        const num = parseInt(e.key, 10);
+        if (!isNaN(num) && num >= 1 && num <= options.length) {
+          const choice = options[num - 1];
+          setSelectedAnswer(choice);
+          submitAnswer(choice);
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [navigate, scenarioId, showMasterySplash, feedback, options, playAudio, advance, submitAnswer]);
+
   if (loading || !scenario || !lesson) {
     return <Screen><div style={{ padding: spacing.xl }}>Loading exercises...</div></Screen>;
   }
@@ -163,8 +205,7 @@ export const MiniLessonTrainingScreen: React.FC = () => {
   // Error state: Curriculum mismatch
   if (items.length === 0) {
     return (
-      <Screen>
-        <div style={{ display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: spacing.xl }}>
+      <Screen style={{ padding: spacing.xl, justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
           <div style={{ fontSize: 64, marginBottom: spacing.lg }}>⚠️</div>
           <h1 style={{ color: colors.primary, fontSize: 24, fontWeight: 900, marginBottom: spacing.md }}>Curriculum Mismatch</h1>
           <p style={{ color: colors.textSecondary, fontSize: 16, marginBottom: spacing.xxl }}>
@@ -177,20 +218,17 @@ export const MiniLessonTrainingScreen: React.FC = () => {
           >
             Go Back
           </button>
-        </div>
       </Screen>
     );
   }
 
   if (showMasterySplash) {
     return (
-      <Screen>
-        <div className="fade-in" style={{ display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: spacing.xl }}>
+      <Screen style={{ padding: spacing.xl, justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
           <div style={{ fontSize: 64, marginBottom: spacing.lg }}>👑</div>
           <h1 style={{ color: colors.primary, fontSize: 32, fontWeight: 900, marginBottom: spacing.md }}>Mastery Check</h1>
           <p style={{ color: colors.textSecondary, fontSize: 18, marginBottom: spacing.xxl }}>Let's see if you can handle this situation.</p>
           <PrimaryButton label="Start Mastery Check" onPress={() => setShowMasterySplash(false)} />
-        </div>
       </Screen>
     );
   }
@@ -202,18 +240,49 @@ export const MiniLessonTrainingScreen: React.FC = () => {
   }
 
   return (
-    <Screen>
-      <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-        <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: spacing.lg }}>
-          <button onClick={() => navigate(`/scenarios/${scenarioId}`)} style={{ background: 'none', border: 'none', color: colors.textSecondary, fontSize: 24, cursor: 'pointer' }}>×</button>
-          <div style={{ flex: 1, margin: '0 16px', height: 8, backgroundColor: colors.border, borderRadius: 4, overflow: 'hidden' }}>
+    <Screen style={{ padding: 0, backgroundColor: colors.bg }}>
+      {/* Header */}
+      <div style={{
+        padding: spacing.md, 
+        borderBottom: `1px solid ${colors.border}`, 
+        backgroundColor: colors.surface,
+        display: 'flex',
+        alignItems: 'center',
+        gap: spacing.md,
+        zIndex: 5
+      }}>
+        <button 
+          onClick={() => navigate(`/scenarios/${scenarioId}`)}
+          style={{ background: 'none', border: 'none', cursor: 'pointer', color: colors.primary, padding: 0 }}
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+        </button>
+        <div style={{ flex: 1 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+            <span style={{ color: colors.textSecondary, fontWeight: '900', fontSize: 12, textTransform: 'uppercase', letterSpacing: 1 }}>
+              {lesson.goal}
+            </span>
+            <span style={{ color: colors.accent, fontWeight: 900, fontSize: 12 }}>{currentIndex}/{items.length}</span>
+          </div>
+          <div style={{ height: 8, backgroundColor: colors.border, borderRadius: 4, overflow: 'hidden' }}>
             <div style={{ height: '100%', backgroundColor: colors.success, width: `${progressFraction * 100}%`, transition: 'width 0.3s ease' }} />
           </div>
-          <div style={{ fontWeight: 900, color: colors.primary }}>{currentIndex}/{items.length}</div>
-        </header>
+        </div>
+      </div>
 
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflowY: 'auto', paddingBottom: spacing.xxl }}>
-          <div style={{ marginBottom: spacing.xl, textAlign: 'center' }}>
+      {/* Content */}
+      <div style={{
+        flex: 1, 
+        overflowY: 'auto', 
+        padding: `${spacing.xl}px ${spacing.md}px`,
+        display: 'flex', 
+        flexDirection: 'column', 
+        width: '100%'
+      }}>
+        <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: spacing.xl }}>
+          <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: spacing.md }}>
              <span style={{ 
                backgroundColor: currentItem.isMastery ? 'rgba(255, 193, 7, 0.2)' : colors.chipBg, 
                color: currentItem.isMastery ? '#f57c00' : colors.primary, 
@@ -225,45 +294,85 @@ export const MiniLessonTrainingScreen: React.FC = () => {
              }}>
                {currentItem.sectionTitle}
              </span>
+             <button 
+               onClick={() => playAudio()}
+               style={{ background: colors.chipBg, border: 'none', borderRadius: 12, width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
+               title="Replay Audio (Space)"
+             >
+               🔊
+             </button>
           </div>
 
-          <h2 style={{ fontSize: 24, color: colors.primary, fontWeight: 800, textAlign: 'center', marginBottom: spacing.xl }}>
+          <h2 style={{ fontSize: 24, color: colors.primary, fontWeight: 800, textAlign: 'center', margin: 0 }}>
             {currentItem.data?.english ?? '...'}
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: spacing.md }}>
-            {options.map((choice) => (
-              <button
-                key={choice}
-                onClick={() => {
-                  if (feedback) return;
-                  void Tts.speak(choice);
-                  setSelectedAnswer(choice);
-                  submitAnswer(choice);
-                }}
-                className={`card ${selectedAnswer === choice ? 'active' : ''}`}
-                style={{
-                  padding: spacing.lg,
-                  textAlign: 'left',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: spacing.md,
-                  fontSize: 18,
-                  fontWeight: 700,
-                  color: colors.primary,
-                  border: selectedAnswer === choice ? `2px solid ${colors.accent}` : `2px solid transparent`,
-                  backgroundColor: selectedAnswer === choice ? 'rgba(212, 163, 115, 0.1)' : colors.surface,
-                  cursor: feedback ? 'default' : 'pointer',
-                  opacity: feedback && choice !== currentItem.data?.italian && choice !== selectedAnswer ? 0.5 : 1
-                }}
-              >
-                {choice}
-              </button>
+            {options.map((choice, idx) => (
+              <div key={choice} style={{ display: 'flex', gap: spacing.sm, alignItems: 'center' }}>
+                <button
+                  onClick={() => {
+                    if (feedback) return;
+                    setSelectedAnswer(choice);
+                    submitAnswer(choice);
+                  }}
+                  className={`card ${selectedAnswer === choice ? 'active' : ''}`}
+                  style={{
+                    flex: 1,
+                    padding: spacing.lg,
+                    textAlign: 'left',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: spacing.md,
+                    fontSize: 18,
+                    fontWeight: 700,
+                    color: colors.primary,
+                    border: selectedAnswer === choice ? `2px solid ${colors.accent}` : `2px solid transparent`,
+                    backgroundColor: selectedAnswer === choice ? 'rgba(212, 163, 115, 0.1)' : colors.surface,
+                    cursor: feedback ? 'default' : 'pointer',
+                    opacity: feedback && choice !== currentItem.data?.italian && choice !== selectedAnswer ? 0.5 : 1
+                  }}
+                >
+                  <span style={{ 
+                    display: 'inline-flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center', 
+                    width: 24, 
+                    height: 24, 
+                    borderRadius: 12, 
+                    backgroundColor: colors.chipBg, 
+                    fontSize: 12, 
+                    fontWeight: 800 
+                  }}>{idx + 1}</span>
+                  {choice}
+                </button>
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    void Tts.speak(choice);
+                  }}
+                  style={{ 
+                    background: colors.chipBg, 
+                    border: 'none', 
+                    borderRadius: 12, 
+                    width: 44, 
+                    height: 44, 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center', 
+                    cursor: 'pointer',
+                    fontSize: 20
+                  }}
+                  title="Listen to choice"
+                >
+                  🔊
+                </button>
+              </div>
             ))}
           </div>
 
           {feedback && (
-            <div className="fade-in" style={{ marginTop: spacing.xl }}>
+            <div className="fade-in">
               <FeedbackMessage
                 type={feedback.status === 'incorrect' ? 'incorrect' : 'correct'}
                 message={feedback.status === 'correct' || feedback.status === 'nearly_correct' ? 'Esatto!' : `Sbagliato. La risposta corretta è: ${feedback.correctAnswer}`}
@@ -272,16 +381,24 @@ export const MiniLessonTrainingScreen: React.FC = () => {
             </div>
           )}
         </div>
+      </div>
 
-        <div style={{ marginTop: 'auto', paddingTop: spacing.md }}>
-          {feedback && (
-            <PrimaryButton 
-              label="Continue" 
-              onPress={advance} 
-              variant={feedback.status === 'incorrect' ? 'secondary' : 'primary'} 
-            />
-          )}
-        </div>
+      {/* Footer */}
+      <div style={{
+        padding: spacing.lg,
+        paddingBottom: `calc(${spacing.lg}px + env(safe-area-inset-bottom))`,
+        backgroundColor: colors.surface,
+        borderTop: `2px solid ${colors.border}`,
+        width: '100%',
+        zIndex: 10
+      }}>
+        {feedback && (
+          <PrimaryButton 
+            label="Continue (Enter)" 
+            onPress={advance} 
+            variant={feedback.status === 'incorrect' ? 'secondary' : 'primary'} 
+          />
+        )}
       </div>
     </Screen>
   );

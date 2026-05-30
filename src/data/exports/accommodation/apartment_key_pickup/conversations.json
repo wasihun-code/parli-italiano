@@ -1,0 +1,1349 @@
+{
+  "scenarioId": 22,
+  "conversations": [
+    {
+      "id": "smooth_check_in",
+      "title": "Smooth Check-In",
+      "description": "Meet your host and enter the building normally.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Sei davanti al palazzo?",
+          "english": "Hi! Are you in front of the building?",
+          "choices": [
+            {
+              "text": "Sì, sono davanti al palazzo.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/881a628cac67.opus"
+              }
+            },
+            {
+              "text": "No, sono dentro il palazzo.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/5af55db54148.opus"
+              }
+            },
+            {
+              "text": "Sì, sono dentro la stanza.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/dd0d953e6658.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/36d672845c5e.opus"
+          }
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottimo. Il portone è chiuso?",
+          "english": "Excellent. Is the building door closed?",
+          "choices": [
+            {
+              "text": "Sì, il portone è chiuso.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/5dbb649351b6.opus"
+              }
+            },
+            {
+              "text": "No, la finestra è aperta.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/855e06051f62.opus"
+              }
+            },
+            {
+              "text": "Sì, la cassetta è grande.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/ece6a36efdc1.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/323c3efe82a3.opus"
+          }
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Hai il codice per entrare?",
+          "english": "Do you have the code to enter?",
+          "choices": [
+            {
+              "text": "No, non ho il codice.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/a51b4e2da652.opus"
+              }
+            },
+            {
+              "text": "Sì, ho una chiave rotta.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/655bed23e16d.opus"
+              }
+            },
+            {
+              "text": "No, non ho la cassetta.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/cd8af5aca273.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/1310d58125da.opus"
+          }
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Digita il codice. Poi premi il tasto.",
+          "english": "Type the code. Then press the button.",
+          "choices": [
+            {
+              "text": "Ok, digito il codice ora.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/b02059ad4fa9.opus"
+              }
+            },
+            {
+              "text": "No, chiudo il portone.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/99e5167cd8f5.opus"
+              }
+            },
+            {
+              "text": "Sì, suono il citofono.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/b6d7076d25f9.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/e4740e747623.opus"
+          }
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ha funzionato? Sei dentro?",
+          "english": "Did it work? Are you inside?",
+          "choices": [
+            {
+              "text": "Sì, ha funzionato. Sono dentro.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/e8db206bb52c.opus"
+              }
+            },
+            {
+              "text": "No, non sono arrivato.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/709f34a41f45.opus"
+              }
+            },
+            {
+              "text": "Sì, il portone è bloccato.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/bfde9c83962d.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/3e5eaf032e69.opus"
+          }
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Bene. Prendi l'ascensore.",
+          "english": "Good. Take the elevator.",
+          "choices": [
+            {
+              "text": "Dov'è l'ascensore?",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/936e76229172.opus"
+              }
+            },
+            {
+              "text": "Dov'è il citofono?",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/4a4dff5c3a03.opus"
+              }
+            },
+            {
+              "text": "Qual è il codice?",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/0df507fca2d0.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/a321cbb05b1c.opus"
+          }
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È in fondo. Sali al terzo piano.",
+          "english": "It is at the end. Go up to the third floor.",
+          "choices": [
+            {
+              "text": "Vado al terzo piano.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/5131ec14e292.opus"
+              }
+            },
+            {
+              "text": "Vado al secondo piano.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/0a3221ed1d2f.opus"
+              }
+            },
+            {
+              "text": "Esco dal palazzo ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/1530233b5e19.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/e5e603aacac6.opus"
+          }
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Cerca la porta. C'è una cassetta.",
+          "english": "Look for the door. There is a box.",
+          "choices": [
+            {
+              "text": "Vedo la cassetta sicura.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/2eac6e324a8b.opus"
+              }
+            },
+            {
+              "text": "La porta è aperta ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/4ea6ff4b6e81.opus"
+              }
+            },
+            {
+              "text": "Suono il citofono ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/8af36477fe23.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/d021d54bffee.opus"
+          }
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Usa il codice della cassetta.",
+          "english": "Use the code for the box.",
+          "choices": [
+            {
+              "text": "Metto il codice subito.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/0058b690b04d.opus"
+              }
+            },
+            {
+              "text": "Giro la maniglia ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/1f6ea7f377f5.opus"
+              }
+            },
+            {
+              "text": "Cerco la porta rotta.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/e53e99f83a77.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/372a7b18f905.opus"
+          }
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prendi le chiavi e apri la porta.",
+          "english": "Take the keys and open the door.",
+          "choices": [
+            {
+              "text": "Ho le chiavi. Apro la porta.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/22f804d3a9a7.opus"
+              }
+            },
+            {
+              "text": "Lascio le chiavi per te.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/8948077256a1.opus"
+              }
+            },
+            {
+              "text": "La porta è bloccata ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/bb4ede7e8ebe.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/00816597523c.opus"
+          }
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Benvenuto! Trovi le regole sul tavolo.",
+          "english": "Welcome! You find the rules on the table.",
+          "choices": [
+            {
+              "text": "Grazie mille. A presto!",
+              "isCorrect": true,
+              "nextMessageId": "END",
+              "audio": {
+                "italian": "/audio/ef87eb4b8b23.opus"
+              }
+            },
+            {
+              "text": "Dove sono le scale?",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/81455de2fc15.opus"
+              }
+            },
+            {
+              "text": "Ho perso le chiavi.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/7788edd913d0.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/900c2dfb7f0f.opus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cant_find_building",
+      "title": "Can't Find the Building",
+      "description": "Navigate a confusing street.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto? Dove sei?",
+          "english": "Hello? Where are you?",
+          "choices": [
+            {
+              "text": "Sono per strada.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/948e6d267de6.opus"
+              }
+            },
+            {
+              "text": "Sono in ascensore.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/adf16b4d0f95.opus"
+              }
+            },
+            {
+              "text": "Vedo il terzo piano.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/d33dd35f032d.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/768da7f8e13b.opus"
+          }
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Vedi il numero civico?",
+          "english": "Do you see the street number?",
+          "choices": [
+            {
+              "text": "No, non vedo il numero.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/b3a3c108bbdd.opus"
+              }
+            },
+            {
+              "text": "Sì, vedo un citofono rotto.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/ffeddbea52ac.opus"
+              }
+            },
+            {
+              "text": "Dov'è il corridoio ora?",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/5dc4a5a56871.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/a2c909a33337.opus"
+          }
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Vedi il grande cancello?",
+          "english": "Do you see the big gate?",
+          "choices": [
+            {
+              "text": "Sì, vedo il cancello.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/dbef74644ef5.opus"
+              }
+            },
+            {
+              "text": "No, ho le chiavi ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/1e198858726e.opus"
+              }
+            },
+            {
+              "text": "Il cancello è rotta.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/b6cb4048d7c6.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/b05aa0fe09d7.opus"
+          }
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "C'è un vicolo accanto al cancello.",
+          "english": "There is an alley next to the gate.",
+          "choices": [
+            {
+              "text": "Entro nel vicolo stretto?",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/177382a6387e.opus"
+              }
+            },
+            {
+              "text": "Prendo un ascensore ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/8cd83b48e40f.opus"
+              }
+            },
+            {
+              "text": "Il vicolo è chiuso ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/6621fb826191.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/adfe7ac61b4d.opus"
+          }
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, entra. Vedi un cortile?",
+          "english": "Yes, enter. Do you see a courtyard?",
+          "choices": [
+            {
+              "text": "Sì, vedo il cortile.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/bd321a9ca696.opus"
+              }
+            },
+            {
+              "text": "No, vedo un ascensore.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/4dfd3d926940.opus"
+              }
+            },
+            {
+              "text": "Il cortile è al quinto.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/82639388a504.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/50dba710cc8f.opus"
+          }
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Quello è l'ingresso. C'è un tastierino.",
+          "english": "That is the entrance. There is a keypad.",
+          "choices": [
+            {
+              "text": "Vedo il tastierino lì.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/5b1328343278.opus"
+              }
+            },
+            {
+              "text": "Uso la cassetta ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/e1dac8fc1548.opus"
+              }
+            },
+            {
+              "text": "Suono il citofono lì.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/1f67ae6f8e2a.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/04671ade2144.opus"
+          }
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Digita il codice segreto.",
+          "english": "Type the secret code.",
+          "choices": [
+            {
+              "text": "Fatto. Il cancello si apre.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/d4362da35032.opus"
+              }
+            },
+            {
+              "text": "Non ho le chiavi oggi.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/cfedcbe10080.opus"
+              }
+            },
+            {
+              "text": "Il codice è sbagliato.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/d4a667288806.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/dc9b0991525c.opus"
+          }
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Attraversa il cortile. Sali al secondo piano.",
+          "english": "Cross the courtyard. Go up to the second floor.",
+          "choices": [
+            {
+              "text": "Prendo le scale ora.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/894110600aa6.opus"
+              }
+            },
+            {
+              "text": "Vado al primo piano.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/a88dbe414b25.opus"
+              }
+            },
+            {
+              "text": "Il cortile è scuro.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/bb571238206e.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/93c6f1267d5a.opus"
+          }
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "La porta è nascosta. Ti aspetto.",
+          "english": "The door is hidden. I am waiting.",
+          "choices": [
+            {
+              "text": "Arrivo subito da te.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/19edf9d20752.opus"
+              }
+            },
+            {
+              "text": "Sono molto in ritardo.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/a84f10a68ce8.opus"
+              }
+            },
+            {
+              "text": "Dov'è il citofono oggi?",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/f4ae9deffe4e.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/e463a4a34747.opus"
+          }
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Eccoti! Finalmente sei arrivato.",
+          "english": "There you are! Finally you arrived.",
+          "choices": [
+            {
+              "text": "Grazie dell'aiuto. A presto!",
+              "isCorrect": true,
+              "nextMessageId": "END",
+              "audio": {
+                "italian": "/audio/88db9239babe.opus"
+              }
+            },
+            {
+              "text": "Voglio uscire da qui.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/5ae41940d72d.opus"
+              }
+            },
+            {
+              "text": "Il portone è chiuso.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/391dc54ea40a.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/7722cf92b3e7.opus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "intercom_problem",
+      "title": "Intercom Problem",
+      "description": "Handle a broken intercom.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Sei al portone?",
+          "english": "Good morning. Are you at the door?",
+          "choices": [
+            {
+              "text": "Sì, sono al portone.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/80d3bfe1a7e2.opus"
+              }
+            },
+            {
+              "text": "No, sono dentro ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/1b002a5ebba0.opus"
+              }
+            },
+            {
+              "text": "Qual è il codice?",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/0df507fca2d0.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/8f2038f41d17.opus"
+          }
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il citofono funziona bene?",
+          "english": "Does the intercom work well?",
+          "choices": [
+            {
+              "text": "No, non sento niente.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/00d42f7601ae.opus"
+              }
+            },
+            {
+              "text": "Sì, è molto chiuso.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/c199f9841e70.opus"
+              }
+            },
+            {
+              "text": "Apro il portone blu.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/e4bb4e40e842.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/248812b6e204.opus"
+          }
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Premi forte il bottone.",
+          "english": "Press the button hard.",
+          "choices": [
+            {
+              "text": "Premo forte, ma niente.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/c75feca005e8.opus"
+              }
+            },
+            {
+              "text": "Ho molta paura oggi.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/dc47382428a2.opus"
+              }
+            },
+            {
+              "text": "Il bottone è aperto.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/b124d2d29dd3.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/3df5a6b2135a.opus"
+          }
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "È rotto. Suona al vicino.",
+          "english": "It's broken. Ring the neighbor.",
+          "choices": [
+            {
+              "text": "Suono al vicino subito.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/d6b29a92c32a.opus"
+              }
+            },
+            {
+              "text": "Chi è il vicino lì?",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/16b0454b0826.opus"
+              }
+            },
+            {
+              "text": "Vado via dal portone.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/42f35226c1e8.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/56e48ebc1ccb.opus"
+          }
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Lui ti apre il portone.",
+          "english": "He will open the door for you.",
+          "choices": [
+            {
+              "text": "Va bene, provo ora.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/338b2bd4db65.opus"
+              }
+            },
+            {
+              "text": "Non voglio entrare qui.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/170b17ad0004.opus"
+              }
+            },
+            {
+              "text": "Il portone è stretto.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/3d5d65444e40.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/b8c0261bf4f0.opus"
+          }
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sei dentro adesso?",
+          "english": "Are you inside now?",
+          "choices": [
+            {
+              "text": "Sì, sono dentro il palazzo.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/3888f662baf4.opus"
+              }
+            },
+            {
+              "text": "No, sono fuori dal palazzo.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/9439dbabf63f.opus"
+              }
+            },
+            {
+              "text": "Il vicino è uscito ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/da2b2b42c438.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/0f6a371ff77f.opus"
+          }
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Prendi l'ascensore subito.",
+          "english": "Take the elevator immediately.",
+          "choices": [
+            {
+              "text": "Vado al quinto piano?",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/9b9c6f070f83.opus"
+              }
+            },
+            {
+              "text": "Vado fuori dal palazzo.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/b5eb126197fb.opus"
+              }
+            },
+            {
+              "text": "L'ascensore è chiuso.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/834056851898.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/1aed3d8696d7.opus"
+          }
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, quinto piano. La porta destra.",
+          "english": "Yes, fifth floor. The right door.",
+          "choices": [
+            {
+              "text": "La porta a destra.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/8e15d3632d21.opus"
+              }
+            },
+            {
+              "text": "La porta a sinistra.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/f773232c4786.opus"
+              }
+            },
+            {
+              "text": "Sono in strada ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/d70a49a7f19b.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/213b367229fd.opus"
+          }
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "La porta è socchiusa.",
+          "english": "The door is ajar.",
+          "choices": [
+            {
+              "text": "Entro nella stanza subito.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/034c5ce87c3f.opus"
+              }
+            },
+            {
+              "text": "Scappo dal palazzo ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/c278dbe9b242.opus"
+              }
+            },
+            {
+              "text": "Chiudo tutto il palazzo.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/9342332c7d84.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/0d152d04fc09.opus"
+          }
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie della pazienza.",
+          "english": "Thanks for your patience.",
+          "choices": [
+            {
+              "text": "Figurati! Grazie a te.",
+              "isCorrect": true,
+              "nextMessageId": "END",
+              "audio": {
+                "italian": "/audio/9895552844bf.opus"
+              }
+            },
+            {
+              "text": "Sono molto in ritardo.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/a84f10a68ce8.opus"
+              }
+            },
+            {
+              "text": "Dov'è il citofono rotta?",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/578f39766979.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/4a7b442e05ee.opus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wrong_entrance",
+      "title": "Wrong Apartment Entrance",
+      "description": "Correct a door mistake.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Sei davanti alla porta?",
+          "english": "Are you in front of the door?",
+          "choices": [
+            {
+              "text": "Sì, sono davanti alla porta.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/9664c4e15a1a.opus"
+              }
+            },
+            {
+              "text": "No, sono per strada.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/17deef275097.opus"
+              }
+            },
+            {
+              "text": "Dov'è la chiave rotta?",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/de72e16e2cd1.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/357210f4bde8.opus"
+          }
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Usa la chiave per entrare.",
+          "english": "Use the key to enter.",
+          "choices": [
+            {
+              "text": "Giro la chiave ma niente.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/0be60586631a.opus"
+              }
+            },
+            {
+              "text": "Uso il citofono nuovo.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/ed471b3f7569.opus"
+              }
+            },
+            {
+              "text": "La chiave è molto piccola.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/31e8d3d8cd0a.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/9a97b5bce885.opus"
+          }
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Spingi forte la porta.",
+          "english": "Push the door hard.",
+          "choices": [
+            {
+              "text": "Spingo forte, ma è bloccata.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/1d4ca5635cf6.opus"
+              }
+            },
+            {
+              "text": "Tiro la porta del bagno.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/555ed8b93198.opus"
+              }
+            },
+            {
+              "text": "Canto vicino alla porta.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/1d1093cf871d.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/491433221250.opus"
+          }
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Solleva la maniglia.",
+          "english": "Lift the handle.",
+          "choices": [
+            {
+              "text": "Sollevo la maniglia oggi.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/90a2d9b5234b.opus"
+              }
+            },
+            {
+              "text": "Lascio la maniglia rotta.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/1fb9b0b1b1c8.opus"
+              }
+            },
+            {
+              "text": "La maniglia è chiusa oggi.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/723c2e21e3c3.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/887ecd6996a5.opus"
+          }
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "C'è un interno scritto?",
+          "english": "Is there an internal number written?",
+          "choices": [
+            {
+              "text": "Sì, è l'interno sbagliato.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/b1de043462eb.opus"
+              }
+            },
+            {
+              "text": "No, è molto buio qui.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/d795ee8b0be1.opus"
+              }
+            },
+            {
+              "text": "L'interno è rotto.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/7e96b131fb70.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/e80db07714e0.opus"
+          }
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Hai sbagliato porta!",
+          "english": "You got the wrong door!",
+          "choices": [
+            {
+              "text": "Oh, scusa! Cerco la porta giusta.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/fbce92886a19.opus"
+              }
+            },
+            {
+              "text": "Entro in questa porta oggi.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/06d7ed7f9a63.opus"
+              }
+            },
+            {
+              "text": "Piacere di conoscerti ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/0a2aa0544ba6.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/7f9b85c2103d.opus"
+          }
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "La porta giusta è in fondo.",
+          "english": "The right door is at the end.",
+          "choices": [
+            {
+              "text": "Vado in fondo al corridoio.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/87bb77931adf.opus"
+              }
+            },
+            {
+              "text": "Torno indietro per strada.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/21ac4185265a.opus"
+              }
+            },
+            {
+              "text": "Corro verso il portone.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/ddc8a65c05dd.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/a2db5d38926b.opus"
+          }
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sei davanti alla porta giusta?",
+          "english": "Are you in front of the right door?",
+          "choices": [
+            {
+              "text": "Sì, provo la chiave qui.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/5da020dd4100.opus"
+              }
+            },
+            {
+              "text": "No, sono per strada ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/c0c1d13d81a4.opus"
+              }
+            },
+            {
+              "text": "Chi è alla porta giusta?",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/1428cd56eeb9.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/b5d141a3e184.opus"
+          }
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Si apre?",
+          "english": "Does it open?",
+          "choices": [
+            {
+              "text": "Sì! Si apre subito.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/f99f8a794be4.opus"
+              }
+            },
+            {
+              "text": "No, il portone è chiuso.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/3e9dc16921ac.opus"
+              }
+            },
+            {
+              "text": "Forse la cassetta è vuota.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/8abb5eae9a8a.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/26baea961369.opus"
+          }
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Meno male! Entra pure.",
+          "english": "Thank goodness! Come on in.",
+          "choices": [
+            {
+              "text": "Grazie mille. A dopo!",
+              "isCorrect": true,
+              "nextMessageId": "END",
+              "audio": {
+                "italian": "/audio/f6cf1442a2b8.opus"
+              }
+            },
+            {
+              "text": "Chiudo la cassetta ora.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/193ace7b6964.opus"
+              }
+            },
+            {
+              "text": "Dov'è il citofono ora?",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/1844ae73987a.opus"
+              }
+            }
+          ],
+          "audio": {
+            "italian": "/audio/ac4b0b12759f.opus"
+          }
+        }
+      ]
+    }
+  ]
+}

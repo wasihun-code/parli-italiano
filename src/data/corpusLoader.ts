@@ -5,12 +5,14 @@ const vocabularyFiles = import.meta.glob('./exports/**/*_vocabulary.json', { eag
 const phrasesFiles = import.meta.glob('./exports/**/*_phrases.json', { eager: true });
 const sentencesFiles = import.meta.glob('./exports/**/*_sentences.json', { eager: true });
 const miniLessonsFiles = import.meta.glob('./exports/**/mini_lessons.json', { eager: true });
+const scriptedConversationFiles = import.meta.glob('./exports/**/conversations.json', { eager: true });
 
 export type RawScenarioData = {
   vocabulary: any[];
   phrases: any[];
   sentences: any[];
   miniLessons?: any[];
+  scriptedConversations?: any[];
 };
 
 /**
@@ -46,10 +48,23 @@ export function loadProductionScenarioData(scenarioId: number): RawScenarioData 
   const miniLessonsModule: any = miniLessonsPath ? miniLessonsFiles[miniLessonsPath] : undefined;
   const miniLessons = miniLessonsModule ? (miniLessonsModule.default || miniLessonsModule).lessons : undefined;
 
+  const scriptedPath = Object.keys(scriptedConversationFiles).find(k => k.includes(folderName) && k.endsWith('conversations.json'));
+  const scriptedModule: any = scriptedPath ? scriptedConversationFiles[scriptedPath] : undefined;
+  const scriptedConversations = scriptedModule ? (scriptedModule.default || scriptedModule).conversations : undefined;
+
   // Global debug hook
   if (typeof window !== 'undefined') {
     (window as any).__PARLA_CORPUS__ = (window as any).__PARLA_CORPUS__ || {};
-    (window as any).__PARLA_CORPUS__[scenarioId] = { folderName, vocabPath, phrasesPath, sentencesPath, miniLessonsPath, miniLessonsFound: !!miniLessons };
+    (window as any).__PARLA_CORPUS__[scenarioId] = { 
+      folderName, 
+      vocabPath, 
+      phrasesPath, 
+      sentencesPath, 
+      miniLessonsPath, 
+      scriptedPath,
+      miniLessonsFound: !!miniLessons,
+      scriptedFound: !!scriptedConversations
+    };
   }
 
   if (!vocabModule || !phrasesModule || !sentencesModule) {
@@ -67,5 +82,6 @@ export function loadProductionScenarioData(scenarioId: number): RawScenarioData 
     phrases: (phrasesModule.default || phrasesModule).map(normalizeItem),
     sentences: (sentencesModule.default || sentencesModule).map(normalizeItem),
     miniLessons,
+    scriptedConversations,
   };
 }

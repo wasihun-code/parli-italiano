@@ -17,10 +17,10 @@ export const MiniLessonCompleteScreen: React.FC = () => {
   const lesson = scenario?.miniLessons?.find(l => l.id === lessonId);
 
   useEffect(() => {
-    if (scenarioId && lessonId) {
-      completeMiniLesson(Number(scenarioId), lessonId);
+    if (scenarioId && lessonId && scenario) {
+      completeMiniLesson(Number(scenarioId), lessonId, scenario.miniLessons?.length || 0);
     }
-  }, [scenarioId, lessonId, completeMiniLesson]);
+  }, [scenarioId, lessonId, completeMiniLesson, scenario]);
 
   if (!scenario || !lesson) return null;
 

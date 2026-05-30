@@ -125,8 +125,11 @@ export const MiniLessonScenarioView: React.FC<Props> = ({ scenario }) => {
               
               <div style={{ flex: 1 }}>
                 <h3 style={{ color: colors.primary, fontSize: 18, fontWeight: 800, margin: 0 }}>
-                  {lesson.title}
+                  {lesson.goal}
                 </h3>
+                <p style={{ color: colors.textSecondary, fontSize: 14, margin: '2px 0 0', fontWeight: 600 }}>
+                  {lesson.title}
+                </p>
               </div>
 
               <div style={{ minWidth: 100 }}>
@@ -150,7 +153,7 @@ export const MiniLessonScenarioView: React.FC<Props> = ({ scenario }) => {
           </p>
           <PrimaryButton 
             label="Start Conversation" 
-            onPress={() => {}}
+            onPress={() => navigate(`/scenarios/${scenario.id}/conversations`)}
             disabled={completedCount !== totalLessons}
             variant="primary"
           />
