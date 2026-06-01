@@ -1,0 +1,833 @@
+{
+  "scenarioId": 28,
+  "conversations": [
+    {
+      "id": "quick_espresso_bar",
+      "title": "Quick Espresso at the Bar",
+      "description": "Order a quick espresso at the counter and pay.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cosa ti preparo?",
+          "english": "Good morning! What can I get you?",
+          "choices": [
+            {
+              "text": "Buongiorno! Vorrei un caffè, per favore.",
+              "isCorrect": true
+            },
+            {
+              "text": "Buongiorno! Vorrei un piatto, per favore.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buonasera! Vorrei un gelato, per favore.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Un caffè normale o macchiato?",
+          "english": "A regular coffee or with a spot of milk?",
+          "choices": [
+            {
+              "text": "Un caffè normale, grazie mille.",
+              "isCorrect": true
+            },
+            {
+              "text": "Un tè molto caldo, grazie mille.",
+              "isCorrect": false
+            },
+            {
+              "text": "Un succo di mela, grazie mille.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certo. Lo bevi qui al banco?",
+          "english": "Sure. Will you drink it here at the counter?",
+          "choices": [
+            {
+              "text": "Sì, lo bevo qui al banco, grazie.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, lo mangio nel letto, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, lo bevo qui in bagno, grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ecco il tuo caffè. Zucchero?",
+          "english": "Here is your coffee. Sugar?",
+          "choices": [
+            {
+              "text": "Sì, un po' di zucchero, per favore.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, un po' di pepe nero, per favore.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, un po' di formaggio, per favore.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "È lì sulla destra, prego.",
+          "english": "It's right there on the right, you're welcome.",
+          "choices": [
+            {
+              "text": "Perfetto, lo metto da solo, grazie.",
+              "isCorrect": true
+            },
+            {
+              "text": "Perfetto, lo vendo da solo, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Perfetto, lo butto da solo, grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Tutto a posto? Ti è piaciuto?",
+          "english": "Is everything alright? Did you like it?",
+          "choices": [
+            {
+              "text": "Sì, molto buono. Un ottimo caffè.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, molto lento. Un brutto caffè.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, molto rosso. Un grande caffè.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottimo. Devi pagare ora?",
+          "english": "Excellent. Do you need to pay now?",
+          "choices": [
+            {
+              "text": "Sì, vorrei pagare adesso, grazie.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, vorrei gridare adesso, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vorrei ballare adesso, grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sono un euro e venti, per favore.",
+          "english": "It's one euro and twenty, please.",
+          "choices": [
+            {
+              "text": "Ecco una moneta da due euro.",
+              "isCorrect": true
+            },
+            {
+              "text": "Ecco una maglia da due euro.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ecco una scarpa da due euro.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco il resto di ottanta centesimi.",
+          "english": "Here is your change of eighty cents.",
+          "choices": [
+            {
+              "text": "Grazie mille per il resto.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie mille per il gatto.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille per il libro.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie a te. Buona giornata!",
+          "english": "Thank you. Have a good day!",
+          "choices": [
+            {
+              "text": "Buona giornata anche a te! Arrivederci.",
+              "isCorrect": true
+            },
+            {
+              "text": "Buona mezzanotte anche a te! Arrivederci.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buona colazione anche a te! Arrivederci.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order_with_pastry",
+      "title": "Order with Pastry",
+      "description": "Order a cappuccino and a pastry.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Desidera ordinare?",
+          "english": "Hello! Would you like to order?",
+          "choices": [
+            {
+              "text": "Salve! Sì, vorrei un cappuccino.",
+              "isCorrect": true
+            },
+            {
+              "text": "Salve! Sì, vorrei un asciugamano.",
+              "isCorrect": false
+            },
+            {
+              "text": "Salve! Sì, vorrei un mappamondo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Un cappuccino. E da mangiare?",
+          "english": "A cappuccino. And to eat?",
+          "choices": [
+            {
+              "text": "Sì, vorrei anche un cornetto.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, vorrei anche un tappeto.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vorrei anche un divano.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Vuoto, alla crema o al cioccolato?",
+          "english": "Plain, with cream or with chocolate?",
+          "choices": [
+            {
+              "text": "Un cornetto alla crema, per favore.",
+              "isCorrect": true
+            },
+            {
+              "text": "Un cappello alla crema, per favore.",
+              "isCorrect": false
+            },
+            {
+              "text": "Un bicchiere alla menta, per favore.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Un cornetto alla crema. Altro?",
+          "english": "A croissant with cream. Anything else?",
+          "choices": [
+            {
+              "text": "No, basta così, grazie mille.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, porta così, grazie mille.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, pasta così, grazie mille.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo. Si siede al tavolo?",
+          "english": "Alright. Are you sitting at a table?",
+          "choices": [
+            {
+              "text": "Sì, mi siedo al tavolo fuori.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, mi siedo al parco fuori.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, mi siedo al ponte fuori.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Bene, le porto tutto io.",
+          "english": "Good, I'll bring everything to you.",
+          "choices": [
+            {
+              "text": "Perfetto, la aspetto al tavolo.",
+              "isCorrect": true
+            },
+            {
+              "text": "Perfetto, la aspetto in ufficio.",
+              "isCorrect": false
+            },
+            {
+              "text": "Perfetto, la aspetto in cucina.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco il cappuccino e il cornetto.",
+          "english": "Here is the cappuccino and the croissant.",
+          "choices": [
+            {
+              "text": "Grazie mille, ha un bell'aspetto.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie mille, ha un bell'ombrello.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille, ha un bell'orologio.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Spero sia di suo gradimento.",
+          "english": "I hope it is to your liking.",
+          "choices": [
+            {
+              "text": "Sì, è davvero tutto molto buono.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, è davvero tutto molto vuoto.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, è davvero tutto molto stanco.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Posso portarle via la tazza?",
+          "english": "Can I take your cup away?",
+          "choices": [
+            {
+              "text": "Sì, certo. Vorrei pagare, per favore.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, certo. Vorrei saltare, per favore.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, certo. Vorrei nuotare, per favore.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va bene, le porto il conto.",
+          "english": "Alright, I'll bring you the bill.",
+          "choices": [
+            {
+              "text": "Grazie, pago con la carta di credito.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie, pago con la porta di casa.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, pago con la pizza di ieri.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decaf_specialty_coffee",
+      "title": "Decaf Specialty Coffee",
+      "description": "Order a decaffeinated macchiato and a glass of water.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cosa desidera?",
+          "english": "Good morning! What would you like?",
+          "choices": [
+            {
+              "text": "Buongiorno! Vorrei un decaffeinato.",
+              "isCorrect": true
+            },
+            {
+              "text": "Buongiorno! Vorrei un temperino.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buongiorno! Vorrei un dizionario.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Decaffeinato. Lo vuole macchiato?",
+          "english": "Decaffeinated. Do you want it macchiato (with milk)?",
+          "choices": [
+            {
+              "text": "Sì, un po' macchiato, per favore.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, un po' sporcato, per favore.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, un po' bagnato, per favore.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Latte freddo o latte caldo?",
+          "english": "Cold milk or hot milk?",
+          "choices": [
+            {
+              "text": "Con un po' di latte caldo.",
+              "isCorrect": true
+            },
+            {
+              "text": "Con un po' di burro caldo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Con un po' di sale caldo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Caldo. Vuole anche dell'acqua?",
+          "english": "Hot. Do you also want some water?",
+          "choices": [
+            {
+              "text": "Sì, un bicchiere d'acqua, grazie.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, un fazzoletto d'acqua, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, un cucchiaio d'acqua, grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Liscia o frizzante?",
+          "english": "Still or sparkling?",
+          "choices": [
+            {
+              "text": "Acqua liscia, va benissimo.",
+              "isCorrect": true
+            },
+            {
+              "text": "Acqua sporca, va benissimo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Acqua amara, va benissimo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco a te l'acqua e il caffè.",
+          "english": "Here is your water and coffee.",
+          "choices": [
+            {
+              "text": "Grazie mille, sei molto gentile.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie mille, sei molto pesante.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille, sei molto invisibile.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Serve altro per caso?",
+          "english": "Do you need anything else by chance?",
+          "choices": [
+            {
+              "text": "No grazie. Scusa, dov'è il bagno?",
+              "isCorrect": true
+            },
+            {
+              "text": "No grazie. Scusa, dov'è il museo?",
+              "isCorrect": false
+            },
+            {
+              "text": "No grazie. Scusa, dov'è il treno?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Il bagno è in fondo a destra.",
+          "english": "The bathroom is down the hall to the right.",
+          "choices": [
+            {
+              "text": "Perfetto, vado e poi pago.",
+              "isCorrect": true
+            },
+            {
+              "text": "Perfetto, nuoto e poi pago.",
+              "isCorrect": false
+            },
+            {
+              "text": "Perfetto, corro e poi pago.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certo, vuoi lo scontrino?",
+          "english": "Sure, do you want the receipt?",
+          "choices": [
+            {
+              "text": "Sì, lo scontrino, per favore.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, lo specchio, per favore.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, lo scoiattolo, per favore.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco a te. Arrivederci!",
+          "english": "Here you go. Goodbye!",
+          "choices": [
+            {
+              "text": "Grazie e buon lavoro! Ciao.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie e buon appetito! Ciao.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie e buon viaggio! Ciao.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meeting_a_friend",
+      "title": "Meeting a Friend",
+      "description": "Order drinks for yourself and a friend who just arrived.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Siete in due oggi?",
+          "english": "Good morning! Are there two of you today?",
+          "choices": [
+            {
+              "text": "Ciao! Sì, aspetto un amico.",
+              "isCorrect": true
+            },
+            {
+              "text": "Ciao! Sì, aspetto un pacco.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ciao! Sì, aspetto un autobus.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Prendete da bere o da mangiare?",
+          "english": "Are you getting something to drink or to eat?",
+          "choices": [
+            {
+              "text": "Solo da bere per ora, grazie.",
+              "isCorrect": true
+            },
+            {
+              "text": "Solo da cucire per ora, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Solo da pulire per ora, grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Due caffè. Come li preferite?",
+          "english": "Two coffees. How do you prefer them?",
+          "choices": [
+            {
+              "text": "Un espresso per me e un americano per lui.",
+              "isCorrect": true
+            },
+            {
+              "text": "Un gelato per me e un tavolo per lui.",
+              "isCorrect": false
+            },
+            {
+              "text": "Un cuscino per me e un divano per lui.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Un espresso e un americano. Altro?",
+          "english": "An espresso and an Americano. Anything else?",
+          "choices": [
+            {
+              "text": "No, prendiamo solo i caffè.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, vendiamo solo i caffè.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, compriamo solo i fiumi.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Arrivano subito. Vi sedete?",
+          "english": "They are coming right up. Are you sitting down?",
+          "choices": [
+            {
+              "text": "Sì, ci sediamo a quel tavolo.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, ci sediamo a quel balcone.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, ci sediamo a quel soffitto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Prego. L'americano è bollente.",
+          "english": "Here you go. The Americano is boiling hot.",
+          "choices": [
+            {
+              "text": "Grazie per l'avvertimento, farà attenzione.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie per il cuscino, farà attenzione.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie per il formaggio, farà attenzione.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Tutto bene con i caffè?",
+          "english": "Is everything fine with the coffees?",
+          "choices": [
+            {
+              "text": "Sì, sono perfetti, grazie mille.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, sono quadrati, grazie mille.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, sono rotondi, grazie mille.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Volete pagare conti separati?",
+          "english": "Do you want to pay separate bills?",
+          "choices": [
+            {
+              "text": "No, offro io oggi. Pago tutto insieme.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, apro io oggi. Pago tutto insieme.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, lavo io oggi. Pago tutto insieme.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene, faccio un conto unico.",
+          "english": "Alright, I'll make a single bill.",
+          "choices": [
+            {
+              "text": "Esatto, quant'è il totale?",
+              "isCorrect": true
+            },
+            {
+              "text": "Esatto, quant'è il tavolo?",
+              "isCorrect": false
+            },
+            {
+              "text": "Esatto, quant'è il bicchiere?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sono tre euro in totale.",
+          "english": "It's three euros in total.",
+          "choices": [
+            {
+              "text": "Ecco a te, tieni il resto.",
+              "isCorrect": true
+            },
+            {
+              "text": "Ecco a te, tieni il muro.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ecco a te, tieni il tetto.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

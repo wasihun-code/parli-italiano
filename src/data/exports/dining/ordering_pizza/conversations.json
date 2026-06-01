@@ -1,0 +1,953 @@
+{
+  "scenarioId": 29,
+  "conversations": [
+    {
+      "id": "classic_margherita_order",
+      "title": "Classic Margherita Order",
+      "description": "Order a traditional pizza margherita with buffalo mozzarella.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera! Benvenuti. Volete vedere il menu?",
+          "english": "Good evening! Welcome. Do you want to see the menu?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Vorrei ordinare una pizza.",
+              "english": "Yes, thank you. I would like to order a pizza.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Quale pizza preferite?",
+          "english": "Of course. Which pizza do you prefer?",
+          "choices": [
+            {
+              "text": "Prendo una margherita classica, per favore.",
+              "english": "I'll have a classic margherita, please.",
+              "isCorrect": true
+            },
+            {
+              "text": "Prendo una pizza ai funghi, per favore.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "Vorrei una pizza quattro formaggi.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo. La margherita è la nostra specialità. La vuole con mozzarella di bufala?",
+          "english": "Excellent. The margherita is our specialty. Do you want it with buffalo mozzarella?",
+          "choices": [
+            {
+              "text": "Sì, con mozzarella di bufala fresca.",
+              "english": "Yes, with fresh buffalo mozzarella.",
+              "isCorrect": true
+            },
+            {
+              "text": "Con mozzarella normale, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "Senza mozzarella, solo pomodoro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Va bene. Desidera un formato particolare? Abbiamo piccola o media.",
+          "english": "Fine. Do you want a particular size? We have small or medium.",
+          "choices": [
+            {
+              "text": "Una pizza media è perfetta per me.",
+              "english": "A medium pizza is perfect for me.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Vuole aggiungere del basilico fresco sopra?",
+          "english": "Perfect. Do you want to add some fresh basil on top?",
+          "choices": [
+            {
+              "text": "Sì, molto basilico, grazie.",
+              "english": "Yes, lots of basil, thank you.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo. Da bere cosa desidera?",
+          "english": "Agreed. What would you like to drink?",
+          "choices": [
+            {
+              "text": "Un bicchiere di vino rosso della casa.",
+              "english": "A glass of house red wine.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottima scelta. La pizza sarà pronta in dieci minuti. Il forno è a legna.",
+          "english": "Excellent choice. The pizza will be ready in ten minutes. The oven is wood-fired.",
+          "choices": [
+            {
+              "text": "Grazie mille. Si sente già il profumo!",
+              "english": "Thanks a lot. I can already smell it!",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ecco la sua pizza. Buon appetito!",
+          "english": "Here is your pizza. Enjoy your meal!",
+          "choices": [
+            {
+              "text": "Grazie! Posso avere anche dell'olio piccante?",
+              "english": "Thanks! Can I also have some spicy oil?",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente, ecco l'olio. Attenzione, è molto forte!",
+          "english": "Certainly, here is the oil. Careful, it is very strong!",
+          "choices": [
+            {
+              "text": "Grazie per l'avvertimento, ne metterò solo un filo.",
+              "english": "Thanks for the warning, I'll only put a drop.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, lo so. Ne metterò solo un pochino per dare sapore.",
+              "english": "Yes, I know. I'll only put a little bit to add flavor.",
+              "isCorrect": false
+            },
+            {
+              "text": "D'accordo, grazie mille. Farò molta attenzione allora.",
+              "english": "Alright, thank you very much. I will be very careful then.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Serve altro?",
+          "english": "Perfect. Do you need anything else?",
+          "choices": [
+            {
+              "text": "No, va bene così. Grazie di tutto.",
+              "english": "No, it's fine like this. Thanks for everything.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "custom_toppings",
+      "title": "Custom Toppings",
+      "description": "Create your own pizza with specific ingredients like mushrooms and ham.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Cosa vi porto stasera?",
+          "english": "Hi! What can I bring you tonight?",
+          "choices": [
+            {
+              "text": "Vorrei una pizza personalizzata con vari ingredienti.",
+              "english": "I would like a customized pizza with various ingredients.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, grazie. Avete un tavolo libero per due persone stasera?",
+              "english": "Yes, thank you. Do you have a free table for two people tonight?",
+              "isCorrect": false
+            },
+            {
+              "text": "No, grazie. Vorrei solo sapere se fate anche pizze da asporto.",
+              "english": "No, thank you. I would just like to know if you also do takeout pizzas.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo! Qual è la base? Pomodoro e mozzarella?",
+          "english": "Sure! What is the base? Tomato and mozzarella?",
+          "choices": [
+            {
+              "text": "Sì, base margherita ma vorrei aggiungere dei funghi.",
+              "english": "Yes, margherita base but I'd like to add some mushrooms.",
+              "isCorrect": true
+            },
+            {
+              "text": "Prendo una pizza ai funghi, per favore.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "Vorrei una pizza quattro formaggi.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Funghi freschi o sott'olio?",
+          "english": "Fresh mushrooms or in oil?",
+          "choices": [
+            {
+              "text": "Funghi freschi, per favore.",
+              "english": "Fresh mushrooms, please.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. Altri ingredienti? Abbiamo prosciutto, olive, carciofi...",
+          "english": "Excellent. Other ingredients? We have ham, olives, artichokes...",
+          "choices": [
+            {
+              "text": "Aggiunga anche del prosciutto crudo, ma a crudo.",
+              "english": "Add some raw ham too, but put it on raw.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene, il crudo lo mettiamo dopo la cottura. Altro?",
+          "english": "Fine, we'll put the raw ham on after cooking. Anything else?",
+          "choices": [
+            {
+              "text": "Sì, vorrei anche delle olive nere e dei carciofi.",
+              "english": "Yes, I would also like some black olives and artichokes.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo. Una pizza molto ricca! Quale formato?",
+          "english": "Agreed. A very rich pizza! Which size?",
+          "choices": [
+            {
+              "text": "La vorrei grande, ho molta fame.",
+              "english": "I would like it large, I'm very hungry.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. E per l'impasto? Abbiamo anche quello integrale.",
+          "english": "Perfect. And for the dough? We also have whole wheat.",
+          "choices": [
+            {
+              "text": "No, preferisco l'impasto tradizionale bianco.",
+              "english": "No, I prefer the traditional white dough.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Da bere?",
+          "english": "Fine. To drink?",
+          "choices": [
+            {
+              "text": "Una birra alla spina media, grazie.",
+              "english": "A medium draft beer, thank you.",
+              "isCorrect": true
+            },
+            {
+              "text": "Un bicchiere di acqua naturale.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "Una bottiglia di vino rosso.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Arriva subito. Ecco la birra.",
+          "english": "Coming right up. Here is the beer.",
+          "choices": [
+            {
+              "text": "Grazie. Quanto tempo devo aspettare per la pizza?",
+              "english": "Thanks. How long do I have to wait for the pizza?",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Circa quindici minuti, il locale è pieno.",
+          "english": "About fifteen minutes, the place is full.",
+          "choices": [
+            {
+              "text": "Nessun problema, aspetto volentieri.",
+              "english": "No problem, I'll gladly wait.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "takeout_call",
+      "title": "Takeout Call",
+      "description": "Order pizzas by phone for collection.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto, Pizzeria da Mario. Dica pure.",
+          "english": "Hello, Mario's Pizzeria. Go ahead.",
+          "choices": [
+            {
+              "text": "Buonasera, vorrei ordinare due pizze da asporto.",
+              "english": "Good evening, I'd like to order two pizzas for takeout.",
+              "isCorrect": true
+            },
+            {
+              "text": "Mangiamo qui al tavolo, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "Per consumazione sul posto.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo, quali pizze desidera?",
+          "english": "Sure, which pizzas would you like?",
+          "choices": [
+            {
+              "text": "Una marinara e una quattro formaggi, per favore.",
+              "english": "A marinara and a four cheese, please.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "La marinara con molto aglio o poco?",
+          "english": "The marinara with lots of garlic or a little?",
+          "choices": [
+            {
+              "text": "Con molto aglio e un po' di origano.",
+              "english": "With lots of garlic and a bit of oregano.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Va bene. E per la quattro formaggi? Formato normale?",
+          "english": "Fine. And for the four cheese? Normal size?",
+          "choices": [
+            {
+              "text": "Sì, formato normale per entrambe.",
+              "english": "Yes, normal size for both.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo. A che ora passa a ritirarle?",
+          "english": "Agreed. What time are you coming to pick them up?",
+          "choices": [
+            {
+              "text": "Tra venti minuti circa. Va bene?",
+              "english": "In about twenty minutes. Is that okay?",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, per le otto sono pronte. Il suo nome?",
+          "english": "Yes, they'll be ready by eight. Your name?",
+          "choices": [
+            {
+              "text": "Mi chiamo Marco Rossi.",
+              "english": "My name is Marco Rossi.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Va bene Marco. Vuole aggiungere delle bibite?",
+          "english": "Fine Marco. Do you want to add some drinks?",
+          "choices": [
+            {
+              "text": "Sì, due lattine di coca cola fredde.",
+              "english": "Yes, two cold cans of coke.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Perfetto. Il totale è ventidue euro.",
+          "english": "Perfect. The total is twenty-two euros.",
+          "choices": [
+            {
+              "text": "Posso pagare con la carta quando arrivo?",
+              "english": "Can I pay by card when I arrive?",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, accettiamo tutte le carte. A dopo!",
+          "english": "Yes, we accept all cards. See you later!",
+          "choices": [
+            {
+              "text": "Grazie mille, a dopo. Arrivederci.",
+              "english": "Thanks a lot, see you later. Goodbye.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci!",
+          "english": "Goodbye!",
+          "choices": [
+            {
+              "text": "Arrivederci e buona serata.",
+              "english": "Goodbye and have a good evening.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gluten_free_request",
+      "title": "Gluten Free Request",
+      "description": "Ask for gluten-free options and order a vegetarian pizza.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Benvenuti. Avete prenotato?",
+          "english": "Good morning! Welcome. Have you booked?",
+          "choices": [
+            {
+              "text": "Sì, ho una prenotazione per due a nome Bianchi.",
+              "english": "Yes, I have a reservation for two under the name Bianchi.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Prego, accomodatevi a questo tavolo. Volete il menu?",
+          "english": "Please, sit at this table. Do you want the menu?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Ma volevo chiedere: avete l'impasto senza glutine?",
+              "english": "Yes, thank you. But I wanted to ask: do you have gluten-free dough?",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, grazie mille. Vorrei sapere se avete anche dei piatti di pasta?",
+              "english": "Yes, thank you very much. I would like to know if you also have pasta dishes?",
+              "isCorrect": false
+            },
+            {
+              "text": "No, grazie. Volevamo solo sapere se accettate pagamenti con carta?",
+              "english": "No, thank you. We just wanted to know if you accept card payments?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente. Abbiamo un'area dedicata per evitare contaminazioni.",
+          "english": "Certainly. We have a dedicated area to avoid contamination.",
+          "choices": [
+            {
+              "text": "Ottimo, è molto importante per me. Grazie.",
+              "english": "Excellent, it's very important for me. Thanks.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Di nulla. Quale pizza senza glutine desidera?",
+          "english": "You're welcome. Which gluten-free pizza would you like?",
+          "choices": [
+            {
+              "text": "Vorrei una pizza vegetariana senza glutine.",
+              "english": "I would like a gluten-free vegetarian pizza.",
+              "isCorrect": true
+            },
+            {
+              "text": "Con impasto integrale, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "Vorrei l'impasto tradizionale.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene. La vuole con verdure grigliate o fresche?",
+          "english": "Fine. Do you want it with grilled or fresh vegetables?",
+          "choices": [
+            {
+              "text": "Verdure grigliate, per favore.",
+              "english": "Grilled vegetables, please.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo. Altro sopra? Magari un po' di scaglie di parmigiano?",
+          "english": "Agreed. Anything else on top? Maybe some parmesan shavings?",
+          "choices": [
+            {
+              "text": "Sì, ottima idea! Aggiunga pure il parmigiano.",
+              "english": "Yes, great idea! Go ahead and add the parmesan.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Da bere cosa vi porto?",
+          "english": "Perfect. What can I bring you to drink?",
+          "choices": [
+            {
+              "text": "Avete anche la birra senza glutine?",
+              "english": "Do you also have gluten-free beer?",
+              "isCorrect": true
+            },
+            {
+              "text": "Un bicchiere di acqua naturale.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "Una bottiglia di vino rosso.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, ne abbiamo una in bottiglia molto buona.",
+          "english": "Yes, we have a very good bottled one.",
+          "choices": [
+            {
+              "text": "Allora prendo quella e un'acqua naturale.",
+              "english": "Then I'll have that and a still water.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Benissimo. La pizza arriverà tra poco.",
+          "english": "Very well. The pizza will arrive shortly.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'attenzione.",
+              "english": "Thanks a lot for the attention.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "È un piacere. Buon appetito quando arriva!",
+          "english": "It's a pleasure. Enjoy your meal when it arrives!",
+          "choices": [
+            {
+              "text": "Grazie, non vedo l'ora di provarla.",
+              "english": "Thanks, I can't wait to try it.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, va bene così, grazie.",
+              "english": "Distractor 1",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco qualcos'altro.",
+              "english": "Distractor 2",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

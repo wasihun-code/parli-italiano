@@ -1,0 +1,877 @@
+{
+  "scenarioId": 30,
+  "conversations": [
+    {
+      "id": "standard_order",
+      "title": "Standard Order",
+      "description": "Order a classic pasta dish and ask for basic items.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera, siete pronti per ordinare?",
+          "english": "Good evening, are you ready to order?",
+          "choices": [
+            {
+              "text": "Sì, vorrei un piatto di spaghetti al pomodoro.",
+              "english": "Yes, I would like a plate of spaghetti with tomato sauce.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, vorrei un tavolo vicino alla finestra grande.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vorrei vedere il menu dei dolci tipici.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottima scelta. Desidera anche del parmigiano sopra?",
+          "english": "Excellent choice. Would you like some parmesan on top?",
+          "choices": [
+            {
+              "text": "Sì, grazie. E vorrei anche dell'acqua naturale.",
+              "english": "Yes, thanks. And I would also like some still water.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, grazie. E vorrei also un po' di pepe nero.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, grazie. Preferisco un calice di vino rosso.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente. Gliela porto subito.",
+          "english": "Certainly. I'll bring it to you right away.",
+          "choices": [
+            {
+              "text": "Grazie mille. La pasta è al dente, vero?",
+              "english": "Thank you very much. The pasta is al dente, right?",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie mille. Il caffè è molto caldo, vero?",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille. Il conto è corretto, vero?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, la cuociamo sempre al dente come tradizione.",
+          "english": "Yes, we always cook it al dente as per tradition.",
+          "choices": [
+            {
+              "text": "Perfetto, proprio come piace a me.",
+              "english": "Perfect, just how I like it.",
+              "isCorrect": true
+            },
+            {
+              "text": "Perfetto, proprio come a casa mia.",
+              "isCorrect": false
+            },
+            {
+              "text": "Peccato, preferisco la pasta molle.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ecco i suoi spaghetti. Buon appetito!",
+          "english": "Here is your spaghetti. Enjoy your meal!",
+          "choices": [
+            {
+              "text": "Grazie. Mi può portare anche il pane?",
+              "english": "Thanks. Can you also bring me some bread?",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie. Mi può portare anche il sale?",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie. Mi può portare anche il menu?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Subito. Ecco il cestino del pane.",
+          "english": "Right away. Here is the bread basket.",
+          "choices": [
+            {
+              "text": "Molto gentile. Tutto sembra squisito.",
+              "english": "Very kind. Everything looks delicious.",
+              "isCorrect": true
+            },
+            {
+              "text": "Molto gentile. Tutto sembra molto caro.",
+              "isCorrect": false
+            },
+            {
+              "text": "Molto gentile. Tutto sembra troppo salato.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Grazie. Se ha bisogno di altro, mi chiami.",
+          "english": "Thank you. If you need anything else, call me.",
+          "choices": [
+            {
+              "text": "Scusi, posso avere un po' di peperoncino?",
+              "english": "Excuse me, can I have a bit of chili pepper?",
+              "isCorrect": true
+            },
+            {
+              "text": "Va bene. Dov'è il bagno, scusi?",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene. Arrivederci e grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente, glielo porto subito. Lo vuole fresco o sott'olio?",
+          "english": "Certainly, I'll bring it right away. Do you want it fresh or in oil?",
+          "choices": [
+            {
+              "text": "Fresco, se possibile. Grazie.",
+              "english": "Fresh, if possible. Thanks.",
+              "isCorrect": true
+            },
+            {
+              "text": "Fresco, se possibile. Molto caro.",
+              "isCorrect": false
+            },
+            {
+              "text": "Fresco, se possibile. Troppo tardi.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco il peperoncino. Attenzione, è molto piccante.",
+          "english": "Here is the chili pepper. Careful, it is very spicy.",
+          "choices": [
+            {
+              "text": "Grazie del consiglio, ne metterò solo un po'.",
+              "english": "Thanks for the advice, I'll only put a bit.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie del consiglio, lo berrò tutto.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie del consiglio, è molto dolce.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo. Le serve altro per adesso?",
+          "english": "Great. Do you need anything else for now?",
+          "choices": [
+            {
+              "text": "No, grazie. Va bene così per ora.",
+              "english": "No, thanks. It's fine like this for now.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Sì, vorrei un cappotto nuovo.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco andare al cinema.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carbonara_tradition",
+      "title": "Carbonara Tradition",
+      "description": "Discuss the traditional recipe for Carbonara.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Benvenuti! Avete già scelto la vostra pasta?",
+          "english": "Welcome! Have you already chosen your pasta?",
+          "choices": [
+            {
+              "text": "Vorrei provare la vostra famosa carbonara.",
+              "english": "I would like to try your famous carbonara.",
+              "isCorrect": true
+            },
+            {
+              "text": "Vorrei provare la vostra famosa bistecca.",
+              "isCorrect": false
+            },
+            {
+              "text": "Vorrei provare la vostra famosa granita.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottimo. La nostra carbonara è quella tradizionale.",
+          "english": "Great. Our carbonara is the traditional one.",
+          "choices": [
+            {
+              "text": "Cosa significa 'tradizionale' esattamente?",
+              "english": "What does 'traditional' mean exactly?",
+              "isCorrect": true
+            },
+            {
+              "text": "Cosa significa 'fresca' esattamente?",
+              "isCorrect": false
+            },
+            {
+              "text": "Cosa significa 'abbondante' esattamente?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Significa che non usiamo la panna, solo uova e pecorino.",
+          "english": "It means we don't use cream, only eggs and pecorino cheese.",
+          "choices": [
+            {
+              "text": "Perfetto, la preferisco senza panna. Che tipo di pasta usate?",
+              "english": "Perfect, I prefer it without cream. What type of pasta do you use?",
+              "isCorrect": true
+            },
+            {
+              "text": "Perfetto, la preferisco senza sale. Che tipo di carne usate?",
+              "isCorrect": false
+            },
+            {
+              "text": "Peccato, io volevo molta panna. Che tipo di pane usate?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Usiamo i rigatoni, tengono meglio il condimento.",
+          "english": "We use rigatoni, they hold the sauce better.",
+          "choices": [
+            {
+              "text": "Va bene, i rigatoni mi piacciono molto.",
+              "english": "Alright, I like rigatoni very much.",
+              "isCorrect": true
+            },
+            {
+              "text": "Va bene, gli spaghetti mi piacciono.",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene, i tortellini mi piacciono.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Desidera del pepe nero extra sopra?",
+          "english": "Would you like extra black pepper on top?",
+          "choices": [
+            {
+              "text": "Sì, un po' di pepe nero grazie.",
+              "english": "Yes, a bit of black pepper thanks.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, un po' di zucchero grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, un po' di peperoncino grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco la sua carbonara. Attenzione, il piatto è caldo.",
+          "english": "Here is your carbonara. Careful, the plate is hot.",
+          "choices": [
+            {
+              "text": "Grazie. Ha un profumo fantastico.",
+              "english": "Thanks. It has a fantastic scent.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie. Ha un colore blu strano.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie. Ha un sapore amaro oggi.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Grazie mille. Gradite del vino bianco?",
+          "english": "Thank you very much. Would you like some white wine?",
+          "choices": [
+            {
+              "text": "In realtà preferirei una birra artigianale.",
+              "english": "Actually I would prefer a craft beer.",
+              "isCorrect": true
+            },
+            {
+              "text": "No grazie, solo una birra.",
+              "isCorrect": false
+            },
+            {
+              "text": "No grazie, solo un caffè.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Abbiamo una bionda locale molto buona. Le va bene?",
+          "english": "We have a very good local blonde beer. Is that okay for you?",
+          "choices": [
+            {
+              "text": "Sì, sembra ottima. Me ne porti una piccola.",
+              "english": "Yes, it looks great. Bring me a small one.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, sembra ottima. Me ne porti una calda.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, sembra ottima. Me ne porti una vecchia.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Arriva subito. Vuole anche un bicchiere freddo?",
+          "english": "Coming right away. Do you also want a cold glass?",
+          "choices": [
+            {
+              "text": "Sì, grazie. È un'ottima idea.",
+              "english": "Yes, thanks. It's an excellent idea.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, grazie. È una brutta idea.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, grazie. Non mi piace l'idea.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco la birra. Si goda la sua carbonara!",
+          "english": "Here is the beer. Enjoy your carbonara!",
+          "choices": [
+            {
+              "text": "Grazie mille. Buon lavoro!",
+              "english": "Thank you very much. Good luck with your work!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie mille. Buona notte!",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille. Addio per sempre!",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pork_free_option",
+      "title": "Pork-free Option",
+      "description": "Handle dietary restrictions while ordering pasta.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera. Cosa vi porto di buono oggi?",
+          "english": "Good evening. What can I bring you today?",
+          "choices": [
+            {
+              "text": "Vorrei le tagliatelle al ragù, ma ho una domanda.",
+              "english": "I would like the tagliatelle with meat sauce, but I have a question.",
+              "isCorrect": true
+            },
+            {
+              "text": "Vorrei le tagliatelle al ragù, ma ho molta fretta.",
+              "isCorrect": false
+            },
+            {
+              "text": "Vorrei le tagliatelle al ragù, ma ho poca fame.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dica pure. Qual è il suo dubbio?",
+          "english": "Go ahead. What is your doubt?",
+          "choices": [
+            {
+              "text": "Il ragù contiene carne di maiale?",
+              "english": "Does the meat sauce contain pork?",
+              "isCorrect": true
+            },
+            {
+              "text": "Il ragù contiene farina di grano?",
+              "isCorrect": false
+            },
+            {
+              "text": "Il ragù contiene pezzi di pesce?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, è un misto di manzo e maiale. È un problema?",
+          "english": "Yes, it is a mix of beef and pork. Is it a problem?",
+          "choices": [
+            {
+              "text": "Sì, non mangio maiale. Avete un'alternativa?",
+              "english": "Yes, I don't eat pork. Do you have an alternative?",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, non mangio carne. Avete un gelato?",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, non mangio pasta. Avete del pane?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Possiamo farle le tagliatelle con il pesto alla genovese.",
+          "english": "We can make the tagliatelle for you with Genovese pesto.",
+          "choices": [
+            {
+              "text": "Il pesto mi piace molto. È senza carne?",
+              "english": "I like pesto very much. Is it meat-free?",
+              "isCorrect": true
+            },
+            {
+              "text": "Il pesto mi piace molto. È senza olio?",
+              "isCorrect": false
+            },
+            {
+              "text": "Il pesto mi piace molto. È senza noci?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, è solo basilico, pinoli, olio e formaggio.",
+          "english": "Yes, it's just basil, pine nuts, oil and cheese.",
+          "choices": [
+            {
+              "text": "Benissimo, allora prendo le tagliatelle al pesto.",
+              "english": "Great, then I'll take the tagliatelle with pesto.",
+              "isCorrect": true
+            },
+            {
+              "text": "Benissimo, allora prendo la pizza al pesto.",
+              "isCorrect": false
+            },
+            {
+              "text": "Benissimo, allora prendo la zuppa di pesto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottima scelta. Desidera una porzione abbondante?",
+          "english": "Excellent choice. Would you like a large portion?",
+          "choices": [
+            {
+              "text": "No, una porzione normale va benissimo.",
+              "english": "No, a normal portion is just fine.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, una porzione piccola è troppo.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, una porzione gigante per me.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Arrivano subito le sue tagliatelle.",
+          "english": "Your tagliatelle are coming right away.",
+          "choices": [
+            {
+              "text": "Grazie. Posso avere anche dell'altro vino?",
+              "english": "Thanks. Can I also have some more wine?",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie per il conto e per la birra.",
+              "isCorrect": false
+            },
+            {
+              "text": "Prego per la pizza e per il mare.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente. Rosso o bianco?",
+          "english": "Certainly. Red or white?",
+          "choices": [
+            {
+              "text": "Un altro calice di rosso, per favore.",
+              "english": "Another glass of red, please.",
+              "isCorrect": true
+            },
+            {
+              "text": "Un altro calice di latte, per favore.",
+              "isCorrect": false
+            },
+            {
+              "text": "Un altro calice di tè, per favore.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco a lei. Le porto anche qualche oliva nell'attesa?",
+          "english": "Here you go. Shall I also bring you some olives while you wait?",
+          "choices": [
+            {
+              "text": "Sì, volentieri. Grazie mille.",
+              "english": "Yes, gladly. Thank you very much.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, volentieri. Sono molto amare.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco un po' di zucchero.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco le olive. Buon proseguimento del pasto.",
+          "english": "Here are the olives. Enjoy the rest of your meal.",
+          "choices": [
+            {
+              "text": "Grazie per la spiegazione e per l'aiuto.",
+              "english": "Thanks for the explanation and for the help.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie per il taxi e per l'hotel.",
+              "isCorrect": false
+            },
+            {
+              "text": "Prego per la pizza e per il mare.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bill_and_specialty",
+      "title": "Bill and Specialty",
+      "description": "Ask for the specialty of the house and pay the bill.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Oggi abbiamo gnocchi freschi e lasagne.",
+          "english": "Hello! Today we have fresh gnocchi and lasagna.",
+          "choices": [
+            {
+              "text": "Sono indeciso. Quale mi consiglia?",
+              "english": "I'm undecided. Which one do you recommend?",
+              "isCorrect": true
+            },
+            {
+              "text": "Sono indeciso. Quale costa meno?",
+              "isCorrect": false
+            },
+            {
+              "text": "Sono indeciso. Quale è più blu?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Le lasagne sono la nostra specialità della casa.",
+          "english": "The lasagna is our house specialty.",
+          "choices": [
+            {
+              "text": "Allora prendo le lasagne. Sono molto grandi?",
+              "english": "Then I'll take the lasagna. Are they very large?",
+              "isCorrect": true
+            },
+            {
+              "text": "Allora prendo le lasagne. Sono molto care?",
+              "isCorrect": false
+            },
+            {
+              "text": "Allora prendo le lasagne. Sono molto vecchie?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, è una porzione abbastanza ricca.",
+          "english": "Yes, it is quite a rich portion.",
+          "choices": [
+            {
+              "text": "Va bene, ho molta fame oggi.",
+              "english": "Alright, I'm very hungry today.",
+              "isCorrect": true
+            },
+            {
+              "text": "Va bene, ho molta fretta oggi.",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene, ho molta sete oggi.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Da bere le porto del vino rosso?",
+          "english": "Shall I bring you some red wine to drink?",
+          "choices": [
+            {
+              "text": "Sì, un calice di vino rosso della casa.",
+              "english": "Yes, a glass of house red wine.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, un calice di vino bianco dolce.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, una bottiglia di acqua minerale.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ecco le lasagne e il suo vino.",
+          "english": "Here is the lasagna and your wine.",
+          "choices": [
+            {
+              "text": "Erano squisite, complimenti.",
+              "english": "They were exquisite, compliments.",
+              "isCorrect": true
+            },
+            {
+              "text": "Erano troppo, scusi.",
+              "isCorrect": false
+            },
+            {
+              "text": "Erano fredde, peccato.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Grazie mille. Desidera un caffè o un dolce?",
+          "english": "Thank you very much. Would you like a coffee or a dessert?",
+          "choices": [
+            {
+              "text": "No, grazie. Posso avere il conto?",
+              "english": "No, thanks. Can I have the bill?",
+              "isCorrect": true
+            },
+            {
+              "text": "No, grazie. Posso avere il menu?",
+              "isCorrect": false
+            },
+            {
+              "text": "No, grazie. Posso avere il pane?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente, glielo porto subito al tavolo.",
+          "english": "Certainly, I'll bring it to your table right away.",
+          "choices": [
+            {
+              "text": "Grazie. Il coperto è incluso nel prezzo?",
+              "english": "Thanks. Is the cover charge included in the price?",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie. Posso pagare con il pane?",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie. Posso pagare con il vino?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, il coperto è di due euro a persona.",
+          "english": "Yes, the cover charge is two euros per person.",
+          "choices": [
+            {
+              "text": "Va bene. Accettate anche pagamenti contactless?",
+              "english": "Alright. Do you also accept contactless payments?",
+              "isCorrect": true
+            },
+            {
+              "text": "Va bene. Accettate anche scambi di vestiti?",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene. Accettate anche sassi colorati?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, certo. Può usare il telefono o lo smartwatch.",
+          "english": "Yes, of course. You can use your phone or smartwatch.",
+          "choices": [
+            {
+              "text": "Ottimo, allora pago così. Ecco a lei.",
+              "english": "Great, then I'll pay like this. Here you go.",
+              "isCorrect": true
+            },
+            {
+              "text": "Ottimo, allora scappo via subito.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ottimo, allora canto una canzone.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto, transazione eseguita. Buona serata!",
+          "english": "Perfect, transaction completed. Have a good evening!",
+          "choices": [
+            {
+              "text": "Grazie mille e arrivederci!",
+              "english": "Thank you very much and goodbye!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie mille e buona colazione!",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille e buon lunedì!",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,954 @@
+{
+  "scenarioId": 37,
+  "conversations": [
+    {
+      "id": "classic_arancino",
+      "title": "Classic Arancino",
+      "description": "Order a traditional Sicilian arancino at a street food stall.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cosa ti preparo di buono oggi? Abbiamo arancini caldi appena fatti.",
+          "english": "Good morning! What can I get you today? We have hot arancini just made.",
+          "choices": [
+            {
+              "text": "Buongiorno! Vorrei un arancino al ragù, per favore. È molto caldo?",
+              "isCorrect": true,
+              "feedback": "Perfect! You ordered and asked about the temperature."
+            },
+            {
+              "text": "Buongiorno! Quanto costa una camera doppia per due notti?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are at a food stall, not a hotel."
+            },
+            {
+              "text": "Buongiorno! Vorrei un biglietto per il treno delle tre.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are buying food, not a train ticket."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, è bollente! Vuoi mangiarlo subito o preferisci portarlo via nel sacchetto?",
+          "english": "Yes, it's boiling hot! Do you want to eat it now or prefer to take it away in a bag?",
+          "choices": [
+            {
+              "text": "Lo mangio subito qui in piedi, grazie. Mi serve solo un tovagliolo.",
+              "isCorrect": true,
+              "feedback": "Great. Eating on the go is the essence of street food."
+            },
+            {
+              "text": "Lo porto via nel sacchetto. Dove trovo il binario quattro?",
+              "isCorrect": false,
+              "feedback": "You mixed food with a train station question!"
+            },
+            {
+              "text": "Non lo voglio più. Posso avere un letto matrimoniale?",
+              "isCorrect": false,
+              "feedback": "Still thinking about hotels? Focus on the food!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente, ecco un paio di tovaglioli. Attento che l'arancino scotta molto!",
+          "english": "Certainly, here are a couple of napkins. Be careful, the arancino is very hot!",
+          "choices": [
+            {
+              "text": "Grazie mille, starò attento. Quanto costa in tutto l'arancino?",
+              "isCorrect": true,
+              "feedback": "Good. Asking for the price is essential."
+            },
+            {
+              "text": "Grazie mille, starò attento. Dov'è la farmacia più vicina?",
+              "isCorrect": false,
+              "feedback": "Unless you burned yourself already, this is out of place!"
+            },
+            {
+              "text": "Grazie mille, starò attento. Il check-out è a mezzogiorno?",
+              "isCorrect": false,
+              "feedback": "No hotel talk here!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sono tre euro e cinquanta. Posso aggiungere una bibita fresca o dell'acqua?",
+          "english": "It's three euros fifty. Can I add a cold drink or some water?",
+          "choices": [
+            {
+              "text": "No grazie, solo l'arancino. Ecco cinque euro. Tenga pure il resto.",
+              "isCorrect": true,
+              "feedback": "Generous! You paid and declined the drink politely."
+            },
+            {
+              "text": "Sì, vorrei un volo per Roma. Quanto costa il biglietto aereo?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are at a food stall."
+            },
+            {
+              "text": "No grazie, solo l'arancino. Dov'è l'ufficio degli oggetti smarriti?",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the transaction."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Gentilissimo, grazie! Buon appetito e buona passeggiata per le vie del centro.",
+          "english": "Very kind, thank you! Enjoy your meal and have a nice walk through the city streets.",
+          "choices": [
+            {
+              "text": "Scusi, un'ultima cosa. Avete anche dei dolci tipici qui?",
+              "isCorrect": true,
+              "feedback": "Perfect ending to a street food interaction."
+            },
+            {
+              "text": "Grazie ancora, buona giornata! Dove trovo il mio imbarco?",
+              "isCorrect": false,
+              "feedback": "Still at the airport in your mind?"
+            },
+            {
+              "text": "Grazie ancora, buona giornata! Mi serve un dottore subito.",
+              "isCorrect": false,
+              "feedback": "Unexpected medical emergency!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Certo! Abbiamo dei piccoli cannoli siciliani appena riempiti. Vuoi provarne uno?",
+          "english": "Sure! We have small Sicilian cannoli just filled. Do you want to try one?",
+          "choices": [
+            {
+              "text": "Sì, ne vorrei uno, per favore. Sono con la ricotta?",
+              "isCorrect": true,
+              "feedback": "Great question! Ricotta is the traditional filling."
+            },
+            {
+              "text": "Vorrei una camera per la notte.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! Focus on the cannolo."
+            },
+            {
+              "text": "Avete dei biglietti per il museo?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are at a food stall."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, ricotta di pecora fresca e granella di pistacchio. Una vera delizia!",
+          "english": "Yes, fresh sheep's milk ricotta and chopped pistachios. A real delight!",
+          "choices": [
+            {
+              "text": "Sembra perfetto. Lo prendo. Quanto costa il cannolo?",
+              "isCorrect": true,
+              "feedback": "Perfect! You decided to buy it and asked for the price."
+            },
+            {
+              "text": "Dov'è il bagno del ristorante?",
+              "isCorrect": false,
+              "feedback": "You are at a street stall, not a restaurant."
+            },
+            {
+              "text": "Vorrei noleggiare una bicicletta.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Il cannolo costa due euro. Te lo metto nel sacchetto insieme all'arancino?",
+          "english": "The cannolo costs two euros. Shall I put it in the bag with the arancino?",
+          "choices": [
+            {
+              "text": "Sì, grazie, è un'ottima idea. Così mangio prima il salato.",
+              "isCorrect": true,
+              "feedback": "Good organization! Salty first, sweet after."
+            },
+            {
+              "text": "Sì, vorrei prenotare un volo.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Vorrei un cappotto più caldo.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto, ecco a te! Ti serviranno altri tovaglioli con il cannolo?",
+          "english": "Perfect, here you go! Will you need more napkins with the cannolo?",
+          "choices": [
+            {
+              "text": "Ne ho ancora un paio, bastano quelli. Grazie mille.",
+              "isCorrect": true,
+              "feedback": "Polite and practical."
+            },
+            {
+              "text": "Vorrei un altro cuscino per il letto.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "C'è un treno per Firenze?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Benissimo! Allora buon pranzo e buon dolce! Torna a trovarci.",
+          "english": "Very well! Then enjoy your lunch and your dessert! Come visit us again.",
+          "choices": [
+            {
+              "text": "Grazie ancora, buona giornata e buon lavoro! A presto.",
+              "isCorrect": true,
+              "feedback": "Excellent farewell."
+            },
+            {
+              "text": "Dove posso ritirare i bagagli?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Vorrei parlare con il medico.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "piadina_selection",
+      "title": "Piadina Selection",
+      "description": "Choose your favorite ingredients for a fresh piadina romagnola.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Vuoi una piadina? La facciamo sul momento. Cosa ci mettiamo dentro?",
+          "english": "Hi! Do you want a piadina? We make it on the spot. What shall we put inside?",
+          "choices": [
+            {
+              "text": "Ciao! Vorrei una piadina con prosciutto crudo, squacquerone e rucola.",
+              "isCorrect": true,
+              "feedback": "Classic choice! You know your piadina ingredients."
+            },
+            {
+              "text": "Ciao! Vorrei una camera singola con bagno privato per stanotte.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is a piadina kiosk."
+            },
+            {
+              "text": "Ciao! Vorrei prenotare un tavolo per dieci persone alle otto.",
+              "isCorrect": false,
+              "feedback": "Street food is usually for walk-ins, not reservations!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottima scelta! La vuoi scaldata bene sulla piastra o preferisci mangiarla fredda?",
+          "english": "Great choice! Do you want it well heated on the griddle or prefer it cold?",
+          "choices": [
+            {
+              "text": "La vorrei ben scaldata e croccante, per favore. Mi piace calda.",
+              "isCorrect": true,
+              "feedback": "Correct. Most people prefer their piadina warm."
+            },
+            {
+              "text": "La vorrei fredda. Dove posso comprare un biglietto dell'autobus?",
+              "isCorrect": false,
+              "feedback": "Mixing food with transportation questions."
+            },
+            {
+              "text": "La vorrei croccante. Avete delle medicine per il mal di testa?",
+              "isCorrect": false,
+              "feedback": "Kiosks sell food, not medicine!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene, la metto subito sulla piastra. Vuoi aggiungere un po' di maionese?",
+          "english": "Alright, I'll put it on the griddle right away. Do you want to add some mayo?",
+          "choices": [
+            {
+              "text": "No, preferisco senza salse. Va bene così, con solo gli ingredienti.",
+              "isCorrect": true,
+              "feedback": "Clear preference. Squacquerone is creamy enough!"
+            },
+            {
+              "text": "Sì, grazie. Avete anche un menu per bambini con i giocattoli?",
+              "isCorrect": false,
+              "feedback": "This is a street food stall, not a fast food restaurant."
+            },
+            {
+              "text": "No, grazie. Qual è il binario per il treno diretto a Milano?",
+              "isCorrect": false,
+              "feedback": "Stay focused on your piadina!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Ecco la tua piadina calda. Attento che scotta un pochino. Sono sei euro.",
+          "english": "Perfect. Here is your hot piadina. Careful, it's a bit hot. That's six euros.",
+          "choices": [
+            {
+              "text": "Ecco i sei euro. Posso avere un sacchetto per portarla via?",
+              "isCorrect": true,
+              "feedback": "Good request. Practical for eating later or walking."
+            },
+            {
+              "text": "Ecco i sei euro. Posso avere la chiave della mia camera?",
+              "isCorrect": false,
+              "feedback": "Again with the hotel! You are on the street."
+            },
+            {
+              "text": "Ecco i sei euro. Posso avere un rimborso per il mio volo?",
+              "isCorrect": false,
+              "feedback": "Completely wrong context."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Certamente, ecco il sacchetto e lo scontrino. Buon appetito!",
+          "english": "Certainly, here is the bag and the receipt. Enjoy your meal!",
+          "choices": [
+            {
+              "text": "Grazie! Avete anche qualcosa da bere? Ho cambiato idea.",
+              "isCorrect": true,
+              "feedback": "Polite and friendly closing."
+            },
+            {
+              "text": "Grazie mille! Dove trovo l'ospedale più vicino da qui?",
+              "isCorrect": false,
+              "feedback": "A bit dramatic for a piadina shop."
+            },
+            {
+              "text": "Grazie mille! Posso lasciare qui le mie valigie?",
+              "isCorrect": false,
+              "feedback": "This is not a luggage storage service."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Certo, abbiamo acqua, birra e alcune bibite gassate. Cosa preferisci?",
+          "english": "Sure, we have water, beer and some fizzy drinks. What do you prefer?",
+          "choices": [
+            {
+              "text": "Prendo una birra piccola, per favore. È fresca?",
+              "isCorrect": true,
+              "feedback": "Great choice with a piadina!"
+            },
+            {
+              "text": "Vorrei un biglietto per il teatro centrale.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Vorrei comprare una medicina per lo stomaco.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, è fredda di frigorifero. Costa due euro e cinquanta.",
+          "english": "Yes, it's cold from the fridge. It costs two euros and fifty.",
+          "choices": [
+            {
+              "text": "Ecco tre euro. Tenga pure il resto.",
+              "isCorrect": true,
+              "feedback": "Generous and efficient."
+            },
+            {
+              "text": "Dove si trova l'aeroporto?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Vorrei una mappa della città.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Grazie mille! Ti serve un apribottiglie o la apro io?",
+          "english": "Thank you very much! Do you need a bottle opener or should I open it?",
+          "choices": [
+            {
+              "text": "La apra lei, per favore. Così la bevo subito.",
+              "isCorrect": true,
+              "feedback": "Practical. Eating and drinking on the spot."
+            },
+            {
+              "text": "Vorrei fare il check-out ora.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Mi scusi, ho perso il treno.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco fatto. Attento a non rovesciarla mentre cammini!",
+          "english": "Here you go. Careful not to spill it while walking!",
+          "choices": [
+            {
+              "text": "Starò attento, non si preoccupi. Grazie del consiglio.",
+              "isCorrect": true,
+              "feedback": "Good acknowledgment of the warning."
+            },
+            {
+              "text": "Il mio volo parte tra poco.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Dove posso cambiare i miei soldi?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto! Goditi la piadina e la birra. Alla prossima!",
+          "english": "Perfect! Enjoy the piadina and the beer. See you next time!",
+          "choices": [
+            {
+              "text": "Grazie ancora, gentilissimo! Buona serata.",
+              "isCorrect": true,
+              "feedback": "Nice and polite wrap-up."
+            },
+            {
+              "text": "Voglio denunciare un furto.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "A che ora chiude la banca?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "napkins_and_drinks",
+      "title": "Napkins & Drinks",
+      "description": "Handle the mess of street food and find a place for trash.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ti è piaciuto il panino? Vedo che hai finito tutto! Desideri altro?",
+          "english": "Did you like the sandwich? I see you finished everything! Do you want anything else?",
+          "choices": [
+            {
+              "text": "Era ottimo, grazie! Mi servirebbero dei tovaglioli puliti, per favore.",
+              "isCorrect": true,
+              "feedback": "Street food can be messy. Napkins are a must!"
+            },
+            {
+              "text": "Era ottimo, grazie! Vorrei fare il check-in per la mia stanza.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You just finished a sandwich on the street."
+            },
+            {
+              "text": "Era ottimo, grazie! A che ora parte il prossimo traghetto?",
+              "isCorrect": false,
+              "feedback": "Unless the stall is on a boat, this is wrong!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo, tieni pure. Hai bisogno anche di una bottiglietta d'acqua naturale?",
+          "english": "Sure, here you go. Do you also need a small bottle of still water?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Ho molta sete dopo il panino. Quanto costa l'acqua?",
+              "isCorrect": true,
+              "feedback": "Good. Water is a common follow-up to street food."
+            },
+            {
+              "text": "No, grazie. Dove posso trovare un medico per la mia febbre?",
+              "isCorrect": false,
+              "feedback": "Focus on the water, not medical issues!"
+            },
+            {
+              "text": "Sì, grazie. È possibile avere un cuscino extra nel letto?",
+              "isCorrect": false,
+              "feedback": "Still at the hotel?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "L'acqua costa un euro. Ecco a te. Vuoi che butti io la carta del panino?",
+          "english": "The water costs one euro. Here you go. Do you want me to throw away the sandwich paper?",
+          "choices": [
+            {
+              "text": "Sì, grazie mille. È molto gentile. Ecco l'euro per l'acqua.",
+              "isCorrect": true,
+              "feedback": "Polite exchange. Letting the host handle trash is common if offered."
+            },
+            {
+              "text": "No, la tengo io. Dove trovo il binario per il treno veloce?",
+              "isCorrect": false,
+              "feedback": "Don't bring your trash on the train!"
+            },
+            {
+              "text": "Sì, grazie. Potete chiamarmi un taxi per l'aeroporto?",
+              "isCorrect": false,
+              "feedback": "Wrong place for a taxi request."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Prego. Se preferisci, c'è un cestino per la differenziata proprio qui all'angolo.",
+          "english": "You're welcome. If you prefer, there is a recycling bin right here on the corner.",
+          "choices": [
+            {
+              "text": "Perfetto, lo vedo. Butterò lì la bottiglia di plastica dopo.",
+              "isCorrect": true,
+              "feedback": "Good awareness of waste disposal and recycling."
+            },
+            {
+              "text": "Perfetto, lo vedo. Posso avere il codice per il wifi?",
+              "isCorrect": false,
+              "feedback": "Street food stalls rarely have customer wifi."
+            },
+            {
+              "text": "Perfetto, lo vedo. A che ora servite la colazione?",
+              "isCorrect": false,
+              "feedback": "This is a sandwich stall, not a hotel."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottimo, ci teniamo alla pulizia della piazza. Buona continuazione!",
+          "english": "Great, we care about the cleanliness of the square. Have a good one!",
+          "choices": [
+            {
+              "text": "Grazie! C'è un bagno pubblico qui vicino per lavarmi le mani?",
+              "isCorrect": true,
+              "feedback": "Friendly goodbye and a final compliment to the chef."
+            },
+            {
+              "text": "Grazie ancora! Dove trovo la fermata del tram numero dodici?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Grazie ancora! Ho perso il mio passaporto, cosa faccio?",
+              "isCorrect": false,
+              "feedback": "This is an emergency for the police, not the sandwich guy!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, c'è un bar qui di fronte. Di solito fanno usare il bagno se prendi un caffè.",
+          "english": "Yes, there's a bar across the street. Usually they let you use the bathroom if you have a coffee.",
+          "choices": [
+            {
+              "text": "Buona idea, magari prendo un caffè veloce. Grazie per l'informazione.",
+              "isCorrect": true,
+              "feedback": "A very common unwritten rule in Italy!"
+            },
+            {
+              "text": "Voglio comprare un biglietto aereo.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Dove posso parcheggiare la macchina?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Figurati! Ti è piaciuta la salsa piccante nel panino?",
+          "english": "Don't mention it! Did you like the spicy sauce in the sandwich?",
+          "choices": [
+            {
+              "text": "Sì, molto buona! Dava un sapore speciale senza essere troppo forte.",
+              "isCorrect": true,
+              "feedback": "Great feedback on the food."
+            },
+            {
+              "text": "La mia stanza è molto fredda.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Vorrei noleggiare una macchina.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Mi fa piacere. La facciamo noi ogni mattina con peperoncini freschi.",
+          "english": "I'm glad. We make it every morning with fresh chili peppers.",
+          "choices": [
+            {
+              "text": "Complimenti, si sente che è un prodotto artigianale.",
+              "isCorrect": true,
+              "feedback": "Complimenting the artisan quality is highly appreciated."
+            },
+            {
+              "text": "Dov'è il binario del mio treno?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Quanto costa un mese di abbonamento in palestra?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie, ci mettiamo molta passione. Sei qui in vacanza?",
+          "english": "Thank you, we put a lot of passion into it. Are you here on vacation?",
+          "choices": [
+            {
+              "text": "Sì, sono qui per qualche giorno. È una bellissima città.",
+              "isCorrect": true,
+              "feedback": "Friendly small talk is common with street vendors."
+            },
+            {
+              "text": "Vorrei denunciare lo smarrimento della valigia.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Devo fare il biglietto per l'autobus.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Goditi la visita allora! Se hai di nuovo fame, sai dove trovarci.",
+          "english": "Enjoy your visit then! If you get hungry again, you know where to find us.",
+          "choices": [
+            {
+              "text": "Certamente! Grazie ancora e buon lavoro.",
+              "isCorrect": true,
+              "feedback": "Perfect goodbye."
+            },
+            {
+              "text": "Posso cambiare il cuscino della mia camera?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Dove trovo la polizia?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local_specialty",
+      "title": "Local Specialty",
+      "description": "Try a regional specialty like farinata or panissa from a local vendor.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Vuoi provare la nostra farinata calda? È la specialità della casa.",
+          "english": "Hi! Do you want to try our hot farinata? It's the house specialty.",
+          "choices": [
+            {
+              "text": "Ciao! Sì, volentieri. Non l'ho mai provata. È fatta con i ceci?",
+              "isCorrect": true,
+              "feedback": "Curiosity is great! Farinata is indeed made with chickpea flour."
+            },
+            {
+              "text": "Ciao! Vorrei prenotare una visita guidata per il Colosseo.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are at a food stand."
+            },
+            {
+              "text": "Ciao! Il mio bagaglio non è arrivato. Potete aiutarmi?",
+              "isCorrect": false,
+              "feedback": "This is not the airport lost and found!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Esatto! Farina di ceci, acqua, olio e sale. Ne vuoi una porzione abbondante?",
+          "english": "Exactly! Chickpea flour, water, oil, and salt. Do you want a generous portion?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Vorrei anche un po' di pepe nero sopra, se possibile.",
+              "isCorrect": true,
+              "feedback": "Classic seasoning for farinata. Good job!"
+            },
+            {
+              "text": "Sì, grazie. Posso avere un letto aggiunto nella mia stanza?",
+              "isCorrect": false,
+              "feedback": "Still at the hotel?"
+            },
+            {
+              "text": "Sì, grazie. A che ora chiude la farmacia stasera?",
+              "isCorrect": false,
+              "feedback": "Wrong context."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente, il pepe non manca mai. La mangi qui o camminando?",
+          "english": "Certainly, we never lack pepper. Are you eating it here or while walking?",
+          "choices": [
+            {
+              "text": "La mangio camminando verso la piazza. Mi dà una forchetta?",
+              "isCorrect": true,
+              "feedback": "Practical. Eating while walking is true street food style."
+            },
+            {
+              "text": "La mangio qui. Dov'è l'ufficio informazioni turistiche?",
+              "isCorrect": false,
+              "feedback": "Mixing tourism with your meal."
+            },
+            {
+              "text": "La mangio camminando. Dov'è il binario del mio treno?",
+              "isCorrect": false,
+              "feedback": "Focus on the farinata!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ecco a te la farinata con la forchetta. Sono quattro euro in tutto.",
+          "english": "Here is your farinata with the fork. That's four euros in total.",
+          "choices": [
+            {
+              "text": "Ecco i quattro euro. Grazie per il consiglio, sembra buonissima!",
+              "isCorrect": true,
+              "feedback": "Good transaction and polite compliment."
+            },
+            {
+              "text": "Ecco i quattro euro. Posso avere la ricevuta del mio hotel?",
+              "isCorrect": false,
+              "feedback": "Wrong place for an hotel receipt."
+            },
+            {
+              "text": "Ecco i quattro euro. Il volo è in ritardo di due ore?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Grazie a te! Se ti piace, torna a trovarci. Ne facciamo di fresche ogni ora.",
+          "english": "Thank you! If you like it, come back and visit us. We make fresh ones every hour.",
+          "choices": [
+            {
+              "text": "Scusi, che altri cibi locali mi consiglia di provare in città?",
+              "isCorrect": true,
+              "feedback": "Friendly closing. You've successfully tried a local specialty."
+            },
+            {
+              "text": "Sicuramente! Dove posso trovare un bancomat qui vicino?",
+              "isCorrect": false,
+              "feedback": "A bit abrupt, but the domain is okay. However, the first option is better."
+            },
+            {
+              "text": "Sicuramente! Posso avere un'aspirina per favore?",
+              "isCorrect": false,
+              "feedback": "Street food vendors don't sell medicine!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Dovresti assolutamente provare la focaccia al formaggio. È un'altra nostra specialità.",
+          "english": "You should absolutely try the cheese focaccia. It's another specialty of ours.",
+          "choices": [
+            {
+              "text": "Interessante! Ma si mangia calda o fredda?",
+              "isCorrect": true,
+              "feedback": "Good question about how to consume it."
+            },
+            {
+              "text": "Voglio comprare una giacca nuova.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Avete una camera matrimoniale disponibile?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Si mangia calda, appena uscita dal forno. Il formaggio deve essere fuso.",
+          "english": "You eat it hot, fresh out of the oven. The cheese must be melted.",
+          "choices": [
+            {
+              "text": "Sembra deliziosa. La proverò domani a pranzo.",
+              "isCorrect": true,
+              "feedback": "Sounds like a solid food plan."
+            },
+            {
+              "text": "Dove posso noleggiare una barca?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Ho mal di pancia.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottima idea. C'è un panificio molto buono nella via principale.",
+          "english": "Great idea. There's a very good bakery on the main street.",
+          "choices": [
+            {
+              "text": "Grazie per il consiglio. Come si chiama il panificio?",
+              "isCorrect": true,
+              "feedback": "Smart to ask for the name."
+            },
+            {
+              "text": "A che ora parte l'aereo per Roma?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Dove posso comprare una medicina?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Si chiama 'Il Fornaio'. Lo vedi subito, c'è sempre un po' di fila.",
+          "english": "It's called 'Il Fornaio'. You'll see it right away, there's always a bit of a line.",
+          "choices": [
+            {
+              "text": "Perfetto, me lo segno subito. Grazie mille per l'aiuto.",
+              "isCorrect": true,
+              "feedback": "You are ready for your next meal!"
+            },
+            {
+              "text": "Vorrei un ombrello per la pioggia.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "A che ora servite la colazione in hotel?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla! È un piacere aiutare i visitatori. Buona passeggiata e goditi la farinata!",
+          "english": "You're welcome! It's a pleasure helping visitors. Have a nice walk and enjoy the farinata!",
+          "choices": [
+            {
+              "text": "Lo farò sicuramente! Arrivederci e buona giornata!",
+              "isCorrect": true,
+              "feedback": "Great closing!"
+            },
+            {
+              "text": "Devo fare una denuncia alla polizia.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            },
+            {
+              "text": "Dov'è il check-in dell'aeroporto?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+}

@@ -1,0 +1,913 @@
+{
+  "scenarioId": 27,
+  "conversations": [
+    {
+      "id": "conv1",
+      "title": "Standard Reservation",
+      "description": "Book a table for two for tonight.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera, Ristorante Da Marco. Come posso aiutarla?",
+          "english": "Good evening, Marco's Restaurant. How can I help you?",
+          "choices": [
+            {
+              "text": "Buonasera, vorrei prenotare un tavolo per stasera.",
+              "english": "Good evening, I would like to book a table for tonight.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Buongiorno, vorrei un caffè per favore.",
+              "isCorrect": false
+            },
+            {
+              "text": "Salve, vorrei un menù per dieci persone.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Per quante persone serve il tavolo?",
+          "english": "Certainly. For how many people is the table?",
+          "choices": [
+            {
+              "text": "Per due persone, per favore.",
+              "english": "For two people, please.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Per due pizze, per favore.",
+              "isCorrect": false
+            },
+            {
+              "text": "Solo per un momento, grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene. E per che ora preferisce venire?",
+          "english": "Alright. And for what time do you prefer to come?",
+          "choices": [
+            {
+              "text": "Per le otto e mezza, se possibile.",
+              "english": "For eight-thirty, if possible.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Per il mese di maggio, forse.",
+              "isCorrect": false
+            },
+            {
+              "text": "Alle due di pomeriggio, grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Alle venti e trenta... controllo subito... Sì, abbiamo disponibilità.",
+          "english": "At eight-thirty... checking now... Yes, we have availability.",
+          "choices": [
+            {
+              "text": "Perfetto, grazie mille.",
+              "english": "Perfect, thank you very much.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Peccato, non importa.",
+              "isCorrect": false
+            },
+            {
+              "text": "Presto, andiamo via.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Preferisce un tavolo all'interno o preferisce stare fuori?",
+          "english": "Do you prefer a table inside or do you prefer to stay outside?",
+          "choices": [
+            {
+              "text": "Preferiamo un tavolo dentro, grazie.",
+              "english": "We prefer a table inside, thanks.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Preferisco un tavolo lontano.",
+              "isCorrect": false
+            },
+            {
+              "text": "Vogliamo stare a casa stasera.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo. Mi può dire il suo cognome?",
+          "english": "Agreed. Can you tell me your last name?",
+          "choices": [
+            {
+              "text": "Sì, il cognome è Bianchi.",
+              "english": "Yes, the last name is Bianchi.",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Sì, il mio nome è Marco.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sono di Roma, piacere.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "E un numero di telefono per la conferma?",
+          "english": "And a phone number for the confirmation?",
+          "choices": [
+            {
+              "text": "Il mio numero è 345 6789012.",
+              "english": "My number is 345 6789012.",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "L'indirizzo è via Roma 10.",
+              "isCorrect": false
+            },
+            {
+              "text": "Non ho un numero, mi scusi.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Grazie. Ripeto: stasera alle venti e trenta, per due persone, nome Bianchi. È corretto?",
+          "english": "Thank you. I repeat: tonight at eight-thirty, for two people, name Bianchi. Is that correct?",
+          "choices": [
+            {
+              "text": "Sì, esatto. Grazie mille.",
+              "english": "Yes, exactly. Thank you very much.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "No, preferisco domani sera.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vorrei cambiare tutto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Prego. Le serve altro o va bene così?",
+          "english": "You're welcome. Do you need anything else or is that fine?",
+          "choices": [
+            {
+              "text": "No, va bene così, grazie.",
+              "english": "No, that's fine, thanks.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Sì, vorrei un altro tavolo.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, non mi piace il posto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. La aspettiamo stasera. Buonasera.",
+          "english": "Perfect. We'll see you tonight. Good evening.",
+          "choices": [
+            {
+              "text": "Grazie, a dopo. Buonasera.",
+              "english": "Thanks, see you later. Good evening.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Prego, a domani mattina.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, arrivederci caro.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conv2",
+      "title": "Outside Table Request",
+      "description": "Book a table for lunch with a preference for outdoors.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto, Trattoria Bella Italia. Buongiorno.",
+          "english": "Hello, Bella Italia Trattoria. Good morning.",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei un tavolo per domani a pranzo.",
+              "english": "Good morning, I would like a table for tomorrow for lunch.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Ciao, vorrei una pizza per stasera.",
+              "isCorrect": false
+            },
+            {
+              "text": "Salve, vorrei un tavolo per questa sera.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Per quante persone?",
+          "english": "Sure. For how many people?",
+          "choices": [
+            {
+              "text": "Siamo in quattro persone.",
+              "english": "There are four of us.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Siamo in dieci persone.",
+              "isCorrect": false
+            },
+            {
+              "text": "Siamo in due persone.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "A che ora volete arrivare?",
+          "english": "At what time do you want to arrive?",
+          "choices": [
+            {
+              "text": "Alle tredici circa.",
+              "english": "Around one PM.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Alle tre di notte.",
+              "isCorrect": false
+            },
+            {
+              "text": "Alle tredici minuti.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Alle tredici... va bene. Avete richieste particolari?",
+          "english": "At one PM... okay. Do you have any special requests?",
+          "choices": [
+            {
+              "text": "Sì, vorremmo un tavolo all'aperto.",
+              "english": "Yes, we would like a table outdoors.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Sì, vogliamo un tavolo chiuso.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, non vogliamo mangiare fuori.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Abbiamo due opzioni: in terrazza o in giardino. Cosa preferisce?",
+          "english": "We have two options: on the terrace or in the garden. What do you prefer?",
+          "choices": [
+            {
+              "text": "In giardino sarebbe perfetto.",
+              "english": "In the garden would be perfect.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "In terrazza, per domani sera.",
+              "isCorrect": false
+            },
+            {
+              "text": "In strada sarebbe perfetto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Va bene, segno il tavolo per quattro. Il suo nome?",
+          "english": "Okay, I'll note down the table for four. Your name?",
+          "choices": [
+            {
+              "text": "Mi chiamo Anna Rossi.",
+              "english": "My name is Anna Rossi.",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Mi chiamo Anna Roma.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sono la signora Bianca.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Un recapito telefonico, signora Rossi?",
+          "english": "A telephone contact, Mrs. Rossi?",
+          "choices": [
+            {
+              "text": "Sì, il numero è 320 9876543.",
+              "english": "Yes, the number is 320 9876543.",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "No, non ho il numero ora.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, l'indirizzo è via Verde.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Quindi domani alle tredici, per quattro persone, fuori. Conferma?",
+          "english": "Great. So tomorrow at one PM, for four people, outside. Confirm?",
+          "choices": [
+            {
+              "text": "Sì, confermo tutto. Grazie.",
+              "english": "Yes, I confirm everything. Thanks.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "No, preferisco dentro.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, per domani sera.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie a lei. Le serve altro aiuto?",
+          "english": "Thank you. Do you need any other help?",
+          "choices": [
+            {
+              "text": "No, grazie. A domani allora.",
+              "english": "No, thanks. See you tomorrow then.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Sì, vorrei un caffè.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, grazie. Buonanotte.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "A domani. Buona giornata.",
+          "english": "See you tomorrow. Have a good day.",
+          "choices": [
+            {
+              "text": "Arrivederci, buona giornata.",
+              "english": "Goodbye, have a good day.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Prego, a stasera.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, arrivederci signore.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conv3",
+      "title": "Change of Plans/Time",
+      "description": "Modify an existing reservation due to traffic.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ristorante Il Gusto, buonasera.",
+          "english": "Il Gusto Restaurant, good evening.",
+          "choices": [
+            {
+              "text": "Buonasera, ho una prenotazione per stasera a nome Verdi.",
+              "english": "Good evening, I have a reservation for tonight under the name Verdi.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Ciao, voglio prenotare un tavolo nuovo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Salve, cerco il signor Verdi per cenare.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Un momento... Sì, per due persone alle venti?",
+          "english": "One moment... Yes, for two people at eight PM?",
+          "choices": [
+            {
+              "text": "Esatto. Vorrei cambiare l'orario, è possibile?",
+              "english": "Exactly. I would like to change the time, is it possible?",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "No, per tre persone alle nove.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vorrei cancellare tutto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certo. A che ora vorrebbe venire?",
+          "english": "Sure. At what time would you like to come?",
+          "choices": [
+            {
+              "text": "Vorremmo venire alle venti e quarantacinque.",
+              "english": "We would like to come at eight-forty-five.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Vorremmo venire alle due di notte.",
+              "isCorrect": false
+            },
+            {
+              "text": "Voglio venire domani mattina.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Alle venti e quarantacinque... un attimo... Sì, non c'è problema.",
+          "english": "At eight-forty-five... one moment... Yes, no problem.",
+          "choices": [
+            {
+              "text": "Mille grazie. Siamo in ritardo per il traffico.",
+              "english": "Many thanks. We are late because of traffic.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Grazie. Siamo già arrivati fuori.",
+              "isCorrect": false
+            },
+            {
+              "text": "No grazie. Siamo in anticipo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Non si preoccupi. Il tavolo rimane riservato per voi.",
+          "english": "Don't worry. The table remains reserved for you.",
+          "choices": [
+            {
+              "text": "Gentilissimo, grazie mille.",
+              "english": "Very kind, thank you very much.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Purtroppo, non importa.",
+              "isCorrect": false
+            },
+            {
+              "text": "Certo, arriviamo subito.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Preferite un tavolo vicino alla finestra o va bene ovunque?",
+          "english": "Do you prefer a table near the window or is anywhere fine?",
+          "choices": [
+            {
+              "text": "Vicino alla finestra, se è ancora libero.",
+              "english": "Near the window, if it's still free.",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Vicino alla porta, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Lontano dalla finestra, per favore.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, è libero. Ve lo riservo subito.",
+          "english": "Yes, it's free. I'll reserve it for you right away.",
+          "choices": [
+            {
+              "text": "Grazie, siete molto gentili.",
+              "english": "Thanks, you are very kind.",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Prego, non mi piace.",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene, andiamo via.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "È un piacere. Avete bisogno di un seggiolone?",
+          "english": "It's a pleasure. Do you need a high chair?",
+          "choices": [
+            {
+              "text": "No, grazie. Non ci sono bambini.",
+              "english": "No, thanks. There are no children.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Sì, ne servono quattro.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, non ho fame adesso.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "D'accordo. Vi aspettiamo tra poco allora.",
+          "english": "Agreed. We'll see you shortly then.",
+          "choices": [
+            {
+              "text": "A tra poco, grazie ancora.",
+              "english": "See you shortly, thanks again.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "A domani, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ciao, a presto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "A tra poco. Buonasera.",
+          "english": "See you shortly. Good evening.",
+          "choices": [
+            {
+              "text": "Buonasera, a dopo.",
+              "english": "Good evening, see you later.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Arrivederci a tutti.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buongiorno, a presto.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conv4",
+      "title": "Group Booking",
+      "description": "Book a large table for a birthday celebration with children.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pizzeria Da Gigio, salve!",
+          "english": "Gigio's Pizzeria, hi!",
+          "choices": [
+            {
+              "text": "Salve, vorrei prenotare per sabato sera.",
+              "english": "Hi, I would like to book for Saturday night.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Ciao, voglio una pizza margherita.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buongiorno, cerco un amico.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sabato sera... è una serata molto affollata. Per quante persone?",
+          "english": "Saturday night... it's a very busy night. For how many people?",
+          "choices": [
+            {
+              "text": "Siamo un gruppo di dieci persone.",
+              "english": "We are a group of ten people.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Siamo un gruppo di due persone.",
+              "isCorrect": false
+            },
+            {
+              "text": "Siamo solo io e Marco.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Dieci persone... è un tavolo grande. A che ora volete venire?",
+          "english": "Ten people... it's a large table. At what time do you want to come?",
+          "choices": [
+            {
+              "text": "Alle ventuno, va bene?",
+              "english": "At nine PM, is that okay?",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Alle dieci di mattina.",
+              "isCorrect": false
+            },
+            {
+              "text": "Alle ventuno minuti.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Alle ventuno... sì, abbiamo spazio nella sala grande.",
+          "english": "At nine PM... yes, we have space in the large room.",
+          "choices": [
+            {
+              "text": "Ottimo. Ci sono anche dei bambini piccoli.",
+              "english": "Great. There are also small children.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Peccato. Non ci sono bambini.",
+              "isCorrect": false
+            },
+            {
+              "text": "Bene. Siamo tutti adulti.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Nessun problema. Servono dei seggioloni per loro?",
+          "english": "No problem. Do you need high chairs for them?",
+          "choices": [
+            {
+              "text": "Sì, ne servono due per favore.",
+              "english": "Yes, we need two of them please.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "No, preferiscono stare fuori.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, ne servono dieci.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Va bene, due seggioloni. Festeggiate qualcosa di speciale?",
+          "english": "Okay, two high chairs. Are you celebrating something special?",
+          "choices": [
+            {
+              "text": "Sì, è il compleanno di un mio amico.",
+              "english": "Yes, it's a friend's birthday.",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "No, è un giorno triste.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, è il mio onomastico.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Auguri! Volete ordinare una torta speciale?",
+          "english": "Happy birthday! Do you want to order a special cake?",
+          "choices": [
+            {
+              "text": "No, grazie. Scegliamo tutto dal menu.",
+              "english": "No, thanks. We'll choose everything from the menu.",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Sì, vogliamo una pizza dolce.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, portiamo noi la torta.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "D'accordo. Mi lasci un nome e un numero di telefono?",
+          "english": "Agreed. Can you leave me a name and a phone number?",
+          "choices": [
+            {
+              "text": "Nome Marco, numero 392 1122334.",
+              "english": "Name Marco, number 392 1122334.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Nome Rossi, via Roma 5.",
+              "isCorrect": false
+            },
+            {
+              "text": "Non ho un telefono ora.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto Marco. Sabato alle ventuno per dieci, con due seggioloni. Va bene?",
+          "english": "Perfect Marco. Saturday at nine PM for ten, with two high chairs. Is that okay?",
+          "choices": [
+            {
+              "text": "Sì, va benissimo. Grazie mille.",
+              "english": "Yes, that's very good. Thank you very much.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "No, preferisco domenica.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, ma per venti persone.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "A presto allora! Vi aspettiamo sabato.",
+          "english": "See you soon then! We'll see you Saturday.",
+          "choices": [
+            {
+              "text": "A presto, grazie e arrivederci!",
+              "english": "See you soon, thanks and goodbye!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Ciao, a domani mattina.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, arrivederci caro.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,473 @@
+{
+  "scenarioId": 24,
+  "conversations": [
+    {
+      "id": "requesting_service",
+      "title": "Richiesta Servizio",
+      "description": "Ask the hotel staff how the laundry service works.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come posso aiutarla oggi?",
+          "english": "Good morning! How can I help you today?",
+          "choices": [
+            { "text": "Buongiorno, ho bisogno della lavanderia.", "isCorrect": true, "english": "Good morning, I need the laundry service." },
+            { "text": "Buongiorno, ho bisogno di un ristorante.", "isCorrect": false, "english": "Good morning, I need a restaurant." },
+            { "text": "Buongiorno, ho bisogno di un volo.", "isCorrect": false, "english": "Good morning, I need a flight." }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Abbiamo un servizio di lavanderia in hotel.",
+          "english": "Certainly. We have a laundry service in the hotel.",
+          "choices": [
+            { "text": "Come funziona il servizio?", "isCorrect": true, "english": "How does the service work?" },
+            { "text": "Dove sono i miei vestiti?", "isCorrect": false, "english": "Where are my clothes?" },
+            { "text": "Chi lava i piatti qui?", "isCorrect": false, "english": "Who washes the dishes here?" }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Deve mettere i vestiti nel sacchetto che trova nell'armadio.",
+          "english": "You must put the clothes in the bag that you find in the closet.",
+          "choices": [
+            { "text": "Capito. Dove trovo il sacchetto?", "isCorrect": true, "english": "I understand. Where do I find the bag?" },
+            { "text": "Va bene. Dove trovo il menu?", "isCorrect": false, "english": "Okay. Where do I find the menu?" },
+            { "text": "Sì. Dove trovo il binario?", "isCorrect": false, "english": "Yes. Where do I find the platform?" }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "È dentro l'armadio della sua camera, insieme al modulo da compilare.",
+          "english": "It's inside your room's closet, along with the form to fill out.",
+          "choices": [
+            { "text": "Devo compilare il modulo?", "isCorrect": true, "english": "Do I have to fill out the form?" },
+            { "text": "Devo pagare il biglietto?", "isCorrect": false, "english": "Do I have to pay for the ticket?" },
+            { "text": "Devo ordinare la cena?", "isCorrect": false, "english": "Do I have to order dinner?" }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, deve indicare il numero di pezzi e il tipo di lavaggio.",
+          "english": "Yes, you must indicate the number of pieces and the type of washing.",
+          "choices": [
+            { "text": "Va bene, lo faccio subito.", "isCorrect": true, "english": "Okay, I'll do it right away." },
+            { "text": "No, non voglio mangiare.", "isCorrect": false, "english": "No, I don't want to eat." },
+            { "text": "Sì, vado in stazione.", "isCorrect": false, "english": "Yes, I'm going to the station." }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Perfetto. Una volta pronto, chiami la reception.",
+          "english": "Perfect. Once it's ready, call the reception.",
+          "choices": [
+            { "text": "Devo lasciare il sacchetto in camera?", "isCorrect": true, "english": "Should I leave the bag in the room?" },
+            { "text": "Devo lasciare la valigia qui?", "isCorrect": false, "english": "Should I leave the suitcase here?" },
+            { "text": "Devo lasciare la mancia?", "isCorrect": false, "english": "Should I leave a tip?" }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, lo lasci pure sul letto. Passerà qualcuno a prenderlo.",
+          "english": "Yes, just leave it on the bed. Someone will come to pick it up.",
+          "choices": [
+            { "text": "Grazie mille per l'aiuto.", "isCorrect": true, "english": "Thank you very much for the help." },
+            { "text": "Prego, un caffè per favore.", "isCorrect": false, "english": "You're welcome, a coffee please." },
+            { "text": "Scusa, dov'è il bagno?", "isCorrect": false, "english": "Sorry, where is the bathroom?" }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Di nulla. Ha bisogno di altro?",
+          "english": "You're welcome. Do you need anything else?",
+          "choices": [
+            { "text": "No, grazie. Buona giornata.", "isCorrect": true, "english": "No, thanks. Have a good day." },
+            { "text": "Sì, un cornetto.", "isCorrect": false, "english": "Yes, a croissant." },
+            { "text": "No, il treno parte.", "isCorrect": false, "english": "No, the train is leaving." }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Anche a lei. A presto!",
+          "english": "To you too. See you soon!",
+          "choices": [
+            { "text": "Arrivederci.", "isCorrect": true, "english": "Goodbye." },
+            { "text": "Buon appetito.", "isCorrect": false, "english": "Enjoy your meal." },
+            { "text": "Buon viaggio.", "isCorrect": false, "english": "Have a good trip." }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci e buona permanenza.",
+          "english": "Goodbye and enjoy your stay.",
+          "choices": [
+            { "text": "Grazie ancora.", "isCorrect": true, "english": "Thanks again." },
+            { "text": "Non capisco.", "isCorrect": false, "english": "I don't understand." },
+            { "text": "Molto caro.", "isCorrect": false, "english": "Very expensive." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing_and_timing",
+      "title": "Prezzi e Tempi",
+      "description": "Ask about costs and when items will be ready.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Desidera informazioni sulla lavanderia?",
+          "english": "Hello! Would you like information about the laundry?",
+          "choices": [
+            { "text": "Sì, quanto costa il servizio?", "isCorrect": true, "english": "Yes, how much does the service cost?" },
+            { "text": "Sì, quanto costa il biglietto?", "isCorrect": false, "english": "Yes, how much does the ticket cost?" },
+            { "text": "No, cerco un taxi.", "isCorrect": false, "english": "No, I'm looking for a taxi." }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il prezzo dipende dal tipo di capo. Trova il listino sul modulo.",
+          "english": "The price depends on the type of item. You find the price list on the form.",
+          "choices": [
+            { "text": "Quanto costa lavare una camicia?", "isCorrect": true, "english": "How much does it cost to wash a shirt?" },
+            { "text": "Quanto costa un chilo di pane?", "isCorrect": false, "english": "How much does a kilo of bread cost?" },
+            { "text": "Quanto costa la colazione?", "isCorrect": false, "english": "How much does breakfast cost?" }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Lavare e stirare una camicia costa cinque euro.",
+          "english": "Washing and ironing a shirt costs five euros.",
+          "choices": [
+            { "text": "E per i pantaloni?", "isCorrect": true, "english": "And for pants?" },
+            { "text": "E per il deserto?", "isCorrect": false, "english": "And for the desert?" },
+            { "text": "E per l'autobus?", "isCorrect": false, "english": "And for the bus?" }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "I pantaloni costano sei euro al pezzo.",
+          "english": "Pants cost six euros per piece.",
+          "choices": [
+            { "text": "Quando saranno pronti i vestiti?", "isCorrect": true, "english": "When will the clothes be ready?" },
+            { "text": "Quando arriva il treno?", "isCorrect": false, "english": "When does the train arrive?" },
+            { "text": "Quando apre il museo?", "isCorrect": false, "english": "When does the museum open?" }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Normalmente in ventiquattro ore. Se li consegna ora, saranno pronti domani.",
+          "english": "Normally in twenty-four hours. If you hand them over now, they will be ready tomorrow.",
+          "choices": [
+            { "text": "A che ora domani?", "isCorrect": true, "english": "At what time tomorrow?" },
+            { "text": "A che ora è il volo?", "isCorrect": false, "english": "At what time is the flight?" },
+            { "text": "A che ora chiude il bar?", "isCorrect": false, "english": "At what time does the bar close?" }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Entro le sei del pomeriggio.",
+          "english": "By six in the afternoon.",
+          "choices": [
+            { "text": "C'è un servizio più veloce?", "isCorrect": true, "english": "Is there a faster service?" },
+            { "text": "C'è un tavolo libero?", "isCorrect": false, "english": "Is there a free table?" },
+            { "text": "C'è una farmacia vicina?", "isCorrect": false, "english": "Is there a pharmacy nearby?" }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, abbiamo il servizio espresso. Costa il cinquanta per cento in più.",
+          "english": "Yes, we have the express service. It costs fifty percent more.",
+          "choices": [
+            { "text": "In quanto tempo con il servizio espresso?", "isCorrect": true, "english": "How long with the express service?" },
+            { "text": "Quante persone per il servizio espresso?", "isCorrect": false, "english": "How many people for the express service?" },
+            { "text": "Dove si trova il servizio espresso?", "isCorrect": false, "english": "Where is the express service located?" }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Con il servizio espresso, i capi sono pronti in otto ore.",
+          "english": "With the express service, the items are ready in eight hours.",
+          "choices": [
+            { "text": "Va bene, preferisco il servizio standard.", "isCorrect": true, "english": "Okay, I prefer the standard service." },
+            { "text": "Va bene, preferisco il vino rosso.", "isCorrect": false, "english": "Okay, I prefer red wine." },
+            { "text": "Va bene, preferisco andare a piedi.", "isCorrect": false, "english": "Okay, I prefer to go on foot." }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "D'accordo. Metta tutto nel sacchetto, allora.",
+          "english": "Agreed. Put everything in the bag, then.",
+          "choices": [
+            { "text": "Grazie per le informazioni.", "isCorrect": true, "english": "Thanks for the information." },
+            { "text": "Grazie per il regalo.", "isCorrect": false, "english": "Thanks for the gift." },
+            { "text": "Grazie per la cena.", "isCorrect": false, "english": "Thanks for the dinner." }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego. Se ha bisogno, siamo qui.",
+          "english": "You're welcome. If you need anything, we are here.",
+          "choices": [
+            { "text": "Arrivederci.", "isCorrect": true, "english": "Goodbye." },
+            { "text": "Salute.", "isCorrect": false, "english": "Bless you / To your health." },
+            { "text": "Pronto.", "isCorrect": false, "english": "Hello (on the phone)." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "urgent_stain",
+      "title": "Macchia Urgente",
+      "description": "Report a stain that needs special care.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Qualcosa non va con i vestiti?",
+          "english": "Good morning. Is something wrong with the clothes?",
+          "choices": [
+            { "text": "Sì, ho una macchia sulla giacca.", "isCorrect": true, "english": "Yes, I have a stain on my jacket." },
+            { "text": "Sì, ho una macchia sulla pizza.", "isCorrect": false, "english": "Yes, I have a stain on my pizza." },
+            { "text": "No, i vestiti sono troppi.", "isCorrect": false, "english": "No, the clothes are too many." }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. Di che tipo di macchia si tratta?",
+          "english": "I understand. What type of stain is it?",
+          "choices": [
+            { "text": "È una macchia di vino rosso.", "isCorrect": true, "english": "It's a red wine stain." },
+            { "text": "È una macchia di pittura.", "isCorrect": false, "english": "It's a paint stain." },
+            { "text": "È una macchia di fango.", "isCorrect": false, "english": "It's a mud stain." }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Il vino rosso è difficile. È su un tessuto delicato?",
+          "english": "Red wine is difficult. Is it on a delicate fabric?",
+          "choices": [
+            { "text": "Sì, la giacca è di seta.", "isCorrect": true, "english": "Yes, the jacket is silk." },
+            { "text": "Sì, la giacca è di plastica.", "isCorrect": false, "english": "Yes, the jacket is plastic." },
+            { "text": "No, la giacca è di carta.", "isCorrect": false, "english": "No, the jacket is paper." }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Allora dobbiamo fare un lavaggio a secco professionale.",
+          "english": "Then we must do a professional dry cleaning.",
+          "choices": [
+            { "text": "Potete togliere la macchia?", "isCorrect": true, "english": "Can you remove the stain?" },
+            { "text": "Potete cambiare il colore?", "isCorrect": false, "english": "Can you change the color?" },
+            { "text": "Potete accorciare le maniche?", "isCorrect": false, "english": "Can you shorten the sleeves?" }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Faremo del nostro meglio. È una macchia fresca?",
+          "english": "We will do our best. Is it a fresh stain?",
+          "choices": [
+            { "text": "Sì, è successa mezz'ora fa.", "isCorrect": true, "english": "Yes, it happened half an hour ago." },
+            { "text": "No, è dell'anno scorso.", "isCorrect": false, "english": "No, it's from last year." },
+            { "text": "Forse, non ricordo.", "isCorrect": false, "english": "Maybe, I don't remember." }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Bene. Più è fresca, più è facile da pulire.",
+          "english": "Good. The fresher it is, the easier it is to clean.",
+          "choices": [
+            { "text": "Spero che torni come nuova.", "isCorrect": true, "english": "I hope it comes back like new." },
+            { "text": "Spero che sia saporita.", "isCorrect": false, "english": "I hope it's tasty." },
+            { "text": "Spero che il treno arrivi.", "isCorrect": false, "english": "I hope the train arrives." }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Lo spero anche io. Segni la macchia sul modulo, per favore.",
+          "english": "I hope so too. Mark the stain on the form, please.",
+          "choices": [
+            { "text": "Dove devo segnarlo?", "isCorrect": true, "english": "Where should I mark it?" },
+            { "text": "Perché devo pagarlo?", "isCorrect": false, "english": "Why should I pay for it?" },
+            { "text": "Quando devo portarlo?", "isCorrect": false, "english": "When should I bring it?" }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "C'è una sezione per le note speciali. Scriva pure lì.",
+          "english": "There is a section for special notes. Just write there.",
+          "choices": [
+            { "text": "Va bene, scrivo 'macchia di vino'.", "isCorrect": true, "english": "Okay, I'll write 'wine stain'." },
+            { "text": "Va bene, scrivo il mio nome.", "isCorrect": false, "english": "Okay, I'll write my name." },
+            { "text": "Va bene, scrivo l'indirizzo.", "isCorrect": false, "english": "Okay, I'll write the address." }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Porteremo la giacca subito in lavanderia.",
+          "english": "Perfect. We will take the jacket to the laundry right away.",
+          "choices": [
+            { "text": "Grazie, siete molto gentili.", "isCorrect": true, "english": "Thanks, you are very kind." },
+            { "text": "Grazie, siete molto lenti.", "isCorrect": false, "english": "Thanks, you are very slow." },
+            { "text": "Grazie, siete molto cari.", "isCorrect": false, "english": "Thanks, you are very expensive." }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "È il nostro lavoro. Buona giornata.",
+          "english": "It's our job. Have a good day.",
+          "choices": [
+            { "text": "Buona giornata anche a voi.", "isCorrect": true, "english": "Have a good day to you too." },
+            { "text": "Buon appetito.", "isCorrect": false, "english": "Enjoy your meal." },
+            { "text": "Buon viaggio.", "isCorrect": false, "english": "Have a good trip." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pickup_delivery",
+      "title": "Ritiro e Consegna",
+      "description": "Arrange for the clothes to be returned.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto, reception. Come posso aiutarla?",
+          "english": "Hello, reception. How can I help you?",
+          "choices": [
+            { "text": "Vorrei sapere se i miei vestiti sono pronti.", "isCorrect": true, "english": "I would like to know if my clothes are ready." },
+            { "text": "Vorrei sapere se la cena è pronta.", "isCorrect": false, "english": "I would like to know if dinner is ready." },
+            { "text": "Vorrei sapere se il taxi è pronto.", "isCorrect": false, "english": "I would like to know if the taxi is ready." }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dica il suo numero di camera, per favore.",
+          "english": "Tell me your room number, please.",
+          "choices": [
+            { "text": "Sono nella camera duecentodiciotto.", "isCorrect": true, "english": "I am in room two hundred eighteen." },
+            { "text": "Sono al binario tre.", "isCorrect": false, "english": "I am at platform three." },
+            { "text": "Sono al tavolo cinque.", "isCorrect": false, "english": "I am at table five." }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Un attimo... Sì, i suoi capi sono pronti.",
+          "english": "One moment... Yes, your items are ready.",
+          "choices": [
+            { "text": "Potete portarli in camera?", "isCorrect": true, "english": "Can you bring them to the room?" },
+            { "text": "Potete portarli in stazione?", "isCorrect": false, "english": "Can you bring them to the station?" },
+            { "text": "Potete portarli al ristorante?", "isCorrect": false, "english": "Can you bring them to the restaurant?" }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certamente. Preferisce che li lasciamo in camera o vuole aspettare?",
+          "english": "Certainly. Do you prefer that we leave them in the room or do you want to wait?",
+          "choices": [
+            { "text": "Potete lasciarli sul letto, grazie.", "isCorrect": true, "english": "You can leave them on the bed, thanks." },
+            { "text": "Potete lasciarli per strada, grazie.", "isCorrect": false, "english": "You can leave them on the street, thanks." },
+            { "text": "Potete lasciarli in bagno, grazie.", "isCorrect": false, "english": "You can leave them in the bathroom, thanks." }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene. Le camicie sono appese o piegate?",
+          "english": "Okay. Are the shirts hanging or folded?",
+          "choices": [
+            { "text": "Le preferisco appese, per favore.", "isCorrect": true, "english": "I prefer them hanging, please." },
+            { "text": "Le preferisco sporche, per favore.", "isCorrect": false, "english": "I prefer them dirty, please." },
+            { "text": "Le preferisco bagnate, per favore.", "isCorrect": false, "english": "I prefer them wet, please." }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Nessun problema. Saranno in camera tra dieci minuti.",
+          "english": "No problem. They will be in the room in ten minutes.",
+          "choices": [
+            { "text": "Quanto devo pagare in totale?", "isCorrect": true, "english": "How much do I have to pay in total?" },
+            { "text": "Quanto tempo dura il volo?", "isCorrect": false, "english": "How long does the flight last?" },
+            { "text": "Quante persone ci sono?", "isCorrect": false, "english": "How many people are there?" }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Il totale è di ventuno euro. Lo addebitiamo sul conto della camera?",
+          "english": "The total is twenty-one euros. Shall we charge it to the room bill?",
+          "choices": [
+            { "text": "Sì, va bene sul conto della camera.", "isCorrect": true, "english": "Yes, on the room bill is fine." },
+            { "text": "No, pago con i vestiti.", "isCorrect": false, "english": "No, I pay with the clothes." },
+            { "text": "Sì, pago al ristorante.", "isCorrect": false, "english": "Yes, I pay at the restaurant." }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Perfetto. Le porto anche la ricevuta.",
+          "english": "Perfect. I'll also bring you the receipt.",
+          "choices": [
+            { "text": "Grazie, la aspetto.", "isCorrect": true, "english": "Thanks, I'll wait for it." },
+            { "text": "Grazie, non mi serve.", "isCorrect": false, "english": "Thanks, I don't need it." },
+            { "text": "Grazie, la butto via.", "isCorrect": false, "english": "Thanks, I'll throw it away." }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Arriviamo subito. Altro?",
+          "english": "We're coming right away. Anything else?",
+          "choices": [
+            { "text": "No, è tutto. Grazie.", "isCorrect": true, "english": "No, that's all. Thanks." },
+            { "text": "Sì, voglio un'altra camera.", "isCorrect": false, "english": "Yes, I want another room." },
+            { "text": "No, vado via.", "isCorrect": false, "english": "No, I'm going away." }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie a lei. A tra poco.",
+          "english": "Thanks to you. See you in a bit.",
+          "choices": [
+            { "text": "A dopo.", "isCorrect": true, "english": "See you later." },
+            { "text": "A mai più.", "isCorrect": false, "english": "See you never again." },
+            { "text": "Salute.", "isCorrect": false, "english": "Bless you." }
+          ]
+        }
+      ]
+    }
+  ]
+}

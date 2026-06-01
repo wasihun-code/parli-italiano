@@ -1,0 +1,953 @@
+{
+  "scenarioId": 36,
+  "conversations": [
+    {
+      "id": "focaccia_selection",
+      "title": "Focaccia Selection",
+      "description": "Choose between different types of fresh focaccia.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Desidera della focaccia fresca? Ne abbiamo appena sfornata una alle olive.",
+          "english": "Good morning! Would you like some fresh focaccia? We just took one with olives out of the oven.",
+          "choices": [
+            {
+              "text": "Sì, grazie! Vorrei un pezzo di focaccia alle olive.",
+              "english": "Yes, thanks! I would like a piece of olive focaccia.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, grazie. Vorrei un chilo di pane integrale.",
+              "english": "No, thanks. I would like a kilo of whole wheat bread.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buongiorno, avete del latte fresco oggi?",
+              "english": "Good morning, do you have fresh milk today?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Quanto ne vuole? Un pezzo grande o piccolo?",
+          "english": "Certainly. How much do you want? A large piece or a small one?",
+          "choices": [
+            {
+              "text": "Un pezzo medio, per favore. Non troppo grande.",
+              "english": "A medium piece, please. Not too large.",
+              "isCorrect": true
+            },
+            {
+              "text": "Vorrei due chili di focaccia, grazie.",
+              "english": "I would like two kilos of focaccia, thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "Solo una fetta sottile, per favore.",
+              "english": "Just a thin slice, please.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene così? O ne vuole ancora un po'?",
+          "english": "Is this enough? Or do you want a bit more?",
+          "choices": [
+            {
+              "text": "Così va bene, grazie. È perfetta.",
+              "english": "This is fine, thanks. It's perfect.",
+              "isCorrect": true
+            },
+            {
+              "text": "Ne aggiunga ancora un pezzetto, grazie.",
+              "english": "Add another small piece, thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, è troppa. Ne tolga un po'.",
+              "english": "No, it's too much. Take some away.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. Abbiamo anche focaccia al rosmarino. Le interessa?",
+          "english": "Excellent. We also have rosemary focaccia. Are you interested?",
+          "choices": [
+            {
+              "text": "Sì, prendo anche un pezzetto di quella al rosmarino.",
+              "english": "Yes, I'll also take a small piece of the rosemary one.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, preferisco la pizza margherita.",
+              "english": "No, I prefer margherita pizza.",
+              "isCorrect": false
+            },
+            {
+              "text": "Quanto costa un chilo di farina?",
+              "english": "How much does a kilo of flour cost?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo. La focaccia al rosmarino è molto croccante oggi.",
+          "english": "Agreed. The rosemary focaccia is very crunchy today.",
+          "choices": [
+            {
+              "text": "Sì, sembra buonissima. Grazie mille.",
+              "english": "Yes, it looks delicious. Thank you very much.",
+              "isCorrect": true
+            },
+            {
+              "text": "È troppo dura per me, preferisco il pane.",
+              "english": "It's too hard for me, I prefer bread.",
+              "isCorrect": false
+            },
+            {
+              "text": "Non mi piace il rosmarino, grazie.",
+              "english": "I don't like rosemary, thanks.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Vuole che la tagli a metà o la lasci intera?",
+          "english": "Do you want me to cut it in half or leave it whole?",
+          "choices": [
+            {
+              "text": "La tagli a metà, per favore. È più comodo.",
+              "english": "Cut it in half, please. It's more convenient.",
+              "isCorrect": true
+            },
+            {
+              "text": "La lasci pure intera, la taglio a casa.",
+              "english": "Leave it whole, I'll cut it at home.",
+              "isCorrect": false
+            },
+            {
+              "text": "La incarti bene, per favore.",
+              "english": "Wrap it well, please.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente. Desidera altro? Abbiamo dei grissini fatti a mano.",
+          "english": "Certainly. Anything else? We have handmade breadsticks.",
+          "choices": [
+            {
+              "text": "No, per ora basta così. Grazie mille.",
+              "english": "No, that's enough for now. Thank you very much.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, prendo anche un sacchetto di grissini.",
+              "english": "Yes, I'll also take a bag of breadsticks.",
+              "isCorrect": false
+            },
+            {
+              "text": "Avete dei dolci tipici della zona?",
+              "english": "Do you have any typical local sweets?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Allora sono due pezzi di focaccia. In tutto sono cinque euro.",
+          "english": "Fine. So that's two pieces of focaccia. In total it's five euros.",
+          "choices": [
+            {
+              "text": "Ecco a lei cinque euro. Grazie.",
+              "english": "Here are five euros for you. Thanks.",
+              "isCorrect": true
+            },
+            {
+              "text": "Posso pagare con la carta di credito?",
+              "english": "Can I pay with a credit card?",
+              "isCorrect": false
+            },
+            {
+              "text": "È un po' caro, non crede?",
+              "english": "It's a bit expensive, don't you think?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie a lei. Ecco il resto e lo scontrino.",
+          "english": "Thank you. Here is the change and the receipt.",
+          "choices": [
+            {
+              "text": "Grazie. Buona giornata e buon lavoro!",
+              "english": "Thanks. Have a good day and good work!",
+              "isCorrect": true
+            },
+            {
+              "text": "Arrivederci, alla prossima volta.",
+              "english": "Goodbye, until next time.",
+              "isCorrect": false
+            },
+            {
+              "text": "Mi serve un sacchetto di plastica.",
+              "english": "I need a plastic bag.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie, altrettanto! Arrivederci.",
+          "english": "Thanks, same to you! Goodbye.",
+          "choices": [
+            {
+              "text": "Arrivederci!",
+              "english": "Goodbye!",
+              "isCorrect": true
+            },
+            {
+              "text": "Buona serata!",
+              "english": "Have a good evening!",
+              "isCorrect": false
+            },
+            {
+              "text": "A presto!",
+              "english": "See you soon!",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweet_pastries",
+      "title": "Sweet Pastries",
+      "description": "Order cornetti and other sweets for a traditional Italian breakfast.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cosa le porto di dolce stamattina?",
+          "english": "Good morning! What sweet thing can I get you this morning?",
+          "choices": [
+            {
+              "text": "Buongiorno! Vorrei due cornetti, per favore.",
+              "english": "Good morning! I would like two croissants, please.",
+              "isCorrect": true
+            },
+            {
+              "text": "Vorrei del pane fresco, grazie.",
+              "english": "I would like some fresh bread, thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "Avete della focaccia salata?",
+              "english": "Do you have some salty focaccia?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Come li vuole? Semplici, alla crema o al cioccolato?",
+          "english": "Sure. How do you want them? Plain, with cream or with chocolate?",
+          "choices": [
+            {
+              "text": "Uno alla crema e uno al cioccolato, grazie.",
+              "english": "One with cream and one with chocolate, thanks.",
+              "isCorrect": true
+            },
+            {
+              "text": "Tutti e due semplici, per favore.",
+              "english": "Both plain, please.",
+              "isCorrect": false
+            },
+            {
+              "text": "Avete anche quelli alla marmellata?",
+              "english": "Do you also have jam ones?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottima scelta. Abbiamo anche delle sfogliatelle appena fatte. Le piacciono?",
+          "english": "Excellent choice. We also have freshly made sfogliatelle. Do you like them?",
+          "choices": [
+            {
+              "text": "Sì, ne prendo anche una, grazie. Sembrano deliziose.",
+              "english": "Yes, I'll take one of those too, thanks. They look delicious.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, i cornetti sono sufficienti, grazie.",
+              "english": "No, the croissants are enough, thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "Cosa c'è dentro le sfogliatelle?",
+              "english": "What's inside the sfogliatelle?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sono ripiene di ricotta e canditi. Vuole che le metta in un vassoio?",
+          "english": "They are filled with ricotta and candied fruit. Do you want me to put them on a tray?",
+          "choices": [
+            {
+              "text": "Sì, un vassoio piccolo va bene. Grazie.",
+              "english": "Yes, a small tray is fine. Thanks.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, in un sacchetto di carta va bene lo stesso.",
+              "english": "No, in a paper bag is fine as well.",
+              "isCorrect": false
+            },
+            {
+              "text": "Le mangio qui subito, non serve incartare.",
+              "english": "I'll eat them here right now, no need to wrap.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo. Vuole anche dello zucchero a velo sopra?",
+          "english": "Agreed. Do you also want some powdered sugar on top?",
+          "choices": [
+            {
+              "text": "Sì, un po' di zucchero a velo, grazie.",
+              "english": "Yes, a bit of powdered sugar, please.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, preferisco senza zucchero, grazie.",
+              "english": "No, I prefer without sugar, thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "Solo sulla sfogliatella, per favore.",
+              "english": "Only on the sfogliatella, please.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco qui. Desidera altro per colazione? Magari dei biscotti?",
+          "english": "Here you go. Anything else for breakfast? Maybe some cookies?",
+          "choices": [
+            {
+              "text": "Prendo anche duecento grammi di questi biscotti al burro.",
+              "english": "I'll also take two hundred grams of these butter cookies.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, grazie. Sono a posto così.",
+              "english": "No, thanks. I'm fine like this.",
+              "isCorrect": false
+            },
+            {
+              "text": "Quanto costano i biscotti al chilo?",
+              "english": "How much do the cookies cost per kilo?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente. Questi biscotti sono la nostra specialità.",
+          "english": "Certainly. These cookies are our specialty.",
+          "choices": [
+            {
+              "text": "Perfetto, allora li provo volentieri.",
+              "english": "Perfect, then I'll gladly try them.",
+              "isCorrect": true
+            },
+            {
+              "text": "Speriamo siano buoni, hanno un bel profumo.",
+              "english": "Hopefully they are good, they smell nice.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sono troppo dolci per i miei gusti.",
+              "english": "They are too sweet for my taste.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Allora sono due cornetti, una sfogliatella e i biscotti.",
+          "english": "Fine. So it's two croissants, one sfogliatella and the cookies.",
+          "choices": [
+            {
+              "text": "Quanto le devo in tutto?",
+              "english": "How much do I owe you in total?",
+              "isCorrect": true
+            },
+            {
+              "text": "Posso pagare con il bancomat?",
+              "english": "Can I pay with the debit card?",
+              "isCorrect": false
+            },
+            {
+              "text": "Mi fa un po' di sconto?",
+              "english": "Can you give me a bit of a discount?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sono otto euro e cinquanta, per favore.",
+          "english": "That's eight euros and fifty, please.",
+          "choices": [
+            {
+              "text": "Ecco a lei dieci euro. Tenga pure il resto.",
+              "english": "Here are ten euros. Keep the change.",
+              "isCorrect": true
+            },
+            {
+              "text": "Ecco dieci euro. Mi dà il resto, per favore?",
+              "english": "Here are ten euros. Can you give me the change, please?",
+              "isCorrect": false
+            },
+            {
+              "text": "Accettate pagamenti contactless?",
+              "english": "Do you accept contactless payments?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Molto gentile, grazie! Buona colazione.",
+          "english": "Very kind, thanks! Have a good breakfast.",
+          "choices": [
+            {
+              "text": "Grazie mille, buona giornata!",
+              "english": "Thanks a lot, have a good day!",
+              "isCorrect": true
+            },
+            {
+              "text": "Arrivederci, alla prossima!",
+              "english": "Goodbye, until next time!",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, anche a lei.",
+              "english": "Thanks, you too.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dinner_bread",
+      "title": "Dinner Bread",
+      "description": "Buy different types of bread for a family dinner.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera! Che tipo di pane desidera oggi?",
+          "english": "Good evening! What kind of bread would you like today?",
+          "choices": [
+            {
+              "text": "Buonasera. Vorrei del pane per la cena, cosa mi consiglia?",
+              "english": "Good evening. I would like some bread for dinner, what do you recommend?",
+              "isCorrect": true
+            },
+            {
+              "text": "Vorrei due cornetti alla crema, grazie.",
+              "english": "I would like two cream croissants, thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "Quanto costa la focaccia alle olive?",
+              "english": "How much does the olive focaccia cost?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Abbiamo delle pagnotte di pane bianco o integrale. Sono appena sfornate.",
+          "english": "We have loaves of white or whole wheat bread. They are freshly baked.",
+          "choices": [
+            {
+              "text": "Prendo una pagnotta di pane integrale, grazie.",
+              "english": "I'll take a loaf of whole wheat bread, thanks.",
+              "isCorrect": true
+            },
+            {
+              "text": "Prendo due chili di pane bianco, per favore.",
+              "english": "I'll take two kilos of white bread, please.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il pane integrale è molto pesante?",
+              "english": "Is the whole wheat bread very heavy?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottima scelta. La vuole intera o la devo affettare?",
+          "english": "Excellent choice. Do you want it whole or should I slice it?",
+          "choices": [
+            {
+              "text": "La può affettare, per favore? Così è pronta per la tavola.",
+              "english": "Can you slice it, please? That way it's ready for the table.",
+              "isCorrect": true
+            },
+            {
+              "text": "La lasci pure intera, grazie.",
+              "english": "Leave it whole, thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "La tagli solo a metà, per favore.",
+              "english": "Only cut it in half, please.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certamente. Abbiamo anche dei panini all'olio. Ne vuole qualcuno?",
+          "english": "Certainly. We also have oil rolls. Do you want some?",
+          "choices": [
+            {
+              "text": "Sì, ne prendo quattro, per favore. Sono per i bambini.",
+              "english": "Yes, I'll take four, please. They are for the children.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, il pane integrale basta, grazie.",
+              "english": "No, the whole wheat bread is enough, thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "Quanto pesano questi panini?",
+              "english": "How much do these rolls weigh?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene, quattro panini all'olio. Sono molto morbidi.",
+          "english": "Fine, four oil rolls. They are very soft.",
+          "choices": [
+            {
+              "text": "Sì, sembrano perfetti. Li metta pure insieme al pane.",
+              "english": "Yes, they look perfect. Go ahead and put them with the bread.",
+              "isCorrect": true
+            },
+            {
+              "text": "Speriamo che piacciano ai bambini.",
+              "english": "Hopefully the children will like them.",
+              "isCorrect": false
+            },
+            {
+              "text": "Non li metta nello stesso sacchetto, per favore.",
+              "english": "Don't put them in the same bag, please.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo. Desidera altro? Magari un po' di schiacciata salata?",
+          "english": "Agreed. Anything else? Maybe some salty schiacciata?",
+          "choices": [
+            {
+              "text": "No, grazie. Per stasera siamo a posto così.",
+              "english": "No, thanks. We're fine for tonight.",
+              "isCorrect": true
+            },
+            {
+              "text": "Cos'è la schiacciata? È come la focaccia?",
+              "english": "What is schiacciata? Is it like focaccia?",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, ne prendo un pezzettino piccolo.",
+              "english": "Yes, I'll take a very small piece.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Va bene. Le serve una busta per portare via tutto?",
+          "english": "Fine. Do you need a bag to take everything away?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Una busta di carta va benissimo.",
+              "english": "Yes, thanks. A paper bag is perfectly fine.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, ho la mia borsa di stoffa. Grazie.",
+              "english": "No, I have my cloth bag. Thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "La busta è gratuita o si paga?",
+              "english": "Is the bag free or do I have to pay?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente, ecco a lei. Sono sei euro in tutto.",
+          "english": "Certainly, here you go. It's six euros in total.",
+          "choices": [
+            {
+              "text": "Ecco a lei. Posso avere lo scontrino, per favore?",
+              "english": "Here you go. Can I have the receipt, please?",
+              "isCorrect": true
+            },
+            {
+              "text": "Accettate pagamenti con il telefono?",
+              "english": "Do you accept phone payments?",
+              "isCorrect": false
+            },
+            {
+              "text": "Tenga pure il resto, grazie.",
+              "english": "Keep the change, thanks.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco lo scontrino. Grazie mille e buona cena!",
+          "english": "Here is the receipt. Thank you very much and have a good dinner!",
+          "choices": [
+            {
+              "text": "Grazie mille, anche a lei. Arrivederci.",
+              "english": "Thanks a lot, you too. Goodbye.",
+              "isCorrect": true
+            },
+            {
+              "text": "Arrivederci, alla prossima settimana.",
+              "english": "Goodbye, until next week.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buonasera e grazie di tutto.",
+              "english": "Good evening and thanks for everything.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buonasera! A presto.",
+          "english": "Good evening! See you soon.",
+          "choices": [
+            {
+              "text": "Buonasera!",
+              "english": "Good evening!",
+              "isCorrect": true
+            },
+            {
+              "text": "Arrivederci!",
+              "english": "Goodbye!",
+              "isCorrect": false
+            },
+            {
+              "text": "A domani!",
+              "english": "See you tomorrow!",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "service_requests",
+      "title": "Service Requests",
+      "description": "Ask for specific amounts and prices of bakery items.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come posso aiutarla oggi?",
+          "english": "Good morning! How can I help you today?",
+          "choices": [
+            {
+              "text": "Buongiorno. Vorrei sapere quanto costa il pane al chilo.",
+              "english": "Good morning. I would like to know how much the bread costs per kilo.",
+              "isCorrect": true
+            },
+            {
+              "text": "Buongiorno. Vorrei un pezzo di focaccia, grazie.",
+              "english": "Good morning. I would like a piece of focaccia, thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "Avete del pane integrale oggi?",
+              "english": "Do you have any whole wheat bread today?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il pane bianco costa tre euro al chilo, quello integrale quattro euro.",
+          "english": "White bread costs three euros per kilo, whole wheat costs four euros.",
+          "choices": [
+            {
+              "text": "Va bene. Allora ne prendo mezzo chilo di quello bianco.",
+              "english": "Fine. Then I'll take half a kilo of the white one.",
+              "isCorrect": true
+            },
+            {
+              "text": "È un prezzo onesto. Ne prendo due chili.",
+              "english": "It's a fair price. I'll take two kilos.",
+              "isCorrect": false
+            },
+            {
+              "text": "Perché quello integrale costa di più?",
+              "english": "Why does the whole wheat one cost more?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente. Vuole una pagnotta intera o dei panini?",
+          "english": "Certainly. Do you want a whole loaf or some rolls?",
+          "choices": [
+            {
+              "text": "Prendo cinque panini, per favore. Dovrebbero pesare circa mezzo chilo.",
+              "english": "I'll take five rolls, please. They should weigh about half a kilo.",
+              "isCorrect": true
+            },
+            {
+              "text": "Una pagnotta intera va benissimo, grazie.",
+              "english": "A whole loaf is perfectly fine, thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "Quanti panini ci sono in mezzo chilo?",
+              "english": "How many rolls are in half a kilo?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto, sono circa cinquecento grammi. Desidera altro?",
+          "english": "Exactly, it's about five hundred grams. Anything else?",
+          "choices": [
+            {
+              "text": "Sì, vorrei anche tre etti di focaccia semplice.",
+              "english": "Yes, I would also like three hundred grams of plain focaccia.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, grazie. Solo il pane per oggi.",
+              "english": "No, thanks. Just the bread for today.",
+              "isCorrect": false
+            },
+            {
+              "text": "Quanto costa un etto di focaccia?",
+              "english": "How much does one hundred grams of focaccia cost?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene, tre etti di focaccia. Vuole che la riscaldi un po'?",
+          "english": "Fine, three hundred grams of focaccia. Do you want me to warm it up a bit?",
+          "choices": [
+            {
+              "text": "No, grazie. La mangio a casa più tardi.",
+              "english": "No, thanks. I'll eat it at home later.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, grazie! Sarebbe perfetto, ho molta fame.",
+              "english": "Yes, please! That would be perfect, I'm very hungry.",
+              "isCorrect": false
+            },
+            {
+              "text": "Quanto tempo ci vuole per riscaldarla?",
+              "english": "How long does it take to warm it up?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo. Abbiamo anche della schiacciata integrale. Le interessa per la prossima volta?",
+          "english": "Agreed. We also have whole wheat schiacciata. Are you interested for next time?",
+          "choices": [
+            {
+              "text": "Sì, sembra interessante. La proverò sicuramente.",
+              "english": "Yes, it looks interesting. I'll definitely try it.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non mi piace l'integrale, grazie.",
+              "english": "No, I don't like whole wheat, thanks.",
+              "isCorrect": false
+            },
+            {
+              "text": "È più buona di quella bianca?",
+              "english": "Is it better than the white one?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È molto saporita e salutare. Ecco il suo pane e la focaccia.",
+          "english": "It's very flavorful and healthy. Here is your bread and focaccia.",
+          "choices": [
+            {
+              "text": "Grazie. Può metterli in due sacchetti separati, per favore?",
+              "english": "Thanks. Can you put them in two separate bags, please?",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie. Metta pure tutto insieme, non c'è problema.",
+              "english": "Thanks. Go ahead and put everything together, no problem.",
+              "isCorrect": false
+            },
+            {
+              "text": "Mi serve una borsa più grande, per favore.",
+              "english": "I need a bigger bag, please.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente, ecco fatto. Sono quattro euro e cinquanta in totale.",
+          "english": "Certainly, there you go. It's four euros and fifty in total.",
+          "choices": [
+            {
+              "text": "Ecco a lei cinque euro. Può tenere il resto.",
+              "english": "Here are five euros. You can keep the change.",
+              "isCorrect": true
+            },
+            {
+              "text": "Posso pagare con il bancomat, per favore?",
+              "english": "Can I pay with the debit card, please?",
+              "isCorrect": false
+            },
+            {
+              "text": "Accettate pagamenti con carta per importi così piccoli?",
+              "english": "Do you accept card payments for such small amounts?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie mille, gentilissimo! Ecco lo scontrino.",
+          "english": "Thank you very much, very kind! Here is the receipt.",
+          "choices": [
+            {
+              "text": "Grazie a lei. Buona giornata e arrivederci.",
+              "english": "Thank you. Have a good day and goodbye.",
+              "isCorrect": true
+            },
+            {
+              "text": "Arrivederci, alla prossima settimana allora.",
+              "english": "Goodbye, until next week then.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, buona giornata!",
+              "english": "Thanks, have a good day!",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci! La aspettiamo presto.",
+          "english": "Goodbye! We look forward to seeing you soon.",
+          "choices": [
+            {
+              "text": "Arrivederci!",
+              "english": "Goodbye!",
+              "isCorrect": true
+            },
+            {
+              "text": "A presto!",
+              "english": "See you soon!",
+              "isCorrect": false
+            },
+            {
+              "text": "Buona serata!",
+              "english": "Have a good evening!",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

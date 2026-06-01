@@ -27,9 +27,18 @@ def main(scenario_slug):
         # Determine if it's conversation or curriculum
         items = data if isinstance(data, list) else data.get("conversations", [])
         
-        def mock_path(path):
+        def mock_path(path_val):
             nonlocal count
+            if not path_val: return
+            
+            # Handle both string and dict formats
+            if isinstance(path_val, dict):
+                path = path_val.get("italian")
+            else:
+                path = path_val
+                
             if not path: return
+            
             full_path = os.path.join("public", path.lstrip("/"))
             if not os.path.exists(full_path):
                 with open(full_path, "w") as f:
@@ -38,11 +47,11 @@ def main(scenario_slug):
 
         if isinstance(data, list):
             for item in items:
-                mock_path(item.get("audio", {}).get("italian"))
+                mock_path(item.get("audio"))
         else:
             for conv in items:
                 for msg in conv.get("messages", []):
-                    mock_path(msg.get("audio", {}).get("italian"))
+                    mock_path(msg.get("audio"))
                     mock_path(msg.get("audioPath"))
                     for choice in msg.get("choices", []):
                         mock_path(choice.get("audioPath"))

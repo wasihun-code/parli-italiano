@@ -1,0 +1,883 @@
+{
+  "scenarioId": "accommodation_hotel_check_out",
+  "conversations": [
+    {
+      "id": "smooth_check_out",
+      "title": "Smooth Check-Out",
+      "description": "Settle the bill and return the key normally.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Desidera fare il check-out?",
+          "english": "Good morning. Would you like to check out?",
+          "choices": [
+            {
+              "text": "Sì, vorrei lasciare la camera numero 204.",
+              "isCorrect": true,
+              "english": "Yes, I'd like to check out of room 204."
+            },
+            {
+              "text": "Sì, vorrei prenotare una camera singola.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, dove posso trovare l'ascensore?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Il soggiorno è stato piacevole?",
+          "english": "Certainly. Was your stay pleasant?",
+          "choices": [
+            {
+              "text": "Sì, tutto ottimo, grazie.",
+              "isCorrect": true,
+              "english": "Yes, everything was excellent, thank you."
+            },
+            {
+              "text": "Sì, la camera è al secondo piano.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vorrei la colazione in camera.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Mi fa piacere. Ecco il conto totale, inclusa la tassa di soggiorno.",
+          "english": "I'm glad. Here is the total bill, including the city tax.",
+          "choices": [
+            {
+              "text": "Va bene. Posso pagare con la carta di credito?",
+              "isCorrect": true,
+              "english": "All right. Can I pay with a credit card?"
+            },
+            {
+              "text": "Va bene. Dov'è la fermata dell'autobus?",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene. A che ora è la colazione?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, certo. Inserisca pure la carta nel POS.",
+          "english": "Yes, of course. Please insert your card into the POS.",
+          "choices": [
+            {
+              "text": "Ecco fatto. Serve anche la firma?",
+              "isCorrect": true,
+              "english": "There we go. Is a signature also required?"
+            },
+            {
+              "text": "Ecco fatto. Dov'è il deposito bagagli?",
+              "isCorrect": false
+            },
+            {
+              "text": "Ecco fatto. Posso avere un'altra chiave?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "No, basta il PIN. Ecco la ricevuta e il suo scontrino.",
+          "english": "No, the PIN is enough. Here is the receipt and your bill.",
+          "choices": [
+            {
+              "text": "Grazie. Posso lasciare qui la chiave?",
+              "isCorrect": true,
+              "english": "Thank you. Can I leave the key here?"
+            },
+            {
+              "text": "Grazie. Posso avere una mappa della città?",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie. Il wifi è gratuito?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, la lasci pure sul bancone. Tutto a posto?",
+          "english": "Yes, just leave it on the counter. Everything okay?",
+          "choices": [
+            {
+              "text": "Sì, tutto a posto. Grazie mille.",
+              "isCorrect": true,
+              "english": "Yes, everything's fine. Thank you very much."
+            },
+            {
+              "text": "Sì, vorrei chiamare un taxi ora.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, a che ora apre la reception?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Bene. Ha dimenticato qualcosa in camera?",
+          "english": "Good. Did you forget anything in the room?",
+          "choices": [
+            {
+              "text": "No, ho preso tutto. Controllo ancora.",
+              "isCorrect": true,
+              "english": "No, I've taken everything. I'll check again."
+            },
+            {
+              "text": "No, la camera è molto pulita.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, vorrei un altro scontrino.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Spero di rivederla presto nel nostro hotel.",
+          "english": "Excellent. I hope to see you again soon in our hotel.",
+          "choices": [
+            {
+              "text": "Sì, spero di tornare l'anno prossimo.",
+              "isCorrect": true,
+              "english": "Yes, I hope to return next year."
+            },
+            {
+              "text": "Sì, il bagno è molto grande.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, pago tutto in contanti.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sarà un piacere. Le serve un aiuto con le valigie?",
+          "english": "It will be a pleasure. Do you need help with your suitcases?",
+          "choices": [
+            {
+              "text": "No grazie, faccio da solo.",
+              "isCorrect": true,
+              "english": "No thank you, I'll do it myself."
+            },
+            {
+              "text": "No grazie, dove sono le scale?",
+              "isCorrect": false
+            },
+            {
+              "text": "No grazie, il taxi è fuori.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Allora le auguro un buon viaggio.",
+          "english": "Perfect. Then I wish you a good trip.",
+          "choices": [
+            {
+              "text": "Grazie mille, arrivederci!",
+              "isCorrect": true,
+              "english": "Thank you very much, goodbye!",
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie mille, a che ora parte?",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille, vorrei un caffè.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "minibar_dispute",
+      "title": "Minibar Dispute",
+      "description": "Clarify an incorrect charge on the bill.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, camera 305? Desidera il conto?",
+          "english": "Good morning, room 305? Would you like the bill?",
+          "choices": [
+            {
+              "text": "Sì, esatto. Vorrei fare il check-out.",
+              "isCorrect": true,
+              "english": "Yes, exactly. I'd like to check out."
+            },
+            {
+              "text": "Sì, vorrei pulire la camera.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, dov'è il mio bagaglio?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Bene. Ci sono consumazioni dal minibar?",
+          "english": "Good. Are there any items from the minibar?",
+          "choices": [
+            {
+              "text": "No, non abbiamo preso nulla dal frigo.",
+              "isCorrect": true,
+              "english": "No, we didn't take anything from the fridge."
+            },
+            {
+              "text": "No, non ho la chiave della camera.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, la colazione era ottima.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Strano, qui vedo due bottiglie d'acqua nel sistema.",
+          "english": "Strange, I see two bottles of water here in the system.",
+          "choices": [
+            {
+              "text": "È un errore, non abbiamo aperto il minibar.",
+              "isCorrect": true,
+              "english": "It's an error, we didn't open the minibar."
+            },
+            {
+              "text": "È un errore, la camera è al terzo piano.",
+              "isCorrect": false
+            },
+            {
+              "text": "È un errore, vorrei pagare subito.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Mi scusi, controllo subito con il personale di servizio.",
+          "english": "I'm sorry, I'll check immediately with the service staff.",
+          "choices": [
+            {
+              "text": "Grazie, aspetto qui alla reception.",
+              "isCorrect": true,
+              "english": "Thank you, I'll wait here at the reception."
+            },
+            {
+              "text": "Grazie, vado subito in stazione.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, la tessere è magnetica.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ha ragione, c'è stato un malinteso. Tolgo l'importo.",
+          "english": "You're right, there was a misunderstanding. I'll remove the amount.",
+          "choices": [
+            {
+              "text": "Grazie mille per aver controllato.",
+              "isCorrect": true,
+              "english": "Thank you very much for checking."
+            },
+            {
+              "text": "Grazie mille, dov'è il frigo?",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille, il conto è alto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Di nulla. Ecco il nuovo conto senza gli extra.",
+          "english": "You're welcome. Here is the new bill without the extras.",
+          "choices": [
+            {
+              "text": "Perfetto. Posso pagare in contanti?",
+              "isCorrect": true,
+              "english": "Perfect. Can I pay in cash?"
+            },
+            {
+              "text": "Perfetto. Dove posso lasciare i bagagli?",
+              "isCorrect": false
+            },
+            {
+              "text": "Perfetto. Mi mandi una mail?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente. Sono ottanta euro in totale.",
+          "english": "Certainly. It's eighty euros in total.",
+          "choices": [
+            {
+              "text": "Ecco a lei. Mi dà la ricevuta?",
+              "isCorrect": true,
+              "english": "Here you go. Can you give me the receipt?"
+            },
+            {
+              "text": "Ecco a lei. Dov'è il centro?",
+              "isCorrect": false
+            },
+            {
+              "text": "Ecco a lei. La camera è pronta.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente, ecco il resto e la fattura. Tutto bene?",
+          "english": "Certainly, here is the change and the invoice. Everything okay?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Siete stati molto gentili.",
+              "isCorrect": true,
+              "english": "Yes, thank you. You've been very kind."
+            },
+            {
+              "text": "Sì, grazie. Vorrei una birra ora.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, grazie. Il wifi non funziona.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie a lei. Ha bisogno di informazioni per il viaggio?",
+          "english": "Thank you. Do you need travel information?",
+          "choices": [
+            {
+              "text": "No grazie, ho già la mappa.",
+              "isCorrect": true,
+              "english": "No thank you, I already have the map."
+            },
+            {
+              "text": "No grazie, vorrei firmare qui.",
+              "isCorrect": false
+            },
+            {
+              "text": "No grazie, la borsa è pesante.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Benissimo. Arrivederci e buon rientro a casa.",
+          "english": "Very well. Goodbye and have a good trip home.",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie ancora.",
+              "isCorrect": true,
+              "english": "Goodbye and thanks again.",
+              "nextMessageId": "END",
+              "audio": {
+                "italian": "/audio/11fab75de054.opus"
+              }
+            },
+            {
+              "text": "Arrivederci, vorrei il PIN.",
+              "isCorrect": false
+            },
+            {
+              "text": "Arrivederci, a che piano è?",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "storing_luggage",
+      "title": "Storing Luggage",
+      "description": "Leave your bags at the hotel for a few hours after checking out.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, desidera riconsegnare la tessera?",
+          "english": "Good morning, would you like to return the key card?",
+          "choices": [
+            {
+              "text": "Sì, ecco la tessera della camera 112.",
+              "isCorrect": true,
+              "english": "Yes, here is the key card for room 112."
+            },
+            {
+              "text": "Sì, vorrei una camera più silenziosa.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, dov'è la sala colazione?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Grazie. Tutto bene durante il suo soggiorno?",
+          "english": "Thank you. Was everything okay during your stay?",
+          "choices": [
+            {
+              "text": "Sì, la camera era molto pulita e silenziosa.",
+              "isCorrect": true,
+              "english": "Yes, the room was very clean and quiet."
+            },
+            {
+              "text": "Sì, vorrei pagare con il bancomat.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, il taxi è già arrivato?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo. Posso aiutarla con i bagagli o serve altro?",
+          "english": "Excellent. Can I help you with your luggage or do you need anything else?",
+          "choices": [
+            {
+              "text": "Posso lasciare le valigie qui per qualche ora?",
+              "isCorrect": true,
+              "english": "Can I leave the suitcases here for a few hours?"
+            },
+            {
+              "text": "Posso avere uno scontrino per la cena?",
+              "isCorrect": false
+            },
+            {
+              "text": "Posso cambiare camera stasera?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certamente, abbiamo un deposito bagagli sicuro.",
+          "english": "Certainly, we have a secure luggage storage.",
+          "choices": [
+            {
+              "text": "È gratuito o c'è un costo extra?",
+              "isCorrect": true,
+              "english": "Is it free or is there an extra cost?"
+            },
+            {
+              "text": "È aperto o la porta è chiusa?",
+              "isCorrect": false
+            },
+            {
+              "text": "È lontano o vicino alla stazione?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Il servizio è gratuito per tutti i nostri ospiti.",
+          "english": "The service is free for all our guests.",
+          "choices": [
+            {
+              "text": "Molto gentile. Torno a prenderli alle quattro.",
+              "isCorrect": true,
+              "english": "Very kind. I'll come back to pick them up at four."
+            },
+            {
+              "text": "Molto gentile. Vorrei pagare ora.",
+              "isCorrect": false
+            },
+            {
+              "text": "Molto gentile. Dov'è l'ingresso?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Perfetto. Metto un'etichetta sulle sue borse.",
+          "english": "Perfect. I'll put a tag on your bags.",
+          "choices": [
+            {
+              "text": "Va bene, ecco lo zaino e la valigia.",
+              "isCorrect": true,
+              "english": "All right, here is the backpack and the suitcase."
+            },
+            {
+              "text": "Va bene, ecco la chiave magnetica.",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene, ecco il mio indirizzo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco la ricevuta per il deposito. Non la perda.",
+          "english": "Here is the receipt for the storage. Don't lose it.",
+          "choices": [
+            {
+              "text": "Grazie. La metto subito nel portafoglio.",
+              "isCorrect": true,
+              "english": "Thank you. I'll put it in my wallet right away."
+            },
+            {
+              "text": "Grazie. La lascio sul bancone.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie. Dov'è il minibar?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Desidera fare un giro in centro prima di partire?",
+          "english": "Would you like to take a walk downtown before leaving?",
+          "choices": [
+            {
+              "text": "Sì, vorrei vedere la piazza principale.",
+              "isCorrect": true,
+              "english": "Yes, I'd like to see the main square."
+            },
+            {
+              "text": "Sì, vorrei dormire ancora un po'.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vorrei ordinare la cena.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "È molto vicina. Ci arriva in cinque minuti a piedi.",
+          "english": "It's very close. You can get there in five minutes on foot.",
+          "choices": [
+            {
+              "text": "Ottimo, allora vado subito a fare un giro.",
+              "isCorrect": true,
+              "english": "Great, then I'll go for a walk right away."
+            },
+            {
+              "text": "Ottimo, allora prendo l'autobus subito.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ottimo, allora la camera è pronta.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto, a più tardi allora. Buona passeggiata!",
+          "english": "Perfect, see you later then. Have a nice walk!",
+          "choices": [
+            {
+              "text": "A dopo, buona giornata e grazie.",
+              "isCorrect": true,
+              "english": "See you later, have a nice day and thank you.",
+              "nextMessageId": "END"
+            },
+            {
+              "text": "A dopo, vorrei il conto ora.",
+              "isCorrect": false
+            },
+            {
+              "text": "A dopo, dov'è il mio taxi?",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "requesting_taxi",
+      "title": "Requesting a Taxi",
+      "description": "Arrange a taxi for departure.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, è pronto per la partenza?",
+          "english": "Good morning, are you ready for departure?",
+          "choices": [
+            {
+              "text": "Sì, purtroppo il mio soggiorno è finito.",
+              "isCorrect": true,
+              "english": "Yes, unfortunately my stay is over."
+            },
+            {
+              "text": "Sì, vorrei restare un'altra notte.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, dov'è la fermata dell'autobus?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Spero di rivederla presto. Serve la fattura del soggiorno?",
+          "english": "I hope to see you again soon. Do you need the invoice for the stay?",
+          "choices": [
+            {
+              "text": "Sì, la mandi pure al mio indirizzo mail.",
+              "isCorrect": true,
+              "english": "Yes, please send it to my email address."
+            },
+            {
+              "text": "Sì, vorrei pagare in contanti subito.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, dov'è la mia tessera magnetica?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente. Posso chiamare un taxi per lei?",
+          "english": "Certainly. Can I call a taxi for you?",
+          "choices": [
+            {
+              "text": "Sì, per favore. Devo andare in stazione.",
+              "isCorrect": true,
+              "english": "Yes, please. I need to go to the station."
+            },
+            {
+              "text": "Sì, per favore. Dov'è la reception?",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, per favore. Vorrei un caffè nero.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Chiamo subito. Di solito arriva in pochi minuti.",
+          "english": "I'll call right away. Usually it arrives in a few minutes.",
+          "choices": [
+            {
+              "text": "Va bene, aspetto qui nell'ingresso.",
+              "isCorrect": true,
+              "english": "All right, I'll wait here in the entrance."
+            },
+            {
+              "text": "Va bene, vado subito in camera.",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene, dov'è il deposito bagagli?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Il taxi arriva tra circa cinque minuti. Tutto a posto?",
+          "english": "The taxi will arrive in about five minutes. Everything okay?",
+          "choices": [
+            {
+              "text": "Sì, tutto a posto. Grazie dell'aiuto.",
+              "isCorrect": true,
+              "english": "Yes, everything is fine. Thanks for the help."
+            },
+            {
+              "text": "Sì, vorrei un'altra camera oggi.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, a che ora parte il treno?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Desidera un caffè o un tè mentre aspetta?",
+          "english": "Would you like a coffee or a tea while you wait?",
+          "choices": [
+            {
+              "text": "No grazie, ho già fatto colazione.",
+              "isCorrect": true,
+              "english": "No thank you, I've already had breakfast."
+            },
+            {
+              "text": "No grazie, vorrei la ricevuta.",
+              "isCorrect": false
+            },
+            {
+              "text": "No grazie, dov'è la stazione?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Benissimo. Ha controllato di avere tutti i documenti?",
+          "english": "Very well. Did you check that you have all your documents?",
+          "choices": [
+            {
+              "text": "Sì, ho tutto nella mia borsa.",
+              "isCorrect": true,
+              "english": "Yes, I have everything in my bag."
+            },
+            {
+              "text": "Sì, la camera è molto pulita.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vorrei un taxi subito.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Il taxi è appena arrivato fuori.",
+          "english": "Excellent. The taxi has just arrived outside.",
+          "choices": [
+            {
+              "text": "Perfetto, allora prendo le mie valigie.",
+              "isCorrect": true,
+              "english": "Perfect, then I'll take my suitcases."
+            },
+            {
+              "text": "Perfetto, allora vado in stazione.",
+              "isCorrect": false
+            },
+            {
+              "text": "Perfetto, allora vorrei il conto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Le auguro un buon viaggio e spero di rivederla.",
+          "english": "I wish you a good trip and hope to see you again.",
+          "choices": [
+            {
+              "text": "Grazie mille di tutto. A presto!",
+              "isCorrect": true,
+              "english": "Thank you very much for everything. See you soon!"
+            },
+            {
+              "text": "Grazie mille, dove sono?",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille, vorrei un cornetto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci! Buon rientro.",
+          "english": "Goodbye! Have a good trip back.",
+          "choices": [
+            {
+              "text": "Arrivederci e buona giornata!",
+              "isCorrect": true,
+              "english": "Goodbye and have a nice day!",
+              "nextMessageId": "END",
+              "audio": {
+                "italian": "/audio/89f9d80669f0.opus"
+              }
+            },
+            {
+              "text": "Arrivederci, vorrei la chiave.",
+              "isCorrect": false
+            },
+            {
+              "text": "Arrivederci, dov'è il taxi?",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

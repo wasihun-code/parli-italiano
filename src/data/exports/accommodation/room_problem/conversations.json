@@ -1,0 +1,886 @@
+{
+  "scenarioId": 19,
+  "conversations": [
+    {
+      "id": "no_hot_water",
+      "title": "No Hot Water",
+      "description": "Report a problem with the shower water temperature.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, Reception. Come posso aiutarla?",
+          "english": "Good morning, Reception. How can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno, ho un problema nella mia camera.",
+              "english": "Good morning, I have a problem in my room.",
+              "isCorrect": true
+            },
+            {
+              "text": "Buongiorno, voglio un caffè per favore.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ciao, dove sono i bagagli?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dica pure. Che succede?",
+          "english": "Please tell me. What is happening?",
+          "choices": [
+            {
+              "text": "Non c'è acqua calda nella doccia.",
+              "english": "There is no hot water in the shower.",
+              "isCorrect": true
+            },
+            {
+              "text": "L'acqua della doccia è troppo calda.",
+              "isCorrect": false
+            },
+            {
+              "text": "La doccia è molto pulita, grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ah, mi dispiace molto. Ha provato ad aspettare un po'?",
+          "english": "Ah, I am very sorry. Have you tried waiting a bit?",
+          "choices": [
+            {
+              "text": "Sì, ho aspettato dieci minuti.",
+              "english": "Yes, I waited ten minutes.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non ho tempo per la doccia.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, l'acqua è molto calda adesso.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capisco. L'acqua è proprio fredda?",
+          "english": "I understand. Is the water really cold?",
+          "choices": [
+            {
+              "text": "Sì, l'acqua è ghiacciata.",
+              "english": "Yes, the water is freezing.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, l'acqua è tiepida.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, bevo l'acqua calda.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Mando subito un tecnico a controllare.",
+          "english": "I am sending a technician to check immediately.",
+          "choices": [
+            {
+              "text": "Va bene, grazie mille.",
+              "english": "Alright, thank you very much.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non voglio il tecnico.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il tecnico è già qui.",
+              "isCorrect": false,
+              "audio": {
+                "italian": "/audio/a328f96e8ee3.opus"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Il tecnico arriva tra cinque minuti. Lei è in camera?",
+          "english": "The technician arrives in five minutes. Are you in the room?",
+          "choices": [
+            {
+              "text": "Sì, aspetto qui in camera.",
+              "english": "Yes, I am waiting here in the room.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, scendo alla reception adesso.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vado a fare una passeggiata.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Se il problema non si risolve, le cambiamo camera.",
+          "english": "Perfect. If the problem is not resolved, we will change your room.",
+          "choices": [
+            {
+              "text": "Grazie, spero che si risolva subito.",
+              "english": "Thanks, I hope it gets resolved immediately.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non voglio cambiare i vestiti.",
+              "isCorrect": false
+            },
+            {
+              "text": "La camera è troppo grande.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ci scusi ancora per il disagio.",
+          "english": "Apologies again for the inconvenience.",
+          "choices": [
+            {
+              "text": "Non si preoccupi, succede.",
+              "english": "Don't worry, it happens.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, è un problema molto grave.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il disagio è molto bello.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie della pazienza. A tra poco.",
+          "english": "Thanks for your patience. See you soon.",
+          "choices": [
+            {
+              "text": "A tra poco, il tecnico è qui.",
+              "english": "See you soon, the technician is here.",
+              "isCorrect": true
+            },
+            {
+              "text": "Voglio andare via ora.",
+              "isCorrect": false
+            },
+            {
+              "text": "L'acqua è ancora fredda.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo. Mi faccia sapere se tutto funziona dopo.",
+          "english": "Great. Let me know if everything works afterwards.",
+          "choices": [
+            {
+              "text": "Certamente, grazie mille. Arrivederci.",
+              "english": "Certainly, thank you very much. Goodbye.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "D'accordo, ci sentiamo più tardi. Grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "La doccia è rotta di nuovo.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noisy_neighbors",
+      "title": "Noisy Neighbors",
+      "description": "Complain about loud noise from the adjacent room.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto, Reception. In cosa posso aiutarla?",
+          "english": "Hello, Reception. How can I help you?",
+          "choices": [
+            {
+              "text": "Scusi, c'è troppo rumore nella camera vicina.",
+              "english": "Excuse me, there is too much noise in the next room.",
+              "isCorrect": true
+            },
+            {
+              "text": "Mi piace molto la musica alta.",
+              "isCorrect": false
+            },
+            {
+              "text": "La camera è molto silenziosa.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dispiace. Che tipo di rumore sente?",
+          "english": "I'm sorry. What kind of noise do you hear?",
+          "choices": [
+            {
+              "text": "Sento musica e persone che gridano.",
+              "english": "I hear music and people shouting.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sento il rumore del mare.",
+              "isCorrect": false
+            },
+            {
+              "text": "Non sento niente, tutto bene.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco. È la camera a destra o a sinistra?",
+          "english": "I understand. Is it the room on the right or left?",
+          "choices": [
+            {
+              "text": "È la camera a sinistra, la numero duecentoquattro.",
+              "english": "It is the room on the left, number two hundred four.",
+              "isCorrect": true
+            },
+            {
+              "text": "È la camera in fondo al corridoio, credo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Non so il numero della mia camera.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Va bene. Chiamo subito quegli ospiti.",
+          "english": "Alright. I'll call those guests immediately.",
+          "choices": [
+            {
+              "text": "Grazie, vorrei dormire un po'.",
+              "english": "Thanks, I would like to sleep a bit.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, voglio gridare anche io.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il corridoio è molto buio.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Certamente. Hanno smesso ora?",
+          "english": "Certainly. Have they stopped now?",
+          "choices": [
+            {
+              "text": "No, sento ancora la musica.",
+              "english": "No, I still hear the music.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, ho smesso di ascoltare.",
+              "isCorrect": false
+            },
+            {
+              "text": "La musica è molto bella.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Allora mando qualcuno al piano a controllare.",
+          "english": "Then I'll send someone to the floor to check.",
+          "choices": [
+            {
+              "text": "Grazie, è molto gentile.",
+              "english": "Thanks, you are very kind.",
+              "isCorrect": true,
+              "audio": {
+                "italian": "/audio/72aabdd7b52e.opus"
+              }
+            },
+            {
+              "text": "Voglio andare al piano di sopra.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il tecnico è già uscito.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Di nulla. Se continuano, le diamo un'altra camera.",
+          "english": "You're welcome. If they continue, we'll give you another room.",
+          "choices": [
+            {
+              "text": "Spero che facciano silenzio presto.",
+              "english": "I hope they become quiet soon.",
+              "isCorrect": true
+            },
+            {
+              "text": "Mi piace questa camera rumorosa.",
+              "isCorrect": false
+            },
+            {
+              "text": "Dov'è la porta di emergenza?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Lo spero anche io. Mi faccia sapere se il rumore continua.",
+          "english": "I hope so too. Let me know if the noise continues.",
+          "choices": [
+            {
+              "text": "Certamente, la chiamo più tardi.",
+              "english": "Certainly, I'll call you later.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non parlo italiano bene.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il rumore è sparito ieri sera.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene. Adesso mando il mio collega su.",
+          "english": "Alright. Now I am sending my colleague up.",
+          "choices": [
+            {
+              "text": "Perfetto, lo aspetto qui fuori.",
+              "english": "Perfect, I am waiting for him out here.",
+              "isCorrect": true
+            },
+            {
+              "text": "Il mio collega è a casa ora.",
+              "isCorrect": false
+            },
+            {
+              "text": "Voglio una camera silenziosa.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va bene. Buona notte e scusi ancora.",
+          "english": "Alright. Good night and sorry again.",
+          "choices": [
+            {
+              "text": "Buona notte, grazie. Arrivederci.",
+              "english": "Good night, thanks. Goodbye.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "A domani, spero di dormire bene.",
+              "isCorrect": false
+            },
+            {
+              "text": "La camera accanto è silenziosa.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ac_broken",
+      "title": "Air Conditioning Broken",
+      "description": "The air conditioning is not working and the room is too hot.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Reception, buonasera. Come posso aiutarla?",
+          "english": "Reception, good evening. How can I help you?",
+          "choices": [
+            {
+              "text": "Buonasera, l'aria condizionata non funziona.",
+              "english": "Good evening, the air conditioning is not working.",
+              "isCorrect": true
+            },
+            {
+              "text": "L'aria è molto fresca qui fuori.",
+              "isCorrect": false
+            },
+            {
+              "text": "Voglio spegnere la televisione.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dispiace. Fa molto caldo in camera?",
+          "english": "I'm sorry. Is it very hot in the room?",
+          "choices": [
+            {
+              "text": "Sì, fa caldissimo e non riesco a dormire.",
+              "english": "Yes, it's very hot and I can't sleep.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, fa molto freddo, voglio una coperta.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, il letto è molto comodo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ha provato ad usare il telecomando?",
+          "english": "Have you tried using the remote control?",
+          "choices": [
+            {
+              "text": "Sì, ma non succede niente.",
+              "english": "Yes, but nothing happens.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, cerco il telecomando della TV.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, il telecomando è rotto sul tavolo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capisco. Forse è un problema tecnico.",
+          "english": "I understand. Maybe it's a technical problem.",
+          "choices": [
+            {
+              "text": "Può mandare qualcuno a controllare?",
+              "english": "Can you send someone to check?",
+              "isCorrect": true
+            },
+            {
+              "text": "No, voglio ripararlo io.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il tecnico è in vacanza.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Il nostro tecnico è già andato via. È tardi.",
+          "english": "Our technician has already left. It's late.",
+          "choices": [
+            {
+              "text": "E allora cosa posso fare?",
+              "english": "So what can I do?",
+              "isCorrect": true
+            },
+            {
+              "text": "Va bene, allora vado a dormire.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il tecnico è molto bravo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Posso portarle un ventilatore per stasera.",
+          "english": "I can bring you a fan for tonight.",
+          "choices": [
+            {
+              "text": "Sì, per favore, fa troppo caldo.",
+              "english": "Yes, please, it's too hot.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non mi piace il vento.",
+              "isCorrect": false
+            },
+            {
+              "text": "Un ventilatore è molto caro.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Arrivo subito con il ventilatore. Va bene?",
+          "english": "I'm coming immediately with the fan. Is that okay?",
+          "choices": [
+            {
+              "text": "Va bene, la ringrazio molto.",
+              "english": "Alright, thank you very much.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, voglio un'altra doccia fredda.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il ventilatore è rotto?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Domani mattina il tecnico riparerà tutto.",
+          "english": "Tomorrow morning the technician will fix everything.",
+          "choices": [
+            {
+              "text": "Grazie, spero che domani funzioni.",
+              "english": "Thanks, I hope it works tomorrow.",
+              "isCorrect": true
+            },
+            {
+              "text": "Domani vado a fare la spesa.",
+              "isCorrect": false
+            },
+            {
+              "text": "L'aria condizionata è già spenta.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco il ventilatore per lei. Spero aiuti.",
+          "english": "Here is the fan for you. I hope it helps.",
+          "choices": [
+            {
+              "text": "Grazie, lo accendo subito.",
+              "english": "Thanks, I am turning it on immediately.",
+              "isCorrect": true
+            },
+            {
+              "text": "Il ventilatore è troppo rumoroso.",
+              "isCorrect": false
+            },
+            {
+              "text": "Voglio un'altra camera fresca.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla. Buonanotte e scusi ancora.",
+          "english": "You're welcome. Goodnight and sorry again.",
+          "choices": [
+            {
+              "text": "Buonanotte e grazie dell'aiuto.",
+              "english": "Goodnight and thanks for the help.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie, spero che domani faccia fresco.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il ventilatore è sul pavimento.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "room_not_clean",
+      "title": "Room Not Clean",
+      "description": "The room has not been cleaned properly.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, posso aiutarla?",
+          "english": "Good morning, can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno, la mia camera è ancora sporca.",
+              "english": "Good morning, my room is still dirty.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, la camera è molto pulita, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Voglio cambiare camera subito.",
+              "isCorrect": false
+            }
+          ],
+          "audio": {
+            "italian": "/audio/61bbdfc8a8de.opus"
+          }
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Come? Il personale è passato stamattina.",
+          "english": "What? The staff came by this morning.",
+          "choices": [
+            {
+              "text": "Il bagno è sporco e non ci sono asciugamani.",
+              "english": "The bathroom is dirty and there are no towels.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, ho visto il personale in corridoio.",
+              "isCorrect": false
+            },
+            {
+              "text": "Gli asciugamani sono sul letto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Mi dispiace moltissimo. È un errore grave.",
+          "english": "I am very sorry. It is a serious mistake.",
+          "choices": [
+            {
+              "text": "Può mandare qualcuno a pulire ora?",
+              "english": "Can you send someone to clean now?",
+              "isCorrect": true
+            },
+            {
+              "text": "No, voglio pulire io il bagno.",
+              "isCorrect": false
+            },
+            {
+              "text": "La camera è libera adesso.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Chiamo subito il personale delle pulizie.",
+          "english": "I'll call the cleaning staff immediately.",
+          "choices": [
+            {
+              "text": "Grazie, aspetto qui fuori.",
+              "english": "Thanks, I'm waiting out here.",
+              "isCorrect": true
+            },
+            {
+              "text": "Voglio andare via subito.",
+              "isCorrect": false
+            },
+            {
+              "text": "Le pulizie sono già finite.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Arrivano tra dieci minuti. Vogliono anche cambiare le lenzuola?",
+          "english": "They'll be here in ten minutes. Do they also want to change the sheets?",
+          "choices": [
+            {
+              "text": "Sì, per favore, anche le lenzuola sono sporche.",
+              "english": "Yes, please, the sheets are also dirty.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, le lenzuola sono nell'armadio.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, mi piacciono le lenzuola pulite.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Va bene, cambieranno tutto. Ci scusi per l'errore.",
+          "english": "Alright, they will change everything. Sorry for the mistake.",
+          "choices": [
+            {
+              "text": "Grazie, vorrei una camera pulita stasera.",
+              "english": "Thanks, I would like a clean room tonight.",
+              "isCorrect": true
+            },
+            {
+              "text": "La camera sporca non mi piace.",
+              "isCorrect": false
+            },
+            {
+              "text": "Dov'è il secchio della spazzatura?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certo, sarà perfetta. Le porto anche del sapone nuovo?",
+          "english": "Of course, it will be perfect. Shall I also bring you some new soap?",
+          "choices": [
+            {
+              "text": "Sì, grazie, manca anche il sapone.",
+              "english": "Yes, thanks, the soap is also missing.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non uso il sapone oggi.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il sapone è finito in bagno.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ecco a lei. Il personale sta arrivando.",
+          "english": "Here you go. The staff is arriving.",
+          "choices": [
+            {
+              "text": "Molto bene, la ringrazio.",
+              "english": "Very well, I thank you.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, vado via tra poco.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il personale è già qui.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Spero che adesso sia tutto a posto.",
+          "english": "I hope everything is okay now.",
+          "choices": [
+            {
+              "text": "Sì, ora la camera è perfetta.",
+              "english": "Yes, now the room is perfect.",
+              "isCorrect": true
+            },
+            {
+              "text": "La camera è ancora un po' sporca.",
+              "isCorrect": false
+            },
+            {
+              "text": "Voglio un'altra camera pulita.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie della pazienza. Buona serata.",
+          "english": "Thanks for your patience. Have a good evening.",
+          "choices": [
+            {
+              "text": "Grazie, buona serata a lei.",
+              "english": "Thanks, good evening to you.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie, a che ora chiude la reception?",
+              "isCorrect": false
+            },
+            {
+              "text": "Voglio un'altra camera pulita.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

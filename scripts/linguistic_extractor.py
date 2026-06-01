@@ -62,8 +62,11 @@ def main(scenario_slug):
             except: pass
 
     # Combine with new translations from conversations
-    # (New ones in conversations take precedence if they changed)
-    merged_translations = {**existing_translations, **translations}
+    # (New ones in conversations take precedence if they are non-empty)
+    merged_translations = existing_translations.copy()
+    for it, eng in translations.items():
+        if eng:
+            merged_translations[it] = eng
 
     # Build JSON objects
     vocab_list = []
@@ -80,7 +83,7 @@ def main(scenario_slug):
         phrases_list.append({
             "id": f"p{i+1}",
             "italian": phrase,
-            "english": translations.get(phrase, ""),
+            "english": merged_translations.get(phrase, ""),
             "audio": {"italian": f"/audio/{phrase.replace(' ', '_')}.opus"}
         })
         
@@ -89,7 +92,7 @@ def main(scenario_slug):
         sentences_list.append({
             "id": f"s{i+1}",
             "italian": sentence,
-            "english": translations.get(sentence, ""),
+            "english": merged_translations.get(sentence, ""),
             "audio": {"italian": f"/audio/{sentence.replace(' ', '_')}.opus"}
         })
 

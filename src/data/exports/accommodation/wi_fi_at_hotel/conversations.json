@@ -1,0 +1,955 @@
+{
+  "scenarioId": 23,
+  "conversations": [
+    {
+      "id": "asking_for_password",
+      "title": "Asking for the WiFi Password",
+      "description": "Request the WiFi details from the hotel reception.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Benvenuto all'hotel! Hai bisogno di aiuto?",
+          "english": "Welcome to the hotel! Do you need help?",
+          "choices": [
+            {
+              "text": "Sì, vorrei collegarmi al wifi.",
+              "english": "Yes, I would like to connect to the wifi.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, cerco solo la mia camera.",
+              "english": "No, I am only looking for my room.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vorrei prenotare la colazione.",
+              "english": "Yes, I would like to book breakfast.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Il wifi è gratuito per gli ospiti.",
+          "english": "Of course. The wifi is free for guests.",
+          "choices": [
+            {
+              "text": "Qual è il nome della rete?",
+              "english": "What is the name of the network?",
+              "isCorrect": true
+            },
+            {
+              "text": "Dov'è l'ufficio informazioni?",
+              "english": "Where is the information office?",
+              "isCorrect": false
+            },
+            {
+              "text": "Qual è il numero della camera?",
+              "english": "What is the room number?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Si chiama \"Hotel_Ospiti\". La vedi?",
+          "english": "It is called \"Hotel_Ospiti\". Do you see it?",
+          "choices": [
+            {
+              "text": "Sì, vedo la rete. Serve una password?",
+              "english": "Yes, I see the network. Is a password needed?",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non vedo il mio nome sulla lista.",
+              "english": "No, I don't see my name on the list.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, la camera è al primo piano.",
+              "english": "Yes, the room is on the first floor.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, la password è scritta su questo foglio.",
+          "english": "Yes, the password is written on this paper.",
+          "choices": [
+            {
+              "text": "Non riesco a leggere bene. È in maiuscolo?",
+              "english": "I can't read well. Is it in uppercase?",
+              "isCorrect": true
+            },
+            {
+              "text": "Voglio cambiare il mio profilo ora.",
+              "english": "I want to change my profile now.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il foglio è troppo piccolo per me.",
+              "english": "The paper is too small for me.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, tutte le lettere sono maiuscole.",
+          "english": "Yes, all the letters are uppercase.",
+          "choices": [
+            {
+              "text": "Grazie mille. Ora funziona perfettamente.",
+              "english": "Thanks a lot. Now it works perfectly.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non ho la chiave per la camera.",
+              "english": "No, I don't have the key for the room.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, la password è qui sotto il tavolo.",
+              "english": "Yes, the password is here under the table.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo! Ha altri dispositivi da collegare?",
+          "english": "Great! Do you have other devices to connect?",
+          "choices": [
+            {
+              "text": "Sì, anche il mio computer portatile.",
+              "english": "Yes, also my laptop computer.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non porto mai il tablet qui.",
+              "english": "No, I never bring the tablet here.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, anche il cellulare di mia moglie.",
+              "english": "Yes, also my wife's cell phone.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Può collegare tutti i dispositivi che vuole.",
+          "english": "You can connect all the devices you want.",
+          "choices": [
+            {
+              "text": "Fantastico, grazie della informazione.",
+              "english": "Fantastic, thanks for the information.",
+              "isCorrect": true
+            },
+            {
+              "text": "Male, voglio cambiare la connessione.",
+              "english": "Bad, I want to change the connection.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, il segnale è molto forte qui.",
+              "english": "Yes, the signal is very strong here.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Di niente. Serve altro per la sua camera?",
+          "english": "You're welcome. Do you need anything else for your room?",
+          "choices": [
+            {
+              "text": "No, per ora va bene così, grazie.",
+              "english": "No, for now it's fine like this, thanks.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, cerco un posto per lavorare.",
+              "english": "Yes, I'm looking for a place to work.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, non voglio caricare il telefono.",
+              "english": "No, I don't want to charge the phone.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene. Le auguro una buona permanenza.",
+          "english": "All right. I wish you a nice stay.",
+          "choices": [
+            {
+              "text": "Grazie e buona giornata anche a lei!",
+              "english": "Thanks and have a good day to you too!",
+              "isCorrect": true
+            },
+            {
+              "text": "Dov'è l'ascensore per il piano?",
+              "english": "Where is the elevator for the floor?",
+              "isCorrect": false
+            },
+            {
+              "text": "Il segnale wifi è molto stabile.",
+              "english": "The wifi signal is very stable.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci! Se serve, chiami la reception.",
+          "english": "Goodbye! If needed, call the reception.",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie ancora!",
+              "english": "Goodbye and thanks again!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "A dopo e buona colazione!",
+              "english": "See you later and have a good breakfast!",
+              "isCorrect": false
+            },
+            {
+              "text": "Non mi serve la password.",
+              "english": "I don't need the password.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weak_signal",
+      "title": "Weak Signal in the Room",
+      "description": "Report a connection issue from your hotel room.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Reception, buongiorno. Come posso aiutarla?",
+          "english": "Reception, good morning. How can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno. Ho un problema con internet in camera.",
+              "english": "Good morning. I have a problem with internet in the room.",
+              "isCorrect": true
+            },
+            {
+              "text": "Buongiorno, vorrei prenotare un tavolo.",
+              "english": "Good morning, I would like to book a table.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ciao, ho dimenticato la chiave in camera.",
+              "english": "Hi, I forgot the key in the room.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dispiace. Qual è il problema?",
+          "english": "I'm sorry. What is the problem?",
+          "choices": [
+            {
+              "text": "Il segnale è molto debole qui.",
+              "english": "The signal is very weak here.",
+              "isCorrect": true
+            },
+            {
+              "text": "La password è troppo complicata.",
+              "english": "The password is too complicated.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il router è spento in questo momento.",
+              "english": "The router is off at this moment.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "In che camera si trova?",
+          "english": "Which room are you in?",
+          "choices": [
+            {
+              "text": "Sono nella camera 204, al secondo piano.",
+              "english": "I am in room 204, on the second floor.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sono al bar dell'hotel adesso.",
+              "english": "I am at the hotel bar now.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sono davanti alla porta principale.",
+              "english": "I am in front of the main door.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capisco. Forse il router è lontano.",
+          "english": "I see. Maybe the router is far away.",
+          "choices": [
+            {
+              "text": "Posso cambiare camera per avere un segnale migliore?",
+              "english": "Can I change rooms to have a better signal?",
+              "isCorrect": true
+            },
+            {
+              "text": "Voglio parlare con il tecnico del wifi.",
+              "english": "I want to speak with the wifi technician.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il router non funziona bene in camera.",
+              "english": "The router doesn't work well in the room.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Controllo subito la disponibilità.",
+          "english": "I'll check availability right away.",
+          "choices": [
+            {
+              "text": "Grazie, è molto importante per il mio lavoro.",
+              "english": "Thanks, it's very important for my work.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie, ho bisogno di caricare il pc.",
+              "english": "Thanks, I need to charge the PC.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, non voglio usare il wifi oggi.",
+              "english": "No, I don't want to use the wifi today.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Abbiamo la camera 208 libera, è più vicina.",
+          "english": "We have room 208 free, it is closer.",
+          "choices": [
+            {
+              "text": "Perfetto, cambio camera subito. Grazie!",
+              "english": "Perfect, I'll change rooms immediately. Thanks!",
+              "isCorrect": true
+            },
+            {
+              "text": "No, preferisco restare al primo piano.",
+              "english": "No, I prefer to stay on the first floor.",
+              "isCorrect": false
+            },
+            {
+              "text": "Dov'è il tecnico per la riparazione?",
+              "english": "Where is the repair technician?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Le mando subito qualcuno per le valigie.",
+          "english": "I'll send someone for the suitcases right away.",
+          "choices": [
+            {
+              "text": "Grazie dell'aiuto, gentilissimo.",
+              "english": "Thanks for the help, very kind.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, preferisco fare da solo.",
+              "english": "No, I prefer to do it myself.",
+              "isCorrect": false
+            },
+            {
+              "text": "Voglio un'altra password ora.",
+              "english": "I want another password now.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Di niente. Spero che il segnale sia migliore.",
+          "english": "You're welcome. I hope the signal is better.",
+          "choices": [
+            {
+              "text": "Lo spero anche io. Controllo subito.",
+              "english": "I hope so too. I'll check immediately.",
+              "isCorrect": true
+            },
+            {
+              "text": "Il segnale è sparito di nuovo.",
+              "english": "The signal disappeared again.",
+              "isCorrect": false
+            },
+            {
+              "text": "Dov'è la presa della corrente?",
+              "english": "Where is the power outlet?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ci faccia sapere se ha ancora problemi.",
+          "english": "Let us know if you still have problems.",
+          "choices": [
+            {
+              "text": "Certamente, grazie mille e a dopo.",
+              "english": "Certainly, thanks a lot and see you later.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non voglio disturbare ancora.",
+              "english": "No, I don't want to disturb again.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il router è nel corridoio, vero?",
+              "english": "The router is in the hallway, right?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo. Le auguro un buon proseguimento.",
+          "english": "Great. I wish you a good continuation.",
+          "choices": [
+            {
+              "text": "Grazie e buona giornata!",
+              "english": "Thanks and have a good day!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Dov'è il telecomando?",
+              "english": "Where is the remote control?",
+              "isCorrect": false
+            },
+            {
+              "text": "Il wifi è molto veloce.",
+              "english": "The wifi is very fast.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wrong_password",
+      "title": "Wrong Password",
+      "description": "Troubleshoot a password that isn't working.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Ha problemi con la connessione?",
+          "english": "Hi! Are you having connection problems?",
+          "choices": [
+            {
+              "text": "Sì, la password non funziona.",
+              "english": "Yes, the password doesn't work.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, cerco la mia camera.",
+              "english": "No, I'm looking for my room.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, la chiave è rotta.",
+              "english": "Yes, the key is broken.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È sicuro di aver scritto tutto correttamente?",
+          "english": "Are you sure you wrote everything correctly?",
+          "choices": [
+            {
+              "text": "Ho provato due volte, ma dà errore.",
+              "english": "I tried twice, but it gives an error.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, ho scritto il mio nome.",
+              "english": "Yes, I wrote my name.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, ho inserito il codice tre volte.",
+              "english": "Yes, I entered the code three times.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ha messo il punto alla fine della password?",
+          "english": "Did you put the period at the end of the password?",
+          "choices": [
+            {
+              "text": "Ah, no. Non ho visto il punto sul foglio.",
+              "english": "Ah, no. I didn't see the period on the paper.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, vedo un piccolo segno.",
+              "english": "Yes, I see a small mark.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, non mi piace il punto.",
+              "english": "No, I don't like the period.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Riprovi ora con il punto finale.",
+          "english": "Try again now with the final period.",
+          "choices": [
+            {
+              "text": "Ora si collega! Era quello il problema.",
+              "english": "Now it connects! That was the problem.",
+              "isCorrect": true
+            },
+            {
+              "text": "Ancora niente, il wifi è rotto.",
+              "english": "Still nothing, the wifi is broken.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, scrivo il codice ora.",
+              "english": "Yes, I'm writing the code now.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. A volte i simboli sono piccoli.",
+          "english": "Perfect. Sometimes symbols are small.",
+          "choices": [
+            {
+              "text": "Grazie dell'aiuto, gentilissimo.",
+              "english": "Thanks for the help, very kind.",
+              "isCorrect": true
+            },
+            {
+              "text": "Dov'è l'uscita dell'hotel?",
+              "english": "Where is the hotel exit?",
+              "isCorrect": false
+            },
+            {
+              "text": "Il foglio è troppo bianco.",
+              "english": "The paper is too white.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Di niente. Altri problemi con i tasti?",
+          "english": "You're welcome. Other problems with the keys?",
+          "choices": [
+            {
+              "text": "No, ora riesco a scrivere bene.",
+              "english": "No, now I can write well.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, il piano è occupato.",
+              "english": "Yes, the floor is occupied.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, cerco la colazione.",
+              "english": "No, I'm looking for breakfast.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottimo. La tastiera del telefono è piccola.",
+          "english": "Great. The phone keyboard is small.",
+          "choices": [
+            {
+              "text": "Sì, è vero. È difficile leggere.",
+              "english": "Yes, it's true. It's difficult to read.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, ho un computer grande.",
+              "english": "No, I have a big computer.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, lo schermo è troppo piccolo.",
+              "english": "No, the screen is too small.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Capisco. Serve aiuto per altro?",
+          "english": "I understand. Do you need help with anything else?",
+          "choices": [
+            {
+              "text": "No, grazie. Siete stati molto utili.",
+              "english": "No, thanks. You have been very helpful.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, cerco il bar più vicino.",
+              "english": "Yes, I'm looking for the nearest bar.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, voglio andare in camera.",
+              "english": "No, I want to go to the room.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Siamo qui per questo. Buona navigazione!",
+          "english": "We are here for this. Happy surfing!",
+          "choices": [
+            {
+              "text": "Grazie mille e buona giornata!",
+              "english": "Thanks a lot and have a good day!",
+              "isCorrect": true
+            },
+            {
+              "text": "Dov'è il bagno comune?",
+              "english": "Where is the common bathroom?",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, la connessione ora è ottima.",
+              "english": "Yes, the connection is great now.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie! Buona permanenza all'hotel.",
+          "english": "Thank you! Have a nice stay at the hotel.",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie ancora!",
+              "english": "Goodbye and thanks again!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Cerco un taxi subito.",
+              "english": "I'm looking for a taxi immediately.",
+              "isCorrect": false
+            },
+            {
+              "text": "La rete è molto lenta.",
+              "english": "The network is very slow.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speed_and_cost",
+      "title": "Speed and Cost",
+      "description": "Inquire about the internet speed and any associated costs.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera! Desidera usare il wifi dell'hotel?",
+          "english": "Good evening! Would you like to use the hotel wifi?",
+          "choices": [
+            {
+              "text": "Sì, ma vorrei sapere se è veloce.",
+              "english": "Yes, but I would like to know if it's fast.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, cerco la mia camera.",
+              "english": "No, I am looking for my room.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, ho perso la chiave.",
+              "english": "Yes, I lost the key.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Abbiamo la fibra ottica in tutta la struttura.",
+          "english": "We have fiber optics throughout the facility.",
+          "choices": [
+            {
+              "text": "Devo pagare un supplemento per l'alta velocità?",
+              "english": "Do I have to pay a supplement for high speed?",
+              "isCorrect": true
+            },
+            {
+              "text": "La colazione è inclusa nel prezzo?",
+              "english": "Is breakfast included in the price?",
+              "isCorrect": false
+            },
+            {
+              "text": "Vorrei sapere se la colazione è inclusa nel prezzo?",
+              "english": "I would like to know if breakfast is included in the price?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "No, la connessione veloce è inclusa nel prezzo.",
+          "english": "No, the fast connection is included in the price.",
+          "choices": [
+            {
+              "text": "Fantastico. Posso fare delle videochiamate?",
+              "english": "Fantastic. Can I make video calls?",
+              "isCorrect": true
+            },
+            {
+              "text": "Peccato, preferisco navigare dal mio cellulare.",
+              "english": "Too bad, I prefer to browse from my cell phone.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ho capito, ma cerco una mappa della città ora.",
+              "english": "I understand, but I am looking for a city map now.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certamente, la rete è molto stabile.",
+          "english": "Certainly, the network is very stable.",
+          "choices": [
+            {
+              "text": "C'è un limite di dispositivi collegati?",
+              "english": "Is there a limit on connected devices?",
+              "isCorrect": true
+            },
+            {
+              "text": "Voglio spegnere il router ora.",
+              "english": "I want to turn off the router now.",
+              "isCorrect": false
+            },
+            {
+              "text": "La camera è molto pulita e molto spaziosa.",
+              "english": "The room is very clean and very spacious.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "No, può collegare il telefono e il computer.",
+          "english": "No, you can connect your phone and computer.",
+          "choices": [
+            {
+              "text": "Ottimo, allora mi collego subito.",
+              "english": "Excellent, then I'll connect immediately.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, il mio telefono è rotto.",
+              "english": "No, my phone is broken.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, cerco il mio bagaglio.",
+              "english": "Yes, I'm looking for my luggage.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Buon lavoro! Se ha bisogno, chiami la reception.",
+          "english": "Have a good work! If you need anything, call the reception.",
+          "choices": [
+            {
+              "text": "Grazie del consiglio. A presto!",
+              "english": "Thanks for the advice. See you soon!",
+              "isCorrect": true
+            },
+            {
+              "text": "Il wifi costa troppo.",
+              "english": "The wifi costs too much.",
+              "isCorrect": false
+            },
+            {
+              "text": "Voglio andare al bar.",
+              "english": "I want to go to the bar.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Speriamo che la velocità sia di suo gradimento.",
+          "english": "We hope the speed is to your liking.",
+          "choices": [
+            {
+              "text": "Sicuro, la fibra è sempre la migliore.",
+              "english": "Sure, fiber is always the best.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, la connessione è molto veloce ora.",
+              "english": "Yes, the connection is very fast now.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il segnale è forte in tutta la struttura.",
+              "english": "The signal is strong throughout the facility.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Vero. Abbiamo investito molto in tecnologia.",
+          "english": "True. We have invested a lot in technology.",
+          "choices": [
+            {
+              "text": "Si vede, complimenti alla struttura.",
+              "english": "It shows, compliments to the facility.",
+              "isCorrect": true
+            },
+            {
+              "text": "Ottimo lavoro, mi piace molto il servizio.",
+              "isCorrect": false
+            },
+            {
+              "text": "Si nota molto, siete davvero all'avanguardia.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie. Le auguro una serata produttiva.",
+          "english": "Thank you. I wish you a productive evening.",
+          "choices": [
+            {
+              "text": "Grazie mille, buona serata anche a lei.",
+              "english": "Thanks a lot, good evening to you too.",
+              "isCorrect": true
+            },
+            {
+              "text": "Dov'è il ristorante dell'hotel?",
+              "english": "Where is the hotel restaurant?",
+              "isCorrect": false
+            },
+            {
+              "text": "Le auguro il meglio per il suo lavoro.",
+              "english": "I wish you the best for your work.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "A risentirci! Buona permanenza.",
+          "english": "Talk to you later! Have a nice stay.",
+          "choices": [
+            {
+              "text": "Arrivederci e buona serata!",
+              "english": "Goodbye and have a good evening!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Dov'è l'uscita principale?",
+              "english": "Where is the main exit?",
+              "isCorrect": false
+            },
+            {
+              "text": "Il segnale wifi è molto stabile.",
+              "english": "The wifi signal is very stable.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

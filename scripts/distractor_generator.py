@@ -44,10 +44,18 @@ def main(scenario_slug):
         for item in data:
             if "choicesItalian" not in item:
                 # Generate 3 distractors
-                distractors = get_similar_length_items(all_italian, item["italian"], 3)
-                choices = [item["italian"]] + distractors
-                random.shuffle(choices)
-                item["choicesItalian"] = choices
+                distractors = get_similar_length_items(all_italian, item["italian"], 10) # get more to ensure uniqueness
+                
+                final_choices = {item["italian"]}
+                for d in distractors:
+                    if d.lower() not in [c.lower() for c in final_choices]:
+                        final_choices.add(d)
+                    if len(final_choices) >= 4:
+                        break
+                        
+                choices_list = list(final_choices)
+                random.shuffle(choices_list)
+                item["choicesItalian"] = choices_list
                 
         with open(fpath, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)

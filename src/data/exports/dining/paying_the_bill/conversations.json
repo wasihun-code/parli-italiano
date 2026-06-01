@@ -1,0 +1,460 @@
+{
+  "conversations": [
+    {
+      "id": "conv1",
+      "title": "Asking for the Bill",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Desiderate altro o posso portarvi il conto?",
+          "english": "Would you like anything else or can I bring you the bill?",
+          "audio": "/audio/conv1_h1.opus"
+        },
+        {
+          "id": "m2",
+          "role": "user",
+          "text": "No grazie, può portarci il conto per favore?",
+          "english": "No thanks, can you bring us the bill please?",
+          "choices": [
+            { "text": "No grazie, può portarci il conto per favore?", "isCorrect": true, "english": "No thanks, can you bring us the bill please?" },
+            { "text": "Sì grazie, vorrei un altro caffè per favore.", "isCorrect": false, "english": "Yes thanks, I would like another coffee please." },
+            { "text": "No grazie, vorrei ordinare un dolce ora.", "isCorrect": false, "english": "No thanks, I would like to order a dessert now." }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente, arrivo subito con il conto.",
+          "english": "Certainly, I'll be right back with the bill.",
+          "audio": "/audio/conv1_h2.opus"
+        },
+        {
+          "id": "m4",
+          "role": "user",
+          "text": "Posso pagare con la carta di credito?",
+          "english": "Can I pay with credit card?",
+          "choices": [
+            { "text": "Posso pagare con la carta di credito?", "isCorrect": true, "english": "Can I pay with credit card?" },
+            { "text": "Posso pagare solo con i contanti?", "isCorrect": false, "english": "Can I pay only with cash?" },
+            { "text": "Dove posso trovare un bancomat vicino?", "isCorrect": false, "english": "Where can I find an ATM nearby?" }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, accettiamo tutte le carte di credito e il bancomat.",
+          "english": "Yes, we accept all credit cards and debit cards.",
+          "audio": "/audio/conv1_h3.opus"
+        },
+        {
+          "id": "m6",
+          "role": "user",
+          "text": "Perfetto, la ringrazio molto.",
+          "english": "Perfect, thank you very much.",
+          "choices": [
+            { "text": "Perfetto, la ringrazio molto.", "isCorrect": true, "english": "Perfect, thank you very much." },
+            { "text": "Va bene, non ho la carta.", "isCorrect": false, "english": "Okay, I don't have the card." },
+            { "text": "Peccato, preferisco i contanti.", "isCorrect": false, "english": "Too bad, I prefer cash." }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco a lei. In totale sono quarantacinque euro.",
+          "english": "Here you go. In total it is forty-five euros.",
+          "audio": "/audio/conv1_h4.opus"
+        },
+        {
+          "id": "m8",
+          "role": "user",
+          "text": "Ecco la mia carta, può procedere.",
+          "english": "Here is my card, you can proceed.",
+          "choices": [
+            { "text": "Ecco la mia carta, può procedere.", "isCorrect": true, "english": "Here is my card, you can proceed." },
+            { "text": "Ecco il menù, grazie mille.", "isCorrect": false, "english": "Here is the menu, thank you very much." },
+            { "text": "Ecco i soldi, tenga il resto.", "isCorrect": false, "english": "Here is the money, keep the change." }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie. Può inserire la carta nel lettore e digitare il PIN?",
+          "english": "Thanks. Can you insert the card into the reader and type the PIN?",
+          "audio": "/audio/conv1_h5.opus"
+        },
+        {
+          "id": "m10",
+          "role": "user",
+          "text": "Certo, ecco fatto. È andata?",
+          "english": "Sure, here it is. Did it go through?",
+          "choices": [
+            { "text": "Certo, ecco fatto. È andata?", "isCorrect": true, "english": "Sure, here it is. Did it go through?" },
+            { "text": "Certo, non ricordo il PIN.", "isCorrect": false, "english": "Sure, I don't remember the PIN." },
+            { "text": "No, non voglio mettere il PIN.", "isCorrect": false, "english": "No, I don't want to put the PIN." }
+          ]
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Sì, pagamento accettato. Ecco la sua ricevuta.",
+          "english": "Yes, payment accepted. Here is your receipt.",
+          "audio": "/audio/conv1_h6.opus"
+        },
+        {
+          "id": "m12",
+          "role": "user",
+          "text": "Grazie mille, buona giornata e arrivederci.",
+          "english": "Thank you very much, have a nice day and goodbye.",
+          "choices": [
+            { "text": "Grazie mille, buona giornata e arrivederci.", "isCorrect": true, "english": "Thank you very much, have a nice day and goodbye." },
+            { "text": "Grazie mille, vorrei un altro tavolo.", "isCorrect": false, "english": "Thank you very much, I would like another table." },
+            { "text": "Arrivederci, posso avere il menù?", "isCorrect": false, "english": "Goodbye, can I have the menu?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conv2",
+      "title": "Splitting the Bill",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Volete pagare tutto insieme o facciamo conti separati?",
+          "english": "Do you want to pay all together or shall we do separate bills?",
+          "audio": "/audio/conv2_h1.opus"
+        },
+        {
+          "id": "m2",
+          "role": "user",
+          "text": "Vorremmo dividere il conto in due, per favore.",
+          "english": "We would like to split the bill in two, please.",
+          "choices": [
+            { "text": "Vorremmo dividere il conto in due, per favore.", "isCorrect": true, "english": "We would like to split the bill in two, please." },
+            { "text": "Vorremmo pagare tutto insieme, grazie.", "isCorrect": false, "english": "We would like to pay all together, thanks." },
+            { "text": "Vorrei pagare solo la mia acqua.", "isCorrect": false, "english": "I would like to pay only for my water." }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente. Quindi sono venti euro a testa.",
+          "english": "Certainly. So it is twenty euros each.",
+          "audio": "/audio/conv2_h2.opus"
+        },
+        {
+          "id": "m4",
+          "role": "user",
+          "text": "Va bene. Io pago con il bancomat.",
+          "english": "All right. I'll pay with the debit card.",
+          "choices": [
+            { "text": "Va bene. Io pago con il bancomat.", "isCorrect": true, "english": "All right. I'll pay with the debit card." },
+            { "text": "Va bene. Io non voglio pagare.", "isCorrect": false, "english": "All right. I don't want to pay." },
+            { "text": "Va bene. Io pago con i contanti.", "isCorrect": false, "english": "All right. I'll pay with cash." }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo. E per l'altra metà?",
+          "english": "Agreed. And for the other half?",
+          "audio": "/audio/conv2_h3.opus"
+        },
+        {
+          "id": "m6",
+          "role": "user",
+          "text": "Il mio amico paga in contanti.",
+          "english": "My friend is paying in cash.",
+          "choices": [
+            { "text": "Il mio amico paga in contanti.", "isCorrect": true, "english": "My friend is paying in cash." },
+            { "text": "Il mio amico non ha soldi.", "isCorrect": false, "english": "My friend has no money." },
+            { "text": "Il mio amico paga con la carta.", "isCorrect": false, "english": "My friend pays with the card." }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Ecco lo scontrino per la prima parte.",
+          "english": "Perfect. Here is the receipt for the first part.",
+          "audio": "/audio/conv2_h4.opus"
+        },
+        {
+          "id": "m8",
+          "role": "user",
+          "text": "Grazie. Ecco i venti euro del mio amico.",
+          "english": "Thanks. Here are my friend's twenty euros.",
+          "choices": [
+            { "text": "Grazie. Ecco i venti euro del mio amico.", "isCorrect": true, "english": "Thanks. Here are my friend's twenty euros." },
+            { "text": "Grazie. Ecco le chiavi della macchina.", "isCorrect": false, "english": "Thanks. Here are the car keys." },
+            { "text": "Grazie. Posso avere un altro bicchiere?", "isCorrect": false, "english": "Thanks. Can I have another glass?" }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Molto bene. Vi porto subito anche il secondo scontrino.",
+          "english": "Very well. I'll bring you the second receipt right away too.",
+          "audio": "/audio/conv2_h5.opus"
+        },
+        {
+          "id": "m10",
+          "role": "user",
+          "text": "Grazie, è stato tutto molto buono.",
+          "english": "Thanks, everything was very good.",
+          "choices": [
+            { "text": "Grazie, è stato tutto molto buono.", "isCorrect": true, "english": "Thanks, everything was very good." },
+            { "text": "Grazie, il cibo non mi è piaciuto.", "isCorrect": false, "english": "Thanks, I didn't like the food." },
+            { "text": "Grazie, vorrei parlare con il cuoco.", "isCorrect": false, "english": "Thanks, I would like to speak with the chef." }
+          ]
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Mi fa piacere. Grazie a voi e buona serata.",
+          "english": "I'm glad. Thank you and have a good evening.",
+          "audio": "/audio/conv2_h6.opus"
+        },
+        {
+          "id": "m12",
+          "role": "user",
+          "text": "Buona serata anche a lei, arrivederci.",
+          "english": "Good evening to you too, goodbye.",
+          "choices": [
+            { "text": "Buona serata anche a lei, arrivederci.", "isCorrect": true, "english": "Good evening to you too, goodbye." },
+            { "text": "Buona notte, dove sono le chiavi?", "isCorrect": false, "english": "Good night, where are the keys?" },
+            { "text": "Arrivederci, vorrei ordinare la pasta.", "isCorrect": false, "english": "Goodbye, I would like to order pasta." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conv3",
+      "title": "Service and Tip",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ecco il conto. Sono sessanta euro in tutto.",
+          "english": "Here is the bill. It is sixty euros in total.",
+          "audio": "/audio/conv3_h1.opus"
+        },
+        {
+          "id": "m2",
+          "role": "user",
+          "text": "Scusi, il servizio è incluso nel prezzo?",
+          "english": "Excuse me, is the service included in the price?",
+          "choices": [
+            { "text": "Scusi, il servizio è incluso nel prezzo?", "isCorrect": true, "english": "Excuse me, is the service included in the price?" },
+            { "text": "Scusi, posso avere un po' di pane?", "isCorrect": false, "english": "Excuse me, can I have some bread?" },
+            { "text": "Scusi, quanto costa questa bottiglia?", "isCorrect": false, "english": "Excuse me, how much does this bottle cost?" }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, il coperto e il servizio sono già inclusi.",
+          "english": "Yes, the cover charge and service are already included.",
+          "audio": "/audio/conv3_h2.opus"
+        },
+        {
+          "id": "m4",
+          "role": "user",
+          "text": "Ah capisco. Vorrei lasciare comunque una mancia.",
+          "english": "Ah I see. I would like to leave a tip anyway.",
+          "choices": [
+            { "text": "Ah capisco. Vorrei lasciare comunque una mancia.", "isCorrect": true, "english": "Ah I see. I would like to leave a tip anyway." },
+            { "text": "Ah capisco. Non voglio pagare il servizio.", "isCorrect": false, "english": "Ah I see. I don't want to pay for service." },
+            { "text": "Ah capisco. Dov'è il bagno, per favore?", "isCorrect": false, "english": "Ah I see. Where is the bathroom, please?" }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "È molto gentile da parte sua, grazie.",
+          "english": "That's very kind of you, thanks.",
+          "audio": "/audio/conv3_h3.opus"
+        },
+        {
+          "id": "m6",
+          "role": "user",
+          "text": "Ecco a lei settanta euro. Tenga pure il resto.",
+          "english": "Here are seventy euros for you. Keep the change.",
+          "choices": [
+            { "text": "Ecco a lei settanta euro. Tenga pure il resto.", "isCorrect": true, "english": "Here are seventy euros for you. Keep the change." },
+            { "text": "Ecco a lei dieci euro. Mi dia il resto.", "isCorrect": false, "english": "Here are ten euros for you. Give me the change." },
+            { "text": "Ecco la mia carta. Non voglio il resto.", "isCorrect": false, "english": "Here is my card. I don't want the change." }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "La ringrazio molto, è stato gentilissimo.",
+          "english": "Thank you very much, you were very kind.",
+          "audio": "/audio/conv3_h4.opus"
+        },
+        {
+          "id": "m8",
+          "role": "user",
+          "text": "Prego. Posso avere una ricevuta fiscale?",
+          "english": "You're welcome. Can I have a formal receipt?",
+          "choices": [
+            { "text": "Prego. Posso avere una ricevuta fiscale?", "isCorrect": true, "english": "You're welcome. Can I have a formal receipt?" },
+            { "text": "Prego. Posso avere un altro bicchiere?", "isCorrect": false, "english": "You're welcome. Can I have another glass?" },
+            { "text": "Prego. Posso avere il sale e il pepe?", "isCorrect": false, "english": "You're welcome. Can I have salt and pepper?" }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente, gliela preparo subito.",
+          "english": "Certainly, I'll prepare it for you right away.",
+          "audio": "/audio/conv3_h5.opus"
+        },
+        {
+          "id": "m10",
+          "role": "user",
+          "text": "Grazie, mi serve per il mio lavoro.",
+          "english": "Thanks, I need it for my work.",
+          "choices": [
+            { "text": "Grazie, mi serve per il mio lavoro.", "isCorrect": true, "english": "Thanks, I need it for my work." },
+            { "text": "Grazie, non mi serve per niente.", "isCorrect": false, "english": "Thanks, I don't need it at all." },
+            { "text": "Grazie, vorrei un tavolo fuori.", "isCorrect": false, "english": "Thanks, I would like a table outside." }
+          ]
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Ecco a lei. Grazie ancora e arrivederci.",
+          "english": "Here you go. Thanks again and goodbye.",
+          "audio": "/audio/conv3_h6.opus"
+        },
+        {
+          "id": "m12",
+          "role": "user",
+          "text": "Arrivederci e grazie per l'ottimo servizio.",
+          "english": "Goodbye and thanks for the excellent service.",
+          "choices": [
+            { "text": "Arrivederci e grazie per l'ottimo servizio.", "isCorrect": true, "english": "Goodbye and thanks for the excellent service." },
+            { "text": "Arrivederci e vorrei un'altra pizza.", "isCorrect": false, "english": "Goodbye and I would like another pizza." },
+            { "text": "Buongiorno, posso avere il conto?", "isCorrect": false, "english": "Good morning, can I have the bill?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conv4",
+      "title": "Payment Issues",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Mi dispiace, ma la sua carta è stata rifiutata.",
+          "english": "I'm sorry, but your card has been declined.",
+          "audio": "/audio/conv4_h1.opus"
+        },
+        {
+          "id": "m2",
+          "role": "user",
+          "text": "Oh, strano. Forse c'è un problema con il lettore.",
+          "english": "Oh, strange. Maybe there is a problem with the reader.",
+          "choices": [
+            { "text": "Oh, strano. Forse c'è un problema con il lettore.", "isCorrect": true, "english": "Oh, strange. Maybe there is a problem with the reader." },
+            { "text": "Oh, strano. Forse non ho più soldi.", "isCorrect": false, "english": "Oh, strange. Maybe I have no more money." },
+            { "text": "Oh, bene. Allora non pago nulla.", "isCorrect": false, "english": "Oh, good. Then I pay nothing." }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Possiamo riprovare o può usare un'altra carta.",
+          "english": "We can try again or you can use another card.",
+          "audio": "/audio/conv4_h2.opus"
+        },
+        {
+          "id": "m4",
+          "role": "user",
+          "text": "Proviamo un'altra volta con questa stessa carta.",
+          "english": "Let's try one more time with this same card.",
+          "choices": [
+            { "text": "Proviamo un'altra volta con questa stessa carta.", "isCorrect": true, "english": "Let's try one more time with this same card." },
+            { "text": "Proviamo con i soldi del mio amico.", "isCorrect": false, "english": "Let's try with my friend's money." },
+            { "text": "Proviamo a chiamare la polizia.", "isCorrect": false, "english": "Let's try calling the police." }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Niente da fare, dà ancora lo stesso errore.",
+          "english": "Nothing doing, it still gives the same error.",
+          "audio": "/audio/conv4_h3.opus"
+        },
+        {
+          "id": "m6",
+          "role": "user",
+          "text": "Va bene, provo con questa carta di credito.",
+          "english": "All right, I'll try with this credit card.",
+          "choices": [
+            { "text": "Va bene, provo con questa carta di credito.", "isCorrect": true, "english": "All right, I'll try with this credit card." },
+            { "text": "Va bene, non ho altre carte qui.", "isCorrect": false, "english": "All right, I have no other cards here." },
+            { "text": "Va bene, vado a prendere i contanti.", "isCorrect": false, "english": "All right, I'm going to get cash." }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Questa volta ha funzionato perfettamente. Grazie.",
+          "english": "This time it worked perfectly. Thanks.",
+          "audio": "/audio/conv4_h4.opus"
+        },
+        {
+          "id": "m8",
+          "role": "user",
+          "text": "Meno male! Mi scusi per il disturbo.",
+          "english": "Thank goodness! Excuse me for the trouble.",
+          "choices": [
+            { "text": "Meno male! Mi scusi per il disturbo.", "isCorrect": true, "english": "Thank goodness! Excuse me for the trouble." },
+            { "text": "Meno male! Mi porti un altro vino.", "isCorrect": false, "english": "Thank goodness! Bring me another wine." },
+            { "text": "Peccato! Volevo pagare con l'altra.", "isCorrect": false, "english": "Too bad! I wanted to pay with the other one." }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Non si preoccupi, succede spesso. Ecco la ricevuta.",
+          "english": "Don't worry, it happens often. Here is the receipt.",
+          "audio": "/audio/conv4_h5.opus"
+        },
+        {
+          "id": "m10",
+          "role": "user",
+          "text": "Grazie. Posso avere anche una busta?",
+          "english": "Thanks. Can I also have an envelope?",
+          "choices": [
+            { "text": "Grazie. Posso avere anche una busta?", "isCorrect": true, "english": "Thanks. Can I also have an envelope?" },
+            { "text": "Grazie. Posso avere anche un dolce?", "isCorrect": false, "english": "Thanks. Can I also have a dessert?" },
+            { "text": "Grazie. Posso avere anche il sale?", "isCorrect": false, "english": "Thanks. Can I also have the salt?" }
+          ]
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Certamente, gliela porto subito. Arrivederci.",
+          "english": "Certainly, I'll bring it right away. Goodbye.",
+          "audio": "/audio/conv4_h6.opus"
+        },
+        {
+          "id": "m12",
+          "role": "user",
+          "text": "Arrivederci e grazie di tutto, a presto.",
+          "english": "Goodbye and thanks for everything, see you soon.",
+          "choices": [
+            { "text": "Arrivederci e grazie di tutto, a presto.", "isCorrect": true, "english": "Goodbye and thanks for everything, see you soon." },
+            { "text": "Arrivederci, vorrei ordinare un caffè.", "isCorrect": false, "english": "Goodbye, I would like to order a coffee." },
+            { "text": "Buongiorno, sono qui per mangiare.", "isCorrect": false, "english": "Good morning, I'm here to eat." }
+          ]
+        }
+      ]
+    }
+  ]
+}

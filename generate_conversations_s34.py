@@ -1,0 +1,484 @@
+import json
+import os
+
+scenario_id = 34
+base_path = "src/data/exports/dining/vegetarian_meal/"
+
+conversations = [
+    {
+      "id": "checking_menu",
+      "title": "Checking the Menu",
+      "description": "Asking about vegetarian and vegan options on the menu.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Siete pronti per ordinare o volete vedere il menu?",
+          "english": "Good morning! Are you ready to order or do you want to see the menu?",
+          "choices": [
+            {"text": "Buongiorno, avete piatti vegetariani?", "english": "Good morning, do you have vegetarian dishes?", "isCorrect": True},
+            {"text": "Buongiorno, avete tavoli liberi oggi?", "english": "Good morning, do you have free tables today?", "isCorrect": False},
+            {"text": "Buongiorno, avete menu in inglese qui?", "english": "Good morning, do you have English menus here?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente, abbiamo un'intera sezione dedicata. La trova a pagina tre.",
+          "english": "Certainly, we have an entire dedicated section. You can find it on page three.",
+          "choices": [
+            {"text": "Grazie, ci sono anche opzioni vegane?", "english": "Thanks, are there also vegan options?", "isCorrect": True},
+            {"text": "Grazie, ci sono anche piatti di carne?", "english": "Thanks, are there also meat dishes?", "isCorrect": False},
+            {"text": "Grazie, ci sono anche sconti speciali?", "english": "Thanks, are there also special discounts?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, molti piatti vegetariani possono essere fatti vegani senza formaggio.",
+          "english": "Yes, many vegetarian dishes can be made vegan without cheese.",
+          "choices": [
+            {"text": "Ottimo, la pasta al pomodoro è vegana?", "english": "Great, is the pasta with tomato sauce vegan?", "isCorrect": True},
+            {"text": "Ottimo, la bistecca ai ferri è vegana?", "english": "Great, is the grilled steak vegan?", "isCorrect": False},
+            {"text": "Ottimo, la torta al cioccolato è vegana?", "english": "Great, is the chocolate cake vegan?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, usiamo solo pasta di grano duro senza uova per quella.",
+          "english": "Yes, we only use durum wheat pasta without eggs for that one.",
+          "choices": [
+            {"text": "Perfetto, allora vorrei ordinare quella.", "english": "Perfect, then I would like to order that one.", "isCorrect": True},
+            {"text": "Perfetto, allora vorrei ordinare pesce.", "english": "Perfect, then I would like to order fish.", "isCorrect": False},
+            {"text": "Perfetto, allora vorrei ordinare il conto.", "english": "Perfect, then I would like to order the bill.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Benissimo. Desidera qualcos'altro da bere insieme alla pasta?",
+          "english": "Very well. Would you like anything else to drink with the pasta?",
+          "choices": [
+            {"text": "Un bicchiere d'acqua naturale, grazie.", "english": "A glass of still water, thanks.", "isCorrect": True},
+            {"text": "Un bicchiere di latte caldo, grazie.", "english": "A glass of hot milk, thanks.", "isCorrect": False},
+            {"text": "Un bicchiere di brodo caldo, grazie.", "english": "A glass of hot broth, thanks.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Arriva subito. Le porto anche un po' di pane?",
+          "english": "Coming right up. Shall I also bring you some bread?",
+          "choices": [
+            {"text": "Sì, ma assicuratevi che sia senza burro.", "english": "Yes, but make sure it is without butter.", "isCorrect": True},
+            {"text": "Sì, ma assicuratevi che sia molto caro.", "english": "Yes, but make sure it is very expensive.", "isCorrect": False},
+            {"text": "Sì, ma assicuratevi che sia fatto di carne.", "english": "Yes, but make sure it is made of meat.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente, il nostro pane è fatto solo con acqua, farina e lievito.",
+          "english": "Certainly, our bread is made only with water, flour, and yeast.",
+          "choices": [
+            {"text": "Bene, è esattamente quello che cercavo.", "english": "Good, it is exactly what I was looking for.", "isCorrect": True},
+            {"text": "Bene, è esattamente quello che odiavo.", "english": "Good, it is exactly what I hated.", "isCorrect": False},
+            {"text": "Bene, è esattamente quello che evitavo.", "english": "Good, it is exactly what I avoided.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottima scelta. Posso portarle anche un antipasto di verdure?",
+          "english": "Excellent choice. Can I also bring you a vegetable appetizer?",
+          "choices": [
+            {"text": "Sì, quali verdure avete oggi?", "english": "Yes, what vegetables do you have today?", "isCorrect": True},
+            {"text": "Sì, quali carni avete oggi?", "english": "Yes, what meats do you have today?", "isCorrect": False},
+            {"text": "Sì, quali dolci avete oggi?", "english": "Yes, what sweets do you have today?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Abbiamo zucchine, melanzane e peperoni alla griglia.",
+          "english": "We have grilled zucchini, eggplant, and peppers.",
+          "choices": [
+            {"text": "Prendo le melanzane, grazie mille.", "english": "I'll take the eggplant, thank you very much.", "isCorrect": True},
+            {"text": "Prendo il prosciutto, grazie mille.", "english": "I'll take the ham, thank you very much.", "isCorrect": False},
+            {"text": "Prendo il tonno, grazie mille.", "english": "I'll take the tuna, thank you very much.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto, allora una pasta e le melanzane. A tra poco!",
+          "english": "Perfect, so one pasta and the eggplant. See you in a bit!",
+          "choices": [
+            {"text": "Grazie, attendo con piacere.", "english": "Thanks, I look forward to it.", "isCorrect": True},
+            {"text": "Grazie, vado via subito.", "english": "Thanks, I'm leaving right now.", "isCorrect": False},
+            {"text": "Grazie, non ho più fame.", "english": "Thanks, I'm no longer hungry.", "isCorrect": False}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vegan_substitutions",
+      "title": "Vegan Substitutions",
+      "description": "Asking for plant-based alternatives and removing animal products.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Desidera ordinare l'insalata mista della casa?",
+          "english": "Would you like to order the house mixed salad?",
+          "choices": [
+            {"text": "Sì, ma vorrei chiedere una modifica.", "english": "Yes, but I would like to ask for a change.", "isCorrect": True},
+            {"text": "Sì, ma vorrei chiedere uno sconto.", "english": "Yes, but I would like to ask for a discount.", "isCorrect": False},
+            {"text": "Sì, ma vorrei chiedere un taxi.", "english": "Yes, but I would like to ask for a taxi.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Dica pure, cerchiamo di accontentare tutti i clienti.",
+          "english": "Go ahead, we try to satisfy all customers.",
+          "choices": [
+            {"text": "È possibile averla senza mozzarella?", "english": "Is it possible to have it without mozzarella?", "isCorrect": True},
+            {"text": "È possibile averla senza lattuga?", "english": "Is it possible to have it without lettuce?", "isCorrect": False},
+            {"text": "È possibile averla senza piatto?", "english": "Is it possible to have it without a plate?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente, possiamo togliere il formaggio senza problemi.",
+          "english": "Certainly, we can remove the cheese without problems.",
+          "choices": [
+            {"text": "Potete aggiungere dei ceci o del tofu?", "english": "Can you add some chickpeas or tofu?", "isCorrect": True},
+            {"text": "Potete aggiungere del salame o del pollo?", "english": "Can you add some salami or chicken?", "isCorrect": False},
+            {"text": "Potete aggiungere dello zucchero o del miele?", "english": "Can you add some sugar or honey?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Abbiamo dei ceci biologici, li aggiungo subito.",
+          "english": "We have organic chickpeas, I'll add them right away.",
+          "choices": [
+            {"text": "Grazie, e per il condimento?", "english": "Thanks, and for the dressing?", "isCorrect": True},
+            {"text": "Grazie, e per il parcheggio?", "english": "Thanks, and for the parking?", "isCorrect": False},
+            {"text": "Grazie, e per il pagamento?", "english": "Thanks, and for the payment?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Usiamo olio d'oliva extravergine e aceto balsamico.",
+          "english": "We use extra virgin olive oil and balsamic vinegar.",
+          "choices": [
+            {"text": "Va benissimo, niente maionese per me.", "english": "That's fine, no mayonnaise for me.", "isCorrect": True},
+            {"text": "Va benissimo, niente acqua per me.", "english": "That's fine, no water for me.", "isCorrect": False},
+            {"text": "Va benissimo, niente forchetta per me.", "english": "That's fine, no fork for me.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Nessun problema. Vorrebbe anche un caffè più tardi?",
+          "english": "No problem. Would you like a coffee later too?",
+          "choices": [
+            {"text": "Sì, ma solo se avete latte di soia.", "english": "Yes, but only if you have soy milk.", "isCorrect": True},
+            {"text": "Sì, ma solo se avete latte di mucca.", "english": "Yes, but only if you have cow milk.", "isCorrect": False},
+            {"text": "Sì, ma solo se avete latte di capra.", "english": "Yes, but only if you have goat milk.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, abbiamo sia latte di soia che di avena.",
+          "english": "Yes, we have both soy and oat milk.",
+          "choices": [
+            {"text": "Ottimo, allora prendo un cappuccino di soia.", "english": "Great, then I'll have a soy cappuccino.", "isCorrect": True},
+            {"text": "Ottimo, allora prendo un cappuccino di carne.", "english": "Great, then I'll have a meat cappuccino.", "isCorrect": False},
+            {"text": "Ottimo, allora prendo un cappuccino di uova.", "english": "Great, then I'll have an egg cappuccino.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "D'accordo. Lo preferisce con molto cacao sopra?",
+          "english": "Agreed. Do you prefer it with lots of cocoa on top?",
+          "choices": [
+            {"text": "Sì, grazie. Il cacao è puro?", "english": "Yes, thanks. Is the cocoa pure?", "isCorrect": True},
+            {"text": "Sì, grazie. Il cacao è finto?", "english": "Yes, thanks. Is the cocoa fake?", "isCorrect": False},
+            {"text": "Sì, grazie. Il cacao è fritto?", "english": "Yes, thanks. Is the cocoa fried?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, è cacao amaro, senza zuccheri aggiunti.",
+          "english": "Yes, it's bitter cocoa, without added sugars.",
+          "choices": [
+            {"text": "Perfetto, è proprio quello che volevo.", "english": "Perfect, it's exactly what I wanted.", "isCorrect": True},
+            {"text": "Perfetto, è proprio quello che temevo.", "english": "Perfect, it's exactly what I feared.", "isCorrect": False},
+            {"text": "Perfetto, è proprio quello che buttavo.", "english": "Perfect, it's exactly what I was throwing away.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Glielo porto dopo l'insalata. Buon appetito!",
+          "english": "I'll bring it to you after the salad. Enjoy your meal!",
+          "choices": [
+            {"text": "Grazie, lei è molto gentile.", "english": "Thanks, you are very kind.", "isCorrect": True},
+            {"text": "Grazie, lei è molto lento.", "english": "Thanks, you are very slow.", "isCorrect": False},
+            {"text": "Grazie, lei è molto strano.", "english": "Thanks, you are very strange.", "isCorrect": False}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hidden_ingredients",
+      "title": "Hidden Ingredients (Broth)",
+      "description": "Inquiring about animal products in soups and sauces.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "La nostra zuppa del giorno è molto saporita. La vuole?",
+          "english": "Our soup of the day is very flavorful. Do you want it?",
+          "choices": [
+            {"text": "Sembra buona. È fatta con brodo vegetale?", "english": "It sounds good. Is it made with vegetable broth?", "isCorrect": True},
+            {"text": "Sembra buona. È fatta con brodo di carne?", "english": "It sounds good. Is it made with meat broth?", "isCorrect": False},
+            {"text": "Sembra buona. È fatta con brodo di pesce?", "english": "It sounds good. Is it made with fish broth?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi faccia controllare con lo chef per sicurezza.",
+          "english": "Let me check with the chef just to be sure.",
+          "choices": [
+            {"text": "Grazie, perché non mangio né carne né pesce.", "english": "Thanks, because I eat neither meat nor fish.", "isCorrect": True},
+            {"text": "Grazie, perché non mangio né frutta né verdura.", "english": "Thanks, because I eat neither fruit nor vegetables.", "isCorrect": False},
+            {"text": "Grazie, perché non mangio né pane né pasta.", "english": "Thanks, because I eat neither bread nor pasta.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Lo chef dice che purtroppo c'è del brodo di pollo.",
+          "english": "The chef says that unfortunately there is some chicken broth.",
+          "choices": [
+            {"text": "Ah, capisco. Allora non posso prenderla.", "english": "Ah, I see. Then I cannot have it.", "isCorrect": True},
+            {"text": "Ah, capisco. Allora ne prendo due piatti.", "english": "Ah, I see. Then I'll have two plates of it.", "isCorrect": False},
+            {"text": "Ah, capisco. Allora la prendo subito.", "english": "Ah, I see. Then I'll have it right away.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Le chiedo scusa. Abbiamo però un risotto ai funghi.",
+          "english": "I apologize. We have a mushroom risotto, though.",
+          "choices": [
+            {"text": "Il risotto è cotto con brodo vegetale?", "english": "Is the risotto cooked with vegetable broth?", "isCorrect": True},
+            {"text": "Il risotto è cotto con brodo di ossa?", "english": "Is the risotto cooked with bone broth?", "isCorrect": False},
+            {"text": "Il risotto è cotto con brodo di maiale?", "english": "Is the risotto cooked with pork broth?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, per il risotto usiamo solo brodo di verdure fresche.",
+          "english": "Yes, for the risotto we only use fresh vegetable broth.",
+          "choices": [
+            {"text": "C'è burro o parmigiano dentro il riso?", "english": "Is there butter or parmesan inside the rice?", "isCorrect": True},
+            {"text": "C'è pancetta o prosciutto dentro il riso?", "english": "Is there bacon or ham inside the rice?", "isCorrect": False},
+            {"text": "C'è zucchero o cannella dentro il riso?", "english": "Is there sugar or cinnamon inside the rice?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, aggiungiamo un po' di burro alla fine.",
+          "english": "Yes, we add a bit of butter at the end.",
+          "choices": [
+            {"text": "Si può avere senza burro, solo con olio?", "english": "Can I have it without butter, just with oil?", "isCorrect": True},
+            {"text": "Si può avere con più burro, per favore?", "english": "Can I have it with more butter, please?", "isCorrect": False},
+            {"text": "Si può avere con della panna, per favore?", "english": "Can I have it with some cream, please?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente, lo chef userà un ottimo olio toscano.",
+          "english": "Certainly, the chef will use an excellent Tuscan oil.",
+          "choices": [
+            {"text": "Ottimo, allora prendo il risotto senza burro.", "english": "Great, then I'll have the risotto without butter.", "isCorrect": True},
+            {"text": "Ottimo, allora prendo il risotto con la carne.", "english": "Great, then I'll have the risotto with meat.", "isCorrect": False},
+            {"text": "Ottimo, allora prendo il risotto con il pesce.", "english": "Great, then I'll have the risotto with fish.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottima scelta. Qualcosa da bere nell'attesa?",
+          "english": "Excellent choice. Something to drink while waiting?",
+          "choices": [
+            {"text": "Solo un po' d'acqua gassata, grazie.", "english": "Just some sparkling water, thanks.", "isCorrect": True},
+            {"text": "Solo un bicchiere di latte, grazie.", "english": "Just a glass of milk, thanks.", "isCorrect": False},
+            {"text": "Solo un bicchiere di vino rosso, grazie.", "english": "Just a glass of red wine, thanks.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Il risotto richiede circa venti minuti.",
+          "english": "Perfect. The risotto takes about twenty minutes.",
+          "choices": [
+            {"text": "Nessun problema, posso aspettare tranquillamente.", "english": "No problem, I can wait quietly.", "isCorrect": True},
+            {"text": "Nessun problema, ho molta fretta oggi.", "english": "No problem, I'm in a big hurry today.", "isCorrect": False},
+            {"text": "Nessun problema, non voglio più aspettare.", "english": "No problem, I don't want to wait anymore.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "La ringrazio per la pazienza. A tra poco.",
+          "english": "Thank you for your patience. See you in a bit.",
+          "choices": [
+            {"text": "Grazie a lei, a dopo.", "english": "Thank you, see you later.", "isCorrect": True},
+            {"text": "Grazie a lei, a mai più.", "english": "Thank you, never see you again.", "isCorrect": False},
+            {"text": "Grazie a lei, ho cambiato idea.", "english": "Thank you, I changed my mind.", "isCorrect": False}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dessert_options",
+      "title": "Dessert Options",
+      "description": "Checking for eggs and dairy in desserts.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Volete vedere la nostra lista dei dolci fatti in casa?",
+          "english": "Do you want to see our list of homemade desserts?",
+          "choices": [
+            {"text": "Sì, avete qualche dolce senza uova?", "english": "Yes, do you have any egg-free desserts?", "isCorrect": True},
+            {"text": "Sì, avete qualche dolce senza zucchero?", "english": "Yes, do you have any sugar-free desserts?", "isCorrect": False},
+            {"text": "Sì, avete qualche dolce senza farina?", "english": "Yes, do you have any flour-free desserts?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Abbiamo un sorbetto al limone che è delizioso.",
+          "english": "We have a lemon sorbet that is delicious.",
+          "choices": [
+            {"text": "Il sorbetto contiene latte o panna?", "english": "Does the sorbet contain milk or cream?", "isCorrect": True},
+            {"text": "Il sorbetto contiene carne o pesce?", "english": "Does the sorbet contain meat or fish?", "isCorrect": False},
+            {"text": "Il sorbetto contiene pasta o riso?", "english": "Does the sorbet contain pasta or rice?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "No, è fatto solo con limone, acqua e zucchero.",
+          "english": "No, it is made only with lemon, water, and sugar.",
+          "choices": [
+            {"text": "Perfetto, allora il sorbetto è vegano.", "english": "Perfect, then the sorbet is vegan.", "isCorrect": True},
+            {"text": "Perfetto, allora il sorbetto è salato.", "english": "Perfect, then the sorbet is salty.", "isCorrect": False},
+            {"text": "Perfetto, allora il sorbetto è piccante.", "english": "Perfect, then the sorbet is spicy.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esattamente. È molto fresco e leggero.",
+          "english": "Exactly. It is very fresh and light.",
+          "choices": [
+            {"text": "Avete anche della frutta fresca di stagione?", "english": "Do you also have some fresh seasonal fruit?", "isCorrect": True},
+            {"text": "Avete anche della carne fresca di stagione?", "english": "Do you also have some fresh seasonal meat?", "isCorrect": False},
+            {"text": "Avete anche della pizza fresca di stagione?", "english": "Do you also have some fresh seasonal pizza?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, oggi abbiamo fragole, melone e ananas.",
+          "english": "Yes, today we have strawberries, melon, and pineapple.",
+          "choices": [
+            {"text": "Prendo una macedonia di frutta senza zucchero.", "english": "I'll have a fruit salad without sugar.", "isCorrect": True},
+            {"text": "Prendo una macedonia di frutta con molto sale.", "english": "I'll have a fruit salad with lots of salt.", "isCorrect": False},
+            {"text": "Prendo una macedonia di frutta con la pasta.", "english": "I'll have a fruit salad with pasta.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Certamente. Vuole aggiungere del liquore sopra?",
+          "english": "Certainly. Do you want to add some liquor on top?",
+          "choices": [
+            {"text": "No grazie, la preferisco al naturale.", "english": "No thanks, I prefer it plain.", "isCorrect": True},
+            {"text": "No grazie, la preferisco col ketchup.", "english": "No thanks, I prefer it with ketchup.", "isCorrect": False},
+            {"text": "No grazie, la preferisco col formaggio.", "english": "No thanks, I prefer it with cheese.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Molto bene. Le porto anche il sorbetto?",
+          "english": "Very well. Shall I also bring you the sorbet?",
+          "choices": [
+            {"text": "Sì, prendo entrambi, grazie mille.", "english": "Yes, I'll take both, thank you very much.", "isCorrect": True},
+            {"text": "Sì, prendo solo il pane, grazie.", "english": "Yes, I'll take only the bread, thanks.", "isCorrect": False},
+            {"text": "Sì, non prendo nulla, grazie.", "english": "Yes, I'll take nothing, thanks.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Desidera anche un amaro o un limoncello?",
+          "english": "Great. Would you also like an amaro or a limoncello?",
+          "choices": [
+            {"text": "Il limoncello è fatto in casa?", "english": "Is the limoncello homemade?", "isCorrect": True},
+            {"text": "Il limoncello è fatto di latte?", "english": "Is the limoncello made of milk?", "isCorrect": False},
+            {"text": "Il limoncello è fatto di uova?", "english": "Is the limoncello made of eggs?", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, lo facciamo noi con i limoni del nostro giardino.",
+          "english": "Yes, we make it ourselves with lemons from our garden.",
+          "choices": [
+            {"text": "Allora ne prendo un bicchierino, grazie.", "english": "Then I'll have a small glass, thanks.", "isCorrect": True},
+            {"text": "Allora ne prendo una bottiglia intera.", "english": "Then I'll have a whole bottle.", "isCorrect": False},
+            {"text": "Allora non mi piace per niente.", "english": "Then I don't like it at all.", "isCorrect": False}
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto, arrivo subito con i dolci e il liquore.",
+          "english": "Perfect, I'll be right back with the desserts and the liquor.",
+          "choices": [
+            {"text": "Molte grazie, a tra poco.", "english": "Many thanks, see you in a bit.", "isCorrect": True},
+            {"text": "Molte grazie, sto dormendo.", "english": "Many thanks, I'm sleeping.", "isCorrect": False},
+            {"text": "Molte grazie, sono già andato.", "english": "Many thanks, I'm already gone.", "isCorrect": False}
+          ]
+        }
+      ]
+    }
+]
+
+data = {
+    "scenarioId": scenario_id,
+    "conversations": conversations
+}
+
+with open(os.path.join(base_path, "conversations.json"), "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)

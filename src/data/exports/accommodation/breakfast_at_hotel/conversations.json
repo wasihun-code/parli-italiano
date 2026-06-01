@@ -1,0 +1,873 @@
+{
+  "scenarioId": 21,
+  "conversations": [
+    {
+      "id": "finding_table_and_coffee",
+      "title": "Finding a Table and Coffee",
+      "description": "Arrive at the breakfast room, find a seat, and order your first drink.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Benvenuti al buffet. Avete il numero della camera?",
+          "english": "Good morning! Welcome to the buffet. Do you have the room number?",
+          "choices": [
+            {
+              "text": "Buongiorno, sì. Siamo nella camera 302.",
+              "isCorrect": true,
+              "english": "Good morning, yes. We are in room 302."
+            },
+            {
+              "text": "Buongiorno, no. La camera è molto piccola.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buongiorno, sì. Il letto è molto comodo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Grazie. Volete accomodarvi in terrazza o qui dentro?",
+          "english": "Thank you. Would you like to sit on the terrace or in here?",
+          "choices": [
+            {
+              "text": "Preferiamo un tavolo in terrazza, se possibile.",
+              "isCorrect": true,
+              "english": "We prefer a table on the terrace, if possible."
+            },
+            {
+              "text": "Vogliamo un tavolo vicino alla porta, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Prendiamo un tavolo vicino al bagno, per favore.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente. Seguite il mio collega, vi mostra il tavolo.",
+          "english": "Certainly. Follow my colleague, he will show you the table.",
+          "choices": [
+            {
+              "text": "Grazie mille, siete molto gentili.",
+              "isCorrect": true,
+              "english": "Thank you very much, you are very kind."
+            },
+            {
+              "text": "Grazie mille, siamo molto stanchi.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille, sono molto felice.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Cosa desiderate da bere per cominciare?",
+          "english": "What would you like to drink to start?",
+          "choices": [
+            {
+              "text": "Vorrei un cappuccino e un succo d'arancia.",
+              "isCorrect": true,
+              "english": "I would like a cappuccino and an orange juice."
+            },
+            {
+              "text": "Vorrei un bicchiere di vino e una birra.",
+              "isCorrect": false
+            },
+            {
+              "text": "Vorrei una tazza di brodo e un tè caldo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Lo volete con latte intero o parzialmente scremato?",
+          "english": "Do you want it with whole or semi-skimmed milk?",
+          "choices": [
+            {
+              "text": "Lo preferisco con latte intero, grazie.",
+              "isCorrect": true,
+              "english": "I prefer it with whole milk, thank you."
+            },
+            {
+              "text": "Lo preferisco con molto zucchero, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Lo preferisco senza schiuma, grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Arrivano subito. Il buffet è libero, servitevi pure.",
+          "english": "They're coming right away. The buffet is open, please help yourself.",
+          "choices": [
+            {
+              "text": "Grazie. Dove posso trovare i tovaglioli?",
+              "isCorrect": true,
+              "english": "Thank you. Where can I find the napkins?"
+            },
+            {
+              "text": "Grazie. Dove posso trovare le valigie?",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie. Dove posso trovare le chiavi?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sono lì sul tavolo centrale, vicino ai piatti.",
+          "english": "They are there on the central table, near the plates.",
+          "choices": [
+            {
+              "text": "Ah, li vedo. Grazie per l'aiuto.",
+              "isCorrect": true,
+              "english": "Ah, I see them. Thanks for the help."
+            },
+            {
+              "text": "Ah, lo vedo. Grazie per l'uscita.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ah, la vedo. Grazie per l'acqua.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Serve altro al momento o è tutto a posto?",
+          "english": "Do you need anything else at the moment or is everything okay?",
+          "choices": [
+            {
+              "text": "Tutto a posto per ora, iniziamo con la frutta.",
+              "isCorrect": true,
+              "english": "Everything's fine for now, let's start with the fruit."
+            },
+            {
+              "text": "Tutto a posto per ora, andiamo in camera.",
+              "isCorrect": false
+            },
+            {
+              "text": "Tutto a posto per ora, cerchiamo il taxi.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottima scelta, la frutta è fresca di stamattina.",
+          "english": "Excellent choice, the fruit is fresh from this morning.",
+          "choices": [
+            {
+              "text": "Mi sembra molto invitante, grazie.",
+              "isCorrect": true,
+              "english": "It looks very inviting, thank you."
+            },
+            {
+              "text": "Mi sembra molto pesante, scusa.",
+              "isCorrect": false
+            },
+            {
+              "text": "Mi sembra molto costoso, prego.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buon appetito allora!",
+          "english": "Enjoy your meal then!",
+          "choices": [
+            {
+              "text": "Grazie mille, a dopo.",
+              "isCorrect": true,
+              "english": "Thank you very much, see you later."
+            },
+            {
+              "text": "Grazie mille, a casa.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille, a letto.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buffet_and_allergies",
+      "title": "Buffet Exploration and Allergies",
+      "description": "Find specific food items and ask about dietary requirements.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarvi a trovare qualcosa al buffet?",
+          "english": "Good morning! Can I help you find something at the buffet?",
+          "choices": [
+            {
+              "text": "Buongiorno, sì. C'è del pane senza glutine?",
+              "isCorrect": true,
+              "english": "Good morning, yes. Is there any gluten-free bread?"
+            },
+            {
+              "text": "Buongiorno, sì. C'è del sapone per le mani?",
+              "isCorrect": false
+            },
+            {
+              "text": "Buongiorno, sì. C'è del fumo in cucina?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente, lo teniamo in un'area separata per sicurezza.",
+          "english": "Certainly, we keep it in a separate area for safety.",
+          "choices": [
+            {
+              "text": "Ottimo, grazie mille per l'attenzione.",
+              "isCorrect": true,
+              "english": "Great, thank you very much for the attention."
+            },
+            {
+              "text": "Ottimo, grazie mille per l'ascensore.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ottimo, grazie mille per la prenotazione.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Desiderate anche del latte di soia o di mandorla?",
+          "english": "Would you also like some soy or almond milk?",
+          "choices": [
+            {
+              "text": "Sì, prenderei volentieri del latte di soia.",
+              "isCorrect": true,
+              "english": "Yes, I would gladly take some soy milk."
+            },
+            {
+              "text": "Sì, comprerei volentieri del latte di mucca.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, cercherei volentieri del latte di capra.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Lo trova lì vicino alle macchine del caffè.",
+          "english": "You find it there near the coffee machines.",
+          "choices": [
+            {
+              "text": "Perfetto, vado subito a prenderlo.",
+              "isCorrect": true,
+              "english": "Perfect, I'm going to get it right away."
+            },
+            {
+              "text": "Perfetto, vado subito a mangiarlo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Perfetto, vado subito a chiamarlo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Abbiamo anche yogurt senza lattosio, se vi interessa.",
+          "english": "We also have lactose-free yogurt, if you are interested.",
+          "choices": [
+            {
+              "text": "Sì, grazie. Dove si trovano gli yogurt?",
+              "isCorrect": true,
+              "english": "Yes, thank you. Where are the yogurts?"
+            },
+            {
+              "text": "Sì, grazie. Dove si trovano gli occhiali?",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, grazie. Dove si trovano gli alberi?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sono nel banco frigo, accanto alla frutta fresca.",
+          "english": "They are in the refrigerated counter, next to the fresh fruit.",
+          "choices": [
+            {
+              "text": "Grazie, vado a dare un'occhiata.",
+              "isCorrect": true,
+              "english": "Thanks, I'll go take a look."
+            },
+            {
+              "text": "Grazie, vado a fare una doccia.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, vado a scrivere una mail.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Volete che vi porti del caffè al tavolo?",
+          "english": "Would you like me to bring some coffee to the table?",
+          "choices": [
+            {
+              "text": "No grazie, preferisco servirmi da solo.",
+              "isCorrect": true,
+              "english": "No thanks, I prefer to help myself."
+            },
+            {
+              "text": "No grazie, preferisco uscire da solo.",
+              "isCorrect": false
+            },
+            {
+              "text": "No grazie, preferisco dormire da solo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Ricordate che serviamo fino alle dieci.",
+          "english": "Alright. Remember that we serve until ten.",
+          "choices": [
+            {
+              "text": "Va bene, abbiamo ancora abbastanza tempo.",
+              "isCorrect": true,
+              "english": "Alright, we still have enough time."
+            },
+            {
+              "text": "Va bene, abbiamo ancora abbastanza fame.",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene, abbiamo ancora abbastanza soldi.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Se manca qualcosa, non esitate a chiedere.",
+          "english": "If something is missing, don't hesitate to ask.",
+          "choices": [
+            {
+              "text": "Molto gentile, lo farò sicuramente.",
+              "isCorrect": true,
+              "english": "Very kind, I will certainly do so."
+            },
+            {
+              "text": "Molto lontano, lo farò raramente.",
+              "isCorrect": false
+            },
+            {
+              "text": "Molto strano, lo farò malamente.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buona colazione allora!",
+          "english": "Enjoy your breakfast then!",
+          "choices": [
+            {
+              "text": "Grazie, buona giornata anche a lei.",
+              "isCorrect": true,
+              "english": "Thanks, have a good day too."
+            },
+            {
+              "text": "Grazie, buona fortuna anche a lei.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, buona vacanza anche a lei.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ordering_eggs",
+      "title": "Ordering Hot Food",
+      "description": "Order eggs and other hot items from the kitchen.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Volete ordinare qualcosa di caldo dalla cucina?",
+          "english": "Good morning! Would you like to order something hot from the kitchen?",
+          "choices": [
+            {
+              "text": "Buongiorno, cosa offrite stamattina?",
+              "isCorrect": true,
+              "english": "Good morning, what are you offering this morning?"
+            },
+            {
+              "text": "Buongiorno, cosa leggete stamattina?",
+              "isCorrect": false
+            },
+            {
+              "text": "Buongiorno, cosa cercate stamattina?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Facciamo uova strapazzate, omelette e uova al tegamino.",
+          "english": "We make scrambled eggs, omelets and fried eggs.",
+          "choices": [
+            {
+              "text": "Vorrei un'omelette con formaggio e prosciutto.",
+              "isCorrect": true,
+              "english": "I would like an omelet with cheese and ham."
+            },
+            {
+              "text": "Vorrei un'omelette con gelato e cioccolato.",
+              "isCorrect": false
+            },
+            {
+              "text": "Vorrei un'omelette con pesce e patate.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Molto bene. La volete anche con un po' di cipolla?",
+          "english": "Very well. Do you also want it with some onion?",
+          "choices": [
+            {
+              "text": "No grazie, solo formaggio e prosciutto.",
+              "isCorrect": true,
+              "english": "No thanks, only cheese and ham."
+            },
+            {
+              "text": "No grazie, solo fragole e zucchero.",
+              "isCorrect": false
+            },
+            {
+              "text": "No grazie, solo pizza e birra.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Desiderate del bacon croccante come contorno?",
+          "english": "Would you like some crispy bacon as a side dish?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Il bacon mi piace molto.",
+              "isCorrect": true,
+              "english": "Yes, please. I like bacon very much."
+            },
+            {
+              "text": "Sì, grazie. Il pesce mi piace molto.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, grazie. Il gatto mi piace molto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Arriva tra circa cinque minuti al vostro tavolo.",
+          "english": "It will arrive at your table in about five minutes.",
+          "choices": [
+            {
+              "text": "Perfetto, nel frattempo prendo un cornetto.",
+              "isCorrect": true,
+              "english": "Perfect, in the meantime I'll have a croissant."
+            },
+            {
+              "text": "Perfetto, nel frattempo prendo un treno.",
+              "isCorrect": false
+            },
+            {
+              "text": "Perfetto, nel frattempo prendo un libro.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "I cornetti sono appena sfornati, sono ancora caldi.",
+          "english": "The croissants are freshly baked, they are still hot.",
+          "choices": [
+            {
+              "text": "Profumano tantissimo, ne prendo uno alla crema.",
+              "isCorrect": true,
+              "english": "They smell great, I'll take one with cream."
+            },
+            {
+              "text": "Profumano tantissimo, ne prendo uno alla carne.",
+              "isCorrect": false
+            },
+            {
+              "text": "Profumano tantissimo, ne prendo uno alla pasta.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottima scelta! Volete anche un succo di frutta?",
+          "english": "Excellent choice! Do you also want a fruit juice?",
+          "choices": [
+            {
+              "text": "Sì, un succo d'ananas sarebbe l'ideale.",
+              "isCorrect": true,
+              "english": "Yes, a pineapple juice would be ideal."
+            },
+            {
+              "text": "Sì, un succo di pomodoro sarebbe l'ideale.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, un succo di limone sarebbe l'ideale.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ecco il succo. Serve altro per ora?",
+          "english": "Here is the juice. Do you need anything else for now?",
+          "choices": [
+            {
+              "text": "No grazie, questo è più che sufficiente.",
+              "isCorrect": true,
+              "english": "No thanks, this is more than enough."
+            },
+            {
+              "text": "No grazie, questo è più che pesante.",
+              "isCorrect": false
+            },
+            {
+              "text": "No grazie, questo è più che amaro.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Vi porto le uova non appena sono pronte.",
+          "english": "I'll bring you the eggs as soon as they're ready.",
+          "choices": [
+            {
+              "text": "Grazie, aspetto con ansia.",
+              "isCorrect": true,
+              "english": "Thanks, I look forward to it."
+            },
+            {
+              "text": "Grazie, aspetto con calma.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, aspetto con rabbia.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco a voi, buon appetito!",
+          "english": "Here you go, enjoy your meal!",
+          "choices": [
+            {
+              "text": "Grazie mille, sembra delizioso.",
+              "isCorrect": true,
+              "english": "Thank you very much, it looks delicious."
+            },
+            {
+              "text": "Grazie mille, sembra pericoloso.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille, sembra faticoso.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_breakfast_request",
+      "title": "Late Breakfast and Service",
+      "description": "Dealing with arriving late and asking for extra items.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Avete quasi finito o volete ancora qualcosa?",
+          "english": "Good morning! Have you almost finished or would you like something else?",
+          "choices": [
+            {
+              "text": "Buongiorno, in realtà siamo arrivati tardi.",
+              "isCorrect": true,
+              "english": "Good morning, actually we arrived late."
+            },
+            {
+              "text": "Buongiorno, in realtà siamo arrivati stanchi.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buongiorno, in realtà siamo arrivati presto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Non si preoccupi, il buffet resta aperto ancora un po'.",
+          "english": "Don't worry, the buffet stays open a bit longer.",
+          "choices": [
+            {
+              "text": "Grazie, temevamo di aver perso la colazione.",
+              "isCorrect": true,
+              "english": "Thanks, we were afraid we had missed breakfast."
+            },
+            {
+              "text": "Grazie, speravamo di aver perso la valigia.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, credevamo di aver perso la chiave.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Possiamo ancora preparare del caffè fresco per voi.",
+          "english": "We can still prepare some fresh coffee for you.",
+          "choices": [
+            {
+              "text": "Grazie, un espresso doppio sarebbe perfetto.",
+              "isCorrect": true,
+              "english": "Thanks, a double espresso would be perfect."
+            },
+            {
+              "text": "Grazie, un espresso lungo sarebbe terribile.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, un espresso corto sarebbe inutile.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Arriva subito. C'è rimasta della pasticceria fresca?",
+          "english": "Coming right up. Is there any fresh pastry left?",
+          "choices": [
+            {
+              "text": "Vedo solo pochi biscotti, sono finiti i cornetti?",
+              "isCorrect": true,
+              "english": "I only see a few biscuits, are the croissants finished?"
+            },
+            {
+              "text": "Vedo solo pochi libri, sono finiti i giornali?",
+              "isCorrect": false
+            },
+            {
+              "text": "Vedo solo pochi fiori, sono finiti i vasi?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ne vado a prendere altri caldi dalla cucina.",
+          "english": "I'm going to get more hot ones from the kitchen.",
+          "choices": [
+            {
+              "text": "Siete davvero molto gentili, grazie.",
+              "isCorrect": true,
+              "english": "You are really very kind, thank you."
+            },
+            {
+              "text": "Siete davvero molto veloci, scusa.",
+              "isCorrect": false
+            },
+            {
+              "text": "Siete davvero molto lenti, prego.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco i cornetti caldi. Desiderate anche del succo?",
+          "english": "Here are the hot croissants. Would you also like some juice?",
+          "choices": [
+            {
+              "text": "Sì, un succo d'arancia rossa, per favore.",
+              "isCorrect": true,
+              "english": "Yes, an orange juice, please."
+            },
+            {
+              "text": "Sì, un succo di limone acido, per favore.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, un succo di mela calda, per favore.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ne è rimasto un po' nella caraffa grande.",
+          "english": "There is a bit left in the large carafe.",
+          "choices": [
+            {
+              "text": "Lo prendo subito, grazie per l'informazione.",
+              "isCorrect": true,
+              "english": "I'll take it right away, thanks for the information."
+            },
+            {
+              "text": "Lo perdo subito, grazie per l'informazione.",
+              "isCorrect": false
+            },
+            {
+              "text": "Lo porto subito, grazie per l'informazione.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Posso portarvi anche un po' di affettati e formaggi?",
+          "english": "Can I also bring you some cold cuts and cheeses?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Un piattino misto sarebbe ottimo.",
+              "isCorrect": true,
+              "english": "Yes, thank you. A mixed plate would be great."
+            },
+            {
+              "text": "Sì, grazie. Un piattino rotto sarebbe ottimo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, grazie. Un piattino sporco sarebbe ottimo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco a lei. Serve altro prima che chiudiamo?",
+          "english": "Here you go. Do you need anything else before we close?",
+          "choices": [
+            {
+              "text": "No, grazie. Siete stati molto disponibili.",
+              "isCorrect": true,
+              "english": "No, thanks. You have been very helpful."
+            },
+            {
+              "text": "No, grazie. Siete stati molto rumorosi.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, grazie. Siete stati molto distratti.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "È un piacere. Godetevi la colazione in pace.",
+          "english": "It's a pleasure. Enjoy your breakfast in peace.",
+          "choices": [
+            {
+              "text": "Grazie mille, apprezzo molto la gentilezza.",
+              "isCorrect": true,
+              "english": "Thank you very much, I really appreciate the kindness."
+            },
+            {
+              "text": "Grazie mille, apprezzo molto la pigrizia.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille, apprezzo molto la tristezza.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
