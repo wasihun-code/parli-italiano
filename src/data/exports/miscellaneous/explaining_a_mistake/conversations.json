@@ -1,0 +1,1073 @@
+{
+  "scenarioId": 110,
+  "conversations": [
+    {
+      "id": "wrong_appointment_time",
+      "title": "Wrong Appointment Time",
+      "description": "Clarify a confusion about the date and time of a meeting.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Sei già qui per il nostro appuntamento delle dieci?",
+          "english": "Good morning! Are you already here for our ten o'clock appointment?",
+          "choices": [
+            {
+              "text": "Buongiorno! Scusa, ma pensavo fosse domani alle dieci.",
+              "english": "Good morning! Sorry, but I thought it was tomorrow at ten.",
+              "isCorrect": true,
+              "feedback": "Good. You are explaining the confusion about the day."
+            },
+            {
+              "text": "Sì, sono qui per mangiare qualcosa di buono.",
+              "english": "Yes, I am here to eat something good.",
+              "isCorrect": false,
+              "feedback": "Wait, this isn't a restaurant scenario!"
+            },
+            {
+              "text": "Il mio amico ha perso tutti i documenti.",
+              "english": "My friend lost all the documents.",
+              "isCorrect": false,
+              "feedback": "Stay focused on your appointment."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Davvero? Ho scritto oggi sul mio calendario. Controlli il messaggio?",
+          "english": "Really? I wrote today on my calendar. Can you check the message?",
+          "choices": [
+            {
+              "text": "Hai ragione, ho fatto un errore. Ho letto male la data.",
+              "english": "You're right, I made a mistake. I misread the date.",
+              "isCorrect": true,
+              "feedback": "Honest mistake. Admitting the error is the first step."
+            },
+            {
+              "text": "Non voglio controllare niente, io non sbaglio mai.",
+              "english": "I don't want to check anything, I never make mistakes.",
+              "isCorrect": false,
+              "feedback": "Too aggressive! Be polite when you make a mistake."
+            },
+            {
+              "text": "Mi piace molto parlare di sport il sabato pomeriggio.",
+              "english": "I really like talking about sports on Saturday afternoons.",
+              "isCorrect": false,
+              "feedback": "Irrelevant here."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Non ti preoccupare, succede. Puoi restare adesso o preferisci tornare?",
+          "english": "Don't worry, it happens. Can you stay now or do you prefer to come back?",
+          "choices": [
+            {
+              "text": "Posso restare adesso, mi dispiace molto per la confusione.",
+              "english": "I can stay now, I am very sorry for the confusion.",
+              "isCorrect": true,
+              "feedback": "Great. You are fixing the mistake by staying now."
+            },
+            {
+              "text": "Preferisco andare a casa a dormire un po'.",
+              "english": "I prefer to go home to sleep a bit.",
+              "isCorrect": false,
+              "feedback": "Try to solve the situation now."
+            },
+            {
+              "text": "Voglio comprare delle cose nuove in centro.",
+              "english": "I want to buy new things downtown.",
+              "isCorrect": false,
+              "feedback": "Shopping is not the priority."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Allora iniziamo subito la nostra riunione. Hai i fogli?",
+          "english": "Perfect. Then let's start our meeting right away. Do you have the papers?",
+          "choices": [
+            {
+              "text": "Sì, ho tutto qui. Grazie per la tua pazienza e gentilezza.",
+              "english": "Yes, I have everything here. Thank you for your patience and kindness.",
+              "isCorrect": true,
+              "feedback": "Polite and prepared. Good job."
+            },
+            {
+              "text": "No, ho dimenticato tutto ieri sera tardi.",
+              "english": "No, I forgot everything late last night.",
+              "isCorrect": false,
+              "feedback": "Wait, you were supposed to be prepared!"
+            },
+            {
+              "text": "I miei amici sono molto simpatici e ridono sempre.",
+              "english": "My friends are very nice and always laugh.",
+              "isCorrect": false,
+              "feedback": "Irrelevant context."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Figurati! L'importante è aver risolto il problema velocemente.",
+          "english": "Don't mention it! The important thing is having solved the problem quickly.",
+          "choices": [
+            {
+              "text": "Sono d'accordo. La prossima volta starò più attento.",
+              "english": "I agree. Next time I will be more careful.",
+              "isCorrect": true,
+              "feedback": "Good conclusion. Showing commitment to improve."
+            },
+            {
+              "text": "Io non faccio mai errori, forse hai sbagliato tu.",
+              "english": "I never make mistakes, maybe you were wrong.",
+              "isCorrect": false,
+              "feedback": "Not a good way to build a professional relationship!"
+            },
+            {
+              "text": "Dov'è il mio telefono? Ho molta fretta ora.",
+              "english": "Where is my phone? I am in a big hurry now.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the meeting."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Possiamo vedere insieme il primo punto della riunione?",
+          "english": "Excellent. Can we look at the first point of the meeting together?",
+          "choices": [
+            {
+              "text": "Certamente. Scusa ancora, non volevo creare problemi.",
+              "english": "Certainly. Sorry again, I didn't want to create problems.",
+              "isCorrect": true,
+              "feedback": "Good, continuing with a positive attitude."
+            },
+            {
+              "text": "No, preferisco parlare di un'altra cosa ora.",
+              "english": "No, I prefer to talk about something else now.",
+              "isCorrect": false,
+              "feedback": "Follow the host's lead."
+            },
+            {
+              "text": "Voglio andare via perché sono molto stanco.",
+              "english": "I want to go away because I am very tired.",
+              "isCorrect": false,
+              "feedback": "Try to finish the meeting."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Nessun problema. Vedo però un piccolo errore in questa pagina.",
+          "english": "No problem. I see however a small error on this page.",
+          "choices": [
+            {
+              "text": "Oh, hai ragione. Ho scritto male il nome del progetto.",
+              "english": "Oh, you're right. I misspelled the project name.",
+              "isCorrect": true,
+              "feedback": "Admitting another small mistake politely."
+            },
+            {
+              "text": "Non è un errore, è una scelta molto moderna.",
+              "english": "It's not an error, it's a very modern choice.",
+              "isCorrect": false,
+              "feedback": "Don't be defensive."
+            },
+            {
+              "text": "Non mi interessa quello che dici tu oggi.",
+              "english": "I don't care about what you say today.",
+              "isCorrect": false,
+              "feedback": "Very rude!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Tranquillo, possiamo cambiarlo subito. Hai una penna?",
+          "english": "Don't worry, we can change it right away. Do you have a pen?",
+          "choices": [
+            {
+              "text": "Sì, eccola. Grazie per aver notato questo sbaglio.",
+              "english": "Yes, here it is. Thank you for noticing this mistake.",
+              "isCorrect": true,
+              "feedback": "Cooperative and grateful."
+            },
+            {
+              "text": "No, ho perso tutte le mie penne stamattina.",
+              "english": "No, I lost all my pens this morning.",
+              "isCorrect": false,
+              "feedback": "Another thing forgotten!"
+            },
+            {
+              "text": "Preferisco usare il mio computer nuovo ora.",
+              "english": "I prefer to use my new computer now.",
+              "isCorrect": false,
+              "feedback": "Just use the pen as requested."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco fatto, ora è tutto corretto. Sei pronto per continuare?",
+          "english": "There we go, now everything is correct. Are you ready to continue?",
+          "choices": [
+            {
+              "text": "Sì, sono pronto. Spero che sia l'ultimo errore di oggi!",
+              "english": "Yes, I am ready. I hope it's the last mistake of today!",
+              "isCorrect": true,
+              "feedback": "Good humor and readiness."
+            },
+            {
+              "text": "No, voglio fare un'altra pausa molto lunga.",
+              "english": "No, I want to take another very long break.",
+              "isCorrect": false,
+              "feedback": "Keep working."
+            },
+            {
+              "text": "Ho dimenticato perché siamo qui in ufficio.",
+              "english": "I forgot why we are here in the office.",
+              "isCorrect": false,
+              "feedback": "Stay focused."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo spirito! Iniziamo allora con la parte più importante.",
+          "english": "Great spirit! Let's start then with the most important part.",
+          "choices": [
+            {
+              "text": "Certamente. Sono molto attento adesso, te lo assicuro.",
+              "english": "Certainly. I am very attentive now, I assure you.",
+              "isCorrect": true,
+              "feedback": "Final commitment to being careful."
+            },
+            {
+              "text": "Voglio dormire perché la riunione è noiosa.",
+              "english": "I want to sleep because the meeting is boring.",
+              "isCorrect": false,
+              "feedback": "Disrespectful!"
+            },
+            {
+              "text": "Andiamo a mangiare una pizza tutti insieme?",
+              "english": "Shall we all go eat a pizza together?",
+              "isCorrect": false,
+              "feedback": "Focus on the work first."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forgetting_a_name",
+      "title": "Forgetting a Name",
+      "description": "Apologize for forgetting someone's name and re-introduce yourself.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Ti ricordi di me? Ci siamo visti alla festa sabato scorso.",
+          "english": "Hi! Do you remember me? We saw each other at the party last Saturday.",
+          "choices": [
+            {
+              "text": "Ciao! Mi dispiace, ma ho dimenticato il tuo nome. Scusami.",
+              "english": "Hi! I am sorry, but I forgot your name. Excuse me.",
+              "isCorrect": true,
+              "feedback": "Honest and polite. It happens to everyone!"
+            },
+            {
+              "text": "Sì, tu sei quello che parla sempre troppo.",
+              "english": "Yes, you are the one who always talks too much.",
+              "isCorrect": false,
+              "feedback": "A bit rude, don't you think?"
+            },
+            {
+              "text": "Ho comprato una cosa molto grande ieri.",
+              "english": "I bought a very big thing yesterday.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Nessun problema! Io sono Marco. Tu invece come ti chiami?",
+          "english": "No problem! I am Marco. What about you, what is your name?",
+          "choices": [
+            {
+              "text": "Piacere Marco, io sono Luca. Ho fatto un po' di confusione.",
+              "english": "Nice to meet you Marco, I am Luca. I got a bit confused.",
+              "isCorrect": true,
+              "feedback": "Good re-introduction."
+            },
+            {
+              "text": "Il mio nome è un segreto per tutti.",
+              "english": "My name is a secret for everyone.",
+              "isCorrect": false,
+              "feedback": "Too mysterious and rude."
+            },
+            {
+              "text": "Voglio andare via con i miei amici ora.",
+              "english": "I want to go away with my friends now.",
+              "isCorrect": false,
+              "feedback": "Rude exit."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ah sì, ora ricordo! Luca, lo studente di italiano, giusto?",
+          "english": "Ah yes, now I remember! Luca, the Italian student, right?",
+          "choices": [
+            {
+              "text": "Esatto! Scusa ancora, a volte dimentico i nomi facilmente.",
+              "english": "Exactly! Sorry again, sometimes I forget names easily.",
+              "isCorrect": true,
+              "feedback": "Confirming and apologizing again politely."
+            },
+            {
+              "text": "No, io sono un professore molto importante.",
+              "english": "No, I am a very important professor.",
+              "isCorrect": false,
+              "feedback": "Don't lie!"
+            },
+            {
+              "text": "Mi piace molto stare qui a parlare con te.",
+              "english": "I really like being here talking to you.",
+              "isCorrect": false,
+              "feedback": "A bit random."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capisco perfettamente. Anche io dimentico spesso i nomi nuovi.",
+          "english": "I understand perfectly. I also often forget new names.",
+          "choices": [
+            {
+              "text": "Grazie per la comprensione. È stato un piccolo sbaglio.",
+              "english": "Thanks for the understanding. It was a small mistake.",
+              "isCorrect": true,
+              "feedback": "Acknowledging their kindness."
+            },
+            {
+              "text": "Le mie cose sono troppo vecchie ora.",
+              "english": "My things are too old now.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            },
+            {
+              "text": "Il mio amico mangia solo cose molto care.",
+              "english": "My friend only eats very expensive things.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Non preoccuparti. Spero di rivederti presto, magari domani!",
+          "english": "Don't worry. I hope to see you again soon, maybe tomorrow!",
+          "choices": [
+            {
+              "text": "Sicuramente! Grazie mille Marco, buona giornata!",
+              "english": "Definitely! Thank you so much Marco, have a nice day!",
+              "isCorrect": true,
+              "feedback": "Friendly exit."
+            },
+            {
+              "text": "Non voglio vederti mai più qui.",
+              "english": "I never want to see you here again.",
+              "isCorrect": false,
+              "feedback": "Very rude!"
+            },
+            {
+              "text": "Portami dell'acqua per favore.",
+              "english": "Bring me some water please.",
+              "isCorrect": false,
+              "feedback": "He is not a waiter!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Aspetta, ti ricordi anche di Giulia? Era con me alla festa.",
+          "english": "Wait, do you also remember Giulia? She was with me at the party.",
+          "choices": [
+            {
+              "text": "Oh, credo di sì. Ma forse ho dimenticato anche il suo nome.",
+              "english": "Oh, I think so. But maybe I forgot her name too.",
+              "isCorrect": true,
+              "feedback": "Honest admission of continuing confusion."
+            },
+            {
+              "text": "Sì, Giulia è la mia migliore amica da anni.",
+              "english": "Yes, Giulia has been my best friend for years.",
+              "isCorrect": false,
+              "feedback": "Don't pretend if it's not true."
+            },
+            {
+              "text": "Non conosco nessuna Giulia in questa città.",
+              "english": "I don't know any Giulia in this city.",
+              "isCorrect": false,
+              "feedback": "A bit cold."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Tranquillo! Giulia è la ragazza bionda che parlava di musica.",
+          "english": "Don't worry! Giulia is the blonde girl who was talking about music.",
+          "choices": [
+            {
+              "text": "Ah, ora capisco! Sì, ora ricordo perfettamente lei.",
+              "english": "Ah, now I understand! Yes, now I remember her perfectly.",
+              "isCorrect": true,
+              "feedback": "Finally clearing up the confusion."
+            },
+            {
+              "text": "No, non ricordo niente di quella sera.",
+              "english": "No, I don't remember anything from that night.",
+              "isCorrect": false,
+              "feedback": "Try to make an effort."
+            },
+            {
+              "text": "La musica era troppo forte e brutta.",
+              "english": "The music was too loud and bad.",
+              "isCorrect": false,
+              "feedback": "Negative attitude."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Siamo tutti un po' confusi dopo le feste grandi!",
+          "english": "Great. We are all a bit confused after big parties!",
+          "choices": [
+            {
+              "text": "Hai ragione. Grazie per avermi aiutato a ricordare.",
+              "english": "You're right. Thank you for helping me remember.",
+              "isCorrect": true,
+              "feedback": "Grateful for the help."
+            },
+            {
+              "text": "Io non sono mai confuso, sono sempre perfetto.",
+              "english": "I am never confused, I am always perfect.",
+              "isCorrect": false,
+              "feedback": "Too arrogant."
+            },
+            {
+              "text": "Voglio andare a un'altra festa stasera.",
+              "english": "I want to go to another party tonight.",
+              "isCorrect": false,
+              "feedback": "Focus on the current conversation."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Di niente! Allora, ci vediamo domani per studiare insieme?",
+          "english": "You're welcome! So, shall we see each other tomorrow to study together?",
+          "choices": [
+            {
+              "text": "Sì, volentieri. Questa volta scriverò il tuo nome subito!",
+              "english": "Yes, gladly. This time I will write your name immediately!",
+              "isCorrect": true,
+              "feedback": "Good joke and commitment."
+            },
+            {
+              "text": "No, studiare è molto noioso per me.",
+              "english": "No, studying is very boring for me.",
+              "isCorrect": false,
+              "feedback": "Not very motivated."
+            },
+            {
+              "text": "Preferisco dormire tutto il giorno domani.",
+              "english": "I prefer to sleep all day tomorrow.",
+              "isCorrect": false,
+              "feedback": "Lacks initiative."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va bene! A domani allora, Luca. Buono studio!",
+          "english": "Alright! See you tomorrow then, Luca. Happy studying!",
+          "choices": [
+            {
+              "text": "Grazie Marco! A domani e scusa ancora per lo sbaglio.",
+              "english": "Thanks Marco! See you tomorrow and sorry again for the mistake.",
+              "isCorrect": true,
+              "feedback": "Polite conclusion."
+            },
+            {
+              "text": "Ciao, spero di non vederti mai più.",
+              "english": "Bye, I hope to never see you again.",
+              "isCorrect": false,
+              "feedback": "Very rude!"
+            },
+            {
+              "text": "Voglio mangiare qualcosa ora, ciao.",
+              "english": "I want to eat something now, bye.",
+              "isCorrect": false,
+              "feedback": "Abrupt ending."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_for_a_meeting",
+      "title": "Late for a Meeting",
+      "description": "Explain why you are late for a meeting and apologize for the delay.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Sei in ritardo di quindici minuti. È successo qualcosa?",
+          "english": "Good morning. You are fifteen minutes late. Did something happen?",
+          "choices": [
+            {
+              "text": "Buongiorno. Scusa il ritardo, ho perso l'autobus stamattina.",
+              "english": "Good morning. Sorry for the delay, I missed the bus this morning.",
+              "isCorrect": true,
+              "feedback": "Good explanation for being late."
+            },
+            {
+              "text": "Sono stato a vedere una cosa bellissima in centro.",
+              "english": "I went to see a beautiful thing downtown.",
+              "isCorrect": false,
+              "feedback": "That's a bad excuse for being late!"
+            },
+            {
+              "text": "Ho dovuto fare una cosa molto importante a casa.",
+              "english": "I had to do a very important thing at home.",
+              "isCorrect": false,
+              "feedback": "Be more specific or apologize properly."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco, ma questa riunione è molto importante per noi.",
+          "english": "I understand, but this meeting is very important for us.",
+          "choices": [
+            {
+              "text": "Hai ragione, mi dispiace molto. Non succederà più.",
+              "english": "You're right, I am very sorry. It won't happen again.",
+              "isCorrect": true,
+              "feedback": "Apologizing and promising it won't happen again."
+            },
+            {
+              "text": "Quindici minuti non sono niente, rilassati.",
+              "english": "Fifteen minutes are nothing, relax.",
+              "isCorrect": false,
+              "feedback": "Too informal and disrespectful for a meeting."
+            },
+            {
+              "text": "Voglio comprare una cosa nuova dopo il lavoro.",
+              "english": "I want to buy a new thing after work.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene, iniziamo. Hai portato il documento corretto?",
+          "english": "Alright, let's start. Did you bring the correct document?",
+          "choices": [
+            {
+              "text": "Sì, eccolo. Ho controllato tutto ieri sera a casa.",
+              "english": "Yes, here it is. I checked everything last night at home.",
+              "isCorrect": true,
+              "feedback": "Good, at least you have the document."
+            },
+            {
+              "text": "No, l'ho lasciato altrove mentre mangiavo.",
+              "english": "No, I left it elsewhere while I was eating.",
+              "isCorrect": false,
+              "feedback": "You forgot the document!"
+            },
+            {
+              "text": "Il mio amico ha preso tutti i miei fogli importanti.",
+              "english": "My friend took all my important papers.",
+              "isCorrect": false,
+              "feedback": "Don't blame others."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. Possiamo correggere insieme questi piccoli errori?",
+          "english": "Excellent. Can we correct these small errors together?",
+          "choices": [
+            {
+              "text": "Certamente, voglio correggere tutto per fare un buon lavoro.",
+              "english": "Certainly, I want to correct everything to do a good job.",
+              "isCorrect": true,
+              "feedback": "Positive attitude towards correction."
+            },
+            {
+              "text": "No, i miei errori sono perfetti.",
+              "english": "No, my mistakes are perfect.",
+              "isCorrect": false,
+              "feedback": "Defensive and incorrect attitude."
+            },
+            {
+              "text": "Preferisco fare un'altra cosa invece di lavorare oggi.",
+              "english": "I prefer doing another thing instead of working today.",
+              "isCorrect": false,
+              "feedback": "Unprofessional."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Bene, allora mettiamoci al lavoro. Grazie per essere venuto.",
+          "english": "Good, then let's get to work. Thank you for coming.",
+          "choices": [
+            {
+              "text": "Grazie a te per avermi aspettato. Cominciamo!",
+              "english": "Thanks to you for waiting for me. Let's start!",
+              "isCorrect": true,
+              "feedback": "Good transition to work."
+            },
+            {
+              "text": "Ho molta fame, andiamo a mangiare ora.",
+              "english": "I am very hungry, let's go eat now.",
+              "isCorrect": false,
+              "feedback": "Stay focused."
+            },
+            {
+              "text": "Il mio amico mi aspetta fuori, devo andare via.",
+              "english": "My friend is waiting for me outside, I have to go away.",
+              "isCorrect": false,
+              "feedback": "Unprofessional exit."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Prima di iniziare, vorrei cambiare la data della prossima riunione.",
+          "english": "Before starting, I would like to change the date of the next meeting.",
+          "choices": [
+            {
+              "text": "Certo. Mi dispiace, ma ho dimenticato quando era quella vecchia.",
+              "english": "Sure. I am sorry, but I forgot when the old one was.",
+              "isCorrect": true,
+              "feedback": "Admitting another small forgetfulness."
+            },
+            {
+              "text": "No, non voglio cambiare niente oggi.",
+              "english": "No, I don't want to change anything today.",
+              "isCorrect": false,
+              "feedback": "Be flexible."
+            },
+            {
+              "text": "Ho fame, possiamo parlarne dopo?",
+              "english": "I am hungry, can we talk about it later?",
+              "isCorrect": false,
+              "feedback": "Focus on the topic."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Era lunedì prossimo. Preferirei fare invece giovedì mattina.",
+          "english": "It was next Monday. I would prefer to do next Thursday morning instead.",
+          "choices": [
+            {
+              "text": "Giovedì va benissimo. Controllo subito sul mio telefono.",
+              "english": "Thursday is fine. I'll check right away on my phone.",
+              "isCorrect": true,
+              "feedback": "Good use of technology to verify."
+            },
+            {
+              "text": "Giovedì è un giorno molto brutto per me.",
+              "english": "Thursday is a very bad day for me.",
+              "isCorrect": false,
+              "feedback": "A bit too direct, maybe suggest another day?"
+            },
+            {
+              "text": "Voglio dormire tutto il giorno giovedì.",
+              "english": "I want to sleep all day Thursday.",
+              "isCorrect": false,
+              "feedback": "Lacks professional spirit."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Perfetto. Così abbiamo risolto anche questo piccolo problema.",
+          "english": "Perfect. So we have solved this small problem as well.",
+          "choices": [
+            {
+              "text": "Esatto. Grazie per la tua grande pazienza con me oggi.",
+              "english": "Exactly. Thank you for your great patience with me today.",
+              "isCorrect": true,
+              "feedback": "Showing gratitude for their flexibility."
+            },
+            {
+              "text": "Io non ho nessun problema, sei tu che crei problemi.",
+              "english": "I don't have any problems, it's you who creates problems.",
+              "isCorrect": false,
+              "feedback": "Very rude and defensive."
+            },
+            {
+              "text": "Il mio telefono è rotto, non posso controllare.",
+              "english": "My phone is broken, I can't check.",
+              "isCorrect": false,
+              "feedback": "Another issue!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Figurati! Adesso però concentriamoci sulla parte tecnica.",
+          "english": "Don't mention it! Now however let's concentrate on the technical part.",
+          "choices": [
+            {
+              "text": "Sì, sono pronto. Non voglio fare altri errori adesso.",
+              "english": "Yes, I am ready. I don't want to make any more mistakes now.",
+              "isCorrect": true,
+              "feedback": "Committed to the task."
+            },
+            {
+              "text": "La parte tecnica è troppo difficile per me.",
+              "english": "The technical part is too difficult for me.",
+              "isCorrect": false,
+              "feedback": "Lacks confidence."
+            },
+            {
+              "text": "Voglio andare a casa a guardare la televisione.",
+              "english": "I want to go home to watch television.",
+              "isCorrect": false,
+              "feedback": "Stay at work."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Benissimo. Allora iniziamo dal primo foglio del documento.",
+          "english": "Very well. Then let's start from the first sheet of the document.",
+          "choices": [
+            {
+              "text": "Certamente. Vediamo subito cosa dobbiamo fare insieme.",
+              "english": "Certainly. Let's see right away what we need to do together.",
+              "isCorrect": true,
+              "feedback": "Professional and cooperative ending."
+            },
+            {
+              "text": "No, preferisco iniziare dall'ultimo foglio.",
+              "english": "No, I prefer to start from the last sheet.",
+              "isCorrect": false,
+              "feedback": "Unnecessary complication."
+            },
+            {
+              "text": "Andiamo a mangiare dopo questa parte?",
+              "english": "Shall we go eat after this part?",
+              "isCorrect": false,
+              "feedback": "Still focused on food."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "misunderstanding_a_request",
+      "title": "Misunderstanding a Request",
+      "description": "Fix a mistake caused by misunderstanding a previous request.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Hai comprato il pane come ti ho chiesto stamattina?",
+          "english": "Hi! Did you buy the bread as I asked you this morning?",
+          "choices": [
+            {
+              "text": "Oh no, scusa! Ho capito male. Pensavo volessi il latte.",
+              "english": "Oh no, sorry! I understood wrongly. I thought you wanted milk.",
+              "isCorrect": true,
+              "feedback": "Explaining the misunderstanding clearly."
+            },
+            {
+              "text": "Sì, ho comprato delle cose bellissime per te.",
+              "english": "Yes, I bought some beautiful things for you.",
+              "isCorrect": false,
+              "feedback": "But did you buy the bread?"
+            },
+            {
+              "text": "Il mio amico ha mangiato tutto il pane fresco.",
+              "english": "My friend ate all the fresh bread.",
+              "isCorrect": false,
+              "feedback": "Blaming others."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Niente latte, abbiamo già due bottiglie in frigorifero!",
+          "english": "No milk, we already have two bottles in the fridge!",
+          "choices": [
+            {
+              "text": "Mi dispiace, c'è stata un po' di confusione. Vado subito.",
+              "english": "I'm sorry, there was a bit of confusion. I'm going right away.",
+              "isCorrect": true,
+              "feedback": "Admitting confusion and offering to fix it."
+            },
+            {
+              "text": "Il latte è buono per chi ha molta sete.",
+              "english": "Milk is good for those who are very thirsty.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Voglio andare altrove a mangiare il pesce.",
+              "english": "I want to go elsewhere to eat fish.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Non ti preoccupare, il posto è ancora aperto. Puoi andare ora?",
+          "english": "Don't worry, the place is still open. Can you go now?",
+          "choices": [
+            {
+              "text": "Sì, vado subito a correggere il mio sbaglio. A dopo!",
+              "english": "Yes, I'm going immediately to correct my mistake. See you later!",
+              "isCorrect": true,
+              "feedback": "Taking action to fix the mistake."
+            },
+            {
+              "text": "No, devo andare a vedere una cosa importante.",
+              "english": "No, I have to go and see an important thing.",
+              "isCorrect": false,
+              "feedback": "Try to fix your mistake first."
+            },
+            {
+              "text": "Le cose nuove sono troppo care in quel posto.",
+              "english": "New things are too expensive in that place.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie mille! Sei molto gentile. Ti serve altro?",
+          "english": "Thank you so much! You are very kind. Do you need anything else?",
+          "choices": [
+            {
+              "text": "No, grazie. Spero di non fare altri errori oggi!",
+              "english": "No, thanks. I hope not to make other mistakes today!",
+              "isCorrect": true,
+              "feedback": "Polite and self-aware."
+            },
+            {
+              "text": "Sì, portami molte cose buone da mangiare.",
+              "english": "Yes, bring me many good things to eat.",
+              "isCorrect": false,
+              "feedback": "A bit demanding."
+            },
+            {
+              "text": "Voglio un amico nuovo e molto simpatico.",
+              "english": "I want a new and very nice friend.",
+              "isCorrect": false,
+              "feedback": "Random."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Tranquillo, tutti facciamo sbagli a volte. Ci vediamo dopo!",
+          "english": "Don't worry, we all make mistakes sometimes. See you later!",
+          "choices": [
+            {
+              "text": "A dopo! Grazie ancora per la tua pazienza.",
+              "english": "See you later! Thanks again for your patience.",
+              "isCorrect": true,
+              "feedback": "Friendly exit."
+            },
+            {
+              "text": "Spero che tu perda tutto oggi.",
+              "english": "I hope you lose everything today.",
+              "isCorrect": false,
+              "feedback": "Very rude!"
+            },
+            {
+              "text": "La cosa è sul tavolo della cucina adesso.",
+              "english": "The thing is on the kitchen table now.",
+              "isCorrect": false,
+              "feedback": "Vague."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Eccoti di nuovo! Hai trovato tutto quello che serviva?",
+          "english": "Here you are again! Did you find everything that was needed?",
+          "choices": [
+            {
+              "text": "Sì, ho preso il pane. Scusa se ho dimenticato anche il sale.",
+              "english": "Yes, I got the bread. Sorry if I also forgot the salt.",
+              "isCorrect": true,
+              "feedback": "Another small mistake, but you got the main item."
+            },
+            {
+              "text": "No, non ho trovato niente perché ero stanco.",
+              "english": "No, I didn't find anything because I was tired.",
+              "isCorrect": false,
+              "feedback": "Not very helpful."
+            },
+            {
+              "text": "Voglio tornare a casa subito adesso.",
+              "english": "I want to go home right now.",
+              "isCorrect": false,
+              "feedback": "Finish the task."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Nessun problema per il sale, ne abbiamo ancora un po'.",
+          "english": "No problem about the salt, we still have a bit of it.",
+          "choices": [
+            {
+              "text": "Ottimo. Mi dispiace per la mia confusione di oggi.",
+              "english": "Great. I am sorry for my confusion today.",
+              "isCorrect": true,
+              "feedback": "Continuing to be polite."
+            },
+            {
+              "text": "Lo sapevo, non serviva comprare niente allora.",
+              "english": "I knew it, there was no need to buy anything then.",
+              "isCorrect": false,
+              "feedback": "Don't be dismissive."
+            },
+            {
+              "text": "Voglio mangiare tutto il pane ora, ho fame.",
+              "english": "I want to eat all the bread now, I am hungry.",
+              "isCorrect": false,
+              "feedback": "Wait for dinner!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Succede a tutti quando si ha molta fretta. Stai bene ora?",
+          "english": "It happens to everyone when in a big hurry. Are you okay now?",
+          "choices": [
+            {
+              "text": "Sì, sto bene. Grazie per non essere arrabbiato con me.",
+              "english": "Yes, I am okay. Thank you for not being angry with me.",
+              "isCorrect": true,
+              "feedback": "Appreciating their calm reaction."
+            },
+            {
+              "text": "No, sto molto male perché ho fatto un errore.",
+              "english": "No, I am very bad because I made a mistake.",
+              "isCorrect": false,
+              "feedback": "Don't be too hard on yourself."
+            },
+            {
+              "text": "Voglio dormire per tre ore consecutive adesso.",
+              "english": "I want to sleep for three consecutive hours now.",
+              "isCorrect": false,
+              "feedback": "Maybe later."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente! La gentilezza è importante tra amici.",
+          "english": "Certainly! Kindness is important among friends.",
+          "choices": [
+            {
+              "text": "Hai ragione. Cercherò di essere più attento la prossima volta.",
+              "english": "You're right. I'll try to be more careful next time.",
+              "isCorrect": true,
+              "feedback": "Final resolution to improve."
+            },
+            {
+              "text": "Non mi interessa la gentilezza, voglio solo mangiare.",
+              "english": "I don't care about kindness, I just want to eat.",
+              "isCorrect": false,
+              "feedback": "Very rude!"
+            },
+            {
+              "text": "Spero che non ci siano altri problemi stasera.",
+              "english": "I hope there are no other problems tonight.",
+              "isCorrect": false,
+              "feedback": "A bit pessimistic."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sicuramente sarà così. Adesso mettiamo tutto in cucina!",
+          "english": "Surely it will be so. Now let's put everything in the kitchen!",
+          "choices": [
+            {
+              "text": "Sì, facciamolo subito. Grazie ancora per tutto!",
+              "english": "Yes, let's do it right away. thanks again for everything!",
+              "isCorrect": true,
+              "feedback": "Friendly and helpful ending."
+            },
+            {
+              "text": "No, fallo tu, io sono troppo stanco.",
+              "english": "No, you do it, I am too tired.",
+              "isCorrect": false,
+              "feedback": "Help your friend!"
+            },
+            {
+              "text": "Voglio andare via perché sono annoiato.",
+              "english": "I want to go away because I am bored.",
+              "isCorrect": false,
+              "feedback": "Not a nice way to end."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

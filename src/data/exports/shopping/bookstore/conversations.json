@@ -1,0 +1,953 @@
+{
+  "scenarioId": 48,
+  "conversations": [
+    {
+      "id": "looking_for_mystery",
+      "title": "Looking for a Mystery Novel",
+      "description": "Ask the staff for help finding a specific genre.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarla a cercare un libro?",
+          "english": "Good morning! Can I help you look for a book?",
+          "choices": [
+            {
+              "text": "Buongiorno! Sì, cerco un romanzo giallo. Dove sono?",
+              "isCorrect": true,
+              "feedback": "Great! You specified the genre and asked for the location."
+            },
+            {
+              "text": "Buongiorno! Sì, cerco un dizionario. Ne avete uno?",
+              "isCorrect": false,
+              "feedback": "You are looking for a mystery novel, not a dictionary."
+            },
+            {
+              "text": "Buongiorno! Vorrei un libro di cucina. Dove posso guardare?",
+              "isCorrect": false,
+              "feedback": "You should ask for a mystery novel, not a cookbook."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "I romanzi gialli sono in fondo alla libreria, nell'ultimo scaffale.",
+          "english": "The mystery novels are at the back of the bookstore, on the last shelf.",
+          "choices": [
+            {
+              "text": "Grazie mille. Ci sono anche libri di autori italiani?",
+              "isCorrect": true,
+              "feedback": "Good follow-up question about local authors."
+            },
+            {
+              "text": "Grazie mille. Avete anche dei giornali oggi qui?",
+              "isCorrect": false,
+              "feedback": "You are asking about Italian authors, not newspapers."
+            },
+            {
+              "text": "Grazie mille. Posso trovare anche delle cartoline?",
+              "isCorrect": false,
+              "feedback": "Focus on finding Italian authors in the bookstore."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, certo. Abbiamo una sezione dedicata agli autori italiani proprio lì accanto.",
+          "english": "Yes, of course. We have a section dedicated to Italian authors right next to it.",
+          "choices": [
+            {
+              "text": "C'è un autore in particolare che mi consiglia di leggere?",
+              "isCorrect": true,
+              "feedback": "Good! Asking for recommendations is a great way to discover new books."
+            },
+            {
+              "text": "C'è un ufficio postale qui vicino per spedire libri?",
+              "isCorrect": false,
+              "feedback": "You should ask for book recommendations, not a post office."
+            },
+            {
+              "text": "Dove posso comprare dei francobolli per queste lettere?",
+              "isCorrect": false,
+              "feedback": "Stay in the bookstore context and ask about authors."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Le consiglio Giorgio Faletti o Andrea Camilleri. Sono molto bravi.",
+          "english": "I recommend Giorgio Faletti or Andrea Camilleri. They are very good.",
+          "choices": [
+            {
+              "text": "Conosco Camilleri, mi piace molto il suo stile di scrittura.",
+              "isCorrect": true,
+              "feedback": "Excellent! You recognized a famous author."
+            },
+            {
+              "text": "Conosco quel ristorante, mi piace molto la loro cucina.",
+              "isCorrect": false,
+              "feedback": "You are talking about authors, not restaurants."
+            },
+            {
+              "text": "Voglio quel vestito, mi piace molto il suo colore blu.",
+              "isCorrect": false,
+              "feedback": "This is a bookstore, not a clothing shop."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottimo! Di Camilleri abbiamo quasi tutti i titoli disponibili.",
+          "english": "Great! We have almost all of Camilleri's titles available.",
+          "choices": [
+            {
+              "text": "Dove si trovano esattamente? Non riesco a vederli.",
+              "isCorrect": true,
+              "feedback": "Good. Asking for the specific location on the shelf."
+            },
+            {
+              "text": "Dove posso parcheggiare? Non riesco a trovare posto.",
+              "isCorrect": false,
+              "feedback": "Ask about the location of the books, not parking."
+            },
+            {
+              "text": "Quanto costa il biglietto? Non riesco a trovarlo.",
+              "isCorrect": false,
+              "feedback": "You are looking for books, not tickets."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sono proprio sul secondo ripiano della sezione gialli.",
+          "english": "They are right on the second shelf of the mystery section.",
+          "choices": [
+            {
+              "text": "Li vedo ora. Questa è una nuova edizione del libro?",
+              "isCorrect": true,
+              "feedback": "Good observation about the book edition."
+            },
+            {
+              "text": "Li sento ora. Questa è una nuova radio del negozio?",
+              "isCorrect": false,
+              "feedback": "You are looking at books, not listening to a radio."
+            },
+            {
+              "text": "Li mangio ora. Questa è una nuova mela del mercato?",
+              "isCorrect": false,
+              "feedback": "You are in a bookstore, not at a fruit market."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, è l'ultima edizione pubblicata proprio quest'anno.",
+          "english": "Yes, it is the latest edition published just this year.",
+          "choices": [
+            {
+              "text": "Molto bella. Avete anche la versione in lingua inglese?",
+              "isCorrect": true,
+              "feedback": "Checking if other languages are available."
+            },
+            {
+              "text": "Molto cara. Avete anche la versione in plastica dura?",
+              "isCorrect": false,
+              "feedback": "Ask about the language version, not material."
+            },
+            {
+              "text": "Molto calda. Avete anche la versione con ghiaccio?",
+              "isCorrect": false,
+              "feedback": "You are talking about a book, not a drink."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "No, mi dispiace. In questo negozio abbiamo solo libri in italiano.",
+          "english": "No, I'm sorry. In this shop we only have books in Italian.",
+          "choices": [
+            {
+              "text": "Nessun problema, è meglio per fare pratica con la lingua.",
+              "isCorrect": true,
+              "feedback": "Great attitude for a language learner!"
+            },
+            {
+              "text": "Nessun problema, è meglio per fare la spesa al mercato.",
+              "isCorrect": false,
+              "feedback": "Stay focused on learning Italian through reading."
+            },
+            {
+              "text": "Nessun problema, è meglio per fare una corsa al parco.",
+              "isCorrect": false,
+              "feedback": "Context is reading books, not exercising."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Bravissimo! La lettura è un ottimo modo per imparare bene.",
+          "english": "Excellent! Reading is a great way to learn well.",
+          "choices": [
+            {
+              "text": "Sono d'accordo. Prendo questo libro di Camilleri allora.",
+              "isCorrect": true,
+              "feedback": "Final decision made. You are ready to buy."
+            },
+            {
+              "text": "Sono stanco. Prendo questo letto per dormire allora.",
+              "isCorrect": false,
+              "feedback": "You are in a bookstore, not a furniture shop."
+            },
+            {
+              "text": "Sono affamato. Prendo questo pane per mangiare allora.",
+              "isCorrect": false,
+              "feedback": "This is a bookstore, not a bakery."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Se ha bisogno di altro, io sono qui alla cassa.",
+          "english": "Perfect. If you need anything else, I am here at the checkout.",
+          "choices": [
+            {
+              "text": "Grazie, vado subito alla cassa a pagare. A tra poco.",
+              "isCorrect": true,
+              "feedback": "Moving to the next logical step: payment."
+            },
+            {
+              "text": "Grazie, vado subito alla spiaggia a nuotare. A domani.",
+              "isCorrect": false,
+              "feedback": "You are in a bookstore, not at the beach."
+            },
+            {
+              "text": "Grazie, vado subito alla stazione a partire. A presto.",
+              "isCorrect": false,
+              "feedback": "You need to pay for your book first!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_recommendations",
+      "title": "Asking for Recommendations",
+      "description": "Ask the bookseller for advice on what to read.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Hai bisogno di un consiglio per una nuova lettura?",
+          "english": "Hi! Do you need a recommendation for a new read?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Mi piacciono i classici. Cosa mi consiglia?",
+              "isCorrect": true,
+              "feedback": "Great! You specified your preference."
+            },
+            {
+              "text": "Sì, grazie. Mi piacciono i dolci. Cosa mi consiglia?",
+              "isCorrect": false,
+              "feedback": "You are in a bookstore, not a pastry shop."
+            },
+            {
+              "text": "Sì, grazie. Mi piacciono i fiori. Cosa mi consiglia?",
+              "isCorrect": false,
+              "feedback": "This is a bookstore, not a florist."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Le consiglio questo romanzo di Italo Calvino. È un grande classico.",
+          "english": "I recommend this novel by Italo Calvino. It is a great classic.",
+          "choices": [
+            {
+              "text": "Sembra interessante. Di che genere si tratta esattamente?",
+              "isCorrect": true,
+              "feedback": "Good question to learn more about the book."
+            },
+            {
+              "text": "Sembra intelligente. Di che colore si tratta esattamente?",
+              "isCorrect": false,
+              "feedback": "Ask about the book genre, not its color."
+            },
+            {
+              "text": "Sembra importante. Di che sapore si tratta esattamente?",
+              "isCorrect": false,
+              "feedback": "Books don't have a taste! Ask about the genre."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "È un romanzo fantastico e molto originale. Molti lettori lo amano.",
+          "english": "It is a fantastic and very original novel. Many readers love it.",
+          "choices": [
+            {
+              "text": "Chi è l'autore di questo libro? Non conosco bene il nome.",
+              "isCorrect": true,
+              "feedback": "Good question to learn more about Italian literature."
+            },
+            {
+              "text": "Chi è l'attore di questo film? Non conosco bene il volto.",
+              "isCorrect": false,
+              "feedback": "You are talking about a book, not a movie."
+            },
+            {
+              "text": "Chi è l'autista di questo bus? Non conosco bene la strada.",
+              "isCorrect": false,
+              "feedback": "You are in a bookstore, not on a bus."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "È Italo Calvino, uno dei più importanti scrittori italiani del secolo.",
+          "english": "It is Italo Calvino, one of the most important Italian writers of the century.",
+          "choices": [
+            {
+              "text": "Ah, ho già sentito questo nome. Forse ho letto qualcosa.",
+              "isCorrect": true,
+              "feedback": "Connecting new information with what you already know."
+            },
+            {
+              "text": "Ah, ho già bevuto questo vino. Forse ho preso una bottiglia.",
+              "isCorrect": false,
+              "feedback": "You are talking about a writer, not wine."
+            },
+            {
+              "text": "Ah, ho già visto questo film. Forse ho preso un biglietto.",
+              "isCorrect": false,
+              "feedback": "Focus on the author and the book."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Allora apprezzerà sicuramente questa bellissima edizione speciale.",
+          "english": "Then you will certainly appreciate this beautiful special edition.",
+          "choices": [
+            {
+              "text": "Cosa ha di speciale rispetto alle altre edizioni normali?",
+              "isCorrect": true,
+              "feedback": "Good! Asking for details about the product."
+            },
+            {
+              "text": "Cosa ha di speciale rispetto alle altre pizze normali?",
+              "isCorrect": false,
+              "feedback": "This is a bookstore, not a pizzeria."
+            },
+            {
+              "text": "Cosa ha di speciale rispetto alle altre scarpe normali?",
+              "isCorrect": false,
+              "feedback": "You are buying a book, not shoes."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Contiene delle illustrazioni originali e una prefazione inedita.",
+          "english": "It contains original illustrations and an unpublished preface.",
+          "choices": [
+            {
+              "text": "Molto interessante. È un libro pesante o difficile da leggere?",
+              "isCorrect": true,
+              "feedback": "Asking about the reading level is smart."
+            },
+            {
+              "text": "Molto divertente. È un mare profondo o difficile da nuotare?",
+              "isCorrect": false,
+              "feedback": "You are talking about a book, not the sea."
+            },
+            {
+              "text": "Molto elegante. È un vestito lungo o difficile da indossare?",
+              "isCorrect": false,
+              "feedback": "This is a bookstore, not a boutique."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "No, il linguaggio è semplice e la lettura è molto scorrevole.",
+          "english": "No, the language is simple and the reading is very smooth.",
+          "choices": [
+            {
+              "text": "Perfetto. Qual è il prezzo di questo libro così bello?",
+              "isCorrect": true,
+              "feedback": "Transitioning to the price after getting information."
+            },
+            {
+              "text": "Perfetto. Qual è il prezzo di questo gelato così freddo?",
+              "isCorrect": false,
+              "feedback": "You are not at an ice cream shop."
+            },
+            {
+              "text": "Perfetto. Qual è il prezzo di questo treno così veloce?",
+              "isCorrect": false,
+              "feedback": "You are not at the station."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Costa venti euro. È un'ottima edizione con una bella copertina.",
+          "english": "It costs twenty euros. It is an excellent edition with a beautiful cover.",
+          "choices": [
+            {
+              "text": "Venti euro, va bene. Posso pagare con la mia carta?",
+              "isCorrect": true,
+              "feedback": "Good. Checking the payment method."
+            },
+            {
+              "text": "Venti euro, va bene. Posso pagare con la mia borsa?",
+              "isCorrect": false,
+              "feedback": "You pay with a card, not with the bag itself."
+            },
+            {
+              "text": "Venti euro, va bene. Posso pagare con la mia faccia?",
+              "isCorrect": false,
+              "feedback": "That's not a valid payment method!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente, accettiamo tutte le carte. Andiamo alla cassa.",
+          "english": "Certainly, we accept all cards. Let's go to the counter.",
+          "choices": [
+            {
+              "text": "Ottimo, grazie. Posso avere anche un piccolo segnalibro?",
+              "isCorrect": true,
+              "feedback": "Polite request for a common bookstore item."
+            },
+            {
+              "text": "Ottimo, grazie. Posso avere anche un piccolo ombrello?",
+              "isCorrect": false,
+              "feedback": "This is a bookstore, not a hardware store."
+            },
+            {
+              "text": "Ottimo, grazie. Posso avere anche un piccolo panino?",
+              "isCorrect": false,
+              "feedback": "This is not a cafe."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certamente, glielo regalo io con piacere. Ecco a lei.",
+          "english": "Certainly, I'll give it to you for free with pleasure. Here it is.",
+          "choices": [
+            {
+              "text": "Grazie mille, lei è davvero molto gentile. Buona giornata.",
+              "isCorrect": true,
+              "feedback": "A polite and friendly way to conclude the interaction."
+            },
+            {
+              "text": "Grazie mille, lei è davvero molto veloce. Buona corsa.",
+              "isCorrect": false,
+              "feedback": "The host is being kind, not running a race."
+            },
+            {
+              "text": "Grazie mille, lei è davvero molto rumoroso. Silenzio.",
+              "isCorrect": false,
+              "feedback": "That's quite rude and incorrect."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ordering_book",
+      "title": "Ordering a Book",
+      "description": "The book you want is not available, so you order it.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Cerca un titolo in particolare oggi in libreria?",
+          "english": "Hello! Are you looking for a particular title today in the bookstore?",
+          "choices": [
+            {
+              "text": "Sì, cerco un dizionario di italiano. È disponibile qui?",
+              "isCorrect": true,
+              "feedback": "Specific and clear request."
+            },
+            {
+              "text": "Sì, cerco un dottore di medicina. È disponibile qui?",
+              "isCorrect": false,
+              "feedback": "This is a bookstore, you won't find a doctor here."
+            },
+            {
+              "text": "Sì, cerco un biglietto di treno. È disponibile qui?",
+              "isCorrect": false,
+              "feedback": "You should go to the station for train tickets."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dispiace, al momento quel dizionario non è disponibile.",
+          "english": "I'm sorry, at the moment that dictionary is not available.",
+          "choices": [
+            {
+              "text": "Peccato. Ne avete altri simili o più piccoli in negozio?",
+              "isCorrect": true,
+              "feedback": "Good follow-up to see other options."
+            },
+            {
+              "text": "Peccato. Ne avete altri neri o più grandi al mercato?",
+              "isCorrect": false,
+              "feedback": "Stay focused on the bookstore stock."
+            },
+            {
+              "text": "Peccato. Ne avete altri caldi o più dolci al bar?",
+              "isCorrect": false,
+              "feedback": "You are looking for a dictionary, not food."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Abbiamo dei dizionari tascabili, ma quello completo è terminato.",
+          "english": "We have pocket dictionaries, but the complete one is sold out.",
+          "choices": [
+            {
+              "text": "Preferisco quello completo per studiare. Quando torna?",
+              "isCorrect": true,
+              "feedback": "Clarifying your preference and asking about availability."
+            },
+            {
+              "text": "Preferisco quello rotto per giocare. Quando torna?",
+              "isCorrect": false,
+              "feedback": "Why would you want a broken dictionary?"
+            },
+            {
+              "text": "Preferisco quello blu per ballare. Quando torna?",
+              "isCorrect": false,
+              "feedback": "Focus on the dictionary type, not dancing."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "È possibile ordinarlo se vuole. Di solito arriva molto presto.",
+          "english": "It is possible to order it if you want. Usually it arrives very soon.",
+          "choices": [
+            {
+              "text": "Quanto tempo ci vuole per averlo qui in libreria?",
+              "isCorrect": true,
+              "feedback": "Good question about the delivery time."
+            },
+            {
+              "text": "Quanto tempo ci vuole per andare a piedi a Roma?",
+              "isCorrect": false,
+              "feedback": "That is irrelevant to ordering a book."
+            },
+            {
+              "text": "Quanto tempo ci vuole per cucinare una pasta?",
+              "isCorrect": false,
+              "feedback": "Stay in the bookstore context."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Posso ordinarlo oggi e arriverà tra soli due giorni.",
+          "english": "I can order it today and it will arrive in only two days.",
+          "choices": [
+            {
+              "text": "Perfetto, allora lo ordino. Devo lasciare un acconto?",
+              "isCorrect": true,
+              "feedback": "Good question about the ordering process."
+            },
+            {
+              "text": "Perfetto, allora lo mangio. Devo lasciare un piatto?",
+              "isCorrect": false,
+              "feedback": "You are ordering a book, not food."
+            },
+            {
+              "text": "Perfetto, allora lo lavo. Devo lasciare un sapone?",
+              "isCorrect": false,
+              "feedback": "You don't wash books!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "No, non serve l'acconto. Pagherà tutto al ritiro del libro.",
+          "english": "No, a deposit is not needed. You will pay everything when you pick up the book.",
+          "choices": [
+            {
+              "text": "Va bene. Quali sono i dati che le servono per l'ordine?",
+              "isCorrect": true,
+              "feedback": "Good. Moving forward with the procedure."
+            },
+            {
+              "text": "Va bene. Quali sono i film che le piacciono al cinema?",
+              "isCorrect": false,
+              "feedback": "Not the right time for small talk about movies."
+            },
+            {
+              "text": "Va bene. Quali sono i piatti che le servono a tavola?",
+              "isCorrect": false,
+              "feedback": "You are in a bookstore, not a restaurant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Mi lasci solo il suo nome e il suo numero di telefono.",
+          "english": "Just leave me your name and your phone number.",
+          "choices": [
+            {
+              "text": "Certamente. Mi chiamo Marco e il mio numero è 123456.",
+              "isCorrect": true,
+              "feedback": "Providing the requested information clearly."
+            },
+            {
+              "text": "Certamente. Mi chiamo Mario e il mio indirizzo è Roma.",
+              "isCorrect": false,
+              "feedback": "The host asked for your phone number, not your address."
+            },
+            {
+              "text": "Certamente. Mi chiamo Paolo e il mio colore è il blu.",
+              "isCorrect": false,
+              "feedback": "Providing a color is not useful here."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Grazie Marco. Vuole che le mandiamo anche un messaggio?",
+          "english": "Thank you Marco. Do you want us to also send you a message?",
+          "choices": [
+            {
+              "text": "Sì, un messaggio sul cellulare va bene, grazie mille.",
+              "isCorrect": true,
+              "feedback": "Confirming the preferred communication method."
+            },
+            {
+              "text": "Sì, un messaggio sulla bottiglia va bene, grazie mille.",
+              "isCorrect": false,
+              "feedback": "That's not a common way for a bookstore to contact you."
+            },
+            {
+              "text": "Sì, un messaggio sulla sabbia va bene, grazie mille.",
+              "isCorrect": false,
+              "feedback": "Stay realistic!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Benissimo, la contatteremo non appena il libro sarà qui.",
+          "english": "Very well, we will contact you as soon as the book is here.",
+          "choices": [
+            {
+              "text": "C'è un orario particolare per il ritiro del dizionario?",
+              "isCorrect": true,
+              "feedback": "Good logistical question."
+            },
+            {
+              "text": "C'è un orario particolare per il decollo dell'aereo?",
+              "isCorrect": false,
+              "feedback": "You are not at the airport."
+            },
+            {
+              "text": "C'è un orario particolare per il lavaggio dei denti?",
+              "isCorrect": false,
+              "feedback": "That's a personal matter!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Siamo aperti dalle nove alle diciannove, orario continuato.",
+          "english": "We are open from nine to seven, continuous hours.",
+          "choices": [
+            {
+              "text": "Ottimo, allora a tra due giorni per il ritiro. Grazie!",
+              "isCorrect": true,
+              "feedback": "Polite conclusion and confirmation of the plan."
+            },
+            {
+              "text": "Ottimo, allora a tra due anni per il ritiro. Grazie!",
+              "isCorrect": false,
+              "feedback": "Two years is way too long!"
+            },
+            {
+              "text": "Ottimo, allora a tra due ore per il ritiro. Grazie!",
+              "isCorrect": false,
+              "feedback": "The book takes two days to arrive, not two hours."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checking_out",
+      "title": "Checking Out",
+      "description": "Finish your visit and pay for your books at the counter.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Ha trovato tutto quello che cercava oggi?",
+          "english": "Good morning! Did you find everything you were looking for today?",
+          "choices": [
+            {
+              "text": "Sì, ho preso un romanzo e un saggio. Eccoli qui.",
+              "isCorrect": true,
+              "feedback": "Clear answer showing the items to buy."
+            },
+            {
+              "text": "Sì, ho preso un gelato e un caffè. Eccoli qui.",
+              "isCorrect": false,
+              "feedback": "You are in a bookstore, not a bar."
+            },
+            {
+              "text": "Sì, ho preso un cane e un gatto. Eccoli qui.",
+              "isCorrect": false,
+              "feedback": "This is a bookstore, not a pet shop."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottime scelte. Il saggio è molto interessante, è una novità.",
+          "english": "Excellent choices. The essay is very interesting, it is a new release.",
+          "choices": [
+            {
+              "text": "Sì, ne ho sentito parlare bene da alcuni miei amici.",
+              "isCorrect": true,
+              "feedback": "Adding personal context to the conversation."
+            },
+            {
+              "text": "Sì, ne ho mangiato un po' a casa di alcuni miei amici.",
+              "isCorrect": false,
+              "feedback": "You don't eat books!"
+            },
+            {
+              "text": "Sì, ne ho lavato un po' a casa di alcuni miei amici.",
+              "isCorrect": false,
+              "feedback": "You don't wash books!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Vuole anche un sacchetto per portare questi due libri?",
+          "english": "Do you also want a bag to carry these two books?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Un sacchetto di carta va benissimo.",
+              "isCorrect": true,
+              "feedback": "Responding to the offer of a bag."
+            },
+            {
+              "text": "Sì, grazie. Un sacchetto di ferro va benissimo.",
+              "isCorrect": false,
+              "feedback": "Bags are not usually made of iron!"
+            },
+            {
+              "text": "Sì, grazie. Un sacchetto di fuoco va benissimo.",
+              "isCorrect": false,
+              "feedback": "That's impossible and dangerous!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Abbiamo anche dei sacchetti di tela se preferisce uno.",
+          "english": "We also have cloth bags if you prefer one.",
+          "choices": [
+            {
+              "text": "No grazie, quello di carta è sufficiente per ora.",
+              "isCorrect": true,
+              "feedback": "Making a choice between the offered options."
+            },
+            {
+              "text": "No grazie, quello di vetro è sufficiente per ora.",
+              "isCorrect": false,
+              "feedback": "Glass bags don't exist!"
+            },
+            {
+              "text": "No grazie, quello di nebbia è sufficiente per ora.",
+              "isCorrect": false,
+              "feedback": "Mist is not a material for bags!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "In totale sono trentacinque euro per tutto quanto.",
+          "english": "In total it is thirty-five euros for everything.",
+          "choices": [
+            {
+              "text": "Ecco a lei quaranta euro. Ha il resto per favore?",
+              "isCorrect": true,
+              "feedback": "Paying with cash and asking for change."
+            },
+            {
+              "text": "Ecco a lei quaranta mele. Ha il resto per favore?",
+              "isCorrect": false,
+              "feedback": "You pay with euros, not apples."
+            },
+            {
+              "text": "Ecco a lei quaranta scarpe. Ha il resto per favore?",
+              "isCorrect": false,
+              "feedback": "You pay with money, not shoes."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, ecco il suo resto di cinque euro e lo scontrino.",
+          "english": "Yes, here is your change of five euros and the receipt.",
+          "choices": [
+            {
+              "text": "Grazie. Può farmi una confezione regalo per questo?",
+              "isCorrect": true,
+              "feedback": "Good additional request for a gift wrap."
+            },
+            {
+              "text": "Grazie. Può farmi una doccia calda per questo?",
+              "isCorrect": false,
+              "feedback": "This is a bookstore, not a bathroom."
+            },
+            {
+              "text": "Grazie. Può farmi una corsa veloce per questo?",
+              "isCorrect": false,
+              "feedback": "The host is not an athlete."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente, per quale dei due libri vuole il pacchetto?",
+          "english": "Certainly, for which of the two books do you want the wrap?",
+          "choices": [
+            {
+              "text": "Per il romanzo, è un regalo per un caro amico.",
+              "isCorrect": true,
+              "feedback": "Specifying which item needs the gift wrap."
+            },
+            {
+              "text": "Per il mare, è un regalo per un caro pesce.",
+              "isCorrect": false,
+              "feedback": "You are wrapping a book, not the sea."
+            },
+            {
+              "text": "Per il cielo, è un regalo per un caro uccello.",
+              "isCorrect": false,
+              "feedback": "You are wrapping a book, not the sky."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Perfetto. Vuole anche un biglietto di auguri vuoto?",
+          "english": "Perfect. Do you also want an empty greeting card?",
+          "choices": [
+            {
+              "text": "No grazie, ho già comprato un biglietto prima.",
+              "isCorrect": true,
+              "feedback": "Politely declining the offer."
+            },
+            {
+              "text": "No grazie, ho già comprato un cavallo prima.",
+              "isCorrect": false,
+              "feedback": "A horse is not a substitute for a card."
+            },
+            {
+              "text": "No grazie, ho già comprato un aereo prima.",
+              "isCorrect": false,
+              "feedback": "An airplane is not a substitute for a card."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene. Ecco il libro impacchettato. Le serve altro?",
+          "english": "Alright. Here is the wrapped book. Do you need anything else?",
+          "choices": [
+            {
+              "text": "No, sono a posto così. Grazie mille per l'aiuto.",
+              "isCorrect": true,
+              "feedback": "Concluding the transaction politely."
+            },
+            {
+              "text": "No, sono un gatto così. Grazie mille per l'aiuto.",
+              "isCorrect": false,
+              "feedback": "You are not a cat!"
+            },
+            {
+              "text": "No, sono un muro così. Grazie mille per l'aiuto.",
+              "isCorrect": false,
+              "feedback": "You are not a wall!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego! Arrivederci e buona lettura con i suoi libri!",
+          "english": "You're welcome! Goodbye and enjoy reading your books!",
+          "choices": [
+            {
+              "text": "Arrivederci e buona giornata anche a lei! Grazie.",
+              "isCorrect": true,
+              "feedback": "Final polite goodbye."
+            },
+            {
+              "text": "Arrivederci e buona notte anche a lei! Grazie.",
+              "isCorrect": false,
+              "feedback": "It's still daytime, 'buona giornata' is better."
+            },
+            {
+              "text": "Arrivederci e buona fortuna anche a lei! Grazie.",
+              "isCorrect": false,
+              "feedback": "'Buona giornata' is more standard here."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

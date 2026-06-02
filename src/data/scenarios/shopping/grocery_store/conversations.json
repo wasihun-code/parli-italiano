@@ -1,0 +1,953 @@
+{
+  "scenarioId": "shopping/grocery_store",
+  "conversations": [
+    {
+      "id": "fresh_fruit",
+      "title": "Comprare frutta fresca",
+      "description": "Buy fresh fruit and ask for quantities.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno signora. Desidera della frutta fresca oggi?",
+          "english": "Good morning madam. Would you like some fresh fruit today?",
+          "choices": [
+            {
+              "text": "Sì grazie. Vorrei delle mele rosse, per favore.",
+              "isCorrect": true,
+              "feedback": "Perfect! We have very sweet apples today."
+            },
+            {
+              "text": "No grazie, voglio comprare una bicicletta nuova.",
+              "isCorrect": false,
+              "feedback": "We only sell food here, not bicycles."
+            },
+            {
+              "text": "Sì, voglio un chilo di carne di maiale.",
+              "isCorrect": false,
+              "feedback": "This is the fruit stand, the butcher is over there."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Le mele rosse sono buonissime. Quanti chili ne vuole?",
+          "english": "The red apples are very good. How many kilos do you want?",
+          "choices": [
+            {
+              "text": "Ne vorrei circa due chili. Sono dolci?",
+              "isCorrect": true,
+              "feedback": "Yes, they are the sweetest variety we have."
+            },
+            {
+              "text": "Voglio venti chili di mele, per favore.",
+              "isCorrect": false,
+              "feedback": "That is a lot of apples! Are you making jam?"
+            },
+            {
+              "text": "Non voglio niente, ho cambiato idea.",
+              "isCorrect": false,
+              "feedback": "No problem, let me know if you need anything else."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, sono molto dolci. Ecco a lei due chili. Altro?",
+          "english": "Yes, they are very sweet. Here are two kilos. Anything else?",
+          "choices": [
+            {
+              "text": "Mi servono anche delle banane, ma non troppo mature.",
+              "isCorrect": true,
+              "feedback": "We have some green ones over here."
+            },
+            {
+              "text": "Voglio delle banane completamente nere, grazie.",
+              "isCorrect": false,
+              "feedback": "We usually throw those away, they are too ripe."
+            },
+            {
+              "text": "Mi serve un frigorifero per le mele.",
+              "isCorrect": false,
+              "feedback": "We sell fruit, not household appliances."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Queste banane verdi sono perfette. Quante ne metto?",
+          "english": "These green bananas are perfect. How many should I put?",
+          "choices": [
+            {
+              "text": "Un casco di banane va benissimo, grazie.",
+              "isCorrect": true,
+              "feedback": "Alright, one bunch of bananas for you."
+            },
+            {
+              "text": "Metta una sola banana nella busta.",
+              "isCorrect": false,
+              "feedback": "Just one banana? Usually people buy a few more."
+            },
+            {
+              "text": "Voglio comprare tutto il negozio adesso.",
+              "isCorrect": false,
+              "feedback": "I cannot sell you the whole store, madam!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Bene, le banane sono nel sacchetto. Serve verdura?",
+          "english": "Good, the bananas are in the bag. Do you need vegetables?",
+          "choices": [
+            {
+              "text": "Sì, un chilo di pomodori da insalata.",
+              "isCorrect": true,
+              "feedback": "The salad tomatoes are very fresh today."
+            },
+            {
+              "text": "No, odio le verdure, voglio solo dolci.",
+              "isCorrect": false,
+              "feedback": "Vegetables are healthy! But the sweets are in aisle 4."
+            },
+            {
+              "text": "Sì, voglio un chilo di sabbia gialla.",
+              "isCorrect": false,
+              "feedback": "We don't sell sand, this is a grocery store."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco i pomodori. Costano tre euro al chilo.",
+          "english": "Here are the tomatoes. They cost three euros per kilo.",
+          "choices": [
+            {
+              "text": "Il prezzo è ottimo. Prendo tutto, grazie.",
+              "isCorrect": true,
+              "feedback": "Great, let me weigh everything for you."
+            },
+            {
+              "text": "Sono troppo cari, voglio pagare un euro.",
+              "isCorrect": false,
+              "feedback": "I'm sorry, prices are fixed here."
+            },
+            {
+              "text": "Voglio regalare i pomodori al mio cane.",
+              "isCorrect": false,
+              "feedback": "Dogs usually don't eat tomatoes!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Il totale è otto euro. Paga in contanti o con carta?",
+          "english": "The total is eight euros. Do you pay in cash or by card?",
+          "choices": [
+            {
+              "text": "Pago con la carta di credito, grazie.",
+              "isCorrect": true,
+              "feedback": "Perfect, insert your card here."
+            },
+            {
+              "text": "Pago con delle vecchie monete d'oro.",
+              "isCorrect": false,
+              "feedback": "We only accept euros, not gold coins."
+            },
+            {
+              "text": "Non voglio pagare, scappo via subito.",
+              "isCorrect": false,
+              "feedback": "You cannot leave without paying!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "La transazione è approvata. Ecco lo scontrino.",
+          "english": "The transaction is approved. Here is the receipt.",
+          "choices": [
+            {
+              "text": "Grazie. Può dirmi dove si trova il pane?",
+              "isCorrect": true,
+              "feedback": "The bread is in the next aisle to the right."
+            },
+            {
+              "text": "Non voglio lo scontrino, lo butti via.",
+              "isCorrect": false,
+              "feedback": "It's always better to keep the receipt!"
+            },
+            {
+              "text": "Dove posso trovare un buon ristorante?",
+              "isCorrect": false,
+              "feedback": "There is a nice pizzeria down the street."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Il pane si trova nel reparto forno, in fondo a destra.",
+          "english": "The bread is in the bakery section, at the back on the right.",
+          "choices": [
+            {
+              "text": "Perfetto, vado subito a prendere il pane.",
+              "isCorrect": true,
+              "feedback": "Have a good shopping experience!"
+            },
+            {
+              "text": "Il forno è troppo lontano, vado a casa.",
+              "isCorrect": false,
+              "feedback": "It's just a short walk from here."
+            },
+            {
+              "text": "Non mi piace la destra, andrò a sinistra.",
+              "isCorrect": false,
+              "feedback": "You will find the cleaning products on the left."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci signora, e buona giornata!",
+          "english": "Goodbye madam, and have a good day!",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie per l'aiuto. A presto!",
+              "isCorrect": true,
+              "feedback": "You are very welcome! Come back soon."
+            },
+            {
+              "text": "Non tornerò mai più in questo negozio.",
+              "isCorrect": false,
+              "feedback": "I am sorry to hear that. Have a good day anyway."
+            },
+            {
+              "text": "Ciao, vado a dormire sotto un albero.",
+              "isCorrect": false,
+              "feedback": "That's an unusual plan! Goodbye."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deli_counter",
+      "title": "Al banco salumeria",
+      "description": "Order cold cuts and cheese at the deli counter.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Prego, tocca a lei. Cosa posso servirle oggi?",
+          "english": "Please, it's your turn. What can I serve you today?",
+          "choices": [
+            {
+              "text": "Buongiorno. Vorrei due etti di prosciutto crudo.",
+              "isCorrect": true,
+              "feedback": "Certainly, prosciutto crudo. Sweet or salty?"
+            },
+            {
+              "text": "Voglio comprare il bancone della salumeria.",
+              "isCorrect": false,
+              "feedback": "The counter is not for sale, only the food on it!"
+            },
+            {
+              "text": "No, sto solo guardando il prosciutto.",
+              "isCorrect": false,
+              "feedback": "Feel free to look. Let me know when you're ready."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Prosciutto crudo dolce o salato? Lo taglio sottile?",
+          "english": "Sweet or salty raw ham? Shall I cut it thin?",
+          "choices": [
+            {
+              "text": "Crudo dolce, per favore. E sì, fette molto sottili.",
+              "isCorrect": true,
+              "feedback": "Thin slices are the best way to eat it."
+            },
+            {
+              "text": "Voglio delle fette spesse un centimetro.",
+              "isCorrect": false,
+              "feedback": "That's very thick for prosciutto! Usually it's thin."
+            },
+            {
+              "text": "Preferisco il prosciutto di plastica, grazie.",
+              "isCorrect": false,
+              "feedback": "We only sell real, high-quality ham here."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ecco qui i due etti di crudo. Serve anche del formaggio?",
+          "english": "Here are the two hundred grams of raw ham. Do you also need cheese?",
+          "choices": [
+            {
+              "text": "Sì, mi dia un pezzo di parmigiano reggiano.",
+              "isCorrect": true,
+              "feedback": "Excellent choice. Parmigiano is delicious."
+            },
+            {
+              "text": "No, il formaggio mi fa sempre piangere.",
+              "isCorrect": false,
+              "feedback": "That's strange! Are you allergic to dairy?"
+            },
+            {
+              "text": "Voglio del formaggio blu con i vermi.",
+              "isCorrect": false,
+              "feedback": "We don't have that specific type of cheese!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Parmigiano stagionato 24 mesi. Va bene questo pezzo?",
+          "english": "Parmesan aged 24 months. Is this piece okay?",
+          "choices": [
+            {
+              "text": "Sì, sembra perfetto. Quanto pesa circa?",
+              "isCorrect": true,
+              "feedback": "It's about three hundred grams."
+            },
+            {
+              "text": "È troppo piccolo, voglio una forma intera.",
+              "isCorrect": false,
+              "feedback": "A whole wheel is very heavy and expensive!"
+            },
+            {
+              "text": "No, sembra finto. Non lo voglio più.",
+              "isCorrect": false,
+              "feedback": "It's genuine Parmigiano Reggiano, I assure you."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Pesa trecento grammi esatti. Lo incarto?",
+          "english": "It weighs exactly three hundred grams. Shall I wrap it?",
+          "choices": [
+            {
+              "text": "Va benissimo. Prendo anche delle olive nere.",
+              "isCorrect": true,
+              "feedback": "Sure. Do you want them with or without pits?"
+            },
+            {
+              "text": "Non lo incarti, lo mangio qui al banco.",
+              "isCorrect": false,
+              "feedback": "You must pay for it first at the checkout!"
+            },
+            {
+              "text": "Voglio che lo nasconda in una scatola.",
+              "isCorrect": false,
+              "feedback": "I will wrap it in our special paper."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Olive nere snocciolate o con il nocciolo?",
+          "english": "Pitted black olives or with the pit?",
+          "choices": [
+            {
+              "text": "Snocciolate, grazie. Un etto sarà sufficiente.",
+              "isCorrect": true,
+              "feedback": "One hundred grams of pitted olives coming up."
+            },
+            {
+              "text": "Voglio solo i noccioli delle olive, grazie.",
+              "isCorrect": false,
+              "feedback": "We only sell the whole olives, not just the pits!"
+            },
+            {
+              "text": "Olive verdi, ho appena cambiato idea.",
+              "isCorrect": false,
+              "feedback": "Okay, green olives instead. No problem."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco le olive. Posso aiutarla con qualcos'altro oggi?",
+          "english": "Here are the olives. Can I help you with anything else today?",
+          "choices": [
+            {
+              "text": "No, grazie. È tutto. Può mettermi l'etichetta?",
+              "isCorrect": true,
+              "feedback": "Of course, I'll print the price label now."
+            },
+            {
+              "text": "Sì, mi porti la spesa fino a casa mia.",
+              "isCorrect": false,
+              "feedback": "We don't offer a home delivery service, sorry."
+            },
+            {
+              "text": "Voglio comprare anche il suo grembiule bianco.",
+              "isCorrect": false,
+              "feedback": "My apron is part of my uniform, it's not for sale!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ho messo le etichette con i prezzi. Deve pagare alla cassa centrale.",
+          "english": "I put the price labels on. You must pay at the central checkout.",
+          "choices": [
+            {
+              "text": "Capito. Dove si trova la cassa centrale?",
+              "isCorrect": true,
+              "feedback": "It's near the main entrance of the supermarket."
+            },
+            {
+              "text": "Voglio pagare lei adesso, con questi contanti.",
+              "isCorrect": false,
+              "feedback": "I cannot take money here at the deli counter."
+            },
+            {
+              "text": "Non pagherò mai, fuggirò nel bosco.",
+              "isCorrect": false,
+              "feedback": "That's stealing! Please go to the checkout."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Le casse sono verso l'uscita, dopo il reparto dei surgelati.",
+          "english": "The checkouts are towards the exit, after the frozen food section.",
+          "choices": [
+            {
+              "text": "Grazie mille per le informazioni. Buona giornata.",
+              "isCorrect": true,
+              "feedback": "You're welcome. Enjoy your meal!"
+            },
+            {
+              "text": "Odio i surgelati, farò un'altra strada.",
+              "isCorrect": false,
+              "feedback": "You can also go through the beverage aisle."
+            },
+            {
+              "text": "Mi sono perso nel supermercato ieri.",
+              "isCorrect": false,
+              "feedback": "It's quite big, but there are signs everywhere."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego, buona spesa! Arrivederci.",
+          "english": "You're welcome, have a good shopping! Goodbye.",
+          "choices": [
+            {
+              "text": "Arrivederci! I suoi prodotti sembrano ottimi.",
+              "isCorrect": true,
+              "feedback": "Thank you, we always try to offer the best quality."
+            },
+            {
+              "text": "I suoi prodotti sono terribili, addio.",
+              "isCorrect": false,
+              "feedback": "I'm sorry you think so. We have many happy customers."
+            },
+            {
+              "text": "Non voglio andarmene, voglio vivere qui.",
+              "isCorrect": false,
+              "feedback": "We close at 8 PM, you can't sleep here!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dairy_aisle",
+      "title": "Trovare il reparto latticini",
+      "description": "Ask for directions to the dairy aisle and buy milk.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Scusi signore, ha bisogno di aiuto per trovare qualcosa?",
+          "english": "Excuse me sir, do you need help finding something?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Non riesco a trovare il latte.",
+              "isCorrect": true,
+              "feedback": "The milk is in the dairy aisle, let me show you."
+            },
+            {
+              "text": "No, sto cercando il mio gatto perduto.",
+              "isCorrect": false,
+              "feedback": "Pets are not allowed inside the supermarket."
+            },
+            {
+              "text": "Voglio solo passeggiare con il carrello.",
+              "isCorrect": false,
+              "feedback": "Enjoy your walk, but let me know if you need help."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il latte è nel corridoio tre, nel reparto frigoriferi.",
+          "english": "The milk is in aisle three, in the refrigerator section.",
+          "choices": [
+            {
+              "text": "Corridoio tre. Avete il latte parzialmente scremato?",
+              "isCorrect": true,
+              "feedback": "Yes, we have whole, skimmed, and semi-skimmed milk."
+            },
+            {
+              "text": "Voglio il latte caldo, appena munto.",
+              "isCorrect": false,
+              "feedback": "We only sell pasteurized milk from the fridge."
+            },
+            {
+              "text": "Il corridoio tre fa troppa paura.",
+              "isCorrect": false,
+              "feedback": "It's just an aisle with food! Nothing to fear."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente, abbiamo diverse marche. Quanti litri le servono?",
+          "english": "Certainly, we have several brands. How many liters do you need?",
+          "choices": [
+            {
+              "text": "Me ne servono due bottiglie, grazie.",
+              "isCorrect": true,
+              "feedback": "Okay, the bottles are on the middle shelf."
+            },
+            {
+              "text": "Voglio cento litri di latte intero.",
+              "isCorrect": false,
+              "feedback": "That's too much! We might not have enough in stock."
+            },
+            {
+              "text": "Non bevo latte, sono intollerante.",
+              "isCorrect": false,
+              "feedback": "But you just asked for milk! We have soy milk too."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Le bottiglie da un litro sono sullo scaffale in mezzo.",
+          "english": "The one-liter bottles are on the middle shelf.",
+          "choices": [
+            {
+              "text": "Trovate. E dove posso trovare il burro?",
+              "isCorrect": true,
+              "feedback": "The butter is right next to the milk."
+            },
+            {
+              "text": "Lo scaffale in mezzo è troppo alto per me.",
+              "isCorrect": false,
+              "feedback": "It's at eye level, it shouldn't be too high."
+            },
+            {
+              "text": "Voglio comprare lo scaffale intero.",
+              "isCorrect": false,
+              "feedback": "We only sell the products, not the shelves."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Il burro è proprio lì a fianco, vicino agli yogurt.",
+          "english": "The butter is right next to it, near the yogurts.",
+          "choices": [
+            {
+              "text": "Perfetto. Prendo anche due yogurt alla fragola.",
+              "isCorrect": true,
+              "feedback": "Great choice. Strawberry is very popular."
+            },
+            {
+              "text": "Odio lo yogurt, sa di medicina.",
+              "isCorrect": false,
+              "feedback": "Our yogurt is very sweet and fresh!"
+            },
+            {
+              "text": "Il burro è troppo freddo, mi congela le mani.",
+              "isCorrect": false,
+              "feedback": "It needs to be kept in the fridge to stay fresh."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco gli yogurt alla fragola. Sono in offerta oggi.",
+          "english": "Here are the strawberry yogurts. They are on sale today.",
+          "choices": [
+            {
+              "text": "Fantastico. Hanno una lunga scadenza?",
+              "isCorrect": true,
+              "feedback": "Yes, they expire in two weeks."
+            },
+            {
+              "text": "Voglio pagare di più, non voglio l'offerta.",
+              "isCorrect": false,
+              "feedback": "That's unusual! Most people like discounts."
+            },
+            {
+              "text": "Gli yogurt sono fatti di plastica rossa?",
+              "isCorrect": false,
+              "feedback": "No, they are made from real milk and strawberries."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Scadono tra due settimane. Sono freschissimi.",
+          "english": "They expire in two weeks. They are very fresh.",
+          "choices": [
+            {
+              "text": "Ottimo. Sa se avete le uova biologiche?",
+              "isCorrect": true,
+              "feedback": "Yes, the organic eggs are on the top shelf."
+            },
+            {
+              "text": "Voglio gli yogurt scaduti da un anno.",
+              "isCorrect": false,
+              "feedback": "We never sell expired food! It's illegal."
+            },
+            {
+              "text": "Le uova crescono sugli alberi in questo negozio?",
+              "isCorrect": false,
+              "feedback": "No, eggs come from chickens!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Le uova biologiche sono in alto, confezione da sei.",
+          "english": "The organic eggs are at the top, pack of six.",
+          "choices": [
+            {
+              "text": "Prendo una confezione. Grazie per tutto l'aiuto.",
+              "isCorrect": true,
+              "feedback": "You're welcome. Do you need anything else?"
+            },
+            {
+              "text": "Voglio rompere tutte le uova adesso.",
+              "isCorrect": false,
+              "feedback": "Please don't! You would have to pay for them."
+            },
+            {
+              "text": "La confezione da sei è troppo pesante.",
+              "isCorrect": false,
+              "feedback": "It's very light, it only weighs a few grams."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Di nulla. C'è qualcos'altro che non riesce a trovare?",
+          "english": "You're welcome. Is there anything else you can't find?",
+          "choices": [
+            {
+              "text": "No, ho trovato tutto quello che mi serve.",
+              "isCorrect": true,
+              "feedback": "Perfect. You can go to the checkout now."
+            },
+            {
+              "text": "Sì, non riesco a trovare la mia macchina fuori.",
+              "isCorrect": false,
+              "feedback": "I can only help you find things inside the store."
+            },
+            {
+              "text": "Voglio trovare un tesoro nascosto.",
+              "isCorrect": false,
+              "feedback": "There are no treasures here, only good food!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Benissimo. La cassa è in fondo al corridoio principale.",
+          "english": "Very well. The checkout is at the end of the main aisle.",
+          "choices": [
+            {
+              "text": "Vado subito a pagare. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Goodbye, and thank you for shopping here."
+            },
+            {
+              "text": "Non andrò mai alla cassa, mi nasconderò.",
+              "isCorrect": false,
+              "feedback": "We will find you at closing time!"
+            },
+            {
+              "text": "Il corridoio principale è noioso, volerò fuori.",
+              "isCorrect": false,
+              "feedback": "You can't fly, you must walk to the exit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checkout",
+      "title": "Alla cassa",
+      "description": "Pay for your groceries and use the loyalty card.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Ha la carta fedeltà del nostro supermercato?",
+          "english": "Good morning. Do you have our supermarket's loyalty card?",
+          "choices": [
+            {
+              "text": "Buongiorno. Sì, ecco la mia carta fedeltà.",
+              "isCorrect": true,
+              "feedback": "Thank you, I will scan it now."
+            },
+            {
+              "text": "No, ma ho una carta d'identità falsa.",
+              "isCorrect": false,
+              "feedback": "That's illegal! We just need the loyalty card."
+            },
+            {
+              "text": "La carta fedeltà è per i deboli, non la voglio.",
+              "isCorrect": false,
+              "feedback": "It just gives you discounts and points!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Perfetto. Le servono anche dei sacchetti per la spesa?",
+          "english": "Perfect. Do you also need some shopping bags?",
+          "choices": [
+            {
+              "text": "Sì, per favore. Me ne servono due, grazie.",
+              "isCorrect": true,
+              "feedback": "Two bags. They are ten cents each."
+            },
+            {
+              "text": "Voglio cento sacchetti di plastica.",
+              "isCorrect": false,
+              "feedback": "We try to limit plastic use for the environment."
+            },
+            {
+              "text": "Non uso sacchetti, porto tutto in mano.",
+              "isCorrect": false,
+              "feedback": "You have many items, it will be difficult!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "I sacchetti costano dieci centesimi l'uno. Passo gli articoli.",
+          "english": "The bags cost ten cents each. I'll scan the items.",
+          "choices": [
+            {
+              "text": "Va bene. Faccia con calma, non ho fretta.",
+              "isCorrect": true,
+              "feedback": "Thank you. Let me scan the fruit first."
+            },
+            {
+              "text": "Dieci centesimi? È un furto, chiamo la polizia.",
+              "isCorrect": false,
+              "feedback": "It's the standard price everywhere."
+            },
+            {
+              "text": "Passi gli articoli alla velocità della luce.",
+              "isCorrect": false,
+              "feedback": "I will go as fast as the scanner allows me!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Questi pomodori li ha pesati lei o devo farlo io?",
+          "english": "Did you weigh these tomatoes or do I have to do it?",
+          "choices": [
+            {
+              "text": "Li ho già pesati io, l'etichetta è sotto.",
+              "isCorrect": true,
+              "feedback": "Ah, I see it now. Thank you."
+            },
+            {
+              "text": "I pomodori si pesano da soli magicamente.",
+              "isCorrect": false,
+              "feedback": "You must use the scale in the vegetable section."
+            },
+            {
+              "text": "Non sono pomodori, sono palline da tennis.",
+              "isCorrect": false,
+              "feedback": "They look and feel very much like tomatoes!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ah, ecco l'etichetta. Il totale è di quarantacinque euro.",
+          "english": "Ah, here is the label. The total is forty-five euros.",
+          "choices": [
+            {
+              "text": "Quarantacinque euro. Posso pagare con il bancomat?",
+              "isCorrect": true,
+              "feedback": "Yes, insert your card when you are ready."
+            },
+            {
+              "text": "È troppo! Lascio tutta la spesa qui e scappo.",
+              "isCorrect": false,
+              "feedback": "Please don't do that, we have to put everything back."
+            },
+            {
+              "text": "Pago con un sorriso e una stretta di mano.",
+              "isCorrect": false,
+              "feedback": "We appreciate kindness, but we need money to run the store."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Certamente. Può inserire la carta nel pos o appoggiarla.",
+          "english": "Certainly. You can insert the card in the POS or tap it.",
+          "choices": [
+            {
+              "text": "Preferisco usare il contactless. Ecco fatto.",
+              "isCorrect": true,
+              "feedback": "Processing... The payment is successful."
+            },
+            {
+              "text": "Non voglio usare il pos, mi fa paura.",
+              "isCorrect": false,
+              "feedback": "It's just a machine for payments! It's safe."
+            },
+            {
+              "text": "Appoggio la carta sulla sua fronte.",
+              "isCorrect": false,
+              "feedback": "You need to tap it on the machine, not on me!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Transazione accettata. Vuole lo scontrino cartaceo?",
+          "english": "Transaction accepted. Do you want the paper receipt?",
+          "choices": [
+            {
+              "text": "Sì grazie. È sempre meglio controllare la spesa.",
+              "isCorrect": true,
+              "feedback": "Here is your receipt. I put it in the bag."
+            },
+            {
+              "text": "No, lo scontrino è fatto dal demonio.",
+              "isCorrect": false,
+              "feedback": "It's just paper with prices on it!"
+            },
+            {
+              "text": "Voglio mangiare lo scontrino per pranzo.",
+              "isCorrect": false,
+              "feedback": "Paper is not nutritious, please don't eat it."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ecco lo scontrino. Ha accumulato cinquanta punti oggi.",
+          "english": "Here is the receipt. You accumulated fifty points today.",
+          "choices": [
+            {
+              "text": "Bene. Cosa posso fare con i punti accumulati?",
+              "isCorrect": true,
+              "feedback": "You can get a discount on your next purchase."
+            },
+            {
+              "text": "Voglio usare i punti per comprare una macchina.",
+              "isCorrect": false,
+              "feedback": "You would need millions of points for a car!"
+            },
+            {
+              "text": "I punti sono finti, non servono a niente.",
+              "isCorrect": false,
+              "feedback": "They are real discounts, it's a good benefit."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Con i punti avrà uno sconto sulla prossima spesa.",
+          "english": "With the points you will have a discount on your next shopping.",
+          "choices": [
+            {
+              "text": "Ottima notizia. Tornerò sicuramente la prossima settimana.",
+              "isCorrect": true,
+              "feedback": "We look forward to seeing you again."
+            },
+            {
+              "text": "Non voglio sconti, sono una persona molto ricca.",
+              "isCorrect": false,
+              "feedback": "That's nice, but saving money is always good."
+            },
+            {
+              "text": "Voglio lo sconto applicato su questa spesa appena fatta.",
+              "isCorrect": false,
+              "feedback": "It's too late, the transaction is already closed."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie di aver fatto acquisti da noi. Buona giornata!",
+          "english": "Thank you for shopping with us. Have a good day!",
+          "choices": [
+            {
+              "text": "Grazie a lei. Buon lavoro e arrivederci!",
+              "isCorrect": true,
+              "feedback": "You're welcome. See you next time."
+            },
+            {
+              "text": "Non è stata una buona giornata, piove sempre.",
+              "isCorrect": false,
+              "feedback": "I hope the weather gets better soon!"
+            },
+            {
+              "text": "Io non ho fatto acquisti, ho rubato tutto.",
+              "isCorrect": false,
+              "feedback": "But you just paid with your card! You are confused."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,953 @@
+{
+  "scenarioId": 109,
+  "conversations": [
+    {
+      "id": "asking_the_time",
+      "title": "Asking the Time",
+      "description": "You stop a person on the street to ask for the current time.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Posso aiutarla?",
+          "english": "Good morning. Can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno. Scusi, sa che ore sono?",
+              "isCorrect": true,
+              "feedback": "Perfect! A polite way to ask for the time."
+            },
+            {
+              "text": "Buongiorno. Scusi, tu hai un orologio nero?",
+              "isCorrect": false,
+              "feedback": "This asks if they have a black watch, not the time."
+            },
+            {
+              "text": "Buongiorno. Scusi, sa dove abita lui?",
+              "isCorrect": false,
+              "feedback": "This asks where he lives, not the time."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Sono le dieci e mezza.",
+          "english": "Sure. It's half past ten.",
+          "choices": [
+            {
+              "text": "Le dieci e mezza? Grazie mille.",
+              "isCorrect": true,
+              "feedback": "Great! You confirmed the time and said thank you."
+            },
+            {
+              "text": "Le dodici e mezza? Grazie mille.",
+              "isCorrect": false,
+              "feedback": "You said twelve thirty, but they said ten thirty."
+            },
+            {
+              "text": "Le dieci e un quarto? Grazie mille.",
+              "isCorrect": false,
+              "feedback": "You said ten fifteen, but they said ten thirty."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Di nulla. Aspetta un treno o un autobus?",
+          "english": "You're welcome. Are you waiting for a train or a bus?",
+          "choices": [
+            {
+              "text": "Aspetto un treno che parte alle undici.",
+              "isCorrect": true,
+              "feedback": "Good! You stated your train leaves at eleven."
+            },
+            {
+              "text": "Compro un disco che costa due euro.",
+              "isCorrect": false,
+              "feedback": "Buying a record does not answer the question."
+            },
+            {
+              "text": "Leggo un libro che finisce alle undici.",
+              "isCorrect": false,
+              "feedback": "Reading a book does not fit waiting for transit."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ah, capisco. Allora ha ancora mezz'ora di tempo.",
+          "english": "Ah, I understand. Then you still have half an hour of time.",
+          "choices": [
+            {
+              "text": "Sì, ho tempo per un caffè veloce. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Perfect! You have time for a quick coffee."
+            },
+            {
+              "text": "Sì, ho fame per un pane bianco. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "The grammar and context are unnatural here."
+            },
+            {
+              "text": "No, ho freddo per un bagno caldo. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "Being cold does not make sense in this flow."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Buona idea. C'è un bar qui vicino, aperto tutto il giorno.",
+          "english": "Good idea. There's a bar nearby, open all day.",
+          "choices": [
+            {
+              "text": "Perfetto, vado subito. Buona giornata!",
+              "isCorrect": true,
+              "feedback": "A natural conclusion to the conversation."
+            },
+            {
+              "text": "Perfetto, torno indietro. Buona giornata!",
+              "isCorrect": false,
+              "feedback": "Going backward doesn't fit going to the bar."
+            },
+            {
+              "text": "Perfetto, corro sempre. Buona giornata!",
+              "isCorrect": false,
+              "feedback": "I always run doesn't fit the context."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Il bar è proprio dietro l'angolo. Sa dov'è la piazza?",
+          "english": "The bar is just around the corner. Do you know where the square is?",
+          "choices": [
+            {
+              "text": "No, non sono di qui. Mi può spiegare la strada?",
+              "isCorrect": true,
+              "feedback": "Good! You asked for directions."
+            },
+            {
+              "text": "Sì, mangio una mela rossa. Mi può spiegare la strada?",
+              "isCorrect": false,
+              "feedback": "Eating an apple is irrelevant here."
+            },
+            {
+              "text": "No, ho una macchina verde. Mi può spiegare la strada?",
+              "isCorrect": false,
+              "feedback": "Having a green car is irrelevant here."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certo. Giri a destra e vada dritto per cento metri.",
+          "english": "Sure. Turn right and go straight for a hundred meters.",
+          "choices": [
+            {
+              "text": "Grazie mille. Il bar è aperto anche la domenica?",
+              "isCorrect": true,
+              "feedback": "Great follow-up question about the opening days."
+            },
+            {
+              "text": "Grazie mille. Il mare è blu?",
+              "isCorrect": false,
+              "feedback": "This is completely irrelevant."
+            },
+            {
+              "text": "Grazie mille. Il gatto dorme?",
+              "isCorrect": false,
+              "feedback": "This is completely irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, è aperto tutti i giorni della settimana.",
+          "english": "Yes, it is open every day of the week.",
+          "choices": [
+            {
+              "text": "Ottimo. Ho ancora venti minuti prima del treno.",
+              "isCorrect": true,
+              "feedback": "Good! You acknowledged the time you have left."
+            },
+            {
+              "text": "Ottimo. Ho tre fratelli grandi.",
+              "isCorrect": false,
+              "feedback": "Having three brothers is irrelevant."
+            },
+            {
+              "text": "Ottimo. Leggo un giornale vecchio.",
+              "isCorrect": false,
+              "feedback": "Reading an old newspaper is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Il suo treno parte puntuale di solito.",
+          "english": "Perfect. Your train usually leaves on time.",
+          "choices": [
+            {
+              "text": "Spero di sì. Ho un appuntamento alle dodici.",
+              "isCorrect": true,
+              "feedback": "Good! You mentioned your next appointment."
+            },
+            {
+              "text": "Spero di sì. Ho una bici nuova.",
+              "isCorrect": false,
+              "feedback": "A new bike is irrelevant here."
+            },
+            {
+              "text": "Spero di sì. Ho un cane piccolo.",
+              "isCorrect": false,
+              "feedback": "A small dog is irrelevant here."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Allora deve fare in fretta. Buona fortuna!",
+          "english": "Then you must hurry. Good luck!",
+          "choices": [
+            {
+              "text": "Grazie ancora per l'aiuto. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "A polite and formal closing."
+            },
+            {
+              "text": "Grazie ancora per il sale. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "You didn't receive any salt."
+            },
+            {
+              "text": "Grazie ancora per la pioggia. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "You didn't receive any rain."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "setting_a_meeting_date",
+      "title": "Setting a Meeting Date",
+      "description": "You organize a meeting with a colleague for next week.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Dobbiamo fissare un incontro per il nuovo progetto.",
+          "english": "Hi! We need to schedule a meeting for the new project.",
+          "choices": [
+            {
+              "text": "Ciao! Sì, certo. Quale giorno della settimana preferisci?",
+              "isCorrect": true,
+              "feedback": "Great opening. You asked for their preferred day."
+            },
+            {
+              "text": "Ciao! Sì, certo. Quale colore della porta preferisci?",
+              "isCorrect": false,
+              "feedback": "Asking about the door color makes no sense."
+            },
+            {
+              "text": "Ciao! Sì, certo. Quale mese della neve preferisci?",
+              "isCorrect": false,
+              "feedback": "Asking about the snow month is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Io sono libero martedì prossimo o mercoledì mattina.",
+          "english": "I am free next Tuesday or Wednesday morning.",
+          "choices": [
+            {
+              "text": "Martedì prossimo va bene. A che ora possiamo vederci?",
+              "isCorrect": true,
+              "feedback": "Perfect! You chose Tuesday and asked for the time."
+            },
+            {
+              "text": "Martedì scorso va bene. A che ora possiamo vederci?",
+              "isCorrect": false,
+              "feedback": "Martedì scorso means last Tuesday."
+            },
+            {
+              "text": "Venerdì prossimo va bene. A che ora possiamo vederci?",
+              "isCorrect": false,
+              "feedback": "They didn't offer Friday as an option."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Possiamo fare alle due del pomeriggio?",
+          "english": "Can we do it at two in the afternoon?",
+          "choices": [
+            {
+              "text": "Alle due ho un altro impegno. Facciamo alle tre e mezza?",
+              "isCorrect": true,
+              "feedback": "Good negotiation of the time."
+            },
+            {
+              "text": "Alle due ho un altro cappotto. Facciamo alle tre e mezza?",
+              "isCorrect": false,
+              "feedback": "Cappotto means coat. Not an appointment."
+            },
+            {
+              "text": "Alle due ho un altro fratello. Facciamo alle tre e mezza?",
+              "isCorrect": false,
+              "feedback": "Fratello means brother. Not an appointment."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Alle tre e mezza è perfetto. Segno tutto sul calendario.",
+          "english": "At half past three is perfect. I will note everything on the calendar.",
+          "choices": [
+            {
+              "text": "Grazie, ci vediamo martedì alle tre e mezza allora.",
+              "isCorrect": true,
+              "feedback": "Excellent confirmation of the details."
+            },
+            {
+              "text": "Grazie, ci vediamo giovedì alle tre e mezza allora.",
+              "isCorrect": false,
+              "feedback": "You confirmed the wrong day."
+            },
+            {
+              "text": "Grazie, ci vediamo martedì alle due e mezza allora.",
+              "isCorrect": false,
+              "feedback": "You confirmed the wrong time."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottimo. Ti mando un messaggio lunedì per confermare.",
+          "english": "Excellent. I'll send you a message on Monday to confirm.",
+          "choices": [
+            {
+              "text": "D'accordo. Aspetto il tuo messaggio. A presto!",
+              "isCorrect": true,
+              "feedback": "A clear and polite wrap-up."
+            },
+            {
+              "text": "D'accordo. Leggo il tuo giornale. A presto!",
+              "isCorrect": false,
+              "feedback": "Reading a newspaper doesn't fit the context."
+            },
+            {
+              "text": "D'accordo. Guardo il tuo disegno. A presto!",
+              "isCorrect": false,
+              "feedback": "Looking at a drawing is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo. Mercoledì mattina alle dieci va bene per te?",
+          "english": "Agreed. Is Wednesday morning at ten okay for you?",
+          "choices": [
+            {
+              "text": "Sì, mercoledì alle dieci va benissimo.",
+              "isCorrect": true,
+              "feedback": "Great! You confirmed the Wednesday meeting."
+            },
+            {
+              "text": "Sì, lunedì alle dieci va benissimo.",
+              "isCorrect": false,
+              "feedback": "Lunedì means Monday, but you are discussing Wednesday."
+            },
+            {
+              "text": "Sì, sabato alle dieci va benissimo.",
+              "isCorrect": false,
+              "feedback": "Sabato means Saturday, but you are discussing Wednesday."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Dove preferisce incontrarsi?",
+          "english": "Perfect. Where do you prefer to meet?",
+          "choices": [
+            {
+              "text": "Possiamo vederci nel mio ufficio.",
+              "isCorrect": true,
+              "feedback": "Good! You suggested a location."
+            },
+            {
+              "text": "Possiamo vederci nel mio letto.",
+              "isCorrect": false,
+              "feedback": "This is inappropriate for a professional meeting."
+            },
+            {
+              "text": "Possiamo vederci nel mio sogno.",
+              "isCorrect": false,
+              "feedback": "This makes no sense."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Il suo ufficio è in centro, giusto?",
+          "english": "Okay. Your office is in the center, right?",
+          "choices": [
+            {
+              "text": "Sì, è vicino alla stazione dei treni.",
+              "isCorrect": true,
+              "feedback": "Good! You gave a landmark."
+            },
+            {
+              "text": "Sì, è vicino alla luna rossa.",
+              "isCorrect": false,
+              "feedback": "The red moon is not a landmark."
+            },
+            {
+              "text": "Sì, è vicino alla torta dolce.",
+              "isCorrect": false,
+              "feedback": "A sweet cake is not a landmark."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Capisco. Porto io i documenti per il progetto.",
+          "english": "I understand. I'll bring the documents for the project.",
+          "choices": [
+            {
+              "text": "Grazie. Porto io il caffè per tutti.",
+              "isCorrect": true,
+              "feedback": "Nice! You offered to bring coffee."
+            },
+            {
+              "text": "Grazie. Porto io la neve per tutti.",
+              "isCorrect": false,
+              "feedback": "You can't bring snow."
+            },
+            {
+              "text": "Grazie. Porto io la scarpa per tutti.",
+              "isCorrect": false,
+              "feedback": "Bringing a shoe doesn't make sense."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottima idea! Allora a mercoledì mattina.",
+          "english": "Great idea! See you on Wednesday morning then.",
+          "choices": [
+            {
+              "text": "A mercoledì! Buona giornata.",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "A domenica! Buona giornata.",
+              "isCorrect": false,
+              "feedback": "You are meeting on Wednesday, not Sunday."
+            },
+            {
+              "text": "A Natale! Buona giornata.",
+              "isCorrect": false,
+              "feedback": "Christmas is a bit too far away."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talking_about_the_weekend",
+      "title": "Talking about the Weekend",
+      "description": "You chat with a friend about plans for the upcoming weekend.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Hai già programmi per questo fine settimana?",
+          "english": "Hi! Do you already have plans for this weekend?",
+          "choices": [
+            {
+              "text": "Ciao! Sabato vado al cinema, e domenica mi riposo.",
+              "isCorrect": true,
+              "feedback": "Great response detailing plans for both days."
+            },
+            {
+              "text": "Ciao! Ieri vado al cinema, e domani mi riposo.",
+              "isCorrect": false,
+              "feedback": "Ieri (yesterday) cannot be used with a future action."
+            },
+            {
+              "text": "Ciao! L'anno scorso vado al cinema, e oggi mi riposo.",
+              "isCorrect": false,
+              "feedback": "L'anno scorso (last year) is incorrect here."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Che bello! A che ora inizia il film sabato?",
+          "english": "How nice! What time does the movie start on Saturday?",
+          "choices": [
+            {
+              "text": "Il film inizia alle otto di sera.",
+              "isCorrect": true,
+              "feedback": "A clear and direct answer with the time."
+            },
+            {
+              "text": "Il film dorme alle otto di sera.",
+              "isCorrect": false,
+              "feedback": "Movies don't sleep (dorme)."
+            },
+            {
+              "text": "Il cane mangia alle otto di sera.",
+              "isCorrect": false,
+              "feedback": "This is about a dog, not the movie."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Vorrei venire anche io. Posso unirmi a te?",
+          "english": "I would like to come too. Can I join you?",
+          "choices": [
+            {
+              "text": "Certo! Ci incontriamo davanti al cinema alle sette e mezza.",
+              "isCorrect": true,
+              "feedback": "Perfect! You agreed and suggested a meeting time."
+            },
+            {
+              "text": "Certo! Ci incontriamo dentro al mare alle sette e mezza.",
+              "isCorrect": false,
+              "feedback": "Meeting inside the sea is ridiculous."
+            },
+            {
+              "text": "Certo! Ci laviamo davanti al cinema alle sette e mezza.",
+              "isCorrect": false,
+              "feedback": "Washing (ci laviamo) instead of meeting."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Benissimo. Spero che il tempo sia bello questo weekend.",
+          "english": "Very well. I hope the weather is nice this weekend.",
+          "choices": [
+            {
+              "text": "Sì, dicono che domenica farà molto caldo.",
+              "isCorrect": true,
+              "feedback": "Good continuation about the weather forecast."
+            },
+            {
+              "text": "Sì, dicono che domenica cadrà molto cielo.",
+              "isCorrect": false,
+              "feedback": "The sky falling is incorrect Italian."
+            },
+            {
+              "text": "Sì, dicono che domenica parlerà molto forte.",
+              "isCorrect": false,
+              "feedback": "Speaking very loudly makes no sense for weather."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottimo, allora potremmo fare una passeggiata domenica mattina.",
+          "english": "Excellent, then we could take a walk on Sunday morning.",
+          "choices": [
+            {
+              "text": "Buona idea! Ne parliamo sabato sera. Ciao!",
+              "isCorrect": true,
+              "feedback": "Perfectly concludes the conversation."
+            },
+            {
+              "text": "Brutta idea! Ne fuggiamo sabato sera. Ciao!",
+              "isCorrect": false,
+              "feedback": "Saying bad idea and escaping is rude and weird."
+            },
+            {
+              "text": "Buona idea! Ne mangiamo sabato sera. Ciao!",
+              "isCorrect": false,
+              "feedback": "We eat it (ne mangiamo) doesn't make sense."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Anche io vado spesso al cinema il sabato sera.",
+          "english": "I also often go to the cinema on Saturday nights.",
+          "choices": [
+            {
+              "text": "Quale film vuoi vedere questa settimana?",
+              "isCorrect": true,
+              "feedback": "Good! You asked for the movie title."
+            },
+            {
+              "text": "Quale pane vuoi mangiare questa settimana?",
+              "isCorrect": false,
+              "feedback": "Eating bread is irrelevant to the cinema."
+            },
+            {
+              "text": "Quale maglia vuoi mettere questa settimana?",
+              "isCorrect": false,
+              "feedback": "Asking about a shirt is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Vorrei vedere il nuovo film di storia italiana.",
+          "english": "I would like to see the new film about Italian history.",
+          "choices": [
+            {
+              "text": "Mi piace! Dicono che dura tre ore però.",
+              "isCorrect": true,
+              "feedback": "Good! You mentioned the duration of the film."
+            },
+            {
+              "text": "Mi piace! Dicono che costa tre euro però.",
+              "isCorrect": false,
+              "feedback": "Costing three euros is not about duration."
+            },
+            {
+              "text": "Mi piace! Dicono che corre tre chilometri però.",
+              "isCorrect": false,
+              "feedback": "Running three kilometers is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Tre ore? Allora dobbiamo vederci prima.",
+          "english": "Three hours? Then we must meet earlier.",
+          "choices": [
+            {
+              "text": "Facciamo alle sei invece che alle sette e mezza?",
+              "isCorrect": true,
+              "feedback": "Good! You suggested an earlier time."
+            },
+            {
+              "text": "Facciamo alle due invece che alle sette e mezza?",
+              "isCorrect": false,
+              "feedback": "Two is a bit too early."
+            },
+            {
+              "text": "Facciamo alle nove invece che alle sette e mezza?",
+              "isCorrect": false,
+              "feedback": "Nine is too late."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, alle sei è meglio. Così mangiamo qualcosa dopo.",
+          "english": "Yes, six is better. So we can eat something afterwards.",
+          "choices": [
+            {
+              "text": "Ottimo. Conosco un bar molto buono vicino al cinema.",
+              "isCorrect": true,
+              "feedback": "Good! You suggested a place to eat."
+            },
+            {
+              "text": "Ottimo. Conosco un cane molto buono vicino al cinema.",
+              "isCorrect": false,
+              "feedback": "A good dog is not a place to eat."
+            },
+            {
+              "text": "Ottimo. Conosco un libro molto buono vicino al cinema.",
+              "isCorrect": false,
+              "feedback": "A good book is not a place to eat."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Allora ci vediamo sabato alle sei.",
+          "english": "Perfect. Then see you Saturday at six.",
+          "choices": [
+            {
+              "text": "D'accordo, a sabato! Ciao.",
+              "isCorrect": true,
+              "feedback": "A perfect wrap-up."
+            },
+            {
+              "text": "D'accordo, a lunedì! Ciao.",
+              "isCorrect": false,
+              "feedback": "You are meeting on Saturday, not Monday."
+            },
+            {
+              "text": "D'accordo, a domani! Ciao.",
+              "isCorrect": false,
+              "feedback": "Tomorrow is not Saturday."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "opening_hours",
+      "title": "Opening Hours",
+      "description": "You call a museum to ask about their opening hours and days.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Museo di Storia, buongiorno. Desidera?",
+          "english": "History Museum, good morning. Can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno. Volevo sapere i vostri orari di apertura.",
+              "isCorrect": true,
+              "feedback": "A polite and clear inquiry about opening hours."
+            },
+            {
+              "text": "Buongiorno. Volevo bere i vostri succhi di frutta.",
+              "isCorrect": false,
+              "feedback": "Drinking fruit juice is completely irrelevant."
+            },
+            {
+              "text": "Buongiorno. Volevo comprare i vostri cani di razza.",
+              "isCorrect": false,
+              "feedback": "Buying purebred dogs is absurd for a museum."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Siamo aperti dal martedì alla domenica, dalle nove alle diciotto.",
+          "english": "We are open from Tuesday to Sunday, from nine to eighteen.",
+          "choices": [
+            {
+              "text": "Quindi siete chiusi il lunedì, giusto?",
+              "isCorrect": true,
+              "feedback": "Good deduction to confirm they are closed on Monday."
+            },
+            {
+              "text": "Quindi siete chiusi il venerdì, giusto?",
+              "isCorrect": false,
+              "feedback": "They said they are open Tuesday to Sunday, which includes Friday."
+            },
+            {
+              "text": "Quindi siete chiusi la domenica, giusto?",
+              "isCorrect": false,
+              "feedback": "They are open on Sunday."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Esatto, il lunedì è il nostro giorno di chiusura.",
+          "english": "Exactly, Monday is our closing day.",
+          "choices": [
+            {
+              "text": "Va bene. Quanto dura in media la visita?",
+              "isCorrect": true,
+              "feedback": "A natural follow-up question about the visit duration."
+            },
+            {
+              "text": "Va bene. Quanto costa in media la scarpa?",
+              "isCorrect": false,
+              "feedback": "Asking about the cost of a shoe is wrong."
+            },
+            {
+              "text": "Va bene. Quanto dorme in media la guida?",
+              "isCorrect": false,
+              "feedback": "Asking how much the guide sleeps is inappropriate."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Di solito la visita dura circa due ore.",
+          "english": "Usually the visit lasts about two hours.",
+          "choices": [
+            {
+              "text": "Perfetto. Allora verrò domani pomeriggio verso le tre.",
+              "isCorrect": true,
+              "feedback": "Good planning. You stated when you will arrive."
+            },
+            {
+              "text": "Perfetto. Allora verrò l'anno prossimo verso le tre.",
+              "isCorrect": false,
+              "feedback": "Next year is too far in advance for this plan."
+            },
+            {
+              "text": "Perfetto. Allora verrò ieri pomeriggio verso le tre.",
+              "isCorrect": false,
+              "feedback": "You cannot go yesterday."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "L'aspettiamo! I biglietti si possono fare all'ingresso.",
+          "english": "We expect you! Tickets can be purchased at the entrance.",
+          "choices": [
+            {
+              "text": "Molto gentile. Grazie per le informazioni e buona giornata.",
+              "isCorrect": true,
+              "feedback": "A polite sign-off."
+            },
+            {
+              "text": "Molto gentile. Grazie per le verdure e buona giornata.",
+              "isCorrect": false,
+              "feedback": "Thanking for vegetables makes no sense."
+            },
+            {
+              "text": "Molto gentile. Grazie per le canzoni e buona giornata.",
+              "isCorrect": false,
+              "feedback": "Thanking for songs makes no sense."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ricordi che il lunedì siamo chiusi per riposo settimanale.",
+          "english": "Remember that on Mondays we are closed for our weekly rest.",
+          "choices": [
+            {
+              "text": "Capisco. E la domenica l'orario è lo stesso?",
+              "isCorrect": true,
+              "feedback": "Good! You asked if Sunday hours are the same."
+            },
+            {
+              "text": "Capisco. E la domenica la pizza è la stessa?",
+              "isCorrect": false,
+              "feedback": "Pizza is irrelevant here."
+            },
+            {
+              "text": "Capisco. E la domenica la pioggia è la stessa?",
+              "isCorrect": false,
+              "feedback": "Rain is irrelevant here."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "No, la domenica chiudiamo prima, alle quindici.",
+          "english": "No, on Sundays we close earlier, at fifteen (3 PM).",
+          "choices": [
+            {
+              "text": "Ah, allora è meglio venire di mattina.",
+              "isCorrect": true,
+              "feedback": "Good! You deduced it's better to come in the morning."
+            },
+            {
+              "text": "Ah, allora è meglio venire di notte.",
+              "isCorrect": false,
+              "feedback": "The museum is closed at night."
+            },
+            {
+              "text": "Ah, allora è meglio venire l'anno prossimo.",
+              "isCorrect": false,
+              "feedback": "Next year is not a helpful timeframe."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, la mattina c'è anche meno gente di solito.",
+          "english": "Yes, in the morning there is also usually less people.",
+          "choices": [
+            {
+              "text": "Avete anche delle visite guidate?",
+              "isCorrect": true,
+              "feedback": "Good! You asked about guided tours."
+            },
+            {
+              "text": "Avete anche delle scarpe rotte?",
+              "isCorrect": false,
+              "feedback": "Broken shoes are irrelevant."
+            },
+            {
+              "text": "Avete anche delle mele verdi?",
+              "isCorrect": false,
+              "feedback": "Green apples are irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, ogni ora inizia una nuova visita guidata.",
+          "english": "Yes, every hour a new guided tour starts.",
+          "choices": [
+            {
+              "text": "Quanto costa il biglietto per la visita?",
+              "isCorrect": true,
+              "feedback": "Good! You asked about the tour price."
+            },
+            {
+              "text": "Quanto pesa il biglietto per la visita?",
+              "isCorrect": false,
+              "feedback": "Asking about the weight of the ticket is strange."
+            },
+            {
+              "text": "Quanto corre il biglietto per la visita?",
+              "isCorrect": false,
+              "feedback": "A ticket cannot run."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Costa solo cinque euro in più.",
+          "english": "It costs only five euros more.",
+          "choices": [
+            {
+              "text": "Bene, allora farò anche la visita guidata. Grazie!",
+              "isCorrect": true,
+              "feedback": "A perfect decision and wrap-up."
+            },
+            {
+              "text": "Bene, allora farò anche la doccia calda. Grazie!",
+              "isCorrect": false,
+              "feedback": "Taking a hot shower is irrelevant."
+            },
+            {
+              "text": "Bene, allora farò anche la spesa grande. Grazie!",
+              "isCorrect": false,
+              "feedback": "Doing a big grocery shop is irrelevant."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

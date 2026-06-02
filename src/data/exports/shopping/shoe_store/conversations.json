@@ -1,0 +1,976 @@
+{
+  "scenarioId": 42,
+  "conversations": [
+    {
+      "id": "buying_sneakers",
+      "title": "Buying Sneakers",
+      "description": "Browse and buy a pair of comfortable sneakers.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarla a cercare qualcosa in particolare?",
+          "english": "Good morning! Can I help you look for something in particular?",
+          "choices": [
+            {
+              "text": "Buongiorno, cerco un paio di scarpe da ginnastica.",
+              "isCorrect": true,
+              "feedback": "Perfect start. You specified the type of shoe."
+            },
+            {
+              "text": "Buongiorno, cerco un tavolo per due persone.",
+              "isCorrect": false,
+              "feedback": "Wrong scenario! This isn't a restaurant."
+            },
+            {
+              "text": "Buongiorno, cerco un biglietto per il treno.",
+              "isCorrect": false,
+              "feedback": "Wrong scenario! This isn't a train station."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Abbiamo molti modelli sportivi. Le serve un colore particolare?",
+          "english": "Certainly. We have many sports models. Do you need a particular color?",
+          "choices": [
+            {
+              "text": "Sì, le vorrei bianche o magari blu scuro.",
+              "isCorrect": true,
+              "feedback": "Good job specifying the colors you like."
+            },
+            {
+              "text": "Sì, vorrei un cornetto e un cappuccino.",
+              "isCorrect": false,
+              "feedback": "You're still thinking about food! Focus on the shoes."
+            },
+            {
+              "text": "Sì, vorrei una camera singola con bagno.",
+              "isCorrect": false,
+              "feedback": "This isn't a hotel check-in."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottima scelta. Queste blu sono molto leggere. Che numero porta?",
+          "english": "Great choice. These blue ones are very light. What size do you wear?",
+          "choices": [
+            {
+              "text": "Porto il quarantadue. Avete questo numero?",
+              "isCorrect": true,
+              "feedback": "Correct. In Italy, shoe size is called 'numero'."
+            },
+            {
+              "text": "Porto la taglia media. Avete questa taglia?",
+              "isCorrect": false,
+              "feedback": "Careful! 'Taglia' is for clothes, 'numero' is for shoes."
+            },
+            {
+              "text": "Porto il binario cinque. È disponibile?",
+              "isCorrect": false,
+              "feedback": "That's for trains, not shoes!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Controllo subito in magazzino... Sì, eccole! Vuole provarle?",
+          "english": "I'll check the warehouse right away... Yes, here they are! Do you want to try them on?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Dove posso sedermi per provare?",
+              "isCorrect": true,
+              "feedback": "Excellent. Asking where to sit to try them on."
+            },
+            {
+              "text": "Sì, grazie. Dove posso fare il check-in?",
+              "isCorrect": false,
+              "feedback": "Wrong context again. No check-in here."
+            },
+            {
+              "text": "No, grazie. Posso avere il menù?",
+              "isCorrect": false,
+              "feedback": "Still thinking about restaurants!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Può sedersi lì, davanti allo specchio. Come le sente ai piedi?",
+          "english": "You can sit there, in front of the mirror. How do they feel on your feet?",
+          "choices": [
+            {
+              "text": "Sono molto comode, ma forse sono un po' larghe.",
+              "isCorrect": true,
+              "feedback": "Good description of the fit."
+            },
+            {
+              "text": "Sono molto salate, non mi piacciono affatto.",
+              "isCorrect": false,
+              "feedback": "You don't eat shoes!"
+            },
+            {
+              "text": "Sono molto rumorose, c'è troppo traffico.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to shoe comfort."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Vuole provare il numero quarantuno? Forse calza meglio per lei.",
+          "english": "Do you want to try size forty-one? Maybe it fits better for you.",
+          "choices": [
+            {
+              "text": "Sì, proviamo il quarantuno. Grazie mille.",
+              "isCorrect": true,
+              "feedback": "Accepting the suggestion to try a smaller size."
+            },
+            {
+              "text": "Sì, proviamo il decimo piano. Grazie.",
+              "isCorrect": false,
+              "feedback": "That's for buildings, not shoes."
+            },
+            {
+              "text": "No, preferisco il binario due. Grazie.",
+              "isCorrect": false,
+              "feedback": "Trains again!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco il quarantuno. Vediamo come vanno queste ora.",
+          "english": "Here is the forty-one. Let's see how these go now.",
+          "choices": [
+            {
+              "text": "Queste sono perfette! Non sono né strette né larghe.",
+              "isCorrect": true,
+              "feedback": "Perfect! You found the right fit."
+            },
+            {
+              "text": "Queste sono deliziose! Complimenti allo chef.",
+              "isCorrect": false,
+              "feedback": "Shoe store, not a kitchen!"
+            },
+            {
+              "text": "Queste sono in ritardo! Dov'è il controllore?",
+              "isCorrect": false,
+              "feedback": "You're at a shoe store, not a station."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Bene! Le interessano anche dei lacci di ricambio o della crema?",
+          "english": "Good! Are you also interested in spare laces or some cream?",
+          "choices": [
+            {
+              "text": "No, grazie. Prendo solo le scarpe. Quanto costano?",
+              "isCorrect": true,
+              "feedback": "Politely declining extras and asking for the price."
+            },
+            {
+              "text": "Sì, vorrei anche una porzione di patatine fritte.",
+              "isCorrect": false,
+              "feedback": "No food here!"
+            },
+            {
+              "text": "No, grazie. Posso avere le chiavi della camera?",
+              "isCorrect": false,
+              "feedback": "You're not at a hotel."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Queste sono in offerta a sessanta euro. È un buon prezzo.",
+          "english": "These are on offer for sixty euros. It's a good price.",
+          "choices": [
+            {
+              "text": "Sì, è ottimo. Posso pagare con la carta?",
+              "isCorrect": true,
+              "feedback": "Accepting the price and asking to pay by card."
+            },
+            {
+              "text": "Sì, è troppo caldo qui. Accendete l'aria?",
+              "isCorrect": false,
+              "feedback": "Not related to the transaction."
+            },
+            {
+              "text": "No, è troppo lontano. Prendo l'autobus.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certamente, accettiamo tutte le carte. Prego, si avvicini alla cassa.",
+          "english": "Certainly, we accept all cards. Please, come to the counter.",
+          "choices": [
+            {
+              "text": "Ecco la carta. Posso avere anche lo scontrino?",
+              "isCorrect": true,
+              "feedback": "Standard request for a receipt (scontrino)."
+            },
+            {
+              "text": "Ecco il passaporto. Posso salire sull'aereo?",
+              "isCorrect": false,
+              "feedback": "You're at a shop, not an airport."
+            },
+            {
+              "text": "Ecco l'ordinazione. Posso avere il conto?",
+              "isCorrect": false,
+              "feedback": "Restaurant terminology again."
+            }
+          ]
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Ecco lo scontrino e le sue scarpe. Grazie e arrivederci!",
+          "english": "Here is the receipt and your shoes. Thank you and goodbye!",
+          "choices": [
+            {
+              "text": "Grazie a lei. Buona giornata e arrivederci!",
+              "isCorrect": true,
+              "feedback": "A polite and natural conclusion."
+            },
+            {
+              "text": "Buon appetito! Il cibo era ottimo.",
+              "isCorrect": false,
+              "feedback": "STILL with the food!"
+            },
+            {
+              "text": "Buon viaggio! A che ora parte il volo?",
+              "isCorrect": false,
+              "feedback": "Wrong scenario."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "different_size",
+      "title": "Asking for a Different Shoe Size",
+      "description": "The shoes you like are too tight. Ask for a larger size.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Le piace questo modello in vetrina?",
+          "english": "Good morning! Do you like this model in the window?",
+          "choices": [
+            {
+              "text": "Sì, molto. Posso provare il numero trentanove?",
+              "isCorrect": true,
+              "feedback": "Perfect. You identified the model and asked for your size."
+            },
+            {
+              "text": "Sì, molto. Posso avere una camera doppia?",
+              "isCorrect": false,
+              "feedback": "This is a shoe store, not a hotel."
+            },
+            {
+              "text": "No, cerco un parcheggio per la mia auto.",
+              "isCorrect": false,
+              "feedback": "Wrong scenario."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Vado a vedere se è disponibile. Un attimo... eccolo qui.",
+          "english": "I'll go see if it's available. One moment... here it is.",
+          "choices": [
+            {
+              "text": "Grazie. Lo provo subito per vedere come calza.",
+              "isCorrect": true,
+              "feedback": "Natural response before trying on the shoe."
+            },
+            {
+              "text": "Grazie. Lo mangio subito, ho molta fame.",
+              "isCorrect": false,
+              "feedback": "Don't eat the shoes!"
+            },
+            {
+              "text": "Grazie. Lo porto subito in camera mia.",
+              "isCorrect": false,
+              "feedback": "Still thinking about hotels."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Allora, come le sente? La misura è quella giusta?",
+          "english": "So, how do they feel? Is the size the right one?",
+          "choices": [
+            {
+              "text": "Purtroppo sono un po' strette in punta. Mi fanno male.",
+              "isCorrect": true,
+              "feedback": "Good job explaining the problem (too tight at the toe)."
+            },
+            {
+              "text": "Purtroppo sono troppo dolci. Vorrei del sale.",
+              "isCorrect": false,
+              "feedback": "Shoes are not food."
+            },
+            {
+              "text": "Purtroppo il treno è partito. Devo aspettare.",
+              "isCorrect": false,
+              "feedback": "Wrong scenario."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capisco. Forse le serve un numero in più. Proviamo il quaranta?",
+          "english": "I see. Maybe you need one size up. Shall we try forty?",
+          "choices": [
+            {
+              "text": "Sì, per favore. Il quaranta dovrebbe andare meglio.",
+              "isCorrect": true,
+              "feedback": "Agreeing to try a larger size."
+            },
+            {
+              "text": "Sì, per favore. Il terzo piano dovrebbe andare meglio.",
+              "isCorrect": false,
+              "feedback": "Floors are not shoe sizes."
+            },
+            {
+              "text": "No, per favore. Il rosso non mi piace affatto.",
+              "isCorrect": false,
+              "feedback": "The host asked about size, not color."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ecco il quaranta. Provi a camminare un po' nel negozio.",
+          "english": "Here is the forty. Try walking a bit in the shop.",
+          "choices": [
+            {
+              "text": "Queste vanno molto meglio. Sono molto più comode.",
+              "isCorrect": true,
+              "feedback": "Confirming the better fit after walking."
+            },
+            {
+              "text": "Queste vanno molto male. La zuppa è fredda.",
+              "isCorrect": false,
+              "feedback": "Still with the restaurant talk!"
+            },
+            {
+              "text": "Queste vanno molto veloci. A che ora arriviamo?",
+              "isCorrect": false,
+              "feedback": "You're not on a train."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Le piacciono in questo colore nero o preferisce il blu?",
+          "english": "Excellent. Do you like them in this black color or do you prefer blue?",
+          "choices": [
+            {
+              "text": "Il nero mi piace, è molto elegante. Le prendo così.",
+              "isCorrect": true,
+              "feedback": "Making a decision based on color and style."
+            },
+            {
+              "text": "Il nero mi piace, ma preferisco la pasta al sugo.",
+              "isCorrect": false,
+              "feedback": "Focus on the shoes!"
+            },
+            {
+              "text": "Il nero mi piace, ma dov'è l'uscita di sicurezza?",
+              "isCorrect": false,
+              "feedback": "Alarmist and irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Vuole anche uno spray per proteggere la pelle?",
+          "english": "Perfect. Do you also want a spray to protect the leather?",
+          "choices": [
+            {
+              "text": "No grazie, ho già tutto a casa. Solo le scarpe.",
+              "isCorrect": true,
+              "feedback": "Politely declining the additional item."
+            },
+            {
+              "text": "No grazie, non bevo alcolici durante il giorno.",
+              "isCorrect": false,
+              "feedback": "It's a leather spray, not a drink!"
+            },
+            {
+              "text": "Sì grazie, vorrei anche un asciugamano pulito.",
+              "isCorrect": false,
+              "feedback": "Still at the hotel?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Il prezzo totale è di ottantacinque euro.",
+          "english": "All right. The total price is eighty-five euros.",
+          "choices": [
+            {
+              "text": "Va bene. Accettate pagamenti con il bancomat?",
+              "isCorrect": true,
+              "feedback": "Asking about payment methods correctly."
+            },
+            {
+              "text": "Va bene. Accettate pagamenti con le scarpe vecchie?",
+              "isCorrect": false,
+              "feedback": "Unrealistic payment method."
+            },
+            {
+              "text": "No, è troppo caro. Chiamo la polizia!",
+              "isCorrect": false,
+              "feedback": "A bit extreme, don't you think?"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente, può pagare qui. Inserisca pure la carta.",
+          "english": "Certainly, you can pay here. Go ahead and insert the card.",
+          "choices": [
+            {
+              "text": "Fatto. Devo inserire anche il mio codice PIN?",
+              "isCorrect": true,
+              "feedback": "Logical question during a card transaction."
+            },
+            {
+              "text": "Fatto. Devo inserire anche la mia chiave?",
+              "isCorrect": false,
+              "feedback": "Keys are for doors, not card machines."
+            },
+            {
+              "text": "Fatto. Devo inserire anche il mio bagaglio?",
+              "isCorrect": false,
+              "feedback": "This is not an airport."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sì, grazie. Ecco a lei lo scontrino. Tutto a posto.",
+          "english": "Yes, thank you. Here is your receipt. All set.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'aiuto. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Grazie mille. Posso avere il resto in monete?",
+              "isCorrect": false,
+              "feedback": "You paid by card, there is no change."
+            },
+            {
+              "text": "Grazie mille. Dov'è la fermata del bus?",
+              "isCorrect": false,
+              "feedback": "Not related to the transaction completion."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leather_boots",
+      "title": "Choosing Leather Boots",
+      "description": "Select high-quality leather boots for the winter.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera! Cerca degli stivali per l'inverno, immagino.",
+          "english": "Good evening! You're looking for boots for the winter, I imagine.",
+          "choices": [
+            {
+              "text": "Esatto. Cerco qualcosa in vera pelle e molto resistente.",
+              "isCorrect": true,
+              "feedback": "Excellent choice of vocabulary: 'vera pelle' and 'resistente'."
+            },
+            {
+              "text": "Esatto. Cerco un letto comodo e una colazione calda.",
+              "isCorrect": false,
+              "feedback": "Still at the hotel?"
+            },
+            {
+              "text": "No, cerco un ombrellone e una sedia a sdraio.",
+              "isCorrect": false,
+              "feedback": "Wrong season and wrong shop!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Abbiamo questi modelli in cuoio artigianale. Sono ottimi per la pioggia.",
+          "english": "We have these models in handcrafted leather. They are great for the rain.",
+          "choices": [
+            {
+              "text": "Belli! Sono anche impermeabili? Mi serve per camminare molto.",
+              "isCorrect": true,
+              "feedback": "Asking about being waterproof (impermeabili) is very practical."
+            },
+            {
+              "text": "Belli! Sono anche commestibili? Vorrei mangiarli stasera.",
+              "isCorrect": false,
+              "feedback": "Shoes are not for eating."
+            },
+            {
+              "text": "Belli! Sono anche al terzo binario? Ho fretta.",
+              "isCorrect": false,
+              "feedback": "Wrong scenario."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, la pelle è trattata per non far passare l'acqua. Che numero le porto?",
+          "english": "Yes, the leather is treated to keep water out. What size shall I bring you?",
+          "choices": [
+            {
+              "text": "Di solito porto il quarantaquattro. Avete questa misura?",
+              "isCorrect": true,
+              "feedback": "Asking for your size correctly."
+            },
+            {
+              "text": "Di solito porto il treno delle otto. Avete questo orario?",
+              "isCorrect": false,
+              "feedback": "Train station again?"
+            },
+            {
+              "text": "Di solito porto la pizza a casa. Avete la consegna?",
+              "isCorrect": false,
+              "feedback": "This is a shoe store."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, abbiamo l'ultimo paio in magazzino. Vado a prenderlo subito.",
+          "english": "Yes, we have the last pair in the warehouse. I'll go get it right away.",
+          "choices": [
+            {
+              "text": "Ottimo, la ringrazio. Aspetto qui davanti allo specchio.",
+              "isCorrect": true,
+              "feedback": "Polite response while waiting."
+            },
+            {
+              "text": "Ottimo, la ringrazio. Aspetto qui il mio volo per Roma.",
+              "isCorrect": false,
+              "feedback": "Still not an airport."
+            },
+            {
+              "text": "No, non la ringrazio. Voglio parlare con il direttore.",
+              "isCorrect": false,
+              "feedback": "Unnecessarily rude."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Eccoli. Provi a calzarli. La pelle è ancora un po' dura, ma si ammorbidisce.",
+          "english": "Here they are. Try putting them on. The leather is still a bit hard, but it softens.",
+          "choices": [
+            {
+              "text": "Si sente che è pelle di qualità. Sono molto caldi.",
+              "isCorrect": true,
+              "feedback": "Good observation about the material quality."
+            },
+            {
+              "text": "Si sente che è pasta di qualità. Sono molto cotti.",
+              "isCorrect": false,
+              "feedback": "Restaurant talk!"
+            },
+            {
+              "text": "Si sente che è aria di qualità. C'è molto vento.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Esatto. Preferisce questo marrone scuro o quelli neri?",
+          "english": "Exactly. Do you prefer this dark brown or the black ones?",
+          "choices": [
+            {
+              "text": "Preferisco questi marroni, si abbinano meglio ai miei vestiti.",
+              "isCorrect": true,
+              "feedback": "Explaining your preference naturally."
+            },
+            {
+              "text": "Preferisco questi marroni, sono più saporiti del pesce.",
+              "isCorrect": false,
+              "feedback": "Stop talking about food!"
+            },
+            {
+              "text": "Preferisco questi marroni, sono più vicini alla stazione.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottima scelta. Questi stivali durano molti anni se curati bene.",
+          "english": "Great choice. These boots last many years if well cared for.",
+          "choices": [
+            {
+              "text": "Lo spero bene! Quanto vengono a costare?",
+              "isCorrect": true,
+              "feedback": "Asking for the price using the common expression 'quanto vengono'."
+            },
+            {
+              "text": "Lo spero bene! Quanto tempo ci vuole per arrivare?",
+              "isCorrect": false,
+              "feedback": "You're already there!"
+            },
+            {
+              "text": "No, preferisco quelli rotti. Costano meno?",
+              "isCorrect": false,
+              "feedback": "Why would you want broken shoes?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Costano centoventi euro. È un investimento per l'inverno.",
+          "english": "They cost one hundred and twenty euros. It's an investment for the winter.",
+          "choices": [
+            {
+              "text": "Va bene, la qualità si paga. Posso pagare in contanti?",
+              "isCorrect": true,
+              "feedback": "Accepting the price and offering to pay in cash."
+            },
+            {
+              "text": "Va bene, la qualità si mangia. Posso avere il dolce?",
+              "isCorrect": false,
+              "feedback": "Enough with the food!"
+            },
+            {
+              "text": "No, è troppo. Mi dia le chiavi della macchina.",
+              "isCorrect": false,
+              "feedback": "Completely unrelated."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, certamente. Ecco a lei il resto e lo scontrino fiscale.",
+          "english": "Yes, certainly. Here is your change and the tax receipt.",
+          "choices": [
+            {
+              "text": "Grazie mille. Mi mette gli stivali in una scatola?",
+              "isCorrect": true,
+              "feedback": "Asking for the shoebox."
+            },
+            {
+              "text": "Grazie mille. Mi mette gli stivali in un piatto?",
+              "isCorrect": false,
+              "feedback": "Not food!"
+            },
+            {
+              "text": "Grazie mille. Mi mette gli stivali nel bagagliaio?",
+              "isCorrect": false,
+              "feedback": "A bit excessive for a shop assistant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certamente. Ecco la sua borsa. Buona serata e arrivederci!",
+          "english": "Certainly. Here is your bag. Good evening and goodbye!",
+          "choices": [
+            {
+              "text": "Grazie ancora per la sua gentilezza. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Grazie ancora. Dov'è il bagno della camera?",
+              "isCorrect": false,
+              "feedback": "Still at the hotel?"
+            },
+            {
+              "text": "Arrivederci! Spero di non rivederla mai più.",
+              "isCorrect": false,
+              "feedback": "Very rude!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comfortable_shoes",
+      "title": "Finding Comfortable Shoes",
+      "description": "You need shoes for a long walking tour. Prioritize comfort.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Le serve aiuto per scegliere un modello comodo?",
+          "english": "Good morning! Do you need help choosing a comfortable model?",
+          "choices": [
+            {
+              "text": "Sì, cerco delle scarpe per camminare molto in città.",
+              "isCorrect": true,
+              "feedback": "Perfect description of your need."
+            },
+            {
+              "text": "Sì, cerco dei libri sulla storia di Roma.",
+              "isCorrect": false,
+              "feedback": "This is a shoe store, not a bookstore."
+            },
+            {
+              "text": "No, cerco la fermata della metropolitana.",
+              "isCorrect": false,
+              "feedback": "Wrong scenario."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Le consiglio queste con la suola in gomma. Ammortizzano bene il peso.",
+          "english": "I recommend these with a rubber sole. They cushion the weight well.",
+          "choices": [
+            {
+              "text": "Sembrano ottime. Sono anche leggere o sono pesanti?",
+              "isCorrect": true,
+              "feedback": "Asking about the weight is important for walking shoes."
+            },
+            {
+              "text": "Sembrano ottime. Sono anche piccanti o sono dolci?",
+              "isCorrect": false,
+              "feedback": "Shoes are not food."
+            },
+            {
+              "text": "Sembrano ottime. Sono anche al binario nove?",
+              "isCorrect": false,
+              "feedback": "Wrong scenario."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sono leggerissime, non le sentirà nemmeno ai piedi. Che numero porta?",
+          "english": "They are very light, you won't even feel them on your feet. What size do you wear?",
+          "choices": [
+            {
+              "text": "Porto il quarantatré. Avete anche la mezza misura?",
+              "isCorrect": true,
+              "feedback": "Good question! Italy has half sizes too."
+            },
+            {
+              "text": "Porto il quarantatré. Avete anche la mezza porzione?",
+              "isCorrect": false,
+              "feedback": "This isn't a restaurant."
+            },
+            {
+              "text": "Porto il quarantatré. Avete anche il check-out tardivo?",
+              "isCorrect": false,
+              "feedback": "Hotel talk again."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Abbiamo solo numeri interi, ma questo modello calza un po' largo.",
+          "english": "We only have whole sizes, but this model fits a bit large.",
+          "choices": [
+            {
+              "text": "Capito. Allora provo il quarantatré per vedere come va.",
+              "isCorrect": true,
+              "feedback": "Deciding to try the size based on the host's info."
+            },
+            {
+              "text": "Capito. Allora prenoto il quarantatré per una notte.",
+              "isCorrect": false,
+              "feedback": "Still at the hotel?"
+            },
+            {
+              "text": "No, è troppo. Chiamo un taxi e vado via.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and dramatic."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ecco qui. Le provi pure con queste calze se vuole.",
+          "english": "Here you go. Go ahead and try them with these socks if you like.",
+          "choices": [
+            {
+              "text": "Grazie. Mi siedo un attimo per infilare le scarpe.",
+              "isCorrect": true,
+              "feedback": "Natural action in a shoe store."
+            },
+            {
+              "text": "Grazie. Mi siedo un attimo per ordinare la cena.",
+              "isCorrect": false,
+              "feedback": "Stop with the food!"
+            },
+            {
+              "text": "Grazie. Mi siedo un attimo per aspettare il bus.",
+              "isCorrect": false,
+              "feedback": "Wrong scenario."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Faccia pure con calma. Come sente la pianta del piede?",
+          "english": "Take your time. How does the sole of your foot feel?",
+          "choices": [
+            {
+              "text": "La sento molto bene, la scarpa è morbida e flessibile.",
+              "isCorrect": true,
+              "feedback": "Using good adjectives: 'morbida' and 'flessibile'."
+            },
+            {
+              "text": "La sento molto bene, la scarpa è fritta e croccante.",
+              "isCorrect": false,
+              "feedback": "Food terminology!"
+            },
+            {
+              "text": "La sento molto bene, la scarpa è in ritardo di dieci minuti.",
+              "isCorrect": false,
+              "feedback": "Train terminology!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È perfetta per le lunghe camminate. Le piace il colore grigio?",
+          "english": "It's perfect for long walks. Do you like the gray color?",
+          "choices": [
+            {
+              "text": "Sì, il grigio è neutro e va bene con tutto. Le prendo.",
+              "isCorrect": true,
+              "feedback": "Making a final decision."
+            },
+            {
+              "text": "Sì, il grigio è buono come il formaggio stagionato.",
+              "isCorrect": false,
+              "feedback": "Enough food analogies!"
+            },
+            {
+              "text": "No, preferisco una camera con vista sul mare.",
+              "isCorrect": false,
+              "feedback": "Hotel again."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Le metto anche delle solette in omaggio?",
+          "english": "Great. Shall I also include some free insoles?",
+          "choices": [
+            {
+              "text": "Sì, grazie mille! È molto gentile da parte sua.",
+              "isCorrect": true,
+              "feedback": "Accepting a kind offer politely."
+            },
+            {
+              "text": "Sì, grazie. Vorrei anche una bottiglia d'acqua gratis.",
+              "isCorrect": false,
+              "feedback": "Not at a restaurant."
+            },
+            {
+              "text": "No, le solette sono pericolose per la salute.",
+              "isCorrect": false,
+              "feedback": "That's not true."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Figurati! Sono settanta euro in tutto. Paga con carta?",
+          "english": "Don't mention it! It's seventy euros in total. Paying by card?",
+          "choices": [
+            {
+              "text": "Sì, ecco la mia carta di credito. Grazie.",
+              "isCorrect": true,
+              "feedback": "Completing the transaction."
+            },
+            {
+              "text": "Sì, ecco la mia carta d'identità. Posso partire?",
+              "isCorrect": false,
+              "feedback": "You're at a shop, not the border."
+            },
+            {
+              "text": "No, preferisco pagare con un assegno turistico.",
+              "isCorrect": false,
+              "feedback": "Very outdated payment method."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Tutto fatto. Ecco lo scontrino. Buona passeggiata!",
+          "english": "All done. Here is the receipt. Have a nice walk!",
+          "choices": [
+            {
+              "text": "Grazie mille e buona giornata anche a lei!",
+              "isCorrect": true,
+              "feedback": "Perfect closing for this scenario."
+            },
+            {
+              "text": "Grazie mille. A che ora servite la cena?",
+              "isCorrect": false,
+              "feedback": "Restaurant talk... one last time."
+            },
+            {
+              "text": "Grazie mille. Dov'è il binario per Milano?",
+              "isCorrect": false,
+              "feedback": "Station talk... one last time."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

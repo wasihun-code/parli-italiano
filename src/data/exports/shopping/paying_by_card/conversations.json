@@ -1,0 +1,953 @@
+{
+  "scenarioId": 50,
+  "conversations": [
+    {
+      "id": "standard_card_payment",
+      "title": "Standard Card Payment",
+      "description": "A simple transaction at the checkout.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Il totale è quindici euro e cinquanta.",
+          "english": "Good morning! The total is fifteen euros and fifty cents.",
+          "choices": [
+            {
+              "text": "Buongiorno. Posso pagare con la carta?",
+              "isCorrect": true,
+              "feedback": "Perfect! Polite and clear."
+            },
+            {
+              "text": "No, non voglio pagare niente oggi.",
+              "isCorrect": false,
+              "feedback": "You need to pay for your items!"
+            },
+            {
+              "text": "Dov'è il pane fresco?",
+              "isCorrect": false,
+              "feedback": "You are already at the checkout."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Preferisce pagare con carta di credito o bancomat?",
+          "english": "Certainly. Do you prefer to pay with credit card or debit card?",
+          "choices": [
+            {
+              "text": "Uso il mio bancomat, grazie.",
+              "isCorrect": true,
+              "feedback": "Clear choice."
+            },
+            {
+              "text": "Il mio portafoglio è rosso e grande.",
+              "isCorrect": false,
+              "feedback": "Not relevant to the payment method."
+            },
+            {
+              "text": "Voglio pagare con i miei contatti.",
+              "isCorrect": false,
+              "feedback": "You mean 'contanti' (cash)? But you just agreed to pay with a card."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene. Può inserire la carta nel lettore POS, prego.",
+          "english": "Alright. You can insert the card into the POS reader, please.",
+          "choices": [
+            {
+              "text": "D'accordo. Inserisco la carta adesso.",
+              "isCorrect": true,
+              "feedback": "Good. You are following instructions."
+            },
+            {
+              "text": "La carta è nel sacchetto della spesa.",
+              "isCorrect": false,
+              "feedback": "You should have it ready!"
+            },
+            {
+              "text": "Il lettore è molto lontano da me.",
+              "isCorrect": false,
+              "feedback": "It's right in front of you."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Bene. Adesso deve digitare il PIN sul tastierino.",
+          "english": "Fine. Now you need to type the PIN on the keypad.",
+          "choices": [
+            {
+              "text": "Sì, digito il codice ora.",
+              "isCorrect": true,
+              "feedback": "Correct action."
+            },
+            {
+              "text": "Non ricordo il mio nome oggi.",
+              "isCorrect": false,
+              "feedback": "You need to remember your PIN!"
+            },
+            {
+              "text": "Il PIN è scritto sulla carta?",
+              "isCorrect": false,
+              "feedback": "Never write your PIN on the card!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Aspetti un attimo... la transazione è in corso.",
+          "english": "Wait a moment... the transaction is in progress.",
+          "choices": [
+            {
+              "text": "Nessun problema, aspetto che finisca.",
+              "isCorrect": true,
+              "feedback": "Patient and correct."
+            },
+            {
+              "text": "Voglio andare via subito, ho fretta.",
+              "isCorrect": false,
+              "feedback": "Wait for the confirmation!"
+            },
+            {
+              "text": "Perché il lettore è così lento?",
+              "isCorrect": false,
+              "feedback": "Be patient."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Transazione approvata. Può ritirare la carta.",
+          "english": "Great. Transaction approved. You can take back the card.",
+          "choices": [
+            {
+              "text": "Perfetto, riprendo la mia carta. Grazie.",
+              "isCorrect": true,
+              "feedback": "Good job."
+            },
+            {
+              "text": "Devo inserire la carta ancora?",
+              "isCorrect": false,
+              "feedback": "No, it's already done."
+            },
+            {
+              "text": "La carta è rimasta bloccata dentro.",
+              "isCorrect": false,
+              "feedback": "Just pull it out gently."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco lo scontrino. Le serve anche la copia per il cliente?",
+          "english": "Here is the receipt. Do you also need the customer copy?",
+          "choices": [
+            {
+              "text": "No grazie, lo scontrino normale va bene.",
+              "isCorrect": true,
+              "feedback": "Clear answer."
+            },
+            {
+              "text": "Voglio una copia del mio passaporto.",
+              "isCorrect": false,
+              "feedback": "The host is talking about the receipt."
+            },
+            {
+              "text": "Sì, voglio pagare di nuovo tutto.",
+              "isCorrect": false,
+              "feedback": "No need to pay twice!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "D'accordo. Le serve una busta per la spesa?",
+          "english": "Alright. Do you need a bag for your groceries?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Una busta piccola, per favore.",
+              "isCorrect": true,
+              "feedback": "Good request."
+            },
+            {
+              "text": "No, mangio tutto qui adesso.",
+              "isCorrect": false,
+              "feedback": "Probably better to take it home."
+            },
+            {
+              "text": "Mi serve una valigia grande.",
+              "isCorrect": false,
+              "feedback": "A bag is enough."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco la busta. Grazie mille per il suo acquisto.",
+          "english": "Here is the bag. Thank you very much for your purchase.",
+          "choices": [
+            {
+              "text": "Grazie a lei. Buona giornata!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Dove sono i miei soldi?",
+              "isCorrect": false,
+              "feedback": "You paid with a card."
+            },
+            {
+              "text": "Voglio comprare un'altra cosa ora.",
+              "isCorrect": false,
+              "feedback": "You've already finished this transaction."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buona giornata a lei. Arrivederci!",
+          "english": "Good day to you. Goodbye!",
+          "choices": [
+            {
+              "text": "Arrivederci e a presto!",
+              "isCorrect": true,
+              "feedback": "Perfect final goodbye."
+            },
+            {
+              "text": "Il PIN è 1234, va bene?",
+              "isCorrect": false,
+              "feedback": "Don't say your PIN aloud!"
+            },
+            {
+              "text": "Non trovo più la mia carta.",
+              "isCorrect": false,
+              "feedback": "You just put it away!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "entering_the_pin",
+      "title": "Entering the PIN",
+      "description": "Using a card that requires a PIN code.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Il totale è venti euro.",
+          "english": "Good morning. The total is twenty euros.",
+          "choices": [
+            {
+              "text": "Buongiorno. Pago con il bancomat.",
+              "isCorrect": true,
+              "feedback": "Direct and clear."
+            },
+            {
+              "text": "Il totale è troppo basso per me.",
+              "isCorrect": false,
+              "feedback": "That's an unusual complaint."
+            },
+            {
+              "text": "Posso pagare con le mele?",
+              "isCorrect": false,
+              "feedback": "The shop prefers money."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottimo. Ha la carta con il microchip?",
+          "english": "Great. Do you have the card with the microchip?",
+          "choices": [
+            {
+              "text": "Sì, eccola qui. La inserisco?",
+              "isCorrect": true,
+              "feedback": "Helpful response."
+            },
+            {
+              "text": "No, ho solo una carta di carta.",
+              "isCorrect": false,
+              "feedback": "You need a payment card."
+            },
+            {
+              "text": "Il microchip è rotto e sporco.",
+              "isCorrect": false,
+              "feedback": "Try it anyway, it might work."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, prego. La inserisca pure nel lettore.",
+          "english": "Yes, please. Go ahead and insert it into the reader.",
+          "choices": [
+            {
+              "text": "Va bene. La inserisco ora.",
+              "isCorrect": true,
+              "feedback": "Following instructions."
+            },
+            {
+              "text": "La carta è troppo grande per il buco.",
+              "isCorrect": false,
+              "feedback": "It should fit perfectly."
+            },
+            {
+              "text": "Non voglio inserire niente nel lettore.",
+              "isCorrect": false,
+              "feedback": "You have to if you want to pay!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Adesso digiti il suo PIN, per favore.",
+          "english": "Perfect. Now type your PIN, please.",
+          "choices": [
+            {
+              "text": "D'accordo. Lo digito subito.",
+              "isCorrect": true,
+              "feedback": "Taking action."
+            },
+            {
+              "text": "Il mio PIN è il mio compleanno.",
+              "isCorrect": false,
+              "feedback": "Don't tell anyone your PIN details!"
+            },
+            {
+              "text": "Posso scrivere il PIN sullo scontrino?",
+              "isCorrect": false,
+              "feedback": "No, type it on the keypad."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Attenda un momento. Il sistema sta verificando il codice.",
+          "english": "Wait a moment. The system is verifying the code.",
+          "choices": [
+            {
+              "text": "Va bene, aspetto.",
+              "isCorrect": true,
+              "feedback": "Good patience."
+            },
+            {
+              "text": "Ho sbagliato il codice, credo.",
+              "isCorrect": false,
+              "feedback": "Wait and see if it's accepted."
+            },
+            {
+              "text": "Voglio annullare tutto adesso.",
+              "isCorrect": false,
+              "feedback": "Wait, it's almost done."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Codice corretto. La transazione è stata approvata.",
+          "english": "Correct code. The transaction has been approved.",
+          "choices": [
+            {
+              "text": "Ottimo! Posso togliere la carta?",
+              "isCorrect": true,
+              "feedback": "Natural question."
+            },
+            {
+              "text": "Il codice era sbagliato, sono sicuro.",
+              "isCorrect": false,
+              "feedback": "The host said it was correct!"
+            },
+            {
+              "text": "Voglio inserire un altro PIN ora.",
+              "isCorrect": false,
+              "feedback": "No need, it worked."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, può ritirarla. Ecco lo scontrino per lei.",
+          "english": "Yes, you can take it out. Here is the receipt for you.",
+          "choices": [
+            {
+              "text": "Grazie mille. Lo metto nel portafoglio.",
+              "isCorrect": true,
+              "feedback": "Good habit."
+            },
+            {
+              "text": "Lo scontrino è troppo lungo per me.",
+              "isCorrect": false,
+              "feedback": "Just fold it."
+            },
+            {
+              "text": "Voglio buttare la carta nel cestino.",
+              "isCorrect": false,
+              "feedback": "Don't do that!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Le serve anche una busta per queste cose?",
+          "english": "Do you also need a bag for these things?",
+          "choices": [
+            {
+              "text": "No grazie, ho già la mia borsa.",
+              "isCorrect": true,
+              "feedback": "Polite refusal."
+            },
+            {
+              "text": "Sì, voglio una busta d'oro.",
+              "isCorrect": false,
+              "feedback": "They only have plastic or paper."
+            },
+            {
+              "text": "Le buste sono gratis o costano?",
+              "isCorrect": false,
+              "feedback": "They usually cost a few cents, but just answer yes or no."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene. Ha bisogno di altro?",
+          "english": "Alright. Do you need anything else?",
+          "choices": [
+            {
+              "text": "No, grazie. Tutto a posto così.",
+              "isCorrect": true,
+              "feedback": "Clear answer."
+            },
+            {
+              "text": "Sì, voglio comprare il negozio.",
+              "isCorrect": false,
+              "feedback": "That's a bit much!"
+            },
+            {
+              "text": "Mi serve un caffè subito.",
+              "isCorrect": false,
+              "feedback": "This is a shop, not a bar."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "D'accordo. Grazie e buona serata!",
+          "english": "Alright. Thank you and have a good evening!",
+          "choices": [
+            {
+              "text": "Grazie, buona serata anche a lei!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Arrivederci, vado a dormire.",
+              "isCorrect": false,
+              "feedback": "A bit too much detail."
+            },
+            {
+              "text": "Il totale era sbagliato, credo.",
+              "isCorrect": false,
+              "feedback": "You've already paid."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transaction_error",
+      "title": "Transaction Error",
+      "description": "Handling a declined card and trying another one.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Mi dispiace, ma la transazione è stata rifiutata.",
+          "english": "I'm sorry, but the transaction has been declined.",
+          "choices": [
+            {
+              "text": "Oh, mi scusi. Posso riprovare?",
+              "isCorrect": true,
+              "feedback": "Polite and proactive."
+            },
+            {
+              "text": "Ottimo! Sono molto felice.",
+              "isCorrect": false,
+              "feedback": "Why are you happy about a decline?"
+            },
+            {
+              "text": "La carta è nuova di zecca.",
+              "isCorrect": false,
+              "feedback": "That doesn't help fix the error."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Proviamo ad inserirla di nuovo.",
+          "english": "Certainly. Let's try inserting it again.",
+          "choices": [
+            {
+              "text": "D'accordo. La inserisco ancora.",
+              "isCorrect": true,
+              "feedback": "Following the host's suggestion."
+            },
+            {
+              "text": "No, voglio usare i contatti.",
+              "isCorrect": false,
+              "feedback": "You mean 'contanti'? Maybe, but try the card again first."
+            },
+            {
+              "text": "Il lettore è rotto, ne sono sicuro.",
+              "isCorrect": false,
+              "feedback": "Don't be so quick to blame the machine."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Digiti pure il PIN un'altra volta.",
+          "english": "Go ahead and type the PIN one more time.",
+          "choices": [
+            {
+              "text": "Sì, lo digito adesso. Spero funzioni.",
+              "isCorrect": true,
+              "feedback": "Good attitude."
+            },
+            {
+              "text": "Il PIN è cambiato da solo.",
+              "isCorrect": false,
+              "feedback": "That's not how it works."
+            },
+            {
+              "text": "Non voglio digitare niente.",
+              "isCorrect": false,
+              "feedback": "You have to if you want to pay."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Niente da fare. Viene rifiutata ancora. Forse c'è un problema tecnico.",
+          "english": "Nothing to do. It's declined again. Maybe there's a technical problem.",
+          "choices": [
+            {
+              "text": "Capisco. Provo con un'altra carta allora.",
+              "isCorrect": true,
+              "feedback": "Good solution."
+            },
+            {
+              "text": "Il problema è il suo negozio.",
+              "isCorrect": false,
+              "feedback": "Be polite."
+            },
+            {
+              "text": "Voglio chiamare la polizia.",
+              "isCorrect": false,
+              "feedback": "That's an overreaction!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, ottima idea. Ha un'altra carta con lei?",
+          "english": "Yes, great idea. Do you have another card with you?",
+          "choices": [
+            {
+              "text": "Sì, ho questa carta di credito. Prego.",
+              "isCorrect": true,
+              "feedback": "Presenting the new card."
+            },
+            {
+              "text": "No, ho solo questa e basta.",
+              "isCorrect": false,
+              "feedback": "Then you might need another way to pay."
+            },
+            {
+              "text": "Ho una carta d'identità.",
+              "isCorrect": false,
+              "feedback": "That's not for paying."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Proviamo con questa. Può anche appoggiarla per il contactless.",
+          "english": "Let's try with this one. You can also tap it for contactless.",
+          "choices": [
+            {
+              "text": "Va bene, la appoggio qui sopra.",
+              "isCorrect": true,
+              "feedback": "Correct action for contactless."
+            },
+            {
+              "text": "La inserisco nel buco?",
+              "isCorrect": false,
+              "feedback": "The host suggested contactless (tapping)."
+            },
+            {
+              "text": "Non trovo il lettore adesso.",
+              "isCorrect": false,
+              "feedback": "It's right there."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto! Questa volta è andata bene. Transazione approvata.",
+          "english": "Perfect! This time it went well. Transaction approved.",
+          "choices": [
+            {
+              "text": "Meno male! Grazie mille per la pazienza.",
+              "isCorrect": true,
+              "feedback": "Polite and relieved."
+            },
+            {
+              "text": "Voglio riprovare con la prima carta.",
+              "isCorrect": false,
+              "feedback": "Why? You already paid."
+            },
+            {
+              "text": "Era ora che funzionasse!",
+              "isCorrect": false,
+              "feedback": "A bit rude."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Figurati, nessun problema. Succede spesso. Ecco lo scontrino.",
+          "english": "Don't mention it, no problem. It happens often. Here is the receipt.",
+          "choices": [
+            {
+              "text": "Grazie. Lo scontrino è importante.",
+              "isCorrect": true,
+              "feedback": "Good point."
+            },
+            {
+              "text": "Non voglio questo pezzo di carta.",
+              "isCorrect": false,
+              "feedback": "It's your proof of purchase."
+            },
+            {
+              "text": "Lo scontrino è sporco.",
+              "isCorrect": false,
+              "feedback": "It looks clean enough."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Le serve altro o è a posto così?",
+          "english": "Do you need anything else or are you all set?",
+          "choices": [
+            {
+              "text": "Sono a posto così, grazie ancora.",
+              "isCorrect": true,
+              "feedback": "Clear answer."
+            },
+            {
+              "text": "Mi serve un prestito.",
+              "isCorrect": false,
+              "feedback": "This is a shop, not a bank."
+            },
+            {
+              "text": "Voglio restituire tutto adesso.",
+              "isCorrect": false,
+              "feedback": "You just bought it!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "D'accordo. Buona serata e arrivederci!",
+          "english": "Alright. Have a good evening and goodbye!",
+          "choices": [
+            {
+              "text": "Grazie, buona serata anche a lei! Arrivederci.",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Arrivederci, vado a casa.",
+              "isCorrect": false,
+              "feedback": "A bit too much detail."
+            },
+            {
+              "text": "Non mi piacciono le carte.",
+              "isCorrect": false,
+              "feedback": "But they are useful!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_about_contactless",
+      "title": "Asking about Contactless",
+      "description": "Confirming if contactless payment is accepted.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "In totale sono dodici euro. Come preferisce pagare?",
+          "english": "In total it is twelve euros. How do you prefer to pay?",
+          "choices": [
+            {
+              "text": "Accettate il pagamento contactless qui?",
+              "isCorrect": true,
+              "feedback": "Good question."
+            },
+            {
+              "text": "Voglio pagare con le mie mani.",
+              "isCorrect": false,
+              "feedback": "You need money or a card!"
+            },
+            {
+              "text": "Il totale è troppo caro per dodici euro.",
+              "isCorrect": false,
+              "feedback": "Twelve euros is twelve euros."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente, accettiamo tutte le carte contactless.",
+          "english": "Certainly, we accept all contactless cards.",
+          "choices": [
+            {
+              "text": "Ottimo. Posso pagare anche con il telefono?",
+              "isCorrect": true,
+              "feedback": "Advancing the conversation naturally."
+            },
+            {
+              "text": "No, non voglio usare il contactless.",
+              "isCorrect": false,
+              "feedback": "You just asked about it!"
+            },
+            {
+              "text": "Il mio telefono è rotto.",
+              "isCorrect": false,
+              "feedback": "Then use a card."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, certo. Può usare Apple Pay o Google Pay.",
+          "english": "Yes, sure. You can use Apple Pay or Google Pay.",
+          "choices": [
+            {
+              "text": "Perfetto. Appoggio il telefono sul lettore ora.",
+              "isCorrect": true,
+              "feedback": "Taking action."
+            },
+            {
+              "text": "Devo digitare il PIN sul telefono?",
+              "isCorrect": false,
+              "feedback": "Usually you use FaceID or TouchID on the phone."
+            },
+            {
+              "text": "Il telefono è troppo pesante per il lettore.",
+              "isCorrect": false,
+              "feedback": "You just need to tap it."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Attenda un attimo... ecco, transazione approvata. Molto veloce!",
+          "english": "Wait a moment... there, transaction approved. Very fast!",
+          "choices": [
+            {
+              "text": "È vero, è molto comodo. Grazie.",
+              "isCorrect": true,
+              "feedback": "Agreeing and being polite."
+            },
+            {
+              "text": "Voglio riprovare più lentamente.",
+              "isCorrect": false,
+              "feedback": "No need, it's already done."
+            },
+            {
+              "text": "Il telefono è esploso, credo.",
+              "isCorrect": false,
+              "feedback": "Don't be dramatic!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Le serve lo scontrino cartaceo o vuole quello via email?",
+          "english": "Do you need the paper receipt or do you want it via email?",
+          "choices": [
+            {
+              "text": "Lo scontrino cartaceo va bene, grazie.",
+              "isCorrect": true,
+              "feedback": "Simple choice."
+            },
+            {
+              "text": "Voglio lo scontrino via piccione viaggiatore.",
+              "isCorrect": false,
+              "feedback": "They don't have that service."
+            },
+            {
+              "text": "Non voglio nessuno scontrino mai.",
+              "isCorrect": false,
+              "feedback": "It's better to take it."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco a lei. Le serve una busta per la sua spesa?",
+          "english": "Here you go. Do you need a bag for your shopping?",
+          "choices": [
+            {
+              "text": "Sì, una busta piccola, per favore.",
+              "isCorrect": true,
+              "feedback": "Good request."
+            },
+            {
+              "text": "No, metto tutto in tasca.",
+              "isCorrect": false,
+              "feedback": "If it fits..."
+            },
+            {
+              "text": "Voglio una busta di plastica blu.",
+              "isCorrect": false,
+              "feedback": "They usually only have one type."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco la busta. Vuole che l'aiuti a mettere via le cose?",
+          "english": "Here is the bag. Do you want me to help you pack the things?",
+          "choices": [
+            {
+              "text": "No grazie, faccio io. Molto gentile.",
+              "isCorrect": true,
+              "feedback": "Polite refusal."
+            },
+            {
+              "text": "Sì, faccia tutto lei subito.",
+              "isCorrect": false,
+              "feedback": "A bit bossy."
+            },
+            {
+              "text": "Non voglio mettere niente nella busta.",
+              "isCorrect": false,
+              "feedback": "Then why did you ask for it?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Nessun problema. Tutto a posto allora?",
+          "english": "No problem. Everything all right then?",
+          "choices": [
+            {
+              "text": "Sì, grazie mille per tutto.",
+              "isCorrect": true,
+              "feedback": "Good summary."
+            },
+            {
+              "text": "No, ho perso il mio telefono.",
+              "isCorrect": false,
+              "feedback": "You just used it to pay!"
+            },
+            {
+              "text": "Il totale era dodici o tredici?",
+              "isCorrect": false,
+              "feedback": "It's already paid."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo. Grazie per essere venuto nel nostro negozio.",
+          "english": "Great. Thank you for coming to our shop.",
+          "choices": [
+            {
+              "text": "Grazie a lei. Tornerò presto!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Non tornerò mai più qui.",
+              "isCorrect": false,
+              "feedback": "That's not very nice."
+            },
+            {
+              "text": "Dov'è l'uscita del negozio?",
+              "isCorrect": false,
+              "feedback": "It's usually where you came in."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "La aspettiamo! Buona giornata e arrivederci.",
+          "english": "We'll be waiting for you! Have a good day and goodbye.",
+          "choices": [
+            {
+              "text": "Grazie, arrivederci!",
+              "isCorrect": true,
+              "feedback": "Perfect final goodbye."
+            },
+            {
+              "text": "Arrivederci, vado al cinema.",
+              "isCorrect": false,
+              "feedback": "A bit too much detail."
+            },
+            {
+              "text": "Pago con contactless adesso.",
+              "isCorrect": false,
+              "feedback": "You already did!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

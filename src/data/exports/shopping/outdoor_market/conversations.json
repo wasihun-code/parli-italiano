@@ -1,0 +1,953 @@
+{
+  "scenarioId": 44,
+  "conversations": [
+    {
+      "id": "leather_belt",
+      "title": "Buying a Leather Belt",
+      "description": "Negotiate the purchase of a high-quality leather belt at a market stall.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarla a cercare qualcosa di particolare?",
+          "english": "Good morning! Can I help you look for something in particular?",
+          "choices": [
+            {
+              "text": "Buongiorno, sto cercando una cintura di pelle.",
+              "isCorrect": true,
+              "feedback": "Perfect! You stated exactly what you are looking for."
+            },
+            {
+              "text": "Quanto costa questo cappello di lana?",
+              "isCorrect": false,
+              "feedback": "You're looking for a belt, not a wool hat!"
+            },
+            {
+              "text": "Dove posso trovare un ristorante tipico?",
+              "isCorrect": false,
+              "feedback": "The vendor sells leather goods, not directions to restaurants."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo, ne abbiamo moltissime. Le serve nera, marrone o di un altro colore?",
+          "english": "Sure, we have many. Do you need it in black, brown, or another color?",
+          "choices": [
+            {
+              "text": "La vorrei marrone, per favore. Avete questa?",
+              "isCorrect": true,
+              "feedback": "Great. Specifying the color helps the vendor narrow it down."
+            },
+            {
+              "text": "Mi piace molto il blu, ma non oggi.",
+              "isCorrect": false,
+              "feedback": "A bit confusing. Just tell them the color you want!"
+            },
+            {
+              "text": "Non mi piacciono le cinture colorate.",
+              "isCorrect": false,
+              "feedback": "Negative and unhelpful. Try to be more specific about your needs."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, questa è molto bella. È vera pelle artigianale. Vuole provarla?",
+          "english": "Yes, this one is very nice. It's real handmade leather. Do you want to try it on?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Penso che questa taglia sia piccola.",
+              "isCorrect": true,
+              "feedback": "Good. It's important to check the fit immediately."
+            },
+            {
+              "text": "No, non mi serve una taglia più grande.",
+              "isCorrect": false,
+              "feedback": "Wait, you haven't even tried it on yet!"
+            },
+            {
+              "text": "Posso pagare con la carta di credito?",
+              "isCorrect": false,
+              "feedback": "Too early! You don't even know if it fits yet."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ha ragione, questa è una novanta. Le prendo una cento, un momento solo.",
+          "english": "You're right, this is a ninety. I'll get you a hundred, just a moment.",
+          "choices": [
+            {
+              "text": "Grazie mille. Questa misura sembra perfetta.",
+              "isCorrect": true,
+              "feedback": "Excellent. You confirmed the new size works for you."
+            },
+            {
+              "text": "Non importa, prendo quella piccola.",
+              "isCorrect": false,
+              "feedback": "If it's too small, it won't be useful!"
+            },
+            {
+              "text": "Cento euro sono troppi per me.",
+              "isCorrect": false,
+              "feedback": "He said size 100, not 100 euros! Listen carefully."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottimo. Le sta molto bene. Le interessa sapere il prezzo?",
+          "english": "Great. It looks very good on you. Are you interested in knowing the price?",
+          "choices": [
+            {
+              "text": "Sì, quanto costa questa cintura marrone?",
+              "isCorrect": true,
+              "feedback": "Correct. Now you can move to the transaction phase."
+            },
+            {
+              "text": "No, non voglio sapere quanto costa.",
+              "isCorrect": false,
+              "feedback": "That's unusual! You usually need the price before buying."
+            },
+            {
+              "text": "Quanto costano queste scarpe nere?",
+              "isCorrect": false,
+              "feedback": "You're buying a belt, stay focused!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Il prezzo è di quarantacinque euro. È un ottimo affare per la qualità.",
+          "english": "The price is forty-five euros. It's a great deal for the quality.",
+          "choices": [
+            {
+              "text": "È un po' cara. Può farmi un piccolo sconto?",
+              "isCorrect": true,
+              "feedback": "Well done! Bargaining is common in Italian markets."
+            },
+            {
+              "text": "Va bene, quarantacinque euro è pochissimo.",
+              "isCorrect": false,
+              "feedback": "You could probably get a better price if you ask!"
+            },
+            {
+              "text": "Quaranta chili di pelle sono troppi.",
+              "isCorrect": false,
+              "feedback": "He said 45 euros, not 40 kilos!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Va bene, visto che è il primo cliente, facciamo quaranta euro.",
+          "english": "Alright, since you're the first customer, let's say forty euros.",
+          "choices": [
+            {
+              "text": "D'accordo, quaranta euro mi sembra onesto.",
+              "isCorrect": true,
+              "feedback": "Success! You negotiated a better price successfully."
+            },
+            {
+              "text": "No, preferisco pagare il prezzo intero.",
+              "isCorrect": false,
+              "feedback": "Why would you want to pay more? Take the discount!"
+            },
+            {
+              "text": "Voglio uno sconto del cento per cento.",
+              "isCorrect": false,
+              "feedback": "That's not bargaining, that's asking for a gift!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Perfetto. Desidera una confezione regalo o va bene così?",
+          "english": "Perfect. Would you like a gift wrap or is it fine as is?",
+          "choices": [
+            {
+              "text": "Va bene così, grazie. È per me.",
+              "isCorrect": true,
+              "feedback": "Clear and direct. No need for extra wrapping."
+            },
+            {
+              "text": "Sì, vorrei un regalo per mia nonna.",
+              "isCorrect": false,
+              "feedback": "Wait, did you just change your mind about who it's for?"
+            },
+            {
+              "text": "Il regalo è dentro la borsa rossa.",
+              "isCorrect": false,
+              "feedback": "The vendor is asking if you WANT a gift wrap, not where it is."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "D'accordo. Sono quaranta euro. Accettate i contanti?",
+          "english": "Alright. That's forty euros. Do you accept cash?",
+          "choices": [
+            {
+              "text": "Sì, ecco a lei cinquanta euro. Ha il resto?",
+              "isCorrect": true,
+              "feedback": "Good. Handling the cash transaction correctly."
+            },
+            {
+              "text": "No, non ho soldi. Posso averla gratis?",
+              "isCorrect": false,
+              "feedback": "That's not how shops work! You need to pay."
+            },
+            {
+              "text": "Il resto è nel mio portafoglio blu.",
+              "isCorrect": false,
+              "feedback": "The vendor gives you the change, you don't give it to them!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco a lei dieci euro di resto e la sua cintura. Buona giornata!",
+          "english": "Here is ten euros change and your belt. Have a good day!",
+          "choices": [
+            {
+              "text": "Grazie mille, buona giornata anche a lei!",
+              "isCorrect": true,
+              "feedback": "Polite ending to a successful transaction."
+            },
+            {
+              "text": "Arrivederci, non mi piace questa cintura.",
+              "isCorrect": false,
+              "feedback": "Wait, you just bought it! A bit late for complaints."
+            },
+            {
+              "text": "Dov'è il mio resto di venti euro?",
+              "isCorrect": false,
+              "feedback": "You gave 50 for a 40 euro item. 10 is the correct change."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "antique_browsing",
+      "title": "Antique Browsing",
+      "description": "Explore vintage items and ask about their history at an antique stall.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cerchi qualcosa di antico o vuoi solo curiosare?",
+          "english": "Good morning! Are you looking for something antique or just browsing?",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei solo dare un'occhiata.",
+              "isCorrect": true,
+              "feedback": "Perfect. 'Dare un'occhiata' is the standard way to say you're browsing."
+            },
+            {
+              "text": "Voglio comprare tutto il suo negozio.",
+              "isCorrect": false,
+              "feedback": "A bit ambitious for a market stall!"
+            },
+            {
+              "text": "Dov'è l'uscita di sicurezza qui?",
+              "isCorrect": false,
+              "feedback": "You just arrived! No need to flee yet."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Faccia pure con calma. Abbiamo molti oggetti interessanti oggi.",
+          "english": "Take your time. We have many interesting objects today.",
+          "choices": [
+            {
+              "text": "Mi scusi, cos'è questo oggetto d'argento?",
+              "isCorrect": true,
+              "feedback": "Great. Asking about a specific item shows genuine interest."
+            },
+            {
+              "text": "Questa sedia di plastica è molto vecchia.",
+              "isCorrect": false,
+              "feedback": "That's not silver, and it's probably not an antique!"
+            },
+            {
+              "text": "Non vedo niente di bello in questo posto.",
+              "isCorrect": false,
+              "feedback": "That's quite rude to say to the vendor!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Quella è una vecchia tabacchiera del secolo scorso. È molto rara.",
+          "english": "That is an old snuffbox from the last century. It is very rare.",
+          "choices": [
+            {
+              "text": "È davvero molto bella. Di che anno è?",
+              "isCorrect": true,
+              "feedback": "Excellent follow-up question about the item's age."
+            },
+            {
+              "text": "È sporca, non la voglio toccare.",
+              "isCorrect": false,
+              "feedback": "Antiques often have a patina of age. Don't be so sensitive!"
+            },
+            {
+              "text": "Posso usarla per mettere il sale?",
+              "isCorrect": false,
+              "feedback": "Technically yes, but it's a collector's item, not kitchenware."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Dovrebbe essere del millenovecentoventi, più o meno. È un pezzo unico.",
+          "english": "It should be from around nineteen-twenty. It's a unique piece.",
+          "choices": [
+            {
+              "text": "Capisco. È stata fatta qui in Italia?",
+              "isCorrect": true,
+              "feedback": "Good. Asking about provenance is key when buying antiques."
+            },
+            {
+              "text": "È troppo nuova per essere antica.",
+              "isCorrect": false,
+              "feedback": "1920 is over a hundred years ago! That's definitely antique."
+            },
+            {
+              "text": "Non mi piace il colore del millenovecento.",
+              "isCorrect": false,
+              "feedback": "Years don't have colors! You mean you don't like the style."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, è artigianato fiorentino. Guardi i dettagli sul coperchio.",
+          "english": "Yes, it's Florentine craftsmanship. Look at the details on the lid.",
+          "choices": [
+            {
+              "text": "Sì, vedo. Il lavoro è molto accurato.",
+              "isCorrect": true,
+              "feedback": "Nice. Showing appreciation for the craftsmanship."
+            },
+            {
+              "text": "Non vedo niente, ho dimenticato gli occhiali.",
+              "isCorrect": false,
+              "feedback": "A bit of a conversation killer. Try to engage more!"
+            },
+            {
+              "text": "Firenze è troppo lontana da qui.",
+              "isCorrect": false,
+              "feedback": "The location of Florence isn't relevant to the item's beauty."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Le interessa sapere il prezzo o vuole vedere altro?",
+          "english": "Are you interested in knowing the price or do you want to see something else?",
+          "choices": [
+            {
+              "text": "Sì, quanto costa questa tabacchiera?",
+              "isCorrect": true,
+              "feedback": "Perfect. Moving towards a potential purchase."
+            },
+            {
+              "text": "Voglio vedere dei mobili molto pesanti.",
+              "isCorrect": false,
+              "feedback": "Stick to what you were looking at first!"
+            },
+            {
+              "text": "Il prezzo non è importante per me.",
+              "isCorrect": false,
+              "feedback": "Unless you're a millionaire, it probably is!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Per questa chiedo ottanta euro. È un prezzo onesto per l'argento.",
+          "english": "I'm asking eighty euros for this. It's an honest price for silver.",
+          "choices": [
+            {
+              "text": "Ottanta euro è un po' fuori budget.",
+              "isCorrect": true,
+              "feedback": "Good way to start a negotiation by being honest about your budget."
+            },
+            {
+              "text": "Ottanta euro? È quasi gratis!",
+              "isCorrect": false,
+              "feedback": "Don't say that! You'll never get a discount now."
+            },
+            {
+              "text": "Prendo otto tabacchiere, grazie.",
+              "isCorrect": false,
+              "feedback": "He said it's a unique piece, he only has one!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Capisco. Posso scendere a settanta se la prende subito.",
+          "english": "I understand. I can go down to seventy if you take it right now.",
+          "choices": [
+            {
+              "text": "Settanta euro... ci devo pensare un attimo.",
+              "isCorrect": true,
+              "feedback": "Perfectly acceptable. You're taking time to decide."
+            },
+            {
+              "text": "Settanta è più di ottanta, no grazie.",
+              "isCorrect": false,
+              "feedback": "Math check! 70 is less than 80."
+            },
+            {
+              "text": "Le do dieci euro e un panino.",
+              "isCorrect": false,
+              "feedback": "That's not a serious offer at an antique stall!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Non c'è problema. Faccia un giro e torni se decide.",
+          "english": "No problem. Walk around and come back if you decide.",
+          "choices": [
+            {
+              "text": "Grazie, tornerò più tardi forse. Arrivederci.",
+              "isCorrect": true,
+              "feedback": "Polite way to leave without buying yet."
+            },
+            {
+              "text": "Non tornerò mai più in questo posto.",
+              "isCorrect": false,
+              "feedback": "A bit dramatic! It's just a market stall."
+            },
+            {
+              "text": "Dov'è il bagno più vicino?",
+              "isCorrect": false,
+              "feedback": "Not the best time to ask!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va bene, a dopo allora. Buona passeggiata al mercato!",
+          "english": "Alright, see you later then. Have a nice walk at the market!",
+          "choices": [
+            {
+              "text": "Grazie mille, a presto!",
+              "isCorrect": true,
+              "feedback": "Short and polite. Good job."
+            },
+            {
+              "text": "Spero di perdermi nel mercato.",
+              "isCorrect": false,
+              "feedback": "That's an odd wish to share!"
+            },
+            {
+              "text": "Il mercato è chiuso domani.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information for this goodbye."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bargaining_stall",
+      "title": "Bargaining at the Stall",
+      "description": "Negotiate the price for a colorful scarf at a busy market stall.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Prego! Guardi che belle queste sciarpe di seta!",
+          "english": "Please! Look at these beautiful silk scarves!",
+          "choices": [
+            {
+              "text": "Buongiorno! Sono davvero molto colorate.",
+              "isCorrect": true,
+              "feedback": "Good opening. Complimenting the goods is a nice touch."
+            },
+            {
+              "text": "Non mi servono sciarpe, fa troppo caldo.",
+              "isCorrect": false,
+              "feedback": "If you don't want them, why stop at the stall?"
+            },
+            {
+              "text": "Quanto costa tutto il suo banco?",
+              "isCorrect": false,
+              "feedback": "A bit overwhelming for a first sentence!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sono di ottima qualità. Ne vuole provare una?",
+          "english": "They are of excellent quality. Do you want to try one on?",
+          "choices": [
+            {
+              "text": "Sì, quella blu mi piace molto. Posso?",
+              "isCorrect": true,
+              "feedback": "Perfect. Asking permission to handle the goods is polite."
+            },
+            {
+              "text": "No, non voglio toccare niente.",
+              "isCorrect": false,
+              "feedback": "Hard to shop if you won't touch anything!"
+            },
+            {
+              "text": "Le scarpe blu sono nell'altra borsa.",
+              "isCorrect": false,
+              "feedback": "He said scarf, not shoes!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente! Le sta benissimo con i suoi occhi.",
+          "english": "Certainly! It looks great on you with your eyes.",
+          "choices": [
+            {
+              "text": "Grazie. Quanto costa questa sciarpa?",
+              "isCorrect": true,
+              "feedback": "Direct and effective. Getting to the point."
+            },
+            {
+              "text": "I miei occhi sono chiusi adesso.",
+              "isCorrect": false,
+              "feedback": "That's a bit literal and strange!"
+            },
+            {
+              "text": "Non ho occhi per queste cose.",
+              "isCorrect": false,
+              "feedback": "An idiom that doesn't really fit here."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Costa solo venticinque euro. Un vero affare!",
+          "english": "It only costs twenty-five euros. A real bargain!",
+          "choices": [
+            {
+              "text": "Venticinque euro? È un po' troppo per me.",
+              "isCorrect": true,
+              "feedback": "Good. Starting the bargaining process gently."
+            },
+            {
+              "text": "Venticinque? Ne prendo dieci subito!",
+              "isCorrect": false,
+              "feedback": "Slow down! That's 250 euros!"
+            },
+            {
+              "text": "Venti chili di seta sono troppi.",
+              "isCorrect": false,
+              "feedback": "He said 25 euros, not 20 kilos!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Per lei posso fare venti euro. Ultimo prezzo!",
+          "english": "For you I can do twenty euros. Last price!",
+          "choices": [
+            {
+              "text": "Facciamo quindici e la prendo subito.",
+              "isCorrect": true,
+              "feedback": "Bold! You're a natural at bargaining."
+            },
+            {
+              "text": "Venti euro è più di venticinque.",
+              "isCorrect": false,
+              "feedback": "Math error! 20 is less than 25."
+            },
+            {
+              "text": "Non voglio pagare quindici centesimi.",
+              "isCorrect": false,
+              "feedback": "That's way too low for a silk scarf!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Quindici? È troppo poco! Ne facciamo diciotto?",
+          "english": "Fifteen? That's too little! Shall we do eighteen?",
+          "choices": [
+            {
+              "text": "D'accordo, diciotto euro va bene.",
+              "isCorrect": true,
+              "feedback": "Great negotiation. You met in the middle."
+            },
+            {
+              "text": "No, diciotto è un numero sfortunato.",
+              "isCorrect": false,
+              "feedback": "Don't let superstitions get in the way of a deal!"
+            },
+            {
+              "text": "Voglio pagare diciotto mila euro.",
+              "isCorrect": false,
+              "feedback": "The vendor would love that, but your wallet wouldn't!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Ne vuole un'altra per un regalo?",
+          "english": "Perfect. Do you want another one for a gift?",
+          "choices": [
+            {
+              "text": "No grazie, per ora solo questa.",
+              "isCorrect": true,
+              "feedback": "Good. Sticking to your original plan."
+            },
+            {
+              "text": "Sì, ne voglio cento diverse.",
+              "isCorrect": false,
+              "feedback": "That escalated quickly! Maybe just one for now."
+            },
+            {
+              "text": "Il regalo è nel mio zaino verde.",
+              "isCorrect": false,
+              "feedback": "He's offering to sell you a gift, not asking where one is."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Diciotto euro allora. Paga in contanti?",
+          "english": "Alright. Eighteen euros then. Are you paying in cash?",
+          "choices": [
+            {
+              "text": "Sì, ecco a lei venti euro. Ha il resto?",
+              "isCorrect": true,
+              "feedback": "Correct. Ready for the final step."
+            },
+            {
+              "text": "No, pago con un assegno falso.",
+              "isCorrect": false,
+              "feedback": "That's illegal! Don't say that."
+            },
+            {
+              "text": "Il resto è per me, grazie.",
+              "isCorrect": false,
+              "feedback": "You're giving money, you expect change back!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco a lei due euro di resto. Grazie mille!",
+          "english": "Here is two euros change. Thank you very much!",
+          "choices": [
+            {
+              "text": "Grazie a lei. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Polite and simple ending."
+            },
+            {
+              "text": "Arrivederci, la sciarpa è brutta.",
+              "isCorrect": false,
+              "feedback": "Why did you buy it then? Not very polite!"
+            },
+            {
+              "text": "Dov'è il mio resto di dieci euro?",
+              "isCorrect": false,
+              "feedback": "20 - 18 = 2. The change is correct."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Torni presto a trovarmi! Buona giornata!",
+          "english": "Come back to see me soon! Have a good day!",
+          "choices": [
+            {
+              "text": "Certamente, a presto! Buona giornata.",
+              "isCorrect": true,
+              "feedback": "Friendly farewell."
+            },
+            {
+              "text": "Non tornerò, ho troppe sciarpe.",
+              "isCorrect": false,
+              "feedback": "A bit blunt. 'A presto' is a nicer way to leave."
+            },
+            {
+              "text": "Oggi è lunedì, il mercato è chiuso.",
+              "isCorrect": false,
+              "feedback": "But you're standing in the market right now!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "souvenir_shopping",
+      "title": "Looking for a Souvenir",
+      "description": "Find a traditional Italian souvenir for a friend at a local market stall.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cerca un ricordo della nostra bellissima città?",
+          "english": "Good morning! Are you looking for a souvenir of our beautiful city?",
+          "choices": [
+            {
+              "text": "Buongiorno! Sì, cerco un regalo per un amico.",
+              "isCorrect": true,
+              "feedback": "Great. Stating your purpose clearly helps the vendor."
+            },
+            {
+              "text": "No, odio questa città e voglio andarmene.",
+              "isCorrect": false,
+              "feedback": "That's very negative! And why are you at a souvenir stall?"
+            },
+            {
+              "text": "Dov'è la stazione dei treni?",
+              "isCorrect": false,
+              "feedback": "The vendor sells souvenirs, they aren't an information desk."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Abbiamo calamite, cartoline e queste piccole maschere veneziane.",
+          "english": "We have magnets, postcards, and these small Venetian masks.",
+          "choices": [
+            {
+              "text": "Le maschere sono molto belle. Sono fatte a mano?",
+              "isCorrect": true,
+              "feedback": "Good question. Hand-made items are often better souvenirs."
+            },
+            {
+              "text": "Le maschere mi fanno paura, le tolga!",
+              "isCorrect": false,
+              "feedback": "A bit dramatic! Just don't buy them."
+            },
+            {
+              "text": "Voglio una calamita a forma di pizza.",
+              "isCorrect": false,
+              "feedback": "Maybe later, let's focus on the masks for now."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, sono tutte dipinte a mano da artigiani locali.",
+          "english": "Yes, they are all hand-painted by local artisans.",
+          "choices": [
+            {
+              "text": "Molto interessante. Quanto costa la maschera piccola?",
+              "isCorrect": true,
+              "feedback": "Good. Moving to the price of the item you like."
+            },
+            {
+              "text": "Non credo sia vero, sembrano di plastica.",
+              "isCorrect": false,
+              "feedback": "Quite rude! Better to trust the vendor or move on."
+            },
+            {
+              "text": "Gli artigiani locali sono tutti in vacanza.",
+              "isCorrect": false,
+              "feedback": "An odd statement to make!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "La piccola costa dodici euro. È un bellissimo pensiero.",
+          "english": "The small one costs twelve euros. It's a beautiful thought.",
+          "choices": [
+            {
+              "text": "Dodici euro... è un buon prezzo. Ne ha una blu?",
+              "isCorrect": true,
+              "feedback": "Great. Confirming the price and asking about options."
+            },
+            {
+              "text": "Dodici euro è troppo caro per un pezzo di carta.",
+              "isCorrect": false,
+              "feedback": "It's a hand-painted mask, not just paper!"
+            },
+            {
+              "text": "Ne voglio dodici mila, grazie.",
+              "isCorrect": false,
+              "feedback": "That's a lot of souvenirs! Maybe just one?"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Certo, eccola qui. Blu e oro, è molto elegante.",
+          "english": "Sure, here it is. Blue and gold, it's very elegant.",
+          "choices": [
+            {
+              "text": "Sì, è perfetta. Prendo questa, grazie.",
+              "isCorrect": true,
+              "feedback": "Decision made! You found the perfect gift."
+            },
+            {
+              "text": "No, il blu mi rende triste.",
+              "isCorrect": false,
+              "feedback": "You just asked for a blue one! Don't be confusing."
+            },
+            {
+              "text": "Voglio quella rossa che è là in fondo.",
+              "isCorrect": false,
+              "feedback": "You're being a bit difficult now!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottima scelta! Desidera anche una cartolina della piazza?",
+          "english": "Excellent choice! Would you also like a postcard of the square?",
+          "choices": [
+            {
+              "text": "Sì, ne prendo una. Quanto costa?",
+              "isCorrect": true,
+              "feedback": "Good. Postcards are cheap and nice additions."
+            },
+            {
+              "text": "No, non so scrivere, niente cartoline.",
+              "isCorrect": false,
+              "feedback": "A bit of an extreme excuse!"
+            },
+            {
+              "text": "La piazza è troppo grande per una foto.",
+              "isCorrect": false,
+              "feedback": "That's why it's a postcard, it fits in your hand!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "La cartolina costa solo un euro. In totale sono tredici euro.",
+          "english": "The postcard costs only one euro. In total it's thirteen euros.",
+          "choices": [
+            {
+              "text": "Va bene, ecco a lei quindici euro.",
+              "isCorrect": true,
+              "feedback": "Simple and effective. Handing over the money."
+            },
+            {
+              "text": "Tredici è un numero sfortunato in Italia.",
+              "isCorrect": false,
+              "feedback": "Actually, 17 is usually the unlucky number in Italy!"
+            },
+            {
+              "text": "Le do un euro e mi porto via tutto.",
+              "isCorrect": false,
+              "feedback": "That's not how it works!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Grazie. Ecco a lei due euro di resto. Serve un sacchetto?",
+          "english": "Thank you. Here is two euros change. Do you need a bag?",
+          "choices": [
+            {
+              "text": "Sì, per favore. È un regalo delicato.",
+              "isCorrect": true,
+              "feedback": "Good idea. A bag will help protect the mask."
+            },
+            {
+              "text": "No, la porto in mano tutto il giorno.",
+              "isCorrect": false,
+              "feedback": "It might break! Better to take the bag."
+            },
+            {
+              "text": "Il sacchetto è troppo pesante per me.",
+              "isCorrect": false,
+              "feedback": "A paper bag isn't heavy!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco qui. Stia attento, è fragile. Buon viaggio!",
+          "english": "Here you go. Be careful, it's fragile. Have a good trip!",
+          "choices": [
+            {
+              "text": "Grazie per il consiglio. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Polite farewell with a thank you."
+            },
+            {
+              "text": "Spero che si rompa subito.",
+              "isCorrect": false,
+              "feedback": "What a terrible thing to say!"
+            },
+            {
+              "text": "Il mio viaggio è finito ieri.",
+              "isCorrect": false,
+              "feedback": "Then why are you still here buying souvenirs?"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie a lei! Torni a trovarci presto!",
+          "english": "Thank you! Come back to see us soon!",
+          "choices": [
+            {
+              "text": "Certamente! Buona giornata e buon lavoro.",
+              "isCorrect": true,
+              "feedback": "Very polite and natural ending."
+            },
+            {
+              "text": "Non credo, non mi piace questo mercato.",
+              "isCorrect": false,
+              "feedback": "No need to be so blunt!"
+            },
+            {
+              "text": "Dov'è il mio amico adesso?",
+              "isCorrect": false,
+              "feedback": "The vendor doesn't know your friends!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,546 +1,549 @@
 import json
-import os
 
-file_path = 'src/data/exports/culture/festival/conversations.json'
-
-with open(file_path, 'r', encoding='utf-8') as f:
-    data = json.load(f)
-
-extensions = {
-    "festival_welcome": [
+new_msgs = {
+  "paying_in_cash": [
+    {
+      "id": "m6",
+      "role": "host",
+      "text": "Scusi, aspetti un momento! Ha dimenticato il suo ombrello qui sul bancone.",
+      "english": "Excuse me, wait a moment! You forgot your umbrella here on the counter.",
+      "choices": [
         {
-            "id": "m6",
-            "role": "host",
-            "text": "Aspetti! Vuole una mappa dell'evento? È molto utile.",
-            "english": "Wait! Do you want a map of the event? It's very useful.",
-            "choices": [
-                {
-                    "text": "Sì, grazie. Mi serve proprio una mappa.",
-                    "english": "Yes, thanks. I really need a map.",
-                    "isCorrect": True,
-                    "feedback": "Great! Maps are always helpful for tourists."
-                },
-                {
-                    "text": "No, non mi piacciono le mappe.",
-                    "english": "No, I don't like maps.",
-                    "isCorrect": False,
-                    "feedback": "You might get lost without a map!"
-                },
-                {
-                    "text": "Dove posso comprare un biglietto aereo?",
-                    "english": "Where can I buy a plane ticket?",
-                    "isCorrect": False,
-                    "feedback": "Wrong domain! You're at a festival, not an airport."
-                }
-            ]
+          "text": "Oh, grazie mille! Sarei dovuto tornare indietro a prenderlo.",
+          "english": "Oh, thank you very much! I would have had to come back to get it.",
+          "isCorrect": True,
+          "feedback": "Great! You thanked the cashier for noticing."
         },
         {
-            "id": "m7",
-            "role": "host",
-            "text": "Eccola. La mappa mostra dove passa la sfilata storica.",
-            "english": "Here it is. The map shows where the historical parade passes.",
-            "choices": [
-                {
-                    "text": "Perfetto, grazie. A che ora passa la sfilata?",
-                    "english": "Perfect, thanks. What time does the parade pass?",
-                    "isCorrect": True,
-                    "feedback": "Asking about the schedule is a good next step."
-                },
-                {
-                    "text": "Non mi interessa la sfilata.",
-                    "english": "I'm not interested in the parade.",
-                    "isCorrect": False,
-                    "feedback": "The parade is the highlight of the festival!"
-                },
-                {
-                    "text": "Voglio prenotare un tavolo al ristorante.",
-                    "english": "I want to book a table at the restaurant.",
-                    "isCorrect": False,
-                    "feedback": "You're in a square, not at a restaurant."
-                }
-            ]
+          "text": "Non è il mio ombrello, io odio la pioggia.",
+          "english": "It's not my umbrella, I hate the rain.",
+          "isCorrect": False,
+          "feedback": "It's better to accept the umbrella gracefully in this context."
         },
         {
-            "id": "m8",
-            "role": "host",
-            "text": "La sfilata è la parte più importante. Le piacciono le tradizioni?",
-            "english": "The parade is the most important part. Do you like traditions?",
-            "choices": [
-                {
-                    "text": "Sì, molto. Mi piace scoprire la cultura locale.",
-                    "english": "Yes, very much. I like discovering local culture.",
-                    "isCorrect": True,
-                    "feedback": "Showing interest in local traditions is great for learning."
-                },
-                {
-                    "text": "No, preferisco guardare la televisione.",
-                    "english": "No, I prefer watching television.",
-                    "isCorrect": False,
-                    "feedback": "That's a bit boring for a festival attendee!"
-                },
-                {
-                    "text": "Dov'è la chiave della mia camera?",
-                    "english": "Where is the key to my room?",
-                    "isCorrect": False,
-                    "feedback": "Wrong scenario! You are at a festival, not an apartment."
-                }
-            ]
-        },
-        {
-            "id": "m9",
-            "role": "host",
-            "text": "Allora le consiglio di andare in piazza presto per vedere bene.",
-            "english": "Then I recommend you go to the square early to see well.",
-            "choices": [
-                {
-                    "text": "Grazie del consiglio. Ci vado subito.",
-                    "english": "Thanks for the advice. I'm going there right away.",
-                    "isCorrect": True,
-                    "feedback": "Good plan! The square fills up quickly."
-                },
-                {
-                    "text": "No, preferisco restare qui a sedermi.",
-                    "english": "No, I prefer to stay here and sit down.",
-                    "isCorrect": False,
-                    "feedback": "You'll miss the best view if you stay here!"
-                },
-                {
-                    "text": "Quanto costa l'affitto dell'appartamento?",
-                    "english": "How much is the rent for the apartment?",
-                    "isCorrect": False,
-                    "feedback": "Wrong scenario! You are at a festival, not an apartment."
-                }
-            ]
-        },
-        {
-            "id": "m10",
-            "role": "host",
-            "text": "Spero che passi una bella serata. Ci vediamo in giro!",
-            "english": "I hope you have a nice evening. See you around!",
-            "choices": [
-                {
-                    "text": "Grazie mille! Buona serata anche a lei.",
-                    "english": "Thanks a lot! Have a good evening too.",
-                    "isCorrect": True,
-                    "feedback": "A polite and friendly way to end the conversation."
-                },
-                {
-                    "text": "Arrivederci. Vado via adesso.",
-                    "english": "Goodbye. I'm leaving now.",
-                    "isCorrect": False,
-                    "feedback": "A bit abrupt for a nice chat."
-                },
-                {
-                    "text": "Dov'è la fermata dell'autobus per Roma?",
-                    "english": "Where is the bus stop for Rome?",
-                    "isCorrect": False,
-                    "feedback": "You're at a festival, the bus stop is far from here!"
-                }
-            ]
+          "text": "Il conto non è giusto, mancano cinque euro da qui.",
+          "english": "The bill is not right, five euros are missing from here.",
+          "isCorrect": False,
+          "feedback": "You already finished paying."
         }
-    ],
-    "food_stall": [
+      ]
+    },
+    {
+      "id": "m7",
+      "role": "host",
+      "text": "Di nulla. Fuori piove molto forte in questo momento?",
+      "english": "You're welcome. Is it raining very hard outside right now?",
+      "choices": [
         {
-            "id": "m6",
-            "role": "host",
-            "text": "Aspetti, vuole anche qualcosa da bere? Abbiamo vino locale.",
-            "english": "Wait, do you also want something to drink? We have local wine.",
-            "choices": [
-                {
-                    "text": "Sì, volentieri. Un bicchiere di vino rosso, grazie.",
-                    "english": "Yes, gladly. A glass of red wine, thanks.",
-                    "isCorrect": True,
-                    "feedback": "Perfect! Red wine pairs well with truffle pasta."
-                },
-                {
-                    "text": "No, non bevo mai vino.",
-                    "english": "No, I never drink wine.",
-                    "isCorrect": False,
-                    "feedback": "Water or soda is also available, but wine is the specialty!"
-                },
-                {
-                    "text": "Cerco l'ufficio informazioni turistiche.",
-                    "english": "I'm looking for the tourist information office.",
-                    "isCorrect": False,
-                    "feedback": "You're at a food stall, not an information desk."
-                }
-            ]
+          "text": "Sì, purtroppo piove a dirotto da questa mattina presto.",
+          "english": "Yes, unfortunately it's been pouring since early this morning.",
+          "isCorrect": True,
+          "feedback": "Perfect answer."
         },
         {
-            "id": "m7",
-            "role": "host",
-            "text": "È un vino rosso delle nostre colline. Ne vuole un bicchiere?",
-            "english": "It's a red wine from our hills. Do you want a glass?",
-            "choices": [
-                {
-                    "text": "Sì, sembra ottimo. Quanto costa?",
-                    "english": "Yes, it sounds great. How much does it cost?",
-                    "isCorrect": True,
-                    "feedback": "Good to check the price of drinks too."
-                },
-                {
-                    "text": "No, preferisco una birra fredda.",
-                    "english": "No, I prefer a cold beer.",
-                    "isCorrect": False,
-                    "feedback": "We only have wine and water here."
-                },
-                {
-                    "text": "Vorrei un asciugamano per la doccia.",
-                    "english": "I would like a towel for the shower.",
-                    "isCorrect": False,
-                    "feedback": "Wrong place for bathroom supplies!"
-                }
-            ]
+          "text": "Voglio pagare in contanti, grazie mille.",
+          "english": "I want to pay in cash, thank you very much.",
+          "isCorrect": False,
+          "feedback": "You already paid."
         },
         {
-            "id": "m8",
-            "role": "host",
-            "text": "Costa tre euro. Il vino è perfetto con il tartufo.",
-            "english": "It costs three euros. The wine is perfect with the truffle.",
-            "choices": [
-                {
-                    "text": "Va bene, ecco tre euro. Grazie.",
-                    "english": "Okay, here are three euros. Thanks.",
-                    "isCorrect": True,
-                    "feedback": "A fair price for local wine."
-                },
-                {
-                    "text": "È troppo caro per un bicchiere.",
-                    "english": "It's too expensive for a glass.",
-                    "isCorrect": False,
-                    "feedback": "Actually, it's a very good price for artisanal wine."
-                },
-                {
-                    "text": "Il mio passaporto è scaduto oggi.",
-                    "english": "My passport expired today.",
-                    "isCorrect": False,
-                    "feedback": "What does that have to do with wine?"
-                }
-            ]
-        },
-        {
-            "id": "m9",
-            "role": "host",
-            "text": "Vuole un tovagliolo o del pane con la pasta?",
-            "english": "Do you want a napkin or some bread with the pasta?",
-            "choices": [
-                {
-                    "text": "Sì, un tovagliolo, per favore.",
-                    "english": "Yes, a napkin, please.",
-                    "isCorrect": True,
-                    "feedback": "Napkins are always useful when eating pasta."
-                },
-                {
-                    "text": "No, non mangio mai il pane.",
-                    "english": "No, I never eat bread.",
-                    "isCorrect": False,
-                    "feedback": "In Italy, bread is usually served with everything!"
-                },
-                {
-                    "text": "Dove posso noleggiare una bicicletta?",
-                    "english": "Where can I rent a bike?",
-                    "isCorrect": False,
-                    "feedback": "You're at a food stall, not a bike rental shop."
-                }
-            ]
-        },
-        {
-            "id": "m10",
-            "role": "host",
-            "text": "Buon appetito! Mi faccia sapere se serve altro.",
-            "english": "Enjoy your meal! Let me know if you need anything else.",
-            "choices": [
-                {
-                    "text": "Grazie di tutto! La pasta è deliziosa.",
-                    "english": "Thanks for everything! The pasta is delicious.",
-                    "isCorrect": True,
-                    "feedback": "A great way to finish the interaction."
-                },
-                {
-                    "text": "Arrivederci, ho finito di mangiare.",
-                    "english": "Goodbye, I've finished eating.",
-                    "isCorrect": False,
-                    "feedback": "A bit too quick! Enjoy the moment."
-                },
-                {
-                    "text": "A che ora parte il mio volo?",
-                    "english": "What time does my flight leave?",
-                    "isCorrect": False,
-                    "feedback": "No flights at the sagra!"
-                }
-            ]
+          "text": "Il mio ombrello è di colore blu scuro e molto grande.",
+          "english": "My umbrella is dark blue and very big.",
+          "isCorrect": False,
+          "feedback": "The host asked about the weather."
         }
-    ],
-    "parade_info": [
+      ]
+    },
+    {
+      "id": "m8",
+      "role": "host",
+      "text": "Se vuole, può aspettare qui dentro finché non smette.",
+      "english": "If you want, you can wait inside here until it stops.",
+      "choices": [
         {
-            "id": "m6",
-            "role": "host",
-            "text": "La sfilata include molti cavalli e sbandieratori. È molto rumorosa!",
-            "english": "The parade includes many horses and flag-wavers. It's very loud!",
-            "choices": [
-                {
-                    "text": "Che bello! Mi piacciono molto i cavalli.",
-                    "english": "How nice! I like horses very much.",
-                    "isCorrect": True,
-                    "feedback": "Horses are a traditional part of many Italian parades."
-                },
-                {
-                    "text": "Troppo rumore! Non mi piace.",
-                    "english": "Too much noise! I don't like it.",
-                    "isCorrect": False,
-                    "feedback": "Festivals are often loud and lively!"
-                },
-                {
-                    "text": "Ho bisogno di una medicina per lo stomaco.",
-                    "english": "I need a medicine for my stomach.",
-                    "isCorrect": False,
-                    "feedback": "Wrong topic! We're talking about the parade."
-                }
-            ]
+          "text": "Grazie, è molto gentile, ma devo andare al lavoro subito.",
+          "english": "Thanks, you are very kind, but I have to go to work immediately.",
+          "isCorrect": True,
+          "feedback": "Polite decline."
         },
         {
-            "id": "m7",
-            "role": "host",
-            "text": "Ha una macchina fotografica? Dovrebbe fare delle foto ai costumi.",
-            "english": "Do you have a camera? You should take some photos of the costumes.",
-            "choices": [
-                {
-                    "text": "Sì, la prendo subito. I costumi sono bellissimi.",
-                    "english": "Yes, I'll get it right away. The costumes are beautiful.",
-                    "isCorrect": True,
-                    "feedback": "The costumes are very photogenic."
-                },
-                {
-                    "text": "No, non mi piace fare foto.",
-                    "english": "No, I don't like taking photos.",
-                    "isCorrect": False,
-                    "feedback": "You'll miss out on great memories!"
-                },
-                {
-                    "text": "Dov'è la lavanderia più vicina?",
-                    "english": "Where is the nearest laundry?",
-                    "isCorrect": False,
-                    "feedback": "We are outside, far from any laundry."
-                }
-            ]
+          "text": "No, il bancomat non funziona bene oggi.",
+          "english": "No, the ATM is not working well today.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
         },
         {
-            "id": "m8",
-            "role": "host",
-            "text": "I costumi sono fatti a mano dalle donne del paese. Sono molto antichi.",
-            "english": "The costumes are handmade by the women of the village. They are very old.",
-            "choices": [
-                {
-                    "text": "Incredibile! È una tradizione meravigliosa.",
-                    "english": "Incredible! It's a wonderful tradition.",
-                    "isCorrect": True,
-                    "feedback": "Local craftsmanship is highly valued in Italy."
-                },
-                {
-                    "text": "Non mi interessano i vestiti vecchi.",
-                    "english": "I'm not interested in old clothes.",
-                    "isCorrect": False,
-                    "feedback": "These are historical costumes, not just old clothes!"
-                },
-                {
-                    "text": "Quanto costa un biglietto per il museo?",
-                    "english": "How much is a ticket for the museum?",
-                    "isCorrect": False,
-                    "feedback": "The parade is on the street, not in a museum."
-                }
-            ]
-        },
-        {
-            "id": "m9",
-            "role": "host",
-            "text": "Dopo la sfilata, ci sono anche i fuochi d'artificio.",
-            "english": "After the parade, there are also fireworks.",
-            "choices": [
-                {
-                    "text": "Fantastico! A che ora iniziano i fuochi?",
-                    "english": "Fantastic! What time do the fireworks start?",
-                    "isCorrect": True,
-                    "feedback": "Fireworks are the perfect way to end a festival."
-                },
-                {
-                    "text": "Ho paura dei fuochi d'artificio.",
-                    "english": "I'm afraid of fireworks.",
-                    "isCorrect": False,
-                    "feedback": "They are quite far away, so it's safe!"
-                },
-                {
-                    "text": "Vorrei un cappuccino e un cornetto.",
-                    "english": "I would like a cappuccino and a croissant.",
-                    "isCorrect": False,
-                    "feedback": "It's late at night, too late for breakfast food!"
-                }
-            ]
-        },
-        {
-            "id": "m10",
-            "role": "host",
-            "text": "Iniziano a mezzanotte. Sarà una serata bellissima!",
-            "english": "They start at midnight. It will be a beautiful evening!",
-            "choices": [
-                {
-                    "text": "Non vedo l'ora! Grazie per le informazioni.",
-                    "english": "I can't wait! Thanks for the information.",
-                    "isCorrect": True,
-                    "feedback": "A great way to conclude the information exchange."
-                },
-                {
-                    "text": "È troppo tardi per me. Vado a dormire.",
-                    "english": "It's too late for me. I'm going to sleep.",
-                    "isCorrect": False,
-                    "feedback": "You'll miss the best part!"
-                },
-                {
-                    "text": "Dov'è il binario per il treno?",
-                    "english": "Where is the platform for the train?",
-                    "isCorrect": False,
-                    "feedback": "The station is far from the village center."
-                }
-            ]
+          "text": "Il ristorante è chiuso per le vacanze estive adesso.",
+          "english": "The restaurant is closed for summer holidays now.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
         }
-    ],
-    "buying_crafts": [
+      ]
+    },
+    {
+      "id": "m9",
+      "role": "host",
+      "text": "Capisco perfettamente. Faccia attenzione per la strada, allora.",
+      "english": "I understand perfectly. Be careful on the road, then.",
+      "choices": [
         {
-            "id": "m6",
-            "role": "host",
-            "text": "Se le interessa, abbiamo anche dei piccoli magneti dipinti a mano.",
-            "english": "If you are interested, we also have small hand-painted magnets.",
-            "choices": [
-                {
-                    "text": "Oh, sono carini! Posso vederli?",
-                    "english": "Oh, they are cute! Can I see them?",
-                    "isCorrect": True,
-                    "feedback": "Magnets are great small souvenirs."
-                },
-                {
-                    "text": "No, non mi servono i magneti.",
-                    "english": "No, I don't need magnets.",
-                    "isCorrect": False,
-                    "feedback": "They are very small and don't take up space!"
-                },
-                {
-                    "text": "Vorrei prenotare un tavolo per cena.",
-                    "english": "I would like to book a table for dinner.",
-                    "isCorrect": False,
-                    "feedback": "You're at a craft stall, not a restaurant."
-                }
-            ]
+          "text": "Lo farò sicuramente. Grazie ancora per tutto e buona giornata.",
+          "english": "I certainly will. Thanks again for everything and have a good day.",
+          "isCorrect": True,
+          "feedback": "Very polite farewell."
         },
         {
-            "id": "m7",
-            "role": "host",
-            "text": "Sono leggeri da portare in valigia. Ne vuole vedere uno?",
-            "english": "They are light to carry in a suitcase. Do you want to see one?",
-            "choices": [
-                {
-                    "text": "Sì, grazie. Questo con la chiesa è molto bello.",
-                    "english": "Yes, thanks. This one with the church is very beautiful.",
-                    "isCorrect": True,
-                    "feedback": "A nice choice representing the village."
-                },
-                {
-                    "text": "No, preferisco comprare una maglietta.",
-                    "english": "No, I prefer to buy a t-shirt.",
-                    "isCorrect": False,
-                    "feedback": "We don't have t-shirts here, only ceramics and magnets."
-                },
-                {
-                    "text": "C'è il wifi gratuito qui vicino?",
-                    "english": "Is there free wifi nearby?",
-                    "isCorrect": False,
-                    "feedback": "Not at the craft market!"
-                }
-            ]
+          "text": "Devo andare a comprare una macchina nuova domani mattina.",
+          "english": "I have to go buy a new car tomorrow morning.",
+          "isCorrect": False,
+          "feedback": "Overly specific and irrelevant."
         },
         {
-            "id": "m8",
-            "role": "host",
-            "text": "Ogni magnete rappresenta un angolo diverso del nostro borgo.",
-            "english": "Each magnet represents a different corner of our village.",
-            "choices": [
-                {
-                    "text": "È un'idea bellissima per un ricordo.",
-                    "english": "It's a beautiful idea for a souvenir.",
-                    "isCorrect": True,
-                    "feedback": "Souvenirs help you remember your trip."
-                },
-                {
-                    "text": "Preferisco i magneti delle grandi città.",
-                    "english": "I prefer magnets from big cities.",
-                    "isCorrect": False,
-                    "feedback": "Small villages have more unique items!"
-                },
-                {
-                    "text": "Ho perso le chiavi dell'appartamento.",
-                    "english": "I lost the keys to the apartment.",
-                    "isCorrect": False,
-                    "feedback": "Wrong scenario! You are at a festival stall."
-                }
-            ]
-        },
-        {
-            "id": "m9",
-            "role": "host",
-            "text": "Dato che ha comprato il vaso, le regalo un magnete!",
-            "english": "Since you bought the vase, I'll give you a magnet as a gift!",
-            "choices": [
-                {
-                    "text": "Davvero? Grazie mille, è molto gentile!",
-                    "english": "Really? Thanks a lot, you're very kind!",
-                    "isCorrect": True,
-                    "feedback": "It's always nice to get a small gift."
-                },
-                {
-                    "text": "Non lo voglio, grazie lo stesso.",
-                    "english": "I don't want it, thanks anyway.",
-                    "isCorrect": False,
-                    "feedback": "It's free! Why not take it?"
-                },
-                {
-                    "text": "Dove posso trovare un taxi per l'aeroporto?",
-                    "english": "Where can I find a taxi for the airport?",
-                    "isCorrect": False,
-                    "feedback": "There are no taxis in the middle of the sagra."
-                }
-            ]
-        },
-        {
-            "id": "m10",
-            "role": "host",
-            "text": "È un piccolo ricordo della sua visita. Grazie e arrivederci!",
-            "english": "It's a small souvenir of your visit. Thank you and goodbye!",
-            "choices": [
-                {
-                    "text": "Grazie ancora di tutto. Arrivederci!",
-                    "english": "Thanks again for everything. Goodbye!",
-                    "isCorrect": True,
-                    "feedback": "A perfect ending to your shopping experience."
-                },
-                {
-                    "text": "Va bene, me ne vado ora.",
-                    "english": "Okay, I'm leaving now.",
-                    "isCorrect": False,
-                    "feedback": "A bit rude after receiving a gift!"
-                },
-                {
-                    "text": "Quanto costa il check-out in hotel?",
-                    "english": "How much is the check-out in the hotel?",
-                    "isCorrect": False,
-                    "feedback": "You're at a festival stall, not an hotel!"
-                }
-            ]
+          "text": "Il treno parte tra cinque minuti, sono in ritardo.",
+          "english": "The train leaves in five minutes, I am late.",
+          "isCorrect": False,
+          "feedback": "A bit abrupt."
         }
-    ]
+      ]
+    },
+    {
+      "id": "m10",
+      "role": "host",
+      "text": "Buona giornata a lei. Arrivederci!",
+      "english": "Have a good day too. Goodbye!",
+      "choices": [
+        {
+          "text": "Arrivederci e a presto!",
+          "english": "Goodbye and see you soon!",
+          "isCorrect": True,
+          "feedback": "Great job finishing the conversation."
+        },
+        {
+          "text": "Il caffè era molto freddo oggi.",
+          "english": "The coffee was very cold today.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        },
+        {
+          "text": "Non voglio pagare il conto adesso.",
+          "english": "I don't want to pay the bill now.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        }
+      ]
+    }
+  ],
+  "asking_for_change": [
+    {
+      "id": "m6",
+      "role": "host",
+      "text": "Scusi, posso chiederle un favore mentre è qui?",
+      "english": "Excuse me, can I ask you a favor while you are here?",
+      "choices": [
+        {
+          "text": "Certo, mi dica pure. Come posso aiutarla?",
+          "english": "Sure, tell me. How can I help you?",
+          "isCorrect": True,
+          "feedback": "Friendly and helpful response."
+        },
+        {
+          "text": "No, non ho monete con me.",
+          "english": "No, I don't have coins with me.",
+          "isCorrect": False,
+          "feedback": "You just got coins from them."
+        },
+        {
+          "text": "Il bagno è chiuso, mi dispiace.",
+          "english": "The bathroom is closed, I'm sorry.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "role": "host",
+      "text": "Per caso ha anche una moneta da due euro da cambiare in spiccioli?",
+      "english": "By any chance do you also have a two euro coin to change into small change?",
+      "choices": [
+        {
+          "text": "Sì, guardo nel portafoglio. Ecco qui una moneta da due euro.",
+          "english": "Yes, I look in my wallet. Here is a two euro coin.",
+          "isCorrect": True,
+          "feedback": "Good job accommodating their request."
+        },
+        {
+          "text": "Voglio pagare con la carta di credito, grazie.",
+          "english": "I want to pay with credit card, thanks.",
+          "isCorrect": False,
+          "feedback": "You are making change, not paying."
+        },
+        {
+          "text": "Il biglietto costa troppo per me.",
+          "english": "The ticket costs too much for me.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "role": "host",
+      "text": "Perfetto! Le do dieci monete da venti centesimi, va bene?",
+      "english": "Perfect! I give you ten twenty-cent coins, is that okay?",
+      "choices": [
+        {
+          "text": "Sì, va benissimo. Le monete piccole sono sempre utili.",
+          "english": "Yes, that's fine. Small coins are always useful.",
+          "isCorrect": True,
+          "feedback": "Natural response."
+        },
+        {
+          "text": "No, voglio cento euro in contanti subito.",
+          "english": "No, I want one hundred euros in cash immediately.",
+          "isCorrect": False,
+          "feedback": "That's not equal to two euros."
+        },
+        {
+          "text": "Questa borsa costa cinquanta euro.",
+          "english": "This bag costs fifty euros.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "role": "host",
+      "text": "Ottimo, ecco i suoi venti centesimi. La ringrazio molto per l'aiuto.",
+      "english": "Great, here are your twenty cents. Thank you very much for your help.",
+      "choices": [
+        {
+          "text": "Di nulla, figurati. È stato un piacere aiutarla.",
+          "english": "You're welcome, don't mention it. It was a pleasure helping you.",
+          "isCorrect": True,
+          "feedback": "Very polite."
+        },
+        {
+          "text": "Il pin è sbagliato, provo ancora.",
+          "english": "The pin is wrong, I try again.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        },
+        {
+          "text": "Voglio uno scontrino per questo favore.",
+          "english": "I want a receipt for this favor.",
+          "isCorrect": False,
+          "feedback": "You don't get a receipt for changing money."
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "role": "host",
+      "text": "Bene, ora può andare a prendere il suo caffè. Arrivederci!",
+      "english": "Well, now you can go get your coffee. Goodbye!",
+      "choices": [
+        {
+          "text": "Grazie ancora, a presto e buon lavoro!",
+          "english": "Thanks again, see you soon and good work!",
+          "isCorrect": True,
+          "feedback": "Perfect finish."
+        },
+        {
+          "text": "Il treno parte in ritardo oggi.",
+          "english": "The train leaves late today.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        },
+        {
+          "text": "Non mi piace il caffè caldo.",
+          "english": "I don't like hot coffee.",
+          "isCorrect": False,
+          "feedback": "Not very polite."
+        }
+      ]
+    }
+  ],
+  "card_declined": [
+    {
+      "id": "m6",
+      "role": "host",
+      "text": "A proposito, il sistema dei pagamenti elettronici ha problemi da ieri.",
+      "english": "By the way, the electronic payment system has been having problems since yesterday.",
+      "choices": [
+        {
+          "text": "Ah, ecco perché la carta non funzionava. Tutto chiaro adesso.",
+          "english": "Ah, that's why the card wasn't working. Everything is clear now.",
+          "isCorrect": True,
+          "feedback": "Good response to the explanation."
+        },
+        {
+          "text": "Voglio pagare con la mia carta di credito americana.",
+          "english": "I want to pay with my American credit card.",
+          "isCorrect": False,
+          "feedback": "You just paid in cash."
+        },
+        {
+          "text": "Il cibo del ristorante non era buono.",
+          "english": "The restaurant food wasn't good.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "role": "host",
+      "text": "Sì, stiamo aspettando il tecnico per riparare la linea internet.",
+      "english": "Yes, we are waiting for the technician to repair the internet line.",
+      "choices": [
+        {
+          "text": "Spero che riescano a risolvere il guasto velocemente.",
+          "english": "I hope they manage to fix the fault quickly.",
+          "isCorrect": True,
+          "feedback": "Friendly and empathetic."
+        },
+        {
+          "text": "Voglio un tecnico per il mio computer a casa.",
+          "english": "I want a technician for my computer at home.",
+          "isCorrect": False,
+          "feedback": "Not what they meant."
+        },
+        {
+          "text": "Il prezzo di questa borsa è troppo alto.",
+          "english": "The price of this bag is too high.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "role": "host",
+      "text": "Lo spero anche io! Per fortuna lei aveva dei contanti in tasca.",
+      "english": "I hope so too! Luckily you had some cash in your pocket.",
+      "choices": [
+        {
+          "text": "Sì, porto sempre un po' di soldi con me per sicurezza.",
+          "english": "Yes, I always carry a little money with me for safety.",
+          "isCorrect": True,
+          "feedback": "A very natural statement."
+        },
+        {
+          "text": "Io non ho mai contanti, mi dispiace.",
+          "english": "I never have cash, I'm sorry.",
+          "isCorrect": False,
+          "feedback": "Contradicts what just happened."
+        },
+        {
+          "text": "La banca è molto lontana da qui.",
+          "english": "The bank is very far from here.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "role": "host",
+      "text": "È un'ottima abitudine. Grazie per la pazienza e la comprensione.",
+      "english": "It's a great habit. Thank you for your patience and understanding.",
+      "choices": [
+        {
+          "text": "Figurati, nessun problema. Buona continuazione e buon lavoro.",
+          "english": "Don't mention it, no problem. Have a good continuation and good work.",
+          "isCorrect": True,
+          "feedback": "Excellent closing remark."
+        },
+        {
+          "text": "Non voglio questo scontrino, voglio i soldi indietro.",
+          "english": "I don't want this receipt, I want the money back.",
+          "isCorrect": False,
+          "feedback": "Unreasonable."
+        },
+        {
+          "text": "Voglio comprare anche un giornale ora.",
+          "english": "I want to buy a newspaper now too.",
+          "isCorrect": False,
+          "feedback": "Conversation is ending."
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "role": "host",
+      "text": "Grazie mille, arrivederci e buona giornata!",
+      "english": "Thank you very much, goodbye and have a good day!",
+      "choices": [
+        {
+          "text": "Grazie, arrivederci!",
+          "english": "Thanks, goodbye!",
+          "isCorrect": True,
+          "feedback": "Well done."
+        },
+        {
+          "text": "Il resto è sbagliato.",
+          "english": "The change is wrong.",
+          "isCorrect": False,
+          "feedback": "You already checked."
+        },
+        {
+          "text": "Mi dia la borsa.",
+          "english": "Give me the bag.",
+          "isCorrect": False,
+          "feedback": "You already have it."
+        }
+      ]
+    }
+  ],
+  "understanding_prices": [
+    {
+      "id": "m6",
+      "role": "host",
+      "text": "Ha notato anche la nostra nuova collezione di portafogli in pelle?",
+      "english": "Did you also notice our new collection of leather wallets?",
+      "choices": [
+        {
+          "text": "Sì, li ho visti. Sono molto belli, ma non mi servono oggi.",
+          "english": "Yes, I saw them. They are very beautiful, but I don't need them today.",
+          "isCorrect": True,
+          "feedback": "Polite but firm decline."
+        },
+        {
+          "text": "Sì, voglio pagare il portafoglio in contanti.",
+          "english": "Yes, I want to pay for the wallet in cash.",
+          "isCorrect": False,
+          "feedback": "You didn't decide to buy it."
+        },
+        {
+          "text": "La borsa è rotta, voglio restituirla.",
+          "english": "The bag is broken, I want to return it.",
+          "isCorrect": False,
+          "feedback": "You just bought it."
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "role": "host",
+      "text": "Nessun problema. Le lascio un nostro biglietto da visita per la prossima volta.",
+      "english": "No problem. I leave you our business card for next time.",
+      "choices": [
+        {
+          "text": "Grazie, lo prendo volentieri. Magari torno il mese prossimo.",
+          "english": "Thanks, I take it gladly. Maybe I'll come back next month.",
+          "isCorrect": True,
+          "feedback": "Good job accepting it politely."
+        },
+        {
+          "text": "Questo biglietto del treno è scaduto.",
+          "english": "This train ticket is expired.",
+          "isCorrect": False,
+          "feedback": "It's a business card, not a train ticket."
+        },
+        {
+          "text": "Non voglio comprare la pelle oggi.",
+          "english": "I don't want to buy leather today.",
+          "isCorrect": False,
+          "feedback": "You already declined."
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "role": "host",
+      "text": "Saremo felici di rivederla. A proposito, abbiamo anche un sito online.",
+      "english": "We will be happy to see you again. By the way, we also have an online website.",
+      "choices": [
+        {
+          "text": "Ottimo, controllerò il sito se mi serve qualcos'altro in futuro.",
+          "english": "Great, I'll check the website if I need anything else in the future.",
+          "isCorrect": True,
+          "feedback": "Perfect response."
+        },
+        {
+          "text": "Il mio internet non funziona da due giorni.",
+          "english": "My internet hasn't been working for two days.",
+          "isCorrect": False,
+          "feedback": "A bit overly sharing."
+        },
+        {
+          "text": "Voglio pagare con il bancomat per questo sito.",
+          "english": "I want to pay with a debit card for this site.",
+          "isCorrect": False,
+          "feedback": "You aren't buying anything online right now."
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "role": "host",
+      "text": "Perfetto. Spero che la borsa le piaccia, è di ottima qualità.",
+      "english": "Perfect. I hope you like the bag, it is of excellent quality.",
+      "choices": [
+        {
+          "text": "Ne sono sicuro. Mi piace molto il materiale morbido e il colore.",
+          "english": "I am sure of it. I really like the soft material and the color.",
+          "isCorrect": True,
+          "feedback": "A great compliment."
+        },
+        {
+          "text": "Il colore è bruttissimo, ho cambiato idea.",
+          "english": "The color is very ugly, I changed my mind.",
+          "isCorrect": False,
+          "feedback": "You just said it was an excellent choice."
+        },
+        {
+          "text": "Non mi interessa la qualità, voglio solo il resto.",
+          "english": "I don't care about the quality, I just want the change.",
+          "isCorrect": False,
+          "feedback": "Too aggressive."
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "role": "host",
+      "text": "Sono contento. Allora arrivederci e grazie per l'acquisto!",
+      "english": "I'm glad. Goodbye then and thank you for your purchase!",
+      "choices": [
+        {
+          "text": "Grazie a lei. Arrivederci e buona serata!",
+          "english": "Thank you. Goodbye and have a good evening!",
+          "isCorrect": True,
+          "feedback": "Great finish to the interaction."
+        },
+        {
+          "text": "La polizia è già qui fuori.",
+          "english": "The police is already outside here.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        },
+        {
+          "text": "Voglio comprare tutto il negozio.",
+          "english": "I want to buy the whole shop.",
+          "isCorrect": False,
+          "feedback": "Irrelevant."
+        }
+      ]
+    }
+  ]
 }
 
-for conversation in data['conversations']:
-    conv_id = conversation['id']
-    if conv_id in extensions:
-        conversation['messages'].extend(extensions[conv_id])
+filepath = 'src/data/exports/miscellaneous/talking_about_money/conversations.json'
 
-with open(file_path, 'w', encoding='utf-8') as f:
+with open(filepath, 'r') as f:
+    data = json.load(f)
+
+for conv in data['conversations']:
+    conv_id = conv['id']
+    if conv_id in new_msgs:
+        # Check if already appended to avoid duplicates
+        if len(conv['messages']) < 10:
+            conv['messages'].extend(new_msgs[conv_id])
+
+with open(filepath, 'w') as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
+
+print("Conversations extended.")

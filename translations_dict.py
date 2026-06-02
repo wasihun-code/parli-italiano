@@ -1,0 +1,121 @@
+words = {
+"abbiamo": "we have", "accordo": "agreement", "acqua": "water", "aggiungo": "I add", "aiuta": "helps",
+"aiutano": "they help", "aiuto": "help", "all": "to the", "allo": "to the", "allora": "then",
+"almeno": "at least", "aloe": "aloe", "alta": "high", "altra": "other", "altri": "others", "altro": "other",
+"anche": "also", "ancora": "still/again", "arrivederci": "goodbye", "arrossamento": "redness", "aspetta": "waits",
+"assolutamente": "absolutely", "attenzione": "attention", "auguro": "I wish", "aver": "having", "avere": "to have",
+"avete": "you have", "bagno": "bath/swim", "banco": "counter", "bancomat": "debit card", "bene": "well",
+"benissimo": "very well", "bere": "to drink", "bisogno": "need", "braccio": "arm", "bravissimo": "very good",
+"brutta": "bad", "buon": "good", "buona": "good", "buone": "good", "buongiorno": "good morning",
+"busta": "bag", "calda": "hot", "caldo": "hot", "calmante": "soothing", "capisco": "I understand",
+"capito": "understood", "caramelle": "lozenges", "carta": "card", "caso": "case", "catarro": "phlegm",
+"centesimi": "cents", "centrali": "central", "cerca": "looks for", "cercando": "looking for", "cerotti": "band-aids",
+"cerotto": "band-aid", "certo": "sure", "che": "that", "chiamerò": "I will call", "cinquanta": "fifty",
+"cinque": "five", "circa": "about", "cliente": "customer", "codice": "code", "comodo": "comfortable",
+"comprare": "to buy", "compresse": "tablets", "con": "with", "consiglia": "recommends", "consiglio": "advice",
+"contanti": "cash", "conto": "bill", "controllerò": "I will check", "cosa": "what", "credito": "credit",
+"crema": "cream", "cucchiaio": "spoonful", "dei": "some", "del": "of the", "delicato": "gentle",
+"dell": "of the", "delle": "some", "devo": "I must", "dica": "tell me", "disinfettante": "disinfectant",
+"disinfettata": "disinfected", "disinfettato": "disinfected", "dispiace": "sorry", "disponibilità": "availability",
+"doccia": "shower", "dodici": "twelve", "dopo": "after", "doposole": "aftersun", "dormire": "to sleep",
+"dottore": "doctor", "dovrò": "I will have to", "due": "two", "dura": "lasts", "durante": "during",
+"ecco": "here is", "eccolo": "here it is", "era": "it was", "esatto": "exactly", "euro": "euros",
+"evitare": "to avoid", "faccia": "do", "fare": "to do", "farò": "I will do", "fastidio": "discomfort",
+"fattore": "factor", "favore": "favor", "ferita": "wound", "fiscale": "tax", "forte": "strong",
+"fresco": "fresh", "garza": "gauze", "gel": "gel", "giornata": "day", "giorni": "days", "giorno": "day",
+"già": "already", "gocce": "drops", "gola": "throat", "grazie": "thank you", "guarigione": "healing",
+"guarisca": "heal", "ibuprofene": "ibuprofen", "igiene": "hygiene", "impermeabili": "waterproof",
+"importante": "important", "infezioni": "infections", "infiammata": "inflamed", "invece": "instead",
+"irritata": "irritated", "laverò": "I will wash", "lavi": "you wash", "lavoro": "work", "lei": "you",
+"limone": "lemon", "mai": "never", "mal": "ache", "mangiato": "eaten", "mare": "sea", "masticabile": "chewable",
+"media": "medium", "medica": "medical", "medicina": "medicine", "medicine": "medicines", "medico": "doctor",
+"mentre": "while", "mese": "month", "mettere": "to put", "metto": "I put", "mia": "my", "miele": "honey",
+"mille": "thousand", "mio": "my", "misti": "mixed", "molta": "a lot of", "molto": "very", "nel": "in the",
+"nello": "in the", "non": "not", "notte": "night", "nulla": "nothing", "oggi": "today", "ogni": "every",
+"ombra": "shade", "ore": "hours", "ottima": "excellent", "ottimo": "excellent", "paga": "pays",
+"pagare": "to pay", "pago": "I pay", "passa": "passes", "pasti": "meals", "peggiora": "worsens",
+"pelli": "skins", "per": "for", "perfetto": "perfect", "piccolo": "small", "pieno": "full",
+"portare": "to bring", "posso": "I can", "posto": "place", "preferisco": "I prefer", "prego": "you are welcome",
+"prenda": "take", "prendere": "to take", "prenderle": "to take them", "prenderò": "I will take",
+"prendo": "I take", "preparerò": "I will prepare", "prese": "taken", "presto": "soon", "prima": "before",
+"problemi": "problems", "prodotti": "products", "profondo": "deep", "proprio": "really", "prossimo": "next",
+"protezione": "protection", "pure": "as well", "può": "can", "qua": "here", "qualcosa": "something",
+"quant": "how much", "quanto": "how much", "quelle": "those", "quello": "that", "questa": "this",
+"queste": "these", "questi": "these", "questo": "this", "qui": "here", "quindi": "therefore",
+"quindici": "fifteen", "raccomando": "I recommend", "resistenti": "resistant", "resto": "change",
+"ricetta": "prescription", "ricevuta": "receipt", "ricordi": "remember", "riguardi": "regards",
+"rimetterò": "I will put it back", "ringrazio": "I thank", "sacchetto": "bag", "salve": "hello",
+"sanitaria": "health", "sapere": "to know", "sarebbe": "would be", "scatola": "box", "sciroppo": "syrup",
+"scontrino": "receipt", "secca": "dry", "sensibili": "sensitive", "serve": "is needed", "serviva": "was needed",
+"servono": "are needed", "sia": "is", "sicuramente": "surely", "solare": "solar", "sole": "sun",
+"sono": "they are", "soprattutto": "especially", "specifica": "specific", "spero": "I hope", "spesso": "often",
+"starò": "I will stay", "stasera": "tonight", "sto": "I am", "stomaco": "stomach", "subito": "immediately",
+"sue": "your", "sufficienti": "sufficient", "tagliato": "cut", "taglio": "cut", "tasse": "taxes",
+"tempo": "time", "tessera": "card", "testa": "head", "tiene": "holds", "tornare": "to return",
+"torni": "return", "tosse": "cough", "totale": "total", "tranquillamente": "safely", "trascuri": "neglect",
+"tre": "three", "trovarci": "to visit us", "tutto": "everything", "una": "a", "usare": "to use",
+"utile": "useful", "vacanze": "holidays", "vado": "I go", "vanno": "they go", "vede": "sees",
+"vedere": "to see", "vediamo": "we see", "vedo": "I see", "venti": "twenty", "ventiquattro": "twenty-four",
+"ventotto": "twenty-eight", "vera": "true", "viene": "comes", "viso": "face", "vorrei": "I would like",
+"vuole": "wants", "vuoto": "empty", "zaino": "backpack"
+}
+
+phrases = {
+"p1": "Goodbye! I will certainly do that.",
+"p2": "Absolutely yes. Are the band-aids waterproof?",
+"p3": "Good, so I won't have to return soon for another box.",
+"p4": "Good morning. I have a prescription from my doctor for these medicines.",
+"p5": "Good morning. I am looking for a good sunscreen for the face.",
+"p6": "Good morning. Yes, I cut myself and I need some band-aids.",
+"p7": "I understand, if it worsens I will call a doctor. Thank you.",
+"p8": "Sure, I will wash it well with water before using the disinfectant.",
+"p9": "Here is twenty euros. Thank you for the useful advice.",
+"p10": "Here you go. Can I pay with a credit card?",
+"p11": "Thanks again for the help. Goodbye!",
+"p12": "Thank you very much, you too and good work.",
+"p13": "Thank you very much. How much do I have to pay in total for these two?",
+"p14": "Thank you for the advice, I will take it after having eaten.",
+"p15": "Thank you. While waiting, do you also have something strong for a headache?",
+"p16": "I understand. The drops first and the tablets after.",
+"p17": "Thank you very much for the availability. Goodbye!",
+"p18": "Thank you very much. Goodbye and have a good day.",
+"p19": "I will do that. Have a good day and good work!",
+"p20": "I know, I will stay in the shade during the central hours.",
+"p21": "No, thank you, I'll put them in my backpack. How much is the bill?",
+"p22": "No, thank you. I put everything in the backpack.",
+"p23": "No, it's not very deep, the band-aids are enough. I pay in cash.",
+"p24": "I didn't disinfect it. I would like to buy a disinfectant too, please.",
+"p25": "Excellent advice. Can I also drink some hot tea with honey?",
+"p26": "Perfect, then tonight I will prepare a hot tea.",
+"p27": "Perfect, that was exactly what I needed to know.",
+"p28": "Perfect, I'll take those too. Do I need to have a prescription?",
+"p29": "I prefer the tablets to take with a little water, thank you.",
+"p30": "Hello. I have had a bad cough for two days. What do you recommend?",
+"p31": "Yes, thank you. Do you also have an aftersun or some aloe vera?",
+"p32": "Yes, I will put it back on after every swim in the sea.",
+"p33": "Yes, I pay with a debit card. Here you go, thank you very much and goodbye.",
+"p34": "Yes, please, here is my health card for the receipt.",
+"p35": "Yes, perfect. How much is everything in total?",
+"p36": "Yes, a small bag would be convenient, thank you.",
+"p37": "Alright, I will check the cut every day. Thank you.",
+"p38": "Okay. Do you also have some lozenges for an irritated throat?",
+"p39": "I would like a very high protection, at least fifty.",
+"p40": "It is a very dry cough, especially during the night."
+}
+
+import json
+import os
+base_path = 'src/data/exports/shopping/pharmacy_purchase/'
+
+for fn, d, is_phrase in [('shopping_pharmacy_purchase_vocabulary.json', words, False), 
+                         ('shopping_pharmacy_purchase_phrases.json', phrases, True)]:
+    with open(os.path.join(base_path, fn), 'r') as f:
+        data = json.load(f)
+    for item in data:
+        key = item['id'] if is_phrase else item['italian']
+        if key in d:
+            item['english'] = d[key]
+    with open(os.path.join(base_path, fn), 'w') as f:
+        json.dump(data, f, indent=2)
+
+print("Applied new translations.")

@@ -1,0 +1,1073 @@
+{
+  "scenarioId": 108,
+  "conversations": [
+    {
+      "id": "paying_in_cash",
+      "title": "Paying in Cash",
+      "description": "Pay for a small item using cash and receive your change.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Sono cinque euro, per favore. Paga in contanti o con la carta?",
+          "english": "Good morning. It's five euros, please. Are you paying in cash or by card?",
+          "choices": [
+            {
+              "text": "Buongiorno. Pago in contanti. Ecco a lei dieci euro.",
+              "english": "Good morning. I am paying in cash. Here are ten euros for you.",
+              "isCorrect": true,
+              "feedback": "Perfect. You specified the payment method and handed the money."
+            },
+            {
+              "text": "Buongiorno. Il bancomat non funziona bene oggi.",
+              "english": "Good morning. The ATM is not working well today.",
+              "isCorrect": false,
+              "feedback": "This is true, but you need to answer how you are paying."
+            },
+            {
+              "text": "Buongiorno. Prendo un caffè e un cornetto, grazie.",
+              "english": "Good morning. I'll take a coffee and a croissant, thanks.",
+              "isCorrect": false,
+              "feedback": "You already ordered, now you have to pay."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Grazie. Ha una moneta da un euro o da due euro?",
+          "english": "Thank you. Do you have a one euro or two euro coin?",
+          "choices": [
+            {
+              "text": "No, mi dispiace, non ho monete. Ho solo questa banconota.",
+              "english": "No, I'm sorry, I don't have coins. I only have this banknote.",
+              "isCorrect": true,
+              "feedback": "Great. You clearly explained that you only have a banknote."
+            },
+            {
+              "text": "Sì, ho una carta di credito nuova per pagare.",
+              "english": "Yes, I have a new credit card to pay with.",
+              "isCorrect": false,
+              "feedback": "The host is asking for coins, not a credit card."
+            },
+            {
+              "text": "No, mi dispiace, il ristorante è chiuso ora.",
+              "english": "No, I'm sorry, the restaurant is closed now.",
+              "isCorrect": false,
+              "feedback": "This makes no sense in this context."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene, nessun problema. Ecco il suo resto, cinque euro, e lo scontrino.",
+          "english": "Alright, no problem. Here is your change, five euros, and the receipt.",
+          "choices": [
+            {
+              "text": "Perfetto, grazie mille. Arrivederci e buona giornata!",
+              "english": "Perfect, thank you very much. Goodbye and have a good day!",
+              "isCorrect": true,
+              "feedback": "Polite and correct way to end the transaction."
+            },
+            {
+              "text": "Dov'è il bagno, per favore? È molto urgente adesso.",
+              "english": "Where is the bathroom, please? It's very urgent now.",
+              "isCorrect": false,
+              "feedback": "You can ask this later, but first acknowledge the change."
+            },
+            {
+              "text": "Il conto è sbagliato, mancano venti centesimi qui.",
+              "english": "The bill is wrong, twenty cents are missing here.",
+              "isCorrect": false,
+              "feedback": "The change is exactly five euros, so it's correct."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie a lei. Ha bisogno di un sacchetto per portare via?",
+          "english": "Thank you. Do you need a bag to take away?",
+          "choices": [
+            {
+              "text": "No, grazie. Posso metterlo nella mia borsa. Arrivederci.",
+              "english": "No, thanks. I can put it in my bag. Goodbye.",
+              "isCorrect": true,
+              "feedback": "Good job! You declined politely."
+            },
+            {
+              "text": "Sì, voglio pagare con il bancomat adesso, grazie.",
+              "english": "Yes, I want to pay by debit card now, thanks.",
+              "isCorrect": false,
+              "feedback": "You already paid in cash!"
+            },
+            {
+              "text": "No, grazie. Sono arrivato molto in ritardo oggi.",
+              "english": "No, thanks. I arrived very late today.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the cashier's question."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo, arrivederci e a presto!",
+          "english": "Alright, goodbye and see you soon!",
+          "choices": [
+            {
+              "text": "A presto, grazie ancora per il suo aiuto oggi.",
+              "english": "See you soon, thanks again for your help today.",
+              "isCorrect": true,
+              "feedback": "A very friendly way to say goodbye."
+            },
+            {
+              "text": "Devo andare di corsa in aeroporto adesso, scusa.",
+              "english": "I have to rush to the airport now, sorry.",
+              "isCorrect": false,
+              "feedback": "No need to mention the airport."
+            },
+            {
+              "text": "La porta è bloccata e non riesco a uscire subito.",
+              "english": "The door is locked and I can't get out right away.",
+              "isCorrect": false,
+              "feedback": "You are just leaving the counter, not a locked room."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Scusi, aspetti un momento! Ha dimenticato il suo ombrello qui sul bancone.",
+          "english": "Excuse me, wait a moment! You forgot your umbrella here on the counter.",
+          "choices": [
+            {
+              "text": "Oh, grazie mille! Sarei dovuto tornare indietro a prenderlo.",
+              "english": "Oh, thank you very much! I would have had to come back to get it.",
+              "isCorrect": true,
+              "feedback": "Great! You thanked the cashier for noticing."
+            },
+            {
+              "text": "Non è il mio ombrello, io odio la pioggia.",
+              "english": "It's not my umbrella, I hate the rain.",
+              "isCorrect": false,
+              "feedback": "It's better to accept the umbrella gracefully in this context."
+            },
+            {
+              "text": "Il conto non è giusto, mancano cinque euro da qui.",
+              "english": "The bill is not right, five euros are missing from here.",
+              "isCorrect": false,
+              "feedback": "You already finished paying."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Di nulla. Fuori piove molto forte in questo momento?",
+          "english": "You're welcome. Is it raining very hard outside right now?",
+          "choices": [
+            {
+              "text": "Sì, purtroppo piove a dirotto da questa mattina presto.",
+              "english": "Yes, unfortunately it's been pouring since early this morning.",
+              "isCorrect": true,
+              "feedback": "Perfect answer."
+            },
+            {
+              "text": "Voglio pagare in contanti, grazie mille.",
+              "english": "I want to pay in cash, thank you very much.",
+              "isCorrect": false,
+              "feedback": "You already paid."
+            },
+            {
+              "text": "Il mio ombrello è di colore blu scuro e molto grande.",
+              "english": "My umbrella is dark blue and very big.",
+              "isCorrect": false,
+              "feedback": "The host asked about the weather."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Se vuole, può aspettare qui dentro finché non smette.",
+          "english": "If you want, you can wait inside here until it stops.",
+          "choices": [
+            {
+              "text": "Grazie, è molto gentile, ma devo andare al lavoro subito.",
+              "english": "Thanks, you are very kind, but I have to go to work immediately.",
+              "isCorrect": true,
+              "feedback": "Polite decline."
+            },
+            {
+              "text": "No, il bancomat non funziona bene oggi.",
+              "english": "No, the ATM is not working well today.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Il ristorante è chiuso per le vacanze estive adesso.",
+              "english": "The restaurant is closed for summer holidays now.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Capisco perfettamente. Faccia attenzione per la strada, allora.",
+          "english": "I understand perfectly. Be careful on the road, then.",
+          "choices": [
+            {
+              "text": "Lo farò sicuramente. Grazie ancora per tutto e buona giornata.",
+              "english": "I certainly will. Thanks again for everything and have a good day.",
+              "isCorrect": true,
+              "feedback": "Very polite farewell."
+            },
+            {
+              "text": "Devo andare a comprare una macchina nuova domani mattina.",
+              "english": "I have to go buy a new car tomorrow morning.",
+              "isCorrect": false,
+              "feedback": "Overly specific and irrelevant."
+            },
+            {
+              "text": "Il treno parte tra cinque minuti, sono in ritardo.",
+              "english": "The train leaves in five minutes, I am late.",
+              "isCorrect": false,
+              "feedback": "A bit abrupt."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buona giornata a lei. Arrivederci!",
+          "english": "Have a good day too. Goodbye!",
+          "choices": [
+            {
+              "text": "Arrivederci e a presto!",
+              "english": "Goodbye and see you soon!",
+              "isCorrect": true,
+              "feedback": "Great job finishing the conversation."
+            },
+            {
+              "text": "Il caffè era molto freddo oggi.",
+              "english": "The coffee was very cold today.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Non voglio pagare il conto adesso.",
+              "english": "I don't want to pay the bill now.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_for_change",
+      "title": "Asking for Change",
+      "description": "Ask a cashier to break a large banknote for a vending machine.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Come posso aiutarla?",
+          "english": "Hello! How can I help you?",
+          "choices": [
+            {
+              "text": "Salve, mi scusi. Può cambiare questa banconota da venti euro? Mi servono monete.",
+              "english": "Hello, excuse me. Can you change this twenty euro note? I need coins.",
+              "isCorrect": true,
+              "feedback": "Perfect. You clearly stated what you need."
+            },
+            {
+              "text": "Salve, voglio comprare subito una bottiglia d'acqua fredda.",
+              "english": "Hello, I want to buy a cold bottle of water right away.",
+              "isCorrect": false,
+              "feedback": "You are asking for change, not buying water directly."
+            },
+            {
+              "text": "Salve, mi scusi. Dove si trova la stazione dei treni qui?",
+              "english": "Hello, excuse me. Where is the train station here?",
+              "isCorrect": false,
+              "feedback": "You are at a shop asking for change, not directions."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Le servono monete per la macchinetta del caffè?",
+          "english": "Sure. Do you need coins for the coffee machine?",
+          "choices": [
+            {
+              "text": "Sì, esatto. La macchinetta accetta solo monete da uno o due euro.",
+              "english": "Yes, exactly. The machine only accepts one or two euro coins.",
+              "isCorrect": true,
+              "feedback": "Good. Confirming the reason makes the exchange easier."
+            },
+            {
+              "text": "Sì, esatto. Voglio pagare tutto con la carta di credito.",
+              "english": "Yes, exactly. I want to pay everything with the credit card.",
+              "isCorrect": false,
+              "feedback": "You can't use a card if you need coins."
+            },
+            {
+              "text": "Sì, esatto. La macchinetta è guasta e non funziona bene.",
+              "english": "Yes, exactly. The machine is broken and doesn't work well.",
+              "isCorrect": false,
+              "feedback": "If it's broken, you wouldn't need coins for it."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco. Va bene se le do due banconote da cinque e dieci monete da un euro?",
+          "english": "I understand. Is it okay if I give you two five-euro notes and ten one-euro coins?",
+          "choices": [
+            {
+              "text": "Va benissimo, grazie. È proprio quello che mi serve.",
+              "english": "That's fine, thanks. It's exactly what I need.",
+              "isCorrect": true,
+              "feedback": "Excellent response. It perfectly solves your problem."
+            },
+            {
+              "text": "No, mi dispiace, non ho spiccioli con me oggi pomeriggio.",
+              "english": "No, I'm sorry, I don't have change with me this afternoon.",
+              "isCorrect": false,
+              "feedback": "You are receiving change, not giving it."
+            },
+            {
+              "text": "Va benissimo, grazie. Devo andare in ospedale adesso.",
+              "english": "That's fine, thanks. I have to go to the hospital now.",
+              "isCorrect": false,
+              "feedback": "Unnecessary information for this situation."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ecco a lei. Cinque, dieci... e dieci monete da un euro. Controlli pure.",
+          "english": "Here you go. Five, ten... and ten one-euro coins. Go ahead and check.",
+          "choices": [
+            {
+              "text": "È tutto giusto, la ringrazio molto per la cortesia.",
+              "english": "Everything is correct, thank you very much for your courtesy.",
+              "isCorrect": true,
+              "feedback": "Polite confirmation that the money is correct."
+            },
+            {
+              "text": "Il codice pin è sbagliato, devo riprovare ancora una volta.",
+              "english": "The PIN code is wrong, I have to try once again.",
+              "isCorrect": false,
+              "feedback": "You are not using a card right now."
+            },
+            {
+              "text": "Il conto non è giusto, mancano cinque euro da qui.",
+              "english": "The bill is not right, five euros are missing from here.",
+              "isCorrect": false,
+              "feedback": "The host counted correctly: 5+5+10 = 20."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Di nulla! Buona pausa caffè.",
+          "english": "You're welcome! Enjoy your coffee break.",
+          "choices": [
+            {
+              "text": "Grazie, buona giornata anche a lei e buon lavoro!",
+              "english": "Thanks, have a good day too and have a good work!",
+              "isCorrect": true,
+              "feedback": "A pleasant and polite closing."
+            },
+            {
+              "text": "Il caffè al bar è molto buono, costa due euro.",
+              "english": "The coffee at the bar is very good, it costs two euros.",
+              "isCorrect": false,
+              "feedback": "You are just saying goodbye, not reviewing the coffee."
+            },
+            {
+              "text": "Voglio anche pagare il conto del ristorante oggi.",
+              "english": "I also want to pay the restaurant bill today.",
+              "isCorrect": false,
+              "feedback": "You are not at a restaurant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Scusi, posso chiederle un favore mentre è qui?",
+          "english": "Excuse me, can I ask you a favor while you are here?",
+          "choices": [
+            {
+              "text": "Certo, mi dica pure. Come posso aiutarla?",
+              "english": "Sure, tell me. How can I help you?",
+              "isCorrect": true,
+              "feedback": "Friendly and helpful response."
+            },
+            {
+              "text": "No, non ho monete con me.",
+              "english": "No, I don't have coins with me.",
+              "isCorrect": false,
+              "feedback": "You just got coins from them."
+            },
+            {
+              "text": "Il bagno è chiuso, mi dispiace.",
+              "english": "The bathroom is closed, I'm sorry.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Per caso ha anche una moneta da due euro da cambiare in spiccioli?",
+          "english": "By any chance do you also have a two euro coin to change into small change?",
+          "choices": [
+            {
+              "text": "Sì, guardo nel portafoglio. Ecco qui una moneta da due euro.",
+              "english": "Yes, I look in my wallet. Here is a two euro coin.",
+              "isCorrect": true,
+              "feedback": "Good job accommodating their request."
+            },
+            {
+              "text": "Voglio pagare con la carta di credito, grazie.",
+              "english": "I want to pay with credit card, thanks.",
+              "isCorrect": false,
+              "feedback": "You are making change, not paying."
+            },
+            {
+              "text": "Il biglietto costa troppo per me.",
+              "english": "The ticket costs too much for me.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Perfetto! Le do dieci monete da venti centesimi, va bene?",
+          "english": "Perfect! I give you ten twenty-cent coins, is that okay?",
+          "choices": [
+            {
+              "text": "Sì, va benissimo. Le monete piccole sono sempre utili.",
+              "english": "Yes, that's fine. Small coins are always useful.",
+              "isCorrect": true,
+              "feedback": "Natural response."
+            },
+            {
+              "text": "No, voglio cento euro in contanti subito.",
+              "english": "No, I want one hundred euros in cash immediately.",
+              "isCorrect": false,
+              "feedback": "That's not equal to two euros."
+            },
+            {
+              "text": "Questa borsa costa cinquanta euro.",
+              "english": "This bag costs fifty euros.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo, ecco i suoi venti centesimi. La ringrazio molto per l'aiuto.",
+          "english": "Great, here are your twenty cents. Thank you very much for your help.",
+          "choices": [
+            {
+              "text": "Di nulla, figurati. È stato un piacere aiutarla.",
+              "english": "You're welcome, don't mention it. It was a pleasure helping you.",
+              "isCorrect": true,
+              "feedback": "Very polite."
+            },
+            {
+              "text": "Il pin è sbagliato, provo ancora.",
+              "english": "The pin is wrong, I try again.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Voglio uno scontrino per questo favore.",
+              "english": "I want a receipt for this favor.",
+              "isCorrect": false,
+              "feedback": "You don't get a receipt for changing money."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bene, ora può andare a prendere il suo caffè. Arrivederci!",
+          "english": "Well, now you can go get your coffee. Goodbye!",
+          "choices": [
+            {
+              "text": "Grazie ancora, a presto e buon lavoro!",
+              "english": "Thanks again, see you soon and good work!",
+              "isCorrect": true,
+              "feedback": "Perfect finish."
+            },
+            {
+              "text": "Il treno parte in ritardo oggi.",
+              "english": "The train leaves late today.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Non mi piace il caffè caldo.",
+              "english": "I don't like hot coffee.",
+              "isCorrect": false,
+              "feedback": "Not very polite."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "card_declined",
+      "title": "Card Declined",
+      "description": "Try to pay with a card, but it gets declined. Solve the problem.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Il totale è venticinque euro e cinquanta centesimi. Come desidera pagare?",
+          "english": "The total is twenty-five euros and fifty cents. How would you like to pay?",
+          "choices": [
+            {
+              "text": "Pago con la carta, per favore. Posso usare il contactless?",
+              "english": "I'll pay by card, please. Can I use contactless?",
+              "isCorrect": true,
+              "feedback": "Good. You specified the payment method clearly."
+            },
+            {
+              "text": "Pago in contanti oggi. Non ho la carta di credito con me.",
+              "english": "I pay in cash today. I don't have the credit card with me.",
+              "isCorrect": false,
+              "feedback": "The scenario requires you to try paying with a card."
+            },
+            {
+              "text": "Voglio parlare con il direttore del negozio, per favore.",
+              "english": "I want to talk to the store manager, please.",
+              "isCorrect": false,
+              "feedback": "This is completely out of context."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente, avvicini pure la carta al pos. Attenda un momento...",
+          "english": "Certainly, just bring the card close to the POS. Wait a moment...",
+          "choices": [
+            {
+              "text": "Va bene, la avvicino subito. Spero che funzioni bene oggi.",
+              "english": "Alright, I bring it close right away. I hope it works well today.",
+              "isCorrect": true,
+              "feedback": "Natural response while waiting."
+            },
+            {
+              "text": "Il bancomat è guasto, devo andare in un'altra banca.",
+              "english": "The ATM is broken, I have to go to another bank.",
+              "isCorrect": false,
+              "feedback": "You don't know it's broken yet."
+            },
+            {
+              "text": "Questa banconota è finta, non la voglio usare per pagare.",
+              "english": "This banknote is fake, I don't want to use it to pay.",
+              "isCorrect": false,
+              "feedback": "You are paying by card, not cash."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Mi dispiace, ma la carta è stata rifiutata. Vuole riprovare inserendola?",
+          "english": "I'm sorry, but the card was declined. Do you want to try again by inserting it?",
+          "choices": [
+            {
+              "text": "Sì, grazie. A volte fa i capricci. Inserisco la carta e digito il pin.",
+              "english": "Yes, thanks. Sometimes it acts up. I insert the card and type the pin.",
+              "isCorrect": true,
+              "feedback": "Excellent problem-solving."
+            },
+            {
+              "text": "No, la macchina è sicuramente rotta. Non voglio pagare nulla.",
+              "english": "No, the machine is definitely broken. I don't want to pay anything.",
+              "isCorrect": false,
+              "feedback": "A bit aggressive and not constructive."
+            },
+            {
+              "text": "Sì, voglio pagare con le monete da due euro adesso, grazie.",
+              "english": "Yes, I want to pay with two euro coins now, thanks.",
+              "isCorrect": false,
+              "feedback": "You want to try the card again first."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Transazione negata di nuovo. Ha per caso un'altra carta o dei contanti?",
+          "english": "Transaction denied again. Do you happen to have another card or cash?",
+          "choices": [
+            {
+              "text": "Che strano! Per fortuna ho dei contanti. Ecco trenta euro qui.",
+              "english": "How strange! Luckily I have cash. Here is thirty euros.",
+              "isCorrect": true,
+              "feedback": "Good backup plan. Handing cash to solve the issue."
+            },
+            {
+              "text": "Non ho soldi con me. Posso pagare la settimana prossima?",
+              "english": "I don't have money with me. Can I pay next week?",
+              "isCorrect": false,
+              "feedback": "Usually not acceptable in a normal shop."
+            },
+            {
+              "text": "Il mio volo per Roma parte tra dieci minuti, mi scusi tanto.",
+              "english": "My flight to Rome leaves in ten minutes, I'm so sorry.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and doesn't solve the payment."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene. Trenta euro... ecco quattro euro e cinquanta di resto. Mi dispiace per l'inconveniente.",
+          "english": "Alright. Thirty euros... here is four euros and fifty cents change. I'm sorry for the inconvenience.",
+          "choices": [
+            {
+              "text": "Nessun problema, capita a tutti. Grazie per il resto, arrivederci!",
+              "english": "No problem, it happens to everyone. Thanks for the change, goodbye!",
+              "isCorrect": true,
+              "feedback": "Polite and understanding."
+            },
+            {
+              "text": "Il resto è sbagliato, dovete darmi dieci euro oggi pomeriggio.",
+              "english": "The change is wrong, you have to give me ten euros this afternoon.",
+              "isCorrect": false,
+              "feedback": "The change is 30 - 25.50 = 4.50, so it's correct."
+            },
+            {
+              "text": "Non voglio questo resto, voglio i miei soldi indietro adesso.",
+              "english": "I don't want this change, I want my money back right now.",
+              "isCorrect": false,
+              "feedback": "You need to pay for your items!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "A proposito, il sistema dei pagamenti elettronici ha problemi da ieri.",
+          "english": "By the way, the electronic payment system has been having problems since yesterday.",
+          "choices": [
+            {
+              "text": "Ah, ecco perché la carta non funzionava. Tutto chiaro adesso.",
+              "english": "Ah, that's why the card wasn't working. Everything is clear now.",
+              "isCorrect": true,
+              "feedback": "Good response to the explanation."
+            },
+            {
+              "text": "Voglio pagare con la mia carta di credito americana.",
+              "english": "I want to pay with my American credit card.",
+              "isCorrect": false,
+              "feedback": "You just paid in cash."
+            },
+            {
+              "text": "Il cibo del ristorante non era buono.",
+              "english": "The restaurant food wasn't good.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, stiamo aspettando il tecnico per riparare la linea internet.",
+          "english": "Yes, we are waiting for the technician to repair the internet line.",
+          "choices": [
+            {
+              "text": "Spero che riescano a risolvere il guasto velocemente.",
+              "english": "I hope they manage to fix the fault quickly.",
+              "isCorrect": true,
+              "feedback": "Friendly and empathetic."
+            },
+            {
+              "text": "Voglio un tecnico per il mio computer a casa.",
+              "english": "I want a technician for my computer at home.",
+              "isCorrect": false,
+              "feedback": "Not what they meant."
+            },
+            {
+              "text": "Il prezzo di questa borsa è troppo alto.",
+              "english": "The price of this bag is too high.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Lo spero anche io! Per fortuna lei aveva dei contanti in tasca.",
+          "english": "I hope so too! Luckily you had some cash in your pocket.",
+          "choices": [
+            {
+              "text": "Sì, porto sempre un po' di soldi con me per sicurezza.",
+              "english": "Yes, I always carry a little money with me for safety.",
+              "isCorrect": true,
+              "feedback": "A very natural statement."
+            },
+            {
+              "text": "Io non ho mai contanti, mi dispiace.",
+              "english": "I never have cash, I'm sorry.",
+              "isCorrect": false,
+              "feedback": "Contradicts what just happened."
+            },
+            {
+              "text": "La banca è molto lontana da qui.",
+              "english": "The bank is very far from here.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "È un'ottima abitudine. Grazie per la pazienza e la comprensione.",
+          "english": "It's a great habit. Thank you for your patience and understanding.",
+          "choices": [
+            {
+              "text": "Figurati, nessun problema. Buona continuazione e buon lavoro.",
+              "english": "Don't mention it, no problem. Have a good continuation and good work.",
+              "isCorrect": true,
+              "feedback": "Excellent closing remark."
+            },
+            {
+              "text": "Non voglio questo scontrino, voglio i soldi indietro.",
+              "english": "I don't want this receipt, I want the money back.",
+              "isCorrect": false,
+              "feedback": "Unreasonable."
+            },
+            {
+              "text": "Voglio comprare anche un giornale ora.",
+              "english": "I want to buy a newspaper now too.",
+              "isCorrect": false,
+              "feedback": "Conversation is ending."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie mille, arrivederci e buona giornata!",
+          "english": "Thank you very much, goodbye and have a good day!",
+          "choices": [
+            {
+              "text": "Grazie, arrivederci!",
+              "english": "Thanks, goodbye!",
+              "isCorrect": true,
+              "feedback": "Well done."
+            },
+            {
+              "text": "Il resto è sbagliato.",
+              "english": "The change is wrong.",
+              "isCorrect": false,
+              "feedback": "You already checked."
+            },
+            {
+              "text": "Mi dia la borsa.",
+              "english": "Give me the bag.",
+              "isCorrect": false,
+              "feedback": "You already have it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "understanding_prices",
+      "title": "Understanding Prices",
+      "description": "Ask about the price of items and point out a mistake on the receipt.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Cerca qualcosa in particolare o sta solo guardando?",
+          "english": "Hello! Are you looking for something in particular or just looking?",
+          "choices": [
+            {
+              "text": "Salve. Vorrei sapere quanto costa questa borsa, non vedo il prezzo.",
+              "english": "Hello. I would like to know how much this bag costs, I don't see the price.",
+              "isCorrect": true,
+              "feedback": "Good question to find out the cost."
+            },
+            {
+              "text": "Salve. Voglio comprare tutto il negozio, ho moltissimi soldi oggi.",
+              "english": "Hello. I want to buy the whole shop, I have a lot of money today.",
+              "isCorrect": false,
+              "feedback": "Unrealistic and unnatural."
+            },
+            {
+              "text": "Salve. Il museo è chiuso oggi per una festa nazionale importante.",
+              "english": "Hello. The museum is closed today for an important national holiday.",
+              "isCorrect": false,
+              "feedback": "You are in a shop, not near a museum."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Quella borsa costa quarantacinque euro. È in saldo al venti percento.",
+          "english": "That bag costs forty-five euros. It is on sale at twenty percent off.",
+          "choices": [
+            {
+              "text": "Quarantacinque euro con lo sconto? Perfetto, la prendo. Pago con carta.",
+              "english": "Forty-five euros with the discount? Perfect, I'll take it. I pay by card.",
+              "isCorrect": true,
+              "feedback": "Great. You confirmed the price and decided to buy it."
+            },
+            {
+              "text": "È troppo costosa per me, voglio pagarla solo quindici euro oggi.",
+              "english": "It is too expensive for me, I want to pay only fifteen euros for it today.",
+              "isCorrect": false,
+              "feedback": "Haggling is usually not accepted like this."
+            },
+            {
+              "text": "Non mi piace il colore, è troppo scuro per i miei gusti personali.",
+              "english": "I don't like the color, it's too dark for my personal tastes.",
+              "isCorrect": false,
+              "feedback": "But the scenario requires you to buy it and check the receipt."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottima scelta. Inserisca la carta qui. Vuole lo scontrino nel sacchetto?",
+          "english": "Excellent choice. Insert the card here. Do you want the receipt in the bag?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Preferisco controllare sempre lo scontrino prima di uscire.",
+              "english": "Yes, thanks. I always prefer to check the receipt before leaving.",
+              "isCorrect": true,
+              "feedback": "Good practice!"
+            },
+            {
+              "text": "No, non voglio lo scontrino. Voglio solo andare a casa a dormire.",
+              "english": "No, I don't want the receipt. I just want to go home to sleep.",
+              "isCorrect": false,
+              "feedback": "You need the receipt for the next step of the scenario."
+            },
+            {
+              "text": "Sì, grazie. Il conto del ristorante era molto alto prima di venire.",
+              "english": "Yes, thanks. The restaurant bill was very high before coming.",
+              "isCorrect": false,
+              "feedback": "Irrelevant context."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certo, faccia pure. Ecco la sua borsa e lo scontrino. Tutto a posto?",
+          "english": "Sure, go ahead. Here is your bag and the receipt. Is everything okay?",
+          "choices": [
+            {
+              "text": "Mi scusi, credo ci sia un errore. Ha digitato cinquanta euro invece di quarantacinque.",
+              "english": "Excuse me, I think there is a mistake. You typed fifty euros instead of forty-five.",
+              "isCorrect": true,
+              "feedback": "Good catch! You spotted the mistake politely."
+            },
+            {
+              "text": "Tutto a posto, grazie. Questa borsa è davvero bellissima da usare.",
+              "english": "Everything is fine, thanks. This bag is really beautiful to use.",
+              "isCorrect": false,
+              "feedback": "You missed the opportunity to correct the receipt."
+            },
+            {
+              "text": "Mi scusi, credo ci sia un gatto randagio sotto il tavolo laggiù.",
+              "english": "Excuse me, I think there is a stray cat under the table over there.",
+              "isCorrect": false,
+              "feedback": "Completely off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Oh, ha ragione! Mi scusi tanto. Le rido i cinque euro di differenza in contanti, va bene?",
+          "english": "Oh, you are right! I am so sorry. I'll give you the five euros difference in cash, is that okay?",
+          "choices": [
+            {
+              "text": "Sì, va benissimo. Grazie per aver risolto il problema così in fretta.",
+              "english": "Yes, that's fine. Thanks for solving the problem so quickly.",
+              "isCorrect": true,
+              "feedback": "Excellent, polite conclusion."
+            },
+            {
+              "text": "No, voglio chiamare subito la polizia per questa truffa gigantesca.",
+              "english": "No, I want to call the police immediately for this huge scam.",
+              "isCorrect": false,
+              "feedback": "A huge overreaction to a small mistake."
+            },
+            {
+              "text": "Sì, va benissimo. Vado a prendere un buon caffè al bar adesso.",
+              "english": "Yes, that's fine. I'm going to get a good coffee at the bar now.",
+              "isCorrect": false,
+              "feedback": "Irrelevant detail to add here."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ha notato anche la nostra nuova collezione di portafogli in pelle?",
+          "english": "Did you also notice our new collection of leather wallets?",
+          "choices": [
+            {
+              "text": "Sì, li ho visti. Sono molto belli, ma non mi servono oggi.",
+              "english": "Yes, I saw them. They are very beautiful, but I don't need them today.",
+              "isCorrect": true,
+              "feedback": "Polite but firm decline."
+            },
+            {
+              "text": "Sì, voglio pagare il portafoglio in contanti.",
+              "english": "Yes, I want to pay for the wallet in cash.",
+              "isCorrect": false,
+              "feedback": "You didn't decide to buy it."
+            },
+            {
+              "text": "La borsa è rotta, voglio restituirla.",
+              "english": "The bag is broken, I want to return it.",
+              "isCorrect": false,
+              "feedback": "You just bought it."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Nessun problema. Le lascio un nostro biglietto da visita per la prossima volta.",
+          "english": "No problem. I leave you our business card for next time.",
+          "choices": [
+            {
+              "text": "Grazie, lo prendo volentieri. Magari torno il mese prossimo.",
+              "english": "Thanks, I take it gladly. Maybe I'll come back next month.",
+              "isCorrect": true,
+              "feedback": "Good job accepting it politely."
+            },
+            {
+              "text": "Questo biglietto del treno è scaduto.",
+              "english": "This train ticket is expired.",
+              "isCorrect": false,
+              "feedback": "It's a business card, not a train ticket."
+            },
+            {
+              "text": "Non voglio comprare la pelle oggi.",
+              "english": "I don't want to buy leather today.",
+              "isCorrect": false,
+              "feedback": "You already declined."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Saremo felici di rivederla. A proposito, abbiamo anche un sito online.",
+          "english": "We will be happy to see you again. By the way, we also have an online website.",
+          "choices": [
+            {
+              "text": "Ottimo, controllerò il sito se mi serve qualcos'altro in futuro.",
+              "english": "Great, I'll check the website if I need anything else in the future.",
+              "isCorrect": true,
+              "feedback": "Perfect response."
+            },
+            {
+              "text": "Il mio internet non funziona da due giorni.",
+              "english": "My internet hasn't been working for two days.",
+              "isCorrect": false,
+              "feedback": "A bit overly sharing."
+            },
+            {
+              "text": "Voglio pagare con il bancomat per questo sito.",
+              "english": "I want to pay with a debit card for this site.",
+              "isCorrect": false,
+              "feedback": "You aren't buying anything online right now."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Spero che la borsa le piaccia, è di ottima qualità.",
+          "english": "Perfect. I hope you like the bag, it is of excellent quality.",
+          "choices": [
+            {
+              "text": "Ne sono sicuro. Mi piace molto il materiale morbido e il colore.",
+              "english": "I am sure of it. I really like the soft material and the color.",
+              "isCorrect": true,
+              "feedback": "A great compliment."
+            },
+            {
+              "text": "Il colore è bruttissimo, ho cambiato idea.",
+              "english": "The color is very ugly, I changed my mind.",
+              "isCorrect": false,
+              "feedback": "You just said it was an excellent choice."
+            },
+            {
+              "text": "Non mi interessa la qualità, voglio solo il resto.",
+              "english": "I don't care about the quality, I just want the change.",
+              "isCorrect": false,
+              "feedback": "Too aggressive."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sono contento. Allora arrivederci e grazie per l'acquisto!",
+          "english": "I'm glad. Goodbye then and thank you for your purchase!",
+          "choices": [
+            {
+              "text": "Grazie a lei. Arrivederci e buona serata!",
+              "english": "Thank you. Goodbye and have a good evening!",
+              "isCorrect": true,
+              "feedback": "Great finish to the interaction."
+            },
+            {
+              "text": "La polizia è già qui fuori.",
+              "english": "The police is already outside here.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Voglio comprare tutto il negozio.",
+              "english": "I want to buy the whole shop.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

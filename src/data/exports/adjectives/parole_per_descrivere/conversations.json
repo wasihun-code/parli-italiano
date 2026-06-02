@@ -1,0 +1,873 @@
+{
+  "scenarioId": 116,
+  "conversations": [
+    {
+      "id": "new_friend",
+      "title": "Describing a New Friend",
+      "description": "Tell your host about the new friend you met today.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Com'è il tuo nuovo amico?",
+          "english": "Hi! How is your new friend?",
+          "choices": [
+            {
+              "text": "Lui è molto alto e molto simpatico.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Lui è molto basso e molto cattivo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Lui è molto grasso e molto bravo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È un uomo giovane o un uomo vecchio?",
+          "english": "Is he a young man or an old man?",
+          "choices": [
+            {
+              "text": "È un uomo giovane, ha venti anni.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "È un uomo vecchio, ha ottanta anni.",
+              "isCorrect": false
+            },
+            {
+              "text": "È un uomo forte, ha trenta anni.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "È un ragazzo bello o un po' brutto?",
+          "english": "Is he a handsome boy or a bit ugly?",
+          "choices": [
+            {
+              "text": "Lui è molto bello e molto bravo.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Lui è molto brutto e molto sporco.",
+              "isCorrect": false
+            },
+            {
+              "text": "Lui è molto alto e molto forte.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Dove abita questo tuo nuovo amico?",
+          "english": "Where does this new friend of yours live?",
+          "choices": [
+            {
+              "text": "Abita in una casa grande e nuova.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Abita in una casa piccola e vecchia.",
+              "isCorrect": false
+            },
+            {
+              "text": "Abita in una casa bella e moderna.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "La sua casa è bella o è brutta?",
+          "english": "Is his house beautiful or is it ugly?",
+          "choices": [
+            {
+              "text": "La casa è molto bella e moderna.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "La casa è molto brutta e antica.",
+              "isCorrect": false
+            },
+            {
+              "text": "La casa è molto grande e pulita.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sei contento di questo nuovo amico?",
+          "english": "Are you happy with this new friend?",
+          "choices": [
+            {
+              "text": "Sì, lui è una persona molto buona.",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "No, lui è una persona molto cattiva.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, lui è una persona molto brava.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Lui è sempre vivace o a volte è tranquillo?",
+          "english": "Is he always lively or sometimes quiet?",
+          "choices": [
+            {
+              "text": "Lui è sempre vivace e molto forte.",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Lui è sempre tranquillo e molto debole.",
+              "isCorrect": false
+            },
+            {
+              "text": "Lui è sempre pulito e molto ordinato.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Preferisce vivere qui o in un'altra città?",
+          "english": "Does he prefer living here or in another city?",
+          "choices": [
+            {
+              "text": "Lui preferisce vivere qui, in questa città.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Lui preferisce vivere lì, in quella città.",
+              "isCorrect": false
+            },
+            {
+              "text": "Lui preferisce vivere fuori dalla città.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "È un tipo pulito o un po' sporco?",
+          "english": "Is he a clean guy or a bit dirty?",
+          "choices": [
+            {
+              "text": "Lui è molto pulito e ordinato.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Lui è molto sporco e cattivo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Lui è molto piccolo e vivace.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bene, sono contento per te!",
+          "english": "Good, I'm happy for you!",
+          "choices": [
+            {
+              "text": "Grazie, lui è un amico bravo.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie, lui è un uomo cattivo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie, lui è un tipo simpatico.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparing_cities",
+      "title": "Comparing Two Cities",
+      "description": "Discuss the differences between two cities.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ti piace vivere qui in questa città?",
+          "english": "Do you like living here in this city?",
+          "choices": [
+            {
+              "text": "Sì, questa città è molto bella.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "No, questa città è molto brutta.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, questa città è molto antica.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È una città grande o una città piccola?",
+          "english": "Is it a big city or a small city?",
+          "choices": [
+            {
+              "text": "È una città piccola ma vivace.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "È una città grande ma tranquilla.",
+              "isCorrect": false
+            },
+            {
+              "text": "È una città nuova ma sporca.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Com'è il centro? È vecchio o nuovo?",
+          "english": "How is the center? Is it old or new?",
+          "choices": [
+            {
+              "text": "Il centro è vecchio ma pulito.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Il centro è nuovo ma sporco.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il centro è grande ma brutto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Preferisci una città calda o fredda?",
+          "english": "Do you prefer a hot or cold city?",
+          "choices": [
+            {
+              "text": "Io preferisco sempre una città calda.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Io preferisco sempre una città fredda.",
+              "isCorrect": false
+            },
+            {
+              "text": "Io preferisco sempre una città umida.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Com'è il cibo in questa città?",
+          "english": "How is the food in this city?",
+          "choices": [
+            {
+              "text": "Il cibo qui è molto buono e fresco.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Il cibo qui è molto cattivo e vecchio.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il cibo qui è molto caro e sporco.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "E l'altra città? Com'è secondo te?",
+          "english": "And the other city? What's it like in your opinion?",
+          "choices": [
+            {
+              "text": "Quella città è brutta e sporca.",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Quella città è bella e pulita.",
+              "isCorrect": false
+            },
+            {
+              "text": "Quella città è grande e nuova.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Il clima è secco o molto umido?",
+          "english": "Is the climate dry or very humid?",
+          "choices": [
+            {
+              "text": "Il clima è caldo e molto secco.",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Il clima è freddo e molto umido.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il clima è mite e molto buono.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Le persone sono simpatiche o cattive?",
+          "english": "Are the people nice or mean?",
+          "choices": [
+            {
+              "text": "Le persone sono molto simpatiche qui.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Le persone sono molto cattive qui.",
+              "isCorrect": false
+            },
+            {
+              "text": "Le persone sono molto tranquille qui.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "La città è moderna o molto antica?",
+          "english": "Is the city modern or very ancient?",
+          "choices": [
+            {
+              "text": "Questa città è antica ma moderna.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Questa città è nuova ma brutta.",
+              "isCorrect": false
+            },
+            {
+              "text": "Questa città è piccola ma cara.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "È un bel posto per vivere!",
+          "english": "It's a beautiful place to live!",
+          "choices": [
+            {
+              "text": "Sì, sono molto contento qui.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "No, sono molto triste qui.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, sono molto stanco qui.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "choosing_hotel",
+      "title": "Choosing a Hotel Room",
+      "description": "Select the right room for your stay.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Vuole una camera grande?",
+          "english": "Good morning! Do you want a big room?",
+          "choices": [
+            {
+              "text": "Sì, vorrei una camera molto grande.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "No, vorrei una camera molto piccola.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vorrei una camera molto nuova.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Preferisce un letto alto o basso?",
+          "english": "Do you prefer a high or low bed?",
+          "choices": [
+            {
+              "text": "Preferisco un letto basso e comodo.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Preferisco un letto alto e scomodo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Preferisco un letto nuovo e grande.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Vuole una camera vecchia o nuova?",
+          "english": "Do you want an old or new room?",
+          "choices": [
+            {
+              "text": "Vorrei una camera nuova e moderna.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Vorrei una camera vecchia e brutta.",
+              "isCorrect": false
+            },
+            {
+              "text": "Vorrei una camera calda e pulita.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "La camera è fredda? Vuole il caldo?",
+          "english": "Is the room cold? Do you want heat?",
+          "choices": [
+            {
+              "text": "No, preferisco una camera calda.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Sì, preferisco una camera fredda.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco una camera nuova.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Com'è la vista dalla finestra?",
+          "english": "How is the view from the window?",
+          "choices": [
+            {
+              "text": "La vista è bella ma il bagno è piccolo.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "La vista è brutta ma il bagno è grande.",
+              "isCorrect": false
+            },
+            {
+              "text": "La vista è nuova ma il bagno è vecchio.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Va bene questa camera per lei?",
+          "english": "Is this room okay for you?",
+          "choices": [
+            {
+              "text": "Sì, questa camera è molto buona.",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "No, questa camera è molto cattiva.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, questa camera è molto piccola.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Vuole anche una colazione abbondante?",
+          "english": "Do you also want a hearty breakfast?",
+          "choices": [
+            {
+              "text": "Sì, vorrei un cibo buono e fresco.",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "No, vorrei un cibo cattivo e vecchio.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vorrei un cibo caro e scarso.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "La camera è silenziosa o troppo rumorosa?",
+          "english": "Is the room quiet or too noisy?",
+          "choices": [
+            {
+              "text": "Questa camera è molto silenziosa.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Questa camera è molto rumorosa.",
+              "isCorrect": false
+            },
+            {
+              "text": "Questa camera è molto fredda.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Il bagno è pulito o un po' sporco?",
+          "english": "Is the bathroom clean or a bit dirty?",
+          "choices": [
+            {
+              "text": "Il bagno è pulito e molto nuovo.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Il bagno è sporco e molto vecchio.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il bagno è piccolo e molto brutto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto, ecco le chiavi della camera.",
+          "english": "Perfect, here are the room keys.",
+          "choices": [
+            {
+              "text": "Grazie mille, la camera è bella.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie mille, la camera è brutta.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille, la camera è calda.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "describing_weather",
+      "title": "Describing the Weather",
+      "description": "Talk about the current weather conditions.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Com'è il tempo fuori oggi? Fa caldo?",
+          "english": "How is the weather outside today? Is it hot?",
+          "choices": [
+            {
+              "text": "Sì, oggi fuori fa molto caldo.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "No, oggi fuori fa molto freddo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, oggi fuori fa molto umido.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "C'è un vento freddo o un vento caldo?",
+          "english": "Is there a cold wind or a hot wind?",
+          "choices": [
+            {
+              "text": "C'è un vento caldo e molto forte.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "C'è un vento freddo e molto debole.",
+              "isCorrect": false
+            },
+            {
+              "text": "C'è un vento secco e molto buono.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ti piace quando il tempo è brutto?",
+          "english": "Do you like it when the weather is bad?",
+          "choices": [
+            {
+              "text": "No, preferisco quando il tempo è bello.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Sì, preferisco quando il tempo è brutto.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, preferisco quando il tempo è freddo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Preferisci il clima caldo o freddo?",
+          "english": "Do you prefer a hot or cold climate?",
+          "choices": [
+            {
+              "text": "Mi piace il freddo ma non troppo.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Mi piace il caldo ma non troppo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Mi piace il vento ma non troppo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Com'è l'aria oggi? È buona o cattiva?",
+          "english": "How is the air today? Is it good or bad?",
+          "choices": [
+            {
+              "text": "L'aria oggi è buona e molto pulita.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "L'aria oggi è cattiva e molto sporca.",
+              "isCorrect": false
+            },
+            {
+              "text": "L'aria oggi è secca e molto calda.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Domani sarà un giorno bello o brutto?",
+          "english": "Will tomorrow be a beautiful or bad day?",
+          "choices": [
+            {
+              "text": "Penso che domani sarà un giorno brutto.",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Penso che domani sarà un giorno bello.",
+              "isCorrect": false
+            },
+            {
+              "text": "Penso che domani sarà un giorno caldo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Preferisci l'estate calda o l'inverno?",
+          "english": "Do you prefer a hot summer or winter?",
+          "choices": [
+            {
+              "text": "Preferisco l'estate quando è calda.",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Preferisco l'inverno quando è freddo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Preferisco l'autunno quando è mite.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Il cielo è azzurro o molto grigio?",
+          "english": "Is the sky blue or very gray?",
+          "choices": [
+            {
+              "text": "Oggi il cielo è molto azzurro.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Oggi il cielo è molto grigio.",
+              "isCorrect": false
+            },
+            {
+              "text": "Oggi il cielo è molto scuro.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Il sole è forte o un po' debole?",
+          "english": "Is the sun strong or a bit weak?",
+          "choices": [
+            {
+              "text": "Il sole è molto forte oggi.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Il sole è molto debole oggi.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il sole è molto caldo oggi.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Speriamo che il tempo resti bello!",
+          "english": "Let's hope the weather stays beautiful!",
+          "choices": [
+            {
+              "text": "Sì, speriamo. Il tempo è buono.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "No, speriamo. Il tempo è brutto.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, speriamo. Il tempo è caldo.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

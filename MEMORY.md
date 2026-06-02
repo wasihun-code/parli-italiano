@@ -112,6 +112,11 @@ This architecture is mandatory.
 6. Cinema Tickets (culture/cinema_tickets)
 7. Culture Festival (culture/festival)
 8. Emergency Room (health/emergency_room)
+9. Police Report (miscellaneous/police_report)
+10. Talking About Money (miscellaneous/talking_about_money)
+11. Explaining a Mistake (miscellaneous/explaining_a_mistake)
+12. Shoe Store (shopping/shoe_store)
+13. Outdoor Market (shopping/outdoor_market)
 
 Status:
 
@@ -121,7 +126,7 @@ Gold Standard V1 & Certified
 
 ## Remaining Scenarios
 
-109
+103
 
 Status:
 

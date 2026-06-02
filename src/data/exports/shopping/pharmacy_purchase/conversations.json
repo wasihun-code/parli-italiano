@@ -1,0 +1,953 @@
+{
+  "scenarioId": 45,
+  "conversations": [
+    {
+      "id": "buying_sunscreen",
+      "title": "Buying Sunscreen",
+      "description": "Purchase sunscreen and aloe vera at the pharmacy.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Prego, mi dica, di cosa ha bisogno?",
+          "english": "Good morning! Please, tell me, what do you need?",
+          "choices": [
+            {
+              "text": "Buongiorno. Sto cercando una buona crema solare per il viso.",
+              "isCorrect": true,
+              "feedback": "Perfect! Polite and direct."
+            },
+            {
+              "text": "Buongiorno. Sto cercando un tavolo per due persone.",
+              "isCorrect": false,
+              "feedback": "You are at the pharmacy, not a restaurant!"
+            },
+            {
+              "text": "Buongiorno. Sto cercando un biglietto per il treno.",
+              "isCorrect": false,
+              "feedback": "Pharmacies don't sell train tickets."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Che fattore di protezione cerca? Alta o media?",
+          "english": "Sure. What protection factor are you looking for? High or medium?",
+          "choices": [
+            {
+              "text": "Vorrei una protezione molto alta, almeno cinquanta.",
+              "isCorrect": true,
+              "feedback": "Excellent! SPF 50 is 'protezione cinquanta'."
+            },
+            {
+              "text": "Vorrei una bottiglia d'acqua frizzante molto fredda.",
+              "isCorrect": false,
+              "feedback": "You need sunscreen, not water."
+            },
+            {
+              "text": "Vorrei un tavolo vicino alla finestra, per favore.",
+              "isCorrect": false,
+              "feedback": "Still not a restaurant!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ecco questa è ottima, specifica per pelli sensibili. Serve altro?",
+          "english": "Here, this one is excellent, specifically for sensitive skin. Do you need anything else?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Avete anche un doposole o dell'aloe vera?",
+              "isCorrect": true,
+              "feedback": "Great follow-up question for after-sun care."
+            },
+            {
+              "text": "Sì, grazie. Avete anche una bella sciarpa di lana?",
+              "isCorrect": false,
+              "feedback": "Pharmacies don't usually sell wool scarves."
+            },
+            {
+              "text": "Sì, grazie. Avete anche il sale e il pepe nero?",
+              "isCorrect": false,
+              "feedback": "You are not cooking right now."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, abbiamo un gel all'aloe molto fresco. Lo aggiungo?",
+          "english": "Yes, we have a very fresh aloe gel. Shall I add it?",
+          "choices": [
+            {
+              "text": "Sì, perfetto. Quanto viene il tutto in totale?",
+              "isCorrect": true,
+              "feedback": "Good! Asking for the total price."
+            },
+            {
+              "text": "Sì, perfetto. Quando parte il prossimo autobus?",
+              "isCorrect": false,
+              "feedback": "This is a pharmacy, not a bus stop."
+            },
+            {
+              "text": "Sì, perfetto. Dove sono i camerini per provare?",
+              "isCorrect": false,
+              "feedback": "You don't need fitting rooms for aloe gel."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sono ventotto euro e cinquanta centesimi, per favore.",
+          "english": "That's twenty-eight euros and fifty cents, please.",
+          "choices": [
+            {
+              "text": "Ecco a lei. Posso pagare con la carta di credito?",
+              "isCorrect": true,
+              "feedback": "Perfect response to complete the payment."
+            },
+            {
+              "text": "Ecco a lei. Posso pagare con i biglietti del cinema?",
+              "isCorrect": false,
+              "feedback": "Cinema tickets are not accepted as payment."
+            },
+            {
+              "text": "Ecco a lei. Posso ordinare anche un caffè macchiato?",
+              "isCorrect": false,
+              "feedback": "You cannot order coffee at a pharmacy."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco qui la ricevuta. Serve anche una busta?",
+          "english": "Here is the receipt. Do you also need a bag?",
+          "choices": [
+            {
+              "text": "No, grazie. Metto tutto nello zaino.",
+              "isCorrect": true,
+              "feedback": "Natural response declining a bag."
+            },
+            {
+              "text": "No, grazie. Voglio un panino al prosciutto.",
+              "isCorrect": false,
+              "feedback": "Food talk is forbidden."
+            },
+            {
+              "text": "Sì, voglio un asciugamano per la spiaggia.",
+              "isCorrect": false,
+              "feedback": "A pharmacy does not sell beach towels."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Attenzione al sole di oggi, è molto forte.",
+          "english": "Perfect. Be careful of the sun today, it's very strong.",
+          "choices": [
+            {
+              "text": "Lo so, starò all'ombra durante le ore centrali.",
+              "isCorrect": true,
+              "feedback": "Good response to the warning."
+            },
+            {
+              "text": "Lo so, comprerò un ombrello da pioggia.",
+              "isCorrect": false,
+              "feedback": "Rain umbrellas are irrelevant here."
+            },
+            {
+              "text": "Lo so, il frigo non funziona bene.",
+              "isCorrect": false,
+              "feedback": "Appliance talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Faccia attenzione anche a mettere la crema spesso.",
+          "english": "Also be careful to apply the cream often.",
+          "choices": [
+            {
+              "text": "Sì, la rimetterò dopo ogni bagno in mare.",
+              "isCorrect": true,
+              "feedback": "Correct usage of sunscreen."
+            },
+            {
+              "text": "Sì, la rimetterò sul pane tostato.",
+              "isCorrect": false,
+              "feedback": "Don't eat sunscreen!"
+            },
+            {
+              "text": "Sì, il treno per Roma è sempre in ritardo.",
+              "isCorrect": false,
+              "feedback": "Train talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Bravissimo. Le auguro una buona giornata e buone vacanze.",
+          "english": "Very good. I wish you a good day and happy holidays.",
+          "choices": [
+            {
+              "text": "Grazie mille, anche a lei e buon lavoro.",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Grazie mille, il cane deve mangiare adesso.",
+              "isCorrect": false,
+              "feedback": "Pet talk is forbidden."
+            },
+            {
+              "text": "Grazie mille, ho perso le chiavi dell'hotel.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci! Torni a trovarci se ha bisogno.",
+          "english": "Goodbye! Come visit us again if you need to.",
+          "choices": [
+            {
+              "text": "Arrivederci! Lo farò sicuramente.",
+              "isCorrect": true,
+              "feedback": "Final goodbye."
+            },
+            {
+              "text": "Vorrei ordinare una pizza margherita.",
+              "isCorrect": false,
+              "feedback": "Pizza talk is forbidden."
+            },
+            {
+              "text": "Il bagno della camera non ha l'acqua calda.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "remedy_cough",
+      "title": "Remedy for a Cough",
+      "description": "Ask the pharmacist for a cough syrup and lozenges.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve, ha bisogno di un consiglio o di una medicina?",
+          "english": "Hello, do you need advice or some medicine?",
+          "choices": [
+            {
+              "text": "Salve. Ho una brutta tosse da due giorni. Cosa mi consiglia?",
+              "isCorrect": true,
+              "feedback": "Excellent! Stating the symptom and asking for advice."
+            },
+            {
+              "text": "Salve. Ho una brutta camera d'albergo. Cosa mi consiglia?",
+              "isCorrect": false,
+              "feedback": "The pharmacist cannot help with your hotel room."
+            },
+            {
+              "text": "Salve. Ho un biglietto aereo scaduto. Cosa mi consiglia?",
+              "isCorrect": false,
+              "feedback": "The pharmacist cannot help with expired flights."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. È una tosse secca o ha anche del catarro?",
+          "english": "I understand. Is it a dry cough or do you also have phlegm?",
+          "choices": [
+            {
+              "text": "È una tosse molto secca, soprattutto durante la notte.",
+              "isCorrect": true,
+              "feedback": "Perfect description of a dry cough."
+            },
+            {
+              "text": "È un libro molto noioso, soprattutto durante la notte.",
+              "isCorrect": false,
+              "feedback": "You need to describe your cough, not a book."
+            },
+            {
+              "text": "È un piatto molto salato, soprattutto verso la fine.",
+              "isCorrect": false,
+              "feedback": "You are at a pharmacy, not a restaurant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Allora le do questo sciroppo calmante. Ne prenda un cucchiaio prima di dormire.",
+          "english": "Then I'll give you this soothing syrup. Take a spoonful before sleeping.",
+          "choices": [
+            {
+              "text": "Va bene. Avete anche delle caramelle per la gola irritata?",
+              "isCorrect": true,
+              "feedback": "Good follow-up asking for throat lozenges."
+            },
+            {
+              "text": "Va bene. Avete anche delle scarpe per la montagna rocciosa?",
+              "isCorrect": false,
+              "feedback": "Pharmacies don't sell hiking shoes."
+            },
+            {
+              "text": "Va bene. Avete anche delle verdure fresche dal contadino?",
+              "isCorrect": false,
+              "feedback": "You can't buy fresh vegetables at a pharmacy."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certo, abbiamo queste al miele e limone. Aiutano molto.",
+          "english": "Sure, we have these with honey and lemon. They help a lot.",
+          "choices": [
+            {
+              "text": "Perfetto, prendo anche quelle. Devo avere la ricetta medica?",
+              "isCorrect": true,
+              "feedback": "Great question checking if a prescription is needed."
+            },
+            {
+              "text": "Perfetto, prendo anche quelle. Devo avere il passaporto verde?",
+              "isCorrect": false,
+              "feedback": "You don't need a passport to buy lozenges."
+            },
+            {
+              "text": "Perfetto, prendo anche quelle. Devo usare la patente nuova?",
+              "isCorrect": false,
+              "feedback": "Your driver's license is irrelevant here."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "No, sono prodotti da banco, non serve la ricetta. Sono quindici euro.",
+          "english": "No, they are over-the-counter products, no prescription needed. That's fifteen euros.",
+          "choices": [
+            {
+              "text": "Ecco a lei venti euro. Grazie per il consiglio utile.",
+              "isCorrect": true,
+              "feedback": "Perfect! Paying and thanking the pharmacist."
+            },
+            {
+              "text": "Ecco a lei venti euro. Grazie per il bel taglio di capelli.",
+              "isCorrect": false,
+              "feedback": "You didn't get a haircut!"
+            },
+            {
+              "text": "Ecco a lei venti euro. Grazie per aver lavato la macchina.",
+              "isCorrect": false,
+              "feedback": "The pharmacist didn't wash your car."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco qui il resto di cinque euro. Ha bisogno di un sacchetto per portare tutto?",
+          "english": "Here is your change of five euros. Do you need a bag to carry everything?",
+          "choices": [
+            {
+              "text": "Sì, un piccolo sacchetto sarebbe comodo, grazie.",
+              "isCorrect": true,
+              "feedback": "Polite acceptance of the bag."
+            },
+            {
+              "text": "Sì, vorrei un sacco a pelo per dormire fuori.",
+              "isCorrect": false,
+              "feedback": "Pharmacies don't sell sleeping bags."
+            },
+            {
+              "text": "Sì, mi serve un vestito elegante stasera.",
+              "isCorrect": false,
+              "feedback": "Clothing talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certo, eccolo qua. Si ricordi di bere anche molta acqua calda.",
+          "english": "Sure, here it is. Remember to also drink a lot of warm water.",
+          "choices": [
+            {
+              "text": "Ottimo consiglio. Posso bere anche del tè caldo con il miele?",
+              "isCorrect": true,
+              "feedback": "Asking an appropriate follow-up question."
+            },
+            {
+              "text": "Ottimo consiglio. Posso guidare la barca sul lago?",
+              "isCorrect": false,
+              "feedback": "Boat talk is irrelevant."
+            },
+            {
+              "text": "Ottimo consiglio. Il mio orologio è fermo da ieri.",
+              "isCorrect": false,
+              "feedback": "Watch talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Assolutamente, il tè caldo aiuta molto la gola infiammata.",
+          "english": "Absolutely, hot tea helps an inflamed throat a lot.",
+          "choices": [
+            {
+              "text": "Perfetto, allora stasera mi preparerò un tè caldo.",
+              "isCorrect": true,
+              "feedback": "Agreeing to the advice."
+            },
+            {
+              "text": "Perfetto, allora stasera andrò a ballare in discoteca.",
+              "isCorrect": false,
+              "feedback": "Clubbing is bad for a cough."
+            },
+            {
+              "text": "Perfetto, allora stasera guarderò il torneo di calcio.",
+              "isCorrect": false,
+              "feedback": "Soccer is irrelevant here."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Se la tosse non passa dopo tre giorni, le consiglio di vedere un medico.",
+          "english": "If the cough doesn't go away after three days, I advise you to see a doctor.",
+          "choices": [
+            {
+              "text": "Capisco, se peggiora chiamerò un dottore. Grazie.",
+              "isCorrect": true,
+              "feedback": "Accepting the medical advice."
+            },
+            {
+              "text": "Capisco, se peggiora comprerò una nuova macchina.",
+              "isCorrect": false,
+              "feedback": "Car talk is forbidden."
+            },
+            {
+              "text": "Capisco, se peggiora andrò a nuotare in piscina.",
+              "isCorrect": false,
+              "feedback": "Swimming talk is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bene, si riguardi e buona guarigione!",
+          "english": "Good, take care of yourself and get well soon!",
+          "choices": [
+            {
+              "text": "Grazie ancora per l'aiuto. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Friendly goodbye."
+            },
+            {
+              "text": "Devo trovare la fermata dell'autobus numero dieci.",
+              "isCorrect": false,
+              "feedback": "Bus talk is forbidden."
+            },
+            {
+              "text": "La mia camera non è stata pulita stamattina.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_bandages",
+      "title": "Asking for Bandages",
+      "description": "Buy bandages and disinfectant for a minor cut.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, serve aiuto? Vedo che si tiene il braccio.",
+          "english": "Good morning, need help? I see you are holding your arm.",
+          "choices": [
+            {
+              "text": "Buongiorno. Sì, mi sono tagliato e mi servono dei cerotti.",
+              "isCorrect": true,
+              "feedback": "Clear explanation of the problem and what you need."
+            },
+            {
+              "text": "Buongiorno. Sì, mi sono perso e mi serve una bella mappa.",
+              "isCorrect": false,
+              "feedback": "You are asking for a map at a pharmacy."
+            },
+            {
+              "text": "Buongiorno. Sì, mi sono stancato e mi serve una panchina.",
+              "isCorrect": false,
+              "feedback": "The pharmacist cannot provide a bench."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dispiace. Ha già disinfettato la ferita o le serve un disinfettante?",
+          "english": "I'm sorry. Have you already disinfected the wound or do you need a disinfectant?",
+          "choices": [
+            {
+              "text": "Non l'ho disinfettata. Vorrei comprare anche un disinfettante, per favore.",
+              "isCorrect": true,
+              "feedback": "Good! Requesting the disinfectant as suggested."
+            },
+            {
+              "text": "Non l'ho disinfettata. Vorrei comprare anche un televisore, per favore.",
+              "isCorrect": false,
+              "feedback": "A pharmacy does not sell televisions."
+            },
+            {
+              "text": "Non l'ho disinfettata. Vorrei comprare anche un cappotto, per favore.",
+              "isCorrect": false,
+              "feedback": "A pharmacy does not sell coats."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene, ecco un disinfettante delicato e una scatola di cerotti misti.",
+          "english": "All right, here is a mild disinfectant and a box of assorted bandages.",
+          "choices": [
+            {
+              "text": "Grazie mille. Quanto devo pagare in totale per questi due?",
+              "isCorrect": true,
+              "feedback": "Correct way to ask for the total price."
+            },
+            {
+              "text": "Grazie mille. Quando parte il prossimo treno per la città?",
+              "isCorrect": false,
+              "feedback": "You are not at the train station."
+            },
+            {
+              "text": "Grazie mille. Quanto devo aspettare per visitare il museo?",
+              "isCorrect": false,
+              "feedback": "You are not buying museum tickets."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sono dodici euro. Vuole anche una garza nel caso il taglio sia profondo?",
+          "english": "It's twelve euros. Do you also want a gauze in case the cut is deep?",
+          "choices": [
+            {
+              "text": "No, non è molto profondo, i cerotti sono sufficienti. Pago in contanti.",
+              "isCorrect": true,
+              "feedback": "Perfect! Clarifying the situation and how you pay."
+            },
+            {
+              "text": "No, non è molto profondo, i calzini sono sufficienti. Pago in contanti.",
+              "isCorrect": false,
+              "feedback": "Socks won't help your cut!"
+            },
+            {
+              "text": "No, non è molto profondo, gli occhiali sono sufficienti. Pago in contanti.",
+              "isCorrect": false,
+              "feedback": "Glasses won't help your cut!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo. Ecco a lei il resto di tre euro e lo scontrino.",
+          "english": "Agreed. Here is your change of three euros and the receipt.",
+          "choices": [
+            {
+              "text": "La ringrazio molto. Arrivederci e le auguro una buona giornata.",
+              "isCorrect": true,
+              "feedback": "Excellent and polite goodbye."
+            },
+            {
+              "text": "La ringrazio molto. Arrivederci e buon viaggio verso casa.",
+              "isCorrect": false,
+              "feedback": "The pharmacist is at work, not traveling."
+            },
+            {
+              "text": "La ringrazio molto. Arrivederci e buon appetito per stasera.",
+              "isCorrect": false,
+              "feedback": "A bit unusual to say 'enjoy your meal' right now."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Spero che il taglio guarisca presto. Lavi la ferita prima di mettere il cerotto.",
+          "english": "I hope the cut heals soon. Wash the wound before applying the bandage.",
+          "choices": [
+            {
+              "text": "Certo, la laverò bene con acqua prima di usare il disinfettante.",
+              "isCorrect": true,
+              "feedback": "Confirming the correct procedure."
+            },
+            {
+              "text": "Certo, la laverò bene nel fiume vicino alla stazione.",
+              "isCorrect": false,
+              "feedback": "River water is dirty, not good for a cut."
+            },
+            {
+              "text": "Certo, comprerò un gelato al cioccolato più tardi.",
+              "isCorrect": false,
+              "feedback": "Ice cream talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Bravissimo, l'igiene è molto importante per evitare infezioni.",
+          "english": "Very good, hygiene is very important to avoid infections.",
+          "choices": [
+            {
+              "text": "Assolutamente sì. I cerotti sono resistenti all'acqua?",
+              "isCorrect": true,
+              "feedback": "Asking a relevant question about the product."
+            },
+            {
+              "text": "Assolutamente sì. Posso noleggiare una bicicletta qui?",
+              "isCorrect": false,
+              "feedback": "Bike rental talk is forbidden."
+            },
+            {
+              "text": "Assolutamente sì. C'è un parcheggio gratuito vicino?",
+              "isCorrect": false,
+              "feedback": "Parking talk is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, questi cerotti sono impermeabili. Può fare la doccia tranquillamente.",
+          "english": "Yes, these bandages are waterproof. You can take a shower safely.",
+          "choices": [
+            {
+              "text": "Perfetto, era proprio quello che mi serviva sapere.",
+              "isCorrect": true,
+              "feedback": "Expressing satisfaction."
+            },
+            {
+              "text": "Perfetto, allora cucinerò la pasta stasera.",
+              "isCorrect": false,
+              "feedback": "Cooking talk is forbidden."
+            },
+            {
+              "text": "Perfetto, il museo apre alle nove di mattina.",
+              "isCorrect": false,
+              "feedback": "Museum talk is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Se vede arrossamento, mi raccomando, non lo trascuri.",
+          "english": "If you see redness, please, do not neglect it.",
+          "choices": [
+            {
+              "text": "Va bene, controllerò il taglio ogni giorno. Grazie.",
+              "isCorrect": true,
+              "feedback": "Promising to monitor the cut."
+            },
+            {
+              "text": "Va bene, controllerò i biglietti del concerto.",
+              "isCorrect": false,
+              "feedback": "Ticket talk is forbidden."
+            },
+            {
+              "text": "Va bene, controllerò se piove fuori dalla finestra.",
+              "isCorrect": false,
+              "feedback": "Weather talk is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla. Torni pure se ha altri problemi.",
+          "english": "You're welcome. Come back if you have other problems.",
+          "choices": [
+            {
+              "text": "Lo farò. Buona giornata e buon lavoro!",
+              "isCorrect": true,
+              "feedback": "Polite farewell."
+            },
+            {
+              "text": "Il wifi nell'appartamento non si connette.",
+              "isCorrect": false,
+              "feedback": "Wifi talk is forbidden."
+            },
+            {
+              "text": "Dov'è il supermercato più vicino per favore?",
+              "isCorrect": false,
+              "feedback": "Supermarket talk is forbidden here."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checking_prescription",
+      "title": "Checking a Prescription",
+      "description": "Show the pharmacist a prescription and ask for headache medicine.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Il prossimo cliente per favore! Buongiorno, prego.",
+          "english": "Next customer please! Good morning, please go ahead.",
+          "choices": [
+            {
+              "text": "Buongiorno. Ho una ricetta medica del mio dottore per queste medicine.",
+              "isCorrect": true,
+              "feedback": "Clear opening, presenting your prescription."
+            },
+            {
+              "text": "Buongiorno. Ho una lettera d'amore del mio dottore per queste medicine.",
+              "isCorrect": false,
+              "feedback": "A love letter won't help you get medicine!"
+            },
+            {
+              "text": "Buongiorno. Ho una vecchia mappa del mio dottore per queste medicine.",
+              "isCorrect": false,
+              "feedback": "A map won't help you get medicine!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Vediamo la ricetta. Ah, d'accordo, sono delle gocce. Vado a prenderle subito.",
+          "english": "Let's see the prescription. Ah, alright, they are drops. I'll go get them right away.",
+          "choices": [
+            {
+              "text": "Grazie. Mentre aspetta, avete anche qualcosa di forte per il mal di testa?",
+              "isCorrect": true,
+              "feedback": "Good multi-tasking! Asking for an additional item."
+            },
+            {
+              "text": "Grazie. Mentre aspetta, avete anche qualcosa di forte per dipingere i muri?",
+              "isCorrect": false,
+              "feedback": "Pharmacies don't sell paint."
+            },
+            {
+              "text": "Grazie. Mentre aspetta, avete anche qualcosa di forte per lavare i piatti?",
+              "isCorrect": false,
+              "feedback": "You need dish soap from a supermarket, not here."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, certo. Le serve qualcosa da prendere con l'acqua o masticabile?",
+          "english": "Yes, of course. Do you need something to take with water or chewable?",
+          "choices": [
+            {
+              "text": "Preferisco le compresse da prendere con un po' d'acqua, grazie.",
+              "isCorrect": true,
+              "feedback": "Perfect! Describing your preference clearly."
+            },
+            {
+              "text": "Preferisco le patatine da prendere con un po' d'acqua, grazie.",
+              "isCorrect": false,
+              "feedback": "You can't buy chips for a headache here."
+            },
+            {
+              "text": "Preferisco le matite da prendere con un po' d'acqua, grazie.",
+              "isCorrect": false,
+              "feedback": "Pencils are not medicine."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ecco le sue gocce e l'ibuprofene per il mal di testa. Le serve un sacchetto?",
+          "english": "Here are your drops and the ibuprofen for the headache. Do you need a bag?",
+          "choices": [
+            {
+              "text": "No, grazie, le metto nel mio zaino. Quant'è il conto?",
+              "isCorrect": true,
+              "feedback": "Good response declining the bag and asking for the price."
+            },
+            {
+              "text": "No, grazie, le metto nel mio frigorifero. Quant'è il conto?",
+              "isCorrect": false,
+              "feedback": "You aren't taking them to your fridge right now."
+            },
+            {
+              "text": "No, grazie, le metto nel mio forno. Quant'è il conto?",
+              "isCorrect": false,
+              "feedback": "Don't put medicine in an oven!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "In totale sono ventiquattro euro. Paga con il bancomat?",
+          "english": "In total it's twenty-four euros. Are you paying with a debit card?",
+          "choices": [
+            {
+              "text": "Sì, pago con il bancomat. Ecco a lei, grazie mille e arrivederci.",
+              "isCorrect": true,
+              "feedback": "Excellent! Finalizing the payment and saying goodbye."
+            },
+            {
+              "text": "Sì, pago con il bancomat. Ecco a lei, grazie mille e buon appetito.",
+              "isCorrect": false,
+              "feedback": "You don't say 'buon appetito' here."
+            },
+            {
+              "text": "Sì, pago con il bancomat. Ecco a lei, grazie mille e buonanotte.",
+              "isCorrect": false,
+              "feedback": "It's morning, so 'buonanotte' is inappropriate."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Se l'ibuprofene le dà fastidio allo stomaco, lo prenda a stomaco pieno.",
+          "english": "If the ibuprofen bothers your stomach, take it on a full stomach.",
+          "choices": [
+            {
+              "text": "Grazie per il consiglio, lo prenderò dopo aver mangiato.",
+              "isCorrect": true,
+              "feedback": "Agreeing with the medical instruction."
+            },
+            {
+              "text": "Grazie per il consiglio, andrò in biblioteca domani.",
+              "isCorrect": false,
+              "feedback": "Library talk is forbidden."
+            },
+            {
+              "text": "Grazie per il consiglio, devo cambiare le lenzuola.",
+              "isCorrect": false,
+              "feedback": "Bedding talk is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Esatto, mai a stomaco vuoto. Le gocce invece vanno prese prima dei pasti.",
+          "english": "Exactly, never on an empty stomach. The drops instead should be taken before meals.",
+          "choices": [
+            {
+              "text": "Ho capito. Le gocce prima e le compresse dopo.",
+              "isCorrect": true,
+              "feedback": "Summarizing the instructions correctly."
+            },
+            {
+              "text": "Ho capito. Il traghetto parte tra due ore.",
+              "isCorrect": false,
+              "feedback": "Ferry talk is forbidden."
+            },
+            {
+              "text": "Ho capito. Ho perso il mio ombrello blu.",
+              "isCorrect": false,
+              "feedback": "Umbrella talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Perfetto, ha capito benissimo. La scatola di gocce dura circa un mese.",
+          "english": "Perfect, you understood very well. The box of drops lasts about a month.",
+          "choices": [
+            {
+              "text": "Bene, quindi non dovrò tornare presto per un'altra scatola.",
+              "isCorrect": true,
+              "feedback": "Making a logical deduction."
+            },
+            {
+              "text": "Bene, quindi non dovrò pagare il pedaggio autostradale.",
+              "isCorrect": false,
+              "feedback": "Highway talk is forbidden."
+            },
+            {
+              "text": "Bene, quindi non dovrò comprare un nuovo vestito.",
+              "isCorrect": false,
+              "feedback": "Clothing talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "No, per un po' di tempo è a posto. Le serve la ricevuta per le tasse?",
+          "english": "No, for a while you are fine. Do you need the receipt for taxes?",
+          "choices": [
+            {
+              "text": "Sì, per favore, ecco la mia tessera sanitaria per lo scontrino.",
+              "isCorrect": true,
+              "feedback": "Providing the health card for the receipt."
+            },
+            {
+              "text": "Sì, per favore, ecco il mio passaporto per volare a Roma.",
+              "isCorrect": false,
+              "feedback": "Passport talk is forbidden."
+            },
+            {
+              "text": "Sì, per favore, ecco la mia patente di guida internazionale.",
+              "isCorrect": false,
+              "feedback": "Driver's license talk is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco lo scontrino con il codice fiscale. Buona giornata e si riguardi!",
+          "english": "Here is the receipt with your tax code. Have a good day and take care!",
+          "choices": [
+            {
+              "text": "La ringrazio molto per la disponibilità. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "A polite and appropriate goodbye."
+            },
+            {
+              "text": "Il servizio in camera è stato molto lento oggi.",
+              "isCorrect": false,
+              "feedback": "Room service talk is forbidden."
+            },
+            {
+              "text": "Non riesco a trovare il mio gatto nero.",
+              "isCorrect": false,
+              "feedback": "Pet talk is forbidden."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

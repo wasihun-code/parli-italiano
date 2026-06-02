@@ -1,0 +1,953 @@
+{
+  "scenarioId": "shopping/clothing_store",
+  "conversations": [
+    {
+      "id": "buying_shirt",
+      "title": "Comprare una maglietta",
+      "description": "Choose a shirt and ask about the material.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarti a trovare qualcosa di particolare oggi?",
+          "english": "Good morning! Can I help you find something special today?",
+          "choices": [
+            {
+              "text": "Sì, cerco una maglietta semplice per l'estate.",
+              "isCorrect": true,
+              "feedback": "Perfect! We have many cotton shirts available."
+            },
+            {
+              "text": "Cerco un cappotto molto pesante per l'inverno.",
+              "isCorrect": false,
+              "feedback": "It's a bit too hot for coats right now, but we can check!"
+            },
+            {
+              "text": "No, cerco solo un bicchiere d'acqua fresca.",
+              "isCorrect": false,
+              "feedback": "This is a clothing store, but there is a bar nearby!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Abbiamo queste in cotone. Ti piace questo colore azzurro?",
+          "english": "We have these in cotton. Do you like this light blue color?",
+          "choices": [
+            {
+              "text": "Sì, è molto bello. Di che materiale è fatta?",
+              "isCorrect": true,
+              "feedback": "It's 100% organic cotton, very breathable."
+            },
+            {
+              "text": "No, preferisco il nero perché sono triste.",
+              "isCorrect": false,
+              "feedback": "Black is elegant, but let's look at the materials first!"
+            },
+            {
+              "text": "Mi piace il colore, ma preferisco la lana.",
+              "isCorrect": false,
+              "feedback": "Wool might be too warm for a summer shirt!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "È puro cotone, ideale per il caldo. Vuoi sentire il tessuto?",
+          "english": "It's pure cotton, ideal for the heat. Do you want to feel the fabric?",
+          "choices": [
+            {
+              "text": "Sì, sembra molto morbido. Quanto costa questa?",
+              "isCorrect": true,
+              "feedback": "It's currently 25 euros, a very good price."
+            },
+            {
+              "text": "No, non tocco mai i vestiti prima di comprarli.",
+              "isCorrect": false,
+              "feedback": "It's always better to check the quality first!"
+            },
+            {
+              "text": "Sì, ma preferisco il tessuto sintetico.",
+              "isCorrect": false,
+              "feedback": "Synthetic can be less comfortable in summer."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Costa venticinque euro. È un ottimo prezzo per questa qualità.",
+          "english": "It costs twenty-five euros. It's a great price for this quality.",
+          "choices": [
+            {
+              "text": "Va bene, il prezzo è giusto. Avete anche altri colori?",
+              "isCorrect": true,
+              "feedback": "Yes, we also have it in white, grey, and green."
+            },
+            {
+              "text": "È troppo caro, voglio pagare solo due euro.",
+              "isCorrect": false,
+              "feedback": "I'm sorry, but the price is fixed for this brand!"
+            },
+            {
+              "text": "Non mi interessa il prezzo, sono ricchissimo.",
+              "isCorrect": false,
+              "feedback": "That's good for you, but we still have many options!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, abbiamo anche il bianco e il verde. Quale preferisci?",
+          "english": "Yes, we also have white and green. Which do you prefer?",
+          "choices": [
+            {
+              "text": "Prendo quella verde, mi piace molto questa tonalità.",
+              "isCorrect": true,
+              "feedback": "Excellent choice, it suits the summer season perfectly."
+            },
+            {
+              "text": "Non mi piacciono questi colori, sono brutti.",
+              "isCorrect": false,
+              "feedback": "Everyone has different tastes! Let's see other models."
+            },
+            {
+              "text": "Prendo tutti i colori che avete nel negozio.",
+              "isCorrect": false,
+              "feedback": "That's a lot of shirts! Are you sure?"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Perfetto. È una scelta molto popolare quest'anno. Posso fare altro?",
+          "english": "Perfect. It's a very popular choice this year. Can I do anything else?",
+          "choices": [
+            {
+              "text": "Sì, vorrei sapere se posso lavarla in lavatrice.",
+              "isCorrect": true,
+              "feedback": "Yes, at 30 degrees is best to preserve the cotton."
+            },
+            {
+              "text": "No, voglio solo andare via senza pagare.",
+              "isCorrect": false,
+              "feedback": "You need to go to the cash desk first!"
+            },
+            {
+              "text": "Voglio sapere la storia di questa maglietta.",
+              "isCorrect": false,
+              "feedback": "It's a long story of craftsmanship, but let's focus on the care!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, certo. Ti consiglio un lavaggio a trenta gradi.",
+          "english": "Yes, of course. I recommend a wash at thirty degrees.",
+          "choices": [
+            {
+              "text": "Grazie per il consiglio. Accettate la carta di credito?",
+              "isCorrect": true,
+              "feedback": "Yes, we accept all major credit cards and cash."
+            },
+            {
+              "text": "La laverò con l'acqua bollente a cento gradi.",
+              "isCorrect": false,
+              "feedback": "Be careful! It might shrink if the water is too hot."
+            },
+            {
+              "text": "Non lavo mai i miei vestiti, li butto via.",
+              "isCorrect": false,
+              "feedback": "That's not very eco-friendly! Washing is easy."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente, accettiamo tutte le carte. La cassa è laggiù.",
+          "english": "Certainly, we accept all cards. The cash desk is over there.",
+          "choices": [
+            {
+              "text": "Benissimo. Vado subito a pagare la maglietta.",
+              "isCorrect": true,
+              "feedback": "Great. The cashier will help you with the payment."
+            },
+            {
+              "text": "Non vedo la cassa, il negozio è troppo grande.",
+              "isCorrect": false,
+              "feedback": "It's just behind that shelf, near the exit."
+            },
+            {
+              "text": "Cambio idea, non voglio più comprare niente.",
+              "isCorrect": false,
+              "feedback": "No problem, you can leave it here on the counter."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie mille per il tuo acquisto. Torna presto a trovarci!",
+          "english": "Thank you very much for your purchase. Come back and visit us soon!",
+          "choices": [
+            {
+              "text": "Grazie a lei, buona giornata e buon lavoro!",
+              "isCorrect": true,
+              "feedback": "You're welcome! Have a wonderful day too."
+            },
+            {
+              "text": "Arrivederci, spero di non tornare mai più.",
+              "isCorrect": false,
+              "feedback": "Oh, I'm sorry to hear that! We hope to improve next time."
+            },
+            {
+              "text": "Ciao, vado a mangiare un gelato adesso.",
+              "isCorrect": false,
+              "feedback": "A gelato sounds like a great idea after shopping!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci! Spero che la maglietta ti piaccia molto.",
+          "english": "Goodbye! I hope you like the shirt very much.",
+          "choices": [
+            {
+              "text": "Sicuramente! Grazie ancora di tutto. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Perfect interaction. You bought a shirt successfully."
+            },
+            {
+              "text": "Sì, ma forse la regalerò a mio cugino.",
+              "isCorrect": false,
+              "feedback": "That's a nice gift! He will surely appreciate it."
+            },
+            {
+              "text": "La maglietta è già rotta, voglio un rimborso.",
+              "isCorrect": false,
+              "feedback": "We just gave it to you! It's in perfect condition."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "different_size",
+      "title": "Chiedere una taglia diversa",
+      "description": "The shirt is too small. Ask for a larger size.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Com'è andata la prova? La taglia va bene per te?",
+          "english": "How did the fitting go? Is the size right for you?",
+          "choices": [
+            {
+              "text": "Purtroppo è un po' stretta. Avete una taglia più grande?",
+              "isCorrect": true,
+              "feedback": "Certainly, let me check the stock for a larger size."
+            },
+            {
+              "text": "Sì, è perfetta, ma voglio una taglia più piccola.",
+              "isCorrect": false,
+              "feedback": "If it's perfect, a smaller one might be too tight!"
+            },
+            {
+              "text": "Non lo so, non mi sono guardato allo specchio.",
+              "isCorrect": false,
+              "feedback": "You should check! The mirror is right there."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo, controllo subito. Cerchi una Large o una Extra Large?",
+          "english": "Of course, I'll check right away. Are you looking for a Large or an Extra Large?",
+          "choices": [
+            {
+              "text": "Penso che una Large sia sufficiente. Può controllare?",
+              "isCorrect": true,
+              "feedback": "Yes, I see one right here on the rack."
+            },
+            {
+              "text": "Voglio la taglia più piccola del mondo, per favore.",
+              "isCorrect": false,
+              "feedback": "That might be for a doll! Let's stick to adult sizes."
+            },
+            {
+              "text": "Non uso le taglie, porto solo vestiti enormi.",
+              "isCorrect": false,
+              "feedback": "Oversize is trendy, but let's find something that fits!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, ne abbiamo una. Eccola qui. Vuoi provarla di nuovo?",
+          "english": "Yes, we have one. Here it is. Do you want to try it on again?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Spero che questa vada meglio.",
+              "isCorrect": true,
+              "feedback": "I'm sure it will be more comfortable for you."
+            },
+            {
+              "text": "No, la compro senza provarla, mi fido.",
+              "isCorrect": false,
+              "feedback": "It's always better to be sure before you buy!"
+            },
+            {
+              "text": "No, preferisco restare con quella stretta.",
+              "isCorrect": false,
+              "feedback": "Are you sure? Comfort is very important!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Vai pure. Il camerino è libero in questo momento.",
+          "english": "Go ahead. The fitting room is free at the moment.",
+          "choices": [
+            {
+              "text": "Grazie. Torno tra un minuto per farle sapere.",
+              "isCorrect": true,
+              "feedback": "Take your time. I'll be here if you need help."
+            },
+            {
+              "text": "Non trovo più il camerino, mi sono perso.",
+              "isCorrect": false,
+              "feedback": "It's just behind you, on the left!"
+            },
+            {
+              "text": "Voglio provarla qui in mezzo al negozio.",
+              "isCorrect": false,
+              "feedback": "Please use the fitting room for your privacy!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Allora? Questa Large come ti sembra? Ti senti comodo?",
+          "english": "So? How does this Large feel? Do you feel comfortable?",
+          "choices": [
+            {
+              "text": "Questa va benissimo! È molto più comoda dell'altra.",
+              "isCorrect": true,
+              "feedback": "Excellent, the fit looks much better on you now."
+            },
+            {
+              "text": "È ancora troppo piccola, voglio una mongolfiera.",
+              "isCorrect": false,
+              "feedback": "We don't sell those! Maybe try the Extra Large?"
+            },
+            {
+              "text": "È troppo grande, sembro un fantasma.",
+              "isCorrect": false,
+              "feedback": "Maybe the Medium was better after all?"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sono felice. La taglia corretta cambia molto il look, vero?",
+          "english": "I'm happy. The correct size changes the look a lot, right?",
+          "choices": [
+            {
+              "text": "Assolutamente sì. La prendo. Avete anche i pantaloni abbinati?",
+              "isCorrect": true,
+              "feedback": "Yes, we have some chinos that would look great."
+            },
+            {
+              "text": "No, il look non mi interessa, voglio solo coprirmi.",
+              "isCorrect": false,
+              "feedback": "Even so, it's nice to have something that fits well!"
+            },
+            {
+              "text": "Il look è tutto, sono un modello famoso.",
+              "isCorrect": false,
+              "feedback": "Well, then you've chosen a very stylish item!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, abbiamo dei pantaloni beige che stanno molto bene.",
+          "english": "Yes, we have some beige trousers that go very well.",
+          "choices": [
+            {
+              "text": "Belli! Posso vedere anche quelli in taglia Large?",
+              "isCorrect": true,
+              "feedback": "Sure, let me find the right size for those too."
+            },
+            {
+              "text": "No, odio il beige, mi ricorda la sabbia.",
+              "isCorrect": false,
+              "feedback": "We have them in blue or grey as well!"
+            },
+            {
+              "text": "Voglio i pantaloni rosa shocking, per favore.",
+              "isCorrect": false,
+              "feedback": "We don't have that color in stock right now!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente. Eccoli qui. Vuoi provare tutto l'insieme?",
+          "english": "Certainly. Here they are. Do you want to try the whole outfit?",
+          "choices": [
+            {
+              "text": "Sì, ottima idea. Così vedo se l'abbinamento mi piace.",
+              "isCorrect": true,
+              "feedback": "Smart move. It's best to see the complete look."
+            },
+            {
+              "text": "No, provo solo un pantalone alla volta.",
+              "isCorrect": false,
+              "feedback": "As you wish, but the outfit looks really nice together!"
+            },
+            {
+              "text": "Sì, ma voglio provare anche le scarpe.",
+              "isCorrect": false,
+              "feedback": "We don't sell shoes here, unfortunately!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ti aspetto qui. Fammi sapere se hai bisogno di cinture.",
+          "english": "I'll wait for you here. Let me know if you need belts.",
+          "choices": [
+            {
+              "text": "Va bene, grazie. Per ora provo solo questi due.",
+              "isCorrect": true,
+              "feedback": "Perfect. I'll be nearby if you change your mind."
+            },
+            {
+              "text": "Voglio una cintura d'oro zecchino, grazie.",
+              "isCorrect": false,
+              "feedback": "We only have leather or fabric belts!"
+            },
+            {
+              "text": "Non uso le cinture, uso lo spago.",
+              "isCorrect": false,
+              "feedback": "A belt is much more elegant for this outfit!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Tutto perfetto? Sembri molto elegante con questo completo.",
+          "english": "Everything perfect? You look very elegant in this outfit.",
+          "choices": [
+            {
+              "text": "Sì, mi piace molto. Prendo sia la maglietta che i pantaloni.",
+              "isCorrect": true,
+              "feedback": "Excellent choice. Let's go to the checkout."
+            },
+            {
+              "text": "Sembro un cameriere, non mi piace affatto.",
+              "isCorrect": false,
+              "feedback": "I'm sorry! Let's try a different color then."
+            },
+            {
+              "text": "Prendo solo i bottoni, grazie.",
+              "isCorrect": false,
+              "feedback": "We sell the whole garment, not just the parts!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fitting_room",
+      "title": "Trovare il camerino",
+      "description": "Ask where the fitting rooms are located.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Hai scelto dei bellissimi capi! Vuoi provarli subito?",
+          "english": "You've chosen some beautiful items! Do you want to try them on now?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Mi può dire dove sono i camerini?",
+              "isCorrect": true,
+              "feedback": "Of course, they are located at the back of the store."
+            },
+            {
+              "text": "No, voglio solo mangiarli perché sembrano buoni.",
+              "isCorrect": false,
+              "feedback": "Please don't! They are for wearing, not for eating!"
+            },
+            {
+              "text": "Dove sono i bagni? Ho molta fretta.",
+              "isCorrect": false,
+              "feedback": "The bathrooms are next to the fitting rooms, actually."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "I camerini sono in fondo a sinistra, vicino agli specchi.",
+          "english": "The fitting rooms are at the back on the left, near the mirrors.",
+          "choices": [
+            {
+              "text": "Grazie. C'è una fila lunga o posso entrare subito?",
+              "isCorrect": true,
+              "feedback": "It's your lucky day, they are all empty right now."
+            },
+            {
+              "text": "Voglio entrare nel camerino delle donne.",
+              "isCorrect": false,
+              "feedback": "The fitting rooms are unisex here, so no problem!"
+            },
+            {
+              "text": "C'è troppa luce, preferisco provare al buio.",
+              "isCorrect": false,
+              "feedback": "You need light to see how the clothes look!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "In questo momento non c'è nessuno. Puoi andare tranquillamente.",
+          "english": "At the moment there is no one. You can go ahead safely.",
+          "choices": [
+            {
+              "text": "Ottimo. Quanti capi posso portare dentro al massimo?",
+              "isCorrect": true,
+              "feedback": "You can take up to five items at a time."
+            },
+            {
+              "text": "Porto dentro tutto il negozio con me.",
+              "isCorrect": false,
+              "feedback": "That might be a bit too much for the small room!"
+            },
+            {
+              "text": "Non porto niente, entro da solo.",
+              "isCorrect": false,
+              "feedback": "But you need to try the clothes you picked!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Il limite è di cinque capi per volta. Ne hai tre, quindi va bene.",
+          "english": "The limit is five items at a time. You have three, so that's fine.",
+          "choices": [
+            {
+              "text": "Perfetto. Posso lasciare la mia borsa qui fuori?",
+              "isCorrect": true,
+              "feedback": "Yes, you can leave it on this chair under my supervision."
+            },
+            {
+              "text": "Voglio lasciare la mia borsa per strada.",
+              "isCorrect": false,
+              "feedback": "That's not very safe! Better to keep it here."
+            },
+            {
+              "text": "Ho dieci borse pesanti, mi aiuta lei?",
+              "isCorrect": false,
+              "feedback": "I can help you place them on the bench."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, certo. La borsa è al sicuro con me. Non preoccuparti.",
+          "english": "Yes, of course. The bag is safe with me. Don't worry.",
+          "choices": [
+            {
+              "text": "Grazie mille, lei è molto gentile. Vado a provare.",
+              "isCorrect": true,
+              "feedback": "You're welcome. Let me know if you need a different size."
+            },
+            {
+              "text": "Non mi fido di lei, porterò la borsa nel camerino.",
+              "isCorrect": false,
+              "feedback": "As you prefer, there is a hook inside for bags."
+            },
+            {
+              "text": "Le regalo la mia borsa, non mi serve più.",
+              "isCorrect": false,
+              "feedback": "Oh, that's too much! Keep your belongings."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Prego. Se i pantaloni sono lunghi, abbiamo un servizio di sartoria.",
+          "english": "You're welcome. If the trousers are long, we have a tailoring service.",
+          "choices": [
+            {
+              "text": "Interessante! Quanto tempo ci vuole per accorciarli?",
+              "isCorrect": true,
+              "feedback": "Usually it takes about two or three days."
+            },
+            {
+              "text": "Voglio i pantaloni lunghi dieci metri, grazie.",
+              "isCorrect": false,
+              "feedback": "You might trip over them! Better to have the right length."
+            },
+            {
+              "text": "La sarta è simpatica o è cattiva?",
+              "isCorrect": false,
+              "feedback": "She is very professional and kind!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Di solito sono pronti in due giorni. Il servizio costa cinque euro.",
+          "english": "Usually they are ready in two days. The service costs five euros.",
+          "choices": [
+            {
+              "text": "È un prezzo onesto. Ora entro nel camerino. A dopo!",
+              "isCorrect": true,
+              "feedback": "See you in a bit. Enjoy the fitting!"
+            },
+            {
+              "text": "Cinque euro è troppo, lo farò io con le forbici.",
+              "isCorrect": false,
+              "feedback": "Be careful not to ruin the fabric!"
+            },
+            {
+              "text": "Voglio che siano pronti in cinque minuti.",
+              "isCorrect": false,
+              "feedback": "I'm afraid that's impossible for a good job."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "A dopo! Se hai bisogno di una tenda più coprente, fammelo sapere.",
+          "english": "See you later! If you need a more opaque curtain, let me know.",
+          "choices": [
+            {
+              "text": "Questa va benissimo, grazie. La privacy è importante.",
+              "isCorrect": true,
+              "feedback": "I agree. Take your time to decide."
+            },
+            {
+              "text": "Voglio che tutti mi guardino mentre mi vesto.",
+              "isCorrect": false,
+              "feedback": "That's not allowed in the store, please!"
+            },
+            {
+              "text": "La tenda è fatta di carta velina?",
+              "isCorrect": false,
+              "feedback": "No, it's heavy fabric for your privacy."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Allora, come ti vedi? Ti piace il taglio di questa giacca?",
+          "english": "So, how do you look? Do you like the cut of this jacket?",
+          "choices": [
+            {
+              "text": "Sì, mi piace molto come cade sulle spalle. La prendo.",
+              "isCorrect": true,
+              "feedback": "It fits you perfectly, it looks like it was made for you."
+            },
+            {
+              "text": "Sembro un pinguino con questa giacca nera.",
+              "isCorrect": false,
+              "feedback": "Maybe it's just the style, let's try something different."
+            },
+            {
+              "text": "La giacca è troppo corta, arriva solo al collo.",
+              "isCorrect": false,
+              "feedback": "That sounds like a scarf, not a jacket!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottima decisione! Ti porto tutto alla cassa mentre finisci?",
+          "english": "Great decision! Shall I take everything to the checkout while you finish?",
+          "choices": [
+            {
+              "text": "Sì, grazie mille. Arrivo tra un secondo.",
+              "isCorrect": true,
+              "feedback": "Perfect. You found what you were looking for."
+            },
+            {
+              "text": "No, porto tutto io perché non mi fido.",
+              "isCorrect": false,
+              "feedback": "As you wish, I was just trying to help!"
+            },
+            {
+              "text": "Lascio tutto qui per terra e vado via.",
+              "isCorrect": false,
+              "feedback": "Please, put the items back on the hangers!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discounts",
+      "title": "Chiedere informazioni sugli sconti",
+      "description": "Inquire about ongoing sales or discounts.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Hai visto i cartelli rossi in vetrina?",
+          "english": "Good morning! Did you see the red signs in the window?",
+          "choices": [
+            {
+              "text": "Sì, ho visto 'Sconti'. Ci sono promozioni oggi?",
+              "isCorrect": true,
+              "feedback": "Yes, we have a 30% discount on the entire summer collection."
+            },
+            {
+              "text": "No, sono bendato e non vedo niente.",
+              "isCorrect": false,
+              "feedback": "Oh, let me help you navigate then!"
+            },
+            {
+              "text": "Sì, ma pensavo fosse vernice fresca.",
+              "isCorrect": false,
+              "feedback": "No, those are our special offers for the season!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, tutta la collezione estiva è scontata del trenta per cento.",
+          "english": "Yes, the whole summer collection is discounted by thirty percent.",
+          "choices": [
+            {
+              "text": "Ottimo! Anche queste scarpe sono in offerta?",
+              "isCorrect": true,
+              "feedback": "Yes, including accessories and footwear."
+            },
+            {
+              "text": "Voglio lo sconto del cento per cento, per favore.",
+              "isCorrect": false,
+              "feedback": "That would be free! We can't do that, unfortunately."
+            },
+            {
+              "text": "Odio gli sconti, voglio pagare il doppio.",
+              "isCorrect": false,
+              "feedback": "That's very generous of you, but we must follow the prices!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, tutto quello che vedi su questo tavolo è in saldo.",
+          "english": "Yes, everything you see on this table is on sale.",
+          "choices": [
+            {
+              "text": "Bello questo maglione. Qual è il prezzo finale scontato?",
+              "isCorrect": true,
+              "feedback": "It was 50 euros, so now it is only 35 euros."
+            },
+            {
+              "text": "Prendo il tavolo, mi piace il legno.",
+              "isCorrect": false,
+              "feedback": "The table is not for sale, only the clothes on it!"
+            },
+            {
+              "text": "Il saldo significa che il pavimento è bagnato?",
+              "isCorrect": false,
+              "feedback": "No, 'saldi' means 'sales' in Italian retail!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Il maglione costa trentacinque euro con lo sconto applicato.",
+          "english": "The sweater costs thirty-five euros with the discount applied.",
+          "choices": [
+            {
+              "text": "Mi sembra un affare. Avete anche una tessera fedeltà?",
+              "isCorrect": true,
+              "feedback": "Yes, you can sign up for free and get more points."
+            },
+            {
+              "text": "È ancora troppo caro per un pezzo di lana.",
+              "isCorrect": false,
+              "feedback": "It's high-quality wool, but I understand."
+            },
+            {
+              "text": "Voglio pagare con i punti del supermercato.",
+              "isCorrect": false,
+              "feedback": "We only accept our own loyalty card points!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, se fai la tessera hai un ulteriore sconto del cinque per cento.",
+          "english": "Yes, if you get the card you have a further five percent discount.",
+          "choices": [
+            {
+              "text": "Interessante. Cosa devo fare per avere la tessera?",
+              "isCorrect": true,
+              "feedback": "Just give me your name and an email address."
+            },
+            {
+              "text": "Voglio la tessera ma non voglio dirle il mio nome.",
+              "isCorrect": false,
+              "feedback": "We need it for the registration, I'm afraid!"
+            },
+            {
+              "text": "La tessera è fatta di cioccolato?",
+              "isCorrect": false,
+              "feedback": "No, it's a digital card on your phone!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Basta compilare questo modulo veloce. Ci vuole un minuto.",
+          "english": "Just fill out this quick form. It takes a minute.",
+          "choices": [
+            {
+              "text": "Va bene, lo faccio subito. Amo risparmiare soldi.",
+              "isCorrect": true,
+              "feedback": "Everyone loves a good bargain! Here is the pen."
+            },
+            {
+              "text": "Non so scrivere, può farlo lei per me?",
+              "isCorrect": false,
+              "feedback": "I can help you, just tell me your details."
+            },
+            {
+              "text": "C'è troppo da scrivere, rinuncio allo sconto.",
+              "isCorrect": false,
+              "feedback": "It's really short, just two lines!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco fatto. Ora il maglione costa ancora meno per te.",
+          "english": "There we go. Now the sweater costs even less for you.",
+          "choices": [
+            {
+              "text": "Fantastico! Avete sconti anche sulla nuova collezione?",
+              "isCorrect": true,
+              "feedback": "No, unfortunately the new arrivals are at full price."
+            },
+            {
+              "text": "Voglio che tutto il negozio sia scontato oggi.",
+              "isCorrect": false,
+              "feedback": "I wish I could do that, but I'm not the owner!"
+            },
+            {
+              "text": "Sconto? Pensavo mi stesse regalando tutto.",
+              "isCorrect": false,
+              "feedback": "No, it's just a reduction in the price!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "No, purtroppo la nuova collezione non è in promozione.",
+          "english": "No, unfortunately the new collection is not on promotion.",
+          "choices": [
+            {
+              "text": "Peccato, ma capisco. Mi accontento del maglione.",
+              "isCorrect": true,
+              "feedback": "It's a very good choice anyway, very classic."
+            },
+            {
+              "text": "Allora non compro niente, vado via subito.",
+              "isCorrect": false,
+              "feedback": "Wait! The maglione is still a great deal!"
+            },
+            {
+              "text": "Voglio parlare con il direttore per lo sconto.",
+              "isCorrect": false,
+              "feedback": "He would tell you the same thing, it's company policy."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Vuoi vedere anche le cinture in saldo? Sono vicino alla cassa.",
+          "english": "Do you want to see the belts on sale too? They are near the cash desk.",
+          "choices": [
+            {
+              "text": "Sì, diamo un'occhiata veloce prima di pagare.",
+              "isCorrect": true,
+              "feedback": "They are right here. Many different colors available."
+            },
+            {
+              "text": "No, le cinture mi stringono troppo la pancia.",
+              "isCorrect": false,
+              "feedback": "You can adjust them! But no problem."
+            },
+            {
+              "text": "Le cinture sono fatte di pelle di dinosauro?",
+              "isCorrect": false,
+              "feedback": "No, they are high-quality Italian leather!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo, abbiamo finito. Sei soddisfatto dei tuoi acquisti?",
+          "english": "Great, we're done. Are you satisfied with your purchases?",
+          "choices": [
+            {
+              "text": "Moltissimo. Ho risparmiato molto grazie ai vostri sconti.",
+              "isCorrect": true,
+              "feedback": "I'm glad. Enjoy your new clothes!"
+            },
+            {
+              "text": "No, mi sento in colpa per aver speso soldi.",
+              "isCorrect": false,
+              "feedback": "Think of it as an investment in your style!"
+            },
+            {
+              "text": "Sono soddisfatto solo se mi regala un cappello.",
+              "isCorrect": false,
+              "feedback": "Maybe next time with more points on your card!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,953 @@
+{
+  "scenarioId": 49,
+  "conversations": [
+    {
+      "id": "defective_shirt",
+      "title": "Defective Shirt",
+      "description": "Return a shirt that has a hole or a defect.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come posso aiutarla oggi?",
+          "english": "Good morning! How can I help you today?",
+          "choices": [
+            {
+              "text": "Buongiorno. Vorrei restituire questa camicia, per favore.",
+              "isCorrect": true,
+              "feedback": "Perfect! You stated your intention clearly."
+            },
+            {
+              "text": "Buongiorno. Vorrei mangiare questa camicia, per favore.",
+              "isCorrect": false,
+              "feedback": "You don't eat clothes! Use 'restituire' (to return)."
+            },
+            {
+              "text": "Buongiorno. Vorrei dormire in questa camicia, per favore.",
+              "isCorrect": false,
+              "feedback": "You are at a shop to return it, not to sleep."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. C'è qualche problema con l'articolo?",
+          "english": "Certainly. Is there any problem with the item?",
+          "choices": [
+            {
+              "text": "Sì, la camicia è difettosa. C'è un piccolo buco sulla manica.",
+              "isCorrect": true,
+              "feedback": "Good job explaining the specific defect."
+            },
+            {
+              "text": "Sì, la camicia è deliziosa. C'è un piccolo gatto sulla manica.",
+              "isCorrect": false,
+              "feedback": "A shirt is not 'deliziosa' (delicious) and there's no cat!"
+            },
+            {
+              "text": "Sì, la camicia è simpatica. C'è un piccolo film sulla manica.",
+              "isCorrect": false,
+              "feedback": "You are describing a defect, not a movie."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Mi dispiace molto. Ha lo scontrino dell'acquisto?",
+          "english": "I am very sorry. Do you have the receipt of the purchase?",
+          "choices": [
+            {
+              "text": "Sì, eccolo qui. Ho comprato la camicia ieri pomeriggio.",
+              "isCorrect": true,
+              "feedback": "Great, providing the receipt is essential for a return."
+            },
+            {
+              "text": "Sì, eccolo qui. Ho comprato la camicia dieci anni fa.",
+              "isCorrect": false,
+              "feedback": "Ten years is too long for a return policy!"
+            },
+            {
+              "text": "Sì, eccolo qui. Ho comprato la camicia in un altro paese.",
+              "isCorrect": false,
+              "feedback": "Usually returns must be done at the same chain or shop."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie. Preferisce cambiare l'articolo o avere un rimborso?",
+          "english": "Thank you. Do you prefer to exchange the item or have a refund?",
+          "choices": [
+            {
+              "text": "Preferisco cambiare la camicia con una nuova, se possibile.",
+              "isCorrect": true,
+              "feedback": "Clear choice. You want a replacement."
+            },
+            {
+              "text": "Preferisco cambiare la camicia con un gelato, se possibile.",
+              "isCorrect": false,
+              "feedback": "This is a clothing store, not a gelateria."
+            },
+            {
+              "text": "Preferisco cambiare la camicia con un cane, se possibile.",
+              "isCorrect": false,
+              "feedback": "You cannot exchange clothes for animals here."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Controllo subito in magazzino. Che taglia è?",
+          "english": "I'll check in the warehouse right away. What size is it?",
+          "choices": [
+            {
+              "text": "È una taglia media. Spero che ne abbiate un'altra.",
+              "isCorrect": true,
+              "feedback": "Good, you specified the size correctly."
+            },
+            {
+              "text": "È una taglia calda. Spero che ne abbiate un'altra.",
+              "isCorrect": false,
+              "feedback": "Sizes are not 'calda' (hot). Use 'media', 'piccola', etc."
+            },
+            {
+              "text": "È una taglia blu. Spero che ne abbiate un'altra.",
+              "isCorrect": false,
+              "feedback": "Blue is a color, not a size."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, ne abbiamo ancora una. Vado a prenderla subito.",
+          "english": "Yes, we still have one. I'll go get it right away.",
+          "choices": [
+            {
+              "text": "Grazie mille. Aspetto qui vicino alla cassa allora.",
+              "isCorrect": true,
+              "feedback": "Polite response while waiting."
+            },
+            {
+              "text": "Grazie mille. Corro subito alla stazione allora.",
+              "isCorrect": false,
+              "feedback": "Don't leave yet! The assistant is getting your shirt."
+            },
+            {
+              "text": "Grazie mille. Vado subito in ospedale allora.",
+              "isCorrect": false,
+              "feedback": "No need for a hospital, just wait for the shirt."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco la camicia nuova. Vuole controllarla per sicurezza?",
+          "english": "Here is the new shirt. Do you want to check it for safety?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Questa sembra perfetta, non vedo buchi.",
+              "isCorrect": true,
+              "feedback": "Smart to double-check the replacement."
+            },
+            {
+              "text": "Sì, grazie. Questa sembra salata, non vedo zucchero.",
+              "isCorrect": false,
+              "feedback": "You are checking a shirt, not tasting food."
+            },
+            {
+              "text": "Sì, grazie. Questa sembra veloce, non vedo freni.",
+              "isCorrect": false,
+              "feedback": "A shirt is not 'veloce' (fast)."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Le serve altro o possiamo procedere con il cambio?",
+          "english": "Great. Do you need anything else or can we proceed with the exchange?",
+          "choices": [
+            {
+              "text": "Siamo a posto così, possiamo fare il cambio ora.",
+              "isCorrect": true,
+              "feedback": "Ready to finalize the process."
+            },
+            {
+              "text": "Siamo al mare così, possiamo fare il bagno ora.",
+              "isCorrect": false,
+              "feedback": "You are in a shop, not at the beach."
+            },
+            {
+              "text": "Siamo in treno così, possiamo partire ora.",
+              "isCorrect": false,
+              "feedback": "You are not on a train."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Ho registrato il cambio sul sistema. Ecco lo scontrino nuovo.",
+          "english": "Perfect. I have registered the exchange on the system. Here is the new receipt.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'aiuto e per la gentilezza.",
+              "isCorrect": true,
+              "feedback": "Polite way to end the interaction."
+            },
+            {
+              "text": "Grazie mille per il pane e per la marmellata.",
+              "isCorrect": false,
+              "feedback": "The shop assistant didn't give you food."
+            },
+            {
+              "text": "Grazie mille per il film e per la musica.",
+              "isCorrect": false,
+              "feedback": "This is not a cinema or a concert."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego! Mi scusi ancora per l'inconveniente. Buona giornata!",
+          "english": "You're welcome! Sorry again for the inconvenience. Have a nice day!",
+          "choices": [
+            {
+              "text": "Nessun problema. Buona giornata anche a lei, arrivederci!",
+              "isCorrect": true,
+              "feedback": "Standard polite closing."
+            },
+            {
+              "text": "Nessun problema. Buona notte anche a lei, arrivederci!",
+              "isCorrect": false,
+              "feedback": "It is daytime, use 'buona giornata'."
+            },
+            {
+              "text": "Nessun problema. Buon appetito anche a lei, arrivederci!",
+              "isCorrect": false,
+              "feedback": "'Buon appetito' is for eating."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wrong_size_return",
+      "title": "Wrong Size Return",
+      "description": "Return an item because it's the wrong size.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Posso aiutarla con un acquisto o un reso?",
+          "english": "Hello! Can I help you with a purchase or a return?",
+          "choices": [
+            {
+              "text": "Salve. Vorrei fare un reso di questo paio di pantaloni.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'reso' (return)."
+            },
+            {
+              "text": "Salve. Vorrei fare un volo di questo paio di pantaloni.",
+              "isCorrect": false,
+              "feedback": "'Volo' (flight) is for airports. Use 'reso'."
+            },
+            {
+              "text": "Salve. Vorrei fare un caffè di questo paio di pantaloni.",
+              "isCorrect": false,
+              "feedback": "You cannot make coffee with pants!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Va bene. Perché desidera restituire questi pantaloni?",
+          "english": "Alright. Why do you want to return these pants?",
+          "choices": [
+            {
+              "text": "Perché sono troppo piccoli. Ho sbagliato la taglia.",
+              "isCorrect": true,
+              "feedback": "Explaining the reason clearly."
+            },
+            {
+              "text": "Perché sono troppo simpatici. Ho sbagliato la strada.",
+              "isCorrect": false,
+              "feedback": "Pants are not 'simpatici', and 'strada' is irrelevant."
+            },
+            {
+              "text": "Perché sono troppo stanchi. Ho sbagliato il letto.",
+              "isCorrect": false,
+              "feedback": "Pants cannot be 'stanchi' (tired)."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco. Ha portato lo scontrino originale con lei?",
+          "english": "I see. Did you bring the original receipt with you?",
+          "choices": [
+            {
+              "text": "Sì, eccolo qui. Li ho comprati solo due giorni fa.",
+              "isCorrect": true,
+              "feedback": "Good, keeping the receipt is important."
+            },
+            {
+              "text": "Sì, eccolo qui. Li ho comprati in un sogno ieri.",
+              "isCorrect": false,
+              "feedback": "A dream is not a valid place of purchase."
+            },
+            {
+              "text": "Sì, eccolo qui. Li ho comprati al cinema stasera.",
+              "isCorrect": false,
+              "feedback": "You don't buy pants at the cinema."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Vuole provare una taglia più grande o preferisce un buono?",
+          "english": "Perfect. Do you want to try a larger size or do you prefer a voucher?",
+          "choices": [
+            {
+              "text": "Vorrei provare una taglia in più, se è possibile.",
+              "isCorrect": true,
+              "feedback": "Asking to try the correct size."
+            },
+            {
+              "text": "Vorrei provare una pizza in più, se è possibile.",
+              "isCorrect": false,
+              "feedback": "This is a clothing shop, not a pizzeria."
+            },
+            {
+              "text": "Vorrei provare una corsa in più, se è possibile.",
+              "isCorrect": false,
+              "feedback": "You are here for pants, not for running."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Certamente. Le porto subito la taglia Large da provare.",
+          "english": "Certainly. I'll bring you the Large size to try on right away.",
+          "choices": [
+            {
+              "text": "Grazie. Dove sono i camerini in questo negozio?",
+              "isCorrect": true,
+              "feedback": "Logical question when you need to try something on."
+            },
+            {
+              "text": "Grazie. Dove sono i medici in questo ospedale?",
+              "isCorrect": false,
+              "feedback": "You are not in a hospital."
+            },
+            {
+              "text": "Grazie. Dove sono i leoni in questo zoo?",
+              "isCorrect": false,
+              "feedback": "This is a shop, not a zoo."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "I camerini sono in fondo a destra, vicino agli specchi.",
+          "english": "The fitting rooms are at the back on the right, near the mirrors.",
+          "choices": [
+            {
+              "text": "Vado subito a provare questi pantaloni allora.",
+              "isCorrect": true,
+              "feedback": "Moving to the next step."
+            },
+            {
+              "text": "Vado subito a nuotare in questi pantaloni allora.",
+              "isCorrect": false,
+              "feedback": "Don't swim in the fitting rooms!"
+            },
+            {
+              "text": "Vado subito a dormire in questi pantaloni allora.",
+              "isCorrect": false,
+              "feedback": "Fitting rooms are for trying clothes, not sleeping."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Vanno bene questa volta? La taglia è giusta?",
+          "english": "Are they okay this time? Is the size right?",
+          "choices": [
+            {
+              "text": "Sì, questi sono perfetti. La taglia Large va benissimo.",
+              "isCorrect": true,
+              "feedback": "Confirming the new size works."
+            },
+            {
+              "text": "Sì, questi sono amari. La taglia Large va malissimo.",
+              "isCorrect": false,
+              "feedback": "'Amari' (bitter) is for taste, not for fit."
+            },
+            {
+              "text": "Sì, questi sono rumorosi. La taglia Large va fortissimo.",
+              "isCorrect": false,
+              "feedback": "Pants are not 'rumorosi' (noisy)."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Allora facciamo lo scambio alla cassa ora.",
+          "english": "Great. Then let's do the exchange at the counter now.",
+          "choices": [
+            {
+              "text": "Va bene. Devo pagare una differenza di prezzo?",
+              "isCorrect": true,
+              "feedback": "Smart question about potential price differences."
+            },
+            {
+              "text": "Va bene. Devo cantare una canzone di prezzo?",
+              "isCorrect": false,
+              "feedback": "You pay with money, not songs!"
+            },
+            {
+              "text": "Va bene. Devo guidare una macchina di prezzo?",
+              "isCorrect": false,
+              "feedback": "This is irrelevant to the exchange."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "No, il prezzo è lo stesso. È uno scambio alla pari.",
+          "english": "No, the price is the same. It is an even exchange.",
+          "choices": [
+            {
+              "text": "Perfetto, allora ecco i pantaloni vecchi. Grazie.",
+              "isCorrect": true,
+              "feedback": "Handing over the item to be returned."
+            },
+            {
+              "text": "Perfetto, allora ecco i gatti vecchi. Grazie.",
+              "isCorrect": false,
+              "feedback": "You are returning pants, not cats."
+            },
+            {
+              "text": "Perfetto, allora ecco i treni vecchi. Grazie.",
+              "isCorrect": false,
+              "feedback": "No trains involved here."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco a lei lo scontrino aggiornato. Buona giornata!",
+          "english": "Here is your updated receipt. Have a nice day!",
+          "choices": [
+            {
+              "text": "Grazie mille e arrivederci alla prossima volta!",
+              "isCorrect": true,
+              "feedback": "Polite farewell."
+            },
+            {
+              "text": "Grazie mille e arrivederci alla prossima spiaggia!",
+              "isCorrect": false,
+              "feedback": "You are in a shop, not at a beach."
+            },
+            {
+              "text": "Grazie mille e arrivederci alla prossima cena!",
+              "isCorrect": false,
+              "feedback": "This is not a restaurant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_for_refund",
+      "title": "Asking for a Refund",
+      "description": "Request your money back for a returned item.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Posso aiutarla con quel pacchetto?",
+          "english": "Good morning. Can I help you with that package?",
+          "choices": [
+            {
+              "text": "Sì, vorrei restituire questo orologio e avere un rimborso.",
+              "isCorrect": true,
+              "feedback": "Clearly stating you want a refund."
+            },
+            {
+              "text": "Sì, vorrei cucinare questo orologio e avere un pranzo.",
+              "isCorrect": false,
+              "feedback": "You don't cook watches!"
+            },
+            {
+              "text": "Sì, vorrei lavare questo orologio e avere un sapone.",
+              "isCorrect": false,
+              "feedback": "You are at a shop for a refund, not laundry."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. C'è qualche problema tecnico con l'orologio?",
+          "english": "I see. Is there some technical problem with the watch?",
+          "choices": [
+            {
+              "text": "Sì, non funziona bene. Si ferma ogni ora.",
+              "isCorrect": true,
+              "feedback": "Explaining the technical issue."
+            },
+            {
+              "text": "Sì, non parla bene. Dice sempre 'bau bau'.",
+              "isCorrect": false,
+              "feedback": "Watches don't talk like dogs!"
+            },
+            {
+              "text": "Sì, non mangia bene. Vuole solo della pasta.",
+              "isCorrect": false,
+              "feedback": "Watches don't eat!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Mi dispiace. Ha lo scontrino per procedere con il reso?",
+          "english": "I'm sorry. Do you have the receipt to proceed with the return?",
+          "choices": [
+            {
+              "text": "Sì, l'ho portato. Posso avere i soldi indietro?",
+              "isCorrect": true,
+              "feedback": "Asking for the refund directly."
+            },
+            {
+              "text": "Sì, l'ho portato. Posso avere i fiori indietro?",
+              "isCorrect": false,
+              "feedback": "You want your money ('soldi'), not flowers."
+            },
+            {
+              "text": "Sì, l'ho portato. Posso avere i cani indietro?",
+              "isCorrect": false,
+              "feedback": "No dogs involved in this transaction."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Come ha pagato l'articolo? In contanti o con carta?",
+          "english": "How did you pay for the item? In cash or with a card?",
+          "choices": [
+            {
+              "text": "Ho pagato con la carta di credito, dieci giorni fa.",
+              "isCorrect": true,
+              "feedback": "Providing the payment method is important for refunds."
+            },
+            {
+              "text": "Ho pagato con la carta igienica, dieci giorni fa.",
+              "isCorrect": false,
+              "feedback": "Toilet paper is not a valid currency!"
+            },
+            {
+              "text": "Ho pagato con la carta geografica, dieci giorni fa.",
+              "isCorrect": false,
+              "feedback": "Maps are not used for payment."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene. Possiamo rimborsare l'importo sulla stessa carta.",
+          "english": "Alright. We can refund the amount to the same card.",
+          "choices": [
+            {
+              "text": "Perfetto. Quanto tempo ci vuole per vedere il rimborso?",
+              "isCorrect": true,
+              "feedback": "Good question about the refund timing."
+            },
+            {
+              "text": "Perfetto. Quanto tempo ci vuole per vedere il film?",
+              "isCorrect": false,
+              "feedback": "You are talking about a refund, not a movie."
+            },
+            {
+              "text": "Perfetto. Quanto tempo ci vuole per vedere il mare?",
+              "isCorrect": false,
+              "feedback": "This is irrelevant to the shop transaction."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Di solito servono dai tre ai cinque giorni lavorativi.",
+          "english": "Usually it takes three to five business days.",
+          "choices": [
+            {
+              "text": "Va bene, non c'è problema. Posso avere una ricevuta?",
+              "isCorrect": true,
+              "feedback": "Asking for a receipt of the refund operation."
+            },
+            {
+              "text": "Va bene, non c'è problema. Posso avere una mela?",
+              "isCorrect": false,
+              "feedback": "This is not a fruit shop."
+            },
+            {
+              "text": "Va bene, non c'è problema. Posso avere una sedia?",
+              "isCorrect": false,
+              "feedback": "You don't need a chair, you need a receipt."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente. Sto stampando la ricevuta del rimborso proprio ora.",
+          "english": "Certainly. I am printing the refund receipt right now.",
+          "choices": [
+            {
+              "text": "Grazie. Deve firmare anche lei questo documento?",
+              "isCorrect": true,
+              "feedback": "Asking about the procedure details."
+            },
+            {
+              "text": "Grazie. Deve cantare anche lei questo documento?",
+              "isCorrect": false,
+              "feedback": "You don't sing documents!"
+            },
+            {
+              "text": "Grazie. Deve mangiare anche lei questo documento?",
+              "isCorrect": false,
+              "feedback": "Documents are not edible."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "No, basta la transazione elettronica. Ecco la sua copia.",
+          "english": "No, the electronic transaction is enough. Here is your copy.",
+          "choices": [
+            {
+              "text": "Molto bene. Devo restituire anche la scatola originale?",
+              "isCorrect": true,
+              "feedback": "Good question about the packaging."
+            },
+            {
+              "text": "Molto bene. Devo restituire anche la pizza originale?",
+              "isCorrect": false,
+              "feedback": "There was no pizza, only an orologio (watch)."
+            },
+            {
+              "text": "Molto bene. Devo restituire anche la bicicletta originale?",
+              "isCorrect": false,
+              "feedback": "You are returning a watch, not a bike."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, grazie. È meglio avere tutto l'imballaggio completo.",
+          "english": "Yes, please. It's better to have all the complete packaging.",
+          "choices": [
+            {
+              "text": "Ecco la scatola con tutti i manuali dentro.",
+              "isCorrect": true,
+              "feedback": "Providing the complete packaging."
+            },
+            {
+              "text": "Ecco la scatola con tutti i pesci dentro.",
+              "isCorrect": false,
+              "feedback": "Don't put fish in the watch box!"
+            },
+            {
+              "text": "Ecco la scatola con tutti i vestiti dentro.",
+              "isCorrect": false,
+              "feedback": "The box should contain the watch manuals."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Tutto a posto. Le auguro una buona giornata!",
+          "english": "Perfect. Everything is settled. I wish you a good day!",
+          "choices": [
+            {
+              "text": "Grazie mille per la pazienza. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Polite conclusion."
+            },
+            {
+              "text": "Grazie mille per la colazione. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "This was a return, not a breakfast."
+            },
+            {
+              "text": "Grazie mille per la musica. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "No music was involved."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "store_credit_policy",
+      "title": "Store Credit Policy",
+      "description": "The store only offers credit instead of cash refunds.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Come posso aiutarti oggi in negozio?",
+          "english": "Hi! How can I help you today in the shop?",
+          "choices": [
+            {
+              "text": "Ciao. Vorrei restituire questo maglione, non mi piace.",
+              "isCorrect": true,
+              "feedback": "Straightforward explanation for the return."
+            },
+            {
+              "text": "Ciao. Vorrei restituire questo mare, non mi piace.",
+              "isCorrect": false,
+              "feedback": "You cannot return the sea!"
+            },
+            {
+              "text": "Ciao. Vorrei restituire questo sole, non mi piace.",
+              "isCorrect": false,
+              "feedback": "You cannot return the sun!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Va bene, ma per i resi offriamo solo un buono spesa.",
+          "english": "Alright, but for returns we only offer a store voucher.",
+          "choices": [
+            {
+              "text": "Ah, non fate rimborsi in contanti per gli articoli?",
+              "isCorrect": true,
+              "feedback": "Clarifying the refund policy."
+            },
+            {
+              "text": "Ah, non fate panini in contanti per gli articoli?",
+              "isCorrect": false,
+              "feedback": "You are asking about refunds, not sandwiches."
+            },
+            {
+              "text": "Ah, non fate sport in contanti per gli articoli?",
+              "isCorrect": false,
+              "feedback": "Irrelevant question about sports."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "No, è la nostra politica aziendale. Solo credito in negozio.",
+          "english": "No, it is our company policy. Only store credit.",
+          "choices": [
+            {
+              "text": "Capisco. Per quanto tempo è valido questo buono spesa?",
+              "isCorrect": true,
+              "feedback": "Smart question about the voucher's validity."
+            },
+            {
+              "text": "Capisco. Per quanto tempo è valido questo treno spesa?",
+              "isCorrect": false,
+              "feedback": "It's a 'buono spesa' (voucher), not a train."
+            },
+            {
+              "text": "Capisco. Per quanto tempo è valido questo cane spesa?",
+              "isCorrect": false,
+              "feedback": "There is no such thing as a 'cane spesa'."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Il buono è valido per sei mesi in tutti i nostri punti vendita.",
+          "english": "The voucher is valid for six months in all our stores.",
+          "choices": [
+            {
+              "text": "Va bene, sei mesi sono abbastanza. Lo accetto.",
+              "isCorrect": true,
+              "feedback": "Accepting the terms."
+            },
+            {
+              "text": "Va bene, sei mesi sono troppo freddi. Lo accetto.",
+              "isCorrect": false,
+              "feedback": "The duration is not 'fredda' (cold)."
+            },
+            {
+              "text": "Va bene, sei mesi sono troppo alti. Lo accetto.",
+              "isCorrect": false,
+              "feedback": "Duration is measured in time, not height."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Mi serve il maglione e lo scontrino per favore.",
+          "english": "Perfect. I need the sweater and the receipt please.",
+          "choices": [
+            {
+              "text": "Ecco qui tutto quanto. Il maglione è come nuovo.",
+              "isCorrect": true,
+              "feedback": "Providing the item and receipt."
+            },
+            {
+              "text": "Ecco qui tutto quanto. Il maglione è come un gatto.",
+              "isCorrect": false,
+              "feedback": "A sweater is not like a cat."
+            },
+            {
+              "text": "Ecco qui tutto quanto. Il maglione è come un film.",
+              "isCorrect": false,
+              "feedback": "Irrelevant comparison."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, vedo che le etichette sono ancora attaccate. Molto bene.",
+          "english": "Yes, I see the tags are still attached. Very well.",
+          "choices": [
+            {
+              "text": "Sì, non l'ho mai indossato, era solo un regalo sbagliato.",
+              "isCorrect": true,
+              "feedback": "Explaining why the item is in good condition."
+            },
+            {
+              "text": "Sì, non l'ho mai mangiato, era solo un regalo amaro.",
+              "isCorrect": false,
+              "feedback": "You don't eat sweaters!"
+            },
+            {
+              "text": "Sì, non l'ho mai guidato, era solo un regalo veloce.",
+              "isCorrect": false,
+              "feedback": "You don't drive sweaters!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Bene. Sto preparando il buono spesa per l'importo totale.",
+          "english": "Good. I am preparing the voucher for the total amount.",
+          "choices": [
+            {
+              "text": "Posso usare il buono anche durante i saldi?",
+              "isCorrect": true,
+              "feedback": "Good question about sales and discounts."
+            },
+            {
+              "text": "Posso usare il buono anche durante i temporali?",
+              "isCorrect": false,
+              "feedback": "The weather doesn't affect voucher usage!"
+            },
+            {
+              "text": "Posso usare il buono anche durante i sogni?",
+              "isCorrect": false,
+              "feedback": "Use it in reality, not in dreams."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, certo. Il buono è come denaro contante in questo negozio.",
+          "english": "Yes, sure. The voucher is like cash in this shop.",
+          "choices": [
+            {
+              "text": "Ottimo. È possibile spenderlo in più volte?",
+              "isCorrect": true,
+              "feedback": "Asking if the voucher can be used for multiple purchases."
+            },
+            {
+              "text": "Ottimo. È possibile nuotarlo in più volte?",
+              "isCorrect": false,
+              "feedback": "You spend money, you don't 'swim' it."
+            },
+            {
+              "text": "Ottimo. È possibile ballarlo in più volte?",
+              "isCorrect": false,
+              "feedback": "You don't dance with a voucher."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente. Ogni volta scaleremo l'importo speso dal totale.",
+          "english": "Certainly. Each time we will deduct the spent amount from the total.",
+          "choices": [
+            {
+              "text": "Molto comodo. Grazie per le informazioni chiare.",
+              "isCorrect": true,
+              "feedback": "Expressing satisfaction with the explanation."
+            },
+            {
+              "text": "Molto caldo. Grazie per le informazioni salate.",
+              "isCorrect": false,
+              "feedback": "Information is not 'salata' (salty)."
+            },
+            {
+              "text": "Molto alto. Grazie per le informazioni verdi.",
+              "isCorrect": false,
+              "feedback": "Colors and heights are not for information."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco il tuo buono. Arrivederci e a presto in negozio!",
+          "english": "Here is your voucher. Goodbye and see you soon in the shop!",
+          "choices": [
+            {
+              "text": "Grazie, arrivederci e buon lavoro!",
+              "isCorrect": true,
+              "feedback": "Friendly and professional goodbye."
+            },
+            {
+              "text": "Grazie, arrivederci e buon appetito!",
+              "isCorrect": false,
+              "feedback": "It's not mealtime necessarily."
+            },
+            {
+              "text": "Grazie, arrivederci e buon viaggio!",
+              "isCorrect": false,
+              "feedback": "The host is at work, not going on a trip."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

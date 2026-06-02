@@ -1,0 +1,613 @@
+{
+  "scenarioId": 106,
+  "conversations": [
+    {
+      "id": "conv_police_1",
+      "title": "Stolen Wallet",
+      "description": "Reporting a stolen wallet to the police.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Come posso aiutarla?",
+          "english": "Good morning. How can I help you?"
+        },
+        {
+          "id": "m2",
+          "role": "learner",
+          "text": "Buongiorno. Mi hanno rubato il portafoglio.",
+          "english": "Good morning. My wallet was stolen.",
+          "choices": [
+            {
+              "text": "Buongiorno. Mi hanno rubato il portafoglio.",
+              "english": "Good morning. My wallet was stolen.",
+              "isCorrect": true
+            },
+            {
+              "text": "Buongiorno. Mi hanno lavato la giacca blu.",
+              "english": "Good morning. They washed my blue jacket.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buongiorno. Mi hanno comprato un libro qui.",
+              "english": "Good morning. They bought me a book here.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Mi dispiace. Dove è successo?",
+          "english": "I'm sorry. Where did it happen?"
+        },
+        {
+          "id": "m4",
+          "role": "learner",
+          "text": "È successo sull'autobus, un'ora fa.",
+          "english": "It happened on the bus, an hour ago.",
+          "choices": [
+            {
+              "text": "È successo sull'autobus, un'ora fa.",
+              "english": "It happened on the bus, an hour ago.",
+              "isCorrect": true
+            },
+            {
+              "text": "È successo nel cinema, ieri sera.",
+              "english": "It happened in the cinema, last night.",
+              "isCorrect": false
+            },
+            {
+              "text": "È successo in piscina, tre ore fa.",
+              "english": "It happened in the pool, three hours ago.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Cosa c'era nel portafoglio?",
+          "english": "What was in the wallet?"
+        },
+        {
+          "id": "m6",
+          "role": "learner",
+          "text": "I miei documenti e un po' di soldi.",
+          "english": "My documents and some money.",
+          "choices": [
+            {
+              "text": "I miei documenti e un po' di soldi.",
+              "english": "My documents and some money.",
+              "isCorrect": true
+            },
+            {
+              "text": "Le mie chiavi e un po' di formaggio.",
+              "english": "My keys and some cheese.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il mio quaderno e una bella foto.",
+              "english": "My notebook and a nice photo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ha la sua carta d'identità?",
+          "english": "Do you have your ID card?"
+        },
+        {
+          "id": "m8",
+          "role": "learner",
+          "text": "No, era nel portafoglio rubato.",
+          "english": "No, it was in the stolen wallet.",
+          "choices": [
+            {
+              "text": "No, era nel portafoglio rubato.",
+              "english": "No, it was in the stolen wallet.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, era nel ristorante costoso.",
+              "english": "No, it was in the expensive restaurant.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, era nel cestino della spesa.",
+              "english": "No, it was in the shopping basket.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Dobbiamo fare una denuncia. Ha un altro documento?",
+          "english": "We need to file a report. Do you have another document?"
+        },
+        {
+          "id": "m10",
+          "role": "learner",
+          "text": "Sì, ho il mio passaporto in hotel.",
+          "english": "Yes, I have my passport at the hotel.",
+          "choices": [
+            {
+              "text": "Sì, ho il mio passaporto in hotel.",
+              "english": "Yes, I have my passport at the hotel.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, ho il mio gatto in camera.",
+              "english": "Yes, I have my cat in the room.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, ho il mio quaderno a scuola.",
+              "english": "Yes, I have my notebook at school.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conv_police_2",
+      "title": "Lost Passport",
+      "description": "Reporting a lost passport.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve. Prego, si accomodi.",
+          "english": "Hello. Please, take a seat."
+        },
+        {
+          "id": "m2",
+          "role": "learner",
+          "text": "Salve. Ho perso il mio passaporto.",
+          "english": "Hello. I lost my passport.",
+          "choices": [
+            {
+              "text": "Salve. Ho perso il mio passaporto.",
+              "english": "Hello. I lost my passport.",
+              "isCorrect": true
+            },
+            {
+              "text": "Salve. Ho letto il tuo messaggio.",
+              "english": "Hello. I read your message.",
+              "isCorrect": false
+            },
+            {
+              "text": "Salve. Ho mangiato la mia mela.",
+              "english": "Hello. I ate my apple.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Quando ha visto il passaporto l'ultima volta?",
+          "english": "When did you see the passport for the last time?"
+        },
+        {
+          "id": "m4",
+          "role": "learner",
+          "text": "L'ho visto ieri sera in albergo.",
+          "english": "I saw it last night in the hotel.",
+          "choices": [
+            {
+              "text": "L'ho visto ieri sera in albergo.",
+              "english": "I saw it last night in the hotel.",
+              "isCorrect": true
+            },
+            {
+              "text": "L'ho letto oggi pomeriggio a casa.",
+              "english": "I read it this afternoon at home.",
+              "isCorrect": false
+            },
+            {
+              "text": "L'ho preso stamattina in farmacia.",
+              "english": "I took it this morning at the pharmacy.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "È sicuro di non averlo dimenticato lì?",
+          "english": "Are you sure you didn't forget it there?"
+        },
+        {
+          "id": "m6",
+          "role": "learner",
+          "text": "Sì, ho già cercato dappertutto in camera.",
+          "english": "Yes, I already looked everywhere in the room.",
+          "choices": [
+            {
+              "text": "Sì, ho già cercato dappertutto in camera.",
+              "english": "Yes, I already looked everywhere in the room.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, ho già cucinato la pasta in cucina.",
+              "english": "Yes, I already cooked the pasta in the kitchen.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, ho già studiato tanto per l'esame.",
+              "english": "Yes, I already studied a lot for the exam.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Compili questo modulo, per favore.",
+          "english": "Fill out this form, please."
+        },
+        {
+          "id": "m8",
+          "role": "learner",
+          "text": "Va bene, ho bisogno di una penna.",
+          "english": "Alright, I need a pen.",
+          "choices": [
+            {
+              "text": "Va bene, ho bisogno di una penna.",
+              "english": "Alright, I need a pen.",
+              "isCorrect": true
+            },
+            {
+              "text": "Va bene, ho paura di quel cane.",
+              "english": "Alright, I am afraid of that dog.",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene, ho voglia di una pizza.",
+              "english": "Alright, I am craving a pizza.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco la penna. Scriva in stampatello.",
+          "english": "Here is the pen. Write in block letters."
+        },
+        {
+          "id": "m10",
+          "role": "learner",
+          "text": "Grazie mille per l'aiuto.",
+          "english": "Thank you very much for the help.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'aiuto.",
+              "english": "Thank you very much for the help.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie mille per il libro.",
+              "english": "Thank you very much for the book.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille per il caffè.",
+              "english": "Thank you very much for the coffee.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conv_police_3",
+      "title": "Stolen Phone",
+      "description": "Reporting a stolen cellphone.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Ha bisogno di aiuto?",
+          "english": "Good morning. Do you need help?"
+        },
+        {
+          "id": "m2",
+          "role": "learner",
+          "text": "Sì, qualcuno ha rubato il mio cellulare.",
+          "english": "Yes, someone stole my cellphone.",
+          "choices": [
+            {
+              "text": "Sì, qualcuno ha rubato il mio cellulare.",
+              "english": "Yes, someone stole my cellphone.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, qualcuno ha bevuto il mio tè verde.",
+              "english": "Yes, someone drank my green tea.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, qualcuno ha trovato il mio cappello.",
+              "english": "Yes, someone found my hat.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Dove si trovava quando è successo?",
+          "english": "Where were you when it happened?"
+        },
+        {
+          "id": "m4",
+          "role": "learner",
+          "text": "Ero in piazza, c'era molta gente.",
+          "english": "I was in the square, there were a lot of people.",
+          "choices": [
+            {
+              "text": "Ero in piazza, c'era molta gente.",
+              "english": "I was in the square, there were a lot of people.",
+              "isCorrect": true
+            },
+            {
+              "text": "Ero in teatro, c'era un bel film.",
+              "english": "I was in the theater, there was a nice movie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ero al mare, c'era molto freddo.",
+              "english": "I was at the sea, it was very cold.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Che marca e modello era il telefono?",
+          "english": "What brand and model was the phone?"
+        },
+        {
+          "id": "m6",
+          "role": "learner",
+          "text": "Era uno smartphone nero con una cover rossa.",
+          "english": "It was a black smartphone with a red cover.",
+          "choices": [
+            {
+              "text": "Era uno smartphone nero con una cover rossa.",
+              "english": "It was a black smartphone with a red cover.",
+              "isCorrect": true
+            },
+            {
+              "text": "Era una macchina blu con le ruote grandi.",
+              "english": "It was a blue car with big wheels.",
+              "isCorrect": false
+            },
+            {
+              "text": "Era una borsa verde con una tasca nuova.",
+              "english": "It was a green bag with a new pocket.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Conosce il numero di serie del telefono?",
+          "english": "Do you know the serial number of the phone?"
+        },
+        {
+          "id": "m8",
+          "role": "learner",
+          "text": "No, non lo ricordo a memoria.",
+          "english": "No, I don't remember it by heart.",
+          "choices": [
+            {
+              "text": "No, non lo ricordo a memoria.",
+              "english": "No, I don't remember it by heart.",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non ho bevuto molta acqua.",
+              "english": "No, I didn't drink much water.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, non ho visto quel ragazzo.",
+              "english": "No, I didn't see that boy.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Deve chiamare la sua compagnia telefonica per bloccarlo.",
+          "english": "You must call your phone company to block it."
+        },
+        {
+          "id": "m10",
+          "role": "learner",
+          "text": "Va bene, lo farò immediatamente.",
+          "english": "Alright, I will do it immediately.",
+          "choices": [
+            {
+              "text": "Va bene, lo farò immediatamente.",
+              "english": "Alright, I will do it immediately.",
+              "isCorrect": true
+            },
+            {
+              "text": "Va bene, lo berrò molto freddo.",
+              "english": "Alright, I will drink it very cold.",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene, lo leggerò velocemente.",
+              "english": "Alright, I will read it quickly.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conv_police_4",
+      "title": "Filing the Report",
+      "description": "Filing the police report with personal info.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Dobbiamo scrivere i suoi dati personali.",
+          "english": "We need to write your personal details."
+        },
+        {
+          "id": "m2",
+          "role": "learner",
+          "text": "Certo. Quali dati le servono?",
+          "english": "Sure. What details do you need?",
+          "choices": [
+            {
+              "text": "Certo. Quali dati le servono?",
+              "english": "Sure. What details do you need?",
+              "isCorrect": true
+            },
+            {
+              "text": "Certo. Quali libri le piacciono?",
+              "english": "Sure. What books do you like?",
+              "isCorrect": false
+            },
+            {
+              "text": "Certo. Quali scarpe le servono?",
+              "english": "Sure. What shoes do you need?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Il suo nome, cognome e data di nascita.",
+          "english": "Your name, surname and date of birth."
+        },
+        {
+          "id": "m4",
+          "role": "learner",
+          "text": "Mi chiamo Mario Rossi, nato il tre marzo.",
+          "english": "My name is Mario Rossi, born on the third of March.",
+          "choices": [
+            {
+              "text": "Mi chiamo Mario Rossi, nato il tre marzo.",
+              "english": "My name is Mario Rossi, born on the third of March.",
+              "isCorrect": true
+            },
+            {
+              "text": "Mi piace molto il pane cotto nel forno.",
+              "english": "I really like bread baked in the oven.",
+              "isCorrect": false
+            },
+            {
+              "text": "Voglio studiare molto bene la lezione.",
+              "english": "I want to study the lesson very well.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Qual è il suo indirizzo in Italia?",
+          "english": "What is your address in Italy?"
+        },
+        {
+          "id": "m6",
+          "role": "learner",
+          "text": "Alloggio all'Hotel Roma in centro.",
+          "english": "I am staying at Hotel Roma in the center.",
+          "choices": [
+            {
+              "text": "Alloggio all'Hotel Roma in centro.",
+              "english": "I am staying at Hotel Roma in the center.",
+              "isCorrect": true
+            },
+            {
+              "text": "Mangio una pizza grande in pizzeria.",
+              "english": "I eat a large pizza in the pizzeria.",
+              "isCorrect": false
+            },
+            {
+              "text": "Compro un regalo per mia madre oggi.",
+              "english": "I buy a gift for my mother today.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "E il suo numero di telefono per contattarla?",
+          "english": "And your phone number to contact you?"
+        },
+        {
+          "id": "m8",
+          "role": "learner",
+          "text": "Il mio numero è tre quattro due uno.",
+          "english": "My number is three four two one.",
+          "choices": [
+            {
+              "text": "Il mio numero è tre quattro due uno.",
+              "english": "My number is three four two one.",
+              "isCorrect": true
+            },
+            {
+              "text": "Il mio gatto è molto stanco oggi.",
+              "english": "My cat is very tired today.",
+              "isCorrect": false
+            },
+            {
+              "text": "Il mio amico è felice di vederti.",
+              "english": "My friend is happy to see you.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Firmi la denuncia qui in basso.",
+          "english": "Sign the report down here."
+        },
+        {
+          "id": "m10",
+          "role": "learner",
+          "text": "Ecco la firma. Cosa devo fare ora?",
+          "english": "Here is the signature. What should I do now?",
+          "choices": [
+            {
+              "text": "Ecco la firma. Cosa devo fare ora?",
+              "english": "Here is the signature. What should I do now?",
+              "isCorrect": true
+            },
+            {
+              "text": "Ecco la torta. Quando devo uscire da qui?",
+              "english": "Here is the cake. When should I leave here?",
+              "isCorrect": false
+            },
+            {
+              "text": "Ecco la borsa. Perché devo correre tanto?",
+              "english": "Here is the bag. Why do I have to run so much?",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
