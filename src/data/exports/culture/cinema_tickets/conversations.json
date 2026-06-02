@@ -1,0 +1,953 @@
+{
+  "scenarioId": 83,
+  "conversations": [
+    {
+      "id": "buying_tickets",
+      "title": "Il Biglietto",
+      "description": "Acquista i biglietti alla biglietteria.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Benvenuto al Cinema Astra. Quale film desidera vedere?",
+          "english": "Good morning! Welcome to Cinema Astra. Which movie would you like to see?",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei vedere l'ultimo film di animazione.",
+              "isCorrect": true,
+              "feedback": "Perfect choice. It's polite and clear."
+            },
+            {
+              "text": "Buongiorno, vorrei comprare un biglietto per domani.",
+              "isCorrect": false,
+              "feedback": "The host asked which movie you want to see now."
+            },
+            {
+              "text": "Ciao, mi serve un'informazione sugli orari dei film.",
+              "isCorrect": false,
+              "feedback": "Better to specify the film you are interested in."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Abbiamo uno spettacolo alle diciotto e uno alle venti. Quale preferisce?",
+          "english": "Certainly. We have a screening at 6:00 PM and one at 8:00 PM. Which do you prefer?",
+          "choices": [
+            {
+              "text": "Preferisco quello delle venti, grazie.",
+              "isCorrect": true,
+              "feedback": "Great, selecting a specific time."
+            },
+            {
+              "text": "Mi dispiace, ma a quell'ora ho un altro impegno.",
+              "isCorrect": false,
+              "feedback": "This doesn't help choose between the available times."
+            },
+            {
+              "text": "Va bene quello delle diciotto, se ci sono posti.",
+              "isCorrect": false,
+              "feedback": "A bit repetitive, but 'Preferisco quello delle venti' was the target."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo. Per quante persone?",
+          "english": "Excellent. For how many people?",
+          "choices": [
+            {
+              "text": "Per due persone, per favore.",
+              "isCorrect": true,
+              "feedback": "Simple and correct."
+            },
+            {
+              "text": "Siamo in dieci, c'è posto?",
+              "isCorrect": false,
+              "feedback": "That's a lot of people for a casual outing!"
+            },
+            {
+              "text": "Non mi piace il cinema.",
+              "isCorrect": false,
+              "feedback": "Then why are you here?"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Va bene. Sono due biglietti interi o uno è ridotto?",
+          "english": "Alright. Are they two full-price tickets or is one reduced?",
+          "choices": [
+            {
+              "text": "Uno è intero e uno è ridotto per studente.",
+              "isCorrect": true,
+              "feedback": "Good clarification."
+            },
+            {
+              "text": "Vorrei due biglietti ridotti per i miei figli.",
+              "isCorrect": false,
+              "feedback": "The question was about the two tickets you are buying."
+            },
+            {
+              "text": "Voglio uno sconto per il caffè.",
+              "isCorrect": false,
+              "feedback": "Wrong kind of discount."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo. Ha la tessera dello studente per il biglietto ridotto?",
+          "english": "Agreed. Do you have the student card for the reduced ticket?",
+          "choices": [
+            {
+              "text": "Sì, eccola qui.",
+              "isCorrect": true,
+              "feedback": "Correct, showing the required document."
+            },
+            {
+              "text": "No, l'ho persa.",
+              "isCorrect": false,
+              "feedback": "You need the card for the discount."
+            },
+            {
+              "text": "Eccola, prego.",
+              "isCorrect": false,
+              "feedback": "Wait for them to verify it."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Perfetto. In totale sono quindici euro. Come desidera pagare?",
+          "english": "Perfect. In total it's fifteen euros. How would you like to pay?",
+          "choices": [
+            {
+              "text": "Vorrei pagare con la carta di credito.",
+              "isCorrect": true,
+              "feedback": "A standard and clear response."
+            },
+            {
+              "text": "Posso pagare con un bacio?",
+              "isCorrect": false,
+              "feedback": "Not a valid currency at the box office!"
+            },
+            {
+              "text": "Posso pagare in contanti, va bene?",
+              "isCorrect": false,
+              "feedback": "Correct in context, but not the target answer here."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente. Può inserire la carta qui e digitare il codice.",
+          "english": "Certainly. You can insert the card here and type the code.",
+          "choices": [
+            {
+              "text": "Fatto. Devo firmare lo scontrino?",
+              "isCorrect": true,
+              "feedback": "Good follow-up question."
+            },
+            {
+              "text": "La mia carta non funziona mai.",
+              "isCorrect": false,
+              "feedback": "A bit too much personal information."
+            },
+            {
+              "text": "Dov'è l'uscita di sicurezza?",
+              "isCorrect": false,
+              "feedback": "Wait until you are inside!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "No, non serve la firma. Ecco lo scontrino e i vostri biglietti.",
+          "english": "No, a signature isn't needed. Here is the receipt and your tickets.",
+          "choices": [
+            {
+              "text": "Grazie mille. In quale sala è il film?",
+              "isCorrect": true,
+              "feedback": "Asking for the screen number is the next logical step."
+            },
+            {
+              "text": "Posso avere un altro scontrino?",
+              "isCorrect": false,
+              "feedback": "One is usually enough."
+            },
+            {
+              "text": "Grazie, dove posso comprare dell'acqua?",
+              "isCorrect": false,
+              "feedback": "Focus on finding the screening room first."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Il film è nella Sala 4. È proprio in fondo al corridoio.",
+          "english": "The movie is in Room 4. It's right at the end of the hallway.",
+          "choices": [
+            {
+              "text": "Va bene, ho capito. Sala 4 in fondo al corridoio.",
+              "isCorrect": true,
+              "feedback": "Confirming the information received."
+            },
+            {
+              "text": "Perfetto, allora vado subito verso la sala 4.",
+              "isCorrect": false,
+              "feedback": "A bit redundant with the correct answer."
+            },
+            {
+              "text": "Grazie dell'aiuto, buona serata a lei allora.",
+              "isCorrect": false,
+              "feedback": "Polite, but you should confirm the room number."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego! Vi auguro una buona visione e un buon divertimento.",
+          "english": "You're welcome! I wish you a good viewing and a good time.",
+          "choices": [
+            {
+              "text": "Grazie ancora, buona giornata!",
+              "isCorrect": true,
+              "feedback": "A polite way to end the interaction."
+            },
+            {
+              "text": "Grazie mille, buona serata anche a lei!",
+              "isCorrect": false,
+              "feedback": "Very similar, but 'buona giornata' matches the 'Buongiorno' start."
+            },
+            {
+              "text": "Mi dà un popcorn gratis?",
+              "isCorrect": false,
+              "feedback": "You have to buy those at the bar!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "choosing_seats",
+      "title": "Scegliere i posti",
+      "description": "Scegli dove sederti all'interno della sala.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Volete scegliere i posti o preferite che il sistema li assegni automaticamente?",
+          "english": "Do you want to choose the seats or do you prefer the system to assign them automatically?",
+          "choices": [
+            {
+              "text": "Vorremmo scegliere i posti noi, se possibile.",
+              "isCorrect": true,
+              "feedback": "Clear preference expressed."
+            },
+            {
+              "text": "Voglio sedermi sul pavimento.",
+              "isCorrect": false,
+              "feedback": "That's not allowed in a cinema!"
+            },
+            {
+              "text": "Non mi interessa dove mi siedo.",
+              "isCorrect": false,
+              "feedback": "Then you should have said 'automaticamente'."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Ecco la mappa della sala. Preferite stare davanti, al centro o in fondo?",
+          "english": "Certainly. Here is the map of the room. Do you prefer to be in the front, in the middle, or in the back?",
+          "choices": [
+            {
+              "text": "Preferiamo stare al centro, per vedere bene lo schermo.",
+              "isCorrect": true,
+              "feedback": "The center usually offers the best view."
+            },
+            {
+              "text": "Preferiamo la prima fila per stare vicini allo schermo.",
+              "isCorrect": false,
+              "feedback": "Valid choice, but not the target for this lesson."
+            },
+            {
+              "text": "Preferisco stare sotto lo schermo.",
+              "isCorrect": false,
+              "feedback": "That might be too close for comfort."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Al centro abbiamo i posti nella fila otto. Vi vanno bene?",
+          "english": "In the middle, we have seats in row eight. Are those okay for you?",
+          "choices": [
+            {
+              "text": "Sì, la fila otto mi sembra perfetta.",
+              "isCorrect": true,
+              "feedback": "Agreement with the suggestion."
+            },
+            {
+              "text": "No, la fila otto è troppo fortunata.",
+              "isCorrect": false,
+              "feedback": "Nonsense reasoning."
+            },
+            {
+              "text": "No, preferirei stare un po' più indietro.",
+              "isCorrect": false,
+              "feedback": "Possible, but try to agree with the host for now."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. Preferite i posti vicino al corridoio o più verso il centro della fila?",
+          "english": "Excellent. Do you prefer seats near the aisle or more towards the center of the row?",
+          "choices": [
+            {
+              "text": "Preferiamo i posti vicino al corridoio, grazie.",
+              "isCorrect": true,
+              "feedback": "Good choice for easy access."
+            },
+            {
+              "text": "Voglio sedermi sopra il corridoio.",
+              "isCorrect": false,
+              "feedback": "You mean 'near', not 'on top of'!"
+            },
+            {
+              "text": "Meglio al centro della fila per vedere meglio.",
+              "isCorrect": false,
+              "feedback": "Valid, but let's stick with the aisle choice."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo, allora i posti 12 e 13 della fila otto. Sono proprio accanto al corridoio.",
+          "english": "Agreed, then seats 12 and 13 of row eight. They are right next to the aisle.",
+          "choices": [
+            {
+              "text": "Perfetto, prendiamo questi due posti.",
+              "isCorrect": true,
+              "feedback": "Confirming the specific seats."
+            },
+            {
+              "text": "Voglio il posto numero mille.",
+              "isCorrect": false,
+              "feedback": "Again, the room isn't that big!"
+            },
+            {
+              "text": "Questi posti sono sporchi.",
+              "isCorrect": false,
+              "feedback": "How do you know? You haven't entered the room yet!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Va bene. Ricordate che la Sala 4 è al primo piano. C'è l'ascensore se serve.",
+          "english": "Alright. Remember that Room 4 is on the first floor. There is an elevator if needed.",
+          "choices": [
+            {
+              "text": "Grazie, useremo le scale. Fa bene fare un po' di movimento.",
+              "isCorrect": true,
+              "feedback": "A healthy and polite choice."
+            },
+            {
+              "text": "D'accordo, prenderemo l'ascensore allora, grazie.",
+              "isCorrect": false,
+              "feedback": "Fine, but the target is to use the stairs."
+            },
+            {
+              "text": "Va bene, spero che le scale non siano troppe.",
+              "isCorrect": false,
+              "feedback": "A bit hesitant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Le scale sono proprio qui a sinistra. Avete bisogno di altro?",
+          "english": "The stairs are right here on the left. Do you need anything else?",
+          "choices": [
+            {
+              "text": "No grazie, per ora siamo a posto così.",
+              "isCorrect": true,
+              "feedback": "Clear and polite."
+            },
+            {
+              "text": "Sì, vorrei sapere dove sono i servizi igienici.",
+              "isCorrect": false,
+              "feedback": "Good question, but not the target right now."
+            },
+            {
+              "text": "No, abbiamo già tutto quello che ci serve.",
+              "isCorrect": false,
+              "feedback": "Very similar to the correct answer."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "D'accordo. Vi ricordo che lo spettacolo inizia tra dieci minuti.",
+          "english": "Agreed. I remind you that the show starts in ten minutes.",
+          "choices": [
+            {
+              "text": "Sì, grazie. Abbiamo tutto il tempo per accomodarci.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the time limit."
+            },
+            {
+              "text": "Perfetto, allora andiamo subito a comprare i popcorn.",
+              "isCorrect": false,
+              "feedback": "Better, then we go buy popcorn immediately."
+            },
+            {
+              "text": "Va bene, allora facciamo in fretta per non fare tardi.",
+              "isCorrect": false,
+              "feedback": "Okay, then let's hurry so we're not late."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, la sala è già aperta. Potete già entrare se volete.",
+          "english": "Yes, the room is already open. You can enter now if you want.",
+          "choices": [
+            {
+              "text": "Grazie dell'informazione, entriamo subito.",
+              "isCorrect": true,
+              "feedback": "Decisive action."
+            },
+            {
+              "text": "No, preferiamo aspettare che finisca la pubblicità.",
+              "isCorrect": false,
+              "feedback": "No, we prefer to wait for the commercials to end."
+            },
+            {
+              "text": "Scusi, ma ci sono ancora molti posti liberi in sala?",
+              "isCorrect": false,
+              "feedback": "Excuse me, but are there still many free seats in the hall?"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bene. Godetevi il film sui vostri posti in fila otto!",
+          "english": "Good. Enjoy the movie in your seats in row eight!",
+          "choices": [
+            {
+              "text": "Grazie mille, arrivederci!",
+              "isCorrect": true,
+              "feedback": "A friendly goodbye."
+            },
+            {
+              "text": "Non mi siedo mai.",
+              "isCorrect": false,
+              "feedback": "That will be tired for a whole movie."
+            },
+            {
+              "text": "Voglio cambiare di nuovo posto.",
+              "isCorrect": false,
+              "feedback": "A bit late for that!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "language_options",
+      "title": "Lingua e sottotitoli",
+      "description": "Chiedi informazioni sulla lingua del film e sui sottotitoli.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarla con qualche informazione sulla programmazione?",
+          "english": "Good morning! Can I help you with some information about the programming?",
+          "choices": [
+            {
+              "text": "Sì, vorrei sapere se il film è in lingua originale.",
+              "isCorrect": true,
+              "feedback": "A very common and useful question for language learners."
+            },
+            {
+              "text": "Vorrei sapere se ci sono film per bambini oggi.",
+              "isCorrect": false,
+              "feedback": "The host asked about programming in general, but let's focus on VO."
+            },
+            {
+              "text": "Mi scusi, può dirmi quanto dura lo spettacolo?",
+              "isCorrect": false,
+              "feedback": "Good question, but not the focus here."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il film delle venti è in lingua originale con i sottotitoli in italiano. Le va bene?",
+          "english": "The 8:00 PM movie is in the original language with Italian subtitles. Is that okay for you?",
+          "choices": [
+            {
+              "text": "Sì, perfetto. Mi piace guardare i film con i sottotitoli.",
+              "isCorrect": true,
+              "feedback": "Positive confirmation."
+            },
+            {
+              "text": "No, preferisco il film doppiato in italiano, grazie.",
+              "isCorrect": false,
+              "feedback": "Valid, but we are looking for interest in the original version."
+            },
+            {
+              "text": "Sì, ma vorrei i sottotitoli in inglese se possibile.",
+              "isCorrect": false,
+              "feedback": "Unlikely in an Italian cinema."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottima scelta. In questo modo si può apprezzare meglio la recitazione originale.",
+          "english": "Great choice. This way you can better appreciate the original acting.",
+          "choices": [
+            {
+              "text": "Concordo, è molto meglio per imparare la lingua.",
+              "isCorrect": true,
+              "feedback": "Adding a valid reason for the choice."
+            },
+            {
+              "text": "Non mi interessa la lingua, voglio solo vedere il film.",
+              "isCorrect": false,
+              "feedback": "A bit dismissive of the host's comment."
+            },
+            {
+              "text": "Preferisco il doppiaggio perché non amo leggere i testi.",
+              "isCorrect": false,
+              "feedback": "Fair point, but not the consensus here."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto! Ci sono anche altre proiezioni doppiate in italiano nel pomeriggio.",
+          "english": "Exactly! There are also other screenings dubbed in Italian in the afternoon.",
+          "choices": [
+            {
+              "text": "Preferisco la versione originale, grazie mille.",
+              "isCorrect": true,
+              "feedback": "Sticking to the original preference."
+            },
+            {
+              "text": "Forse verrò un altro giorno per la versione italiana.",
+              "isCorrect": false,
+              "feedback": "Changing plans unnecessarily."
+            },
+            {
+              "text": "Il pomeriggio è troppo caldo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the movie language."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Nessun problema. Allora per lei due biglietti per la versione originale delle venti.",
+          "english": "No problem. So for you, two tickets for the 8:00 PM original version.",
+          "choices": [
+            {
+              "text": "Sì, due biglietti per favore. Quanto costano?",
+              "isCorrect": true,
+              "feedback": "Asking for the price is essential."
+            },
+            {
+              "text": "Va bene, spero che ci siano ancora dei posti liberi.",
+              "isCorrect": false,
+              "feedback": "The host is already issuing them."
+            },
+            {
+              "text": "Il biglietto è un pezzo di carta.",
+              "isCorrect": false,
+              "feedback": "A bit too literal."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sono otto euro l'uno, quindi sedici euro in totale.",
+          "english": "They are eight euros each, so sixteen euros in total.",
+          "choices": [
+            {
+              "text": "Ecco a lei venti euro. Può tenere il resto.",
+              "isCorrect": true,
+              "feedback": "A very generous gesture!"
+            },
+            {
+              "text": "È troppo caro, voglio pagare un euro.",
+              "isCorrect": false,
+              "feedback": "Prices are usually fixed."
+            },
+            {
+              "text": "Non ho soldi, ho solo sassi.",
+              "isCorrect": false,
+              "feedback": "Stones are not accepted as payment."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Oh, grazie mille! È molto gentile. Ecco i suoi biglietti.",
+          "english": "Oh, thank you so much! That's very kind. Here are your tickets.",
+          "choices": [
+            {
+              "text": "Prego! I sottotitoli sono grandi e facili da leggere?",
+              "isCorrect": true,
+              "feedback": "A practical question about visibility."
+            },
+            {
+              "text": "Spero di sì, altrimenti farò fatica a capire tutto.",
+              "isCorrect": false,
+              "feedback": "A bit pessimistic."
+            },
+            {
+              "text": "Sì, spero che siano posizionati bene sullo schermo.",
+              "isCorrect": false,
+              "feedback": "Valid concern, but asking is better."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, sono molto chiari. Usiamo un carattere grande per facilitare la lettura.",
+          "english": "Yes, they are very clear. We use a large font to make reading easier.",
+          "choices": [
+            {
+              "text": "Ottimo, la mia vista non è più quella di una volta.",
+              "isCorrect": true,
+              "feedback": "A bit of natural conversation."
+            },
+            {
+              "text": "Voglio i sottotitoli invisibili.",
+              "isCorrect": false,
+              "feedback": "Then you won't be able to read them!"
+            },
+            {
+              "text": "Spero che non coprano troppo le immagini del film.",
+              "isCorrect": false,
+              "feedback": "They usually don't."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Non si preoccupi, vedrà benissimo. La sala è la numero due.",
+          "english": "Don't worry, you'll see very well. The room is number two.",
+          "choices": [
+            {
+              "text": "Grazie. Spero che il film sia interessante.",
+              "isCorrect": true,
+              "feedback": "Expressing a hope for the experience."
+            },
+            {
+              "text": "La sala numero due è stregata.",
+              "isCorrect": false,
+              "feedback": "Unlikely in a modern cinema!"
+            },
+            {
+              "text": "Voglio la sala numero un milione.",
+              "isCorrect": false,
+              "feedback": "Exaggeration again!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Lo sarà sicuramente! È un film pluripremiato. Buona visione!",
+          "english": "It certainly will be! It's an award-winning film. Enjoy the movie!",
+          "choices": [
+            {
+              "text": "Grazie di tutto, arrivederci!",
+              "isCorrect": true,
+              "feedback": "A polite conclusion."
+            },
+            {
+              "text": "Il premio è fatto di cioccolato.",
+              "isCorrect": false,
+              "feedback": "Usually they are gold or silver plated!"
+            },
+            {
+              "text": "Non voglio guardare.",
+              "isCorrect": false,
+              "feedback": "You're already at the door!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buying_snacks",
+      "title": "Popcorn e bibite",
+      "description": "Compra qualcosa da mangiare e da bere prima del film.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Desiderate qualcosa da sgranocchiare durante il film? Abbiamo popcorn freschi!",
+          "english": "Would you like something to snack on during the movie? We have fresh popcorn!",
+          "choices": [
+            {
+              "text": "Sì, vorrei un pacco di popcorn, per favore.",
+              "isCorrect": true,
+              "feedback": "The classic cinema snack."
+            },
+            {
+              "text": "Voglio una bistecca alla fiorentina.",
+              "isCorrect": false,
+              "feedback": "Not at the cinema snack bar!"
+            },
+            {
+              "text": "Preferisco una confezione di patatine, grazie.",
+              "isCorrect": false,
+              "feedback": "They might have them, but let's go with popcorn."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Lo preferisce salato o dolce? Abbiamo anche quello al caramello.",
+          "english": "Do you prefer it salty or sweet? We also have caramel ones.",
+          "choices": [
+            {
+              "text": "Lo preferisco salato, quello classico.",
+              "isCorrect": true,
+              "feedback": "A solid choice."
+            },
+            {
+              "text": "Lo voglio piccante come il fuoco.",
+              "isCorrect": false,
+              "feedback": "We don't have that version!"
+            },
+            {
+              "text": "Preferisco il sale senza popcorn.",
+              "isCorrect": false,
+              "feedback": "That doesn't sound very tasty."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene. Che dimensione desidera? Piccolo, medio o grande?",
+          "english": "Alright. What size would you like? Small, medium, or large?",
+          "choices": [
+            {
+              "text": "Prendo quello medio, grazie.",
+              "isCorrect": true,
+              "feedback": "The balanced option."
+            },
+            {
+              "text": "Voglio un pacco grande come una casa.",
+              "isCorrect": false,
+              "feedback": "You wouldn't be able to carry it!"
+            },
+            {
+              "text": "Il piccolo è troppo piccolo.",
+              "isCorrect": false,
+              "feedback": "Then medium is a good alternative."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Desidera anche qualcosa da bere? Abbiamo bibite gassate e acqua.",
+          "english": "Perfect. Would you like something to drink too? We have sodas and water.",
+          "choices": [
+            {
+              "text": "Sì, una bottiglia d'acqua naturale, per favore.",
+              "isCorrect": true,
+              "feedback": "A healthy choice."
+            },
+            {
+              "text": "Voglio del vino rosso d'annata.",
+              "isCorrect": false,
+              "feedback": "We only serve soft drinks here."
+            },
+            {
+              "text": "No grazie, ho già una bibita nella mia borsa.",
+              "isCorrect": false,
+              "feedback": "You shouldn't bring outside drinks!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Acqua naturale da mezzo litro, va bene. Desidera del ghiaccio?",
+          "english": "Half-liter still water, okay. Would you like some ice?",
+          "choices": [
+            {
+              "text": "No grazie, va bene così, senza ghiaccio.",
+              "isCorrect": true,
+              "feedback": "Simple and clear."
+            },
+            {
+              "text": "Voglio un intero iceberg.",
+              "isCorrect": false,
+              "feedback": "That won't fit in your bottle!"
+            },
+            {
+              "text": "Il ghiaccio è troppo freddo.",
+              "isCorrect": false,
+              "feedback": "By definition, yes!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo. C'è un'offerta speciale: popcorn medio e bibita a soli dieci euro. Le interessa?",
+          "english": "Agreed. There's a special offer: medium popcorn and a drink for only ten euros. Are you interested?",
+          "choices": [
+            {
+              "text": "Sì, mi sembra un'ottima offerta. Accetto!",
+              "isCorrect": true,
+              "feedback": "Smart shopping!"
+            },
+            {
+              "text": "No grazie, preferisco prendere solo l'acqua.",
+              "isCorrect": false,
+              "feedback": "But it's a good deal!"
+            },
+            {
+              "text": "Dieci euro sono troppi per un popcorn.",
+              "isCorrect": false,
+              "feedback": "It's a combo deal!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottimo. Allora sono dieci euro in totale. Altro?",
+          "english": "Great. So that's ten euros in total. Anything else?",
+          "choices": [
+            {
+              "text": "Vorrei anche delle caramelle gommose, se le avete.",
+              "isCorrect": true,
+              "feedback": "A sweet addition to the snacks."
+            },
+            {
+              "text": "No grazie, i popcorn sono sufficienti per ora.",
+              "isCorrect": false,
+              "feedback": "Fine, but adding candy is the goal."
+            },
+            {
+              "text": "Le caramelle sono appiccicose.",
+              "isCorrect": false,
+              "feedback": "Gummy candies usually are!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente, le abbiamo proprio qui davanti. Quale gusto preferisce?",
+          "english": "Certainly, we have them right here in front. Which flavor do you prefer?",
+          "choices": [
+            {
+              "text": "Prendo quelle alla frutta, grazie.",
+              "isCorrect": true,
+              "feedback": "A popular choice."
+            },
+            {
+              "text": "Voglio il gusto formaggio.",
+              "isCorrect": false,
+              "feedback": "We don't have cheese-flavored gummies!"
+            },
+            {
+              "text": "La frutta è per le scimmie.",
+              "isCorrect": false,
+              "feedback": "That's quite rude!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco a lei le caramelle. Il totale aggiornato è di tredici euro.",
+          "english": "Here are your candies. The updated total is thirteen euros.",
+          "choices": [
+            {
+              "text": "Ecco a lei i tredici euro. Grazie.",
+              "isCorrect": true,
+              "feedback": "Completing the transaction."
+            },
+            {
+              "text": "Posso pagare con il bancomat, per favore?",
+              "isCorrect": false,
+              "feedback": "Fine, but the target was cash/direct payment here."
+            },
+            {
+              "text": "Non ho più soldi.",
+              "isCorrect": false,
+              "feedback": "You should have checked before adding the candies!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie a lei. Ecco il resto e buona visione del film con i vostri snack!",
+          "english": "Thank you. Here is your change and enjoy the movie with your snacks!",
+          "choices": [
+            {
+              "text": "Grazie mille e buona serata!",
+              "isCorrect": true,
+              "feedback": "A polite exit."
+            },
+            {
+              "text": "Gli snack sono troppo pesanti.",
+              "isCorrect": false,
+              "feedback": "You can do it!"
+            },
+            {
+              "text": "Non voglio il resto.",
+              "isCorrect": false,
+              "feedback": "The cinema staff will appreciate the tip!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

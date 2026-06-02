@@ -1,0 +1,953 @@
+{
+  "scenarioId": 92,
+  "conversations": [
+    {
+      "id": "museum_visit",
+      "title": "Al Museo della Città",
+      "description": "Visit the local history museum and talk to the guide about the town's origins.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Benvenuti al Museo di Storia Locale. Siete qui per imparare la storia della nostra città?",
+          "english": "Good morning! Welcome to the Local History Museum. Are you here to learn the history of our city?",
+          "choices": [
+            {
+              "text": "Sì, buongiorno. Vorrei sapere quando è stata fondata questa città.",
+              "isCorrect": true,
+              "feedback": "Perfect! You're starting with a great historical question."
+            },
+            {
+              "text": "No, cerco solo un posto dove mangiare una pizza molto buona.",
+              "isCorrect": false,
+              "feedback": "Wrong place! This is a museum, not a restaurant."
+            },
+            {
+              "text": "Voglio comprare dei vestiti nuovi per la festa di stasera.",
+              "isCorrect": false,
+              "feedback": "This is a museum about history, not a shopping mall."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "La nostra città ha origini molto antiche, risale all'epoca romana. È un periodo che vi interessa?",
+          "english": "Our city has very ancient origins, dating back to the Roman era. Is it a period that interests you?",
+          "choices": [
+            {
+              "text": "Sì, mi interessa molto il passato romano. Ci sono monumenti di quel periodo?",
+              "isCorrect": true,
+              "feedback": "Great inquiry! The Roman era is fundamental to Italian history."
+            },
+            {
+              "text": "No, preferisco guardare i video moderni su internet ora.",
+              "isCorrect": false,
+              "feedback": "Try to focus on the museum's history for now."
+            },
+            {
+              "text": "I romani mangiavano il gelato ogni giorno al bar?",
+              "isCorrect": false,
+              "feedback": "Incorrect! Gelato and bars are much more modern concepts."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certo, abbiamo i resti di un antico teatro romano proprio vicino alla piazza principale.",
+          "english": "Of course, we have the remains of an ancient Roman theater right near the main square.",
+          "choices": [
+            {
+              "text": "Incredibile! È ancora possibile visitare il teatro romano oggi?",
+              "isCorrect": true,
+              "feedback": "Yes! Many Roman theaters are still used for events today."
+            },
+            {
+              "text": "Il teatro è troppo noioso, voglio andare allo stadio.",
+              "isCorrect": false,
+              "feedback": "A bit rude! Historical theaters are architectural wonders."
+            },
+            {
+              "text": "Posso dormire dentro il teatro antico questa notte?",
+              "isCorrect": false,
+              "feedback": "No, it is a protected historical site, not a hotel."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, è aperto al pubblico. Ma qui nel museo potete vedere i documenti originali dell'epoca.",
+          "english": "Yes, it is open to the public. But here in the museum you can see original documents from the era.",
+          "choices": [
+            {
+              "text": "Dove sono questi documenti? Mi piacerebbe vedere l'archivio storico.",
+              "isCorrect": true,
+              "feedback": "Excellent! The archive is where the real history is kept."
+            },
+            {
+              "text": "Non voglio leggere, voglio solo fare delle foto per Instagram.",
+              "isCorrect": false,
+              "feedback": "Reading the documents helps you understand the context better."
+            },
+            {
+              "text": "Questi documenti sono scritti in inglese o in cinese?",
+              "isCorrect": false,
+              "feedback": "They are likely in Latin or ancient Italian!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "L'archivio è al primo piano. Abbiamo anche una mostra speciale sul Medioevo. Volete vederla?",
+          "english": "The archive is on the first floor. We also have a special exhibition on the Middle Ages. Do you want to see it?",
+          "choices": [
+            {
+              "text": "Sì, volentieri. Il Medioevo è un secolo molto affascinante per me.",
+              "isCorrect": true,
+              "feedback": "Technically a period of many centuries, but you've got the spirit!"
+            },
+            {
+              "text": "Il Medioevo è troppo vecchio, preferisco il futuro e i robot.",
+              "isCorrect": false,
+              "feedback": "You're in a history museum! Embrace the past."
+            },
+            {
+              "text": "Nel Medioevo c'erano le macchine veloci e gli aerei?",
+              "isCorrect": false,
+              "feedback": "No! Those are inventions from the last two centuries."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "In quella sezione spieghiamo come vivevano i cittadini molti secoli fa. È molto diverso da oggi.",
+          "english": "In that section we explain how citizens lived many centuries ago. It is very different from today.",
+          "choices": [
+            {
+              "text": "Immagino. Qual era il lavoro più comune per un cittadino allora?",
+              "isCorrect": true,
+              "feedback": "Great question about daily life in the past."
+            },
+            {
+              "text": "Facevano tutti gli influencer e lavoravano con il computer?",
+              "isCorrect": false,
+              "feedback": "Definitely not! Computers didn't exist back then."
+            },
+            {
+              "text": "Tutti i cittadini erano molto ricchi e avevano castelli?",
+              "isCorrect": false,
+              "feedback": "Most people were quite poor and worked the land."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Molti erano agricoltori o artigiani. La città era famosa per la produzione di tessuti preziosi.",
+          "english": "Many were farmers or artisans. The city was famous for the production of precious fabrics.",
+          "choices": [
+            {
+              "text": "Capisco. Questa tradizione dei tessuti esiste ancora nella città moderna?",
+              "isCorrect": true,
+              "feedback": "Good link between the past and the present."
+            },
+            {
+              "text": "Non mi piacciono i vestiti, preferisco parlare di calcio.",
+              "isCorrect": false,
+              "feedback": "The guide is talking about the town's famous industry!"
+            },
+            {
+              "text": "Voglio comprare tutti i tessuti del museo adesso.",
+              "isCorrect": false,
+              "feedback": "These are historical artifacts, not for sale!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, ci sono ancora alcune piccole botteghe che seguono le antiche tradizioni. È molto bello.",
+          "english": "Yes, there are still some small workshops that follow the ancient traditions. It is very beautiful.",
+          "choices": [
+            {
+              "text": "Interessante. C'è un fondatore famoso che ha iniziato questa tradizione?",
+              "isCorrect": true,
+              "feedback": "Good inquiry about the origins of local industry."
+            },
+            {
+              "text": "Il fondatore della città era un attore di Hollywood?",
+              "isCorrect": false,
+              "feedback": "No, Hollywood is in America and is much more recent."
+            },
+            {
+              "text": "Non mi interessa la tradizione, voglio solo lo sconto.",
+              "isCorrect": false,
+              "feedback": "Focus on the history! It's more valuable than a discount."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Fu una nobile famiglia del quattordicesimo secolo. Abbiamo i loro ritratti nella sala successiva.",
+          "english": "It was a noble family from the fourteenth century. We have their portraits in the next room.",
+          "choices": [
+            {
+              "text": "Andiamo a vedere i ritratti allora. Grazie per la spiegazione.",
+              "isCorrect": true,
+              "feedback": "Perfect transition to the next part of the museum."
+            },
+            {
+              "text": "I ritratti sono brutti, preferisco i cartoni animati.",
+              "isCorrect": false,
+              "feedback": "Portraits are important historical records."
+            },
+            {
+              "text": "Questa famiglia aveva anche un canale televisivo?",
+              "isCorrect": false,
+              "feedback": "Television was invented centuries later!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego! Seguitemi, la storia della nostra città vi sorprenderà. Siete pronti?",
+          "english": "You're welcome! Follow me, the history of our city will surprise you. Are you ready?",
+          "choices": [
+            {
+              "text": "Sì, sono pronto e molto curioso. Grazie ancora, guida!",
+              "isCorrect": true,
+              "feedback": "Great! Enjoy the rest of your historical tour."
+            },
+            {
+              "text": "No, sono stanco e voglio andare a dormire.",
+              "isCorrect": false,
+              "feedback": "The tour is just getting interesting! Stay curious."
+            },
+            {
+              "text": "Voglio andare al ristorante a mangiare adesso.",
+              "isCorrect": false,
+              "feedback": "Wait until the end of the tour for your meal!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "famous_statue",
+      "title": "Il Cittadino Famoso",
+      "description": "Discuss a famous historical figure represented by a statue in the main square.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Guarda questa statua al centro della piazza. È il nostro cittadino più famoso. Sapete chi è?",
+          "english": "Look at this statue in the center of the square. It is our most famous citizen. Do you know who it is?",
+          "choices": [
+            {
+              "text": "No, non lo so. È un re o un artista importante del passato?",
+              "isCorrect": true,
+              "feedback": "Good guess! It's a common type of statue in Italy."
+            },
+            {
+              "text": "Sì, è il mio cantante preferito della televisione.",
+              "isCorrect": false,
+              "feedback": "Unlikely! Statues in squares are usually for historical figures."
+            },
+            {
+              "text": "È una statua di un alieno venuto dallo spazio?",
+              "isCorrect": false,
+              "feedback": "No, it's definitely a human historical figure."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Era un grande scrittore e filosofo nato qui nel Settecento. Ha scritto molti libri famosi.",
+          "english": "He was a great writer and philosopher born here in the eighteenth century. He wrote many famous books.",
+          "choices": [
+            {
+              "text": "Che bello! Qual è il suo libro più conosciuto in Italia?",
+              "isCorrect": true,
+              "feedback": "Excellent question to learn more about the author."
+            },
+            {
+              "text": "I suoi libri sono disponibili in formato videogioco?",
+              "isCorrect": false,
+              "feedback": "Probably not! They are classical literature."
+            },
+            {
+              "text": "Lui scriveva solo messaggi sul telefono tutto il giorno?",
+              "isCorrect": false,
+              "feedback": "In the 1700s, they used pens and paper!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Il suo libro più famoso parla della libertà e dei diritti dei cittadini. È ancora molto attuale.",
+          "english": "His most famous book speaks of freedom and the rights of citizens. It is still very relevant today.",
+          "choices": [
+            {
+              "text": "Capisco. È per questo che ha una statua così grande in piazza?",
+              "isCorrect": true,
+              "feedback": "Yes, it's a way for the city to honor his important ideas."
+            },
+            {
+              "text": "Ha la statua perché era l'uomo più ricco della città?",
+              "isCorrect": false,
+              "feedback": "No, it's for his intellectual contribution to society."
+            },
+            {
+              "text": "Tutti gli scrittori hanno una statua d'oro in Italia?",
+              "isCorrect": false,
+              "feedback": "Only the most important and influential ones!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, la città lo ha onorato nell'Ottocento con questo monumento. Vedete l'iscrizione sulla base?",
+          "english": "Yes, the city honored him in the nineteenth century with this monument. Do you see the inscription on the base?",
+          "choices": [
+            {
+              "text": "Sì, vedo delle parole. Potete aiutarmi a leggere il testo antico?",
+              "isCorrect": true,
+              "feedback": "Good initiative! Old inscriptions can be tricky to read."
+            },
+            {
+              "text": "No, preferisco guardare le vetrine dei negozi laggiù.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the monument and its history!"
+            },
+            {
+              "text": "Le parole sono scritte con lo spray colorato?",
+              "isCorrect": false,
+              "feedback": "No, they are carved into the stone."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Dice: 'Al figlio prediletto, cercatore di verità'. Esprime l'amore della città per lui.",
+          "english": "It says: 'To the favorite son, seeker of truth'. It expresses the city's love for him.",
+          "choices": [
+            {
+              "text": "È una dedica molto profonda. Era amato da tutti i cittadini?",
+              "isCorrect": true,
+              "feedback": "Good question about his popularity during his time."
+            },
+            {
+              "text": "Significa che lui cercava dei tesori d'oro nel mare?",
+              "isCorrect": false,
+              "feedback": "No, 'truth' is a philosophical concept, not a physical treasure."
+            },
+            {
+              "text": "Era il figlio del sindaco o di un poliziotto?",
+              "isCorrect": false,
+              "feedback": "'Favorite son' is a metaphorical way to say a proud citizen."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "In realtà, ai suoi tempi ha avuto molti problemi con il governo locale per le sue idee.",
+          "english": "Actually, in his time he had many problems with the local government for his ideas.",
+          "choices": [
+            {
+              "text": "Davvero? Quindi è diventato famoso solo dopo la sua morte?",
+              "isCorrect": true,
+              "feedback": "Common for many great thinkers! Recognition often comes later."
+            },
+            {
+              "text": "Ha avuto problemi perché non pagava le tasse al bar?",
+              "isCorrect": false,
+              "feedback": "No, it was about his political and philosophical writings."
+            },
+            {
+              "text": "È finito in prigione perché ha rubato una bicicletta?",
+              "isCorrect": false,
+              "feedback": "No, his 'crimes' were intellectual and political."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, esattamente. Molti monumenti sono dedicati a persone che hanno sofferto per la libertà.",
+          "english": "Yes, exactly. Many monuments are dedicated to people who suffered for freedom.",
+          "choices": [
+            {
+              "text": "È una storia triste ma molto importante per la cultura locale.",
+              "isCorrect": true,
+              "feedback": "Well said. History often includes struggle."
+            },
+            {
+              "text": "Le storie tristi mi fanno venire voglia di ridere.",
+              "isCorrect": false,
+              "feedback": "A bit insensitive! Try to appreciate the historical weight."
+            },
+            {
+              "text": "Voglio una statua anche io nella mia piccola città.",
+              "isCorrect": false,
+              "feedback": "You'll need to do something very important for that!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ogni anno facciamo una cerimonia qui per ricordarlo. È un evento con molta musica e discorsi.",
+          "english": "Every year we hold a ceremony here to remember him. It's an event with a lot of music and speeches.",
+          "choices": [
+            {
+              "text": "Mi piacerebbe partecipare. In quale mese si svolge questa cerimonia?",
+              "isCorrect": true,
+              "feedback": "Good to know the timing of local cultural events."
+            },
+            {
+              "text": "C'è anche un buffet con molta pizza e birra?",
+              "isCorrect": false,
+              "feedback": "It's a solemn ceremony, not a food festival."
+            },
+            {
+              "text": "La musica è troppo forte e mi dà fastidio.",
+              "isCorrect": false,
+              "feedback": "It's usually traditional or classical music for the occasion."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Si tiene a maggio, il mese della sua nascita. È una bellissima tradizione cittadina.",
+          "english": "It is held in May, the month of his birth. It is a beautiful city tradition.",
+          "choices": [
+            {
+              "text": "Grazie per avermi raccontato la sua storia. È un uomo davvero affascinante.",
+              "isCorrect": true,
+              "feedback": "You've shown great interest in local culture and history."
+            },
+            {
+              "text": "Preferisco le tradizioni dove si mangia e si beve tanto.",
+              "isCorrect": false,
+              "feedback": "There's more to culture than just food!"
+            },
+            {
+              "text": "Maggio è un brutto mese perché c'è troppa pioggia.",
+              "isCorrect": false,
+              "feedback": "Actually, May is often very pleasant in Italy."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Figurati! Adesso continuiamo la nostra passeggiata verso il palazzo antico. Andiamo?",
+          "english": "Don't mention it! Now let's continue our walk towards the ancient palace. Shall we go?",
+          "choices": [
+            {
+              "text": "Sì, volentieri. Sono curioso di vedere altri edifici storici.",
+              "isCorrect": true,
+              "feedback": "Excellent! The city has much more to show you."
+            },
+            {
+              "text": "No, voglio restare qui a guardare la statua per ore.",
+              "isCorrect": false,
+              "feedback": "You can come back later! There is more to see now."
+            },
+            {
+              "text": "Ho bisogno di un taxi per andare al prossimo palazzo.",
+              "isCorrect": false,
+              "feedback": "It's very close! Walking is better for sightseeing."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancient_building",
+      "title": "Un Edificio Antico",
+      "description": "Discuss the architecture and history of a medieval building.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Guarda questo edificio con le finestre piccole. È il palazzo più antico della piazza.",
+          "english": "Look at this building with the small windows. It is the oldest palace in the square.",
+          "choices": [
+            {
+              "text": "Davvero? Di quale secolo è questo palazzo così particolare?",
+              "isCorrect": true,
+              "feedback": "Good question! Architectural style often reveals the age."
+            },
+            {
+              "text": "Le finestre sono troppo piccole, non mi piace affatto.",
+              "isCorrect": false,
+              "feedback": "Small windows were common in medieval defense architecture."
+            },
+            {
+              "text": "È un palazzo costruito l'anno scorso con i mattoni?",
+              "isCorrect": false,
+              "feedback": "No, it looks much older than that!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È del dodicesimo secolo. Vedi le pietre scure? Sono originali dell'epoca medievale.",
+          "english": "It is from the twelfth century. Do you see the dark stones? They are original from the medieval era.",
+          "choices": [
+            {
+              "text": "Incredibile! Chi viveva in questo edificio molti secoli fa?",
+              "isCorrect": true,
+              "feedback": "Good inquiry about the building's historical residents."
+            },
+            {
+              "text": "Le pietre sono sporche, dovrebbero pulirle con il sapone.",
+              "isCorrect": false,
+              "feedback": "That's the patina of time! It's part of the historical value."
+            },
+            {
+              "text": "Nel dodicesimo secolo c'erano già gli ascensori moderni?",
+              "isCorrect": false,
+              "feedback": "No! People had to use many stone stairs."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Era la casa di una famiglia molto potente che governava la città nel passato.",
+          "english": "It was the home of a very powerful family that ruled the city in the past.",
+          "choices": [
+            {
+              "text": "Capisco. Ora il palazzo è un museo o è ancora una casa privata?",
+              "isCorrect": true,
+              "feedback": "Excellent question! Many historic palaces have new uses today."
+            },
+            {
+              "text": "I potenti erano tutti molto cattivi e mangiavano i bambini?",
+              "isCorrect": false,
+              "feedback": "That's a myth! History is much more complex."
+            },
+            {
+              "text": "Voglio comprare questo palazzo per fare una grande festa.",
+              "isCorrect": false,
+              "feedback": "It's a protected monument, not for sale!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Oggi ospita gli uffici del comune e una piccola galleria d'arte antica.",
+          "english": "Today it houses the municipal offices and a small gallery of ancient art.",
+          "choices": [
+            {
+              "text": "Possiamo entrare a vedere la galleria d'arte questa mattina?",
+              "isCorrect": true,
+              "feedback": "Good to check for visiting opportunities."
+            },
+            {
+              "text": "Gli uffici sono noiosi, voglio vedere solo i negozi.",
+              "isCorrect": false,
+              "feedback": "The building itself is a work of art!"
+            },
+            {
+              "text": "C'è un bar dentro il palazzo per bere un caffè?",
+              "isCorrect": false,
+              "feedback": "Maybe nearby, but probably not inside the municipal offices."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, l'ingresso è libero per i cittadini e per i turisti curiosi come voi.",
+          "english": "Yes, admission is free for citizens and for curious tourists like you.",
+          "choices": [
+            {
+              "text": "Ottimo! Amo vedere l'interno dei palazzi storici italiani.",
+              "isCorrect": true,
+              "feedback": "Italian interiors often have beautiful frescoes and ceilings."
+            },
+            {
+              "text": "Libero significa che posso portare via un quadro?",
+              "isCorrect": false,
+              "feedback": "No! 'Free admission' means you don't pay to enter."
+            },
+            {
+              "text": "Non entro se non c'è l'aria condizionata fortissima.",
+              "isCorrect": false,
+              "feedback": "Old stone walls keep the interior naturally cool!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "All'interno ci sono affreschi bellissimi che raccontano eventi storici importanti.",
+          "english": "Inside there are beautiful frescoes that tell of important historical events.",
+          "choices": [
+            {
+              "text": "Cosa rappresentano questi affreschi? Sono storie di battaglie o di pace?",
+              "isCorrect": true,
+              "feedback": "Good question about the themes of historical art."
+            },
+            {
+              "text": "Gli affreschi sono disegnati con i pennarelli colorati?",
+              "isCorrect": false,
+              "feedback": "No, it's a traditional technique using pigments on wet plaster."
+            },
+            {
+              "text": "Preferisco guardare la televisione piuttosto che i disegni vecchi.",
+              "isCorrect": false,
+              "feedback": "Frescoes are the 'television' of the past, telling stories to everyone!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Rappresentano la firma del trattato di pace tra la nostra città e i vicini.",
+          "english": "They represent the signing of the peace treaty between our city and the neighbors.",
+          "choices": [
+            {
+              "text": "È un evento molto significativo. Quando è successa questa pace?",
+              "isCorrect": true,
+              "feedback": "Good inquiry about the date of the historical event."
+            },
+            {
+              "text": "La pace è noiosa, voglio vedere una guerra vera in tv.",
+              "isCorrect": false,
+              "feedback": "Peace is what allowed the city to prosper and build this palace!"
+            },
+            {
+              "text": "I vicini erano dei mostri cattivi o persone normali?",
+              "isCorrect": false,
+              "feedback": "They were people from the nearby town!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Accadde nel 1345. Da quel momento la città ha iniziato a crescere e a diventare ricca.",
+          "english": "It happened in 1345. From that moment the city began to grow and become rich.",
+          "choices": [
+            {
+              "text": "Si vede! Il palazzo è molto elegante. Chi era l'architetto?",
+              "isCorrect": true,
+              "feedback": "Good question! Sometimes the architect is as famous as the building."
+            },
+            {
+              "text": "Nel 1345 non ero ancora nato, quindi non mi importa.",
+              "isCorrect": false,
+              "feedback": "History matters even if you weren't there!"
+            },
+            {
+              "text": "Il palazzo è diventato ricco perché ha vinto alla lotteria?",
+              "isCorrect": false,
+              "feedback": "No, it was through trade and successful local industry."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "L'architetto è anonimo, ma il suo stile è tipico del romanico lombardo.",
+          "english": "The architect is anonymous, but his style is typical of Lombard Romanesque.",
+          "choices": [
+            {
+              "text": "Interessante. Mi piace molto questo stile austero ma elegante.",
+              "isCorrect": true,
+              "feedback": "Romanesque is known for its solid and rhythmic appearance."
+            },
+            {
+              "text": "Se non ha un nome, allora l'edificio non è importante.",
+              "isCorrect": false,
+              "feedback": "Many great medieval works are by anonymous masters."
+            },
+            {
+              "text": "L'architetto anonimo era un fantasma che viveva qui?",
+              "isCorrect": false,
+              "feedback": "'Anonymous' just means we don't know his name today."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Concordo. Vogliamo entrare ora o preferite continuare il giro della piazza?",
+          "english": "I agree. Do we want to enter now or do you prefer to continue the tour of the square?",
+          "choices": [
+            {
+              "text": "Entriamo pure! Sono pronto per vedere gli affreschi medievali.",
+              "isCorrect": true,
+              "feedback": "Great choice! You won't be disappointed by the interior."
+            },
+            {
+              "text": "Voglio andare al bar a bere un'aranciata ghiacciata.",
+              "isCorrect": false,
+              "feedback": "You can do that after! The palace is open now."
+            },
+            {
+              "text": "Preferisco restare fuori a parlare con i piccioni.",
+              "isCorrect": false,
+              "feedback": "The pigeons will be there later! See the art first."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "town_stories",
+      "title": "I Racconti del Passato",
+      "description": "Listen to a local story about the traditions and events of the town.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "C'è una storia molto vecchia su questa chiesa e la sua campana. Vuoi sentirla?",
+          "english": "There is a very old story about this church and its bell. Do you want to hear it?",
+          "choices": [
+            {
+              "text": "Sì, adoro i racconti delle tradizioni locali. Cosa è successo?",
+              "isCorrect": true,
+              "feedback": "Local legends are a great way to understand the town's spirit."
+            },
+            {
+              "text": "No, le storie vecchie mi fanno venire sonno subito.",
+              "isCorrect": false,
+              "feedback": "Give it a chance! It might be more exciting than you think."
+            },
+            {
+              "text": "La campana è fatta di cioccolato o di plastica?",
+              "isCorrect": false,
+              "feedback": "It's made of bronze, like most church bells!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Dicono che la campana ha suonato da sola durante una grande tempesta nel passato.",
+          "english": "They say the bell rang by itself during a great storm in the past.",
+          "choices": [
+            {
+              "text": "Davvero? È un racconto incredibile! Quando è successo esattamente?",
+              "isCorrect": true,
+              "feedback": "Good inquiry! Legends often have a specific historical setting."
+            },
+            {
+              "text": "La campana ha suonato perché voleva mangiare una pizza?",
+              "isCorrect": false,
+              "feedback": "No, it's a mysterious event, not a food request!"
+            },
+            {
+              "text": "Le tempeste sono brutte, voglio il sole ogni giorno.",
+              "isCorrect": false,
+              "feedback": "Weather is a big part of historical stories and events."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Accadde nel Seicento. La città era in pericolo e la campana ha avvertito tutti i cittadini.",
+          "english": "It happened in the seventeenth century. The city was in danger and the bell warned all the citizens.",
+          "choices": [
+            {
+              "text": "Incredibile. Qual era il pericolo? Un'invasione o un incendio?",
+              "isCorrect": true,
+              "feedback": "Excellent! You're identifying common historical threats."
+            },
+            {
+              "text": "Il pericolo era un mostro gigante che veniva dal mare?",
+              "isCorrect": false,
+              "feedback": "More likely a human threat or a natural disaster."
+            },
+            {
+              "text": "La città era in pericolo perché non c'era più il caffè?",
+              "isCorrect": false,
+              "feedback": "That's a modern problem, not a historical crisis!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Era un incendio che stava distruggendo l'archivio storico vicino alla chiesa.",
+          "english": "It was a fire that was destroying the historical archive near the church.",
+          "choices": [
+            {
+              "text": "Per fortuna la campana ha suonato! I documenti sono stati salvati?",
+              "isCorrect": true,
+              "feedback": "Good concern for the historical records!"
+            },
+            {
+              "text": "L'incendio era utile per cucinare la carne per tutti?",
+              "isCorrect": false,
+              "feedback": "No, it was a dangerous and destructive fire!"
+            },
+            {
+              "text": "Non mi importa dei documenti, preferisco i miei fumetti.",
+              "isCorrect": false,
+              "feedback": "Historical documents are the memory of the city!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, i cittadini si sono svegliati e hanno spento il fuoco. Da allora la campana è sacra.",
+          "english": "Yes, the citizens woke up and put out the fire. Since then the bell has been sacred.",
+          "choices": [
+            {
+              "text": "Capisco. C'è un monumento o una statua che ricorda questo evento?",
+              "isCorrect": true,
+              "feedback": "Good question! Cities often memorialize such events."
+            },
+            {
+              "text": "La campana è sacra perché è fatta d'oro zecchino?",
+              "isCorrect": false,
+              "feedback": "No, it's sacred because of its 'miraculous' help."
+            },
+            {
+              "text": "Tutti i cittadini hanno ricevuto un premio in denaro?",
+              "isCorrect": false,
+              "feedback": "Their reward was saving their history and their homes."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, c'è una piccola targa sul muro della chiesa con il racconto della storia.",
+          "english": "Yes, there is a small plaque on the church wall with the story of the event.",
+          "choices": [
+            {
+              "text": "Mi piacerebbe leggerla. È scritta in italiano moderno o in latino?",
+              "isCorrect": true,
+              "feedback": "Good inquiry about the language of historical plaques."
+            },
+            {
+              "text": "La targa è scritta con i disegni degli animali?",
+              "isCorrect": false,
+              "feedback": "No, it's likely a text inscription."
+            },
+            {
+              "text": "Voglio scrivere il mio nome sulla targa della chiesa.",
+              "isCorrect": false,
+              "feedback": "Don't do that! It's vandalism of a historical site."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È in un italiano un po' antico, ma si capisce bene. Volete provare a leggerla?",
+          "english": "It's in a slightly ancient Italian, but it's well understood. Do you want to try reading it?",
+          "choices": [
+            {
+              "text": "Sì, certamente! È un ottimo esercizio per imparare parole nuove.",
+              "isCorrect": true,
+              "feedback": "Exactly! Reading old inscriptions is a great challenge."
+            },
+            {
+              "text": "No, leggere è troppo faticoso per i miei occhi stanchi.",
+              "isCorrect": false,
+              "feedback": "Just a few lines! It's very rewarding."
+            },
+            {
+              "text": "Preferisco che me la legga un robot parlante.",
+              "isCorrect": false,
+              "feedback": "Try to read it yourself first, it's more immersive!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Bravissimi! Vedete la parola 'pericolo'? Significa che c'era una situazione difficile.",
+          "english": "Very good! Do you see the word 'pericolo'? It means there was a difficult situation.",
+          "choices": [
+            {
+              "text": "Sì, la vedo. È una parola che si usa ancora oggi in italiano?",
+              "isCorrect": true,
+              "feedback": "Yes, 'pericolo' is a very common and important word today."
+            },
+            {
+              "text": "No, 'pericolo' significa che la pizza è pronta in tavola.",
+              "isCorrect": false,
+              "feedback": "Incorrect! 'Pericolo' means danger."
+            },
+            {
+              "text": "Questa parola è troppo lunga e difficile da pronunciare.",
+              "isCorrect": false,
+              "feedback": "It's actually quite simple: pe-ri-co-lo."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Esattamente. La storia locale è piena di parole che usiamo ancora. È un legame col passato.",
+          "english": "Exactly. Local history is full of words we still use. It's a link to the past.",
+          "choices": [
+            {
+              "text": "Vero. Grazie per avermi insegnato queste cose sulla vostra città.",
+              "isCorrect": true,
+              "feedback": "You're very welcome! Learning history is learning language too."
+            },
+            {
+              "text": "Il passato non mi piace, voglio solo comprare cose nuove.",
+              "isCorrect": false,
+              "feedback": "Understanding where things come from makes them more interesting."
+            },
+            {
+              "text": "Non credo che la campana abbia suonato da sola davvero.",
+              "isCorrect": false,
+              "feedback": "Whether it's true or a legend, it's a part of the local culture!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "È stato un piacere! Ora sapete perché questa chiesa è così importante per noi.",
+          "english": "It was a pleasure! Now you know why this church is so important to us.",
+          "choices": [
+            {
+              "text": "Sì, ho imparato molto. Siete un ottimo conoscitore della storia!",
+              "isCorrect": true,
+              "feedback": "Great compliment! You've completed the historical stories session."
+            },
+            {
+              "text": "La storia era troppo corta, ne voglio un'altra di dieci ore.",
+              "isCorrect": false,
+              "feedback": "Ten hours is a bit much! Let's take it one story at a time."
+            },
+            {
+              "text": "Voglio andare via subito senza salutare nessuno.",
+              "isCorrect": false,
+              "feedback": "Always say goodbye! It's polite after a nice conversation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,953 @@
+{
+  "scenarioId": 38,
+  "conversations": [
+    {
+      "id": "quick_espresso",
+      "title": "Quick Espresso",
+      "description": "Order a quick espresso at the counter.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Prego, dimmi pure.",
+          "english": "Good morning! Please, tell me.",
+          "choices": [
+            {
+              "text": "Buongiorno. Un caffè, per favore.",
+              "isCorrect": true,
+              "feedback": "Perfetto!"
+            },
+            {
+              "text": "Voglio un tavolo grande ora.",
+              "isCorrect": false,
+              "feedback": "Too aggressive and not right for a quick espresso."
+            },
+            {
+              "text": "Dov'è il bagno degli uomini?",
+              "isCorrect": false,
+              "feedback": "Start with ordering!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Normale o macchiato?",
+          "english": "Certainly. Normal or with a spot of milk?",
+          "choices": [
+            {
+              "text": "Normale, grazie. Molto gentile.",
+              "isCorrect": true,
+              "feedback": "Ottimo."
+            },
+            {
+              "text": "Voglio un piatto di pasta.",
+              "isCorrect": false,
+              "feedback": "You don't order pasta at a breakfast bar."
+            },
+            {
+              "text": "Non mi piace il caffè oggi.",
+              "isCorrect": false,
+              "feedback": "Then why did you order it?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ecco il tuo caffè. Zucchero?",
+          "english": "Here is your coffee. Sugar?",
+          "choices": [
+            {
+              "text": "Sì, una bustina, per favore.",
+              "isCorrect": true,
+              "feedback": "Benissimo."
+            },
+            {
+              "text": "No, non mangio mai niente.",
+              "isCorrect": false,
+              "feedback": "Sugar is for the coffee, not eating."
+            },
+            {
+              "text": "Voglio un pezzo di torta.",
+              "isCorrect": false,
+              "feedback": "Answer the question about sugar first."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Lo zucchero è lì sul banco.",
+          "english": "The sugar is there on the counter.",
+          "choices": [
+            {
+              "text": "Ah, lo vedo, grazie mille!",
+              "isCorrect": true,
+              "feedback": "Great response."
+            },
+            {
+              "text": "Non c'è il mio tavolo qui.",
+              "isCorrect": false,
+              "feedback": "You are at the counter."
+            },
+            {
+              "text": "Vado via senza pagare ora.",
+              "isCorrect": false,
+              "feedback": "You must pay!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Vuoi anche un bicchiere d'acqua?",
+          "english": "Do you also want a glass of water?",
+          "choices": [
+            {
+              "text": "Sì, grazie, acqua naturale.",
+              "isCorrect": true,
+              "feedback": "Perfect."
+            },
+            {
+              "text": "No, voglio un vino rosso.",
+              "isCorrect": false,
+              "feedback": "It's morning!"
+            },
+            {
+              "text": "Non ho sete, voglio bere.",
+              "isCorrect": false,
+              "feedback": "Contradictory."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco l'acqua. Mangi qualcosa?",
+          "english": "Here is the water. Are you eating anything?",
+          "choices": [
+            {
+              "text": "No, oggi solo un caffè, grazie.",
+              "isCorrect": true,
+              "feedback": "Good."
+            },
+            {
+              "text": "Voglio mangiare una bistecca.",
+              "isCorrect": false,
+              "feedback": "Not at a breakfast bar."
+            },
+            {
+              "text": "Sì, ma non so cosa voglio.",
+              "isCorrect": false,
+              "feedback": "Usually you decide quickly at the bar."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Va bene. Sei di fretta oggi?",
+          "english": "Alright. Are you in a hurry today?",
+          "choices": [
+            {
+              "text": "Sì, devo andare al lavoro.",
+              "isCorrect": true,
+              "feedback": "Very natural."
+            },
+            {
+              "text": "No, vivo qui per sempre.",
+              "isCorrect": false,
+              "feedback": "A bit strange."
+            },
+            {
+              "text": "Non parlo mai di lavoro.",
+              "isCorrect": false,
+              "feedback": "Too blunt."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Allora fai presto! Quant'è?",
+          "english": "Then be quick! How much is it?",
+          "choices": [
+            {
+              "text": "Quanto costa in totale?",
+              "isCorrect": true,
+              "feedback": "Correct way to ask."
+            },
+            {
+              "text": "Non voglio pagare niente.",
+              "isCorrect": false,
+              "feedback": "You have to pay."
+            },
+            {
+              "text": "È troppo caro per me oggi.",
+              "isCorrect": false,
+              "feedback": "You don't know the price yet!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sono un euro e venti.",
+          "english": "It's one euro and twenty.",
+          "choices": [
+            {
+              "text": "Ecco due euro, tieni il resto.",
+              "isCorrect": true,
+              "feedback": "Generous and correct."
+            },
+            {
+              "text": "Non ho soldi, mi dispiace.",
+              "isCorrect": false,
+              "feedback": "You must pay!"
+            },
+            {
+              "text": "Ti do cento euro in contanti.",
+              "isCorrect": false,
+              "feedback": "Too big of a bill for a coffee."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie, buona giornata e buon lavoro!",
+          "english": "Thank you, have a good day and good work!",
+          "choices": [
+            {
+              "text": "Grazie a te, buona giornata!",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "Non voglio lavorare oggi.",
+              "isCorrect": false,
+              "feedback": "Not a standard polite response."
+            },
+            {
+              "text": "Dove posso andare a dormire?",
+              "isCorrect": false,
+              "feedback": "Irrelevant now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cappuccino_and_pastry",
+      "title": "Cappuccino and Pastry",
+      "description": "Order a cappuccino and a brioche.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cosa ti preparo?",
+          "english": "Good morning! What can I make you?",
+          "choices": [
+            {
+              "text": "Vorrei un cappuccino, per favore.",
+              "isCorrect": true,
+              "feedback": "Good start."
+            },
+            {
+              "text": "Voglio un tavolo grande qui.",
+              "isCorrect": false,
+              "feedback": "Not what was asked."
+            },
+            {
+              "text": "Dove posso comprare i biglietti?",
+              "isCorrect": false,
+              "feedback": "Wrong place."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo! Lo vuoi con tanto latte?",
+          "english": "Sure! Do you want it with a lot of milk?",
+          "choices": [
+            {
+              "text": "Sì, con tanto latte, grazie.",
+              "isCorrect": true,
+              "feedback": "Good."
+            },
+            {
+              "text": "No, senza caffè per niente.",
+              "isCorrect": false,
+              "feedback": "Then it's not a cappuccino."
+            },
+            {
+              "text": "Voglio un tè molto caldo.",
+              "isCorrect": false,
+              "feedback": "You just ordered a cappuccino."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo. Vuoi anche mangiare qualcosa?",
+          "english": "Excellent. Do you also want to eat something?",
+          "choices": [
+            {
+              "text": "Sì, una brioche alla marmellata.",
+              "isCorrect": true,
+              "feedback": "Classic Italian breakfast."
+            },
+            {
+              "text": "Voglio un pezzo di pizza.",
+              "isCorrect": false,
+              "feedback": "Not typical for a sweet breakfast."
+            },
+            {
+              "text": "Non ho fame, ma mangio molto.",
+              "isCorrect": false,
+              "feedback": "Contradictory."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Mi dispiace, la marmellata è finita.",
+          "english": "I'm sorry, the jam is finished.",
+          "choices": [
+            {
+              "text": "Allora prendo una brioche vuota.",
+              "isCorrect": true,
+              "feedback": "Good backup plan."
+            },
+            {
+              "text": "Allora non voglio il cappuccino.",
+              "isCorrect": false,
+              "feedback": "A bit extreme!"
+            },
+            {
+              "text": "Dov'è il negozio di frutta?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Una brioche vuota e un cappuccino.",
+          "english": "A plain brioche and a cappuccino.",
+          "choices": [
+            {
+              "text": "Sì, esatto. Va benissimo così.",
+              "isCorrect": true,
+              "feedback": "Good confirmation."
+            },
+            {
+              "text": "No, ho cambiato idea ora.",
+              "isCorrect": false,
+              "feedback": "Make up your mind!"
+            },
+            {
+              "text": "Voglio anche un caffè nero.",
+              "isCorrect": false,
+              "feedback": "You already ordered a lot."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco a te. Mangi qui al banco?",
+          "english": "Here you go. Are you eating here at the counter?",
+          "choices": [
+            {
+              "text": "Sì, mangio qui al banco.",
+              "isCorrect": true,
+              "feedback": "Very common in Italy."
+            },
+            {
+              "text": "No, vado al cinema subito.",
+              "isCorrect": false,
+              "feedback": "A bit strange to announce."
+            },
+            {
+              "text": "Voglio dormire sul divano.",
+              "isCorrect": false,
+              "feedback": "Not appropriate."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Vuoi un po' di cacao sopra?",
+          "english": "Do you want some cocoa on top?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Solo un po'.",
+              "isCorrect": true,
+              "feedback": "Tasty!"
+            },
+            {
+              "text": "No, voglio tanto sale oggi.",
+              "isCorrect": false,
+              "feedback": "Salt on a cappuccino?"
+            },
+            {
+              "text": "Cosa c'è nel mio zaino?",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Bene. Hai già lo scontrino?",
+          "english": "Good. Do you already have the receipt?",
+          "choices": [
+            {
+              "text": "No, devo ancora pagare.",
+              "isCorrect": true,
+              "feedback": "Honest and correct."
+            },
+            {
+              "text": "Sì, l'ho perso ieri sera.",
+              "isCorrect": false,
+              "feedback": "Yesterday's receipt is no good."
+            },
+            {
+              "text": "Non uso mai gli scontrini.",
+              "isCorrect": false,
+              "feedback": "It's the law in Italy!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene, puoi pagare dopo.",
+          "english": "Alright, you can pay after.",
+          "choices": [
+            {
+              "text": "Perfetto, allora faccio colazione.",
+              "isCorrect": true,
+              "feedback": "Enjoy!"
+            },
+            {
+              "text": "Non voglio mangiare più niente.",
+              "isCorrect": false,
+              "feedback": "You just ordered."
+            },
+            {
+              "text": "Esco subito dalla porta.",
+              "isCorrect": false,
+              "feedback": "You haven't eaten or paid."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Com'era la brioche? Tutto bene?",
+          "english": "How was the brioche? Everything good?",
+          "choices": [
+            {
+              "text": "Buonissima, grazie. Quanto devo?",
+              "isCorrect": true,
+              "feedback": "Great finish."
+            },
+            {
+              "text": "Era molto cattiva e dura.",
+              "isCorrect": false,
+              "feedback": "A bit rude."
+            },
+            {
+              "text": "Non l'ho ancora mangiata.",
+              "isCorrect": false,
+              "feedback": "You had time to eat it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paying_first",
+      "title": "Paying at the Cashier First",
+      "description": "Pay at the cashier before ordering at the bar.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Prendi lo scontrino alla cassa.",
+          "english": "Good morning! Get the receipt at the cashier.",
+          "choices": [
+            {
+              "text": "Ah, devo pagare prima? Va bene.",
+              "isCorrect": true,
+              "feedback": "Good realization."
+            },
+            {
+              "text": "Non voglio pagare mai niente.",
+              "isCorrect": false,
+              "feedback": "You have to pay."
+            },
+            {
+              "text": "Voglio il caffè ora subito.",
+              "isCorrect": false,
+              "feedback": "Follow the rules."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, le regole sono queste.",
+          "english": "Yes, these are the rules.",
+          "choices": [
+            {
+              "text": "Nessun problema. Vado alla cassa.",
+              "isCorrect": true,
+              "feedback": "Very polite."
+            },
+            {
+              "text": "Le regole non mi piacciono.",
+              "isCorrect": false,
+              "feedback": "Unnecessary."
+            },
+            {
+              "text": "Dove posso ballare adesso?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Alla cassa: Cosa prendi oggi?",
+          "english": "At the cashier: What are you having today?",
+          "choices": [
+            {
+              "text": "Un caffè macchiato e un cornetto.",
+              "isCorrect": true,
+              "feedback": "Perfect order."
+            },
+            {
+              "text": "Un biglietto per il treno.",
+              "isCorrect": false,
+              "feedback": "Wrong place."
+            },
+            {
+              "text": "Una stanza per la notte.",
+              "isCorrect": false,
+              "feedback": "This is a bar, not a hotel."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Il cornetto alla crema o al cioccolato?",
+          "english": "The croissant with cream or chocolate?",
+          "choices": [
+            {
+              "text": "Alla crema, grazie. È il mio preferito.",
+              "isCorrect": true,
+              "feedback": "Good choice."
+            },
+            {
+              "text": "Non mi piace il cornetto.",
+              "isCorrect": false,
+              "feedback": "But you just ordered one."
+            },
+            {
+              "text": "Voglio un panino con salame.",
+              "isCorrect": false,
+              "feedback": "Not what was asked."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sono tre euro in tutto.",
+          "english": "It's three euros in total.",
+          "choices": [
+            {
+              "text": "Ecco tre euro esatti, grazie.",
+              "isCorrect": true,
+              "feedback": "Easy transaction."
+            },
+            {
+              "text": "Posso pagare con un bacio?",
+              "isCorrect": false,
+              "feedback": "No, you can't."
+            },
+            {
+              "text": "Ti do cinquanta euro, dai il resto.",
+              "isCorrect": false,
+              "feedback": "A bit big, but 'esatti' is better."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco lo scontrino. Vai al banco.",
+          "english": "Here is the receipt. Go to the counter.",
+          "choices": [
+            {
+              "text": "Grazie. Vado subito al banco.",
+              "isCorrect": true,
+              "feedback": "Following instructions."
+            },
+            {
+              "text": "Non voglio andare al banco.",
+              "isCorrect": false,
+              "feedback": "Then you won't get your coffee."
+            },
+            {
+              "text": "Posso bere il caffè qui?",
+              "isCorrect": false,
+              "feedback": "You need to go to the counter."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Al banco: Ciao, dammi lo scontrino.",
+          "english": "At the counter: Hi, give me the receipt.",
+          "choices": [
+            {
+              "text": "Eccolo qui. Un caffè macchiato, per favore.",
+              "isCorrect": true,
+              "feedback": "Perfect handover and reminder of the order."
+            },
+            {
+              "text": "Non so dov'è lo scontrino.",
+              "isCorrect": false,
+              "feedback": "You just got it."
+            },
+            {
+              "text": "Voglio un bicchiere di vino.",
+              "isCorrect": false,
+              "feedback": "Wrong order."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certo, arrivo subito con il caffè.",
+          "english": "Sure, I'll be right back with the coffee.",
+          "choices": [
+            {
+              "text": "E il cornetto alla crema, per favore.",
+              "isCorrect": true,
+              "feedback": "Good reminder for the food."
+            },
+            {
+              "text": "Voglio andare a casa adesso.",
+              "isCorrect": false,
+              "feedback": "Wait for your coffee."
+            },
+            {
+              "text": "Non ho tempo per aspettare.",
+              "isCorrect": false,
+              "feedback": "It's a quick espresso, just wait a second."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ah sì, ecco il tuo cornetto.",
+          "english": "Ah yes, here is your croissant.",
+          "choices": [
+            {
+              "text": "Sembra delizioso, grazie mille.",
+              "isCorrect": true,
+              "feedback": "Polite and appreciative."
+            },
+            {
+              "text": "È troppo piccolo per me.",
+              "isCorrect": false,
+              "feedback": "Rude."
+            },
+            {
+              "text": "Voglio un altro scontrino.",
+              "isCorrect": false,
+              "feedback": "You don't need one."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buona colazione! Arrivederci.",
+          "english": "Enjoy your breakfast! Goodbye.",
+          "choices": [
+            {
+              "text": "Grazie, arrivederci e buona giornata!",
+              "isCorrect": true,
+              "feedback": "Perfect ending."
+            },
+            {
+              "text": "Non voglio dire arrivederci.",
+              "isCorrect": false,
+              "feedback": "Rude."
+            },
+            {
+              "text": "Quanto costa tutto questo?",
+              "isCorrect": false,
+              "feedback": "You already paid."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sitting_at_table",
+      "title": "Sitting at a Table",
+      "description": "Sit at a table and order breakfast.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, volete sedervi al tavolo?",
+          "english": "Good morning, do you want to sit at the table?",
+          "choices": [
+            {
+              "text": "Sì, siamo in due. C'è posto?",
+              "isCorrect": true,
+              "feedback": "Perfect way to ask for a table."
+            },
+            {
+              "text": "No, non ci piace stare seduti.",
+              "isCorrect": false,
+              "feedback": "Then why are you here?"
+            },
+            {
+              "text": "Voglio dormire sul letto.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo, prego, accomodatevi qui.",
+          "english": "Sure, please, make yourselves comfortable here.",
+          "choices": [
+            {
+              "text": "Grazie. Il cameriere arriva subito?",
+              "isCorrect": true,
+              "feedback": "Good question."
+            },
+            {
+              "text": "Non voglio questo tavolo brutto.",
+              "isCorrect": false,
+              "feedback": "Rude."
+            },
+            {
+              "text": "Dove posso lavare le mie mani?",
+              "isCorrect": false,
+              "feedback": "Maybe later."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, arrivo per l'ordinazione.",
+          "english": "Yes, I'm coming for the order.",
+          "choices": [
+            {
+              "text": "Prendiamo il menu, per favore.",
+              "isCorrect": true,
+              "feedback": "Good request."
+            },
+            {
+              "text": "Voglio andare via subito.",
+              "isCorrect": false,
+              "feedback": "You just sat down."
+            },
+            {
+              "text": "Siamo molto arrabbiati oggi.",
+              "isCorrect": false,
+              "feedback": "Not necessary."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ecco i menu. Avete già deciso?",
+          "english": "Here are the menus. Have you already decided?",
+          "choices": [
+            {
+              "text": "Sì. Due cappuccini e due brioche.",
+              "isCorrect": true,
+              "feedback": "Clear and simple order."
+            },
+            {
+              "text": "Vogliamo due pizze calde.",
+              "isCorrect": false,
+              "feedback": "It's breakfast time."
+            },
+            {
+              "text": "Non sappiamo cosa vogliamo mai.",
+              "isCorrect": false,
+              "feedback": "A bit strange."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Brioche vuote o farcite?",
+          "english": "Plain or filled croissants?",
+          "choices": [
+            {
+              "text": "Una al cioccolato e una alla crema.",
+              "isCorrect": true,
+              "feedback": "Delicious choice."
+            },
+            {
+              "text": "Una con carne e una con pesce.",
+              "isCorrect": false,
+              "feedback": "Yuck, not for breakfast."
+            },
+            {
+              "text": "Vogliamo solo due bicchieri d'acqua.",
+              "isCorrect": false,
+              "feedback": "You just ordered croissants."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Va bene. Porto subito.",
+          "english": "Alright. I'll bring it right away.",
+          "choices": [
+            {
+              "text": "Grazie mille, aspettiamo qui.",
+              "isCorrect": true,
+              "feedback": "Polite."
+            },
+            {
+              "text": "Sbrigatevi, abbiamo molta fretta.",
+              "isCorrect": false,
+              "feedback": "Too aggressive."
+            },
+            {
+              "text": "Non vogliamo più niente ora.",
+              "isCorrect": false,
+              "feedback": "Make up your mind."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco i vostri cappuccini. Attenti, scotta!",
+          "english": "Here are your cappuccinos. Careful, it's hot!",
+          "choices": [
+            {
+              "text": "Ah, grazie. Hanno un profumo buonissimo.",
+              "isCorrect": true,
+              "feedback": "Nice compliment."
+            },
+            {
+              "text": "Voglio un caffè freddo invece.",
+              "isCorrect": false,
+              "feedback": "You ordered hot cappuccino."
+            },
+            {
+              "text": "Non posso bere niente caldo.",
+              "isCorrect": false,
+              "feedback": "Then why order it?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "E le brioche. Buon appetito!",
+          "english": "And the croissants. Enjoy your meal!",
+          "choices": [
+            {
+              "text": "Grazie! Possiamo avere anche dell'acqua?",
+              "isCorrect": true,
+              "feedback": "Good follow-up request."
+            },
+            {
+              "text": "Non voglio mangiare questo.",
+              "isCorrect": false,
+              "feedback": "Rude."
+            },
+            {
+              "text": "Andiamo a casa adesso.",
+              "isCorrect": false,
+              "feedback": "You just got your food!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certo, naturale o frizzante?",
+          "english": "Sure, still or sparkling?",
+          "choices": [
+            {
+              "text": "Frizzante, grazie. Molto gentile.",
+              "isCorrect": true,
+              "feedback": "Perfect."
+            },
+            {
+              "text": "Voglio acqua dal rubinetto.",
+              "isCorrect": false,
+              "feedback": "Usually you order bottled water at a table."
+            },
+            {
+              "text": "Non ho sete per niente.",
+              "isCorrect": false,
+              "feedback": "You just asked for water."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Porto subito. Il conto lo porto dopo.",
+          "english": "I'll bring it right away. I'll bring the bill later.",
+          "choices": [
+            {
+              "text": "Va benissimo, facciamo con calma.",
+              "isCorrect": true,
+              "feedback": "Good, you are at a table so take your time."
+            },
+            {
+              "text": "Voglio pagare in anticipo.",
+              "isCorrect": false,
+              "feedback": "At a table you usually pay after."
+            },
+            {
+              "text": "Non vogliamo pagare il conto.",
+              "isCorrect": false,
+              "feedback": "You must pay!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,953 @@
+{
+  "scenarioId": 94,
+  "conversations": [
+    {
+      "id": "buying_tickets",
+      "title": "Alla Biglietteria",
+      "description": "Acquista i biglietti per lo spettacolo di stasera alla biglietteria del teatro.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera. Desidera dei biglietti per lo spettacolo di stasera?",
+          "english": "Good evening. Would you like tickets for tonight's show?",
+          "choices": [
+            {
+              "text": "Buonasera. Sì, vorrei due biglietti per l'opera, per favore.",
+              "isCorrect": true,
+              "feedback": "Ottimo. Hai salutato e risposto alla domanda in modo chiaro."
+            },
+            {
+              "text": "Buonasera. Sì, cerco il guardaroba per il mio cappotto.",
+              "isCorrect": false,
+              "feedback": "Sei alla biglietteria, il guardaroba è in un altro posto."
+            },
+            {
+              "text": "Buonasera. Sì, prendo un caffè macchiato e un'acqua.",
+              "isCorrect": false,
+              "feedback": "Questo non è il bar, è la biglietteria del teatro."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Abbiamo posti in platea o nei palchi. Cosa preferisce?",
+          "english": "Certainly. We have seats in the stalls or in the boxes. What do you prefer?",
+          "choices": [
+            {
+              "text": "Preferisco la platea, se possibile. Quanto costano i biglietti?",
+              "isCorrect": true,
+              "feedback": "Perfetto. Hai espresso una preferenza e chiesto il prezzo."
+            },
+            {
+              "text": "Preferisco il bar, se possibile. Dove posso comprare da bere?",
+              "isCorrect": false,
+              "feedback": "Stai ancora comprando i biglietti per entrare a teatro."
+            },
+            {
+              "text": "Preferisco l'uscita, se possibile. A che ora finisce tutto?",
+              "isCorrect": false,
+              "feedback": "È troppo presto per pensare all'uscita ora!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "In platea costano quaranta euro l'uno. I posti sono nella fila dieci.",
+          "english": "In the stalls they cost forty euros each. The seats are in row ten.",
+          "choices": [
+            {
+              "text": "Va bene, prendo due biglietti in platea. Posso pagare con carta?",
+              "isCorrect": true,
+              "feedback": "Molto bene. Hai confermato l'acquisto e il metodo di pagamento."
+            },
+            {
+              "text": "Va bene, prendo due programmi. Posso leggere la trama qui?",
+              "isCorrect": false,
+              "feedback": "Prima devi comprare i biglietti per lo spettacolo."
+            },
+            {
+              "text": "Va bene, prendo due sedie. Posso sedermi vicino alla porta?",
+              "isCorrect": false,
+              "feedback": "Non compri le sedie, compri i posti a sedere!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certamente. Ecco a lei i biglietti. Desidera anche il programma di sala?",
+          "english": "Certainly. Here are your tickets. Would you like the program as well?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Quanto costa il programma con la trama?",
+              "isCorrect": true,
+              "feedback": "Esatto. Chiedere il prezzo di un extra è molto comune."
+            },
+            {
+              "text": "Sì, grazie. Quanto costa l'intervallo con la pausa?",
+              "isCorrect": false,
+              "feedback": "L'intervallo non si paga, è una pausa gratuita!"
+            },
+            {
+              "text": "Sì, grazie. Quanto costa l'orchestra con la musica?",
+              "isCorrect": false,
+              "feedback": "La musica è inclusa nel prezzo del biglietto!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Il programma costa cinque euro. Lo spettacolo inizia tra venti minuti.",
+          "english": "The program costs five euros. The show starts in twenty minutes.",
+          "choices": [
+            {
+              "text": "Perfetto, lo prendo. Mi può indicare dove si trova l'ingresso?",
+              "isCorrect": true,
+              "feedback": "Bene. Hai acquistato il programma e chiesto indicazioni."
+            },
+            {
+              "text": "Perfetto, lo prendo. Mi può indicare dove si trova l'attore?",
+              "isCorrect": false,
+              "feedback": "L'attore non è qui alla biglietteria."
+            },
+            {
+              "text": "Perfetto, lo prendo. Mi può indicare dove si trova la cena?",
+              "isCorrect": false,
+              "feedback": "Non c'è una cena qui alla biglietteria."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "L'ingresso è proprio dietro di lei. Deve mostrare i biglietti lì.",
+          "english": "The entrance is right behind you. You must show your tickets there.",
+          "choices": [
+            {
+              "text": "Grazie. C'è un codice di abbigliamento particolare per stasera?",
+              "isCorrect": true,
+              "feedback": "Ottimo. Chiedere informazioni sul vestiario è utile."
+            },
+            {
+              "text": "Grazie. C'è un codice di avviamento particolare per stasera?",
+              "isCorrect": false,
+              "feedback": "Il codice di avviamento postale non serve in teatro!"
+            },
+            {
+              "text": "Grazie. C'è un codice di silenzio particolare per stasera?",
+              "isCorrect": false,
+              "feedback": "Il silenzio è sempre richiesto, non serve un codice!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "No, ma l'eleganza è sempre gradita in questo teatro storico.",
+          "english": "No, but elegance is always appreciated in this historical theater.",
+          "choices": [
+            {
+              "text": "Capisco. Posso portare una bottiglia d'acqua dentro la sala?",
+              "isCorrect": true,
+              "feedback": "Bene. Chiedere cosa si può portare dentro è importante."
+            },
+            {
+              "text": "Capisco. Posso portare una bottiglia di vino dentro la sala?",
+              "isCorrect": false,
+              "feedback": "Il vino non è permesso all'interno della sala!"
+            },
+            {
+              "text": "Capisco. Posso portare una bottiglia di latte dentro la sala?",
+              "isCorrect": false,
+              "feedback": "Non è il posto giusto per bere latte!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "No, è vietato consumare cibo o bevande durante lo spettacolo.",
+          "english": "No, it is forbidden to consume food or drinks during the show.",
+          "choices": [
+            {
+              "text": "Va bene. Dove posso lasciare la mia giacca e l'ombrello?",
+              "isCorrect": true,
+              "feedback": "Ottimo. Hai chiesto del guardaroba."
+            },
+            {
+              "text": "Va bene. Dove posso lasciare la mia borsa e la scarpa?",
+              "isCorrect": false,
+              "feedback": "Non lasci le scarpe al guardaroba!"
+            },
+            {
+              "text": "Va bene. Dove posso lasciare la mia voce e il canto?",
+              "isCorrect": false,
+              "feedback": "Non puoi lasciare la voce al guardaroba!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "C'è un guardaroba gratuito proprio accanto all'ingresso principale.",
+          "english": "There is a free cloakroom right next to the main entrance.",
+          "choices": [
+            {
+              "text": "Ottimo. Allora vado subito lì prima che inizi l'opera.",
+              "isCorrect": true,
+              "feedback": "Perfetto. Hai deciso di andare al guardaroba."
+            },
+            {
+              "text": "Ottimo. Allora vado subito lì prima che inizi la pioggia.",
+              "isCorrect": false,
+              "feedback": "Sei già dentro il teatro, non piove qui!"
+            },
+            {
+              "text": "Ottimo. Allora vado subito lì prima che inizi la colazione.",
+              "isCorrect": false,
+              "feedback": "Non è ora di colazione!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Le auguro una buona serata e un buon ascolto!",
+          "english": "Perfect. I wish you a good evening and good listening!",
+          "choices": [
+            {
+              "text": "Grazie mille per tutte le informazioni. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Ottima conclusione della conversazione alla biglietteria."
+            },
+            {
+              "text": "Grazie mille per tutte le canzoni. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "Non ti hanno dato canzoni, ma informazioni!"
+            },
+            {
+              "text": "Grazie mille per tutte le sedie. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "Non ti hanno dato sedie!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding_seats",
+      "title": "Trovare i Posti",
+      "description": "Entra in teatro e fatti aiutare dalla maschera a trovare i tuoi posti.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera. Posso vedere i vostri biglietti per favore?",
+          "english": "Good evening. Can I see your tickets please?",
+          "choices": [
+            {
+              "text": "Buonasera, certamente. Eccoli. Abbiamo i posti in platea.",
+              "isCorrect": true,
+              "feedback": "Molto gentile. Hai mostrato i biglietti correttamente."
+            },
+            {
+              "text": "Buonasera, certamente. Eccoli. Abbiamo i posti nel bar.",
+              "isCorrect": false,
+              "feedback": "Il bar non ha posti numerati sui biglietti."
+            },
+            {
+              "text": "Buonasera, certamente. Eccoli. Abbiamo i posti in strada.",
+              "isCorrect": false,
+              "feedback": "I tuoi posti sono dentro il teatro, non fuori."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Grazie. Dovete andare dritto e poi girare a sinistra. Fila dieci.",
+          "english": "Thank you. You need to go straight and then turn left. Row ten.",
+          "choices": [
+            {
+              "text": "Dritto e poi a sinistra. I nostri posti sono al centro?",
+              "isCorrect": true,
+              "feedback": "Bene. Hai ripetuto le indicazioni per conferma."
+            },
+            {
+              "text": "Dritto e poi a sinistra. I nostri posti sono al bagno?",
+              "isCorrect": false,
+              "feedback": "I posti a sedere non sono in bagno!"
+            },
+            {
+              "text": "Dritto e poi a sinistra. I nostri posti sono al buio?",
+              "isCorrect": false,
+              "feedback": "Le luci sono ancora accese, non è ancora buio."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, esattamente al centro. Ricordate di spegnere i cellulari.",
+          "english": "Yes, exactly in the center. Remember to turn off your cell phones.",
+          "choices": [
+            {
+              "text": "Certo, lo spengo subito. È vietato fare foto?",
+              "isCorrect": true,
+              "feedback": "Ottimo. Chiedere le regole del teatro è importante."
+            },
+            {
+              "text": "Certo, lo spengo subito. È vietato fare silenzio?",
+              "isCorrect": false,
+              "feedback": "Al contrario, il silenzio è obbligatorio!"
+            },
+            {
+              "text": "Certo, lo spengo subito. È vietato fare applausi?",
+              "isCorrect": false,
+              "feedback": "Gli applausi sono benvenuti alla fine!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, è vietato fare foto e video. Il sipario si apre tra poco.",
+          "english": "Yes, it is forbidden to take photos and videos. The curtain opens shortly.",
+          "choices": [
+            {
+              "text": "Capito. Guardiamo il programma mentre aspettiamo l'inizio.",
+              "isCorrect": true,
+              "feedback": "Buona idea. Leggere il programma è un'attività tipica."
+            },
+            {
+              "text": "Capito. Guardiamo il guardaroba mentre aspettiamo l'inizio.",
+              "isCorrect": false,
+              "feedback": "Sei già seduto, non puoi vedere il guardaroba da qui."
+            },
+            {
+              "text": "Capito. Guardiamo il portone mentre aspettiamo l'inizio.",
+              "isCorrect": false,
+              "feedback": "Il portone è all'ingresso, troppo lontano ora."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Godetevi l'opera. L'orchestra sta iniziando a suonare.",
+          "english": "Enjoy the opera. The orchestra is starting to play.",
+          "choices": [
+            {
+              "text": "Grazie mille. Che emozione, sta per cominciare!",
+              "isCorrect": true,
+              "feedback": "Ottimo. Hai espresso entusiasmo per lo spettacolo."
+            },
+            {
+              "text": "Grazie mille. Che emozione, sta per finire!",
+              "isCorrect": false,
+              "feedback": "Non può finire se non è ancora iniziato!"
+            },
+            {
+              "text": "Grazie mille. Che emozione, sta per uscire!",
+              "isCorrect": false,
+              "feedback": "Nessuno esce ora, tutti entrano in sala."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Scusate, potete spostarvi un po'? Sta passando una signora.",
+          "english": "Excuse me, can you move a bit? A lady is passing.",
+          "choices": [
+            {
+              "text": "Oh, mi scusi! Mi sposto subito per farla passare.",
+              "isCorrect": true,
+              "feedback": "Educato. Ti sei scusato e hai lasciato spazio."
+            },
+            {
+              "text": "Oh, mi scusi! Mi siedo subito per farla passare.",
+              "isCorrect": false,
+              "feedback": "Se ti siedi non c'è spazio per passare!"
+            },
+            {
+              "text": "Oh, mi scusi! Mi canto subito per farla passare.",
+              "isCorrect": false,
+              "feedback": "Cantare non aiuta la signora a passare!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Grazie. Siete mai stati in questo teatro prima d'ora?",
+          "english": "Thank you. Have you ever been to this theater before?",
+          "choices": [
+            {
+              "text": "No, è la nostra prima volta. È un posto meraviglioso.",
+              "isCorrect": true,
+              "feedback": "Ottimo. Hai risposto e fatto un complimento al posto."
+            },
+            {
+              "text": "No, è la nostra prima volta. È un posto pericoloso.",
+              "isCorrect": false,
+              "feedback": "Perché pericoloso? È un teatro!"
+            },
+            {
+              "text": "No, è la nostra prima volta. È un posto sporco.",
+              "isCorrect": false,
+              "feedback": "Non è molto gentile!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "È uno dei teatri più antichi d'Italia. La vista è ottima da qui.",
+          "english": "It is one of the oldest theaters in Italy. The view is great from here.",
+          "choices": [
+            {
+              "text": "Sono d'accordo. Quanto dura il primo atto dello spettacolo?",
+              "isCorrect": true,
+              "feedback": "Bene. Hai chiesto informazioni sulla durata."
+            },
+            {
+              "text": "Sono d'accordo. Quanto dura il primo atto del treno?",
+              "isCorrect": false,
+              "feedback": "Non sei in stazione, non c'è nessun treno!"
+            },
+            {
+              "text": "Sono d'accordo. Quanto dura il primo atto della torta?",
+              "isCorrect": false,
+              "feedback": "Le torte non hanno atti!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Dura circa un'ora, poi ci sarà un breve intervallo al bar.",
+          "english": "It lasts about an hour, then there will be a short intermission at the bar.",
+          "choices": [
+            {
+              "text": "Bene. Allora ci sediamo e aspettiamo che le luci si spengano.",
+              "isCorrect": true,
+              "feedback": "Ottimo. Sei pronto per l'inizio."
+            },
+            {
+              "text": "Bene. Allora ci sediamo e aspettiamo che le luci si accendano.",
+              "isCorrect": false,
+              "feedback": "Le luci devono spegnersi per iniziare lo spettacolo!"
+            },
+            {
+              "text": "Bene. Allora ci sediamo e aspettiamo che le porte si chiudano.",
+              "isCorrect": false,
+              "feedback": "Le porte sono già chiuse probabilmente."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Esatto. Sta per iniziare il silenzio in sala. Buon divertimento!",
+          "english": "Exactly. Silence is about to begin in the hall. Have fun!",
+          "choices": [
+            {
+              "text": "Grazie ancora per l'assistenza. Non vediamo l'ora!",
+              "isCorrect": true,
+              "feedback": "Ottima conclusione. Sei pronto per goderti l'opera."
+            },
+            {
+              "text": "Grazie ancora per l'assistenza. Non vediamo l'ora di uscire!",
+              "isCorrect": false,
+              "feedback": "Sei appena entrato, non voler uscire subito!"
+            },
+            {
+              "text": "Grazie ancora per l'assistenza. Non vediamo l'ora di dormire!",
+              "isCorrect": false,
+              "feedback": "Non venire a teatro per dormire!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "at_the_cloakroom",
+      "title": "Al Guardaroba",
+      "description": "Lascia i tuoi cappotti al guardaroba prima che inizi lo spettacolo.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera. Volete lasciare i cappotti qui al guardaroba?",
+          "english": "Good evening. Do you want to leave your coats here at the cloakroom?",
+          "choices": [
+            {
+              "text": "Buonasera. Sì, grazie. Ecco i nostri due cappotti neri.",
+              "isCorrect": true,
+              "feedback": "Molto bene. Hai consegnato i cappotti correttamente."
+            },
+            {
+              "text": "Buonasera. Sì, grazie. Ecco i nostri due biglietti neri.",
+              "isCorrect": false,
+              "feedback": "I biglietti ti servono per entrare, non lasciarli qui!"
+            },
+            {
+              "text": "Buonasera. Sì, grazie. Ecco i nostri due attori neri.",
+              "isCorrect": false,
+              "feedback": "Non puoi consegnare gli attori al guardaroba!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Devo prendere anche la borsa o solo l'ombrello?",
+          "english": "Certainly. Should I take the bag as well or just the umbrella?",
+          "choices": [
+            {
+              "text": "Solo l'ombrello, per favore. La borsa la porto in sala.",
+              "isCorrect": true,
+              "feedback": "Chiaro e preciso. Hai deciso cosa consegnare."
+            },
+            {
+              "text": "Solo l'ombrello, per favore. La borsa la porto in palco.",
+              "isCorrect": false,
+              "feedback": "Hai detto di avere posti in platea prima!"
+            },
+            {
+              "text": "Solo l'ombrello, per favore. La borsa la porto in scena.",
+              "isCorrect": false,
+              "feedback": "Non sei un attore, non puoi andare in scena!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "D'accordo. Ecco il numero per ritirare tutto alla fine.",
+          "english": "All right. Here is the number to collect everything at the end.",
+          "choices": [
+            {
+              "text": "Grazie. Devo pagare adesso o quando ritorno?",
+              "isCorrect": true,
+              "feedback": "Ottima domanda. È importante sapere quando pagare."
+            },
+            {
+              "text": "Grazie. Devo pagare adesso o quando arrivo?",
+              "isCorrect": false,
+              "feedback": "Sei già arrivato al guardaroba!"
+            },
+            {
+              "text": "Grazie. Devo pagare adesso o quando piango?",
+              "isCorrect": false,
+              "feedback": "Non c'è motivo di piangere per un cappotto!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Può pagare ora. Il costo è di due euro per ogni capo.",
+          "english": "You can pay now. The cost is two euros per item.",
+          "choices": [
+            {
+              "text": "Ecco quattro euro. È prevista anche una mancia?",
+              "isCorrect": true,
+              "feedback": "Gentile. Hai chiesto informazioni sulla mancia."
+            },
+            {
+              "text": "Ecco quattro euro. È prevista anche una pausa?",
+              "isCorrect": false,
+              "feedback": "Il guardaroba non ha pause, lo spettacolo sì."
+            },
+            {
+              "text": "Ecco quattro euro. È prevista anche una sedia?",
+              "isCorrect": false,
+              "feedback": "Non si affittano sedie al guardaroba."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "No, la mancia non è obbligatoria. Buona serata e buon divertimento!",
+          "english": "No, the tip is not mandatory. Good evening and have fun!",
+          "choices": [
+            {
+              "text": "Grazie mille, gentilissimo. A dopo per il ritiro.",
+              "isCorrect": true,
+              "feedback": "Perfetto. Hai concluso l'interazione in modo educato."
+            },
+            {
+              "text": "Grazie mille, gentilissimo. A dopo per il buio.",
+              "isCorrect": false,
+              "feedback": "Il buio non si ritira al guardaroba!"
+            },
+            {
+              "text": "Grazie mille, gentilissimo. A dopo per il fumo.",
+              "isCorrect": false,
+              "feedback": "È vietato fumare in teatro!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Scusate, avete oggetti di valore nelle tasche dei cappotti?",
+          "english": "Excuse me, do you have valuables in your coat pockets?",
+          "choices": [
+            {
+              "text": "No, ho preso tutto. Ho solo le chiavi e il portafoglio con me.",
+              "isCorrect": true,
+              "feedback": "Bene. È sempre meglio controllare gli oggetti di valore."
+            },
+            {
+              "text": "No, ho preso tutto. Ho solo il sipario e l'attore con me.",
+              "isCorrect": false,
+              "feedback": "Non puoi portare il sipario o l'attore con te!"
+            },
+            {
+              "text": "No, ho preso tutto. Ho solo il palco e la platea con me.",
+              "isCorrect": false,
+              "feedback": "Questi sono posti del teatro, non oggetti personali."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. È meglio non lasciare niente di importante qui.",
+          "english": "Perfect. It is better not to leave anything important here.",
+          "choices": [
+            {
+              "text": "Ha ragione. Il guardaroba è custodito per tutta la serata?",
+              "isCorrect": true,
+              "feedback": "Ottima domanda sulla sicurezza del guardaroba."
+            },
+            {
+              "text": "Ha ragione. Il guardaroba è cucinato per tutta la serata?",
+              "isCorrect": false,
+              "feedback": "Il guardaroba non si cucina!"
+            },
+            {
+              "text": "Ha ragione. Il guardaroba è cantato per tutta la serata?",
+              "isCorrect": false,
+              "feedback": "Il guardaroba non canta, gli attori sì."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, c'è sempre qualcuno presente fino alla fine dell'opera.",
+          "english": "Yes, there is always someone present until the end of the opera.",
+          "choices": [
+            {
+              "text": "Mi sento più tranquillo allora. Dove sono i nostri posti?",
+              "isCorrect": true,
+              "feedback": "Bene. Ora che i cappotti sono al sicuro, cerchi i posti."
+            },
+            {
+              "text": "Mi sento più tranquillo allora. Dove sono i nostri cappotti?",
+              "isCorrect": false,
+              "feedback": "Li hai appena lasciati qui al guardaroba!"
+            },
+            {
+              "text": "Mi sento più tranquillo allora. Dove sono i nostri sogni?",
+              "isCorrect": false,
+              "feedback": "Questa è una domanda troppo filosofica per il guardarobiere!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Dovete andare al piano superiore per la platea. Le scale sono là.",
+          "english": "You need to go to the upper floor for the stalls. The stairs are over there.",
+          "choices": [
+            {
+              "text": "Grazie per l'aiuto. Prenderemo le scale subito.",
+              "isCorrect": true,
+              "feedback": "Perfetto. Segui le indicazioni per raggiungere la sala."
+            },
+            {
+              "text": "Grazie per l'aiuto. Prenderemo le sedie subito.",
+              "isCorrect": false,
+              "feedback": "Devi prendere le scale, non le sedie!"
+            },
+            {
+              "text": "Grazie per l'aiuto. Prenderemo le nuvole subito.",
+              "isCorrect": false,
+              "feedback": "Non ci sono nuvole dentro il teatro."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego. Vi auguro una buona serata e un buon ascolto.",
+          "english": "You're welcome. I wish you a good evening and good listening.",
+          "choices": [
+            {
+              "text": "Grazie ancora. Buona serata anche a lei!",
+              "isCorrect": true,
+              "feedback": "Ottima conclusione dell'interazione al guardaroba."
+            },
+            {
+              "text": "Grazie ancora. Buona colazione anche a lei!",
+              "isCorrect": false,
+              "feedback": "È sera, non è l'ora della colazione!"
+            },
+            {
+              "text": "Grazie ancora. Buona fortuna anche a lei!",
+              "isCorrect": false,
+              "feedback": "In teatro si dice 'In bocca al lupo', non buona fortuna!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the_intermission",
+      "title": "L'Intervallo",
+      "description": "Durante la pausa tra gli atti, vai al bar del teatro per bere qualcosa.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Signori, c'è un intervallo di venti minuti. Potete uscire dalla sala.",
+          "english": "Ladies and gentlemen, there is a twenty-minute intermission. You can leave the hall.",
+          "choices": [
+            {
+              "text": "Finalmente una pausa! Possiamo andare al bar del foyer?",
+              "isCorrect": true,
+              "feedback": "Ottimo. Hai individuato correttamente dove andare."
+            },
+            {
+              "text": "Finalmente una pausa! Possiamo andare al palco del foyer?",
+              "isCorrect": false,
+              "feedback": "Il palco è in sala, non nel foyer."
+            },
+            {
+              "text": "Finalmente una pausa! Possiamo andare al posto del foyer?",
+              "isCorrect": false,
+              "feedback": "Il tuo posto è in sala, non nel foyer."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente, il bar è aperto. Desiderate qualcosa da bere?",
+          "english": "Certainly, the bar is open. Would you like something to drink?",
+          "choices": [
+            {
+              "text": "Sì, vorrei un'acqua naturale e un caffè, per favore.",
+              "isCorrect": true,
+              "feedback": "Molto bene. Un'ordinazione semplice e corretta."
+            },
+            {
+              "text": "Sì, vorrei un'acqua naturale e un palco, per favore.",
+              "isCorrect": false,
+              "feedback": "Non puoi ordinare un palco al bar!"
+            },
+            {
+              "text": "Sì, vorrei un'acqua naturale e un atto, per favore.",
+              "isCorrect": false,
+              "feedback": "Un atto è una parte dello spettacolo, non si beve!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ecco a lei. Sono quattro euro in totale. Avete fretta?",
+          "english": "Here you go. It's four euros in total. Are you in a hurry?",
+          "choices": [
+            {
+              "text": "Un po'. Quanto dura esattamente questa pausa?",
+              "isCorrect": true,
+              "feedback": "Importante. Hai chiesto la durata per non fare tardi."
+            },
+            {
+              "text": "Un po'. Quanto dura esattamente questa scena?",
+              "isCorrect": false,
+              "feedback": "La scena dura quanto decide l'attore, non è una pausa!"
+            },
+            {
+              "text": "Un po'. Quanto dura esattamente questa borsa?",
+              "isCorrect": false,
+              "feedback": "Una borsa non ha una durata temporale!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ancora quindici minuti. Sentirete un campanello prima di ricominciare.",
+          "english": "Fifteen minutes more. You will hear a bell before restarting.",
+          "choices": [
+            {
+              "text": "Perfetto. Allora possiamo finire di bere con calma.",
+              "isCorrect": true,
+              "feedback": "Giusto. Hai capito che c'è ancora tempo."
+            },
+            {
+              "text": "Perfetto. Allora possiamo finire di bere con gioia.",
+              "isCorrect": false,
+              "feedback": "Possibile, ma 'con calma' è più comune in questo contesto."
+            },
+            {
+              "text": "Perfetto. Allora possiamo finire di bere con rabbia.",
+              "isCorrect": false,
+              "feedback": "Non c'è motivo di essere arrabbiati ora!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Esatto. Vi auguro un buon proseguimento con il secondo atto!",
+          "english": "Exactly. I wish you a good continuation with the second act!",
+          "choices": [
+            {
+              "text": "Grazie. Lo spettacolo è bellissimo, siamo molto contenti.",
+              "isCorrect": true,
+              "feedback": "Ottimo finale. Hai espresso un giudizio positivo."
+            },
+            {
+              "text": "Grazie. Lo spettacolo è durissimo, siamo molto stanchi.",
+              "isCorrect": false,
+              "feedback": "Speriamo di no! 'Bellissimo' è più appropriato."
+            },
+            {
+              "text": "Grazie. Lo spettacolo è cortissimo, siamo molto tristi.",
+              "isCorrect": false,
+              "feedback": "Le opere liriche sono solitamente piuttosto lunghe."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Avete visto dove si trova l'uscita di emergenza per sicurezza?",
+          "english": "Did you see where the emergency exit is for safety?",
+          "choices": [
+            {
+              "text": "Sì, è vicino alla nostra fila. Speriamo di non averne bisogno!",
+              "isCorrect": true,
+              "feedback": "Molto bene. Essere consapevoli delle uscite è importante."
+            },
+            {
+              "text": "Sì, è vicino alla nostra musica. Speriamo di non averne bisogno!",
+              "isCorrect": false,
+              "feedback": "L'uscita non è vicino alla musica."
+            },
+            {
+              "text": "Sì, è vicino alla nostra voce. Speriamo di non averne bisogno!",
+              "isCorrect": false,
+              "feedback": "L'uscita non è vicino alla tua voce."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente! Volete anche un cioccolatino per accompagnare il caffè?",
+          "english": "Certainly! Would you like a chocolate to go with your coffee?",
+          "choices": [
+            {
+              "text": "No grazie, va bene così. Il caffè è molto buono e forte.",
+              "isCorrect": true,
+              "feedback": "Cortese. Hai rifiutato gentilmente l'offerta extra."
+            },
+            {
+              "text": "No grazie, va bene così. Il caffè è molto brutto e debole.",
+              "isCorrect": false,
+              "feedback": "Non è molto gentile dire che il caffè è brutto!"
+            },
+            {
+              "text": "No grazie, va bene così. Il caffè è molto verde e blu.",
+              "isCorrect": false,
+              "feedback": "Il caffè non è né verde né blu!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Mi fa piacere. Il campanello suonerà tra un minuto esatto.",
+          "english": "I'm glad. The bell will ring in exactly one minute.",
+          "choices": [
+            {
+              "text": "Dobbiamo sbrigarci allora. Non voglio perdere l'inizio.",
+              "isCorrect": true,
+              "feedback": "Giusto. È ora di tornare ai propri posti."
+            },
+            {
+              "text": "Dobbiamo dormirci allora. Non voglio perdere l'inizio.",
+              "isCorrect": false,
+              "feedback": "Non devi dormire, devi tornare in sala!"
+            },
+            {
+              "text": "Dobbiamo lavarci allora. Non voglio perdere l'inizio.",
+              "isCorrect": false,
+              "feedback": "Non c'è tempo per lavarsi ora!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Non si preoccupi, ha ancora tempo per finire l'acqua.",
+          "english": "Don't worry, you still have time to finish the water.",
+          "choices": [
+            {
+              "text": "Grazie. Lo spettacolo riprende con la stessa orchestra?",
+              "isCorrect": true,
+              "feedback": "Buona domanda. L'orchestra rimane la stessa per tutta l'opera."
+            },
+            {
+              "text": "Grazie. Lo spettacolo riprende con la stessa strada?",
+              "isCorrect": false,
+              "feedback": "Lo spettacolo è in teatro, non in strada!"
+            },
+            {
+              "text": "Grazie. Lo spettacolo riprende con la stessa porta?",
+              "isCorrect": false,
+              "feedback": "La porta non centra con la ripresa dello spettacolo."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sì, l'orchestra e il direttore sono pronti. Buon secondo atto!",
+          "english": "Yes, the orchestra and the conductor are ready. Enjoy the second act!",
+          "choices": [
+            {
+              "text": "Grazie mille, torniamo subito in sala. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Ottima conclusione. Sei pronto per la seconda parte."
+            },
+            {
+              "text": "Grazie mille, torniamo subito in banca. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "Torni in sala, non in banca!"
+            },
+            {
+              "text": "Grazie mille, torniamo subito a letto. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "Non è ancora l'ora di andare a letto!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

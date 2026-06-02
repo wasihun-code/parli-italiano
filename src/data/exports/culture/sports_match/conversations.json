@@ -1,0 +1,953 @@
+{
+  "scenarioId": 90,
+  "conversations": [
+    {
+      "id": "going_to_the_stadium",
+      "title": "Andiamo allo stadio",
+      "description": "Meet a friend and talk about the tickets and the match.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Vai alla partita oggi? Io ho due biglietti.",
+          "english": "Hi! Are you going to the match today? I have two tickets.",
+          "choices": [
+            {
+              "text": "Sì, certo! Per quale squadra tifi? Non mi ricordo più.",
+              "isCorrect": true,
+              "feedback": "Great! Asking about the team shows interest."
+            },
+            {
+              "text": "No, non ho fame adesso. Forse dopo prendo un panino.",
+              "isCorrect": false,
+              "feedback": "They asked about the match, not food!"
+            },
+            {
+              "text": "Il mio posto è la fila dodici, ma non trovo il numero.",
+              "isCorrect": false,
+              "feedback": "You don't have the tickets yet!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sono un tifoso della Roma da sempre. Oggi giochiamo contro la Lazio.",
+          "english": "I've always been a Roma fan. Today we play against Lazio.",
+          "choices": [
+            {
+              "text": "Ah, il derby! Lo stadio è grandissimo, vero? È molto lontano?",
+              "isCorrect": true,
+              "feedback": "Perfect. Identifying the 'derby' is very Italian."
+            },
+            {
+              "text": "Sì, la birra è fredda. Quanto costa un panino al bar?",
+              "isCorrect": false,
+              "feedback": "Stay on topic! You are talking about the teams."
+            },
+            {
+              "text": "L'arbitro ha fischiato. La partita è finita adesso?",
+              "isCorrect": false,
+              "feedback": "The match hasn't even started yet."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, è enorme. Si trova fuori città. Meglio muoversi ora.",
+          "english": "Yes, it's huge. It's located outside the city. Better move now.",
+          "choices": [
+            {
+              "text": "Hai ragione, andiamo! Prendiamo l'autobus o andiamo a piedi?",
+              "isCorrect": true,
+              "feedback": "Good. Discussing transportation is practical."
+            },
+            {
+              "text": "Mi piace il calcio. Qual è il risultato finale di ieri?",
+              "isCorrect": false,
+              "feedback": "The host wants to leave now, focus on going."
+            },
+            {
+              "text": "Ecco il mio posto. Tribuna B, fila otto, posto dieci.",
+              "isCorrect": false,
+              "feedback": "You are still meeting up, not at your seat yet."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Prendiamo l'autobus, è più veloce. Hai preso la sciarpa della squadra?",
+          "english": "Let's take the bus, it's faster. Did you bring the team scarf?",
+          "choices": [
+            {
+              "text": "Sì, ce l'ho! È nello zaino. Sono pronto per tifare la Roma.",
+              "isCorrect": true,
+              "feedback": "Great enthusiasm! Wearing the scarf is a fan tradition."
+            },
+            {
+              "text": "No, preferisco l'acqua. Non bevo birra durante la pausa.",
+              "isCorrect": false,
+              "feedback": "They asked about the scarf, not drinks!"
+            },
+            {
+              "text": "Sì, il portiere ha fatto una parata incredibile prima.",
+              "isCorrect": false,
+              "feedback": "The game hasn't started yet!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottimo. Ricorda che oggi c'è molta tensione tra i tifosi.",
+          "english": "Excellent. Remember there is a lot of tension among the fans today.",
+          "choices": [
+            {
+              "text": "Lo so, è una partita importante. Dobbiamo stare attenti.",
+              "isCorrect": true,
+              "feedback": "Good awareness of the atmosphere."
+            },
+            {
+              "text": "Sì, il biglietto è nel mio portafoglio. Dove lo trovo?",
+              "isCorrect": false,
+              "feedback": "They are talking about the atmosphere, not the tickets."
+            },
+            {
+              "text": "Ah, il gol è bellissimo! Chi ha segnato per la squadra?",
+              "isCorrect": false,
+              "feedback": "Again, no goals yet!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Esatto. Guarda, l'autobus sta arrivando. Saliamo subito?",
+          "english": "Exactly. Look, the bus is coming. Shall we get on now?",
+          "choices": [
+            {
+              "text": "Sì, saliamo. Spero che non ci sia troppa gente a bordo.",
+              "isCorrect": true,
+              "feedback": "Correct response to the bus arriving."
+            },
+            {
+              "text": "No, il mio posto è occupato. Chi è questo signore?",
+              "isCorrect": false,
+              "feedback": "You aren't on the bus/stadium yet!"
+            },
+            {
+              "text": "Sì, l'arbitro ha dato un rigore. Non era fallo però.",
+              "isCorrect": false,
+              "feedback": "Still not at the match."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Per fortuna è quasi vuoto. Ci mettiamo vicino al finestrino?",
+          "english": "Luckily it's almost empty. Shall we sit near the window?",
+          "choices": [
+            {
+              "text": "Va bene, così vediamo la città. Quanto manca allo stadio?",
+              "isCorrect": true,
+              "feedback": "Good follow-up question."
+            },
+            {
+              "text": "No, voglio un panino. Ho molta fame adesso, andiamo?",
+              "isCorrect": false,
+              "feedback": "Focus on the bus trip!"
+            },
+            {
+              "text": "Sì, il secondo tempo inizia tra dieci minuti. Presto!",
+              "isCorrect": false,
+              "feedback": "You are on the bus!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Circa venti minuti. Hai controllato se i biglietti sono validi?",
+          "english": "About twenty minutes. Did you check if the tickets are valid?",
+          "choices": [
+            {
+              "text": "Sì, li ho controllati stamattina. Sono posti numerati.",
+              "isCorrect": true,
+              "feedback": "Verification is important for stadium entry."
+            },
+            {
+              "text": "No, la palla è fuori. È un calcio d'angolo per noi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant sports talk."
+            },
+            {
+              "text": "Sì, mi piace la maglietta. Dove l'hai comprata tu?",
+              "isCorrect": false,
+              "feedback": "Stay on topic: tickets."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Bene. Io ho i biglietti nel telefono. Tu hai la batteria carica?",
+          "english": "Good. I have the tickets on my phone. Is your battery charged?",
+          "choices": [
+            {
+              "text": "Sì, al cento per cento. Possiamo entrare senza problemi.",
+              "isCorrect": true,
+              "feedback": "Good preparation."
+            },
+            {
+              "text": "No, l'arbitro è cieco! Non ha visto quel fallo grave.",
+              "isCorrect": false,
+              "feedback": "Stop commenting on a match that hasn't started!"
+            },
+            {
+              "text": "Sì, una birra media grazie. Quanto costa qui al bar?",
+              "isCorrect": false,
+              "feedback": "You are on an empty bus."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Siamo quasi arrivati. Vedi le luci dello stadio?",
+          "english": "Perfect. We're almost there. Do you see the stadium lights?",
+          "choices": [
+            {
+              "text": "Sì, le vedo! Che emozione. Forza Roma, andiamo a vincere!",
+              "isCorrect": true,
+              "feedback": "Great way to end the pre-match conversation."
+            },
+            {
+              "text": "No, il mio posto è fila tre. Questo è il settore C.",
+              "isCorrect": false,
+              "feedback": "You are still on the bus."
+            },
+            {
+              "text": "Sì, il risultato è uno a zero. Chi ha fatto il gol?",
+              "isCorrect": false,
+              "feedback": "The match hasn't begun."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding_your_seat",
+      "title": "Troviamo il posto",
+      "description": "Enter the stadium and find your assigned seat with help from a steward.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Posso vedere il vostro biglietto, per favore?",
+          "english": "Good morning. May I see your ticket, please?",
+          "choices": [
+            {
+              "text": "Certamente, ecco il mio biglietto. Dove devo andare?",
+              "isCorrect": true,
+              "feedback": "Polite and direct. Stewards are there to help."
+            },
+            {
+              "text": "No, non tifo nessuna squadra. Sono qui solo per caso.",
+              "isCorrect": false,
+              "feedback": "That's not helpful for finding your seat."
+            },
+            {
+              "text": "Sì, il goal è stato fantastico! Chi ha tirato la palla?",
+              "isCorrect": false,
+              "feedback": "The match likely hasn't started or you just entered."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Grazie. Avete un posto numerato in Tribuna B. È il settore 4.",
+          "english": "Thank you. You have a numbered seat in Grandstand B. It's sector 4.",
+          "choices": [
+            {
+              "text": "Capito, settore 4. Dove si trova? Devo salire le scale?",
+              "isCorrect": true,
+              "feedback": "Good follow-up to get precise directions."
+            },
+            {
+              "text": "Sì, una birra media. E anche un panino con il salame.",
+              "isCorrect": false,
+              "feedback": "You are talking to a steward about seats, not food."
+            },
+            {
+              "text": "No, l'arbitro ha fischiato fallo. È un rigore adesso?",
+              "isCorrect": false,
+              "feedback": "Focus on finding your seat first."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, deve salire le scale a sinistra. Poi cerchi la fila 12.",
+          "english": "Yes, you have to go up the stairs on the left. Then look for row 12.",
+          "choices": [
+            {
+              "text": "Fila 12, perfetto. E il numero del mio posto qual è?",
+              "isCorrect": true,
+              "feedback": "Asking for the seat number is the logical next step."
+            },
+            {
+              "text": "La maglietta è troppo piccola. Avete una taglia grande?",
+              "isCorrect": false,
+              "feedback": "The steward is not selling merchandise."
+            },
+            {
+              "text": "Sì, lo stadio è enorme. Quanta gente c'è oggi qui?",
+              "isCorrect": false,
+              "feedback": "A bit too conversational when you need directions."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Il suo posto è il numero 8. Fila 12, posto 8. Chiaro?",
+          "english": "Your seat is number 8. Row 12, seat 8. Clear?",
+          "choices": [
+            {
+              "text": "Tutto chiaro, grazie mille. Fila 12, posto 8. Vado!",
+              "isCorrect": true,
+              "feedback": "Confirming the info before moving on."
+            },
+            {
+              "text": "No, non mi piace il calcio. Preferisco il basket ora.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and confusing to the steward."
+            },
+            {
+              "text": "Sì, il portiere ha parato tutto. È bravissimo oggi.",
+              "isCorrect": false,
+              "feedback": "You haven't seen the match yet."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "(Più tardi) Scusi, signore. Credo che questo sia il mio posto.",
+          "english": "(Later) Excuse me, sir. I believe this is my seat.",
+          "choices": [
+            {
+              "text": "Oh, mi scusi. Mi fa vedere il suo biglietto, per favore?",
+              "isCorrect": true,
+              "feedback": "Polite way to handle a potential seat conflict."
+            },
+            {
+              "text": "Sì, la sciarpa è rossa. Mi piace molto questo colore.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the seat issue."
+            },
+            {
+              "text": "No, il bar è chiuso. Devo aspettare il secondo tempo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the seat issue."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Guardi, io ho fila 12, posto 8. Anche lei? È molto strano.",
+          "english": "Look, I have row 12, seat 8. You too? It's very strange.",
+          "choices": [
+            {
+              "text": "Fammi vedere... Ah, io ho il settore B, lei ha il C!",
+              "isCorrect": true,
+              "feedback": "Great observation. Sectors are often the cause of confusion."
+            },
+            {
+              "text": "Sì, il risultato è 0-0. La partita è molto noiosa.",
+              "isCorrect": false,
+              "feedback": "Focus on the seat problem."
+            },
+            {
+              "text": "Voglio un'acqua naturale. Quanto costa al distributore?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ah, ha ragione! Mi scusi tanto. Devo andare al settore C.",
+          "english": "Ah, you're right! I'm so sorry. I have to go to sector C.",
+          "choices": [
+            {
+              "text": "Nessun problema, succede. Buona partita nel settore C!",
+              "isCorrect": true,
+              "feedback": "Graceful and polite resolution."
+            },
+            {
+              "text": "No, l'arbitro ha dato un rigore alla squadra ospite.",
+              "isCorrect": false,
+              "feedback": "Stay in the moment of the conversation."
+            },
+            {
+              "text": "Sì, lo stadio è pieno. Non c'è più un posto libero.",
+              "isCorrect": false,
+              "feedback": "Generic comment that doesn't close the interaction."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Grazie. Ma lei sa dove si trova il settore C? Sono perso.",
+          "english": "Thank you. But do you know where sector C is? I'm lost.",
+          "choices": [
+            {
+              "text": "Sì, è proprio dietro la curva. Deve tornare indietro.",
+              "isCorrect": true,
+              "feedback": "Helpful fan behavior!"
+            },
+            {
+              "text": "No, la birra è finita. Devo andare al bar adesso.",
+              "isCorrect": false,
+              "feedback": "A bit dismissive."
+            },
+            {
+              "text": "Sì, il gol è stato segnato di testa. Che bello!",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Dietro la curva... capito. Grazie ancora per l'aiuto!",
+          "english": "Behind the curve... got it. Thanks again for the help!",
+          "choices": [
+            {
+              "text": "Prego! Goditi la partita. Forza Roma, speriamo bene!",
+              "isCorrect": true,
+              "feedback": "Friendly exit."
+            },
+            {
+              "text": "No, l'arbitro fischia troppo. Non mi piace questo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Sì, prendo anche le patatine. Quanto costano oggi?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Speriamo! Buona serata e arrivederci.",
+          "english": "Let's hope! Good evening and goodbye.",
+          "choices": [
+            {
+              "text": "Arrivederci e buona partita! Finalmente mi siedo.",
+              "isCorrect": true,
+              "feedback": "Ending the interaction and settling in."
+            },
+            {
+              "text": "Sì, il tempo è scaduto. La partita è finita.",
+              "isCorrect": false,
+              "feedback": "Too early for that."
+            },
+            {
+              "text": "No, non ho il biglietto. L'ho perso prima qui.",
+              "isCorrect": false,
+              "feedback": "You just showed it!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "at_the_match",
+      "title": "Durante la partita",
+      "description": "Talk to another fan during the game about the action on the field.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Guarda! Stanno attaccando a destra. Che bella azione!",
+          "english": "Look! They're attacking on the right. What a great move!",
+          "choices": [
+            {
+              "text": "Sì, velocissimi! Speriamo che facciano un bel cross.",
+              "isCorrect": true,
+              "feedback": "Engaging with the game action correctly."
+            },
+            {
+              "text": "No, il mio biglietto è nel settore B. E il tuo?",
+              "isCorrect": false,
+              "feedback": "You are already at the match, talk about the play."
+            },
+            {
+              "text": "Voglio un caffè caldo. Dove posso trovarlo qui?",
+              "isCorrect": false,
+              "feedback": "Wait for the break to talk about food."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Attento... tira... GOAL! Incredibile! Uno a zero!",
+          "english": "Watch out... he shoots... GOAL! Incredible! One to zero!",
+          "choices": [
+            {
+              "text": "Mamma mia, che gol! Ha tirato sotto l'incrocio!",
+              "isCorrect": true,
+              "feedback": "Using authentic expressions like 'Mamma mia' is great."
+            },
+            {
+              "text": "Sì, l'autobus è arrivato. Saliamo subito per andare?",
+              "isCorrect": false,
+              "feedback": "You are at the stadium!"
+            },
+            {
+              "text": "No, non ho fame. Ho mangiato un panino a casa.",
+              "isCorrect": false,
+              "feedback": "Completely irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Aspetta, l'arbitro ha fischiato? Forse era fuorigioco.",
+          "english": "Wait, did the referee blow the whistle? Maybe it was offside.",
+          "choices": [
+            {
+              "text": "Spero di no! Guardo il guardalinee... no, è gol!",
+              "isCorrect": true,
+              "feedback": "Correct football terminology and observation."
+            },
+            {
+              "text": "Sì, il mio posto è occupato da un signore alto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant during the goal celebration."
+            },
+            {
+              "text": "No, prendo una birra media al bar. Andiamo ora?",
+              "isCorrect": false,
+              "feedback": "Don't leave during a goal check!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, l'arbitro ha convalidato. Guarda il tabellone: 1-0!",
+          "english": "Yes, the referee confirmed it. Look at the scoreboard: 1-0!",
+          "choices": [
+            {
+              "text": "Bellissimo! Che emozione. Tutto lo stadio sta urlando.",
+              "isCorrect": true,
+              "feedback": "Reflecting the atmosphere of the stadium."
+            },
+            {
+              "text": "No, la palla è fuori. È un calcio di rinvio.",
+              "isCorrect": false,
+              "feedback": "The goal was just confirmed!"
+            },
+            {
+              "text": "Sì, il biglietto costa venti euro. È molto caro.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Guarda il portiere. Sembra molto arrabbiato con i difensori.",
+          "english": "Look at the goalkeeper. He seems very angry with the defenders.",
+          "choices": [
+            {
+              "text": "Ha ragione, erano tutti fermi. Che errore grave!",
+              "isCorrect": true,
+              "feedback": "Good understanding of the game dynamics."
+            },
+            {
+              "text": "Sì, la sciarpa è della Roma. È molto bella così.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "No, voglio un'acqua. Ho molta sete dopo il gol.",
+              "isCorrect": false,
+              "feedback": "A bit selfish to talk about thirst now."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "C'è molta tensione adesso. Speriamo che finisca il tempo.",
+          "english": "There's a lot of tension now. Let's hope the half ends.",
+          "choices": [
+            {
+              "text": "Sì, mancano solo due minuti. Dobbiamo stare calmi.",
+              "isCorrect": true,
+              "feedback": "Good conversational response."
+            },
+            {
+              "text": "No, l'arbitro è bravissimo. Non fa mai errori lui.",
+              "isCorrect": false,
+              "feedback": "A very unusual opinion for a football fan!"
+            },
+            {
+              "text": "Sì, il mio posto è fila dodici. Posso sedermi qui?",
+              "isCorrect": false,
+              "feedback": "You are already sitting!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Fallo! L'hai visto? È un cartellino giallo sicuro.",
+          "english": "Foul! Did you see it? That's a sure yellow card.",
+          "choices": [
+            {
+              "text": "Assolutamente sì. È stato un intervento molto duro.",
+              "isCorrect": true,
+              "feedback": "Agreeing and expanding on the observation."
+            },
+            {
+              "text": "No, il panino è buono. Mi piace molto il prosciutto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Sì, lo stadio è fuori città. Prendiamo l'autobus?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "L'arbitro non fischia niente! Incredibile. È uno scandalo.",
+          "english": "The referee doesn't blow for anything! Incredible. It's a scandal.",
+          "choices": [
+            {
+              "text": "Hai ragione, è incredibile! L'arbitro è molto scarso.",
+              "isCorrect": true,
+              "feedback": "Joining in the common fan complaint."
+            },
+            {
+              "text": "Sì, il risultato finale è uno a uno. Pareggio!",
+              "isCorrect": false,
+              "feedback": "The match is still 1-0."
+            },
+            {
+              "text": "No, la maglietta è bianca. Non è la nostra squadra.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco, fischia la fine del primo tempo. Andiamo al bar?",
+          "english": "There, he blows for the end of the first half. Shall we go to the bar?",
+          "choices": [
+            {
+              "text": "Sì, andiamo subito. C'è molta gente e molta fila.",
+              "isCorrect": true,
+              "feedback": "Practical response to the half-time break."
+            },
+            {
+              "text": "No, il portiere ha parato il rigore. Che fortuna!",
+              "isCorrect": false,
+              "feedback": "There was no penalty."
+            },
+            {
+              "text": "Sì, il mio biglietto è valido. Possiamo entrare ora?",
+              "isCorrect": false,
+              "feedback": "You are already inside."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prendiamo una birra e un panino. Offro io!",
+          "english": "Let's get a beer and a sandwich. My treat!",
+          "choices": [
+            {
+              "text": "Grazie mille, gentilissimo! Andiamo di corsa allora.",
+              "isCorrect": true,
+              "feedback": "Polite and enthusiastic."
+            },
+            {
+              "text": "No, l'arbitro è molto bravo. Mi piace come fischia.",
+              "isCorrect": false,
+              "feedback": "Contradicting your previous opinion."
+            },
+            {
+              "text": "Sì, il risultato è zero a zero. Che noia oggi.",
+              "isCorrect": false,
+              "feedback": "It's 1-0!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buying_snacks",
+      "title": "Al bar dello stadio",
+      "description": "Order snacks and drinks during the half-time break.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cosa prendete? C'è molta gente oggi.",
+          "english": "Good morning! What are you having? There are many people today.",
+          "choices": [
+            {
+              "text": "Vorrei una birra media e un panino con il salame.",
+              "isCorrect": true,
+              "feedback": "Standard order for a stadium bar."
+            },
+            {
+              "text": "Sì, tifo Roma. È la mia squadra preferita da sempre.",
+              "isCorrect": false,
+              "feedback": "The bartender is asking for your order, not your team."
+            },
+            {
+              "text": "No, il mio posto è fila otto. Dove sono le scale?",
+              "isCorrect": false,
+              "feedback": "You are at the bar now."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Birra media e panino. E per il suo amico? Vuole acqua?",
+          "english": "Medium beer and a sandwich. And for your friend? Does he want water?",
+          "choices": [
+            {
+              "text": "Lui vorrebbe un'acqua naturale e delle patatine.",
+              "isCorrect": true,
+              "feedback": "Correctly ordering for a friend."
+            },
+            {
+              "text": "Sì, l'arbitro è stato molto bravo nel primo tempo.",
+              "isCorrect": false,
+              "feedback": "Ordering food, not discussing the referee."
+            },
+            {
+              "text": "No, lo stadio è troppo grande. Mi sono perso prima.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Bene. Volete il panino scaldato o va bene freddo?",
+          "english": "Good. Do you want the sandwich warmed up or is cold fine?",
+          "choices": [
+            {
+              "text": "Scaldato, grazie. Mi piace il pane caldo e croccante.",
+              "isCorrect": true,
+              "feedback": "Preference stated clearly."
+            },
+            {
+              "text": "Sì, il gol è stato bellissimo. Un tiro incredibile!",
+              "isCorrect": false,
+              "feedback": "Stay on the food topic."
+            },
+            {
+              "text": "No, non ho il biglietto qui. L'ho lasciato al posto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certamente. Ecco la birra media e l'acqua naturale.",
+          "english": "Certainly. Here is the medium beer and the still water.",
+          "choices": [
+            {
+              "text": "Grazie. Quanto costa in tutto? Pago con la carta.",
+              "isCorrect": true,
+              "feedback": "Inquiring about the price and payment method."
+            },
+            {
+              "text": "No, l'arbitro ha fischiato la fine. Andiamo via?",
+              "isCorrect": false,
+              "feedback": "Only the first half ended."
+            },
+            {
+              "text": "Sì, la maglietta è rossa. È il colore della Roma.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sono dieci euro in tutto. La carta non funziona, scusi.",
+          "english": "It's ten euros in total. The card is not working, sorry.",
+          "choices": [
+            {
+              "text": "Ah, peccato. Allora pago in contanti. Ecco venti euro.",
+              "isCorrect": true,
+              "feedback": "Adapting to the payment problem."
+            },
+            {
+              "text": "Sì, il portiere è bravissimo. Ha parato due tiri.",
+              "isCorrect": false,
+              "feedback": "Pay first!"
+            },
+            {
+              "text": "No, il mio posto è fila dodici. Posso sedermi?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Grazie. Ecco dieci euro di resto. Il panino è quasi pronto.",
+          "english": "Thank you. Here is ten euros change. The sandwich is almost ready.",
+          "choices": [
+            {
+              "text": "Ottimo, grazie. C'è molta tensione oggi tra i tifosi.",
+              "isCorrect": true,
+              "feedback": "A bit of small talk while waiting is natural."
+            },
+            {
+              "text": "No, non tifo nessuna squadra. Sono neutrale oggi.",
+              "isCorrect": false,
+              "feedback": "The bartender didn't ask."
+            },
+            {
+              "text": "Sì, l'autobus si trova fuori dallo stadio adesso.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, è un derby importante. Ecco il panino caldo. Attento!",
+          "english": "Yes, it's an important derby. Here is the warm sandwich. Watch out!",
+          "choices": [
+            {
+              "text": "Grazie, scotta molto? Lo prendo con un tovagliolo.",
+              "isCorrect": true,
+              "feedback": "Practical response to a hot item."
+            },
+            {
+              "text": "No, il risultato è uno a zero. Abbiamo vinto noi!",
+              "isCorrect": false,
+              "feedback": "The match isn't over."
+            },
+            {
+              "text": "Sì, la sciarpa è nello zaino. La prendo dopo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Prego. Volete anche dei tovaglioli extra o dei sali?",
+          "english": "You're welcome. Do you want extra napkins or some salt?",
+          "choices": [
+            {
+              "text": "Due tovaglioli extra, grazie. Siamo molto di fretta.",
+              "isCorrect": true,
+              "feedback": "Direct and polite."
+            },
+            {
+              "text": "No, l'arbitro è scarso. Non mi piace per niente.",
+              "isCorrect": false,
+              "feedback": "Focus on the napkins."
+            },
+            {
+              "text": "Sì, lo stadio è pieno. C'è un'atmosfera bellissima.",
+              "isCorrect": false,
+              "feedback": "Focus on the napkins."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Capisco. Il secondo tempo inizia tra cinque minuti. Presto!",
+          "english": "I understand. The second half starts in five minutes. Hurry!",
+          "choices": [
+            {
+              "text": "Sì, dobbiamo tornare subito al nostro posto numerato.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the time constraint."
+            },
+            {
+              "text": "No, la birra è calda. Non mi piace berla così.",
+              "isCorrect": false,
+              "feedback": "You just said it was fine."
+            },
+            {
+              "text": "Sì, il gol è stato segnato di mano. È uno scandalo!",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buona partita allora! Speriamo in altri gol bellissimi.",
+          "english": "Have a good match then! Let's hope for more beautiful goals.",
+          "choices": [
+            {
+              "text": "Speriamo! Grazie mille e buona serata. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Friendly exit to return to the match."
+            },
+            {
+              "text": "No, l'arbitro ha fischiato la fine della partita.",
+              "isCorrect": false,
+              "feedback": "Still too early."
+            },
+            {
+              "text": "Sì, il mio biglietto è nel settore C. Molto lontano.",
+              "isCorrect": false,
+              "feedback": "You are already at your seat (mostly)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

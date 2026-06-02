@@ -1,0 +1,953 @@
+{
+  "scenarioId": 91,
+  "conversations": [
+    {
+      "id": "coffee_ritual",
+      "title": "Il rito del caffè",
+      "description": "Learn how to order and drink coffee like a local in an Italian bar.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Sei pronto per il tuo primo vero caffè italiano? Entriamo in questo bar.",
+          "english": "Good morning! Are you ready for your first real Italian coffee? Let's go into this bar.",
+          "choices": [
+            {
+              "text": "Sì, volentieri! Ma come funziona qui? Devo prima pagare alla cassa?",
+              "isCorrect": true,
+              "feedback": "Great question! In many Italian bars, you pay first and then show the receipt."
+            },
+            {
+              "text": "Voglio un grande caffè americano con molto latte, per favore.",
+              "isCorrect": false,
+              "feedback": "Careful! Italians usually drink espresso or cappuccino, and 'Americano' is different here."
+            },
+            {
+              "text": "No, non mi piace il caffè. Preferisco una birra adesso.",
+              "isCorrect": false,
+              "feedback": "It's a bit early for a beer! Coffee is the morning ritual."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "In questo bar sì, si paga prima alla cassa. Cosa vuoi prendere? Un espresso o un cappuccino?",
+          "english": "In this bar, yes, you pay first at the cash desk. What do you want to have? An espresso or a cappuccino?",
+          "choices": [
+            {
+              "text": "Prendo un cappuccino e un cornetto alla crema, per favore.",
+              "isCorrect": true,
+              "feedback": "A classic Italian breakfast! Perfect choice."
+            },
+            {
+              "text": "Prendo una pizza e una coca cola, grazie.",
+              "isCorrect": false,
+              "feedback": "Pizza for breakfast? Usually, Italians stick to sweet pastries in the morning."
+            },
+            {
+              "text": "Prendo un cappuccino, ma senza schiuma e molto caldo.",
+              "isCorrect": false,
+              "feedback": "A bit complicated for a busy bar! A standard cappuccino is better for now."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottima scelta. Ricorda che il cappuccino si beve solo a colazione, mai dopo le undici!",
+          "english": "Excellent choice. Remember that cappuccino is only drunk for breakfast, never after eleven!",
+          "choices": [
+            {
+              "text": "Davvero? Non sapevo questa regola. Perché non si beve dopo le undici?",
+              "isCorrect": true,
+              "feedback": "Good inquiry! Italians believe milk after meals is bad for digestion."
+            },
+            {
+              "text": "A me non importa, lo bevo quando voglio io.",
+              "isCorrect": false,
+              "feedback": "A bit blunt! Understanding local customs helps you fit in."
+            },
+            {
+              "text": "Posso avere un cappuccino anche a cena?",
+              "isCorrect": false,
+              "feedback": "You could, but the waiter might look at you strangely!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Per noi è troppo pesante dopo i pasti. Ecco lo scontrino, ora portalo al barista.",
+          "english": "For us, it's too heavy after meals. Here is the receipt, now take it to the barista.",
+          "choices": [
+            {
+              "text": "Va bene. Devo lasciare una mancia al barista quando mi dà il caffè?",
+              "isCorrect": true,
+              "feedback": "Important question! Tipping culture is specific in Italy."
+            },
+            {
+              "text": "Grazie, tengo io lo scontrino come ricordo.",
+              "isCorrect": false,
+              "feedback": "You need to give the receipt to the barista so they know what you paid for!"
+            },
+            {
+              "text": "Perché devo dare il foglio al barista?",
+              "isCorrect": false,
+              "feedback": "The receipt (scontrino) is proof of payment."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Non è obbligatorio, ma puoi lasciare venti o cinquanta centesimi sul banco se vuoi.",
+          "english": "It's not mandatory, but you can leave twenty or fifty cents on the counter if you want.",
+          "choices": [
+            {
+              "text": "Capito. Posso bere il caffè seduto al tavolo o è meglio restare al banco?",
+              "isCorrect": true,
+              "feedback": "Great point! In Italy, there is often a price difference."
+            },
+            {
+              "text": "Lascio dieci euro di mancia, mi sembra giusto.",
+              "isCorrect": false,
+              "feedback": "That's way too much for a coffee! Small change is enough."
+            },
+            {
+              "text": "Non lascio niente, i baristi sono già ricchi.",
+              "isCorrect": false,
+              "feedback": "A bit cynical! A small tip is a nice gesture of appreciation."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Al banco è più veloce e costa meno. Se ci sediamo al tavolo paghiamo il 'servizio'.",
+          "english": "At the counter it's faster and costs less. If we sit at the table, we pay for 'service'.",
+          "choices": [
+            {
+              "text": "Allora restiamo al banco come i veri italiani! Grazie per i consigli.",
+              "isCorrect": true,
+              "feedback": "Perfect! You're learning the 'bar etiquette' quickly."
+            },
+            {
+              "text": "Voglio sedermi, sono molto stanco di camminare.",
+              "isCorrect": false,
+              "feedback": "You can, but be prepared to pay more for the same coffee!"
+            },
+            {
+              "text": "Il servizio al tavolo è sempre gratis in America.",
+              "isCorrect": false,
+              "feedback": "True, but customs are different in Italy!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Prego! Ecco il barista. 'Un cappuccino e un espresso, per favore'. Vuoi dello zucchero?",
+          "english": "You're welcome! Here is the barista. 'A cappuccino and an espresso, please'. Do you want some sugar?",
+          "choices": [
+            {
+              "text": "No grazie, lo prendo amaro. Mi piace il sapore forte.",
+              "isCorrect": true,
+              "feedback": "Many Italians prefer it 'amaro' (bitter/no sugar) to taste the quality."
+            },
+            {
+              "text": "Sì, metto tre bustine di zucchero nel cappuccino.",
+              "isCorrect": false,
+              "feedback": "Three is a lot! It might be too sweet, but it's your choice."
+            },
+            {
+              "text": "Voglio del miele nel mio caffè, per favore.",
+              "isCorrect": false,
+              "feedback": "Unusual in a standard bar, though some might have it."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Guarda come il barista lavora velocemente. È quasi un'arte, vero?",
+          "english": "Great. Look how quickly the barista works. It's almost an art, isn't it?",
+          "choices": [
+            {
+              "text": "Sì, è incredibile! In America è tutto molto più lento.",
+              "isCorrect": true,
+              "feedback": "The speed of an Italian bar in the morning is legendary."
+            },
+            {
+              "text": "Secondo me è troppo veloce, voglio parlare con lui.",
+              "isCorrect": false,
+              "feedback": "He is very busy! Morning is not the best time for long chats."
+            },
+            {
+              "text": "Il mio caffè a casa è più buono di questo.",
+              "isCorrect": false,
+              "feedback": "A bit rude! Bar coffee is a source of pride for Italians."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco qui. Bevi l'acqua prima del caffè per pulire il palato. È un'altra piccola regola.",
+          "english": "Here it is. Drink the water before the coffee to cleanse the palate. It's another small rule.",
+          "choices": [
+            {
+              "text": "Grazie, non lo sapevo. Bevo prima l'acqua allora.",
+              "isCorrect": true,
+              "feedback": "Exactly! It helps you enjoy the coffee's flavor more."
+            },
+            {
+              "text": "Bevo l'acqua dopo, perché il caffè è troppo forte.",
+              "isCorrect": false,
+              "feedback": "You can, but drinking it before is the traditional way."
+            },
+            {
+              "text": "Non voglio l'acqua, non ho sete.",
+              "isCorrect": false,
+              "feedback": "It's not for thirst, it's for the tasting experience!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buon appetito! Com'è il tuo cappuccino? È buono?",
+          "english": "Enjoy! How is your cappuccino? Is it good?",
+          "choices": [
+            {
+              "text": "È delizioso! Molto cremoso. Grazie per questa esperienza.",
+              "isCorrect": true,
+              "feedback": "Wonderful! You've successfully navigated your first Italian bar."
+            },
+            {
+              "text": "È troppo caldo, mi sono bruciato la lingua.",
+              "isCorrect": false,
+              "feedback": "Oh no! Usually, it's served at the perfect temperature to drink quickly."
+            },
+            {
+              "text": "Preferisco il caffè solubile della mia macchina.",
+              "isCorrect": false,
+              "feedback": "That's a very unpopular opinion in Italy!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aperitivo_time",
+      "title": "L'aperitivo italiano",
+      "description": "Experience the social ritual of the Italian aperitivo.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! È quasi sera, è l'ora dell'aperitivo. Andiamo in quella piazza?",
+          "english": "Hi! It's almost evening, it's aperitivo time. Shall we go to that square?",
+          "choices": [
+            {
+              "text": "Sì! Ma cos'è esattamente l'aperitivo? È una cena anticipata?",
+              "isCorrect": true,
+              "feedback": "Good question! It's more of a social warm-up before dinner."
+            },
+            {
+              "text": "No, voglio andare a dormire subito.",
+              "isCorrect": false,
+              "feedback": "You'll miss one of the best parts of Italian culture!"
+            },
+            {
+              "text": "Ho fame, andiamo a mangiare una bistecca.",
+              "isCorrect": false,
+              "feedback": "Wait! The aperitivo is the perfect bridge between work and dinner."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Non proprio. È un momento per bere qualcosa e mangiare qualche stuzzichino con gli amici.",
+          "english": "Not exactly. It's a time to have a drink and eat some snacks with friends.",
+          "choices": [
+            {
+              "text": "Capito. Cosa si beve di solito? Vedo molti drink arancioni.",
+              "isCorrect": true,
+              "feedback": "The orange drink is likely a Spritz, the king of aperitivo!"
+            },
+            {
+              "text": "Voglio un bicchiere di latte caldo, per favore.",
+              "isCorrect": false,
+              "feedback": "Very unusual for an aperitivo! Try something more refreshing."
+            },
+            {
+              "text": "Non bevo alcolici, solo acqua minerale.",
+              "isCorrect": false,
+              "feedback": "You can have a non-alcoholic aperitivo (analcolico) like a Crodino!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Quello è lo Spritz! È molto popolare. Vuoi provarlo o preferisci un prosecco?",
+          "english": "That's a Spritz! It's very popular. Do you want to try it or do you prefer a prosecco?",
+          "choices": [
+            {
+              "text": "Prendo uno Spritz, grazie. Ma devo pagare per tutto il cibo sul tavolo?",
+              "isCorrect": true,
+              "feedback": "Excellent choice. Tipping and paying rules are good to know."
+            },
+            {
+              "text": "Prendo un whisky liscio, molto forte.",
+              "isCorrect": false,
+              "feedback": "A bit heavy for an afternoon drink! Spritz is much lighter."
+            },
+            {
+              "text": "Non voglio niente da bere, voglio solo mangiare.",
+              "isCorrect": false,
+              "feedback": "In many places, you must order a drink to access the buffet."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "No, il cibo è incluso nel prezzo del drink. È un buffet o ti portano un piattino.",
+          "english": "No, the food is included in the price of the drink. It's either a buffet or they bring you a small plate.",
+          "choices": [
+            {
+              "text": "Bello! Posso prendere tutto quello che voglio dal buffet?",
+              "isCorrect": true,
+              "feedback": "Yes, but there is an unwritten etiquette to follow."
+            },
+            {
+              "text": "Allora prendo dieci piatti di pasta subito.",
+              "isCorrect": false,
+              "feedback": "Careful! It's not an 'all-you-can-eat' dinner buffet."
+            },
+            {
+              "text": "Il cibo gratis è sempre di cattiva qualità.",
+              "isCorrect": false,
+              "feedback": "Not in Italy! Many bars pride themselves on their aperitivo snacks."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, ma con educazione. Non è una cena completa, prendi un po' alla volta.",
+          "english": "Yes, but with manners. It's not a full dinner, take a little at a time.",
+          "choices": [
+            {
+              "text": "Va bene. Gli italiani fanno l'aperitivo ogni giorno?",
+              "isCorrect": true,
+              "feedback": "Good inquiry about local lifestyle."
+            },
+            {
+              "text": "Io ho sempre molta fame, mangerò tutto.",
+              "isCorrect": false,
+              "feedback": "Try to restrain yourself to avoid looking impolite!"
+            },
+            {
+              "text": "In America facciamo l'aperitivo diversamente.",
+              "isCorrect": false,
+              "feedback": "Every culture has its own version of happy hour!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Molti sì, specialmente nel fine settimana. È il rito della socializzazione. Ti piace l'ambiente?",
+          "english": "Many do, especially on the weekend. It's the ritual of socialization. Do you like the atmosphere?",
+          "choices": [
+            {
+              "text": "Sì, c'è molta gente e molta allegria. È molto piacevole.",
+              "isCorrect": true,
+              "feedback": "The 'allegria' (cheerfulness) is a big part of it."
+            },
+            {
+              "text": "C'è troppa confusione, non riesco a sentire niente.",
+              "isCorrect": false,
+              "feedback": "It can be loud, but that's part of the Italian social buzz!"
+            },
+            {
+              "text": "Preferisco stare a casa da solo.",
+              "isCorrect": false,
+              "feedback": "The aperitivo is all about being with others!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Vero? Qui la gente ama stare all'aperto. Guarda, stanno portando altri stuzzichini.",
+          "english": "Right? Here people love being outdoors. Look, they are bringing more snacks.",
+          "choices": [
+            {
+              "text": "Vedo delle pizzette e delle olive. Posso prenderne alcune?",
+              "isCorrect": true,
+              "feedback": "Of course! Pizzette and olives are aperitivo staples."
+            },
+            {
+              "text": "Voglio solo le patatine fritte confezionate.",
+              "isCorrect": false,
+              "feedback": "Try the fresh snacks! They are much better."
+            },
+            {
+              "text": "Non mi piacciono le olive, sono troppo salate.",
+              "isCorrect": false,
+              "feedback": "Italian olives are very famous, you should try at least one!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certo! Prendi anche quelle patatine. Vuoi un altro drink dopo questo?",
+          "english": "Of course! Take those chips too. Do you want another drink after this one?",
+          "choices": [
+            {
+              "text": "No, uno è sufficiente per me. Poi andiamo a cena?",
+              "isCorrect": true,
+              "feedback": "Good pacing. Saving room for dinner is wise."
+            },
+            {
+              "text": "Sì, voglio bere altri cinque Spritz.",
+              "isCorrect": false,
+              "feedback": "That's a lot! You might not make it to dinner."
+            },
+            {
+              "text": "Non ho soldi per un altro drink.",
+              "isCorrect": false,
+              "feedback": "Usually, one is enough for the experience anyway."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, verso le otto o le nove. In Italia ceniamo tardi.",
+          "english": "Yes, around eight or nine. In Italy, we eat dinner late.",
+          "choices": [
+            {
+              "text": "Le nove? Wow, io di solito ceno alle sei!",
+              "isCorrect": true,
+              "feedback": "It's a big cultural shift! The aperitivo helps you wait."
+            },
+            {
+              "text": "Le nove è l'ora perfetta, mi piace cenare tardi.",
+              "isCorrect": false,
+              "feedback": "You're already becoming very Italian!"
+            },
+            {
+              "text": "A quell'ora io sono già a letto.",
+              "isCorrect": false,
+              "feedback": "You'll have to adjust your sleep schedule for Italian nights!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ti abituerai presto ai nostri orari. Ecco il cameriere con lo Spritz. Salute!",
+          "english": "You'll get used to our times soon. Here is the waiter with the Spritz. Cheers!",
+          "choices": [
+            {
+              "text": "Grazie mille. Salute a tutti! Iniziamo l'aperitivo.",
+              "isCorrect": true,
+              "feedback": "Cin cin! Enjoy your drink and the snacks."
+            },
+            {
+              "text": "Il cameriere è molto antipatico.",
+              "isCorrect": false,
+              "feedback": "Don't be so negative! Enjoy the moment."
+            },
+            {
+              "text": "Voglio pagare adesso e andare via.",
+              "isCorrect": false,
+              "feedback": "Wait! You just got your drink and the food is coming."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "greetings_etiquette",
+      "title": "Saluti e baci",
+      "description": "Navigate the complexity of Italian greetings and social gestures.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Oggi incontriamo alcuni miei amici. Sei pronto per i saluti italiani?",
+          "english": "Hi! Today we are meeting some friends of mine. Are you ready for Italian greetings?",
+          "choices": [
+            {
+              "text": "Sì! Ma come devo salutarli? Devo dare la mano o i baci?",
+              "isCorrect": true,
+              "feedback": "Good question! It depends on how well you know them."
+            },
+            {
+              "text": "Non voglio conoscere nessuno, sono timido.",
+              "isCorrect": false,
+              "feedback": "Don't worry! Italians are usually very welcoming."
+            },
+            {
+              "text": "Dico solo 'Hello' a tutti.",
+              "isCorrect": false,
+              "feedback": "Try to use Italian! It's much more appreciated."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Con gli amici si usano spesso due baci sulle guance, ma una stretta di mano va bene per la prima volta.",
+          "english": "With friends, two kisses on the cheeks are often used, but a handshake is fine for the first time.",
+          "choices": [
+            {
+              "text": "Capito. Si inizia dalla guancia destra o dalla sinistra?",
+              "isCorrect": true,
+              "feedback": "Excellent detail! Usually, you start with the right cheek."
+            },
+            {
+              "text": "Io do baci a tutti, anche agli sconosciuti.",
+              "isCorrect": false,
+              "feedback": "Maybe a bit too much! Start with a handshake for people you don't know."
+            },
+            {
+              "text": "Non mi piace toccare la gente.",
+              "isCorrect": false,
+              "feedback": "Italians are quite tactile, so be prepared for some physical contact!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Di solito si inizia dalla guancia destra. Ma ricorda: sono baci 'all'aria', non baci veri!",
+          "english": "Usually you start from the right cheek. But remember: they are 'air' kisses, not real kisses!",
+          "choices": [
+            {
+              "text": "Ah, capisco! Solo sfiorare le guance. E cosa devo dire mentre saluto?",
+              "isCorrect": true,
+              "feedback": "Exactly. 'Piacere' or 'Ciao' are perfect."
+            },
+            {
+              "text": "Dò un bacio sulla bocca, è più romantico.",
+              "isCorrect": false,
+              "feedback": "Definitely not! That's only for romantic partners."
+            },
+            {
+              "text": "Faccio un rumore forte con le labbra.",
+              "isCorrect": false,
+              "feedback": "Not necessary! A gentle gesture is enough."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Puoi dire 'Piacere' o 'Piacere di conoscerti'. È molto educato.",
+          "english": "You can say 'Piacere' or 'Piacere di conoscerti' (Nice to meet you). It's very polite.",
+          "choices": [
+            {
+              "text": "Piacere di conoscerti. E se incontro una persona anziana?",
+              "isCorrect": true,
+              "feedback": "Great distinction! Formal vs informal is important."
+            },
+            {
+              "text": "Dico 'Ehi tu, come va?'",
+              "isCorrect": false,
+              "feedback": "Too informal, especially for a first meeting!"
+            },
+            {
+              "text": "Non dico niente, sorrido solo.",
+              "isCorrect": false,
+              "feedback": "Adding a word makes it much warmer."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Con gli anziani o in situazioni formali è meglio usare il 'Lei' e dire 'Buongiorno'.",
+          "english": "With elderly people or in formal situations, it's better to use 'Lei' (formal you) and say 'Buongiorno'.",
+          "choices": [
+            {
+              "text": "Va bene. 'Buongiorno, come sta?'. È corretto?",
+              "isCorrect": true,
+              "feedback": "Perfect! 'Come sta' is the formal version of 'come stai'."
+            },
+            {
+              "text": "Dico 'Ciao nonno!' a tutti i vecchi.",
+              "isCorrect": false,
+              "feedback": "A bit too informal! Use 'Signore' or 'Signora' if you don't know them."
+            },
+            {
+              "text": "Il formale è troppo difficile per me.",
+              "isCorrect": false,
+              "feedback": "Just a few simple phrases make a big difference!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, bravissimo! Ecco i miei amici. Questa è Giulia e questo è Paolo.",
+          "english": "Yes, very good! Here are my friends. This is Giulia and this is Paolo.",
+          "choices": [
+            {
+              "text": "Ciao Giulia, ciao Paolo! Piacere di conoscervi.",
+              "isCorrect": true,
+              "feedback": "Well done! You used the plural 'conoscervi' correctly."
+            },
+            {
+              "text": "Ciao gente, come va la vita?",
+              "isCorrect": false,
+              "feedback": "A bit too slangy for a first introduction."
+            },
+            {
+              "text": "Marco, perché hanno i capelli così?",
+              "isCorrect": false,
+              "feedback": "Don't be rude! Focus on the greeting."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Giulia: 'Piacere! Marco ci ha parlato molto di te. Ti piace l'Italia?'",
+          "english": "Giulia: 'Nice to meet you! Marco has told us a lot about you. Do you like Italy?'",
+          "choices": [
+            {
+              "text": "Mi piace moltissimo! La gente è molto gentile e il cibo è ottimo.",
+              "isCorrect": true,
+              "feedback": "Italians love hearing positive things about their country!"
+            },
+            {
+              "text": "L'Italia è okay, ma preferisco la Germania.",
+              "isCorrect": false,
+              "feedback": "Maybe true, but a bit blunt for a social introduction!"
+            },
+            {
+              "text": "Non lo so, sono qui da solo un'ora.",
+              "isCorrect": false,
+              "feedback": "Even if true, try to find something positive to say."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Paolo: 'Bene! Stasera venite con noi a mangiare una pizza?'",
+          "english": "Paolo: 'Good! Are you coming with us tonight to eat a pizza?'",
+          "choices": [
+            {
+              "text": "Sì, volentieri! Grazie per l'invito.",
+              "isCorrect": true,
+              "feedback": "Accepting invitations is a great way to practice the language."
+            },
+            {
+              "text": "No, la pizza mi fa male allo stomaco.",
+              "isCorrect": false,
+              "feedback": "You can always order something else at a pizzeria!"
+            },
+            {
+              "text": "Solo se pagate voi per me.",
+              "isCorrect": false,
+              "feedback": "Very impolite! Usually, everyone pays for themselves (alla romana)."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Fantastico! Allora ci vediamo più tardi. A che ora facciamo?",
+          "english": "Fantastic! Then we'll see each other later. What time shall we make it?",
+          "choices": [
+            {
+              "text": "Facciamo alle otto e mezza davanti alla pizzeria? Va bene per voi?",
+              "isCorrect": true,
+              "feedback": "Setting a clear time and place is good practice."
+            },
+            {
+              "text": "Venite a prendermi in hotel alle sei.",
+              "isCorrect": false,
+              "feedback": "A bit demanding! It's better to meet at the location."
+            },
+            {
+              "text": "Non lo so, decidete voi, io non conosco la città.",
+              "isCorrect": false,
+              "feedback": "Asking for suggestions is fine, but try to be involved."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto, alle otto e mezza. A dopo! Ciao ciao!",
+          "english": "Perfect, at eight thirty. See you later! Bye bye!",
+          "choices": [
+            {
+              "text": "A dopo! Ciao a tutti e grazie ancora.",
+              "isCorrect": true,
+              "feedback": "Great exit. You navigated the social meeting perfectly."
+            },
+            {
+              "text": "Va bene, a domani! Mi ha fatto piacere.",
+              "isCorrect": false,
+              "feedback": "Wait! You agreed to meet at 8:30 tonight, not tomorrow!"
+            },
+            {
+              "text": "Sì, buonanotte! Vado subito a dormire.",
+              "isCorrect": false,
+              "feedback": "You're supposed to meet them for pizza later!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tipping_paying",
+      "title": "La mancia al ristorante",
+      "description": "Understand the etiquette of tipping and paying the bill in Italy.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Abbiamo finito la cena. Era buona la pizza? Chiediamo il conto?",
+          "english": "We've finished dinner. Was the pizza good? Shall we ask for the bill?",
+          "choices": [
+            {
+              "text": "Sì, era ottima! Come si dice 'The check, please' in italiano?",
+              "isCorrect": true,
+              "feedback": "Good to know the essential phrase: 'Il conto, per favore'."
+            },
+            {
+              "text": "No, voglio un'altra pizza intera.",
+              "isCorrect": false,
+              "feedback": "Another one? You must be very hungry!"
+            },
+            {
+              "text": "Vado via senza pagare, seguimi.",
+              "isCorrect": false,
+              "feedback": "That's illegal! You must always pay the bill."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Si dice 'Il conto, per favore'. Prova a chiamare il cameriere.",
+          "english": "You say 'Il conto, per favore'. Try calling the waiter.",
+          "choices": [
+            {
+              "text": "Scusi, il conto per favore! È stato tutto buonissimo.",
+              "isCorrect": true,
+              "feedback": "Perfect! Adding a compliment is always nice."
+            },
+            {
+              "text": "Ehi cameriere! Porta qui il foglio dei soldi!",
+              "isCorrect": false,
+              "feedback": "Too rude and incorrect! Use 'Il conto'."
+            },
+            {
+              "text": "Voglio pagare con i dollari americani.",
+              "isCorrect": false,
+              "feedback": "Most places only accept Euros or credit cards."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ecco il conto. Vedi questa voce 'Coperto'? Sai cos'è?",
+          "english": "Here is the bill. Do you see this 'Coperto' item? Do you know what it is?",
+          "choices": [
+            {
+              "text": "No, non lo so. È una specie di mancia obbligatoria?",
+              "isCorrect": true,
+              "feedback": "Close, but it's actually for the bread, service, and table setting."
+            },
+            {
+              "text": "È il prezzo del formaggio sulla pizza.",
+              "isCorrect": false,
+              "feedback": "No, that's included in the pizza price!"
+            },
+            {
+              "text": "Significa che il tavolo è coperto da una tovaglia.",
+              "isCorrect": false,
+              "feedback": "Literally yes, but on the bill, it's a standard service charge."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Il 'coperto' paga il pane, le posate e il servizio al tavolo. È normale in Italia.",
+          "english": "The 'coperto' pays for the bread, cutlery, and table service. It's normal in Italy.",
+          "choices": [
+            {
+              "text": "Capito. Quindi non devo lasciare la mancia se c'è il coperto?",
+              "isCorrect": true,
+              "feedback": "Exactly! Tipping is not mandatory because of the coperto."
+            },
+            {
+              "text": "Voglio il pane gratis, non voglio pagare il coperto.",
+              "isCorrect": false,
+              "feedback": "It's a fixed charge, you can't really avoid it if you sit down."
+            },
+            {
+              "text": "In Francia il pane è sempre gratis.",
+              "isCorrect": false,
+              "feedback": "Customs vary! In Italy, the 'coperto' is the standard."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Esatto. Se il servizio è stato eccellente, puoi lasciare qualche euro, ma non è il 20% come in America.",
+          "english": "Exactly. If the service was excellent, you can leave a few euros, but it's not 20% like in America.",
+          "choices": [
+            {
+              "text": "Allora lascio due o tre euro sul tavolo. Va bene così?",
+              "isCorrect": true,
+              "feedback": "Yes, that's a very generous and appreciated tip in Italy."
+            },
+            {
+              "text": "Lascio cinquanta euro, il cameriere è mio amico adesso.",
+              "isCorrect": false,
+              "feedback": "Way too much! Keep your money for other experiences."
+            },
+            {
+              "text": "Non lascio niente, odio dare soldi extra.",
+              "isCorrect": false,
+              "feedback": "You don't have to, but it's a nice gesture if you liked the service."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Va benissimo. Come vuoi pagare? In contanti o con la carta?",
+          "english": "That's perfect. How do you want to pay? In cash or with a card?",
+          "choices": [
+            {
+              "text": "Posso pagare con la carta? Avete il POS?",
+              "isCorrect": true,
+              "feedback": "Good question. 'POS' is the term for the card reader."
+            },
+            {
+              "text": "Voglio pagare con uno scambio di favori.",
+              "isCorrect": false,
+              "feedback": "The restaurant prefers money!"
+            },
+            {
+              "text": "Pago con queste monete d'oro antiche.",
+              "isCorrect": false,
+              "feedback": "They only accept modern currency!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certo, ormai quasi tutti accettano la carta. 'Sì, accettiamo tutte le carte'." ,
+          "english": "Sure, nowadays almost everyone accepts cards. 'Yes, we accept all cards'.",
+          "choices": [
+            {
+              "text": "Ottimo. Ecco la mia carta. Devo inserire il PIN?",
+              "isCorrect": true,
+              "feedback": "Usually yes, or use contactless if the amount is small."
+            },
+            {
+              "text": "Tenga la mia carta e scriva lei il codice.",
+              "isCorrect": false,
+              "feedback": "Never give your PIN to anyone! Security first."
+            },
+            {
+              "text": "La mia carta è magica e non finisce mai.",
+              "isCorrect": false,
+              "feedback": "If only that were true!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, inserisci il PIN o usa il contactless. Ecco lo scontrino fiscale. È importante tenerlo.",
+          "english": "Yes, enter the PIN or use contactless. Here is the tax receipt. It's important to keep it.",
+          "choices": [
+            {
+              "text": "Perché è importante tenere lo scontrino fuori dal locale?",
+              "isCorrect": true,
+              "feedback": "Good inquiry. It's a legal requirement in case of tax inspections."
+            },
+            {
+              "text": "Lo scontrino è sporco, lo butto subito.",
+              "isCorrect": false,
+              "feedback": "Wait! In Italy, you should keep it for at least 100 meters from the exit."
+            },
+            {
+              "text": "Lo uso per scriverci sopra il mio numero di telefono.",
+              "isCorrect": false,
+              "feedback": "Keep it for the legal reasons first!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Per legge devi averlo con te quando esci, per eventuali controlli della Guardia di Finanza.",
+          "english": "By law you must have it with you when you leave, for possible checks by the Finance Police.",
+          "choices": [
+            {
+              "text": "Interessante! Molte regole diverse qui. Grazie per avermi spiegato tutto.",
+              "isCorrect": true,
+              "feedback": "You're learning a lot about the practical side of Italian life."
+            },
+            {
+              "text": "Ma è incredibile! Perché la polizia deve controllare i turisti per strada?",
+              "isCorrect": false,
+              "feedback": "It's a fiscal law to ensure businesses pay their taxes correctly."
+            },
+            {
+              "text": "Va bene, ma io preferisco non tenere lo scontrino e lasciarlo sul tavolo.",
+              "isCorrect": false,
+              "feedback": "Be careful! You should have it with you until you are far from the exit."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Figurati! Ora siamo pronti. Andiamo a fare una passeggiata digestiva?",
+          "english": "Don't mention it! Now we're ready. Shall we go for a digestive walk?",
+          "choices": [
+            {
+              "text": "Sì, un'ottima idea. Una passeggiata dopo cena è perfetta. Andiamo!",
+              "isCorrect": true,
+              "feedback": "The 'passeggiata' is another great Italian custom. Enjoy!"
+            },
+            {
+              "text": "No, prendo un taxi per fare cento metri.",
+              "isCorrect": false,
+              "feedback": "Walk a bit! It's good for your health and you see more of the city."
+            },
+            {
+              "text": "Voglio andare in palestra adesso.",
+              "isCorrect": false,
+              "feedback": "After a whole pizza? Better to walk slowly!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

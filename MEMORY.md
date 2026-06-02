@@ -109,6 +109,8 @@ This architecture is mandatory.
 3. Hostel Dorm (accommodation/hostel_dorm)
 4. Ordering Pasta (dining/ordering_pasta)
 5. Bakery (dining/bakery)
+6. Cinema Tickets (culture/cinema_tickets)
+7. Culture Festival (culture/festival)
 
 Status:
 
@@ -118,7 +120,7 @@ Gold Standard V1 & Certified
 
 ## Remaining Scenarios
 
-111
+109
 
 Status:
 

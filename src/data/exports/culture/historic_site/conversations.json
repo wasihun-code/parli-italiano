@@ -1,0 +1,1073 @@
+{
+  "scenarioId": 88,
+  "conversations": [
+    {
+      "id": "ticket_office",
+      "title": "Ticket Office",
+      "description": "Buy tickets and ask about the combined entry.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Desidera visitare il castello o solo le rovine?",
+          "english": "Good morning! Would you like to visit the castle or just the ruins?",
+          "choices": [
+            {
+              "text": "Vorrei visitare tutto. C'è un biglietto cumulativo?",
+              "isCorrect": true,
+              "feedback": "Asking for a combined ticket is a great way to save money.",
+              "english": "I would like to visit everything. Is there a combined ticket?"
+            },
+            {
+              "text": "Cerco un hotel con colazione inclusa qui vicino.",
+              "isCorrect": false,
+              "feedback": "This is a historic site, not a hotel.",
+              "english": "I'm looking for a hotel with breakfast included nearby."
+            },
+            {
+              "text": "Il mio volo per Roma è in ritardo di due ore.",
+              "isCorrect": false,
+              "feedback": "Airport talk is not relevant at the ticket office.",
+              "english": "My flight to Rome is delayed by two hours."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, il biglietto cumulativo costa dodici euro. È interessato?",
+          "english": "Yes, the combined ticket costs twelve euros. Are you interested?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Prendo due biglietti interi, per favore.",
+              "isCorrect": true,
+              "feedback": "Perfect, you are buying the tickets you need.",
+              "english": "Yes, thanks. I'll take two full tickets, please."
+            },
+            {
+              "text": "No, cerco una farmacia aperta per comprare dei cerotti.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the historic site visit.",
+              "english": "No, I'm looking for an open pharmacy to buy some band-aids."
+            },
+            {
+              "text": "Voglio ordinare una pizza margherita e una birra.",
+              "isCorrect": false,
+              "feedback": "You are at a ticket office, not a restaurant.",
+              "english": "I want to order a margherita pizza and a beer."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ecco a lei. Il biglietto include anche la torre?",
+          "english": "Here you go. Does the ticket also include the tower?",
+          "choices": [
+            {
+              "text": "Sì, il cumulativo include la torre e il museo.",
+              "isCorrect": true,
+              "feedback": "Confirming what is included in your purchase.",
+              "english": "Yes, the combined ticket includes the tower and the museum."
+            },
+            {
+              "text": "Il treno parte dal binario tre alle dieci precise.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden here.",
+              "english": "The train leaves from platform three at ten sharp."
+            },
+            {
+              "text": "La mia camera ha una vista bellissima sul mare.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is not appropriate here.",
+              "english": "My room has a beautiful view of the sea."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. Ricordi che l'ultimo ingresso è alle diciassette.",
+          "english": "Great. Remember that the last entry is at five PM.",
+          "choices": [
+            {
+              "text": "Va bene, grazie. A che ora chiude il sito?",
+              "isCorrect": true,
+              "feedback": "Asking for closing times is very practical.",
+              "english": "Alright, thanks. What time does the site close?"
+            },
+            {
+              "text": "Cerco un ombrello perché domani piove molto forte.",
+              "isCorrect": false,
+              "feedback": "Focus on the site's operating hours.",
+              "english": "I'm looking for an umbrella because it's raining hard tomorrow."
+            },
+            {
+              "text": "Il mio passaporto è scaduto il mese scorso, purtroppo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant personal travel information.",
+              "english": "My passport expired last month, unfortunately."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Chiudiamo alle diciotto e trenta. Buon divertimento!",
+          "english": "We close at six-thirty PM. Have fun!",
+          "choices": [
+            {
+              "text": "Grazie mille! Dove inizia il percorso di visita?",
+              "isCorrect": true,
+              "feedback": "Good transition to starting your tour.",
+              "english": "Thank you very much! Where does the tour start?"
+            },
+            {
+              "text": "Voglio prenotare un tavolo per stasera alle otto.",
+              "isCorrect": false,
+              "feedback": "Restaurant talk is not relevant here.",
+              "english": "I want to reserve a table for tonight at eight."
+            },
+            {
+              "text": "Il mio computer non funziona bene oggi, è lento.",
+              "isCorrect": false,
+              "feedback": "Tech problems are out of place.",
+              "english": "My computer is not working well today, it's slow."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Il percorso inizia dalla porta antica a sinistra.",
+          "english": "The path starts from the ancient gate on the left.",
+          "choices": [
+            {
+              "text": "Perfetto, vado subito verso la porta allora.",
+              "isCorrect": true,
+              "feedback": "Following directions to start the visit.",
+              "english": "Perfect, I'll head toward the gate right away then."
+            },
+            {
+              "text": "Il medico dice che devo bere molta acqua.",
+              "isCorrect": false,
+              "feedback": "Medical talk is forbidden.",
+              "english": "The doctor says I should drink plenty of water."
+            },
+            {
+              "text": "Il mio gatto dorme sempre sul divano nuovo.",
+              "isCorrect": false,
+              "feedback": "Pets and domestic talk are irrelevant.",
+              "english": "My cat always sleeps on the new sofa."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "C'è anche un'audioguida disponibile in inglese.",
+          "english": "There is also an audio guide available in English.",
+          "choices": [
+            {
+              "text": "No grazie, preferisco leggere i pannelli informativi.",
+              "isCorrect": true,
+              "feedback": "Choosing your preferred way to learn about the site.",
+              "english": "No thanks, I prefer reading the information panels."
+            },
+            {
+              "text": "Voglio comprare un biglietto dell'autobus per il centro.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "I want to buy a bus ticket for the city center."
+            },
+            {
+              "text": "Il frigo è vuoto, devo andare al supermercato.",
+              "isCorrect": false,
+              "feedback": "Domestic chores are irrelevant.",
+              "english": "The fridge is empty, I need to go to the supermarket."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Non dimentichi di prendere la mappa.",
+          "english": "Alright. Don't forget to take the map.",
+          "choices": [
+            {
+              "text": "Sì, la prendo. È inclusa nel prezzo?",
+              "isCorrect": true,
+              "feedback": "Clarifying if the map is free or not.",
+              "english": "Yes, I'll take it. Is it included in the price?"
+            },
+            {
+              "text": "No, cerco un posto per fare colazione ora.",
+              "isCorrect": false,
+              "feedback": "Café talk is forbidden.",
+              "english": "No, I'm looking for a place to have breakfast now."
+            },
+            {
+              "text": "Il mio volo parte dal terminal due stasera.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden.",
+              "english": "My flight leaves from terminal two tonight."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, la mappa è gratuita per tutti i visitatori.",
+          "english": "Yes, the map is free for all visitors.",
+          "choices": [
+            {
+              "text": "Ottimo, grazie. Dove sono i servizi igienici?",
+              "isCorrect": true,
+              "feedback": "Asking for basic amenities is important.",
+              "english": "Great, thanks. Where are the restrooms?"
+            },
+            {
+              "text": "Vorrei prenotare una camera doppia per tre notti.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden.",
+              "english": "I would like to book a double room for three nights."
+            },
+            {
+              "text": "Il mio cane ha bisogno di una visita medica.",
+              "isCorrect": false,
+              "feedback": "Veterinary/Medical talk is forbidden.",
+              "english": "My dog needs a medical check-up."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sono proprio dietro il botteghino. Buona visita!",
+          "english": "They are right behind the ticket office. Have a good visit!",
+          "choices": [
+            {
+              "text": "Grazie mille per l'aiuto. Buona giornata!",
+              "isCorrect": true,
+              "feedback": "Friendly and polite closing.",
+              "english": "Thank you very much for the help. Have a good day!"
+            },
+            {
+              "text": "Il treno per Milano è già partito purtroppo.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "The train to Milan has already left unfortunately."
+            },
+            {
+              "text": "Cerco un idraulico per il rubinetto rotto.",
+              "isCorrect": false,
+              "feedback": "Domestic repair talk is forbidden.",
+              "english": "I'm looking for a plumber for the broken tap."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "historical_signs",
+      "title": "Historical Signs",
+      "description": "Ask a guide about the history and the ruins.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarla con qualche informazione sulle rovine?",
+          "english": "Good morning! Can I help you with some information about the ruins?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Queste mura sono romane o medievali?",
+              "isCorrect": true,
+              "feedback": "Asking about the historical period is very relevant.",
+              "english": "Yes, thanks. Are these walls Roman or medieval?"
+            },
+            {
+              "text": "Vorrei una camera singola con aria condizionata.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden here.",
+              "english": "I would like a single room with air conditioning."
+            },
+            {
+              "text": "Il treno è in ritardo di venti minuti oggi.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "The train is twenty minutes late today."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Queste sono medievali, del tredicesimo secolo. Molto antiche!",
+          "english": "These are medieval, from the thirteenth century. Very ancient!",
+          "choices": [
+            {
+              "text": "Incredibile! Ci sono anche resti romani in questo sito?",
+              "isCorrect": true,
+              "feedback": "Inquiring about more history.",
+              "english": "Incredible! Are there also Roman remains at this site?"
+            },
+            {
+              "text": "Dove posso comprare delle scarpe da ginnastica nuove?",
+              "isCorrect": false,
+              "feedback": "Shopping talk is not relevant here.",
+              "english": "Where can I buy new sneakers?"
+            },
+            {
+              "text": "Il mio volo atterra alle sei di pomeriggio.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden.",
+              "english": "My flight lands at six in the evening."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, i resti romani sono più avanti, vicino al teatro.",
+          "english": "Yes, the Roman remains are further ahead, near the theater.",
+          "choices": [
+            {
+              "text": "Capito. C'è un pannello che spiega la storia?",
+              "isCorrect": true,
+              "feedback": "Looking for educational resources on site.",
+              "english": "Understood. Is there a panel that explains the history?"
+            },
+            {
+              "text": "Vorrei ordinare una cena tipica per due persone.",
+              "isCorrect": false,
+              "feedback": "Restaurant talk is forbidden.",
+              "english": "I would like to order a typical dinner for two."
+            },
+            {
+              "text": "Il medico mi ha dato una nuova ricetta medica.",
+              "isCorrect": false,
+              "feedback": "Medical talk is forbidden.",
+              "english": "The doctor gave me a new medical prescription."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, ogni settore ha un pannello informativo in due lingue.",
+          "english": "Yes, every sector has an information panel in two languages.",
+          "choices": [
+            {
+              "text": "Ottimo, vado a leggere quello vicino al teatro.",
+              "isCorrect": true,
+              "feedback": "Following through with your plan to learn.",
+              "english": "Great, I'm going to read the one near the theater."
+            },
+            {
+              "text": "Il mio passaporto è nella valigia grande in hotel.",
+              "isCorrect": false,
+              "feedback": "Travel document talk is irrelevant.",
+              "english": "My passport is in the big suitcase at the hotel."
+            },
+            {
+              "text": "Cerco un ombrello perché il cielo è grigio.",
+              "isCorrect": false,
+              "feedback": "Weather talk is out of place here.",
+              "english": "I'm looking for an umbrella because the sky is gray."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Buona idea. Attento a non toccare le pietre antiche.",
+          "english": "Good idea. Be careful not to touch the ancient stones.",
+          "choices": [
+            {
+              "text": "Certamente, rispetto sempre le regole del sito.",
+              "isCorrect": true,
+              "feedback": "Acknowledging and respecting site rules.",
+              "english": "Certainly, I always respect the site rules."
+            },
+            {
+              "text": "Voglio comprare un biglietto per lo stadio stasera.",
+              "isCorrect": false,
+              "feedback": "Sports talk is forbidden.",
+              "english": "I want to buy a ticket for the stadium tonight."
+            },
+            {
+              "text": "Il frigo in cucina fa un rumore strano.",
+              "isCorrect": false,
+              "feedback": "Domestic appliances are irrelevant.",
+              "english": "The fridge in the kitchen is making a strange noise."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Grazie. È un sito archeologico molto delicato.",
+          "english": "Thank you. It is a very delicate archaeological site.",
+          "choices": [
+            {
+              "text": "Immagino. È possibile fare foto con il flash?",
+              "isCorrect": true,
+              "feedback": "Asking about photography rules is good practice.",
+              "english": "I imagine. Is it possible to take photos with a flash?"
+            },
+            {
+              "text": "Cerco un taxi per andare alla stazione centrale.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "I'm looking for a taxi to go to the central station."
+            },
+            {
+              "text": "Il mio cane mangia solo cibo secco la mattina.",
+              "isCorrect": false,
+              "feedback": "Pets are irrelevant.",
+              "english": "My dog only eats dry food in the morning."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "No, il flash è vietato all'interno del museo.",
+          "english": "No, flash is forbidden inside the museum.",
+          "choices": [
+            {
+              "text": "Va bene, allora farò foto solo all'esterno.",
+              "isCorrect": true,
+              "feedback": "Adapting to the rules.",
+              "english": "Alright, then I'll only take photos outside."
+            },
+            {
+              "text": "Vorrei prenotare un volo per la Sicilia domani.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden.",
+              "english": "I would like to book a flight to Sicily tomorrow."
+            },
+            {
+              "text": "Il medico dice che devo camminare mezz'ora.",
+              "isCorrect": false,
+              "feedback": "Medical talk is forbidden.",
+              "english": "The doctor says I should walk for half an hour."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "All'esterno può usare il flash senza problemi.",
+          "english": "Outside you can use flash without any problems.",
+          "choices": [
+            {
+              "text": "Ottimo. Qual è l'edificio più importante qui?",
+              "isCorrect": true,
+              "feedback": "Asking for recommendations on what to see.",
+              "english": "Great. Which is the most important building here?"
+            },
+            {
+              "text": "Cerco un posto per dormire stasera in centro.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden.",
+              "english": "I'm looking for a place to sleep tonight in the center."
+            },
+            {
+              "text": "Il treno per Napoli parte tra cinque minuti.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "The train to Naples leaves in five minutes."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sicuramente il tempio romano, è ancora intatto.",
+          "english": "Definitely the Roman temple, it is still intact.",
+          "choices": [
+            {
+              "text": "Allora vado subito a visitarlo. Grazie mille!",
+              "isCorrect": true,
+              "feedback": "Deciding to see the main attraction.",
+              "english": "Then I'll go visit it right away. Thank you very much!"
+            },
+            {
+              "text": "Voglio ordinare una colazione con cornetto e latte.",
+              "isCorrect": false,
+              "feedback": "Café talk is forbidden.",
+              "english": "I want to order a breakfast with croissant and milk."
+            },
+            {
+              "text": "Il mio computer ha bisogno di un aggiornamento.",
+              "isCorrect": false,
+              "feedback": "Tech talk is forbidden.",
+              "english": "My computer needs an update."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego! Si goda questa meraviglia storica.",
+          "english": "You're welcome! Enjoy this historical wonder.",
+          "choices": [
+            {
+              "text": "Lo farò sicuramente. Arrivederci e buona giornata!",
+              "isCorrect": true,
+              "feedback": "Polite exit.",
+              "english": "I certainly will. Goodbye and have a nice day!"
+            },
+            {
+              "text": "Il volo per Milano è stato cancellato ora.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden.",
+              "english": "The flight to Milan has been cancelled now."
+            },
+            {
+              "text": "Il mio lavandino in bagno è ancora rotto.",
+              "isCorrect": false,
+              "feedback": "Domestic issues are irrelevant.",
+              "english": "My bathroom sink is still broken."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restoration_work",
+      "title": "Restoration Work",
+      "description": "Find out about closed areas and alternative paths.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Attenzione! La torre grande è chiusa per restauro.",
+          "english": "Attention! The main tower is closed for restoration.",
+          "choices": [
+            {
+              "text": "Peccato! Quando sarà riaperta al pubblico?",
+              "isCorrect": true,
+              "feedback": "Asking about reopening dates is very common.",
+              "english": "Too bad! When will it be reopened to the public?"
+            },
+            {
+              "text": "Cerco un hotel con parcheggio gratuito vicino.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is not relevant here.",
+              "english": "I'm looking for a hotel with free parking nearby."
+            },
+            {
+              "text": "Il mio treno è arrivato in ritardo oggi.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "My train arrived late today."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Credo tra due mesi. Ma la torre piccola è aperta.",
+          "english": "I think in two months. But the small tower is open.",
+          "choices": [
+            {
+              "text": "Si può salire sulla torre piccola per vedere il panorama?",
+              "isCorrect": true,
+              "feedback": "Checking for alternative activities.",
+              "english": "Can one go up the small tower to see the view?"
+            },
+            {
+              "text": "Voglio ordinare un gelato alla fragola e crema.",
+              "isCorrect": false,
+              "feedback": "Gelato shop talk is forbidden.",
+              "english": "I want to order a strawberry and cream gelato."
+            },
+            {
+              "text": "Il mio volo parte tra esattamente tre ore.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden.",
+              "english": "My flight leaves in exactly three hours."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, la vista è quasi la stessa. La scala è stretta.",
+          "english": "Yes, the view is almost the same. The staircase is narrow.",
+          "choices": [
+            {
+              "text": "Non è un problema. Ci sono molti scalini?",
+              "isCorrect": true,
+              "feedback": "Inquiring about physical accessibility.",
+              "english": "It's not a problem. Are there many steps?"
+            },
+            {
+              "text": "Cerco un ombrello per ripararmi dal sole forte.",
+              "isCorrect": false,
+              "feedback": "Weather talk is out of place.",
+              "english": "I'm looking for an umbrella to protect myself from the strong sun."
+            },
+            {
+              "text": "Il mio passaporto è nuovo, l'ho fatto ieri.",
+              "isCorrect": false,
+              "feedback": "Travel talk is forbidden.",
+              "english": "My passport is new, I got it yesterday."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Circa cento scalini. Ma ne vale la pena per le foto.",
+          "english": "About a hundred steps. But it's worth it for the photos.",
+          "choices": [
+            {
+              "text": "Ottimo, adoro fare foto panoramiche dalla cima.",
+              "isCorrect": true,
+              "feedback": "Sharing enthusiasm for the activity.",
+              "english": "Great, I love taking panoramic photos from the top."
+            },
+            {
+              "text": "Vorrei prenotare un tavolo per il pranzo ora.",
+              "isCorrect": false,
+              "feedback": "Restaurant talk is forbidden.",
+              "english": "I would like to book a table for lunch now."
+            },
+            {
+              "text": "Il medico mi ha detto di non correre.",
+              "isCorrect": false,
+              "feedback": "Medical talk is forbidden.",
+              "english": "The doctor told me not to run."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ricordi di non correre sulle scale per sicurezza.",
+          "english": "Remember not to run on the stairs for safety.",
+          "choices": [
+            {
+              "text": "Certo, camminerò con molta attenzione. Grazie!",
+              "isCorrect": true,
+              "feedback": "Acknowledging the safety warning.",
+              "english": "Of course, I will walk very carefully. Thanks!"
+            },
+            {
+              "text": "Voglio comprare un biglietto del treno veloce.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "I want to buy a high-speed train ticket."
+            },
+            {
+              "text": "Il mio computer ha bisogno di una batteria.",
+              "isCorrect": false,
+              "feedback": "Tech talk is forbidden.",
+              "english": "My computer needs a battery."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ci sono anche dei cartelli che indicano la via.",
+          "english": "There are also signs indicating the way.",
+          "choices": [
+            {
+              "text": "Bene. Il percorso alternativo è ben segnato?",
+              "isCorrect": true,
+              "feedback": "Asking about signage for the detour.",
+              "english": "Good. Is the alternative path well marked?"
+            },
+            {
+              "text": "Cerco un taxi per tornare al mio hotel.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "I'm looking for a taxi to go back to my hotel."
+            },
+            {
+              "text": "Il mio gatto ha paura dei forti rumori.",
+              "isCorrect": false,
+              "feedback": "Pets are irrelevant.",
+              "english": "My cat is afraid of loud noises."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, segua le frecce arancioni sul terreno.",
+          "english": "Yes, follow the orange arrows on the ground.",
+          "choices": [
+            {
+              "text": "Capito. Le frecce portano anche al castello?",
+              "isCorrect": true,
+              "feedback": "Checking if the detour leads to other sites.",
+              "english": "Understood. Do the arrows also lead to the castle?"
+            },
+            {
+              "text": "Vorrei ordinare una camera doppia con balcone.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden.",
+              "english": "I would like to order a double room with a balcony."
+            },
+            {
+              "text": "Il mio volo è stato spostato di terminal.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden.",
+              "english": "My flight has been moved to a different terminal."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, portano al cortile principale del castello.",
+          "english": "Yes, they lead to the main courtyard of the castle.",
+          "choices": [
+            {
+              "text": "Perfetto, allora seguo subito le frecce arancioni.",
+              "isCorrect": true,
+              "feedback": "Following the directions provided.",
+              "english": "Perfect, then I'll follow the orange arrows right away."
+            },
+            {
+              "text": "Voglio comprare un biglietto dell'autobus oggi.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "I want to buy a bus ticket today."
+            },
+            {
+              "text": "Il frigo in cucina è molto vecchio ormai.",
+              "isCorrect": false,
+              "feedback": "Domestic issues are irrelevant.",
+              "english": "The fridge in the kitchen is very old now."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Buona passeggiata! Il panorama è fantastico stasera.",
+          "english": "Have a nice walk! The view is fantastic tonight.",
+          "choices": [
+            {
+              "text": "Grazie, non vedo l'ora di vedere la valle.",
+              "isCorrect": true,
+              "feedback": "Expressing anticipation for the view.",
+              "english": "Thanks, I can't wait to see the valley."
+            },
+            {
+              "text": "Voglio ordinare una colazione con caffè nero.",
+              "isCorrect": false,
+              "feedback": "Café talk is forbidden.",
+              "english": "I want to order a breakfast with black coffee."
+            },
+            {
+              "text": "Il mio computer si è spento all'improvviso.",
+              "isCorrect": false,
+              "feedback": "Tech talk is forbidden.",
+              "english": "My computer shut down suddenly."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Si goda il tramonto dalla cima della torre!",
+          "english": "Enjoy the sunset from the top of the tower!",
+          "choices": [
+            {
+              "text": "Lo farò, grazie mille per le indicazioni!",
+              "isCorrect": true,
+              "feedback": "Polite closing.",
+              "english": "I will, thanks a lot for the directions!"
+            },
+            {
+              "text": "Il treno per Roma è in forte ritardo.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "The train to Rome is heavily delayed."
+            },
+            {
+              "text": "Il mio lavandino perde acqua da stamattina.",
+              "isCorrect": false,
+              "feedback": "Domestic issues are irrelevant.",
+              "english": "My sink has been leaking since this morning."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site_rules",
+      "title": "Site Rules",
+      "description": "Understand what is allowed and what is forbidden.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Scusi! È vietato salire sulle rovine qui.",
+          "english": "Excuse me! It is forbidden to climb on the ruins here.",
+          "choices": [
+            {
+              "text": "Mi scusi, non ho visto il cartello.",
+              "isCorrect": true,
+              "feedback": "Apologizing for a mistake is the right response.",
+              "english": "Excuse me, I didn't see the sign."
+            },
+            {
+              "text": "Cerco una camera doppia con bagno privato.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden here.",
+              "english": "I'm looking for a double room with a private bathroom."
+            },
+            {
+              "text": "Il mio volo atterra tra venti minuti precisi.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden.",
+              "english": "My flight lands in exactly twenty minutes."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È per la sua sicurezza e per preservare il sito.",
+          "english": "It's for your safety and to preserve the site.",
+          "choices": [
+            {
+              "text": "Capisco perfettamente. Rimarrò sul percorso segnato.",
+              "isCorrect": true,
+              "feedback": "Showing understanding and cooperation.",
+              "english": "I understand perfectly. I will stay on the marked path."
+            },
+            {
+              "text": "Voglio ordinare una pizza con molti funghi.",
+              "isCorrect": false,
+              "feedback": "Restaurant talk is forbidden.",
+              "english": "I want to order a pizza with lots of mushrooms."
+            },
+            {
+              "text": "Il treno è partito dal binario numero sei.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "The train left from platform number six."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Grazie. Ci sono altri cartelli con le regole.",
+          "english": "Thank you. There are other signs with the rules.",
+          "choices": [
+            {
+              "text": "Si può mangiare nell'area delle rovine?",
+              "isCorrect": true,
+              "feedback": "Checking about food rules.",
+              "english": "Is it possible to eat in the ruins area?"
+            },
+            {
+              "text": "Cerco un ombrello per la pioggia di oggi.",
+              "isCorrect": false,
+              "feedback": "Weather talk is out of place.",
+              "english": "I'm looking for an umbrella for today's rain."
+            },
+            {
+              "text": "Il mio passaporto è scaduto due anni fa.",
+              "isCorrect": false,
+              "feedback": "Travel talk is forbidden.",
+              "english": "My passport expired two years ago."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "No, è vietato mangiare vicino ai resti archeologici.",
+          "english": "No, it is forbidden to eat near the archaeological remains.",
+          "choices": [
+            {
+              "text": "Va bene. C'è un'area picnic qui vicino?",
+              "isCorrect": true,
+              "feedback": "Looking for a designated eating area.",
+              "english": "Alright. Is there a picnic area nearby?"
+            },
+            {
+              "text": "Vorrei prenotare un tavolo per otto persone.",
+              "isCorrect": false,
+              "feedback": "Restaurant talk is forbidden.",
+              "english": "I would like to book a table for eight people."
+            },
+            {
+              "text": "Il medico mi ha dato una ricetta bianca.",
+              "isCorrect": false,
+              "feedback": "Medical talk is forbidden.",
+              "english": "The doctor gave me a white prescription."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, c'è un'area picnic vicino all'ingresso principale.",
+          "english": "Yes, there is a picnic area near the main entrance.",
+          "choices": [
+            {
+              "text": "Ottimo, andrò lì più tardi per il pranzo.",
+              "isCorrect": true,
+              "feedback": "Planning your meals according to site rules.",
+              "english": "Great, I'll go there later for lunch."
+            },
+            {
+              "text": "Voglio comprare un biglietto del treno ora.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "I want to buy a train ticket now."
+            },
+            {
+              "text": "Il mio computer ha bisogno di una borsa.",
+              "isCorrect": false,
+              "feedback": "Tech talk is forbidden.",
+              "english": "My computer needs a bag."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ricordi anche di non buttare rifiuti per terra.",
+          "english": "Also remember not to throw trash on the ground.",
+          "choices": [
+            {
+              "text": "Certamente, cercherò i cestini dei rifiuti.",
+              "isCorrect": true,
+              "feedback": "Showing civic responsibility.",
+              "english": "Certainly, I will look for the trash bins."
+            },
+            {
+              "text": "Cerco un taxi per andare in aeroporto ora.",
+              "isCorrect": false,
+              "feedback": "Airport/Transportation talk is forbidden.",
+              "english": "I'm looking for a taxi to go to the airport now."
+            },
+            {
+              "text": "Il mio cane dorme sotto il letto grande.",
+              "isCorrect": false,
+              "feedback": "Pets are irrelevant.",
+              "english": "My dog sleeps under the big bed."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ce ne sono molti lungo tutto il percorso.",
+          "english": "There are many along the entire path.",
+          "choices": [
+            {
+              "text": "Molto bene. Posso portare il cane con me?",
+              "isCorrect": true,
+              "feedback": "Inquiring about pet policies.",
+              "english": "Very well. Can I bring the dog with me?"
+            },
+            {
+              "text": "Vorrei prenotare una camera con vista parco.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden.",
+              "english": "I would like to book a room with a park view."
+            },
+            {
+              "text": "Il mio volo è stato cancellato per sciopero.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden.",
+              "english": "My flight was cancelled due to a strike."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, ma solo con il guinzaglio, per favore.",
+          "english": "Yes, but only with a leash, please.",
+          "choices": [
+            {
+              "text": "Capito, terrò il cane vicino a me.",
+              "isCorrect": true,
+              "feedback": "Agreeing to pet rules.",
+              "english": "Understood, I'll keep the dog close to me."
+            },
+            {
+              "text": "Voglio comprare un biglietto dell'autobus oggi.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "I want to buy a bus ticket today."
+            },
+            {
+              "text": "Il frigo in cucina non raffredda bene.",
+              "isCorrect": false,
+              "feedback": "Domestic issues are irrelevant.",
+              "english": "The kitchen fridge isn't cooling well."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie per la collaborazione. Buona continuazione!",
+          "english": "Thank you for the cooperation. Have a good continuation!",
+          "choices": [
+            {
+              "text": "Grazie a lei. Il sito è davvero magnifico.",
+              "isCorrect": true,
+              "feedback": "Complimenting the site.",
+              "english": "Thank you. The site is truly magnificent."
+            },
+            {
+              "text": "Voglio ordinare una colazione con molto miele.",
+              "isCorrect": false,
+              "feedback": "Café talk is forbidden.",
+              "english": "I want to order a breakfast with lots of honey."
+            },
+            {
+              "text": "Il mio computer si è bloccato di nuovo.",
+              "isCorrect": false,
+              "feedback": "Tech talk is forbidden.",
+              "english": "My computer has frozen again."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Siamo felici che le piaccia. Arrivederci!",
+          "english": "We're happy you like it. Goodbye!",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie ancora per tutto!",
+              "isCorrect": true,
+              "feedback": "Polite goodbye.",
+              "english": "Goodbye and thanks again for everything!"
+            },
+            {
+              "text": "Il treno per Roma è arrivato al binario.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden.",
+              "english": "The train for Rome has arrived at the platform."
+            },
+            {
+              "text": "Il mio lavandino in bagno è ancora sporco.",
+              "isCorrect": false,
+              "feedback": "Domestic issues are irrelevant.",
+              "english": "My bathroom sink is still dirty."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

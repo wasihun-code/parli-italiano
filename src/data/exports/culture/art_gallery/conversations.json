@@ -1,0 +1,1073 @@
+{
+  "scenarioId": 86,
+  "conversations": [
+    {
+      "id": "entering_gallery",
+      "title": "L'Ingresso alla Galleria",
+      "description": "Chiedi informazioni all'ingresso della galleria.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, benvenuto alla Galleria d'Arte. Desidera visitare la mostra?",
+          "english": "Good morning, welcome to the Art Gallery. Would you like to visit the exhibition?",
+          "choices": [
+            {
+              "text": "Buongiorno, sì. Quanto costa il biglietto d'ingresso?",
+              "isCorrect": true,
+              "feedback": "Perfect. Asking about the price is a natural next step.",
+              "english": "Good morning, yes. How much is the entrance ticket?"
+            },
+            {
+              "text": "Buongiorno, no. Dov'è la fermata dell'autobus?",
+              "isCorrect": false,
+              "feedback": "You are already inside the gallery, why ask for the bus?",
+              "english": "Good morning, no. Where is the bus stop?"
+            },
+            {
+              "text": "Ciao, vorrei comprare un chilo di mele rosse.",
+              "isCorrect": false,
+              "feedback": "This is a gallery, not a grocery store!",
+              "english": "Hi, I'd like to buy a kilo of red apples."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il biglietto intero costa dodici euro. È uno studente?",
+          "english": "The full-price ticket costs twelve euros. Are you a student?",
+          "choices": [
+            {
+              "text": "Sì, sono uno studente. C'è uno sconto per me?",
+              "isCorrect": true,
+              "feedback": "Correct. Students usually get a discount in Italy.",
+              "english": "Yes, I am a student. Is there a discount for me?"
+            },
+            {
+              "text": "No, non sono uno studente. Posso avere un caffè?",
+              "isCorrect": false,
+              "feedback": "The question was about being a student, not coffee.",
+              "english": "No, I'm not a student. Can I have a coffee?"
+            },
+            {
+              "text": "Sì, studio musica. Dove posso suonare il piano?",
+              "isCorrect": false,
+              "feedback": "The gallery is for viewing art, not playing piano.",
+              "english": "Yes, I study music. Where can I play the piano?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente. Per gli studenti il prezzo è di otto euro.",
+          "english": "Certainly. For students, the price is eight euros.",
+          "choices": [
+            {
+              "text": "Ottimo, ecco otto euro. Posso avere il biglietto?",
+              "isCorrect": true,
+              "feedback": "Good. You are completing the transaction.",
+              "english": "Great, here is eight euros. Can I have the ticket?"
+            },
+            {
+              "text": "Troppo caro. Posso pagare solo due euro oggi?",
+              "isCorrect": false,
+              "feedback": "Prices are usually fixed in galleries.",
+              "english": "Too expensive. Can I only pay two euros today?"
+            },
+            {
+              "text": "Va bene, ma voglio anche un biglietto per il treno.",
+              "isCorrect": false,
+              "feedback": "Galleries do not sell train tickets.",
+              "english": "Okay, but I also want a train ticket."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ecco il suo biglietto. La mostra inizia nella sala a sinistra.",
+          "english": "Here is your ticket. The exhibition starts in the room on the left.",
+          "choices": [
+            {
+              "text": "Grazie mille. C'è una mappa della galleria?",
+              "isCorrect": true,
+              "feedback": "Helpful to ask for a map to navigate the space.",
+              "english": "Thank you very much. Is there a map of the gallery?"
+            },
+            {
+              "text": "Grazie. Dove posso comprare delle scarpe nuove?",
+              "isCorrect": false,
+              "feedback": "This is not a shopping mall.",
+              "english": "Thanks. Where can I buy new shoes?"
+            },
+            {
+              "text": "Va bene. Posso mangiare un panino in quella sala?",
+              "isCorrect": false,
+              "feedback": "Eating is generally forbidden inside art galleries.",
+              "english": "Okay. Can I eat a sandwich in that room?"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, ecco una piccola mappa. La guida audio è gratuita.",
+          "english": "Yes, here is a small map. The audio guide is free.",
+          "choices": [
+            {
+              "text": "Molto gentile. Come funziona la guida audio?",
+              "isCorrect": true,
+              "feedback": "A natural follow-up question about the service.",
+              "english": "Very kind. How does the audio guide work?"
+            },
+            {
+              "text": "Grazie. Posso avere una guida per il museo?",
+              "isCorrect": false,
+              "feedback": "He just gave you one!",
+              "english": "Thanks. Can I have a guide for the museum?"
+            },
+            {
+              "text": "Va bene. La guida parla anche la lingua russa?",
+              "isCorrect": false,
+              "feedback": "Focus on how it works first.",
+              "english": "Okay. Does the guide also speak Russian?"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Deve solo digitare il numero dell'opera sulla tastiera.",
+          "english": "You just need to type the number of the artwork on the keypad.",
+          "choices": [
+            {
+              "text": "Capisco, grazie. È molto semplice da usare.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the explanation is polite.",
+              "english": "I see, thanks. It is very simple to use."
+            },
+            {
+              "text": "Non capisco. Posso avere un telecomando?",
+              "isCorrect": false,
+              "feedback": "The keypad is the way it works.",
+              "english": "I don't understand. Can I have a remote control?"
+            },
+            {
+              "text": "Va bene. Dove posso trovare un tecnico?",
+              "isCorrect": false,
+              "feedback": "You don't need a technician yet.",
+              "english": "Okay. Where can I find a technician?"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Esatto. Posso fare altro per aiutarla prima di iniziare?",
+          "english": "Exactly. Can I do anything else to help you before you start?",
+          "choices": [
+            {
+              "text": "Sì, un'ultima cosa. Si possono fare foto?",
+              "isCorrect": true,
+              "feedback": "Photography rules are important in galleries.",
+              "english": "Yes, one last thing. Can one take photos?"
+            },
+            {
+              "text": "No, grazie. Voglio solo dormire un po'.",
+              "isCorrect": false,
+              "feedback": "A gallery is not a place for a nap.",
+              "english": "No, thanks. I just want to sleep a bit."
+            },
+            {
+              "text": "Sì, vorrei sapere l'orario del volo.",
+              "isCorrect": false,
+              "feedback": "Airport information is not available here.",
+              "english": "Yes, I'd like to know the flight schedule."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, ma solo senza flash per non rovinare i quadri.",
+          "english": "Yes, but only without flash so as not to ruin the paintings.",
+          "choices": [
+            {
+              "text": "Va bene, nessun problema. Niente flash allora.",
+              "isCorrect": true,
+              "feedback": "Accepting the rules shows you understand.",
+              "english": "Okay, no problem. No flash then."
+            },
+            {
+              "text": "Peccato, io voglio usare un flash molto forte.",
+              "isCorrect": false,
+              "feedback": "That would damage the artwork and bother others.",
+              "english": "Too bad, I want to use a very strong flash."
+            },
+            {
+              "text": "Perché no? La luce fa bene ai colori.",
+              "isCorrect": false,
+              "feedback": "Actually, intense light damages pigments.",
+              "english": "Why not? Light is good for colors."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "La ringrazio per la collaborazione. Buona visita!",
+          "english": "Thank you for your cooperation. Enjoy your visit!",
+          "choices": [
+            {
+              "text": "Grazie mille, a più tardi. Buona giornata!",
+              "isCorrect": true,
+              "feedback": "A polite way to end the conversation.",
+              "english": "Thank you very much, see you later. Have a good day!"
+            },
+            {
+              "text": "Grazie. Dove posso trovare l'uscita adesso?",
+              "isCorrect": false,
+              "feedback": "You haven't even started your visit yet!",
+              "english": "Thanks. Where can I find the exit now?"
+            },
+            {
+              "text": "Prego. Mi porta un bicchiere d'acqua?",
+              "isCorrect": false,
+              "feedback": "The host is a receptionist, not a waiter.",
+              "english": "You're welcome. Can you bring me a glass of water?"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci! Si ricordi di spegnere il cellulare.",
+          "english": "Goodbye! Remember to turn off your cell phone.",
+          "choices": [
+            {
+              "text": "Certamente, lo spengo subito. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Good conclusion, following the final instruction.",
+              "english": "Certainly, I'll turn it off right away. Goodbye!"
+            },
+            {
+              "text": "No, voglio parlare al telefono ad alta voce.",
+              "isCorrect": false,
+              "feedback": "That would be very rude in a quiet gallery.",
+              "english": "No, I want to talk on the phone loudly."
+            },
+            {
+              "text": "Va bene. Mi serve un caricabatterie.",
+              "isCorrect": false,
+              "feedback": "He asked you to turn it off, not charge it.",
+              "english": "Okay. I need a charger."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the_artist",
+      "title": "L'Artista",
+      "description": "Chiedi informazioni sull'autore di un'opera.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Vedo che osserva questo quadro da molto tempo. Le piace?",
+          "english": "I see you've been looking at this painting for a long time. Do you like it?",
+          "choices": [
+            {
+              "text": "Sì, molto. Chi è l'artista che ha dipinto questo?",
+              "isCorrect": true,
+              "feedback": "Good question to start learning about the work.",
+              "english": "Yes, very much. Who is the artist who painted this?"
+            },
+            {
+              "text": "No, è brutto. Chi ha fatto questo errore?",
+              "isCorrect": false,
+              "feedback": "A bit rude for an art gallery visitor.",
+              "english": "No, it's ugly. Who made this mistake?"
+            },
+            {
+              "text": "Forse. Mi sa dire che ore sono adesso?",
+              "isCorrect": false,
+              "feedback": "Stay focused on the painting you are looking at.",
+              "english": "Maybe. Can you tell me what time it is now?"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È un'opera di un giovane pittore italiano di Roma.",
+          "english": "It is a work by a young Italian painter from Rome.",
+          "choices": [
+            {
+              "text": "Interessante. Come si chiama questo pittore?",
+              "isCorrect": true,
+              "feedback": "Asking for the name is the logical follow-up.",
+              "english": "Interesting. What is this painter's name?"
+            },
+            {
+              "text": "Capisco. Roma è una città molto grande.",
+              "isCorrect": false,
+              "feedback": "True, but not relevant to the artist's identity.",
+              "english": "I see. Rome is a very large city."
+            },
+            {
+              "text": "Bello. Quanti anni ha questo pittore?",
+              "isCorrect": false,
+              "feedback": "The name is more important than the exact age.",
+              "english": "Nice. How old is this painter?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Si chiama Marco Rossi. È molto famoso in Italia.",
+          "english": "His name is Marco Rossi. He is very famous in Italy.",
+          "choices": [
+            {
+              "text": "Ah, ho già sentito questo nome. È bravo.",
+              "isCorrect": true,
+              "feedback": "Showing some familiarity or appreciation.",
+              "english": "Ah, I've already heard this name. He's good."
+            },
+            {
+              "text": "Marco Rossi? È un nome molto comune.",
+              "isCorrect": false,
+              "feedback": "A bit dismissive of the artist.",
+              "english": "Marco Rossi? It's a very common name."
+            },
+            {
+              "text": "Bene. Lui gioca anche a calcio?",
+              "isCorrect": false,
+              "feedback": "You are talking about a painter, not a player.",
+              "english": "Good. Does he also play soccer?"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, ha vinto molti premi importanti recentemente.",
+          "english": "Yes, he has won many important awards recently.",
+          "choices": [
+            {
+              "text": "Qual è il tema principale delle sue opere?",
+              "isCorrect": true,
+              "feedback": "Deepening the conversation about the art itself.",
+              "english": "What is the main theme of his works?"
+            },
+            {
+              "text": "Bene. Quanto ha vinto in denaro?",
+              "isCorrect": false,
+              "feedback": "Focusing on money is not very artistic.",
+              "english": "Good. How much money did he win?"
+            },
+            {
+              "text": "Ah. Lui ha anche un cane o un gatto?",
+              "isCorrect": false,
+              "feedback": "Irrelevant personal detail about the artist.",
+              "english": "Ah. Does he also have a dog or a cat?"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Lui dipinge spesso la natura e i paesaggi urbani.",
+          "english": "He often paints nature and urban landscapes.",
+          "choices": [
+            {
+              "text": "Si vede. I colori che usa sono molto vivaci.",
+              "isCorrect": true,
+              "feedback": "Observing the visual elements of the work.",
+              "english": "It shows. The colors he uses are very bright."
+            },
+            {
+              "text": "Capisco. Io preferisco mangiare la frutta.",
+              "isCorrect": false,
+              "feedback": "The conversation is about painting themes.",
+              "english": "I see. I prefer to eat fruit."
+            },
+            {
+              "text": "Va bene. Dove posso comprare una pianta?",
+              "isCorrect": false,
+              "feedback": "Nature in art is different from a flower shop.",
+              "english": "Okay. Where can I buy a plant?"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Usa una tecnica particolare per dare luce al quadro.",
+          "english": "He uses a particular technique to give light to the painting.",
+          "choices": [
+            {
+              "text": "Davvero? Mi sembra una tecnica molto difficile.",
+              "isCorrect": true,
+              "feedback": "Engaging with the technical aspect mentioned.",
+              "english": "Really? It seems like a very difficult technique to me."
+            },
+            {
+              "text": "No, è facile. Anche io posso farlo.",
+              "isCorrect": false,
+              "feedback": "Artistic techniques often require years of study.",
+              "english": "No, it's easy. I can do it too."
+            },
+            {
+              "text": "Chiaro. La luce della stanza è troppo forte.",
+              "isCorrect": false,
+              "feedback": "He was talking about light *within* the painting.",
+              "english": "Clear. The light in the room is too strong."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ha studiato molti anni all'Accademia di Belle Arti.",
+          "english": "He studied for many years at the Academy of Fine Arts.",
+          "choices": [
+            {
+              "text": "Si vede che ha una grande preparazione tecnica.",
+              "isCorrect": true,
+              "feedback": "Validating the artist's professional background.",
+              "english": "You can see that he has a great technical background."
+            },
+            {
+              "text": "Studiare è noioso. Io preferisco dormire.",
+              "isCorrect": false,
+              "feedback": "Not a very constructive comment about art.",
+              "english": "Studying is boring. I prefer to sleep."
+            },
+            {
+              "text": "Va bene. Dov'è la scuola di cucina?",
+              "isCorrect": false,
+              "feedback": "Wrong kind of academy.",
+              "english": "Okay. Where is the cooking school?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Oltre a questo quadro, abbiamo altre cinque sue opere.",
+          "english": "In addition to this painting, we have five other works of his.",
+          "choices": [
+            {
+              "text": "Dove posso vedere le altre sue opere?",
+              "isCorrect": true,
+              "feedback": "Natural interest in seeing more of the same artist.",
+              "english": "Where can I see his other works?"
+            },
+            {
+              "text": "Cinque sono troppe. Ne voglio vedere solo una.",
+              "isCorrect": false,
+              "feedback": "You can choose what to look at, but five is a small set.",
+              "english": "Five are too many. I only want to see one."
+            },
+            {
+              "text": "Va bene. Mi servono cinque biglietti.",
+              "isCorrect": false,
+              "feedback": "You were talking about artworks, not tickets.",
+              "english": "Okay. I need five tickets."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sono tutte esposte nella sala dedicata agli emergenti.",
+          "english": "They are all on display in the room dedicated to emerging artists.",
+          "choices": [
+            {
+              "text": "Grazie dell'informazione. Vado subito a vederle.",
+              "isCorrect": true,
+              "feedback": "A positive way to continue the visit.",
+              "english": "Thanks for the information. I'm going to see them right away."
+            },
+            {
+              "text": "No, non voglio vederle. Sono stanco.",
+              "isCorrect": false,
+              "feedback": "You can sit down, but why be so negative?",
+              "english": "No, I don't want to see them. I'm tired."
+            },
+            {
+              "text": "Dov'è il bagno degli emergenti?",
+              "isCorrect": false,
+              "feedback": "The room is for art, not a special bathroom.",
+              "english": "Where is the bathroom for the emerging ones?"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego. Se vuole, c'è anche il catalogo dell'artista.",
+          "english": "You're welcome. If you want, there's also the artist's catalog.",
+          "choices": [
+            {
+              "text": "Grazie, darò un'occhiata al catalogo più tardi.",
+              "isCorrect": true,
+              "feedback": "Polite conclusion to the exchange.",
+              "english": "Thanks, I'll take a look at the catalog later."
+            },
+            {
+              "text": "Il catalogo è gratis? Altrimenti non lo voglio.",
+              "isCorrect": false,
+              "feedback": "A bit blunt. Some catalogs are free, some aren't.",
+              "english": "Is the catalog free? Otherwise, I don't want it."
+            },
+            {
+              "text": "Va bene. Mi porti un catalogo di macchine.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!",
+              "english": "Okay. Bring me a car catalog."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "art_styles",
+      "title": "Gli Stili d'Arte",
+      "description": "Discuti i diversi stili artistici presenti nella galleria.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "In questa galleria abbiamo sia arte classica che moderna.",
+          "english": "In this gallery, we have both classical and modern art.",
+          "choices": [
+            {
+              "text": "Quale stile preferisce lei personalmente?",
+              "isCorrect": true,
+              "feedback": "A nice way to engage the host in conversation.",
+              "english": "Which style do you personally prefer?"
+            },
+            {
+              "text": "Quale film danno oggi al cinema?",
+              "isCorrect": false,
+              "feedback": "Wrong scenario!",
+              "english": "What movie is playing at the cinema today?"
+            },
+            {
+              "text": "Mi piace il calcio moderno.",
+              "isCorrect": false,
+              "feedback": "Not the kind of 'modern' we are talking about.",
+              "english": "I like modern soccer."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Io amo l'arte moderna per i suoi colori astratti.",
+          "english": "I love modern art for its abstract colors.",
+          "choices": [
+            {
+              "text": "Io invece preferisco lo stile classico e reale.",
+              "isCorrect": true,
+              "feedback": "Expressing a different but valid preference.",
+              "english": "I, on the other hand, prefer the classical and realistic style."
+            },
+            {
+              "text": "L'arte astratta è solo un insieme di macchie.",
+              "isCorrect": false,
+              "feedback": "A very narrow view of abstract art.",
+              "english": "Abstract art is just a collection of spots."
+            },
+            {
+              "text": "Va bene. Dove posso comprare dei colori?",
+              "isCorrect": false,
+              "feedback": "The host is sharing an opinion, not selling supplies.",
+              "english": "Okay. Where can I buy some colors?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco. I quadri classici sono molto dettagliati.",
+          "english": "I understand. Classical paintings are very detailed.",
+          "choices": [
+            {
+              "text": "Sì, sembrano quasi delle fotografie vere.",
+              "isCorrect": true,
+              "feedback": "Good observation about classical realism.",
+              "english": "Yes, they look almost like real photographs."
+            },
+            {
+              "text": "No, sono noiosi e troppo scuri.",
+              "isCorrect": false,
+              "feedback": "Classical art can be very vibrant too.",
+              "english": "No, they are boring and too dark."
+            },
+            {
+              "text": "Bene. Dove posso fare una fotografia?",
+              "isCorrect": false,
+              "feedback": "The host was using a metaphor, not suggesting a photo.",
+              "english": "Good. Where can I take a photograph?"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto. L'arte moderna invece cerca di dare emozioni.",
+          "english": "Exactly. Modern art, on the other hand, tries to evoke emotions.",
+          "choices": [
+            {
+              "text": "È vero, alcuni quadri moderni sono molto forti.",
+              "isCorrect": true,
+              "feedback": "Agreeing and adding to the conversation.",
+              "english": "It's true, some modern paintings are very strong."
+            },
+            {
+              "text": "Le emozioni sono solo per i film tristi.",
+              "isCorrect": false,
+              "feedback": "Art of all kinds is deeply connected to emotion.",
+              "english": "Emotions are only for sad movies."
+            },
+            {
+              "text": "Va bene. Dov'è la sala della rabbia?",
+              "isCorrect": false,
+              "feedback": "Not a standard room in a gallery.",
+              "english": "Okay. Where is the anger room?"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Abbiamo una sala intera dedicata al futurismo.",
+          "english": "We have an entire room dedicated to Futurism.",
+          "choices": [
+            {
+              "text": "Il futurismo è uno stile molto dinamico, vero?",
+              "isCorrect": true,
+              "feedback": "Showing some knowledge of art history.",
+              "english": "Futurism is a very dynamic style, right?"
+            },
+            {
+              "text": "Il futuro è domani. Cosa mangiamo?",
+              "isCorrect": false,
+              "feedback": "Futurism is an art movement, not a menu.",
+              "english": "The future is tomorrow. What are we eating?"
+            },
+            {
+              "text": "Voglio andare nel futuro con una macchina.",
+              "isCorrect": false,
+              "feedback": "This is art, not science fiction.",
+              "english": "I want to go into the future with a machine."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, parla di velocità, macchine e progresso.",
+          "english": "Yes, it's about speed, cars, and progress.",
+          "choices": [
+            {
+              "text": "Molto interessante. Dove si trova questa sala?",
+              "isCorrect": true,
+              "feedback": "Wanting to visit the specific section mentioned.",
+              "english": "Very interesting. Where is this room located?"
+            },
+            {
+              "text": "Le macchine sono troppo veloci e pericolose.",
+              "isCorrect": false,
+              "feedback": "The host is describing art themes, not traffic.",
+              "english": "Cars are too fast and dangerous."
+            },
+            {
+              "text": "Va bene. Quanto corre la sua auto?",
+              "isCorrect": false,
+              "feedback": "Irrelevant personal question.",
+              "english": "Okay. How fast does your car go?"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È al piano superiore, vicino alle sculture.",
+          "english": "It's on the upper floor, near the sculptures.",
+          "choices": [
+            {
+              "text": "Ci sono anche sculture moderne in quella sala?",
+              "isCorrect": true,
+              "feedback": "Asking for clarification about the collection.",
+              "english": "Are there also modern sculptures in that room?"
+            },
+            {
+              "text": "Le sculture sono fatte di cioccolato?",
+              "isCorrect": false,
+              "feedback": "Usually stone, bronze, or wood, not candy.",
+              "english": "Are the sculptures made of chocolate?"
+            },
+            {
+              "text": "Va bene. C'è l'ascensore per salire?",
+              "isCorrect": false,
+              "feedback": "Valid question, but the art question is better here.",
+              "english": "Okay. Is there an elevator to go up?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, ci sono opere in bronzo e in marmo.",
+          "english": "Yes, there are works in bronze and marble.",
+          "choices": [
+            {
+              "text": "Il marmo è un materiale molto classico.",
+              "isCorrect": true,
+              "feedback": "Connecting materials to styles correctly.",
+              "english": "Marble is a very classical material."
+            },
+            {
+              "text": "Il bronzo serve per fare le medaglie.",
+              "isCorrect": false,
+              "feedback": "Also used for statues for thousands of years.",
+              "english": "Bronze is used for making medals."
+            },
+            {
+              "text": "Va bene. Posso avere un pezzo di marmo?",
+              "isCorrect": false,
+              "feedback": "Artworks are not for taking pieces from!",
+              "english": "Okay. Can I have a piece of marble?"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, ma gli artisti moderni lo usano in modo nuovo.",
+          "english": "Yes, but modern artists use it in a new way.",
+          "choices": [
+            {
+              "text": "Capisco. Mi piace questo contrasto tra vecchio e nuovo.",
+              "isCorrect": true,
+              "feedback": "Showing appreciation for the artistic approach.",
+              "english": "I see. I like this contrast between old and new."
+            },
+            {
+              "text": "Nuovo è meglio di vecchio sempre.",
+              "isCorrect": false,
+              "feedback": "A very subjective and simplistic view.",
+              "english": "New is always better than old."
+            },
+            {
+              "text": "Va bene. Dove posso comprare un telefono nuovo?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!",
+              "english": "Okay. Where can I buy a new phone?"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Spero che la visita le piaccia molto allora.",
+          "english": "I hope you enjoy your visit very much then.",
+          "choices": [
+            {
+              "text": "Sicuramente. Grazie dei consigli, a presto!",
+              "isCorrect": true,
+              "feedback": "Polite end to the discussion about styles.",
+              "english": "Definitely. Thanks for the advice, see you soon!"
+            },
+            {
+              "text": "Non credo. Questa galleria è troppo grande.",
+              "isCorrect": false,
+              "feedback": "Size is usually a good thing for a gallery!",
+              "english": "I don't think so. This gallery is too big."
+            },
+            {
+              "text": "Va bene. Mi porti un gelato adesso.",
+              "isCorrect": false,
+              "feedback": "There might be a cafe, but the host isn't serving.",
+              "english": "Okay. Bring me an ice cream now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prices_materials",
+      "title": "Prezzi e Materiali",
+      "description": "Chiedi informazioni sui materiali e sui prezzi delle opere in vendita.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Alcune opere in questa sala sono in vendita. Le interessa?",
+          "english": "Some works in this room are for sale. Are you interested?",
+          "choices": [
+            {
+              "text": "Sì, forse. Quel quadro piccolo quanto costa?",
+              "isCorrect": true,
+              "feedback": "Direct and appropriate question about price.",
+              "english": "Yes, maybe. How much is that small painting?"
+            },
+            {
+              "text": "No, io non ho mai soldi con me.",
+              "isCorrect": false,
+              "feedback": "A bit too personal and negative.",
+              "english": "No, I never have money with me."
+            },
+            {
+              "text": "Sì, vorrei comprare tutta la galleria.",
+              "isCorrect": false,
+              "feedback": "That would be extremely expensive!",
+              "english": "Yes, I'd like to buy the whole gallery."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Quello costa cinquecento euro. È un olio su tela.",
+          "english": "That one costs five hundred euros. It's an oil on canvas.",
+          "choices": [
+            {
+              "text": "Bello. E quello vicino, fatto con l'acquerello?",
+              "isCorrect": true,
+              "feedback": "Showing interest in different materials.",
+              "english": "Nice. And the one nearby, made with watercolor?"
+            },
+            {
+              "text": "Cinquecento euro? È troppo per un po' di olio.",
+              "isCorrect": false,
+              "feedback": "Art prices include the skill, not just the oil.",
+              "english": "Five hundred euros? That's too much for a bit of oil."
+            },
+            {
+              "text": "Va bene. L'olio serve per cucinare la pasta?",
+              "isCorrect": false,
+              "feedback": "Painting oil is different from olive oil!",
+              "english": "Okay. Is the oil used for cooking pasta?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "L'acquerello costa meno, circa duecento euro.",
+          "english": "The watercolor costs less, about two hundred euros.",
+          "choices": [
+            {
+              "text": "Perché c'è questa differenza di prezzo?",
+              "isCorrect": true,
+              "feedback": "A smart question about the art market.",
+              "english": "Why is there this price difference?"
+            },
+            {
+              "text": "Duecento euro sono pochi. Ne voglio dieci.",
+              "isCorrect": false,
+              "feedback": "Artworks are unique, you can't just order ten.",
+              "english": "Two hundred euros are few. I want ten."
+            },
+            {
+              "text": "Va bene. Posso avere un bicchiere d'acqua?",
+              "isCorrect": false,
+              "feedback": "Watercolor is a technique, not a drink.",
+              "english": "Okay. Can I have a glass of water?"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "L'olio richiede più tempo e materiali più costosi.",
+          "english": "Oil requires more time and more expensive materials.",
+          "choices": [
+            {
+              "text": "Capisco. L'acquerello invece è più veloce?",
+              "isCorrect": true,
+              "feedback": "Logical deduction based on the host's reply.",
+              "english": "I see. Is watercolor faster, then?"
+            },
+            {
+              "text": "Il tempo è denaro. Io sono un uomo d'affari.",
+              "isCorrect": false,
+              "feedback": "A bit arrogant for a casual visitor.",
+              "english": "Time is money. I am a businessman."
+            },
+            {
+              "text": "Va bene. Dove posso comprare un orologio?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!",
+              "english": "Okay. Where can I buy a watch?"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, ma è anche molto difficile perché non puoi sbagliare.",
+          "english": "Yes, but it's also very difficult because you can't make mistakes.",
+          "choices": [
+            {
+              "text": "È vero, l'acquerello è una tecnica molto delicata.",
+              "isCorrect": true,
+              "feedback": "Showing understanding of the technical challenge.",
+              "english": "It's true, watercolor is a very delicate technique."
+            },
+            {
+              "text": "Io non sbaglio mai. Sono un genio.",
+              "isCorrect": false,
+              "feedback": "Confidence is good, but this is a bit much.",
+              "english": "I never make mistakes. I am a genius."
+            },
+            {
+              "text": "Va bene. Dove posso comprare una gomma?",
+              "isCorrect": false,
+              "feedback": "You can't erase watercolor easily!",
+              "english": "Okay. Where can I buy an eraser?"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Esatto. Le interessa comprare l'opera ad olio?",
+          "english": "Exactly. Are you interested in buying the oil painting?",
+          "choices": [
+            {
+              "text": "Ci devo pensare. Posso avere un catalogo?",
+              "isCorrect": true,
+              "feedback": "A common and polite way to defer a big purchase.",
+              "english": "I need to think about it. Can I have a catalog?"
+            },
+            {
+              "text": "Sì, la prendo subito. Ecco la mia carta.",
+              "isCorrect": false,
+              "feedback": "A bit fast, but possible. The catalog is safer.",
+              "english": "Yes, I'll take it right away. Here is my card."
+            },
+            {
+              "text": "No, preferisco comprare una macchina.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!",
+              "english": "No, I prefer to buy a car."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente, il catalogo costa quindici euro.",
+          "english": "Certainly, the catalog costs fifteen euros.",
+          "choices": [
+            {
+              "text": "Va bene, prendo il catalogo per adesso.",
+              "isCorrect": true,
+              "feedback": "Deciding on a smaller purchase is reasonable.",
+              "english": "Okay, I'll take the catalog for now."
+            },
+            {
+              "text": "Quindici euro per un libro? È follia!",
+              "isCorrect": false,
+              "feedback": "Art catalogs are often expensive to produce.",
+              "english": "Fifteen euros for a book? It's madness!"
+            },
+            {
+              "text": "Va bene. Posso avere un catalogo di vestiti?",
+              "isCorrect": false,
+              "feedback": "This is an art gallery, not a fashion shop.",
+              "english": "Okay. Can I have a clothing catalog?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottima scelta. Nel catalogo ci sono tutte le foto.",
+          "english": "Great choice. All the photos are in the catalog.",
+          "choices": [
+            {
+              "text": "Ci sono anche le biografie degli artisti?",
+              "isCorrect": true,
+              "feedback": "Good question about the content of the catalog.",
+              "english": "Are there also biographies of the artists?"
+            },
+            {
+              "text": "Le foto sono a colori o in bianco e nero?",
+              "isCorrect": false,
+              "feedback": "Most art catalogs are in full color.",
+              "english": "Are the photos in color or in black and white?"
+            },
+            {
+              "text": "Va bene. Mi serve una foto per il passaporto.",
+              "isCorrect": false,
+              "feedback": "Wrong kind of photo!",
+              "english": "Okay. I need a passport photo."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, c'è una sezione dedicata alla vita di ognuno.",
+          "english": "Yes, there is a section dedicated to the life of each one.",
+          "choices": [
+            {
+              "text": "Perfetto, lo compro volentieri allora. Grazie.",
+              "isCorrect": true,
+              "feedback": "Completing the purchase of the catalog.",
+              "english": "Perfect, I'll gladly buy it then. Thanks."
+            },
+            {
+              "text": "La vita è breve. Non voglio leggere nulla.",
+              "isCorrect": false,
+              "feedback": "A bit nihilistic for an art enthusiast.",
+              "english": "Life is short. I don't want to read anything."
+            },
+            {
+              "text": "Va bene. Dov'è la sezione dei dolci?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!",
+              "english": "Okay. Where is the dessert section?"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie a lei. Le porto subito il catalogo alla cassa.",
+          "english": "Thank you. I'll bring the catalog to the counter for you right away.",
+          "choices": [
+            {
+              "text": "Grazie mille, arrivederci e buona giornata!",
+              "isCorrect": true,
+              "feedback": "Polite ending to the transaction.",
+              "english": "Thank you very much, goodbye and have a good day!"
+            },
+            {
+              "text": "Va bene. Posso avere anche un sacchetto?",
+              "isCorrect": false,
+              "feedback": "He's already helping you at the counter.",
+              "english": "Okay. Can I also have a bag?"
+            },
+            {
+              "text": "Arrivederci. Mi serve un taxi adesso.",
+              "isCorrect": false,
+              "feedback": "The host can't help with that immediately.",
+              "english": "Goodbye. I need a taxi now."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1073 @@
+{
+  "scenarioId": 81,
+  "conversations": [
+    {
+      "id": "buying_two_tickets",
+      "title": "Buying Two Tickets",
+      "description": "Purchase two standard entry tickets at the ticket office.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Benvenuti al museo. Come posso aiutarvi?",
+          "english": "Good morning! Welcome to the museum. How can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei due biglietti per favore.",
+              "english": "Good morning, I would like two tickets please.",
+              "isCorrect": true,
+              "feedback": "Good."
+            },
+            {
+              "text": "Buongiorno, dove posso comprare una guida?",
+              "english": "Good morning, where can I buy a guide?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            },
+            {
+              "text": "Buongiorno, c'è una mostra temporanea oggi?",
+              "english": "Good morning, is there a temporary exhibition today?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Volete i biglietti interi o quelli ridotti?",
+          "english": "Certainly. Do you want the full price tickets or the reduced ones?",
+          "choices": [
+            {
+              "text": "Vorrei due biglietti interi, grazie.",
+              "english": "I would like two full price tickets, thank you.",
+              "isCorrect": true,
+              "feedback": "Clear choice."
+            },
+            {
+              "text": "Vorrei prenotare un tavolo, grazie.",
+              "english": "I would like to book a table, thank you.",
+              "isCorrect": false,
+              "feedback": "Wrong location."
+            },
+            {
+              "text": "Vorrei pagare con la carta, grazie.",
+              "english": "I would like to pay by card, thank you.",
+              "isCorrect": false,
+              "feedback": "Too early."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Molto bene. Volete visitare anche la mostra temporanea oggi?",
+          "english": "Very well. Would you also like to visit the temporary exhibition today?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Di cosa si tratta?",
+              "english": "Yes, thank you. What is it about?",
+              "isCorrect": true,
+              "feedback": "Good question."
+            },
+            {
+              "text": "Sì, grazie. Dov'è l'uscita?",
+              "english": "Yes, thank you. Where is the exit?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Sì, grazie. Quanto costa?",
+              "english": "Yes, thank you. How much does it cost?",
+              "isCorrect": false,
+              "feedback": "Wait for info."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "È una mostra di pittura moderna molto bella. Il biglietto costa cinque euro in più.",
+          "english": "It is a very beautiful modern painting exhibition. The ticket costs five euros more.",
+          "choices": [
+            {
+              "text": "Va bene, la visitiamo volentieri.",
+              "english": "All right, we'll gladly visit it.",
+              "isCorrect": true,
+              "feedback": "Accepted."
+            },
+            {
+              "text": "Va bene, dove sono le sale?",
+              "english": "All right, where are the rooms?",
+              "isCorrect": false,
+              "feedback": "Answer the question first."
+            },
+            {
+              "text": "Va bene, preferisco di no.",
+              "english": "All right, I prefer not.",
+              "isCorrect": false,
+              "feedback": "Refused exhibition."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Allora sono trenta euro in totale. Desiderate una mappa?",
+          "english": "Perfect. Then it is thirty euros in total. Would you like a map?",
+          "choices": [
+            {
+              "text": "Sì, una mappa è molto utile, grazie.",
+              "english": "Yes, a map is very useful, thank you.",
+              "isCorrect": true,
+              "feedback": "Helpful."
+            },
+            {
+              "text": "Sì, una guida è molto utile, grazie.",
+              "english": "Yes, a guide is very useful, thank you.",
+              "isCorrect": false,
+              "feedback": "Asking for guide instead."
+            },
+            {
+              "text": "Sì, l'audioguida è utile, grazie.",
+              "english": "Yes, the audio guide is useful, thank you.",
+              "isCorrect": false,
+              "feedback": "Asking for audio guide instead."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco la mappa. Come preferite pagare, con carta o in contanti?",
+          "english": "Here is the map. How do you prefer to pay, by card or in cash?",
+          "choices": [
+            {
+              "text": "Pago con carta di credito, grazie.",
+              "english": "I'll pay by credit card, thank you.",
+              "isCorrect": true,
+              "feedback": "Common choice."
+            },
+            {
+              "text": "Pago in contanti alla cassa, grazie.",
+              "english": "I'll pay in cash at the cash desk, thank you.",
+              "isCorrect": false,
+              "feedback": "Wait for instructions."
+            },
+            {
+              "text": "Pago tutto insieme adesso, grazie.",
+              "english": "I'll pay all together now, thank you.",
+              "isCorrect": false,
+              "feedback": "Redundant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Grazie. Può inserire la carta qui e premere il codice?",
+          "english": "Thank you. Can you insert the card here and press the code?",
+          "choices": [
+            {
+              "text": "Certo, ecco fatto.",
+              "english": "Sure, done.",
+              "isCorrect": true,
+              "feedback": "Simple."
+            },
+            {
+              "text": "Certo, un momento.",
+              "english": "Sure, one moment.",
+              "isCorrect": false,
+              "feedback": "Action not done yet."
+            },
+            {
+              "text": "Certo, arrivo ora.",
+              "english": "Sure, I'm coming now.",
+              "isCorrect": false,
+              "feedback": "Nonsense here."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Ecco la vostra ricevuta e i due biglietti interi.",
+          "english": "Great. Here is your receipt and the two full price tickets.",
+          "choices": [
+            {
+              "text": "Grazie mille. Dove è l'entrata principale?",
+              "english": "Thank you very much. Where is the main entrance?",
+              "isCorrect": true,
+              "feedback": "Good question."
+            },
+            {
+              "text": "Grazie mille. Dove posso lasciare la borsa?",
+              "english": "Thank you very much. Where can I leave the bag?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            },
+            {
+              "text": "Grazie mille. Posso fare delle fotografie?",
+              "english": "Thank you very much. Can I take photographs?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "L'entrata è subito a destra, dopo il guardaroba.",
+          "english": "The entrance is immediately on the right, after the cloakroom.",
+          "choices": [
+            {
+              "text": "Capito. Grazie e arrivederci!",
+              "english": "Understood. Thanks and goodbye!",
+              "isCorrect": true,
+              "feedback": "Polite."
+            },
+            {
+              "text": "Capito. Grazie e buona giornata!",
+              "english": "Understood. Thanks and have a good day!",
+              "isCorrect": false,
+              "feedback": "You should leave now."
+            },
+            {
+              "text": "Capito. Grazie e a più tardi!",
+              "english": "Understood. Thanks and see you later!",
+              "isCorrect": false,
+              "feedback": "You should leave now."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci e buona visita al nostro museo!",
+          "english": "Goodbye and enjoy your visit to our museum!",
+          "choices": [
+            {
+              "text": "Arrivederci!",
+              "english": "Goodbye!",
+              "isCorrect": true,
+              "feedback": "Final bye."
+            },
+            {
+              "text": "A domani!",
+              "english": "See you tomorrow!",
+              "isCorrect": false,
+              "feedback": "Wrong time."
+            },
+            {
+              "text": "Buonasera!",
+              "english": "Good evening!",
+              "isCorrect": false,
+              "feedback": "A bit early."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_for_student_discount",
+      "title": "Asking for Student Discount",
+      "description": "Inquire about reduced prices for students.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come posso aiutarla oggi?",
+          "english": "Good morning! How can I help you today?",
+          "choices": [
+            {
+              "text": "Buongiorno. Vorrei comprare un biglietto.",
+              "english": "Good morning. I would like to buy a ticket.",
+              "isCorrect": true,
+              "feedback": "Direct."
+            },
+            {
+              "text": "Buongiorno. Posso avere una mappa gratuita?",
+              "english": "Good morning. Can I have a free map?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            },
+            {
+              "text": "Buongiorno. A che ora apre la galleria?",
+              "english": "Good morning. What time does the gallery open?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Un biglietto intero per il museo costa quindici euro.",
+          "english": "Sure. A full price ticket for the museum costs fifteen euros.",
+          "choices": [
+            {
+              "text": "Sono uno studente, ci sono degli sconti?",
+              "english": "I am a student, are there any discounts?",
+              "isCorrect": true,
+              "feedback": "Good inquiry."
+            },
+            {
+              "text": "Sono con un gruppo, ci sono delle riduzioni?",
+              "english": "I am with a group, are there any reductions?",
+              "isCorrect": false,
+              "feedback": "Wrong role."
+            },
+            {
+              "text": "Sono un residente, ho diritto allo sconto?",
+              "english": "I am a resident, am I entitled to the discount?",
+              "isCorrect": false,
+              "feedback": "Wrong role."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, abbiamo una riduzione per gli studenti sotto i ventisei anni.",
+          "english": "Yes, we have a reduction for students under twenty-six years old.",
+          "choices": [
+            {
+              "text": "Perfetto, io ho ventidue anni.",
+              "english": "Perfect, I am twenty-two.",
+              "isCorrect": true,
+              "feedback": "Good."
+            },
+            {
+              "text": "Perfetto, sono ancora studente.",
+              "english": "Perfect, I am still a student.",
+              "isCorrect": false,
+              "feedback": "Redundant."
+            },
+            {
+              "text": "Perfetto, ecco i miei documenti.",
+              "english": "Perfect, here are my documents.",
+              "isCorrect": false,
+              "feedback": "Wait for request."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. Per avere lo sconto devo vedere un documento.",
+          "english": "Great. To get the discount I need to see a document.",
+          "choices": [
+            {
+              "text": "Va bene il mio tesserino universitario?",
+              "english": "Is my university ID card okay?",
+              "isCorrect": true,
+              "feedback": "Logical question."
+            },
+            {
+              "text": "Va bene il mio passaporto per lo sconto?",
+              "english": "Is my passport okay for the discount?",
+              "isCorrect": false,
+              "feedback": "Wrong document."
+            },
+            {
+              "text": "Ho dimenticato il mio documento a casa.",
+              "english": "I forgot my document at home.",
+              "isCorrect": false,
+              "feedback": "No discount then."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, il tesserino universitario va benissimo. Può mostrarmelo?",
+          "english": "Yes, the university ID card is fine. Can you show it to me?",
+          "choices": [
+            {
+              "text": "Certamente, eccolo qui.",
+              "english": "Certainly, here it is.",
+              "isCorrect": true,
+              "feedback": "Provided."
+            },
+            {
+              "text": "Certo, un momento solo.",
+              "english": "Sure, just a moment.",
+              "isCorrect": false,
+              "feedback": "Not shown yet."
+            },
+            {
+              "text": "Sì, lo cerco subito.",
+              "english": "Yes, I'll look for it right away.",
+              "isCorrect": false,
+              "feedback": "Not shown yet."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Grazie. Allora il prezzo per lei è di dodici euro invece di quindici.",
+          "english": "Thank you. So the price for you is twelve euros instead of fifteen.",
+          "choices": [
+            {
+              "text": "Ottimo! Pago subito.",
+              "english": "Great! I'll pay right away.",
+              "isCorrect": true,
+              "feedback": "Positive."
+            },
+            {
+              "text": "Bene! Posso pagare?",
+              "english": "Good! Can I pay?",
+              "isCorrect": false,
+              "feedback": "Wait."
+            },
+            {
+              "text": "Ottimo! Ecco i soldi.",
+              "english": "Great! Here is the money.",
+              "isCorrect": false,
+              "feedback": "Wait."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Desidera altro? Forse un'audioguida o una mappa delle sale?",
+          "english": "Would you like anything else? Perhaps an audio guide or a map of the rooms?",
+          "choices": [
+            {
+              "text": "No, solo il biglietto, grazie mille.",
+              "english": "No, just the ticket, thanks a lot.",
+              "isCorrect": true,
+              "feedback": "Clear."
+            },
+            {
+              "text": "No, preferisco andare da solo, grazie.",
+              "english": "No, I prefer to go alone, thank you.",
+              "isCorrect": false,
+              "feedback": "Answer the question."
+            },
+            {
+              "text": "No, ho già una mappa del museo, grazie.",
+              "english": "No, I already have a museum map, thank you.",
+              "isCorrect": false,
+              "feedback": "Redundant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Ecco il suo biglietto ridotto. Lo conservi bene.",
+          "english": "All right. Here is your reduced ticket. Keep it safe.",
+          "choices": [
+            {
+              "text": "Grazie. A che ora chiude il museo oggi?",
+              "english": "Thanks. What time does the museum close today?",
+              "isCorrect": true,
+              "feedback": "Good question."
+            },
+            {
+              "text": "Grazie. Posso usare questo biglietto domani?",
+              "english": "Thanks. Can I use this ticket tomorrow?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            },
+            {
+              "text": "Grazie. Dove posso trovare una guida gratuita?",
+              "english": "Thanks. Where can I find a free guide?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Oggi chiudiamo alle diciannove. Ha ancora molto tempo.",
+          "english": "Today we close at 7 PM. You still have plenty of time.",
+          "choices": [
+            {
+              "text": "Perfetto, allora vado a iniziare la visita.",
+              "english": "Perfect, then I'll go and start the visit.",
+              "isCorrect": true,
+              "feedback": "Ready."
+            },
+            {
+              "text": "Perfetto, allora ho tempo per vedere tutto.",
+              "english": "Perfect, then I have time to see everything.",
+              "isCorrect": false,
+              "feedback": "Redundant."
+            },
+            {
+              "text": "Perfetto, allora posso fare molte foto.",
+              "english": "Perfect, then I can take many photos.",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buona visita e buona giornata!",
+          "english": "Enjoy your visit and have a good day!",
+          "choices": [
+            {
+              "text": "Grazie, arrivederci!",
+              "english": "Thanks, goodbye!",
+              "isCorrect": true,
+              "feedback": "Final bye."
+            },
+            {
+              "text": "Grazie, buona giornata!",
+              "english": "Thanks, have a good day!",
+              "isCorrect": false,
+              "feedback": "Wait for final bye."
+            },
+            {
+              "text": "Grazie, a presto!",
+              "english": "Thanks, see you soon!",
+              "isCorrect": false,
+              "feedback": "Wait for final bye."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renting_an_audio_guide",
+      "title": "Renting an Audio Guide",
+      "description": "Ask for an audio guide and specify the language.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Ha già il suo biglietto per il museo?",
+          "english": "Hello! Do you already have your ticket for the museum?",
+          "choices": [
+            {
+              "text": "Sì, ho già comprato il biglietto online.",
+              "english": "Yes, I already bought the ticket online.",
+              "isCorrect": true,
+              "feedback": "Good."
+            },
+            {
+              "text": "Sì, ho già fatto la prenotazione ieri.",
+              "english": "Yes, I already made the reservation yesterday.",
+              "isCorrect": false,
+              "feedback": "Redundant."
+            },
+            {
+              "text": "Sì, ho già visitato la mostra principale.",
+              "english": "Yes, I already visited the main exhibition.",
+              "isCorrect": false,
+              "feedback": "Then why are you here?"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottimo. Posso aiutarla con un'audioguida o una mappa?",
+          "english": "Great. Can I help you with an audio guide or a map?",
+          "choices": [
+            {
+              "text": "Vorrei un'audioguida, per favore.",
+              "english": "I would like an audio guide, please.",
+              "isCorrect": true,
+              "feedback": "Request made."
+            },
+            {
+              "text": "Vorrei una mappa del museo, grazie.",
+              "english": "I would like a map of the museum, thank you.",
+              "isCorrect": false,
+              "feedback": "Wrong request."
+            },
+            {
+              "text": "Vorrei un biglietto intero, per favore.",
+              "english": "I would like a full price ticket, please.",
+              "isCorrect": false,
+              "feedback": "You already have it."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente. Abbiamo l'audioguida in diverse lingue. Quale preferisce?",
+          "english": "Certainly. We have the audio guide in several languages. Which do you prefer?",
+          "choices": [
+            {
+              "text": "La preferisco in inglese, se possibile.",
+              "english": "I prefer it in English, if possible.",
+              "isCorrect": true,
+              "feedback": "Language specified."
+            },
+            {
+              "text": "La preferisco in italiano, per favore.",
+              "english": "I prefer it in Italian, please.",
+              "isCorrect": false,
+              "feedback": "Are you learning?"
+            },
+            {
+              "text": "La preferisco in spagnolo, se possibile.",
+              "english": "I prefer it in Spanish, if possible.",
+              "isCorrect": false,
+              "feedback": "Wrong language choice."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, abbiamo la lingua inglese disponibile. Il noleggio costa cinque euro.",
+          "english": "Yes, we have English available. The rental costs five euros.",
+          "choices": [
+            {
+              "text": "Va bene. Devo lasciare un documento?",
+              "english": "All right. Do I have to leave a document?",
+              "isCorrect": true,
+              "feedback": "Smart question."
+            },
+            {
+              "text": "Va bene. Devo pagare adesso in contanti?",
+              "english": "All right. Do I have to pay now in cash?",
+              "isCorrect": false,
+              "feedback": "Wait for payment info."
+            },
+            {
+              "text": "Va bene. Devo compilare un modulo qui?",
+              "english": "All right. Do I have to fill out a form here?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, deve lasciare un documento d'identità come deposito.",
+          "english": "Yes, you must leave an identity document as a deposit.",
+          "choices": [
+            {
+              "text": "Ecco la mia carta d'identità. Va bene?",
+              "english": "Here is my ID card. Is it okay?",
+              "isCorrect": true,
+              "feedback": "Provided."
+            },
+            {
+              "text": "Ecco il mio passaporto europeo. Va bene?",
+              "english": "Here is my European passport. Is it okay?",
+              "isCorrect": false,
+              "feedback": "Different document."
+            },
+            {
+              "text": "Ecco il mio tesserino studente. Va bene?",
+              "english": "Here is my student card. Is it okay?",
+              "isCorrect": false,
+              "feedback": "Wrong document for deposit."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, va benissimo. Grazie. Ecco l'audioguida per lei.",
+          "english": "Yes, it is perfectly fine. Thanks. Here is the audio guide for you.",
+          "choices": [
+            {
+              "text": "Grazie. Come si usa questo apparecchio?",
+              "english": "Thanks. How do you use this device?",
+              "isCorrect": true,
+              "feedback": "Asking for instructions."
+            },
+            {
+              "text": "Grazie. Dove posso trovare le spiegazioni?",
+              "english": "Thanks. Where can I find the explanations?",
+              "isCorrect": false,
+              "feedback": "In the guide."
+            },
+            {
+              "text": "Grazie. Quanto dura la visita guidata?",
+              "english": "Thanks. How long does the guided visit last?",
+              "isCorrect": false,
+              "feedback": "No guided visit."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È molto semplice. Basta premere il numero dell'opera che vede.",
+          "english": "It is very simple. Just press the number of the artwork you see.",
+          "choices": [
+            {
+              "text": "Capito. Posso ascoltare la spiegazione più volte?",
+              "english": "Understood. Can I listen to the explanation multiple times?",
+              "isCorrect": true,
+              "feedback": "Good question."
+            },
+            {
+              "text": "Capito. Posso cambiare la lingua dell'audioguida?",
+              "english": "Understood. Can I change the language of the audio guide?",
+              "isCorrect": false,
+              "feedback": "You already chose it."
+            },
+            {
+              "text": "Capito. Posso andare in tutte le sale del museo?",
+              "english": "Understood. Can I go to all the museum rooms?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, certo. Può riascoltare tutto quello che vuole.",
+          "english": "Yes, of course. You can listen again to everything you want.",
+          "choices": [
+            {
+              "text": "Ottimo. Devo restituirla alla fine della visita?",
+              "english": "Great. Do I have to return it at the end of the visit?",
+              "isCorrect": true,
+              "feedback": "Clarifying."
+            },
+            {
+              "text": "Ottimo. Devo pagare un deposito cauzionale oggi?",
+              "english": "Great. Do I have to pay a security deposit today?",
+              "isCorrect": false,
+              "feedback": "Document is the deposit."
+            },
+            {
+              "text": "Ottimo. Devo mostrare di nuovo il mio documento?",
+              "english": "Great. Do I have to show my document again?",
+              "isCorrect": false,
+              "feedback": "They have it."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, la riporti qui all'uscita quando ha finito.",
+          "english": "Yes, bring it back here at the exit when you are finished.",
+          "choices": [
+            {
+              "text": "Va bene, grazie mille per l'aiuto.",
+              "english": "All right, thanks a lot for the help.",
+              "isCorrect": true,
+              "feedback": "Polite."
+            },
+            {
+              "text": "Va bene, grazie mille per le informazioni.",
+              "english": "All right, thanks a lot for the information.",
+              "isCorrect": false,
+              "feedback": "Not helpful enough."
+            },
+            {
+              "text": "Va bene, grazie mille e buona giornata.",
+              "english": "All right, thanks a lot and have a good day.",
+              "isCorrect": false,
+              "feedback": "You are leaving."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla. Le auguro una buona visita al museo!",
+          "english": "You're welcome. I wish you a good visit to the museum!",
+          "choices": [
+            {
+              "text": "Arrivederci e buona giornata!",
+              "english": "Goodbye and have a good day!",
+              "isCorrect": true,
+              "feedback": "Final bye."
+            },
+            {
+              "text": "Arrivederci e a presto!",
+              "english": "Goodbye and see you soon!",
+              "isCorrect": false,
+              "feedback": "A bit informal."
+            },
+            {
+              "text": "Arrivederci e buona visita!",
+              "english": "Goodbye and have a good visit!",
+              "isCorrect": false,
+              "feedback": "You are the visitor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checking_closing_time",
+      "title": "Checking Closing Time",
+      "description": "Ask about opening hours and when the museum closes.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Desidera visitare il museo oggi?",
+          "english": "Good morning! Would you like to visit the museum today?",
+          "choices": [
+            {
+              "text": "Sì, ma prima vorrei un'informazione.",
+              "english": "Yes, but first I would like some information.",
+              "isCorrect": true,
+              "feedback": "Polite opening."
+            },
+            {
+              "text": "Sì, ma prima vorrei vedere i prezzi.",
+              "english": "Yes, but first I would like to see the prices.",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            },
+            {
+              "text": "Sì, ma prima vorrei una mappa gratuita.",
+              "english": "Yes, but first I would like a free map.",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Mi dica pure, cosa vuole sapere?",
+          "english": "Certainly. Tell me, what do you want to know?",
+          "choices": [
+            {
+              "text": "A che ora chiude il museo questa sera?",
+              "english": "What time does the museum close this evening?",
+              "isCorrect": true,
+              "feedback": "Clear question."
+            },
+            {
+              "text": "A che ora apre la biglietteria domani?",
+              "english": "What time does the ticket office open tomorrow?",
+              "isCorrect": false,
+              "feedback": "Ask about today."
+            },
+            {
+              "text": "A che ora inizia l'ultima visita guidata?",
+              "english": "What time does the last guided visit start?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Oggi il museo chiude alle diciannove. Adesso sono le diciassette.",
+          "english": "Today the museum closes at 7 PM. Now it is 5 PM.",
+          "choices": [
+            {
+              "text": "Ho solo due ore. Sono sufficienti per vedere tutto?",
+              "english": "I only have two hours. Are they sufficient to see everything?",
+              "isCorrect": true,
+              "feedback": "Good question."
+            },
+            {
+              "text": "Ho solo due ore. Posso visitare anche la mostra?",
+              "english": "I only have two hours. Can I also visit the exhibition?",
+              "isCorrect": false,
+              "feedback": "Too much for 2h."
+            },
+            {
+              "text": "Ho solo due ore. Devo comprare un altro biglietto?",
+              "english": "I only have two hours. Do I have to buy another ticket?",
+              "isCorrect": false,
+              "feedback": "Wait."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "In due ore può vedere le sale principali, ma il museo è molto grande.",
+          "english": "In two hours you can see the main rooms, but the museum is very large.",
+          "choices": [
+            {
+              "text": "Capito. E domani a che ora aprite?",
+              "english": "Understood. And what time do you open tomorrow?",
+              "isCorrect": true,
+              "feedback": "Planning ahead."
+            },
+            {
+              "text": "Capito. E domani ci sono riduzioni?",
+              "english": "Understood. And tomorrow are there reductions?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            },
+            {
+              "text": "Capito. E domani è aperto tutto il giorno?",
+              "english": "Understood. And tomorrow is it open all day?",
+              "isCorrect": false,
+              "feedback": "Ask about opening time."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Domani apriamo alle nove del mattino.",
+          "english": "Tomorrow we open at nine in the morning.",
+          "choices": [
+            {
+              "text": "Se compro il biglietto ora, vale anche per domani?",
+              "english": "If I buy the ticket now, is it also valid for tomorrow?",
+              "isCorrect": true,
+              "feedback": "Smart inquiry."
+            },
+            {
+              "text": "Se compro il biglietto ora, posso entrare subito?",
+              "english": "If I buy the ticket now, can I enter immediately?",
+              "isCorrect": false,
+              "feedback": "Yes, but ask about tomorrow."
+            },
+            {
+              "text": "Se compro il biglietto ora, ho diritto allo sconto?",
+              "english": "If I buy the ticket now, am I entitled to the discount?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, il biglietto ha una validità di ventiquattro ore.",
+          "english": "Yes, the ticket is valid for twenty-four hours.",
+          "choices": [
+            {
+              "text": "Questa è un'ottima notizia! Allora lo compro subito.",
+              "english": "This is great news! Then I'll buy it right away.",
+              "isCorrect": true,
+              "feedback": "Positive reaction."
+            },
+            {
+              "text": "Questa è un'ottima notizia! Allora torno domani mattina.",
+              "english": "This is great news! Then I'll come back tomorrow morning.",
+              "isCorrect": false,
+              "feedback": "Buy it now."
+            },
+            {
+              "text": "Questa è un'ottima notizia! Allora prendo due biglietti.",
+              "english": "This is great news! Then I'll take two tickets.",
+              "isCorrect": false,
+              "feedback": "Only one."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottimo. Vuole anche visitare la mostra temporanea?",
+          "english": "Great. Do you also want to visit the temporary exhibition?",
+          "choices": [
+            {
+              "text": "No, per oggi basta il museo principale.",
+              "english": "No, for today the main museum is enough.",
+              "isCorrect": true,
+              "feedback": "Decision made."
+            },
+            {
+              "text": "No, per oggi preferisco fare una passeggiata.",
+              "english": "No, for today I prefer to go for a walk.",
+              "isCorrect": false,
+              "feedback": "You are at the museum."
+            },
+            {
+              "text": "No, per oggi non ho abbastanza tempo, grazie.",
+              "english": "No, for today I don't have enough time, thank you.",
+              "isCorrect": false,
+              "feedback": "You just said 2h is enough."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Ecco il suo biglietto. Lo conservi per domani.",
+          "english": "All right. Here is your ticket. Keep it for tomorrow.",
+          "choices": [
+            {
+              "text": "Grazie mille. C'è molta gente adesso?",
+              "english": "Thank you very much. Are there many people now?",
+              "isCorrect": true,
+              "feedback": "Curious."
+            },
+            {
+              "text": "Grazie mille. Dove posso trovare un bar?",
+              "english": "Thank you very much. Where can I find a bar?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            },
+            {
+              "text": "Grazie mille. Posso portare la borsa?",
+              "english": "Thank you very much. Can I bring the bag?",
+              "isCorrect": false,
+              "feedback": "Off topic."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "No, adesso è un momento tranquillo. Può godersi la visita.",
+          "english": "No, right now it is a quiet moment. You can enjoy your visit.",
+          "choices": [
+            {
+              "text": "Molto bene, allora vado. Grazie ancora!",
+              "english": "Very well, then I'm going. thanks again!",
+              "isCorrect": true,
+              "feedback": "Ready."
+            },
+            {
+              "text": "Molto bene, allora entro. Buona giornata!",
+              "english": "Very well, then I enter. Have a good day!",
+              "isCorrect": false,
+              "feedback": "Wait."
+            },
+            {
+              "text": "Molto bene, allora inizio la mia visita.",
+              "english": "Very well, then I start my visit.",
+              "isCorrect": false,
+              "feedback": "Wait."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego! Arrivederci e buona visita!",
+          "english": "You're welcome! Goodbye and have a good visit!",
+          "choices": [
+            {
+              "text": "Arrivederci!",
+              "english": "Goodbye!",
+              "isCorrect": true,
+              "feedback": "Final bye."
+            },
+            {
+              "text": "A presto!",
+              "english": "See you soon!",
+              "isCorrect": false,
+              "feedback": "A bit informal."
+            },
+            {
+              "text": "A domani!",
+              "english": "See you tomorrow!",
+              "isCorrect": false,
+              "feedback": "Wrong time."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

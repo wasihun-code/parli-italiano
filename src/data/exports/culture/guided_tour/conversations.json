@@ -1,0 +1,1177 @@
+{
+  "scenarioId": 87,
+  "conversations": [
+    {
+      "id": "meet_the_guide",
+      "title": "Meet the Guide",
+      "description": "Find your guide at the meeting point and check your ticket.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Siete qui per il tour del centro storico delle dieci?",
+          "english": "Good morning! Are you here for the ten o'clock tour of the historic center?",
+          "choices": [
+            {
+              "text": "Sì, buongiorno! Siamo qui per il tour delle dieci.",
+              "english": "Yes, good morning! We are here for the ten o'clock tour.",
+              "isCorrect": true,
+              "feedback": "Ottimo! Confirming the time and greeting the guide is perfect."
+            },
+            {
+              "text": "A che ora chiude il museo archeologico stasera?",
+              "english": "What time does the archaeological museum close tonight?",
+              "isCorrect": false,
+              "feedback": "Focus on the current tour meeting first."
+            },
+            {
+              "text": "Il tour inizia tra dieci minuti esatti, credo.",
+              "english": "The tour starts in exactly ten minutes, I believe.",
+              "isCorrect": false,
+              "feedback": "You should answer the guide's question first."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Perfetto. Io sono Marco, la vostra guida. Avete il biglietto?",
+          "english": "Perfect. I am Marco, your guide. Do you have the ticket?",
+          "choices": [
+            {
+              "text": "Piacere Marco. Sì, ecco il mio biglietto sul telefono.",
+              "english": "Nice to meet you, Marco. Yes, here is my ticket on the phone.",
+              "isCorrect": true,
+              "feedback": "Excellent. Showing the ticket is the next logical step."
+            },
+            {
+              "text": "No, purtroppo ho dimenticato il biglietto in hotel.",
+              "english": "No, unfortunately I forgot the ticket in the hotel.",
+              "isCorrect": false,
+              "feedback": "That's a problem! You need your ticket for the tour."
+            },
+            {
+              "text": "Scusi, dove posso comprare il biglietto ora, per favore?",
+              "english": "Excuse me, where can I buy the ticket now, please?",
+              "isCorrect": false,
+              "feedback": "The guide is asking if you ALREADY have it."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Grazie. Il gruppo è quasi pronto. Avete scarpe comode per camminare?",
+          "english": "Thank you. The group is almost ready. Do you have comfortable shoes for walking?",
+          "choices": [
+            {
+              "text": "Sì, ho le scarpe da ginnastica. Sono molto comode.",
+              "english": "Yes, I have sneakers. They are very comfortable.",
+              "isCorrect": true,
+              "feedback": "Good! Comfort is important for a walking tour."
+            },
+            {
+              "text": "Quanto tempo cammineremo durante questo lungo tour?",
+              "english": "How long will we walk during this long tour?",
+              "isCorrect": false,
+              "feedback": "Answer the question about your shoes first."
+            },
+            {
+              "text": "Dove sono tutti gli altri turisti di questo gruppo?",
+              "english": "Where are all the other tourists in this group?",
+              "isCorrect": false,
+              "feedback": "They are arriving, but focus on your equipment."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Molto bene. Aspettiamo ancora due minuti e poi cominciamo la visita.",
+          "english": "Very well. We wait two more minutes and then we start the visit.",
+          "choices": [
+            {
+              "text": "Va bene, aspettiamo qui vicino alla fontana.",
+              "english": "Alright, we wait here near the fountain.",
+              "isCorrect": true,
+              "feedback": "Perfect. Staying near the meeting point is smart."
+            },
+            {
+              "text": "Vado a comprare una bottiglia d'acqua fresca ora.",
+              "english": "I'm going to buy a bottle of fresh water now.",
+              "isCorrect": false,
+              "feedback": "Don't leave now, you might miss the start!"
+            },
+            {
+              "text": "Il mio gruppo è già partito senza di me, purtroppo.",
+              "english": "My group has already left without me, unfortunately.",
+              "isCorrect": false,
+              "feedback": "No, the guide just said you are starting in two minutes."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ecco il resto del gruppo. Siete pronti per iniziare questa avventura?",
+          "english": "Here is the rest of the group. Are you ready to start this adventure?",
+          "choices": [
+            {
+              "text": "Sì, siamo prontissimi! Andiamo.",
+              "english": "Yes, we are very ready! Let's go.",
+              "isCorrect": true,
+              "feedback": "Great enthusiasm! Let's go."
+            },
+            {
+              "text": "No, preferisco aspettare qui fuori da solo.",
+              "english": "No, I prefer to wait here outside by myself.",
+              "isCorrect": false,
+              "feedback": "You'll miss the tour! It's starting now."
+            },
+            {
+              "text": "Quanto costa l'ingresso alla chiesa grande?",
+              "english": "How much is the entrance to the big church?",
+              "isCorrect": false,
+              "feedback": "The guide will tell you later, now just say if you're ready."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Siete un gruppo molto puntuale. Avete bisogno di una mappa?",
+          "english": "Great. You are a very punctual group. Do you need a map?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Una mappa è sempre utile.",
+              "english": "Yes, thanks. A map is always useful.",
+              "isCorrect": true,
+              "feedback": "Helpful to have a physical map sometimes."
+            },
+            {
+              "text": "No, preferisco usare il mio telefono nuovo.",
+              "english": "No, I prefer to use my new phone.",
+              "isCorrect": false,
+              "feedback": "Digital maps work too, but the guide is offering one."
+            },
+            {
+              "text": "Dove posso trovare un ufficio postale qui?",
+              "english": "Where can I find a post office here?",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the start of the tour."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente, ecco a voi. Prima di iniziare, avete altre domande?",
+          "english": "Certainly, here you go. Before we start, do you have other questions?",
+          "choices": [
+            {
+              "text": "Sì, quanto tempo dura l'intero tour oggi?",
+              "english": "Yes, how long does the whole tour last today?",
+              "isCorrect": true,
+              "feedback": "Good to know the schedule."
+            },
+            {
+              "text": "No, non ho assolutamente nessuna domanda ora.",
+              "english": "No, I have absolutely no questions now.",
+              "isCorrect": false,
+              "feedback": "Valid, but the correct answer is more engaging."
+            },
+            {
+              "text": "Il bagno è vicino a questa piazza antica?",
+              "english": "Is the bathroom near this ancient square?",
+              "isCorrect": false,
+              "feedback": "Maybe ask later or before the start."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Dura circa due ore. Faremo diverse soste interessanti. Va bene?",
+          "english": "It lasts about two hours. We will make several interesting stops. Is that okay?",
+          "choices": [
+            {
+              "text": "Sì, va bene. Due ore sono perfette.",
+              "english": "Yes, it's fine. Two hours are perfect.",
+              "isCorrect": true,
+              "feedback": "Confirming the schedule is good."
+            },
+            {
+              "text": "Due ore sono troppe per camminare così.",
+              "english": "Two hours are too many to walk like this.",
+              "isCorrect": false,
+              "feedback": "A bit negative! Walking tours require some stamina."
+            },
+            {
+              "text": "Vorrei un caffè prima di camminare tanto.",
+              "english": "I would like a coffee before walking so much.",
+              "isCorrect": false,
+              "feedback": "No time for coffee now!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Benissimo. Allora mettiamoci in cammino. Seguitemi, per favore.",
+          "english": "Very well. Then let's get moving. Follow me, please.",
+          "choices": [
+            {
+              "text": "D'accordo, la seguiamo con molta attenzione.",
+              "english": "Agreed, we follow you very carefully.",
+              "isCorrect": true,
+              "feedback": "Showing readiness to follow instructions."
+            },
+            {
+              "text": "Aspetti, devo allacciare bene le scarpe.",
+              "english": "Wait, I have to tie my shoes well.",
+              "isCorrect": false,
+              "feedback": "Be quick! The group is moving."
+            },
+            {
+              "text": "Posso correre davanti a tutto il gruppo?",
+              "english": "Can I run in front of the whole group?",
+              "isCorrect": false,
+              "feedback": "No, stay with the guide."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Spero che questa passeggiata vi piaccia. Cominciamo dal duomo!",
+          "english": "I hope you enjoy this walk. Let's start with the cathedral!",
+          "choices": [
+            {
+              "text": "Sì, sono curioso di vedere il duomo.",
+              "english": "Yes, I am curious to see the cathedral.",
+              "isCorrect": true,
+              "feedback": "Great start to the tour."
+            },
+            {
+              "text": "Il duomo è troppo lontano da qui ora.",
+              "english": "The cathedral is too far from here now.",
+              "isCorrect": false,
+              "feedback": "The guide knows the way!"
+            },
+            {
+              "text": "Preferisco vedere il mercato della frutta.",
+              "english": "I prefer to see the fruit market.",
+              "isCorrect": false,
+              "feedback": "The tour has a set itinerary."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walking_instructions",
+      "title": "Walking Instructions",
+      "description": "Follow the guide's instructions and stay with the group.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Attenzione, per favore! Camminiamo insieme e restiamo vicini.",
+          "english": "Attention, please! Let's walk together and stay close.",
+          "choices": [
+            {
+              "text": "D'accordo. Dobbiamo seguire la sua bandierina?",
+              "english": "Agreed. Do we have to follow your flag?",
+              "isCorrect": true,
+              "feedback": "Good question. Guides often use flags to stay visible."
+            },
+            {
+              "text": "Dobbiamo camminare molto velocemente ora?",
+              "english": "Do we have to walk very fast now?",
+              "isCorrect": false,
+              "feedback": "The guide didn't say that, just to stay close."
+            },
+            {
+              "text": "Dov'è la nostra prossima tappa del tour?",
+              "english": "Where is our next stop of the tour?",
+              "isCorrect": false,
+              "feedback": "Wait for the guide to lead you there."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, seguite sempre la mia bandierina blu. Ora giriamo a destra in questo vicolo.",
+          "english": "Yes, always follow my blue flag. Now we turn right into this alley.",
+          "choices": [
+            {
+              "text": "Ho capito, giriamo a destra. Questo vicolo è molto stretto!",
+              "english": "I understand, we turn right. This alley is very narrow!",
+              "isCorrect": true,
+              "feedback": "Good observation. Italian alleys can be very narrow."
+            },
+            {
+              "text": "Scusi, possiamo fermarci un momento qui, per favore?",
+              "english": "Excuse me, can we stop for a moment here, please?",
+              "isCorrect": false,
+              "feedback": "Better to keep moving with the group for now."
+            },
+            {
+              "text": "Mi serve una mappa della città subito, Marco.",
+              "english": "I need a map of the city right now, Marco.",
+              "isCorrect": false,
+              "feedback": "You have a guide! You don't need a map right now."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Fate attenzione ai gradini, sono antichi e un po' scivolosi.",
+          "english": "Pay attention to the steps, they are ancient and a bit slippery.",
+          "choices": [
+            {
+              "text": "Grazie dell'avviso. Camminerò con molta attenzione.",
+              "english": "Thanks for the warning. I will walk very carefully.",
+              "isCorrect": true,
+              "feedback": "Safety first! Good response."
+            },
+            {
+              "text": "C'è un ascensore per salire in alto qui vicino?",
+              "english": "Is there an elevator to go up high near here?",
+              "isCorrect": false,
+              "feedback": "Unlikely in this ancient alley!"
+            },
+            {
+              "text": "Chi ha costruito questo palazzo antico così grande?",
+              "english": "Who built this ancient palace so large?",
+              "isCorrect": false,
+              "feedback": "The guide is warning you about the steps right now."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Adesso ci fermiamo in questa piazza. Ascoltate bene la spiegazione.",
+          "english": "Now we stop in this square. Listen carefully to the explanation.",
+          "choices": [
+            {
+              "text": "Va bene, mi fermo qui. Sono pronto ad ascoltare.",
+              "english": "Alright, I stop here. I am ready to listen.",
+              "isCorrect": true,
+              "feedback": "Perfect. Listening is the main part of the tour."
+            },
+            {
+              "text": "Posso scattare delle foto ora in questa piazza?",
+              "english": "Can I take some photos now in this square?",
+              "isCorrect": false,
+              "feedback": "Wait a moment and listen to the explanation first."
+            },
+            {
+              "text": "La guida parla troppo velocemente per me oggi.",
+              "english": "The guide speaks too fast for me today.",
+              "isCorrect": false,
+              "feedback": "Try to focus, or ask politely later."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Se qualcuno si perde, ci incontriamo davanti alla chiesa grande. Chiaro?",
+          "english": "If someone gets lost, we meet in front of the big church. Clear?",
+          "choices": [
+            {
+              "text": "Sì, tutto chiaro. Ci vediamo davanti alla chiesa.",
+              "english": "Yes, all clear. See you in front of the church.",
+              "isCorrect": true,
+              "feedback": "Good. Confirming the emergency meeting point."
+            },
+            {
+              "text": "Dov'è il punto di incontro finale del tour oggi?",
+              "english": "Where is the final meeting point of the tour today?",
+              "isCorrect": false,
+              "feedback": "The guide is talking about the emergency meeting point now."
+            },
+            {
+              "text": "C'è un bagno pubblico qui vicino alla chiesa?",
+              "english": "Is there a public bathroom near the church here?",
+              "isCorrect": false,
+              "feedback": "Not the time to ask about bathrooms."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Perfetto. Ora dobbiamo attraversare la strada. Fate attenzione!",
+          "english": "Perfect. Now we have to cross the street. Be careful!",
+          "choices": [
+            {
+              "text": "Va bene. Dobbiamo usare le strisce pedonali?",
+              "english": "Alright. Do we have to use the crosswalk?",
+              "isCorrect": true,
+              "feedback": "Safety first!"
+            },
+            {
+              "text": "Posso correre velocemente dall'altra parte ora?",
+              "english": "Can I run quickly to the other side now?",
+              "isCorrect": false,
+              "feedback": "No, wait for the guide and the group."
+            },
+            {
+              "text": "Quanto traffico c'è in questa città moderna!",
+              "english": "How much traffic there is in this modern city!",
+              "isCorrect": false,
+              "feedback": "True, but focus on crossing safely."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, restate sulle strisce e seguite il mio segnale.",
+          "english": "Yes, stay on the crosswalk and follow my signal.",
+          "choices": [
+            {
+              "text": "Ho capito. Siamo tutti pronti ad attraversare.",
+              "english": "I understand. We are all ready to cross.",
+              "isCorrect": true,
+              "feedback": "Good to confirm for the group."
+            },
+            {
+              "text": "Il semaforo è ancora rosso per i pedoni.",
+              "english": "The traffic light is still red for pedestrians.",
+              "isCorrect": false,
+              "feedback": "Wait for it to turn green!"
+            },
+            {
+              "text": "Mi piacciono molto queste macchine italiane.",
+              "english": "I like these Italian cars very much.",
+              "isCorrect": false,
+              "feedback": "Stay focused on crossing."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Molto bene. Ora entriamo in questa zona pedonale più tranquilla.",
+          "english": "Very well. Now we enter this quieter pedestrian area.",
+          "choices": [
+            {
+              "text": "Meno male! Qui si cammina molto meglio.",
+              "english": "Thank goodness! It's much better to walk here.",
+              "isCorrect": true,
+              "feedback": "Pedestrian areas are much nicer for tours."
+            },
+            {
+              "text": "Ci sono molti negozi interessanti in questa via.",
+              "english": "There are many interesting shops in this street.",
+              "isCorrect": false,
+              "feedback": "Don't get distracted by shopping yet!"
+            },
+            {
+              "text": "A che ora finisce questa parte del tour?",
+              "english": "What time does this part of the tour end?",
+              "isCorrect": false,
+              "feedback": "Just enjoy the walk."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Infatti. Guardate queste finestre fiorite, sono tipiche.",
+          "english": "Indeed. Look at these flowered windows, they are typical.",
+          "choices": [
+            {
+              "text": "Sono bellissime! Posso scattare una foto veloce?",
+              "english": "They are beautiful! Can I take a quick photo?",
+              "isCorrect": true,
+              "feedback": "Perfectly fine in a pedestrian area."
+            },
+            {
+              "text": "Che tipo di fiori sono quelli nelle finestre?",
+              "english": "What kind of flowers are those in the windows?",
+              "isCorrect": false,
+              "feedback": "A bit too specific for the guide, maybe."
+            },
+            {
+              "text": "Le finestre di casa mia sono molto diverse.",
+              "english": "The windows of my house are very different.",
+              "isCorrect": false,
+              "feedback": "Not very relevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certo, ma fate presto. Dobbiamo raggiungere la prossima piazza.",
+          "english": "Sure, but be quick. We need to reach the next square.",
+          "choices": [
+            {
+              "text": "Sì, ho fatto. Sono pronto a continuare.",
+              "english": "Yes, I'm done. I'm ready to continue.",
+              "isCorrect": true,
+              "feedback": "Good, keeping up with the group is important."
+            },
+            {
+              "text": "Voglio fare altre dieci foto a quel balcone.",
+              "english": "I want to take ten more photos of that balcony.",
+              "isCorrect": false,
+              "feedback": "Too many! The group is leaving."
+            },
+            {
+              "text": "Mi sono perso, non vedo più la bandierina.",
+              "english": "I'm lost, I don't see the flag anymore.",
+              "isCorrect": false,
+              "feedback": "The guide is right in front of you!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "historical_facts",
+      "title": "Historical Facts",
+      "description": "Ask the guide about a monument and learn some history.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Questo palazzo è del quindicesimo secolo. Era la casa di una famiglia famosa.",
+          "english": "This palace is from the fifteenth century. It was the home of a famous family.",
+          "choices": [
+            {
+              "text": "Che bello! Come si chiamava questa famiglia?",
+              "english": "How nice! What was the name of this family?",
+              "isCorrect": true,
+              "feedback": "Good question! Showing interest in the history."
+            },
+            {
+              "text": "Questo palazzo è molto moderno, credo.",
+              "english": "This palace is very modern, I believe.",
+              "isCorrect": false,
+              "feedback": "No, the guide said it's from the 15th century!"
+            },
+            {
+              "text": "Vorrei comprare un souvenir tipico qui.",
+              "english": "I would like to buy a typical souvenir here.",
+              "isCorrect": false,
+              "feedback": "This is a historical palace, not a shop."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Si chiamava la famiglia Medici. Erano molto potenti a quel tempo.",
+          "english": "It was called the Medici family. They were very powerful at that time.",
+          "choices": [
+            {
+              "text": "Interessante. Perché erano così famosi?",
+              "english": "Interesting. Why were they so famous?",
+              "isCorrect": true,
+              "feedback": "Following up with a 'why' question is great for learning."
+            },
+            {
+              "text": "Non conosco affatto questa famiglia famosa.",
+              "english": "I don't know this famous family at all.",
+              "isCorrect": false,
+              "feedback": "That's why the guide is telling you about them!"
+            },
+            {
+              "text": "Il tempo oggi è molto bello per camminare.",
+              "english": "The weather today is very nice for walking.",
+              "isCorrect": false,
+              "feedback": "Stay on topic: the Medici family."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Erano banchieri e amavano molto l'arte. Hanno aiutato molti artisti.",
+          "english": "They were bankers and loved art very much. They helped many artists.",
+          "choices": [
+            {
+              "text": "Ah, ecco perché ci sono così tante sculture qui!",
+              "english": "Ah, that's why there are so many sculptures here!",
+              "isCorrect": true,
+              "feedback": "Making the connection between the facts and what you see."
+            },
+            {
+              "text": "Dove posso cambiare i miei soldi stasera?",
+              "english": "Where can I change my money tonight?",
+              "isCorrect": false,
+              "feedback": "The guide mentioned bankers, but in a historical context."
+            },
+            {
+              "text": "Mi piace molto dipingere quadri nel tempo libero.",
+              "english": "I like painting pictures very much in my free time.",
+              "isCorrect": false,
+              "feedback": "A bit off-topic. Focus on the Medici."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto. Guardate questa scultura sopra l'ingresso. È un capolavoro.",
+          "english": "Exactly. Look at this sculpture above the entrance. It's a masterpiece.",
+          "choices": [
+            {
+              "text": "È veramente bellissima. Di quale artista è?",
+              "english": "It is truly beautiful. Which artist is it by?",
+              "isCorrect": true,
+              "feedback": "Asking for the artist is a perfect follow-up."
+            },
+            {
+              "text": "Quanto costa questa scultura antica di marmo?",
+              "english": "How much does this ancient marble sculpture cost?",
+              "isCorrect": false,
+              "feedback": "It's part of the building, it's not for sale."
+            },
+            {
+              "text": "Non mi piacciono le statue di marmo bianco.",
+              "english": "I don't like white marble statues.",
+              "isCorrect": false,
+              "feedback": "Try to appreciate the art during the tour."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "È di un giovane artista dell'epoca. Avete altre domande sulla storia?",
+          "english": "It is by a young artist of the time. Do you have other questions about history?",
+          "choices": [
+            {
+              "text": "Sì, vorrei sapere di più sulla chiesa che vediamo.",
+              "english": "Yes, I would like to know more about the church we see.",
+              "isCorrect": true,
+              "feedback": "Great! Moving the conversation to the next visible landmark."
+            },
+            {
+              "text": "No, preferisco andare a mangiare qualcosa ora.",
+              "english": "No, I prefer to go eat something now.",
+              "isCorrect": false,
+              "feedback": "The tour isn't finished yet!"
+            },
+            {
+              "text": "Qual è la capitale della Francia, Marco?",
+              "english": "What is the capital of France, Marco?",
+              "isCorrect": false,
+              "feedback": "Out of domain! Stay in Italy and on the tour."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Quella è la Cattedrale di Santa Maria. È stata costruita su un tempio romano.",
+          "english": "That is the Cathedral of Santa Maria. It was built on a Roman temple.",
+          "choices": [
+            {
+              "text": "Davvero? Quindi ci sono rovine romane sotto?",
+              "english": "Really? So there are Roman ruins underneath?",
+              "isCorrect": true,
+              "feedback": "Excellent deduction. You are engaging with the history."
+            },
+            {
+              "text": "Mi serve un nuovo caricabatterie per il telefono.",
+              "english": "I need a new charger for the phone.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the cathedral's history."
+            },
+            {
+              "text": "Il gatto è sul tavolo della cucina bianca.",
+              "english": "The cat is on the white kitchen table.",
+              "isCorrect": false,
+              "feedback": "Completely off-topic!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, esattamente. È possibile visitare i sotterranei con un biglietto speciale.",
+          "english": "Yes, exactly. It is possible to visit the underground with a special ticket.",
+          "choices": [
+            {
+              "text": "Che bella idea! Dove posso comprare i biglietti?",
+              "english": "What a nice idea! Where can I buy tickets?",
+              "isCorrect": true,
+              "feedback": "Practical and relevant question."
+            },
+            {
+              "text": "Mi piace molto il gelato alla fragola fresca.",
+              "english": "I like fresh strawberry gelato very much.",
+              "isCorrect": false,
+              "feedback": "Wait until after the tour for gelato!"
+            },
+            {
+              "text": "Quanto costa spedire questo pacco postale ora?",
+              "english": "How much does it cost to send this postal package now?",
+              "isCorrect": false,
+              "feedback": "The guide is talking about tickets for the ruins."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Potete trovarli all'ufficio turistico o direttamente all'ingresso della cattedrale.",
+          "english": "You can find them at the tourist office or directly at the entrance of the cathedral.",
+          "choices": [
+            {
+              "text": "Grazie. La cattedrale è aperta tutto il giorno?",
+              "english": "Thank you. Is the cathedral open all day?",
+              "isCorrect": true,
+              "feedback": "Good question about opening hours."
+            },
+            {
+              "text": "La mia macchina è parcheggiata male fuori.",
+              "english": "My car is parked badly outside.",
+              "isCorrect": false,
+              "feedback": "Don't worry about that now, follow the tour."
+            },
+            {
+              "text": "Cerco un paio di scarpe eleganti e nere.",
+              "english": "I am looking for a pair of elegant black shoes.",
+              "isCorrect": false,
+              "feedback": "You should have worn comfortable shoes for the tour!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, ma durante la messa non è possibile fare visite turistiche.",
+          "english": "Yes, but during mass it is not possible to take tourist visits.",
+          "choices": [
+            {
+              "text": "Capisco. A che ora c'è la prossima messa?",
+              "english": "I understand. What time is the next mass?",
+              "isCorrect": true,
+              "feedback": "Polite and shows consideration for local customs."
+            },
+            {
+              "text": "Voglio vedere un film al cinema stasera.",
+              "english": "I want to see a movie at the cinema tonight.",
+              "isCorrect": false,
+              "feedback": "Not related to the cathedral's schedule."
+            },
+            {
+              "text": "Il caffè è troppo amaro per i miei gusti.",
+              "english": "The coffee is too bitter for my taste.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "C'è una messa alle diciotto. Volete continuare il nostro giro verso il fiume?",
+          "english": "There is a mass at six PM. Do you want to continue our tour towards the river?",
+          "choices": [
+            {
+              "text": "Sì, andiamo volentieri. La vista sarà bellissima!",
+              "english": "Yes, we gladly go. The view will be beautiful!",
+              "isCorrect": true,
+              "feedback": "Perfect response to continue the tour."
+            },
+            {
+              "text": "Prendo un cornetto e un cappuccino caldo.",
+              "english": "I'll have a croissant and a hot cappuccino.",
+              "isCorrect": false,
+              "feedback": "It's not breakfast time!"
+            },
+            {
+              "text": "Il treno per Milano parte dal binario sei.",
+              "english": "The train for Milan leaves from platform six.",
+              "isCorrect": false,
+              "feedback": "You are not at the station."
+            }
+          ]
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Ottimo. Il fiume Arno è molto vicino. Vedremo anche il ponte vecchio.",
+          "english": "Great. The Arno river is very close. We will also see the old bridge.",
+          "choices": [
+            {
+              "text": "Il ponte vecchio è famoso per i gioielli?",
+              "english": "Is the old bridge famous for jewelry?",
+              "isCorrect": true,
+              "feedback": "Excellent question about a famous landmark."
+            },
+            {
+              "text": "Quanto costa un anello d'oro oggi in città?",
+              "english": "How much does a gold ring cost today in the city?",
+              "isCorrect": false,
+              "feedback": "Wait until you get to the shops!"
+            },
+            {
+              "text": "Mi piace molto nuotare nei fiumi freddi.",
+              "english": "I like swimming in cold rivers very much.",
+              "isCorrect": false,
+              "feedback": "Don't swim in the Arno!"
+            }
+          ]
+        },
+        {
+          "id": "m12",
+          "role": "host",
+          "text": "Sì, esattamente. Ci sono molte botteghe di orafi sopra il ponte.",
+          "english": "Yes, exactly. There are many goldsmith shops on the bridge.",
+          "choices": [
+            {
+              "text": "Incredibile! Non vedo l'ora di vederle.",
+              "english": "Incredible! I can't wait to see them.",
+              "isCorrect": true,
+              "feedback": "Enthusiasm is always good on a tour."
+            },
+            {
+              "text": "Preferisco comprare un libro di storia ora.",
+              "english": "I prefer to buy a history book now.",
+              "isCorrect": false,
+              "feedback": "You can do that after the tour."
+            },
+            {
+              "text": "Il mio orologio si è fermato stamattina.",
+              "english": "My watch stopped this morning.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taking_photos",
+      "title": "Taking Photos",
+      "description": "Take a photo of the group and ask for a photo yourself.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Siamo arrivati davanti alla fontana più bella. Volete fare delle foto?",
+          "english": "We have arrived in front of the most beautiful fountain. Do you want to take some photos?",
+          "choices": [
+            {
+              "text": "Sì, assolutamente! Posso scattare una foto?",
+              "english": "Yes, absolutely! Can I take a photo?",
+              "isCorrect": true,
+              "feedback": "Perfect. Asking permission or expressing intent is good."
+            },
+            {
+              "text": "No, le foto sono del tutto inutili per me.",
+              "english": "No, photos are completely useless for me.",
+              "isCorrect": false,
+              "feedback": "Most tourists like photos! Try to be more positive."
+            },
+            {
+              "text": "Posso nuotare nell'acqua della fontana ora?",
+              "english": "Can I swim in the water of the fountain now?",
+              "isCorrect": false,
+              "feedback": "No! It's illegal and disrespectful."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo! È il posto perfetto per un ricordo. Volete una foto di gruppo?",
+          "english": "Of course! It's the perfect place for a memory. Do you want a group photo?",
+          "choices": [
+            {
+              "text": "Sì, sarebbe fantastico. Possiamo farla insieme?",
+              "english": "Yes, it would be fantastic. Can we take it together?",
+              "isCorrect": true,
+              "feedback": "Great idea. Group photos are common on tours."
+            },
+            {
+              "text": "No, non mi piacciono gli altri turisti qui.",
+              "english": "No, I don't like the other tourists here.",
+              "isCorrect": false,
+              "feedback": "A bit rude! You are part of the group."
+            },
+            {
+              "text": "Dov'è la farmacia più vicina a questa piazza?",
+              "english": "Where is the nearest pharmacy to this square?",
+              "isCorrect": false,
+              "feedback": "Not the time for that, focus on the photo."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Venite tutti qui davanti all'acqua. Sorridete! Uno, due, tre...",
+          "english": "Everyone come here in front of the water. Smile! One, two, three...",
+          "choices": [
+            {
+              "text": "Che bella foto! Può fare una foto solo a me?",
+              "english": "What a beautiful photo! Can you take a photo of just me?",
+              "isCorrect": true,
+              "feedback": "Good. Asking the guide for a personal photo is very common."
+            },
+            {
+              "text": "La luce è pessima per scattare foto oggi.",
+              "english": "The light is terrible for taking photos today.",
+              "isCorrect": false,
+              "feedback": "Don't be a critic, just enjoy the moment."
+            },
+            {
+              "text": "Ho perso il mio ombrello nel vicolo stretto.",
+              "english": "I lost my umbrella in the narrow alley.",
+              "isCorrect": false,
+              "feedback": "The guide is taking a photo right now."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certamente. Mi dia il suo telefono. Ecco fatto, è venuta benissimo!",
+          "english": "Certainly. Give me your phone. There we go, it came out great!",
+          "choices": [
+            {
+              "text": "Grazie mille, Marco! È un ricordo bellissimo.",
+              "english": "Thank you very much, Marco! It is a beautiful memory.",
+              "isCorrect": true,
+              "feedback": "Expressing gratitude is always good."
+            },
+            {
+              "text": "La foto è mossa, la cancelli subito, Marco.",
+              "english": "The photo is blurry, delete it immediately, Marco.",
+              "isCorrect": false,
+              "feedback": "Very rude! The guide is trying to help."
+            },
+            {
+              "text": "Il biglietto per il bus, per favore, ora.",
+              "english": "The ticket for the bus, please, now.",
+              "isCorrect": false,
+              "feedback": "Wrong situation!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Volete fare una foto anche all'interno del cortile del palazzo?",
+          "english": "Do you want to take a photo also inside the palace courtyard?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Possiamo entrare nel cortile ora?",
+              "english": "Yes, thank you. Can we enter the courtyard now?",
+              "isCorrect": true,
+              "feedback": "Good follow-up. Entering the courtyard is a logical next step."
+            },
+            {
+              "text": "No, il cortile è troppo buio per me oggi.",
+              "english": "No, the courtyard is too dark for me today.",
+              "isCorrect": false,
+              "feedback": "Give it a try! It might be very beautiful."
+            },
+            {
+              "text": "Quanto costa un chilo di pane fresco qui?",
+              "english": "How much does a kilo of fresh bread cost here?",
+              "isCorrect": false,
+              "feedback": "You are not at the bakery."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, entriamo. Guardate che bella questa colonna antica!",
+          "english": "Yes, let's go in. Look how beautiful this ancient column is!",
+          "choices": [
+            {
+              "text": "È incredibile. Di che materiale è fatta?",
+              "english": "It's incredible. What material is it made of?",
+              "isCorrect": true,
+              "feedback": "Asking about materials shows interest in the architecture."
+            },
+            {
+              "text": "Voglio comprare una maglietta nuova ora.",
+              "english": "I want to buy a new t-shirt now.",
+              "isCorrect": false,
+              "feedback": "Not the time for shopping."
+            },
+            {
+              "text": "Il mio cane è a casa da solo stasera.",
+              "english": "My dog is at home alone tonight.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the tour."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È marmo bianco di Carrara. Veniva trasportato via fiume.",
+          "english": "It is white Carrara marble. It was transported by river.",
+          "choices": [
+            {
+              "text": "Molto interessante. Era un lavoro difficile?",
+              "english": "Very interesting. Was it a difficult job?",
+              "isCorrect": true,
+              "feedback": "Thinking about the historical process is great."
+            },
+            {
+              "text": "Il marmo è troppo freddo al tatto ora.",
+              "english": "Marble is too cold to the touch now.",
+              "isCorrect": false,
+              "feedback": "Not a very helpful comment."
+            },
+            {
+              "text": "Cerco la stazione dei treni più vicina.",
+              "english": "I am looking for the nearest train station.",
+              "isCorrect": false,
+              "feedback": "Stay with the tour group."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Moltissimo! Ora usciamo e torniamo verso la piazza.",
+          "english": "Very much! Now we go out and return towards the square.",
+          "choices": [
+            {
+              "text": "Va bene. Il tour sta per finire ora?",
+              "english": "Alright. Is the tour about to end now?",
+              "isCorrect": true,
+              "feedback": "Asking about the tour's progress is natural."
+            },
+            {
+              "text": "No, voglio restare qui nel cortile antico.",
+              "english": "No, I want to stay here in the ancient courtyard.",
+              "isCorrect": false,
+              "feedback": "You must follow the guide and the group."
+            },
+            {
+              "text": "Dov'è il mio passaporto? L'ho perso!",
+              "english": "Where is my passport? I lost it!",
+              "isCorrect": false,
+              "feedback": "Hopefully in your pocket, but focus on the walk."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, mancano solo cinque minuti. Avete domande?",
+          "english": "Yes, only five minutes left. Do you have questions?",
+          "choices": [
+            {
+              "text": "C'è un buon posto qui per un caffè?",
+              "english": "Is there a good place here for a coffee?",
+              "isCorrect": true,
+              "feedback": "Asking for local recommendations is a great way to end."
+            },
+            {
+              "text": "Perché il cielo è così blu oggi, Marco?",
+              "english": "Why is the sky so blue today, Marco?",
+              "isCorrect": false,
+              "feedback": "Not a historical question!"
+            },
+            {
+              "text": "Il mio letto in hotel è molto scomodo.",
+              "english": "My hotel bed is very uncomfortable.",
+              "isCorrect": false,
+              "feedback": "Wrong scenario!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "C'è un bar storico qui vicino. Spero vi sia piaciuto!",
+          "english": "There is a historical bar near here. I hope you liked it!",
+          "choices": [
+            {
+              "text": "Sì, moltissimo. Grazie di tutto e arrivederci!",
+              "english": "Yes, very much. Thanks for everything and goodbye!",
+              "isCorrect": true,
+              "feedback": "A perfect, polite way to end the tour and the conversation."
+            },
+            {
+              "text": "Voglio un rimborso completo del mio biglietto.",
+              "english": "I want a full refund of my ticket.",
+              "isCorrect": false,
+              "feedback": "Unless something went terribly wrong, this is inappropriate."
+            },
+            {
+              "text": "Dov'è la mia camera numero dieci stasera?",
+              "english": "Where is my room number ten tonight?",
+              "isCorrect": false,
+              "feedback": "Wrong scenario!"
+            }
+          ]
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Mi fa piacere! Se volete, potete lasciare una recensione online.",
+          "english": "I'm glad! If you want, you can leave a review online.",
+          "choices": [
+            {
+              "text": "Certamente, scriverò una recensione ottima.",
+              "english": "Certainly, I will write an excellent review.",
+              "isCorrect": true,
+              "feedback": "Guides appreciate good reviews."
+            },
+            {
+              "text": "Non so come usare internet sul telefono.",
+              "english": "I don't know how to use the internet on the phone.",
+              "isCorrect": false,
+              "feedback": "No problem, but it's a bit of a weird response."
+            },
+            {
+              "text": "Qual è la password del wifi del bar?",
+              "english": "What is the wifi password of the bar?",
+              "isCorrect": false,
+              "feedback": "Wait until you get to the bar!"
+            }
+          ]
+        },
+        {
+          "id": "m12",
+          "role": "host",
+          "text": "Grazie mille! Vi auguro una buona serata in città. Ciao!",
+          "english": "Thank you very much! I wish you a good evening in the city. Bye!",
+          "choices": [
+            {
+              "text": "Buona serata anche a lei, Marco. Ciao!",
+              "english": "Good evening to you too, Marco. Bye!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "A che ora parte l'ultimo bus per Roma?",
+              "english": "What time does the last bus for Rome leave?",
+              "isCorrect": false,
+              "feedback": "Wrong place to ask."
+            },
+            {
+              "text": "Ho fame, dove sono i ristoranti buoni?",
+              "english": "I'm hungry, where are the good restaurants?",
+              "isCorrect": false,
+              "feedback": "Ask before the guide leaves!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,953 @@
+{
+  "scenarioId": 39,
+  "conversations": [
+    {
+      "id": "starting_the_class",
+      "title": "Starting the Class",
+      "description": "Begin the cooking class and learn the basic ingredients.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Benvenuti al corso di cucina italiana.",
+          "english": "Good morning! Welcome to the Italian cooking class.",
+          "choices": [
+            {
+              "text": "Buongiorno! Sono molto felice di essere qui oggi.",
+              "english": "Good morning! I am very happy to be here today.",
+              "isCorrect": true
+            },
+            {
+              "text": "Buongiorno! Devo andare al supermercato adesso.",
+              "english": "Good morning! I have to go to the supermarket now.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buongiorno! Ho mangiato una pizza molto grande.",
+              "english": "Good morning! I ate a very large pizza.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Oggi impariamo a fare la pasta fresca. Siete pronti?",
+          "english": "Today we learn to make fresh pasta. Are you ready?",
+          "choices": [
+            {
+              "text": "Sì, siamo pronti. Cosa dobbiamo fare prima?",
+              "english": "Yes, we are ready. What do we have to do first?",
+              "isCorrect": true
+            },
+            {
+              "text": "No, non vogliamo fare la pasta in casa.",
+              "english": "No, we don't want to make pasta at home.",
+              "isCorrect": false
+            },
+            {
+              "text": "Forse, ma preferisco guardare un film.",
+              "english": "Maybe, but I prefer to watch a movie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Prima di tutto, dobbiamo lavare bene le mani.",
+          "english": "First of all, we have to wash our hands well.",
+          "choices": [
+            {
+              "text": "Certo, vado subito a lavarmi le mani.",
+              "english": "Sure, I'll go wash my hands right away.",
+              "isCorrect": true
+            },
+            {
+              "text": "Certo, voglio comprare una bottiglia d'acqua.",
+              "english": "Sure, I want to buy a bottle of water.",
+              "isCorrect": false
+            },
+            {
+              "text": "Certo, preferisco mangiare al ristorante stasera.",
+              "english": "Sure, I prefer to eat at the restaurant tonight.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Ora mettete il grembiule da cucina.",
+          "english": "Perfect. Now put on your kitchen apron.",
+          "choices": [
+            {
+              "text": "Va bene. Il mio grembiule è qui sul tavolo.",
+              "english": "Alright. My apron is here on the table.",
+              "isCorrect": true
+            },
+            {
+              "text": "Va bene. La mia giacca è nella mia camera.",
+              "english": "Alright. My jacket is in my room.",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene. Le mie scarpe sono molto comode.",
+              "english": "Alright. My shoes are very comfortable.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Molto bene. Conoscete già gli ingredienti per la pasta?",
+          "english": "Very good. Do you already know the ingredients for pasta?",
+          "choices": [
+            {
+              "text": "Penso di sì. Farina, uova e un po' di sale.",
+              "english": "I think so. Flour, eggs, and a little salt.",
+              "isCorrect": true
+            },
+            {
+              "text": "Penso di sì. Pomodori, carne e un po' di pepe.",
+              "english": "I think so. Tomatoes, meat, and a little pepper.",
+              "isCorrect": false
+            },
+            {
+              "text": "Penso di sì. Patate, cipolle e un po' di zucchero.",
+              "english": "I think so. Potatoes, onions, and a little sugar.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Esatto! Siete già dei bravi cuochi. Iniziamo?",
+          "english": "Exactly! You are already good cooks. Shall we begin?",
+          "choices": [
+            {
+              "text": "Sì, iniziamo. Prendo la farina dal sacchetto.",
+              "english": "Yes, let's start. I'll get the flour from the bag.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, iniziamo. Bevo un bicchiere di latte freddo.",
+              "english": "Yes, let's start. I'll drink a glass of cold milk.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, iniziamo. Mangio un panino con il formaggio.",
+              "english": "Yes, let's start. I'll eat a sandwich with cheese.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Mettete la farina sul tavolo, come una fontana.",
+          "english": "Put the flour on the table, like a fountain.",
+          "choices": [
+            {
+              "text": "Così va bene? Ho fatto un buco al centro.",
+              "english": "Is this okay? I made a hole in the center.",
+              "isCorrect": true
+            },
+            {
+              "text": "Così va bene? Ho bevuto molta acqua oggi.",
+              "english": "Is this okay? I drank a lot of water today.",
+              "isCorrect": false
+            },
+            {
+              "text": "Così va bene? Ho lavato tutti i piatti sporchi.",
+              "english": "Is this okay? I washed all the dirty dishes.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Bravissimi. Ora rompete le uova dentro la farina.",
+          "english": "Great job. Now break the eggs into the flour.",
+          "choices": [
+            {
+              "text": "D'accordo. Quante uova dobbiamo usare per questa ricetta?",
+              "english": "Alright. How many eggs should we use for this recipe?",
+              "isCorrect": true
+            },
+            {
+              "text": "D'accordo. Quanti biglietti dobbiamo comprare per il treno?",
+              "english": "Alright. How many tickets should we buy for the train?",
+              "isCorrect": false
+            },
+            {
+              "text": "D'accordo. Quante persone arrivano domani mattina presto?",
+              "english": "Alright. How many people are arriving early tomorrow morning?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Usiamo tre uova per questa quantità di farina.",
+          "english": "We use three eggs for this amount of flour.",
+          "choices": [
+            {
+              "text": "Capito. Rompo le uova una alla volta qui dentro.",
+              "english": "Understood. I break the eggs one by one in here.",
+              "isCorrect": true
+            },
+            {
+              "text": "Capito. Mangio le uova con un po' di pane.",
+              "english": "Understood. I eat the eggs with some bread.",
+              "isCorrect": false
+            },
+            {
+              "text": "Capito. Compro le uova al supermercato domani mattina.",
+              "english": "Understood. I buy the eggs at the supermarket tomorrow morning.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Adesso siete pronti per la prossima parte.",
+          "english": "Perfect. Now you are ready for the next part.",
+          "choices": [
+            {
+              "text": "Fantastico! Non vedo l'ora di imparare il resto.",
+              "english": "Fantastic! I can't wait to learn the rest.",
+              "isCorrect": true
+            },
+            {
+              "text": "Fantastico! Non voglio pulire la cucina dopo questo.",
+              "english": "Fantastic! I don't want to clean the kitchen after this.",
+              "isCorrect": false
+            },
+            {
+              "text": "Fantastico! Non mi piace per niente la pasta fresca.",
+              "english": "Fantastic! I don't like fresh pasta at all.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "making_pasta_dough",
+      "title": "Making Pasta Dough",
+      "description": "Learn how to mix eggs and flour and knead the dough.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ora dobbiamo mescolare le uova con la farina.",
+          "english": "Now we have to mix the eggs with the flour.",
+          "choices": [
+            {
+              "text": "Uso una forchetta o uso le mani per mescolare?",
+              "english": "Do I use a fork or do I use my hands to mix?",
+              "isCorrect": true
+            },
+            {
+              "text": "Uso un cucchiaio o uso un coltello per tagliare?",
+              "english": "Do I use a spoon or do I use a knife to cut?",
+              "isCorrect": false
+            },
+            {
+              "text": "Uso una pentola o uso una padella per cuocere?",
+              "english": "Do I use a pot or do I use a pan to cook?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Iniziate con la forchetta, poi usate le mani.",
+          "english": "Start with the fork, then use your hands.",
+          "choices": [
+            {
+              "text": "Va bene, mescolo le uova e aggiungo la farina piano piano.",
+              "english": "Okay, I mix the eggs and add the flour slowly.",
+              "isCorrect": true
+            },
+            {
+              "text": "Va bene, mangio le uova e lascio la farina qui.",
+              "english": "Okay, I eat the eggs and leave the flour here.",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene, cucino le uova e preparo un dolce oggi.",
+              "english": "Okay, I cook the eggs and prepare a dessert today.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Esatto. Bisogna impastare per almeno dieci minuti.",
+          "english": "Exactly. You need to knead for at least ten minutes.",
+          "choices": [
+            {
+              "text": "È un po' faticoso, ma l'impasto prende forma.",
+              "english": "It's a bit tiring, but the dough is taking shape.",
+              "isCorrect": true
+            },
+            {
+              "text": "È un po' noioso, ma il libro è molto interessante.",
+              "english": "It's a bit boring, but the book is very interesting.",
+              "isCorrect": false
+            },
+            {
+              "text": "È un po' freddo, ma il sole splende nel cielo.",
+              "english": "It's a bit cold, but the sun is shining in the sky.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, ci vuole forza! L'impasto deve essere liscio.",
+          "english": "Yes, it takes strength! The dough must be smooth.",
+          "choices": [
+            {
+              "text": "Il mio impasto è ancora un po' duro. Cosa faccio?",
+              "english": "My dough is still a bit hard. What do I do?",
+              "isCorrect": true
+            },
+            {
+              "text": "Il mio telefono è ancora spento. Dove lo metto?",
+              "english": "My phone is still off. Where do I put it?",
+              "isCorrect": false
+            },
+            {
+              "text": "Il mio viaggio è ancora lungo. Quando arriviamo lì?",
+              "english": "My trip is still long. When do we get there?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Aggiungi un cucchiaio di acqua e continua a impastare.",
+          "english": "Add a tablespoon of water and continue kneading.",
+          "choices": [
+            {
+              "text": "Grazie per l'aiuto. Ora è molto più morbido.",
+              "english": "Thanks for the help. Now it's much softer.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie per l'acqua. Ora ho molta meno sete.",
+              "english": "Thanks for the water. Now I'm much less thirsty.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie per il libro. Ora posso leggere di più.",
+              "english": "Thanks for the book. Now I can read more.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Perfetto. Ora facciamo una palla con l'impasto.",
+          "english": "Perfect. Now let's make a ball with the dough.",
+          "choices": [
+            {
+              "text": "Fatto. Devo coprire l'impasto con un panno pulito?",
+              "english": "Done. Do I have to cover the dough with a clean cloth?",
+              "isCorrect": true
+            },
+            {
+              "text": "Fatto. Devo tagliare l'impasto con un coltello sporco?",
+              "english": "Done. Do I have to cut the dough with a dirty knife?",
+              "isCorrect": false
+            },
+            {
+              "text": "Fatto. Devo mettere l'impasto nel frigorifero adesso?",
+              "english": "Done. Do I have to put the dough in the fridge now?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, esatto. Deve riposare per circa mezz'ora.",
+          "english": "Yes, exactly. It must rest for about half an hour.",
+          "choices": [
+            {
+              "text": "Mentre riposa, cosa prepariamo? Il sugo al pomodoro?",
+              "english": "While it rests, what do we prepare? The tomato sauce?",
+              "isCorrect": true
+            },
+            {
+              "text": "Mentre riposa, andiamo a dormire in camera da letto?",
+              "english": "While it rests, do we go to sleep in the bedroom?",
+              "isCorrect": false
+            },
+            {
+              "text": "Mentre riposa, ascoltiamo la radio in salotto insieme?",
+              "english": "While it rests, do we listen to the radio in the living room together?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Proprio così. Puliamo il tavolo prima di iniziare.",
+          "english": "That's right. Let's clean the table before starting.",
+          "choices": [
+            {
+              "text": "Prendo io una spugna per pulire tutto il tavolo.",
+              "english": "I'll take a sponge to clean the whole table.",
+              "isCorrect": true
+            },
+            {
+              "text": "Prendo io una sedia per sedermi a leggere un libro.",
+              "english": "I'll take a chair to sit and read a book.",
+              "isCorrect": false
+            },
+            {
+              "text": "Prendo io una borsa per mettere la mia spesa dentro.",
+              "english": "I'll take a bag to put my groceries in.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo lavoro di squadra. Il tavolo è di nuovo pulito.",
+          "english": "Great teamwork. The table is clean again.",
+          "choices": [
+            {
+              "text": "Siamo pronti per preparare un sugo delizioso e saporito.",
+              "english": "We are ready to prepare a delicious and flavorful sauce.",
+              "isCorrect": true
+            },
+            {
+              "text": "Siamo pronti per andare al cinema a guardare un film.",
+              "english": "We are ready to go to the cinema to watch a movie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Siamo pronti per fare una passeggiata nel parco vicino.",
+              "english": "We are ready to take a walk in the nearby park.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Andiamo ai fornelli. Ognuno prenda una piccola padella.",
+          "english": "Let's go to the stove. Everyone take a small pan.",
+          "choices": [
+            {
+              "text": "Ho preso la mia padella. Sono pronto a cucinare.",
+              "english": "I got my pan. I am ready to cook.",
+              "isCorrect": true
+            },
+            {
+              "text": "Ho preso il mio ombrello. Sono pronto a uscire fuori.",
+              "english": "I got my umbrella. I am ready to go outside.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ho preso il mio zaino. Sono pronto a studiare adesso.",
+              "english": "I got my backpack. I am ready to study now.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "preparing_the_sauce",
+      "title": "Preparing the Sauce",
+      "description": "Chop ingredients and cook a fresh tomato sauce.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Per il sugo ci servono pomodori freschi, aglio e basilico.",
+          "english": "For the sauce we need fresh tomatoes, garlic and basil.",
+          "choices": [
+            {
+              "text": "Devo tagliare i pomodori a piccoli pezzi?",
+              "english": "Should I cut the tomatoes into small pieces?",
+              "isCorrect": true
+            },
+            {
+              "text": "Devo comprare le mele al supermercato oggi?",
+              "english": "Should I buy apples at the supermarket today?",
+              "isCorrect": false
+            },
+            {
+              "text": "Devo mettere i vestiti nella lavatrice ora?",
+              "english": "Should I put the clothes in the washing machine now?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, piccoli pezzi. Prima mettiamo l'olio nella padella.",
+          "english": "Yes, small pieces. First we put oil in the pan.",
+          "choices": [
+            {
+              "text": "Quanto olio devo usare per il nostro sugo?",
+              "english": "How much oil should I use for our sauce?",
+              "isCorrect": true
+            },
+            {
+              "text": "Quanta acqua devo bere durante la giornata?",
+              "english": "How much water should I drink during the day?",
+              "isCorrect": false
+            },
+            {
+              "text": "Quanti soldi devo portare in banca domani?",
+              "english": "How much money should I bring to the bank tomorrow?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Due cucchiai vanno bene. Poi aggiungi uno spicchio d'aglio.",
+          "english": "Two tablespoons are fine. Then add a clove of garlic.",
+          "choices": [
+            {
+              "text": "Ho messo l'aglio. Accendo il fuoco sotto la padella?",
+              "english": "I put the garlic. Do I turn on the heat under the pan?",
+              "isCorrect": true
+            },
+            {
+              "text": "Ho messo la giacca. Apro la porta per uscire?",
+              "english": "I put the jacket on. Do I open the door to go out?",
+              "isCorrect": false
+            },
+            {
+              "text": "Ho messo la musica. Accendo la televisione adesso?",
+              "english": "I put the music on. Do I turn on the television now?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, fuoco basso. Attenzione a non bruciare l'aglio!",
+          "english": "Yes, low heat. Careful not to burn the garlic!",
+          "choices": [
+            {
+              "text": "L'aglio è dorato. Posso aggiungere i pomodori tagliati?",
+              "english": "The garlic is golden. Can I add the chopped tomatoes?",
+              "isCorrect": true
+            },
+            {
+              "text": "Il pane è pronto. Posso preparare un bel panino?",
+              "english": "The bread is ready. Can I prepare a nice sandwich?",
+              "isCorrect": false
+            },
+            {
+              "text": "Il caffè è caldo. Posso bere una tazza subito?",
+              "english": "The coffee is hot. Can I drink a cup right away?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Certamente, mettili in padella. E aggiungi un po' di sale.",
+          "english": "Certainly, put them in the pan. And add a little salt.",
+          "choices": [
+            {
+              "text": "Sugo quasi pronto. Aggiungo anche un po' di pepe nero?",
+              "english": "Sauce almost ready. Should I also add a little black pepper?",
+              "isCorrect": true
+            },
+            {
+              "text": "Zuppa quasi fredda. Aggiungo anche un po' di ghiaccio freddo?",
+              "english": "Soup almost cold. Should I also add a little cold ice?",
+              "isCorrect": false
+            },
+            {
+              "text": "Latte quasi finito. Aggiungo anche un po' di zucchero bianco?",
+              "english": "Milk almost finished. Should I also add a little white sugar?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Se ti piace il pepe, certo! Ora copri la padella.",
+          "english": "If you like pepper, sure! Now cover the pan.",
+          "choices": [
+            {
+              "text": "Va bene. Quanto tempo deve cuocere il sugo?",
+              "english": "Alright. How long does the sauce need to cook?",
+              "isCorrect": true
+            },
+            {
+              "text": "Va bene. Quanto tempo devo studiare la lezione?",
+              "english": "Alright. How long do I have to study the lesson?",
+              "isCorrect": false
+            },
+            {
+              "text": "Va bene. Quanto tempo dobbiamo aspettare il treno?",
+              "english": "Alright. How long do we have to wait for the train?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Circa quindici minuti. Non dimenticare di mescolare ogni tanto.",
+          "english": "About fifteen minutes. Don't forget to stir occasionally.",
+          "choices": [
+            {
+              "text": "Mescolo subito. Il profumo del pomodoro è buonissimo!",
+              "english": "I'll stir right away. The smell of the tomato is very good!",
+              "isCorrect": true
+            },
+            {
+              "text": "Mangio subito. Il sapore della pizza è fantastico!",
+              "english": "I eat right away. The taste of the pizza is fantastic!",
+              "isCorrect": false
+            },
+            {
+              "text": "Dormo subito. Il letto della camera è comodissimo!",
+              "english": "I sleep right away. The bed in the room is very comfortable!",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Alla fine aggiungiamo il basilico fresco spezzato con le mani.",
+          "english": "At the end we add fresh basil torn with our hands.",
+          "choices": [
+            {
+              "text": "Ho capito. Il basilico dà molto sapore al sugo.",
+              "english": "I understand. Basil gives a lot of flavor to the sauce.",
+              "isCorrect": true
+            },
+            {
+              "text": "Ho capito. La pioggia fa crescere i fiori belli.",
+              "english": "I understand. The rain makes beautiful flowers grow.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ho capito. Il vento porta via tutte le nuvole.",
+              "english": "I understand. The wind blows away all the clouds.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Esattamente. Ora spegni il fuoco. Il sugo è pronto.",
+          "english": "Exactly. Now turn off the heat. The sauce is ready.",
+          "choices": [
+            {
+              "text": "Fatto. Adesso dobbiamo stendere l'impasto e tagliare la pasta?",
+              "english": "Done. Now do we have to roll out the dough and cut the pasta?",
+              "isCorrect": true
+            },
+            {
+              "text": "Fatto. Adesso dobbiamo pulire la casa e lavare tutto?",
+              "english": "Done. Now do we have to clean the house and wash everything?",
+              "isCorrect": false
+            },
+            {
+              "text": "Fatto. Adesso dobbiamo chiamare il medico e andare lì?",
+              "english": "Done. Now do we have to call the doctor and go there?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Esatto! Siete veloci. Andiamo a riprendere il nostro impasto.",
+          "english": "Exactly! You are fast. Let's go get our dough back.",
+          "choices": [
+            {
+              "text": "Sì, l'impasto ha riposato abbastanza. Possiamo iniziare a lavorarlo.",
+              "english": "Yes, the dough has rested enough. We can start working it.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sì, il gatto ha mangiato abbastanza. Possiamo giocare con lui.",
+              "english": "Yes, the cat has eaten enough. We can play with him.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, il bambino ha dormito abbastanza. Possiamo andare al parco.",
+              "english": "Yes, the child has slept enough. We can go to the park.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tasting_the_food",
+      "title": "Tasting the Food",
+      "description": "Cook the fresh pasta, mix it with the sauce, and eat.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "La pasta è pronta. Adesso la cuociamo in acqua bollente.",
+          "english": "The pasta is ready. Now we cook it in boiling water.",
+          "choices": [
+            {
+              "text": "L'acqua nella pentola bolle. Metto il sale grosso?",
+              "english": "The water in the pot is boiling. Do I put coarse salt?",
+              "isCorrect": true
+            },
+            {
+              "text": "Il latte nella tazza scotta. Metto lo zucchero bianco?",
+              "english": "The milk in the cup is burning. Do I put white sugar?",
+              "isCorrect": false
+            },
+            {
+              "text": "Il caffè nel bicchiere è freddo. Metto il ghiaccio?",
+              "english": "The coffee in the glass is cold. Do I put ice?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, una manciata di sale grosso. Poi cala la pasta.",
+          "english": "Yes, a handful of coarse salt. Then drop the pasta.",
+          "choices": [
+            {
+              "text": "Quanti minuti serve per cuocere la pasta fresca?",
+              "english": "How many minutes are needed to cook fresh pasta?",
+              "isCorrect": true
+            },
+            {
+              "text": "Quanti giorni serve per arrivare a Roma in macchina?",
+              "english": "How many days are needed to arrive in Rome by car?",
+              "isCorrect": false
+            },
+            {
+              "text": "Quanti anni serve per imparare a suonare il pianoforte?",
+              "english": "How many years are needed to learn to play the piano?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Pochissimi minuti. Quando sale a galla è pronta.",
+          "english": "Very few minutes. When it rises to the surface it is ready.",
+          "choices": [
+            {
+              "text": "La vedo, sta salendo. La scolo e la metto in padella?",
+              "english": "I see it, it's rising. Do I drain it and put it in the pan?",
+              "isCorrect": true
+            },
+            {
+              "text": "Lo sento, sta cantando. Lo chiamo e lo invito qui?",
+              "english": "I hear him, he's singing. Do I call him and invite him here?",
+              "isCorrect": false
+            },
+            {
+              "text": "La guardo, sta ballando. La saluto e le parlo dopo?",
+              "english": "I watch her, she's dancing. Do I greet her and talk to her later?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, e accendi di nuovo il fuoco per saltarla nel sugo.",
+          "english": "Yes, and turn the heat back on to toss it in the sauce.",
+          "choices": [
+            {
+              "text": "Che buon profumo! Sembra davvero squisita. Posso assaggiare?",
+              "english": "What a good smell! It looks really delicious. Can I taste?",
+              "isCorrect": true
+            },
+            {
+              "text": "Che bel colore! Sembra davvero nuova. Posso provarla oggi?",
+              "english": "What a beautiful color! It looks really new. Can I try it today?",
+              "isCorrect": false
+            },
+            {
+              "text": "Che brutto tempo! Sembra davvero freddo. Posso chiudere tutto?",
+              "english": "What bad weather! It seems really cold. Can I close everything?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Un attimo di pazienza. Aggiungi prima un po' di formaggio.",
+          "english": "A moment of patience. Add a little cheese first.",
+          "choices": [
+            {
+              "text": "Mettiamo il parmigiano grattugiato sopra la pasta calda?",
+              "english": "Do we put grated parmesan on top of the hot pasta?",
+              "isCorrect": true
+            },
+            {
+              "text": "Mettiamo le scarpe nuove dentro la scatola vuota?",
+              "english": "Do we put the new shoes inside the empty box?",
+              "isCorrect": false
+            },
+            {
+              "text": "Mettiamo il libro vecchio sopra la mensola alta?",
+              "english": "Do we put the old book on top of the high shelf?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Perfetto, abbondante! Ora possiamo impiattare e sederci a tavola.",
+          "english": "Perfect, abundant! Now we can plate and sit at the table.",
+          "choices": [
+            {
+              "text": "Prendo i piatti e porto tutto al tavolo per mangiare.",
+              "english": "I'll take the plates and bring everything to the table to eat.",
+              "isCorrect": true
+            },
+            {
+              "text": "Prendo le chiavi e porto la macchina al parcheggio adesso.",
+              "english": "I'll take the keys and bring the car to the parking lot now.",
+              "isCorrect": false
+            },
+            {
+              "text": "Prendo i libri e porto tutto in biblioteca per studiare.",
+              "english": "I'll take the books and bring everything to the library to study.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Buon appetito a tutti! Siete stati degli allievi bravissimi.",
+          "english": "Enjoy your meal everyone! You have been great students.",
+          "choices": [
+            {
+              "text": "Grazie! Anche tu sei un cuoco eccezionale e molto paziente.",
+              "english": "Thank you! You are also an exceptional and very patient cook.",
+              "isCorrect": true
+            },
+            {
+              "text": "Grazie! Anche tu sei un medico bravo e molto attento.",
+              "english": "Thank you! You are also a good and very careful doctor.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie! Anche tu sei un cantante famoso e molto ricco.",
+              "english": "Thank you! You are also a famous and very rich singer.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Grazie! Allora, com'è la vostra prima vera pasta italiana?",
+          "english": "Thank you! So, how is your first real Italian pasta?",
+          "choices": [
+            {
+              "text": "È deliziosa! Molto meglio di quella che compro di solito.",
+              "english": "It is delicious! Much better than the one I usually buy.",
+              "isCorrect": true
+            },
+            {
+              "text": "È costosa! Molto peggio di quello che pensavo ieri.",
+              "english": "It is expensive! Much worse than what I thought yesterday.",
+              "isCorrect": false
+            },
+            {
+              "text": "È pesante! Molto difficile da portare per strada da solo.",
+              "english": "It is heavy! Very difficult to carry on the street alone.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sono felice che vi piaccia. Avete imparato tutti i segreti.",
+          "english": "I'm glad you like it. You learned all the secrets.",
+          "choices": [
+            {
+              "text": "Voglio preparare questa ricetta a casa per i miei amici.",
+              "english": "I want to prepare this recipe at home for my friends.",
+              "isCorrect": true
+            },
+            {
+              "text": "Voglio leggere questo libro a casa per i miei genitori.",
+              "english": "I want to read this book at home for my parents.",
+              "isCorrect": false
+            },
+            {
+              "text": "Voglio comprare questa macchina a Roma per mio fratello.",
+              "english": "I want to buy this car in Rome for my brother.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Saranno sicuramente molto felici. È stato un piacere conoscervi.",
+          "english": "They will surely be very happy. It was a pleasure meeting you.",
+          "choices": [
+            {
+              "text": "Piacere mio. Grazie mille per questa bellissima esperienza in cucina!",
+              "english": "My pleasure. Thank you so much for this beautiful experience in the kitchen!",
+              "isCorrect": true
+            },
+            {
+              "text": "Piacere mio. Grazie mille per questa noiosa lezione di storia!",
+              "english": "My pleasure. Thank you so much for this boring history lesson!",
+              "isCorrect": false
+            },
+            {
+              "text": "Piacere mio. Grazie mille per questa lunga attesa in fila!",
+              "english": "My pleasure. Thank you so much for this long wait in line!",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

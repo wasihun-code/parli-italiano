@@ -1,0 +1,973 @@
+{
+  "scenarioId": 85,
+  "conversations": [
+    {
+      "id": "finding_the_venue",
+      "title": "Finding the Venue",
+      "description": "Locate the entrance and show your ticket.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera! Hai il biglietto per il concerto?",
+          "english": "Good evening! Do you have the ticket for the concert?",
+          "choices": [
+            {
+              "text": "Sì, ho il biglietto qui sul cellulare. È valido?",
+              "isCorrect": true,
+              "feedback": "Perfect! Confirming you have the digital ticket."
+            },
+            {
+              "text": "No, cerco un ristorante famoso vicino a qui.",
+              "isCorrect": false,
+              "feedback": "Wrong topic! You are here for the music."
+            },
+            {
+              "text": "Il treno parte dal binario cinque stasera.",
+              "isCorrect": false,
+              "feedback": "This is a concert, not a train station!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, è perfetto. Devo controllare il tuo zaino ora.",
+          "english": "Yes, it is perfect. I need to check your backpack now.",
+          "choices": [
+            {
+              "text": "Certo, ecco lo zaino. Posso entrare dopo?",
+              "isCorrect": true,
+              "feedback": "Cooperation is key for security checks."
+            },
+            {
+              "text": "Mi fa male la testa, dove è il medico?",
+              "isCorrect": false,
+              "feedback": "Domain contamination! Stay focused on the concert entry."
+            },
+            {
+              "text": "Ho fame, vorrei ordinare una pizza margherita.",
+              "isCorrect": false,
+              "feedback": "You're at the entrance, not a restaurant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Tutto bene, puoi entrare. Il palco è in fondo.",
+          "english": "All good, you can enter. The stage is at the back.",
+          "choices": [
+            {
+              "text": "Grazie mille! Dove posso comprare l'acqua?",
+              "isCorrect": true,
+              "feedback": "Good transition to finding amenities inside."
+            },
+            {
+              "text": "Voglio dormire in una camera singola, grazie.",
+              "isCorrect": false,
+              "feedback": "You are at a music venue, not a hotel."
+            },
+            {
+              "text": "Il mio volo è in ritardo di tre ore.",
+              "isCorrect": false,
+              "feedback": "Airport vocabulary is forbidden here."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "C'è un bar a destra del palco. Buon divertimento!",
+          "english": "There is a bar to the right of the stage. Have fun!",
+          "choices": [
+            {
+              "text": "Ottimo, vado a destra allora. Buona serata!",
+              "isCorrect": true,
+              "feedback": "Polite exit and following directions."
+            },
+            {
+              "text": "Il biglietto non è nel mio zaino, scusa.",
+              "isCorrect": false,
+              "feedback": "Focus on the direction, not a missing ticket now."
+            },
+            {
+              "text": "Prendo il menù del giorno e un caffè.",
+              "isCorrect": false,
+              "feedback": "This is a bar at a concert, not a bistro."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Grazie! Ricorda di non fare video lunghi stasera.",
+          "english": "Thanks! Remember not to make long videos tonight.",
+          "choices": [
+            {
+              "text": "Va bene, farò solo qualche foto veloce.",
+              "isCorrect": true,
+              "feedback": "Agreeing to the venue rules."
+            },
+            {
+              "text": "Ho dimenticato la maglietta della band a casa.",
+              "isCorrect": false,
+              "feedback": "Irrelevant personal problem."
+            },
+            {
+              "text": "Il bagno è rotto, chiamo un idraulico ora.",
+              "isCorrect": false,
+              "feedback": "Not your responsibility!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Hai altro nelle tasche? Per favore, svuota tutto.",
+          "english": "Do you have anything else in your pockets? Please, empty everything.",
+          "choices": [
+            {
+              "text": "Ho solo il cellulare e il portafoglio qui.",
+              "isCorrect": true,
+              "feedback": "Cooperating with security check.",
+              "english": "I only have my phone and wallet here."
+            },
+            {
+              "text": "Il mio gatto mangia solo croccantini piccoli.",
+              "isCorrect": false,
+              "feedback": "Pets are not allowed and irrelevant."
+            },
+            {
+              "text": "Cerco un ombrello per la pioggia di domani.",
+              "isCorrect": false,
+              "feedback": "Stay in the security context."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Va bene. Vuoi una mappa del locale?",
+          "english": "Alright. Do you want a map of the venue?",
+          "choices": [
+            {
+              "text": "Sì, grazie! È molto utile per orientarsi.",
+              "isCorrect": true,
+              "feedback": "Accepting the map.",
+              "english": "Yes, thanks! It's very useful for orienting oneself."
+            },
+            {
+              "text": "No, preferisco comprare un giornale sportivo.",
+              "isCorrect": false,
+              "feedback": "Focus on the venue map."
+            },
+            {
+              "text": "Il treno per Napoli è già partito?",
+              "isCorrect": false,
+              "feedback": "Forbidden transportation talk."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Prego. Ricorda che è vietato fumare all'interno.",
+          "english": "You're welcome. Remember that smoking is forbidden inside.",
+          "choices": [
+            {
+              "text": "Capito, grazie per l'informazione.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the rules.",
+              "english": "Understood, thanks for the information."
+            },
+            {
+              "text": "Vorrei ordinare una camera con balcone.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden."
+            },
+            {
+              "text": "Il mio computer non si accende più oggi.",
+              "isCorrect": false,
+              "feedback": "Tech problems are irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Hai bisogno di sapere dove sono i bagni?",
+          "english": "Do you need to know where the bathrooms are?",
+          "choices": [
+            {
+              "text": "Sì, dove si trovano esattamente?",
+              "isCorrect": true,
+              "feedback": "Asking for directions to bathrooms.",
+              "english": "Yes, where are they located exactly?"
+            },
+            {
+              "text": "No, cerco una farmacia per lo sciroppo.",
+              "isCorrect": false,
+              "feedback": "Medical talk is forbidden."
+            },
+            {
+              "text": "Il palco è troppo lontano da qui, credo.",
+              "isCorrect": false,
+              "feedback": "Focus on the bathrooms, not the stage distance."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sono in fondo a sinistra, vicino all'uscita.",
+          "english": "They are at the back on the left, near the exit.",
+          "choices": [
+            {
+              "text": "Grazie, vado subito a controllare. Buon concerto!",
+              "isCorrect": true,
+              "feedback": "Polite conclusion.",
+              "english": "Thanks, I'm going to check right away. Have a good concert!"
+            },
+            {
+              "text": "Voglio prenotare un volo per la Sicilia.",
+              "isCorrect": false,
+              "feedback": "Travel talk is forbidden."
+            },
+            {
+              "text": "Il frigo in cucina è completamente vuoto.",
+              "isCorrect": false,
+              "feedback": "Domestic talk is forbidden."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ordering_drinks",
+      "title": "Ordering Drinks",
+      "description": "Get a drink at the bar during the show.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Cosa vuoi bere stasera? Abbiamo birra e acqua.",
+          "english": "Hi! What do you want to drink tonight? We have beer and water.",
+          "choices": [
+            {
+              "text": "Vorrei una birra grande, per favore. Quanto costa?",
+              "isCorrect": true,
+              "feedback": "Clear order and price inquiry."
+            },
+            {
+              "text": "Vorrei un letto matrimoniale con colazione.",
+              "isCorrect": false,
+              "feedback": "This is a concert bar, not a hotel check-in."
+            },
+            {
+              "text": "C'è una farmacia aperta qui vicino ora?",
+              "isCorrect": false,
+              "feedback": "Stay in the bar context."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "La birra costa sei euro. Vuoi anche un bicchiere?",
+          "english": "The beer costs six euros. Do you also want a glass?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Posso pagare con la carta?",
+              "isCorrect": true,
+              "feedback": "Asking about payment method is very practical."
+            },
+            {
+              "text": "No, cerco la fermata dell'autobus numero dieci.",
+              "isCorrect": false,
+              "feedback": "Transportation vocabulary is forbidden."
+            },
+            {
+              "text": "Il medico dice che devo prendere la medicina.",
+              "isCorrect": false,
+              "feedback": "Medical talk is out of place."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, certo. Appoggia la carta qui sul lettore.",
+          "english": "Yes, of course. Place the card here on the reader.",
+          "choices": [
+            {
+              "text": "Ecco fatto. Grazie mille per il bicchiere!",
+              "isCorrect": true,
+              "feedback": "Confirming the action and being polite."
+            },
+            {
+              "text": "Ho bisogno di un asciugamano pulito, grazie.",
+              "isCorrect": false,
+              "feedback": "You're at a bar, not in a hotel bathroom."
+            },
+            {
+              "text": "La bibita è troppo calda stasera, peccato.",
+              "isCorrect": false,
+              "feedback": "Focus on the payment, not the drink temperature yet."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Prego! Il volume della musica è troppo forte?",
+          "english": "You're welcome! Is the music volume too loud?",
+          "choices": [
+            {
+              "text": "No, è perfetto! Mi piace molto questo gruppo.",
+              "isCorrect": true,
+              "feedback": "Sharing enthusiasm for the band."
+            },
+            {
+              "text": "Sì, cerco un posto per dormire stasera.",
+              "isCorrect": false,
+              "feedback": "Focus on the music, not lodging."
+            },
+            {
+              "text": "Il mio passaporto è nella borsa piccola.",
+              "isCorrect": false,
+              "feedback": "Irrelevant travel information."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Fantastico! Divertiti con la tua birra.",
+          "english": "Fantastic! Enjoy your beer.",
+          "choices": [
+            {
+              "text": "Grazie ancora, vado vicino al palco ora.",
+              "isCorrect": true,
+              "feedback": "Ending the interaction naturally."
+            },
+            {
+              "text": "Chiamo un taxi per andare in aeroporto.",
+              "isCorrect": false,
+              "feedback": "Forbidden travel domain terms."
+            },
+            {
+              "text": "Dove sono i biglietti per il concerto di domani?",
+              "isCorrect": false,
+              "feedback": "Focus on the current beer, not tomorrow's plans."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Vuoi anche qualcosa da mangiare? Abbiamo delle patatine.",
+          "english": "Do you also want something to eat? We have some chips.",
+          "choices": [
+            {
+              "text": "Sì, prendo un pacchetto di patatine, grazie.",
+              "isCorrect": true,
+              "feedback": "Ordering a snack.",
+              "english": "Yes, I'll take a pack of chips, thanks."
+            },
+            {
+              "text": "No, cerco un cuscino morbido per dormire.",
+              "isCorrect": false,
+              "feedback": "Lodging talk is forbidden."
+            },
+            {
+              "text": "Il mio passaporto scade tra due mesi.",
+              "isCorrect": false,
+              "feedback": "Travel talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco a te. Sono altri due euro per le patatine.",
+          "english": "Here you go. It's two more euros for the chips.",
+          "choices": [
+            {
+              "text": "Va bene, ecco i due euro. Grazie!",
+              "isCorrect": true,
+              "feedback": "Paying for snacks.",
+              "english": "Alright, here are the two euros. Thanks!"
+            },
+            {
+              "text": "Il concerto è già finito purtroppo, vado via.",
+              "isCorrect": false,
+              "feedback": "The concert is still going on!"
+            },
+            {
+              "text": "Prendo un taxi per andare in centro città.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Perfetto. Hai bisogno di un tovagliolo?",
+          "english": "Perfect. Do you need a napkin?",
+          "choices": [
+            {
+              "text": "Sì, per favore. Uno è sufficiente.",
+              "isCorrect": true,
+              "feedback": "Requesting a napkin.",
+              "english": "Yes, please. One is enough."
+            },
+            {
+              "text": "No, cerco la ricetta per la torta.",
+              "isCorrect": false,
+              "feedback": "Cooking talk is irrelevant."
+            },
+            {
+              "text": "Il medico mi ha dato una medicina amara.",
+              "isCorrect": false,
+              "feedback": "Medical talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco il tovagliolo. Attento, c'è molta gente al bar.",
+          "english": "Here is the napkin. Careful, there are many people at the bar.",
+          "choices": [
+            {
+              "text": "Sì, vedo. Mi sposto subito verso il palco.",
+              "isCorrect": true,
+              "feedback": "Moving to a less crowded area.",
+              "english": "Yes, I see. I'm moving toward the stage right away."
+            },
+            {
+              "text": "Voglio prenotare una camera doppia, grazie.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden."
+            },
+            {
+              "text": "Il mio volo per Parigi è al gate quattro.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottima idea. Goditi la musica e la birra!",
+          "english": "Great idea. Enjoy the music and the beer!",
+          "choices": [
+            {
+              "text": "Grazie mille, buona serata anche a te!",
+              "isCorrect": true,
+              "feedback": "Friendly closing.",
+              "english": "Thank you very much, have a good evening too!"
+            },
+            {
+              "text": "La band non suona più oggi, che peccato.",
+              "isCorrect": false,
+              "feedback": "The band is actually playing!"
+            },
+            {
+              "text": "Cerco un idraulico per il lavandino rotto.",
+              "isCorrect": false,
+              "feedback": "Domestic talk is forbidden."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "concert_details",
+      "title": "Concert Details",
+      "description": "Ask staff about the schedule and set list.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Hai bisogno di aiuto per trovare il tuo posto?",
+          "english": "Hi! Do you need help finding your seat?",
+          "choices": [
+            {
+              "text": "Sì, grazie. A che ora inizia il concerto stasera?",
+              "isCorrect": true,
+              "feedback": "Perfect question about the schedule."
+            },
+            {
+              "text": "Sì, il bagno della mia camera è rotto.",
+              "isCorrect": false,
+              "feedback": "Accommodation talk is forbidden."
+            },
+            {
+              "text": "No, cerco un volo per Roma domani mattina.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Inizia tra dieci minuti. Sei un fan del gruppo?",
+          "english": "It starts in ten minutes. Are you a fan of the band?",
+          "choices": [
+            {
+              "text": "Sì, molto! Sai se cantano la nuova canzone?",
+              "isCorrect": true,
+              "feedback": "Engaging with the content of the concert."
+            },
+            {
+              "text": "Sì, dove posso fare il check-in per l'hotel?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! Stay at the concert."
+            },
+            {
+              "text": "No, preferisco ordinare un cappuccino caldo.",
+              "isCorrect": false,
+              "feedback": "This is a concert, not a café."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, è nella scaletta. Sarà una serata incredibile!",
+          "english": "Yes, it's on the set list. It will be an incredible evening!",
+          "choices": [
+            {
+              "text": "Che bello! Quante canzoni cantano in totale?",
+              "isCorrect": true,
+              "feedback": "Inquiring about the set list length."
+            },
+            {
+              "text": "Ho perso il mio bagaglio all'aeroporto.",
+              "isCorrect": false,
+              "feedback": "Travel domain contamination."
+            },
+            {
+              "text": "La bibita è finita nel mio bicchiere.",
+              "isCorrect": false,
+              "feedback": "Irrelevant at this moment."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Cantano quindici canzoni, poi c'è il bis.",
+          "english": "They sing fifteen songs, then there's the encore.",
+          "choices": [
+            {
+              "text": "Ottimo, non vedo l'ora di ascoltare il bis!",
+              "isCorrect": true,
+              "feedback": "Expressing excitement for the finale."
+            },
+            {
+              "text": "Vorrei prenotare un tavolo per quattro persone.",
+              "isCorrect": false,
+              "feedback": "Dining domain contamination."
+            },
+            {
+              "text": "Il medico mi ha dato una ricetta bianca.",
+              "isCorrect": false,
+              "feedback": "Medical domain contamination."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Buon ascolto allora! Le luci si spengono ora.",
+          "english": "Happy listening then! The lights are going down now.",
+          "choices": [
+            {
+              "text": "Grazie mille! Inizia lo spettacolo finalmente!",
+              "isCorrect": true,
+              "feedback": "Closing the conversation as the show starts."
+            },
+            {
+              "text": "Il binario del treno è cambiato di nuovo.",
+              "isCorrect": false,
+              "feedback": "Forbidden transportation terms."
+            },
+            {
+              "text": "Il palco è pieno di luci colorate stasera.",
+              "isCorrect": false,
+              "feedback": "True, but not a good closing response here."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sai che c'è un gruppo di apertura prima del cantante?",
+          "english": "Do you know there's an opening act before the singer?",
+          "choices": [
+            {
+              "text": "No, non lo sapevo. Come si chiama il gruppo?",
+              "isCorrect": true,
+              "feedback": "Asking for more info about the opening act.",
+              "english": "No, I didn't know. What is the group called?"
+            },
+            {
+              "text": "Il mio letto è molto scomodo stasera.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden."
+            },
+            {
+              "text": "Prendo un autobus per andare al museo.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Si chiamano 'I Giovani'. Suonano per trenta minuti.",
+          "english": "They are called 'I Giovani'. They play for thirty minutes.",
+          "choices": [
+            {
+              "text": "Capito. Allora il cantante inizia più tardi.",
+              "isCorrect": true,
+              "feedback": "Understanding the schedule.",
+              "english": "Understood. So the singer starts later."
+            },
+            {
+              "text": "Il biglietto è valido per una sola persona.",
+              "isCorrect": false,
+              "feedback": "Focus on the opening act's timing."
+            },
+            {
+              "text": "Voglio ordinare una bistecca ben cotta.",
+              "isCorrect": false,
+              "feedback": "Restaurant talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Esatto. Verso le nove e mezza il palco sarà pronto.",
+          "english": "Exactly. Around nine-thirty the stage will be ready.",
+          "choices": [
+            {
+              "text": "Perfetto, ho tempo per fare un giro.",
+              "isCorrect": true,
+              "feedback": "Planning the wait time.",
+              "english": "Perfect, I have time to take a look around."
+            },
+            {
+              "text": "Il mio bagaglio è stato smarrito dal treno.",
+              "isCorrect": false,
+              "feedback": "Travel talk is forbidden."
+            },
+            {
+              "text": "Devo chiamare il medico per la ricetta.",
+              "isCorrect": false,
+              "feedback": "Medical talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "C'è anche un'area fumatori fuori, se ti serve.",
+          "english": "There's also a smoking area outside, if you need it.",
+          "choices": [
+            {
+              "text": "Grazie, ma non fumo. Resto qui vicino.",
+              "isCorrect": true,
+              "feedback": "Declining and staying put.",
+              "english": "Thanks, but I don't smoke. I'll stay nearby."
+            },
+            {
+              "text": "Voglio prenotare un hotel con colazione.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden."
+            },
+            {
+              "text": "Il bagno della mia camera è sporco.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va bene. Sarà uno spettacolo indimenticabile!",
+          "english": "Alright. It will be an unforgettable show!",
+          "choices": [
+            {
+              "text": "Lo spero proprio! Grazie per le informazioni.",
+              "isCorrect": true,
+              "feedback": "Positive closure.",
+              "english": "I really hope so! Thanks for the information."
+            },
+            {
+              "text": "Il concerto inizia tra esattamente cinque minuti.",
+              "isCorrect": false,
+              "feedback": "The host already gave the schedule."
+            },
+            {
+              "text": "Il mio volo è stato cancellato per nebbia.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meeting_fans",
+      "title": "Meeting Other Fans",
+      "description": "Talk to another fan after the concert ends.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Che concerto fantastico! Ti è piaciuto?",
+          "english": "What a fantastic concert! Did you like it?",
+          "choices": [
+            {
+              "text": "Sì, è stato incredibile! Il cantante ha una voce bellissima.",
+              "isCorrect": true,
+              "feedback": "Sharing a positive opinion about the performance."
+            },
+            {
+              "text": "No, il mio letto in hotel è troppo duro.",
+              "isCorrect": false,
+              "feedback": "Accommodation talk is out of place."
+            },
+            {
+              "text": "Il volo per Milano è stato molto lungo.",
+              "isCorrect": false,
+              "feedback": "Airport talk is out of place."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Concordo! La chitarra era fortissima stasera.",
+          "english": "I agree! The guitar was very loud tonight.",
+          "choices": [
+            {
+              "text": "Vero! Mi è piaciuto molto il ritmo della batteria.",
+              "isCorrect": true,
+              "feedback": "Discussing specific instruments."
+            },
+            {
+              "text": "Ho fame, vorrei un cornetto e un caffè.",
+              "isCorrect": false,
+              "feedback": "Café vocabulary is forbidden."
+            },
+            {
+              "text": "Dove posso comprare un biglietto del treno?",
+              "isCorrect": false,
+              "feedback": "Transportation vocabulary is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Compri la maglietta del gruppo ora?",
+          "english": "Are you buying the band's t-shirt now?",
+          "choices": [
+            {
+              "text": "Sì, vado subito al merchandising. Tu la compri?",
+              "isCorrect": true,
+              "feedback": "Asking the other person about their plans."
+            },
+            {
+              "text": "No, cerco il palco principale proprio ora.",
+              "isCorrect": false,
+              "feedback": "The concert is over, no need for the stage."
+            },
+            {
+              "text": "Il medico mi ha visitato ieri mattina.",
+              "isCorrect": false,
+              "feedback": "Medical vocabulary is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "L'ho già comprata, è bellissima! C'è molta folla ora.",
+          "english": "I already bought it, it's beautiful! There's a big crowd now.",
+          "choices": [
+            {
+              "text": "Sì, c'è troppa gente. Aspetto un momento qui.",
+              "isCorrect": true,
+              "feedback": "Observing the environment and deciding to wait."
+            },
+            {
+              "text": "Il mio bagaglio a mano è troppo pesante.",
+              "isCorrect": false,
+              "feedback": "Travel vocabulary is forbidden."
+            },
+            {
+              "text": "Vorrei prenotare una camera con vista mare.",
+              "isCorrect": false,
+              "feedback": "Hotel vocabulary is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene, allora ci vediamo. Buona serata!",
+          "english": "Alright, see you then. Have a good evening!",
+          "choices": [
+            {
+              "text": "Buona serata anche a te! Grazie per la chiacchierata.",
+              "isCorrect": true,
+              "feedback": "Polite closing of the conversation."
+            },
+            {
+              "text": "Ecco la bibita che hai ordinato, ciao.",
+              "isCorrect": false,
+              "feedback": "Wrong person and wrong time for an order."
+            },
+            {
+              "text": "Il treno è al binario uno, corri!",
+              "isCorrect": false,
+              "feedback": "Forbidden transportation terms."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Hai visto se vendono anche i poster del tour?",
+          "english": "Did you see if they also sell tour posters?",
+          "choices": [
+            {
+              "text": "Sì, li ho visti vicino alle magliette.",
+              "isCorrect": true,
+              "feedback": "Confirming poster availability.",
+              "english": "Yes, I saw them near the t-shirts."
+            },
+            {
+              "text": "No, il mio frigo è rotto da ieri.",
+              "isCorrect": false,
+              "feedback": "Domestic talk is forbidden."
+            },
+            {
+              "text": "Prendo un treno per andare a Venezia.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottimo! Quanto costano, lo sai?",
+          "english": "Great! Do you know how much they cost?",
+          "choices": [
+            {
+              "text": "Credo che costino dieci euro l'uno.",
+              "isCorrect": true,
+              "feedback": "Providing price info.",
+              "english": "I think they cost ten euros each."
+            },
+            {
+              "text": "Il biglietto per il concerto è perso, peccato.",
+              "isCorrect": false,
+              "feedback": "Focus on the poster price."
+            },
+            {
+              "text": "Voglio una camera con vista sulla montagna.",
+              "isCorrect": false,
+              "feedback": "Hotel talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Dieci euro è un buon prezzo. Ne prendo uno.",
+          "english": "Ten euros is a good price. I'll get one.",
+          "choices": [
+            {
+              "text": "Fai bene, sono molto belli e colorati.",
+              "isCorrect": true,
+              "feedback": "Encouraging the purchase.",
+              "english": "You're right, they are very beautiful and colorful."
+            },
+            {
+              "text": "Il medico mi ha visitato la gola oggi.",
+              "isCorrect": false,
+              "feedback": "Medical talk is forbidden."
+            },
+            {
+              "text": "Prendo l'autobus per tornare a casa.",
+              "isCorrect": false,
+              "feedback": "Transportation talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sai se il gruppo suona di nuovo domani?",
+          "english": "Do you know if the band is playing again tomorrow?",
+          "choices": [
+            {
+              "text": "Sì, suonano in un'altra città qui vicino.",
+              "isCorrect": true,
+              "feedback": "Providing info on next shows.",
+              "english": "Yes, they are playing in another city nearby."
+            },
+            {
+              "text": "No, il mio bagaglio è troppo grande.",
+              "isCorrect": false,
+              "feedback": "Travel talk is forbidden."
+            },
+            {
+              "text": "Voglio ordinare un piatto di pasta al forno.",
+              "isCorrect": false,
+              "feedback": "Restaurant talk is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Peccato, non posso andare. Ma stasera è stato top!",
+          "english": "Too bad, I can't go. But tonight was top!",
+          "choices": [
+            {
+              "text": "Assolutamente! Una serata da ricordare. Ciao!",
+              "isCorrect": true,
+              "feedback": "Positive conclusion and goodbye.",
+              "english": "Absolutely! An evening to remember. Bye!"
+            },
+            {
+              "text": "La band non fa il bis stasera, che noia.",
+              "isCorrect": false,
+              "feedback": "Negative and irrelevant at the end of a good night."
+            },
+            {
+              "text": "Il mio volo parte alle sei di mattina.",
+              "isCorrect": false,
+              "feedback": "Airport talk is forbidden."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
