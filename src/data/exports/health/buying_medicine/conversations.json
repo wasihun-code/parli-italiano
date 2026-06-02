@@ -1,0 +1,953 @@
+{
+  "scenarioId": 97,
+  "conversations": [
+    {
+      "id": "buying_ibuprofen",
+      "title": "Buying Ibuprofen",
+      "description": "Buy over-the-counter medicine for a headache.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come posso aiutarla?",
+          "english": "Good morning! How can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei un farmaco per il mal di testa.",
+              "isCorrect": true,
+              "english": "Good morning, I would like a medicine for a headache."
+            },
+            {
+              "text": "Buongiorno, vorrei prenotare un test per il Covid.",
+              "isCorrect": false,
+              "english": "Good morning, I would like to book a Covid test."
+            },
+            {
+              "text": "Buongiorno, vorrei ritirare degli esami medici.",
+              "isCorrect": false,
+              "english": "Good morning, I would like to pick up some medical tests."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Desidera qualcosa di specifico?",
+          "english": "Certainly. Do you want something specific?",
+          "choices": [
+            {
+              "text": "Avete dell'ibuprofene?",
+              "isCorrect": true,
+              "english": "Do you have any ibuprofen?"
+            },
+            {
+              "text": "Avete della crema solare?",
+              "isCorrect": false,
+              "english": "Do you have any sunscreen?"
+            },
+            {
+              "text": "Avete degli occhiali da vista?",
+              "isCorrect": false,
+              "english": "Do you have any reading glasses?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, abbiamo scatole da venti o da quaranta compresse.",
+          "english": "Yes, we have boxes of twenty or forty tablets.",
+          "choices": [
+            {
+              "text": "Una scatola da venti va bene, grazie.",
+              "isCorrect": true,
+              "english": "A box of twenty is fine, thanks."
+            },
+            {
+              "text": "Una scatola di cerotti grandi, grazie.",
+              "isCorrect": false,
+              "english": "A box of large plasters, thanks."
+            },
+            {
+              "text": "Una bottiglia di sciroppo per la tosse.",
+              "isCorrect": false,
+              "english": "A bottle of cough syrup."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ecco a lei. Serve altro?",
+          "english": "Here you go. Anything else?",
+          "choices": [
+            {
+              "text": "No, grazie. È tutto.",
+              "isCorrect": true,
+              "english": "No, thanks. That's all."
+            },
+            {
+              "text": "Sì, vorrei dei sali minerali.",
+              "isCorrect": false,
+              "english": "Yes, I would like some mineral salts."
+            },
+            {
+              "text": "Sì, mi serve un termometro.",
+              "isCorrect": false,
+              "english": "Yes, I need a thermometer."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sono dieci euro in tutto. Paga con carta o contanti?",
+          "english": "That's ten euros in total. Do you pay with card or cash?",
+          "choices": [
+            {
+              "text": "Pago con la carta, grazie.",
+              "isCorrect": true,
+              "english": "I'll pay with the card, thanks."
+            },
+            {
+              "text": "Pago con un assegno, grazie.",
+              "isCorrect": false,
+              "english": "I'll pay with a check, thanks."
+            },
+            {
+              "text": "Pago tutto in contanti, grazie.",
+              "isCorrect": false,
+              "english": "I'll pay all in cash, thanks."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Va bene. Può inserire la carta qui.",
+          "english": "Alright. You can insert the card here.",
+          "choices": [
+            {
+              "text": "Fatto. Devo prenderla a stomaco pieno?",
+              "isCorrect": true,
+              "english": "Done. Should I take it on a full stomach?"
+            },
+            {
+              "text": "Fatto. Posso guidare dopo averla presa?",
+              "isCorrect": false,
+              "english": "Done. Can I drive after taking it?"
+            },
+            {
+              "text": "Fatto. Devo tenerla in frigorifero?",
+              "isCorrect": false,
+              "english": "Done. Do I need to keep it in the fridge?"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, è meglio prenderla dopo i pasti per non irritare lo stomaco.",
+          "english": "Yes, it's better to take it after meals to not irritate the stomach.",
+          "choices": [
+            {
+              "text": "Va bene. Quante ne posso prendere al giorno?",
+              "isCorrect": true,
+              "english": "Alright. How many can I take per day?"
+            },
+            {
+              "text": "Va bene. Posso prenderla con il latte?",
+              "isCorrect": false,
+              "english": "Alright. Can I take it with milk?"
+            },
+            {
+              "text": "Va bene. Scade tra molto tempo?",
+              "isCorrect": false,
+              "english": "Alright. Does it expire in a long time?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Massimo tre compresse al giorno, una ogni otto ore.",
+          "english": "Maximum three tablets per day, one every eight hours.",
+          "choices": [
+            {
+              "text": "D'accordo. C'è bisogno della ricetta per questa?",
+              "isCorrect": true,
+              "english": "Agreed. Is a prescription needed for this?"
+            },
+            {
+              "text": "D'accordo. Avete anche lo spray nasale?",
+              "isCorrect": false,
+              "english": "Agreed. Do you also have nasal spray?"
+            },
+            {
+              "text": "D'accordo. Posso avere un bicchiere d'acqua?",
+              "isCorrect": false,
+              "english": "Agreed. Can I have a glass of water?"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "No, per questa confezione non serve la ricetta medica.",
+          "english": "No, for this package a medical prescription is not needed.",
+          "choices": [
+            {
+              "text": "Perfetto. Grazie mille per le spiegazioni.",
+              "isCorrect": true,
+              "english": "Perfect. Thanks a lot for the explanations."
+            },
+            {
+              "text": "Perfetto. Vorrei anche un dentifricio.",
+              "isCorrect": false,
+              "english": "Perfect. I would also like a toothpaste."
+            },
+            {
+              "text": "Perfetto. Dove sono i prodotti per l'infanzia?",
+              "isCorrect": false,
+              "english": "Perfect. Where are the childcare products?"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla. Spero che si senta meglio presto. Arrivederci!",
+          "english": "Don't mention it. I hope you feel better soon. Goodbye!",
+          "choices": [
+            {
+              "text": "Grazie, arrivederci e buona giornata.",
+              "isCorrect": true,
+              "english": "Thanks, goodbye and have a good day."
+            },
+            {
+              "text": "Grazie, a che ora chiude la farmacia?",
+              "isCorrect": false,
+              "english": "Thanks, what time does the pharmacy close?"
+            },
+            {
+              "text": "Grazie, dove sono i prodotti di bellezza?",
+              "isCorrect": false,
+              "english": "Thanks, where are the beauty products?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescription_required",
+      "title": "Prescription Required",
+      "description": "Try to buy an antibiotic and learn about prescription rules.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve, desidera?",
+          "english": "Hello, what would you like?",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei comprare un antibiotico.",
+              "isCorrect": true,
+              "english": "Good morning, I would like to buy an antibiotic."
+            },
+            {
+              "text": "Buongiorno, vorrei dei sali minerali.",
+              "isCorrect": false,
+              "english": "Good morning, I would like some mineral salts."
+            },
+            {
+              "text": "Buongiorno, vorrei una crema per le mani.",
+              "isCorrect": false,
+              "english": "Good morning, I would like a hand cream."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Per gli antibiotici serve la ricetta medica. Ce l'ha?",
+          "english": "For antibiotics, a medical prescription is needed. Do you have it?",
+          "choices": [
+            {
+              "text": "Oh, non lo sapevo. Mi serve proprio una ricetta?",
+              "isCorrect": true,
+              "english": "Oh, I didn't know. Do I really need a prescription?"
+            },
+            {
+              "text": "Oh, non lo sapevo. Mi serve una carta d'identità?",
+              "isCorrect": false,
+              "english": "Oh, I didn't know. Do I need an ID card?"
+            },
+            {
+              "text": "Oh, non lo sapevo. Mi serve una penna blu?",
+              "isCorrect": false,
+              "english": "Oh, I didn't know. Do I need a blue pen?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, è obbligatoria per questo tipo di farmaci.",
+          "english": "Yes, it's mandatory for this type of medication.",
+          "choices": [
+            {
+              "text": "Capisco. Posso usare una ricetta elettronica?",
+              "isCorrect": true,
+              "english": "I see. Can I use an electronic prescription?"
+            },
+            {
+              "text": "Capisco. Posso usare uno scontrino vecchio?",
+              "isCorrect": false,
+              "english": "I see. Can I use an old receipt?"
+            },
+            {
+              "text": "Capisco. Posso usare una tessera punti?",
+              "isCorrect": false,
+              "english": "I see. Can I use a points card?"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certamente, mi mostri pure il codice a barre o il numero.",
+          "english": "Certainly, show me the barcode or the number.",
+          "choices": [
+            {
+              "text": "Ecco qui sul mio telefono.",
+              "isCorrect": true,
+              "english": "Here it is on my phone."
+            },
+            {
+              "text": "Ecco qui sul mio passaporto.",
+              "isCorrect": false,
+              "english": "Here it is on my passport."
+            },
+            {
+              "text": "Ecco qui sulla mia borsa.",
+              "isCorrect": false,
+              "english": "Here it is on my bag."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto, questo è l'antibiotico prescritto.",
+          "english": "Perfect, this is the prescribed antibiotic.",
+          "choices": [
+            {
+              "text": "Grazie. Posso prenderlo a stomaco vuoto?",
+              "isCorrect": true,
+              "english": "Thanks. Can I take it on an empty stomach?"
+            },
+            {
+              "text": "Grazie. Posso prenderlo in piedi?",
+              "isCorrect": false,
+              "english": "Thanks. Can I take it standing up?"
+            },
+            {
+              "text": "Grazie. Posso prenderlo domani?",
+              "isCorrect": false,
+              "english": "Thanks. Can I take it tomorrow?"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "No, è meglio prenderlo dopo i pasti.",
+          "english": "No, it's better to take it after meals.",
+          "choices": [
+            {
+              "text": "Va bene, seguirò il consiglio. Quanto costa?",
+              "isCorrect": true,
+              "english": "Alright, I'll follow the advice. How much is it?"
+            },
+            {
+              "text": "Va bene, seguirò la cura. Dove si paga?",
+              "isCorrect": false,
+              "english": "Alright, I'll follow the treatment. Where do I pay?"
+            },
+            {
+              "text": "Va bene, seguirò il medico. È molto caro?",
+              "isCorrect": false,
+              "english": "Alright, I'll follow the doctor. Is it very expensive?"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sono dodici euro e cinquanta centesimi.",
+          "english": "It's twelve euros and fifty cents.",
+          "choices": [
+            {
+              "text": "Ecco i soldi. Serve altro per la ricetta?",
+              "isCorrect": true,
+              "english": "Here is the money. Is anything else needed for the prescription?"
+            },
+            {
+              "text": "Ecco i soldi. Posso avere un sacchetto?",
+              "isCorrect": false,
+              "english": "Here is the money. Can I have a bag?"
+            },
+            {
+              "text": "Ecco i soldi. Avete anche delle vitamine?",
+              "isCorrect": false,
+              "english": "Here is the money. Do you also have vitamins?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "No, ho già registrato tutto nel sistema informatico.",
+          "english": "No, I've already recorded everything in the computer system.",
+          "choices": [
+            {
+              "text": "Posso avere lo scontrino per la detrazione fiscale?",
+              "isCorrect": true,
+              "english": "Can I have the receipt for the tax deduction?"
+            },
+            {
+              "text": "Posso avere lo scontrino per la garanzia?",
+              "isCorrect": false,
+              "english": "Can I have the receipt for the warranty?"
+            },
+            {
+              "text": "Posso avere lo scontrino per il cambio?",
+              "isCorrect": false,
+              "english": "Can I have the receipt for the exchange?"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente, mi servirebbe la sua tessera sanitaria.",
+          "english": "Certainly, I would need your health card.",
+          "choices": [
+            {
+              "text": "Eccola qui, grazie mille.",
+              "isCorrect": true,
+              "english": "Here it is, thanks a lot."
+            },
+            {
+              "text": "Eccola qui, la mia patente.",
+              "isCorrect": false,
+              "english": "Here it is, my driver's license."
+            },
+            {
+              "text": "Eccola qui, la mia carta.",
+              "isCorrect": false,
+              "english": "Here it is, my card."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto, ecco lo scontrino e la tessera. Buona giornata!",
+          "english": "Perfect, here is the receipt and the card. Have a good day!",
+          "choices": [
+            {
+              "text": "Grazie a lei, arrivederci e buon lavoro.",
+              "isCorrect": true,
+              "english": "Thanks to you, goodbye and have a good day."
+            },
+            {
+              "text": "Grazie a lei, vorrei anche del collirio.",
+              "isCorrect": false,
+              "english": "Thanks to you, I would also like some eye drops."
+            },
+            {
+              "text": "Grazie a lei, avete dei prodotti bio?",
+              "isCorrect": false,
+              "english": "Thanks to you, do you have organic products?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "side_effects",
+      "title": "Asking about Side Effects",
+      "description": "Learn about potential side effects of a medicine.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ecco lo sciroppo che ha chiesto.",
+          "english": "Here is the syrup you asked for.",
+          "choices": [
+            {
+              "text": "Grazie. Questo farmaco ha effetti collaterali?",
+              "isCorrect": true,
+              "english": "Thanks. Does this medicine have side effects?"
+            },
+            {
+              "text": "Grazie. Questo farmaco ha molti colori?",
+              "isCorrect": false,
+              "english": "Thanks. Does this medicine have many colors?"
+            },
+            {
+              "text": "Grazie. Questo farmaco ha un buon gusto?",
+              "isCorrect": false,
+              "english": "Thanks. Does this medicine have a good taste?"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Può causare un po' di sonnolenza.",
+          "english": "It can cause a bit of drowsiness.",
+          "choices": [
+            {
+              "text": "Capisco. Devo evitare di guidare allora?",
+              "isCorrect": true,
+              "english": "I see. Should I avoid driving then?"
+            },
+            {
+              "text": "Capisco. Devo evitare di mangiare allora?",
+              "isCorrect": false,
+              "english": "I see. Should I avoid eating then?"
+            },
+            {
+              "text": "Capisco. Devo evitare di dormire allora?",
+              "isCorrect": false,
+              "english": "I see. Should I avoid sleeping then?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, se si sente stanco è meglio non guidare.",
+          "english": "Yes, if you feel tired it's better not to drive.",
+          "choices": [
+            {
+              "text": "Ci sono altre controindicazioni importanti?",
+              "isCorrect": true,
+              "english": "Are there other important contraindications?"
+            },
+            {
+              "text": "Ci sono altre persone importanti?",
+              "isCorrect": false,
+              "english": "Are there other important people?"
+            },
+            {
+              "text": "Ci sono altre domande importanti?",
+              "isCorrect": false,
+              "english": "Are there other important questions?"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Non deve assumerlo insieme ad altri antinfiammatori.",
+          "english": "You must not take it together with other anti-inflammatories.",
+          "choices": [
+            {
+              "text": "Va bene. Posso darlo anche a un bambino?",
+              "isCorrect": true,
+              "english": "Alright. Can I give it to a child too?"
+            },
+            {
+              "text": "Va bene. Posso darlo anche a un cane?",
+              "isCorrect": false,
+              "english": "Alright. Can I give it to a dog too?"
+            },
+            {
+              "text": "Va bene. Posso darlo anche a un gatto?",
+              "isCorrect": false,
+              "english": "Alright. Can I give it to a cat too?"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "No, questo è solo per adulti. Per i bambini c'è una versione specifica.",
+          "english": "No, this is for adults only. For children, there is a specific version.",
+          "choices": [
+            {
+              "text": "Meno male che ho chiesto! Grazie per l'informazione.",
+              "isCorrect": true,
+              "english": "Good thing I asked! Thanks for the information."
+            },
+            {
+              "text": "Meno male che ho dormito! Grazie.",
+              "isCorrect": false,
+              "english": "Good thing I slept! Thanks."
+            },
+            {
+              "text": "Meno male che ho pagato! Grazie.",
+              "isCorrect": false,
+              "english": "Good thing I paid! Thanks."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Prego. Legga comunque il foglietto illustrativo per tutti i dettagli.",
+          "english": "You're welcome. Read the package leaflet anyway for all the details.",
+          "choices": [
+            {
+              "text": "Va bene. Ci sono cibi che devo evitare quando prendo lo sciroppo?",
+              "isCorrect": true,
+              "english": "Alright. Are there foods I should avoid when taking the syrup?"
+            },
+            {
+              "text": "Va bene. Dove posso comprare una torta?",
+              "isCorrect": false,
+              "english": "Alright. Where can I buy a cake?"
+            },
+            {
+              "text": "Va bene. Mi piace molto cucinare la pasta.",
+              "isCorrect": false,
+              "english": "Alright. I really like cooking pasta."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, eviti di bere alcolici, perché possono aumentare la sonnolenza.",
+          "english": "Yes, avoid drinking alcohol, because it can increase drowsiness.",
+          "choices": [
+            {
+              "text": "Capisco. Posso prenderlo insieme a un semplice caffè?",
+              "isCorrect": true,
+              "english": "I see. Can I take it together with a simple coffee?"
+            },
+            {
+              "text": "Capisco. Posso comprare un giornale qui?",
+              "isCorrect": false,
+              "english": "I see. Can I buy a newspaper here?"
+            },
+            {
+              "text": "Capisco. Dove si trova la stazione?",
+              "isCorrect": false,
+              "english": "I see. Where is the station?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, il caffè non è un problema. Ma non superi le dosi consigliate.",
+          "english": "Yes, coffee is not a problem. But do not exceed the recommended doses.",
+          "choices": [
+            {
+              "text": "D'accordo. Cosa succede se salto una dose?",
+              "isCorrect": true,
+              "english": "Agreed. What happens if I miss a dose?"
+            },
+            {
+              "text": "D'accordo. Qual è il Suo colore preferito?",
+              "isCorrect": false,
+              "english": "Agreed. What is your favorite color?"
+            },
+            {
+              "text": "D'accordo. A che ora chiude il negozio?",
+              "isCorrect": false,
+              "english": "Agreed. What time does the shop close?"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Non si preoccupi. La prenda appena se ne ricorda, ma non ne prenda due insieme.",
+          "english": "Don't worry. Take it as soon as you remember, but don't take two together.",
+          "choices": [
+            {
+              "text": "Grazie mille per la pazienza e per le spiegazioni.",
+              "isCorrect": true,
+              "english": "Thanks a lot for the patience and for the explanations."
+            },
+            {
+              "text": "Grazie mille, vorrei un flacone di disinfettante.",
+              "isCorrect": false,
+              "english": "Thanks a lot, I would like a bottle of disinfectant."
+            },
+            {
+              "text": "Grazie mille, dove posso pesare il mio bambino?",
+              "isCorrect": false,
+              "english": "Thanks a lot, where can I weigh my baby?"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Figurati, siamo qui per questo. Buona guarigione!",
+          "english": "Don't mention it, we are here for this. Get well soon!",
+          "choices": [
+            {
+              "text": "Grazie ancora, arrivederci e buona giornata.",
+              "isCorrect": true,
+              "english": "Thanks again, goodbye and have a good day."
+            },
+            {
+              "text": "Grazie ancora, vorrei un pacchetto di cerotti.",
+              "isCorrect": false,
+              "english": "Thanks again, I would like a pack of plasters."
+            },
+            {
+              "text": "Grazie ancora, scusi, dov'è il bagno?",
+              "isCorrect": false,
+              "english": "Thanks again, sorry, where is the bathroom?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading_instructions",
+      "title": "Reading the Instructions",
+      "description": "Understand the dosage and how to take the medicine.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ha capito come deve prendere queste compresse?",
+          "english": "Did you understand how you should take these tablets?",
+          "choices": [
+            {
+              "text": "Non sono sicuro. Quante volte al giorno devo prenderle?",
+              "isCorrect": true,
+              "english": "I'm not sure. How many times a day should I take them?"
+            },
+            {
+              "text": "Non sono sicuro. Quante volte al giorno devo correre?",
+              "isCorrect": false,
+              "english": "I'm not sure. How many times a day should I run?"
+            },
+            {
+              "text": "Non sono sicuro. Quante volte al giorno devo nuotare?",
+              "isCorrect": false,
+              "english": "I'm not sure. How many times a day should I swim?"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Deve prenderne una ogni otto ore.",
+          "english": "You should take one every eight hours.",
+          "choices": [
+            {
+              "text": "Quindi tre volte al giorno in totale?",
+              "isCorrect": true,
+              "english": "So three times a day in total?"
+            },
+            {
+              "text": "Quindi tre volte al mese in totale?",
+              "isCorrect": false,
+              "english": "So three times a month in total?"
+            },
+            {
+              "text": "Quindi tre volte all'anno in totale?",
+              "isCorrect": false,
+              "english": "So three times a year in total?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Esatto, preferibilmente dopo colazione, pranzo e cena.",
+          "english": "Exactly, preferably after breakfast, lunch, and dinner.",
+          "choices": [
+            {
+              "text": "Per quanti giorni devo continuare la cura?",
+              "isCorrect": true,
+              "english": "For how many days should I continue the treatment?"
+            },
+            {
+              "text": "Per quanti giorni devo restare in hotel?",
+              "isCorrect": false,
+              "english": "For how many days should I stay in the hotel?"
+            },
+            {
+              "text": "Per quanti giorni devo guidare la macchina?",
+              "isCorrect": false,
+              "english": "For how many days should I drive the car?"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Deve finire tutta la scatola, quindi per cinque giorni.",
+          "english": "You must finish the whole box, so for five days.",
+          "choices": [
+            {
+              "text": "E se dimentico una dose, cosa devo fare?",
+              "isCorrect": true,
+              "english": "And if I forget a dose, what should I do?"
+            },
+            {
+              "text": "E se dimentico la chiave, cosa devo fare?",
+              "isCorrect": false,
+              "english": "And if I forget the key, what should I do?"
+            },
+            {
+              "text": "E se dimentico il nome, cosa devo fare?",
+              "isCorrect": false,
+              "english": "And if I forget the name, what should I do?"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Non ne prenda due insieme. Prenda la prossima regolarmente.",
+          "english": "Don't take two together. Take the next one regularly.",
+          "choices": [
+            {
+              "text": "Grazie, ora è tutto molto chiaro.",
+              "isCorrect": true,
+              "english": "Thanks, now everything is very clear."
+            },
+            {
+              "text": "Grazie, ora è tutto molto scuro.",
+              "isCorrect": false,
+              "english": "Thanks, now everything is very dark."
+            },
+            {
+              "text": "Grazie, ora è tutto molto grande.",
+              "isCorrect": false,
+              "english": "Thanks, now everything is very big."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Se ha altri dubbi, può consultare il medico o tornare qui in farmacia.",
+          "english": "If you have other doubts, you can consult the doctor or come back here to the pharmacy.",
+          "choices": [
+            {
+              "text": "Grazie. Devo conservare le compresse in frigorifero?",
+              "isCorrect": true,
+              "english": "Thanks. Do I need to keep the tablets in the refrigerator?"
+            },
+            {
+              "text": "Grazie. Vorrei comprare anche del filo interale.",
+              "isCorrect": false,
+              "english": "Thanks. I would also like to buy some dental floss."
+            },
+            {
+              "text": "Grazie. Mi servirebbe uno spazzolino nuovo.",
+              "isCorrect": false,
+              "english": "Thanks. I would need a new toothbrush."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "No, non è necessario. Basta un luogo asciutto e lontano dalla luce.",
+          "english": "No, it's not necessary. A dry place away from light is enough.",
+          "choices": [
+            {
+              "text": "Va bene. La data di scadenza è scritta sulla scatola, vero?",
+              "isCorrect": true,
+              "english": "Alright. The expiration date is written on the box, right?"
+            },
+            {
+              "text": "Va bene. Il farmacista è presente tutto il giorno?",
+              "isCorrect": false,
+              "english": "Alright. Is the pharmacist present all day?"
+            },
+            {
+              "text": "Va bene. Dove posso trovare le vitamine C?",
+              "isCorrect": false,
+              "english": "Alright. Where can I find vitamin C?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, la trova sul fondo della confezione. Controlli sempre prima dell'uso.",
+          "english": "Yes, you can find it on the bottom of the package. Always check before use.",
+          "choices": [
+            {
+              "text": "Ho visto, scade tra due anni. Posso portarle in viaggio in aereo?",
+              "isCorrect": true,
+              "english": "I saw, it expires in two years. Can I take them with me on a plane trip?"
+            },
+            {
+              "text": "Ho visto, scade domani. Posso avere uno sconto?",
+              "isCorrect": false,
+              "english": "I saw, it expires tomorrow. Can I have a discount?"
+            },
+            {
+              "text": "Ho visto, è una confezione integra. Quanto costa?",
+              "isCorrect": false,
+              "english": "I saw, it's an intact package. How much is it?"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente, non ci sono problemi per il trasporto di questi farmaci.",
+          "english": "Certainly, there are no problems for the transport of these drugs.",
+          "choices": [
+            {
+              "text": "Perfetto, allora le metto subito nel mio bagaglio.",
+              "isCorrect": true,
+              "english": "Perfect, then I'll put them in my luggage right away."
+            },
+            {
+              "text": "Perfetto, allora vorrei anche una scatola di cerotti.",
+              "isCorrect": false,
+              "english": "Perfect, then I would also like a box of plasters."
+            },
+            {
+              "text": "Perfetto, allora compro subito un nuovo dentifricio.",
+              "isCorrect": false,
+              "english": "Perfect, then I'll buy a new toothpaste right away."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottima idea. Spero che si senta meglio presto. Arrivederci!",
+          "english": "Great idea. I hope you feel better soon. Goodbye!",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie di tutto.",
+              "isCorrect": true,
+              "english": "Goodbye and thanks for everything."
+            },
+            {
+              "text": "Arrivederci e grazie per l'aiuto.",
+              "isCorrect": false,
+              "english": "Goodbye and thanks for the help."
+            },
+            {
+              "text": "Arrivederci, a presto. Grazie.",
+              "isCorrect": false,
+              "english": "Goodbye, see you soon. Thanks."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,953 @@
+{
+  "scenarioId": 95,
+  "conversations": [
+    {
+      "id": "ambulance_arrival",
+      "title": "Arrival by Ambulance",
+      "description": "You arrive at the emergency room after an accident.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Siamo arrivati al pronto soccorso. Come si sente?",
+          "english": "We have arrived at the emergency room. How do you feel?",
+          "choices": [
+            {
+              "text": "Mi sento molto male, ho molto dolore.",
+              "isCorrect": true,
+              "feedback": "Correct. Reporting pain level is essential."
+            },
+            {
+              "text": "Sto bene, non ho nessun problema.",
+              "isCorrect": false,
+              "feedback": "If you are in an ambulance, you likely need help!"
+            },
+            {
+              "text": "Dove posso comprare un gelato?",
+              "isCorrect": false,
+              "feedback": "This is an emergency, not a snack break."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. Dove sente il dolore più forte?",
+          "english": "I understand. Where do you feel the strongest pain?",
+          "choices": [
+            {
+              "text": "Sento un dolore forte alla testa.",
+              "isCorrect": true,
+              "feedback": "Good. Locating the pain helps the doctors."
+            },
+            {
+              "text": "Ho perso le mie chiavi di casa.",
+              "isCorrect": false,
+              "feedback": "Focus on your physical symptoms."
+            },
+            {
+              "text": "Mi piace molto questo ospedale.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information for the nurse."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "D'accordo. È successo un incidente? È caduto?",
+          "english": "Alright. Was there an accident? Did you fall?",
+          "choices": [
+            {
+              "text": "Sì, c'è stato un brutto incidente.",
+              "isCorrect": true,
+              "feedback": "Explaining the cause helps with diagnosis."
+            },
+            {
+              "text": "No, sto solo facendo una passeggiata.",
+              "isCorrect": false,
+              "feedback": "You are in an emergency room, not walking."
+            },
+            {
+              "text": "Sì, ho mangiato troppo a pranzo.",
+              "isCorrect": false,
+              "feedback": "The nurse asked about an accident or fall."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "C'è molto sangue sulla ferita. Dobbiamo pulirla.",
+          "english": "There is a lot of blood on the wound. We need to clean it.",
+          "choices": [
+            {
+              "text": "Va bene, faccia pure. Fa molto male.",
+              "isCorrect": true,
+              "feedback": "Cooperating with medical staff is important."
+            },
+            {
+              "text": "Non voglio, preferisco andare a casa.",
+              "isCorrect": false,
+              "feedback": "A bleeding wound needs professional care."
+            },
+            {
+              "text": "Mi serve un caffè subito, per favore.",
+              "isCorrect": false,
+              "feedback": "Not a priority during wound treatment."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Stia tranquillo, ora il dottore la visita.",
+          "english": "Stay calm, now the doctor will examine you.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'aiuto, dottore.",
+              "isCorrect": true,
+              "feedback": "Politeness is always appreciated."
+            },
+            {
+              "text": "Ho paura, voglio chiamare mia madre.",
+              "isCorrect": false,
+              "feedback": "Natural to feel this, but first allow the exam."
+            },
+            {
+              "text": "Quanto costa il biglietto del treno?",
+              "isCorrect": false,
+              "feedback": "Completely off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Buon pomeriggio, sono il dottore. Ha qualche allergia ai medicinali?",
+          "english": "Good afternoon, I am the doctor. Do you have any allergies to medicines?",
+          "choices": [
+            {
+              "text": "No, non ho nessuna allergia nota.",
+              "isCorrect": true,
+              "feedback": "Important information for treatment safety."
+            },
+            {
+              "text": "Mi piace molto la pizza con le acciughe.",
+              "isCorrect": false,
+              "feedback": "Food preferences are not medical allergies."
+            },
+            {
+              "text": "Sì, sono allergico al lavoro.",
+              "isCorrect": false,
+              "feedback": "Please take the question seriously."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Molto bene. Ora controllo la sua pressione e il battito.",
+          "english": "Very well. Now I'll check your pressure and heart rate.",
+          "choices": [
+            {
+              "text": "Va bene, faccia pure con calma.",
+              "isCorrect": true,
+              "feedback": "Allowing the doctor to work."
+            },
+            {
+              "text": "Voglio correre velocemente fuori.",
+              "isCorrect": false,
+              "feedback": "You need to stay still for this."
+            },
+            {
+              "text": "La mia pressione è come un vulcano.",
+              "isCorrect": false,
+              "feedback": "Not a helpful description."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "La pressione è un po' alta. Prende dei medicinali regolarmente?",
+          "english": "The pressure is a bit high. Do you take any medicines regularly?",
+          "choices": [
+            {
+              "text": "Sì, prendo una pastiglia per la pressione.",
+              "isCorrect": true,
+              "feedback": "Sharing current medications is vital."
+            },
+            {
+              "text": "No, mangio solo molte mele rosse.",
+              "isCorrect": false,
+              "feedback": "Focus on the question about medicine."
+            },
+            {
+              "text": "Sì, prendo le vitamine per i capelli.",
+              "isCorrect": false,
+              "feedback": "The doctor is asking about regular medications like for pressure."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ho capito. Ora dobbiamo fare una TAC per sicurezza.",
+          "english": "I understand. Now we need to do a CT scan for safety.",
+          "choices": [
+            {
+              "text": "D'accordo, spero che non sia nulla di grave.",
+              "isCorrect": true,
+              "feedback": "Cooperating with the diagnostic plan."
+            },
+            {
+              "text": "Non voglio fare foto oggi, non sono truccato.",
+              "isCorrect": false,
+              "feedback": "A TAC is a medical scan, not a photo shoot."
+            },
+            {
+              "text": "Posso portare il mio gatto nella TAC?",
+              "isCorrect": false,
+              "feedback": "Pets are not allowed in scanning rooms."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "L'infermiera la porterà subito in radiologia. Si rilassi.",
+          "english": "The nurse will take you to radiology immediately. Relax.",
+          "choices": [
+            {
+              "text": "Grazie, cerco di stare tranquillo.",
+              "isCorrect": true,
+              "feedback": "Maintaining calm helps the process."
+            },
+            {
+              "text": "Voglio volare come un uccellino.",
+              "isCorrect": false,
+              "feedback": "Nonsense response."
+            },
+            {
+              "text": "Quanto tempo ci vuole per arrivare a Roma?",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the situation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abdominal_pain",
+      "title": "Severe Abdominal Pain",
+      "description": "You go to the ER with severe stomach pain.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Qual è il problema oggi?",
+          "english": "Good morning. What is the problem today?",
+          "choices": [
+            {
+              "text": "Ho un dolore fortissimo allo stomaco.",
+              "isCorrect": true,
+              "feedback": "Clearly stating the location and intensity of pain."
+            },
+            {
+              "text": "Ho dimenticato il mio ombrello qui.",
+              "isCorrect": false,
+              "feedback": "This is an emergency room, not a lost and found."
+            },
+            {
+              "text": "Il mio stomaco è molto grande oggi.",
+              "isCorrect": false,
+              "feedback": "Focus on the pain, not size."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Quando è iniziato questo dolore?",
+          "english": "When did this pain start?",
+          "choices": [
+            {
+              "text": "È iniziato improvvisamente un'ora fa.",
+              "isCorrect": true,
+              "feedback": "Timing is crucial for diagnosis."
+            },
+            {
+              "text": "È iniziato quando ero piccolo, credo.",
+              "isCorrect": false,
+              "feedback": "Acute ER pain usually has a recent start."
+            },
+            {
+              "text": "Non ricordo bene, forse domani.",
+              "isCorrect": false,
+              "feedback": "Tomorrow is in the future!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ha anche la febbre o la nausea?",
+          "english": "Do you also have a fever or nausea?",
+          "choices": [
+            {
+              "text": "Sì, ho molta nausea e mi gira la testa.",
+              "isCorrect": true,
+              "feedback": "Reporting associated symptoms is helpful."
+            },
+            {
+              "text": "No, ho solo fame, voglio una pizza.",
+              "isCorrect": false,
+              "feedback": "Severe stomach pain and hunger don't usually mix."
+            },
+            {
+              "text": "Sì, la febbre è un bel colore rosso.",
+              "isCorrect": false,
+              "feedback": "Fever isn't a color."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Dobbiamo fare degli esami del sangue urgenti.",
+          "english": "We need to do some urgent blood tests.",
+          "choices": [
+            {
+              "text": "Va bene, è un'emergenza? Ho paura.",
+              "isCorrect": true,
+              "feedback": "Expressing concern while agreeing to tests."
+            },
+            {
+              "text": "Il mio sangue è blu, sono un principe.",
+              "isCorrect": false,
+              "feedback": "Don't joke during medical triage."
+            },
+            {
+              "text": "Preferisco fare una foto, grazie.",
+              "isCorrect": false,
+              "feedback": "A photo won't diagnose internal pain."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Si sdrai qui, per favore. Non si muova.",
+          "english": "Lie down here, please. Do not move.",
+          "choices": [
+            {
+              "text": "Va bene, mi sdraio. Mi aiuti, per favore.",
+              "isCorrect": true,
+              "feedback": "Following instructions is essential."
+            },
+            {
+              "text": "Voglio ballare, mi sento meglio ora.",
+              "isCorrect": false,
+              "feedback": "Sudden recovery is unlikely; follow orders."
+            },
+            {
+              "text": "Questo letto è troppo piccolo per me.",
+              "isCorrect": false,
+              "feedback": "Not the time for comfort complaints."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Adesso premo sulla pancia. Fa male se premo qui?",
+          "english": "Now I'll press on your belly. Does it hurt if I press here?",
+          "choices": [
+            {
+              "text": "Ah! Sì, lì fa molto male, sento una fitta.",
+              "isCorrect": true,
+              "feedback": "Identifying the exact painful area."
+            },
+            {
+              "text": "Sento un solletico molto divertente.",
+              "isCorrect": false,
+              "feedback": "Severe pain is rarely funny."
+            },
+            {
+              "text": "Il mio gatto preme sempre così.",
+              "isCorrect": false,
+              "feedback": "Irrelevant comparison."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Cosa ha mangiato nelle ultime ore?",
+          "english": "What have you eaten in the last few hours?",
+          "choices": [
+            {
+              "text": "Ho mangiato solo un po' di pasta bianca.",
+              "isCorrect": true,
+              "feedback": "Dietary history helps rule out food poisoning."
+            },
+            {
+              "text": "Ho mangiato tre chili di cioccolato.",
+              "isCorrect": false,
+              "feedback": "That would certainly cause pain, but focus on accuracy."
+            },
+            {
+              "text": "Non mangio mai nulla di lunedì.",
+              "isCorrect": false,
+              "feedback": "Please answer the question accurately."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Bene. Dobbiamo fare un'ecografia subito.",
+          "english": "Good. We need to do an ultrasound immediately.",
+          "choices": [
+            {
+              "text": "Cosa si vede con l'ecografia?",
+              "isCorrect": true,
+              "feedback": "Asking for clarification about the procedure."
+            },
+            {
+              "text": "L'ecografia è un tipo di ballo?",
+              "isCorrect": false,
+              "feedback": "Basic medical terminology error."
+            },
+            {
+              "text": "Voglio vedere un film, non un'ecografia.",
+              "isCorrect": false,
+              "feedback": "Prioritize your health."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Serve per vedere gli organi interni, come l'appendice.",
+          "english": "It's used to see internal organs, like the appendix.",
+          "choices": [
+            {
+              "text": "Spero che non sia l'appendicite allora.",
+              "isCorrect": true,
+              "feedback": "Understanding the potential diagnosis."
+            },
+            {
+              "text": "L'appendice è alla fine di un libro.",
+              "isCorrect": false,
+              "feedback": "True for books, but not for anatomy."
+            },
+            {
+              "text": "Non ho bisogno di organi interni, grazie.",
+              "isCorrect": false,
+              "feedback": "Physiological nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Aspetti qui i risultati degli esami. Non si allontani.",
+          "english": "Wait here for the test results. Do not go away.",
+          "choices": [
+            {
+              "text": "Va bene, aspetto qui. Grazie ancora.",
+              "isCorrect": true,
+              "feedback": "Patiently waiting as instructed."
+            },
+            {
+              "text": "Vado a fare un giro in centro città.",
+              "isCorrect": false,
+              "feedback": "You must stay in the ER."
+            },
+            {
+              "text": "I risultati sono scritti in cinese?",
+              "isCorrect": false,
+              "feedback": "Odd and irrelevant question."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "broken_bone",
+      "title": "Broken Bone/Fall",
+      "description": "You fell and think you broke your arm.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Cosa è successo al braccio? È molto gonfio.",
+          "english": "What happened to your arm? It is very swollen.",
+          "choices": [
+            {
+              "text": "Sono caduto e ora non posso muoverlo.",
+              "isCorrect": true,
+              "feedback": "Describing the accident and the limitation."
+            },
+            {
+              "text": "Il mio braccio è lungo due metri.",
+              "isCorrect": false,
+              "feedback": "Exaggeration doesn't help."
+            },
+            {
+              "text": "Ho comprato un braccio nuovo oggi.",
+              "isCorrect": false,
+              "feedback": "Nonsense response."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sente dolore se premo qui?",
+          "english": "Do you feel pain if I press here?",
+          "choices": [
+            {
+              "text": "Ah! Sì, sento un dolore molto forte.",
+              "isCorrect": true,
+              "feedback": "Providing feedback during physical exam."
+            },
+            {
+              "text": "No, sento solo il vento che soffia.",
+              "isCorrect": false,
+              "feedback": "Unrealistic description of touch."
+            },
+            {
+              "text": "Mi piace quando preme forte così.",
+              "isCorrect": false,
+              "feedback": "Inappropriate response to medical exam."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Dobbiamo fare una radiografia subito.",
+          "english": "We need to do an X-ray immediately.",
+          "choices": [
+            {
+              "text": "È rotto? Posso vedere il risultato?",
+              "isCorrect": true,
+              "feedback": "Asking relevant questions about the procedure."
+            },
+            {
+              "text": "Voglio una radio per ascoltare musica.",
+              "isCorrect": false,
+              "feedback": "A radiografia (X-ray) is not a radio."
+            },
+            {
+              "text": "La radiografia è un tipo di pesce?",
+              "isCorrect": false,
+              "feedback": "Lack of basic medical context."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, l'osso è rotto. Dobbiamo mettere il gesso.",
+          "english": "Yes, the bone is broken. We need to put on a cast.",
+          "choices": [
+            {
+              "text": "Per quanto tempo devo tenere il gesso?",
+              "isCorrect": true,
+              "feedback": "Logical follow-up question."
+            },
+            {
+              "text": "Voglio un gesso di cioccolato, grazie.",
+              "isCorrect": false,
+              "feedback": "Medical casts are not edible."
+            },
+            {
+              "text": "Il gesso è per scrivere sulla lavagna.",
+              "isCorrect": false,
+              "feedback": "True, but not in this context."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Dovrà tenerlo per almeno un mese.",
+          "english": "You will have to keep it for at least a month.",
+          "choices": [
+            {
+              "text": "Va bene, capisco. Grazie per la cura.",
+              "isCorrect": true,
+              "feedback": "Accepting the diagnosis and thanking the staff."
+            },
+            {
+              "text": "Un mese è troppa acqua sotto i ponti.",
+              "isCorrect": false,
+              "feedback": "Idiom used incorrectly here."
+            },
+            {
+              "text": "Preferisco tenerlo solo per un'ora.",
+              "isCorrect": false,
+              "feedback": "Medical timelines are not negotiable."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Le darò un antidolorifico per il dolore.",
+          "english": "I will give you a painkiller for the pain.",
+          "choices": [
+            {
+              "text": "Grazie, il dolore è davvero insopportabile.",
+              "isCorrect": true,
+              "feedback": "Accepting medication for severe pain."
+            },
+            {
+              "text": "Voglio un gelato invece della pastiglia.",
+              "isCorrect": false,
+              "feedback": "A painkiller is necessary here."
+            },
+            {
+              "text": "Non mi piacciono i colori delle pastiglie.",
+              "isCorrect": false,
+              "feedback": "The color is not important."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Non deve bagnare il gesso, altrimenti si rovina.",
+          "english": "You must not get the cast wet, otherwise it will be ruined.",
+          "choices": [
+            {
+              "text": "Come posso fare la doccia allora?",
+              "isCorrect": true,
+              "feedback": "Asking a practical question about daily care."
+            },
+            {
+              "text": "Mi piace nuotare con il gesso nel mare.",
+              "isCorrect": false,
+              "feedback": "Do not swim with a cast."
+            },
+            {
+              "text": "Il gesso beve molta acqua, ha sete.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Deve usare una protezione di plastica.",
+          "english": "You must use a plastic protection.",
+          "choices": [
+            {
+              "text": "Va bene, la comprerò in farmacia.",
+              "isCorrect": true,
+              "feedback": "Planning to get the necessary supplies."
+            },
+            {
+              "text": "La plastica fa male all'ambiente.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to medical necessity."
+            },
+            {
+              "text": "Voglio una protezione d'oro zecchino.",
+              "isCorrect": false,
+              "feedback": "Unrealistic request."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco la ricetta per i farmaci. La porti con sé.",
+          "english": "Here is the prescription for the medications. Take it with you.",
+          "choices": [
+            {
+              "text": "Grazie mille, dottore. Quando devo tornare?",
+              "isCorrect": true,
+              "feedback": "Asking about follow-up care."
+            },
+            {
+              "text": "Questa carta è buona da mangiare?",
+              "isCorrect": false,
+              "feedback": "Prescriptions are documents, not food."
+            },
+            {
+              "text": "Non so leggere questa scrittura.",
+              "isCorrect": false,
+              "feedback": "Common joke about doctors' handwriting, but not helpful."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Deve tornare tra due settimane per un controllo.",
+          "english": "You must come back in two weeks for a check-up.",
+          "choices": [
+            {
+              "text": "Perfetto, segnerò l'appuntamento sul telefono.",
+              "isCorrect": true,
+              "feedback": "Good organization for follow-up."
+            },
+            {
+              "text": "Due settimane sono mille anni per me.",
+              "isCorrect": false,
+              "feedback": "Exaggeration."
+            },
+            {
+              "text": "Torno tra dieci minuti, va bene?",
+              "isCorrect": false,
+              "feedback": "The doctor said two weeks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "urgent_triage",
+      "title": "Urgent Triage",
+      "description": "You are at the triage desk with an emergency.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Prenda un numero e aspetti il suo turno.",
+          "english": "Take a number and wait for your turn.",
+          "choices": [
+            {
+              "text": "Ma è un'emergenza! Ho molto sangue!",
+              "isCorrect": true,
+              "feedback": "Communicating urgency when necessary."
+            },
+            {
+              "text": "Il numero dieci è il mio preferito.",
+              "isCorrect": false,
+              "feedback": "Don't chat about favorite numbers now."
+            },
+            {
+              "text": "Aspetto qui per sempre, non c'è fretta.",
+              "isCorrect": false,
+              "feedback": "If it's an emergency, you should say so."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi faccia vedere. Oh, questo è un codice rosso!",
+          "english": "Let me see. Oh, this is a red code!",
+          "choices": [
+            {
+              "text": "Cosa significa codice rosso? È grave?",
+              "isCorrect": true,
+              "feedback": "Clarifying the triage priority level."
+            },
+            {
+              "text": "Il rosso è il colore del mio vestito.",
+              "isCorrect": false,
+              "feedback": "Code red refers to priority, not fashion."
+            },
+            {
+              "text": "Mi piace il rosso, è un colore allegro.",
+              "isCorrect": false,
+              "feedback": "Contextually inappropriate."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Significa che è un'urgenza assoluta. Entri subito!",
+          "english": "It means it is an absolute urgency. Come in immediately!",
+          "choices": [
+            {
+              "text": "Va bene, vengo subito. Grazie per la velocità.",
+              "isCorrect": true,
+              "feedback": "Moving quickly as instructed."
+            },
+            {
+              "text": "Posso finire di leggere il mio libro prima?",
+              "isCorrect": false,
+              "feedback": "Urgency means you must go now."
+            },
+            {
+              "text": "No, preferisco aspettare fuori al sole.",
+              "isCorrect": false,
+              "feedback": "A 'code red' requires immediate entry."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "L'infermiere la aiuterà immediatamente.",
+          "english": "The nurse will help you immediately.",
+          "choices": [
+            {
+              "text": "Dov'è l'infermiere? Ho bisogno di aiuto.",
+              "isCorrect": true,
+              "feedback": "Looking for the assigned medical professional."
+            },
+            {
+              "text": "L'infermiere è un tipo di aeroplano?",
+              "isCorrect": false,
+              "feedback": "Basic vocabulary error."
+            },
+            {
+              "text": "Voglio un infermiere che parla cinese.",
+              "isCorrect": false,
+              "feedback": "Unreasonable request in this context."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Eccolo che arriva. Cerchi di respirare piano.",
+          "english": "Here he comes. Try to breathe slowly.",
+          "choices": [
+            {
+              "text": "Sto cercando di respirare, ma è difficile.",
+              "isCorrect": true,
+              "feedback": "Reporting difficulty following instructions."
+            },
+            {
+              "text": "Respiro come un drago che sputa fuoco.",
+              "isCorrect": false,
+              "feedback": "Bizarre and unhelpful description."
+            },
+            {
+              "text": "Non voglio respirare oggi, grazie.",
+              "isCorrect": false,
+              "feedback": "Breathing is not optional."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Mi dia un documento d'identità, per favore.",
+          "english": "Give me an ID document, please.",
+          "choices": [
+            {
+              "text": "Ecco la mia carta d'identità e la tessera sanitaria.",
+              "isCorrect": true,
+              "feedback": "Providing necessary identification for registration."
+            },
+            {
+              "text": "Ho solo una foto del mio cane.",
+              "isCorrect": false,
+              "feedback": "A photo of a dog is not an ID."
+            },
+            {
+              "text": "Non credo di avere un nome oggi.",
+              "isCorrect": false,
+              "feedback": "Please be serious during registration."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È allergico a qualche farmaco o lattice?",
+          "english": "Are you allergic to any medication or latex?",
+          "choices": [
+            {
+              "text": "No, non credo di avere allergie.",
+              "isCorrect": true,
+              "feedback": "Important safety information."
+            },
+            {
+              "text": "Sì, sono allergico ai fiori di campo.",
+              "isCorrect": false,
+              "feedback": "The question is about medications or latex."
+            },
+            {
+              "text": "Il lattice è un tipo di cioccolato?",
+              "isCorrect": false,
+              "feedback": "No, it's a material often used in medical gloves."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Dobbiamo metterle una flebo subito.",
+          "english": "Alright. We need to put an IV drip in immediately.",
+          "choices": [
+            {
+              "text": "Farà male? Ho molta paura degli aghi.",
+              "isCorrect": true,
+              "feedback": "Expressing a common fear."
+            },
+            {
+              "text": "Voglio una flebo di succo d'arancia.",
+              "isCorrect": false,
+              "feedback": "IV drips contain medical solutions."
+            },
+            {
+              "text": "Posso mettere la flebo nella mia borsa?",
+              "isCorrect": false,
+              "feedback": "No, it must go into a vein."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sarà solo un piccolo pizzico. Cerchi di non guardare.",
+          "english": "It will just be a little pinch. Try not to look.",
+          "choices": [
+            {
+              "text": "Va bene, guardo dall'altra parte. Grazie.",
+              "isCorrect": true,
+              "feedback": "Following advice to reduce anxiety."
+            },
+            {
+              "text": "Voglio guardare con quattro occhi.",
+              "isCorrect": false,
+              "feedback": "Unhelpful response."
+            },
+            {
+              "text": "Il pizzico è come un bacio di una zia?",
+              "isCorrect": false,
+              "feedback": "Strange comparison."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Fatto. Adesso la portiamo in una sala visite.",
+          "english": "Done. Now we are taking you to an examination room.",
+          "choices": [
+            {
+              "text": "Va bene, spero che il dottore arrivi presto.",
+              "isCorrect": true,
+              "feedback": "Patiently moving to the next stage of care."
+            },
+            {
+              "text": "Voglio una sala con la vista sul mare.",
+              "isCorrect": false,
+              "feedback": "Hospital rooms are for care, not views."
+            },
+            {
+              "text": "Posso guidare io il letto?",
+              "isCorrect": false,
+              "feedback": "No, the staff will move you."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

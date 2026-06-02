@@ -1,0 +1,953 @@
+{
+  "scenarioId": 96,
+  "conversations": [
+    {
+      "id": "emergency_toothache",
+      "title": "Emergency Toothache",
+      "description": "You have a severe toothache and need immediate help.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Vedo che ha un'emergenza. Cosa succede?",
+          "english": "Good morning. I see you have an emergency. What is happening?",
+          "choices": [
+            {
+              "text": "Ho un dolore fortissimo a un dente.",
+              "isCorrect": true,
+              "feedback": "Correct. Stating the problem clearly is important."
+            },
+            {
+              "text": "Vorrei fare una pulizia dei denti.",
+              "isCorrect": false,
+              "feedback": "A routine cleaning is not an emergency."
+            },
+            {
+              "text": "Ho perso il mio spazzolino nuovo.",
+              "isCorrect": false,
+              "feedback": "Losing a toothbrush is not a dental emergency."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. È un dolore continuo o viene e va?",
+          "english": "I understand. Is it a continuous pain or does it come and go?",
+          "choices": [
+            {
+              "text": "È un dolore continuo da stamattina.",
+              "isCorrect": true,
+              "feedback": "Good. Describing the nature of the pain helps."
+            },
+            {
+              "text": "Viene solo quando mangio un gelato.",
+              "isCorrect": false,
+              "feedback": "That would be sensitivity, not continuous pain."
+            },
+            {
+              "text": "Sì, vado dal dentista ogni anno.",
+              "isCorrect": false,
+              "feedback": "This doesn't answer the question about the pain."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Da quanto tempo ha questo dolore così forte?",
+          "english": "How long have you had such a strong pain?",
+          "choices": [
+            {
+              "text": "È iniziato ieri sera, molto tardi.",
+              "isCorrect": true,
+              "feedback": "Correct. Timing is important for diagnosis."
+            },
+            {
+              "text": "Non ho nessun dolore ai denti ora.",
+              "isCorrect": false,
+              "feedback": "You just said you had an emergency!"
+            },
+            {
+              "text": "Mi piace molto questo studio medico.",
+              "isCorrect": false,
+              "feedback": "Focus on the timeline of your symptoms."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sente dolore quando beve qualcosa di freddo?",
+          "english": "Do you feel pain when you drink something cold?",
+          "choices": [
+            {
+              "text": "Sì, sento un dolore molto acuto.",
+              "isCorrect": true,
+              "feedback": "Good. Sensitivity to cold is a key symptom."
+            },
+            {
+              "text": "No, preferisco bere solo acqua calda.",
+              "isCorrect": false,
+              "feedback": "The dentist is asking if cold triggers pain."
+            },
+            {
+              "text": "Mi piace l'acqua gassata fredda.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the diagnostic question."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "La gengiva sembra un po' gonfia. Forse c'è un ascesso.",
+          "english": "The gum looks a bit swollen. Perhaps there is an abscess.",
+          "choices": [
+            {
+              "text": "Sì, sento la gengiva molto calda.",
+              "isCorrect": true,
+              "feedback": "Correct. Swelling and heat are signs of infection."
+            },
+            {
+              "text": "Voglio solo un dente più bianco.",
+              "isCorrect": false,
+              "feedback": "Whitening is not for swollen gums."
+            },
+            {
+              "text": "Non mi piacciono le gengive gonfie.",
+              "isCorrect": false,
+              "feedback": "A simple statement of dislike isn't helpful."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Dobbiamo fare una radiografia per vedere bene.",
+          "english": "We need to do an X-ray to see properly.",
+          "choices": [
+            {
+              "text": "Va bene, la radiografia è necessaria.",
+              "isCorrect": true,
+              "feedback": "Correct. Agreeing to the diagnostic procedure."
+            },
+            {
+              "text": "Preferisco fare una fotografia ora.",
+              "isCorrect": false,
+              "feedback": "A photo won't show the root of the tooth."
+            },
+            {
+              "text": "Non voglio vedere il mio dente.",
+              "isCorrect": false,
+              "feedback": "The X-ray is for the dentist to see, not you."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "La radiografia conferma il problema. È una carie profonda.",
+          "english": "The X-ray confirms the problem. It is a deep cavity.",
+          "choices": [
+            {
+              "text": "È possibile curare questa carie?",
+              "isCorrect": true,
+              "feedback": "Good. Asking about the treatment plan."
+            },
+            {
+              "text": "Mi piacciono molto le carie nere.",
+              "isCorrect": false,
+              "feedback": "Cavities are never good things."
+            },
+            {
+              "text": "Ho molti denti bianchi in bocca.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the specific deep cavity."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, dobbiamo pulire bene la zona adesso.",
+          "english": "Yes, we need to clean the area well now.",
+          "choices": [
+            {
+              "text": "Spero che il dolore passi subito.",
+              "isCorrect": true,
+              "feedback": "Correct. Expressing the goal of treatment."
+            },
+            {
+              "text": "Posso pulire io con lo spazzolino?",
+              "isCorrect": false,
+              "feedback": "The dentist must clean a deep cavity professionally."
+            },
+            {
+              "text": "La pulizia del pavimento è ottima.",
+              "isCorrect": false,
+              "feedback": "The dentist is talking about your tooth."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Le faccio un'anestesia così non sente nulla.",
+          "english": "I'll give you an anesthetic so you won't feel anything.",
+          "choices": [
+            {
+              "text": "Grazie, ho molta paura del dolore.",
+              "isCorrect": true,
+              "feedback": "Correct. Many patients feel this way."
+            },
+            {
+              "text": "Preferisco dormire durante la cena.",
+              "isCorrect": false,
+              "feedback": "Anesthesia for a tooth isn't for sleeping at dinner."
+            },
+            {
+              "text": "Non mi serve l'anestesia per correre.",
+              "isCorrect": false,
+              "feedback": "You're at the dentist, not running a race."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco fatto. Come si sente ora?",
+          "english": "There we go. How do you feel now?",
+          "choices": [
+            {
+              "text": "Mi sento meglio, il dolore è sparito.",
+              "isCorrect": true,
+              "feedback": "Correct. Reporting the relief after treatment."
+            },
+            {
+              "text": "Mi sento come se fossi al mare.",
+              "isCorrect": false,
+              "feedback": "An odd and irrelevant description."
+            },
+            {
+              "text": "Il dente è ancora molto stanco.",
+              "isCorrect": false,
+              "feedback": "Teeth don't get tired."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "booking_cleaning",
+      "title": "Booking a Cleaning",
+      "description": "You call the dentist's office to schedule a routine cleaning.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Studio dentistico Rossi, buongiorno. Come posso aiutarla?",
+          "english": "Rossi Dental Studio, good morning. How can I help you?",
+          "choices": [
+            {
+              "text": "Vorrei prenotare una pulizia dei denti.",
+              "isCorrect": true,
+              "feedback": "Correct. A standard way to request a cleaning."
+            },
+            {
+              "text": "Vorrei comprare un nuovo dente.",
+              "isCorrect": false,
+              "feedback": "You don't buy teeth like groceries."
+            },
+            {
+              "text": "Vorrei pulire il mio ufficio domani.",
+              "isCorrect": false,
+              "feedback": "This is a dental studio, not a cleaning service."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Quando è stata l'ultima volta che ha fatto una pulizia?",
+          "english": "Sure. When was the last time you had a cleaning?",
+          "choices": [
+            {
+              "text": "Circa un anno fa, se non sbaglio.",
+              "isCorrect": true,
+              "feedback": "Correct. Providing historical information."
+            },
+            {
+              "text": "Ho mangiato una mela stamattina.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to your last professional cleaning."
+            },
+            {
+              "text": "Non mi piace pulire la mia casa.",
+              "isCorrect": false,
+              "feedback": "The question is about dental cleaning."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene. Preferisce la mattina o il pomeriggio?",
+          "english": "Alright. Do you prefer the morning or the afternoon?",
+          "choices": [
+            {
+              "text": "Preferisco venire di mattina presto.",
+              "isCorrect": true,
+              "feedback": "Correct. Stating your preference for the appointment."
+            },
+            {
+              "text": "Preferisco mangiare la pizza calda.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to scheduling an appointment."
+            },
+            {
+              "text": "La mattina è dopo la notte fonda.",
+              "isCorrect": false,
+              "feedback": "A factual statement that doesn't answer the choice."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Abbiamo posto martedì alle dieci. Va bene per lei?",
+          "english": "We have an opening Tuesday at ten. Does that work for you?",
+          "choices": [
+            {
+              "text": "Sì, martedì alle dieci va benissimo.",
+              "isCorrect": true,
+              "feedback": "Correct. Confirming the suggested time."
+            },
+            {
+              "text": "No, martedì preferisco andare al cinema.",
+              "isCorrect": false,
+              "feedback": "A bit rude; just say if you're available."
+            },
+            {
+              "text": "Il martedì è il giorno dopo lunedì.",
+              "isCorrect": false,
+              "feedback": "Doesn't confirm if the time works for you."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Ha qualche dolore particolare al momento?",
+          "english": "Perfect. Do you have any particular pain at the moment?",
+          "choices": [
+            {
+              "text": "No, non ho dolore, solo un controllo.",
+              "isCorrect": true,
+              "feedback": "Correct. Confirming it's a routine check-up."
+            },
+            {
+              "text": "Sì, mi fa male il piede sinistro.",
+              "isCorrect": false,
+              "feedback": "The dentist only cares about dental pain."
+            },
+            {
+              "text": "Il dolore è una cosa molto brutta.",
+              "isCorrect": false,
+              "feedback": "A general statement, not an answer."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Ricordi di portare la sua tessera sanitaria.",
+          "english": "Great. Remember to bring your health insurance card.",
+          "choices": [
+            {
+              "text": "Sì, la metterò subito nel portafoglio.",
+              "isCorrect": true,
+              "feedback": "Correct. Acknowledging the instruction."
+            },
+            {
+              "text": "Ho una tessera per il supermercato.",
+              "isCorrect": false,
+              "feedback": "That won't work at the dental office."
+            },
+            {
+              "text": "Non mi piacciono le tessere di plastica.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the requirement."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ha bisogno anche di un controllo con il dottore?",
+          "english": "Do you also need a check-up with the doctor?",
+          "choices": [
+            {
+              "text": "Sì, vorrei fare un controllo generale.",
+              "isCorrect": true,
+              "feedback": "Correct. Opting for a full examination."
+            },
+            {
+              "text": "No, il dottore è troppo alto per me.",
+              "isCorrect": false,
+              "feedback": "A doctor's height doesn't matter for a check-up."
+            },
+            {
+              "text": "Sì, mi piace controllare il meteo.",
+              "isCorrect": false,
+              "feedback": "The question is about a dental check-up."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "D'accordo. Il controllo è incluso nella seduta.",
+          "english": "Alright. The check-up is included in the session.",
+          "choices": [
+            {
+              "text": "Bene, allora facciamo tutto martedì.",
+              "isCorrect": true,
+              "feedback": "Correct. Finalizing the plan for the appointment."
+            },
+            {
+              "text": "Preferisco fare tutto in un anno.",
+              "isCorrect": false,
+              "feedback": "The appointment is for a single session."
+            },
+            {
+              "text": "La seduta è molto comoda per sedersi.",
+              "isCorrect": false,
+              "feedback": "In this context, 'seduta' means 'session/appointment'."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Le mando un messaggio di promemoria lunedì.",
+          "english": "I'll send you a reminder message on Monday.",
+          "choices": [
+            {
+              "text": "Grazie, è molto gentile da parte sua.",
+              "isCorrect": true,
+              "feedback": "Correct. A polite response to the offer."
+            },
+            {
+              "text": "Non so come leggere i messaggi lunghi.",
+              "isCorrect": false,
+              "feedback": "A reminder is usually a short message."
+            },
+            {
+              "text": "Il lunedì è l'inizio della settimana.",
+              "isCorrect": false,
+              "feedback": "A factual statement that ignores the offer."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie a lei. Ci vediamo martedì.",
+          "english": "Thank YOU. See you Tuesday.",
+          "choices": [
+            {
+              "text": "Grazie mille, buona giornata e a presto.",
+              "isCorrect": true,
+              "feedback": "Correct. A standard polite closing."
+            },
+            {
+              "text": "Martedì è un giorno molto lontano.",
+              "isCorrect": false,
+              "feedback": "Not a standard way to end a call."
+            },
+            {
+              "text": "Mi piacciono molto i giorni della settimana.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and awkward closing."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fillings_cavities",
+      "title": "Fillings & Cavities",
+      "description": "The dentist explains you need a filling and performs the procedure.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Oggi dobbiamo fare un'otturazione su questo dente.",
+          "english": "Today we need to do a filling on this tooth.",
+          "choices": [
+            {
+              "text": "C'è una carie molto grande, dottore?",
+              "isCorrect": true,
+              "feedback": "Correct. Asking about the size of the cavity."
+            },
+            {
+              "text": "Posso fare un'otturazione al mio cane?",
+              "isCorrect": false,
+              "feedback": "Dentists treat humans, not pets."
+            },
+            {
+              "text": "L'otturazione è un tipo di pasta?",
+              "isCorrect": false,
+              "feedback": "It's a dental procedure, not food."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, c'è una piccola carie. Nulla di grave.",
+          "english": "Yes, there is a small cavity. Nothing serious.",
+          "choices": [
+            {
+              "text": "Meno male, ero un po' preoccupato.",
+              "isCorrect": true,
+              "feedback": "Correct. Expressing relief at the news."
+            },
+            {
+              "text": "Mi piace avere piccole carie nere.",
+              "isCorrect": false,
+              "feedback": "Nobody should like having cavities."
+            },
+            {
+              "text": "La carie è un animale della foresta?",
+              "isCorrect": false,
+              "feedback": "A carie is tooth decay, not an animal."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Vuole l'anestesia o preferisce provare senza?",
+          "english": "Do you want an anesthetic or prefer to try without?",
+          "choices": [
+            {
+              "text": "Preferisco l'anestesia, per favore.",
+              "isCorrect": true,
+              "feedback": "Correct. Choosing to avoid pain."
+            },
+            {
+              "text": "Voglio un'anestesia per il mio braccio.",
+              "isCorrect": false,
+              "feedback": "The procedure is on your tooth."
+            },
+            {
+              "text": "Senza anestesia si corre più veloci.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to a dental procedure."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "D'accordo, meglio non sentire dolore. Un attimo solo.",
+          "english": "Alright, better not to feel pain. Just a moment.",
+          "choices": [
+            {
+              "text": "Va bene, attendo che faccia effetto.",
+              "isCorrect": true,
+              "feedback": "Correct. Understanding the need to wait."
+            },
+            {
+              "text": "Voglio ballare mentre aspetto l'effetto.",
+              "isCorrect": false,
+              "feedback": "You should stay still in the dental chair."
+            },
+            {
+              "text": "L'effetto è una cosa molto strana.",
+              "isCorrect": false,
+              "feedback": "A vague and unhelpful comment."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Adesso sente il dente addormentato?",
+          "english": "Do you feel the tooth is numb now?",
+          "choices": [
+            {
+              "text": "Sì, non sento più nulla da questa parte.",
+              "isCorrect": true,
+              "feedback": "Correct. Confirming the anesthetic is working."
+            },
+            {
+              "text": "Il dente sta sognando cose bellissime.",
+              "isCorrect": false,
+              "feedback": "'Addormentato' here means numb, not dreaming."
+            },
+            {
+              "text": "Sento un rumore di sveglia forte.",
+              "isCorrect": false,
+              "feedback": "The question is about physical sensation."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Bene. Iniziamo a pulire la carie.",
+          "english": "Good. Let's start cleaning the cavity.",
+          "choices": [
+            {
+              "text": "D'accordo, faccia pure con calma.",
+              "isCorrect": true,
+              "feedback": "Correct. Letting the dentist proceed."
+            },
+            {
+              "text": "Pulire la carie è come pulire il mare.",
+              "isCorrect": false,
+              "feedback": "A very strange and inaccurate comparison."
+            },
+            {
+              "text": "Non mi piace il rumore del trapano.",
+              "isCorrect": false,
+              "feedback": "Though true, it doesn't help the procedure."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sta andando tutto bene. Ancora pochi minuti.",
+          "english": "Everything is going well. Just a few more minutes.",
+          "choices": [
+            {
+              "text": "Ottimo, sono molto tranquillo ora.",
+              "isCorrect": true,
+              "feedback": "Correct. Keeping a positive attitude."
+            },
+            {
+              "text": "Pochi minuti sono troppi per me.",
+              "isCorrect": false,
+              "feedback": "A bit impatient for a dental procedure."
+            },
+            {
+              "text": "Il tempo vola quando ci si diverte.",
+              "isCorrect": false,
+              "feedback": "A dental procedure is rarely fun."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ora mettiamo il materiale per l'otturazione.",
+          "english": "Now we are putting in the filling material.",
+          "choices": [
+            {
+              "text": "Sarà dello stesso colore del mio dente?",
+              "isCorrect": true,
+              "feedback": "Correct. Asking about the aesthetics of the filling."
+            },
+            {
+              "text": "Mettiamo del cioccolato nel dente?",
+              "isCorrect": false,
+              "feedback": "Sugar causes cavities; it doesn't fix them."
+            },
+            {
+              "text": "Il materiale è fatto di carta vecchia?",
+              "isCorrect": false,
+              "feedback": "Dental materials are medical-grade, not paper."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Adesso morda forte per controllare l'altezza.",
+          "english": "Now bite down hard to check the height.",
+          "choices": [
+            {
+              "text": "Sembra tutto a posto, non sento fastidio.",
+              "isCorrect": true,
+              "feedback": "Correct. Reporting the bite feels normal."
+            },
+            {
+              "text": "Mordo la mela ogni mattina presto.",
+              "isCorrect": false,
+              "feedback": "The dentist wants you to bite now."
+            },
+            {
+              "text": "I miei denti sono molto alti oggi.",
+              "isCorrect": false,
+              "feedback": "Teeth don't change height suddenly."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Abbiamo finito per oggi.",
+          "english": "Perfect. We are finished for today.",
+          "choices": [
+            {
+              "text": "Grazie mille, dottore. A presto.",
+              "isCorrect": true,
+              "feedback": "Correct. A polite way to conclude."
+            },
+            {
+              "text": "Finiamo di mangiare la torta ora?",
+              "isCorrect": false,
+              "feedback": "You're at the dentist, not a bakery."
+            },
+            {
+              "text": "Ho finito tutti i miei compiti.",
+              "isCorrect": false,
+              "feedback": "The dentist is talking about the procedure."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aftercare_payment",
+      "title": "Aftercare & Payment",
+      "description": "You receive instructions after the procedure and pay at the desk.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Abbiamo finito. Può sciacquare la bocca.",
+          "english": "We've finished. You can rinse your mouth.",
+          "choices": [
+            {
+              "text": "Va bene, uso l'acqua del bicchiere.",
+              "isCorrect": true,
+              "feedback": "Correct. Following the immediate instruction."
+            },
+            {
+              "text": "Voglio sciacquare i miei vestiti.",
+              "isCorrect": false,
+              "feedback": "This is for your mouth, not laundry."
+            },
+            {
+              "text": "L'acqua è bagnata e molto fredda.",
+              "isCorrect": false,
+              "feedback": "A trivial observation."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "L'anestesia durerà ancora per circa un'ora.",
+          "english": "The anesthetic will last for about another hour.",
+          "choices": [
+            {
+              "text": "Capisco, ho ancora la bocca addormentata.",
+              "isCorrect": true,
+              "feedback": "Correct. Acknowledging the duration of numbness."
+            },
+            {
+              "text": "L'ora è fatta di sessanta minuti.",
+              "isCorrect": false,
+              "feedback": "Factual but irrelevant to the warning."
+            },
+            {
+              "text": "Voglio un'anestesia che duri un anno.",
+              "isCorrect": false,
+              "feedback": "That would be very problematic!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Cerchi di non mangiare finché non passa l'effetto.",
+          "english": "Try not to eat until the effect wears off.",
+          "choices": [
+            {
+              "text": "Va bene, aspetterò prima di pranzare.",
+              "isCorrect": true,
+              "feedback": "Correct. Agreeing to follow post-op advice."
+            },
+            {
+              "text": "Ho molta fame e voglio un panino.",
+              "isCorrect": false,
+              "feedback": "Eating while numb can lead to biting your cheek."
+            },
+            {
+              "text": "Mangiare è il mio hobby preferito.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the medical advice."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Se sente dolore più tardi, può prendere un analgesico.",
+          "english": "If you feel pain later, you can take a painkiller.",
+          "choices": [
+            {
+              "text": "D'accordo, ne ho alcuni a casa.",
+              "isCorrect": true,
+              "feedback": "Correct. Confirming you have medicine available."
+            },
+            {
+              "text": "Il dolore è un mio caro amico.",
+              "isCorrect": false,
+              "feedback": "A very strange thing to say."
+            },
+            {
+              "text": "Prendo un analgesico per ogni dente.",
+              "isCorrect": false,
+              "feedback": "Follow the dosage instructions on the packet!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ha domande sul trattamento di oggi?",
+          "english": "Do you have questions about today's treatment?",
+          "choices": [
+            {
+              "text": "No, è tutto chiaro, grazie mille.",
+              "isCorrect": true,
+              "feedback": "Correct. A polite way to say you're informed."
+            },
+            {
+              "text": "Perché i denti sono bianchi e non blu?",
+              "isCorrect": false,
+              "feedback": "A philosophical question, not a medical one."
+            },
+            {
+              "text": "Ho molte domande sulla vita privata.",
+              "isCorrect": false,
+              "feedback": "Keep questions relevant to the dental visit."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Dobbiamo rivederci tra sei mesi per un controllo.",
+          "english": "We need to see each other again in six months for a check-up.",
+          "choices": [
+            {
+              "text": "Va bene, segnerò la data sul calendario.",
+              "isCorrect": true,
+              "feedback": "Correct. Planning for future care."
+            },
+            {
+              "text": "Sei mesi sono troppi giorni da contare.",
+              "isCorrect": false,
+              "feedback": "Standard interval for dental check-ups."
+            },
+            {
+              "text": "Mi piace vedere il dottore ogni giorno.",
+              "isCorrect": false,
+              "feedback": "Unnecessary for routine dental care."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Andiamo alla reception per il pagamento.",
+          "english": "Let's go to the reception for payment.",
+          "choices": [
+            {
+              "text": "Certamente, la seguo subito.",
+              "isCorrect": true,
+              "feedback": "Correct. Moving to the next step of the visit."
+            },
+            {
+              "text": "La reception è un posto per dormire.",
+              "isCorrect": false,
+              "feedback": "No, that would be a hotel reception."
+            },
+            {
+              "text": "Non voglio pagare perché sono povero.",
+              "isCorrect": false,
+              "feedback": "Services must be paid for."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Il totale per oggi è di ottanta euro.",
+          "english": "The total for today is eighty euros.",
+          "choices": [
+            {
+              "text": "Va bene, il prezzo mi sembra giusto.",
+              "isCorrect": true,
+              "feedback": "Correct. Acknowledging the cost."
+            },
+            {
+              "text": "Ottanta euro sono troppi per un dente.",
+              "isCorrect": false,
+              "feedback": "Dental procedures have specific costs."
+            },
+            {
+              "text": "Ho solo tre euro nel mio zaino.",
+              "isCorrect": false,
+              "feedback": "You'll need a better way to pay!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Preferisce pagare in contanti o con la carta?",
+          "english": "Do you prefer to pay in cash or with a card?",
+          "choices": [
+            {
+              "text": "Pago con la carta di credito, grazie.",
+              "isCorrect": true,
+              "feedback": "Correct. Selecting a payment method."
+            },
+            {
+              "text": "Preferisco pagare con una vecchia mela.",
+              "isCorrect": false,
+              "feedback": "Medical offices don't accept fruit as payment."
+            },
+            {
+              "text": "La carta è fatta di alberi della foresta.",
+              "isCorrect": false,
+              "feedback": "Not relevant to a payment card."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco la ricevuta. Buona giornata!",
+          "english": "Here is the receipt. Have a good day!",
+          "choices": [
+            {
+              "text": "Grazie mille, buona giornata a lei!",
+              "isCorrect": true,
+              "feedback": "Correct. Polite closing."
+            },
+            {
+              "text": "La ricevuta è un pezzo di carta inutile.",
+              "isCorrect": false,
+              "feedback": "Receipts are important for your records."
+            },
+            {
+              "text": "Buona giornata a tutti gli animali.",
+              "isCorrect": false,
+              "feedback": "A bit broad for a professional goodbye."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1089 @@
+{
+  "scenarioId": 93,
+  "conversations": [
+    {
+      "id": "common_cold",
+      "title": "Common Cold Symptoms",
+      "description": "Describe cold and flu symptoms to the pharmacist.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Come posso aiutarla oggi?",
+          "english": "Good morning. How can I help you today?",
+          "choices": [
+            {
+              "text": "Buongiorno. Non mi sento molto bene, ho un forte raffreddore.",
+              "english": "Good morning. I don't feel very well, I have a bad cold.",
+              "isCorrect": true,
+              "feedback": "Correct. Starting with a greeting and a general description of the problem."
+            },
+            {
+              "text": "Ho bisogno di una medicina per il mal di mare, per favore.",
+              "isCorrect": false,
+              "feedback": "This is for seasickness, not for a cold."
+            },
+            {
+              "text": "Vorrei qualcosa per il dolore ai piedi dopo la corsa.",
+              "isCorrect": false,
+              "feedback": "This is for foot pain, not for a cold."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. Ha anche la febbre o solo il raffreddore?",
+          "english": "I see. Do you also have a fever or just a cold?",
+          "choices": [
+            {
+              "text": "Ho un po' di febbre e mi fa male la gola quando deglutisco.",
+              "english": "I have a little fever and my throat hurts when I swallow.",
+              "isCorrect": true,
+              "feedback": "Perfect. Describing specific symptoms helps the pharmacist."
+            },
+            {
+              "text": "Ho male alla spalla sinistra da quando mi sono svegliato.",
+              "isCorrect": false,
+              "feedback": "This is about shoulder pain, not cold symptoms."
+            },
+            {
+              "text": "Mi prude molto il braccio destro da stamattina presto.",
+              "isCorrect": false,
+              "feedback": "This is about an itch, not cold symptoms."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ha anche la tosse? È una tosse secca o grassa?",
+          "english": "Do you also have a cough? Is it a dry or productive cough?",
+          "choices": [
+            {
+              "text": "Sì, ho anche la tosse. È una tosse secca e molto fastidiosa.",
+              "english": "Yes, I also have a cough. It's a dry and very annoying cough.",
+              "isCorrect": true,
+              "feedback": "Good job specifying the type of cough."
+            },
+            {
+              "text": "Ho bisogno di un termometro per misurare la febbre alta.",
+              "isCorrect": false,
+              "feedback": "The pharmacist asked about your cough, not a thermometer."
+            },
+            {
+              "text": "Prendo queste vitamine ogni giorno prima di fare colazione.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the question about your cough."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "D'accordo. Le consiglio questo sciroppo per la tosse e queste pastiglie per la gola.",
+          "english": "Alright. I recommend this cough syrup and these throat lozenges.",
+          "choices": [
+            {
+              "text": "Grazie. Quante volte al giorno devo prendere lo sciroppo?",
+              "english": "Thank you. How many times a day should I take the syrup?",
+              "isCorrect": true,
+              "feedback": "Great question. Always clarify the dosage."
+            },
+            {
+              "text": "Posso mettere questa crema sulla pelle tre volte al giorno?",
+              "isCorrect": false,
+              "feedback": "You are talking about syrup, not a skin cream."
+            },
+            {
+              "text": "Deve darmi una ricetta medica per comprare questo sciroppo?",
+              "isCorrect": false,
+              "feedback": "Ask about the dosage first as the pharmacist suggested the product."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Prenda un cucchiaio di sciroppo tre volte al giorno, dopo i pasti.",
+          "english": "Take one tablespoon of syrup three times a day, after meals.",
+          "choices": [
+            {
+              "text": "Tre volte al giorno dopo i pasti. Ho capito, grazie mille.",
+              "english": "Three times a day after meals. I understood, thank you very much.",
+              "isCorrect": true,
+              "feedback": "Excellent confirmation of instructions."
+            },
+            {
+              "text": "Sì, una volta al giorno prima di dormire, ho capito bene.",
+              "isCorrect": false,
+              "feedback": "The dosage is three times a day, not once."
+            },
+            {
+              "text": "Posso bere dell'alcol mentre prendo questa medicina forte?",
+              "isCorrect": false,
+              "feedback": "Wait for the pharmacist to mention alcohol or ask later."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Le serve altro? Magari dei fazzoletti o della vitamina C?",
+          "english": "Do you need anything else? Maybe some tissues or Vitamin C?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Prendo anche una confezione di fazzoletti e della vitamina C.",
+              "english": "Yes, thank you. I'll also take a pack of tissues and some Vitamin C.",
+              "isCorrect": true,
+              "feedback": "Good choice, these are helpful for a cold."
+            },
+            {
+              "text": "No, vorrei solo dei cerotti per questa ferita sulla gamba.",
+              "isCorrect": false,
+              "feedback": "You are treating a cold, not a leg wound."
+            },
+            {
+              "text": "Preferisco comprare uno spazzolino nuovo e del dentifricio.",
+              "isCorrect": false,
+              "feedback": "Not relevant to your current illness."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco a lei. Ha delle allergie a qualche farmaco particolare?",
+          "english": "Here you go. Do you have any allergies to any particular medication?",
+          "choices": [
+            {
+              "text": "No, non ho nessuna allergia ai farmaci che io sappia.",
+              "english": "No, I don't have any medication allergies as far as I know.",
+              "isCorrect": true,
+              "feedback": "Important information for safety."
+            },
+            {
+              "text": "Sì, sono allergico ai gatti e anche ai fiori in primavera.",
+              "isCorrect": false,
+              "feedback": "The pharmacist asked about drugs, not animals or plants."
+            },
+            {
+              "text": "Amo molto mangiare la pasta con il sugo di pomodoro fresco.",
+              "isCorrect": false,
+              "feedback": "Completely off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Bene. Ricordi di bere molta acqua e di riposare il più possibile.",
+          "english": "Good. Remember to drink plenty of water and rest as much as possible.",
+          "choices": [
+            {
+              "text": "Lo farò. Posso prendere queste pastiglie a stomaco vuoto?",
+              "english": "I will. Can I take these tablets on an empty stomach?",
+              "isCorrect": true,
+              "feedback": "Another good question about how to take the medicine."
+            },
+            {
+              "text": "Mi piace correre nel parco ogni mattina quando c'è il sole.",
+              "isCorrect": false,
+              "feedback": "The pharmacist told you to rest!"
+            },
+            {
+              "text": "Quante ore devo dormire per sentirmi di nuovo bene domani?",
+              "isCorrect": false,
+              "feedback": "A bit too specific for a pharmacist."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "È meglio prenderle dopo aver mangiato qualcosa di leggero.",
+          "english": "It's better to take them after eating something light.",
+          "choices": [
+            {
+              "text": "D'accordo, seguirò il suo consiglio. Quanto costano questi prodotti?",
+              "english": "Alright, I'll follow your advice. How much do these products cost?",
+              "isCorrect": true,
+              "feedback": "Moving towards the payment."
+            },
+            {
+              "text": "Va bene, allora vado subito a mangiare una pizza enorme.",
+              "isCorrect": false,
+              "feedback": "Pizza is not a 'light' meal."
+            },
+            {
+              "text": "Posso avere uno sconto se compro due confezioni di sciroppo?",
+              "isCorrect": false,
+              "feedback": "Inappropriate for a pharmacy."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "In totale sono quindici euro e cinquanta centesimi.",
+          "english": "In total it is fifteen euros and fifty cents.",
+          "choices": [
+            {
+              "text": "Va bene, ecco la carta di credito. Grazie ancora.",
+              "english": "Alright, here is the credit card. thanks again.",
+              "isCorrect": true,
+              "feedback": "Standard way to finish the transaction."
+            },
+            {
+              "text": "Non ho soldi con me, posso pagare la prossima settimana?",
+              "isCorrect": false,
+              "feedback": "You must pay for your items now."
+            },
+            {
+              "text": "È troppo caro, non voglio più comprare niente qui oggi.",
+              "isCorrect": false,
+              "feedback": "Rude and you need the medicine."
+            }
+          ]
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Grazie a lei. Spero che si senta meglio presto. Arrivederci.",
+          "english": "Thank you. I hope you feel better soon. Goodbye.",
+          "choices": [
+            {
+              "text": "Grazie, buona giornata e arrivederci.",
+              "english": "Thank you, have a good day and goodbye.",
+              "isCorrect": true,
+              "feedback": "Polite ending to the conversation."
+            },
+            {
+              "text": "Mi dica dove posso mangiare qui vicino.",
+              "isCorrect": false,
+              "feedback": "The conversation is over, just say goodbye."
+            },
+            {
+              "text": "Spero che domani piova molto forte.",
+              "isCorrect": false,
+              "feedback": "A bit strange to say to a pharmacist."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "headache_stomach",
+      "title": "Headache & Stomach Pain",
+      "description": "Dealing with physical pain and digestive issues.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Mi dica, cosa succede?",
+          "english": "Good morning. Tell me, what's happening?",
+          "choices": [
+            {
+              "text": "Buongiorno. Ho un forte dolore di testa da stamattina.",
+              "english": "Good morning. I have a bad headache since this morning.",
+              "isCorrect": true,
+              "feedback": "Clear description of the problem and when it started."
+            },
+            {
+              "text": "Buongiorno. Mi serve un pettine per i miei capelli lunghi.",
+              "isCorrect": false,
+              "feedback": "A comb is not for a headache."
+            },
+            {
+              "text": "Cerco un dentifricio per denti sensibili al freddo, grazie.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to a headache."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Le fa male solo la testa o ha altri sintomi?",
+          "english": "Is it just your head or do you have other symptoms?",
+          "choices": [
+            {
+              "text": "Ho anche mal di stomaco e un po' di bruciore.",
+              "english": "I also have a stomach ache and a bit of burning.",
+              "isCorrect": true,
+              "feedback": "Reporting all symptoms is important for a correct diagnosis."
+            },
+            {
+              "text": "Ho male al ginocchio destro dopo aver giocato a calcio.",
+              "isCorrect": false,
+              "feedback": "The question was about other symptoms related to your headache."
+            },
+            {
+              "text": "Mi sono tagliato il dito con un foglio di carta poco fa.",
+              "isCorrect": false,
+              "feedback": "Not related to your headache or stomach ache."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ha mangiato qualcosa di pesante ieri sera?",
+          "english": "Did you eat something heavy last night?",
+          "choices": [
+            {
+              "text": "Sì, ho mangiato molto tardi. Forse è per quello.",
+              "english": "Yes, I ate very late. Maybe that's why.",
+              "isCorrect": true,
+              "feedback": "Valid observation about your habits."
+            },
+            {
+              "text": "No, ho solo bevuto molta acqua fresca durante il giorno.",
+              "isCorrect": false,
+              "feedback": "Drinking water wouldn't cause these symptoms."
+            },
+            {
+              "text": "Mangio sempre molta frutta e verdura per restare in forma.",
+              "isCorrect": false,
+              "feedback": "Doesn't answer the specific question about last night."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Può essere. Le do queste pastiglie per il mal di testa e qualcosa per lo stomaco.",
+          "english": "It could be. I'll give you these pills for the headache and something for your stomach.",
+          "choices": [
+            {
+              "text": "Grazie. Devo prenderle a stomaco pieno o vuoto?",
+              "english": "Thank you. Should I take them on a full or empty stomach?",
+              "isCorrect": true,
+              "feedback": "Smart question. Knowing when to take medicine is crucial."
+            },
+            {
+              "text": "Posso mettere questo cerotto sulla mia testa che mi fa male?",
+              "isCorrect": false,
+              "feedback": "Plasters are for cuts, not for headaches."
+            },
+            {
+              "text": "Quante gocce di questo collirio devo mettere negli occhi?",
+              "isCorrect": false,
+              "feedback": "The pharmacist gave you pills, not eye drops."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Queste per lo stomaco meglio prima di mangiare. Quelle per la testa dopo i pasti.",
+          "english": "These for the stomach are better before eating. Those for the head after meals.",
+          "choices": [
+            {
+              "text": "Ho capito. Stomaco prima dei pasti, testa dopo. Grazie per l'aiuto.",
+              "english": "Understood. Stomach before meals, head after. Thanks for the help.",
+              "isCorrect": true,
+              "feedback": "Well done repeating the instructions correctly."
+            },
+            {
+              "text": "Prenderò tutto insieme prima di andare a dormire stasera.",
+              "isCorrect": false,
+              "feedback": "Follow the specific instructions for each medicine."
+            },
+            {
+              "text": "Dovrei prendere queste medicine ogni ora per tutto il giorno?",
+              "isCorrect": false,
+              "feedback": "The pharmacist didn't say that; it's too much."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Di nulla. Ha difficoltà a deglutire le pastiglie grandi?",
+          "english": "You're welcome. Do you have difficulty swallowing large tablets?",
+          "choices": [
+            {
+              "text": "Un po', preferisco le pastiglie piccole o quelle effervescenti.",
+              "english": "A bit, I prefer small tablets or effervescent ones.",
+              "isCorrect": true,
+              "feedback": "Good to mention your preferences for easier intake."
+            },
+            {
+              "text": "Sì, ho sempre sete quando mangio cibi molto salati.",
+              "isCorrect": false,
+              "feedback": "Not related to swallowing pills."
+            },
+            {
+              "text": "Non mi piace il sapore amaro di questa medicina liquida.",
+              "isCorrect": false,
+              "feedback": "The pharmacist was talking about tablets."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Allora le darò queste effervescenti, si sciolgono in un bicchiere d'acqua.",
+          "english": "Then I'll give you these effervescent ones, they dissolve in a glass of water.",
+          "choices": [
+            {
+              "text": "Ottimo, è molto più comodo per me. Quanto tempo ci vuole?",
+              "english": "Great, it's much more convenient for me. How long does it take?",
+              "isCorrect": true,
+              "feedback": "Asking about the process is helpful."
+            },
+            {
+              "text": "Posso sciogliere la pastiglia nel latte caldo invece dell'acqua?",
+              "isCorrect": false,
+              "feedback": "Use water as instructed unless told otherwise."
+            },
+            {
+              "text": "Mi serve anche uno spazzolino da denti nuovo, ne avete?",
+              "isCorrect": false,
+              "feedback": "Stay focused on the current health issue."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Si sciolgono in meno di un minuto. Beva subito dopo che sono sciolte.",
+          "english": "They dissolve in less than a minute. Drink immediately after they are dissolved.",
+          "choices": [
+            {
+              "text": "Perfetto. C'è qualche controindicazione se prendo anche altri farmaci?",
+              "english": "Perfect. Are there any contraindications if I take other drugs too?",
+              "isCorrect": true,
+              "feedback": "Checking for drug interactions is very important."
+            },
+            {
+              "text": "Posso aspettare un'ora prima di bere l'acqua con la medicina?",
+              "isCorrect": false,
+              "feedback": "The pharmacist said to drink it immediately."
+            },
+            {
+              "text": "Mi piace guardare le bollicine nell'acqua quando si scioglie.",
+              "isCorrect": false,
+              "feedback": "Irrelevant observation."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Se prende altri farmaci, è meglio consultare prima il suo medico.",
+          "english": "If you take other drugs, it's better to consult your doctor first.",
+          "choices": [
+            {
+              "text": "Va bene, chiederò al mio medico domani mattina per sicurezza.",
+              "english": "Alright, I'll ask my doctor tomorrow morning to be safe.",
+              "isCorrect": true,
+              "feedback": "Responsible decision."
+            },
+            {
+              "text": "Il mio medico è in vacanza, può dirmi lei cosa fare ora?",
+              "isCorrect": false,
+              "feedback": "The pharmacist already gave their advice."
+            },
+            {
+              "text": "Non prendo mai medicine perché preferisco i rimedi naturali.",
+              "isCorrect": false,
+              "feedback": "Contradicts the fact that you are buying medicine now."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certamente. Vuole anche un pacchetto di fazzoletti di carta?",
+          "english": "Certainly. Do you also want a pack of paper tissues?",
+          "choices": [
+            {
+              "text": "No grazie, ne ho già molti a casa. Quanto le devo?",
+              "english": "No thanks, I already have many at home. How much do I owe you?",
+              "isCorrect": true,
+              "feedback": "Moving to payment."
+            },
+            {
+              "text": "Sì, vorrei un intero cartone di fazzoletti, per favore.",
+              "isCorrect": false,
+              "feedback": "One pack is usually enough."
+            },
+            {
+              "text": "Preferisco un asciugamano di cotone invece dei fazzoletti.",
+              "isCorrect": false,
+              "feedback": "Not sold like that in a pharmacy."
+            }
+          ]
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Sono dodici euro in tutto. Accettiamo anche la carta.",
+          "english": "It's twelve euros in total. We also accept cards.",
+          "choices": [
+            {
+              "text": "Pago con la carta. Ecco a lei. Arrivederci e grazie.",
+              "english": "I'll pay with the card. Here you go. Goodbye and thanks.",
+              "isCorrect": true,
+              "feedback": "Polite conclusion."
+            },
+            {
+              "text": "Non ho contanti, posso tornare tra un'ora a pagare?",
+              "isCorrect": false,
+              "feedback": "They accept cards, so you can pay now."
+            },
+            {
+              "text": "Mi scusi, ma questo prezzo è troppo alto per me oggi.",
+              "isCorrect": false,
+              "feedback": "Rude."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skin_allergy",
+      "title": "Skin Allergy/Rash",
+      "description": "Show a skin problem to the pharmacist and get a cream.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. In cosa posso esserle utile?",
+          "english": "Good morning. How can I be of use?",
+          "choices": [
+            {
+              "text": "Buongiorno. Ho questa allergia sulla pelle, mi prudono molto le braccia.",
+              "english": "Good morning. I have this skin allergy, my arms itch a lot.",
+              "isCorrect": true,
+              "feedback": "Directly addressing the physical issue."
+            },
+            {
+              "text": "Ho bisogno di una pomata per i miei capelli secchi e fragili.",
+              "isCorrect": false,
+              "feedback": "This is about hair, not a skin allergy."
+            },
+            {
+              "text": "Vorrei un sapone profumato per il corpo alla lavanda, grazie.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to a skin allergy."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Vedo, è molto arrossato. Le prude molto?",
+          "english": "I see, it's very red. Does it itch a lot?",
+          "choices": [
+            {
+              "text": "Sì, molto. Ho questo problema da ieri sera dopo una passeggiata nel parco.",
+              "english": "Yes, a lot. I've had this problem since last night after a walk in the park.",
+              "isCorrect": true,
+              "feedback": "Providing context (when and where it started) is very helpful."
+            },
+            {
+              "text": "Sì, mi prude anche la testa dopo aver usato un nuovo shampoo.",
+              "isCorrect": false,
+              "feedback": "Focus on the current rash on your arms."
+            },
+            {
+              "text": "No, non prude affatto, ma il colore della pelle è molto strano.",
+              "isCorrect": false,
+              "feedback": "You just said it itches in the previous turn."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Potrebbe essere una reazione a qualche pianta. Le serve una pomata specifica.",
+          "english": "It could be a reaction to some plant. You need a specific ointment.",
+          "choices": [
+            {
+              "text": "Va bene. Come devo applicare la pomata?",
+              "english": "Alright. How should I apply the ointment?",
+              "isCorrect": true,
+              "feedback": "Asking for application instructions is the right move."
+            },
+            {
+              "text": "Posso mangiare questa pomata per la gola?",
+              "isCorrect": false,
+              "feedback": "Ointments are for external use only!"
+            },
+            {
+              "text": "Devo coprire le braccia con la lana?",
+              "isCorrect": false,
+              "feedback": "Wool might irritate the rash further."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Applichi uno strato sottile di pomata due volte al giorno, mattina e sera.",
+          "english": "Apply a thin layer of ointment twice a day, morning and evening.",
+          "choices": [
+            {
+              "text": "Due volte al giorno, mattina e sera. Devo coprire la pelle con una benda?",
+              "english": "Twice a day, morning and evening. Should I cover the skin with a bandage?",
+              "isCorrect": true,
+              "feedback": "Good follow-up question for clarification."
+            },
+            {
+              "text": "Posso applicare la pomata dieci volte al giorno per guarire prima?",
+              "isCorrect": false,
+              "feedback": "No, follow the recommended dosage."
+            },
+            {
+              "text": "Devo lavare le braccia con acqua molto calda prima di usarla?",
+              "isCorrect": false,
+              "feedback": "Hot water might make the itching worse."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "No, è meglio lasciarla scoperta per farla respirare.",
+          "english": "No, it's better to leave it uncovered to let it breathe.",
+          "choices": [
+            {
+              "text": "Perfetto. Grazie mille per il consiglio. Quanto costa questa pomata?",
+              "english": "Perfect. Thank you very much for the advice. How much is this ointment?",
+              "isCorrect": true,
+              "feedback": "Polite conclusion to the interaction."
+            },
+            {
+              "text": "Allora metterò una benda molto stretta per non sentire il prurito.",
+              "isCorrect": false,
+              "feedback": "The pharmacist just said to leave it uncovered."
+            },
+            {
+              "text": "Posso andare al mare e prendere il sole con questa pomata?",
+              "isCorrect": false,
+              "feedback": "Sun exposure might be bad for an allergy; ask first."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Costa otto euro. Le serve anche un sapone neutro per non irritare la pelle?",
+          "english": "It costs eight euros. Do you also need a neutral soap to not irritate the skin?",
+          "choices": [
+            {
+              "text": "Sì, è un'ottima idea. Prendo anche il sapone neutro, grazie.",
+              "english": "Yes, that's an excellent idea. I'll take the neutral soap too, thanks.",
+              "isCorrect": true,
+              "feedback": "Neutral soap is good for sensitive skin."
+            },
+            {
+              "text": "No, preferisco usare un sapone molto profumato ai fiori d'arancio.",
+              "isCorrect": false,
+              "feedback": "Perfumes can irritate allergic skin."
+            },
+            {
+              "text": "Il sapone è troppo caro, preferisco non lavarmi per qualche giorno.",
+              "isCorrect": false,
+              "feedback": "Hygiene is still important."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Bene. Ricordi di non grattarsi, altrimenti la situazione peggiora.",
+          "english": "Good. Remember not to scratch, otherwise the situation gets worse.",
+          "choices": [
+            {
+              "text": "Cercherò di non farlo, anche se è difficile perché prude molto.",
+              "english": "I'll try not to do it, even if it's difficult because it itches a lot.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the advice."
+            },
+            {
+              "text": "Mi gratto sempre molto forte perché mi piace la sensazione.",
+              "isCorrect": false,
+              "feedback": "Scratching will damage your skin and delay healing."
+            },
+            {
+              "text": "Posso usare una spazzola per grattarmi meglio senza usare le unghie?",
+              "isCorrect": false,
+              "feedback": "No, avoid any kind of scratching."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Lo so, ma grattarsi può causare infezioni. Usi la pomata appena sente prurito.",
+          "english": "I know, but scratching can cause infections. Use the ointment as soon as you feel itching.",
+          "choices": [
+            {
+              "text": "D'accordo, la userò subito. Questa pomata macchia i vestiti?",
+              "english": "Alright, I'll use it immediately. Does this ointment stain clothes?",
+              "isCorrect": true,
+              "feedback": "Practical question about the product."
+            },
+            {
+              "text": "Non mi importa delle infezioni, voglio solo che il prurito sparisca.",
+              "isCorrect": false,
+              "feedback": "Infections are serious; follow the advice."
+            },
+            {
+              "text": "Posso mettere la pomata sopra i vestiti invece che sulla pelle?",
+              "isCorrect": false,
+              "feedback": "It must be applied directly to the skin."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "No, non macchia, ma aspetti che sia assorbita prima di vestirsi.",
+          "english": "No, it doesn't stain, but wait for it to be absorbed before getting dressed.",
+          "choices": [
+            {
+              "text": "Capito. Aspetterò qualche minuto. Posso pagare con il bancomat?",
+              "english": "Understood. I'll wait a few minutes. Can I pay with a debit card?",
+              "isCorrect": true,
+              "feedback": "Moving to payment."
+            },
+            {
+              "text": "Mi vestirò subito perché ho molta fretta di andare al lavoro.",
+              "isCorrect": false,
+              "feedback": "Wait as instructed for better results."
+            },
+            {
+              "text": "Non voglio aspettare, la pomata deve asciugarsi in un secondo.",
+              "isCorrect": false,
+              "feedback": "Be patient."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certamente. In totale sono quindici euro. Ecco lo scontrino.",
+          "english": "Certainly. In total it is fifteen euros. Here is the receipt.",
+          "choices": [
+            {
+              "text": "Grazie. Spero che l'allergia passi in fretta. Buona giornata.",
+              "english": "Thanks. I hope the allergy passes quickly. Good day.",
+              "isCorrect": true,
+              "feedback": "Polite ending."
+            },
+            {
+              "text": "Non voglio lo scontrino, può buttarlo nel cestino per me?",
+              "isCorrect": false,
+              "feedback": "You should keep the receipt in case of problems."
+            },
+            {
+              "text": "Mi ridia i soldi, ho cambiato idea e non voglio più la pomata.",
+              "isCorrect": false,
+              "feedback": "Inappropriate after the transaction is done."
+            }
+          ]
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Speriamo di sì. Se non passa tra tre giorni, vada dal medico.",
+          "english": "Let's hope so. If it doesn't pass in three days, go to the doctor.",
+          "choices": [
+            {
+              "text": "Va bene, lo farò senz'altro. Grazie di tutto e arrivederci.",
+              "english": "Alright, I'll definitely do that. Thanks for everything and goodbye.",
+              "isCorrect": true,
+              "feedback": "Final goodbye."
+            },
+            {
+              "text": "Non andrò mai dal medico perché ho paura degli aghi e del sangue.",
+              "isCorrect": false,
+              "feedback": "You should prioritize your health."
+            },
+            {
+              "text": "Mi dica il nome di un bravo dermatologo qui in centro città.",
+              "isCorrect": false,
+              "feedback": "The pharmacist gave general advice to see 'a' doctor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dosage_advice",
+      "title": "Dosage & Advice",
+      "description": "Clarify how to take medication and ask about side effects.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ecco la sua medicina. Ha bisogno di altro?",
+          "english": "Here is your medicine. Do you need anything else?",
+          "choices": [
+            {
+              "text": "Sì, vorrei sapere se questo farmaco ha effetti collaterali.",
+              "english": "Yes, I would like to know if this drug has side effects.",
+              "isCorrect": true,
+              "feedback": "Asking about side effects is very responsible."
+            },
+            {
+              "text": "No, cerco solo un po' di cotone idrofilo e dell'alcol puro.",
+              "isCorrect": false,
+              "feedback": "The pharmacist asked if you need something 'else' besides the medicine."
+            },
+            {
+              "text": "Vorrei comprare anche un paio di occhiali da sole nuovi.",
+              "isCorrect": false,
+              "feedback": "Pharmacies don't usually sell fashion sunglasses."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Può dare un po' di sonnolenza. Meglio non guidare dopo averla presa.",
+          "english": "It can cause some drowsiness. Better not to drive after taking it.",
+          "choices": [
+            {
+              "text": "Ah, capisco. Allora la prenderò solo di sera prima di dormire.",
+              "english": "Ah, I see. Then I'll take it only in the evening before sleeping.",
+              "isCorrect": true,
+              "feedback": "Adjusting your schedule based on advice is smart."
+            },
+            {
+              "text": "Va bene, allora guiderò con molta attenzione per tornare a casa.",
+              "isCorrect": false,
+              "feedback": "The pharmacist said NOT to drive."
+            },
+            {
+              "text": "Non dormo mai bene la notte, questa medicina mi aiuterà?",
+              "isCorrect": false,
+              "feedback": "Drowsiness is a side effect, not the purpose of the drug."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "È una buona idea. Ricordi di non bere alcolici durante il trattamento.",
+          "english": "That's a good idea. Remember not to drink alcohol during the treatment.",
+          "choices": [
+            {
+              "text": "Va bene, niente alcol. Per quanti giorni devo prendere le pastiglie?",
+              "english": "Alright, no alcohol. For how many days should I take the pills?",
+              "isCorrect": true,
+              "feedback": "Good question about the duration of the treatment."
+            },
+            {
+              "text": "Posso bere solo un bicchiere di vino rosso a cena stasera?",
+              "isCorrect": false,
+              "feedback": "No alcohol means NO alcohol."
+            },
+            {
+              "text": "Mi piace molto bere la birra fredda quando fa molto caldo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and ignore the health warning."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Per cinque giorni. Se il dolore continua, deve andare dal medico.",
+          "english": "For five days. If the pain continues, you must go to the doctor.",
+          "choices": [
+            {
+              "text": "D'accordo. Cinque giorni. Serve la ricetta medica per questa medicina?",
+              "english": "Alright. Five days. Do I need a medical prescription for this medicine?",
+              "isCorrect": true,
+              "feedback": "Clarifying if a prescription is needed is important."
+            },
+            {
+              "text": "Prenderò la medicina per un mese intero per essere sicuro.",
+              "isCorrect": false,
+              "feedback": "Only five days as instructed."
+            },
+            {
+              "text": "Il dolore sparirà sicuramente in un'ora soltanto, ne sono certo.",
+              "isCorrect": false,
+              "feedback": "Don't assume immediate recovery."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "No, per questa non serve la ricetta. Sono dieci euro, grazie.",
+          "english": "No, you don't need a prescription for this one. It's ten euros, thank you.",
+          "choices": [
+            {
+              "text": "Ecco a lei dieci euro. Grazie mille per i consigli. Arrivederci.",
+              "english": "Here are ten euros. Thanks a lot for the advice. Goodbye.",
+              "isCorrect": true,
+              "feedback": "Perfect completion of the transaction and polite goodbye."
+            },
+            {
+              "text": "Posso pagare con un assegno bancario per questa piccola cifra?",
+              "isCorrect": false,
+              "feedback": "Checks are rarely used for small amounts in shops."
+            },
+            {
+              "text": "Tenga il resto, voglio fare una donazione alla vostra farmacia.",
+              "isCorrect": false,
+              "feedback": "Unusual and unnecessary."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Aspetti, dimenticava lo scontrino. È importante conservarlo.",
+          "english": "Wait, you were forgetting the receipt. It's important to keep it.",
+          "choices": [
+            {
+              "text": "Ha ragione, grazie. Serve per le detrazioni fiscali, vero?",
+              "english": "You're right, thanks. It's for tax deductions, right?",
+              "isCorrect": true,
+              "feedback": "Good knowledge of local customs (tax deductions for medicines)."
+            },
+            {
+              "text": "Non mi serve lo scontrino, lo butti pure nel cestino.",
+              "isCorrect": false,
+              "feedback": "The pharmacist just told you it's important."
+            },
+            {
+              "text": "Posso usare questo scontrino per vincere un premio alla lotteria?",
+              "isCorrect": false,
+              "feedback": "Not how it works."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, esattamente. Conservi anche la scatola con il foglietto illustrativo.",
+          "english": "Yes, exactly. Also keep the box with the instruction leaflet.",
+          "choices": [
+            {
+              "text": "D'accordo. C'è scritto tutto sul dosaggio e gli orari lì dentro?",
+              "english": "Alright. Is everything about dosage and timing written in there?",
+              "isCorrect": true,
+              "feedback": "Asking where to find information."
+            },
+            {
+              "text": "Butto sempre via le scatole perché occupano troppo spazio in casa.",
+              "isCorrect": false,
+              "feedback": "Keep the box for the information it contains."
+            },
+            {
+              "text": "Posso leggere il foglietto illustrativo in inglese o in un'altra lingua?",
+              "isCorrect": false,
+              "feedback": "They are usually only in Italian in Italy."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, ma se ha dubbi può sempre tornare a chiedere a noi.",
+          "english": "Yes, but if you have doubts you can always come back and ask us.",
+          "choices": [
+            {
+              "text": "Grazie, siete molto gentili. La farmacia è aperta anche domani?",
+              "english": "Thanks, you are very kind. Is the pharmacy open tomorrow too?",
+              "isCorrect": true,
+              "feedback": "Useful to know the opening hours."
+            },
+            {
+              "text": "Chiamerò il mio amico che è un infermiere per farmi spiegare tutto.",
+              "isCorrect": false,
+              "feedback": "The pharmacist is offering their professional help."
+            },
+            {
+              "text": "Non tornerò mai più perché spero di non ammalarmi mai più.",
+              "isCorrect": false,
+              "feedback": "A bit overly optimistic."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Domani è sabato, siamo aperti solo la mattina dalle nove alle tredici.",
+          "english": "Tomorrow is Saturday, we are only open in the morning from nine to one.",
+          "choices": [
+            {
+              "text": "Ho capito. E per le emergenze di domenica come posso fare?",
+              "english": "I see. And for emergencies on Sunday, how can I do?",
+              "isCorrect": true,
+              "feedback": "Good question about emergency pharmacies."
+            },
+            {
+              "text": "Dovreste essere aperti tutto il giorno anche il sabato e la domenica.",
+              "isCorrect": false,
+              "feedback": "Rude to complain about opening hours."
+            },
+            {
+              "text": "Andrò al cinema domenica pomeriggio invece di venire qui.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "C'è sempre una farmacia di turno aperta. Può controllare sul cartello fuori.",
+          "english": "There is always an on-call pharmacy open. You can check the sign outside.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'informazione. Adesso vado a riposare. Arrivederci.",
+              "english": "Thanks a lot for the information. Now I'll go to rest. Goodbye.",
+              "isCorrect": true,
+              "feedback": "Final goodbye with a plan."
+            },
+            {
+              "text": "Non vedo nessun cartello fuori, forse è caduto per il vento forte.",
+              "isCorrect": false,
+              "feedback": "Assume the sign is there as it's required by law."
+            },
+            {
+              "text": "Mi accompagni lei alla farmacia di turno domenica se ho bisogno?",
+              "isCorrect": false,
+              "feedback": "Inappropriate request."
+            }
+          ]
+        },
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Arrivederci e si riguardi. Buona guarigione!",
+          "english": "Goodbye and take care. Get well soon!",
+          "choices": [
+            {
+              "text": "Grazie, seguirò i suoi consigli. A presto!",
+              "english": "Thank you, I will follow your advice. See you soon!",
+              "isCorrect": true,
+              "feedback": "Perfect completion of the interaction."
+            },
+            {
+              "text": "Devo tornare qui se il dolore non passa?",
+              "isCorrect": false,
+              "feedback": "The pharmacist already said to see a doctor if it continues."
+            },
+            {
+              "text": "Posso prendere la medicina con il latte?",
+              "isCorrect": false,
+              "feedback": "It is better to take it with water unless specified."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -111,6 +111,7 @@ This architecture is mandatory.
 5. Bakery (dining/bakery)
 6. Cinema Tickets (culture/cinema_tickets)
 7. Culture Festival (culture/festival)
+8. Emergency Room (health/emergency_room)
 
 Status:
 

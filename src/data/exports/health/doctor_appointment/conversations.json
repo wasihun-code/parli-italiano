@@ -1,0 +1,953 @@
+{
+  "scenarioId": 94,
+  "conversations": [
+    {
+      "id": "booking_by_phone",
+      "title": "Booking by Phone",
+      "description": "Call the clinic to schedule an appointment with the doctor.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto, ambulatorio medico. Buongiorno, come posso aiutarla?",
+          "english": "Hello, medical clinic. Good morning, how can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei prenotare una visita con il dottore.",
+              "isCorrect": true,
+              "feedback": "Perfect! You stated your goal clearly and politely."
+            },
+            {
+              "text": "Buongiorno, mi serve un tavolo per due persone alle otto.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This sounds like a restaurant reservation."
+            },
+            {
+              "text": "Ciao, dove posso trovare un taxi per andare in centro?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is a medical clinic, not a taxi stand."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Qual è il suo nome e cognome per favore?",
+          "english": "Certainly. What is your first and last name please?",
+          "choices": [
+            {
+              "text": "Mi chiamo Mario Rossi. Vorrei un appuntamento domani.",
+              "isCorrect": true,
+              "feedback": "Good. You provided your name and requested a date."
+            },
+            {
+              "text": "Il mio nome è Mario e voglio andare al mare adesso.",
+              "isCorrect": false,
+              "feedback": "The second part is irrelevant to booking a medical visit."
+            },
+            {
+              "text": "Sono Mario Rossi e cerco il mio gatto bianco perso.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! The clinic doesn't handle lost pets."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene, signor Rossi. Qual è il motivo della visita?",
+          "english": "All right, Mr. Rossi. What is the reason for the visit?",
+          "choices": [
+            {
+              "text": "Ho la febbre e un forte mal di gola da ieri sera.",
+              "isCorrect": true,
+              "feedback": "Excellent. Explaining symptoms helps the receptionist."
+            },
+            {
+              "text": "Voglio comprare un biglietto per il treno di domani.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are talking to a clinic, not a station."
+            },
+            {
+              "text": "Mi piace molto mangiare la pizza con le acciughe oggi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Your food preferences don't matter here."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capisco. Il dottore è disponibile domani mattina alle dieci.",
+          "english": "I understand. The doctor is available tomorrow morning at ten.",
+          "choices": [
+            {
+              "text": "Domani alle dieci va bene. Mi segno l'appuntamento.",
+              "isCorrect": true,
+              "feedback": "Perfect confirmation of the suggested time."
+            },
+            {
+              "text": "Domani alle dieci è tardi, voglio volare a Roma ora.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and confusing! Stick to the medical visit."
+            },
+            {
+              "text": "Domani alle dieci il bar è chiuso per la colazione.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This isn't about a bar or breakfast."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Ha la tessera sanitaria con lei in questo momento?",
+          "english": "Perfect. Do you have your health card with you right now?",
+          "choices": [
+            {
+              "text": "Sì, ho la mia tessera sanitaria qui. Serve il numero?",
+              "isCorrect": true,
+              "feedback": "Great. Offering the number is very helpful."
+            },
+            {
+              "text": "No, non ho la tessera del bus. Devo fare il biglietto?",
+              "isCorrect": false,
+              "feedback": "Wrong card! The receptionist asked for a health card."
+            },
+            {
+              "text": "Sì, ho la chiave dell'appartamento nella mia borsa.",
+              "isCorrect": false,
+              "feedback": "Wrong object! Keys won't help with medical booking."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, mi detti le ultime cinque cifre per favore.",
+          "english": "Yes, please read me the last five digits.",
+          "choices": [
+            {
+              "text": "Certo, le ultime cifre sono uno, due, tre, quattro, cinque.",
+              "isCorrect": true,
+              "feedback": "Good job reading the numbers clearly."
+            },
+            {
+              "text": "Certo, il mio numero di telefono è tre, due, uno, zero.",
+              "isCorrect": false,
+              "feedback": "The receptionist asked for health card digits, not phone."
+            },
+            {
+              "text": "No, non conosco l'indirizzo dell'hotel in centro città.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! Hotel addresses are irrelevant here."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Grazie. L'appuntamento è confermato per domani alle dieci.",
+          "english": "Thank you. The appointment is confirmed for tomorrow at ten.",
+          "choices": [
+            {
+              "text": "Molte grazie. Dove si trova esattamente l'ambulatorio?",
+              "isCorrect": true,
+              "feedback": "Smart move asking for the location."
+            },
+            {
+              "text": "Molte grazie. Quanto costa il biglietto per il museo?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not a museum visit."
+            },
+            {
+              "text": "Va bene. Voglio ordinare una birra media alla spina.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not a bar or restaurant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Siamo in Via Roma numero ventidue, vicino alla farmacia.",
+          "english": "We are at Via Roma number twenty-two, near the pharmacy.",
+          "choices": [
+            {
+              "text": "Capito, Via Roma ventidue. È facile da trovare.",
+              "isCorrect": true,
+              "feedback": "Good confirmation of the address."
+            },
+            {
+              "text": "Capito, voglio prenotare una camera singola per ieri.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! Booking a room is for hotels."
+            },
+            {
+              "text": "No, non voglio andare all'aeroporto con la valigia.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! No one mentioned the airport."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Esatto. Si ricordi di portare un documento d'identità.",
+          "english": "Exactly. Remember to bring an identity document.",
+          "choices": [
+            {
+              "text": "Certo, porterò la carta d'identità. A domani allora.",
+              "isCorrect": true,
+              "feedback": "Perfect closing for the conversation."
+            },
+            {
+              "text": "Certo, porterò la mia bicicletta per fare una corsa.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! A bike is not an identity document."
+            },
+            {
+              "text": "No, non ho fame adesso, voglio solo dormire molto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! This has nothing to do with the doctor."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "A domani, signor Rossi. Buona giornata e arrivederci.",
+          "english": "See you tomorrow, Mr. Rossi. Have a good day and goodbye.",
+          "choices": [
+            {
+              "text": "Grazie mille, buona giornata anche a lei. Arrivederci.",
+              "isCorrect": true,
+              "feedback": "Polite and correct conclusion."
+            },
+            {
+              "text": "Grazie, vorrei il menu dei dolci e un caffè forte.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are not in a restaurant."
+            },
+            {
+              "text": "Ciao, il volo parte tra due ore dal gate numero uno.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not an airport announcement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arrival_at_reception",
+      "title": "Arrival at Reception",
+      "description": "Check in at the clinic desk for your appointment.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Ha un appuntamento con il dottore oggi?",
+          "english": "Good morning. Do you have an appointment with the doctor today?",
+          "choices": [
+            {
+              "text": "Buongiorno. Sì, ho un appuntamento alle dieci.",
+              "isCorrect": true,
+              "feedback": "Good. You confirmed your appointment time."
+            },
+            {
+              "text": "Buongiorno. No, voglio una camera con vista mare.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not a hotel check-in."
+            },
+            {
+              "text": "Ciao. Dove sono i bagagli del mio volo da Milano?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not an airport."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Mi può dire il suo cognome per favore?",
+          "english": "Certainly. Can you tell me your last name please?",
+          "choices": [
+            {
+              "text": "Il mio cognome è Rossi. Mi chiamo Mario Rossi.",
+              "isCorrect": true,
+              "feedback": "Perfect. You provided the requested information."
+            },
+            {
+              "text": "Il mio cognome è Rossi e voglio un gelato grande.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! The second part is out of domain."
+            },
+            {
+              "text": "Sono Rossi e cerco il binario per il treno veloce.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not a train station."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ah sì, ecco Mario Rossi alle dieci. Posso vedere un documento?",
+          "english": "Ah yes, here is Mario Rossi at ten. May I see a document?",
+          "choices": [
+            {
+              "text": "Sì, ecco la mia carta d'identità. Va bene questa?",
+              "isCorrect": true,
+              "feedback": "Good job providing your ID as requested."
+            },
+            {
+              "text": "Sì, ecco la mia carta per pagare il caffè al bar.",
+              "isCorrect": false,
+              "feedback": "The receptionist asked for ID, not a payment card."
+            },
+            {
+              "text": "No, non ho il passaporto per andare all'estero ora.",
+              "isCorrect": false,
+              "feedback": "While true, a simple ID card is usually enough."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Va benissimo. Può firmare qui questo foglio per la privacy?",
+          "english": "That's fine. Can you sign this privacy form here?",
+          "choices": [
+            {
+              "text": "Certamente. Dove devo firmare? Qui in basso?",
+              "isCorrect": true,
+              "feedback": "Good. You are showing willingness to comply."
+            },
+            {
+              "text": "Certamente. Voglio firmare per il check-out dell'hotel.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are at a clinic, not a hotel."
+            },
+            {
+              "text": "No, non voglio firmare il menu del ristorante oggi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! This is a medical document."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, proprio lì. Grazie mille. Prego, si sieda in sala d'attesa.",
+          "english": "Yes, right there. Thank you very much. Please, sit in the waiting room.",
+          "choices": [
+            {
+              "text": "Va bene, vado in sala d'attesa. Quanto devo aspettare?",
+              "isCorrect": true,
+              "feedback": "Good. Asking about the wait time is common."
+            },
+            {
+              "text": "Va bene, vado al gate d'imbarco. Il volo è pronto?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not an airport."
+            },
+            {
+              "text": "No, voglio sedermi al tavolo vicino alla finestra.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This sounds like a restaurant request."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Solo pochi minuti. Il dottore sta finendo una visita.",
+          "english": "Just a few minutes. The doctor is finishing a visit.",
+          "choices": [
+            {
+              "text": "Nessun problema, aspetto qui. Grazie per l'informazione.",
+              "isCorrect": true,
+              "feedback": "Patient and polite response."
+            },
+            {
+              "text": "Nessun problema, aspetto l'autobus per andare a casa.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are waiting for a doctor."
+            },
+            {
+              "text": "Va bene, ma voglio ordinare un cornetto caldo subito.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You shouldn't eat in the waiting room."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "C'è qualche cambio nel suo indirizzo o numero di telefono?",
+          "english": "Is there any change in your address or phone number?",
+          "choices": [
+            {
+              "text": "No, è tutto uguale. L'indirizzo è sempre lo stesso.",
+              "isCorrect": true,
+              "feedback": "Clear confirmation of your details."
+            },
+            {
+              "text": "Sì, il mio indirizzo è cambiato, ora vivo al museo.",
+              "isCorrect": false,
+              "feedback": "Unlikely! People don't usually live in museums."
+            },
+            {
+              "text": "No, non ho un telefono per chiamare il cameriere.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and out of domain."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Ha portato anche la sua ricetta medica?",
+          "english": "Excellent. Did you also bring your medical prescription?",
+          "choices": [
+            {
+              "text": "Sì, ho la ricetta qui nella mia borsa. Eccola.",
+              "isCorrect": true,
+              "feedback": "Good. You had the necessary document ready."
+            },
+            {
+              "text": "Sì, ho la ricetta per fare la pasta alla carbonara.",
+              "isCorrect": false,
+              "feedback": "Wrong type of recipe! You need a medical one."
+            },
+            {
+              "text": "No, non ho la chiave della camera numero cento.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not a hotel."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "La ringrazio. Il dottore la chiamerà tra poco. Resti pure comodo.",
+          "english": "Thank you. The doctor will call you shortly. Please stay comfortable.",
+          "choices": [
+            {
+              "text": "Grazie, resto qui in attesa. Buona giornata.",
+              "isCorrect": true,
+              "feedback": "Good and polite closure while you wait."
+            },
+            {
+              "text": "Grazie, voglio un cuscino per dormire in hotel.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are in a clinic, not a hotel."
+            },
+            {
+              "text": "Va bene, vado a fare shopping al mercato adesso.",
+              "isCorrect": false,
+              "feedback": "Bad timing! You shouldn't leave now."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego, signor Rossi. A tra poco allora.",
+          "english": "You're welcome, Mr. Rossi. See you in a bit then.",
+          "choices": [
+            {
+              "text": "A tra poco, grazie ancora. A dopo.",
+              "isCorrect": true,
+              "feedback": "Polite confirmation of the short wait."
+            },
+            {
+              "text": "A dopo, vado a prendere il volo per Londra.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not an airport."
+            },
+            {
+              "text": "Ciao, voglio pagare il conto del ristorante ora.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are at a clinic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explaining_illness",
+      "title": "Explaining General Illness",
+      "description": "Describe your symptoms to the doctor during the visit.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno signor Rossi. Mi dica, come si sente oggi?",
+          "english": "Good morning Mr. Rossi. Tell me, how do you feel today?",
+          "choices": [
+            {
+              "text": "Buongiorno dottore. Mi sento male, ho molta tosse.",
+              "isCorrect": true,
+              "feedback": "Good. You started describing your symptoms clearly."
+            },
+            {
+              "text": "Buongiorno. Voglio ordinare una pizza e una birra.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are with a doctor, not a waiter."
+            },
+            {
+              "text": "Ciao. Dove posso comprare un biglietto del bus?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is a medical visit."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. Ha anche la febbre? L'ha misurata?",
+          "english": "I understand. Do you also have a fever? Have you measured it?",
+          "choices": [
+            {
+              "text": "Sì, ho la febbre a trentotto da questa mattina.",
+              "isCorrect": true,
+              "feedback": "Excellent. Providing a specific temperature is helpful."
+            },
+            {
+              "text": "Sì, ho il termometro per misurare l'acqua del mare.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! The doctor asked about your body temperature."
+            },
+            {
+              "text": "No, non ho la febbre ma voglio andare in discoteca.",
+              "isCorrect": false,
+              "feedback": "Bad idea! If you feel bad, you should rest."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Trentotto è un po' alta. Sente dolore da qualche parte?",
+          "english": "Thirty-eight is a bit high. Do you feel pain anywhere?",
+          "choices": [
+            {
+              "text": "Sì, ho un forte mal di gola e mal di testa.",
+              "isCorrect": true,
+              "feedback": "Good. Specifying where it hurts helps the diagnosis."
+            },
+            {
+              "text": "Sì, ho dolore perché la mia borsa è molto pesante.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! The doctor is asking about physical illness."
+            },
+            {
+              "text": "No, non ho dolore ma voglio un gelato alla crema.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Food requests don't belong here."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "D'accordo. Apra la bocca per favore, voglio vedere la gola.",
+          "english": "Alright. Open your mouth please, I want to see your throat.",
+          "choices": [
+            {
+              "text": "Ah... va bene così? La gola è molto rossa?",
+              "isCorrect": true,
+              "feedback": "Good. You followed instructions and asked a relevant question."
+            },
+            {
+              "text": "No, non voglio aprire la bocca, voglio solo mangiare.",
+              "isCorrect": false,
+              "feedback": "Uncooperative! The doctor needs to examine you."
+            },
+            {
+              "text": "Ah... voglio dire che il mio cane è molto simpatico.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the medical examination."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, la gola è infiammata. Ora respiri profondamente.",
+          "english": "Yes, the throat is inflamed. Now breathe deeply.",
+          "choices": [
+            {
+              "text": "Faccio un respiro profondo. I polmoni stanno bene?",
+              "isCorrect": true,
+              "feedback": "Good follow-through on the doctor's request."
+            },
+            {
+              "text": "Respiro profondamente perché sono in cima alla montagna.",
+              "isCorrect": false,
+              "feedback": "Wrong context! You are in the doctor's office."
+            },
+            {
+              "text": "No, non voglio respirare, voglio solo correre veloce.",
+              "isCorrect": false,
+              "feedback": "Dangerous! You must follow medical instructions."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "I polmoni sono liberi. Ha anche il raffreddore o solo la tosse?",
+          "english": "The lungs are clear. Do you also have a cold or just a cough?",
+          "choices": [
+            {
+              "text": "Ho anche molto raffreddore e non sento bene i sapori.",
+              "isCorrect": true,
+              "feedback": "Good. Reporting loss of taste is an important symptom."
+            },
+            {
+              "text": "Ho il raffreddore perché sono andato al polo nord ieri.",
+              "isCorrect": false,
+              "feedback": "Unlikely! Stick to realistic explanations."
+            },
+            {
+              "text": "Sì, ho il raffreddore ma voglio un caffè molto caldo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Coffee won't help the doctor's diagnosis."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Capisco. Da quanti giorni si sente così male?",
+          "english": "I understand. For how many days have you felt this bad?",
+          "choices": [
+            {
+              "text": "Mi sento male da tre giorni, ma oggi è peggio.",
+              "isCorrect": true,
+              "feedback": "Good. Giving a timeline is crucial for the doctor."
+            },
+            {
+              "text": "Mi sento male da tre anni, voglio un medico nuovo.",
+              "isCorrect": false,
+              "feedback": "Exaggerated! This doesn't match the symptoms described."
+            },
+            {
+              "text": "Non so, voglio solo sapere l'orario del mio volo.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not an airport."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ha preso qualche medicina in questi giorni?",
+          "english": "Have you taken any medicine in these days?",
+          "choices": [
+            {
+              "text": "Ho preso solo una compressa per il mal di testa.",
+              "isCorrect": true,
+              "feedback": "Good. It's important to tell what you've already taken."
+            },
+            {
+              "text": "Ho preso solo un cornetto e un cappuccino al bar.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! Food is not medicine."
+            },
+            {
+              "text": "No, ho preso solo un taxi per venire qui velocemente.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! A taxi is not a medicine."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene. Ora le scrivo una ricetta per uno sciroppo.",
+          "english": "Alright. Now I'll write you a prescription for a syrup.",
+          "choices": [
+            {
+              "text": "Grazie dottore. Devo prenderlo spesso durante il giorno?",
+              "isCorrect": true,
+              "feedback": "Good. Asking about dosage is very important."
+            },
+            {
+              "text": "Grazie dottore. Voglio lo sciroppo al gusto di cioccolato.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Medicine is for health, not for taste."
+            },
+            {
+              "text": "Va bene, ma voglio anche un biglietto per il teatro.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is a doctor's office."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sì, tre volte al giorno dopo i pasti. Ecco la ricetta.",
+          "english": "Yes, three times a day after meals. Here is the prescription.",
+          "choices": [
+            {
+              "text": "Perfetto, tre volte dopo i pasti. Grazie mille dottore.",
+              "isCorrect": true,
+              "feedback": "Excellent confirmation of the instructions."
+            },
+            {
+              "text": "Perfetto, tre pizze dopo la cena. Grazie tante.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are confusing medicine with food."
+            },
+            {
+              "text": "Grazie, voglio andare a casa a dormire con il gatto.",
+              "isCorrect": false,
+              "feedback": "While you should rest, mention the medicine first."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "follow_up_instructions",
+      "title": "Follow-up Instructions",
+      "description": "Understand the doctor's final advice and next steps.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Oltre allo sciroppo, deve riposare molto per qualche giorno.",
+          "english": "Besides the syrup, you must rest a lot for a few days.",
+          "choices": [
+            {
+              "text": "Va bene dottore. Devo restare a letto tutto il giorno?",
+              "isCorrect": true,
+              "feedback": "Good. Clarifying the level of rest needed is smart."
+            },
+            {
+              "text": "Va bene. Posso andare a correre al parco domani?",
+              "isCorrect": false,
+              "feedback": "Bad idea! The doctor said you need to rest."
+            },
+            {
+              "text": "No, voglio andare a lavorare in ufficio subito.",
+              "isCorrect": false,
+              "feedback": "Too soon! You need to recover first."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, meglio di sì. Beva anche molta acqua e succhi di frutta.",
+          "english": "Yes, better so. Also drink plenty of water and fruit juices.",
+          "choices": [
+            {
+              "text": "Capito. L'acqua è importante per guarire presto.",
+              "isCorrect": true,
+              "feedback": "Good confirmation of the hydration advice."
+            },
+            {
+              "text": "Capito. Voglio bere solo vino rosso e birra fredda.",
+              "isCorrect": false,
+              "feedback": "Bad choice! Alcohol is not good when you are sick."
+            },
+            {
+              "text": "Va bene, vado a nuotare nel mare freddo adesso.",
+              "isCorrect": false,
+              "feedback": "Dangerous! You should stay warm and hydrated."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Se la febbre non scende, mi chiami tra due giorni.",
+          "english": "If the fever doesn't go down, call me in two days.",
+          "choices": [
+            {
+              "text": "Speriamo di no, ma la chiamerò se sto ancora male.",
+              "isCorrect": true,
+              "feedback": "Good. You acknowledged the follow-up plan."
+            },
+            {
+              "text": "Va bene, la chiamo per ordinare una pizza margherita.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! The doctor is not a pizza delivery service."
+            },
+            {
+              "text": "No, non ho il suo numero, voglio andare al cinema.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the medical instructions."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ecco il mio numero di telefono per le emergenze.",
+          "english": "Here is my phone number for emergencies.",
+          "choices": [
+            {
+              "text": "Grazie. Lo segno subito sul mio cellulare.",
+              "isCorrect": true,
+              "feedback": "Pragmatic and helpful response."
+            },
+            {
+              "text": "Grazie. Lo uso per chiamare un taxi per l'hotel.",
+              "isCorrect": false,
+              "feedback": "Wrong use! This number is for the doctor only."
+            },
+            {
+              "text": "Va bene, ma preferisco chiamare il mio cane bianco.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the situation."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Deve anche mangiare cibi leggeri, come riso o brodo.",
+          "english": "You should also eat light foods, such as rice or broth.",
+          "choices": [
+            {
+              "text": "D'accordo. Niente piatti pesanti o fritti allora.",
+              "isCorrect": true,
+              "feedback": "Good. You understood the dietary restriction."
+            },
+            {
+              "text": "D'accordo. Voglio mangiare una bistecca molto grande.",
+              "isCorrect": false,
+              "feedback": "Too heavy! Stick to the doctor's suggestion."
+            },
+            {
+              "text": "No, voglio solo mangiare molti dolci e cioccolato.",
+              "isCorrect": false,
+              "feedback": "Not light! This won't help your recovery."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Esatto. Eviti il freddo e resti al caldo in casa.",
+          "english": "Exactly. Avoid the cold and stay warm at home.",
+          "choices": [
+            {
+              "text": "Certamente. Starò a casa sotto le coperte.",
+              "isCorrect": true,
+              "feedback": "Perfect. You understood how to stay warm."
+            },
+            {
+              "text": "Certamente. Vado a sciare in montagna domani mattina.",
+              "isCorrect": false,
+              "feedback": "Wrong choice! That's the opposite of staying warm."
+            },
+            {
+              "text": "No, voglio aprire tutte le finestre per sentire il vento.",
+              "isCorrect": false,
+              "feedback": "Bad idea! You need to stay warm to recover."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Bene. Ha bisogno di un certificato per il lavoro?",
+          "english": "Good. Do you need a certificate for work?",
+          "choices": [
+            {
+              "text": "Sì, mi serve il certificato medico per tre giorni.",
+              "isCorrect": true,
+              "feedback": "Good. You specified the number of days needed."
+            },
+            {
+              "text": "Sì, mi serve un certificato per entrare al museo.",
+              "isCorrect": false,
+              "feedback": "Wrong certificate! You need a medical one for work."
+            },
+            {
+              "text": "No, non lavoro, sono un turista che mangia sempre.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and slightly odd response."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "D'accordo, le preparo subito il certificato telematico.",
+          "english": "Alright, I'll prepare the electronic certificate for you now.",
+          "choices": [
+            {
+              "text": "Grazie mille. Arriva direttamente al mio datore di lavoro?",
+              "isCorrect": true,
+              "feedback": "Smart question about how the system works."
+            },
+            {
+              "text": "Grazie mille. Arriva insieme alla mia valigia all'aeroporto?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not related to travel."
+            },
+            {
+              "text": "Va bene, ma voglio anche un autografo del dottore.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! This is a professional visit."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, esattamente. Tutto fatto. Spero che si senta meglio presto.",
+          "english": "Yes, exactly. All done. I hope you feel better soon.",
+          "choices": [
+            {
+              "text": "Grazie del suo aiuto, dottore. Arrivederci.",
+              "isCorrect": true,
+              "feedback": "Polite and appropriate way to end the visit."
+            },
+            {
+              "text": "Grazie, voglio un altro appuntamento per mangiare fuori.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! The doctor doesn't organize dinners."
+            },
+            {
+              "text": "Ciao, vado a prendere il treno per la spiaggia ora.",
+              "isCorrect": false,
+              "feedback": "Wrong domain and bad for your health right now!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci signor Rossi. Si riguardi.",
+          "english": "Goodbye Mr. Rossi. Take care of yourself.",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie ancora. Buona giornata.",
+              "isCorrect": true,
+              "feedback": "Perfect final goodbye."
+            },
+            {
+              "text": "Arrivederci, vorrei il conto dell'hotel per favore.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are not in a hotel."
+            },
+            {
+              "text": "Ciao, dov'è il mio posto sull'aereo per Milano?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are in a doctor's office."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

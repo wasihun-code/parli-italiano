@@ -1,0 +1,953 @@
+{
+  "scenarioId": 111,
+  "conversations": [
+    {
+      "id": "my_pet_dog",
+      "title": "My Pet Dog",
+      "description": "Talk about your dog and its habits.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Hai un animale domestico a casa?",
+          "english": "Hi! Do you have a pet at home?",
+          "choices": [
+            {
+              "text": "Sì, ho un cane molto simpatico in casa.",
+              "isCorrect": true,
+              "feedback": "Great! You are starting the conversation about your pet."
+            },
+            {
+              "text": "No, vado al cinema a vedere un film nuovo.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! We are talking about animals."
+            },
+            {
+              "text": "Il dottore dice che devo prendere la medicina.",
+              "isCorrect": false,
+              "feedback": "Wrong topic! This isn't a medical scenario."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Oh, un cane! Come si chiama il tuo cane?",
+          "english": "Oh, a dog! What is your dog's name?",
+          "choices": [
+            {
+              "text": "Si chiama Buddy, è il mio migliore amico.",
+              "isCorrect": true,
+              "feedback": "Perfect! You introduced your dog's name."
+            },
+            {
+              "text": "Si chiama Teatro e costa molto il biglietto.",
+              "isCorrect": false,
+              "feedback": "Nonsense! A dog named Theater with a ticket price?"
+            },
+            {
+              "text": "Si chiama Farmacia e vende molte medicine.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! Keep the conversation on animals."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Bello! È un cane grande o un cane piccolo?",
+          "english": "Nice! Is it a big dog or a small dog?",
+          "choices": [
+            {
+              "text": "È un cane piccolo, ma corre molto veloce.",
+              "isCorrect": true,
+              "feedback": "Good description of your dog's size."
+            },
+            {
+              "text": "È un cane cinema, ma guarda i film lunghi.",
+              "isCorrect": false,
+              "feedback": "Incorrect! Dogs don't go to the cinema."
+            },
+            {
+              "text": "È un cane medico, ma lavora in ospedale.",
+              "isCorrect": false,
+              "feedback": "Wrong! Dogs are not doctors."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capito. Cosa mangia il tuo cane ogni giorno?",
+          "english": "I see. What does your dog eat every day?",
+          "choices": [
+            {
+              "text": "Mangia sempre carne e beve molta acqua qui.",
+              "isCorrect": true,
+              "feedback": "Correct! Describing what your pet eats."
+            },
+            {
+              "text": "Mangia sempre ricette e beve molta medicina.",
+              "isCorrect": false,
+              "feedback": "Medical domain! Not appropriate for a pet."
+            },
+            {
+              "text": "Mangia sempre attori e beve molto spettacolo.",
+              "isCorrect": false,
+              "feedback": "Entertainment domain! Stay on topic."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Gli piace giocare al parco con la palla?",
+          "english": "Does he like playing at the park with the ball?",
+          "choices": [
+            {
+              "text": "Sì, gli piace molto giocare e correre lì.",
+              "isCorrect": true,
+              "feedback": "Great! You confirmed his favorite activity."
+            },
+            {
+              "text": "Sì, gli piace molto il film e l'attore lì.",
+              "isCorrect": false,
+              "feedback": "Forbidden! Keep the dog at the park, not cinema."
+            },
+            {
+              "text": "Sì, gli piace molto la farmacia e il dottore.",
+              "isCorrect": false,
+              "feedback": "Wrong! Dogs don't play at the pharmacy."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Anche il mio cane ama correre! Di che colore è il tuo?",
+          "english": "My dog loves running too! What color is yours?",
+          "choices": [
+            {
+              "text": "Il mio cane è tutto bianco con macchie marroni.",
+              "isCorrect": true,
+              "feedback": "Nice! Describing your dog's color."
+            },
+            {
+              "text": "Il mio cane è tutto cinema con macchie teatro.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Use actual colors."
+            },
+            {
+              "text": "Il mio cane è tutto medico con macchie ricetta.",
+              "isCorrect": false,
+              "feedback": "Wrong domain again!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Il bianco e marrone è molto bello. Dorme dentro casa?",
+          "english": "White and brown is very beautiful. Does he sleep inside the house?",
+          "choices": [
+            {
+              "text": "Sì, dorme sempre nella sua cuccia vicino a me.",
+              "isCorrect": true,
+              "feedback": "Correct! You answered about his sleeping place."
+            },
+            {
+              "text": "Sì, dorme sempre nella sua farmacia vicino a me.",
+              "isCorrect": false,
+              "feedback": "Wrong! Pets don't sleep in pharmacies."
+            },
+            {
+              "text": "Sì, dorme sempre nella sua scena vicino a me.",
+              "isCorrect": false,
+              "feedback": "Incorrect! That's theater terminology."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Capisco. È un cucciolo o è già vecchio?",
+          "english": "I understand. Is it a puppy or is it already old?",
+          "choices": [
+            {
+              "text": "È ancora un cucciolo, ha solo sei mesi ora.",
+              "isCorrect": true,
+              "feedback": "Perfect! You identified him as a puppy."
+            },
+            {
+              "text": "È ancora un film, ha solo sei scene ora.",
+              "isCorrect": false,
+              "feedback": "Nonsense! A dog is not a movie."
+            },
+            {
+              "text": "È ancora un medico, ha solo sei ricette ora.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "I cuccioli sono molto vivaci! Hai altri animali?",
+          "english": "Puppies are very lively! Do you have other animals?",
+          "choices": [
+            {
+              "text": "No, ho solo lui, ma vorrei anche un gatto.",
+              "isCorrect": true,
+              "feedback": "Good! Expressing a wish for another pet."
+            },
+            {
+              "text": "No, ho solo lui, ma vorrei anche un attore.",
+              "isCorrect": false,
+              "feedback": "Incorrect! People don't keep actors as pets."
+            },
+            {
+              "text": "No, ho solo lui, ma vorrei anche un ospedale.",
+              "isCorrect": false,
+              "feedback": "Wrong! An hospital is not a pet."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bene! È stato un piacere parlare del tuo cane.",
+          "english": "Great! It was a pleasure talking about your dog.",
+          "choices": [
+            {
+              "text": "Grazie mille, buona giornata a te e al tuo cane!",
+              "isCorrect": true,
+              "feedback": "A polite closing to the conversation."
+            },
+            {
+              "text": "Grazie mille, buona giornata a te e al tuo film!",
+              "isCorrect": false,
+              "feedback": "Wrong! We are talking about dogs."
+            },
+            {
+              "text": "Grazie mille, buona giornata a te e al tuo medico!",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visiting_a_farm",
+      "title": "Visiting a Farm",
+      "description": "Learn about different animals at a farm.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Benvenuti alla fattoria! Volete vedere gli animali?",
+          "english": "Welcome to the farm! Do you want to see the animals?",
+          "choices": [
+            {
+              "text": "Sì, grazie! Mi piacciono molto gli animali della fattoria.",
+              "isCorrect": true,
+              "feedback": "Perfect! You are ready to start the tour."
+            },
+            {
+              "text": "Sì, grazie! Mi piacciono molto gli attori del teatro.",
+              "isCorrect": false,
+              "feedback": "Wrong! We are at a farm, not a theater."
+            },
+            {
+              "text": "Sì, grazie! Mi piacciono molto i dottori dell'ospedale.",
+              "isCorrect": false,
+              "feedback": "Domain contamination! Stay focused on the farm."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Perfetto. Ecco le mucche. Sono grandi, vero?",
+          "english": "Perfect. Here are the cows. They are big, right?",
+          "choices": [
+            {
+              "text": "Sì, sono molto grandi e mangiano molta erba.",
+              "isCorrect": true,
+              "feedback": "Good observation about the cows."
+            },
+            {
+              "text": "Sì, sono molto grandi e mangiano molta medicina.",
+              "isCorrect": false,
+              "feedback": "Wrong! Cows eat grass, not medicine."
+            },
+            {
+              "text": "Sì, sono molto grandi e guardano molta scena.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Cows don't watch scenes."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, mangiano sempre l'erba. Guardate lì, ci sono le galline!",
+          "english": "Yes, they always eat grass. Look there, there are the chickens!",
+          "choices": [
+            {
+              "text": "Vedo le galline! Sono piccole e corrono sempre.",
+              "isCorrect": true,
+              "feedback": "Correct identification of the chickens."
+            },
+            {
+              "text": "Vedo le ricette! Sono piccole e corrono sempre.",
+              "isCorrect": false,
+              "feedback": "Wrong! Recipes don't run."
+            },
+            {
+              "text": "Vedo le pellicole! Sono piccole e corrono sempre.",
+              "isCorrect": false,
+              "feedback": "Incorrect domain!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Le galline fanno le uova ogni mattina. Sentite il maiale?",
+          "english": "The chickens lay eggs every morning. Do you hear the pig?",
+          "choices": [
+            {
+              "text": "Sì, il maiale è laggiù e fa molto rumore.",
+              "isCorrect": true,
+              "feedback": "Great! You located the pig by its sound."
+            },
+            {
+              "text": "Sì, il dottore è laggiù e fa molto rumore.",
+              "isCorrect": false,
+              "feedback": "Wrong! There are no doctors in the pig pen."
+            },
+            {
+              "text": "Sì, il film è laggiù e fa molto rumore.",
+              "isCorrect": false,
+              "feedback": "Incorrect! Movies aren't heard in a farm yard."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, il maiale ha molta fame oggi. Volete vedere i cavalli?",
+          "english": "Yes, the pig is very hungry today. Do you want to see the horses?",
+          "choices": [
+            {
+              "text": "Certo! I cavalli sono i miei animali preferiti.",
+              "isCorrect": true,
+              "feedback": "Excellent! You are excited to see the horses."
+            },
+            {
+              "text": "Certo! I medici sono i miei animali preferiti.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Doctors are not animals."
+            },
+            {
+              "text": "Certo! I cinema sono i miei animali preferiti.",
+              "isCorrect": false,
+              "feedback": "Wrong! Cinemas are buildings, not animals."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "I cavalli sono molto forti. Ti piace cavalcare?",
+          "english": "Horses are very strong. Do you like to ride?",
+          "choices": [
+            {
+              "text": "Mi piace cavalcare nel parco quando c'è il sole.",
+              "isCorrect": true,
+              "feedback": "Good answer! Riding is a fun activity."
+            },
+            {
+              "text": "Mi piace medicare nel parco quando c'è il sole.",
+              "isCorrect": false,
+              "feedback": "Wrong! 'Medicare' is related to medicine."
+            },
+            {
+              "text": "Mi piace recitare nel parco quando c'è il sole.",
+              "isCorrect": false,
+              "feedback": "Incorrect! Reciting is for theater."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È divertente! C'è anche un piccolo gatto nella stalla. Lo vedi?",
+          "english": "It's fun! There's also a small cat in the stable. Do you see it?",
+          "choices": [
+            {
+              "text": "Sì, il gatto è nero e dorme sopra il fieno.",
+              "isCorrect": true,
+              "feedback": "Nice! You found the cat."
+            },
+            {
+              "text": "Sì, il film è nero e dorme sopra il fieno.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Films don't sleep in stables."
+            },
+            {
+              "text": "Sì, il medico è nero e dorme sopra il fieno.",
+              "isCorrect": false,
+              "feedback": "Wrong! Doctors don't sleep in stables."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "È molto dolce. Gli animali della fattoria sono simpatici, vero?",
+          "english": "It's very sweet. Farm animals are nice, aren't they?",
+          "choices": [
+            {
+              "text": "Sì, tutti gli animali qui sono molto belli.",
+              "isCorrect": true,
+              "feedback": "Agreed! Farm animals are wonderful."
+            },
+            {
+              "text": "Sì, tutti i farmaci qui sono molto belli.",
+              "isCorrect": false,
+              "feedback": "Wrong! We are talking about animals, not drugs."
+            },
+            {
+              "text": "Sì, tutti i teatri qui sono molto belli.",
+              "isCorrect": false,
+              "feedback": "Incorrect domain!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sono d'accordo. Vuoi dare un po' d'acqua agli animali?",
+          "english": "I agree. Do you want to give some water to the animals?",
+          "choices": [
+            {
+              "text": "Sì, porto subito l'acqua fresca alle mucche.",
+              "isCorrect": true,
+              "feedback": "Great! You are helping with the chores."
+            },
+            {
+              "text": "Sì, porto subito la medicina fresca alle mucche.",
+              "isCorrect": false,
+              "feedback": "Wrong! Give them water, not medicine."
+            },
+            {
+              "text": "Sì, porto subito la pellicola fresca alle mucche.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Cows don't need film."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie per l'aiuto! Buona giornata alla fattoria.",
+          "english": "Thanks for the help! Have a good day at the farm.",
+          "choices": [
+            {
+              "text": "Grazie a te! Ciao a tutti gli animali!",
+              "isCorrect": true,
+              "feedback": "A friendly goodbye to the farmer and the animals."
+            },
+            {
+              "text": "Grazie a te! Ciao a tutti i registi!",
+              "isCorrect": false,
+              "feedback": "Wrong! There are no directors at the farm."
+            },
+            {
+              "text": "Grazie a te! Ciao a tutti i pazienti!",
+              "isCorrect": false,
+              "feedback": "Wrong domain! No patients here."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "birds_in_the_park",
+      "title": "Birds in the Park",
+      "description": "Observe birds and other small animals in a city park.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Guarda quanti uccelli ci sono in questo parco!",
+          "english": "Look how many birds there are in this park!",
+          "choices": [
+            {
+              "text": "Vedo molti uccelli bianchi e grigi qui.",
+              "isCorrect": true,
+              "feedback": "Correct! You are observing the birds."
+            },
+            {
+              "text": "Vedo molti attori bianchi e grigi qui.",
+              "isCorrect": false,
+              "feedback": "Wrong! Those are birds, not actors."
+            },
+            {
+              "text": "Vedo molti medici bianchi e grigi qui.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, volano molto in alto. Ti piaccioni gli uccelli?",
+          "english": "Yes, they fly very high. Do you like birds?",
+          "choices": [
+            {
+              "text": "Sì, mi piace vederli volare tra gli alberi.",
+              "isCorrect": true,
+              "feedback": "Great! You enjoy bird watching."
+            },
+            {
+              "text": "Sì, mi piace vederli recitare tra gli alberi.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Birds fly, they don't act."
+            },
+            {
+              "text": "Sì, mi piace vederli curare tra gli alberi.",
+              "isCorrect": false,
+              "feedback": "Wrong! Birds are not healthcare providers."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Anche a me. Guarda quel pesce nell'acqua del laghetto!",
+          "english": "Me too. Look at that fish in the pond water!",
+          "choices": [
+            {
+              "text": "Che bello! È un pesce rosso e molto piccolo.",
+              "isCorrect": true,
+              "feedback": "Correct! You spotted the fish."
+            },
+            {
+              "text": "Che bello! È un film rosso e molto piccolo.",
+              "isCorrect": false,
+              "feedback": "Incorrect! That's a fish, not a movie."
+            },
+            {
+              "text": "Che bello! È un dottore rosso e molto piccolo.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "È vero, è un pesce rosso e piccolo. Ci sono anche dei cani qui.",
+          "english": "It's true, it's a small red fish. There are also some dogs here.",
+          "choices": [
+            {
+              "text": "Vedo un cane grande che corre con il padrone.",
+              "isCorrect": true,
+              "feedback": "Good observation of the dogs in the park."
+            },
+            {
+              "text": "Vedo un cinema grande che corre con il padrone.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Cinemas don't run."
+            },
+            {
+              "text": "Vedo un ospedale grande che corre con il padrone.",
+              "isCorrect": false,
+              "feedback": "Incorrect domain!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Molte persone portano il cane al parco. Il tuo cane è qui?",
+          "english": "Many people bring their dog to the park. Is your dog here?",
+          "choices": [
+            {
+              "text": "No, oggi il mio cane è a casa a dormire.",
+              "isCorrect": true,
+              "feedback": "Correct! You answered the question about your dog."
+            },
+            {
+              "text": "No, oggi il mio film è a casa a dormire.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Movies don't sleep."
+            },
+            {
+              "text": "No, oggi il mio medico è a casa a dormire.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ah, oggi è a casa. Senti come cantano gli uccelli?",
+          "english": "Ah, he's at home today. Do you hear how the birds sing?",
+          "choices": [
+            {
+              "text": "Sì, hanno una voce molto dolce e bella.",
+              "isCorrect": true,
+              "feedback": "Correct! You are listening to the birds."
+            },
+            {
+              "text": "Sì, hanno una scena molto dolce e bella.",
+              "isCorrect": false,
+              "feedback": "Incorrect! Birds sing songs, not scenes."
+            },
+            {
+              "text": "Sì, hanno una ricetta molto dolce e bella.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È un suono molto rilassante. Vedi quell'uccello bianco sull'albero?",
+          "english": "It's a very relaxing sound. Do you see that white bird on the tree?",
+          "choices": [
+            {
+              "text": "Lo vedo, è molto grande e sta mangiando.",
+              "isCorrect": true,
+              "feedback": "Great! You found the bird on the tree."
+            },
+            {
+              "text": "Lo vedo, è molto grande e sta medicando.",
+              "isCorrect": false,
+              "feedback": "Wrong! Birds eat, they don't 'medicate'."
+            },
+            {
+              "text": "Lo vedo, è molto grande e sta recitando.",
+              "isCorrect": false,
+              "feedback": "Incorrect! Birds are not actors."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sembra molto stanco, forse vuole dormire.",
+          "english": "He looks very tired, maybe he wants to sleep.",
+          "choices": [
+            {
+              "text": "Gli uccelli dormono sempre sugli alberi di notte?",
+              "isCorrect": true,
+              "feedback": "A good question about bird behavior."
+            },
+            {
+              "text": "Gli attori dormono sempre sugli alberi di notte?",
+              "isCorrect": false,
+              "feedback": "Nonsense! Actors sleep in beds."
+            },
+            {
+              "text": "I medici dormono sempre sugli alberi di notte?",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Il parco è un bel posto per gli animali selvaggi, no?",
+          "english": "The park is a nice place for wild animals, isn't it?",
+          "choices": [
+            {
+              "text": "Sì, qui possono vivere felici e trovare cibo.",
+              "isCorrect": true,
+              "feedback": "Exactly! Parks provide a habitat for wildlife."
+            },
+            {
+              "text": "Sì, qui possono vivere felici e trovare medicina.",
+              "isCorrect": false,
+              "feedback": "Wrong! Wild animals don't look for medicine."
+            },
+            {
+              "text": "Sì, qui possono vivere felici e trovare teatro.",
+              "isCorrect": false,
+              "feedback": "Incorrect domain!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sì, è importante rispettare tutti gli animali.",
+          "english": "Yes, it's important to respect all animals.",
+          "choices": [
+            {
+              "text": "Sono d'accordo, gli animali sono amici preziosi.",
+              "isCorrect": true,
+              "feedback": "A great sentiment to end on."
+            },
+            {
+              "text": "Sono d'accordo, i film sono amici preziosi.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Movies are not pets or friends."
+            },
+            {
+              "text": "Sono d'accordo, i dottori sono amici preziosi.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "favorite_animals",
+      "title": "Favorite Animals",
+      "description": "Discuss your favorite animals and why you like them.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Qual è il tuo animale preferito in assoluto?",
+          "english": "What is your absolute favorite animal?",
+          "choices": [
+            {
+              "text": "Il mio animale preferito è sicuramente il gatto.",
+              "isCorrect": true,
+              "feedback": "Great! Cats are a very popular choice."
+            },
+            {
+              "text": "Il mio animale preferito è sicuramente il cinema.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Cinema is not an animal."
+            },
+            {
+              "text": "Il mio animale preferito è sicuramente il dottore.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il gatto è un animale molto indipendente. Perché ti piace?",
+          "english": "The cat is a very independent animal. Why do you like it?",
+          "choices": [
+            {
+              "text": "Mi piace perché è molto pulito e silenzioso.",
+              "isCorrect": true,
+              "feedback": "Good reasons for liking cats."
+            },
+            {
+              "text": "Mi piace perché è molto scenico e silenzioso.",
+              "isCorrect": false,
+              "feedback": "Incorrect! 'Scenico' is for theater."
+            },
+            {
+              "text": "Mi piace perché è molto medico e silenzioso.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "È vero, sono molto puliti. Preferisci i cani o i gatti?",
+          "english": "It's true, they are very clean. Do you prefer dogs or cats?",
+          "choices": [
+            {
+              "text": "È difficile scegliere, ma preferisco i gatti.",
+              "isCorrect": true,
+              "feedback": "Honest answer! Both are great pets."
+            },
+            {
+              "text": "È difficile scegliere, ma preferisco i film.",
+              "isCorrect": false,
+              "feedback": "Wrong! We are comparing dogs and cats."
+            },
+            {
+              "text": "È difficile scegliere, ma preferisco i medici.",
+              "isCorrect": false,
+              "feedback": "Incorrect domain!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Molte persone preferiscono i cani perché sono amici fedeli.",
+          "english": "Many people prefer dogs because they are faithful friends.",
+          "choices": [
+            {
+              "text": "Sì, i cani giocano molto e sono sempre felici.",
+              "isCorrect": true,
+              "feedback": "Correct! Describing typical dog behavior."
+            },
+            {
+              "text": "Sì, i cani recitano molto e sono sempre felici.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Dogs don't act."
+            },
+            {
+              "text": "Sì, i cani curano molto e sono sempre felici.",
+              "isCorrect": false,
+              "feedback": "Wrong! Dogs are not medical professionals."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ti piacciono anche gli animali della foresta?",
+          "english": "Do you also like forest animals?",
+          "choices": [
+            {
+              "text": "Sì, mi piacciono molto il lupo e l'orso.",
+              "isCorrect": true,
+              "feedback": "Good! Those are classic forest animals."
+            },
+            {
+              "text": "Sì, mi piacciono molto l'attore e il regista.",
+              "isCorrect": false,
+              "feedback": "Wrong! Those are people, not forest animals."
+            },
+            {
+              "text": "Sì, mi piacciono molto il dottore e l'ospedale.",
+              "isCorrect": false,
+              "feedback": "Incorrect domain!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Il lupo è un animale selvaggio molto affascinante.",
+          "english": "The wolf is a very fascinating wild animal.",
+          "choices": [
+            {
+              "text": "È vero, è un animale forte che vive in gruppo.",
+              "isCorrect": true,
+              "feedback": "Correct! You know about wolf packs."
+            },
+            {
+              "text": "È vero, è un animale forte che vive in teatro.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Wolves don't live in theaters."
+            },
+            {
+              "text": "È vero, è un animale forte che vive in farmacia.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Hai mai visto un cavallo correre libero?",
+          "english": "Have you ever seen a horse running free?",
+          "choices": [
+            {
+              "text": "Sì, è bellissimo vedere un cavallo correre così.",
+              "isCorrect": true,
+              "feedback": "Agreed! It's a majestic sight."
+            },
+            {
+              "text": "Sì, è bellissimo vedere un film correre così.",
+              "isCorrect": false,
+              "feedback": "Incorrect! Films don't run like horses."
+            },
+            {
+              "text": "Sì, è bellissimo vedere un medico correre così.",
+              "isCorrect": false,
+              "feedback": "Wrong domain!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "È uno spettacolo bellissimo. Vorresti vivere in una fattoria?",
+          "english": "It's a beautiful sight. Would you like to live on a farm?",
+          "choices": [
+            {
+              "text": "Mi piacerebbe molto vivere con tanti animali.",
+              "isCorrect": true,
+              "feedback": "Great! You have a love for farm life."
+            },
+            {
+              "text": "Mi piacerebbe molto vivere con tanti attori.",
+              "isCorrect": false,
+              "feedback": "Wrong! We are talking about farms and animals."
+            },
+            {
+              "text": "Mi piacerebbe molto vivere con tanti ospedali.",
+              "isCorrect": false,
+              "feedback": "Nonsense! You can't live with 'many hospitals'."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "La vita con gli animali è molto tranquilla e bella.",
+          "english": "Life with animals is very peaceful and beautiful.",
+          "choices": [
+            {
+              "text": "Sì, gli animali ci danno molto amore ogni giorno.",
+              "isCorrect": true,
+              "feedback": "True! Animals are a source of joy."
+            },
+            {
+              "text": "Sì, i farmaci ci danno molto amore ogni giorno.",
+              "isCorrect": false,
+              "feedback": "Wrong! Drugs don't give love."
+            },
+            {
+              "text": "Sì, i film ci danno molto amore ogni giorno.",
+              "isCorrect": false,
+              "feedback": "Incorrect domain!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie per aver condiviso i tuoi pensieri sugli animali!",
+          "english": "Thank you for sharing your thoughts about animals!",
+          "choices": [
+            {
+              "text": "Grazie a te, parlare di animali mi rende felice!",
+              "isCorrect": true,
+              "feedback": "A wonderful closing to the discussion."
+            },
+            {
+              "text": "Grazie a te, parlare di ricette mi rende felice!",
+              "isCorrect": false,
+              "feedback": "Wrong! We weren't talking about recipes."
+            },
+            {
+              "text": "Grazie a te, parlare di teatri mi rende felice!",
+              "isCorrect": false,
+              "feedback": "Incorrect domain!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
