@@ -1,0 +1,953 @@
+{
+  "scenarioId": 14,
+  "conversations": [
+    {
+      "id": "buying_single_ticket",
+      "title": "Buying a Ticket",
+      "description": "Purchase a single ticket for the next available ferry.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Come posso aiutarla oggi alla biglietteria?",
+          "english": "Good morning. How can I help you today at the ticket office?",
+          "choices": [
+            {
+              "text": "Buongiorno. Vorrei un biglietto per il prossimo traghetto.",
+              "isCorrect": true,
+              "feedback": "Perfect. Clear and polite request for the next ferry."
+            },
+            {
+              "text": "Il mio aereo parte tra due ore, devo andare subito via.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are at a ferry port, not an airport."
+            },
+            {
+              "text": "Dove posso trovare un buon ristorante tipico qui vicino?",
+              "isCorrect": false,
+              "feedback": "Focus on the goal: buying a ferry ticket first."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. La prossima partenza è alle dieci e trenta. Va bene?",
+          "english": "Certainly. The next departure is at ten thirty. Is that okay?",
+          "choices": [
+            {
+              "text": "Sì, va benissimo. Quanto costa il biglietto per un adulto?",
+              "isCorrect": true,
+              "feedback": "Great. Confirming the time and asking for the price."
+            },
+            {
+              "text": "No, preferisco andare a piedi fino alla prossima città.",
+              "isCorrect": false,
+              "feedback": "You need a ferry to cross the sea to the island!"
+            },
+            {
+              "text": "C'è un treno che parte prima di questo orario fissato?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! Ferry ports don't usually have trains."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Il costo è di venti euro. Desidera solo andata o anche il ritorno?",
+          "english": "The cost is twenty euros. Would you like one way or return as well?",
+          "choices": [
+            {
+              "text": "Vorrei solo andata, per favore. Posso pagare con la carta?",
+              "isCorrect": true,
+              "feedback": "Excellent. Selecting the ticket type and payment method."
+            },
+            {
+              "text": "Vorrei un tavolo per due persone vicino alla finestra, grazie.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are not in a restaurant right now."
+            },
+            {
+              "text": "Il mare è molto mosso oggi? Ho paura di stare male io.",
+              "isCorrect": false,
+              "feedback": "A valid concern, but answer the question about the ticket."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, accettiamo tutte le carte. Mi serve un documento d'identità.",
+          "english": "Yes, we accept all cards. I need an identity document.",
+          "choices": [
+            {
+              "text": "Ecco la mia carta d'identità. È necessaria per il biglietto?",
+              "isCorrect": true,
+              "feedback": "Correct. Providing the document and asking for clarification."
+            },
+            {
+              "text": "Ecco la mia prenotazione per l'hotel in centro città, prego.",
+              "isCorrect": false,
+              "feedback": "The clerk asked for an ID, not a hotel reservation."
+            },
+            {
+              "text": "Non ho fame adesso, preferisco mangiare dopo sul traghetto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! The clerk is asking for your identity document."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, è obbligatoria per la sicurezza. Ecco il suo biglietto.",
+          "english": "Yes, it is mandatory for security. Here is your ticket.",
+          "choices": [
+            {
+              "text": "Grazie mille. Da quale molo parte il traghetto delle dieci?",
+              "isCorrect": true,
+              "feedback": "Good. Asking for the pier number is a crucial next step."
+            },
+            {
+              "text": "Grazie. Posso avere anche un menu per la cena di stasera?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! Keep focused on the ferry departure info."
+            },
+            {
+              "text": "Bene. Quanto tempo dura il volo fino alla mia destinazione?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are taking a ferry, not a flight."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Parte dal molo numero quattro. Deve essere lì venti minuti prima.",
+          "english": "It departs from pier number four. You must be there twenty minutes before.",
+          "choices": [
+            {
+              "text": "Molo quattro, venti minuti prima. Ho capito, grazie ancora.",
+              "isCorrect": true,
+              "feedback": "Excellent. Repeating the key information to confirm it."
+            },
+            {
+              "text": "Molo quattro, tre ore prima. È troppo tempo da aspettare.",
+              "isCorrect": false,
+              "feedback": "You misheard! The host said twenty minutes, not three hours."
+            },
+            {
+              "text": "Binario quattro, venti minuti dopo. Vado subito a vedere.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You said 'platform' instead of 'pier'."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Prego. Ricordi che l'imbarco chiude dieci minuti prima della partenza.",
+          "english": "You're welcome. Remember that boarding closes ten minutes before departure.",
+          "choices": [
+            {
+              "text": "Va bene. C'è un bar sul traghetto per bere un caffè?",
+              "isCorrect": true,
+              "feedback": "Good. Asking about services on board is a natural question."
+            },
+            {
+              "text": "Va bene. C'è una farmacia qui vicino per comprare medicine?",
+              "isCorrect": false,
+              "feedback": "Possible, but asking about ferry services is more relevant."
+            },
+            {
+              "text": "Va bene. C'è un'area giochi per i bambini in questo porto?",
+              "isCorrect": false,
+              "feedback": "Focus on the ferry trip itself and the immediate boarding."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, c'è un piccolo bar al ponte superiore. Apre dopo la partenza.",
+          "english": "Yes, there is a small bar on the upper deck. It opens after departure.",
+          "choices": [
+            {
+              "text": "Perfetto, mi piace molto prendere il caffè guardando il mare.",
+              "isCorrect": true,
+              "feedback": "Nice. Adding a personal touch while staying in context."
+            },
+            {
+              "text": "Perfetto, mi piace molto guardare i film durante il mio volo.",
+              "isCorrect": false,
+              "feedback": "Again, you are on a ferry, not on a plane! Watch the domain."
+            },
+            {
+              "text": "Perfetto, mi piace molto dormire in treno durante la notte.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are talking about a ferry, not a train."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Il mare oggi è molto calmo, sarà un viaggio piacevole.",
+          "english": "The sea is very calm today, it will be a pleasant journey.",
+          "choices": [
+            {
+              "text": "Ottimo, sono felice. Grazie per le informazioni e buona giornata.",
+              "isCorrect": true,
+              "feedback": "Perfect closing. Polite and ready for the trip."
+            },
+            {
+              "text": "Ottimo, sono felice. Spero che il mio bagaglio arrivi presto.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This sounds like you are at baggage claim."
+            },
+            {
+              "text": "Ottimo, sono felice. Dov'è la mia camera con il letto grande?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are not at a hotel, but at a ticket office."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buon viaggio e buona permanenza sull'isola!",
+          "english": "Have a good trip and a nice stay on the island!",
+          "choices": [
+            {
+              "text": "Grazie mille, arrivederci!",
+              "isCorrect": true,
+              "feedback": "Polite farewell."
+            },
+            {
+              "text": "Dov'è il mio taxi?",
+              "isCorrect": false,
+              "feedback": "A bit abrupt! Say goodbye first."
+            },
+            {
+              "text": "Qual è il mio posto?",
+              "isCorrect": false,
+              "feedback": "You already have the ticket and information. Just leave now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fast_or_slow",
+      "title": "Fast or Slow?",
+      "description": "Choose between the fast hydrofoil and the regular ferry.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve. Vuole prendere il traghetto lento o l'aliscafo veloce?",
+          "english": "Hello. Do you want to take the slow ferry or the fast hydrofoil?",
+          "choices": [
+            {
+              "text": "Salve. Qual è la differenza di tempo tra i due?",
+              "isCorrect": true,
+              "feedback": "Excellent. Asking for a comparison to make a choice."
+            },
+            {
+              "text": "Salve. Qual è il binario per il treno veloce oggi?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are at the port, not at the station."
+            },
+            {
+              "text": "Salve. Qual è la zuppa del giorno in questo posto?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is a ticket office, not a kitchen."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "L'aliscafo impiega quaranta minuti, il traghetto circa un'ora e mezza.",
+          "english": "The hydrofoil takes forty minutes, the ferry about an hour and a half.",
+          "choices": [
+            {
+              "text": "Capisco. L'aliscafo è molto più veloce. E il prezzo?",
+              "isCorrect": true,
+              "feedback": "Good. Moving from time to cost comparison."
+            },
+            {
+              "text": "Capisco. L'aliscafo è molto più grande. E il colore?",
+              "isCorrect": false,
+              "feedback": "The host talked about speed, not size or colors!"
+            },
+            {
+              "text": "Capisco. L'aliscafo ha il Wi-Fi per i passeggeri?",
+              "isCorrect": false,
+              "feedback": "Maybe, but ask about the price first to decide."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "L'aliscafo costa trenta euro, il traghetto costa solo quindici euro.",
+          "english": "The hydrofoil costs thirty euros, the ferry costs only fifteen euros.",
+          "choices": [
+            {
+              "text": "Il traghetto costa la metà. Si può stare fuori sul ponte?",
+              "isCorrect": true,
+              "feedback": "Perfect. Considering both cost and the experience of being on deck."
+            },
+            {
+              "text": "Il traghetto costa la metà. Si può fumare in cabina?",
+              "isCorrect": false,
+              "feedback": "Smoking is generally not allowed and it's a specific question."
+            },
+            {
+              "text": "Il traghetto costa la metà. Si può dormire in cucina?",
+              "isCorrect": false,
+              "feedback": "Nonsense! Passengers don't sleep in the ferry's kitchen."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sul traghetto sì, c'è molto spazio all'aperto. Sull'aliscafo no.",
+          "english": "On the ferry yes, there is a lot of outdoor space. On the hydrofoil no.",
+          "choices": [
+            {
+              "text": "Preferisco il traghetto allora. Mi piace guardare il panorama.",
+              "isCorrect": true,
+              "feedback": "Great choice. Explaining why based on the information given."
+            },
+            {
+              "text": "Preferisco il traghetto allora. Mi piace correre nel bosco.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are at sea, there are no forests."
+            },
+            {
+              "text": "Preferisco il traghetto allora. Mi piace volare sopra le nuvole.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are on a boat, not an airplane."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottima scelta. Il traghetto è più stabile se il mare è mosso.",
+          "english": "Excellent choice. The ferry is more stable if the sea is rough.",
+          "choices": [
+            {
+              "text": "Meno male, soffro un po' il mal di mare. A che ora parte?",
+              "isCorrect": true,
+              "feedback": "Good. Sharing a personal detail and asking for the schedule."
+            },
+            {
+              "text": "Meno male, soffro un po' il mal di schiena. Dov'è il letto?",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the ferry trip, not your back pain."
+            },
+            {
+              "text": "Meno male, soffro un po' la fame. Dov'è il cameriere?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are at the ticket office, not a cafe."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Parte alle undici e quindici dal molo nove. Ecco il biglietto.",
+          "english": "It departs at eleven fifteen from pier nine. Here is the ticket.",
+          "choices": [
+            {
+              "text": "Grazie. Devo fare il check-in prima di salire a bordo?",
+              "isCorrect": true,
+              "feedback": "Smart question. Clarifying the boarding procedure."
+            },
+            {
+              "text": "Grazie. Devo fare la doccia prima di salire a bordo?",
+              "isCorrect": false,
+              "feedback": "Nonsense! You don't need a shower to board a ferry."
+            },
+            {
+              "text": "Grazie. Devo fare un esame prima di salire a bordo?",
+              "isCorrect": false,
+              "feedback": "Nonsense! No exams are needed for ferry passengers."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "No, basta mostrare il biglietto al personale all'imbarco.",
+          "english": "No, just show the ticket to the staff at boarding.",
+          "choices": [
+            {
+              "text": "Perfetto. C'è un deposito bagagli sul traghetto?",
+              "isCorrect": true,
+              "feedback": "Good. Asking about luggage facilities is very practical."
+            },
+            {
+              "text": "Perfetto. C'è un deposito per i soldi sul traghetto?",
+              "isCorrect": false,
+              "feedback": "Odd question. You usually keep your money with you!"
+            },
+            {
+              "text": "Perfetto. C'è un deposito per le scarpe sul traghetto?",
+              "isCorrect": false,
+              "feedback": "You keep your shoes on! This isn't a bowling alley."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, c'è un'area per le valigie grandi vicino all'ingresso.",
+          "english": "Yes, there is an area for large suitcases near the entrance.",
+          "choices": [
+            {
+              "text": "Bene, ho una valigia molto pesante oggi. Grazie.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the information and thanking the host."
+            },
+            {
+              "text": "Bene, ho una valigia molto colorata oggi. Grazie.",
+              "isCorrect": false,
+              "feedback": "The color doesn't matter, the size and weight do!"
+            },
+            {
+              "text": "Bene, ho una valigia molto vuota oggi. Grazie.",
+              "isCorrect": false,
+              "feedback": "If it's empty, you probably don't need the storage!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Si ricordi di arrivare al molo con un po' di anticipo.",
+          "english": "Remember to arrive at the pier a bit early.",
+          "choices": [
+            {
+              "text": "Sarò lì per le undici. Grazie mille per l'aiuto.",
+              "isCorrect": true,
+              "feedback": "Good. Confirming the time you'll arrive at the pier."
+            },
+            {
+              "text": "Sarò lì per le otto. Grazie mille per l'aiuto.",
+              "isCorrect": false,
+              "feedback": "Too early! The ferry departs at eleven fifteen."
+            },
+            {
+              "text": "Sarò lì per le due. Grazie mille per l'aiuto.",
+              "isCorrect": false,
+              "feedback": "Too late! The ferry will have already departed."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla. Buon viaggio e si goda la vista dal ponte!",
+          "english": "You're welcome. Have a good trip and enjoy the view from the deck!",
+          "choices": [
+            {
+              "text": "Lo farò sicuramente. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Lo farò sicuramente. Buonanotte!",
+              "isCorrect": false,
+              "feedback": "It's morning/daytime, not time for 'goodnight'."
+            },
+            {
+              "text": "Lo farò sicuramente. Mi scusi!",
+              "isCorrect": false,
+              "feedback": "No need to apologize here, just say goodbye."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car_transport",
+      "title": "Car Transport",
+      "description": "Book a ticket that includes a car and provide the license plate.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Desidera un biglietto per passeggeri o anche per un'auto?",
+          "english": "Good morning. Would you like a ticket for passengers or also for a car?",
+          "choices": [
+            {
+              "text": "Buongiorno. Vorrei un biglietto per due persone e un'auto.",
+              "isCorrect": true,
+              "feedback": "Clear and complete request for both people and vehicle."
+            },
+            {
+              "text": "Buongiorno. Vorrei un biglietto per due persone e un aereo.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You can't put a plane on a ferry."
+            },
+            {
+              "text": "Buongiorno. Vorrei un biglietto per due persone e un cavallo.",
+              "isCorrect": false,
+              "feedback": "Possible, but the clerk specifically asked about a car."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Va bene. Qual è il modello e la targa della sua macchina?",
+          "english": "Alright. What is the model and license plate of your car?",
+          "choices": [
+            {
+              "text": "È una Fiat Panda grigia. La targa è AB 123 CD.",
+              "isCorrect": true,
+              "feedback": "Correct. Providing the specific details requested."
+            },
+            {
+              "text": "È una bicicletta rossa. La targa è molto piccola.",
+              "isCorrect": false,
+              "feedback": "Bicycles don't usually have license plates like cars."
+            },
+            {
+              "text": "È una casa grande. La targa è sulla porta d'ingresso.",
+              "isCorrect": false,
+              "feedback": "Nonsense! You can't board a ferry with a house."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Grazie. La macchina è più lunga di quattro metri o più corta?",
+          "english": "Thank you. Is the car longer than four meters or shorter?",
+          "choices": [
+            {
+              "text": "È una macchina piccola, è sicuramente più corta di quattro metri.",
+              "isCorrect": true,
+              "feedback": "Good. Answering the technical question about car size."
+            },
+            {
+              "text": "È una macchina rossa, è sicuramente più bella di quattro metri.",
+              "isCorrect": false,
+              "feedback": "Length is measured in meters, beauty is not!"
+            },
+            {
+              "text": "È una macchina nuova, è sicuramente più cara di quattro metri.",
+              "isCorrect": false,
+              "feedback": "Price and length are different things! Pay attention."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo, la tariffa è ridotta per le auto piccole. Sono sessanta euro.",
+          "english": "Great, the rate is reduced for small cars. That's sixty euros.",
+          "choices": [
+            {
+              "text": "Va bene, ecco la mia carta. L'auto deve essere al molo prima?",
+              "isCorrect": true,
+              "feedback": "Good. Paying and asking about specific boarding for cars."
+            },
+            {
+              "text": "Va bene, ecco la mia carta. L'auto deve essere pulita prima?",
+              "isCorrect": false,
+              "feedback": "Ferry staff don't care if your car is dirty or clean."
+            },
+            {
+              "text": "Va bene, ecco la mia carta. L'auto deve essere veloce prima?",
+              "isCorrect": false,
+              "feedback": "Irrelevant! The car's speed doesn't matter for boarding."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, per le auto l'imbarco inizia un'ora prima della partenza.",
+          "english": "Yes, for cars boarding starts one hour before departure.",
+          "choices": [
+            {
+              "text": "Capito. Devo guidare io la macchina dentro il garage?",
+              "isCorrect": true,
+              "feedback": "Smart question about the logistics of car boarding."
+            },
+            {
+              "text": "Capito. Devo guidare io la macchina dentro il mare?",
+              "isCorrect": false,
+              "feedback": "Danger! You drive into the garage, not into the water."
+            },
+            {
+              "text": "Capito. Devo guidare io la macchina dentro il bar?",
+              "isCorrect": false,
+              "feedback": "Impossible! Cars don't go inside the ferry's bar."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, segua le indicazioni del personale. Lasci le chiavi a bordo?",
+          "english": "Yes, follow the staff's instructions. Do you leave the keys on board?",
+          "choices": [
+            {
+              "text": "No, porto le chiavi con me. Devo chiudere l'auto?",
+              "isCorrect": true,
+              "feedback": "Correct procedure and follow-up question."
+            },
+            {
+              "text": "Sì, le lascio sul tetto. È un posto molto sicuro.",
+              "isCorrect": false,
+              "feedback": "That's not safe! You should keep your keys with you."
+            },
+            {
+              "text": "No, le butto in mare. Non mi servono più adesso.",
+              "isCorrect": false,
+              "feedback": "How will you drive when you arrive at your destination?"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, chiuda l'auto e inserisca il freno a mano. È importante.",
+          "english": "Yes, lock the car and pull the handbrake. It's important.",
+          "choices": [
+            {
+              "text": "D'accordo, userò il freno a mano. Posso restare in macchina?",
+              "isCorrect": true,
+              "feedback": "Crucial safety question about staying in the vehicle."
+            },
+            {
+              "text": "D'accordo, userò il freno a mano. Posso restare sul tetto?",
+              "isCorrect": false,
+              "feedback": "Safety hazard! You cannot stay on the roof of the car."
+            },
+            {
+              "text": "D'accordo, userò il freno a mano. Posso restare nel mare?",
+              "isCorrect": false,
+              "feedback": "Nonsense! You must stay on the ferry during the trip."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "No, durante il viaggio non è permesso restare nel garage.",
+          "english": "No, during the trip it is not allowed to stay in the garage.",
+          "choices": [
+            {
+              "text": "Capisco. Allora andremo tutti sul ponte superiore.",
+              "isCorrect": true,
+              "feedback": "Correct response to safety rules."
+            },
+            {
+              "text": "Capisco. Allora andremo tutti nel motore del traghetto.",
+              "isCorrect": false,
+              "feedback": "Dangerous! Passengers are not allowed in the engine room."
+            },
+            {
+              "text": "Capisco. Allora andremo tutti sotto l'acqua del mare.",
+              "isCorrect": false,
+              "feedback": "Impossible! You are a passenger, not a diver."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Esatto. Ci sono molti posti a sedere comodi per voi.",
+          "english": "Exactly. There are many comfortable seats for you.",
+          "choices": [
+            {
+              "text": "Molto bene. Grazie per tutte le spiegazioni utili.",
+              "isCorrect": true,
+              "feedback": "Polite conclusion to the technical information."
+            },
+            {
+              "text": "Molto bene. Grazie per tutte le canzoni cantate.",
+              "isCorrect": false,
+              "feedback": "The host was explaining rules, not singing songs!"
+            },
+            {
+              "text": "Molto bene. Grazie per tutte le pizze cucinate.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are not at a restaurant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego. Buon viaggio a lei e alla sua famiglia!",
+          "english": "You're welcome. Have a good trip to you and your family!",
+          "choices": [
+            {
+              "text": "Grazie, arrivederci!",
+              "isCorrect": true,
+              "feedback": "Polite farewell."
+            },
+            {
+              "text": "Dove sono?",
+              "isCorrect": false,
+              "feedback": "You know where you are! Just say goodbye."
+            },
+            {
+              "text": "Che ore sono?",
+              "isCorrect": false,
+              "feedback": "You already know the time from the previous turns."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boarding_time_pier",
+      "title": "Boarding & Times",
+      "description": "Check the exact pier and boarding time to avoid missing the ferry.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Posso vedere il suo biglietto per il controllo?",
+          "english": "Good morning. Can I see your ticket for the check?",
+          "choices": [
+            {
+              "text": "Buongiorno, certo. Ecco il mio biglietto per Capri.",
+              "isCorrect": true,
+              "feedback": "Good. Providing the ticket and stating the destination."
+            },
+            {
+              "text": "Buongiorno, certo. Ecco il mio passaporto per la Luna.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! Ferries don't go to the moon."
+            },
+            {
+              "text": "Buongiorno, certo. Ecco la mia chiave di casa nuova.",
+              "isCorrect": false,
+              "feedback": "The host asked for a ticket, not your house keys."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Grazie. Il suo traghetto parte dal molo ventidue tra un'ora.",
+          "english": "Thank you. Your ferry departs from pier twenty-two in one hour.",
+          "choices": [
+            {
+              "text": "Molo ventidue. Dove si trova esattamente questo molo?",
+              "isCorrect": true,
+              "feedback": "Good. Asking for directions to the specific pier."
+            },
+            {
+              "text": "Molo ventidue. Dove si trova esattamente la piscina?",
+              "isCorrect": false,
+              "feedback": "Focus on finding the pier first, not leisure facilities."
+            },
+            {
+              "text": "Molo ventidue. Dove si trova esattamente il bosco?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! Ports are industrial, not forests."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Deve andare sempre dritto, poi girare a destra dopo il bar.",
+          "english": "You must go straight, then turn right after the bar.",
+          "choices": [
+            {
+              "text": "Dritto e poi a destra. È lontano da qui a piedi?",
+              "isCorrect": true,
+              "feedback": "Clarifying the distance to plan the walk."
+            },
+            {
+              "text": "Dritto e poi a destra. È possibile volare fin là?",
+              "isCorrect": false,
+              "feedback": "Nonsense! You can't fly within the port area."
+            },
+            {
+              "text": "Dritto e poi a destra. È vietato mangiare cornetti?",
+              "isCorrect": false,
+              "feedback": "Irrelevant! The directions are about reaching the pier."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "No, sono solo cinque minuti a piedi. Molto vicino.",
+          "english": "No, it's only five minutes on foot. Very close.",
+          "choices": [
+            {
+              "text": "Ottimo. A che ora inizia l'imbarco dei passeggeri?",
+              "isCorrect": true,
+              "feedback": "Moving to the next practical question: boarding time."
+            },
+            {
+              "text": "Ottimo. A che ora inizia lo spettacolo di magia?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! You are at a port, not a theater."
+            },
+            {
+              "text": "Ottimo. A che ora inizia la partita di calcio?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! There are no football matches here."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "L'imbarco inizia trenta minuti prima dell'orario di partenza.",
+          "english": "Boarding starts thirty minutes before the departure time.",
+          "choices": [
+            {
+              "text": "Quindi alle dieci e trenta, dato che partiamo alle undici.",
+              "isCorrect": true,
+              "feedback": "Correct calculation. Showing you understood the schedule."
+            },
+            {
+              "text": "Quindi alle dieci e trenta, dato che piove molto forte.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! The time is based on departure, not weather."
+            },
+            {
+              "text": "Quindi alle dieci e trenta, dato che ho molta sete ora.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Your thirst doesn't change the boarding time."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Esatto. C'è molto vento oggi, porti una giacca a bordo.",
+          "english": "Exactly. It's very windy today, take a jacket on board.",
+          "choices": [
+            {
+              "text": "Grazie del consiglio. Il viaggio sarà tranquillo comunque?",
+              "isCorrect": true,
+              "feedback": "Acknowledging the advice and asking about trip conditions."
+            },
+            {
+              "text": "Grazie del consiglio. Posso comprare un cappotto d'oro?",
+              "isCorrect": false,
+              "feedback": "Absurd! You don't need a gold coat for a ferry trip."
+            },
+            {
+              "text": "Grazie del consiglio. Posso avere un letto di piume?",
+              "isCorrect": false,
+              "feedback": "The host suggested a jacket, not bedding equipment."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, il traghetto è grande e stabile, non si preoccupi.",
+          "english": "Yes, the ferry is large and stable, don't worry.",
+          "choices": [
+            {
+              "text": "Bene. C'è una sala d'attesa al molo ventidue?",
+              "isCorrect": true,
+              "feedback": "Good. Inquiring about facilities at the specific pier."
+            },
+            {
+              "text": "Bene. C'è una sala da ballo al molo ventidue?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! It's a pier, not a nightclub."
+            },
+            {
+              "text": "Bene. C'è una sala operatoria al molo ventidue?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! It's a pier, not a hospital."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, c'è una piccola sala coperta e anche delle panchine fuori.",
+          "english": "Yes, there is a small indoor room and also some benches outside.",
+          "choices": [
+            {
+              "text": "Preferisco stare fuori se non piove troppo forte.",
+              "isCorrect": true,
+              "feedback": "Personal preference expressed clearly."
+            },
+            {
+              "text": "Preferisco stare sotto il mare con i pesci piccoli.",
+              "isCorrect": false,
+              "feedback": "Nonsense! You are a human passenger, not a fish."
+            },
+            {
+              "text": "Preferisco stare dentro il camino acceso adesso.",
+              "isCorrect": false,
+              "feedback": "Nonsense! There are no fireplaces on the pier."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene. Si ricordi di tenere il biglietto a portata di mano.",
+          "english": "Alright. Remember to keep your ticket handy.",
+          "choices": [
+            {
+              "text": "Certamente. Grazie mille per la gentilezza.",
+              "isCorrect": true,
+              "feedback": "Polite acknowledgment of the reminder."
+            },
+            {
+              "text": "Certamente. Grazie mille per la marmellata.",
+              "isCorrect": false,
+              "feedback": "The host didn't give you any jam! Stay focused."
+            },
+            {
+              "text": "Certamente. Grazie mille per la bicicletta.",
+              "isCorrect": false,
+              "feedback": "The host didn't give you a bike! Stay focused."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego. Le auguro una splendida giornata a Capri!",
+          "english": "You're welcome. I wish you a wonderful day in Capri!",
+          "choices": [
+            {
+              "text": "Grazie di cuore, arrivederci!",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "Ho molta fame!",
+              "isCorrect": false,
+              "feedback": "Rude way to end a conversation. Say goodbye."
+            },
+            {
+              "text": "Voglio dormire!",
+              "isCorrect": false,
+              "feedback": "Rude way to end a conversation. Say goodbye."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

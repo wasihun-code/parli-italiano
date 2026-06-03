@@ -1,0 +1,993 @@
+{
+  "scenarioId": 9,
+  "conversations": [
+    {
+      "id": "finding_the_piazza",
+      "title": "Finding the Piazza",
+      "description": "Ask for directions to the main square.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarla? Sembra un po' perso.",
+          "english": "Good morning! Can I help you? You look a bit lost.",
+          "choices": [
+            {
+              "text": "Buongiorno, sì. Cerco Piazza del Popolo. È vicino?",
+              "english": "Good morning, yes. I am looking for Piazza del Popolo. Is it nearby?",
+              "isCorrect": true,
+              "feedback": "Perfect! You stated your destination clearly and politely."
+            },
+            {
+              "text": "Buongiorno. Dove posso trovare un buon ristorante qui?",
+              "isCorrect": false,
+              "feedback": "You need the piazza first, then you can find food!"
+            },
+            {
+              "text": "Salve, mi scusi. Sa dove si trova la stazione treni?",
+              "isCorrect": false,
+              "feedback": "You're looking for the piazza, not the station right now."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, è abbastanza vicino. Deve andare dritto per questa strada.",
+          "english": "Yes, it's quite close. You must go straight along this street.",
+          "choices": [
+            {
+              "text": "Andare dritto per questa strada... ho capito. E poi?",
+              "english": "Go straight along this street... I understand. And then?",
+              "isCorrect": true,
+              "feedback": "Repeating the instruction helps confirm understanding."
+            },
+            {
+              "text": "Giro subito a sinistra dopo il primo semaforo?",
+              "isCorrect": false,
+              "feedback": "The host said to go straight first!"
+            },
+            {
+              "text": "Devo prendere un autobus per arrivare alla piazza?",
+              "isCorrect": false,
+              "feedback": "The host implies you should walk straight."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Poi arrivi a un incrocio con un semaforo. Lì devi girare a destra.",
+          "english": "Then you arrive at a crossroads with a traffic light. There you must turn right.",
+          "choices": [
+            {
+              "text": "All'incrocio con il semaforo, giro a destra. Corretto?",
+              "english": "At the crossroads with the traffic light, I turn right. Correct?",
+              "isCorrect": true,
+              "feedback": "Excellent confirmation of the turning point."
+            },
+            {
+              "text": "Giro a sinistra quando vedo il grande semaforo?",
+              "isCorrect": false,
+              "feedback": "The host said right, not left!"
+            },
+            {
+              "text": "Vado dritto all'incrocio senza fermarmi mai?",
+              "isCorrect": false,
+              "feedback": "You need to turn to reach the piazza."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto. Dopo la curva, vedrà la piazza di fronte a lei.",
+          "english": "Exactly. After the curve, you will see the square in front of you.",
+          "choices": [
+            {
+              "text": "Quindi dopo la curva la piazza è di fronte. Grazie mille!",
+              "english": "So after the curve the square is in front. Thanks a lot!",
+              "isCorrect": true,
+              "feedback": "Final confirmation and thanks. Well done."
+            },
+            {
+              "text": "La piazza è dietro di me dopo che ho fatto la curva?",
+              "isCorrect": false,
+              "feedback": "No, it will be in front of you."
+            },
+            {
+              "text": "Non vedo nessuna curva in questa direzione, è sicuro?",
+              "isCorrect": false,
+              "feedback": "You haven't reached it yet!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, è proprio lì. È una piazza molto grande con molte fontane.",
+          "english": "Yes, it's right there. It's a very large square with many fountains.",
+          "choices": [
+            {
+              "text": "Una piazza con molte fontane? Sembra molto bella.",
+              "english": "A square with many fountains? It sounds very beautiful.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the description."
+            },
+            {
+              "text": "Ci sono dei negozi di scarpe in quella piazza?",
+              "isCorrect": false,
+              "feedback": "Focus on finding the piazza first."
+            },
+            {
+              "text": "È una piazza piccola e senza monumenti importanti?",
+              "isCorrect": false,
+              "feedback": "The host said it's large with fountains."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "È bellissima. Ci sono anche molti bar dove prendere un caffè.",
+          "english": "It's beautiful. There are also many bars where you can have a coffee.",
+          "choices": [
+            {
+              "text": "Ottimo, magari mi fermo per un caffè più tardi.",
+              "english": "Great, maybe I'll stop for a coffee later.",
+              "isCorrect": true,
+              "feedback": "Responding to the suggestion."
+            },
+            {
+              "text": "Non mi piace il caffè italiano, preferisco il tè.",
+              "isCorrect": false,
+              "feedback": "A bit rude, and doesn't progress the conversation well."
+            },
+            {
+              "text": "Quanto costa un caffè in centro in questo periodo?",
+              "isCorrect": false,
+              "feedback": "A bit too specific for a stranger."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "I bar lì sono un po' cari, ma la vista è fantastica.",
+          "english": "The bars there are a bit expensive, but the view is fantastic.",
+          "choices": [
+            {
+              "text": "Capisco. Grazie per l'avvertimento sui prezzi.",
+              "english": "I understand. Thanks for the warning about the prices.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the tip."
+            },
+            {
+              "text": "Voglio pagare poco per il mio pranzo oggi.",
+              "isCorrect": false,
+              "feedback": "The host is talking about coffee/view, not lunch."
+            },
+            {
+              "text": "La vista non mi interessa molto, cerco solo la via.",
+              "isCorrect": false,
+              "feedback": "A bit dismissive of the helpful host."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Si figuri. Ha bisogno di altre indicazioni per oggi?",
+          "english": "Don't mention it. Do you need any more directions for today?",
+          "choices": [
+            {
+              "text": "No, per ora va bene così. È stato gentilissimo.",
+              "english": "No, for now it's fine like this. You were very kind.",
+              "isCorrect": true,
+              "feedback": "Politely declining further help."
+            },
+            {
+              "text": "Sì, mi dica come andare a Milano da qui subito.",
+              "isCorrect": false,
+              "feedback": "That's a bit too far for walking directions!"
+            },
+            {
+              "text": "Perché mi chiede se ho bisogno di altro aiuto?",
+              "isCorrect": false,
+              "feedback": "They're just being helpful!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Prego! Buona passeggiata. Si goda la nostra città.",
+          "english": "You're welcome! Have a nice walk. Enjoy our city.",
+          "choices": [
+            {
+              "text": "Grazie ancora e buona giornata. Arrivederci!",
+              "english": "Thanks again and have a nice day. Goodbye!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Arrivederci, ma non mi piace molto camminare.",
+              "isCorrect": false,
+              "feedback": "Why did you ask for walking directions then?"
+            },
+            {
+              "text": "Sì, grazie. Dov'è l'uscita della città?",
+              "isCorrect": false,
+              "feedback": "A very strange question to end with."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci e buon divertimento a Roma!",
+          "english": "Goodbye and have fun in Rome!",
+          "choices": [
+            {
+              "text": "Arrivederci!",
+              "english": "Goodbye!",
+              "isCorrect": true,
+              "feedback": "Final goodbye."
+            },
+            {
+              "text": "A domani!",
+              "isCorrect": false,
+              "feedback": "You probably won't see them tomorrow."
+            },
+            {
+              "text": "Ciao ciao!",
+              "isCorrect": false,
+              "feedback": "A bit too informal for a stranger."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "going_to_the_museum",
+      "title": "Going to the Museum",
+      "description": "Find the way to the National Museum.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Scusi, ha bisogno di aiuto con la mappa?",
+          "english": "Excuse me, do you need help with the map?",
+          "choices": [
+            {
+              "text": "Sì, per favore. Cerco il Museo Nazionale. Sa dov'è?",
+              "english": "Yes, please. I am looking for the National Museum. Do you know where it is?",
+              "isCorrect": true,
+              "feedback": "Good use of the map context to ask for help."
+            },
+            {
+              "text": "Sì. Dove posso comprare una mappa più grande di questa?",
+              "isCorrect": false,
+              "feedback": "You already have a map, use it to find the museum!"
+            },
+            {
+              "text": "Scusi, quanto costa un biglietto per l'autobus locale?",
+              "isCorrect": false,
+              "feedback": "Ask about the museum first if that's your goal."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Il museo è dietro quell'edificio grande, in fondo alla via.",
+          "english": "Certainly. The museum is behind that big building, at the end of the street.",
+          "choices": [
+            {
+              "text": "In fondo alla via, dietro l'edificio grande? Ho capito.",
+              "english": "At the end of the street, behind the big building? I understand.",
+              "isCorrect": true,
+              "feedback": "Confirming the location clearly."
+            },
+            {
+              "text": "Il museo si trova dentro quell'edificio molto grande?",
+              "isCorrect": false,
+              "feedback": "The host said it's behind it."
+            },
+            {
+              "text": "Devo prendere un taxi per arrivare in fondo alla via?",
+              "isCorrect": false,
+              "feedback": "The host implies it's within walking distance."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Deve girare a sinistra all'angolo, dopo la banca.",
+          "english": "You must turn left at the corner, after the bank.",
+          "choices": [
+            {
+              "text": "Giro a sinistra all'angolo dopo la banca. È lontano?",
+              "english": "I turn left at the corner after the bank. Is it far?",
+              "isCorrect": true,
+              "feedback": "Asking about distance is a good follow-up."
+            },
+            {
+              "text": "Devo girare a destra subito prima di arrivare alla banca?",
+              "isCorrect": false,
+              "feedback": "Listen carefully: left after the bank."
+            },
+            {
+              "text": "La banca è aperta o chiusa a quest'ora del mattino?",
+              "isCorrect": false,
+              "feedback": "The status of the bank doesn't change the direction."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "No, sono solo cinque minuti a piedi. È molto vicino.",
+          "english": "No, it's only five minutes on foot. It's very close.",
+          "choices": [
+            {
+              "text": "Cinque minuti a piedi, perfetto. Grazie per l'informazione.",
+              "english": "Five minutes on foot, perfect. Thanks for the information.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the distance and thanking."
+            },
+            {
+              "text": "Allora prendo un taxi per questi cinque minuti a piedi.",
+              "isCorrect": false,
+              "feedback": "Unnecessary for such a short distance."
+            },
+            {
+              "text": "Dov'è la fermata dell'autobus più vicina per il museo?",
+              "isCorrect": false,
+              "feedback": "You're going to walk, it's very close!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Si ricordi: sinistra dopo la banca. Il museo ha un grande portone rosso.",
+          "english": "Remember: left after the bank. The museum has a large red door.",
+          "choices": [
+            {
+              "text": "Un grande portone rosso. Grazie, lo cercherò sicuramente.",
+              "english": "A large red door. Thanks, I will surely look for it.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the visual cue."
+            },
+            {
+              "text": "Il portone è verde o blu? Non ho capito bene.",
+              "isCorrect": false,
+              "feedback": "The host said it's red."
+            },
+            {
+              "text": "Il museo è chiuso il lunedì? Sa l'orario di apertura?",
+              "isCorrect": false,
+              "feedback": "First find it, then check the hours."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Oggi è aperto fino alle sette di sera. C'è una mostra bellissima.",
+          "english": "Today it's open until seven in the evening. There's a beautiful exhibition.",
+          "choices": [
+            {
+              "text": "Fino alle sette? Ottimo, ho molto tempo per visitarlo.",
+              "english": "Until seven? Great, I have a lot of time to visit it.",
+              "isCorrect": true,
+              "feedback": "Confirming the opening hours."
+            },
+            {
+              "text": "Chiude a mezzogiorno per la pausa pranzo, giusto?",
+              "isCorrect": false,
+              "feedback": "The host said it's open until seven."
+            },
+            {
+              "text": "Non mi piacciono le mostre d'arte moderna, preferisco altro.",
+              "isCorrect": false,
+              "feedback": "A bit negative."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, e il biglietto costa solo dieci euro. È un buon prezzo.",
+          "english": "Yes, and the ticket costs only ten euros. It's a good price.",
+          "choices": [
+            {
+              "text": "Dieci euro è onesto. Grazie per tutti i dettagli.",
+              "english": "Ten euros is fair. Thanks for all the details.",
+              "isCorrect": true,
+              "feedback": "Accepting the price info."
+            },
+            {
+              "text": "Cento euro? È troppo caro per un piccolo museo!",
+              "isCorrect": false,
+              "feedback": "The host said ten, not one hundred."
+            },
+            {
+              "text": "Posso entrare gratis perché sono uno studente?",
+              "isCorrect": false,
+              "feedback": "Maybe, but you should ask at the ticket office."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Di nulla. Se ha fame, c'è un bar proprio accanto al museo.",
+          "english": "You're welcome. If you're hungry, there's a bar right next to the museum.",
+          "choices": [
+            {
+              "text": "Grazie, forse mangerò qualcosa lì dopo la visita.",
+              "english": "Thanks, maybe I'll eat something there after the visit.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the suggestion for food."
+            },
+            {
+              "text": "Non ho mai fame when visito i musei nazionali.",
+              "isCorrect": false,
+              "feedback": "A bit of an odd response."
+            },
+            {
+              "text": "Il bar vende anche sigarette e giornali esteri?",
+              "isCorrect": false,
+              "feedback": "Unlikely for a museum bar."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Buona visita allora! Si diverta molto.",
+          "english": "Have a good visit then! Have a lot of fun.",
+          "choices": [
+            {
+              "text": "Grazie mille! Buona giornata e arrivederci.",
+              "english": "Thanks a lot! Have a nice day and goodbye.",
+              "isCorrect": true,
+              "feedback": "Polite sign-off."
+            },
+            {
+              "text": "Non mi divertirò affatto, odio la storia.",
+              "isCorrect": false,
+              "feedback": "Then why go to the museum?"
+            },
+            {
+              "text": "Dov'è le bagno più vicino in questa zona?",
+              "isCorrect": false,
+              "feedback": "Wait until you get to the museum!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci! Buona passeggiata.",
+          "english": "Goodbye! Have a nice walk.",
+          "choices": [
+            {
+              "text": "Arrivederci!",
+              "english": "Goodbye!",
+              "isCorrect": true,
+              "feedback": "Final goodbye."
+            },
+            {
+              "text": "A presto!",
+              "isCorrect": false,
+              "feedback": "A bit too informal."
+            },
+            {
+              "text": "A più tardi!",
+              "isCorrect": false,
+              "feedback": "You probably won't see them again soon."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding_the_hotel",
+      "title": "Finding the Hotel",
+      "description": "Locate your hotel in a busy area.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Cerca l'Hotel Roma? Molti turisti lo cercano.",
+          "english": "Hello! Are you looking for Hotel Roma? Many tourists look for it.",
+          "choices": [
+            {
+              "text": "Sì, cerco proprio l'Hotel Roma. Sa come arrivare?",
+              "english": "Yes, I am looking for exactly Hotel Roma. Do you know how to get there?",
+              "isCorrect": true,
+              "feedback": "Confirming the destination correctly."
+            },
+            {
+              "text": "No, cerco una pizzeria economica in questa zona.",
+              "isCorrect": false,
+              "feedback": "But you have a reservation at the hotel!"
+            },
+            {
+              "text": "L'hotel è molto brutto e vecchio, vero?",
+              "isCorrect": false,
+              "feedback": "Not a helpful comment when you need to find it!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È facile. Attraversi la strada e giri a destra alla farmacia.",
+          "english": "It's easy. Cross the street and turn right at the pharmacy.",
+          "choices": [
+            {
+              "text": "Attraverso la strada e giro a destra alla farmacia. Capito.",
+              "english": "I cross the street and turn right at the pharmacy. Understood.",
+              "isCorrect": true,
+              "feedback": "Repeating the first steps of the direction."
+            },
+            {
+              "text": "Vado dritto oltre la farmacia senza girare mai?",
+              "isCorrect": false,
+              "feedback": "You need to turn right at the pharmacy."
+            },
+            {
+              "text": "La farmacia è aperta a quest'ora del pomeriggio?",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the directions."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Poi continui dritto fino al ristorante 'Da Mario'. L'hotel è accanto.",
+          "english": "Then continue straight until the restaurant 'Da Mario'. The hotel is next to it.",
+          "choices": [
+            {
+              "text": "Dritto fino a 'Da Mario', e l'hotel è accanto. Ottimo.",
+              "english": "Straight until 'Da Mario', and the hotel is next to it. Great.",
+              "isCorrect": true,
+              "feedback": "Clear understanding of the final destination's neighbor."
+            },
+            {
+              "text": "L'hotel è molto lontano dal ristorante 'Da Mario'?",
+              "isCorrect": false,
+              "feedback": "The host said it is right next to it."
+            },
+            {
+              "text": "Giro a sinistra subito dopo il ristorante?",
+              "isCorrect": false,
+              "feedback": "No, the hotel is right there beside the restaurant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto, non può sbagliare. È un edificio bianco con i fiori.",
+          "english": "Exactly, you can't miss it. It's a white building with flowers.",
+          "choices": [
+            {
+              "text": "Edificio bianco con i fiori. Grazie, è stato molto gentile.",
+              "english": "White building with flowers. Thanks, you were very kind.",
+              "isCorrect": true,
+              "feedback": "Using visual cues to confirm the destination."
+            },
+            {
+              "text": "Vedo solo un edificio rosso e senza fiori qui.",
+              "isCorrect": false,
+              "feedback": "That's likely not your hotel then."
+            },
+            {
+              "text": "Dov'è la mia camera? Sono molto stanco.",
+              "isCorrect": false,
+              "feedback": "You'll find out once you arrive at the reception!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "È una zona molto tranquilla, dormirà bene sicuramente.",
+          "english": "It's a very quiet area, you will surely sleep well.",
+          "choices": [
+            {
+              "text": "Spero di sì, il viaggio è stato molto lungo.",
+              "english": "I hope so, the trip was very long.",
+              "isCorrect": true,
+              "feedback": "Sharing a bit of context."
+            },
+            {
+              "text": "C'è molta confusione e rumore in questa via?",
+              "isCorrect": false,
+              "feedback": "The host just said it's quiet!"
+            },
+            {
+              "text": "Non voglio dormire, voglio uscire subito.",
+              "isCorrect": false,
+              "feedback": "A bit contradictory if you're looking for your hotel."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Lo immagino. Da dove viene di bello?",
+          "english": "I imagine. Where do you come from?",
+          "choices": [
+            {
+              "text": "Vengo da Londra. È la mia prima volta in Italia.",
+              "english": "I come from London. It's my first time in Italy.",
+              "isCorrect": true,
+              "feedback": "Answering a friendly question."
+            },
+            {
+              "text": "Vengo da qui, abito in questa strada.",
+              "isCorrect": false,
+              "feedback": "Then why are you looking for a hotel?"
+            },
+            {
+              "text": "Non sono affari suoi da dove vengo.",
+              "isCorrect": false,
+              "feedback": "A bit rude for a friendly chat."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Benvenuto! Londra è una città magnifica, ma qui c'è più sole.",
+          "english": "Welcome! London is a magnificent city, but there's more sun here.",
+          "choices": [
+            {
+              "text": "È vero, il clima qui è fantastico oggi.",
+              "english": "It's true, the weather here is fantastic today.",
+              "isCorrect": true,
+              "feedback": "Agreeing about the weather."
+            },
+            {
+              "text": "Odio il sole, preferisco la pioggia inglese.",
+              "isCorrect": false,
+              "feedback": "A bit negative."
+            },
+            {
+              "text": "Londra è molto brutta e grigia, non mi piace.",
+              "isCorrect": false,
+              "feedback": "The host was being nice about your city."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Si goda il sole allora. Se serve altro, io sono spesso qui.",
+          "english": "Enjoy the sun then. If you need anything else, I'm often here.",
+          "choices": [
+            {
+              "text": "Grazie, lo terrò a mente. Buona giornata!",
+              "english": "Thanks, I will keep it in mind. Have a nice day!",
+              "isCorrect": true,
+              "feedback": "Acknowledging the offer of help."
+            },
+            {
+              "text": "Voglio il suo numero di telefono subito.",
+              "isCorrect": false,
+              "feedback": "A bit too forward!"
+            },
+            {
+              "text": "Non avrò mai più bisogno di lei, grazie.",
+              "isCorrect": false,
+              "feedback": "A bit harsh."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Buona permanenza a Roma. Arrivederci!",
+          "english": "Have a good stay in Rome. Goodbye!",
+          "choices": [
+            {
+              "text": "Grazie e arrivederci!",
+              "english": "Thanks and goodbye!",
+              "isCorrect": true,
+              "feedback": "Polite conclusion."
+            },
+            {
+              "text": "Voglio andare a Milano.",
+              "isCorrect": false,
+              "feedback": "A bit late for that change of plans!"
+            },
+            {
+              "text": "Dov'è il wifi gratuito?",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the goodbye."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "A presto e buon riposo in hotel!",
+          "english": "See you soon and have a good rest at the hotel!",
+          "choices": [
+            {
+              "text": "Grazie, arrivederci!",
+              "english": "Thanks, goodbye!",
+              "isCorrect": true,
+              "feedback": "Final goodbye."
+            },
+            {
+              "text": "Buona notte!",
+              "isCorrect": false,
+              "feedback": "It's still afternoon probably."
+            },
+            {
+              "text": "Ci vediamo presto!",
+              "isCorrect": false,
+              "feedback": "Too informal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "train_station_directions",
+      "title": "Train Station Directions",
+      "description": "Get directions to the central train station.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Mi scusi, sta cercando la stazione ferroviaria?",
+          "english": "Excuse me, are you looking for the train station?",
+          "choices": [
+            {
+              "text": "Sì, scusi. Come arrivo alla stazione centrale?",
+              "english": "Yes, excuse me. How do I get to the central station?",
+              "isCorrect": true,
+              "feedback": "Direct and polite request for directions."
+            },
+            {
+              "text": "No, cerco la spiaggia più vicina da qui.",
+              "isCorrect": false,
+              "feedback": "You are in the city center, far from the beach!"
+            },
+            {
+              "text": "Il mio treno è in ritardo di due ore.",
+              "isCorrect": false,
+              "feedback": "You haven't even reached the station yet!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Deve prendere l'autobus numero 40. La fermata è lì, di fronte al bar.",
+          "english": "You must take bus number 40. The stop is there, in front of the bar.",
+          "choices": [
+            {
+              "text": "Autobus 40, fermata di fronte al bar. Grazie. È lontano?",
+              "english": "Bus 40, stop in front of the bar. Thanks. Is it far?",
+              "isCorrect": true,
+              "feedback": "Understanding the transportation mode and stop location."
+            },
+            {
+              "text": "Vado a piedi perché mi piace camminare.",
+              "isCorrect": false,
+              "feedback": "The host suggested the bus, implying it might be far."
+            },
+            {
+              "text": "Dov'è il bar di cui parla? Non lo vedo.",
+              "isCorrect": false,
+              "feedback": "The host just pointed it out 'there'!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "A piedi sono circa venti minuti. Con l'autobus è molto più veloce.",
+          "english": "On foot it's about twenty minutes. By bus it's much faster.",
+          "choices": [
+            {
+              "text": "Venti minuti a piedi? Allora preferisco l'autobus. Grazie.",
+              "english": "Twenty minutes on foot? Then I prefer the bus. Thanks.",
+              "isCorrect": true,
+              "feedback": "Making a decision based on the information provided."
+            },
+            {
+              "text": "Cammino per un'ora intera senza problemi.",
+              "isCorrect": false,
+              "feedback": "The host said twenty minutes, not an hour."
+            },
+            {
+              "text": "Il mio treno parte tra cinque minuti.",
+              "isCorrect": false,
+              "feedback": "Then you'd better hurry!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, l'autobus passa ogni dieci minuti. Scenda alla quarta fermata.",
+          "english": "Yes, the bus passes every ten minutes. Get off at the fourth stop.",
+          "choices": [
+            {
+              "text": "Scendo alla quarta fermata. Ho capito. Grazie mille dell'aiuto.",
+              "english": "I get off at the fourth stop. I understand. Thanks a lot for the help.",
+              "isCorrect": true,
+              "feedback": "Confirming the exit point for the bus ride."
+            },
+            {
+              "text": "Scendo subito alla prima fermata possibile.",
+              "isCorrect": false,
+              "feedback": "No, wait for the fourth stop!"
+            },
+            {
+              "text": "Dove posso comprare il biglietto dell'autobus?",
+              "isCorrect": false,
+              "feedback": "You need to buy one, but first know where to go."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Può comprare il biglietto dal tabaccaio proprio lì all'angolo.",
+          "english": "You can buy the ticket at the tobacconist right there on the corner.",
+          "choices": [
+            {
+              "text": "Dal tabaccaio all'angolo, perfetto. Grazie ancora.",
+              "english": "From the tobacconist on the corner, perfect. Thanks again.",
+              "isCorrect": true,
+              "feedback": "Confirming where to buy the ticket."
+            },
+            {
+              "text": "Il tabaccaio vende anche francobolli esteri?",
+              "isCorrect": false,
+              "feedback": "Focus on the bus ticket for now."
+            },
+            {
+              "text": "Non ho soldi per il biglietto dell'autobus.",
+              "isCorrect": false,
+              "feedback": "Then you might have to walk the twenty minutes!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Si figuri. Si ricordi di timbrare il biglietto a bordo.",
+          "english": "Don't mention it. Remember to validate the ticket on board.",
+          "choices": [
+            {
+              "text": "Lo farò sicuramente, non voglio prendere una multa.",
+              "english": "I will certainly do it, I don't want to get a fine.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the rule about validation."
+            },
+            {
+              "text": "Non voglio timbrare nulla, è gratis per me.",
+              "isCorrect": false,
+              "feedback": "No, you must validate your ticket!"
+            },
+            {
+              "text": "Dov'è la macchina per i biglietti del treno?",
+              "isCorrect": false,
+              "feedback": "That's at the station, you're not there yet."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Esatto. Le multe sono molto salate qui a Roma.",
+          "english": "Exactly. Fines are very high here in Rome.",
+          "choices": [
+            {
+              "text": "Grazie per l'avvertimento, sarò molto attento.",
+              "english": "Thanks for the warning, I will be very careful.",
+              "isCorrect": true,
+              "feedback": "Appreciating the helpful advice."
+            },
+            {
+              "text": "Le multe non mi fanno paura, sono ricco.",
+              "isCorrect": false,
+              "feedback": "Not a very wise attitude."
+            },
+            {
+              "text": "A che ora parte il prossimo treno per Napoli?",
+              "isCorrect": false,
+              "feedback": "The host probably doesn't know the timetable."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Prego. La stazione è l'ultima fermata di quella linea.",
+          "english": "You're welcome. The station is the last stop on that line.",
+          "choices": [
+            {
+              "text": "L'ultima fermata? Allora è impossibile sbagliare.",
+              "english": "The last stop? Then it's impossible to go wrong.",
+              "isCorrect": true,
+              "feedback": "Understanding it's the terminus."
+            },
+            {
+              "text": "Devo scendere a metà strada allora?",
+              "isCorrect": false,
+              "feedback": "No, the host said last stop."
+            },
+            {
+              "text": "Quanto tempo ci vuole per arrivare a Napoli?",
+              "isCorrect": false,
+              "feedback": "Focus on getting to the station first."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Proprio così. Buon viaggio e faccia attenzione ai bagagli.",
+          "english": "Exactly. Have a good trip and watch your luggage.",
+          "choices": [
+            {
+              "text": "Grazie mille del consiglio. Arrivederci!",
+              "english": "Thanks a lot for the advice. Goodbye!",
+              "isCorrect": true,
+              "feedback": "Polite sign-off with thanks for advice."
+            },
+            {
+              "text": "I miei bagagli sono molto pesanti e brutti.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information."
+            },
+            {
+              "text": "Non ho bagagli, viaggio molto leggero.",
+              "isCorrect": false,
+              "feedback": "A bit dismissive of the advice."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci e buona giornata!",
+          "english": "Goodbye and have a nice day!",
+          "choices": [
+            {
+              "text": "Arrivederci!",
+              "english": "Goodbye!",
+              "isCorrect": true,
+              "feedback": "Final goodbye."
+            },
+            {
+              "text": "A domani!",
+              "isCorrect": false,
+              "feedback": "Unlikely to see them again."
+            },
+            {
+              "text": "Ciao ciao!",
+              "isCorrect": false,
+              "feedback": "Too informal."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

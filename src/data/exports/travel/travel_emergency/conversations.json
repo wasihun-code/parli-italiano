@@ -1,0 +1,953 @@
+{
+  "scenarioId": 16,
+  "conversations": [
+    {
+      "id": "lost_passport_wallet",
+      "title": "Lost Passport",
+      "description": "Report a lost passport at the police station.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, come posso aiutarla? Sembra preoccupato.",
+          "english": "Good morning, how can I help you? You look worried.",
+          "choices": [
+            {
+              "text": "Buongiorno. Ho un'emergenza, ho perso il mio passaporto.",
+              "isCorrect": true,
+              "feedback": "Correct. Stating the emergency clearly is the best start."
+            },
+            {
+              "text": "Mi piace molto questa città, è bellissima oggi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! You are at a police station for an emergency."
+            },
+            {
+              "text": "Dove posso comprare un gelato al cioccolato?",
+              "isCorrect": false,
+              "feedback": "Not the right place or time for ice cream!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dispiace molto. Dove lo ha visto l'ultima volta?",
+          "english": "I'm very sorry. Where did you see it for the last time?",
+          "choices": [
+            {
+              "text": "Credo di averlo perso in stazione mezz'ora fa.",
+              "isCorrect": true,
+              "feedback": "Good. Providing a time and place helps the investigation."
+            },
+            {
+              "text": "Il mio passaporto è rosso e molto nuovo.",
+              "isCorrect": false,
+              "feedback": "The officer asked where you lost it, not what it looks like."
+            },
+            {
+              "text": "Voglio andare al museo domani mattina presto.",
+              "isCorrect": false,
+              "feedback": "You can't go to the museum without your documents!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ha perso anche il portafoglio o solo il passaporto?",
+          "english": "Did you also lose your wallet or just your passport?",
+          "choices": [
+            {
+              "text": "Solo il passaporto, per fortuna ho ancora i soldi.",
+              "isCorrect": true,
+              "feedback": "Clarifying what is missing is very important."
+            },
+            {
+              "text": "Il portafoglio è nel mio zaino a casa.",
+              "isCorrect": false,
+              "feedback": "The officer wants to know if you have it with you now."
+            },
+            {
+              "text": "Non mi piace perdere le cose quando viaggio.",
+              "isCorrect": false,
+              "feedback": "A general comment doesn't help the situation."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capisco. Dobbiamo fare una denuncia. Ha un altro documento?",
+          "english": "I see. We need to file a report. Do you have another document?",
+          "choices": [
+            {
+              "text": "No, non ho altri documenti con me. È un problema?",
+              "isCorrect": true,
+              "feedback": "Honest answer. It's important to know your options."
+            },
+            {
+              "text": "Sì, ho una foto del mio gatto sul telefono.",
+              "isCorrect": false,
+              "feedback": "A cat photo is not a valid identification document!"
+            },
+            {
+              "text": "La mia borsa è molto pesante oggi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information for filing a police report."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Un po', ma possiamo chiamare la sua ambasciata per aiuto.",
+          "english": "A bit, but we can call your embassy for help.",
+          "choices": [
+            {
+              "text": "Grazie, è molto gentile. Dove si trova l'ambasciata?",
+              "isCorrect": true,
+              "feedback": "Good. Asking for the location is the logical next step."
+            },
+            {
+              "text": "Non voglio chiamare nessuno, voglio solo dormire.",
+              "isCorrect": false,
+              "feedback": "You need to solve the document problem first!"
+            },
+            {
+              "text": "L'ambasciata è un edificio molto grande.",
+              "isCorrect": false,
+              "feedback": "You are describing it instead of asking where it is."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "È in centro, vicino alla piazza principale. È facile.",
+          "english": "It's in the center, near the main square. It's easy.",
+          "choices": [
+            {
+              "text": "Posso andarci a piedi o è meglio prendere un taxi?",
+              "isCorrect": true,
+              "feedback": "Practical question to plan your next move."
+            },
+            {
+              "text": "La piazza è piena di turisti in estate.",
+              "isCorrect": false,
+              "feedback": "The officer is giving directions, not discussing tourism."
+            },
+            {
+              "text": "Preferisco mangiare una pizza in centro.",
+              "isCorrect": false,
+              "feedback": "Focus on your lost passport, not food!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È meglio un taxi, è un po' lontano da qui.",
+          "english": "A taxi is better, it's a bit far from here.",
+          "choices": [
+            {
+              "text": "Va bene, chiamo subito un taxi. Grazie mille.",
+              "isCorrect": true,
+              "feedback": "Accepting the advice and thanking the officer."
+            },
+            {
+              "text": "Il taxi costa troppo per me oggi.",
+              "isCorrect": false,
+              "feedback": "In an emergency, speed and safety are priorities."
+            },
+            {
+              "text": "A piedi posso vedere molti monumenti.",
+              "isCorrect": false,
+              "feedback": "You are in a hurry to reach the embassy!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Prego. Ha bisogno di altro prima di andare via?",
+          "english": "You're welcome. Do you need anything else before leaving?",
+          "choices": [
+            {
+              "text": "No, grazie. Spero di trovare il passaporto presto.",
+              "isCorrect": true,
+              "feedback": "Polite closing of the interaction."
+            },
+            {
+              "text": "Sì, voglio un caffè molto forte.",
+              "isCorrect": false,
+              "feedback": "The police station is not a cafe."
+            },
+            {
+              "text": "Quanto tempo ci vuole per arrivare?",
+              "isCorrect": false,
+              "feedback": "You already decided to take a taxi."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Lo spero anche io. Buona fortuna con la denuncia.",
+          "english": "I hope so too. Good luck with the report.",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie ancora per tutto l'aiuto.",
+              "isCorrect": true,
+              "feedback": "Standard polite goodbye."
+            },
+            {
+              "text": "Domani vado al mare se c'è il sole.",
+              "isCorrect": false,
+              "feedback": "Unrelated future plans."
+            },
+            {
+              "text": "Non mi piacciono le stazioni affollate.",
+              "isCorrect": false,
+              "feedback": "Complaining doesn't help now."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci. Si ricordi di chiamare subito l'ambasciata.",
+          "english": "Goodbye. Remember to call the embassy right away.",
+          "choices": [
+            {
+              "text": "Sì, lo farò subito. Buona giornata a lei.",
+              "isCorrect": true,
+              "feedback": "Confirming the next step and wishing well."
+            },
+            {
+              "text": "No, preferisco chiamare mia madre.",
+              "isCorrect": false,
+              "feedback": "The embassy is more important for your documents!"
+            },
+            {
+              "text": "Il mio telefono è quasi scarico.",
+              "isCorrect": false,
+              "feedback": "Charge it quickly then, but don't just say it!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missed_flight_train",
+      "title": "Missed Connection",
+      "description": "Handle a missed flight or train at the ticket counter.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Posso aiutarla con il suo biglietto?",
+          "english": "Good morning. Can I help you with your ticket?",
+          "choices": [
+            {
+              "text": "Sì, ho perso il mio volo per Roma. Cosa posso fare?",
+              "isCorrect": true,
+              "feedback": "Directly stating the problem is the best approach."
+            },
+            {
+              "text": "Il biglietto è blu e molto piccolo.",
+              "isCorrect": false,
+              "feedback": "Describing the ticket's color doesn't solve the missed flight."
+            },
+            {
+              "text": "Voglio andare a Roma in bicicletta.",
+              "isCorrect": false,
+              "feedback": "Unrealistic alternative for a missed flight."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dispiace. Perché ha perso il volo? Era in ritardo?",
+          "english": "I'm sorry. Why did you miss the flight? Were you late?",
+          "choices": [
+            {
+              "text": "Sì, c'era molto traffico sulla strada per l'aeroporto.",
+              "isCorrect": true,
+              "feedback": "Explaining the cause of the delay clearly."
+            },
+            {
+              "text": "Non mi piace alzarmi presto la mattina.",
+              "isCorrect": false,
+              "feedback": "A personal preference is not a professional explanation."
+            },
+            {
+              "text": "Il mio orologio è rotto da ieri.",
+              "isCorrect": false,
+              "feedback": "Too much detail about your watch."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco. Vediamo... c'è un altro volo tra due ore.",
+          "english": "I see. Let's see... there is another flight in two hours.",
+          "choices": [
+            {
+              "text": "È perfetto! Quanto costa il nuovo biglietto?",
+              "isCorrect": true,
+              "feedback": "Good. Asking for the price is necessary."
+            },
+            {
+              "text": "Due ore sono troppe, voglio partire ora.",
+              "isCorrect": false,
+              "feedback": "You must wait for the next available flight."
+            },
+            {
+              "text": "L'aereo è un mezzo molto veloce.",
+              "isCorrect": false,
+              "feedback": "Stating the obvious doesn't help."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Costa cinquanta euro. È un prezzo scontato per lei.",
+          "english": "It costs fifty euros. It's a discounted price for you.",
+          "choices": [
+            {
+              "text": "Va bene, lo compro. Posso pagare con la carta?",
+              "isCorrect": true,
+              "feedback": "Confirming the purchase and payment method."
+            },
+            {
+              "text": "Cinquanta euro sono troppi per un volo.",
+              "isCorrect": false,
+              "feedback": "It's a reasonable price for a last-minute change."
+            },
+            {
+              "text": "Ho molti soldi nel mio portafoglio.",
+              "isCorrect": false,
+              "feedback": "Boasting about money is unnecessary."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Certamente. Inserisca la carta qui e digiti il codice.",
+          "english": "Certainly. Insert the card here and type the code.",
+          "choices": [
+            {
+              "text": "Fatto. Ho anche dei bagagli da imbarcare.",
+              "isCorrect": true,
+              "feedback": "Moving to the next practical step: luggage."
+            },
+            {
+              "text": "Il mio codice è segreto e non lo dico.",
+              "isCorrect": false,
+              "feedback": "You need to enter it into the machine!"
+            },
+            {
+              "text": "La carta è nel mio zaino nero.",
+              "isCorrect": false,
+              "feedback": "Take it out and use it!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Quanti bagagli ha? Solo una valigia grande?",
+          "english": "How many bags do you have? Just one big suitcase?",
+          "choices": [
+            {
+              "text": "Sì, solo una valigia e uno zaino piccolo.",
+              "isCorrect": true,
+              "feedback": "Giving an accurate count of luggage."
+            },
+            {
+              "text": "Ho molti vestiti nuovi nella valigia.",
+              "isCorrect": false,
+              "feedback": "The agent only needs to know the number of bags."
+            },
+            {
+              "text": "La valigia è molto pesante oggi.",
+              "isCorrect": false,
+              "feedback": "Vague info, just give the count."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Va bene. Metta la valigia sulla bilancia, per favore.",
+          "english": "Alright. Put the suitcase on the scale, please.",
+          "choices": [
+            {
+              "text": "Ecco qui. Spero che non sia troppo pesante.",
+              "isCorrect": true,
+              "feedback": "Following instructions and expressing a common concern."
+            },
+            {
+              "text": "La bilancia è sporca e vecchia.",
+              "isCorrect": false,
+              "feedback": "Unnecessary complaint."
+            },
+            {
+              "text": "Non voglio pesare la mia valigia.",
+              "isCorrect": false,
+              "feedback": "It's mandatory for flights!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Il peso è perfetto. Ecco la sua nuova carta d'imbarco.",
+          "english": "The weight is perfect. Here is your new boarding pass.",
+          "choices": [
+            {
+              "text": "Grazie mille. Da quale gate parte il volo?",
+              "isCorrect": true,
+              "feedback": "Crucial info for reaching the plane."
+            },
+            {
+              "text": "La carta d'imbarco è di carta.",
+              "isCorrect": false,
+              "feedback": "Meaningless observation."
+            },
+            {
+              "text": "Voglio un posto vicino al finestrino.",
+              "isCorrect": false,
+              "feedback": "Ask before the pass is printed!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Parte dal gate A dodici. Segua le indicazioni.",
+          "english": "It departs from gate A twelve. Follow the signs.",
+          "choices": [
+            {
+              "text": "A dodici, ho capito. Grazie per tutto l'aiuto.",
+              "isCorrect": true,
+              "feedback": "Confirming the gate and thanking the agent."
+            },
+            {
+              "text": "Il gate è molto lontano da qui?",
+              "isCorrect": false,
+              "feedback": "The agent already told you to follow the signs."
+            },
+            {
+              "text": "Preferisco il gate B perché è più vicino.",
+              "isCorrect": false,
+              "feedback": "You can't choose the gate!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego. Buon viaggio e arrivederci!",
+          "english": "You're welcome. Have a good trip and goodbye!",
+          "choices": [
+            {
+              "text": "Arrivederci e buona giornata a lei.",
+              "isCorrect": true,
+              "feedback": "Standard polite closing."
+            },
+            {
+              "text": "Il viaggio è molto lungo.",
+              "isCorrect": false,
+              "feedback": "Just a complaint."
+            },
+            {
+              "text": "Non mi piacciono gli aeroporti.",
+              "isCorrect": false,
+              "feedback": "Too late for that!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "minor_injury_street",
+      "title": "Minor Injury",
+      "description": "Ask for help after a minor fall in the street.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Tutto bene? L'ho vista cadere. Si è fatto male?",
+          "english": "Everything okay? I saw you fall. Did you hurt yourself?",
+          "choices": [
+            {
+              "text": "Sì, mi sono fatto male alla gamba. Mi aiuti?",
+              "isCorrect": true,
+              "feedback": "Good. Clearly stating where it hurts and asking for help."
+            },
+            {
+              "text": "La strada è molto scivolosa oggi.",
+              "isCorrect": false,
+              "feedback": "Explaining why you fell instead of addressing the injury."
+            },
+            {
+              "text": "Voglio comprare un paio di scarpe nuove.",
+              "isCorrect": false,
+              "feedback": "Not the priority right now!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Può camminare o preferisce sedersi?",
+          "english": "Of course. Can you walk or do you prefer to sit down?",
+          "choices": [
+            {
+              "text": "Preferisco sedermi un momento. La gamba mi fa male.",
+              "isCorrect": true,
+              "feedback": "Accepting help and choosing the safer option."
+            },
+            {
+              "text": "Voglio correre una maratona domani.",
+              "isCorrect": false,
+              "feedback": "Unrealistic given the injury."
+            },
+            {
+              "text": "La sedia è di legno vecchio.",
+              "isCorrect": false,
+              "feedback": "Irrelevant description."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ecco una panchina. Vuole che chiami un'ambulanza?",
+          "english": "Here is a bench. Do you want me to call an ambulance?",
+          "choices": [
+            {
+              "text": "No, grazie. Credo che non sia grave.",
+              "isCorrect": true,
+              "feedback": "Assessing the situation correctly."
+            },
+            {
+              "text": "Sì, l'ambulanza è bianca e rossa.",
+              "isCorrect": false,
+              "feedback": "Just describing the vehicle."
+            },
+            {
+              "text": "Chiami la polizia immediatamente!",
+              "isCorrect": false,
+              "feedback": "Police aren't needed for a simple fall."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capisco. C'è una farmacia qui vicino. Vuole andare lì?",
+          "english": "I see. There is a pharmacy nearby. Do you want to go there?",
+          "choices": [
+            {
+              "text": "Sì, è un'ottima idea. Ho bisogno di un cerotto.",
+              "isCorrect": true,
+              "feedback": "Accepting a practical suggestion for minor care."
+            },
+            {
+              "text": "La farmacia vende molti farmaci costosi.",
+              "isCorrect": false,
+              "feedback": "General comment that doesn't help."
+            },
+            {
+              "text": "Preferisco andare al ristorante ora.",
+              "isCorrect": false,
+              "feedback": "Health first, then food!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene, la accompagno io. È a cento metri.",
+          "english": "Alright, I'll go with you. It's a hundred meters away.",
+          "choices": [
+            {
+              "text": "Grazie, lei è molto gentile. Mi fa male il ginocchio.",
+              "isCorrect": true,
+              "feedback": "Accepting the accompaniment and specifying the pain."
+            },
+            {
+              "text": "Cento metri sono troppi per me oggi.",
+              "isCorrect": false,
+              "feedback": "It's a very short distance!"
+            },
+            {
+              "text": "Il ginocchio è una parte del corpo.",
+              "isCorrect": false,
+              "feedback": "Anatomy lesson instead of help."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Siamo arrivati. Entriamo e parliamo con il farmacista.",
+          "english": "We have arrived. Let's go in and talk to the pharmacist.",
+          "choices": [
+            {
+              "text": "Buongiorno. Sono caduto e ho un taglio sulla gamba.",
+              "isCorrect": true,
+              "feedback": "Explaining the problem to the professional."
+            },
+            {
+              "text": "Il farmacista indossa un camice bianco.",
+              "isCorrect": false,
+              "feedback": "Visual observation doesn't help."
+            },
+            {
+              "text": "Voglio un profumo molto dolce.",
+              "isCorrect": false,
+              "feedback": "Focus on the injury!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Vediamo... è solo un piccolo taglio. Serve del disinfettante.",
+          "english": "Let's see... it's just a small cut. You need some disinfectant.",
+          "choices": [
+            {
+              "text": "Va bene. Brucia un po' il disinfettante?",
+              "isCorrect": true,
+              "feedback": "Natural concern when dealing with a wound."
+            },
+            {
+              "text": "Il disinfettante è in una bottiglia.",
+              "isCorrect": false,
+              "feedback": "Obvious statement."
+            },
+            {
+              "text": "Non voglio usare medicine oggi.",
+              "isCorrect": false,
+              "feedback": "You need it to prevent infection!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Solo un pochino. Ora metto un cerotto grande.",
+          "english": "Just a little bit. Now I'm putting a big bandage.",
+          "choices": [
+            {
+              "text": "Grazie. Ora mi sento molto meglio.",
+              "isCorrect": true,
+              "feedback": "Expressing relief after treatment."
+            },
+            {
+              "text": "Il cerotto è troppo grande per me.",
+              "isCorrect": false,
+              "feedback": "Better too big than too small!"
+            },
+            {
+              "text": "Voglio un cerotto con i disegni.",
+              "isCorrect": false,
+              "feedback": "A bit childish for an adult!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Prego. Si riposi per un'ora prima di camminare ancora.",
+          "english": "You're welcome. Rest for an hour before walking again.",
+          "choices": [
+            {
+              "text": "Certamente. Vado in hotel a riposare.",
+              "isCorrect": true,
+              "feedback": "Sensible plan following the advice."
+            },
+            {
+              "text": "No, voglio scalare una montagna ora.",
+              "isCorrect": false,
+              "feedback": "Very dangerous for your leg!"
+            },
+            {
+              "text": "L'hotel è molto lussuoso e caro.",
+              "isCorrect": false,
+              "feedback": "Unrelated detail."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottima idea. Buona guarigione e faccia attenzione!",
+          "english": "Great idea. Get well soon and be careful!",
+          "choices": [
+            {
+              "text": "Grazie mille per l'aiuto. Arrivederci.",
+              "isCorrect": true,
+              "feedback": "Final thanks and goodbye."
+            },
+            {
+              "text": "La strada è ancora pericolosa.",
+              "isCorrect": false,
+              "feedback": "Just complaining."
+            },
+            {
+              "text": "Non voglio fare attenzione.",
+              "isCorrect": false,
+              "feedback": "That's how you fell!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "calling_for_help",
+      "title": "Calling for Help",
+      "description": "Call emergency services for someone else in need.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto? Emergenza. Di cosa ha bisogno?",
+          "english": "Hello? Emergency. What do you need?",
+          "choices": [
+            {
+              "text": "Buongiorno. C'è un uomo ferito in via Roma.",
+              "isCorrect": true,
+              "feedback": "Correct. Stating the situation and location immediately."
+            },
+            {
+              "text": "Mi piace molto parlare al telefono.",
+              "isCorrect": false,
+              "feedback": "This is an emergency call, not a chat!"
+            },
+            {
+              "text": "Via Roma è una via molto lunga.",
+              "isCorrect": false,
+              "feedback": "Irrelevant description during an emergency."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. È un'emergenza medica o un incidente?",
+          "english": "I see. Is it a medical emergency or an accident?",
+          "choices": [
+            {
+              "text": "È un'emergenza medica. L'uomo è a terra.",
+              "isCorrect": true,
+              "feedback": "Good. Categorizing the emergency helps dispatch."
+            },
+            {
+              "text": "Non lo so, io stavo mangiando un panino.",
+              "isCorrect": false,
+              "feedback": "Your personal activities are irrelevant."
+            },
+            {
+              "text": "L'incidente è successo ieri sera.",
+              "isCorrect": false,
+              "feedback": "The operator needs to know about now!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "L'uomo è cosciente? Le risponde se parla?",
+          "english": "Is the man conscious? Does he answer if you speak?",
+          "choices": [
+            {
+              "text": "Sì, è cosciente ma non può muoversi.",
+              "isCorrect": true,
+              "feedback": "Accurate reporting of the victim's state."
+            },
+            {
+              "text": "L'uomo indossa una camicia verde.",
+              "isCorrect": false,
+              "feedback": "The operator asked about consciousness, not clothes."
+            },
+            {
+              "text": "Io parlo molto bene l'italiano.",
+              "isCorrect": false,
+              "feedback": "Self-praise doesn't help the victim."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Va bene. Mandiamo subito un'ambulanza. Qual è il numero civico?",
+          "english": "Alright. We are sending an ambulance right away. What is the house number?",
+          "choices": [
+            {
+              "text": "Siamo davanti al numero civico venti.",
+              "isCorrect": true,
+              "feedback": "Giving the exact location is crucial."
+            },
+            {
+              "text": "Venti è il mio numero fortunato.",
+              "isCorrect": false,
+              "feedback": "Superstition is not helpful here."
+            },
+            {
+              "text": "Ci sono molte case in questa via.",
+              "isCorrect": false,
+              "feedback": "Vague and unhelpful."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. L'ambulanza arriva tra cinque minuti.",
+          "english": "Perfect. The ambulance arrives in five minutes.",
+          "choices": [
+            {
+              "text": "Grazie. Devo restare qui con l'uomo?",
+              "isCorrect": true,
+              "feedback": "Good question to ensure you follow protocol."
+            },
+            {
+              "text": "Cinque minuti sono troppi, faccia presto!",
+              "isCorrect": false,
+              "feedback": "The operator is doing their best."
+            },
+            {
+              "text": "Voglio andare a casa a guardare la TV.",
+              "isCorrect": false,
+              "feedback": "You should help until professional help arrives."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, per favore rimanga lì finché non arrivano.",
+          "english": "Yes, please stay there until they arrive.",
+          "choices": [
+            {
+              "text": "Va bene, resto qui. L'uomo ha molta paura.",
+              "isCorrect": true,
+              "feedback": "Confirming you will stay and reporting the victim's mood."
+            },
+            {
+              "text": "Non ho tempo, devo andare al cinema.",
+              "isCorrect": false,
+              "feedback": "A human life is more important than a movie!"
+            },
+            {
+              "text": "La paura è un'emozione negativa.",
+              "isCorrect": false,
+              "feedback": "Philosophical comment instead of action."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Parli con lui, lo aiuterà a stare calmo.",
+          "english": "Talk to him, it will help him stay calm.",
+          "choices": [
+            {
+              "text": "Sì, gli dico che l'aiuto sta arrivando.",
+              "isCorrect": true,
+              "feedback": "Good. Reassurance is very helpful."
+            },
+            {
+              "text": "Voglio cantare una canzone per lui.",
+              "isCorrect": false,
+              "feedback": "Maybe not appropriate for the situation."
+            },
+            {
+              "text": "L'uomo non mi piace molto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and unkind."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Come si chiama lei? Per il nostro rapporto.",
+          "english": "Great. What is your name? For our report.",
+          "choices": [
+            {
+              "text": "Mi chiamo Mario Rossi. Sono un turista.",
+              "isCorrect": true,
+              "feedback": "Providing identification as requested."
+            },
+            {
+              "text": "Il mio nome è un segreto di stato.",
+              "isCorrect": false,
+              "feedback": "Uncooperative and suspicious."
+            },
+            {
+              "text": "Preferisco non dire il mio nome.",
+              "isCorrect": false,
+              "feedback": "In an emergency, you should identify yourself."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie, signor Rossi. Sento le sirene, sono vicini.",
+          "english": "Thank you, Mr. Rossi. I hear the sirens, they are close.",
+          "choices": [
+            {
+              "text": "Sì, vedo l'ambulanza ora. Grazie mille.",
+              "isCorrect": true,
+              "feedback": "Confirming the arrival of help."
+            },
+            {
+              "text": "Le sirene fanno troppo rumore.",
+              "isCorrect": false,
+              "feedback": "They are necessary to clear traffic!"
+            },
+            {
+              "text": "Voglio guidare l'ambulanza io.",
+              "isCorrect": false,
+              "feedback": "Absolutely not!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego. Ha fatto un ottimo lavoro. Arrivederci.",
+          "english": "You're welcome. You did a great job. Goodbye.",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie per l'aiuto veloce.",
+              "isCorrect": true,
+              "feedback": "Closing the call politely."
+            },
+            {
+              "text": "Voglio un premio per questo.",
+              "isCorrect": false,
+              "feedback": "Helping others is its own reward."
+            },
+            {
+              "text": "Non voglio più vedere incidenti.",
+              "isCorrect": false,
+              "feedback": "Understandable, but not something to say now."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

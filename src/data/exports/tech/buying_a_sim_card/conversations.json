@@ -1,0 +1,1073 @@
+{
+  "scenarioId": 98,
+  "conversations": [
+    {
+      "id": "choosing_data_plan",
+      "title": "Choosing a Data Plan",
+      "description": "Choose the best mobile offer for your needs.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come posso aiutarla oggi?",
+          "english": "Good morning! How can I help you today?",
+          "choices": [
+            {
+              "text": "Vorrei comprare una nuova scheda SIM.",
+              "english": "I would like to buy a new SIM card.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Il mio telefono è rotto e non si accende.",
+              "english": "My phone is broken and won't turn on.",
+              "isCorrect": false,
+              "feedback": "This is for phone repair, not buying a SIM."
+            },
+            {
+              "text": "Cerco un caricabatterie per il tablet.",
+              "english": "I am looking for a tablet charger.",
+              "isCorrect": false,
+              "feedback": "You need a SIM card, not a charger."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Abbiamo diverse offerte. Cerca giga o minuti?",
+          "english": "Certainly. We have several offers. Are you looking for gigs or minutes?",
+          "choices": [
+            {
+              "text": "Cerco un piano con molti giga per internet.",
+              "english": "I am looking for a plan with many gigs for internet.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Voglio solo fare una chiamata internazionale.",
+              "english": "I just want to make an international call.",
+              "isCorrect": false,
+              "feedback": "You want a full plan, not just one call."
+            },
+            {
+              "text": "Non mi servono dati, solo una mappa.",
+              "english": "I don't need data, just a map.",
+              "isCorrect": false,
+              "feedback": "The host is asking about the plan type."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Abbiamo il piano 'Giga Illimitati' a venti euro al mese.",
+          "english": "We have the 'Unlimited Gigs' plan for twenty euros a month.",
+          "choices": [
+            {
+              "text": "Venti euro è un po' caro. Avete qualcosa di più economico?",
+              "english": "Twenty euros is a bit expensive. Do you have something cheaper?",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Il segnale è molto debole in questa zona.",
+              "english": "The signal is very weak in this area.",
+              "isCorrect": false,
+              "feedback": "You are discussing the price, not the coverage yet."
+            },
+            {
+              "text": "Mi piace il colore della scheda SIM.",
+              "english": "I like the color of the SIM card.",
+              "isCorrect": false,
+              "feedback": "Focus on the offer details."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, c'è l'offerta 'Smart' con 50 giga a dieci euro.",
+          "english": "Yes, there is the 'Smart' offer with 50 gigs for ten euros.",
+          "choices": [
+            {
+              "text": "Dieci euro va bene. Sono inclusi anche i minuti?",
+              "english": "Ten euros is fine. Are minutes included too?",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Preferisco pagare con una carta di credito.",
+              "english": "I prefer to pay with a credit card.",
+              "isCorrect": false,
+              "feedback": "Ask about the plan features first."
+            },
+            {
+              "text": "Dov'è il bagno più vicino, per favore?",
+              "english": "Where is the nearest bathroom, please?",
+              "isCorrect": false,
+              "feedback": "Stay focused on the SIM card purchase."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, ha minuti illimitati verso tutti i numeri italiani.",
+          "english": "Yes, it has unlimited minutes to all Italian numbers.",
+          "choices": [
+            {
+              "text": "Ottimo. Posso usare il telefono anche all'estero?",
+              "english": "Great. Can I use the phone abroad too?",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Non voglio parlare con nessuno oggi.",
+              "english": "I don't want to talk to anyone today.",
+              "isCorrect": false,
+              "feedback": "A bit negative! You are asking about international use."
+            },
+            {
+              "text": "Il prefisso internazionale è corretto?",
+              "english": "Is the international prefix correct?",
+              "isCorrect": false,
+              "feedback": "You haven't even got the number yet."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, ha 5 giga inclusi per il roaming in Europa.",
+          "english": "Yes, it has 5 gigs included for roaming in Europe.",
+          "choices": [
+            {
+              "text": "Perfetto. È un abbonamento o una ricaricabile?",
+              "english": "Perfect. Is it a subscription or a rechargeable?",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Mio nonno vive in America ora.",
+              "english": "My grandfather lives in America now.",
+              "isCorrect": false,
+              "feedback": "Irrelevant personal information."
+            },
+            {
+              "text": "Non mi piace viaggiare in treno.",
+              "english": "I don't like traveling by train.",
+              "isCorrect": false,
+              "feedback": "Stay on topic: mobile data."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È una ricaricabile. Può ricaricare quando vuole.",
+          "english": "It's a rechargeable. You can top up whenever you want.",
+          "choices": [
+            {
+              "text": "Molto bene. Voglio questa offerta.",
+              "english": "Very well. I want this offer.",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Il contratto è troppo lungo da leggere.",
+              "english": "The contract is too long to read.",
+              "isCorrect": false,
+              "feedback": "It's a rechargeable, usually there's less paperwork."
+            },
+            {
+              "text": "Preferisco un telefono fisso a casa.",
+              "english": "I prefer a landline at home.",
+              "isCorrect": false,
+              "feedback": "You are in a mobile shop!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Benissimo. La scheda costa cinque euro una volta sola.",
+          "english": "Great. The card costs five euros only once.",
+          "choices": [
+            {
+              "text": "Va bene, quindi in totale sono quindici euro?",
+              "english": "Fine, so is it fifteen euros in total?",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Posso avere uno sconto per studenti?",
+              "english": "Can I have a student discount?",
+              "isCorrect": false,
+              "feedback": "Good question, but confirm the total first."
+            },
+            {
+              "text": "La ricarica è gratuita oggi?",
+              "english": "Is the top-up free today?",
+              "isCorrect": false,
+              "feedback": "Nothing is free in the mobile business!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Esatto. Dieci per il piano e cinque per la SIM.",
+          "english": "Exactly. Ten for the plan and five for the SIM.",
+          "choices": [
+            {
+              "text": "Ecco a lei i soldi. Grazie.",
+              "english": "Here is the money for you. Thanks.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Non trovo il mio portafoglio.",
+              "english": "I can't find my wallet.",
+              "isCorrect": false,
+              "feedback": "Try to be prepared to pay!"
+            },
+            {
+              "text": "Voglio pagare con dei francobolli.",
+              "english": "I want to pay with stamps.",
+              "isCorrect": false,
+              "feedback": "They only accept cash or cards."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie. Ora passiamo ai documenti.",
+          "english": "Thank you. Now let's move on to the documents.",
+          "choices": [
+            {
+              "text": "Certamente, sono pronto.",
+              "english": "Certainly, I am ready.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Non ho documenti con me.",
+              "english": "I don't have documents with me.",
+              "isCorrect": false,
+              "feedback": "You need them to buy a SIM in Italy!"
+            },
+            {
+              "text": "Dove posso mangiare una pizza?",
+              "english": "Where can I eat a pizza?",
+              "isCorrect": false,
+              "feedback": "Forbidden topic! Focus on the SIM."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "required_documents",
+      "title": "Required Documents",
+      "description": "Provide the necessary identification for the SIM activation.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Per attivare la SIM mi serve un documento d'identità.",
+          "english": "To activate the SIM I need an identity document.",
+          "choices": [
+            {
+              "text": "Va bene il passaporto o serve la carta d'identità?",
+              "english": "Is the passport okay or do I need an ID card?",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Ho solo la tessera della biblioteca.",
+              "english": "I only have a library card.",
+              "isCorrect": false,
+              "feedback": "That's not a valid government ID."
+            },
+            {
+              "text": "Ecco la mia patente di guida scaduta.",
+              "english": "Here is my expired driver's license.",
+              "isCorrect": false,
+              "feedback": "The document must be valid."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il passaporto va benissimo se è in corso di validità.",
+          "english": "The passport is fine if it is valid.",
+          "choices": [
+            {
+              "text": "Ecco il mio passaporto originale.",
+              "english": "Here is my original passport.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Posso darle una foto sul cellulare?",
+              "english": "Can I give you a photo on my phone?",
+              "isCorrect": false,
+              "feedback": "They usually need the physical document."
+            },
+            {
+              "text": "Il mio passaporto è a casa in albergo.",
+              "english": "My passport is at home in the hotel.",
+              "isCorrect": false,
+              "feedback": "You need it with you now."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Grazie. Devo fare una fotocopia del documento.",
+          "english": "Thank you. I need to make a photocopy of the document.",
+          "choices": [
+            {
+              "text": "Posso farla io o la fa lei qui in negozio?",
+              "english": "Can I do it or do you do it here in the shop?",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Non voglio che tocchi il mio passaporto.",
+              "english": "I don't want you to touch my passport.",
+              "isCorrect": false,
+              "feedback": "The clerk needs to handle it for the copy."
+            },
+            {
+              "text": "Ho una stampante nel mio zaino.",
+              "english": "I have a printer in my backpack.",
+              "isCorrect": false,
+              "feedback": "Highly unlikely and unnecessary."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "La faccio io subito, non si preoccupi.",
+          "english": "I'll do it right away, don't worry.",
+          "choices": [
+            {
+              "text": "Grazie mille. Serve altro?",
+              "english": "Thanks a lot. Do you need anything else?",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Quanto costa fare una fotocopia?",
+              "english": "How much does it cost to make a photocopy?",
+              "isCorrect": false,
+              "feedback": "Usually it's free for customers."
+            },
+            {
+              "text": "Voglio una copia a colori, per favore.",
+              "english": "I want a color copy, please.",
+              "isCorrect": false,
+              "feedback": "Black and white is enough for them."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Mi serve anche il suo codice fiscale, se lo ha.",
+          "english": "I also need your tax code, if you have it.",
+          "choices": [
+            {
+              "text": "Purtroppo non ho il codice fiscale italiano.",
+              "english": "Unfortunately I don't have an Italian tax code.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Ecco il mio codice fiscale, è 12345.",
+              "english": "Here is my tax code, it is 12345.",
+              "isCorrect": false,
+              "feedback": "Italian tax codes are alphanumeric and longer."
+            },
+            {
+              "text": "Non so cos'è un codice fiscale.",
+              "english": "I don't know what a tax code is.",
+              "isCorrect": false,
+              "feedback": "As a tourist, it's okay not to have one."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Nessun problema, possiamo usare il suo luogo di nascita.",
+          "english": "No problem, we can use your place of birth.",
+          "choices": [
+            {
+              "text": "Va bene. Sono nato a Londra.",
+              "english": "Fine. I was born in London.",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Sono nato in un ospedale molto grande.",
+              "english": "I was born in a very large hospital.",
+              "isCorrect": false,
+              "feedback": "Be more specific with the city name."
+            },
+            {
+              "text": "Non ricordo dove sono nato.",
+              "english": "I don't remember where I was born.",
+              "isCorrect": false,
+              "feedback": "Check your passport!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Ora devo inserire i dati nel sistema.",
+          "english": "Perfect. Now I have to enter the data into the system.",
+          "choices": [
+            {
+              "text": "Ci vuole molto tempo per questa operazione?",
+              "english": "Does it take a long time for this operation?",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Il sistema è connesso a internet?",
+              "english": "Is the system connected to the internet?",
+              "isCorrect": false,
+              "feedback": "Of course it is, you're in a tech shop."
+            },
+            {
+              "text": "Voglio vedere lo schermo del computer.",
+              "english": "I want to see the computer screen.",
+              "isCorrect": false,
+              "feedback": "That's private for the shop staff."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "No, solo pochi minuti. Deve firmare questo modulo.",
+          "english": "No, just a few minutes. You have to sign this form.",
+          "choices": [
+            {
+              "text": "Dove devo firmare esattamente?",
+              "english": "Where do I have to sign exactly?",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Non mi piace la mia firma oggi.",
+              "english": "I don't like my signature today.",
+              "isCorrect": false,
+              "feedback": "Just sign it as usual."
+            },
+            {
+              "text": "Posso firmare con una matita?",
+              "english": "Can I sign with a pencil?",
+              "isCorrect": false,
+              "feedback": "Official documents require a pen."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Qui in fondo, vicino alla croce.",
+          "english": "Here at the bottom, near the cross.",
+          "choices": [
+            {
+              "text": "Ecco fatto. Ho firmato.",
+              "english": "Done. I have signed.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Devo scrivere anche la data?",
+              "english": "Do I have to write the date too?",
+              "isCorrect": false,
+              "feedback": "Only if requested by the clerk."
+            },
+            {
+              "text": "La penna non scrive bene.",
+              "english": "The pen doesn't write well.",
+              "isCorrect": false,
+              "feedback": "Try again or ask for another pen."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo. Abbiamo finito con i documenti.",
+          "english": "Great. We are done with the documents.",
+          "choices": [
+            {
+              "text": "Grazie. Quando sarà attiva la scheda?",
+              "english": "Thanks. When will the card be active?",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Posso riavere il mio passaporto?",
+              "english": "Can I have my passport back?",
+              "isCorrect": false,
+              "feedback": "Good point, but ask about activation too."
+            },
+            {
+              "text": "Voglio comprare anche un giornale.",
+              "english": "I want to buy a newspaper too.",
+              "isCorrect": false,
+              "feedback": "This is a mobile shop, not a newsstand."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sim_activation",
+      "title": "SIM Card Activation",
+      "description": "Insert and configure your new SIM card.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ecco la sua nuova scheda SIM. Che formato le serve?",
+          "english": "Here is your new SIM card. What format do you need?",
+          "choices": [
+            {
+              "text": "Mi serve il formato nano per il mio smartphone.",
+              "english": "I need the nano format for my smartphone.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Voglio una scheda molto grande.",
+              "english": "I want a very large card.",
+              "isCorrect": false,
+              "feedback": "Modern phones use small cards."
+            },
+            {
+              "text": "Non so cos'è uno smartphone.",
+              "english": "I don't know what a smartphone is.",
+              "isCorrect": false,
+              "feedback": "You probably have one if you're buying a SIM."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Nessun problema, la scheda è pre-tagliata in tutti i formati.",
+          "english": "No problem, the card is pre-cut in all formats.",
+          "choices": [
+            {
+              "text": "Devo inserirla io o può aiutarmi lei?",
+              "english": "Do I have to insert it or can you help me?",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Voglio tagliare la scheda con le forbici.",
+              "english": "I want to cut the card with scissors.",
+              "isCorrect": false,
+              "feedback": "Don't! It's already pre-cut."
+            },
+            {
+              "text": "La scheda è troppo sottile.",
+              "english": "The card is too thin.",
+              "isCorrect": false,
+              "feedback": "That's normal for SIM cards."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Posso farlo io. Mi dia pure il suo telefono.",
+          "english": "I can do it. Give me your phone.",
+          "choices": [
+            {
+              "text": "Ecco il mio cellulare. Grazie.",
+              "english": "Here is my cell phone. Thanks.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Non voglio dare il mio telefono a nessuno.",
+              "english": "I don't want to give my phone to anyone.",
+              "isCorrect": false,
+              "feedback": "The clerk is just helping with the SIM."
+            },
+            {
+              "text": "Il mio telefono è a ricaricare a casa.",
+              "english": "My phone is charging at home.",
+              "isCorrect": false,
+              "feedback": "You need it here to test the SIM."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie. Tolgo la vecchia SIM e metto la nuova.",
+          "english": "Thank you. I'm taking out the old SIM and putting in the new one.",
+          "choices": [
+            {
+              "text": "Devo inserire un codice PIN ora?",
+              "english": "Do I have to enter a PIN code now?",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Voglio tenere la vecchia scheda.",
+              "english": "I want to keep the old card.",
+              "isCorrect": false,
+              "feedback": "You can keep it, but it won't work."
+            },
+            {
+              "text": "Il mio telefono è diventato nero.",
+              "english": "My phone has turned black.",
+              "isCorrect": false,
+              "feedback": "It's just the screen turning off."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, il PIN predefinito è 0000. Può cambiarlo dopo.",
+          "english": "Yes, the default PIN is 0000. You can change it later.",
+          "choices": [
+            {
+              "text": "Ho inserito il PIN. Vedo che non c'è ancora segnale.",
+              "english": "I entered the PIN. I see there is no signal yet.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Voglio un PIN più difficile, tipo 1234.",
+              "english": "I want a harder PIN, like 1234.",
+              "isCorrect": false,
+              "feedback": "That's actually a very common PIN."
+            },
+            {
+              "text": "Il telefono dice che il PIN è sbagliato.",
+              "english": "The phone says the PIN is wrong.",
+              "isCorrect": false,
+              "feedback": "Try 0000 again carefully."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "È normale. L'attivazione richiede circa due ore.",
+          "english": "It's normal. Activation takes about two hours.",
+          "choices": [
+            {
+              "text": "Quindi non posso chiamare subito?",
+              "english": "So I can't call right away?",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Due ore sono troppe, voglio ora!",
+              "english": "Two hours are too many, I want it now!",
+              "isCorrect": false,
+              "feedback": "Patience is needed for network activation."
+            },
+            {
+              "text": "Posso aspettare qui in negozio?",
+              "english": "Can I wait here in the shop?",
+              "isCorrect": false,
+              "feedback": "You can, but it's better to go for a walk."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Per ora no. Riceverà un messaggio di conferma.",
+          "english": "For now, no. You will receive a confirmation message.",
+          "choices": [
+            {
+              "text": "Come faccio a sapere se la scheda è attiva?",
+              "english": "How do I know if the card is active?",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Non mi piacciono i messaggi, preferisco le lettere.",
+              "english": "I don't like messages, I prefer letters.",
+              "isCorrect": false,
+              "feedback": "Network operators always use SMS."
+            },
+            {
+              "text": "Il messaggio sarà in italiano o in inglese?",
+              "english": "Will the message be in Italian or English?",
+              "isCorrect": false,
+              "feedback": "Likely in Italian."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Quando vede le tacche del segnale e il nome dell'operatore.",
+          "english": "When you see the signal bars and the operator's name.",
+          "choices": [
+            {
+              "text": "Va bene, aspetterò il messaggio allora.",
+              "english": "Fine, I will wait for the message then.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Vedo solo una tacca, è poco.",
+              "english": "I see only one bar, it's not much.",
+              "isCorrect": false,
+              "feedback": "Wait for full activation."
+            },
+            {
+              "text": "Il nome dell'operatore è troppo lungo.",
+              "english": "The operator's name is too long.",
+              "isCorrect": false,
+              "feedback": "That doesn't matter for the service."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Le consiglio di riavviare il telefono tra un'ora.",
+          "english": "I advise you to restart the phone in an hour.",
+          "choices": [
+            {
+              "text": "Grazie del consiglio, lo farò sicuramente.",
+              "english": "Thanks for the advice, I will definitely do it.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Non so come si spegne il telefono.",
+              "english": "I don't know how to turn off the phone.",
+              "isCorrect": false,
+              "feedback": "Usually it's a side button."
+            },
+            {
+              "text": "Voglio riavviarlo ogni cinque minuti.",
+              "english": "I want to restart it every five minutes.",
+              "isCorrect": false,
+              "feedback": "Once is enough."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla! Ha altre domande sulla configurazione?",
+          "english": "You're welcome! Do you have any other questions about the configuration?",
+          "choices": [
+            {
+              "text": "No, grazie. È stato tutto molto chiaro.",
+              "english": "No, thanks. Everything was very clear.",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Sì, come si cucina la pasta?",
+              "english": "Yes, how do you cook pasta?",
+              "isCorrect": false,
+              "feedback": "Forbidden topic! Stick to tech."
+            },
+            {
+              "text": "Voglio configurare un computer quantistico.",
+              "english": "I want to configure a quantum computer.",
+              "isCorrect": false,
+              "feedback": "A bit too advanced for this shop!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topping_up_credit",
+      "title": "Topping Up Credit",
+      "description": "Add credit to your prepaid mobile line.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Vuole ricaricare il suo credito residuo?",
+          "english": "Good morning! Do you want to top up your remaining credit?",
+          "choices": [
+            {
+              "text": "Sì, vorrei fare una ricarica da dieci euro.",
+              "english": "Yes, I would like to make a ten-euro top-up.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "No, voglio solo un gelato.",
+              "english": "No, I just want a gelato.",
+              "isCorrect": false,
+              "feedback": "Wrong shop! This is a mobile store."
+            },
+            {
+              "text": "Voglio scaricare tutti i giga.",
+              "english": "I want to download all the gigs.",
+              "isCorrect": false,
+              "feedback": "You need credit first to use gigs."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Mi dica il suo numero di telefono.",
+          "english": "Certainly. Tell me your phone number.",
+          "choices": [
+            {
+              "text": "Il mio numero è 320 123 4567.",
+              "english": "My number is 320 123 4567.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Il mio numero è segreto, non posso dirlo.",
+              "english": "My number is secret, I can't say it.",
+              "isCorrect": false,
+              "feedback": "The clerk needs it to process the top-up."
+            },
+            {
+              "text": "Ecco il mio numero civico: 42.",
+              "english": "Here is my house number: 42.",
+              "isCorrect": false,
+              "feedback": "They need your phone number, not address."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Può ripetere le ultime tre cifre, per favore?",
+          "english": "Can you repeat the last three digits, please?",
+          "choices": [
+            {
+              "text": "Sì, sono cinque, sei, sette.",
+              "english": "Yes, they are five, six, seven.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "No, non voglio ripetere nulla.",
+              "english": "No, I don't want to repeat anything.",
+              "isCorrect": false,
+              "feedback": "It's just to confirm the number is correct."
+            },
+            {
+              "text": "Le cifre sono molte grandi.",
+              "english": "The digits are very large.",
+              "isCorrect": false,
+              "feedback": "Just say the numbers."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Vuole pagare con carta o in contanti?",
+          "english": "Perfect. Do you want to pay by card or in cash?",
+          "choices": [
+            {
+              "text": "Preferisco pagare in contanti, ecco la banconota.",
+              "english": "I prefer to pay in cash, here is the banknote.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Voglio pagare con una canzone.",
+              "english": "I want to pay with a song.",
+              "isCorrect": false,
+              "feedback": "That's not a valid payment method."
+            },
+            {
+              "text": "Non ho soldi oggi, forse domani.",
+              "english": "I have no money today, maybe tomorrow.",
+              "isCorrect": false,
+              "feedback": "You need money to buy credit."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Grazie. Ecco il suo scontrino con la conferma.",
+          "english": "Thank you. Here is your receipt with the confirmation.",
+          "choices": [
+            {
+              "text": "Devo fare altro per attivare la ricarica?",
+              "english": "Do I have to do anything else to activate the top-up?",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Voglio mangiare lo scontrino.",
+              "english": "I want to eat the receipt.",
+              "isCorrect": false,
+              "feedback": "Don't! You might need it if there's a problem."
+            },
+            {
+              "text": "Dov'è il cestino della spazzatura?",
+              "english": "Where is the trash can?",
+              "isCorrect": false,
+              "feedback": "Keep the receipt for now."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "No, è automatica. Riceverà un SMS tra poco.",
+          "english": "No, it's automatic. You will receive an SMS shortly.",
+          "choices": [
+            {
+              "text": "Posso ricaricare anche tramite l'app dell'operatore?",
+              "english": "Can I also top up via the operator's app?",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Non mi piacciono i messaggi corti.",
+              "english": "I don't like short messages.",
+              "isCorrect": false,
+              "feedback": "It's just a notification."
+            },
+            {
+              "text": "Il mio telefono non riceve SMS.",
+              "english": "My phone doesn't receive SMS.",
+              "isCorrect": false,
+              "feedback": "It should, if the SIM is working."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente, è molto comodo e veloce.",
+          "english": "Certainly, it is very convenient and fast.",
+          "choices": [
+            {
+              "text": "Come si chiama l'app che devo scaricare?",
+              "english": "What is the name of the app I need to download?",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Non ho spazio sul telefono per le app.",
+              "english": "I have no space on the phone for apps.",
+              "isCorrect": false,
+              "feedback": "You can delete some old photos."
+            },
+            {
+              "text": "L'app costa molti soldi?",
+              "english": "Does the app cost a lot of money?",
+              "isCorrect": false,
+              "feedback": "The operator app is usually free."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Si chiama 'Il Mio Operatore'. La trova nello store.",
+          "english": "It's called 'My Operator'. You can find it in the store.",
+          "choices": [
+            {
+              "text": "Grazie. Posso controllare il credito anche chiamando un numero?",
+              "english": "Thanks. Can I also check the credit by calling a number?",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Voglio chiamare il mio operatore a casa.",
+              "english": "I want to call my operator at home.",
+              "isCorrect": false,
+              "feedback": "The app is easier for that."
+            },
+            {
+              "text": "Ho capito. È possibile ricaricare la scheda anche dal sito web?",
+              "english": "I understand. Is it possible to top up the card also from the website?",
+              "isCorrect": false,
+              "feedback": "Yes, but the question was about the app."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, può chiamare il 40916 per il credito residuo.",
+          "english": "Yes, you can call 40916 for the remaining credit.",
+          "choices": [
+            {
+              "text": "Benissimo. Grazie mille per l'aiuto.",
+              "english": "Very well. Thanks a lot for the help.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Il numero è troppo lungo da ricordare.",
+              "english": "The number is too long to remember.",
+              "isCorrect": false,
+              "feedback": "You can save it in your contacts."
+            },
+            {
+              "text": "Voglio parlare con un robot.",
+              "english": "I want to talk to a robot.",
+              "isCorrect": false,
+              "feedback": "The automated number is essentially a robot."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego! Buona giornata e buona navigazione!",
+          "english": "You're welcome! Have a good day and happy surfing!",
+          "choices": [
+            {
+              "text": "Grazie, buona giornata anche a lei!",
+              "english": "Thanks, have a good day too!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Non so nuotare, non voglio navigare.",
+              "english": "I can't swim, I don't want to surf.",
+              "isCorrect": false,
+              "feedback": "In this context, it means surfing the internet."
+            },
+            {
+              "text": "A che ora chiude il negozio?",
+              "english": "What time does the shop close?",
+              "isCorrect": false,
+              "feedback": "Just say goodbye and enjoy your day."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,493 @@
+{
+  "scenarioId": 12,
+  "conversations": [
+    {
+      "id": "parking_lines",
+      "title": "Blue and White Lines",
+      "description": "Learn the difference between paid and free parking spots.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cerca un posto per parcheggiare l'auto?",
+          "english": "Good morning! Are you looking for a place to park the car?",
+          "choices": [
+            {
+              "text": "Sì, cerco un parcheggio qui vicino. È difficile?",
+              "isCorrect": true,
+              "feedback": "Good. You confirmed your goal clearly."
+            },
+            {
+              "text": "Ho fame, dove posso mangiare una pizza?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! Focus on parking."
+            },
+            {
+              "text": "La mia macchina è rossa e molto veloce.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information for finding a spot."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "In centro è difficile. Vede quelle strisce blu e bianche per terra?",
+          "english": "It is difficult in the center. Do you see those blue and white lines on the ground?",
+          "choices": [
+            {
+              "text": "Sì, le vedo. Qual è la differenza tra blu e bianco?",
+              "isCorrect": true,
+              "feedback": "Perfect question to understand the rules."
+            },
+            {
+              "text": "Il cielo è blu e le nuvole sono bianche oggi.",
+              "isCorrect": false,
+              "feedback": "Too literal! Focus on the parking lines."
+            },
+            {
+              "text": "Mi piace il colore blu, è il mio preferito.",
+              "isCorrect": false,
+              "feedback": "Small talk won't help you park legally."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Le strisce blu sono a pagamento. Quelle bianche sono gratuite.",
+          "english": "The blue lines are for paid parking. The white ones are free.",
+          "choices": [
+            {
+              "text": "Capisco. Allora cerco un posto con le strisce bianche.",
+              "isCorrect": true,
+              "feedback": "Sensible choice if you want to save money."
+            },
+            {
+              "text": "Voglio pagare molto per parcheggiare la mia auto.",
+              "isCorrect": false,
+              "feedback": "Unlikely! Most people prefer free parking."
+            },
+            {
+              "text": "Il bianco è un colore molto difficile da pulire.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the parking rules."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Attenzione però. I posti bianchi sono quasi tutti occupati dai residenti.",
+          "english": "Watch out though. The white spots are almost all occupied by residents.",
+          "choices": [
+            {
+              "text": "Ah, peccato. Allora parcheggio sulle strisce blu, è meglio.",
+              "isCorrect": true,
+              "feedback": "Correct. Adapting to the situation."
+            },
+            {
+              "text": "Abito qui da molti anni, sono un residente anche io.",
+              "isCorrect": false,
+              "feedback": "Don't lie! You are a visitor."
+            },
+            {
+              "text": "Le strisce gialle sono molto belle da vedere qui.",
+              "isCorrect": false,
+              "feedback": "Yellow lines are for special categories, don't ignore the warning."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene. Ricordi di pagare alla macchinetta ed esporre il biglietto.",
+          "english": "Alright. Remember to pay at the machine and display the ticket.",
+          "choices": [
+            {
+              "text": "Certamente, vado subito a pagare. Grazie mille!",
+              "isCorrect": true,
+              "feedback": "Polite and ready to follow instructions."
+            },
+            {
+              "text": "Non voglio pagare, preferisco prendere una multa.",
+              "isCorrect": false,
+              "feedback": "Bad idea! Fines are expensive."
+            },
+            {
+              "text": "Metto il biglietto in tasca per non perderlo.",
+              "isCorrect": false,
+              "feedback": "No! You must display it on the dashboard."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parking_meter",
+      "title": "The Parking Meter",
+      "description": "How to use the machine and pay for your stay.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Scusi, ha bisogno di aiuto con la macchinetta del parcheggio?",
+          "english": "Excuse me, do you need help with the parking machine?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Non capisco come funziona questa macchinetta.",
+              "isCorrect": true,
+              "feedback": "Good start. Admitting you need help is the first step."
+            },
+            {
+              "text": "No, cerco un ristorante che fa dell'ottima pasta.",
+              "isCorrect": false,
+              "feedback": "Wrong topic! You are at the parking meter."
+            },
+            {
+              "text": "Questa macchinetta è molto vecchia e molto brutta.",
+              "isCorrect": false,
+              "feedback": "A bit rude! Just ask for help."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È semplice. Prima deve inserire il numero di targa della sua auto.",
+          "english": "It's simple. First you must enter your car's license plate number.",
+          "choices": [
+            {
+              "text": "Va bene, inserisco la targa. Ecco fatto. E dopo?",
+              "isCorrect": true,
+              "feedback": "Action taken and asking for the next step."
+            },
+            {
+              "text": "Inserisco il mio numero di telefono nel computer.",
+              "isCorrect": false,
+              "feedback": "No, the machine needs the license plate."
+            },
+            {
+              "text": "La mia targa è molto sporca, non riesco a leggerla.",
+              "isCorrect": false,
+              "feedback": "Not helpful for completing the payment."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ora deve scegliere il tempo. Quanto tempo vuole restare?",
+          "english": "Now you must choose the time. How long do you want to stay?",
+          "choices": [
+            {
+              "text": "Voglio restare per due ore. Quanto costa il parcheggio?",
+              "isCorrect": true,
+              "feedback": "Clear goal and price inquiry."
+            },
+            {
+              "text": "Resto qui per sempre, questa città è bellissima.",
+              "isCorrect": false,
+              "feedback": "Unrealistic! Choose a specific time."
+            },
+            {
+              "text": "Il tempo vola quando ci si diverte molto in vacanza.",
+              "isCorrect": false,
+              "feedback": "Philosophical but doesn't help with the machine."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Costa un euro e cinquanta all'ora. Può pagare con monete o carta.",
+          "english": "It costs one euro and fifty per hour. You can pay with coins or card.",
+          "choices": [
+            {
+              "text": "Pago con la carta di credito. Devo inserirla qui?",
+              "isCorrect": true,
+              "feedback": "Correct identification of the payment method."
+            },
+            {
+              "text": "Pago con un chilo di mele rosse e molto dolci.",
+              "isCorrect": false,
+              "feedback": "The machine only accepts money or cards!"
+            },
+            {
+              "text": "Non ho soldi, posso pagare con un grande sorriso?",
+              "isCorrect": false,
+              "feedback": "Machines don't appreciate smiles, only currency."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, esatto. Prema il tasto verde per confermare e ritiri la ricevuta.",
+          "english": "Yes, exactly. Press the green button to confirm and collect the receipt.",
+          "choices": [
+            {
+              "text": "Tasto verde... confermato. Ho preso la ricevuta, grazie!",
+              "isCorrect": true,
+              "feedback": "Success! You completed the payment process."
+            },
+            {
+              "text": "Tasto rosso... ho annullato tutto per sbaglio.",
+              "isCorrect": false,
+              "feedback": "Wait! You need to pay, not cancel."
+            },
+            {
+              "text": "La macchinetta ha mangiato la mia carta di credito.",
+              "isCorrect": false,
+              "feedback": "Hopefully not! Follow the instructions first."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parking_signs",
+      "title": "Parking Signs",
+      "description": "Understand parking schedules and the 'disco orario' requirement.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Attenzione! Ha letto il cartello prima di parcheggiare l'auto?",
+          "english": "Watch out! Did you read the sign before parking the car?",
+          "choices": [
+            {
+              "text": "No, non l'ho letto bene. Cosa dice il cartello?",
+              "isCorrect": true,
+              "feedback": "Admitting you missed it is better than getting a fine."
+            },
+            {
+              "text": "Sì, dice che posso parcheggiare qui per dieci giorni.",
+              "isCorrect": false,
+              "feedback": "Unlikely! Parking signs are usually more restrictive."
+            },
+            {
+              "text": "Il cartello è molto alto e io sono molto basso.",
+              "isCorrect": false,
+              "feedback": "Not a valid excuse for missing the rules."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Dice che il parcheggio è riservato ai residenti dalle otto alle venti.",
+          "english": "It says that parking is reserved for residents from eight to twenty.",
+          "choices": [
+            {
+              "text": "Ah, capisco. Adesso sono le diciannove, quindi non posso?",
+              "isCorrect": true,
+              "feedback": "Good calculation. You are checking the current time."
+            },
+            {
+              "text": "Sono le otto di mattina, vado subito a dormire.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the parking restriction."
+            },
+            {
+              "text": "Otto più venti fa ventotto, è un numero molto grande.",
+              "isCorrect": false,
+              "feedback": "Arithmetic won't help you park legally."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Esatto. Però c'è un altro posto lì, dove serve il disco orario.",
+          "english": "Exactly. But there is another spot there, where you need a parking disc.",
+          "choices": [
+            {
+              "text": "Cos'è il disco orario? Non ne ho mai visto uno.",
+              "isCorrect": true,
+              "feedback": "A very common and necessary question for tourists."
+            },
+            {
+              "text": "Ho un disco di musica jazz in macchina, va bene?",
+              "isCorrect": false,
+              "feedback": "No! A 'disco orario' is for time, not music."
+            },
+            {
+              "text": "Il mio orologio è rotto, non so che ore sono adesso.",
+              "isCorrect": false,
+              "feedback": "You need to know the time to use a parking disc."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "È un cartoncino per indicare l'ora di arrivo. Si mette sul cruscotto.",
+          "english": "It's a small card to indicate the arrival time. You put it on the dashboard.",
+          "choices": [
+            {
+              "text": "Ah, ho capito. Posso restare solo per un'ora lì?",
+              "isCorrect": true,
+              "feedback": "Correct. Disco orario zones usually have a time limit."
+            },
+            {
+              "text": "Metto il mio passaporto sul cruscotto della macchina.",
+              "isCorrect": false,
+              "feedback": "No! That's dangerous and incorrect."
+            },
+            {
+              "text": "Il mio cruscotto è pieno di polvere e di vecchie carte.",
+              "isCorrect": false,
+              "feedback": "Not relevant to the parking disc explanation."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, massimo un'ora. Deve girare la ruota sull'ora di adesso.",
+          "english": "Yes, maximum one hour. You must turn the wheel to the current hour.",
+          "choices": [
+            {
+              "text": "Perfetto, lo faccio subito. Grazie per la spiegazione!",
+              "isCorrect": true,
+              "feedback": "You've mastered the 'disco orario' concept."
+            },
+            {
+              "text": "Giro la ruota della macchina verso sinistra o destra?",
+              "isCorrect": false,
+              "feedback": "He meant the wheel on the disc, not the steering wheel!"
+            },
+            {
+              "text": "Non ho voglia di girare niente, sono molto stanco.",
+              "isCorrect": false,
+              "feedback": "It only takes a second to avoid a fine!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "free_parking",
+      "title": "Free Parking",
+      "description": "Checking if parking is free on holidays and Sundays.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Sta cercando di pagare il parcheggio oggi?",
+          "english": "Good morning. Are you trying to pay for parking today?",
+          "choices": [
+            {
+              "text": "Sì, ma la macchinetta non accetta le mie monete.",
+              "isCorrect": true,
+              "feedback": "Good observation. Reporting a technical issue."
+            },
+            {
+              "text": "No, sto cercando di comprare un biglietto del treno.",
+              "isCorrect": false,
+              "feedback": "Wrong machine! This is for parking."
+            },
+            {
+              "text": "Le mie monete sono molto lucide e molto pesanti.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the payment problem."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ma oggi è domenica! Lo sa che la domenica il parcheggio è gratis?",
+          "english": "But today is Sunday! Do you know that on Sundays parking is free?",
+          "choices": [
+            {
+              "text": "Davvero? È gratis tutto il giorno o solo la mattina?",
+              "isCorrect": true,
+              "feedback": "Excellent follow-up question for clarity."
+            },
+            {
+              "text": "La domenica mi piace dormire fino a tardi a casa.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the free parking information."
+            },
+            {
+              "text": "Oggi è lunedì, ho controllato sul mio calendario.",
+              "isCorrect": false,
+              "feedback": "Don't argue! The host is giving you good news."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "È gratis per tutto il giorno festivo. Non deve mettere soldi.",
+          "english": "It is free for the entire holiday. You don't have to put money in.",
+          "choices": [
+            {
+              "text": "Che bella notizia! Vale per tutte le zone della città?",
+              "isCorrect": true,
+              "feedback": "Smart. Some zones might have different rules."
+            },
+            {
+              "text": "Voglio mettere i soldi lo stesso perché sono generoso.",
+              "isCorrect": false,
+              "feedback": "Unnecessary! Save your money for a gelato."
+            },
+            {
+              "text": "La città è molto grande e io mi perdo sempre.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the parking rules."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Quasi tutte, tranne vicino all'ospedale e alla stazione.",
+          "english": "Almost all, except near the hospital and the station.",
+          "choices": [
+            {
+              "text": "Siamo lontani dalla stazione qui, vero?",
+              "isCorrect": true,
+              "feedback": "Confirming your current location relative to exceptions."
+            },
+            {
+              "text": "Prendo il treno per andare a Roma domani mattina.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the current parking situation."
+            },
+            {
+              "text": "L'ospedale è un posto molto triste per molte persone.",
+              "isCorrect": false,
+              "feedback": "A bit too dark! Keep it practical."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, siamo in centro. Può lasciare l'auto qui senza problemi.",
+          "english": "Yes, we are in the center. You can leave the car here without problems.",
+          "choices": [
+            {
+              "text": "Ottimo, allora la lascio qui. Grazie per l'informazione!",
+              "isCorrect": true,
+              "feedback": "Perfect. You saved money and found a spot."
+            },
+            {
+              "text": "La mia macchina è molto vecchia e non parte più.",
+              "isCorrect": false,
+              "feedback": "Then you have a bigger problem than parking!"
+            },
+            {
+              "text": "Vado a piedi perché mi piace molto camminare.",
+              "isCorrect": false,
+              "feedback": "But you just parked your car here!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

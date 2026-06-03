@@ -118,6 +118,19 @@ This architecture is mandatory.
 12. Shoe Store (shopping/shoe_store)
 13. Outdoor Market (shopping/outdoor_market)
 14. Verbs: -ire (verbs/ire_verbi_in_ire)
+15. Airport Arrival (travel/airport_arrival)
+16. Train Ticket (travel/train_ticket)
+17. Train Platform (travel/train_platform)
+18. Metro Directions (travel/metro_directions)
+19. Renting a Car (travel/renting_a_car)
+20. Lost in a City (travel/lost_in_a_city)
+21. Buying Ferry Tickets (travel/buying_ferry_tickets)
+22. WiFi Problem (tech/wi_fi_problem)
+23. Charging Devices (tech/charging_devices)
+24. Using a Map App (tech/using_a_map_app)
+25. Video Call (tech/video_call)
+26. Online Booking (tech/online_booking)
+27. ATM Machine (tech/atm_machine)
 
 Status:
 
@@ -127,7 +140,7 @@ Gold Standard V1 & Certified
 
 ## Remaining Scenarios
 
-102
+90
 
 Status:
 

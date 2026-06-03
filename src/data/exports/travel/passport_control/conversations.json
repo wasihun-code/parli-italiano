@@ -1,0 +1,993 @@
+{
+  "scenarioId": 2,
+  "conversations": [
+    {
+      "id": "standard_entry",
+      "title": "Standard Entry Check",
+      "description": "Go through the basic questions at the passport control booth.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Passaporto, per favore.",
+          "english": "Good morning. Passport, please.",
+          "choices": [
+            {
+              "text": "Buongiorno. Ecco il mio passaporto.",
+              "english": "Good morning. Here is my passport.",
+              "isCorrect": true,
+              "feedback": "Simple and polite. Always hand over documents when asked."
+            },
+            {
+              "text": "Buongiorno. Non trovo il documento.",
+              "isCorrect": false,
+              "feedback": "You need your passport to enter the country!"
+            },
+            {
+              "text": "Buongiorno. Ho perso la mia borsa.",
+              "isCorrect": false,
+              "feedback": "Try to find it, or you can't pass control."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Qual è il motivo del suo viaggio in Italia?",
+          "english": "What is the reason for your trip to Italy?",
+          "choices": [
+            {
+              "text": "Sono qui in vacanza per turismo.",
+              "english": "I'm here on holiday for tourism.",
+              "isCorrect": true,
+              "feedback": "Clear and common reason for travel."
+            },
+            {
+              "text": "Vengo per studiare l'italiano.",
+              "isCorrect": false,
+              "feedback": "Study usually requires a different visa."
+            },
+            {
+              "text": "Vengo per trovare i miei amici.",
+              "isCorrect": false,
+              "feedback": "Personal visits are okay, but 'turismo' is better."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Quanto tempo rimarrà nel paese?",
+          "english": "How long will you stay in the country?",
+          "choices": [
+            {
+              "text": "Rimarrò in Italia per dieci giorni.",
+              "english": "I will stay in Italy for ten days.",
+              "isCorrect": true,
+              "feedback": "Stating the duration clearly."
+            },
+            {
+              "text": "Resterò per quasi due settimane.",
+              "isCorrect": false,
+              "feedback": "A bit vague, but 'dieci giorni' is more specific."
+            },
+            {
+              "text": "Sarò qui per un mese intero.",
+              "isCorrect": false,
+              "feedback": "Check if your visa allows a full month."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Dove alloggerà durante il suo soggiorno?",
+          "english": "Where will you stay during your stay?",
+          "choices": [
+            {
+              "text": "Alloggerò in un albergo a Roma.",
+              "english": "I will stay in a hotel in Rome.",
+              "isCorrect": true,
+              "feedback": "Providing your accommodation info."
+            },
+            {
+              "text": "Starò in un appartamento privato.",
+              "isCorrect": false,
+              "feedback": "You should have the address ready."
+            },
+            {
+              "text": "Dormirò a casa di mia sorella.",
+              "isCorrect": false,
+              "feedback": "Be ready to provide her address too."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ha con sé una prenotazione dell'hotel?",
+          "english": "Do you have a hotel reservation with you?",
+          "choices": [
+            {
+              "text": "Sì, ho la conferma stampata qui.",
+              "english": "Yes, I have the printed confirmation here.",
+              "isCorrect": true,
+              "feedback": "Perfect, having a hard copy is always good."
+            },
+            {
+              "text": "Sì, ho un'email sul telefono.",
+              "isCorrect": false,
+              "feedback": "Good, but the officer might want to see it."
+            },
+            {
+              "text": "No, devo ancora cercare un posto.",
+              "isCorrect": false,
+              "feedback": "This might cause problems at the border."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ha già acquistato il biglietto di ritorno?",
+          "english": "Have you already purchased your return ticket?",
+          "choices": [
+            {
+              "text": "Sì, ecco il mio volo di ritorno.",
+              "english": "Yes, here is my return flight.",
+              "isCorrect": true,
+              "feedback": "Essential for many short-term stays."
+            },
+            {
+              "text": "Sì, parto la prossima domenica.",
+              "isCorrect": false,
+              "feedback": "Good, but show the document if asked."
+            },
+            {
+              "text": "No, compro il biglietto domani.",
+              "isCorrect": false,
+              "feedback": "Not having a return ticket is risky."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Quanti soldi in contanti porta con sé?",
+          "english": "How much cash are you carrying with you?",
+          "choices": [
+            {
+              "text": "Porto circa cinquecento euro.",
+              "english": "I'm carrying about five hundred euros.",
+              "isCorrect": true,
+              "feedback": "A reasonable amount for a short trip."
+            },
+            {
+              "text": "Ho solo trecento euro con me.",
+              "isCorrect": false,
+              "feedback": "Make sure you have enough for your stay."
+            },
+            {
+              "text": "Ho mille euro nel portafoglio.",
+              "isCorrect": false,
+              "feedback": "Good, but don't carry too much cash."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "È la sua prima volta qui in Italia?",
+          "english": "Is it your first time here in Italy?",
+          "choices": [
+            {
+              "text": "Sì, è la mia prima volta qui.",
+              "english": "Yes, it is my first time here.",
+              "isCorrect": true,
+              "feedback": "Honest answer."
+            },
+            {
+              "text": "No, sono venuto l'anno scorso.",
+              "isCorrect": false,
+              "feedback": "Previous visits are usually a positive sign."
+            },
+            {
+              "text": "Sì, non sono mai stato qui.",
+              "isCorrect": false,
+              "feedback": "Redundant but correct meaning."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ha un'assicurazione sanitaria di viaggio?",
+          "english": "Do you have travel health insurance?",
+          "choices": [
+            {
+              "text": "Sì, ecco la mia polizza valida.",
+              "english": "Yes, here is my valid policy.",
+              "isCorrect": true,
+              "feedback": "Insurance is often required for entry."
+            },
+            {
+              "text": "Sì, sono coperto per il viaggio.",
+              "isCorrect": false,
+              "feedback": "Good, but have the proof ready."
+            },
+            {
+              "text": "No, non ho nessuna assicurazione.",
+              "isCorrect": false,
+              "feedback": "This could be a reason for denial."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va bene. Benvenuto in Italia. Buon viaggio!",
+          "english": "All right. Welcome to Italy. Have a good trip!",
+          "choices": [
+            {
+              "text": "Grazie mille, arrivederci.",
+              "english": "Thank you very much, goodbye.",
+              "isCorrect": true,
+              "feedback": "Polite exit."
+            },
+            {
+              "text": "Grazie, buona giornata a lei.",
+              "isCorrect": false,
+              "feedback": "Correct and polite too."
+            },
+            {
+              "text": "Grazie, molto gentile. Arrivederci.",
+              "isCorrect": false,
+              "feedback": "Very polite."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business_trip",
+      "title": "Business Trip Purpose",
+      "description": "Explain that you are traveling for work meetings.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Viaggia per lavoro o per piacere?",
+          "english": "Good morning. Are you traveling for work or for pleasure?",
+          "choices": [
+            {
+              "text": "Buongiorno. Viaggio per motivi di lavoro.",
+              "english": "Good morning. I'm traveling for work reasons.",
+              "isCorrect": true,
+              "feedback": "Direct answer for a business traveler."
+            },
+            {
+              "text": "Buongiorno. Sono qui per una vacanza.",
+              "isCorrect": false,
+              "feedback": "He asked if it's work or pleasure."
+            },
+            {
+              "text": "Buongiorno. Viaggio per piacere oggi.",
+              "isCorrect": false,
+              "feedback": "Not suitable for this scenario."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ha un visto per motivi di lavoro?",
+          "english": "Do you have a visa for work reasons?",
+          "choices": [
+            {
+              "text": "Sì, ecco il mio visto di lavoro.",
+              "english": "Yes, here is my work visa.",
+              "isCorrect": true,
+              "feedback": "Showing the correct document."
+            },
+            {
+              "text": "Sì, è in questa pagina qui.",
+              "isCorrect": false,
+              "feedback": "A bit informal, but understandable."
+            },
+            {
+              "text": "No, non credo di averne uno.",
+              "isCorrect": false,
+              "feedback": "You need one for work!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Per quale azienda lavora attualmente?",
+          "english": "Which company do you currently work for?",
+          "choices": [
+            {
+              "text": "Lavoro per una ditta di informatica.",
+              "english": "I work for an IT company.",
+              "isCorrect": true,
+              "feedback": "Giving a clear industry answer."
+            },
+            {
+              "text": "Lavoro per una società di trasporti.",
+              "isCorrect": false,
+              "feedback": "Plausible, but choose the first one."
+            },
+            {
+              "text": "Lavoro per un ufficio di marketing.",
+              "isCorrect": false,
+              "feedback": "Plausible industry."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Qual è il suo ruolo in questa azienda?",
+          "english": "What is your role in this company?",
+          "choices": [
+            {
+              "text": "Sono un ingegnere del software.",
+              "english": "I am a software engineer.",
+              "isCorrect": true,
+              "feedback": "Stating your profession clearly."
+            },
+            {
+              "text": "Sono un direttore delle vendite.",
+              "isCorrect": false,
+              "feedback": "Another professional role."
+            },
+            {
+              "text": "Sono un assistente di progetto.",
+              "isCorrect": false,
+              "feedback": "A common job title."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Dove si terranno i suoi incontri di lavoro?",
+          "english": "Where will your work meetings be held?",
+          "choices": [
+            {
+              "text": "Si terranno nei nostri uffici a Milano.",
+              "english": "They will be held in our offices in Milan.",
+              "isCorrect": true,
+              "feedback": "Providing a specific location."
+            },
+            {
+              "text": "Si terranno in un centro congressi.",
+              "isCorrect": false,
+              "feedback": "A common place for meetings."
+            },
+            {
+              "text": "Si terranno presso la sede centrale.",
+              "isCorrect": false,
+              "feedback": "Clear location."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ha una lettera di invito dell'azienda italiana?",
+          "english": "Do you have an invitation letter from the Italian company?",
+          "choices": [
+            {
+              "text": "Sì, ecco la lettera di invito ufficiale.",
+              "english": "Yes, here is the official invitation letter.",
+              "isCorrect": true,
+              "feedback": "This document confirms your purpose."
+            },
+            {
+              "text": "Sì, la trovo subito tra i documenti.",
+              "isCorrect": false,
+              "feedback": "Be quick to find it."
+            },
+            {
+              "text": "No, non ho ricevuto nessuna lettera.",
+              "isCorrect": false,
+              "feedback": "This might raise suspicions."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Chi è il suo referente qui in Italia?",
+          "english": "Who is your contact person here in Italy?",
+          "choices": [
+            {
+              "text": "Il mio referente è il signor Bianchi.",
+              "english": "My contact person is Mr. Bianchi.",
+              "isCorrect": true,
+              "feedback": "Naming a specific contact."
+            },
+            {
+              "text": "Il mio contatto è la signora Rossi.",
+              "isCorrect": false,
+              "feedback": "Another valid contact name."
+            },
+            {
+              "text": "Il mio capo è il dottor Verga.",
+              "isCorrect": false,
+              "feedback": "Usually, they want a local contact."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Quanto durerà questo viaggio d'affari?",
+          "english": "How long will this business trip last?",
+          "choices": [
+            {
+              "text": "Resterò in Italia solo per tre giorni.",
+              "english": "I will stay in Italy only for three days.",
+              "isCorrect": true,
+              "feedback": "Short stays are common for business."
+            },
+            {
+              "text": "Tornerò a casa tra quattro giorni.",
+              "isCorrect": false,
+              "feedback": "Clear duration."
+            },
+            {
+              "text": "Partirò di nuovo venerdì mattina.",
+              "isCorrect": false,
+              "feedback": "Specifying the departure day."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Porta con sé strumenti di lavoro particolari?",
+          "english": "Are you carrying any special work tools?",
+          "choices": [
+            {
+              "text": "No, porto solo il mio computer portatile.",
+              "english": "No, I'm only carrying my laptop.",
+              "isCorrect": true,
+              "feedback": "The standard equipment for most professionals."
+            },
+            {
+              "text": "No, ho solo dei documenti cartacei.",
+              "isCorrect": false,
+              "feedback": "Plausible for business."
+            },
+            {
+              "text": "Sì, ho dei campioni di prodotti nuovi.",
+              "isCorrect": false,
+              "feedback": "You might need to declare these at customs."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Tutto in ordine. Buon lavoro in Italia.",
+          "english": "Everything is in order. Have a good work trip in Italy.",
+          "choices": [
+            {
+              "text": "Grazie mille per il suo aiuto. Arrivederci.",
+              "english": "Thank you very much for your help. Goodbye.",
+              "isCorrect": true,
+              "feedback": "Simple polite farewell."
+            },
+            {
+              "text": "Grazie mille, è stato molto gentile.",
+              "isCorrect": false,
+              "feedback": "Very polite."
+            },
+            {
+              "text": "Grazie, buona permanenza anche a lei.",
+              "isCorrect": false,
+              "feedback": "Polite but 'permanenza' is for the guest."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missing_document",
+      "title": "Missing Document",
+      "description": "Handle a situation where you forgot to fill out a required form.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Ha il modulo di sbarco compilato?",
+          "english": "Good morning. Do you have the landing form filled out?",
+          "choices": [
+            {
+              "text": "Buongiorno. No, non ho il modulo.",
+              "english": "Good morning. No, I don't have the form.",
+              "isCorrect": true,
+              "feedback": "Honesty is the best policy here."
+            },
+            {
+              "text": "Buongiorno. Sì, eccolo qui pronto.",
+              "isCorrect": false,
+              "feedback": "If you don't have it, don't say yes!"
+            },
+            {
+              "text": "Buongiorno. Non so cosa sia questo.",
+              "isCorrect": false,
+              "feedback": "It's a required document for entry."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Deve compilarlo prima del controllo. Ne ha uno?",
+          "english": "You must fill it out before the check. Do you have one?",
+          "choices": [
+            {
+              "text": "No, dove posso prendere un modulo?",
+              "english": "No, where can I get a form?",
+              "isCorrect": true,
+              "feedback": "Asking for what you need."
+            },
+            {
+              "text": "No, me ne può dare uno lei?",
+              "isCorrect": false,
+              "feedback": "Usually they are on a separate table."
+            },
+            {
+              "text": "No, non ne vedo nessuno qui.",
+              "isCorrect": false,
+              "feedback": "Look around for the documents table."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Può prenderne uno sul tavolo a sinistra. Ha una penna?",
+          "english": "You can take one on the table on the left. Do you have a pen?",
+          "choices": [
+            {
+              "text": "Sì, ho una penna nera. Lo compilo subito.",
+              "english": "Yes, I have a black pen. I'll fill it out right away.",
+              "isCorrect": true,
+              "feedback": "Cooperative and efficient."
+            },
+            {
+              "text": "Sì, ho una penna blu nella borsa.",
+              "isCorrect": false,
+              "feedback": "Good, blue ink is usually fine too."
+            },
+            {
+              "text": "No, mi serve anche una penna per scrivere.",
+              "isCorrect": false,
+              "feedback": "The officer might lend you one."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Usi stampatello maiuscolo per favore. Ha capito?",
+          "english": "Please use block capitals. Did you understand?",
+          "choices": [
+            {
+              "text": "Sì, scriverò tutto in stampatello.",
+              "english": "Yes, I will write everything in block capitals.",
+              "isCorrect": true,
+              "feedback": "Confirming you understood the instruction."
+            },
+            {
+              "text": "Sì, capisco bene le sue istruzioni.",
+              "isCorrect": false,
+              "feedback": "Polite confirmation."
+            },
+            {
+              "text": "No, può ripetere cosa devo fare?",
+              "isCorrect": false,
+              "feedback": "He wants clear, readable writing."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Deve inserire il suo indirizzo in Italia. Lo sa?",
+          "english": "You must enter your address in Italy. Do you know it?",
+          "choices": [
+            {
+              "text": "Sì, è l'indirizzo del mio albergo a Roma.",
+              "english": "Yes, it is the address of my hotel in Rome.",
+              "isCorrect": true,
+              "feedback": "Providing the necessary info."
+            },
+            {
+              "text": "Sì, ho l'indirizzo scritto sul telefono.",
+              "isCorrect": false,
+              "feedback": "Good, use that to fill the form."
+            },
+            {
+              "text": "No, devo controllare la mia prenotazione.",
+              "isCorrect": false,
+              "feedback": "Better check it now."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Qual è il suo numero di volo, per favore?",
+          "english": "What is your flight number, please?",
+          "choices": [
+            {
+              "text": "Il mio volo è il numero AZ centodieci.",
+              "english": "My flight is number AZ one hundred and ten.",
+              "isCorrect": true,
+              "feedback": "Giving the specific flight ID."
+            },
+            {
+              "text": "Il mio volo è partito da Londra oggi.",
+              "isCorrect": false,
+              "feedback": "He needs the number, not the origin."
+            },
+            {
+              "text": "Il mio volo è arrivato alle dieci.",
+              "isCorrect": false,
+              "feedback": "He needs the number, not the time."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Non dimentichi di firmare il modulo in fondo.",
+          "english": "Don't forget to sign the form at the bottom.",
+          "choices": [
+            {
+              "text": "Sì, metto la mia firma proprio qui.",
+              "english": "Yes, I'm putting my signature right here.",
+              "isCorrect": true,
+              "feedback": "The signature validates the document."
+            },
+            {
+              "text": "Sì, firmo subito il documento cartaceo.",
+              "isCorrect": false,
+              "feedback": "A bit formal phrasing."
+            },
+            {
+              "text": "Va bene, aggiungo la data e la firma.",
+              "isCorrect": false,
+              "feedback": "Good practice."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Una volta finito, torni qui da me al banco.",
+          "english": "Once finished, come back here to me at the desk.",
+          "choices": [
+            {
+              "text": "Va bene, torno tra pochissimi minuti.",
+              "english": "All right, I'll be back in very few minutes.",
+              "isCorrect": true,
+              "feedback": "Confirming you'll be quick."
+            },
+            {
+              "text": "Va bene, faccio molto in fretta.",
+              "isCorrect": false,
+              "feedback": "Good, speed is appreciated."
+            },
+            {
+              "text": "D'accordo, finisco e ritorno subito.",
+              "isCorrect": false,
+              "feedback": "Clear plan."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Vediamo... il modulo sembra corretto ora.",
+          "english": "Let's see... the form looks correct now.",
+          "choices": [
+            {
+              "text": "La ringrazio molto per la pazienza.",
+              "english": "I thank you very much for your patience.",
+              "isCorrect": true,
+              "feedback": "Politeness goes a long way."
+            },
+            {
+              "text": "Grazie per aver controllato tutto.",
+              "isCorrect": false,
+              "feedback": "Friendly response."
+            },
+            {
+              "text": "Sono contento che sia tutto a posto.",
+              "isCorrect": false,
+              "feedback": "Positive closure."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco il suo passaporto. Può passare ora.",
+          "english": "Here is your passport. You may pass now.",
+          "choices": [
+            {
+              "text": "Grazie mille e buona giornata.",
+              "english": "Thank you very much and have a good day.",
+              "isCorrect": true,
+              "feedback": "Friendly exit."
+            },
+            {
+              "text": "Grazie di tutto, arrivederci.",
+              "isCorrect": false,
+              "feedback": "Simple goodbye."
+            },
+            {
+              "text": "Grazie, buona serata a lei.",
+              "isCorrect": false,
+              "feedback": "Polite farewell."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_customs",
+      "title": "Asking about Customs",
+      "description": "Clarify if you have anything to declare to the officer.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Ha qualcosa da dichiarare alla dogana?",
+          "english": "Good morning. Do you have anything to declare at customs?",
+          "choices": [
+            {
+              "text": "Buongiorno. No, non ho nulla da dichiarare.",
+              "english": "Good morning. No, I have nothing to declare.",
+              "isCorrect": true,
+              "feedback": "The standard answer for most travelers."
+            },
+            {
+              "text": "Buongiorno. Sì, ho molti regali costosi.",
+              "isCorrect": false,
+              "feedback": "If so, you must declare them!"
+            },
+            {
+              "text": "Buongiorno. Non porto niente di speciale.",
+              "isCorrect": false,
+              "feedback": "A bit vague."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Porta regali per un valore superiore a 400 euro?",
+          "english": "Are you carrying gifts worth more than 400 euros?",
+          "choices": [
+            {
+              "text": "No, porto solo pochi oggetti personali.",
+              "english": "No, I'm only carrying a few personal items.",
+              "isCorrect": true,
+              "feedback": "Clarifying the nature of your items."
+            },
+            {
+              "text": "No, il valore è molto basso, credo.",
+              "isCorrect": false,
+              "feedback": "Plausible but the first one is clearer."
+            },
+            {
+              "text": "No, non ho comprato niente di caro.",
+              "isCorrect": false,
+              "feedback": "Informal."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ha con sé bevande alcoliche o tabacco?",
+          "english": "Do you have alcoholic beverages or tobacco with you?",
+          "choices": [
+            {
+              "text": "No, non ho né alcol né sigarette.",
+              "english": "No, I have neither alcohol nor cigarettes.",
+              "isCorrect": true,
+              "feedback": "Simple negation of both categories."
+            },
+            {
+              "text": "No, non fumo e non bevo alcol.",
+              "isCorrect": false,
+              "feedback": "Good, but the question is about what you carry."
+            },
+            {
+              "text": "No, la mia borsa è quasi vuota.",
+              "isCorrect": false,
+              "feedback": "Not a direct answer."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Porta medicinali senza la ricetta medica?",
+          "english": "Are you carrying medications without a medical prescription?",
+          "choices": [
+            {
+              "text": "No, ho solo i miei farmaci abituali.",
+              "english": "No, I only have my usual medications.",
+              "isCorrect": true,
+              "feedback": "Standard medications are usually fine."
+            },
+            {
+              "text": "No, porto solo alcune aspirine.",
+              "isCorrect": false,
+              "feedback": "Common over-the-counter medicine."
+            },
+            {
+              "text": "Sì, ho delle medicine per il mal di testa.",
+              "isCorrect": false,
+              "feedback": "Usually no need to declare unless restricted."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Quanta valuta estera ha nel suo bagaglio?",
+          "english": "How much foreign currency do you have in your luggage?",
+          "choices": [
+            {
+              "text": "Ho solo una piccola somma in euro.",
+              "english": "I only have a small amount in euros.",
+              "isCorrect": true,
+              "feedback": "Small amounts don't need declaration."
+            },
+            {
+              "text": "Ho meno di duemila euro con me.",
+              "isCorrect": false,
+              "feedback": "Well below the 10k limit."
+            },
+            {
+              "text": "Porto con me solo pochi dollari.",
+              "isCorrect": false,
+              "feedback": "Currency type doesn't matter for the limit."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ha con sé piante, semi o terra nel bagaglio?",
+          "english": "Do you have plants, seeds or soil in your luggage?",
+          "choices": [
+            {
+              "text": "No, non porto nessun prodotto vegetale.",
+              "english": "No, I'm not carrying any plant products.",
+              "isCorrect": true,
+              "feedback": "Vegetal products are often restricted."
+            },
+            {
+              "text": "No, non ho piante nella mia valigia.",
+              "isCorrect": false,
+              "feedback": "Direct answer about plants."
+            },
+            {
+              "text": "No, non porto semi di nessun tipo.",
+              "isCorrect": false,
+              "feedback": "Seeds can be invasive."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ci sono prodotti alimentari freschi con lei?",
+          "english": "Are there any fresh food products with you?",
+          "choices": [
+            {
+              "text": "No, non ho cibo fresco nel mio zaino.",
+              "english": "No, I don't have fresh food in my backpack.",
+              "isCorrect": true,
+              "feedback": "Fresh food is often prohibited."
+            },
+            {
+              "text": "No, non porto carne o formaggi freschi.",
+              "isCorrect": false,
+              "feedback": "Meat and cheese are strictly controlled."
+            },
+            {
+              "text": "No, non ho frutta o verdura con me.",
+              "isCorrect": false,
+              "feedback": "Commonly restricted items."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Porta con sé campioni per scopi commerciali?",
+          "english": "Are you carrying samples for commercial purposes?",
+          "choices": [
+            {
+              "text": "No, tutti gli oggetti sono per uso personale.",
+              "english": "No, all items are for personal use.",
+              "isCorrect": true,
+              "feedback": "Commercial samples require declaration."
+            },
+            {
+              "text": "No, non vendo niente durante il viaggio.",
+              "isCorrect": false,
+              "feedback": "Good, no sales intended."
+            },
+            {
+              "text": "Sono solo regali per la mia famiglia.",
+              "isCorrect": false,
+              "feedback": "Personal gifts are usually fine."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene. Segua il percorso verde per l'uscita.",
+          "english": "All right. Follow the green path for the exit.",
+          "choices": [
+            {
+              "text": "Grazie. Dove posso trovare un taxi ora?",
+              "english": "Thanks. Where can I find a taxi now?",
+              "isCorrect": true,
+              "feedback": "Asking for transport after clearance."
+            },
+            {
+              "text": "Grazie. Dov'è la fermata dell'autobus?",
+              "isCorrect": false,
+              "feedback": "Another transport option."
+            },
+            {
+              "text": "Grazie. Come arrivo in centro città?",
+              "isCorrect": false,
+              "feedback": "General direction."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "I taxi sono fuori dalla porta principale.",
+          "english": "Taxis are outside the main door.",
+          "choices": [
+            {
+              "text": "Grazie mille per le informazioni. Arrivederci.",
+              "english": "Thank you very much for the information. Goodbye.",
+              "isCorrect": true,
+              "feedback": "Polite departure."
+            },
+            {
+              "text": "Grazie ancora per tutto l'aiuto.",
+              "isCorrect": false,
+              "feedback": "Grateful response."
+            },
+            {
+              "text": "Grazie, buona giornata. Arrivederci.",
+              "isCorrect": false,
+              "feedback": "Friendly exit."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

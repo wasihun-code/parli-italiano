@@ -1,0 +1,953 @@
+{
+  "scenarioId": 13,
+  "conversations": [
+    {
+      "id": "recognizing_lost",
+      "title": "Recognizing You're Lost",
+      "description": "Admit you are lost and ask for help finding your way.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarla? Mi sembra un po' perso.",
+          "english": "Good morning! Can I help you? You look a bit lost.",
+          "choices": [
+            {
+              "text": "Sì, mi scusi. Mi sono perso. Non so dove sono.",
+              "isCorrect": true,
+              "feedback": "Good. Admitting you are lost is the first step to getting help."
+            },
+            {
+              "text": "No, grazie. Sto solo camminando un po' qui oggi.",
+              "isCorrect": false,
+              "feedback": "But you are lost! You should ask for help."
+            },
+            {
+              "text": "Voglio comprare un biglietto per il treno veloce.",
+              "isCorrect": false,
+              "feedback": "You are lost in the city, not at the train station."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Non si preoccupi. Succede spesso in questa città. Dove deve andare?",
+          "english": "Don't worry. It happens often in this city. Where do you need to go?",
+          "choices": [
+            {
+              "text": "Sto cercando il centro, ma non trovo la via giusta.",
+              "isCorrect": true,
+              "feedback": "Correct. Stating your destination clearly helps."
+            },
+            {
+              "text": "Mi piace molto il centro, è molto bello e antico.",
+              "isCorrect": false,
+              "feedback": "The host asked where you need to go, not if you like the center."
+            },
+            {
+              "text": "Prendo un taxi perché sono molto stanco di correre.",
+              "isCorrect": false,
+              "feedback": "Focus on finding the direction first."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Il centro è vicino, ma deve girare all'angolo. Ha una mappa?",
+          "english": "The center is nearby, but you need to turn at the corner. Do you have a map?",
+          "choices": [
+            {
+              "text": "No, non ho una mappa. Può indicarmi la strada?",
+              "isCorrect": true,
+              "feedback": "Perfect. Asking for directions when you don't have a map."
+            },
+            {
+              "text": "Sì, ho una mappa nello zaino ma è molto vecchia.",
+              "isCorrect": false,
+              "feedback": "If you have a map, use it! But the goal is to ask for directions."
+            },
+            {
+              "text": "Vedo un palazzo molto alto e grigio davanti a me.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information for the question asked."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certo. Vada dritto per questa strada e poi giri a sinistra.",
+          "english": "Sure. Go straight down this street and then turn left.",
+          "choices": [
+            {
+              "text": "Dritto e poi a sinistra? Ho capito bene, grazie.",
+              "isCorrect": true,
+              "feedback": "Repeating directions is a great way to confirm understanding."
+            },
+            {
+              "text": "Vado a destra e poi subito dritto verso il fiume.",
+              "isCorrect": false,
+              "feedback": "You mixed up left and right! Pay attention."
+            },
+            {
+              "text": "Non voglio girare perché ho paura di perdermi ancora.",
+              "isCorrect": false,
+              "feedback": "You must follow the directions to reach the center."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Esatto. Dopo il giro, vedrà una grande piazza. È facile.",
+          "english": "Exactly. After the turn, you will see a large square. It's easy.",
+          "choices": [
+            {
+              "text": "Una grande piazza? Come si chiama questa piazza?",
+              "isCorrect": true,
+              "feedback": "Good. Asking for the name of a landmark helps you orient yourself."
+            },
+            {
+              "text": "Prego, non c'è di che. Mi piace aiutare la gente.",
+              "isCorrect": false,
+              "feedback": "You are the one receiving help, not giving it!"
+            },
+            {
+              "text": "Arrivederci, vado a mangiare un gelato al centro.",
+              "isCorrect": false,
+              "feedback": "A bit abrupt. Use a standard greeting."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Si chiama Piazza del Popolo. È molto famosa e ci sono molte statue.",
+          "english": "It's called Piazza del Popolo. It's very famous and there are many statues.",
+          "choices": [
+            {
+              "text": "Piazza del Popolo, ho capito. È lontana da qui?",
+              "isCorrect": true,
+              "feedback": "Correct. Asking about distance is important."
+            },
+            {
+              "text": "Mi piacciono le statue ma preferisco i musei moderni.",
+              "isCorrect": false,
+              "feedback": "Stay focused on getting to your destination."
+            },
+            {
+              "text": "Voglio comprare un gelato in quella piazza ora.",
+              "isCorrect": false,
+              "feedback": "First, make sure you know how to get there."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "No, è a soli cinque minuti a piedi. È molto vicino.",
+          "english": "No, it's only five minutes on foot. It's very close.",
+          "choices": [
+            {
+              "text": "Solo cinque minuti? Ottimo, posso camminare allora.",
+              "isCorrect": true,
+              "feedback": "Good. Confirming you can walk there."
+            },
+            {
+              "text": "Cinque minuti sono troppi, prendo un autobus.",
+              "isCorrect": false,
+              "feedback": "Five minutes is a very short walk!"
+            },
+            {
+              "text": "Dove posso comprare le scarpe nuove per camminare?",
+              "isCorrect": false,
+              "feedback": "Don't get distracted by shopping."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, è una bella passeggiata. Passerà davanti a una vecchia chiesa.",
+          "english": "Yes, it's a nice walk. You will pass in front of an old church.",
+          "choices": [
+            {
+              "text": "Una vecchia chiesa? È un buon punto di riferimento.",
+              "isCorrect": true,
+              "feedback": "Landmarks like churches are great for navigation."
+            },
+            {
+              "text": "Non mi piacciono le chiese, preferisco il cinema.",
+              "isCorrect": false,
+              "feedback": "The church is just a landmark to help you find your way."
+            },
+            {
+              "text": "Entro nella chiesa per dormire un po' al fresco.",
+              "isCorrect": false,
+              "feedback": "You need to reach the center, not sleep!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente. Se vede la chiesa, significa che è sulla strada giusta.",
+          "english": "Certainly. If you see the church, it means you are on the right path.",
+          "choices": [
+            {
+              "text": "Perfetto. Grazie mille per le indicazioni così precise.",
+              "isCorrect": true,
+              "feedback": "Polite confirmation of the help received."
+            },
+            {
+              "text": "E se non vedo la chiesa cosa devo fare?",
+              "isCorrect": false,
+              "feedback": "The host just gave you clear directions, follow them."
+            },
+            {
+              "text": "C'è un bar vicino alla chiesa per bere un caffè?",
+              "isCorrect": false,
+              "feedback": "Focus on the directions first."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego! Si goda la passeggiata in centro. Arrivederci!",
+          "english": "You're welcome! Enjoy your walk in the center. Goodbye!",
+          "choices": [
+            {
+              "text": "Grazie ancora. Arrivederci e buona giornata!",
+              "isCorrect": true,
+              "feedback": "Perfect closing for the conversation."
+            },
+            {
+              "text": "Prego, non c'è di che. Mi piace parlare con lei.",
+              "isCorrect": false,
+              "feedback": "You are the one being helped!"
+            },
+            {
+              "text": "Ciao, vado a cercare la chiesa adesso subito.",
+              "isCorrect": false,
+              "feedback": "A bit too informal. Use 'Arrivederci'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_landmark",
+      "title": "Asking for Landmarks",
+      "description": "Use a famous landmark to find your way when you are lost.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Cerca qualcosa in particolare? Sembra smarrito.",
+          "english": "Hello! Are you looking for something in particular? You look lost.",
+          "choices": [
+            {
+              "text": "Sì, cerco la Fontana di Trevi. È qui vicino?",
+              "isCorrect": true,
+              "feedback": "Landmarks are excellent reference points when lost."
+            },
+            {
+              "text": "No, cerco un ospedale perché mi fa male la testa.",
+              "isCorrect": false,
+              "feedback": "That's a medical emergency, not a landmark search."
+            },
+            {
+              "text": "Sì, voglio vedere il Colosseo ma è troppo lontano.",
+              "isCorrect": false,
+              "feedback": "The host asked if you are looking for something now."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, la fontana è molto vicina. Deve solo attraversare la piazza.",
+          "english": "Yes, the fountain is very close. You just need to cross the square.",
+          "choices": [
+            {
+              "text": "Quale piazza? Ce ne sono molte in questa zona.",
+              "isCorrect": true,
+              "feedback": "Good clarification. Precision is important for directions."
+            },
+            {
+              "text": "Attraverso la piazza e poi vado a dormire un po'.",
+              "isCorrect": false,
+              "feedback": "Focus on the landmark, not your future plans."
+            },
+            {
+              "text": "Vedo la piazza, è piena di turisti con la mappa.",
+              "isCorrect": false,
+              "feedback": "Observational but doesn't move the conversation forward."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "La piazza davanti a lei, Piazza di Spagna. La vede?",
+          "english": "The square in front of you, Piazza di Spagna. Do you see it?",
+          "choices": [
+            {
+              "text": "Ah sì, ora la vedo. È proprio lì davanti a me.",
+              "isCorrect": true,
+              "feedback": "Confirming visual contact with a landmark is very helpful."
+            },
+            {
+              "text": "No, non vedo niente perché c'è troppa gente qui.",
+              "isCorrect": false,
+              "feedback": "Try to look closer! It's right there."
+            },
+            {
+              "text": "Piazza di Spagna è bella ma preferisco il mare.",
+              "isCorrect": false,
+              "feedback": "Irrelevant preference."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Bene. Attraversi la piazza e prenda la via a destra.",
+          "english": "Fine. Cross the square and take the street on the right.",
+          "choices": [
+            {
+              "text": "Va bene, attraverso la piazza e vado a destra.",
+              "isCorrect": true,
+              "feedback": "Good confirmation of the instruction."
+            },
+            {
+              "text": "Vado a sinistra verso il museo d'arte moderna.",
+              "isCorrect": false,
+              "feedback": "The host said right, not left!"
+            },
+            {
+              "text": "Mi fermo a guardare i negozi di scarpe e borse.",
+              "isCorrect": false,
+              "feedback": "You are lost! Don't get distracted by shopping."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Esatto. Troverà la fontana dopo pochi metri. Prego!",
+          "english": "Exactly. You will find the fountain after a few meters. You're welcome!",
+          "choices": [
+            {
+              "text": "Grazie! C'è anche un ufficio postale qui vicino?",
+              "isCorrect": true,
+              "feedback": "Good. Asking for other useful places while you have help."
+            },
+            {
+              "text": "Grazie, spero di non perdermi ancora nel giro.",
+              "isCorrect": false,
+              "feedback": "A bit negative, but okay. 'Buona serata' is better."
+            },
+            {
+              "text": "Ciao, vado a fare una foto alla fontana subito.",
+              "isCorrect": false,
+              "feedback": "Too informal for this situation."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, c'è un ufficio postale proprio dietro la fontana.",
+          "english": "Yes, there is a post office right behind the fountain.",
+          "choices": [
+            {
+              "text": "Dietro la fontana? È facile da trovare allora.",
+              "isCorrect": true,
+              "feedback": "Correct. Using one landmark to find another."
+            },
+            {
+              "text": "Voglio comprare dei francobolli per le mie foto.",
+              "isCorrect": false,
+              "feedback": "Focus on the location first."
+            },
+            {
+              "text": "L'ufficio postale è chiuso a quest'ora credo.",
+              "isCorrect": false,
+              "feedback": "The host suggested it, so it's likely relevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, è un edificio giallo. Non può sbagliare.",
+          "english": "Yes, it's a yellow building. You can't miss it.",
+          "choices": [
+            {
+              "text": "Un edificio giallo, ho capito. Grazie per il dettaglio.",
+              "isCorrect": true,
+              "feedback": "Noting colors is very helpful for identifying buildings."
+            },
+            {
+              "text": "Non mi piace il colore giallo, preferisco il blu.",
+              "isCorrect": false,
+              "feedback": "The color is just to help you find it!"
+            },
+            {
+              "text": "Tutti gli edifici in Italia sono gialli o arancioni.",
+              "isCorrect": false,
+              "feedback": "A generalization that doesn't help you find the office."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Di nulla. Ha bisogno di sapere gli orari di apertura?",
+          "english": "Not at all. Do you need to know the opening hours?",
+          "choices": [
+            {
+              "text": "Sì, per favore. A che ora chiude l'ufficio?",
+              "isCorrect": true,
+              "feedback": "Good. Knowing the hours prevents a wasted trip."
+            },
+            {
+              "text": "No, non mi servono gli orari perché vado domani.",
+              "isCorrect": false,
+              "feedback": "It's better to know now."
+            },
+            {
+              "text": "Gli uffici postali sono sempre molto lenti qui.",
+              "isCorrect": false,
+              "feedback": "Keep the conversation polite."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Chiude alle sette di sera. Ha ancora molto tempo.",
+          "english": "It closes at seven in the evening. You still have plenty of time.",
+          "choices": [
+            {
+              "text": "Bene, allora vado prima alla fontana e poi lì.",
+              "isCorrect": true,
+              "feedback": "Planning your route is a great idea."
+            },
+            {
+              "text": "Sette di sera è troppo tardi per me, vado a letto.",
+              "isCorrect": false,
+              "feedback": "You're a tourist! Enjoy the city."
+            },
+            {
+              "text": "Voglio mangiare una pizza alle sette di sera.",
+              "isCorrect": false,
+              "feedback": "Stay on topic: the post office and fountain."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottima idea. Si goda la visita alla città. Buona serata!",
+          "english": "Great idea. Enjoy your visit to the city. Good evening!",
+          "choices": [
+            {
+              "text": "Grazie di tutto, lei è stato molto gentile. Buona serata!",
+              "isCorrect": true,
+              "feedback": "Polite and complete closing."
+            },
+            {
+              "text": "Prego, spero che lei trovi la sua strada pure.",
+              "isCorrect": false,
+              "feedback": "The host is not lost!"
+            },
+            {
+              "text": "Ciao, vado subito a fare molte foto alla fontana.",
+              "isCorrect": false,
+              "feedback": "Too informal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding_hotel",
+      "title": "Finding Your Hotel",
+      "description": "Ask for directions back to your hotel when you can't find it.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera! Posso aiutarla? Sembra che stia cercando un indirizzo.",
+          "english": "Good evening! Can I help you? It looks like you are looking for an address.",
+          "choices": [
+            {
+              "text": "Sì, cerco l'Hotel Roma. Mi sono perso di nuovo.",
+              "isCorrect": true,
+              "feedback": "Direct and clear. Mentioning the hotel name is essential."
+            },
+            {
+              "text": "Cerco un posto per mangiare una buona cena qui.",
+              "isCorrect": false,
+              "feedback": "You are lost! Find your hotel first."
+            },
+            {
+              "text": "Sto cercando la mia borsa nera che ho perso ora.",
+              "isCorrect": false,
+              "feedback": "That's a different kind of 'lost'!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "L'Hotel Roma? È in Via Nazionale. Sa dove si trova?",
+          "english": "Hotel Roma? It's in Via Nazionale. Do you know where that is?",
+          "choices": [
+            {
+              "text": "No, purtroppo non lo so. È molto lontano da qui?",
+              "isCorrect": true,
+              "feedback": "Asking for distance is a smart move when lost."
+            },
+            {
+              "text": "Sì, so dove si trova ma voglio andare al bar.",
+              "isCorrect": false,
+              "feedback": "Contradictory and confusing."
+            },
+            {
+              "text": "Via Nazionale è una via molto lunga e rumorosa.",
+              "isCorrect": false,
+              "feedback": "True, but doesn't help you find it."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "No, è a circa dieci minuti a piedi. Deve andare dritto.",
+          "english": "No, it's about ten minutes away on foot. You need to go straight.",
+          "choices": [
+            {
+              "text": "Dieci minuti dritto? Grazie, ora sono più tranquillo.",
+              "isCorrect": true,
+              "feedback": "Expressing relief and confirming the time/direction."
+            },
+            {
+              "text": "Preferisco prendere l'autobus perché sono stanco.",
+              "isCorrect": false,
+              "feedback": "It's only ten minutes! Walking is easier."
+            },
+            {
+              "text": "Vado dritto e poi giro subito a sinistra al bar.",
+              "isCorrect": false,
+              "feedback": "The host didn't say to turn yet!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Si figuri. Passi davanti alla stazione e continui dritto.",
+          "english": "Don't mention it. Pass in front of the station and keep going straight.",
+          "choices": [
+            {
+              "text": "Davanti alla stazione e poi dritto. Ho capito.",
+              "isCorrect": true,
+              "feedback": "Good use of a landmark (station) to guide your way."
+            },
+            {
+              "text": "Entro nella stazione per comprare un giornale.",
+              "isCorrect": false,
+              "feedback": "Don't get distracted! Go to your hotel."
+            },
+            {
+              "text": "La stazione è molto grande e ci sono molti treni.",
+              "isCorrect": false,
+              "feedback": "Observation doesn't help with directions."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Esatto. Troverà l'hotel sulla sua sinistra. Buona serata!",
+          "english": "Exactly. You will find the hotel on your left. Good evening!",
+          "choices": [
+            {
+              "text": "Grazie! C'è un ristorante buono vicino all'hotel?",
+              "isCorrect": true,
+              "feedback": "Good. Looking for food near your accommodation is practical."
+            },
+            {
+              "text": "Prego, spero che l'hotel sia aperto e pronto.",
+              "isCorrect": false,
+              "feedback": "You are the one receiving help!"
+            },
+            {
+              "text": "Arrivederci, vado subito a fare una doccia calda.",
+              "isCorrect": false,
+              "feedback": "Too much personal detail."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Certamente. C'è una trattoria tipica proprio accanto all'hotel.",
+          "english": "Certainly. There is a typical trattoria right next to the hotel.",
+          "choices": [
+            {
+              "text": "Una trattoria tipica? Mi piace l'idea. Come si chiama?",
+              "isCorrect": true,
+              "feedback": "Asking for the name helps you identify it."
+            },
+            {
+              "text": "Non voglio cibo tipico, cerco un fast food.",
+              "isCorrect": false,
+              "feedback": "Try the local food! It's better."
+            },
+            {
+              "text": "Il cibo italiano è troppo pesante per me la sera.",
+              "isCorrect": false,
+              "feedback": "A bit negative."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Si chiama 'Da Mario'. Fanno un'ottima pasta alla carbonara.",
+          "english": "It's called 'Da Mario'. They make excellent pasta alla carbonara.",
+          "choices": [
+            {
+              "text": "La carbonara è il mio piatto preferito! È costoso?",
+              "isCorrect": true,
+              "feedback": "Asking about prices is sensible."
+            },
+            {
+              "text": "Mario è un nome molto comune in Italia, vero?",
+              "isCorrect": false,
+              "feedback": "Focus on the restaurant, not the name's popularity."
+            },
+            {
+              "text": "Non mangio uova, quindi non posso mangiare la carbonara.",
+              "isCorrect": false,
+              "feedback": "They probably have other dishes too."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "No, i prezzi sono onesti. È un posto per famiglie e turisti.",
+          "english": "No, the prices are fair. It's a place for families and tourists.",
+          "choices": [
+            {
+              "text": "Perfetto, allora cenerò lì stasera dopo la doccia.",
+              "isCorrect": true,
+              "feedback": "Confirming your plans based on the recommendation."
+            },
+            {
+              "text": "I turisti mangiano sempre male nei posti economici.",
+              "isCorrect": false,
+              "feedback": "Don't be cynical."
+            },
+            {
+              "text": "Ho molta paura di spendere troppi soldi a Roma.",
+              "isCorrect": false,
+              "feedback": "The host said the prices are fair."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottima scelta. Via Nazionale è molto sicura di sera.",
+          "english": "Great choice. Via Nazionale is very safe in the evening.",
+          "choices": [
+            {
+              "text": "Questo mi rassicura molto. Grazie per tutte le informazioni.",
+              "isCorrect": true,
+              "feedback": "Safety is always a concern when you're lost or in a new city."
+            },
+            {
+              "text": "Ho paura del buio anche se la via è sicura.",
+              "isCorrect": false,
+              "feedback": "Try to stay positive."
+            },
+            {
+              "text": "Ci sono molti poliziotti in quella via?",
+              "isCorrect": false,
+              "feedback": "A bit paranoid."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla! Si riposi bene in hotel. Buona serata!",
+          "english": "You're welcome! Rest well at the hotel. Good evening!",
+          "choices": [
+            {
+              "text": "Grazie mille, buona serata anche a lei! Arrivederci.",
+              "isCorrect": true,
+              "feedback": "A standard and polite farewell."
+            },
+            {
+              "text": "Prego, spero che il letto sia comodo e morbido.",
+              "isCorrect": false,
+              "feedback": "You are the one receiving the wish!"
+            },
+            {
+              "text": "Ciao, vado a mangiare subito tutta la pasta.",
+              "isCorrect": false,
+              "feedback": "Too informal and a bit exaggerated."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_map",
+      "title": "Reading Maps",
+      "description": "Ask for a physical map or directions to the tourist office.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarla? Sembra che stia cercando una via.",
+          "english": "Good morning! Can I help you? It looks like you are looking for a street.",
+          "choices": [
+            {
+              "text": "Sì, cerco l'ufficio informazioni. Ho bisogno di una mappa.",
+              "isCorrect": true,
+              "feedback": "Excellent. Getting a map is the best way to stop being lost."
+            },
+            {
+              "text": "No, sto solo guardando le vetrine di questi negozi.",
+              "isCorrect": false,
+              "feedback": "But you are lost! Ask for the map."
+            },
+            {
+              "text": "Cerco un bagno perché ho bevuto troppa acqua ora.",
+              "isCorrect": false,
+              "feedback": "Not the priority when you are lost in the city."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "L'ufficio turistico è proprio dietro l'angolo. Lo vede?",
+          "english": "The tourist office is just around the corner. Do you see it?",
+          "choices": [
+            {
+              "text": "Sì, vedo il cartello. È molto vicino, grazie mille.",
+              "isCorrect": true,
+              "feedback": "Identifying the sign is key to finding the office."
+            },
+            {
+              "text": "No, non vedo niente perché non porto gli occhiali.",
+              "isCorrect": false,
+              "feedback": "Try to look for the big 'i' sign!"
+            },
+            {
+              "text": "L'ufficio è chiuso oggi perché è domenica pomeriggio.",
+              "isCorrect": false,
+              "feedback": "The host said it's right there, imply it's open."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Lì danno mappe gratuite della città. È molto utile.",
+          "english": "They give free city maps there. It's very useful.",
+          "choices": [
+            {
+              "text": "Ottimo! Una mappa gratuita è proprio quello che cerco.",
+              "isCorrect": true,
+              "feedback": "Positive reinforcement of the helpful information."
+            },
+            {
+              "text": "Non voglio una mappa perché preferisco usare il telefono.",
+              "isCorrect": false,
+              "feedback": "But your phone might run out of battery! Maps are safe."
+            },
+            {
+              "text": "Le mappe sono difficili da leggere e molto grandi.",
+              "isCorrect": false,
+              "feedback": "A map is better than being lost."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, così non si perderà più. Buona passeggiata!",
+          "english": "Yes, so you won't get lost anymore. Have a nice walk!",
+          "choices": [
+            {
+              "text": "Grazie! Ora vado a prendere la mappa e poi giro.",
+              "isCorrect": true,
+              "feedback": "Closing the loop on your plan."
+            },
+            {
+              "text": "Prego, le auguro una buona giornata di lavoro qui.",
+              "isCorrect": false,
+              "feedback": "You are the one receiving help!"
+            },
+            {
+              "text": "Ciao, spero che non piova oggi perché non ho l'ombrello.",
+              "isCorrect": false,
+              "feedback": "Irrelevant weather comment."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Si figuri. Se ha bisogno di altro, chieda pure. Arrivederci!",
+          "english": "Don't mention it. If you need anything else, just ask. Goodbye!",
+          "choices": [
+            {
+              "text": "Grazie ancora. Vendono anche biglietti per l'autobus lì?",
+              "isCorrect": true,
+              "feedback": "Good. Tourist offices often sell transport tickets."
+            },
+            {
+              "text": "Sì, ho bisogno di soldi perché ho perso il portafoglio.",
+              "isCorrect": false,
+              "feedback": "That's a much bigger problem for the police!"
+            },
+            {
+              "text": "Arrivederci, vado a comprare una cartolina per mia madre.",
+              "isCorrect": false,
+              "feedback": "A bit random as a closing."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, vendono biglietti singoli e abbonamenti turistici.",
+          "english": "Yes, they sell single tickets and tourist passes.",
+          "choices": [
+            {
+              "text": "Un abbonamento turistico sembra utile. Quanto costa?",
+              "isCorrect": true,
+              "feedback": "Asking for prices of passes is a good travel tip."
+            },
+            {
+              "text": "Non mi piacciono gli autobus perché sono sempre pieni.",
+              "isCorrect": false,
+              "feedback": "The host is giving you useful info, stay positive."
+            },
+            {
+              "text": "Voglio guidare una Ferrari rossa per la città.",
+              "isCorrect": false,
+              "feedback": "Unrealistic and off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Costa circa venti euro per tre giorni. Può usare tutti i mezzi.",
+          "english": "It costs about twenty euros for three days. You can use all transport.",
+          "choices": [
+            {
+              "text": "Venti euro per tre giorni? È molto conveniente.",
+              "isCorrect": true,
+              "feedback": "Recognizing value is part of smart traveling."
+            },
+            {
+              "text": "Venti euro sono troppi, preferisco camminare gratis.",
+              "isCorrect": false,
+              "feedback": "It depends on how much you want to see!"
+            },
+            {
+              "text": "Posso usare anche l'aereo con questo biglietto?",
+              "isCorrect": false,
+              "feedback": "No, it's for city transport only."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Esatto. Può prendere autobus, tram e la metropolitana.",
+          "english": "Exactly. You can take buses, trams, and the subway.",
+          "choices": [
+            {
+              "text": "Ottimo, la metropolitana è molto veloce a Roma.",
+              "isCorrect": true,
+              "feedback": "Good observation about the subway."
+            },
+            {
+              "text": "Il tram è troppo lento e rumoroso per i miei gusti.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the benefits."
+            },
+            {
+              "text": "Voglio vedere la stazione della metropolitana 'A'.",
+              "isCorrect": false,
+              "feedback": "Specific but doesn't lead to getting the pass."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, è vero. L'ufficio turistico la aiuterà con tutto.",
+          "english": "Yes, that's true. The tourist office will help you with everything.",
+          "choices": [
+            {
+              "text": "Grazie, vado subito a parlare con loro allora.",
+              "isCorrect": true,
+              "feedback": "Taking action based on good advice."
+            },
+            {
+              "text": "Forse vado domani perché ora sono troppo stanco.",
+              "isCorrect": false,
+              "feedback": "The office is right there!"
+            },
+            {
+              "text": "Loro parlano inglese o solo italiano?",
+              "isCorrect": false,
+              "feedback": "Most tourist offices speak English, but you should try your Italian!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego! Vedrà che la mappa sarà molto utile. Arrivederci!",
+          "english": "You're welcome! You'll see that the map will be very useful. Goodbye!",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie ancora per la sua pazienza!",
+              "isCorrect": true,
+              "feedback": "A very polite way to end the conversation."
+            },
+            {
+              "text": "Prego, spero che lei trovi una mappa pure.",
+              "isCorrect": false,
+              "feedback": "The host is not the one who needs the map!"
+            },
+            {
+              "text": "Ciao, vado a prendere la mappa e poi vado al bar.",
+              "isCorrect": false,
+              "feedback": "Too informal."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

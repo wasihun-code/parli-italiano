@@ -1,0 +1,993 @@
+{
+  "scenarioId": 102,
+  "conversations": [
+    {
+      "id": "finding_pharmacy",
+      "title": "Finding a Pharmacy",
+      "description": "Use the app to find and navigate to the nearest pharmacy.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Hai aperto l'app delle mappe? Dove sei adesso?",
+          "english": "Hi! Have you opened the map app? Where are you now?",
+          "choices": [
+            {
+              "text": "Sì, l'ho aperta. Sono in via Roma, davanti al bar.",
+              "isCorrect": true,
+              "feedback": "Perfect! Stating your location helps start the navigation.",
+              "english": "Yes, I opened it. I am in via Roma, in front of the bar."
+            },
+            {
+              "text": "Dove sono le chiavi? Non riesco a trovarle.",
+              "isCorrect": false,
+              "feedback": "Wrong scenario! We are using a map app, not checking in."
+            },
+            {
+              "text": "Ho molta fame, voglio mangiare una pizza subito.",
+              "isCorrect": false,
+              "feedback": "Focus on the navigation task first!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottimo. Devi trovare la farmacia più vicina. È in via Verdi.",
+          "english": "Great. You need to find the nearest pharmacy. It's on via Verdi.",
+          "choices": [
+            {
+              "text": "Va bene, cerco \"farmacia\" sulla mappa. Vediamo.",
+              "isCorrect": true,
+              "feedback": "Exactly. Searching for the keyword is the right step.",
+              "english": "Alright, I'll search for \"pharmacy\" on the map. Let's see."
+            },
+            {
+              "text": "Cerco un hotel su internet per dormire stasera.",
+              "isCorrect": false,
+              "feedback": "You need a pharmacy, not an hotel!"
+            },
+            {
+              "text": "Guardo il meteo per vedere se domani piove.",
+              "isCorrect": false,
+              "feedback": "Not the time for weather checks!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "La vedi? Il percorso è evidenziato in blu sullo schermo.",
+          "english": "Do you see it? The route is highlighted in blue on the screen.",
+          "choices": [
+            {
+              "text": "Sì, la vedo. Devo andare dritto per trecento metri.",
+              "isCorrect": true,
+              "feedback": "Good. Reading the distance and direction correctly.",
+              "english": "Yes, I see it. I have to go straight for three hundred meters."
+            },
+            {
+              "text": "No, non vedo il mare. Forse siamo troppo lontani.",
+              "isCorrect": false,
+              "feedback": "The map isn't showing the sea, but the pharmacy!"
+            },
+            {
+              "text": "Il bus arriva tra dieci minuti alla fermata.",
+              "isCorrect": false,
+              "feedback": "You are walking, not waiting for a bus!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto. Poi gira a destra all'incrocio tra via Verdi e via Rossi.",
+          "english": "Exactly. Then turn right at the intersection between via Verdi and via Rossi.",
+          "choices": [
+            {
+              "text": "Gira a destra dopo trecento metri. Ricevuto, vado.",
+              "isCorrect": true,
+              "feedback": "Repeating instructions confirms understanding.",
+              "english": "Turn right after three hundred meters. Received, I'm going."
+            },
+            {
+              "text": "Gira a sinistra ora e corri molto veloce.",
+              "isCorrect": false,
+              "feedback": "The host said right, not left!"
+            },
+            {
+              "text": "Mi fermo qui a dormire perché sono stanco.",
+              "isCorrect": false,
+              "feedback": "Don't give up now, you are almost there!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Dovresti arrivare tra due minuti. Fammi sapere se la trovi!",
+          "english": "Perfect. You should arrive in two minutes. Let me know if you find it!",
+          "choices": [
+            {
+              "text": "Sì, sono quasi arrivato. Ti scrivo tra poco. Grazie!",
+              "isCorrect": true,
+              "feedback": "Polite and clear conclusion to the navigation.",
+              "english": "Yes, I'm almost there. I'll write to you shortly. Thanks!"
+            },
+            {
+              "text": "Sono perso in aeroporto e non trovo il gate.",
+              "isCorrect": false,
+              "feedback": "You are in the city center, not at the airport!"
+            },
+            {
+              "text": "La batteria è al cento per cento adesso.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information for this moment."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sei arrivato? C'è la croce verde illuminata fuori?",
+          "english": "Are you there? Is there the illuminated green cross outside?",
+          "choices": [
+            {
+              "text": "Sì, vedo la croce verde. Entro subito.",
+              "isCorrect": true,
+              "feedback": "Great confirmation of arrival.",
+              "english": "Yes, I see the green cross. I'm going in right now."
+            },
+            {
+              "text": "No, vedo solo un panificio molto grande.",
+              "isCorrect": false,
+              "feedback": "You missed the pharmacy!"
+            },
+            {
+              "text": "C'è un semaforo verde, va bene uguale?",
+              "isCorrect": false,
+              "feedback": "You need the pharmacy cross, not a traffic light."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Benissimo. Cerca anche un bancomat lì vicino sulla mappa?",
+          "english": "Great. Can you also look for an ATM nearby on the map?",
+          "choices": [
+            {
+              "text": "Controllo l'app. C'è un bancomat a cinquanta metri.",
+              "isCorrect": true,
+              "feedback": "Using the map to find nearby services is smart.",
+              "english": "I'll check the app. There's an ATM fifty meters away."
+            },
+            {
+              "text": "Non ho la carta di credito con me oggi.",
+              "isCorrect": false,
+              "feedback": "The host asked to find an ATM on the map."
+            },
+            {
+              "text": "Voglio pagare in contanti, non mi serve.",
+              "isCorrect": false,
+              "feedback": "But you might need cash from the ATM!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Ricorda di chiudere la navigazione per non consumare batteria.",
+          "english": "Excellent. Remember to close the navigation to not drain the battery.",
+          "choices": [
+            {
+              "text": "Hai ragione, ho chiuso l'app. La batteria ringrazia!",
+              "isCorrect": true,
+              "feedback": "Good habit to close background apps.",
+              "english": "You're right, I closed the app. The battery thanks you!"
+            },
+            {
+              "text": "Lascio lo schermo acceso per tutta la notte.",
+              "isCorrect": false,
+              "feedback": "That will drain the battery completely."
+            },
+            {
+              "text": "Ho già caricato il telefono ieri mattina.",
+              "isCorrect": false,
+              "feedback": "Navigation uses a lot of battery, it's better to close it."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Hai comprato quello che ti serviva in farmacia?",
+          "english": "Perfect. Did you buy what you needed at the pharmacy?",
+          "choices": [
+            {
+              "text": "Sì, ho preso le medicine. Ora esco.",
+              "isCorrect": true,
+              "feedback": "Mission accomplished at the pharmacy.",
+              "english": "Yes, I got the medicines. I'm leaving now."
+            },
+            {
+              "text": "Ho comprato un litro di latte fresco da bere.",
+              "isCorrect": false,
+              "feedback": "You don't buy milk at the pharmacy!"
+            },
+            {
+              "text": "Non c'erano vestiti della mia taglia purtroppo.",
+              "isCorrect": false,
+              "feedback": "Pharmacies don't sell clothes."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Molto bene. Usa di nuovo la mappa per tornare in hotel.",
+          "english": "Very well. Use the map again to return to the hotel.",
+          "choices": [
+            {
+              "text": "Imposto l'hotel come destinazione. A tra poco!",
+              "isCorrect": true,
+              "feedback": "Setting the return destination correctly.",
+              "english": "I'm setting the hotel as destination. See you shortly!"
+            },
+            {
+              "text": "Non voglio tornare in hotel, vado a ballare.",
+              "isCorrect": false,
+              "feedback": "The scenario requires returning to the hotel."
+            },
+            {
+              "text": "Il navigatore dice di andare in spiaggia a nuotare.",
+              "isCorrect": false,
+              "feedback": "That's definitely not the hotel!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "public_transport",
+      "title": "Taking the Bus",
+      "description": "Check public transport options to reach a museum.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Vuoi andare al museo? Ti consiglio di prendere l'autobus.",
+          "english": "Do you want to go to the museum? I suggest you take the bus.",
+          "choices": [
+            {
+              "text": "Buona idea. Quale linea devo prendere per andare lì?",
+              "isCorrect": true,
+              "feedback": "Asking for the specific line is essential for public transport.",
+              "english": "Good idea. Which line should I take to go there?"
+            },
+            {
+              "text": "Che ore sono? Ho dimenticato l'orologio a casa.",
+              "isCorrect": false,
+              "feedback": "The app will show you the time, but focus on the bus!"
+            },
+            {
+              "text": "Voglio comprare un gelato al cioccolato ora.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the museum trip!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Guarda sulla mappa. Ti suggerisce la linea 12 o la metro.",
+          "english": "Look at the map. It suggests line 12 or the metro.",
+          "choices": [
+            {
+              "text": "Controllo subito. La linea 12 parte tra cinque minuti.",
+              "isCorrect": true,
+              "feedback": "Good. Checking the real-time departure.",
+              "english": "I'll check right away. Line 12 leaves in five minutes."
+            },
+            {
+              "text": "La metro è chiusa per lavori oggi pomeriggio.",
+              "isCorrect": false,
+              "feedback": "You don't know that yet, check the app first!"
+            },
+            {
+              "text": "Prendo un taxi perché piove tantissimo.",
+              "isCorrect": false,
+              "feedback": "The host suggested the bus or metro."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "La fermata è proprio dietro l'angolo. Corri, sta arrivando!",
+          "english": "The stop is just around the corner. Run, it's coming!",
+          "choices": [
+            {
+              "text": "Sto correndo. Vedo la fermata dell'autobus e il bus.",
+              "isCorrect": true,
+              "feedback": "Good job! You are on time.",
+              "english": "I'm running. I see the bus stop and the bus."
+            },
+            {
+              "text": "Vado in bicicletta perché mi piace lo sport.",
+              "isCorrect": false,
+              "feedback": "The bus is already here!"
+            },
+            {
+              "text": "Cerco una panchina per sedermi un momento.",
+              "isCorrect": false,
+              "feedback": "No time to sit, the bus is arriving!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. Sulla mappa vedi quante fermate mancano al museo?",
+          "english": "Great. On the map, do you see how many stops are left until the museum?",
+          "choices": [
+            {
+              "text": "Sì, dice che mancano quattro fermate. Siamo vicini.",
+              "isCorrect": true,
+              "feedback": "Tracking progress on the map is very useful.",
+              "english": "Yes, it says four stops left. We are close."
+            },
+            {
+              "text": "No, il biglietto costa due euro e cinquanta.",
+              "isCorrect": false,
+              "feedback": "The host asked about stops, not the price!"
+            },
+            {
+              "text": "Il museo è chiuso il lunedì mattina.",
+              "isCorrect": false,
+              "feedback": "Check the map for the number of stops first!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Scendi a \"Piazza Navona\". Il museo è proprio lì vicino.",
+          "english": "Get off at \"Piazza Navona\". The museum is right nearby.",
+          "choices": [
+            {
+              "text": "Piazza Navona, capito. Ti chiamo quando arrivo lì.",
+              "isCorrect": true,
+              "feedback": "Correct. Confirming the stop name.",
+              "english": "Piazza Navona, understood. I'll call you when I arrive there."
+            },
+            {
+              "text": "Vado al ristorante a mangiare la pasta.",
+              "isCorrect": false,
+              "feedback": "You are going to the museum!"
+            },
+            {
+              "text": "Il mio telefono è rotto, non vedo niente.",
+              "isCorrect": false,
+              "feedback": "You were just looking at the map!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sei sull'autobus? Quante fermate mancano adesso?",
+          "english": "Are you on the bus? How many stops are left now?",
+          "choices": [
+            {
+              "text": "Sì, sono sull'autobus. Mancano due fermate.",
+              "isCorrect": true,
+              "feedback": "Checking the progress on the bus.",
+              "english": "Yes, I'm on the bus. Two stops left."
+            },
+            {
+              "text": "Sono in treno per Milano per il fine settimana.",
+              "isCorrect": false,
+              "feedback": "You should be on the bus to the museum!"
+            },
+            {
+              "text": "Non voglio scendere, mi piace stare sull'autobus.",
+              "isCorrect": false,
+              "feedback": "You have to get off at the museum!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Preparati a scendere. Suona il campanello prima della fermata.",
+          "english": "Get ready to get off. Ring the bell before the stop.",
+          "choices": [
+            {
+              "text": "Ho suonato il campanello. Vado verso la porta.",
+              "isCorrect": true,
+              "feedback": "Correct action before getting off a bus.",
+              "english": "I rang the bell. I'm going towards the door."
+            },
+            {
+              "text": "Ho suonato la chitarra per i passeggeri del bus.",
+              "isCorrect": false,
+              "feedback": "Wrong kind of bell or ringing!"
+            },
+            {
+              "text": "Dormo fino alla fine della corsa tranquillamente.",
+              "isCorrect": false,
+              "feedback": "Wake up, you'll miss your stop!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sei sceso? Guarda la mappa per trovare l'ingresso del museo.",
+          "english": "Did you get off? Look at the map to find the museum entrance.",
+          "choices": [
+            {
+              "text": "Sì, sono in piazza. L'app dice di andare a sinistra.",
+              "isCorrect": true,
+              "feedback": "Following directions after leaving the bus.",
+              "english": "Yes, I'm in the square. The app says to go left."
+            },
+            {
+              "text": "Ho perso la mappa e anche le mie scarpe nuove.",
+              "isCorrect": false,
+              "feedback": "How did you manage to do that?"
+            },
+            {
+              "text": "Il museo è nascosto dentro l'autobus rosso.",
+              "isCorrect": false,
+              "feedback": "Museums are not inside buses."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Vedi l'ingresso principale? Ci dovrebbe essere un po' di coda.",
+          "english": "Do you see the main entrance? There should be a bit of a line.",
+          "choices": [
+            {
+              "text": "Sì, vedo la coda e l'ingresso. Vado lì.",
+              "isCorrect": true,
+              "feedback": "Identifying the destination.",
+              "english": "Yes, I see the queue and the entrance. I'm going there."
+            },
+            {
+              "text": "Vedo un cane che mangia un osso gigante.",
+              "isCorrect": false,
+              "feedback": "Look for the entrance, not the dog."
+            },
+            {
+              "text": "L'ingresso è nascosto sotto terra al buio.",
+              "isCorrect": false,
+              "feedback": "It's a regular museum, not a bunker!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Il tuo biglietto digitale è nell'app, vero?",
+          "english": "Perfect. Your digital ticket is in the app, right?",
+          "choices": [
+            {
+              "text": "Sì, ho il codice a barre sul telefono. Pronto per entrare!",
+              "isCorrect": true,
+              "feedback": "Ready to enter using the digital ticket.",
+              "english": "Yes, I have the barcode on the phone. Ready to enter!"
+            },
+            {
+              "text": "Ho dimenticato il biglietto in albergo sul letto.",
+              "isCorrect": false,
+              "feedback": "But you just said it's digital!"
+            },
+            {
+              "text": "Uso la patente di guida per entrare al museo.",
+              "isCorrect": false,
+              "feedback": "A driver's license is not a museum ticket."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gps_problems",
+      "title": "GPS Signal Issues",
+      "description": "Fix navigation when the GPS signal is weak.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Tutto bene? La tua posizione sulla mappa non si muove.",
+          "english": "Is everything okay? Your position on the map isn't moving.",
+          "choices": [
+            {
+              "text": "No, il segnale GPS è debole. Non so dove sono.",
+              "isCorrect": true,
+              "feedback": "Identifying the technical issue is the first step.",
+              "english": "No, the GPS signal is weak. I don't know where I am."
+            },
+            {
+              "text": "Sì, sto ballando in mezzo alla strada.",
+              "isCorrect": false,
+              "feedback": "Be serious, you are lost!"
+            },
+            {
+              "text": "Il caffè è molto buono in questo bar.",
+              "isCorrect": false,
+              "feedback": "Don't get distracted by coffee!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Forse sei tra palazzi alti. Prova a camminare verso la piazza.",
+          "english": "Maybe you're between tall buildings. Try walking towards the square.",
+          "choices": [
+            {
+              "text": "Va bene, provo a spostarmi. Lo schermo è bloccato.",
+              "isCorrect": true,
+              "feedback": "Reporting that the screen is frozen helps diagnose the problem.",
+              "english": "Alright, I'll try to move. The screen is frozen."
+            },
+            {
+              "text": "Mi piace molto l'architettura di questi palazzi.",
+              "isCorrect": false,
+              "feedback": "Focus on getting a signal!"
+            },
+            {
+              "text": "Compro un giornale all'edicola qui vicino.",
+              "isCorrect": false,
+              "feedback": "Keep moving to find a better signal!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Riavvia l'app. A volte aiuta a ritrovare la posizione corretta.",
+          "english": "Restart the app. Sometimes it helps to find the correct position.",
+          "choices": [
+            {
+              "text": "Sto riavviando l'app... ecco, ora il segnale è tornato!",
+              "isCorrect": true,
+              "feedback": "Great. The classic 'restart' solution worked.",
+              "english": "I'm restarting the app... there, now the signal is back!"
+            },
+            {
+              "text": "Ho spento il telefono e ora vado a casa.",
+              "isCorrect": false,
+              "feedback": "Don't give up! Just restart the app."
+            },
+            {
+              "text": "Chiamo un taxi perché non voglio più camminare.",
+              "isCorrect": false,
+              "feedback": "Wait, the signal might come back!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Meno male. Ora vedi il percorso corretto sulla mappa?",
+          "english": "Thank goodness. Do you see the correct route on the map now?",
+          "choices": [
+            {
+              "text": "Sì, ora vedo la freccia blu. Devo tornare indietro.",
+              "isCorrect": true,
+              "feedback": "Good job following the map's indicators.",
+              "english": "Yes, now I see the blue arrow. I have to go back."
+            },
+            {
+              "text": "No, vedo solo una foto del mio gatto.",
+              "isCorrect": false,
+              "feedback": "You opened the gallery, not the map app!"
+            },
+            {
+              "text": "Vedo un cane che corre nel parco vicino.",
+              "isCorrect": false,
+              "feedback": "Look at the screen, not around you yet!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Segui le indicazioni vocali, così non devi guardare sempre lo schermo.",
+          "english": "Follow the voice directions, so you don't have to look at the screen all the time.",
+          "choices": [
+            {
+              "text": "Ottimo consiglio, alzo il volume. Ci vediamo dopo!",
+              "isCorrect": true,
+              "feedback": "Using audio cues is safer and easier while walking.",
+              "english": "Great advice, I'll turn up the volume. See you later!"
+            },
+            {
+              "text": "Metto le cuffie per ascoltare della musica rock.",
+              "isCorrect": false,
+              "feedback": "Listen to the directions, not music!"
+            },
+            {
+              "text": "Il volume è troppo alto, mi fa male la testa.",
+              "isCorrect": false,
+              "feedback": "You can lower it slightly, but keep listening!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Senti la voce guida? Cosa dice di fare adesso?",
+          "english": "Do you hear the voice guide? What does it say to do now?",
+          "choices": [
+            {
+              "text": "Dice di continuare dritto per duecento metri.",
+              "isCorrect": true,
+              "feedback": "Following audio navigation successfully.",
+              "english": "It says to continue straight for two hundred meters."
+            },
+            {
+              "text": "Dice di cantare una canzone a voce molto alta.",
+              "isCorrect": false,
+              "feedback": "Navigation apps don't ask you to sing."
+            },
+            {
+              "text": "Non parla italiano, parla solo giapponese antico.",
+              "isCorrect": false,
+              "feedback": "The app should be set to a language you understand."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Bene. Attento a non perdere il segnale di nuovo nei vicoli stretti.",
+          "english": "Good. Be careful not to lose the signal again in the narrow alleys.",
+          "choices": [
+            {
+              "text": "Starò nelle strade principali per avere un buon segnale.",
+              "isCorrect": true,
+              "feedback": "Smart strategy to avoid losing GPS.",
+              "english": "I will stay on the main streets to have a good signal."
+            },
+            {
+              "text": "Vado proprio nel vicolo più buio della città.",
+              "isCorrect": false,
+              "feedback": "That's a bad idea for GPS signal."
+            },
+            {
+              "text": "Il segnale GPS si mangia a colazione con i biscotti.",
+              "isCorrect": false,
+              "feedback": "That doesn't make any sense."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "La voce ha detto di girare? L'incrocio è vicino.",
+          "english": "Did the voice say to turn? The intersection is close.",
+          "choices": [
+            {
+              "text": "Sì, ha detto di girare a sinistra al semaforo.",
+              "isCorrect": true,
+              "feedback": "Listening to specific turn instructions.",
+              "english": "Yes, it said to turn left at the traffic light."
+            },
+            {
+              "text": "Ha detto di comprare un panino al prosciutto cotto.",
+              "isCorrect": false,
+              "feedback": "Voice navigation doesn't give food advice."
+            },
+            {
+              "text": "Giro su me stesso per tre volte di fila.",
+              "isCorrect": false,
+              "feedback": "You are not playing a game, follow the map."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sei quasi arrivato a destinazione. Il segnale è stabile?",
+          "english": "You are almost at your destination. Is the signal stable?",
+          "choices": [
+            {
+              "text": "Il segnale è perfetto ora. Manca pochissimo.",
+              "isCorrect": true,
+              "feedback": "Confirming the technical issue is fully resolved.",
+              "english": "The signal is perfect now. Very little is left."
+            },
+            {
+              "text": "Il segnale è fuggito via lontano in montagna.",
+              "isCorrect": false,
+              "feedback": "Let's hope not!"
+            },
+            {
+              "text": "Sto ancora riavviando il telefono per estrema sicurezza.",
+              "isCorrect": false,
+              "feedback": "You already restarted it."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo. Arrivo riuscito nonostante i problemi tecnici!",
+          "english": "Excellent. Successful arrival despite the technical problems!",
+          "choices": [
+            {
+              "text": "Missione compiuta! Grazie per l'aiuto con la mappa.",
+              "isCorrect": true,
+              "feedback": "Polite sign-off after successfully arriving.",
+              "english": "Mission accomplished! Thanks for the help with the map."
+            },
+            {
+              "text": "Ho lanciato il telefono nel fiume per la rabbia.",
+              "isCorrect": false,
+              "feedback": "That's an overreaction!"
+            },
+            {
+              "text": "Mi sono perso per sempre in questa grande città.",
+              "isCorrect": false,
+              "feedback": "But you just said you almost arrived!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "offline_maps",
+      "title": "Saving Battery",
+      "description": "Use offline maps to navigate when the battery is low.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Attento, la tua batteria è quasi scarica! Hai un caricatore?",
+          "english": "Careful, your battery is almost dead! Do you have a charger?",
+          "choices": [
+            {
+              "text": "No, ho solo il dieci per cento. Devo sbrigarmi.",
+              "isCorrect": true,
+              "feedback": "Knowing your battery level is important for planning.",
+              "english": "No, I only have ten percent. I have to hurry."
+            },
+            {
+              "text": "Sì, ho una batteria enorme in tasca.",
+              "isCorrect": false,
+              "feedback": "Then why is the phone dying? Use it!"
+            },
+            {
+              "text": "Il caricatore è a casa dei miei genitori.",
+              "isCorrect": false,
+              "feedback": "Not very helpful right now!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Scarica la mappa per l'uso offline, così risparmi molta energia.",
+          "english": "Download the map for offline use, so you save a lot of energy.",
+          "choices": [
+            {
+              "text": "Giusto. Come si scarica la mappa della città?",
+              "isCorrect": true,
+              "feedback": "Asking for instructions is the best way to learn the feature.",
+              "english": "Right. How do you download the city map?"
+            },
+            {
+              "text": "Preferisco guardare dei video su YouTube ora.",
+              "isCorrect": false,
+              "feedback": "That will kill your battery even faster!"
+            },
+            {
+              "text": "Scarico un gioco nuovo perché mi annoio.",
+              "isCorrect": false,
+              "feedback": "Focus on the map to save battery!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Clicca sulle impostazioni e seleziona \"Mappe offline\".",
+          "english": "Click on settings and select \"Offline maps\".",
+          "choices": [
+            {
+              "text": "Fatto. Ora posso chiudere la connessione internet?",
+              "isCorrect": true,
+              "feedback": "Exactly. Turning off data saves power.",
+              "english": "Done. Can I close the internet connection now?"
+            },
+            {
+              "text": "Ho cliccato su \"Elimina tutto\" per sbaglio.",
+              "isCorrect": false,
+              "feedback": "Oh no! Be careful with the settings."
+            },
+            {
+              "text": "La connessione è troppo lenta per scaricare.",
+              "isCorrect": false,
+              "feedback": "Try to find a spot with better signal first."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, spegni i dati. La mappa funzionerà comunque bene.",
+          "english": "Yes, turn off the data. The map will still work well.",
+          "choices": [
+            {
+              "text": "Ottimo, ora la batteria durerà molto di più.",
+              "isCorrect": true,
+              "feedback": "Good understanding of how to manage phone resources.",
+              "english": "Great, now the battery will last much longer."
+            },
+            {
+              "text": "Il telefono si è spento improvvisamente, aiuto!",
+              "isCorrect": false,
+              "feedback": "Too late! You should have acted faster."
+            },
+            {
+              "text": "Non voglio spegnere internet, devo usare Instagram.",
+              "isCorrect": false,
+              "feedback": "Social media can wait until you find a charger!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Prosegui dritto verso il centro. Ci vediamo tra dieci minuti.",
+          "english": "Continue straight towards the center. See you in ten minutes.",
+          "choices": [
+            {
+              "text": "Arrivo subito. Speriamo che il telefono resti acceso!",
+              "isCorrect": true,
+              "feedback": "Good luck! You've done what you could to save power.",
+              "english": "I'm coming right away. Let's hope the phone stays on!"
+            },
+            {
+              "text": "Mi sono fermato a guardare le vetrine dei negozi.",
+              "isCorrect": false,
+              "feedback": "Hurry up before the battery dies!"
+            },
+            {
+              "text": "Vado nella direzione opposta perché mi piace il parco.",
+              "isCorrect": false,
+              "feedback": "The host is waiting for you in the center!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Manca molto? Controlla la distanza stimata sulla mappa offline.",
+          "english": "Is it much further? Check the estimated distance on the offline map.",
+          "choices": [
+            {
+              "text": "Dice che mancano cinquecento metri. Cammino veloce.",
+              "isCorrect": true,
+              "feedback": "Checking progress on the offline map.",
+              "english": "It says there are five hundred meters left. I'm walking fast."
+            },
+            {
+              "text": "Mancano cinquecento chilometri per arrivare lì.",
+              "isCorrect": false,
+              "feedback": "That's way too far to walk!"
+            },
+            {
+              "text": "Non c'è scritto nulla, la mappa è di carta vecchia.",
+              "isCorrect": false,
+              "feedback": "You are using a digital offline map."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Hai ancora il cinque per cento di batteria. Abbassa la luminosità dello schermo.",
+          "english": "You still have five percent battery. Lower the screen brightness.",
+          "choices": [
+            {
+              "text": "L'ho abbassata al minimo. Ottima idea per risparmiare.",
+              "isCorrect": true,
+              "feedback": "Lowering brightness is a great battery-saving tip.",
+              "english": "I lowered it to the minimum. Great idea to save it."
+            },
+            {
+              "text": "Ho messo la luminosità al massimo come il sole.",
+              "isCorrect": false,
+              "feedback": "That will drain the last 5% in seconds."
+            },
+            {
+              "text": "Ho rotto lo schermo così non consuma più niente.",
+              "isCorrect": false,
+              "feedback": "Well, that's one way to do it, but you can't use the phone now!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Bene. Se il telefono si spegne, chiedi a qualcuno dov'è la piazza principale.",
+          "english": "Good. If the phone turns off, ask someone where the main square is.",
+          "choices": [
+            {
+              "text": "Certo. Mi ricorderò il nome della piazza, per sicurezza.",
+              "isCorrect": true,
+              "feedback": "Good backup plan if the tech fails.",
+              "english": "Sure. I will remember the name of the square, just in case."
+            },
+            {
+              "text": "Non parlo con nessuno, ho paura degli sconosciuti.",
+              "isCorrect": false,
+              "feedback": "Sometimes you have to ask for directions."
+            },
+            {
+              "text": "Chiedo dove si compra una mucca in centro.",
+              "isCorrect": false,
+              "feedback": "Not very helpful for finding your way!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Vedo che sei quasi qui. La mappa offline è stata utile, vero?",
+          "english": "I see you are almost here. The offline map was useful, wasn't it?",
+          "choices": [
+            {
+              "text": "Molto utile! Senza la mappa offline sarei perso.",
+              "isCorrect": true,
+              "feedback": "Appreciating the feature.",
+              "english": "Very useful! Without the offline map I would be lost."
+            },
+            {
+              "text": "No, la mappa offline mi ha fatto cadere nel lago.",
+              "isCorrect": false,
+              "feedback": "The map doesn't control where you walk!"
+            },
+            {
+              "text": "Non ho usato la mappa, ho seguito le stelle nel cielo.",
+              "isCorrect": false,
+              "feedback": "Offline maps are more reliable in the city."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ti vedo! Ce l'hai fatta e il telefono è ancora acceso. Che fortuna!",
+          "english": "I see you! You made it and the phone is still on. How lucky!",
+          "choices": [
+            {
+              "text": "Sì, appena in tempo. Ora mi serve il caricatore!",
+              "isCorrect": true,
+              "feedback": "Successfully navigated with low battery.",
+              "english": "Yes, just in time. Now I need the charger!"
+            },
+            {
+              "text": "Ho un telefono magico che non si spegne assolutamente mai.",
+              "isCorrect": false,
+              "feedback": "Batteries don't work like that."
+            },
+            {
+              "text": "Non sono io, sono un ologramma venuto dal futuro.",
+              "isCorrect": false,
+              "feedback": "Okay, sci-fi time is over!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

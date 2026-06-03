@@ -1,0 +1,953 @@
+{
+  "scenarioId": 101,
+  "conversations": [
+    {
+      "id": "asking_for_outlet",
+      "title": "Asking for an Outlet",
+      "description": "Ask a waiter if there is a place to charge your phone in the cafe.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cosa desidera ordinare?",
+          "english": "Good morning! What would you like to order?",
+          "choices": [
+            {
+              "text": "Buongiorno, un caffè per favore. Mi scusi, c'è una presa libera?",
+              "isCorrect": true,
+              "feedback": "Great. You ordered and asked about the outlet politely."
+            },
+            {
+              "text": "Buongiorno, vorrei un cornetto. Dove posso comprare un telefono?",
+              "isCorrect": false,
+              "feedback": "You're asking where to buy a phone, not where to charge it."
+            },
+            {
+              "text": "Buongiorno, solo un tè. Mi sa dire dove sono i bagni pubblici?",
+              "isCorrect": false,
+              "feedback": "You're asking for the bathroom, not a power outlet."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Abbiamo delle prese vicino ai tavoli in fondo. Le va bene?",
+          "english": "Certainly. We have some outlets near the tables in the back. Is that okay for you?",
+          "choices": [
+            {
+              "text": "Sì, perfetto. Posso sedermi lì e caricare il telefono?",
+              "isCorrect": true,
+              "feedback": "Excellent. Confirming the location."
+            },
+            {
+              "text": "No, grazie. Posso avere invece un tavolo vicino alla porta?",
+              "isCorrect": false,
+              "feedback": "There might not be outlets near the door."
+            },
+            {
+              "text": "Sì, bene. Mi può portare anche il menù dei dolci, per favore?",
+              "isCorrect": false,
+              "feedback": "Irrelevant to your goal of charging the phone."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, certo. Vuole anche la password del Wi-Fi?",
+          "english": "Yes, of course. Do you also want the Wi-Fi password?",
+          "choices": [
+            {
+              "text": "Sì, grazie mille. È molto gentile da parte sua.",
+              "isCorrect": true,
+              "feedback": "Polite and accepts the helpful offer."
+            },
+            {
+              "text": "Sì, grazie. Quanto costa il Wi-Fi per un'ora?",
+              "isCorrect": false,
+              "feedback": "Usually Wi-Fi is free in cafes when you order something."
+            },
+            {
+              "text": "No, grazie. Ho già finito di usare il computer.",
+              "isCorrect": false,
+              "feedback": "But you wanted to charge your phone!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ecco il caffè e la password. Serve altro?",
+          "english": "Here is the coffee and the password. Do you need anything else?",
+          "choices": [
+            {
+              "text": "No, grazie. Sono a posto così per adesso.",
+              "isCorrect": true,
+              "feedback": "Standard way to say you're all set."
+            },
+            {
+              "text": "Sì, scusi. Mi serve anche un caricabatterie USB.",
+              "isCorrect": false,
+              "feedback": "Cafes don't usually provide chargers, only outlets."
+            },
+            {
+              "text": "Sì, vorrei un bicchiere di acqua naturale, grazie.",
+              "isCorrect": false,
+              "feedback": "Not related to your charging needs."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Prego. Se la presa non funziona, mi faccia sapere.",
+          "english": "You're welcome. If the outlet doesn't work, let me know.",
+          "choices": [
+            {
+              "text": "Grazie ancora. Spero che funzioni, ho la batteria al 5%.",
+              "isCorrect": true,
+              "feedback": "Good. You explain why it's urgent."
+            },
+            {
+              "text": "Grazie ancora. Mi piace molto questo bar, è tranquillo.",
+              "isCorrect": false,
+              "feedback": "Nice, but doesn't address the charging situation."
+            },
+            {
+              "text": "Grazie ancora. Dov'è la cassa per pagare il caffè?",
+              "isCorrect": false,
+              "feedback": "Too early to pay if you just sat down to charge."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ah, 5%! Allora è proprio urgente. È riuscito a collegarlo?",
+          "english": "Ah, 5%! Then it's really urgent. Did you manage to plug it in?",
+          "choices": [
+            {
+              "text": "Sì, ho appena inserito la spina. Sembra che carichi bene.",
+              "isCorrect": true,
+              "feedback": "Confirming the connection."
+            },
+            {
+              "text": "No, la mia batteria è nuova e dura molto tempo.",
+              "isCorrect": false,
+              "feedback": "Contradicts what you just said."
+            },
+            {
+              "text": "Sì, il caffè è ottimo. Lo bevo subito caldo.",
+              "isCorrect": false,
+              "feedback": "The host asked about the phone."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottimo. Di solito quelle prese sono molto veloci.",
+          "english": "Great. Usually those outlets are very fast.",
+          "choices": [
+            {
+              "text": "Meno male. Devo fare una telefonata importante tra poco.",
+              "isCorrect": true,
+              "feedback": "Explaining why you need a fast charge."
+            },
+            {
+              "text": "Non importa. Tanto ho molto tempo prima di andare.",
+              "isCorrect": false,
+              "feedback": "Waiters like to know if you'll be there a long time."
+            },
+            {
+              "text": "Sì, sono veloci. Anche il servizio qui è rapido.",
+              "isCorrect": false,
+              "feedback": "A bit repetitive."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Se ha bisogno di un adattatore, ne abbiamo uno dietro il bancone.",
+          "english": "If you need an adapter, we have one behind the counter.",
+          "choices": [
+            {
+              "text": "Grazie, ma ho già il mio. Va bene per le prese italiane.",
+              "isCorrect": true,
+              "feedback": "Stating you are prepared."
+            },
+            {
+              "text": "Sì, grazie. Mi serve un adattatore per la mia macchina.",
+              "isCorrect": false,
+              "feedback": "You're charging a phone, not a car!"
+            },
+            {
+              "text": "No, grazie. Non uso mai adattatori quando viaggio.",
+              "isCorrect": false,
+              "feedback": "You'll probably need one in Italy!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto allora. La lascio al suo caffè e al suo telefono.",
+          "english": "Perfect then. I'll leave you to your coffee and your phone.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'aiuto. A che ora chiude il bar?",
+              "isCorrect": true,
+              "feedback": "Polite and asking for useful info."
+            },
+            {
+              "text": "Grazie mille. Mi sa dire che tempo farà domani?",
+              "isCorrect": false,
+              "feedback": "The waiter is not a weather reporter."
+            },
+            {
+              "text": "Arrivederci! Vado via adesso senza pagare nulla.",
+              "isCorrect": false,
+              "feedback": "Very rude and illegal!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Chiudiamo alle otto di sera. C'è tutto il tempo!",
+          "english": "We close at eight in the evening. There's plenty of time!",
+          "choices": [
+            {
+              "text": "Benissimo. Grazie ancora di tutto e buon lavoro!",
+              "isCorrect": true,
+              "feedback": "Perfect polite closing."
+            },
+            {
+              "text": "Va bene. Allora compro anche un giornale vecchio.",
+              "isCorrect": false,
+              "feedback": "Why would you buy an old newspaper?"
+            },
+            {
+              "text": "Peccato. Speravo che restasse aperto tutta la notte.",
+              "isCorrect": false,
+              "feedback": "Most cafes close in the evening."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "borrowing_cable",
+      "title": "Borrowing a Cable",
+      "description": "Ask a friend or colleague if they have a charging cable you can use.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ehi! Tutto bene? Sembri un po' preoccupato.",
+          "english": "Hey! Everything okay? You look a bit worried.",
+          "choices": [
+            {
+              "text": "Sì, tutto bene, ma la mia batteria è quasi scarica.",
+              "isCorrect": true,
+              "feedback": "Good job explaining the situation."
+            },
+            {
+              "text": "Sì, tutto bene, ma ho dimenticato le chiavi di casa.",
+              "isCorrect": false,
+              "feedback": "Doesn't lead to the goal of charging."
+            },
+            {
+              "text": "No, non sto bene. Ho un forte mal di testa oggi.",
+              "isCorrect": false,
+              "feedback": "Not related to the scenario goal."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ah, capisco. Ti serve per caso un caricabatterie?",
+          "english": "Ah, I see. Do you happen to need a charger?",
+          "choices": [
+            {
+              "text": "Sì, hai per caso un cavo USB per un telefono Android?",
+              "isCorrect": true,
+              "feedback": "Specific and polite request."
+            },
+            {
+              "text": "Sì, hai per caso una batteria nuova per la mia auto?",
+              "isCorrect": false,
+              "feedback": "Too big for a friend to just have!"
+            },
+            {
+              "text": "Sì, hai per caso un computer portatile da prestarmi?",
+              "isCorrect": false,
+              "feedback": "You only need a cable."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ho solo un cavo Lightning per iPhone. Va bene lo stesso?",
+          "english": "I only have a Lightning cable for iPhone. Is that okay anyway?",
+          "choices": [
+            {
+              "text": "No, purtroppo non va bene. Mi serve un tipo diverso.",
+              "isCorrect": true,
+              "feedback": "Clearly stating it's the wrong cable."
+            },
+            {
+              "text": "Sì, dammelo pure. Lo uso per caricare il mio libro.",
+              "isCorrect": false,
+              "feedback": "Books usually don't use Lightning cables."
+            },
+            {
+              "text": "No, non mi piace. Preferisco un cavo di colore rosso.",
+              "isCorrect": false,
+              "feedback": "Color is not the issue here."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Aspetta, forse Marco ne ha uno. Marco, hai un cavo USB?",
+          "english": "Wait, maybe Marco has one. Marco, do you have a USB cable?",
+          "choices": [
+            {
+              "text": "Speriamo! Mi serve proprio per finire questo lavoro.",
+              "isCorrect": true,
+              "feedback": "Good. Expressing hope and urgency."
+            },
+            {
+              "text": "Speriamo! Mi serve per chiamare mia nonna in Cina.",
+              "isCorrect": false,
+              "feedback": "A bit specific and unrelated to current context."
+            },
+            {
+              "text": "Speriamo! Mi serve per ascoltare la radio stasera.",
+              "isCorrect": false,
+              "feedback": "You need it for your phone."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì! Marco lo ha trovato nella borsa. Tieni, usalo pure.",
+          "english": "Yes! Marco found it in his bag. Here, go ahead and use it.",
+          "choices": [
+            {
+              "text": "Grazie mille a tutti e due! Mi avete proprio salvato.",
+              "isCorrect": true,
+              "feedback": "Polite and appreciative."
+            },
+            {
+              "text": "Grazie mille. Dove posso comprare un gelato adesso?",
+              "isCorrect": false,
+              "feedback": "Irrelevant transition."
+            },
+            {
+              "text": "Grazie mille. Marco è sempre molto lento a cercare.",
+              "isCorrect": false,
+              "feedback": "Rude comment about someone helping you."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Figurati! A che percentuale è adesso il tuo telefono?",
+          "english": "Don't mention it! What percentage is your phone at now?",
+          "choices": [
+            {
+              "text": "È al due per cento. Si stava per spegnere del tutto.",
+              "isCorrect": true,
+              "feedback": "Giving the requested information."
+            },
+            {
+              "text": "È molto grande. Occupa tutto lo spazio nella tasca.",
+              "isCorrect": false,
+              "feedback": "The host asked about percentage, not size."
+            },
+            {
+              "text": "È di colore blu. Mi piace molto questo nuovo modello.",
+              "isCorrect": false,
+              "feedback": "The host asked about percentage, not color."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Allora caricalo bene. Ci vorrà circa un'ora, credo.",
+          "english": "Then charge it well. It will take about an hour, I think.",
+          "choices": [
+            {
+              "text": "Spero di sì. Devo uscire tra poco per un appuntamento.",
+              "isCorrect": true,
+              "feedback": "Explaining your schedule."
+            },
+            {
+              "text": "Spero di sì. Ho molta fame e voglio andare a cena.",
+              "isCorrect": false,
+              "feedback": "Charging doesn't fix hunger."
+            },
+            {
+              "text": "Spero di sì. Il mio orologio è rotto e non va.",
+              "isCorrect": false,
+              "feedback": "Unrelated to the phone charging."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Se vuoi, ho anche una presa libera vicino alla scrivania.",
+          "english": "If you want, I also have a free outlet near the desk.",
+          "choices": [
+            {
+              "text": "Ottimo, allora lo attacco lì così non disturbo nessuno.",
+              "isCorrect": true,
+              "feedback": "Accepting the offer politely."
+            },
+            {
+              "text": "Ottimo, allora compro una scrivania nuova domani mattina.",
+              "isCorrect": false,
+              "feedback": "You don't need to buy a desk."
+            },
+            {
+              "text": "Ottimo, allora vado a dormire sopra quel tavolo lì.",
+              "isCorrect": false,
+              "feedback": "Not appropriate for an office/social setting."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Fai pure. Hai bisogno anche di un adattatore italiano?",
+          "english": "Go ahead. Do you also need an Italian adapter?",
+          "choices": [
+            {
+              "text": "No, questo cavo ha già la spina giusta. Grazie mille.",
+              "isCorrect": true,
+              "feedback": "Confirming you have what you need."
+            },
+            {
+              "text": "Sì, mi serve un adattatore per tradurre i libri.",
+              "isCorrect": false,
+              "feedback": "An adapter is for electricity, not translation."
+            },
+            {
+              "text": "No, preferisco usare le pile stilo per il telefono.",
+              "isCorrect": false,
+              "feedback": "Phones don't use standard AA batteries."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va bene. Quando hai finito, lascia pure il cavo lì.",
+          "english": "Alright. When you're done, just leave the cable there.",
+          "choices": [
+            {
+              "text": "Certamente. Grazie ancora per la tua grande gentilezza!",
+              "isCorrect": true,
+              "feedback": "Final polite closing."
+            },
+            {
+              "text": "Certamente. Domani porto un cavo rotto per ricambio.",
+              "isCorrect": false,
+              "feedback": "A broken cable is not a good gift!"
+            },
+            {
+              "text": "Certamente. Mi dici dove sono le scale per salire?",
+              "isCorrect": false,
+              "feedback": "Irrelevant question."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buying_adapter",
+      "title": "Buying an Adapter",
+      "description": "Buy a European travel adapter at an electronics store.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, posso aiutarla a trovare qualcosa di speciale?",
+          "english": "Good morning, can I help you find something special?",
+          "choices": [
+            {
+              "text": "Buongiorno, cerco un adattatore per le prese italiane.",
+              "isCorrect": true,
+              "feedback": "Clear and direct request."
+            },
+            {
+              "text": "Buongiorno, cerco un paio di scarpe per correre fuori.",
+              "isCorrect": false,
+              "feedback": "This is an electronics store, not a shoe store."
+            },
+            {
+              "text": "Buongiorno, cerco un libro sulla storia della cucina.",
+              "isCorrect": false,
+              "feedback": "This is an electronics store, not a bookstore."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Le serve un adattatore universale o specifico?",
+          "english": "Certainly. Do you need a universal adapter or a specific one?",
+          "choices": [
+            {
+              "text": "Mi serve uno per una spina americana, per favore.",
+              "isCorrect": true,
+              "feedback": "Providing the necessary detail."
+            },
+            {
+              "text": "Mi serve uno per caricare la mia vecchia bicicletta.",
+              "isCorrect": false,
+              "feedback": "Bicycles usually don't need adapters."
+            },
+            {
+              "text": "Mi serve uno per ascoltare musica nella mia camera.",
+              "isCorrect": false,
+              "feedback": "Too vague."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Abbiamo questo modello qui. Funziona in tutta Europa.",
+          "english": "We have this model here. It works all over Europe.",
+          "choices": [
+            {
+              "text": "Sì, sembra perfetto. Mi dice quanto costa, per favore?",
+              "isCorrect": true,
+              "feedback": "Accepting the product and asking for price."
+            },
+            {
+              "text": "Sì, sembra perfetto. Posso provarlo con il mio cane?",
+              "isCorrect": false,
+              "feedback": "Don't use electronics on animals!"
+            },
+            {
+              "text": "No, è troppo piccolo. Ne vorrei uno molto pesante.",
+              "isCorrect": false,
+              "feedback": "Size/weight isn't usually a plus for adapters."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Costa dodici euro. Desidera aggiungere anche un cavo USB?",
+          "english": "It costs twelve euros. Would you like to add a USB cable too?",
+          "choices": [
+            {
+              "text": "No grazie, ho già molti cavi. Prendo solo questo.",
+              "isCorrect": true,
+              "feedback": "Politely declining the extra offer."
+            },
+            {
+              "text": "Sì grazie, vorrei un cavo per collegare la doccia.",
+              "isCorrect": false,
+              "feedback": "Showers don't use USB cables!"
+            },
+            {
+              "text": "Sì grazie, vorrei un cavo lungo dieci chilometri.",
+              "isCorrect": false,
+              "feedback": "Impossible request."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene. Può pagare alla cassa in fondo al negozio.",
+          "english": "Alright. You can pay at the cashier at the back of the store.",
+          "choices": [
+            {
+              "text": "Grazie mille. Accettate pagamenti con la carta?",
+              "isCorrect": true,
+              "feedback": "Useful question for a traveler."
+            },
+            {
+              "text": "Grazie mille. Posso pagare con dei fiori freschi?",
+              "isCorrect": false,
+              "feedback": "Stores only accept money or cards."
+            },
+            {
+              "text": "Grazie mille. Dove posso trovare un ufficio postale?",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the purchase."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Certamente, accettiamo tutte le carte di credito.",
+          "english": "Certainly, we accept all credit cards.",
+          "choices": [
+            {
+              "text": "Ottimo. Vado subito alla cassa a pagare allora.",
+              "isCorrect": true,
+              "feedback": "Moving to the next step."
+            },
+            {
+              "text": "Ottimo. Vado subito a casa a dormire un pochino.",
+              "isCorrect": false,
+              "feedback": "You need to pay first!"
+            },
+            {
+              "text": "Ottimo. Vado subito a comprare del pane fresco.",
+              "isCorrect": false,
+              "feedback": "Finish your current errand first."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Aspetti! Le serve anche una busta per l'adattatore?",
+          "english": "Wait! Do you also need a bag for the adapter?",
+          "choices": [
+            {
+              "text": "No grazie, lo metto direttamente nella mia borsa.",
+              "isCorrect": true,
+              "feedback": "Practical and eco-friendly."
+            },
+            {
+              "text": "Sì grazie, vorrei una busta piena di caramelle dolci.",
+              "isCorrect": false,
+              "feedback": "They sell electronics, not candy."
+            },
+            {
+              "text": "Sì grazie, vorrei una busta per metterci il gatto.",
+              "isCorrect": false,
+              "feedback": "Not appropriate."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Ricordi che abbiamo due anni di garanzia.",
+          "english": "Alright. Remember that we have two years of warranty.",
+          "choices": [
+            {
+              "text": "Buono a sapersi. Devo conservare lo scontrino?",
+              "isCorrect": true,
+              "feedback": "Smart question about warranty."
+            },
+            {
+              "text": "Buono a sapersi. Posso riportarlo se non mi piace?",
+              "isCorrect": false,
+              "feedback": "Warranty is for defects, not personal taste."
+            },
+            {
+              "text": "Buono a sapersi. La garanzia copre anche i furti?",
+              "isCorrect": false,
+              "feedback": "Usually not."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, lo scontrino è necessario per ogni riparazione.",
+          "english": "Yes, the receipt is necessary for any repair.",
+          "choices": [
+            {
+              "text": "Capito. Lo metterò in un posto sicuro nel portafoglio.",
+              "isCorrect": true,
+              "feedback": "Showing you understand."
+            },
+            {
+              "text": "Capito. Lo userò per accendere il fuoco stasera.",
+              "isCorrect": false,
+              "feedback": "Then you'll lose your warranty!"
+            },
+            {
+              "text": "Capito. Lo darò a un passante fuori dal negozio.",
+              "isCorrect": false,
+              "feedback": "Keep it for yourself!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Molto bene. La ringrazio e le auguro una buona giornata.",
+          "english": "Very well. I thank you and wish you a good day.",
+          "choices": [
+            {
+              "text": "Grazie a lei, arrivederci e buon lavoro!",
+              "isCorrect": true,
+              "feedback": "Standard polite closing."
+            },
+            {
+              "text": "Grazie a lei, mi dica dove sono le chiavi.",
+              "isCorrect": false,
+              "feedback": "Whose keys?"
+            },
+            {
+              "text": "Grazie a lei, voglio un altro caffè adesso.",
+              "isCorrect": false,
+              "feedback": "This is still a store, not a cafe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portable_charger",
+      "title": "Using a Power Bank",
+      "description": "Discuss using a portable charger while traveling on a train.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Scusi, sa se su questo treno ci sono prese USB?",
+          "english": "Excuse me, do you know if there are USB ports on this train?",
+          "choices": [
+            {
+              "text": "Sì, di solito sono sotto il sedile o tra i due posti.",
+              "isCorrect": true,
+              "feedback": "Helpful and accurate information."
+            },
+            {
+              "text": "Sì, di solito il treno arriva sempre molto in ritardo.",
+              "isCorrect": false,
+              "feedback": "Doesn't answer the question about USB ports."
+            },
+            {
+              "text": "Sì, di solito mangio un panino durante il viaggio.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ho guardato, ma la mia non sembra proprio funzionare.",
+          "english": "I looked, but mine doesn't seem to work at all.",
+          "choices": [
+            {
+              "text": "Se vuole, ho un power bank che può usare per un po'.",
+              "isCorrect": true,
+              "feedback": "Very kind and helpful offer."
+            },
+            {
+              "text": "Se vuole, posso chiamare il capotreno per protestare.",
+              "isCorrect": false,
+              "feedback": "A bit extreme for a broken USB port."
+            },
+            {
+              "text": "Se vuole, posso venderle il mio telefono vecchio.",
+              "isCorrect": false,
+              "feedback": "Not what the person needs."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Davvero? Sarebbe gentilissimo. È molto potente?",
+          "english": "Really? That would be very kind of you. Is it very powerful?",
+          "choices": [
+            {
+              "text": "Sì, può caricare il telefono due volte. Ecco, prenda.",
+              "isCorrect": true,
+              "feedback": "Explaining the capacity and handing it over."
+            },
+            {
+              "text": "Sì, è fatto di un materiale molto pesante e nero.",
+              "isCorrect": false,
+              "feedback": "Power refers to capacity, not weight."
+            },
+            {
+              "text": "No, non funziona bene con la pioggia fuori.",
+              "isCorrect": false,
+              "feedback": "Weather doesn't affect power banks."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie! Mi serve solo per vedere il mio biglietto digitale.",
+          "english": "Thanks! I only need it to see my digital ticket.",
+          "choices": [
+            {
+              "text": "Nessun problema. Lo usi pure per tutto il tempo necessario.",
+              "isCorrect": true,
+              "feedback": "Generous and polite."
+            },
+            {
+              "text": "Nessun problema. Mi dica quanto costa il suo biglietto.",
+              "isCorrect": false,
+              "feedback": "None of your business."
+            },
+            {
+              "text": "Nessun problema. Il treno si fermerà tra due ore.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Molto gentile. Le offrirei un caffè se fossimo al bar!",
+          "english": "Very kind. I would buy you a coffee if we were at the bar!",
+          "choices": [
+            {
+              "text": "Troppo buono! Felice di aver aiutato. Buon viaggio!",
+              "isCorrect": true,
+              "feedback": "Perfect closing for a friendly encounter."
+            },
+            {
+              "text": "Troppo buono! Preferirei ricevere dei soldi adesso.",
+              "isCorrect": false,
+              "feedback": "Very rude and inappropriate."
+            },
+            {
+              "text": "Troppo buono! Il caffè in stazione è molto caro.",
+              "isCorrect": false,
+              "feedback": "Negative and unnecessary."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Speriamo di arrivare presto. Lei dove scende?",
+          "english": "I hope we arrive soon. Where are you getting off?",
+          "choices": [
+            {
+              "text": "Io scendo alla prossima stazione, a Firenze Santa Maria Novella.",
+              "isCorrect": true,
+              "feedback": "Answering the question clearly."
+            },
+            {
+              "text": "Io scendo dalla sedia perché sono molto stanco di stare seduto.",
+              "isCorrect": false,
+              "feedback": "The host means which station."
+            },
+            {
+              "text": "Io scendo in giardino a giocare con i miei amici stasera.",
+              "isCorrect": false,
+              "feedback": "You are on a train."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ah, Firenze! Una città bellissima. Ci va per lavoro?",
+          "english": "Ah, Florence! A beautiful city. Are you going there for work?",
+          "choices": [
+            {
+              "text": "Sì, ho una riunione importante nel pomeriggio. E lei?",
+              "isCorrect": true,
+              "feedback": "Engaging in polite conversation."
+            },
+            {
+              "text": "No, vado a comprare un cavallo bianco molto grande.",
+              "isCorrect": false,
+              "feedback": "Highly unlikely."
+            },
+            {
+              "text": "Sì, vado a dormire sotto un ponte vicino al fiume.",
+              "isCorrect": false,
+              "feedback": "Not a typical answer."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Io vado a trovare i miei nonni. Vivono lì da sempre.",
+          "english": "I'm going to visit my grandparents. They've always lived there.",
+          "choices": [
+            {
+              "text": "Che bello! Firenze è perfetta per visitare la famiglia.",
+              "isCorrect": true,
+              "feedback": "Polite comment."
+            },
+            {
+              "text": "Che bello! Mi piacciono molto i nonni degli altri.",
+              "isCorrect": false,
+              "feedback": "A bit weird."
+            },
+            {
+              "text": "Che bello! Anche io voglio vivere in una scatola.",
+              "isCorrect": false,
+              "feedback": "Makes no sense."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Guardi, il mio telefono è già al 50%. Grazie ancora!",
+          "english": "Look, my phone is already at 50%. Thanks again!",
+          "choices": [
+            {
+              "text": "Prego, può ridarmelo quando scendo tra cinque minuti.",
+              "isCorrect": true,
+              "feedback": "Setting a time to return the item."
+            },
+            {
+              "text": "Prego, può tenerlo per sempre come regalo di Natale.",
+              "isCorrect": false,
+              "feedback": "Too generous for a stranger!"
+            },
+            {
+              "text": "Prego, lo butti pure fuori dal finestrino del treno.",
+              "isCorrect": false,
+              "feedback": "Don't do that!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certamente. Ecco il suo power bank. Mi ha salvato!",
+          "english": "Certainly. Here is your power bank. You saved me!",
+          "choices": [
+            {
+              "text": "È stato un piacere. Buona continuazione di viaggio!",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "È stato un piacere. Mi dia il suo numero adesso.",
+              "isCorrect": false,
+              "feedback": "A bit too forward."
+            },
+            {
+              "text": "È stato un piacere. Il treno è molto sporco oggi.",
+              "isCorrect": false,
+              "feedback": "Ending on a negative note."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

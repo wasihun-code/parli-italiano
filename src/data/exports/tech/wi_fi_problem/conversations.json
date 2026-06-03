@@ -1,0 +1,1066 @@
+{
+  "scenarioId": 99,
+  "conversations": [
+    {
+      "id": "asking_password",
+      "title": "Asking for WiFi Password",
+      "description": "Ask the host for the WiFi password and find it in the room.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Ti sei sistemato bene in camera?",
+          "english": "Good morning! Have you settled in well in your room?",
+          "choices": [
+            {
+              "text": "Sì, grazie. È molto comoda.",
+              "english": "Yes, thanks. It is very comfortable.",
+              "isCorrect": true,
+              "feedback": "Perfect response. Confirming you are comfortable."
+            },
+            {
+              "text": "Dov'è il bagno di sopra?",
+              "english": "Where is the bathroom upstairs?",
+              "isCorrect": false,
+              "feedback": "A bit abrupt! Answer the host's question first."
+            },
+            {
+              "text": "Ho fame, dove si mangia?",
+              "english": "I'm hungry, where do we eat?",
+              "isCorrect": false,
+              "feedback": "Irrelevant to settling into the room."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Bene. Hai bisogno di qualcosa in particolare?",
+          "english": "Good. Do you need anything in particular?",
+          "choices": [
+            {
+              "text": "Sì, qual è la password del wifi?",
+              "english": "Yes, what is the wifi password?",
+              "isCorrect": true,
+              "feedback": "Great. Asking for essential information."
+            },
+            {
+              "text": "No, non mi serve proprio nulla.",
+              "english": "No, I don't need anything at all.",
+              "isCorrect": false,
+              "feedback": "Technically correct, but you need the wifi!"
+            },
+            {
+              "text": "Il letto è troppo morbido qui.",
+              "english": "The bed is too soft here.",
+              "isCorrect": false,
+              "feedback": "Complaining instead of asking for what you need."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "La trovi su un foglio sopra il tavolo. La vedi?",
+          "english": "You can find it on a piece of paper on the table. Do you see it?",
+          "choices": [
+            {
+              "text": "Ah sì, vedo il foglio. È quella con molti numeri?",
+              "english": "Ah yes, I see the paper. Is it the one with many numbers?",
+              "isCorrect": true,
+              "feedback": "Correct identification of the paper."
+            },
+            {
+              "text": "Non vedo nessun tavolo in cucina.",
+              "english": "I don't see any table in the kitchen.",
+              "isCorrect": false,
+              "feedback": "The host said it's in your room!"
+            },
+            {
+              "text": "Voglio un foglio bianco per me.",
+              "english": "I want a white sheet for myself.",
+              "isCorrect": false,
+              "feedback": "You are looking for the password, not blank paper."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto. È scritta tutta in maiuscolo.",
+          "english": "Exactly. It is written all in uppercase.",
+          "choices": [
+            {
+              "text": "Va bene. Devo mettere anche il trattino?",
+              "english": "Alright. Do I also need to put the dash?",
+              "isCorrect": true,
+              "feedback": "Good question about the password format."
+            },
+            {
+              "text": "Posso scrivere con la penna blu?",
+              "english": "Can I write with the blue pen?",
+              "isCorrect": false,
+              "feedback": "You are entering a password, not writing."
+            },
+            {
+              "text": "Il mio nome è scritto in minuscolo.",
+              "english": "My name is written in lowercase.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the password on the paper."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "No, solo i numeri e le lettere. Prova ora.",
+          "english": "No, just the numbers and letters. Try now.",
+          "choices": [
+            {
+              "text": "Funziona perfettamente! Grazie mille.",
+              "english": "It works perfectly! Thanks a lot.",
+              "isCorrect": true,
+              "feedback": "Success! You are connected."
+            },
+            {
+              "text": "Il router è rotto, non va bene.",
+              "english": "The router is broken, it's not good.",
+              "isCorrect": false,
+              "feedback": "It just worked! Don't complain now."
+            },
+            {
+              "text": "Mi serve un tecnico molto bravo.",
+              "english": "I need a very good technician.",
+              "isCorrect": false,
+              "feedback": "No need for a technician if it works."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Prego. Ti serve altro per il tuo lavoro o studio?",
+          "english": "You're welcome. Do you need anything else for your work or study?",
+          "choices": [
+            {
+              "text": "No, per ora sono a posto così.",
+              "english": "No, for now I'm fine like this.",
+              "isCorrect": true,
+              "feedback": "Politely declining further help."
+            },
+            {
+              "text": "Voglio comprare un libro di storia.",
+              "english": "I want to buy a history book.",
+              "isCorrect": false,
+              "feedback": "The host is asking about your current needs in the room."
+            },
+            {
+              "text": "Dov'è la biblioteca più vicina?",
+              "english": "Where is the nearest library?",
+              "isCorrect": false,
+              "feedback": "A bit off-topic for the current conversation."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottimo. Ti ricordo che il segnale è più forte in salotto.",
+          "english": "Great. I remind you that the signal is stronger in the living room.",
+          "choices": [
+            {
+              "text": "Grazie dell'informazione, lo terrò a mente.",
+              "english": "Thanks for the info, I'll keep it in mind.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the helpful tip."
+            },
+            {
+              "text": "Il salotto è troppo grande per me.",
+              "english": "The living room is too big for me.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the wifi signal strength."
+            },
+            {
+              "text": "Non mi piace il colore del divano.",
+              "english": "I don't like the color of the sofa.",
+              "isCorrect": false,
+              "feedback": "Complaining instead of being thankful for the tip."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Se hai problemi, puoi chiamarmi in qualsiasi momento.",
+          "english": "If you have problems, you can call me at any time.",
+          "choices": [
+            {
+              "text": "Molto gentile, spero di non disturbare.",
+              "english": "Very kind, I hope not to disturb.",
+              "isCorrect": true,
+              "feedback": "Polite and considerate response."
+            },
+            {
+              "text": "Ti chiamo alle tre di notte.",
+              "english": "I'll call you at three in the morning.",
+              "isCorrect": false,
+              "feedback": "That would be very rude!"
+            },
+            {
+              "text": "Ho perso il mio numero di telefono.",
+              "isCorrect": false,
+              "feedback": "Doesn't make sense in this context."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Non ti preoccupare, è il mio lavoro. Buona navigazione!",
+          "english": "Don't worry, it's my job. Happy browsing!",
+          "choices": [
+            {
+              "text": "Grazie ancora, buona giornata a lei.",
+              "english": "Thanks again, have a good day.",
+              "isCorrect": true,
+              "feedback": "Ending the conversation politely."
+            },
+            {
+              "text": "Non voglio navigare in mare.",
+              "english": "I don't want to sail at sea.",
+              "isCorrect": false,
+              "feedback": "The host means browsing the internet!"
+            },
+            {
+              "text": "Il lavoro è molto faticoso oggi.",
+              "isCorrect": false,
+              "feedback": "The host is talking about their job, not yours."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Anche a te. A presto!",
+          "english": "To you too. See you soon!",
+          "choices": [
+            {
+              "text": "Arrivederci!",
+              "english": "Goodbye!",
+              "isCorrect": true,
+              "feedback": "Standard polite closing."
+            },
+            {
+              "text": "Buongiorno!",
+              "english": "Good morning!",
+              "isCorrect": false,
+              "feedback": "You are saying goodbye, not hello."
+            },
+            {
+              "text": "Cosa?",
+              "english": "What?",
+              "isCorrect": false,
+              "feedback": "Too abrupt for a farewell."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "no_connection",
+      "title": "Reporting No Connection",
+      "description": "Report that the WiFi is not working and check the router.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Tutto bene con l'appartamento?",
+          "english": "Hi! Everything okay with the apartment?",
+          "choices": [
+            {
+              "text": "Veramente ho un piccolo problema.",
+              "english": "Actually, I have a small problem.",
+              "isCorrect": true,
+              "feedback": "Good way to start reporting an issue."
+            },
+            {
+              "text": "Mi piace molto questo divano.",
+              "english": "I like this sofa very much.",
+              "isCorrect": false,
+              "feedback": "Nice, but you have a problem to report!"
+            },
+            {
+              "text": "Non trovo le chiavi di casa.",
+              "english": "I can't find the house keys.",
+              "isCorrect": false,
+              "feedback": "You are already inside the apartment!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Dimmi pure, cosa succede?",
+          "english": "Tell me, what's happening?",
+          "choices": [
+            {
+              "text": "Il wifi non funziona sul mio telefono.",
+              "english": "The wifi doesn't work on my phone.",
+              "isCorrect": true,
+              "feedback": "Clearly stating the problem."
+            },
+            {
+              "text": "Il mio telefono è nuovo di zecca.",
+              "english": "My phone is brand new.",
+              "isCorrect": false,
+              "feedback": "The host needs to know about the connection, not the phone age."
+            },
+            {
+              "text": "C'è troppa luce in questa stanza.",
+              "english": "There is too much light in this room.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the wifi problem."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Strano, di solito va bene. Vedi la rete?",
+          "english": "Strange, it usually works well. Do you see the network?",
+          "choices": [
+            {
+              "text": "No, non vedo proprio il nome della rete.",
+              "english": "No, I don't see the network name at all.",
+              "isCorrect": true,
+              "feedback": "Confirming the network is invisible."
+            },
+            {
+              "text": "Sì, vedo il mare dalla finestra.",
+              "english": "Yes, I see the sea from the window.",
+              "isCorrect": false,
+              "feedback": "The host is talking about the wifi network!"
+            },
+            {
+              "text": "Non vedo l'ora di uscire fuori.",
+              "english": "I can't wait to go outside.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the technical question."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Forse il router è spento. È nel salotto.",
+          "english": "Maybe the router is off. It's in the living room.",
+          "choices": [
+            {
+              "text": "Controllo subito... sì, le luci sono spente.",
+              "english": "I'll check right away... yes, the lights are off.",
+              "isCorrect": true,
+              "feedback": "Good observation of the router status."
+            },
+            {
+              "text": "Vago in cucina a cercare il pane.",
+              "english": "I wander into the kitchen to look for bread.",
+              "isCorrect": false,
+              "feedback": "The router is in the living room!"
+            },
+            {
+              "text": "Le luci del bagno sono accese ora.",
+              "english": "The bathroom lights are on now.",
+              "isCorrect": false,
+              "feedback": "Wrong lights!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Prova a premere il tasto di accensione dietro.",
+          "english": "Try pressing the power button on the back.",
+          "choices": [
+            {
+              "text": "L'ho premuto. Adesso la luce è verde.",
+              "english": "I pressed it. Now the light is green.",
+              "isCorrect": true,
+              "feedback": "Success! You turned it on."
+            },
+            {
+              "text": "Ho rotto il televisore del salotto.",
+              "english": "I broke the living room TV.",
+              "isCorrect": false,
+              "feedback": "Don't break things! Just press the button."
+            },
+            {
+              "text": "Non trovo il telecomando nero.",
+              "english": "I can't find the black remote.",
+              "isCorrect": false,
+              "feedback": "You need the power button on the router."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Bene, ora aspetta che la luce diventi fissa.",
+          "english": "Good, now wait for the light to become steady.",
+          "choices": [
+            {
+              "text": "Quanto tempo ci vuole di solito?",
+              "english": "How much time does it usually take?",
+              "isCorrect": true,
+              "feedback": "Asking for expected duration."
+            },
+            {
+              "text": "Voglio andare a mangiare una pizza.",
+              "english": "I want to go eat a pizza.",
+              "isCorrect": false,
+              "feedback": "Wait for the wifi first!"
+            },
+            {
+              "text": "Il tempo è molto bello oggi.",
+              "isCorrect": false,
+              "feedback": "Talking about the weather instead of the router."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Solo un minuto o due. Vedi qualcosa adesso?",
+          "english": "Just a minute or two. Do you see anything now?",
+          "choices": [
+            {
+              "text": "Sì, ora vedo il nome della rete \"Home_Wifi\".",
+              "english": "Yes, now I see the network name \"Home_Wifi\".",
+              "isCorrect": true,
+              "feedback": "Identifying the network correctly."
+            },
+            {
+              "text": "Vedo un gatto nero in giardino.",
+              "english": "I see a black cat in the garden.",
+              "isCorrect": false,
+              "feedback": "The host is asking about the wifi list!"
+            },
+            {
+              "text": "Non vedo nulla, è tutto nero.",
+              "english": "I don't see anything, it's all black.",
+              "isCorrect": false,
+              "feedback": "Check the screen of your phone."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Perfetto. Prova a connetterti usando la password.",
+          "english": "Perfect. Try to connect using the password.",
+          "choices": [
+            {
+              "text": "Sto inserendo la password... sembra che funzioni.",
+              "english": "I'm entering the password... it seems to be working.",
+              "isCorrect": true,
+              "feedback": "Attempting connection and reporting success."
+            },
+            {
+              "text": "La password è il mio compleanno.",
+              "english": "The password is my birthday.",
+              "isCorrect": false,
+              "feedback": "No, use the password given by the host!"
+            },
+            {
+              "text": "Non mi piacciono le password lunghe.",
+              "isCorrect": false,
+              "feedback": "Just enter it to get connected."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo. La velocità ti sembra buona?",
+          "english": "Great. Does the speed seem good to you?",
+          "choices": [
+            {
+              "text": "Sì, ora è molto veloce. Grazie per l'aiuto!",
+              "english": "Yes, now it's very fast. Thanks for the help!",
+              "isCorrect": true,
+              "feedback": "Confirming good speed and thanking the host."
+            },
+            {
+              "text": "La macchina è molto veloce in autostrada.",
+              "english": "The car is very fast on the highway.",
+              "isCorrect": false,
+              "feedback": "The host is talking about the internet speed."
+            },
+            {
+              "text": "Sono molto lento a scrivere oggi.",
+              "isCorrect": false,
+              "feedback": "Off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla. Se succede di nuovo, sai cosa fare.",
+          "english": "You're welcome. If it happens again, you know what to do.",
+          "choices": [
+            {
+              "text": "Certamente, grazie ancora e buona serata.",
+              "english": "Certainly, thanks again and good evening.",
+              "isCorrect": true,
+              "feedback": "Closing the conversation politely."
+            },
+            {
+              "text": "Non so mai cosa fare in cucina.",
+              "english": "I never know what to do in the kitchen.",
+              "isCorrect": false,
+              "feedback": "The host means you know how to fix the wifi now."
+            },
+            {
+              "text": "Di che colore è il router?",
+              "isCorrect": false,
+              "english": "What color is the router?",
+              "feedback": "You already found it!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slow_internet",
+      "title": "Slow Internet Speed",
+      "description": "Complain about slow internet and find a better spot.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera. Va tutto bene per il tuo soggiorno?",
+          "english": "Good evening. Is everything okay with your stay?",
+          "choices": [
+            {
+              "text": "Buonasera. La connessione internet è molto lenta.",
+              "english": "Good evening. The internet connection is very slow.",
+              "isCorrect": true,
+              "feedback": "Reporting the speed issue politely."
+            },
+            {
+              "text": "Voglio andare a dormire presto stasera.",
+              "english": "I want to go to sleep early tonight.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the host's question about the stay quality."
+            },
+            {
+              "text": "Il caffè è freddo e non mi piace.",
+              "english": "The coffee is cold and I don't like it.",
+              "isCorrect": false,
+              "feedback": "Wrong topic!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dispiace. Non riesci a navigare bene?",
+          "english": "I'm sorry. Are you not able to browse well?",
+          "choices": [
+            {
+              "text": "No, le pagine caricano molto piano.",
+              "english": "No, the pages load very slowly.",
+              "isCorrect": true,
+              "feedback": "Describing the browsing experience."
+            },
+            {
+              "text": "Sì, mi piace molto andare in barca.",
+              "english": "Yes, I like going by boat very much.",
+              "isCorrect": false,
+              "feedback": "'Navigare' here means browsing the web, not sailing!"
+            },
+            {
+              "text": "Le scarpe sono troppo strette per me.",
+              "english": "The shoes are too tight for me.",
+              "isCorrect": false,
+              "feedback": "Completely off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Quanti dispositivi sono collegati?",
+          "english": "How many devices are connected?",
+          "choices": [
+            {
+              "text": "Solo il mio computer e il mio tablet.",
+              "english": "Only my computer and my tablet.",
+              "isCorrect": true,
+              "feedback": "Answering the technical question accurately."
+            },
+            {
+              "text": "Ho tre valigie molto pesanti qui.",
+              "english": "I have three very heavy suitcases here.",
+              "isCorrect": false,
+              "feedback": "Suitcases are not internet devices!"
+            },
+            {
+              "text": "Ci sono quattro sedie in cucina.",
+              "english": "There are four chairs in the kitchen.",
+              "isCorrect": false,
+              "feedback": "The host is asking about electronics."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Forse il segnale è debole in quella camera.",
+          "english": "Maybe the signal is weak in that room.",
+          "choices": [
+            {
+              "text": "Cosa posso fare per migliorare la velocità?",
+              "english": "What can I do to improve the speed?",
+              "isCorrect": true,
+              "feedback": "Asking for a solution."
+            },
+            {
+              "text": "Mi serve un cuscino più grande.",
+              "english": "I need a larger pillow.",
+              "isCorrect": false,
+              "feedback": "A pillow won't help the wifi signal!"
+            },
+            {
+              "text": "Il segnale stradale è proprio lì.",
+              "english": "The road sign is right there.",
+              "isCorrect": false,
+              "feedback": "Wrong kind of signal."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Prova ad avvicinarti al router nel corridoio.",
+          "english": "Try getting closer to the router in the hallway.",
+          "choices": [
+            {
+              "text": "Va bene, mi sposto subito con il pc.",
+              "english": "Alright, I'll move right away with the pc.",
+              "isCorrect": true,
+              "feedback": "Following the host's suggestion."
+            },
+            {
+              "text": "Non voglio camminare fino al mare.",
+              "english": "I don't want to walk to the sea.",
+              "isCorrect": false,
+              "feedback": "The hallway is inside the apartment!"
+            },
+            {
+              "text": "Il pc è spento e non lo trovo.",
+              "english": "The pc is off and I can't find it.",
+              "isCorrect": false,
+              "feedback": "You were just using it!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Fammi sapere se la situazione migliora lì.",
+          "english": "Let me know if the situation improves there.",
+          "choices": [
+            {
+              "text": "Sì, qui vicino al router sembra andare meglio.",
+              "english": "Yes, here near the router it seems to go better.",
+              "isCorrect": true,
+              "feedback": "Reporting improvement in a better location."
+            },
+            {
+              "text": "Mi piace il mare in questa stagione.",
+              "english": "I like the sea in this season.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the wifi situation."
+            },
+            {
+              "text": "La cucina è troppo piccola qui.",
+              "english": "The kitchen is too small here.",
+              "isCorrect": false,
+              "feedback": "Off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Magari c'è qualche interferenza vicino al letto.",
+          "english": "Maybe there is some interference near the bed.",
+          "choices": [
+            {
+              "text": "È possibile, ci sono molti specchi in camera.",
+              "english": "It's possible, there are many mirrors in the room.",
+              "isCorrect": true,
+              "feedback": "Providing a possible explanation for the interference."
+            },
+            {
+              "text": "Voglio dormire sul divano stasera.",
+              "english": "I want to sleep on the sofa tonight.",
+              "isCorrect": false,
+              "feedback": "The host is talking about interference, not your sleep plans."
+            },
+            {
+              "text": "Gli specchi sono sporchi di polvere.",
+              "english": "The mirrors are dirty with dust.",
+              "isCorrect": false,
+              "feedback": "Focus on the technical problem instead of cleaning."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ah, gli specchi possono bloccare il segnale wifi.",
+          "english": "Ah, mirrors can block the wifi signal.",
+          "choices": [
+            {
+              "text": "Non lo sapevo, è molto interessante.",
+              "english": "I didn't know that, it's very interesting.",
+              "isCorrect": true,
+              "feedback": "Learning something new about tech."
+            },
+            {
+              "text": "Non mi interessa la scienza oggi.",
+              "english": "I'm not interested in science today.",
+              "isCorrect": false,
+              "feedback": "Politeness is important even when talking about tech."
+            },
+            {
+              "text": "Voglio comprare uno specchio nuovo.",
+              "english": "I want to buy a new mirror.",
+              "isCorrect": false,
+              "feedback": "Not necessary!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Comunque, se hai ancora problemi, resetto il modem.",
+          "english": "Anyway, if you still have problems, I'll reset the modem.",
+          "choices": [
+            {
+              "text": "Per ora va bene così, grazie mille.",
+              "english": "For now it's fine like this, thanks a lot.",
+              "isCorrect": true,
+              "feedback": "Politely declining the reset for now."
+            },
+            {
+              "text": "Voglio un modem di colore rosso.",
+              "english": "I want a red modem.",
+              "isCorrect": false,
+              "feedback": "The color doesn't matter for the connection!"
+            },
+            {
+              "text": "Il modem è troppo vecchio per me.",
+              "english": "The modem is too old for me.",
+              "isCorrect": false,
+              "feedback": "Don't be demanding."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va bene. Buona serata e buon lavoro!",
+          "english": "Alright. Good evening and good work!",
+          "choices": [
+            {
+              "text": "Grazie, altrettanto!",
+              "english": "Thanks, same to you!",
+              "isCorrect": true,
+              "feedback": "Standard polite closing."
+            },
+            {
+              "text": "Buonanotte!",
+              "english": "Good night!",
+              "isCorrect": false,
+              "feedback": "A bit early for good night!"
+            },
+            {
+              "text": "Chi lavora oggi?",
+              "english": "Who is working today?",
+              "isCorrect": false,
+              "feedback": "Unnecessary question."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "router_reset",
+      "title": "Router Reset Instructions",
+      "description": "Reset the router following the host's instructions.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto? Mi avevi mandato un messaggio?",
+          "english": "Hello? Had you sent me a message?",
+          "choices": [
+            {
+              "text": "Sì, la rete internet è sparita di nuovo.",
+              "english": "Yes, the internet network has disappeared again.",
+              "isCorrect": true,
+              "feedback": "Confirming why you contacted them."
+            },
+            {
+              "text": "No, sto parlando con un amico ora.",
+              "english": "No, I'm talking to a friend now.",
+              "isCorrect": false,
+              "feedback": "Then why did you call the host?"
+            },
+            {
+              "text": "Il messaggio è per il mio dottore.",
+              "english": "The message is for my doctor.",
+              "isCorrect": false,
+              "feedback": "The host received it, so it was for them!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ah, purtroppo ogni tanto capita. Bisogna riavviare.",
+          "english": "Ah, unfortunately it happens sometimes. It needs to be restarted.",
+          "choices": [
+            {
+              "text": "Devo staccare il cavo della corrente?",
+              "english": "Do I have to unplug the power cable?",
+              "isCorrect": true,
+              "feedback": "Asking for the correct reset procedure."
+            },
+            {
+              "text": "Devo comprare un router nuovo subito?",
+              "english": "Do I have to buy a new router immediately?",
+              "isCorrect": false,
+              "feedback": "Try restarting it first as suggested."
+            },
+            {
+              "text": "Il cavo dell'acqua è rotto qui.",
+              "english": "The water cable is broken here.",
+              "isCorrect": false,
+              "feedback": "Wrong cable!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, stacca il cavo nero e aspetta un minuto.",
+          "english": "Yes, unplug the black cable and wait a minute.",
+          "choices": [
+            {
+              "text": "Va bene, l'ho staccato. Aspetto un momento.",
+              "english": "Alright, I unplugged it. I'll wait a moment.",
+              "isCorrect": true,
+              "feedback": "Following the steps accurately."
+            },
+            {
+              "text": "Ho tagliato il cavo con le forbici.",
+              "english": "I cut the cable with scissors.",
+              "isCorrect": false,
+              "feedback": "No! Just unplug it, don't cut it!"
+            },
+            {
+              "text": "Il minuto è passato un'ora fa.",
+              "english": "The minute passed an hour ago.",
+              "isCorrect": false,
+              "feedback": "Be patient and wait as instructed."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ora riattacca il cavo e guarda le luci.",
+          "english": "Now plug the cable back in and look at the lights.",
+          "choices": [
+            {
+              "text": "La luce rossa sta lampeggiando adesso.",
+              "english": "The red light is flashing now.",
+              "isCorrect": true,
+              "feedback": "Good observation of the router's behavior."
+            },
+            {
+              "text": "Ho spento la luce della cucina.",
+              "english": "I turned off the kitchen light.",
+              "isCorrect": false,
+              "feedback": "The host means the router lights!"
+            },
+            {
+              "text": "Non vedo nulla perché è buio.",
+              "english": "I don't see anything because it's dark.",
+              "isCorrect": false,
+              "feedback": "Look at the small lights on the device."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "È normale. Aspetta che diventi fissa e verde.",
+          "english": "It's normal. Wait for it to become steady and green.",
+          "choices": [
+            {
+              "text": "Ok, ora è verde. Controllo la connessione.",
+              "english": "Ok, now it's green. I'm checking the connection.",
+              "isCorrect": true,
+              "feedback": "Waiting for the signal and checking."
+            },
+            {
+              "text": "Il semaforo è diventato verde ora.",
+              "english": "The traffic light has turned green now.",
+              "isCorrect": false,
+              "feedback": "You are inside, not at a traffic light!"
+            },
+            {
+              "text": "La luce è blu come il cielo.",
+              "english": "The light is blue like the sky.",
+              "isCorrect": false,
+              "feedback": "The host said it should be green."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Allora, riesci a collegarti adesso?",
+          "english": "So, are you able to connect now?",
+          "choices": [
+            {
+              "text": "Sì, ora la connessione è tornata.",
+              "english": "Yes, now the connection is back.",
+              "isCorrect": true,
+              "feedback": "Confirming the internet is back."
+            },
+            {
+              "text": "Sono collegato alla radio adesso.",
+              "english": "I'm connected to the radio now.",
+              "isCorrect": false,
+              "feedback": "The host is asking about the internet."
+            },
+            {
+              "text": "Non voglio collegarmi a nessuno.",
+              "english": "I don't want to connect to anyone.",
+              "isCorrect": false,
+              "feedback": "You need the connection!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Meno male. A volte il sistema si blocca.",
+          "english": "Thank goodness. Sometimes the system freezes.",
+          "choices": [
+            {
+              "text": "Succede spesso con questo modello di router?",
+              "english": "Does it happen often with this router model?",
+              "isCorrect": true,
+              "feedback": "Asking for more information about the device."
+            },
+            {
+              "text": "Il sistema solare è molto grande.",
+              "english": "The solar system is very large.",
+              "isCorrect": false,
+              "feedback": "The host means the router's system."
+            },
+            {
+              "text": "Mi sono bloccato in ascensore.",
+              "english": "I got stuck in the elevator.",
+              "isCorrect": false,
+              "feedback": "Not relevant here."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Solo quando fa molto caldo, purtroppo.",
+          "english": "Only when it's very hot, unfortunately.",
+          "choices": [
+            {
+              "text": "Capisco. Forse devo tenerlo in un posto più fresco.",
+              "english": "I see. Maybe I should keep it in a cooler place.",
+              "isCorrect": true,
+              "feedback": "Suggesting a solution to prevent overheating."
+            },
+            {
+              "text": "Voglio mangiare un gelato fresco.",
+              "english": "I want to eat a fresh ice cream.",
+              "isCorrect": false,
+              "feedback": "That won't help the router!"
+            },
+            {
+              "text": "Il caldo è terribile oggi fuori.",
+              "isCorrect": false,
+              "feedback": "Focus on the router's location."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, sarebbe meglio. Scusami per il disturbo.",
+          "english": "Yes, it would be better. Sorry for the inconvenience.",
+          "choices": [
+            {
+              "text": "Non si preoccupi, ora funziona tutto bene.",
+              "english": "Don't worry, everything is working fine now.",
+              "isCorrect": true,
+              "feedback": "Reassuring the host."
+            },
+            {
+              "text": "Il disturbo della radio è forte.",
+              "english": "The radio interference is strong.",
+              "isCorrect": false,
+              "feedback": "The host is apologizing, not talking about radio."
+            },
+            {
+              "text": "Mi sento molto disturbato qui.",
+              "isCorrect": false,
+              "feedback": "A bit too dramatic."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo. Se hai bisogno, io sono qui. Ciao!",
+          "english": "Great. If you need anything, I'm here. Bye!",
+          "choices": [
+            {
+              "text": "Grazie, ciao e buona giornata!",
+              "english": "Thanks, bye and have a good day!",
+              "isCorrect": true,
+              "feedback": "Ending the call politely."
+            },
+            {
+              "text": "D'accordo, arrivederci e grazie.",
+              "english": "Alright, goodbye and thanks.",
+              "isCorrect": false,
+              "feedback": "A bit formal, but you already said thanks earlier. The correct answer is more natural."
+            },
+            {
+              "text": "Dov'è il bagno?",
+              "english": "Where is the bathroom?",
+              "isCorrect": false,
+              "feedback": "Not the time to ask this."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

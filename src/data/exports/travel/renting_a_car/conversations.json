@@ -1,0 +1,1073 @@
+{
+  "scenarioId": 10,
+  "conversations": [
+    {
+      "id": "at_the_rental_desk",
+      "title": "At the Rental Desk",
+      "description": "Start your car rental process at the counter.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come posso aiutarla oggi?",
+          "english": "Good morning! How can I help you today?",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei noleggiare un'auto per tre giorni.",
+              "english": "Good morning, I would like to rent a car for three days.",
+              "isCorrect": true,
+              "feedback": "Perfect start. Clear and polite."
+            },
+            {
+              "text": "Voglio una pizza margherita e un'acqua.",
+              "english": "I want a margherita pizza and a water.",
+              "isCorrect": false,
+              "feedback": "Wrong place! You are at a car rental desk."
+            },
+            {
+              "text": "Dove sono le chiavi della mia camera?",
+              "english": "Where are the keys to my room?",
+              "isCorrect": false,
+              "feedback": "That's for a hotel, not a car rental."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Ha già una prenotazione o vuole vedere le tariffe?",
+          "english": "Certainly. Do you already have a reservation or do you want to see the rates?",
+          "choices": [
+            {
+              "text": "Ho una prenotazione a nome Rossi. Ecco il codice.",
+              "english": "I have a reservation under the name Rossi. Here is the code.",
+              "isCorrect": true,
+              "feedback": "Good job providing the reservation details."
+            },
+            {
+              "text": "Sì, vorrei un tavolo per due persone per favore.",
+              "english": "Yes, I would like a table for two people please.",
+              "isCorrect": false,
+              "feedback": "Still thinking about restaurants? Focus on the car!"
+            },
+            {
+              "text": "No, non ho la patente di guida con me.",
+              "english": "No, I don't have my driver's license with me.",
+              "isCorrect": false,
+              "feedback": "You need a license to rent a car!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo, vedo la sua prenotazione. Posso avere la sua patente e un documento?",
+          "english": "Great, I see your reservation. Can I have your license and an ID?",
+          "choices": [
+            {
+              "text": "Certamente, ecco la mia patente e la mia carta d'identità.",
+              "english": "Certainly, here is my license and my ID card.",
+              "isCorrect": true,
+              "feedback": "Correct documents provided."
+            },
+            {
+              "text": "Non ho documenti, ma ho molti soldi.",
+              "english": "I don't have documents, but I have a lot of money.",
+              "isCorrect": false,
+              "feedback": "Money is not enough; you need documents."
+            },
+            {
+              "text": "Il mio passaporto è in aeroporto, mi dispiace.",
+              "english": "My passport is at the airport, I'm sorry.",
+              "isCorrect": false,
+              "feedback": "You must have your ID to rent a car."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie. Tutto in regola. La patente è valida per l'Italia.",
+          "english": "Thank you. Everything is in order. The license is valid for Italy.",
+          "choices": [
+            {
+              "text": "Molto bene. Qual è il costo totale del noleggio?",
+              "english": "Very well. What is the total cost of the rental?",
+              "isCorrect": true,
+              "feedback": "Asking about the price is a logical next step."
+            },
+            {
+              "text": "Bene. Posso fumare dentro la macchina?",
+              "english": "Good. Can I smoke inside the car?",
+              "isCorrect": false,
+              "feedback": "Most rentals are non-smoking. Better to ask about costs first."
+            },
+            {
+              "text": "Grazie. A che ora è la colazione domani?",
+              "english": "Thank you. What time is breakfast tomorrow?",
+              "isCorrect": false,
+              "feedback": "Again, this is not a hotel!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Il totale è di centocinquanta euro, inclusi chilometri illimitati.",
+          "english": "The total is one hundred and fifty euros, including unlimited kilometers.",
+          "choices": [
+            {
+              "text": "Va bene, il prezzo mi sembra giusto. Grazie.",
+              "english": "Okay, the price seems fair to me. Thank you.",
+              "isCorrect": true,
+              "feedback": "Accepting the rate politely."
+            },
+            {
+              "text": "È troppo caro! Voglio uno sconto del cinquanta per cento.",
+              "english": "It's too expensive! I want a fifty percent discount.",
+              "isCorrect": false,
+              "feedback": "A bit aggressive for a standard rental."
+            },
+            {
+              "text": "Posso pagare con dei cornetti caldi?",
+              "english": "Can I pay with some hot croissants?",
+              "isCorrect": false,
+              "feedback": "Humorous, but they only accept money or cards."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Preferisce pagare con carta di credito o bancomat?",
+          "english": "Great. Do you prefer to pay by credit card or debit card?",
+          "choices": [
+            {
+              "text": "Pago con la mia carta di credito, per favore.",
+              "english": "I'll pay with my credit card, please.",
+              "isCorrect": true,
+              "feedback": "Credit card is standard for rentals."
+            },
+            {
+              "text": "Voglio pagare con una vecchia moneta d'oro.",
+              "english": "I want to pay with an old gold coin.",
+              "isCorrect": false,
+              "feedback": "They only accept modern payment methods."
+            },
+            {
+              "text": "Posso pagare domani quando torno?",
+              "english": "Can I pay tomorrow when I return?",
+              "isCorrect": false,
+              "feedback": "You must pay or provide a card at the start."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Va bene. Devo chiederle anche un deposito cauzionale.",
+          "english": "Alright. I also need to ask you for a security deposit.",
+          "choices": [
+            {
+              "text": "Nessun problema. A quanto ammonta il deposito?",
+              "english": "No problem. How much is the deposit?",
+              "isCorrect": true,
+              "feedback": "Asking for the amount is correct."
+            },
+            {
+              "text": "Non voglio dare niente, non mi fido di voi.",
+              "english": "I don't want to give anything, I don't trust you.",
+              "isCorrect": false,
+              "feedback": "A deposit is mandatory for car rentals."
+            },
+            {
+              "text": "Posso lasciare il mio gatto come deposito?",
+              "english": "Can I leave my cat as a deposit?",
+              "isCorrect": false,
+              "feedback": "Only money or card holds are accepted."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sono trecento euro. Verranno sbloccati alla fine del noleggio.",
+          "english": "It's three hundred euros. They will be unlocked at the end of the rental.",
+          "choices": [
+            {
+              "text": "D'accordo. Ecco la mia carta per il deposito.",
+              "english": "Agreed. Here is my card for the deposit.",
+              "isCorrect": true,
+              "feedback": "Providing the card for the hold."
+            },
+            {
+              "text": "È troppo! Non ho tutti questi soldi sulla carta.",
+              "english": "It's too much! I don't have all this money on the card.",
+              "isCorrect": false,
+              "feedback": "You need enough credit for the deposit."
+            },
+            {
+              "text": "Va bene, ma voglio gli interessi sul deposito.",
+              "english": "Okay, but I want interest on the deposit.",
+              "isCorrect": false,
+              "feedback": "Rental companies don't pay interest on deposits."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Può inserire la carta nel lettore e digitare il PIN?",
+          "english": "Perfect. Can you insert the card in the reader and type the PIN?",
+          "choices": [
+            {
+              "text": "Sì, faccio subito. Ecco fatto, operazione eseguita.",
+              "english": "Yes, I'll do it right away. There, transaction done.",
+              "isCorrect": true,
+              "feedback": "Completing the payment process."
+            },
+            {
+              "text": "No, il PIN è un segreto che non dirò mai.",
+              "english": "No, the PIN is a secret I will never tell.",
+              "isCorrect": false,
+              "feedback": "You must enter your PIN to pay."
+            },
+            {
+              "text": "La macchina mangia la mia carta, aiuto!",
+              "english": "The machine is eating my card, help!",
+              "isCorrect": false,
+              "feedback": "Just insert it gently into the reader."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie. Ecco lo scontrino. Ora andiamo a vedere l'auto.",
+          "english": "Thank you. Here is the receipt. Now let's go see the car.",
+          "choices": [
+            {
+              "text": "Ottimo, andiamo subito. Sono pronto per guidare.",
+              "english": "Great, let's go right away. I am ready to drive.",
+              "isCorrect": true,
+              "feedback": "Ready for the next step."
+            },
+            {
+              "text": "No, preferisco restare qui a leggere il contratto.",
+              "english": "No, I prefer to stay here and read the contract.",
+              "isCorrect": false,
+              "feedback": "You can read it later; let's see the car first."
+            },
+            {
+              "text": "Voglio un'altra macchina, questa non mi piace.",
+              "english": "I want another car, I don't like this one.",
+              "isCorrect": false,
+              "feedback": "You haven't even seen it yet!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "choosing_a_car",
+      "title": "Choosing a Car",
+      "description": "Select the vehicle that best suits your needs.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Abbiamo diversi modelli disponibili. Preferisce un'auto piccola o un SUV?",
+          "english": "We have several models available. Do you prefer a small car or an SUV?",
+          "choices": [
+            {
+              "text": "Preferisco un'auto piccola, è più facile da parcheggiare.",
+              "english": "I prefer a small car, it's easier to park.",
+              "isCorrect": true,
+              "feedback": "Smart choice for Italian cities."
+            },
+            {
+              "text": "Voglio un autobus per venti persone.",
+              "english": "I want a bus for twenty people.",
+              "isCorrect": false,
+              "feedback": "They usually only rent cars and SUVs here."
+            },
+            {
+              "text": "Non mi piace guidare, preferisco camminare.",
+              "english": "Then why are you at a car rental?",
+              "isCorrect": false,
+              "feedback": "Then why are you at a car rental?"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottima scelta. Abbiamo una Fiat 500. Vuole il cambio manuale o automatico?",
+          "english": "Great choice. We have a Fiat 500. Do you want manual or automatic transmission?",
+          "choices": [
+            {
+              "text": "Vorrei il cambio automatico, se possibile.",
+              "english": "I would like automatic transmission, if possible.",
+              "isCorrect": true,
+              "feedback": "Good. Automatic is common for tourists."
+            },
+            {
+              "text": "Il cambio non serve, vado sempre dritto.",
+              "english": "The gear shift isn't needed, I always go straight.",
+              "isCorrect": false,
+              "feedback": "That's not how cars work!"
+            },
+            {
+              "text": "Preferisco una bicicletta con il cestino.",
+              "english": "I prefer a bicycle with a basket.",
+              "isCorrect": false,
+              "feedback": "Wrong vehicle type."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, abbiamo una versione automatica. Quante porte desidera?",
+          "english": "Yes, we have an automatic version. How many doors do you want?",
+          "choices": [
+            {
+              "text": "Una macchina con cinque porte è più comoda per i bagagli.",
+              "english": "A car with five doors is more convenient for luggage.",
+              "isCorrect": true,
+              "feedback": "Correct logic for a trip."
+            },
+            {
+              "text": "Voglio una macchina senza porte, come una jeep.",
+              "english": "I want a car without doors, like a jeep.",
+              "isCorrect": false,
+              "feedback": "Not available for this model."
+            },
+            {
+              "text": "Non lo so, non so contare fino a cinque.",
+              "english": "I don't know, I don't know how to count to five.",
+              "isCorrect": false,
+              "feedback": "Basic numbers are important!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. La macchina è grigia. Ha bisogno del navigatore GPS?",
+          "english": "Perfect. The car is gray. Do you need a GPS navigator?",
+          "choices": [
+            {
+              "text": "Sì, il navigatore è molto utile per me. Grazie.",
+              "english": "Yes, the navigator is very useful for me. Thank you.",
+              "isCorrect": true,
+              "feedback": "Helpful for navigating new roads."
+            },
+            {
+              "text": "No, uso le stelle per trovare la strada.",
+              "english": "No, I use the stars to find my way.",
+              "isCorrect": false,
+              "feedback": "Romantic, but GPS is safer."
+            },
+            {
+              "text": "Preferisco usare una vecchia mappa di carta rotta.",
+              "english": "I prefer to use a broken old paper map.",
+              "isCorrect": false,
+              "feedback": "GPS is much easier."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Benissimo. Aggiungiamo il GPS al contratto. Altro?",
+          "english": "Very well. We'll add the GPS to the contract. Anything else?",
+          "choices": [
+            {
+              "text": "No, per ora va bene così. Grazie mille.",
+              "english": "No, that's fine for now. Thanks a lot.",
+              "isCorrect": true,
+              "feedback": "Politely finishing the selection."
+            },
+            {
+              "text": "Sì, voglio anche un autista privato.",
+              "english": "Yes, I also want a private driver.",
+              "isCorrect": false,
+              "feedback": "This is a self-drive rental."
+            },
+            {
+              "text": "Voglio un gelato al cioccolato ora.",
+              "english": "I want a chocolate gelato now.",
+              "isCorrect": false,
+              "feedback": "They don't sell gelato here!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Desidera anche un seggiolino per bambini o delle catene?",
+          "english": "Do you also want a child seat or chains?",
+          "choices": [
+            {
+              "text": "No, non ho bisogno di questi accessori. Grazie.",
+              "english": "No, I don't need these accessories. Thank you.",
+              "isCorrect": true,
+              "feedback": "Declining extras clearly."
+            },
+            {
+              "text": "Sì, voglio un seggiolino per il mio cane.",
+              "english": "Yes, I want a seat for my dog.",
+              "isCorrect": false,
+              "feedback": "Usually these are for human children."
+            },
+            {
+              "text": "Voglio delle catene d'oro per la macchina.",
+              "english": "I want gold chains for the car.",
+              "isCorrect": false,
+              "feedback": "Snow chains are for safety, not jewelry!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Abbiamo anche l'opzione per un secondo conducente.",
+          "english": "We also have an option for a second driver.",
+          "choices": [
+            {
+              "text": "No, guido solo io per tutto il tempo.",
+              "english": "No, only I will drive the whole time.",
+              "isCorrect": true,
+              "feedback": "Staying with one driver."
+            },
+            {
+              "text": "Sì, voglio aggiungere il mio amico invisibile.",
+              "english": "Yes, I want to add my invisible friend.",
+              "isCorrect": false,
+              "feedback": "The driver must have a valid license."
+            },
+            {
+              "text": "Posso far guidare un bambino di dieci anni?",
+              "english": "Can I let a ten-year-old child drive?",
+              "isCorrect": false,
+              "feedback": "Absolutely not! Drivers must be adults."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "D'accordo. Ricordi che l'auto è a benzina, non diesel.",
+          "english": "Agreed. Remember that the car is gasoline, not diesel.",
+          "choices": [
+            {
+              "text": "Grazie del consiglio. Starò attento al distributore.",
+              "english": "Thanks for the advice. I'll be careful at the pump.",
+              "isCorrect": true,
+              "feedback": "Important to use the right fuel."
+            },
+            {
+              "text": "Metterò dell'acqua minerale nel serbatoio.",
+              "english": "I'll put some mineral water in the tank.",
+              "isCorrect": false,
+              "feedback": "That would destroy the engine!"
+            },
+            {
+              "text": "Il diesel ha un sapore migliore per l'auto?",
+              "english": "Does diesel taste better for the car?",
+              "isCorrect": false,
+              "feedback": "Cars don't taste; they need specific fuel."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "L'auto si trova al parcheggio P3, settore B. Ecco le chiavi.",
+          "english": "The car is at parking lot P3, sector B. Here are the keys.",
+          "choices": [
+            {
+              "text": "Perfetto, vado subito a cercarla. Grazie di tutto.",
+              "english": "Perfect, I'm going to look for it right away. Thanks for everything.",
+              "isCorrect": true,
+              "feedback": "Ready to pick up the vehicle."
+            },
+            {
+              "text": "Il parcheggio è troppo lontano, voglio volare.",
+              "english": "The parking is too far, I want to fly.",
+              "isCorrect": false,
+              "feedback": "It's just a short walk away."
+            },
+            {
+              "text": "Ho paura del colore grigio, posso averla rossa?",
+              "english": "I'm afraid of the color gray, can I have it red?",
+              "isCorrect": false,
+              "feedback": "Gray is the only one available now."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buon viaggio! La macchina è proprio là fuori.",
+          "english": "Have a good trip! The car is right out there.",
+          "choices": [
+            {
+              "text": "Grazie mille e arrivederci! A presto.",
+              "english": "Thanks a lot and goodbye! See you soon.",
+              "isCorrect": true,
+              "feedback": "Friendly departure."
+            },
+            {
+              "text": "Non voglio andare via, mi piace l'ufficio.",
+              "english": "I don't want to leave, I like the office.",
+              "isCorrect": false,
+              "feedback": "The car is waiting for you!"
+            },
+            {
+              "text": "Dov'è l'aeroporto? Mi sono già perso.",
+              "english": "Where is the airport? I'm already lost.",
+              "isCorrect": false,
+              "feedback": "Use the GPS we just added!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insurance_and_safety",
+      "title": "Insurance & Safety",
+      "description": "Discuss coverage options and safety rules.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Parliamo dell'assicurazione. Vuole la copertura totale per i danni?",
+          "english": "Let's talk about insurance. Do you want full coverage for damages?",
+          "choices": [
+            {
+              "text": "Sì, preferisco la copertura totale per essere sicuro.",
+              "english": "Yes, I prefer full coverage to be safe.",
+              "isCorrect": true,
+              "feedback": "Wise choice for peace of mind."
+            },
+            {
+              "text": "No, non credo negli incidenti.",
+              "english": "No, I don't believe in accidents.",
+              "isCorrect": false,
+              "feedback": "Accidents happen regardless of belief."
+            },
+            {
+              "text": "L'assicurazione è per i deboli.",
+              "english": "Insurance is for the weak.",
+              "isCorrect": false,
+              "feedback": "That's not a very responsible attitude."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Bene. Con la copertura totale la franchigia è zero.",
+          "english": "Good. With full coverage the deductible is zero.",
+          "choices": [
+            {
+              "text": "Ottimo. Cosa succede in caso di guasto alla macchina?",
+              "english": "Great. What happens in case of a car breakdown?",
+              "isCorrect": true,
+              "feedback": "Good question about road assistance."
+            },
+            {
+              "text": "Se la macchina si rompe, ne compro una nuova.",
+              "english": "If the car breaks, I'll buy a new one.",
+              "isCorrect": false,
+              "feedback": "The rental company has a better solution."
+            },
+            {
+              "text": "In caso di guasto, inizio a piangere.",
+              "english": "In case of a breakdown, I'll start crying.",
+              "isCorrect": false,
+              "feedback": "Asking for help is more effective."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Abbiamo l'assistenza stradale h24. Basta chiamare questo numero.",
+          "english": "We have 24/7 road assistance. Just call this number.",
+          "choices": [
+            {
+              "text": "Perfetto, salvo il numero sul mio telefono.",
+              "english": "Perfect, I'll save the number on my phone.",
+              "isCorrect": true,
+              "feedback": "Very practical."
+            },
+            {
+              "text": "Non ho un telefono, uso i segnali di fumo.",
+              "english": "I don't have a phone, I use smoke signals.",
+              "isCorrect": false,
+              "feedback": "Not very useful on the highway."
+            },
+            {
+              "text": "Gettiamo il numero dalla finestra.",
+              "english": "Let's throw the number out the window.",
+              "isCorrect": false,
+              "feedback": "You will need that number!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ricordi che in Italia la velocità massima in autostrada è 130 km/h.",
+          "english": "Remember that in Italy the maximum speed on the highway is 130 km/h.",
+          "choices": [
+            {
+              "text": "Grazie dell'informazione, starò molto attento ai limiti.",
+              "english": "Thanks for the information, I will be very careful with the limits.",
+              "isCorrect": true,
+              "feedback": "Safety first."
+            },
+            {
+              "text": "Voglio guidare a trecento all'ora!",
+              "english": "I want to drive at three hundred an hour!",
+              "isCorrect": false,
+              "feedback": "That is illegal and dangerous."
+            },
+            {
+              "text": "Le multe sono solo suggerimenti, giusto?",
+              "english": "Fines are just suggestions, right?",
+              "isCorrect": false,
+              "feedback": "No, fines must be paid!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Esatto. Ecco le chiavi e il contratto da firmare qui.",
+          "english": "Exactly. Here are the keys and the contract to sign here.",
+          "choices": [
+            {
+              "text": "Ecco la mia firma. Dove si trova il parcheggio?",
+              "english": "Here is my signature. Where is the parking lot?",
+              "isCorrect": true,
+              "feedback": "Ready to pick up the car."
+            },
+            {
+              "text": "Firmo con il sangue, è più solenne.",
+              "english": "I'll sign with blood, it's more solemn.",
+              "isCorrect": false,
+              "feedback": "A pen will work just fine."
+            },
+            {
+              "text": "Non firmo niente, voglio andare via subito.",
+              "english": "I'm not signing anything, I want to leave right away.",
+              "isCorrect": false,
+              "feedback": "No signature, no car."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Il parcheggio è dietro l'edificio. Segua i cartelli gialli.",
+          "english": "The parking is behind the building. Follow the yellow signs.",
+          "choices": [
+            {
+              "text": "Va bene, vado subito a controllare l'auto fuori.",
+              "english": "Okay, I'm going right away to check the car outside.",
+              "isCorrect": true,
+              "feedback": "Following directions."
+            },
+            {
+              "text": "Non mi piace il giallo, preferisco il blu.",
+              "english": "I don't like yellow, I prefer blue.",
+              "isCorrect": false,
+              "feedback": "The signs are yellow, you must follow them."
+            },
+            {
+              "text": "Voglio che mi porti la macchina qui davanti.",
+              "english": "I want you to bring the car here in front.",
+              "isCorrect": false,
+              "feedback": "You need to go to the parking lot yourself."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Prima di partire, controlli se ci sono graffi o danni.",
+          "english": "Before leaving, check if there are scratches or damages.",
+          "choices": [
+            {
+              "text": "Certamente, farò un controllo accurato prima di uscire.",
+              "english": "Certainly, I will do a thorough check before leaving.",
+              "isCorrect": true,
+              "feedback": "Very important to avoid future disputes."
+            },
+            {
+              "text": "No, chiudo gli occhi e inizio a guidare.",
+              "english": "No, I close my eyes and start driving.",
+              "isCorrect": false,
+              "feedback": "You should definitely look at the car first!"
+            },
+            {
+              "text": "Voglio un pennarello per disegnare sulla macchina.",
+              "english": "I want a marker to draw on the car.",
+              "isCorrect": false,
+              "feedback": "Don't damage the rental car!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Se trova qualcosa di nuovo, me lo dica immediatamente.",
+          "english": "If you find anything new, tell me immediately.",
+          "choices": [
+            {
+              "text": "Va bene, la chiamerò subito se vedo un problema.",
+              "english": "Okay, I'll call you right away if I see a problem.",
+              "isCorrect": true,
+              "feedback": "Good communication."
+            },
+            {
+              "text": "Preferisco gridare forte nel parcheggio.",
+              "english": "I prefer to shout loudly in the parking lot.",
+              "isCorrect": false,
+              "feedback": "Calling the office is more effective."
+            },
+            {
+              "text": "Nasconderò i danni con degli adesivi colorati.",
+              "english": "I will hide the damages with colored stickers.",
+              "isCorrect": false,
+              "feedback": "That won't work during the return check."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ha domande su come funziona il freno a mano o il cambio?",
+          "english": "Do you have questions about how the handbrake or gears work?",
+          "choices": [
+            {
+              "text": "No, conosco bene questo modello. Grazie mille.",
+              "english": "No, I know this model well. Thanks a lot.",
+              "isCorrect": true,
+              "feedback": "Confident with the vehicle."
+            },
+            {
+              "text": "Cos'è un freno? Io voglio solo accelerare.",
+              "english": "What is a brake? I only want to accelerate.",
+              "isCorrect": false,
+              "feedback": "Brakes are essential for safety!"
+            },
+            {
+              "text": "Voglio un manuale d'uso di mille pagine.",
+              "english": "I want a thousand-page user manual.",
+              "isCorrect": false,
+              "feedback": "The basics are usually explained quickly."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Le auguro un buon viaggio in Italia. Sia prudente!",
+          "english": "Perfect. I wish you a good trip in Italy. Be careful!",
+          "choices": [
+            {
+              "text": "Grazie mille del suo aiuto. Arrivederci!",
+              "english": "Thanks a lot for your help. Goodbye!",
+              "isCorrect": true,
+              "feedback": "Friendly departure."
+            },
+            {
+              "text": "Andrò velocissimo per arrivare prima!",
+              "english": "I will go very fast to arrive sooner!",
+              "isCorrect": false,
+              "feedback": "Remember the 130 km/h limit!"
+            },
+            {
+              "text": "Dove sono le Alpi? Voglio andare a sciare ora.",
+              "english": "Where are the Alps? I want to go skiing now.",
+              "isCorrect": false,
+              "feedback": "Check your GPS for the route!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "returning_the_car",
+      "title": "Returning the Car",
+      "description": "Drop off the vehicle and finalize the rental.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Riporta la macchina del noleggio?",
+          "english": "Good morning! Are you returning the rental car?",
+          "choices": [
+            {
+              "text": "Sì, ho parcheggiato l'auto nel posto numero dieci.",
+              "english": "Yes, I parked the car in spot number ten.",
+              "isCorrect": true,
+              "feedback": "Clear information."
+            },
+            {
+              "text": "No, ho perso la macchina in centro.",
+              "english": "No, I lost the car downtown.",
+              "isCorrect": false,
+              "feedback": "That's a big problem!"
+            },
+            {
+              "text": "La macchina è nel fiume, mi dispiace.",
+              "english": "The car is in the river, I'm sorry.",
+              "isCorrect": false,
+              "feedback": "Oh no, hope you have that insurance!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Bene. Ha fatto il pieno di benzina prima di tornare?",
+          "english": "Good. Did you fill up the tank with gas before returning?",
+          "choices": [
+            {
+              "text": "Sì, il serbatoio è pieno. Ho la ricevuta qui.",
+              "english": "Yes, the tank is full. I have the receipt here.",
+              "isCorrect": true,
+              "feedback": "Excellent, avoiding extra charges."
+            },
+            {
+              "text": "No, non c'è più benzina, ho spinto la macchina.",
+              "english": "No, there's no more gas, I pushed the car.",
+              "isCorrect": false,
+              "feedback": "You will be charged for the missing fuel."
+            },
+            {
+              "text": "Ho messo del latte nel serbatoio, va bene?",
+              "english": "I put some milk in the tank, is that okay?",
+              "isCorrect": false,
+              "feedback": "Definitely not! That will ruin the engine."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo. Controllo subito se ci sono nuovi danni sulla carrozzeria.",
+          "english": "Great. I'll check right away if there are any new damages on the bodywork.",
+          "choices": [
+            {
+              "text": "Certamente, la macchina è in perfette condizioni.",
+              "english": "Certainly, the car is in perfect condition.",
+              "isCorrect": true,
+              "feedback": "Confidently stating the state of the car."
+            },
+            {
+              "text": "C'è un piccolo graffio, ma è colpa di un gatto.",
+              "english": "There's a small scratch, but it's a cat's fault.",
+              "isCorrect": false,
+              "feedback": "You are still responsible for it."
+            },
+            {
+              "text": "Sì, ho tolto le ruote per sicurezza.",
+              "english": "Yes, I took off the wheels for safety.",
+              "isCorrect": false,
+              "feedback": "The car needs its wheels!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "La macchina è a posto. Posso avere le chiavi, per favore?",
+          "english": "The car is fine. Can I have the keys, please?",
+          "choices": [
+            {
+              "text": "Ecco le chiavi. È stato un piacere noleggiare da voi.",
+              "english": "Here are the keys. It was a pleasure renting from you.",
+              "isCorrect": true,
+              "feedback": "Polite conclusion."
+            },
+            {
+              "text": "Le chiavi sono magiche, non posso darle a nessuno.",
+              "english": "The keys are magical, I can't give them to anyone.",
+              "isCorrect": false,
+              "feedback": "They belong to the rental company!"
+            },
+            {
+              "text": "Ho mangiato le chiavi, erano croccanti.",
+              "english": "I ate the keys, they were crunchy.",
+              "isCorrect": false,
+              "feedback": "That is definitely not healthy."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Grazie a lei. Le invieremo la ricevuta finale via email.",
+          "english": "Thank you. We will send you the final receipt via email.",
+          "choices": [
+            {
+              "text": "Perfetto. Quanto tempo ci vuole per ricevere l'email?",
+              "english": "Perfect. How long does it take to receive the email?",
+              "isCorrect": true,
+              "feedback": "Practical question about the process."
+            },
+            {
+              "text": "Non ho un'email, vivo in una grotta.",
+              "english": "I don't have an email, I live in a cave.",
+              "isCorrect": false,
+              "feedback": "They need an email to send the receipt."
+            },
+            {
+              "text": "Voglio una ricevuta scritta su una pietra.",
+              "english": "I want a receipt written on a stone.",
+              "isCorrect": false,
+              "feedback": "Digital receipts are much more common now."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Arriverà tra pochi minuti. Ha dimenticato qualcosa nell'auto?",
+          "english": "It will arrive in a few minutes. Did you forget anything in the car?",
+          "choices": [
+            {
+              "text": "No, ho controllato bene tutto il bagagliaio. Grazie.",
+              "english": "No, I checked the whole trunk well. Thank you.",
+              "isCorrect": true,
+              "feedback": "Confirming no personal items left."
+            },
+            {
+              "text": "Sì, ho lasciato il mio elefante sul sedile posteriore.",
+              "english": "Yes, I left my elephant on the back seat.",
+              "isCorrect": false,
+              "feedback": "An elephant wouldn't fit in a Fiat 500!"
+            },
+            {
+              "text": "Ho dimenticato il mio cuore in questa macchina.",
+              "english": "I forgot my heart in this car.",
+              "isCorrect": false,
+              "feedback": "Very poetic, but check for your wallet too."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Tutto a posto allora. Com'è andato il suo viaggio in Italia?",
+          "english": "Everything is in order then. How was your trip in Italy?",
+          "choices": [
+            {
+              "text": "È stato un viaggio bellissimo, l'auto è stata perfetta.",
+              "english": "It was a beautiful trip, the car was perfect.",
+              "isCorrect": true,
+              "feedback": "Positive feedback."
+            },
+            {
+              "text": "Terribile, troppe macchine e troppa gente!",
+              "english": "Terrible, too many cars and too many people!",
+              "isCorrect": false,
+              "feedback": "Italian traffic can be intense, but it's part of the experience."
+            },
+            {
+              "text": "Non lo so, ho dormito per tutto il tempo.",
+              "english": "I don't know, I slept the whole time.",
+              "isCorrect": false,
+              "feedback": "Hard to enjoy the trip while sleeping!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Mi fa piacere. Spero che tornerà presto a trovarci.",
+          "english": "I'm glad. I hope you will come back to visit us soon.",
+          "choices": [
+            {
+              "text": "Sicuramente! Mi piace molto l'Italia. A presto.",
+              "english": "Definitely! I like Italy very much. See you soon.",
+              "isCorrect": true,
+              "feedback": "Friendly promise to return."
+            },
+            {
+              "text": "No, voglio andare a vivere sulla Luna ora.",
+              "english": "No, I want to go live on the Moon now.",
+              "isCorrect": false,
+              "feedback": "That's a bit further away than Italy."
+            },
+            {
+              "text": "Voi siete troppo gentili, mi fate paura.",
+              "english": "You are too kind, you scare me.",
+              "isCorrect": false,
+              "feedback": "They are just being professional."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Le serve un taxi per andare in aeroporto o in stazione?",
+          "english": "Do you need a taxi to go to the airport or the station?",
+          "choices": [
+            {
+              "text": "Sì, un taxi per l'aeroporto sarebbe molto utile. Grazie.",
+              "english": "Yes, a taxi to the airport would be very useful. Thank you.",
+              "isCorrect": true,
+              "feedback": "Accepting assistance for onward travel."
+            },
+            {
+              "text": "No, vado a piedi fino a casa mia a Londra.",
+              "english": "No, I'm walking all the way to my house in London.",
+              "isCorrect": false,
+              "feedback": "That's a very long walk!"
+            },
+            {
+              "text": "Voglio andare all'aeroporto con un cavallo bianco.",
+              "english": "I want to go to the airport with a white horse.",
+              "isCorrect": false,
+              "feedback": "Taxis are more common and faster."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Chiamo subito un taxi per lei. Arriverà tra due minuti.",
+          "english": "I'll call a taxi for you right away. It will arrive in two minutes.",
+          "choices": [
+            {
+              "text": "Molte grazie per tutto. Buona giornata e arrivederci!",
+              "english": "Many thanks for everything. Have a good day and goodbye!",
+              "isCorrect": true,
+              "feedback": "Polite final goodbye."
+            },
+            {
+              "text": "Due minuti sono troppi, vado via ora!",
+              "english": "Two minutes are too many, I'm leaving now!",
+              "isCorrect": false,
+              "feedback": "Patience is a virtue."
+            },
+            {
+              "text": "Taxi? Cos'è un taxi? Io voglio una nave.",
+              "english": "Taxi? What is a taxi? I want a ship.",
+              "isCorrect": false,
+              "feedback": "A taxi will take you to your next stop."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

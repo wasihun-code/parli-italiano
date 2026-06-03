@@ -1,0 +1,1013 @@
+{
+  "scenarioId": 104,
+  "conversations": [
+    {
+      "id": "booking_a_flight",
+      "title": "Booking a Flight",
+      "description": "A friend helps you book a flight on a website.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Stai guardando il sito per i voli?",
+          "english": "Hi! Are you looking at the website for flights?",
+          "choices": [
+            {
+              "text": "Sì, cerco un volo per Roma. Ma la pagina è lenta.",
+              "isCorrect": true,
+              "feedback": "Great start. You explain what you are doing and the problem."
+            },
+            {
+              "text": "Voglio mangiare una pizza con tanta mozzarella.",
+              "isCorrect": false,
+              "feedback": "This is a different topic. We are talking about flights."
+            },
+            {
+              "text": "Sì, il mio gatto sta molto male da questa mattina.",
+              "isCorrect": false,
+              "feedback": "This violates the domain rule. No animals."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. Hai messo la data di andata e ritorno?",
+          "english": "I understand. Did you put the departure and return date?",
+          "choices": [
+            {
+              "text": "Ho messo l'andata, ma non trovo il ritorno.",
+              "isCorrect": true,
+              "feedback": "Perfect! You explain the issue clearly."
+            },
+            {
+              "text": "Il medico mi ha dato una cura molto lunga.",
+              "isCorrect": false,
+              "feedback": "Domain violation. No medical terms."
+            },
+            {
+              "text": "Voglio un tavolo per due persone fuori qui.",
+              "isCorrect": false,
+              "feedback": "This is for a restaurant, not a flight website."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Devi cliccare sul pulsante a destra. Lo vedi?",
+          "english": "You need to click on the button on the right. Do you see it?",
+          "choices": [
+            {
+              "text": "Ah sì, il pulsante verde. Ora clicco subito.",
+              "isCorrect": true,
+              "feedback": "Good! You acknowledge the instruction."
+            },
+            {
+              "text": "Devo pagare il conto al cameriere al tavolo.",
+              "isCorrect": false,
+              "feedback": "Wrong domain. We are booking online."
+            },
+            {
+              "text": "Non voglio andare in ospedale adesso, scusi.",
+              "isCorrect": false,
+              "feedback": "Wrong domain. No hospitals."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Adesso seleziona il numero di passeggeri.",
+          "english": "Perfect. Now select the number of passengers.",
+          "choices": [
+            {
+              "text": "Siamo in due. Metto due passeggeri e vado avanti.",
+              "isCorrect": true,
+              "feedback": "Excellent follow-up."
+            },
+            {
+              "text": "Prendo un menu fisso per favore, con dolce oggi.",
+              "isCorrect": false,
+              "feedback": "This is for dining, not flying."
+            },
+            {
+              "text": "Voglio comprare una medicina per il mal di testa.",
+              "isCorrect": false,
+              "feedback": "Medical vocabulary is forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Bravo! Ora puoi fare il pagamento con la carta.",
+          "english": "Well done! Now you can make the payment with the card.",
+          "choices": [
+            {
+              "text": "Ok, inserisco i dati della carta di credito.",
+              "isCorrect": true,
+              "feedback": "You successfully completed the task!"
+            },
+            {
+              "text": "Il gatto nero ha mangiato tutto il mio cibo.",
+              "isCorrect": false,
+              "feedback": "Domain rule violation."
+            },
+            {
+              "text": "Scusi, dov'è il pronto soccorso qui vicino?",
+              "isCorrect": false,
+              "feedback": "Domain rule violation."
+            }
+          ]
+        },
+        {
+          "role": "host",
+          "text": "Hai visto il prezzo totale?",
+          "english": "Did you see the total price?",
+          "choices": [
+            {
+              "text": "Sì, ho visto il prezzo totale. Tutto bene.",
+              "english": "Yes, I saw the total price. Everything is fine.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Voglio mangiare una pizza con tanta mozzarella.",
+              "english": "I want to eat a pizza with a lot of mozzarella.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Il mio gatto sta male.",
+              "english": "My cat is sick.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m6"
+        },
+        {
+          "role": "host",
+          "text": "Ottimo. Hai controllato la data?",
+          "english": "Excellent. Did you check the date?",
+          "choices": [
+            {
+              "text": "Sì, ho guardato la data. Esatto.",
+              "english": "Yes, I looked at the date. Exactly.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Prendo un menu fisso per favore.",
+              "english": "I'll take a set menu please.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Il medico mi ha dato una cura.",
+              "english": "The doctor gave me a cure.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m7"
+        },
+        {
+          "role": "host",
+          "text": "Vedi il pulsante verde a destra?",
+          "english": "Do you see the green button on the right?",
+          "choices": [
+            {
+              "text": "Sì, vedo il pulsante verde.",
+              "english": "Yes, I see the green button.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Devo pagare il conto al cameriere.",
+              "english": "I have to pay the bill to the waiter.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Scusi, dov'è il pronto soccorso?",
+              "english": "Excuse me, where is the emergency room?",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m8"
+        },
+        {
+          "role": "host",
+          "text": "Hai messo i dati della tua carta?",
+          "english": "Did you put your card details?",
+          "choices": [
+            {
+              "text": "Sì, ho messo i dati per il pagamento.",
+              "english": "Yes, I put the details for the payment.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Il gatto nero ha mangiato tutto.",
+              "english": "The black cat ate everything.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Non voglio andare in ospedale.",
+              "english": "I don't want to go to the hospital.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m9"
+        },
+        {
+          "role": "host",
+          "text": "Tutto fatto. Puoi stare tranquillo.",
+          "english": "All done. You can rest easy.",
+          "choices": [
+            {
+              "text": "Perfetto, grazie mille.",
+              "english": "Perfect, thanks a lot.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Voglio un tavolo per due persone.",
+              "english": "I want a table for two people.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "La mia casa è molto grande.",
+              "english": "My house is very big.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m10"
+        }
+      ]
+    },
+    {
+      "id": "hotel_booking_app",
+      "title": "Hotel Booking App",
+      "description": "Booking a hotel room using a smartphone app.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Hai scaricato l'app per prenotare l'hotel?",
+          "english": "Did you download the app to book the hotel?",
+          "choices": [
+            {
+              "text": "Sì, l'ho scaricata sul cellulare ieri sera.",
+              "isCorrect": true,
+              "feedback": "Good response. Confirms you have the app."
+            },
+            {
+              "text": "Ho mangiato una pizza molto buona ieri sera.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the app."
+            },
+            {
+              "text": "Il cane di Marco è molto grande in giardino.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic (animals)."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottimo. Fai il login con la tua email.",
+          "english": "Excellent. Log in with your email.",
+          "choices": [
+            {
+              "text": "Fatto. Ora vedo il mio account utente.",
+              "isCorrect": true,
+              "feedback": "Perfect. Logging in is successful."
+            },
+            {
+              "text": "Voglio bere una birra fresca stasera.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Il medico mi aspetta in ospedale ora.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic (medical)."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Cerca un hotel. Vuoi una camera singola o doppia?",
+          "english": "Search for a hotel. Do you want a single or double room?",
+          "choices": [
+            {
+              "text": "Cerco una camera doppia per due notti.",
+              "isCorrect": true,
+              "feedback": "Clear and relevant answer."
+            },
+            {
+              "text": "Voglio un tavolo vicino alla finestra.",
+              "isCorrect": false,
+              "feedback": "Restaurant vocabulary."
+            },
+            {
+              "text": "Ho un forte dolore alla schiena oggi.",
+              "isCorrect": false,
+              "feedback": "Medical vocabulary."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ho trovato un'offerta con un buono sconto.",
+          "english": "I found an offer with a good discount.",
+          "choices": [
+            {
+              "text": "Che bello! Qual è il prezzo totale?",
+              "isCorrect": true,
+              "feedback": "Asking for the price is logical."
+            },
+            {
+              "text": "Il cameriere ha portato il conto ora.",
+              "isCorrect": false,
+              "feedback": "Restaurant vocabulary."
+            },
+            {
+              "text": "Devo comprare un pesce al mercato qui.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Il totale è cento euro. Confermo la prenotazione?",
+          "english": "The total is one hundred euros. Should I confirm the booking?",
+          "choices": [
+            {
+              "text": "Sì, conferma. Poi mandami la ricevuta.",
+              "isCorrect": true,
+              "feedback": "Task completed successfully."
+            },
+            {
+              "text": "Non mi piace il cibo in questo locale.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Ho paura dei cani grandi nel bel parco.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "role": "host",
+          "text": "Hai visto il prezzo totale?",
+          "english": "Did you see the total price?",
+          "choices": [
+            {
+              "text": "Sì, ho visto il prezzo totale. Tutto bene.",
+              "english": "Yes, I saw the total price. Everything is fine.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Voglio mangiare una pizza con tanta mozzarella.",
+              "english": "I want to eat a pizza with a lot of mozzarella.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Il mio gatto sta male.",
+              "english": "My cat is sick.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m6"
+        },
+        {
+          "role": "host",
+          "text": "Ottimo. Hai controllato la data?",
+          "english": "Excellent. Did you check the date?",
+          "choices": [
+            {
+              "text": "Sì, ho guardato la data. Esatto.",
+              "english": "Yes, I looked at the date. Exactly.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Prendo un menu fisso per favore.",
+              "english": "I'll take a set menu please.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Il medico mi ha dato una cura.",
+              "english": "The doctor gave me a cure.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m7"
+        },
+        {
+          "role": "host",
+          "text": "Vedi il pulsante verde a destra?",
+          "english": "Do you see the green button on the right?",
+          "choices": [
+            {
+              "text": "Sì, vedo il pulsante verde.",
+              "english": "Yes, I see the green button.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Devo pagare il conto al cameriere.",
+              "english": "I have to pay the bill to the waiter.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Scusi, dov'è il pronto soccorso?",
+              "english": "Excuse me, where is the emergency room?",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m8"
+        },
+        {
+          "role": "host",
+          "text": "Hai messo i dati della tua carta?",
+          "english": "Did you put your card details?",
+          "choices": [
+            {
+              "text": "Sì, ho messo i dati per il pagamento.",
+              "english": "Yes, I put the details for the payment.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Il gatto nero ha mangiato tutto.",
+              "english": "The black cat ate everything.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Non voglio andare in ospedale.",
+              "english": "I don't want to go to the hospital.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m9"
+        },
+        {
+          "role": "host",
+          "text": "Tutto fatto. Puoi stare tranquillo.",
+          "english": "All done. You can rest easy.",
+          "choices": [
+            {
+              "text": "Perfetto, grazie mille.",
+              "english": "Perfect, thanks a lot.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Voglio un tavolo per due persone.",
+              "english": "I want a table for two people.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "La mia casa è molto grande.",
+              "english": "My house is very big.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m10"
+        }
+      ]
+    },
+    {
+      "id": "confirmation_email",
+      "title": "Confirmation Email",
+      "description": "Checking for the confirmation email after booking.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Hai controllato la tua email stamattina?",
+          "english": "Did you check your email this morning?",
+          "choices": [
+            {
+              "text": "Sì, ma non ho visto nessuna notifica.",
+              "isCorrect": true,
+              "feedback": "Good. You report the issue clearly."
+            },
+            {
+              "text": "Ho ordinato un cornetto e un buon caffè.",
+              "isCorrect": false,
+              "feedback": "Restaurant vocabulary."
+            },
+            {
+              "text": "Sono andato dal veterinario ieri sera.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Strano. Aspetti il messaggio di conferma per il volo?",
+          "english": "Strange. Are you waiting for the confirmation message for the flight?",
+          "choices": [
+            {
+              "text": "Esatto. Ho fatto la prenotazione ieri.",
+              "isCorrect": true,
+              "feedback": "Confirming the situation."
+            },
+            {
+              "text": "No, aspetto il cameriere con la pizza.",
+              "isCorrect": false,
+              "feedback": "Restaurant vocabulary."
+            },
+            {
+              "text": "Voglio andare a visitare lo zoo adesso.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Forse l'email è finita nello spam. Hai guardato lì?",
+          "english": "Maybe the email ended up in spam. Did you look there?",
+          "choices": [
+            {
+              "text": "Non ci ho pensato. Adesso apro e guardo.",
+              "isCorrect": true,
+              "feedback": "Good response. Taking action."
+            },
+            {
+              "text": "Non voglio mangiare in quel ristorante.",
+              "isCorrect": false,
+              "feedback": "Restaurant vocabulary."
+            },
+            {
+              "text": "Mi fa male la gamba destra da ieri sera.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "L'hai trovata? Di solito arriva subito.",
+          "english": "Did you find it? Usually it arrives right away.",
+          "choices": [
+            {
+              "text": "Ah, eccola qui! Era davvero nello spam.",
+              "isCorrect": true,
+              "feedback": "Problem solved!"
+            },
+            {
+              "text": "Ho fame, andiamo a cercare da mangiare.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Questo gatto è molto bello e piccolino.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Meno male! C'è il numero della prenotazione?",
+          "english": "Thank goodness! Is the booking number there?",
+          "choices": [
+            {
+              "text": "Sì, tutto a posto. Posso stare tranquillo.",
+              "isCorrect": true,
+              "feedback": "Perfect ending."
+            },
+            {
+              "text": "Il conto è sbagliato, voglio parlare con te.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "L'infermiere è arrivato in ritardo da me oggi.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "role": "host",
+          "text": "Hai visto il prezzo totale?",
+          "english": "Did you see the total price?",
+          "choices": [
+            {
+              "text": "Sì, ho visto il prezzo totale. Tutto bene.",
+              "english": "Yes, I saw the total price. Everything is fine.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Voglio mangiare una pizza con tanta mozzarella.",
+              "english": "I want to eat a pizza with a lot of mozzarella.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Il mio gatto sta male.",
+              "english": "My cat is sick.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m6"
+        },
+        {
+          "role": "host",
+          "text": "Ottimo. Hai controllato la data?",
+          "english": "Excellent. Did you check the date?",
+          "choices": [
+            {
+              "text": "Sì, ho guardato la data. Esatto.",
+              "english": "Yes, I looked at the date. Exactly.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Prendo un menu fisso per favore.",
+              "english": "I'll take a set menu please.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Il medico mi ha dato una cura.",
+              "english": "The doctor gave me a cure.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m7"
+        },
+        {
+          "role": "host",
+          "text": "Vedi il pulsante verde a destra?",
+          "english": "Do you see the green button on the right?",
+          "choices": [
+            {
+              "text": "Sì, vedo il pulsante verde.",
+              "english": "Yes, I see the green button.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Devo pagare il conto al cameriere.",
+              "english": "I have to pay the bill to the waiter.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Scusi, dov'è il pronto soccorso?",
+              "english": "Excuse me, where is the emergency room?",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m8"
+        },
+        {
+          "role": "host",
+          "text": "Hai messo i dati della tua carta?",
+          "english": "Did you put your card details?",
+          "choices": [
+            {
+              "text": "Sì, ho messo i dati per il pagamento.",
+              "english": "Yes, I put the details for the payment.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Il gatto nero ha mangiato tutto.",
+              "english": "The black cat ate everything.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Non voglio andare in ospedale.",
+              "english": "I don't want to go to the hospital.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m9"
+        },
+        {
+          "role": "host",
+          "text": "Tutto fatto. Puoi stare tranquillo.",
+          "english": "All done. You can rest easy.",
+          "choices": [
+            {
+              "text": "Perfetto, grazie mille.",
+              "english": "Perfect, thanks a lot.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Voglio un tavolo per due persone.",
+              "english": "I want a table for two people.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "La mia casa è molto grande.",
+              "english": "My house is very big.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m10"
+        }
+      ]
+    },
+    {
+      "id": "cancellation_policy",
+      "title": "Cancellation Policy",
+      "description": "Discussing how to cancel a hotel reservation.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Hai problemi con la tua prenotazione online?",
+          "english": "Are you having problems with your online booking?",
+          "choices": [
+            {
+              "text": "Sì, devo fare una cancellazione per l'hotel.",
+              "isCorrect": true,
+              "feedback": "Good. You state the problem clearly."
+            },
+            {
+              "text": "Vorrei un tavolo per quattro persone al chiuso.",
+              "isCorrect": false,
+              "feedback": "Restaurant vocabulary."
+            },
+            {
+              "text": "Il mio cane non vuole mangiare nulla da ieri.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. Hai letto le regole sul sito?",
+          "english": "I understand. Did you read the rules on the website?",
+          "choices": [
+            {
+              "text": "Sì, ma la pagina dà un errore di connessione.",
+              "isCorrect": true,
+              "feedback": "Good, explaining a technical issue."
+            },
+            {
+              "text": "Non voglio ordinare il dolce adesso, grazie.",
+              "isCorrect": false,
+              "feedback": "Restaurant vocabulary."
+            },
+            {
+              "text": "L'ospedale è troppo lontano da casa mia adesso.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Prova a chiudere l'app e ad aprirla di nuovo.",
+          "english": "Try closing the app and opening it again.",
+          "choices": [
+            {
+              "text": "Ok, chiudo e riapro. Vediamo se funziona.",
+              "isCorrect": true,
+              "feedback": "Following the troubleshooting steps."
+            },
+            {
+              "text": "Voglio chiedere il conto al cameriere, subito.",
+              "isCorrect": false,
+              "feedback": "Restaurant vocabulary."
+            },
+            {
+              "text": "Devo comprare una medicina per la febbre alta.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Adesso riesci a vedere il tuo account?",
+          "english": "Can you see your account now?",
+          "choices": [
+            {
+              "text": "Sì, ora vedo il pulsante per annullare.",
+              "isCorrect": true,
+              "feedback": "Excellent, progress made."
+            },
+            {
+              "text": "La pizza è fredda e non mi piace molto.",
+              "isCorrect": false,
+              "feedback": "Restaurant vocabulary."
+            },
+            {
+              "text": "Il medico mi ha detto di riposare a casa.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Bene, clicca lì. Riceverai un'email subito.",
+          "english": "Good, click there. You will receive an email immediately.",
+          "choices": [
+            {
+              "text": "Fatto. Grazie mille per l'aiuto con il sito.",
+              "isCorrect": true,
+              "feedback": "Task successfully completed."
+            },
+            {
+              "text": "Il menu non ha opzioni per i bambini piccoli.",
+              "isCorrect": false,
+              "feedback": "Restaurant vocabulary."
+            },
+            {
+              "text": "Ci sono troppi animali in questa fattoria qui.",
+              "isCorrect": false,
+              "feedback": "Forbidden topic."
+            }
+          ]
+        },
+        {
+          "role": "host",
+          "text": "Hai visto il prezzo totale?",
+          "english": "Did you see the total price?",
+          "choices": [
+            {
+              "text": "Sì, ho visto il prezzo totale. Tutto bene.",
+              "english": "Yes, I saw the total price. Everything is fine.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Voglio mangiare una pizza con tanta mozzarella.",
+              "english": "I want to eat a pizza with a lot of mozzarella.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Il mio gatto sta male.",
+              "english": "My cat is sick.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m6"
+        },
+        {
+          "role": "host",
+          "text": "Ottimo. Hai controllato la data?",
+          "english": "Excellent. Did you check the date?",
+          "choices": [
+            {
+              "text": "Sì, ho guardato la data. Esatto.",
+              "english": "Yes, I looked at the date. Exactly.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Prendo un menu fisso per favore.",
+              "english": "I'll take a set menu please.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Il medico mi ha dato una cura.",
+              "english": "The doctor gave me a cure.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m7"
+        },
+        {
+          "role": "host",
+          "text": "Vedi il pulsante verde a destra?",
+          "english": "Do you see the green button on the right?",
+          "choices": [
+            {
+              "text": "Sì, vedo il pulsante verde.",
+              "english": "Yes, I see the green button.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Devo pagare il conto al cameriere.",
+              "english": "I have to pay the bill to the waiter.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Scusi, dov'è il pronto soccorso?",
+              "english": "Excuse me, where is the emergency room?",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m8"
+        },
+        {
+          "role": "host",
+          "text": "Hai messo i dati della tua carta?",
+          "english": "Did you put your card details?",
+          "choices": [
+            {
+              "text": "Sì, ho messo i dati per il pagamento.",
+              "english": "Yes, I put the details for the payment.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Il gatto nero ha mangiato tutto.",
+              "english": "The black cat ate everything.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "Non voglio andare in ospedale.",
+              "english": "I don't want to go to the hospital.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m9"
+        },
+        {
+          "role": "host",
+          "text": "Tutto fatto. Puoi stare tranquillo.",
+          "english": "All done. You can rest easy.",
+          "choices": [
+            {
+              "text": "Perfetto, grazie mille.",
+              "english": "Perfect, thanks a lot.",
+              "isCorrect": true,
+              "feedback": "Correct."
+            },
+            {
+              "text": "Voglio un tavolo per due persone.",
+              "english": "I want a table for two people.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            },
+            {
+              "text": "La mia casa è molto grande.",
+              "english": "My house is very big.",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ],
+          "id": "m10"
+        }
+      ]
+    }
+  ]
+}

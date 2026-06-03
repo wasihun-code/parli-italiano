@@ -1,0 +1,953 @@
+{
+  "scenarioId": "105",
+  "conversations": [
+    {
+      "id": "c1_withdraw",
+      "title": "Withdraw Cash",
+      "description": "Withdraw cash from the ATM.",
+      "messages": [
+        {
+          "id": "c1_m1",
+          "role": "host",
+          "text": "Benvenuto. Inserire la carta nel bancomat.",
+          "english": "Welcome. Insert the card into the ATM.",
+          "choices": [
+            {
+              "text": "Inserisco la carta nel bancomat.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Inserisco la borsa nel bancomat.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Inserisco la porta nel bancomat.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c1_m2",
+          "role": "host",
+          "text": "Carta accettata. Digitare il codice PIN.",
+          "english": "Card accepted. Enter the PIN code.",
+          "choices": [
+            {
+              "text": "Digito il mio codice PIN segreto.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Digito il mio numero di telefono.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Digito il mio indirizzo di casa.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c1_m3",
+          "role": "host",
+          "text": "Codice PIN corretto. Scegliere l'operazione.",
+          "english": "PIN code correct. Choose the operation.",
+          "choices": [
+            {
+              "text": "Voglio prelevare dei contanti oggi.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Voglio comprare dei pantaloni oggi.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Voglio restituire dei contanti oggi.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c1_m4",
+          "role": "host",
+          "text": "Scegliere l'importo da prelevare, per favore.",
+          "english": "Choose the amount to withdraw, please.",
+          "choices": [
+            {
+              "text": "Scelgo cinquanta euro in contanti.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Scelgo cinquanta libri in contanti.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Scelgo cinquanta cani in contanti.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c1_m5",
+          "role": "host",
+          "text": "Vuole stampare la ricevuta cartacea oggi?",
+          "english": "Do you want to print the paper receipt today?",
+          "choices": [
+            {
+              "text": "S\u00ec, voglio stampare la ricevuta.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "S\u00ec, voglio stampare la maglietta.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "S\u00ec, voglio stampare la bicicletta.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c1_m6",
+          "role": "host",
+          "text": "Attenzione: \u00e8 prevista una commissione di due euro.",
+          "english": "Warning: there is a commission of two euros.",
+          "choices": [
+            {
+              "text": "Va bene, accetto la commissione.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Va bene, accetto la televisione.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Va bene, accetto la conversazione.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c1_m7",
+          "role": "host",
+          "text": "Attendere prego. Elaborazione della richiesta.",
+          "english": "Please wait. Processing the request.",
+          "choices": [
+            {
+              "text": "Attendo con pazienza davanti al bancomat.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Ballo con pazienza davanti al bancomat.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Canto con pazienza davanti al bancomat.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c1_m8",
+          "role": "host",
+          "text": "Ritirare i contanti dalla fessura in basso.",
+          "english": "Withdraw the cash from the slot below.",
+          "choices": [
+            {
+              "text": "Prendo i miei contanti dal bancomat.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Prendo i miei biscotti dal bancomat.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Prendo i miei documenti dal bancomat.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c1_m9",
+          "role": "host",
+          "text": "Ritirare la ricevuta stampata dalla fessura.",
+          "english": "Withdraw the printed receipt from the slot.",
+          "choices": [
+            {
+              "text": "Prendo la ricevuta e la leggo.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Prendo la chitarra e la suono.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Prendo la macchina e la guido.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c1_m10",
+          "role": "host",
+          "text": "Operazione conclusa. Ritirare la carta, grazie.",
+          "english": "Operation completed. Withdraw the card, thank you.",
+          "choices": [
+            {
+              "text": "Prendo la mia carta e vado.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Prendo la mia scarpa e vado.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Prendo la mia gatta e vado.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2_balance",
+      "title": "Check Balance",
+      "description": "Check the account balance.",
+      "messages": [
+        {
+          "id": "c2_m1",
+          "role": "host",
+          "text": "Benvenuto al bancomat. Inserire la carta.",
+          "english": "Welcome to the ATM. Insert the card.",
+          "choices": [
+            {
+              "text": "Inserisco subito la mia carta.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Inserisco subito la mia scarpa.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Inserisco subito la mia pianta.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c2_m2",
+          "role": "host",
+          "text": "Per favore, digitare il codice PIN.",
+          "english": "Please, enter the PIN code.",
+          "choices": [
+            {
+              "text": "Digito il codice PIN con cura.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Digito il numero due con cura.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Digito il codice a barre con cura.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c2_m3",
+          "role": "host",
+          "text": "Selezionare l'operazione desiderata sullo schermo.",
+          "english": "Select the desired operation on the screen.",
+          "choices": [
+            {
+              "text": "Voglio controllare il mio saldo.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Voglio controllare il mio gatto.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Voglio controllare il mio orologio.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c2_m4",
+          "role": "host",
+          "text": "Richiesta saldo in corso. Attendere prego.",
+          "english": "Balance request in progress. Please wait.",
+          "choices": [
+            {
+              "text": "Aspetto di vedere il mio saldo.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Aspetto di vedere il mio libro.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Aspetto di vedere il mio amico.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c2_m5",
+          "role": "host",
+          "text": "Il saldo disponibile \u00e8 di mille euro.",
+          "english": "The available balance is one thousand euros.",
+          "choices": [
+            {
+              "text": "Perfetto, il saldo \u00e8 molto positivo.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Perfetto, il caldo \u00e8 molto positivo.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Perfetto, il pasto \u00e8 molto positivo.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c2_m6",
+          "role": "host",
+          "text": "Desidera stampare il saldo su ricevuta?",
+          "english": "Do you want to print the balance on a receipt?",
+          "choices": [
+            {
+              "text": "S\u00ec, voglio una ricevuta cartacea.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "S\u00ec, voglio una cravatta cartacea.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "S\u00ec, voglio una finestra cartacea.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c2_m7",
+          "role": "host",
+          "text": "Stampa della ricevuta in corso. Attendere.",
+          "english": "Printing receipt in progress. Wait.",
+          "choices": [
+            {
+              "text": "Aspetto la stampa della ricevuta.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Aspetto la stampa della maglietta.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Aspetto la stampa della settimana.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c2_m8",
+          "role": "host",
+          "text": "Prelevare la ricevuta dalla fessura luminosa.",
+          "english": "Take the receipt from the illuminated slot.",
+          "choices": [
+            {
+              "text": "Prendo la ricevuta dalla fessura.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Prendo la mela dalla fessura.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Prendo la pera dalla fessura.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c2_m9",
+          "role": "host",
+          "text": "Desidera effettuare un'altra operazione oggi?",
+          "english": "Do you wish to perform another operation today?",
+          "choices": [
+            {
+              "text": "No, non voglio fare altre operazioni.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "No, non voglio bere altre operazioni.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "No, non voglio dire altre operazioni.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c2_m10",
+          "role": "host",
+          "text": "Ritirare la carta. Arrivederci e grazie.",
+          "english": "Withdraw the card. Goodbye and thank you.",
+          "choices": [
+            {
+              "text": "Prendo la carta e vado via.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Prendo la porta e vado via.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Prendo la torta e vado via.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c3_fees",
+      "title": "Commission Fees",
+      "description": "Understand commission fees and cancel.",
+      "messages": [
+        {
+          "id": "c3_m1",
+          "role": "host",
+          "text": "Inserire la carta per iniziare l'operazione.",
+          "english": "Insert the card to begin the operation.",
+          "choices": [
+            {
+              "text": "Metto la carta nel bancomat adesso.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Metto la sedia nel bancomat adesso.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Metto la borsa nel bancomat adesso.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c3_m2",
+          "role": "host",
+          "text": "Digitare il codice PIN in modo sicuro.",
+          "english": "Enter the PIN code securely.",
+          "choices": [
+            {
+              "text": "Copro la tastiera e digito il PIN.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Copro la finestra e digito il PIN.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Copro la bottiglia e digito il PIN.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c3_m3",
+          "role": "host",
+          "text": "Quale operazione desidera effettuare questa mattina?",
+          "english": "Which operation do you want to perform this morning?",
+          "choices": [
+            {
+              "text": "Voglio prelevare venti euro oggi.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Voglio comprare venti euro oggi.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Voglio cucinare venti euro oggi.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c3_m4",
+          "role": "host",
+          "text": "Attenzione: la sua banca applica una commissione.",
+          "english": "Warning: your bank applies a commission fee.",
+          "choices": [
+            {
+              "text": "Quanto costa questa commissione di prelievo?",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Quanto costa questa televisione di prelievo?",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Quanto costa questa colazione di prelievo?",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c3_m5",
+          "role": "host",
+          "text": "La commissione per il prelievo \u00e8 due euro.",
+          "english": "The withdrawal fee is two euros.",
+          "choices": [
+            {
+              "text": "Due euro di commissione sono troppi.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Due euro di televisione sono troppi.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Due euro di colazione sono troppi.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c3_m6",
+          "role": "host",
+          "text": "Vuole annullare l'operazione o continuare comunque?",
+          "english": "Do you want to cancel the operation or continue anyway?",
+          "choices": [
+            {
+              "text": "Voglio annullare l'operazione di prelievo.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Voglio annullare la partita di calcio.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Voglio annullare la cena di stasera.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c3_m7",
+          "role": "host",
+          "text": "Operazione annullata. Nessun importo verr\u00e0 addebitato.",
+          "english": "Operation cancelled. No amount will be charged.",
+          "choices": [
+            {
+              "text": "Va bene, andr\u00f2 alla mia banca.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Va bene, andr\u00f2 alla mia scuola.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Va bene, andr\u00f2 alla mia cucina.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c3_m8",
+          "role": "host",
+          "text": "Vuole effettuare una diversa operazione allo sportello?",
+          "english": "Do you want to perform a different operation at the ATM?",
+          "choices": [
+            {
+              "text": "S\u00ec, voglio solo controllare il saldo.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "S\u00ec, voglio solo guardare il cane.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "S\u00ec, voglio solo pulire il pavimento.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c3_m9",
+          "role": "host",
+          "text": "Il saldo non prevede commissioni. Procedere?",
+          "english": "The balance check has no fees. Proceed?",
+          "choices": [
+            {
+              "text": "S\u00ec, procediamo con il saldo.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "S\u00ec, procediamo con il caldo.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "S\u00ec, procediamo con il pasto.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c3_m10",
+          "role": "host",
+          "text": "Ritirare la carta dallo sportello. Arrivederci.",
+          "english": "Withdraw the card from the ATM. Goodbye.",
+          "choices": [
+            {
+              "text": "Ritiro la carta e ringrazio.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Ritiro la spesa e ringrazio.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Ritiro la borsa e ringrazio.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c4_wrong_pin",
+      "title": "Wrong PIN",
+      "description": "Enter the wrong PIN and try again.",
+      "messages": [
+        {
+          "id": "c4_m1",
+          "role": "host",
+          "text": "Sportello automatico. Inserire la carta, per favore.",
+          "english": "Automatic teller. Insert the card, please.",
+          "choices": [
+            {
+              "text": "Inserisco la carta di credito qui.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Inserisco la chiave di casa qui.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Inserisco la patente di guida qui.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c4_m2",
+          "role": "host",
+          "text": "Digitare il codice PIN di cinque cifre.",
+          "english": "Enter the five-digit PIN code.",
+          "choices": [
+            {
+              "text": "Digito il codice molto velocemente.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Bevo il caff\u00e8 molto velocemente.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Leggo il libro molto velocemente.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c4_m3",
+          "role": "host",
+          "text": "Errore. Il codice PIN inserito \u00e8 errato.",
+          "english": "Error. The entered PIN code is incorrect.",
+          "choices": [
+            {
+              "text": "Oh no, ho sbagliato il codice.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Oh no, ho mangiato il codice.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Oh no, ho lavato il codice.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c4_m4",
+          "role": "host",
+          "text": "Rimangono due tentativi prima del blocco carta.",
+          "english": "Two attempts remaining before card block.",
+          "choices": [
+            {
+              "text": "Provo a digitare il codice corretto.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Provo a mangiare la mela verde.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Provo a cantare la canzone nuova.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c4_m5",
+          "role": "host",
+          "text": "Inserire nuovamente il codice PIN con attenzione.",
+          "english": "Enter the PIN code again carefully.",
+          "choices": [
+            {
+              "text": "Ecco, digito i numeri giusti stavolta.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Ecco, mangio i biscotti giusti stavolta.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Ecco, lavo i piatti giusti stavolta.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c4_m6",
+          "role": "host",
+          "text": "Codice PIN corretto. Accesso consentito al conto.",
+          "english": "PIN code correct. Access granted to account.",
+          "choices": [
+            {
+              "text": "Meno male! Ora voglio prelevare contanti.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Meno male! Ora voglio mangiare pasta.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Meno male! Ora voglio bere acqua.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c4_m7",
+          "role": "host",
+          "text": "Selezionare l'importo: venti, cinquanta o cento euro.",
+          "english": "Select the amount: twenty, fifty, or one hundred euros.",
+          "choices": [
+            {
+              "text": "Seleziono cinquanta euro sullo schermo.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Seleziono cinquanta cani sullo schermo.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Seleziono cinquanta gatti sullo schermo.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c4_m8",
+          "role": "host",
+          "text": "Erogazione banconote in corso. Attendere un momento.",
+          "english": "Dispensing banknotes. Wait a moment.",
+          "choices": [
+            {
+              "text": "Attendo le banconote dal bancomat.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Attendo le mele dal bancomat.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Attendo le patate dal bancomat.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c4_m9",
+          "role": "host",
+          "text": "Ritirare le banconote prima della scadenza del tempo.",
+          "english": "Take the banknotes before the time expires.",
+          "choices": [
+            {
+              "text": "Prendo i soldi velocemente.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Prendo i libri velocemente.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Prendo i fiori velocemente.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        },
+        {
+          "id": "c4_m10",
+          "role": "host",
+          "text": "Grazie per aver usato il nostro bancomat.",
+          "english": "Thank you for using our ATM.",
+          "choices": [
+            {
+              "text": "Prendo la carta e vado via.",
+              "isCorrect": true,
+              "feedback": "Correct choice!"
+            },
+            {
+              "text": "Prendo la sedia e vado via.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            },
+            {
+              "text": "Prendo la tavola e vado via.",
+              "isCorrect": false,
+              "feedback": "Incorrect context."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

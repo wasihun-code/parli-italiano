@@ -1,0 +1,953 @@
+{
+  "scenarioId": 5,
+  "conversations": [
+    {
+      "id": "one_way_to_rome",
+      "title": "One-Way Ticket to Rome",
+      "description": "Buy a simple one-way ticket to Rome at the ticket office.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come posso aiutarla oggi?",
+          "english": "Good morning! How can I help you today?",
+          "choices": [
+            {
+              "text": "Buongiorno! Vorrei un biglietto per Roma, per favore.",
+              "isCorrect": true,
+              "feedback": "Perfect! You stated your goal clearly and politely."
+            },
+            {
+              "text": "Buongiorno! Vorrei un panino per Roma, per favore.",
+              "isCorrect": false,
+              "feedback": "You're at the ticket office, not the bar!"
+            },
+            {
+              "text": "Buongiorno! Vorrei un giornale per Roma, per favore.",
+              "isCorrect": false,
+              "feedback": "Go to the newsstand for a newspaper!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Vuole andare a Roma Termini o Roma Tiburtina?",
+          "english": "Certainly. Do you want to go to Roma Termini or Roma Tiburtina?",
+          "choices": [
+            {
+              "text": "Vorrei andare a Roma Termini, grazie.",
+              "isCorrect": true,
+              "feedback": "Good choice. Termini is the main station."
+            },
+            {
+              "text": "Vorrei andare a Roma Tavolo, grazie.",
+              "isCorrect": false,
+              "feedback": "'Tavolo' means table, not a station!"
+            },
+            {
+              "text": "Vorrei andare a Roma Tempo, grazie.",
+              "isCorrect": false,
+              "feedback": "'Tempo' means time or weather!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene. Il prossimo treno parte alle dieci e mezza. Va bene?",
+          "english": "Alright. The next train leaves at ten thirty. Is that okay?",
+          "choices": [
+            {
+              "text": "Sì, alle dieci e mezza va benissimo per me.",
+              "isCorrect": true,
+              "feedback": "Great, you confirmed the time."
+            },
+            {
+              "text": "Sì, alle dieci e mezza va malissimo per me.",
+              "isCorrect": false,
+              "feedback": "'Malissimo' means very badly! Use 'benissimo' if it's okay."
+            },
+            {
+              "text": "Sì, alle dieci e mezza va altissimo per me.",
+              "isCorrect": false,
+              "feedback": "'Altissimo' means very high!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. È un treno regionale veloce. Preferisce la prima o la seconda classe?",
+          "english": "Excellent. It's a fast regional train. Do you prefer first or second class?",
+          "choices": [
+            {
+              "text": "Preferisco la seconda classe, grazie.",
+              "isCorrect": true,
+              "feedback": "A sensible choice for a regional train."
+            },
+            {
+              "text": "Preferisco la seconda casa, grazie.",
+              "isCorrect": false,
+              "feedback": "'Casa' means house! You want 'classe'."
+            },
+            {
+              "text": "Preferisco la seconda cosa, grazie.",
+              "isCorrect": false,
+              "feedback": "'Cosa' means thing!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo, seconda classe. Solo andata o anche ritorno?",
+          "english": "Agreed, second class. One way or return too?",
+          "choices": [
+            {
+              "text": "Solo andata, per favore. Non so quando torno.",
+              "isCorrect": true,
+              "feedback": "Perfectly explained."
+            },
+            {
+              "text": "Solo andata, per favore. Non so quando dormo.",
+              "isCorrect": false,
+              "feedback": "'Dormo' means I sleep! You mean 'torno' (I return)."
+            },
+            {
+              "text": "Solo andata, per favore. Non so quando mangio.",
+              "isCorrect": false,
+              "feedback": "'Mangio' means I eat!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Capisco. Sono quindici euro e cinquanta centesimi.",
+          "english": "I understand. That is fifteen euros and fifty cents.",
+          "choices": [
+            {
+              "text": "Va bene, ecco venti euro.",
+              "isCorrect": true,
+              "feedback": "Simple and effective payment."
+            },
+            {
+              "text": "Va bene, ecco venti libri.",
+              "isCorrect": false,
+              "feedback": "They don't accept books as payment!"
+            },
+            {
+              "text": "Va bene, ecco venti sedie.",
+              "isCorrect": false,
+              "feedback": "Chairs aren't currency!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Grazie. Ecco il resto di quattro euro e cinquanta.",
+          "english": "Thank you. Here is your change of four euros and fifty.",
+          "choices": [
+            {
+              "text": "Grazie mille. Dove posso convalidare il biglietto?",
+              "isCorrect": true,
+              "feedback": "Very important question in Italy!"
+            },
+            {
+              "text": "Grazie mille. Dove posso convalidare il cappello?",
+              "isCorrect": false,
+              "feedback": "You validate tickets, not hats!"
+            },
+            {
+              "text": "Grazie mille. Dove posso convalidare il gatto?",
+              "isCorrect": false,
+              "feedback": "Cats don't need validating!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Può usare le macchinette verdi che trova nel corridoio.",
+          "english": "You can use the small green machines in the hallway.",
+          "choices": [
+            {
+              "text": "Ho capito, grazie. Da quale binario parte il treno?",
+              "isCorrect": true,
+              "feedback": "Another essential piece of information."
+            },
+            {
+              "text": "Ho capito, grazie. Da quale binocolo parte il treno?",
+              "isCorrect": false,
+              "feedback": "'Binocolo' means binoculars! You want 'binario'."
+            },
+            {
+              "text": "Ho capito, grazie. Da quale bicchiere parte il treno?",
+              "isCorrect": false,
+              "feedback": "Trains don't leave from glasses!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Il treno parte dal binario numero 4. È a pochi minuti da qui.",
+          "english": "The train leaves from platform number 4. It's a few minutes from here.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'aiuto. Buona giornata!",
+              "isCorrect": true,
+              "feedback": "Polite conclusion."
+            },
+            {
+              "text": "Grazie mille per il latte. Buona giornata!",
+              "isCorrect": false,
+              "feedback": "The clerk gave you information, not milk!"
+            },
+            {
+              "text": "Grazie mille per il pane. Buona giornata!",
+              "isCorrect": false,
+              "feedback": "This isn't a bakery!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie a lei e buon viaggio!",
+          "english": "Thank you and have a good trip!",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie ancora!",
+              "isCorrect": true,
+              "feedback": "Perfect exit."
+            },
+            {
+              "text": "A domani e grazie ancora!",
+              "isCorrect": false,
+              "feedback": "You're leaving for Rome, you probably won't be back tomorrow!"
+            },
+            {
+              "text": "Buonanotte e grazie ancora!",
+              "isCorrect": false,
+              "feedback": "It's still morning!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "return_to_milan",
+      "title": "Return Ticket to Milan",
+      "description": "Buy a return ticket and check the schedule.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve, desidera?",
+          "english": "Hello, what would you like?",
+          "choices": [
+            {
+              "text": "Vorrei un biglietto di andata e ritorno per Milano.",
+              "isCorrect": true,
+              "feedback": "Good, you specified you want a return ticket."
+            },
+            {
+              "text": "Vorrei un biglietto di andata e ritorno per la mela.",
+              "isCorrect": false,
+              "feedback": "'Mela' means apple, not Milan!"
+            },
+            {
+              "text": "Vorrei un biglietto di andata e ritorno per la mano.",
+              "isCorrect": false,
+              "feedback": "'Mano' means hand!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Per quando le serve il ritorno? Per oggi o per un altro giorno?",
+          "english": "When do you need the return for? For today or another day?",
+          "choices": [
+            {
+              "text": "Il ritorno mi serve per domenica prossima, grazie.",
+              "isCorrect": true,
+              "feedback": "Clear and specific."
+            },
+            {
+              "text": "Il ritorno mi serve per la doccia prossima, grazie.",
+              "isCorrect": false,
+              "feedback": "'Doccia' means shower!"
+            },
+            {
+              "text": "Il ritorno mi serve per la donna prossima, grazie.",
+              "isCorrect": false,
+              "feedback": "'Donna' means woman!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Domenica prossima, d'accordo. A che ora vuole partire oggi?",
+          "english": "Next Sunday, alright. What time do you want to leave today?",
+          "choices": [
+            {
+              "text": "Vorrei partire il prima possibile, per favore.",
+              "isCorrect": true,
+              "feedback": "Good way to ask for the next available train."
+            },
+            {
+              "text": "Vorrei partire il prima pesante, per favore.",
+              "isCorrect": false,
+              "feedback": "'Pesante' means heavy!"
+            },
+            {
+              "text": "Vorrei partire il prima piccante, per favore.",
+              "isCorrect": false,
+              "feedback": "'Piccante' means spicy!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "C'è un treno tra dieci minuti. È troppo presto?",
+          "english": "There is a train in ten minutes. Is that too soon?",
+          "choices": [
+            {
+              "text": "No, dieci minuti vanno bene. Lo prendo.",
+              "isCorrect": true,
+              "feedback": "Quick decision!"
+            },
+            {
+              "text": "No, dieci minuti vanno male. Lo vendo.",
+              "isCorrect": false,
+              "feedback": "You're buying a ticket, not selling the train!"
+            },
+            {
+              "text": "No, dieci minuti vanno corti. Lo perdo.",
+              "isCorrect": false,
+              "feedback": "Don't say you'll lose it before you even try!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Bene. È un treno Frecciarossa. Il prezzo è di ottantacinque euro.",
+          "english": "Good. It's a Frecciarossa train. The price is eighty-five euros.",
+          "choices": [
+            {
+              "text": "È un po' caro, ma va bene così.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the high price of high-speed trains."
+            },
+            {
+              "text": "È un po' caro, ma va bene casa.",
+              "isCorrect": false,
+              "feedback": "Wrong word again!"
+            },
+            {
+              "text": "È un po' caro, ma va bene cane.",
+              "isCorrect": false,
+              "feedback": "Cane means dog!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, i treni veloci costano di più. Vuole un posto corridoio o finestrino?",
+          "english": "Yes, fast trains cost more. Do you want an aisle or window seat?",
+          "choices": [
+            {
+              "text": "Un posto finestrino, se possibile. Mi piace guardare fuori.",
+              "isCorrect": true,
+              "feedback": "Nice explanation for your preference."
+            },
+            {
+              "text": "Un posto formaggio, se possibile. Mi piace mangiare fuori.",
+              "isCorrect": false,
+              "feedback": "There is no 'cheese seat'!"
+            },
+            {
+              "text": "Un posto fazzoletto, se possibile. Mi piace piangere fuori.",
+              "isCorrect": false,
+              "feedback": "A 'handkerchief seat' doesn't exist!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente, posto 12A, carrozza 4. Paga con carta?",
+          "english": "Certainly, seat 12A, carriage 4. Paying by card?",
+          "choices": [
+            {
+              "text": "Sì, pago con la carta di credito. Ecco a lei.",
+              "isCorrect": true,
+              "feedback": "Smooth payment."
+            },
+            {
+              "text": "Sì, pago con la carta di riso. Ecco a lei.",
+              "isCorrect": false,
+              "feedback": "'Rice paper' isn't a payment method!"
+            },
+            {
+              "text": "Sì, pago con la carta igienica. Ecco a lei.",
+              "isCorrect": false,
+              "feedback": "Very inappropriate!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Tutto a posto. Ecco i suoi biglietti e la ricevuta.",
+          "english": "All set. Here are your tickets and the receipt.",
+          "choices": [
+            {
+              "text": "Grazie. Devo convalidare anche questi biglietti?",
+              "isCorrect": true,
+              "feedback": "Good to check, as high-speed tickets often don't need it."
+            },
+            {
+              "text": "Grazie. Devo cucinare anche questi biglietti?",
+              "isCorrect": false,
+              "feedback": "Don't cook your tickets!"
+            },
+            {
+              "text": "Grazie. Devo cantare anche questi biglietti?",
+              "isCorrect": false,
+              "feedback": "No singing required!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "No, per il Frecciarossa non è necessario. C'è già la data e l'ora.",
+          "english": "No, for the Frecciarossa it's not necessary. The date and time are already on it.",
+          "choices": [
+            {
+              "text": "Ottimo, allora vado subito al binario.",
+              "isCorrect": true,
+              "feedback": "Good, you're ready to go."
+            },
+            {
+              "text": "Ottimo, allora vado subito al divano.",
+              "isCorrect": false,
+              "feedback": "The couch is not where you'll find your train!"
+            },
+            {
+              "text": "Ottimo, allora vado subito al deserto.",
+              "isCorrect": false,
+              "feedback": "The desert is a bit far!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Faccia presto, il treno è già in stazione. Buon viaggio!",
+          "english": "Hurry, the train is already in the station. Have a good trip!",
+          "choices": [
+            {
+              "text": "Grazie mille, corro subito! Arrivederci.",
+              "isCorrect": true,
+              "feedback": "Perfect, good luck catching it!"
+            },
+            {
+              "text": "Grazie mille, dormo subito! Arrivederci.",
+              "isCorrect": false,
+              "feedback": "Don't sleep now, you'll miss the train!"
+            },
+            {
+              "text": "Grazie mille, mangio subito! Arrivederci.",
+              "isCorrect": false,
+              "feedback": "Eat on the train!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first_class_florence",
+      "title": "First Class to Florence",
+      "description": "Choose between first and second class for a trip to Florence.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Dove è diretto?",
+          "english": "Good morning. Where are you headed?",
+          "choices": [
+            {
+              "text": "Buongiorno. Devo andare a Firenze, per favore.",
+              "isCorrect": true,
+              "feedback": "Clear destination."
+            },
+            {
+              "text": "Buongiorno. Devo andare a Finestra, per favore.",
+              "isCorrect": false,
+              "feedback": "Finestra means window!"
+            },
+            {
+              "text": "Buongiorno. Devo andare a Fiore, per favore.",
+              "isCorrect": false,
+              "feedback": "Fiore means flower!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Firenze Santa Maria Novella. Vuole viaggiare in prima o in seconda classe?",
+          "english": "Florence Santa Maria Novella. Do you want to travel in first or second class?",
+          "choices": [
+            {
+              "text": "Quanto costa il biglietto in prima classe?",
+              "isCorrect": true,
+              "feedback": "Good to ask for the price before deciding."
+            },
+            {
+              "text": "Quanto costa il biglietto in prima colazione?",
+              "isCorrect": false,
+              "feedback": "Prima colazione means breakfast!"
+            },
+            {
+              "text": "Quanto costa il biglietto in prima persona?",
+              "isCorrect": false,
+              "feedback": "Prima persona means first person!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "In prima classe sono sessanta euro. In seconda sono quarantacinque.",
+          "english": "In first class it's sixty euros. In second it's forty-five.",
+          "choices": [
+            {
+              "text": "Qual è la differenza tra le due classi?",
+              "isCorrect": true,
+              "feedback": "A logical follow-up question."
+            },
+            {
+              "text": "Qual è la differenza tra le due scarpe?",
+              "isCorrect": false,
+              "feedback": "The clerk is talking about train classes, not shoes!"
+            },
+            {
+              "text": "Qual è la differenza tra le due strade?",
+              "isCorrect": false,
+              "feedback": "Not roads!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "In prima classe i sedili sono più grandi e c'è più spazio per le gambe.",
+          "english": "In first class the seats are larger and there is more legroom.",
+          "choices": [
+            {
+              "text": "Capisco. Allora prendo un biglietto in prima classe.",
+              "isCorrect": true,
+              "feedback": "You've decided on comfort!"
+            },
+            {
+              "text": "Capisco. Allora prendo un biglietto in prima casa.",
+              "isCorrect": false,
+              "feedback": "Not a house!"
+            },
+            {
+              "text": "Capisco. Allora prendo un biglietto in prima cosa.",
+              "isCorrect": false,
+              "feedback": "Not a thing!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottima scelta. Vuole anche un supplemento per il silenzio?",
+          "english": "Excellent choice. Do you also want a silence supplement?",
+          "choices": [
+            {
+              "text": "Sì, preferisco viaggiare in silenzio, grazie.",
+              "isCorrect": true,
+              "feedback": "Good for a relaxing trip."
+            },
+            {
+              "text": "Sì, preferisco viaggiare in ritardo, grazie.",
+              "isCorrect": false,
+              "feedback": "Nobody prefers traveling late!"
+            },
+            {
+              "text": "Sì, preferisco viaggiare in sciopero, grazie.",
+              "isCorrect": false,
+              "feedback": "Strikes are to be avoided!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Va bene. Sono sessantacinque euro in totale con il supplemento.",
+          "english": "Alright. It's sixty-five euros in total with the supplement.",
+          "choices": [
+            {
+              "text": "Ecco la mia carta di credito. Può controllare se funziona?",
+              "isCorrect": true,
+              "feedback": "Polite request."
+            },
+            {
+              "text": "Ecco la mia carta di credito. Può controllare se cucina?",
+              "isCorrect": false,
+              "feedback": "Cards don't cook!"
+            },
+            {
+              "text": "Ecco la mia carta di credito. Può controllare se cammina?",
+              "isCorrect": false,
+              "feedback": "Cards don't walk!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Funziona perfettamente. Digiti pure il codice pin.",
+          "english": "It works perfectly. Go ahead and type the pin code.",
+          "choices": [
+            {
+              "text": "Fatto. Ho pagato. Mi dà la ricevuta?",
+              "isCorrect": true,
+              "feedback": "Always good to have a receipt."
+            },
+            {
+              "text": "Fatto. Ho pagato. Mi dà la mela?",
+              "isCorrect": false,
+              "feedback": "No apples here!"
+            },
+            {
+              "text": "Fatto. Ho pagato. Mi dà la mano?",
+              "isCorrect": false,
+              "feedback": "Don't ask the clerk for their hand!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente, ecco a lei. Il treno per Firenze è al binario 10.",
+          "english": "Certainly, here you go. The train for Florence is at platform 10.",
+          "choices": [
+            {
+              "text": "Grazie. È un treno diretto o devo cambiare?",
+              "isCorrect": true,
+              "feedback": "Important logistical question."
+            },
+            {
+              "text": "Grazie. È un treno diretto o devo cantare?",
+              "isCorrect": false,
+              "feedback": "Still no singing!"
+            },
+            {
+              "text": "Grazie. È un treno diretto o devo ballare?",
+              "isCorrect": false,
+              "feedback": "No dancing required!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "È un treno diretto, non deve fare nessun cambio.",
+          "english": "It's a direct train, you don't have to make any changes.",
+          "choices": [
+            {
+              "text": "Perfetto, allora è molto comodo. Grazie ancora.",
+              "isCorrect": true,
+              "feedback": "Positive reinforcement."
+            },
+            {
+              "text": "Perfetto, allora è molto timido. Grazie ancora.",
+              "isCorrect": false,
+              "feedback": "Trains aren't shy!"
+            },
+            {
+              "text": "Perfetto, allora è molto freddo. Grazie ancora.",
+              "isCorrect": false,
+              "feedback": "Hopefully the heating works!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego. Le auguro un buon soggiorno a Firenze!",
+          "english": "You're welcome. I wish you a good stay in Florence!",
+          "choices": [
+            {
+              "text": "Grazie mille, arrivederci!",
+              "isCorrect": true,
+              "feedback": "Polite exit."
+            },
+            {
+              "text": "Grazie mille, buonanotte!",
+              "isCorrect": false,
+              "feedback": "It's not night time yet!"
+            },
+            {
+              "text": "Grazie mille, buona colazione!",
+              "isCorrect": false,
+              "feedback": "Probably too late for breakfast."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ticket_machine_issue",
+      "title": "Ticket Machine Issue",
+      "description": "Ask a staff member for help with a malfunctioning ticket machine.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Ha bisogno di aiuto con la macchinetta?",
+          "english": "Good morning. Do you need help with the machine?",
+          "choices": [
+            {
+              "text": "Sì, per favore. Questa macchina non accetta i contanti.",
+              "isCorrect": true,
+              "feedback": "Identifying the specific problem."
+            },
+            {
+              "text": "Sì, per favore. Questa macchina non accetta i biscotti.",
+              "isCorrect": false,
+              "feedback": "Machines never accept cookies (biscotti)!"
+            },
+            {
+              "text": "Sì, per favore. Questa macchina non accetta i fiori.",
+              "isCorrect": false,
+              "feedback": "Not a vending machine for flowers!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ah, mi scusi. Quella macchina accetta solo carte di credito oggi.",
+          "english": "Ah, excuse me. That machine only accepts credit cards today.",
+          "choices": [
+            {
+              "text": "Capisco, ma io ho solo monete e banconote.",
+              "isCorrect": true,
+              "feedback": "Explaining your situation."
+            },
+            {
+              "text": "Capisco, ma io ho solo scarpe e banconote.",
+              "isCorrect": false,
+              "feedback": "Don't offer shoes!"
+            },
+            {
+              "text": "Capisco, ma io ho solo libri e banconote.",
+              "isCorrect": false,
+              "feedback": "Books won't help here."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Può usare la macchina numero 5 in fondo, quella accetta contanti.",
+          "english": "You can use machine number 5 at the end, that one accepts cash.",
+          "choices": [
+            {
+              "text": "Grazie. Può aiutarmi ad usarla? È la mia prima volta.",
+              "isCorrect": true,
+              "feedback": "Good to ask for assistance if you're unsure."
+            },
+            {
+              "text": "Grazie. Può aiutarmi a mangiarla? È la mia prima volta.",
+              "isCorrect": false,
+              "feedback": "Don't eat the ticket machine!"
+            },
+            {
+              "text": "Grazie. Può aiutarmi a venderla? È la mia prima volta.",
+              "isCorrect": false,
+              "feedback": "You can't sell the station's machines!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certo. Prima scelga la lingua, poi prema su 'Acquista biglietto'.",
+          "english": "Sure. First choose the language, then press on 'Buy ticket'.",
+          "choices": [
+            {
+              "text": "D'accordo, ho scelto italiano. Ora scrivo la destinazione.",
+              "isCorrect": true,
+              "feedback": "Following steps correctly."
+            },
+            {
+              "text": "D'accordo, ho scelto italiano. Ora scrivo la televisione.",
+              "isCorrect": false,
+              "feedback": "Not television!"
+            },
+            {
+              "text": "D'accordo, ho scelto italiano. Ora scrivo la colazione.",
+              "isCorrect": false,
+              "feedback": "Not breakfast!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Esatto. Dove vuole andare?",
+          "english": "Exactly. Where do you want to go?",
+          "choices": [
+            {
+              "text": "Vorrei andare a Venezia Santa Lucia.",
+              "isCorrect": true,
+              "feedback": "A beautiful destination."
+            },
+            {
+              "text": "Vorrei andare a Venezia Santa Luna.",
+              "isCorrect": false,
+              "feedback": "Luna means moon! It's Santa Lucia."
+            },
+            {
+              "text": "Vorrei andare a Venezia Santa Lana.",
+              "isCorrect": false,
+              "feedback": "Lana means wool!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Bene. Selezioni l'orario del treno sullo schermo.",
+          "english": "Good. Select the train time on the screen.",
+          "choices": [
+            {
+              "text": "Scelgo il treno delle undici e un quarto.",
+              "isCorrect": true,
+              "feedback": "Selection made."
+            },
+            {
+              "text": "Scelgo il treno delle undici e un piatto.",
+              "isCorrect": false,
+              "feedback": "Piatto means plate!"
+            },
+            {
+              "text": "Scelgo il treno delle undici e un gatto.",
+              "isCorrect": false,
+              "feedback": "Gatto means cat!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ora inserisca le banconote nella fessura in basso.",
+          "english": "Now insert the banknotes into the slot at the bottom.",
+          "choices": [
+            {
+              "text": "Ecco venti euro. La macchina sta calcolando il resto.",
+              "isCorrect": true,
+              "feedback": "Observing the process."
+            },
+            {
+              "text": "Ecco venti euro. La macchina sta cucinando il resto.",
+              "isCorrect": false,
+              "feedback": "The machine isn't cooking!"
+            },
+            {
+              "text": "Ecco venti euro. La macchina sta ballando il resto.",
+              "isCorrect": false,
+              "feedback": "The machine isn't dancing!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Prenda il biglietto e il resto. È tutto chiaro?",
+          "english": "Take the ticket and the change. Is everything clear?",
+          "choices": [
+            {
+              "text": "Sì, ora è tutto chiaro. Grazie mille per la pazienza.",
+              "isCorrect": true,
+              "feedback": "Appreciating the help."
+            },
+            {
+              "text": "Sì, ora è tutto rosso. Grazie mille per la pazienza.",
+              "isCorrect": false,
+              "feedback": "Not red!"
+            },
+            {
+              "text": "Sì, ora è tutto freddo. Grazie mille per la pazienza.",
+              "isCorrect": false,
+              "feedback": "Not cold!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Di nulla. Si ricordi di timbrare il biglietto prima di salire sul treno.",
+          "english": "You're welcome. Remember to stamp the ticket before getting on the train.",
+          "choices": [
+            {
+              "text": "Certamente, lo timbro subito. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Perfect response."
+            },
+            {
+              "text": "Certamente, lo mangio subito. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "Don't eat it!"
+            },
+            {
+              "text": "Certamente, lo butto subito. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "Don't throw it away, you need it for the trip!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci e buon viaggio per Venezia!",
+          "english": "Goodbye and have a good trip to Venice!",
+          "choices": [
+            {
+              "text": "Grazie ancora e buona giornata!",
+              "isCorrect": true,
+              "feedback": "Perfect ending."
+            },
+            {
+              "text": "Grazie ancora e buona notte!",
+              "isCorrect": false,
+              "feedback": "It's still day!"
+            },
+            {
+              "text": "Grazie ancora e buon appetito!",
+              "isCorrect": false,
+              "feedback": "You're the one going to eat in Venice!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

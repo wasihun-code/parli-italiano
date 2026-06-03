@@ -1,0 +1,953 @@
+{
+  "scenarioId": 11,
+  "conversations": [
+    {
+      "id": "c1",
+      "title": "Full Tank",
+      "description": "Request a full tank of petrol and pay with a credit card.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cosa facciamo oggi? Benzina o gasolio?",
+          "english": "Good morning! What are we doing today? Petrol or diesel?",
+          "choices": [
+            {
+              "text": "Buongiorno! Vorrei fare il pieno di benzina, per favore.",
+              "isCorrect": true,
+              "feedback": "Perfect! You specified 'pieno' (full tank) and fuel type."
+            },
+            {
+              "text": "Buongiorno! Voglio un caffè e un cornetto caldo, grazie.",
+              "isCorrect": false,
+              "feedback": "Wrong place! You are at a gas station, not a bar."
+            },
+            {
+              "text": "Buongiorno! Mi serve un biglietto per il treno di Roma.",
+              "isCorrect": false,
+              "feedback": "Wrong location! This is a gas station, not a station."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente, faccio subito il pieno di benzina. Vuole controllare l'olio?",
+          "english": "Certainly, I'll do a full tank of petrol right away. Do you want to check the oil?",
+          "choices": [
+            {
+              "text": "No grazie, l'ho controllato ieri. Solo la benzina va bene.",
+              "isCorrect": true,
+              "feedback": "Good job politely declining the extra service."
+            },
+            {
+              "text": "Sì, vorrei un chilo di mele rosse e due di patate.",
+              "isCorrect": false,
+              "feedback": "This is a gas station, not a grocery store!"
+            },
+            {
+              "text": "No, non ho la patente per guidare questa macchina.",
+              "isCorrect": false,
+              "feedback": "A bit late for that, you are already at the pump!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene. Ecco qui, il serbatoio è pieno. Sono settanta euro.",
+          "english": "Alright. Here you go, the tank is full. That's seventy euros.",
+          "choices": [
+            {
+              "text": "Perfetto. Posso pagare con la carta di credito?",
+              "isCorrect": true,
+              "feedback": "Correct way to ask about paying with a card."
+            },
+            {
+              "text": "Va bene. Posso pagare con un bacio e un sorriso?",
+              "isCorrect": false,
+              "feedback": "Not a valid currency in Italy!"
+            },
+            {
+              "text": "Ottimo. Posso avere lo sconto per gli studenti?",
+              "isCorrect": false,
+              "feedback": "Gas stations usually don't offer student discounts."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, certo. Inserisca pure la carta nel lettore e digiti il codice.",
+          "english": "Yes, sure. Go ahead and insert the card in the reader and type the code.",
+          "choices": [
+            {
+              "text": "Ho inserito la carta. Ecco fatto, il pagamento è riuscito.",
+              "isCorrect": true,
+              "feedback": "Well done confirming the action and result."
+            },
+            {
+              "text": "Ho perso la carta. Posso lavare i vetri per pagare?",
+              "isCorrect": false,
+              "feedback": "Unlikely to be accepted! Stick to the script."
+            },
+            {
+              "text": "La carta è rotta. Posso chiamare la polizia adesso?",
+              "isCorrect": false,
+              "feedback": "A bit extreme for a broken card!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Tutto a posto. Vuole lo scontrino o va bene così?",
+          "english": "Everything is fine. Do you want the receipt or is it okay like this?",
+          "choices": [
+            {
+              "text": "Sì, vorrei lo scontrino, grazie. Buona giornata!",
+              "isCorrect": true,
+              "feedback": "Polite and clear request for the receipt."
+            },
+            {
+              "text": "No, voglio il menu del giorno, per favore.",
+              "isCorrect": false,
+              "feedback": "Still thinking about food? Focus on the gas!"
+            },
+            {
+              "text": "Sì, vorrei un autografo, lei è molto bravo.",
+              "isCorrect": false,
+              "feedback": "Strange request for a gas station attendant!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco lo scontrino. Avete la nostra carta fedeltà?",
+          "english": "Here is the receipt. Do you have our loyalty card?",
+          "choices": [
+            {
+              "text": "No, non ce l'ho. Come posso averne una?",
+              "isCorrect": true,
+              "feedback": "Good question to learn about loyalty programs."
+            },
+            {
+              "text": "No, non voglio la pasta oggi.",
+              "isCorrect": false,
+              "feedback": "The host is asking about a card, not food."
+            },
+            {
+              "text": "Sì, ho un biglietto per il museo.",
+              "isCorrect": false,
+              "feedback": "A museum ticket is not a loyalty card."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Può scaricare la nostra app. Vuole un buono per il lavaggio auto?",
+          "english": "You can download our app. Do you want a car wash voucher?",
+          "choices": [
+            {
+              "text": "Quanto costa il lavaggio?",
+              "isCorrect": true,
+              "feedback": "Natural follow-up question about the price."
+            },
+            {
+              "text": "Dove posso comprare il pane?",
+              "isCorrect": false,
+              "feedback": "This is still a gas station, not a bakery."
+            },
+            {
+              "text": "Mi piace molto dormire.",
+              "isCorrect": false,
+              "feedback": "Irrelevant personal information."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Costa solo cinque euro se lo compra insieme alla benzina.",
+          "english": "It costs only five euros if you buy it with the petrol.",
+          "choices": [
+            {
+              "text": "Va bene, ne prendo uno.",
+              "isCorrect": true,
+              "feedback": "Correct way to accept the offer."
+            },
+            {
+              "text": "No, preferisco un chilo di sale.",
+              "isCorrect": false,
+              "feedback": "Salt is not sold here in bulk!"
+            },
+            {
+              "text": "Sì, voglio un gatto nero.",
+              "isCorrect": false,
+              "feedback": "Pets are not part of the deal."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo, ecco il buono. Vale per trenta giorni.",
+          "english": "Great, here is the voucher. It is valid for thirty days.",
+          "choices": [
+            {
+              "text": "Grazie. Dove si trova il lavaggio?",
+              "isCorrect": true,
+              "feedback": "Practical question to locate the car wash."
+            },
+            {
+              "text": "Grazie. Dove si trova il mare?",
+              "isCorrect": false,
+              "feedback": "Too far away for a car wash voucher!"
+            },
+            {
+              "text": "Grazie. Dove si trova la mia mamma?",
+              "isCorrect": false,
+              "feedback": "A bit too personal for a gas station."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "È proprio dietro l'edificio, a sinistra. Buon viaggio!",
+          "english": "It is just behind the building, on the left. Have a nice trip!",
+          "choices": [
+            {
+              "text": "Grazie mille, arrivederci!",
+              "isCorrect": true,
+              "feedback": "Polite and standard goodbye."
+            },
+            {
+              "text": "Grazie mille, buonanotte!",
+              "isCorrect": false,
+              "feedback": "It is likely not night time yet."
+            },
+            {
+              "text": "Grazie mille, ho fame!",
+              "isCorrect": false,
+              "feedback": "The attendant cannot help with your hunger."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Specific Amount",
+      "description": "Request a specific amount of diesel and pay in cash.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Di cosa ha bisogno? Benzina o diesel?",
+          "english": "Hello! What do you need? Petrol or diesel?",
+          "choices": [
+            {
+              "text": "Salve! Vorrei venti euro di diesel alla pompa quattro.",
+              "isCorrect": true,
+              "feedback": "Great! You specified the amount and the pump number."
+            },
+            {
+              "text": "Salve! Vorrei venti chili di pasta e del formaggio.",
+              "isCorrect": false,
+              "feedback": "You are at a gas station, not a supermarket!"
+            },
+            {
+              "text": "Salve! Vorrei venti minuti di silenzio, per favore.",
+              "isCorrect": false,
+              "feedback": "A bit rude and out of place."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente, vado a sbloccare la pompa quattro per il diesel.",
+          "english": "Certainly, I'm going to unlock pump four for the diesel.",
+          "choices": [
+            {
+              "text": "Grazie mille. Aspetto qui mentre lei prepara tutto.",
+              "isCorrect": true,
+              "feedback": "Polite confirmation while waiting."
+            },
+            {
+              "text": "Grazie mille. Corro via senza pagare niente oggi.",
+              "isCorrect": false,
+              "feedback": "That's illegal! Don't do that."
+            },
+            {
+              "text": "Grazie mille. Dormo un po' in macchina adesso.",
+              "isCorrect": false,
+              "feedback": "Not the best time for a nap!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Fatto. Ha messo il diesel? Sono venti euro esatti.",
+          "english": "Done. Did you put the diesel? That's exactly twenty euros.",
+          "choices": [
+            {
+              "text": "Sì, ho fatto. Ecco venti euro in contanti. Va bene?",
+              "isCorrect": true,
+              "feedback": "Perfect! Offering cash for the exact amount."
+            },
+            {
+              "text": "Sì, ho fatto. Ecco venti caramelle al limone. Va bene?",
+              "isCorrect": false,
+              "feedback": "They only accept money here!"
+            },
+            {
+              "text": "Sì, ho fatto. Ecco venti sassi della strada. Va bene?",
+              "isCorrect": false,
+              "feedback": "Rocks are not money!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, va benissimo. Grazie per la precisione. Le serve altro?",
+          "english": "Yes, that's perfect. Thanks for the precision. Do you need anything else?",
+          "choices": [
+            {
+              "text": "No, nient'altro. Posso avere la ricevuta, per favore?",
+              "isCorrect": true,
+              "feedback": "Good job asking for the receipt after paying."
+            },
+            {
+              "text": "No, nient'altro. Posso avere un massaggio ai piedi?",
+              "isCorrect": false,
+              "feedback": "Very inappropriate request!"
+            },
+            {
+              "text": "No, nient'altro. Posso avere la sua macchina nuova?",
+              "isCorrect": false,
+              "feedback": "You already have a car!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ecco a lei la ricevuta. Buon viaggio e torni a trovarci!",
+          "english": "Here is your receipt. Have a good trip and come back to see us!",
+          "choices": [
+            {
+              "text": "Grazie, arrivederci e buon lavoro! A presto.",
+              "isCorrect": true,
+              "feedback": "A very natural and polite way to end the interaction."
+            },
+            {
+              "text": "Grazie, arrivederci e brutto lavoro! A mai più.",
+              "isCorrect": false,
+              "feedback": "Very rude! Italian culture values politeness."
+            },
+            {
+              "text": "Grazie, arrivederci e faccia presto! Ho fretta.",
+              "isCorrect": false,
+              "feedback": "The interaction is already over!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Aspetti, vedo che una gomma è un po' sgonfia. Vuole usare l'aria?",
+          "english": "Wait, I see that a tire is a bit low. Do you want to use the air?",
+          "choices": [
+            {
+              "text": "Sì, grazie. È gratis?",
+              "isCorrect": true,
+              "feedback": "Good question about the cost of the service."
+            },
+            {
+              "text": "Sì, grazie. È un gelato?",
+              "isCorrect": false,
+              "feedback": "Air for tires is not ice cream."
+            },
+            {
+              "text": "Sì, grazie. È un libro?",
+              "isCorrect": false,
+              "feedback": "The host is talking about air, not reading."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, è gratis per i clienti. È vicino agli aspirapolvere.",
+          "english": "Yes, it's free for customers. It's near the vacuum cleaners.",
+          "choices": [
+            {
+              "text": "Ottimo, controllo tutte le gomme.",
+              "isCorrect": true,
+              "feedback": "Wise decision to check all tires."
+            },
+            {
+              "text": "Ottimo, mangio tutte le gomme.",
+              "isCorrect": false,
+              "feedback": "Tires are not edible!"
+            },
+            {
+              "text": "Ottimo, vendo tutte le gomme.",
+              "isCorrect": false,
+              "feedback": "You need those tires to drive!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Buona idea. Le serve anche il liquido per i tergicristalli?",
+          "english": "Good idea. Do you also need screen wash fluid?",
+          "choices": [
+            {
+              "text": "Sì, il vetro è molto sporco.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the need for the fluid."
+            },
+            {
+              "text": "Sì, il gatto è molto sporco.",
+              "isCorrect": false,
+              "feedback": "The gas station doesn't wash cats."
+            },
+            {
+              "text": "Sì, il caffè è molto sporco.",
+              "isCorrect": false,
+              "feedback": "Coffee shouldn't be 'sporco'."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Abbiamo le bottiglie da cinque litri in offerta oggi.",
+          "english": "We have five-liter bottles on offer today.",
+          "choices": [
+            {
+              "text": "Ne prendo una, grazie.",
+              "isCorrect": true,
+              "feedback": "Accepting the offer for the fluid bottle."
+            },
+            {
+              "text": "Ne prendo una, scusa.",
+              "isCorrect": false,
+              "feedback": "'Scusa' is not the right response here."
+            },
+            {
+              "text": "Ne prendo una, prego.",
+              "isCorrect": false,
+              "feedback": "'Prego' doesn't fit this context."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto, la metto nel bagagliaio. Buon viaggio!",
+          "english": "Perfect, I'll put it in the trunk. Have a nice trip!",
+          "choices": [
+            {
+              "text": "Grazie mille, arrivederci!",
+              "isCorrect": true,
+              "feedback": "Polite conclusion to the extra services."
+            },
+            {
+              "text": "Grazie mille, buonanotte!",
+              "isCorrect": false,
+              "feedback": "Likely still daytime."
+            },
+            {
+              "text": "Grazie mille, ho sonno!",
+              "isCorrect": false,
+              "feedback": "The attendant cannot help you sleep."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Checking Fluids",
+      "description": "Fill up and ask the attendant to check the oil and water.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Servito o self-service? Cosa desidera fare?",
+          "english": "Good morning! Full service or self-service? What would you like to do?",
+          "choices": [
+            {
+              "text": "Buongiorno! Vorrei il servito. Può fare il pieno di gasolio?",
+              "isCorrect": true,
+              "feedback": "Correct. You chose 'servito' and asked for a full tank."
+            },
+            {
+              "text": "Buongiorno! Vorrei il mare. Può portarmi in spiaggia?",
+              "isCorrect": false,
+              "feedback": "You are at a gas station, not a travel agency!"
+            },
+            {
+              "text": "Buongiorno! Vorrei il fumo. Può accendere un fuoco?",
+              "isCorrect": false,
+              "feedback": "Extremely dangerous! Never light fires near gas!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Mentre metto il gasolio, posso controllare qualcosa?",
+          "english": "Certainly. While I put the diesel, can I check something?",
+          "choices": [
+            {
+              "text": "Sì, può controllare il livello dell'olio e dell'acqua?",
+              "isCorrect": true,
+              "feedback": "Great! Asking to check essential fluids is very practical."
+            },
+            {
+              "text": "Sì, può controllare se il mio gatto è a casa?",
+              "isCorrect": false,
+              "feedback": "How would the attendant know that?"
+            },
+            {
+              "text": "Sì, può controllare se piove in America adesso?",
+              "isCorrect": false,
+              "feedback": "Irrelevant and outside the attendant's scope."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Controllo subito. L'acqua è a posto, ma l'olio è un po' basso.",
+          "english": "I'll check right away. The water is fine, but the oil is a bit low.",
+          "choices": [
+            {
+              "text": "Capisco. Può aggiungere un po' d'olio, per favore?",
+              "isCorrect": true,
+              "feedback": "Smart choice to fix the issue on the spot."
+            },
+            {
+              "text": "Capisco. Può aggiungere un po' di zucchero, per favore?",
+              "isCorrect": false,
+              "feedback": "Sugar will ruin the engine!"
+            },
+            {
+              "text": "Capisco. Può aggiungere un po' di musica, per favore?",
+              "isCorrect": false,
+              "feedback": "The attendant is there to help with the car, not DJ."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Fatto. Ho aggiunto l'olio. Il totale è di ottantacinque euro.",
+          "english": "Done. I've added the oil. The total is eighty-five euros.",
+          "choices": [
+            {
+              "text": "Grazie. Ecco la carta di credito per il pagamento.",
+              "isCorrect": true,
+              "feedback": "Polite response and providing payment method."
+            },
+            {
+              "text": "Grazie. Ecco la carta igienica per il pagamento.",
+              "isCorrect": false,
+              "feedback": "Toilet paper is not money!"
+            },
+            {
+              "text": "Grazie. Ecco la carta geografica per il pagamento.",
+              "isCorrect": false,
+              "feedback": "Maps are useful, but not for paying!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Pagamento accettato. Le ho anche pulito i vetri. Buon viaggio!",
+          "english": "Payment accepted. I also cleaned your windows. Have a good trip!",
+          "choices": [
+            {
+              "text": "Lei è gentilissimo, grazie mille. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Showing appreciation for the extra service."
+            },
+            {
+              "text": "Lei è bruttissimo, grazie mille. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "Very mean! Don't insult people."
+            },
+            {
+              "text": "Lei è un fantasma, grazie mille. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "Nonsense! Stick to the real situation."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Prego. Comunque, le spazzole dei tergicristalli sono usurate.",
+          "english": "You're welcome. By the way, the wiper blades are worn.",
+          "choices": [
+            {
+              "text": "Oh, vendete i ricambi qui?",
+              "isCorrect": true,
+              "feedback": "Correct inquiry about purchasing replacement parts."
+            },
+            {
+              "text": "Oh, vendete i vestiti qui?",
+              "isCorrect": false,
+              "feedback": "This is not a clothing store."
+            },
+            {
+              "text": "Oh, vendete i dischi qui?",
+              "isCorrect": false,
+              "feedback": "Vinyl records are not usually sold at gas stations."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, li abbiamo in negozio. Posso trovare il modello giusto per lei.",
+          "english": "Yes, we have them in the shop. I can find the right model for you.",
+          "choices": [
+            {
+              "text": "Sarebbe molto utile, grazie.",
+              "isCorrect": true,
+              "feedback": "Polite acceptance of the help."
+            },
+            {
+              "text": "Sarebbe molto brutto, grazie.",
+              "isCorrect": false,
+              "feedback": "'Brutto' doesn't make sense here."
+            },
+            {
+              "text": "Sarebbe molto lontano, grazie.",
+              "isCorrect": false,
+              "feedback": "Distance is not the issue here."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ecco qui. Vuole che le monti io?",
+          "english": "Here they are. Do you want me to install them?",
+          "choices": [
+            {
+              "text": "Sì, se non è un problema.",
+              "isCorrect": true,
+              "feedback": "Polite way to accept the installation offer."
+            },
+            {
+              "text": "Sì, se non è un cane.",
+              "isCorrect": false,
+              "feedback": "A dog has nothing to do with this."
+            },
+            {
+              "text": "Sì, se non è un albero.",
+              "isCorrect": false,
+              "feedback": "Trees are not involved."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Nessun problema, ci vuole solo un minuto.",
+          "english": "No problem, it only takes a minute.",
+          "choices": [
+            {
+              "text": "Lei è molto efficiente!",
+              "isCorrect": true,
+              "feedback": "Complimenting the host's speed and skill."
+            },
+            {
+              "text": "Lei è molto dormiente!",
+              "isCorrect": false,
+              "feedback": "The host is working, not sleeping."
+            },
+            {
+              "text": "Lei è molto perdente!",
+              "isCorrect": false,
+              "feedback": "Very rude and incorrect."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Fatto. Ora può vedere bene anche quando piove. Arrivederci!",
+          "english": "Done. Now you can see well even when it rains. Goodbye!",
+          "choices": [
+            {
+              "text": "Perfetto, grazie ancora!",
+              "isCorrect": true,
+              "feedback": "Friendly and appreciative closing."
+            },
+            {
+              "text": "Perfetto, scusa ancora!",
+              "isCorrect": false,
+              "feedback": "No need to apologize."
+            },
+            {
+              "text": "Perfetto, prego ancora!",
+              "isCorrect": false,
+              "feedback": "Incorrect use of 'prego'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "Self-Service Help",
+      "description": "Struggle with the self-service machine and ask for help.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Vedo che ha un problema con la macchina automatica.",
+          "english": "Good morning. I see you have a problem with the automatic machine.",
+          "choices": [
+            {
+              "text": "Sì, scusi. Non capisco come inserire la banconota.",
+              "isCorrect": true,
+              "feedback": "Good. Clearly stating the problem with the machine."
+            },
+            {
+              "text": "Sì, scusi. Non capisco come cucinare questa pasta.",
+              "isCorrect": false,
+              "feedback": "You are at a gas station, not in a kitchen!"
+            },
+            {
+              "text": "Sì, scusi. Non capisco come volare sulla luna.",
+              "isCorrect": false,
+              "feedback": "Too ambitious for a gas station interaction!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È semplice. Deve prima selezionare il numero della pompa.",
+          "english": "It's simple. You must first select the pump number.",
+          "choices": [
+            {
+              "text": "Ah, capisco. Premo il numero due sulla tastiera.",
+              "isCorrect": true,
+              "feedback": "Correct action based on the host's instructions."
+            },
+            {
+              "text": "Ah, capisco. Premo il mio naso con la mano.",
+              "isCorrect": false,
+              "feedback": "That won't help with the machine!"
+            },
+            {
+              "text": "Ah, capisco. Premo il pulsante di autodistruzione.",
+              "isCorrect": false,
+              "feedback": "Don't be dramatic, it's just a gas pump!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Esatto. Ora inserisca la banconota da venti euro qui.",
+          "english": "Exactly. Now insert the twenty euro bill here.",
+          "choices": [
+            {
+              "text": "Ecco fatto. La macchina ha accettato i soldi. E ora?",
+              "isCorrect": true,
+              "feedback": "Good job following through and asking for the next step."
+            },
+            {
+              "text": "Ecco fatto. La macchina ha mangiato il mio braccio. E ora?",
+              "isCorrect": false,
+              "feedback": "The machine isn't a monster!"
+            },
+            {
+              "text": "Ecco fatto. La macchina ha iniziato a ballare. E ora?",
+              "isCorrect": false,
+              "feedback": "Machines don't dance!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ora può andare alla pompa due e mettere la benzina.",
+          "english": "Now you can go to pump two and put the petrol.",
+          "choices": [
+            {
+              "text": "Grazie per l'aiuto! È stato molto gentile.",
+              "isCorrect": true,
+              "feedback": "Polite closure of the assistance interaction."
+            },
+            {
+              "text": "Grazie per l'odio! È stato molto cattivo.",
+              "isCorrect": false,
+              "feedback": "Why so negative? The attendant helped you!"
+            },
+            {
+              "text": "Grazie per il regalo! È stato molto ricco.",
+              "isCorrect": false,
+              "feedback": "It wasn't a gift, you paid for the gas!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Di nulla, figurati. Mi chiami se ha ancora bisogno.",
+          "english": "You're welcome, don't mention it. Call me if you still need help.",
+          "choices": [
+            {
+              "text": "Va bene, grazie ancora. Arrivederci e buona giornata!",
+              "isCorrect": true,
+              "feedback": "Perfect ending to the conversation."
+            },
+            {
+              "text": "Va bene, grazie ancora. Arrivederci e buona notte!",
+              "isCorrect": false,
+              "feedback": "It's still morning, as established in the first turn!"
+            },
+            {
+              "text": "Va bene, grazie ancora. Arrivederci e mangi tanto!",
+              "isCorrect": false,
+              "feedback": "A bit strange to tell someone to eat a lot."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Un momento! Penso che la pompa sia ancora bloccata dal cliente precedente.",
+          "english": "One moment! I think the pump is still locked by the previous customer.",
+          "choices": [
+            {
+              "text": "Oh, cosa devo fare?",
+              "isCorrect": true,
+              "feedback": "Direct question to find a solution."
+            },
+            {
+              "text": "Oh, cosa devo mangiare?",
+              "isCorrect": false,
+              "feedback": "Hunger is not the problem here."
+            },
+            {
+              "text": "Oh, cosa devo sognare?",
+              "isCorrect": false,
+              "feedback": "No time for dreaming!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "La sblocco io dal computer centrale. Provi di nuovo adesso.",
+          "english": "I'll unlock it from the central computer. Try again now.",
+          "choices": [
+            {
+              "text": "Adesso funziona, grazie!",
+              "isCorrect": true,
+              "feedback": "Confirming the machine is working."
+            },
+            {
+              "text": "Adesso dorme, grazie!",
+              "isCorrect": false,
+              "feedback": "The machine should be working, not sleeping."
+            },
+            {
+              "text": "Adesso cade, grazie!",
+              "isCorrect": false,
+              "feedback": "Hopefully the pump stays upright!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Le serve un paio di guanti usa e getta?",
+          "english": "Great. Do you need a pair of disposable gloves?",
+          "choices": [
+            {
+              "text": "Sì, grazie, la maniglia è sporca.",
+              "isCorrect": true,
+              "feedback": "Good reason to use gloves."
+            },
+            {
+              "text": "Sì, grazie, la maniglia è bella.",
+              "isCorrect": false,
+              "feedback": "Even if it's pretty, you need gloves for cleanliness."
+            },
+            {
+              "text": "Sì, grazie, la maniglia è alta.",
+              "isCorrect": false,
+              "feedback": "Height is not the reason for gloves."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Eccoli qui. Sono nel distributore vicino al cestino.",
+          "english": "Here they are. They are in the dispenser near the bin.",
+          "choices": [
+            {
+              "text": "Grazie, apprezzo molto l'aiuto.",
+              "isCorrect": true,
+              "feedback": "Expressing gratitude for the assistance."
+            },
+            {
+              "text": "Grazie, apprezzo molto l'odio.",
+              "isCorrect": false,
+              "feedback": "The host is helping, not hating."
+            },
+            {
+              "text": "Grazie, apprezzo molto il sonno.",
+              "isCorrect": false,
+              "feedback": "The host provided gloves, not a nap."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla. Non dimentichi il resto se non usa tutto l'importo.",
+          "english": "You're welcome. Don't forget the change if you don't use the full amount.",
+          "choices": [
+            {
+              "text": "Lo farò, grazie! Arrivederci.",
+              "isCorrect": true,
+              "feedback": "Polite acknowledgment and farewell."
+            },
+            {
+              "text": "Lo farò, grazie! Buonanotte.",
+              "isCorrect": false,
+              "feedback": "Still not night time."
+            },
+            {
+              "text": "Lo farò, grazie! Ho freddo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant physical sensation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

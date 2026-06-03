@@ -1,0 +1,1073 @@
+{
+  "scenarioId": 6,
+  "conversations": [
+    {
+      "id": "finding_platform",
+      "title": "Finding the Platform",
+      "description": "Navigate the station to find the correct platform for your train.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarla? Cerca un binario in particolare?",
+          "english": "Good morning! Can I help you? Are you looking for a specific platform?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Dove si trova il binario per il treno per Roma?",
+              "english": "Yes, thanks. Where is the platform for the train to Rome?",
+              "isCorrect": true,
+              "feedback": "Perfect! Asking for the specific platform for your destination."
+            },
+            {
+              "text": "Il treno per Roma è molto grande e veloce, vero?",
+              "english": "The train to Rome is very big and fast, right?",
+              "isCorrect": false,
+              "feedback": "Interesting fact, but it doesn't help you find the platform!"
+            },
+            {
+              "text": "Vorrei un caffè e un cornetto al bar della stazione.",
+              "english": "I would like a coffee and a croissant at the station bar.",
+              "isCorrect": false,
+              "feedback": "Wrong place! You are at the information desk, not the bar."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Ha già guardato il tabellone delle partenze?",
+          "english": "Certainly. Have you already looked at the departures board?",
+          "choices": [
+            {
+              "text": "Sì, ho guardato. Ma ci sono troppi treni e non capisco.",
+              "english": "Yes, I looked. But there are too many trains and I don't understand.",
+              "isCorrect": true,
+              "feedback": "Honest and clear. The assistant will guide you now."
+            },
+            {
+              "text": "Sì, il tabellone è molto alto e luminoso, mi piace.",
+              "english": "Yes, the board is very high and bright, I like it.",
+              "isCorrect": false,
+              "feedback": "Too much detail about the board, not enough about your problem."
+            },
+            {
+              "text": "No, non ho fame adesso, preferisco mangiare più tardi.",
+              "english": "No, I'm not hungry now, I prefer to eat later.",
+              "isCorrect": false,
+              "feedback": "The host asked about the departures board, not food!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco. Il suo treno è l'Intercity 510? Parte dal binario 4.",
+          "english": "I understand. Is your train the Intercity 510? It departs from platform 4.",
+          "choices": [
+            {
+              "text": "Binario 4, perfetto. Devo prendere il sottopassaggio?",
+              "english": "Platform 4, perfect. Do I have to take the underpass?",
+              "isCorrect": true,
+              "feedback": "Correct! Most platforms are reached via the underpass."
+            },
+            {
+              "text": "Binario 4, bene. Posso comprare un libro qui vicino?",
+              "english": "Platform 4, good. Can I buy a book nearby?",
+              "isCorrect": false,
+              "feedback": "Focus on the platform first, shopping comes later!"
+            },
+            {
+              "text": "Il numero 4 è il mio numero fortunato, che coincidenza!",
+              "english": "Number 4 is my lucky number, what a coincidence!",
+              "isCorrect": false,
+              "feedback": "A nice thought, but ask for directions instead."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto. Prenda il sottopassaggio e segua le indicazioni per il binario 4.",
+          "english": "Exactly. Take the underpass and follow the signs for platform 4.",
+          "choices": [
+            {
+              "text": "Grazie mille! C'è anche l'ascensore per le valigie?",
+              "english": "Thank you very much! Is there also an elevator for the suitcases?",
+              "isCorrect": true,
+              "feedback": "Good question! Elevators are helpful if you have heavy bags."
+            },
+            {
+              "text": "Va bene! Ci sono molte persone nel sottopassaggio?",
+              "english": "Alright! Are there many people in the underpass?",
+              "isCorrect": false,
+              "feedback": "The crowd doesn't matter, finding the elevator does."
+            },
+            {
+              "text": "Ottimo! Il sottopassaggio è dipinto di un bel colore?",
+              "english": "Great! Is the underpass painted a nice color?",
+              "isCorrect": false,
+              "feedback": "The color of the walls is not important right now!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, l'ascensore è proprio accanto alle scale. Ha molte valigie?",
+          "english": "Yes, the elevator is right next to the stairs. Do you have many suitcases?",
+          "choices": [
+            {
+              "text": "Sì, ho due valigie grandi e pesanti.",
+              "english": "Yes, I have two large and heavy suitcases.",
+              "isCorrect": true,
+              "feedback": "Clear information. The host will help you further."
+            },
+            {
+              "text": "No, ho solo un piccolo zaino con me.",
+              "english": "No, I only have a small backpack with me.",
+              "isCorrect": false,
+              "feedback": "If you don't have bags, you don't really need the elevator."
+            },
+            {
+              "text": "Le valigie sono di colore rosso, molto belle.",
+              "english": "The suitcases are red, very beautiful.",
+              "isCorrect": false,
+              "feedback": "The color doesn't help with the logistics!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Allora l'ascensore è necessario. Il binario 4 è a destra nel corridoio.",
+          "english": "Then the elevator is necessary. Platform 4 is to the right in the corridor.",
+          "choices": [
+            {
+              "text": "Grazie, è molto gentile. Il treno è già al binario?",
+              "english": "Thanks, you're very kind. Is the train already at the platform?",
+              "isCorrect": true,
+              "feedback": "Good follow-up question to know if you need to hurry."
+            },
+            {
+              "text": "Il corridoio è molto lungo? Sono stanco.",
+              "english": "Is the corridor very long? I'm tired.",
+              "isCorrect": false,
+              "feedback": "Focus on finding the train first."
+            },
+            {
+              "text": "A destra? Preferivo andare a sinistra.",
+              "english": "To the right? I preferred to go to the left.",
+              "isCorrect": false,
+              "feedback": "Don't argue with directions!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "No, dovrebbe arrivare tra cinque minuti. Ha tempo.",
+          "english": "No, it should arrive in five minutes. You have time.",
+          "choices": [
+            {
+              "text": "Ottimo, ho tutto il tempo. Devo convalidare il biglietto?",
+              "english": "Great, I have plenty of time. Do I need to validate the ticket?",
+              "isCorrect": true,
+              "feedback": "Excellent question. Ticket validation is crucial in Italy."
+            },
+            {
+              "text": "Cinque minuti sono troppi, voglio partire ora.",
+              "english": "Five minutes is too long, I want to leave now.",
+              "isCorrect": false,
+              "feedback": "Patience is a virtue at the train station."
+            },
+            {
+              "text": "Il tempo vola quando ci si diverte, vero?",
+              "english": "Time flies when you're having fun, right?",
+              "isCorrect": false,
+              "feedback": "A bit too philosophical for this situation."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, se ha un biglietto cartaceo deve usarle macchinette sul binario.",
+          "english": "Yes, if you have a paper ticket you must use the machines on the platform.",
+          "choices": [
+            {
+              "text": "Va bene, lo farò subito. Grazie mille!",
+              "english": "Alright, I'll do it right away. Thank you very much!",
+              "isCorrect": true,
+              "feedback": "Good. You are following all necessary steps."
+            },
+            {
+              "text": "Le macchinette sono semplici da usare?",
+              "english": "Are the machines simple to use?",
+              "isCorrect": false,
+              "feedback": "They are very simple, just insert the ticket."
+            },
+            {
+              "text": "Non voglio usare la macchinetta, preferisco una persona.",
+              "english": "I don't want to use the machine, I prefer a person.",
+              "isCorrect": false,
+              "feedback": "Validation is usually automated."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Prego! Ricordi anche di controllare il numero della carrozza.",
+          "english": "You're welcome! Remember also to check the carriage number.",
+          "choices": [
+            {
+              "text": "Giusto, il numero della carrozza è importante. Arrivederci!",
+              "english": "Right, the carriage number is important. Goodbye!",
+              "isCorrect": true,
+              "feedback": "Polite exit. You are ready to go."
+            },
+            {
+              "text": "La carrozza è come quella di una fiaba?",
+              "english": "Is the carriage like one from a fairy tale?",
+              "isCorrect": false,
+              "feedback": "No, it's a modern train car!"
+            },
+            {
+              "text": "Non mi piacciono i numeri, sono difficili da ricordare.",
+              "english": "I don't like numbers, they are hard to remember.",
+              "isCorrect": false,
+              "feedback": "You need to know your carriage number to find your seat."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci e buon viaggio per Roma!",
+          "english": "Goodbye and have a good trip to Rome!",
+          "choices": [
+            {
+              "text": "Grazie ancora, buona giornata!",
+              "english": "Thanks again, have a good day!",
+              "isCorrect": true,
+              "feedback": "Perfect conclusion."
+            },
+            {
+              "text": "Roma è una città con molti monumenti antichi.",
+              "english": "Rome is a city with many ancient monuments.",
+              "isCorrect": false,
+              "feedback": "A statement, not a goodbye."
+            },
+            {
+              "text": "Roma è lontana da qui? Grazie.",
+              "english": "Is Rome far from here? Thanks.",
+              "isCorrect": false,
+              "feedback": "A bit late for that!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening_announcements",
+      "title": "Listening to Announcements",
+      "description": "Understand important changes to your train schedule.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Attenzione! Il treno regionale per Firenze è in ritardo di dieci minuti.",
+          "english": "Attention! The regional train to Florence is ten minutes late.",
+          "choices": [
+            {
+              "text": "Accidenti, dieci minuti di ritardo. Devo aspettare qui?",
+              "english": "Damn, ten minutes delay. Do I have to wait here?",
+              "isCorrect": true,
+              "feedback": "Good reaction. Delays are common, and checking where to wait is smart."
+            },
+            {
+              "text": "Dieci minuti sono troppi. Posso andare al cinema ora?",
+              "english": "Ten minutes are too many. Can I go to the cinema now?",
+              "isCorrect": false,
+              "feedback": "Ten minutes isn't enough for a movie! Stay at the platform."
+            },
+            {
+              "text": "Firenze è una città bellissima, voglio vedere i musei.",
+              "english": "Florence is a beautiful city, I want to see the museums.",
+              "isCorrect": false,
+              "feedback": "True, but focus on the delay first!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, il treno arriverà a breve. Attenzione: c'è un cambio di binario.",
+          "english": "Yes, the train will arrive shortly. Attention: there is a platform change.",
+          "choices": [
+            {
+              "text": "Un cambio di binario? Qual è il nuovo binario per favore?",
+              "english": "A platform change? Which is the new platform please?",
+              "isCorrect": true,
+              "feedback": "Critical information! You need to know where the train is going now."
+            },
+            {
+              "text": "Un cambio di treno? Devo comprare un altro biglietto?",
+              "english": "A train change? Do I have to buy another ticket?",
+              "isCorrect": false,
+              "feedback": "Listen carefully: it's a platform change, not a train change."
+            },
+            {
+              "text": "Il binario è un posto molto lungo e stretto, vero?",
+              "english": "The platform is a very long and narrow place, right?",
+              "isCorrect": false,
+              "feedback": "Not the time for definitions!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Il treno partirà dal binario 6 invece del binario 4. Si scusi per il disagio.",
+          "english": "The train will depart from platform 6 instead of platform 4. Sorry for the inconvenience.",
+          "choices": [
+            {
+              "text": "Va bene, vado subito al binario 6. È lontano da qui?",
+              "english": "Alright, I'm going to platform 6 right away. Is it far from here?",
+              "isCorrect": true,
+              "feedback": "Moving quickly to the new platform is the right move."
+            },
+            {
+              "text": "Il binario 6 è lontano? Ho molte valigie pesanti.",
+              "english": "Is platform 6 far? I have many heavy suitcases.",
+              "isCorrect": false,
+              "feedback": "Just go! The train is arriving soon."
+            },
+            {
+              "text": "Non mi piace il numero 6, preferivo il numero 4.",
+              "english": "I don't like the number 6, I preferred the number 4.",
+              "isCorrect": false,
+              "feedback": "Personal preferences don't change the train schedule!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "No, è proprio il binario accanto. Attenzione, allontanarsi dalla linea gialla.",
+          "english": "No, it's right at the next platform. Attention, stand back from the yellow line.",
+          "choices": [
+            {
+              "text": "Sì, mi allontano subito. Il treno sta arrivando ora?",
+              "english": "Yes, I'm moving away immediately. Is the train arriving now?",
+              "isCorrect": true,
+              "feedback": "Safety first! And good awareness of the train's arrival."
+            },
+            {
+              "text": "La linea gialla è molto luminosa, è di un bel colore.",
+              "english": "The yellow line is very bright, it's a nice color.",
+              "isCorrect": false,
+              "feedback": "Don't admire the line, step back from it!"
+            },
+            {
+              "text": "Il treno è blu e grigio? Mi sembra molto moderno.",
+              "english": "Is the train blue and grey? It seems very modern to me.",
+              "isCorrect": false,
+              "feedback": "Watch out for the arriving train instead of its color."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, il treno regionale sta entrando in stazione. Faccia attenzione.",
+          "english": "Yes, the regional train is entering the station. Be careful.",
+          "choices": [
+            {
+              "text": "Vedo il treno! Devo salire subito quando si ferma?",
+              "english": "I see the train! Should I board immediately when it stops?",
+              "isCorrect": true,
+              "feedback": "Good question about boarding etiquette."
+            },
+            {
+              "text": "Il treno fa molto rumore, mi dà fastidio alle orecchie.",
+              "english": "The train makes a lot of noise, it bothers my ears.",
+              "isCorrect": false,
+              "feedback": "Trains are noisy, that's normal."
+            },
+            {
+              "text": "Voglio correre verso il treno mentre si muove.",
+              "english": "I want to run towards the train while it's moving.",
+              "isCorrect": false,
+              "feedback": "Very dangerous! Never do that."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "No, aspetti che i passeggeri scendano prima di salire.",
+          "english": "No, wait for the passengers to get off before boarding.",
+          "choices": [
+            {
+              "text": "Giusto, è più educato. Grazie per l'avviso.",
+              "english": "Right, it's more polite. Thanks for the warning.",
+              "isCorrect": true,
+              "feedback": "Correct. Letting people off first is the rule."
+            },
+            {
+              "text": "Perché? Io ho fretta e voglio sedermi subito.",
+              "english": "Why? I'm in a hurry and I want to sit down immediately.",
+              "isCorrect": false,
+              "feedback": "It's better to wait to avoid a collision in the doorway."
+            },
+            {
+              "text": "Le persone che scendono sono tante o poche?",
+              "english": "Are there many or few people getting off?",
+              "isCorrect": false,
+              "feedback": "It doesn't matter, you still have to wait."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Prego. Il treno è fermo al binario 6. Salire a bordo.",
+          "english": "You're welcome. The train is stopped at platform 6. Please board.",
+          "choices": [
+            {
+              "text": "Perfetto, vado. Dove posso mettere la mia valigia?",
+              "english": "Perfect, I'm going. Where can I put my suitcase?",
+              "isCorrect": true,
+              "feedback": "Good practical question for boarding."
+            },
+            {
+              "text": "Il treno è fermo? Forse è rotto e non parte più.",
+              "english": "Is the train stopped? Maybe it's broken and won't leave anymore.",
+              "isCorrect": false,
+              "feedback": "It's stopped for passengers to board, not because it's broken!"
+            },
+            {
+              "text": "A bordo c'è un ristorante? Ho molta fame adesso.",
+              "english": "Is there a restaurant on board? I'm very hungry now.",
+              "isCorrect": false,
+              "feedback": "Regional trains usually don't have restaurants!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ci sono gli spazi sopra i sedili o all'inizio della carrozza.",
+          "english": "There are spaces above the seats or at the beginning of the carriage.",
+          "choices": [
+            {
+              "text": "Bene, cercherò un posto libero vicino al bagaglio.",
+              "english": "Good, I'll look for a free seat near the luggage.",
+              "isCorrect": true,
+              "feedback": "Keeping an eye on your luggage is always a good idea."
+            },
+            {
+              "text": "Voglio mettere la valigia sul sedile accanto a me.",
+              "english": "I want to put the suitcase on the seat next to me.",
+              "isCorrect": false,
+              "feedback": "Seats are for passengers, not luggage!"
+            },
+            {
+              "text": "Il bagaglio è troppo grande, forse non ci sta.",
+              "english": "The luggage is too big, maybe it won't fit.",
+              "isCorrect": false,
+              "feedback": "Try the racks at the end of the car then."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottima idea. Il treno partirà tra due minuti.",
+          "english": "Great idea. The train will depart in two minutes.",
+          "choices": [
+            {
+              "text": "Perfetto, entro subito. Grazie ancora e buona giornata!",
+              "english": "Perfect, I'm going in right away. Thanks again and have a good day!",
+              "isCorrect": true,
+              "feedback": "Success! You caught the train despite the changes."
+            },
+            {
+              "text": "Due minuti sono pochissimi, non ce la farò mai!",
+              "english": "Two minutes are very few, I'll never make it!",
+              "isCorrect": false,
+              "feedback": "You are already there, just step inside!"
+            },
+            {
+              "text": "Il treno è veloce come un razzo spaziale?",
+              "english": "Is the train as fast as a space rocket?",
+              "isCorrect": false,
+              "feedback": "Not quite, but it's fast enough."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buon viaggio e buona permanenza a Firenze!",
+          "english": "Have a good trip and a nice stay in Florence!",
+          "choices": [
+            {
+              "text": "Grazie, arrivederci!",
+              "english": "Thanks, goodbye!",
+              "isCorrect": true,
+              "feedback": "Polite conclusion."
+            },
+            {
+              "text": "Firenze è bella? Ciao!",
+              "english": "Is Florence beautiful? Bye!",
+              "isCorrect": false,
+              "feedback": "A fact, but not a goodbye."
+            },
+            {
+              "text": "Arrivederci, a presto!",
+              "english": "Goodbye, see you soon!",
+              "isCorrect": false,
+              "feedback": "That's not possible!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "validating_ticket",
+      "title": "Validating the Ticket",
+      "description": "Ensure your ticket is validated before boarding to avoid a fine.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Scusi, ha già convalidato il suo biglietto cartaceo?",
+          "english": "Excuse me, have you already validated your paper ticket?",
+          "choices": [
+            {
+              "text": "Oh, no! Ho dimenticato. Dove posso obliterare il biglietto?",
+              "english": "Oh, no! I forgot. Where can I validate the ticket?",
+              "isCorrect": true,
+              "feedback": "Good catch! Validating is essential for paper tickets."
+            },
+            {
+              "text": "Sì, il biglietto è nel mio portafoglio con i soldi.",
+              "english": "Yes, the ticket is in my wallet with the money.",
+              "isCorrect": false,
+              "feedback": "Having it isn't enough; you must validate it!"
+            },
+            {
+              "text": "Il biglietto è di carta? Mi piace molto la carta.",
+              "english": "The ticket is paper? I like paper very much.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! You need to stamp it."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Vede quella macchinetta verde e grigia sul binario? Deve usarla.",
+          "english": "Do you see that green and grey machine on the platform? You must use it.",
+          "choices": [
+            {
+              "text": "Ah, quella macchinetta? Va bene, vado subito. Come funziona?",
+              "english": "Ah, that machine? Alright, I'll go right away. How does it work?",
+              "isCorrect": true,
+              "feedback": "Moving to the validation machine and asking for instructions."
+            },
+            {
+              "text": "La macchinetta è rotta? Sembra molto vecchia.",
+              "english": "Is the machine broken? It looks very old.",
+              "isCorrect": false,
+              "feedback": "Don't assume it's broken, try it first!"
+            },
+            {
+              "text": "Preferisco le macchinette rosse, sono più belle.",
+              "english": "I prefer red machines, they are more beautiful.",
+              "isCorrect": false,
+              "feedback": "Colors don't matter, finding the machine does!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Inserisca il biglietto nella fessura finché non sente un rumore.",
+          "english": "Insert the ticket into the slot until you hear a noise.",
+          "choices": [
+            {
+              "text": "Ecco, fatto. Ho sentito il rumore. Ora il biglietto è valido?",
+              "english": "Here, done. I heard the noise. Is the ticket valid now?",
+              "isCorrect": true,
+              "feedback": "Perfect. You followed the mechanical instructions."
+            },
+            {
+              "text": "Il rumore è molto forte? Ho paura dei rumori.",
+              "english": "Is the noise very loud? I'm afraid of noises.",
+              "isCorrect": false,
+              "feedback": "It's just a small stamp sound, nothing to fear!"
+            },
+            {
+              "text": "Il biglietto è ancora intero? Non volevo romperlo.",
+              "english": "Is the ticket still whole? I didn't want to break it.",
+              "isCorrect": false,
+              "feedback": "The machine stamps a date, it doesn't destroy it."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, ora c'è la data e l'ora sopra. Può salire senza problemi.",
+          "english": "Yes, now there is the date and time on it. You can board without problems.",
+          "choices": [
+            {
+              "text": "Meno male! Non volevo prendere una multa dal controllore.",
+              "english": "Thank goodness! I didn't want to get a fine from the controller.",
+              "isCorrect": true,
+              "feedback": "Exactly. Fines for unvalidated tickets are expensive."
+            },
+            {
+              "text": "Il controllore è una persona simpatica e gentile?",
+              "english": "Is the controller a nice and kind person?",
+              "isCorrect": false,
+              "feedback": "Maybe, but he will still fine you if you don't validate!"
+            },
+            {
+              "text": "La data di oggi è importante per me, è il mio compleanno.",
+              "english": "Today's date is important to me, it's my birthday.",
+              "isCorrect": false,
+              "feedback": "Happy birthday, but stay focused on the ticket!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Esatto, i controllori sono severi. Ha anche un biglietto elettronico?",
+          "english": "Exactly, controllers are strict. Do you also have an electronic ticket?",
+          "choices": [
+            {
+              "text": "No, ho solo questo cartaceo per oggi.",
+              "english": "No, I only have this paper one for today.",
+              "isCorrect": true,
+              "feedback": "Clear answer. Many people use apps now, but paper is still valid if stamped."
+            },
+            {
+              "text": "Sì, ho dieci biglietti elettronici sul mio telefono.",
+              "english": "Yes, I have ten electronic tickets on my phone.",
+              "isCorrect": false,
+              "feedback": "Why so many? Just one is enough."
+            },
+            {
+              "text": "Sì, ho il biglietto sullo smartphone.",
+              "english": "Yes, I have the ticket on my smartphone.",
+              "isCorrect": false,
+              "feedback": "Not very practical for train travel!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Va bene. Ricordi di tenerlo a portata di mano per il controllo.",
+          "english": "Fine. Remember to keep it at hand for the check.",
+          "choices": [
+            {
+              "text": "Lo terrò in tasca così è facile da trovare.",
+              "english": "I'll keep it in my pocket so it's easy to find.",
+              "isCorrect": true,
+              "feedback": "Good planning."
+            },
+            {
+              "text": "Voglio nasconderlo bene nella mia valigia grande.",
+              "english": "I want to hide it well in my large suitcase.",
+              "isCorrect": false,
+              "feedback": "That will be hard to find when the controller comes!"
+            },
+            {
+              "text": "Il controllore ha una divisa blu e un cappello?",
+              "english": "Does the controller have a blue uniform and a hat?",
+              "isCorrect": false,
+              "feedback": "Usually yes, but focus on your ticket."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, è meglio. Il treno per la sua destinazione parte tra poco.",
+          "english": "Yes, it's better. The train to your destination leaves shortly.",
+          "choices": [
+            {
+              "text": "Quanto tempo manca alla partenza?",
+              "english": "How much time is left until departure?",
+              "isCorrect": true,
+              "feedback": "Important question to manage your time."
+            },
+            {
+              "text": "Il tempo è relativo, diceva Einstein.",
+              "english": "Time is relative, Einstein used to say.",
+              "isCorrect": false,
+              "feedback": "Not at the train station, it's very absolute!"
+            },
+            {
+              "text": "Voglio restare qui a guardare la macchinetta.",
+              "english": "I want to stay here and watch the machine.",
+              "isCorrect": false,
+              "feedback": "You'll miss your train!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Mancano solo due minuti. Si affretti verso il binario!",
+          "english": "Only two minutes left. Hurry to the platform!",
+          "choices": [
+            {
+              "text": "Due minuti? Allora corro subito! Grazie ancora.",
+              "english": "Two minutes? Then I'll run right away! Thanks again.",
+              "isCorrect": true,
+              "feedback": "Correct action. Time to move."
+            },
+            {
+              "text": "Due minuti sono sufficienti per fare una corsa lenta.",
+              "english": "Two minutes are enough for a slow run.",
+              "isCorrect": false,
+              "feedback": "With luggage, you should probably move faster."
+            },
+            {
+              "text": "Non mi piace correre, preferisco perdere il treno.",
+              "english": "I don't like running, I prefer to miss the train.",
+              "isCorrect": false,
+              "feedback": "That defeats the purpose of your trip!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Prego! Non dimentichi nulla sulla panchina.",
+          "english": "You're welcome! Don't forget anything on the bench.",
+          "choices": [
+            {
+              "text": "Ho preso tutto, borsa e biglietto. Buona giornata!",
+              "english": "I've taken everything, bag and ticket. Have a good day!",
+              "isCorrect": true,
+              "feedback": "Ready to go."
+            },
+            {
+              "text": "La panchina è comoda, forse resto qui.",
+              "english": "The bench is comfortable, maybe I'll stay here.",
+              "isCorrect": false,
+              "feedback": "You need to get on the train!"
+            },
+            {
+              "text": "Ho dimenticato il mio gatto immaginario!",
+              "english": "I forgot my imaginary cat!",
+              "isCorrect": false,
+              "feedback": "Let's focus on real items."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buon viaggio! Si ricordi di scendere alla fermata giusta.",
+          "english": "Have a good trip! Remember to get off at the right stop.",
+          "choices": [
+            {
+              "text": "Sì, starò attento. Arrivederci!",
+              "english": "Yes, I'll be careful. Goodbye!",
+              "isCorrect": true,
+              "feedback": "Final polite goodbye."
+            },
+            {
+              "text": "La fermata è vicina? Arrivederci!",
+              "english": "Is the stop nearby? Goodbye!",
+              "isCorrect": false,
+              "feedback": "Check the station name, not the flowers!"
+            },
+            {
+              "text": "Scenderò quando il treno smette di muoversi.",
+              "english": "I'll get off when the train stops moving.",
+              "isCorrect": false,
+              "feedback": "That's generally how it works, but at the right station!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boarding_carriage",
+      "title": "Boarding the Carriage",
+      "description": "Find your carriage and your reserved seat on the train.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Prego, salga pure. Ha una prenotazione per un posto a sedere?",
+          "english": "Please, come on board. Do you have a reservation for a seat?",
+          "choices": [
+            {
+              "text": "Sì, ho il posto 14A nella carrozza 5. Dove si trova?",
+              "english": "Yes, I have seat 14A in carriage 5. Where is it?",
+              "isCorrect": true,
+              "feedback": "Good. Providing specific seat and carriage numbers."
+            },
+            {
+              "text": "No, preferisco stare in piedi tutto il tempo.",
+              "english": "No, I prefer to stand all the time.",
+              "isCorrect": false,
+              "feedback": "On a long trip, you will definitely want a seat!"
+            },
+            {
+              "text": "Il treno ha molte ruote? Mi sembrano tante.",
+              "english": "Does the train have many wheels? They seem like a lot to me.",
+              "isCorrect": false,
+              "feedback": "The number of wheels is irrelevant to your seat!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Questa è la carrozza 3. Deve camminare avanti verso la testa del treno.",
+          "english": "This is carriage 3. You must walk forward towards the head of the train.",
+          "choices": [
+            {
+              "text": "Ho capito, devo andare avanti per trovare la carrozza 5.",
+              "english": "Understood, I have to go forward to find carriage 5.",
+              "isCorrect": true,
+              "feedback": "Correct. Navigating the train cars."
+            },
+            {
+              "text": "La testa del treno è molto grande e nera?",
+              "english": "Is the head of the train very big and black?",
+              "isCorrect": false,
+              "feedback": "It's just a direction, don't worry about the engine's look."
+            },
+            {
+              "text": "Preferisco andare indietro, la coda è più tranquilla.",
+              "english": "I prefer to go backwards, the tail is quieter.",
+              "isCorrect": false,
+              "feedback": "Your carriage is in the other direction!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Esatto. Tenga la destra nel corridoio per lasciar passare gli altri.",
+          "english": "Exactly. Keep to the right in the corridor to let others pass.",
+          "choices": [
+            {
+              "text": "Va bene. Le carrozze sono numerate chiaramente?",
+              "english": "Alright. Are the carriages numbered clearly?",
+              "isCorrect": true,
+              "feedback": "Good question for a traveler."
+            },
+            {
+              "text": "Il corridoio è stretto come un tubo?",
+              "english": "Is the corridor narrow like a tube?",
+              "isCorrect": false,
+              "feedback": "It's a standard train corridor."
+            },
+            {
+              "text": "Voglio correre nel corridoio e saltare.",
+              "english": "I want to run in the corridor and jump.",
+              "isCorrect": false,
+              "feedback": "Please don't, it's dangerous and annoying for others."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, vede il numero sul display vicino alla porta?",
+          "english": "Yes, do you see the number on the display near the door?",
+          "choices": [
+            {
+              "text": "Ah sì, ora vedo. Questa è la carrozza 4, quindi la prossima è la 5.",
+              "english": "Ah yes, now I see. This is carriage 4, so the next one is 5.",
+              "isCorrect": true,
+              "feedback": "Good observation. You are almost there."
+            },
+            {
+              "text": "Il display è troppo luminoso, mi fa male agli occhi.",
+              "english": "The display is too bright, it hurts my eyes.",
+              "isCorrect": false,
+              "feedback": "It's just for information, try not to stare at it."
+            },
+            {
+              "text": "Il numero 4 è un numero pari, mi piace.",
+              "english": "The number 4 is an even number, I like it.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to your travel."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Ecco la carrozza 5. Cerchi il posto 14A, è vicino al finestrino.",
+          "english": "Perfect. Here is carriage 5. Look for seat 14A, it's near the window.",
+          "choices": [
+            {
+              "text": "Ottimo, adoro guardare fuori dal finestrino durante il viaggio.",
+              "english": "Great, I love looking out the window during the trip.",
+              "isCorrect": true,
+              "feedback": "Nice. Window seats are great for sightseeing."
+            },
+            {
+              "text": "Il finestrino è pulito? Spero di vedere bene.",
+              "english": "Is the window clean? I hope to see well.",
+              "isCorrect": false,
+              "feedback": "Don't worry about that now, just find the seat."
+            },
+            {
+              "text": "Il posto 14A è di velluto rosso o di pelle blu?",
+              "english": "Is seat 14A red velvet or blue leather?",
+              "isCorrect": false,
+              "feedback": "The material doesn't matter, just the number!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sistemiamo le valigie sopra il sedile, nello spazio apposito.",
+          "english": "Let's put the suitcases above the seat, in the designated space.",
+          "choices": [
+            {
+              "text": "Grazie, le mie valigie sono pesanti. Mi aiuta per favore?",
+              "english": "Thanks, my suitcases are heavy. Can you help me please?",
+              "isCorrect": true,
+              "feedback": "Good request for help with heavy luggage."
+            },
+            {
+              "text": "Sopra il sedile? Ho paura che cadano sulla testa.",
+              "english": "Above the seat? I'm afraid they'll fall on my head.",
+              "isCorrect": false,
+              "feedback": "They are secure in the luggage racks, don't worry."
+            },
+            {
+              "text": "Le valigie sono piene di vestiti e scarpe nuove.",
+              "english": "The suitcases are full of new clothes and shoes.",
+              "isCorrect": false,
+              "feedback": "The contents of your bags don't matter right now."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente. Ecco fatto. C'è spazio per tutto.",
+          "english": "Certainly. There we go. There's space for everything.",
+          "choices": [
+            {
+              "text": "Grazie mille, è stato molto gentile ad aiutarmi.",
+              "english": "Thank you very much, you were very kind to help me.",
+              "isCorrect": true,
+              "feedback": "Polite appreciation."
+            },
+            {
+              "text": "Lo spazio è infinito come l'universo?",
+              "english": "Is space infinite like the universe?",
+              "isCorrect": false,
+              "feedback": "No, it's just a luggage rack."
+            },
+            {
+              "text": "Voglio mettere anche le mie scarpe lassù.",
+              "english": "I want to put my shoes up there too.",
+              "isCorrect": false,
+              "feedback": "Keep your shoes on your feet or in your bag!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Prego. Ora si sieda e si rilassi. Il viaggio dura due ore.",
+          "english": "You're welcome. Now sit down and relax. The trip lasts two hours.",
+          "choices": [
+            {
+              "text": "Due ore sono perfette per leggere un libro.",
+              "english": "Two hours are perfect for reading a book.",
+              "isCorrect": true,
+              "feedback": "Good way to spend the time."
+            },
+            {
+              "text": "Due ore? È un tempo lunghissimo, mi annoierò.",
+              "english": "Two hours? It's a very long time, I'll get bored.",
+              "isCorrect": false,
+              "feedback": "It's quite fast for a train trip!"
+            },
+            {
+              "text": "Voglio dormire per due ore e sognare.",
+              "english": "I want to sleep for two hours and dream.",
+              "isCorrect": false,
+              "feedback": "Fine, but maybe say something more conversational."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottima idea. Se ha sete, c'è il carrello bar tra poco.",
+          "english": "Great idea. If you are thirsty, there's the bar trolley shortly.",
+          "choices": [
+            {
+              "text": "Grazie per l'informazione. Magari prenderò un'acqua.",
+              "english": "Thanks for the information. Maybe I'll have a water.",
+              "isCorrect": true,
+              "feedback": "Useful to know about on-board services."
+            },
+            {
+              "text": "Il carrello bar vende anche automobili?",
+              "english": "Does the bar trolley also sell cars?",
+              "isCorrect": false,
+              "feedback": "No, just drinks and snacks!"
+            },
+            {
+              "text": "Ho molta sete, voglio bere un litro di succo d'arancia.",
+              "english": "I'm very thirsty, I want to drink a liter of orange juice.",
+              "isCorrect": false,
+              "feedback": "They might have small bottles, not liters!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Ora la lascio riposare. Buon viaggio!",
+          "english": "Perfect. Now I'll let you rest. Have a good trip!",
+          "choices": [
+            {
+              "text": "Grazie mille per tutto. Finalmente posso riposare.",
+              "english": "Thank you very much for everything. Finally I can rest.",
+              "isCorrect": true,
+              "feedback": "Perfect finish. You are settled and ready for your journey."
+            },
+            {
+              "text": "Mi rilasso molto, forse dormo per tre ore.",
+              "english": "I relax a lot, maybe I'll sleep for three hours.",
+              "isCorrect": false,
+              "feedback": "The host said the trip is only two hours!"
+            },
+            {
+              "text": "Il sedile è comodo? Spero che sia morbidissimo.",
+              "english": "Is the seat comfortable? I hope it's very soft.",
+              "isCorrect": false,
+              "feedback": "You are already sitting down, you can feel it!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

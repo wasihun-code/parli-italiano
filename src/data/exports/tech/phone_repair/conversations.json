@@ -1,0 +1,473 @@
+{
+  "scenarioId": 100,
+  "conversations": [
+    {
+      "id": "broken_screen",
+      "title": "Broken Screen",
+      "description": "Report a broken screen and ask for a repair quote.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Benvenuto in assistenza. Come posso aiutarla oggi?",
+          "english": "Good morning! Welcome to service. How can I help you today?",
+          "choices": [
+            { "text": "Buongiorno, ho rotto lo schermo del mio telefono.", "isCorrect": true, "feedback": "Good. Clearly stating the problem." },
+            { "text": "Buongiorno, vorrei comprare un telefono nuovo.", "isCorrect": false, "feedback": "You are here for a repair, not to buy a new one." },
+            { "text": "Salve, cerco una custodia per il mio cellulare.", "isCorrect": false, "feedback": "Focus on the repair!" }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dispiace. È caduto per terra o ha preso un colpo?",
+          "english": "I'm sorry. Did it fall on the ground or did it take a hit?",
+          "choices": [
+            { "text": "È caduto stamattina e il vetro si è rotto subito.", "isCorrect": true, "feedback": "Perfect description of the event." },
+            { "text": "Sì, la batteria non funziona bene da ieri.", "isCorrect": false, "feedback": "The host is asking about the screen/fall." },
+            { "text": "No, lo schermo è perfetto ma non si accende.", "isCorrect": false, "feedback": "But you just said it's broken!" }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco. Mi faccia vedere il telefono, per favore.",
+          "english": "I understand. Let me see the phone, please.",
+          "choices": [
+            { "text": "Certamente, eccolo. Vede? Il vetro è tutto rotto.", "isCorrect": true, "feedback": "Handing over the device." },
+            { "text": "No, non ce l'ho qui con me adesso.", "isCorrect": false, "feedback": "You need to show it to get a repair!" },
+            { "text": "Sì, vorrei un preventivo per la batteria.", "isCorrect": false, "feedback": "Again, focus on the screen." }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, vedo. Il touch screen funziona ancora o è bloccato?",
+          "english": "Yes, I see. Does the touch screen still work or is it frozen?",
+          "choices": [
+            { "text": "Il touch funziona, ma è difficile leggere i messaggi.", "isCorrect": true, "feedback": "Good technical detail." },
+            { "text": "Sì, il caricabatterie è rotto, non carica.", "isCorrect": false, "feedback": "Not what the host asked." },
+            { "text": "No, non uso mai i messaggi sul telefono.", "isCorrect": false, "feedback": "The host is asking about the screen function." }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Bene, almeno i dati sono salvi. Di che modello si tratta?",
+          "english": "Good, at least the data is safe. What model is it?",
+          "choices": [
+            { "text": "È un modello dell'anno scorso, l'ultimo tipo.", "isCorrect": true, "feedback": "Identifying the device." },
+            { "text": "È un regalo di mio fratello per il compleanno.", "isCorrect": false, "feedback": "The host needs the model, not the history." },
+            { "text": "Sì, ho fatto il backup di tutte le mie foto.", "isCorrect": false, "feedback": "Answer the model question first." }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Per questo modello la riparazione è possibile in giornata.",
+          "english": "Great. For this model, the repair is possible within the day.",
+          "choices": [
+            { "text": "Davvero? Quanto tempo serve per cambiare il vetro?", "isCorrect": true, "feedback": "Asking about timing." },
+            { "text": "No, preferisco tornare la settimana prossima.", "isCorrect": false, "feedback": "If it can be done today, why wait?" },
+            { "text": "Quanto costa un telefono nuovo di questo tipo?", "isCorrect": false, "feedback": "Stay on the repair topic." }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Di solito servono circa due ore. Può lasciarlo qui ora.",
+          "english": "Usually it takes about two hours. You can leave it here now.",
+          "choices": [
+            { "text": "Va bene, lo lascio qui. Ma quanto costa il lavoro?", "isCorrect": true, "feedback": "Asking for the price." },
+            { "text": "Sì, lo porto a casa e torno tra due ore.", "isCorrect": false, "feedback": "You need to leave it THERE for them to fix it." },
+            { "text": "No, mi serve subito per fare una chiamata.", "isCorrect": false, "feedback": "You have to leave it to get it fixed." }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Il costo totale, pezzi e manodopera, è di cento euro.",
+          "english": "The total cost, parts and labor, is one hundred euros.",
+          "choices": [
+            { "text": "Cento euro? È un po' caro, ma è necessario.", "isCorrect": true, "feedback": "Acknowledging the price." },
+            { "text": "Cento euro? È troppo economico, non mi fido.", "isCorrect": false, "feedback": "Standard reaction is usually the opposite!" },
+            { "text": "Posso pagare con un assegno bancario?", "isCorrect": false, "feedback": "Cards or cash are more common." }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Usiamo solo pezzi originali. La riparazione ha una garanzia di tre mesi.",
+          "english": "We only use original parts. The repair has a three-month warranty.",
+          "choices": [
+            { "text": "Perfetto, la garanzia è molto importante per me.", "isCorrect": true, "feedback": "Good. Confirming the value of the warranty." },
+            { "text": "No, non voglio la garanzia, voglio spendere meno.", "isCorrect": false, "feedback": "Warranty is usually included." },
+            { "text": "Tre mesi sono troppi, preferisco solo un mese.", "isCorrect": false, "feedback": "More warranty is better!" }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "D'accordo. Firmi qui questo preventivo e mi lasci il suo nome.",
+          "english": "Alright. Sign this quote here and leave me your name.",
+          "choices": [
+            { "text": "Ecco la firma. Mi chiamo Marco Rossi. A dopo!", "isCorrect": true, "feedback": "Closing the deal correctly." },
+            { "text": "No, non firmo niente senza il mio avvocato.", "isCorrect": false, "feedback": "A bit dramatic for a phone repair!" },
+            { "text": "Sì, il mio telefono è di colore nero.", "isCorrect": false, "feedback": "They need your name, not the color." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battery_replacement",
+      "title": "Battery Replacement",
+      "description": "Discuss battery issues and check if it's covered by warranty.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Il suo telefono ha qualche problema tecnico?",
+          "english": "Hello! Does your phone have some technical problem?",
+          "choices": [
+            { "text": "Sì, la batteria dura pochissimo tempo ora.", "isCorrect": true, "feedback": "Stating the battery issue." },
+            { "text": "No, funziona benissimo, grazie mille.", "isCorrect": false, "feedback": "Then why are you at the repair shop?" },
+            { "text": "Salve, vorrei cambiare il numero di telefono.", "isCorrect": false, "feedback": "That's for the carrier, not the repair shop." }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. Si spegne all'improvviso o si scarica solo velocemente?",
+          "english": "I understand. Does it turn off suddenly or just drain quickly?",
+          "choices": [
+            { "text": "Si spegne spesso quando la carica è al venti per cento.", "isCorrect": true, "feedback": "Detailed symptom reporting." },
+            { "text": "Sì, il volume della musica è troppo basso.", "isCorrect": false, "feedback": "Not a battery problem." },
+            { "text": "No, lo schermo è molto luminoso oggi.", "isCorrect": false, "feedback": "Irrelevant to the battery drain." }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sembra proprio un problema di batteria. Da quanto tempo ha il telefono?",
+          "english": "It really seems like a battery problem. How long have you had the phone?",
+          "choices": [
+            { "text": "L'ho comprato meno di un anno fa, è quasi nuovo.", "isCorrect": true, "feedback": "Important for warranty status." },
+            { "text": "L'ho comprato in un negozio in centro città.", "isCorrect": false, "feedback": "The host asked 'how long', not 'where'." },
+            { "text": "Lo uso circa due ore al giorno per lavoro.", "isCorrect": false, "feedback": "The host asked about the age of the device." }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Se ha meno di un anno, potrebbe essere ancora in garanzia. Ha lo scontrino?",
+          "english": "If it's less than a year old, it might still be under warranty. Do you have the receipt?",
+          "choices": [
+            { "text": "Sì, ho lo scontrino qui nel mio portafoglio.", "isCorrect": true, "feedback": "Excellent preparation." },
+            { "text": "No, l'ho perso durante il trasloco mese scorso.", "isCorrect": false, "feedback": "Without the receipt, warranty is hard to claim." },
+            { "text": "Sì, la batteria è di colore grigio chiaro.", "isCorrect": false, "feedback": "The host asked for the receipt." }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Vediamo... sì, lo scontrino è valido. La garanzia copre il difetto.",
+          "english": "Let's see... yes, the receipt is valid. The warranty covers the defect.",
+          "choices": [
+            { "text": "Che fortuna! Quindi la riparazione è gratuita?", "isCorrect": true, "feedback": "Checking if it's free." },
+            { "text": "Peccato! Quanto devo pagare per questo?", "isCorrect": false, "feedback": "The host said it's covered by warranty!" },
+            { "text": "No, preferisco pagare il prezzo intero.", "isCorrect": false, "feedback": "Nobody wants to pay if it's free!" }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, è gratuita. Dobbiamo però spedire il telefono al centro assistenza.",
+          "english": "Yes, it is free. However, we have to send the phone to the service center.",
+          "choices": [
+            { "text": "Quanto tempo rimane via il telefono per la riparazione?", "isCorrect": true, "feedback": "Asking about turnaround time." },
+            { "text": "Sì, posso aspettare qui dieci minuti?", "isCorrect": false, "feedback": "Sending it away takes much longer than 10 minutes." },
+            { "text": "No, voglio che lo ripari lei adesso.", "isCorrect": false, "feedback": "Warranty repairs often require official centers." }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Circa sette o dieci giorni lavorativi. Le serve un telefono sostitutivo?",
+          "english": "About seven to ten working days. Do you need a replacement phone?",
+          "choices": [
+            { "text": "Sì, ne avrei bisogno per il mio lavoro.", "isCorrect": true, "feedback": "Requesting a loaner phone." },
+            { "text": "No, non uso mai il telefono per chiamare.", "isCorrect": false, "feedback": "Most people need a phone nowadays." },
+            { "text": "Sì, vorrei un telefono nuovo in regalo.", "isCorrect": false, "feedback": "A replacement phone is a loan, not a gift." }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Posso darle un modello base per questi giorni. Deve solo firmare qui.",
+          "english": "I can give you a basic model for these days. You just have to sign here.",
+          "choices": [
+            { "text": "Va bene, firmo subito. Grazie per l'aiuto.", "isCorrect": true, "feedback": "Accepting the replacement." },
+            { "text": "No, voglio l'ultimo modello come sostituto.", "isCorrect": false, "feedback": "Replacement phones are usually basic models." },
+            { "text": "Sì, ma non so scrivere bene in italiano.", "isCorrect": false, "feedback": "A signature is enough." }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Prima di lasciarlo, ha fatto il backup dei suoi dati?",
+          "english": "Perfect. Before leaving it, did you back up your data?",
+          "choices": [
+            { "text": "Sì, ho salvato tutto ieri sera sul computer.", "isCorrect": true, "feedback": "Smart move. Data safety first." },
+            { "text": "No, non so cosa significa fare il backup.", "isCorrect": false, "feedback": "You should ask before they wipe your phone!" },
+            { "text": "Sì, la batteria è carica al cento per cento.", "isCorrect": false, "feedback": "The host asked about data backup." }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo. Allora ci vediamo tra una settimana. Le manderò un messaggio.",
+          "english": "Great. So I'll see you in a week. I'll send you a message.",
+          "choices": [
+            { "text": "Grazie mille, arrivederci e buon lavoro!", "isCorrect": true, "feedback": "Polite exit." },
+            { "text": "No, resto qui ad aspettare il messaggio.", "isCorrect": false, "feedback": "For a week? Go home!" },
+            { "text": "Sì, ma io non ho più il mio telefono!", "isCorrect": false, "feedback": "They will message your replacement phone!" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "water_damage",
+      "title": "Water Damage Inquiry",
+      "description": "Ask about fixing a phone that fell into water.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Posso aiutarla con qualche riparazione?",
+          "english": "Good morning. Can I help you with some repair?",
+          "choices": [
+            { "text": "Buongiorno, purtroppo il mio telefono è caduto in acqua.", "isCorrect": true, "feedback": "Explaining the water damage." },
+            { "text": "Salve, vorrei comprare una bottiglia d'acqua.", "isCorrect": false, "feedback": "This is a repair shop!" },
+            { "text": "Sì, il mio telefono è troppo vecchio, ne voglio uno nuovo.", "isCorrect": false, "feedback": "Focus on the damage repair." }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Oh no, è un problema serio. È successo in mare o in piscina?",
+          "english": "Oh no, that's a serious problem. Did it happen in the sea or a pool?",
+          "choices": [
+            { "text": "È caduto nel lavandino ieri sera a casa.", "isCorrect": true, "feedback": "Specific context provided." },
+            { "text": "Sì, mi piace molto nuotare in piscina.", "isCorrect": false, "feedback": "Not about your hobbies!" },
+            { "text": "No, l'acqua è troppo fredda per me.", "isCorrect": false, "feedback": "The host is asking where the phone fell." }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "L'acqua dolce è meglio dell'acqua salata. Ha provato ad accenderlo?",
+          "english": "Fresh water is better than salt water. Have you tried to turn it on?",
+          "choices": [
+            { "text": "No, l'ho spento subito e non l'ho più toccato.", "isCorrect": true, "feedback": "Correct procedure for water damage." },
+            { "text": "Sì, l'ho acceso e ha fatto una scintilla.", "isCorrect": false, "feedback": "Never turn on a wet phone!" },
+            { "text": "Sì, ho provato a chiamare mia madre subito.", "isCorrect": false, "feedback": "Don't use it if it's wet!" }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Molto bene. Se lo accende bagnato, può bruciare i circuiti.",
+          "english": "Very good. If you turn it on wet, it can burn the circuits.",
+          "choices": [
+            { "text": "Infatti, ho avuto paura di rovinarlo del tutto.", "isCorrect": true, "feedback": "Showing technical awareness." },
+            { "text": "Sì, voglio che sia molto luminoso e caldo.", "isCorrect": false, "feedback": "Heat is bad for wet electronics." },
+            { "text": "No, i circuiti sono fatti di plastica dura.", "isCorrect": false, "feedback": "Incorrect and irrelevant." }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Possiamo provare a pulirlo con ultrasuoni per togliere l'umidità.",
+          "english": "We can try to clean it with ultrasound to remove the humidity.",
+          "choices": [
+            { "text": "Sembra interessante. È un lavoro sicuro per i dati?", "isCorrect": true, "feedback": "Asking about data safety." },
+            { "text": "No, non mi piace la musica ad ultrasuoni.", "isCorrect": false, "feedback": "It's a cleaning process, not music!" },
+            { "text": "Sì, pulisca anche la mia custodia di gomma.", "isCorrect": false, "feedback": "Focus on the internal components." }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Non possiamo garantire la salvezza dei dati con l'acqua.",
+          "english": "We cannot guarantee the safety of data with water damage.",
+          "choices": [
+            { "text": "Capisco. Quanto costa questo tentativo di riparazione?", "isCorrect": true, "feedback": "Moving to the cost aspect." },
+            { "text": "Sì, garantisco io che i dati sono tutti lì.", "isCorrect": false, "feedback": "The technician means they might be lost!" },
+            { "text": "No, preferisco perdere il telefono ma salvare i soldi.", "isCorrect": false, "feedback": "You are here to try and fix it." }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "La pulizia costa cinquanta euro, anche se il telefono non riparte.",
+          "english": "Cleaning costs fifty euros, even if the phone doesn't restart.",
+          "choices": [
+            { "text": "Quindi pago cinquanta euro anche senza risultato?", "isCorrect": true, "feedback": "Clarifying the terms." },
+            { "text": "Sì, cinquemila euro mi sembrano troppi.", "isCorrect": false, "feedback": "The host said fifty, not five thousand!" },
+            { "text": "No, pago solo se il telefono funziona come nuovo.", "isCorrect": false, "feedback": "Repair shops often charge for labor/cleaning regardless." }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Esatto, è per il tempo e i prodotti chimici che usiamo.",
+          "english": "Exactly, it's for the time and the chemical products we use.",
+          "choices": [
+            { "text": "Va bene, voglio provare. È la mia unica speranza.", "isCorrect": true, "feedback": "Deciding to proceed." },
+            { "text": "No, preferisco metterlo nel riso per un mese.", "isCorrect": false, "feedback": "Rice is often not enough for deep damage." },
+            { "text": "Sì, usate molto profumo per togliere l'odore.", "isCorrect": false, "feedback": "They use technical cleaners, not perfume." }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "D'accordo. Lo lasci qui e torni domani pomeriggio per il verdetto.",
+          "english": "Alright. Leave it here and come back tomorrow afternoon for the verdict.",
+          "choices": [
+            { "text": "Domani pomeriggio? Va bene, a che ora chiudete?", "isCorrect": true, "feedback": "Checking business hours." },
+            { "text": "Sì, resto qui a dormire davanti al negozio.", "isCorrect": false, "feedback": "Unnecessary and weird!" },
+            { "text": "No, vengo tra dieci minuti a riprenderlo.", "isCorrect": false, "feedback": "The process takes time." }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Chiudiamo alle diciannove. Speriamo bene per il suo telefono!",
+          "english": "We close at seven PM. Let's hope for the best for your phone!",
+          "choices": [
+            { "text": "Grazie, spero proprio che torni a funzionare. Arrivederci!", "isCorrect": true, "feedback": "Polite conclusion." },
+            { "text": "Sì, alle diciannove sono già a letto a dormire.", "isCorrect": false, "feedback": "Irrelevant to the shop hours." },
+            { "text": "No, spero che si rompa del tutto così ne compro uno nuovo.", "isCorrect": false, "feedback": "Then why pay for the repair?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "collecting_phone",
+      "title": "Collecting Repaired Phone",
+      "description": "Collect your phone and verify the repair was successful.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! È qui per ritirare un dispositivo in riparazione?",
+          "english": "Good morning! Are you here to collect a device under repair?",
+          "choices": [
+            { "text": "Sì, sono qui per il mio telefono cellulare.", "isCorrect": true, "feedback": "Stating the purpose of the visit." },
+            { "text": "No, sono qui per vendere il mio vecchio computer.", "isCorrect": false, "feedback": "Wrong purpose." },
+            { "text": "Salve, vorrei riparare il mio orologio da polso.", "isCorrect": false, "feedback": "This is a phone repair shop." }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Mi può dire il suo cognome o il numero della ricevuta?",
+          "english": "Sure. Can you tell me your last name or the receipt number?",
+          "choices": [
+            { "text": "Il mio cognome è Rossi e il numero è 452.", "isCorrect": true, "feedback": "Providing the necessary info." },
+            { "text": "Sì, mi piace molto il numero otto.", "isCorrect": false, "feedback": "They need the receipt number!" },
+            { "text": "No, non ho un cognome, mi chiamo solo Marco.", "isCorrect": false, "feedback": "Everyone has a last name on the form." }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Eccolo qui. La riparazione dello schermo è stata completata.",
+          "english": "Here it is. The screen repair has been completed.",
+          "choices": [
+            { "text": "Ottimo! Posso provarlo prima di pagare?", "isCorrect": true, "feedback": "Smart to test it first." },
+            { "text": "No, preferisco che rimanga rotto così spendo meno.", "isCorrect": false, "feedback": "It's already fixed!" },
+            { "text": "Sì, lo schermo è molto più grande adesso.", "isCorrect": false, "feedback": "A repair doesn't change the screen size." }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certamente, lo accenda pure. Controlli se il touch funziona bene.",
+          "english": "Certainly, go ahead and turn it on. Check if the touch works well.",
+          "choices": [
+            { "text": "Si accende... sì, il touch sembra perfetto adesso.", "isCorrect": true, "feedback": "Verifying the fix." },
+            { "text": "No, non trovo il tasto per accendere la luce.", "isCorrect": false, "feedback": "The power button is on the side!" },
+            { "text": "Sì, la batteria è ancora scarica come ieri.", "isCorrect": false, "feedback": "The repair was for the screen, not the battery." }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Molto bene. Abbiamo anche pulito il vetro e la fotocamera.",
+          "english": "Very well. We also cleaned the glass and the camera.",
+          "choices": [
+            { "text": "Grazie, sembra proprio un telefono nuovo!", "isCorrect": true, "feedback": "Expressing satisfaction." },
+            { "text": "Perché? Io volevo la fotocamera sporca.", "isCorrect": false, "feedback": "Nonsense." },
+            { "text": "Sì, ma ora non vedo più le mie vecchie impronte.", "isCorrect": false, "feedback": "That's a good thing!" }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Mi fa piacere. Allora, il totale è di ottanta euro.",
+          "english": "I'm glad. So, the total is eighty euros.",
+          "choices": [
+            { "text": "Va bene. Accettate pagamenti con carta di credito?", "isCorrect": true, "feedback": "Asking about payment methods." },
+            { "text": "Ottanta euro? Ieri mi aveva detto ottanta centesimi!", "isCorrect": false, "feedback": "Eighty cents for a screen repair? Unlikely." },
+            { "text": "No, preferisco pagare con un sacco di patate.", "isCorrect": false, "feedback": "Not a valid currency." }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, accettiamo tutte le carte e anche i contanti.",
+          "english": "Yes, we accept all cards and also cash.",
+          "choices": [
+            { "text": "Ecco la mia carta. Mi può fare anche la ricevuta?", "isCorrect": true, "feedback": "Paying and asking for documentation." },
+            { "text": "Sì, ho molti contanti nel mio zaino a casa.", "isCorrect": false, "feedback": "You need them HERE to pay." },
+            { "text": "No, non voglio la ricevuta, non serve a niente.", "isCorrect": false, "feedback": "You need it for the warranty!" }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente, ecco lo scontrino. Lo tenga per la garanzia.",
+          "english": "Certainly, here is the receipt. Keep it for the warranty.",
+          "choices": [
+            { "text": "Quanto dura la garanzia sulla riparazione?", "isCorrect": true, "feedback": "Clarifying warranty terms." },
+            { "text": "Sì, lo uso per fare un aeroplanino di carta.", "isCorrect": false, "feedback": "Don't destroy your receipt!" },
+            { "text": "No, lo butto subito nel cestino fuori.", "isCorrect": false, "feedback": "Keep it for safety." }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "La garanzia dura sei mesi per i pezzi sostituiti.",
+          "english": "The warranty lasts six months for the replaced parts.",
+          "choices": [
+            { "text": "Sei mesi? Perfetto, spero di non averne bisogno.", "isCorrect": true, "feedback": "Positive closure." },
+            { "text": "No, sei mesi sono troppo pochi, ne voglio cento.", "isCorrect": false, "feedback": "Unrealistic expectation." },
+            { "text": "Sì, sei mesi fa il mio telefono funzionava bene.", "isCorrect": false, "feedback": "Irrelevant past info." }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Lo spero anche io! Buona giornata e faccia attenzione a non farlo cadere!",
+          "english": "I hope so too! Have a good day and be careful not to drop it!",
+          "choices": [
+            { "text": "Grazie dei consigli, starò molto attento. Arrivederci!", "isCorrect": true, "feedback": "Final polite exit." },
+            { "text": "Sì, lo butto subito a terra per provare la resistenza.", "isCorrect": false, "feedback": "Don't do that!" },
+            { "text": "No, mi piace molto quando il vetro si rompe.", "isCorrect": false, "feedback": "Very strange preference." }
+          ]
+        }
+      ]
+    }
+  ]
+}

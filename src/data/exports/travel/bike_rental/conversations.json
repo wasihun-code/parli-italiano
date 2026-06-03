@@ -1,0 +1,873 @@
+{
+  "scenarioId": 15,
+  "conversations": [
+    {
+      "id": "choosing_bike",
+      "title": "Choosing a Bike",
+      "description": "Discuss which type of bike you want to rent.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Volete noleggiare una bicicletta?",
+          "english": "Good morning! Do you want to rent a bicycle?",
+          "choices": [
+            {
+              "text": "Buongiorno! Sì, vorrei noleggiare una bici.",
+              "isCorrect": true,
+              "english": "Good morning! Yes, I would like to rent a bike."
+            },
+            {
+              "text": "Buongiorno! No, vorrei comprare una macchina.",
+              "isCorrect": false
+            },
+            {
+              "text": "Buongiorno! Sì, vorrei mangiare un gelato.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Preferite una bici da città o una elettrica?",
+          "english": "Certainly. Do you prefer a city bike or an electric one?",
+          "choices": [
+            {
+              "text": "Preferisco una bici elettrica per andare in collina.",
+              "isCorrect": true,
+              "english": "I prefer an electric bike to go to the hills."
+            },
+            {
+              "text": "Preferisco una bici da città perché è molto rossa.",
+              "isCorrect": false
+            },
+            {
+              "text": "Preferisco una bici nuova per andare al ristorante.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottima scelta. Abbiamo questo modello nuovo. È molto leggero.",
+          "english": "Great choice. We have this new model. It is very light.",
+          "choices": [
+            {
+              "text": "Bello! Posso provare l'altezza del sellino?",
+              "isCorrect": true,
+              "english": "Nice! Can I test the height of the saddle?"
+            },
+            {
+              "text": "Bello! Posso provare l'altezza della finestra?",
+              "isCorrect": false
+            },
+            {
+              "text": "Bello! Posso provare l'altezza del palazzo?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, certo. Come vi sembra? Va bene per le gambe?",
+          "english": "Yes, of course. How does it seem to you? Is it okay for your legs?",
+          "choices": [
+            {
+              "text": "Sì, va bene. Il sellino è alla giusta altezza.",
+              "isCorrect": true,
+              "english": "Yes, it's fine. The saddle is at the right height."
+            },
+            {
+              "text": "Sì, va bene. Il sellino è alla giusta distanza.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, va bene. Il sellino è alla giusta velocità.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Volete fare un giro di prova qui fuori?",
+          "english": "Perfect. Do you want to take a test ride outside here?",
+          "choices": [
+            {
+              "text": "Sì, volentieri. Provo subito i freni e il cambio.",
+              "isCorrect": true,
+              "english": "Yes, gladly. I'll test the brakes and the gears right away."
+            },
+            {
+              "text": "Sì, volentieri. Provo subito i piatti e le tazze.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, volentieri. Provo subito i letti e le sedie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Abbiamo anche bici per bambini se servono.",
+          "english": "Great. We also have children's bikes if needed.",
+          "choices": [
+            {
+              "text": "No, grazie. Siamo solo due adulti.",
+              "isCorrect": true,
+              "english": "No, thanks. We are just two adults."
+            },
+            {
+              "text": "No, grazie. Siamo solo due bambini.",
+              "isCorrect": false
+            },
+            {
+              "text": "No, grazie. Siamo solo due gatti.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Va bene. Volete una bici con il cestino?",
+          "english": "Alright. Do you want a bike with a basket?",
+          "choices": [
+            {
+              "text": "Sì, è molto utile per lo zaino.",
+              "isCorrect": true,
+              "english": "Yes, it's very useful for the backpack."
+            },
+            {
+              "text": "Sì, è molto utile per la doccia.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, è molto utile per il letto.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certo. Questa bici ha anche un cambio moderno.",
+          "english": "Sure. This bike also has a modern gear system.",
+          "choices": [
+            {
+              "text": "Bene. È facile da usare?",
+              "isCorrect": true,
+              "english": "Good. Is it easy to use?"
+            },
+            {
+              "text": "Bene. È facile da mangiare?",
+              "isCorrect": false
+            },
+            {
+              "text": "Bene. È facile da dormire?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, è molto semplice. Volete provarlo?",
+          "english": "Yes, it's very simple. Do you want to try it?",
+          "choices": [
+            {
+              "text": "Sì, faccio un piccolo giro.",
+              "isCorrect": true,
+              "english": "Yes, I'll take a short ride."
+            },
+            {
+              "text": "Sì, faccio un piccolo tavolo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, faccio un piccolo libro.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Vi aspetto qui tra poco.",
+          "english": "Perfect. I'll wait for you here in a bit.",
+          "choices": [
+            {
+              "text": "D'accordo, a tra poco!",
+              "isCorrect": true,
+              "english": "Alright, see you in a bit!"
+            },
+            {
+              "text": "D'accordo, a tra mille!",
+              "isCorrect": false
+            },
+            {
+              "text": "D'accordo, a tra centro!",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accessories_and_safety",
+      "title": "Accessories and Safety",
+      "description": "Request a helmet, a lock, and other necessary items.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "La bici funziona bene? Avete bisogno di accessori?",
+          "english": "Does the bike work well? Do you need any accessories?",
+          "choices": [
+            {
+              "text": "Sì, funziona benissimo. Mi serve un casco, per favore.",
+              "isCorrect": true,
+              "english": "Yes, it works very well. I need a helmet, please."
+            },
+            {
+              "text": "Sì, funziona benissimo. Mi serve un cappello, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, funziona benissimo. Mi serve un dottore, per favore.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ecco il casco. Volete anche un lucchetto per la sicurezza?",
+          "english": "Here is the helmet. Do you also want a lock for safety?",
+          "choices": [
+            {
+              "text": "Sì, grazie. È importante chiudere la bici in centro.",
+              "isCorrect": true,
+              "english": "Yes, thanks. It is important to lock the bike downtown."
+            },
+            {
+              "text": "Sì, grazie. È importante chiudere la porta in hotel.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, grazie. È importante chiudere la valigia in volo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente. Vi do anche un cestino per lo zaino?",
+          "english": "Certainly. Shall I also give you a basket for your backpack?",
+          "choices": [
+            {
+              "text": "Sì, grazie mille. Il cestino è molto utile.",
+              "isCorrect": true,
+              "english": "Yes, thank you very much. The basket is very useful."
+            },
+            {
+              "text": "Sì, grazie mille. Il cestino è molto grande.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, grazie mille. Il cestino è molto bagnato.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Volete anche una mappa con i percorsi ciclabili?",
+          "english": "Do you also want a map with the bike paths?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Qual è il percorso più panoramico?",
+              "isCorrect": true,
+              "english": "Yes, please. Which is the most scenic route?"
+            },
+            {
+              "text": "Sì, grazie. Qual è il percorso più costoso?",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, grazie. Qual è il percorso più difficile?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Il percorso lungo il fiume è bellissimo e pianeggiante.",
+          "english": "The route along the river is beautiful and flat.",
+          "choices": [
+            {
+              "text": "Perfetto, allora vado verso il fiume. Grazie!",
+              "isCorrect": true,
+              "english": "Perfect, then I'll go towards the river. Thanks!"
+            },
+            {
+              "text": "Perfetto, allora vado verso il mare. Grazie!",
+              "isCorrect": false
+            },
+            {
+              "text": "Perfetto, allora vado verso il monte. Grazie!",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Volete anche una pompa per le gomme?",
+          "english": "Do you also want a pump for the tires?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Forse può servire.",
+              "isCorrect": true,
+              "english": "Yes, thanks. Maybe it could be useful."
+            },
+            {
+              "text": "Sì, grazie. Forse può dormire.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, grazie. Forse può mangiare.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco la pompa. Avete luci per la sera?",
+          "english": "Here is the pump. Do you have lights for the evening?",
+          "choices": [
+            {
+              "text": "Sì, vedo che sono già sulla bici.",
+              "isCorrect": true,
+              "english": "Yes, I see they are already on the bike."
+            },
+            {
+              "text": "Sì, vedo che sono già sulla pizza.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, vedo che sono già sulla finestra.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, funzionano bene. Avete anche uno zaino?",
+          "english": "Yes, they work well. Do you also have a backpack?",
+          "choices": [
+            {
+              "text": "Sì, ce l'ho. Lo metto nel cestino.",
+              "isCorrect": true,
+              "english": "Yes, I have it. I'll put it in the basket."
+            },
+            {
+              "text": "Sì, ce l'ho. Lo metto nel frigorifero.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, ce l'ho. Lo metto nel giornale.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo. Ricordate di usare sempre il casco.",
+          "english": "Great. Remember to always use the helmet.",
+          "choices": [
+            {
+              "text": "Certamente. La sicurezza è importante.",
+              "isCorrect": true,
+              "english": "Certainly. Safety is important."
+            },
+            {
+              "text": "Certamente. La velocità è importante.",
+              "isCorrect": false
+            },
+            {
+              "text": "Certamente. La cena è importante.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buon viaggio allora! Divertitevi.",
+          "english": "Have a good trip then! Have fun.",
+          "choices": [
+            {
+              "text": "Grazie mille! A più tardi.",
+              "isCorrect": true,
+              "english": "Thank you very much! See you later."
+            },
+            {
+              "text": "Grazie mille! A più caro.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille! A più presto.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formalities_and_payment",
+      "title": "Formalities and Payment",
+      "description": "Handle the paperwork and pay for the rental.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Per quanto tempo volete noleggiare la bicicletta?",
+          "english": "For how long do you want to rent the bicycle?",
+          "choices": [
+            {
+              "text": "Vorrei noleggiarla per l'intera giornata, grazie.",
+              "isCorrect": true,
+              "english": "I would like to rent it for the whole day, thanks."
+            },
+            {
+              "text": "Vorrei noleggiarla per l'intera settimana, grazie.",
+              "isCorrect": false
+            },
+            {
+              "text": "Vorrei noleggiarla per l'intera vacanza, grazie.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Va bene. Il costo è di venti euro al giorno.",
+          "english": "Alright. The cost is twenty euros per day.",
+          "choices": [
+            {
+              "text": "D'accordo. È necessario lasciare un deposito?",
+              "isCorrect": true,
+              "english": "Agreed. Is it necessary to leave a deposit?"
+            },
+            {
+              "text": "D'accordo. È necessario lasciare un regalo?",
+              "isCorrect": false
+            },
+            {
+              "text": "D'accordo. È necessario lasciare un messaggio?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, serve un deposito di cinquanta euro e un documento.",
+          "english": "Yes, you need a deposit of fifty euros and an ID.",
+          "choices": [
+            {
+              "text": "Ecco la mia carta d'identità e i contanti.",
+              "isCorrect": true,
+              "english": "Here is my ID card and the cash."
+            },
+            {
+              "text": "Ecco la mia carta di credito e le chiavi.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ecco la mia carta del museo e i biglietti.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie. A che ora pensate di restituire la bici?",
+          "english": "Thank you. What time do you plan to return the bike?",
+          "choices": [
+            {
+              "text": "Penso di tornare verso le diciotto, prima di chiudere.",
+              "isCorrect": true,
+              "english": "I think I'll be back around 6 PM, before closing."
+            },
+            {
+              "text": "Penso di tornare verso le dieci, dopo colazione.",
+              "isCorrect": false
+            },
+            {
+              "text": "Penso di tornare verso le ventidue, dopo cena.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottimo. Ricordate di parcheggiare sempre sulla destra.",
+          "english": "Great. Remember to always park on the right.",
+          "choices": [
+            {
+              "text": "Certamente, farò molta attenzione. Buona giornata!",
+              "isCorrect": true,
+              "english": "Certainly, I will be very careful. Have a good day!"
+            },
+            {
+              "text": "Certamente, farò molta confusione. Buona giornata!",
+              "isCorrect": false
+            },
+            {
+              "text": "Certamente, farò molta colazione. Buona giornata!",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco la ricevuta. La tenete con voi?",
+          "english": "Here is the receipt. Will you keep it with you?",
+          "choices": [
+            {
+              "text": "Sì, la metto nel portafoglio.",
+              "isCorrect": true,
+              "english": "Yes, I'll put it in my wallet."
+            },
+            {
+              "text": "Sì, la metto nel cestino.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, la metto nella scarpa.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Bene. Se avete problemi, chiamate questo numero.",
+          "english": "Good. If you have problems, call this number.",
+          "choices": [
+            {
+              "text": "Grazie. Spero di non averne bisogno!",
+              "isCorrect": true,
+              "english": "Thanks. I hope I won't need it!"
+            },
+            {
+              "text": "Grazie. Spero di non averne voglia!",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie. Spero di non averne tempo!",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Lo spero anche io! Avete visto la pista ciclabile?",
+          "english": "I hope so too! Have you seen the bike path?",
+          "choices": [
+            {
+              "text": "Sì, è proprio qui davanti, vero?",
+              "isCorrect": true,
+              "english": "Yes, it's right here in front, right?"
+            },
+            {
+              "text": "Sì, è proprio qui dentro, vero?",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, è proprio qui sopra, vero?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Esatto. Porta direttamente in centro città.",
+          "english": "Exactly. It leads directly to the city center.",
+          "choices": [
+            {
+              "text": "Fantastico. Mi piace molto pedalare.",
+              "isCorrect": true,
+              "english": "Fantastic. I like cycling very much."
+            },
+            {
+              "text": "Fantastico. Mi piace molto mangiare.",
+              "isCorrect": false
+            },
+            {
+              "text": "Fantastico. Mi piace molto dormire.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo! Allora buona pedalata.",
+          "english": "Great! Well then, have a good ride.",
+          "choices": [
+            {
+              "text": "Grazie ancora. Arrivederci!",
+              "isCorrect": true,
+              "english": "Thanks again. Goodbye!"
+            },
+            {
+              "text": "Grazie ancora. Buongiorno!",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie ancora. Prego!",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "returning_the_bike",
+      "title": "Returning the Bike",
+      "description": "Return the bike and report any issues encountered.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Bentornati! Com'è andata la vostra gita in bici?",
+          "english": "Welcome back! How was your bike trip?",
+          "choices": [
+            {
+              "text": "Molto bene, grazie! Il percorso era stupendo.",
+              "isCorrect": true,
+              "english": "Very well, thanks! The route was wonderful."
+            },
+            {
+              "text": "Molto male, grazie! Il percorso era bruttissimo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Molto stanchi, grazie! Il percorso era lunghissimo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi fa piacere. Avete avuto problemi con la bicicletta?",
+          "english": "I'm glad. Did you have any problems with the bicycle?",
+          "choices": [
+            {
+              "text": "Solo un piccolo problema: la ruota sembra sgonfia.",
+              "isCorrect": true,
+              "english": "Just a small problem: the wheel seems flat."
+            },
+            {
+              "text": "Solo un piccolo problema: la ruota sembra rossa.",
+              "isCorrect": false
+            },
+            {
+              "text": "Solo un piccolo problema: la ruota sembra nuova.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco. Forse c'è una piccola foratura nella gomma.",
+          "english": "I see. Maybe there is a small puncture in the tire.",
+          "choices": [
+            {
+              "text": "Sì, penso di sì. Serve usare la pompa?",
+              "isCorrect": true,
+              "english": "Yes, I think so. Is it necessary to use the pump?"
+            },
+            {
+              "text": "Sì, penso di sì. Serve usare la macchina?",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, penso di sì. Serve usare la mappa?",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "No, non vi preoccupate. La ripariamo noi in officina.",
+          "english": "No, don't worry. We will repair it in the workshop.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'aiuto. Ecco le chiavi del lucchetto.",
+              "isCorrect": true,
+              "english": "Thank you very much for the help. Here are the lock keys."
+            },
+            {
+              "text": "Grazie mille per l'aiuto. Ecco le chiavi della camera.",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille per l'aiuto. Ecco le chiavi della macchina.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Vi restituisco subito il deposito e il documento.",
+          "english": "Perfect. I'll return your deposit and ID right away.",
+          "choices": [
+            {
+              "text": "Grazie di tutto, siete stati molto gentili. Arrivederci!",
+              "isCorrect": true,
+              "english": "Thanks for everything, you've been very kind. Goodbye!"
+            },
+            {
+              "text": "Grazie di tutto, siete stati molto lenti. Arrivederci!",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie di tutto, siete stati molto cari. Arrivederci!",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco a voi. Avete visto anche il castello?",
+          "english": "Here you go. Did you also see the castle?",
+          "choices": [
+            {
+              "text": "Sì, è bellissimo. La salita era dura!",
+              "isCorrect": true,
+              "english": "Yes, it's beautiful. The climb was hard!"
+            },
+            {
+              "text": "Sì, è bellissimo. La salita era chiusa!",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, è bellissimo. La salita era rossa!",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Immagino! Per fortuna avevate la bici elettrica.",
+          "english": "I imagine! Luckily you had the electric bike.",
+          "choices": [
+            {
+              "text": "Sì, con l'elettrica è stato molto più facile.",
+              "isCorrect": true,
+              "english": "Yes, with the electric one it was much easier."
+            },
+            {
+              "text": "Sì, con l'elettrica è stato molto più caro.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, con l'elettrica è stato molto più lungo.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Siete andati anche lungo il fiume?",
+          "english": "Did you also go along the river?",
+          "choices": [
+            {
+              "text": "Sì, il percorso è molto panoramico.",
+              "isCorrect": true,
+              "english": "Yes, the route is very scenic."
+            },
+            {
+              "text": "Sì, il percorso è molto veloce.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sì, il percorso è molto sporco.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Mi fa piacere. Volete noleggiare di nuovo domani?",
+          "english": "I'm glad. Do you want to rent again tomorrow?",
+          "choices": [
+            {
+              "text": "Forse sì, ci pensiamo stasera.",
+              "isCorrect": true,
+              "english": "Maybe yes, we'll think about it tonight."
+            },
+            {
+              "text": "Forse sì, ci pensiamo l'anno prossimo.",
+              "isCorrect": false
+            },
+            {
+              "text": "Forse sì, ci pensiamo subito.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va bene. Vi aspetto se decidete di tornare.",
+          "english": "Alright. I'll wait for you if you decide to come back.",
+          "choices": [
+            {
+              "text": "Grazie mille. Buona serata!",
+              "isCorrect": true,
+              "english": "Thank you very much. Have a good evening!"
+            },
+            {
+              "text": "Grazie mille. Buona gita!",
+              "isCorrect": false
+            },
+            {
+              "text": "Grazie mille. Buona colazione!",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

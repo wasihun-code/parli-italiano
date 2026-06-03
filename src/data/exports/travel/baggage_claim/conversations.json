@@ -1,0 +1,953 @@
+{
+  "scenarioId": 3,
+  "conversations": [
+    {
+      "id": "identifying_the_carousel",
+      "title": "Identifying the Carousel",
+      "description": "Find where your bags will arrive based on your flight number.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Qual è il numero del suo volo?",
+          "english": "Good morning. What is your flight number?",
+          "choices": [
+            {
+              "text": "Il mio volo è il numero AZ402. Dove arrivano i bagagli?",
+              "isCorrect": true,
+              "feedback": "Perfect! You've identified your flight and asked for the bags."
+            },
+            {
+              "text": "Il mio zaino è piccolo e leggero. Posso portarlo?",
+              "isCorrect": false,
+              "feedback": "You're answering about a bag, but the host asked for the flight number."
+            },
+            {
+              "text": "Ho perso il passaporto al controllo. Dove posso andare?",
+              "isCorrect": false,
+              "feedback": "This is a serious problem, but not related to the flight number."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il volo AZ402 è al nastro numero tre.",
+          "english": "Flight AZ402 is at carousel number three.",
+          "choices": [
+            {
+              "text": "Grazie mille. È lontano da qui o è vicino?",
+              "isCorrect": true,
+              "feedback": "Good question to find your way."
+            },
+            {
+              "text": "Prego. Dove posso comprare un'acqua?",
+              "isCorrect": false,
+              "feedback": "You need to find your bags first!"
+            },
+            {
+              "text": "Scusi. Qual è il numero del nastro?",
+              "isCorrect": false,
+              "feedback": "The host just told you it was number three."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "È vicino, deve andare a destra dopo il controllo.",
+          "english": "It's close, you must go right after the check.",
+          "choices": [
+            {
+              "text": "Va bene, vado a destra verso il nastro tre.",
+              "isCorrect": true,
+              "feedback": "Correctly following directions."
+            },
+            {
+              "text": "No, vado a sinistra verso l'uscita ora.",
+              "isCorrect": false,
+              "feedback": "That's the wrong direction for your bags."
+            },
+            {
+              "text": "C'è molta gente qui vicino al nastro uno.",
+              "isCorrect": false,
+              "feedback": "Focus on going to carousel three as directed."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Prego. Arrivano molti bagagli in questo momento.",
+          "english": "You're welcome. Many bags are arriving at this moment.",
+          "choices": [
+            {
+              "text": "Spero di recuperare la mia valigia velocemente.",
+              "isCorrect": true,
+              "feedback": "Expressing a realistic goal at the carousel."
+            },
+            {
+              "text": "Ho una valigia rossa e grande. È lì?",
+              "isCorrect": false,
+              "feedback": "You haven't reached the carousel yet."
+            },
+            {
+              "text": "Il mio volo è in ritardo di due ore.",
+              "isCorrect": false,
+              "feedback": "Your flight has already arrived."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Lo spero anche io. Buona fortuna!",
+          "english": "I hope so too. Good luck!",
+          "choices": [
+            {
+              "text": "Grazie, buona giornata!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Sì, buona serata!",
+              "isCorrect": false,
+              "feedback": "It's morning (Buongiorno), not evening."
+            },
+            {
+              "text": "Sì, prego, scusi!",
+              "isCorrect": false,
+              "feedback": "Doesn't make sense as a closing."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Serviranno ancora alcuni minuti per i primi bagagli.",
+          "english": "A few more minutes will be needed for the first bags.",
+          "choices": [
+            {
+              "text": "Va bene, aspetto qui vicino allo schermo.",
+              "isCorrect": true,
+              "feedback": "Good, you're staying patient near the information screen."
+            },
+            {
+              "text": "Voglio andare al ristorante ora, ho fame.",
+              "isCorrect": false,
+              "feedback": "Better to wait for your bags first."
+            },
+            {
+              "text": "Dov'è il nastro numero dieci?",
+              "isCorrect": false,
+              "feedback": "You were told carousel three."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È in Italia per una vacanza?",
+          "english": "Are you in Italy for a vacation?",
+          "choices": [
+            {
+              "text": "Sì, resto a Roma per una settimana.",
+              "isCorrect": true,
+              "feedback": "Answering the host's social question correctly."
+            },
+            {
+              "text": "No, non mi piace viaggiare in aereo.",
+              "isCorrect": false,
+              "feedback": "A bit negative, and you already traveled!"
+            },
+            {
+              "text": "Il mio passaporto è blu.",
+              "isCorrect": false,
+              "feedback": "Not an answer to the question about your vacation."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Roma è bellissima, ma fa molto caldo ora.",
+          "english": "Rome is beautiful, but it's very hot now.",
+          "choices": [
+            {
+              "text": "Lo so, ho vestiti leggeri nella mia valigia.",
+              "isCorrect": true,
+              "feedback": "Perfect, you're prepared for the weather."
+            },
+            {
+              "text": "Non ho vestiti, solo libri.",
+              "isCorrect": false,
+              "feedback": "Unlikely for a week in Rome!"
+            },
+            {
+              "text": "Roma è a nord o a sud?",
+              "isCorrect": false,
+              "feedback": "A bit too basic, you should know where you're going."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Guardi, il nastro inizia a muoversi.",
+          "english": "Look, the belt is starting to move.",
+          "choices": [
+            {
+              "text": "Ottimo, vedo alcuni bagagli arrivare ora.",
+              "isCorrect": true,
+              "feedback": "You noticed the movement."
+            },
+            {
+              "text": "Il nastro è fermo, non si muove.",
+              "isCorrect": false,
+              "feedback": "The host just said it started moving."
+            },
+            {
+              "text": "Vado a comprare un giornale.",
+              "isCorrect": false,
+              "feedback": "Wait! Your bags are coming."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Spero che la sua valigia arrivi subito.",
+          "english": "I hope your suitcase arrives immediately.",
+          "choices": [
+            {
+              "text": "Lo spero anche io. Buona giornata!",
+              "isCorrect": true,
+              "feedback": "Polite closing to the conversation."
+            },
+            {
+              "text": "Sì, arrivederci, vado in banca.",
+              "isCorrect": false,
+              "feedback": "You're at the baggage claim, not near a bank."
+            },
+            {
+              "text": "La mia valigia è persa.",
+              "isCorrect": false,
+              "feedback": "Too pessimistic, it just started!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding_a_trolley",
+      "title": "Finding a Trolley",
+      "description": "Get a trolley to carry your heavy luggage.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Scusi, ha bisogno di aiuto con le valigie?",
+          "english": "Excuse me, do you need help with the suitcases?",
+          "choices": [
+            {
+              "text": "Sì, cerco un carrello per i miei bagagli.",
+              "isCorrect": true,
+              "feedback": "Identifying the need for a trolley."
+            },
+            {
+              "text": "No, cerco la mia valigia nera sul nastro.",
+              "isCorrect": false,
+              "feedback": "The host is offering help, and a trolley is a good response if you have many bags."
+            },
+            {
+              "text": "Sì, dove posso trovare un'uscita per il centro?",
+              "isCorrect": false,
+              "feedback": "Focus on the baggage area first."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "I carrelli sono fuori, vicino all'uscita.",
+          "english": "The trolleys are outside, near the exit.",
+          "choices": [
+            {
+              "text": "Posso prenderne uno anche qui dentro?",
+              "isCorrect": true,
+              "feedback": "Checking for closer options."
+            },
+            {
+              "text": "Vado fuori a prendere un po' di aria fresca.",
+              "isCorrect": false,
+              "feedback": "You need the trolley, not air."
+            },
+            {
+              "text": "L'uscita è a destra o a sinistra?",
+              "isCorrect": false,
+              "feedback": "Focus on the trolley first."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, ce ne sono alcuni vicino al nastro quattro.",
+          "english": "Yes, there are some near carousel four.",
+          "choices": [
+            {
+              "text": "Ottimo, vado a cercare lì. Grazie mille.",
+              "isCorrect": true,
+              "feedback": "Following the new direction."
+            },
+            {
+              "text": "Va bene, vado al nastro tre a cercare.",
+              "isCorrect": false,
+              "feedback": "The host said carousel four."
+            },
+            {
+              "text": "No, non vedo nessun carrello qui vicino.",
+              "isCorrect": false,
+              "feedback": "The host just told you where they are."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Attenzione, serve una moneta per il carrello.",
+          "english": "Attention, you need a coin for the trolley.",
+          "choices": [
+            {
+              "text": "Non lo so. Di quale moneta ho bisogno?",
+              "isCorrect": true,
+              "feedback": "Asking for clarification."
+            },
+            {
+              "text": "Ho molti soldi nel mio portafoglio nero.",
+              "isCorrect": false,
+              "feedback": "A bit too much information; just ask about the coin."
+            },
+            {
+              "text": "Perché serve una moneta per il carrello?",
+              "isCorrect": false,
+              "feedback": "Focus on which coin you need instead of why."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Serve un euro per sbloccare il carrello.",
+          "english": "You need one euro to unlock the trolley.",
+          "choices": [
+            {
+              "text": "Va bene, ho una moneta da un euro qui.",
+              "isCorrect": true,
+              "feedback": "You have what's needed."
+            },
+            {
+              "text": "Scusi, non ho una moneta da due euro.",
+              "isCorrect": false,
+              "feedback": "The host said one euro."
+            },
+            {
+              "text": "Prendo un carrello senza moneta ora.",
+              "isCorrect": false,
+              "feedback": "They are locked!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ha molti bagagli oggi?",
+          "english": "Do you have many bags today?",
+          "choices": [
+            {
+              "text": "Sì, ho due valigie grandi e uno zaino.",
+              "isCorrect": true,
+              "feedback": "Confirming the need for the trolley with details."
+            },
+            {
+              "text": "No, ho solo una borsa piccola.",
+              "isCorrect": false,
+              "feedback": "Then you probably don't need a trolley."
+            },
+            {
+              "text": "Ho tre fratelli a casa.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the question."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Allora il carrello è molto utile per lei.",
+          "english": "Then the trolley is very useful for you.",
+          "choices": [
+            {
+              "text": "Sì, le valigie sono molto pesanti.",
+              "isCorrect": true,
+              "feedback": "Explaining why the trolley is useful."
+            },
+            {
+              "text": "No, le valigie sono leggere come piume.",
+              "isCorrect": false,
+              "feedback": "Usually, large suitcases aren't that light."
+            },
+            {
+              "text": "Dov'è il bagno più vicino?",
+              "isCorrect": false,
+              "feedback": "Focus on the trolley and bags."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Se ha bisogno di aiuto per caricarle, mi dica.",
+          "english": "If you need help loading them, tell me.",
+          "choices": [
+            {
+              "text": "Grazie mille, è molto gentile.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the offer of help."
+            },
+            {
+              "text": "No, faccia lei tutto il lavoro.",
+              "isCorrect": false,
+              "feedback": "A bit rude."
+            },
+            {
+              "text": "Voglio mangiare una pizza ora.",
+              "isCorrect": false,
+              "feedback": "First, handle your bags!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ha una prenotazione in un hotel in centro?",
+          "english": "Do you have a reservation in a hotel downtown?",
+          "choices": [
+            {
+              "text": "Sì, dormo in un hotel vicino alla stazione.",
+              "isCorrect": true,
+              "feedback": "Correctly answering about your destination."
+            },
+            {
+              "text": "No, dormo in aeroporto stasera.",
+              "isCorrect": false,
+              "feedback": "Unlikely if you're taking your bags."
+            },
+            {
+              "text": "La stazione è chiusa oggi.",
+              "isCorrect": false,
+              "feedback": "That would be a problem, but not a direct answer."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Può prendere un taxi appena fuori dall'uscita.",
+          "english": "You can take a taxi just outside the exit.",
+          "choices": [
+            {
+              "text": "Perfetto, grazie per tutte le informazioni.",
+              "isCorrect": true,
+              "feedback": "Closing the conversation politely."
+            },
+            {
+              "text": "No, voglio andare a piedi in centro.",
+              "isCorrect": false,
+              "feedback": "With two large suitcases? Probably not."
+            },
+            {
+              "text": "Dov'è la fermata dell'autobus?",
+              "isCorrect": false,
+              "feedback": "The host suggested a taxi, which is easier with bags."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checking_bag_color",
+      "title": "Checking Bag Color",
+      "description": "Describe your luggage to someone helping you find it.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Quella valigia rossa sul nastro è la sua?",
+          "english": "Is that red suitcase on the belt yours?",
+          "choices": [
+            {
+              "text": "No, la mia valigia è grande e di colore nero.",
+              "isCorrect": true,
+              "feedback": "Correctly identifying your bag's features."
+            },
+            {
+              "text": "Sì, è piccola e di colore rosso. Grazie.",
+              "isCorrect": false,
+              "feedback": "The host asked about the red one, but let's assume you're looking for a black one for this scenario."
+            },
+            {
+              "text": "La valigia è verde e molto piccola.",
+              "isCorrect": false,
+              "feedback": "Wrong color and size."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ah, vedo una valigia nera ora. È pesante?",
+          "english": "Ah, I see a black suitcase now. Is it heavy?",
+          "choices": [
+            {
+              "text": "Sì, è molto pesante perché è piena di vestiti.",
+              "isCorrect": true,
+              "feedback": "Confirming the weight and reason."
+            },
+            {
+              "text": "No, è molto leggera e vuota ora.",
+              "isCorrect": false,
+              "feedback": "Usually, suitcases coming from a flight aren't empty."
+            },
+            {
+              "text": "Sì, ha quattro ruote e una maniglia.",
+              "isCorrect": false,
+              "feedback": "The host asked if it's heavy, not about the wheels."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ha un'etichetta con il suo numero sopra?",
+          "english": "Does it have a label with your name on it?",
+          "choices": [
+            {
+              "text": "Sì, c'è un'etichetta marrone sulla maniglia.",
+              "isCorrect": true,
+              "feedback": "Providing more details for identification."
+            },
+            {
+              "text": "No, non ho il mio passaporto qui.",
+              "isCorrect": false,
+              "feedback": "He asked about the label, not your passport."
+            },
+            {
+              "text": "Sì, il mio nome è scritto sul biglietto.",
+              "isCorrect": false,
+              "feedback": "The label is on the bag, not just the ticket."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Eccola! Vuole aiuto per prenderla dal nastro?",
+          "english": "Here it is! Do you want help taking it from the belt?",
+          "choices": [
+            {
+              "text": "Sì, per favore. È difficile da recuperare.",
+              "isCorrect": true,
+              "feedback": "Accepting help for a heavy bag."
+            },
+            {
+              "text": "No, vado a prendere un carrello ora.",
+              "isCorrect": false,
+              "feedback": "You should take the bag first if it's right there."
+            },
+            {
+              "text": "Scusi, dove sono i bagagli smarriti?",
+              "isCorrect": false,
+              "feedback": "You just found your bag!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Nessun problema. Ecco la sua valigia nera.",
+          "english": "No problem. Here is your black suitcase.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'aiuto, gentilissimo!",
+              "isCorrect": true,
+              "feedback": "Expressing gratitude."
+            },
+            {
+              "text": "Prego, quale volo arriva ora?",
+              "isCorrect": false,
+              "feedback": "Focus on your bag."
+            },
+            {
+              "text": "Arrivederci, vado al controllo ora.",
+              "isCorrect": false,
+              "feedback": "A bit abrupt, but the other one is better."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Questa valigia ha un nastro rosso. È la sua?",
+          "english": "This suitcase has a red ribbon. Is it yours?",
+          "choices": [
+            {
+              "text": "No, la mia non ha nessun nastro colorato.",
+              "isCorrect": true,
+              "feedback": "Correctly identifying that it's not yours."
+            },
+            {
+              "text": "Sì, la mia ha un nastro di colore blu.",
+              "isCorrect": false,
+              "feedback": "The user is describing their bag's ribbon correctly but answering No."
+            },
+            {
+              "text": "No, cerco una valigia di colore verde.",
+              "isCorrect": false,
+              "feedback": "The user is looking for a black suitcase, not green."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Aspetti, ne vedo un'altra nera proprio ora.",
+          "english": "Wait, I see another black one right now.",
+          "choices": [
+            {
+              "text": "Sì, quella sembra proprio la mia!",
+              "isCorrect": true,
+              "feedback": "Good observation."
+            },
+            {
+              "text": "No, è troppo piccola per me.",
+              "isCorrect": false,
+              "feedback": "Wait and see."
+            },
+            {
+              "text": "Voglio andare a casa ora.",
+              "isCorrect": false,
+              "feedback": "Patience!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Può controllare il nome sull'etichetta?",
+          "english": "Can you check the name on the label?",
+          "choices": [
+            {
+              "text": "Sì, è il mio nome. È la mia valigia!",
+              "isCorrect": true,
+              "feedback": "Confirmation successful."
+            },
+            {
+              "text": "No, non so leggere bene.",
+              "isCorrect": false,
+              "feedback": "You can read your own name."
+            },
+            {
+              "text": "Il nome è scritto in blu.",
+              "isCorrect": false,
+              "feedback": "But is it YOUR name?"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo! Ha altri bagagli da aspettare?",
+          "english": "Great! Do you have any other bags to wait for?",
+          "choices": [
+            {
+              "text": "No, questa era l'unica valigia.",
+              "isCorrect": true,
+              "feedback": "Indicating you're finished here."
+            },
+            {
+              "text": "Sì, aspetto ancora dieci valigie.",
+              "isCorrect": false,
+              "feedback": "That's a lot of bags!"
+            },
+            {
+              "text": "Dov'è il bar più vicino?",
+              "isCorrect": false,
+              "feedback": "Finish with the bags first."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bene. Può andare verso l'uscita adesso.",
+          "english": "Fine. You can go towards the exit now.",
+          "choices": [
+            {
+              "text": "Grazie ancora. Buona giornata a lei!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "No, resto qui a guardare il nastro.",
+              "isCorrect": false,
+              "feedback": "Why stay if you have your bag?"
+            },
+            {
+              "text": "Sì, dove posso comprare un biglietto?",
+              "isCorrect": false,
+              "feedback": "You don't need a ticket to exit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assisting_a_fellow_traveler",
+      "title": "Assisting a Fellow Traveler",
+      "description": "Help someone else find the correct carousel for their flight.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Mi scusi, non trovo il mio bagaglio. Mi aiuta?",
+          "english": "Excuse me, I can't find my bag. Can you help me?",
+          "choices": [
+            {
+              "text": "Certamente. Di che colore è il suo bagaglio?",
+              "isCorrect": true,
+              "feedback": "Helpful and asking for details."
+            },
+            {
+              "text": "No, scusi, ho molta fretta ora.",
+              "isCorrect": false,
+              "feedback": "Not very helpful for a learning scenario."
+            },
+            {
+              "text": "Il mio bagaglio è nero e grande.",
+              "isCorrect": false,
+              "feedback": "The host is asking about THEIR bag, not yours."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È uno zaino piccolo e di colore blu.",
+          "english": "It's a small backpack and it's blue.",
+          "choices": [
+            {
+              "text": "Vedo molti zaini, ma nessuno è blu qui.",
+              "isCorrect": true,
+              "feedback": "Observations about the current carousel."
+            },
+            {
+              "text": "C'è uno zaino rosso vicino al nastro tre.",
+              "isCorrect": false,
+              "feedback": "They said blue, not red."
+            },
+            {
+              "text": "Il carrello è blu, vuole usarlo?",
+              "isCorrect": false,
+              "feedback": "They are looking for a bag, not a trolley."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Forse è ancora dentro l'aereo?",
+          "english": "Maybe it's still inside the plane?",
+          "choices": [
+            {
+              "text": "Non credo. Qual era il numero del suo volo?",
+              "isCorrect": true,
+              "feedback": "Checking the most likely cause of a missing bag: wrong carousel."
+            },
+            {
+              "text": "Sì, l'aereo è molto grande e blu.",
+              "isCorrect": false,
+              "feedback": "Irrelevant description."
+            },
+            {
+              "text": "Dov'è il nastro numero cinque?",
+              "isCorrect": false,
+              "feedback": "You're jumping to conclusions."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Il mio volo era il FR502 da Londra.",
+          "english": "My flight was FR502 from London.",
+          "choices": [
+            {
+              "text": "Quel volo è al nastro cinque, non qui.",
+              "isCorrect": true,
+              "feedback": "Correctly identifying the wrong location."
+            },
+            {
+              "text": "Il volo AZ402 è al nastro tre.",
+              "isCorrect": false,
+              "feedback": "Wrong flight number."
+            },
+            {
+              "text": "Londra è molto bella in estate.",
+              "isCorrect": false,
+              "feedback": "Keep to the task at hand."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ah, ho sbagliato nastro! Grazie infinite.",
+          "english": "Ah, I got the wrong carousel! Thank you so much.",
+          "choices": [
+            {
+              "text": "Prego! Il nastro cinque è in fondo a sinistra.",
+              "isCorrect": true,
+              "feedback": "Giving final directions."
+            },
+            {
+              "text": "Sì, il nastro tre è a destra.",
+              "isCorrect": false,
+              "feedback": "They need to go to nastro cinque."
+            },
+            {
+              "text": "Scusi, non parlo bene l'italiano.",
+              "isCorrect": false,
+              "feedback": "You've been doing great so far!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Il nastro cinque è molto lontano da qui?",
+          "english": "Is carousel five very far from here?",
+          "choices": [
+            {
+              "text": "No, è a soli due minuti a piedi.",
+              "isCorrect": true,
+              "feedback": "Providing helpful distance information."
+            },
+            {
+              "text": "Sì, deve prendere un taxi.",
+              "isCorrect": false,
+              "feedback": "Inside the airport? Unlikely."
+            },
+            {
+              "text": "Non lo so, sono nuovo qui.",
+              "isCorrect": false,
+              "feedback": "You just gave directions, so you should know!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sono un po' stanco dopo il lungo volo.",
+          "english": "I am a bit tired after the long flight.",
+          "choices": [
+            {
+              "text": "Capisco, il volo da Londra è lungo.",
+              "isCorrect": true,
+              "feedback": "Showing empathy and understanding."
+            },
+            {
+              "text": "Io non sono stanco, sono felice.",
+              "isCorrect": false,
+              "feedback": "A bit self-centered."
+            },
+            {
+              "text": "Londra è vicina a Roma.",
+              "isCorrect": false,
+              "feedback": "Not really."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Almeno il tempo qui è migliore.",
+          "english": "At least the weather here is better.",
+          "choices": [
+            {
+              "text": "Sì, è una bellissima giornata di sole.",
+              "isCorrect": true,
+              "feedback": "Confirming the pleasant weather."
+            },
+            {
+              "text": "No, piove sempre in Italia.",
+              "isCorrect": false,
+              "feedback": "Not true, especially compared to London!"
+            },
+            {
+              "text": "Che ore sono adesso?",
+              "isCorrect": false,
+              "feedback": "Keep to the conversation topic."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie ancora per il suo aiuto.",
+          "english": "Thanks again for your help.",
+          "choices": [
+            {
+              "text": "Prego! Buona fortuna con il suo zaino.",
+              "isCorrect": true,
+              "feedback": "Friendly closing remark."
+            },
+            {
+              "text": "Sì, mi dia dei soldi ora.",
+              "isCorrect": false,
+              "feedback": "Very rude!"
+            },
+            {
+              "text": "Il mio zaino è verde.",
+              "isCorrect": false,
+              "feedback": "They are looking for their blue one."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Spero che arrivi presto. Arrivederci!",
+          "english": "I hope it arrives soon. Goodbye!",
+          "choices": [
+            {
+              "text": "Sono sicuro che arriverà. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Encouraging closing."
+            },
+            {
+              "text": "Sì, vado a dormire ora.",
+              "isCorrect": false,
+              "feedback": "A bit abrupt."
+            },
+            {
+              "text": "Qual è il suo nome?",
+              "isCorrect": false,
+              "feedback": "A bit late to ask now."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

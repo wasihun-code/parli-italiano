@@ -1,0 +1,993 @@
+{
+  "scenarioId": 4,
+  "conversations": [
+    {
+      "id": "standard_airport_taxi",
+      "title": "A Smooth Ride",
+      "description": "Take a taxi to your hotel with no problems.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Benvenuto. Dove la porto oggi?",
+          "english": "Good morning! Welcome. Where can I take you today?",
+          "choices": [
+            {
+              "text": "Buongiorno! Mi porti all'Hotel Roma, per favore.",
+              "english": "Good morning! Take me to Hotel Roma, please.",
+              "isCorrect": true,
+              "feedback": "Perfect! You stated your destination clearly and politely."
+            },
+            {
+              "text": "Vorrei ordinare una pizza margherita subito.",
+              "isCorrect": false,
+              "feedback": "You are in a taxi, not a restaurant!"
+            },
+            {
+              "text": "Dov'è il binario per il treno veloce?",
+              "isCorrect": false,
+              "feedback": "This is a taxi stand, not the train station."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo, via Nazionale 15. Mettiamo le valigie nel baule?",
+          "english": "Sure, via Nazionale 15. Shall we put the suitcases in the trunk?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Ho due valigie grandi e uno zaino.",
+              "english": "Yes, thank you. I have two large suitcases and a backpack.",
+              "isCorrect": true,
+              "feedback": "Good. It is helpful to tell the driver how many bags you have."
+            },
+            {
+              "text": "No, preferisco dormire in aeroporto stasera.",
+              "isCorrect": false,
+              "feedback": "But you just asked to go to a hotel!"
+            },
+            {
+              "text": "Sì, ma voglio guidare io la macchina.",
+              "isCorrect": false,
+              "feedback": "The taxi driver must drive the car!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Nessun problema. C'è un po' di traffico in centro, va bene?",
+          "english": "No problem. There is a bit of traffic downtown, is that okay?",
+          "choices": [
+            {
+              "text": "Va bene. Quanto tempo ci vuole per arrivare?",
+              "english": "That's fine. How long does it take to arrive?",
+              "isCorrect": true,
+              "feedback": "Good question! Asking for the duration is very common."
+            },
+            {
+              "text": "Non importa. Voglio comprare delle scarpe.",
+              "isCorrect": false,
+              "feedback": "Focus on the trip first!"
+            },
+            {
+              "text": "Mi sento male, cerco una farmacia aperta.",
+              "isCorrect": false,
+              "feedback": "Unless it is an emergency, stick to your destination."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Circa trenta minuti. Vuole sapere il costo della corsa?",
+          "english": "About thirty minutes. Do you want to know the cost of the ride?",
+          "choices": [
+            {
+              "text": "Sì, quanto costa il taxi dall'aeroporto?",
+              "english": "Yes, how much does the taxi cost from the airport?",
+              "isCorrect": true,
+              "feedback": "Exactly. It is wise to confirm the price early."
+            },
+            {
+              "text": "No, non ho soldi e non voglio pagare.",
+              "isCorrect": false,
+              "feedback": "You cannot take a taxi if you don't intend to pay!"
+            },
+            {
+              "text": "Sì, mi dica il binario del mio treno.",
+              "isCorrect": false,
+              "feedback": "You are in a taxi, not at the station."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "La tariffa è fissa: sono cinquanta euro. È un buon prezzo?",
+          "english": "The fare is fixed: it is fifty euros. Is it a good price?",
+          "choices": [
+            {
+              "text": "Sì, è perfetto. Possiamo andare adesso.",
+              "english": "Yes, it's perfect. We can go now.",
+              "isCorrect": true,
+              "feedback": "Great, you've agreed on the price."
+            },
+            {
+              "text": "No, preferisco andare a piedi con le valigie.",
+              "isCorrect": false,
+              "feedback": "It's too far to walk from the airport!"
+            },
+            {
+              "text": "Voglio uno sconto del cento per cento.",
+              "isCorrect": false,
+              "feedback": "That would mean a free ride, which is not possible."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Perfetto, partiamo. È la sua prima volta a Roma?",
+          "english": "Perfect, let's go. Is it your first time in Rome?",
+          "choices": [
+            {
+              "text": "Sì, è la prima volta. Sono molto emozionato.",
+              "english": "Yes, it's the first time. I am very excited.",
+              "isCorrect": true,
+              "feedback": "Nice! Small talk makes the ride more pleasant."
+            },
+            {
+              "text": "No, abito qui da venti anni ormai.",
+              "isCorrect": false,
+              "feedback": "If you lived here, you probably wouldn't be staying at a hotel."
+            },
+            {
+              "text": "Dov'è la Tour Eiffel, per favore?",
+              "isCorrect": false,
+              "feedback": "That's in Paris, not Rome!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Roma è bellissima. Vuole che accenda l'aria condizionata?",
+          "english": "Rome is beautiful. Do you want me to turn on the air conditioning?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Fa un po' caldo oggi.",
+              "english": "Yes, thank you. It's a bit hot today.",
+              "isCorrect": true,
+              "feedback": "Good choice for a comfortable ride."
+            },
+            {
+              "text": "No, preferisco il riscaldamento al massimo.",
+              "isCorrect": false,
+              "feedback": "But it's already hot outside!"
+            },
+            {
+              "text": "Voglio un gelato al pistacchio subito.",
+              "isCorrect": false,
+              "feedback": "The driver can't give you gelato while driving!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "D'accordo. Siamo quasi arrivati in via Nazionale. Eccoci!",
+          "english": "Agreed. We have almost arrived at via Nazionale. Here we are!",
+          "choices": [
+            {
+              "text": "Ottimo. È proprio davanti all'hotel. Si fermi qui.",
+              "english": "Great. It's right in front of the hotel. Stop here.",
+              "isCorrect": true,
+              "feedback": "Clear instructions for the driver to stop."
+            },
+            {
+              "text": "Continui a guidare fino a Napoli.",
+              "isCorrect": false,
+              "feedback": "Naples is very far from Rome!"
+            },
+            {
+              "text": "Voglio scendere in mezzo all'autostrada.",
+              "isCorrect": false,
+              "feedback": "That is very dangerous and illegal!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Siamo arrivati. Sono cinquanta euro, come concordato.",
+          "english": "We have arrived. It's fifty euros, as agreed.",
+          "choices": [
+            {
+              "text": "Ecco a lei. Può tenere il resto come mancia.",
+              "english": "Here you go. You can keep the change as a tip.",
+              "isCorrect": true,
+              "feedback": "Very generous! Drivers always appreciate a tip."
+            },
+            {
+              "text": "Non ho soldi, mi dispiace molto.",
+              "isCorrect": false,
+              "feedback": "You should have checked your wallet before starting!"
+            },
+            {
+              "text": "Dov'è il Colosseo? Non lo vedo.",
+              "isCorrect": false,
+              "feedback": "You are at your hotel, not the Colosseo."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie mille! Le scarico i bagagli. Buona giornata!",
+          "english": "Thank you very much! I'll unload your bags. Have a nice day!",
+          "choices": [
+            {
+              "text": "Grazie mille a lei. Buona giornata e arrivederci!",
+              "english": "Thank you very much. Have a nice day and goodbye!",
+              "isCorrect": true,
+              "feedback": "A polite way to end the interaction."
+            },
+            {
+              "text": "Voglio dormire ancora un po' in macchina.",
+              "isCorrect": false,
+              "feedback": "The taxi needs to go to the next customer!"
+            },
+            {
+              "text": "Mi aiuti a portare le valigie in camera?",
+              "isCorrect": false,
+              "feedback": "Taxi drivers usually only unload at the curb."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "card_payment_taxi",
+      "title": "Paying by Card",
+      "description": "Ensure the driver accepts credit cards before starting.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Ha bisogno di un taxi per il centro?",
+          "english": "Hello! Do you need a taxi to the center?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Accetta la carta di credito?",
+              "english": "Yes, thank you. Do you accept credit cards?",
+              "isCorrect": true,
+              "feedback": "Very important to check payment methods in advance."
+            },
+            {
+              "text": "Sì, ma non ho bagagli con me oggi.",
+              "isCorrect": false,
+              "feedback": "You forgot to ask about the payment!"
+            },
+            {
+              "text": "No, sto aspettando l'autobus numero dieci.",
+              "isCorrect": false,
+              "feedback": "If you don't need a taxi, the conversation ends!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, certo. Accetto tutte le carte. Dove deve andare?",
+          "english": "Yes, of course. I accept all cards. Where do you need to go?",
+          "choices": [
+            {
+              "text": "Devo andare in Piazza Navona, al civico dieci.",
+              "english": "I need to go to Piazza Navona, number ten.",
+              "isCorrect": true,
+              "feedback": "Great. Giving the specific street number is helpful."
+            },
+            {
+              "text": "Voglio andare a mangiare un gelato adesso.",
+              "isCorrect": false,
+              "feedback": "Give the driver a specific address first."
+            },
+            {
+              "text": "Cerco un volo per Milano stasera tardi.",
+              "isCorrect": false,
+              "feedback": "You are leaving the airport, not booking a flight!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Piazza Navona, capito. Vuole mettere la valigia nel baule?",
+          "english": "Piazza Navona, understood. Do you want to put the suitcase in the trunk?",
+          "choices": [
+            {
+              "text": "Sì, per favore. È una valigia molto pesante.",
+              "english": "Yes, please. It's a very heavy suitcase.",
+              "isCorrect": true,
+              "feedback": "Polite and informative."
+            },
+            {
+              "text": "No, la porto io sulle mie gambe.",
+              "isCorrect": false,
+              "feedback": "Too uncomfortable for a taxi ride!"
+            },
+            {
+              "text": "Sì, metta anche il mio cane dentro.",
+              "isCorrect": false,
+              "feedback": "You didn't mention a dog before!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Va bene. Il traffico è scorrevole, arriviamo presto.",
+          "english": "All right. Traffic is moving well, we will arrive soon.",
+          "choices": [
+            {
+              "text": "Ottimo. Può dirmi il prezzo approssimativo?",
+              "english": "Great. Can you tell me the approximate price?",
+              "isCorrect": true,
+              "feedback": "Good job asking for an estimate."
+            },
+            {
+              "text": "Male. Voglio scendere e camminare ora.",
+              "isCorrect": false,
+              "feedback": "But you are on the highway!"
+            },
+            {
+              "text": "Grazie. Mi dà un menù del ristorante?",
+              "isCorrect": false,
+              "feedback": "Again, this is a taxi, not a restaurant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Saranno circa quarantacinque euro. Le va bene?",
+          "english": "It will be about forty-five euros. Is that okay with you?",
+          "choices": [
+            {
+              "text": "Sì, va bene. È un prezzo onesto.",
+              "english": "Yes, that's fine. It's a fair price.",
+              "isCorrect": true,
+              "feedback": "Confirming the price avoids surprises later."
+            },
+            {
+              "text": "No, voglio pagare solo cinque euro.",
+              "isCorrect": false,
+              "feedback": "That is far too low for this distance."
+            },
+            {
+              "text": "Mi dica l'ora esatta, per favore.",
+              "isCorrect": false,
+              "feedback": "Focus on the price for now."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Bene, allora andiamo. Le piace la musica alla radio?",
+          "english": "Good, then let's go. Do you like the music on the radio?",
+          "choices": [
+            {
+              "text": "Sì, mi piace. Che stazione è questa?",
+              "english": "Yes, I like it. Which station is this?",
+              "isCorrect": true,
+              "feedback": "Small talk about music is common."
+            },
+            {
+              "text": "No, spenga tutto subito. Voglio silenzio.",
+              "isCorrect": false,
+              "feedback": "A bit rude, try to be more polite."
+            },
+            {
+              "text": "Preferisco suonare io la chitarra.",
+              "isCorrect": false,
+              "feedback": "You are a passenger, not the entertainer!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È una stazione di musica italiana. Siamo quasi in centro.",
+          "english": "It's an Italian music station. We are almost downtown.",
+          "choices": [
+            {
+              "text": "Perfetto. Si vede già la cupola di San Pietro?",
+              "english": "Perfect. Can you already see St. Peter's dome?",
+              "isCorrect": true,
+              "feedback": "Asking about landmarks is a great way to practice."
+            },
+            {
+              "text": "No, vedo solo la neve sulle montagne.",
+              "isCorrect": false,
+              "feedback": "There is no snow in downtown Rome!"
+            },
+            {
+              "text": "Voglio andare al mare adesso.",
+              "isCorrect": false,
+              "feedback": "But you asked for Piazza Navona!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, si vede in lontananza. Eccoci a Piazza Navona.",
+          "english": "Yes, it's visible in the distance. Here we are at Piazza Navona.",
+          "choices": [
+            {
+              "text": "Che bella! Può fermarsi vicino alla fontana?",
+              "english": "How beautiful! Can you stop near the fountain?",
+              "isCorrect": true,
+              "feedback": "Giving a specific spot to stop is helpful."
+            },
+            {
+              "text": "Fermi la macchina in mezzo alla piazza!",
+              "isCorrect": false,
+              "feedback": "Taxis cannot drive into the middle of the square."
+            },
+            {
+              "text": "Non mi piace, torniamo indietro.",
+              "isCorrect": false,
+              "feedback": "You have already arrived!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente. Sono quarantacinque euro. Prendo la carta.",
+          "english": "Certainly. That's forty-five euros. I'll take the card.",
+          "choices": [
+            {
+              "text": "Ecco la mia carta. Mi dà la ricevuta?",
+              "english": "Here is my card. Can you give me the receipt?",
+              "isCorrect": true,
+              "feedback": "Good job completing the payment and asking for a receipt."
+            },
+            {
+              "text": "Ho cambiato idea, voglio pagare in contanti.",
+              "isCorrect": false,
+              "feedback": "You said you wanted to use a card earlier!"
+            },
+            {
+              "text": "La carta è scaduta, non funziona.",
+              "isCorrect": false,
+              "feedback": "That's a big problem!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ecco la ricevuta e la sua carta. Arrivederci!",
+          "english": "Here is the receipt and your card. Goodbye!",
+          "choices": [
+            {
+              "text": "Grazie mille per l'aiuto. Arrivederci!",
+              "english": "Thank you very much for the help. Goodbye!",
+              "isCorrect": true,
+              "feedback": "A polite conclusion to the trip."
+            },
+            {
+              "text": "Dov'è il mio portafoglio? L'ho perso qui.",
+              "isCorrect": false,
+              "feedback": "Check your bags quickly!"
+            },
+            {
+              "text": "Voglio fare un altro giro della città.",
+              "isCorrect": false,
+              "feedback": "The driver has other customers waiting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "address_clarification_taxi",
+      "title": "Double Checking",
+      "description": "Make sure the driver has the correct address.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Mi dica pure l'indirizzo della sua destinazione.",
+          "english": "Good morning. Please tell me the address of your destination.",
+          "choices": [
+            {
+              "text": "Buongiorno. Devo andare in Via del Corso, numero cinque.",
+              "english": "Good morning. I need to go to Via del Corso, number five.",
+              "isCorrect": true,
+              "feedback": "Clear and concise destination info."
+            },
+            {
+              "text": "Buongiorno. Mi piace molto il clima di Roma.",
+              "isCorrect": false,
+              "feedback": "Small talk is fine, but give the address first!"
+            },
+            {
+              "text": "Ciao! Dove posso comprare un biglietto del bus?",
+              "isCorrect": false,
+              "feedback": "You are talking to a taxi driver!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Via del Corso... è vicino a Piazza del Popolo?",
+          "english": "Via del Corso... is it near Piazza del Popolo?",
+          "choices": [
+            {
+              "text": "Sì, esatto. È molto vicino alla piazza.",
+              "english": "Yes, exactly. It is very close to the square.",
+              "isCorrect": true,
+              "feedback": "Confirming landmarks helps the driver."
+            },
+            {
+              "text": "No, è vicino all'aeroporto di Milano.",
+              "isCorrect": false,
+              "feedback": "That is hundreds of kilometers away!"
+            },
+            {
+              "text": "Non lo so, non conosco la città.",
+              "isCorrect": false,
+              "feedback": "Try to use your map to help."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ho capito perfettamente. Posso caricare io la sua borsa?",
+          "english": "I understood perfectly. Can I load your bag?",
+          "choices": [
+            {
+              "text": "Sì, grazie mille. È molto gentile.",
+              "english": "Yes, thank you very much. You are very kind.",
+              "isCorrect": true,
+              "feedback": "Politeness is always appreciated."
+            },
+            {
+              "text": "No, la borsa è vuota e leggera.",
+              "isCorrect": false,
+              "feedback": "Even if it is light, it should go in the back."
+            },
+            {
+              "text": "Sì, ma faccia attenzione ai miei piatti.",
+              "isCorrect": false,
+              "feedback": "Why do you have dishes in your bag at the airport?"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Partiamo subito. Preferisce l'aria condizionata o il finestrino?",
+          "english": "Let's leave immediately. Do you prefer air conditioning or the window?",
+          "choices": [
+            {
+              "text": "Preferisco l'aria condizionata, fa molto caldo.",
+              "english": "I prefer the air conditioning, it's very hot.",
+              "isCorrect": true,
+              "feedback": "Good choice for a comfortable ride."
+            },
+            {
+              "text": "Voglio scendere dalla macchina adesso.",
+              "isCorrect": false,
+              "feedback": "You just started the trip!"
+            },
+            {
+              "text": "Voglio un bicchiere di acqua fredda.",
+              "isCorrect": false,
+              "feedback": "The driver is not a waiter."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo. C'è un po' di traffico oggi. Ha fretta?",
+          "english": "Agreed. There is a bit of traffic today. Are you in a hurry?",
+          "choices": [
+            {
+              "text": "No, non ho fretta. Posso aspettare.",
+              "english": "No, I'm not in a hurry. I can wait.",
+              "isCorrect": true,
+              "feedback": "A calm attitude helps in traffic."
+            },
+            {
+              "text": "Sì, devo essere lì in due minuti!",
+              "isCorrect": false,
+              "feedback": "That's impossible with this traffic!"
+            },
+            {
+              "text": "Non capisco la domanda, parli più piano.",
+              "isCorrect": false,
+              "feedback": "The question was simple, try to answer."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Bene. Passiamo davanti al Mausoleo di Augusto. Lo vede?",
+          "english": "Good. We are passing in front of the Mausoleum of Augustus. Do you see it?",
+          "choices": [
+            {
+              "text": "Sì, lo vedo. È un monumento molto antico.",
+              "english": "Yes, I see it. It is a very ancient monument.",
+              "isCorrect": true,
+              "feedback": "Recognizing landmarks is good for your orientation."
+            },
+            {
+              "text": "No, sto dormendo con gli occhi aperti.",
+              "isCorrect": false,
+              "feedback": "That's a bit strange!"
+            },
+            {
+              "text": "È un nuovo centro commerciale?",
+              "isCorrect": false,
+              "feedback": "No, it's a historical monument!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, ha più di duemila anni. Siamo quasi arrivati.",
+          "english": "Yes, it is more than two thousand years old. We have almost arrived.",
+          "choices": [
+            {
+              "text": "Fantastico. La strada è quella a destra?",
+              "english": "Fantastic. Is that the road on the right?",
+              "isCorrect": true,
+              "feedback": "Helping with directions can be useful."
+            },
+            {
+              "text": "No, giri a sinistra verso la luna.",
+              "isCorrect": false,
+              "feedback": "Stay on the road, please!"
+            },
+            {
+              "text": "Voglio fermarmi a comprare un giornale.",
+              "isCorrect": false,
+              "feedback": "Wait until you reach your destination."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "No, è la prossima a sinistra. Eccoci al numero cinque.",
+          "english": "No, it's the next one on the left. Here we are at number five.",
+          "choices": [
+            {
+              "text": "Perfetto, si fermi pure qui sul marciapiede.",
+              "english": "Perfect, please stop here on the sidewalk.",
+              "isCorrect": true,
+              "feedback": "Clear instruction for the driver."
+            },
+            {
+              "text": "Voglio entrare con la macchina nel portone.",
+              "isCorrect": false,
+              "feedback": "The taxi cannot go inside the building!"
+            },
+            {
+              "text": "Siamo nel posto sbagliato, torniamo indietro.",
+              "isCorrect": false,
+              "feedback": "This is the address you gave!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Eccoci. Sono quaranta euro. Vuole pagare in contanti?",
+          "english": "Here we are. That's forty euros. Do you want to pay in cash?",
+          "choices": [
+            {
+              "text": "Sì, ecco quaranta euro. Mi dà la ricevuta?",
+              "english": "Yes, here are forty euros. Can you give me the receipt?",
+              "isCorrect": true,
+              "feedback": "Paying in cash is simple and direct."
+            },
+            {
+              "text": "No, voglio pagare con un sacco di mele.",
+              "isCorrect": false,
+              "feedback": "The driver only accepts money!"
+            },
+            {
+              "text": "Non pago niente perché il traffico era brutto.",
+              "isCorrect": false,
+              "feedback": "Traffic is not the driver's fault!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certamente. Ecco la ricevuta. Le auguro un buon soggiorno!",
+          "english": "Certainly. Here is the receipt. I wish you a pleasant stay!",
+          "choices": [
+            {
+              "text": "Grazie mille. Arrivederci e buona giornata!",
+              "english": "Thank you very much. Goodbye and have a nice day!",
+              "isCorrect": true,
+              "feedback": "A polite goodbye."
+            },
+            {
+              "text": "Mi porti le valigie fino al quinto piano.",
+              "isCorrect": false,
+              "feedback": "The driver's job ends at the sidewalk."
+            },
+            {
+              "text": "Dov'è la chiave di casa mia?",
+              "isCorrect": false,
+              "feedback": "Check your pockets, the driver doesn't have it!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "receipt_request_taxi",
+      "title": "Asking for a Receipt",
+      "description": "Request a receipt for your business expenses.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera. Dove vuole andare a quest'ora?",
+          "english": "Good evening. Where do you want to go at this hour?",
+          "choices": [
+            {
+              "text": "Buonasera. Mi porti in via Veneto, numero venti.",
+              "english": "Good evening. Take me to via Veneto, number twenty.",
+              "isCorrect": true,
+              "feedback": "Direct and clear."
+            },
+            {
+              "text": "Buonasera. Ho molta fame, voglio una cena.",
+              "isCorrect": false,
+              "feedback": "The driver can take you to a restaurant, but give an address."
+            },
+            {
+              "text": "Ciao! Mi dà una mappa della città?",
+              "isCorrect": false,
+              "feedback": "Drivers have GPS, they don't usually give out paper maps."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Via Veneto, molto bene. Ha molti bagagli?",
+          "english": "Via Veneto, very well. Do you have many bags?",
+          "choices": [
+            {
+              "text": "Solo una valigia piccola. Posso tenerla con me?",
+              "english": "Only one small suitcase. Can I keep it with me?",
+              "isCorrect": true,
+              "feedback": "Good to ask if you can keep a small bag inside."
+            },
+            {
+              "text": "Ho dieci valigie enormi e tre zaini.",
+              "isCorrect": false,
+              "feedback": "That won't fit in a standard taxi!"
+            },
+            {
+              "text": "No, non ho niente, sono povero.",
+              "isCorrect": false,
+              "feedback": "A bit strange to say!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, può tenerla sul sedile. Andiamo!",
+          "english": "Yes, you can keep it on the seat. Let's go!",
+          "choices": [
+            {
+              "text": "Grazie. Mi può dire quanto costa la corsa?",
+              "english": "Thank you. Can you tell me how much the ride costs?",
+              "isCorrect": true,
+              "feedback": "Always a good idea to know the price."
+            },
+            {
+              "text": "No, voglio andare a piedi adesso.",
+              "isCorrect": false,
+              "feedback": "You are already in the taxi!"
+            },
+            {
+              "text": "Può cantare una canzone per me?",
+              "isCorrect": false,
+              "feedback": "The driver is not an entertainer."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Di notte c'è un supplemento. Saranno sessanta euro.",
+          "english": "At night there is a surcharge. It will be sixty euros.",
+          "choices": [
+            {
+              "text": "Capisco. Mi può fare la ricevuta alla fine?",
+              "english": "I understand. Can you give me the receipt at the end?",
+              "isCorrect": true,
+              "feedback": "Great. Asking for a receipt ahead of time is smart."
+            },
+            {
+              "text": "Sessanta euro? È un furto, scendo!",
+              "isCorrect": false,
+              "feedback": "Night rates are higher, but not illegal."
+            },
+            {
+              "text": "Sì, e voglio anche un caffè caldo.",
+              "isCorrect": false,
+              "feedback": "Focus on the transaction."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Certamente, nessun problema. Ha bisogno della ricevuta per lavoro?",
+          "english": "Certainly, no problem. Do you need the receipt for work?",
+          "choices": [
+            {
+              "text": "Sì, esattamente. Devo giustificare la spesa.",
+              "english": "Yes, exactly. I need to justify the expense.",
+              "isCorrect": true,
+              "feedback": "Explaining why you need it is a good conversation starter."
+            },
+            {
+              "text": "No, voglio solo collezionare pezzi di carta.",
+              "isCorrect": false,
+              "feedback": "That's an unusual hobby!"
+            },
+            {
+              "text": "Sì, per darla al mio gatto come gioco.",
+              "isCorrect": false,
+              "feedback": "A bit silly!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Capisco. È un viaggio d'affari allora?",
+          "english": "I see. Is it a business trip then?",
+          "choices": [
+            {
+              "text": "Sì, sono qui per una conferenza importante.",
+              "english": "Yes, I'm here for an important conference.",
+              "isCorrect": true,
+              "feedback": "Nice! You are sharing more about your trip."
+            },
+            {
+              "text": "No, sono qui per rubare il Colosseo.",
+              "isCorrect": false,
+              "feedback": "Don't say that to a Roman!"
+            },
+            {
+              "text": "Sì, vendo macchine volanti.",
+              "isCorrect": false,
+              "feedback": "Maybe in the future!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Interessante. Le strade sono libere stasera, arriviamo subito.",
+          "english": "Interesting. The roads are clear tonight, we'll be there right away.",
+          "choices": [
+            {
+              "text": "Ottimo. Mi piace viaggiare di notte.",
+              "english": "Great. I like traveling at night.",
+              "isCorrect": true,
+              "feedback": "Positive comments make the trip better."
+            },
+            {
+              "text": "Male, voglio stare nel traffico per ore.",
+              "isCorrect": false,
+              "feedback": "Nobody wants that!"
+            },
+            {
+              "text": "Spegni i fari, voglio vedere le stelle.",
+              "isCorrect": false,
+              "feedback": "The driver must keep the lights on for safety!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Eccoci in via Veneto. Dove la lascio esattamente?",
+          "english": "Here we are in via Veneto. Where exactly shall I drop you off?",
+          "choices": [
+            {
+              "text": "Mi lasci pure all'angolo, dopo il semaforo.",
+              "english": "Drop me off at the corner, after the traffic light.",
+              "isCorrect": true,
+              "feedback": "Precise instructions are very helpful."
+            },
+            {
+              "text": "Mi lasci sul tetto di quel palazzo.",
+              "isCorrect": false,
+              "feedback": "Taxis don't fly!"
+            },
+            {
+              "text": "Non mi lasci mai solo, la prego.",
+              "isCorrect": false,
+              "feedback": "That's a bit too dramatic!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene, mi fermo qui. Sono sessanta euro.",
+          "english": "All right, I'll stop here. That's sixty euros.",
+          "choices": [
+            {
+              "text": "Ecco a lei. Mi fa la ricevuta, per favore?",
+              "english": "Here you go. Can you make me the receipt, please?",
+              "isCorrect": true,
+              "feedback": "Reminding the driver about the receipt."
+            },
+            {
+              "text": "Non pago perché è troppo tardi.",
+              "isCorrect": false,
+              "feedback": "The time doesn't excuse you from paying!"
+            },
+            {
+              "text": "Le do un bacio invece dei soldi.",
+              "isCorrect": false,
+              "feedback": "The driver needs money, not kisses!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certamente. Ecco la sua ricevuta. Arrivederci!",
+          "english": "Certainly. Here is your receipt. Goodbye!",
+          "choices": [
+            {
+              "text": "Grazie mille e buona serata. Arrivederci!",
+              "english": "Thank you very much and have a good evening. Goodbye!",
+              "isCorrect": true,
+              "feedback": "A polite conclusion."
+            },
+            {
+              "text": "Voglio il suo numero di telefono.",
+              "isCorrect": false,
+              "feedback": "Keep it professional."
+            },
+            {
+              "text": "Dov'è il ristorante più vicino?",
+              "isCorrect": false,
+              "feedback": "You can look around now that you've arrived."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,953 @@
+{
+  "scenarioId": 7,
+  "conversations": [
+    {
+      "id": "buying_ticket_tabaccheria",
+      "title": "In Tabaccheria",
+      "description": "Buy a bus ticket at a local tobacco shop.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Posso aiutarla?",
+          "english": "Good morning! Can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno! Vorrei un biglietto per l'autobus.",
+              "isCorrect": true,
+              "feedback": "Perfect! You asked for a bus ticket."
+            },
+            {
+              "text": "Buongiorno! Vorrei un panino con il formaggio.",
+              "isCorrect": false,
+              "feedback": "This is a tabaccheria, not a sandwich shop."
+            },
+            {
+              "text": "Buongiorno! Vorrei un ombrello per la pioggia.",
+              "isCorrect": false,
+              "feedback": "You need a bus ticket, not an umbrella."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo. Le serve un biglietto urbano o extraurbano?",
+          "english": "Sure. Do you need a city ticket or a suburban one?",
+          "choices": [
+            {
+              "text": "Mi serve un biglietto urbano per il centro.",
+              "isCorrect": true,
+              "feedback": "Good choice! Most city travel uses 'urbano'."
+            },
+            {
+              "text": "Mi serve un biglietto per andare in America.",
+              "isCorrect": false,
+              "feedback": "You can't go to America by local bus!"
+            },
+            {
+              "text": "Mi serve un biglietto per il cinema stasera.",
+              "isCorrect": false,
+              "feedback": "They sell bus tickets here, not cinema tickets."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene. Ne vuole solo uno o un carnet da dieci?",
+          "english": "Alright. Do you want just one or a pack of ten?",
+          "choices": [
+            {
+              "text": "Ne prendo due, per favore. Uno per il ritorno.",
+              "isCorrect": true,
+              "feedback": "Smart! Buying the return ticket now saves time."
+            },
+            {
+              "text": "Ne prendo dieci chili, per favore. Sono freschi?",
+              "isCorrect": false,
+              "feedback": "Tickets are not sold by weight like fruit!"
+            },
+            {
+              "text": "Ne prendo nessuno, per favore. Non ho soldi.",
+              "isCorrect": false,
+              "feedback": "You need to buy at least one ticket to travel."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certamente. Sono tre euro in totale.",
+          "english": "Certainly. That is three euros in total.",
+          "choices": [
+            {
+              "text": "Ecco a lei. Accetta la carta di credito?",
+              "isCorrect": true,
+              "feedback": "Good. Checking for card payment is very common."
+            },
+            {
+              "text": "Ecco a lei. Accetta queste vecchie chiavi?",
+              "isCorrect": false,
+              "feedback": "You must pay with money or a card."
+            },
+            {
+              "text": "Ecco a lei. Accetta un po' di cioccolato?",
+              "isCorrect": false,
+              "feedback": "Payment must be in euros, not sweets."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, certo. Può inserire la carta nel lettore.",
+          "english": "Yes, sure. You can insert the card into the reader.",
+          "choices": [
+            {
+              "text": "Fatto. Devo inserire anche il mio codice PIN?",
+              "isCorrect": true,
+              "feedback": "Good question when paying by card."
+            },
+            {
+              "text": "Fatto. Devo inserire anche il mio numero civico?",
+              "isCorrect": false,
+              "feedback": "No, just the PIN for the card payment."
+            },
+            {
+              "text": "Fatto. Devo inserire anche il mio gatto nero?",
+              "isCorrect": false,
+              "feedback": "That's not how card readers work!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "No, è contactless. Non serve il codice per tre euro.",
+          "english": "No, it is contactless. The code is not needed for three euros.",
+          "choices": [
+            {
+              "text": "Perfetto. Dove si trova la fermata più vicina?",
+              "isCorrect": true,
+              "feedback": "Asking for directions to the stop is logical."
+            },
+            {
+              "text": "Perfetto. Dove si trova la spiaggia più vicina?",
+              "isCorrect": false,
+              "feedback": "Stay focused on the bus trip for now."
+            },
+            {
+              "text": "Perfetto. Dove si trova la montagna più alta?",
+              "isCorrect": false,
+              "feedback": "Focus on finding the bus stop."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "La fermata è proprio qui fuori, a destra del bar.",
+          "english": "The stop is right outside here, to the right of the bar.",
+          "choices": [
+            {
+              "text": "Grazie. Quale linea devo prendere per il centro?",
+              "isCorrect": true,
+              "feedback": "Good! You need to know which bus to board."
+            },
+            {
+              "text": "Grazie. Quale pizza devo mangiare per la cena?",
+              "isCorrect": false,
+              "feedback": "The shopkeeper can't decide your dinner!"
+            },
+            {
+              "text": "Grazie. Quale film devo vedere per il sabato?",
+              "isCorrect": false,
+              "feedback": "Ask about the bus, not movie tips."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Deve prendere la linea dodici. Passa ogni dieci minuti.",
+          "english": "You should take line twelve. It comes every ten minutes.",
+          "choices": [
+            {
+              "text": "Benissimo. Devo convalidare il biglietto sul bus?",
+              "isCorrect": true,
+              "feedback": "Very important! You must validate your ticket."
+            },
+            {
+              "text": "Benissimo. Devo cucinare il biglietto sul bus?",
+              "isCorrect": false,
+              "feedback": "Don't cook it, validate (convalidare) it!"
+            },
+            {
+              "text": "Benissimo. Devo lavare il biglietto sul bus?",
+              "isCorrect": false,
+              "feedback": "Don't wash it, validate (convalidare) it!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, deve timbrarlo appena sale. Ci sono le macchinette.",
+          "english": "Yes, you must stamp it as soon as you board. There are machines.",
+          "choices": [
+            {
+              "text": "Va bene, ho capito tutto. Grazie mille dell'aiuto.",
+              "isCorrect": true,
+              "feedback": "Polite way to finish the conversation."
+            },
+            {
+              "text": "Va bene, ho perso tutto. Grazie mille dell'aiuto.",
+              "isCorrect": false,
+              "feedback": "Hopefully you haven't lost anything!"
+            },
+            {
+              "text": "Va bene, ho rotto tutto. Grazie mille dell'aiuto.",
+              "isCorrect": false,
+              "feedback": "Don't break anything, just take the bus."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego, buon viaggio e buona giornata!",
+          "english": "You're welcome, have a good trip and a good day!",
+          "choices": [
+            {
+              "text": "Grazie, buona giornata anche a lei. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "A polite goodbye."
+            },
+            {
+              "text": "Grazie, buona notte anche a lei. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "It is daytime, so 'buona giornata' is better."
+            },
+            {
+              "text": "Grazie, buona fortuna anche a lei. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "'Buona giornata' is the standard greeting here."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_bus_info",
+      "title": "Chiedere Informazioni alla Fermata",
+      "description": "Ask someone at the bus stop for help with the lines.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Scusi, anche lei aspetta il bus per la stazione?",
+          "english": "Excuse me, are you also waiting for the bus to the station?",
+          "choices": [
+            {
+              "text": "Sì, sa se la linea ventidue passa da qui?",
+              "isCorrect": true,
+              "feedback": "Good! You are confirming the bus line."
+            },
+            {
+              "text": "Sì, sa se la pioggia ventidue passa da qui?",
+              "isCorrect": false,
+              "feedback": "You are talking about a bus line, not rain."
+            },
+            {
+              "text": "Sì, sa se la pizza ventidue passa da qui?",
+              "isCorrect": false,
+              "feedback": "Stay focused on the bus information."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, la linea ventidue si ferma proprio a questa fermata.",
+          "english": "Yes, line twenty-two stops right at this stop.",
+          "choices": [
+            {
+              "text": "Ottimo. Sa tra quanto tempo arriva il prossimo?",
+              "isCorrect": true,
+              "feedback": "Common question at a bus stop."
+            },
+            {
+              "text": "Ottimo. Sa tra quanto tempo arriva il postino?",
+              "isCorrect": false,
+              "feedback": "You are waiting for a bus, not the mailman."
+            },
+            {
+              "text": "Ottimo. Sa tra quanto tempo arriva il nonno?",
+              "isCorrect": false,
+              "feedback": "Focus on the bus schedule."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Dovrebbe arrivare tra cinque minuti, secondo l'orario.",
+          "english": "It should arrive in five minutes, according to the schedule.",
+          "choices": [
+            {
+              "text": "Grazie. È questa la direzione giusta per la piazza?",
+              "isCorrect": true,
+              "feedback": "Checking the direction is very important."
+            },
+            {
+              "text": "Grazie. È questa la colazione giusta per la pancia?",
+              "isCorrect": false,
+              "feedback": "Stay in the travel context."
+            },
+            {
+              "text": "Grazie. È questa la canzone giusta per la festa?",
+              "isCorrect": false,
+              "feedback": "Ask about the bus direction."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, questa è la direzione corretta. La stazione è il capolinea.",
+          "english": "Yes, this is the correct direction. The station is the last stop.",
+          "choices": [
+            {
+              "text": "Perfetto. Bisogna comprare il biglietto a bordo?",
+              "isCorrect": true,
+              "feedback": "Good to know if you can buy it from the driver."
+            },
+            {
+              "text": "Perfetto. Bisogna comprare il biglietto a nuoto?",
+              "isCorrect": false,
+              "feedback": "You buy it 'a bordo' (on board), not swimming!"
+            },
+            {
+              "text": "Perfetto. Bisogna comprare il biglietto a letto?",
+              "isCorrect": false,
+              "feedback": "You need to buy it on the bus."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Si può, ma a bordo costa un po' di più.",
+          "english": "You can, but it costs a bit more on board.",
+          "choices": [
+            {
+              "text": "Capisco. Io l'ho già comprato in tabaccheria.",
+              "isCorrect": true,
+              "feedback": "Good. You are prepared."
+            },
+            {
+              "text": "Capisco. Io l'ho già mangiato in gelateria.",
+              "isCorrect": false,
+              "feedback": "Don't eat your ticket!"
+            },
+            {
+              "text": "Capisco. Io l'ho già lavato in lavanderia.",
+              "isCorrect": false,
+              "feedback": "Keep your ticket dry and ready."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Molto meglio. Ricordi di convalidarlo subito.",
+          "english": "Much better. Remember to validate it immediately.",
+          "choices": [
+            {
+              "text": "Sì, so che le multe sono molto care qui.",
+              "isCorrect": true,
+              "feedback": "True! Avoiding fines is a good motivation."
+            },
+            {
+              "text": "Sì, so che le torte sono molto care qui.",
+              "isCorrect": false,
+              "feedback": "Focus on the bus rules and fines (multe)."
+            },
+            {
+              "text": "Sì, so che le scarpe sono molto care qui.",
+              "isCorrect": false,
+              "feedback": "The context is the bus ticket."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, i controllori passano spesso su questa linea.",
+          "english": "Yes, inspectors pass often on this line.",
+          "choices": [
+            {
+              "text": "Ah, guardi! Sta arrivando l'autobus adesso.",
+              "isCorrect": true,
+              "feedback": "Good observation. The bus is here."
+            },
+            {
+              "text": "Ah, guardi! Sta arrivando l'uccello adesso.",
+              "isCorrect": false,
+              "feedback": "It's the bus you were waiting for."
+            },
+            {
+              "text": "Ah, guardi! Sta arrivando l'attore adesso.",
+              "isCorrect": false,
+              "feedback": "It's a bus, not a celebrity."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, è proprio il ventidue. Saliamo insieme?",
+          "english": "Yes, it is indeed the twenty-two. Shall we board together?",
+          "choices": [
+            {
+              "text": "Volentieri. Lei sa dove devo scendere per il museo?",
+              "isCorrect": true,
+              "feedback": "Asking for the specific stop."
+            },
+            {
+              "text": "Volentieri. Lei sa dove devo correre per il mare?",
+              "isCorrect": false,
+              "feedback": "You should be asking about the museum stop."
+            },
+            {
+              "text": "Volentieri. Lei sa dove devo dormire per il sole?",
+              "isCorrect": false,
+              "feedback": "Focus on your destination."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Deve scendere tra quattro fermate. Glielo dico io.",
+          "english": "You need to get off in four stops. I will tell you.",
+          "choices": [
+            {
+              "text": "Grazie, è molto gentile. Mi siedo qui vicino.",
+              "isCorrect": true,
+              "feedback": "Polite response and action."
+            },
+            {
+              "text": "Grazie, è molto brutto. Mi siedo qui vicino.",
+              "isCorrect": false,
+              "feedback": "That's very rude!"
+            },
+            {
+              "text": "Grazie, è molto freddo. Mi siedo qui vicino.",
+              "isCorrect": false,
+              "feedback": "The person is being helpful, not cold."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego, si accomodi. Le tappe sono scritte sul display.",
+          "english": "You're welcome, take a seat. The stops are written on the display.",
+          "choices": [
+            {
+              "text": "Perfetto, allora controllo anche il display. Grazie.",
+              "isCorrect": true,
+              "feedback": "Using the available information is smart."
+            },
+            {
+              "text": "Perfetto, allora controllo anche il frigo. Grazie.",
+              "isCorrect": false,
+              "feedback": "There is no fridge on a local bus!"
+            },
+            {
+              "text": "Perfetto, allora controllo anche il prato. Grazie.",
+              "isCorrect": false,
+              "feedback": "Look at the display for stops."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "on_the_bus_driver",
+      "title": "Parlare con l'Autista",
+      "description": "Confirm the stop and buy a ticket from the bus driver.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Biglietto, per favore.",
+          "english": "Good morning. Ticket, please.",
+          "choices": [
+            {
+              "text": "Buongiorno. Posso comprare il biglietto qui a bordo?",
+              "isCorrect": true,
+              "feedback": "Direct question to the driver."
+            },
+            {
+              "text": "Buongiorno. Posso comprare il gelato qui a bordo?",
+              "isCorrect": false,
+              "feedback": "The driver only sells tickets."
+            },
+            {
+              "text": "Buongiorno. Posso comprare il giornale qui a bordo?",
+              "isCorrect": false,
+              "feedback": "You need a bus ticket."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sì, ma costa due euro e cinquanta invece di uno e cinquanta.",
+          "english": "Yes, but it costs two euros fifty instead of one fifty.",
+          "choices": [
+            {
+              "text": "Va bene, non ho avuto tempo di andare in edicola.",
+              "isCorrect": true,
+              "feedback": "Explaining why you are buying on board."
+            },
+            {
+              "text": "Va bene, non ho avuto tempo di andare in piscina.",
+              "isCorrect": false,
+              "feedback": "The edicola (newsstand) is where tickets are sold."
+            },
+            {
+              "text": "Va bene, non ho avuto tempo di andare in vacanza.",
+              "isCorrect": false,
+              "feedback": "Focus on the ticket purchase."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ecco a lei il biglietto. Deve timbrarlo subito.",
+          "english": "Here is your ticket. You must stamp it immediately.",
+          "choices": [
+            {
+              "text": "Dove si trova la macchinetta per validare?",
+              "isCorrect": true,
+              "feedback": "Good! Finding the machine is the next step."
+            },
+            {
+              "text": "Dove si trova la macchinetta per il caffè?",
+              "isCorrect": false,
+              "feedback": "There is no coffee machine on the bus."
+            },
+            {
+              "text": "Dove si trova la macchinetta per le foto?",
+              "isCorrect": false,
+              "feedback": "Look for the ticket validator."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "È proprio lì dietro di lei, quella gialla.",
+          "english": "It is right there behind you, the yellow one.",
+          "choices": [
+            {
+              "text": "Ah, la vedo. Grazie. Mi scusi, questo bus va in centro?",
+              "isCorrect": true,
+              "feedback": "Confirming the route with the driver."
+            },
+            {
+              "text": "Ah, la vedo. Grazie. Mi scusi, questo bus va in cielo?",
+              "isCorrect": false,
+              "feedback": "The bus stays on the road!"
+            },
+            {
+              "text": "Ah, la vedo. Grazie. Mi scusi, questo bus va in mare?",
+              "isCorrect": false,
+              "feedback": "It's a bus, not a boat."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, passa per il centro e arriva fino alla piazza principale.",
+          "english": "Yes, it passes through the center and goes to the main square.",
+          "choices": [
+            {
+              "text": "Perfetto. Può dirmi quando arriviamo alla piazza?",
+              "isCorrect": true,
+              "feedback": "Asking the driver for help with the stop."
+            },
+            {
+              "text": "Perfetto. Può dirmi quando arriviamo alla cena?",
+              "isCorrect": false,
+              "feedback": "You are asking about a location (piazza)."
+            },
+            {
+              "text": "Perfetto. Può dirmi quando arriviamo alla festa?",
+              "isCorrect": false,
+              "feedback": "Stay focused on your destination."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, glielo dico io. È tra circa quindici minuti.",
+          "english": "Yes, I will tell you. It is in about fifteen minutes.",
+          "choices": [
+            {
+              "text": "Grazie. È necessario prenotare la fermata?",
+              "isCorrect": true,
+              "feedback": "Good question about the 'stop requested' button."
+            },
+            {
+              "text": "Grazie. È necessario prenotare la pizza?",
+              "isCorrect": false,
+              "feedback": "You are on a bus, not ordering food."
+            },
+            {
+              "text": "Grazie. È necessario prenotare la doccia?",
+              "isCorrect": false,
+              "feedback": "Focus on the bus procedures."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, deve premere il tasto rosso per chiedere la fermata.",
+          "english": "Yes, you must press the red button to request the stop.",
+          "choices": [
+            {
+              "text": "Ho capito. Devo premerlo molto prima della fermata?",
+              "isCorrect": true,
+              "feedback": "Clarifying when to signal the driver."
+            },
+            {
+              "text": "Ho capito. Devo mangiarlo molto prima della fermata?",
+              "isCorrect": false,
+              "feedback": "Don't eat the button! Just press (premere) it."
+            },
+            {
+              "text": "Ho capito. Devo lavarlo molto prima della fermata?",
+              "isCorrect": false,
+              "feedback": "Just press the button."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Basta premerlo appena superata la fermata precedente.",
+          "english": "Just press it as soon as the previous stop is passed.",
+          "choices": [
+            {
+              "text": "Va bene. Si può scendere da tutte le porte?",
+              "isCorrect": true,
+              "feedback": "Good question about boarding/exiting rules."
+            },
+            {
+              "text": "Va bene. Si può scendere da tutte le finestre?",
+              "isCorrect": false,
+              "feedback": "Use the doors, not the windows!"
+            },
+            {
+              "text": "Va bene. Si può scendere da tutte le nuvole?",
+              "isCorrect": false,
+              "feedback": "Stay on the ground!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "No, si scende solo dalle porte centrali e posteriori.",
+          "english": "No, you exit only from the middle and rear doors.",
+          "choices": [
+            {
+              "text": "Grazie delle informazioni. Vado a sedermi.",
+              "isCorrect": true,
+              "feedback": "Polite end to the exchange."
+            },
+            {
+              "text": "Grazie delle informazioni. Vado a dormire.",
+              "isCorrect": false,
+              "feedback": "Don't fall asleep and miss your stop!"
+            },
+            {
+              "text": "Grazie delle informazioni. Vado a correre.",
+              "isCorrect": false,
+              "feedback": "Wait until you are off the bus to run."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego. Si regga forte durante il viaggio!",
+          "english": "You're welcome. Hold on tight during the trip!",
+          "choices": [
+            {
+              "text": "Lo farò senz'altro. Buona giornata, autista.",
+              "isCorrect": true,
+              "feedback": "Polite goodbye to the driver."
+            },
+            {
+              "text": "Lo farò senz'altro. Buona notte, autista.",
+              "isCorrect": false,
+              "feedback": "It's still daytime."
+            },
+            {
+              "text": "Lo farò senz'altro. Buona fortuna, autista.",
+              "isCorrect": false,
+              "feedback": "'Buona giornata' is more natural."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding_stop_museum",
+      "title": "Cercare la Fermata per il Museo",
+      "description": "Ask a passenger for help finding the right stop for a tourist site.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Anche tu vai verso il centro storico?",
+          "english": "Hi! Are you also going towards the historic center?",
+          "choices": [
+            {
+              "text": "Sì, vorrei visitare il museo. Sai qual è la fermata?",
+              "isCorrect": true,
+              "feedback": "Good! Asking for help to find your destination."
+            },
+            {
+              "text": "Sì, vorrei visitare il mare. Sai qual è la fermata?",
+              "isCorrect": false,
+              "feedback": "You are looking for the museum stop."
+            },
+            {
+              "text": "Sì, vorrei visitare il nonno. Sai qual è la fermata?",
+              "isCorrect": false,
+              "feedback": "Stay focused on the museum."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo, la fermata si chiama 'Museo Civico'. È vicina.",
+          "english": "Sure, the stop is called 'Civic Museum'. It's nearby.",
+          "choices": [
+            {
+              "text": "Manca molto per arrivare a quella fermata?",
+              "isCorrect": true,
+              "feedback": "Checking the remaining time/distance."
+            },
+            {
+              "text": "Manca molto per arrivare a quella pizza?",
+              "isCorrect": false,
+              "feedback": "You are talking about a bus stop."
+            },
+            {
+              "text": "Manca molto per arrivare a quella doccia?",
+              "isCorrect": false,
+              "feedback": "Focus on the travel time."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "No, mancano solo tre fermate. È la prossima dopo il ponte.",
+          "english": "No, only three stops left. It's the next one after the bridge.",
+          "choices": [
+            {
+              "text": "Capito. Bisogna prenotare la fermata con il pulsante?",
+              "isCorrect": true,
+              "feedback": "Good! Reconfirming how to request the stop."
+            },
+            {
+              "text": "Capito. Bisogna prenotare la fermata con il martello?",
+              "isCorrect": false,
+              "feedback": "Use the button (pulsante), not a hammer!"
+            },
+            {
+              "text": "Capito. Bisogna prenotare la fermata con il cane?",
+              "isCorrect": false,
+              "feedback": "Use the button to request the stop."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, premi pure quello vicino alla porta centrale.",
+          "english": "Yes, go ahead and press the one near the middle door.",
+          "choices": [
+            {
+              "text": "Grazie. Spero che il museo sia aperto oggi.",
+              "isCorrect": true,
+              "feedback": "Natural follow-up comment."
+            },
+            {
+              "text": "Grazie. Spero che il mare sia aperto oggi.",
+              "isCorrect": false,
+              "feedback": "The sea doesn't 'open' or 'close' like a museum."
+            },
+            {
+              "text": "Grazie. Spero che il cielo sia aperto oggi.",
+              "isCorrect": false,
+              "feedback": "Focus on the museum."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, oggi è martedì. È aperto tutto il giorno.",
+          "english": "Yes, today is Tuesday. It is open all day.",
+          "choices": [
+            {
+              "text": "Ottimo. Hai un biglietto dell'autobus anche per il ritorno?",
+              "isCorrect": true,
+              "feedback": "Making small talk about tickets."
+            },
+            {
+              "text": "Ottimo. Hai un biglietto dell'aereo anche per il ritorno?",
+              "isCorrect": false,
+              "feedback": "You are talking about the bus."
+            },
+            {
+              "text": "Ottimo. Hai un biglietto del cinema anche per il ritorno?",
+              "isCorrect": false,
+              "feedback": "Stick to the bus context."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "No, io ho l'abbonamento mensile. È molto comodo.",
+          "english": "No, I have a monthly pass. It is very convenient.",
+          "choices": [
+            {
+              "text": "Ah, capisco. Io sono qui solo per pochi giorni.",
+              "isCorrect": true,
+              "feedback": "Explaining your situation as a visitor."
+            },
+            {
+              "text": "Ah, capisco. Io sono qui solo per pochi gatti.",
+              "isCorrect": false,
+              "feedback": "You mean 'giorni' (days), not 'gatti' (cats)."
+            },
+            {
+              "text": "Ah, capisco. Io sono qui solo per pochi fiori.",
+              "isCorrect": false,
+              "feedback": "Focus on the duration of your stay."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Allora ti conviene comprare i biglietti singoli.",
+          "english": "Then it's better for you to buy single tickets.",
+          "choices": [
+            {
+              "text": "Sì, ne ho comprati due stamattina in edicola.",
+              "isCorrect": true,
+              "feedback": "Sharing that you've already bought tickets."
+            },
+            {
+              "text": "Sì, ne ho mangiati due stamattina in edicola.",
+              "isCorrect": false,
+              "feedback": "Don't eat your tickets!"
+            },
+            {
+              "text": "Sì, ne ho lavati due stamattina in edicola.",
+              "isCorrect": false,
+              "feedback": "Don't wash your tickets."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Attento a non perderli, sono piccoli!",
+          "english": "Be careful not to lose them, they are small!",
+          "choices": [
+            {
+              "text": "Li tengo bene nel portafoglio. Siamo quasi arrivati?",
+              "isCorrect": true,
+              "feedback": "Good! Checking the progress again."
+            },
+            {
+              "text": "Li tengo bene nel frigorifero. Siamo quasi arrivati?",
+              "isCorrect": false,
+              "feedback": "Tickets go in a wallet (portafoglio), not a fridge."
+            },
+            {
+              "text": "Li tengo bene nel giardino. Siamo quasi arrivati?",
+              "isCorrect": false,
+              "feedback": "Keep them in your wallet."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, la prossima fermata è la tua. Preparati a scendere.",
+          "english": "Yes, the next stop is yours. Get ready to get off.",
+          "choices": [
+            {
+              "text": "Grazie dell'aiuto! Buona continuazione di viaggio.",
+              "isCorrect": true,
+              "feedback": "Polite way to say goodbye to a fellow passenger."
+            },
+            {
+              "text": "Grazie dell'aiuto! Buona continuazione di cena.",
+              "isCorrect": false,
+              "feedback": "They are on a bus, not having dinner."
+            },
+            {
+              "text": "Grazie dell'aiuto! Buona continuazione di doccia.",
+              "isCorrect": false,
+              "feedback": "Wish them a good trip instead."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie! Ciao e divertiti al museo!",
+          "english": "Thanks! Bye and enjoy the museum!",
+          "choices": [
+            {
+              "text": "Lo farò sicuramente. Ciao e grazie ancora!",
+              "isCorrect": true,
+              "feedback": "Friendly and polite conclusion."
+            },
+            {
+              "text": "Lo farò sicuramente. Ciao e fame ancora!",
+              "isCorrect": false,
+              "feedback": "You mean 'grazie' (thanks), not 'fame' (hunger)."
+            },
+            {
+              "text": "Lo farò sicuramente. Ciao e freddo ancora!",
+              "isCorrect": false,
+              "feedback": "Say 'grazie' to be polite."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
