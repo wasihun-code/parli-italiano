@@ -1,0 +1,953 @@
+{
+  "scenarioId": 114,
+  "conversations": [
+    {
+      "id": "hotel_sleep",
+      "title": "Dormire in Hotel",
+      "description": "Discuss your stay and sleep quality with the hotel receptionist.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come ha dormito questa notte nella nostra camera?",
+          "english": "Good morning! How did you sleep last night in our room?",
+          "choices": [
+            {
+              "text": "Ho dormito molto bene, il letto è comodissimo.",
+              "isCorrect": true,
+              "feedback": "Great! Confirming you slept well is a perfect start."
+            },
+            {
+              "text": "Parto subito per la stazione centrale adesso.",
+              "isCorrect": false,
+              "feedback": "Wait! The receptionist asked how you slept, not about your departure."
+            },
+            {
+              "text": "Pulisco la camera ogni mattina con il sapone.",
+              "isCorrect": false,
+              "feedback": "The staff usually cleans the room, and it doesn't answer the question."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi fa piacere. Ha sentito dei rumori durante la notte?",
+          "english": "I'm glad. Did you hear any noises during the night?",
+          "choices": [
+            {
+              "text": "No, non ho sentito niente. Tutto era molto tranquillo.",
+              "isCorrect": true,
+              "feedback": "Perfect. A quiet night is exactly what guests want."
+            },
+            {
+              "text": "Sì, apro la finestra per sentire la musica forte.",
+              "isCorrect": false,
+              "feedback": "The host is asking about noises that might have bothered you."
+            },
+            {
+              "text": "Capisco tutto quello che dici in italiano oggi.",
+              "isCorrect": false,
+              "feedback": "Glad you understand, but focus on the noise question!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo. Dobbiamo pulire la camera oggi? A che ora preferisce?",
+          "english": "Great. Do we need to clean the room today? At what time do you prefer?",
+          "choices": [
+            {
+              "text": "Potete pulire la camera alle dieci? Io esco tra poco.",
+              "isCorrect": true,
+              "feedback": "Excellent. You specified a time and mentioned your departure."
+            },
+            {
+              "text": "Finisco di dormire alle due del pomeriggio domani.",
+              "isCorrect": false,
+              "feedback": "That's a bit late for cleaning! Try a morning time."
+            },
+            {
+              "text": "Apro la porta con la chiave d'oro del palazzo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the cleaning schedule."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Va bene, alle dieci. Ha finito la colazione o vuole andare ora?",
+          "english": "Alright, at ten. Have you finished breakfast or do you want to go now?",
+          "choices": [
+            {
+              "text": "Ho già finito la colazione. Era molto buona, grazie.",
+              "isCorrect": true,
+              "feedback": "Good. You confirmed finishing and gave a polite compliment."
+            },
+            {
+              "text": "Parto per Roma con un treno molto veloce e caro.",
+              "isCorrect": false,
+              "feedback": "The host asked about breakfast, not your travel plans."
+            },
+            {
+              "text": "Non capisco se la colazione è finita o inizia ora.",
+              "isCorrect": false,
+              "feedback": "Use 'ho finito' if you are done eating!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Prego. Se esce adesso, può lasciare la chiave qui al bancone.",
+          "english": "You're welcome. If you go out now, you can leave the key here at the counter.",
+          "choices": [
+            {
+              "text": "Certamente. Esco subito a fare una passeggiata in centro.",
+              "isCorrect": true,
+              "feedback": "Perfect. You agreed to leave the key and mentioned your plan."
+            },
+            {
+              "text": "Dormo tutto il giorno perché sono molto stanco.",
+              "isCorrect": false,
+              "feedback": "The host said 'if you go out now'. If you stay, you keep the key."
+            },
+            {
+              "text": "Sento la voce della mia amica che chiama ora.",
+              "isCorrect": false,
+              "feedback": "Not related to the key or going out."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Perfetto. Capisce come arrivare alla piazza principale da qui?",
+          "english": "Perfect. Do you understand how to get to the main square from here?",
+          "choices": [
+            {
+              "text": "Sì, capisco bene. Devo uscire e girare a sinistra.",
+              "isCorrect": true,
+              "feedback": "Correct! You understand the directions."
+            },
+            {
+              "text": "Pulisco la piazza con una scopa molto grande.",
+              "isCorrect": false,
+              "feedback": "That's not your job! Just follow the directions."
+            },
+            {
+              "text": "Apro la valigia per cercare la mappa della città.",
+              "isCorrect": false,
+              "feedback": "Good idea, but first confirm you understand the verbal directions."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Esatto. Ricordi che deve finire il soggiorno entro le undici di domani.",
+          "english": "Exactly. Remember that you must finish your stay by eleven tomorrow.",
+          "choices": [
+            {
+              "text": "Sì, lo so. Finisco il mio soggiorno domani mattina.",
+              "isCorrect": true,
+              "feedback": "Good. You acknowledged the check-out time."
+            },
+            {
+              "text": "Dormo in stazione perché l'hotel è troppo caro.",
+              "isCorrect": false,
+              "feedback": "A bit negative! Just confirm the check-out time."
+            },
+            {
+              "text": "Sentite questo rumore strano che viene dal bagno?",
+              "isCorrect": false,
+              "feedback": "The host is talking about check-out, not bathroom noises."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, è la regola. Vuole che puliamo anche il bagno oggi?",
+          "english": "Yes, it's the rule. Do you want us to clean the bathroom as well today?",
+          "choices": [
+            {
+              "text": "Sì, per favore. Pulite tutto, così la camera è perfetta.",
+              "isCorrect": true,
+              "feedback": "Good choice. A clean bathroom is always better."
+            },
+            {
+              "text": "Esco dal bagno tra due ore perché faccio la doccia.",
+              "isCorrect": false,
+              "feedback": "The host is asking about cleaning, not your shower schedule."
+            },
+            {
+              "text": "Parto domani mattina alle sei con la mia valigia.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the cleaning question."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sarà fatto. Sentiremo la cameriera quando ha finito il lavoro.",
+          "english": "It will be done. We will hear from the maid when she has finished the work.",
+          "choices": [
+            {
+              "text": "Va bene. Sento che sarà una bellissima giornata oggi.",
+              "isCorrect": true,
+              "feedback": "A positive outlook! 'Sento' can also mean 'I feel'."
+            },
+            {
+              "text": "Capisco che la cameriera dorme in camera mia ora.",
+              "isCorrect": false,
+              "feedback": "No, she is there to work, not to sleep!"
+            },
+            {
+              "text": "Apro il regalo che mi ha dato il mio amico caro.",
+              "isCorrect": false,
+              "feedback": "Save that for later! Focus on the conversation."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Lo spero anche io. Buona passeggiata e a più tardi!",
+          "english": "I hope so too. Have a nice walk and see you later!",
+          "choices": [
+            {
+              "text": "Grazie mille, a più tardi! Esco subito.",
+              "isCorrect": true,
+              "feedback": "A polite and energetic goodbye."
+            },
+            {
+              "text": "Pulisco il bancone con questo vestito nuovo.",
+              "isCorrect": false,
+              "feedback": "Don't do that! Just say goodbye."
+            },
+            {
+              "text": "Dormo qui davanti perché non ho le chiavi.",
+              "isCorrect": false,
+              "feedback": "You just gave the key to the receptionist, you can't sleep there!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trip_departure",
+      "title": "Partire per un Viaggio",
+      "description": "Coordinate your departure for a trip with a friend.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Sei pronto? Il treno parte tra trenta minuti!",
+          "english": "Are you ready? The train leaves in thirty minutes!",
+          "choices": [
+            {
+              "text": "Sì, sono pronto. Parto subito, prendo solo la valigia.",
+              "isCorrect": true,
+              "feedback": "Perfect! Ready to go."
+            },
+            {
+              "text": "Dormo ancora un po' perché il letto è morbido.",
+              "isCorrect": false,
+              "feedback": "No time for that! The train is leaving soon."
+            },
+            {
+              "text": "Capisco che il treno è un aereo molto grande.",
+              "isCorrect": false,
+              "feedback": "Incorrect! A train is not a plane."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sbrigati! Hai finito di preparare tutto quello che serve?",
+          "english": "Hurry up! Have you finished preparing everything you need?",
+          "choices": [
+            {
+              "text": "Sì, ho finito ora. Ho messo tutto nella borsa.",
+              "isCorrect": true,
+              "feedback": "Good. You're organized and ready."
+            },
+            {
+              "text": "Sentite questo rumore che viene dalla cucina ora?",
+              "isCorrect": false,
+              "feedback": "Don't get distracted by noises! Finish packing."
+            },
+            {
+              "text": "Apro la finestra per guardare le macchine blu.",
+              "isCorrect": false,
+              "feedback": "No time for sightseeing! We need to go."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Bene. Hai capito a che ora dobbiamo uscire di casa?",
+          "english": "Good. Did you understand what time we have to leave the house?",
+          "choices": [
+            {
+              "text": "Sì, ho capito. Dobbiamo uscire adesso per non tardare.",
+              "isCorrect": true,
+              "feedback": "Correct. Prompt departure is necessary."
+            },
+            {
+              "text": "Pulisco il pavimento perché vedo un po' di polvere.",
+              "isCorrect": false,
+              "feedback": "Cleaning can wait until you return from your trip!"
+            },
+            {
+              "text": "Dormo in treno perché il viaggio è molto lungo.",
+              "isCorrect": false,
+              "feedback": "True, but first you need to leave the house!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto, usciamo ora. Hai preso le chiavi di casa?",
+          "english": "Exactly, let's leave now. Did you take the house keys?",
+          "choices": [
+            {
+              "text": "Sì, le ho prese. Esco e chiudo la porta subito.",
+              "isCorrect": true,
+              "feedback": "Good security check."
+            },
+            {
+              "text": "Sento che le chiavi sono nella pancia del cane.",
+              "isCorrect": false,
+              "feedback": "That's a problem! But hopefully they are in your pocket."
+            },
+            {
+              "text": "Parto per la luna con una nave spaziale russa.",
+              "isCorrect": false,
+              "feedback": "You're just going on a trip, not to space!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Bravo. Sentite? Il taxi è già qui sotto che aspetta.",
+          "english": "Good job. Can you hear? The taxi is already down here waiting.",
+          "choices": [
+            {
+              "text": "Sì, lo sento. Apro il portone e scendo le scale.",
+              "isCorrect": true,
+              "feedback": "Efficient. You heard the taxi and are moving."
+            },
+            {
+              "text": "Capisco che il taxi è una bicicletta per due.",
+              "isCorrect": false,
+              "feedback": "No, it's a car!"
+            },
+            {
+              "text": "Finisco di leggere questo libro di mille pagine.",
+              "isCorrect": false,
+              "feedback": "Read it in the taxi! We need to go."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Perfetto. Capisci se l'autista parla inglese o solo italiano?",
+          "english": "Perfect. Do you understand if the driver speaks English or only Italian?",
+          "choices": [
+            {
+              "text": "Non lo so, ma capisco l'italiano, quindi va bene.",
+              "isCorrect": true,
+              "feedback": "Confidence! Knowing some Italian is very helpful."
+            },
+            {
+              "text": "Dormo con l'autista perché sono molto stanco.",
+              "isCorrect": false,
+              "feedback": "Absolutely not! He is there to drive."
+            },
+            {
+              "text": "Pulisco i vetri del taxi con la mia camicia.",
+              "isCorrect": false,
+              "feedback": "Don't do that! It's not your car."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottimo. Ricorda che il viaggio finisce stasera tardi.",
+          "english": "Great. Remember that the journey ends late tonight.",
+          "choices": [
+            {
+              "text": "Sì, lo so. Finisco di viaggiare e vado a dormire.",
+              "isCorrect": true,
+              "feedback": "A good plan for the end of the day."
+            },
+            {
+              "text": "Parto di nuovo domani mattina per un altro posto.",
+              "isCorrect": false,
+              "feedback": "Wait until this trip ends first!"
+            },
+            {
+              "text": "Sento che la strada è fatta di cioccolato dolce.",
+              "isCorrect": false,
+              "feedback": "A sweet thought, but not very realistic."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Esatto. Hai pulito la borsa prima di mettere i vestiti?",
+          "english": "Exactly. Did you clean the bag before putting the clothes in?",
+          "choices": [
+            {
+              "text": "Sì, l'ho pulita bene. Adesso è tutta in ordine.",
+              "isCorrect": true,
+              "feedback": "Good. Clean bags keep clothes fresh."
+            },
+            {
+              "text": "Apro la borsa per buttare via tutto il denaro.",
+              "isCorrect": false,
+              "feedback": "No! You need money for the trip."
+            },
+            {
+              "text": "Capisco che la borsa è una casa per i gatti.",
+              "isCorrect": false,
+              "feedback": "Maybe for some cats, but this one is for clothes!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Bene. Sento che sarà un viaggio davvero fantastico!",
+          "english": "Good. I feel that it will be a truly fantastic trip!",
+          "choices": [
+            {
+              "text": "Lo sento anche io! Non vedo l'ora di partire.",
+              "isCorrect": true,
+              "feedback": "Great enthusiasm! You're ready."
+            },
+            {
+              "text": "Dormo in piedi perché sono un cavallo bianco.",
+              "isCorrect": false,
+              "feedback": "You're a human! And you should be sitting in the taxi."
+            },
+            {
+              "text": "Finisco di mangiare questa pizza fredda e vecchia.",
+              "isCorrect": false,
+              "feedback": "Maybe not the best idea before a trip."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Allora andiamo. Il treno non aspetta nessuno. Sei pronto?",
+          "english": "Then let's go. The train waits for no one. Are you ready?",
+          "choices": [
+            {
+              "text": "Sì, sono prontissimo. Partiamo subito, andiamo!",
+              "isCorrect": true,
+              "feedback": "Perfect conclusion. Off you go!"
+            },
+            {
+              "text": "Pulisco il taxi con un po' di acqua e sapone.",
+              "isCorrect": false,
+              "feedback": "Again, not your job! Just get in."
+            },
+            {
+              "text": "Apro la porta della stazione con un calcio forte.",
+              "isCorrect": false,
+              "feedback": "No! Use the handle like everyone else."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hearing_noise",
+      "title": "Sentire un Rumore",
+      "description": "Investigate a strange noise in the house with your roommate.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ehi, hai sentito anche tu quel rumore strano?",
+          "english": "Hey, did you hear that strange noise too?",
+          "choices": [
+            {
+              "text": "Sì, l'ho sentito. Viene dalla cucina, credo.",
+              "isCorrect": true,
+              "feedback": "Good. Identifying the sound's origin is helpful."
+            },
+            {
+              "text": "Dormo profondamente e non sento mai niente.",
+              "isCorrect": false,
+              "feedback": "The host is asking if you heard *that* specific noise."
+            },
+            {
+              "text": "Pulisco le orecchie ogni giorno con il cotone.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the noise."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Anch'io credo che venga da lì. Vuoi andare ad aprire la porta?",
+          "english": "I think it comes from there too. Do you want to go and open the door?",
+          "choices": [
+            {
+              "text": "Sì, vado io. Apro la porta piano piano.",
+              "isCorrect": true,
+              "feedback": "Brave! Approaching cautiously is smart."
+            },
+            {
+              "text": "Finisco di guardare questo film dell'orrore ora.",
+              "isCorrect": false,
+              "feedback": "Maybe that's why you're hearing noises! But check it out."
+            },
+            {
+              "text": "Parto per la Spagna tra due minuti esatti.",
+              "isCorrect": false,
+              "feedback": "Not a good time to leave your roommate alone!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Fai attenzione! Hai capito cosa potrebbe essere?",
+          "english": "Be careful! Did you understand what it could be?",
+          "choices": [
+            {
+              "text": "Non ho capito bene, ma sembra un animale piccolo.",
+              "isCorrect": true,
+              "feedback": "Good guess. Stating your uncertainty is honest."
+            },
+            {
+              "text": "Dormo in cucina perché c'è il frigorifero pieno.",
+              "isCorrect": false,
+              "feedback": "Don't do that now! There's a strange noise."
+            },
+            {
+              "text": "Pulisco la porta con la mia sciarpa di lana.",
+              "isCorrect": false,
+              "feedback": "Not the priority right now."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Forse è il gatto del vicino. Hai aperto la finestra prima?",
+          "english": "Maybe it's the neighbor's cat. Did you open the window earlier?",
+          "choices": [
+            {
+              "text": "Sì, ho aperto la finestra per far uscire l'odore.",
+              "isCorrect": true,
+              "feedback": "Aha! A possible entry point for a cat."
+            },
+            {
+              "text": "Sento che la finestra è fatta di zucchero filato.",
+              "isCorrect": false,
+              "feedback": "Not very helpful for finding the cat."
+            },
+            {
+              "text": "Parto per la montagna con i miei scarponi nuovi.",
+              "isCorrect": false,
+              "feedback": "Focus on the window and the cat!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Allora è entrato da lì. Lo vedi ora? È sotto il tavolo?",
+          "english": "Then he came in through there. Do you see him now? Is he under the table?",
+          "choices": [
+            {
+              "text": "Sì, lo vedo. È un gatto nero. Esco a prenderlo?",
+              "isCorrect": true,
+              "feedback": "Good. You found him."
+            },
+            {
+              "text": "Capisco che il gatto è un leone molto feroce.",
+              "isCorrect": false,
+              "feedback": "It's just a neighbor's cat! Don't worry."
+            },
+            {
+              "text": "Finisco di pulire il tavolo con il latte caldo.",
+              "isCorrect": false,
+              "feedback": "No! Milk will make the table sticky."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "No, non uscire! Prova a farlo uscire dalla finestra aperta.",
+          "english": "No, don't go out! Try to make him go out through the open window.",
+          "choices": [
+            {
+              "text": "Va bene, provo. Capisco che ha paura di noi.",
+              "isCorrect": true,
+              "feedback": "Empathy! Understanding the cat's feelings is good."
+            },
+            {
+              "text": "Dormo con il gatto perché è molto morbido e caldo.",
+              "isCorrect": false,
+              "feedback": "The host wants him out!"
+            },
+            {
+              "text": "Apro il frigo per mangiare tutto il formaggio.",
+              "isCorrect": false,
+              "feedback": "The cat might want some, but focus on the task."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Esatto. Senti come miagola forte? Vuole tornare a casa.",
+          "english": "Exactly. Do you hear how loudly he is meowing? He wants to go home.",
+          "choices": [
+            {
+              "text": "Sì, lo sento. Adesso esce dalla finestra finalmente.",
+              "isCorrect": true,
+              "feedback": "Success! The cat is leaving."
+            },
+            {
+              "text": "Pulisco il gatto con l'acqua fredda e il sapone.",
+              "isCorrect": false,
+              "feedback": "Cats hate that! Just let him go."
+            },
+            {
+              "text": "Parto per il mare con il gatto nella borsa.",
+              "isCorrect": false,
+              "feedback": "No, he belongs to the neighbor!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Meno male! Hai finito di chiudere tutte le finestre ora?",
+          "english": "Thank goodness! Have you finished closing all the windows now?",
+          "choices": [
+            {
+              "text": "Sì, ho finito. Adesso la casa è chiusa bene.",
+              "isCorrect": true,
+              "feedback": "Good. Secure the house."
+            },
+            {
+              "text": "Apro la porta per far entrare altri dieci gatti.",
+              "isCorrect": false,
+              "feedback": "One was enough for today!"
+            },
+            {
+              "text": "Capisco che le finestre sono fatte di carta fine.",
+              "isCorrect": false,
+              "feedback": "Hopefully not! They should be glass."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo lavoro. Hai capito che non era un fantasma?",
+          "english": "Great job. Did you understand that it wasn't a ghost?",
+          "choices": [
+            {
+              "text": "Sì, ho capito. Era solo un povero gatto affamato.",
+              "isCorrect": true,
+              "feedback": "A logical conclusion. No ghosts here."
+            },
+            {
+              "text": "Dormo con la luce accesa perché ho molta paura.",
+              "isCorrect": false,
+              "feedback": "It was just a cat! You can sleep with the lights off."
+            },
+            {
+              "text": "Sentite questo rumore di passi che viene dal tetto?",
+              "isCorrect": false,
+              "feedback": "Stop it! You're making the host nervous again."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sì, per fortuna! Ora possiamo finire di dormire in pace.",
+          "english": "Yes, luckily! Now we can finish sleeping in peace.",
+          "choices": [
+            {
+              "text": "Va bene, vado a dormire. Buonanotte!",
+              "isCorrect": true,
+              "feedback": "Perfect end to a stressful night. Buonanotte!"
+            },
+            {
+              "text": "Pulisco tutta la casa alle tre di notte ora.",
+              "isCorrect": false,
+              "feedback": "No, go to sleep! You need rest."
+            },
+            {
+              "text": "Esco a cercare il gatto nel giardino scuro.",
+              "isCorrect": false,
+              "feedback": "He is home now. Go to bed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "opening_gift",
+      "title": "Aprire un Regalo",
+      "description": "Open a gift from a friend and express your gratitude.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Ho un piccolo regalo per te. Vuoi aprirlo ora?",
+          "english": "Hi! I have a small gift for you. Do you want to open it now?",
+          "choices": [
+            {
+              "text": "Sì, grazie! Lo apro subito con molto piacere.",
+              "isCorrect": true,
+              "feedback": "Great enthusiasm! Opening a gift is always fun."
+            },
+            {
+              "text": "Dormo sopra il regalo perché è molto morbido.",
+              "isCorrect": false,
+              "feedback": "No! Open it first to see what's inside."
+            },
+            {
+              "text": "Parto per il deserto senza acqua e senza pane.",
+              "isCorrect": false,
+              "feedback": "Wait! Don't leave before opening the gift."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Guarda come è bella questa scatola! Hai capito cosa c'è dentro?",
+          "english": "Look how beautiful this box is! Did you understand what's inside?",
+          "choices": [
+            {
+              "text": "Non ho ancora capito, ma sento che è qualcosa di pesante.",
+              "isCorrect": true,
+              "feedback": "Good observation. Weight can be a clue."
+            },
+            {
+              "text": "Pulisco la scatola con un po' di olio d'oliva.",
+              "isCorrect": false,
+              "feedback": "Don't ruin the box! Just open it."
+            },
+            {
+              "text": "Finisco di mangiare questa mela rossa e dolce.",
+              "isCorrect": false,
+              "feedback": "Focus on the gift for a moment!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Forza, aprilo! Devi solo finire di togliere la carta.",
+          "english": "Come on, open it! You just have to finish removing the paper.",
+          "choices": [
+            {
+              "text": "Va bene, finisco di togliere la carta adesso. Vediamo!",
+              "isCorrect": true,
+              "feedback": "Exciting! The reveal is coming."
+            },
+            {
+              "text": "Esco dalla stanza perché ho troppa paura dei regali.",
+              "isCorrect": false,
+              "feedback": "Don't be scared! It's from a friend."
+            },
+            {
+              "text": "Dormo dentro la scatola come un piccolo topo.",
+              "isCorrect": false,
+              "feedback": "You're too big for that!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sorpresa! È un libro di cucina italiana. Ti piace?",
+          "english": "Surprise! It's an Italian cookbook. Do you like it?",
+          "choices": [
+            {
+              "text": "Sì, mi piace tantissimo! Apro subito la prima pagina.",
+              "isCorrect": true,
+              "feedback": "Excellent. A cookbook is a wonderful gift."
+            },
+            {
+              "text": "Sento che il libro parla di come riparare le auto.",
+              "isCorrect": false,
+              "feedback": "The host said it's a cookbook!"
+            },
+            {
+              "text": "Parto per la luna con il mio libro sotto il braccio.",
+              "isCorrect": false,
+              "feedback": "Maybe read it on Earth first."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sapevo che ti sarebbe piaciuto. Capisci le ricette in italiano?",
+          "english": "I knew you would like it. Do you understand the recipes in Italian?",
+          "choices": [
+            {
+              "text": "Capisco quasi tutto. Le parole sono semplici e chiare.",
+              "isCorrect": true,
+              "feedback": "Great! Italian recipes often use basic vocabulary."
+            },
+            {
+              "text": "Pulisco il libro con un po' di sugo di pomodoro.",
+              "isCorrect": false,
+              "feedback": "No! Keep the book clean while you cook."
+            },
+            {
+              "text": "Dormo con il libro perché le ricette sono sogni.",
+              "isCorrect": false,
+              "feedback": "A bit poetic, but try to use it for cooking!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Vuoi provare a cucinare qualcosa per cena stasera?",
+          "english": "Great. Do you want to try cooking something for dinner tonight?",
+          "choices": [
+            {
+              "text": "Sì, volentieri. Finisco di leggere la ricetta e inizio.",
+              "isCorrect": true,
+              "feedback": "Excellent initiative. Cooking is the best way to learn."
+            },
+            {
+              "text": "Parto per il ristorante più caro della città ora.",
+              "isCorrect": false,
+              "feedback": "The host suggested cooking with your new book!"
+            },
+            {
+              "text": "Sento la voce del mio gatto che chiede la pasta.",
+              "isCorrect": false,
+              "feedback": "Maybe the cat is hungry too!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Bene. Hai visto che c'è anche un piccolo biglietto dentro?",
+          "english": "Good. Did you see that there is also a small note inside?",
+          "choices": [
+            {
+              "text": "No, non l'ho visto. Apro di nuovo il libro per cercarlo.",
+              "isCorrect": true,
+              "feedback": "Good. Small notes often contain personal messages."
+            },
+            {
+              "text": "Capisco che il biglietto è un assegno di un milione.",
+              "isCorrect": false,
+              "feedback": "Unlikely, but it's the thought that counts!"
+            },
+            {
+              "text": "Pulisco il biglietto con la lingua perché è dolce.",
+              "isCorrect": false,
+              "feedback": "That's very strange! Just read it."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Lo hai trovato? Dice: 'Per un amico che ama l'Italia'.",
+          "english": "Did you find it? It says: 'For a friend who loves Italy'.",
+          "choices": [
+            {
+              "text": "Sì, l'ho trovato. Lo sento molto vicino al mio cuore.",
+              "isCorrect": true,
+              "feedback": "How sweet. A personal touch makes a gift special."
+            },
+            {
+              "text": "Dormo sul biglietto perché le parole sono morbide.",
+              "isCorrect": false,
+              "feedback": "Keep it safe instead!"
+            },
+            {
+              "text": "Esco dalla finestra per urlare la mia gioia a tutti.",
+              "isCorrect": false,
+              "feedback": "A bit dramatic, but glad you're happy!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Mi fa piacere che ti piaccia. Hai finito di guardare tutte le foto?",
+          "english": "I'm glad you like it. Have you finished looking at all the photos?",
+          "choices": [
+            {
+              "text": "Sì, ho finito. Le foto dei piatti sono bellissime.",
+              "isCorrect": true,
+              "feedback": "Visuals in cookbooks are very helpful and inspiring."
+            },
+            {
+              "text": "Parto per l'Italia per mangiare tutte queste cose.",
+              "isCorrect": false,
+              "feedback": "You can cook them at home first!"
+            },
+            {
+              "text": "Sento che le foto sono fatte di plastica vera.",
+              "isCorrect": false,
+              "feedback": "No, it's just paper and ink!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Allora buona lettura e buon appetito per stasera! Sei felice?",
+          "english": "Then happy reading and enjoy your meal for tonight! Are you happy?",
+          "choices": [
+            {
+              "text": "Sì, sono molto felice. Grazie ancora per il regalo!",
+              "isCorrect": true,
+              "feedback": "Perfect. A great way to end the interaction."
+            },
+            {
+              "text": "Pulisco il regalo con il mio alito caldo ogni ora.",
+              "isCorrect": false,
+              "feedback": "Please don't! Just enjoy the book."
+            },
+            {
+              "text": "Apro la porta per far uscire tutta la mia felicità.",
+              "isCorrect": false,
+              "feedback": "Keep some for yourself! And for cooking."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

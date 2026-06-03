@@ -1,0 +1,953 @@
+{
+  "scenarioId": 112,
+  "conversations": [
+    {
+      "id": "studiare_per_esame",
+      "title": "Studying for an Exam",
+      "description": "Discuss your study plans with a classmate in the library.",
+      "messages": [
+        {
+          "id": "s1_m1",
+          "role": "host",
+          "text": "Ciao! Studi molto per l'esame di domani?",
+          "english": "Hi! Are you studying a lot for tomorrow's exam?",
+          "choices": [
+            {
+              "text": "Sì, studio molto perché l'esame è difficile.",
+              "isCorrect": true,
+              "feedback": "Perfect! You used 'studiare' correctly to answer the question."
+            },
+            {
+              "text": "No, mangio una mela perché ho molta fame.",
+              "isCorrect": false,
+              "feedback": "Wait, the host asked about studying, not eating!"
+            },
+            {
+              "text": "Lavoro in ufficio con il mio nuovo computer.",
+              "isCorrect": false,
+              "feedback": "You are in the library, not at the office!"
+            }
+          ]
+        },
+        {
+          "id": "s1_m2",
+          "role": "host",
+          "text": "Capisco. Cosa impari oggi? La storia o la lingua?",
+          "english": "I understand. What are you learning today? History or language?",
+          "choices": [
+            {
+              "text": "Imparo la storia. È molto interessante stasera.",
+              "isCorrect": true,
+              "feedback": "Great. Using 'imparare' fits the context of learning a subject."
+            },
+            {
+              "text": "Cucino la pasta con il pomodoro e il basilico.",
+              "isCorrect": false,
+              "feedback": "Wrong verb! You should be learning, not cooking."
+            },
+            {
+              "text": "Guardo un film al cinema con i miei amici.",
+              "isCorrect": false,
+              "feedback": "You are studying, not watching a movie."
+            }
+          ]
+        },
+        {
+          "id": "s1_m3",
+          "role": "host",
+          "text": "Bene. Ascolti la lezione del professore sul computer?",
+          "english": "Good. Are you listening to the professor's lesson on the computer?",
+          "choices": [
+            {
+              "text": "Sì, ascolto la lezione e scrivo con la penna.",
+              "isCorrect": true,
+              "feedback": "Excellent choice using 'ascoltare'."
+            },
+            {
+              "text": "Sì, parlo con la collega di un nuovo progetto.",
+              "isCorrect": false,
+              "feedback": "You should be listening to the lesson!"
+            },
+            {
+              "text": "Sì, cerco un libro di cucina nella biblioteca.",
+              "isCorrect": false,
+              "feedback": "You are listening to a lesson, not looking for cookbooks."
+            }
+          ]
+        },
+        {
+          "id": "s1_m4",
+          "role": "host",
+          "text": "Ottimo. Desideri studiare insieme questo pomeriggio?",
+          "english": "Excellent. Do you want to study together this afternoon?",
+          "choices": [
+            {
+              "text": "Sì, desidero studiare insieme. È una buona idea.",
+              "isCorrect": true,
+              "feedback": "Polite and correct use of 'desiderare'."
+            },
+            {
+              "text": "No, ordino la pizza perché è quasi ora di cena.",
+              "isCorrect": false,
+              "feedback": "The host invited you to study, not to order food."
+            },
+            {
+              "text": "No, lavoro stasera in un piccolo ristorante.",
+              "isCorrect": false,
+              "feedback": "The question was about this afternoon, not tonight."
+            }
+          ]
+        },
+        {
+          "id": "s1_m5",
+          "role": "host",
+          "text": "Allora a dopo! Porto io i libri e le penne.",
+          "english": "See you later then! I'll bring the books and pens.",
+          "choices": [
+            {
+              "text": "Perfetto, a dopo! Grazie mille per l'aiuto.",
+              "isCorrect": true,
+              "feedback": "A natural way to end the conversation."
+            },
+            {
+              "text": "Domani mangio al bar con il mio professore.",
+              "isCorrect": false,
+              "feedback": "You should confirm the plan for today first!"
+            },
+            {
+              "text": "Stasera guardo la televisione a casa mia.",
+              "isCorrect": false,
+              "feedback": "You just agreed to study together!"
+            }
+          ]
+        },
+        {
+          "id": "s1_m6",
+          "role": "host",
+          "text": "Il professore arriva presto?",
+          "english": "Does the professor arrive early?",
+          "choices": [
+            {
+              "text": "Sì, lui arriva sempre alle otto in punto.",
+              "isCorrect": true,
+              "feedback": "Correct! 'Arrivare' is used correctly for the professor."
+            },
+            {
+              "text": "Sì, io cucino la pasta in cucina ora.",
+              "isCorrect": false,
+              "feedback": "The question is about the professor's arrival, not your cooking!"
+            },
+            {
+              "text": "Sì, guardo un film al cinema stasera.",
+              "isCorrect": false,
+              "feedback": "You are in the library, not at the cinema!"
+            }
+          ]
+        },
+        {
+          "id": "s1_m7",
+          "role": "host",
+          "text": "Ottimo. Dove studi di solito?",
+          "english": "Great. Where do you usually study?",
+          "choices": [
+            {
+              "text": "Studio a casa o in biblioteca con i miei amici.",
+              "isCorrect": true,
+              "feedback": "Perfect! 'Studiare' is the right verb for this context."
+            },
+            {
+              "text": "Compro un computer veloce per il mio ufficio.",
+              "isCorrect": false,
+              "feedback": "The host asked where you study, not what you buy."
+            },
+            {
+              "text": "Mando una richiesta al capo per la riunione.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to study locations."
+            }
+          ]
+        },
+        {
+          "id": "s1_m8",
+          "role": "host",
+          "text": "Parli bene l'italiano! Studi da molto tempo?",
+          "english": "You speak Italian well! Have you been studying for a long time?",
+          "choices": [
+            {
+              "text": "Sì, parlo e studio ogni giorno per imparare.",
+              "isCorrect": true,
+              "feedback": "Excellent! You used 'parlare', 'studiare', and 'imparare' correctly."
+            },
+            {
+              "text": "Sì, mangio il pane con il pomodoro a pranzo.",
+              "isCorrect": false,
+              "feedback": "Eating is not the same as studying!"
+            },
+            {
+              "text": "Sì, ascolto la musica allegra alla radio ora.",
+              "isCorrect": false,
+              "feedback": "The host is complimenting your language skills, not your music taste."
+            }
+          ]
+        },
+        {
+          "id": "s1_m9",
+          "role": "host",
+          "text": "Cosa mangi dopo lo studio? Hai fame?",
+          "english": "What do you eat after studying? Are you hungry?",
+          "choices": [
+            {
+              "text": "Mangio un panino veloce qui vicino.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'mangiare'."
+            },
+            {
+              "text": "Cerco l'email del professore sul computer.",
+              "isCorrect": false,
+              "feedback": "Searching for an email doesn't satisfy hunger!"
+            },
+            {
+              "text": "Lavoro al progetto importante stasera.",
+              "isCorrect": false,
+              "feedback": "The question was about eating."
+            }
+          ]
+        },
+        {
+          "id": "s1_m10",
+          "role": "host",
+          "text": "Perfetto. Allora ci vediamo dopo per studiare.",
+          "english": "Perfect. Then I'll see you later to study.",
+          "choices": [
+            {
+              "text": "D'accordo! A dopo e buon lavoro.",
+              "isCorrect": true,
+              "feedback": "A polite way to conclude the conversation."
+            },
+            {
+              "text": "D'accordo! Compro i biglietti per il cinema.",
+              "isCorrect": false,
+              "feedback": "You are meeting to study, not to go to the cinema!"
+            },
+            {
+              "text": "D'accordo! Aspetto il treno alla stazione.",
+              "isCorrect": false,
+              "feedback": "Why are you at the station? You just agreed to meet later!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pranzo_tra_amici",
+      "title": "Lunch Among Friends",
+      "description": "Plan and prepare lunch with a friend at home.",
+      "messages": [
+        {
+          "id": "s2_m1",
+          "role": "host",
+          "text": "Ciao! Hai fame? Pranziamo insieme oggi a casa?",
+          "english": "Hi! Are you hungry? Shall we have lunch together at home today?",
+          "choices": [
+            {
+              "text": "Sì, ho molta fame! Cosa mangiamo di buono?",
+              "isCorrect": true,
+              "feedback": "Good! You expressed hunger and interest in the meal."
+            },
+            {
+              "text": "Sì, studio storia per l'esame di domani.",
+              "isCorrect": false,
+              "feedback": "The friend asked about lunch, not studying!"
+            },
+            {
+              "text": "Sì, lavoro molto in ufficio questo mese.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the lunch invitation."
+            }
+          ]
+        },
+        {
+          "id": "s2_m2",
+          "role": "host",
+          "text": "Cuciniamo la pasta? Io ho l'acqua e il pane.",
+          "english": "Shall we cook pasta? I have the water and the bread.",
+          "choices": [
+            {
+              "text": "Sì, cuciniamo la pasta. Io compro il vino.",
+              "isCorrect": true,
+              "feedback": "Perfect response using 'cucinare' and 'comprare'."
+            },
+            {
+              "text": "Sì, imparo l'italiano con un libro nuovo.",
+              "isCorrect": false,
+              "feedback": "You should be talking about cooking!"
+            },
+            {
+              "text": "Sì, ascolto la musica classica alla radio.",
+              "isCorrect": false,
+              "feedback": "Not helpful for preparing lunch."
+            }
+          ]
+        },
+        {
+          "id": "s2_m3",
+          "role": "host",
+          "text": "Bene. Aspetti un momento? Cerco le forchette.",
+          "english": "Good. Will you wait a moment? I'm looking for the forks.",
+          "choices": [
+            {
+              "text": "Sì, aspetto qui. Tu dove trovi le forchette?",
+              "isCorrect": true,
+              "feedback": "Good use of 'aspettare' and 'trovare'."
+            },
+            {
+              "text": "Sì, lavoro al computer nella mia camera.",
+              "isCorrect": false,
+              "feedback": "Stay in the kitchen to help with lunch!"
+            },
+            {
+              "text": "Sì, guardo lo schermo del mio telefono.",
+              "isCorrect": false,
+              "feedback": "Try to be more helpful than just looking at your phone."
+            }
+          ]
+        },
+        {
+          "id": "s2_m4",
+          "role": "host",
+          "text": "Le trovo nel cassetto. Parliamo un po' mentre mangiamo?",
+          "english": "I'll find them in the drawer. Shall we talk a bit while we eat?",
+          "choices": [
+            {
+              "text": "Sì, parliamo molto. Ho molte storie da raccontare.",
+              "isCorrect": true,
+              "feedback": "Excellent use of 'parlare' in a social context."
+            },
+            {
+              "text": "Sì, insegno la matematica a scuola oggi.",
+              "isCorrect": false,
+              "feedback": "You are at home for lunch, not teaching at school!"
+            },
+            {
+              "text": "Sì, suono la chitarra in un gruppo rock.",
+              "isCorrect": false,
+              "feedback": "You can't eat and play guitar at the same time!"
+            }
+          ]
+        },
+        {
+          "id": "s2_m5",
+          "role": "host",
+          "text": "Ottimo! Il pranzo è pronto. A tavola!",
+          "english": "Excellent! Lunch is ready. To the table!",
+          "choices": [
+            {
+              "text": "Grazie! Mangiamo questa pasta, sembra buona.",
+              "isCorrect": true,
+              "feedback": "A natural and appreciative way to start the meal."
+            },
+            {
+              "text": "Grazie! Cerco un ufficio nuovo in centro.",
+              "isCorrect": false,
+              "feedback": "Don't talk about job hunting during lunch!"
+            },
+            {
+              "text": "Grazie! Ordino un film d'azione stasera.",
+              "isCorrect": false,
+              "feedback": "Enjoy the meal first!"
+            }
+          ]
+        },
+        {
+          "id": "s2_m6",
+          "role": "host",
+          "text": "Compriamo anche la frutta?",
+          "english": "Shall we buy fruit too?",
+          "choices": [
+            {
+              "text": "Sì, io compro le mele e le arance al mercato.",
+              "isCorrect": true,
+              "feedback": "Good use of 'comprare' for groceries."
+            },
+            {
+              "text": "Sì, io studio la lezione di storia oggi.",
+              "isCorrect": false,
+              "feedback": "Don't study when you should be buying fruit!"
+            },
+            {
+              "text": "Sì, io guardo il film al cinema stasera.",
+              "isCorrect": false,
+              "feedback": "Not helpful for lunch preparation."
+            }
+          ]
+        },
+        {
+          "id": "s2_m7",
+          "role": "host",
+          "text": "Ottima idea. Lavori ancora o pranziamo subito?",
+          "english": "Excellent idea. Are you still working or shall we have lunch right away?",
+          "choices": [
+            {
+              "text": "Non lavoro più, sono pronto per mangiare.",
+              "isCorrect": true,
+              "feedback": "Clear and correct use of 'lavorare' and 'mangiare'."
+            },
+            {
+              "text": "Non parlo più, sono pronto per dormire.",
+              "isCorrect": false,
+              "feedback": "It's lunchtime, not bedtime!"
+            },
+            {
+              "text": "Non cerco più, sono pronto per arrivare.",
+              "isCorrect": false,
+              "feedback": "Doesn't make sense in this context."
+            }
+          ]
+        },
+        {
+          "id": "s2_m8",
+          "role": "host",
+          "text": "Mandi un messaggio a Marco? Magari pranza con noi.",
+          "english": "Are you sending a message to Marco? Maybe he'll have lunch with us?",
+          "choices": [
+            {
+              "text": "Sì, mando subito un messaggio. Lui ama la tua pasta.",
+              "isCorrect": true,
+              "feedback": "Great use of 'mandare' and 'amare'."
+            },
+            {
+              "text": "Sì, ascolto subito la musica. Lui ama il rock.",
+              "isCorrect": false,
+              "feedback": "The friend asked to send a message, not listen to music."
+            },
+            {
+              "text": "Sì, guardo subito i documenti. Lui ama l'ufficio.",
+              "isCorrect": false,
+              "feedback": "Keep work out of the lunch plan!"
+            }
+          ]
+        },
+        {
+          "id": "s2_m9",
+          "role": "host",
+          "text": "Perfetto. Cosa raccontiamo a Marco stasera?",
+          "english": "Perfect. What are we telling Marco tonight?",
+          "choices": [
+            {
+              "text": "Raccontiamo del nostro nuovo progetto di lavoro.",
+              "isCorrect": true,
+              "feedback": "Good use of 'raccontare' to share news."
+            },
+            {
+              "text": "Cuciniamo del nostro nuovo computer di lavoro.",
+              "isCorrect": false,
+              "feedback": "You can't cook a computer!"
+            },
+            {
+              "text": "Studiamo del nostro nuovo pranzo di lavoro.",
+              "isCorrect": false,
+              "feedback": "The verb 'studiare' doesn't fit here."
+            }
+          ]
+        },
+        {
+          "id": "s2_m10",
+          "role": "host",
+          "text": "Ottimo. Allora aspetto la sua risposta.",
+          "english": "Great. Then I'll wait for his answer.",
+          "choices": [
+            {
+              "text": "Sì, aspettiamo insieme. Il pranzo è quasi pronto!",
+              "isCorrect": true,
+              "feedback": "Correct use of 'aspettare'."
+            },
+            {
+              "text": "Sì, arriviamo insieme. Il pranzo è già finito!",
+              "isCorrect": false,
+              "feedback": "The lunch hasn't even started yet!"
+            },
+            {
+              "text": "Sì, impariamo insieme. Il pranzo è molto difficile!",
+              "isCorrect": false,
+              "feedback": "Lunch isn't a school subject!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lavoro_in_ufficio",
+      "title": "Working in the Office",
+      "description": "Coordinate tasks with a colleague at work.",
+      "messages": [
+        {
+          "id": "s3_m1",
+          "role": "host",
+          "text": "Buongiorno! Lavori al nuovo progetto stasera?",
+          "english": "Good morning! Are you working on the new project tonight?",
+          "choices": [
+            {
+              "text": "Sì, lavoro stasera perché il progetto è importante.",
+              "isCorrect": true,
+              "feedback": "Professional and correct use of 'lavorare'."
+            },
+            {
+              "text": "No, mangio un gelato al cioccolato stasera.",
+              "isCorrect": false,
+              "feedback": "Too casual for a workplace conversation."
+            },
+            {
+              "text": "Sì, studio l'italiano per due ore stasera.",
+              "isCorrect": false,
+              "feedback": "Your colleague is asking about work tasks!"
+            }
+          ]
+        },
+        {
+          "id": "s3_m2",
+          "role": "host",
+          "text": "Bene. Cerchi l'email del capo? È arrivata ora.",
+          "english": "Good. Are you looking for the boss's email? It just arrived.",
+          "choices": [
+            {
+              "text": "Sì, cerco l'email e guardo i documenti.",
+              "isCorrect": true,
+              "feedback": "Great use of 'cercare' and 'guardare'."
+            },
+            {
+              "text": "Sì, cucino il pollo con le patate ora.",
+              "isCorrect": false,
+              "feedback": "Don't cook in the office!"
+            },
+            {
+              "text": "Sì, ascolto la radio ad alto volume ora.",
+              "isCorrect": false,
+              "feedback": "That would be distracting for your colleagues."
+            }
+          ]
+        },
+        {
+          "id": "s3_m3",
+          "role": "host",
+          "text": "Ottimo. Parli con il collega della riunione di domani?",
+          "english": "Excellent. Are you talking to the colleague about tomorrow's meeting?",
+          "choices": [
+            {
+              "text": "Sì, parlo con lui oggi pomeriggio alle tre.",
+              "isCorrect": true,
+              "feedback": "Proper coordination using 'parlare'."
+            },
+            {
+              "text": "Sì, mangio l'insalata alla scrivania oggi.",
+              "isCorrect": false,
+              "feedback": "The question was about talking to a colleague."
+            },
+            {
+              "text": "Sì, cerco un biglietto per il teatro oggi.",
+              "isCorrect": false,
+              "feedback": "Personal tasks should wait until after work."
+            }
+          ]
+        },
+        {
+          "id": "s3_m4",
+          "role": "host",
+          "text": "Perfetto. Desideri comprare un nuovo computer?",
+          "english": "Perfect. Do you want to buy a new computer?",
+          "choices": [
+            {
+              "text": "Sì, desidero comprare un computer più veloce.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'desiderare' and 'comprare'."
+            },
+            {
+              "text": "Sì, imparo a suonare il pianoforte ora.",
+              "isCorrect": false,
+              "feedback": "Not relevant to office equipment!"
+            },
+            {
+              "text": "Sì, guardo una partita di calcio ora.",
+              "isCorrect": false,
+              "feedback": "Focus on your work equipment instead!"
+            }
+          ]
+        },
+        {
+          "id": "s3_m5",
+          "role": "host",
+          "text": "Bene, allora mando una richiesta all'ufficio.",
+          "english": "Good, then I'll send a request to the office.",
+          "choices": [
+            {
+              "text": "Grazie mille! Sei sempre molto gentile.",
+              "isCorrect": true,
+              "feedback": "A polite and professional closure."
+            },
+            {
+              "text": "Grazie! Mangio la mela in biblioteca.",
+              "isCorrect": false,
+              "feedback": "Wait, you are still in the office!"
+            },
+            {
+              "text": "Grazie! Studio la lezione di storia.",
+              "isCorrect": false,
+              "feedback": "Back to work, not back to school!"
+            }
+          ]
+        },
+        {
+          "id": "s3_m6",
+          "role": "host",
+          "text": "Mandi i documenti alla segretaria?",
+          "english": "Are you sending the documents to the secretary?",
+          "choices": [
+            {
+              "text": "Sì, mando tutto ora. Lei aspetta la mia email.",
+              "isCorrect": true,
+              "feedback": "Professional use of 'mandare' and 'aspettare'."
+            },
+            {
+              "text": "Sì, mangio tutto ora. Lei aspetta la mia pasta.",
+              "isCorrect": false,
+              "feedback": "Don't eat the documents!"
+            },
+            {
+              "text": "Sì, guardo tutto ora. Lei aspetta la mia colonna.",
+              "isCorrect": false,
+              "feedback": "Doesn't make sense in an office context."
+            }
+          ]
+        },
+        {
+          "id": "s3_m7",
+          "role": "host",
+          "text": "Ottimo. Dove lavori domani pomeriggio?",
+          "english": "Great. Where are you working tomorrow afternoon?",
+          "choices": [
+            {
+              "text": "Lavoro qui in ufficio o magari a casa.",
+              "isCorrect": true,
+              "feedback": "A clear answer using 'lavorare'."
+            },
+            {
+              "text": "Cucino qui in ufficio o magari a casa.",
+              "isCorrect": false,
+              "feedback": "Offices are for working, not cooking!"
+            },
+            {
+              "text": "Ascolto qui in ufficio o magari a casa.",
+              "isCorrect": false,
+              "feedback": "Vague answer. 'Lavoro' is better."
+            }
+          ]
+        },
+        {
+          "id": "s3_m8",
+          "role": "host",
+          "text": "Impari a usare il nuovo software oggi?",
+          "english": "Are you learning to use the new software today?",
+          "choices": [
+            {
+              "text": "Sì, imparo con l'aiuto del mio collega.",
+              "isCorrect": true,
+              "feedback": "Good use of 'imparare'."
+            },
+            {
+              "text": "Sì, compro con l'aiuto del mio professore.",
+              "isCorrect": false,
+              "feedback": "The question was about learning software."
+            },
+            {
+              "text": "Sì, gioco con l'aiuto del mio attore.",
+              "isCorrect": false,
+              "feedback": "Inappropriate for the workplace."
+            }
+          ]
+        },
+        {
+          "id": "s3_m9",
+          "role": "host",
+          "text": "Cosa compriamo per il pranzo in ufficio?",
+          "english": "What are we buying for lunch in the office?",
+          "choices": [
+            {
+              "text": "Compriamo una pizza o un'insalata veloce.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'comprare'."
+            },
+            {
+              "text": "Studiamo una pizza o un'insalata veloce.",
+              "isCorrect": false,
+              "feedback": "You can't study a pizza!"
+            },
+            {
+              "text": "Guardiamo una pizza o un'insalata veloce.",
+              "isCorrect": false,
+              "feedback": "You should eat it, not just look at it!"
+            }
+          ]
+        },
+        {
+          "id": "s3_m10",
+          "role": "host",
+          "text": "Perfetto. Allora cerco il menu del ristorante.",
+          "english": "Perfect. Then I'll look for the restaurant menu.",
+          "choices": [
+            {
+              "text": "D'accordo, grazie mille per l'aiuto!",
+              "isCorrect": true,
+              "feedback": "A polite conclusion."
+            },
+            {
+              "text": "D'accordo, grazie mille per il film!",
+              "isCorrect": false,
+              "feedback": "You are at work, not at the cinema!"
+            },
+            {
+              "text": "D'accordo, grazie mille per il progetto!",
+              "isCorrect": false,
+              "feedback": "The colleague is helping with lunch, not the project right now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serata_al_cinema",
+      "title": "Evening at the Cinema",
+      "description": "Invite a friend to see a movie and discuss plans.",
+      "messages": [
+        {
+          "id": "s4_m1",
+          "role": "host",
+          "text": "Ciao! Guardi il nuovo film di stasera?",
+          "english": "Hi! Are you watching tonight's new movie?",
+          "choices": [
+            {
+              "text": "Sì, guardo il film perché amo gli attori.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'guardare' and 'amare'."
+            },
+            {
+              "text": "No, lavoro in ufficio fino a tardi stasera.",
+              "isCorrect": false,
+              "feedback": "A valid answer, but the correct one fits the scenario better."
+            },
+            {
+              "text": "Sì, studio la storia romana stasera.",
+              "isCorrect": false,
+              "feedback": "You can't study and watch a movie at once!"
+            }
+          ]
+        },
+        {
+          "id": "s4_m2",
+          "role": "host",
+          "text": "Bene. Aspetti me davanti al cinema alle otto?",
+          "english": "Good. Will you wait for me in front of the cinema at eight?",
+          "choices": [
+            {
+              "text": "Sì, aspetto davanti al cinema. Non arrivare tardi!",
+              "isCorrect": true,
+              "feedback": "Perfect use of 'aspettare' to confirm plans."
+            },
+            {
+              "text": "Sì, mangio il pane con il formaggio ora.",
+              "isCorrect": false,
+              "feedback": "Focus on the cinema meeting time!"
+            },
+            {
+              "text": "Sì, cerco le chiavi dell'appartamento ora.",
+              "isCorrect": false,
+              "feedback": "Find your keys, but confirm the cinema plan first!"
+            }
+          ]
+        },
+        {
+          "id": "s4_m3",
+          "role": "host",
+          "text": "D'accordo. Compri tu i popcorn e l'acqua?",
+          "english": "Agreed. Will you buy the popcorn and water?",
+          "choices": [
+            {
+              "text": "Sì, compro i popcorn. Tu compri i biglietti?",
+              "isCorrect": true,
+              "feedback": "Good use of 'comprare' to divide tasks."
+            },
+            {
+              "text": "Sì, cucino la pasta per tutti gli amici.",
+              "isCorrect": false,
+              "feedback": "You are going to the cinema, not having a dinner party!"
+            },
+            {
+              "text": "Sì, imparo a parlare l'inglese stasera.",
+              "isCorrect": false,
+              "feedback": "The film is in Italian, stay focused!"
+            }
+          ]
+        },
+        {
+          "id": "s4_m4",
+          "role": "host",
+          "text": "Sì, io compro i biglietti. Ascolti la colonna sonora?",
+          "english": "Yes, I'll buy the tickets. Are you listening to the soundtrack?",
+          "choices": [
+            {
+              "text": "Sì, ascolto la musica. È molto bella e allegra.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'ascoltare'."
+            },
+            {
+              "text": "Sì, lavoro al progetto del mio ufficio.",
+              "isCorrect": false,
+              "feedback": "No work talk at the cinema!"
+            },
+            {
+              "text": "Sì, cerco un posto in biblioteca ora.",
+              "isCorrect": false,
+              "feedback": "You should be at the cinema, not the library!"
+            }
+          ]
+        },
+        {
+          "id": "s4_m5",
+          "role": "host",
+          "text": "Ottimo! Ci vediamo stasera alle otto allora.",
+          "english": "Excellent! See you tonight at eight then.",
+          "choices": [
+            {
+              "text": "Perfetto! A stasera, non vedo l'ora.",
+              "isCorrect": true,
+              "feedback": "A natural way to confirm and end the conversation."
+            },
+            {
+              "text": "Ciao! Pranziamo insieme domani a casa?",
+              "isCorrect": false,
+              "feedback": "Confirm the cinema plan first!"
+            },
+            {
+              "text": "Ciao! Insegno l'italiano a scuola domani.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the cinema plan."
+            }
+          ]
+        },
+        {
+          "id": "s4_m6",
+          "role": "host",
+          "text": "A che ora arrivi davanti al cinema?",
+          "english": "What time do you arrive in front of the cinema?",
+          "choices": [
+            {
+              "text": "Arrivo alle otto meno un quarto, va bene?",
+              "isCorrect": true,
+              "feedback": "Correct use of 'arrivare'."
+            },
+            {
+              "text": "Lavoro alle otto meno un quarto, va bene?",
+              "isCorrect": false,
+              "feedback": "Don't work when you're supposed to be at the cinema!"
+            },
+            {
+              "text": "Studio alle otto meno un quarto, va bene?",
+              "isCorrect": false,
+              "feedback": "Same problem: stay focused on the movie!"
+            }
+          ]
+        },
+        {
+          "id": "s4_m7",
+          "role": "host",
+          "text": "Sì, perfetto. Guardiamo il film in italiano?",
+          "english": "Yes, perfect. Shall we watch the movie in Italian?",
+          "choices": [
+            {
+              "text": "Sì, guardo volentieri i film in lingua originale.",
+              "isCorrect": true,
+              "feedback": "Great use of 'guardare' and 'lingua'."
+            },
+            {
+              "text": "Sì, cucino volentieri i film in lingua originale.",
+              "isCorrect": false,
+              "feedback": "You cannot cook a film!"
+            },
+            {
+              "text": "Sì, mando volentieri i film in lingua originale.",
+              "isCorrect": false,
+              "feedback": "The verb 'mandare' doesn't fit here."
+            }
+          ]
+        },
+        {
+          "id": "s4_m8",
+          "role": "host",
+          "text": "Ami molto il cinema, vero?",
+          "english": "You love the cinema a lot, right?",
+          "choices": [
+            {
+              "text": "Sì, amo le storie interessanti e gli attori bravi.",
+              "isCorrect": true,
+              "feedback": "Excellent use of 'amare', 'storie', and 'attori'."
+            },
+            {
+              "text": "Sì, mangio le storie interessanti e gli attori bravi.",
+              "isCorrect": false,
+              "feedback": "You are not a cannibal!"
+            },
+            {
+              "text": "Sì, cerco le storie interessanti e gli attori bravi.",
+              "isCorrect": false,
+              "feedback": "You already found them in the cinema!"
+            }
+          ]
+        },
+        {
+          "id": "s4_m9",
+          "role": "host",
+          "text": "Dopo il film, parliamo un po' del finale?",
+          "english": "After the movie, shall we talk a bit about the ending?",
+          "choices": [
+            {
+              "text": "Sì, parliamo davanti a un buon bicchiere di vino.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'parlare' and 'vino'."
+            },
+            {
+              "text": "Sì, studiamo davanti a un buon bicchiere di vino.",
+              "isCorrect": false,
+              "feedback": "Don't study after the movie, just relax!"
+            },
+            {
+              "text": "Sì, lavoriamo davanti a un buon bicchiere di vino.",
+              "isCorrect": false,
+              "feedback": "No work talk after the cinema!"
+            }
+          ]
+        },
+        {
+          "id": "s4_m10",
+          "role": "host",
+          "text": "Ottima idea! Allora ci vediamo tra poco.",
+          "english": "Excellent idea! Then I'll see you shortly.",
+          "choices": [
+            {
+              "text": "Sì, a tra poco! Non vedo l'ora.",
+              "isCorrect": true,
+              "feedback": "A natural way to conclude."
+            },
+            {
+              "text": "Sì, a tra poco! Non parlo l'ora.",
+              "isCorrect": false,
+              "feedback": "'Non parlo l'ora' is incorrect; 'non vedo l'ora' is the idiom."
+            },
+            {
+              "text": "Sì, a tra poco! Non mangio l'ora.",
+              "isCorrect": false,
+              "feedback": "You can't eat time!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

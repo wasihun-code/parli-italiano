@@ -1,0 +1,953 @@
+{
+  "scenarioId": 115,
+  "conversations": [
+    {
+      "id": "morning_routine",
+      "title": "Morning Routine",
+      "description": "Talk about your daily habits in the morning.",
+      "messages": [
+        {
+          "id": "c1_m1",
+          "role": "host",
+          "text": "Buongiorno! A che ora ti svegli di solito la mattina?",
+          "english": "Good morning! What time do you usually wake up in the morning?",
+          "choices": [
+            {
+              "text": "Mi sveglio sempre alle sette in punto.",
+              "isCorrect": true,
+              "feedback": "Great! You used the reflexive verb 'svegliarsi' correctly."
+            },
+            {
+              "text": "Il treno parte alle otto dal binario uno.",
+              "isCorrect": false,
+              "feedback": "Wrong domain. We are talking about your routine."
+            },
+            {
+              "text": "Vorrei ordinare una pizza e una birra.",
+              "isCorrect": false,
+              "feedback": "You're at home, not in a restaurant!"
+            }
+          ]
+        },
+        {
+          "id": "c1_m2",
+          "role": "host",
+          "text": "Sette? È presto! E poi ti alzi subito dal letto?",
+          "english": "Seven? That's early! And then do you get out of bed right away?",
+          "choices": [
+            {
+              "text": "No, mi alzo dopo dieci minuti di solito.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'alzarsi'."
+            },
+            {
+              "text": "Cerco la chiave del mio nuovo appartamento.",
+              "isCorrect": false,
+              "feedback": "Stay on topic: your morning routine."
+            },
+            {
+              "text": "Il mio bagaglio è molto pesante oggi.",
+              "isCorrect": false,
+              "feedback": "No travel vocabulary allowed here."
+            }
+          ]
+        },
+        {
+          "id": "c1_m3",
+          "role": "host",
+          "text": "Capisco. Cosa fai dopo? Ti lavi subito?",
+          "english": "I see. What do you do after? Do you wash yourself right away?",
+          "choices": [
+            {
+              "text": "Sì, vado in bagno e mi lavo la faccia.",
+              "isCorrect": true,
+              "feedback": "Perfect! 'Lavarsi' is a key reflexive verb."
+            },
+            {
+              "text": "Dov'è il medico? Mi sento molto male.",
+              "isCorrect": false,
+              "feedback": "This is a routine, not a medical emergency."
+            },
+            {
+              "text": "Il binario cinque è molto lontano da qui.",
+              "isCorrect": false,
+              "feedback": "Avoid station vocabulary."
+            }
+          ]
+        },
+        {
+          "id": "c1_m4",
+          "role": "host",
+          "text": "Ottimo. Ti fai una doccia calda o fredda?",
+          "english": "Great. Do you take a hot or cold shower?",
+          "choices": [
+            {
+              "text": "Mi faccio una doccia calda ogni mattina.",
+              "isCorrect": true,
+              "feedback": "Good job using the reflexive form with 'fare'."
+            },
+            {
+              "text": "Il volo per Roma è in ritardo stasera.",
+              "isCorrect": false,
+              "feedback": "Keep the airport talk out of the bathroom!"
+            },
+            {
+              "text": "Vorrei prenotare un tavolo per quattro.",
+              "isCorrect": false,
+              "feedback": "We're discussing showers, not dinner."
+            }
+          ]
+        },
+        {
+          "id": "c1_m5",
+          "role": "host",
+          "text": "E poi come ti vesti? In modo elegante?",
+          "english": "And then how do you dress? In an elegant way?",
+          "choices": [
+            {
+              "text": "No, mi vesto in modo molto semplice.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'vestirsi'."
+            },
+            {
+              "text": "Il menù del giorno ha la pasta al forno.",
+              "isCorrect": false,
+              "feedback": "No restaurant talk allowed."
+            },
+            {
+              "text": "Ho perso le chiavi di casa, aiuto!",
+              "isCorrect": false,
+              "feedback": "Don't bring keys into this conversation."
+            }
+          ]
+        },
+        {
+          "id": "c1_m6",
+          "role": "host",
+          "text": "Ti pettini anche davanti allo specchio?",
+          "english": "Do you also comb your hair in front of the mirror?",
+          "choices": [
+            {
+              "text": "Sì, mi pettino sempre bene i capelli.",
+              "isCorrect": true,
+              "feedback": "Using 'pettinarsi' correctly."
+            },
+            {
+              "text": "Vado al museo per vedere i quadri.",
+              "isCorrect": false,
+              "feedback": "Museums are not part of the morning routine."
+            },
+            {
+              "text": "Il mio portafoglio è vuoto, che peccato.",
+              "isCorrect": false,
+              "feedback": "Money is not the focus here."
+            }
+          ]
+        },
+        {
+          "id": "c1_m7",
+          "role": "host",
+          "text": "Ti senti pronto per andare al lavoro?",
+          "english": "Do you feel ready to go to work?",
+          "choices": [
+            {
+              "text": "Sì, mi sento pronto e molto energico.",
+              "isCorrect": true,
+              "feedback": "Excellent use of 'sentirsi'."
+            },
+            {
+              "text": "Il citofono non funziona, chi sei?",
+              "isCorrect": false,
+              "feedback": "Avoid apartment entry vocabulary."
+            },
+            {
+              "text": "Vorrei un biglietto di andata e ritorno.",
+              "isCorrect": false,
+              "feedback": "No train tickets here."
+            }
+          ]
+        },
+        {
+          "id": "c1_m8",
+          "role": "host",
+          "text": "Fai colazione a casa o al bar?",
+          "english": "Do you have breakfast at home or at the bar?",
+          "choices": [
+            {
+              "text": "Mi preparo un caffè a casa di solito.",
+              "isCorrect": true,
+              "feedback": "Good use of 'prepararsi'."
+            },
+            {
+              "text": "La camera singola costa cento euro.",
+              "isCorrect": false,
+              "feedback": "We're at home, not in a hotel."
+            },
+            {
+              "text": "Dov'è il bagno in questo ospedale?",
+              "isCorrect": false,
+              "feedback": "You're at home, not in a hospital."
+            }
+          ]
+        },
+        {
+          "id": "c1_m9",
+          "role": "host",
+          "text": "Ti diverti durante la giornata?",
+          "english": "Do you have fun during the day?",
+          "choices": [
+            {
+              "text": "Sì, mi diverto molto con i colleghi.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'divertirsi'."
+            },
+            {
+              "text": "Il mio cane ha bisogno di un medico.",
+              "isCorrect": false,
+              "feedback": "No medical context needed."
+            },
+            {
+              "text": "Cerco la fermata dell'autobus numero dieci.",
+              "isCorrect": false,
+              "feedback": "Keep focus on your feelings during the day."
+            }
+          ]
+        },
+        {
+          "id": "c1_m10",
+          "role": "host",
+          "text": "Ottimo! Buona giornata allora!",
+          "english": "Great! Have a good day then!",
+          "choices": [
+            {
+              "text": "Grazie, ci vediamo stasera in piazza!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Ho mal di pancia, dove è la farmacia?",
+              "isCorrect": false,
+              "feedback": "No medical issues allowed."
+            },
+            {
+              "text": "Il treno è partito dal binario tre.",
+              "isCorrect": false,
+              "feedback": "No trains!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "getting_dressed_party",
+      "title": "Getting Dressed for a Party",
+      "description": "Prepare yourself for a social event.",
+      "messages": [
+        {
+          "id": "c2_m1",
+          "role": "host",
+          "text": "Ciao! Ti prepari per la festa di stasera?",
+          "english": "Hi! Are you getting ready for the party tonight?",
+          "choices": [
+            {
+              "text": "Sì, mi preparo con molta cura ora.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'prepararsi'."
+            },
+            {
+              "text": "Devo andare in aeroporto tra un'ora.",
+              "isCorrect": false,
+              "feedback": "Wrong domain: party vs airport."
+            },
+            {
+              "text": "Il ristorante è chiuso il lunedì.",
+              "isCorrect": false,
+              "feedback": "Not a restaurant context."
+            }
+          ]
+        },
+        {
+          "id": "c2_m2",
+          "role": "host",
+          "text": "Ti lavi i capelli prima di uscire?",
+          "english": "Do you wash your hair before going out?",
+          "choices": [
+            {
+              "text": "Sì, mi lavo bene anche i capelli.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'lavarsi'."
+            },
+            {
+              "text": "Il binario quattro è quello giusto?",
+              "isCorrect": false,
+              "feedback": "No station talk."
+            },
+            {
+              "text": "Ho dimenticato le chiavi del portone.",
+              "isCorrect": false,
+              "feedback": "No apartment talk."
+            }
+          ]
+        },
+        {
+          "id": "c2_m3",
+          "role": "host",
+          "text": "Come ti vesti? Metto una camicia?",
+          "english": "How do you dress? Shall I put on a shirt?",
+          "choices": [
+            {
+              "text": "Sì, mi vesto con una camicia bianca.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'vestirsi'."
+            },
+            {
+              "text": "Cerco un volo economico per Milano.",
+              "isCorrect": false,
+              "feedback": "No flights!"
+            },
+            {
+              "text": "Il dottore dice di restare a letto.",
+              "isCorrect": false,
+              "feedback": "No medical talk."
+            }
+          ]
+        },
+        {
+          "id": "c2_m4",
+          "role": "host",
+          "text": "Ottima scelta. Ti guardi allo specchio?",
+          "english": "Great choice. Do you look at yourself in the mirror?",
+          "choices": [
+            {
+              "text": "Sì, mi guardo per vedere se sto bene.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'guardarsi'."
+            },
+            {
+              "text": "Il menù ha molti piatti di pesce.",
+              "isCorrect": false,
+              "feedback": "No menus!"
+            },
+            {
+              "text": "Il treno regionale è in ritardo.",
+              "isCorrect": false,
+              "feedback": "No trains!"
+            }
+          ]
+        },
+        {
+          "id": "c2_m5",
+          "role": "host",
+          "text": "Ti senti bene con questi vestiti?",
+          "english": "Do you feel good in these clothes?",
+          "choices": [
+            {
+              "text": "Sì, mi sento molto elegante stasera.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'sentirsi'."
+            },
+            {
+              "text": "Dove sono i bagagli del passeggero?",
+              "isCorrect": false,
+              "feedback": "No luggage!"
+            },
+            {
+              "text": "Il citofono ha un suono strano.",
+              "isCorrect": false,
+              "feedback": "No intercoms!"
+            }
+          ]
+        },
+        {
+          "id": "c2_m6",
+          "role": "host",
+          "text": "Ti diverti di solito alle feste?",
+          "english": "Do you usually have fun at parties?",
+          "choices": [
+            {
+              "text": "Sì, mi diverto sempre con gli amici.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'divertirsi'."
+            },
+            {
+              "text": "Il museo apre alle dieci di mattina.",
+              "isCorrect": false,
+              "feedback": "No museums!"
+            },
+            {
+              "text": "Il binario del treno è cambiato.",
+              "isCorrect": false,
+              "feedback": "No trains!"
+            }
+          ]
+        },
+        {
+          "id": "c2_m7",
+          "role": "host",
+          "text": "A che ora ti alzi domani mattina?",
+          "english": "What time do you get up tomorrow morning?",
+          "choices": [
+            {
+              "text": "Domani mi alzo tardi, sono stanco.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'alzarsi'."
+            },
+            {
+              "text": "L'ospedale è vicino alla stazione.",
+              "isCorrect": false,
+              "feedback": "No hospitals!"
+            },
+            {
+              "text": "Vorrei una bottiglia d'acqua fresca.",
+              "isCorrect": false,
+              "feedback": "Wrong topic."
+            }
+          ]
+        },
+        {
+          "id": "c2_m8",
+          "role": "host",
+          "text": "Capisco. Ti svegli tardi allora?",
+          "english": "I understand. So you wake up late?",
+          "choices": [
+            {
+              "text": "Sì, mi sveglio verso mezzogiorno.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'svegliarsi'."
+            },
+            {
+              "text": "Il biglietto per il teatro costa caro.",
+              "isCorrect": false,
+              "feedback": "No theaters!"
+            },
+            {
+              "text": "Il volo atterra alle tre del mattino.",
+              "isCorrect": false,
+              "feedback": "No planes!"
+            }
+          ]
+        },
+        {
+          "id": "c2_m9",
+          "role": "host",
+          "text": "Buon divertimento alla festa!",
+          "english": "Have fun at the party!",
+          "choices": [
+            {
+              "text": "Grazie, mi diverto sicuramente tanto!",
+              "isCorrect": true,
+              "feedback": "Correct use of 'divertirsi'."
+            },
+            {
+              "text": "Il cameriere porta il conto, grazie.",
+              "isCorrect": false,
+              "feedback": "No waiters!"
+            },
+            {
+              "text": "Dov'è il portone del palazzo?",
+              "isCorrect": false,
+              "feedback": "No apartment talk."
+            }
+          ]
+        },
+        {
+          "id": "c2_m10",
+          "role": "host",
+          "text": "Ciao, a presto allora!",
+          "english": "Bye, see you soon then!",
+          "choices": [
+            {
+              "text": "Ciao, ci sentiamo domani mattina!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Il treno parte ora, devo andare.",
+              "isCorrect": false,
+              "feedback": "No trains!"
+            },
+            {
+              "text": "Ho un forte mal di denti, scusa.",
+              "isCorrect": false,
+              "feedback": "No medical talk."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meeting_square",
+      "title": "Meeting at the Square",
+      "description": "Meet a new person and introduce yourself.",
+      "messages": [
+        {
+          "id": "c3_m1",
+          "role": "host",
+          "text": "Ciao! Come ti chiami? Io sono Marco.",
+          "english": "Hi! What is your name? I am Marco.",
+          "choices": [
+            {
+              "text": "Piacere, mi chiamo Giulia. Come va?",
+              "isCorrect": true,
+              "feedback": "Correct use of 'chiamarsi'."
+            },
+            {
+              "text": "Il treno per Roma è in ritardo.",
+              "isCorrect": false,
+              "feedback": "No trains!"
+            },
+            {
+              "text": "Cerco un volo per l'aeroporto.",
+              "isCorrect": false,
+              "feedback": "No planes!"
+            }
+          ]
+        },
+        {
+          "id": "c3_m2",
+          "role": "host",
+          "text": "Tutto bene, grazie. Ti senti bene oggi?",
+          "english": "All good, thanks. Do you feel well today?",
+          "choices": [
+            {
+              "text": "Sì, mi sento molto felice qui.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'sentirsi'."
+            },
+            {
+              "text": "Ho perso le chiavi di casa mia.",
+              "isCorrect": false,
+              "feedback": "No keys!"
+            },
+            {
+              "text": "Il menù ha troppe opzioni oggi.",
+              "isCorrect": false,
+              "feedback": "No menus!"
+            }
+          ]
+        },
+        {
+          "id": "c3_m3",
+          "role": "host",
+          "text": "Ottimo. Ti siedi un momento qui?",
+          "english": "Great. Will you sit here for a moment?",
+          "choices": [
+            {
+              "text": "Sì, mi siedo volentieri sulla panchina.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'sedersi'."
+            },
+            {
+              "text": "Il binario cinque è molto lontano.",
+              "isCorrect": false,
+              "feedback": "No station talk."
+            },
+            {
+              "text": "L'ospedale è dietro l'angolo.",
+              "isCorrect": false,
+              "feedback": "No hospitals!"
+            }
+          ]
+        },
+        {
+          "id": "c3_m4",
+          "role": "host",
+          "text": "Ti riposi un po' dopo il lavoro?",
+          "english": "Do you rest a bit after work?",
+          "choices": [
+            {
+              "text": "Sì, mi riposo spesso nel pomeriggio.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'riposarsi'."
+            },
+            {
+              "text": "Il volo costa duecento euro ora.",
+              "isCorrect": false,
+              "feedback": "No flights!"
+            },
+            {
+              "text": "La camera dell'hotel è sporca.",
+              "isCorrect": false,
+              "feedback": "No hotels!"
+            }
+          ]
+        },
+        {
+          "id": "c3_m5",
+          "role": "host",
+          "text": "Ti annoi mai in questa città?",
+          "english": "Do you ever get bored in this city?",
+          "choices": [
+            {
+              "text": "No, non mi annoio mai qui.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'annoiarsi'."
+            },
+            {
+              "text": "Cerco la farmacia più vicina.",
+              "isCorrect": false,
+              "feedback": "No pharmacies!"
+            },
+            {
+              "text": "Il portone del palazzo è chiuso.",
+              "isCorrect": false,
+              "feedback": "No apartment talk."
+            }
+          ]
+        },
+        {
+          "id": "c3_m6",
+          "role": "host",
+          "text": "Ti diverti con i tuoi amici stasera?",
+          "english": "Are you having fun with your friends tonight?",
+          "choices": [
+            {
+              "text": "Sì, ci divertiamo molto insieme.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'divertirsi' in the plural."
+            },
+            {
+              "text": "Il treno per Milano è partito.",
+              "isCorrect": false,
+              "feedback": "No trains!"
+            },
+            {
+              "text": "Vorrei ordinare una pasta al pesto.",
+              "isCorrect": false,
+              "feedback": "No restaurant talk."
+            }
+          ]
+        },
+        {
+          "id": "c3_m7",
+          "role": "host",
+          "text": "A che ora vi incontrate di solito?",
+          "english": "What time do you usually meet?",
+          "choices": [
+            {
+              "text": "Ci incontriamo alle otto in piazza.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'incontrarsi'."
+            },
+            {
+              "text": "Il mio bagaglio è all'aeroporto.",
+              "isCorrect": false,
+              "feedback": "No baggage!"
+            },
+            {
+              "text": "Dov'è il medico di turno?",
+              "isCorrect": false,
+              "feedback": "No doctors!"
+            }
+          ]
+        },
+        {
+          "id": "c3_m8",
+          "role": "host",
+          "text": "Ti prepari in fretta o con calma?",
+          "english": "Do you prepare quickly or calmly?",
+          "choices": [
+            {
+              "text": "Mi preparo sempre con molta calma.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'prepararsi'."
+            },
+            {
+              "text": "Il binario quattro è occupato.",
+              "isCorrect": false,
+              "feedback": "No station talk."
+            },
+            {
+              "text": "Il citofono non suona affatto.",
+              "isCorrect": false,
+              "feedback": "No intercoms!"
+            }
+          ]
+        },
+        {
+          "id": "c3_m9",
+          "role": "host",
+          "text": "Ti senti fortunata oggi?",
+          "english": "Do you feel lucky today?",
+          "choices": [
+            {
+              "text": "Sì, mi sento molto fortunata.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'sentirsi'."
+            },
+            {
+              "text": "Cerco un taxi per la stazione.",
+              "isCorrect": false,
+              "feedback": "No taxis!"
+            },
+            {
+              "text": "Il conto per favore, cameriere.",
+              "isCorrect": false,
+              "feedback": "No waiters!"
+            }
+          ]
+        },
+        {
+          "id": "c3_m10",
+          "role": "host",
+          "text": "Bene! Piacere di conoscerti!",
+          "english": "Good! Nice to meet you!",
+          "choices": [
+            {
+              "text": "Piacere mio, a presto allora!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Il volo è stato cancellato.",
+              "isCorrect": false,
+              "feedback": "No flights!"
+            },
+            {
+              "text": "Dov'è il bagno, per favore?",
+              "isCorrect": false,
+              "feedback": "Wrong context."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expressing_feelings",
+      "title": "Expressing Feelings",
+      "description": "Describe how you feel and what you do.",
+      "messages": [
+        {
+          "id": "c4_m1",
+          "role": "host",
+          "text": "Ciao! Come ti senti questa mattina?",
+          "english": "Hi! How do you feel this morning?",
+          "choices": [
+            {
+              "text": "Mi sento molto stanco oggi.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'sentirsi'."
+            },
+            {
+              "text": "Il treno parte dal binario sei.",
+              "isCorrect": false,
+              "feedback": "No trains!"
+            },
+            {
+              "text": "Cerco un volo per Parigi.",
+              "isCorrect": false,
+              "feedback": "No flights!"
+            }
+          ]
+        },
+        {
+          "id": "c4_m2",
+          "role": "host",
+          "text": "Ti svegli troppo presto forse?",
+          "english": "Maybe you wake up too early?",
+          "choices": [
+            {
+              "text": "Sì, mi sveglio alle sei ogni giorno.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'svegliarsi'."
+            },
+            {
+              "text": "Il mio appartamento ha tre stanze.",
+              "isCorrect": false,
+              "feedback": "No apartment talk."
+            },
+            {
+              "text": "Il dottore mi ha dato una ricetta.",
+              "isCorrect": false,
+              "feedback": "No doctors!"
+            }
+          ]
+        },
+        {
+          "id": "c4_m3",
+          "role": "host",
+          "text": "Ti alzi subito o resti a letto?",
+          "english": "Do you get up right away or stay in bed?",
+          "choices": [
+            {
+              "text": "Mi alzo subito per fare colazione.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'alzarsi'."
+            },
+            {
+              "text": "Il biglietto costa dieci euro.",
+              "isCorrect": false,
+              "feedback": "No tickets!"
+            },
+            {
+              "text": "Il binario del treno è lontano.",
+              "isCorrect": false,
+              "feedback": "No trains!"
+            }
+          ]
+        },
+        {
+          "id": "c4_m4",
+          "role": "host",
+          "text": "Ti lavi con acqua fredda per svegliarti?",
+          "english": "Do you wash with cold water to wake up?",
+          "choices": [
+            {
+              "text": "Sì, mi lavo con acqua molto fredda.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'lavarsi'."
+            },
+            {
+              "text": "L'aeroporto è molto grande e moderno.",
+              "isCorrect": false,
+              "feedback": "No airports!"
+            },
+            {
+              "text": "Vorrei prenotare una camera doppia.",
+              "isCorrect": false,
+              "feedback": "No hotels!"
+            }
+          ]
+        },
+        {
+          "id": "c4_m5",
+          "role": "host",
+          "text": "Ti vesti in fretta o con calma?",
+          "english": "Do you dress quickly or calmly?",
+          "choices": [
+            {
+              "text": "Mi vesto sempre molto in fretta.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'vestirsi'."
+            },
+            {
+              "text": "Il ristorante serve solo piatti tipici.",
+              "isCorrect": false,
+              "feedback": "No restaurants!"
+            },
+            {
+              "text": "Il volo è in ritardo di un'ora.",
+              "isCorrect": false,
+              "feedback": "No flights!"
+            }
+          ]
+        },
+        {
+          "id": "c4_m6",
+          "role": "host",
+          "text": "Ti diverti durante la giornata di solito?",
+          "english": "Do you usually have fun during the day?",
+          "choices": [
+            {
+              "text": "Sì, mi diverto molto al lavoro.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'divertirsi'."
+            },
+            {
+              "text": "Il binario cinque è quello per Milano.",
+              "isCorrect": false,
+              "feedback": "No trains!"
+            },
+            {
+              "text": "Ho mal di testa, dove è il medico?",
+              "isCorrect": false,
+              "feedback": "No medical issues."
+            }
+          ]
+        },
+        {
+          "id": "c4_m7",
+          "role": "host",
+          "text": "Ti senti bene con i tuoi colleghi?",
+          "english": "Do you feel well with your colleagues?",
+          "choices": [
+            {
+              "text": "Sì, mi sento molto bene con loro.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'sentirsi'."
+            },
+            {
+              "text": "Il citofono del palazzo è rotto.",
+              "isCorrect": false,
+              "feedback": "No apartment talk."
+            },
+            {
+              "text": "Vorrei ordinare una bottiglia di vino.",
+              "isCorrect": false,
+              "feedback": "No wine!"
+            }
+          ]
+        },
+        {
+          "id": "c4_m8",
+          "role": "host",
+          "text": "Ti riposi quando torni a casa?",
+          "english": "Do you rest when you get home?",
+          "choices": [
+            {
+              "text": "Sì, mi riposo un po' sul divano.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'riposarsi'."
+            },
+            {
+              "text": "Il volo atterra tra dieci minuti.",
+              "isCorrect": false,
+              "feedback": "No flights!"
+            },
+            {
+              "text": "Il biglietto per il museo è valido.",
+              "isCorrect": false,
+              "feedback": "No museums!"
+            }
+          ]
+        },
+        {
+          "id": "c4_m9",
+          "role": "host",
+          "text": "Ti addormenti subito la sera?",
+          "english": "Do you fall asleep right away in the evening?",
+          "choices": [
+            {
+              "text": "Sì, mi addormento molto velocemente.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'addormentarsi'."
+            },
+            {
+              "text": "Il treno regionale è arrivato.",
+              "isCorrect": false,
+              "feedback": "No trains!"
+            },
+            {
+              "text": "Dov'è il portone di casa tua?",
+              "isCorrect": false,
+              "feedback": "No apartment talk."
+            }
+          ]
+        },
+        {
+          "id": "c4_m10",
+          "role": "host",
+          "text": "Bene! Ti senti meglio ora?",
+          "english": "Good! Do you feel better now?",
+          "choices": [
+            {
+              "text": "Sì, mi sento molto meglio ora.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'sentirsi'."
+            },
+            {
+              "text": "Il volo è già partito, scusa.",
+              "isCorrect": false,
+              "feedback": "No flights!"
+            },
+            {
+              "text": "Il ristorante è molto costoso.",
+              "isCorrect": false,
+              "feedback": "No restaurants!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,953 @@
+{
+  "scenarioId": 113,
+  "conversations": [
+    {
+      "id": "leggere_un_libro",
+      "title": "Leggere un libro",
+      "description": "Talking about reading a book in the library.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Cosa leggi di bello oggi in biblioteca?",
+          "english": "Good morning! What are you reading today in the library?",
+          "choices": [
+            {
+              "text": "Buongiorno! Leggo un libro molto interessante.",
+              "isCorrect": true,
+              "feedback": "Great! You answered the question correctly using 'leggo'."
+            },
+            {
+              "text": "Buongiorno! Scrivo una lettera molto lunga.",
+              "isCorrect": false,
+              "feedback": "The host asked what you are reading, not what you are writing."
+            },
+            {
+              "text": "Buongiorno! Prendo un treno molto veloce.",
+              "isCorrect": false,
+              "feedback": "You are in a library, not at the train station."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ah, capisco. È un libro di storia o un romanzo?",
+          "english": "Ah, I see. Is it a history book or a novel?",
+          "choices": [
+            {
+              "text": "Leggo un romanzo, mi piace molto la storia.",
+              "isCorrect": true,
+              "feedback": "Perfect! You specified the type of book."
+            },
+            {
+              "text": "Bevo un caffè, mi piace molto il sapore.",
+              "isCorrect": false,
+              "feedback": "Don't drink coffee in the library! And it's the wrong verb."
+            },
+            {
+              "text": "Corro al parco, mi piace molto lo sport.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the book conversation."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Bene. Leggi spesso qui in questa biblioteca?",
+          "english": "Good. Do you read often here in this library?",
+          "choices": [
+            {
+              "text": "Sì, leggo qui ogni giorno perché è calmo.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'leggo' and contextually appropriate."
+            },
+            {
+              "text": "Sì, metto qui ogni giorno le mie chiavi.",
+              "isCorrect": false,
+              "feedback": "The question was about reading, not placing keys."
+            },
+            {
+              "text": "Sì, vedo qui ogni giorno il mio amico.",
+              "isCorrect": false,
+              "feedback": "While possible, the primary activity discussed is reading."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Anche io leggo molto. Vedi quel libro sul tavolo?",
+          "english": "I read a lot too. Do you see that book on the table?",
+          "choices": [
+            {
+              "text": "Sì, vedo il libro. È un libro di cucina?",
+              "isCorrect": true,
+              "feedback": "Good! You used 'vedo' correctly to confirm."
+            },
+            {
+              "text": "Sì, bevo il libro. È un libro di cucina?",
+              "isCorrect": false,
+              "feedback": "You cannot drink a book!"
+            },
+            {
+              "text": "Sì, corro il libro. È un libro di cucina?",
+              "isCorrect": false,
+              "feedback": "You cannot run a book."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "No, è un libro di arte. Lo vuoi leggere dopo?",
+          "english": "No, it's an art book. Do you want to read it later?",
+          "choices": [
+            {
+              "text": "Sì, lo leggo dopo con molto piacere. Grazie!",
+              "isCorrect": true,
+              "feedback": "Perfect response using 'leggo'."
+            },
+            {
+              "text": "Sì, lo scrivo dopo con molto piacere. Grazie!",
+              "isCorrect": false,
+              "feedback": "You want to read it, not write it."
+            },
+            {
+              "text": "Sì, lo metto dopo con molto piacere. Grazie!",
+              "isCorrect": false,
+              "feedback": "Putting it somewhere doesn't mean you'll read it."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Prego! Ora devo andare. Prendi tu il mio posto?",
+          "english": "You're welcome! Now I have to go. Will you take my place?",
+          "choices": [
+            {
+              "text": "Sì, prendo io il tuo posto a questo tavolo.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'prendo' for taking a place."
+            },
+            {
+              "text": "Sì, vedo io il tuo posto a questo tavolo.",
+              "isCorrect": false,
+              "feedback": "Seeing it isn't the same as taking it."
+            },
+            {
+              "text": "Sì, bevo io il tuo posto a questo tavolo.",
+              "isCorrect": false,
+              "feedback": "That makes no sense!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Metto i miei fogli nella borsa, ecco.",
+          "english": "Perfect. I'll put my papers in my bag, there.",
+          "choices": [
+            {
+              "text": "Bene, io metto il mio libro sul tavolo ora.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'metto'."
+            },
+            {
+              "text": "Bene, io leggo il mio libro sul tavolo ora.",
+              "isCorrect": false,
+              "feedback": "You usually read a book, but 'metto' matches the host's action better here."
+            },
+            {
+              "text": "Bene, io corro il mio libro sul tavolo ora.",
+              "isCorrect": false,
+              "feedback": "Incorrect verb."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Scrivi qualcosa sul libro o leggi soltanto?",
+          "english": "Are you writing something on the book or just reading?",
+          "choices": [
+            {
+              "text": "Non scrivo sul libro, leggo soltanto le pagine.",
+              "isCorrect": true,
+              "feedback": "Great! You used both 'scrivo' and 'leggo'."
+            },
+            {
+              "text": "Non bevo sul libro, vedo soltanto le pagine.",
+              "isCorrect": false,
+              "feedback": "The context was writing/reading."
+            },
+            {
+              "text": "Non corro sul libro, metto soltanto le pagine.",
+              "isCorrect": false,
+              "feedback": "Nonsense response."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Bravo. È importante non rovinare i libri.",
+          "english": "Good. It's important not to ruin books.",
+          "choices": [
+            {
+              "text": "Vedo che sei molto attento, hai ragione.",
+              "isCorrect": true,
+              "feedback": "Good use of 'vedo'."
+            },
+            {
+              "text": "Prendo che sei molto attento, hai ragione.",
+              "isCorrect": false,
+              "feedback": "Incorrect use of 'prendo'."
+            },
+            {
+              "text": "Corro che sei molto attento, hai ragione.",
+              "isCorrect": false,
+              "feedback": "Incorrect verb."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie. Ci vediamo domani in biblioteca?",
+          "english": "Thanks. Shall we see each other tomorrow in the library?",
+          "choices": [
+            {
+              "text": "Sì, ci vediamo domani. Buona lettura!",
+              "isCorrect": true,
+              "feedback": "Perfect closing!"
+            },
+            {
+              "text": "Sì, ci beviamo domani. Buona lettura!",
+              "isCorrect": false,
+              "feedback": "We don't drink each other!"
+            },
+            {
+              "text": "Sì, ci corriamo domani. Buona lettura!",
+              "isCorrect": false,
+              "feedback": "Wrong verb for meeting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scrivere_una_lettera",
+      "title": "Scrivere una lettera",
+      "description": "Writing a letter to a friend.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Cosa scrivi di bello su quel foglio?",
+          "english": "Hi! What are you writing on that paper?",
+          "choices": [
+            {
+              "text": "Scrivo una lettera per un mio caro amico.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'scrivo'."
+            },
+            {
+              "text": "Bevo una lettera per un mio caro amico.",
+              "isCorrect": false,
+              "feedback": "You cannot drink a letter!"
+            },
+            {
+              "text": "Corro una lettera per un mio caro amico.",
+              "isCorrect": false,
+              "feedback": "You cannot run a letter."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Che bello! Scrivi spesso lettere a mano?",
+          "english": "How nice! Do you often write letters by hand?",
+          "choices": [
+            {
+              "text": "Sì, scrivo sempre a mano perché è meglio.",
+              "isCorrect": true,
+              "feedback": "Perfect response."
+            },
+            {
+              "text": "Sì, leggo sempre a mano perché è meglio.",
+              "isCorrect": false,
+              "feedback": "You don't read with your hands (unless it's Braille, but that's not the context)."
+            },
+            {
+              "text": "Sì, prendo sempre a mano perché è meglio.",
+              "isCorrect": false,
+              "feedback": "Doesn't make sense in this context."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco. Cosa metti nella busta insieme alla lettera?",
+          "english": "I understand. What are you putting in the envelope with the letter?",
+          "choices": [
+            {
+              "text": "Metto una piccola foto della mia famiglia.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'metto'."
+            },
+            {
+              "text": "Vedo una piccola foto della mia famiglia.",
+              "isCorrect": false,
+              "feedback": "The question was about what you are putting inside."
+            },
+            {
+              "text": "Bevo una piccola foto della mia famiglia.",
+              "isCorrect": false,
+              "feedback": "Don't eat/drink photos!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Molto gentile. Leggi la lettera prima di spedire?",
+          "english": "Very kind. Do you read the letter before sending it?",
+          "choices": [
+            {
+              "text": "Sì, leggo tutto con attenzione per gli errori.",
+              "isCorrect": true,
+              "feedback": "Good use of 'leggo'."
+            },
+            {
+              "text": "Sì, corro tutto con attenzione per gli errori.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            },
+            {
+              "text": "Sì, bevo tutto con attenzione per gli errori.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Bravo. Vedi quel francobollo sul tavolo?",
+          "english": "Good. Do you see that stamp on the table?",
+          "choices": [
+            {
+              "text": "Sì, vedo il francobollo. Lo prendo subito.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'vedo' and 'prendo'."
+            },
+            {
+              "text": "Sì, bevo il francobollo. Lo prendo subito.",
+              "isCorrect": false,
+              "feedback": "Do not drink stamps!"
+            },
+            {
+              "text": "Sì, corro il francobollo. Lo prendo subito.",
+              "isCorrect": false,
+              "feedback": "Incorrect verb."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Ora prendi la penna e scrivi l'indirizzo.",
+          "english": "Great. Now take the pen and write the address.",
+          "choices": [
+            {
+              "text": "Prendo la penna e scrivo l'indirizzo ora.",
+              "isCorrect": true,
+              "feedback": "Perfect! You used both 'prendo' and 'scrivo'."
+            },
+            {
+              "text": "Vedo la penna e scrivo l'indirizzo ora.",
+              "isCorrect": false,
+              "feedback": "You need to take it to use it!"
+            },
+            {
+              "text": "Metto la penna e scrivo l'indirizzo ora.",
+              "isCorrect": false,
+              "feedback": "Incorrect sequence."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Dove corri dopo aver finito la lettera?",
+          "english": "Where are you running after finishing the letter?",
+          "choices": [
+            {
+              "text": "Dopo corro subito alla posta centrale.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'corro' (meaning rushing)."
+            },
+            {
+              "text": "Dopo bevo subito alla posta centrale.",
+              "isCorrect": false,
+              "feedback": "You don't drink at the post office."
+            },
+            {
+              "text": "Dopo vedo subito alla posta centrale.",
+              "isCorrect": false,
+              "feedback": "Incorrect verb for going somewhere."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Vuoi bere qualcosa prima di andare via?",
+          "english": "Do you want to drink something before leaving?",
+          "choices": [
+            {
+              "text": "Sì, bevo volentieri un bicchiere d'acqua.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'bevo'."
+            },
+            {
+              "text": "Sì, leggo volentieri un bicchiere d'acqua.",
+              "isCorrect": false,
+              "feedback": "You can't read water."
+            },
+            {
+              "text": "Sì, scrivo volentieri un bicchiere d'acqua.",
+              "isCorrect": false,
+              "feedback": "You can't write water."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco l'acqua. Vedi, è molto fresca.",
+          "english": "Here is the water. See, it's very fresh.",
+          "choices": [
+            {
+              "text": "Grazie, la vedo e la bevo con piacere.",
+              "isCorrect": true,
+              "feedback": "Good use of 'vedo' and 'bevo'."
+            },
+            {
+              "text": "Grazie, la corro e la bevo con piacere.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            },
+            {
+              "text": "Grazie, la leggo e la bevo con piacere.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego. Buona fortuna con la tua lettera!",
+          "english": "You're welcome. Good luck with your letter!",
+          "choices": [
+            {
+              "text": "Grazie mille! Vado subito alla posta.",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "Grazie mille! Leggo subito alla posta.",
+              "isCorrect": false,
+              "feedback": "You are going there, not reading there."
+            },
+            {
+              "text": "Grazie mille! Metto subito alla posta.",
+              "isCorrect": false,
+              "feedback": "Incomplete sentence."
+            }
+          ]
+        }
+        ]
+        },
+        {
+        "id": "al_bar",
+        "title": "Al bar",
+        "description": "Drinking something with a friend at the bar.",
+        "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Ti vedo stanco. Cosa bevi di buono?",
+          "english": "Hi! I see you are tired. What are you drinking?",
+          "choices": [
+            {
+              "text": "Ciao! Bevo un caffè molto forte, grazie.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'bevo'."
+            },
+            {
+              "text": "Ciao! Scrivo un caffè molto forte, grazie.",
+              "isCorrect": false,
+              "feedback": "You can't write a coffee."
+            },
+            {
+              "text": "Ciao! Leggo un caffè molto forte, grazie.",
+              "isCorrect": false,
+              "feedback": "You can't read a coffee."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottima idea. Vedi se c'è un tavolo libero?",
+          "english": "Great idea. Do you see if there is a free table?",
+          "choices": [
+            {
+              "text": "Sì, vedo un piccolo tavolo libero in fondo.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'vedo'."
+            },
+            {
+              "text": "Sì, metto un piccolo tavolo libero in fondo.",
+              "isCorrect": false,
+              "feedback": "You aren't placing the table."
+            },
+            {
+              "text": "Sì, corro un piccolo tavolo libero in fondo.",
+              "isCorrect": false,
+              "feedback": "Incorrect verb."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Bene. Prendi tu le sedie o le prendo io?",
+          "english": "Good. Will you take the chairs or shall I?",
+          "choices": [
+            {
+              "text": "Prendo io le sedie per noi. Aspetta qui.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'prendo'."
+            },
+            {
+              "text": "Leggo io le sedie per noi. Aspetta qui.",
+              "isCorrect": false,
+              "feedback": "You don't read chairs."
+            },
+            {
+              "text": "Bevo io le sedie per noi. Aspetta qui.",
+              "isCorrect": false,
+              "feedback": "You don't drink chairs."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie. Metto la mia borsa sulla sedia, ok?",
+          "english": "Thanks. I'll put my bag on the chair, okay?",
+          "choices": [
+            {
+              "text": "Certamente. Io metto il mio libro qui.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'metto'."
+            },
+            {
+              "text": "Certamente. Io vedo il mio libro qui.",
+              "isCorrect": false,
+              "feedback": "Putting it is more appropriate here."
+            },
+            {
+              "text": "Certamente. Io scrivo il mio libro qui.",
+              "isCorrect": false,
+              "feedback": "Writing is not the action here."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Leggi ancora quel libro? È molto lungo.",
+          "english": "Are you still reading that book? It's very long.",
+          "choices": [
+            {
+              "text": "Sì, leggo questo libro da due settimane.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'leggo'."
+            },
+            {
+              "text": "Sì, corro questo libro da due settimane.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            },
+            {
+              "text": "Sì, bevo questo libro da due settimane.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Bevi anche un po' d'acqua con il caffè?",
+          "english": "Are you also drinking some water with the coffee?",
+          "choices": [
+            {
+              "text": "Sì, bevo sempre un po' d'acqua fresca.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'bevo'."
+            },
+            {
+              "text": "Sì, scrivo sempre un po' d'acqua fresca.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            },
+            {
+              "text": "Sì, metto sempre un po' d'acqua fresca.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Bravo. Scrivi qualcosa sul tuo diario ora?",
+          "english": "Good. Are you writing something in your diary now?",
+          "choices": [
+            {
+              "text": "No, non scrivo nulla, mi riposo un po'.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'scrivo'."
+            },
+            {
+              "text": "No, non leggo nulla, mi riposo un po'.",
+              "isCorrect": false,
+              "feedback": "The question was about writing."
+            },
+            {
+              "text": "No, non vedo nulla, mi riposo un po'.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Capisco. Vedi quell'uomo che corre là fuori?",
+          "english": "I understand. Do you see that man running out there?",
+          "choices": [
+            {
+              "text": "Sì, lo vedo. Corre molto velocemente!",
+              "isCorrect": true,
+              "feedback": "Correct use of 'vedo' and 'corre'."
+            },
+            {
+              "text": "Sì, lo bevo. Corre molto velocemente!",
+              "isCorrect": false,
+              "feedback": "You don't drink people!"
+            },
+            {
+              "text": "Sì, lo scrivo. Corre molto velocemente!",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sembra che abbia molta fretta. Dove va?",
+          "english": "It seems he is in a big hurry. Where is he going?",
+          "choices": [
+            {
+              "text": "Forse corre per prendere l'autobus.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'corre' and 'prendere'."
+            },
+            {
+              "text": "Forse legge per prendere l'autobus.",
+              "isCorrect": false,
+              "feedback": "You don't read to catch a bus."
+            },
+            {
+              "text": "Forse scrive per prendere l'autobus.",
+              "isCorrect": false,
+              "feedback": "You don't write to catch a bus."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Possibile. Ora bevo il mio caffè e vado.",
+          "english": "Possible. Now I'll drink my coffee and go.",
+          "choices": [
+            {
+              "text": "Va bene, io resto qui e leggo ancora.",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "Va bene, io resto qui e metto ancora.",
+              "isCorrect": false,
+              "feedback": "Incomplete sentence."
+            },
+            {
+              "text": "Va bene, io resto qui e corro ancora.",
+              "isCorrect": false,
+              "feedback": "You are staying, not running."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in_treno",
+      "title": "In treno",
+      "description": "Taking a train at the station.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Prendi il treno per andare a Roma?",
+          "english": "Good morning! Are you taking the train to go to Rome?",
+          "choices": [
+            {
+              "text": "Buongiorno! Sì, prendo il treno delle dieci.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'prendo'."
+            },
+            {
+              "text": "Buongiorno! Sì, bevo il treno delle dieci.",
+              "isCorrect": false,
+              "feedback": "You cannot drink a train."
+            },
+            {
+              "text": "Buongiorno! Sì, corro il treno delle dieci.",
+              "isCorrect": false,
+              "feedback": "You don't run a train."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottimo. Hai già comprato il biglietto?",
+          "english": "Great. Have you already bought the ticket?",
+          "choices": [
+            {
+              "text": "Sì, lo prendo adesso alla macchinetta.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'prendo' for getting something."
+            },
+            {
+              "text": "Sì, lo vedo adesso alla macchinetta.",
+              "isCorrect": false,
+              "feedback": "Seeing it isn't buying/taking it."
+            },
+            {
+              "text": "Sì, lo scrivo adesso alla macchinetta.",
+              "isCorrect": false,
+              "feedback": "You don't write tickets at the machine."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Vedi il numero del binario sul monitor?",
+          "english": "Do you see the platform number on the monitor?",
+          "choices": [
+            {
+              "text": "Sì, vedo che il treno parte dal binario due.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'vedo'."
+            },
+            {
+              "text": "Sì, bevo che il treno parte dal binario due.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            },
+            {
+              "text": "Sì, metto che il treno parte dal binario due.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Dove metti la tua valigia grande?",
+          "english": "Perfect. Where are you putting your large suitcase?",
+          "choices": [
+            {
+              "text": "La metto sopra il sedile, c'è molto spazio.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'metto'."
+            },
+            {
+              "text": "La leggo sopra il sedile, c'è molto spazio.",
+              "isCorrect": false,
+              "feedback": "You don't read suitcases."
+            },
+            {
+              "text": "La scrivo sopra il sedile, c'è molto spazio.",
+              "isCorrect": false,
+              "feedback": "You don't write suitcases."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Cosa fai durante il viaggio? Leggi qualcosa?",
+          "english": "What do you do during the trip? Are you reading something?",
+          "choices": [
+            {
+              "text": "Sì, leggo un libro sulla storia di Roma.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'leggo'."
+            },
+            {
+              "text": "Sì, corro un libro sulla storia di Roma.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            },
+            {
+              "text": "Sì, bevo un libro sulla storia di Roma.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Interessante. Scrivi anche delle note sul libro?",
+          "english": "Interesting. Do you also write notes on the book?",
+          "choices": [
+            {
+              "text": "Sì, scrivo sempre le cose più importanti.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'scrivo'."
+            },
+            {
+              "text": "Sì, prendo sempre le cose più importanti.",
+              "isCorrect": false,
+              "feedback": "You could say 'prendo appunti', but 'scrivo' is more direct here."
+            },
+            {
+              "text": "Sì, vedo sempre le cose più importanti.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Guarda, il treno arriva. Corri o hai tempo?",
+          "english": "Look, the train is arriving. Are you running or do you have time?",
+          "choices": [
+            {
+              "text": "Non corro, ho ancora cinque minuti di tempo.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'corro'."
+            },
+            {
+              "text": "Non bevo, ho ancora cinque minuti di tempo.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            },
+            {
+              "text": "Non leggo, ho ancora cinque minuti di tempo.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Prendi qualcosa da bere prima di salire?",
+          "english": "Are you getting something to drink before boarding?",
+          "choices": [
+            {
+              "text": "Sì, prendo una bottiglia d'acqua fresca.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'prendo'."
+            },
+            {
+              "text": "Sì, vedo una bottiglia d'acqua fresca.",
+              "isCorrect": false,
+              "feedback": "Seeing it isn't getting it."
+            },
+            {
+              "text": "Sì, scrivo una bottiglia d'acqua fresca.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Bevi molta acqua, fa molto caldo oggi.",
+          "english": "Drink plenty of water, it's very hot today.",
+          "choices": [
+            {
+              "text": "Hai ragione, la bevo subito. Grazie mille!",
+              "isCorrect": true,
+              "feedback": "Correct use of 'bevo'."
+            },
+            {
+              "text": "Hai ragione, la leggo subito. Grazie mille!",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            },
+            {
+              "text": "Hai ragione, la metto subito. Grazie mille!",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego. Buon viaggio e ci vediamo a Roma!",
+          "english": "You're welcome. Have a good trip and see you in Rome!",
+          "choices": [
+            {
+              "text": "Grazie, ci vediamo presto! Buon lavoro.",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "Grazie, ci beviamo presto! Buon lavoro.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            },
+            {
+              "text": "Grazie, ci corriamo presto! Buon lavoro.",
+              "isCorrect": false,
+              "feedback": "Wrong verb."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

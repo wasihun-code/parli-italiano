@@ -117,6 +117,7 @@ This architecture is mandatory.
 11. Explaining a Mistake (miscellaneous/explaining_a_mistake)
 12. Shoe Store (shopping/shoe_store)
 13. Outdoor Market (shopping/outdoor_market)
+14. Verbs: -ire (verbs/ire_verbi_in_ire)
 
 Status:
 
@@ -126,7 +127,7 @@ Gold Standard V1 & Certified
 
 ## Remaining Scenarios
 
-103
+102
 
 Status:
 
