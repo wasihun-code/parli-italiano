@@ -33,20 +33,29 @@ def main(scenario_slug):
 
     for conv in conversations:
         for msg in conv.get("messages", []):
-            it_text = msg["text"].strip()
-            all_sentences.add(it_text)
-            if msg.get("english"):
-                translations[it_text] = msg["english"]
+            # Safe access for fields
+            role = msg.get("role") or msg.get("speaker")
+            text = msg.get("text")
+            eng = msg.get("english") or msg.get("translation")
             
-            all_words.update(tokenize(it_text))
+            if text and role == "host":
+                it_text = text.strip()
+                all_sentences.add(it_text)
+                if eng:
+                    translations[it_text] = eng
+                all_words.update(tokenize(it_text))
             
             for choice in msg.get("choices", []):
-                if choice.get("isCorrect"):
+                is_correct = choice.get("isCorrect")
+                # Handle cases where isCorrect might be missing but it's the first choice
+                # (some older agents do this)
+                if is_correct or (is_correct is None and choice == msg["choices"][0]):
                     it_choice = choice["text"].strip()
+                    c_eng = choice.get("english") or choice.get("translation")
                     all_phrases.add(it_choice)
                     all_words.update(tokenize(it_choice))
-                    if choice.get("english"):
-                        translations[it_choice] = choice["english"]
+                    if c_eng:
+                        translations[it_choice] = c_eng
 
     # Load existing translations if file exists to avoid data loss
     existing_translations = {}

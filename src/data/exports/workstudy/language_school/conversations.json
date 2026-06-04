@@ -1,0 +1,953 @@
+{
+  "scenarioId": 66,
+  "conversations": [
+    {
+      "id": "inquiring_courses",
+      "title": "Inquiring about Courses",
+      "description": "A student asks the school receptionist about available Italian courses for beginners.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come posso aiutare oggi?",
+          "english": "Good morning! How can I help today?",
+          "choices": [
+            {
+              "text": "Buongiorno. Cerco un corso di italiano.",
+              "isCorrect": true,
+              "feedback": "Perfect! You stated your goal clearly."
+            },
+            {
+              "text": "Buonasera. Prendo un pezzo di formaggio.",
+              "isCorrect": false,
+              "feedback": "You are at a language school, not a cheese shop."
+            },
+            {
+              "text": "Arrivederci. Vendo un libro di spagnolo.",
+              "isCorrect": false,
+              "feedback": "You are trying to enroll, not sell a book."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Bene. Abbiamo molti corsi. Qual è il suo livello?",
+          "english": "Good. We have many courses. What is your level?",
+          "choices": [
+            {
+              "text": "Sono un principiante. Non parlo molto.",
+              "isCorrect": true,
+              "feedback": "Excellent. Stating your level helps them choose the right class."
+            },
+            {
+              "text": "Sono un veterinario. Non dormo tanto.",
+              "isCorrect": false,
+              "feedback": "They are asking for your language level, not your profession."
+            },
+            {
+              "text": "Vedo un termosifone. Non mangio quasi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant response."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco. Il corso per principianti inizia domani.",
+          "english": "I understand. The course for beginners starts tomorrow.",
+          "choices": [
+            {
+              "text": "Ottimo. Quante ore di lezione fate?",
+              "isCorrect": true,
+              "feedback": "Great question to know the schedule."
+            },
+            {
+              "text": "Niente. Quante api di sapore vuoi?",
+              "isCorrect": false,
+              "feedback": "Nonsense sentence."
+            },
+            {
+              "text": "Subito. Quante zie di collane dai?",
+              "isCorrect": false,
+              "feedback": "This means nothing in this context."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Facciamo due ore di lezione al giorno.",
+          "english": "We do two hours of lessons a day.",
+          "choices": [
+            {
+              "text": "Va bene. A che ora è la lezione?",
+              "isCorrect": true,
+              "feedback": "Perfect! Asking for the exact time."
+            },
+            {
+              "text": "Ho fame. A che lui è un balcone?",
+              "isCorrect": false,
+              "feedback": "This makes no sense."
+            },
+            {
+              "text": "Di sera. A che lei è un mattone?",
+              "isCorrect": false,
+              "feedback": "Incorrect grammar and context."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "La lezione è la mattina, alle dieci.",
+          "english": "The lesson is in the morning, at ten.",
+          "choices": [
+            {
+              "text": "Perfetto. Come faccio l'iscrizione adesso?",
+              "isCorrect": true,
+              "feedback": "Good! Moving to the next step, enrollment."
+            },
+            {
+              "text": "Sospetto. Come cerco la redazione ancora?",
+              "isCorrect": false,
+              "feedback": "This does not fit the context."
+            },
+            {
+              "text": "Corretto. Come perdo l'estensione sempre?",
+              "isCorrect": false,
+              "feedback": "Wrong vocabulary."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Deve compilare questo modulo qui con i suoi dati.",
+          "english": "You must fill out this form here with your details.",
+          "choices": [
+            {
+              "text": "Va bene. Devo scrivere anche l'indirizzo?",
+              "isCorrect": true,
+              "feedback": "Good question about the form details."
+            },
+            {
+              "text": "Mi piace. Devo correre anche il soffitto?",
+              "isCorrect": false,
+              "feedback": "Running the ceiling makes no sense."
+            },
+            {
+              "text": "Troppo. Devo saltare anche il sapone?",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, per favore. E anche un numero di telefono.",
+          "english": "Yes, please. And also a telephone number.",
+          "choices": [
+            {
+              "text": "Ecco fatto. Ho finito di scrivere.",
+              "isCorrect": true,
+              "feedback": "Great. You finished the form."
+            },
+            {
+              "text": "Ecco rotto. Ho perso di dormire.",
+              "isCorrect": false,
+              "feedback": "Incorrect."
+            },
+            {
+              "text": "Ecco cotto. Ho vinto di bollire.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Grazie. Vuole vedere la sua aula adesso?",
+          "english": "Thank you. Do you want to see your classroom now?",
+          "choices": [
+            {
+              "text": "Sì, volentieri. È al primo piano?",
+              "isCorrect": true,
+              "feedback": "Good question about the location."
+            },
+            {
+              "text": "No, difficilmente. È al primo gatto?",
+              "isCorrect": false,
+              "feedback": "A classroom on a cat?"
+            },
+            {
+              "text": "Sì, malvolentieri. È al primo prato?",
+              "isCorrect": false,
+              "feedback": "A classroom on a meadow?"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "No, è in fondo al corridoio a destra.",
+          "english": "No, it's at the end of the hallway on the right.",
+          "choices": [
+            {
+              "text": "Ottimo. Mi piace molto questa scuola.",
+              "isCorrect": true,
+              "feedback": "Nice expression of satisfaction."
+            },
+            {
+              "text": "Pessimo. Mi cade molto questa sedia.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Storto. Mi rompe molto questa storia.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Siamo felici. Ci vediamo domani per la lezione.",
+          "english": "We are happy. See you tomorrow for the lesson.",
+          "choices": [
+            {
+              "text": "Grazie. Buona giornata e a domani.",
+              "isCorrect": true,
+              "feedback": "Perfect polite closing."
+            },
+            {
+              "text": "Prego. Buona scarpa e a dopodomani.",
+              "isCorrect": false,
+              "feedback": "Good shoe?"
+            },
+            {
+              "text": "Niente. Buona bocca e a fra poco.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "placement_test",
+      "title": "Taking a Placement Test",
+      "description": "A student asks about the placement test to determine their language level.",
+      "messages": [
+        {
+          "id": "m11",
+          "role": "host",
+          "text": "Buongiorno. Vuole fare il test di livello?",
+          "english": "Good morning. Do you want to take the level test?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Come funziona il test?",
+              "isCorrect": true,
+              "feedback": "Great question to understand the process."
+            },
+            {
+              "text": "No, prego. Dove scompare il treno?",
+              "isCorrect": false,
+              "feedback": "You are asking about the test, not a train."
+            },
+            {
+              "text": "Ma, chiaro. Come peggiora un letto?",
+              "isCorrect": false,
+              "feedback": "Irrelevant sentence."
+            }
+          ]
+        },
+        {
+          "id": "m12",
+          "role": "host",
+          "text": "Ci sono domande di grammatica e conversazione.",
+          "english": "There are questions on grammar and conversation.",
+          "choices": [
+            {
+              "text": "Quanto tempo ho per fare il test?",
+              "isCorrect": true,
+              "feedback": "Excellent. Asking about the time limit."
+            },
+            {
+              "text": "Quando canto tu per bere un vino?",
+              "isCorrect": false,
+              "feedback": "Nonsense question."
+            },
+            {
+              "text": "Quante scarpe ha per dare il sole?",
+              "isCorrect": false,
+              "feedback": "You are talking about shoes and sun, not the test."
+            }
+          ]
+        },
+        {
+          "id": "m13",
+          "role": "host",
+          "text": "Ha un'ora di tempo. Può iniziare subito.",
+          "english": "You have an hour of time. You can start right away.",
+          "choices": [
+            {
+              "text": "Va bene. Posso usare il mio telefono?",
+              "isCorrect": true,
+              "feedback": "Good to ask about the rules of the test."
+            },
+            {
+              "text": "Ho fame. Vendo avere un tuo specchio?",
+              "isCorrect": false,
+              "feedback": "You are talking about a mirror."
+            },
+            {
+              "text": "Di sera. Cerco amare un suo semaforo?",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m14",
+          "role": "host",
+          "text": "No, mi dispiace. Non può usare il telefono.",
+          "english": "No, I'm sorry. You can't use the phone.",
+          "choices": [
+            {
+              "text": "Capisco. Dove devo sedermi per iniziare?",
+              "isCorrect": true,
+              "feedback": "Perfect. Asking for directions to sit."
+            },
+            {
+              "text": "Conosco. Quando vado lavarmi per abitare?",
+              "isCorrect": false,
+              "feedback": "This is completely wrong."
+            },
+            {
+              "text": "Pulisco. Come sono tuffarmi per nuotare?",
+              "isCorrect": false,
+              "feedback": "This means cleaning and swimming."
+            }
+          ]
+        },
+        {
+          "id": "m15",
+          "role": "host",
+          "text": "Può sedersi a quel tavolo, in fondo.",
+          "english": "You can sit at that table, in the back.",
+          "choices": [
+            {
+              "text": "Grazie. Quando posso sapere il risultato?",
+              "isCorrect": true,
+              "feedback": "Good! Asking about the outcome."
+            },
+            {
+              "text": "Niente. Quanto corro volere un cucchiaio?",
+              "isCorrect": false,
+              "feedback": "You are asking for a spoon while running."
+            },
+            {
+              "text": "Presto. Perché voglio cadere il panettiere?",
+              "isCorrect": false,
+              "feedback": "Nonsense question."
+            }
+          ]
+        },
+        {
+          "id": "m16",
+          "role": "host",
+          "text": "Il test è pronto. Non abbia paura.",
+          "english": "The test is ready. Don't be afraid.",
+          "choices": [
+            {
+              "text": "Grazie. Posso avere un po' d'acqua?",
+              "isCorrect": true,
+              "feedback": "Polite request before starting."
+            },
+            {
+              "text": "Prego. Posso dare un po' di fango?",
+              "isCorrect": false,
+              "feedback": "Giving mud?"
+            },
+            {
+              "text": "Niente. Posso fare un po' di rumore?",
+              "isCorrect": false,
+              "feedback": "Making noise is not good for a test."
+            }
+          ]
+        },
+        {
+          "id": "m17",
+          "role": "host",
+          "text": "Certamente. C'è una fontanella in corridoio.",
+          "english": "Certainly. There is a small fountain in the hallway.",
+          "choices": [
+            {
+              "text": "Bene. Inizio il test adesso.",
+              "isCorrect": true,
+              "feedback": "Perfect. Ready to start."
+            },
+            {
+              "text": "Male. Perdo il test adesso.",
+              "isCorrect": false,
+              "feedback": "Losing the test?"
+            },
+            {
+              "text": "Storto. Rompo il test adesso.",
+              "isCorrect": false,
+              "feedback": "Breaking the test?"
+            }
+          ]
+        },
+        {
+          "id": "m18",
+          "role": "host",
+          "text": "In bocca al lupo! Mi chiami se ha dubbi.",
+          "english": "Good luck! Call me if you have doubts.",
+          "choices": [
+            {
+              "text": "Ho una domanda. Posso usare il dizionario?",
+              "isCorrect": true,
+              "feedback": "Good question about allowed tools."
+            },
+            {
+              "text": "Ho una mela. Posso usare il frigorifero?",
+              "isCorrect": false,
+              "feedback": "Using the fridge?"
+            },
+            {
+              "text": "Ho una sedia. Posso usare il martello?",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m19",
+          "role": "host",
+          "text": "No, mi dispiace. Solo la penna e il foglio.",
+          "english": "No, I'm sorry. Only the pen and the paper.",
+          "choices": [
+            {
+              "text": "Va bene. Ho quasi finito la prima parte.",
+              "isCorrect": true,
+              "feedback": "Good progress update."
+            },
+            {
+              "text": "Va male. Ho rotto la prima notte.",
+              "isCorrect": false,
+              "feedback": "Incorrect."
+            },
+            {
+              "text": "Va storto. Ho perso la prima pelle.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m20",
+          "role": "host",
+          "text": "Ottimo lavoro. Mi consegni pure il foglio.",
+          "english": "Great job. Hand me the paper.",
+          "choices": [
+            {
+              "text": "Ecco a lei. Spero di aver fatto bene.",
+              "isCorrect": true,
+              "feedback": "Polite closing of the test phase."
+            },
+            {
+              "text": "Ecco a lui. Spero di aver rotto bene.",
+              "isCorrect": false,
+              "feedback": "Hoping to have broken well?"
+            },
+            {
+              "text": "Ecco a loro. Spero di aver perso bene.",
+              "isCorrect": false,
+              "feedback": "Hoping to have lost well?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "class_times",
+      "title": "Asking about Class Times",
+      "description": "A student asks about the class schedule and times.",
+      "messages": [
+        {
+          "id": "m21",
+          "role": "host",
+          "text": "Salve! Ha domande sull'orario delle lezioni?",
+          "english": "Hello! Do you have questions about the lesson schedule?",
+          "choices": [
+            {
+              "text": "Sì. Voglio sapere l'orario del corso serale.",
+              "isCorrect": true,
+              "feedback": "Excellent response confirming what you want to know."
+            },
+            {
+              "text": "No. Prendo vedere un'attrice del posto locale.",
+              "isCorrect": false,
+              "feedback": "This is entirely unrelated."
+            },
+            {
+              "text": "Ma. Pulisco lavare il gatto di zia geniale.",
+              "isCorrect": false,
+              "feedback": "Cleaning the cat is not about class times."
+            }
+          ]
+        },
+        {
+          "id": "m22",
+          "role": "host",
+          "text": "Il corso serale è dalle diciotto alle venti.",
+          "english": "The evening course is from eighteen to twenty.",
+          "choices": [
+            {
+              "text": "Quali giorni della settimana fate lezione?",
+              "isCorrect": true,
+              "feedback": "Good follow-up question."
+            },
+            {
+              "text": "Quanti nonni sulla bicicletta date melone?",
+              "isCorrect": false,
+              "feedback": "This mentions grandpas and melons."
+            },
+            {
+              "text": "Nuovi forni nella caramella male pensione?",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m23",
+          "role": "host",
+          "text": "Le lezioni sono il lunedì e il mercoledì.",
+          "english": "The lessons are on Monday and Wednesday.",
+          "choices": [
+            {
+              "text": "È possibile cambiare classe la prossima settimana?",
+              "isCorrect": true,
+              "feedback": "Great question regarding flexibility."
+            },
+            {
+              "text": "O adorabile scambiare penne una brutta passeggiata?",
+              "isCorrect": false,
+              "feedback": "This means swapping pens on a bad walk."
+            },
+            {
+              "text": "I probabile comprare pesce una bianca camminata?",
+              "isCorrect": false,
+              "feedback": "Buying fish on a walk."
+            }
+          ]
+        },
+        {
+          "id": "m24",
+          "role": "host",
+          "text": "Sì, ma deve chiedere prima all'insegnante.",
+          "english": "Yes, but you must ask the teacher first.",
+          "choices": [
+            {
+              "text": "Capisco. Quanti studenti ci sono in classe?",
+              "isCorrect": true,
+              "feedback": "Perfect! Getting details about the class size."
+            },
+            {
+              "text": "Conosco. Quanto profumo ha peso un vassoio?",
+              "isCorrect": false,
+              "feedback": "Perfume on a tray is not relevant."
+            },
+            {
+              "text": "Pulisco. Questo castello no male un divano?",
+              "isCorrect": false,
+              "feedback": "This sentence is nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m25",
+          "role": "host",
+          "text": "Ci sono massimo dieci studenti per classe.",
+          "english": "There are maximum ten students per class.",
+          "choices": [
+            {
+              "text": "Molto bene. C'è anche una lezione il venerdì?",
+              "isCorrect": true,
+              "feedback": "Good! Clarifying the end of the week."
+            },
+            {
+              "text": "Poco malue. C'è oltre una canzone un giovedì?",
+              "isCorrect": false,
+              "feedback": "This talks about a song on a Thursday."
+            },
+            {
+              "text": "Tanto nero. C'è quasi una pozione un martedì?",
+              "isCorrect": false,
+              "feedback": "A potion on a Tuesday."
+            }
+          ]
+        },
+        {
+          "id": "m26",
+          "role": "host",
+          "text": "Sì, ma solo per il ripasso finale.",
+          "english": "Yes, but only for the final review.",
+          "choices": [
+            {
+              "text": "Capisco. C'è anche una pausa durante la lezione?",
+              "isCorrect": true,
+              "feedback": "Asking about breaks is important for long lessons."
+            },
+            {
+              "text": "Conosco. C'è anche una sedia durante la cena?",
+              "isCorrect": false,
+              "feedback": "Dinner chair?"
+            },
+            {
+              "text": "Pulisco. C'è anche una porta durante la festa?",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m27",
+          "role": "host",
+          "text": "Sì, facciamo quindici minuti di pausa alle undici.",
+          "english": "Yes, we take a fifteen-minute break at eleven.",
+          "choices": [
+            {
+              "text": "Perfetto. Posso uscire a prendere un caffè?",
+              "isCorrect": true,
+              "feedback": "Good question about what to do during the break."
+            },
+            {
+              "text": "Corretto. Posso cadere a prendere un lupo?",
+              "isCorrect": false,
+              "feedback": "Catching a wolf?"
+            },
+            {
+              "text": "Diretto. Posso volare a prendere un buco?",
+              "isCorrect": false,
+              "feedback": "Flying to catch a hole?"
+            }
+          ]
+        },
+        {
+          "id": "m28",
+          "role": "host",
+          "text": "Certo, c'è un bar proprio qui vicino.",
+          "english": "Sure, there is a bar right nearby.",
+          "choices": [
+            {
+              "text": "Ottimo. E se arrivo in ritardo una volta?",
+              "isCorrect": true,
+              "feedback": "Good to know the policy on lateness."
+            },
+            {
+              "text": "Pessimo. E se arrivo in barca una volta?",
+              "isCorrect": false,
+              "feedback": "Arriving by boat?"
+            },
+            {
+              "text": "Storto. E se arrivo in treno una volta?",
+              "isCorrect": false,
+              "feedback": "Arriving by train?"
+            }
+          ]
+        },
+        {
+          "id": "m29",
+          "role": "host",
+          "text": "Non si preoccupi, ma cerchi di essere puntuale.",
+          "english": "Don't worry, but try to be punctual.",
+          "choices": [
+            {
+              "text": "Va bene. Grazie per tutte le informazioni.",
+              "isCorrect": true,
+              "feedback": "Polite conclusion to the inquiry."
+            },
+            {
+              "text": "Va male. Grazie per tutte le invenzioni.",
+              "isCorrect": false,
+              "feedback": "Inventions?"
+            },
+            {
+              "text": "Va storto. Grazie per tutte le direzioni.",
+              "isCorrect": false,
+              "feedback": "Directions?"
+            }
+          ]
+        },
+        {
+          "id": "m30",
+          "role": "host",
+          "text": "Di nulla. Ci vediamo lunedì in classe.",
+          "english": "You're welcome. See you Monday in class.",
+          "choices": [
+            {
+              "text": "A lunedì. Buona serata!",
+              "isCorrect": true,
+              "feedback": "Friendly closing."
+            },
+            {
+              "text": "A martedì. Buona mela!",
+              "isCorrect": false,
+              "feedback": "Good apple?"
+            },
+            {
+              "text": "A mercoledì. Buona sedia!",
+              "isCorrect": false,
+              "feedback": "Good chair?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paying_course",
+      "title": "Paying for the Course",
+      "description": "A student pays for the course and asks about textbook costs.",
+      "messages": [
+        {
+          "id": "m31",
+          "role": "host",
+          "text": "Buongiorno. Vuole fare il pagamento per il corso?",
+          "english": "Good morning. Do you want to make the payment for the course?",
+          "choices": [
+            {
+              "text": "Sì, voglio pagare il corso di italiano.",
+              "isCorrect": true,
+              "feedback": "Perfect. You confirmed you want to pay."
+            },
+            {
+              "text": "No, perdo nuotare in parco di spagnolo.",
+              "isCorrect": false,
+              "feedback": "Swimming in a Spanish park."
+            },
+            {
+              "text": "Ma, porto suonare un corno di olandese.",
+              "isCorrect": false,
+              "feedback": "Playing a Dutch horn."
+            }
+          ]
+        },
+        {
+          "id": "m32",
+          "role": "host",
+          "text": "Il costo del corso è di duecento euro.",
+          "english": "The cost of the course is two hundred euros.",
+          "choices": [
+            {
+              "text": "Il libro di testo è incluso nel prezzo?",
+              "isCorrect": true,
+              "feedback": "Great question to avoid hidden costs."
+            },
+            {
+              "text": "Un litro di latte è confuso nel freddo?",
+              "isCorrect": false,
+              "feedback": "Milk in the cold."
+            },
+            {
+              "text": "La tigre di ferro è delusa sul tetto?",
+              "isCorrect": false,
+              "feedback": "An iron tiger on the roof."
+            }
+          ]
+        },
+        {
+          "id": "m33",
+          "role": "host",
+          "text": "No, il libro costa venti euro in più.",
+          "english": "No, the book costs twenty euros more.",
+          "choices": [
+            {
+              "text": "Va bene. Pago il corso e il libro.",
+              "isCorrect": true,
+              "feedback": "Perfect! Resolving the payment."
+            },
+            {
+              "text": "Di sera. Bacio un cane e un vetro.",
+              "isCorrect": false,
+              "feedback": "Kissing a dog and a glass."
+            },
+            {
+              "text": "Ho fame. Lavo un treno e un parco.",
+              "isCorrect": false,
+              "feedback": "Washing a train and a park."
+            }
+          ]
+        },
+        {
+          "id": "m34",
+          "role": "host",
+          "text": "Come vuole pagare? In contanti o con carta?",
+          "english": "How do you want to pay? In cash or with card?",
+          "choices": [
+            {
+              "text": "Voglio pagare con la carta, per favore.",
+              "isCorrect": true,
+              "feedback": "Clear answer about the payment method."
+            },
+            {
+              "text": "Soffro volare con il pollo, dal dottore.",
+              "isCorrect": false,
+              "feedback": "Flying with chicken to the doctor."
+            },
+            {
+              "text": "Prendo andare con una barca, per rumore.",
+              "isCorrect": false,
+              "feedback": "Going with a boat for noise."
+            }
+          ]
+        },
+        {
+          "id": "m35",
+          "role": "host",
+          "text": "Certamente. Può inserire la carta qui.",
+          "english": "Certainly. You can insert the card here.",
+          "choices": [
+            {
+              "text": "Fatto. Devo inserire anche il mio codice?",
+              "isCorrect": true,
+              "feedback": "Good question about the PIN code."
+            },
+            {
+              "text": "Cotto. Bevo superare oltre un tuo medico?",
+              "isCorrect": false,
+              "feedback": "Nonsense question."
+            },
+            {
+              "text": "Rotto. Cado imparare forse un suo vigile?",
+              "isCorrect": false,
+              "feedback": "This has no meaning."
+            }
+          ]
+        },
+        {
+          "id": "m36",
+          "role": "host",
+          "text": "Sì, il codice segreto della sua carta.",
+          "english": "Yes, the secret code of your card.",
+          "choices": [
+            {
+              "text": "Ecco fatto. Il pagamento è confermato?",
+              "isCorrect": true,
+              "feedback": "Good follow-up on the transaction."
+            },
+            {
+              "text": "Ecco rotto. Il pagamento è deformato?",
+              "isCorrect": false,
+              "feedback": "Deformed payment?"
+            },
+            {
+              "text": "Ecco cotto. Il pagamento è profumato?",
+              "isCorrect": false,
+              "feedback": "Scented payment?"
+            }
+          ]
+        },
+        {
+          "id": "m37",
+          "role": "host",
+          "text": "Sì, ecco la sua ricevuta. La conservi bene.",
+          "english": "Yes, here is your receipt. Keep it well.",
+          "choices": [
+            {
+              "text": "Grazie. Mi serve anche una tessera dello studente?",
+              "isCorrect": true,
+              "feedback": "Good question about school identification."
+            },
+            {
+              "text": "Prego. Mi serve anche una tessera dello spaventapasseri?",
+              "isCorrect": false,
+              "feedback": "Scarecrow card?"
+            },
+            {
+              "text": "Niente. Mi serve anche una tessera dello spazzolino?",
+              "isCorrect": false,
+              "feedback": "Toothbrush card?"
+            }
+          ]
+        },
+        {
+          "id": "m38",
+          "role": "host",
+          "text": "Sì, gliela preparo subito. Mi serve una foto.",
+          "english": "Yes, I'll prepare it right away. I need a photo.",
+          "choices": [
+            {
+              "text": "Ho una foto qui nel mio portafoglio.",
+              "isCorrect": true,
+              "feedback": "Great. You have what is needed."
+            },
+            {
+              "text": "Ho una mela qui nel mio portafoglio.",
+              "isCorrect": false,
+              "feedback": "Apple in a wallet?"
+            },
+            {
+              "text": "Ho una sedia qui nel mio portafoglio.",
+              "isCorrect": false,
+              "feedback": "Chair in a wallet?"
+            }
+          ]
+        },
+        {
+          "id": "m39",
+          "role": "host",
+          "text": "Perfetto. Ecco la sua tessera per la scuola.",
+          "english": "Perfect. Here is your card for the school.",
+          "choices": [
+            {
+              "text": "Grazie. Posso usarla anche in biblioteca?",
+              "isCorrect": true,
+              "feedback": "Good question about school facilities."
+            },
+            {
+              "text": "Prego. Posso usarla anche in discoteca?",
+              "isCorrect": false,
+              "feedback": "Nightclub?"
+            },
+            {
+              "text": "Niente. Posso usarla anche in panfoteca?",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m40",
+          "role": "host",
+          "text": "Certamente, ha accesso a tutti i servizi.",
+          "english": "Certainly, you have access to all services.",
+          "choices": [
+            {
+              "text": "Fantastico. Grazie ancora per l'aiuto.",
+              "isCorrect": true,
+              "feedback": "Polite and happy conclusion."
+            },
+            {
+              "text": "Drammatico. Grazie ancora per l'odio.",
+              "isCorrect": false,
+              "feedback": "Dramatic? Hate?"
+            },
+            {
+              "text": "Sinfonico. Grazie ancora per l'aglio.",
+              "isCorrect": false,
+              "feedback": "Symphonic? Garlic?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

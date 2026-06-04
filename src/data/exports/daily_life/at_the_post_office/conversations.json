@@ -1,0 +1,1199 @@
+{
+  "scenarioId": 52,
+  "conversations": [
+    {
+      "id": "mailing_a_letter",
+      "title": "Mailing a Letter",
+      "messages": [
+        {
+          "id": "m1",
+          "text": "Buongiorno, come posso aiutarla?",
+          "nextMessageId": "u1",
+          "role": "host",
+          "english": "Good morning, how can I help you?"
+        },
+        {
+          "id": "u1",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "Buongiorno, vorrei spedire questa lettera.",
+              "nextMessageId": "m2",
+              "english": "Good morning, I would like to mail this letter.",
+              "isCorrect": true
+            },
+            {
+              "id": "c2",
+              "text": "Buongiorno, vorrei spedire questo pacco.",
+              "nextMessageId": "m2",
+              "english": "Good morning, I would like to mail this package.",
+              "isCorrect": false
+            },
+            {
+              "id": "c3",
+              "text": "Buongiorno, vorrei ritirare una lettera.",
+              "nextMessageId": "m2",
+              "english": "Good morning, I would like to pick up a letter.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m2",
+          "text": "Certamente. È una lettera per l'Italia o per l'estero?",
+          "nextMessageId": "u2",
+          "role": "host",
+          "english": "Certainly. Is it a letter for Italy or for abroad?"
+        },
+        {
+          "id": "u2",
+          "choices": [
+            {
+              "id": "c4",
+              "text": "È per l'Italia, a Roma.",
+              "nextMessageId": "m3",
+              "english": "It is for Italy, to Rome.",
+              "isCorrect": true
+            },
+            {
+              "id": "c5",
+              "text": "È per l'estero, a Parigi.",
+              "nextMessageId": "m3",
+              "english": "It is for abroad, to Paris.",
+              "isCorrect": false
+            },
+            {
+              "id": "c6",
+              "text": "È per l'Italia, a Milano.",
+              "nextMessageId": "m3",
+              "english": "It is for Italy, to Milan.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m3",
+          "text": "Va bene. Desidera una spedizione ordinaria o raccomandata?",
+          "nextMessageId": "u3",
+          "role": "host",
+          "english": "All right. Would you like ordinary or registered mail?"
+        },
+        {
+          "id": "u3",
+          "choices": [
+            {
+              "id": "c7",
+              "text": "Vorrei una raccomandata, per favore.",
+              "nextMessageId": "m4",
+              "english": "I would like registered mail, please.",
+              "isCorrect": true
+            },
+            {
+              "id": "c8",
+              "text": "Vorrei una spedizione ordinaria.",
+              "nextMessageId": "m4",
+              "english": "I would like ordinary mail.",
+              "isCorrect": false
+            },
+            {
+              "id": "c9",
+              "text": "Vorrei spedire un pacco celere.",
+              "nextMessageId": "m4",
+              "english": "I would like to send an express package.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m4",
+          "text": "Molto bene. Deve compilare questo modulo per la ricevuta.",
+          "nextMessageId": "u4",
+          "role": "host",
+          "english": "Very well. You must fill out this form for the receipt."
+        },
+        {
+          "id": "u4",
+          "choices": [
+            {
+              "id": "c10",
+              "text": "Va bene, dove devo firmare?",
+              "nextMessageId": "m5",
+              "english": "Fine, where should I sign?",
+              "isCorrect": true
+            },
+            {
+              "id": "c11",
+              "text": "Va bene, dove devo pagare?",
+              "nextMessageId": "m5",
+              "english": "Fine, where should I pay?",
+              "isCorrect": false
+            },
+            {
+              "id": "c12",
+              "text": "Va bene, dove devo scrivere?",
+              "nextMessageId": "m5",
+              "english": "Fine, where should I write?",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m5",
+          "text": "Deve firmare qui in basso, a destra.",
+          "nextMessageId": "u5",
+          "role": "host",
+          "english": "You must sign here at the bottom, on the right."
+        },
+        {
+          "id": "u5",
+          "choices": [
+            {
+              "id": "c13",
+              "text": "Ecco fatto. Quanto costa la spedizione?",
+              "nextMessageId": "m6",
+              "english": "There it is. How much does the shipping cost?",
+              "isCorrect": true
+            },
+            {
+              "id": "c14",
+              "text": "Ecco fatto. Quanto costa il pacco?",
+              "nextMessageId": "m6",
+              "english": "There it is. How much does the package cost?",
+              "isCorrect": false
+            },
+            {
+              "id": "c15",
+              "text": "Ecco fatto. Quanto costa il modulo?",
+              "nextMessageId": "m6",
+              "english": "There it is. How much does the form cost?",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m6",
+          "text": "Sono cinque euro e quaranta centesimi.",
+          "nextMessageId": "u6",
+          "role": "host",
+          "english": "That's five euros and forty cents."
+        },
+        {
+          "id": "u6",
+          "choices": [
+            {
+              "id": "c16",
+              "text": "Posso pagare con la carta di credito?",
+              "nextMessageId": "m7",
+              "english": "Can I pay with a credit card?",
+              "isCorrect": true
+            },
+            {
+              "id": "c17",
+              "text": "Posso pagare con dei francobolli?",
+              "nextMessageId": "m7",
+              "english": "Can I pay with stamps?",
+              "isCorrect": false
+            },
+            {
+              "id": "c18",
+              "text": "Posso pagare con un assegno?",
+              "nextMessageId": "m7",
+              "english": "Can I pay with a check?",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m7",
+          "text": "Sì, certo. Accettiamo tutte le carte.",
+          "nextMessageId": "u7",
+          "role": "host",
+          "english": "Yes, of course. We accept all cards."
+        },
+        {
+          "id": "u7",
+          "choices": [
+            {
+              "id": "c19",
+              "text": "Perfetto, ecco la mia carta.",
+              "nextMessageId": "m8",
+              "english": "Perfect, here is my card.",
+              "isCorrect": true
+            },
+            {
+              "id": "c20",
+              "text": "Perfetto, ecco i miei contanti.",
+              "nextMessageId": "m8",
+              "english": "Perfect, here is my cash.",
+              "isCorrect": false
+            },
+            {
+              "id": "c21",
+              "text": "Perfetto, ecco il mio documento.",
+              "nextMessageId": "m8",
+              "english": "Perfect, here is my document.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m8",
+          "text": "Grazie. Ecco la sua ricevuta. Desidera altro?",
+          "nextMessageId": "u8",
+          "role": "host",
+          "english": "Thank you. Here is your receipt. Would you like anything else?"
+        },
+        {
+          "id": "u8",
+          "choices": [
+            {
+              "id": "c22",
+              "text": "No, grazie, è tutto per oggi.",
+              "nextMessageId": "m9",
+              "english": "No, thank you, that is all for today.",
+              "isCorrect": true
+            },
+            {
+              "id": "c23",
+              "text": "No, grazie, vorrei un pacco.",
+              "nextMessageId": "m9",
+              "english": "No, thank you, I would like a package.",
+              "isCorrect": false
+            },
+            {
+              "id": "c24",
+              "text": "No, grazie, cerco un timbro.",
+              "nextMessageId": "m9",
+              "english": "No, thank you, I am looking for a stamp.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m9",
+          "text": "Va bene, allora arrivederci e buona giornata.",
+          "nextMessageId": "u9",
+          "role": "host",
+          "english": "Fine, then goodbye and have a good day."
+        },
+        {
+          "id": "u9",
+          "choices": [
+            {
+              "id": "c25",
+              "text": "Grazie mille, arrivederci.",
+              "nextMessageId": "m10",
+              "english": "Thank you very much, goodbye.",
+              "isCorrect": true
+            },
+            {
+              "id": "c26",
+              "text": "Grazie mille, buongiorno.",
+              "nextMessageId": "m10",
+              "english": "Thank you very much, good morning.",
+              "isCorrect": false
+            },
+            {
+              "id": "c27",
+              "text": "Grazie mille, buonasera.",
+              "nextMessageId": "m10",
+              "english": "Thank you very much, good evening.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m10",
+          "text": "Buona giornata a lei!",
+          "nextMessageId": "END",
+          "role": "host",
+          "english": "Have a good day!"
+        }
+      ]
+    },
+    {
+      "id": "sending_a_package_abroad",
+      "title": "Sending a Package Abroad",
+      "messages": [
+        {
+          "id": "m1",
+          "text": "Buongiorno, desidera spedire questo pacco?",
+          "nextMessageId": "u1",
+          "role": "host",
+          "english": "Good morning, do you want to mail this package?"
+        },
+        {
+          "id": "u1",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "Sì, vorrei spedire questo pacco negli Stati Uniti.",
+              "nextMessageId": "m2",
+              "english": "Yes, I would like to mail this package to the United States.",
+              "isCorrect": true
+            },
+            {
+              "id": "c2",
+              "text": "Sì, vorrei spedire questa lettera in Inghilterra.",
+              "nextMessageId": "m2",
+              "english": "Yes, I would like to mail this letter to England.",
+              "isCorrect": false
+            },
+            {
+              "id": "c3",
+              "text": "Sì, vorrei spedire questo modulo in Francia.",
+              "nextMessageId": "m2",
+              "english": "Yes, I would like to mail this form to France.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m2",
+          "text": "Va bene. Lo metta pure sulla bilancia, per favore.",
+          "nextMessageId": "u2",
+          "role": "host",
+          "english": "Fine. Please put it on the scale."
+        },
+        {
+          "id": "u2",
+          "choices": [
+            {
+              "id": "c4",
+              "text": "Ecco. Quanto pesa il pacco?",
+              "nextMessageId": "m3",
+              "english": "Here. How much does the package weigh?",
+              "isCorrect": true
+            },
+            {
+              "id": "c5",
+              "text": "Ecco. Quanto costa il pacco?",
+              "nextMessageId": "m3",
+              "english": "Here. How much does the package cost?",
+              "isCorrect": false
+            },
+            {
+              "id": "c6",
+              "text": "Ecco. Quanto è grande il pacco?",
+              "nextMessageId": "m3",
+              "english": "Here. How big is the package?",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m3",
+          "text": "Pesa due chili e mezzo. Contiene oggetti fragili?",
+          "nextMessageId": "u3",
+          "role": "host",
+          "english": "It weighs two and a half kilos. Does it contain fragile objects?"
+        },
+        {
+          "id": "u3",
+          "choices": [
+            {
+              "id": "c7",
+              "text": "Sì, ci sono dei bicchieri di vetro.",
+              "nextMessageId": "m4",
+              "english": "Yes, there are some glass glasses.",
+              "isCorrect": true
+            },
+            {
+              "id": "c8",
+              "text": "Sì, ci sono dei libri pesanti.",
+              "nextMessageId": "m4",
+              "english": "Yes, there are some heavy books.",
+              "isCorrect": false
+            },
+            {
+              "id": "c9",
+              "text": "Sì, ci sono dei vestiti vecchi.",
+              "nextMessageId": "m4",
+              "english": "Yes, there are some old clothes.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m4",
+          "text": "Allora dobbiamo mettere un adesivo 'fragile'.",
+          "nextMessageId": "u4",
+          "role": "host",
+          "english": "Then we must put a 'fragile' sticker."
+        },
+        {
+          "id": "u4",
+          "choices": [
+            {
+              "id": "c10",
+              "text": "Va bene, grazie. Quanto tempo ci vuole per arrivare?",
+              "nextMessageId": "m5",
+              "english": "Fine, thank you. How long does it take to arrive?",
+              "isCorrect": true
+            },
+            {
+              "id": "c11",
+              "text": "Va bene, grazie. Quanto costa spedire per arrivare?",
+              "nextMessageId": "m5",
+              "english": "Fine, thank you. How much does it cost to mail to arrive?",
+              "isCorrect": false
+            },
+            {
+              "id": "c12",
+              "text": "Va bene, grazie. Quanti giorni ci sono per arrivare?",
+              "nextMessageId": "m5",
+              "english": "Fine, thank you. How many days are there to arrive?",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m5",
+          "text": "Circa dieci giorni lavorativi con la spedizione standard.",
+          "nextMessageId": "u5",
+          "role": "host",
+          "english": "About ten working days with standard shipping."
+        },
+        {
+          "id": "u5",
+          "choices": [
+            {
+              "id": "c13",
+              "text": "E se volessi una spedizione più veloce?",
+              "nextMessageId": "m6",
+              "english": "And if I wanted faster shipping?",
+              "isCorrect": true
+            },
+            {
+              "id": "c14",
+              "text": "E se volessi una spedizione più sicura?",
+              "nextMessageId": "m6",
+              "english": "And if I wanted safer shipping?",
+              "isCorrect": false
+            },
+            {
+              "id": "c15",
+              "text": "E se volessi una spedizione più economica?",
+              "nextMessageId": "m6",
+              "english": "And if I wanted cheaper shipping?",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m6",
+          "text": "C'è la spedizione espressa, arriva in tre giorni.",
+          "nextMessageId": "u6",
+          "role": "host",
+          "english": "There is express shipping, it arrives in three days."
+        },
+        {
+          "id": "u6",
+          "choices": [
+            {
+              "id": "c16",
+              "text": "Va bene, scelgo la spedizione espressa.",
+              "nextMessageId": "m7",
+              "english": "Fine, I choose express shipping.",
+              "isCorrect": true
+            },
+            {
+              "id": "c17",
+              "text": "Va bene, scelgo la spedizione normale.",
+              "nextMessageId": "m7",
+              "english": "Fine, I choose normal shipping.",
+              "isCorrect": false
+            },
+            {
+              "id": "c18",
+              "text": "Va bene, scelgo la spedizione postale.",
+              "nextMessageId": "m7",
+              "english": "Fine, I choose postal shipping.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m7",
+          "text": "D'accordo. Deve compilare il modulo per la dogana.",
+          "nextMessageId": "u7",
+          "role": "host",
+          "english": "Agreed. You must fill out the customs form."
+        },
+        {
+          "id": "u7",
+          "choices": [
+            {
+              "id": "c19",
+              "text": "Posso avere una penna per favore?",
+              "nextMessageId": "m8",
+              "english": "Can I have a pen please?",
+              "isCorrect": true
+            },
+            {
+              "id": "c20",
+              "text": "Posso avere una busta per favore?",
+              "nextMessageId": "m8",
+              "english": "Can I have an envelope please?",
+              "isCorrect": false
+            },
+            {
+              "id": "c21",
+              "text": "Posso avere una carta per favore?",
+              "nextMessageId": "m8",
+              "english": "Can I have a paper please?",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m8",
+          "text": "Certamente, ecco a lei.",
+          "nextMessageId": "u8",
+          "role": "host",
+          "english": "Certainly, here you go."
+        },
+        {
+          "id": "u8",
+          "choices": [
+            {
+              "id": "c22",
+              "text": "Grazie. Ho finito di compilare tutto.",
+              "nextMessageId": "m9",
+              "english": "Thank you. I have finished filling out everything.",
+              "isCorrect": true
+            },
+            {
+              "id": "c23",
+              "text": "Grazie. Ho finito di scrivere tutto.",
+              "nextMessageId": "m9",
+              "english": "Thank you. I have finished writing everything.",
+              "isCorrect": false
+            },
+            {
+              "id": "c24",
+              "text": "Grazie. Ho finito di leggere tutto.",
+              "nextMessageId": "m9",
+              "english": "Thank you. I have finished reading everything.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m9",
+          "text": "Perfetto. Il totale è di quaranta euro.",
+          "nextMessageId": "u9",
+          "role": "host",
+          "english": "Perfect. The total is forty euros."
+        },
+        {
+          "id": "u9",
+          "choices": [
+            {
+              "id": "c25",
+              "text": "Ecco a lei quaranta euro in contanti.",
+              "nextMessageId": "m10",
+              "english": "Here are forty euros in cash.",
+              "isCorrect": true
+            },
+            {
+              "id": "c26",
+              "text": "Ecco a lei quaranta euro in monete.",
+              "nextMessageId": "m10",
+              "english": "Here are forty euros in coins.",
+              "isCorrect": false
+            },
+            {
+              "id": "c27",
+              "text": "Ecco a lei quaranta euro in banca.",
+              "nextMessageId": "m10",
+              "english": "Here are forty euros in bank.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m10",
+          "text": "Grazie, ecco il resto e lo scontrino.",
+          "nextMessageId": "u10",
+          "role": "host",
+          "english": "Thank you, here is the change and the receipt."
+        },
+        {
+          "id": "u10",
+          "choices": [
+            {
+              "id": "c28",
+              "text": "Grazie mille e arrivederci.",
+              "nextMessageId": "END",
+              "english": "Thank you very much and goodbye.",
+              "isCorrect": true
+            },
+            {
+              "id": "c29",
+              "text": "Grazie mille e buonasera.",
+              "nextMessageId": "END",
+              "english": "Thank you very much and good evening.",
+              "isCorrect": false
+            },
+            {
+              "id": "c30",
+              "text": "Grazie mille e buongiorno.",
+              "nextMessageId": "END",
+              "english": "Thank you very much and good morning.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        }
+      ]
+    },
+    {
+      "id": "buying_stamps",
+      "title": "Buying Stamps",
+      "messages": [
+        {
+          "id": "m1",
+          "text": "Buongiorno, mi dica pure.",
+          "nextMessageId": "u1",
+          "role": "host",
+          "english": "Good morning, tell me."
+        },
+        {
+          "id": "u1",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "Vorrei comprare dei francobolli, per favore.",
+              "nextMessageId": "m2",
+              "english": "I would like to buy some stamps, please.",
+              "isCorrect": true
+            },
+            {
+              "id": "c2",
+              "text": "Vorrei comprare dei pacchetti, per favore.",
+              "nextMessageId": "m2",
+              "english": "I would like to buy some packages, please.",
+              "isCorrect": false
+            },
+            {
+              "id": "c3",
+              "text": "Vorrei comprare dei biglietti, per favore.",
+              "nextMessageId": "m2",
+              "english": "I would like to buy some tickets, please.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m2",
+          "text": "Certamente. Quanti ne desidera?",
+          "nextMessageId": "u2",
+          "role": "host",
+          "english": "Certainly. How many do you want?"
+        },
+        {
+          "id": "u2",
+          "choices": [
+            {
+              "id": "c4",
+              "text": "Ne vorrei cinque per cartoline in Italia.",
+              "nextMessageId": "m3",
+              "english": "I would like five for postcards in Italy.",
+              "isCorrect": true
+            },
+            {
+              "id": "c5",
+              "text": "Ne vorrei cinque per lettere in Italia.",
+              "nextMessageId": "m3",
+              "english": "I would like five for letters in Italy.",
+              "isCorrect": false
+            },
+            {
+              "id": "c6",
+              "text": "Ne vorrei cinque per pacchi in Italia.",
+              "nextMessageId": "m3",
+              "english": "I would like five for packages in Italy.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m3",
+          "text": "Va bene. Desidera anche francobolli per l'estero?",
+          "nextMessageId": "u3",
+          "role": "host",
+          "english": "Fine. Do you also want stamps for abroad?"
+        },
+        {
+          "id": "u3",
+          "choices": [
+            {
+              "id": "c7",
+              "text": "Sì, ne vorrei due per la Germania.",
+              "nextMessageId": "m4",
+              "english": "Yes, I would like two for Germany.",
+              "isCorrect": true
+            },
+            {
+              "id": "c8",
+              "text": "Sì, ne vorrei due per la Spagna.",
+              "nextMessageId": "m4",
+              "english": "Yes, I would like two for Spain.",
+              "isCorrect": false
+            },
+            {
+              "id": "c9",
+              "text": "Sì, ne vorrei due per la Grecia.",
+              "nextMessageId": "m4",
+              "english": "Yes, I would like two for Greece.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m4",
+          "text": "Ecco qui i francobolli per l'Italia e per l'Europa.",
+          "nextMessageId": "u4",
+          "role": "host",
+          "english": "Here are the stamps for Italy and for Europe."
+        },
+        {
+          "id": "u4",
+          "choices": [
+            {
+              "id": "c10",
+              "text": "Grazie. Avete anche delle buste da lettera?",
+              "nextMessageId": "m5",
+              "english": "Thank you. Do you also have letter envelopes?",
+              "isCorrect": true
+            },
+            {
+              "id": "c11",
+              "text": "Grazie. Avete anche delle carte da lettera?",
+              "nextMessageId": "m5",
+              "english": "Thank you. Do you also have letter papers?",
+              "isCorrect": false
+            },
+            {
+              "id": "c12",
+              "text": "Grazie. Avete anche delle penne da lettera?",
+              "nextMessageId": "m5",
+              "english": "Thank you. Do you also have letter pens?",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m5",
+          "text": "Sì, abbiamo buste di varie dimensioni.",
+          "nextMessageId": "u5",
+          "role": "host",
+          "english": "Yes, we have envelopes of various sizes."
+        },
+        {
+          "id": "u5",
+          "choices": [
+            {
+              "id": "c13",
+              "text": "Ne vorrei una confezione da dieci, per favore.",
+              "nextMessageId": "m6",
+              "english": "I would like a pack of ten, please.",
+              "isCorrect": true
+            },
+            {
+              "id": "c14",
+              "text": "Ne vorrei una confezione da venti, per favore.",
+              "nextMessageId": "m6",
+              "english": "I would like a pack of twenty, please.",
+              "isCorrect": false
+            },
+            {
+              "id": "c15",
+              "text": "Ne vorrei una confezione da trenta, per favore.",
+              "nextMessageId": "m6",
+              "english": "I would like a pack of thirty, please.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m6",
+          "text": "Ecco a lei. Desidera altro, magari una ricarica telefonica?",
+          "nextMessageId": "u6",
+          "role": "host",
+          "english": "Here you go. Do you want anything else, maybe a phone top-up?"
+        },
+        {
+          "id": "u6",
+          "choices": [
+            {
+              "id": "c16",
+              "text": "No, per ora basta così, grazie.",
+              "nextMessageId": "m7",
+              "english": "No, for now that's enough, thank you.",
+              "isCorrect": true
+            },
+            {
+              "id": "c17",
+              "text": "No, per ora va bene così, grazie.",
+              "nextMessageId": "m7",
+              "english": "No, for now it's fine like this, thank you.",
+              "isCorrect": false
+            },
+            {
+              "id": "c18",
+              "text": "No, per ora è tutto così, grazie.",
+              "nextMessageId": "m7",
+              "english": "No, for now it's everything like this, thank you.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m7",
+          "text": "D'accordo. In totale sono dodici euro.",
+          "nextMessageId": "u7",
+          "role": "host",
+          "english": "Agreed. In total it is twelve euros."
+        },
+        {
+          "id": "u7",
+          "choices": [
+            {
+              "id": "c19",
+              "text": "Posso pagare con il bancomat?",
+              "nextMessageId": "m8",
+              "english": "Can I pay with a debit card?",
+              "isCorrect": true
+            },
+            {
+              "id": "c20",
+              "text": "Posso pagare con il contante?",
+              "nextMessageId": "m8",
+              "english": "Can I pay with cash?",
+              "isCorrect": false
+            },
+            {
+              "id": "c21",
+              "text": "Posso pagare con il credito?",
+              "nextMessageId": "m8",
+              "english": "Can I pay with credit?",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m8",
+          "text": "Sì, certo. Inserisca pure la carta qui.",
+          "nextMessageId": "u8",
+          "role": "host",
+          "english": "Yes, of course. Please insert the card here."
+        },
+        {
+          "id": "u8",
+          "choices": [
+            {
+              "id": "c22",
+              "text": "Fatto. Arrivederci e buon lavoro.",
+              "nextMessageId": "m9",
+              "english": "Done. Goodbye and good luck with your work.",
+              "isCorrect": true
+            },
+            {
+              "id": "c23",
+              "text": "Fatto. Arrivederci e buona serata.",
+              "nextMessageId": "m9",
+              "english": "Done. Goodbye and good evening.",
+              "isCorrect": false
+            },
+            {
+              "id": "c24",
+              "text": "Fatto. Arrivederci e buona giornata.",
+              "nextMessageId": "m9",
+              "english": "Done. Goodbye and good day.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m9",
+          "text": "Grazie, arrivederci.",
+          "nextMessageId": "END",
+          "role": "host",
+          "english": "Thank you, goodbye."
+        }
+      ]
+    },
+    {
+      "id": "picking_up_a_registered_letter",
+      "title": "Picking up a Registered Letter",
+      "messages": [
+        {
+          "id": "m1",
+          "text": "Buongiorno, come posso aiutarla?",
+          "nextMessageId": "u1",
+          "role": "host",
+          "english": "Good morning, how can I help you?"
+        },
+        {
+          "id": "u1",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "Buongiorno, devo ritirare una raccomandata.",
+              "nextMessageId": "m2",
+              "english": "Good morning, I have to pick up a registered letter.",
+              "isCorrect": true
+            },
+            {
+              "id": "c2",
+              "text": "Buongiorno, devo ritirare un pacchetto.",
+              "nextMessageId": "m2",
+              "english": "Good morning, I have to pick up a small package.",
+              "isCorrect": false
+            },
+            {
+              "id": "c3",
+              "text": "Buongiorno, devo ritirare un documento.",
+              "nextMessageId": "m2",
+              "english": "Good morning, I have to pick up a document.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m2",
+          "text": "Ha l'avviso di giacenza che ha trovato nella cassetta?",
+          "nextMessageId": "u2",
+          "role": "host",
+          "english": "Do you have the notification of delivery that you found in the mailbox?"
+        },
+        {
+          "id": "u2",
+          "choices": [
+            {
+              "id": "c4",
+              "text": "Sì, eccolo qui.",
+              "nextMessageId": "m3",
+              "english": "Yes, here it is.",
+              "isCorrect": true
+            },
+            {
+              "id": "c5",
+              "text": "Sì, eccolo lì.",
+              "nextMessageId": "m3",
+              "english": "Yes, there it is.",
+              "isCorrect": false
+            },
+            {
+              "id": "c6",
+              "text": "Sì, eccolo oggi.",
+              "nextMessageId": "m3",
+              "english": "Yes, here it is today.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m3",
+          "text": "Grazie. Mi serve anche un suo documento d'identità.",
+          "nextMessageId": "u3",
+          "role": "host",
+          "english": "Thank you. I also need your identity document."
+        },
+        {
+          "id": "u3",
+          "choices": [
+            {
+              "id": "c7",
+              "text": "Va bene, le do la mia carta d'identità.",
+              "nextMessageId": "m4",
+              "english": "Fine, I'll give you my ID card.",
+              "isCorrect": true
+            },
+            {
+              "id": "c8",
+              "text": "Va bene, le do il mio passaporto.",
+              "nextMessageId": "m4",
+              "english": "Fine, I'll give you my passport.",
+              "isCorrect": false
+            },
+            {
+              "id": "c9",
+              "text": "Va bene, le do la mia patente.",
+              "nextMessageId": "m4",
+              "english": "Fine, I'll give you my driver's license.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m4",
+          "text": "Un momento che controllo... Sì, la lettera è qui.",
+          "nextMessageId": "u4",
+          "role": "host",
+          "english": "One moment while I check... Yes, the letter is here."
+        },
+        {
+          "id": "u4",
+          "choices": [
+            {
+              "id": "c10",
+              "text": "Devo firmare per il ritiro?",
+              "nextMessageId": "m5",
+              "english": "Do I have to sign for the collection?",
+              "isCorrect": true
+            },
+            {
+              "id": "c11",
+              "text": "Devo pagare per il ritiro?",
+              "nextMessageId": "m5",
+              "english": "Do I have to pay for the collection?",
+              "isCorrect": false
+            },
+            {
+              "id": "c12",
+              "text": "Devo scrivere per il ritiro?",
+              "nextMessageId": "m5",
+              "english": "Do I have to write for the collection?",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m5",
+          "text": "Sì, deve firmare qui sul tablet, per favore.",
+          "nextMessageId": "u5",
+          "role": "host",
+          "english": "Yes, you must sign here on the tablet, please."
+        },
+        {
+          "id": "u5",
+          "choices": [
+            {
+              "id": "c13",
+              "text": "Va bene. Devo pagare qualcosa?",
+              "nextMessageId": "m6",
+              "english": "Fine. Do I have to pay anything?",
+              "isCorrect": true
+            },
+            {
+              "id": "c14",
+              "text": "Va bene. Devo firmare qualcosa?",
+              "nextMessageId": "m6",
+              "english": "Fine. Do I have to sign anything?",
+              "isCorrect": false
+            },
+            {
+              "id": "c15",
+              "text": "Va bene. Devo dare qualcosa?",
+              "nextMessageId": "m6",
+              "english": "Fine. Do I have to give anything?",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m6",
+          "text": "No, non c'è nulla da pagare.",
+          "nextMessageId": "u6",
+          "role": "host",
+          "english": "No, there is nothing to pay."
+        },
+        {
+          "id": "u6",
+          "choices": [
+            {
+              "id": "c16",
+              "text": "Perfetto. Grazie mille per l'aiuto.",
+              "nextMessageId": "m7",
+              "english": "Perfect. Thank you very much for the help.",
+              "isCorrect": true
+            },
+            {
+              "id": "c17",
+              "text": "Perfetto. Grazie mille per il pacco.",
+              "nextMessageId": "m7",
+              "english": "Perfect. Thank you very much for the package.",
+              "isCorrect": false
+            },
+            {
+              "id": "c18",
+              "text": "Perfetto. Grazie mille per la lettera.",
+              "nextMessageId": "m7",
+              "english": "Perfect. Thank you very much for the letter.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "id": "m7",
+          "text": "Di nulla. Buona giornata.",
+          "nextMessageId": "u7",
+          "role": "host",
+          "english": "You're welcome. Have a good day."
+        },
+        {
+          "id": "u7",
+          "choices": [
+            {
+              "id": "c19",
+              "text": "Buona giornata anche a lei, arrivederci.",
+              "nextMessageId": "END",
+              "english": "Have a good day too, goodbye.",
+              "isCorrect": true
+            },
+            {
+              "id": "c20",
+              "text": "Buona serata anche a lei, arrivederci.",
+              "nextMessageId": "END",
+              "english": "Have a good evening too, goodbye.",
+              "isCorrect": false
+            },
+            {
+              "id": "c21",
+              "text": "Buona notte anche a lei, arrivederci.",
+              "nextMessageId": "END",
+              "english": "Have a good night too, goodbye.",
+              "isCorrect": false
+            }
+          ],
+          "role": "user"
+        }
+      ]
+    }
+  ]
+}

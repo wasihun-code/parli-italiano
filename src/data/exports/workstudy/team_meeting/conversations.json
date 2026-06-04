@@ -1,0 +1,953 @@
+{
+  "scenarioId": 62,
+  "conversations": [
+    {
+      "id": "starting_the_meeting",
+      "title": "Starting the Meeting",
+      "description": "Greeting the team and introducing the agenda.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno a tutti! Grazie per essere qui oggi.",
+          "english": "Good morning everyone! Thank you for being here today.",
+          "choices": [
+            {
+              "text": "Buongiorno! Siamo pronti per iniziare la riunione.",
+              "isCorrect": true,
+              "feedback": "Perfect response to start."
+            },
+            {
+              "text": "Buonasera! Siamo andati per finire la colazione.",
+              "isCorrect": false,
+              "feedback": "Wrong time and context."
+            },
+            {
+              "text": "Buonanotte! Siamo stanchi per dormire sul divano.",
+              "isCorrect": false,
+              "feedback": "Wrong context."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Oggi abbiamo molte cose da fare. Avete letto l'ordine del giorno?",
+          "english": "Today we have many things to do. Have you read the agenda?",
+          "choices": [
+            {
+              "text": "S\u00ec, ho letto tutto l'ordine del giorno stamattina.",
+              "isCorrect": true,
+              "feedback": "Good confirmation."
+            },
+            {
+              "text": "No, ho rotto tutto il vetro della mia macchina.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "S\u00ec, ho visto tutto il concerto dalla mia finestra.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Bene. Il primo punto \u00e8 il nostro nuovo progetto.",
+          "english": "Good. The first point is our new project.",
+          "choices": [
+            {
+              "text": "Sono molto felice di lavorare a questo progetto.",
+              "isCorrect": true,
+              "feedback": "Positive and relevant."
+            },
+            {
+              "text": "Sono molto stanco di nuotare in questa piscina.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Sono molto triste di studiare per questo esame.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Dobbiamo collaborare bene come una squadra. Siete d'accordo?",
+          "english": "We must collaborate well as a team. Do you agree?",
+          "choices": [
+            {
+              "text": "Assolutamente, la squadra \u00e8 molto importante per noi.",
+              "isCorrect": true,
+              "feedback": "Strong agreement."
+            },
+            {
+              "text": "Assolutamente, la valigia \u00e8 molto pesante per lui.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Assolutamente, la chitarra \u00e8 molto difficile per me.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Abbiamo poco tempo per finire tutto. Qual \u00e8 la scadenza?",
+          "english": "We have little time to finish everything. What is the deadline?",
+          "choices": [
+            {
+              "text": "La scadenza \u00e8 il prossimo venerd\u00ec, abbiamo pochi giorni.",
+              "isCorrect": true,
+              "feedback": "Correctly answers the deadline."
+            },
+            {
+              "text": "La partenza \u00e8 il prossimo marted\u00ec, abbiamo poche borse.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "La camicia \u00e8 nel primo cassetto, abbiamo molti vestiti.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Giusto. Dobbiamo rispettare questa scadenza senza fare ritardi.",
+          "english": "Right. We must meet this deadline without making delays.",
+          "choices": [
+            {
+              "text": "S\u00ec, possiamo farcela se lavoriamo tutti i giorni.",
+              "isCorrect": true,
+              "feedback": "Positive attitude."
+            },
+            {
+              "text": "No, possiamo dormirci se chiudiamo tutti i libri.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "S\u00ec, possiamo perderla se camminiamo tutti i mesi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Chi vuole presentare le prime idee per il progetto?",
+          "english": "Who wants to present the first ideas for the project?",
+          "choices": [
+            {
+              "text": "Posso iniziare io, ho preparato una breve presentazione.",
+              "isCorrect": true,
+              "feedback": "Volunteers to present."
+            },
+            {
+              "text": "Posso guidare io, ho comprato una nuova automobile.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Posso dormire io, ho preparato una grande coperta.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Grazie. Possiamo guardare la tua presentazione adesso?",
+          "english": "Thank you. Can we look at your presentation now?",
+          "choices": [
+            {
+              "text": "Certo, condivido subito lo schermo del mio computer.",
+              "isCorrect": true,
+              "feedback": "Appropriate action."
+            },
+            {
+              "text": "Certo, lavo subito i piatti della mia cucina.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Certo, pulisco subito il pavimento del mio bagno.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Sembra davvero un'ottima idea per noi.",
+          "english": "Perfect. It really seems like an excellent idea for us.",
+          "choices": [
+            {
+              "text": "Sono contento che vi piaccia questa nuova idea.",
+              "isCorrect": true,
+              "feedback": "Polite response."
+            },
+            {
+              "text": "Sono dispiaciuto che vi manchi questa vecchia borsa.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Sono sorpreso che vi serva questa piccola pianta.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ci sono altre domande sull'ordine del giorno di oggi?",
+          "english": "Are there other questions about today's agenda?",
+          "choices": [
+            {
+              "text": "No, per me \u00e8 tutto molto chiaro. Andiamo avanti.",
+              "isCorrect": true,
+              "feedback": "Good concluding statement."
+            },
+            {
+              "text": "S\u00ec, per me \u00e8 tutto molto freddo. Andiamo fuori.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "No, per me \u00e8 tutto molto scuro. Andiamo via.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project_status_update",
+      "title": "Project Status Update",
+      "description": "Discuss the progress of the current project.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao a tutti. Iniziamo con l'aggiornamento sul progetto.",
+          "english": "Hello everyone. Let's start with the update on the project.",
+          "choices": [
+            {
+              "text": "Ottimo, sono pronto a parlare del nostro lavoro.",
+              "isCorrect": true,
+              "feedback": "Ready to participate."
+            },
+            {
+              "text": "Pessimo, sono pronto a parlare del nostro treno.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Strano, sono pronto a parlare del nostro parco.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "A che punto siamo con il lavoro di questa settimana?",
+          "english": "Where are we with this week's work?",
+          "choices": [
+            {
+              "text": "Abbiamo quasi finito la prima parte del progetto.",
+              "isCorrect": true,
+              "feedback": "Gives a status update."
+            },
+            {
+              "text": "Abbiamo quasi comprato la prima parte del viaggio.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Abbiamo quasi perso la prima parte del libro.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Molto bene. Ci sono problemi con la scadenza prevista?",
+          "english": "Very good. Are there problems with the expected deadline?",
+          "choices": [
+            {
+              "text": "Forse abbiamo bisogno di due giorni in pi\u00f9.",
+              "isCorrect": true,
+              "feedback": "Honest assessment."
+            },
+            {
+              "text": "Forse abbiamo bisogno di due scarpe in pi\u00f9.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Forse abbiamo bisogno di due alberi in pi\u00f9.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capisco. Forse dobbiamo lavorare un po' di pi\u00f9 domani.",
+          "english": "I understand. Maybe we have to work a bit more tomorrow.",
+          "choices": [
+            {
+              "text": "Va bene, posso rimanere in ufficio fino a tardi.",
+              "isCorrect": true,
+              "feedback": "Willing to help."
+            },
+            {
+              "text": "Va male, posso rimanere in macchina fino a domani.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Va bene, posso rimanere in cucina fino a cena.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Chi si occupa della presentazione per i nostri clienti?",
+          "english": "Who is taking care of the presentation for our clients?",
+          "choices": [
+            {
+              "text": "Me ne occupo io, ho gi\u00e0 scritto alcune idee.",
+              "isCorrect": true,
+              "feedback": "Takes responsibility."
+            },
+            {
+              "text": "Me ne vado io, ho gi\u00e0 chiuso alcune porte.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Me ne lavo io, ho gi\u00e0 aperto alcune finestre.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Perfetto. Hai bisogno di aiuto dalla nostra squadra?",
+          "english": "Perfect. Do you need help from our team?",
+          "choices": [
+            {
+              "text": "S\u00ec, mi serve un po' di aiuto con i numeri.",
+              "isCorrect": true,
+              "feedback": "Asks for specific help."
+            },
+            {
+              "text": "No, mi serve un po' di acqua con i limoni.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "S\u00ec, mi serve un po' di tempo con i bambini.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Va bene, posso aiutarti io gioved\u00ec mattina. Va bene?",
+          "english": "Alright, I can help you Thursday morning. Is that okay?",
+          "choices": [
+            {
+              "text": "S\u00ec, gioved\u00ec mattina \u00e8 perfetto per me. Grazie mille.",
+              "isCorrect": true,
+              "feedback": "Agrees to the time."
+            },
+            {
+              "text": "S\u00ec, gioved\u00ec sera \u00e8 perfetto per te. Buona notte.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "S\u00ec, marted\u00ec mattina \u00e8 perfetto per noi. Buon viaggio.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Abbiamo raggiunto il nostro obiettivo mensile, secondo voi?",
+          "english": "Have we reached our monthly goal, in your opinion?",
+          "choices": [
+            {
+              "text": "Credo di s\u00ec, abbiamo lavorato molto duramente questo mese.",
+              "isCorrect": true,
+              "feedback": "Positive confirmation."
+            },
+            {
+              "text": "Credo di no, abbiamo dormito molto profondamente questo mese.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Credo di s\u00ec, abbiamo guidato molto velocemente questo mese.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo lavoro. Dobbiamo solo finire le ultime cose.",
+          "english": "Great job. We just have to finish the last things.",
+          "choices": [
+            {
+              "text": "Esatto, mancano solo due documenti da leggere e correggere.",
+              "isCorrect": true,
+              "feedback": "Confirms the remaining tasks."
+            },
+            {
+              "text": "Esatto, mancano solo due bicchieri da bere e lavare.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Esatto, mancano solo due vestiti da piegare e stirare.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Siete contenti dei risultati di questo lungo progetto?",
+          "english": "Are you happy with the results of this long project?",
+          "choices": [
+            {
+              "text": "S\u00ec, penso che abbiamo fatto un ottimo lavoro insieme.",
+              "isCorrect": true,
+              "feedback": "Good team spirit."
+            },
+            {
+              "text": "No, penso che abbiamo comprato un brutto vestito rosso.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "S\u00ec, penso che abbiamo mangiato un dolce molto buono.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brainstorming_ideas",
+      "title": "Brainstorming Ideas",
+      "description": "Sharing and discussing new ideas.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ora dobbiamo trovare nuove idee per il nostro progetto.",
+          "english": "Now we need to find new ideas for our project.",
+          "choices": [
+            {
+              "text": "Sono d'accordo, abbiamo bisogno di qualcosa di nuovo.",
+              "isCorrect": true,
+              "feedback": "Agrees with the premise."
+            },
+            {
+              "text": "Sono d'accordo, abbiamo bisogno di qualcosa da bere.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Sono d'accordo, abbiamo bisogno di qualcosa di caldo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Qualcuno ha un'idea interessante da condividere con la squadra?",
+          "english": "Does anyone have an interesting idea to share with the team?",
+          "choices": [
+            {
+              "text": "Io ho un'idea: possiamo cambiare i colori della presentazione.",
+              "isCorrect": true,
+              "feedback": "Suggests an idea."
+            },
+            {
+              "text": "Io ho un libro: possiamo leggere i capitoli della storia.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Io ho un tavolo: possiamo pulire le sedie della sala.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Mi piace questa idea. Come possiamo realizzarla in pratica?",
+          "english": "I like this idea. How can we make it happen in practice?",
+          "choices": [
+            {
+              "text": "Possiamo usare un programma speciale per il computer.",
+              "isCorrect": true,
+              "feedback": "Offers a practical solution."
+            },
+            {
+              "text": "Possiamo usare un cappotto speciale per il freddo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Possiamo usare un cuscino speciale per il letto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "\u00c8 una buona strategia. Chi vuole lavorare su questo?",
+          "english": "It's a good strategy. Who wants to work on this?",
+          "choices": [
+            {
+              "text": "Posso farlo io, conosco molto bene quel programma.",
+              "isCorrect": true,
+              "feedback": "Volunteers and justifies."
+            },
+            {
+              "text": "Posso farlo io, conosco molto bene quel negozio.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Posso averlo io, conosco molto bene quel dottore.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Abbiamo bisogno di altre idee per attirare i clienti.",
+          "english": "We need other ideas to attract clients.",
+          "choices": [
+            {
+              "text": "Cosa ne pensate di creare un breve video online?",
+              "isCorrect": true,
+              "feedback": "Suggests a modern idea."
+            },
+            {
+              "text": "Cosa ne pensate di comprare un nuovo frigorifero bianco?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Cosa ne pensate di lavare un grande tappeto blu?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Forse possiamo usare pi\u00f9 immagini e meno parole lunghe.",
+          "english": "Maybe we can use more images and fewer long words.",
+          "choices": [
+            {
+              "text": "S\u00ec, un'immagine \u00e8 spesso pi\u00f9 chiara di molte parole.",
+              "isCorrect": true,
+              "feedback": "Agrees with the statement."
+            },
+            {
+              "text": "S\u00ec, una bicicletta \u00e8 spesso pi\u00f9 veloce di molte macchine.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "S\u00ec, una scarpa \u00e8 spesso pi\u00f9 stretta di molti calzini.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Siete tutti d'accordo con questa nuova idea visiva?",
+          "english": "Do you all agree with this new visual idea?",
+          "choices": [
+            {
+              "text": "S\u00ec, siamo tutti d'accordo con questo approccio moderno.",
+              "isCorrect": true,
+              "feedback": "Confirms consensus."
+            },
+            {
+              "text": "No, siamo tutti arrabbiati con questo orologio rotto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "S\u00ec, siamo tutti d'accordo con questo divano comodo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Bene, abbiamo un buon accordo nella nostra squadra oggi.",
+          "english": "Good, we have a good agreement in our team today.",
+          "choices": [
+            {
+              "text": "Questo \u00e8 il modo migliore per lavorare bene insieme.",
+              "isCorrect": true,
+              "feedback": "Positive reinforcement."
+            },
+            {
+              "text": "Questo \u00e8 il tavolo migliore per mangiare bene insieme.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Questo \u00e8 il libro migliore per dormire bene insieme.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Dobbiamo scrivere tutte queste idee sul documento ufficiale.",
+          "english": "We must write all these ideas on the official document.",
+          "choices": [
+            {
+              "text": "Prendo io gli appunti e li mando a tutti.",
+              "isCorrect": true,
+              "feedback": "Takes on the task."
+            },
+            {
+              "text": "Prendo io i biscotti e li mangio con tutti.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Prendo io i vestiti e li lavo per tutti.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie a tutti per la vostra grande creativit\u00e0 oggi.",
+          "english": "Thank you all for your great creativity today.",
+          "choices": [
+            {
+              "text": "Di nulla, \u00e8 stato un piacere collaborare in squadra.",
+              "isCorrect": true,
+              "feedback": "Polite sign-off."
+            },
+            {
+              "text": "Di nulla, \u00e8 stato un dolore camminare nel bosco.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Di nulla, \u00e8 stato un favore pulire la macchina.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "setting_next_steps",
+      "title": "Setting Next Steps",
+      "description": "Agreeing on what needs to be done next.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Passiamo all'ultimo punto: i prossimi passi da fare.",
+          "english": "Let's move to the last point: the next steps to take.",
+          "choices": [
+            {
+              "text": "Certo, vediamo cosa dobbiamo fare nei prossimi giorni.",
+              "isCorrect": true,
+              "feedback": "Ready to plan."
+            },
+            {
+              "text": "Certo, vediamo cosa dobbiamo bere nei prossimi minuti.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Certo, vediamo cosa dobbiamo lavare nei prossimi mesi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Cosa dobbiamo fare esattamente prima di domani sera?",
+          "english": "What exactly do we need to do before tomorrow evening?",
+          "choices": [
+            {
+              "text": "Dobbiamo finire le prime cinque pagine della presentazione.",
+              "isCorrect": true,
+              "feedback": "Specifies the task."
+            },
+            {
+              "text": "Dobbiamo finire le prime cinque fette della torta.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Dobbiamo finire le prime cinque miglia della corsa.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Esatto. Chi prepara il documento per il nostro cliente?",
+          "english": "Exactly. Who is preparing the document for our client?",
+          "choices": [
+            {
+              "text": "Lo preparo io stasera, sar\u00e0 pronto per domani.",
+              "isCorrect": true,
+              "feedback": "Takes the task."
+            },
+            {
+              "text": "Lo lavo io stasera, sar\u00e0 pulito per domani.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Lo bevo io stasera, sar\u00e0 vuoto per domani.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Qual \u00e8 il nostro obiettivo per la prossima settimana?",
+          "english": "Perfect. What is our goal for next week?",
+          "choices": [
+            {
+              "text": "Il nostro obiettivo \u00e8 completare l'intero progetto insieme.",
+              "isCorrect": true,
+              "feedback": "States the goal."
+            },
+            {
+              "text": "Il nostro divano \u00e8 completare l'intero viaggio insieme.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Il nostro orologio \u00e8 completare l'intero bagno insieme.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Dobbiamo rispettare questa nuova scadenza, \u00e8 molto importante.",
+          "english": "We must respect this new deadline, it is very important.",
+          "choices": [
+            {
+              "text": "S\u00ec, non possiamo permetterci di fare nessun ritardo.",
+              "isCorrect": true,
+              "feedback": "Understands the importance."
+            },
+            {
+              "text": "S\u00ec, non possiamo permetterci di fare nessun viaggio.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "S\u00ec, non possiamo permetterci di fare nessun bagno.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Lavoriamo insieme per non avere problemi di tempo.",
+          "english": "Let's work together to not have time problems.",
+          "choices": [
+            {
+              "text": "Se collaboriamo, finiremo tutto nei tempi previsti.",
+              "isCorrect": true,
+              "feedback": "Shows teamwork."
+            },
+            {
+              "text": "Se dormiamo, finiremo tutto nei tempi previsti.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Se corriamo, finiremo tutto nei tempi previsti.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Abbiamo bisogno di un'altra riunione per venerd\u00ec pomeriggio?",
+          "english": "Do we need another meeting for Friday afternoon?",
+          "choices": [
+            {
+              "text": "S\u00ec, penso che sia utile per controllare il lavoro.",
+              "isCorrect": true,
+              "feedback": "Agrees to another meeting."
+            },
+            {
+              "text": "S\u00ec, penso che sia utile per controllare il motore.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "S\u00ec, penso che sia utile per controllare il giardino.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene, organizziamo una riunione breve venerd\u00ec mattina.",
+          "english": "Alright, let's organize a short meeting Friday morning.",
+          "choices": [
+            {
+              "text": "Mander\u00f2 io l'invito a tutti i membri della squadra.",
+              "isCorrect": true,
+              "feedback": "Takes initiative."
+            },
+            {
+              "text": "Mander\u00f2 io il pacco a tutti i membri della famiglia.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Mander\u00f2 io il gatto a tutti i membri della classe.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "C'\u00e8 qualcos'altro da dire prima di chiudere la riunione?",
+          "english": "Is there anything else to say before closing the meeting?",
+          "choices": [
+            {
+              "text": "Da parte mia, no. Grazie per l'incontro di oggi.",
+              "isCorrect": true,
+              "feedback": "No further comments."
+            },
+            {
+              "text": "Da parte mia, s\u00ec. Grazie per il pane di ieri.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Da parte mia, no. Grazie per il gatto di oggi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Allora abbiamo finito. Grazie per il vostro tempo prezioso.",
+          "english": "Then we are done. Thank you for your valuable time.",
+          "choices": [
+            {
+              "text": "Grazie a te. Buona giornata e buon lavoro a tutti.",
+              "isCorrect": true,
+              "feedback": "Polite goodbye."
+            },
+            {
+              "text": "Grazie a te. Buona passeggiata e buon sonno a tutti.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Grazie a te. Buona cena e buon bagno a tutti.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

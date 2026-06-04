@@ -1,0 +1,953 @@
+{
+  "scenarioId": 74,
+  "conversations": [
+    {
+      "id": "asking_for_drink",
+      "title": "Asking for a Drink",
+      "description": "Find the drinks and ask the host for something to quench your thirst.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Benvenuto alla mia festa. Sei appena arrivato?",
+          "english": "Hi! Welcome to my party. Did you just arrive?",
+          "choices": [
+            {
+              "text": "Sì, sono appena arrivato. Grazie per l'invito!",
+              "isCorrect": true,
+              "feedback": "Perfect! Politeness and greeting are essential."
+            },
+            {
+              "text": "Dov'è il bagno? Mi serve subito un asciugamano.",
+              "isCorrect": false,
+              "feedback": "A bit abrupt for a first greeting at a party."
+            },
+            {
+              "text": "La musica è troppo alta, non sento niente.",
+              "isCorrect": false,
+              "feedback": "Too negative for someone who just arrived."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Prego! Vuoi qualcosa da bere? C'è molta scelta al buffet.",
+          "english": "You're welcome! Do you want something to drink? There's a lot of choice at the buffet.",
+          "choices": [
+            {
+              "text": "Sì, grazie. Cosa c'è da bere di buono?",
+              "isCorrect": true,
+              "feedback": "Good choice! You are expressing interest in the options."
+            },
+            {
+              "text": "No, non ho fame. Dov'è la pista da ballo?",
+              "isCorrect": false,
+              "feedback": "The host asked about drinks, not food or dancing."
+            },
+            {
+              "text": "Non mi piace questo bicchiere. È sporco.",
+              "isCorrect": false,
+              "feedback": "Very rude to say to a host!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Abbiamo vino rosso, birra fredda e dei succhi di frutta.",
+          "english": "We have red wine, cold beer, and some fruit juices.",
+          "choices": [
+            {
+              "text": "Prendo un bicchiere di vino rosso, grazie.",
+              "isCorrect": true,
+              "feedback": "Clear and polite request."
+            },
+            {
+              "text": "Voglio una bistecca ai ferri con patate.",
+              "isCorrect": false,
+              "feedback": "They are offering drinks, not full meals."
+            },
+            {
+              "text": "Preferisco dormire adesso, sono stanco.",
+              "isCorrect": false,
+              "feedback": "Not the right place to sleep!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottima scelta, il vino è molto buono. Vuoi anche del ghiaccio?",
+          "english": "Great choice, the wine is very good. Do you also want some ice?",
+          "choices": [
+            {
+              "text": "No grazie, va bene così. Salute!",
+              "isCorrect": true,
+              "feedback": "Perfect response and a friendly toast."
+            },
+            {
+              "text": "Sì, metti dieci cubetti di ghiaccio qui.",
+              "isCorrect": false,
+              "feedback": "A bit excessive and demanding."
+            },
+            {
+              "text": "Il ghiaccio è troppo freddo per me.",
+              "isCorrect": false,
+              "feedback": "Ice is naturally cold, this sounds silly."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Salute! Divertiti e mangia pure qualcosa se hai fame.",
+          "english": "Cheers! Have fun and eat something if you're hungry.",
+          "choices": [
+            {
+              "text": "Grazie mille, la festa è bellissima!",
+              "isCorrect": true,
+              "feedback": "A great way to end the interaction."
+            },
+            {
+              "text": "Odio queste pizzette, sono salate.",
+              "isCorrect": false,
+              "feedback": "Very rude thing to say to the host."
+            },
+            {
+              "text": "Vado via subito, mi annoio molto.",
+              "isCorrect": false,
+              "feedback": "Extremely impolite to the host."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "A proposito, hai già provato gli stuzzichini sul tavolo?",
+          "english": "By the way, have you already tried the appetizers on the table?",
+          "choices": [
+            {
+              "text": "No, non ancora. Cosa mi consigli?",
+              "isCorrect": true,
+              "feedback": "Good way to ask for a recommendation."
+            },
+            {
+              "text": "Sì, sembrano molto buoni.",
+              "isCorrect": false,
+              "feedback": "A bit short, but okay."
+            },
+            {
+              "text": "Non mi piacciono le olive.",
+              "isCorrect": false,
+              "feedback": "Too negative."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ti consiglio le bruschette al pomodoro, sono freschissime.",
+          "english": "I recommend the tomato bruschettas, they are very fresh.",
+          "choices": [
+            {
+              "text": "Ottima idea, ne prendo una subito.",
+              "isCorrect": true,
+              "feedback": "Accepting the recommendation politely."
+            },
+            {
+              "text": "Preferisco aspettare il piatto principale.",
+              "isCorrect": false,
+              "feedback": "A bit too formal for a party."
+            },
+            {
+              "text": "Il pomodoro è troppo rosso per me.",
+              "isCorrect": false,
+              "feedback": "Nonsensical."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Hai ragione! Dimmi, conosci già molte persone qui?",
+          "english": "You're right! Tell me, do you already know many people here?",
+          "choices": [
+            {
+              "text": "No, conosco solo te e Paolo.",
+              "isCorrect": true,
+              "feedback": "Honest and clear answer."
+            },
+            {
+              "text": "Sì, sono tutti miei amici stretti.",
+              "isCorrect": false,
+              "feedback": "Unlikely if the host hasn't seen you before."
+            },
+            {
+              "text": "Non conosco nessuno e voglio restare solo.",
+              "isCorrect": false,
+              "feedback": "Antisocial."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Allora ti presento subito la mia amica Elena. È molto simpatica.",
+          "english": "Then I'll introduce you to my friend Elena right away. She's very nice.",
+          "choices": [
+            {
+              "text": "Volentieri! Mi piace conoscere gente nuova.",
+              "isCorrect": true,
+              "feedback": "Enthusiastic and polite."
+            },
+            {
+              "text": "No grazie, preferisco mangiare prima.",
+              "isCorrect": false,
+              "feedback": "A bit dismissive."
+            },
+            {
+              "text": "Elena è un nome che non mi piace.",
+              "isCorrect": false,
+              "feedback": "Rude."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto! Elena, vieni qui un momento. Ti presento un amico.",
+          "english": "Perfect! Elena, come here a moment. I'll introduce you to a friend.",
+          "choices": [
+            {
+              "text": "Ciao Elena, piacere di conoscerti!",
+              "isCorrect": true,
+              "feedback": "Great introduction."
+            },
+            {
+              "text": "Chi sei tu? Non ti ho chiamata.",
+              "isCorrect": false,
+              "feedback": "Very rude."
+            },
+            {
+              "text": "Voglio andare a casa ora, ciao.",
+              "isCorrect": false,
+              "feedback": "Inappropriate exit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talking_about_music",
+      "title": "Talking about Music",
+      "description": "Discuss the playlist with the host and share your musical preferences.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ti piace la musica che ho scelto per stasera?",
+          "english": "Do you like the music I chose for tonight?",
+          "choices": [
+            {
+              "text": "Sì, mi piace molto! È perfetta per ballare.",
+              "isCorrect": true,
+              "feedback": "Positive and encouraging feedback."
+            },
+            {
+              "text": "No, è troppo lenta. Voglio dormire.",
+              "isCorrect": false,
+              "feedback": "Too negative for a party environment."
+            },
+            {
+              "text": "Cosa mangiamo dopo la musica?",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the host's question about music."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Bene! Qual è il tuo genere preferito di solito?",
+          "english": "Good! What is your favorite genre usually?",
+          "choices": [
+            {
+              "text": "Mi piace molto la musica pop italiana.",
+              "isCorrect": true,
+              "feedback": "Clear answer that keeps the conversation going."
+            },
+            {
+              "text": "Non ascolto mai musica, preferisco il silenzio.",
+              "isCorrect": false,
+              "feedback": "A bit of a conversation killer at a party."
+            },
+            {
+              "text": "Il mio colore preferito è il blu scuro.",
+              "isCorrect": false,
+              "feedback": "Answered with a color instead of a music genre."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Anch'io la adoro. Conosci questo cantante che sta cantando ora?",
+          "english": "I love it too. Do you know this singer who is singing now?",
+          "choices": [
+            {
+              "text": "Sì, è bravissimo! Come si chiama?",
+              "isCorrect": true,
+              "feedback": "Expresses interest and asks for more info."
+            },
+            {
+              "text": "No, canta malissimo. Spegni tutto.",
+              "isCorrect": false,
+              "feedback": "Very rude and aggressive comment."
+            },
+            {
+              "text": "Ho fame, dove sono i panini?",
+              "isCorrect": false,
+              "feedback": "Ignores the question about the singer."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Si chiama Marco Mengoni. È molto famoso in Italia.",
+          "english": "His name is Marco Mengoni. He is very famous in Italy.",
+          "choices": [
+            {
+              "text": "Ah sì! Ho sentito una sua canzone alla radio.",
+              "isCorrect": true,
+              "feedback": "Validates the host's information with a personal detail."
+            },
+            {
+              "text": "Chi è Marco? Non conosco nessun Marco.",
+              "isCorrect": false,
+              "feedback": "A bit dismissive of the famous singer."
+            },
+            {
+              "text": "Voglio comprare una macchina nuova rossa.",
+              "isCorrect": false,
+              "feedback": "Completely off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Dopo metto qualcosa di più ritmato. Ti va di ballare?",
+          "english": "Later I'll play something more upbeat. Do you want to dance?",
+          "choices": [
+            {
+              "text": "Certamente! Ballare mi diverte molto.",
+              "isCorrect": true,
+              "feedback": "Enthusiastic and polite acceptance."
+            },
+            {
+              "text": "No, ballare è inutile e noioso.",
+              "isCorrect": false,
+              "feedback": "Very negative response."
+            },
+            {
+              "text": "Il mio cane sa correre molto velocemente.",
+              "isCorrect": false,
+              "feedback": "Random comment about a dog."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ti piace anche andare ai concerti o preferisci ascoltare musica a casa?",
+          "english": "Do you also like going to concerts or do you prefer listening to music at home?",
+          "choices": [
+            {
+              "text": "Amo andare ai concerti! L'atmosfera è fantastica.",
+              "isCorrect": true,
+              "feedback": "Positive and engaging."
+            },
+            {
+              "text": "Preferisco restare a casa, c'è troppa gente fuori.",
+              "isCorrect": false,
+              "feedback": "A bit antisocial."
+            },
+            {
+              "text": "Voglio comprare una chitarra elettrica gialla.",
+              "isCorrect": false,
+              "feedback": "Off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Capisco. I concerti hanno un'energia incredibile, vero?",
+          "english": "I understand. Concerts have an incredible energy, right?",
+          "choices": [
+            {
+              "text": "Sì, assolutamente! Mi sento molto vivo.",
+              "isCorrect": true,
+              "feedback": "Agreeing enthusiastically."
+            },
+            {
+              "text": "No, è solo rumore fastidioso.",
+              "isCorrect": false,
+              "feedback": "Too negative."
+            },
+            {
+              "text": "Il mio telefono è scarico.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Qual è stato l'ultimo concerto che hai visto?",
+          "english": "What was the last concert you saw?",
+          "choices": [
+            {
+              "text": "Sono andato a vedere un gruppo jazz locale.",
+              "isCorrect": true,
+              "feedback": "Specific and interesting."
+            },
+            {
+              "text": "Non ricordo, forse dieci anni fa.",
+              "isCorrect": false,
+              "feedback": "A bit boring."
+            },
+            {
+              "text": "Mangio molte carote a colazione.",
+              "isCorrect": false,
+              "feedback": "Random."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Bello! Io vorrei tanto vedere i Måneskin dal vivo.",
+          "english": "Nice! I would love to see Måneskin live.",
+          "choices": [
+            {
+              "text": "Sarebbe fantastico! Piacciono molto anche a me.",
+              "isCorrect": true,
+              "feedback": "Finding common ground."
+            },
+            {
+              "text": "Chi sono? Non li ho mai sentiti nominare.",
+              "isCorrect": false,
+              "feedback": "Uninformed for someone who likes pop."
+            },
+            {
+              "text": "Il cielo è coperto di nuvole grigie.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Magari possiamo andarci insieme la prossima volta! Ti va?",
+          "english": "Maybe we can go together next time! Do you want to?",
+          "choices": [
+            {
+              "text": "Volentieri, teniamoci in contatto!",
+              "isCorrect": true,
+              "feedback": "Friendly and proactive."
+            },
+            {
+              "text": "No, vado solo con persone importanti.",
+              "isCorrect": false,
+              "feedback": "Very rude."
+            },
+            {
+              "text": "Ho bisogno di un cappello nuovo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meeting_new_people",
+      "title": "Meeting New People",
+      "description": "Introduce yourself to someone new at the party.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao, non ti ho mai visto qui. Come ti chiami?",
+          "english": "Hi, I've never seen you here. What's your name?",
+          "choices": [
+            {
+              "text": "Ciao! Mi chiamo Luca. E tu?",
+              "isCorrect": true,
+              "feedback": "Standard, polite introduction."
+            },
+            {
+              "text": "Perché lo vuoi sapere? È un segreto.",
+              "isCorrect": false,
+              "feedback": "Very weird and suspicious response for a party."
+            },
+            {
+              "text": "Ho dimenticato il mio nome a casa.",
+              "isCorrect": false,
+              "feedback": "Nonsensical response."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Piacere, Luca. Io sono Giulia. Sei un amico di Paolo?",
+          "english": "Nice to meet you, Luca. I'm Giulia. Are you a friend of Paolo?",
+          "choices": [
+            {
+              "text": "Sì, siamo colleghi di lavoro. Tu invece?",
+              "isCorrect": true,
+              "feedback": "Answers the question and returns the interest."
+            },
+            {
+              "text": "No, Paolo è una brutta persona.",
+              "isCorrect": false,
+              "feedback": "Unnecessarily negative about the host/mutual friend."
+            },
+            {
+              "text": "Abito in una casa molto grande.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Io conosco Paolo dall'università. Che lavoro fai?",
+          "english": "I know Paolo from university. What work do you do?",
+          "choices": [
+            {
+              "text": "Faccio l'ingegnere. È un lavoro interessante.",
+              "isCorrect": true,
+              "feedback": "Informative and positive."
+            },
+            {
+              "text": "Non lavoro, sono un principe famoso.",
+              "isCorrect": false,
+              "feedback": "Unlikely and sounds like a joke or lie."
+            },
+            {
+              "text": "Mangio solo mele rosse a pranzo.",
+              "isCorrect": false,
+              "feedback": "Off-topic response about eating habits."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Che bello! Ti piace vivere qui in città?",
+          "english": "How nice! Do you like living here in the city?",
+          "choices": [
+            {
+              "text": "Sì, mi piace molto. Ci sono molte feste!",
+              "isCorrect": true,
+              "feedback": "Appropriate answer for the current setting."
+            },
+            {
+              "text": "No, odio tutto e tutti qui.",
+              "isCorrect": false,
+              "feedback": "Way too negative."
+            },
+            {
+              "text": "Le scarpe blu sono in offerta.",
+              "isCorrect": false,
+              "feedback": "Completely irrelevant comment."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Vero! Spero che ci vedremo ancora. A presto!",
+          "english": "True! I hope we'll see each other again. See you soon!",
+          "choices": [
+            {
+              "text": "Spero di sì! Buona serata, Giulia.",
+              "isCorrect": true,
+              "feedback": "Polite and friendly closing."
+            },
+            {
+              "text": "No, non voglio vederti mai più.",
+              "isCorrect": false,
+              "feedback": "Extremely rude."
+            },
+            {
+              "text": "La pioggia cade dal cielo scuro.",
+              "isCorrect": false,
+              "feedback": "Nonsensical poetic attempt."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Oltre al lavoro, cosa ti piace fare nel tempo libero?",
+          "english": "Besides work, what do you like to do in your free time?",
+          "choices": [
+            {
+              "text": "Mi piace molto leggere e fare sport.",
+              "isCorrect": true,
+              "feedback": "Good conversational expansion."
+            },
+            {
+              "text": "Non faccio niente, sto solo a guardare il muro.",
+              "isCorrect": false,
+              "feedback": "A bit weird."
+            },
+            {
+              "text": "Il mio frigorifero è quasi vuoto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Interessante! Io amo molto viaggiare, specialmente in estate.",
+          "english": "Interesting! I love traveling a lot, especially in summer.",
+          "choices": [
+            {
+              "text": "Viaggiare è stupendo! Dove sei stata di recente?",
+              "isCorrect": true,
+              "feedback": "Showing interest in others."
+            },
+            {
+              "text": "Io odio viaggiare, è troppo faticoso.",
+              "isCorrect": false,
+              "feedback": "Negative."
+            },
+            {
+              "text": "Il pane costa molto oggi.",
+              "isCorrect": false,
+              "feedback": "Random."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sei mai stato nel sud dell'Italia? È bellissimo.",
+          "english": "Have you ever been to the south of Italy? It's beautiful.",
+          "choices": [
+            {
+              "text": "Sì, ho visitato la Sicilia l'anno scorso.",
+              "isCorrect": true,
+              "feedback": "Specific experience shared."
+            },
+            {
+              "text": "No, l'Italia finisce a Roma per me.",
+              "isCorrect": false,
+              "feedback": "A bit dismissive."
+            },
+            {
+              "text": "Ho perso le chiavi della macchina.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, la Sicilia e la Puglia sono meravigliose per il mare.",
+          "english": "Yes, Sicily and Puglia are wonderful for the sea.",
+          "choices": [
+            {
+              "text": "Hai ragione, il mare lì è cristallino.",
+              "isCorrect": true,
+              "feedback": "Agreeing and adding detail."
+            },
+            {
+              "text": "Preferisco la montagna e la neve.",
+              "isCorrect": false,
+              "feedback": "Contrasting but okay."
+            },
+            {
+              "text": "Voglio mangiare una mela verde.",
+              "isCorrect": false,
+              "feedback": "Random."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Dobbiamo scambiarci i numeri, così mi racconti dei tuoi viaggi!",
+          "english": "We should exchange numbers, so you can tell me about your travels!",
+          "choices": [
+            {
+              "text": "Certamente, ecco il mio numero!",
+              "isCorrect": true,
+              "feedback": "Positive conclusion."
+            },
+            {
+              "text": "Non do il mio numero agli sconosciuti.",
+              "isCorrect": false,
+              "feedback": "A bit harsh at a party."
+            },
+            {
+              "text": "La gomma da masticare è finita.",
+              "isCorrect": false,
+              "feedback": "Random."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "complimenting_host",
+      "title": "Complimenting the Host",
+      "description": "Thank the host for the invitation and praise the party organization.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Ti stai divertendo alla festa?",
+          "english": "Hi! Are you having fun at the party?",
+          "choices": [
+            {
+              "text": "Moltissimo! Grazie mille per l'invito.",
+              "isCorrect": true,
+              "feedback": "Enthusiastic and polite."
+            },
+            {
+              "text": "No, è la peggiore festa di sempre.",
+              "isCorrect": false,
+              "feedback": "Terribly rude to the host."
+            },
+            {
+              "text": "Il mio gatto dorme sul divano.",
+              "isCorrect": false,
+              "feedback": "Random and irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sono felice di sentirlo! Ti piace il cibo?",
+          "english": "I'm happy to hear that! Do you like the food?",
+          "choices": [
+            {
+              "text": "Sì, le pizzette sono squisite. Complimenti!",
+              "isCorrect": true,
+              "feedback": "Specific compliment that shows appreciation."
+            },
+            {
+              "text": "No, il cibo è freddo e cattivo.",
+              "isCorrect": false,
+              "feedback": "Insulting the host's efforts."
+            },
+            {
+              "text": "Voglio comprare un tavolo nuovo.",
+              "isCorrect": false,
+              "feedback": "Off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Grazie! Ho cucinato tutto il pomeriggio.",
+          "english": "Thanks! I cooked all afternoon.",
+          "choices": [
+            {
+              "text": "Si vede! Hai fatto un ottimo lavoro.",
+              "isCorrect": true,
+              "feedback": "Validates the host's hard work."
+            },
+            {
+              "text": "Potevi fare di meglio, onestamente.",
+              "isCorrect": false,
+              "feedback": "Extremely ungrateful and rude."
+            },
+            {
+              "text": "Il sole sorge sempre a est.",
+              "isCorrect": false,
+              "feedback": "A literal fact that has nothing to do with the party."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Troppo gentile. Vuoi assaggiare il dolce più tardi?",
+          "english": "Too kind. Do you want to taste the dessert later?",
+          "choices": [
+            {
+              "text": "Certamente, non vedo l'ora!",
+              "isCorrect": true,
+              "feedback": "Shows anticipation and politeness."
+            },
+            {
+              "text": "No, i tuoi dolci mi fanno male.",
+              "isCorrect": false,
+              "feedback": "Rude and offensive."
+            },
+            {
+              "text": "La mia macchina è parcheggiata lontano.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Allora ci vediamo dopo al brindisi!",
+          "english": "Perfect. Then see you later at the toast!",
+          "choices": [
+            {
+              "text": "D'accordo, a dopo! Grazie ancora.",
+              "isCorrect": true,
+              "feedback": "Polite confirmation and second thanks."
+            },
+            {
+              "text": "Non voglio fare nessun brindisi.",
+              "isCorrect": false,
+              "feedback": "Antisocial and rude."
+            },
+            {
+              "text": "I pesci nuotano nell'acqua salata.",
+              "isCorrect": false,
+              "feedback": "Nonsensical random fact."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Grazie, sei molto gentile. Vuoi vedere il resto della casa?",
+          "english": "Thanks, you are very kind. Do you want to see the rest of the house?",
+          "choices": [
+            {
+              "text": "Sì, mi piacerebbe molto!",
+              "isCorrect": true,
+              "feedback": "Polite interest."
+            },
+            {
+              "text": "No, le case degli altri mi annoiano.",
+              "isCorrect": false,
+              "feedback": "Rude."
+            },
+            {
+              "text": "Il soffitto è bianco.",
+              "isCorrect": false,
+              "feedback": "Stating the obvious."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ho appena ristrutturato la cucina, ne vado molto fiero.",
+          "english": "I just renovated the kitchen, I'm very proud of it.",
+          "choices": [
+            {
+              "text": "È stupenda! Hai un ottimo gusto.",
+              "isCorrect": true,
+              "feedback": "Generous compliment."
+            },
+            {
+              "text": "Sembra vecchia e fuori moda.",
+              "isCorrect": false,
+              "feedback": "Insulting."
+            },
+            {
+              "text": "Mi serve un bicchiere d'acqua.",
+              "isCorrect": false,
+              "feedback": "Ignoring the host."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ti piace lo stile moderno o preferisci quello classico?",
+          "english": "Do you like modern style or do you prefer the classic one?",
+          "choices": [
+            {
+              "text": "Preferisco lo stile moderno e minimalista.",
+              "isCorrect": true,
+              "feedback": "Sharing a preference."
+            },
+            {
+              "text": "Non mi piace nessuno stile, preferisco il vuoto.",
+              "isCorrect": false,
+              "feedback": "Weird."
+            },
+            {
+              "text": "Le sedie sono fatte di legno.",
+              "isCorrect": false,
+              "feedback": "Literal observation."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottima scelta. La semplicità è sempre la cosa migliore.",
+          "english": "Great choice. Simplicity is always the best thing.",
+          "choices": [
+            {
+              "text": "Grazie, la semplicità è tutto.",
+              "isCorrect": true,
+              "feedback": "Agreeing politely."
+            },
+            {
+              "text": "No, non mi piace proprio.",
+              "isCorrect": false,
+              "feedback": "Arrogant."
+            },
+            {
+              "text": "La lampadina è accesa.",
+              "isCorrect": false,
+              "feedback": "Random."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Vieni, ti faccio vedere il terrazzo. C'è una vista bellissima.",
+          "english": "Come, I'll show you the terrace. There's a beautiful view.",
+          "choices": [
+            {
+              "text": "Che meraviglia! Si vede tutta la città.",
+              "isCorrect": true,
+              "feedback": "Positive and observant."
+            },
+            {
+              "text": "Fa troppo freddo fuori, resto qui.",
+              "isCorrect": false,
+              "feedback": "A bit negative."
+            },
+            {
+              "text": "Il terrazzo è fatto di mattoni.",
+              "isCorrect": false,
+              "feedback": "Literal observation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

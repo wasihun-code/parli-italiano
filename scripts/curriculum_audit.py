@@ -39,9 +39,13 @@ def main(scenario_slug):
 
     for conv in conversations:
         for msg in conv.get("messages", []):
-            it_text = msg["text"].strip()
-            conv_sentences.add(it_text)
-            conv_words.update(tokenize(it_text))
+            role = msg.get("role") or msg.get("speaker")
+            text = msg.get("text")
+            
+            if text and role == "host":
+                it_text = text.strip()
+                conv_sentences.add(it_text)
+                conv_words.update(tokenize(it_text))
             
             for choice in msg.get("choices", []):
                 if choice.get("isCorrect"):

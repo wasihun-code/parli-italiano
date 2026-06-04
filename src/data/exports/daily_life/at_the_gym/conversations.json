@@ -1,0 +1,953 @@
+{
+  "scenarioId": 57,
+  "conversations": [
+    {
+      "id": "membership_inquiry",
+      "title": "Gym Membership Inquiry",
+      "description": "Ask for information about gym memberships and prices.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Benvenuto in palestra. Come posso aiutarla?",
+          "english": "Good morning! Welcome to the gym. How can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei informazioni sull'iscrizione.",
+              "isCorrect": true,
+              "feedback": "Perfect opening to ask for information."
+            },
+            {
+              "text": "Vorrei prenotare un tavolo per stasera.",
+              "isCorrect": false,
+              "feedback": "This isn't a restaurant!"
+            },
+            {
+              "text": "Dov'è la stazione dei treni più vicina?",
+              "isCorrect": false,
+              "feedback": "You are at the gym, not a train station."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Abbiamo diverse opzioni per i nuovi soci. Le interessa un abbonamento?",
+          "english": "Certainly. We have several options for new members. Are you interested in a membership?",
+          "choices": [
+            {
+              "text": "Sì, quali sono i prezzi per un abbonamento mensile?",
+              "isCorrect": true,
+              "feedback": "A very practical question about costs."
+            },
+            {
+              "text": "No, cerco solo un paio di scarpe nuove.",
+              "isCorrect": false,
+              "feedback": "This is a gym, not a shoe store."
+            },
+            {
+              "text": "Qual è l'orario del prossimo volo?",
+              "isCorrect": false,
+              "feedback": "Wrong scenario!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Il mensile costa cinquanta euro. L'annuale è più conveniente. Cosa preferisce?",
+          "english": "The monthly one costs fifty euros. The annual one is more convenient. What do you prefer?",
+          "choices": [
+            {
+              "text": "Per ora preferisco l'abbonamento mensile.",
+              "isCorrect": true,
+              "feedback": "Good choice for a beginner."
+            },
+            {
+              "text": "Vorrei un chilo di pane fresco.",
+              "isCorrect": false,
+              "feedback": "You're still in the gym!"
+            },
+            {
+              "text": "Mi servono delle medicine per la febbre.",
+              "isCorrect": false,
+              "feedback": "This isn't a pharmacy."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. Serve anche un certificato medico per l'iscrizione. Ce l'ha?",
+          "english": "Great. A medical certificate is also needed for registration. Do you have it?",
+          "choices": [
+            {
+              "text": "No, devo andare dal mio medico a prenderlo.",
+              "isCorrect": true,
+              "feedback": "Correct, medical certificates are often required in Italy."
+            },
+            {
+              "text": "Sì, ho qui il mio passaporto.",
+              "isCorrect": false,
+              "feedback": "They asked for a medical certificate, not a passport."
+            },
+            {
+              "text": "Ho dimenticato le chiavi della macchina.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the question."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Nessun problema. Può portarlo la prossima settimana. Vuole pagare adesso?",
+          "english": "No problem. You can bring it next week. Do you want to pay now?",
+          "choices": [
+            {
+              "text": "Sì, posso pagare con la carta di credito?",
+              "isCorrect": true,
+              "feedback": "Standard way to ask about payment methods."
+            },
+            {
+              "text": "No, preferisco pagare con i francobolli.",
+              "isCorrect": false,
+              "feedback": "Gyms don't accept stamps!"
+            },
+            {
+              "text": "Sì, quanto costa questo giornale?",
+              "isCorrect": false,
+              "feedback": "You're paying for a membership, not a newspaper."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, accettiamo tutte le carte. C'è anche una quota di iscrizione di venti euro.",
+          "english": "Yes, we accept all cards. There is also a registration fee of twenty euros.",
+          "choices": [
+            {
+              "text": "Va bene. Quindi il totale è settanta euro?",
+              "isCorrect": true,
+              "feedback": "Good math! 50 + 20 = 70."
+            },
+            {
+              "text": "No, è troppo caro per un caffè.",
+              "isCorrect": false,
+              "feedback": "It's a gym membership, not a coffee."
+            },
+            {
+              "text": "Posso avere uno sconto per studenti?",
+              "isCorrect": false,
+              "feedback": "A valid question, but usually you'd confirm the total first."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Esatto, settanta euro in totale. Mi serve un documento d'identità.",
+          "english": "Exactly, seventy euros in total. I need an identification document.",
+          "choices": [
+            {
+              "text": "Ecco la mia carta d'identità. Va bene?",
+              "isCorrect": true,
+              "feedback": "Perfect response."
+            },
+            {
+              "text": "Non ho soldi, posso pagare domani?",
+              "isCorrect": false,
+              "feedback": "You just said you'd pay with a card!"
+            },
+            {
+              "text": "Dov'è l'uscita di sicurezza?",
+              "isCorrect": false,
+              "feedback": "A bit paranoid!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, va benissimo. Adesso le faccio la tessera della palestra.",
+          "english": "Yes, that's fine. Now I'll make your gym card.",
+          "choices": [
+            {
+              "text": "Grazie. La tessera serve per ogni ingresso?",
+              "isCorrect": true,
+              "feedback": "A sensible question about how things work."
+            },
+            {
+              "text": "Mi serve una tessera per l'autobus.",
+              "isCorrect": false,
+              "feedback": "Wrong kind of card!"
+            },
+            {
+              "text": "Non voglio una foto sulla tessera.",
+              "isCorrect": false,
+              "feedback": "Usually it's required!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, deve mostrarla all'ingresso ogni volta. Ecco la sua tessera.",
+          "english": "Yes, you must show it at the entrance every time. Here is your card.",
+          "choices": [
+            {
+              "text": "Perfetto, grazie mille per l'aiuto.",
+              "isCorrect": true,
+              "feedback": "Polite conclusion."
+            },
+            {
+              "text": "La tessera è di un colore brutto.",
+              "isCorrect": false,
+              "feedback": "A bit rude!"
+            },
+            {
+              "text": "Voglio restituire questo libro.",
+              "isCorrect": false,
+              "feedback": "Still not a library."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego! Vuole vedere dove sono gli spogliatoi adesso?",
+          "english": "You're welcome! Do you want to see where the locker rooms are now?",
+          "choices": [
+            {
+              "text": "Sì, volentieri. Grazie ancora.",
+              "isCorrect": true,
+              "feedback": "Moving to the next step."
+            },
+            {
+              "text": "No, vado a dormire ora.",
+              "isCorrect": false,
+              "feedback": "You just signed up!"
+            },
+            {
+              "text": "Dove posso comprare un gelato?",
+              "isCorrect": false,
+              "feedback": "Not at the gym!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym_tour",
+      "title": "Touring the Facility",
+      "description": "Explore the gym equipment and facilities.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Venga, le mostro la sala pesi. È molto grande, vero?",
+          "english": "Come, I'll show you the weight room. It's very big, isn't it?",
+          "choices": [
+            {
+              "text": "Sì, ci sono molti attrezzi moderni.",
+              "isCorrect": true,
+              "feedback": "Observant and positive."
+            },
+            {
+              "text": "Sì, il letto è molto comodo.",
+              "isCorrect": false,
+              "feedback": "There are no beds in a weight room!"
+            },
+            {
+              "text": "No, preferisco il divano di casa.",
+              "isCorrect": false,
+              "feedback": "Why are you at the gym then?"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Qui abbiamo i tapis roulant e le cyclette per il cardio. Le usa spesso?",
+          "english": "Here we have the treadmills and stationary bikes for cardio. Do you use them often?",
+          "choices": [
+            {
+              "text": "Sì, mi piace correre per venti minuti.",
+              "isCorrect": true,
+              "feedback": "A common gym routine."
+            },
+            {
+              "text": "No, preferisco guidare la macchina.",
+              "isCorrect": false,
+              "feedback": "They are talking about exercise machines!"
+            },
+            {
+              "text": "Sì, corro sempre per prendere il bus.",
+              "isCorrect": false,
+              "feedback": "Not the same thing!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo per il cuore. Dietro l'angolo ci sono le macchine per le gambe.",
+          "english": "Great for the heart. Around the corner there are the leg machines.",
+          "choices": [
+            {
+              "text": "Bene, vorrei allenare le gambe oggi.",
+              "isCorrect": true,
+              "feedback": "Focusing on the workout goal."
+            },
+            {
+              "text": "Non ho le gambe, uso solo le braccia.",
+              "isCorrect": false,
+              "feedback": "A bit strange!"
+            },
+            {
+              "text": "Le macchine sono troppo veloci.",
+              "isCorrect": false,
+              "feedback": "They only move if you move them!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Questi sono gli spogliatoi. Ci sono molte docce e armadietti.",
+          "english": "These are the locker rooms. There are many showers and lockers.",
+          "choices": [
+            {
+              "text": "Serve un lucchetto per l'armadietto?",
+              "isCorrect": true,
+              "feedback": "A very practical question."
+            },
+            {
+              "text": "Posso fare il bagno nella doccia?",
+              "isCorrect": false,
+              "feedback": "That's what showers are for, but phrased oddly."
+            },
+            {
+              "text": "Dov'è il mio spazzolino da denti?",
+              "isCorrect": false,
+              "feedback": "Usually you bring your own!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, deve portare il suo lucchetto da casa. Ne ha uno?",
+          "english": "Yes, you must bring your own lock from home. Do you have one?",
+          "choices": [
+            {
+              "text": "No, posso comprarlo qui in palestra?",
+              "isCorrect": true,
+              "feedback": "Good follow-up."
+            },
+            {
+              "text": "Sì, ho una chiave molto grande.",
+              "isCorrect": false,
+              "feedback": "They asked for a lock."
+            },
+            {
+              "text": "No, lascio tutto aperto.",
+              "isCorrect": false,
+              "feedback": "Not safe!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, li vendiamo alla reception. Ricordi di portare sempre un asciugamano.",
+          "english": "Yes, we sell them at the reception. Remember to always bring a towel.",
+          "choices": [
+            {
+              "text": "Certo, l'asciugamano è obbligatorio, vero?",
+              "isCorrect": true,
+              "feedback": "Confirming gym rules."
+            },
+            {
+              "text": "No, preferisco asciugarmi al sole.",
+              "isCorrect": false,
+              "feedback": "In the gym?"
+            },
+            {
+              "text": "L'asciugamano è troppo pesante.",
+              "isCorrect": false,
+              "feedback": "Unlikely."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, per igiene. Abbiamo anche una zona relax con sauna. Vuole vederla?",
+          "english": "Yes, for hygiene. We also have a relaxation area with a sauna. Do you want to see it?",
+          "choices": [
+            {
+              "text": "Sì, mi piace molto la sauna dopo l'allenamento.",
+              "isCorrect": true,
+              "feedback": "Expressing interest in facilities."
+            },
+            {
+              "text": "No, non mi piace per niente il caldo eccessivo della sauna.",
+              "isCorrect": false,
+              "feedback": "Saunas are hot!"
+            },
+            {
+              "text": "Scusi, ma la sauna è piena d'acqua come una piscina?",
+              "isCorrect": false,
+              "feedback": "That would be a pool or steam room."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "È proprio qui. Guardi, è molto pulita e silenziosa.",
+          "english": "It's right here. Look, it's very clean and quiet.",
+          "choices": [
+            {
+              "text": "Bellissima. Quali sono gli orari di apertura?",
+              "isCorrect": true,
+              "feedback": "Asking for operational hours."
+            },
+            {
+              "text": "Perché c'è buio qui dentro?",
+              "isCorrect": false,
+              "feedback": "It's a sauna, it's meant to be dim."
+            },
+            {
+              "text": "Voglio cantare una canzone.",
+              "isCorrect": false,
+              "feedback": "Not in the quiet zone!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "La palestra è aperta dalle sette del mattino alle dieci di sera.",
+          "english": "The gym is open from seven in the morning until ten at night.",
+          "choices": [
+            {
+              "text": "Ottimo, posso venire prima del lavoro.",
+              "isCorrect": true,
+              "feedback": "Planning the schedule."
+            },
+            {
+              "text": "È troppo presto per me, dormo.",
+              "isCorrect": false,
+              "feedback": "The gym is open late too!"
+            },
+            {
+              "text": "A che ora chiude il supermercato?",
+              "isCorrect": false,
+              "feedback": "Wrong store!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Ha altre domande sugli attrezzi o sulla struttura?",
+          "english": "Perfect. Do you have other questions about the equipment or the facility?",
+          "choices": [
+            {
+              "text": "No, per ora è tutto chiaro. Grazie.",
+              "isCorrect": true,
+              "feedback": "Concluding the tour."
+            },
+            {
+              "text": "Sì, dove posso comprare un biglietto aereo?",
+              "isCorrect": false,
+              "feedback": "Still at the gym!"
+            },
+            {
+              "text": "Voglio andare a casa adesso.",
+              "isCorrect": false,
+              "feedback": "A bit abrupt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "class_info",
+      "title": "Asking about Classes",
+      "description": "Inquire about fitness classes like yoga or pilates.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Oltre alla sala pesi, offriamo molti corsi di gruppo. Le interessano?",
+          "english": "Besides the weight room, we offer many group classes. Are you interested in them?",
+          "choices": [
+            {
+              "text": "Sì, che tipo di corsi avete in programma?",
+              "isCorrect": true,
+              "feedback": "Good question to see the options."
+            },
+            {
+              "text": "No, preferisco giocare a calcio da solo.",
+              "isCorrect": false,
+              "feedback": "Hard to do alone!"
+            },
+            {
+              "text": "Sì, voglio un corso di cucina italiana.",
+              "isCorrect": false,
+              "feedback": "This is a gym, not a cooking school."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Abbiamo yoga, pilates, zumba e crossfit. Quale preferisce?",
+          "english": "We have yoga, pilates, zumba, and crossfit. Which do you prefer?",
+          "choices": [
+            {
+              "text": "Mi piacerebbe provare il corso di yoga.",
+              "isCorrect": true,
+              "feedback": "A popular and healthy choice."
+            },
+            {
+              "text": "Preferisco il corso di pittura ad olio.",
+              "isCorrect": false,
+              "feedback": "Wrong kind of class!"
+            },
+            {
+              "text": "Non mi piace nessuno di questi sport.",
+              "isCorrect": false,
+              "feedback": "Negative approach."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Lo yoga è eccellente per la flessibilità. C'è un corso domani sera.",
+          "english": "Yoga is excellent for flexibility. There is a class tomorrow evening.",
+          "choices": [
+            {
+              "text": "A che ora inizia il corso di yoga?",
+              "isCorrect": true,
+              "feedback": "Clarifying the schedule."
+            },
+            {
+              "text": "A che ora inizia il film al cinema?",
+              "isCorrect": false,
+              "feedback": "You're asking about yoga!"
+            },
+            {
+              "text": "Non ho tempo per dormire domani.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Inizia alle diciannove e dura un'ora. Deve prenotare in anticipo.",
+          "english": "It starts at 7 PM and lasts one hour. You must book in advance.",
+          "choices": [
+            {
+              "text": "Capito. Come posso prenotare il mio posto?",
+              "isCorrect": true,
+              "feedback": "Asking for booking instructions."
+            },
+            {
+              "text": "Va bene, vengo senza dire niente.",
+              "isCorrect": false,
+              "feedback": "They just said you need to book!"
+            },
+            {
+              "text": "Voglio un posto in prima fila al teatro.",
+              "isCorrect": false,
+              "feedback": "Wrong venue!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Può prenotare tramite la nostra applicazione o qui alla reception.",
+          "english": "You can book via our app or here at the reception.",
+          "choices": [
+            {
+              "text": "Posso prenotare adesso qui alla reception?",
+              "isCorrect": true,
+              "feedback": "Practical and immediate."
+            },
+            {
+              "text": "No, non so usare il telefono cellulare.",
+              "isCorrect": false,
+              "feedback": "You can book at the reception too."
+            },
+            {
+              "text": "Voglio prenotare un volo per Roma.",
+              "isCorrect": false,
+              "feedback": "Wrong booking!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Certamente. La segno per il corso di yoga di domani. Serve altro?",
+          "english": "Certainly. I'll sign you up for tomorrow's yoga class. Anything else?",
+          "choices": [
+            {
+              "text": "C'è un limite di persone per ogni corso?",
+              "isCorrect": true,
+              "feedback": "Inquiring about class capacity."
+            },
+            {
+              "text": "Sì, mi serve un vestito da sposa.",
+              "isCorrect": false,
+              "feedback": "Totally unrelated."
+            },
+            {
+              "text": "No, voglio solo stare seduto.",
+              "isCorrect": false,
+              "feedback": "Not during a yoga class!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, massimo quindici persone. È meglio prenotare presto.",
+          "english": "Yes, maximum fifteen people. It's better to book early.",
+          "choices": [
+            {
+              "text": "E se non posso venire? Posso cancellare?",
+              "isCorrect": true,
+              "feedback": "Asking about cancellation policy."
+            },
+            {
+              "text": "Quindici persone sono troppe per me.",
+              "isCorrect": false,
+              "feedback": "A bit antisocial."
+            },
+            {
+              "text": "Voglio invitare cento amici al corso.",
+              "isCorrect": false,
+              "feedback": "They just said the limit is fifteen!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, ma deve cancellare almeno due ore prima dell'inizio.",
+          "english": "Yes, but you must cancel at least two hours before the start.",
+          "choices": [
+            {
+              "text": "Va bene, grazie per l'informazione.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the rule."
+            },
+            {
+              "text": "Cancellerò dopo la fine del corso.",
+              "isCorrect": false,
+              "feedback": "That makes no sense!"
+            },
+            {
+              "text": "Non cancellerò mai niente in vita mia.",
+              "isCorrect": false,
+              "feedback": "Dramatic!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Abbiamo anche corsi di nuoto in piscina. Le interessa?",
+          "english": "Perfect. We also have swimming classes in the pool. Are you interested?",
+          "choices": [
+            {
+              "text": "Forse in futuro. Ora inizio con lo yoga.",
+              "isCorrect": true,
+              "feedback": "Clear plan for now."
+            },
+            {
+              "text": "Sì, ma non so nuotare nell'acqua.",
+              "isCorrect": false,
+              "feedback": "That's why you'd take a class!"
+            },
+            {
+              "text": "No, l'acqua è troppo bagnata.",
+              "isCorrect": false,
+              "feedback": "Obvious statement."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va benissimo. Ci vediamo domani per la lezione di yoga!",
+          "english": "Very well. See you tomorrow for the yoga lesson!",
+          "choices": [
+            {
+              "text": "Certamente, a domani. Buona serata!",
+              "isCorrect": true,
+              "feedback": "Polite sign-off."
+            },
+            {
+              "text": "No, ho cambiato idea, non vengo.",
+              "isCorrect": false,
+              "feedback": "After just booking? Rude."
+            },
+            {
+              "text": "Dov'è l'ombrello? Sta piovendo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant context."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "personal_trainer",
+      "title": "Booking a Personal Trainer",
+      "description": "Request a personal training session and an exercise plan.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Vuoi una scheda di allenamento personalizzata oggi?",
+          "english": "Hi! Do you want a personalized training plan today?",
+          "choices": [
+            {
+              "text": "Sì, vorrei parlare con un istruttore.",
+              "isCorrect": true,
+              "feedback": "Correct person to ask for a plan."
+            },
+            {
+              "text": "Sì, voglio un menù con molta pasta.",
+              "isCorrect": false,
+              "feedback": "An instructor gives exercise plans, not restaurant menus!"
+            },
+            {
+              "text": "No, preferisco dormire sul tappeto.",
+              "isCorrect": false,
+              "feedback": "Gym mats are for exercise!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sono io l'istruttore di turno. Qual è il tuo obiettivo?",
+          "english": "I am the instructor on duty. What is your goal?",
+          "choices": [
+            {
+              "text": "Vorrei aumentare la mia forza e i muscoli.",
+              "isCorrect": true,
+              "feedback": "A clear fitness goal."
+            },
+            {
+              "text": "Voglio diventare un astronauta famoso.",
+              "isCorrect": false,
+              "feedback": "Not something a gym instructor can help with!"
+            },
+            {
+              "text": "Il mio obiettivo è mangiare molti dolci.",
+              "isCorrect": false,
+              "feedback": "The opposite of a gym goal!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo. Quante volte a settimana puoi venire in palestra?",
+          "english": "Great. How many times a week can you come to the gym?",
+          "choices": [
+            {
+              "text": "Posso venire tre volte a settimana.",
+              "isCorrect": true,
+              "feedback": "A realistic frequency."
+            },
+            {
+              "text": "Vengo ogni cento anni circa.",
+              "isCorrect": false,
+              "feedback": "Impossible."
+            },
+            {
+              "text": "Sì, la settimana ha sette giorni.",
+              "isCorrect": false,
+              "feedback": "Doesn't answer the question."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Tre volte è perfetto. Ti preparo una scheda con esercizi diversi.",
+          "english": "Three times is perfect. I'll prepare a plan for you with different exercises.",
+          "choices": [
+            {
+              "text": "Grazie. Quali esercizi faremo per le braccia?",
+              "isCorrect": true,
+              "feedback": "Asking for specifics."
+            },
+            {
+              "text": "Voglio fare esercizi per le orecchie.",
+              "isCorrect": false,
+              "feedback": "You can't really train your ears!"
+            },
+            {
+              "text": "Non voglio fare nessun esercizio oggi.",
+              "isCorrect": false,
+              "feedback": "But you just asked for a plan!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Useremo i pesi e alcune macchine. Hai mai usato questi attrezzi?",
+          "english": "We will use weights and some machines. Have you ever used this equipment?",
+          "choices": [
+            {
+              "text": "No, è la prima volta. Puoi spiegarmi come funzionano?",
+              "isCorrect": true,
+              "feedback": "Honest and proactive."
+            },
+            {
+              "text": "Sì, li uso sempre per cucinare la carne.",
+              "isCorrect": false,
+              "feedback": "Gym equipment is not for cooking!"
+            },
+            {
+              "text": "Le macchine sono troppo rumorose per me.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Certamente, ti mostrerò tutto io. Preferisci allenarti la mattina o la sera?",
+          "english": "Certainly, I'll show you everything. Do you prefer to train in the morning or the evening?",
+          "choices": [
+            {
+              "text": "Preferisco allenarmi la mattina presto.",
+              "isCorrect": true,
+              "feedback": "Stating a preference."
+            },
+            {
+              "text": "Preferisco allenarmi durante la notte.",
+              "isCorrect": false,
+              "feedback": "The gym is closed then!"
+            },
+            {
+              "text": "Non mi piace né la mattina né la sera.",
+              "isCorrect": false,
+              "feedback": "When will you train then?"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Bene, la mattina c'è meno gente. Vuoi prenotare una sessione individuale?",
+          "english": "Good, there are fewer people in the morning. Do you want to book an individual session?",
+          "choices": [
+            {
+              "text": "Sì, quanto costa una sessione con te?",
+              "isCorrect": true,
+              "feedback": "Inquiring about personal trainer rates."
+            },
+            {
+              "text": "Sì, voglio prenotare una stanza d'albergo.",
+              "isCorrect": false,
+              "feedback": "Wrong booking again!"
+            },
+            {
+              "text": "No, voglio allenarmi con mille persone.",
+              "isCorrect": false,
+              "feedback": "That's a very big group!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Una sessione individuale costa trenta euro. È un prezzo speciale.",
+          "english": "An individual session costs thirty euros. It's a special price.",
+          "choices": [
+            {
+              "text": "Va bene, prenotiamo per lunedì mattina alle otto.",
+              "isCorrect": true,
+              "feedback": "Setting a specific appointment."
+            },
+            {
+              "text": "È troppo economico, voglio pagare di più.",
+              "isCorrect": false,
+              "feedback": "Unlikely response!"
+            },
+            {
+              "text": "Lunedì mattina devo andare al lavoro.",
+              "isCorrect": false,
+              "feedback": "But you said you prefer to train before work!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto, lunedì alle otto. Ti aspetto qui all'ingresso.",
+          "english": "Perfect, Monday at eight. I'll wait for you here at the entrance.",
+          "choices": [
+            {
+              "text": "D'accordo. Devo portare qualcosa in particolare?",
+              "isCorrect": true,
+              "feedback": "Checking for requirements."
+            },
+            {
+              "text": "Sì, porto la mia televisione per guardare i film.",
+              "isCorrect": false,
+              "feedback": "Not at the gym!"
+            },
+            {
+              "text": "Non verrò, ho troppa paura dell'istruttore.",
+              "isCorrect": false,
+              "feedback": "Negative."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Solo scarpe pulite, un asciugamano e tanta energia! A lunedì!",
+          "english": "Just clean shoes, a towel, and lots of energy! See you Monday!",
+          "choices": [
+            {
+              "text": "Certamente! A lunedì, grazie mille.",
+              "isCorrect": true,
+              "feedback": "Closing the conversation nicely."
+            },
+            {
+              "text": "No, porterò solo i miei gatti.",
+              "isCorrect": false,
+              "feedback": "No pets allowed!"
+            },
+            {
+              "text": "Dov'è il bagno? Ho molta fretta.",
+              "isCorrect": false,
+              "feedback": "Abrupt ending."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

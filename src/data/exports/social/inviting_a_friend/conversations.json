@@ -1,0 +1,953 @@
+{
+  "scenarioId": 73,
+  "conversations": [
+    {
+      "id": "birthday_party",
+      "title": "Inviting to a Birthday Party",
+      "description": "Invite a friend to your birthday party and discuss the details.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Come stai? Senti, sabato sera faccio una festa per il mio compleanno.",
+          "english": "Hi! How are you? Listen, Saturday night I'm having a party for my birthday.",
+          "choices": [
+            {
+              "text": "Che bello! Tanti auguri! A che ora inizia la festa?",
+              "isCorrect": true,
+              "feedback": "Great response, congratulating and asking for the time."
+            },
+            {
+              "text": "Mi dispiace, ma non posso venire sabato sera.",
+              "isCorrect": false,
+              "feedback": "A bit premature to decline before hearing the details."
+            },
+            {
+              "text": "Qual è il prezzo del biglietto per il museo oggi?",
+              "isCorrect": false,
+              "feedback": "This is a birthday party, not a museum visit."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Grazie! La festa inizia alle otto a casa mia. Puoi venire?",
+          "english": "Thanks! The party starts at eight at my house. Can you come?",
+          "choices": [
+            {
+              "text": "Sì, vengo molto volentieri! Posso portare qualcosa?",
+              "isCorrect": true,
+              "feedback": "Perfect, you accepted and offered to bring something."
+            },
+            {
+              "text": "No, preferisco andare a dormire presto questo sabato.",
+              "isCorrect": false,
+              "feedback": "A bit blunt. Try to be more polite even if declining."
+            },
+            {
+              "text": "Dove posso comprare un nuovo computer in centro?",
+              "isCorrect": false,
+              "feedback": "Wrong topic. Stay focused on the invitation."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, se vuoi puoi portare una torta o qualcosa da bere.",
+          "english": "Yes, if you want you can bring a cake or something to drink.",
+          "choices": [
+            {
+              "text": "Va bene, porto io una torta al cioccolato. Ti piace?",
+              "isCorrect": true,
+              "feedback": "Excellent, you confirmed what you will bring and asked a follow-up."
+            },
+            {
+              "text": "Non mi va di portare niente, vengo solo per mangiare.",
+              "isCorrect": false,
+              "feedback": "A bit selfish. It's polite to bring something when asked."
+            },
+            {
+              "text": "Quanto costa il noleggio della macchina per un giorno?",
+              "isCorrect": false,
+              "feedback": "Irrelevant question."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Mi piace moltissimo! Grazie mille. Ci saranno anche Marco e Giulia.",
+          "english": "I like it very much! Thanks a lot. Marco and Giulia will be there too.",
+          "choices": [
+            {
+              "text": "Ah, che bello! Li conosco bene. Sono molto simpatici!",
+              "isCorrect": true,
+              "feedback": "Good job continuing the social conversation."
+            },
+            {
+              "text": "Non conosco nessuno di loro e non voglio conoscerli.",
+              "isCorrect": false,
+              "feedback": "Too negative. Meeting new people is part of a party."
+            },
+            {
+              "text": "A che ora parte il prossimo treno per la città?",
+              "isCorrect": false,
+              "feedback": "Still off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Davvero? Sono contento! Spero che ci sarà anche un po' di musica.",
+          "english": "Really? I'm glad! I hope there will be some music too.",
+          "choices": [
+            {
+              "text": "Ottima idea! Ti serve aiuto per preparare la musica?",
+              "isCorrect": true,
+              "feedback": "Offering help is very polite."
+            },
+            {
+              "text": "Odio la musica alle feste, preferisco il silenzio totale.",
+              "isCorrect": false,
+              "feedback": "A party without music is quite unusual."
+            },
+            {
+              "text": "Qual è il numero di telefono del ristorante cinese?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "No grazie, ho già preparato una bella playlist. Sarà divertente!",
+          "english": "No thanks, I've already prepared a nice playlist. It will be fun!",
+          "choices": [
+            {
+              "text": "Non ne dubito! Hai già invitato molti altri amici?",
+              "isCorrect": true,
+              "feedback": "Asking about the guest list is a natural progression."
+            },
+            {
+              "text": "Spero che la tua musica non sia troppo brutta.",
+              "isCorrect": false,
+              "feedback": "That's quite rude to say to the host."
+            },
+            {
+              "text": "Dove posso trovare un ombrello perché sta piovendo?",
+              "isCorrect": false,
+              "feedback": "Off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, saremo circa quindici persone. Sarà una bella serata.",
+          "english": "Yes, we will be about fifteen people. It will be a nice evening.",
+          "choices": [
+            {
+              "text": "Quindici persone? È un bel gruppo! Dove abiti esattamente?",
+              "isCorrect": true,
+              "feedback": "Asking for the location is necessary to attend."
+            },
+            {
+              "text": "Quindici sono troppi, preferisco quando siamo in due.",
+              "isCorrect": false,
+              "feedback": "A party with two people is just a meeting."
+            },
+            {
+              "text": "Quanto costa un chilo di pane al forno qui vicino?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Abito in via Roma, numero dieci. È vicino alla piazza centrale.",
+          "english": "I live in via Roma, number ten. It's near the central square.",
+          "choices": [
+            {
+              "text": "Ah, conosco quella zona. È molto facile da trovare.",
+              "isCorrect": true,
+              "feedback": "Confirming you know the way is good."
+            },
+            {
+              "text": "Via Roma è troppo lontana, non voglio camminare tanto.",
+              "isCorrect": false,
+              "feedback": "You could take a bus or a taxi."
+            },
+            {
+              "text": "Mi serve un dottore perché mi fa male la testa.",
+              "isCorrect": false,
+              "feedback": "If you are ill, you shouldn't go to a party."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, è molto comodo. Ti mando anche la posizione su WhatsApp.",
+          "english": "Yes, it's very convenient. I'll also send you the location on WhatsApp.",
+          "choices": [
+            {
+              "text": "Grazie mille! Così sono sicuro di non sbagliare strada.",
+              "isCorrect": true,
+              "feedback": "Appreciating the extra help."
+            },
+            {
+              "text": "Non usare WhatsApp, preferisco ricevere una lettera.",
+              "isCorrect": false,
+              "feedback": "A bit old-fashioned and impractical for today."
+            },
+            {
+              "text": "A che ora chiude il supermercato sabato sera?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Figurati! Allora ci vediamo sabato alle otto. Non mancare!",
+          "english": "Don't mention it! See you Saturday at eight then. Don't miss it!",
+          "choices": [
+            {
+              "text": "Certamente! A sabato allora, non vedo l'ora! Ciao!",
+              "isCorrect": true,
+              "feedback": "Perfect closing for the conversation."
+            },
+            {
+              "text": "Forse vengo, ma non prometto niente di sicuro.",
+              "isCorrect": false,
+              "feedback": "A bit non-committal for a friend."
+            },
+            {
+              "text": "Dove posso comprare un biglietto per il teatro?",
+              "isCorrect": false,
+              "feedback": "Wrong event."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dinner_invitation",
+      "title": "Dinner Invitation",
+      "description": "Invite a friend to dinner at a restaurant.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao, sei libero stasera? Vorrei invitarti a cena in quel nuovo ristorante.",
+          "english": "Hi, are you free tonight? I'd like to invite you to dinner at that new restaurant.",
+          "choices": [
+            {
+              "text": "Ciao! Sì, sono libero. Che bella idea, grazie mille!",
+              "isCorrect": true,
+              "feedback": "Great, you accepted the invitation politely."
+            },
+            {
+              "text": "No, stasera devo pulire tutta la mia casa nuova.",
+              "isCorrect": false,
+              "feedback": "A bit too much detail for a refusal."
+            },
+            {
+              "text": "Quanto costa un chilo di mele rosse oggi?",
+              "isCorrect": false,
+              "feedback": "You're at dinner, not the supermarket."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È un ristorante italiano, fanno una pizza molto buona.",
+          "english": "It's an Italian restaurant, they make very good pizza.",
+          "choices": [
+            {
+              "text": "Adoro la pizza! A che ora ci dobbiamo incontrare?",
+              "isCorrect": true,
+              "feedback": "Perfect, showing enthusiasm and asking for the time."
+            },
+            {
+              "text": "Odio la pizza, preferisco mangiare solo insalata scondita.",
+              "isCorrect": false,
+              "feedback": "A bit strong. Try to be more flexible."
+            },
+            {
+              "text": "Dove posso trovare una farmacia aperta adesso?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Possiamo trovarci davanti al ristorante alle otto. Va bene?",
+          "english": "We can meet in front of the restaurant at eight. Is that okay?",
+          "choices": [
+            {
+              "text": "Sì, va benissimo. Ci vediamo lì alle otto in punto.",
+              "isCorrect": true,
+              "feedback": "Confirmation is key in making plans."
+            },
+            {
+              "text": "No, otto è troppo tardi per me stasera.",
+              "isCorrect": false,
+              "feedback": "Eight is a standard time for dinner in Italy."
+            },
+            {
+              "text": "Mi serve urgentemente un biglietto per l'autobus.",
+              "isCorrect": false,
+              "feedback": "Not the right time for this."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo! Ti serve un passaggio o vai lì direttamente?",
+          "english": "Great! Do you need a ride or are you going there directly?",
+          "choices": [
+            {
+              "text": "Vado direttamente a piedi, abito molto vicino.",
+              "isCorrect": true,
+              "feedback": "Good, clear answer."
+            },
+            {
+              "text": "Voglio che mi compri una macchina sportiva nuova.",
+              "isCorrect": false,
+              "feedback": "That's a bit much to ask from a friend!"
+            },
+            {
+              "text": "Qual è la capitale della Francia o della Spagna?",
+              "isCorrect": false,
+              "feedback": "Random trivia is not helpful here."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo. Il ristorante si chiama 'Da Mario', lo conosci?",
+          "english": "Agreed. The restaurant is called 'Da Mario', do you know it?",
+          "choices": [
+            {
+              "text": "Sì, ne ho sentito parlare bene. È molto famoso!",
+              "isCorrect": true,
+              "feedback": "Good social interaction."
+            },
+            {
+              "text": "No, e non mi fido dei ristoranti che si chiamano così.",
+              "isCorrect": false,
+              "feedback": "That's a bit of a strange prejudice."
+            },
+            {
+              "text": "Dov'è il bagno più vicino in questa zona?",
+              "isCorrect": false,
+              "feedback": "You're not even there yet."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, è vero. Bisogna sempre prenotare perché è sempre pieno.",
+          "english": "Yes, it's true. You always have to book because it's always full.",
+          "choices": [
+            {
+              "text": "Hai già prenotato un tavolo per noi due stasera?",
+              "isCorrect": true,
+              "feedback": "Practical question for the situation."
+            },
+            {
+              "text": "Spero che non ci sia troppa gente rumorosa stasera.",
+              "isCorrect": false,
+              "feedback": "A bit pessimistic."
+            },
+            {
+              "text": "Come si cucina un piatto di pasta al forno?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, ho prenotato per le otto. Hanno un tavolo vicino alla finestra.",
+          "english": "Yes, I booked for eight. They have a table near the window.",
+          "choices": [
+            {
+              "text": "Perfetto, mi piace molto guardare fuori mentre mangio.",
+              "isCorrect": true,
+              "feedback": "Positive response to the detail."
+            },
+            {
+              "text": "Odio stare vicino alla finestra, c'è troppa luce.",
+              "isCorrect": false,
+              "feedback": "At eight PM, it's usually dark outside."
+            },
+            {
+              "text": "Qual è il prezzo di questo paio di scarpe?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Anch'io! La vista sulla piazza è bellissima di sera.",
+          "english": "Me too! The view of the square is beautiful in the evening.",
+          "choices": [
+            {
+              "text": "Non vedo l'ora di esserci! Grazie ancora per l'invito.",
+              "isCorrect": true,
+              "feedback": "Expressing anticipation is polite."
+            },
+            {
+              "text": "Spero che la piazza non sia troppo sporca stasera.",
+              "isCorrect": false,
+              "feedback": "Too focused on negative details."
+            },
+            {
+              "text": "Dov'è la stazione ferroviaria più vicina qui?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ma figurati, è un piacere! Ci divertiremo sicuramente.",
+          "english": "Don't mention it, it's a pleasure! We will definitely have fun.",
+          "choices": [
+            {
+              "text": "Sicuramente! Allora ci vediamo tra poco al ristorante.",
+              "isCorrect": true,
+              "feedback": "Confirming the imminent meeting."
+            },
+            {
+              "text": "Spero di non annoiarmi troppo durante la cena.",
+              "isCorrect": false,
+              "feedback": "Very rude to say to someone inviting you."
+            },
+            {
+              "text": "Quanto costa un biglietto per il cinema oggi?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "A tra poco allora! Arrivo puntuale alle otto.",
+          "english": "See you soon then! I'll arrive on time at eight.",
+          "choices": [
+            {
+              "text": "Anch'io sarò puntuale. A dopo! Ciao!",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "Io arrivo quando voglio, non aspettarmi.",
+              "isCorrect": false,
+              "feedback": "Very inconsiderate."
+            },
+            {
+              "text": "Mi serve una borsa nuova per la spesa.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accepting_concert",
+      "title": "Accepting a Concert Invite",
+      "description": "Accept an invitation to a concert and ask about the details.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Ho due biglietti per il concerto di domani sera. Vuoi venire?",
+          "english": "Hi! I have two tickets for tomorrow night's concert. Do you want to come?",
+          "choices": [
+            {
+              "text": "Davvero? Sì, volentieri! Chi suona domani sera?",
+              "isCorrect": true,
+              "feedback": "Enthusiastic acceptance and a relevant question."
+            },
+            {
+              "text": "No, preferisco stare a casa a guardare la televisione.",
+              "isCorrect": false,
+              "feedback": "Try to be more polite when declining."
+            },
+            {
+              "text": "Quanto costa una camera singola in questo albergo?",
+              "isCorrect": false,
+              "feedback": "You're not at a hotel."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "È un gruppo jazz molto famoso. Suonano in piazza.",
+          "english": "It's a very famous jazz group. They're playing in the square.",
+          "choices": [
+            {
+              "text": "Mi piace molto il jazz! A che ora inizia il concerto?",
+              "isCorrect": true,
+              "feedback": "Sharing interests makes for a good conversation."
+            },
+            {
+              "text": "Il jazz mi annoia a morte, spero che finisca presto.",
+              "isCorrect": false,
+              "feedback": "Not a very nice thing to say if you accepted."
+            },
+            {
+              "text": "Ho bisogno di un dottore urgentemente perché sto male.",
+              "isCorrect": false,
+              "feedback": "If it's an emergency, call 112, don't go to a concert."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Inizia alle nove, ma è meglio trovarsi un po' prima.",
+          "english": "It starts at nine, but it's better to meet a bit earlier.",
+          "choices": [
+            {
+              "text": "D'accordo, ci vediamo alle otto e mezza allora?",
+              "isCorrect": true,
+              "feedback": "Proposing a specific meeting time is helpful."
+            },
+            {
+              "text": "No, arrivo alle dieci, non mi piace mai aspettare.",
+              "isCorrect": false,
+              "feedback": "You'll miss the beginning of the concert."
+            },
+            {
+              "text": "Dove posso parcheggiare la mia barca a vela qui?",
+              "isCorrect": false,
+              "feedback": "Highly unlikely to be relevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Va bene, alle otto e mezza davanti al bar centrale.",
+          "english": "Okay, at eight-thirty in front of the central bar.",
+          "choices": [
+            {
+              "text": "Perfetto. Devo pagare qualcosa per il biglietto?",
+              "isCorrect": true,
+              "feedback": "A practical question about the tickets."
+            },
+            {
+              "text": "Voglio che mi paghi anche tutta la cena stasera.",
+              "isCorrect": false,
+              "feedback": "A bit demanding."
+            },
+            {
+              "text": "Come si dice la parola 'apple' in lingua italiana?",
+              "isCorrect": false,
+              "feedback": "Not the time for a vocabulary lesson."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "No, il biglietto è un regalo per il tuo aiuto dell'altro giorno.",
+          "english": "No, the ticket is a gift for your help the other day.",
+          "choices": [
+            {
+              "text": "Grazie mille, sei molto gentile! A domani allora.",
+              "isCorrect": true,
+              "feedback": "Expressing gratitude is always good."
+            },
+            {
+              "text": "Va bene, allora non ti devo niente per questo.",
+              "isCorrect": false,
+              "feedback": "A bit cold."
+            },
+            {
+              "text": "Dove si trova l'ufficio postale più vicino qui?",
+              "isCorrect": false,
+              "feedback": "Length-matched distractor about a post office."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Figurati! Sai se ci sarà molta gente al concerto?",
+          "english": "Don't mention it! Do you know if there will be many people at the concert?",
+          "choices": [
+            {
+              "text": "Penso di sì, il gruppo è molto conosciuto qui.",
+              "isCorrect": true,
+              "feedback": "Sharing information about the event."
+            },
+            {
+              "text": "Spero di no, odio stare in mezzo alla folla.",
+              "isCorrect": false,
+              "feedback": "A bit negative for a concert attendee."
+            },
+            {
+              "text": "Qual è il colore preferito di tuo fratello?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Speriamo di trovare un buon posto per vedere bene.",
+          "english": "Let's hope to find a good spot to see well.",
+          "choices": [
+            {
+              "text": "Sì, arrivando prima possiamo stare davanti al palco.",
+              "isCorrect": true,
+              "feedback": "Practical suggestion."
+            },
+            {
+              "text": "Non mi interessa vedere, voglio solo sentire la musica.",
+              "isCorrect": false,
+              "feedback": "A bit contradictory."
+            },
+            {
+              "text": "Quanto costa un chilo di patate al mercato oggi?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Hai ragione. Ti piace stare in piedi o preferisci sederti?",
+          "english": "You're right. Do you like standing or do you prefer to sit?",
+          "choices": [
+            {
+              "text": "Preferisco stare in piedi per ballare un po'!",
+              "isCorrect": true,
+              "feedback": "Showing enthusiasm for the concert."
+            },
+            {
+              "text": "Voglio sedermi su una poltrona molto comoda.",
+              "isCorrect": false,
+              "feedback": "In a square, that might be difficult."
+            },
+            {
+              "text": "Qual è l'orario di apertura della biblioteca comunale?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottima idea! Allora balleremo insieme domani sera.",
+          "english": "Great idea! Then we'll dance together tomorrow night.",
+          "choices": [
+            {
+              "text": "Sarà fantastico! Non vedo l'ora che sia domani.",
+              "isCorrect": true,
+              "feedback": "Good conclusion to the planning phase."
+            },
+            {
+              "text": "Non so ballare e non voglio imparare adesso.",
+              "isCorrect": false,
+              "feedback": "A bit killjoy."
+            },
+            {
+              "text": "Dove posso comprare un giornale in questa strada?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Anche io! Allora ci vediamo domani alle otto e mezza.",
+          "english": "Me too! See you tomorrow at eight-thirty then.",
+          "choices": [
+            {
+              "text": "D'accordo, a domani! Buona serata e grazie ancora.",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "Va bene, ma se piove io non vengo sicuro.",
+              "isCorrect": false,
+              "feedback": "Fair, but could be said more politely."
+            },
+            {
+              "text": "Mi serve un ombrello nuovo per andare fuori.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "declining_invitation",
+      "title": "Politely Declining an Invitation",
+      "description": "Decline an invitation to a party because you are busy.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Domenica pomeriggio facciamo un piccolo rinfresco a casa. Vieni?",
+          "english": "Hi! Sunday afternoon we're having a small gathering at home. Are you coming?",
+          "choices": [
+            {
+              "text": "Grazie per l'invito, ma purtroppo non posso venire.",
+              "isCorrect": true,
+              "feedback": "Polite way to start declining an invitation."
+            },
+            {
+              "text": "No, le tue feste sono sempre molto noiose.",
+              "isCorrect": false,
+              "feedback": "Very rude and hurtful."
+            },
+            {
+              "text": "Quanto costa l'affitto di questo ufficio in centro?",
+              "isCorrect": false,
+              "feedback": "Completely off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Peccato! Hai già un impegno importante per domenica?",
+          "english": "Too bad! Do you already have an important commitment for Sunday?",
+          "choices": [
+            {
+              "text": "Sì, devo andare a trovare i miei nonni in campagna.",
+              "isCorrect": true,
+              "feedback": "Giving a brief, honest reason is polite."
+            },
+            {
+              "text": "Sì, devo restare a guardare il muro della cucina.",
+              "isCorrect": false,
+              "feedback": "Not a believable or polite excuse."
+            },
+            {
+              "text": "Mi serve una penna nera per scrivere questo modulo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco, la famiglia è importante. Magari la prossima volta?",
+          "english": "I understand, family is important. Maybe next time?",
+          "choices": [
+            {
+              "text": "Sì, spero di sì! Grazie ancora per avermi cercato.",
+              "isCorrect": true,
+              "feedback": "Keeping the door open for future invitations."
+            },
+            {
+              "text": "No, non invitarmi mai più a niente di simile.",
+              "isCorrect": false,
+              "feedback": "Extremely hostile."
+            },
+            {
+              "text": "Dov'è il supermercato più grande della città?",
+              "isCorrect": false,
+              "feedback": "Not relevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Certo, non c'è problema. Ti racconterò com'è andata.",
+          "english": "Sure, no problem. I'll tell you how it went.",
+          "choices": [
+            {
+              "text": "Grazie, mi farebbe piacere. Divertitevi tutti quanti!",
+              "isCorrect": true,
+              "feedback": "A nice way to conclude the conversation."
+            },
+            {
+              "text": "Non mi interessa sapere niente della tua festa.",
+              "isCorrect": false,
+              "feedback": "Very rude."
+            },
+            {
+              "text": "Qual è la password del Wi-Fi in questo bar?",
+              "isCorrect": false,
+              "feedback": "Off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Grazie! Buona domenica allora, a presto!",
+          "english": "Thanks! Have a good Sunday then, see you soon!",
+          "choices": [
+            {
+              "text": "Grazie, anche a te! Ci sentiamo presto, ciao!",
+              "isCorrect": true,
+              "feedback": "Perfect, polite ending."
+            },
+            {
+              "text": "Sì, spero che piova forte tutta domenica.",
+              "isCorrect": false,
+              "feedback": "Mean-spirited."
+            },
+            {
+              "text": "Ho perso le mie chiavi di casa stamattina.",
+              "isCorrect": false,
+              "feedback": "Not the right moment to share this."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ti manderò qualche foto dei dolci che preparerò.",
+          "english": "I'll send you some photos of the sweets I'll prepare.",
+          "choices": [
+            {
+              "text": "Volentieri! So che sei bravissimo a cucinare.",
+              "isCorrect": true,
+              "feedback": "A nice compliment."
+            },
+            {
+              "text": "Non mandarmi niente, non voglio vedere foto.",
+              "isCorrect": false,
+              "feedback": "A bit harsh."
+            },
+            {
+              "text": "Dove posso comprare un giornale sportivo oggi?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Troppo gentile! Preparerò la mia famosa torta di mele.",
+          "english": "Too kind! I'll prepare my famous apple pie.",
+          "choices": [
+            {
+              "text": "Che peccato non poterla assaggiare stavolta!",
+              "isCorrect": true,
+              "feedback": "Showing sincere regret for missing out."
+            },
+            {
+              "text": "La tua torta di mele è sempre troppo dolce.",
+              "isCorrect": false,
+              "feedback": "Unnecessary criticism."
+            },
+            {
+              "text": "Qual è il numero dell'autobus per il centro?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Non preoccuparti, ne farò un'altra quando ci vedremo.",
+          "english": "Don't worry, I'll make another one when we see each other.",
+          "choices": [
+            {
+              "text": "Sei davvero un amico! Grazie del pensiero.",
+              "isCorrect": true,
+              "feedback": "Appreciating the friendship."
+            },
+            {
+              "text": "No grazie, preferisco comprarla in pasticceria.",
+              "isCorrect": false,
+              "feedback": "A bit dismissive of their effort."
+            },
+            {
+              "text": "Dove si trova la farmacia di turno oggi?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Figurati! Allora ci sentiamo la prossima settimana?",
+          "english": "Don't mention it! So shall we talk next week?",
+          "choices": [
+            {
+              "text": "Sì, sentiamoci lunedì per un caffè veloce.",
+              "isCorrect": true,
+              "feedback": "Proposing a specific alternative meeting."
+            },
+            {
+              "text": "No, la prossima settimana sono troppo occupato.",
+              "isCorrect": false,
+              "feedback": "A bit too busy for a friend."
+            },
+            {
+              "text": "Quanto costa un chilo di zucchero al chilo?",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "D'accordo, lunedì va bene. Buona serata allora!",
+          "english": "Agreed, Monday is fine. Have a good evening then!",
+          "choices": [
+            {
+              "text": "Buona serata anche a te! A lunedì, ciao!",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "Sì, spero che lunedì non arrivi mai.",
+              "isCorrect": false,
+              "feedback": "A bit dramatic."
+            },
+            {
+              "text": "Mi serve un paio di occhiali nuovi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

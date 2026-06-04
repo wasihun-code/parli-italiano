@@ -1,0 +1,1193 @@
+{
+  "scenarioId": 80,
+  "conversations": [
+    {
+      "id": "leaving_party",
+      "title": "Leaving a Friend's Party",
+      "description": "Saying goodbye to a friend after a fun evening party.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Grazie di essere venuto alla mia festa!",
+          "english": "Thanks for coming to my party!",
+          "choices": [
+            {
+              "text": "Grazie a te per l'invito. Mi sono divertito molto.",
+              "english": "Thanks to you for the invitation. I had a lot of fun.",
+              "isCorrect": true,
+              "feedback": "Perfect way to thank the host.",
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Voglio comprare tre chili di mele rosse e dolci.",
+              "english": "I want to buy three kilos of red and sweet apples.",
+              "isCorrect": false,
+              "feedback": "This is for a grocery store.",
+              "nextMessageId": "m1"
+            },
+            {
+              "text": "Il treno per Roma parte dal binario numero quattro.",
+              "english": "The train to Rome leaves from platform number four.",
+              "isCorrect": false,
+              "feedback": "This is about a train station.",
+              "nextMessageId": "m1"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi fa piacere. C'è ancora molta torta se vuoi.",
+          "english": "I'm glad. There's still plenty of cake if you want.",
+          "choices": [
+            {
+              "text": "No grazie, sono davvero pieno. Devo andare ora.",
+              "english": "No thanks, I'm really full. I have to go now.",
+              "isCorrect": true,
+              "feedback": "Politely declining and stating you need to leave.",
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Dov'è il bagno? Ho bisogno di lavarmi le mani.",
+              "english": "Where is the bathroom? I need to wash my hands.",
+              "isCorrect": false,
+              "feedback": "You should be leaving, not looking for the bathroom.",
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Questo vestito nero è troppo stretto per me.",
+              "english": "This black dress is too tight for me.",
+              "isCorrect": false,
+              "feedback": "This is about clothing.",
+              "nextMessageId": "m2"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene. Hai tutto? Giacca e chiavi?",
+          "english": "Alright. Do you have everything? Jacket and keys?",
+          "choices": [
+            {
+              "text": "Sì, ho preso tutto. È stata una serata bellissima.",
+              "english": "Yes, I took everything. It was a beautiful evening.",
+              "isCorrect": true,
+              "feedback": "Confirming you have your things and complimenting the evening.",
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Il mio gatto mangia solo pesce fresco di mattina.",
+              "english": "My cat only eats fresh fish in the morning.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to leaving a party.",
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Vorrei un tavolo vicino alla finestra, per favore.",
+              "english": "I would like a table near the window, please.",
+              "isCorrect": false,
+              "feedback": "This is for a restaurant.",
+              "nextMessageId": "m3"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sono d'accordo. Dobbiamo rivederci presto.",
+          "english": "I agree. We must see each other again soon.",
+          "choices": [
+            {
+              "text": "Sicuramente! Ti chiamo la settimana prossima.",
+              "english": "Definitely! I'll call you next week.",
+              "isCorrect": true,
+              "feedback": "Agreeing to meet again and suggesting a follow-up.",
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Ho perso il mio passaporto in questo ufficio.",
+              "english": "I lost my passport in this office.",
+              "isCorrect": false,
+              "feedback": "This is an emergency at an office.",
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Il sole è molto forte oggi, porto gli occhiali.",
+              "english": "The sun is very strong today, I'm wearing glasses.",
+              "isCorrect": false,
+              "feedback": "This is about the weather.",
+              "nextMessageId": "m4"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Salutami tanto la tua famiglia.",
+          "english": "Perfect. Say hi to your family for me.",
+          "choices": [
+            {
+              "text": "Lo farò senz'altro. Buona serata e grazie ancora!",
+              "english": "I certainly will. Good evening and thanks again!",
+              "isCorrect": true,
+              "feedback": "Promising to pass on the greetings and thanking again.",
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Quanto costa un biglietto per il museo d'arte?",
+              "english": "How much does a ticket for the art museum cost?",
+              "isCorrect": false,
+              "feedback": "This is asking for a price.",
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "La mia macchina è parcheggiata sotto l'albero.",
+              "english": "My car is parked under the tree.",
+              "isCorrect": false,
+              "feedback": "This is about parking.",
+              "nextMessageId": "m5"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Buona serata anche a te. Fai attenzione per strada.",
+          "english": "Good evening to you too. Be careful on the road.",
+          "choices": [
+            {
+              "text": "Tranquillo, vado a piedi. Ci vediamo presto!",
+              "english": "Don't worry, I'm going on foot. See you soon!",
+              "isCorrect": true,
+              "feedback": "Reassuring the host and saying see you soon.",
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Ho bisogno di una medicina per il mal di testa.",
+              "english": "I need a medicine for a headache.",
+              "isCorrect": false,
+              "feedback": "This is a medical request.",
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Il mio cane corre sempre veloce nel grande parco.",
+              "english": "My dog always runs fast in the large park.",
+              "isCorrect": false,
+              "feedback": "This is about a dog.",
+              "nextMessageId": "m6"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ciao ciao! Stammi bene.",
+          "english": "Bye bye! Take care.",
+          "choices": [
+            {
+              "text": "Ciao! A presto!",
+              "english": "Bye! See you soon!",
+              "isCorrect": true,
+              "feedback": "A natural way to close.",
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Dov'è la banca?",
+              "english": "Where is the bank?",
+              "isCorrect": false,
+              "feedback": "Too short and off-topic.",
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Voglio del pane.",
+              "english": "I want some bread.",
+              "isCorrect": false,
+              "feedback": "Irrelevant.",
+              "nextMessageId": "m7"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Aspetta! Hai dimenticato il tuo ombrello qui.",
+          "english": "Wait! You forgot your umbrella here.",
+          "choices": [
+            {
+              "text": "Oh, grazie mille! Meno male che me lo hai detto.",
+              "english": "Oh, thanks a lot! Good thing you told me.",
+              "isCorrect": true,
+              "feedback": "Expressing relief and thanking for the reminder.",
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Il mio computer è rotto e non si accende più.",
+              "english": "My computer is broken and doesn't turn on anymore.",
+              "isCorrect": false,
+              "feedback": "This is a tech problem.",
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Vorrei una camera doppia con vista sul mare.",
+              "english": "I would like a double room with a sea view.",
+              "isCorrect": false,
+              "feedback": "This is a hotel booking.",
+              "nextMessageId": "m8"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Figurati. Ora puoi andare, piove un po'.",
+          "english": "No worries. Now you can go, it's raining a little.",
+          "choices": [
+            {
+              "text": "Infatti. Buonanotte e a domani allora!",
+              "english": "Indeed. Goodnight and see you tomorrow then!",
+              "isCorrect": true,
+              "feedback": "Closing with a goodnight and mentioning tomorrow.",
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Ho fame e voglio mangiare una pizza grande.",
+              "english": "I'm hungry and I want to eat a large pizza.",
+              "isCorrect": false,
+              "feedback": "You just said you were full.",
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "La fermata dell'autobus è proprio qui vicino.",
+              "english": "The bus stop is right here nearby.",
+              "isCorrect": false,
+              "feedback": "This is about a bus stop.",
+              "nextMessageId": "m9"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buonanotte. A domani in ufficio!",
+          "english": "Goodnight. See you tomorrow at the office!",
+          "choices": [
+            {
+              "text": "A domani! Ciao!",
+              "english": "See you tomorrow! Bye!",
+              "isCorrect": true,
+              "feedback": "A perfect final goodbye.",
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Il conto, grazie.",
+              "english": "The bill, please.",
+              "isCorrect": false,
+              "feedback": "Wrong context.",
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Quanto costa?",
+              "english": "How much is it?",
+              "isCorrect": false,
+              "feedback": "Irrelevant.",
+              "nextMessageId": "m10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ending_phone_call",
+      "title": "Ending a Phone Call with a Relative",
+      "description": "Saying goodbye to a relative over the phone after a long chat.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "È stato bello sentirti, ma ora devo proprio andare.",
+          "english": "It was nice hearing from you, but now I really must go.",
+          "choices": [
+            {
+              "text": "Hai ragione, abbiamo parlato per un'ora intera.",
+              "english": "You're right, we've talked for a whole hour.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the length of the call.",
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Mi scusi, dove posso comprare dei francobolli?",
+              "english": "Excuse me, where can I buy some stamps?",
+              "isCorrect": false,
+              "feedback": "This is for a post office.",
+              "nextMessageId": "m1"
+            },
+            {
+              "text": "Il mio aereo parte tra circa quaranta minuti.",
+              "english": "My plane leaves in about forty minutes.",
+              "isCorrect": false,
+              "feedback": "This is for an airport.",
+              "nextMessageId": "m1"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il tempo vola quando chiacchieriamo insieme!",
+          "english": "Time flies when we chat together!",
+          "choices": [
+            {
+              "text": "Vero! Allora ci sentiamo presto, va bene?",
+              "english": "True! So we'll talk soon, alright?",
+              "isCorrect": true,
+              "feedback": "Agreeing and suggesting a future call.",
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Voglio ordinare una pasta al forno calda.",
+              "english": "I want to order a hot baked pasta.",
+              "isCorrect": false,
+              "feedback": "This is for a restaurant.",
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "La mia televisione non ha più il segnale.",
+              "english": "My television no longer has a signal.",
+              "isCorrect": false,
+              "feedback": "This is a tech issue.",
+              "nextMessageId": "m2"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certo. Magari ci sentiamo domenica prossima.",
+          "english": "Sure. Maybe we'll talk next Sunday.",
+          "choices": [
+            {
+              "text": "Perfetto, domenica pomeriggio sono a casa.",
+              "english": "Perfect, Sunday afternoon I'm at home.",
+              "isCorrect": true,
+              "feedback": "Confirming availability for the next call.",
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Dov'è il parcheggio per le macchine elettriche?",
+              "english": "Where is the parking for electric cars?",
+              "isCorrect": false,
+              "feedback": "This is about parking.",
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Oggi voglio leggere un libro molto lungo.",
+              "english": "Today I want to read a very long book.",
+              "isCorrect": false,
+              "feedback": "This is about a personal plan.",
+              "nextMessageId": "m3"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "D'accordo. Salutami tutti a casa tua.",
+          "english": "Agreed. Say hi to everyone at your house.",
+          "choices": [
+            {
+              "text": "Certamente, lo farò. E tu saluta gli zii.",
+              "english": "Certainly, I will. And you say hi to the aunt and uncle.",
+              "isCorrect": true,
+              "feedback": "Passing on greetings to other relatives.",
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Quanto costano queste scarpe da ginnastica?",
+              "english": "How much do these sneakers cost?",
+              "isCorrect": false,
+              "feedback": "This is about shopping.",
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Il mio cane ha bisogno di una visita.",
+              "english": "My dog needs a check-up.",
+              "isCorrect": false,
+              "feedback": "This is about a vet.",
+              "nextMessageId": "m4"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sarà fatto. Mi raccomando, mangia bene!",
+          "english": "Will do. Please, eat well!",
+          "choices": [
+            {
+              "text": "Non ti preoccupare, cucino sempre cose sane.",
+              "english": "Don't worry, I always cook healthy things.",
+              "isCorrect": true,
+              "feedback": "Reassuring the relative about your health.",
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "C'è un ufficio postale qui in questa via?",
+              "english": "Is there a post office here in this street?",
+              "isCorrect": false,
+              "feedback": "This is asking for directions.",
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "La mia valigia è troppo pesante per me.",
+              "english": "My suitcase is too heavy for me.",
+              "isCorrect": false,
+              "feedback": "This is about luggage.",
+              "nextMessageId": "m5"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Bravo. Ti mando un messaggio stasera.",
+          "english": "Good. I'll send you a message tonight.",
+          "choices": [
+            {
+              "text": "Va bene, lo leggerò volentieri. A presto!",
+              "english": "Alright, I'll gladly read it. See you soon!",
+              "isCorrect": true,
+              "feedback": "Acknowledging the future message and saying goodbye.",
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Vorrei un gelato alla crema e cioccolato.",
+              "english": "I would like a cream and chocolate gelato.",
+              "isCorrect": false,
+              "feedback": "This is for a gelato shop.",
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Il mio volo ha un ritardo di tre ore.",
+              "english": "My flight has a three-hour delay.",
+              "isCorrect": false,
+              "feedback": "This is about a flight.",
+              "nextMessageId": "m6"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Un abbraccio forte. Ciao caro!",
+          "english": "A big hug. Bye dear!",
+          "choices": [
+            {
+              "text": "Un abbraccio anche a te. Ciao ciao!",
+              "english": "A hug to you too. Bye bye!",
+              "isCorrect": true,
+              "feedback": "Returning the hug and saying goodbye.",
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Quanto costa il pane?",
+              "english": "How much is the bread?",
+              "isCorrect": false,
+              "feedback": "Irrelevant.",
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Dov'è l'uscita ora?",
+              "english": "Where is the exit now?",
+              "isCorrect": false,
+              "feedback": "Nonsense in this context.",
+              "nextMessageId": "m7"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Dimenticavo! Buon compleanno a tua sorella!",
+          "english": "I forgot! Happy birthday to your sister!",
+          "choices": [
+            {
+              "text": "Grazie, glielo dirò stasera alla festa.",
+              "english": "Thanks, I'll tell her tonight at the party.",
+              "isCorrect": true,
+              "feedback": "Thanking and explaining when the message will be passed.",
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Il mio telefono è scarico e non funziona.",
+              "english": "My phone is out of battery and doesn't work.",
+              "isCorrect": false,
+              "feedback": "You're talking on the phone.",
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Vorrei prenotare un tavolo per sei persone.",
+              "english": "I would like to book a table for six people.",
+              "isCorrect": false,
+              "feedback": "This is for a restaurant.",
+              "nextMessageId": "m8"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo. Allora buona festa a tutti voi!",
+          "english": "Great. Then have a good party to you all!",
+          "choices": [
+            {
+              "text": "Grazie mille! A risentirci allora. Ciao!",
+              "english": "Thanks a lot! Talk to you again then. Bye!",
+              "isCorrect": true,
+              "feedback": "A final goodbye for a phone call.",
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Il tempo oggi è brutto e piove molto.",
+              "english": "The weather today is bad and it rains a lot.",
+              "isCorrect": false,
+              "feedback": "This is about the weather.",
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "La mia borsa è nel treno per Milano.",
+              "english": "My bag is on the train to Milan.",
+              "isCorrect": false,
+              "feedback": "This is about a lost bag.",
+              "nextMessageId": "m9"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ciao ciao, a risentirci!",
+          "english": "Bye bye, talk to you again!",
+          "choices": [
+            {
+              "text": "Ciao!",
+              "english": "Bye!",
+              "isCorrect": true,
+              "feedback": "Short and sweet ending.",
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Prego.",
+              "english": "You're welcome.",
+              "isCorrect": false,
+              "feedback": "Doesn't make sense here.",
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Scusi.",
+              "english": "Excuse me.",
+              "isCorrect": false,
+              "feedback": "Wrong word.",
+              "nextMessageId": "m10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "casual_street_encounter",
+      "title": "Casual Encounter on the Street",
+      "description": "Saying goodbye to an acquaintance after bumping into them on the street.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "È stato un piacere rivederti per caso!",
+          "english": "It was a pleasure to see you again by chance!",
+          "choices": [
+            {
+              "text": "Anche per me! Che bella sorpresa oggi.",
+              "english": "For me too! What a nice surprise today.",
+              "isCorrect": true,
+              "feedback": "Returning the sentiment and commenting on the surprise.",
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Vorrei due chili di pasta fresca, grazie.",
+              "english": "I would like two kilos of fresh pasta, thanks.",
+              "isCorrect": false,
+              "feedback": "This is for a pasta shop.",
+              "nextMessageId": "m1"
+            },
+            {
+              "text": "Il mio hotel è vicino alla piazza grande.",
+              "english": "My hotel is near the large square.",
+              "isCorrect": false,
+              "feedback": "This is about your accommodation.",
+              "nextMessageId": "m1"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Infatti. Ora dove stai andando di bello?",
+          "english": "Indeed. Now where are you going that's nice?",
+          "choices": [
+            {
+              "text": "Vado in biblioteca a studiare un po'.",
+              "english": "I'm going to the library to study a bit.",
+              "isCorrect": true,
+              "feedback": "Answering the question naturally.",
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Il mio cane ha mangiato la mia scarpa.",
+              "english": "My dog ate my shoe.",
+              "isCorrect": false,
+              "feedback": "This is about a pet problem.",
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Preferisco il tè freddo al caffè caldo.",
+              "english": "I prefer cold tea to hot coffee.",
+              "isCorrect": false,
+              "feedback": "This is about drink preferences.",
+              "nextMessageId": "m2"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Buono studio allora. Io vado a fare la spesa.",
+          "english": "Happy studying then. I'm going to do the shopping.",
+          "choices": [
+            {
+              "text": "D'accordo. Allora non ti rubo altro tempo.",
+              "english": "Agreed. Then I won't take any more of your time.",
+              "isCorrect": true,
+              "feedback": "Politely ending the conversation to let the host go.",
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Dov'è l'ufficio informazioni del turismo?",
+              "english": "Where is the tourist information office?",
+              "isCorrect": false,
+              "feedback": "This is asking for directions.",
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "La mia televisione è troppo vecchia ora.",
+              "english": "My television is too old now.",
+              "isCorrect": false,
+              "feedback": "This is about a TV.",
+              "nextMessageId": "m3"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Non preoccuparti. Ci vediamo un giorno per un caffè?",
+          "english": "Don't worry. Shall we see each other one day for a coffee?",
+          "choices": [
+            {
+              "text": "Volentieri! Ti scrivo io su WhatsApp.",
+              "english": "Gladly! I'll write to you on WhatsApp.",
+              "isCorrect": true,
+              "feedback": "Accepting the invitation and suggesting a contact method.",
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Ho perso le mie chiavi nel grande parco.",
+              "english": "I lost my keys in the large park.",
+              "isCorrect": false,
+              "feedback": "This is about lost keys.",
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Il sole è caldissimo questo pomeriggio.",
+              "english": "The sun is very hot this afternoon.",
+              "isCorrect": false,
+              "feedback": "This is about the weather.",
+              "nextMessageId": "m4"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottima idea. Aspetto il tuo messaggio.",
+          "english": "Great idea. I'll wait for your message.",
+          "choices": [
+            {
+              "text": "Certamente. Allora buona giornata e a presto!",
+              "english": "Certainly. Then have a good day and see you soon!",
+              "isCorrect": true,
+              "feedback": "Saying have a good day and see you soon.",
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Quanto costa un chilo di pane bianco?",
+              "english": "How much does a kilo of white bread cost?",
+              "isCorrect": false,
+              "feedback": "This is asking for a price.",
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "La mia macchina è nel parcheggio rosso.",
+              "english": "My car is in the red parking lot.",
+              "isCorrect": false,
+              "feedback": "This is about parking.",
+              "nextMessageId": "m5"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Buona giornata anche a te. Ciao!",
+          "english": "Have a good day to you too. Bye!",
+          "choices": [
+            {
+              "text": "Ciao ciao! A più tardi!",
+              "english": "Bye bye! See you later!",
+              "isCorrect": true,
+              "feedback": "A natural parting phrase.",
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Vorrei un succo.",
+              "english": "I'd like a juice.",
+              "isCorrect": false,
+              "feedback": "Too short.",
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Dov'è il bagno?",
+              "english": "Where is the bathroom?",
+              "isCorrect": false,
+              "feedback": "Irrelevant.",
+              "nextMessageId": "m6"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ah, aspetta! Salutami tanto i tuoi colleghi.",
+          "english": "Ah, wait! Say hi to your colleagues for me.",
+          "choices": [
+            {
+              "text": "Lo farò senz'altro. Saranno contenti.",
+              "english": "I certainly will. They'll be happy.",
+              "isCorrect": true,
+              "feedback": "Promising to pass on the greetings.",
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Il mio gatto dorme sempre sul divano.",
+              "english": "My cat always sleeps on the sofa.",
+              "isCorrect": false,
+              "feedback": "This is about a cat.",
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Voglio comprare un giornale sportivo.",
+              "english": "I want to buy a sports newspaper.",
+              "isCorrect": false,
+              "feedback": "This is about a purchase.",
+              "nextMessageId": "m7"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Bene. Allora ci sentiamo presto su WhatsApp.",
+          "english": "Good. Then we'll talk soon on WhatsApp.",
+          "choices": [
+            {
+              "text": "D'accordo. Buona continuazione e ciao!",
+              "english": "Agreed. Enjoy the rest of your day and bye!",
+              "isCorrect": true,
+              "feedback": "A polite way to end the encounter.",
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "La mia bicicletta è rotta da stamattina.",
+              "english": "My bicycle is broken since this morning.",
+              "isCorrect": false,
+              "feedback": "This is a transport problem.",
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Ho bisogno di un dottore molto bravo.",
+              "english": "I need a very good doctor.",
+              "isCorrect": false,
+              "feedback": "This is a medical request.",
+              "nextMessageId": "m8"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ciao! Stammi bene e a presto.",
+          "english": "Bye! Take care and see you soon.",
+          "choices": [
+            {
+              "text": "Ciao! Anche a te! A presto!",
+              "english": "Bye! To you too! See you soon!",
+              "isCorrect": true,
+              "feedback": "Returning the well wishes.",
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Il vento soffia.",
+              "english": "The wind blows.",
+              "isCorrect": false,
+              "feedback": "Nonsense.",
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Quanto costa?",
+              "english": "How much?",
+              "isCorrect": false,
+              "feedback": "Wrong.",
+              "nextMessageId": "m9"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ciao ciao!",
+          "english": "Bye bye!",
+          "choices": [
+            {
+              "text": "Ciao!",
+              "english": "Bye!",
+              "isCorrect": true,
+              "feedback": "Short final goodbye.",
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Prego.",
+              "english": "You're welcome.",
+              "isCorrect": false,
+              "feedback": "Doesn't fit.",
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Niente.",
+              "english": "Nothing.",
+              "isCorrect": false,
+              "feedback": "Wrong word.",
+              "nextMessageId": "m10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formal_shop_goodbye",
+      "title": "Formal Goodbye at a Shop",
+      "description": "Saying goodbye formally to a shopkeeper after a purchase.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ecco il suo resto e lo scontrino. Grazie mille.",
+          "english": "Here is your change and the receipt. Thank you very much.",
+          "choices": [
+            {
+              "text": "Grazie a lei. Posso avere anche un sacchetto?",
+              "english": "Thank you. Can I also have a bag?",
+              "isCorrect": true,
+              "feedback": "Thanking the shopkeeper and asking for a bag.",
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Voglio prenotare un volo per la Sicilia.",
+              "english": "I want to book a flight for Sicily.",
+              "isCorrect": false,
+              "feedback": "This is for a travel agency.",
+              "nextMessageId": "m1"
+            },
+            {
+              "text": "Il mio cane mangia solo carne di manzo.",
+              "english": "My dog only eats beef meat.",
+              "isCorrect": false,
+              "feedback": "This is about a dog.",
+              "nextMessageId": "m1"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente, eccolo qui. Serve altro?",
+          "english": "Certainly, here it is. Do you need anything else?",
+          "choices": [
+            {
+              "text": "No, grazie. Sono a posto così. Arrivederci.",
+              "english": "No, thanks. I'm all set. Goodbye.",
+              "isCorrect": true,
+              "feedback": "Declining further help and saying a formal goodbye.",
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Dov'è l'ingresso della stazione centrale?",
+              "english": "Where is the entrance to the central station?",
+              "isCorrect": false,
+              "feedback": "This is asking for directions.",
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "La mia televisione è accesa in camera.",
+              "english": "My television is on in the room.",
+              "isCorrect": false,
+              "feedback": "This is about a TV.",
+              "nextMessageId": "m2"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Arrivederci e buona giornata!",
+          "english": "Goodbye and have a good day!",
+          "choices": [
+            {
+              "text": "Grazie, buona giornata anche a lei!",
+              "english": "Thanks, have a good day to you too!",
+              "isCorrect": true,
+              "feedback": "Returning the formal well wishes.",
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Il mio computer ha lo schermo sporco.",
+              "english": "My computer has a dirty screen.",
+              "isCorrect": false,
+              "feedback": "This is about a tech issue.",
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Vorrei un gelato alla fragola e limone.",
+              "english": "I would like a strawberry and lemon gelato.",
+              "isCorrect": false,
+              "feedback": "This is for a gelato shop.",
+              "nextMessageId": "m3"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Torni presto a trovarci, abbiamo spesso sconti.",
+          "english": "Come back soon to visit us, we often have discounts.",
+          "choices": [
+            {
+              "text": "Molto bene, lo farò senz'altro. A presto!",
+              "english": "Very well, I certainly will. See you soon!",
+              "isCorrect": true,
+              "feedback": "Agreeing to return and saying see you soon.",
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Il mio volo parte alle sei di mattina.",
+              "english": "My flight leaves at six in the morning.",
+              "isCorrect": false,
+              "feedback": "This is about an airport.",
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "La borsa è sul tavolo della cucina.",
+              "english": "The bag is on the kitchen table.",
+              "isCorrect": false,
+              "feedback": "This is about a location of a bag.",
+              "nextMessageId": "m4"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Le auguro un buon fine settimana.",
+          "english": "I wish you a good weekend.",
+          "choices": [
+            {
+              "text": "Grazie, buon fine settimana anche a lei!",
+              "english": "Thanks, good weekend to you too!",
+              "isCorrect": true,
+              "feedback": "Returning the weekend wishes formally.",
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Quanto costa questo vestito rosso qui?",
+              "english": "How much does this red dress cost here?",
+              "isCorrect": false,
+              "feedback": "This is asking for a price.",
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "La mia macchina è nel parcheggio blu.",
+              "english": "My car is in the blue parking lot.",
+              "isCorrect": false,
+              "feedback": "This is about parking.",
+              "nextMessageId": "m5"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Grazie. Buona serata e arrivederci.",
+          "english": "Thanks. Good evening and goodbye.",
+          "choices": [
+            {
+              "text": "Buona serata, arrivederci!",
+              "english": "Good evening, goodbye!",
+              "isCorrect": true,
+              "feedback": "A polite formal closing.",
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Dov'è il bagno?",
+              "english": "Where is the bathroom?",
+              "isCorrect": false,
+              "feedback": "Too short.",
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Voglio del tè.",
+              "english": "I want some tea.",
+              "isCorrect": false,
+              "feedback": "Irrelevant.",
+              "nextMessageId": "m6"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Mi scusi! Ha dimenticato l'ombrello sul banco.",
+          "english": "Excuse me! You forgot the umbrella on the counter.",
+          "choices": [
+            {
+              "text": "Oh, mi scusi lei. Grazie mille per l'aiuto.",
+              "english": "Oh, excuse me. Thanks a lot for the help.",
+              "isCorrect": true,
+              "feedback": "Apologizing and thanking the shopkeeper.",
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Il mio computer è rotto e non va.",
+              "english": "My computer is broken and doesn't work.",
+              "isCorrect": false,
+              "feedback": "This is a tech issue.",
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Vorrei una camera singola con doccia.",
+              "english": "I would like a single room with a shower.",
+              "isCorrect": false,
+              "feedback": "This is a hotel booking.",
+              "nextMessageId": "m7"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Figurati, nessun problema. Buon proseguimento!",
+          "english": "No worries, no problem. Have a good rest of the day!",
+          "choices": [
+            {
+              "text": "Grazie, buon proseguimento anche a lei. Ciao!",
+              "english": "Thanks, have a good rest of the day to you too. Bye!",
+              "isCorrect": true,
+              "feedback": "A polite and natural response to a formal wish.",
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "La mia pizza è fredda e non mi piace.",
+              "english": "My pizza is cold and I don't like it.",
+              "isCorrect": false,
+              "feedback": "This is a restaurant complaint.",
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Il vento oggi è forte in questa città.",
+              "english": "The wind today is strong in this city.",
+              "isCorrect": false,
+              "feedback": "This is about the weather.",
+              "nextMessageId": "m8"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Buona serata ancora. Arrivederci!",
+          "english": "Good evening again. Goodbye!",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie di tutto!",
+              "english": "Goodbye and thanks for everything!",
+              "isCorrect": true,
+              "feedback": "A final formal goodbye.",
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Quanto costa ora?",
+              "english": "How much is it now?",
+              "isCorrect": false,
+              "feedback": "Wrong context.",
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Dov'è l'uscita?",
+              "english": "Where is the exit?",
+              "isCorrect": false,
+              "feedback": "Irrelevant.",
+              "nextMessageId": "m9"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci!",
+          "english": "Goodbye!",
+          "choices": [
+            {
+              "text": "Arrivederci!",
+              "english": "Goodbye!",
+              "isCorrect": true,
+              "feedback": "Short formal ending.",
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Prego.",
+              "english": "You're welcome.",
+              "isCorrect": false,
+              "feedback": "Nonsense.",
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Scusi.",
+              "english": "Excuse me.",
+              "isCorrect": false,
+              "feedback": "Wrong word.",
+              "nextMessageId": "m10"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

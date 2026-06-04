@@ -1,0 +1,953 @@
+{
+  "scenarioId": 38,
+  "conversations": [
+    {
+      "id": "finding_books",
+      "title": "Cercare un libro",
+      "description": "Chiedere aiuto per trovare libri e usare il catalogo.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come posso aiutarla a trovare quello che cerca oggi?",
+          "english": "Good morning! How can I help you find what you are looking for today?",
+          "choices": [
+            {
+              "text": "Buongiorno. Sto cercando dei libri sulla storia dell'arte.",
+              "isCorrect": true,
+              "feedback": "Perfetto! Hai espresso chiaramente il tuo obiettivo."
+            },
+            {
+              "text": "Mi scusi, saprebbe dirmi dove si trova il bagno più vicino?",
+              "isCorrect": false,
+              "feedback": "Domanda utile, ma prova a chiedere qualcosa relativo ai libri prima."
+            },
+            {
+              "text": "Ho molta fame, saprebbe dirmi se c'è un bar qui nei dintorni?",
+              "isCorrect": false,
+              "feedback": "In biblioteca di solito non si mangia!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. La sezione di arte si trova al secondo piano, verso destra.",
+          "english": "Certainly. The art section is located on the second floor, to the right.",
+          "choices": [
+            {
+              "text": "Grazie. Ci sono anche dei saggi specifici sul Rinascimento?",
+              "isCorrect": true,
+              "feedback": "Ottimo, stai restringendo la ricerca con successo."
+            },
+            {
+              "text": "Non mi piace l'arte, preferisco la scienza.",
+              "isCorrect": false,
+              "feedback": "Ma avevi appena chiesto libri d'arte!"
+            },
+            {
+              "text": "Il secondo piano è troppo alto.",
+              "isCorrect": false,
+              "feedback": "Puoi usare l'ascensore!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, sono nello scaffale quattrocento. Vuole controllare il catalogo digitale?",
+          "english": "Yes, they are on shelf four hundred. Do you want to check the digital catalog?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Dov'è il computer per fare la ricerca?",
+              "isCorrect": true,
+              "feedback": "Ottima domanda per procedere con la ricerca."
+            },
+            {
+              "text": "Mi scusi, ma potrebbe spiegarmi meglio cos'è un catalogo?",
+              "isCorrect": false,
+              "feedback": "È una parola utile da conoscere, ma dovresti sapere come usarlo!"
+            },
+            {
+              "text": "Preferisco chiedere a lei ogni volta.",
+              "isCorrect": false,
+              "feedback": "Il bibliotecario è gentile, ma il catalogo è più veloce!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Il computer è proprio lì, accanto alla scrivania grande di legno.",
+          "english": "The computer is right there, next to the large wooden desk.",
+          "choices": [
+            {
+              "text": "Perfetto. Posso usare anche la stampante se trovo qualcosa di utile?",
+              "isCorrect": true,
+              "feedback": "Molto bene, stai chiedendo dei servizi disponibili."
+            },
+            {
+              "text": "Non mi piace questo posto, la scrivania mi sembra molto sporca.",
+              "isCorrect": false,
+              "feedback": "Non è molto gentile da dire!"
+            },
+            {
+              "text": "Mi dispiace, ma purtroppo non so come si usa questo computer.",
+              "isCorrect": false,
+              "feedback": "Chiedi aiuto al bibliotecario allora!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, ma deve usare la sua tessera della biblioteca per attivare la stampante.",
+          "english": "Yes, but you must use your library card to activate the printer.",
+          "choices": [
+            {
+              "text": "D'accordo, la prendo subito dallo zaino. Grazie mille!",
+              "isCorrect": true,
+              "feedback": "Hai confermato di avere la tessera necessaria."
+            },
+            {
+              "text": "Ho dimenticato lo zaino a casa.",
+              "isCorrect": false,
+              "feedback": "Oh no, allora non puoi stampare oggi!"
+            },
+            {
+              "text": "Mi dispiace, ma purtroppo non ho ancora fatto la tessera.",
+              "isCorrect": false,
+              "feedback": "Dovresti farne una allora!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Prego. Se il libro non è sullo scaffale, possiamo prenotarlo per lei.",
+          "english": "You're welcome. If the book is not on the shelf, we can reserve it for you.",
+          "choices": [
+            {
+              "text": "Ah, buono a sapersi. Quanto tempo ci vuole per una prenotazione?",
+              "isCorrect": true,
+              "feedback": "Domanda logica per capire il funzionamento del servizio."
+            },
+            {
+              "text": "Mi dispiace, ma non ho proprio voglia di aspettare così tanto.",
+              "isCorrect": false,
+              "feedback": "La pazienza è una virtù!"
+            },
+            {
+              "text": "Preferisco comprarlo su internet.",
+              "isCorrect": false,
+              "feedback": "Ma in biblioteca è gratis!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Di solito bastano due o tre giorni lavorativi per averlo qui.",
+          "english": "Usually two or three business days are enough to have it here.",
+          "choices": [
+            {
+              "text": "Va bene. Mi arriverà una notifica via email?",
+              "isCorrect": true,
+              "feedback": "Ottimo, stai chiedendo come sarai avvisato."
+            },
+            {
+              "text": "Tre giorni sono troppi, mi serve ora.",
+              "isCorrect": false,
+              "feedback": "Il bibliotecario non può fare magie!"
+            },
+            {
+              "text": "Non ho un computer per leggere l'email.",
+              "isCorrect": false,
+              "feedback": "Ma puoi usare quelli della biblioteca!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Esatto, riceverà un'email automatica dal nostro sistema.",
+          "english": "Exactly, you will receive an automatic email from our system.",
+          "choices": [
+            {
+              "text": "Benissimo. C'è un limite al numero di libri che posso prenotare?",
+              "isCorrect": true,
+              "feedback": "Hai chiesto un'informazione importante sulle regole."
+            },
+            {
+              "text": "Non leggo mai le email, non c'è un altro modo per avvisarmi?",
+              "isCorrect": false,
+              "feedback": "Allora rischi di perdere il libro!"
+            },
+            {
+              "text": "Vorrei prenotare almeno cento libri, è possibile farlo subito?",
+              "isCorrect": false,
+              "feedback": "Cento sono decisamente troppi!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Può prenotare fino a tre libri contemporaneamente.",
+          "english": "You can reserve up to three books at the same time.",
+          "choices": [
+            {
+              "text": "Capito. Ora vado a cercare quel saggio sul Rinascimento.",
+              "isCorrect": true,
+              "feedback": "Hai concluso la conversazione in modo educato e deciso."
+            },
+            {
+              "text": "Solo tre libri? Mi sembra che sia un numero davvero esiguo!",
+              "isCorrect": false,
+              "feedback": "Le regole servono per aiutare tutti gli utenti."
+            },
+            {
+              "text": "Mi sono dimenticato cosa cercavo.",
+              "isCorrect": false,
+              "feedback": "Cercavi libri di storia dell'arte!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Buona ricerca! Mi faccia sapere se ha bisogno di altro aiuto.",
+          "english": "Good luck with your research! Let me know if you need more help.",
+          "choices": [
+            {
+              "text": "Grazie ancora e buona giornata!",
+              "isCorrect": true,
+              "feedback": "Saluto finale perfetto."
+            },
+            {
+              "text": "Mi scusi, ma ora devo andare via, ciao!",
+              "isCorrect": false,
+              "feedback": "Un po' troppo informale per una biblioteca."
+            },
+            {
+              "text": "Saprebbe dirmi dove si trova l'uscita?",
+              "isCorrect": false,
+              "feedback": "Hai appena iniziato la tua ricerca!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "library_card",
+      "title": "Fare la tessera",
+      "description": "Iscriversi alla biblioteca e conoscere le regole del prestito.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Benvenuto! Desidera iscriversi alla nostra biblioteca oggi?",
+          "english": "Welcome! Would you like to join our library today?",
+          "choices": [
+            {
+              "text": "Sì, vorrei fare la tessera. Cosa devo fare?",
+              "isCorrect": true,
+              "feedback": "Ottimo inizio, hai mostrato interesse per l'iscrizione."
+            },
+            {
+              "text": "No, grazie, per ora sto solo guardando gli scaffali della sala.",
+              "isCorrect": false,
+              "feedback": "Puoi comunque fare la tessera per il futuro!"
+            },
+            {
+              "text": "Mi scusi, saprebbe dirmi quanto costa mediamente un libro qui?",
+              "isCorrect": false,
+              "feedback": "In biblioteca i libri non si comprano, si prendono in prestito!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Deve compilare questo modulo con i suoi dati personali.",
+          "english": "You need to fill out this form with your personal details.",
+          "choices": [
+            {
+              "text": "Certamente. Serve anche un documento d'identità?",
+              "isCorrect": true,
+              "feedback": "Bravo, hai anticipato una richiesta comune."
+            },
+            {
+              "text": "Non so scrivere in italiano.",
+              "isCorrect": false,
+              "feedback": "Il bibliotecario può aiutarti a compilare il modulo."
+            },
+            {
+              "text": "Posso usare una penna rossa?",
+              "isCorrect": false,
+              "feedback": "Di solito si usa il nero o il blu per i documenti ufficiali."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, mi serve un documento valido e il suo codice fiscale.",
+          "english": "Yes, I need a valid ID and your tax code.",
+          "choices": [
+            {
+              "text": "Ecco la mia carta d'identità e il codice fiscale.",
+              "isCorrect": true,
+              "feedback": "Hai fornito correttamente i documenti richiesti."
+            },
+            {
+              "text": "Non ho documenti con me oggi.",
+              "isCorrect": false,
+              "feedback": "Allora dovrai tornare un altro giorno."
+            },
+            {
+              "text": "Il mio codice fiscale è segreto.",
+              "isCorrect": false,
+              "feedback": "È necessario per l'iscrizione ai servizi pubblici."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto, grazie. L'iscrizione è gratuita per i residenti in città.",
+          "english": "Perfect, thank you. Registration is free for residents in the city.",
+          "choices": [
+            {
+              "text": "Ottimo! Quanto dura la validità della tessera?",
+              "isCorrect": true,
+              "feedback": "Domanda utile per conoscere la durata del servizio."
+            },
+            {
+              "text": "Perché il servizio è gratis? Sinceramente non mi fido affatto.",
+              "isCorrect": false,
+              "feedback": "È un servizio pubblico offerto dal comune!"
+            },
+            {
+              "text": "Preferirei pagare comunque il servizio, non mi piacciono i regali.",
+              "isCorrect": false,
+              "feedback": "Risparmia i tuoi soldi per un buon caffè!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "La tessera scade dopo un anno, ma può essere rinnovata facilmente.",
+          "english": "The card expires after one year, but it can be renewed easily.",
+          "choices": [
+            {
+              "text": "Capito. Quanti libri posso prendere in prestito alla volta?",
+              "isCorrect": true,
+              "feedback": "Stai cercando di capire i limiti del prestito."
+            },
+            {
+              "text": "Un anno è troppo poco, vorrei una validità di almeno dieci anni.",
+              "isCorrect": false,
+              "feedback": "Il rinnovo annuale serve per aggiornare i dati."
+            },
+            {
+              "text": "Non vorrei che questa tessera scadesse mai, è possibile farlo?",
+              "isCorrect": false,
+              "feedback": "Tutto ha una scadenza, anche le tessere!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Può prendere fino a cinque libri contemporaneamente per trenta giorni.",
+          "english": "You can borrow up to five books at a time for thirty days.",
+          "choices": [
+            {
+              "text": "Trenta giorni sono abbastanza. Si possono rinnovare?",
+              "isCorrect": true,
+              "feedback": "Hai chiesto una cosa molto utile per evitare multe."
+            },
+            {
+              "text": "Cinque libri sono troppi, pesano tanto.",
+              "isCorrect": false,
+              "feedback": "Non sei obbligato a prenderne cinque!"
+            },
+            {
+              "text": "Voglio tenerli per un anno intero.",
+              "isCorrect": false,
+              "feedback": "Gli altri utenti vorrebbero leggere quei libri dopo di te!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, può rinnovare il prestito una volta se non ci sono prenotazioni.",
+          "english": "Yes, you can renew the loan once if there are no reservations.",
+          "choices": [
+            {
+              "text": "Bene. Posso farlo anche online dal sito della biblioteca?",
+              "isCorrect": true,
+              "feedback": "Ottima domanda sulla comodità dei servizi digitali."
+            },
+            {
+              "text": "Voglio venire qui ogni giorno, non mi servono affatto i siti online.",
+              "isCorrect": false,
+              "feedback": "Sei il benvenuto, ma online è più comodo!"
+            },
+            {
+              "text": "Mi scusi, ma potrebbe spiegarmi meglio cos'è questo internet?",
+              "isCorrect": false,
+              "feedback": "Forse sei nel secolo sbagliato!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente, le darò le credenziali per il portale online tra poco.",
+          "english": "Certainly, I will give you the credentials for the online portal shortly.",
+          "choices": [
+            {
+              "text": "Grazie, sarà molto utile per gestire i miei prestiti.",
+              "isCorrect": true,
+              "feedback": "Hai apprezzato il servizio offerto."
+            },
+            {
+              "text": "Non voglio password, le dimentico sempre.",
+              "isCorrect": false,
+              "feedback": "Puoi scriverle in un posto sicuro!"
+            },
+            {
+              "text": "Preferisco usare i segnali di fumo.",
+              "isCorrect": false,
+              "feedback": "La biblioteca preferisce l'email!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ecco la sua nuova tessera. La firmi sul retro, per favore.",
+          "english": "Here is your new card. Please sign it on the back.",
+          "choices": [
+            {
+              "text": "Fatto. Ora sono ufficialmente un utente della biblioteca!",
+              "isCorrect": true,
+              "feedback": "Ottimo entusiasmo per la tua nuova tessera."
+            },
+            {
+              "text": "Non voglio firmare, la mia firma è brutta.",
+              "isCorrect": false,
+              "feedback": "La firma serve per la sicurezza della tessera!"
+            },
+            {
+              "text": "Mi scusi, posso mettere un adesivo colorato sulla tessera?",
+              "isCorrect": false,
+              "feedback": "Meglio non coprire i dati importanti."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Esatto! Benvenuto tra noi. Vuole che le mostri dove sono i romanzi?",
+          "english": "Exactly! Welcome among us. Do you want me to show you where the novels are?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Mi piace molto leggere narrativa contemporanea.",
+              "isCorrect": true,
+              "feedback": "Hai accettato l'offerta e indicato i tuoi gusti."
+            },
+            {
+              "text": "No, preferisco perdermi tra gli scaffali da solo, grazie comunque.",
+              "isCorrect": false,
+              "feedback": "Può essere divertente, ma il bibliotecario voleva solo aiutare!"
+            },
+            {
+              "text": "Sono molto stanco ora e vorrei tornare subito a casa mia.",
+              "isCorrect": false,
+              "feedback": "Hai appena fatto la tessera, prendi almeno un libro!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study_room",
+      "title": "Usare la sala lettura",
+      "description": "Trovare un posto per studiare e collegarsi al Wi-Fi.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Sta cercando un posto tranquillo per studiare?",
+          "english": "Good morning. Are you looking for a quiet place to study?",
+          "choices": [
+            {
+              "text": "Sì, sto cercando un tavolo libero con una presa elettrica.",
+              "isCorrect": true,
+              "feedback": "Hai specificato bene le tue necessità."
+            },
+            {
+              "text": "Voglio dormire un po', c'è un divano comodo da qualche parte?",
+              "isCorrect": false,
+              "feedback": "La biblioteca non è un dormitorio!"
+            },
+            {
+              "text": "C'è troppa gente qui, non riesco a trovare il silenzio che cerco.",
+              "isCorrect": false,
+              "feedback": "È una biblioteca popolare, è normale!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ci sono alcuni posti disponibili in fondo alla sala lettura principale.",
+          "english": "There are some spots available at the back of the main reading room.",
+          "choices": [
+            {
+              "text": "Perfetto. È una zona silenziosa o si può parlare?",
+              "isCorrect": true,
+              "feedback": "Domanda importante per rispettare le regole della sala."
+            },
+            {
+              "text": "Posso gridare se sono felice?",
+              "isCorrect": false,
+              "feedback": "Assolutamente no, bisogna stare in silenzio!"
+            },
+            {
+              "text": "Preferisco un posto vicino alla finestra.",
+              "isCorrect": false,
+              "feedback": "Controlla se ce n'è uno libero allora!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "In quella sala è obbligatorio il silenzio assoluto per studiare.",
+          "english": "In that room, absolute silence is mandatory for studying.",
+          "choices": [
+            {
+              "text": "Capito. C'è anche la connessione Wi-Fi gratuita in quella zona?",
+              "isCorrect": true,
+              "feedback": "Ti stai informando sui servizi digitali della sala."
+            },
+            {
+              "text": "Posso ascoltare musica ad alto volume mentre studio la lezione?",
+              "isCorrect": false,
+              "feedback": "Solo se usi le cuffie e il volume è basso!"
+            },
+            {
+              "text": "Purtroppo il silenzio assoluto mi mette sempre molta ansia.",
+              "isCorrect": false,
+              "feedback": "Forse dovresti andare a studiare al parco!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, il segnale Wi-Fi è ottimo ovunque. La password è scritta sul cartello all'ingresso.",
+          "english": "Yes, the Wi-Fi signal is excellent everywhere. The password is written on the sign at the entrance.",
+          "choices": [
+            {
+              "text": "Bene, andrò a controllare il cartello tra poco. Grazie.",
+              "isCorrect": true,
+              "feedback": "Hai preso nota di dove trovare la password."
+            },
+            {
+              "text": "Purtroppo non lo vedo, può dirmela lei a voce, per favore?",
+              "isCorrect": false,
+              "feedback": "Il cartello è lì apposta per non doverla ripetere!"
+            },
+            {
+              "text": "Mi scusi, ma onestamente non vedo nessun cartello qui intorno.",
+              "isCorrect": false,
+              "feedback": "Guarda meglio, è proprio accanto alla porta!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ricordi che deve lasciare le borse grandi negli armadietti all'ingresso.",
+          "english": "Remember that you must leave large bags in the lockers at the entrance.",
+          "choices": [
+            {
+              "text": "Ah, non lo sapevo. Serve una moneta per chiudere l'armadietto?",
+              "isCorrect": true,
+              "feedback": "Ti stai informando correttamente sul funzionamento del servizio."
+            },
+            {
+              "text": "Non voglio lasciare la mia borsa, ho cose preziose.",
+              "isCorrect": false,
+              "feedback": "Gli armadietti sono sicuri e sorvegliati."
+            },
+            {
+              "text": "Posso portare la valigia in sala?",
+              "isCorrect": false,
+              "feedback": "No, è troppo ingombrante!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "No, basta inserire la sua tessera o usare la chiave che trova nella toppa.",
+          "english": "No, just insert your card or use the key you find in the keyhole.",
+          "choices": [
+            {
+              "text": "Ottimo, molto comodo. Vado subito a posare lo zaino.",
+              "isCorrect": true,
+              "feedback": "Stai seguendo le istruzioni del bibliotecario."
+            },
+            {
+              "text": "Mi scusi, ma purtroppo credo di aver perso la chiave poco fa.",
+              "isCorrect": false,
+              "feedback": "Ma se non l'hai ancora presa!"
+            },
+            {
+              "text": "Ho provato ad aprirla, ma mi sembra che la toppa sia rotta.",
+              "isCorrect": false,
+              "feedback": "Prova un altro armadietto allora."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Una volta in sala, si assicuri di mettere il cellulare in modalità silenziosa.",
+          "english": "Once in the room, make sure to put your cell phone on silent mode.",
+          "choices": [
+            {
+              "text": "Certamente, lo farò subito. Non voglio disturbare nessuno.",
+              "isCorrect": true,
+              "feedback": "Mostri rispetto per gli altri utenti."
+            },
+            {
+              "text": "Aspetto una chiamata molto importante e devo assolutamente rispondere.",
+              "isCorrect": false,
+              "feedback": "In quel caso, dovrai uscire dalla sala per rispondere."
+            },
+            {
+              "text": "Il mio cellulare non ha la modalità silenziosa.",
+              "isCorrect": false,
+              "feedback": "Tutti i cellulari moderni ce l'hanno!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "La ringrazio. Se ha bisogno di consultare un dizionario, li trova vicino alla finestra.",
+          "english": "Thank you. If you need to consult a dictionary, you can find them near the window.",
+          "choices": [
+            {
+              "text": "Grazie dell'informazione, potrebbe servirmi per la mia traduzione.",
+              "isCorrect": true,
+              "feedback": "Hai collegato l'informazione alla tua attività."
+            },
+            {
+              "text": "Non uso mai i dizionari di carta.",
+              "isCorrect": false,
+              "feedback": "A volte sono più precisi di quelli online!"
+            },
+            {
+              "text": "Saprebbe indicarmi in quale scaffale si trovano i fumetti?",
+              "isCorrect": false,
+              "feedback": "Stavi parlando di studiare, non di leggere fumetti!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "C'è anche una piccola zona caffè al piano terra se vuole fare una pausa.",
+          "english": "There is also a small coffee area on the ground floor if you want to take a break.",
+          "choices": [
+            {
+              "text": "Molto bene, un caffè mi aiuterà a rimanere sveglio dopo due ore di studio.",
+              "isCorrect": true,
+              "feedback": "Hai pianificato bene la tua sessione di studio."
+            },
+            {
+              "text": "Voglio bere il caffè al tavolo della biblioteca.",
+              "isCorrect": false,
+              "feedback": "Non è permesso portare bevande vicino ai libri!"
+            },
+            {
+              "text": "Purtroppo non posso bere il caffè perché mi rende molto nervoso.",
+              "isCorrect": false,
+              "feedback": "Allora prendi un decaffeinato o un tè!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Benissimo. Le auguro allora un buon pomeriggio di studio intenso!",
+          "english": "Very well. I wish you a good afternoon of intense study!",
+          "choices": [
+            {
+              "text": "Grazie mille per tutto l'aiuto. A più tardi!",
+              "isCorrect": true,
+              "feedback": "Conclusione gentile e appropriata."
+            },
+            {
+              "text": "Spero di finire presto perché onestamente odio molto studiare.",
+              "isCorrect": false,
+              "feedback": "Un po' troppo negativo per l'ambiente!"
+            },
+            {
+              "text": "Arrivederci, spero sinceramente di non rivederla mai più!",
+              "isCorrect": false,
+              "feedback": "Molto scortese!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "returning_books",
+      "title": "Restituire un libro in ritardo",
+      "description": "Gestire la restituzione di libri e pagare una multa per il ritardo.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Desidera restituire questi volumi oggi?",
+          "english": "Good morning. Would you like to return these volumes today?",
+          "choices": [
+            {
+              "text": "Buongiorno. Sì, ecco i tre libri che avevo in prestito.",
+              "isCorrect": true,
+              "feedback": "Hai risposto chiaramente alla domanda iniziale."
+            },
+            {
+              "text": "No, questi libri mi piacciono e ho deciso di tenerli per sempre.",
+              "isCorrect": false,
+              "feedback": "Non puoi farlo, appartengono alla comunità!"
+            },
+            {
+              "text": "Purtroppo li ho persi tutti e non so come fare per rimediare.",
+              "isCorrect": false,
+              "feedback": "Questo sarebbe un grosso problema!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Vediamo... purtroppo uno di questi libri è in ritardo di cinque giorni.",
+          "english": "Let's see... unfortunately one of these books is five days late.",
+          "choices": [
+            {
+              "text": "Mi dispiace molto, ho avuto un problema personale e ho dimenticato la data.",
+              "isCorrect": true,
+              "feedback": "Ti sei scusato in modo onesto."
+            },
+            {
+              "text": "Non è vero, il sistema sbaglia sempre.",
+              "isCorrect": false,
+              "feedback": "Il sistema è molto preciso, meglio non accusarlo!"
+            },
+            {
+              "text": "E allora? Mi sembra che siano passati solo cinque giorni di ritardo.",
+              "isCorrect": false,
+              "feedback": "Ogni giorno di ritardo conta per la disponibilità dei libri!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Capisco, ma secondo il regolamento deve pagare una piccola multa per il ritardo.",
+          "english": "I understand, but according to the regulations you must pay a small fine for the delay.",
+          "choices": [
+            {
+              "text": "Certamente, capisco perfettamente. A quanto ammonta la multa totale?",
+              "isCorrect": true,
+              "feedback": "Hai accettato la responsabilità e chiesto il costo."
+            },
+            {
+              "text": "Non voglio pagare niente, non è colpa mia se ho dimenticato la data.",
+              "isCorrect": false,
+              "feedback": "Senza pagare la multa non potrai più prendere libri in prestito."
+            },
+            {
+              "text": "Secondo me questo è un vero furto, non pagherò mai questa multa!",
+              "isCorrect": false,
+              "feedback": "Non esagerare, è solo una piccola penale."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "La multa è di cinquanta centesimi al giorno, quindi sono due euro e cinquanta in totale.",
+          "english": "The fine is fifty cents a day, so it's two euros and fifty in total.",
+          "choices": [
+            {
+              "text": "Va bene. Accettate pagamenti con la carta di credito o serve il contante?",
+              "isCorrect": true,
+              "feedback": "Ottima domanda pratica per risolvere il pagamento."
+            },
+            {
+              "text": "È troppo caro per me, non potrei avere uno sconto sulla multa?",
+              "isCorrect": false,
+              "feedback": "Le tariffe sono fisse e stabilite dal comune."
+            },
+            {
+              "text": "Le do solo dieci centesimi e facciamo finta di essere pari.",
+              "isCorrect": false,
+              "feedback": "La matematica non è un'opinione!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Accettiamo sia contanti che pagamenti elettronici al banco.",
+          "english": "We accept both cash and electronic payments at the desk.",
+          "choices": [
+            {
+              "text": "Ecco la mia carta. Posso anche rinnovare il prestito degli altri due libri?",
+              "isCorrect": true,
+              "feedback": "Stai cercando di gestire gli altri prestiti in corso."
+            },
+            {
+              "text": "Non ho soldi con me oggi, saprebbe dirmi se posso pagare l'anno prossimo?",
+              "isCorrect": false,
+              "feedback": "Meglio saldare subito il debito!"
+            },
+            {
+              "text": "Accettate pagamenti in natura? Posso pagare con dei bottoni?",
+              "isCorrect": false,
+              "feedback": "La biblioteca non accetta baratti!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Controllo subito... Sì, gli altri due non sono stati prenotati, quindi posso rinnovarli.",
+          "english": "I'll check right away... Yes, the other two have not been reserved, so I can renew them.",
+          "choices": [
+            {
+              "text": "Meno male! Per quanti giorni sarà valido il nuovo rinnovo?",
+              "isCorrect": true,
+              "feedback": "Stai chiedendo la nuova data di scadenza."
+            },
+            {
+              "text": "Non mi interessa più, li restituisco comunque.",
+              "isCorrect": false,
+              "feedback": "Ma avevi appena chiesto di rinnovarli!"
+            },
+            {
+              "text": "Voglio rinnovarli per sempre.",
+              "isCorrect": false,
+              "feedback": "Il rinnovo ha sempre una durata limitata."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Il rinnovo dura altri quindici giorni a partire da oggi.",
+          "english": "The renewal lasts another fifteen days starting from today.",
+          "choices": [
+            {
+              "text": "Perfetto, allora la nuova scadenza è tra due settimane. Grazie.",
+              "isCorrect": true,
+              "feedback": "Hai calcolato correttamente la nuova data."
+            },
+            {
+              "text": "Quindici giorni volano, me ne servono sessanta.",
+              "isCorrect": false,
+              "feedback": "Puoi provare a rinnovarli di nuovo tra quindici giorni!"
+            },
+            {
+              "text": "Mi scusi, ho dimenticato uno dei libri a casa, posso portarlo domani?",
+              "isCorrect": false,
+              "feedback": "Questa è un'ottima domanda, ma ora stiamo parlando del rinnovo degli altri libri."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Le ho appena inviato una ricevuta via email per il pagamento della multa.",
+          "english": "I just sent you a receipt via email for the fine payment.",
+          "choices": [
+            {
+              "text": "Molto bene, controllerò più tardi. C'è altro che devo firmare?",
+              "isCorrect": true,
+              "feedback": "Ti stai assicurando che tutto sia in ordine."
+            },
+            {
+              "text": "Non voglio ricevute, occupano spazio.",
+              "isCorrect": false,
+              "feedback": "È un'email, non occupa spazio fisico!"
+            },
+            {
+              "text": "Voglio una ricevuta scritta a mano.",
+              "isCorrect": false,
+              "feedback": "Il sistema digitale è molto più efficiente."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "No, è tutto a posto. La prossima volta si ricordi di controllare la data sul sito.",
+          "english": "No, everything is in order. Next time remember to check the date on the website.",
+          "choices": [
+            {
+              "text": "Lo farò sicuramente, non voglio più pagare multe!",
+              "isCorrect": true,
+              "feedback": "Hai imparato dai tuoi errori."
+            },
+            {
+              "text": "Mi piace pagare le multe, aiutano la biblioteca.",
+              "isCorrect": false,
+              "feedback": "È un pensiero gentile, ma meglio evitarle!"
+            },
+            {
+              "text": "Il sito non funziona mai.",
+              "isCorrect": false,
+              "feedback": "Invece è molto affidabile, prova ad usarlo di più."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certamente. Le auguro una buona giornata e buona lettura con i libri rinnovati!",
+          "english": "Certainly. I wish you a good day and good reading with the renewed books!",
+          "choices": [
+            {
+              "text": "Grazie mille per la gentilezza. Arrivederci!",
+              "isCorrect": true,
+              "feedback": "Saluto finale educato."
+            },
+            {
+              "text": "Sì, sì, va bene, ciao, non ho tempo da perdere con lei.",
+              "isCorrect": false,
+              "feedback": "Un po' troppo sbrigativo."
+            },
+            {
+              "text": "Posso avere un altro libro ora, nonostante la multa che ho pagato?",
+              "isCorrect": false,
+              "feedback": "Sì, ma forse è meglio se prima finisci quelli che hai!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

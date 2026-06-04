@@ -1,35 +1,22 @@
 import json
+import os
 
-def check_lengths(file_path):
-    with open(file_path, 'r') as f:
-        data = json.load(f)
-    
-    issues = []
-    for conv in data['conversations']:
-        for msg in conv['messages']:
-            choices = msg['choices']
-            correct = next(c for c in choices if c['isCorrect'])
-            correct_len = len(correct['text'])
-            
-            for i, choice in enumerate(choices):
-                if choice['isCorrect']:
-                    continue
-                choice_len = len(choice['text'])
-                min_len = correct_len * 0.6
-                max_len = correct_len * 1.4
-                if choice_len < min_len or choice_len > max_len:
-                    issues.append({
-                        "conv": conv['id'],
-                        "msg": msg['id'],
-                        "choice_index": i,
-                        "correct_text": correct['text'],
-                        "correct_len": correct_len,
-                        "choice_text": choice['text'],
-                        "choice_len": choice_len,
-                        "range": (min_len, max_len)
-                    })
-    return issues
+file_path = 'src/data/exports/daily_life/making_an_appointment/conversations.json'
 
-issues = check_lengths('src/data/exports/travel/asking_directions/conversations.json')
-for issue in issues:
-    print(issue)
+with open(file_path, 'r') as f:
+    data = json.load(f)
+
+for conv in data['conversations']:
+    print(f"Conversation: {conv['id']}")
+    for msg in conv['messages']:
+        correct_text = next(c['text'] for c in msg['choices'] if c['isCorrect'])
+        target_len = len(correct_text)
+        min_len = target_len * 0.6
+        max_len = target_len * 1.4
+        
+        for i, choice in enumerate(msg['choices']):
+            if choice['isCorrect']:
+                continue
+            choice_len = len(choice['text'])
+            if choice_len < min_len or choice_len > max_len:
+                print(f"  Message {msg['id']} Choice {i} ('{choice['text']}'): Length {choice_len} is out of bounds [{min_len:.1f}, {max_len:.1f}] (Correct: {target_len})")

@@ -42,7 +42,9 @@ def main(scenario_slug):
     conv_words = set()
     for conv in conversations:
         for msg in conv.get("messages", []):
-            conv_words.update(tokenize(msg["text"]))
+            text = msg.get("text")
+            if text:
+                conv_words.update(tokenize(text))
             for c in msg.get("choices", []):
                 if c.get("isCorrect"):
                     conv_words.update(tokenize(c["text"]))

@@ -1,0 +1,953 @@
+{
+  "scenarioId": 63,
+  "conversations": [
+    {
+      "id": "didnt_catch_that",
+      "title": "Didn't Catch That",
+      "description": "You missed something your colleague said and need them to repeat it.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Hai finito di preparare il file per la riunione di domani?",
+          "english": "Hi! Have you finished preparing the file for tomorrow's meeting?",
+          "choices": [
+            {
+              "text": "Sì, il file è pronto. Scusa, puoi ripetere l'ora della riunione?",
+              "isCorrect": true,
+              "feedback": "Good! You confirmed the task and asked for a repetition of the time."
+            },
+            {
+              "text": "Vorrei un caffè per favore. Mi piace molto il caffè italiano.",
+              "isCorrect": false,
+              "feedback": "Out of domain! We are talking about a meeting, not coffee."
+            },
+            {
+              "text": "Il mio gatto è molto stanco oggi. Dorme sempre sul divano.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the work context."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certo, la riunione è alle dieci in ufficio. Hai capito bene?",
+          "english": "Sure, the meeting is at ten in the office. Did you understand correctly?",
+          "choices": [
+            {
+              "text": "Scusi, non ho capito bene. Può ripetere l'ora per favore?",
+              "isCorrect": true,
+              "feedback": "Excellent. Asking for clarification politely is the goal."
+            },
+            {
+              "text": "Il mio volo parte alle dieci. Devo andare in aeroporto.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! No airports in this scenario."
+            },
+            {
+              "text": "Mangio una pizza alle dieci. Ho molta fame stasera.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! No restaurants in this scenario."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ho detto alle dieci. Dieci di mattina. È chiaro adesso?",
+          "english": "I said at ten. Ten in the morning. Is it clear now?",
+          "choices": [
+            {
+              "text": "Sì, adesso è tutto chiaro. Grazie per il chiarimento.",
+              "isCorrect": true,
+              "feedback": "Perfect. You confirmed understanding and thanked them."
+            },
+            {
+              "text": "No, non vedo il menu. Cosa posso mangiare di buono?",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! We are at work, not in a restaurant."
+            },
+            {
+              "text": "Il treno arriva adesso. Corro veloce verso il binario.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No trains or platforms here."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. Ricorda di portare anche i documenti stampati.",
+          "english": "Great. Remember to bring the printed documents as well.",
+          "choices": [
+            {
+              "text": "Scusa, cosa significa 'stampati'? Puoi spiegare la parola?",
+              "isCorrect": true,
+              "feedback": "Very good! Asking for the definition of a specific word."
+            },
+            {
+              "text": "Mi fa male la testa. Posso avere una medicina forte?",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! Health-related terms are not allowed."
+            },
+            {
+              "text": "Il mio zaino è blu. Contiene molti libri di scuola.",
+              "isCorrect": false,
+              "feedback": "Irrelevant. Stay focused on the workplace interaction."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "'Stampati' significa sulla carta, non solo nel computer.",
+          "english": "'Stampati' means on paper, not just on the computer.",
+          "choices": [
+            {
+              "text": "Ah, capisco. Grazie per la spiegazione, è molto utile.",
+              "isCorrect": true,
+              "feedback": "Well done. Acknowledging the explanation."
+            },
+            {
+              "text": "Vorrei una camera singola. C'è il bagno in camera?",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not a hotel check-in."
+            },
+            {
+              "text": "Dove trovo il gate B? Il mio bagaglio è pesante.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No airport terms allowed."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Hai installato il nuovo programma per la riunione?",
+          "english": "Have you installed the new program for the meeting?",
+          "choices": [
+            {
+              "text": "Scusa, cosa intendi per 'programma'? È un software?",
+              "isCorrect": true,
+              "feedback": "Excellent! Clarifying technical terms is very important."
+            },
+            {
+              "text": "Il mio cane mangia un osso. È molto felice oggi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant. Stay in the office context."
+            },
+            {
+              "text": "Vorrei prenotare un tavolo per quattro persone.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is not a restaurant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, è il software per le chiamate video. Hai il link?",
+          "english": "Yes, it's the software for video calls. Do you have the link?",
+          "choices": [
+            {
+              "text": "No, non ho il link. Puoi inviarlo di nuovo per favore?",
+              "isCorrect": true,
+              "feedback": "Good request for information."
+            },
+            {
+              "text": "Mi serve un ombrello perché fuori piove molto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant context."
+            },
+            {
+              "text": "La mia borsa è rossa. L'ho comprata ieri in centro.",
+              "isCorrect": false,
+              "feedback": "Irrelevant detail."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certo, lo mando ora alla tua email. È corretta?",
+          "english": "Sure, I'll send it now to your email. Is it correct?",
+          "choices": [
+            {
+              "text": "Puoi ripetere l'indirizzo email lentamente per favore?",
+              "isCorrect": true,
+              "feedback": "Great! Asking to repeat specific information slowly."
+            },
+            {
+              "text": "Il mio passaporto è scaduto. Devo fare quello nuovo.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! No travel documents here."
+            },
+            {
+              "text": "Ho comprato tre mele e due arance al mercato.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No shopping context."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Il tuo indirizzo è nome.cognome@azienda.it. Chiaro?",
+          "english": "Your address is name.surname@company.it. Clear?",
+          "choices": [
+            {
+              "text": "Sì, adesso è chiaro. Grazie per la pazienza.",
+              "isCorrect": true,
+              "feedback": "Polite confirmation."
+            },
+            {
+              "text": "No, preferisco il tè verde senza zucchero.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No drinks."
+            },
+            {
+              "text": "Il mio letto è molto comodo. Dormo bene la notte.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Ci vediamo domani mattina in ufficio allora.",
+          "english": "Perfect. See you tomorrow morning in the office then.",
+          "choices": [
+            {
+              "text": "Va bene, a domani. Grazie ancora per l'aiuto.",
+              "isCorrect": true,
+              "feedback": "Natural conclusion to the conversation."
+            },
+            {
+              "text": "Voglio vedere il Colosseo. È un monumento antico.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! No tourism."
+            },
+            {
+              "text": "Il gatto è sotto il tavolo. Cerca il suo gioco.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_for_a_definition",
+      "title": "Asking for a Definition",
+      "description": "You hear an unfamiliar professional term and ask for its meaning.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Dobbiamo parlare del budget per il nuovo progetto.",
+          "english": "We need to talk about the budget for the new project.",
+          "choices": [
+            {
+              "text": "Scusi, cosa significa la parola 'budget' in italiano?",
+              "isCorrect": true,
+              "feedback": "Perfect! Direct question about an unfamiliar word."
+            },
+            {
+              "text": "Voglio una pizza margherita. La pizza è molto buona.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! Focus on the work context."
+            },
+            {
+              "text": "Il mio cane corre nel parco. Il parco è grande.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Stay in the professional domain."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il budget è la quantità di soldi che possiamo spendere.",
+          "english": "The budget is the amount of money we can spend.",
+          "choices": [
+            {
+              "text": "Grazie, adesso capisco il significato. È molto chiaro.",
+              "isCorrect": true,
+              "feedback": "Excellent response to a definition."
+            },
+            {
+              "text": "Il conto per favore. Pago con la carta di credito.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No restaurant terms allowed."
+            },
+            {
+              "text": "Dov'è il bagno? Devo lavarmi le mani con il sapone.",
+              "isCorrect": false,
+              "feedback": "Irrelevant. Focus on the explanation given."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Bene. Hai domande sulla scadenza del lavoro?",
+          "english": "Good. Do you have questions about the work deadline?",
+          "choices": [
+            {
+              "text": "Sì, ho un dubbio. Cosa significa 'scadenza' precisamente?",
+              "isCorrect": true,
+              "feedback": "Great! You identified another word to clarify."
+            },
+            {
+              "text": "Il mio volo è in ritardo. Devo chiamare un taxi.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No travel/airport terms."
+            },
+            {
+              "text": "Ho mal di stomaco. Dove posso comprare un farmaco?",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No medical terms."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "La scadenza è l'ultimo giorno per consegnare il file.",
+          "english": "The deadline is the last day to submit the file.",
+          "choices": [
+            {
+              "text": "Capito! Grazie per l'esempio e per la cortesia.",
+              "isCorrect": true,
+              "feedback": "Polite and clear. Good job!"
+            },
+            {
+              "text": "Il cameriere è lento. Voglio ordinare il dolce.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No restaurant context here."
+            },
+            {
+              "text": "Il binario è il numero quattro. Il treno parte.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No train station terms."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Prego! Se hai altri dubbi, chiedi pure senza problemi.",
+          "english": "You're welcome! If you have other doubts, feel free to ask.",
+          "choices": [
+            {
+              "text": "Grazie mille. Farò sicuramente altre domande se serve.",
+              "isCorrect": true,
+              "feedback": "Good conclusion to the conversation."
+            },
+            {
+              "text": "Prendo un cornetto vuoto e un caffè macchiato.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! This is a work talk."
+            },
+            {
+              "text": "Il mare è blu e molto calmo. Mi piace nuotare.",
+              "isCorrect": false,
+              "feedback": "Irrelevant. Stay in the professional context."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Dobbiamo anche contattare i nostri colleghi a Milano.",
+          "english": "We also need to contact our colleagues in Milan.",
+          "choices": [
+            {
+              "text": "Scusa, chi sono i 'colleghi'? Puoi spiegare la parola?",
+              "isCorrect": true,
+              "feedback": "Excellent! Clarifying basic workplace relationships."
+            },
+            {
+              "text": "Voglio comprare un gelato alla vaniglia per cena.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No food."
+            },
+            {
+              "text": "Il mio zaino è pesante perché ho molti libri.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "I colleghi sono le persone che lavorano con noi.",
+          "english": "Colleagues are the people who work with us.",
+          "choices": [
+            {
+              "text": "Ah, capisco. E chi è il 'capo' dell'ufficio?",
+              "isCorrect": true,
+              "feedback": "Good follow-up question."
+            },
+            {
+              "text": "Dov'è la stazione? Devo prendere il treno veloce.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No travel."
+            },
+            {
+              "text": "Il sole è molto forte oggi. Serve la crema solare.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Il capo è il direttore. Abbiamo una riunione pomeridiana.",
+          "english": "The boss is the director. We have an afternoon meeting.",
+          "choices": [
+            {
+              "text": "Cosa significa 'pomeridiana'? È dopo pranzo?",
+              "isCorrect": true,
+              "feedback": "Great clarification of an adjective."
+            },
+            {
+              "text": "Ho bisogno di un'aspirina per il mal di testa.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No health."
+            },
+            {
+              "text": "Il gatto mangia il pesce in cucina adesso.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, esattamente. Significa che la riunione è nel pomeriggio.",
+          "english": "Yes, exactly. It means the meeting is in the afternoon.",
+          "choices": [
+            {
+              "text": "Tutto chiaro. Grazie per tutte queste spiegazioni.",
+              "isCorrect": true,
+              "feedback": "Polite confirmation of understanding."
+            },
+            {
+              "text": "Vorrei ordinare una pasta al sugo di pomodoro.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No food."
+            },
+            {
+              "text": "Il mio volo parte dal terminal numero due.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No airport."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla! È importante capire bene ogni parola a lavoro.",
+          "english": "You're welcome! It's important to understand every word at work.",
+          "choices": [
+            {
+              "text": "Sono d'accordo. A più tardi per la riunione!",
+              "isCorrect": true,
+              "feedback": "Natural conclusion."
+            },
+            {
+              "text": "Il mare è molto freddo oggi. Non faccio il bagno.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Mi piace molto ascoltare la musica rock in auto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clarifying_a_deadline",
+      "title": "Clarifying a Deadline",
+      "description": "You need to be sure about when a task is due.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao, puoi inviare il report entro lunedì mattina?",
+          "english": "Hi, can you send the report by Monday morning?",
+          "choices": [
+            {
+              "text": "Scusa, puoi ripetere? Lunedì mattina o martedì?",
+              "isCorrect": true,
+              "feedback": "Good clarification of the specific day."
+            },
+            {
+              "text": "Il cameriere porta il menu. Voglio mangiare carne.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No restaurants."
+            },
+            {
+              "text": "Dov'è il mio bagaglio? Il volo è molto lungo.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No airports."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ho detto lunedì mattina alle nove. È troppo presto?",
+          "english": "I said Monday morning at nine. Is it too early?",
+          "choices": [
+            {
+              "text": "Non ho capito bene l'ora. Può parlare più piano?",
+              "isCorrect": true,
+              "feedback": "Perfect! Asking for slower speech is a key skill."
+            },
+            {
+              "text": "Il dottore dice che devo prendere questa medicina.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No medical context."
+            },
+            {
+              "text": "Il mio gatto dorme sulla sedia in cucina ora.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the deadline."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certo. Lunedì... alle... nove... di... mattina. Capito?",
+          "english": "Sure. Monday... at... nine... in... the morning. Understood?",
+          "choices": [
+            {
+              "text": "Sì, adesso ho capito perfettamente. Grazie mille.",
+              "isCorrect": true,
+              "feedback": "Confirmation after slower repetition."
+            },
+            {
+              "text": "No, il mio biglietto è per il treno veloce.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No trains."
+            },
+            {
+              "text": "Vorrei un gelato al cioccolato e alla crema.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No food talk."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. Hai bisogno di aiuto per scrivere il report?",
+          "english": "Great. Do you need help writing the report?",
+          "choices": [
+            {
+              "text": "Sì, ho una domanda. Cosa devo scrivere nel report?",
+              "isCorrect": true,
+              "feedback": "Good! Clarifying the content of the task."
+            },
+            {
+              "text": "Sì, ho mal di gola. Mi serve un dottore bravo.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No medical talk."
+            },
+            {
+              "text": "Il mio ufficio è vicino alla stazione dei treni.",
+              "isCorrect": false,
+              "feedback": "Irrelevant. Answer the host's question."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Devi scrivere i nomi dei clienti e i prezzi.",
+          "english": "You need to write the names of the clients and the prices.",
+          "choices": [
+            {
+              "text": "Va bene, ora è tutto molto chiaro. Grazie ancora.",
+              "isCorrect": true,
+              "feedback": "Perfect final confirmation."
+            },
+            {
+              "text": "Il taxi è arrivato. Devo andare subito a casa.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and out of domain."
+            },
+            {
+              "text": "Non vedo il mio sedile sul volo per Roma.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No airports."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Questo lavoro è molto urgente. Puoi finire oggi?",
+          "english": "This work is very urgent. Can you finish today?",
+          "choices": [
+            {
+              "text": "Scusa, cosa significa 'urgente'? È molto importante?",
+              "isCorrect": true,
+              "feedback": "Good! Clarifying the importance and meaning of the word."
+            },
+            {
+              "text": "Mi piace mangiare la pizza con le acciughe.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No food."
+            },
+            {
+              "text": "Il mio cane è piccolo e molto vivace.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, significa che serve subito. Entro le diciassette.",
+          "english": "Yes, it means it's needed right away. By 5 PM.",
+          "choices": [
+            {
+              "text": "Cosa intendi per 'diciassette'? Sono le cinque di pomeriggio?",
+              "isCorrect": true,
+              "feedback": "Excellent clarification of time using the 24-hour clock."
+            },
+            {
+              "text": "Dov'è la farmacia? Ho bisogno di una medicina.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No medical context."
+            },
+            {
+              "text": "Il Colosseo è a Roma. È un posto bellissimo.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! No tourism."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Esatto. Le diciassette sono le cinque del pomeriggio.",
+          "english": "Exactly. Seventeen is five in the afternoon.",
+          "choices": [
+            {
+              "text": "Ho capito. Posso finire entro le cinque allora.",
+              "isCorrect": true,
+              "feedback": "Clear confirmation of the deadline."
+            },
+            {
+              "text": "Il mio bagaglio è a mano. Non lo metto in stiva.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No airport terms."
+            },
+            {
+              "text": "Ho comprato un vestito nuovo per la festa.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No shopping."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Grazie. Dove porti il file quando hai finito?",
+          "english": "Thanks. Where do you take the file when you're finished?",
+          "choices": [
+            {
+              "text": "Scusa, puoi ripetere la domanda per favore?",
+              "isCorrect": true,
+              "feedback": "Good request for repetition of a question."
+            },
+            {
+              "text": "Il ristorante è aperto fino a mezzanotte.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No restaurants."
+            },
+            {
+              "text": "La mia casa ha tre stanze e un balcone.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Chiedevo: dove porti il file? Nel mio ufficio?",
+          "english": "I was asking: where are you taking the file? To my office?",
+          "choices": [
+            {
+              "text": "Sì, lo porto nel tuo ufficio alle cinque. Grazie!",
+              "isCorrect": true,
+              "feedback": "Final confirmation and polite closing."
+            },
+            {
+              "text": "Voglio andare a sciare in montagna quest'inverno.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Il gatto dorme sempre sul tappeto verde.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slower_please",
+      "title": "Slower Please",
+      "description": "The speaker is talking too fast for you to follow.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Dobbiamofarelaricercaperilnuovoprogettoeconsegnaretuttoprimadi venerdì.",
+          "english": "Weneedtodotheresearchforthenewprojectandsubmit everythingbeforeFriday.",
+          "choices": [
+            {
+              "text": "Scusa, parli troppo veloce. Puoi parlare più lentamente?",
+              "isCorrect": true,
+              "feedback": "Perfect! Asking for slower speech is essential."
+            },
+            {
+              "text": "Il caffè è troppo caldo. Non posso berlo adesso.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! Focus on the speaker."
+            },
+            {
+              "text": "Voglio andare al mare. La spiaggia è molto bella.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Stay in the professional context."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Hai ragione, scusa. Parlo troppo veloce quando sono stanco.",
+          "english": "You're right, sorry. I talk too fast when I'm tired.",
+          "choices": [
+            {
+              "text": "Nessun problema. Può ripetere quello che ha detto?",
+              "isCorrect": true,
+              "feedback": "Good. You followed up with a request for repetition."
+            },
+            {
+              "text": "Ho perso il mio passaporto. Dove trovo la polizia?",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No travel emergencies."
+            },
+            {
+              "text": "La medicina è sul tavolo. Devo prenderla ogni ora.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No medical context."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ho detto che dobbiamo fare la ricerca per il progetto.",
+          "english": "I said that we need to do the research for the project.",
+          "choices": [
+            {
+              "text": "Grazie. Può spiegare meglio la parola 'ricerca'?",
+              "isCorrect": true,
+              "feedback": "Excellent! Asking for a deeper explanation."
+            },
+            {
+              "text": "Il menu è sul tavolo. Voglio mangiare la pasta.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No restaurants."
+            },
+            {
+              "text": "Il mio volo è al gate dieci. Devo correre ora.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No airports."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "'Ricerca' significa cercare informazioni su internet.",
+          "english": "'Ricerca' means looking for information on the internet.",
+          "choices": [
+            {
+              "text": "Ah, ho capito. Grazie per la spiegazione chiara.",
+              "isCorrect": true,
+              "feedback": "Good acknowledgement of the explanation."
+            },
+            {
+              "text": "Ho bisogno di un dottore. Mi fa male la gamba.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No medical talk."
+            },
+            {
+              "text": "Il treno per Milano è in ritardo di venti minuti.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No trains."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Possiamo iniziare il lavoro adesso?",
+          "english": "Perfect. Can we start the work now?",
+          "choices": [
+            {
+              "text": "Sì, sono pronto. Grazie per la pazienza e l'aiuto.",
+              "isCorrect": true,
+              "feedback": "Great conclusion. Politeness is always good!"
+            },
+            {
+              "text": "Il conto per favore. Pago tutto con i contanti.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No restaurant terms."
+            },
+            {
+              "text": "Il mio bagaglio è perso. Devo parlare con qualcuno.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No airport terms."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Dobbiamoprepararelapresentazioneperilcaposubito.",
+          "english": "Wemustpreparethepresentationforthebossimmediately.",
+          "choices": [
+            {
+              "text": "Scusa, parli di nuovo molto veloce. Puoi rallentare?",
+              "isCorrect": true,
+              "feedback": "Good job! You're consistently asking for what you need."
+            },
+            {
+              "text": "Il treno parte dal binario tre. Dobbiamo correre.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No trains."
+            },
+            {
+              "text": "Vorrei una camera con vista mare per tre notti.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! No hotels."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Scusami tanto. Dobbiamo preparare la presentazione.",
+          "english": "I'm so sorry. We need to prepare the presentation.",
+          "choices": [
+            {
+              "text": "Cosa significa 'presentazione'? Puoi spiegare?",
+              "isCorrect": true,
+              "feedback": "Great! Asking for clarification on a key task word."
+            },
+            {
+              "text": "Ho mal di denti. Devo andare dal dentista oggi.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No health context."
+            },
+            {
+              "text": "Il gatto gioca con la palla nel giardino grande.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "È un file con immagini e testo per mostrare il lavoro.",
+          "english": "It's a file with images and text to show the work.",
+          "choices": [
+            {
+              "text": "Capisco. Dove facciamo questa presentazione?",
+              "isCorrect": true,
+              "feedback": "Good follow-up question about the location."
+            },
+            {
+              "text": "Il gate è chiuso. Non posso salire sull'aereo.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No airport terms."
+            },
+            {
+              "text": "Vorrei una pizza quattro stagioni e una birra.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No food/drinks."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Nella sala conferenze al secondo piano. Va bene?",
+          "english": "In the conference room on the second floor. Is that okay?",
+          "choices": [
+            {
+              "text": "Puoi ripetere 'sala conferenze'? Non ho capito bene.",
+              "isCorrect": true,
+              "feedback": "Excellent! Asking to repeat a specific location name."
+            },
+            {
+              "text": "Il mare è calmo e l'acqua è molto trasparente.",
+              "isCorrect": false,
+              "feedback": "Irrelevant context."
+            },
+            {
+              "text": "Il mio gatto ha fame e vuole mangiare subito.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sala... conferenze. È la stanza grande per parlare.",
+          "english": "Conference... room. It's the large room for talking.",
+          "choices": [
+            {
+              "text": "Ah, la stanza grande! Ora capisco. Grazie mille.",
+              "isCorrect": true,
+              "feedback": "Final confirmation of understanding."
+            },
+            {
+              "text": "Il treno per Roma arriva con dieci minuti di ritardo.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No trains."
+            },
+            {
+              "text": "Il mio bagaglio è rosso e molto facile da vedere.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! No airport terms."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

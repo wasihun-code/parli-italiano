@@ -1,0 +1,953 @@
+{
+  "scenarioId": 59,
+  "conversations": [
+    {
+      "id": "introducing_yourself",
+      "title": "Introducing Yourself",
+      "description": "Meet your new neighbor in the hallway and introduce yourself.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Mi scusi, lei è il nuovo vicino del terzo piano?",
+          "english": "Good morning! Excuse me, are you the new neighbor from the third floor?",
+          "choices": [
+            {
+              "text": "Buongiorno! Sì, piacere, mi sono trasferito ieri.",
+              "isCorrect": true,
+              "feedback": "Perfect! A polite greeting and introduction is the best start."
+            },
+            {
+              "text": "Buongiorno! No, io abito qui da molti anni.",
+              "isCorrect": false,
+              "feedback": "But you ARE the new neighbor in this scenario!"
+            },
+            {
+              "text": "Salve! Sto cercando l'ascensore per salire.",
+              "isCorrect": false,
+              "feedback": "A bit abrupt. Try to answer the neighbor's question first."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Piacere di conoscerla! Io sono Mario e abito qui accanto, all'interno 12.",
+          "english": "Nice to meet you! I am Mario and I live next door, in apartment 12.",
+          "choices": [
+            {
+              "text": "Molto gentile, Mario. Io mi chiamo Marco, piacere.",
+              "isCorrect": true,
+              "feedback": "Excellent. Exchanging names is essential for a good neighborly relationship."
+            },
+            {
+              "text": "Dov'è il bidone della carta? Ho molta carta.",
+              "isCorrect": false,
+              "feedback": "Too early for trash talk! Finish the introduction first."
+            },
+            {
+              "text": "Non parlo bene l'italiano, scusi il disturbo.",
+              "isCorrect": false,
+              "feedback": "You are doing great! Don't end the conversation so soon."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Benvenuto nel palazzo! Si troverà bene qui, è una zona molto tranquilla.",
+          "english": "Welcome to the building! You will like it here, it's a very quiet area.",
+          "choices": [
+            {
+              "text": "Grazie! Sembra un bel condominio, molto pulito.",
+              "isCorrect": true,
+              "feedback": "Complimenting the building is a nice way to make small talk."
+            },
+            {
+              "text": "Sì, ma c'è troppo rumore la notte qui.",
+              "isCorrect": false,
+              "feedback": "Don't complain on your first day! Keep it positive."
+            },
+            {
+              "text": "Quanto costa l'amministratore ogni mese?",
+              "isCorrect": false,
+              "feedback": "A bit too personal for a first meeting."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, cerchiamo di tenerlo bene. Il cortile è sempre in ordine. Ha già le chiavi della posta?",
+          "english": "Yes, we try to keep it well. The courtyard is always tidy. Do you already have the mail keys?",
+          "choices": [
+            {
+              "text": "Sì, le ho ricevute. La mia cassetta è quella con il mio nome.",
+              "isCorrect": true,
+              "feedback": "Good. Confirming you have the necessary items for daily life."
+            },
+            {
+              "text": "No, non ho le chiavi della mia macchina nuova.",
+              "isCorrect": false,
+              "feedback": "He asked about the mail keys, not your car keys!"
+            },
+            {
+              "text": "C'è un pacco per me nell'ascensore, credo.",
+              "isCorrect": false,
+              "feedback": "Unlikely! Packages are usually in the mailbox or at the door."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottimo. Se ha bisogno di informazioni sulle regole del palazzo, chieda pure!",
+          "english": "Great. If you need information about the building rules, just ask!",
+          "choices": [
+            {
+              "text": "Grazie mille! Qual è il giorno in cui puliscono le scale?",
+              "isCorrect": true,
+              "feedback": "A very practical question about building maintenance."
+            },
+            {
+              "text": "Voglio fare una festa con musica alta stasera.",
+              "isCorrect": false,
+              "feedback": "That's a bad way to start! You'll annoy the neighbors."
+            },
+            {
+              "text": "Mi dia il suo numero di telefono subito.",
+              "isCorrect": false,
+              "feedback": "A bit too aggressive for a first meeting."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Puliscono le scale il mercoledì mattina. È meglio non lasciare scarpe fuori dalla porta.",
+          "english": "They clean the stairs on Wednesday morning. It is better not to leave shoes outside the door.",
+          "choices": [
+            {
+              "text": "Capito, non lascerò niente sul pianerottolo. Grazie per l'avviso.",
+              "isCorrect": true,
+              "feedback": "Good. Following these small rules helps keep the building tidy."
+            },
+            {
+              "text": "Lascerò le mie scarpe vecchie in ascensore allora.",
+              "isCorrect": false,
+              "feedback": "No, the elevator is not a storage space!"
+            },
+            {
+              "text": "Odio pulire le scale da solo ogni settimana.",
+              "isCorrect": false,
+              "feedback": "A professional cleaner does it, not you! Listen to the neighbor."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Di nulla. Per il riscaldamento, abbiamo una caldaia centralizzata. Si accende a novembre.",
+          "english": "You're welcome. For heating, we have a central boiler. It turns on in November.",
+          "choices": [
+            {
+              "text": "Ah, bene. Spero che l'appartamento sia caldo in inverno.",
+              "isCorrect": true,
+              "feedback": "Natural concern for a new tenant."
+            },
+            {
+              "text": "Voglio accendere il fuoco in soggiorno ora.",
+              "isCorrect": false,
+              "feedback": "Unsafe and likely not allowed!"
+            },
+            {
+              "text": "Mi piace molto il caldo del deserto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the building's heating system."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, di solito fa molto caldo. Se ha problemi con l'acqua, il rubinetto generale è in cantina.",
+          "english": "Yes, usually it is very warm. If you have water problems, the main tap is in the cellar.",
+          "choices": [
+            {
+              "text": "Spero di non averne bisogno, ma è utile saperlo. Grazie Mario.",
+              "isCorrect": true,
+              "feedback": "Knowing where the main utilities are is important."
+            },
+            {
+              "text": "Vado a bere l'acqua del fiume stasera.",
+              "isCorrect": false,
+              "feedback": "Inappropriate and unrelated to the apartment's plumbing."
+            },
+            {
+              "text": "La cantina è piena di fantasmi e ho paura.",
+              "isCorrect": false,
+              "feedback": "Don't be silly! It's just a storage area."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Prego! Conosce già la zona? C'è un bel parco qui dietro per fare due passi.",
+          "english": "You're welcome! Do you already know the area? There's a nice park back here for a walk.",
+          "choices": [
+            {
+              "text": "Non ancora, andrò a vederlo domani. Sembra perfetto.",
+              "isCorrect": true,
+              "feedback": "A good way to show interest in the new neighborhood."
+            },
+            {
+              "text": "Non mi piace camminare, preferisco stare a letto.",
+              "isCorrect": false,
+              "feedback": "A bit rude when someone is trying to give you a tip."
+            },
+            {
+              "text": "Il parco è troppo lontano, vado in macchina.",
+              "isCorrect": false,
+              "feedback": "He said it's 'here behind', meaning it's very close!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo. Ora vado a fare la spesa al mercato. È stato un piacere conoscerla!",
+          "english": "Great. Now I'm going shopping at the market. It was a pleasure to meet you!",
+          "choices": [
+            {
+              "text": "Piacere mio, Mario! Buona giornata e a presto.",
+              "isCorrect": true,
+              "feedback": "A polite and friendly way to end the first meeting."
+            },
+            {
+              "text": "Mi compri della pizza al mercato, per favore.",
+              "isCorrect": false,
+              "feedback": "A bit too much to ask from a neighbor you just met!"
+            },
+            {
+              "text": "Addio per sempre, non voglio più vederla.",
+              "isCorrect": false,
+              "feedback": "Very hostile and unnecessary!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trash_collection",
+      "title": "Asking about Trash Collection",
+      "description": "Ask your neighbor for help with the recycling rules.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Vedo che ha molti sacchi. Ha bisogno di aiuto con la spazzatura?",
+          "english": "Hi! I see you have many bags. Do you need help with the trash?",
+          "choices": [
+            {
+              "text": "Salve! Sì, grazie. Dove sono i bidoni della differenziata?",
+              "isCorrect": true,
+              "feedback": "Good question. Asking for the location of bins is the first step."
+            },
+            {
+              "text": "Salve! No, preferisco lasciare tutto nel cortile.",
+              "isCorrect": false,
+              "feedback": "That's against the rules and will cause problems!"
+            },
+            {
+              "text": "Ciao! Mi piace molto mangiare la pizza stasera.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the trash situation."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Sono nel cortile interno. Ogni colore è per un materiale diverso. Sa come dividerli?",
+          "english": "They are in the internal courtyard. Each color is for a different material. Do you know how to divide them?",
+          "choices": [
+            {
+              "text": "Non sono sicuro. Qual è il bidone per la plastica?",
+              "isCorrect": true,
+              "feedback": "Honesty is best. It's better to ask than to make a mistake."
+            },
+            {
+              "text": "Sì, metto tutto insieme nel sacco nero grande.",
+              "isCorrect": false,
+              "feedback": "No! That's not how recycling works in Italy."
+            },
+            {
+              "text": "Il vetro è molto pesante da portare fuori.",
+              "isCorrect": false,
+              "feedback": "True, but you still need to know which bin to use."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Quello giallo è per la plastica e il blu per la carta. Il vetro va nel bidone verde.",
+          "english": "The yellow one is for plastic and the blue for paper. Glass goes in the green bin.",
+          "choices": [
+            {
+              "text": "Capito. Giallo plastica, blu carta e verde vetro. Grazie!",
+              "isCorrect": true,
+              "feedback": "Repeating the information helps you remember it correctly."
+            },
+            {
+              "text": "Rosso carta, bianco vetro e nero plastica. Ok.",
+              "isCorrect": false,
+              "feedback": "Wait, those are the wrong colors! Listen carefully."
+            },
+            {
+              "text": "Non mi piace il colore giallo del bidone nuovo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! The colors are functional, not decorative."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto. E per l'organico c'è il secchio marrone piccolo. Attento ai giorni di raccolta!",
+          "english": "Exactly. And for organic waste, there's the small brown bin. Watch out for the collection days!",
+          "choices": [
+            {
+              "text": "Ah, c'è un calendario per la raccolta? Dove posso trovarlo?",
+              "isCorrect": true,
+              "feedback": "Very important question. Collection days vary by material."
+            },
+            {
+              "text": "Ieri era il giorno della riunione di condominio.",
+              "isCorrect": false,
+              "feedback": "The neighbor is talking about trash, not meetings!"
+            },
+            {
+              "text": "Il mio secchio marrone è rotto e molto sporco.",
+              "isCorrect": false,
+              "feedback": "Report it to the administrator later, but find the calendar now."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "È appeso vicino al portone. Le consiglio di fare una foto con il telefono.",
+          "english": "It's hanging near the main door. I suggest you take a photo with your phone.",
+          "choices": [
+            {
+              "text": "Ottima idea. E per le pile scariche o le lampadine?",
+              "isCorrect": true,
+              "feedback": "Thinking ahead about special waste is excellent."
+            },
+            {
+              "text": "Non ho un telefono, preferisco scrivere tutto.",
+              "isCorrect": false,
+              "feedback": "Possible, but a photo is much faster and easier."
+            },
+            {
+              "text": "Voglio comprare un nuovo calendario al negozio.",
+              "isCorrect": false,
+              "feedback": "You need the specific building calendar, not a generic one!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Quelle non vanno nei bidoni normali. C'è un contenitore piccolo all'ingresso.",
+          "english": "Those don't go in the normal bins. There is a small container at the entrance.",
+          "choices": [
+            {
+              "text": "Ah, capisco. È importante non inquinare.",
+              "isCorrect": true,
+              "feedback": "Correct. Environmental awareness is key."
+            },
+            {
+              "text": "Le butto dalla finestra allora, è più facile.",
+              "isCorrect": false,
+              "feedback": "Absolutely not! That's dangerous and illegal."
+            },
+            {
+              "text": "La lampadina è ancora calda, scotta!",
+              "isCorrect": false,
+              "feedback": "Wait for it to cool down before throwing it away!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente. Se invece ha mobili vecchi da buttare, deve chiamare il numero verde.",
+          "english": "Certainly. If instead you have old furniture to throw away, you must call the toll-free number.",
+          "choices": [
+            {
+              "text": "Va bene. Vengono a prenderli a casa?",
+              "isCorrect": true,
+              "feedback": "Asking for details about the service is smart."
+            },
+            {
+              "text": "Lascio l'armadio vecchio sul marciapiede stasera.",
+              "isCorrect": false,
+              "feedback": "No, you must schedule a pickup or you'll get a fine."
+            },
+            {
+              "text": "Il mio divano è molto comodo, non lo butto.",
+              "isCorrect": false,
+              "feedback": "Then this information doesn't apply to you right now."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, prendono appuntamento e vengono sotto casa. I bidoni sono in fondo al corridoio.",
+          "english": "Yes, they make an appointment and come to your house. The bins are at the end of the corridor.",
+          "choices": [
+            {
+              "text": "Grazie, ora vado a buttare questi sacchetti di carta.",
+              "isCorrect": true,
+              "feedback": "Applying what you've learned immediately."
+            },
+            {
+              "text": "Ho paura del buio in fondo al corridoio.",
+              "isCorrect": false,
+              "feedback": "Don't worry, there are automatic lights."
+            },
+            {
+              "text": "La carta è molto leggera, vola via!",
+              "isCorrect": false,
+              "feedback": "Put it inside the bin and close the lid!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Mi raccomando, usi solo sacchetti biodegradabili per l'organico.",
+          "english": "Please, use only biodegradable bags for organic waste.",
+          "choices": [
+            {
+              "text": "Sì, ne ho comprati un pacco ieri al supermercato.",
+              "isCorrect": true,
+              "feedback": "Perfect. Using the correct bags is mandatory."
+            },
+            {
+              "text": "Uso i sacchi di plastica della spesa per tutto.",
+              "isCorrect": false,
+              "feedback": "No, that ruins the compost! Use biodegradable ones."
+            },
+            {
+              "text": "I sacchetti sono troppo piccoli per la mia cucina.",
+              "isCorrect": false,
+              "feedback": "They are standard size, you might need to empty it more often."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bravo! È un ottimo inizio. Se ha altri dubbi, io sono qui. Buona serata!",
+          "english": "Well done! It's a great start. If you have other doubts, I'm here. Good evening!",
+          "choices": [
+            {
+              "text": "Grazie mille per la pazienza. Buona serata a lei!",
+              "isCorrect": true,
+              "feedback": "A polite conclusion to a helpful conversation."
+            },
+            {
+              "text": "Non ho tempo per parlare, devo correre.",
+              "isCorrect": false,
+              "feedback": "A bit abrupt after all the help you received."
+            },
+            {
+              "text": "Voglio mangiare la spazzatura ora.",
+              "isCorrect": false,
+              "feedback": "That's disgusting and nonsensical!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noise_complaint",
+      "title": "Noise Complaint (Polite)",
+      "description": "Talk to your neighbor about the noise coming from their apartment.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buonasera. Scusi il disturbo, sono il suo vicino di sotto.",
+          "english": "Good evening. Sorry to bother you, I am your neighbor from downstairs.",
+          "choices": [
+            {
+              "text": "Buonasera! Mi dica pure, c'è qualche problema?",
+              "isCorrect": true,
+              "feedback": "Being open and polite is the best way to handle complaints."
+            },
+            {
+              "text": "Chiuda la porta, sto dormendo e non voglio.",
+              "isCorrect": false,
+              "feedback": "Very rude! You should listen to your neighbor."
+            },
+            {
+              "text": "Ho fame, vuole venire a cena da me stasera?",
+              "isCorrect": false,
+              "feedback": "Inappropriate timing when a neighbor comes to talk about a problem."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ecco, sento della musica molto alta. Sono già le undici di notte.",
+          "english": "Well, I hear very loud music. It's already eleven at night.",
+          "choices": [
+            {
+              "text": "Oh, mi scusi tanto! Non pensavo si sentisse così forte.",
+              "isCorrect": true,
+              "feedback": "A sincere apology goes a long way in resolving conflicts."
+            },
+            {
+              "text": "Mi piace molto questa canzone, la vuole sentire?",
+              "isCorrect": false,
+              "feedback": "Ignoring the complaint will only make things worse."
+            },
+            {
+              "text": "Il mio vicino di sopra fa più rumore di me.",
+              "isCorrect": false,
+              "feedback": "Don't blame others! Take responsibility for your own noise."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Purtroppo le pareti sono sottili e domani devo svegliarmi presto per il lavoro.",
+          "english": "Unfortunately, the walls are thin and I have to wake up early for work tomorrow.",
+          "choices": [
+            {
+              "text": "La capisco perfettamente. Abbasso subito il volume, scusi ancora.",
+              "isCorrect": true,
+              "feedback": "Empathy and immediate action are the right responses."
+            },
+            {
+              "text": "Anch'io lavoro, ma la musica mi aiuta a studiare.",
+              "isCorrect": false,
+              "feedback": "Not an excuse to disturb others late at night."
+            },
+            {
+              "text": "Può dormire in un'altra stanza più lontana?",
+              "isCorrect": false,
+              "feedback": "Very inconsiderate! You should be the one to lower the volume."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "La ringrazio molto. Sa, ci sono delle regole condominiali sul silenzio dopo le dieci.",
+          "english": "Thank you very much. You know, there are building rules about silence after ten.",
+          "choices": [
+            {
+              "text": "Non lo sapevo, starò più attento in futuro. Userò le cuffie.",
+              "isCorrect": true,
+              "feedback": "Showing a willingness to learn and find solutions is great."
+            },
+            {
+              "text": "Le regole sono stupide e io voglio divertirmi.",
+              "isCorrect": false,
+              "feedback": "Hostile! This will lead to serious problems with the administrator."
+            },
+            {
+              "text": "Voglio leggere il libro delle regole domani.",
+              "isCorrect": false,
+              "feedback": "Good, but confirm you'll be quiet now first."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottima idea, le cuffie sono perfette per la musica a tarda notte.",
+          "english": "Great idea, headphones are perfect for music late at night.",
+          "choices": [
+            {
+              "text": "Sì, così posso ascoltare quello che voglio senza disturbare.",
+              "isCorrect": true,
+              "feedback": "A win-win situation for you and your neighbor."
+            },
+            {
+              "text": "Le cuffie mi fanno male alle orecchie e non le voglio.",
+              "isCorrect": false,
+              "feedback": "Then you must simply lower the volume of the speakers."
+            },
+            {
+              "text": "Compro delle cuffie giganti come quelle dei piloti.",
+              "isCorrect": false,
+              "feedback": "A bit unnecessary, but as long as it works!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Esatto. Anche camminare con i tacchi sul pavimento fa molto rumore qui.",
+          "english": "Exactly. Also walking with heels on the floor makes a lot of noise here.",
+          "choices": [
+            {
+              "text": "Starò attento anche a quello, meglio usare le pantofole.",
+              "isCorrect": true,
+              "feedback": "Using slippers is a classic way to keep peace in Italian buildings."
+            },
+            {
+              "text": "Voglio correre in casa con le scarpe da calcio.",
+              "isCorrect": false,
+              "feedback": "That's even worse! Please be considerate."
+            },
+            {
+              "text": "Il mio pavimento è coperto di tappeti spessi.",
+              "isCorrect": false,
+              "feedback": "That helps, but you should still avoid loud shoes."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "La ringrazio. Cerchiamo tutti di rispettarci per vivere bene insieme.",
+          "english": "I thank you. We all try to respect each other to live well together.",
+          "choices": [
+            {
+              "text": "Sono d'accordo. Il buon vicinato è molto importante.",
+              "isCorrect": true,
+              "feedback": "A very positive and mature attitude."
+            },
+            {
+              "text": "Non mi interessa degli altri, io pago l'affitto.",
+              "isCorrect": false,
+              "feedback": "Paying rent doesn't give you the right to annoy others."
+            },
+            {
+              "text": "Voglio vivere da solo in una foresta lontana.",
+              "isCorrect": false,
+              "feedback": "Maybe that would be better if you don't like rules!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Proprio così. La prossima settimana c'è la riunione di condominio, se vuole venire.",
+          "english": "Exactly. Next week there is the building meeting, if you want to come.",
+          "choices": [
+            {
+              "text": "Grazie dell'invito. A che ora è la riunione?",
+              "isCorrect": true,
+              "feedback": "Showing interest in building affairs is a good sign."
+            },
+            {
+              "text": "Le riunioni sono noiose, preferisco guardare la TV.",
+              "isCorrect": false,
+              "feedback": "They can be, but they are important for building decisions."
+            },
+            {
+              "text": "Voglio urlare durante la riunione tutto il tempo.",
+              "isCorrect": false,
+              "feedback": "That's not productive at all!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Alle sei di sera, nel cortile. Parleremo della manutenzione dell'ascensore.",
+          "english": "At six in the evening, in the courtyard. We will talk about elevator maintenance.",
+          "choices": [
+            {
+              "text": "Cercherò di esserci. Grazie per l'informazione.",
+              "isCorrect": true,
+              "feedback": "Being informed about maintenance is useful."
+            },
+            {
+              "text": "L'ascensore è rotto da dieci anni, lo so.",
+              "isCorrect": false,
+              "feedback": "All the more reason to attend the meeting!"
+            },
+            {
+              "text": "Voglio salire le scale a piedi per sempre.",
+              "isCorrect": false,
+              "feedback": "Good for exercise, but not everyone can do it."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bene, ora la lascio riposare. Buonanotte!",
+          "english": "Well, I'll let you rest now. Goodnight!",
+          "choices": [
+            {
+              "text": "Buonanotte a lei e scusi ancora. A domani!",
+              "isCorrect": true,
+              "feedback": "Ending the interaction on a peaceful and respectful note."
+            },
+            {
+              "text": "Sì, ciao. Ora accendo la radio al massimo.",
+              "isCorrect": false,
+              "feedback": "You just promised to be quiet! Don't be a bad neighbor."
+            },
+            {
+              "text": "Ho paura di dormire al buio completo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and childish."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local_shop_recommendation",
+      "title": "Asking for a Local Shop",
+      "description": "Ask your neighbor for a recommendation for a good shop nearby.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Come va oggi? Si è già abituato alla zona?",
+          "english": "Hi! How is it going today? Have you gotten used to the area yet?",
+          "choices": [
+            {
+              "text": "Salve! Abbastanza bene, ma devo ancora scoprire i negozi vicini.",
+              "isCorrect": true,
+              "feedback": "Good opening. It leads naturally to your question."
+            },
+            {
+              "text": "Salve! No, voglio tornare subito a casa mia.",
+              "isCorrect": false,
+              "feedback": "A bit negative. Try to be more open to your new neighborhood."
+            },
+            {
+              "text": "Ciao! Dove sono le mie chiavi dell'appartamento?",
+              "isCorrect": false,
+              "feedback": "You should know where your keys are! Focus on the conversation."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "C'è tutto quello che serve qui intorno. Cerca qualcosa in particolare?",
+          "english": "There's everything you need around here. Are you looking for something in particular?",
+          "choices": [
+            {
+              "text": "Sì, vorrei sapere se c'è un buon panettiere qui vicino.",
+              "isCorrect": true,
+              "feedback": "Specific questions get specific answers. Everyone loves fresh bread!"
+            },
+            {
+              "text": "Cerco un aeroporto internazionale per partire subito.",
+              "isCorrect": false,
+              "feedback": "Forbidden domain! You are looking for local amenities."
+            },
+            {
+              "text": "Non cerco niente, mi piace camminare e basta.",
+              "isCorrect": false,
+              "feedback": "Then why did you say you need to discover the shops?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certo! C'è 'Il Forno di Rosa' proprio all'angolo della strada. Il pane è ottimo.",
+          "english": "Of course! There is 'Il Forno di Rosa' right on the corner of the street. The bread is excellent.",
+          "choices": [
+            {
+              "text": "Ottimo! È aperto anche la domenica mattina?",
+              "isCorrect": true,
+              "feedback": "A very practical question for someone living in Italy."
+            },
+            {
+              "text": "È troppo lontano, non voglio camminare dieci metri.",
+              "isCorrect": false,
+              "feedback": "Don't be lazy! The corner is very close."
+            },
+            {
+              "text": "Preferisco comprare il pane al supermercato grande.",
+              "isCorrect": false,
+              "feedback": "Maybe, but local bakeries are usually much better."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, Rosa apre presto anche la domenica. Hanno anche dell'ottimo latte fresco.",
+          "english": "Yes, Rosa opens early on Sundays too. They also have excellent fresh milk.",
+          "choices": [
+            {
+              "text": "Perfetto. E per la spesa più grande? C'è un supermercato?",
+              "isCorrect": true,
+              "feedback": "Moving from specialty shops to general shopping is a good progression."
+            },
+            {
+              "text": "Il latte mi fa male, preferisco bere solo vino.",
+              "isCorrect": false,
+              "feedback": "A bit TMI! Just thank them for the info."
+            },
+            {
+              "text": "Quanto costa un chilo di pane da Rosa?",
+              "isCorrect": false,
+              "feedback": "The neighbor might not know the exact price, just that it's good."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, a cinque minuti a piedi c'è un Conad molto grande e ben fornito.",
+          "english": "Yes, five minutes away on foot there is a very large and well-stocked Conad.",
+          "choices": [
+            {
+              "text": "Bene, così non devo usare la macchina. È aperto fino a tardi?",
+              "isCorrect": true,
+              "feedback": "Checking opening hours is always a good idea."
+            },
+            {
+              "text": "Cinque minuti sono troppi, vado in elicottero.",
+              "isCorrect": false,
+              "feedback": "Nonsense! Five minutes is a very short walk."
+            },
+            {
+              "text": "Non mi piace quel supermercato, è troppo blu.",
+              "isCorrect": false,
+              "feedback": "That's a very strange reason to avoid a shop!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Chiude alle nove di sera, tranne la domenica che chiude alle due di pomeriggio.",
+          "english": "It closes at nine in the evening, except for Sunday when it closes at two in the afternoon.",
+          "choices": [
+            {
+              "text": "Capito. Sa se c'è anche una farmacia qui vicino?",
+              "isCorrect": true,
+              "feedback": "Knowing where the pharmacy is is essential for emergencies."
+            },
+            {
+              "text": "Voglio che il supermercato sia aperto tutta la notte.",
+              "isCorrect": false,
+              "feedback": "Not common in all Italian neighborhoods! You must respect the hours."
+            },
+            {
+              "text": "La domenica voglio dormire fino a lunedì.",
+              "isCorrect": false,
+              "feedback": "Fine, but then you won't be able to go to the shop!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, ce n'è una in Piazza Garibaldi. È proprio accanto al bar principale.",
+          "english": "Yes, there is one in Piazza Garibaldi. It's right next to the main bar.",
+          "choices": [
+            {
+              "text": "Piazza Garibaldi, d'accordo. È una zona molto centrale allora.",
+              "isCorrect": true,
+              "feedback": "Getting a sense of the local geography is helpful."
+            },
+            {
+              "text": "Non mi piace Garibaldi, era un uomo cattivo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant historical opinion! Focus on the pharmacy."
+            },
+            {
+              "text": "Vado al bar a bere dieci caffè subito.",
+              "isCorrect": false,
+              "feedback": "Maybe later! Finish asking about the shops first."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Esatto. Il bar fa dei cornetti spettacolari la mattina presto.",
+          "english": "Exactly. The bar makes spectacular croissants early in the morning.",
+          "choices": [
+            {
+              "text": "Buono a sapersi! Mi piace fare colazione fuori ogni tanto.",
+              "isCorrect": true,
+              "feedback": "Enjoying the local culture is part of settling in."
+            },
+            {
+              "text": "Odio i dolci, preferisco mangiare aglio crudo.",
+              "isCorrect": false,
+              "feedback": "A bit extreme! Most people like croissants."
+            },
+            {
+              "text": "I cornetti sono troppo costosi in questo palazzo.",
+              "isCorrect": false,
+              "feedback": "They are sold at the bar, not in the building!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Le consiglio anche il piccolo negozio di frutta e verdura di fronte al bar.",
+          "english": "I also recommend the small fruit and vegetable shop in front of the bar.",
+          "choices": [
+            {
+              "text": "Hanno prodotti locali? Mi piace comprare cose fresche.",
+              "isCorrect": true,
+              "feedback": "Supporting local shops often means better quality food."
+            },
+            {
+              "text": "Voglio comprare solo frutta di plastica per decorare.",
+              "isCorrect": false,
+              "feedback": "You need real food to eat! Listen to the recommendation."
+            },
+            {
+              "text": "La verdura mi rende molto triste e piango.",
+              "isCorrect": false,
+              "feedback": "That's a very unusual reaction to vegetables!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sì, arrivano ogni mattina presto. Bene, la lascio alla sua esplorazione!",
+          "english": "Yes, they arrive every morning early. Well, I'll leave you to your exploration!",
+          "choices": [
+            {
+              "text": "Grazie mille per tutti i consigli! Buona giornata.",
+              "isCorrect": true,
+              "feedback": "A grateful and polite way to end the conversation."
+            },
+            {
+              "text": "Vada via, non voglio più parlare con lei.",
+              "isCorrect": false,
+              "feedback": "Very rude after the neighbor was so helpful!"
+            },
+            {
+              "text": "Voglio esplorare lo spazio con un razzo ora.",
+              "isCorrect": false,
+              "feedback": "Wrong kind of exploration! Stay in the neighborhood."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

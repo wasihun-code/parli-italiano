@@ -1,46 +1,43 @@
 import json
+import math
 
-vocab_count = 160
-phrase_count = 20
-sentence_count = 44
+vocab_count = 349
+phrase_count = 40
+sentence_count = 40
 
-titles = ['At the Shop', 'Postcards & Magnets', 'Local Crafts', 'Asking for Gifts', 'Prices', 'Final Purchase']
+def chunk_ids(prefix, total, chunks=6):
+    res = []
+    base = total // chunks
+    rem = total % chunks
+    start = 1
+    for i in range(chunks):
+        count = base + (1 if i < rem else 0)
+        res.append([f"{prefix}{x}" for x in range(start, start + count)])
+        start += count
+    return res
+
+v_chunks = chunk_ids("v", vocab_count)
+p_chunks = chunk_ids("p", phrase_count)
+s_chunks = chunk_ids("s", sentence_count)
 
 lessons = []
-v_idx = 1
-p_idx = 1
-s_idx = 1
+titles = ["Experience", "Skills", "Company", "Motivation", "Next Steps", "Conclusion"]
 
-for i, title in enumerate(titles):
-    v_end = v_idx + (vocab_count // 6) + (1 if i < (vocab_count % 6) else 0)
-    p_end = p_idx + (phrase_count // 6) + (1 if i < (phrase_count % 6) else 0)
-    s_end = s_idx + (sentence_count // 6) + (1 if i < (sentence_count % 6) else 0)
-    
-    sections = []
-    
-    v_ids = [f"v{j}" for j in range(v_idx, v_end)]
-    if v_ids:
-        sections.append({"type": "vocabulary", "exerciseIds": v_ids})
-        
-    p_ids = [f"p{j}" for j in range(p_idx, p_end)]
-    if p_ids:
-        sections.append({"type": "phrase", "exerciseIds": p_ids})
-        
-    s_ids = [f"s{j}" for j in range(s_idx, s_end)]
-    if s_ids:
-        sections.append({"type": "sentence", "exerciseIds": s_ids})
-        
+for i in range(6):
     lessons.append({
         "id": f"l{i+1}",
-        "title": title,
-        "goal": f"Learn {title.lower()}",
-        "sections": sections
+        "title": titles[i],
+        "goal": f"Master part {i+1} of the interview.",
+        "sections": [
+            {"type": "vocabulary", "exerciseIds": v_chunks[i]},
+            {"type": "phrase", "exerciseIds": p_chunks[i]},
+            {"type": "sentence", "exerciseIds": s_chunks[i]},
+            {"type": "mastery", "exerciseIds": s_chunks[i]}
+        ]
     })
-    
-    v_idx = v_end
-    p_idx = p_end
-    s_idx = s_end
 
-with open("src/data/exports/shopping/souvenir_shop/mini_lessons.json", "w") as f:
-    json.dump({"lessons": lessons}, f, indent=2)
-print("mini_lessons.json generated")
+data = {"lessons": lessons}
+with open("/home/waseageru/parli-italiano/src/data/exports/workstudy/job_interview/mini_lessons.json", "w") as f:
+    json.dump(data, f, indent=2)
+
+print("mini_lessons.json written.")

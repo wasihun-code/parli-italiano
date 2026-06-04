@@ -1,0 +1,953 @@
+{
+  "scenarioId": 56,
+  "conversations": [
+    {
+      "id": "dentist_appointment",
+      "title": "Appuntamento dal dentista",
+      "description": "Chiama lo studio dentistico per fissare un controllo.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Studio Dentistico Rossi, buongiorno. Come posso aiutarla?",
+          "english": "Rossi Dental Clinic, good morning. How can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei fissare un appuntamento per un controllo.",
+              "isCorrect": true,
+              "feedback": "Perfetto! Clear and polite way to state your purpose."
+            },
+            {
+              "text": "Voglio un gelato alla fragola, grazie.",
+              "isCorrect": false,
+              "feedback": "Wrong place! This is a dental clinic, not a gelato shop."
+            },
+            {
+              "text": "Scusi, saprebbe dirmi dov'è il bagno? Mi scappa molto!",
+              "isCorrect": false,
+              "feedback": "A bit too direct for a phone call greeting!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. È già nostro paziente o è la prima volta?",
+          "english": "Certainly. Are you already our patient or is it the first time?",
+          "choices": [
+            {
+              "text": "Sono un nuovo paziente. Mi chiamo Mario Rossi.",
+              "isCorrect": true,
+              "feedback": "Good. You provided your name and patient status."
+            },
+            {
+              "text": "Sì, ho già mangiato un panino veloce mezz'ora fa.",
+              "isCorrect": false,
+              "feedback": "The host is asking about your patient status, not your lunch!"
+            },
+            {
+              "text": "Veramente non mi piace molto andare dal dentista.",
+              "isCorrect": false,
+              "feedback": "Maybe true, but not helpful for making an appointment."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Benvenuto, signor Rossi. Abbiamo disponibilità lunedì alle nove o martedì alle dieci. Quale preferisce?",
+          "english": "Welcome, Mr. Rossi. We have availability Monday at nine or Tuesday at ten. Which do you prefer?",
+          "choices": [
+            {
+              "text": "Lunedì alle nove non posso. Avete un orario nel pomeriggio?",
+              "isCorrect": true,
+              "feedback": "Great. You're negotiating for a better time."
+            },
+            {
+              "text": "Lunedì non posso venire perché vado al mare con gli amici.",
+              "isCorrect": false,
+              "feedback": "Too much personal information. Just say you're busy."
+            },
+            {
+              "text": "Martedì è un bel giorno, ma non sono sicuro se posso venire.",
+              "isCorrect": false,
+              "feedback": "Vague. You need to confirm if the time works for you."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Vediamo... abbiamo giovedì alle diciassette. Le va bene?",
+          "english": "Let's see... we have Thursday at five PM. Does that work for you?",
+          "choices": [
+            {
+              "text": "Giovedì alle diciassette è perfetto. Grazie mille.",
+              "isCorrect": true,
+              "feedback": "Excellent. You confirmed the appointment time."
+            },
+            {
+              "text": "No, giovedì purtroppo piove e preferirei non uscire di casa.",
+              "isCorrect": false,
+              "feedback": "The weather shouldn't stop you from going to the dentista!"
+            },
+            {
+              "text": "A quell'ora di solito dormo e non posso venire in studio.",
+              "isCorrect": false,
+              "feedback": "A bit too informal. Try a more professional response."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Benissimo. Mi può dare il suo numero di telefono per conferma?",
+          "english": "Very well. Can you give me your phone number for confirmation?",
+          "choices": [
+            {
+              "text": "Certo, il mio numero è 333 123 4567.",
+              "isCorrect": true,
+              "feedback": "Perfect. You provided the necessary contact info."
+            },
+            {
+              "text": "Purtroppo non ho un numero di telefono fisso.",
+              "isCorrect": false,
+              "feedback": "Unlikely, since you are currently on the phone!"
+            },
+            {
+              "text": "Perché vuole il mio numero?",
+              "isCorrect": false,
+              "feedback": "A bit suspicious. It's standard procedure for appointments."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Grazie. Preferisce un promemoria via messaggio o via chiamata?",
+          "english": "Thank you. Do you prefer a reminder via text or call?",
+          "choices": [
+            {
+              "text": "Preferisco un messaggio, grazie.",
+              "isCorrect": true,
+              "feedback": "Clear choice. Most people prefer texts nowadays."
+            },
+            {
+              "text": "Preferisco la posta.",
+              "isCorrect": false,
+              "feedback": "A bit slow for a reminder in a few days!"
+            },
+            {
+              "text": "No grazie, non voglio nessun promemoria.",
+              "isCorrect": false,
+              "feedback": "A bit rude. It's just a courtesy reminder."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "D'accordo. Il controllo costa sessanta euro. Va bene?",
+          "english": "Agreed. The check-up costs sixty euros. Is that okay?",
+          "choices": [
+            {
+              "text": "Sì, va bene. Posso pagare con la carta?",
+              "isCorrect": true,
+              "feedback": "Good. You accepted the price and asked about payment."
+            },
+            {
+              "text": "Secondo me è troppo caro per un controllo.",
+              "isCorrect": false,
+              "feedback": "A bit blunt. Standard prices are common."
+            },
+            {
+              "text": "Posso pagare con un abbraccio?",
+              "isCorrect": false,
+              "feedback": "Unrealistic. Clinics need money to operate!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente, accettiamo tutte le carte. Ha dolore a qualche dente?",
+          "english": "Certainly, we accept all cards. Do you have pain in any tooth?",
+          "choices": [
+            {
+              "text": "No, è solo un controllo di routine.",
+              "isCorrect": true,
+              "feedback": "Clear answer. Useful for the dentist to know."
+            },
+            {
+              "text": "Sì, mi fa male il piede.",
+              "isCorrect": false,
+              "feedback": "Wrong specialist! You need a doctor for your foot."
+            },
+            {
+              "text": "Sinceramente non lo so, devo controllare.",
+              "isCorrect": false,
+              "feedback": "You would probably know if you were in pain!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo. Allora la aspettiamo giovedì alle diciassette. Ricordi di portare il codice fiscale.",
+          "english": "Great. Then we'll wait for you Thursday at five PM. Remember to bring your tax code.",
+          "choices": [
+            {
+              "text": "Va bene, porterò il codice fiscale. A giovedì!",
+              "isCorrect": true,
+              "feedback": "Good. You acknowledged the requirement and said goodbye."
+            },
+            {
+              "text": "Purtroppo non ho documenti con me in questo momento.",
+              "isCorrect": false,
+              "feedback": "You'll need them for the first visit!"
+            },
+            {
+              "text": "Mi scusi, ma cos'è esattamente il codice fiscale italiano?",
+              "isCorrect": false,
+              "feedback": "A bit too basic. It's a very common document in Italy."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Buona giornata, signor Rossi!",
+          "english": "Perfect. Have a good day, Mr. Rossi!",
+          "choices": [
+            {
+              "text": "Grazie anche a lei, arrivederci.",
+              "isCorrect": true,
+              "feedback": "Polite and standard closing for a professional call."
+            },
+            {
+              "text": "Va bene, allora ciao ciao e a presto!",
+              "isCorrect": false,
+              "feedback": "A bit too informal for a first-time clinic call."
+            },
+            {
+              "text": "Perfetto, allora ci vediamo a domani!",
+              "isCorrect": false,
+              "feedback": "Wait, the appointment is on Thursday, not tomorrow!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym_trainer_booking",
+      "title": "Lezione con il Personal Trainer",
+      "description": "Prenota una sessione individuale in palestra.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Benvenuto in palestra. Vuoi prenotare una lezione?",
+          "english": "Good morning! Welcome to the gym. Do you want to book a lesson?",
+          "choices": [
+            {
+              "text": "Ciao! Sì, vorrei prenotare una sessione con un personal trainer.",
+              "isCorrect": true,
+              "feedback": "Excellent choice for a gym setting."
+            },
+            {
+              "text": "Veramente vorrei dormire qui perché sono molto stanco.",
+              "isCorrect": false,
+              "feedback": "This is a gym, not a hotel!"
+            },
+            {
+              "text": "Mi scusi, saprebbe dirmi se c'è la pizza in questa palestra?",
+              "isCorrect": false,
+              "feedback": "Unlikely in a fitness center."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottimo. Mercoledì abbiamo Marco libero alle undici o Giulia alle quindici.",
+          "english": "Great. Wednesday we have Marco free at eleven or Giulia at three PM.",
+          "choices": [
+            {
+              "text": "Preferisco Giulia alle quindici. È possibile?",
+              "isCorrect": true,
+              "feedback": "Perfect. You chose a trainer and a time."
+            },
+            {
+              "text": "Sinceramente non mi piacciono molto questi nomi per i trainer.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and a bit rude."
+            },
+            {
+              "text": "Penso che mercoledì sia festa e la palestra sia chiusa.",
+              "isCorrect": false,
+              "feedback": "Actually, the gym is open!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, è disponibile. Vuoi fare una lezione di prova?",
+          "english": "Yes, she is available. Do you want to do a trial lesson?",
+          "choices": [
+            {
+              "text": "Sì, è la mia prima volta. Cosa devo portare?",
+              "isCorrect": true,
+              "feedback": "Good question for a beginner."
+            },
+            {
+              "text": "No grazie, sono già un esperto e non mi serve la prova.",
+              "isCorrect": false,
+              "feedback": "Even experts can benefit from a trial!"
+            },
+            {
+              "text": "Posso portare anche il mio cane durante la lezione di prova?",
+              "isCorrect": false,
+              "feedback": "Animals are usually not allowed in the gym."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Porta un asciugamano, acqua e scarpe pulite. Hai già il certificato?",
+          "english": "Bring a towel, water, and clean shoes. Do you already have the certificate?",
+          "choices": [
+            {
+              "text": "Sì, ho il certificato medico qui con me. Devo pagare ora?",
+              "isCorrect": true,
+              "feedback": "Well prepared! Asking about payment is a good next step."
+            },
+            {
+              "text": "Purtroppo ho solo un certificato di nascita e non quello medico.",
+              "isCorrect": false,
+              "feedback": "The gym needs a medical fitness certificate."
+            },
+            {
+              "text": "Penso che non mi servano le scarpe per fare questo allenamento.",
+              "isCorrect": false,
+              "feedback": "Shoes are mandatory for safety and hygiene."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "No, puoi pagare dopo la lezione. Il costo è di trenta euro. Va bene?",
+          "english": "No, you can pay after the lesson. The cost is thirty euros. Is that okay?",
+          "choices": [
+            {
+              "text": "Sì, trenta euro va bene. Posso pagare in contanti?",
+              "isCorrect": true,
+              "feedback": "Good. You accepted the price and clarified payment method."
+            },
+            {
+              "text": "Pensavo che la lezione fosse completamente gratis per me oggi.",
+              "isCorrect": false,
+              "feedback": "Unlikely! Services usually have a cost."
+            },
+            {
+              "text": "Scusi, ma è possibile pagare la lezione con le mie scarpe nuove?",
+              "isCorrect": false,
+              "feedback": "They only accept money, not trade!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, accettiamo contanti o carta. Hai qualche infortunio o problema fisico?",
+          "english": "Yes, we accept cash or card. Do you have any injuries or physical problems?",
+          "choices": [
+            {
+              "text": "No, sto bene, voglio solo rimettermi in forma.",
+              "isCorrect": true,
+              "feedback": "Clear and positive goal for the trainer."
+            },
+            {
+              "text": "Il problema principale è che mi annoio molto facilmente qui.",
+              "isCorrect": false,
+              "feedback": "Not a physical problem, though good to know!"
+            },
+            {
+              "text": "Ho molta fame e non riesco a pensare bene all'allenamento ora.",
+              "isCorrect": false,
+              "feedback": "The trainer wants to know about your health, not your appetite."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Giulia ti aiuterà sicuramente. A che ora arrivi di solito?",
+          "english": "Perfect. Giulia will definitely help you. What time do you usually arrive?",
+          "choices": [
+            {
+              "text": "Arriverò dieci minuti prima per cambiarmi.",
+              "isCorrect": true,
+              "feedback": "Punctuality is appreciated!"
+            },
+            {
+              "text": "Di solito arrivo quando voglio senza fretta.",
+              "isCorrect": false,
+              "feedback": "A bit too relaxed for a scheduled appointment."
+            },
+            {
+              "text": "Penso che arriverò a mezzanotte per oggi.",
+              "isCorrect": false,
+              "feedback": "The gym is closed then!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottima idea. Abbiamo gli spogliatoi con le docce. Ti servono?",
+          "english": "Great idea. We have changing rooms with showers. Do you need them?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Mi serve anche un armadietto?",
+              "isCorrect": true,
+              "feedback": "Good follow-up question about gym facilities."
+            },
+            {
+              "text": "No grazie, non mi lavo dopo l'allenamento.",
+              "isCorrect": false,
+              "feedback": "Too much information and a bit unhygienic!"
+            },
+            {
+              "text": "Mi piacerebbe avere una doccia d'oro qui.",
+              "isCorrect": false,
+              "feedback": "Unrealistic request!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, gli armadietti sono gratuiti, ma porta un lucchetto. Hai altre domande?",
+          "english": "Yes, the lockers are free, but bring a padlock. Do you have other questions?",
+          "choices": [
+            {
+              "text": "No, è tutto chiaro. Grazie per le informazioni.",
+              "isCorrect": true,
+              "feedback": "Clear closing of the information phase."
+            },
+            {
+              "text": "Scusi, saprebbe dirmi dov'è il parrucchiere più vicino a qui?",
+              "isCorrect": false,
+              "feedback": "Wrong scenario!"
+            },
+            {
+              "text": "Chi è il presidente di questa palestra?",
+              "isCorrect": false,
+              "feedback": "Irrelevant to your gym booking."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Benissimo, allora ci vediamo mercoledì alle quindici. Buon allenamento!",
+          "english": "Very well, then see you Wednesday at three PM. Have a good workout!",
+          "choices": [
+            {
+              "text": "Grazie mille, a mercoledì. Ciao!",
+              "isCorrect": true,
+              "feedback": "Polite and appropriate goodbye."
+            },
+            {
+              "text": "Va bene, allora addio per sempre!",
+              "isCorrect": false,
+              "feedback": "Too dramatic! You're coming back on Wednesday."
+            },
+            {
+              "text": "Grazie mille e allora buon appetito!",
+              "isCorrect": false,
+              "feedback": "Wrong phrase. You say this before eating."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haircut_booking",
+      "title": "Taglio di capelli",
+      "description": "Prenota un appuntamento dal parrucchiere per domani.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Parrucchiere 'Stile Libero', buonasera. Dica pure.",
+          "english": "'Stile Libero' Hairdresser, good evening. Go ahead.",
+          "choices": [
+            {
+              "text": "Buonasera, vorrei prenotare un taglio per domani pomeriggio.",
+              "isCorrect": true,
+              "feedback": "Perfect. You stated what you want and when."
+            },
+            {
+              "text": "Buonasera, scusi ma vorrei comprare una macchina nuova.",
+              "isCorrect": false,
+              "feedback": "This is a hairdresser, not a car dealer!"
+            },
+            {
+              "text": "Veramente ho i capelli troppo lunghi e non so cosa fare.",
+              "isCorrect": false,
+              "feedback": "A bit vague. State that you want an appointment."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Vediamo... domani pomeriggio alle sedici abbiamo un posto libero.",
+          "english": "Let's see... tomorrow afternoon at four PM we have a free spot.",
+          "choices": [
+            {
+              "text": "Alle sedici è un po' presto. Avete qualcosa alle diciotto?",
+              "isCorrect": true,
+              "feedback": "Good negotiation for a better time."
+            },
+            {
+              "text": "Purtroppo alle sedici di solito vado a letto a dormire.",
+              "isCorrect": false,
+              "feedback": "A bit unusual for the afternoon!"
+            },
+            {
+              "text": "Sinceramente preferisco venire alle otto di mattina presto.",
+              "isCorrect": false,
+              "feedback": "The host specifically mentioned the afternoon."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Purtroppo alle diciotto siamo completi. Ma c'è posto venerdì alle diciotto.",
+          "english": "Unfortunately at six PM we are full. But there is a spot Friday at six PM.",
+          "choices": [
+            {
+              "text": "Venerdì va bene. Posso fare anche il colore o solo il taglio?",
+              "isCorrect": true,
+              "feedback": "Good. You accepted the new day and asked for more services."
+            },
+            {
+              "text": "Purtroppo io odio il venerdì e non esco mai di casa quel giorno.",
+              "isCorrect": false,
+              "feedback": "Negative and unhelpful."
+            },
+            {
+              "text": "Voglio tagliare i capelli al mio gatto.",
+              "isCorrect": false,
+              "feedback": "This is a salon for humans!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sì, possiamo fare entrambi. Chi è il suo parrucchiere preferito?",
+          "english": "Yes, we can do both. Who is your favorite hairdresser?",
+          "choices": [
+            {
+              "text": "Non ho una preferenza, va bene chiunque sia disponibile.",
+              "isCorrect": true,
+              "feedback": "Practical and helpful response."
+            },
+            {
+              "text": "Scusi, ma io voglio solo il parrucchiere personale del Re!",
+              "isCorrect": false,
+              "feedback": "Unrealistic expectation!"
+            },
+            {
+              "text": "Veramente non mi piacciono molto i parrucchieri in generale.",
+              "isCorrect": false,
+              "feedback": "Then why are you making an appointment?"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo. Allora segno un appuntamento con Anna per venerdì alle diciotto.",
+          "english": "Agreed. Then I'll mark an appointment with Anna for Friday at six PM.",
+          "choices": [
+            {
+              "text": "Perfetto, grazie mille. Quanto tempo ci vuole per tutto?",
+              "isCorrect": true,
+              "feedback": "Good question to plan your evening."
+            },
+            {
+              "text": "Mi scusi, saprebbe dirmi se Anna è una persona simpatica?",
+              "isCorrect": false,
+              "feedback": "A bit too personal for now."
+            },
+            {
+              "text": "Penso che venerdì sia veramente troppo lontano per me ora.",
+              "isCorrect": false,
+              "feedback": "You just accepted it in the previous turn!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Circa due ore per taglio e colore. Vuoi anche una piega?",
+          "english": "About two hours for cut and color. Do you also want a styling?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Mi piace avere i capelli in ordine.",
+              "isCorrect": true,
+              "feedback": "Positive confirmation."
+            },
+            {
+              "text": "No, voglio i capelli disordinati.",
+              "isCorrect": false,
+              "feedback": "Strange request for a hair salon!"
+            },
+            {
+              "text": "Scusi, ma è possibile ordinare una pizza margherita qui?",
+              "isCorrect": false,
+              "feedback": "Again with the pizza? Focus on the hair!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Benissimo. Il prezzo totale sarà di ottanta euro. È un problema?",
+          "english": "Very well. The total price will be eighty euros. Is that a problem?",
+          "choices": [
+            {
+              "text": "No, va bene. Accettate pagamenti con il cellulare?",
+              "isCorrect": true,
+              "feedback": "Good. You confirmed the price and payment method."
+            },
+            {
+              "text": "Mi scusi, ma questo prezzo mi sembra quasi una rapina!",
+              "isCorrect": false,
+              "feedback": "Too aggressive. Salon services can be expensive."
+            },
+            {
+              "text": "Purtroppo nel mio portafoglio ho solo cinque euro ora.",
+              "isCorrect": false,
+              "feedback": "Then you probably shouldn't book this service."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, certo. Abbiamo anche il caffè per i clienti. Lo desidera?",
+          "english": "Yes, of course. We also have coffee for customers. Would you like one?",
+          "choices": [
+            {
+              "text": "Molto volentieri, un caffè sarebbe perfetto. Grazie.",
+              "isCorrect": true,
+              "feedback": "Polite acceptance of a courtesy."
+            },
+            {
+              "text": "No grazie, purtroppo il caffè mi fa sempre molto male.",
+              "isCorrect": false,
+              "feedback": "A bit blunt. 'No grazie' is enough."
+            },
+            {
+              "text": "Sinceramente preferirei bere un bicchiere di champagne.",
+              "isCorrect": false,
+              "feedback": "Unrealistic expectation for a simple salon."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo. Mi lasci il suo cognome per la prenotazione.",
+          "english": "Great. Leave me your last name for the booking.",
+          "choices": [
+            {
+              "text": "Certamente, il mio cognome è Bianchi. Mario Bianchi.",
+              "isCorrect": true,
+              "feedback": "Perfect. You provided the requested info."
+            },
+            {
+              "text": "Purtroppo io non ho un cognome, ho solo il nome proprio.",
+              "isCorrect": false,
+              "feedback": "Everyone has a last name!"
+            },
+            {
+              "text": "Mi dispiace, ma il mio cognome è un segreto professionale.",
+              "isCorrect": false,
+              "feedback": "Unhelpful for making a booking."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Tutto fatto. La aspettiamo venerdì alle diciott... Buona serata!",
+          "english": "All done. We'll wait for you Friday at six PM. Good evening!",
+          "choices": [
+            {
+              "text": "Grazie mille, buona serata anche a lei. A venerdì!",
+              "isCorrect": true,
+              "feedback": "Standard and polite closing."
+            },
+            {
+              "text": "Va bene, allora a mai più e non mi vedrete mai più qui!",
+              "isCorrect": false,
+              "feedback": "Too dramatic!"
+            },
+            {
+              "text": "Mi scusi, ma dov'è finito il mio caffè che mi ha promesso?",
+              "isCorrect": false,
+              "feedback": "Wait until you get there on Friday!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bank_appointment",
+      "title": "Appuntamento in banca",
+      "description": "Fissa un incontro con il direttore per aprire un conto.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Banca Popolare, buongiorno. In cosa posso esserle utile?",
+          "english": "Banca Popolare, good morning. How can I be of service?",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei un appuntamento con il direttore della banca.",
+              "isCorrect": true,
+              "feedback": "Clear and formal request."
+            },
+            {
+              "text": "Mi scusi, ma io vorrei ritirare subito tutti i miei soldi!",
+              "isCorrect": false,
+              "feedback": "That sounds like a robbery! Be careful."
+            },
+            {
+              "text": "Scusi, saprebbe dirmi dove mi trovo? Mi sono perso del tutto.",
+              "isCorrect": false,
+              "feedback": "This is a bank, not an information kiosk for tourists."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Si tratta di una consulenza per un mutuo o per un conto?",
+          "english": "Certainly. Is it for a mortgage consultation or for an account?",
+          "choices": [
+            {
+              "text": "Vorrei informazioni per aprire un nuovo conto corrente.",
+              "isCorrect": true,
+              "feedback": "Good. You specified your needs."
+            },
+            {
+              "text": "Voglio comprare una casa in America.",
+              "isCorrect": false,
+              "feedback": "A bit too specific and outside the usual scope here."
+            },
+            {
+              "text": "Purtroppo non ho soldi e vorrei un prestito dalla banca.",
+              "isCorrect": false,
+              "feedback": "Then why do you want an appointment at the bank?"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Il direttore è libero giovedì mattina alle undici. Le può andare bene?",
+          "english": "The director is free Thursday morning at eleven. Does that work for you?",
+          "choices": [
+            {
+              "text": "Sì, giovedì alle undici va bene. Quali documenti devo portare?",
+              "isCorrect": true,
+              "feedback": "Good confirmation and proactive question about documents."
+            },
+            {
+              "text": "Purtroppo giovedì ho sempre molto sonno e non posso venire.",
+              "isCorrect": false,
+              "feedback": "Not a valid reason to skip a professional meeting."
+            },
+            {
+              "text": "Mi scusi, ma alle undici io mangio sempre la pasta al sugo.",
+              "isCorrect": false,
+              "feedback": "A bit early for lunch, and irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Porti un documento d'identità valido e il suo codice fiscale.",
+          "english": "Bring a valid ID document and your tax code.",
+          "choices": [
+            {
+              "text": "Va bene, porto tutto il necessario. Devo venire all'ufficio centrale?",
+              "isCorrect": true,
+              "feedback": "Good clarification on location."
+            },
+            {
+              "text": "Purtroppo con me ho solo la mia tessera della biblioteca comunale.",
+              "isCorrect": false,
+              "feedback": "That's not a valid ID for opening a bank account."
+            },
+            {
+              "text": "Penso che verrò all'appuntamento insieme al mio avvocato privato.",
+              "isCorrect": false,
+              "feedback": "Unnecessary for just opening an account."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, ufficio numero tre al primo piano. Chieda di me, sono l'impiegato all'ingresso.",
+          "english": "Yes, office number three on the first floor. Ask for me, I'm the clerk at the entrance.",
+          "choices": [
+            {
+              "text": "Molto gentile, la ringrazio. Posso anche cambiare dei soldi?",
+              "isCorrect": true,
+              "feedback": "Good follow-up question related to banking."
+            },
+            {
+              "text": "Secondo me il primo piano è troppo alto e non posso salire.",
+              "isCorrect": false,
+              "feedback": "There is usually an elevator!"
+            },
+            {
+              "text": "Sinceramente non mi piace molto l'ufficio numero tre della banca.",
+              "isCorrect": false,
+              "feedback": "Irrelevant preference."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, facciamo anche cambio valuta. Di quale moneta ha bisogno?",
+          "english": "Yes, we also do currency exchange. Which currency do you need?",
+          "choices": [
+            {
+              "text": "Mi servono dei dollari americani per un viaggio.",
+              "isCorrect": true,
+              "feedback": "Clear and realistic request."
+            },
+            {
+              "text": "Mi scusi, ma mi servono urgentemente delle monete d'oro vere.",
+              "isCorrect": false,
+              "feedback": "Unrealistic. Banks deal with currency, not pirate treasure!"
+            },
+            {
+              "text": "Scusi, ma è possibile cambiare questi soldi del Monopoly qui?",
+              "isCorrect": false,
+              "feedback": "That's just a game!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "D'accordo, ne abbiamo in disponibilità. Deve compilare un modulo?",
+          "english": "Agreed, we have them available. Do you need to fill out a form?",
+          "choices": [
+            {
+              "text": "Sì, posso compilarlo quando arrivo giovedì?",
+              "isCorrect": true,
+              "feedback": "Practical question about timing."
+            },
+            {
+              "text": "Purtroppo non ho soldi e vorrei un prestito dalla banca.",
+              "isCorrect": false,
+              "feedback": "Unlikely if you're opening a bank account."
+            },
+            {
+              "text": "Non so scrivere e non compilo il modulo.",
+              "isCorrect": false,
+              "feedback": "Very eccentric request!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Certamente, può fare tutto qui. Ha già un conto in un'altra banca?",
+          "english": "Certainly, you can do everything here. Do you already have an account in another bank?",
+          "choices": [
+            {
+              "text": "No, è il mio primo conto corrente in Italia.",
+              "isCorrect": true,
+              "feedback": "Useful information for the bank clerk."
+            },
+            {
+              "text": "Sì, ho un conto alle Bahamas.",
+              "isCorrect": false,
+              "feedback": "Sounds like you might be hiding something!"
+            },
+            {
+              "text": "Ho i soldi sotto il materasso.",
+              "isCorrect": false,
+              "feedback": "That's why you need a bank!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Capisco. Allora le spiegheremo tutti i vantaggi dei nostri conti.",
+          "english": "I see. Then we will explain all the advantages of our accounts.",
+          "choices": [
+            {
+              "text": "La ringrazio molto, sono molto interessato. A giovedì.",
+              "isCorrect": true,
+              "feedback": "Polite and professional."
+            },
+            {
+              "text": "Spero che ci siano regali gratis.",
+              "isCorrect": false,
+              "feedback": "A bit greedy!"
+            },
+            {
+              "text": "Sinceramente non mi interessa niente di quello che dice lei.",
+              "isCorrect": false,
+              "feedback": "Then why are you coming?"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "A giovedì allora. Buona giornata e buon lavoro!",
+          "english": "See you Thursday then. Good day and good work!",
+          "choices": [
+            {
+              "text": "Arrivederci e grazie ancora per la disponibilità.",
+              "isCorrect": true,
+              "feedback": "Perfect formal closing."
+            },
+            {
+              "text": "Va bene, allora ciao bello e ci vediamo giovedì mattina!",
+              "isCorrect": false,
+              "feedback": "Too informal for a bank."
+            },
+            {
+              "text": "Perfetto, allora ci vediamo ieri mattina alle nove in banca!",
+              "isCorrect": false,
+              "feedback": "Grammatically impossible!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

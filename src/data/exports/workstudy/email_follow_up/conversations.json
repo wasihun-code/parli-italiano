@@ -1,0 +1,953 @@
+{
+  "scenarioId": "workstudy/email_follow_up",
+  "conversations": [
+    {
+      "id": "check_received",
+      "title": "Hai ricevuto l'email?",
+      "description": "Chiedere se l'email è arrivata correttamente.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Scusa, hai ricevuto la mia email di ieri mattina?",
+          "english": "Good morning! Sorry, did you receive my email from yesterday morning?",
+          "choices": [
+            {
+              "text": "Sì, l'ho ricevuta proprio adesso.",
+              "isCorrect": true,
+              "feedback": "Ottimo, allora possiamo parlarne."
+            },
+            {
+              "text": "No, non ho ricevuto nessun libro.",
+              "isCorrect": false,
+              "feedback": "Non parlavo di un libro, ma di un'email."
+            },
+            {
+              "text": "Sì, ho mangiato una mela rossa.",
+              "isCorrect": false,
+              "feedback": "L'email non è una mela!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Bene. Hai avuto tempo di leggere l'oggetto dell'email?",
+          "english": "Good. Did you have time to read the subject of the email?",
+          "choices": [
+            {
+              "text": "Sì, l'oggetto è molto chiaro, grazie.",
+              "isCorrect": true,
+              "feedback": "Mi fa piacere che sia comprensibile."
+            },
+            {
+              "text": "No, non trovo le chiavi di casa.",
+              "isCorrect": false,
+              "feedback": "Cerca l'oggetto dell'email, non le chiavi."
+            },
+            {
+              "text": "Sì, il caffè è molto buono oggi.",
+              "isCorrect": false,
+              "feedback": "Parliamo dell'email, non del caffè."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Perfetto. Ti ho inviato anche un allegato importante.",
+          "english": "Perfect. I also sent you an important attachment.",
+          "choices": [
+            {
+              "text": "Ho visto l'allegato, lo apro subito.",
+              "isCorrect": true,
+              "feedback": "Bene, contiene tutti i dettagli."
+            },
+            {
+              "text": "Non mi piace il mare in inverno.",
+              "isCorrect": false,
+              "feedback": "L'allegato non riguarda il mare."
+            },
+            {
+              "text": "Ho perso il mio ombrello nuovo.",
+              "isCorrect": false,
+              "feedback": "Controlla l'allegato, non l'ombrello."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Puoi rispondere all'email entro stasera per favore?",
+          "english": "Can you reply to the email by tonight please?",
+          "choices": [
+            {
+              "text": "Sì, ti rispondo tra pochi minuti.",
+              "isCorrect": true,
+              "feedback": "Grazie, aspetto la tua risposta."
+            },
+            {
+              "text": "No, vado a dormire adesso.",
+              "isCorrect": false,
+              "feedback": "È ancora presto per dormire!"
+            },
+            {
+              "text": "Sì, compro il pane più tardi.",
+              "isCorrect": false,
+              "feedback": "Ho chiesto di rispondere all'email."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Grazie mille. Hai problemi ad aprire il file?",
+          "english": "Thank you very much. Do you have problems opening the file?",
+          "choices": [
+            {
+              "text": "No, il file si apre correttamente.",
+              "isCorrect": true,
+              "feedback": "Eccellente, tutto sembra funzionare."
+            },
+            {
+              "text": "Sì, la porta è chiusa a chiave.",
+              "isCorrect": false,
+              "feedback": "Parlo del file, non della porta."
+            },
+            {
+              "text": "No, il mio gatto dorme sempre.",
+              "isCorrect": false,
+              "feedback": "Il gatto non c'entra con il file."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Ti sembra che manchi qualcosa nel messaggio?",
+          "english": "Great. Does it seem like something is missing in the message?",
+          "choices": [
+            {
+              "text": "No, il messaggio è molto completo.",
+              "isCorrect": true,
+              "feedback": "Perfetto, allora siamo a posto."
+            },
+            {
+              "text": "Sì, manca lo zucchero nel tè.",
+              "isCorrect": false,
+              "feedback": "Nel messaggio, non nel tè!"
+            },
+            {
+              "text": "No, la sedia è molto comoda.",
+              "isCorrect": false,
+              "feedback": "Parliamo della completezza del messaggio."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Allora posso inviare la bozza definitiva ora?",
+          "english": "So can I send the final draft now?",
+          "choices": [
+            {
+              "text": "Sì, puoi inviare la bozza ora.",
+              "isCorrect": true,
+              "feedback": "La invio subito a tutti."
+            },
+            {
+              "text": "No, non voglio lavare i piatti.",
+              "isCorrect": false,
+              "feedback": "Non c'è bisogno di lavare nulla."
+            },
+            {
+              "text": "Sì, il treno parte alle otto.",
+              "isCorrect": false,
+              "feedback": "Parlo della bozza dell'email."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "La bozza è pronta. Vuoi che la inoltri al capo?",
+          "english": "The draft is ready. Do you want me to forward it to the boss?",
+          "choices": [
+            {
+              "text": "Sì, inoltra pure l'email al capo.",
+              "isCorrect": true,
+              "feedback": "Fatto, l'ho appena inoltrata."
+            },
+            {
+              "text": "No, il capo ha una camicia rossa.",
+              "isCorrect": false,
+              "feedback": "Non importa il colore della camicia."
+            },
+            {
+              "text": "Sì, mangio la pasta a pranzo.",
+              "isCorrect": false,
+              "feedback": "Ti ho chiesto se devo inoltrare."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Speriamo che lui risponda presto alla posta.",
+          "english": "Let's hope he replies to the mail soon.",
+          "choices": [
+            {
+              "text": "Spero di sì, è molto urgente.",
+              "isCorrect": true,
+              "feedback": "Sì, dobbiamo avere una conferma."
+            },
+            {
+              "text": "No, la posta è troppo lontana.",
+              "isCorrect": false,
+              "feedback": "Parliamo dell'email, non dell'ufficio."
+            },
+            {
+              "text": "Sì, ho comprato un francobollo.",
+              "isCorrect": false,
+              "feedback": "Non serve il francobollo per l'email."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va bene, allora ti aggiorno appena so qualcosa.",
+          "english": "Alright, then I'll update you as soon as I know something.",
+          "choices": [
+            {
+              "text": "Grazie, attendo tue notizie allora.",
+              "isCorrect": true,
+              "feedback": "A presto e buon lavoro!"
+            },
+            {
+              "text": "No, non mi piace studiare la storia.",
+              "isCorrect": false,
+              "feedback": "Non stiamo studiando storia!"
+            },
+            {
+              "text": "Sì, la finestra è aperta adesso.",
+              "isCorrect": false,
+              "feedback": "Ci sentiamo più tardi, ciao!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clarify_point",
+      "title": "Chiarire un punto",
+      "description": "Chiedere spiegazioni su una parte dell'email.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Hai letto il secondo paragrafo della mia email?",
+          "english": "Hi! Did you read the second paragraph of my email?",
+          "choices": [
+            {
+              "text": "Sì, ma non ho capito bene un punto.",
+              "isCorrect": true,
+              "feedback": "Dimmi pure, cosa non è chiaro?"
+            },
+            {
+              "text": "No, preferisco leggere un libro giallo.",
+              "isCorrect": false,
+              "feedback": "Per favore, leggi l'email di lavoro."
+            },
+            {
+              "text": "Sì, ho comprato un cappello nuovo.",
+              "isCorrect": false,
+              "feedback": "Il cappello non aiuta con l'email."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Quale frase ti sembra poco chiara?",
+          "english": "Certainly. Which sentence seems unclear to you?",
+          "choices": [
+            {
+              "text": "Quella che parla di inviare i file.",
+              "isCorrect": true,
+              "feedback": "Ah, capisco. Devo rispiegarla meglio."
+            },
+            {
+              "text": "Quella che parla di andare in vacanza.",
+              "isCorrect": false,
+              "feedback": "Non c'è nulla sulle vacanze nell'email."
+            },
+            {
+              "text": "Questa penna non scrive molto bene.",
+              "isCorrect": false,
+              "feedback": "Concentrati sulla frase dell'email."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Intendevo dire che dobbiamo inoltrare tutto subito.",
+          "english": "I meant that we need to forward everything immediately.",
+          "choices": [
+            {
+              "text": "Va bene, ora è tutto molto chiaro.",
+              "isCorrect": true,
+              "feedback": "Ottimo, la chiarezza è importante."
+            },
+            {
+              "text": "No, non voglio correre nel parco.",
+              "isCorrect": false,
+              "feedback": "Non ho chiesto di correre."
+            },
+            {
+              "text": "Sì, ho messo il sale nella pasta.",
+              "isCorrect": false,
+              "feedback": "Parliamo di inoltrare i documenti."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Bene. Hai visto la nota sul messaggio inoltrato?",
+          "english": "Good. Did you see the note on the forwarded message?",
+          "choices": [
+            {
+              "text": "Sì, l'ho letta proprio in fondo.",
+              "isCorrect": true,
+              "feedback": "Sì, è un dettaglio fondamentale."
+            },
+            {
+              "text": "No, non guardo mai la televisione.",
+              "isCorrect": false,
+              "feedback": "Leggi la nota, non guardare la TV."
+            },
+            {
+              "text": "Sì, ho visto un uccello volare.",
+              "isCorrect": false,
+              "feedback": "Guarda il messaggio, per favore."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ti sembra un oggetto appropriato per l'email?",
+          "english": "Does it seem like an appropriate subject for the email?",
+          "choices": [
+            {
+              "text": "Sì, l'oggetto descrive bene il file.",
+              "isCorrect": true,
+              "feedback": "Meno male, volevo essere preciso."
+            },
+            {
+              "text": "No, l'oggetto è troppo pesante.",
+              "isCorrect": false,
+              "feedback": "L'oggetto dell'email non ha peso!"
+            },
+            {
+              "text": "Sì, la mela è molto dolce oggi.",
+              "isCorrect": false,
+              "feedback": "Parliamo del titolo dell'email."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Vuoi che modifichi la bozza prima di inviare?",
+          "english": "Do you want me to edit the draft before sending?",
+          "choices": [
+            {
+              "text": "No, secondo me la bozza è perfetta.",
+              "isCorrect": true,
+              "feedback": "Bene, allora la lascio così."
+            },
+            {
+              "text": "Sì, cambia il colore delle pareti.",
+              "isCorrect": false,
+              "feedback": "Le pareti non sono nella bozza!"
+            },
+            {
+              "text": "No, preferisco dormire un po' di più.",
+              "isCorrect": false,
+              "feedback": "Dobbiamo lavorare all'email ora."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ok. Hai ricevuto anche l'allegato con i prezzi?",
+          "english": "Ok. Did you also receive the attachment with the prices?",
+          "choices": [
+            {
+              "text": "Sì, l'ho ricevuto ed è corretto.",
+              "isCorrect": true,
+              "feedback": "Perfetto, i prezzi sono importanti."
+            },
+            {
+              "text": "No, non trovo le mie scarpe blu.",
+              "isCorrect": false,
+              "feedback": "Cerca l'allegato, non le scarpe."
+            },
+            {
+              "text": "Sì, il sole è molto caldo fuori.",
+              "isCorrect": false,
+              "feedback": "Parliamo dell'allegato prezzi."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Dovremmo rispondere a Maria entro oggi?",
+          "english": "Should we reply to Maria by today?",
+          "choices": [
+            {
+              "text": "Sì, è meglio rispondere subito.",
+              "isCorrect": true,
+              "feedback": "Concordo, Maria aspetta notizie."
+            },
+            {
+              "text": "No, Maria mangia troppa pizza.",
+              "isCorrect": false,
+              "feedback": "Questo non c'entra con il lavoro."
+            },
+            {
+              "text": "Sì, compro un regalo per Maria.",
+              "isCorrect": false,
+              "feedback": "Dobbiamo solo mandare un'email."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Chiudo l'email con i saluti formali?",
+          "english": "Should I close the email with formal greetings?",
+          "choices": [
+            {
+              "text": "Sì, usa pure i saluti formali.",
+              "isCorrect": true,
+              "feedback": "Va bene, allora scrivo 'Cordiali saluti'."
+            },
+            {
+              "text": "No, preferisco urlare molto forte.",
+              "isCorrect": false,
+              "feedback": "Non si urla nelle email!"
+            },
+            {
+              "text": "Sì, ho bevuto un bicchiere di latte.",
+              "isCorrect": false,
+              "feedback": "Parlo di come chiudere l'email."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Allora la mando. Grazie per l'aiuto!",
+          "english": "Then I'll send it. Thanks for the help!",
+          "choices": [
+            {
+              "text": "Prego, figurati. A presto allora.",
+              "isCorrect": true,
+              "feedback": "Ciao e grazie ancora!"
+            },
+            {
+              "text": "No, non voglio andare al cinema.",
+              "isCorrect": false,
+              "feedback": "Non stavamo andando al cinema!"
+            },
+            {
+              "text": "Sì, il gatto è sulla tavola.",
+              "isCorrect": false,
+              "feedback": "Buona giornata e buon lavoro!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "confirm_meeting",
+      "title": "Confermare un appuntamento",
+      "description": "Confermare l'orario di un incontro via email.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Hai letto la mia ultima email sull'appuntamento?",
+          "english": "Did you read my last email about the appointment?",
+          "choices": [
+            {
+              "text": "Sì, l'ho appena letta con calma.",
+              "isCorrect": true,
+              "feedback": "Bene, dobbiamo confermare l'ora."
+            },
+            {
+              "text": "No, ho mangiato troppo a pranzo.",
+              "isCorrect": false,
+              "feedback": "Per favore, leggi l'email ora."
+            },
+            {
+              "text": "Sì, il mio cane è molto grande.",
+              "isCorrect": false,
+              "feedback": "Il cane non fissa appuntamenti."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "L'orario delle dieci ti va bene per domani?",
+          "english": "Is ten o'clock okay for you tomorrow?",
+          "choices": [
+            {
+              "text": "Sì, le dieci è un orario perfetto.",
+              "isCorrect": true,
+              "feedback": "Ottimo, allora segno l'orario."
+            },
+            {
+              "text": "No, preferisco dieci chili di pasta.",
+              "isCorrect": false,
+              "feedback": "Parliamo di ore, non di chili."
+            },
+            {
+              "text": "Sì, ho comprato dieci penne blu.",
+              "isCorrect": false,
+              "feedback": "Confermiamo l'ora dell'incontro."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ti mando una conferma via email allora.",
+          "english": "I'll send you a confirmation via email then.",
+          "choices": [
+            {
+              "text": "Grazie, attendo la tua conferma.",
+              "isCorrect": true,
+              "feedback": "La invierò tra pochi secondi."
+            },
+            {
+              "text": "No, non mi piace l'acqua fredda.",
+              "isCorrect": false,
+              "feedback": "Riceverai solo un'email."
+            },
+            {
+              "text": "Sì, ho visto un film ieri sera.",
+              "isCorrect": false,
+              "feedback": "Controlla la tua posta elettronica."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Hai visto l'allegato con la mappa?",
+          "english": "Did you see the attachment with the map?",
+          "choices": [
+            {
+              "text": "Sì, l'allegato è molto utile.",
+              "isCorrect": true,
+              "feedback": "Serve per trovare l'ufficio."
+            },
+            {
+              "text": "No, non mangio mai la mappa.",
+              "isCorrect": false,
+              "feedback": "Le mappe servono per orientarsi!"
+            },
+            {
+              "text": "Sì, ho una mappa del tesoro.",
+              "isCorrect": false,
+              "feedback": "Usa quella che ti ho inviato."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Posso inoltrare l'invito anche a Luca?",
+          "english": "Can I forward the invitation to Luca too?",
+          "choices": [
+            {
+              "text": "Sì, inoltra pure l'invito a Luca.",
+              "isCorrect": true,
+              "feedback": "Perfetto, così saremo in tre."
+            },
+            {
+              "text": "No, Luca non ha una bicicletta.",
+              "isCorrect": false,
+              "feedback": "Non serve una bici per l'email."
+            },
+            {
+              "text": "Sì, Luca mangia sempre le mele.",
+              "isCorrect": false,
+              "feedback": "Inoltra il messaggio a lui."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Hai già scritto la bozza dell'agenda?",
+          "english": "Have you already written the draft of the agenda?",
+          "choices": [
+            {
+              "text": "Sì, la bozza è pronta da ieri.",
+              "isCorrect": true,
+              "feedback": "Bravo, sei stato molto veloce."
+            },
+            {
+              "text": "No, la bozza di vento è forte.",
+              "isCorrect": false,
+              "feedback": "Parlo del documento di lavoro."
+            },
+            {
+              "text": "Sì, ho comprato una borsa nuova.",
+              "isCorrect": false,
+              "feedback": "Controlla la bozza dell'agenda."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Puoi inviare l'agenda a tutti gli altri?",
+          "english": "Can you send the agenda to everyone else?",
+          "choices": [
+            {
+              "text": "Sì, la invio subito per email.",
+              "isCorrect": true,
+              "feedback": "Grazie, così tutti sanno tutto."
+            },
+            {
+              "text": "No, non voglio ballare stasera.",
+              "isCorrect": false,
+              "feedback": "Devi solo spedire un'email."
+            },
+            {
+              "text": "Sì, il latte è nel frigorifero.",
+              "isCorrect": false,
+              "feedback": "Pensa a spedire l'agenda."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Spero che tutti ricevano il messaggio.",
+          "english": "I hope everyone receives the message.",
+          "choices": [
+            {
+              "text": "Sì, spero che arrivi a tutti.",
+              "isCorrect": true,
+              "feedback": "Lo spero anche io vivamente."
+            },
+            {
+              "text": "No, il messaggio è troppo lungo.",
+              "isCorrect": false,
+              "feedback": "L'importante è che arrivi."
+            },
+            {
+              "text": "Sì, ho ricevuto un bel regalo.",
+              "isCorrect": false,
+              "feedback": "Parliamo del nostro messaggio."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Mi dai una conferma definitiva stasera?",
+          "english": "Will you give me a final confirmation tonight?",
+          "choices": [
+            {
+              "text": "Sì, ti do la conferma stasera.",
+              "isCorrect": true,
+              "feedback": "Bene, così posso prenotare."
+            },
+            {
+              "text": "No, preferisco una mela rossa.",
+              "isCorrect": false,
+              "feedback": "Aspetto la tua conferma seria."
+            },
+            {
+              "text": "Sì, ho visto un film d'azione.",
+              "isCorrect": false,
+              "feedback": "Ricordati di scrivermi stasera."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Allora ci vediamo domani alle dieci!",
+          "english": "Perfect. So we'll see each other tomorrow at ten!",
+          "choices": [
+            {
+              "text": "Certamente, a domani alle dieci.",
+              "isCorrect": true,
+              "feedback": "A domani e buona serata!"
+            },
+            {
+              "text": "No, domani vado a sciare.",
+              "isCorrect": false,
+              "feedback": "Avevi detto che andava bene!"
+            },
+            {
+              "text": "Sì, il pane è sulla tavola.",
+              "isCorrect": false,
+              "feedback": "Ci vediamo domani, a presto!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "follow_up_email",
+      "title": "Seguito di un'email",
+      "description": "Seguire lo stato di un'email inviata in precedenza.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao, scusa se ti disturbo ancora per l'email.",
+          "english": "Hi, sorry to bother you again about the email.",
+          "choices": [
+            {
+              "text": "Nessun disturbo, dimmi pure tutto.",
+              "isCorrect": true,
+              "feedback": "Volevo solo sapere se l'hai vista."
+            },
+            {
+              "text": "Sì, il disturbo è molto forte.",
+              "isCorrect": false,
+              "feedback": "Scusami, cercherò di essere breve."
+            },
+            {
+              "text": "No, preferisco una torta al cioccolato.",
+              "isCorrect": false,
+              "feedback": "Non è il momento di mangiare."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Hai avuto modo di rispondere alla posta?",
+          "english": "Did you have a chance to reply to the mail?",
+          "choices": [
+            {
+              "text": "Non ancora, rispondo subito ora.",
+              "isCorrect": true,
+              "feedback": "Grazie, è una cosa molto urgente."
+            },
+            {
+              "text": "No, non mangio mai la posta.",
+              "isCorrect": false,
+              "feedback": "Si tratta di posta elettronica!"
+            },
+            {
+              "text": "Sì, ho risposto al telefono ieri.",
+              "isCorrect": false,
+              "feedback": "Ho chiesto dell'email, non del telefono."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "L'oggetto dell'email era 'Progetto Nuovo'.",
+          "english": "The subject of the email was 'New Project'.",
+          "choices": [
+            {
+              "text": "Ah sì, ora ricordo bene l'oggetto.",
+              "isCorrect": true,
+              "feedback": "Bene, allora la trovi facilmente."
+            },
+            {
+              "text": "No, l'oggetto è una palla rossa.",
+              "isCorrect": false,
+              "feedback": "Cerca il titolo dell'email."
+            },
+            {
+              "text": "Sì, il progetto è troppo vecchio.",
+              "isCorrect": false,
+              "feedback": "Invece è proprio il progetto nuovo."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Hai controllato se c'è un allegato nel messaggio?",
+          "english": "Did you check if there is an attachment in the message?",
+          "choices": [
+            {
+              "text": "Sì, l'allegato c'è e l'ho visto.",
+              "isCorrect": true,
+              "feedback": "Ottimo, è quello che ci serve."
+            },
+            {
+              "text": "No, non c'è nessun gatto nel messaggio.",
+              "isCorrect": false,
+              "feedback": "Parlavo di un file allegato."
+            },
+            {
+              "text": "Sì, ho allegato le mie scarpe nuove.",
+              "isCorrect": false,
+              "feedback": "Non si possono allegare le scarpe!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Puoi inoltrare la risposta anche al mio collega?",
+          "english": "Can you forward the reply to my colleague too?",
+          "choices": [
+            {
+              "text": "Sì, inoltro subito la risposta.",
+              "isCorrect": true,
+              "feedback": "Grazie, gli sarà molto utile."
+            },
+            {
+              "text": "No, il mio collega è molto alto.",
+              "isCorrect": false,
+              "feedback": "L'altezza non è importante ora."
+            },
+            {
+              "text": "Sì, mangio con il tuo collega.",
+              "isCorrect": false,
+              "feedback": "Mandagli solo l'email, grazie."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ti ho mandato una bozza ieri pomeriggio.",
+          "english": "I sent you a draft yesterday afternoon.",
+          "choices": [
+            {
+              "text": "Sì, ho ricevuto la bozza ieri.",
+              "isCorrect": true,
+              "feedback": "Spero che ti piaccia come idea."
+            },
+            {
+              "text": "No, ieri c'era molta pioggia.",
+              "isCorrect": false,
+              "feedback": "Controlla la bozza, non il meteo."
+            },
+            {
+              "text": "Sì, ho mangiato una bozza di pane.",
+              "isCorrect": false,
+              "feedback": "La bozza è un documento."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Hai bisogno di una conferma scritta per questo?",
+          "english": "Do you need a written confirmation for this?",
+          "choices": [
+            {
+              "text": "Sì, una conferma scritta è meglio.",
+              "isCorrect": true,
+              "feedback": "Va bene, la scrivo subito."
+            },
+            {
+              "text": "No, preferisco una mela verde.",
+              "isCorrect": false,
+              "feedback": "La mela non è una conferma."
+            },
+            {
+              "text": "Sì, so scrivere molto bene.",
+              "isCorrect": false,
+              "feedback": "Ti manderò io la conferma."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Possiamo inviare tutto entro le cinque?",
+          "english": "Can we send everything by five?",
+          "choices": [
+            {
+              "text": "Sì, inviamo tutto entro le cinque.",
+              "isCorrect": true,
+              "feedback": "Perfetto, allora siamo nei tempi."
+            },
+            {
+              "text": "No, le cinque sono troppe dita.",
+              "isCorrect": false,
+              "feedback": "Parlo dell'orario limite."
+            },
+            {
+              "text": "Sì, ho cinque euro in tasca.",
+              "isCorrect": false,
+              "feedback": "Dobbiamo solo inviare l'email."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ti ringrazio molto per la tua velocità.",
+          "english": "I thank you very much for your speed.",
+          "choices": [
+            {
+              "text": "Prego, cerco di fare del mio meglio.",
+              "isCorrect": true,
+              "feedback": "Si vede, sei molto professionale."
+            },
+            {
+              "text": "No, io cammino molto piano.",
+              "isCorrect": false,
+              "feedback": "Parlavo della tua velocità al lavoro."
+            },
+            {
+              "text": "Sì, la macchina corre veloce.",
+              "isCorrect": false,
+              "feedback": "Grazie ancora per l'aiuto."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Allora ci sentiamo per la prossima email!",
+          "english": "Then we'll hear from each other for the next email!",
+          "choices": [
+            {
+              "text": "Certamente, a presto e buon lavoro.",
+              "isCorrect": true,
+              "feedback": "Buon lavoro anche a te, ciao!"
+            },
+            {
+              "text": "No, non mi piacciono i rumori.",
+              "isCorrect": false,
+              "feedback": "Non ci saranno rumori forti."
+            },
+            {
+              "text": "Sì, il libro è sullo scaffale.",
+              "isCorrect": false,
+              "feedback": "Ci sentiamo presto, ciao!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

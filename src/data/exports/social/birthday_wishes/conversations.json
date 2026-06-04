@@ -1,0 +1,993 @@
+{
+  "scenarioId": 79,
+  "conversations": [
+    {
+      "id": "wishing_happy_birthday",
+      "title": "Wishing Happy Birthday",
+      "description": "Call or meet a friend to wish them a happy birthday.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Come va? Sai che giorno è oggi?",
+          "english": "Hi! How's it going? Do you know what day it is today?",
+          "choices": [
+            {
+              "text": "Certamente! Oggi è il tuo compleanno. Tanti auguri!",
+              "isCorrect": true,
+              "nextMessageId": "m2",
+              "feedback": "Perfect! You remembered the special day and gave a warm greeting."
+            },
+            {
+              "text": "È lunedì, il giorno peggiore della settimana.",
+              "isCorrect": false,
+              "feedback": "A bit negative! Try to remember if there's a celebration today."
+            },
+            {
+              "text": "Non lo so, ho dimenticato il calendario a casa.",
+              "isCorrect": false,
+              "feedback": "The host is hinting at something special. Think about birthdays!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Grazie mille! Sono molto felice che tu ti sia ricordato.",
+          "english": "Thanks a lot! I'm very happy that you remembered.",
+          "choices": [
+            {
+              "text": "Figurati, non potevo dimenticare! Quanti anni compi oggi?",
+              "isCorrect": true,
+              "nextMessageId": "m3",
+              "feedback": "Good! It's natural to ask about age in a friendly way."
+            },
+            {
+              "text": "Dove sono i bagagli per il volo?",
+              "isCorrect": false,
+              "feedback": "Domain error! We are talking about a birthday, not an airport."
+            },
+            {
+              "text": "Il dottore dice che devi riposare.",
+              "isCorrect": false,
+              "feedback": "Domain error! No need for a doctor at a birthday party."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Compiere trent'anni è un grande traguardo per me!",
+          "english": "Turning thirty is a big milestone for me!",
+          "choices": [
+            {
+              "text": "Trent'anni! Sei ancora giovanissimo, complimenti!",
+              "isCorrect": true,
+              "nextMessageId": "m4",
+              "feedback": "Nice compliment! Thirty is indeed a great age."
+            },
+            {
+              "text": "Sei molto vecchio, quasi un nonno.",
+              "isCorrect": false,
+              "feedback": "Too mean! Try to be more polite to the birthday boy/girl."
+            },
+            {
+              "text": "Ho bisogno di una stampante per l'ufficio.",
+              "isCorrect": false,
+              "feedback": "Domain error! Keep the conversation on the birthday."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie, sei molto gentile. Hai programmi per stasera?",
+          "english": "Thanks, you're very kind. Do you have plans for tonight?",
+          "choices": [
+            {
+              "text": "Spero di festeggiare con te! Facciamo un brindisi?",
+              "isCorrect": true,
+              "nextMessageId": "m5",
+              "feedback": "Great idea! A toast is a classic way to celebrate."
+            },
+            {
+              "text": "No, vado a dormire presto perché sono stanco.",
+              "isCorrect": false,
+              "feedback": "A bit boring for a birthday! Try to join the celebration."
+            },
+            {
+              "text": "Il mio gatto mangia solo pesce fresco.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the birthday plans."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Certo! Ci vediamo più tardi per una piccola festa.",
+          "english": "Sure! See you later for a small party.",
+          "choices": [
+            {
+              "text": "Ottimo! A che ora inizia la festa?",
+              "isCorrect": true,
+              "nextMessageId": "m6",
+              "feedback": "Good! Asking for the time is practical for making plans."
+            },
+            {
+              "text": "Preferisco restare a casa a guardare la TV.",
+              "isCorrect": false,
+              "feedback": "Try to be more social on your friend's birthday!"
+            },
+            {
+              "text": "Il mio computer non funziona bene oggi.",
+              "isCorrect": false,
+              "feedback": "Domain error! Stop talking about technology."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Inizia alle otto. Ti va bene?",
+          "english": "It starts at eight. Is that okay for you?",
+          "choices": [
+            {
+              "text": "Sì, perfetto. Chi altro viene alla festa?",
+              "isCorrect": true,
+              "nextMessageId": "m7",
+              "feedback": "Nice! Interested in who else will be there."
+            },
+            {
+              "text": "No, è troppo tardi per me, io vado a letto alle sette.",
+              "isCorrect": false,
+              "feedback": "A bit early for a party! Try to make an exception."
+            },
+            {
+              "text": "Devo comprare dei biglietti per il museo.",
+              "isCorrect": false,
+              "feedback": "Domain error! Keep focusing on the party."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Vengono Marco, Giulia e forse anche Paolo.",
+          "english": "Marco, Giulia, and maybe Paolo are coming too.",
+          "choices": [
+            {
+              "text": "Sarà divertente! Vuoi che porti qualcosa da mangiare?",
+              "isCorrect": true,
+              "nextMessageId": "m8",
+              "feedback": "Helpful! Offering to bring food is always appreciated."
+            },
+            {
+              "text": "Non mi piacciono quelle persone, non vengo più.",
+              "isCorrect": false,
+              "feedback": "Very rude! Try to be more polite about your friend's guests."
+            },
+            {
+              "text": "Dov'è la stazione dell'autobus più vicina?",
+              "isCorrect": false,
+              "feedback": "Domain error! Stay on the topic of the party guests."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Se vuoi, puoi portare delle patatine o delle bibite.",
+          "english": "If you want, you can bring some chips or some drinks.",
+          "choices": [
+            {
+              "text": "Va bene, porto io le bibite allora. Ti piace la gassosa?",
+              "isCorrect": true,
+              "nextMessageId": "m9",
+              "feedback": "Great! Confirming what you'll bring and checking preferences."
+            },
+            {
+              "text": "No, costa troppo, portale tu.",
+              "isCorrect": false,
+              "feedback": "A bit stingy. It's a nice gesture for a birthday."
+            },
+            {
+              "text": "Il mio dottore dice che non devo bere bibite gassate.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! We are talking about what to bring for the party."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, mi piace molto! Grazie mille per l'aiuto.",
+          "english": "Yes, I like it a lot! Thanks a million for the help.",
+          "choices": [
+            {
+              "text": "Di niente! Allora ci vediamo stasera alle otto.",
+              "isCorrect": true,
+              "nextMessageId": "m10",
+              "feedback": "Perfect! Confirming the final details."
+            },
+            {
+              "text": "Voglio un pagamento per questo aiuto.",
+              "isCorrect": false,
+              "feedback": "Friendship isn't a business transaction! Be kind."
+            },
+            {
+              "text": "Ho perso le chiavi della mia macchina.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Focus on the party plans."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "A stasera allora! Non vedo l'ora di festeggiare.",
+          "english": "See you tonight then! I can't wait to celebrate.",
+          "choices": [
+            {
+              "text": "A dopo! Buon compleanno ancora!",
+              "isCorrect": true,
+              "nextMessageId": "END",
+              "feedback": "Excellent closing. You've confirmed everything and repeated the wishes."
+            },
+            {
+              "text": "Dove sono le mie scarpe nuove?",
+              "isCorrect": false,
+              "feedback": "Domain error! Stay focused on the celebration."
+            },
+            {
+              "text": "Non mi piacciono le torte.",
+              "isCorrect": false,
+              "feedback": "Domain error! Not the right time for that."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "giving_a_gift",
+      "title": "Giving a Gift",
+      "description": "Present a gift to the birthday person.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Oh, sei arrivato! Entra pure, la festa è già iniziata.",
+          "english": "Oh, you're here! Come on in, the party has already started.",
+          "choices": [
+            {
+              "text": "Grazie! Ho portato un piccolo regalo per te. Auguri!",
+              "isCorrect": true,
+              "nextMessageId": "m2",
+              "feedback": "Perfect! Bringing a gift is a great social gesture."
+            },
+            {
+              "text": "Dov'è il bagno? Devo lavarmi le mani.",
+              "isCorrect": false,
+              "feedback": "A bit abrupt. Greet the host and mention the gift first!"
+            },
+            {
+              "text": "Non ho portato niente, spero che ci sia cibo gratis.",
+              "isCorrect": false,
+              "feedback": "Rude! It's better to bring even a small thought."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ma non dovevi disturbarti! Che cos'è?",
+          "english": "But you shouldn't have bothered! What is it?",
+          "choices": [
+            {
+              "text": "È una sorpresa! Aprilo e vedi se ti piace.",
+              "isCorrect": true,
+              "nextMessageId": "m3",
+              "feedback": "Good! Encouraging them to open the gift adds to the excitement."
+            },
+            {
+              "text": "È un termometro per misurare la febbre.",
+              "isCorrect": false,
+              "feedback": "Domain error! That's a medical gift, not very festive."
+            },
+            {
+              "text": "È il modulo per la dichiarazione dei redditi.",
+              "isCorrect": false,
+              "feedback": "Domain error! Nobody wants tax forms for their birthday."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Un libro di cucina italiana! Proprio quello che desideravo.",
+          "english": "An Italian cookbook! Just what I wanted.",
+          "choices": [
+            {
+              "text": "Sapevo che ti piace cucinare. Spero ti sia utile!",
+              "isCorrect": true,
+              "nextMessageId": "m4",
+              "feedback": "Thoughtful! Matching the gift to their interests is key."
+            },
+            {
+              "text": "L'ho trovato nella spazzatura, era gratis.",
+              "isCorrect": false,
+              "feedback": "Very rude! Never say that about a gift."
+            },
+            {
+              "text": "Il mio aereo parte tra due ore, devo andare.",
+              "isCorrect": false,
+              "feedback": "Domain error! You just arrived at the party."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "È bellissimo, lo userò subito. Grazie di cuore.",
+          "english": "It's beautiful, I'll use it right away. Thank you from the bottom of my heart.",
+          "choices": [
+            {
+              "text": "Prego! C'è anche un biglietto dentro il pacco.",
+              "isCorrect": true,
+              "nextMessageId": "m5",
+              "feedback": "Good point. Birthday cards often contain personal messages."
+            },
+            {
+              "text": "Puoi ridarmelo se non lo vuoi più.",
+              "isCorrect": false,
+              "feedback": "Awkward! Don't ask for the gift back."
+            },
+            {
+              "text": "L'infermiera arriverà presto per la visita.",
+              "isCorrect": false,
+              "feedback": "Domain error! Wrong situation entirely."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Lo leggerò dopo con calma. Dove posso mettere la carta regalo?",
+          "english": "I'll read it later calmly. Where can I put the wrapping paper?",
+          "choices": [
+            {
+              "text": "Puoi metterla nel cestino della carta. Vuoi una mano?",
+              "isCorrect": true,
+              "nextMessageId": "m6",
+              "feedback": "Helpful! Offering to help tidy up is a nice touch."
+            },
+            {
+              "text": "Buttala per terra, non importa.",
+              "isCorrect": false,
+              "feedback": "Messy! Try to be more respectful of the host's house."
+            },
+            {
+              "text": "Devo spedire questo pacco all'estero.",
+              "isCorrect": false,
+              "feedback": "Domain error! Focus on the wrapping paper at the party."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "No grazie, faccio io. Accomodati pure sul divano.",
+          "english": "No thanks, I'll do it. Make yourself comfortable on the sofa.",
+          "choices": [
+            {
+              "text": "Grazie. Ci sono molti altri regali qui, vedo!",
+              "isCorrect": true,
+              "nextMessageId": "m7",
+              "feedback": "Observant! Noticing the other gifts is a good conversation starter."
+            },
+            {
+              "text": "Il divano è molto scomodo e sporco.",
+              "isCorrect": false,
+              "feedback": "Rude! Don't criticize the host's furniture."
+            },
+            {
+              "text": "Quanto costa l'affitto di questa casa?",
+              "isCorrect": false,
+              "feedback": "Too personal! Avoid asking about money at a party."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, i miei amici sono stati molto generosi oggi.",
+          "english": "Yes, my friends have been very generous today.",
+          "choices": [
+            {
+              "text": "Ti meriti tutto questo! Ti piace la festa finora?",
+              "isCorrect": true,
+              "nextMessageId": "m8",
+              "feedback": "Kind! Asking how the host is enjoying their own party."
+            },
+            {
+              "text": "Secondo me i regali sono brutti e inutili.",
+              "isCorrect": false,
+              "feedback": "Very mean! Keep negative thoughts to yourself."
+            },
+            {
+              "text": "Dov'è il libretto delle istruzioni del computer?",
+              "isCorrect": false,
+              "feedback": "Domain error! Stay on the topic of the party and gifts."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Mi sto divertendo molto! Vuoi qualcosa da bere?",
+          "english": "I'm having a lot of fun! Do you want something to drink?",
+          "choices": [
+            {
+              "text": "Un bicchiere d'acqua va benissimo, grazie.",
+              "isCorrect": true,
+              "nextMessageId": "m9",
+              "feedback": "Polite! Accepting a simple drink is a good way to settle in."
+            },
+            {
+              "text": "Voglio solo dello champagne molto costoso.",
+              "isCorrect": false,
+              "feedback": "Demanding! Take what is offered."
+            },
+            {
+              "text": "Il dottore dice che devo bere molta acqua.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! Just say yes or no to the drink."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Arriva subito! Intanto parla pure con gli altri.",
+          "english": "Coming right up! Meanwhile, feel free to talk to the others.",
+          "choices": [
+            {
+              "text": "Certo, vado a salutare Giulia e Marco.",
+              "isCorrect": true,
+              "nextMessageId": "m10",
+              "feedback": "Social! Joining the other guests is what parties are for."
+            },
+            {
+              "text": "No, voglio stare solo con te tutto il tempo.",
+              "isCorrect": false,
+              "feedback": "The host needs to talk to everyone! Don't be too clingy."
+            },
+            {
+              "text": "Dov'è la fermata della metropolitana?",
+              "isCorrect": false,
+              "feedback": "Domain error! You just arrived, don't leave yet."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bravo, divertiti! Ci vediamo tra poco per la torta.",
+          "english": "Good, have fun! See you in a bit for the cake.",
+          "choices": [
+            {
+              "text": "Certamente! A dopo e grazie ancora.",
+              "isCorrect": true,
+              "nextMessageId": "END",
+              "feedback": "Perfect! Ending the interaction smoothly."
+            },
+            {
+              "text": "Odio la torta, non chiamarmi.",
+              "isCorrect": false,
+              "feedback": "A bit rude for a birthday guest."
+            },
+            {
+              "text": "Ho bisogno di una ricarica per il telefono.",
+              "isCorrect": false,
+              "feedback": "Domain error! Stay focused on the social event."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "at_the_birthday_party",
+      "title": "At the Birthday Party",
+      "description": "Celebrate with cake and candles.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Attenzione a tutti! È il momento delle candeline!",
+          "english": "Attention everyone! It's time for the candles!",
+          "choices": [
+            {
+              "text": "Che bella torta! Quante candeline ci sono sopra?",
+              "isCorrect": true,
+              "nextMessageId": "m2",
+              "feedback": "Good! Noticing the cake and the candles is very appropriate."
+            },
+            {
+              "text": "C'è troppo fumo, chiamate i pompieri!",
+              "isCorrect": false,
+              "feedback": "Overreacting! It's just birthday candles."
+            },
+            {
+              "text": "Devo inviare questa email di lavoro subito.",
+              "isCorrect": false,
+              "feedback": "Domain error! No work during the cake moment."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ce ne sono trenta! Aiutatemi a cantare 'Tanti Auguri'.",
+          "english": "There are thirty! Help me sing 'Happy Birthday'.",
+          "choices": [
+            {
+              "text": "Certamente! Tanti auguri a te, tanti auguri a te...",
+              "isCorrect": true,
+              "nextMessageId": "m3",
+              "feedback": "Bravo! Singing along is the best part of the party."
+            },
+            {
+              "text": "Io non canto mai, ho una brutta voce.",
+              "isCorrect": false,
+              "feedback": "Don't be shy! It's for a friend."
+            },
+            {
+              "text": "Preferisco ascoltare musica rock molto forte.",
+              "isCorrect": false,
+              "feedback": "Wait for the song to finish first."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ora devo esprimere un desiderio e soffiare forte!",
+          "english": "Now I have to make a wish and blow hard!",
+          "choices": [
+            {
+              "text": "Soffia forte! Spero che il tuo desiderio si avveri.",
+              "isCorrect": true,
+              "nextMessageId": "m4",
+              "feedback": "Perfect! Wishing for their wish to come true is very kind."
+            },
+            {
+              "text": "Non soffiare, ci sono troppi germi sulla torta.",
+              "isCorrect": false,
+              "feedback": "A bit too clinical for a party. Let them enjoy the tradition."
+            },
+            {
+              "text": "Il dottore dice che soffiare fa male ai polmoni.",
+              "isCorrect": false,
+              "feedback": "Domain error! Medical advice is not needed here."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Fatto! Ora tagliamo la torta per tutti.",
+          "english": "Done! Now let's cut the cake for everyone.",
+          "choices": [
+            {
+              "text": "Sembra deliziosa. È al cioccolato o alla panna?",
+              "isCorrect": true,
+              "nextMessageId": "m5",
+              "feedback": "Good question! Everyone wants to know the flavor."
+            },
+            {
+              "text": "Tagliala in pezzi piccolissimi, non ho fame.",
+              "isCorrect": false,
+              "feedback": "A bit negative. Cake is meant to be enjoyed!"
+            },
+            {
+              "text": "Il mio passaporto è scaduto ieri mattina.",
+              "isCorrect": false,
+              "feedback": "Domain error! Focus on the cake."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "È al cioccolato con tanta panna sopra. Vuoi un pezzo?",
+          "english": "It's chocolate with lots of cream on top. Do you want a piece?",
+          "choices": [
+            {
+              "text": "Sì, grazie! Un bel pezzo grande, per favore.",
+              "isCorrect": true,
+              "nextMessageId": "m6",
+              "feedback": "Perfect! Showing enthusiasm for the cake."
+            },
+            {
+              "text": "No, preferisco mangiare una mela scondita.",
+              "isCorrect": false,
+              "feedback": "Not very festive. It's a birthday party!"
+            },
+            {
+              "text": "Dov'è l'ufficio informazioni turistiche?",
+              "isCorrect": false,
+              "feedback": "Domain error! You are at a party, not on a tour."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco a te! Com'è? Ti piace?",
+          "english": "Here you go! How is it? Do you like it?",
+          "choices": [
+            {
+              "text": "È squisita! Complimenti a chi l'ha fatta.",
+              "isCorrect": true,
+              "nextMessageId": "m7",
+              "feedback": "Kind! Giving credit for the delicious cake."
+            },
+            {
+              "text": "È troppo dolce, mi fa male la pancia.",
+              "isCorrect": false,
+              "feedback": "Try to be more polite, even if it's sweet."
+            },
+            {
+              "text": "Quanto zucchero c'è in questa torta?",
+              "isCorrect": false,
+              "feedback": "Don't count calories at a birthday party!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "L'ha fatta mia madre, è la sua specialità.",
+          "english": "My mother made it, it's her specialty.",
+          "choices": [
+            {
+              "text": "Tua madre è bravissima in cucina! Vuoi ancora un po' di musica?",
+              "isCorrect": true,
+              "nextMessageId": "m8",
+              "feedback": "Nice compliment and moving the conversation forward."
+            },
+            {
+              "text": "Tua madre dovrebbe smettere di cucinare.",
+              "isCorrect": false,
+              "feedback": "Very offensive! Never insult a friend's family."
+            },
+            {
+              "text": "Dov'è la radio per sentire le notizie?",
+              "isCorrect": false,
+              "feedback": "Domain error! We want party music, not news."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Sì, mettiamo qualcosa di allegro per ballare!",
+          "english": "Yes, let's put on something cheerful to dance to!",
+          "choices": [
+            {
+              "text": "Ottima idea! Tutti in pista allora!",
+              "isCorrect": true,
+              "nextMessageId": "m9",
+              "feedback": "Enthusiastic! Getting the party started."
+            },
+            {
+              "text": "Io non ballo, sono troppo serio per questo.",
+              "isCorrect": false,
+              "feedback": "Relax a bit! It's a celebration."
+            },
+            {
+              "text": "Il mio aereo parte tra dieci minuti.",
+              "isCorrect": false,
+              "feedback": "Domain error! Stop talking about flights."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Prima però facciamo una foto di gruppo tutti insieme!",
+          "english": "But first, let's take a group photo all together!",
+          "choices": [
+            {
+              "text": "Certo! Tutti vicini alla torta, forza!",
+              "isCorrect": true,
+              "nextMessageId": "m10",
+              "feedback": "Great! Group photos are wonderful memories."
+            },
+            {
+              "text": "No, io sono venuto male oggi, non voglio.",
+              "isCorrect": false,
+              "feedback": "It's just for fun! Join in for your friend."
+            },
+            {
+              "text": "Dov'è il fotografo professionista?",
+              "isCorrect": false,
+              "feedback": "A phone camera is enough for a house party!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Dite tutti 'cheeseee'! Uno, due, tre...",
+          "english": "Everyone say 'cheeseee'! One, two, three...",
+          "choices": [
+            {
+              "text": "Cheeseee! Che bella serata, grazie di tutto.",
+              "isCorrect": true,
+              "nextMessageId": "END",
+              "feedback": "Perfect! A happy ending to the cake ceremony."
+            },
+            {
+              "text": "Voglio cancellare questa foto subito.",
+              "isCorrect": false,
+              "feedback": "Don't be so difficult! It's a nice memory."
+            },
+            {
+              "text": "Qual è il numero della polizia?",
+              "isCorrect": false,
+              "feedback": "Domain error! There's no emergency here."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discussing_celebration_plans",
+      "title": "Discussing Celebration Plans",
+      "description": "Plan a surprise party for a friend.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ssh! Dobbiamo organizzare una sorpresa per il compleanno di Marco.",
+          "english": "Ssh! We need to organize a surprise for Marco's birthday.",
+          "choices": [
+            {
+              "text": "Che bella idea! Quando vogliamo fare la festa?",
+              "isCorrect": true,
+              "nextMessageId": "m2",
+              "feedback": "Great! Getting involved in the planning right away."
+            },
+            {
+              "text": "Perché dobbiamo fare silenzio? Voglio urlare.",
+              "isCorrect": false,
+              "feedback": "It's a surprise! You need to be quiet."
+            },
+            {
+              "text": "Marco è una persona molto noiosa e triste.",
+              "isCorrect": false,
+              "feedback": "Not nice! We are planning a celebration for him."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Pensavo a questo sabato sera. Sei libero?",
+          "english": "I was thinking this Saturday night. Are you free?",
+          "choices": [
+            {
+              "text": "Sì, sabato sera sono libero. Dove facciamo la festa?",
+              "isCorrect": true,
+              "nextMessageId": "m3",
+              "feedback": "Good! Confirming availability and asking for the location."
+            },
+            {
+              "text": "No, sabato devo lavorare in ospedale tutto il giorno.",
+              "isCorrect": false,
+              "feedback": "Domain error! Keep it social, even if you are busy."
+            },
+            {
+              "text": "Sabato vado a prendere l'aereo per Londra.",
+              "isCorrect": false,
+              "feedback": "Domain error! Avoid travel-related excuses."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "La facciamo a casa mia. Io porto le bibite e la musica.",
+          "english": "We'll have it at my house. I'll bring the drinks and the music.",
+          "choices": [
+            {
+              "text": "Ottimo! Io posso portare la torta e i regali.",
+              "isCorrect": true,
+              "nextMessageId": "m4",
+              "feedback": "Helpful! Offering to contribute to the party is great."
+            },
+            {
+              "text": "Io porto il mio computer per finire un lavoro.",
+              "isCorrect": false,
+              "feedback": "Domain error! No work at the party."
+            },
+            {
+              "text": "Non porto niente perché non ho soldi.",
+              "isCorrect": false,
+              "feedback": "A bit blunt. You could offer to help in other ways."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto! Dobbiamo invitare anche tutti gli altri amici.",
+          "english": "Perfect! We also need to invite all the other friends.",
+          "choices": [
+            {
+              "text": "Certo, scrivo subito un messaggio a tutti quanti.",
+              "isCorrect": true,
+              "nextMessageId": "m5",
+              "feedback": "Proactive! Taking charge of the invitations is very helpful."
+            },
+            {
+              "text": "No, odio gli altri amici, voglio stare da solo.",
+              "isCorrect": false,
+              "feedback": "Not a very good attitude for a party planner."
+            },
+            {
+              "text": "Chiama il dottore per sapere se possono venire.",
+              "isCorrect": false,
+              "feedback": "Domain error! No need for medical clearance for a party."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Benissimo. Che tema vogliamo dare alla festa?",
+          "english": "Very well. What theme do we want to give the party?",
+          "choices": [
+            {
+              "text": "Facciamo un tema 'anni ottanta'! È molto divertente.",
+              "isCorrect": true,
+              "nextMessageId": "m6",
+              "feedback": "Fun idea! A themed party adds extra excitement."
+            },
+            {
+              "text": "Il tema della festa è 'il funerale del gatto'.",
+              "isCorrect": false,
+              "feedback": "Too gloomy for a birthday surprise!"
+            },
+            {
+              "text": "Dov'è il negozio di abbigliamento sportivo?",
+              "isCorrect": false,
+              "feedback": "Domain error! Focus on the party theme."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Mi piace! Allora servono anche dei palloncini colorati.",
+          "english": "I like it! So we also need some colored balloons.",
+          "choices": [
+            {
+              "text": "Vado io a comprarli domani mattina. Quanti ne servono?",
+              "isCorrect": true,
+              "nextMessageId": "m7",
+              "feedback": "Proactive! Handling the decorations is very helpful."
+            },
+            {
+              "text": "Non mi piacciono i palloncini, scoppiano sempre.",
+              "isCorrect": false,
+              "feedback": "Don't be a party pooper! Balloons are festive."
+            },
+            {
+              "text": "Il mio ufficio è pieno di palloncini bianchi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant! We are talking about the party decorations."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Prendine almeno cinquanta! Marco non sospetta nulla?",
+          "english": "Get at least fifty! Marco doesn't suspect anything?",
+          "choices": [
+            {
+              "text": "No, lui pensa che sabato io sia fuori città.",
+              "isCorrect": true,
+              "nextMessageId": "m8",
+              "feedback": "Good! Keeping the secret is essential for a surprise."
+            },
+            {
+              "text": "Sì, gli ho detto tutto ieri sera a cena.",
+              "isCorrect": false,
+              "feedback": "You ruined the surprise! That's not good."
+            },
+            {
+              "text": "Dov'è la mappa della città di Milano?",
+              "isCorrect": false,
+              "feedback": "Domain error! Stay focused on Marco and the surprise."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo lavoro! Chi si occupa di portare Marco qui?",
+          "english": "Great job! Who is in charge of bringing Marco here?",
+          "choices": [
+            {
+              "text": "Se ne occupa Giulia. Gli dirà che ha bisogno di un aiuto.",
+              "isCorrect": true,
+              "nextMessageId": "m9",
+              "feedback": "Good plan! A believable excuse is key."
+            },
+            {
+              "text": "Marco verrà qui da solo con il suo taxi.",
+              "isCorrect": false,
+              "feedback": "It's better if someone brings him to ensure he arrives."
+            },
+            {
+              "text": "Il mio passaporto è nel cassetto della scrivania.",
+              "isCorrect": false,
+              "feedback": "Domain error! Focus on the plan for Marco."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Speriamo che tutto vada bene. Sono un po' nervoso!",
+          "english": "Let's hope everything goes well. I'm a bit nervous!",
+          "choices": [
+            {
+              "text": "Stai tranquillo, abbiamo pensato a tutto noi.",
+              "isCorrect": true,
+              "nextMessageId": "m10",
+              "feedback": "Reassuring! Supporting the host is important."
+            },
+            {
+              "text": "Sì, anche io ho molta paura che falliremo.",
+              "isCorrect": false,
+              "feedback": "Not very helpful. Try to be more positive!"
+            },
+            {
+              "text": "Il dottore dice che il nervosismo fa male.",
+              "isCorrect": false,
+              "feedback": "Domain error! No medical advice needed."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie del supporto. Ricordate: non ditegli niente!",
+          "english": "Thanks for the support. Remember: don't tell him anything!",
+          "choices": [
+            {
+              "text": "Promesso! Sarà una sorpresa indimenticabile.",
+              "isCorrect": true,
+              "nextMessageId": "END",
+              "feedback": "Perfect! A strong commitment to the secret."
+            },
+            {
+              "text": "Vado subito a scrivergli un messaggio su WhatsApp.",
+              "isCorrect": false,
+              "feedback": "No! You'll ruin the surprise!"
+            },
+            {
+              "text": "Dov'è la stampante per le foto?",
+              "isCorrect": false,
+              "feedback": "Domain error! Stay focused on the surprise."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

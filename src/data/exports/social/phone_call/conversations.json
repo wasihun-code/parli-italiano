@@ -1,0 +1,953 @@
+{
+  "scenarioId": 75,
+  "conversations": [
+    {
+      "id": "answering_the_phone",
+      "title": "Answering the Phone",
+      "description": "A friend calls you and you answer the phone.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto? Ciao, sono Marco. Mi senti bene?",
+          "english": "Hello? Hi, it's Marco. Can you hear me well?",
+          "choices": [
+            {
+              "text": "Sì, ti sento bene. Ciao Marco, come stai?",
+              "isCorrect": true,
+              "feedback": "Perfect response. You confirmed hearing him and greeted him back."
+            },
+            {
+              "text": "No, non parlo italiano oggi, scusa.",
+              "isCorrect": false,
+              "feedback": "But you are speaking Italian right now!"
+            },
+            {
+              "text": "Chi è? Non capisco chi parla ora.",
+              "isCorrect": false,
+              "feedback": "Marco just said who he is!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Bene, ti sento anch'io. Scusa se ti disturbo a quest'ora.",
+          "english": "Good, I hear you too. Sorry to disturb you at this hour.",
+          "choices": [
+            {
+              "text": "Non ti preoccupare, non mi disturbi affatto.",
+              "isCorrect": true,
+              "feedback": "Friendly and polite way to put him at ease."
+            },
+            {
+              "text": "Sì, mi disturbi, sono molto stanco.",
+              "isCorrect": false,
+              "feedback": "A bit too direct for a friendly call."
+            },
+            {
+              "text": "La linea è occupata, chiama dopo.",
+              "isCorrect": false,
+              "feedback": "If the line was busy, he wouldn't be talking to you."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Volevo solo sapere se sei libero domani pomeriggio.",
+          "english": "I just wanted to know if you are free tomorrow afternoon.",
+          "choices": [
+            {
+              "text": "Sì, domani pomeriggio sono libero. Perché?",
+              "isCorrect": true,
+              "feedback": "Direct answer and inviting further information."
+            },
+            {
+              "text": "No, domani sono a casa tutto il giorno.",
+              "isCorrect": false,
+              "feedback": "If you are home all day, you might be free!"
+            },
+            {
+              "text": "Forse, ma oggi è sabato mattina ora.",
+              "isCorrect": false,
+              "feedback": "Doesn't answer if you are free tomorrow."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ti andrebbe di fare una passeggiata in centro domani?",
+          "english": "Would you like to go for a walk downtown tomorrow?",
+          "choices": [
+            {
+              "text": "Sì, mi piacerebbe molto fare una passeggiata.",
+              "isCorrect": true,
+              "feedback": "Accepting the invitation politely."
+            },
+            {
+              "text": "No, non mi piace camminare quando piove.",
+              "isCorrect": false,
+              "feedback": "He didn't say it would rain!"
+            },
+            {
+              "text": "Preferisco restare a casa a dormire.",
+              "isCorrect": false,
+              "feedback": "A bit antisocial, try to be more friendly."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Possiamo incontrarci in piazza alle cinque del pomeriggio.",
+          "english": "We can meet in the square at five in the afternoon.",
+          "choices": [
+            {
+              "text": "D'accordo, alle cinque in piazza va bene.",
+              "isCorrect": true,
+              "feedback": "Confirming the time and place."
+            },
+            {
+              "text": "No, è troppo presto, voglio uscire tardi.",
+              "isCorrect": false,
+              "feedback": "Five is a reasonable time for a walk."
+            },
+            {
+              "text": "Dov'è il mio cellulare? Non lo trovo.",
+              "isCorrect": false,
+              "feedback": "You are talking on it!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Lo sai dov'è la statua grande in mezzo alla piazza, vero?",
+          "english": "You know where the big statue in the middle of the square is, right?",
+          "choices": [
+            {
+              "text": "Sì, la conosco bene. Ci vediamo lì allora.",
+              "isCorrect": true,
+              "feedback": "Confirming the specific meeting point."
+            },
+            {
+              "text": "No, non so dove sono le mie chiavi.",
+              "isCorrect": false,
+              "feedback": "Unrelated to the question about the statue."
+            },
+            {
+              "text": "La statua è molto vecchia e brutta.",
+              "isCorrect": false,
+              "feedback": "Doesn't answer if you know where it is."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "È un buon punto di riferimento per trovarci subito.",
+          "english": "It's a good reference point to find each other quickly.",
+          "choices": [
+            {
+              "text": "Hai ragione, è facile trovarsi lì.",
+              "isCorrect": true,
+              "feedback": "Agreeing with the choice of meeting point."
+            },
+            {
+              "text": "Mi scusi, ho sbagliato numero di telefono.",
+              "isCorrect": false,
+              "feedback": "You've been talking to Marco for minutes!"
+            },
+            {
+              "text": "Voglio parlare con un'altra persona ora.",
+              "isCorrect": false,
+              "feedback": "Very rude!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Dicono che il tempo sarà molto bello domani, finalmente.",
+          "english": "They say the weather will be very nice tomorrow, finally.",
+          "choices": [
+            {
+              "text": "Che bello! Spero che ci sia il sole.",
+              "isCorrect": true,
+              "feedback": "Positive comment about the weather."
+            },
+            {
+              "text": "Non mi interessa il tempo che fa oggi.",
+              "isCorrect": false,
+              "feedback": "Marco is talking about tomorrow."
+            },
+            {
+              "text": "Il mio orologio è rotto, che ore sono?",
+              "isCorrect": false,
+              "feedback": "Completely off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Magari possiamo camminare un po' fino al parco.",
+          "english": "Maybe we can walk a bit to the park.",
+          "choices": [
+            {
+              "text": "Ottima idea, il parco è molto grande.",
+              "isCorrect": true,
+              "feedback": "Agreeing to the plan to go to the park."
+            },
+            {
+              "text": "No, il parco è troppo lontano da qui.",
+              "isCorrect": false,
+              "feedback": "A bit negative, try to be more flexible."
+            },
+            {
+              "text": "Chiudi la porta quando esci di casa.",
+              "isCorrect": false,
+              "feedback": "Unrelated command."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ottimo, allora a domani! Ti chiamo se arrivo in ritardo.",
+          "english": "Great, see you tomorrow then! I'll call you if I'm late.",
+          "choices": [
+            {
+              "text": "Va bene, a domani Marco. Ciao!",
+              "isCorrect": true,
+              "feedback": "Standard friendly closing."
+            },
+            {
+              "text": "Sì, riattacca subito, non ho tempo.",
+              "isCorrect": false,
+              "feedback": "Abrupt and rude ending."
+            },
+            {
+              "text": "Voglio comprare un giornale al chiosco.",
+              "isCorrect": false,
+              "feedback": "Random statement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leaving_a_voicemail",
+      "title": "Leaving a Voicemail",
+      "description": "You call a friend but they don't answer. You leave a message.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Segreteria telefonica di Giulia. Lasciate un messaggio.",
+          "english": "Giulia's voicemail. Leave a message.",
+          "choices": [
+            {
+              "text": "Ciao Giulia, sono io. Ti ho chiamato ora.",
+              "isCorrect": true,
+              "feedback": "Standard start to a voicemail."
+            },
+            {
+              "text": "Pronto? Chi è? Perché non rispondi?",
+              "isCorrect": false,
+              "feedback": "It's a voicemail, you should leave a message instead."
+            },
+            {
+              "text": "Il telefono squilla ma nessuno parla.",
+              "isCorrect": false,
+              "feedback": "Because it's a recording!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "[Bip] Inizia a parlare dopo il segnale.",
+          "english": "[Beep] Start speaking after the tone.",
+          "choices": [
+            {
+              "text": "Volevo chiederti se stasera sei libera.",
+              "isCorrect": true,
+              "feedback": "Stating the purpose of the call."
+            },
+            {
+              "text": "Il mio segnale è molto basso qui.",
+              "isCorrect": false,
+              "feedback": "Doesn't help the person you are calling."
+            },
+            {
+              "text": "C'è qualcuno in casa con te ora?",
+              "isCorrect": false,
+              "feedback": "She can't answer you, it's a voicemail."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "[Silenzio] Stai ancora parlando o hai finito?",
+          "english": "[Silence] Are you still speaking or have you finished?",
+          "choices": [
+            {
+              "text": "No, non ho finito. Volevo anche dirti una cosa.",
+              "isCorrect": true,
+              "feedback": "Continuing the message."
+            },
+            {
+              "text": "Sì, ho finito. Arrivederci e grazie.",
+              "isCorrect": false,
+              "feedback": "A bit too early if you have more to say."
+            },
+            {
+              "text": "Perché il telefono è così silenzioso?",
+              "isCorrect": false,
+              "feedback": "It's waiting for you to speak."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "La registrazione continua. Hai ancora trenta secondi.",
+          "english": "The recording continues. You still have thirty seconds.",
+          "choices": [
+            {
+              "text": "Va bene. Spero che tu possa richiamarmi.",
+              "isCorrect": true,
+              "feedback": "Asking for a call back."
+            },
+            {
+              "text": "Trenta secondi sono troppi per me.",
+              "isCorrect": false,
+              "feedback": "Doesn't use the time to leave a useful message."
+            },
+            {
+              "text": "Il mio orologio segna le tre del pomeriggio.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Tempo scaduto. La registrazione è stata interrotta.",
+          "english": "Time's up. The recording has been stopped.",
+          "choices": [
+            {
+              "text": "Oh, scusa. Comunque il mio numero lo hai.",
+              "isCorrect": true,
+              "feedback": "Finishing quickly."
+            },
+            {
+              "text": "Voglio parlare ancora, non fermarti!",
+              "isCorrect": false,
+              "feedback": "The machine won't listen to your protest."
+            },
+            {
+              "text": "Che ore sono adesso? Non lo so.",
+              "isCorrect": false,
+              "feedback": "Off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Premi uno per riascoltare il messaggio appena lasciato.",
+          "english": "Press one to listen to the message just left.",
+          "choices": [
+            {
+              "text": "No, non voglio riascoltare. Va bene così.",
+              "isCorrect": true,
+              "feedback": "Choosing to proceed without reviewing."
+            },
+            {
+              "text": "Sì, premi uno per me, per favore.",
+              "isCorrect": false,
+              "feedback": "You have to press the button, not ask the machine."
+            },
+            {
+              "text": "Il mio numero uno è il mio preferito.",
+              "isCorrect": false,
+              "feedback": "Nonsense response."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Premi due per cancellare e registrare di nuovo tutto.",
+          "english": "Press two to delete and record everything again.",
+          "choices": [
+            {
+              "text": "No, il messaggio mi sembra chiaro. Grazie.",
+              "isCorrect": true,
+              "feedback": "Deciding to keep the message."
+            },
+            {
+              "text": "Sì, cancella tutto, ho detto solo sciocchezze.",
+              "isCorrect": false,
+              "feedback": "Choosing to delete, which prolongs the interaction."
+            },
+            {
+              "text": "Due più due fa quattro, giusto?",
+              "isCorrect": false,
+              "feedback": "Off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Premi tre per inviare il messaggio alla segreteria.",
+          "english": "Press three to send the message to the voicemail.",
+          "choices": [
+            {
+              "text": "Va bene, premo tre per inviare il messaggio.",
+              "isCorrect": true,
+              "feedback": "Confirming the sending of the message."
+            },
+            {
+              "text": "No, non inviare niente, ho cambiato idea.",
+              "isCorrect": false,
+              "feedback": "Choosing not to send after all that work."
+            },
+            {
+              "text": "Tre è un numero molto difficile da dire.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Messaggio inviato con successo a Giulia. Grazie.",
+          "english": "Message sent successfully to Giulia. Thank you.",
+          "choices": [
+            {
+              "text": "Ottimo. Spero che Giulia lo senta presto.",
+              "isCorrect": true,
+              "feedback": "Final thought after sending."
+            },
+            {
+              "text": "Chi è Giulia? Non la conosco affatto.",
+              "isCorrect": false,
+              "feedback": "You just called her!"
+            },
+            {
+              "text": "Il mio telefono è molto vecchio e grigio.",
+              "isCorrect": false,
+              "feedback": "Irrelevant description."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Vuoi chiamare un altro numero o vuoi riattaccare?",
+          "english": "Do you want to call another number or do you want to hang up?",
+          "choices": [
+            {
+              "text": "No, grazie. Voglio riattaccare ora. Ciao.",
+              "isCorrect": true,
+              "feedback": "Closing the call."
+            },
+            {
+              "text": "Sì, chiama il mio amico Marco in ufficio.",
+              "isCorrect": false,
+              "feedback": "Usually you'd just dial the number yourself."
+            },
+            {
+              "text": "Il numero di casa mia è molto lungo.",
+              "isCorrect": false,
+              "feedback": "Doesn't answer the question."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_for_someone",
+      "title": "Asking for Someone",
+      "description": "You call a friend's house and someone else answers.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto, casa Bianchi. Chi parla, per favore?",
+          "english": "Hello, Bianchi residence. Who is speaking, please?",
+          "choices": [
+            {
+              "text": "Buongiorno, sono Luca. Vorrei parlare con Paolo.",
+              "isCorrect": true,
+              "feedback": "Polite introduction and inquiry."
+            },
+            {
+              "text": "Chi parla? Non riconosco la tua voce.",
+              "isCorrect": false,
+              "feedback": "They asked you first, be polite."
+            },
+            {
+              "text": "Il mio nome è segreto, non posso dirlo.",
+              "isCorrect": false,
+              "feedback": "Not a good way to start a friendly call."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ah, ciao Luca. Paolo al momento non può rispondere.",
+          "english": "Ah, hi Luca. Paolo can't answer at the moment.",
+          "choices": [
+            {
+              "text": "Capisco. È in casa o è uscito adesso?",
+              "isCorrect": true,
+              "feedback": "Asking for more information."
+            },
+            {
+              "text": "Perché non risponde? È arrabbiato con me?",
+              "isCorrect": false,
+              "feedback": "A bit too paranoid!"
+            },
+            {
+              "text": "Voglio parlare con lui subito, è urgente.",
+              "isCorrect": false,
+              "feedback": "Try to be more patient."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sta lavorando nello studio e non vuole essere disturbato.",
+          "english": "He is working in the study and doesn't want to be disturbed.",
+          "choices": [
+            {
+              "text": "Va bene, non voglio disturbarlo allora.",
+              "isCorrect": true,
+              "feedback": "Respecting his privacy."
+            },
+            {
+              "text": "Entra nello studio e passami Paolo!",
+              "isCorrect": false,
+              "feedback": "Very rude request."
+            },
+            {
+              "text": "Il mio studio è molto piccolo e buio.",
+              "isCorrect": false,
+              "feedback": "Irrelevant comparison."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Credo che finirà tra circa un'ora, forse un po' di più.",
+          "english": "I think he'll finish in about an hour, maybe a bit more.",
+          "choices": [
+            {
+              "text": "D'accordo. Posso richiamare più tardi allora?",
+              "isCorrect": true,
+              "feedback": "Planning a call back."
+            },
+            {
+              "text": "Un'ora è troppo tempo, devo parlare ora.",
+              "isCorrect": false,
+              "feedback": "You should respect his schedule."
+            },
+            {
+              "text": "Che ore sono tra un'ora? Non lo so.",
+              "isCorrect": false,
+              "feedback": "Basic math, but off-topic."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Vuoi che gli lasci un messaggio da parte tua?",
+          "english": "Do you want me to leave him a message on your behalf?",
+          "choices": [
+            {
+              "text": "Sì, per favore. Gli dica che ha chiamato Luca.",
+              "isCorrect": true,
+              "feedback": "Leaving a simple identification message."
+            },
+            {
+              "text": "No, i messaggi sono troppo difficili da scrivere.",
+              "isCorrect": false,
+              "feedback": "The person on the phone will write it, not you."
+            },
+            {
+              "text": "Il mio messaggio è molto lungo e complicato.",
+              "isCorrect": false,
+              "feedback": "Keep it simple for a phone message."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo, scrivo subito che hai chiamato per stasera.",
+          "english": "Alright, I'll write down right away that you called for tonight.",
+          "choices": [
+            {
+              "text": "Grazie mille, è molto gentile da parte Sua.",
+              "isCorrect": true,
+              "feedback": "Polite thank you."
+            },
+            {
+              "text": "Sì, scriva anche che ho fame adesso.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and silly."
+            },
+            {
+              "text": "Non mi piace come scrive, usi una penna rossa.",
+              "isCorrect": false,
+              "feedback": "You can't even see what they are using!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Hai anche il suo numero di cellulare personale, vero?",
+          "english": "You also have his personal cell phone number, right?",
+          "choices": [
+            {
+              "text": "Sì, ho il suo numero. Ma non rispondeva prima.",
+              "isCorrect": true,
+              "feedback": "Explaining why you called the house line."
+            },
+            {
+              "text": "No, non ho un cellulare, uso solo questo.",
+              "isCorrect": false,
+              "feedback": "Unlikely in this day and age."
+            },
+            {
+              "text": "Il mio numero di cellulare è molto bello.",
+              "isCorrect": false,
+              "feedback": "Irrelevant comment."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Se è urgente, puoi provare a scrivergli un messaggio lì.",
+          "english": "If it's urgent, you can try writing him a message there.",
+          "choices": [
+            {
+              "text": "Hai ragione, proverò a scrivergli un messaggio.",
+              "isCorrect": true,
+              "feedback": "Accepting the suggestion."
+            },
+            {
+              "text": "No, i messaggi sono troppo costosi per me.",
+              "isCorrect": false,
+              "feedback": "Usually they are included in plans."
+            },
+            {
+              "text": "Il mio messaggio è pieno di errori ora.",
+              "isCorrect": false,
+              "feedback": "You haven't even written it yet."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ma penso che sia meglio aspettare che ti richiami lui.",
+          "english": "But I think it's better to wait for him to call you back.",
+          "choices": [
+            {
+              "text": "Va bene, aspetterò la sua chiamata allora.",
+              "isCorrect": true,
+              "feedback": "Choosing the more patient option."
+            },
+            {
+              "text": "No, io non aspetto mai nessuno in vita mia.",
+              "isCorrect": false,
+              "feedback": "Very arrogant attitude."
+            },
+            {
+              "text": "Aspettare è molto noioso, non mi piace.",
+              "isCorrect": false,
+              "feedback": "A bit childish."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Figurati, nessun problema. Buona giornata a te, Luca!",
+          "english": "Don't mention it, no problem. Have a good day to you, Luca!",
+          "choices": [
+            {
+              "text": "Grazie ancora e buona giornata anche a Lei!",
+              "isCorrect": true,
+              "feedback": "Polite reciprocal closing."
+            },
+            {
+              "text": "Sì, ciao, riattacco perché ho fretta.",
+              "isCorrect": false,
+              "feedback": "A bit too abrupt."
+            },
+            {
+              "text": "Il tempo è brutto oggi, piove molto.",
+              "isCorrect": false,
+              "feedback": "Random weather comment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "confirming_meeting",
+      "title": "Confirming a Meeting via Phone",
+      "description": "You call a friend to confirm your plans for tonight.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto? Ah, ciao! Mi stavi chiamando proprio ora?",
+          "english": "Hello? Ah, hi! Were you calling me just now?",
+          "choices": [
+            {
+              "text": "Sì, ti chiamavo per confermare per stasera.",
+              "isCorrect": true,
+              "feedback": "Getting straight to the point."
+            },
+            {
+              "text": "No, ho sbagliato a premere il tasto.",
+              "isCorrect": false,
+              "feedback": "But you are talking to him now!"
+            },
+            {
+              "text": "Chi parla? Non vedo il tuo nome sul display.",
+              "isCorrect": false,
+              "feedback": "You should know who you are calling!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Perfetto. Allora siamo ancora d'accordo per incontrarci stasera?",
+          "english": "Perfect. So are we still agreed to meet tonight?",
+          "choices": [
+            {
+              "text": "Certamente, non vedo l'ora di vederti.",
+              "isCorrect": true,
+              "feedback": "Enthusiastic confirmation."
+            },
+            {
+              "text": "No, stasera sono molto stanco e resto a casa.",
+              "isCorrect": false,
+              "feedback": "Cancelling plans, but the goal is to confirm."
+            },
+            {
+              "text": "Che ore sono stasera? Non lo so.",
+              "isCorrect": false,
+              "feedback": "Vague and unhelpful."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Mi sembrava che fossi occupato oggi, per questo chiedevo.",
+          "english": "I thought you were busy today, that's why I was asking.",
+          "choices": [
+            {
+              "text": "Ero occupato stamattina, ma ora sono libero.",
+              "isCorrect": true,
+              "feedback": "Clarifying your availability."
+            },
+            {
+              "text": "Sì, sono occupatissimo anche adesso, ciao.",
+              "isCorrect": false,
+              "feedback": "Then why did you call him?"
+            },
+            {
+              "text": "Il mio lavoro è molto difficile e faticoso.",
+              "isCorrect": false,
+              "feedback": "Off-topic complaint."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Bene, allora ci vediamo alle otto in piazza, ok?",
+          "english": "Good, then we'll see each other at eight in the square, okay?",
+          "choices": [
+            {
+              "text": "Va bene, alle otto in piazza è perfetto.",
+              "isCorrect": true,
+              "feedback": "Confirming time and place."
+            },
+            {
+              "text": "No, le otto è troppo tardi per me.",
+              "isCorrect": false,
+              "feedback": "You should have suggested another time."
+            },
+            {
+              "text": "La piazza è molto lontana da casa mia.",
+              "isCorrect": false,
+              "feedback": "A bit late to complain about the location."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Possiamo vederci vicino alla fontana, è più facile.",
+          "english": "We can meet near the fountain, it's easier.",
+          "choices": [
+            {
+              "text": "D'accordo, vicino alla fontana alle otto.",
+              "isCorrect": true,
+              "feedback": "Confirming the specific meeting point."
+            },
+            {
+              "text": "Non mi piace l'acqua della fontana.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and strange."
+            },
+            {
+              "text": "Dov'è la fontana? Non la trovo.",
+              "isCorrect": false,
+              "feedback": "You should know the main square of your city!"
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ti ricordi la strada per arrivare in centro da casa tua?",
+          "english": "Do you remember the way to get downtown from your house?",
+          "choices": [
+            {
+              "text": "Sì, la ricordo bene. Prendo l'autobus.",
+              "isCorrect": true,
+              "feedback": "Confirming you know the way."
+            },
+            {
+              "text": "No, mi perdo sempre quando esco di casa.",
+              "isCorrect": false,
+              "feedback": "Try to be more confident!"
+            },
+            {
+              "text": "La mia casa è molto grande e bella.",
+              "isCorrect": false,
+              "feedback": "Boasting is not helpful here."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Se hai bisogno di indicazioni, te le posso dare ora.",
+          "english": "If you need directions, I can give them to you now.",
+          "choices": [
+            {
+              "text": "Grazie, ma conosco bene la strada. A dopo!",
+              "isCorrect": true,
+              "feedback": "Declining help politely."
+            },
+            {
+              "text": "Sì, dimmi tutto, non so dove andare.",
+              "isCorrect": false,
+              "feedback": "You said you knew the way before!"
+            },
+            {
+              "text": "Le indicazioni sono troppo difficili da capire.",
+              "isCorrect": false,
+              "feedback": "Negative attitude."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Altrimenti ci sentiamo più tardi se c'è qualche problema.",
+          "english": "Otherwise we'll talk later if there's any problem.",
+          "choices": [
+            {
+              "text": "Va bene, ti chiamo se non trovo la fontana.",
+              "isCorrect": true,
+              "feedback": "Practical backup plan."
+            },
+            {
+              "text": "No, non chiamarmi più per nessun motivo.",
+              "isCorrect": false,
+              "feedback": "Extremely rude!"
+            },
+            {
+              "text": "Il mio telefono non ha più batteria ora.",
+              "isCorrect": false,
+              "feedback": "Then he won't be able to call you!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Spero di non arrivare in ritardo a causa del traffico.",
+          "english": "I hope I don't arrive late because of traffic.",
+          "choices": [
+            {
+              "text": "Non ti preoccupare, io ti aspetto lì.",
+              "isCorrect": true,
+              "feedback": "Being patient and understanding."
+            },
+            {
+              "text": "Se arrivi in ritardo, io vado via subito.",
+              "isCorrect": false,
+              "feedback": "Not a very good friend."
+            },
+            {
+              "text": "Il traffico è molto veloce oggi, credo.",
+              "isCorrect": false,
+              "feedback": "Usually it's the opposite."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Va bene, allora a dopo. Ciao e buona serata!",
+          "english": "Alright, see you later then. Bye and have a good evening!",
+          "choices": [
+            {
+              "text": "A dopo allora, buona serata anche a te!",
+              "isCorrect": true,
+              "feedback": "Friendly reciprocal closing."
+            },
+            {
+              "text": "Sì, ciao, riattacca tu per favore.",
+              "isCorrect": false,
+              "feedback": "Unnecessary request."
+            },
+            {
+              "text": "Voglio dormire tutta la notte stasera.",
+              "isCorrect": false,
+              "feedback": "Random statement."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

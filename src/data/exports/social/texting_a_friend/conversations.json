@@ -1,0 +1,953 @@
+{
+  "scenarioId": 76,
+  "conversations": [
+    {
+      "id": "asking_where_someone_is",
+      "title": "Asking Where Someone Is",
+      "description": "Find out where your friend is and when they will arrive.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Dove sei? Ti sto aspettando davanti al bar.",
+          "english": "Hi! Where are you? I'm waiting for you in front of the bar.",
+          "choices": [
+            {
+              "text": "Sono in strada, arrivo tra cinque minuti. Scusa!",
+              "isCorrect": true,
+              "feedback": "Good! You apologized and gave an estimated time."
+            },
+            {
+              "text": "Il bar è molto bello e grande. Mi piace molto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant. You need to say where you are!"
+            },
+            {
+              "text": "Voglio un caffè caldo e un cornetto dolce ora.",
+              "isCorrect": false,
+              "feedback": "A bit selfish! Answer the question first."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Va bene, non ti preoccupare. Sei a piedi o in bici?",
+          "english": "Alright, don't worry. Are you on foot or by bike?",
+          "choices": [
+            {
+              "text": "Sono a piedi, sto camminando velocemente verso di te.",
+              "isCorrect": true,
+              "feedback": "Perfect. You answered clearly."
+            },
+            {
+              "text": "La mia bici è rossa e molto vecchia, non funziona.",
+              "isCorrect": false,
+              "feedback": "Too much detail about the bike, just answer if you are on it."
+            },
+            {
+              "text": "Le scarpe sono nuove e mi fanno male ai piedi.",
+              "isCorrect": false,
+              "feedback": "Complaining about shoes doesn't answer the question."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ok. C'è molta gente al bar, meglio sedersi fuori?",
+          "english": "Ok. It's crowded at the bar, better to sit outside?",
+          "choices": [
+            {
+              "text": "Sì, certo. Fuori si sta bene, c'è il sole oggi.",
+              "isCorrect": true,
+              "feedback": "Great! You agreed and gave a reason."
+            },
+            {
+              "text": "No, dentro è troppo freddo e non mi piace affatto.",
+              "isCorrect": false,
+              "feedback": "The host suggested outside because it's crowded, not about temperature."
+            },
+            {
+              "text": "Il tavolo è sporco e non voglio sedermi lì ora.",
+              "isCorrect": false,
+              "feedback": "You haven't arrived yet, so you don't know if it's dirty!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Fuori si sta bene, c'è anche un po' di musica. La senti?",
+          "english": "It's nice outside, there's even some music. Do you hear it?",
+          "choices": [
+            {
+              "text": "Sì, la sento! È una bellissima canzone, mi piace.",
+              "isCorrect": true,
+              "feedback": "Perfect, you engaged with the observation."
+            },
+            {
+              "text": "La musica è troppo forte e non posso parlare bene.",
+              "isCorrect": false,
+              "feedback": "A bit negative for a casual chat."
+            },
+            {
+              "text": "Non mi piace ballare in pubblico davanti alla gente.",
+              "isCorrect": false,
+              "feedback": "Nobody asked you to dance!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottimo. Vuoi qualcosa da bere intanto che aspetti?",
+          "english": "Great. Do you want something to drink while you wait?",
+          "choices": [
+            {
+              "text": "Un bicchiere d'acqua naturale, per favore. Ho sete.",
+              "isCorrect": true,
+              "feedback": "Polite and direct."
+            },
+            {
+              "text": "La bottiglia di vino costa troppo in questo bar.",
+              "isCorrect": false,
+              "feedback": "A bit negative. Just say what you want."
+            },
+            {
+              "text": "Mi piace bere il latte freddo la mattina presto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant preference."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Un bicchiere d'acqua naturale o frizzante?",
+          "english": "A glass of still or sparkling water?",
+          "choices": [
+            {
+              "text": "Naturale va benissimo, grazie mille.",
+              "isCorrect": true,
+              "feedback": "Clear choice."
+            },
+            {
+              "text": "L'acqua del mare è troppo salata per i pesci.",
+              "isCorrect": false,
+              "feedback": "Completely irrelevant."
+            },
+            {
+              "text": "Voglio una birra fredda e molto grande adesso.",
+              "isCorrect": false,
+              "feedback": "You just agreed to water!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "D'accordo. Prendo anche un piccolo dolce per noi?",
+          "english": "Agreed. Should I also get a small sweet for us?",
+          "choices": [
+            {
+              "text": "Sì, volentieri! Adoro i dolci di questo bar.",
+              "isCorrect": true,
+              "feedback": "Enthusiastic agreement."
+            },
+            {
+              "text": "La torta è troppo dolce e mi fa male ai denti.",
+              "isCorrect": false,
+              "feedback": "A bit complainy."
+            },
+            {
+              "text": "Non ho fame perché ho mangiato molto a pranzo.",
+              "isCorrect": false,
+              "feedback": "Try to be more social."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Perfetto. Hai visto che bel sole c'è oggi?",
+          "english": "Perfect. Did you see how beautiful the sun is today?",
+          "choices": [
+            {
+              "text": "Sì, è vero! È una giornata perfetta per uscire.",
+              "isCorrect": true,
+              "feedback": "Agrees with the host."
+            },
+            {
+              "text": "Il sole brucia la pelle e non mi piace affatto.",
+              "isCorrect": false,
+              "feedback": "Too negative."
+            },
+            {
+              "text": "La luna è molto grande e bianca stasera in cielo.",
+              "isCorrect": false,
+              "feedback": "It's daytime!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, è una giornata bellissima. Sei quasi arrivato?",
+          "english": "Yes, it's a beautiful day. Are you almost here?",
+          "choices": [
+            {
+              "text": "Certamente! Sono quasi arrivato, vedo l'insegna ora.",
+              "isCorrect": true,
+              "feedback": "Perfect progress update."
+            },
+            {
+              "text": "La strada è lunga e io sono molto stanco di correre.",
+              "isCorrect": false,
+              "feedback": "A bit dramatic."
+            },
+            {
+              "text": "Il mio amico arriva domani con il treno delle otto.",
+              "isCorrect": false,
+              "feedback": "Wrong person, wrong day."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ricevuto. Ti aspetto qui. Mandami un messaggio quando arrivi!",
+          "english": "Got it. Waiting for you here. Send me a message when you arrive!",
+          "choices": [
+            {
+              "text": "Va bene, a tra poco allora! Ciao ciao.",
+              "isCorrect": true,
+              "feedback": "Friendly closing."
+            },
+            {
+              "text": "Non ho il tuo numero di telefono salvato qui.",
+              "isCorrect": false,
+              "feedback": "You are literally texting them!"
+            },
+            {
+              "text": "La radio è accesa e non sento bene il messaggio.",
+              "isCorrect": false,
+              "feedback": "It's a text message!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sending_a_quick_update",
+      "title": "Sending a Quick Update",
+      "description": "Tell your friend you are running late and why.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ehi, dove sei finito? Il film inizia tra poco!",
+          "english": "Hey, where did you end up? The movie starts soon!",
+          "choices": [
+            {
+              "text": "Scusa, sono ancora in ufficio. C'è molto lavoro oggi.",
+              "isCorrect": true,
+              "feedback": "Honest and explains the delay."
+            },
+            {
+              "text": "Il cinema è lontano e non trovo il mio portafoglio.",
+              "isCorrect": false,
+              "feedback": "A bit chaotic."
+            },
+            {
+              "text": "Mi piace guardare i film d'azione con gli amici.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Oh no! Quanto tempo ti serve ancora per finire?",
+          "english": "Oh no! How much more time do you need to finish?",
+          "choices": [
+            {
+              "text": "Almeno venti minuti. Mandami un messaggio se iniziate.",
+              "isCorrect": true,
+              "feedback": "Good estimation."
+            },
+            {
+              "text": "Il tempo è denaro e io ne ho molto poco adesso.",
+              "isCorrect": false,
+              "feedback": "Too philosophical."
+            },
+            {
+              "text": "Ho fame e voglio mangiare una pizza dopo il film.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene. Vuoi che ti compri il biglietto intanto?",
+          "english": "Alright. Do you want me to buy your ticket in the meantime?",
+          "choices": [
+            {
+              "text": "Sì, grazie mille! Ti mando i soldi con l'app ora.",
+              "isCorrect": true,
+              "feedback": "Helpful and proactive."
+            },
+            {
+              "text": "Il biglietto costa dieci euro ed è molto caro qui.",
+              "isCorrect": false,
+              "feedback": "Just say yes or no!"
+            },
+            {
+              "text": "Non mi piacciono i posti in prima fila, sono scomodi.",
+              "isCorrect": false,
+              "feedback": "Answer the offer first."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ok, biglietto preso. Ti aspetto all'ingresso allora.",
+          "english": "Ok, ticket bought. I'll wait for you at the entrance then.",
+          "choices": [
+            {
+              "text": "Perfetto. Corro subito appena finisco di scrivere.",
+              "isCorrect": true,
+              "feedback": "Shows urgency."
+            },
+            {
+              "text": "L'ingresso è chiuso e non vedo nessuno fuori ora.",
+              "isCorrect": false,
+              "feedback": "You're still at the office!"
+            },
+            {
+              "text": "Il mio capo è molto simpatico e lavora con me qui.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "C'è molta fila alla cassa, meno male che ho l'app.",
+          "english": "There's a long line at the checkout, luckily I have the app.",
+          "choices": [
+            {
+              "text": "Hai ragione, l'app è molto utile in questi casi.",
+              "isCorrect": true,
+              "feedback": "Agrees with the host."
+            },
+            {
+              "text": "La cassa è fatta di legno e di metallo grigio.",
+              "isCorrect": false,
+              "feedback": "Weird observation."
+            },
+            {
+              "text": "Non mi piace pagare con i soldi perché sono sporchi.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Hai già mangiato qualcosa o hai fame?",
+          "english": "Have you already eaten something or are you hungry?",
+          "choices": [
+            {
+              "text": "Ho molta fame! Non ho mangiato nulla oggi.",
+              "isCorrect": true,
+              "feedback": "Answers the question."
+            },
+            {
+              "text": "La mela è un frutto rosso e molto buono da mangiare.",
+              "isCorrect": false,
+              "feedback": "Generic fact."
+            },
+            {
+              "text": "Mangio sempre alle otto di sera a casa mia.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Allora prendo dei popcorn grandi per noi due.",
+          "english": "Then I'll get large popcorn for the two of us.",
+          "choices": [
+            {
+              "text": "Ottimo! Mi piacciono molto quelli salati.",
+              "isCorrect": true,
+              "feedback": "Good reaction."
+            },
+            {
+              "text": "I popcorn sono bianchi e sembrano piccole nuvole.",
+              "isCorrect": false,
+              "feedback": "Too poetic."
+            },
+            {
+              "text": "Non voglio sporcare il mio vestito nuovo oggi.",
+              "isCorrect": false,
+              "feedback": "A bit fussy."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Ti tengo il posto vicino al corridoio?",
+          "english": "Alright. Should I save the seat near the aisle for you?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Così arrivo senza disturbare nessuno.",
+              "isCorrect": true,
+              "feedback": "Practical reason."
+            },
+            {
+              "text": "Il corridoio è lungo e molto buio in questo cinema.",
+              "isCorrect": false,
+              "feedback": "Irrelevant description."
+            },
+            {
+              "text": "Preferisco sedermi sul pavimento perché è più comodo.",
+              "isCorrect": false,
+              "feedback": "No one does that!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo. Sbrigati, le luci si stanno spegnendo!",
+          "english": "Great. Hurry up, the lights are going out!",
+          "choices": [
+            {
+              "text": "Sto arrivando! Sono già fuori dal mio ufficio.",
+              "isCorrect": true,
+              "feedback": "Action-oriented."
+            },
+            {
+              "text": "Le luci della città sono molto belle di notte.",
+              "isCorrect": false,
+              "feedback": "Irrelevant observation."
+            },
+            {
+              "text": "Voglio comprare una lampada nuova per la mia camera.",
+              "isCorrect": false,
+              "feedback": "Wrong topic."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Fai con calma, non correre troppo. A tra poco!",
+          "english": "Take your time, don't run too much. See you soon!",
+          "choices": [
+            {
+              "text": "Grazie, sei molto gentile. Ci vediamo tra poco!",
+              "isCorrect": true,
+              "feedback": "Friendly closing."
+            },
+            {
+              "text": "La mia macchina è molto lenta e vecchia.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Non mi piace correre perché sudo molto.",
+              "isCorrect": false,
+              "feedback": "Too much info."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "confirming_a_meeting_time",
+      "title": "Confirming a Meeting Time",
+      "description": "Agree on a time and place to meet a friend tomorrow.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Sei libero domani per un caffè in centro?",
+          "english": "Hi! Are you free tomorrow for a coffee downtown?",
+          "choices": [
+            {
+              "text": "Sì, sono libero. A che ora ci vediamo domani?",
+              "isCorrect": true,
+              "feedback": "Accepts and asks for time."
+            },
+            {
+              "text": "Il caffè in Italia è molto buono e molto forte.",
+              "isCorrect": false,
+              "feedback": "Generic fact."
+            },
+            {
+              "text": "Domani piove e non voglio uscire di casa affatto.",
+              "isCorrect": false,
+              "feedback": "Negative."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Che ne dici delle tre del pomeriggio? Va bene?",
+          "english": "How about three in the afternoon? Is that okay?",
+          "choices": [
+            {
+              "text": "Le tre va benissimo per me. Dove ci incontriamo?",
+              "isCorrect": true,
+              "feedback": "Confirms time."
+            },
+            {
+              "text": "Ho tre gatti a casa e sono molto carini e dolci.",
+              "isCorrect": false,
+              "feedback": "Misunderstanding."
+            },
+            {
+              "text": "Il pomeriggio dormo sempre e non voglio uscire mai.",
+              "isCorrect": false,
+              "feedback": "Lazy."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Davanti alla fontana in piazza. La conosci?",
+          "english": "In front of the fountain in the square. Do you know it?",
+          "choices": [
+            {
+              "text": "Sì, la conosco bene. È un posto molto bello.",
+              "isCorrect": true,
+              "feedback": "Confirms knowledge."
+            },
+            {
+              "text": "L'acqua della fontana è fredda e non si beve.",
+              "isCorrect": false,
+              "feedback": "Irrelevant fact."
+            },
+            {
+              "text": "La piazza è grande e ci sono molte macchine ora.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Se piove ci spostiamo nel bar vicino.",
+          "english": "Perfect. If it rains we'll move to the nearby bar.",
+          "choices": [
+            {
+              "text": "Ottima idea! Quel bar è molto carino e accogliente.",
+              "isCorrect": true,
+              "feedback": "Agrees with backup plan."
+            },
+            {
+              "text": "L'ombrello è rotto e non posso usarlo se piove.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Il bar vicino vende solo bibite calde e dolci.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sai se quel bar è aperto anche di domenica?",
+          "english": "Do you know if that bar is open on Sundays too?",
+          "choices": [
+            {
+              "text": "Sì, credo di sì. Di solito è sempre aperto.",
+              "isCorrect": true,
+              "feedback": "Answers the question."
+            },
+            {
+              "text": "La domenica è l'ultimo giorno della settimana.",
+              "isCorrect": false,
+              "feedback": "Generic fact."
+            },
+            {
+              "text": "Voglio andare in chiesa la domenica mattina.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Spero di sì, fanno dei cornetti spettacolari.",
+          "english": "I hope so, they make spectacular croissants.",
+          "choices": [
+            {
+              "text": "Davvero? Allora dobbiamo provarli assolutamente!",
+              "isCorrect": true,
+              "feedback": "Engaged response."
+            },
+            {
+              "text": "Il cornetto è un corno piccolo e molto duro.",
+              "isCorrect": false,
+              "feedback": "Literal translation error."
+            },
+            {
+              "text": "Non mi piace lo zucchero perché fa male alla salute.",
+              "isCorrect": false,
+              "feedback": "Too health-conscious."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Vuoi invitare anche Marco o preferisci solo noi?",
+          "english": "Do you want to invite Marco too or do you prefer just us?",
+          "choices": [
+            {
+              "text": "Preferisco solo noi due, così parliamo con calma.",
+              "isCorrect": true,
+              "feedback": "Clear preference."
+            },
+            {
+              "text": "Marco è un nome molto comune in Italia oggi.",
+              "isCorrect": false,
+              "feedback": "Generic fact."
+            },
+            {
+              "text": "Non conosco nessun Marco che vive in questa città.",
+              "isCorrect": false,
+              "feedback": "Maybe you do and forgot?"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene, allora siamo solo io e te.",
+          "english": "Alright, then it's just you and me.",
+          "choices": [
+            {
+              "text": "Perfetto, mi fa molto piacere vederti.",
+              "isCorrect": true,
+              "feedback": "Friendly statement."
+            },
+            {
+              "text": "Tu sei alto e io sono basso in questa foto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant comparison."
+            },
+            {
+              "text": "Due più due fa quattro e non cinque.",
+              "isCorrect": false,
+              "feedback": "Math?"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ti mando un messaggio domani mattina per conferma.",
+          "english": "I'll send you a message tomorrow morning to confirm.",
+          "choices": [
+            {
+              "text": "D'accordo, aspetto il tuo messaggio allora.",
+              "isCorrect": true,
+              "feedback": "Accepts the plan."
+            },
+            {
+              "text": "La mattina bevo sempre un bicchiere di latte.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Il mio telefono non riceve messaggi di mattina.",
+              "isCorrect": false,
+              "feedback": "Why not?"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certo! Ti mando un messaggio se cambio programma.",
+          "english": "Sure! I'll send you a message if I change plans.",
+          "choices": [
+            {
+              "text": "Va bene, a domani! Buona serata intanto.",
+              "isCorrect": true,
+              "feedback": "Friendly closing."
+            },
+            {
+              "text": "Il cambio della macchina è rotto e non va.",
+              "isCorrect": false,
+              "feedback": "Misunderstanding 'cambio'."
+            },
+            {
+              "text": "Non mi piace guardare i programmi in televisione.",
+              "isCorrect": false,
+              "feedback": "Misunderstanding 'programma'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sharing_a_funny_moment",
+      "title": "Sharing a Funny Moment",
+      "description": "React to a funny photo or message sent by your friend.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Guarda questa foto del mio cane! Sembra un umano.",
+          "english": "Look at this photo of my dog! He looks like a human.",
+          "choices": [
+            {
+              "text": "Ahaha! È bellissima, mi fa ridere molto!",
+              "isCorrect": true,
+              "feedback": "Natural reaction."
+            },
+            {
+              "text": "Il cane mangia carne e corre nel parco.",
+              "isCorrect": false,
+              "feedback": "Boring."
+            },
+            {
+              "text": "Non vedo nulla, la foto è tutta nera.",
+              "isCorrect": false,
+              "feedback": "Rude."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Vero? Ha anche gli occhiali da sole in testa!",
+          "english": "Right? He even has sunglasses on his head!",
+          "choices": [
+            {
+              "text": "Che buffo! Dove hai comprato quegli occhiali?",
+              "isCorrect": true,
+              "feedback": "Engaged."
+            },
+            {
+              "text": "Il sole è forte oggi e servono gli occhiali.",
+              "isCorrect": false,
+              "feedback": "Serious."
+            },
+            {
+              "text": "La testa del cane è piccola e tonda.",
+              "isCorrect": false,
+              "feedback": "Weird."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Li ho presi al mercato. Vuoi venire a trovarlo?",
+          "english": "I got them at the market. Do you want to come visit him?",
+          "choices": [
+            {
+              "text": "Volentieri! Posso venire sabato pomeriggio?",
+              "isCorrect": true,
+              "feedback": "Accepts."
+            },
+            {
+              "text": "Il mercato è aperto solo la mattina presto.",
+              "isCorrect": false,
+              "feedback": "Doesn't answer."
+            },
+            {
+              "text": "Non mi piacciono i cani che abbaiano forte.",
+              "isCorrect": false,
+              "feedback": "Negative."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Sabato va bene. Ti preparo una torta allora!",
+          "english": "Saturday is fine. I'll bake you a cake then!",
+          "choices": [
+            {
+              "text": "Ottimo, adoro i dolci! Grazie per l'invito.",
+              "isCorrect": true,
+              "feedback": "Polite."
+            },
+            {
+              "text": "La torta di mele è meglio della torta al cioccolato.",
+              "isCorrect": false,
+              "feedback": "Picky."
+            },
+            {
+              "text": "Cucinare è difficile e io non so fare nulla.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Preferisci la torta al cioccolato o alla frutta?",
+          "english": "Do you prefer chocolate or fruit cake?",
+          "choices": [
+            {
+              "text": "Quella al cioccolato è la mia preferita!",
+              "isCorrect": true,
+              "feedback": "Clear choice."
+            },
+            {
+              "text": "La frutta è piena di vitamine e fa bene.",
+              "isCorrect": false,
+              "feedback": "Generic fact."
+            },
+            {
+              "text": "Il cioccolato è marrone e la frutta è colorata.",
+              "isCorrect": false,
+              "feedback": "Obvious."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo, adoro cucinare quando ho tempo.",
+          "english": "Great, I love cooking when I have time.",
+          "choices": [
+            {
+              "text": "Anche a me piace, ma non sono molto bravo.",
+              "isCorrect": true,
+              "feedback": "Relatable."
+            },
+            {
+              "text": "L'orologio segna le dieci e mezza ora.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Il tempo vola quando ci si diverte molto.",
+              "isCorrect": false,
+              "feedback": "Proverb."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ti mando anche il video dove il cane balla?",
+          "english": "Should I also send you the video where the dog dances?",
+          "choices": [
+            {
+              "text": "Sì, per favore! Deve essere divertente.",
+              "isCorrect": true,
+              "feedback": "Engaged."
+            },
+            {
+              "text": "Il video è una sequenza di immagini veloci.",
+              "isCorrect": false,
+              "feedback": "Definition."
+            },
+            {
+              "text": "Non mi piace ballare perché mi stanco subito.",
+              "isCorrect": false,
+              "feedback": "It's about the dog!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ahaha, è davvero buffo, lo so!",
+          "english": "Ahaha, he's really funny, I know!",
+          "choices": [
+            {
+              "text": "Sì, i tuoi messaggi mi fanno sempre ridere.",
+              "isCorrect": true,
+              "feedback": "Compliment."
+            },
+            {
+              "text": "Il riso è un cereale che cresce nell'acqua.",
+              "isCorrect": false,
+              "feedback": "Pun error (ridere/riso)."
+            },
+            {
+              "text": "So tutto di te e della tua famiglia ora.",
+              "isCorrect": false,
+              "feedback": "Creepy."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Allora ci vediamo sabato verso le quattro?",
+          "english": "So shall we meet Saturday around four?",
+          "choices": [
+            {
+              "text": "Sì, perfetto. Ci vediamo sabato allora!",
+              "isCorrect": true,
+              "feedback": "Confirms."
+            },
+            {
+              "text": "Quattro è un numero pari e non dispari.",
+              "isCorrect": false,
+              "feedback": "Math."
+            },
+            {
+              "text": "Il sabato sera vado sempre a ballare in discoteca.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Figurati! Ci aggiorniamo venerdì per l'orario.",
+          "english": "Don't mention it! We'll catch up on Friday for the time.",
+          "choices": [
+            {
+              "text": "D'accordo, a venerdì allora. Un abbraccio!",
+              "isCorrect": true,
+              "feedback": "Friendly closing."
+            },
+            {
+              "text": "Venerdì è un giorno sfortunato per me.",
+              "isCorrect": false,
+              "feedback": "Negative."
+            },
+            {
+              "text": "L'orario del treno è cambiato ieri sera.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

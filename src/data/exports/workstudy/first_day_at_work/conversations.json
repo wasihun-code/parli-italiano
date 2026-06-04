@@ -1,0 +1,953 @@
+{
+  "scenarioId": 61,
+  "conversations": [
+    {
+      "id": "meeting_the_boss",
+      "title": "Meeting the Boss",
+      "description": "Formal introduction to your new manager on your first day.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Lei è il nuovo collega, giusto? Benvenuto in ufficio.",
+          "english": "Good morning! You are the new colleague, right? Welcome to the office.",
+          "choices": [
+            {
+              "text": "Buongiorno! Sì, sono io. Piacere di conoscerla.",
+              "isCorrect": true,
+              "feedback": "Perfect formal introduction."
+            },
+            {
+              "text": "Ciao! Sì, sono qui per lavorare. Dov'è il caffè?",
+              "isCorrect": false,
+              "feedback": "Too informal for a first meeting with the boss."
+            },
+            {
+              "text": "Buongiorno. Posso andare a casa adesso?",
+              "isCorrect": false,
+              "feedback": "You just arrived! Not a good first impression."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Il piacere è mio. Io sono il responsabile del reparto. Come si sente oggi?",
+          "english": "The pleasure is mine. I am the department manager. How do you feel today?",
+          "choices": [
+            {
+              "text": "Molto bene, grazie. Sono entusiasta di iniziare a lavorare.",
+              "isCorrect": true,
+              "feedback": "Shows positive attitude and professional interest."
+            },
+            {
+              "text": "Ho molta fame, dov'è la mensa?",
+              "isCorrect": false,
+              "feedback": "Focus on work first, lunch later!"
+            },
+            {
+              "text": "Mi sento stanco, il viaggio è stato lungo.",
+              "isCorrect": false,
+              "feedback": "Better to stay positive on your first day."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo spirito. Questo è il suo badge per entrare. Ha domande?",
+          "english": "Great spirit. This is your badge to enter. Do you have questions?",
+          "choices": [
+            {
+              "text": "Grazie. Qual è l'orario di lavoro standard?",
+              "isCorrect": true,
+              "feedback": "Good practical question for a first day."
+            },
+            {
+              "text": "No, non ho domande. Voglio solo dormire.",
+              "isCorrect": false,
+              "feedback": "Very unprofessional."
+            },
+            {
+              "text": "Grazie. Posso avere uno stipendio più alto?",
+              "isCorrect": false,
+              "feedback": "Not the right time for this conversation."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Lavoriamo dalle nove alle diciotto. Ora le presento i colleghi.",
+          "english": "We work from nine to six. Now I'll introduce you to the colleagues.",
+          "choices": [
+            {
+              "text": "Perfetto, grazie mille. Sono pronto.",
+              "isCorrect": true,
+              "feedback": "Ready to move forward."
+            },
+            {
+              "text": "Nove? È troppo presto per me.",
+              "isCorrect": false,
+              "feedback": "Complaining about hours on day one is risky."
+            },
+            {
+              "text": "Non voglio conoscere nessuno, grazie.",
+              "isCorrect": false,
+              "feedback": "Networking is part of the job!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Venga con me. Ecco il nostro open space. Le piace l'ambiente?",
+          "english": "Come with me. Here is our open space. Do you like the environment?",
+          "choices": [
+            {
+              "text": "Sì, è molto luminoso e moderno. Mi piace.",
+              "isCorrect": true,
+              "feedback": "Positive feedback about the workspace."
+            },
+            {
+              "text": "No, c'è troppo rumore qui.",
+              "isCorrect": false,
+              "feedback": "Try to be more diplomatic."
+            },
+            {
+              "text": "Dov'è il bagno? È urgente.",
+              "isCorrect": false,
+              "feedback": "A bit abrupt for this moment."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco la sua scrivania. È spaziosa, vero?",
+          "english": "Here is your desk. It's spacious, right?",
+          "choices": [
+            {
+              "text": "Sì, è perfetta. Grazie per averla preparata.",
+              "isCorrect": true,
+              "feedback": "Polite and appreciative of the preparation."
+            },
+            {
+              "text": "È troppo piccola, non c'è spazio per le mie foto.",
+              "isCorrect": false,
+              "feedback": "A bit ungrateful for a first day."
+            },
+            {
+              "text": "Voglio stare in un ufficio privato.",
+              "isCorrect": false,
+              "feedback": "Most modern offices use open spaces; this is a bit demanding."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Abbiamo anche una piccola cucina per la pausa pranzo. La vuole vedere?",
+          "english": "We also have a small kitchen for the lunch break. Do you want to see it?",
+          "choices": [
+            {
+              "text": "Sì, volentieri. È utile sapere dove si trova.",
+              "isCorrect": true,
+              "feedback": "Shows interest in the office facilities."
+            },
+            {
+              "text": "No, porto sempre il cibo da casa e mangio al parco.",
+              "isCorrect": false,
+              "feedback": "A bit dismissive of the tour."
+            },
+            {
+              "text": "C'è uno chef privato nella cucina?",
+              "isCorrect": false,
+              "feedback": "Unrealistic expectation for a standard office."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "In cucina c'è il caffè e il tè gratuiti per tutti. Le piace il caffè?",
+          "english": "In the kitchen there is free coffee and tea for everyone. Do you like coffee?",
+          "choices": [
+            {
+              "text": "Sì, lo adoro. Mi aiuta molto a concentrarmi.",
+              "isCorrect": true,
+              "feedback": "Positive response that relates to productivity."
+            },
+            {
+              "text": "No, il caffè mi rende troppo nervoso.",
+              "isCorrect": false,
+              "feedback": "Fine, but maybe express it more diplomatically."
+            },
+            {
+              "text": "Solo se è caffè di lusso.",
+              "isCorrect": false,
+              "feedback": "Sounds a bit snobbish."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Per qualsiasi problema amministrativo, può parlare con la segreteria.",
+          "english": "For any administrative problem, you can speak with the secretary.",
+          "choices": [
+            {
+              "text": "Grazie dell'informazione. Dove si trova il loro ufficio?",
+              "isCorrect": true,
+              "feedback": "Practical follow-up question."
+            },
+            {
+              "text": "Non avrò mai problemi, sono perfetto.",
+              "isCorrect": false,
+              "feedback": "A bit arrogant."
+            },
+            {
+              "text": "Posso avere il numero di telefono del proprietario?",
+              "isCorrect": false,
+              "feedback": "Too much for the first day."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "L'ufficio è all'ingresso. Ora la lascio lavorare. Buona fortuna!",
+          "english": "The office is at the entrance. Now I'll leave you to work. Good luck!",
+          "choices": [
+            {
+              "text": "Grazie mille, a più tardi allora.",
+              "isCorrect": true,
+              "feedback": "Standard polite closing."
+            },
+            {
+              "text": "Aspetti! Non so cosa fare!",
+              "isCorrect": false,
+              "feedback": "Don't panic; your colleagues will help you."
+            },
+            {
+              "text": "Va bene, vado a dormire un po'.",
+              "isCorrect": false,
+              "feedback": "Completely inappropriate for the workplace."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "introductions_to_colleagues",
+      "title": "Introductions to Colleagues",
+      "description": "Meeting your new team members in the open space.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Benvenuto nel team. Io sono Marco, lavoro qui da due anni.",
+          "english": "Hi! Welcome to the team. I am Marco, I've worked here for two years.",
+          "choices": [
+            {
+              "text": "Ciao Marco, piacere! Io sono il nuovo arrivato.",
+              "isCorrect": true,
+              "feedback": "Friendly and appropriate introduction."
+            },
+            {
+              "text": "Buongiorno signor Marco. Posso sedermi qui?",
+              "isCorrect": false,
+              "feedback": "Colleagues usually use 'tu' and 'ciao' in Italian offices."
+            },
+            {
+              "text": "Ciao. Hai finito il tuo lavoro?",
+              "isCorrect": false,
+              "feedback": "Too direct and nosy for a first meeting."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Piacere! Ti presento anche Giulia. Lei si occupa del marketing.",
+          "english": "Pleasure! Let me introduce Giulia too. She handles marketing.",
+          "choices": [
+            {
+              "text": "Ciao Giulia, piacere di conoscerti.",
+              "isCorrect": true,
+              "feedback": "Direct and friendly."
+            },
+            {
+              "text": "Marketing? È un lavoro noioso.",
+              "isCorrect": false,
+              "feedback": "Very rude to a new colleague."
+            },
+            {
+              "text": "Buongiorno. Qual è il suo cognome?",
+              "isCorrect": false,
+              "feedback": "Too formal for this setting."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Se hai bisogno di aiuto con il computer, chiedi pure a noi.",
+          "english": "If you need help with the computer, just ask us.",
+          "choices": [
+            {
+              "text": "Grazie, siete molto gentili. Ne avrò sicuramente bisogno.",
+              "isCorrect": true,
+              "feedback": "Shows humility and gratitude."
+            },
+            {
+              "text": "So già tutto, non mi serve aiuto.",
+              "isCorrect": false,
+              "feedback": "Overconfidence can be off-putting."
+            },
+            {
+              "text": "Dov'è il mio computer? Lo voglio ora.",
+              "isCorrect": false,
+              "feedback": "Too demanding."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Siamo una squadra molto unita. Ti troverai bene qui.",
+          "english": "We are a very close-knit team. You will like it here.",
+          "choices": [
+            {
+              "text": "Lo spero! Mi sembrate tutti molto simpatici.",
+              "isCorrect": true,
+              "feedback": "Building rapport with the team."
+            },
+            {
+              "text": "Non mi interessa la squadra, voglio solo i soldi.",
+              "isCorrect": false,
+              "feedback": "Very poor attitude."
+            },
+            {
+              "text": "Chi è il più bravo qui?",
+              "isCorrect": false,
+              "feedback": "Avoid creating unnecessary competition on day one."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Di solito pranziamo tutti insieme in mensa. Vuoi venire?",
+          "english": "Usually we all have lunch together in the canteen. Do you want to come?",
+          "choices": [
+            {
+              "text": "Certamente! Mi farebbe molto piacere conoscervi meglio.",
+              "isCorrect": true,
+              "feedback": "Great way to integrate with the team."
+            },
+            {
+              "text": "No, preferisco mangiare da solo.",
+              "isCorrect": false,
+              "feedback": "You might miss out on important social bonding."
+            },
+            {
+              "text": "La mensa è gratis o devo pagare?",
+              "isCorrect": false,
+              "feedback": "A bit blunt, though a valid question."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Di dove sei? È la tua prima esperienza in questo settore?",
+          "english": "Where are you from? Is it your first experience in this sector?",
+          "choices": [
+            {
+              "text": "Vengo da Roma. Ho già lavorato in un ufficio simile prima.",
+              "isCorrect": true,
+              "feedback": "Shares personal info and relevant background."
+            },
+            {
+              "text": "Certo, ho lavorato in un'altra azienda in questa zona qui.",
+              "isCorrect": false,
+              "feedback": "Extremely rude to a new colleague."
+            },
+            {
+              "text": "Sono un alieno venuto dallo spazio.",
+              "isCorrect": false,
+              "feedback": "Inappropriate joke for a first day."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Interessante! Il nostro ufficio è molto dinamico. Ti piacerà.",
+          "english": "Interesting! Our office is very dynamic. You will like it.",
+          "choices": [
+            {
+              "text": "Mi piace l'energia che si respira qui.",
+              "isCorrect": true,
+              "feedback": "Positive observation about the workplace."
+            },
+            {
+              "text": "Dinamico? Spero non si debba correre.",
+              "isCorrect": false,
+              "feedback": "A bit too literal and lazy sounding."
+            },
+            {
+              "text": "Preferisco un posto calmo e silenzioso.",
+              "isCorrect": false,
+              "feedback": "Maybe this office isn't for you then."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Usiamo una chat interna per comunicare velocemente. L'hai già installata?",
+          "english": "We use an internal chat to communicate quickly. Have you already installed it?",
+          "choices": [
+            {
+              "text": "Non ancora. Posso farlo subito se mi spieghi come.",
+              "isCorrect": true,
+              "feedback": "Proactive and ready to learn tools."
+            },
+            {
+              "text": "No, preferisco mandare lettere di carta.",
+              "isCorrect": false,
+              "feedback": "Too old-fashioned for a modern office."
+            },
+            {
+              "text": "Odio le chat, mi disturbano sempre.",
+              "isCorrect": false,
+              "feedback": "Negative attitude towards team communication."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ogni lunedì mattina facciamo una breve riunione di team. È importante.",
+          "english": "Every Monday morning we have a short team meeting. It's important.",
+          "choices": [
+            {
+              "text": "Va bene, lo segno subito sul calendario.",
+              "isCorrect": true,
+              "feedback": "Shows organization and commitment."
+            },
+            {
+              "text": "Le riunioni sono solo una perdita di tempo.",
+              "isCorrect": false,
+              "feedback": "Very unprofessional remark."
+            },
+            {
+              "text": "Il lunedì arrivo sempre in ritardo.",
+              "isCorrect": false,
+              "feedback": "Admitting to being late is a bad idea."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bene! Se hai bisogno di altro, siamo qui. Buon lavoro!",
+          "english": "Good! If you need anything else, we are here. Have a good work day!",
+          "choices": [
+            {
+              "text": "Grazie Marco, a dopo!",
+              "isCorrect": true,
+              "feedback": "Friendly and brief."
+            },
+            {
+              "text": "Ho molto da fare ora.",
+              "isCorrect": false,
+              "feedback": "Too needy."
+            },
+            {
+              "text": "Ciao, vado a fare shopping.",
+              "isCorrect": false,
+              "feedback": "You're at work, not at the mall."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding_your_desk",
+      "title": "Finding Your Desk",
+      "description": "Locating your workstation and getting set up.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Vieni, la tua scrivania è in fondo al corridoio, vicino alla finestra.",
+          "english": "Come, your desk is at the end of the hall, near the window.",
+          "choices": [
+            {
+              "text": "Ottimo, mi piace stare vicino alla finestra. Grazie.",
+              "isCorrect": true,
+              "feedback": "Positive and appreciative."
+            },
+            {
+              "text": "È troppo lontano dall'ingresso. Non mi va bene.",
+              "isCorrect": false,
+              "feedback": "Complaining about the assigned seat is not ideal."
+            },
+            {
+              "text": "Voglio una scrivania più grande.",
+              "isCorrect": false,
+              "feedback": "Too demanding for the first day."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ecco qui. C'è già tutto: computer, tastiera e mouse.",
+          "english": "Here it is. Everything is already there: computer, keyboard, and mouse.",
+          "choices": [
+            {
+              "text": "Perfetto. Come si accende il computer?",
+              "isCorrect": true,
+              "feedback": "A practical first step."
+            },
+            {
+              "text": "Questo computer è vecchio. Ne voglio uno nuovo.",
+              "isCorrect": false,
+              "feedback": "Be grateful for the equipment provided."
+            },
+            {
+              "text": "Non mi piace il colore del mouse.",
+              "isCorrect": false,
+              "feedback": "Trivial complaint."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Il tasto è sotto lo schermo. La password è scritta su questo foglio.",
+          "english": "The button is under the screen. The password is written on this paper.",
+          "choices": [
+            {
+              "text": "Vedo, grazie. La password è segreta, giusto?",
+              "isCorrect": true,
+              "feedback": "Shows awareness of office security."
+            },
+            {
+              "text": "Posso cambiare la password con '1234'?",
+              "isCorrect": false,
+              "feedback": "Security is important, '1234' is not safe!"
+            },
+            {
+              "text": "Ho perso il foglio, puoi dirmela di nuovo?",
+              "isCorrect": false,
+              "feedback": "Already losing things? Not a good start."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Esatto, non darla a nessuno. Hai bisogno di una sedia più comoda?",
+          "english": "Exactly, don't give it to anyone. Do you need a more comfortable chair?",
+          "choices": [
+            {
+              "text": "No, questa mi sembra ottima. Grazie per il pensiero.",
+              "isCorrect": true,
+              "feedback": "Polite and satisfied."
+            },
+            {
+              "text": "Sì, voglio una poltrona da re.",
+              "isCorrect": false,
+              "feedback": "A bit excessive."
+            },
+            {
+              "text": "Preferisco lavorare in piedi.",
+              "isCorrect": false,
+              "feedback": "A bit unusual for this office setup."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Bene. Sotto la scrivania c'è anche una cassettiera con la chiave.",
+          "english": "Good. Under the desk there is also a chest of drawers with a key.",
+          "choices": [
+            {
+              "text": "Molto utile per i miei oggetti personali. Grazie.",
+              "isCorrect": true,
+              "feedback": "Appreciating the storage space."
+            },
+            {
+              "text": "La chiave è troppo piccola, la perderò sicuramente.",
+              "isCorrect": false,
+              "feedback": "A bit pessimistic."
+            },
+            {
+              "text": "Cosa c'è dentro? Posso aprirla?",
+              "isCorrect": false,
+              "feedback": "It's yours now, so yes, but the question is a bit odd."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Hai bisogno di materiale da ufficio? Penne, quaderni o altro?",
+          "english": "Do you need office supplies? Pens, notebooks, or anything else?",
+          "choices": [
+            {
+              "text": "Sì, un quaderno mi servirebbe per prendere appunti.",
+              "isCorrect": true,
+              "feedback": "Practical request for a new employee."
+            },
+            {
+              "text": "No, uso solo il mio tablet d'oro.",
+              "isCorrect": false,
+              "feedback": "A bit showy."
+            },
+            {
+              "text": "Voglio diecimila penne rosse.",
+              "isCorrect": false,
+              "feedback": "Unreasonable amount."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente. Li trovi nell'armadio grigio vicino all'ingresso.",
+          "english": "Certainly. You find them in the gray cabinet near the entrance.",
+          "choices": [
+            {
+              "text": "Perfetto, vado a prenderli più tardi.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the location."
+            },
+            {
+              "text": "Vai tu a prenderli per me, per favore.",
+              "isCorrect": false,
+              "feedback": "A bit lazy for your first day."
+            },
+            {
+              "text": "L'armadio è chiuso a chiave?",
+              "isCorrect": false,
+              "feedback": "Valid question, but maybe wait and see."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "La stampante è proprio dietro l'angolo. Sai come usarla?",
+          "english": "The printer is just around the corner. Do you know how to use it?",
+          "choices": [
+            {
+              "text": "Penso di sì, ma se ho problemi chiederò aiuto.",
+              "isCorrect": true,
+              "feedback": "Balanced and honest response."
+            },
+            {
+              "text": "Le stampanti mi odiano, si rompono sempre.",
+              "isCorrect": false,
+              "feedback": "Negative and self-defeating."
+            },
+            {
+              "text": "Non stampo mai nulla, amo gli alberi.",
+              "isCorrect": false,
+              "feedback": "Fine sentiment, but maybe a bit preachy for a first day."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ricordati di spegnere il computer prima di andare via la sera.",
+          "english": "Remember to turn off the computer before leaving in the evening.",
+          "choices": [
+            {
+              "text": "Certamente, è importante per risparmiare energia.",
+              "isCorrect": true,
+              "feedback": "Shows responsibility and environmental awareness."
+            },
+            {
+              "text": "No, voglio lasciarlo acceso per sempre.",
+              "isCorrect": false,
+              "feedback": "Wasteful and against office policy."
+            },
+            {
+              "text": "Lo spegne la donna delle pulizie, no?",
+              "isCorrect": false,
+              "feedback": "It's your responsibility to turn off your own equipment."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ti lascio sistemare. A tra poco per la pausa caffè!",
+          "english": "I'll let you settle in. See you shortly for the coffee break!",
+          "choices": [
+            {
+              "text": "Grazie mille, a più tardi!",
+              "isCorrect": true,
+              "feedback": "Polite and eager for the break."
+            },
+            {
+              "text": "Non andare via, ho ancora paura!",
+              "isCorrect": false,
+              "feedback": "Again, too needy."
+            },
+            {
+              "text": "Vado a casa ora, sono stanco.",
+              "isCorrect": false,
+              "feedback": "You've barely started!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the_coffee_break",
+      "title": "The Coffee Break",
+      "description": "Learning about the sacred Italian office ritual: the coffee break.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "È ora della pausa caffè! Vieni con noi alla macchinetta?",
+          "english": "It's coffee break time! Are you coming with us to the machine?",
+          "choices": [
+            {
+              "text": "Sì, volentieri! Mi serve proprio un caffè.",
+              "isCorrect": true,
+              "feedback": "Participating in social rituals is important."
+            },
+            {
+              "text": "No, io non bevo mai niente.",
+              "isCorrect": false,
+              "feedback": "Even if you don't drink coffee, the social aspect is key."
+            },
+            {
+              "text": "Il caffè fa male alla salute.",
+              "isCorrect": false,
+              "feedback": "Don't be a buzzkill during the break."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Qui in ufficio facciamo due pause al giorno. È un momento sacro.",
+          "english": "Here in the office we take two breaks a day. It's a sacred moment.",
+          "choices": [
+            {
+              "text": "Capisco. È un ottimo modo per rilassarsi un po'.",
+              "isCorrect": true,
+              "feedback": "Shows understanding of the culture."
+            },
+            {
+              "text": "Due pause? Sono troppo poche, ne voglio dieci.",
+              "isCorrect": false,
+              "feedback": "Don't push your luck on the first day."
+            },
+            {
+              "text": "Preferisco lavorare senza sosta.",
+              "isCorrect": false,
+              "feedback": "Taking breaks is actually good for productivity."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Come lo prendi il caffè? Espresso, lungo o macchiato?",
+          "english": "How do you take your coffee? Espresso, long, or with a dash of milk?",
+          "choices": [
+            {
+              "text": "Un espresso semplice, per favore. Senza zucchero.",
+              "isCorrect": true,
+              "feedback": "A classic Italian choice."
+            },
+            {
+              "text": "Voglio un cappuccino gigante con panna.",
+              "isCorrect": false,
+              "feedback": "Too complex for the office vending machine."
+            },
+            {
+              "text": "Dov'è il tè? Non mi piace il caffè.",
+              "isCorrect": false,
+              "feedback": "Asking for tea is fine, but maybe more politely."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottima scelta. Costa solo cinquanta centesimi. Hai delle monete?",
+          "english": "Excellent choice. It only costs fifty cents. Do you have some coins?",
+          "choices": [
+            {
+              "text": "Sì, le ho. Ecco qui.",
+              "isCorrect": true,
+              "feedback": "Being prepared with change."
+            },
+            {
+              "text": "No, puoi pagare tu per me?",
+              "isCorrect": false,
+              "feedback": "Asking a new colleague to pay is a bit awkward."
+            },
+            {
+              "text": "Sì, ho fame. Eccoti.",
+              "isCorrect": false,
+              "feedback": "The machine definitely won't take that!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ecco il tuo caffè. Attento, è molto caldo!",
+          "english": "Here is your coffee. Careful, it's very hot!",
+          "choices": [
+            {
+              "text": "Grazie Marco. È proprio quello che ci voleva.",
+              "isCorrect": true,
+              "feedback": "Polite and appreciative."
+            },
+            {
+              "text": "Mi sono bruciato! È colpa tua!",
+              "isCorrect": false,
+              "feedback": "He warned you! Don't blame others."
+            },
+            {
+              "text": "Questo caffè è cattivo.",
+              "isCorrect": false,
+              "feedback": "Not very polite to say about office coffee."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Cosa facevi nel tuo precedente lavoro? Ti piaceva?",
+          "english": "What did you do in your previous job? Did you like it?",
+          "choices": [
+            {
+              "text": "Ero un assistente amministrativo. Mi piaceva molto organizzare le cose.",
+              "isCorrect": true,
+              "feedback": "Good conversation starter during a break."
+            },
+            {
+              "text": "Non voglio parlare del passato, è troppo doloroso.",
+              "isCorrect": false,
+              "feedback": "A bit dramatic for a casual chat."
+            },
+            {
+              "text": "Ho lavorato come cameriere in un ristorante molto famoso in centro ora.",
+              "isCorrect": false,
+              "feedback": "Likely a joke, but maybe not appropriate for everyone."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Capisco. Qui prendiamo il caffè molto seriamente, come vedi.",
+          "english": "I see. Here we take coffee very seriously, as you can see.",
+          "choices": [
+            {
+              "text": "Sì, l'ho notato. È una bella tradizione.",
+              "isCorrect": true,
+              "feedback": "Appreciating the local office culture."
+            },
+            {
+              "text": "Il caffè italiano è sopravvalutato.",
+              "isCorrect": false,
+              "feedback": "Be careful, Italians are proud of their coffee!"
+            },
+            {
+              "text": "Preferisco il caffè americano in tazza grande.",
+              "isCorrect": false,
+              "feedback": "A valid preference, but maybe not the most popular here."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Preferisci lavorare sempre in ufficio o ti piace lo smart working?",
+          "english": "Do you prefer always working in the office or do you like smart working?",
+          "choices": [
+            {
+              "text": "Mi piace un mix di entrambi, se possibile.",
+              "isCorrect": true,
+              "feedback": "A balanced and modern perspective."
+            },
+            {
+              "text": "Voglio lavorare solo dal mio letto.",
+              "isCorrect": false,
+              "feedback": "Too informal and lazy."
+            },
+            {
+              "text": "Odio stare a casa, voglio stare sempre qui.",
+              "isCorrect": false,
+              "feedback": "A bit extreme, but okay."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "La pausa è quasi finita. Torniamo alle nostre scrivanie?",
+          "english": "The break is almost over. Shall we go back to our desks?",
+          "choices": [
+            {
+              "text": "Sì, sono pronto a ricominciare. Grazie per la pausa.",
+              "isCorrect": true,
+              "feedback": "Showing readiness to return to work."
+            },
+            {
+              "text": "No, voglio restare qui tutto il giorno.",
+              "isCorrect": false,
+              "feedback": "Work needs to be done!"
+            },
+            {
+              "text": "Andiamo a fare un'altra pausa invece?",
+              "isCorrect": false,
+              "feedback": "You just had one!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie per la compagnia! È stato un piacere parlare con te.",
+          "english": "Thanks for the company! It was a pleasure talking to you.",
+          "choices": [
+            {
+              "text": "Il piacere è mio, Marco. A dopo!",
+              "isCorrect": true,
+              "feedback": "Friendly and polite closing."
+            },
+            {
+              "text": "Sì, sì, ora vai via.",
+              "isCorrect": false,
+              "feedback": "Very rude."
+            },
+            {
+              "text": "Ciao Marco, ci vediamo tra poco.",
+              "isCorrect": false,
+              "feedback": "A bit cheeky for a first day."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

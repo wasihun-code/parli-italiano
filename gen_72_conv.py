@@ -1,0 +1,1085 @@
+import json
+import os
+
+scenario_id = 72
+scenario_dir = "src/data/exports/social/making_plans"
+
+conversations = {
+  "scenarioId": scenario_id,
+  "conversations": [
+    {
+      "id": "suggesting_movie",
+      "title": "Suggesting a Movie",
+      "description": "Suggesting a movie to a friend for the evening.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Hai programmi per questa sera?",
+          "english": "Hi! Do you have plans for this evening?",
+          "choices": [
+            {
+              "text": "Ciao! No, non ho programmi. Tu?",
+              "english": "Hi! No, I don't have plans. You?",
+              "isCorrect": True,
+              "feedback": "Perfect way to return the question."
+            },
+            {
+              "text": "Sì, il treno parte alle cinque.",
+              "english": "Yes, the train leaves at five.",
+              "isCorrect": False,
+              "feedback": "This is about a train."
+            },
+            {
+              "text": "Oggi c'è un gran bel sole.",
+              "english": "Today is very sunny.",
+              "isCorrect": False,
+              "feedback": "This answers a question about the weather."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Pensavo di andare al cinema. Ti va?",
+          "english": "I was thinking of going to the cinema. Do you feel like it?",
+          "choices": [
+            {
+              "text": "Che bella idea! Che film guardiamo?",
+              "english": "What a great idea! What movie are we watching?",
+              "isCorrect": True,
+              "feedback": "Enthusiastic and asks a follow-up question."
+            },
+            {
+              "text": "Non mi piace bere latte freddo.",
+              "english": "I don't like drinking cold milk.",
+              "isCorrect": False,
+              "feedback": "You are talking about milk."
+            },
+            {
+              "text": "Il mio telefono ha lo schermo rotto.",
+              "english": "My phone has a broken screen.",
+              "isCorrect": False,
+              "feedback": "Irrelevant to the conversation."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "C'è un nuovo film d'azione. Sembra molto bello.",
+          "english": "There is a new action movie. It looks very good.",
+          "choices": [
+            {
+              "text": "Perfetto, mi piacciono i film d'azione.",
+              "english": "Perfect, I like action movies.",
+              "isCorrect": True,
+              "feedback": "Good response to agree with the choice."
+            },
+            {
+              "text": "Non mi piace la pizza con l'ananas.",
+              "english": "I don't like pizza with pineapple.",
+              "isCorrect": False,
+              "feedback": "This is about pizza."
+            },
+            {
+              "text": "La stazione è a due minuti da qui.",
+              "english": "The station is two minutes from here.",
+              "isCorrect": False,
+              "feedback": "This is a direction."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. Lo spettacolo inizia alle venti in punto.",
+          "english": "Great. The show starts at exactly eight pm.",
+          "choices": [
+            {
+              "text": "Allora dobbiamo comprare i biglietti.",
+              "english": "Then we need to buy the tickets.",
+              "isCorrect": True,
+              "feedback": "A logical next step."
+            },
+            {
+              "text": "Oggi voglio comprare delle fragole.",
+              "english": "Today I want to buy some strawberries.",
+              "isCorrect": False,
+              "feedback": "This is about grocery shopping."
+            },
+            {
+              "text": "Il bagno è in fondo a destra.",
+              "english": "The bathroom is down the hall to the right.",
+              "isCorrect": False,
+              "feedback": "This gives directions."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Non ti preoccupare. Li ho già presi io online.",
+          "english": "Don't worry. I already got them online.",
+          "choices": [
+            {
+              "text": "Sei fantastico! Ti rimborserò dopo.",
+              "english": "You are fantastic! I will reimburse you later.",
+              "isCorrect": True,
+              "feedback": "A polite offer to pay back."
+            },
+            {
+              "text": "Il mio gatto dorme tutto il giorno.",
+              "english": "My cat sleeps all day long.",
+              "isCorrect": False,
+              "feedback": "This is a statement about a pet."
+            },
+            {
+              "text": "Voglio leggere un libro in francese.",
+              "english": "I want to read a book in French.",
+              "isCorrect": False,
+              "feedback": "This is about a hobby."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Figurati! Offro io. A che ora ci vediamo?",
+          "english": "No worries! It's on me. What time do we meet?",
+          "choices": [
+            {
+              "text": "Facciamo alle diciannove e mezza?",
+              "english": "Let's make it at seven thirty pm?",
+              "isCorrect": True,
+              "feedback": "Proposes a realistic time before the movie starts."
+            },
+            {
+              "text": "Il mio cane si chiama Fido, sai.",
+              "english": "My dog is named Fido, you know.",
+              "isCorrect": False,
+              "feedback": "This is about a dog."
+            },
+            {
+              "text": "Voglio comprare un biglietto nuovo.",
+              "english": "I want to buy a new ticket.",
+              "isCorrect": False,
+              "feedback": "The tickets are already bought."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Diciannove e mezza va bene. Mangiamo qualcosa prima?",
+          "english": "Seven thirty is fine. Should we eat something before?",
+          "choices": [
+            {
+              "text": "Sì, magari un panino veloce in centro.",
+              "english": "Yes, maybe a quick sandwich in the center.",
+              "isCorrect": True,
+              "feedback": "A good suggestion for a quick meal."
+            },
+            {
+              "text": "Ho bisogno di un dottore in fretta.",
+              "english": "I need a doctor very quickly.",
+              "isCorrect": False,
+              "feedback": "This is a medical emergency."
+            },
+            {
+              "text": "Il cielo è azzurro e senza nuvole.",
+              "english": "The sky is blue and without clouds.",
+              "isCorrect": False,
+              "feedback": "This is about the weather."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Perfetto, conosco un posto vicino al cinema.",
+          "english": "Perfect, I know a place near the cinema.",
+          "choices": [
+            {
+              "text": "D'accordo. Ci vediamo davanti al locale.",
+              "english": "Agreed. See you in front of the place.",
+              "isCorrect": True,
+              "feedback": "Confirms the meeting spot."
+            },
+            {
+              "text": "La mia macchina è rossa e molto veloce.",
+              "english": "My car is red and very fast.",
+              "isCorrect": False,
+              "feedback": "This is about a car."
+            },
+            {
+              "text": "Il museo apre alle dieci di mattina.",
+              "english": "The museum opens at ten in the morning.",
+              "isCorrect": False,
+              "feedback": "This is a museum schedule."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Facciamo direttamente davanti al cinema, è più facile.",
+          "english": "Let's do directly in front of the cinema, it's easier.",
+          "choices": [
+            {
+              "text": "Va benissimo. Sarò lì per tempo.",
+              "english": "That is very fine. I will be there on time.",
+              "isCorrect": True,
+              "feedback": "Agrees and confirms punctuality."
+            },
+            {
+              "text": "Non riesco a trovare le mie chiavi.",
+              "english": "I cannot find my keys anywhere.",
+              "isCorrect": False,
+              "feedback": "This is an issue about keys."
+            },
+            {
+              "text": "Il vento soffia da ovest oggi.",
+              "english": "The wind is blowing from the west today.",
+              "isCorrect": False,
+              "feedback": "This is a weather report."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Benissimo. A più tardi allora!",
+          "english": "Very well. See you later then!",
+          "choices": [
+            {
+              "text": "A stasera! Ciao!",
+              "english": "See you tonight! Bye!",
+              "isCorrect": True,
+              "feedback": "A natural way to close."
+            },
+            {
+              "text": "Il conto per favore.",
+              "english": "The bill please.",
+              "isCorrect": False,
+              "feedback": "You use this at a restaurant."
+            },
+            {
+              "text": "Quanti anni hai ora?",
+              "english": "How old are you now?",
+              "isCorrect": False,
+              "feedback": "A random question."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meeting_at_park",
+      "title": "Meeting at the Park",
+      "description": "Planning to meet a friend at the local park in the afternoon.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Oggi c'è il sole. Usciamo?",
+          "english": "It is sunny today. Shall we go out?",
+          "choices": [
+            {
+              "text": "Sì, volentieri! Dove andiamo?",
+              "english": "Yes, gladly! Where do we go?",
+              "isCorrect": True,
+              "feedback": "Enthusiastic and asks for a destination."
+            },
+            {
+              "text": "Piove molto ed è anche freddo.",
+              "english": "It is raining a lot and it is also cold.",
+              "isCorrect": False,
+              "feedback": "The host just said it's sunny."
+            },
+            {
+              "text": "Ho male al braccio da stamattina.",
+              "english": "My arm hurts since this morning.",
+              "isCorrect": False,
+              "feedback": "This is a medical complaint."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Andiamo al parco? Possiamo fare una passeggiata.",
+          "english": "Shall we go to the park? We can take a walk.",
+          "choices": [
+            {
+              "text": "È una bella idea. A che ora andiamo?",
+              "english": "It is a nice idea. At what time are we going?",
+              "isCorrect": True,
+              "feedback": "Agrees and moves to logistics."
+            },
+            {
+              "text": "Il mio computer non funziona bene oggi.",
+              "english": "My computer doesn't work well today.",
+              "isCorrect": False,
+              "feedback": "This is about a tech problem."
+            },
+            {
+              "text": "Non mi piace il caffè senza zucchero.",
+              "english": "I don't like coffee without sugar.",
+              "isCorrect": False,
+              "feedback": "This is about coffee preferences."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Facciamo alle quindici? Va bene per te?",
+          "english": "Shall we do three pm? Is that okay for you?",
+          "choices": [
+            {
+              "text": "Alle quindici è perfetto per me.",
+              "english": "At three pm is perfect for me.",
+              "isCorrect": True,
+              "feedback": "Confirms the proposed time."
+            },
+            {
+              "text": "Dov'è il bagno degli uomini qui?",
+              "english": "Where is the men's restroom here?",
+              "isCorrect": False,
+              "feedback": "This is asking for directions."
+            },
+            {
+              "text": "La valigia verde è troppo pesante.",
+              "english": "The green suitcase is too heavy.",
+              "isCorrect": False,
+              "feedback": "This is about luggage."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo! Possiamo anche prendere un gelato dopo.",
+          "english": "Great! We can also get a gelato afterwards.",
+          "choices": [
+            {
+              "text": "Sì, mi piace il gelato al cioccolato.",
+              "english": "Yes, I like chocolate gelato.",
+              "isCorrect": True,
+              "feedback": "Agrees with the gelato idea."
+            },
+            {
+              "text": "Non so guidare la macchina manuale.",
+              "english": "I don't know how to drive a manual car.",
+              "isCorrect": False,
+              "feedback": "This is about driving."
+            },
+            {
+              "text": "Voglio un biglietto per il teatro.",
+              "english": "I want a ticket for the theater.",
+              "isCorrect": False,
+              "feedback": "This is about the theater."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Io preferisco la frutta. Dove ci incontriamo?",
+          "english": "I prefer fruit. Where do we meet?",
+          "choices": [
+            {
+              "text": "Ci vediamo all'ingresso principale del parco.",
+              "english": "See you at the main entrance of the park.",
+              "isCorrect": True,
+              "feedback": "Provides a specific meeting location."
+            },
+            {
+              "text": "Il treno arriva al binario numero due.",
+              "english": "The train arrives at platform number two.",
+              "isCorrect": False,
+              "feedback": "This is about a train platform."
+            },
+            {
+              "text": "Vorrei comprare delle scarpe da corsa.",
+              "english": "I would like to buy some running shoes.",
+              "isCorrect": False,
+              "feedback": "This is about shopping."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "All'ingresso sud o all'ingresso nord?",
+          "english": "At the south entrance or at the north entrance?",
+          "choices": [
+            {
+              "text": "All'ingresso nord, vicino alla fontana.",
+              "english": "At the north entrance, near the fountain.",
+              "isCorrect": True,
+              "feedback": "Clarifies the exact spot."
+            },
+            {
+              "text": "La farmacia chiude alle ore diciannove.",
+              "english": "The pharmacy closes at nineteen hours.",
+              "isCorrect": False,
+              "feedback": "This is a pharmacy schedule."
+            },
+            {
+              "text": "Preferisco un tavolo vicino alla finestra.",
+              "english": "I prefer a table near the window.",
+              "isCorrect": False,
+              "feedback": "This is for a restaurant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Porto una bottiglia d'acqua.",
+          "english": "Perfect. I will bring a bottle of water.",
+          "choices": [
+            {
+              "text": "Grazie, sei gentile. Io porto dei biscotti.",
+              "english": "Thank you, you are kind. I will bring some cookies.",
+              "isCorrect": True,
+              "feedback": "Polite and offers to bring something too."
+            },
+            {
+              "text": "Il gatto sta dormendo sul divano ora.",
+              "english": "The cat is sleeping on the sofa now.",
+              "isCorrect": False,
+              "feedback": "This is a statement about a cat."
+            },
+            {
+              "text": "Quanto costa questo vestito azzurro qui?",
+              "english": "How much does this blue dress cost here?",
+              "isCorrect": False,
+              "feedback": "This is asking for a price."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "I biscotti sono perfetti per una pausa.",
+          "english": "Cookies are perfect for a break.",
+          "choices": [
+            {
+              "text": "Sì, speriamo che non ci sia troppo vento.",
+              "english": "Yes, let's hope there isn't too much wind.",
+              "isCorrect": True,
+              "feedback": "A natural comment about the park weather."
+            },
+            {
+              "text": "Il mio volo parte tra trenta minuti.",
+              "english": "My flight leaves in thirty minutes.",
+              "isCorrect": False,
+              "feedback": "This is about an airport."
+            },
+            {
+              "text": "La pizza al taglio è molto economica.",
+              "english": "Pizza by the slice is very cheap.",
+              "isCorrect": False,
+              "feedback": "This is about pizza."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Non preoccuparti, fa molto caldo oggi.",
+          "english": "Don't worry, it is very hot today.",
+          "choices": [
+            {
+              "text": "Meglio così! Non vedo l'ora di uscire.",
+              "english": "Better that way! I can't wait to go out.",
+              "isCorrect": True,
+              "feedback": "Positive and looking forward to it."
+            },
+            {
+              "text": "Ho dimenticato le chiavi di casa sul tavolo.",
+              "english": "I forgot the house keys on the table.",
+              "isCorrect": False,
+              "feedback": "This is about lost keys."
+            },
+            {
+              "text": "La banca centrale è dall'altra parte.",
+              "english": "The central bank is on the other side.",
+              "isCorrect": False,
+              "feedback": "This gives directions."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Anch'io. Allora a più tardi, ciao!",
+          "english": "Me too. See you later then, bye!",
+          "choices": [
+            {
+              "text": "A dopo! Ci vediamo alle tre al parco.",
+              "english": "See you later! See you at three at the park.",
+              "isCorrect": True,
+              "feedback": "A great confirming farewell."
+            },
+            {
+              "text": "Non ho contanti, pago con la carta.",
+              "english": "I have no cash, I pay with card.",
+              "isCorrect": False,
+              "feedback": "This is for paying."
+            },
+            {
+              "text": "Questo zaino è troppo grande per me.",
+              "english": "This backpack is too big for me.",
+              "isCorrect": False,
+              "feedback": "This is about a backpack."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "organizing_dinner",
+      "title": "Organizing a Dinner",
+      "description": "Making plans with a friend to grab dinner together.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Sei libero questa sera per cena?",
+          "english": "Hi! Are you free this evening for dinner?",
+          "choices": [
+            {
+              "text": "Sì, sono libero. Ti va una pizza?",
+              "english": "Yes, I am free. Do you feel like a pizza?",
+              "isCorrect": True,
+              "feedback": "Answers the question and suggests a food option."
+            },
+            {
+              "text": "Devo andare a comprare delle medicine.",
+              "english": "I have to go buy some medicine.",
+              "isCorrect": False,
+              "feedback": "This is a refusal, but the prompt implies agreeing."
+            },
+            {
+              "text": "La mia camera è al piano di sopra.",
+              "english": "My room is on the upper floor.",
+              "isCorrect": False,
+              "feedback": "This is about a hotel room."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "La pizza è un'ottima idea! Dove andiamo?",
+          "english": "Pizza is a great idea! Where do we go?",
+          "choices": [
+            {
+              "text": "Conosco una pizzeria molto buona in centro.",
+              "english": "I know a very good pizzeria in the center.",
+              "isCorrect": True,
+              "feedback": "Suggests a location."
+            },
+            {
+              "text": "Mi piace andare in bici la domenica.",
+              "english": "I like riding a bike on Sundays.",
+              "isCorrect": False,
+              "feedback": "This is about a hobby."
+            },
+            {
+              "text": "Il passaporto è nella borsa piccola.",
+              "english": "The passport is in the small bag.",
+              "isCorrect": False,
+              "feedback": "This is about travel documents."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "È la pizzeria vicino alla fontana grande?",
+          "english": "Is it the pizzeria near the big fountain?",
+          "choices": [
+            {
+              "text": "Sì, proprio quella. Fanno una pizza fantastica.",
+              "english": "Yes, exactly that one. They make a fantastic pizza.",
+              "isCorrect": True,
+              "feedback": "Confirms the location."
+            },
+            {
+              "text": "No, il treno non ferma a questa stazione.",
+              "english": "No, the train doesn't stop at this station.",
+              "isCorrect": False,
+              "feedback": "This is about a train."
+            },
+            {
+              "text": "Ho letto un libro di storia antica oggi.",
+              "english": "I read an ancient history book today.",
+              "isCorrect": False,
+              "feedback": "This is about reading."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo. A che ora ci vediamo allora?",
+          "english": "Great. What time do we meet then?",
+          "choices": [
+            {
+              "text": "Ci vediamo lì alle venti e mezza, ok?",
+              "english": "See you there at eight thirty pm, ok?",
+              "isCorrect": True,
+              "feedback": "Proposes a time for dinner."
+            },
+            {
+              "text": "Il volo è in ritardo di circa due ore.",
+              "english": "The flight is delayed by about two hours.",
+              "isCorrect": False,
+              "feedback": "This is about an airport flight."
+            },
+            {
+              "text": "Voglio leggere un libro in biblioteca.",
+              "english": "I want to read a book in the library.",
+              "isCorrect": False,
+              "feedback": "This is about reading a book."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Le venti e mezza è perfetto. Devo prenotare?",
+          "english": "Eight thirty is perfect. Should I book?",
+          "choices": [
+            {
+              "text": "Sì, per favore. È sempre molto piena di sera.",
+              "english": "Yes, please. It is always very full at night.",
+              "isCorrect": True,
+              "feedback": "A natural response to booking."
+            },
+            {
+              "text": "Ieri ho comprato un vestito per la festa.",
+              "english": "Yesterday I bought a dress for the party.",
+              "isCorrect": False,
+              "feedback": "This is about a party outfit."
+            },
+            {
+              "text": "Non riesco a trovare il caricabatterie.",
+              "english": "I cannot find the phone charger.",
+              "isCorrect": False,
+              "feedback": "This is a tech issue."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ho chiamato ma è tutto occupato a quell'ora.",
+          "english": "I called but it is all booked at that time.",
+          "choices": [
+            {
+              "text": "Ah peccato. E se andiamo alle ventuno?",
+              "english": "Ah too bad. What if we go at nine pm?",
+              "isCorrect": True,
+              "feedback": "Proposes an alternative time."
+            },
+            {
+              "text": "La borsa gialla è sul tavolo di legno.",
+              "english": "The yellow bag is on the wooden table.",
+              "isCorrect": False,
+              "feedback": "This is about a bag."
+            },
+            {
+              "text": "Ieri ho mangiato una mela molto dolce.",
+              "english": "Yesterday I ate a very sweet apple.",
+              "isCorrect": False,
+              "feedback": "This is about eating an apple yesterday."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Hanno posto alle ventuno, ho appena prenotato.",
+          "english": "They have room at nine pm, I just booked.",
+          "choices": [
+            {
+              "text": "Ottimo lavoro! Ti ringrazio per aver chiamato.",
+              "english": "Great job! I thank you for calling.",
+              "isCorrect": True,
+              "feedback": "Thanks the host for booking."
+            },
+            {
+              "text": "La mia televisione è spenta e rotta.",
+              "english": "My television is off and broken.",
+              "isCorrect": False,
+              "feedback": "This is about a TV."
+            },
+            {
+              "text": "Oggi c'è la partita allo stadio nuovo.",
+              "english": "Today is the match at the new stadium.",
+              "isCorrect": False,
+              "feedback": "This is about sports."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ci vediamo direttamente dentro al ristorante?",
+          "english": "Do we meet directly inside the restaurant?",
+          "choices": [
+            {
+              "text": "Meglio vederci fuori, vicino all'ingresso.",
+              "english": "Better to meet outside, near the entrance.",
+              "isCorrect": True,
+              "feedback": "Proposes an alternative meeting spot."
+            },
+            {
+              "text": "Preferisco viaggiare in treno di giorno.",
+              "english": "I prefer to travel by train by day.",
+              "isCorrect": False,
+              "feedback": "This is about traveling."
+            },
+            {
+              "text": "L'aereo per Milano parte fra tre ore.",
+              "english": "The plane to Milan leaves in three hours.",
+              "isCorrect": False,
+              "feedback": "This is about a flight."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene. Speriamo di non dover aspettare.",
+          "english": "Alright. Let's hope we don't have to wait.",
+          "choices": [
+            {
+              "text": "Se abbiamo prenotato, non ci sarà problema.",
+              "english": "If we booked, there won't be a problem.",
+              "isCorrect": True,
+              "feedback": "A reassuring response."
+            },
+            {
+              "text": "Ho bisogno di una medicina per la gola.",
+              "english": "I need medicine for my throat.",
+              "isCorrect": False,
+              "feedback": "This is a medical issue."
+            },
+            {
+              "text": "Il mio gatto ha graffiato la sedia.",
+              "english": "My cat scratched the chair.",
+              "isCorrect": False,
+              "feedback": "This is about a pet."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Hai ragione. A stasera alle ventuno!",
+          "english": "You are right. See you tonight at nine pm!",
+          "choices": [
+            {
+              "text": "Perfetto, non vedo l'ora. A stasera!",
+              "english": "Perfect, I can't wait. See you tonight!",
+              "isCorrect": True,
+              "feedback": "A polite and natural ending."
+            },
+            {
+              "text": "Ho un appuntamento dal dentista domani.",
+              "english": "I have a dentist appointment tomorrow.",
+              "isCorrect": False,
+              "feedback": "You are organizing dinner, not going to the dentist."
+            },
+            {
+              "text": "La banca è aperta solo di mattina.",
+              "english": "The bank is open only in the morning.",
+              "isCorrect": False,
+              "feedback": "This is about a bank schedule."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "confirming_plans",
+      "title": "Confirming Plans",
+      "description": "Double-checking the details for a meetup that was already planned.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Ti scrivo per confermare l'incontro di oggi.",
+          "english": "Hi! I am writing to you to confirm today's meeting.",
+          "choices": [
+            {
+              "text": "Ciao! Sì, certo. È tutto confermato.",
+              "english": "Hi! Yes, of course. Everything is confirmed.",
+              "isCorrect": True,
+              "feedback": "Perfect way to confirm the meeting."
+            },
+            {
+              "text": "Mi dispiace, ma non parlo francese bene.",
+              "english": "I am sorry, but I don't speak French well.",
+              "isCorrect": False,
+              "feedback": "This is about languages."
+            },
+            {
+              "text": "Cerco un idraulico bravo per il bagno.",
+              "english": "I am looking for a good plumber for the bathroom.",
+              "isCorrect": False,
+              "feedback": "This is a home repair issue."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ricordami, ci vediamo alle diciotto o alle diciannove?",
+          "english": "Remind me, are we meeting at six pm or seven pm?",
+          "choices": [
+            {
+              "text": "Ci vediamo alle diciotto, come d'accordo.",
+              "english": "We are meeting at six pm, as agreed.",
+              "isCorrect": True,
+              "feedback": "Clarifies the time correctly."
+            },
+            {
+              "text": "Il museo chiude sempre alle venti in punto.",
+              "english": "The museum always closes exactly at eight pm.",
+              "isCorrect": False,
+              "feedback": "This is a museum schedule."
+            },
+            {
+              "text": "Oggi cucino io, preparo un pollo arrosto.",
+              "english": "Today I am cooking, I am preparing roast chicken.",
+              "isCorrect": False,
+              "feedback": "This is about cooking."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Giusto! Davanti al bar in piazza centrale, vero?",
+          "english": "Right! In front of the bar in the central square, right?",
+          "choices": [
+            {
+              "text": "Esatto, davanti all'ingresso del bar.",
+              "english": "Exactly, in front of the bar's entrance.",
+              "isCorrect": True,
+              "feedback": "Confirms the location."
+            },
+            {
+              "text": "La mia macchina è nel parcheggio blu.",
+              "english": "My car is in the blue parking lot.",
+              "isCorrect": False,
+              "feedback": "This is about a car park."
+            },
+            {
+              "text": "Vorrei prenotare una bella camera singola.",
+              "english": "I would like to book a nice single room.",
+              "isCorrect": False,
+              "feedback": "This is a hotel booking."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ci sono dei lavori per strada, forse farò ritardo.",
+          "english": "There are some roadworks, maybe I will be late.",
+          "choices": [
+            {
+              "text": "Tranquillo. Se fai tardi, aspettami dentro.",
+              "english": "Don't worry. If you are late, wait for me inside.",
+              "isCorrect": True,
+              "feedback": "A calm and practical response."
+            },
+            {
+              "text": "Non trovo la fermata del treno veloce.",
+              "english": "I cannot find the fast train stop.",
+              "isCorrect": False,
+              "feedback": "This is a transportation issue."
+            },
+            {
+              "text": "Questo vino è molto buono, ne vorrei ancora.",
+              "english": "This wine is very good, I would like more.",
+              "isCorrect": False,
+              "feedback": "This is for dining."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ok, ti scrivo un messaggio quando arrivo in piazza.",
+          "english": "Ok, I will write you a message when I arrive in the square.",
+          "choices": [
+            {
+              "text": "Perfetto. Io cerco di essere puntuale.",
+              "english": "Perfect. I will try to be punctual.",
+              "isCorrect": True,
+              "feedback": "Agrees and promises to be on time."
+            },
+            {
+              "text": "Non posso leggere senza gli occhiali nuovi.",
+              "english": "I cannot read without my new glasses.",
+              "isCorrect": False,
+              "feedback": "This is an issue about glasses."
+            },
+            {
+              "text": "C'è una riunione di lavoro fra due ore.",
+              "english": "There is a business meeting in two hours.",
+              "isCorrect": False,
+              "feedback": "This is about a work meeting."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Il bar potrebbe essere pieno a quell'ora, sai?",
+          "english": "The bar might be full at that time, you know?",
+          "choices": [
+            {
+              "text": "Nel caso, possiamo andare al parco lì vicino.",
+              "english": "In that case, we can go to the nearby park.",
+              "isCorrect": True,
+              "feedback": "Offers a backup plan."
+            },
+            {
+              "text": "Il mio orologio si è fermato questa mattina.",
+              "english": "My watch stopped this morning.",
+              "isCorrect": False,
+              "feedback": "This is about a broken watch."
+            },
+            {
+              "text": "L'aereo è atterrato in ritardo ieri notte.",
+              "english": "The plane landed late last night.",
+              "isCorrect": False,
+              "feedback": "This is about an airplane."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Buona idea, il parco è sempre molto tranquillo.",
+          "english": "Good idea, the park is always very quiet.",
+          "choices": [
+            {
+              "text": "Sì, e oggi il tempo è anche molto bello.",
+              "english": "Yes, and today the weather is also very nice.",
+              "isCorrect": True,
+              "feedback": "A natural conversational continuation."
+            },
+            {
+              "text": "Vorrei cambiare questi pantaloni grigi.",
+              "english": "I would like to exchange these grey pants.",
+              "isCorrect": False,
+              "feedback": "This is about shopping."
+            },
+            {
+              "text": "Ho perso la valigia grande in aeroporto.",
+              "english": "I lost my large suitcase at the airport.",
+              "isCorrect": False,
+              "feedback": "This is about lost luggage."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Hai portato anche la tua bicicletta oggi?",
+          "english": "Did you also bring your bicycle today?",
+          "choices": [
+            {
+              "text": "No, sono a piedi. Tu hai la tua?",
+              "english": "No, I am on foot. Do you have yours?",
+              "isCorrect": True,
+              "feedback": "Answers and asks the same question."
+            },
+            {
+              "text": "La porta del garage è chiusa a chiave.",
+              "english": "The garage door is locked with a key.",
+              "isCorrect": False,
+              "feedback": "This is about a door."
+            },
+            {
+              "text": "Preferisco bere del succo di frutta fresco.",
+              "english": "I prefer drinking fresh fruit juice.",
+              "isCorrect": False,
+              "feedback": "This is a beverage preference."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, ho la bici. La lascio legata al bar.",
+          "english": "Yes, I have the bike. I'll leave it chained at the bar.",
+          "choices": [
+            {
+              "text": "Ottimo, così possiamo camminare insieme.",
+              "english": "Great, so we can walk together.",
+              "isCorrect": True,
+              "feedback": "A nice comment on the plan."
+            },
+            {
+              "text": "Mi fa male la spalla sinistra da ieri.",
+              "english": "My left shoulder hurts since yesterday.",
+              "isCorrect": False,
+              "feedback": "This is a medical complaint."
+            },
+            {
+              "text": "Questi stivali neri costano troppo per me.",
+              "english": "These black boots cost too much for me.",
+              "isCorrect": False,
+              "feedback": "This is about shoe prices."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "A dopo! Non vedo l'ora di vederti.",
+          "english": "See you later! I can't wait to see you.",
+          "choices": [
+            {
+              "text": "Anche io! Ciao e fai attenzione per strada.",
+              "english": "Me too! Bye and be careful on the road.",
+              "isCorrect": True,
+              "feedback": "A very natural closing."
+            },
+            {
+              "text": "Il vento oggi è forte sulla spiaggia.",
+              "english": "The wind today is strong on the beach.",
+              "isCorrect": False,
+              "feedback": "This is about the weather."
+            },
+            {
+              "text": "Devo pagare una multa alta alla polizia.",
+              "english": "I have to pay a high fine to the police.",
+              "isCorrect": False,
+              "feedback": "This is a legal/police matter."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+os.makedirs(scenario_dir, exist_ok=True)
+with open(os.path.join(scenario_dir, "conversations.json"), "w", encoding="utf-8") as f:
+    json.dump(conversations, f, indent=2, ensure_ascii=False)
+
+print("Created conversations.json")

@@ -1,0 +1,953 @@
+{
+  "scenarioId": 67,
+  "conversations": [
+    {
+      "id": "introducing_experience",
+      "title": "Introducing Your Experience",
+      "description": "Talk about your previous work experience and education.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Si accomodi pure. Lei è qui per il colloquio, giusto?",
+          "english": "Good morning! Please, take a seat. You are here for the interview, right?",
+          "choices": [
+            {
+              "text": "Buongiorno, sì, esatto. Grazie mille.",
+              "isCorrect": true,
+              "feedback": "A polite and correct confirmation."
+            },
+            {
+              "text": "Buongiorno, vorrei un tavolo per due.",
+              "isCorrect": false,
+              "feedback": "This is an interview, not a restaurant."
+            },
+            {
+              "text": "Buongiorno, a che ora parte il treno?",
+              "isCorrect": false,
+              "feedback": "You are not at the station."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottimo. Mi può parlare brevemente del suo percorso di studi?",
+          "english": "Great. Can you tell me briefly about your studies?",
+          "choices": [
+            {
+              "text": "Sì, ho una laurea in economia e commercio.",
+              "isCorrect": true,
+              "feedback": "Perfect response about your education."
+            },
+            {
+              "text": "Sì, mi piace molto guardare i film d'azione.",
+              "isCorrect": false,
+              "feedback": "This is not related to your studies."
+            },
+            {
+              "text": "Sì, ho comprato del pane e del latte.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the interview."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Molto bene. Ha già avuto esperienze lavorative in questo settore?",
+          "english": "Very well. Have you already had work experience in this sector?",
+          "choices": [
+            {
+              "text": "Sì, ho lavorato per due anni in un'azienda simile.",
+              "isCorrect": true,
+              "feedback": "Good job highlighting relevant experience."
+            },
+            {
+              "text": "No, non ho mai mangiato in questo ufficio.",
+              "isCorrect": false,
+              "feedback": "They asked about work, not eating."
+            },
+            {
+              "text": "Sì, il mio cane si chiama proprio Fido.",
+              "isCorrect": false,
+              "feedback": "Animals are forbidden in this domain."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "E quali erano le sue responsabilità principali in quel lavoro?",
+          "english": "And what were your main responsibilities in that job?",
+          "choices": [
+            {
+              "text": "Gestivo i clienti e preparavo i rapporti mensili.",
+              "isCorrect": true,
+              "feedback": "Specific and professional response."
+            },
+            {
+              "text": "Andavo al cinema ogni sabato pomeriggio.",
+              "isCorrect": false,
+              "feedback": "Cinema is a forbidden concept."
+            },
+            {
+              "text": "Pulivo la gabbia del mio canarino.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and mentions animals."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Capisco. Perché ha deciso di lasciare il suo ultimo impiego?",
+          "english": "I see. Why did you decide to leave your last job?",
+          "choices": [
+            {
+              "text": "Cercavo nuove sfide e opportunità di crescita.",
+              "isCorrect": true,
+              "feedback": "A very positive way to explain leaving."
+            },
+            {
+              "text": "Perché il caffè del bar era troppo amaro.",
+              "isCorrect": false,
+              "feedback": "Not a professional reason."
+            },
+            {
+              "text": "Perché volevo andare al mare ogni giorno.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to professional goals."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "È un motivo valido. Cosa ha imparato da quella esperienza?",
+          "english": "That's a valid reason. What did you learn from that experience?",
+          "choices": [
+            {
+              "text": "Ho imparato a lavorare bene sotto pressione.",
+              "isCorrect": true,
+              "feedback": "A valuable skill to mention."
+            },
+            {
+              "text": "Ho imparato a cucinare una buona pizza.",
+              "isCorrect": false,
+              "feedback": "Wrong domain (food/restaurant)."
+            },
+            {
+              "text": "Ho imparato a nuotare molto velocemente.",
+              "isCorrect": false,
+              "feedback": "Not relevant for an office job."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "In passato ha dovuto gestire progetti in autonomia?",
+          "english": "In the past did you have to manage projects independently?",
+          "choices": [
+            {
+              "text": "Sì, ho seguito diversi progetti dall'inizio alla fine.",
+              "isCorrect": true,
+              "feedback": "Good description of independence."
+            },
+            {
+              "text": "Preferisco mangiare la pizza da solo.",
+              "isCorrect": false,
+              "feedback": "Food related distractors."
+            },
+            {
+              "text": "Ho perso il mio passaporto ieri.",
+              "isCorrect": false,
+              "feedback": "Travel related distractors."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Molto interessante. Che strumenti usa per organizzare il suo lavoro?",
+          "english": "Very interesting. What tools do you use to organize your work?",
+          "choices": [
+            {
+              "text": "Uso un'agenda digitale e dei software specifici.",
+              "isCorrect": true,
+              "feedback": "Professional tools."
+            },
+            {
+              "text": "Uso il forno a microonde tutti i giorni.",
+              "isCorrect": false,
+              "feedback": "Kitchen tools."
+            },
+            {
+              "text": "Non ho mai guidato un treno.",
+              "isCorrect": false,
+              "feedback": "Travel tools."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Capisco. È abituato a rispettare scadenze molto strette?",
+          "english": "I see. Are you used to meeting very tight deadlines?",
+          "choices": [
+            {
+              "text": "Assolutamente, so gestire bene il tempo a disposizione.",
+              "isCorrect": true,
+              "feedback": "Good time management."
+            },
+            {
+              "text": "Il mio orologio si è rotto l'anno scorso.",
+              "isCorrect": false,
+              "feedback": "Literal clock."
+            },
+            {
+              "text": "Mi piace fare lunghe passeggiate al mare.",
+              "isCorrect": false,
+              "feedback": "Beach activities."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. C'è qualche altra esperienza che vuole aggiungere?",
+          "english": "Perfect. Is there any other experience you want to add?",
+          "choices": [
+            {
+              "text": "Penso di aver coperto i punti principali, grazie.",
+              "isCorrect": true,
+              "feedback": "Polite completion."
+            },
+            {
+              "text": "Voglio comprare un biglietto per il teatro.",
+              "isCorrect": false,
+              "feedback": "Theater."
+            },
+            {
+              "text": "Vado spesso al parco giochi la domenica.",
+              "isCorrect": false,
+              "feedback": "Playground."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discussing_skills",
+      "title": "Discussing Your Skills",
+      "description": "Talk about your strengths, weaknesses, and professional skills.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Parliamo delle sue competenze. Quali sono i suoi punti di forza?",
+          "english": "Let's talk about your skills. What are your strengths?",
+          "choices": [
+            {
+              "text": "Sono una persona molto organizzata e puntuale.",
+              "isCorrect": true,
+              "feedback": "Great professional strengths."
+            },
+            {
+              "text": "So cantare molto bene sotto la doccia.",
+              "isCorrect": false,
+              "feedback": "Not a professional skill."
+            },
+            {
+              "text": "Ieri ho visto un film molto lungo.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to your skills."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "E per quanto riguarda i punti di debolezza? Cosa vorrebbe migliorare?",
+          "english": "And regarding weaknesses? What would you like to improve?",
+          "choices": [
+            {
+              "text": "A volte sono troppo perfezionista nel mio lavoro.",
+              "isCorrect": true,
+              "feedback": "A classic and safe answer for an interview."
+            },
+            {
+              "text": "Non mi piace mangiare le verdure cotte.",
+              "isCorrect": false,
+              "feedback": "Wrong domain and irrelevant."
+            },
+            {
+              "text": "Ho paura dei gatti neri che attraversano.",
+              "isCorrect": false,
+              "feedback": "Mentions animals and is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Interessante. Quali lingue straniere parla correntemente?",
+          "english": "Interesting. Which foreign languages do you speak fluently?",
+          "choices": [
+            {
+              "text": "Parlo correntemente inglese e un po' di francese.",
+              "isCorrect": true,
+              "feedback": "Good to mention your language skills."
+            },
+            {
+              "text": "So parlare con il mio pappagallo.",
+              "isCorrect": false,
+              "feedback": "Again, animals are forbidden."
+            },
+            {
+              "text": "Preferisco bere acqua minerale gassata.",
+              "isCorrect": false,
+              "feedback": "Totally irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Ottimo, l'inglese è fondamentale qui. Sa usare bene il computer?",
+          "english": "Great, English is fundamental here. Can you use the computer well?",
+          "choices": [
+            {
+              "text": "Sì, conosco bene il pacchetto Office e altri software.",
+              "isCorrect": true,
+              "feedback": "Essential skills for most office jobs."
+            },
+            {
+              "text": "No, preferisco usare carta e penna al parco.",
+              "isCorrect": false,
+              "feedback": "Not what they want to hear."
+            },
+            {
+              "text": "Il mio computer è rotto da tre mesi.",
+              "isCorrect": false,
+              "feedback": "A negative and unhelpful answer."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Benissimo. Come gestisce i problemi o i conflitti nel team?",
+          "english": "Very well. How do you manage problems or conflicts in the team?",
+          "choices": [
+            {
+              "text": "Cerco sempre di comunicare e trovare una soluzione.",
+              "isCorrect": true,
+              "feedback": "A constructive approach to teamwork."
+            },
+            {
+              "text": "Comincio a urlare finché non ho ragione.",
+              "isCorrect": false,
+              "feedback": "A very bad way to handle conflicts."
+            },
+            {
+              "text": "Vado a dormire e aspetto che passi.",
+              "isCorrect": false,
+              "feedback": "Not a professional solution."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "La comunicazione è la chiave. Preferisce lavorare da solo o in gruppo?",
+          "english": "Communication is key. Do you prefer to work alone or in a group?",
+          "choices": [
+            {
+              "text": "Mi piace collaborare, ma sono anche autonomo.",
+              "isCorrect": true,
+              "feedback": "A balanced and flexible answer."
+            },
+            {
+              "text": "Preferisco stare a casa a guardare la TV.",
+              "isCorrect": false,
+              "feedback": "Not related to work preferences."
+            },
+            {
+              "text": "Dipende da cosa c'è per cena stasera.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and wrong domain."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Quale considera la sua più grande sfida professionale finora?",
+          "english": "What do you consider your biggest professional challenge so far?",
+          "choices": [
+            {
+              "text": "Sicuramente imparare a usare il nuovo sistema informatico.",
+              "isCorrect": true,
+              "feedback": "IT challenges."
+            },
+            {
+              "text": "Scalare una montagna molto alta in estate.",
+              "isCorrect": false,
+              "feedback": "Physical challenge."
+            },
+            {
+              "text": "Mangiare un piatto di pasta piccante.",
+              "isCorrect": false,
+              "feedback": "Food challenge."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "E come ha superato questa sfida?",
+          "english": "And how did you overcome this challenge?",
+          "choices": [
+            {
+              "text": "Ho studiato molto e ho chiesto aiuto ai colleghi.",
+              "isCorrect": true,
+              "feedback": "Good problem solving."
+            },
+            {
+              "text": "Ho comprato un ombrello nuovo in centro.",
+              "isCorrect": false,
+              "feedback": "Shopping."
+            },
+            {
+              "text": "Ho nuotato nel fiume per due ore.",
+              "isCorrect": false,
+              "feedback": "Swimming."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "È un ottimo approccio. Come si aggiorna sulle novità del settore?",
+          "english": "That's a great approach. How do you stay updated on industry news?",
+          "choices": [
+            {
+              "text": "Leggo articoli specializzati e partecipo ai corsi.",
+              "isCorrect": true,
+              "feedback": "Professional updates."
+            },
+            {
+              "text": "Guardo sempre i cartoni animati in televisione.",
+              "isCorrect": false,
+              "feedback": "Cartoons."
+            },
+            {
+              "text": "Non mi piace leggere il menu del ristorante.",
+              "isCorrect": false,
+              "feedback": "Menu reading."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bene. Ritiene di avere buone doti di leadership?",
+          "english": "Good. Do you believe you have good leadership skills?",
+          "choices": [
+            {
+              "text": "Sì, ho guidato un piccolo team in passato.",
+              "isCorrect": true,
+              "feedback": "Leadership experience."
+            },
+            {
+              "text": "Ho una macchina rossa molto veloce.",
+              "isCorrect": false,
+              "feedback": "Driving a car."
+            },
+            {
+              "text": "Faccio una passeggiata al parco ogni sera.",
+              "isCorrect": false,
+              "feedback": "Park walk."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why_this_company",
+      "title": "Why This Company?",
+      "description": "Explain your motivation and interest in the company and role.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Perché ha scelto di candidarsi proprio per la nostra azienda?",
+          "english": "Why did you choose to apply specifically for our company?",
+          "choices": [
+            {
+              "text": "Perché ammiro i vostri progetti e la vostra visione.",
+              "isCorrect": true,
+              "feedback": "Shows you have researched the company."
+            },
+            {
+              "text": "Perché il vostro ufficio è vicino a un cinema.",
+              "isCorrect": false,
+              "feedback": "Forbidden concept and poor motivation."
+            },
+            {
+              "text": "Perché cercavo un posto dove dormire.",
+              "isCorrect": false,
+              "feedback": "An office is not a hotel."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Cosa sa dei prodotti o dei servizi che offriamo?",
+          "english": "What do you know about the products or services we offer?",
+          "choices": [
+            {
+              "text": "So che siete leader nel settore delle tecnologie.",
+              "isCorrect": true,
+              "feedback": "Demonstrates knowledge of the company."
+            },
+            {
+              "text": "So che vendete delle ottime pizze margherita.",
+              "isCorrect": false,
+              "feedback": "Wrong domain entirely."
+            },
+            {
+              "text": "Non ne ho idea, ho visto solo il logo.",
+              "isCorrect": false,
+              "feedback": "Shows a lack of preparation."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Esatto. Cosa pensa di poter portare di nuovo al nostro team?",
+          "english": "Exactly. What do you think you can bring new to our team?",
+          "choices": [
+            {
+              "text": "Porto la mia energia e le mie nuove idee.",
+              "isCorrect": true,
+              "feedback": "A positive and proactive contribution."
+            },
+            {
+              "text": "Posso portare dei biscotti fatti in casa.",
+              "isCorrect": false,
+              "feedback": "Nice, but not professional value."
+            },
+            {
+              "text": "Posso portare il mio gatto in ufficio.",
+              "isCorrect": false,
+              "feedback": "Animals are forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Le nuove idee sono sempre benvenute. Quali sono i suoi obiettivi?",
+          "english": "New ideas are always welcome. What are your goals?",
+          "choices": [
+            {
+              "text": "Vorrei crescere professionalmente in questa società.",
+              "isCorrect": true,
+              "feedback": "Shows long-term commitment."
+            },
+            {
+              "text": "Il mio obiettivo è vincere alla lotteria.",
+              "isCorrect": false,
+              "feedback": "Not a professional goal."
+            },
+            {
+              "text": "Voglio diventare un famoso attore di film.",
+              "isCorrect": false,
+              "feedback": "Forbidden concept (cinema)."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Bene. Dove si vede tra cinque anni?",
+          "english": "Good. Where do you see yourself in five years?",
+          "choices": [
+            {
+              "text": "Mi vedo come un manager esperto in questo settore.",
+              "isCorrect": true,
+              "feedback": "Shows ambition and focus."
+            },
+            {
+              "text": "Mi vedo sdraiato su una spiaggia al sole.",
+              "isCorrect": false,
+              "feedback": "Forbidden concept (beach/vacation)."
+            },
+            {
+              "text": "Mi vedo a mangiare chili di gelato.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and food-related."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ottimo. Ha delle domande da farmi sulla nostra azienda?",
+          "english": "Great. Do you have any questions for me about our company?",
+          "choices": [
+            {
+              "text": "Sì, come descriverebbe la cultura aziendale?",
+              "isCorrect": true,
+              "feedback": "A very smart question to ask."
+            },
+            {
+              "text": "Sì, a che ora chiude il ristorante qui vicino?",
+              "isCorrect": false,
+              "feedback": "Wrong domain focus."
+            },
+            {
+              "text": "No, non mi interessa sapere nulla.",
+              "isCorrect": false,
+              "feedback": "Shows lack of interest."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Se dovesse descrivere la nostra azienda in una parola, quale sceglierebbe?",
+          "english": "If you had to describe our company in one word, which would you choose?",
+          "choices": [
+            {
+              "text": "Direi innovativa, per i vostri progetti recenti.",
+              "isCorrect": true,
+              "feedback": "Good answer."
+            },
+            {
+              "text": "Direi rumorosa, come una strada trafficata.",
+              "isCorrect": false,
+              "feedback": "Negative word."
+            },
+            {
+              "text": "Direi salata, come l'acqua del mare.",
+              "isCorrect": false,
+              "feedback": "Taste word."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Grazie. Conosce i nostri principali concorrenti sul mercato?",
+          "english": "Thank you. Do you know our main competitors on the market?",
+          "choices": [
+            {
+              "text": "Sì, ho studiato le altre aziende del vostro settore.",
+              "isCorrect": true,
+              "feedback": "Good knowledge."
+            },
+            {
+              "text": "Sì, conosco tutti i ristoranti della città.",
+              "isCorrect": false,
+              "feedback": "Restaurant knowledge."
+            },
+            {
+              "text": "No, non guardo mai le partite di calcio.",
+              "isCorrect": false,
+              "feedback": "Sports."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "E cosa ci distingue dai nostri concorrenti secondo lei?",
+          "english": "And what distinguishes us from our competitors in your opinion?",
+          "choices": [
+            {
+              "text": "La qualità del vostro servizio clienti è superiore.",
+              "isCorrect": true,
+              "feedback": "Good insight."
+            },
+            {
+              "text": "I vostri gelati sono i più buoni in assoluto.",
+              "isCorrect": false,
+              "feedback": "Ice cream."
+            },
+            {
+              "text": "I vostri biglietti del treno costano meno.",
+              "isCorrect": false,
+              "feedback": "Train tickets."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Sono d'accordo. È disposto a viaggiare per lavoro, se necessario?",
+          "english": "I agree. Are you willing to travel for work, if necessary?",
+          "choices": [
+            {
+              "text": "Certamente, sono disponibile a fare trasferte brevi.",
+              "isCorrect": true,
+              "feedback": "Willing to travel."
+            },
+            {
+              "text": "Voglio solo andare in vacanza su un'isola.",
+              "isCorrect": false,
+              "feedback": "Vacation."
+            },
+            {
+              "text": "Vado in bicicletta la domenica mattina.",
+              "isCorrect": false,
+              "feedback": "Bike riding."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asking_next_steps",
+      "title": "Asking about the Next Steps",
+      "description": "Inquire about the contract, salary, and the next phases of selection.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Per concludere, parliamo degli aspetti pratici. Ha delle curiosità?",
+          "english": "To conclude, let's talk about practical aspects. Any curiosities?",
+          "choices": [
+            {
+              "text": "Sì, che tipo di contratto offrite per questa posizione?",
+              "isCorrect": true,
+              "feedback": "An important practical question."
+            },
+            {
+              "text": "Sì, di che colore è la macchina del capo?",
+              "isCorrect": false,
+              "feedback": "Totally irrelevant."
+            },
+            {
+              "text": "Sì, quanti cani ci sono nel palazzo?",
+              "isCorrect": false,
+              "feedback": "Animals are forbidden."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Offriamo un contratto a tempo indeterminato dopo un periodo di prova.",
+          "english": "We offer a permanent contract after a trial period.",
+          "choices": [
+            {
+              "text": "Capisco. È prevista anche una formazione iniziale?",
+              "isCorrect": true,
+              "feedback": "Good question about professional development."
+            },
+            {
+              "text": "Posso avere una pizza gratis ogni giorno?",
+              "isCorrect": false,
+              "feedback": "Wrong domain (food)."
+            },
+            {
+              "text": "Il periodo di prova è un film horror?",
+              "isCorrect": false,
+              "feedback": "Forbidden concept (cinema)."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Certamente, i primi quindici giorni farà affiancamento. Altre domande?",
+          "english": "Certainly, the first fifteen days you will have shadow training. Other questions?",
+          "choices": [
+            {
+              "text": "Qual è lo stipendio mensile previsto per il ruolo?",
+              "isCorrect": true,
+              "feedback": "Practical question about compensation."
+            },
+            {
+              "text": "Posso portare il mio gatto in ufficio?",
+              "isCorrect": false,
+              "feedback": "Still with the animals..."
+            },
+            {
+              "text": "Qual è il menu del giorno alla mensa?",
+              "isCorrect": false,
+              "feedback": "Wrong domain."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Lo stipendio netto è di circa millecinquecento euro al mese.",
+          "english": "The net salary is about one thousand five hundred euros per month.",
+          "choices": [
+            {
+              "text": "Va bene, grazie. Quando avrò una risposta definitiva?",
+              "isCorrect": true,
+              "feedback": "Good to ask about the timeline."
+            },
+            {
+              "text": "Va bene, posso pagare con la carta?",
+              "isCorrect": false,
+              "feedback": "You are receiving money, not paying!"
+            },
+            {
+              "text": "Preferisco essere pagato in caramelle.",
+              "isCorrect": false,
+              "feedback": "Not professional."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Le faremo sapere entro la fine della prossima settimana.",
+          "english": "We will let you know by the end of next week.",
+          "choices": [
+            {
+              "text": "Ottimo, aspetterò la vostra chiamata allora.",
+              "isCorrect": true,
+              "feedback": "A professional closing."
+            },
+            {
+              "text": "Non mi chiami, sarò al cinema tutto il giorno.",
+              "isCorrect": false,
+              "feedback": "Forbidden concept."
+            },
+            {
+              "text": "Spero che il mio cane non mangi il telefono.",
+              "isCorrect": false,
+              "feedback": "Forbidden concept (animals)."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Grazie mille per essere venuto. Le auguro una buona giornata.",
+          "english": "Thank you very much for coming. I wish you a good day.",
+          "choices": [
+            {
+              "text": "Grazie a lei, buona giornata e a presto.",
+              "isCorrect": true,
+              "feedback": "Perfect closing for the interview."
+            },
+            {
+              "text": "Arrivederci, vado a comprare un cavallo.",
+              "isCorrect": false,
+              "feedback": "Forbidden concept (animals)."
+            },
+            {
+              "text": "Il conto, per favore!",
+              "isCorrect": false,
+              "feedback": "This is not a restaurant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ha bisogno di qualche giorno per pensarci prima di accettare?",
+          "english": "Do you need a few days to think about it before accepting?",
+          "choices": [
+            {
+              "text": "No, sono molto sicuro di volere questo lavoro.",
+              "isCorrect": true,
+              "feedback": "Confident answer."
+            },
+            {
+              "text": "Sì, devo chiedere al mio cuoco personale.",
+              "isCorrect": false,
+              "feedback": "Personal chef."
+            },
+            {
+              "text": "Voglio guardare un altro film al cinema.",
+              "isCorrect": false,
+              "feedback": "Cinema."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Sa che richiederemo delle referenze ai suoi precedenti datori di lavoro?",
+          "english": "Great. Do you know we will require references from your previous employers?",
+          "choices": [
+            {
+              "text": "Nessun problema, posso fornirvi i loro contatti.",
+              "isCorrect": true,
+              "feedback": "Good reference check."
+            },
+            {
+              "text": "Devo comprare un nuovo tavolo da pranzo.",
+              "isCorrect": false,
+              "feedback": "Table."
+            },
+            {
+              "text": "Le mie valigie sono già in aeroporto.",
+              "isCorrect": false,
+              "feedback": "Luggage."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Ci sarà anche una visita medica di controllo da superare.",
+          "english": "Perfect. There will also be a medical check-up to pass.",
+          "choices": [
+            {
+              "text": "Va bene, sono pronto anche per la visita medica.",
+              "isCorrect": true,
+              "feedback": "Medical check."
+            },
+            {
+              "text": "Voglio ordinare una bottiglia di vino rosso.",
+              "isCorrect": false,
+              "feedback": "Wine."
+            },
+            {
+              "text": "Il mare oggi è troppo mosso per nuotare.",
+              "isCorrect": false,
+              "feedback": "Sea."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Bene, è tutto chiaro. Riceverà una mail con i dettagli, ha un indirizzo valido?",
+          "english": "Good, everything is clear. You will receive an email with the details, do you have a valid address?",
+          "choices": [
+            {
+              "text": "Sì, vi ho lasciato il mio indirizzo email sul curriculum.",
+              "isCorrect": true,
+              "feedback": "Email provided."
+            },
+            {
+              "text": "Abito vicino alla stazione centrale.",
+              "isCorrect": false,
+              "feedback": "Home address."
+            },
+            {
+              "text": "Il mio ombrello è rimasto sul treno.",
+              "isCorrect": false,
+              "feedback": "Umbrella."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

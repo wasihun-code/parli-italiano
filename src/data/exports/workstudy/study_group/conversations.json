@@ -1,0 +1,957 @@
+{
+  "scenarioId": 70,
+  "conversations": [
+    {
+      "id": "forming_group",
+      "title": "Organizzare il Gruppo",
+      "description": "Contatta un compagno per studiare insieme.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Ti va di studiare insieme per l'esame di lunedì?",
+          "english": "Hi! Do you want to study together for Monday's exam?",
+          "choices": [
+            {
+              "text": "Sì, ottima idea! Dobbiamo preparare molte cose.",
+              "isCorrect": true,
+              "feedback": "Great! Confirming interest and acknowledging the workload."
+            },
+            {
+              "text": "No, preferisco studiare da solo in biblioteca.",
+              "isCorrect": false,
+              "feedback": "You need to form a group for this scenario!"
+            },
+            {
+              "text": "Lunedì non posso, ho un appuntamento dal medico.",
+              "isCorrect": false,
+              "feedback": "Try to agree to study for the exam."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Vero, l'esame è difficile. Chi altro invitiamo nel gruppo?",
+          "english": "True, the exam is difficult. Who else should we invite to the group?",
+          "choices": [
+            {
+              "text": "Possiamo invitare Marco e Giulia. Loro sono molto bravi.",
+              "isCorrect": true,
+              "feedback": "Good choice. Inviting more people can be helpful."
+            },
+            {
+              "text": "Devo comprare un libro nuovo per il corso di storia.",
+              "isCorrect": false,
+              "feedback": "Stay on topic: who are we inviting?"
+            },
+            {
+              "text": "Non conosco nessuno che vuole studiare questo sabato.",
+              "isCorrect": false,
+              "feedback": "The host asked for suggestions of people to invite."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Perfetto. Scrivo subito un messaggio a loro. Sei d'accordo?",
+          "english": "Perfect. I'll write a message to them right away. Do you agree?",
+          "choices": [
+            {
+              "text": "Sì, scrivi pure. Più siamo, meglio è per ripassare.",
+              "isCorrect": true,
+              "feedback": "Exactly. Collaborative learning is the goal."
+            },
+            {
+              "text": "No, non scrivere. Voglio studiare solo con te oggi.",
+              "isCorrect": false,
+              "feedback": "Wait, we just agreed to invite them!"
+            },
+            {
+              "text": "Forse è meglio leggere il programma prima di tutto.",
+              "isCorrect": false,
+              "feedback": "Decide on the group members first."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Marco dice di sì. Giulia invece lavora, ma viene dopo.",
+          "english": "Marco says yes. Giulia is working, but she'll come later.",
+          "choices": [
+            {
+              "text": "Va bene. Allora siamo in tre o quattro persone.",
+              "isCorrect": true,
+              "feedback": "Confirming the group size."
+            },
+            {
+              "text": "Peccato. Giulia non può mai venire alle lezioni.",
+              "isCorrect": false,
+              "feedback": "She is coming later, so it's not a total loss."
+            },
+            {
+              "text": "Chi è Marco? Non ricordo questo nome adesso.",
+              "isCorrect": false,
+              "feedback": "You just suggested inviting him!"
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottimo gruppo. Iniziamo a vedere il programma domani?",
+          "english": "Great group. Shall we start looking at the syllabus tomorrow?",
+          "choices": [
+            {
+              "text": "Sì, domani mattina è perfetto. Ci vediamo all'università.",
+              "isCorrect": true,
+              "feedback": "A solid plan for tomorrow morning."
+            },
+            {
+              "text": "No, domani vado al mare. Studiamo la settimana prossima.",
+              "isCorrect": false,
+              "feedback": "The exam is on Monday! You need to start soon."
+            },
+            {
+              "text": "Preferisco dormire fino a tardi questo fine settimana.",
+              "isCorrect": false,
+              "feedback": "Exam preparation requires commitment."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "A che ora domani? Io posso dalle nove in poi.",
+          "english": "At what time tomorrow? I can from nine onwards.",
+          "choices": [
+            {
+              "text": "Le nove va bene. Ci troviamo davanti alla biblioteca.",
+              "isCorrect": true,
+              "feedback": "Nine is a good time to start."
+            },
+            {
+              "text": "Alle nove è troppo presto, voglio dormire.",
+              "isCorrect": false,
+              "feedback": "Try to be punctual for the group."
+            },
+            {
+              "text": "Domani mangio una pizza a mezzogiorno.",
+              "isCorrect": false,
+              "feedback": "Answer the question about the meeting time."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "D'accordo. Quale materia vogliamo ripassare per prima?",
+          "english": "Agreed. Which subject do we want to review first?",
+          "choices": [
+            {
+              "text": "Iniziamo con la storia, che è la parte più lunga.",
+              "isCorrect": true,
+              "feedback": "Good strategy to start with the longest subject."
+            },
+            {
+              "text": "Non voglio studiare la storia, è troppo noiosa.",
+              "isCorrect": false,
+              "feedback": "You have to study all subjects for the exam."
+            },
+            {
+              "text": "Ho comprato un gelato ieri sera.",
+              "isCorrect": false,
+              "feedback": "Focus on the study subjects."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Io porto i miei appunti dell'anno scorso.",
+          "english": "Alright. I'll bring my notes from last year.",
+          "choices": [
+            {
+              "text": "Ottimo, io porto il libro di testo e un quaderno.",
+              "isCorrect": true,
+              "feedback": "Bringing necessary materials."
+            },
+            {
+              "text": "Io non porto niente, uso i tuoi appunti.",
+              "isCorrect": false,
+              "feedback": "Everyone should contribute materials."
+            },
+            {
+              "text": "Mi piace molto il colore blu della tua borsa.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the materials for studying."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Perfetto. Credi che dobbiamo portare anche il computer?",
+          "english": "Perfect. Do you think we should also bring the computer?",
+          "choices": [
+            {
+              "text": "Sì, il computer è utile per cercare informazioni.",
+              "isCorrect": true,
+              "feedback": "Computers are very helpful for research."
+            },
+            {
+              "text": "No, il computer è troppo pesante da portare.",
+              "isCorrect": false,
+              "feedback": "It's worth it for the group work."
+            },
+            {
+              "text": "Preferisco guardare la televisione a casa.",
+              "isCorrect": false,
+              "feedback": "Stay on topic about bringing the computer."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Allora siamo pronti. A domani mattina alle nove!",
+          "english": "Then we're ready. See you tomorrow morning at nine!",
+          "choices": [
+            {
+              "text": "A domani! Buona serata e buono studio.",
+              "isCorrect": true,
+              "feedback": "Friendly closing.",
+              "nextMessageId": "END"
+            },
+            {
+              "text": "No, ho cambiato idea, non vengo più.",
+              "isCorrect": false,
+              "feedback": "You already agreed! Stay committed."
+            },
+            {
+              "text": "Vado a dormire adesso, sono stanco.",
+              "isCorrect": false,
+              "feedback": "A simple goodbye is better."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study_materials",
+      "title": "Materiali di Studio",
+      "description": "Condividi appunti e riassunti con il gruppo.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Hai già iniziato a leggere il libro per l'esame?",
+          "english": "Have you already started reading the book for the exam?",
+          "choices": [
+            {
+              "text": "Ho letto i primi tre capitoli, ma sono un po' difficili.",
+              "isCorrect": true,
+              "feedback": "Good progress, admitting it's challenging."
+            },
+            {
+              "text": "Ho perso il libro ieri sull'autobus mentre tornavo a casa.",
+              "isCorrect": false,
+              "feedback": "That's unfortunate, but try to talk about your progress."
+            },
+            {
+              "text": "Il libro è molto bello, mi piace molto la copertina.",
+              "isCorrect": false,
+              "feedback": "Focus on the content and studying, not the aesthetics."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Anch'io ho dei dubbi. Hai preso gli appunti a lezione?",
+          "english": "I have some doubts too. Did you take notes in class?",
+          "choices": [
+            {
+              "text": "Sì, ho preso molti appunti. Posso condividerli con te.",
+              "isCorrect": true,
+              "feedback": "Sharing notes is very helpful."
+            },
+            {
+              "text": "No, ho dormito tutto il tempo durante la lezione.",
+              "isCorrect": false,
+              "feedback": "Not very helpful for the study group!"
+            },
+            {
+              "text": "La penna non scriveva più e non ho scritto niente.",
+              "isCorrect": false,
+              "feedback": "Try to be more prepared or offer something else."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Grazie! Io ho preparato un riassunto dell'ultima parte.",
+          "english": "Thanks! I've prepared a summary of the last part.",
+          "choices": [
+            {
+              "text": "Fantastico. Il riassunto aiuta molto a capire meglio.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the value of the summary."
+            },
+            {
+              "text": "Non mi serve il riassunto, preferisco leggere tutto.",
+              "isCorrect": false,
+              "feedback": "Don't reject help from your group members."
+            },
+            {
+              "text": "Che ore sono? Ho fame e voglio mangiare un panino.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the study materials."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Vuoi che ti spieghi la parte sulla storia moderna?",
+          "english": "Do you want me to explain the part on modern history?",
+          "choices": [
+            {
+              "text": "Sì, grazie mille. Quella parte è molto complicata.",
+              "isCorrect": true,
+              "feedback": "Accepting explanations for difficult topics."
+            },
+            {
+              "text": "No, la storia moderna è troppo noiosa per studiare.",
+              "isCorrect": false,
+              "feedback": "It's on the exam, you have to study it!"
+            },
+            {
+              "text": "Spiegami invece come si cucina una buona lasagna.",
+              "isCorrect": false,
+              "feedback": "Off-topic! Focus on the history exam."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Nessun problema. Studiare insieme serve proprio a questo.",
+          "english": "No problem. Studying together is exactly for this.",
+          "choices": [
+            {
+              "text": "Vero. Allora porto i miei quaderni e il computer.",
+              "isCorrect": true,
+              "feedback": "Ready to bring necessary tools."
+            },
+            {
+              "text": "Infatti. Però preferisco studiare da solo stasera.",
+              "isCorrect": false,
+              "feedback": "You should be planning the group session."
+            },
+            {
+              "text": "Spero che l'esame sia facile e che finisca presto.",
+              "isCorrect": false,
+              "feedback": "Wishes won't help as much as your notebooks will."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Hai anche le vecchie prove d'esame per esercitarci?",
+          "english": "Do you also have the old exam papers to practice?",
+          "choices": [
+            {
+              "text": "Sì, ne ho trovate due sul sito del professore.",
+              "isCorrect": true,
+              "feedback": "Old exams are great for practice."
+            },
+            {
+              "text": "No, non sapevo che esistessero queste prove.",
+              "isCorrect": false,
+              "feedback": "They are very useful, you should look for them."
+            },
+            {
+              "text": "Il sito del professore è troppo lento oggi.",
+              "isCorrect": false,
+              "feedback": "Answer if you have the papers or not."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto, possiamo farle insieme alla fine del ripasso.",
+          "english": "Perfect, we can do them together at the end of the review.",
+          "choices": [
+            {
+              "text": "Sì, è un buon modo per vedere se siamo pronti.",
+              "isCorrect": true,
+              "feedback": "Testing knowledge is essential."
+            },
+            {
+              "text": "No, le prove sono troppo difficili e ho paura.",
+              "isCorrect": false,
+              "feedback": "Don't be afraid, it's just practice!"
+            },
+            {
+              "text": "Vado al bar a prendere un cornetto.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the study plan."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Hai bisogno di altri materiali per domani?",
+          "english": "Do you need any other materials for tomorrow?",
+          "choices": [
+            {
+              "text": "Mi servirebbero delle penne colorate, le ho finite.",
+              "isCorrect": true,
+              "feedback": "Specific needs are good to mention."
+            },
+            {
+              "text": "Mi serve un nuovo computer molto potente.",
+              "isCorrect": false,
+              "feedback": "A bit too much for a study session!"
+            },
+            {
+              "text": "Non mi serve niente, ho già tutto a casa.",
+              "isCorrect": false,
+              "feedback": "It's better to check if you need anything specific for the group."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Le porto io, ne ho molte nello zaino.",
+          "english": "I'll bring them, I have many in my backpack.",
+          "choices": [
+            {
+              "text": "Grazie, sei molto disponibile. A che ora iniziamo?",
+              "isCorrect": true,
+              "feedback": "Appreciating help and looking forward to starting."
+            },
+            {
+              "text": "Non voglio le tue penne, sono brutte.",
+              "isCorrect": false,
+              "feedback": "Be polite to your study partner!"
+            },
+            {
+              "text": "Lo zaino è troppo grande per te.",
+              "isCorrect": false,
+              "feedback": "Not relevant to the study session."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Iniziamo puntuali alle nove. Porta tutto, mi raccomando!",
+          "english": "We start on time at nine. Bring everything, I mean it!",
+          "choices": [
+            {
+              "text": "Certamente, a domani mattina allora!",
+              "isCorrect": true,
+              "feedback": "Final confirmation.",
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Forse arrivo alle dieci perché sono stanco.",
+              "isCorrect": false,
+              "feedback": "Punctuality is important for the group."
+            },
+            {
+              "text": "Ho perso di nuovo il libro.",
+              "isCorrect": false,
+              "feedback": "Try to be more careful with your materials."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "choosing_place",
+      "title": "Scegliere un Posto",
+      "description": "Decidi dove e quando incontrarti con il gruppo.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Dove preferite studiare domani? In biblioteca o al bar?",
+          "english": "Where do you (plural) prefer to study tomorrow? In the library or at the bar?",
+          "choices": [
+            {
+              "text": "Preferisco la biblioteca perché c'è molto silenzio.",
+              "isCorrect": true,
+              "feedback": "A logical choice for serious studying."
+            },
+            {
+              "text": "Andiamo in discoteca a ballare fino a domani mattina.",
+              "isCorrect": false,
+              "feedback": "You won't be able to study there!"
+            },
+            {
+              "text": "Mi piace molto il bar che fa i cornetti caldi.",
+              "isCorrect": false,
+              "feedback": "The host asked where you prefer to study, not what you like to eat."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "La biblioteca centrale è piena. Andiamo in quella piccola?",
+          "english": "The main library is full. Shall we go to the small one?",
+          "choices": [
+            {
+              "text": "Va bene, quella vicino al corso è molto tranquilla.",
+              "isCorrect": true,
+              "feedback": "Good alternative."
+            },
+            {
+              "text": "No, quella piccola è troppo lontana da casa mia.",
+              "isCorrect": false,
+              "feedback": "Try to be more flexible for the group."
+            },
+            {
+              "text": "Non so dove sia la biblioteca, mi sono perso.",
+              "isCorrect": false,
+              "feedback": "The host described where it is, try to follow along."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Però al bar possiamo parlare e bere un caffè.",
+          "english": "But at the bar we can talk and drink a coffee.",
+          "choices": [
+            {
+              "text": "Hai ragione, ma per l'esame serve molta concentrazione.",
+              "isCorrect": true,
+              "feedback": "Valid point about the need for focus."
+            },
+            {
+              "text": "Sì, voglio bere dieci caffè per restare sveglio.",
+              "isCorrect": false,
+              "feedback": "Too much caffeine! Focus on the study environment."
+            },
+            {
+              "text": "Il caffè del bar è cattivo, meglio quello di casa.",
+              "isCorrect": false,
+              "feedback": "Not relevant to deciding on a study location."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Allora facciamo così: biblioteca la mattina e bar dopo.",
+          "english": "Then let's do this: library in the morning and bar after.",
+          "choices": [
+            {
+              "text": "Mi sembra una buona idea. Così facciamo una pausa.",
+              "isCorrect": true,
+              "feedback": "A good compromise."
+            },
+            {
+              "text": "No, è troppo faticoso cambiare posto due volte.",
+              "isCorrect": false,
+              "feedback": "It's just one move, and it includes a break!"
+            },
+            {
+              "text": "Voglio studiare solo al bar perché mi piace la musica.",
+              "isCorrect": false,
+              "feedback": "Music might be distracting for an exam prep session."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "D'accordo. A che ora ci vediamo davanti all'ingresso?",
+          "english": "Agreed. What time shall we meet in front of the entrance?",
+          "choices": [
+            {
+              "text": "Vediamoci alle nove. Così troviamo un tavolo libero.",
+              "isCorrect": true,
+              "feedback": "Early start to secure a spot."
+            },
+            {
+              "text": "Vediamoci a mezzanotte quando la biblioteca è chiusa.",
+              "isCorrect": false,
+              "feedback": "That's not a useful time to meet!"
+            },
+            {
+              "text": "Non ho l'orologio e non so mai che ore sono.",
+              "isCorrect": false,
+              "feedback": "Check your phone! You need to set a time."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Quale ingresso? Quello principale o quello laterale?",
+          "english": "Which entrance? The main one or the side one?",
+          "choices": [
+            {
+              "text": "Quello principale è più facile da trovare.",
+              "isCorrect": true,
+              "feedback": "Logical and easy for everyone."
+            },
+            {
+              "text": "L'ingresso laterale è sempre chiuso per lavori.",
+              "isCorrect": false,
+              "feedback": "Then the main one is the only choice."
+            },
+            {
+              "text": "Entro dalla finestra perché ho perso le chiavi.",
+              "isCorrect": false,
+              "feedback": "Don't be silly! Use the door."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Va bene, ci vediamo lì. Porti anche tu il computer?",
+          "english": "Alright, see you there. Are you bringing your computer too?",
+          "choices": [
+            {
+              "text": "Sì, ho caricato la batteria stamattina.",
+              "isCorrect": true,
+              "feedback": "Good preparation."
+            },
+            {
+              "text": "No, preferisco usare solo carta e penna.",
+              "isCorrect": false,
+              "feedback": "Computers are very helpful for this subject."
+            },
+            {
+              "text": "Il computer è rotto e non ho soldi per ripararlo.",
+              "isCorrect": false,
+              "feedback": "That's a shame, but try to find a solution for studying."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ok. Sai se c'è il Wi-Fi gratuito in biblioteca?",
+          "english": "Ok. Do you know if there's free Wi-Fi in the library?",
+          "choices": [
+            {
+              "text": "Sì, basta usare la password dello studente.",
+              "isCorrect": true,
+              "feedback": "Useful information for the group."
+            },
+            {
+              "text": "No, non c'è internet e non possiamo studiare.",
+              "isCorrect": false,
+              "feedback": "There is usually Wi-Fi in university libraries."
+            },
+            {
+              "text": "Voglio guardare i video dei gatti su internet.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the study session."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo. Dobbiamo prenotare una sala per il gruppo?",
+          "english": "Great. Do we need to book a room for the group?",
+          "choices": [
+            {
+              "text": "Sì, è meglio prenotare per non disturbare gli altri.",
+              "isCorrect": true,
+              "feedback": "Booking a room is a good idea for group work."
+            },
+            {
+              "text": "No, possiamo urlare quanto vogliamo in sala comune.",
+              "isCorrect": false,
+              "feedback": "Silence is required in common areas."
+            },
+            {
+              "text": "Le sale sono tutte occupate dai professori.",
+              "isCorrect": false,
+              "feedback": "Check the booking system first."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Allora prenoto io per tre ore. Ci vediamo domani!",
+          "english": "Then I'll book it for three hours. See you tomorrow!",
+          "choices": [
+            {
+              "text": "Perfetto, a domani e grazie mille!",
+              "isCorrect": true,
+              "feedback": "Polite and confirming.",
+              "nextMessageId": "END"
+            },
+            {
+              "text": "D'accordo, ci vediamo presto. A dopo!",
+              "isCorrect": false,
+              "feedback": "Ten minutes is not enough for an exam!"
+            },
+            {
+              "text": "Ho fame, vado a mangiare adesso.",
+              "isCorrect": false,
+              "feedback": "A simple goodbye is better."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "final_confirmation",
+      "title": "Conferma Finale",
+      "description": "Ultime comunicazioni prima di iniziare a studiare.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Sei già in viaggio per venire all'università?",
+          "english": "Hi! Are you already on your way to the university?",
+          "choices": [
+            {
+              "text": "Sì, sono sull'autobus. Arrivo tra dieci minuti.",
+              "isCorrect": true,
+              "feedback": "Good, you're on time."
+            },
+            {
+              "text": "No, sono ancora a letto e sto dormendo molto bene.",
+              "isCorrect": false,
+              "feedback": "Wake up! The group is waiting."
+            },
+            {
+              "text": "Sì, sto andando al cinema a vedere un nuovo film.",
+              "isCorrect": false,
+              "feedback": "Wrong destination! You're supposed to be studying."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Io sono già qui. Ho preso i posti in fondo alla sala.",
+          "english": "I'm already here. I've taken seats at the back of the room.",
+          "choices": [
+            {
+              "text": "Ottimo. Hai portato anche i fogli per gli esercizi?",
+              "isCorrect": true,
+              "feedback": "Good check on study materials."
+            },
+            {
+              "text": "In fondo alla sala non si vede niente, andiamo avanti.",
+              "isCorrect": false,
+              "feedback": "In a library, seeing the front isn't as important as having a table."
+            },
+            {
+              "text": "Ho dimenticato dove si trova l'aula di storia oggi.",
+              "isCorrect": false,
+              "feedback": "You're going to the library, not the classroom yet!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Sì, ho tutto. Anche le penne e gli evidenziatori.",
+          "english": "Yes, I have everything. Pens and highlighters too.",
+          "choices": [
+            {
+              "text": "Perfetto. Io ho portato dei biscotti per la pausa.",
+              "isCorrect": true,
+              "feedback": "A nice contribution to the group spirit."
+            },
+            {
+              "text": "Le penne blu non mi piacciono, preferisco quelle nere.",
+              "isCorrect": false,
+              "feedback": "Don't be picky about borrowed stationary!"
+            },
+            {
+              "text": "Ho mangiato troppi biscotti e adesso sto male.",
+              "isCorrect": false,
+              "feedback": "Try to stay healthy for the study session!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie, sei molto gentile! Abbiamo molto da fare oggi.",
+          "english": "Thanks, you're very kind! We have a lot to do today.",
+          "choices": [
+            {
+              "text": "Sì, dobbiamo finire di ripassare tutto il programma.",
+              "isCorrect": true,
+              "feedback": "Acknowledging the goal for the day."
+            },
+            {
+              "text": "No, oggi voglio solo parlare e non fare niente.",
+              "isCorrect": false,
+              "feedback": "The group is here to study, not just chat!"
+            },
+            {
+              "text": "Il programma televisivo di oggi è molto noioso.",
+              "isCorrect": false,
+              "feedback": "Host meant the study syllabus, not TV program."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ce la faremo. Siamo un bel gruppo di studio!",
+          "english": "We'll make it. We're a great study group!",
+          "choices": [
+            {
+              "text": "Sicuramente. Entro subito in biblioteca, a tra poco.",
+              "isCorrect": true,
+              "feedback": "Positive ending and ready to start."
+            },
+            {
+              "text": "Non credo, l'esame è troppo difficile per noi.",
+              "isCorrect": false,
+              "feedback": "Stay positive! You've prepared well together."
+            },
+            {
+              "text": "A tra poco, vado a comprare un altro libro adesso.",
+              "isCorrect": false,
+              "feedback": "Just use the ones you have! It's time to study."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Hai visto se Marco è già arrivato? Non lo vedo.",
+          "english": "Have you seen if Marco has already arrived? I don't see him.",
+          "choices": [
+            {
+              "text": "Sì, è al bar a prendere un caffè veloce.",
+              "isCorrect": true,
+              "feedback": "Explaining where the other member is."
+            },
+            {
+              "text": "No, Marco è andato a casa perché ha sonno.",
+              "isCorrect": false,
+              "feedback": "That's not good! We need everyone."
+            },
+            {
+              "text": "Chi è Marco? Non conosco nessuno con questo nome.",
+              "isCorrect": false,
+              "feedback": "You've been talking about him the whole time!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Capito. Shh! In biblioteca dobbiamo fare silenzio.",
+          "english": "Understood. Shh! In the library we must be quiet.",
+          "choices": [
+            {
+              "text": "Hai ragione, parliamo a bassa voce allora.",
+              "isCorrect": true,
+              "feedback": "Respecting library rules."
+            },
+            {
+              "text": "No, io voglio gridare perché sono felice.",
+              "isCorrect": false,
+              "feedback": "You'll be kicked out of the library!"
+            },
+            {
+              "text": "La biblioteca è troppo rumorosa oggi.",
+              "isCorrect": false,
+              "feedback": "Then you should be even quieter."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Iniziamo con la parte più difficile o con quella facile?",
+          "english": "Shall we start with the most difficult part or the easy one?",
+          "choices": [
+            {
+              "text": "Meglio iniziare con quella difficile mentre siamo freschi.",
+              "isCorrect": true,
+              "feedback": "A smart way to tackle studying."
+            },
+            {
+              "text": "Iniziamo con quella facile così non facciamo fatica.",
+              "isCorrect": false,
+              "feedback": "It's better to use your energy for the hard stuff first."
+            },
+            {
+              "text": "Non voglio iniziare, voglio solo guardare fuori dalla finestra.",
+              "isCorrect": false,
+              "feedback": "Focus on the study session!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "D'accordo. Facciamo una pausa tra un'ora?",
+          "english": "Agreed. Shall we take a break in an hour?",
+          "choices": [
+            {
+              "text": "Sì, una pausa di dieci minuti è l'ideale.",
+              "isCorrect": true,
+              "feedback": "Short breaks help maintain focus."
+            },
+            {
+              "text": "No, studiamo per cinque ore senza fermarci mai.",
+              "isCorrect": false,
+              "feedback": "That's too much! You'll get too tired."
+            },
+            {
+              "text": "La pausa deve durare tre ore.",
+              "isCorrect": false,
+              "feedback": "That's not a break, that's the end of the session!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Allora apriamo i libri e iniziamo subito!",
+          "english": "Perfect. Then let's open the books and start right away!",
+          "choices": [
+            {
+              "text": "Sì, sono pronto. Buon lavoro a tutti!",
+              "isCorrect": true,
+              "feedback": "Ready to go.",
+              "nextMessageId": "END"
+            },
+            {
+              "text": "No, ho dimenticato come si legge l'italiano.",
+              "isCorrect": false,
+              "feedback": "Don't worry, we're here to learn together."
+            },
+            {
+              "text": "Vado via, studiare è troppo difficile per me.",
+              "isCorrect": false,
+              "feedback": "Don't give up now!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,993 @@
+{
+  "scenarioId": 69,
+  "conversations": [
+    {
+      "id": "simple_printing",
+      "title": "Stampa Semplice",
+      "description": "Print a basic document in black and white.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno! Come posso aiutarla oggi con la stampante?",
+          "english": "Good morning! How can I help you today with the printer?",
+          "choices": [
+            {
+              "text": "Buongiorno, vorrei stampare un documento importante.",
+              "english": "Good morning, I would like to print an important document.",
+              "isCorrect": true,
+              "feedback": "Great! You clearly stated your goal."
+            },
+            {
+              "text": "Buongiorno, cerco un ristorante per mangiare bene.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! We are at a print shop, not a restaurant."
+            },
+            {
+              "text": "Buongiorno, ho bisogno di un biglietto del treno.",
+              "isCorrect": false,
+              "feedback": "Wrong domain! This is for printing documents."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Ha il file su una chiavetta USB?",
+          "english": "Certainly. Do you have the file on a USB stick?",
+          "choices": [
+            {
+              "text": "Sì, il file è in questa chiavetta USB nera.",
+              "english": "Yes, the file is on this black USB stick.",
+              "isCorrect": true,
+              "feedback": "Perfect. Identifying the storage device."
+            },
+            {
+              "text": "Sì, il file è in una borsa molto grande.",
+              "isCorrect": false,
+              "feedback": "You need the USB stick, not a bag."
+            },
+            {
+              "text": "Sì, il file è in un ufficio molto lontano.",
+              "isCorrect": false,
+              "feedback": "The file must be here to print it."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo, la inserisco subito. Quante pagine deve stampare?",
+          "english": "Great, I'll plug it in right away. How many pages do you need to print?",
+          "choices": [
+            {
+              "text": "Devo stampare solo cinque pagine del file.",
+              "english": "I only need to print five pages of the file.",
+              "isCorrect": true,
+              "feedback": "Clear and precise number of pages."
+            },
+            {
+              "text": "Devo stampare cinque chili di carta bianca.",
+              "isCorrect": false,
+              "feedback": "We count pages, not weight in kilos."
+            },
+            {
+              "text": "Devo stampare cinque metri di stoffa nera.",
+              "isCorrect": false,
+              "feedback": "We print on paper, not on fabric."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Va bene. Preferisce la stampa in bianco e nero?",
+          "english": "Alright. Do you prefer black and white printing?",
+          "choices": [
+            {
+              "text": "Sì, preferisco la stampa in bianco e nero.",
+              "english": "Yes, I prefer black and white printing.",
+              "isCorrect": true,
+              "feedback": "Correct choice for basic printing."
+            },
+            {
+              "text": "Sì, preferisco la stampa con molto latte.",
+              "isCorrect": false,
+              "feedback": "That sounds like a coffee order!"
+            },
+            {
+              "text": "Sì, preferisco la stampa in mare aperto.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and nonsensical here."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Il formato della carta è A4 standard?",
+          "english": "Perfect. Is the paper size standard A4?",
+          "choices": [
+            {
+              "text": "Sì, il formato A4 va bene per i documenti.",
+              "english": "Yes, the A4 format is fine for the documents.",
+              "isCorrect": true,
+              "feedback": "Standard choice for most documents."
+            },
+            {
+              "text": "Sì, il formato A4 è troppo piccolo oggi.",
+              "isCorrect": false,
+              "feedback": "If it's too small, you should say no."
+            },
+            {
+              "text": "Sì, il formato A4 è di colore azzurro.",
+              "isCorrect": false,
+              "feedback": "A4 refers to size, not color."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo. Vuole le pagine su un foglio singolo?",
+          "english": "Agreed. Do you want the pages on a single sheet?",
+          "choices": [
+            {
+              "text": "Sì, un foglio singolo per ogni pagina, grazie.",
+              "english": "Yes, a single sheet for each page, thanks.",
+              "isCorrect": true,
+              "feedback": "Correct instruction for single-sided."
+            },
+            {
+              "text": "Sì, un letto singolo per ogni pagina, grazie.",
+              "isCorrect": false,
+              "feedback": "You mean 'foglio' (sheet), not 'letto' (bed)."
+            },
+            {
+              "text": "Sì, un gelato singolo per ogni pagina, grazie.",
+              "isCorrect": false,
+              "feedback": "Delicious, but we are printing!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "La stampante è pronta. Inizio subito la stampa.",
+          "english": "The printer is ready. I'll start printing right away.",
+          "choices": [
+            {
+              "text": "Grazie mille, attendo qui un momento.",
+              "english": "Thank you very much, I'll wait here a moment.",
+              "isCorrect": true,
+              "feedback": "Polite response while waiting."
+            },
+            {
+              "text": "Grazie mille, vado a casa a dormire.",
+              "isCorrect": false,
+              "feedback": "You need to wait for your documents!"
+            },
+            {
+              "text": "Grazie mille, corro velocemente via.",
+              "isCorrect": false,
+              "feedback": "Wait for your prints!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ecco i suoi documenti. Può controllare se va bene?",
+          "english": "Here are your documents. Can you check if it's okay?",
+          "choices": [
+            {
+              "text": "Sì, i documenti sono stampati molto bene.",
+              "english": "Yes, the documents are printed very well.",
+              "isCorrect": true,
+              "feedback": "Confirming the quality of the print."
+            },
+            {
+              "text": "Sì, i documenti sono cucinati molto bene.",
+              "isCorrect": false,
+              "feedback": "Documents are printed, not cooked."
+            },
+            {
+              "text": "Sì, i documenti sono arrivati in ritardo.",
+              "isCorrect": false,
+              "feedback": "They are right here in front of you."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Mi fa piacere. Il prezzo totale è di un euro.",
+          "english": "I'm glad. The total price is one euro.",
+          "choices": [
+            {
+              "text": "Va bene, ecco un euro per il servizio.",
+              "english": "Alright, here is one euro for the service.",
+              "isCorrect": true,
+              "feedback": "Paying the requested amount."
+            },
+            {
+              "text": "Va bene, ecco un cane per il servizio.",
+              "isCorrect": false,
+              "feedback": "You must pay with money, not a dog!"
+            },
+            {
+              "text": "Va bene, ecco un fiore per il servizio.",
+              "isCorrect": false,
+              "feedback": "Money is required, not flowers."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie e arrivederci! Buona giornata a lei.",
+          "english": "Thank you and goodbye! Have a good day.",
+          "choices": [
+            {
+              "text": "Grazie, arrivederci e buona giornata!",
+              "english": "Thanks, goodbye and have a good day!",
+              "isCorrect": true,
+              "feedback": "Standard polite closing."
+            },
+            {
+              "text": "Grazie, arrivederci e buona notte!",
+              "isCorrect": false,
+              "feedback": "It's daytime, so say 'buona giornata'."
+            },
+            {
+              "text": "Grazie, arrivederci e buon appetito!",
+              "isCorrect": false,
+              "feedback": "You're not at a restaurant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "color_and_format",
+      "title": "Stampa a Colori",
+      "description": "Print a document in color and A3 format.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Desidera stampare qualcosa di particolare?",
+          "english": "Hello! Would you like to print something in particular?",
+          "choices": [
+            {
+              "text": "Salve, vorrei stampare un poster a colori.",
+              "english": "Hello, I would like to print a color poster.",
+              "isCorrect": true,
+              "feedback": "Clear goal: a color poster."
+            },
+            {
+              "text": "Salve, vorrei stampare un caffè al latte.",
+              "isCorrect": false,
+              "feedback": "You can't print coffee!"
+            },
+            {
+              "text": "Salve, vorrei stampare una nuvola bianca.",
+              "isCorrect": false,
+              "feedback": "That's not a document or a file."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Preferisce un formato grande come l'A3?",
+          "english": "Certainly. Do you prefer a large format like A3?",
+          "choices": [
+            {
+              "text": "Sì, per il poster il formato A3 è perfetto.",
+              "english": "Yes, for the poster the A3 format is perfect.",
+              "isCorrect": true,
+              "feedback": "A3 is a common size for posters."
+            },
+            {
+              "text": "Sì, per il poster il formato A3 è amaro.",
+              "isCorrect": false,
+              "feedback": "'Amaro' (bitter) applies to food, not paper."
+            },
+            {
+              "text": "Sì, per il poster il formato A3 è veloce.",
+              "isCorrect": false,
+              "feedback": "A format isn't 'fast'."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottima scelta. La carta deve essere pesante?",
+          "english": "Great choice. Should the paper be heavy?",
+          "choices": [
+            {
+              "text": "Sì, preferisco una carta un po' più pesante.",
+              "english": "Yes, I prefer a slightly heavier paper.",
+              "isCorrect": true,
+              "feedback": "Good for posters to have thicker paper."
+            },
+            {
+              "text": "Sì, preferisco una carta un po' più simpatica.",
+              "isCorrect": false,
+              "feedback": "Paper isn't 'sympathetic' or 'nice' in personality."
+            },
+            {
+              "text": "Sì, preferisco una carta un po' più rumorosa.",
+              "isCorrect": false,
+              "feedback": "Noise is not a quality we want for paper."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capisco. La stampa deve essere solo a colori?",
+          "english": "I see. Should the printing be in color only?",
+          "choices": [
+            {
+              "text": "Sì, ho bisogno di colori molto vivaci.",
+              "english": "Yes, I need very vivid colors.",
+              "isCorrect": true,
+              "feedback": "Confirming the color requirement."
+            },
+            {
+              "text": "Sì, ho bisogno di colori molto timidi.",
+              "isCorrect": false,
+              "feedback": "Colors aren't 'shy' (timidi)."
+            },
+            {
+              "text": "Sì, ho bisogno di colori molto stanchi.",
+              "isCorrect": false,
+              "feedback": "Colors aren't 'tired' (stanchi)."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Certamente. Quante copie del poster vuole fare?",
+          "english": "Certainly. How many copies of the poster do you want?",
+          "choices": [
+            {
+              "text": "Vorrei fare solo due copie del mio poster.",
+              "english": "I would like to make only two copies of my poster.",
+              "isCorrect": true,
+              "feedback": "Stating the number of copies clearly."
+            },
+            {
+              "text": "Vorrei fare solo due salti del mio poster.",
+              "isCorrect": false,
+              "feedback": "You want copies (copie), not jumps (salti)."
+            },
+            {
+              "text": "Vorrei fare solo due sogni del mio poster.",
+              "isCorrect": false,
+              "feedback": "Dreams (sogni) are not copies."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Va bene. Ha il documento su questo disco?",
+          "english": "Alright. Do you have the document on this disk?",
+          "choices": [
+            {
+              "text": "Sì, il documento è salvato in questa cartella.",
+              "english": "Yes, the document is saved in this folder.",
+              "isCorrect": true,
+              "feedback": "Correct use of 'cartella' (folder)."
+            },
+            {
+              "text": "Sì, il documento è salvato in questa scarpa.",
+              "isCorrect": false,
+              "feedback": "Documents aren't saved in shoes (scarpe)!"
+            },
+            {
+              "text": "Sì, il documento è salvato in questa tazza.",
+              "isCorrect": false,
+              "feedback": "Documents aren't saved in cups (tazze)!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Lo vedo. Devo stampare anche il retro?",
+          "english": "I see it. Should I print on the back as well?",
+          "choices": [
+            {
+              "text": "No, per il poster il retro resta bianco.",
+              "english": "No, for the poster the back stays white.",
+              "isCorrect": true,
+              "feedback": "Standard for posters to be single-sided."
+            },
+            {
+              "text": "No, per il poster il retro resta salato.",
+              "isCorrect": false,
+              "feedback": "'Salato' (salty) is for food!"
+            },
+            {
+              "text": "No, per il poster il retro resta pigro.",
+              "isCorrect": false,
+              "feedback": "'Pigro' (lazy) is for people!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Capito. Inizio subito con la stampa a colori.",
+          "english": "Understood. I'll start with the color printing right away.",
+          "choices": [
+            {
+              "text": "Grazie, quanto tempo ci vuole per finire?",
+              "english": "Thanks, how long does it take to finish?",
+              "isCorrect": true,
+              "feedback": "Asking for the estimated time."
+            },
+            {
+              "text": "Grazie, quanta acqua ci vuole per finire?",
+              "isCorrect": false,
+              "feedback": "Printers don't use water to finish!"
+            },
+            {
+              "text": "Grazie, quanta strada ci vuole per finire?",
+              "isCorrect": false,
+              "feedback": "We are not traveling!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Solo pochi minuti. Ecco qui i suoi poster.",
+          "english": "Just a few minutes. Here are your posters.",
+          "choices": [
+            {
+              "text": "Sono bellissimi, grazie mille per l'aiuto.",
+              "english": "They are very beautiful, thanks a lot for the help.",
+              "isCorrect": true,
+              "feedback": "Expressing satisfaction with the result."
+            },
+            {
+              "text": "Sono cattivissimi, grazie mille per l'aiuto.",
+              "isCorrect": false,
+              "feedback": "'Cattivissimi' (very mean) makes no sense for posters."
+            },
+            {
+              "text": "Sono piccolissimi, grazie mille per l'aiuto.",
+              "isCorrect": false,
+              "feedback": "You asked for A3, which is large!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Prego! Il totale è di cinque euro, grazie.",
+          "english": "You're welcome! The total is five euros, thank you.",
+          "choices": [
+            {
+              "text": "Ecco a lei i cinque euro. Arrivederci!",
+              "english": "Here are the five euros. Goodbye!",
+              "isCorrect": true,
+              "feedback": "Finalizing the transaction."
+            },
+            {
+              "text": "Ecco a lei i cinque gatti. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "Five cats are not five euros!"
+            },
+            {
+              "text": "Ecco a lei i cinque libri. Arrivederci!",
+              "isCorrect": false,
+              "feedback": "You need to pay with money."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double_sided_copies",
+      "title": "Fronte Retro e Copie",
+      "description": "Print multiple double-sided copies of a document.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Di quante copie ha bisogno oggi?",
+          "english": "Good morning. How many copies do you need today?",
+          "choices": [
+            {
+              "text": "Buongiorno, mi servono dieci copie di questo file.",
+              "english": "Good morning, I need ten copies of this file.",
+              "isCorrect": true,
+              "feedback": "Clearly stating the number of copies."
+            },
+            {
+              "text": "Buongiorno, mi servono dieci penne di questo file.",
+              "isCorrect": false,
+              "feedback": "You need copies (copie), not pens (penne)."
+            },
+            {
+              "text": "Buongiorno, mi servono dieci sedie di questo file.",
+              "isCorrect": false,
+              "feedback": "You need copies, not chairs (sedie)."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Dieci copie, ricevuto. Le vuole fronte retro?",
+          "english": "Ten copies, received. Do you want them double-sided?",
+          "choices": [
+            {
+              "text": "Sì, per favore, le vorrei tutte fronte retro.",
+              "english": "Yes, please, I would like them all double-sided.",
+              "isCorrect": true,
+              "feedback": "Requesting double-sided printing."
+            },
+            {
+              "text": "Sì, per favore, le vorrei tutte sopra sotto.",
+              "isCorrect": false,
+              "feedback": "'Sopra sotto' is not a printing term."
+            },
+            {
+              "text": "Sì, per favore, le vorrei tutte destra sinistra.",
+              "isCorrect": false,
+              "feedback": "Use 'fronte retro' for double-sided."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ottimo, così risparmiamo carta. Bianco e nero?",
+          "english": "Great, that way we save paper. Black and white?",
+          "choices": [
+            {
+              "text": "Sì, la stampa in bianco e nero va benissimo.",
+              "english": "Yes, black and white printing is fine.",
+              "isCorrect": true,
+              "feedback": "Confirming black and white for cost/utility."
+            },
+            {
+              "text": "Sì, la stampa in rosso e blu va benissimo.",
+              "isCorrect": false,
+              "feedback": "The host asked for black and white."
+            },
+            {
+              "text": "Sì, la stampa in oro e argento va benissimo.",
+              "isCorrect": false,
+              "feedback": "Unrealistic colors for basic printing."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Va bene. Devo anche pinzare i fogli insieme?",
+          "english": "Alright. Should I also staple the sheets together?",
+          "choices": [
+            {
+              "text": "Sì, potrebbe pinzare ogni copia, per favore?",
+              "english": "Yes, could you staple each copy, please?",
+              "isCorrect": true,
+              "feedback": "Requesting stapling for organization."
+            },
+            {
+              "text": "Sì, potrebbe mangiare ogni copia, per favore?",
+              "isCorrect": false,
+              "feedback": "Do not eat the documents!"
+            },
+            {
+              "text": "Sì, potrebbe ballare ogni copia, per favore?",
+              "isCorrect": false,
+              "feedback": "Nonsensical action for documents."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Certamente. Preferisce la carta riciclata?",
+          "english": "Certainly. Do you prefer recycled paper?",
+          "choices": [
+            {
+              "text": "Sì, la carta riciclata è una buona idea.",
+              "english": "Yes, recycled paper is a good idea.",
+              "isCorrect": true,
+              "feedback": "Eco-friendly choice."
+            },
+            {
+              "text": "Sì, la carta arrabbiata è una buona idea.",
+              "isCorrect": false,
+              "feedback": "Paper cannot be angry (arrabbiata)."
+            },
+            {
+              "text": "Sì, la carta coraggiosa è una buona idea.",
+              "isCorrect": false,
+              "feedback": "Paper cannot be brave (coraggiosa)."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo. Il documento ha molte immagini?",
+          "english": "Agreed. Does the document have many images?",
+          "choices": [
+            {
+              "text": "No, ci sono solo molte scritte e tabelle.",
+              "english": "No, there are just many writings and tables.",
+              "isCorrect": true,
+              "feedback": "Describing the content of the document."
+            },
+            {
+              "text": "No, ci sono solo molte pizze e paste.",
+              "isCorrect": false,
+              "feedback": "Is your document a menu? Still unlikely."
+            },
+            {
+              "text": "No, ci sono solo molte spiagge e mari.",
+              "isCorrect": false,
+              "feedback": "Those would be images!"
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Allora la stampa sarà molto veloce.",
+          "english": "Perfect. Then the printing will be very fast.",
+          "choices": [
+            {
+              "text": "Ottimo, mi siedo un attimo ad aspettare.",
+              "english": "Great, I'll sit down for a moment to wait.",
+              "isCorrect": true,
+              "feedback": "Deciding to wait in the shop."
+            },
+            {
+              "text": "Ottimo, mi sdraio un attimo ad aspettare.",
+              "isCorrect": false,
+              "feedback": "Do not lie down in the print shop!"
+            },
+            {
+              "text": "Ottimo, mi lavo un attimo ad aspettare.",
+              "isCorrect": false,
+              "feedback": "This is not a bathroom!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ecco qui le sue dieci copie pinzate.",
+          "english": "Here are your ten stapled copies.",
+          "choices": [
+            {
+              "text": "Grazie, sono proprio come le volevo.",
+              "english": "Thanks, they are just as I wanted them.",
+              "isCorrect": true,
+              "feedback": "Confirming the result matches expectations."
+            },
+            {
+              "text": "Grazie, sono proprio come le sognavo.",
+              "isCorrect": false,
+              "feedback": "A bit too dramatic for photocopies."
+            },
+            {
+              "text": "Grazie, sono proprio come le odiavo.",
+              "isCorrect": false,
+              "feedback": "If you hate them, why pay?"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Mi fa piacere. Il totale è di tre euro.",
+          "english": "I'm glad. The total is three euros.",
+          "choices": [
+            {
+              "text": "Ecco tre euro. Posso avere la ricevuta?",
+              "english": "Here are three euros. Can I have the receipt?",
+              "isCorrect": true,
+              "feedback": "Paying and asking for a receipt."
+            },
+            {
+              "text": "Ecco tre euro. Posso avere la chitarra?",
+              "isCorrect": false,
+              "feedback": "The shop doesn't give out guitars!"
+            },
+            {
+              "text": "Ecco tre euro. Posso avere la bicicletta?",
+              "isCorrect": false,
+              "feedback": "This is not a bike shop!"
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Certamente, ecco la ricevuta. Buona giornata!",
+          "english": "Certainly, here is the receipt. Have a good day!",
+          "choices": [
+            {
+              "text": "Grazie mille, buona giornata anche a lei!",
+              "english": "Thank you very much, good day to you too!",
+              "isCorrect": true,
+              "feedback": "Polite exit."
+            },
+            {
+              "text": "Grazie mille, buona fortuna per la gara!",
+              "isCorrect": false,
+              "feedback": "What race? Irrelevant."
+            },
+            {
+              "text": "Grazie mille, buon viaggio per domani!",
+              "isCorrect": false,
+              "feedback": "You don't know if they're traveling."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usb_and_price",
+      "title": "USB e Prezzo",
+      "description": "Print from a USB drive and discuss the price.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Salve! Avete bisogno di usare la stampante?",
+          "english": "Hello! Do you need to use the printer?",
+          "choices": [
+            {
+              "text": "Sì, vorrei stampare dei file da questa USB.",
+              "english": "Yes, I would like to print some files from this USB.",
+              "isCorrect": true,
+              "feedback": "Specifying the source of the files."
+            },
+            {
+              "text": "Sì, vorrei stampare dei file da questa mela.",
+              "isCorrect": false,
+              "feedback": "You can't print from an apple!"
+            },
+            {
+              "text": "Sì, vorrei stampare dei file da questa sedia.",
+              "isCorrect": false,
+              "feedback": "Chairs don't store digital files."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Va bene. Qual è il nome del file da stampare?",
+          "english": "Alright. What is the name of the file to print?",
+          "choices": [
+            {
+              "text": "Il file si chiama 'Contratto' ed è un PDF.",
+              "english": "The file is called 'Contract' and it is a PDF.",
+              "isCorrect": true,
+              "feedback": "Providing the file name and type."
+            },
+            {
+              "text": "Il file si chiama 'Pranzo' ed è un panino.",
+              "isCorrect": false,
+              "feedback": "A sandwich is not a file type!"
+            },
+            {
+              "text": "Il file si chiama 'Musica' ed è un tamburo.",
+              "isCorrect": false,
+              "feedback": "A drum is not a file type!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Trovato. Lo vuole stampare a colori o in nero?",
+          "english": "Found it. Do you want to print it in color or black?",
+          "choices": [
+            {
+              "text": "Lo vorrei stampare in nero, grazie mille.",
+              "english": "I would like to print it in black, thank you very much.",
+              "isCorrect": true,
+              "feedback": "Choosing black ink."
+            },
+            {
+              "text": "Lo vorrei stampare in aria, grazie mille.",
+              "isCorrect": false,
+              "feedback": "You print on paper, not in the air."
+            },
+            {
+              "text": "Lo vorrei stampare in fretta, grazie mille.",
+              "isCorrect": false,
+              "feedback": "Speed is not a color choice."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Perfetto. Quante copie del contratto le servono?",
+          "english": "Perfect. How many copies of the contract do you need?",
+          "choices": [
+            {
+              "text": "Me ne servono tre copie, tutte fronte retro.",
+              "english": "I need three copies, all double-sided.",
+              "isCorrect": true,
+              "feedback": "Combining quantity and format instructions."
+            },
+            {
+              "text": "Me ne servono tre tonnellate, tutte pesanti.",
+              "isCorrect": false,
+              "feedback": "Three tons is way too much paper!"
+            },
+            {
+              "text": "Me ne servono tre gocce, tutte bagnate.",
+              "isCorrect": false,
+              "feedback": "Drops (gocce) are for liquids."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ricevuto. Qual è il prezzo massimo che vuole pagare?",
+          "english": "Received. What is the maximum price you want to pay?",
+          "choices": [
+            {
+              "text": "Spero che il prezzo non sia troppo alto.",
+              "english": "I hope the price is not too high.",
+              "isCorrect": true,
+              "feedback": "Expressing concern about the cost."
+            },
+            {
+              "text": "Spero che il prezzo non sia troppo biondo.",
+              "isCorrect": false,
+              "feedback": "Prices aren't 'blonde' (biondo)!"
+            },
+            {
+              "text": "Spero che il prezzo non sia troppo simpatico.",
+              "isCorrect": false,
+              "feedback": "Prices don't have personalities."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Non si preoccupi, costa solo venti centesimi a pagina.",
+          "english": "Don't worry, it only costs twenty cents per page.",
+          "choices": [
+            {
+              "text": "Venti centesimi a pagina è un buon prezzo.",
+              "english": "Twenty cents per page is a good price.",
+              "isCorrect": true,
+              "feedback": "Agreeing that the price is reasonable."
+            },
+            {
+              "text": "Venti centesimi a pagina è un buon sapore.",
+              "isCorrect": false,
+              "feedback": "Price doesn't have a taste (sapore)."
+            },
+            {
+              "text": "Venti centesimi a pagina è un buon rumore.",
+              "isCorrect": false,
+              "feedback": "Price doesn't make a noise."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Benissimo, allora procedo con la stampa ora.",
+          "english": "Great, then I'll proceed with the printing now.",
+          "choices": [
+            {
+              "text": "Va bene, attendo che la stampante finisca.",
+              "english": "Alright, I'll wait for the printer to finish.",
+              "isCorrect": true,
+              "feedback": "Waiting for the process to complete."
+            },
+            {
+              "text": "Va bene, attendo che la montagna finisca.",
+              "isCorrect": false,
+              "feedback": "We are not waiting for a mountain!"
+            },
+            {
+              "text": "Va bene, attendo che la pioggia finisca.",
+              "isCorrect": false,
+              "feedback": "Unless it's raining inside, irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ecco a lei. Sono in totale sessanta centesimi.",
+          "english": "Here you go. It's sixty cents in total.",
+          "choices": [
+            {
+              "text": "Ecco sessanta centesimi. Accetta la carta?",
+              "english": "Here is sixty cents. Do you accept the card?",
+              "isCorrect": true,
+              "feedback": "Paying and asking about card payment."
+            },
+            {
+              "text": "Ecco sessanta centesimi. Accetta la pizza?",
+              "isCorrect": false,
+              "feedback": "You can't pay with pizza!"
+            },
+            {
+              "text": "Ecco sessanta centesimi. Accetta la nonna?",
+              "isCorrect": false,
+              "feedback": "Do not try to pay with your grandmother!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, certo. Può usare il bancomat qui vicino.",
+          "english": "Yes, sure. You can use the card reader here.",
+          "choices": [
+            {
+              "text": "Perfetto, pago subito con il mio bancomat.",
+              "english": "Perfect, I'll pay right away with my ATM card.",
+              "isCorrect": true,
+              "feedback": "Using the card reader to pay."
+            },
+            {
+              "text": "Perfetto, pago subito con il mio ombrello.",
+              "isCorrect": false,
+              "feedback": "Umbrellas are not for payment."
+            },
+            {
+              "text": "Perfetto, pago subito con il mio cappello.",
+              "isCorrect": false,
+              "feedback": "Hats are not for payment."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Pagamento riuscito. Grazie e buona giornata!",
+          "english": "Payment successful. Thank you and have a good day!",
+          "choices": [
+            {
+              "text": "Grazie mille a lei, buona giornata e ciao!",
+              "english": "Thank you very much, good day and bye!",
+              "isCorrect": true,
+              "feedback": "Friendly and polite goodbye."
+            },
+            {
+              "text": "Grazie mille a lei, buona cena e ciao!",
+              "isCorrect": false,
+              "feedback": "It's not dinner time yet."
+            },
+            {
+              "text": "Grazie mille a lei, buona notte e ciao!",
+              "isCorrect": false,
+              "feedback": "It's still daytime."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

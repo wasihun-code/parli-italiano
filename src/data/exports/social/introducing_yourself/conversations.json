@@ -1,0 +1,1073 @@
+{
+  "scenarioId": 71,
+  "conversations": [
+    {
+      "id": "meeting_new_friend",
+      "title": "Meeting a New Friend",
+      "description": "A casual introduction between two people who just met.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Io mi chiamo Marco. E tu come ti chiami?",
+          "english": "Hi! My name is Marco. And what is your name?",
+          "choices": [
+            {
+              "text": "Ciao Marco, io mi chiamo Luca. Piacere!",
+              "english": "Hi Marco, my name is Luca. Nice to meet you!",
+              "isCorrect": true,
+              "feedback": "Perfect response to introduce yourself."
+            },
+            {
+              "text": "Buongiorno, vorrei un caffè per favore.",
+              "english": "Good morning, I would like a coffee please.",
+              "isCorrect": false,
+              "feedback": "You are meeting someone, not ordering coffee."
+            },
+            {
+              "text": "Mi scusi, dove sono le chiavi di casa?",
+              "english": "Excuse me, where are the house keys?",
+              "isCorrect": false,
+              "feedback": "This is a social introduction, not looking for keys."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Piacere mio, Luca! Come va oggi?",
+          "english": "My pleasure, Luca! How is it going today?",
+          "choices": [
+            {
+              "text": "Tutto bene, grazie! E tu come stai?",
+              "english": "Everything is fine, thanks! And how are you?",
+              "isCorrect": true,
+              "feedback": "Polite and natural way to continue."
+            },
+            {
+              "text": "Sì, la mela è rossa e molto dolce.",
+              "english": "Yes, the apple is red and very sweet.",
+              "isCorrect": false,
+              "feedback": "He asked how you are, not about fruit."
+            },
+            {
+              "text": "No, non ho la patente di guida.",
+              "english": "No, I don't have a driver's license.",
+              "isCorrect": false,
+              "feedback": "Irrelevant response."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Bene, grazie. Di dove sei, Luca?",
+          "english": "Well, thanks. Where are you from, Luca?",
+          "choices": [
+            {
+              "text": "Sono americano, vengo da New York. E tu?",
+              "english": "I'm American, I'm from New York. And you?",
+              "isCorrect": true,
+              "feedback": "Great! You shared your nationality and asked him back."
+            },
+            {
+              "text": "Sono una borsa nera e molto grande.",
+              "english": "I am a black and very large bag.",
+              "isCorrect": false,
+              "feedback": "You are a person, not a bag!"
+            },
+            {
+              "text": "Ho venti anni e studio medicina a Roma.",
+              "english": "I'm twenty years old and I study medicine in Rome.",
+              "isCorrect": false,
+              "feedback": "The question was about where you are from."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Io sono italiano, di Roma. Ti piace New York?",
+          "english": "I am Italian, from Rome. Do you like New York?",
+          "choices": [
+            {
+              "text": "Sì, è una città molto dinamica.",
+              "english": "Yes, it's a very dynamic city.",
+              "isCorrect": true,
+              "feedback": "Good description of your city."
+            },
+            {
+              "text": "No, il gatto dorme sotto il tavolo.",
+              "english": "No, the cat is sleeping under the table.",
+              "isCorrect": false,
+              "feedback": "Nonsense response."
+            },
+            {
+              "text": "Sì, mangio sempre la pasta al dente.",
+              "english": "Yes, I always eat pasta al dente.",
+              "isCorrect": false,
+              "feedback": "He asked about the city, not food."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Immagino! Che lavoro fai?",
+          "english": "I imagine! What work do you do?",
+          "choices": [
+            {
+              "text": "Faccio il programmatore. Mi piace molto.",
+              "english": "I'm a programmer. I like it a lot.",
+              "isCorrect": true,
+              "feedback": "Correct way to state your profession."
+            },
+            {
+              "text": "Faccio la spesa ogni sabato mattina.",
+              "english": "I do the shopping every Saturday morning.",
+              "isCorrect": false,
+              "feedback": "That's a chore, not a profession."
+            },
+            {
+              "text": "Vengo in ufficio con la mia macchina.",
+              "english": "I come to the office with my car.",
+              "isCorrect": false,
+              "feedback": "This describes your commute, not your job."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Interessante! Lavori in ufficio o a casa?",
+          "english": "Interesting! Do you work in an office or at home?",
+          "choices": [
+            {
+              "text": "Lavoro da casa per una grande azienda.",
+              "english": "I work from home for a big company.",
+              "isCorrect": true,
+              "feedback": "Clear answer about your work environment."
+            },
+            {
+              "text": "Lavoro con il martello e i chiodi.",
+              "english": "I work with a hammer and nails.",
+              "isCorrect": false,
+              "feedback": "You said you were a programmer!"
+            },
+            {
+              "text": "No, non ho mai visto quel film.",
+              "english": "No, I've never seen that movie.",
+              "isCorrect": false,
+              "feedback": "Irrelevant response."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Capisco. E vivi qui a Roma adesso?",
+          "english": "I see. And do you live here in Rome now?",
+          "choices": [
+            {
+              "text": "Sì, abito qui da due mesi. Mi piace molto.",
+              "english": "Yes, I've lived here for two months. I like it a lot.",
+              "isCorrect": true,
+              "feedback": "Perfect answer about your residence."
+            },
+            {
+              "text": "No, non mangio mai la carne rossa qui.",
+              "english": "No, I never eat red meat here.",
+              "isCorrect": false,
+              "feedback": "The question was about where you live, not your diet."
+            },
+            {
+              "text": "Sì, la stazione è molto vicina a casa.",
+              "english": "Yes, the station is very close to home.",
+              "isCorrect": false,
+              "feedback": "This is extra info that doesn't answer the question directly."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Bene! Cosa fai nel tempo libero?",
+          "english": "Good! What do you do in your free time?",
+          "choices": [
+            {
+              "text": "Mi piace molto viaggiare e leggere libri.",
+              "english": "I really like traveling and reading books.",
+              "isCorrect": true,
+              "feedback": "Excellent response about your hobbies."
+            },
+            {
+              "text": "Mi piace molto dormire sul divano nuovo.",
+              "english": "I really like sleeping on the new sofa.",
+              "isCorrect": false,
+              "feedback": "While true, it's not a very engaging hobby for a conversation."
+            },
+            {
+              "text": "Mi piace molto pulire la mia camera.",
+              "english": "I really like cleaning my room.",
+              "isCorrect": false,
+              "feedback": "Cleaning is usually a chore, not a hobby."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo. Che tipo di libri leggi di solito?",
+          "english": "Great. What kind of books do you usually read?",
+          "choices": [
+            {
+              "text": "Leggo soprattutto romanzi storici.",
+              "english": "I mostly read historical novels.",
+              "isCorrect": true,
+              "feedback": "Specifically answers the type of books."
+            },
+            {
+              "text": "Leggo il menu del ristorante ogni giorno.",
+              "english": "I read the restaurant menu every day.",
+              "isCorrect": false,
+              "feedback": "That's not exactly reading for a hobby."
+            },
+            {
+              "text": "No, non so scrivere con la penna blu.",
+              "english": "No, I don't know how to write with a blue pen.",
+              "isCorrect": false,
+              "feedback": "He asked what you read, not how you write."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Anche a me piacciono! Spero di rivederti presto.",
+          "english": "I like them too! I hope to see you again soon.",
+          "choices": [
+            {
+              "text": "Certo, a presto Marco! Buona giornata.",
+              "english": "Sure, see you soon Marco! Have a nice day.",
+              "isCorrect": true,
+              "feedback": "A polite way to end the conversation."
+            },
+            {
+              "text": "Arrivederci, vorrei il conto per favore.",
+              "english": "Goodbye, I would like the bill please.",
+              "isCorrect": false,
+              "feedback": "You're not at a restaurant."
+            },
+            {
+              "text": "Grazie, il treno parte alle tre precise.",
+              "english": "Thanks, the train leaves at exactly three.",
+              "isCorrect": false,
+              "feedback": "There is no train in this context."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "at_social_event",
+      "title": "At a Social Event",
+      "description": "Introducing yourself to someone at a party or social gathering.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao, sono Giulia. È la tua prima volta qui?",
+          "english": "Hi, I'm Giulia. Is it your first time here?",
+          "choices": [
+            {
+              "text": "Sì, è la prima volta. Io sono David.",
+              "english": "Yes, it's the first time. I am David.",
+              "isCorrect": true,
+              "feedback": "Clear and polite introduction."
+            },
+            {
+              "text": "No, non ho mai mangiato questa pizza.",
+              "english": "No, I've never eaten this pizza.",
+              "isCorrect": false,
+              "feedback": "She asked if it's your first time here, not about the food."
+            },
+            {
+              "text": "Sì, il bagno è in fondo al corridoio.",
+              "english": "Yes, the bathroom is at the end of the hallway.",
+              "isCorrect": false,
+              "feedback": "You are giving directions instead of introducing yourself."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Piacere David! Ti piace questa festa?",
+          "english": "Nice to meet you David! Do you like this party?",
+          "choices": [
+            {
+              "text": "Sì, c'è molta gente simpatica.",
+              "english": "Yes, there are many nice people.",
+              "isCorrect": true,
+              "feedback": "Positive comment about the event."
+            },
+            {
+              "text": "No, le mie scarpe sono troppo strette.",
+              "english": "No, my shoes are too tight.",
+              "isCorrect": false,
+              "feedback": "Irrelevant complaint."
+            },
+            {
+              "text": "Sì, il cielo è pieno di nuvole grigie.",
+              "english": "Yes, the sky is full of gray clouds.",
+              "isCorrect": false,
+              "feedback": "You are likely indoors at a party."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Vero! Piacere di conoscerti. Lavori qui in città?",
+          "english": "True! Nice to meet you. Do you work here in the city?",
+          "choices": [
+            {
+              "text": "Sì, faccio l'architetto in uno studio.",
+              "english": "Yes, I work as an architect in a studio.",
+              "isCorrect": true,
+              "feedback": "Perfect way to state your job and location."
+            },
+            {
+              "text": "No, preferisco andare al cinema da solo.",
+              "english": "No, I prefer going to the cinema alone.",
+              "isCorrect": false,
+              "feedback": "Irrelevant response about movies."
+            },
+            {
+              "text": "Sì, la città è molto grande e rumorosa.",
+              "english": "Yes, the city is very big and noisy.",
+              "isCorrect": false,
+              "feedback": "You're describing the city instead of answering about your work."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Bello! Ti piace il tuo lavoro?",
+          "english": "Nice! Do you like your job?",
+          "choices": [
+            {
+              "text": "Sì, molto. È un lavoro creativo.",
+              "english": "Yes, a lot. It's a creative job.",
+              "isCorrect": true,
+              "feedback": "Expresses enthusiasm for your career."
+            },
+            {
+              "text": "No, non bevo mai latte la mattina.",
+              "english": "No, I never drink milk in the morning.",
+              "isCorrect": false,
+              "feedback": "Irrelevant response."
+            },
+            {
+              "text": "Sì, la sedia è molto comoda oggi.",
+              "english": "Yes, the chair is very comfortable today.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Capisco. E quali sono i tuoi hobby preferiti?",
+          "english": "I see. And what are your favorite hobbies?",
+          "choices": [
+            {
+              "text": "Mi piace suonare la chitarra e nuotare.",
+              "english": "I like playing the guitar and swimming.",
+              "isCorrect": true,
+              "feedback": "Great examples of hobbies."
+            },
+            {
+              "text": "Mi piace bere l'acqua quando ho sete.",
+              "english": "I like drinking water when I'm thirsty.",
+              "isCorrect": false,
+              "feedback": "Drinking water is a basic need, not a hobby."
+            },
+            {
+              "text": "Mi piace chiudere la porta a chiave.",
+              "english": "I like locking the door.",
+              "isCorrect": false,
+              "feedback": "That is an action, not a hobby."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Suoni la chitarra? Fantastico! Da quanto tempo?",
+          "english": "You play the guitar? Fantastic! For how long?",
+          "choices": [
+            {
+              "text": "Suono da circa cinque anni.",
+              "english": "I've been playing for about five years.",
+              "isCorrect": true,
+              "feedback": "Direct answer to the question."
+            },
+            {
+              "text": "Suono il clacson della mia macchina.",
+              "english": "I honk the horn of my car.",
+              "isCorrect": false,
+              "feedback": "That's not playing an instrument!"
+            },
+            {
+              "text": "Cinque euro per un kg di mele.",
+              "english": "Five euros for one kg of apples.",
+              "isCorrect": false,
+              "feedback": "Price is irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Complimenti! Ti piace la musica rock?",
+          "english": "Well done! Do you like rock music?",
+          "choices": [
+            {
+              "text": "Sì, molto! Ascolto molta musica rock.",
+              "english": "Yes, a lot! I listen to a lot of rock music.",
+              "isCorrect": true,
+              "feedback": "Good follow-up on the music topic."
+            },
+            {
+              "text": "No, non ho mai comprato una chitarra.",
+              "english": "No, I've never bought a guitar.",
+              "isCorrect": false,
+              "feedback": "But you just said you play it!"
+            },
+            {
+              "text": "Sì, il rock è un tipo di sasso duro.",
+              "english": "Yes, rock is a type of hard stone.",
+              "isCorrect": false,
+              "feedback": "In this context, rock refers to the music genre."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Bello! Anch'io ascolto molta musica. Hai una band?",
+          "english": "Nice! I listen to a lot of music too. Do you have a band?",
+          "choices": [
+            {
+              "text": "No, suono solo per divertimento.",
+              "english": "No, I only play for fun.",
+              "isCorrect": true,
+              "feedback": "Explains your level of involvement."
+            },
+            {
+              "text": "Sì, ho una benda sull'occhio destro.",
+              "english": "Yes, I have a bandage on my right eye.",
+              "isCorrect": false,
+              "feedback": "Band (musical) vs Benda (bandage)."
+            },
+            {
+              "text": "Sì, la banda è molto larga qui.",
+              "english": "Yes, the band is very wide here.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Capito. È stato un piacere parlare con te.",
+          "english": "Understood. It was a pleasure talking to you.",
+          "choices": [
+            {
+              "text": "Anche per me, Giulia! A più tardi.",
+              "english": "Me too, Giulia! See you later.",
+              "isCorrect": true,
+              "feedback": "Polite way to wrap up."
+            },
+            {
+              "text": "Anche io ho fame, dove sono i panini?",
+              "english": "I'm hungry too, where are the sandwiches?",
+              "isCorrect": false,
+              "feedback": "A bit rude when someone is being polite."
+            },
+            {
+              "text": "Anche la mia macchina è blu metallizzata.",
+              "english": "My car is also metallic blue.",
+              "isCorrect": false,
+              "feedback": "Nonsense response about your car."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "A più tardi David, divertiti!",
+          "english": "See you later David, have fun!",
+          "choices": [
+            {
+              "text": "Grazie, anche a te! Ciao.",
+              "english": "Thanks, you too! Bye.",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "Prego, quanto costa il biglietto?",
+              "english": "You're welcome, how much is the ticket?",
+              "isCorrect": false,
+              "feedback": "Out of context."
+            },
+            {
+              "text": "No, non mi piace ballare.",
+              "english": "No, I don't like dancing.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talking_nationalities",
+      "title": "Talking about Nationalities",
+      "description": "Discussing where you and others are from in a social setting.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao, io sono Sofia. Sei straniero, vero?",
+          "english": "Hi, I'm Sofia. You're a foreigner, right?",
+          "choices": [
+            {
+              "text": "Sì, sono francese. Vengo da Parigi.",
+              "english": "Yes, I'm French. I'm from Paris.",
+              "isCorrect": true,
+              "feedback": "Direct and informative response."
+            },
+            {
+              "text": "No, il passaporto è nella mia borsa.",
+              "english": "No, the passport is in my bag.",
+              "isCorrect": false,
+              "feedback": "She didn't ask for your passport."
+            },
+            {
+              "text": "Sì, la Francia è una nazione europea.",
+              "english": "Yes, France is a European nation.",
+              "isCorrect": false,
+              "feedback": "A bit too formal and doesn't introduce yourself."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ah, Parigi è bellissima! Ti manca la tua città?",
+          "english": "Ah, Paris is beautiful! Do you miss your city?",
+          "choices": [
+            {
+              "text": "Sì, un po', ma mi piace molto l'Italia.",
+              "english": "Yes, a little, but I really like Italy.",
+              "isCorrect": true,
+              "feedback": "Honest and positive response."
+            },
+            {
+              "text": "No, ho perso le chiavi della città.",
+              "english": "No, I lost the keys to the city.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            },
+            {
+              "text": "Sì, la città è fatta di case e strade.",
+              "english": "Yes, the city is made of houses and streets.",
+              "isCorrect": false,
+              "feedback": "Too literal."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Che bello! E cosa fai di bello qui in Italia?",
+          "english": "How nice! And what are you doing here in Italy?",
+          "choices": [
+            {
+              "text": "Studio l'italiano in una scuola di lingue.",
+              "english": "I study Italian in a language school.",
+              "isCorrect": true,
+              "feedback": "Explains your purpose in Italy clearly."
+            },
+            {
+              "text": "Compro solo vestiti di marca e costosi.",
+              "english": "I only buy expensive designer clothes.",
+              "isCorrect": false,
+              "feedback": "Irrelevant and sounds a bit boastful."
+            },
+            {
+              "text": "Guardo la televisione ogni sera a casa.",
+              "english": "I watch television every evening at home.",
+              "isCorrect": false,
+              "feedback": "Doesn't explain why you are in Italy."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capito. Studi l'italiano da molto tempo?",
+          "english": "I see. Have you been studying Italian for a long time?",
+          "choices": [
+            {
+              "text": "Studio da circa tre mesi.",
+              "english": "I've been studying for about three months.",
+              "isCorrect": true,
+              "feedback": "Provides a timeframe."
+            },
+            {
+              "text": "Sì, lo studio del dottore è chiuso.",
+              "english": "Yes, the doctor's office is closed.",
+              "isCorrect": false,
+              "feedback": "Studio (study) vs Studio (office)."
+            },
+            {
+              "text": "No, non ho mai mangiato lo studio.",
+              "english": "No, I've never eaten the study.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ottimo! Ti piace vivere qui in Italia?",
+          "english": "Great! Do you like living here in Italy?",
+          "choices": [
+            {
+              "text": "Sì, mi piace molto il cibo e la gente.",
+              "english": "Yes, I really like the food and the people.",
+              "isCorrect": true,
+              "feedback": "Positive and natural response."
+            },
+            {
+              "text": "No, il treno per Parigi è molto veloce.",
+              "english": "No, the train to Paris is very fast.",
+              "isCorrect": false,
+              "feedback": "Irrelevant response about trains."
+            },
+            {
+              "text": "Sì, l'Italia ha una forma di stivale.",
+              "english": "Yes, Italy is shaped like a boot.",
+              "isCorrect": false,
+              "feedback": "A geographical fact, not your opinion on living there."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "È vero, la gente è molto calorosa. Hai amici qui?",
+          "english": "It's true, the people are very warm. Do you have friends here?",
+          "choices": [
+            {
+              "text": "Sì, ho alcuni amici a scuola.",
+              "english": "Yes, I have some friends at school.",
+              "isCorrect": true,
+              "feedback": "Shares personal context."
+            },
+            {
+              "text": "No, non ho mai comprato un amico.",
+              "english": "No, I've never bought a friend.",
+              "isCorrect": false,
+              "feedback": "You don't buy friends!"
+            },
+            {
+              "text": "Sì, il mio amico è un ombrello rosso.",
+              "english": "Yes, my friend is a red umbrella.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sono felice di sentirlo! Qual è la tua città preferita?",
+          "english": "I'm happy to hear that! What is your favorite city?",
+          "choices": [
+            {
+              "text": "Mi piace molto Firenze per l'arte.",
+              "english": "I like Florence very much for its art.",
+              "isCorrect": true,
+              "feedback": "Specific and descriptive answer."
+            },
+            {
+              "text": "La mia città ha molti semafori rossi.",
+              "english": "My city has many red traffic lights.",
+              "isCorrect": false,
+              "feedback": "Irrelevant detail about traffic lights."
+            },
+            {
+              "text": "Preferisco mangiare la pasta al forno.",
+              "english": "I prefer eating baked pasta.",
+              "isCorrect": false,
+              "feedback": "The question was about a city, not food."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Firenze è stupenda! Sei già stato agli Uffizi?",
+          "english": "Florence is wonderful! Have you already been to the Uffizi?",
+          "choices": [
+            {
+              "text": "Sì, è un museo incredibile.",
+              "english": "Yes, it's an incredible museum.",
+              "isCorrect": true,
+              "feedback": "Specific feedback on a landmark."
+            },
+            {
+              "text": "No, non ho mai mangiato gli uffici.",
+              "english": "No, I've never eaten the offices.",
+              "isCorrect": false,
+              "feedback": "Uffizi vs Uffici (offices)."
+            },
+            {
+              "text": "Sì, il mio ufficio è molto piccolo.",
+              "english": "Yes, my office is very small.",
+              "isCorrect": false,
+              "feedback": "She asked about the museum."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Concordo. Buona permanenza, allora!",
+          "english": "I agree. Have a good stay, then!",
+          "choices": [
+            {
+              "text": "Grazie mille Sofia, a presto!",
+              "english": "Thanks a lot Sofia, see you soon!",
+              "isCorrect": true,
+              "feedback": "Polite closing."
+            },
+            {
+              "text": "Prego, vorrei un altro bicchiere d'acqua.",
+              "english": "You're welcome, I would like another glass of water.",
+              "isCorrect": false,
+              "feedback": "Out of context request."
+            },
+            {
+              "text": "Sì, il museo apre alle nove domani.",
+              "english": "Yes, the museum opens at nine tomorrow.",
+              "isCorrect": false,
+              "feedback": "Irrelevant information."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivederci Sofia, è stato un piacere!",
+          "english": "Goodbye Sofia, it was a pleasure!",
+          "choices": [
+            {
+              "text": "Piacere mio, a presto! Ciao.",
+              "english": "My pleasure, see you soon! Bye.",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "No, non mi piace il piacere.",
+              "english": "No, I don't like pleasure.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            },
+            {
+              "text": "Sì, la sedia è di legno scuro.",
+              "english": "Yes, the chair is made of dark wood.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sharing_hobbies",
+      "title": "Sharing Hobbies",
+      "description": "A conversation about what you like to do in your free time.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Ciao! Ti piace questo evento? Io sono Paolo.",
+          "english": "Hi! Do you like this event? I'm Paolo.",
+          "choices": [
+            {
+              "text": "Ciao Paolo! Sì, è molto divertente.",
+              "english": "Hi Paolo! Yes, it's very fun.",
+              "isCorrect": true,
+              "feedback": "Friendly and direct."
+            },
+            {
+              "text": "Buongiorno, ho bisogno di un dottore.",
+              "english": "Good morning, I need a doctor.",
+              "isCorrect": false,
+              "feedback": "Wrong domain (medical)."
+            },
+            {
+              "text": "No, non mi piacciono le scarpe strette.",
+              "english": "No, I don't like tight shoes.",
+              "isCorrect": false,
+              "feedback": "He asked about the event, not your shoes."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Bene! E tu cosa fai di solito per divertirti?",
+          "english": "Good! And what do you usually do for fun?",
+          "choices": [
+            {
+              "text": "Mi piace molto fare sport e viaggiare.",
+              "english": "I really like doing sports and traveling.",
+              "isCorrect": true,
+              "feedback": "Great way to share hobbies."
+            },
+            {
+              "text": "Di solito dormo dodici ore ogni notte.",
+              "english": "I usually sleep twelve hours every night.",
+              "isCorrect": false,
+              "feedback": "Sleeping isn't usually considered a hobby for fun."
+            },
+            {
+              "text": "Vado in bagno due volte al giorno.",
+              "english": "I go to the bathroom twice a day.",
+              "isCorrect": false,
+              "feedback": "Too much personal information!"
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Viaggiare è stupendo! Dove sei stato di recente?",
+          "english": "Traveling is wonderful! Where have you been recently?",
+          "choices": [
+            {
+              "text": "Sono stato a Venezia il mese scorso.",
+              "english": "I was in Venice last month.",
+              "isCorrect": true,
+              "feedback": "Specific answer to a travel question."
+            },
+            {
+              "text": "Sono stato un po' male ieri sera.",
+              "english": "I was a bit sick last night.",
+              "isCorrect": false,
+              "feedback": "Wrong context for 'essere stato'."
+            },
+            {
+              "text": "No, non ho mai mangiato una città.",
+              "english": "No, I've never eaten a city.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Venezia è magica! E che sport pratichi di solito?",
+          "english": "Venice is magical! And what sport do you usually practice?",
+          "choices": [
+            {
+              "text": "Io gioco a tennis e vado a nuotare.",
+              "english": "I play tennis and I go swimming.",
+              "isCorrect": true,
+              "feedback": "Specific and matches the question."
+            },
+            {
+              "text": "Io mangio una mela ogni pomeriggio.",
+              "english": "I eat an apple every afternoon.",
+              "isCorrect": false,
+              "feedback": "Eating an apple is not a sport."
+            },
+            {
+              "text": "Il calcio è uno sport molto popolare.",
+              "english": "Soccer is a very popular sport.",
+              "isCorrect": false,
+              "feedback": "You're making a general statement instead of sharing your sport."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Il nuoto è ottimo! Ti piace anche la musica?",
+          "english": "Swimming is great! Do you also like music?",
+          "choices": [
+            {
+              "text": "Sì, adoro ascoltare musica classica.",
+              "english": "Yes, I love listening to classical music.",
+              "isCorrect": true,
+              "feedback": "Shares a musical preference."
+            },
+            {
+              "text": "No, non so dove sia la radio adesso.",
+              "english": "No, I don't know where the radio is now.",
+              "isCorrect": false,
+              "feedback": "The question is about your taste, not the location of a radio."
+            },
+            {
+              "text": "Sì, la musica è fatta di note e suoni.",
+              "english": "Yes, music is made of notes and sounds.",
+              "isCorrect": false,
+              "feedback": "A bit too technical/obvious."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Interessante. Qual è il tuo compositore preferito?",
+          "english": "Interesting. Who is your favorite composer?",
+          "choices": [
+            {
+              "text": "Mi piace molto Vivaldi.",
+              "english": "I like Vivaldi very much.",
+              "isCorrect": true,
+              "feedback": "Specific answer to the question."
+            },
+            {
+              "text": "Mi piace molto il formaggio fresco.",
+              "english": "I like fresh cheese very much.",
+              "isCorrect": false,
+              "feedback": "He asked about a composer, not food."
+            },
+            {
+              "text": "Vivaldi è una marca di scarpe?",
+              "english": "Is Vivaldi a shoe brand?",
+              "isCorrect": false,
+              "feedback": "Ignorant response."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ottima scelta! Suoni anche qualche strumento?",
+          "english": "Excellent choice! Do you also play any instrument?",
+          "choices": [
+            {
+              "text": "No, purtroppo non so suonare.",
+              "english": "No, unfortunately I don't know how to play.",
+              "isCorrect": true,
+              "feedback": "Honest answer."
+            },
+            {
+              "text": "Sì, suono il campanello di casa.",
+              "english": "Yes, I ring the doorbell.",
+              "isCorrect": false,
+              "feedback": "Not a musical instrument."
+            },
+            {
+              "text": "Sì, il pianoforte è molto pesante.",
+              "english": "Yes, the piano is very heavy.",
+              "isCorrect": false,
+              "feedback": "Irrelevant observation."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Non è mai troppo tardi per imparare! Ti piace il cinema?",
+          "english": "It's never too late to learn! Do you like cinema?",
+          "choices": [
+            {
+              "text": "Sì, vado al cinema ogni weekend.",
+              "english": "Yes, I go to the cinema every weekend.",
+              "isCorrect": true,
+              "feedback": "Shares a regular hobby."
+            },
+            {
+              "text": "No, preferisco guardare il muro.",
+              "english": "No, I prefer looking at the wall.",
+              "isCorrect": false,
+              "feedback": "Nonsense."
+            },
+            {
+              "text": "Sì, lo schermo è molto grande.",
+              "english": "Yes, the screen is very big.",
+              "isCorrect": false,
+              "feedback": "Duh."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Anch'io! Allora ci vediamo in giro. Ciao!",
+          "english": "Me too! See you around, then. Bye!",
+          "choices": [
+            {
+              "text": "Certamente, a presto Paolo! Ciao.",
+              "english": "Certainly, see you soon Paolo! Bye.",
+              "isCorrect": true,
+              "feedback": "Natural and friendly goodbye."
+            },
+            {
+              "text": "Prego, il conto è di venti euro.",
+              "english": "You're welcome, the bill is twenty euros.",
+              "isCorrect": false,
+              "feedback": "Wrong domain (restaurant)."
+            },
+            {
+              "text": "No, preferisco restare qui a guardare.",
+              "english": "No, I prefer staying here to watch.",
+              "isCorrect": false,
+              "feedback": "He was saying goodbye, not asking you to leave."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Ciao Paolo, a presto!",
+          "english": "Bye Paolo, see you soon!",
+          "choices": [
+            {
+              "text": "Arrivederci e buona serata!",
+              "english": "Goodbye and have a good evening!",
+              "isCorrect": true,
+              "feedback": "Perfect closing."
+            },
+            {
+              "text": "Sì, il sole tramonta a ovest.",
+              "english": "Yes, the sun sets in the west.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            },
+            {
+              "text": "Grazie, vorrei comprare un giornale.",
+              "english": "Thanks, I would like to buy a newspaper.",
+              "isCorrect": false,
+              "feedback": "Out of context."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

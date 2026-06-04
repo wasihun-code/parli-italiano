@@ -131,6 +131,34 @@ This architecture is mandatory.
 25. Video Call (tech/video_call)
 26. Online Booking (tech/online_booking)
 27. ATM Machine (tech/atm_machine)
+28. Haircut (daily_life/haircut)
+29. Making an Appointment (daily_life/making_an_appointment)
+30. At the Gym (daily_life/at_the_gym)
+31. At the Library (daily_life/at_the_library)
+32. At the Bank (daily_life/at_the_bank)
+33. At the Post Office (daily_life/at_the_post_office)
+34. Laundry Machine (daily_life/laundry_machine)
+35. Weather Small Talk (daily_life/weather_small_talk)
+36. Talking to a Neighbor (daily_life/talking_to_a_neighbor)
+37. Household Repair (daily_life/household_repair)
+38. Buying a SIM Card (tech/buying_a_sim_card)
+39. Phone Repair (tech/phone_repair)
+40. First Day at Work (workstudy/first_day_at_work)
+41. Asking for Clarification (workstudy/asking_for_clarification)
+42. University Class (workstudy/university_class)
+43. Coworking Space (workstudy/coworking_space)
+44. Printing Documents (workstudy/printing_documents)
+45. Study Group (workstudy/study_group)
+46. Introducing Yourself (social/introducing_yourself)
+47. Making Plans (social/making_plans)
+48. Inviting a Friend (social/inviting_a_friend)
+49. At a Party (social/at_a_party)
+50. Phone Call (social/phone_call)
+51. Texting a Friend (social/texting_a_friend)
+52. Apologizing (social/apologizing)
+53. Compliments (social/compliments)
+54. Birthday Wishes (social/birthday_wishes)
+55. Saying Goodbye (social/saying_goodbye)
 
 Status:
 
@@ -140,7 +168,8 @@ Gold Standard V1 & Certified
 
 ## Remaining Scenarios
 
-90
+61
+
 
 Status:
 

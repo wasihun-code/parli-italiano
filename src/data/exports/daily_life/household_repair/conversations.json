@@ -1,0 +1,1073 @@
+{
+  "scenarioId": 60,
+  "conversations": [
+    {
+      "id": "leaking_faucet",
+      "title": "Leaking Faucet Call",
+      "description": "Call a plumber to report a leaking faucet in the kitchen.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto, Idraulica Rossi. Come posso aiutarla?",
+          "english": "Hello, Rossi Plumbing. How can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno, ho un problema con un rubinetto in cucina.",
+              "english": "Good morning, I have a problem with a faucet in the kitchen.",
+              "isCorrect": true,
+              "feedback": "Perfect! You clearly stated the problem and the location."
+            },
+            {
+              "text": "Ciao, vorrei comprare un biglietto per il cinema stasera.",
+              "english": "Hi, I would like to buy a movie ticket for tonight.",
+              "isCorrect": false,
+              "feedback": "Wrong place! This is a plumber, not a cinema."
+            },
+            {
+              "text": "Buongiorno, mi piace molto l'acqua calda della doccia.",
+              "english": "Good morning, I really like the hot water in the shower.",
+              "isCorrect": false,
+              "feedback": "You need to report the problem, not give a compliment."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Capisco. Il rubinetto perde molta acqua o solo poche gocce?",
+          "english": "I see. Is the faucet leaking a lot of water or just a few drops?",
+          "choices": [
+            {
+              "text": "Perde molto, è urgente perché c'è molta acqua a terra.",
+              "english": "It's leaking a lot, it's urgent because there's a lot of water on the floor.",
+              "isCorrect": true,
+              "feedback": "Good. Describing the urgency helps the plumber prioritize."
+            },
+            {
+              "text": "L'acqua è molto buona da bere quando ho molta sete.",
+              "english": "The water is very good to drink when I am very thirsty.",
+              "isCorrect": false,
+              "feedback": "That's not relevant to the repair request."
+            },
+            {
+              "text": "Sì, il mio cane beve poche gocce d'acqua ogni ora.",
+              "english": "Yes, my dog drinks a few drops of water every hour.",
+              "isCorrect": false,
+              "feedback": "The plumber is asking about the leak, not your dog."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "D'accordo. Deve chiudere l'acqua centrale per sicurezza. Sa come fare?",
+          "english": "All right. You should turn off the main water for safety. Do you know how to do it?",
+          "choices": [
+            {
+              "text": "Sì, so dove si trova la valvola generale. La chiudo subito.",
+              "english": "Yes, I know where the main valve is. I'll close it right away.",
+              "isCorrect": true,
+              "feedback": "Excellent. Turning off the water prevents further damage."
+            },
+            {
+              "text": "No, non mi piace l'acqua perché preferisco il vino rosso.",
+              "english": "No, I don't like water because I prefer red wine.",
+              "isCorrect": false,
+              "feedback": "Safety first! Focus on the water valve."
+            },
+            {
+              "text": "Sì, so cucinare molto bene la pasta al pomodoro.",
+              "english": "Yes, I know how to cook pasta with tomato sauce very well.",
+              "isCorrect": false,
+              "feedback": "Not the time for cooking lessons!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Bene. Qual è il suo indirizzo preciso?",
+          "english": "Good. What is your exact address?",
+          "choices": [
+            {
+              "text": "Abito in Via Roma numero dieci, al secondo piano.",
+              "english": "I live in Via Roma number ten, on the second floor.",
+              "isCorrect": true,
+              "feedback": "Great. You gave your complete address."
+            },
+            {
+              "text": "Vado in Via Roma per vedere un film molto famoso.",
+              "english": "I'm going to Via Roma to see a very famous movie.",
+              "isCorrect": false,
+              "feedback": "You need to provide your home address for the repair."
+            },
+            {
+              "text": "La strada è molto lunga e ci sono molti alberi verdi.",
+              "english": "The street is very long and there are many green trees.",
+              "isCorrect": false,
+              "feedback": "Nice description, but the plumber needs the address."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Va bene. È un rubinetto vecchio o è stato installato di recente?",
+          "english": "Okay. Is it an old faucet or was it installed recently?",
+          "choices": [
+            {
+              "text": "È un rubinetto molto vecchio, ha più di dieci anni.",
+              "english": "It is a very old faucet, it's more than ten years old.",
+              "isCorrect": true,
+              "feedback": "Good information. Old faucets often need replacement parts."
+            },
+            {
+              "text": "Mi piace molto il mio nuovo vestito azzurro per la festa.",
+              "english": "I really like my new light blue dress for the party.",
+              "isCorrect": false,
+              "feedback": "The plumber is asking about the faucet, not your clothes."
+            },
+            {
+              "text": "Sì, il tempo è molto bello oggi e c'è il sole.",
+              "english": "Yes, the weather is very nice today and it's sunny.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the plumber's question."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Capito. C'è parcheggio per il mio furgone vicino al suo palazzo?",
+          "english": "Got it. Is there parking for my van near your building?",
+          "choices": [
+            {
+              "text": "Sì, c'è un parcheggio riservato proprio davanti all'ingresso.",
+              "english": "Yes, there is a reserved parking spot right in front of the entrance.",
+              "isCorrect": true,
+              "feedback": "Helpful! Finding parking can be difficult for repairmen."
+            },
+            {
+              "text": "No, preferisco andare all'aeroporto con il taxi.",
+              "english": "No, I prefer to go to the airport by taxi.",
+              "isCorrect": false,
+              "feedback": "Stay focused on the plumber's arrival."
+            },
+            {
+              "text": "Sì, il mio furgone è molto grande e di colore rosso.",
+              "english": "Yes, my van is very large and red in color.",
+              "isCorrect": false,
+              "feedback": "The plumber is asking about parking for THEIR van."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Sarò da lei tra circa mezz'ora. Va bene?",
+          "english": "Perfect. I will be at your place in about half an hour. Is that okay?",
+          "choices": [
+            {
+              "text": "Sì, perfetto. La aspetto a casa. Grazie mille.",
+              "english": "Yes, perfect. I'll wait for you at home. Thanks a lot.",
+              "isCorrect": true,
+              "feedback": "Great. You confirmed the appointment and thanked them."
+            },
+            {
+              "text": "No, voglio andare a mangiare un gelato in centro.",
+              "english": "No, I want to go eat a gelato downtown.",
+              "isCorrect": false,
+              "feedback": "You need to be home for the plumber!"
+            },
+            {
+              "text": "Sì, mi piace aspettare il treno alla stazione centrale.",
+              "english": "Yes, I like waiting for the train at the central station.",
+              "isCorrect": false,
+              "feedback": "The plumber is coming to your house, not the station."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ottimo. Se succede qualcos'altro nel frattempo, mi chiami.",
+          "english": "Great. If anything else happens in the meantime, call me.",
+          "choices": [
+            {
+              "text": "D'accordo, la chiamo se c'è qualche novità. A dopo.",
+              "english": "All right, I'll call you if there's any news. See you later.",
+              "isCorrect": true,
+              "feedback": "Good. You acknowledged the instruction."
+            },
+            {
+              "text": "Sì, chiamo sempre mia madre la domenica mattina.",
+              "english": "Yes, I always call my mother on Sunday morning.",
+              "isCorrect": false,
+              "feedback": "The plumber is talking about calling HIM if the leak gets worse."
+            },
+            {
+              "text": "No, non mi piace usare il telefono per parlare.",
+              "english": "No, I don't like using the phone to talk.",
+              "isCorrect": false,
+              "feedback": "You might need to call if there's an emergency."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Il costo dell'uscita è di trenta euro, più il lavoro. È d'accordo?",
+          "english": "The call-out fee is thirty euros, plus labor. Do you agree?",
+          "choices": [
+            {
+              "text": "Sì, va bene. L'importante è risolvere il problema presto.",
+              "english": "Yes, that's fine. The important thing is to solve the problem soon.",
+              "isCorrect": true,
+              "feedback": "Good. You accepted the terms of the service."
+            },
+            {
+              "text": "No, preferisco comprare trenta chili di mele al mercato.",
+              "english": "No, I prefer to buy thirty kilos of apples at the market.",
+              "isCorrect": false,
+              "feedback": "You need to pay for the repair service."
+            },
+            {
+              "text": "Sì, trenta è un numero molto fortunato per me.",
+              "english": "Yes, thirty is a very lucky number for me.",
+              "isCorrect": false,
+              "feedback": "Agree to the price, not just the number."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Molto bene. A tra poco allora. Arrivederci.",
+          "english": "Very well. See you soon then. Goodbye.",
+          "choices": [
+            {
+              "text": "Arrivederci e a dopo.",
+              "english": "Goodbye and see you later.",
+              "isCorrect": true,
+              "feedback": "A polite way to end the call."
+            },
+            {
+              "text": "Buongiorno, vorrei un caffè.",
+              "english": "Good morning, I'd like a coffee.",
+              "isCorrect": false,
+              "feedback": "The conversation is over, no need to order coffee."
+            },
+            {
+              "text": "Ciao, dove sono i bagagli?",
+              "english": "Hi, where is the luggage?",
+              "isCorrect": false,
+              "feedback": "Irrelevant and out of context."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "broken_switch",
+      "title": "Broken Light Switch",
+      "description": "Report a broken light switch to the apartment manager.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, sono l'amministratore. Di cosa ha bisogno?",
+          "english": "Good morning, I am the manager. What do you need?",
+          "choices": [
+            {
+              "text": "Buongiorno, un interruttore della luce non funziona più.",
+              "english": "Good morning, a light switch is no longer working.",
+              "isCorrect": true,
+              "feedback": "Well done. You identified the broken item correctly."
+            },
+            {
+              "text": "Buongiorno, cerco un ristorante per mangiare la pasta.",
+              "english": "Good morning, I'm looking for a restaurant to eat pasta.",
+              "isCorrect": false,
+              "feedback": "The manager can't help with restaurant recommendations now."
+            },
+            {
+              "text": "Ciao, vorrei cambiare la mia macchina con una nuova.",
+              "english": "Hi, I would like to change my car for a new one.",
+              "isCorrect": false,
+              "feedback": "Not the right person for car issues!"
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "In quale stanza si trova l'interruttore rotto?",
+          "english": "In which room is the broken switch located?",
+          "choices": [
+            {
+              "text": "Si trova in bagno, vicino allo specchio grande.",
+              "english": "It is in the bathroom, near the large mirror.",
+              "isCorrect": true,
+              "feedback": "Good. Providing the exact location is helpful."
+            },
+            {
+              "text": "Si trova in centro, vicino alla piazza principale.",
+              "english": "It is in the center, near the main square.",
+              "isCorrect": false,
+              "feedback": "The manager is asking about a room in your house."
+            },
+            {
+              "text": "Mi piace molto stare in giardino quando fa caldo.",
+              "english": "I really like being in the garden when it's hot.",
+              "isCorrect": false,
+              "feedback": "Answer the question about the room first."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Succede solo con quel tasto o mancano le luci in tutta la casa?",
+          "english": "Does it happen only with that button or are the lights out in the whole house?",
+          "choices": [
+            {
+              "text": "Solo con quell'interruttore. Le altre luci funzionano bene.",
+              "english": "Only with that switch. The other lights work fine.",
+              "isCorrect": true,
+              "feedback": "Excellent. This helps identify the scope of the problem."
+            },
+            {
+              "text": "Sì, tutta la mia casa è molto grande e bella.",
+              "english": "Yes, my whole house is very large and beautiful.",
+              "isCorrect": false,
+              "feedback": "Answer if the other lights are working or not."
+            },
+            {
+              "text": "Mi piace molto mangiare la pizza in tutta la casa.",
+              "english": "I really like eating pizza in the whole house.",
+              "isCorrect": false,
+              "feedback": "Not relevant to the electrical issue."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capito. Ha provato a cambiare la lampadina per sicurezza?",
+          "english": "Got it. Have you tried changing the light bulb just in case?",
+          "choices": [
+            {
+              "text": "Sì, ho provato con una lampadina nuova ma non va.",
+              "english": "Yes, I tried with a new bulb but it doesn't work.",
+              "isCorrect": true,
+              "feedback": "Good. Troubleshooting confirms the switch is the problem."
+            },
+            {
+              "text": "No, preferisco cambiare il colore delle pareti.",
+              "english": "No, I prefer to change the color of the walls.",
+              "isCorrect": false,
+              "feedback": "Stick to the light bulb first."
+            },
+            {
+              "text": "Sì, le lampadine sono molto care al supermercato.",
+              "english": "Yes, light bulbs are very expensive at the supermarket.",
+              "isCorrect": false,
+              "feedback": "The manager is asking if you tried changing it."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Allora è proprio l'interruttore. Posso mandare un tecnico domani mattina?",
+          "english": "Then it's definitely the switch. Can I send a technician tomorrow morning?",
+          "choices": [
+            {
+              "text": "Domani mattina va bene, verso le nove sono a casa.",
+              "english": "Tomorrow morning is fine, I'm at home around nine.",
+              "isCorrect": true,
+              "feedback": "Great. You confirmed the time and your availability."
+            },
+            {
+              "text": "Domani mattina vado al mare a nuotare con amici.",
+              "english": "Tomorrow morning I'm going to the sea to swim with friends.",
+              "isCorrect": false,
+              "feedback": "If you are not home, the technician cannot enter."
+            },
+            {
+              "text": "Sì, il tecnico è molto bravo a suonare la chitarra.",
+              "english": "Yes, the technician is very good at playing the guitar.",
+              "isCorrect": false,
+              "feedback": "That's nice to know, but not relevant to the appointment."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Verso le dieci va bene per lei?",
+          "english": "Is around ten o'clock okay for you?",
+          "choices": [
+            {
+              "text": "Sì, le dieci è perfetto. La aspetto.",
+              "english": "Yes, ten is perfect. I'll wait for you.",
+              "isCorrect": true,
+              "feedback": "Good confirmation of the time."
+            },
+            {
+              "text": "No, ho dieci gatti neri in casa mia.",
+              "english": "No, I have ten black cats in my house.",
+              "isCorrect": false,
+              "feedback": "The manager is talking about the time, not cats."
+            },
+            {
+              "text": "Sì, il numero dieci è il mio preferito per il calcio.",
+              "english": "Yes, number ten is my favorite for soccer.",
+              "isCorrect": false,
+              "feedback": "Confirm the appointment time."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Perfetto. Il tecnico si chiama Marco, è molto bravo.",
+          "english": "Perfect. The technician's name is Marco, he is very good.",
+          "choices": [
+            {
+              "text": "D'accordo, aspetterò il signor Marco domani.",
+              "english": "All right, I will wait for Mr. Marco tomorrow.",
+              "isCorrect": true,
+              "feedback": "Good. You acknowledged the technician's name."
+            },
+            {
+              "text": "Marco è un nome che mi piace molto per un cane.",
+              "english": "Marco is a name that I really like for a dog.",
+              "isCorrect": false,
+              "feedback": "A bit rude! He's a professional technician."
+            },
+            {
+              "text": "Sì, conosco un Marco che vende scarpe in centro.",
+              "english": "Yes, I know a Marco who sells shoes downtown.",
+              "isCorrect": false,
+              "feedback": "Probably not the same person."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Le lascio il mio numero di cellulare per le urgenze. Lo ha già?",
+          "english": "I'll leave you my cell phone number for emergencies. Do you already have it?",
+          "choices": [
+            {
+              "text": "No, non ce l'ho. Lo scrivo subito sul mio telefono.",
+              "english": "No, I don't have it. I'll write it down on my phone right away.",
+              "isCorrect": true,
+              "feedback": "Good. Keeping the contact info is important."
+            },
+            {
+              "text": "Sì, ho molti numeri di telefono di ristoranti famosi.",
+              "english": "Yes, I have many phone numbers of famous restaurants.",
+              "isCorrect": false,
+              "feedback": "Save the manager's number specifically."
+            },
+            {
+              "text": "Grazie, preferisco scrivere una lettera alla nonna.",
+              "english": "Thanks, I prefer to write a letter to my grandmother.",
+              "isCorrect": false,
+              "feedback": "Focus on the manager's contact info."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Va bene. Mi raccomando, non tocchi i fili elettrici.",
+          "english": "Okay. Please, do not touch the electrical wires.",
+          "choices": [
+            {
+              "text": "Certo, non tocco nulla. È troppo pericoloso.",
+              "english": "Of course, I won't touch anything. It's too dangerous.",
+              "isCorrect": true,
+              "feedback": "Safety first! Good decision."
+            },
+            {
+              "text": "Sì, mi piace toccare l'erba verde nel parco.",
+              "english": "Yes, I like touching the green grass in the park.",
+              "isCorrect": false,
+              "feedback": "The manager is talking about dangerous wires!"
+            },
+            {
+              "text": "No, preferisco toccare lo schermo del mio computer.",
+              "english": "No, I prefer touching my computer screen.",
+              "isCorrect": false,
+              "feedback": "Just stay away from the broken switch."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "D'accordo. Buona giornata e a domani.",
+          "english": "All right. Have a good day and see you tomorrow.",
+          "choices": [
+            {
+              "text": "Grazie, buona giornata anche a lei. A domani.",
+              "english": "Thanks, have a good day too. See you tomorrow.",
+              "isCorrect": true,
+              "feedback": "A polite and appropriate closing."
+            },
+            {
+              "text": "Ciao, vorrei prenotare un tavolo per tre persone.",
+              "english": "Hi, I'd like to reserve a table for three people.",
+              "isCorrect": false,
+              "feedback": "Again, this is the manager, not a restaurant."
+            },
+            {
+              "text": "Sì, domani vado a comprare un nuovo vestito blu.",
+              "english": "Yes, tomorrow I'm going to buy a new blue dress.",
+              "isCorrect": false,
+              "feedback": "Stay home for the technician!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electrical_problem",
+      "title": "Electrical Problem",
+      "description": "Call an electrician because there is no power in the living room.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Pronto, Elettricista Bianchi. Mi dica pure.",
+          "english": "Hello, Bianchi Electrician. Go ahead.",
+          "choices": [
+            {
+              "text": "Buongiorno, non c'è luce nel mio soggiorno. Cosa succede?",
+              "english": "Good morning, there is no light in my living room. What's happening?",
+              "isCorrect": true,
+              "feedback": "Correct. You reported the power outage in a specific room."
+            },
+            {
+              "text": "Ciao, vorrei una lampadina molto grande per il giardino.",
+              "english": "Hi, I would like a very large light bulb for the garden.",
+              "isCorrect": false,
+              "feedback": "You need to fix the power first, not buy a bulb."
+            },
+            {
+              "text": "Buongiorno, mi piace guardare la televisione al buio.",
+              "english": "Good morning, I like watching television in the dark.",
+              "isCorrect": false,
+              "feedback": "The electrician needs to know about the fault."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ha controllato il quadro elettrico generale?",
+          "english": "Have you checked the main electrical panel?",
+          "choices": [
+            {
+              "text": "Sì, ho controllato, ma tutto sembra a posto lì.",
+              "english": "Yes, I checked, but everything seems fine there.",
+              "isCorrect": true,
+              "feedback": "Good job checking the basics before calling."
+            },
+            {
+              "text": "Sì, il quadro è molto bello, è un regalo di mio padre.",
+              "english": "Yes, the painting is very beautiful, it's a gift from my father.",
+              "isCorrect": false,
+              "feedback": "The 'quadro' here means electrical panel, not a painting!"
+            },
+            {
+              "text": "No, preferisco guardare le foto sul mio computer.",
+              "english": "No, I prefer looking at photos on my computer.",
+              "isCorrect": false,
+              "feedback": "The electrician is giving you troubleshooting steps."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "È scattato l'interruttore salvavita o è tutto su?",
+          "english": "Has the circuit breaker tripped or is everything up?",
+          "choices": [
+            {
+              "text": "L'interruttore è su, quindi il problema è altrove.",
+              "english": "The switch is up, so the problem is elsewhere.",
+              "isCorrect": true,
+              "feedback": "Good observation. This means the fuse didn't blow."
+            },
+            {
+              "text": "Sì, l'interruttore è molto piccolo e di colore nero.",
+              "english": "Yes, the switch is very small and black in color.",
+              "isCorrect": false,
+              "feedback": "The electrician needs to know if it's 'up' or 'down'."
+            },
+            {
+              "text": "Mi piace molto saltare e correre nel parco.",
+              "english": "I really like jumping and running in the park.",
+              "isCorrect": false,
+              "feedback": "Not the kind of 'tripping' he meant!"
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Capisco. Potrebbe essere un cortocircuito. È pericoloso.",
+          "english": "I see. It could be a short circuit. It's dangerous.",
+          "choices": [
+            {
+              "text": "Può venire oggi? È urgente perché ho paura.",
+              "english": "Can you come today? It's urgent because I'm afraid.",
+              "isCorrect": true,
+              "feedback": "Excellent. Expressing urgency when there's a danger."
+            },
+            {
+              "text": "Sì, mi piace il pericolo quando vado in montagna.",
+              "english": "Yes, I like danger when I go to the mountains.",
+              "isCorrect": false,
+              "feedback": "Electrical danger is not fun! Ask for help."
+            },
+            {
+              "text": "Oggi è una bella giornata per andare al parco.",
+              "english": "Today is a beautiful day to go to the park.",
+              "isCorrect": false,
+              "feedback": "Focus on the electrical problem at home."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Ha altri apparecchi elettrici collegati nel soggiorno?",
+          "english": "Do you have other electrical appliances connected in the living room?",
+          "choices": [
+            {
+              "text": "C'è solo la televisione e una lampada da terra.",
+              "english": "There's only the television and a floor lamp.",
+              "isCorrect": true,
+              "feedback": "Good. Listing the appliances helps diagnose the load."
+            },
+            {
+              "text": "Sì, ho molti libri di cucina sullo scaffale.",
+              "english": "Yes, I have many cookbooks on the shelf.",
+              "isCorrect": false,
+              "feedback": "The electrician asked about electrical appliances."
+            },
+            {
+              "text": "No, preferisco mangiare una mela in cucina.",
+              "english": "No, I prefer to eat an apple in the kitchen.",
+              "isCorrect": false,
+              "feedback": "Irrelevant to the power issue."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Forse è la stufa che crea problemi. Può staccarla?",
+          "english": "Maybe it's the heater causing problems. Can you unplug it?",
+          "choices": [
+            {
+              "text": "Sì, la stacco subito dalla presa di corrente.",
+              "english": "Yes, I'll unplug it from the power outlet right away.",
+              "isCorrect": true,
+              "feedback": "Good. Unplugging faulty appliances is a safe step."
+            },
+            {
+              "text": "No, ho molto freddo e voglio la stufa accesa.",
+              "english": "No, I'm very cold and I want the heater on.",
+              "isCorrect": false,
+              "feedback": "It might be dangerous! Better to unplug it for now."
+            },
+            {
+              "text": "Sì, la stufa è molto vecchia e di metallo grigio.",
+              "english": "Yes, the heater is very old and made of gray metal.",
+              "isCorrect": false,
+              "feedback": "Unplug it instead of describing it."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Bene. Io arrivo tra un'ora per controllare tutto.",
+          "english": "Good. I'll be there in an hour to check everything.",
+          "choices": [
+            {
+              "text": "Va bene, la aspetto tra un'ora. Grazie.",
+              "english": "Okay, I'll wait for you in an hour. Thanks.",
+              "isCorrect": true,
+              "feedback": "Clear confirmation of the appointment."
+            },
+            {
+              "text": "Un'ora è troppo tempo, preferisco andare al cinema.",
+              "english": "An hour is too long, I prefer to go to the movies.",
+              "isCorrect": false,
+              "feedback": "You need to wait for the electrician for your safety."
+            },
+            {
+              "text": "Sì, l'ora è un concetto molto difficile da capire.",
+              "english": "Yes, time is a very difficult concept to understand.",
+              "isCorrect": false,
+              "feedback": "Just wait for him!"
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Non provi a riaccendere la luce finché non arrivo.",
+          "english": "Do not try to turn the light back on until I arrive.",
+          "choices": [
+            {
+              "text": "Certo, lascio tutto spento. Grazie del consiglio.",
+              "english": "Of course, I'll leave everything off. Thanks for the advice.",
+              "isCorrect": true,
+              "feedback": "Following safety advice is the best thing to do."
+            },
+            {
+              "text": "Sì, mi piace accendere molte candele profumate.",
+              "english": "Yes, I like to light many scented candles.",
+              "isCorrect": false,
+              "feedback": "He meant the electrical switch!"
+            },
+            {
+              "text": "No, voglio vedere bene cosa c'è dentro il frigorifero.",
+              "english": "No, I want to see clearly what's inside the fridge.",
+              "isCorrect": false,
+              "feedback": "Keep the power off as instructed."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Mi conferma che l'indirizzo è Via Verdi 5?",
+          "english": "Do you confirm the address is Via Verdi 5?",
+          "choices": [
+            {
+              "text": "Sì, confermo. Via Verdi numero cinque, interno tre.",
+              "english": "Yes, I confirm. Via Verdi number five, apartment three.",
+              "isCorrect": true,
+              "feedback": "Excellent. Providing the apartment number is helpful."
+            },
+            {
+              "text": "No, Via Verdi è una strada molto brutta e sporca.",
+              "english": "No, Via Verdi is a very ugly and dirty street.",
+              "isCorrect": false,
+              "feedback": "Just confirm the address."
+            },
+            {
+              "text": "Sì, Giuseppe Verdi è un compositore molto famoso.",
+              "english": "Yes, Giuseppe Verdi is a very famous composer.",
+              "isCorrect": false,
+              "feedback": "Not relevant to your address."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Arrivo il prima possibile. Stia tranquillo. A dopo.",
+          "english": "I'll be there as soon as possible. Stay calm. See you later.",
+          "choices": [
+            {
+              "text": "Grazie, a tra poco. Arrivederci.",
+              "english": "Thanks, see you soon. Goodbye.",
+              "isCorrect": true,
+              "feedback": "A calm and polite ending."
+            },
+            {
+              "text": "Ciao, dove sono le chiavi della macchina?",
+              "english": "Hi, where are the car keys?",
+              "isCorrect": false,
+              "feedback": "Don't get distracted now."
+            },
+            {
+              "text": "Buongiorno, vorrei comprare un giornale.",
+              "english": "Good morning, I'd like to buy a newspaper.",
+              "isCorrect": false,
+              "feedback": "Not relevant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fixing_issue",
+      "title": "Fixing the Issue",
+      "description": "The repairman is at your house to fix the problem.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, sono qui per la riparazione. Dov'è il guasto?",
+          "english": "Good morning, I'm here for the repair. Where is the fault?",
+          "choices": [
+            {
+              "text": "Buongiorno, entri pure. Il problema è qui in cucina.",
+              "english": "Good morning, please come in. The problem is here in the kitchen.",
+              "isCorrect": true,
+              "feedback": "Good. Inviting the repairman in and showing the location."
+            },
+            {
+              "text": "Ciao, il mio guasto è che non trovo il mio portafoglio.",
+              "english": "Hi, my fault is that I can't find my wallet.",
+              "isCorrect": false,
+              "feedback": "The repairman is here for a household fix, not a lost item."
+            },
+            {
+              "text": "Buongiorno, mi piace molto il colore delle sue scarpe.",
+              "english": "Good morning, I really like the color of your shoes.",
+              "isCorrect": false,
+              "feedback": "Be professional and show him the repair needed."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Vedo. Il tubo è rotto e perde molta acqua. Devo cambiarlo subito.",
+          "english": "I see. The pipe is broken and leaking a lot of water. I have to change it right away.",
+          "choices": [
+            {
+              "text": "Va bene. Quanto tempo ci vuole per aggiustarlo?",
+              "english": "All right. How long does it take to fix it?",
+              "isCorrect": true,
+              "feedback": "Good. Asking about the time is a standard question."
+            },
+            {
+              "text": "Va bene. Mi piace cambiare i vestiti ogni giorno.",
+              "english": "All right. I like changing clothes every day.",
+              "isCorrect": false,
+              "feedback": "The repairman is talking about changing a pipe."
+            },
+            {
+              "text": "Sì, il tubo è molto lungo come un serpente nero.",
+              "english": "Yes, the pipe is very long like a black snake.",
+              "isCorrect": false,
+              "feedback": "Just let him do his work."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Ho i pezzi di ricambio nel furgone. Vado a prenderli.",
+          "english": "I have the spare parts in the van. I'll go get them.",
+          "choices": [
+            {
+              "text": "D'accordo, l'aspetto qui in cucina. Faccia pure.",
+              "english": "All right, I'll wait for you here in the kitchen. Go ahead.",
+              "isCorrect": true,
+              "feedback": "Good. You are being patient while he gets his tools."
+            },
+            {
+              "text": "Sì, mi piace molto il pane fresco del furgone bianco.",
+              "english": "Yes, I really like the fresh bread from the white van.",
+              "isCorrect": false,
+              "feedback": "He's getting spare parts, not bread!"
+            },
+            {
+              "text": "No, preferisco andare a fare una passeggiata lunga.",
+              "english": "No, I prefer to go for a long walk.",
+              "isCorrect": false,
+              "feedback": "Wait for the repairman to finish the job."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Eccomi. Iniziamo il lavoro. Può spostare queste cose, per favore?",
+          "english": "Here I am. Let's start the work. Can you move these things, please?",
+          "choices": [
+            {
+              "text": "Sì, certo. Sposto subito tutto quello che serve.",
+              "english": "Yes, of course. I'll move everything that's needed right away.",
+              "isCorrect": true,
+              "feedback": "Helpful! Clearing the work area is important."
+            },
+            {
+              "text": "No, queste cose sono molto pesanti per me.",
+              "english": "No, these things are very heavy for me.",
+              "isCorrect": false,
+              "feedback": "Try to help him access the repair site."
+            },
+            {
+              "text": "Sì, mi piace spostare i mobili della camera da letto.",
+              "english": "Yes, I like moving the bedroom furniture.",
+              "isCorrect": false,
+              "feedback": "He asked to move things in the kitchen."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Grazie. Ci vorranno circa venti minuti per finire.",
+          "english": "Thank you. It will take about twenty minutes to finish.",
+          "choices": [
+            {
+              "text": "Nessun problema. Posso offrirle un bicchiere d'acqua?",
+              "english": "No problem. Can I offer you a glass of water?",
+              "isCorrect": true,
+              "feedback": "Very kind of you! It's polite to offer a drink to workers."
+            },
+            {
+              "text": "Venti minuti sono troppi per guardare la tv.",
+              "english": "Twenty minutes are too many to watch TV.",
+              "isCorrect": false,
+              "feedback": "Be patient while he works."
+            },
+            {
+              "text": "Sì, venti è il mio numero preferito per la pasta.",
+              "english": "Yes, twenty is my favorite number for pasta.",
+              "isCorrect": false,
+              "feedback": "Not relevant."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco fatto. Ora proviamo se il rubinetto funziona bene.",
+          "english": "There we go. Now let's test if the faucet works well.",
+          "choices": [
+            {
+              "text": "Sì, proviamo. Apro l'acqua con cautela.",
+              "english": "Yes, let's test. I'll turn on the water carefully.",
+              "isCorrect": true,
+              "feedback": "Good. Testing the repair is the final step."
+            },
+            {
+              "text": "No, ho paura che l'acqua sia troppo fredda.",
+              "english": "No, I'm afraid the water is too cold.",
+              "isCorrect": false,
+              "feedback": "You need to check if the leak is gone."
+            },
+            {
+              "text": "Sì, mi piace nuotare nel mare quando è calmo.",
+              "english": "Yes, I like swimming in the sea when it's calm.",
+              "isCorrect": false,
+              "feedback": "Focus on the faucet."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sembra tutto a posto adesso. Niente più perdite.",
+          "english": "Everything seems fine now. No more leaks.",
+          "choices": [
+            {
+              "text": "Ottimo lavoro! Sono molto contento. Grazie.",
+              "english": "Great job! I'm very happy. Thank you.",
+              "isCorrect": true,
+              "feedback": "It's good to show appreciation for a job well done."
+            },
+            {
+              "text": "Peccato, mi piaceva sentire il rumore delle gocce.",
+              "english": "Too bad, I liked hearing the sound of the drops.",
+              "isCorrect": false,
+              "feedback": "Leaks are bad for your house!"
+            },
+            {
+              "text": "Sì, tutto è a posto quando vado a dormire presto.",
+              "english": "Yes, everything is fine when I go to sleep early.",
+              "isCorrect": false,
+              "feedback": "Irrelevant."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "La riparazione costa cinquanta euro in totale.",
+          "english": "The repair costs fifty euros in total.",
+          "choices": [
+            {
+              "text": "Va bene. Accetta pagamenti con la carta?",
+              "english": "All right. Do you accept card payments?",
+              "isCorrect": true,
+              "feedback": "Good. Asking about payment methods is important."
+            },
+            {
+              "text": "Cinquanta euro sono troppi per comprare un libro.",
+              "english": "Fifty euros are too many to buy a book.",
+              "isCorrect": false,
+              "feedback": "You are paying for professional repair work."
+            },
+            {
+              "text": "Sì, ho cinquanta amici che vivono a Milano.",
+              "english": "Yes, I have fifty friends who live in Milan.",
+              "isCorrect": false,
+              "feedback": "Pay the man!"
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Sì, ho il POS. Vuole la ricevuta cartacea o via email?",
+          "english": "Yes, I have the card reader. Do you want a paper receipt or via email?",
+          "choices": [
+            {
+              "text": "Preferisco la ricevuta via email, grazie.",
+              "english": "I prefer the receipt via email, thanks.",
+              "isCorrect": true,
+              "feedback": "Good. Digital receipts are easy to store."
+            },
+            {
+              "text": "Sì, mi piace molto scrivere sulla carta bianca.",
+              "english": "Yes, I really like writing on white paper.",
+              "isCorrect": false,
+              "feedback": "Just choose a receipt format."
+            },
+            {
+              "text": "No, non leggo mai le mie email al mattino.",
+              "english": "No, I never read my emails in the morning.",
+              "isCorrect": false,
+              "feedback": "It's just for the receipt."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Perfetto. Il lavoro è finito. Buona giornata!",
+          "english": "Perfect. The work is finished. Have a good day!",
+          "choices": [
+            {
+              "text": "Grazie a lei e buona giornata. Arrivederci.",
+              "english": "Thank you and have a good day. Goodbye.",
+              "isCorrect": true,
+              "feedback": "A polite conclusion to the repair visit."
+            },
+            {
+              "text": "Ciao, vorrei comprare un gelato al cioccolato.",
+              "english": "Hi, I'd like to buy a chocolate gelato.",
+              "isCorrect": false,
+              "feedback": "The repairman doesn't sell gelato."
+            },
+            {
+              "text": "Sì, il lavoro è molto stancante per me oggi.",
+              "english": "Yes, work is very tiring for me today.",
+              "isCorrect": false,
+              "feedback": "Just say goodbye."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
