@@ -1,0 +1,993 @@
+{
+  "scenarioId": 51,
+  "conversations": [
+    {
+      "id": "withdrawing_cash",
+      "title": "Withdrawing Cash at the Counter",
+      "description": "Perform a cash withdrawal with your ID and bank card.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, benvenuto. Come posso aiutarla?",
+          "english": "Good morning, welcome. How can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno. Vorrei prelevare dei contanti dal mio conto, per favore.",
+              "english": "Good morning. I would like to withdraw some cash from my account, please.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Buongiorno. Vorrei versare un assegno sul mio conto corrente.",
+              "isCorrect": false,
+              "feedback": "You want to withdraw cash, not deposit a check."
+            },
+            {
+              "text": "Buongiorno. Vorrei cambiare degli euro in dollari americani.",
+              "isCorrect": false,
+              "feedback": "This is currency exchange, not withdrawal."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Mi può dire quanto desidera prelevare?",
+          "english": "Certainly. Can you tell me how much you wish to withdraw?",
+          "choices": [
+            {
+              "text": "Vorrei prelevare trecento euro dal mio conto, se è possibile.",
+              "english": "I would like to withdraw three hundred euros from my account, if possible.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Vorrei prelevare tutti i miei risparmi e chiudere il conto.",
+              "isCorrect": false,
+              "feedback": "Just ask for the specific amount you need today."
+            },
+            {
+              "text": "Vorrei cambiare la mia password del bancomat allo sportello.",
+              "isCorrect": false,
+              "feedback": "The host asked about the amount for withdrawal."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene. Per favore, mi può mostrare un documento di identità?",
+          "english": "All right. Please, can you show me an identity document?",
+          "choices": [
+            {
+              "text": "Certamente, ecco il mio passaporto e anche la mia carta di debito.",
+              "english": "Certainly, here is my passport and also my debit card.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Purtroppo non ho documenti, ho solo questa vecchia ricevuta fiscale.",
+              "isCorrect": false,
+              "feedback": "You need a valid ID for banking operations."
+            },
+            {
+              "text": "Ecco a lei il modulo compilato per la richiesta di un nuovo mutuo.",
+              "isCorrect": false,
+              "feedback": "The host asked for your ID, not a mortgage form."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie. Ora inserisca il PIN sul tastierino e prema il tasto verde.",
+          "english": "Thank you. Now enter your PIN on the keypad and press the green button.",
+          "choices": [
+            {
+              "text": "D'accordo, inserisco il codice PIN ora... ecco, ho premuto invio.",
+              "english": "All right, I am entering the PIN code now... there, I pressed enter.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Scusi, il tastierino non funziona bene e non vedo i numeri chiari.",
+              "isCorrect": false,
+              "feedback": "Try to follow the instruction first."
+            },
+            {
+              "text": "Non ricordo il mio PIN, posso firmare questo documento cartaceo?",
+              "isCorrect": false,
+              "feedback": "PIN is required for security on the keypad."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto, l'operazione è confermata. Come desidera le banconote?",
+          "english": "Perfect, the transaction is confirmed. How would you like the bills?",
+          "choices": [
+            {
+              "text": "Preferirei banconote di piccolo taglio, da dieci o venti euro.",
+              "english": "I would prefer small bills, tens or twenties.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Preferirei avere tutto in monete da un euro, se non è un problema.",
+              "isCorrect": false,
+              "feedback": "Banks usually provide bills for large withdrawals."
+            },
+            {
+              "text": "Preferirei ricevere un bonifico bancario invece dei contanti oggi.",
+              "isCorrect": false,
+              "feedback": "You specifically asked for cash earlier."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Ecco a lei. Le serve la ricevuta dell'operazione di prelievo?",
+          "english": "Here you go. Do you need the receipt for the withdrawal transaction?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Preferisco sempre tenere la ricevuta cartacea.",
+              "english": "Yes, thank you. I always prefer to keep the paper receipt.",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "No, grazie. Posso vedere tutto tramite l'app sul telefono.",
+              "isCorrect": false,
+              "feedback": "It's safer to say yes to confirm the amount."
+            },
+            {
+              "text": "Sì, grazie. Mi serve per il mio ufficio e per la contabilità.",
+              "isCorrect": false,
+              "feedback": "A simple 'Yes' with a personal preference is better."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente. Ecco la sua ricevuta. Desidera anche controllare l'importo ora?",
+          "english": "Certainly. Here is your receipt. Would you like to check the amount now?",
+          "choices": [
+            {
+              "text": "Sì, grazie. Può controllare se ci sono tutte le banconote per favore?",
+              "english": "Yes, thank you. Can you check if all the banknotes are there please?",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "No, mi fido ciecamente della banca e non serve contare i soldi.",
+              "isCorrect": false,
+              "feedback": "It's always better to check the amount at the counter."
+            },
+            {
+              "text": "Sì, e vorrei anche sapere se queste banconote sono nuove o usate.",
+              "isCorrect": false,
+              "feedback": "Focus on the correctness of the amount."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ho contato i soldi due volte, sono corretti. Serve altro aiuto?",
+          "english": "I counted the money twice, it is correct. Do you need any more help?",
+          "choices": [
+            {
+              "text": "No, grazie. È stato tutto molto chiaro e veloce.",
+              "english": "No, thank you. It was all very clear and fast.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Sì, vorrei anche richiedere un nuovo libretto degli assegni.",
+              "isCorrect": false,
+              "feedback": "Just finish this simple operation first."
+            },
+            {
+              "text": "Sì, vorrei sapere se posso parlare con il direttore della banca.",
+              "isCorrect": false,
+              "feedback": "The host asked if you need more help with this operation."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Ottimo. Le restituisco il suo passaporto e la sua carta di debito.",
+          "english": "Excellent. I am returning your passport and your debit card.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'assistenza rapida. Arrivederci e a presto.",
+              "english": "Thank you very much for the quick assistance. Goodbye and see you soon.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Può tenere il mio passaporto, non mi serve più per oggi.",
+              "isCorrect": false,
+              "feedback": "You should always take your documents back."
+            },
+            {
+              "text": "Sì, grazie. Dove posso trovare un cestino per questa carta?",
+              "isCorrect": false,
+              "feedback": "Just thank the host and take your documents."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Di nulla. Le auguro una buona giornata. Arrivederci!",
+          "english": "You're welcome. I wish you a good day. Goodbye!",
+          "choices": [
+            {
+              "text": "Grazie mille, buona giornata anche a lei. Arrivederci!",
+              "english": "Thank you very much, good day to you too. Goodbye!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie, a che ora chiude la banca oggi?",
+              "isCorrect": false,
+              "feedback": "Just finish the conversation politely."
+            },
+            {
+              "text": "Grazie, posso lasciare la mia borsa qui per un momento?",
+              "isCorrect": false,
+              "feedback": "Don't leave your belongings at the bank counter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "opening_account",
+      "title": "Opening a Basic Account",
+      "description": "Open a new bank account for your daily needs in Italy.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, sono a sua disposizione. Desidera aprire un nuovo conto corrente?",
+          "english": "Good morning, I am at your disposal. Would you like to open a new current account?",
+          "choices": [
+            {
+              "text": "Buongiorno. Sì, vorrei aprire un conto corrente semplice per le mie spese.",
+              "english": "Good morning. Yes, I would like to open a simple current account for my expenses.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Buongiorno. Sì, vorrei chiudere il mio conto e trasferire tutti i soldi.",
+              "isCorrect": false,
+              "feedback": "You are here to open an account, not close one."
+            },
+            {
+              "text": "Buongiorno. Sì, vorrei richiedere un prestito per comprare una macchina.",
+              "isCorrect": false,
+              "feedback": "A loan is different from a bank account."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Ottimo. Abbiamo un conto base per residenti e uno per non residenti. Quale preferisce?",
+          "english": "Excellent. We have a basic account for residents and one for non-residents. Which do you prefer?",
+          "choices": [
+            {
+              "text": "Preferisco il conto per residenti perché lavoro qui e ho un contratto.",
+              "english": "I prefer the account for residents because I work here and have a contract.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Preferisco non rispondere a questa domanda perché è molto privata.",
+              "isCorrect": false,
+              "feedback": "The bank needs this info to offer the right product."
+            },
+            {
+              "text": "Preferisco prelevare tutto il mio saldo oggi stesso senza pagare tasse.",
+              "isCorrect": false,
+              "feedback": "You don't have a balance yet, you are opening the account."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Va bene. Per il conto residenti mi servono la carta d'identità e il codice fiscale.",
+          "english": "All right. For the resident account I need your ID card and tax code.",
+          "choices": [
+            {
+              "text": "Eccoli qui. Ho portato anche una copia del mio contratto di lavoro.",
+              "english": "Here they are. I also brought a copy of my employment contract.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Purtroppo ho perso il mio portafoglio con tutti i documenti dentro ieri.",
+              "isCorrect": false,
+              "feedback": "You cannot open an account without documents."
+            },
+            {
+              "text": "Ecco il mio bancomat scaduto e una vecchia tessera della biblioteca.",
+              "isCorrect": false,
+              "feedback": "These are not valid identity documents for a bank."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Il contratto è utile. Ora deve compilare questo modulo con i suoi dati.",
+          "english": "The contract is useful. Now you must fill out this form with your data.",
+          "choices": [
+            {
+              "text": "D'accordo, lo compilo subito con i miei dati personali e l'indirizzo.",
+              "english": "All right, I will fill it out now with my personal data and address.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Scusi, non ho una penna. Me ne può prestare una per scrivere sul foglio?",
+              "isCorrect": false,
+              "feedback": "Focus on the action of filling out the form."
+            },
+            {
+              "text": "Non voglio firmare niente oggi, preferisco tornare la settimana prossima.",
+              "isCorrect": false,
+              "feedback": "You need to fill the form to proceed."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Perfetto. Mi serve anche la sua data di nascita per completare la pratica.",
+          "english": "Perfect. I also need your date of birth to complete the procedure.",
+          "choices": [
+            {
+              "text": "Sono nato il dieci maggio millenovecentottanta, va bene così?",
+              "english": "I was born on May tenth, nineteen eighty, is that okay?",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "Sono nato in primavera, ma non ricordo il giorno esatto.",
+              "isCorrect": false,
+              "feedback": "The bank needs your full date of birth."
+            },
+            {
+              "text": "Preferisco non dire la mia età, sono ancora molto giovane.",
+              "isCorrect": false,
+              "feedback": "Date of birth is mandatory for bank accounts."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Sì, va benissimo. Ora deve firmare in fondo alla pagina e anche qui.",
+          "english": "Yes, that's fine. Now you must sign at the bottom of the page and also here.",
+          "choices": [
+            {
+              "text": "Ecco fatto, ho firmato in tutti i punti indicati. Il conto è attivo?",
+              "english": "There, I have signed in all the indicated spots. Is the account active?",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Ho firmato solo una volta perché sono stanco di scrivere.",
+              "isCorrect": false,
+              "feedback": "You must sign in all the indicated places."
+            },
+            {
+              "text": "Posso usare il mio timbro personale invece della firma?",
+              "isCorrect": false,
+              "feedback": "A handwritten signature is usually required."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Sì, il conto è aperto. Riceverà il bancomat a casa tra una settimana.",
+          "english": "Yes, the account is open. You will receive the card at home in a week.",
+          "choices": [
+            {
+              "text": "Grazie mille. Devo pagare qualcosa per l'apertura del conto?",
+              "english": "Thank you very much. Do I have to pay anything for opening the account?",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Grazie, posso avere subito mille euro in contanti dal nuovo conto?",
+              "isCorrect": false,
+              "feedback": "You haven't deposited any money yet!"
+            },
+            {
+              "text": "Grazie, posso cambiare idea e chiudere tutto ora?",
+              "isCorrect": false,
+              "feedback": "You just finished the process, don't stop now."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "No, per questo conto base non ci sono spese di apertura. È gratuito.",
+          "english": "No, for this basic account there are no opening fees. It is free.",
+          "choices": [
+            {
+              "text": "Ottimo, mi sembra un'offerta molto onesta e conveniente.",
+              "english": "Excellent, it seems like a very honest and convenient offer.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Non ci credo, le banche vogliono sempre i miei soldi.",
+              "isCorrect": false,
+              "feedback": "This is a basic account with specific terms."
+            },
+            {
+              "text": "Preferirei pagare una commissione per avere un servizio migliore.",
+              "isCorrect": false,
+              "feedback": "The host said it's free, which is good for you."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Siamo lieti che sia soddisfatto. Ha altre domande sul nuovo conto?",
+          "english": "We are glad you are satisfied. Do you have any other questions about the new account?",
+          "choices": [
+            {
+              "text": "No, grazie. È stato tutto molto chiaro. Arrivederci e buona giornata.",
+              "english": "No, thank you. It was all very clear. Goodbye and have a good day.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Sì, vorrei sapere se posso avere anche un prestito di diecimila euro.",
+              "isCorrect": false,
+              "feedback": "Stick to the account opening for now."
+            },
+            {
+              "text": "Sì, vorrei sapere il nome di tutti i dipendenti di questa banca.",
+              "isCorrect": false,
+              "feedback": "That's not a relevant question for opening an account."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Grazie a lei. Le auguro una buona permanenza in Italia. Arrivederci!",
+          "english": "Thank you. I wish you a good stay in Italy. Goodbye!",
+          "choices": [
+            {
+              "text": "Grazie mille, buona giornata anche a lei. Arrivederci!",
+              "english": "Thank you very much, good day to you too. Goodbye!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie, dove posso mangiare una buona pizza qui vicino?",
+              "isCorrect": false,
+              "feedback": "Just finish the banking conversation."
+            },
+            {
+              "text": "Grazie, posso lasciare qui il mio ombrello perché piove?",
+              "isCorrect": false,
+              "feedback": "Don't leave your personal items at the bank."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "currency_exchange",
+      "title": "Exchanging Currency",
+      "description": "Exchange your foreign currency into euros at the bank counter.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno. Desidera cambiare della valuta estera in euro oggi?",
+          "english": "Good morning. Would you like to exchange foreign currency into euros today?",
+          "choices": [
+            {
+              "text": "Sì, vorrei cambiare cinquecento dollari americani in euro, per favore.",
+              "english": "Yes, I would like to exchange five hundred US dollars into euros, please.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Sì, vorrei sapere se posso pagare con la mia carta di credito estera.",
+              "isCorrect": false,
+              "feedback": "The host asked about currency exchange."
+            },
+            {
+              "text": "Sì, vorrei prelevare dei soldi dal mio libretto di risparmio.",
+              "isCorrect": false,
+              "feedback": "You want to exchange currency, not withdraw from a booklet."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Certamente. Il tasso di cambio di oggi è di 0,90 euro per ogni dollaro.",
+          "english": "Certainly. Today's exchange rate is 0.90 euros for each dollar.",
+          "choices": [
+            {
+              "text": "Sì, mi sembra un tasso onesto. Quanto riceverò in totale in euro?",
+              "english": "Yes, it seems like a fair rate. How much will I receive in total in euros?",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "No, è troppo basso. Ieri ho visto che il tasso era molto migliore.",
+              "isCorrect": false,
+              "feedback": "Exchange rates change daily, this is the bank's rate."
+            },
+            {
+              "text": "Sì, vorrei anche versare questi soldi direttamente sul mio conto.",
+              "isCorrect": false,
+              "feedback": "Wait until you get the euros first."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Riceverà 450 euro meno una commissione di cinque euro. Procediamo?",
+          "english": "You will receive 450 euros minus a five euro fee. Shall we proceed?",
+          "choices": [
+            {
+              "text": "Va bene, procediamo pure. Ecco le banconote da cento dollari.",
+              "english": "All right, let's proceed. Here are the hundred-dollar bills.",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "No, la commissione è troppo alta per un'operazione così piccola.",
+              "isCorrect": false,
+              "feedback": "Fees are standard for currency exchange."
+            },
+            {
+              "text": "Va bene, posso avere anche delle monete per il parcheggio?",
+              "isCorrect": false,
+              "feedback": "Wait for the bills first, then ask for coins."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie. Mi mostri un documento per la registrazione dell'operazione.",
+          "english": "Thank you. Show me a document for the registration of the transaction.",
+          "choices": [
+            {
+              "text": "Certamente, ecco il mio passaporto. È un documento valido, vero?",
+              "english": "Certainly, here is my passport. It is a valid document, right?",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Non ho il passaporto con me, posso mostrarle la mia patente?",
+              "isCorrect": false,
+              "feedback": "A passport is usually required for foreign exchange."
+            },
+            {
+              "text": "Ecco a lei la mia tessera sanitaria e il codice fiscale italiano.",
+              "isCorrect": false,
+              "feedback": "A photo ID like a passport is needed."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Sì, è perfetto. Controllo subito i dati del suo documento nel sistema.",
+          "english": "Yes, it's perfect. I will check your document data in the system right away.",
+          "choices": [
+            {
+              "text": "D'accordo, aspetto qui allo sportello. Ci vuole molto tempo?",
+              "english": "All right, I'll wait here at the counter. Does it take a long time?",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "No, preferisco andare a fare una passeggiata e tornare dopo.",
+              "isCorrect": false,
+              "feedback": "Wait for the registration to be completed now."
+            },
+            {
+              "text": "Sì, ma faccia presto perché ho un appuntamento importante.",
+              "isCorrect": false,
+              "feedback": "Be polite, the host is working for you."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "Solo un momento. Ecco fatto, la registrazione è completata con successo.",
+          "english": "Just a moment. There we go, the registration is successfully completed.",
+          "choices": [
+            {
+              "text": "Ottimo. Ora posso avere gli euro in banconote di piccolo taglio?",
+              "english": "Excellent. Now can I have the euros in small banknotes?",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "Voglio tutto in monete da due euro per la mia collezione.",
+              "isCorrect": false,
+              "feedback": "Banks usually provide bills for this amount."
+            },
+            {
+              "text": "Voglio solo banconote da cinquecento euro, se le avete.",
+              "isCorrect": false,
+              "feedback": "Small bills are easier to use for daily expenses."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Ecco a lei i suoi 445 euro. Sono banconote da dieci e venti euro.",
+          "english": "Here are your 445 euros. They are ten and twenty euro bills.",
+          "choices": [
+            {
+              "text": "Grazie mille. Può controllare se ci sono tutte le banconote per favore?",
+              "english": "Thank you very much. Can you check if all the banknotes are there please?",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Grazie, ma io volevo sterline inglesi, non euro. C'è un errore.",
+              "isCorrect": false,
+              "feedback": "You asked for euros at the beginning."
+            },
+            {
+              "text": "Grazie, posso avere una busta per mettere i soldi al sicuro?",
+              "isCorrect": false,
+              "feedback": "Confirming the amount is more important."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Ho contato i soldi due volte, sono corretti. Serve altro aiuto?",
+          "english": "I counted the money twice, it is correct. Do you need any more help?",
+          "choices": [
+            {
+              "text": "Sì, mi serve anche la ricevuta dell'operazione per la mia contabilità.",
+              "english": "Yes, I also need the receipt for the transaction for my accounting.",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "No, grazie. Voglio solo andare a spendere questi soldi subito.",
+              "isCorrect": false,
+              "feedback": "It's always better to take the receipt."
+            },
+            {
+              "text": "Sì, vorrei sapere dove posso trovare un buon ristorante qui.",
+              "isCorrect": false,
+              "feedback": "Finish the banking business first."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente, ecco la sua ricevuta dettagliata del cambio valuta.",
+          "english": "Certainly, here is your detailed currency exchange receipt.",
+          "choices": [
+            {
+              "text": "Grazie mille per la sua gentilezza e per il servizio rapido.",
+              "english": "Thank you very much for your kindness and for the quick service.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "La ricevuta è sbagliata, manca la firma del direttore della banca.",
+              "isCorrect": false,
+              "feedback": "The standard receipt is usually fine as is."
+            },
+            {
+              "text": "Non voglio questa carta, preferisco una conferma via email.",
+              "isCorrect": false,
+              "feedback": "Take the paper receipt provided at the counter."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "È stato un piacere. Le auguro una buona giornata e buon viaggio.",
+          "english": "It was a pleasure. I wish you a good day and a good trip.",
+          "choices": [
+            {
+              "text": "Grazie mille, buona giornata anche a lei. Arrivederci!",
+              "english": "Thank you very much, good day to you too. Goodbye!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie, a che ora parte il prossimo treno per Roma?",
+              "isCorrect": false,
+              "feedback": "The bank host is not a travel agent."
+            },
+            {
+              "text": "Grazie, posso lasciare qui i miei bagagli per un'ora?",
+              "isCorrect": false,
+              "feedback": "Banks do not offer luggage storage."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lost_card",
+      "title": "Reporting a Lost Card",
+      "description": "Report your lost or stolen bank card to prevent unauthorized use.",
+      "messages": [
+        {
+          "id": "m1",
+          "role": "host",
+          "text": "Buongiorno, mi dica. La vedo preoccupato, come posso aiutarla?",
+          "english": "Good morning, tell me. You look worried, how can I help you?",
+          "choices": [
+            {
+              "text": "Buongiorno. Ho perso il mio bancomat e vorrei bloccare la carta.",
+              "english": "Good morning. I lost my ATM card and I would like to block the card.",
+              "isCorrect": true,
+              "nextMessageId": "m2"
+            },
+            {
+              "text": "Buongiorno. Ho dimenticato il PIN e non posso prelevare soldi.",
+              "isCorrect": false,
+              "feedback": "Losing a card is more urgent than forgetting a PIN."
+            },
+            {
+              "text": "Buongiorno. Il bancomat è rimasto incastrato nello sportello.",
+              "isCorrect": false,
+              "feedback": "The scenario is about a lost card."
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "role": "host",
+          "text": "Mi dispiace. Dobbiamo bloccarla subito. Mi dice il suo nome?",
+          "english": "I'm sorry. We must block it immediately. Can you tell me your name?",
+          "choices": [
+            {
+              "text": "Mi chiamo Mario Rossi e ho un conto corrente presso questa banca.",
+              "english": "My name is Mario Rossi and I have a current account at this bank.",
+              "isCorrect": true,
+              "nextMessageId": "m3"
+            },
+            {
+              "text": "Non ricordo il mio nome perché sono molto agitato per la perdita.",
+              "isCorrect": false,
+              "feedback": "The bank needs your name to find your account."
+            },
+            {
+              "text": "Il mio nome è scritto sulla carta che ho perso, non lo ricorda?",
+              "isCorrect": false,
+              "feedback": "The host doesn't know who you are yet."
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "role": "host",
+          "text": "Trovato. Mi serve la sua data di nascita per conferma, per favore.",
+          "english": "Found it. I need your date of birth for confirmation, please.",
+          "choices": [
+            {
+              "text": "Sono nato il dieci maggio millenovecentottanta, va bene così?",
+              "english": "I was born on May tenth, nineteen eighty, is that okay?",
+              "isCorrect": true,
+              "nextMessageId": "m4"
+            },
+            {
+              "text": "Non ho questi dati a memoria, devo cercare tra i miei documenti.",
+              "isCorrect": false,
+              "feedback": "Most people know their own birthday!"
+            },
+            {
+              "text": "Perché mi chiede questi dati privati? Non si fida di me?",
+              "isCorrect": false,
+              "feedback": "This is a standard security check."
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "role": "host",
+          "text": "Grazie, i dati sono corretti. La carta è bloccata. Ci sono movimenti?",
+          "english": "Thank you, the data is correct. The card is blocked. Are there any movements?",
+          "choices": [
+            {
+              "text": "Ho controllato l'app poco fa e per fortuna non ci sono pagamenti.",
+              "english": "I checked the app a while ago and fortunately there are no payments.",
+              "isCorrect": true,
+              "nextMessageId": "m5"
+            },
+            {
+              "text": "Sì, ci sono tre prelievi da mille euro che io non ho autorizzato.",
+              "isCorrect": false,
+              "feedback": "Let's assume there were no suspicious transactions for now."
+            },
+            {
+              "text": "Non posso controllare perché non ho più il telefono con me.",
+              "isCorrect": false,
+              "feedback": "Try to provide a positive update if possible."
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "role": "host",
+          "text": "Meno male. Desidera ordinare una nuova carta bancomat oggi stesso?",
+          "english": "Thank goodness. Would you like to order a new ATM card today?",
+          "choices": [
+            {
+              "text": "Sì, per favore. Mi serve la carta per fare la spesa e pagare.",
+              "english": "Yes, please. I need the card for shopping and paying.",
+              "isCorrect": true,
+              "nextMessageId": "m6"
+            },
+            {
+              "text": "No, preferisco usare solo i contanti da ora in poi per sicurezza.",
+              "isCorrect": false,
+              "feedback": "Having a card is very useful for daily life."
+            },
+            {
+              "text": "Sì, ma vorrei una carta di colore diverso, magari blu o rossa.",
+              "isCorrect": false,
+              "feedback": "The bank usually has a standard design."
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "role": "host",
+          "text": "D'accordo, la nuova carta arriverà al suo indirizzo tra dieci giorni.",
+          "english": "All right, the new card will arrive at your address in ten days.",
+          "choices": [
+            {
+              "text": "Perfetto. Nel frattempo, posso prelevare dei contanti qui allo sportello?",
+              "english": "Perfect. In the meantime, can I withdraw some cash here at the counter?",
+              "isCorrect": true,
+              "nextMessageId": "m7"
+            },
+            {
+              "text": "No, non voglio aspettare dieci giorni, la voglio ora subito.",
+              "isCorrect": false,
+              "feedback": "Card production and shipping take some time."
+            },
+            {
+              "text": "Posso andare a prenderla io direttamente alla fabbrica?",
+              "isCorrect": false,
+              "feedback": "Cards are always sent to your registered address."
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "role": "host",
+          "text": "Certamente, può prelevare con il suo documento d'identità valido.",
+          "english": "Certainly, you can withdraw with your valid identity document.",
+          "choices": [
+            {
+              "text": "Ottimo. Vorrei prelevare cento euro per le mie spese urgenti.",
+              "english": "Great. I would like to withdraw one hundred euros for my urgent expenses.",
+              "isCorrect": true,
+              "nextMessageId": "m8"
+            },
+            {
+              "text": "Allora vorrei prelevare tutti i soldi che ho sul conto oggi.",
+              "isCorrect": false,
+              "feedback": "Just withdraw what you need for now."
+            },
+            {
+              "text": "Posso avere i soldi in dollari invece che in euro?",
+              "isCorrect": false,
+              "feedback": "You are withdrawing from an Italian euro account."
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "role": "host",
+          "text": "Va bene. Firmi qui per autorizzare il prelievo senza carta.",
+          "english": "All right. Sign here to authorize the withdrawal without a card.",
+          "choices": [
+            {
+              "text": "Ecco fatto, ho firmato. Posso avere anche la ricevuta?",
+              "english": "There, I've signed. Can I also have the receipt?",
+              "isCorrect": true,
+              "nextMessageId": "m9"
+            },
+            {
+              "text": "Non voglio firmare, preferisco mettere la mia impronta digitale.",
+              "isCorrect": false,
+              "feedback": "A signature is the standard procedure."
+            },
+            {
+              "text": "Ho firmato con un nome falso per motivi di sicurezza personale.",
+              "isCorrect": false,
+              "feedback": "You must use your legal signature."
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "role": "host",
+          "text": "Certamente. Ecco i suoi cento euro e la ricevuta dell'operazione.",
+          "english": "Certainly. Here are your hundred euros and the transaction receipt.",
+          "choices": [
+            {
+              "text": "Grazie mille per l'assistenza rapida. Mi sento molto più tranquillo.",
+              "english": "Thank you very much for the quick assistance. I feel much calmer.",
+              "isCorrect": true,
+              "nextMessageId": "m10"
+            },
+            {
+              "text": "Grazie, ma penso che tornerò tra un'ora per altri soldi.",
+              "isCorrect": false,
+              "feedback": "One withdrawal should be enough for now."
+            },
+            {
+              "text": "Grazie, può anche dirmi chi ha rubato la mia carta?",
+              "isCorrect": false,
+              "feedback": "The bank doesn't know who took your card."
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "role": "host",
+          "text": "Siamo qui per aiutarla. Le auguro una buona giornata nonostante tutto.",
+          "english": "We are here to help you. I wish you a good day despite everything.",
+          "choices": [
+            {
+              "text": "Grazie mille, buona giornata anche a lei. Arrivederci!",
+              "english": "Thank you very much, good day to you too. Goodbye!",
+              "isCorrect": true,
+              "nextMessageId": "END"
+            },
+            {
+              "text": "Grazie, spero di non vedervi mai più in questa banca.",
+              "isCorrect": false,
+              "feedback": "Be polite, the staff helped you."
+            },
+            {
+              "text": "Grazie, dove posso comprare un nuovo portafoglio qui vicino?",
+              "isCorrect": false,
+              "feedback": "The host might not know local shops."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

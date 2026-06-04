@@ -11,6 +11,7 @@
 - ✅ **Translation Completeness**
 - ✅ **Keyboard & UI**
 - ✅ **Domain Consistency**
+- ✅ **Path Consistency**
 - ✅ **Runtime Audio Flow**
 - ✅ **Mini Lesson Audio Flow**
 - ✅ **Scenario Integrity**
@@ -24,7 +25,7 @@ Sentences Coverage: 100.0%
 Curriculum Audit: PASS
 
 --- Audio Audit: accommodation/apartment_key_pickup ---
-Total Nodes Checked: 374
+Total Nodes Checked: 531
 Audio Audit: PASS
 
 --- Conversation Logic Audit: accommodation/apartment_key_pickup ---
@@ -51,6 +52,10 @@ Keyboard Audit: PASS
 DOMAIN AUDIT: PASS
 
 
+--- PATH CONSISTENCY AUDIT: accommodation/apartment_key_pickup ---
+PATH CONSISTENCY AUDIT: PASS
+
+
 --- RUNTIME LEARNING FLOW AUDIT (STATIC) ---
 Host autoplay implemented: YES
 User autoplay present: NO
@@ -59,7 +64,7 @@ CONVERSATION FLOW AUDIT: PASS
 
 
 --- MINI LESSON AUDIO AUDIT: accommodation/apartment_key_pickup ---
-Items checked: 210
+Items checked: 371
 Immediate choice playback implemented: YES
 Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
