@@ -4,7 +4,12 @@
 
 Phase: **Phase 4: Continuous Certification**
 Global Status: **GOLD STANDARD V1.0**
-Last Global Run: 2026-06-04 16:10:41
+Factory Version: **V2**
+Last Global Run: 2026-06-04
+Factory Changes:
+* deterministic curriculum generation
+* bidirectional coverage validation
+* automatic curriculum regeneration
 
 ---
 

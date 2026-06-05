@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: dining/cooking_class ---
+Total Extracted: 368
+Total Taught: 368
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

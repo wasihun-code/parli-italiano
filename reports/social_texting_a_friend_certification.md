@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: social/texting_a_friend ---
+Total Extracted: 334
+Total Taught: 334
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

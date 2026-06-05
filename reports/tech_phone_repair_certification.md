@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: tech/phone_repair ---
+Total Extracted: 362
+Total Taught: 362
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

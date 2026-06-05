@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: accommodation/hotel_check_in ---
+Total Extracted: 289
+Total Taught: 289
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

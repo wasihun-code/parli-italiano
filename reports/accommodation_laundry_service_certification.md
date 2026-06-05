@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: accommodation/laundry_service ---
+Total Extracted: 275
+Total Taught: 275
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

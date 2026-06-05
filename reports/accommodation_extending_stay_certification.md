@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: accommodation/extending_stay ---
+Total Extracted: 292
+Total Taught: 292
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

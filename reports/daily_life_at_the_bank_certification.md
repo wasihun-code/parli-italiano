@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: daily_life/at_the_bank ---
+Total Extracted: 338
+Total Taught: 338
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

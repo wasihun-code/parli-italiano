@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: culture/live_music ---
+Total Extracted: 316
+Total Taught: 316
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

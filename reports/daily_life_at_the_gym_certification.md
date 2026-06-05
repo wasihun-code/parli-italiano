@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: daily_life/at_the_gym ---
+Total Extracted: 358
+Total Taught: 358
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

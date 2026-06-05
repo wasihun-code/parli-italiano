@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: workstudy/team_meeting ---
+Total Extracted: 342
+Total Taught: 342
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

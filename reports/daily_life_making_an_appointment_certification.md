@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: daily_life/making_an_appointment ---
+Total Extracted: 356
+Total Taught: 356
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

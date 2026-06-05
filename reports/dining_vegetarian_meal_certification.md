@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: dining/vegetarian_meal ---
+Total Extracted: 314
+Total Taught: 314
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

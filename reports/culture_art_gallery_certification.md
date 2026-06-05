@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: culture/art_gallery ---
+Total Extracted: 355
+Total Taught: 355
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

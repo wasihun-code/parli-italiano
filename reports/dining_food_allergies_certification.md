@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: dining/food_allergies ---
+Total Extracted: 242
+Total Taught: 242
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

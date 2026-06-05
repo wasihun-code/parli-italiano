@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: culture/museum_tickets ---
+Total Extracted: 285
+Total Taught: 285
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

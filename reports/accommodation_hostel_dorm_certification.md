@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: accommodation/hostel_dorm ---
+Total Extracted: 282
+Total Taught: 282
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

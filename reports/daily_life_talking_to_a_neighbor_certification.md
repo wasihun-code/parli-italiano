@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: daily_life/talking_to_a_neighbor ---
+Total Extracted: 436
+Total Taught: 436
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

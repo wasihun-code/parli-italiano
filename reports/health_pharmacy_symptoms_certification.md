@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: health/pharmacy_symptoms ---
+Total Extracted: 400
+Total Taught: 400
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

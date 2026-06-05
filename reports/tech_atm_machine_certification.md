@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: tech/atm_machine ---
+Total Extracted: 243
+Total Taught: 243
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

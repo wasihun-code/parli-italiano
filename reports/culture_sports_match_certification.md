@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: culture/sports_match ---
+Total Extracted: 372
+Total Taught: 372
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

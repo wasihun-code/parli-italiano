@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: health/emergency_room ---
+Total Extracted: 314
+Total Taught: 314
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

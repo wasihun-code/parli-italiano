@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: culture/italian_customs ---
+Total Extracted: 435
+Total Taught: 435
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

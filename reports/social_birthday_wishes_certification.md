@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: social/birthday_wishes ---
+Total Extracted: 350
+Total Taught: 350
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

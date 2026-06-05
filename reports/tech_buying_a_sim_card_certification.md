@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: tech/buying_a_sim_card ---
+Total Extracted: 307
+Total Taught: 307
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

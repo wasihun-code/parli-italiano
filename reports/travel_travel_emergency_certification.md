@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: travel/travel_emergency ---
+Total Extracted: 319
+Total Taught: 319
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

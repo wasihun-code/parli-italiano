@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: health/buying_medicine ---
+Total Extracted: 339
+Total Taught: 339
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

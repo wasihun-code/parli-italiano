@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: workstudy/coworking_space ---
+Total Extracted: 442
+Total Taught: 442
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

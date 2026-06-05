@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: animals/animali ---
+Total Extracted: 321
+Total Taught: 321
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: dining/breakfast_bar ---
+Total Extracted: 227
+Total Taught: 227
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

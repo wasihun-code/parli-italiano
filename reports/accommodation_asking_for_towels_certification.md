@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: accommodation/asking_for_towels ---
+Total Extracted: 320
+Total Taught: 320
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

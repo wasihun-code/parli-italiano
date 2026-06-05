@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: social/making_plans ---
+Total Extracted: 281
+Total Taught: 281
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

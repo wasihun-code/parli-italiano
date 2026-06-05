@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: culture/historic_site ---
+Total Extracted: 333
+Total Taught: 333
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: daily_life/household_repair ---
+Total Extracted: 347
+Total Taught: 347
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

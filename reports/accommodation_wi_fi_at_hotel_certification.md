@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: accommodation/wi_fi_at_hotel ---
+Total Extracted: 270
+Total Taught: 270
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

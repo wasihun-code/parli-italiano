@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: shopping/paying_by_card ---
+Total Extracted: 249
+Total Taught: 249
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

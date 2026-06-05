@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: social/inviting_a_friend ---
+Total Extracted: 356
+Total Taught: 356
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

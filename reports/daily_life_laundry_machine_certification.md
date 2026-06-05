@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: daily_life/laundry_machine ---
+Total Extracted: 361
+Total Taught: 361
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

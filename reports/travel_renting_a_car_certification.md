@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: travel/renting_a_car ---
+Total Extracted: 358
+Total Taught: 358
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: reflexive/verbs_verbi_riflessivi ---
+Total Extracted: 243
+Total Taught: 243
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: verbs/are_verbi_in_are ---
+Total Extracted: 286
+Total Taught: 286
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: shopping/souvenir_shop ---
+Total Extracted: 224
+Total Taught: 224
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

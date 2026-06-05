@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: dining/ordering_pasta ---
+Total Extracted: 300
+Total Taught: 300
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

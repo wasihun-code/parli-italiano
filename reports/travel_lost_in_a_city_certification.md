@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: travel/lost_in_a_city ---
+Total Extracted: 316
+Total Taught: 316
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

@@ -32,15 +32,39 @@ def main(scenario_slug):
     for item in data["phrases"]: valid_ids.add(item["id"])
     for item in data["sentences"]: valid_ids.add(item["id"])
     
+    taught_ids = set()
     for l in data["lessons"].get("lessons", []):
         for s in l.get("sections", []):
-            for e_id in s.get("exerciseIds", []):
-                if e_id not in valid_ids:
-                    errors.append(f"Lesson {l.get('id')} references missing item ID: {e_id}")
+            if isinstance(s, dict):
+                for e_id in s.get("exerciseIds", []):
+                    taught_ids.add(e_id)
+            elif isinstance(s, str):
+                taught_ids.add(s)
+        for k in ["vocabulary", "phrase", "sentence", "phrases", "sentences", "mastery"]:
+            if k in l:
+                for e_id in l[k]:
+                    taught_ids.add(e_id)
+                    
+    # 1. Check taught_ids <= valid_ids
+    for e_id in taught_ids:
+        if e_id not in valid_ids:
+            errors.append(f"Lesson references missing item ID: {e_id}")
+
+    # 2. Check valid_ids <= taught_ids
+    untaught_ids = valid_ids - taught_ids
+    if untaught_ids:
+        errors.append(f"Coverage Failure: {len(untaught_ids)} extracted items are not taught in any lesson.")
+        for e_id in sorted(list(untaught_ids))[:10]:
+            errors.append(f"  - Untaught ID: {e_id}")
 
     print(f"--- Scenario Integrity Audit: {scenario_slug} ---")
+    print(f"Total Extracted: {len(valid_ids)}")
+    print(f"Total Taught: {len(taught_ids)}")
+    if valid_ids:
+        print(f"Coverage: {(len(taught_ids.intersection(valid_ids)) / len(valid_ids)) * 100:.1f}%")
+
     if errors:
-        for e in errors[:10]: print(f"  - {e}")
+        for e in errors[:15]: print(f"  - {e}")
         print("Scenario Integrity Audit: FAIL")
         return False
     else:

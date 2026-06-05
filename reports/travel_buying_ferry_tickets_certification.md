@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: travel/buying_ferry_tickets ---
+Total Extracted: 345
+Total Taught: 345
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

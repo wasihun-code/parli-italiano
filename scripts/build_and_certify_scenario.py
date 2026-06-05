@@ -37,9 +37,7 @@ def main():
     if not run_script("linguistic_extractor.py", scenario_slug): sys.exit(1)
     
     # 2. Curriculum Generation
-    # (Note: Agent 4 refined mini_lessons.json already for Hotel Check-In, 
-    # but a default script could handle the baseline)
-    # if not run_script("curriculum_designer.py", scenario_slug): sys.exit(1)
+    if not run_script("curriculum_designer.py", scenario_slug): sys.exit(1)
     
     # 3. Distractor Generation
     if not run_script("distractor_generator.py", scenario_slug): sys.exit(1)

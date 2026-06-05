@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: dining/paying_the_bill ---
+Total Extracted: 211
+Total Taught: 211
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: dining/street_food ---
+Total Extracted: 399
+Total Taught: 399
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 

@@ -70,6 +70,9 @@ Pre-submission autoplay leaked: NO
 MINI LESSON AUDIO AUDIT: PASS
 
 --- Scenario Integrity Audit: accommodation/apartment_key_pickup ---
+Total Extracted: 371
+Total Taught: 371
+Coverage: 100.0%
 Scenario Integrity Audit: PASS
 
 
