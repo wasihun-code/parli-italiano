@@ -28,6 +28,10 @@ import {
   shuffle,
 } from '@shared/utils/trainingUi';
 import { getWrongAnswerExplanation } from '@shared/utils/feedbackExplanations';
+import { GlobalDictionaryResolver } from '../services/globalDictionaryResolver';
+import { GlobalProgressService, MasteryState } from '../services/globalProgressService';
+import { CurriculumAdaptationService, AdaptationResult } from '../services/curriculumAdaptationService';
+import { MasteryBadge } from '../components/MasteryBadge';
 
 type FeedbackState = {
   status: AnswerStatus;
@@ -59,6 +63,9 @@ export const VocabularyTrainingScreen: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState<string>();
   const [canListen, setCanListen] = useState(true);
+
+  const [currentMasteryState, setCurrentMasteryState] = useState<MasteryState>('UNKNOWN');
+  const [adaptationResult, setAdaptationResult] = useState<AdaptationResult>();
 
   const srsItems = useSrsStore(state => state.items);
   const recordAnswer = useSrsStore(state => state.recordAnswer);
@@ -99,6 +106,20 @@ export const VocabularyTrainingScreen: React.FC = () => {
       id => srsItems[id]?.learned ?? false,
     );
   }, [isSkipTest, currentIndex, testTerms, terms, srsItems]);
+
+  useEffect(() => {
+    if (!activeTerm) return;
+    let cancelled = false;
+    async function fetchMastery() {
+      const globalId = await GlobalDictionaryResolver.resolveLocalToGlobal(Number(scenarioId), activeTerm!.term.id);
+      if (globalId && !cancelled) {
+        const state = await GlobalProgressService.getMasteryState(globalId);
+        setCurrentMasteryState(state);
+      }
+    }
+    fetchMastery();
+    return () => { cancelled = true; };
+  }, [activeTerm, scenarioId]);
   
   const exercise = useMemo(() => {
     if (!activeTerm) return null;
@@ -145,9 +166,17 @@ export const VocabularyTrainingScreen: React.FC = () => {
         setScenarioTitle(header?.title ?? `Scenario ${scenarioId}`);
         const srsState = useSrsStore.getState();
         const sortedVocabulary = sortVocabularyByDifficulty(vocabulary);
-        registerVocabularyTerms(sortedVocabulary, srsState);
+        
+        // Phase 7.5: Curriculum Adaptation
+        const vocabIds = sortedVocabulary.map(v => v.id);
+        const adaptation = await CurriculumAdaptationService.adaptVocabularyLesson(Number(scenarioId), vocabIds);
+        if (!cancelled) setAdaptationResult(adaptation);
+        
+        const filteredVocabulary = sortedVocabulary.filter(v => adaptation.visibleIds.includes(v.id));
+
+        registerVocabularyTerms(filteredVocabulary, srsState);
         setAllTerms(sortedVocabulary);
-        setTerms(sortedVocabulary);
+        setTerms(filteredVocabulary);
       } catch (error) {
         if (!cancelled) {
           setLoadError(error instanceof Error ? error.message : 'Unable to load vocabulary.');
@@ -351,6 +380,11 @@ export const VocabularyTrainingScreen: React.FC = () => {
           <div style={{ ...progressBar(), overflow: 'visible' }}>
             <div style={progressFill(progressFraction)} />
           </div>
+          {adaptationResult && adaptationResult.stats.skipped > 0 && (
+            <div style={{ marginTop: 8, fontSize: 11, fontWeight: 700, color: colors.success, textAlign: 'center' }}>
+              ✨ {adaptationResult.stats.skipped} {isIt ? 'parole già imparate saltate' : 'words already mastered skipped'}!
+            </div>
+          )}
         </div>
         {!isSkipTest && !skipTestUsed && (
           <button 
@@ -403,6 +437,9 @@ export const VocabularyTrainingScreen: React.FC = () => {
                   {exercise?.kind === 'listening' ? (isIt ? 'Ascolta e traduci' : 'Listen and translate') : exercise?.kind === 'spelling' ? (isIt ? 'Scrivi in italiano' : 'Write in Italian') : (isIt ? 'Traduci' : 'Translate')}
                 </h2>
                 <h1 style={{ color: colors.primary, fontSize: 32, margin: 0, fontWeight: 900 }}>{exercise?.prompt}</h1>
+                <div style={{ marginTop: 8 }}>
+                  <MasteryBadge state={currentMasteryState} />
+                </div>
               </div>
 
               {(exercise?.kind === 'listening' || exercise?.kind === 'flashcard') && (

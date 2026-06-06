@@ -7,6 +7,7 @@ import { useSubscriptionStore } from '../store/subscriptionStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { findResumeScenario } from '@shared/utils/home';
+import { DailyReviewBanner } from '../components/DailyReviewBanner';
 
 export const HomeScreen: React.FC = () => {
   const navigate = useNavigate();
@@ -73,6 +74,8 @@ export const HomeScreen: React.FC = () => {
             <div style={{ fontSize: 12, fontWeight: 900, color: colors.textSecondary, textTransform: 'uppercase', letterSpacing: 1 }}>XP Totale</div>
           </div>
         </div>
+
+        <DailyReviewBanner />
 
         {/* Main Action Card */}
         {resumeScenario ? (

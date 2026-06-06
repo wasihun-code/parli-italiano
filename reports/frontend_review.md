@@ -1,99 +1,78 @@
-# Frontend Review: Global Progress Tracking Integration (Phase 7.3)
+# Frontend Review: Phase 7.8 — Daily Review System
 
 ## 1. Overview
-This report outlines the strategy for capturing learning events (exposure, correct, and incorrect answers) and routing them to the new `globalProgressService.ts`. The goal is to establish a unified global progress system while preserving existing scenario-based mastery and UI behavior.
+This report outlines the design and implementation specifications for the new `DailyReviewScreen.tsx`, the `HomeScreen` integration, and Admin Dashboard enhancements for tracking student progress through Spaced Repetition (SRS).
 
-## 2. Learning Event Definitions
-Standardized events to be captured across all learning activities:
+## 2. DailyReviewScreen.tsx Design
 
-| Event Type | Trigger | Data Captured |
-|:---|:---|:---|
-| **EXPOSURE** | Item is first presented in a training exercise or conversation. | `itemId`, `timestamp`, `scenarioId`, `activityType` |
-| **CORRECT** | User provides a correct or nearly correct answer. | `itemId`, `timestamp`, `scenarioId`, `activityType`, `responseTime` |
-| **INCORRECT** | User provides an incorrect answer. | `itemId`, `timestamp`, `scenarioId`, `activityType` |
+### 2.1 Screen State Machine
+The screen will manage three primary states:
+1. **Intro**: Displays a summary of reviews due today.
+2. **Reviewing**: The active flashcard session.
+3. **Outro**: Success screen with performance metrics.
 
-## 3. Global Progress Service Design
-The `globalProgressService.ts` will act as a central orchestrator, decoupling the UI from specific store implementations and ensuring data consistency across multiple targets (Zustand stores, Dexie, and Analytics).
+### 2.2 UI Specifications
 
-### Interface Sketch
-```typescript
-export interface ActivityMetadata {
-  scenarioId: number;
-  activityType: 'vocabulary' | 'phrase' | 'sentence' | 'review' | 'conversation';
-  itemType: 'vocabulary' | 'phrase' | 'sentence';
-}
+#### Intro State (Entry Screen)
+- **Header**: "Ripasso Giornaliero" (Daily Review).
+- **Metric Cards**:
+    - **Vocabulary**: 12 items.
+    - **Phrases**: 6 items.
+- **Action**: Large "Inizia Sessione" (Start Session) button.
 
-export const globalProgressService = {
-  /**
-   * Primary entry point for all learning events.
-   */
-  async recordActivity(
-    itemId: string,
-    result: 'exposure' | 'correct' | 'incorrect',
-    metadata: ActivityMetadata
-  ): Promise<void> {
-    // 1. Map legacy ID to Global ID if applicable
-    const globalId = this.mapToGlobalId(itemId);
+#### Reviewing State (Flashcards)
+- **Progress Bar**: Thin bar at the top showing completion percentage.
+- **Flashcard**:
+    - Centered card with `colors.cardBg` and 16px border-radius.
+    - Large typography for Italian (e.g., `fontSize: 36`).
+    - Subtitle indicating category (e.g., "Vocabolario").
+    - **Interaction**: Tap card to reveal English translation with a "flip" animation.
+- **Feedback Buttons (Post-Reveal)**:
+    - A row of 4 buttons at the bottom:
+        1. **Again** (`colors.error`): Failed to remember.
+        2. **Hard** (`colors.warning`): Remembered with significant effort.
+        3. **Good** (`colors.primary`): Remembered with standard effort.
+        4. **Easy** (`colors.success`): Remembered instantly.
 
-    // 2. Update SRS Store (Reactive UI State)
-    if (result !== 'exposure') {
-      useSrsStore.getState().recordAnswer(itemId, result === 'correct');
-    }
+#### Outro State (Summary)
+- **Visual**: Celebration icon (e.g., 🏆 or 🎉).
+- **Summary**: "18 elementi ripassati!"
+- **Stats**: Streak update, XP earned.
+- **Action**: "Torna alla Home" button.
 
-    // 3. Record to Global Review History (IndexedDB/Dexie)
-    await db.global_review_history.add({
-      item_id: globalId,
-      timestamp: new Date().toISOString(),
-      result: result === 'correct',
-      scenario_id: metadata.scenarioId
-    });
+### 2.3 SRS Mapping Logic
+To support granular feedback, the `srsStore` should be updated to accept `SrsFeedback`.
+- **Again**: Interval reset to minimum (5 mins).
+- **Hard**: Interval * 1.2.
+- **Good**: Interval * 2.5.
+- **Easy**: Interval * 4.0.
 
-    // 4. Update Global Progress (FSRS-Lite in Dexie)
-    await this.updateGlobalMastery(globalId, result);
+## 3. Home Screen Integration
 
-    // 5. Sync Gamification (XP, Streaks)
-    const progressStore = useProgressStore.getState();
-    if (result === 'correct') {
-      progressStore.addXP(10);
-    } else if (result === 'incorrect') {
-      progressStore.addXP(-2);
-    }
-    
-    // 6. Trigger Scenario Completion Checks
-    this.revalidateScenarioProgress(metadata.scenarioId);
-  }
-};
-```
+### 3.1 Daily Review Banner
+A new component `DailyReviewBanner.tsx` will be placed above the "Main Action Card" on the `HomeScreen`.
 
-## 4. Integration Strategy
+- **Style**:
+    - Background: `colors.chipBg`.
+    - Border: `2px solid ${colors.accent}`.
+    - Icon: 🧠 (Brain).
+    - Text: "**18 Ripassi in scadenza** - Mantieni viva la memoria!"
+- **Action**: Clicking the banner navigates to `/daily-review`.
 
-### A. Capturing from Training Screens
-The `VocabularyTrainingScreen`, `PhraseTrainingScreen`, and `SentenceTrainingScreen` currently call `recordAnswer` and `addXP` directly. These will be refactored to call `globalProgressService.recordActivity`.
+## 4. Admin Dashboard Enhancements
 
-- **Exposure Capture:** Implement a `useEffect` within training components that fires when the `activeTerm`/`activeItem` changes, ensuring every encounter is logged even if the user leaves without answering.
-- **UI Preservation:** Since `useSrsStore` and `useProgressStore` are still being updated, existing progress bars, checkmarks, and completion screens will continue to function without modification.
+### 4.1 Analytics Updates (`AnalyticsDashboard.tsx`)
+- **Metric Card: Average Daily Reviews**:
+    - Tracks how many SRS items users are completing per day on average.
+- **Table: "Le Più Dimenticate" (Most Forgotten Items)**:
+    - Lists Vocabulary/Phrases with the highest "Again" feedback ratio.
+    - Columns: ID, Italian, English, Fail Rate (%).
 
-### B. Capturing from srsStore.ts
-To ensure events are captured even if triggered outside the standard training screens (e.g., via the Placement Test or future Review screens), the `srsStore.ts` will be enhanced with a side-effect hook:
+### 4.2 User Detail View Updates
+- **SRS Heatmap**: A calendar view showing daily review activity for the specific user.
+- **Knowledge Retention Rate**: Percentage of items currently in "Good" or "Easy" status vs. "Again" or "Hard".
 
-```typescript
-// src/store/srsStore.ts refinement
-recordAnswer: (id, correct) => {
-  set(state => { /* ... existing logic ... */ });
-  
-  // Implicitly notify the global service of the event
-  // This ensures that any direct store manipulation is still tracked globally
-  globalProgressService.onStoreAnswerRecorded(id, correct);
-}
-```
-
-## 5. Backward Compatibility & Data Integrity
-- **Legacy IDs:** The service will utilize the `scenario_vocab_mapping_cache` to translate scenario-bound IDs (e.g., `s01-v05`) to global dictionary IDs (e.g., `word_ciao`).
-- **Scenario Progress:** Scenario completion logic (e.g., `maybeCompleteVocabularyPhase`) will remain in place but will eventually transition to reading from the global service's aggregated state.
-- **Max Streak Rule:** During Phase 7.3 migration, existing user data will be aggregated into the global store using the "Max Streak" rule to ensure no progress is lost.
-
-## 6. Next Steps
-1. Create `src/services/globalProgressService.ts`.
-2. Refactor `srsStore.ts` to include the global service notification.
-3. Update `VocabularyTrainingScreen.tsx` as the first pilot for the new event capture flow.
-4. Validate that scenario completion still triggers correctly upon mastering all vocabulary.
+## 5. Technical Implementation Notes
+- Use `framer-motion` for the flashcard flip animation if available, otherwise CSS transitions.
+- Ensure `useSrsStore` is reactive so the banner count updates immediately after a session.
+- Add `KeyboardEvents` support (1, 2, 3, 4 keys) for fast desktop reviewing.

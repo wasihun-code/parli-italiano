@@ -124,7 +124,6 @@ export interface GlobalProgress {
   next_review_at: string;
   last_result?: boolean;
 }
-
 export interface GlobalReviewHistory {
   id?: number;
   item_id: string;
@@ -132,6 +131,9 @@ export interface GlobalReviewHistory {
   result: boolean;
   response_time_ms?: number;
   scenario_id?: number;
+  source?: 'VOCABULARY' | 'CONVERSATION';
+}
+  source?: 'VOCABULARY' | 'CONVERSATION';
 }
 
 export interface ScenarioVocabMappingCache {

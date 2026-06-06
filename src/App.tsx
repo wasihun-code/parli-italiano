@@ -10,6 +10,7 @@ import { PhraseTrainingScreen } from './screens/PhraseTrainingScreen';
 import { SentenceTrainingScreen } from './screens/SentenceTrainingScreen';
 import { ConversationScreen } from './screens/ConversationScreen';
 import { ReviewScreen } from './screens/ReviewScreen';
+import { DailyReviewScreen } from './screens/DailyReviewScreen';
 import { ConversationHistoryScreen } from './screens/ConversationHistoryScreen';
 import { OnboardingScreen } from './screens/OnboardingScreen';
 import { PlacementTestScreen } from './screens/PlacementTestScreen';
@@ -150,6 +151,7 @@ export const App: React.FC = () => {
             <Route path="/scenarios/:scenarioId/conversation/:conversationId" element={<ScriptedConversationScreen />} />
             <Route path="/scenarios/:scenarioId/conversation" element={<ConversationScreen />} />
             <Route path="/review" element={<ReviewScreen />} />
+            <Route path="/daily-review" element={<DailyReviewScreen />} />
             <Route path="/history" element={<ConversationHistoryScreen />} />
             <Route path="/premium" element={<PremiumScreen />} />
             <Route path="/friends" element={<FriendsScreen />} />

@@ -7,6 +7,7 @@ import { spacing } from '@shared/theme/spacing';
 import { PrimaryButton } from '../components/PrimaryButton';
 import { Tts } from '../lib/tts';
 import { FeedbackMessage } from '../components/FeedbackMessage';
+import { ConversationReinforcementService } from '../services/conversationReinforcementService';
 
 type ChatMessage = {
   role: 'host' | 'user';
@@ -38,6 +39,10 @@ export const ScriptedConversationScreen: React.FC = () => {
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [showTranslation, setShowTranslation] = useState<boolean>(false);
   const [revealedMessages, setRevealedMessages] = useState<Set<string>>(new Set());
+  
+  // Phase 7.6 State
+  const [mistakes, setMistakes] = useState(0);
+  const [reinforcedCount, setReinforcedCount] = useState<number | null>(null);
   
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -82,7 +87,17 @@ export const ScriptedConversationScreen: React.FC = () => {
       setIsCorrect(true);
     } else {
       setIsCorrect(false);
+      setMistakes(m => m + 1);
     }
+  };
+
+  const finishConversation = async () => {
+    const fullText = chatHistory.map(m => m.text).join(' ');
+    const count = await ConversationReinforcementService.reinforceConversation(Number(scenarioId), mistakes, fullText);
+    setReinforcedCount(count);
+    setTimeout(() => {
+      navigate(`/scenarios/${scenarioId}/lesson/l1/complete`, { replace: true });
+    }, 2500); // Give user time to see the reinforcement badge
   };
 
   const handleContinue = () => {
@@ -96,15 +111,10 @@ export const ScriptedConversationScreen: React.FC = () => {
 
     const nextId = selectedChoice.nextMessageId;
     
-    // Diagnostic info
-    console.log(`[CONV DIAGNOSTIC] currentNodeId: ${currentMessageId}`);
-    console.log(`[CONV DIAGNOSTIC] historyLength: ${chatHistory.length}`);
-
     if (nextId === 'END') {
       setChatHistory(prev => [...prev, userMessage]);
-      setTimeout(() => {
-        navigate(`/scenarios/${scenarioId}/lesson/l1/complete`, { replace: true });
-      }, 500);
+      setCurrentMessageId(null);
+      void finishConversation();
       return;
     }
 
@@ -114,6 +124,7 @@ export const ScriptedConversationScreen: React.FC = () => {
         setSelectedChoice(null);
         setIsCorrect(null);
         setRevealedMessages(new Set());
+        setMistakes(0);
         return;
     }
 
@@ -125,8 +136,6 @@ export const ScriptedConversationScreen: React.FC = () => {
       const currentIndex = conversation.messages.findIndex(m => m.id === currentMessageId);
       nextMsg = conversation.messages[currentIndex + 1];
     }
-
-    console.log(`[CONV DIAGNOSTIC] nextNodeId: ${nextMsg?.id || 'NONE'}`);
 
     if (nextMsg) {
       const hostMessage: ChatMessage = { 
@@ -143,10 +152,8 @@ export const ScriptedConversationScreen: React.FC = () => {
     } else {
       // No more messages in array - treat as end if not explicit
       setChatHistory(prev => [...prev, userMessage]);
-      console.warn("No next message found in sequence. Ending conversation.");
-      setTimeout(() => {
-        navigate(`/scenarios/${scenarioId}/lesson/l1/complete`, { replace: true });
-      }, 500);
+      setCurrentMessageId(null);
+      void finishConversation();
     }
 
     // Reset state for next turn
@@ -383,7 +390,21 @@ export const ScriptedConversationScreen: React.FC = () => {
         flexDirection: 'column', 
         gap: spacing.md
       }}>
-        {currentMessage?.choices && isCorrect !== true && (
+        {reinforcedCount !== null && (
+          <div className="fade-in" style={{
+            padding: spacing.md,
+            backgroundColor: '#f3e8ff', // subtle purple
+            border: '1px solid #d8b4fe',
+            borderRadius: 12,
+            textAlign: 'center',
+            color: '#6b21a8',
+            fontWeight: 800,
+            fontSize: 14
+          }}>
+            🧠 {reinforcedCount} vocabulary items implicitly reinforced!
+          </div>
+        )}
+        {currentMessage?.choices && isCorrect !== true && reinforcedCount === null && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.sm }}>
             {randomizedChoices.map((choice, idx) => (
               <button
