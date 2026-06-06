@@ -5,7 +5,7 @@ import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
 import pluralData from '../data/pluralWords.json';
 import { useGameStore } from '../store/gameStore';
-import { useAudioStore } from '../store/audioStore';
+import { useUserSettingsStore } from '../store/userSettingsStore';
 import { audioService } from '../lib/audioService';
 import { PrimaryButton } from '../components/PrimaryButton';
 import { shuffle } from '../utils/trainingUi';
@@ -18,7 +18,7 @@ import { getWrongAnswerExplanation } from '../utils/feedbackExplanations';
 export const PluralGame: React.FC = () => {
   const navigate = useNavigate();
   const { pluralGame, unlockLevel, updateHighScore } = useGameStore();
-  const { soundEnabled } = useAudioStore();
+  const { soundEnabled } = useUserSettingsStore();
   
   const [level, setLevel] = useState(1);
   const [gameState, setGameState] = useState<'lobby' | 'playing' | 'gameOver' | 'win'>('lobby');

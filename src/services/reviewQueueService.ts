@@ -1,6 +1,5 @@
 import { db } from '../lib/db';
 import { GlobalProgressService, MasteryState } from './globalProgressService';
-import { GlobalDictionaryResolver } from './globalDictionaryResolver';
 
 export interface ReviewItem {
   globalId: string;
@@ -8,6 +7,7 @@ export interface ReviewItem {
   english: string;
   audio?: string;
   state: MasteryState;
+  type: 'vocabulary' | 'phrase' | 'sentence';
 }
 
 export class ReviewQueueService {
@@ -17,13 +17,27 @@ export class ReviewQueueService {
   static async getDailyQueue(): Promise<ReviewItem[]> {
     const now = new Date().toISOString();
     
-    // 1. Fetch Due and Lapsed Items
-    const progressItems = await db.global_progress
-      .filter(p => {
-        return p.next_review_at <= now || 
-               p.correct_streak === 0 && p.total_attempts > 0; // LAPSED
-      })
+    // 1. Fetch Due and Lapsed Items efficiently
+    // Due items: Use index on next_review_at
+    const dueItems = await db.global_progress
+      .where('next_review_at')
+      .belowOrEqual(now)
       .toArray();
+
+    // Lapsed items: Use index on correct_streak
+    const lapsedItems = await db.global_progress
+      .where('correct_streak')
+      .equals(0)
+      .and(p => p.total_attempts > 0)
+      .toArray();
+
+    // Merge and de-duplicate
+    const seen = new Set<string>();
+    const progressItems = [...dueItems, ...lapsedItems].filter(p => {
+      if (seen.has(p.item_id)) return false;
+      seen.add(p.item_id);
+      return true;
+    });
 
     // 2. Classify & Prioritize
     // Priority: LAPSED (100) > RELEARNING (90) > DUE (40) > LEARNING (70)
@@ -40,10 +54,15 @@ export class ReviewQueueService {
     // 3. Apply Hard Cap (100)
     const cappedItems = scoredItems.slice(0, 100).map(si => si.progress);
 
-    // 4. Resolve Dictionary Metadata
+    // 4. Resolve Dictionary Metadata in Bulk
+    const itemIds = cappedItems.map(p => p.item_id);
+    const entries = await db.global_dictionary.bulkGet(itemIds);
+    
     const reviewItems: ReviewItem[] = [];
-    for (const p of cappedItems) {
-      const entry = await db.global_dictionary.get(p.item_id);
+    for (let i = 0; i < cappedItems.length; i++) {
+      const p = cappedItems[i];
+      const entry = entries[i];
+      
       if (entry) {
         // Derive state for UI
         let state: MasteryState = 'UNKNOWN';
@@ -58,7 +77,8 @@ export class ReviewQueueService {
           italian: entry.italian,
           english: entry.english_primary,
           audio: entry.audio_json,
-          state
+          state,
+          type: p.item_type
         });
       }
     }

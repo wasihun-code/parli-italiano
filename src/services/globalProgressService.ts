@@ -20,41 +20,68 @@ export class GlobalProgressService {
   }
 
   static async recordAnswer(globalId: string, isCorrect: boolean, scenarioId?: number, source: 'VOCABULARY' | 'CONVERSATION' = 'VOCABULARY') {
-    let progress = await db.global_progress.get(globalId);
+    await this.recordBatchResults([{ globalId, isCorrect }], scenarioId, source);
+  }
 
-    if (!progress) {
-      await this.recordExposure(globalId);
-      progress = await db.global_progress.get(globalId);
-      if (!progress) return;
-    }
-
+  static async recordBatchResults(
+    results: { globalId: string, isCorrect: boolean }[], 
+    scenarioId?: number, 
+    source: 'VOCABULARY' | 'CONVERSATION' = 'VOCABULARY'
+  ) {
+    const globalIds = results.map(r => r.globalId);
     const now = new Date().toISOString();
 
-    // FSRS-Lite inspired state transitions for Phase 7.3
-    progress.total_attempts += 1;
-    progress.last_reviewed_at = now;
-    progress.last_result = isCorrect;
+    await db.transaction('rw', [db.global_progress, db.global_review_history], async () => {
+      const existingProgress = await db.global_progress.bulkGet(globalIds);
+      const updates: any[] = [];
+      const historyItems: any[] = [];
 
-    if (isCorrect) {
-      progress.correct_streak += 1;
-      // Basic mock mastery level update (Full SRS scheduled for Phase 7.5/7.8)
-      if (progress.correct_streak >= 3) progress.mastery_level = Math.max(progress.mastery_level, 1);
-    } else {
-      progress.correct_streak = 0;
-      // Soft lapse
-      progress.mastery_level = Math.max(0, progress.mastery_level - 1);
-    }
+      for (let i = 0; i < results.length; i++) {
+        const { globalId, isCorrect } = results[i];
+        let progress = existingProgress[i];
 
-    await db.global_progress.put(progress);
+        if (!progress) {
+          // Default for new items
+          progress = {
+            item_id: globalId,
+            item_type: 'vocabulary', // Defaulting to vocabulary for implicit reinforcement
+            mastery_level: 0,
+            correct_streak: 0,
+            total_attempts: 0,
+            last_reviewed_at: now,
+            next_review_at: now,
+          };
+        }
 
-    // Record History
-    await db.global_review_history.add({
-      item_id: globalId,
-      timestamp: now,
-      result: isCorrect,
-      scenario_id: scenarioId,
-      source: source
-    } as any); // Type cast until db.ts interface is updated
+        progress.total_attempts += 1;
+        progress.last_reviewed_at = now;
+        progress.last_result = isCorrect;
+
+        if (isCorrect) {
+          progress.correct_streak += 1;
+          if (progress.correct_streak >= 3) {
+            progress.mastery_level = Math.max(progress.mastery_level, 1);
+          }
+        } else {
+          progress.correct_streak = 0;
+          progress.mastery_level = Math.max(0, progress.mastery_level - 1);
+        }
+
+        updates.push(progress);
+        historyItems.push({
+          item_id: globalId,
+          timestamp: now,
+          result: isCorrect,
+          scenario_id: scenarioId,
+          source: source
+        });
+      }
+
+      await Promise.all([
+        db.global_progress.bulkPut(updates),
+        db.global_review_history.bulkAdd(historyItems)
+      ]);
+    });
   }
 
   static async getMasteryState(globalId: string): Promise<MasteryState> {

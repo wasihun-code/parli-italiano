@@ -133,8 +133,6 @@ export interface GlobalReviewHistory {
   scenario_id?: number;
   source?: 'VOCABULARY' | 'CONVERSATION';
 }
-  source?: 'VOCABULARY' | 'CONVERSATION';
-}
 
 export interface ScenarioVocabMappingCache {
   id: string;
@@ -179,6 +177,11 @@ class ParlaItalianoDatabase extends Dexie {
       global_progress: 'item_id, item_type, next_review_at',
       global_review_history: '++id, item_id, timestamp',
       scenario_vocab_mapping_cache: 'id, scenario_id, global_dict_id, [scenario_id+global_dict_id]',
+    });
+
+    this.version(3).stores({
+      global_progress: 'item_id, item_type, next_review_at, mastery_level, correct_streak',
+      global_review_history: '++id, item_id, timestamp, scenario_id',
     });
   }
 }

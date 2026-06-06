@@ -69,37 +69,48 @@ export class ConversationReinforcementService {
     }
 
     // 3. Filter down to ONLY actually encountered vocabulary
-    const activeGlobalIds = new Set<string>();
-    for (const gid of globalIds) {
-      const entry = await db.global_dictionary.get(gid);
+    const activeGlobalIds: string[] = [];
+    const entries = await db.global_dictionary.bulkGet(globalIds);
+    
+    for (let i = 0; i < globalIds.length; i++) {
+      const entry = entries[i];
       if (entry) {
         const itemTokens = tokenize(entry.italian);
-        // Multi-word items must have all parts encountered
         const isEncountered = itemTokens.length > 0 && itemTokens.every(t => encounteredTokens.has(t));
         if (isEncountered) {
-          activeGlobalIds.add(gid);
+          activeGlobalIds.push(globalIds[i]);
         }
       }
     }
 
-    if (activeGlobalIds.size === 0) return 0;
+    if (activeGlobalIds.length === 0) return 0;
 
     // 4. Priority Scoring & Sorting
-    const scoredItems = await Promise.all(Array.from(activeGlobalIds).map(async gid => {
-      const state = await GlobalProgressService.getMasteryState(gid);
-      const entry = await db.global_dictionary.get(gid);
+    const progressRecords = await db.global_progress.bulkGet(activeGlobalIds);
+    const scoredItems = activeGlobalIds.map((gid, index) => {
+      const progress = progressRecords[index];
+      const entry = entries.find(e => e?.id === gid);
+      
+      // Derive mastery state
+      let state: MasteryState = 'UNKNOWN';
+      if (progress) {
+        if (progress.mastery_level >= 4) state = 'MASTERED';
+        else if (progress.mastery_level === 3) state = 'ADVANCED';
+        else if (progress.mastery_level >= 1) state = 'LEARNED';
+        else if (progress.correct_streak === 0 && progress.total_attempts > 0) state = 'LAPSED';
+        else state = 'LEARNING';
+      }
+
       let score = PRIORITY_SCORES[state];
       
-      // Tie-breakers
-      const isDue = false; // Mock for Phase 7.7. Full SRS due check in 7.8
-      if (isDue) score += 5;
-      
       // Frequency bonus (up to +4 points)
-      const freq = tokenFrequency[tokenize(entry?.italian || '')[0]] || 1;
-      score += Math.min(4, freq);
+      if (entry) {
+        const freq = tokenFrequency[tokenize(entry.italian)[0]] || 1;
+        score += Math.min(4, freq);
+      }
       
       return { gid, score, state };
-    }));
+    });
 
     scoredItems.sort((a, b) => b.score - a.score);
 
@@ -107,19 +118,18 @@ export class ConversationReinforcementService {
     const budgetedItems = scoredItems.slice(0, REINFORCEMENT_BUDGET_CAP);
 
     // 6. Award Reinforcement
-    let reinforcedCount = 0;
     const isPerfect = mistakes === 0;
     const isGood = mistakes > 0 && mistakes <= 2;
     const isSuccess = isPerfect || isGood;
 
-    for (const item of budgetedItems) {
-      // Do not prematurely mark UNKNOWN items as learned through conversation alone
-      if (['LEARNED', 'ADVANCED', 'MASTERED', 'LAPSED', 'RELEARNING'].includes(item.state)) {
-        await GlobalProgressService.recordAnswer(item.gid, isSuccess, scenarioId, 'CONVERSATION');
-        if (isSuccess) reinforcedCount++;
-      }
+    const itemsToUpdate = budgetedItems
+      .filter(item => ['LEARNED', 'ADVANCED', 'MASTERED', 'LAPSED', 'RELEARNING'].includes(item.state))
+      .map(item => ({ globalId: item.gid, isCorrect: isSuccess }));
+
+    if (itemsToUpdate.length > 0) {
+      await GlobalProgressService.recordBatchResults(itemsToUpdate, scenarioId, 'CONVERSATION');
     }
 
-    return reinforcedCount;
+    return isSuccess ? itemsToUpdate.length : 0;
   }
 }

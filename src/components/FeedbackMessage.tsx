@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { audioService } from '../lib/audioService';
-import { useAudioStore } from '../store/audioStore';
+import { useUserSettingsStore } from '../store/userSettingsStore';
 
 export const FeedbackMessage: React.FC<{
   type: 'correct' | 'incorrect' | 'neutral';
   message: string | React.ReactNode;
   explanation?: string | React.ReactNode;
 }> = ({ type, message, explanation }) => {
-  const soundEnabled = useAudioStore(state => state.soundEnabled);
+  const soundEnabled = useUserSettingsStore(state => state.soundEnabled);
 
   useEffect(() => {
     if (soundEnabled) {
