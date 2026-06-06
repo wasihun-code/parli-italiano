@@ -43,6 +43,17 @@ import { useCurrentUser } from '@shared/store/authStore';
 import { useSubscriptionStore } from './store/subscriptionStore';
 import { FooterNav } from './components/FooterNav';
 
+import { AdminLayout } from './screens/admin/AdminLayout';
+import { AdminDashboard } from './screens/admin/AdminDashboard';
+import { ScenarioBrowser } from './screens/admin/ScenarioBrowser';
+import { ScenarioDetailView } from './screens/admin/ScenarioDetailView';
+import { AudioDashboard } from './screens/admin/AudioDashboard';
+import { CertificationDashboard } from './screens/admin/CertificationDashboard';
+import { FactoryOperations } from './screens/admin/FactoryOperations';
+import { UserManagement } from './screens/admin/UserManagement';
+import { UserDetailView } from './screens/admin/UserDetailView';
+import { AnalyticsDashboard } from './screens/admin/AnalyticsDashboard';
+
 const OnboardingGuard: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -95,6 +106,17 @@ export const App: React.FC = () => {
       <AuthGuard>
         <OnboardingGuard>
           <Routes>
+            <Route path="/admin" element={<AdminLayout />}>
+              <Route index element={<AdminDashboard />} />
+              <Route path="curriculum" element={<ScenarioBrowser />} />
+              <Route path="curriculum/:scenarioId" element={<ScenarioDetailView />} />
+              <Route path="audio" element={<AudioDashboard />} />
+              <Route path="certification" element={<CertificationDashboard />} />
+              <Route path="factory" element={<FactoryOperations />} />
+              <Route path="users" element={<UserManagement />} />
+              <Route path="users/:userId" element={<UserDetailView />} />
+              <Route path="analytics" element={<AnalyticsDashboard />} />
+            </Route>
             <Route path="/auth" element={<AuthScreen />} />
             <Route path="/profile" element={<ProfileScreen />} />
             <Route path="/mastered" element={<MasteredScreen />} />
