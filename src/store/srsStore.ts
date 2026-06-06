@@ -2,6 +2,7 @@ import {create} from 'zustand';
 import {persist, createJSONStorage} from 'zustand/middleware';
 
 import {createPersistStorage} from './persistStorage';
+import { GlobalProgressService } from '../services/globalProgressService';
 
 export type SrsItemType = 'foundation' | 'vocabulary' | 'phrase' | 'sentence';
 
@@ -67,7 +68,10 @@ export const useSrsStore = create<SrsState>()(
             },
           };
         }),
-      recordAnswer: (id, correct) =>
+      recordAnswer: (id, correct) => {
+        // Fire global progress hook (Phase 7.3)
+        GlobalProgressService.recordAnswer(id, correct).catch(console.error);
+
         set(state => {
           const existing = state.items[id];
           if (!existing) {
@@ -90,7 +94,8 @@ export const useSrsStore = create<SrsState>()(
               },
             },
           };
-        }),
+        })
+      },
       getDueItems: (now = new Date()) =>
         Object.values(get().items).filter(item => new Date(item.dueAt) <= now),
       isLearned: id => get().items[id]?.learned ?? false,

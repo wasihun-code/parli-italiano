@@ -105,6 +105,42 @@ export interface TtsCache {
   updated_at: string;
 }
 
+export interface GlobalDictionaryEntry {
+  id: string;
+  italian: string;
+  english_primary: string;
+  audio_json?: string;
+  part_of_speech?: string;
+  last_updated: string;
+}
+
+export interface GlobalProgress {
+  item_id: string;
+  item_type: 'vocabulary' | 'phrase' | 'sentence';
+  mastery_level: number;
+  correct_streak: number;
+  total_attempts: number;
+  last_reviewed_at: string;
+  next_review_at: string;
+  last_result?: boolean;
+}
+
+export interface GlobalReviewHistory {
+  id?: number;
+  item_id: string;
+  timestamp: string;
+  result: boolean;
+  response_time_ms?: number;
+  scenario_id?: number;
+}
+
+export interface ScenarioVocabMappingCache {
+  id: string;
+  scenario_id: number;
+  global_dict_id: string;
+  sort_order: number;
+}
+
 class ParlaItalianoDatabase extends Dexie {
   app_metadata!: EntityTable<AppMetadata, 'key'>;
   foundation_lessons!: EntityTable<FoundationLesson, 'id'>;
@@ -116,6 +152,10 @@ class ParlaItalianoDatabase extends Dexie {
   scenario_sentences!: EntityTable<ScenarioSentence, 'id'>;
   srs_items!: EntityTable<SrsItem, 'item_id'>;
   tts_cache!: EntityTable<TtsCache, 'text'>;
+  global_dictionary!: EntityTable<GlobalDictionaryEntry, 'id'>;
+  global_progress!: EntityTable<GlobalProgress, 'item_id'>;
+  global_review_history!: EntityTable<GlobalReviewHistory, 'id'>;
+  scenario_vocab_mapping_cache!: EntityTable<ScenarioVocabMappingCache, 'id'>;
 
   constructor() {
     super('ParlaItalianoDB');
@@ -130,6 +170,13 @@ class ParlaItalianoDatabase extends Dexie {
       scenario_sentences: 'id, scenario_id, sort_order',
       srs_items: 'item_id, item_type, scenario_id, foundation_lesson_id, due_at',
       tts_cache: 'text',
+    });
+
+    this.version(2).stores({
+      global_dictionary: 'id, italian',
+      global_progress: 'item_id, item_type, next_review_at',
+      global_review_history: '++id, item_id, timestamp',
+      scenario_vocab_mapping_cache: 'id, scenario_id, global_dict_id, [scenario_id+global_dict_id]',
     });
   }
 }
