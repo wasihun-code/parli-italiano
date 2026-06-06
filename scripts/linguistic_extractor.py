@@ -6,9 +6,11 @@ import string
 
 def tokenize(text):
     text = text.lower()
-    text = text.replace("'", " ")
-    text = re.sub(r'[^\w\sàèìòùé]', '', text)
-    return [w for w in text.split() if len(w) > 2 and not w.isdigit()]
+    # Preserve apostrophes within words (e.g., l'ascensore)
+    # but remove other punctuation
+    text = re.sub(r"[.,!?;:\"“”«»()[\]{}]", "", text)
+    # Tokenize by splitting on whitespace but KEEPING apostrophes
+    return [w for w in text.split() if not w.isdigit() and len(w) > 0]
 
 def main(scenario_slug):
     base_path = f"src/data/exports/{scenario_slug}"

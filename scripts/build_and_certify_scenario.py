@@ -46,7 +46,11 @@ def main():
     # (Agent 6 filled translations for Hotel Check-In)
     if not run_script("audio_manifest_updater.py", scenario_slug): sys.exit(1)
     
-    # 5. Audio Generation (Mocked for factory validation due to environment limits)
+    # 5. Global Dictionary Update (Phase 7.2)
+    log_step("Updating Global Dictionary")
+    if not run_script("global_dictionary_generator.py", ""): sys.exit(1)
+    
+    # 6. Audio Generation (Mocked for factory validation due to environment limits)
     if not run_script("mock_audio_files.py", scenario_slug): sys.exit(1)
     
     # 6. Certification

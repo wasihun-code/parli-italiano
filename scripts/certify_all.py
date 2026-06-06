@@ -100,6 +100,10 @@ def main():
     with open("reports/global_certification.json", "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
 
+    # Dictionary Audit (Phase 7.2)
+    print("\n[Phase 7.2] Running Global Dictionary Integrity Audit...")
+    subprocess.run([sys.executable, "scripts/dictionary_integrity_audit.py"])
+
     print(f"\nGlobal certification completed.")
     print(f"Pass Rate: {pass_rate:.2f}%")
     print(f"Results saved to reports/global_certification.md and .json")
