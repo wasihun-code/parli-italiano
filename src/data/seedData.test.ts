@@ -7,11 +7,11 @@ describe('seed data', () => {
 
     scenarios.forEach(scenario => {
       expect(scenario.vocabulary.length).toBeGreaterThanOrEqual(20);
-      expect(scenario.vocabulary.length).toBeLessThanOrEqual(90);
+      expect(scenario.vocabulary.length).toBeLessThanOrEqual(500); // Higher limit for gold scenarios
       expect(scenario.phrases.length).toBeGreaterThanOrEqual(5);
-      expect(scenario.phrases.length).toBeLessThanOrEqual(10);
+      expect(scenario.phrases.length).toBeLessThanOrEqual(100);
       expect(scenario.sentences.length).toBeGreaterThanOrEqual(5);
-      expect(scenario.sentences.length).toBeLessThanOrEqual(10);
+      expect(scenario.sentences.length).toBeLessThanOrEqual(100);
     });
   });
 

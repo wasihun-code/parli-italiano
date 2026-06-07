@@ -20,6 +20,8 @@ export const Screen: React.FC<ScreenProps> = ({ children, style }) => {
                     location.pathname.includes('/conversation') ||
                     location.pathname.includes('/placement-test') ||
                     location.pathname.includes('/foundations/') ||
+                    location.pathname.includes('/train') ||
+                    location.pathname.includes('/pilot') ||
                     location.pathname.startsWith('/stories/');
   
   const showNav = location.pathname !== '/onboarding' && 

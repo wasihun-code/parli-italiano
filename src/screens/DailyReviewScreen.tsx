@@ -31,7 +31,9 @@ export const DailyReviewScreen: React.FC = () => {
 
   const stats = useMemo(() => {
     return {
-      vocabulary: dueItems.length, // Currently vocab + core phrases
+      vocabulary: dueItems.filter(i => i.type === 'vocabulary').length,
+      phrases: dueItems.filter(i => i.type === 'phrase').length,
+      sentences: dueItems.filter(i => i.type === 'sentence').length,
       total: dueItems.length
     };
   }, [dueItems]);

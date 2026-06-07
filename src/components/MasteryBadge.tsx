@@ -9,7 +9,7 @@ interface MasteryBadgeProps {
 }
 
 export const MasteryBadge: React.FC<MasteryBadgeProps> = ({ state, showLabel = true }) => {
-  let color = colors.textSecondary;
+  let color: string = colors.textSecondary;
   let label = 'Unknown';
   let icon = '❓';
 

@@ -1,6 +1,6 @@
 import Dexie, { type EntityTable } from 'dexie';
-import { foundationLessons } from '@shared/data/foundations';
-import { scenarios } from '@shared/data/scenarios';
+import { foundationLessons } from '../data/foundations';
+import { scenarios } from '../data/scenarios';
 
 // Schema definitions matching src/db/schema.ts as closely as possible in Dexie
 export interface AppMetadata {
@@ -137,8 +137,18 @@ export interface GlobalReviewHistory {
 export interface ScenarioVocabMappingCache {
   id: string;
   scenario_id: number;
+  scenario_slug: string;
+  local_id: string;
   global_dict_id: string;
   sort_order: number;
+}
+
+export interface LearningSession {
+  scenario_id: number;
+  current_step_index: number;
+  steps_json: string; // Serialized LearningStep[]
+  updated_at: string;
+  is_completed: boolean;
 }
 
 class ParlaItalianoDatabase extends Dexie {
@@ -156,6 +166,7 @@ class ParlaItalianoDatabase extends Dexie {
   global_progress!: EntityTable<GlobalProgress, 'item_id'>;
   global_review_history!: EntityTable<GlobalReviewHistory, 'id'>;
   scenario_vocab_mapping_cache!: EntityTable<ScenarioVocabMappingCache, 'id'>;
+  learning_sessions!: EntityTable<LearningSession, 'scenario_id'>;
 
   constructor() {
     super('ParlaItalianoDB');
@@ -176,12 +187,16 @@ class ParlaItalianoDatabase extends Dexie {
       global_dictionary: 'id, italian',
       global_progress: 'item_id, item_type, next_review_at',
       global_review_history: '++id, item_id, timestamp',
-      scenario_vocab_mapping_cache: 'id, scenario_id, global_dict_id, [scenario_id+global_dict_id]',
+      scenario_vocab_mapping_cache: 'id, scenario_id, scenario_slug, local_id, global_dict_id, [scenario_id+global_dict_id]',
     });
 
     this.version(3).stores({
       global_progress: 'item_id, item_type, next_review_at, mastery_level, correct_streak',
       global_review_history: '++id, item_id, timestamp, scenario_id',
+    });
+
+    this.version(4).stores({
+      learning_sessions: 'scenario_id',
     });
   }
 }

@@ -9,6 +9,7 @@ class AudioService {
   }
 
   private initContext() {
+    if (typeof window === 'undefined') return;
     if (!this.isSoundEnabled()) return;
     if (!this.context) {
       const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;

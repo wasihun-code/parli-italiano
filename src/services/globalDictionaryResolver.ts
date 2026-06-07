@@ -25,7 +25,7 @@ export class GlobalDictionaryResolver {
                 id: `${slug}-${m.local_id}`, // Stable PK
                 scenario_slug: slug,
                 local_id: m.local_id,
-                global_id: m.global_id
+                global_dict_id: m.global_id
               });
             }
           }
@@ -52,18 +52,18 @@ export class GlobalDictionaryResolver {
         .where('local_id').equals(localVocabId)
         .toArray();
         
-      if (mappings.length === 1) return mappings[0].global_id;
+      if (mappings.length === 1) return mappings[0].global_dict_id;
       
       // If multiple scenarios use the same local ID (e.g. v1), we need the scenario context.
       const scenario = await db.scenarios.get(scenarioId);
       if (scenario) {
         // Attempt to match by category/title pattern in scenario_slug
         const slugPart = scenario.title.toLowerCase().replace(/ /g, '_');
-        const match = mappings.find(m => m.scenario_slug.includes(slugPart));
-        if (match) return match.global_id;
+        const match = (mappings as any[]).find(m => m.scenario_slug.includes(slugPart));
+        if (match) return match.global_dict_id;
       }
       
-      return mappings[0]?.global_id || `word_${localVocabId}`;
+      return (mappings as any[])[0]?.global_dict_id || `word_${localVocabId}`;
     } catch (e) {
       console.error("Resolution failed", e);
       return `word_${localVocabId}`;

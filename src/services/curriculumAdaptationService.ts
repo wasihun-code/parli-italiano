@@ -1,4 +1,4 @@
-import { GlobalProgressService, MasteryState } from './globalProgressService';
+import { GlobalProgressService } from './globalProgressService';
 import { GlobalDictionaryResolver } from './globalDictionaryResolver';
 
 export interface AdaptationResult {

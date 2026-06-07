@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom';
 import { HomeScreen } from './screens/HomeScreen';
 import { FoundationsScreen } from './screens/FoundationsScreen';
 import { FoundationLessonScreen } from './screens/FoundationLessonScreen';
@@ -40,9 +40,21 @@ import { MiniLessonTrainingScreen } from './screens/MiniLessonTrainingScreen';
 import { MiniLessonCompleteScreen } from './screens/MiniLessonCompleteScreen';
 import { ConversationSelectionScreen } from './screens/ConversationSelectionScreen';
 import { ScriptedConversationScreen } from './screens/ScriptedConversationScreen';
+import { LearningSystemV3PilotScreen } from './screens/LearningSystemV3PilotScreen';
 import { useCurrentUser } from '@shared/store/authStore';
 import { useSubscriptionStore } from './store/subscriptionStore';
 import { FooterNav } from './components/FooterNav';
+
+// Feature Flag for Phase 9.6
+const USE_V3_LEARNING_SYSTEM = true;
+
+const V3Guard: React.FC<{ fallback: React.ReactNode, v3: React.ReactNode }> = ({ fallback, v3 }) => {
+  const { scenarioId } = useParams<{ scenarioId: string }>();
+  if (USE_V3_LEARNING_SYSTEM && scenarioId === '22') {
+    return <>{v3}</>;
+  }
+  return <>{fallback}</>;
+};
 
 import { AdminLayout } from './screens/admin/AdminLayout';
 import { AdminDashboard } from './screens/admin/AdminDashboard';
@@ -145,7 +157,12 @@ export const App: React.FC = () => {
             <Route path="/scenarios/:scenarioId/phrases" element={<PhraseTrainingScreen />} />
             <Route path="/scenarios/:scenarioId/sentences" element={<SentenceTrainingScreen />} />
             <Route path="/scenarios/:scenarioId/lesson/:lessonId/intro" element={<MiniLessonIntroScreen />} />
-            <Route path="/scenarios/:scenarioId/lesson/:lessonId/train" element={<MiniLessonTrainingScreen />} />
+            <Route path="/scenarios/:scenarioId/lesson/:lessonId/train" element={
+              <V3Guard 
+                fallback={<MiniLessonTrainingScreen />} 
+                v3={<LearningSystemV3PilotScreen />} 
+              />
+            } />
             <Route path="/scenarios/:scenarioId/lesson/:lessonId/complete" element={<MiniLessonCompleteScreen />} />
             <Route path="/scenarios/:scenarioId/conversations" element={<ConversationSelectionScreen />} />
             <Route path="/scenarios/:scenarioId/conversation/:conversationId" element={<ScriptedConversationScreen />} />

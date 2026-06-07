@@ -56,7 +56,30 @@ A scenario is ONLY complete when it passes all automated audits in `certify_scen
 - **DO NOT** leave placeholder UI in production components.
 - **DO NOT** commit untested or uncertified scenario data.
 
-## 11. Required Validation Sequence
+## 11. LEARNING SYSTEM V3 RULES
+
+Mandatory rules:
+1. Conversations remain source of truth.
+2. Learning System V3 is a runtime layer.
+3. Learning System V3 may generate:
+   - exercise paths
+   - exercise sequences
+   - learning flows
+4. Learning System V3 may NOT modify:
+   - conversations.json
+   - vocabulary.json
+   - phrases.json
+   - sentences.json
+   - mini_lessons.json
+5. Gold Standard curriculum is immutable.
+6. Every exercise must contribute to conversation readiness.
+7. Progression must follow:
+   Recognition → Recall → Production → Conversation
+8. Production exercises may never appear before recognition exercises.
+9. Every scenario must remain certifiable.
+10. Every implementation phase requires audits.
+
+## 12. Required Validation Sequence
 1. `conversations.json` generation
 2. `linguistic_extractor.py` execution
 3. `curriculum_designer.py` execution

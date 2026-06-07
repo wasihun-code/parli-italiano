@@ -7,6 +7,25 @@ import { useSrsStore } from '@shared/store/srsStore';
 
 // Mock DB and TTS so async loads complete instantly
 vi.mock('../lib/db', () => ({
+  db: {
+    scenario_vocab_mapping_cache: {
+      count: vi.fn().mockResolvedValue(100),
+      where: vi.fn().mockReturnThis(),
+      equals: vi.fn().mockReturnThis(),
+      toArray: vi.fn().mockResolvedValue([]),
+    },
+    scenarios: {
+      get: vi.fn().mockResolvedValue({ id: 1, title: 'Test Scenario' }),
+    },
+    global_progress: {
+      get: vi.fn().mockResolvedValue(null),
+    },
+    scenario_vocabulary: {
+        where: vi.fn().mockReturnThis(),
+        equals: vi.fn().mockReturnThis(),
+        toArray: vi.fn().mockResolvedValue([])
+    }
+  },
   setupDatabase: vi.fn().mockResolvedValue(undefined),
   loadScenarioHeader: vi.fn().mockResolvedValue({ id: 1, title: 'Test Scenario' }),
   loadScenarioVocabulary: vi.fn().mockResolvedValue([
