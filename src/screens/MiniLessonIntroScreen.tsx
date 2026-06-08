@@ -5,7 +5,7 @@ import { scenarios } from '@shared/data/scenarios';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { PrimaryButton } from '../components/PrimaryButton';
-import { useProgressStore, emptyScenarioProgress } from '@shared/store/progressStore';
+import { useProgressStore, emptyScenarioProgress } from '../store/progressStore';
 
 export const MiniLessonIntroScreen: React.FC = () => {
   const { scenarioId, lessonId } = useParams<{ scenarioId: string; lessonId: string }>();

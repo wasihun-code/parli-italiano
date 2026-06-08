@@ -34,36 +34,40 @@ export const MatchExercise: React.FC<MatchExerciseProps> = ({ payload, onComplet
   }, [options, payload]);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.lg, padding: spacing.xl }}>
-      <h2 style={{ color: colors.primary, textAlign: 'center' }}>Translate this word:</h2>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.xxl, padding: spacing.xxl, alignItems: 'center', justifyContent: 'center', flex: 1 }}>
+      <h2 style={{ color: colors.primary, textAlign: 'center', fontSize: 24, margin: 0 }}>Translate this word:</h2>
       <div style={{ 
-        fontSize: 32, 
+        fontSize: 48, 
         fontWeight: 900, 
         textAlign: 'center', 
         color: colors.accent,
-        marginBottom: spacing.xl 
+        marginBottom: spacing.md 
       }}>
         {payload.english}
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: spacing.md, width: '100%', maxWidth: 500 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: spacing.lg, width: '100%', maxWidth: 800 }}>
         {options.map((option, index) => (
           <button
             key={index}
             onClick={() => handleSelect(option)}
             style={{
-              padding: spacing.xl,
+              padding: spacing.xxl,
               backgroundColor: colors.surface,
               border: `3px solid ${colors.border}`,
               borderRadius: 24,
-              fontSize: 22,
+              fontSize: 28,
               fontWeight: 800,
               color: colors.textPrimary,
               cursor: 'pointer',
               transition: 'all 0.2s',
-              boxShadow: '0 4px 0 rgba(0,0,0,0.05)'
+              boxShadow: '0 8px 0 rgba(0,0,0,0.05)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              minHeight: 120
             }}
-            onMouseDown={e => e.currentTarget.style.transform = 'translateY(4px)'}
+            onMouseDown={e => e.currentTarget.style.transform = 'translateY(8px)'}
             onMouseUp={e => e.currentTarget.style.transform = 'translateY(0)'}
           >
             {option}

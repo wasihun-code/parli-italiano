@@ -19,14 +19,14 @@ export const SpellingExercise: React.FC<SpellingExerciseProps> = ({ payload, onC
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.lg, padding: spacing.xl }}>
-      <h2 style={{ color: colors.primary, textAlign: 'center' }}>Type the Italian word:</h2>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.xxl, padding: spacing.xxl, alignItems: 'center', justifyContent: 'center', flex: 1 }}>
+      <h2 style={{ color: colors.primary, textAlign: 'center', fontSize: 24, margin: 0 }}>Type the Italian word:</h2>
       <div style={{ 
-        fontSize: 32, 
+        fontSize: 48, 
         fontWeight: 900, 
         textAlign: 'center', 
         color: colors.accent,
-        marginBottom: spacing.xl 
+        marginBottom: spacing.md 
       }}>
         {payload.english}
       </div>
@@ -38,22 +38,22 @@ export const SpellingExercise: React.FC<SpellingExerciseProps> = ({ payload, onC
         onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
         style={{
           width: '100%',
-          maxWidth: 400,
-          padding: spacing.xl,
-          fontSize: 32,
+          maxWidth: 600,
+          padding: spacing.xxl,
+          fontSize: 40,
           fontWeight: 800,
           textAlign: 'center',
-          borderRadius: 24,
-          border: `3px solid ${colors.border}`,
+          borderRadius: 32,
+          border: `4px solid ${colors.border}`,
           backgroundColor: colors.surface,
           color: colors.textPrimary,
           outline: 'none',
-          boxShadow: 'inset 0 2px 8px rgba(0,0,0,0.05)'
+          boxShadow: 'inset 0 4px 16px rgba(0,0,0,0.05)'
         }}
         placeholder="Scrivi qui..."
       />
 
-      <div style={{ marginTop: spacing.xl }}>
+      <div style={{ width: '100%', maxWidth: 400, marginTop: spacing.xxl }}>
         <PrimaryButton label="Check Answer" onPress={handleSubmit} />
       </div>
     </div>

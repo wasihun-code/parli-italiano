@@ -17,7 +17,7 @@ export const FooterNav: React.FC = () => {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Hide on training screens and auth/onboarding
-  const hideOn = ['/vocabulary', '/phrases', '/sentences', '/auth', '/onboarding', '/placement-test'];
+  const hideOn = ['/vocabulary', '/phrases', '/sentences', '/auth', '/onboarding', '/placement-test', '/train'];
   const shouldHide = hideOn.some(path => location.pathname.includes(path));
 
   useEffect(() => {

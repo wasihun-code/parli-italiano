@@ -20,7 +20,7 @@ import { defaultCompletionHandler } from './completion';
 export const ExerciseRegistry: Record<string, ExerciseDefinition> = {
   Listen: {
     metadata: { id: 'Listen', name: 'Listening', category: 'Recognition', difficulty: 'Beginner' },
-    payloadBuilder: basicPayloadBuilder,
+    payloadBuilder: mcqPayloadBuilder,
     validator: exactMatchValidator, // Audio playback is binary success usually
     completionHandler: defaultCompletionHandler
   },

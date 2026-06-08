@@ -37,22 +37,26 @@ export const FeedbackOverlay: React.FC<FeedbackOverlayProps> = ({ result, onCont
       </div>
 
       {!isCorrect && result.correctAnswer && (
-        <div style={{ marginTop: spacing.xs }}>
-          <div style={{ fontSize: 14, fontWeight: 800, textTransform: 'uppercase', opacity: 0.8 }}>Correct Answer:</div>
-          <div style={{ fontSize: 20, fontWeight: 700 }}>{result.correctAnswer}</div>
+        <div style={{ marginTop: spacing.md, backgroundColor: 'rgba(255,255,255,0.15)', padding: spacing.lg, borderRadius: 16 }}>
+          <div style={{ fontSize: 16, fontWeight: 800, textTransform: 'uppercase', opacity: 0.9, marginBottom: 4 }}>Risposta Corretta:</div>
+          <div style={{ fontSize: 28, fontWeight: 900 }}>{result.correctAnswer}</div>
         </div>
       )}
 
       {result.feedback && (
-        <div style={{ fontSize: 16, fontStyle: 'italic', opacity: 0.9, backgroundColor: 'rgba(0,0,0,0.1)', padding: spacing.md, borderRadius: 12 }}>
+        <div style={{ fontSize: 18, fontStyle: 'italic', opacity: 0.9, backgroundColor: 'rgba(0,0,0,0.2)', padding: spacing.lg, borderRadius: 16, marginTop: spacing.sm }}>
           {result.feedback}
         </div>
       )}
 
-      {/* Contextual Relevancy */}
-      {isCorrect && (
-        <div style={{ fontSize: 14, opacity: 0.8 }}>
-          Ottimo! Questo termine sarà fondamentale nel primo turno della conversazione.
+      {/* Contextual Relevancy / Recommendation */}
+      {isCorrect ? (
+        <div style={{ fontSize: 16, opacity: 0.9, fontWeight: 600, marginTop: spacing.sm }}>
+          Ottimo! Questo ti aiuterà nella conversazione reale.
+        </div>
+      ) : (
+        <div style={{ fontSize: 16, opacity: 0.9, fontWeight: 600, marginTop: spacing.sm }}>
+          Non preoccuparti. Lo rivedremo presto per aiutarti a memorizzarlo.
         </div>
       )}
 

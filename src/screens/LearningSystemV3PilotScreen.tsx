@@ -8,7 +8,9 @@ import { SessionPersistenceService } from '../services/sessionPersistenceService
 import { resolveExercise } from '../exercises/resolver';
 import { ExerciseRenderer } from '../components/learning/ExerciseRenderer';
 import { FeedbackOverlay } from '../components/learning/FeedbackOverlay';
+import { SessionValidator } from '../services/sessionValidator';
 import { PathGenerationInput, LearningStep } from '../types/learningPath';
+
 import { ValidationResult } from '../exercises/types';
 import { ConversationReadinessService } from '../services/conversationReadinessService';
 import { GlobalProgressService } from '../services/globalProgressService';
@@ -21,7 +23,8 @@ import { audioService } from '../lib/audioService';
 import { Tts } from '../lib/tts';
 
 export const LearningSystemV3PilotScreen: React.FC = () => {
-  const { lessonId } = useParams<{ lessonId: string }>();
+  const { scenarioId, lessonId } = useParams<{ scenarioId: string, lessonId: string }>();
+  const currentScenarioId = Number(scenarioId || 22);
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -38,15 +41,15 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
   useEffect(() => {
     async function initPilot() {
       try {
-        const data = await loadProductionScenarioData(22); // Apartment Key Pickup
+        const data = await loadProductionScenarioData(currentScenarioId);
         if (!data) throw new Error("Scenario data not found");
         setScenarioData(data);
 
         // Fetch current mastery from DB to link readiness meters
         const allItemIds = [
-          ...data.vocabulary.map(v => v.id),
-          ...data.phrases.map(p => p.id),
-          ...data.sentences.map(s => s.id)
+          ...data.vocabulary.map((v: any) => v.id),
+          ...data.phrases.map((p: any) => p.id),
+          ...data.sentences.map((s: any) => s.id)
         ];
         
         const existingProgress = await db.global_progress.bulkGet(allItemIds);
@@ -57,16 +60,19 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
         setLocalMastery(masteryMap);
 
         // Try to load saved session
-        const saved = await SessionPersistenceService.loadSession(22);
+        const saved = await SessionPersistenceService.loadSession(currentScenarioId);
         
         if (saved && !saved.is_completed) {
-          console.log("[Pilot] Resuming saved session at index:", saved.current_step_index);
-          setLearningPath(JSON.parse(saved.steps_json));
-          setCurrentIndex(saved.current_step_index);
+          const loadedSteps = JSON.parse(saved.steps_json);
+          if (SessionValidator.validateSession(loadedSteps, data)) {
+            setLearningPath(loadedSteps);
+            setCurrentIndex(saved.current_step_index);
+          } else {
+            throw new Error("Saved session corrupted or invalid. Please restart.");
+          }
         } else {
-          console.log("[Pilot] Generating new session...");
           const input: PathGenerationInput = {
-            scenarioId: 22,
+            scenarioId: currentScenarioId,
             scenarioData: data,
             globalMastery: localMastery,
             reviewQueue: reviewQueue
@@ -79,11 +85,15 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
           const filteredSteps = fullPathResult.path.steps.filter(s => pilotTypes.includes(s.exerciseType));
           const sessionSteps = SessionGenerator.generateSession({ ...fullPathResult.path, steps: filteredSteps });
           
+          if (!SessionValidator.validateSession(sessionSteps, data)) {
+            throw new Error("Generated session contains invalid exercises. Cannot start.");
+          }
+
           setLearningPath(sessionSteps);
           setCurrentIndex(0);
           
           // Initial persistence save
-          await SessionPersistenceService.saveSession(22, 0, sessionSteps, false);
+          await SessionPersistenceService.saveSession(currentScenarioId, 0, sessionSteps, false);
         }
         
         setLoading(false);
@@ -93,7 +103,7 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
       }
     }
     initPilot();
-  }, []);
+  }, [currentScenarioId]);
 
   const currentStep = learningPath[currentIndex];
 
@@ -114,7 +124,7 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
     }
 
     // Update Global Progress (Actual Persistence)
-    await GlobalProgressService.recordAnswer(currentStep.itemId, result.isValid, 22);
+    await GlobalProgressService.recordAnswer(currentStep.itemId, result.isValid, currentScenarioId);
     
     // Update local state for readiness UI update
     const oldScore = localMastery[currentStep.itemId] ?? 0;
@@ -122,7 +132,7 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
     const newScore = result.isValid ? Math.min(1.0, oldScore + 0.4) : Math.max(0.0, oldScore - 0.2);
     setLocalMastery(prev => ({ ...prev, [currentStep.itemId]: newScore }));
 
-  }, [currentStep, lastResult, localMastery]);
+  }, [currentStep, lastResult, localMastery, currentScenarioId]);
 
   const handleContinue = useCallback(async () => {
     if (!lastResult) return;
@@ -133,49 +143,60 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
     if (isSessionEnd) {
       // 1. Mark Lesson as Complete in Legacy Store (to unlock next lesson)
       if (lessonId) {
-        useProgressStore.getState().completeMiniLesson(22, lessonId, 6);
+        useProgressStore.getState().completeMiniLesson(currentScenarioId, lessonId, scenarioData?.miniLessons?.length || 6);
       }
       
       // 2. Persist V3 Session state
-      await SessionPersistenceService.saveSession(22, currentIndex, learningPath, true);
+      await SessionPersistenceService.saveSession(currentScenarioId, currentIndex, learningPath, true);
       
       audioService.playComplete();
       alert("Sessione completata! La prossima lezione è sbloccata.");
-      navigate(`/scenarios/22`);
+      navigate(`/scenarios/${currentScenarioId}`);
     } else {
       setCurrentIndex(nextIndex);
       setLastResult(null);
-      await SessionPersistenceService.saveSession(22, nextIndex, learningPath, false);
+      await SessionPersistenceService.saveSession(currentScenarioId, nextIndex, learningPath, false);
     }
-  }, [currentIndex, lastResult, learningPath, navigate, lessonId]);
+  }, [currentIndex, lastResult, learningPath, navigate, lessonId, currentScenarioId, scenarioData]);
 
-  // Weighted Readiness: Instead of hard 80% threshold for stats, show average progress 
-  // to give the user a sense of movement.
+  const currentLesson = useMemo(() => {
+    return scenarioData?.miniLessons?.find((l: any) => l.id === lessonId);
+  }, [scenarioData, lessonId]);
+
   const displayProgress = useMemo(() => {
-    if (!scenarioData) return { vocab: 0, phrases: 0, sentences: 0 };
+    if (!scenarioData) return { lesson: 0, scenario: 0 };
     
-    const calculateAvg = (items: any[]) => {
-      if (items.length === 0) return 100;
-      const sum = items.reduce((acc, item) => acc + (localMastery[item.id] ?? 0), 0);
-      return Math.round((sum / items.length) * 100);
-    };
+    let lessonMastery = 0;
+    if (currentLesson) {
+      const lessonItemIds = currentLesson.sections.flatMap((s: any) => s.exerciseIds);
+      if (lessonItemIds.length > 0) {
+        const sum = lessonItemIds.reduce((acc: number, id: string) => acc + (localMastery[id] ?? 0), 0);
+        lessonMastery = Math.round((sum / lessonItemIds.length) * 100);
+      }
+    }
+
+    const allItems = [...scenarioData.vocabulary, ...scenarioData.phrases, ...scenarioData.sentences];
+    let scenarioProgress = 0;
+    if (allItems.length > 0) {
+      const sum = allItems.reduce((acc: number, item: any) => acc + (localMastery[item.id] ?? 0), 0);
+      scenarioProgress = Math.round((sum / allItems.length) * 100);
+    }
 
     return {
-      vocab: calculateAvg(scenarioData.vocabulary),
-      phrases: calculateAvg(scenarioData.phrases),
-      sentences: calculateAvg(scenarioData.sentences)
+      lesson: lessonMastery,
+      scenario: scenarioProgress
     };
-  }, [localMastery, scenarioData]);
+  }, [localMastery, scenarioData, currentLesson]);
 
   const readiness = useMemo(() => {
     if (!scenarioData) return null;
     return ConversationReadinessService.checkReadiness({
-      scenarioId: 22,
+      scenarioId: currentScenarioId,
       scenarioData,
       globalMastery: localMastery,
       reviewQueue: []
     });
-  }, [localMastery, scenarioData]);
+  }, [localMastery, scenarioData, currentScenarioId]);
 
   // Keyboard Navigation
   useEffect(() => {
@@ -212,40 +233,74 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
   
   if (!hasStarted) {
     return (
-      <Screen style={{ backgroundColor: colors.bg, justifyContent: 'center', alignItems: 'center' }}>
+      <Screen style={{ backgroundColor: colors.bg, padding: spacing.xl, alignItems: 'center' }}>
         <div style={{ 
-          maxWidth: 400, 
+          maxWidth: 600, 
           width: '100%', 
-          padding: spacing.xl, 
           backgroundColor: colors.surface, 
           borderRadius: 24, 
-          textAlign: 'center',
+          overflow: 'hidden',
           boxShadow: '0 8px 32px rgba(0,0,0,0.1)'
         }}>
-          <div style={{ fontSize: 64, marginBottom: spacing.lg }}>🗝️</div>
-          <h1 style={{ color: colors.primary, fontSize: 28, fontWeight: 900, marginBottom: spacing.xs }}>
-            {scenarioData.title || 'Apartment Key Pickup'}
-          </h1>
-          <p style={{ color: colors.textSecondary, fontSize: 16, marginBottom: spacing.xl }}>
-            Stai per iniziare una sessione di apprendimento focalizzata sulla conversazione.
-          </p>
-          
-          <div style={{ textAlign: 'left', backgroundColor: colors.chipBg, padding: spacing.lg, borderRadius: 16, marginBottom: spacing.xl }}>
-            <h4 style={{ margin: '0 0 8px 0', fontSize: 14, color: colors.primary }}>In questa lezione:</h4>
-            <ul style={{ margin: 0, paddingLeft: 20, fontSize: 14, color: colors.textSecondary }}>
-              <li>Imparerai i termini chiave per entrare nel palazzo.</li>
-              <li>Praticherai l'ascolto e l'ortografia.</li>
-              <li>Aumenterai la tua preparazione alla conversazione.</li>
-            </ul>
+          {/* Scenario Banner */}
+          <div style={{ 
+            backgroundColor: colors.primary, 
+            color: colors.onPrimary, 
+            padding: spacing.xl, 
+            textAlign: 'center' 
+          }}>
+            <div style={{ fontSize: 48, marginBottom: spacing.sm }}>🗝️</div>
+            <h1 style={{ fontSize: 28, fontWeight: 900, margin: '0 0 8px 0' }}>
+              {scenarioData.title || 'Apartment Key Pickup'}
+            </h1>
+            <div style={{ fontSize: 16, opacity: 0.9 }}>
+              Conversation Stage: <span style={{ fontWeight: 700 }}>Arrival</span>
+            </div>
           </div>
 
-          <PrimaryButton label="Inizia Lezione" onPress={() => setHasStarted(true)} />
-          <button 
-            onClick={() => navigate('/')}
-            style={{ marginTop: spacing.lg, background: 'none', border: 'none', color: colors.textSecondary, cursor: 'pointer', textDecoration: 'underline', fontWeight: 700 }}
-          >
-            Torna alla Home
-          </button>
+          <div style={{ padding: spacing.xl }}>
+            <h2 style={{ color: colors.primary, fontSize: 22, fontWeight: 800, marginTop: 0 }}>
+              Current Goal
+            </h2>
+            <p style={{ color: colors.textSecondary, fontSize: 16, marginBottom: spacing.xl, lineHeight: 1.5 }}>
+              Master the vocabulary and sentences needed to complete: <strong style={{ color: colors.primary }}>{currentLesson?.goal || 'Preparazione'}</strong>.
+            </p>
+            
+            <h3 style={{ color: colors.accent, fontSize: 18, fontWeight: 800 }}>
+              Why This Matters
+            </h3>
+            <p style={{ color: colors.textSecondary, fontSize: 16, marginBottom: spacing.xl, lineHeight: 1.5 }}>
+              By mastering these specific phrases, you will build the conversational reflexes necessary for the upcoming scenario.
+            </p>
+
+            <div style={{ backgroundColor: colors.chipBg, padding: spacing.lg, borderRadius: 16, marginBottom: spacing.xl }}>
+              <h4 style={{ margin: '0 0 12px 0', fontSize: 16, color: colors.primary }}>Conversation Preview</h4>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                <div style={{ display: 'flex', gap: 12 }}>
+                  <span style={{ fontSize: 24 }}>👱‍♂️</span>
+                  <div style={{ backgroundColor: 'white', padding: '8px 12px', borderRadius: 12, fontSize: 14, color: colors.textPrimary, border: `1px solid ${colors.border}` }}>
+                    "Scusi, può ripetere?"
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: 12, justifyContent: 'flex-end' }}>
+                  <div style={{ backgroundColor: colors.primary, color: 'white', padding: '8px 12px', borderRadius: 12, fontSize: 14 }}>
+                    "Certo, nessun problema."
+                  </div>
+                  <span style={{ fontSize: 24 }}>👩</span>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: spacing.md, alignItems: 'center' }}>
+              <PrimaryButton label="Inizia Lezione" onPress={() => setHasStarted(true)} style={{ width: '100%', maxWidth: 300 }} />
+              <button 
+                onClick={() => navigate('/')}
+                style={{ background: 'none', border: 'none', color: colors.textSecondary, cursor: 'pointer', textDecoration: 'underline', fontWeight: 700, padding: spacing.sm }}
+              >
+                Torna alla Home
+              </button>
+            </div>
+          </div>
         </div>
       </Screen>
     );
@@ -277,7 +332,7 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
           <div style={{ fontSize: 14, fontWeight: 900, color: colors.primary, marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
              <span>{scenarioData.title}</span>
              <span style={{ color: colors.textSecondary, fontWeight: 500 }}>•</span>
-             <span style={{ color: colors.accent }}>{scenarioData.miniLessons?.find((l: any) => l.id === lessonId)?.goal || 'Preparazione'}</span>
+             <span style={{ color: colors.accent }}>{currentLesson?.goal || 'Preparazione'}</span>
           </div>
           <div style={{ height: 10, backgroundColor: colors.border, borderRadius: 5, overflow: 'hidden' }}>
             <div style={{ 
@@ -315,9 +370,9 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
         gap: 12
       }}>
         <span style={{ color: colors.accent }}>CONTEXT:</span>
-        <span>Situazione: Arrivo al Palazzo</span>
+        <span>Situazione: {currentLesson?.title || scenarioData.title}</span>
         <span style={{ opacity: 0.3 }}>|</span>
-        <span>Relevanza: Preparazione per Turno 1-3</span>
+        <span>Relevanza: Preparazione per Conversazione</span>
       </div>
 
       {/* Main Content Area - Centered & Immersive */}
@@ -327,21 +382,23 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
         flexDirection: 'column', 
         alignItems: 'center', 
         justifyContent: 'center',
-        maxWidth: 800,
+        maxWidth: 1000,
         margin: '0 auto',
         width: '100%',
-        position: 'relative'
+        padding: spacing.xl,
+        position: 'relative',
+        boxSizing: 'border-box'
       }}>
         <div style={{
           width: '100%',
-          padding: spacing.xl,
+          flex: 1,
           backgroundColor: colors.surface,
           borderRadius: 32,
-          minHeight: 400,
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          boxShadow: '0 12px 48px rgba(0,0,0,0.06)'
+          boxShadow: '0 12px 48px rgba(0,0,0,0.06)',
+          overflow: 'hidden'
         }}>
           {definition && payload && (
             <ExerciseRenderer 
@@ -370,10 +427,8 @@ export const LearningSystemV3PilotScreen: React.FC = () => {
         justifyContent: 'center', 
         gap: spacing.xl,
       }}>
-        <StatMini label="Vocab" value={displayProgress.vocab} isReady={readiness?.isReady} />
-        <StatMini label="Frasi" value={displayProgress.phrases} isReady={readiness?.isReady} />
-        <StatMini label="Conv" value={displayProgress.sentences} isReady={readiness?.isReady} />
-
+        <StatMini label="Lesson Mastery" value={displayProgress.lesson} isReady={readiness?.isReady} />
+        <StatMini label="Scenario Readiness" value={displayProgress.scenario} isReady={readiness?.isReady} />
       </footer>
     </Screen>
   );

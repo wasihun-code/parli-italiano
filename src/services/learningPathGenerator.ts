@@ -177,32 +177,26 @@ export class LearningPathGenerator {
   private static getPhraseSteps(id: string, mastery: number, _globalMasteryPercent: number): LearningStep[] {
     if (mastery >= 0.8) {
         return [
-          { id: `${id}-speaking`, itemId: id, type: 'phrase', exerciseType: 'Speaking', masteryContribution: 1.0 }
+          { id: `${id}-spelling`, itemId: id, type: 'phrase', exerciseType: 'Spelling', masteryContribution: 1.0 }
         ];
     }
     return [
-      { id: `${id}-reading`, itemId: id, type: 'phrase', exerciseType: 'Reading', masteryContribution: 0.1 },
-      { id: `${id}-listen`, itemId: id, type: 'phrase', exerciseType: 'Listen', masteryContribution: 0.1 },
-      { id: `${id}-build`, itemId: id, type: 'phrase', exerciseType: 'BuildSentence', masteryContribution: 0.4 },
-      { id: `${id}-recall`, itemId: id, type: 'phrase', exerciseType: 'Recall', masteryContribution: 0.4 },
-      { id: `${id}-dictation`, itemId: id, type: 'phrase', exerciseType: 'Dictation', masteryContribution: 0.8 },
-      { id: `${id}-speaking`, itemId: id, type: 'phrase', exerciseType: 'Speaking', masteryContribution: 1.0 }
+      { id: `${id}-listen`, itemId: id, type: 'phrase', exerciseType: 'Listen', masteryContribution: 0.2 },
+      { id: `${id}-match`, itemId: id, type: 'phrase', exerciseType: 'Match', masteryContribution: 0.4 },
+      { id: `${id}-spelling`, itemId: id, type: 'phrase', exerciseType: 'Spelling', masteryContribution: 1.0 }
     ];
   }
 
   private static getSentenceSteps(id: string, mastery: number, _globalMasteryPercent: number): LearningStep[] {
     if (mastery >= 0.8) {
         return [
-          { id: `${id}-speaking`, itemId: id, type: 'sentence', exerciseType: 'Speaking', masteryContribution: 1.0 }
+          { id: `${id}-spelling`, itemId: id, type: 'sentence', exerciseType: 'Spelling', masteryContribution: 1.0 }
         ];
     }
     return [
-      { id: `${id}-reading`, itemId: id, type: 'sentence', exerciseType: 'Reading', masteryContribution: 0.1 },
-      { id: `${id}-listen`, itemId: id, type: 'sentence', exerciseType: 'Listen', masteryContribution: 0.1 },
-      { id: `${id}-assembly`, itemId: id, type: 'sentence', exerciseType: 'Assembly', masteryContribution: 0.4 },
-      { id: `${id}-recall`, itemId: id, type: 'sentence', exerciseType: 'Recall', masteryContribution: 0.4 },
-      { id: `${id}-dictation`, itemId: id, type: 'sentence', exerciseType: 'Dictation', masteryContribution: 0.8 },
-      { id: `${id}-speaking`, itemId: id, type: 'sentence', exerciseType: 'Speaking', masteryContribution: 1.0 }
+      { id: `${id}-listen`, itemId: id, type: 'sentence', exerciseType: 'Listen', masteryContribution: 0.2 },
+      { id: `${id}-match`, itemId: id, type: 'sentence', exerciseType: 'Match', masteryContribution: 0.4 },
+      { id: `${id}-spelling`, itemId: id, type: 'sentence', exerciseType: 'Spelling', masteryContribution: 1.0 }
     ];
   }
 

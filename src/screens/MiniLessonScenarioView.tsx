@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Scenario } from '@shared/data/scenarios';
-import { useProgressStore, emptyScenarioProgress } from '@shared/store/progressStore';
+import { useProgressStore, emptyScenarioProgress } from '../store/progressStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { PrimaryButton } from '../components/PrimaryButton';
@@ -88,11 +88,11 @@ export const MiniLessonScenarioView: React.FC<Props> = ({ scenario }) => {
           
           if (idx === 0) {
              isUnlocked = true;
-          } else if (lesson.unlockCriteria === 'complete_previous') {
-             const prevLessonId = scenario.miniLessons![idx - 1].id;
-             isUnlocked = completedLessons.includes(prevLessonId);
           } else if (lesson.unlockCriteria === 'none') {
              isUnlocked = true;
+          } else {
+             const prevLessonId = scenario.miniLessons![idx - 1].id;
+             isUnlocked = completedLessons.includes(prevLessonId);
           }
 
           return (

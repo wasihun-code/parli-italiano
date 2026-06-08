@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Screen } from '../components/Screen';
 import { scenarios } from '@shared/data/scenarios';
-import { useProgressStore, emptyScenarioProgress } from '@shared/store/progressStore';
+import { useProgressStore, emptyScenarioProgress } from '../store/progressStore';
 import { colors } from '@shared/theme/colors';
 import { spacing } from '@shared/theme/spacing';
 import { PrimaryButton } from '../components/PrimaryButton';
