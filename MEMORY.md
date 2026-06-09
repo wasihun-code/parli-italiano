@@ -1,91 +1,282 @@
-# PARLA ITALIANO — MASTER AUDIT LOG
+# PARLA ITALIANO — PROJECT MEMORY
 
-## Project Status
+## Current Status
 
-**Current Phase:** Phase 9.6
-**Status:** ACTIVE (Scenario 22)
-**Objective:** Learning System V3 Rollout
-**Architecture Status:** PRODUCTION ACTIVE (Pilot Scenario)
-**Verification Status:** CERTIFIED
+Project Status: ACTIVE DEVELOPMENT
 
-**Learning System V3 Status:**
-- Governance: COMPLETE
-- Documentation: COMPLETE
-- Verification Framework: COMPLETE
-- Learning Path Generator: IMPLEMENTED
-- Exercise Registry: IMPLEMENTED
-- Production Activation: LIVE (Scenario 22)
-- Feature Flag: `USE_V3_LEARNING_SYSTEM` (ACTIVE)
-- Readiness Gating: LIVE
-- Review Queue: LIVE
+Current Phase:
+Phase 4.1 — Verification Engine Implementation
+
+Curriculum Architecture:
+Curriculum V4
+
+Architecture Status:
+APPROVED
+
+Implementation Status:
+PARTIALLY IMPLEMENTED
 
 ---
 
-## Operations Metrics
+## Authoritative Curriculum Source
 
-**Completed Milestones:**
-- ...
-- Phase 9.5 Runtime Integration Pilot (Apartment Key Pickup) (COMPLETE)
-- Phase 9.5A Live Runtime Verification (COMPLETE)
-- Phase 9.6 Production Activation & Stabilization (COMPLETE)
-- Phase 9.6A Learning Experience Polish (COMPLETE)
-- Phase 9.6B Production UX Repair (COMPLETE)
+The official curriculum architecture is:
 
-**Learning System Findings (Post-UX Repair):**
-- **Fullscreen Immersive:** Sidebars and dashboard chrome are 100% removed during training sessions via `Screen.tsx` path logic.
-- **Unlock Solved:** Session completion correctly updates `miniLessonsCompleted` in the legacy store, triggering subsequent lesson unlocks.
-- **Readiness Accurate:** Mastery scaling changed to Average-Percentage to ensure meters move visibly (including decimals).
-- **Audio Feedback:** Pulse animations and iconography confirm active playback; gesture requirements satisfied.
-- **Narrative Context:** Header and Start Overlay provide scenario-specific preparation goals.
+docs/curriculum-v4/CURRICULUM_V4_SOURCE_OF_TRUTH.md
 
-**Progression Architecture:**
-- Session Complete: `currentIndex == 25`.
-- Lesson Complete: 100% Items @ Mastery >= 1.
-- Scenario Complete: 100% Items @ Mastery >= 3.
-- Conversation Ready: 80% Categories @ Mastery >= 0.8.
-
-**UI/UX Improvements:**
-- Fullscreen Mode: YES.
-- Start Overlay: YES.
-- Feedback Overlay: YES.
-- Chronology: ENABLED.
-- Audio Feedback: PULSING.
-
-**Learning Path Generator:**
-- IMPLEMENTED: `src/services/learningPathGenerator.ts`
-- Pure Function: YES
-- Chronology Sorting: YES (Conversation-First)
-
-**Conversation Readiness:**
-- IMPLEMENTED: `src/services/conversationReadinessService.ts`
-- Rule: 80% Vocab, 80% Phrases, 80% Sentences @ Mastery >= 0.8.
-
-**Determinism Audit:**
-- PASS: 100/100 matching sequences.
-- Report: `reports/phase93_determinism_audit.md`
-
-**Readiness Audit:**
-- PASS: 80/80/80 Rule verified via unit tests.
-- Report: `reports/phase93_readiness_audit.md`
-
-**Open Issues:**
-- Technical Debt: Deprecation of legacy Zustand SRS store (Scheduled for V2.1).
-- Linguistic: Refinement of elision tokenization (`dell'`, `un'`).
-
-**Known Risks:**
-- **IndexedDB Quota:** Long-term storage growth of review history.
-
-**Pending Work:**
-- Learning System V3 Implementation.
-- Final Smoke Test on Production Hardware.
-
-**Current Objective:**
-Prepare for final production deployment following the successful RC1 candidate verification.
+All curriculum implementation must follow this specification.
 
 ---
 
-## Certification Data
+## Approved Curriculum Phases
 
-**Last Certification Date:** 2026-06-08
-**Last Global Audit:** 2026-06-08 (RC1 Release Audit PASS - 116/116 Verified)
-**Hybrid Mastery Readiness Score:** 99/100
+### Phase 1
+
+Knowledge Graph
+
+Status:
+APPROVED
+
+Source:
+01_knowledge_graph.md
+
+---
+
+### Phase 2
+
+Dependency Graph
+
+Status:
+APPROVED
+
+Source:
+02_dependency_graph.md
+
+---
+
+### Phase 3
+
+Micro Lesson Structure
+
+Status:
+APPROVED
+
+Source:
+03_micro_lesson_structure.md
+
+---
+
+### Phase 3.5
+
+Learning Flow
+
+Status:
+APPROVED
+
+Source:
+04_learning_flow.md
+
+---
+
+### Phase 3.6
+
+Learning State Machine
+
+Status:
+APPROVED
+
+Source:
+05_state_machine.md
+
+---
+
+### Phase 4
+
+Verification Architecture
+
+Status:
+APPROVED
+
+Source:
+06_verification_architecture.md
+
+---
+
+### Phase 4.0
+
+Canonical Data Schema
+
+Status:
+APPROVED
+
+Source:
+07_data_schema.md
+
+---
+
+## Curriculum V4 Principles
+
+### Conversation Driven
+
+Conversation is the final learning objective.
+
+### Dependency Based
+
+Word
+→ Phrase
+→ Sentence
+→ Conversation Turn
+
+### Single Introduction
+
+Entities are introduced once.
+
+Reviews and practice continue afterward.
+
+### Verification Required
+
+All curriculum generation requires certification.
+
+---
+
+## Current Implementation Progress
+
+### Architecture
+
+Knowledge Graph:
+COMPLETE
+
+Dependency Graph:
+COMPLETE
+
+Micro Lesson Design:
+COMPLETE
+
+Learning Flow:
+COMPLETE
+
+State Machine:
+COMPLETE
+
+Verification Architecture:
+COMPLETE
+
+Data Schema:
+COMPLETE
+
+---
+
+### Implementation
+
+Verification Engine:
+NOT IMPLEMENTED
+
+Audit Scripts:
+NOT IMPLEMENTED
+
+Exercise Blueprint System:
+NOT IMPLEMENTED
+
+Curriculum Generator:
+NOT IMPLEMENTED
+
+Runtime Integration:
+NOT IMPLEMENTED
+
+---
+
+## Existing Platform Status
+
+Scenario Factory:
+OPERATIONAL
+
+Scenarios:
+116/116 Complete
+
+Translations:
+Complete
+
+Audio Generation:
+Operational
+
+Admin Panel:
+Operational
+
+Gold Standard Curriculum:
+Archived
+
+Curriculum V4:
+Active Architecture
+
+---
+
+## Next Milestones
+
+Phase 4.1
+Verification Engine
+
+Phase 5
+Exercise Blueprint Architecture
+
+Phase 6
+Exercise Generation Framework
+
+Phase 7
+Runtime Integration
+
+---
+
+## Important Constraints
+
+Curriculum V4 is specification-complete.
+
+Future work should focus on implementation.
+
+Do not redesign approved architecture.
+
+Do not introduce competing curriculum systems.
+
+All new curriculum code must conform to:
+
+* Knowledge Graph
+* Dependency Graph
+* Micro Lesson Structure
+* Learning Flow
+* State Machine
+* Verification Architecture
+* Canonical Data Schema
+
+as defined in Curriculum V4.
+
+---
+
+Last Major Update:
+
+Curriculum V4 Architecture Approved
+
+Knowledge Graph → Dependency Graph → Micro Lessons → Learning Flow → State Machine → Verification Architecture → Data Schema
+
+Status:
+READY FOR IMPLEMENTATION
+
+Current Phase:
+Phase 4.05A — Materialization Forensic Audit
+
+Completed:
+
+✓ Knowledge Graph
+✓ Dependency Graph
+✓ Micro Lesson Structure
+✓ Learning Flow
+✓ State Machine
+✓ Verification Architecture
+✓ Data Schema
+✓ Curriculum Materialization
+
+Pending:
+
+□ Materialization Forensic Audit
+□ Verification Engine
+□ Exercise Blueprint Architecture
+□ Exercise Generation Framework
+□ Runtime Integration
